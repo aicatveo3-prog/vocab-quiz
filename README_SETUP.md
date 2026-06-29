@@ -82,8 +82,21 @@ npm start
 - 추천: **Render / Railway / Fly.io / 직접 운영하는 서버** 등 Node 앱을 돌릴 수 있는 호스팅
 - 배포 시 환경변수 `GOOGLE_CLIENT_ID`, `SESSION_SECRET`, `NODE_ENV=production` 설정
 - 그리고 3-1의 **승인된 자바스크립트 원본**에 배포 주소(`https://...`)를 꼭 추가하세요.
-- 저장 데이터는 서버의 `.data/users.json` 파일에 보관됩니다. 호스팅에서 파일이 유지되는
-  디스크(또는 볼륨)를 쓰거나, 운영 규모가 커지면 `server/store.js` 를 Postgres 등으로 교체하세요.
+
+### 데이터 영구 보관 (Postgres) — 권장
+
+기본값으로는 저장 데이터가 서버의 `.data/users.json` 파일에 보관됩니다. 하지만
+Railway·Render 무료 플랜처럼 **서버 재시작 시 디스크가 초기화되는** 환경에서는 이 파일이
+사라져 동기화 데이터가 날아갈 수 있어요. 이를 막으려면 무료 Postgres를 연결하세요.
+
+1. **Neon**(https://neon.tech) 또는 **Supabase**(https://supabase.com) 에서 무료 Postgres
+   데이터베이스를 만듭니다.
+2. 제공되는 **연결 문자열(connection string)** 을 복사합니다.
+   예: `postgresql://user:password@host/dbname?sslmode=require`
+3. 호스팅(Railway 등) 환경변수에 **`DATABASE_URL`** 이름으로 그 값을 넣습니다.
+
+`DATABASE_URL` 이 설정되면 `server/store.js` 가 자동으로 Postgres를 사용하고(테이블도
+자동 생성), 없으면 기존 JSON 파일 방식으로 동작합니다. 코드 수정은 필요 없습니다.
 
 > ⚠️ GitHub Pages·Netlify 정적 호스팅 등 "파일만 올리는" 방식으로는 동기화가 안 됩니다.
 > 로그인 검증과 데이터 저장을 처리할 **이 Node 서버가 함께 떠 있어야** 합니다.
