@@ -1,0 +1,20 @@
+# Render Blueprint — https://render.com 에서 이 저장소를 연결하면 자동으로 읽혀요.
+# 무료(Free) Node 웹 서비스로 배포됩니다.
+services:
+  - type: web
+    name: vocab-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      # 세션 서명용 비밀키 — Render가 자동으로 안전한 무작위 값을 생성합니다.
+      - key: SESSION_SECRET
+        generateValue: true
+      # 운영 모드(보안 쿠키 활성화)
+      - key: NODE_ENV
+        value: production
+      # 구글 OAuth 클라이언트 ID — 배포 후 Render 대시보드에서 직접 입력하세요.
+      # (비워두면 로그인 버튼은 안내 모달만 뜨고, 나머지 기능은 정상 동작)
+      - key: GOOGLE_CLIENT_ID
+        sync: false

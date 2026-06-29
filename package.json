@@ -1,0 +1,20 @@
+{
+  "name": "vocab-quiz",
+  "version": "1.0.0",
+  "description": "해커스 영어 단어 퀴즈 — 진행률 스크러버 · 저장함 · 구글 로그인 · 기기 간 동기화",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "google-auth-library": "^9.15.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
