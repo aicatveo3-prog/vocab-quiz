@@ -1,4 +1,4 @@
-// App shell — Day 1 / Day 2 / ★저장 support
+// App shell — Day 1 / Day 2 / ★저장 support + persistent page progress
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
@@ -36,6 +36,8 @@
       this.state = {
         stage: "day1", page: 0, mode: "exam", round: 0,
         streak: 0, best: 0, completed: {}, saved: {},
+        // pageProgress: { "day1-0-exam": {ans: {...}}, "day2-3-match": {matched: [0,2]} }
+        pageProgress: {},
         account: null, googleClientId: "", loginEnabled: false,
         showLoginInfo: false, ready: false, syncing: false,
         dragging: false, dragPage: 0,
@@ -78,7 +80,6 @@
       this.W2 = V.W2 || [];
       this.s1 = V.extractSA(V.W);
       this.s2 = V.extractSA(this.W2);
-      // Day 1 = main60 + SA, Day 2 = main60 + SA
       this.day1 = this.W.concat(this.s1);
       this.day2 = this.W2.concat(this.s2);
       this.pages1 = V.chunk(this.day1, V.PS);
@@ -266,7 +267,15 @@
       var goStage = function (st) { self.setState({ stage: st, page: 0, mode: "exam" }); };
       var goPage = function (p) { self.setState({ page: Math.max(0, Math.min(total - 1, p)) }); };
       var setMode = function (m) { self.setState({ mode: m }); };
-      var replay = function () { self.setState(function (st) { return { round: st.round + 1 }; }); };
+      var replay = function () {
+        // Clear progress for this page+mode so it starts fresh
+        var pk = stageKeyStr + "-" + pIdx + "-" + mode;
+        self.setState(function (st) {
+          var pp = Object.assign({}, st.pageProgress);
+          delete pp[pk];
+          return { round: st.round + 1, pageProgress: pp };
+        });
+      };
       var onResult = function (ok, key) {
         self.setState(function (st) {
           var ns = ok ? st.streak + 1 : 0; var nb = Math.max(st.best, ns);
@@ -291,6 +300,17 @@
           if (saved[key]) delete saved[key]; else saved[key] = true;
           self._save(st.best, st.completed, saved);
           return { saved: saved };
+        });
+      };
+
+      // Progress key for current page + mode
+      var progressKey = stageKeyStr + "-" + pIdx + "-" + mode;
+      var currentProgress = s.pageProgress[progressKey] || {};
+      var onProgress = function (prog) {
+        self.setState(function (st) {
+          var pp = Object.assign({}, st.pageProgress);
+          pp[progressKey] = Object.assign({}, pp[progressKey] || {}, prog);
+          return { pageProgress: pp };
         });
       };
 
@@ -321,7 +341,6 @@
               h("span", { style: { fontSize: 12.5, fontWeight: 600, color: "#3C4043" } }, "Google 로그인"))
       );
 
-      // Day 1 / Day 2 / ★저장
       var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
         h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
         h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
@@ -365,7 +384,18 @@
       );
 
       var sig = stage + "-" + pIdx + "-" + mode + "-" + s.round;
-      var quizBody = h(window.QuizBody, { key: sig, mode: mode, words: words, pool: pool, savedMap: s.saved, onToggleSave: onToggleSave, onResult: onResult, onComplete: onComplete });
+      var quizBody = h(window.QuizBody, {
+        key: sig,
+        mode: mode,
+        words: words,
+        pool: pool,
+        savedMap: s.saved,
+        onToggleSave: onToggleSave,
+        onResult: onResult,
+        onComplete: onComplete,
+        progress: currentProgress,
+        onProgress: onProgress
+      });
 
       var primaryStyle = { width: "100%", padding: 14, borderRadius: 12, border: "none", background: blue, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font };
       var replayStyle = { width: "100%", padding: 13, borderRadius: 12, border: "1px solid " + sep, background: "#fff", color: blue, fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 };
