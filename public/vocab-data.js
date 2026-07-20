@@ -255,6 +255,40 @@ const W4 = [
   {w:"put on",m:"공연하다, 몸에 걸치다",s:["wear 입다","stage 공연하다","perform 공연하다"],a:["take off 벗다"],h:"put+on→입다/올리다",ex:"She _____ a beautiful dress.",ek:"그녀는 아름다운 드레스를 [입었다]"}
 ];
 
+// ========== Day 5 Main 60 words ==========
+const W5 = [
+  {w:"identify",m:"확인하다, 식별하다",s:["recognize 인식하다","detect 탐지하다","determine 결정하다"],a:["misidentify 잘못 식별하다","overlook 간과하다"],h:"아이덴티티→정체성을 확인",ex:"Police were able to _____ the suspect from the photo.",ek:"경찰은 사진으로 용의자를 [식별할] 수 있었다"},
+  {w:"award",m:"상, 수여; 수여하다",s:["prize 상","grant 수여하다","bestow 수여하다"],a:["punish 처벌하다","withhold 보류하다"],h:"어워드→시상식",ex:"She received an _____ for her outstanding work.",ek:"그녀는 뛰어난 업무로 [상]을 받았다"},
+  {w:"consequently",m:"결과적으로, 따라서",s:["therefore 따라서","as a result 결과적으로","hence 그러므로"],a:["nevertheless 그럼에도","however 그러나"],h:"consequence+ly→결과적으로",ex:"He missed the bus and _____ was late for work.",ek:"그는 버스를 놓쳤고 [결과적으로] 직장에 늦었다"},
+  {w:"closely",m:"밀접하게; 엄중히, 면밀하게",s:["carefully 주의 깊게","intimately 친밀하게","thoroughly 철저히"],a:["loosely 느슨하게","casually 대충"],h:"close+ly→가깝게",ex:"The two companies work _____ together.",ek:"두 회사는 [밀접하게] 함께 일한다"},
+  {w:"pursue",m:"추구하다; 뒤쫓다, 추적하다",s:["chase 쫓다","seek 추구하다","follow 따르다"],a:["abandon 포기하다","avoid 피하다"],h:"퍼슈→쫓아가다",ex:"She decided to _____ a career in medicine.",ek:"그녀는 의학 분야 경력을 [추구하기로] 했다"},
+  {w:"extend",m:"연장하다, 확장하다; 늘리다",s:["expand 확장하다","prolong 연장하다","stretch 늘리다"],a:["shorten 단축하다","reduce 줄이다"],h:"ex+tend→밖으로 뻗다",ex:"They plan to _____ the deadline by one week.",ek:"그들은 마감일을 일주일 [연장할] 계획이다"},
+  {w:"overcome",m:"극복하다, 이겨내다",s:["conquer 정복하다","defeat 이기다","surmount 극복하다"],a:["succumb 굴복하다","yield 양보하다"],h:"over+come→넘어서 오다",ex:"She managed to _____ her fear of public speaking.",ek:"그녀는 대중 연설에 대한 두려움을 [극복해] 냈다"},
+  {w:"actual",m:"실제의, 사실상의",s:["real 실제의","genuine 진짜의","true 진실한"],a:["imaginary 상상의","hypothetical 가상의"],h:"액추얼→실제",ex:"The _____ cost was higher than expected.",ek:"[실제] 비용은 예상보다 높았다"},
+  {w:"trait",m:"특성, 특징",s:["characteristic 특성","feature 특징","quality 성질"],a:["flaw 결점"],h:"트레이트→성격 특성",ex:"Honesty is an important _____ in a friend.",ek:"정직은 친구의 중요한 [특성]이다"},
+  {w:"tremendous",m:"엄청난, 거대한",s:["enormous 거대한","immense 엄청난","huge 거대한"],a:["tiny 아주 작은","insignificant 하찮은"],h:"트라우마+endous→엄청난",ex:"The storm caused _____ damage.",ek:"폭풍이 [엄청난] 피해를 입혔다"},
+  {w:"reinforce",m:"강화하다, 보강하다",s:["strengthen 강화하다","support 지지하다","bolster 보강하다"],a:["weaken 약화시키다","undermine 약화시키다"],h:"re+inforce→다시 힘을 넣다",ex:"The evidence will _____ his argument.",ek:"증거가 그의 주장을 [강화할] 것이다"},
+  {w:"colleague",m:"(특히 직장) 동료",s:["coworker 동료","associate 동료","partner 파트너"],a:["rival 경쟁자","boss 상사"],h:"콜리그→함께 일하는 사람",ex:"I discussed the project with my _____.",ek:"나는 [동료]와 프로젝트를 논의했다"},
+  {w:"outbreak",m:"(전쟁·질병 등의) 발생, 발발; (해충 따위의) 급격한 증가",s:["eruption 분출","outburst 폭발","epidemic 전염병"],a:["suppression 진압","control 통제"],h:"out+break→밖으로 터져나오는 것",ex:"The _____ of the disease caused widespread panic.",ek:"질병의 [발생]은 광범위한 공황을 일으켰다"},
+  {w:"correspond to",m:"~에 해당하다, ~와 일치하다",s:["match ~와 일치하다","equate to ~에 해당하다","be equivalent to ~와 동등하다"],a:["differ from ~와 다르다"],h:"co+respond→함께 응답",ex:"The results _____ the predictions.",ek:"결과가 예측과 [일치한다]"},
+  {w:"supremacy",m:"최고 지위, 패권",s:["dominance 지배","superiority 우월","hegemony 패권"],a:["inferiority 열등","subordination 종속"],h:"supreme+acy→최고의 상태",ex:"They fought for military _____.",ek:"그들은 군사적 [패권]을 위해 싸웠다"},
+  {w:"premature",m:"시기상조의, 너무 이른",s:["early 이른","untimely 때 아닌","hasty 성급한"],a:["timely 시기적절한","mature 성숙한"],h:"pre+mature→성숙 전",ex:"It is _____ to draw conclusions.",ek:"결론을 내리기에는 [시기상조]이다"},
+  {w:"coincide",m:"동시에 일어나다; 일치하다",s:["overlap 겹치다","concur 일치하다","synchronize 동기화하다"],a:["differ 다르다","conflict 충돌하다"],h:"co+incide→함께 떨어지다",ex:"Our holidays _____ this year.",ek:"올해 우리의 휴가가 [겹친다]"},
+  {w:"sign up for",m:"~을 신청하다, ~에 가입하다",s:["register for ~에 등록하다","enroll in ~에 등록하다","join 가입하다"],a:["withdraw from ~에서 탈퇴하다","cancel 취소하다"],h:"sign+up→서명해서 가입",ex:"I want to _____ the course.",ek:"나는 그 강좌를 [신청하고] 싶다"},
+  {w:"from now on",m:"이제부터, 향후",s:["hereafter 앞으로","in the future 미래에","henceforth 금후"],a:["until now 지금까지","previously 이전에"],h:"now부터 앞으로",ex:"_____ I will be more careful.",ek:"[이제부터] 더 조심하겠다"},
+  {w:"in conjunction with",m:"~과 함께",s:["together with ~와 함께","along with ~와 함께","in combination with ~와 결합하여"],a:["separately 따로","independently 독립적으로"],h:"conjunction → 접속",ex:"The drug is used _____ therapy.",ek:"그 약은 치료와 [함께] 사용된다"},
+  {w:"bring up",m:"(화제를) 꺼내다; 기르다, 양육하다",s:["raise 기르다","mention 언급하다","introduce 소개하다"],a:["drop 그만두다","ignore 무시하다"],h:"bring+up→올려 꺼내다",ex:"Don't _____ that topic again.",ek:"그 주제를 다시 [꺼내지] 마라"},
+  {w:"certificate",m:"증명서, 자격증",s:["diploma 졸업장","license 면허","credential 자격 증명"],a:[],h:"certify+ate→증명서",ex:"She received a _____ of completion.",ek:"그녀는 수료 [증서]를 받았다"},
+  {w:"accurate",m:"정확한, 정밀한",s:["precise 정밀한","correct 올바른","exact 정확한"],a:["inaccurate 부정확한","wrong 틀린"],h:"accur+ate→정확한",ex:"The report provides _____ information.",ek:"그 보고서는 [정확한] 정보를 제공한다"},
+  {w:"noxious",m:"유독한, 유해한",s:["harmful 해로운","toxic 유독한","poisonous 독성의"],a:["harmless 무해한","beneficial 유익한"],h:"nox+ious→해로운",ex:"_____ gases were released into the air.",ek:"[유해한] 가스가 공중으로 방출되었다"},
+  {w:"attain",m:"이루다, 획득하다",s:["achieve 달성하다","reach 도달하다","obtain 얻다"],a:["fail 실패하다","lose 잃다"],h:"at+tain→얻다",ex:"She worked hard to _____ her goals.",ek:"그녀는 목표를 [이루기] 위해 열심히 일했다"},
+  {w:"metaphor",m:"은유, 비유",s:["analogy 유추","simile 직유","symbol 상징"],a:[],h:"메타포→비유",ex:"Life is a journey is a common _____.",ek:"인생은 여행이라는 것은 흔한 [은유]이다"},
+  {w:"susceptible",m:"민감한, 예민한; ~을 허용하는",s:["vulnerable 취약한","sensitive 민감한","prone 경향이 있는"],a:["resistant 저항력 있는","immune 면역의"],h:"suscept+ible→받아들이기 쉬운",ex:"Children are more _____ to colds.",ek:"아이들은 감기에 더 [취약하다]"},
+  {w:"portfolio",m:"작품집, 포트폴리오",s:["collection 모음","folder 폴더","dossier 서류철"],a:[],h:"포트폴리오→작품 모음",ex:"She showed her design _____.",ek:"그녀는 디자인 [포트폴리오]를 보여주었다"},
+  {w:"hammer out",m:"(문제를) 타결하다",s:["negotiate 협상하다","work out 해결하다","settle 해결하다"],a:["abandon 포기하다"],h:"망치로 두드려 만들다 → 타결",ex:"They managed to _____ an agreement.",ek:"그들은 합의를 [타결해] 냈다"},
+  {w:"start over",m:"다시 시작하다",s:["begin again 다시 시작하다","restart 재시작하다","from scratch 처음부터"],a:["continue 계속하다","finish 끝내다"],h:"start+over→다시 시작",ex:"After the failure, they decided to _____.",ek:"실패 후 그들은 [다시 시작하기로] 했다"}
+];
+
 // Extremely easy words to exclude from SA pools (too basic for the quiz)
 const TOO_EASY = new Set([
   "change","plan","hide","tell","add","deep","better","clear","different","strong","weak",
@@ -375,5 +409,5 @@ const extractSA=ws=>{
   return[...m.values()];
 };
 
-window.VOCAB = { W, W2, W3, W4, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
+window.VOCAB = { W, W2, W3, W4, W5, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
 })();
