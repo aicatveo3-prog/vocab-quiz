@@ -36,7 +36,6 @@
       this.state = {
         stage: "day1", page: 0, mode: "exam", round: 0,
         streak: 0, best: 0, completed: {}, saved: {},
-        // pageProgress: { "day1-0-exam": {ans: {...}}, "day2-3-match": {matched: [0,2]} }
         pageProgress: {},
         account: null, googleClientId: "", loginEnabled: false,
         showLoginInfo: false, ready: false, syncing: false,
@@ -267,15 +266,20 @@
       var goStage = function (st) { self.setState({ stage: st, page: 0, mode: "exam" }); };
       var goPage = function (p) { self.setState({ page: Math.max(0, Math.min(total - 1, p)) }); };
       var setMode = function (m) { self.setState({ mode: m }); };
+
+      // Progress key for current page + mode
+      var progressKey = stageKeyStr + "-" + pIdx + "-" + mode;
+      var currentProgress = s.pageProgress[progressKey] || {};
+
       var replay = function () {
-        // Clear progress for this page+mode so it starts fresh
-        var pk = stageKeyStr + "-" + pIdx + "-" + mode;
+        // Clear only this page+mode progress and force remount
         self.setState(function (st) {
           var pp = Object.assign({}, st.pageProgress);
-          delete pp[pk];
+          delete pp[progressKey];
           return { round: st.round + 1, pageProgress: pp };
         });
       };
+
       var onResult = function (ok, key) {
         self.setState(function (st) {
           var ns = ok ? st.streak + 1 : 0; var nb = Math.max(st.best, ns);
@@ -303,9 +307,6 @@
         });
       };
 
-      // Progress key for current page + mode
-      var progressKey = stageKeyStr + "-" + pIdx + "-" + mode;
-      var currentProgress = s.pageProgress[progressKey] || {};
       var onProgress = function (prog) {
         self.setState(function (st) {
           var pp = Object.assign({}, st.pageProgress);
@@ -400,7 +401,11 @@
       var primaryStyle = { width: "100%", padding: 14, borderRadius: 12, border: "none", background: blue, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font };
       var replayStyle = { width: "100%", padding: 13, borderRadius: 12, border: "1px solid " + sep, background: "#fff", color: blue, fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 };
 
-      var showReplay = !!s.completed[stageKeyStr + "-" + pIdx];
+      // Show "다시 풀기" as soon as there is any progress on this page, or if page was completed
+      var hasAnyProgress = (currentProgress.ans && Object.keys(currentProgress.ans).length > 0) ||
+                           (currentProgress.matched && currentProgress.matched.length > 0) ||
+                           !!s.completed[stageKeyStr + "-" + pIdx];
+      var showReplay = hasAnyProgress;
       var showNext = total > 0 && pIdx < total - 1;
       var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "saved");
 
