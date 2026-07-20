@@ -1,4 +1,4 @@
-// App shell — Day 1 only + ★저장 support + persistent page progress
+// App shell — Day 1 + Day 2 + ★저장 + persistent page progress
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
@@ -76,10 +76,14 @@
     _init() {
       var V = window.VOCAB;
       this.W = V.W;
+      this.W2 = V.W2 || [];
       this.s1 = V.extractSA(V.W);
+      this.s2 = V.extractSA(this.W2);
       this.day1 = this.W.concat(this.s1);
+      this.day2 = this.W2.concat(this.s2);
       this.pages1 = V.chunk(this.day1, V.PS);
-      this._all = this.day1;
+      this.pages2 = V.chunk(this.day2, V.PS);
+      this._all = this.day1.concat(this.day2);
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
@@ -238,6 +242,11 @@
         pool = this._all;
         stageKeyStr = "saved";
         dayLabel = "저장함";
+      } else if (stage === "day2") {
+        pages = this.pages2;
+        pool = this.day2;
+        stageKeyStr = "day2";
+        dayLabel = "Day 2";
       } else {
         pages = this.pages1;
         pool = this.day1;
@@ -327,7 +336,7 @@
               s.account.picture
                 ? h("img", { src: s.account.picture, alt: "", style: { width: 26, height: 26, borderRadius: 13, flex: "none", objectFit: "cover" } })
                 : h("span", { style: { width: 26, height: 26, borderRadius: 13, background: "#007AFF", color: "#fff", fontSize: 12, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", flex: "none" } }, (s.account.name || "U").trim().charAt(0).toUpperCase()),
-              h("span", { style: { fontSize: 12, color: "#1C1C1E", fontWeight: 500, maxWidth: 88, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } }, s.account.name),
+              h("span", { style: { fontSize: 12, color: "#8E8E93", fontWeight: 500, maxWidth: 88, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } }, s.account.name),
               h("button", { onClick: this._logout, style: { border: "none", background: "none", color: "#8E8E93", fontSize: 12, cursor: "pointer", padding: "2px 4px", fontFamily: font } }, "로그아웃"))
           : h("button", { onClick: this._login, style: { display: "flex", alignItems: "center", gap: 7, border: "1px solid #DADCE0", background: "#fff", borderRadius: 18, padding: "6px 14px 6px 11px", cursor: "pointer", fontFamily: font, boxShadow: "0 1px 2px rgba(0,0,0,0.04)" } },
               h("span", { style: { width: 15, height: 15, borderRadius: 8, background: "conic-gradient(from -45deg,#EA4335,#FBBC05,#34A853,#4285F4,#EA4335)", display: "inline-block", flex: "none" } }),
@@ -336,6 +345,7 @@
 
       var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
         h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
+        h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
         h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
       );
 
@@ -398,7 +408,7 @@
                            !!s.completed[stageKeyStr + "-" + pIdx];
       var showReplay = hasAnyProgress;
       var showNext = total > 0 && pIdx < total - 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
