@@ -1,5 +1,5 @@
-// App shell — Day 1 + Day 2 + Day 3 + ★저장 + persistent page progress
-// Only the exact main words provided by user (no auto-generated SA quiz items)
+// App shell — Day 1~4 + ★저장 + persistent page progress
+// Only the exact main words provided by user
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
@@ -79,14 +79,16 @@
       this.W = V.W;
       this.W2 = V.W2 || [];
       this.W3 = V.W3 || [];
-      // Only the exact main words the user provided
+      this.W4 = V.W4 || [];
       this.day1 = this.W;
       this.day2 = this.W2;
       this.day3 = this.W3;
+      this.day4 = this.W4;
       this.pages1 = V.chunk(this.day1, V.PS);
       this.pages2 = V.chunk(this.day2, V.PS);
       this.pages3 = V.chunk(this.day3, V.PS);
-      this._all = this.day1.concat(this.day2).concat(this.day3);
+      this.pages4 = V.chunk(this.day4, V.PS);
+      this._all = this.day1.concat(this.day2).concat(this.day3).concat(this.day4);
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
@@ -245,6 +247,11 @@
         pool = this._all;
         stageKeyStr = "saved";
         dayLabel = "저장함";
+      } else if (stage === "day4") {
+        pages = this.pages4;
+        pool = this.day4;
+        stageKeyStr = "day4";
+        dayLabel = "Day 4";
       } else if (stage === "day3") {
         pages = this.pages3;
         pool = this.day3;
@@ -353,6 +360,7 @@
         h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
         h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
         h("button", { onClick: function () { goStage("day3"); }, style: segBtn(stage === "day3") }, "Day 3"),
+        h("button", { onClick: function () { goStage("day4"); }, style: segBtn(stage === "day4") }, "Day 4"),
         h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
       );
 
@@ -414,7 +422,7 @@
                            !!s.completed[stageKeyStr + "-" + pIdx];
       var showReplay = hasAnyProgress;
       var showNext = total > 0 && pIdx < total - 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "day3" || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "day3" || stage === "day4" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
