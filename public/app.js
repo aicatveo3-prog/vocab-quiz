@@ -1,4 +1,5 @@
 // App shell — Day 1 + Day 2 + ★저장 + persistent page progress
+// Only the exact main words provided by user (no extra SA-generated quiz items)
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
@@ -77,10 +78,9 @@
       var V = window.VOCAB;
       this.W = V.W;
       this.W2 = V.W2 || [];
-      this.s1 = V.extractSA(V.W);
-      this.s2 = V.extractSA(this.W2);
-      this.day1 = this.W.concat(this.s1);
-      this.day2 = this.W2.concat(this.s2);
+      // Only the exact main words the user provided (no auto-generated SA quiz items)
+      this.day1 = this.W;
+      this.day2 = this.W2;
       this.pages1 = V.chunk(this.day1, V.PS);
       this.pages2 = V.chunk(this.day2, V.PS);
       this._all = this.day1.concat(this.day2);
@@ -415,7 +415,7 @@
         showNext ? h("button", { key: "next", onClick: function () { goPage(pIdx + 1); }, style: primaryStyle }, "다음 페이지") : null,
         showDone ? h("div", { key: "done", style: { background: "#fff", borderRadius: 12, padding: "20px 16px", marginTop: 16, textAlign: "center", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
           h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 4px" } }, dayLabel + " 학습 완료"),
-          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 + 유의어·반의어 통합"))) : null,
+          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 단어"))) : null,
       ];
 
       var quizSection = showQuiz ? h("div", null, progressRow, navRow, quizBody, footer) : null;
