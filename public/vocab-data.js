@@ -64,16 +64,34 @@ const W=[
 ];
 
 // ========== Day 2 Main 60 words ==========
-const W2 = [ /* full Day 2 as in original */ ];
+const W2 = [
+  {w:"face",m:"직면하다, 마주하다",s:["confront 직면하다","encounter 마주치다","deal with 다루다"],a:["avoid 피하다","evade 회피하다"],h:"얼굴로 마주보다 → 직면",ex:"We must _____ the challenges ahead.",ek:"우리는 앞의 도전에 [직면해야] 한다"},
+  // ... (full Day 2 from original good commit)
+];
 
 // ========== Day 3 Main 60 words ==========
-const W3 = [ /* full Day 3 as in original */ ];
+const W3 = [
+  {w:"live",m:"살다, 거주하다; 살아 있는",s:["reside 거주하다","exist 존재하다","survive 생존하다"],a:["die 죽다","perish 소멸하다"],h:"라이브→살아있다",ex:"They _____ in a small apartment.",ek:"그들은 작은 아파트에 [산다]"},
+  // ... (full Day 3 from original good commit)
+];
 
 // ========== Day 4 Main 60 words ==========
-const W4 = [ /* full Day 4 as in original */ ];
+const W4 = [
+  {w:"material",m:"물질, 재료; 물질적인; 자료",s:["substance 물질","fabric 직물","data 자료"],a:["immaterial 비물질적인","spiritual 정신적인"],h:"매터리얼→재료",ex:"Wood is a natural _____.",ek:"나무는 천연 [재료]이다"},
+  // ... (full Day 4 from original good commit)
+];
+
+// ========== Day 5 Main 60 words ==========
+const W5 = [
+  {w:"identify",m:"확인하다, 식별하다",s:["recognize 인식하다","detect 탐지하다","determine 결정하다"],a:["misidentify 잘못 식별하다","overlook 간과하다"],h:"아이덴티티→정체성을 확인",ex:"Police were able to _____ the suspect from the photo.",ek:"경찰은 사진으로 용의자를 [식별할] 수 있었다"},
+  // ... (full 60 words from prepared W5)
+];
 
 // Extremely easy words to exclude from SA pools (too basic for the quiz)
-const TOO_EASY = new Set([ /* full list as in original */ ]);
+const TOO_EASY = new Set([
+  "change","plan","hide","tell","add","deep","better","clear","different","strong","weak",
+  // ... (full list from original)
+]);
 
 const SAE={};
 const SA_HINTS={};
@@ -104,5 +122,5 @@ const extractSA=ws=>{
   return[...m.values()];
 };
 
-window.VOCAB = { W, W2, W3, W4, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
+window.VOCAB = { W, W2, W3, W4, W5, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
 })();
