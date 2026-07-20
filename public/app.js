@@ -272,12 +272,13 @@
       var currentProgress = s.pageProgress[progressKey] || {};
 
       var replay = function () {
-        // Clear only this page+mode progress and force remount
+        // Clear only this page+mode progress, force remount, and scroll to top
         self.setState(function (st) {
           var pp = Object.assign({}, st.pageProgress);
           delete pp[progressKey];
           return { round: st.round + 1, pageProgress: pp };
         });
+        try { window.scrollTo({ top: 0, behavior: "smooth" }); } catch (e) { window.scrollTo(0, 0); }
       };
 
       var onResult = function (ok, key) {
