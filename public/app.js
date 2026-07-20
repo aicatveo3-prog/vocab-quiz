@@ -1,5 +1,5 @@
 // App shell — a real React re-implementation of the Claude Design prototype
-// (VocabQuiz.dc.html). Renders the iOS-style header, 3-stage segmented control,
+// (VocabQuiz.dc.html). Renders the iOS-style header, Day segmented control,
 // draggable progress scrubber, streak chip, replay/next controls, the saved
 // (★저장) stage, and the Google sign-in flow. Learning data is persisted to
 // localStorage for guests and synced to the backend (per Google account) when
@@ -42,7 +42,7 @@
     constructor(props) {
       super(props);
       this.state = {
-        stage: 1, page: 0, mode: "exam", round: 0,
+        stage: "day1", page: 0, mode: "exam", round: 0,
         streak: 0, best: 0, completed: {}, saved: {},
         account: null, googleClientId: "", loginEnabled: false,
         showLoginInfo: false, ready: false, syncing: false,
@@ -86,9 +86,10 @@
       var V = window.VOCAB;
       this.W = V.W;
       this.s2 = V.extractSA(V.W);
-      this.pages1 = V.chunk(V.W, V.PS);
-      this.pages2 = V.chunk(this.s2, V.PS);
-      this._all = this.W.concat(this.s2);
+      // Day 1 = main 60 + all synonyms/antonyms (integrated)
+      this.day1 = this.W.concat(this.s2);
+      this.pages1 = V.chunk(this.day1, V.PS);
+      this._all = this.day1;
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
@@ -236,9 +237,11 @@
       var s = this.state, stage = s.stage;
       var self = this;
 
+      // Support old keys (1:: / 2::) + new day1:: for migration
       var resolveSaved = function (key) {
-        var i = key.indexOf("::"); var sNum = key.slice(0, i), wTxt = key.slice(i + 2);
-        var src = sNum === "1" ? self.W : sNum === "2" ? self.s2 : null;
+        var i = key.indexOf("::"); if (i < 0) return null;
+        var sNum = key.slice(0, i), wTxt = key.slice(i + 2);
+        var src = (sNum === "day1" || sNum === "1" || sNum === "2") ? self._all : null;
         if (!src) return null;
         var f = src.find(function (x) { return x.w === wTxt; });
         return f ? Object.assign({}, f, { _key: key, _stage: sNum }) : null;
@@ -246,14 +249,21 @@
       var savedWords = Object.keys(s.saved || {}).map(resolveSaved).filter(Boolean);
 
       var pages, pool, stageKeyStr;
-      if (stage === "saved") { pages = V.chunk(savedWords, V.PS); pool = this._all; stageKeyStr = "saved"; }
-      else if (stage === 2) { pages = this.pages2; pool = this.s2; stageKeyStr = "2"; }
-      else { pages = this.pages1; pool = this.W; stageKeyStr = "1"; }
+      if (stage === "saved") {
+        pages = V.chunk(savedWords, V.PS);
+        pool = this._all;
+        stageKeyStr = "saved";
+      } else {
+        // Day 1 = integrated main + SA
+        pages = this.pages1;
+        pool = this.day1;
+        stageKeyStr = "day1";
+      }
       var total = pages.length;
       var pIdx = Math.max(0, Math.min(s.page, total - 1));
       var words = total ? (pages[pIdx] || pages[0]) : [];
       words = words.map(function (w) { return w._key ? w : Object.assign({}, w, { _key: stageKeyStr + "::" + w.w, _stage: stageKeyStr }); });
-      var hasFill = stageKeyStr === "1" || (words && words.some(function (v) { return v.ex; }));
+      var hasFill = words && words.some(function (v) { return v.ex; });
       var modeDefs = [{ id: "exam", n: "시험지" }].concat(hasFill ? [{ id: "fill", n: "빈칸" }] : [], [{ id: "match", n: "매칭" }]);
       var mode = modeDefs.some(function (m) { return m.id === s.mode; }) ? s.mode : "exam";
       var showEmpty = stage === "saved" && savedWords.length === 0;
@@ -318,10 +328,9 @@
               h("span", { style: { fontSize: 12.5, fontWeight: 600, color: "#3C4043" } }, "Google 로그인"))
       );
 
-      // ---- stage segmented control ----
+      // ---- stage segmented control (Day 1 integrated) ----
       var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
-        h("button", { onClick: function () { goStage(1); }, style: segBtn(stage === 1) }, "1단계"),
-        h("button", { onClick: function () { goStage(2); }, style: segBtn(stage === 2) }, "2단계"),
+        h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
         h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
       );
 
@@ -374,16 +383,14 @@
 
       var showReplay = !!s.completed[stageKeyStr + "-" + pIdx];
       var showNext = total > 0 && pIdx < total - 1;
-      var showStage2 = total > 0 && pIdx === total - 1 && stage === 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === 2 || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
         showNext ? h("button", { key: "next", onClick: function () { goPage(pIdx + 1); }, style: primaryStyle }, "다음 페이지") : null,
-        showStage2 ? h("button", { key: "stage2", onClick: function () { goStage(2); }, style: primaryStyle }, "2단계: 유의어·반의어로") : null,
         showDone ? h("div", { key: "done", style: { background: "#fff", borderRadius: 12, padding: "20px 16px", marginTop: 16, textAlign: "center", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
-          h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 4px" } }, "전체 학습 완료"),
-          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 + 유의어·반의어 " + this.s2.length + "개"))) : null,
+          h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 4px" } }, "Day 1 학습 완료"),
+          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 + 유의어·반의어 " + this.s2.length + "개 통합"))) : null,
       ];
 
       var quizSection = showQuiz ? h("div", null, progressRow, navRow, quizBody, footer) : null;
