@@ -191,6 +191,70 @@ const W3 = [
   {w:"be acquainted with",m:"친분이 있다",s:["know 알다","be familiar with 익숙하다"],a:["be unfamiliar with 낯설다"],h:"acquaint → 알게 하다",ex:"I am _____ the manager.",ek:"나는 매니저와 [친분이 있다]"}
 ];
 
+// ========== Day 4 Main 60 words ==========
+const W4 = [
+  {w:"material",m:"물질, 재료; 물질적인; 자료",s:["substance 물질","fabric 직물","data 자료"],a:["immaterial 비물질적인","spiritual 정신적인"],h:"매터리얼→재료",ex:"Wood is a natural _____.",ek:"나무는 천연 [재료]이다"},
+  {w:"union",m:"조합, 연합",s:["alliance 동맹","association 협회","federation 연맹"],a:["division 분열","separation 분리"],h:"유니온→연합",ex:"The workers formed a _____.",ek:"노동자들이 [조합]을 결성했다"},
+  {w:"ban",m:"금지하다; 규제, 금지 명령",s:["prohibit 금지하다","forbid 금하다","restrict 규제하다"],a:["allow 허용하다","permit 허가하다"],h:"밴→금지",ex:"The government decided to _____ smoking indoors.",ek:"정부는 실내 흡연을 [금지하기로] 했다"},
+  {w:"executive",m:"임원, 경영진, 책임자; 행정상의",s:["manager 관리자","administrator 행정관","director 이사"],a:["subordinate 부하","employee 직원"],h:"엑시큐티브→실행하는 사람",ex:"She is a senior _____ at the company.",ek:"그녀는 회사의 고위 [임원]이다"},
+  {w:"fossil",m:"화석; 화석의",s:["remains 잔해","relic 유물"],a:["modern 현대의","recent 최근의"],h:"파슬→화석",ex:"They discovered a dinosaur _____.",ek:"그들은 공룡 [화석]을 발견했다"},
+  {w:"shelter",m:"보호소, 대피처; 보호하다, 숨겨주다",s:["refuge 피난처","protection 보호","haven 안식처"],a:["exposure 노출"],h:"셸터→피난처",ex:"The cave provided _____ from the storm.",ek:"동굴이 폭풍으로부터 [대피처]를 제공했다"},
+  {w:"fix",m:"고정시키다; (날짜, 시간, 양 등을) 정하다",s:["repair 수리하다","set 정하다","secure 고정하다"],a:["break 부수다","loosen 느슨하게 하다"],h:"픽스→고치다/정하다",ex:"Can you _____ the broken chair?",ek:"부서진 의자를 [고칠] 수 있니?"},
+  {w:"verbal",m:"언어의, 구두의",s:["spoken 구술의","oral 구두의","linguistic 언어의"],a:["written 서면의","nonverbal 비언어적인"],h:"버벌→말로 하는",ex:"They made a _____ agreement.",ek:"그들은 [구두] 합의를 했다"},
+  {w:"vulnerable",m:"취약한, 공격받기 쉬운; 연약한",s:["susceptible 영향받기 쉬운","exposed 노출된","weak 약한"],a:["invulnerable 무적의","secure 안전한"],h:"벌너러블→상처받기 쉬운",ex:"Children are more _____ to diseases.",ek:"아이들은 질병에 더 [취약하다]"},
+  {w:"cite",m:"(예를 들어) 언급하다, 인용하다",s:["quote 인용하다","mention 언급하다","refer to 언급하다"],a:["ignore 무시하다"],h:"사이트→인용하다",ex:"The author _____ several studies.",ek:"저자는 여러 연구를 [인용했다]"},
+  {w:"transmit",m:"전송하다, 송신하다; 전염시키다",s:["send 보내다","broadcast 방송하다","spread 퍼뜨리다"],a:["receive 받다","block 막다"],h:"트랜스밋→건너 보내다",ex:"The radio station _____ the signal.",ek:"라디오 방송국이 신호를 [전송했다]"},
+  {w:"refund",m:"환불하다; 환불, 환불금",s:["reimburse 상환하다","return 돌려주다","repay 갚다"],a:["charge 청구하다"],h:"리펀드→돈 돌려주기",ex:"They offered a full _____.",ek:"그들은 전액 [환불]을 제안했다"},
+  {w:"isolate",m:"고립시키다, 격리하다",s:["separate 분리하다","quarantine 격리하다","seclude 은둔시키다"],a:["integrate 통합하다","connect 연결하다"],h:"아이솔레이트→고립",ex:"The doctor had to _____ the patient.",ek:"의사는 환자를 [격리해야] 했다"},
+  {w:"district",m:"구역, 지구",s:["area 지역","region 지역","zone 구역"],a:["whole 전체"],h:"디스트릭트→지구",ex:"This is a quiet residential _____.",ek:"여기는 조용한 주거 [구역]이다"},
+  {w:"equality",m:"평등, 균등",s:["fairness 공정성","parity 동등","equity 형평"],a:["inequality 불평등","discrimination 차별"],h:"이퀄리티→평등",ex:"They fought for racial _____.",ek:"그들은 인종 [평등]을 위해 싸웠다"},
+  {w:"eradicate",m:"근절하다, 박멸하다",s:["eliminate 제거하다","wipe out 전멸시키다","exterminate 박멸하다"],a:["preserve 보존하다","spread 퍼뜨리다"],h:"이러디케이트→뿌리 뽑다",ex:"The goal is to _____ poverty.",ek:"목표는 빈곤을 [근절하는] 것이다"},
+  {w:"fade",m:"(색깔이) 바래다, 희미해지다; 사라지다",s:["dim 희미해지다","vanish 사라지다","wither 시들다"],a:["brighten 밝아지다","intensify 강화되다"],h:"페이드→사라지다",ex:"The color will _____ in the sun.",ek:"색깔이 햇빛에 [바랠] 것이다"},
+  {w:"crude",m:"허술한, 대충의; 원유",s:["rough 거친","raw 가공되지 않은","unrefined 정제되지 않은"],a:["refined 정제된","sophisticated 정교한"],h:"크루드→날것의",ex:"The design was rather _____.",ek:"그 디자인은 다소 [허술했다]"},
+  {w:"apprehend",m:"이해하다, 깨닫다; 검거하다, 체포하다",s:["understand 이해하다","arrest 체포하다","grasp 파악하다"],a:["release 석방하다","misunderstand 오해하다"],h:"어프리헨드→잡다/이해하다",ex:"The police _____ the suspect.",ek:"경찰이 용의자를 [체포했다]"},
+  {w:"speculate",m:"추측하다; 투기하다",s:["guess 추측하다","conjecture 추측하다","theorize 이론화하다"],a:["know 알다","confirm 확인하다"],h:"스펙큘레이트→추측",ex:"It's too early to _____ about the results.",ek:"결과에 대해 [추측하기]에는 너무 이르다"},
+  {w:"lead to",m:"~으로 이어지다",s:["result in ~의 결과를 낳다","cause 야기하다","bring about 일으키다"],a:["prevent 방지하다"],h:"lead+to→이끌다",ex:"Poor diet can _____ health problems.",ek:"나쁜 식단은 건강 문제로 [이어질] 수 있다"},
+  {w:"be responsible for",m:"~에 책임이 있다",s:["be in charge of ~을 책임지다","be accountable for ~에 책임이 있다"],a:["be free from ~에서 자유롭다"],h:"responsible → 책임 있는",ex:"She _____ the project.",ek:"그녀가 프로젝트를 [책임지고 있다]"},
+  {w:"be forced to",m:"~할 수밖에 없다, 마지막해 ~하다",s:["be compelled to ~할 수밖에 없다","have to ~해야 하다"],a:["be free to ~할 자유가 있다"],h:"forced → 강요된",ex:"They _____ cancel the event.",ek:"그들은 행사를 [취소할 수밖에 없었다]"},
+  {w:"a handful of",m:"소수의",s:["a few 몇 개의","a small number of 소수의"],a:["a large number of 많은"],h:"handful → 한 줌",ex:"Only _____ students passed the exam.",ek:"[소수의] 학생들만 시험에 합격했다"},
+  {w:"clarity",m:"명료성",s:["clearness 명확성","lucidity 명료함","precision 정확성"],a:["ambiguity 모호함","confusion 혼란"],h:"클라리티→맑음",ex:"The _____ of his explanation helped everyone.",ek:"그의 설명의 [명료성]이 모두를 도왔다"},
+  {w:"eternal",m:"영원한",s:["everlasting 영원한","permanent 영구적인","timeless 시간을 초월한"],a:["temporary 일시적인","fleeting 찰나의"],h:"이터널→영원한",ex:"They swore _____ love.",ek:"그들은 [영원한] 사랑을 맹세했다"},
+  {w:"purify",m:"정화하다",s:["cleanse 깨끗이 하다","filter 여과하다","refine 정제하다"],a:["contaminate 오염시키다","pollute 오염시키다"],h:"퓨리파이→순수하게 하다",ex:"The plant helps to _____ the air.",ek:"그 식물이 공기를 [정화하는] 데 도움이 된다"},
+  {w:"bondage",m:"구속, 결박",s:["slavery 노예 상태","captivity 포로 상태","restriction 제한"],a:["freedom 자유","liberty 자유"],h:"본디지→묶임",ex:"They escaped from _____.",ek:"그들은 [구속]에서 탈출했다"},
+  {w:"vibe",m:"분위기, 느낌",s:["atmosphere 분위기","feeling 느낌","mood 기분"],a:[],h:"바이브→느낌",ex:"The place has a nice _____.",ek:"그 곳은 좋은 [분위기]를 가지고 있다"},
+  {w:"proximity",m:"근접, 가까움",s:["nearness 가까움","closeness 친밀함","vicinity 근처"],a:["distance 거리","remoteness 멀리 있음"],h:"프록시미티→근접",ex:"The _____ to the station is convenient.",ek:"역과의 [근접성]이 편리하다"},
+  {w:"penniless",m:"몹시 가난한",s:["broke 무일푼의","impoverished 빈곤한","destitute 궁핍한"],a:["wealthy 부유한","rich 부자인"],h:"페니리스→동전 한 닢 없는",ex:"He was left _____ after the bankruptcy.",ek:"그는 파산 후 [무일푼이] 되었다"},
+  {w:"sympathetic",m:"동정 어린",s:["compassionate 연민 어린","understanding 이해심 있는","kind 친절한"],a:["unsympathetic 동정심 없는","cold 차가운"],h:"심패세틱→함께 느끼는",ex:"She gave him a _____ look.",ek:"그녀는 그에게 [동정 어린] 시선을 보냈다"},
+  {w:"liberate",m:"해방시키다",s:["free 자유롭게 하다","release 석방하다","emancipate 해방하다"],a:["enslave 노예로 만들다","confine 가두다"],h:"리버레이트→자유롭게 하다",ex:"The army helped to _____ the city.",ek:"군대가 도시를 [해방시키는] 데 도움을 주었다"},
+  {w:"regime",m:"정권",s:["government 정부","administration 행정부","rule 통치"],a:["anarchy 무정부 상태"],h:"레짐→통치",ex:"The new _____ promised reforms.",ek:"새 [정권]은 개혁을 약속했다"},
+  {w:"eminent",m:"저명한, 뛰어난",s:["distinguished 저명한","famous 유명한","renowned 명성 있는"],a:["obscure 무명의","unknown 알려지지 않은"],h:"에미넌트→두드러진",ex:"He is an _____ scientist.",ek:"그는 [저명한] 과학자이다"},
+  {w:"congratulate",m:"축하하다",s:["compliment 칭찬하다","praise 칭찬하다","applaud 박수를 보내다"],a:["criticize 비판하다","blame 탓하다"],h:"콩그래츌레이트→함께 기뻐하다",ex:"I want to _____ you on your success.",ek:"너의 성공을 [축하하고] 싶다"},
+  {w:"regional",m:"지방의",s:["local 지역의","provincial 지방의","area 지역의"],a:["national 국가의","global 세계적인"],h:"리저널→지역의",ex:"There are _____ differences in dialect.",ek:"방언에 [지역적] 차이가 있다"},
+  {w:"offspring",m:"자손, 자식",s:["children 아이들","descendants 후손","progeny 자손"],a:["ancestor 조상","parent 부모"],h:"오프스프링→떨어져 나온 것",ex:"The animal protects its _____.",ek:"그 동물은 자신의 [자손]을 보호한다"},
+  {w:"differentiate",m:"구별하다; 차별하다",s:["distinguish 구별하다","discriminate 차별하다","separate 분리하다"],a:["confuse 혼동하다","equate 동일시하다"],h:"디퍼렌시에이트→다르게 만들다",ex:"It's hard to _____ the twins.",ek:"쌍둥이를 [구별하기] 어렵다"},
+  {w:"supervision",m:"관리, 감독",s:["oversight 감독","management 관리","control 통제"],a:["neglect 방치"],h:"수퍼비전→위에서 보다",ex:"The work requires close _____.",ek:"그 일은 세심한 [감독]이 필요하다"},
+  {w:"abhor",m:"혐오하다",s:["hate 미워하다","detest 혐오하다","loathe 혐오하다"],a:["love 사랑하다","admire 존경하다"],h:"앱호어→혐오",ex:"I _____ violence of any kind.",ek:"나는 어떤 종류의 폭력도 [혐오한다]"},
+  {w:"insulate",m:"절연하다, 단열 처리를 하다; 보호하다",s:["protect 보호하다","shield 보호하다","isolate 고립시키다"],a:["expose 노출시키다"],h:"인슐레이트→단열",ex:"They _____ the walls to save energy.",ek:"그들은 에너지를 절약하기 위해 벽에 [단열 처리를 했다]"},
+  {w:"amateur",m:"비전문가, 아마추어",s:["nonprofessional 비전문가","novice 초보자","hobbyist 취미로 하는 사람"],a:["professional 전문가","expert 전문가"],h:"아마추어→애호가",ex:"He is an _____ photographer.",ek:"그는 [아마추어] 사진작가이다"},
+  {w:"terminate",m:"끝내다, 종료하다",s:["end 끝내다","finish 마치다","conclude 결론짓다"],a:["begin 시작하다","continue 계속하다"],h:"터미네이트→끝마치다",ex:"They decided to _____ the contract.",ek:"그들은 계약을 [종료하기로] 했다"},
+  {w:"decompose",m:"부패하다, 분해되다",s:["rot 썩다","decay 부패하다","break down 분해되다"],a:["preserve 보존하다","compose 구성하다"],h:"디컴포즈→구성이 무너지다",ex:"Leaves _____ in the soil.",ek:"나뭇잎이 흙에서 [분해된다]"},
+  {w:"latent",m:"잠재된, (질병이) 잠복해 있는; 휴면의",s:["hidden 숨겨진","dormant 휴면의","potential 잠재적인"],a:["active 활성의","manifest 명백한"],h:"레이턴트→숨어 있는",ex:"The virus remained _____.",ek:"바이러스가 [잠복해] 있었다"},
+  {w:"utter",m:"(입 밖에) 내다, 말하다; 완전한",s:["speak 말하다","express 표현하다","complete 완전한"],a:["silence 침묵하다","partial 부분적인"],h:"어터→발하다",ex:"He didn't _____ a single word.",ek:"그는 한 마디도 [하지] 않았다"},
+  {w:"criticism",m:"비판, 비난",s:["censure 비난","disapproval 불승인","critique 비평"],a:["praise 칭찬","approval 승인"],h:"크리티시즘→비판",ex:"She faced harsh _____.",ek:"그녀는 가혹한 [비판]에 직면했다"},
+  {w:"valid",m:"유효한, 정당한",s:["legitimate 정당한","sound 타당한","acceptable 받아들일 수 있는"],a:["invalid 무효의","false 거짓의"],h:"밸리드→유효한",ex:"Your passport is still _____.",ek:"네 여권은 아직 [유효하다]"},
+  {w:"blunder",m:"실수; 실수하다",s:["mistake 실수","error 오류","fumble 실수하다"],a:["success 성공","achievement 성취"],h:"블런더→큰 실수",ex:"He made a serious _____.",ek:"그는 심각한 [실수를] 저질렀다"},
+  {w:"extinguish",m:"(불을) 끄다; 끝내다, 없애다",s:["put out 끄다","quench 끄다","eliminate 없애다"],a:["ignite 점화하다","start 시작하다"],h:"익스팅귀시→끄다",ex:"Firefighters worked to _____ the blaze.",ek:"소방관들이 불을 [끄기] 위해 일했다"},
+  {w:"colorful",m:"형형색색의, 다채로운",s:["vivid 선명한","bright 밝은","varied 다양한"],a:["drab 칙칙한","monochrome 단색의"],h:"컬러풀→색깔이 많은",ex:"She wore a _____ dress.",ek:"그녀는 [다채로운] 드레스를 입었다"},
+  {w:"aisle",m:"통로",s:["passage 통로","corridor 복도","path 길"],a:[],h:"아일→통로",ex:"Please keep the _____ clear.",ek:"[통로]를 비워 주세요"},
+  {w:"standpoint",m:"견지, 관점",s:["viewpoint 관점","perspective 시각","angle 각도"],a:[],h:"스탠드포인트→서는 지점",ex:"From my _____, the plan is good.",ek:"내 [관점]에서 그 계획은 좋다"},
+  {w:"in return",m:"답례로",s:["in exchange 교환으로","as a reward 보상으로"],a:[],h:"return → 돌려주는",ex:"She helped me, and I helped her _____.",ek:"그녀가 나를 도왔고, 나는 [답례로] 그녀를 도왔다"},
+  {w:"on the rise",m:"상승 중인, 오름세인",s:["increasing 증가하는","growing 성장하는","climbing 오르는"],a:["on the decline 하락 중인"],h:"rise → 오르다",ex:"Crime is _____ in the city.",ek:"도시에서 범죄가 [증가하고 있다]"},
+  {w:"caught up in",m:"~에 휩쓸린",s:["involved in ~에 관련된","engrossed in ~에 몰두한"],a:["free from ~에서 자유로운"],h:"catch up → 휩쓸리다",ex:"He got _____ the argument.",ek:"그는 논쟁에 [휩쓸렸다]"},
+  {w:"show off",m:"으스대다, 과시하다",s:["boast 자랑하다","flaunt 과시하다","brag 허풍 떨다"],a:["hide 숨기다","modest 겸손한"],h:"show+off→보여주다",ex:"He likes to _____ his new car.",ek:"그는 새 차를 [과시하기를] 좋아한다"},
+  {w:"take part in",m:"~에 참여하다",s:["participate in ~에 참여하다","join 참여하다","engage in ~에 관여하다"],a:["withdraw from ~에서 빠지다"],h:"part → 부분",ex:"Many students _____ the contest.",ek:"많은 학생들이 대회에 [참여했다]"},
+  {w:"put on",m:"공연하다, 몸에 걸치다",s:["wear 입다","stage 공연하다","perform 공연하다"],a:["take off 벗다"],h:"put+on→입다/올리다",ex:"She _____ a beautiful dress.",ek:"그녀는 아름다운 드레스를 [입었다]"}
+];
+
 // Extremely easy words to exclude from SA pools (too basic for the quiz)
 const TOO_EASY = new Set([
   "change","plan","hide","tell","add","deep","better","clear","different","strong","weak",
@@ -311,5 +375,5 @@ const extractSA=ws=>{
   return[...m.values()];
 };
 
-window.VOCAB = { W, W2, W3, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
+window.VOCAB = { W, W2, W3, W4, SAE, sh, chunk, PS, extractSA, blue, t1, t2, t3, sep, bg, card, font };
 })();
