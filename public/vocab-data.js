@@ -128,6 +128,7 @@ const W2 = [
 ];
 
 // Extremely easy words to exclude from SA pools (too basic for the quiz)
+// + modest addition of next-easiest words (~1/10 more)
 const TOO_EASY = new Set([
   "change","plan","hide","tell","add","deep","better","clear","different","strong","weak",
   "kind","stay","remain","also","much","easily","live","match","follow","cut","fix","join",
@@ -234,7 +235,25 @@ const TOO_EASY = new Set([
   "where","wherever",
   "why","because",
   "how","however",
-  "who","whom","whose","which","what","that"
+  "who","whom","whose","which","what","that",
+  // modest addition of next-easiest SA words (~1/10)
+  "strange","unknown","familiar","ignore","fail","demand","offer","resist","praise",
+  "support","release","freedom","regular","consistent","joy","happiness","local",
+  "national","deny","confirm","interfere","hardly","main","chief","primary","mock",
+  "ugly","flexible","solid","rigid","middle","center","strict","severe","solution",
+  "problem","request","cause","prevent","build","consider","collect","grab","drop",
+  "tend","require","obey","submit","elegant","delicate","crude","rough","underestimate",
+  "diminish","enhance","isolation","burst","crack","mend","heal","clever","naive",
+  "ignorant","faint","light","vivid","dark","steady","sorrow","delight","obedient",
+  "urban","rural","verify","validate","intrude","scarcely","narrowly","abundantly",
+  "resistance","conflict","tension","harmony","agreement","minor","secondary",
+  "compliment","encourage","stunning","magnificent","plain","worldly","religious",
+  "sacred","spiritual","liquid","dynamic","fixed","impartial","objective","neutral",
+  "biased","jealousy","desire","admiration","core","edge","preparation","planning",
+  "lenient","gentle","easygoing","settlement","declaration","inspection","examination",
+  "review","overlook","citizen","rejection","trigger","hinder","assemble","distinguish",
+  "confuse","establish","develop","strengthen","destroy","weaken","disregard",
+  "activate"
 ]);
 
 // 유의어·반의어 예문 lookup (기존 + Day2)
