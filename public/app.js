@@ -1,5 +1,5 @@
-// App shell — Day 1 + Day 2 + ★저장 + persistent page progress
-// Only the exact main words provided by user (no extra SA-generated quiz items)
+// App shell — Day 1 + Day 2 + Day 3 + ★저장 + persistent page progress
+// Only the exact main words provided by user (no auto-generated SA quiz items)
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
@@ -78,12 +78,15 @@
       var V = window.VOCAB;
       this.W = V.W;
       this.W2 = V.W2 || [];
-      // Only the exact main words the user provided (no auto-generated SA quiz items)
+      this.W3 = V.W3 || [];
+      // Only the exact main words the user provided
       this.day1 = this.W;
       this.day2 = this.W2;
+      this.day3 = this.W3;
       this.pages1 = V.chunk(this.day1, V.PS);
       this.pages2 = V.chunk(this.day2, V.PS);
-      this._all = this.day1.concat(this.day2);
+      this.pages3 = V.chunk(this.day3, V.PS);
+      this._all = this.day1.concat(this.day2).concat(this.day3);
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
@@ -242,6 +245,11 @@
         pool = this._all;
         stageKeyStr = "saved";
         dayLabel = "저장함";
+      } else if (stage === "day3") {
+        pages = this.pages3;
+        pool = this.day3;
+        stageKeyStr = "day3";
+        dayLabel = "Day 3";
       } else if (stage === "day2") {
         pages = this.pages2;
         pool = this.day2;
@@ -267,12 +275,10 @@
       var goPage = function (p) { self.setState({ page: Math.max(0, Math.min(total - 1, p)) }); };
       var setMode = function (m) { self.setState({ mode: m }); };
 
-      // Progress key for current page + mode
       var progressKey = stageKeyStr + "-" + pIdx + "-" + mode;
       var currentProgress = s.pageProgress[progressKey] || {};
 
       var replay = function () {
-        // Clear only this page+mode progress, force remount, and scroll to top
         self.setState(function (st) {
           var pp = Object.assign({}, st.pageProgress);
           delete pp[progressKey];
@@ -346,6 +352,7 @@
       var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
         h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
         h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
+        h("button", { onClick: function () { goStage("day3"); }, style: segBtn(stage === "day3") }, "Day 3"),
         h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
       );
 
@@ -402,13 +409,12 @@
       var primaryStyle = { width: "100%", padding: 14, borderRadius: 12, border: "none", background: blue, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font };
       var replayStyle = { width: "100%", padding: 13, borderRadius: 12, border: "1px solid " + sep, background: "#fff", color: blue, fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 };
 
-      // Show "다시 풀기" as soon as there is any progress on this page, or if page was completed
       var hasAnyProgress = (currentProgress.ans && Object.keys(currentProgress.ans).length > 0) ||
                            (currentProgress.matched && currentProgress.matched.length > 0) ||
                            !!s.completed[stageKeyStr + "-" + pIdx];
       var showReplay = hasAnyProgress;
       var showNext = total > 0 && pIdx < total - 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "day3" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
