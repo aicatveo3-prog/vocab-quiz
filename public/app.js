@@ -1,16 +1,8 @@
-// App shell — a real React re-implementation of the Claude Design prototype
-// (VocabQuiz.dc.html). Renders the iOS-style header, Day segmented control,
-// draggable progress scrubber, streak chip, replay/next controls, the saved
-// (★저장) stage, and the Google sign-in flow. Learning data is persisted to
-// localStorage for guests and synced to the backend (per Google account) when
-// signed in, so saved words follow the user across devices.
-//
-// Plain React.createElement (no JSX/build step) to match quiz-modes.js.
+// App shell — Day 1 / Day 2 / ★저장 support
 (function () {
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
 
-  // ---- backend helpers ----------------------------------------------------
   var api = {
     config: function () { return fetch("/api/config").then(function (r) { return r.json(); }); },
     me: function () { return fetch("/api/me", { credentials: "same-origin" }).then(function (r) { return r.json(); }); },
@@ -47,7 +39,6 @@
         account: null, googleClientId: "", loginEnabled: false,
         showLoginInfo: false, ready: false, syncing: false,
         dragging: false, dragPage: 0,
-        // design tweaks (were DC props) — kept on by default
         showProgress: true, showStreak: true, persistProgress: true,
       };
       this._scrub = { total: 1, goPage: function () {} };
@@ -63,7 +54,6 @@
 
     componentDidMount() {
       var self = this;
-      // Pull config + existing session in parallel, then boot once VOCAB is ready.
       Promise.all([api.config(), api.me()]).then(function (res) {
         var cfg = res[0] || {}, me = res[1] || {};
         self.setState({ googleClientId: cfg.googleClientId || "", loginEnabled: !!cfg.loginEnabled, account: me.user || null });
@@ -85,15 +75,18 @@
     _init() {
       var V = window.VOCAB;
       this.W = V.W;
-      this.s2 = V.extractSA(V.W);
-      // Day 1 = main 60 + all synonyms/antonyms (integrated)
-      this.day1 = this.W.concat(this.s2);
+      this.W2 = V.W2 || [];
+      this.s1 = V.extractSA(V.W);
+      this.s2 = V.extractSA(this.W2);
+      // Day 1 = main60 + SA, Day 2 = main60 + SA
+      this.day1 = this.W.concat(this.s1);
+      this.day2 = this.W2.concat(this.s2);
       this.pages1 = V.chunk(this.day1, V.PS);
-      this._all = this.day1;
+      this.pages2 = V.chunk(this.day2, V.PS);
+      this._all = this.day1.concat(this.day2);
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
-    // Read the local cache (guest keys, or account-namespaced when signed in).
     _readLocal() {
       return {
         best: parseInt(localStorage.getItem(this._k("vq_best")) || "0", 10) || 0,
@@ -116,8 +109,6 @@
             self.setState({ best: server.best || 0, completed: server.completed || {}, saved: server.saved || {}, streak: 0, syncing: false });
             self._writeLocal(server.best || 0, server.completed || {}, server.saved || {});
           } else {
-            // Server empty for this account → migrate any local data up so the
-            // words saved before signing in aren't lost.
             var local = self._readLocal();
             var guest = { best: parseInt(localStorage.getItem("vq_best") || "0", 10) || 0, completed: readJSON("vq_completed", {}), saved: readJSON("vq_saved", {}) };
             var seed = (countKeys(local.saved) || countKeys(local.completed) || local.best) ? local : guest;
@@ -138,8 +129,8 @@
 
     _save(best, completed, saved) {
       if (this.state.account) {
-        this._writeLocal(best, completed, saved);           // offline cache
-        this._syncUp(best, completed, saved);               // debounced server push
+        this._writeLocal(best, completed, saved);
+        this._syncUp(best, completed, saved);
       } else if (this._persist()) {
         this._writeLocal(best, completed, saved);
       }
@@ -150,7 +141,6 @@
       this._syncT = setTimeout(function () { api.putData({ best: best, completed: completed, saved: saved }); }, 500);
     }
 
-    // ---- Google sign-in ----------------------------------------------------
     _onCredential(resp) {
       var self = this;
       api.login(resp.credential).then(function (r) {
@@ -191,7 +181,6 @@
       });
     }
 
-    // ---- draggable page scrubber (native pointer listeners) ----------------
     _pageFromX(clientX) {
       var el = this._trackEl, sc = this._scrub; if (!el || !sc) return 0;
       var r = el.getBoundingClientRect();
@@ -237,27 +226,32 @@
       var s = this.state, stage = s.stage;
       var self = this;
 
-      // Support old keys (1:: / 2::) + new day1:: for migration
       var resolveSaved = function (key) {
         var i = key.indexOf("::"); if (i < 0) return null;
         var sNum = key.slice(0, i), wTxt = key.slice(i + 2);
-        var src = (sNum === "day1" || sNum === "1" || sNum === "2") ? self._all : null;
+        var src = self._all;
         if (!src) return null;
         var f = src.find(function (x) { return x.w === wTxt; });
         return f ? Object.assign({}, f, { _key: key, _stage: sNum }) : null;
       };
       var savedWords = Object.keys(s.saved || {}).map(resolveSaved).filter(Boolean);
 
-      var pages, pool, stageKeyStr;
+      var pages, pool, stageKeyStr, dayLabel;
       if (stage === "saved") {
         pages = V.chunk(savedWords, V.PS);
         pool = this._all;
         stageKeyStr = "saved";
+        dayLabel = "저장함";
+      } else if (stage === "day2") {
+        pages = this.pages2;
+        pool = this.day2;
+        stageKeyStr = "day2";
+        dayLabel = "Day 2";
       } else {
-        // Day 1 = integrated main + SA
         pages = this.pages1;
         pool = this.day1;
         stageKeyStr = "day1";
+        dayLabel = "Day 1";
       }
       var total = pages.length;
       var pIdx = Math.max(0, Math.min(s.page, total - 1));
@@ -313,7 +307,6 @@
       var posPct = total > 1 ? (activePage / (total - 1)) * 100 : 0;
       var streak = s.streak, best = s.best, sActive = streak > 0;
 
-      // ---- header ----
       var header = h("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", margin: "2px 0 14px" } },
         h("span", { style: { fontSize: 17, fontWeight: 700, color: "#1C1C1E", letterSpacing: "-0.3px" } }, "단어 퀴즈"),
         s.account
@@ -328,20 +321,19 @@
               h("span", { style: { fontSize: 12.5, fontWeight: 600, color: "#3C4043" } }, "Google 로그인"))
       );
 
-      // ---- stage segmented control (Day 1 integrated) ----
+      // Day 1 / Day 2 / ★저장
       var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
         h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
+        h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
         h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
       );
 
-      // ---- empty saved state ----
       var emptyCard = showEmpty ? h("div", { style: { background: "#fff", borderRadius: 12, padding: "38px 22px", textAlign: "center", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
         h("p", { style: { fontSize: 38, margin: "0 0 10px", color: "#FF9F0A", lineHeight: 1 } }, "★"),
         h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 6px" } }, "저장한 단어가 없어요"),
         h("p", { style: { fontSize: 12.5, color: "#8E8E93", margin: 0, lineHeight: 1.7 } }, "문제 단어 옆 별(☆)을 누르면 여기에 모여요.", h("br"), "틀린 단어는 자동으로 저장됩니다.")
       ) : null;
 
-      // ---- progress scrubber + streak ----
       var progressBlock = s.showProgress ? h("div", { style: { flex: 1 } },
         h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 7 } },
           h("span", { style: { fontSize: 11, color: "#8E8E93", fontWeight: 600, letterSpacing: "0.2px" } }, completedCount + "/" + total + " 페이지 완료"),
@@ -363,7 +355,6 @@
 
       var progressRow = h("div", { style: { display: "flex", alignItems: "flex-end", gap: 12, marginBottom: 16 } }, progressBlock, streakChip);
 
-      // ---- page nav + mode segmented ----
       var navRow = h("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 } },
         h("div", { style: { display: "flex", alignItems: "center", gap: 8 } },
           h("button", { onClick: function () { goPage(pIdx - 1); }, style: navStyle(pIdx > 0) }, "‹"),
@@ -373,29 +364,26 @@
           modeDefs.map(function (m) { return h("button", { key: m.id, onClick: function () { setMode(m.id); }, style: modeBtn(mode === m.id) }, m.n); }))
       );
 
-      // ---- quiz body (from quiz-modes.js) ----
       var sig = stage + "-" + pIdx + "-" + mode + "-" + s.round;
       var quizBody = h(window.QuizBody, { key: sig, mode: mode, words: words, pool: pool, savedMap: s.saved, onToggleSave: onToggleSave, onResult: onResult, onComplete: onComplete });
 
-      // ---- footer controls ----
       var primaryStyle = { width: "100%", padding: 14, borderRadius: 12, border: "none", background: blue, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font };
       var replayStyle = { width: "100%", padding: 13, borderRadius: 12, border: "1px solid " + sep, background: "#fff", color: blue, fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 16, fontFamily: font, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 };
 
       var showReplay = !!s.completed[stageKeyStr + "-" + pIdx];
       var showNext = total > 0 && pIdx < total - 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
         showNext ? h("button", { key: "next", onClick: function () { goPage(pIdx + 1); }, style: primaryStyle }, "다음 페이지") : null,
         showDone ? h("div", { key: "done", style: { background: "#fff", borderRadius: 12, padding: "20px 16px", marginTop: 16, textAlign: "center", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
-          h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 4px" } }, "Day 1 학습 완료"),
-          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 + 유의어·반의어 " + this.s2.length + "개 통합"))) : null,
+          h("p", { style: { fontSize: 15, fontWeight: 600, color: "#1C1C1E", margin: "0 0 4px" } }, dayLabel + " 학습 완료"),
+          h("p", { style: { fontSize: 12, color: "#8E8E93", margin: 0 } }, stage === "saved" ? ("저장한 " + savedWords.length + "개 단어 학습 완료") : ("메인 60개 + 유의어·반의어 통합"))) : null,
       ];
 
       var quizSection = showQuiz ? h("div", null, progressRow, navRow, quizBody, footer) : null;
 
-      // ---- login info modal (shown when login isn't configured / GIS fails) ----
       var modal = s.showLoginInfo ? h("div", { onClick: function () { self.setState({ showLoginInfo: false }); }, style: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 50 } },
         h("div", { onClick: function (e) { e.stopPropagation(); }, style: { background: "#fff", borderRadius: 16, maxWidth: 344, width: "100%", padding: "22px 20px", boxShadow: "0 20px 50px rgba(0,0,0,0.25)" } },
           h("p", { style: { fontSize: 16, fontWeight: 700, color: "#1C1C1E", margin: "0 0 10px" } }, "Google 로그인 안내"),
