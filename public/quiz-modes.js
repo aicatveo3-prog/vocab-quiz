@@ -90,6 +90,7 @@
       var head=h('div',{style:{display:'flex',alignItems:'center',gap:8,marginBottom:10}},
         h('span',{style:{width:22,height:22,borderRadius:11,background:!answered?sep:a.ok?'#EEF4EF':'#F5EFEF',color:!answered?t2:a.ok?'#7CB686':'#C08888',fontSize:11,fontWeight:600,display:'flex',alignItems:'center',justifyContent:'center',flex:'none'}}, answered?(a.ok?'O':'X'):(qi+1)),
         h('span',{style:{fontSize:15,fontWeight:600,color:t1}}, v.w),
+        v.p?h('span',{style:{fontSize:12,color:t3,fontWeight:400,letterSpacing:'-0.2px'}}, '['+v.p+']'):null,
         h('span',{style:{marginLeft:'auto'}}, StarBtn(!!savedMap[v._key], function(){ onToggleSave && onToggleSave(v._key); }))
       );
       var optBtns=opts[qi].map(function(op,oi){
