@@ -81,17 +81,20 @@
       this.W3 = V.W3 || [];
       this.W4 = V.W4 || [];
       this.W5 = V.W5 || [];
+      this.W6 = V.W6 || [];
       this.day1 = this.W;
       this.day2 = this.W2;
       this.day3 = this.W3;
       this.day4 = this.W4;
       this.day5 = this.W5;
+      this.day6 = this.W6;
       this.pages1 = V.chunk(this.day1, V.PS);
       this.pages2 = V.chunk(this.day2, V.PS);
       this.pages3 = V.chunk(this.day3, V.PS);
       this.pages4 = V.chunk(this.day4, V.PS);
       this.pages5 = V.chunk(this.day5, V.PS);
-      this._all = this.day1.concat(this.day2).concat(this.day3).concat(this.day4).concat(this.day5);
+      this.pages6 = V.chunk(this.day6, V.PS);
+      this._all = this.day1.concat(this.day2).concat(this.day3).concat(this.day4).concat(this.day5).concat(this.day6);
       this.setState({ ready: true }, this._loadData.bind(this));
     }
 
@@ -250,6 +253,11 @@
         pool = this._all;
         stageKeyStr = "saved";
         dayLabel = "저장함";
+      } else if (stage === "day6") {
+        pages = this.pages6;
+        pool = this.day6;
+        stageKeyStr = "day6";
+        dayLabel = "Day 6";
       } else if (stage === "day5") {
         pages = this.pages5;
         pool = this.day5;
@@ -373,6 +381,7 @@
         { key: "day3", label: "Day 3", pool: self.day3, total: self.pages3.length },
         { key: "day4", label: "Day 4", pool: self.day4, total: self.pages4.length },
         { key: "day5", label: "Day 5", pool: self.day5, total: self.pages5.length },
+        { key: "day6", label: "Day 6", pool: self.day6, total: self.pages6.length },
       ];
       var doneOf = function (key) { return Object.keys(s.completed).filter(function (k) { return k.indexOf(key + "-") === 0; }).length; };
       var rowStyle = function (first) { return { display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", padding: "15px 16px", border: "none", borderTop: first ? "none" : "0.5px solid " + sep, background: "#fff", cursor: "pointer", fontFamily: font, textAlign: "left" }; };
@@ -467,7 +476,7 @@
                            !!s.completed[stageKeyStr + "-" + pIdx];
       var showReplay = hasAnyProgress;
       var showNext = total > 0 && pIdx < total - 1;
-      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "day3" || stage === "day4" || stage === "day5" || stage === "saved");
+      var showDone = total > 0 && pIdx === total - 1 && (stage === "day1" || stage === "day2" || stage === "day3" || stage === "day4" || stage === "day5" || stage === "day6" || stage === "saved");
 
       var footer = [
         showReplay ? h("button", { key: "replay", onClick: replay, style: replayStyle }, h("span", { style: { fontSize: 15 } }, "↻"), h("span", null, "다시 풀기")) : null,
