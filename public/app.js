@@ -35,7 +35,7 @@
     constructor(props) {
       super(props);
       this.state = {
-        stage: "day1", page: 0, mode: "exam", round: 0,
+        stage: null, page: 0, mode: "exam", round: 0,
         streak: 0, best: 0, completed: {}, saved: {},
         pageProgress: {},
         account: null, googleClientId: "", loginEnabled: false,
@@ -364,13 +364,49 @@
               h("span", { style: { fontSize: 12.5, fontWeight: 600, color: "#3C4043" } }, "Google 로그인"))
       );
 
-      var stageBtns = h("div", { style: { display: "flex", background: "rgba(118,118,128,0.12)", borderRadius: 9, padding: 2, margin: "0 0 14px" } },
-        h("button", { onClick: function () { goStage("day1"); }, style: segBtn(stage === "day1") }, "Day 1"),
-        h("button", { onClick: function () { goStage("day2"); }, style: segBtn(stage === "day2") }, "Day 2"),
-        h("button", { onClick: function () { goStage("day3"); }, style: segBtn(stage === "day3") }, "Day 3"),
-        h("button", { onClick: function () { goStage("day4"); }, style: segBtn(stage === "day4") }, "Day 4"),
-        h("button", { onClick: function () { goStage("day5"); }, style: segBtn(stage === "day5") }, "Day 5"),
-        h("button", { onClick: function () { goStage("saved"); }, style: segBtn(stage === "saved") }, "★ 저장 " + savedWords.length)
+      var goMenu = function () { self.setState({ stage: null, page: 0, mode: "exam" }); };
+
+      // ---- Main menu (Day list) ----------------------------------------
+      var dayMenuItems = [
+        { key: "day1", label: "Day 1", pool: self.day1, total: self.pages1.length },
+        { key: "day2", label: "Day 2", pool: self.day2, total: self.pages2.length },
+        { key: "day3", label: "Day 3", pool: self.day3, total: self.pages3.length },
+        { key: "day4", label: "Day 4", pool: self.day4, total: self.pages4.length },
+        { key: "day5", label: "Day 5", pool: self.day5, total: self.pages5.length },
+      ];
+      var doneOf = function (key) { return Object.keys(s.completed).filter(function (k) { return k.indexOf(key + "-") === 0; }).length; };
+      var rowStyle = function (first) { return { display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", padding: "15px 16px", border: "none", borderTop: first ? "none" : "0.5px solid " + sep, background: "#fff", cursor: "pointer", fontFamily: font, textAlign: "left" }; };
+      var chevron = h("span", { style: { fontSize: 20, color: t3, lineHeight: 1, flex: "none" } }, "›");
+
+      var menuList = h("div", { style: { background: "#fff", borderRadius: 14, overflow: "hidden", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
+        dayMenuItems.map(function (it, idx) {
+          var done = doneOf(it.key);
+          var allDone = it.total > 0 && done >= it.total;
+          return h("button", { key: it.key, onClick: function () { goStage(it.key); }, style: rowStyle(idx === 0) },
+            h("div", { style: { display: "flex", flexDirection: "column", gap: 3 } },
+              h("span", { style: { fontSize: 16, fontWeight: 600, color: t1 } }, it.label),
+              h("span", { style: { fontSize: 12, color: allDone ? "#34C759" : t2 } }, it.pool.length + "단어 · " + (allDone ? "완료 ✓" : done + "/" + it.total + " 페이지"))),
+            chevron);
+        })
+      );
+
+      var savedCard = h("div", { style: { background: "#fff", borderRadius: 14, overflow: "hidden", marginTop: 12, boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
+        h("button", { onClick: function () { goStage("saved"); }, style: rowStyle(true) },
+          h("div", { style: { display: "flex", flexDirection: "column", gap: 3 } },
+            h("span", { style: { fontSize: 16, fontWeight: 600, color: t1 } }, "★ 저장함"),
+            h("span", { style: { fontSize: 12, color: "#FF9F0A" } }, savedWords.length + "개 단어")),
+          chevron)
+      );
+
+      var mainMenu = h("div", null,
+        h("p", { style: { fontSize: 13, color: t2, fontWeight: 500, margin: "2px 2px 10px" } }, "학습할 Day를 선택하세요"),
+        menuList, savedCard);
+
+      // ---- Back bar (shown inside a Day) -------------------------------
+      var backBar = h("div", { style: { display: "flex", alignItems: "center", gap: 4, margin: "0 0 14px" } },
+        h("button", { onClick: goMenu, style: { border: "none", background: "none", color: blue, fontSize: 15, fontWeight: 600, cursor: "pointer", fontFamily: font, display: "flex", alignItems: "center", gap: 1, padding: "4px 8px 4px 0" } },
+          h("span", { style: { fontSize: 21, lineHeight: 1, marginTop: -1 } }, "‹"), "메뉴"),
+        h("span", { style: { fontSize: 16, fontWeight: 700, color: t1, letterSpacing: "-0.2px" } }, dayLabel)
       );
 
       var emptyCard = showEmpty ? h("div", { style: { background: "#fff", borderRadius: 12, padding: "38px 22px", textAlign: "center", boxShadow: "0 0.5px 0 rgba(0,0,0,0.04)" } },
@@ -455,7 +491,11 @@
           h("button", { onClick: function () { self.setState({ showLoginInfo: false }); }, style: { width: "100%", padding: 12, border: "none", borderRadius: 11, background: "#007AFF", color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font } }, "확인"))
       ) : null;
 
-      return h("div", { style: wrap }, h("div", { style: inner }, header, stageBtns, emptyCard, quizSection, modal));
+      var body = stage === null
+        ? mainMenu
+        : h("div", null, backBar, emptyCard, quizSection);
+
+      return h("div", { style: wrap }, h("div", { style: inner }, header, body, modal));
     }
   };
 
