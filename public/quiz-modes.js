@@ -90,7 +90,6 @@
       var head=h('div',{style:{display:'flex',alignItems:'center',gap:8,marginBottom:10}},
         h('span',{style:{width:22,height:22,borderRadius:11,background:!answered?sep:a.ok?'#EEF4EF':'#F5EFEF',color:!answered?t2:a.ok?'#7CB686':'#C08888',fontSize:11,fontWeight:600,display:'flex',alignItems:'center',justifyContent:'center',flex:'none'}}, answered?(a.ok?'O':'X'):(qi+1)),
         h('span',{style:{fontSize:15,fontWeight:600,color:t1}}, v.w),
-        v.p?h('span',{style:{fontSize:12,color:t3,fontWeight:400,letterSpacing:'-0.2px'}}, '['+v.p+']'):null,
         h('span',{style:{marginLeft:'auto'}}, StarBtn(!!savedMap[v._key], function(){ onToggleSave && onToggleSave(v._key); }))
       );
       var optBtns=opts[qi].map(function(op,oi){
@@ -99,21 +98,26 @@
       });
       var grid=h('div',{style:{display:'grid',gridTemplateColumns:'1fr 1fr',gap:6,paddingLeft:30}}, optBtns);
       var detail=null;
-      if(answered&&v.h){
-        var body=null;
-        if(showD){
-          var saCols=[];
-          if(v.s.length>0) saCols.push(h('div',{key:'s'}, h('span',{style:{fontSize:11,color:t3,fontWeight:500}},'유의어'), v.s.map(function(x,i){return h('p',{key:i,style:{margin:'2px 0'}},x);})));
-          if(v.a.length>0) saCols.push(h('div',{key:'a'}, h('span',{style:{fontSize:11,color:t3,fontWeight:500}},'반의어'), v.a.map(function(x,i){return h('p',{key:i,style:{margin:'2px 0'}},x);})));
-          body=h('div',{style:{marginTop:8,fontSize:12.5,lineHeight:1.7,color:t2}},
-            h('p',{style:{margin:'0 0 6px',color:'#6a6a6a'}}, v.h),
-            (v.s.length>0||v.a.length>0)?h('div',{style:{display:'flex',gap:16,flexWrap:'wrap'}}, saCols):null
+      if(answered){
+        var pron=v.p?h('p',{key:'pron',style:{paddingLeft:30,margin:'8px 0 0',fontSize:13,color:t2}}, '발음 ', h('span',{style:{color:blue,fontWeight:600}}, '['+v.p+']')):null;
+        var toggleBlock=null;
+        if(v.h){
+          var body=null;
+          if(showD){
+            var saCols=[];
+            if(v.s.length>0) saCols.push(h('div',{key:'s'}, h('span',{style:{fontSize:11,color:t3,fontWeight:500}},'유의어'), v.s.map(function(x,i){return h('p',{key:i,style:{margin:'2px 0'}},x);})));
+            if(v.a.length>0) saCols.push(h('div',{key:'a'}, h('span',{style:{fontSize:11,color:t3,fontWeight:500}},'반의어'), v.a.map(function(x,i){return h('p',{key:i,style:{margin:'2px 0'}},x);})));
+            body=h('div',{style:{marginTop:8,fontSize:12.5,lineHeight:1.7,color:t2}},
+              h('p',{style:{margin:'0 0 6px',color:'#6a6a6a'}}, v.h),
+              (v.s.length>0||v.a.length>0)?h('div',{style:{display:'flex',gap:16,flexWrap:'wrap'}}, saCols):null
+            );
+          }
+          toggleBlock=h('div',{style:{paddingLeft:30,marginTop:8}},
+            h('button',{onClick:function(){setOpenD(showD?null:qi);},style:{border:'none',background:'none',fontSize:11,color:blue,cursor:'pointer',padding:0,fontFamily:font}}, showD?'접기':'연상법 · 유의어 · 반의어'),
+            body
           );
         }
-        detail=h('div',{style:{paddingLeft:30,marginTop:8}},
-          h('button',{onClick:function(){setOpenD(showD?null:qi);},style:{border:'none',background:'none',fontSize:11,color:blue,cursor:'pointer',padding:0,fontFamily:font}}, showD?'접기':'연상법 · 유의어 · 반의어'),
-          body
-        );
+        detail=(pron||toggleBlock)?h('div',null, pron, toggleBlock):null;
       }
       return h('div',{key:qi,style:{padding:'14px 16px',borderBottom:qi<total-1?'0.5px solid '+sep:'none'}}, head, grid, detail);
     });
