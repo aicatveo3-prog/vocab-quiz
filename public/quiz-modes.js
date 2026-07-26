@@ -217,6 +217,9 @@
       return new Set(progress.matched || []);
     }), matched=ms[0], setMatched=ms[1];
     var ws=R.useState(null), wrong=ws[0], setWrong=ws[1];
+    // Fire onResult(false) only once per word so streak/auto-save aren't spammed
+    // when the user retries wrong pairs before finding the correct meaning.
+    var wrongedRef=R.useRef(new Set());
 
     R.useEffect(function(){
       if(progress.matched && progress.matched.length > matched.size){
@@ -238,7 +241,10 @@
         if(onResult)onResult(true, words[a]._key);
       } else {
         setWrong({w:sel,m:p});
-        if(onResult)onResult(false, words[sel]&&words[sel]._key);
+        if(onResult && !wrongedRef.current.has(sel)){
+          wrongedRef.current.add(sel);
+          onResult(false, words[sel]&&words[sel]._key);
+        }
         setTimeout(function(){setWrong(null);setSel(null);},400);
       }
     }

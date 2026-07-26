@@ -25,7 +25,14 @@
         method: "PUT", credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
-      })["catch"](function () {});
+      }).then(function (r) {
+        if (r.ok) return { ok: true };
+        return r.json()["catch"](function () { return {}; }).then(function (j) {
+          return { ok: false, error: (j && j.error) || "동기화에 실패했습니다" };
+        });
+      })["catch"](function () {
+        return { ok: false, error: "네트워크 오류로 동기화에 실패했습니다" };
+      });
     },
   };
 
@@ -40,6 +47,7 @@
         pageProgress: {},
         account: null, googleClientId: "", loginEnabled: false,
         showLoginInfo: false, ready: false, syncing: false,
+        syncError: null,
         dragging: false, dragPage: 0,
         showProgress: true, showStreak: true, persistProgress: true,
       };
@@ -61,7 +69,11 @@
         self.setState({ googleClientId: cfg.googleClientId || "", loginEnabled: !!cfg.loginEnabled, account: me.user || null });
       })["catch"](function () {}).then(function () { self._ensure(); });
     }
-    componentWillUnmount() { if (this._iv) clearInterval(this._iv); if (this._syncT) clearTimeout(this._syncT); }
+    componentWillUnmount() {
+      if (this._iv) clearInterval(this._iv);
+      if (this._syncT) clearTimeout(this._syncT);
+      if (this._syncErrT) clearTimeout(this._syncErrT);
+    }
 
     _ensure() {
       var self = this;
@@ -126,7 +138,10 @@
             self.setState({ best: seed.best, completed: seed.completed, saved: seed.saved, streak: 0, syncing: false });
             if (countKeys(seed.saved) || countKeys(seed.completed) || seed.best) {
               self._writeLocal(seed.best, seed.completed, seed.saved);
-              api.putData({ best: seed.best, completed: seed.completed, saved: seed.saved });
+              api.putData({ best: seed.best, completed: seed.completed, saved: seed.saved }).then(function (r) {
+                if (!r || r.ok) return;
+                self._showSyncError(r.error);
+              });
             }
           }
         });
@@ -146,10 +161,26 @@
         this._writeLocal(best, completed, saved);
       }
     }
+    _showSyncError(msg) {
+      var self = this;
+      this.setState({ syncError: msg || "동기화에 실패했습니다" });
+      if (this._syncErrT) clearTimeout(this._syncErrT);
+      this._syncErrT = setTimeout(function () {
+        self.setState({ syncError: null });
+      }, 4000);
+    }
     _syncUp(best, completed, saved) {
       var self = this;
       if (this._syncT) clearTimeout(this._syncT);
-      this._syncT = setTimeout(function () { api.putData({ best: best, completed: completed, saved: saved }); }, 500);
+      this._syncT = setTimeout(function () {
+        api.putData({ best: best, completed: completed, saved: saved }).then(function (r) {
+          if (r && r.ok) {
+            if (self.state.syncError) self.setState({ syncError: null });
+            return;
+          }
+          self._showSyncError(r && r.error);
+        });
+      }, 500);
     }
 
     _onCredential(resp) {
@@ -351,6 +382,7 @@
 
       var completedCount = Object.keys(s.completed).filter(function (k) { return k.indexOf(stageKeyStr + "-") === 0; }).length;
       var pct = total ? Math.min(100, completedCount / total * 100) : 0;
+      var isPageDone = function (i) { return !!s.completed[stageKeyStr + "-" + i]; };
 
       this._scrub = { total: total, goPage: goPage };
       var dragging = s.dragging;
@@ -432,7 +464,7 @@
           h("div", { style: { position: "absolute", left: 0, right: 0, height: 6, borderRadius: 3, background: "rgba(118,118,128,0.16)", overflow: "hidden" } },
             h("div", { style: { height: "100%", width: pct + "%", borderRadius: 3, background: "linear-gradient(90deg,#007AFF,#34C759)", transition: "width 0.45s cubic-bezier(.2,.8,.2,1)" } })),
           Array.from({ length: total }, function (_, i) {
-            return h("div", { key: "tk" + i, style: { position: "absolute", left: (total > 1 ? (i / (total - 1)) * 100 : 0) + "%", transform: "translateX(-50%)", width: 3, height: 3, borderRadius: 2, background: i <= completedCount - 1 ? "rgba(255,255,255,0.85)" : "rgba(118,118,128,0.45)", pointerEvents: "none", zIndex: 1 } });
+            return h("div", { key: "tk" + i, style: { position: "absolute", left: (total > 1 ? (i / (total - 1)) * 100 : 0) + "%", transform: "translateX(-50%)", width: 3, height: 3, borderRadius: 2, background: isPageDone(i) ? "rgba(255,255,255,0.85)" : "rgba(118,118,128,0.45)", pointerEvents: "none", zIndex: 1 } });
           }),
           h("div", { style: { position: "absolute", left: posPct + "%", transform: "translateX(-50%)", width: 14, height: 14, borderRadius: 7, background: "#fff", border: "2px solid " + blue, boxShadow: "0 1px 4px rgba(0,0,0,0.28)", pointerEvents: "none", zIndex: 2 } }))
       ) : null;
@@ -500,11 +532,23 @@
           h("button", { onClick: function () { self.setState({ showLoginInfo: false }); }, style: { width: "100%", padding: 12, border: "none", borderRadius: 11, background: "#007AFF", color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: font } }, "확인"))
       ) : null;
 
+      var syncBanner = s.syncError
+        ? h("div", {
+            role: "alert",
+            onClick: function () { self.setState({ syncError: null }); },
+            style: {
+              margin: "0 0 12px", padding: "10px 12px", borderRadius: 10,
+              background: "#FFF1F0", border: "1px solid #FFD4D0", color: "#C0392B",
+              fontSize: 12.5, lineHeight: 1.45, cursor: "pointer", fontFamily: font,
+            },
+          }, "동기화 실패: ", s.syncError, h("span", { style: { float: "right", opacity: 0.7 } }, "닫기"))
+        : null;
+
       var body = stage === null
         ? mainMenu
         : h("div", null, backBar, emptyCard, quizSection);
 
-      return h("div", { style: wrap }, h("div", { style: inner }, header, body, modal));
+      return h("div", { style: wrap }, h("div", { style: inner }, header, syncBanner, body, modal));
     }
   };
 
