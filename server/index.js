@@ -22,6 +22,14 @@ const SESSION_SECRET = process.env.SESSION_SECRET || crypto.randomBytes(32).toSt
 const COOKIE = "vq_session";
 const SESSION_DAYS = 30;
 
+// Cookie flags must match on set and clear, or production (secure) cookies may
+// survive logout in some browsers.
+const COOKIE_OPTS = {
+  httpOnly: true,
+  sameSite: "lax",
+  secure: process.env.NODE_ENV === "production",
+};
+
 const oauth = new OAuth2Client(GOOGLE_CLIENT_ID);
 const app = express();
 // Behind a hosting proxy (Render/Railway/etc.) so req.secure reflects HTTPS,
@@ -34,9 +42,7 @@ app.use(cookieParser());
 function issueSession(res, profile) {
   const token = jwt.sign(profile, SESSION_SECRET, { expiresIn: `${SESSION_DAYS}d` });
   res.cookie(COOKIE, token, {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    ...COOKIE_OPTS,
     maxAge: SESSION_DAYS * 24 * 60 * 60 * 1000,
   });
 }
@@ -93,24 +99,34 @@ app.post("/api/auth/google", async (req, res) => {
 });
 
 app.post("/api/logout", (req, res) => {
-  res.clearCookie(COOKIE);
+  res.clearCookie(COOKIE, COOKIE_OPTS);
   res.json({ ok: true });
 });
 
 // --- sync routes (per Google account) --------------------------------------
 app.get("/api/data", requireUser, async (req, res) => {
-  const data = await getData(req.user.sub);
-  res.json({ data });
+  try {
+    const data = await getData(req.user.sub);
+    res.json({ data });
+  } catch (e) {
+    console.error("[data] get failed:", e.message);
+    res.status(500).json({ error: "데이터를 불러오지 못했습니다" });
+  }
 });
 
 app.put("/api/data", requireUser, async (req, res) => {
-  const body = req.body || {};
-  const saved = await setData(req.user.sub, {
-    saved: body.saved,
-    completed: body.completed,
-    best: body.best,
-  });
-  res.json({ data: saved });
+  try {
+    const body = req.body || {};
+    const saved = await setData(req.user.sub, {
+      saved: body.saved,
+      completed: body.completed,
+      best: body.best,
+    });
+    res.json({ data: saved });
+  } catch (e) {
+    console.error("[data] put failed:", e.message);
+    res.status(500).json({ error: "데이터를 저장하지 못했습니다" });
+  }
 });
 
 // --- static front-end ------------------------------------------------------
