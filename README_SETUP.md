@@ -1,6 +1,10 @@
 # 해커스 영어 단어 퀴즈 — 설치 · 실행 안내
 
-iOS 스타일 영어 단어 퀴즈 앱입니다. **진짜 구글 로그인 + 기기 간 동기화**를 지원해요.
+사이트: **https://aicatveo3-prog.github.io/vocab-quiz/**
+
+iOS 스타일 영어 단어 퀴즈 앱입니다. GitHub Pages에서는 로그인 없이 바로 쓸 수 있고, 저장한 단어·학습 기록은 **이 기기(브라우저)** 에 보관됩니다.
+
+로컬 Node 서버를 켜면 **진짜 구글 로그인 + 기기 간 동기화**도 지원해요.
 로그인하면 저장한 단어·학습 기록이 **계정에 저장돼서, 폰·PC 어디서 로그인해도 똑같이** 보입니다.
 
 ---
@@ -75,9 +79,20 @@ npm start
 
 ---
 
-## 4. 인터넷에 배포해서 다른 기기와 공유하기
+## 4. GitHub Pages 배포 (현재 방식)
 
-다른 기기에서도 같은 계정으로 동기화하려면 앱이 **공개된 웹 주소(https)** 에 올라가 있어야 합니다.
+`public/` 폴더가 `main`에 푸시되면 GitHub Actions가 [GitHub Pages](https://aicatveo3-prog.github.io/vocab-quiz/)로 자동 배포합니다.
+
+- 퀴즈·저장함·진행률은 그대로 동작합니다 (브라우저 `localStorage`)
+- 구글 로그인·서버 동기화는 Pages에서 빠집니다 (정적 호스팅이라 Node API를 둘 수 없음)
+
+처음 한 번은 저장소 **Settings → Pages → Source: GitHub Actions** 로 되어 있는지 확인하세요.
+
+---
+
+## 5. 인터넷에 배포해서 다른 기기와 공유하기 (로그인 동기화)
+
+다른 기기에서도 같은 계정으로 동기화하려면 앱이 **공개된 웹 주소(https)** 에 Node 서버와 함께 올라가 있어야 합니다.
 
 - 추천: **Render / Railway / Fly.io / 직접 운영하는 서버** 등 Node 앱을 돌릴 수 있는 호스팅
 - 배포 시 환경변수 `GOOGLE_CLIENT_ID`, `SESSION_SECRET`, `NODE_ENV=production` 설정
@@ -98,7 +113,7 @@ Railway·Render 무료 플랜처럼 **서버 재시작 시 디스크가 초기�
 `DATABASE_URL` 이 설정되면 `server/store.js` 가 자동으로 Postgres를 사용하고(테이블도
 자동 생성), 없으면 기존 JSON 파일 방식으로 동작합니다. 코드 수정은 필요 없습니다.
 
-> ⚠️ GitHub Pages·Netlify 정적 호스팅 등 "파일만 올리는" 방식으로는 동기화가 안 됩니다.
+> ⚠️ GitHub Pages는 퀴즈 자체는 됩니다. 다만 구글 로그인·기기 간 동기화는
 > 로그인 검증과 데이터 저장을 처리할 **이 Node 서버가 함께 떠 있어야** 합니다.
 
 ---

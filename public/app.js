@@ -4,9 +4,16 @@
   var React = window.React, ReactDOM = window.ReactDOM;
   function h() { return React.createElement.apply(null, arguments); }
 
+  function jsonApi(url, opts) {
+    return fetch(url, opts).then(function (r) {
+      var ct = (r.headers.get("content-type") || "");
+      if (!r.ok || ct.indexOf("json") < 0) throw new Error("no-api");
+      return r.json();
+    });
+  }
   var api = {
-    config: function () { return fetch("/api/config").then(function (r) { return r.json(); }); },
-    me: function () { return fetch("/api/me", { credentials: "same-origin" }).then(function (r) { return r.json(); }); },
+    config: function () { return jsonApi("/api/config"); },
+    me: function () { return jsonApi("/api/me", { credentials: "same-origin" }); },
     login: function (credential) {
       return fetch("/api/auth/google", {
         method: "POST", credentials: "same-origin",
@@ -64,6 +71,8 @@
 
     componentDidMount() {
       var self = this;
+      // GitHub Pages has no Node API; skip auth so the quiz still loads.
+      if (/github\.io$/i.test(location.hostname)) { this._ensure(); return; }
       Promise.all([api.config(), api.me()]).then(function (res) {
         var cfg = res[0] || {}, me = res[1] || {};
         self.setState({ googleClientId: cfg.googleClientId || "", loginEnabled: !!cfg.loginEnabled, account: me.user || null });
@@ -392,7 +401,9 @@
 
       var header = h("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", margin: "2px 0 14px" } },
         h("span", { style: { fontSize: 17, fontWeight: 700, color: "#1C1C1E", letterSpacing: "-0.3px" } }, "단어 퀴즈"),
-        s.account
+        /github\.io$/i.test(location.hostname)
+          ? null
+          : s.account
           ? h("div", { style: { display: "flex", alignItems: "center", gap: 8 } },
               s.account.picture
                 ? h("img", { src: s.account.picture, alt: "", style: { width: 26, height: 26, borderRadius: 13, flex: "none", objectFit: "cover" } })
