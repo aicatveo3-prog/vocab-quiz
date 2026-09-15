@@ -7,10 +7,8 @@
 (function () {
   var COUNT_OPTIONS = [10, 15, 20];
   var MATCH_BOARDS = { 10: 3, 15: 4, 20: 5 };
-  var AUTO_NEXT_MS = 620;
 
   var BLOCK_OPTIONS = [4, 5, 6];
-  var PREVIEW_MS = 4000;
 
   var state = {
     flow: 'practice',      // 'practice' | 'conquer'
@@ -20,7 +18,8 @@
     session: null,
     modeId: null,
     restrictTo: null,
-    index: 0,
+    slides: [],            // 지금까지 본 문제들 (이전/다음 이동용)
+    cursor: -1,
     correct: 0,
     wrongWords: [],
     wordFilter: { status: 'all', level: 'all' }
@@ -153,11 +152,12 @@
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
-    state.index = 0;
+    state.slides = [];
+    state.cursor = -1;
     state.correct = 0;
     state.wrongWords = [];
     go('quiz');
-    renderQuestion();
+    advanceLive();
   }
 
   $('btn-quit').addEventListener('click', function () {
@@ -171,86 +171,174 @@
     }
   });
 
-  /* ── 문제 렌더 ─────────────────────────────── */
-  function renderQuestion() {
-    var q = state.session[state.index];
-    var mode = modeById(state.modeId);
-    var unit = state.modeId === 'match' ? '보드' : '문제';
+  /* ══════════ 문제 이동 ══════════
+     답한 문제는 슬라이드로 쌓아 두고 이전/다음으로 오갈 수 있게 한다.
+     시간에 쫓기지 않도록 자동으로 넘어가는 동작은 어디에도 두지 않는다.
+     지난 문제는 읽기 전용이라 숙련도가 다시 기록되지 않는다. */
 
-    $('quiz-mode-name').textContent = mode.label;
-    $('quiz-progress').textContent = (state.index + 1) + ' / ' + state.session.length + ' ' + unit;
-    $('quiz-bar-wrap').style.display = '';
-    $('quiz-bar').style.width = (state.index / state.session.length) * 100 + '%';
+  function pushSlide(q) {
+    state.slides.push({
+      q: q, answered: false, chosen: null, correct: null,
+      headline: null, boardStats: null
+    });
+    state.cursor = state.slides.length - 1;
+  }
+
+  function currentSlide() {
+    return state.slides[state.cursor] || null;
+  }
+
+  function renderSlide() {
+    var slide = currentSlide();
+    if (!slide) return;
     $('quiz-feedback').innerHTML = '';
+    updateHead();
 
-    window.Modes[q.mode].render(q, $('quiz-body'), {
-      resolve: onResolve,
-      boardDone: onBoardDone
-    });
-  }
-
-  /* 선택형 모드 결과 */
-  function onResolve(correct, q) {
-    window.Store.record(q.word, correct);
-    if (correct) state.correct++;
-    else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
-    if (correct && state.restrictTo) window.Store.clearWrong(q.word);
-    showFeedback(correct, q);
-  }
-
-  /* 짝 맞추기 보드 결과 (숙련도는 modes.js에서 쌍별로 이미 기록됨) */
-  function onBoardDone(stats) {
-    if (stats.correct) state.correct++;
-    stats.wrongWords.forEach(function (w) {
-      if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
-    });
-    var fb = $('quiz-feedback');
-    fb.innerHTML = '';
-    var box = el('div', 'fb ' + (stats.correct ? 'ok' : 'ng'));
-    box.appendChild(el('div', 'fb-t', stats.correct
-      ? '완벽 클리어! 실수 0'
-      : '보드 클리어 · 실수 ' + stats.mistakes + '회'));
-    if (!stats.correct) {
-      box.appendChild(el('div', 'fb-note',
-        '틀린 단어: ' + stats.wrongWords.join(', ')));
+    var body = $('quiz-body');
+    if (slide.q.mode === 'match') {
+      if (slide.answered) {
+        renderBoardSummary(slide, body);
+      } else {
+        window.Modes.match.render(slide.q, body, {
+          boardDone: function (stats) { onBoardAnswer(slide, stats); }
+        });
+      }
+    } else if (slide.answered) {
+      window.Modes[slide.q.mode].render(slide.q, body, { review: { chosen: slide.chosen } });
+      showFeedbackBox(slide);
+    } else {
+      window.Modes[slide.q.mode].render(slide.q, body, {
+        resolve: function (correct, q, chosen) { onChoiceAnswer(slide, correct, chosen); }
+      });
     }
-    fb.appendChild(box);
-    setTimeout(next, stats.correct ? AUTO_NEXT_MS : 1400);
+    renderNav();
+    window.scrollTo(0, 0);
   }
 
-  /* ── 피드백: 정답은 빠르게, 오답은 확인을 눌러야 넘어감 ── */
-  function showFeedback(correct, q, onNext, headline) {
-    onNext = onNext || next;
+  /* 선택형 응답 */
+  function onChoiceAnswer(slide, correct, chosen) {
+    slide.answered = true;
+    slide.chosen = chosen;
+    slide.correct = correct;
+
+    if (state.flow === 'conquer') {
+      var res = state.block.onAnswer(correct);
+      if (correct && res && res.done) slide.headline = '정답 — ' + res.word + ' 정복!';
+      else if (!correct && res && res.demoted) slide.headline = '오답 — 한 단계 내려갑니다';
+      else if (!correct && res && !res.filler) slide.headline = '오답 — 이 단계를 다시 봅니다';
+      updateHead();
+    } else {
+      var q = slide.q;
+      window.Store.record(q.word, correct);
+      if (correct) state.correct++;
+      else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
+      if (correct && state.restrictTo) window.Store.clearWrong(q.word);
+    }
+    showFeedbackBox(slide);
+    renderNav();
+  }
+
+  /* 짝 맞추기 보드 응답 (숙련도는 modes.js에서 쌍별로 이미 기록됨) */
+  function onBoardAnswer(slide, stats) {
+    slide.answered = true;
+    slide.boardStats = stats;
+
+    if (state.flow === 'conquer') {
+      state.block.onBoardDone();
+      updateHead();
+    } else {
+      if (stats.correct) state.correct++;
+      stats.wrongWords.forEach(function (w) {
+        if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
+      });
+    }
+    showBoardFeedback(slide);
+    renderNav();
+  }
+
+  function showFeedbackBox(slide) {
+    var q = slide.q;
     var fb = $('quiz-feedback');
     fb.innerHTML = '';
-    var box = el('div', 'fb ' + (correct ? 'ok' : 'ng'));
-
+    var box = el('div', 'fb ' + (slide.correct ? 'ok' : 'ng'));
     box.appendChild(el('div', 'fb-t',
-      headline || (correct ? '정답' : '오답 — 정답: ' + q.answer)));
-    if (!correct && headline) {
+      slide.headline || (slide.correct ? '정답' : '오답 — 정답: ' + q.answer)));
+    if (!slide.correct && slide.headline) {
       box.appendChild(el('div', 'fb-note', '정답: ' + q.answer));
     }
     if (q.note) box.appendChild(el('div', 'fb-note', q.note));
     if (q.ko) box.appendChild(el('div', 'fb-ko', q.ko));
-
     fb.appendChild(box);
-
-    if (correct) {
-      setTimeout(onNext, AUTO_NEXT_MS);
-    } else {
-      var btn = el('button', 'btn btn-ghost', '확인');
-      btn.type = 'button';
-      btn.addEventListener('click', onNext);
-      box.appendChild(btn);
-      // 작은 화면에서 확인 버튼이 접히지 않도록 피드백을 보이는 위치로 끌어온다
-      if (box.scrollIntoView) box.scrollIntoView({ block: 'end', behavior: 'smooth' });
-    }
   }
 
-  function next() {
-    state.index++;
-    if (state.index >= state.session.length) renderResult();
-    else renderQuestion();
+  function showBoardFeedback(slide) {
+    var st = slide.boardStats;
+    var fb = $('quiz-feedback');
+    fb.innerHTML = '';
+    var box = el('div', 'fb ' + (st.correct ? 'ok' : 'ng'));
+    box.appendChild(el('div', 'fb-t', st.correct
+      ? '완벽 클리어! 실수 0'
+      : '보드 클리어 · 실수 ' + st.mistakes + '회'));
+    if (!st.correct && st.wrongWords.length) {
+      box.appendChild(el('div', 'fb-note', '틀린 단어: ' + st.wrongWords.join(', ')));
+    }
+    fb.appendChild(box);
+  }
+
+  /** 이미 클리어한 보드는 다시 풀 수 없으므로 요약만 보여준다 */
+  function renderBoardSummary(slide, body) {
+    body.innerHTML = '';
+    body.appendChild(el('div', 'review-note', '지난 보드 — 다시 풀 수 없습니다'));
+    var st = slide.boardStats;
+    var box = el('div', 'board-summary');
+    box.appendChild(el('b', null, slide.q.pairs.length + '쌍 완료'));
+    box.appendChild(el('span', null,
+      st.mistakes ? '실수 ' + st.mistakes + '회' : '실수 없음'));
+    body.appendChild(box);
+    showBoardFeedback(slide);
+  }
+
+  /* ── 이전 / 다음 ─────────────────────────── */
+  function renderNav() {
+    var slide = currentSlide();
+    var isLast = state.cursor >= state.slides.length - 1;
+    $('quiz-nav').style.display = '';
+    $('nav-prev').disabled = state.cursor <= 0;
+    // 아직 답하지 않은 문제에서는 넘어갈 수 없다 (건너뛰기 방지)
+    $('nav-next').disabled = isLast && (!slide || !slide.answered);
+    $('nav-mid').textContent = isLast
+      ? '' : '지난 문제 ' + (state.cursor + 1) + ' / ' + state.slides.length;
+  }
+
+  function hideNav() { $('quiz-nav').style.display = 'none'; }
+
+  $('nav-prev').addEventListener('click', function () {
+    if (state.cursor > 0) { state.cursor--; renderSlide(); }
+  });
+
+  $('nav-next').addEventListener('click', function () {
+    if (state.cursor < state.slides.length - 1) { state.cursor++; renderSlide(); }
+    else advanceLive();
+  });
+
+  /** 새 문제로 진행 */
+  function advanceLive() {
+    if (state.flow === 'conquer') { renderConquerStep(); return; }
+    if (state.slides.length >= state.session.length) { renderResult(); return; }
+    pushSlide(state.session[state.slides.length]);
+    renderSlide();
+  }
+
+  function updateHead() {
+    if (state.flow === 'conquer') { updateConquerHead(); return; }
+    var mode = modeById(state.modeId);
+    var unit = state.modeId === 'match' ? '보드' : '문제';
+    $('quiz-mode-name').textContent = mode.label;
+    $('quiz-progress').textContent =
+      (state.cursor + 1) + ' / ' + state.session.length + ' ' + unit;
+    $('quiz-bar-wrap').style.display = '';
+    $('quiz-bar').style.width =
+      ((state.cursor + 1) / state.session.length) * 100 + '%';
   }
 
   /* ══════════ 정복 모드 ══════════ */
@@ -267,6 +355,8 @@
     state.flow = 'conquer';
     state.block = block;
     state.session = null;
+    state.slides = [];
+    state.cursor = -1;
     go('quiz');
     renderConquerStep();
   }
@@ -303,53 +393,26 @@
 
   function renderConquerStep() {
     var step = state.block.next();
-    var body = $('quiz-body');
     $('quiz-feedback').innerHTML = '';
     updateConquerHead();
 
     if (step.type === 'preview') { renderPreview(step); return; }
     if (step.type === 'done') { renderBlockComplete(step.stats); return; }
 
-    if (step.type === 'board') {
-      step.q.boardTitle = '마지막 관문 — 짝 맞추기';
-      window.Modes.match.render(step.q, body, {
-        boardDone: function (stats) {
-          state.block.onBoardDone();
-          var fb = $('quiz-feedback');
-          fb.innerHTML = '';
-          var box = el('div', 'fb ' + (stats.correct ? 'ok' : 'ng'));
-          box.appendChild(el('div', 'fb-t', stats.correct
-            ? '짝 맞추기 완벽 통과!'
-            : '짝 맞추기 완료 · 실수 ' + stats.mistakes + '회'));
-          fb.appendChild(box);
-          setTimeout(renderConquerStep, 900);
-        }
-      });
-      return;
-    }
-
-    // step.type === 'question'
-    window.Modes[step.q.mode].render(step.q, body, {
-      resolve: function (correct, q) {
-        var res = state.block.onAnswer(correct);
-        var headline = null;
-        if (correct && res && res.done) headline = '정답 — ' + res.word + ' 정복!';
-        else if (!correct && res && res.demoted) headline = '오답 — 한 단계 내려갑니다';
-        else if (!correct && res && !res.filler) headline = '오답 — 이 단계를 다시 봅니다';
-        updateConquerHead();
-        showFeedback(correct, q, renderConquerStep, headline);
-      }
-    });
+    if (step.type === 'board') step.q.boardTitle = '마지막 관문 — 짝 맞추기';
+    pushSlide(step.q);
+    renderSlide();
   }
 
+  /** 묶음 미리보기 — 다 읽을 때까지 기다린다. 자동으로 넘어가지 않는다. */
   function renderPreview(step) {
     var body = $('quiz-body');
     body.innerHTML = '';
-    var started = false;
+    hideNav();
 
     var head = el('div', 'preview-head');
     head.appendChild(el('b', null, '이번 묶음 ' + step.words.length + '단어'));
-    head.appendChild(el('span', null, '훑어본 뒤 4지선다 → 문장 빈칸 → 짝 맞추기로 확인합니다'));
+    head.appendChild(el('span', null, '충분히 훑어본 뒤 시작하세요'));
     body.appendChild(head);
 
     var card = el('div', 'panel');
@@ -364,24 +427,13 @@
     });
     body.appendChild(card);
 
-    var timer = el('div', 'pv-timer');
-    timer.appendChild(el('i'));
-    body.appendChild(timer);
-
-    var btn = el('button', 'btn btn-primary', '시작하기');
+    var btn = el('button', 'btn btn-primary pv-start', '시작하기');
     btn.type = 'button';
-    btn.addEventListener('click', begin);
-    body.appendChild(btn);
-
-    var t = setTimeout(begin, PREVIEW_MS);
-
-    function begin() {
-      if (started) return;       // 타이머와 버튼이 겹쳐 호출되는 것을 막는다
-      started = true;
-      clearTimeout(t);
+    btn.addEventListener('click', function () {
       state.block.startDrill();
       renderConquerStep();
-    }
+    });
+    body.appendChild(btn);
   }
 
   function renderBlockComplete(stats) {

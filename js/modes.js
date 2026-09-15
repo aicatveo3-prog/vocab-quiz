@@ -79,9 +79,17 @@ window.Modes = (function () {
     return node;
   }
 
-  /* ── 선택형 4개 모드 공통 렌더러 ─────────────── */
+  /* ── 선택형 4개 모드 공통 렌더러 ───────────────
+     ctx.review = { chosen } 을 넘기면 이미 답한 상태로 그리고 클릭을 받지 않는다.
+     지난 문제를 다시 볼 때 쓰며, 숙련도가 다시 기록되지 않는다. */
   function renderChoice(q, body, ctx) {
     body.innerHTML = '';
+    var review = ctx.review;
+
+    if (review) {
+      body.appendChild(el('div', 'review-note', '지난 문제 — 다시 답할 수 없습니다'));
+    }
+
     var promptWrap = buildPrompt(q);
     body.appendChild(promptWrap);
 
@@ -93,27 +101,33 @@ window.Modes = (function () {
       var b = el('button', 'opt');
       b.type = 'button';
       b.appendChild(el('span', 'v', text));
-      b.addEventListener('click', function () { choose(text, b); });
+      b._value = text;
+      if (!review) {
+        b.addEventListener('click', function () {
+          settle(text);
+          ctx.resolve(text === q.answer, q, text);
+        });
+      }
       buttons.push(b);
       opts.appendChild(b);
     });
     body.appendChild(opts);
 
-    function choose(text, btn) {
-      var correct = text === q.answer;
+    /** 선택 결과를 화면에 반영한다 (기록은 하지 않는다) */
+    function settle(chosen) {
       buttons.forEach(function (b) {
         b.disabled = true;
-        var v = b.querySelector('.v').textContent;
-        if (v === q.answer) b.classList.add('is-ok');
-        else if (b === btn) b.classList.add('is-ng');
+        if (b._value === q.answer) b.classList.add('is-ok');
+        else if (b._value === chosen) b.classList.add('is-ng');
         else b.classList.add('is-mute');
       });
       if (blank) {
         blank.textContent = q.answer;
         blank.classList.add('filled');
       }
-      ctx.resolve(correct, q);
     }
+
+    if (review) settle(review.chosen);
   }
 
   /* ── ⑤ 짝 맞추기 ─────────────────────────── */
