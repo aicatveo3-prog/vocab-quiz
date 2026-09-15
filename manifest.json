@@ -1,0 +1,15 @@
+{
+  "name": "영단어 퀴즈 — 공무원 영어",
+  "short_name": "영단어 퀴즈",
+  "description": "클릭만으로 푸는 영단어 퀴즈. 4지선다 양방향, 아닌 것 고르기, 짝 맞추기, 문장 빈칸, 연어 고르기 5가지 모드.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1220",
+  "theme_color": "#0f1220",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
