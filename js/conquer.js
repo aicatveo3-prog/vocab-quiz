@@ -112,8 +112,11 @@ window.Conquer = (function () {
     for (var s = 0; s < stages.length; s++) {
       stages[s].forEach(function (item) { all.push(item); });
     }
-    // 단계순 정렬 (같은 단계 안에서는 셔플)
-    all.sort(function (a, b) { return a.stage - b.stage || (Math.random() - 0.5); });
+    // 단계순 정렬 (같은 단계 안에서는 알파벳순 고정)
+    all.sort(function (a, b) {
+      if (a.stage !== b.stage) return a.stage - b.stage;
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+    });
 
     return spreadByGap(all, MIN_GAP);
   }
@@ -157,14 +160,16 @@ window.Conquer = (function () {
   }
 
   function buildBoards(chapterWords) {
-    var shuffled = window.Quiz.shuffle(chapterWords.slice());
+    var ordered = chapterWords.slice().sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+    });
     var boards = [];
-    var pairsPerBoard = Math.ceil(shuffled.length / BOARDS_PER_CHAPTER);
+    var pairsPerBoard = Math.ceil(ordered.length / BOARDS_PER_CHAPTER);
     if (pairsPerBoard < 4) pairsPerBoard = 4;
     if (pairsPerBoard > 6) pairsPerBoard = 5;
 
-    for (var i = 0; i < shuffled.length; i += pairsPerBoard) {
-      var slice = shuffled.slice(i, i + pairsPerBoard);
+    for (var i = 0; i < ordered.length; i += pairsPerBoard) {
+      var slice = ordered.slice(i, i + pairsPerBoard);
       if (slice.length < 2) break;
       var board = window.Quiz.buildMatchFrom(slice, 'normal');
       if (board) {
