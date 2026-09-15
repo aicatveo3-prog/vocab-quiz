@@ -1,35 +1,35 @@
 /**
- * 화이트 테마 · 뉴트럴 + 파랑 단색 액센트
+ * 다크 테마 · 뉴트럴 + 파랑 단색 액센트
  *
  * 원칙
  *   · 그라디언트를 쓰지 않는다. 액센트는 파랑 하나로만.
- *   · 층 구분은 얇은 회색 선(--line)과 아주 옅은 면(--surface)으로.
- *   · 타이포는 5단계만 사용한다 — 28 / 20 / 15 / 13 / 11
- *   · 여백은 8px 그리드 — 8 / 12 / 16 / 24 / 32
+ *   · 층 구분은 배경 위에 살짝 밝은 면(--surface)과 얇은 선(--line)으로.
+ *   · 순백/순흑 대신 약간 눌러 눈이 편한 톤을 쓴다.
+ *   · 타이포는 5단계만 — 28 / 20 / 15 / 13 / 11, 여백은 8px 그리드.
  */
 
 :root{
-  --bg:#ffffff;
-  --surface:#f9fafb;
-  --surface-2:#f2f4f7;
-  --line:#eaecf0;
-  --line-2:#d0d5dd;
+  --bg:#0f1116;
+  --surface:#171a21;
+  --surface-2:#1e222b;
+  --line:#272c37;
+  --line-2:#39404e;
 
-  --txt:#101828;
-  --txt-2:#344054;
-  --dim:#667085;
-  --dimmer:#98a2b3;
+  --txt:#e8ebf2;
+  --txt-2:#b7becc;
+  --dim:#8a92a2;
+  --dimmer:#5e6673;
 
-  --accent:#2563eb;
-  --accent-soft:#eff4ff;
+  --accent:#5b8def;
+  --accent-soft:rgba(91,141,239,.15);
 
-  --ok:#059669;
-  --ok-soft:#f0fdf6;
-  --ok-line:#86efac;
+  --ok:#34d399;
+  --ok-soft:rgba(52,211,153,.13);
+  --ok-line:rgba(52,211,153,.45);
 
-  --ng:#dc2626;
-  --ng-soft:#fef4f4;
-  --ng-line:#fca5a5;
+  --ng:#f87171;
+  --ng-soft:rgba(248,113,113,.13);
+  --ng-line:rgba(248,113,113,.45);
 
   --r:12px;
   --r-sm:8px;
@@ -344,7 +344,7 @@ b,strong{font-weight:600}
   text-transform:uppercase;color:var(--dimmer);margin-bottom:10px}
 .heatmap{display:flex;gap:4px}
 .heatmap i{flex:1;height:24px;border-radius:3px;background:var(--surface-2)}
-.heatmap i[data-lv="1"]{background:#bfdbfe}
-.heatmap i[data-lv="2"]{background:#93b4fd}
+.heatmap i[data-lv="1"]{background:#24406b}
+.heatmap i[data-lv="2"]{background:#3a63b0}
 .heatmap i[data-lv="3"]{background:var(--accent)}
 .heatmap i[data-lv="4"]{background:var(--ok)}
