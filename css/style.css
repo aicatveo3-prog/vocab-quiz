@@ -362,3 +362,8 @@ b,strong{font-weight:600}
 
 /* 한글 발음 */
 .fb-pron{font-size:15px;color:var(--accent);margin:6px 0 4px;font-weight:600}
+
+
+/* 문장 빈칸: 문제를 보는 순간부터 보이는 한국어 해석 힌트 */
+.q-ko-hint{text-align:center;font-size:14px;color:var(--dim);
+  margin:-12px 0 18px;padding:0 8px;line-height:1.6}
