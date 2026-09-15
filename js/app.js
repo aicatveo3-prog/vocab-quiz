@@ -5,20 +5,17 @@
  * 오답에서 잠깐 멈춰 세우는 그 1초가 실제로 학습이 일어나는 지점이다.
  */
 (function () {
-  var COUNT_OPTIONS = [10, 15, 20];
-  var MATCH_BOARDS = { 10: 3, 15: 4, 20: 5 };
-
   var BLOCK_OPTIONS = [4, 5, 6];
 
   var state = {
     flow: 'practice',      // 'practice' | 'conquer'
-    count: 10,
     blockSize: 5,
     block: null,
     session: null,
     modeId: null,
     restrictTo: null,
-    slides: [],            // 지금까지 본 문제들 (이전/다음 이동용)
+    setName: 'A',          // 개별 연습 세트 이름 (지금은 A 하나)
+    slides: [],            // 세션의 전체 문제. 개별 연습은 자유 이동한다
     cursor: -1,
     correct: 0,
     wrongWords: [],
@@ -102,16 +99,6 @@
       bp.appendChild(chip);
     });
 
-    // 문제 수
-    var picker = $('count-picker');
-    picker.innerHTML = '';
-    COUNT_OPTIONS.forEach(function (c) {
-      var chip = el('button', 'chip' + (state.count === c ? ' is-on' : ''), c + '문제');
-      chip.type = 'button';
-      chip.addEventListener('click', function () { state.count = c; renderHome(); });
-      picker.appendChild(chip);
-    });
-
     var wrongN = window.Store.wrongList().length;
     var badge = $('wrong-badge');
     badge.textContent = wrongN;
@@ -139,9 +126,14 @@
     });
   }
 
-  /* ── 세션 시작 ─────────────────────────────── */
+  /* ── 세션 시작 (개별 연습) ─────────────────────
+     세트 전체를 한 번에 출제한다. 모든 문제를 미리 만들어 두어야
+     진행 바 드래그로 아무 문제로나 자유롭게 이동할 수 있다. */
   function startSession(modeId, restrictTo) {
-    var count = modeId === 'match' ? MATCH_BOARDS[state.count] : state.count;
+    var avail = window.Quiz.availableCount(modeId);
+    // 짝 맞추기는 한 보드가 5~6단어를 담으므로 단어당 한 번꼴로 보드 수를 잡는다.
+    // 나머지 모드는 단어당 한 문제이므로 세트 전체를 그대로 낸다.
+    var count = modeId === 'match' ? Math.ceil(avail / 5) : avail;
     var session = window.Quiz.buildSession(modeId, count, restrictTo);
     if (!session.length) {
       alert('출제할 수 있는 문제가 없습니다.');
@@ -152,23 +144,23 @@
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
-    state.slides = [];
-    state.cursor = -1;
+    state.setName = restrictTo ? '오답' : 'A';
     state.correct = 0;
     state.wrongWords = [];
+    state.slides = session.map(function (q) {
+      return { q: q, answered: false, chosen: null, correct: null,
+        headline: null, boardStats: null };
+    });
+    state.cursor = 0;
     go('quiz');
-    advanceLive();
+    renderSlide();
   }
 
+  // 확인창 없이 바로 홈으로. 기록은 실시간 저장되므로 잃는 것이 없다.
   $('btn-quit').addEventListener('click', function () {
-    var msg = state.flow === 'conquer'
-      ? '묶음을 그만두고 홈으로 갈까요? 지금까지의 숙련도는 저장됩니다.'
-      : '세션을 그만두고 홈으로 갈까요? 지금까지의 기록은 저장됩니다.';
-    if (confirm(msg)) {
-      state.block = null;
-      state.flow = 'practice';
-      go('home');
-    }
+    state.block = null;
+    state.flow = 'practice';
+    go('home');
   });
 
   /* ══════════ 문제 이동 ══════════
@@ -299,13 +291,29 @@
   }
 
   /* ── 이전 / 다음 ─────────────────────────── */
+  function countAnswered() {
+    return state.slides.filter(function (s) { return s.answered; }).length;
+  }
+
   function renderNav() {
-    var slide = currentSlide();
-    var isLast = state.cursor >= state.slides.length - 1;
     $('quiz-nav').style.display = '';
+    var last = state.slides.length - 1;
+
+    if (state.flow === 'practice') {
+      // 자유 이동 — 아무 문제로나 앞뒤로 오갈 수 있다
+      $('nav-prev').disabled = state.cursor <= 0;
+      $('nav-next').disabled = false;
+      $('nav-next').textContent = state.cursor >= last ? '결과 보기' : '다음 문제 ›';
+      $('nav-mid').textContent = '푼 문제 ' + countAnswered() + ' / ' + state.slides.length;
+      return;
+    }
+
+    // 정복 모드 — 답해야 다음으로 (건너뛰기 방지)
+    var slide = currentSlide();
+    var isLast = state.cursor >= last;
     $('nav-prev').disabled = state.cursor <= 0;
-    // 아직 답하지 않은 문제에서는 넘어갈 수 없다 (건너뛰기 방지)
     $('nav-next').disabled = isLast && (!slide || !slide.answered);
+    $('nav-next').textContent = '다음 문제 ›';
     $('nav-mid').textContent = isLast
       ? '' : '지난 문제 ' + (state.cursor + 1) + ' / ' + state.slides.length;
   }
@@ -321,6 +329,70 @@
     else advanceLive();
   });
 
+  /* ── 진행 바 드래그 스크러버 (개별 연습 전용) ──────
+     396문제를 한 줄에 담으면 한 칸이 1px 남짓이라 정밀 조작이 어렵다.
+     드래그하는 동안 대상 번호 주변을 확대한 돋보기를 띄워 정확히 고르게 한다. */
+  var barWrap = $('quiz-bar-wrap');
+  var scrubbing = false;
+
+  function scrubIndex(clientX) {
+    var rect = barWrap.getBoundingClientRect();
+    var frac = (clientX - rect.left) / rect.width;
+    frac = Math.max(0, Math.min(1, frac));
+    return Math.round(frac * (state.slides.length - 1));
+  }
+
+  function slideWordLabel(i) {
+    var q = state.slides[i] && state.slides[i].q;
+    if (!q) return '';
+    return q.mode === 'match' ? '짝 맞추기 보드' : q.word;
+  }
+
+  function showMagnifier(idx) {
+    var last = state.slides.length - 1;
+    $('quiz-bar').style.width = (last ? (idx / last) * 100 : 0) + '%';
+    $('scrub-num').textContent = (idx + 1) + ' / ' + state.slides.length;
+    $('scrub-word').textContent = slideWordLabel(idx);
+    var ruler = $('scrub-ruler');
+    ruler.innerHTML = '';
+    for (var j = idx - 7; j <= idx + 7; j++) {
+      var tick = el('i');
+      if (j < 0 || j > last) { tick.style.visibility = 'hidden'; }
+      else if (j === idx) tick.className = 'here';
+      else if (state.slides[j].answered) tick.className = 'done';
+      ruler.appendChild(tick);
+    }
+    $('scrub-mag').style.display = 'block';
+  }
+
+  function hideMagnifier() { $('scrub-mag').style.display = 'none'; }
+
+  barWrap.addEventListener('pointerdown', function (e) {
+    if (state.flow !== 'practice') return;
+    scrubbing = true;
+    try { barWrap.setPointerCapture(e.pointerId); } catch (err) { /* noop */ }
+    showMagnifier(scrubIndex(e.clientX));
+    e.preventDefault();
+  });
+  barWrap.addEventListener('pointermove', function (e) {
+    if (!scrubbing) return;
+    showMagnifier(scrubIndex(e.clientX));
+  });
+  function endScrub(e) {
+    if (!scrubbing) return;
+    scrubbing = false;
+    hideMagnifier();
+    state.cursor = scrubIndex(e.clientX);
+    renderSlide();
+  }
+  barWrap.addEventListener('pointerup', endScrub);
+  barWrap.addEventListener('pointercancel', function () {
+    if (!scrubbing) return;
+    scrubbing = false;
+    hideMagnifier();
+    renderSlide();   // 취소되면 이동 없이 현재 화면 복원
+  });
+
   /** 새 문제로 진행 */
   function advanceLive() {
     if (state.flow === 'conquer') { renderConquerStep(); return; }
@@ -333,12 +405,14 @@
     if (state.flow === 'conquer') { updateConquerHead(); return; }
     var mode = modeById(state.modeId);
     var unit = state.modeId === 'match' ? '보드' : '문제';
+    var last = state.slides.length - 1;
     $('quiz-mode-name').textContent = mode.label;
     $('quiz-progress').textContent =
-      (state.cursor + 1) + ' / ' + state.session.length + ' ' + unit;
-    $('quiz-bar-wrap').style.display = '';
-    $('quiz-bar').style.width =
-      ((state.cursor + 1) / state.session.length) * 100 + '%';
+      state.setName + ' · ' + (state.cursor + 1) + ' / ' + state.slides.length + ' ' + unit;
+    var bar = $('quiz-bar-wrap');
+    bar.style.display = '';
+    bar.classList.add('scrubbable');   // 개별 연습은 진행 바가 스크러버
+    $('quiz-bar').style.width = (last ? (state.cursor / last) * 100 : 0) + '%';
   }
 
   /* ══════════ 정복 모드 ══════════ */
@@ -387,7 +461,9 @@
   function updateConquerHead() {
     $('quiz-mode-name').textContent = '정복 모드';
     $('quiz-progress').textContent = '';
-    $('quiz-bar-wrap').style.display = 'none';   // 그리드가 진행도를 대신한다
+    var bar = $('quiz-bar-wrap');
+    bar.style.display = 'none';   // 그리드가 진행도를 대신한다
+    bar.classList.remove('scrubbable');
     renderConquerGrid();
   }
 
@@ -473,18 +549,19 @@
 
   /* ── 결과 ─────────────────────────────────── */
   function renderResult() {
-    var total = state.session.length;
-    var pct = Math.round((state.correct / total) * 100);
+    var answered = countAnswered();
     var unit = state.modeId === 'match' ? '보드' : '문제';
+    var pct = answered ? Math.round((state.correct / answered) * 100) : 0;
 
     $('score-pct').textContent = pct + '%';
     var ring = $('score-ring');
-    ring.classList.toggle('is-ok', pct >= 80);
-    ring.classList.toggle('is-ng', pct < 50);
-    $('result-title').textContent = modeById(state.modeId).label + ' 완료';
-    $('result-sub').textContent =
-      total + unit + ' 중 ' + state.correct + unit + ' 정답 · 연속 ' +
-      window.Store.summary(window.VOCAB.length).streak + '일';
+    ring.classList.toggle('is-ok', answered > 0 && pct >= 80);
+    ring.classList.toggle('is-ng', answered > 0 && pct < 50);
+    $('result-title').textContent = modeById(state.modeId).label + ' · ' + state.setName + ' 세트';
+    $('result-sub').textContent = answered
+      ? (answered + unit + ' 중 ' + state.correct + ' 정답 · 전체 ' + state.slides.length + unit +
+        ' · 연속 ' + window.Store.summary(window.VOCAB.length).streak + '일')
+      : '아직 푼 문제가 없습니다.';
 
     var box = $('result-wrong');
     box.innerHTML = '';

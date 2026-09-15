@@ -162,7 +162,26 @@ b,strong{font-weight:600}
 .quiz-name{flex:1;font-size:13px;color:var(--dim)}
 .quiz-count{font-size:13px;color:var(--dimmer)}
 .bar-quiz{margin-bottom:24px}
-#quiz-bar{background:var(--accent)}
+#quiz-bar{background:var(--accent);transition:width .12s ease}
+
+/* 진행 바를 드래그 스크러버로 쓸 때 — 잡기 쉽도록 히트 영역을 넓힌다 */
+.bar-quiz.scrubbable{position:relative;cursor:pointer;touch-action:none;
+  height:8px;margin-bottom:22px}
+.bar-quiz.scrubbable::before{content:'';position:absolute;left:0;right:0;
+  top:-12px;bottom:-12px}
+.bar-quiz.scrubbable #quiz-bar{transition:none}
+
+/* 드래그 중 뜨는 돋보기 — 396개를 세밀하게 고르도록 확대해서 보여준다 */
+.scrub-mag{display:none;margin:-6px 0 18px;border:1px solid var(--line);
+  border-radius:var(--r);background:var(--surface);padding:12px 14px;text-align:center}
+.scrub-num{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent)}
+.scrub-word{font-size:13px;color:var(--dim);margin-top:2px;min-height:18px}
+.scrub-ruler{display:flex;align-items:center;justify-content:center;gap:3px;margin-top:10px}
+.scrub-ruler i{display:block;width:5px;height:14px;border-radius:2px;background:var(--line-2);flex:0 0 auto}
+.scrub-ruler i.done{background:var(--ok)}
+.scrub-ruler i.here{background:var(--accent);width:8px;height:22px}
+
+.set-note{font-size:12px;color:var(--dim);margin:10px 2px 0;line-height:1.5}
 .quiz-body{min-height:54vh}
 
 /* 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다 */
