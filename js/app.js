@@ -5,17 +5,16 @@
  * 오답에서 잠깐 멈춰 세우는 그 1초가 실제로 학습이 일어나는 지점이다.
  */
 (function () {
-  var BLOCK_OPTIONS = [4, 5, 6];
 
   var state = {
     flow: 'practice',      // 'practice' | 'conquer'
-    blockSize: 5,
-    block: null,
     session: null,
     modeId: null,
     restrictTo: null,
-    setName: 'A',          // 개별 연습 세트 이름 (지금은 A 하나)
-    slides: [],            // 세션의 전체 문제. 개별 연습은 자유 이동한다
+    setName: 'A',
+    conquerSetId: 'A',
+    conquerSession: null,
+    slides: [],
     cursor: -1,
     correct: 0,
     wrongWords: [],
@@ -36,21 +35,15 @@
     return window.Quiz.MODES.filter(function (m) { return m.id === id; })[0];
   }
 
-  /* ── 화면 전환 ─────────────────────────────── */
-  function go(name) {
-    ['home', 'quiz', 'result', 'wrong', 'words', 'block'].forEach(function (n) {
-      $('screen-' + n).classList.toggle('is-active', n === name);
-    });
-    if (name !== 'quiz') $('conquer-grid').innerHTML = '';
-    window.scrollTo(0, 0);
-    if (name === 'home') renderHome();
-    if (name === 'wrong') renderWrong();
-    if (name === 'words') renderWords();
-  }
+  /* ── 화면 전환 — go()는 정복 모드 섹션에서 정의 ── */
 
   document.addEventListener('click', function (e) {
     var t = e.target.closest('[data-go]');
-    if (t) go(t.getAttribute('data-go'));
+    if (t) {
+      var target = t.getAttribute('data-go');
+      if (target === 'sets') { renderSets(); return; }
+      go(target);
+    }
   });
 
   /* ── 홈 ───────────────────────────────────── */
@@ -88,16 +81,7 @@
       list.appendChild(row);
     });
 
-    // 정복 모드 (코스)
-    $('conquer-n').textContent = state.blockSize + '단어';
-    var bp = $('block-picker');
-    bp.innerHTML = '';
-    BLOCK_OPTIONS.forEach(function (n) {
-      var chip = el('button', 'chip' + (state.blockSize === n ? ' is-on' : ''), n + '단어');
-      chip.type = 'button';
-      chip.addEventListener('click', function () { state.blockSize = n; renderHome(); });
-      bp.appendChild(chip);
-    });
+    $('conquer-n').textContent = window.Conquer.buildChapters(window.Conquer.getSet('A')).length + '챕터';
 
     var wrongN = window.Store.wrongList().length;
     var badge = $('wrong-badge');
@@ -140,7 +124,6 @@
       return;
     }
     state.flow = 'practice';
-    state.block = null;
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
@@ -158,7 +141,6 @@
 
   // 확인창 없이 바로 홈으로. 기록은 실시간 저장되므로 잃는 것이 없다.
   $('btn-quit').addEventListener('click', function () {
-    state.block = null;
     state.flow = 'practice';
     go('home');
   });
@@ -214,10 +196,11 @@
     slide.correct = correct;
 
     if (state.flow === 'conquer') {
-      var res = state.block.onAnswer(correct);
-      if (correct && res && res.done) slide.headline = '정답 — ' + res.word + ' 정복!';
-      else if (!correct && res && res.demoted) slide.headline = '오답 — 한 단계 내려갑니다';
-      else if (!correct && res && !res.filler) slide.headline = '오답 — 이 단계를 다시 봅니다';
+      // 정복 모드: 강등 없이 그냥 기록만
+      var q = slide.q;
+      window.Store.record(q.word, correct);
+      if (correct) state.correct++;
+      else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
       updateHead();
     } else {
       var q = slide.q;
@@ -236,7 +219,11 @@
     slide.boardStats = stats;
 
     if (state.flow === 'conquer') {
-      state.block.onBoardDone();
+      // 정복 모드: 보드 결과도 단순히 기록
+      if (stats.correct) state.correct++;
+      stats.wrongWords.forEach(function (w) {
+        if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
+      });
       updateHead();
     } else {
       if (stats.correct) state.correct++;
@@ -299,23 +286,11 @@
     $('quiz-nav').style.display = '';
     var last = state.slides.length - 1;
 
-    if (state.flow === 'practice') {
-      // 자유 이동 — 아무 문제로나 앞뒤로 오갈 수 있다
-      $('nav-prev').disabled = state.cursor <= 0;
-      $('nav-next').disabled = false;
-      $('nav-next').textContent = state.cursor >= last ? '결과 보기' : '다음 문제 ›';
-      $('nav-mid').textContent = '푼 문제 ' + countAnswered() + ' / ' + state.slides.length;
-      return;
-    }
-
-    // 정복 모드 — 답해야 다음으로 (건너뛰기 방지)
-    var slide = currentSlide();
-    var isLast = state.cursor >= last;
+    // 정복 모드와 개별 연습 모두 자유 이동
     $('nav-prev').disabled = state.cursor <= 0;
-    $('nav-next').disabled = isLast && (!slide || !slide.answered);
-    $('nav-next').textContent = '다음 문제 ›';
-    $('nav-mid').textContent = isLast
-      ? '' : '지난 문제 ' + (state.cursor + 1) + ' / ' + state.slides.length;
+    $('nav-next').disabled = false;
+    $('nav-next').textContent = state.cursor >= last ? '결과 보기' : '다음 문제 ›';
+    $('nav-mid').textContent = '푼 문제 ' + countAnswered() + ' / ' + state.slides.length;
   }
 
   function hideNav() { $('quiz-nav').style.display = 'none'; }
@@ -368,7 +343,8 @@
   function hideMagnifier() { $('scrub-mag').style.display = 'none'; }
 
   barWrap.addEventListener('pointerdown', function (e) {
-    if (state.flow !== 'practice') return;
+    if (state.flow !== 'practice' && state.flow !== 'conquer') return;
+    if (state.cursor < 0) return;   // 미리보기 중에는 스크러빙 비활성
     scrubbing = true;
     try { barWrap.setPointerCapture(e.pointerId); } catch (err) { /* noop */ }
     showMagnifier(scrubIndex(e.clientX));
@@ -395,9 +371,13 @@
 
   /** 새 문제로 진행 */
   function advanceLive() {
-    if (state.flow === 'conquer') { renderConquerStep(); return; }
-    if (state.slides.length >= state.session.length) { renderResult(); return; }
-    pushSlide(state.session[state.slides.length]);
+    if (state.flow === 'conquer') {
+      // 정복 모드: 마지막 슬라이드에서 다음 → 결과
+      renderChapterComplete();
+      return;
+    }
+    if (state.cursor >= state.slides.length - 1) { renderResult(); return; }
+    state.cursor++;
     renderSlide();
   }
 
@@ -415,84 +395,98 @@
     $('quiz-bar').style.width = (last ? (state.cursor / last) * 100 : 0) + '%';
   }
 
-  /* ══════════ 정복 모드 ══════════ */
+  /* ══════════ 정복 모드 (챕터 기반) ══════════ */
 
-  $('conquer-card').addEventListener('click', function () { startConquer(); });
-  $('btn-next-block').addEventListener('click', function () { startConquer(); });
+  function go(name) {
+    ['home', 'quiz', 'result', 'wrong', 'words', 'block', 'sets', 'chapters'].forEach(function (n) {
+      $('screen-' + n).classList.toggle('is-active', n === name);
+    });
+    if (name !== 'quiz') $('conquer-grid').innerHTML = '';
+    window.scrollTo(0, 0);
+    if (name === 'home') renderHome();
+    if (name === 'wrong') renderWrong();
+    if (name === 'words') renderWords();
+  }
 
-  function startConquer() {
-    var block = window.Conquer.createBlock(state.blockSize);
-    if (!block) {
-      alert('묶음을 구성할 수 없습니다.');
+  // 세트 목록
+  function renderSets() {
+    var list = $('set-list');
+    list.innerHTML = '';
+    window.Conquer.SETS.forEach(function (s) {
+      var chs = window.Conquer.buildChapters(s);
+      var btn = el('button', 'row-btn');
+      btn.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, s.label + ' 세트'));
+      main.appendChild(el('span', null, s.words.length + '단어 · ' + chs.length + '챕터'));
+      btn.appendChild(main);
+      btn.appendChild(el('span', 'row-n', '›'));
+      btn.addEventListener('click', function () { state.conquerSetId = s.id; renderChapters(s.id); });
+      list.appendChild(btn);
+    });
+    go('sets');
+  }
+
+  // 챕터 목록
+  function renderChapters(setId) {
+    var s = window.Conquer.getSet(setId);
+    var chs = window.Conquer.buildChapters(s);
+    $('chapters-title').textContent = s.label + ' 세트';
+    var list = $('chapter-list');
+    list.innerHTML = '';
+    chs.forEach(function (ch) {
+      var btn = el('button', 'row-btn');
+      btn.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, '챕터 ' + ch.label));
+      main.appendChild(el('span', null, ch.from + ' ~ ' + ch.to + '  (' + ch.rangeText + ')'));
+      btn.appendChild(main);
+      btn.appendChild(el('span', 'row-n', ch.words.length + '단어'));
+      btn.addEventListener('click', function () { startConquerChapter(setId, ch.index); });
+      list.appendChild(btn);
+    });
+    go('chapters');
+  }
+
+  $('btn-back-sets').addEventListener('click', function () { renderSets(); });
+
+  // 챕터 드릴 시작
+  function startConquerChapter(setId, chapterIndex) {
+    var sess = window.Conquer.createChapterSession(setId, chapterIndex);
+    if (!sess || !sess.slides.length) {
+      alert('문제를 만들 수 없습니다.');
       return;
     }
     state.flow = 'conquer';
-    state.block = block;
     state.session = null;
-    state.slides = [];
-    state.cursor = -1;
+    state.modeId = null;
+    state.conquerSession = sess;
+    state.slides = sess.slides;
+    state.cursor = -1;   // 미리보기부터 시작
+    state.correct = 0;
+    state.wrongWords = [];
     go('quiz');
-    renderConquerStep();
+    renderConquerPreview(sess);
   }
 
-  /** 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다 */
-  function renderConquerGrid() {
-    var g = $('conquer-grid');
-    g.innerHTML = '';
-    if (state.flow !== 'conquer' || !state.block) return;
-
-    state.block.grid().forEach(function (s) {
-      var slot = el('span', 'cslot' + (s.done ? ' is-done' : ''));
-      slot.appendChild(el('span', 'cn', s.done ? s.word : String(s.n)));
-      var dots = el('span', 'cdots');
-      for (var i = 0; i < s.total; i++) {
-        dots.appendChild(el('b', i < s.skipped ? 'skip' : (i < s.passed ? 'on' : '')));
-      }
-      slot.appendChild(dots);
-      g.appendChild(slot);
-    });
-
-    // 진행 숫자를 그리드 오른쪽 끝에 붙인다.
-    // 진행 바까지 함께 두면 같은 정보가 세 번 나온다.
-    g.appendChild(el('span', 'cgrid-count',
-      state.block.passedStages() + ' / ' + state.block.totalStages()));
-  }
-
-  function updateConquerHead() {
-    $('quiz-mode-name').textContent = '정복 모드';
-    $('quiz-progress').textContent = '';
-    var bar = $('quiz-bar-wrap');
-    bar.style.display = 'none';   // 그리드가 진행도를 대신한다
-    bar.classList.remove('scrubbable');
-    renderConquerGrid();
-  }
-
-  function renderConquerStep() {
-    var step = state.block.next();
-    $('quiz-feedback').innerHTML = '';
-    updateConquerHead();
-
-    if (step.type === 'preview') { renderPreview(step); return; }
-    if (step.type === 'done') { renderBlockComplete(step.stats); return; }
-
-    if (step.type === 'board') step.q.boardTitle = '마지막 관문 — 짝 맞추기';
-    pushSlide(step.q);
-    renderSlide();
-  }
-
-  /** 묶음 미리보기 — 다 읽을 때까지 기다린다. 자동으로 넘어가지 않는다. */
-  function renderPreview(step) {
+  // 미리보기
+  function renderConquerPreview(sess) {
     var body = $('quiz-body');
     body.innerHTML = '';
+    $('quiz-feedback').innerHTML = '';
     hideNav();
+    $('conquer-grid').innerHTML = '';
+    $('quiz-mode-name').textContent = '정복 · 챕터 ' + sess.chapter.label;
+    $('quiz-progress').textContent = sess.chapter.words.length + '단어';
+    $('quiz-bar-wrap').style.display = 'none';
 
     var head = el('div', 'preview-head');
-    head.appendChild(el('b', null, '이번 묶음 ' + step.words.length + '단어'));
+    head.appendChild(el('b', null, '챕터 ' + sess.chapter.label + ' · ' + sess.chapter.words.length + '단어'));
     head.appendChild(el('span', null, '충분히 훑어본 뒤 시작하세요'));
     body.appendChild(head);
 
     var card = el('div', 'panel');
-    step.words.forEach(function (w) {
+    sess.previewWords.forEach(function (w) {
       var row = el('div', 'pv-item');
       var left = el('div');
       left.appendChild(el('b', null, w.word));
@@ -506,46 +500,63 @@
     var btn = el('button', 'btn btn-primary pv-start', '시작하기');
     btn.type = 'button';
     btn.addEventListener('click', function () {
-      state.block.startDrill();
-      renderConquerStep();
+      state.cursor = 0;
+      renderSlide();
     });
     body.appendChild(btn);
   }
 
-  function renderBlockComplete(stats) {
-    var all = stats.conquered === stats.size;
-    var passed = state.block.passedStages();
-    var total = state.block.totalStages();
+  function updateConquerHead() {
+    var sess = state.conquerSession;
+    $('quiz-mode-name').textContent = '정복 · 챕터 ' + sess.chapter.label;
+    $('quiz-progress').textContent = (state.cursor + 1) + ' / ' + state.slides.length;
+    var bar = $('quiz-bar-wrap');
+    bar.style.display = '';
+    bar.classList.add('scrubbable');
+    var last = state.slides.length - 1;
+    $('quiz-bar').style.width = (last ? (state.cursor / last) * 100 : 0) + '%';
+    $('conquer-grid').innerHTML = '';
+  }
+
+  // 정복 모드 결과 → 챕터 완료 화면 (기존 block 화면 재활용)
+  function renderChapterComplete() {
+    var answered = countAnswered();
+    var pct = answered ? Math.round((state.correct / answered) * 100) : 0;
+    var sess = state.conquerSession;
 
     var badge = $('block-badge');
-    badge.textContent = stats.conquered + ' / ' + stats.size;
-    badge.classList.toggle('is-ok', all);
-    $('block-title').textContent = all ? '묶음 정복!' : '묶음 종료';
-    $('block-sub').textContent = '문제 ' + stats.asked + '개 · 단계 ' + passed + '/' + total +
-      ' 통과' + (stats.demotions ? ' · 강등 ' + stats.demotions + '회' : '');
+    badge.textContent = pct + '%';
+    badge.classList.toggle('is-ok', pct >= 80);
+    badge.classList.toggle('is-ng', pct < 50);
+    $('block-title').textContent = '챕터 ' + sess.chapter.label + ' 완료';
+    $('block-sub').textContent =
+      answered + '문제 중 ' + state.correct + '문제 정답';
 
     var box = $('block-words');
     box.innerHTML = '';
-    box.appendChild(el('div', 'section-title', '묶음 단어'));
-    stats.words.forEach(function (w) {
-      var row = el('div', 'bw-item');
-      row.appendChild(el('span', 'bw-mark ' + (w.done ? 'ok' : 'ng'), w.done ? '✓' : '·'));
-      var bodyEl = el('div', 'bw-body');
-      bodyEl.appendChild(el('b', null, w.word));
-      bodyEl.appendChild(el('div', 'bw-mean', w.meanings.join(', ')));
-      row.appendChild(bodyEl);
-      var side = w.done ? '정복' : '진행 중';
-      if (w.skipped) side += ' · ' + w.skipped + '단계 생략';
-      if (w.wrong) side += ' · 강등 ' + w.wrong;
-      row.appendChild(el('div', 'bw-side', side));
-      box.appendChild(row);
-    });
-    if (!all) {
-      box.appendChild(el('div', 'site-sub',
-        '정복하지 못한 단어는 숙련도가 남아 다음 묶음에서 이어집니다.'));
+    if (state.wrongWords.length) {
+      box.appendChild(el('div', 'section-title', '틀린 단어 ' + state.wrongWords.length + '개'));
+      state.wrongWords.forEach(function (w) {
+        var word = WORD_INDEX[w];
+        var row = el('div', 'rw-item');
+        row.appendChild(el('b', null, w));
+        row.appendChild(el('span', null, word ? word.meanings.join(', ') : ''));
+        box.appendChild(row);
+      });
+    } else {
+      box.appendChild(el('div', 'empty', '틀린 단어가 없습니다!'));
     }
+    $('btn-next-block').textContent = '챕터 목록으로';
     go('block');
   }
+
+  $('btn-next-block').addEventListener('click', function () {
+    if (state.conquerSession) {
+      renderChapters(state.conquerSession.setId);
+    } else {
+      go('home');
+    }
+  });
 
   /* ── 결과 ─────────────────────────────────── */
   function renderResult() {

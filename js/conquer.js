@@ -1,333 +1,200 @@
 /**
- * conquer.js — 정복 모드 엔진
+ * conquer.js — 정복 모드 엔진 (챕터 기반)
  *
- * 단어 5개를 한 묶음으로 잡고, 그 묶음이 단계를 차례로 통과하게 만든다.
+ * 세트(A) → 챕터(20단어) → 드릴 구조.
  *
- *     1단계  4지선다 (영↔한 양방향)
- *     2단계  문장 빈칸        (문맥 적용)
- *   [마지막] 짝 맞추기 보드 — 묶음 전체 마무리 확인
+ *   미리보기  20단어를 뜻과 함께 훑어보기
+ *   드릴     1단계(4지선다)와 2단계(문장 빈칸)를 섞어서 출제
+ *   보드     짝 맞추기 4~5쌍 × 4개 보드로 마무리
+ *   결과
  *
- * 미리보기가 첫 노출을 담당하므로 도입 보드는 두지 않고,
- * 짝 맞추기는 묶음의 마지막 관문으로만 쓴다.
- *
- * 핵심 설계
- *   · 큐 기반 간격 배치 — 같은 단어가 재등장하기까지 최소 3문제를 둔다.
- *     단계를 연달아 물으면 직전 답이 단기기억에 남아 그냥 풀리고 학습이 안 된다.
- *   · 틀리면 한 단계 강등 — 다시 통과해야 올라간다. 모르는 단어가 자동으로 반복된다.
- *   · 이미 아는 단어는 1단계를 건너뛴다 (숙련도 4↑ → 2단계부터).
- *   · 묶음은 예문을 가진 단어로 구성해 2단계까지 온전히 진행되게 한다.
+ * 규칙
+ *   · 강등 없음 — 틀려도 다음으로 넘어간다. 틀린 단어는 결과에서 모아 보여준다.
+ *   · 건너뜀 없음 — 숙련도와 상관없이 모든 단어가 두 단계를 모두 밟는다.
+ *   · 큐 간격 유지 — 같은 단어의 1단계와 2단계 사이에 최소 3문제를 둔다.
+ *   · 자유 이동 — 개별 연습과 같은 이전/다음 이동을 지원한다.
  */
 window.Conquer = (function () {
-  var MAX_STAGE = 2;
-  var MIN_GAP = 3;   // 같은 단어 재등장 최소 간격 (문제 수)
-  var DEMOTE = 1;    // 오답 시 내려가는 단계 수
+  var CHAPTER_SIZE = 20;
+  var MIN_GAP = 3;
+  var BOARDS_PER_CHAPTER = 4;
 
-  var STAGES = {
-    1: { label: '4지선다' },
-    2: { label: '문장 빈칸' }
-  };
+  /* ── 세트 & 챕터 ──────────────────────────── */
 
-  /** 4지선다는 방향에 따라 난이도가 크게 달라지므로 라벨에 방향을 밝힌다 */
-  function stageLabel(stage, dir) {
-    if (stage === 1) return '1단계 · ' + (dir === 'en-ko' ? '단어 → 뜻' : '뜻 → 단어');
-    return stage + '단계 · ' + STAGES[stage].label;
+  /** 세트 정의. 지금은 A 하나. B~Z를 넣으면 여기에 추가한다. */
+  var SETS = [
+    { id: 'A', label: 'A', words: window.VOCAB }
+  ];
+
+  function getSet(id) {
+    for (var i = 0; i < SETS.length; i++) if (SETS[i].id === id) return SETS[i];
+    return null;
   }
 
-  /** 숙련도가 높은 단어는 1단계를 건너뛴다 */
-  function startStage(word) {
-    return window.Store.mastery(word) >= 4 ? 2 : 1;
-  }
-
-  /** 2단계(문장 빈칸)까지 진행 가능한 단어만 후보로 삼는다 */
-  function blockCandidates() {
-    return window.VOCAB.filter(function (w) {
-      return w.ex && w.ex.length;
+  /** 세트의 단어를 알파벳순으로 CHAPTER_SIZE씩 잘라 챕터 배열을 만든다 */
+  function buildChapters(set) {
+    var sorted = set.words.slice().sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
     });
+    var chapters = [];
+    for (var i = 0; i < sorted.length; i += CHAPTER_SIZE) {
+      var slice = sorted.slice(i, i + CHAPTER_SIZE);
+      var first = slice[0].word;
+      var last = slice[slice.length - 1].word;
+      chapters.push({
+        index: chapters.length,
+        label: String(chapters.length + 1),
+        from: first,
+        to: last,
+        rangeText: (i + 1) + '~' + Math.min(i + CHAPTER_SIZE, sorted.length),
+        words: slice
+      });
+    }
+    return chapters;
+  }
+
+  /* ── 드릴 세션 생성 ────────────────────────── */
+
+  /**
+   * 챕터의 단어로 드릴 문제를 만든다.
+   * 1단계(4지선다)와 2단계(문장 빈칸)를 섞되, 같은 단어의 두 단계 사이에
+   * 최소 MIN_GAP 문제를 둔다.
+   */
+  function buildDrill(chapterWords) {
+    var names = chapterWords.map(function (w) { return w.word; });
+
+    // 각 단어에 대해 1단계·2단계 문제를 만든다
+    var stage1 = [];   // { q, word, stage }
+    var stage2 = [];
+    var dir = 'en-ko'; // 방향을 번갈아 배정
+
+    chapterWords.forEach(function (w) {
+      var q1 = tryBuild(function () {
+        return window.Quiz.build.mcq(w, dir, names);
+      });
+      if (q1) {
+        q1.stageLabel = '1단계 · ' + (dir === 'en-ko' ? '단어 → 뜻' : '뜻 → 단어');
+        stage1.push({ q: q1, word: w.word, stage: 1 });
+        dir = dir === 'en-ko' ? 'ko-en' : 'en-ko';
+      }
+
+      var q2 = tryBuild(function () {
+        return window.Quiz.build.cloze(w, names);
+      });
+      if (q2) {
+        q2.stageLabel = '2단계 · 문장 빈칸';
+        stage2.push({ q: q2, word: w.word, stage: 2 });
+      }
+    });
+
+    // 1단계를 셔플하고, 그 사이에 2단계를 간격을 두고 끼워 넣는다
+    var shuffled1 = window.Quiz.shuffle(stage1);
+    var shuffled2 = window.Quiz.shuffle(stage2);
+
+    return interleave(shuffled1, shuffled2, MIN_GAP);
+  }
+
+  /** 빌더를 최대 4번 시도해 null이면 포기 */
+  function tryBuild(fn) {
+    for (var i = 0; i < 4; i++) {
+      var q = fn();
+      if (q) return q;
+    }
+    return null;
   }
 
   /**
-   * 묶음 구성 — 같은 품사, 레벨 ±1, 서로 뜻이 겹치지 않는 단어끼리 모은다.
-   * 뜻이 겹치는 단어를 같이 넣으면 짝 맞추기 보드가 모호해진다.
+   * 1단계 배열과 2단계 배열을 인터리빙한다.
+   * 같은 단어의 1단계와 2단계 사이에 최소 gap개 문제를 둔다.
    */
-  function pickBlock(size) {
-    var iv = window.Quiz._internals;
-    var ranked = window.Quiz.rankByPriority(blockCandidates());
+  function interleave(arr1, arr2, gap) {
+    // 1단계를 기본 순서로 깔고, 2단계를 간격을 지키며 끼운다
+    var result = arr1.slice();
+    var wordLastIdx = {};
+    result.forEach(function (item, i) { wordLastIdx[item.word] = i; });
 
-    function tryFill(seed, samePos) {
-      var chosen = [seed];
-      for (var j = 0; j < ranked.length && chosen.length < size; j++) {
-        var c = ranked[j];
-        if (c === seed) continue;
-        if (samePos && c.pos !== seed.pos) continue;
-        // 레벨 차이는 이미 뽑은 모든 단어와 비교한다.
-        // seed와만 비교하면 B2와 C2가 한 보드에 섞여 2단계 차이가 벌어진다.
-        var clash = chosen.some(function (x) {
-          return iv.levelGap(x, c) > 1 ||
-            iv.meaningsOverlap(x, c) || iv.areSynonyms(x, c);
-        });
-        if (clash) continue;
-        chosen.push(c);
+    arr2.forEach(function (item) {
+      var earliest = (wordLastIdx[item.word] !== undefined)
+        ? wordLastIdx[item.word] + gap + 1
+        : 0;
+      var pos = Math.max(earliest, result.length);
+      // 끝에 붙이되, 가능하면 다른 단어 사이에 삽입해 분산시킨다
+      if (pos > result.length) pos = result.length;
+      result.splice(pos, 0, item);
+      // 인덱스 갱신
+      for (var k in wordLastIdx) {
+        if (wordLastIdx[k] >= pos) wordLastIdx[k]++;
       }
-      return chosen;
-    }
+      wordLastIdx[item.word] = pos;
+    });
 
-    // 같은 품사로 채워보고, 안 되면 품사 제약을 푼다
-    for (var pass = 0; pass < 2; pass++) {
-      var samePos = pass === 0;
-      for (var i = 0; i < Math.min(ranked.length, 40); i++) {
-        var got = tryFill(ranked[i], samePos);
-        if (got.length === size) return got;
-      }
-    }
-    return ranked.slice(0, size);
+    return result;
   }
 
-  /* ── 묶음 인스턴스 ─────────────────────────── */
+  /** 챕터 단어로 짝 맞추기 보드를 만든다 (4~5쌍 × BOARDS_PER_CHAPTER개) */
+  function buildBoards(chapterWords) {
+    var shuffled = window.Quiz.shuffle(chapterWords.slice());
+    var boards = [];
+    var pairsPerBoard = Math.ceil(shuffled.length / BOARDS_PER_CHAPTER);
+    if (pairsPerBoard < 4) pairsPerBoard = 4;
+    if (pairsPerBoard > 6) pairsPerBoard = 5;
 
-  function createBlock(size) {
-    size = size || 5;
-    var picked = pickBlock(size);
-    if (picked.length < 2) return null;
+    for (var i = 0; i < shuffled.length; i += pairsPerBoard) {
+      var slice = shuffled.slice(i, i + pairsPerBoard);
+      if (slice.length < 2) break;
+      var board = window.Quiz.buildMatchFrom(slice, 'normal');
+      if (board) {
+        board.boardTitle = '짝 맞추기 ' + (boards.length + 1) + ' / ' + BOARDS_PER_CHAPTER;
+        boards.push(board);
+      }
+    }
+    return boards;
+  }
 
-    var words = picked.map(function (o, i) {
-      var st = startStage(o.word);
-      return {
-        word: o.word, obj: o, stage: st, start: st, done: false, wrong: 0,
-        // 4지선다 방향을 단어마다 번갈아 배정해 한 묶음에 양방향이 섞이게 한다
-        dir: i % 2 === 0 ? 'en-ko' : 'ko-en'
-      };
+  /**
+   * 챕터 세션을 생성한다.
+   * 반환하는 slides 배열을 app.js가 자유 이동으로 렌더한다.
+   */
+  function createChapterSession(setId, chapterIndex) {
+    var set = getSet(setId);
+    if (!set) return null;
+    var chapters = buildChapters(set);
+    var ch = chapters[chapterIndex];
+    if (!ch) return null;
+
+    var drill = buildDrill(ch.words);
+    var boards = buildBoards(ch.words);
+
+    // 슬라이드 배열: 드릴 문제 + 보드들
+    var slides = [];
+    drill.forEach(function (item) {
+      slides.push({
+        q: item.q, word: item.word, stage: item.stage,
+        answered: false, chosen: null, correct: null,
+        headline: null, boardStats: null
+      });
     });
-    var names = words.map(function (w) { return w.word; });
-    var queue = window.Quiz.shuffle(names.slice());
-
-    var phase = 'preview';        // preview → drill → outro → done
-    var asked = 0;
-    var maxAsked = size * 5;      // 계속 틀려도 세션이 끝없이 늘어나지 않게
-    var pending = null;           // 아직 답하지 않은 문제
-    var history = [];             // 출제된 단어 순서 (간격 검사용)
-    var fillers = 0;
-    var maxFillers = size * 2;
-
-    function entryOf(name) {
-      for (var i = 0; i < words.length; i++) if (words[i].word === name) return words[i];
-      return null;
-    }
-
-    function remaining() {
-      return words.filter(function (w) { return !w.done; }).length;
-    }
-
-    function objs() {
-      return words.map(function (w) { return w.obj; });
-    }
-
-    /** 최소 간격을 두고 큐에 되넣는다 */
-    function reinsert(name) {
-      var pos = queue.length <= MIN_GAP
-        ? queue.length
-        : MIN_GAP + Math.floor(Math.random() * (queue.length - MIN_GAP + 1));
-      queue.splice(pos, 0, name);
-    }
-
-    function conquer(e) {
-      e.done = true;
-      // 4단계를 서로 다른 각도로 모두 통과한 것은 진짜 아는 것이므로 보너스를 준다
-      window.Store.boost(e.word, 1);
-    }
-
-    /** 최근 MIN_GAP개 안에 이미 나왔는가 */
-    function tooSoon(name) {
-      return history.slice(-MIN_GAP).indexOf(name) !== -1;
-    }
-
-    /**
-     * 묶음 후반에는 남은 단어가 적어 큐가 짧아지고 간격이 무너진다.
-     * 그때 이미 정복한 단어를 복습 문제로 끼워 넣어 간격을 유지한다.
-     * 복습 문제는 정복 상태를 되돌리지 않고 숙련도에만 반영된다.
-     */
-    function pickFiller() {
-      var pool = words.filter(function (w) {
-        return w.done && !tooSoon(w.word);
+    boards.forEach(function (board) {
+      slides.push({
+        q: board, word: null, stage: 'board',
+        answered: false, chosen: null, correct: null,
+        headline: null, boardStats: null
       });
-      if (!pool.length) return null;
-      return pool[Math.floor(Math.random() * pool.length)];
-    }
-
-    /**
-     * 빌더는 선택지가 우연히 중복되면 null을 반환한다. 한 번 실패하면 단계를
-     * 건너뛰게 되므로 몇 번 재시도해 조용한 학습 손실을 막는다.
-     */
-    function buildStage(stage, e) {
-      for (var i = 0; i < 4; i++) {
-        var q = stage === 1
-          ? window.Quiz.build.mcq(e.obj, e.dir, names)
-          : window.Quiz.build.cloze(e.obj, names);
-        if (q) return q;
-      }
-      return null;
-    }
-
-    function buildFillerQuestion(e) {
-      // 회상 부담이 큰 문장 빈칸을 우선 쓰고, 안 되면 4지선다로 복습한다
-      var order = [2, 1];
-      for (var i = 0; i < order.length; i++) {
-        var q = buildStage(order[i], e);
-        if (q) {
-          q.stageLabel = '복습 · ' + (order[i] === 1 ? '4지선다' : STAGES[2].label);
-          return q;
-        }
-      }
-      return null;
-    }
-
-    /** 다음 단계로 올린다. 끝까지 갔으면 정복 처리 */
-    function promote(e) {
-      e.stage++;
-      if (e.stage > MAX_STAGE) conquer(e);
-      else reinsert(e.word);
-    }
-
-    /**
-     * 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다.
-     * 아직 출제될 단어를 화면에 띄우면 선택지와 대조해 정답을 골라낼 수 있다.
-     */
-    function grid() {
-      return words.map(function (w, i) {
-        return {
-          n: i + 1,
-          passed: Math.min(MAX_STAGE, w.stage - 1),
-          total: MAX_STAGE,
-          skipped: w.start - 1,
-          done: w.done,
-          word: w.done ? w.word : null,
-          stage: w.stage
-        };
-      });
-    }
-
-    function stats() {
-      return {
-        size: words.length,
-        conquered: words.filter(function (w) { return w.done; }).length,
-        asked: asked,
-        demotions: words.reduce(function (n, w) { return n + w.wrong; }, 0),
-        words: words.map(function (w) {
-          return {
-            word: w.word,
-            meanings: w.obj.meanings,
-            level: w.obj.level,
-            done: w.done,
-            wrong: w.wrong,
-            skipped: w.start - 1
-          };
-        })
-      };
-    }
-
-    /** 다음에 보여줄 것 — 문제는 답하기 전까지 같은 것을 반복해 반환한다 */
-    function next() {
-      if (phase === 'preview') return { type: 'preview', words: objs() };
-
-      if (phase === 'drill') {
-        if (pending) return pending;
-        if (remaining() === 0 || asked >= maxAsked) { phase = 'outro'; return next(); }
-
-        var guard = 0;
-        while (guard++ < queue.length + words.length + 4) {
-          var name = queue.shift();
-          if (name === undefined) break;
-          var e = entryOf(name);
-          if (!e || e.done) continue;
-
-          // 간격이 부족하면 정복한 단어의 복습 문제를 먼저 끼워 넣는다
-          if (tooSoon(name) && fillers < maxFillers) {
-            var f = pickFiller();
-            if (f) {
-              var fq = buildFillerQuestion(f);
-              if (fq) {
-                queue.unshift(name);          // 원래 단어는 바로 다음 차례
-                fillers++;
-                asked++;
-                history.push(f.word);
-                pending = { type: 'question', q: fq, entry: f, stage: null, isFiller: true };
-                return pending;
-              }
-            }
-          }
-
-          var q = buildStage(e.stage, e);
-          if (!q) {
-            // 이 단계는 문제를 만들 수 없다 → 통과로 처리하고 다음 단계로 넘긴다
-            promote(e);
-            continue;
-          }
-          q.stageLabel = stageLabel(e.stage, e.dir);
-          asked++;
-          history.push(e.word);
-          pending = { type: 'question', q: q, entry: e, stage: e.stage };
-          return pending;
-        }
-        phase = 'outro';
-        return next();
-      }
-
-      if (phase === 'outro') {
-        return {
-          type: 'board', which: 'outro',
-          q: window.Quiz.buildMatchFrom(objs(), 'normal')
-        };
-      }
-      return { type: 'done', stats: stats() };
-    }
+    });
 
     return {
-      /* 상태 조회 */
-      grid: grid,
-      stats: stats,
-      phase: function () { return phase; },
-      remaining: remaining,
-      asked: function () { return asked; },
-      totalStages: function () {
-        return words.reduce(function (n, w) { return n + (MAX_STAGE - w.start + 1); }, 0);
-      },
-      passedStages: function () {
-        return words.reduce(function (n, w) { return n + (w.stage - w.start); }, 0);
-      },
-
-      /* 진행 */
-      next: next,
-      startDrill: function () { phase = 'drill'; },
-      onBoardDone: function () { phase = 'done'; },
-      onAnswer: function (correct) {
-        if (!pending) return null;
-        var e = pending.entry;
-        var isFiller = pending.isFiller;
-        pending = null;
-        window.Store.record(e.word, correct);
-
-        // 복습 문제는 정복 상태를 되돌리지 않는다
-        if (isFiller) return { word: e.word, done: e.done, filler: true };
-
-        if (correct) {
-          promote(e);
-          return { word: e.word, done: e.done, stage: e.stage, demoted: false };
-        }
-
-        e.wrong++;
-        var before = e.stage;
-        e.stage = Math.max(1, e.stage - DEMOTE);
-        reinsert(e.word);
-        // 1단계에서 틀리면 더 내려갈 곳이 없다. 실제로 내려갔을 때만 알린다.
-        return { word: e.word, done: false, stage: e.stage, demoted: e.stage < before };
-      }
+      setId: setId,
+      chapter: ch,
+      slides: slides,
+      previewWords: ch.words
     };
   }
 
   return {
-    MAX_STAGE: MAX_STAGE,
-    MIN_GAP: MIN_GAP,
-    STAGES: STAGES,
-    createBlock: createBlock,
-    candidateCount: function () { return blockCandidates().length; }
+    SETS: SETS,
+    CHAPTER_SIZE: CHAPTER_SIZE,
+    getSet: getSet,
+    buildChapters: buildChapters,
+    createChapterSession: createChapterSession
   };
 })();
