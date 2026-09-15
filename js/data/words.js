@@ -1,10 +1,10 @@
 /**
- * 단어 데이터 (공무원 영어 수준 이상 / CEFR C1~C2 중심)
+ * 단어 데이터 — 수능 보카 A 섹션
  *
  * 필드 구성 — 있는 필드에 따라 퀴즈 모드가 자동으로 해금됩니다.
- *   word     : 영단어                                    (필수)
- *   pos      : 품사 v / n / adj / adv                     (필수)
- *   level    : CEFR 레벨                                  (필수)
+ *   word     : 영단어 또는 표현                            (필수)
+ *   pos      : 품사 v / n / adj / adv / phr(구·표현)        (필수)
+ *   level    : CEFR 레벨 B1 / B2 / C1 / C2                 (필수)
  *   meanings : 한국어 뜻 배열      → 모드 ①(4지선다) ⑤(짝맞추기) 해금
  *   syn      : 유의어 3개 이상     → 모드 ④(아닌 것 고르기) 해금
  *   ant      : 반의어              → 모드 ①의 오답 품질 향상, ④의 오답으로 사용
@@ -13,1240 +13,1588 @@
  *   col      : 연어 배열           → 모드 ⑯(연어 고르기) 해금
  *              { p: "{{}} 자리가 빈칸", a: 정답, pool: "verb"|"prep"|"auto", note: 해설 }
  *
- * 새 단어를 추가할 때 meanings만 채워도 즉시 ①⑤로 출제됩니다.
+ * 구·표현(pos:"phr")은 문장 빈칸에 넣기 어려워 ex를 두지 않습니다.
+ * 같은 품사끼리만 오답으로 뽑히므로 표현은 표현끼리 경쟁합니다.
  */
 window.VOCAB = [
-  /* ── A ───────────────────────────────────────────── */
-  { word:"abate", pos:"v", level:"C1", meanings:["줄어들다","완화되다"],
-    syn:["subside","diminish","wane"], ant:["intensify"],
-    ex:[{ s:"The storm finally began to {{}} after midnight.", f:"abate", ko:"폭풍은 자정이 지나서야 잦아들기 시작했다." }] },
+  /* ── a ─────────────────────────────────────── */
+  { word:"a host of", pos:"phr", level:"B2", meanings:["다수의","많은"],
+    syn:["many","numerous","plenty of"], ant:["a few"] },
 
-  { word:"abhor", pos:"v", level:"C1", meanings:["혐오하다","질색하다"],
-    syn:["detest","loathe","despise"], ant:["cherish"],
-    ex:[{ s:"She came to {{}} the hypocrisy of the committee.", f:"abhor", ko:"그녀는 위원회의 위선을 혐오하게 되었다." }] },
+  { word:"abandon", pos:"v", level:"B1", meanings:["버리다","포기하다"],
+    syn:["desert","forsake","relinquish"], ant:["keep"],
+    ex:[{ s:"The crew had to {{}} the sinking ship.", f:"abandon", ko:"승무원들은 가라앉는 배를 버려야 했다." }] },
 
-  { word:"abstain", pos:"v", level:"C1", meanings:["삼가다","기권하다"],
-    syn:["refrain","forgo","withhold"], ant:["indulge"],
-    ex:[{ s:"Three members chose to {{}} from the vote.", f:"abstain", ko:"세 명의 위원이 투표에서 기권하기로 했다." }],
-    col:[{ p:"abstain {{}} alcohol", a:"from", pool:"prep", note:"abstain from ~ : ~을 삼가다" }] },
+  { word:"abatement", pos:"n", level:"C1", meanings:["감소","완화"],
+    syn:["reduction","decrease","decline"], ant:["increase"],
+    ex:[{ s:"There has been no {{}} in the noise from the site.", f:"abatement", ko:"현장의 소음은 조금도 줄지 않았다." }] },
 
-  { word:"abstruse", pos:"adj", level:"C2", meanings:["난해한","심오한"],
-    syn:["obscure","arcane","esoteric"], ant:["lucid"],
-    ex:[{ s:"His lecture was so {{}} that few students followed it.", f:"abstruse", ko:"그의 강의는 너무 난해해서 이해한 학생이 거의 없었다." }] },
+  { word:"abbreviation", pos:"n", level:"B2", meanings:["축약형","약어"],
+    syn:["shortening","acronym","contraction"], ant:["expansion"],
+    ex:[{ s:"\"Dr.\" is an {{}} of \"Doctor.\"", f:"abbreviation", ko:"'Dr.'은 'Doctor'의 약어이다." }] },
 
-  { word:"accede", pos:"v", level:"C2", meanings:["동의하다","취임하다"],
+  { word:"abnormal", pos:"adj", level:"B2", meanings:["비정상적인","이상한"],
+    syn:["unusual","atypical","irregular"], ant:["normal"],
+    ex:[{ s:"The test revealed an {{}} level of iron in his blood.", f:"abnormal", ko:"검사에서 그의 혈액 내 철분이 비정상적인 수치로 나타났다." }] },
+
+  { word:"abolish", pos:"v", level:"B2", meanings:["폐지하다","철폐하다"],
+    syn:["eliminate","repeal","annul"], ant:["establish"],
+    ex:[{ s:"The country voted to {{}} the death penalty.", f:"abolish", ko:"그 나라는 사형제를 폐지하기로 표결했다." }] },
+
+  { word:"abolition", pos:"n", level:"C1", meanings:["폐지","철폐"],
+    syn:["elimination","repeal","cancellation"], ant:["establishment"],
+    ex:[{ s:"She devoted her life to the {{}} of slavery.", f:"abolition", ko:"그녀는 노예제 폐지에 일생을 바쳤다." }] },
+
+  { word:"abominate", pos:"v", level:"C2", meanings:["몹시 싫어하다","혐오하다"],
+    syn:["detest","loathe","abhor"], ant:["adore"],
+    ex:[{ s:"He came to {{}} every form of cruelty.", f:"abominate", ko:"그는 모든 형태의 잔혹함을 몹시 싫어하게 되었다." }] },
+
+  { word:"aboriginal", pos:"adj", level:"C1", meanings:["원주민의","토착의"],
+    syn:["indigenous","native","original"], ant:["foreign"],
+    ex:[{ s:"The museum preserves {{}} art from the region.", f:"aboriginal", ko:"그 박물관은 그 지역의 토착 미술을 보존한다." }] },
+
+  { word:"abortion", pos:"n", level:"B2", meanings:["낙태","유산"],
+    syn:["termination","miscarriage","ending"], ant:["birth"],
+    ex:[{ s:"The law on {{}} remains highly controversial.", f:"abortion", ko:"낙태에 관한 법은 여전히 대단히 논쟁적이다." }] },
+
+  { word:"abound", pos:"v", level:"C1", meanings:["풍부하다","많이 있다"],
+    syn:["teem","proliferate","swarm"], ant:["lack"],
+    ex:[{ s:"Rumors {{}} whenever the company stays silent.", f:"abound", ko:"회사가 침묵할 때마다 소문이 무성하다." }] },
+
+  { word:"above all", pos:"phr", level:"B1", meanings:["무엇보다도","특히"],
+    syn:["especially","primarily","most importantly"] },
+
+  { word:"abrupt", pos:"adj", level:"B2", meanings:["갑작스러운","뜻밖의"],
+    syn:["sudden","unexpected","hasty"], ant:["gradual"],
+    ex:[{ s:"The meeting came to an {{}} end.", f:"abrupt", ko:"회의는 갑작스럽게 끝났다." }] },
+
+  { word:"abruptly", pos:"adv", level:"B2", meanings:["갑자기","불쑥"],
+    syn:["suddenly","unexpectedly","sharply"], ant:["gradually"],
+    ex:[{ s:"The music stopped {{}} in the middle of the song.", f:"abruptly", ko:"음악이 노래 중간에 갑자기 멈췄다." }] },
+
+  { word:"absent", pos:"adj", level:"B1", meanings:["결석한","부재한"],
+    syn:["away","missing","gone"], ant:["present"],
+    ex:[{ s:"Three students were {{}} from class today.", f:"absent", ko:"오늘 세 명의 학생이 수업에 결석했다." }],
+    col:[{ p:"absent {{}} class", a:"from", pool:"prep", note:"absent from ~ : ~에 결석한" }] },
+
+  { word:"absentee", pos:"n", level:"C1", meanings:["결석자","부재자"],
+    syn:["truant","no-show","nonattendee"], ant:["attendee"],
+    ex:[{ s:"The teacher recorded the name of each {{}}.", f:"absentee", ko:"교사는 결석자 각각의 이름을 기록했다." }] },
+
+  { word:"absent-minded", pos:"adj", level:"C1", meanings:["건망증이 심한","넋이 나간"],
+    syn:["forgetful","inattentive","distracted"], ant:["attentive"],
+    ex:[{ s:"My {{}} uncle left his keys in the fridge.", f:"absent-minded", ko:"건망증이 심한 삼촌은 열쇠를 냉장고에 두었다." }] },
+
+  { word:"absolute", pos:"adj", level:"B2", meanings:["완전한","절대적인"],
+    syn:["complete","total","utter"], ant:["relative"],
+    ex:[{ s:"The king once held {{}} power over his subjects.", f:"absolute", ko:"그 왕은 한때 백성에 대해 절대적인 권력을 쥐고 있었다." }] },
+
+  { word:"absolutely", pos:"adv", level:"B2", meanings:["절대적으로","전적으로"],
+    syn:["completely","totally","utterly"], ant:["partially"],
+    ex:[{ s:"You are {{}} right about the deadline.", f:"absolutely", ko:"마감일에 대해 네가 전적으로 옳다." }] },
+
+  { word:"absorb", pos:"v", level:"B1", meanings:["흡수하다","받아들이다"],
+    syn:["soak up","take in","assimilate"], ant:["emit"],
+    ex:[{ s:"Plants {{}} carbon dioxide from the air.", f:"absorb", ko:"식물은 공기에서 이산화탄소를 흡수한다." }] },
+
+  { word:"absorbed", pos:"adj", level:"B2", meanings:["열중한","몰두한"],
+    syn:["engrossed","immersed","preoccupied"], ant:["distracted"],
+    ex:[{ s:"She was so {{}} in her book that she missed her stop.", f:"absorbed", ko:"그녀는 책에 너무 몰두해서 내릴 정류장을 놓쳤다." }],
+    col:[{ p:"absorbed {{}} her work", a:"in", pool:"prep", note:"be absorbed in ~ : ~에 몰두하다" }] },
+
+  { word:"abstain from ~ing", pos:"phr", level:"C1", meanings:["~을 삼가다","~을 그만두다"],
+    syn:["refrain from","avoid","give up"], ant:["indulge in"] },
+
+  { word:"abstract", pos:"adj", level:"B2", meanings:["추상적인","관념적인"],
+    syn:["theoretical","conceptual","intangible"], ant:["concrete"],
+    ex:[{ s:"Children struggle with {{}} ideas like justice.", f:"abstract", ko:"아이들은 정의처럼 추상적인 개념을 어려워한다." }] },
+
+  { word:"absurd", pos:"adj", level:"B2", meanings:["불합리한","어리석은"],
+    syn:["ridiculous","ludicrous","preposterous"], ant:["sensible"],
+    ex:[{ s:"It seems {{}} to blame the weather for the loss.", f:"absurd", ko:"패배를 날씨 탓으로 돌리는 것은 어리석어 보인다." }] },
+
+  { word:"abundance", pos:"n", level:"B2", meanings:["풍부","풍요"],
+    syn:["plenty","profusion","surplus"], ant:["scarcity"],
+    ex:[{ s:"The valley is known for an {{}} of wildflowers.", f:"abundance", ko:"그 계곡은 야생화가 풍부한 것으로 유명하다." }],
+    col:[{ p:"an abundance {{}} evidence", a:"of", pool:"prep", note:"an abundance of ~ : 풍부한 ~" }] },
+
+  { word:"abundant", pos:"adj", level:"B2", meanings:["풍부한","많은"],
+    syn:["plentiful","ample","copious"], ant:["scarce"],
+    ex:[{ s:"Rainfall is {{}} in this region all year.", f:"abundant", ko:"이 지역은 일 년 내내 강우가 풍부하다." }] },
+
+  { word:"abuse", pos:"n", level:"B2", meanings:["학대","남용"],
+    syn:["mistreatment","misuse","maltreatment"], ant:["care"],
+    ex:[{ s:"The report exposed the {{}} of public funds.", f:"abuse", ko:"그 보고서는 공적 자금의 남용을 폭로했다." }] },
+
+  { word:"accede", pos:"v", level:"C2", meanings:["동의하다","응하다"],
     syn:["consent","assent","agree"], ant:["refuse"],
-    col:[{ p:"accede {{}} the request", a:"to", pool:"prep", note:"accede to ~ : ~에 응하다" }] },
+    col:[{ p:"accede {{}} their demands", a:"to", pool:"prep", note:"accede to ~ : ~에 응하다" }] },
 
-  { word:"acclaim", pos:"n", level:"C1", meanings:["찬사","격찬"],
+  { word:"accelerate", pos:"v", level:"B2", meanings:["가속화하다","빨라지다"],
+    syn:["speed up","hasten","quicken"], ant:["decelerate"],
+    ex:[{ s:"Warm water can {{}} the melting of the ice.", f:"accelerate", ko:"따뜻한 물은 얼음이 녹는 것을 가속화할 수 있다." }] },
+
+  { word:"accentuate", pos:"v", level:"C1", meanings:["강조하다","두드러지게 하다"],
+    syn:["emphasize","highlight","underline"], ant:["downplay"],
+    ex:[{ s:"The lighting was chosen to {{}} the sculpture's shape.", f:"accentuate", ko:"조명은 조각의 형태를 두드러지게 하도록 선택되었다." }] },
+
+  { word:"accept", pos:"v", level:"B1", meanings:["받아들이다","수락하다"],
+    syn:["receive","take","agree to"], ant:["reject"],
+    ex:[{ s:"She decided to {{}} the offer from the university.", f:"accept", ko:"그녀는 그 대학의 제안을 받아들이기로 했다." }] },
+
+  { word:"acceptance", pos:"n", level:"B2", meanings:["수락","수용"],
+    syn:["approval","agreement","consent"], ant:["rejection"],
+    ex:[{ s:"His {{}} of the award surprised everyone.", f:"acceptance", ko:"그가 그 상을 수락한 것은 모두를 놀라게 했다." }] },
+
+  { word:"access", pos:"n", level:"B1", meanings:["접근","이용"],
+    syn:["entry","admission","entrance"], ant:["exclusion"],
+    ex:[{ s:"Students have free {{}} to the online library.", f:"access", ko:"학생들은 온라인 도서관을 무료로 이용할 수 있다." }],
+    col:[{ p:"access {{}} clean water", a:"to", pool:"prep", note:"access to ~ : ~에 대한 접근" }] },
+
+  { word:"accessible", pos:"adj", level:"B2", meanings:["접근할 수 있는","이용 가능한"],
+    syn:["reachable","available","obtainable"], ant:["inaccessible"],
+    ex:[{ s:"The trail is easily {{}} by bus.", f:"accessible", ko:"그 산길은 버스로 쉽게 접근할 수 있다." }] },
+
+  { word:"accidental", pos:"adj", level:"B2", meanings:["우연한","고의가 아닌"],
+    syn:["unintentional","inadvertent","chance"], ant:["deliberate"],
+    ex:[{ s:"The discovery of penicillin was largely {{}}.", f:"accidental", ko:"페니실린의 발견은 대체로 우연이었다." }] },
+
+
+  { word:"acclaim", pos:"n", level:"C1", meanings:["환호","찬사"],
     syn:["praise","applause","commendation"], ant:["criticism"],
-    ex:[{ s:"The novel won critical {{}} on publication.", f:"acclaim", ko:"그 소설은 출간되자 비평계의 찬사를 받았다." }] },
+    ex:[{ s:"Her first novel won critical {{}}.", f:"acclaim", ko:"그녀의 첫 소설은 비평계의 찬사를 받았다." }],
+    col:[{ p:"{{}} critical acclaim", a:"win", opts:["win","beat","score","reach"], note:"win acclaim : 찬사를 받다" }] },
 
-  { word:"acquiesce", pos:"v", level:"C2", meanings:["묵묵히 따르다","마지못해 동의하다"],
-    syn:["comply","consent","submit"], ant:["resist"],
-    col:[{ p:"acquiesce {{}} the decision", a:"in", pool:"prep", note:"acquiesce in ~ : ~을 묵묵히 받아들이다" }] },
+  { word:"acclimate", pos:"v", level:"C1", meanings:["적응하다","순응시키다"],
+    syn:["adapt","adjust","acclimatize"], ant:["resist"],
+    ex:[{ s:"Climbers need a week to {{}} to the thin air.", f:"acclimate", ko:"등반가들은 희박한 공기에 적응하는 데 일주일이 필요하다." }] },
 
-  { word:"acrimonious", pos:"adj", level:"C2", meanings:["험악한","독설의"],
-    syn:["bitter","caustic","rancorous"], ant:["amicable"],
-    ex:[{ s:"The negotiations ended in an {{}} dispute.", f:"acrimonious", ko:"협상은 험악한 논쟁으로 끝났다." }] },
+  { word:"accommodate", pos:"v", level:"B2", meanings:["수용하다","숙박시키다"],
+    syn:["house","lodge","hold"], ant:["exclude"],
+    ex:[{ s:"The new hall can {{}} up to 500 guests.", f:"accommodate", ko:"새 강당은 최대 500명의 손님을 수용할 수 있다." }] },
 
-  { word:"adamant", pos:"adj", level:"C1", meanings:["단호한","요지부동의"],
-    syn:["resolute","unyielding","obdurate"], ant:["flexible"],
-    ex:[{ s:"He was {{}} that no exceptions would be made.", f:"adamant", ko:"그는 어떤 예외도 없다고 단호했다." }] },
+  { word:"accommodation", pos:"n", level:"B2", meanings:["숙박 시설","편의"],
+    syn:["lodging","housing","quarters"],
+    ex:[{ s:"The fee includes meals and {{}}.", f:"accommodation", ko:"그 요금에는 식사와 숙박이 포함된다." }] },
+
+  { word:"accompany", pos:"v", level:"B2", meanings:["동행하다","동반되다"],
+    syn:["escort","attend","go with"], ant:["leave"],
+    ex:[{ s:"Heavy rain will {{}} the strong winds tonight.", f:"accompany", ko:"오늘 밤 강한 바람에 폭우가 동반될 것이다." }] },
+
+  { word:"accomplish", pos:"v", level:"B2", meanings:["성취하다","이루다"],
+    syn:["achieve","attain","fulfill"], ant:["fail"],
+    ex:[{ s:"The team managed to {{}} the goal ahead of schedule.", f:"accomplish", ko:"그 팀은 예정보다 앞서 목표를 이루어 냈다." }] },
+
+  { word:"account", pos:"n", level:"B1", meanings:["계좌","계정"],
+    syn:["record","ledger","profile"],
+    ex:[{ s:"He opened a savings {{}} at the local bank.", f:"account", ko:"그는 동네 은행에 저축 계좌를 열었다." }] },
+
+  { word:"account for", pos:"phr", level:"B2", meanings:["설명하다","차지하다"],
+    syn:["explain","justify","make up"] },
+
+  { word:"accountant", pos:"n", level:"B2", meanings:["회계사"],
+    syn:["auditor","bookkeeper","comptroller"],
+    ex:[{ s:"An {{}} reviewed the company's yearly records.", f:"accountant", ko:"회계사가 그 회사의 연간 기록을 검토했다." }] },
+
+  { word:"accumulate", pos:"v", level:"B2", meanings:["축적하다","모으다"],
+    syn:["amass","gather","stockpile"], ant:["disperse"],
+    ex:[{ s:"Dust began to {{}} on the unused shelves.", f:"accumulate", ko:"쓰지 않는 선반에 먼지가 쌓이기 시작했다." }] },
+
+  { word:"accumulation", pos:"n", level:"C1", meanings:["축적","누적"],
+    syn:["buildup","collection","hoard"], ant:["dispersal"],
+    ex:[{ s:"The {{}} of snow closed the mountain road.", f:"accumulation", ko:"눈이 쌓여 산길이 폐쇄되었다." }] },
+
+  { word:"accurate", pos:"adj", level:"B1", meanings:["정확한","틀림없는"],
+    syn:["precise","exact","correct"], ant:["inaccurate"],
+    ex:[{ s:"We need an {{}} count before we order.", f:"accurate", ko:"주문하기 전에 정확한 수량이 필요하다." }] },
+
+  { word:"achieve", pos:"v", level:"B1", meanings:["성취하다","달성하다"],
+    syn:["attain","accomplish","reach"], ant:["fail"],
+    ex:[{ s:"She worked hard to {{}} her personal best.", f:"achieve", ko:"그녀는 개인 최고 기록을 달성하려고 열심히 노력했다." }] },
+
+  { word:"acid", pos:"n", level:"B2", meanings:["산","산성 물질"],
+    syn:["corrosive","solvent","etchant"], ant:["base"],
+    ex:[{ s:"Rainwater mixed with pollution becomes a weak {{}}.", f:"acid", ko:"오염 물질과 섞인 빗물은 약한 산이 된다." }] },
+
+  { word:"acknowledge", pos:"v", level:"B2", meanings:["인정하다","승인하다"],
+    syn:["admit","concede","recognize"], ant:["deny"],
+    ex:[{ s:"The minister refused to {{}} any mistake.", f:"acknowledge", ko:"그 장관은 어떤 잘못도 인정하기를 거부했다." }] },
+
+  { word:"acoustic", pos:"adj", level:"C1", meanings:["음향의","청각의"],
+    syn:["sonic","auditory","aural"],
+    ex:[{ s:"The hall was praised for its {{}} design.", f:"acoustic", ko:"그 강당은 음향 설계로 호평받았다." }] },
+
+  { word:"acquaintance", pos:"n", level:"B2", meanings:["아는 사람","지인"],
+    syn:["associate","contact","colleague"], ant:["stranger"],
+    ex:[{ s:"He is an {{}} rather than a close friend.", f:"acquaintance", ko:"그는 가까운 친구라기보다 아는 사람이다." }] },
+
+  { word:"acquire", pos:"v", level:"B2", meanings:["얻다","습득하다"],
+    syn:["obtain","gain","procure"], ant:["lose"],
+    ex:[{ s:"Children {{}} language faster than adults do.", f:"acquire", ko:"아이들은 성인보다 언어를 더 빨리 습득한다." }] },
+
+  { word:"acquisition", pos:"n", level:"C1", meanings:["습득","취득"],
+    syn:["attainment","procurement","purchase"], ant:["loss"],
+    ex:[{ s:"Language {{}} begins long before school.", f:"acquisition", ko:"언어 습득은 학교에 들어가기 훨씬 전에 시작된다." }] },
+
+  { word:"acquit", pos:"v", level:"C2", meanings:["무죄를 선고하다","혐의를 벗기다"],
+    syn:["absolve","exonerate","clear"], ant:["convict"],
+    ex:[{ s:"The jury voted to {{}} the defendant.", f:"acquit", ko:"배심원단은 피고에게 무죄를 선고하기로 표결했다." }] },
+
+  { word:"acreage", pos:"n", level:"C1", meanings:["토지 면적","경작지"],
+    syn:["area","expanse","land"],
+    ex:[{ s:"The farm doubled its {{}} last spring.", f:"acreage", ko:"그 농장은 지난 봄에 경작 면적을 두 배로 늘렸다." }] },
+
+  { word:"act", pos:"n", level:"B2", meanings:["법률","법령"],
+    syn:["statute","law","legislation"],
+    ex:[{ s:"Congress passed the Clean Air {{}} that year.", f:"Act", ko:"의회는 그해 대기 정화법을 통과시켰다." }] },
+
+  { word:"act on", pos:"phr", level:"B2", meanings:["~에 따라 행동하다","조치하다"],
+    syn:["follow","implement","carry out"], ant:["ignore"] },
+
+  { word:"activate", pos:"v", level:"B2", meanings:["작동시키다","활성화시키다"],
+    syn:["trigger","start","switch on"], ant:["deactivate"],
+    ex:[{ s:"Smoke will {{}} the alarm within seconds.", f:"activate", ko:"연기는 몇 초 안에 경보를 작동시킬 것이다." }] },
+
+  { word:"active", pos:"adj", level:"B1", meanings:["활동적인","적극적인"],
+    syn:["energetic","lively","dynamic"], ant:["passive"],
+    ex:[{ s:"My grandmother stays {{}} by gardening daily.", f:"active", ko:"할머니는 매일 정원을 돌보며 활동적으로 지낸다." }] },
+
+  { word:"actively", pos:"adv", level:"B2", meanings:["적극적으로","활발히"],
+    syn:["energetically","vigorously","eagerly"], ant:["passively"],
+    ex:[{ s:"The school {{}} encourages students to volunteer.", f:"actively", ko:"그 학교는 학생들이 자원봉사하도록 적극적으로 장려한다." }] },
+
+  { word:"actuality", pos:"n", level:"C1", meanings:["현실","실재"],
+    syn:["reality","fact","truth"], ant:["fantasy"],
+    ex:[{ s:"In {{}}, the process takes far longer than promised.", f:"actuality", ko:"실제로 그 절차는 약속된 것보다 훨씬 오래 걸린다." }] },
+
+  { word:"acupuncture", pos:"n", level:"C1", meanings:["침술","침 요법"],
+    syn:["needling","acupressure","therapy"],
+    ex:[{ s:"She tried {{}} to relieve her back pain.", f:"acupuncture", ko:"그녀는 허리 통증을 덜기 위해 침술을 시도했다." }] },
+
+  { word:"acute", pos:"adj", level:"C1", meanings:["심한","격렬한"],
+    syn:["severe","intense","sharp"], ant:["mild"],
+    ex:[{ s:"The region faces an {{}} shortage of drinking water.", f:"acute", ko:"그 지역은 심각한 식수 부족에 직면해 있다." }] },
+
+  { word:"adapt", pos:"v", level:"B2", meanings:["적응시키다","각색하다"],
+    syn:["adjust","modify","alter"], ant:["preserve"],
+    ex:[{ s:"Animals must {{}} quickly to a changing climate.", f:"adapt", ko:"동물들은 변하는 기후에 빠르게 적응해야 한다." }] },
+
+  { word:"adaptability", pos:"n", level:"C1", meanings:["적응성","융통성"],
+    syn:["flexibility","versatility","resilience"], ant:["rigidity"],
+    ex:[{ s:"Employers value {{}} more than experience alone.", f:"adaptability", ko:"고용주들은 경력만보다 적응력을 더 중시한다." }] },
+
+  { word:"adaptation", pos:"n", level:"B2", meanings:["각색","적응"],
+    syn:["adjustment","modification","version"],
+    ex:[{ s:"The film is a loose {{}} of a classic novel.", f:"adaptation", ko:"그 영화는 고전 소설을 자유롭게 각색한 것이다." }] },
+
+  { word:"adaptive", pos:"adj", level:"C1", meanings:["적응적인","순응성의"],
+    syn:["flexible","adjustable","responsive"], ant:["rigid"],
+    ex:[{ s:"Thick fur is an {{}} trait in cold climates.", f:"adaptive", ko:"두꺼운 털은 추운 기후에서 적응적인 형질이다." }] },
+
+  { word:"add up to", pos:"phr", level:"B2", meanings:["합계 ~이 되다","~을 의미하다"],
+    syn:["total","amount to","come to"] },
+
+  { word:"addict", pos:"n", level:"B2", meanings:["중독자"],
+    syn:["abuser","user","junkie"],
+    ex:[{ s:"The clinic treats every {{}} without charge.", f:"addict", ko:"그 병원은 모든 중독자를 무료로 치료한다." }] },
+
+  { word:"additional", pos:"adj", level:"B1", meanings:["추가의","부가적인"],
+    syn:["extra","supplementary","further"],
+    ex:[{ s:"There is an {{}} charge for late delivery.", f:"additional", ko:"늦은 배송에는 추가 요금이 있다." }] },
+
+
+  { word:"additionally", pos:"adv", level:"B2", meanings:["게다가","추가적으로"],
+    syn:["moreover","furthermore","besides"],
+    ex:[{ s:"{{}}, the report ignores rural households.", f:"Additionally", ko:"게다가 그 보고서는 농촌 가구를 무시한다." }] },
+
+  { word:"additive", pos:"n", level:"C1", meanings:["첨가물","첨가제"],
+    syn:["preservative","supplement","agent"],
+    ex:[{ s:"The label lists every {{}} used in the sauce.", f:"additive", ko:"라벨에는 그 소스에 쓰인 모든 첨가물이 적혀 있다." }] },
+
+  { word:"address", pos:"v", level:"B2", meanings:["다루다","고심하다"],
+    syn:["tackle","handle","confront"], ant:["ignore"],
+    ex:[{ s:"The council must {{}} the housing shortage soon.", f:"address", ko:"의회는 주택 부족 문제를 곧 다루어야 한다." }] },
+
+  { word:"adept", pos:"adj", level:"C1", meanings:["능숙한","숙련된"],
+    syn:["skilled","proficient","expert"], ant:["clumsy"],
+    ex:[{ s:"She is {{}} at solving problems under pressure.", f:"adept", ko:"그녀는 압박 속에서 문제를 해결하는 데 능숙하다." }] },
+
+  { word:"adequate", pos:"adj", level:"B2", meanings:["적합한","충분한"],
+    syn:["sufficient","satisfactory","ample"], ant:["insufficient"],
+    ex:[{ s:"The shelter offers {{}} protection from the cold.", f:"adequate", ko:"그 대피소는 추위로부터 충분한 보호를 제공한다." }] },
 
   { word:"adhere", pos:"v", level:"C1", meanings:["고수하다","들러붙다"],
     syn:["comply","conform","abide"], ant:["deviate"],
-    col:[{ p:"adhere {{}} the regulations", a:"to", pool:"prep", note:"adhere to ~ : ~을 준수하다" }] },
+    col:[{ p:"adhere {{}} the rules", a:"to", pool:"prep", note:"adhere to ~ : ~을 준수하다" }] },
 
-  { word:"admonish", pos:"v", level:"C1", meanings:["훈계하다","꾸짖다"],
-    syn:["reprimand","rebuke","chide"], ant:["commend"],
-    ex:[{ s:"The judge {{}} the lawyer for his conduct.", f:"admonished", ko:"판사는 변호사의 행동을 질책했다." }] },
+  { word:"adjacent", pos:"adj", level:"C1", meanings:["인접한","가까운"],
+    syn:["neighboring","adjoining","nearby"], ant:["distant"],
+    ex:[{ s:"Our office is {{}} to the train station.", f:"adjacent", ko:"우리 사무실은 기차역에 인접해 있다." }],
+    col:[{ p:"adjacent {{}} the park", a:"to", pool:"prep", note:"adjacent to ~ : ~에 인접한" }] },
+
+  { word:"adjoin", pos:"v", level:"C1", meanings:["붙어 있다","인접하다"],
+    syn:["border","abut","touch"], ant:["separate"],
+    ex:[{ s:"The garden {{}} an old stone wall.", f:"adjoins", ko:"그 정원은 오래된 돌담과 붙어 있다." }] },
+
+  { word:"adjust", pos:"v", level:"B1", meanings:["조절하다","적응하다"],
+    syn:["modify","adapt","regulate"],
+    ex:[{ s:"Please {{}} the seat before you start driving.", f:"adjust", ko:"운전을 시작하기 전에 좌석을 조절하세요." }] },
+
+  { word:"adjust to", pos:"phr", level:"B2", meanings:["~에 적응하다"],
+    syn:["get used to","adapt to","acclimate to"] },
+
+  { word:"adjustment", pos:"n", level:"B2", meanings:["조정","적응"],
+    syn:["modification","alteration","tweak"],
+    ex:[{ s:"A small {{}} to the schedule solved the conflict.", f:"adjustment", ko:"일정을 약간 조정하니 충돌이 해결되었다." }] },
+
+  { word:"administer", pos:"v", level:"C1", meanings:["관리하다","집행하다"],
+    syn:["manage","oversee","direct"], ant:["neglect"],
+    ex:[{ s:"A trustee will {{}} the fund until 2030.", f:"administer", ko:"수탁자가 2030년까지 그 기금을 관리할 것이다." }] },
+
+  { word:"administration", pos:"n", level:"B2", meanings:["행정","경영"],
+    syn:["management","governance","direction"],
+    ex:[{ s:"He works in the {{}} of a public hospital.", f:"administration", ko:"그는 공공 병원의 행정 부서에서 일한다." }] },
+
+  { word:"administrative", pos:"adj", level:"B2", meanings:["관리의","행정의"],
+    syn:["managerial","executive","organizational"],
+    ex:[{ s:"Most of her day is spent on {{}} tasks.", f:"administrative", ko:"그녀의 하루 대부분은 행정 업무에 쓰인다." }] },
+
+  { word:"admirable", pos:"adj", level:"B2", meanings:["감탄스러운","훌륭한"],
+    syn:["praiseworthy","commendable","laudable"], ant:["deplorable"],
+    ex:[{ s:"His honesty under pressure was {{}}.", f:"admirable", ko:"압박 속에서도 정직했던 그의 모습은 훌륭했다." }] },
+
+  { word:"admiral", pos:"n", level:"C1", meanings:["해군 대장","제독"],
+    syn:["commander","flag officer","naval chief"],
+    ex:[{ s:"The {{}} ordered the fleet to withdraw.", f:"admiral", ko:"제독은 함대에 철수를 명령했다." }] },
+
+  { word:"admire", pos:"v", level:"B1", meanings:["존경하다","감탄하다"],
+    syn:["respect","esteem","look up to"], ant:["despise"],
+    ex:[{ s:"I {{}} her patience with difficult customers.", f:"admire", ko:"나는 까다로운 손님을 대하는 그녀의 인내심에 감탄한다." }] },
+
+  { word:"admission", pos:"n", level:"B2", meanings:["입학 허가","입장"],
+    syn:["entry","entrance","access"], ant:["refusal"],
+    ex:[{ s:"{{}} to the museum is free on Sundays.", f:"Admission", ko:"일요일에는 박물관 입장이 무료이다." }] },
+
+  { word:"admit", pos:"v", level:"B1", meanings:["인정하다","시인하다"],
+    syn:["confess","concede","acknowledge"], ant:["deny"],
+    ex:[{ s:"He would not {{}} that he had been wrong.", f:"admit", ko:"그는 자신이 틀렸다는 것을 인정하려 하지 않았다." }] },
+
+  { word:"adolescence", pos:"n", level:"B2", meanings:["사춘기","청소년기"],
+    syn:["youth","teens","puberty"], ant:["adulthood"],
+    ex:[{ s:"Sleep patterns change greatly during {{}}.", f:"adolescence", ko:"수면 양상은 청소년기에 크게 변한다." }] },
+
+  { word:"adopt", pos:"v", level:"B2", meanings:["채택하다","입양하다"],
+    syn:["embrace","take up","assume"], ant:["reject"],
+    ex:[{ s:"The city plans to {{}} a stricter recycling rule.", f:"adopt", ko:"그 도시는 더 엄격한 재활용 규칙을 채택할 계획이다." }] },
+
+  { word:"adoption", pos:"n", level:"B2", meanings:["채택","입양"],
+    syn:["acceptance","embrace","selection"], ant:["rejection"],
+    ex:[{ s:"The {{}} of electric buses cut city emissions.", f:"adoption", ko:"전기 버스의 채택은 도시 배출량을 줄였다." }] },
+
+  { word:"adorable", pos:"adj", level:"B2", meanings:["귀여운","사랑스러운"],
+    syn:["charming","lovable","delightful"], ant:["repulsive"],
+    ex:[{ s:"The puppies were absolutely {{}}.", f:"adorable", ko:"그 강아지들은 정말 사랑스러웠다." }] },
+
+  { word:"adorn", pos:"v", level:"C1", meanings:["꾸미다","장식하다"],
+    syn:["decorate","embellish","ornament"], ant:["strip"],
+    ex:[{ s:"Fresh flowers {{}} every table in the hall.", f:"adorn", ko:"생화가 강당의 모든 탁자를 장식한다." }] },
+
+  { word:"advance", pos:"v", level:"B2", meanings:["전진하다","발전시키다"],
+    syn:["progress","proceed","further"], ant:["retreat"],
+    ex:[{ s:"New tools helped {{}} our understanding of the brain.", f:"advance", ko:"새로운 도구는 뇌에 대한 우리의 이해를 발전시키는 데 도움이 되었다." }] },
+
+  { word:"advent", pos:"n", level:"C1", meanings:["출현","도래"],
+    syn:["arrival","emergence","onset"], ant:["departure"],
+    ex:[{ s:"The {{}} of the smartphone changed daily life.", f:"advent", ko:"스마트폰의 출현은 일상을 바꿨다." }] },
+
+  { word:"adventure", pos:"n", level:"B1", meanings:["모험"],
+    syn:["exploit","escapade","quest"], ant:["routine"],
+    ex:[{ s:"Their trip across the desert became a real {{}}.", f:"adventure", ko:"사막을 횡단한 그들의 여행은 진짜 모험이 되었다." }] },
+
+  { word:"adversary", pos:"n", level:"C1", meanings:["상대방","적"],
+    syn:["opponent","rival","enemy"], ant:["ally"],
+    ex:[{ s:"She faced a tough {{}} in the final round.", f:"adversary", ko:"그녀는 마지막 라운드에서 강한 상대와 맞섰다." }] },
 
   { word:"adverse", pos:"adj", level:"B2", meanings:["불리한","부정적인"],
-    syn:["unfavorable","detrimental","hostile"], ant:["favorable"],
-    ex:[{ s:"The drug was withdrawn after {{}} reactions were reported.", f:"adverse", ko:"부작용이 보고된 후 그 약은 회수되었다." }],
-    col:[{ p:"{{}} effects", a:"adverse", pool:"auto", note:"adverse effects : 부작용" }] },
+    syn:["unfavorable","detrimental","harmful"], ant:["favorable"],
+    ex:[{ s:"The drug was withdrawn after {{}} effects appeared.", f:"adverse", ko:"부작용이 나타난 후 그 약은 회수되었다." }],
+    col:[{ p:"adverse {{}} health", a:"to", pool:"prep", note:"adverse to ~ : ~에 불리한" }] },
 
-  { word:"advocate", pos:"v", level:"B2", meanings:["옹호하다","지지하다"],
-    syn:["champion","endorse","promote"], ant:["oppose"],
-    ex:[{ s:"Economists {{}} raising interest rates gradually.", f:"advocate", ko:"경제학자들은 금리를 점진적으로 올리는 것을 지지한다." }] },
+  { word:"adversity", pos:"n", level:"C1", meanings:["역경","불운"],
+    syn:["hardship","misfortune","trouble"], ant:["prosperity"],
+    ex:[{ s:"He kept his humor even in great {{}}.", f:"adversity", ko:"그는 큰 역경 속에서도 유머를 잃지 않았다." }] },
 
-  { word:"affable", pos:"adj", level:"C1", meanings:["상냥한","친근한"],
-    syn:["genial","amiable","cordial"], ant:["aloof"],
-    ex:[{ s:"Despite his rank, the general was remarkably {{}}.", f:"affable", ko:"계급에도 불구하고 그 장군은 놀랄 만큼 상냥했다." }] },
+  { word:"advert", pos:"n", level:"B2", meanings:["광고"],
+    syn:["commercial","promotion","notice"],
+    ex:[{ s:"A short {{}} played before the video.", f:"advert", ko:"영상 앞에 짧은 광고가 재생되었다." }] },
 
-  { word:"affluent", pos:"adj", level:"C1", meanings:["부유한","풍족한"],
-    syn:["wealthy","prosperous","opulent"], ant:["destitute"],
+  { word:"advertise", pos:"v", level:"B1", meanings:["광고하다","선전하다"],
+    syn:["promote","publicize","market"], ant:["conceal"],
+    ex:[{ s:"They chose to {{}} the concert on the radio.", f:"advertise", ko:"그들은 라디오로 그 공연을 광고하기로 했다." }] },
+
+  { word:"advertisement", pos:"n", level:"B1", meanings:["광고","선전"],
+    syn:["commercial","promotion","notice"],
+    ex:[{ s:"The {{}} promised results in two weeks.", f:"advertisement", ko:"그 광고는 2주 안에 효과가 있다고 약속했다." }] },
+
+  { word:"advertising", pos:"n", level:"B2", meanings:["광고업","광고 활동"],
+    syn:["marketing","publicity","promotion"],
+    ex:[{ s:"She built a career in digital {{}}.", f:"advertising", ko:"그녀는 디지털 광고 분야에서 경력을 쌓았다." }] },
+
+  { word:"advise", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
+    syn:["counsel","recommend","suggest"],
+    ex:[{ s:"Doctors {{}} patients to walk every day.", f:"advise", ko:"의사들은 환자에게 매일 걷기를 권고한다." }] },
+
+  { word:"advisory", pos:"adj", level:"C1", meanings:["자문의","조언의"],
+    syn:["consultative","counseling","recommending"],
+    ex:[{ s:"He serves on an {{}} board for the ministry.", f:"advisory", ko:"그는 그 부처의 자문 위원회에서 일한다." }] },
+
+
+  { word:"advocate", pos:"v", level:"B2", meanings:["지지하다","옹호하다"],
+    syn:["support","champion","endorse"], ant:["oppose"],
+    ex:[{ s:"Many economists {{}} raising rates gradually.", f:"advocate", ko:"많은 경제학자가 금리를 점진적으로 올리는 것을 지지한다." }] },
+
+  { word:"aerial", pos:"adj", level:"C1", meanings:["공중의","항공의"],
+    syn:["airborne","overhead","elevated"], ant:["ground"],
+    ex:[{ s:"An {{}} photograph revealed the buried walls.", f:"aerial", ko:"항공 사진이 묻혀 있던 벽을 드러냈다." }] },
+
+  { word:"aerobic", pos:"adj", level:"C1", meanings:["유산소의"],
+    syn:["cardiovascular","cardio","endurance"], ant:["anaerobic"],
+    ex:[{ s:"Swimming is an excellent {{}} exercise.", f:"aerobic", ko:"수영은 훌륭한 유산소 운동이다." }] },
+
+  { word:"aesthetic", pos:"adj", level:"C1", meanings:["미적인","심미적인"],
+    syn:["artistic","tasteful","stylistic"],
+    ex:[{ s:"The bridge was praised on {{}} grounds alone.", f:"aesthetic", ko:"그 다리는 미적인 이유만으로 호평받았다." }] },
+
+  { word:"affect", pos:"v", level:"B1", meanings:["영향을 미치다","작용하다"],
+    syn:["influence","impact","shape"],
+    ex:[{ s:"Lack of sleep can seriously {{}} memory.", f:"affect", ko:"수면 부족은 기억력에 심각한 영향을 미칠 수 있다." }] },
+
+  { word:"affection", pos:"n", level:"B2", meanings:["애정","애착"],
+    syn:["fondness","warmth","tenderness"], ant:["dislike"],
+    ex:[{ s:"He speaks of his hometown with great {{}}.", f:"affection", ko:"그는 고향을 큰 애정을 담아 이야기한다." }] },
+
+  { word:"affectionate", pos:"adj", level:"B2", meanings:["다정한","애정 어린"],
+    syn:["loving","tender","warm"], ant:["cold"],
+    ex:[{ s:"She gave her son an {{}} hug at the gate.", f:"affectionate", ko:"그녀는 문 앞에서 아들을 다정하게 안아 주었다." }] },
+
+  { word:"affinity", pos:"n", level:"C1", meanings:["친밀감","관련성"],
+    syn:["rapport","kinship","similarity"], ant:["antipathy"],
+    ex:[{ s:"He felt an instant {{}} with the coastal village.", f:"affinity", ko:"그는 그 해안 마을에 즉각적인 친밀감을 느꼈다." }],
+    col:[{ p:"an affinity {{}} old maps", a:"for", pool:"prep", note:"an affinity for ~ : ~에 대한 애착" }] },
+
+  { word:"affirmative", pos:"adj", level:"C1", meanings:["긍정적인","동의하는"],
+    syn:["positive","approving","assenting"], ant:["negative"],
+    ex:[{ s:"The committee gave an {{}} reply within a day.", f:"affirmative", ko:"위원회는 하루 안에 긍정적인 답을 주었다." }] },
+
+  { word:"affix", pos:"v", level:"C1", meanings:["붙이다","첨부하다"],
+    syn:["attach","fasten","append"], ant:["detach"],
+    ex:[{ s:"Please {{}} a stamp to the top right corner.", f:"affix", ko:"우표를 오른쪽 위 모서리에 붙여 주세요." }] },
+
+  { word:"afflict", pos:"v", level:"C1", meanings:["괴롭히다","시달리게 하다"],
+    syn:["trouble","torment","plague"], ant:["comfort"],
+    ex:[{ s:"Drought continues to {{}} farmers in the south.", f:"afflict", ko:"가뭄이 남부 농민들을 계속 괴롭히고 있다." }] },
+
+  { word:"affluent", pos:"adj", level:"C1", meanings:["풍족한","부유한"],
+    syn:["wealthy","prosperous","well-off"], ant:["poor"],
     ex:[{ s:"The school serves a largely {{}} neighborhood.", f:"affluent", ko:"그 학교는 대체로 부유한 지역을 담당한다." }] },
 
-  { word:"alleviate", pos:"v", level:"C1", meanings:["완화하다","경감하다"],
-    syn:["mitigate","relieve","assuage"], ant:["aggravate"],
-    ex:[{ s:"The measures did little to {{}} rural poverty.", f:"alleviate", ko:"그 조치는 농촌 빈곤을 완화하는 데 거의 도움이 되지 않았다." }] },
+  { word:"afford", pos:"v", level:"B1", meanings:["~할 여유가 있다","감당하다"],
+    syn:["manage","bear","sustain"],
+    ex:[{ s:"We cannot {{}} to lose another week.", f:"afford", ko:"우리는 또 한 주를 잃을 여유가 없다." }] },
 
-  { word:"allude", pos:"v", level:"C2", meanings:["암시하다","언급하다"],
-    syn:["hint","imply","suggest"], ant:["specify"],
-    col:[{ p:"allude {{}} the scandal", a:"to", pool:"prep", note:"allude to ~ : ~을 에둘러 언급하다" }] },
+  { word:"affordable", pos:"adj", level:"B2", meanings:["값이 알맞은","감당할 수 있는"],
+    syn:["reasonable","inexpensive","economical"], ant:["costly"],
+    ex:[{ s:"The city needs more {{}} housing near transit.", f:"affordable", ko:"그 도시는 대중교통 근처에 더 많은 저렴한 주택이 필요하다." }] },
+
+  /* 원본의 "나중에, 그 뒤에"는 afterwards의 뜻이 잘못 들어간 것이라 바로잡았습니다 */
+  { word:"afterlife", pos:"n", level:"C1", meanings:["사후 세계","저승"],
+    syn:["hereafter","next world","eternity"],
+    ex:[{ s:"The tomb paintings show beliefs about the {{}}.", f:"afterlife", ko:"그 무덤 벽화는 사후 세계에 대한 믿음을 보여 준다." }] },
+
+  { word:"afterwards", pos:"adv", level:"B1", meanings:["나중에","그 뒤에"],
+    syn:["later","subsequently","then"], ant:["beforehand"],
+    ex:[{ s:"We ate first and walked home {{}}.", f:"afterwards", ko:"우리는 먼저 먹고 그 뒤에 걸어서 집에 갔다." }] },
+
+  { word:"agenda", pos:"n", level:"B2", meanings:["안건","의제"],
+    syn:["schedule","program","plan"],
+    ex:[{ s:"Climate policy topped the {{}} at the summit.", f:"agenda", ko:"정상회담에서 기후 정책이 의제의 첫 순위였다." }] },
+
+  { word:"agent", pos:"n", level:"B1", meanings:["대리인","중개인"],
+    syn:["representative","broker","intermediary"],
+    ex:[{ s:"Her {{}} negotiated the contract for her.", f:"agent", ko:"그녀의 대리인이 그녀를 위해 계약을 협상했다." }] },
+
+  { word:"aggravate", pos:"v", level:"C1", meanings:["악화시키다","심화시키다"],
+    syn:["worsen","exacerbate","intensify"], ant:["alleviate"],
+    ex:[{ s:"Running on the injury will only {{}} it.", f:"aggravate", ko:"부상을 안고 달리면 상태를 악화시킬 뿐이다." }] },
+
+  { word:"aggregate", pos:"adj", level:"C1", meanings:["총계의","종합한"],
+    syn:["combined","total","collective"], ant:["individual"],
+    ex:[{ s:"The {{}} score decided the championship.", f:"aggregate", ko:"합산 점수가 우승을 결정했다." }] },
+
+  { word:"aggregation", pos:"n", level:"C2", meanings:["집합","집단"],
+    syn:["collection","cluster","assemblage"], ant:["dispersal"],
+    ex:[{ s:"The study tracked the {{}} of birds at dusk.", f:"aggregation", ko:"그 연구는 해질 무렵 새들의 군집을 추적했다." }] },
+
+  { word:"aggression", pos:"n", level:"B2", meanings:["공격성","침략"],
+    syn:["hostility","belligerence","assault"], ant:["peace"],
+    ex:[{ s:"The film links crowded housing to rising {{}}.", f:"aggression", ko:"그 영화는 밀집 주거를 공격성 증가와 연결한다." }] },
+
+  { word:"aggressive", pos:"adj", level:"B2", meanings:["공격적인","적극적인"],
+    syn:["hostile","combative","forceful"], ant:["passive"],
+    ex:[{ s:"The company took an {{}} approach to expansion.", f:"aggressive", ko:"그 회사는 확장에 공격적인 방식을 취했다." }] },
+
+  /* 원본의 "화난"은 뜻이 부족해 보완했습니다 */
+  { word:"aggrieved", pos:"adj", level:"C2", meanings:["억울한","권리를 침해당한"],
+    syn:["wronged","resentful","offended"], ant:["satisfied"],
+    ex:[{ s:"The {{}} tenants filed a joint complaint.", f:"aggrieved", ko:"억울한 세입자들이 공동으로 진정을 제출했다." }] },
+
+  { word:"agile", pos:"adj", level:"C1", meanings:["민첩한","재빠른"],
+    syn:["nimble","quick","spry"], ant:["clumsy"],
+    ex:[{ s:"Goats are surprisingly {{}} on steep rock.", f:"agile", ko:"산양은 급경사 바위에서 놀랄 만큼 민첩하다." }] },
+
+  { word:"agility", pos:"n", level:"C1", meanings:["민첩성","명민함"],
+    syn:["nimbleness","dexterity","quickness"], ant:["clumsiness"],
+    ex:[{ s:"The drill tests speed as well as {{}}.", f:"agility", ko:"그 훈련은 속도뿐 아니라 민첩성도 시험한다." }] },
+
+  { word:"aging", pos:"n", level:"B2", meanings:["노화","나이 먹음"],
+    syn:["maturing","growing older","senescence"],
+    ex:[{ s:"Sunlight speeds up the {{}} of the skin.", f:"aging", ko:"햇빛은 피부의 노화를 빠르게 한다." }] },
+
+  { word:"agitate", pos:"v", level:"C1", meanings:["동요시키다","선동하다"],
+    syn:["disturb","upset","stir"], ant:["calm"],
+    ex:[{ s:"The rumor began to {{}} the whole village.", f:"agitate", ko:"그 소문이 마을 전체를 동요시키기 시작했다." }] },
+
+  { word:"agonize", pos:"v", level:"C1", meanings:["고민하다","고뇌하다"],
+    syn:["fret","brood","struggle"],
+    ex:[{ s:"She continued to {{}} over the decision for weeks.", f:"agonize", ko:"그녀는 몇 주 동안 그 결정을 두고 계속 고민했다." }] },
+
+  { word:"agonizing", pos:"adj", level:"C1", meanings:["고통스러운","괴로운"],
+    syn:["excruciating","painful","harrowing"], ant:["pleasant"],
+    ex:[{ s:"They faced an {{}} wait for the results.", f:"agonizing", ko:"그들은 결과를 기다리는 괴로운 시간을 보냈다." }] },
+
+  { word:"agony", pos:"n", level:"B2", meanings:["극도의 고통","괴로움"],
+    syn:["torment","anguish","suffering"], ant:["comfort"],
+    ex:[{ s:"He was in {{}} until the medicine took effect.", f:"agony", ko:"그는 약이 효과를 낼 때까지 극심한 고통에 시달렸다." }] },
+
+  { word:"agriculturalist", pos:"n", level:"C2", meanings:["농업 종사자","농업 전문가"],
+    syn:["farmer","agronomist","grower"],
+    ex:[{ s:"An {{}} advised the village on crop rotation.", f:"agriculturalist", ko:"한 농업 전문가가 마을에 윤작을 조언했다." }] },
+
+  { word:"agriculture", pos:"n", level:"B1", meanings:["농업"],
+    syn:["farming","cultivation","husbandry"],
+    ex:[{ s:"{{}} still employs most people in the region.", f:"Agriculture", ko:"농업은 여전히 그 지역 대부분의 사람을 고용한다." }] },
+
+  { word:"ahead of", pos:"phr", level:"B1", meanings:["~보다 앞에","~보다 빨리"],
+    syn:["before","in front of","prior to"], ant:["behind"] },
+
+  { word:"AI", pos:"n", level:"B2", meanings:["인공지능"],
+    ex:[{ s:"Hospitals now use {{}} to read medical scans.", f:"AI", ko:"병원들은 이제 의료 영상을 판독하는 데 인공지능을 사용한다." }] },
+
+  { word:"ailment", pos:"n", level:"C1", meanings:["질환","(가벼운) 병"],
+    syn:["illness","disorder","complaint"], ant:["health"],
+    ex:[{ s:"The clinic treats minor {{}} without appointments.", f:"ailments", ko:"그 병원은 예약 없이 가벼운 질환을 치료한다." }] },
+
+
+  { word:"aim", pos:"v", level:"B1", meanings:["겨누다","목표로 하다"],
+    syn:["target","intend","strive"],
+    ex:[{ s:"The program {{}} to cut waste by half.", f:"aims", ko:"그 사업은 폐기물을 절반으로 줄이는 것을 목표로 한다." }] },
+
+  { word:"airborne", pos:"adj", level:"C1", meanings:["공기로 전파되는","비행 중인"],
+    syn:["flying","aloft","in flight"], ant:["grounded"],
+    ex:[{ s:"The virus turned out to be {{}} rather than waterborne.", f:"airborne", ko:"그 바이러스는 수인성이 아니라 공기로 전파되는 것으로 드러났다." }] },
+
+  { word:"airtight", pos:"adj", level:"C1", meanings:["밀폐된","빈틈없는"],
+    syn:["sealed","impermeable","hermetic"], ant:["leaky"],
+    ex:[{ s:"Store the beans in an {{}} container.", f:"airtight", ko:"콩은 밀폐 용기에 보관하세요." }] },
+
+  { word:"aisle", pos:"n", level:"B2", meanings:["통로","복도"],
+    syn:["passage","corridor","walkway"],
+    ex:[{ s:"She prefers an {{}} seat on long flights.", f:"aisle", ko:"그녀는 장거리 비행에서 통로 쪽 좌석을 선호한다." }] },
+
+  { word:"alchemy", pos:"n", level:"C2", meanings:["연금술"],
+    ex:[{ s:"Medieval {{}} slowly gave way to chemistry.", f:"alchemy", ko:"중세의 연금술은 서서히 화학으로 대체되었다." }] },
+
+  { word:"alert", pos:"adj", level:"B2", meanings:["경계하는","방심하지 않는"],
+    syn:["watchful","vigilant","attentive"], ant:["careless"],
+    ex:[{ s:"Guards must stay {{}} throughout the night.", f:"alert", ko:"경비원들은 밤새 경계를 유지해야 한다." }] },
+
+  { word:"algebra", pos:"n", level:"B2", meanings:["대수학"],
+    ex:[{ s:"He finally understood {{}} in his second year.", f:"algebra", ko:"그는 2학년이 되어서야 대수학을 이해했다." }] },
+
+  { word:"alien", pos:"adj", level:"B2", meanings:["이질적인","생소한"],
+    syn:["foreign","unfamiliar","strange"], ant:["familiar"],
+    ex:[{ s:"The customs felt completely {{}} to the newcomers.", f:"alien", ko:"그 관습은 새로 온 사람들에게 완전히 생소하게 느껴졌다." }] },
+
+  { word:"alienate", pos:"v", level:"C1", meanings:["멀어지게 하다","소외시키다"],
+    syn:["estrange","isolate","distance"], ant:["unite"],
+    ex:[{ s:"His harsh tone began to {{}} his own supporters.", f:"alienate", ko:"그의 거친 어조는 자기 지지자들마저 멀어지게 만들기 시작했다." }] },
+
+  { word:"alienation", pos:"n", level:"C2", meanings:["소외","멀어짐"],
+    syn:["estrangement","isolation","detachment"], ant:["belonging"],
+    ex:[{ s:"The novel explores the {{}} of city workers.", f:"alienation", ko:"그 소설은 도시 노동자의 소외를 탐구한다." }] },
+
+  { word:"align", pos:"v", level:"C1", meanings:["일치시키다","가지런히 하다"],
+    syn:["line up","coordinate","match"], ant:["misalign"],
+    ex:[{ s:"We must {{}} the budget with our real goals.", f:"align", ko:"우리는 예산을 실제 목표와 일치시켜야 한다." }],
+    col:[{ p:"align {{}} our values", a:"with", pool:"prep", note:"align with ~ : ~와 일치시키다" }] },
+
+  { word:"all at once", pos:"phr", level:"B1", meanings:["갑자기","한꺼번에"],
+    syn:["suddenly","abruptly","all of a sudden"] },
+
+  { word:"all of a sudden", pos:"phr", level:"B1", meanings:["갑자기","불쑥"],
+    syn:["suddenly","abruptly","all at once"] },
+
+  { word:"allege", pos:"v", level:"C1", meanings:["주장하다","혐의를 제기하다"],
+    syn:["claim","assert","charge"], ant:["deny"],
+    ex:[{ s:"Reporters {{}} that the funds were misused.", f:"allege", ko:"기자들은 그 자금이 부당하게 쓰였다고 주장한다." }] },
+
+  { word:"alleged", pos:"adj", level:"C1", meanings:["(증거 없이) 주장된","혐의를 받는"],
+    syn:["supposed","claimed","reputed"], ant:["proven"],
+    ex:[{ s:"The {{}} theft occurred late at night.", f:"alleged", ko:"주장된 그 절도는 밤늦게 일어났다." }] },
+
+  { word:"alleviate", pos:"v", level:"C1", meanings:["완화하다","덜다"],
+    syn:["ease","relieve","mitigate"], ant:["aggravate"],
+    ex:[{ s:"The grant aims to {{}} rural poverty.", f:"alleviate", ko:"그 보조금은 농촌 빈곤을 완화하는 것을 목표로 한다." }] },
+
+  { word:"alliance", pos:"n", level:"B2", meanings:["동맹","연합"],
+    syn:["coalition","partnership","union"], ant:["rivalry"],
+    ex:[{ s:"The two parties formed a fragile {{}}.", f:"alliance", ko:"두 정당은 취약한 동맹을 결성했다." }] },
+
+  { word:"allocate", pos:"v", level:"B2", meanings:["배분하다","할당하다"],
+    syn:["assign","distribute","apportion"], ant:["withhold"],
+    ex:[{ s:"The city will {{}} more funds to public transit.", f:"allocate", ko:"그 도시는 대중교통에 더 많은 자금을 배분할 것이다." }] },
+
+  { word:"allot", pos:"v", level:"C1", meanings:["할당하다","배정하다"],
+    syn:["assign","allocate","apportion"], ant:["withhold"],
+    ex:[{ s:"Each speaker was {{}} ten minutes.", f:"allotted", ko:"각 발표자에게 10분이 배정되었다." }] },
+
+  { word:"allow", pos:"v", level:"B1", meanings:["허용하다","허락하다"],
+    syn:["permit","let","authorize"], ant:["forbid"],
+    ex:[{ s:"The library does not {{}} food in the reading room.", f:"allow", ko:"도서관은 열람실에서 음식을 허용하지 않는다." }] },
+
+  { word:"allowance", pos:"n", level:"B2", meanings:["수당","용돈"],
+    syn:["stipend","subsidy","pocket money"],
+    ex:[{ s:"His monthly {{}} barely covers transport.", f:"allowance", ko:"그의 월 수당은 교통비를 겨우 충당한다." }] },
+
+  { word:"allure", pos:"n", level:"C1", meanings:["매력","매혹"],
+    syn:["appeal","charm","attraction"], ant:["repulsion"],
+    ex:[{ s:"The {{}} of city life drew them from the farm.", f:"allure", ko:"도시 생활의 매력이 그들을 농장에서 이끌어 냈다." }] },
+
+  { word:"along with", pos:"phr", level:"B1", meanings:["~와 함께","~에 덧붙여"],
+    syn:["together with","as well as","in addition to"] },
 
   { word:"aloof", pos:"adj", level:"C1", meanings:["냉담한","거리를 두는"],
-    syn:["detached","distant","standoffish"], ant:["sociable"],
-    ex:[{ s:"He remained {{}} from office politics.", f:"aloof", ko:"그는 사내 정치와 거리를 두었다." }] },
+    syn:["distant","detached","standoffish"], ant:["sociable"],
+    ex:[{ s:"He remained {{}} from office gossip.", f:"aloof", ko:"그는 사내 험담과 거리를 두었다." }] },
+
+  { word:"altar", pos:"n", level:"C1", meanings:["제단"],
+    syn:["shrine","sanctuary","chancel"],
+    ex:[{ s:"Candles burned on the stone {{}} all night.", f:"altar", ko:"돌 제단 위에서 촛불이 밤새 타올랐다." }] },
+
+  { word:"alter", pos:"v", level:"B2", meanings:["바꾸다","변경하다"],
+    syn:["change","modify","amend"], ant:["preserve"],
+    ex:[{ s:"One small detail could {{}} the whole result.", f:"alter", ko:"작은 세부 하나가 전체 결과를 바꿀 수 있다." }] },
+
+  { word:"alternate", pos:"adj", level:"B2", meanings:["번갈아 하는","교대의"],
+    syn:["rotating","successive","every other"],
+    ex:[{ s:"Classes meet on {{}} Fridays this term.", f:"alternate", ko:"이번 학기 수업은 격주 금요일에 열린다." }] },
+
+  { word:"alternative", pos:"n", level:"B1", meanings:["대안","선택지"],
+    syn:["option","substitute","choice"],
+    ex:[{ s:"Solar power became a real {{}} to coal.", f:"alternative", ko:"태양광은 석탄의 진정한 대안이 되었다." }] },
+
+  { word:"alternatively", pos:"adv", level:"B2", meanings:["그 대신에","그렇지 않으면"],
+    syn:["instead","otherwise","conversely"],
+    ex:[{ s:"{{}}, you can submit the form online.", f:"Alternatively", ko:"그 대신에 온라인으로 서류를 제출할 수 있습니다." }] },
+
+  { word:"altitude", pos:"n", level:"B2", meanings:["고도","높이"],
+    syn:["elevation","height","level"], ant:["depth"],
+    ex:[{ s:"Breathing grows harder at high {{}}.", f:"altitude", ko:"고도가 높아지면 숨쉬기가 더 힘들어진다." }] },
+
+  { word:"altogether", pos:"adv", level:"B2", meanings:["완전히","전적으로"],
+    syn:["completely","entirely","wholly"], ant:["partly"],
+    ex:[{ s:"The plan was {{}} too expensive to approve.", f:"altogether", ko:"그 계획은 승인하기에 전적으로 너무 비쌌다." }] },
 
   { word:"altruistic", pos:"adj", level:"C1", meanings:["이타적인"],
-    syn:["selfless","benevolent","charitable"], ant:["selfish"],
+    syn:["selfless","unselfish","charitable"], ant:["selfish"],
     ex:[{ s:"Her motives were genuinely {{}}, not commercial.", f:"altruistic", ko:"그녀의 동기는 상업적이 아니라 진정으로 이타적이었다." }] },
 
-  { word:"ambiguous", pos:"adj", level:"B2", meanings:["애매한","모호한"],
-    syn:["equivocal","vague","unclear"], ant:["explicit"],
-    ex:[{ s:"The wording of the clause is deliberately {{}}.", f:"ambiguous", ko:"그 조항의 문구는 의도적으로 모호하다." }] },
 
-  { word:"ameliorate", pos:"v", level:"C2", meanings:["개선하다","향상시키다"],
-    syn:["improve","enhance","upgrade"], ant:["worsen"],
-    ex:[{ s:"Reforms were introduced to {{}} working conditions.", f:"ameliorate", ko:"근로 조건을 개선하기 위해 개혁이 도입되었다." }] },
+  { word:"amazing", pos:"adj", level:"B1", meanings:["놀라운","굉장한"],
+    syn:["astonishing","incredible","remarkable"], ant:["ordinary"],
+    ex:[{ s:"The view from the summit was {{}}.", f:"amazing", ko:"정상에서 본 경관은 굉장했다." }] },
 
-  { word:"amenable", pos:"adj", level:"C2", meanings:["순응하는","잘 받아들이는"],
-    syn:["receptive","agreeable","compliant"], ant:["obstinate"],
-    col:[{ p:"amenable {{}} change", a:"to", pool:"prep", note:"amenable to ~ : ~을 잘 받아들이는" }] },
+  { word:"ambassador", pos:"n", level:"B2", meanings:["대사","대표"],
+    syn:["envoy","diplomat","emissary"],
+    ex:[{ s:"The {{}} met the president on Monday.", f:"ambassador", ko:"그 대사는 월요일에 대통령을 만났다." }] },
 
-  { word:"anomaly", pos:"n", level:"C1", meanings:["이례","변칙"],
-    syn:["aberration","irregularity","deviation"], ant:["norm"],
-    ex:[{ s:"Scientists could not explain the statistical {{}}.", f:"anomaly", ko:"과학자들은 그 통계적 이상을 설명할 수 없었다." }] },
+  { word:"ambiguity", pos:"n", level:"C1", meanings:["애매모호함","중의성"],
+    syn:["vagueness","obscurity","uncertainty"], ant:["clarity"],
+    ex:[{ s:"The {{}} of the clause led to a lawsuit.", f:"ambiguity", ko:"그 조항의 모호함이 소송으로 이어졌다." }] },
+
+  { word:"ambiguous", pos:"adj", level:"B2", meanings:["애매한","확실치 않은"],
+    syn:["unclear","equivocal","vague"], ant:["explicit"],
+    ex:[{ s:"His answer was deliberately {{}}.", f:"ambiguous", ko:"그의 대답은 의도적으로 애매했다." }] },
+
+  { word:"ambitious", pos:"adj", level:"B2", meanings:["야심적인","의욕적인"],
+    syn:["aspiring","driven","enterprising"], ant:["unmotivated"],
+    ex:[{ s:"They set an {{}} target for next year.", f:"ambitious", ko:"그들은 내년에 대해 야심적인 목표를 세웠다." }] },
+
+  { word:"ambivalent", pos:"adj", level:"C2", meanings:["엇갈린 감정의","반신반의하는"],
+    syn:["conflicted","undecided","torn"], ant:["certain"],
+    ex:[{ s:"Voters remain {{}} about the merger.", f:"ambivalent", ko:"유권자들은 그 합병에 대해 엇갈린 감정을 지니고 있다." }] },
+
+  { word:"amend", pos:"v", level:"C1", meanings:["개정하다","수정하다"],
+    syn:["revise","modify","rectify"],
+    ex:[{ s:"Parliament voted to {{}} the tax law.", f:"amend", ko:"의회는 세법을 개정하기로 표결했다." }] },
+
+  { word:"amenity", pos:"n", level:"C1", meanings:["생활 편의 시설"],
+    syn:["facility","convenience","comfort"],
+    ex:[{ s:"The building's best {{}} is its rooftop garden.", f:"amenity", ko:"그 건물의 최고 편의 시설은 옥상 정원이다." }] },
+
+  { word:"amiable", pos:"adj", level:"C1", meanings:["상냥한","호감을 주는"],
+    syn:["friendly","genial","affable"], ant:["unfriendly"],
+    ex:[{ s:"Our new neighbor is remarkably {{}}.", f:"amiable", ko:"새 이웃은 놀랄 만큼 상냥하다." }] },
+
+  { word:"amicable", pos:"adj", level:"C1", meanings:["우호적인","원만한"],
+    syn:["friendly","cordial","amiable"], ant:["hostile"],
+    ex:[{ s:"The dispute ended in an {{}} settlement.", f:"amicable", ko:"그 분쟁은 원만한 합의로 끝났다." }] },
+
+  { word:"amnesia", pos:"n", level:"C1", meanings:["기억 상실증","건망증"],
+    syn:["memory loss","forgetfulness","blackout"],
+    ex:[{ s:"The patient suffered temporary {{}} after the fall.", f:"amnesia", ko:"그 환자는 넘어진 후 일시적인 기억 상실을 겪었다." }] },
+
+  { word:"amnesty", pos:"n", level:"C1", meanings:["사면","특사"],
+    syn:["pardon","reprieve","clemency"], ant:["punishment"],
+    ex:[{ s:"The government offered {{}} to political prisoners.", f:"amnesty", ko:"정부는 정치범들에게 사면을 제안했다." }] },
+
+  { word:"amount", pos:"n", level:"B1", meanings:["액수","양"],
+    syn:["quantity","sum","total"],
+    ex:[{ s:"A small {{}} of salt improves the flavor.", f:"amount", ko:"소량의 소금이 맛을 좋게 한다." }] },
+
+  { word:"amount to", pos:"phr", level:"B2", meanings:["(합계가) ~에 이르다","~에 해당하다"],
+    syn:["total","come to","add up to"] },
+
+  { word:"ample", pos:"adj", level:"C1", meanings:["충분한","풍부한"],
+    syn:["plentiful","sufficient","generous"], ant:["meager"],
+    ex:[{ s:"There is {{}} time to finish before dark.", f:"ample", ko:"어두워지기 전에 끝낼 충분한 시간이 있다." }] },
+
+  { word:"amplify", pos:"v", level:"C1", meanings:["증폭시키다","확대하다"],
+    syn:["magnify","boost","intensify"], ant:["reduce"],
+    ex:[{ s:"Social media can {{}} even a small rumor.", f:"amplify", ko:"소셜 미디어는 작은 소문조차 증폭시킬 수 있다." }] },
+
+  { word:"amusement", pos:"n", level:"B2", meanings:["재미","즐거움"],
+    syn:["entertainment","enjoyment","diversion"], ant:["boredom"],
+    ex:[{ s:"She watched the puppies with obvious {{}}.", f:"amusement", ko:"그녀는 강아지들을 뚜렷한 즐거움으로 바라보았다." }] },
+
+  { word:"analogy", pos:"n", level:"C1", meanings:["비유","유사점"],
+    syn:["comparison","parallel","likeness"], ant:["contrast"],
+    ex:[{ s:"He drew an {{}} between the brain and a city.", f:"analogy", ko:"그는 뇌와 도시 사이의 비유를 이끌어 냈다." }] },
+
+  { word:"analysis", pos:"n", level:"B1", meanings:["분석","분해"],
+    syn:["examination","study","breakdown"], ant:["synthesis"],
+    ex:[{ s:"A careful {{}} revealed two separate causes.", f:"analysis", ko:"신중한 분석이 두 개의 별개 원인을 드러냈다." }] },
+
+  { word:"analyze", pos:"v", level:"B1", meanings:["분석하다","해석하다"],
+    syn:["examine","study","dissect"],
+    ex:[{ s:"Researchers will {{}} the samples next week.", f:"analyze", ko:"연구자들은 다음 주에 시료를 분석할 것이다." }] },
+
+  { word:"anarchy", pos:"n", level:"C1", meanings:["무정부 상태","혼란"],
+    syn:["lawlessness","chaos","disorder"], ant:["order"],
+    ex:[{ s:"The collapse of the police led to near {{}}.", f:"anarchy", ko:"경찰의 붕괴는 거의 무정부 상태로 이어졌다." }] },
+
+  { word:"anatomy", pos:"n", level:"C1", meanings:["해부학적 구조","해부학"],
+    syn:["structure","physiology","framework"],
+    ex:[{ s:"Art students study human {{}} in detail.", f:"anatomy", ko:"미술 전공 학생들은 인체 구조를 상세히 공부한다." }] },
+
+  { word:"ancestor", pos:"n", level:"B2", meanings:["조상","선조"],
+    syn:["forefather","forebear","predecessor"], ant:["descendant"],
+    ex:[{ s:"His {{}} arrived on the island in 1820.", f:"ancestor", ko:"그의 조상은 1820년에 그 섬에 도착했다." }] },
+
+  { word:"anchor", pos:"n", level:"B2", meanings:["닻","고정 장치"],
+    syn:["mooring","ballast","weight"],
+    ex:[{ s:"They dropped the {{}} in the shallow bay.", f:"anchor", ko:"그들은 얕은 만에 닻을 내렸다." }] },
+
+  /* 원본의 "현대의"는 반대되는 뜻이라 삭제했습니다 */
+  { word:"ancient", pos:"adj", level:"B1", meanings:["고대의","옛날의"],
+    syn:["antique","archaic","age-old"], ant:["modern"],
+    ex:[{ s:"The valley hides an {{}} burial ground.", f:"ancient", ko:"그 계곡은 고대의 매장지를 숨기고 있다." }] },
+
+  { word:"and so forth", pos:"phr", level:"B2", meanings:["~등등","기타 등등"],
+    syn:["and so on","et cetera","and the like"] },
+
+  { word:"anecdote", pos:"n", level:"C1", meanings:["일화","짧은 이야기"],
+    syn:["story","tale","account"],
+    ex:[{ s:"He opened the lecture with a funny {{}}.", f:"anecdote", ko:"그는 재미있는 일화로 강연을 시작했다." }] },
+
+  { word:"anesthetic", pos:"n", level:"C1", meanings:["마취제"],
+    syn:["painkiller","sedative","numbing agent"],
+    ex:[{ s:"The dentist used a local {{}} first.", f:"anesthetic", ko:"치과의사는 먼저 국소 마취제를 사용했다." }] },
+
+  { word:"anguish", pos:"n", level:"C1", meanings:["고뇌","심적 고통"],
+    syn:["agony","torment","distress"], ant:["relief"],
+    ex:[{ s:"Her face showed the {{}} of a long wait.", f:"anguish", ko:"그녀의 얼굴에는 긴 기다림의 고뇌가 드러났다." }] },
+
+  { word:"annihilate", pos:"v", level:"C2", meanings:["전멸시키다","완전히 파괴하다"],
+    syn:["destroy","obliterate","wipe out"], ant:["preserve"],
+    ex:[{ s:"One storm could {{}} the entire harvest.", f:"annihilate", ko:"한 번의 폭풍이 수확물 전체를 없애 버릴 수 있다." }] },
+
+  { word:"anniversary", pos:"n", level:"B1", meanings:["기념일"],
+    syn:["commemoration","jubilee","remembrance"],
+    ex:[{ s:"They celebrated their tenth {{}} quietly.", f:"anniversary", ko:"그들은 10주년 기념일을 조용히 축하했다." }] },
+
+  { word:"announce", pos:"v", level:"B1", meanings:["발표하다","알리다"],
+    syn:["declare","proclaim","report"], ant:["conceal"],
+    ex:[{ s:"The airline will {{}} new routes in June.", f:"announce", ko:"그 항공사는 6월에 신규 노선을 발표할 것이다." }] },
+
+  { word:"annoyance", pos:"n", level:"B2", meanings:["짜증","골칫거리"],
+    syn:["irritation","nuisance","frustration"], ant:["delight"],
+    ex:[{ s:"The constant beeping was a real {{}}.", f:"annoyance", ko:"끊임없는 삐 소리는 진짜 골칫거리였다." }] },
+
+  { word:"annoyed", pos:"adj", level:"B1", meanings:["짜증난","불쾌한"],
+    syn:["irritated","displeased","vexed"], ant:["pleased"],
+    ex:[{ s:"He looked {{}} when the meeting ran late.", f:"annoyed", ko:"회의가 늦어지자 그는 짜증난 표정을 지었다." }] },
+
+  { word:"annual", pos:"adj", level:"B1", meanings:["매년의","연간의"],
+    syn:["yearly","once-a-year","perennial"],
+    ex:[{ s:"The club holds an {{}} dinner in May.", f:"annual", ko:"그 동아리는 5월에 연례 만찬을 연다." }] },
+
+  { word:"annul", pos:"v", level:"C2", meanings:["무효화하다","취소하다"],
+    syn:["invalidate","cancel","void"], ant:["ratify"],
+    ex:[{ s:"The court moved to {{}} the contract.", f:"annul", ko:"법원은 그 계약을 무효화하는 쪽으로 움직였다." }] },
+
+  { word:"anonymous", pos:"adj", level:"B2", meanings:["익명의","신원 불명의"],
+    syn:["unnamed","unidentified","nameless"], ant:["named"],
+    ex:[{ s:"An {{}} donor paid the hospital bill.", f:"anonymous", ko:"익명의 기부자가 병원비를 지불했다." }] },
+
+  { word:"antagonize", pos:"v", level:"C2", meanings:["적대감을 일으키다","반감을 사다"],
+    syn:["provoke","offend","alienate"], ant:["appease"],
+    ex:[{ s:"Blunt criticism may {{}} the very people you need.", f:"antagonize", ko:"직설적인 비판은 정작 필요한 사람들의 반감을 살 수 있다." }] },
+
+  { word:"Antarctic", pos:"adj", level:"B2", meanings:["남극의"],
+    ex:[{ s:"The {{}} ice sheet is thinning each decade.", f:"Antarctic", ko:"남극의 빙상은 10년마다 얇아지고 있다." }] },
+
+  { word:"antecedent", pos:"n", level:"C2", meanings:["선례","전례"],
+    syn:["precedent","forerunner","predecessor"],
+    ex:[{ s:"The ruling had no clear {{}} in law.", f:"antecedent", ko:"그 판결은 법에 명확한 선례가 없었다." }] },
+
+
+  { word:"anterior", pos:"adj", level:"C2", meanings:["앞쪽의","전방의"],
+    syn:["front","forward","fore"], ant:["posterior"],
+    ex:[{ s:"The muscle runs along the {{}} part of the thigh.", f:"anterior", ko:"그 근육은 허벅지 앞쪽을 따라 이어진다." }] },
+
+  { word:"anthropology", pos:"n", level:"C1", meanings:["인류학"],
+    syn:["ethnology","social science","humanities"],
+    ex:[{ s:"She teaches cultural {{}} at the university.", f:"anthropology", ko:"그녀는 대학에서 문화 인류학을 가르친다." }] },
+
+  { word:"antibiotic", pos:"n", level:"B2", meanings:["항생제"],
+    syn:["antibacterial","medicine","drug"],
+    ex:[{ s:"Doctors warn against overusing every {{}}.", f:"antibiotic", ko:"의사들은 항생제 남용을 경고한다." }] },
+
+  { word:"antibody", pos:"n", level:"C1", meanings:["항체"],
+    syn:["immunoglobulin","defense protein","immune agent"],
+    ex:[{ s:"The vaccine helps the body make each {{}}.", f:"antibody", ko:"백신은 몸이 항체를 만들도록 돕는다." }] },
+
+  { word:"anticipate", pos:"v", level:"B2", meanings:["기대하다","예상하다"],
+    syn:["expect","foresee","predict"], ant:["overlook"],
+    ex:[{ s:"We {{}} heavy traffic during the holiday.", f:"anticipate", ko:"우리는 연휴 동안 극심한 교통 정체를 예상한다." }] },
+
+  { word:"antidepressant", pos:"n", level:"C1", meanings:["항우울제"],
+    syn:["mood stabilizer","medication","drug"],
+    ex:[{ s:"The doctor prescribed a mild {{}}.", f:"antidepressant", ko:"의사는 약한 항우울제를 처방했다." }] },
+
+  { word:"antidote", pos:"n", level:"C1", meanings:["해독제","해결책"],
+    syn:["remedy","cure","countermeasure"], ant:["poison"],
+    ex:[{ s:"Laughter can be an {{}} to daily stress.", f:"antidote", ko:"웃음은 일상적 스트레스의 해독제가 될 수 있다." }] },
+
+  { word:"antioxidant", pos:"n", level:"C1", meanings:["항산화제"],
+    syn:["free-radical scavenger","preservative","nutrient"],
+    ex:[{ s:"Berries are rich in every kind of {{}}.", f:"antioxidant", ko:"베리류는 온갖 항산화제가 풍부하다." }] },
 
   { word:"antipathy", pos:"n", level:"C2", meanings:["반감","혐오"],
-    syn:["aversion","animosity","hostility"], ant:["affinity"],
-    ex:[{ s:"There was mutual {{}} between the two factions.", f:"antipathy", ko:"두 분파 사이에는 상호 반감이 있었다." }] },
+    syn:["hostility","aversion","dislike"], ant:["affinity"],
+    ex:[{ s:"There was clear {{}} between the two rivals.", f:"antipathy", ko:"두 경쟁자 사이에는 뚜렷한 반감이 있었다." }] },
+
+  { word:"antique", pos:"n", level:"B2", meanings:["골동품"],
+    syn:["relic","collectible","heirloom"],
+    ex:[{ s:"The clock is a valuable {{}} from the 1800s.", f:"antique", ko:"그 시계는 1800년대의 값진 골동품이다." }] },
+
+  { word:"antiquity", pos:"n", level:"C2", meanings:["고대","아주 오래됨"],
+    syn:["ancient times","old age","the past"], ant:["modernity"],
+    ex:[{ s:"The site has been sacred since {{}}.", f:"antiquity", ko:"그 장소는 고대부터 신성하게 여겨졌다." }] },
+
+  { word:"antisocial", pos:"adj", level:"C1", meanings:["반사회적인","비사교적인"],
+    syn:["unsociable","disruptive","withdrawn"], ant:["sociable"],
+    ex:[{ s:"Late-night noise counts as {{}} behavior here.", f:"antisocial", ko:"이곳에서 심야 소음은 반사회적 행동으로 간주된다." }] },
+
+  { word:"anxiety", pos:"n", level:"B2", meanings:["불안","염려"],
+    syn:["worry","unease","apprehension"], ant:["calm"],
+    ex:[{ s:"Exam {{}} affects many capable students.", f:"anxiety", ko:"시험 불안은 유능한 많은 학생에게 영향을 준다." }] },
+
+  { word:"anxious", pos:"adj", level:"B1", meanings:["불안해하는","걱정하는"],
+    syn:["worried","nervous","uneasy"], ant:["relaxed"],
+    ex:[{ s:"She felt {{}} before the interview.", f:"anxious", ko:"그녀는 면접 전에 불안했다." }] },
+
+  { word:"apart from", pos:"phr", level:"B1", meanings:["~을 제외하고","~외에는"],
+    syn:["except for","besides","aside from"] },
 
   { word:"apathy", pos:"n", level:"C1", meanings:["무관심","냉담"],
-    syn:["indifference","unconcern","listlessness"], ant:["enthusiasm"],
+    syn:["indifference","unconcern","detachment"], ant:["enthusiasm"],
     ex:[{ s:"Voter {{}} led to a record low turnout.", f:"apathy", ko:"유권자의 무관심이 사상 최저 투표율로 이어졌다." }] },
 
-  { word:"appease", pos:"v", level:"C1", meanings:["달래다","진정시키다"],
-    syn:["placate","pacify","mollify"], ant:["provoke"],
-    ex:[{ s:"The concession failed to {{}} the protesters.", f:"appease", ko:"그 양보는 시위자들을 달래지 못했다." }] },
+  { word:"apologetic", pos:"adj", level:"B2", meanings:["사과하는","미안해하는"],
+    syn:["remorseful","regretful","contrite"], ant:["unrepentant"],
+    ex:[{ s:"He sent an {{}} note for missing the meeting.", f:"apologetic", ko:"그는 회의에 빠진 것에 대해 사과하는 쪽지를 보냈다." }] },
 
-  { word:"apprehensive", pos:"adj", level:"C1", meanings:["불안한","염려하는"],
-    syn:["anxious","uneasy","fearful"], ant:["confident"],
-    ex:[{ s:"Staff were {{}} about the merger.", f:"apprehensive", ko:"직원들은 합병에 대해 불안해했다." }] },
+  { word:"apologetically", pos:"adv", level:"C1", meanings:["사과하듯이","미안해하며"],
+    syn:["regretfully","remorsefully","ruefully"],
+    ex:[{ s:"She smiled {{}} and explained the delay.", f:"apologetically", ko:"그녀는 미안해하며 웃고는 지연을 설명했다." }] },
 
-  { word:"arbitrary", pos:"adj", level:"B2", meanings:["임의의","독단적인"],
-    syn:["random","capricious","autocratic"], ant:["reasoned"],
-    ex:[{ s:"The deadline seemed entirely {{}} to the team.", f:"arbitrary", ko:"그 마감일은 팀에게 완전히 임의적으로 보였다." }] },
+  { word:"apologize", pos:"v", level:"B1", meanings:["사과하다"],
+    syn:["say sorry","express regret","atone"],
+    ex:[{ s:"He refused to {{}} for the remark.", f:"apologize", ko:"그는 그 발언에 대해 사과하기를 거부했다." }],
+    col:[{ p:"apologize {{}} the delay", a:"for", pool:"prep", note:"apologize for ~ : ~에 대해 사과하다" }] },
 
-  { word:"arduous", pos:"adj", level:"C1", meanings:["힘든","고된"],
-    syn:["strenuous","laborious","grueling"], ant:["effortless"],
-    ex:[{ s:"Restoring the manuscript was an {{}} task.", f:"arduous", ko:"그 원고를 복원하는 일은 고된 작업이었다." }] },
+  { word:"apparatus", pos:"n", level:"C1", meanings:["장치","기구"],
+    syn:["equipment","device","machinery"],
+    ex:[{ s:"The lab installed new breathing {{}}.", f:"apparatus", ko:"실험실은 새 호흡 장치를 설치했다." }] },
 
-  { word:"ascertain", pos:"v", level:"C1", meanings:["확인하다","알아내다"],
-    syn:["determine","verify","establish"], ant:["assume"],
-    ex:[{ s:"Investigators tried to {{}} the cause of the fire.", f:"ascertain", ko:"조사관들은 화재 원인을 밝히려 했다." }] },
+  { word:"apparent", pos:"adj", level:"B2", meanings:["명백한","분명한"],
+    syn:["obvious","evident","clear"], ant:["obscure"],
+    ex:[{ s:"It soon became {{}} that the plan had failed.", f:"apparent", ko:"그 계획이 실패했다는 것이 곧 분명해졌다." }] },
 
-  { word:"aspire", pos:"v", level:"B2", meanings:["열망하다","포부를 갖다"],
+  { word:"appeal", pos:"v", level:"B2", meanings:["호소하다","관심을 끌다"],
+    syn:["plead","attract","entreat"],
+    ex:[{ s:"The design should {{}} to younger buyers.", f:"appeal", ko:"그 디자인은 젊은 구매자의 관심을 끌어야 한다." }],
+    col:[{ p:"appeal {{}} younger buyers", a:"to", pool:"prep", note:"appeal to ~ : ~의 관심을 끌다" }] },
+
+  { word:"appearance", pos:"n", level:"B1", meanings:["외모","출현"],
+    syn:["look","aspect","arrival"], ant:["disappearance"],
+    ex:[{ s:"Do not judge people by their {{}} alone.", f:"appearance", ko:"외모만으로 사람을 판단하지 마라." }] },
+
+  { word:"appendix", pos:"n", level:"C1", meanings:["부록","부속물"],
+    syn:["supplement","addendum","attachment"],
+    ex:[{ s:"Full data appear in the {{}} at the end.", f:"appendix", ko:"전체 데이터는 끝의 부록에 나온다." }] },
+
+  { word:"appetite", pos:"n", level:"B2", meanings:["식욕","욕구"],
+    syn:["hunger","craving","desire"], ant:["aversion"],
+    ex:[{ s:"The long walk gave us a huge {{}}.", f:"appetite", ko:"긴 산책은 우리에게 엄청난 식욕을 주었다." }] },
+
+  { word:"appliance", pos:"n", level:"B2", meanings:["(가정용) 기구","전자제품"],
+    syn:["device","gadget","machine"],
+    ex:[{ s:"Every kitchen {{}} here saves energy.", f:"appliance", ko:"이곳의 모든 주방 기구는 에너지를 절약한다." }] },
+
+  { word:"applicant", pos:"n", level:"B2", meanings:["지원자","신청자"],
+    syn:["candidate","petitioner","aspirant"],
+    ex:[{ s:"Each {{}} must submit two references.", f:"applicant", ko:"각 지원자는 추천서 두 통을 제출해야 한다." }] },
+
+  { word:"application", pos:"n", level:"B1", meanings:["지원(서)","적용"],
+    syn:["request","use","implementation"],
+    ex:[{ s:"Her {{}} for the grant was approved.", f:"application", ko:"그녀의 보조금 신청이 승인되었다." }] },
+
+  { word:"apply", pos:"v", level:"B1", meanings:["지원하다","적용하다"],
+    syn:["request","use","implement"],
+    ex:[{ s:"You can {{}} the same rule to both cases.", f:"apply", ko:"두 경우 모두에 같은 규칙을 적용할 수 있다." }] },
+
+  { word:"apply for", pos:"phr", level:"B1", meanings:["~에 지원하다","~을 신청하다"],
+    syn:["request","seek","put in for"] },
+
+  { word:"apply to", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
+    syn:["pertain to","relate to","concern"] },
+
+  { word:"appointment", pos:"n", level:"B1", meanings:["약속","임명"],
+    syn:["meeting","engagement","nomination"],
+    ex:[{ s:"I have a dental {{}} at three o'clock.", f:"appointment", ko:"나는 3시에 치과 예약이 있다." }] },
+
+  { word:"appraise", pos:"v", level:"C1", meanings:["평가하다","감정하다"],
+    syn:["assess","evaluate","value"],
+    ex:[{ s:"An expert came to {{}} the old painting.", f:"appraise", ko:"전문가가 그 오래된 그림을 감정하러 왔다." }] },
+
+  { word:"appreciate", pos:"v", level:"B1", meanings:["감사하다","감상하다"],
+    syn:["value","cherish","recognize"], ant:["disregard"],
+    ex:[{ s:"We truly {{}} all your help this week.", f:"appreciate", ko:"우리는 이번 주 당신의 모든 도움에 진심으로 감사한다." }] },
+
+  { word:"appreciative", pos:"adj", level:"C1", meanings:["감사하는","높이 평가하는"],
+    syn:["grateful","thankful","admiring"], ant:["ungrateful"],
+    ex:[{ s:"The crowd was warmly {{}} of the performance.", f:"appreciative", ko:"관중은 그 공연에 따뜻한 찬사를 보냈다." }] },
+
+  { word:"apprehend", pos:"v", level:"C2", meanings:["체포하다","파악하다"],
+    syn:["arrest","capture","seize"], ant:["release"],
+    ex:[{ s:"Police managed to {{}} the suspect at dawn.", f:"apprehend", ko:"경찰은 새벽에 용의자를 체포하는 데 성공했다." }] },
+
+
+  { word:"apprehensive", pos:"adj", level:"C1", meanings:["걱정하는","염려하는"],
+    syn:["anxious","uneasy","worried"], ant:["confident"],
+    ex:[{ s:"Staff felt {{}} about the coming merger.", f:"apprehensive", ko:"직원들은 다가오는 합병에 대해 걱정했다." }],
+    col:[{ p:"apprehensive {{}} the outcome", a:"about", pool:"prep", note:"apprehensive about ~ : ~을 걱정하는" }] },
+
+  { word:"apprentice", pos:"n", level:"C1", meanings:["수습생","도제"],
+    syn:["trainee","learner","novice"], ant:["master"],
+    ex:[{ s:"He started as an {{}} in a print shop.", f:"apprentice", ko:"그는 인쇄소에서 수습생으로 시작했다." }] },
+
+  { word:"apprenticeship", pos:"n", level:"C1", meanings:["수습 기간","도제살이"],
+    syn:["traineeship","internship","training"],
+    ex:[{ s:"She completed a four-year {{}} as an electrician.", f:"apprenticeship", ko:"그녀는 전기공으로 4년의 수습 과정을 마쳤다." }] },
+
+  { word:"approach", pos:"v", level:"B1", meanings:["접근하다","다가가다"],
+    syn:["near","advance","come toward"], ant:["retreat"],
+    ex:[{ s:"Do not {{}} the animals during feeding.", f:"approach", ko:"먹이를 줄 때 동물에게 다가가지 마세요." }] },
+
+  { word:"appropriate", pos:"adj", level:"B2", meanings:["적합한","적절한"],
+    syn:["suitable","fitting","proper"], ant:["inappropriate"],
+    ex:[{ s:"Choose clothing {{}} for the weather.", f:"appropriate", ko:"날씨에 적절한 옷을 고르세요." }] },
+
+  { word:"approval", pos:"n", level:"B2", meanings:["승인","찬성"],
+    syn:["consent","endorsement","sanction"], ant:["disapproval"],
+    ex:[{ s:"The plan still needs the board's {{}}.", f:"approval", ko:"그 계획은 아직 이사회의 승인이 필요하다." }] },
+
+  { word:"approving", pos:"adj", level:"C1", meanings:["찬성하는","승인하는"],
+    syn:["favorable","supportive","admiring"], ant:["disapproving"],
+    ex:[{ s:"She gave an {{}} nod at the proposal.", f:"approving", ko:"그녀는 그 제안에 찬성하는 뜻으로 고개를 끄덕였다." }] },
+
+  { word:"approximate", pos:"adj", level:"B2", meanings:["대략의","가까운"],
+    syn:["rough","estimated","near"], ant:["exact"],
+    ex:[{ s:"Give me an {{}} cost before we start.", f:"approximate", ko:"시작하기 전에 대략적인 비용을 알려 주세요." }] },
+
+  { word:"approximately", pos:"adv", level:"B2", meanings:["대략","약"],
+    syn:["roughly","about","around"], ant:["exactly"],
+    ex:[{ s:"The trip takes {{}} three hours.", f:"approximately", ko:"그 여행은 대략 세 시간이 걸린다." }] },
+
+  { word:"apt", pos:"adj", level:"C1", meanings:["적절한","~하기 쉬운"],
+    syn:["fitting","suitable","prone"], ant:["unsuitable"],
+    ex:[{ s:"That was an {{}} description of the problem.", f:"apt", ko:"그것은 그 문제에 대한 적절한 묘사였다." }] },
+
+  { word:"aptitude", pos:"n", level:"C1", meanings:["적성","소질"],
+    syn:["talent","flair","knack"], ant:["inability"],
+    ex:[{ s:"She showed an early {{}} for numbers.", f:"aptitude", ko:"그녀는 일찍부터 숫자에 소질을 보였다." }],
+    col:[{ p:"an aptitude {{}} languages", a:"for", pool:"prep", note:"an aptitude for ~ : ~에 대한 소질" }] },
+
+  { word:"aquatic", pos:"adj", level:"C1", meanings:["수생의","물속의"],
+    syn:["marine","water-dwelling","underwater"], ant:["terrestrial"],
+    ex:[{ s:"The pond supports many {{}} plants.", f:"aquatic", ko:"그 연못은 많은 수생 식물을 품고 있다." }] },
+
+  { word:"arbitrary", pos:"adj", level:"C1", meanings:["임의의","제멋대로인"],
+    syn:["random","capricious","subjective"], ant:["reasoned"],
+    ex:[{ s:"The deadline felt entirely {{}} to the team.", f:"arbitrary", ko:"그 마감일은 팀에게 완전히 제멋대로로 느껴졌다." }] },
+
+  { word:"archaeological", pos:"adj", level:"C1", meanings:["고고학의"],
+    syn:["excavational","antiquarian","historical"],
+    ex:[{ s:"The dam would flood an important {{}} site.", f:"archaeological", ko:"그 댐은 중요한 고고학 유적지를 수몰시킬 것이다." }] },
+
+  { word:"archaeologist", pos:"n", level:"C1", meanings:["고고학자"],
+    syn:["excavator","antiquarian","researcher"],
+    ex:[{ s:"An {{}} identified the coins as Roman.", f:"archaeologist", ko:"한 고고학자가 그 동전들을 로마 시대의 것으로 밝혀냈다." }] },
+
+  { word:"archaeology", pos:"n", level:"C1", meanings:["고고학"],
+    syn:["antiquities study","excavation science","prehistory"],
+    ex:[{ s:"He switched from history to {{}}.", f:"archaeology", ko:"그는 역사학에서 고고학으로 전공을 바꿨다." }] },
+
+  { word:"architect", pos:"n", level:"B2", meanings:["건축가","설계자"],
+    syn:["designer","planner","builder"],
+    ex:[{ s:"The {{}} unveiled a bold new library.", f:"architect", ko:"그 건축가는 대담한 새 도서관을 공개했다." }] },
+
+  { word:"architecture", pos:"n", level:"B2", meanings:["건축(학)","건축 양식"],
+    syn:["design","construction","structure"],
+    ex:[{ s:"The city is famous for its baroque {{}}.", f:"architecture", ko:"그 도시는 바로크 건축으로 유명하다." }] },
+
+  { word:"archive", pos:"n", level:"C1", meanings:["기록 보관소","기록물"],
+    syn:["record","repository","register"],
+    ex:[{ s:"The photos are kept in the national {{}}.", f:"archive", ko:"그 사진들은 국가 기록 보관소에 보관되어 있다." }] },
+
+  { word:"ardent", pos:"adj", level:"C2", meanings:["열렬한","열정적인"],
+    syn:["fervent","passionate","zealous"], ant:["indifferent"],
+    ex:[{ s:"He is an {{}} supporter of the reform.", f:"ardent", ko:"그는 그 개혁의 열렬한 지지자이다." }] },
+
+  { word:"argue", pos:"v", level:"B1", meanings:["주장하다","논쟁하다"],
+    syn:["contend","claim","dispute"],
+    ex:[{ s:"Critics {{}} that the policy costs too much.", f:"argue", ko:"비평가들은 그 정책이 너무 많은 비용을 든다고 주장한다." }] },
+
+  { word:"argument", pos:"n", level:"B1", meanings:["주장","논쟁"],
+    syn:["reasoning","dispute","debate"], ant:["agreement"],
+    ex:[{ s:"Her {{}} rested on solid evidence.", f:"argument", ko:"그녀의 주장은 탄탄한 근거에 기반했다." }] },
+
+  { word:"argumentative", pos:"adj", level:"C1", meanings:["논쟁적인","따지기 좋아하는"],
+    syn:["quarrelsome","combative","disputatious"], ant:["agreeable"],
+    ex:[{ s:"He grew {{}} whenever money came up.", f:"argumentative", ko:"그는 돈 얘기만 나오면 따지기 시작했다." }] },
+
+  { word:"arise", pos:"v", level:"B2", meanings:["생기다","발생하다"],
+    syn:["emerge","occur","crop up"], ant:["disappear"],
+    ex:[{ s:"Problems may {{}} if the schedule slips.", f:"arise", ko:"일정이 밀리면 문제가 생길 수 있다." }] },
+
+  { word:"arithmetic", pos:"n", level:"B2", meanings:["산수","셈"],
+    syn:["computation","calculation","mathematics"],
+    ex:[{ s:"Simple {{}} shows the plan cannot work.", f:"arithmetic", ko:"간단한 셈만 해봐도 그 계획이 안 된다는 걸 알 수 있다." }] },
+
+  { word:"armament", pos:"n", level:"C2", meanings:["군비","무장"],
+    syn:["weaponry","arms","munitions"], ant:["disarmament"],
+    ex:[{ s:"The treaty limits naval {{}} on both sides.", f:"armament", ko:"그 조약은 양측의 해군 무장을 제한한다." }] },
+
+  { word:"aroma", pos:"n", level:"B2", meanings:["향기","방향"],
+    syn:["scent","fragrance","smell"], ant:["stench"],
+    ex:[{ s:"The {{}} of fresh bread filled the shop.", f:"aroma", ko:"갓 구운 빵 향기가 가게에 가득했다." }] },
+
+  { word:"arrange", pos:"v", level:"B1", meanings:["정리하다","처리하다"],
+    syn:["organize","order","set up"], ant:["disarrange"],
+    ex:[{ s:"Please {{}} the chairs in a circle.", f:"arrange", ko:"의자를 원형으로 배치해 주세요." }] },
+
+  { word:"array", pos:"n", level:"C1", meanings:["무리","집합"],
+    syn:["range","assortment","collection"],
+    ex:[{ s:"The store offers a wide {{}} of tools.", f:"array", ko:"그 가게는 다양한 도구를 갖추고 있다." }] },
+
+  { word:"arrival", pos:"n", level:"B1", meanings:["도착","도래"],
+    syn:["coming","appearance","advent"], ant:["departure"],
+    ex:[{ s:"His {{}} was delayed by the storm.", f:"arrival", ko:"그의 도착은 폭풍으로 지연되었다." }] },
+
+  { word:"arrogant", pos:"adj", level:"B2", meanings:["오만한","거만한"],
+    syn:["haughty","conceited","proud"], ant:["humble"],
+    ex:[{ s:"His {{}} tone offended the whole panel.", f:"arrogant", ko:"그의 오만한 어조는 심사단 전체를 불쾌하게 했다." }] },
+
+  { word:"art exhibition", pos:"phr", level:"B2", meanings:["미술 전시회"],
+    syn:["art show","gallery show","display"] },
+
+  { word:"artful", pos:"adj", level:"C1", meanings:["교묘한","솜씨 있는"],
+    syn:["cunning","skillful","crafty"], ant:["clumsy"],
+    ex:[{ s:"With one {{}} move she won the argument.", f:"artful", ko:"교묘한 한 수로 그녀는 논쟁에서 이겼다." }] },
+
+  { word:"article", pos:"n", level:"B1", meanings:["기사","품목"],
+    syn:["piece","item","report"],
+    ex:[{ s:"She wrote an {{}} on urban farming.", f:"article", ko:"그녀는 도시 농업에 관한 기사를 썼다." }] },
+
+  { word:"articulate", pos:"v", level:"C1", meanings:["분명히 표현하다","또렷이 말하다"],
+    syn:["express","voice","enunciate"], ant:["mumble"],
+    ex:[{ s:"He struggled to {{}} his fears.", f:"articulate", ko:"그는 자신의 두려움을 분명히 표현하기 힘들어했다." }] },
+
+  { word:"artifact", pos:"n", level:"C1", meanings:["공예품","유물"],
+    syn:["relic","object","artefact"],
+    ex:[{ s:"Each {{}} was labeled and photographed.", f:"artifact", ko:"각 유물에는 라벨이 붙고 사진이 찍혔다." }] },
+
+  { word:"artificial", pos:"adj", level:"B1", meanings:["인공적인","인위적인"],
+    syn:["synthetic","man-made","fake"], ant:["natural"],
+    ex:[{ s:"The lake is {{}}, built for the city's water.", f:"artificial", ko:"그 호수는 도시의 물을 위해 만든 인공 호수다." }] },
+
+
+  { word:"as a whole", pos:"phr", level:"B2", meanings:["전체적으로","대체로"],
+    syn:["overall","in general","on the whole"] },
+
+  { word:"as opposed to", pos:"phr", level:"B2", meanings:["~와는 대조적으로","~이 아니라"],
+    syn:["rather than","in contrast to","instead of"] },
+
+  { word:"ascend", pos:"v", level:"C1", meanings:["오르다","상승하다"],
+    syn:["climb","rise","mount"], ant:["descend"],
+    ex:[{ s:"The path {{}} steeply toward the peak.", f:"ascends", ko:"그 길은 정상을 향해 가파르게 오른다." }] },
+
+  { word:"ascribe", pos:"v", level:"C2", meanings:["~의 탓으로 돌리다","~에 귀속시키다"],
+    syn:["attribute","credit","assign"],
+    col:[{ p:"ascribe the delay {{}} bad weather", a:"to", pool:"prep", note:"ascribe A to B : A를 B의 탓으로 돌리다" }] },
+
+  { word:"ashamed", pos:"adj", level:"B1", meanings:["부끄러운","창피한"],
+    syn:["embarrassed","guilty","mortified"], ant:["proud"],
+    ex:[{ s:"He felt {{}} of his rude reply.", f:"ashamed", ko:"그는 무례한 대답이 부끄러웠다." }] },
+
+  { word:"aspect", pos:"n", level:"B2", meanings:["측면","양상"],
+    syn:["facet","feature","angle"],
+    ex:[{ s:"Cost is only one {{}} of the decision.", f:"aspect", ko:"비용은 그 결정의 한 측면일 뿐이다." }] },
+
+  { word:"aspire", pos:"v", level:"C1", meanings:["열망하다","포부를 갖다"],
     syn:["yearn","strive","seek"],
-    col:[{ p:"aspire {{}} a higher position", a:"to", pool:"prep", note:"aspire to ~ : ~을 열망하다" }] },
-
-  { word:"assiduous", pos:"adj", level:"C2", meanings:["근면한","끈기 있는"],
-    syn:["diligent","industrious","painstaking"], ant:["indolent"],
-    ex:[{ s:"Her {{}} research uncovered the missing records.", f:"assiduous", ko:"그녀의 끈질긴 연구가 누락된 기록을 찾아냈다." }] },
-
-  { word:"astute", pos:"adj", level:"C1", meanings:["예리한","약삭빠른"],
-    syn:["shrewd","perceptive","sagacious"], ant:["obtuse"],
-    ex:[{ s:"It was an {{}} observation about market timing.", f:"astute", ko:"그것은 시장 타이밍에 관한 예리한 관찰이었다." }] },
-
-  { word:"audacious", pos:"adj", level:"C1", meanings:["대담한","뻔뻔한"],
-    syn:["bold","daring","intrepid"], ant:["timid"],
-    ex:[{ s:"They devised an {{}} plan to cross the desert.", f:"audacious", ko:"그들은 사막을 횡단하려는 대담한 계획을 세웠다." }] },
-
-  { word:"augment", pos:"v", level:"C1", meanings:["증대시키다","늘리다"],
-    syn:["increase","amplify","supplement"], ant:["diminish"],
-    ex:[{ s:"He took a second job to {{}} his income.", f:"augment", ko:"그는 수입을 늘리려고 부업을 했다." }] },
-
-  { word:"auspicious", pos:"adj", level:"C2", meanings:["상서로운","길조의"],
-    syn:["favorable","promising","propitious"], ant:["ominous"],
-    ex:[{ s:"The launch made an {{}} start to the quarter.", f:"auspicious", ko:"그 출시는 분기의 상서로운 출발이 되었다." }] },
-
-  { word:"austere", pos:"adj", level:"C1", meanings:["검소한","엄격한"],
-    syn:["severe","ascetic","spartan"], ant:["lavish"],
-    ex:[{ s:"The monks led an {{}} life without comfort.", f:"austere", ko:"수도승들은 안락함 없는 검소한 삶을 살았다." }] },
-
-  { word:"averse", pos:"adj", level:"C1", meanings:["싫어하는","반대하는"],
-    syn:["opposed","reluctant","disinclined"], ant:["eager"],
-    col:[{ p:"averse {{}} risk", a:"to", pool:"prep", note:"averse to ~ : ~을 꺼리는" }] },
-
-  { word:"aversion", pos:"n", level:"C1", meanings:["혐오","반감"],
-    syn:["antipathy","repugnance","distaste"], ant:["fondness"],
-    ex:[{ s:"He has a deep {{}} to public speaking.", f:"aversion", ko:"그는 대중 연설에 깊은 거부감을 갖고 있다." }] },
-
-  /* ── B ───────────────────────────────────────────── */
-  { word:"belligerent", pos:"adj", level:"C2", meanings:["호전적인","적대적인"],
-    syn:["hostile","combative","pugnacious"], ant:["peaceable"],
-    ex:[{ s:"His {{}} tone derailed the discussion.", f:"belligerent", ko:"그의 호전적인 어조가 논의를 망쳤다." }] },
-
-  { word:"benevolent", pos:"adj", level:"C1", meanings:["자애로운","인정 많은"],
-    syn:["kindly","charitable","magnanimous"], ant:["malevolent"],
-    ex:[{ s:"The hospital was funded by a {{}} donor.", f:"benevolent", ko:"그 병원은 인정 많은 기부자의 자금으로 운영되었다." }] },
-
-  { word:"bolster", pos:"v", level:"C1", meanings:["강화하다","뒷받침하다"],
-    syn:["reinforce","strengthen","buttress"], ant:["undermine"],
-    ex:[{ s:"New data helped {{}} their argument.", f:"bolster", ko:"새로운 자료가 그들의 주장을 뒷받침했다." }] },
-
-  { word:"brevity", pos:"n", level:"C2", meanings:["간결함","짧음"],
-    syn:["conciseness","succinctness","terseness"], ant:["verbosity"],
-    ex:[{ s:"The report is admired for its {{}} and clarity.", f:"brevity", ko:"그 보고서는 간결함과 명료함으로 호평받는다." }] },
-
-  { word:"burgeon", pos:"v", level:"C2", meanings:["급성장하다","싹트다"],
-    syn:["flourish","proliferate","thrive"], ant:["dwindle"],
-    ex:[{ s:"Online tutoring began to {{}} during the decade.", f:"burgeon", ko:"온라인 과외는 그 10년 동안 급성장하기 시작했다." }] },
-
-  /* ── C ───────────────────────────────────────────── */
-  { word:"cajole", pos:"v", level:"C2", meanings:["회유하다","달래어 설득하다"],
-    syn:["coax","wheedle","inveigle"], ant:["coerce"],
-    ex:[{ s:"She managed to {{}} him into signing.", f:"cajole", ko:"그녀는 그를 달래어 서명하게 만들었다." }] },
-
-  { word:"candid", pos:"adj", level:"B2", meanings:["솔직한","숨김없는"],
-    syn:["frank","forthright","blunt"], ant:["evasive"],
-    ex:[{ s:"In a rare {{}} moment, he admitted the error.", f:"candid", ko:"드물게 솔직한 순간에 그는 실수를 인정했다." }] },
-
-  { word:"capricious", pos:"adj", level:"C2", meanings:["변덕스러운"],
-    syn:["fickle","volatile","whimsical"], ant:["steadfast"],
-    ex:[{ s:"The market proved as {{}} as the weather.", f:"capricious", ko:"시장은 날씨만큼 변덕스러운 것으로 드러났다." }] },
-
-  { word:"censure", pos:"v", level:"C2", meanings:["비난하다","견책하다"],
-    syn:["condemn","rebuke","reprove"], ant:["commend"],
-    ex:[{ s:"The assembly voted to {{}} the minister.", f:"censure", ko:"의회는 그 장관을 견책하기로 표결했다." }] },
+    col:[{ p:"aspire {{}} a leadership role", a:"to", pool:"prep", note:"aspire to ~ : ~을 열망하다" }] },
 
-  { word:"circumvent", pos:"v", level:"C1", meanings:["우회하다","교묘히 피하다"],
-    syn:["evade","bypass","sidestep"], ant:["confront"],
-    ex:[{ s:"The firm used shell companies to {{}} the sanctions.", f:"circumvent", ko:"그 회사는 제재를 피하려고 위장 회사를 이용했다." }] },
+  { word:"aspiring", pos:"adj", level:"C1", meanings:["장차 ~가 되려는","포부 있는"],
+    syn:["would-be","ambitious","budding"],
+    ex:[{ s:"The course is aimed at {{}} writers.", f:"aspiring", ko:"그 강좌는 장차 작가가 되려는 사람들을 위한 것이다." }] },
 
-  { word:"clandestine", pos:"adj", level:"C2", meanings:["은밀한","비밀의"],
-    syn:["covert","surreptitious","furtive"], ant:["overt"],
-    ex:[{ s:"They held {{}} meetings in a basement.", f:"clandestine", ko:"그들은 지하실에서 은밀한 회합을 가졌다." }] },
-
-  { word:"coalesce", pos:"v", level:"C2", meanings:["합쳐지다","연합하다"],
-    syn:["merge","fuse","amalgamate"], ant:["separate"],
-    ex:[{ s:"The small parties began to {{}} into a bloc.", f:"coalesce", ko:"소수 정당들이 하나의 블록으로 합쳐지기 시작했다." }] },
-
-  { word:"cogent", pos:"adj", level:"C2", meanings:["설득력 있는","적절한"],
-    syn:["compelling","convincing","persuasive"], ant:["unconvincing"],
-    ex:[{ s:"She offered a {{}} case for reform.", f:"cogent", ko:"그녀는 개혁에 대한 설득력 있는 논거를 제시했다." }] },
-
-  { word:"cognizant", pos:"adj", level:"C2", meanings:["인식하고 있는","알고 있는"],
-    syn:["aware","conscious","mindful"], ant:["oblivious"],
-    col:[{ p:"cognizant {{}} the risks", a:"of", pool:"prep", note:"cognizant of ~ : ~을 인식하는" }] },
-
-  { word:"commensurate", pos:"adj", level:"C2", meanings:["상응하는","비례하는"],
-    syn:["proportionate","corresponding","equivalent"], ant:["disproportionate"],
-    col:[{ p:"commensurate {{}} experience", a:"with", pool:"prep", note:"commensurate with ~ : ~에 상응하는" }] },
-
-  { word:"complacent", pos:"adj", level:"C1", meanings:["자기만족의","안일한"],
-    syn:["smug","self-satisfied","unconcerned"], ant:["vigilant"],
-    ex:[{ s:"Success made the company dangerously {{}}.", f:"complacent", ko:"성공은 그 회사를 위험하게 안일해지도록 만들었다." }] },
-
-  { word:"comply", pos:"v", level:"B2", meanings:["준수하다","따르다"],
-    syn:["obey","conform","adhere"], ant:["defy"],
-    col:[{ p:"comply {{}} the rules", a:"with", pool:"prep", note:"comply with ~ : ~을 준수하다" }] },
-
-  { word:"concede", pos:"v", level:"B2", meanings:["인정하다","양보하다"],
-    syn:["admit","acknowledge","grant"], ant:["deny"],
-    ex:[{ s:"He was forced to {{}} that the data was flawed.", f:"concede", ko:"그는 그 데이터에 결함이 있음을 인정해야 했다." }] },
-
-  { word:"conciliatory", pos:"adj", level:"C2", meanings:["회유적인","달래는"],
-    syn:["placatory","appeasing","peacemaking"], ant:["antagonistic"],
-    ex:[{ s:"The president struck a {{}} tone in his speech.", f:"conciliatory", ko:"대통령은 연설에서 회유적인 어조를 취했다." }] },
-
-  { word:"condone", pos:"v", level:"C1", meanings:["용인하다","묵인하다"],
-    syn:["overlook","excuse","tolerate"], ant:["condemn"],
-    ex:[{ s:"The school will not {{}} bullying of any kind.", f:"condone", ko:"학교는 어떤 형태의 괴롭힘도 용인하지 않을 것이다." }] },
-
-  { word:"conducive", pos:"adj", level:"C1", meanings:["도움이 되는","~에 좋은"],
-    syn:["favorable","beneficial","helpful"], ant:["detrimental"],
-    col:[{ p:"conducive {{}} learning", a:"to", pool:"prep", note:"conducive to ~ : ~에 도움이 되는" }] },
-
-  { word:"congenial", pos:"adj", level:"C2", meanings:["마음이 맞는","쾌적한"],
-    syn:["agreeable","amiable","compatible"], ant:["disagreeable"],
-    ex:[{ s:"They found a {{}} atmosphere at the small firm.", f:"congenial", ko:"그들은 그 작은 회사에서 마음 맞는 분위기를 발견했다." }] },
-
-  { word:"conjecture", pos:"n", level:"C2", meanings:["추측","억측"],
-    syn:["speculation","surmise","supposition"], ant:["certainty"],
-    ex:[{ s:"Without evidence it remains pure {{}}.", f:"conjecture", ko:"증거가 없으면 그것은 순전한 추측에 머문다." }] },
-
-  { word:"consensus", pos:"n", level:"B2", meanings:["합의","의견 일치"],
-    syn:["agreement","accord","concurrence"], ant:["discord"],
-    ex:[{ s:"The panel reached a {{}} after hours of debate.", f:"consensus", ko:"위원단은 몇 시간의 토론 끝에 합의에 도달했다." }],
-    col:[{ p:"{{}} a consensus", a:"reach", pool:"verb", note:"reach a consensus : 합의에 이르다" }] },
+  { word:"assail", pos:"v", level:"C2", meanings:["공격하다","괴롭히다"],
+    syn:["attack","assault","beset"], ant:["defend"],
+    ex:[{ s:"Doubts began to {{}} her at midnight.", f:"assail", ko:"자정이 되자 의심이 그녀를 괴롭히기 시작했다." }] },
 
-  { word:"conspicuous", pos:"adj", level:"C1", meanings:["눈에 띄는","현저한"],
-    syn:["noticeable","prominent","striking"], ant:["inconspicuous"],
-    ex:[{ s:"His absence at the ceremony was {{}}.", f:"conspicuous", ko:"식장에서 그의 부재는 두드러졌다." }] },
+  { word:"assassinate", pos:"v", level:"C1", meanings:["암살하다"],
+    syn:["murder","kill","eliminate"],
+    ex:[{ s:"Rebels plotted to {{}} the general.", f:"assassinate", ko:"반군은 그 장군을 암살하려는 음모를 꾸몄다." }] },
 
-  { word:"contentious", pos:"adj", level:"C2", meanings:["논쟁적인","다투기 좋아하는"],
-    syn:["controversial","disputed","quarrelsome"], ant:["undisputed"],
-    ex:[{ s:"Pension reform is a highly {{}} issue.", f:"contentious", ko:"연금 개혁은 대단히 논쟁적인 사안이다." }] },
+  { word:"assault", pos:"n", level:"B2", meanings:["습격","폭행"],
+    syn:["attack","onslaught","aggression"], ant:["defense"],
+    ex:[{ s:"The dawn {{}} took the fort by surprise.", f:"assault", ko:"새벽의 습격은 요새를 기습했다." }] },
 
-  { word:"contrite", pos:"adj", level:"C2", meanings:["회개하는","깊이 뉘우치는"],
-    syn:["remorseful","penitent","repentant"], ant:["unrepentant"],
-    ex:[{ s:"He seemed genuinely {{}} about the remark.", f:"contrite", ko:"그는 그 발언에 대해 진심으로 뉘우치는 듯했다." }] },
+  { word:"assemble", pos:"v", level:"B2", meanings:["모으다","조립하다"],
+    syn:["gather","collect","build"], ant:["disperse"],
+    ex:[{ s:"Crowds began to {{}} outside the hall.", f:"assemble", ko:"군중이 강당 밖에 모이기 시작했다." }] },
 
-  { word:"conundrum", pos:"n", level:"C2", meanings:["난제","수수께끼"],
-    syn:["riddle","puzzle","dilemma"], ant:["solution"],
-    ex:[{ s:"Funding the system poses a real {{}}.", f:"conundrum", ko:"그 제도에 재원을 대는 일은 진짜 난제이다." }] },
+  { word:"assembly", pos:"n", level:"B2", meanings:["집회","의회"],
+    syn:["gathering","congress","meeting"],
+    ex:[{ s:"The {{}} voted to delay the new law.", f:"assembly", ko:"의회는 새 법을 미루기로 표결했다." }] },
 
-  { word:"copious", pos:"adj", level:"C2", meanings:["풍부한","방대한"],
-    syn:["abundant","plentiful","ample"], ant:["scanty"],
-    ex:[{ s:"She took {{}} notes throughout the trial.", f:"copious", ko:"그녀는 재판 내내 방대한 메모를 했다." }] },
+  { word:"assert", pos:"v", level:"C1", meanings:["단언하다","주장하다"],
+    syn:["declare","affirm","maintain"], ant:["deny"],
+    ex:[{ s:"She continued to {{}} her innocence.", f:"assert", ko:"그녀는 계속 자신의 결백을 주장했다." }] },
 
-  { word:"corroborate", pos:"v", level:"C2", meanings:["입증하다","확증하다"],
-    syn:["confirm","substantiate","validate"], ant:["refute"],
-    ex:[{ s:"Two witnesses {{}} his account of the night.", f:"corroborated", ko:"두 명의 증인이 그날 밤에 대한 그의 진술을 확증했다." }] },
+  { word:"assertive", pos:"adj", level:"C1", meanings:["확신에 찬","적극적인"],
+    syn:["confident","forceful","self-assured"], ant:["timid"],
+    ex:[{ s:"A good leader must be {{}} but fair.", f:"assertive", ko:"좋은 지도자는 적극적이되 공정해야 한다." }] },
 
-  { word:"culminate", pos:"v", level:"C1", meanings:["정점에 이르다","막을 내리다"],
-    syn:["climax","conclude","peak"], ant:["commence"],
-    col:[{ p:"culminate {{}} a final exam", a:"in", pool:"prep", note:"culminate in ~ : 결국 ~로 끝나다" }] },
+  { word:"assertiveness", pos:"n", level:"C2", meanings:["자기주장","적극성"],
+    syn:["confidence","forcefulness","firmness"], ant:["passivity"],
+    ex:[{ s:"The workshop teaches {{}} without aggression.", f:"assertiveness", ko:"그 워크숍은 공격성 없는 자기주장을 가르친다." }] },
 
-  { word:"culpable", pos:"adj", level:"C2", meanings:["과실이 있는","비난받을 만한"],
-    syn:["blameworthy","guilty","liable"], ant:["blameless"],
-    ex:[{ s:"The report found the agency {{}} for the delay.", f:"culpable", ko:"보고서는 그 지연에 대해 해당 기관에 과실이 있다고 보았다." }] },
+  { word:"assess", pos:"v", level:"B2", meanings:["평가하다","가늠하다"],
+    syn:["evaluate","gauge","appraise"],
+    ex:[{ s:"Judges will {{}} each entry on originality.", f:"assess", ko:"심사위원들은 각 출품작을 독창성으로 평가할 것이다." }] },
 
-  { word:"cursory", pos:"adj", level:"C2", meanings:["대충의","형식적인"],
-    syn:["perfunctory","hasty","superficial"], ant:["thorough"],
-    ex:[{ s:"Even a {{}} glance revealed the error.", f:"cursory", ko:"대충 훑어보기만 해도 그 오류가 드러났다." }] },
 
-
-  /* ── D ───────────────────────────────────────────── */
-  { word:"daunting", pos:"adj", level:"C1", meanings:["위압적인","기가 꺾이는"],
-    syn:["intimidating","formidable","forbidding"], ant:["reassuring"],
-    ex:[{ s:"Rebuilding the archive was a {{}} prospect.", f:"daunting", ko:"기록물을 재건하는 일은 기가 꺾이는 전망이었다." }] },
-
-  { word:"dearth", pos:"n", level:"C2", meanings:["부족","결핍"],
-    syn:["scarcity","shortage","paucity"], ant:["abundance"],
-    ex:[{ s:"There is a {{}} of reliable data on the topic.", f:"dearth", ko:"그 주제에 관한 신뢰할 만한 자료가 부족하다." }],
-    col:[{ p:"a dearth {{}} evidence", a:"of", pool:"prep", note:"a dearth of ~ : ~의 부족" }] },
-
-  { word:"debilitate", pos:"v", level:"C2", meanings:["약화시키다","쇠약하게 하다"],
-    syn:["weaken","enfeeble","sap"], ant:["invigorate"],
-    ex:[{ s:"Chronic illness had begun to {{}} him.", f:"debilitate", ko:"만성 질환이 그를 쇠약하게 만들기 시작했다." }] },
-
-  { word:"decorum", pos:"n", level:"C2", meanings:["예절","품위"],
-    syn:["propriety","etiquette","dignity"], ant:["impropriety"],
-    ex:[{ s:"The court demanded strict {{}} from all parties.", f:"decorum", ko:"법정은 모든 당사자에게 엄격한 품위를 요구했다." }] },
-
-  { word:"deference", pos:"n", level:"C2", meanings:["존중","경의"],
-    syn:["respect","regard","esteem"], ant:["disrespect"],
-    ex:[{ s:"He withdrew the motion in {{}} to his colleagues.", f:"deference", ko:"그는 동료들을 존중하여 그 안을 철회했다." }] },
-
-  { word:"deleterious", pos:"adj", level:"C2", meanings:["해로운","유해한"],
-    syn:["harmful","detrimental","injurious"], ant:["beneficial"],
-    ex:[{ s:"Sleep loss has a {{}} effect on memory.", f:"deleterious", ko:"수면 부족은 기억력에 해로운 영향을 준다." }] },
-
-  { word:"delineate", pos:"v", level:"C2", meanings:["윤곽을 그리다","서술하다"],
-    syn:["outline","depict","define"], ant:["obscure"],
-    ex:[{ s:"The treaty clearly {{}} each nation's waters.", f:"delineates", ko:"그 조약은 각국의 해역을 명확히 규정한다." }] },
-
-  { word:"deplore", pos:"v", level:"C1", meanings:["비난하다","한탄하다"],
-    syn:["condemn","denounce","lament"], ant:["applaud"],
-    ex:[{ s:"World leaders {{}} the attack on civilians.", f:"deplored", ko:"세계 지도자들은 민간인 공격을 강력히 비난했다." }] },
-
-  { word:"deter", pos:"v", level:"B2", meanings:["저지하다","억제하다"],
-    syn:["discourage","dissuade","inhibit"], ant:["encourage"],
-    col:[{ p:"deter them {{}} cheating", a:"from", pool:"prep", note:"deter A from B : A가 B하지 못하게 막다" }] },
-
-  { word:"detrimental", pos:"adj", level:"C1", meanings:["해로운","불리한"],
-    syn:["harmful","damaging","adverse"], ant:["beneficial"],
-    col:[{ p:"detrimental {{}} health", a:"to", pool:"prep", note:"detrimental to ~ : ~에 해로운" }] },
-
-  { word:"devious", pos:"adj", level:"C1", meanings:["교활한","우회하는"],
-    syn:["cunning","deceitful","underhanded"], ant:["straightforward"],
-    ex:[{ s:"He took a {{}} route to avoid the checkpoint.", f:"devious", ko:"그는 검문소를 피하려고 우회로를 택했다." }] },
-
-  { word:"devoid", pos:"adj", level:"C2", meanings:["결여된","전혀 없는"],
-    syn:["lacking","empty","bereft"], ant:["replete"],
-    col:[{ p:"devoid {{}} emotion", a:"of", pool:"prep", note:"devoid of ~ : ~이 전혀 없는" }] },
-
-  { word:"didactic", pos:"adj", level:"C2", meanings:["교훈적인","설교조의"],
-    syn:["instructive","moralizing","pedantic"], ant:["entertaining"],
-    ex:[{ s:"The film is too {{}} to be enjoyable.", f:"didactic", ko:"그 영화는 너무 설교조여서 즐기기 어렵다." }] },
-
-  { word:"diffident", pos:"adj", level:"C2", meanings:["자신 없는","수줍은"],
-    syn:["timid","bashful","self-effacing"], ant:["assertive"],
-    ex:[{ s:"She was too {{}} to press her claim.", f:"diffident", ko:"그녀는 너무 소극적이어서 자기 주장을 밀어붙이지 못했다." }] },
-
-  { word:"digress", pos:"v", level:"C2", meanings:["벗어나다","탈선하다"],
-    syn:["deviate","stray","ramble"], ant:["focus"],
-    ex:[{ s:"The speaker tended to {{}} from the main point.", f:"digress", ko:"그 연사는 요점에서 벗어나는 경향이 있었다." }] },
-
-  { word:"diligent", pos:"adj", level:"B2", meanings:["근면한","성실한"],
-    syn:["assiduous","industrious","conscientious"], ant:["negligent"],
-    ex:[{ s:"A {{}} clerk spotted the discrepancy.", f:"diligent", ko:"성실한 직원이 그 불일치를 발견했다." }] },
-
-  { word:"diminish", pos:"v", level:"B2", meanings:["줄어들다","감소시키다"],
-    syn:["reduce","decrease","lessen"], ant:["expand"],
-    ex:[{ s:"Interest in the project began to {{}}.", f:"diminish", ko:"그 사업에 대한 관심이 줄어들기 시작했다." }] },
-
-  { word:"discern", pos:"v", level:"C1", meanings:["식별하다","분간하다"],
-    syn:["perceive","distinguish","detect"], ant:["overlook"],
-    ex:[{ s:"It is hard to {{}} a pattern in the results.", f:"discern", ko:"그 결과에서 어떤 패턴을 분간하기는 어렵다." }] },
-
-  { word:"discrepancy", pos:"n", level:"C1", meanings:["불일치","차이"],
-    syn:["inconsistency","disparity","divergence"], ant:["consistency"],
-    ex:[{ s:"Auditors found a {{}} in the accounts.", f:"discrepancy", ko:"감사인들은 회계에서 불일치를 발견했다." }] },
-
-  { word:"disdain", pos:"n", level:"C1", meanings:["경멸","무시"],
-    syn:["contempt","scorn","derision"], ant:["admiration"],
-    ex:[{ s:"He spoke of his rivals with open {{}}.", f:"disdain", ko:"그는 경쟁자들을 노골적인 경멸로 언급했다." }] },
-
-  { word:"disparage", pos:"v", level:"C2", meanings:["폄하하다","비방하다"],
-    syn:["belittle","denigrate","deprecate"], ant:["extol"],
-    ex:[{ s:"It is unwise to {{}} a competitor publicly.", f:"disparage", ko:"경쟁사를 공개적으로 폄하하는 것은 현명하지 않다." }] },
-
-  { word:"disparate", pos:"adj", level:"C2", meanings:["이질적인","전혀 다른"],
-    syn:["dissimilar","divergent","distinct"], ant:["homogeneous"],
-    ex:[{ s:"The study merges {{}} sources of evidence.", f:"disparate", ko:"그 연구는 이질적인 증거 출처들을 통합한다." }] },
-
-  { word:"dissent", pos:"n", level:"C2", meanings:["반대","이견"],
-    syn:["disagreement","objection","protest"], ant:["assent"],
-    ex:[{ s:"The ruling drew {{}} from two justices.", f:"dissent", ko:"그 판결은 두 명의 대법관으로부터 반대 의견을 받았다." }] },
-
-  { word:"divulge", pos:"v", level:"C2", meanings:["누설하다","폭로하다"],
-    syn:["disclose","reveal","leak"], ant:["conceal"],
-    ex:[{ s:"Employees may not {{}} client information.", f:"divulge", ko:"직원은 고객 정보를 누설할 수 없다." }] },
-
-  { word:"dogmatic", pos:"adj", level:"C2", meanings:["독단적인","교조적인"],
-    syn:["opinionated","doctrinaire","dictatorial"], ant:["open-minded"],
-    ex:[{ s:"His {{}} stance left no room for debate.", f:"dogmatic", ko:"그의 독단적인 태도는 토론의 여지를 남기지 않았다." }] },
-
-  { word:"dubious", pos:"adj", level:"C1", meanings:["의심스러운","수상한"],
-    syn:["doubtful","questionable","suspect"], ant:["certain"],
-    ex:[{ s:"The firm has a {{}} record on safety.", f:"dubious", ko:"그 회사는 안전 문제에서 의심스러운 전력이 있다." }] },
-
-  /* ── E ───────────────────────────────────────────── */
-  { word:"eclectic", pos:"adj", level:"C2", meanings:["다방면에서 취한","폭넓은"],
-    syn:["diverse","wide-ranging","varied"], ant:["uniform"],
-    ex:[{ s:"Her reading taste is remarkably {{}}.", f:"eclectic", ko:"그녀의 독서 취향은 놀랄 만큼 폭넓다." }] },
-
-  { word:"efficacious", pos:"adj", level:"C2", meanings:["효과적인","효험 있는"],
-    syn:["effective","potent","productive"], ant:["ineffective"],
-    ex:[{ s:"The vaccine proved highly {{}} in trials.", f:"efficacious", ko:"그 백신은 임상에서 매우 효과적임이 입증되었다." }] },
-
-  { word:"egregious", pos:"adj", level:"C2", meanings:["터무니없는","지독한"],
-    syn:["flagrant","outrageous","blatant"], ant:["trivial"],
-    ex:[{ s:"It was an {{}} breach of protocol.", f:"egregious", ko:"그것은 지독한 규정 위반이었다." }] },
-
-  { word:"elicit", pos:"v", level:"C1", meanings:["끌어내다","유도해 내다"],
-    syn:["evoke","extract","draw out"], ant:["suppress"],
-    ex:[{ s:"The survey failed to {{}} useful responses.", f:"elicit", ko:"그 설문은 유용한 응답을 끌어내지 못했다." }] },
-
-  { word:"eloquent", pos:"adj", level:"C1", meanings:["웅변의","말솜씨 좋은"],
-    syn:["articulate","expressive","fluent"], ant:["inarticulate"],
-    ex:[{ s:"She gave an {{}} defense of the policy.", f:"eloquent", ko:"그녀는 그 정책에 대해 웅변적인 변호를 했다." }] },
-
-  { word:"elusive", pos:"adj", level:"C1", meanings:["파악하기 어려운","포착하기 힘든"],
-    syn:["evasive","intangible","fleeting"], ant:["obvious"],
-    ex:[{ s:"A lasting settlement has proved {{}}.", f:"elusive", ko:"지속적인 합의는 좀처럼 이루기 어려웠다." }] },
-
-  { word:"embellish", pos:"v", level:"C2", meanings:["장식하다","윤색하다"],
-    syn:["adorn","decorate","exaggerate"], ant:["simplify"],
-    ex:[{ s:"He tends to {{}} stories about his past.", f:"embellish", ko:"그는 자기 과거 이야기를 부풀리는 경향이 있다." }] },
-
-  { word:"eminent", pos:"adj", level:"C1", meanings:["저명한","탁월한"],
-    syn:["distinguished","renowned","illustrious"], ant:["obscure"],
-    ex:[{ s:"An {{}} historian chaired the committee.", f:"eminent", ko:"저명한 역사학자가 위원회를 주재했다." }] },
-
-  { word:"empirical", pos:"adj", level:"C1", meanings:["경험적인","실증적인"],
-    syn:["observed","experiential","factual"], ant:["speculative"],
-    ex:[{ s:"The claim lacks any {{}} support.", f:"empirical", ko:"그 주장은 실증적 근거가 전혀 없다." }] },
-
-  { word:"emulate", pos:"v", level:"C1", meanings:["모방하다","본받다"],
-    syn:["imitate","mimic","copy"],
-    ex:[{ s:"Younger firms tried to {{}} its business model.", f:"emulate", ko:"신생 기업들은 그 사업 모델을 모방하려 했다." }] },
-
-  { word:"enervate", pos:"v", level:"C2", meanings:["기력을 빼앗다"],
-    syn:["weaken","exhaust","debilitate"], ant:["energize"],
-    ex:[{ s:"The relentless heat began to {{}} the runners.", f:"enervate", ko:"끊임없는 더위가 주자들의 기력을 빼앗기 시작했다." }] },
-
-  { word:"engender", pos:"v", level:"C2", meanings:["낳다","야기하다"],
-    syn:["generate","produce","provoke"], ant:["stifle"],
-    ex:[{ s:"Transparency helps {{}} public trust.", f:"engender", ko:"투명성은 공적 신뢰를 낳는 데 도움이 된다." }] },
-
-  { word:"enigmatic", pos:"adj", level:"C2", meanings:["불가사의한","알 수 없는"],
-    syn:["mysterious","cryptic","inscrutable"], ant:["transparent"],
-    ex:[{ s:"He gave an {{}} smile and said nothing.", f:"enigmatic", ko:"그는 알 수 없는 미소를 지으며 아무 말도 하지 않았다." }] },
-
-  { word:"ephemeral", pos:"adj", level:"C2", meanings:["순간적인","단명하는"],
-    syn:["transient","fleeting","short-lived"], ant:["enduring"],
-    ex:[{ s:"Online fame is often {{}}.", f:"ephemeral", ko:"온라인에서의 명성은 종종 순간적이다." }] },
-
-  { word:"equivocal", pos:"adj", level:"C2", meanings:["모호한","애매한"],
-    syn:["ambiguous","vague","evasive"], ant:["unequivocal"],
-    ex:[{ s:"The test results were {{}} and had to be repeated.", f:"equivocal", ko:"검사 결과가 모호해서 재검사해야 했다." }] },
-
-  { word:"erudite", pos:"adj", level:"C2", meanings:["학식 있는","박학한"],
-    syn:["learned","scholarly","well-read"], ant:["ignorant"],
-    ex:[{ s:"His {{}} commentary impressed the panel.", f:"erudite", ko:"그의 박학한 논평은 심사단에 깊은 인상을 주었다." }] },
-
-  { word:"eschew", pos:"v", level:"C2", meanings:["피하다","멀리하다"],
-    syn:["avoid","shun","forgo"], ant:["embrace"],
-    ex:[{ s:"The author {{}} technical jargon entirely.", f:"eschews", ko:"그 저자는 전문 용어를 전적으로 피한다." }] },
-
-  { word:"esoteric", pos:"adj", level:"C2", meanings:["소수만 아는","난해한"],
-    syn:["obscure","arcane","abstruse"], ant:["accessible"],
-    ex:[{ s:"The debate turned on an {{}} point of law.", f:"esoteric", ko:"그 논쟁은 난해한 법리적 쟁점을 두고 벌어졌다." }] },
-
-  { word:"exacerbate", pos:"v", level:"C2", meanings:["악화시키다","심화시키다"],
-    syn:["aggravate","worsen","intensify"], ant:["alleviate"],
-    ex:[{ s:"Tax cuts may {{}} the deficit.", f:"exacerbate", ko:"감세는 재정 적자를 악화시킬 수 있다." }] },
-
-  { word:"exempt", pos:"adj", level:"B2", meanings:["면제된"],
-    syn:["excused","immune","released"], ant:["liable"],
-    col:[{ p:"exempt {{}} tax", a:"from", pool:"prep", note:"exempt from ~ : ~을 면제받은" }] },
-
-  { word:"exemplary", pos:"adj", level:"C1", meanings:["모범적인","훌륭한"],
-    syn:["commendable","admirable","model"], ant:["deplorable"],
-    ex:[{ s:"Her conduct throughout was {{}}.", f:"exemplary", ko:"그녀의 처신은 처음부터 끝까지 모범적이었다." }] },
-
-  { word:"exhaustive", pos:"adj", level:"C1", meanings:["철저한","빠짐없는"],
-    syn:["thorough","comprehensive","in-depth"], ant:["cursory"],
-    ex:[{ s:"They carried out an {{}} review of the files.", f:"exhaustive", ko:"그들은 서류에 대한 철저한 검토를 수행했다." }] },
-
-  { word:"exonerate", pos:"v", level:"C2", meanings:["무죄임을 밝히다","혐의를 벗기다"],
-    syn:["acquit","absolve","clear"], ant:["convict"],
-    ex:[{ s:"New evidence served to {{}} the defendant.", f:"exonerate", ko:"새로운 증거가 피고의 혐의를 벗겨 주었다." }] },
-
-  { word:"expedite", pos:"v", level:"C1", meanings:["신속히 처리하다","촉진하다"],
-    syn:["accelerate","hasten","fast-track"], ant:["delay"],
-    ex:[{ s:"An extra fee will {{}} your application.", f:"expedite", ko:"추가 수수료를 내면 신청이 신속히 처리된다." }] },
-
-  { word:"explicit", pos:"adj", level:"B2", meanings:["명시적인","분명한"],
-    syn:["clear","unambiguous","definite"], ant:["implicit"],
-    ex:[{ s:"The contract is {{}} about payment terms.", f:"explicit", ko:"그 계약서는 지급 조건에 대해 명시적이다." }] },
-
-  { word:"extol", pos:"v", level:"C2", meanings:["극찬하다","격찬하다"],
-    syn:["praise","laud","glorify"], ant:["denounce"],
-    ex:[{ s:"Critics {{}} the virtues of the new design.", f:"extol", ko:"비평가들은 새 디자인의 장점을 극찬한다." }] },
-
-  { word:"extraneous", pos:"adj", level:"C2", meanings:["관련 없는","불필요한"],
-    syn:["irrelevant","superfluous","extrinsic"], ant:["pertinent"],
-    ex:[{ s:"Cut any {{}} detail from the summary.", f:"extraneous", ko:"요약문에서 관련 없는 세부 사항은 모두 삭제하라." }] },
-
-  /* ── F ───────────────────────────────────────────── */
-  { word:"facilitate", pos:"v", level:"B2", meanings:["촉진하다","용이하게 하다"],
-    syn:["ease","expedite","assist"], ant:["hinder"],
-    ex:[{ s:"The platform is designed to {{}} collaboration.", f:"facilitate", ko:"그 플랫폼은 협업을 용이하게 하도록 설계되었다." }] },
-
-  { word:"fallacious", pos:"adj", level:"C2", meanings:["잘못된","허위의"],
-    syn:["erroneous","misleading","specious"], ant:["valid"],
-    ex:[{ s:"The argument rests on a {{}} assumption.", f:"fallacious", ko:"그 논증은 잘못된 가정에 기초한다." }] },
-
-  { word:"fastidious", pos:"adj", level:"C2", meanings:["까다로운","꼼꼼한"],
-    syn:["meticulous","finicky","punctilious"], ant:["careless"],
-    ex:[{ s:"He is {{}} about grammar and punctuation.", f:"fastidious", ko:"그는 문법과 구두점에 까다롭다." }] },
-
-  { word:"feasible", pos:"adj", level:"B2", meanings:["실현 가능한"],
-    syn:["viable","practicable","achievable"], ant:["unworkable"],
-    ex:[{ s:"The engineers judged the plan technically {{}}.", f:"feasible", ko:"기술자들은 그 계획이 기술적으로 실현 가능하다고 판단했다." }] },
-
-  { word:"fervent", pos:"adj", level:"C2", meanings:["열렬한","강렬한"],
-    syn:["ardent","passionate","zealous"], ant:["apathetic"],
-    ex:[{ s:"He is a {{}} supporter of judicial reform.", f:"fervent", ko:"그는 사법 개혁의 열렬한 지지자이다." }] },
-
-  { word:"flagrant", pos:"adj", level:"C2", meanings:["명백한","노골적인"],
-    syn:["blatant","egregious","glaring"], ant:["subtle"],
-    ex:[{ s:"It was a {{}} violation of the treaty.", f:"flagrant", ko:"그것은 조약에 대한 명백한 위반이었다." }] },
-
-  { word:"formidable", pos:"adj", level:"C1", meanings:["가공할","강력한"],
-    syn:["daunting","intimidating","fearsome"], ant:["feeble"],
-    ex:[{ s:"They face a {{}} opponent in the final.", f:"formidable", ko:"그들은 결승에서 강력한 상대와 맞선다." }] },
-
-  { word:"frugal", pos:"adj", level:"C1", meanings:["절약하는","검소한"],
-    syn:["thrifty","economical","sparing"], ant:["extravagant"],
-    ex:[{ s:"Her {{}} habits allowed her to retire early.", f:"frugal", ko:"검소한 습관 덕분에 그녀는 조기 은퇴할 수 있었다." }] },
-
-  { word:"futile", pos:"adj", level:"C1", meanings:["헛된","무익한"],
-    syn:["pointless","fruitless","vain"], ant:["productive"],
-    ex:[{ s:"Further appeals proved {{}}.", f:"futile", ko:"추가 항소는 헛된 것으로 드러났다." }] },
-
-  /* ── G · H ───────────────────────────────────────── */
-  { word:"garrulous", pos:"adj", level:"C2", meanings:["수다스러운"],
-    syn:["talkative","loquacious","voluble"], ant:["taciturn"],
-    ex:[{ s:"The {{}} guide never stopped talking.", f:"garrulous", ko:"그 수다스러운 안내원은 말을 멈추지 않았다." }] },
-
-  { word:"germane", pos:"adj", level:"C2", meanings:["적절한","밀접한 관련이 있는"],
-    syn:["relevant","pertinent","applicable"], ant:["irrelevant"],
-    col:[{ p:"germane {{}} the issue", a:"to", pool:"prep", note:"germane to ~ : ~와 관련 있는" }] },
-
-  { word:"gregarious", pos:"adj", level:"C2", meanings:["사교적인","군집성의"],
-    syn:["sociable","outgoing","convivial"], ant:["reclusive"],
-    ex:[{ s:"A {{}} child, she made friends instantly.", f:"gregarious", ko:"사교적인 아이여서 그녀는 금방 친구를 사귀었다." }] },
-
-  { word:"grievance", pos:"n", level:"C1", meanings:["불만","고충"],
-    syn:["complaint","resentment","objection"],
-    ex:[{ s:"Workers filed a formal {{}} with management.", f:"grievance", ko:"근로자들은 경영진에 정식 고충을 제기했다." }] },
-
-  { word:"hackneyed", pos:"adj", level:"C2", meanings:["진부한","상투적인"],
-    syn:["trite","banal","clichéd"], ant:["original"],
-    ex:[{ s:"The speech was full of {{}} phrases.", f:"hackneyed", ko:"그 연설은 상투적인 표현으로 가득했다." }] },
-
-  { word:"hamper", pos:"v", level:"C1", meanings:["방해하다","저해하다"],
-    syn:["hinder","impede","obstruct"], ant:["facilitate"],
-    ex:[{ s:"Heavy fog {{}} the rescue effort.", f:"hampered", ko:"짙은 안개가 구조 작업을 방해했다." }] },
-
-  { word:"haphazard", pos:"adj", level:"C1", meanings:["무계획적인","되는대로의"],
-    syn:["disorganized","random","slapdash"], ant:["systematic"],
-    ex:[{ s:"Records were kept in a {{}} manner.", f:"haphazard", ko:"기록은 되는대로 관리되었다." }] },
-
-  { word:"hypocritical", pos:"adj", level:"C1", meanings:["위선적인"],
-    syn:["insincere","two-faced","sanctimonious"], ant:["sincere"],
-    ex:[{ s:"It is {{}} to demand cuts while raising your own pay.", f:"hypocritical", ko:"자기 급여를 올리면서 삭감을 요구하는 것은 위선적이다." }] },
-
-  /* ── I ───────────────────────────────────────────── */
-  { word:"impartial", pos:"adj", level:"C1", meanings:["공정한","편견 없는"],
-    syn:["unbiased","neutral","disinterested"], ant:["partisan"],
-    ex:[{ s:"Both sides accepted an {{}} mediator.", f:"impartial", ko:"양측은 공정한 중재자를 받아들였다." }] },
-
-  { word:"impeccable", pos:"adj", level:"C2", meanings:["흠 없는","완벽한"],
-    syn:["flawless","faultless","immaculate"], ant:["flawed"],
-    ex:[{ s:"His credentials are {{}}.", f:"impeccable", ko:"그의 자격 요건은 흠잡을 데가 없다." }] },
-
-  { word:"impede", pos:"v", level:"C1", meanings:["방해하다","지연시키다"],
-    syn:["hinder","obstruct","hamper"], ant:["expedite"],
-    ex:[{ s:"Red tape continues to {{}} small businesses.", f:"impede", ko:"관료적 절차가 계속 소규모 사업체를 가로막는다." }] },
-
-  { word:"imperative", pos:"adj", level:"C1", meanings:["필수적인","긴급한"],
-    syn:["essential","crucial","vital"], ant:["optional"],
-    ex:[{ s:"It is {{}} that we act before the deadline.", f:"imperative", ko:"마감 전에 행동하는 것이 필수적이다." }] },
-
-  { word:"impervious", pos:"adj", level:"C2", meanings:["영향받지 않는","불침투성의"],
-    syn:["immune","resistant","unaffected"], ant:["susceptible"],
-    col:[{ p:"impervious {{}} criticism", a:"to", pool:"prep", note:"impervious to ~ : ~에 아랑곳하지 않는" }] },
-
-  { word:"impetuous", pos:"adj", level:"C2", meanings:["충동적인","성급한"],
-    syn:["rash","impulsive","hasty"], ant:["cautious"],
-    ex:[{ s:"One {{}} decision cost him the election.", f:"impetuous", ko:"한 번의 성급한 결정이 그에게 선거 패배를 안겼다." }] },
-
-  { word:"implausible", pos:"adj", level:"C1", meanings:["믿기 어려운","설득력 없는"],
-    syn:["improbable","unconvincing","far-fetched"], ant:["credible"],
-    ex:[{ s:"His alibi struck the jury as {{}}.", f:"implausible", ko:"그의 알리바이는 배심원단에게 믿기 어렵게 다가왔다." }] },
-
-  { word:"inadvertent", pos:"adj", level:"C1", meanings:["의도치 않은","부주의한"],
-    syn:["unintentional","accidental","unwitting"], ant:["deliberate"],
-    ex:[{ s:"The leak was {{}} rather than malicious.", f:"inadvertent", ko:"그 유출은 악의적이기보다 의도치 않은 것이었다." }] },
-
-  { word:"incessant", pos:"adj", level:"C1", meanings:["끊임없는","쉴 새 없는"],
-    syn:["ceaseless","constant","unremitting"], ant:["intermittent"],
-    ex:[{ s:"The {{}} noise made concentration impossible.", f:"incessant", ko:"끊임없는 소음 때문에 집중이 불가능했다." }] },
-
-  { word:"incisive", pos:"adj", level:"C2", meanings:["예리한","날카로운"],
-    syn:["penetrating","acute","trenchant"], ant:["vague"],
-    ex:[{ s:"She is known for {{}} questioning.", f:"incisive", ko:"그녀는 예리한 질문으로 유명하다." }] },
-
-  { word:"incongruous", pos:"adj", level:"C2", meanings:["어울리지 않는","부조화한"],
-    syn:["inappropriate","discordant","mismatched"], ant:["harmonious"],
-    ex:[{ s:"The tower looks {{}} beside the old church.", f:"incongruous", ko:"그 탑은 오래된 교회 옆에서 어울리지 않아 보인다." }] },
-
-  { word:"indict", pos:"v", level:"C2", meanings:["기소하다","고발하다"],
-    syn:["charge","accuse","arraign"], ant:["acquit"],
-    ex:[{ s:"A grand jury voted to {{}} the executives.", f:"indict", ko:"대배심은 그 임원들을 기소하기로 표결했다." }] },
-
-  { word:"indispensable", pos:"adj", level:"C1", meanings:["필수불가결한"],
-    syn:["essential","vital","requisite"], ant:["dispensable"],
-    ex:[{ s:"Clean water is {{}} to public health.", f:"indispensable", ko:"깨끗한 물은 공중 보건에 필수불가결하다." }] },
-
-  { word:"indicative", pos:"adj", level:"C1", meanings:["나타내는","시사하는"],
-    syn:["suggestive","symptomatic","representative"],
-    col:[{ p:"indicative {{}} a wider trend", a:"of", pool:"prep", note:"indicative of ~ : ~을 시사하는" }] },
-
-  { word:"indolent", pos:"adj", level:"C2", meanings:["게으른","나태한"],
-    syn:["lazy","slothful","idle"], ant:["industrious"],
-    ex:[{ s:"He was dismissed as an {{}} student.", f:"indolent", ko:"그는 나태한 학생으로 평가되어 퇴출되었다." }] },
-
-  { word:"inevitable", pos:"adj", level:"B2", meanings:["불가피한","필연적인"],
-    syn:["unavoidable","inescapable","certain"], ant:["avoidable"],
-    ex:[{ s:"Some delay is {{}} at this stage.", f:"inevitable", ko:"이 단계에서 약간의 지연은 불가피하다." }] },
-
-  { word:"inexorable", pos:"adj", level:"C2", meanings:["멈출 수 없는","냉혹한"],
-    syn:["relentless","unstoppable","implacable"], ant:["yielding"],
-    ex:[{ s:"The {{}} rise in costs alarmed investors.", f:"inexorable", ko:"멈출 수 없는 비용 상승이 투자자들을 불안하게 했다." }] },
-
-  { word:"infallible", pos:"adj", level:"C2", meanings:["절대 틀리지 않는","확실한"],
-    syn:["unerring","faultless","dependable"], ant:["fallible"],
-    ex:[{ s:"No screening method is entirely {{}}.", f:"infallible", ko:"어떤 검사 방법도 완전히 무결한 것은 아니다." }] },
-
-  { word:"ingenuous", pos:"adj", level:"C2", meanings:["순진한","솔직한"],
-    syn:["naive","artless","guileless"], ant:["devious"],
-    ex:[{ s:"His {{}} honesty disarmed the interviewer.", f:"ingenuous", ko:"그의 순진한 정직함은 면접관의 경계를 풀었다." }] },
-
-  { word:"inherent", pos:"adj", level:"C1", meanings:["내재된","본질적인"],
-    syn:["intrinsic","innate","built-in"], ant:["extraneous"],
-    ex:[{ s:"There are risks {{}} in any investment.", f:"inherent", ko:"어떤 투자에도 내재된 위험이 있다." }] },
-
-  { word:"innocuous", pos:"adj", level:"C2", meanings:["무해한","악의 없는"],
-    syn:["harmless","inoffensive","benign"], ant:["pernicious"],
-    ex:[{ s:"What seemed an {{}} remark caused offense.", f:"innocuous", ko:"악의 없어 보였던 말이 불쾌감을 일으켰다." }] },
-
-  { word:"insidious", pos:"adj", level:"C2", meanings:["서서히 퍼지는","교활한"],
-    syn:["stealthy","treacherous","subtle"], ant:["overt"],
-    ex:[{ s:"Corruption has an {{}} effect on institutions.", f:"insidious", ko:"부패는 제도에 서서히 스며드는 영향을 미친다." }] },
-
-  { word:"insipid", pos:"adj", level:"C2", meanings:["맛없는","재미없는"],
-    syn:["bland","vapid","dull"], ant:["flavorful"],
-    ex:[{ s:"The sequel was an {{}} imitation of the original.", f:"insipid", ko:"그 속편은 원작의 맹맹한 모방이었다." }] },
-
-  { word:"insolent", pos:"adj", level:"C2", meanings:["무례한","건방진"],
-    syn:["impertinent","impudent","insubordinate"], ant:["respectful"],
-    ex:[{ s:"The recruit was punished for his {{}} reply.", f:"insolent", ko:"그 신병은 건방진 대답 때문에 처벌받았다." }] },
-
-  { word:"intransigent", pos:"adj", level:"C2", meanings:["비타협적인","완고한"],
-    syn:["uncompromising","obstinate","inflexible"], ant:["accommodating"],
-    ex:[{ s:"Both sides remained {{}} after a week of talks.", f:"intransigent", ko:"일주일간의 회담 후에도 양측은 비타협적이었다." }] },
-
-  { word:"intrepid", pos:"adj", level:"C2", meanings:["용맹한","두려움 없는"],
-    syn:["fearless","dauntless","valiant"], ant:["cowardly"],
-    ex:[{ s:"An {{}} reporter entered the war zone.", f:"intrepid", ko:"용맹한 기자가 전쟁 지역에 들어갔다." }] },
-
-  { word:"inundate", pos:"v", level:"C2", meanings:["침수시키다","쇄도하다"],
-    syn:["flood","swamp","overwhelm"],
-    ex:[{ s:"The office was {{}} with complaints.", f:"inundated", ko:"사무실은 항의로 넘쳐났다." }] },
-
-  { word:"irrevocable", pos:"adj", level:"C2", meanings:["되돌릴 수 없는","최종적인"],
-    syn:["irreversible","final","binding"], ant:["reversible"],
-    ex:[{ s:"Signing makes the transfer {{}}.", f:"irrevocable", ko:"서명하면 그 양도는 되돌릴 수 없게 된다." }] },
-
-
-  /* ── L · M ───────────────────────────────────────── */
-  { word:"laconic", pos:"adj", level:"C2", meanings:["말이 적은","간결한"],
-    syn:["terse","succinct","concise"], ant:["verbose"],
-    ex:[{ s:"His {{}} reply ended the conversation.", f:"laconic", ko:"그의 짧은 대답이 대화를 끝냈다." }] },
-
-  { word:"lament", pos:"v", level:"C1", meanings:["애도하다","한탄하다"],
-    syn:["mourn","grieve","bemoan"], ant:["rejoice"],
-    ex:[{ s:"Historians {{}} the loss of the archive.", f:"lament", ko:"역사가들은 그 기록물의 소실을 한탄한다." }] },
-
-  { word:"laud", pos:"v", level:"C2", meanings:["칭송하다","찬양하다"],
-    syn:["praise","extol","acclaim"], ant:["criticize"],
-    ex:[{ s:"The press {{}} her for the discovery.", f:"lauded", ko:"언론은 그 발견에 대해 그녀를 칭송했다." }] },
-
-  { word:"lenient", pos:"adj", level:"C1", meanings:["관대한","너그러운"],
-    syn:["tolerant","merciful","permissive"], ant:["stringent"],
-    ex:[{ s:"Critics called the sentence far too {{}}.", f:"lenient", ko:"비판자들은 그 형량이 너무 관대하다고 말했다." }] },
-
-  { word:"lethargic", pos:"adj", level:"C1", meanings:["무기력한","활기 없는"],
-    syn:["sluggish","listless","torpid"], ant:["energetic"],
-    ex:[{ s:"Poor sleep left him {{}} all morning.", f:"lethargic", ko:"수면 부족으로 그는 아침 내내 무기력했다." }] },
-
-  { word:"lucid", pos:"adj", level:"C2", meanings:["명료한","맑은"],
-    syn:["clear","coherent","intelligible"], ant:["confusing"],
-    ex:[{ s:"She gave a {{}} explanation of the theory.", f:"lucid", ko:"그녀는 그 이론에 대해 명료한 설명을 했다." }] },
-
-  { word:"lucrative", pos:"adj", level:"C1", meanings:["수익성 있는","돈이 되는"],
-    syn:["profitable","remunerative","gainful"], ant:["unprofitable"],
-    ex:[{ s:"Consulting proved more {{}} than teaching.", f:"lucrative", ko:"컨설팅이 강의보다 더 수익성이 좋은 것으로 드러났다." }] },
-
-  { word:"magnanimous", pos:"adj", level:"C2", meanings:["도량이 넓은","관대한"],
-    syn:["generous","forgiving","noble"], ant:["petty"],
-    ex:[{ s:"He was {{}} in defeat and praised his rival.", f:"magnanimous", ko:"그는 패배에도 도량이 넓어 경쟁자를 칭찬했다." }] },
-
-  { word:"malicious", pos:"adj", level:"C1", meanings:["악의적인","심술궂은"],
-    syn:["spiteful","malevolent","vindictive"], ant:["benevolent"],
-    ex:[{ s:"The post contained {{}} falsehoods.", f:"malicious", ko:"그 게시물에는 악의적인 허위 사실이 담겨 있었다." }] },
-
-  { word:"meager", pos:"adj", level:"C1", meanings:["빈약한","불충분한"],
-    syn:["scanty","paltry","sparse"], ant:["plentiful"],
-    ex:[{ s:"They survived on a {{}} pension.", f:"meager", ko:"그들은 빈약한 연금으로 생계를 이었다." }] },
-
-  { word:"meticulous", pos:"adj", level:"C1", meanings:["세심한","꼼꼼한"],
-    syn:["thorough","scrupulous","painstaking"], ant:["sloppy"],
-    ex:[{ s:"The restoration required {{}} attention to detail.", f:"meticulous", ko:"그 복원 작업은 세부에 대한 꼼꼼한 주의를 요구했다." }] },
-
-  { word:"mitigate", pos:"v", level:"C1", meanings:["완화하다","경감하다"],
-    syn:["alleviate","lessen","temper"], ant:["exacerbate"],
-    ex:[{ s:"Planting trees can help {{}} urban heat.", f:"mitigate", ko:"나무를 심는 것은 도시 열섬을 완화하는 데 도움이 된다." }] },
-
-  { word:"mundane", pos:"adj", level:"C1", meanings:["평범한","일상적인"],
-    syn:["ordinary","routine","humdrum"], ant:["extraordinary"],
-    ex:[{ s:"Most of the job involves {{}} paperwork.", f:"mundane", ko:"그 일의 대부분은 평범한 서류 작업이다." }] },
-
-  { word:"myriad", pos:"adj", level:"C1", meanings:["무수한","막대한"],
-    syn:["countless","innumerable","untold"], ant:["few"],
-    ex:[{ s:"The city faces {{}} logistical problems.", f:"myriad", ko:"그 도시는 무수한 물류 문제에 직면해 있다." }] },
-
-  /* ── N · O ───────────────────────────────────────── */
-  { word:"nebulous", pos:"adj", level:"C2", meanings:["모호한","흐릿한"],
-    syn:["vague","hazy","indistinct"], ant:["definite"],
-    ex:[{ s:"Their strategy remains rather {{}}.", f:"nebulous", ko:"그들의 전략은 여전히 다소 모호하다." }] },
-
-  { word:"negligible", pos:"adj", level:"C1", meanings:["무시할 만한","미미한"],
-    syn:["insignificant","trivial","minute"], ant:["substantial"],
-    ex:[{ s:"The difference in cost was {{}}.", f:"negligible", ko:"비용 차이는 미미했다." }] },
-
-  { word:"notorious", pos:"adj", level:"B2", meanings:["악명 높은"],
-    syn:["infamous","disreputable","ill-famed"], ant:["esteemed"],
-    ex:[{ s:"The junction is {{}} for accidents.", f:"notorious", ko:"그 교차로는 사고로 악명이 높다." }],
-    col:[{ p:"notorious {{}} corruption", a:"for", pool:"prep", note:"notorious for ~ : ~로 악명 높은" }] },
-
-  { word:"novice", pos:"n", level:"B2", meanings:["초보자","신참"],
-    syn:["beginner","neophyte","apprentice"], ant:["veteran"],
-    ex:[{ s:"The course is aimed at the complete {{}}.", f:"novice", ko:"그 강좌는 완전 초보자를 대상으로 한다." }] },
-
-  { word:"oblivious", pos:"adj", level:"C1", meanings:["의식하지 못하는","잊고 있는"],
-    syn:["unaware","heedless","ignorant"], ant:["cognizant"],
-    col:[{ p:"oblivious {{}} the danger", a:"to", pool:"prep", note:"oblivious to ~ : ~을 알아채지 못하는" }] },
-
-  { word:"obsolete", pos:"adj", level:"B2", meanings:["구식의","쓸모없어진"],
-    syn:["outdated","antiquated","defunct"], ant:["current"],
-    ex:[{ s:"The format became {{}} within five years.", f:"obsolete", ko:"그 포맷은 5년 안에 구식이 되었다." }] },
-
-  { word:"obstinate", pos:"adj", level:"C1", meanings:["고집스러운","완강한"],
-    syn:["stubborn","headstrong","intransigent"], ant:["compliant"],
-    ex:[{ s:"He was {{}} in refusing any compromise.", f:"obstinate", ko:"그는 어떤 타협도 거부하며 완강했다." }] },
-
-  { word:"onerous", pos:"adj", level:"C2", meanings:["부담스러운","까다로운"],
-    syn:["burdensome","arduous","taxing"], ant:["effortless"],
-    ex:[{ s:"The contract imposes {{}} reporting duties.", f:"onerous", ko:"그 계약은 부담스러운 보고 의무를 부과한다." }] },
-
-  { word:"opaque", pos:"adj", level:"C1", meanings:["불투명한","이해하기 어려운"],
-    syn:["unclear","obscure","impenetrable"], ant:["transparent"],
-    ex:[{ s:"The funding structure is deliberately {{}}.", f:"opaque", ko:"그 자금 구조는 의도적으로 불투명하다." }] },
-
-  { word:"ostensible", pos:"adj", level:"C2", meanings:["표면상의","겉보기의"],
-    syn:["apparent","outward","professed"], ant:["actual"],
-    ex:[{ s:"The {{}} reason was budgetary, but politics played a role.", f:"ostensible", ko:"표면상의 이유는 예산이었지만 정치가 작용했다." }] },
-
-  { word:"ostracize", pos:"v", level:"C2", meanings:["배척하다","외면하다"],
-    syn:["shun","exclude","banish"], ant:["welcome"],
-    ex:[{ s:"Whistleblowers are often {{}} by colleagues.", f:"ostracized", ko:"내부 고발자는 종종 동료들에게 배척당한다." }] },
-
-  /* ── P ───────────────────────────────────────────── */
-  { word:"painstaking", pos:"adj", level:"C1", meanings:["공들인","고생스러운"],
-    syn:["meticulous","thorough","diligent"], ant:["slapdash"],
-    ex:[{ s:"The map was the result of {{}} fieldwork.", f:"painstaking", ko:"그 지도는 공들인 현장 조사의 결과물이었다." }] },
-
-  { word:"paramount", pos:"adj", level:"C1", meanings:["가장 중요한","최고의"],
-    syn:["supreme","foremost","overriding"], ant:["subordinate"],
-    ex:[{ s:"Passenger safety is {{}}.", f:"paramount", ko:"승객 안전이 가장 중요하다." }] },
-
-  { word:"paucity", pos:"n", level:"C2", meanings:["부족","소량"],
-    syn:["dearth","scarcity","shortage"], ant:["abundance"],
-    ex:[{ s:"A {{}} of funding stalled the research.", f:"paucity", ko:"자금 부족이 그 연구를 정체시켰다." }] },
-
-  { word:"pejorative", pos:"adj", level:"C2", meanings:["경멸적인","비하하는"],
-    syn:["derogatory","disparaging","belittling"], ant:["complimentary"],
-    ex:[{ s:"The term is now considered {{}}.", f:"pejorative", ko:"그 용어는 현재 경멸적인 것으로 여겨진다." }] },
-
-  { word:"perfunctory", pos:"adj", level:"C2", meanings:["형식적인","성의 없는"],
-    syn:["cursory","mechanical","superficial"], ant:["thorough"],
-    ex:[{ s:"He gave the report a {{}} glance.", f:"perfunctory", ko:"그는 보고서를 형식적으로 훑어봤다." }] },
-
-  { word:"pernicious", pos:"adj", level:"C2", meanings:["유해한","치명적인"],
-    syn:["harmful","destructive","deleterious"], ant:["innocuous"],
-    ex:[{ s:"Misinformation has a {{}} influence on debate.", f:"pernicious", ko:"잘못된 정보는 토론에 유해한 영향을 미친다." }] },
-
-  { word:"perseverance", pos:"n", level:"B2", meanings:["인내","끈기"],
-    syn:["persistence","tenacity","steadfastness"], ant:["indolence"],
-    ex:[{ s:"Her {{}} finally paid off.", f:"perseverance", ko:"그녀의 끈기가 마침내 결실을 보았다." }] },
-
-  { word:"pertinent", pos:"adj", level:"C1", meanings:["적절한","관련 있는"],
-    syn:["relevant","germane","applicable"], ant:["extraneous"],
-    ex:[{ s:"She raised a highly {{}} objection.", f:"pertinent", ko:"그녀는 매우 적절한 이의를 제기했다." }] },
-
-  { word:"placate", pos:"v", level:"C2", meanings:["달래다","진정시키다"],
-    syn:["appease","pacify","mollify"], ant:["provoke"],
-    ex:[{ s:"Nothing could {{}} the angry crowd.", f:"placate", ko:"어떤 것도 성난 군중을 달랠 수 없었다." }] },
-
-  { word:"plausible", pos:"adj", level:"B2", meanings:["그럴듯한","타당해 보이는"],
-    syn:["credible","believable","convincing"], ant:["implausible"],
-    ex:[{ s:"That is the most {{}} explanation so far.", f:"plausible", ko:"그것이 지금까지 가장 그럴듯한 설명이다." }] },
-
-  { word:"precarious", pos:"adj", level:"C1", meanings:["불안정한","위태로운"],
-    syn:["unstable","perilous","insecure"], ant:["secure"],
-    ex:[{ s:"Many workers are in {{}} employment.", f:"precarious", ko:"많은 노동자가 불안정한 고용 상태에 있다." }] },
-
-  { word:"preclude", pos:"v", level:"C2", meanings:["못하게 하다","배제하다"],
-    syn:["prevent","prohibit","rule out"], ant:["permit"],
-    ex:[{ s:"The clause does not {{}} further appeals.", f:"preclude", ko:"그 조항은 추가 항소를 배제하지 않는다." }] },
-
-  { word:"predicament", pos:"n", level:"C1", meanings:["곤경","궁지"],
-    syn:["plight","dilemma","quandary"],
-    ex:[{ s:"He explained his financial {{}} to the bank.", f:"predicament", ko:"그는 은행에 자신의 재정적 곤경을 설명했다." }] },
-
-  { word:"prevalent", pos:"adj", level:"C1", meanings:["널리 퍼진","일반적인"],
-    syn:["widespread","common","rife"], ant:["rare"],
-    ex:[{ s:"The practice is still {{}} in rural areas.", f:"prevalent", ko:"그 관행은 농촌 지역에서 여전히 널리 퍼져 있다." }] },
-
-  { word:"procrastinate", pos:"v", level:"C1", meanings:["미루다","지체하다"],
-    syn:["delay","postpone","dawdle"], ant:["expedite"],
-    ex:[{ s:"Students who {{}} rarely finish on time.", f:"procrastinate", ko:"미루는 학생들은 좀처럼 제때 끝내지 못한다." }] },
-
-  { word:"prodigal", pos:"adj", level:"C2", meanings:["낭비하는","방탕한"],
-    syn:["wasteful","extravagant","profligate"], ant:["frugal"],
-    ex:[{ s:"The regime was {{}} with public money.", f:"prodigal", ko:"그 정권은 공적 자금을 낭비했다." }] },
-
-  { word:"profound", pos:"adj", level:"B2", meanings:["깊은","심오한"],
-    syn:["deep","intense","far-reaching"], ant:["superficial"],
-    ex:[{ s:"The ruling had a {{}} impact on privacy law.", f:"profound", ko:"그 판결은 프라이버시 법에 깊은 영향을 미쳤다." }] },
-
-  { word:"proliferate", pos:"v", level:"C2", meanings:["급증하다","확산하다"],
-    syn:["multiply","burgeon","mushroom"], ant:["dwindle"],
-    ex:[{ s:"Fake accounts began to {{}} on the platform.", f:"proliferate", ko:"그 플랫폼에서 가짜 계정이 급증하기 시작했다." }] },
-
-  { word:"propensity", pos:"n", level:"C2", meanings:["경향","성향"],
-    syn:["tendency","inclination","predisposition"], ant:["aversion"],
-    col:[{ p:"a propensity {{}} violence", a:"for", pool:"prep", note:"a propensity for ~ : ~하는 성향" }] },
-
-  { word:"prosaic", pos:"adj", level:"C2", meanings:["평범한","산문적인"],
-    syn:["mundane","pedestrian","unimaginative"], ant:["poetic"],
-    ex:[{ s:"The truth was more {{}} than the rumor.", f:"prosaic", ko:"진실은 소문보다 더 평범했다." }] },
-
-  { word:"prudent", pos:"adj", level:"C1", meanings:["신중한","분별 있는"],
-    syn:["cautious","judicious","circumspect"], ant:["reckless"],
-    ex:[{ s:"It would be {{}} to wait for the audit.", f:"prudent", ko:"감사를 기다리는 것이 신중할 것이다." }] },
-
-  { word:"pugnacious", pos:"adj", level:"C2", meanings:["싸우기 좋아하는","공격적인"],
-    syn:["belligerent","combative","aggressive"], ant:["peaceable"],
-    ex:[{ s:"His {{}} style alienated potential allies.", f:"pugnacious", ko:"그의 공격적인 방식은 잠재적 동맹을 멀어지게 했다." }] },
-
-  /* ── Q · R ───────────────────────────────────────── */
-  { word:"quandary", pos:"n", level:"C2", meanings:["곤경","당혹"],
-    syn:["dilemma","predicament","plight"],
-    ex:[{ s:"The offer put her in a real {{}}.", f:"quandary", ko:"그 제안은 그녀를 진짜 곤경에 빠뜨렸다." }] },
-
-  { word:"quell", pos:"v", level:"C2", meanings:["진압하다","가라앉히다"],
-    syn:["suppress","subdue","quash"], ant:["incite"],
-    ex:[{ s:"Troops were sent to {{}} the unrest.", f:"quell", ko:"군대가 소란을 진압하기 위해 파견되었다." }] },
-
-  { word:"quintessential", pos:"adj", level:"C2", meanings:["전형적인","본질적인"],
-    syn:["typical","archetypal","classic"], ant:["atypical"],
-    ex:[{ s:"He is the {{}} civil servant.", f:"quintessential", ko:"그는 전형적인 공무원이다." }] },
-
-  { word:"rebuke", pos:"v", level:"C1", meanings:["질책하다","비난하다"],
-    syn:["reprimand","admonish","censure"], ant:["commend"],
-    ex:[{ s:"The chair {{}} him for interrupting.", f:"rebuked", ko:"의장은 그가 말을 끊은 것을 질책했다." }] },
-
-  { word:"recalcitrant", pos:"adj", level:"C2", meanings:["반항적인","다루기 힘든"],
-    syn:["defiant","unruly","obstinate"], ant:["obedient"],
-    ex:[{ s:"A few {{}} members blocked the vote.", f:"recalcitrant", ko:"몇몇 반항적인 위원들이 표결을 막았다." }] },
-
-  { word:"redundant", pos:"adj", level:"C1", meanings:["불필요한","중복의"],
-    syn:["superfluous","unnecessary","surplus"], ant:["essential"],
-    ex:[{ s:"The second paragraph is entirely {{}}.", f:"redundant", ko:"두 번째 단락은 전적으로 불필요하다." }] },
-
-  { word:"refrain", pos:"v", level:"B2", meanings:["삼가다","자제하다"],
-    syn:["abstain","desist","forbear"], ant:["indulge"],
-    col:[{ p:"refrain {{}} smoking", a:"from", pool:"prep", note:"refrain from ~ : ~을 삼가다" }] },
-
-  { word:"refute", pos:"v", level:"C1", meanings:["반박하다","논파하다"],
-    syn:["disprove","rebut","contradict"], ant:["corroborate"],
-    ex:[{ s:"He produced figures to {{}} the accusation.", f:"refute", ko:"그는 그 비난을 반박할 수치를 제시했다." }] },
-
-  { word:"reiterate", pos:"v", level:"C1", meanings:["반복하다","되풀이하다"],
-    syn:["repeat","restate","recapitulate"],
-    ex:[{ s:"Let me {{}} our position on the matter.", f:"reiterate", ko:"그 문제에 대한 우리의 입장을 다시 말씀드리겠습니다." }] },
-
-  { word:"relegate", pos:"v", level:"C2", meanings:["좌천시키다","격하하다"],
-    syn:["demote","downgrade","consign"], ant:["promote"],
-    col:[{ p:"relegate him {{}} a minor post", a:"to", pool:"prep", note:"relegate A to B : A를 B로 격하하다" }] },
-
-  { word:"relinquish", pos:"v", level:"C2", meanings:["포기하다","내주다"],
-    syn:["surrender","cede","abandon"], ant:["retain"],
-    ex:[{ s:"He refused to {{}} control of the firm.", f:"relinquish", ko:"그는 회사의 지배권을 내주기를 거부했다." }] },
-
-  { word:"reluctant", pos:"adj", level:"B2", meanings:["꺼리는","마음이 없는"],
-    syn:["unwilling","hesitant","disinclined"], ant:["eager"],
-    ex:[{ s:"Banks were {{}} to lend during the crisis.", f:"reluctant", ko:"위기 동안 은행들은 대출을 꺼렸다." }] },
-
-  { word:"remorse", pos:"n", level:"C1", meanings:["후회","자책"],
-    syn:["regret","contrition","penitence"], ant:["indifference"],
-    ex:[{ s:"He showed no {{}} at the hearing.", f:"remorse", ko:"그는 심리에서 아무런 후회도 보이지 않았다." }] },
-
-  { word:"reprehensible", pos:"adj", level:"C2", meanings:["비난받을 만한","괘씸한"],
-    syn:["blameworthy","deplorable","disgraceful"], ant:["admirable"],
-    ex:[{ s:"The conduct was described as morally {{}}.", f:"reprehensible", ko:"그 행위는 도덕적으로 비난받을 만하다고 묘사되었다." }] },
-
-  { word:"repudiate", pos:"v", level:"C2", meanings:["부인하다","거부하다"],
-    syn:["reject","renounce","disavow"], ant:["embrace"],
-    ex:[{ s:"The party moved to {{}} its earlier pledge.", f:"repudiate", ko:"그 정당은 이전 공약을 부인하는 쪽으로 움직였다." }] },
-
-  { word:"resilient", pos:"adj", level:"B2", meanings:["회복력 있는","탄력적인"],
-    syn:["tough","adaptable","buoyant"], ant:["fragile"],
-    ex:[{ s:"The economy proved more {{}} than expected.", f:"resilient", ko:"경제는 예상보다 회복력이 강한 것으로 드러났다." }] },
-
-  { word:"reticent", pos:"adj", level:"C2", meanings:["말을 아끼는","말이 없는"],
-    syn:["reserved","taciturn","uncommunicative"], ant:["garrulous"],
-    ex:[{ s:"Officials were {{}} about the negotiations.", f:"reticent", ko:"관계자들은 협상에 대해 말을 아꼈다." }] },
-
-  { word:"rudimentary", pos:"adj", level:"C1", meanings:["기초적인","초보의"],
-    syn:["basic","elementary","undeveloped"], ant:["advanced"],
-    ex:[{ s:"He has only a {{}} grasp of statistics.", f:"rudimentary", ko:"그는 통계에 대해 기초적인 이해만 갖고 있다." }] },
-
-  /* ── S ───────────────────────────────────────────── */
-  { word:"sagacious", pos:"adj", level:"C2", meanings:["현명한","슬기로운"],
-    syn:["wise","astute","shrewd"], ant:["foolish"],
-    ex:[{ s:"It was a {{}} choice of successor.", f:"sagacious", ko:"그것은 현명한 후계자 선택이었다." }] },
-
-  { word:"salient", pos:"adj", level:"C2", meanings:["두드러진","현저한"],
-    syn:["prominent","notable","conspicuous"], ant:["negligible"],
-    ex:[{ s:"Let me summarize the {{}} points.", f:"salient", ko:"두드러진 요점들을 요약하겠습니다." }] },
-
-  { word:"scrupulous", pos:"adj", level:"C2", meanings:["세심한","양심적인"],
-    syn:["meticulous","conscientious","principled"], ant:["unscrupulous"],
-    ex:[{ s:"She was {{}} in crediting her sources.", f:"scrupulous", ko:"그녀는 출처를 밝히는 데 양심적이었다." }] },
-
-  { word:"scrutinize", pos:"v", level:"C1", meanings:["정밀히 조사하다","면밀히 살피다"],
-    syn:["examine","inspect","probe"], ant:["skim"],
-    ex:[{ s:"Regulators will {{}} the merger closely.", f:"scrutinize", ko:"규제 당국은 그 합병을 면밀히 조사할 것이다." }] },
-
-  { word:"skeptical", pos:"adj", level:"B2", meanings:["회의적인","의심하는"],
-    syn:["doubtful","dubious","unconvinced"], ant:["credulous"],
-    ex:[{ s:"Economists remain {{}} of the forecast.", f:"skeptical", ko:"경제학자들은 그 전망에 회의적이다." }] },
-
-  { word:"solicit", pos:"v", level:"C1", meanings:["요청하다","간청하다"],
-    syn:["request","seek","petition"],
-    ex:[{ s:"The agency will {{}} public comment.", f:"solicit", ko:"그 기관은 공개 의견을 요청할 것이다." }] },
-
-  { word:"spurious", pos:"adj", level:"C2", meanings:["가짜의","허위의"],
-    syn:["false","bogus","counterfeit"], ant:["genuine"],
-    ex:[{ s:"The claim rests on {{}} statistics.", f:"spurious", ko:"그 주장은 허위 통계에 기초한다." }] },
-
-  { word:"squander", pos:"v", level:"C1", meanings:["낭비하다","허비하다"],
-    syn:["waste","dissipate","misspend"], ant:["conserve"],
-    ex:[{ s:"They {{}} a decisive lead in the second half.", f:"squandered", ko:"그들은 후반에 결정적인 리드를 허비했다." }] },
-
-  { word:"stagnant", pos:"adj", level:"C1", meanings:["침체된","고여 있는"],
-    syn:["static","inactive","sluggish"], ant:["dynamic"],
-    ex:[{ s:"Wages have been {{}} for a decade.", f:"stagnant", ko:"임금이 10년간 정체되어 있다." }] },
-
-  { word:"staunch", pos:"adj", level:"C2", meanings:["확고한","충실한"],
-    syn:["loyal","steadfast","unwavering"], ant:["unreliable"],
-    ex:[{ s:"She is a {{}} defender of press freedom.", f:"staunch", ko:"그녀는 언론 자유의 확고한 옹호자이다." }] },
-
-  { word:"stringent", pos:"adj", level:"C2", meanings:["엄격한","엄중한"],
-    syn:["strict","rigorous","severe"], ant:["lenient"],
-    ex:[{ s:"The new rules are far more {{}}.", f:"stringent", ko:"새 규정은 훨씬 더 엄격하다." }] },
-
-  { word:"subsequent", pos:"adj", level:"B2", meanings:["이후의","다음의"],
-    syn:["following","succeeding","ensuing"], ant:["preceding"],
-    ex:[{ s:"The error was corrected in {{}} editions.", f:"subsequent", ko:"그 오류는 이후 판에서 수정되었다." }] },
-
-  { word:"substantiate", pos:"v", level:"C2", meanings:["입증하다","실증하다"],
-    syn:["corroborate","verify","validate"], ant:["refute"],
-    ex:[{ s:"He could not {{}} any of the allegations.", f:"substantiate", ko:"그는 그 주장 중 어느 것도 입증할 수 없었다." }] },
-
-  { word:"subtle", pos:"adj", level:"B2", meanings:["미묘한","절제된"],
-    syn:["understated","delicate","nuanced"], ant:["flagrant"],
-    ex:[{ s:"There is a {{}} difference between the two terms.", f:"subtle", ko:"두 용어 사이에는 미묘한 차이가 있다." }] },
-
-  { word:"succinct", pos:"adj", level:"C2", meanings:["간결한","간명한"],
-    syn:["concise","terse","pithy"], ant:["verbose"],
-    ex:[{ s:"Keep the summary {{}} and factual.", f:"succinct", ko:"요약은 간결하고 사실에 근거하게 유지하라." }] },
-
-  { word:"succumb", pos:"v", level:"C2", meanings:["굴복하다","넘어가다"],
-    syn:["yield","surrender","capitulate"], ant:["resist"],
-    col:[{ p:"succumb {{}} pressure", a:"to", pool:"prep", note:"succumb to ~ : ~에 굴복하다" }] },
-
-  { word:"superfluous", pos:"adj", level:"C2", meanings:["불필요한","남는"],
-    syn:["redundant","excess","needless"], ant:["indispensable"],
-    ex:[{ s:"Most of the appendix is {{}}.", f:"superfluous", ko:"부록의 대부분은 불필요하다." }] },
-
-  { word:"surmise", pos:"v", level:"C2", meanings:["추측하다","짐작하다"],
-    syn:["conjecture","infer","suppose"],
-    ex:[{ s:"We can only {{}} what he intended.", f:"surmise", ko:"우리는 그가 무엇을 의도했는지 추측할 수밖에 없다." }] },
-
-  { word:"susceptible", pos:"adj", level:"C1", meanings:["영향받기 쉬운","취약한"],
-    syn:["vulnerable","prone","liable"], ant:["impervious"],
-    col:[{ p:"susceptible {{}} infection", a:"to", pool:"prep", note:"susceptible to ~ : ~에 취약한" }] },
-
-  /* ── T ───────────────────────────────────────────── */
-  { word:"tacit", pos:"adj", level:"C2", meanings:["암묵적인","무언의"],
-    syn:["implicit","unspoken","implied"], ant:["explicit"],
-    ex:[{ s:"There was {{}} agreement not to raise the issue.", f:"tacit", ko:"그 문제를 꺼내지 않겠다는 암묵적 합의가 있었다." }] },
-
-  { word:"taciturn", pos:"adj", level:"C2", meanings:["말이 없는","무언의"],
-    syn:["reticent","reserved","silent"], ant:["garrulous"],
-    ex:[{ s:"The witness was {{}} under cross-examination.", f:"taciturn", ko:"그 증인은 반대 신문에서 말이 없었다." }] },
-
-  { word:"tangible", pos:"adj", level:"C1", meanings:["실체적인","유형의"],
-    syn:["concrete","palpable","perceptible"], ant:["intangible"],
-    ex:[{ s:"Voters want {{}} results, not promises.", f:"tangible", ko:"유권자들은 약속이 아니라 실질적인 성과를 원한다." }] },
-
-  { word:"tantamount", pos:"adj", level:"C2", meanings:["~와 마찬가지인","동등한"],
-    syn:["equivalent","comparable","as good as"],
-    col:[{ p:"tantamount {{}} a confession", a:"to", pool:"prep", note:"tantamount to ~ : ~와 다름없는" }] },
-
-  { word:"tenacious", pos:"adj", level:"C1", meanings:["집요한","끈질긴"],
-    syn:["persistent","dogged","resolute"], ant:["irresolute"],
-    ex:[{ s:"She is a {{}} negotiator.", f:"tenacious", ko:"그녀는 집요한 협상가이다." }] },
-
-  { word:"tentative", pos:"adj", level:"B2", meanings:["잠정적인","조심스러운"],
-    syn:["provisional","preliminary","unconfirmed"], ant:["definitive"],
-    ex:[{ s:"We reached a {{}} agreement on Friday.", f:"tentative", ko:"우리는 금요일에 잠정 합의에 도달했다." }] },
-
-  { word:"tenuous", pos:"adj", level:"C2", meanings:["미약한","빈약한"],
-    syn:["weak","flimsy","slight"], ant:["substantial"],
-    ex:[{ s:"The link between the two events is {{}}.", f:"tenuous", ko:"두 사건 사이의 연관성은 미약하다." }] },
-
-  { word:"thwart", pos:"v", level:"C2", meanings:["좌절시키다","저지하다"],
-    syn:["foil","frustrate","obstruct"], ant:["facilitate"],
-    ex:[{ s:"Police acted quickly to {{}} the plot.", f:"thwart", ko:"경찰은 그 음모를 저지하기 위해 신속히 움직였다." }] },
-
-  { word:"transient", pos:"adj", level:"C2", meanings:["일시적인","순간의"],
-    syn:["temporary","fleeting","ephemeral"], ant:["permanent"],
-    ex:[{ s:"The side effects are mild and {{}}.", f:"transient", ko:"그 부작용은 경미하고 일시적이다." }] },
-
-  { word:"trivial", pos:"adj", level:"B2", meanings:["사소한","하찮은"],
-    syn:["insignificant","petty","negligible"], ant:["paramount"],
-    ex:[{ s:"They argued over {{}} procedural points.", f:"trivial", ko:"그들은 사소한 절차 문제로 다퉜다." }] },
-
-  { word:"truncate", pos:"v", level:"C2", meanings:["잘라내다","단축하다"],
-    syn:["shorten","curtail","abbreviate"], ant:["extend"],
-    ex:[{ s:"The report was {{}} to fit two pages.", f:"truncated", ko:"그 보고서는 두 페이지에 맞추려고 축약되었다." }] },
-
-  /* ── U · V · W · Z ───────────────────────────────── */
-  { word:"ubiquitous", pos:"adj", level:"C2", meanings:["어디에나 있는","아주 흔한"],
-    syn:["omnipresent","pervasive","universal"], ant:["scarce"],
-    ex:[{ s:"Smartphones are now {{}} in classrooms.", f:"ubiquitous", ko:"스마트폰은 이제 교실에서 어디서나 볼 수 있다." }] },
-
-  { word:"unanimous", pos:"adj", level:"B2", meanings:["만장일치의"],
-    syn:["undisputed","united","consensual"], ant:["divided"],
-    ex:[{ s:"The verdict was {{}}.", f:"unanimous", ko:"평결은 만장일치였다." }] },
-
-  { word:"undermine", pos:"v", level:"C1", meanings:["약화시키다","훼손하다"],
-    syn:["weaken","subvert","sabotage"], ant:["bolster"],
-    ex:[{ s:"Leaks {{}} confidence in the process.", f:"undermine", ko:"유출은 그 절차에 대한 신뢰를 훼손한다." }] },
-
-  { word:"unequivocal", pos:"adj", level:"C2", meanings:["명백한","분명한"],
-    syn:["unambiguous","explicit","categorical"], ant:["equivocal"],
-    ex:[{ s:"The court gave an {{}} answer.", f:"unequivocal", ko:"법원은 명백한 답을 내놓았다." }] },
-
-  { word:"unprecedented", pos:"adj", level:"C1", meanings:["전례 없는"],
-    syn:["unparalleled","unheard-of","novel"], ant:["routine"],
-    ex:[{ s:"The scheme received an {{}} number of applications.", f:"unprecedented", ko:"그 제도는 전례 없는 수의 신청을 받았다." }] },
-
-  { word:"unscrupulous", pos:"adj", level:"C1", meanings:["파렴치한","비양심적인"],
-    syn:["unethical","dishonest","unprincipled"], ant:["scrupulous"],
-    ex:[{ s:"{{}} agents exploited the applicants.", f:"Unscrupulous", ko:"비양심적인 중개인들이 신청자들을 이용했다." }] },
-
-  { word:"untenable", pos:"adj", level:"C2", meanings:["지지할 수 없는","버틸 수 없는"],
-    syn:["indefensible","unsustainable","insupportable"], ant:["defensible"],
-    ex:[{ s:"His position became {{}} after the leak.", f:"untenable", ko:"유출 이후 그의 입지는 버틸 수 없게 되었다." }] },
-
-  { word:"usurp", pos:"v", level:"C2", meanings:["강탈하다","찬탈하다"],
-    syn:["seize","appropriate","commandeer"], ant:["relinquish"],
-    ex:[{ s:"The council was accused of trying to {{}} judicial power.", f:"usurp", ko:"그 의회는 사법권을 침탈하려 했다는 비난을 받았다." }] },
-
-  { word:"vacillate", pos:"v", level:"C2", meanings:["망설이다","흔들리다"],
-    syn:["waver","hesitate","dither"], ant:["resolve"],
-    ex:[{ s:"Ministers continued to {{}} over the tax.", f:"vacillate", ko:"장관들은 그 세금을 두고 계속 갈팡질팡했다." }] },
-
-  { word:"venerate", pos:"v", level:"C2", meanings:["숭배하다","공경하다"],
-    syn:["revere","honor","esteem"], ant:["despise"],
-    ex:[{ s:"The town still {{}} its founder.", f:"venerates", ko:"그 마을은 여전히 창건자를 공경한다." }] },
-
-  { word:"veracity", pos:"n", level:"C2", meanings:["진실성","정확성"],
-    syn:["truthfulness","accuracy","honesty"], ant:["falsity"],
-    ex:[{ s:"Nobody questioned the {{}} of her account.", f:"veracity", ko:"아무도 그녀 진술의 진실성을 의심하지 않았다." }] },
-
-  { word:"verbose", pos:"adj", level:"C2", meanings:["장황한","말이 많은"],
-    syn:["wordy","long-winded","prolix"], ant:["succinct"],
-    ex:[{ s:"The introduction is needlessly {{}}.", f:"verbose", ko:"서론이 불필요하게 장황하다." }] },
-
-  { word:"viable", pos:"adj", level:"B2", meanings:["실행 가능한","생존 가능한"],
-    syn:["feasible","workable","practicable"], ant:["untenable"],
-    ex:[{ s:"Solar became a {{}} alternative in the region.", f:"viable", ko:"그 지역에서 태양광은 실행 가능한 대안이 되었다." }] },
-
-  { word:"vindicate", pos:"v", level:"C2", meanings:["정당함을 입증하다","무죄를 밝히다"],
-    syn:["justify","exonerate","absolve"], ant:["incriminate"],
-    ex:[{ s:"The audit fully {{}} her decision.", f:"vindicated", ko:"그 감사는 그녀의 결정이 정당했음을 완전히 입증했다." }] },
-
-  { word:"virulent", pos:"adj", level:"C2", meanings:["치명적인","악의적인"],
-    syn:["deadly","toxic","venomous"], ant:["innocuous"],
-    ex:[{ s:"A {{}} strain spread through the region.", f:"virulent", ko:"치명적인 변종이 그 지역에 퍼졌다." }] },
-
-  { word:"volatile", pos:"adj", level:"C1", meanings:["변덕스러운","불안정한"],
-    syn:["unstable","mercurial","erratic"], ant:["steady"],
-    ex:[{ s:"Currency markets turned {{}} overnight.", f:"volatile", ko:"환율 시장이 하룻밤에 불안정해졌다." }] },
-
-  { word:"voracious", pos:"adj", level:"C2", meanings:["탐욕스러운","왕성한"],
-    syn:["insatiable","ravenous","greedy"], ant:["satiated"],
-    ex:[{ s:"She is a {{}} reader of history.", f:"voracious", ko:"그녀는 역사서를 왕성하게 읽는 독서가이다." }] },
-
-  { word:"wane", pos:"v", level:"C1", meanings:["줄어들다","약해지다"],
-    syn:["diminish","decline","subside"], ant:["intensify"],
-    ex:[{ s:"Public support began to {{}} after the scandal.", f:"wane", ko:"스캔들 이후 대중의 지지가 약해지기 시작했다." }] },
-
-  { word:"wary", pos:"adj", level:"B2", meanings:["조심하는","경계하는"],
-    syn:["cautious","circumspect","guarded"], ant:["reckless"],
-    ex:[{ s:"Investors are {{}} of sudden policy shifts.", f:"wary", ko:"투자자들은 갑작스러운 정책 변화를 경계한다." }] },
-
-  { word:"whimsical", pos:"adj", level:"C2", meanings:["변덕스러운","기발한"],
-    syn:["capricious","fanciful","quirky"], ant:["conventional"],
-    ex:[{ s:"The design has a {{}} charm.", f:"whimsical", ko:"그 디자인에는 기발한 매력이 있다." }] },
-
-  { word:"zealous", pos:"adj", level:"C1", meanings:["열성적인","열심인"],
-    syn:["fervent","ardent","passionate"], ant:["indifferent"],
-    ex:[{ s:"A {{}} reformer, he pushed the bill through.", f:"zealous", ko:"열성적인 개혁가였던 그는 그 법안을 통과시켰다." }] }
+  { word:"assessment", pos:"n", level:"B2", meanings:["평가","사정"],
+    syn:["evaluation","appraisal","judgment"],
+    ex:[{ s:"The teacher's {{}} of his work was fair.", f:"assessment", ko:"그의 작업에 대한 교사의 평가는 공정했다." }] },
+
+  { word:"asset", pos:"n", level:"B2", meanings:["자산","이점"],
+    syn:["resource","advantage","holding"], ant:["liability"],
+    ex:[{ s:"Her calm under pressure is a real {{}}.", f:"asset", ko:"압박 속에서의 침착함은 그녀의 진정한 자산이다." }] },
+
+  { word:"assign", pos:"v", level:"B2", meanings:["배정하다","할당하다"],
+    syn:["allocate","allot","designate"],
+    ex:[{ s:"The editor will {{}} each writer a topic.", f:"assign", ko:"편집장은 각 작가에게 주제를 배정할 것이다." }] },
+
+  { word:"assignment", pos:"n", level:"B1", meanings:["과제","임무"],
+    syn:["task","duty","project"],
+    ex:[{ s:"The history {{}} is due on Friday.", f:"assignment", ko:"역사 과제는 금요일까지이다." }] },
+
+  { word:"assimilation", pos:"n", level:"C2", meanings:["동화","흡수"],
+    syn:["integration","absorption","incorporation"], ant:["segregation"],
+    ex:[{ s:"The film studies the {{}} of immigrants.", f:"assimilation", ko:"그 영화는 이민자들의 동화를 다룬다." }] },
+
+  { word:"assist", pos:"v", level:"B1", meanings:["돕다","보조하다"],
+    syn:["help","aid","support"], ant:["hinder"],
+    ex:[{ s:"Volunteers {{}} the staff during festivals.", f:"assist", ko:"자원봉사자들은 축제 동안 직원을 돕는다." }] },
+
+  { word:"assistant director", pos:"phr", level:"B2", meanings:["조감독","부책임자"],
+    syn:["deputy director","second-in-command","aide"] },
+
+  { word:"associate", pos:"v", level:"B2", meanings:["연관 짓다","결부하다"],
+    syn:["link","connect","relate"], ant:["dissociate"],
+    ex:[{ s:"People often {{}} the color red with danger.", f:"associate", ko:"사람들은 흔히 빨간색을 위험과 연관 짓는다." }],
+    col:[{ p:"associate red {{}} danger", a:"with", pool:"prep", note:"associate A with B : A를 B와 연관 짓다" }] },
+
+  { word:"association", pos:"n", level:"B2", meanings:["협회","연관"],
+    syn:["organization","connection","alliance"],
+    ex:[{ s:"She joined a local writers' {{}}.", f:"association", ko:"그녀는 지역 작가 협회에 가입했다." }] },
+
+  { word:"assort", pos:"v", level:"C2", meanings:["분류하다","구분하다"],
+    syn:["classify","sort","categorize"], ant:["mix"],
+    ex:[{ s:"Workers {{}} the fruit by size and color.", f:"assort", ko:"인부들은 과일을 크기와 색으로 분류한다." }] },
+
+  { word:"assume", pos:"v", level:"B2", meanings:["추정하다","(책임을) 지다"],
+    syn:["suppose","presume","take on"],
+    ex:[{ s:"Do not {{}} that silence means agreement.", f:"assume", ko:"침묵이 동의를 뜻한다고 추정하지 마라." }] },
+
+  { word:"assumption", pos:"n", level:"B2", meanings:["추정","가정"],
+    syn:["presumption","supposition","premise"],
+    ex:[{ s:"The plan rests on one shaky {{}}.", f:"assumption", ko:"그 계획은 하나의 불안정한 가정에 기대고 있다." }] },
+
+  { word:"assure", pos:"v", level:"B2", meanings:["장담하다","보장하다"],
+    syn:["guarantee","reassure","promise"],
+    ex:[{ s:"I can {{}} you that the data is safe.", f:"assure", ko:"데이터가 안전하다는 것을 장담할 수 있습니다." }] },
+
+  { word:"assured", pos:"adj", level:"C1", meanings:["자신 있는","보장된"],
+    syn:["confident","certain","guaranteed"], ant:["uncertain"],
+    ex:[{ s:"She gave an {{}} answer to every question.", f:"assured", ko:"그녀는 모든 질문에 자신 있는 대답을 했다." }] },
+
+  { word:"asteroid", pos:"n", level:"C1", meanings:["소행성"],
+    syn:["minor planet","space rock","planetoid"],
+    ex:[{ s:"A small {{}} passed close to Earth last night.", f:"asteroid", ko:"작은 소행성이 어젯밤 지구 가까이를 지나갔다." }] },
+
+  { word:"asthma", pos:"n", level:"B2", meanings:["천식"],
+    syn:["respiratory condition","wheezing disorder","bronchial illness"],
+    ex:[{ s:"Air pollution can worsen a child's {{}}.", f:"asthma", ko:"대기 오염은 아이의 천식을 악화시킬 수 있다." }] },
+
+  { word:"astonish", pos:"v", level:"B2", meanings:["놀라게 하다"],
+    syn:["amaze","astound","stun"],
+    ex:[{ s:"The results will {{}} even the experts.", f:"astonish", ko:"그 결과는 전문가들조차 놀라게 할 것이다." }] },
+
+  { word:"astonishment", pos:"n", level:"C1", meanings:["깜짝 놀람","경악"],
+    syn:["amazement","surprise","wonder"],
+    ex:[{ s:"To our {{}}, the old engine started at once.", f:"astonishment", ko:"놀랍게도 그 낡은 엔진은 단번에 시동이 걸렸다." }] },
+
+  { word:"astound", pos:"v", level:"C1", meanings:["경악시키다","큰 충격을 주다"],
+    syn:["amaze","astonish","stun"],
+    ex:[{ s:"The scale of the fraud {{}} investigators.", f:"astounded", ko:"그 사기의 규모는 조사관들을 경악시켰다." }] },
+
+  { word:"astrology", pos:"n", level:"C1", meanings:["점성술","점성학"],
+    syn:["horoscopy","star reading","zodiac study"],
+    ex:[{ s:"She reads about {{}} for fun, not belief.", f:"astrology", ko:"그녀는 믿어서가 아니라 재미로 점성술을 읽는다." }] },
+
+  { word:"astronaut", pos:"n", level:"B1", meanings:["우주비행사"],
+    syn:["cosmonaut","spacefarer","space traveler"],
+    ex:[{ s:"The {{}} spent six months on the station.", f:"astronaut", ko:"그 우주비행사는 정거장에서 6개월을 보냈다." }] },
+
+  { word:"astronomical", pos:"adj", level:"C1", meanings:["천문학적인","어마어마한"],
+    syn:["enormous","immense","colossal"], ant:["tiny"],
+    ex:[{ s:"The repair costs were simply {{}}.", f:"astronomical", ko:"수리 비용은 그야말로 천문학적이었다." }] },
+
+  { word:"astronomy", pos:"n", level:"B2", meanings:["천문학"],
+    syn:["stargazing","cosmology","space science"],
+    ex:[{ s:"His interest in {{}} began with a cheap telescope.", f:"astronomy", ko:"천문학에 대한 그의 관심은 값싼 망원경에서 시작됐다." }] },
+
+  { word:"at a loss", pos:"phr", level:"B2", meanings:["어쩔 줄 모르는","당황한"],
+    syn:["baffled","puzzled","perplexed"] },
+
+  { word:"at all costs", pos:"phr", level:"B2", meanings:["무슨 수를 써서라도","기필코"],
+    syn:["by any means","whatever happens","no matter what"] },
+
+  { word:"at hand", pos:"phr", level:"B2", meanings:["가까이 있는","임박한"],
+    syn:["nearby","close","imminent"] },
+
+  { word:"at large", pos:"phr", level:"C1", meanings:["일반적으로","(범인이) 잡히지 않은"],
+    syn:["in general","as a whole","free"] },
+
+  { word:"at length", pos:"phr", level:"C1", meanings:["마침내","상세히"],
+    syn:["finally","in detail","at last"] },
+
+  { word:"at risk", pos:"phr", level:"B2", meanings:["위험에 처한"],
+    syn:["endangered","vulnerable","in danger"] },
+
+  { word:"at second hand", pos:"phr", level:"C1", meanings:["간접적으로","전해 들어"],
+    syn:["indirectly","secondhand","via others"] },
+
+  { word:"at the edge", pos:"phr", level:"B2", meanings:["가장자리에","벼랑 끝에"],
+    syn:["on the brink","at the verge","on the margin"] },
+
+  { word:"at the expense of", pos:"phr", level:"C1", meanings:["~을 희생하면서","~을 대가로"],
+    syn:["at the cost of","to the detriment of","by sacrificing"] },
+
+  /* 원본의 "규칙·법률에 맞추어"는 뜻이 틀려 바로잡았습니다 */
+  { word:"at the mercy of", pos:"phr", level:"C1", meanings:["~에 좌우되는","~의 처분에 맡겨진"],
+    syn:["subject to","controlled by","at the whim of"] },
+
+  { word:"at the moment", pos:"phr", level:"B1", meanings:["바로 지금","현재"],
+    syn:["right now","currently","presently"] },
+
+  { word:"at wit's end", pos:"phr", level:"C1", meanings:["어찌할 바를 모르는","속수무책인"],
+    syn:["desperate","stumped","at a loss"] },
+
+  { word:"atheist", pos:"n", level:"C1", meanings:["무신론자"],
+    syn:["nonbeliever","freethinker","skeptic"], ant:["believer"],
+    ex:[{ s:"As an {{}}, he rarely visits temples.", f:"atheist", ko:"무신론자로서 그는 사원에 거의 가지 않는다." }] },
+
+
+  { word:"athlete", pos:"n", level:"B1", meanings:["운동선수"],
+    syn:["sportsperson","competitor","player"],
+    ex:[{ s:"Every {{}} trained hard before the games.", f:"athlete", ko:"모든 선수가 대회 전에 열심히 훈련했다." }] },
+
+  { word:"athletic", pos:"adj", level:"B2", meanings:["운동의","몸이 튼튼한"],
+    syn:["fit","muscular","sporty"], ant:["frail"],
+    ex:[{ s:"He has a lean, {{}} build.", f:"athletic", ko:"그는 날씬하고 탄탄한 체격을 지녔다." }] },
+
+  { word:"atmosphere", pos:"n", level:"B1", meanings:["분위기","대기"],
+    syn:["mood","ambience","air"],
+    ex:[{ s:"The cafe has a relaxed {{}}.", f:"atmosphere", ko:"그 카페는 편안한 분위기를 지녔다." }] },
+
+  { word:"atomic", pos:"adj", level:"B2", meanings:["원자의","원자력의"],
+    syn:["nuclear","subatomic","molecular"],
+    ex:[{ s:"The museum explains {{}} energy simply.", f:"atomic", ko:"그 박물관은 원자력 에너지를 쉽게 설명한다." }] },
+
+  { word:"attach", pos:"v", level:"B1", meanings:["첨부하다","붙이다"],
+    syn:["fasten","affix","append"], ant:["detach"],
+    ex:[{ s:"Please {{}} your resume to the email.", f:"attach", ko:"이메일에 이력서를 첨부해 주세요." }] },
+
+  { word:"attack", pos:"v", level:"B1", meanings:["공격하다"],
+    syn:["assault","strike","assail"], ant:["defend"],
+    ex:[{ s:"Critics were quick to {{}} the new tax.", f:"attack", ko:"비평가들은 새 세금을 재빨리 공격했다." }] },
+
+  { word:"attain", pos:"v", level:"C1", meanings:["얻다","성취하다"],
+    syn:["achieve","reach","accomplish"], ant:["lose"],
+    ex:[{ s:"Few runners {{}} such a fast time.", f:"attain", ko:"그렇게 빠른 기록을 달성하는 주자는 드물다." }] },
+
+  { word:"attainment", pos:"n", level:"C1", meanings:["성취","달성"],
+    syn:["achievement","accomplishment","success"], ant:["failure"],
+    ex:[{ s:"The award honors lifetime {{}} in science.", f:"attainment", ko:"그 상은 과학 분야의 평생 업적을 기린다." }] },
+
+  { word:"attempt", pos:"v", level:"B1", meanings:["시도하다","노력하다"],
+    syn:["try","endeavor","strive"],
+    ex:[{ s:"She will {{}} the exam again next month.", f:"attempt", ko:"그녀는 다음 달에 그 시험에 다시 도전할 것이다." }] },
+
+  { word:"attend to", pos:"phr", level:"B2", meanings:["처리하다","돌보다"],
+    syn:["deal with","see to","take care of"] },
+
+  { word:"attendance", pos:"n", level:"B2", meanings:["출석","참석"],
+    syn:["presence","turnout","appearance"], ant:["absence"],
+    ex:[{ s:"{{}} at the lecture was surprisingly high.", f:"Attendance", ko:"그 강연의 참석률은 놀랄 만큼 높았다." }] },
+
+  { word:"attention", pos:"n", level:"B1", meanings:["주목","주의"],
+    syn:["notice","focus","concentration"], ant:["neglect"],
+    ex:[{ s:"The poster is designed to grab {{}}.", f:"attention", ko:"그 포스터는 주목을 끌도록 디자인되었다." }] },
+
+  { word:"attentive", pos:"adj", level:"C1", meanings:["주의를 기울이는","배려하는"],
+    syn:["alert","observant","considerate"], ant:["inattentive"],
+    ex:[{ s:"The staff were {{}} to every guest.", f:"attentive", ko:"직원들은 모든 손님에게 세심하게 신경 썼다." }] },
+
+  { word:"attest", pos:"v", level:"C2", meanings:["증명하다","증언하다"],
+    syn:["confirm","verify","certify"], ant:["deny"],
+    ex:[{ s:"The scars {{}} to a hard childhood.", f:"attest", ko:"그 흉터들이 고된 어린 시절을 증언한다." }] },
+
+  { word:"attic", pos:"n", level:"B2", meanings:["다락방"],
+    syn:["loft","garret","upper room"], ant:["basement"],
+    ex:[{ s:"Old letters were stored in the {{}}.", f:"attic", ko:"오래된 편지들은 다락방에 보관되어 있었다." }] },
+
+  { word:"attire", pos:"n", level:"C1", meanings:["의복","복장"],
+    syn:["clothing","dress","garb"],
+    ex:[{ s:"Formal {{}} is required at the ceremony.", f:"attire", ko:"그 행사에는 정장 복장이 요구된다." }] },
+
+  { word:"attitude", pos:"n", level:"B1", meanings:["태도","사고방식"],
+    syn:["outlook","stance","mindset"],
+    ex:[{ s:"A positive {{}} makes hard work easier.", f:"attitude", ko:"긍정적인 태도는 힘든 일을 수월하게 만든다." }] },
+
+  { word:"attorney", pos:"n", level:"B2", meanings:["변호사","대리인"],
+    syn:["lawyer","counsel","advocate"],
+    ex:[{ s:"Her {{}} advised her to stay silent.", f:"attorney", ko:"그녀의 변호사는 침묵을 지키라고 조언했다." }] },
+
+  { word:"attract", pos:"v", level:"B1", meanings:["끌다","매혹하다"],
+    syn:["draw","lure","entice"], ant:["repel"],
+    ex:[{ s:"Bright flowers {{}} bees and butterflies.", f:"attract", ko:"화려한 꽃은 벌과 나비를 끌어들인다." }] },
+
+  { word:"attraction", pos:"n", level:"B2", meanings:["명소","매력"],
+    syn:["appeal","allure","draw"], ant:["repulsion"],
+    ex:[{ s:"The old bridge is the town's main {{}}.", f:"attraction", ko:"그 오래된 다리는 마을의 주요 명소이다." }] },
+
+  { word:"attribute", pos:"v", level:"C1", meanings:["~의 결과로 여기다","덕분으로 돌리다"],
+    syn:["ascribe","credit","assign"],
+    ex:[{ s:"Experts {{}} the change to warmer seas.", f:"attribute", ko:"전문가들은 그 변화를 더 따뜻해진 바다 탓으로 본다." }] },
+
+  { word:"attribute A to B", pos:"phr", level:"C1", meanings:["A를 B의 탓으로 돌리다"],
+    syn:["ascribe A to B","credit A to B","blame B for A"] },
+
+  { word:"auction", pos:"n", level:"B2", meanings:["경매"],
+    syn:["sale","bidding","public sale"],
+    ex:[{ s:"The painting sold at {{}} for a record price.", f:"auction", ko:"그 그림은 경매에서 기록적인 가격에 팔렸다." }] },
+
+  { word:"audible", pos:"adj", level:"C1", meanings:["들리는","들을 수 있는"],
+    syn:["perceptible","clear","discernible"], ant:["inaudible"],
+    ex:[{ s:"Her voice was barely {{}} over the wind.", f:"audible", ko:"그녀의 목소리는 바람 소리에 거의 들리지 않았다." }] },
+
+  { word:"audience", pos:"n", level:"B1", meanings:["관객","청중"],
+    syn:["spectators","viewers","listeners"],
+    ex:[{ s:"The {{}} clapped for a full minute.", f:"audience", ko:"관객은 꼬박 1분간 박수를 쳤다." }] },
+
+  { word:"audit", pos:"v", level:"C1", meanings:["회계 감사하다","점검하다"],
+    syn:["inspect","examine","review"],
+    ex:[{ s:"An outside firm will {{}} the accounts.", f:"audit", ko:"외부 회사가 그 회계를 감사할 것이다." }] },
+
+  { word:"auditory", pos:"adj", level:"C1", meanings:["청각의"],
+    syn:["hearing","acoustic","aural"], ant:["visual"],
+    ex:[{ s:"The test measures {{}} response to sound.", f:"auditory", ko:"그 검사는 소리에 대한 청각 반응을 측정한다." }] },
+
+  { word:"aura", pos:"n", level:"C1", meanings:["기운","분위기"],
+    syn:["atmosphere","air","ambience"],
+    ex:[{ s:"The ruins have an {{}} of mystery.", f:"aura", ko:"그 유적에는 신비로운 기운이 감돈다." }] },
+
+  { word:"aural", pos:"adj", level:"C2", meanings:["청각의","귀의"],
+    syn:["auditory","hearing","acoustic"], ant:["visual"],
+    ex:[{ s:"The exam includes an {{}} comprehension task.", f:"aural", ko:"그 시험에는 청취 이해 과제가 포함된다." }] },
+
+  { word:"authentic", pos:"adj", level:"B2", meanings:["진짜의","믿을 만한"],
+    syn:["genuine","real","bona fide"], ant:["fake"],
+    ex:[{ s:"The restaurant serves {{}} regional food.", f:"authentic", ko:"그 식당은 진짜 지역 음식을 낸다." }] },
+
+  { word:"authenticity", pos:"n", level:"C1", meanings:["진짜임","정통성"],
+    syn:["genuineness","legitimacy","validity"], ant:["fakeness"],
+    ex:[{ s:"Experts confirmed the {{}} of the letter.", f:"authenticity", ko:"전문가들은 그 편지의 진위를 확인했다." }] },
+
+  { word:"author", pos:"n", level:"B1", meanings:["저자","작가"],
+    syn:["writer","novelist","creator"],
+    ex:[{ s:"The {{}} signed copies after the talk.", f:"author", ko:"저자는 강연 후 책에 사인을 해 주었다." }] },
+
+  { word:"authoritative", pos:"adj", level:"C1", meanings:["권위 있는","권위적인"],
+    syn:["definitive","official","commanding"], ant:["unreliable"],
+    ex:[{ s:"Her book is the most {{}} on the subject.", f:"authoritative", ko:"그녀의 책은 그 주제에 관해 가장 권위 있다." }] },
+
+  { word:"authority", pos:"n", level:"B2", meanings:["권한","당국"],
+    syn:["power","control","jurisdiction"],
+    ex:[{ s:"Only the manager has the {{}} to sign.", f:"authority", ko:"오직 관리자만 서명할 권한이 있다." }] },
+
+
+  { word:"autobiography", pos:"n", level:"B2", meanings:["자서전"],
+    syn:["memoir","life story","personal history"],
+    ex:[{ s:"His {{}} covers his years in exile.", f:"autobiography", ko:"그의 자서전은 망명 시절을 다룬다." }] },
+
+  { word:"autocracy", pos:"n", level:"C2", meanings:["독재 정치","절대 권력"],
+    syn:["dictatorship","despotism","tyranny"], ant:["democracy"],
+    ex:[{ s:"The reforms slowly replaced the old {{}}.", f:"autocracy", ko:"그 개혁은 낡은 독재 체제를 서서히 대체했다." }] },
+
+  { word:"automatic", pos:"adj", level:"B1", meanings:["자동의"],
+    syn:["self-acting","mechanical","automated"], ant:["manual"],
+    ex:[{ s:"The doors are fully {{}}.", f:"automatic", ko:"그 문은 완전히 자동이다." }] },
+
+  { word:"automobile", pos:"n", level:"B1", meanings:["자동차"],
+    syn:["car","vehicle","motorcar"],
+    ex:[{ s:"The {{}} industry faces a shift to electric power.", f:"automobile", ko:"자동차 산업은 전기 동력으로의 전환에 직면해 있다." }] },
+
+  { word:"automotive", pos:"adj", level:"C1", meanings:["자동차의"],
+    syn:["car-related","vehicular","motor"],
+    ex:[{ s:"She works in {{}} design.", f:"automotive", ko:"그녀는 자동차 디자인 분야에서 일한다." }] },
+
+  { word:"autonomous", pos:"adj", level:"C1", meanings:["자율적인","자치의"],
+    syn:["independent","self-governing","self-ruling"], ant:["dependent"],
+    ex:[{ s:"The region became largely {{}} after the treaty.", f:"autonomous", ko:"그 지역은 조약 이후 대체로 자치를 이루게 되었다." }] },
+
+  { word:"autonomy", pos:"n", level:"C1", meanings:["자율성","자치권"],
+    syn:["independence","self-rule","freedom"], ant:["dependence"],
+    ex:[{ s:"Teachers want more {{}} over the curriculum.", f:"autonomy", ko:"교사들은 교육과정에 대한 더 많은 자율성을 원한다." }] },
+
+  { word:"autopsy", pos:"n", level:"C1", meanings:["부검","검시"],
+    syn:["postmortem","examination","dissection"],
+    ex:[{ s:"The {{}} revealed the true cause of death.", f:"autopsy", ko:"부검은 진짜 사인을 밝혀냈다." }] },
+
+  /* 원본의 "선례를 따르다"는 뜻이 틀려 바로잡았습니다 */
+  { word:"avail oneself of", pos:"phr", level:"C2", meanings:["~을 이용하다","~을 활용하다"],
+    syn:["make use of","utilize","take advantage of"] },
+
+  { word:"available", pos:"adj", level:"B1", meanings:["이용 가능한","시간이 있는"],
+    syn:["obtainable","accessible","free"], ant:["unavailable"],
+    ex:[{ s:"A doctor is {{}} around the clock.", f:"available", ko:"의사가 24시간 대기하고 있다." }] },
+
+  { word:"avalanche", pos:"n", level:"C1", meanings:["눈사태","쇄도"],
+    syn:["snowslide","landslide","flood"],
+    ex:[{ s:"An {{}} blocked the mountain pass for days.", f:"avalanche", ko:"눈사태가 며칠 동안 고갯길을 막았다." }] },
+
+  { word:"averse to", pos:"phr", level:"C1", meanings:["~을 싫어하는","~을 꺼리는"],
+    syn:["opposed to","reluctant to","disinclined to"] },
+
+  { word:"avert", pos:"v", level:"C1", meanings:["막다","외면하다"],
+    syn:["prevent","avoid","deflect"], ant:["cause"],
+    ex:[{ s:"Quick action helped {{}} a disaster.", f:"avert", ko:"신속한 조치가 재앙을 막는 데 도움이 되었다." }] },
+
+  { word:"aviation", pos:"n", level:"C1", meanings:["항공","비행"],
+    syn:["flying","aeronautics","air travel"],
+    ex:[{ s:"The museum traces the history of {{}}.", f:"aviation", ko:"그 박물관은 항공의 역사를 추적한다." }] },
+
+  { word:"avid", pos:"adj", level:"C1", meanings:["열심인","열렬한"],
+    syn:["keen","enthusiastic","eager"], ant:["indifferent"],
+    ex:[{ s:"She is an {{}} reader of detective novels.", f:"avid", ko:"그녀는 추리 소설을 열심히 읽는 독자이다." }] },
+
+  { word:"avoid", pos:"v", level:"B1", meanings:["피하다"],
+    syn:["evade","shun","sidestep"], ant:["confront"],
+    ex:[{ s:"Drivers should {{}} the flooded road.", f:"avoid", ko:"운전자들은 침수된 도로를 피해야 한다." }] },
+
+  { word:"award", pos:"n", level:"B1", meanings:["상","수상"],
+    syn:["prize","honor","accolade"],
+    ex:[{ s:"She received an {{}} for her research.", f:"award", ko:"그녀는 연구로 상을 받았다." }] },
+
+  { word:"awareness", pos:"n", level:"B2", meanings:["인식","알고 있음"],
+    syn:["consciousness","recognition","understanding"], ant:["ignorance"],
+    ex:[{ s:"The campaign raised {{}} of ocean plastic.", f:"awareness", ko:"그 캠페인은 해양 플라스틱에 대한 인식을 높였다." }] },
+
+  { word:"awesome", pos:"adj", level:"B1", meanings:["굉장한","엄청난"],
+    syn:["amazing","stunning","magnificent"], ant:["dreadful"],
+    ex:[{ s:"The canyon at sunrise was truly {{}}.", f:"awesome", ko:"해돋이 때의 협곡은 정말 굉장했다." }] },
+
+  { word:"awful", pos:"adj", level:"B1", meanings:["끔찍한","형편없는"],
+    syn:["terrible","dreadful","horrible"], ant:["wonderful"],
+    ex:[{ s:"The soup tasted {{}} without salt.", f:"awful", ko:"그 수프는 소금이 없어 끔찍한 맛이었다." }] },
+
+  { word:"awkward", pos:"adj", level:"B2", meanings:["어색한","불편한"],
+    syn:["clumsy","uncomfortable","embarrassing"], ant:["graceful"],
+    ex:[{ s:"There was an {{}} silence after his joke.", f:"awkward", ko:"그의 농담 뒤에 어색한 침묵이 흘렀다." }] }
 ];
 
 /* 연어 모드에서 오답으로 사용할 고정 풀 */
 window.COL_POOLS = {
-  verb: ["make","do","take","have","give","pay","reach","meet","draw","hold","bring","put"],
+  verb: ["make","do","take","have","give","pay","reach","meet","draw","hold","bring","put","win","keep"],
   prep: ["on","in","at","to","for","with","of","from","by","about","into","over","against","under"]
 };
-
-
-/* 연어 보강 — 전치사 중심 (공무원 시험 최빈출). 단어별로 words 배열에 병합됩니다.
-   opts가 있으면 그 목록에서 오답을 뽑고, 없으면 위 COL_POOLS를 사용합니다. */
-window.VOCAB_COL_EXTRA = {
-  apprehensive: [{ p:"apprehensive {{}} the outcome", a:"about", pool:"prep", note:"apprehensive about ~ : ~을 걱정하는" }],
-  aversion:     [{ p:"an aversion {{}} risk", a:"to", pool:"prep", note:"an aversion to ~ : ~에 대한 혐오" }],
-  antipathy:    [{ p:"antipathy {{}} reform", a:"to", pool:"prep", note:"antipathy to ~ : ~에 대한 반감" }],
-  inherent:     [{ p:"risks inherent {{}} the job", a:"in", pool:"prep", note:"inherent in ~ : ~에 내재된" }],
-  wary:         [{ p:"wary {{}} strangers", a:"of", pool:"prep", note:"wary of ~ : ~을 경계하는" }],
-  skeptical:    [{ p:"skeptical {{}} the claim", a:"of", pool:"prep", note:"skeptical of ~ : ~에 회의적인" }],
-  dubious:      [{ p:"dubious {{}} the plan", a:"about", pool:"prep", note:"dubious about ~ : ~에 의심을 품는" }],
-  remorse:      [{ p:"remorse {{}} his actions", a:"for", pool:"prep", note:"remorse for ~ : ~에 대한 후회" }],
-  deference:    [{ p:"in deference {{}} tradition", a:"to", pool:"prep", note:"in deference to ~ : ~을 존중하여" }],
-  disdain:      [{ p:"disdain {{}} authority", a:"for", pool:"prep", note:"disdain for ~ : ~에 대한 경멸" }],
-  discrepancy:  [{ p:"a discrepancy {{}} the accounts", a:"in", pool:"prep", note:"a discrepancy in ~ : ~의 불일치" }],
-  dissent:      [{ p:"dissent {{}} the ruling", a:"from", pool:"prep", note:"dissent from ~ : ~에 이견을 내다" }],
-  paucity:      [{ p:"a paucity {{}} data", a:"of", pool:"prep", note:"a paucity of ~ : ~의 부족" }],
-  veracity:     [{ p:"the veracity {{}} the claim", a:"of", pool:"prep", note:"the veracity of ~ : ~의 진실성" }],
-  digress:      [{ p:"digress {{}} the topic", a:"from", pool:"prep", note:"digress from ~ : ~에서 벗어나다" }],
-  preclude:     [{ p:"preclude him {{}} running", a:"from", pool:"prep", note:"preclude A from B : A가 B하지 못하게 하다" }],
-  inundate:     [{ p:"inundated {{}} requests", a:"with", pool:"prep", note:"be inundated with ~ : ~이 쇄도하다" }],
-  contrite:     [{ p:"contrite {{}} his mistake", a:"about", pool:"prep", note:"contrite about ~ : ~을 뉘우치는" }],
-  complacent:   [{ p:"complacent {{}} the risks", a:"about", pool:"prep", note:"complacent about ~ : ~에 안일한" }],
-  prevalent:    [{ p:"prevalent {{}} rural areas", a:"in", pool:"prep", note:"prevalent in ~ : ~에 널리 퍼진" }],
-  abhor:        [{ p:"an abhorrence {{}} violence", a:"of", pool:"prep", note:"abhorrence of ~ : ~에 대한 혐오" }],
-  apathy:       [{ p:"apathy {{}} public affairs", a:"about", pool:"prep", note:"apathy about ~ : ~에 대한 무관심" }],
-  scrutinize:   [{ p:"under close {{}}", a:"scrutiny", opts:["scrutiny","scrutinize","scrutinized","scrutinizing"], note:"under scrutiny : 조사를 받는 중" }],
-  consensus:    [{ p:"a consensus {{}} the issue", a:"on", pool:"prep", note:"a consensus on ~ : ~에 관한 합의" }],
-  grievance:    [{ p:"{{}} a grievance", a:"file", opts:["file","open","write","send"], note:"file a grievance : 고충을 제기하다" }],
-  conundrum:    [{ p:"{{}} a conundrum", a:"pose", opts:["pose","carry","hold","keep"], note:"pose a conundrum : 난제를 던지다" }],
-  decorum:      [{ p:"{{}} decorum", a:"observe", opts:["observe","watch","view","notice"], note:"observe decorum : 예절을 지키다" }],
-  perseverance: [{ p:"{{}} great perseverance", a:"show", opts:["show","tell","speak","talk"], note:"show perseverance : 끈기를 보이다" }],
-  acclaim:      [{ p:"{{}} critical acclaim", a:"win", opts:["win","beat","score","reach"], note:"win acclaim : 찬사를 받다" }],
-  quandary:     [{ p:"{{}} a quandary", a:"in", pool:"prep", note:"in a quandary : 곤경에 빠진" }],
-  susceptible:  [{ p:"less susceptible {{}} damage", a:"to", pool:"prep", note:"susceptible to ~ : ~에 취약한" }],
-  lament:       [{ p:"lament {{}} the loss", a:"over", pool:"prep", note:"lament over ~ : ~을 한탄하다" }],
-  emulate:      [{ p:"eager to {{}} his mentor", a:"emulate", pool:"auto", note:"emulate ~ : ~을 본받다" }],
-  thwart:       [{ p:"{{}} an attempt", a:"thwart", pool:"auto", note:"thwart an attempt : 시도를 저지하다" }],
-  mitigate:     [{ p:"{{}} the damage", a:"mitigate", pool:"auto", note:"mitigate damage : 피해를 완화하다" }],
-  bolster:      [{ p:"{{}} confidence", a:"bolster", pool:"auto", note:"bolster confidence : 신뢰를 강화하다" }],
-  undermine:    [{ p:"{{}} public trust", a:"undermine", pool:"auto", note:"undermine trust : 신뢰를 훼손하다" }],
-  exacerbate:   [{ p:"{{}} the situation", a:"exacerbate", pool:"auto", note:"exacerbate the situation : 상황을 악화시키다" }],
-  expedite:     [{ p:"{{}} the process", a:"expedite", pool:"auto", note:"expedite the process : 절차를 신속히 처리하다" }],
-  quell:        [{ p:"{{}} the riot", a:"quell", pool:"auto", note:"quell a riot : 폭동을 진압하다" }],
-  corroborate:  [{ p:"{{}} the testimony", a:"corroborate", pool:"auto", note:"corroborate testimony : 증언을 확증하다" }],
-  ascertain:    [{ p:"{{}} the facts", a:"ascertain", pool:"auto", note:"ascertain the facts : 사실을 확인하다" }],
-  squander:     [{ p:"{{}} an opportunity", a:"squander", pool:"auto", note:"squander an opportunity : 기회를 허비하다" }],
-  divulge:      [{ p:"{{}} confidential details", a:"divulge", pool:"auto", note:"divulge details : 세부 사항을 누설하다" }],
-  solicit:      [{ p:"{{}} donations", a:"solicit", pool:"auto", note:"solicit donations : 기부를 요청하다" }],
-  alleviate:    [{ p:"{{}} the symptoms", a:"alleviate", pool:"auto", note:"alleviate symptoms : 증상을 완화하다" }]
-};
-
-/* 병합 */
-(function mergeExtraCollocations() {
-  var extra = window.VOCAB_COL_EXTRA;
-  window.VOCAB.forEach(function (w) {
-    if (extra[w.word]) {
-      w.col = (w.col || []).concat(extra[w.word]);
-    }
-  });
-})();
