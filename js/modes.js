@@ -160,8 +160,11 @@ window.Modes = (function () {
               if (ansObj) {
                 detail.textContent = '≠ ' + b._value + ': ' + ansObj.meanings.join(', ');
               } else {
-                // VOCAB에 없는 반의어 — 영단어만 표시
-                detail.textContent = '≠ ' + b._value + ' (반의어)';
+                // VOCAB에 없는 반의어 — ANT_DICT에서 뜻을 찾는다
+                var antMeaning = window.ANT_DICT && window.ANT_DICT[b._value.toLowerCase()];
+                detail.textContent = antMeaning
+                  ? '≠ ' + b._value + ': ' + antMeaning
+                  : '≠ ' + b._value + ' (반의어)';
               }
             }
             b.appendChild(detail);
