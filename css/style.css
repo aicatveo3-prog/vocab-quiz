@@ -218,7 +218,7 @@ b,strong{font-weight:600}
 .q-sentence{font-size:19px;line-height:1.75;padding:26px 4px 24px;text-align:center}
 .q-sentence .blank,.q-pattern .blank{display:inline-block;min-width:88px;
   border-bottom:2px solid var(--line-2);vertical-align:baseline;height:1.1em}
-.q-sentence .filled,.q-pattern .filled{color:var(--ok);border-bottom-color:var(--ok)}
+.q-sentence .filled,.q-pattern .filled{color:var(--ok);border-bottom:none}
 .q-pattern{font-size:24px;font-weight:600;text-align:center;padding:28px 4px 8px}
 
 /* 선택지 — 클릭 전용이므로 키보드 배지를 두지 않는다 */
