@@ -118,7 +118,7 @@
     // 짝 맞추기는 한 보드가 5~6단어를 담으므로 단어당 한 번꼴로 보드 수를 잡는다.
     // 나머지 모드는 단어당 한 문제이므로 세트 전체를 그대로 낸다.
     var count = modeId === 'match' ? Math.ceil(avail / 5) : avail;
-    var session = window.Quiz.buildSession(modeId, count, restrictTo);
+    var session = window.Quiz.buildSession(modeId, count, restrictTo, !restrictTo);
     if (!session.length) {
       alert('출제할 수 있는 문제가 없습니다.');
       return;

@@ -390,12 +390,51 @@ window.Quiz = (function () {
    * @param count   문제 수 (match는 보드 수)
    * @param restrictTo 특정 단어 목록으로 제한 (오답 노트 복습용)
    */
-  function buildSession(modeId, count, restrictTo) {
+  /**
+   * 세션 생성
+   * @param modeId  'mcq' | 'not' | 'match' | 'cloze' | 'colloc'
+   * @param count   문제 수 (match는 보드 수)
+   * @param restrictTo 특정 단어 목록으로 제한 (오답 노트 복습용)
+   * @param ordered true면 알파벳순 고정 출제 (개별 연습용)
+   */
+  function buildSession(modeId, count, restrictTo, ordered) {
     var out = [];
     var used = {};
     var attempts = 0;
-    var mcqDir = Math.random() < 0.5 ? 'en-ko' : 'ko-en';
+    var mcqDir = 'en-ko';  // ordered일 때 교대 시작을 고정
 
+    // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
+    if (ordered) {
+      var pool = eligible(modeId);
+      if (restrictTo && restrictTo.length) {
+        var allow = {};
+        restrictTo.forEach(function (w) { allow[w] = true; });
+        pool = pool.filter(function (w) { return allow[w.word]; });
+      }
+      pool.sort(function (a, b) {
+        return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+      });
+
+      for (var i = 0; i < pool.length && out.length < count; i++) {
+        var w = pool[i];
+        var q = null;
+        if (modeId === 'mcq') {
+          q = makeMcq(w, mcqDir);
+          if (q) mcqDir = mcqDir === 'en-ko' ? 'ko-en' : 'en-ko';
+        } else {
+          q = BUILDERS[modeId](w);
+        }
+        if (q) {
+          out.push(q);
+          if (modeId === 'match') {
+            q.words.forEach(function (x) { used[x] = true; });
+          }
+        }
+      }
+      return out;
+    }
+
+    // 기존 랜덤 모드 (오답 복습 등)
     while (out.length < count && attempts < count * 12) {
       attempts++;
       var need = count - out.length;
