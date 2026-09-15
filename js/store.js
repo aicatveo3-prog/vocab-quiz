@@ -139,6 +139,13 @@ window.Store = (function () {
   }
 
   /** 전체 진척도 요약 */
+  /** 숙련도를 추가로 올린다 (정복 모드에서 4단계를 모두 통과했을 때의 보너스) */
+  function boost(word, amount) {
+    var r = rec(word);
+    r.m = Math.min(MAX_MASTERY, r.m + (amount || 1));
+    save();
+  }
+
   function summary(totalWords) {
     var studied = 0, mastered = 0, sumMastery = 0;
     Object.keys(state.words).forEach(function (w) {
@@ -167,6 +174,7 @@ window.Store = (function () {
     MAX_MASTERY: MAX_MASTERY,
     record: record,
     recordExposureOnly: recordExposureOnly,
+    boost: boost,
     mastery: mastery,
     info: info,
     wrongList: wrongList,

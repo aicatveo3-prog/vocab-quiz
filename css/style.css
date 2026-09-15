@@ -187,3 +187,67 @@ button{font-family:inherit;font-size:inherit;cursor:pointer}
 .li-m i.on{background:var(--ok)}
 .li-mean{font-size:13px;color:var(--dim);margin-top:4px}
 .li-syn{font-size:12px;color:var(--dim2);margin-top:3px}
+
+
+/* ══════════ 정복 모드 ══════════ */
+
+/* 코스 카드 — 개별 연습 모드보다 강조 */
+.mode-card-hero{width:100%;margin-bottom:16px;border-color:var(--accent);
+  background:linear-gradient(135deg,rgba(108,140,255,.16),rgba(139,108,255,.10)),var(--card)}
+.mode-card-hero .mode-ico{background:linear-gradient(135deg,#ffb347,#ff7a59)}
+.mode-card-hero .mode-txt b{font-size:17px}
+
+/* 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다.
+   아직 출제될 단어를 띄우면 선택지와 대조해 정답을 골라낼 수 있다. */
+.cgrid{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.cgrid:empty{display:none}
+.cslot{display:flex;align-items:center;gap:7px;background:var(--card);
+  border:1px solid var(--line);border-radius:99px;padding:5px 11px;
+  font-size:12px;color:var(--dim2);transition:all .2s}
+.cslot .cn{font-weight:700;font-variant-numeric:tabular-nums}
+.cslot.is-done{border-color:var(--ok);color:var(--ok);background:var(--ok-bg);font-weight:600}
+.cslot.is-active{border-color:var(--accent);color:var(--txt)}
+.cdots{display:flex;gap:3px}
+.cdots b{display:block;width:6px;height:6px;border-radius:50%;background:var(--line)}
+.cdots b.on{background:var(--accent)}
+.cdots b.skip{background:var(--dim2)}
+.cslot.is-done .cdots b{background:var(--ok)}
+
+/* 단계 칩 — 정복 모드는 단계를 섞어 내므로 문항마다 표시한다 */
+.q-stage-wrap{text-align:center;margin-bottom:2px}
+.q-stage{display:inline-block;background:rgba(108,140,255,.16);color:var(--accent);
+  border:1px solid rgba(108,140,255,.35);border-radius:99px;
+  padding:4px 12px;font-size:12px;font-weight:600}
+
+/* 묶음 미리보기 */
+.preview-head{text-align:center;padding:20px 0 6px}
+.preview-head b{font-size:19px;display:block}
+.preview-head span{font-size:13px;color:var(--dim);display:block;margin-top:6px}
+.pv-item{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:13px 0;border-bottom:1px solid var(--line)}
+.pv-item:last-child{border-bottom:none}
+.pv-item b{font-size:17px}
+.pv-item .pv-mean{color:var(--dim);font-size:14px;text-align:right}
+.pv-item .pv-tag{font-size:11px;color:var(--dim2);background:#12162a;
+  border-radius:6px;padding:2px 7px;margin-left:8px}
+.pv-timer{height:3px;background:#12162a;border-radius:99px;overflow:hidden;margin-top:4px}
+.pv-timer i{display:block;height:100%;width:100%;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  transform-origin:left;animation:shrink 4s linear forwards}
+@keyframes shrink{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+
+/* 묶음 완료 */
+.conquer-badge{width:120px;height:120px;margin:0 auto 16px;border-radius:50%;
+  display:grid;place-items:center;background:var(--card);
+  border:6px solid var(--ok);font-size:26px;font-weight:700}
+.conquer-badge.is-partial{border-color:var(--accent)}
+.bw-item{display:flex;align-items:center;gap:10px;padding:12px 0;
+  border-bottom:1px solid var(--line)}
+.bw-item:last-child{border-bottom:none}
+.bw-mark{width:22px;flex:0 0 22px;text-align:center;font-size:14px}
+.bw-mark.ok{color:var(--ok)}
+.bw-mark.ng{color:var(--dim2)}
+.bw-body{flex:1;min-width:0}
+.bw-body b{font-size:15px}
+.bw-body .bw-mean{font-size:13px;color:var(--dim);margin-top:2px}
+.bw-side{font-size:11px;color:var(--dim2);text-align:right;white-space:nowrap}

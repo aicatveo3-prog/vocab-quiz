@@ -19,6 +19,14 @@ window.Modes = (function () {
   function buildPrompt(q) {
     var wrap = el('div');
 
+    // 정복 모드는 단계를 섞어 출제하므로 전체 화면 안내 배너가 맞지 않는다.
+    // 대신 문항마다 지금 몇 단계인지 칩으로 보여준다.
+    if (q.stageLabel) {
+      var chip = el('div', 'q-stage-wrap');
+      chip.appendChild(el('span', 'q-stage', q.stageLabel));
+      wrap.appendChild(chip);
+    }
+
     if (q.mode === 'mcq' && q.dir === 'en-ko') {
       wrap.appendChild(instruct('뜻을 고르세요'));
       var p = el('div', 'q-prompt');
@@ -118,8 +126,11 @@ window.Modes = (function () {
     var mistakes = 0;
     var wrongWords = [];
 
+    // 도입 보드는 뜻을 처음 보여주는 자리이므로 숙련도를 올리지 않는다
+    var noRecord = q.recordMode === 'none';
+
     var head = el('div', 'match-head');
-    var title = el('b', null, total + '쌍을 모두 연결하세요');
+    var title = el('b', null, q.boardTitle || (total + '쌍을 모두 연결하세요'));
     var sub = el('span');
     head.appendChild(title);
     head.appendChild(sub);
@@ -179,8 +190,9 @@ window.Modes = (function () {
       var a = selL, b = selR;
       locked = true;
       if (a._key === b._key) {
-        // 마지막 남은 한 쌍은 소거법으로 자동 정답이 되므로 숙련도를 올리지 않는다
-        if (remaining === 1) window.Store.recordExposureOnly(a._key);
+        // 도입 보드는 노출만, 마지막 남은 한 쌍은 소거법으로 자동 정답이 되므로
+        // 두 경우 모두 숙련도를 올리지 않는다
+        if (noRecord || remaining === 1) window.Store.recordExposureOnly(a._key);
         else window.Store.record(a._key, true);
         a.classList.add('is-done');
         b.classList.add('is-done');
@@ -199,7 +211,8 @@ window.Modes = (function () {
       } else {
         mistakes++;
         if (wrongWords.indexOf(a._key) === -1) wrongWords.push(a._key);
-        window.Store.record(a._key, false);
+        // 도입 보드에서 틀린 것은 아직 배우지 않은 상태이므로 벌점을 주지 않는다
+        if (!noRecord) window.Store.record(a._key, false);
         a.classList.add('is-bad');
         b.classList.add('is-bad');
         updateHead();

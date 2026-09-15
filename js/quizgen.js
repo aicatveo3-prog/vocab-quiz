@@ -40,8 +40,15 @@ window.Quiz = (function () {
     return shuffle(arr).slice(0, n);
   }
 
+  function levelIdx(w) {
+    var i = LEVELS[w.level];
+    // 0(B2)을 falsy로 잘못 걸러내면 B2가 C1으로 취급되어
+    // B2와 C2가 같은 문항에 섞인다. undefined만 기본값으로 보낸다.
+    return i === undefined ? 1 : i;
+  }
+
   function levelGap(a, b) {
-    return Math.abs((LEVELS[a.level] || 1) - (LEVELS[b.level] || 1));
+    return Math.abs(levelIdx(a) - levelIdx(b));
   }
 
   function normalizeMeaning(s) {
@@ -79,10 +86,17 @@ window.Quiz = (function () {
     return score;
   }
 
-  /** 오답 후보: 같은 품사 · 레벨 ±1 · 뜻 겹침/유의어 제외 */
-  function distractorPool(answer) {
+  /**
+   * 오답 후보: 같은 품사 · 레벨 ±1 · 뜻 겹침/유의어 제외
+   * @param exclude 추가로 배제할 단어 이름 배열.
+   *   정복 모드에서 같은 묶음의 단어가 서로의 오답으로 등장하지 않게 쓴다.
+   */
+  function distractorPool(answer, exclude) {
+    var skip = {};
+    (exclude || []).forEach(function (w) { skip[String(w).toLowerCase()] = true; });
     return window.VOCAB.filter(function (w) {
       if (w.word === answer.word) return false;
+      if (skip[w.word.toLowerCase()]) return false;
       if (w.pos !== answer.pos) return false;
       if (levelGap(w, answer) > 1) return false;
       if (meaningsOverlap(w, answer)) return false;
@@ -162,6 +176,23 @@ window.Quiz = (function () {
     });
   }
 
+  /** 낮을수록 먼저 출제 */
+  function priorityScore(w) {
+    var info = window.Store.info(w.word);
+    var score = info.m * 10;                         // 숙련도 낮은 단어 우선
+    if (info.seen === 0) score -= 3;                 // 아직 안 본 단어 약간 우선
+    if (info.lastWrong && Date.now() - info.lastWrong < 7 * 864e5) score -= 15; // 최근 오답 강하게 우선
+    score += Math.random() * 12;                     // 매번 같은 순서가 되지 않게
+    return score;
+  }
+
+  /** 출제 우선순위대로 정렬한 새 배열 */
+  function rankByPriority(list) {
+    return list.map(function (w) { return { w: w, s: priorityScore(w) }; })
+      .sort(function (a, b) { return a.s - b.s; })
+      .map(function (x) { return x.w; });
+  }
+
   function pickWords(modeId, count, restrictTo) {
     var pool = eligible(modeId);
     if (restrictTo && restrictTo.length) {
@@ -170,24 +201,14 @@ window.Quiz = (function () {
       var filtered = pool.filter(function (w) { return allow[w.word]; });
       if (filtered.length) pool = filtered;
     }
-    var now = Date.now();
-    var scored = pool.map(function (w) {
-      var info = window.Store.info(w.word);
-      var score = info.m * 10;                       // 숙련도 낮은 단어 우선
-      if (info.seen === 0) score -= 3;               // 아직 안 본 단어 약간 우선
-      if (info.lastWrong && now - info.lastWrong < 7 * 864e5) score -= 15; // 최근 오답 강하게 우선
-      score += Math.random() * 12;                   // 매번 같은 순서가 되지 않게
-      return { w: w, score: score };
-    });
-    scored.sort(function (a, b) { return a.score - b.score; });
-    return scored.slice(0, count).map(function (s) { return s.w; });
+    return rankByPriority(pool).slice(0, count);
   }
 
   /* ── 모드별 문제 생성 ─────────────────────────── */
 
   /** ① 4지선다 — dir: 'en-ko' | 'ko-en' */
-  function makeMcq(answer, dir) {
-    var pool = distractorPool(answer);
+  function makeMcq(answer, dir, exclude) {
+    var pool = distractorPool(answer, exclude);
     if (pool.length < 3) return null;
 
     if (dir === 'en-ko') {
@@ -235,14 +256,17 @@ window.Quiz = (function () {
   }
 
   /** ④ 아닌 것 고르기 — 유의어 3개 + 비유의어 1개(정답) */
-  function makeNot(answer) {
+  function makeNot(answer, exclude) {
     if (!answer.syn || answer.syn.length < 3) return null;
     var syns = sample(answer.syn, 3);
+    var skip = {};
+    (exclude || []).forEach(function (w) { skip[String(w).toLowerCase()] = true; });
 
     // 정답(= 바꿔 쓸 수 없는 것)은 반의어를 우선 사용
     var oddWord = (answer.ant || [])[0];
+    if (oddWord && skip[oddWord.toLowerCase()]) oddWord = null;
     if (!oddWord) {
-      var pool = distractorPool(answer);
+      var pool = distractorPool(answer, exclude);
       if (!pool.length) return null;
       oddWord = pool[Math.floor(Math.random() * pool.length)].word;
     }
@@ -286,10 +310,10 @@ window.Quiz = (function () {
   }
 
   /** ⑬ 문장 빈칸 — 오답은 정답과 같은 어형으로 변환해 제시 */
-  function makeCloze(answer) {
+  function makeCloze(answer, exclude) {
     if (!answer.ex || !answer.ex.length) return null;
     var ex = answer.ex[Math.floor(Math.random() * answer.ex.length)];
-    var pool = distractorPool(answer);
+    var pool = distractorPool(answer, exclude);
     if (pool.length < 3) return null;
 
     // 절반은 철자 유사형, 절반은 무작위(의미 인접형)
@@ -405,17 +429,47 @@ window.Quiz = (function () {
     return eligible(modeId).length;
   }
 
+  /**
+   * 지정한 단어들로 짝 맞추기 보드를 만든다 (정복 모드의 도입·졸업 보드).
+   * @param wordObjs   보드에 올릴 단어 객체 배열
+   * @param recordMode 'none'이면 숙련도를 올리지 않고 노출만 기록한다.
+   *                   도입 보드는 뜻을 처음 보여주는 자리이므로 'none'을 쓴다.
+   */
+  function buildMatchFrom(wordObjs, recordMode) {
+    if (!wordObjs || wordObjs.length < 2) return null;
+    return {
+      mode: 'match',
+      recordMode: recordMode || 'normal',
+      pairs: wordObjs.map(function (w) {
+        return { word: w.word, meaning: w.meanings[0], level: w.level };
+      }),
+      words: wordObjs.map(function (w) { return w.word; })
+    };
+  }
+
   return {
     MODES: MODES,
     buildSession: buildSession,
     availableCount: availableCount,
     eligible: eligible,
     shuffle: shuffle,
+    rankByPriority: rankByPriority,
+    buildMatchFrom: buildMatchFrom,
+    /* 정복 모드가 단계별로 직접 호출하는 개별 빌더 */
+    build: {
+      mcq: makeMcq,
+      not: makeNot,
+      cloze: makeCloze,
+      colloc: makeColloc,
+      match: makeMatch
+    },
     _internals: {
       distractorPool: distractorPool,
       detectInflection: detectInflection,
       applyInflection: applyInflection,
-      meaningsOverlap: meaningsOverlap
+      meaningsOverlap: meaningsOverlap,
+      areSynonyms: areSynonyms,
+      levelGap: levelGap
     }
   };
 })();
