@@ -115,8 +115,6 @@
      진행 바 드래그로 아무 문제로나 자유롭게 이동할 수 있다. */
   function startSession(modeId, restrictTo) {
     var avail = window.Quiz.availableCount(modeId);
-    // 짝 맞추기는 한 보드가 5~6단어를 담으므로 단어당 한 번꼴로 보드 수를 잡는다.
-    // 나머지 모드는 단어당 한 문제이므로 세트 전체를 그대로 낸다.
     var count = modeId === 'match' ? Math.ceil(avail / 5) : avail;
     var session = window.Quiz.buildSession(modeId, count, restrictTo, !restrictTo);
     if (!session.length) {
@@ -131,15 +129,27 @@
     state.correct = 0;
     state.wrongWords = [];
     state.slides = session.map(function (q) {
-      return { q: q, answered: false, chosen: null, correct: null,
+      return { q: q, word: q.word || null, answered: false, chosen: null, correct: null,
         headline: null, boardStats: null };
     });
     state.cursor = 0;
+
+    // 저장된 세션이 있으면 복원
+    state.sessionKey = window.Store.sessionKey('practice', modeId, state.setName, null);
+    var saved = window.Store.loadSession(state.sessionKey);
+    if (saved && !restrictTo) {
+      window.Store.restoreSession(saved, state.slides);
+      state.correct = saved.correct || 0;
+      state.wrongWords = saved.wrongWords || [];
+      state.cursor = Math.min(saved.cursor || 0, state.slides.length - 1);
+    }
+
     go('quiz');
+    if (!saved || !restrictTo) persistSession();   // 초기 세션을 저장
     renderSlide();
   }
 
-  // 확인창 없이 바로 홈으로. 기록은 실시간 저장되므로 잃는 것이 없다.
+  // 확인창 없이 바로 홈으로.
   $('btn-quit').addEventListener('click', function () {
     state.flow = 'practice';
     go('home');
@@ -167,6 +177,7 @@
     if (!slide) return;
     $('quiz-feedback').innerHTML = '';
     updateHead();
+    persistCursor();   // 커서 이동 + 답변 상태를 저장
 
     var body = $('quiz-body');
     if (slide.q.mode === 'match') {
@@ -211,6 +222,7 @@
     }
     showFeedbackBox(slide);
     renderNav();
+    persistSession();
   }
 
   /* 짝 맞추기 보드 응답 (숙련도는 modes.js에서 쌍별로 이미 기록됨) */
@@ -219,7 +231,6 @@
     slide.boardStats = stats;
 
     if (state.flow === 'conquer') {
-      // 정복 모드: 보드 결과도 단순히 기록
       if (stats.correct) state.correct++;
       stats.wrongWords.forEach(function (w) {
         if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
@@ -233,6 +244,26 @@
     }
     showBoardFeedback(slide);
     renderNav();
+    persistSession();
+  }
+
+  /** 현재 세션 상태를 localStorage에 저장한다 */
+  function persistSession() {
+    if (!state.sessionKey) return;
+    window.Store.saveSession(state.sessionKey, state.cursor, state.slides);
+  }
+
+  /** 커서 위치만 빠르게 업데이트 (답변 데이터는 건드리지 않음) */
+  function persistCursor() {
+    if (!state.sessionKey) return;
+    try {
+      var raw = localStorage.getItem(state.sessionKey);
+      if (raw) {
+        var data = JSON.parse(raw);
+        data.cursor = state.cursor;
+        localStorage.setItem(state.sessionKey, JSON.stringify(data));
+      }
+    } catch (e) { /* noop */ }
   }
 
   function showFeedbackBox(slide) {
@@ -483,6 +514,23 @@
     state.cursor = -1;   // 미리보기부터 시작
     state.correct = 0;
     state.wrongWords = [];
+
+    // 저장된 세션이 있으면 복원
+    state.sessionKey = window.Store.sessionKey('conquer', null, setId, chapterIndex);
+    var saved = window.Store.loadSession(state.sessionKey);
+    if (saved) {
+      window.Store.restoreSession(saved, state.slides);
+      state.correct = saved.correct || 0;
+      state.wrongWords = saved.wrongWords || [];
+      var savedCursor = saved.cursor;
+      if (typeof savedCursor === 'number' && savedCursor >= 0) {
+        state.cursor = Math.min(savedCursor, state.slides.length - 1);
+        go('quiz');
+        renderSlide();
+        return;
+      }
+    }
+
     go('quiz');
     renderConquerPreview(sess);
   }
