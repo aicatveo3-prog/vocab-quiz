@@ -161,7 +161,7 @@ b,strong{font-weight:600}
 .quiz-head{display:flex;align-items:center;gap:12px;margin:0 0 16px}
 .quiz-name{flex:1;font-size:13px;color:var(--dim)}
 .quiz-count{font-size:13px;color:var(--dimmer)}
-.bar-quiz{margin-bottom:24px}
+.bar-quiz{margin-bottom:18px}
 #quiz-bar{background:var(--accent);transition:width .12s ease}
 
 /* 진행 바를 드래그 스크러버로 쓸 때 — 잡기 쉽도록 히트 영역을 넓힌다 */
@@ -182,7 +182,9 @@ b,strong{font-weight:600}
 .scrub-ruler i.here{background:var(--accent);width:8px;height:22px}
 
 .set-note{font-size:12px;color:var(--dim);margin:10px 2px 0;line-height:1.5}
-.quiz-body{min-height:54vh}
+/* 피드백이 화면 아래로 밀리지 않도록 본문 높이를 내용에 맞춘다.
+   min-height를 크게 주면 선택지와 정답/오답 사이가 크게 벌어진다. */
+.quiz-body{min-height:0}
 
 /* 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다 */
 .cgrid{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 24px}
@@ -208,7 +210,7 @@ b,strong{font-weight:600}
 .q-instruct b{color:var(--ng);font-weight:600}
 
 /* 프롬프트 */
-.q-prompt{text-align:center;padding:28px 8px 26px}
+.q-prompt{text-align:center;padding:14px 8px 20px}
 .q-word{font-size:32px;font-weight:650;letter-spacing:-.02em;word-break:break-word}
 .q-ko{font-size:25px;font-weight:650;letter-spacing:-.01em}
 .q-sub{margin-top:8px;font-size:12px;color:var(--dimmer)}
@@ -231,7 +233,7 @@ b,strong{font-weight:600}
 .opt:disabled{cursor:default}
 
 /* 피드백 */
-.feedback{margin-top:20px;min-height:60px}
+.feedback{margin-top:16px;min-height:60px}
 .fb{border-radius:var(--r);padding:14px 16px;font-size:14px;animation:in .14s ease}
 .fb.ok{background:var(--ok-soft);border:1px solid var(--ok-line)}
 .fb.ng{background:var(--ng-soft);border:1px solid var(--ng-line)}
