@@ -247,6 +247,18 @@
     }
     if (q.note) box.appendChild(el('div', 'fb-note', q.note));
     if (q.ko) box.appendChild(el('div', 'fb-ko', q.ko));
+
+    // 4지선다·아닌 것 고르기: 정답 단어의 예문이 있으면 피드백에 표시
+    if (q.mode === 'mcq' || q.mode === 'not') {
+      var wordObj = WORD_INDEX[q.word];
+      if (wordObj && wordObj.ex && wordObj.ex.length) {
+        var e = wordObj.ex[0];
+        var sentence = e.s.replace('{{}}', e.f);
+        box.appendChild(el('div', 'fb-ex', sentence));
+        if (e.ko) box.appendChild(el('div', 'fb-ko', e.ko));
+      }
+    }
+
     fb.appendChild(box);
   }
 
