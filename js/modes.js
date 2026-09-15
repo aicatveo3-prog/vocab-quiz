@@ -6,8 +6,6 @@
  *   ctx.boardDone(stats)           짝 맞추기 — 보드 클리어
  */
 window.Modes = (function () {
-  var KEYS = ['A', 'B', 'C', 'D'];
-
   function el(tag, cls, text) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;
@@ -16,56 +14,57 @@ window.Modes = (function () {
   }
 
   /* ── 문항 지시문 / 프롬프트 ───────────────────── */
-  function buildPrompt(q) {
-    var wrap = el('div');
 
-    // 정복 모드는 단계를 섞어 출제하므로 전체 화면 안내 배너가 맞지 않는다.
-    // 대신 문항마다 지금 몇 단계인지 칩으로 보여준다.
-    if (q.stageLabel) {
-      var chip = el('div', 'q-stage-wrap');
-      chip.appendChild(el('span', 'q-stage', q.stageLabel));
-      wrap.appendChild(chip);
-    }
+  /**
+   * 문항 위의 한 줄. 단계 칩과 지시문은 같은 것을 두 번 말하는 셈이므로
+   * 하나만 낸다. 정복 모드에서는 단계 칩이 지시문 역할을 겸한다.
+   * 단, '아닌 것 고르기'의 지시문은 문제 자체이므로 항상 남긴다.
+   */
+  function buildLead(q) {
+    var lead = el('div', 'q-lead');
 
-    if (q.mode === 'mcq' && q.dir === 'en-ko') {
-      wrap.appendChild(instruct('뜻을 고르세요'));
-      var p = el('div', 'q-prompt');
-      p.appendChild(el('div', 'q-word', q.prompt));
-      p.appendChild(el('div', 'q-sub', q.promptSub));
-      wrap.appendChild(p);
-
-    } else if (q.mode === 'mcq') {
-      wrap.appendChild(instruct('알맞은 단어를 고르세요'));
-      var p2 = el('div', 'q-prompt');
-      p2.appendChild(el('div', 'q-ko', q.prompt));
-      p2.appendChild(el('div', 'q-sub', q.promptSub));
-      wrap.appendChild(p2);
-
-    } else if (q.mode === 'not') {
-      var ins = el('div', 'q-instruct');
+    if (q.mode === 'not') {
+      var ins = el('span', 'q-instruct');
       ins.appendChild(document.createTextNode('다음 중 '));
       ins.appendChild(el('b', null, '바꿔 쓸 수 없는'));
       ins.appendChild(document.createTextNode(' 것을 고르세요'));
-      wrap.appendChild(ins);
-      var p3 = el('div', 'q-prompt');
-      p3.appendChild(el('div', 'q-word', q.prompt));
-      p3.appendChild(el('div', 'q-sub', q.promptSub));
-      wrap.appendChild(p3);
-
-    } else if (q.mode === 'cloze') {
-      wrap.appendChild(instruct('빈칸에 알맞은 단어를 고르세요'));
-      wrap.appendChild(sentenceNode(q.sentence, 'q-sentence'));
-
-    } else if (q.mode === 'colloc') {
-      wrap.appendChild(instruct('자연스러운 조합을 고르세요'));
-      wrap.appendChild(sentenceNode(q.pattern, 'q-pattern'));
-      wrap.appendChild(el('div', 'q-sub', q.promptSub));
+      lead.appendChild(ins);
+      return lead;
     }
-    return wrap;
+    if (q.stageLabel) {
+      lead.appendChild(el('span', 'q-stage', q.stageLabel));
+      return lead;
+    }
+
+    var text = q.mode === 'cloze' ? '빈칸에 알맞은 단어를 고르세요'
+      : q.mode === 'colloc' ? '자연스러운 조합을 고르세요'
+      : q.dir === 'en-ko' ? '뜻을 고르세요'
+      : '알맞은 단어를 고르세요';
+    lead.appendChild(el('span', 'q-instruct', text));
+    return lead;
   }
 
-  function instruct(text) {
-    return el('div', 'q-instruct', text);
+  function buildPrompt(q) {
+    var wrap = el('div');
+    wrap.appendChild(buildLead(q));
+
+    if (q.mode === 'cloze') {
+      wrap.appendChild(sentenceNode(q.sentence, 'q-sentence'));
+      return wrap;
+    }
+    if (q.mode === 'colloc') {
+      wrap.appendChild(sentenceNode(q.pattern, 'q-pattern'));
+      wrap.appendChild(el('div', 'q-sub', q.promptSub));
+      return wrap;
+    }
+
+    // mcq(양방향) · not — 프롬프트가 영단어인지 한국어 뜻인지만 다르다
+    var isKoPrompt = q.mode === 'mcq' && q.dir === 'ko-en';
+    var p = el('div', 'q-prompt');
+    p.appendChild(el('div', isKoPrompt ? 'q-ko' : 'q-word', q.prompt));
+    p.appendChild(el('div', 'q-sub', q.promptSub));
+    wrap.appendChild(p);
+    return wrap;
   }
 
   /** "{{}}"를 빈칸 span으로 바꾼 문장 노드 */
@@ -90,10 +89,9 @@ window.Modes = (function () {
     var opts = el('div', 'opts');
     var buttons = [];
 
-    q.options.forEach(function (text, i) {
+    q.options.forEach(function (text) {
       var b = el('button', 'opt');
       b.type = 'button';
-      b.appendChild(el('span', 'k', KEYS[i]));
       b.appendChild(el('span', 'v', text));
       b.addEventListener('click', function () { choose(text, b); });
       buttons.push(b);

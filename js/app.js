@@ -60,42 +60,36 @@
   /* ── 홈 ───────────────────────────────────── */
   function renderHome() {
     var s = window.Store.summary(window.VOCAB.length);
-    $('stat-streak').textContent = s.streak;
-    $('stat-today').textContent = s.today;
+
+    // 오늘 현황 — 한 줄로 압축
+    var line = $('today-line');
+    line.innerHTML = '';
+    line.appendChild(el('b', 'tnum', String(s.today)));
+    line.appendChild(document.createTextNode('문제 · 연속 '));
+    line.appendChild(el('b', 'tnum', String(s.streak)));
+    line.appendChild(document.createTextNode('일'));
+
+    // 진척도 — 바 하나 + 숫자 하나
     $('stat-mastered').textContent = s.mastered;
+    $('stat-total').textContent = '/ ' + s.total;
     $('stat-studied').textContent = s.studied;
-    $('stat-total').textContent = s.total;
+    $('bar-mastered').style.width = (s.mastered / s.total) * 100 + '%';
+    $('bar-studied').style.width =
+      Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
 
-    var mPct = (s.mastered / s.total) * 100;
-    var sPct = Math.max(0, (s.studied - s.mastered) / s.total) * 100;
-    $('bar-mastered').style.width = mPct + '%';
-    $('bar-studied').style.width = sPct + '%';
-
-    // 최근 2주 히트맵
-    var hm = $('heatmap');
-    hm.innerHTML = '';
-    window.Store.recentDays(14).forEach(function (d) {
-      var lv = d.count === 0 ? 0 : d.count <= 5 ? 1 : d.count <= 15 ? 2 : d.count <= 30 ? 3 : 4;
-      var i = el('i');
-      i.setAttribute('data-lv', lv);
-      i.title = d.date + ' · ' + d.count + '문제';
-      hm.appendChild(i);
-    });
-
-    // 모드 카드
+    // 개별 연습 — 아이콘 없는 목록형 행
     var list = $('mode-list');
     list.innerHTML = '';
     window.Quiz.MODES.forEach(function (m) {
-      var card = el('button', 'mode-card');
-      card.type = 'button';
-      card.appendChild(el('span', 'mode-ico', m.icon));
-      var txt = el('span', 'mode-txt');
-      txt.appendChild(el('b', null, m.label));
-      txt.appendChild(el('span', null, m.sub));
-      card.appendChild(txt);
-      card.appendChild(el('span', 'mode-n', window.Quiz.availableCount(m.id) + '단어'));
-      card.addEventListener('click', function () { startSession(m.id, null); });
-      list.appendChild(card);
+      var row = el('button', 'row-btn');
+      row.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, m.label));
+      main.appendChild(el('span', null, m.sub));
+      row.appendChild(main);
+      row.appendChild(el('span', 'row-n', window.Quiz.availableCount(m.id) + '단어'));
+      row.addEventListener('click', function () { startSession(m.id, null); });
+      list.appendChild(row);
     });
 
     // 정복 모드 (코스)
@@ -125,12 +119,26 @@
     badge.classList.toggle('is-zero', wrongN === 0);
   }
 
+  // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
   $('btn-reset').addEventListener('click', function () {
     if (confirm('학습 기록(숙련도·오답 노트·연속 학습일)을 모두 삭제할까요?')) {
       window.Store.reset();
-      renderHome();
+      renderWords();
     }
   });
+
+  /** 최근 2주 히트맵 — 매번 볼 정보가 아니라 단어장 화면에 둔다 */
+  function renderHeatmap() {
+    var hm = $('heatmap');
+    hm.innerHTML = '';
+    window.Store.recentDays(14).forEach(function (d) {
+      var lv = d.count === 0 ? 0 : d.count <= 5 ? 1 : d.count <= 15 ? 2 : d.count <= 30 ? 3 : 4;
+      var i = el('i');
+      i.setAttribute('data-lv', lv);
+      i.title = d.date + ' · ' + d.count + '문제';
+      hm.appendChild(i);
+    });
+  }
 
   /* ── 세션 시작 ─────────────────────────────── */
   function startSession(modeId, restrictTo) {
@@ -171,6 +179,7 @@
 
     $('quiz-mode-name').textContent = mode.label;
     $('quiz-progress').textContent = (state.index + 1) + ' / ' + state.session.length + ' ' + unit;
+    $('quiz-bar-wrap').style.display = '';
     $('quiz-bar').style.width = (state.index / state.session.length) * 100 + '%';
     $('quiz-feedback').innerHTML = '';
 
@@ -278,14 +287,17 @@
       slot.appendChild(dots);
       g.appendChild(slot);
     });
+
+    // 진행 숫자를 그리드 오른쪽 끝에 붙인다.
+    // 진행 바까지 함께 두면 같은 정보가 세 번 나온다.
+    g.appendChild(el('span', 'cgrid-count',
+      state.block.passedStages() + ' / ' + state.block.totalStages()));
   }
 
   function updateConquerHead() {
-    var passed = state.block.passedStages();
-    var total = state.block.totalStages();
     $('quiz-mode-name').textContent = '정복 모드';
-    $('quiz-progress').textContent = passed + ' / ' + total + ' 단계';
-    $('quiz-bar').style.width = (total ? (passed / total) * 100 : 0) + '%';
+    $('quiz-progress').textContent = '';
+    $('quiz-bar-wrap').style.display = 'none';   // 그리드가 진행도를 대신한다
     renderConquerGrid();
   }
 
@@ -340,7 +352,7 @@
     head.appendChild(el('span', null, '훑어본 뒤 4지선다 → 문장 빈칸 → 짝 맞추기로 확인합니다'));
     body.appendChild(head);
 
-    var card = el('div', 'card');
+    var card = el('div', 'panel');
     step.words.forEach(function (w) {
       var row = el('div', 'pv-item');
       var left = el('div');
@@ -379,7 +391,7 @@
 
     var badge = $('block-badge');
     badge.textContent = stats.conquered + ' / ' + stats.size;
-    badge.classList.toggle('is-partial', !all);
+    badge.classList.toggle('is-ok', all);
     $('block-title').textContent = all ? '묶음 정복!' : '묶음 종료';
     $('block-sub').textContent = '문제 ' + stats.asked + '개 · 단계 ' + passed + '/' + total +
       ' 통과' + (stats.demotions ? ' · 강등 ' + stats.demotions + '회' : '');
@@ -414,8 +426,9 @@
     var unit = state.modeId === 'match' ? '보드' : '문제';
 
     $('score-pct').textContent = pct + '%';
-    $('score-ring').style.borderColor =
-      pct >= 80 ? 'var(--ok)' : pct >= 50 ? 'var(--accent)' : 'var(--ng)';
+    var ring = $('score-ring');
+    ring.classList.toggle('is-ok', pct >= 80);
+    ring.classList.toggle('is-ng', pct < 50);
     $('result-title').textContent = modeById(state.modeId).label + ' 완료';
     $('result-sub').textContent =
       total + unit + ' 중 ' + state.correct + unit + ' 정답 · 연속 ' +
@@ -475,6 +488,7 @@
 
   /* ── 단어장 ───────────────────────────────── */
   function renderWords() {
+    renderHeatmap();
     var f = $('word-filters');
     f.innerHTML = '';
 

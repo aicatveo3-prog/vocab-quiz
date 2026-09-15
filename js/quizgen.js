@@ -18,11 +18,11 @@ window.Quiz = (function () {
   var LEVELS = { B2: 0, C1: 1, C2: 2 };
 
   var MODES = [
-    { id: 'mcq',    label: '4지선다',    sub: '영↔한 양방향',   icon: '4' },
-    { id: 'not',    label: '아닌 것 고르기', sub: '유의어 구별',   icon: '✕' },
-    { id: 'match',  label: '짝 맞추기',   sub: '5~6쌍 보드',    icon: '⇄' },
-    { id: 'cloze',  label: '문장 빈칸',   sub: '문맥 속 구별',   icon: '▭' },
-    { id: 'colloc', label: '연어 고르기',  sub: '전치사·동사 조합', icon: '&' }
+    { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
+    { id: 'not',    label: '아닌 것 고르기', sub: '유의어 구별' },
+    { id: 'match',  label: '짝 맞추기',     sub: '5~6쌍 보드' },
+    { id: 'cloze',  label: '문장 빈칸',     sub: '문맥 속 구별' },
+    { id: 'colloc', label: '연어 고르기',   sub: '전치사·동사 조합' }
   ];
 
   /* ── 공통 유틸 ─────────────────────────────── */
