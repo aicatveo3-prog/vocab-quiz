@@ -15,7 +15,7 @@
  *   - 한→영·문장 빈칸은 철자가 닮은 단어를 우선 (형태 구별 훈련)
  */
 window.Quiz = (function () {
-  var LEVELS = { B2: 0, C1: 1, C2: 2 };
+  var LEVELS = { B1: 0, B2: 1, C1: 2, C2: 3 };
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },

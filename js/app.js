@@ -564,7 +564,7 @@
     spacer.style.height = '2px';
     f.appendChild(spacer);
 
-    ['all', 'B2', 'C1', 'C2'].forEach(function (lv) {
+    ['all', 'B1', 'B2', 'C1', 'C2'].forEach(function (lv) {
       var c = el('button', 'chip' + (state.wordFilter.level === lv ? ' is-on' : ''),
         lv === 'all' ? '전 레벨' : lv);
       c.type = 'button';
