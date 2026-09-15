@@ -4,15 +4,19 @@
  * 세트(A) → 챕터(20단어) → 드릴 구조.
  *
  *   미리보기  20단어를 뜻과 함께 훑어보기
- *   드릴     1단계(4지선다)와 2단계(문장 빈칸)를 섞어서 출제
+ *   드릴     5개 모드를 섞어서 출제:
+ *            1단계 4지선다 (영↔한)
+ *            2단계 아닌 것 고르기 (syn≥3인 단어만)
+ *            3단계 문장 빈칸 (예문 보유 단어만)
+ *            4단계 연어 고르기 (col 보유 단어만)
  *   보드     짝 맞추기 4~5쌍 × 4개 보드로 마무리
  *   결과
  *
  * 규칙
- *   · 강등 없음 — 틀려도 다음으로 넘어간다. 틀린 단어는 결과에서 모아 보여준다.
- *   · 건너뜀 없음 — 숙련도와 상관없이 모든 단어가 두 단계를 모두 밟는다.
- *   · 큐 간격 유지 — 같은 단어의 1단계와 2단계 사이에 최소 3문제를 둔다.
- *   · 자유 이동 — 개별 연습과 같은 이전/다음 이동을 지원한다.
+ *   · 강등 없음 — 틀려도 다음으로 넘어간다.
+ *   · 건너뜀 없음 — 숙련도와 상관없이 모든 단어가 가능한 단계를 밟는다.
+ *   · 큐 간격 유지 — 같은 단어가 재등장하기까지 최소 3문제를 둔다.
+ *   · 자유 이동 — 이전/다음 + 스크러버.
  */
 window.Conquer = (function () {
   var CHAPTER_SIZE = 20;
@@ -21,7 +25,6 @@ window.Conquer = (function () {
 
   /* ── 세트 & 챕터 ──────────────────────────── */
 
-  /** 세트 정의. 지금은 A 하나. B~Z를 넣으면 여기에 추가한다. */
   var SETS = [
     { id: 'A', label: 'A', words: window.VOCAB }
   ];
@@ -31,7 +34,6 @@ window.Conquer = (function () {
     return null;
   }
 
-  /** 세트의 단어를 알파벳순으로 CHAPTER_SIZE씩 잘라 챕터 배열을 만든다 */
   function buildChapters(set) {
     var sorted = set.words.slice().sort(function (a, b) {
       return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
@@ -39,13 +41,11 @@ window.Conquer = (function () {
     var chapters = [];
     for (var i = 0; i < sorted.length; i += CHAPTER_SIZE) {
       var slice = sorted.slice(i, i + CHAPTER_SIZE);
-      var first = slice[0].word;
-      var last = slice[slice.length - 1].word;
       chapters.push({
         index: chapters.length,
         label: String(chapters.length + 1),
-        from: first,
-        to: last,
+        from: slice[0].word,
+        to: slice[slice.length - 1].word,
         rangeText: (i + 1) + '~' + Math.min(i + CHAPTER_SIZE, sorted.length),
         words: slice
       });
@@ -55,83 +55,107 @@ window.Conquer = (function () {
 
   /* ── 드릴 세션 생성 ────────────────────────── */
 
-  /**
-   * 챕터의 단어로 드릴 문제를 만든다.
-   * 1단계(4지선다)와 2단계(문장 빈칸)를 섞되, 같은 단어의 두 단계 사이에
-   * 최소 MIN_GAP 문제를 둔다.
-   */
-  function buildDrill(chapterWords) {
-    var names = chapterWords.map(function (w) { return w.word; });
-
-    // 각 단어에 대해 1단계·2단계 문제를 만든다
-    var stage1 = [];   // { q, word, stage }
-    var stage2 = [];
-    var dir = 'en-ko'; // 방향을 번갈아 배정
-
-    chapterWords.forEach(function (w) {
-      var q1 = tryBuild(function () {
-        return window.Quiz.build.mcq(w, dir, names);
-      });
-      if (q1) {
-        q1.stageLabel = '1단계 · ' + (dir === 'en-ko' ? '단어 → 뜻' : '뜻 → 단어');
-        stage1.push({ q: q1, word: w.word, stage: 1 });
-        dir = dir === 'en-ko' ? 'ko-en' : 'en-ko';
-      }
-
-      var q2 = tryBuild(function () {
-        return window.Quiz.build.cloze(w, names);
-      });
-      if (q2) {
-        q2.stageLabel = '2단계 · 문장 빈칸';
-        stage2.push({ q: q2, word: w.word, stage: 2 });
-      }
-    });
-
-    // 1단계를 셔플하고, 그 사이에 2단계를 간격을 두고 끼워 넣는다
-    var shuffled1 = window.Quiz.shuffle(stage1);
-    var shuffled2 = window.Quiz.shuffle(stage2);
-
-    return interleave(shuffled1, shuffled2, MIN_GAP);
-  }
-
-  /** 빌더를 최대 4번 시도해 null이면 포기 */
   function tryBuild(fn) {
-    for (var i = 0; i < 4; i++) {
-      var q = fn();
-      if (q) return q;
-    }
+    for (var i = 0; i < 4; i++) { var q = fn(); if (q) return q; }
     return null;
   }
 
   /**
-   * 1단계 배열과 2단계 배열을 인터리빙한다.
-   * 같은 단어의 1단계와 2단계 사이에 최소 gap개 문제를 둔다.
+   * 챕터의 단어로 5개 모드 드릴을 만든다.
+   * 각 단어는 데이터가 허용하는 만큼의 단계를 밟는다.
    */
-  function interleave(arr1, arr2, gap) {
-    // 1단계를 기본 순서로 깔고, 2단계를 간격을 지키며 끼운다
-    var result = arr1.slice();
-    var wordLastIdx = {};
-    result.forEach(function (item, i) { wordLastIdx[item.word] = i; });
+  function buildDrill(chapterWords) {
+    var names = chapterWords.map(function (w) { return w.word; });
+    var stages = [[], [], [], []];   // 0=4지선다, 1=아닌것, 2=문장빈칸, 3=연어
+    var dir = 'en-ko';
 
-    arr2.forEach(function (item) {
-      var earliest = (wordLastIdx[item.word] !== undefined)
-        ? wordLastIdx[item.word] + gap + 1
-        : 0;
-      var pos = Math.max(earliest, result.length);
-      // 끝에 붙이되, 가능하면 다른 단어 사이에 삽입해 분산시킨다
-      if (pos > result.length) pos = result.length;
-      result.splice(pos, 0, item);
-      // 인덱스 갱신
-      for (var k in wordLastIdx) {
-        if (wordLastIdx[k] >= pos) wordLastIdx[k]++;
+    chapterWords.forEach(function (w) {
+      // 1단계: 4지선다 (모든 단어)
+      var q1 = tryBuild(function () { return window.Quiz.build.mcq(w, dir, names); });
+      if (q1) {
+        q1.stageLabel = '1단계 · ' + (dir === 'en-ko' ? '단어 → 뜻' : '뜻 → 단어');
+        stages[0].push({ q: q1, word: w.word, stage: 1 });
+        dir = dir === 'en-ko' ? 'ko-en' : 'en-ko';
       }
-      wordLastIdx[item.word] = pos;
+
+      // 2단계: 아닌 것 고르기 (syn≥3인 단어만)
+      if (w.syn && w.syn.length >= 3) {
+        var q2 = tryBuild(function () { return window.Quiz.build.not(w, names); });
+        if (q2) {
+          q2.stageLabel = '2단계 · 아닌 것 고르기';
+          stages[1].push({ q: q2, word: w.word, stage: 2 });
+        }
+      }
+
+      // 3단계: 문장 빈칸 (예문 보유 단어만)
+      if (w.ex && w.ex.length) {
+        var q3 = tryBuild(function () { return window.Quiz.build.cloze(w, names); });
+        if (q3) {
+          q3.stageLabel = '3단계 · 문장 빈칸';
+          stages[2].push({ q: q3, word: w.word, stage: 3 });
+        }
+      }
+
+      // 4단계: 연어 고르기 (col 보유 단어만)
+      if (w.col && w.col.length) {
+        var q4 = tryBuild(function () { return window.Quiz.build.colloc(w, names); });
+        if (q4) {
+          q4.stageLabel = '4단계 · 연어 고르기';
+          stages[3].push({ q: q4, word: w.word, stage: 4 });
+        }
+      }
     });
 
+    // 모든 단계의 문제를 합친 뒤, 같은 단어 사이 간격을 유지하면서 배치한다.
+    // 단계 번호가 낮은 것이 먼저 나오도록 단계순 정렬 후 라운드 로빈으로 배분한다.
+    var all = [];
+    for (var s = 0; s < stages.length; s++) {
+      stages[s].forEach(function (item) { all.push(item); });
+    }
+    // 단계순 정렬 (같은 단계 안에서는 셔플)
+    all.sort(function (a, b) { return a.stage - b.stage || (Math.random() - 0.5); });
+
+    return spreadByGap(all, MIN_GAP);
+  }
+
+  /**
+   * 문제 배열을 재배치해 같은 단어 사이 간격을 최소 gap으로 유지한다.
+   * 단계 순서(낮은→높은)를 존중하면서 간격을 지킨다.
+   */
+  function spreadByGap(items, gap) {
+    var result = [];
+    var queue = items.slice();    // 아직 배치하지 않은 문제
+    var maxPasses = queue.length * 3;
+    var pass = 0;
+
+    while (queue.length > 0 && pass < maxPasses) {
+      pass++;
+      var placed = false;
+      for (var i = 0; i < queue.length; i++) {
+        if (canPlace(result, queue[i].word, gap)) {
+          result.push(queue.splice(i, 1)[0]);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) {
+        // 간격을 지킬 수 있는 게 없으면 가장 앞의 것을 강제 배치
+        result.push(queue.shift());
+      }
+    }
+    // 남은 게 있으면 끝에 붙인다
+    while (queue.length) result.push(queue.shift());
     return result;
   }
 
-  /** 챕터 단어로 짝 맞추기 보드를 만든다 (4~5쌍 × BOARDS_PER_CHAPTER개) */
+  function canPlace(result, word, gap) {
+    var start = Math.max(0, result.length - gap);
+    for (var i = start; i < result.length; i++) {
+      if (result[i].word === word) return false;
+    }
+    return true;
+  }
+
   function buildBoards(chapterWords) {
     var shuffled = window.Quiz.shuffle(chapterWords.slice());
     var boards = [];
@@ -151,10 +175,6 @@ window.Conquer = (function () {
     return boards;
   }
 
-  /**
-   * 챕터 세션을 생성한다.
-   * 반환하는 slides 배열을 app.js가 자유 이동으로 렌더한다.
-   */
   function createChapterSession(setId, chapterIndex) {
     var set = getSet(setId);
     if (!set) return null;
@@ -165,7 +185,6 @@ window.Conquer = (function () {
     var drill = buildDrill(ch.words);
     var boards = buildBoards(ch.words);
 
-    // 슬라이드 배열: 드릴 문제 + 보드들
     var slides = [];
     drill.forEach(function (item) {
       slides.push({
