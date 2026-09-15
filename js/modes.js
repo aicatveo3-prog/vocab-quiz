@@ -50,6 +50,8 @@ window.Modes = (function () {
 
     if (q.mode === 'cloze') {
       wrap.appendChild(sentenceNode(q.sentence, 'q-sentence'));
+      // 문제를 보는 순간부터 한국어 해석을 보여준다 (정답 단어 포함)
+      if (q.ko) wrap.appendChild(el('div', 'q-ko-hint', q.ko));
       return wrap;
     }
     if (q.mode === 'colloc') {
