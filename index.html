@@ -36,17 +36,13 @@
     </div>
 
     <!-- 주역 -->
-    <button type="button" id="conquer-card" class="hero">
+    <button type="button" id="conquer-card" class="hero" data-go="sets">
       <span class="hero-row">
         <b>정복 모드</b>
         <span class="hero-n" id="conquer-n"></span>
       </span>
-      <span class="hero-sub">4지선다 → 문장 빈칸 → 짝 맞추기</span>
+      <span class="hero-sub">세트 → 챕터(20단어) → 4지선다 + 문장 빈칸 + 짝 맞추기</span>
     </button>
-    <div class="opt-row">
-      <span class="opt-label">묶음 크기</span>
-      <div id="block-picker" class="chip-row"></div>
-    </div>
 
     <!-- 보조 -->
     <h2 class="section-title">개별 연습 · A 세트</h2>
@@ -58,6 +54,25 @@
       <button class="link-btn" data-go="wrong">오답 노트<span id="wrong-badge" class="badge">0</span></button>
       <button class="link-btn" data-go="words">단어장</button>
     </nav>
+  </section>
+
+  <!-- ══════════ 정복 세트 목록 ══════════ -->
+  <section id="screen-sets" class="screen">
+    <div class="sub-head">
+      <button class="icon-btn" data-go="home" aria-label="뒤로">‹</button>
+      <h2>정복 모드</h2>
+    </div>
+    <p class="site-sub pad">세트를 골라 20단어씩 정복합니다.</p>
+    <div id="set-list" class="list"></div>
+  </section>
+
+  <!-- ══════════ 정복 챕터 목록 ══════════ -->
+  <section id="screen-chapters" class="screen">
+    <div class="sub-head">
+      <button class="icon-btn" id="btn-back-sets" aria-label="뒤로">‹</button>
+      <h2 id="chapters-title">A 세트</h2>
+    </div>
+    <div id="chapter-list" class="list"></div>
   </section>
 
   <!-- ══════════ 퀴즈 ══════════ -->
