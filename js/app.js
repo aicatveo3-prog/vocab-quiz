@@ -246,11 +246,17 @@
       box.appendChild(el('div', 'fb-note', '정답: ' + q.answer));
     }
     if (q.note) box.appendChild(el('div', 'fb-note', q.note));
+
+    // 한글 발음 표시
+    var wordObj = WORD_INDEX[q.word];
+    if (wordObj && wordObj.pron) {
+      box.appendChild(el('div', 'fb-pron', '🔊 ' + wordObj.pron));
+    }
+
     if (q.ko) box.appendChild(el('div', 'fb-ko', q.ko));
 
     // 4지선다·아닌 것 고르기: 정답 단어의 예문이 있으면 피드백에 표시
     if (q.mode === 'mcq' || q.mode === 'not') {
-      var wordObj = WORD_INDEX[q.word];
       if (wordObj && wordObj.ex && wordObj.ex.length) {
         var e = wordObj.ex[0];
         var sentence = e.s.replace('{{}}', e.f);
