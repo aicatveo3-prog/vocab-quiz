@@ -1,46 +1,47 @@
 /**
  * conquer.js — 정복 모드 엔진
  *
- * 단어 5개를 한 묶음으로 잡고, 그 묶음이 4개 단계를 차례로 통과하게 만든다.
+ * 단어 5개를 한 묶음으로 잡고, 그 묶음이 단계를 차례로 통과하게 만든다.
  *
- *   [도입] 짝 맞추기 보드 — 첫 노출 (숙련도는 올리지 않는다)
- *     1단계  단어 → 뜻      (수용 어휘)
- *     2단계  뜻 → 단어      (생산 어휘)
- *     3단계  유의어 구별     (뜻의 경계)
- *     4단계  문장 빈칸       (문맥 적용)
- *   [졸업] 짝 맞추기 보드 — 묶음 전체 마무리 확인
+ *     1단계  4지선다 (영↔한 양방향)
+ *     2단계  문장 빈칸        (문맥 적용)
+ *   [마지막] 짝 맞추기 보드 — 묶음 전체 마무리 확인
+ *
+ * 미리보기가 첫 노출을 담당하므로 도입 보드는 두지 않고,
+ * 짝 맞추기는 묶음의 마지막 관문으로만 쓴다.
  *
  * 핵심 설계
  *   · 큐 기반 간격 배치 — 같은 단어가 재등장하기까지 최소 3문제를 둔다.
  *     단계를 연달아 물으면 직전 답이 단기기억에 남아 그냥 풀리고 학습이 안 된다.
  *   · 틀리면 한 단계 강등 — 다시 통과해야 올라간다. 모르는 단어가 자동으로 반복된다.
- *   · 이미 아는 단어는 앞 단계를 건너뛴다 (숙련도 4↑ → 3단계부터, 2↑ → 2단계부터).
- *   · 묶음은 예문과 유의어를 모두 가진 단어로 구성해 4단계까지 온전히 진행되게 한다.
+ *   · 이미 아는 단어는 1단계를 건너뛴다 (숙련도 4↑ → 2단계부터).
+ *   · 묶음은 예문을 가진 단어로 구성해 2단계까지 온전히 진행되게 한다.
  */
 window.Conquer = (function () {
-  var MAX_STAGE = 4;
+  var MAX_STAGE = 2;
   var MIN_GAP = 3;   // 같은 단어 재등장 최소 간격 (문제 수)
   var DEMOTE = 1;    // 오답 시 내려가는 단계 수
 
   var STAGES = {
-    1: { label: '단어 → 뜻',  build: function (w, ex) { return window.Quiz.build.mcq(w, 'en-ko', ex); } },
-    2: { label: '뜻 → 단어',  build: function (w, ex) { return window.Quiz.build.mcq(w, 'ko-en', ex); } },
-    3: { label: '유의어 구별', build: function (w, ex) { return window.Quiz.build.not(w, ex); } },
-    4: { label: '문장 빈칸',  build: function (w, ex) { return window.Quiz.build.cloze(w, ex); } }
+    1: { label: '4지선다' },
+    2: { label: '문장 빈칸' }
   };
 
-  /** 숙련도가 높은 단어는 앞 단계를 건너뛴다 */
-  function startStage(word) {
-    var m = window.Store.mastery(word);
-    if (m >= 4) return 3;
-    if (m >= 2) return 2;
-    return 1;
+  /** 4지선다는 방향에 따라 난이도가 크게 달라지므로 라벨에 방향을 밝힌다 */
+  function stageLabel(stage, dir) {
+    if (stage === 1) return '1단계 · ' + (dir === 'en-ko' ? '단어 → 뜻' : '뜻 → 단어');
+    return stage + '단계 · ' + STAGES[stage].label;
   }
 
-  /** 4단계까지 진행 가능한 단어만 후보로 삼는다 */
+  /** 숙련도가 높은 단어는 1단계를 건너뛴다 */
+  function startStage(word) {
+    return window.Store.mastery(word) >= 4 ? 2 : 1;
+  }
+
+  /** 2단계(문장 빈칸)까지 진행 가능한 단어만 후보로 삼는다 */
   function blockCandidates() {
     return window.VOCAB.filter(function (w) {
-      return w.ex && w.ex.length && w.syn && w.syn.length >= 3;
+      return w.ex && w.ex.length;
     });
   }
 
@@ -88,16 +89,20 @@ window.Conquer = (function () {
     var picked = pickBlock(size);
     if (picked.length < 2) return null;
 
-    var words = picked.map(function (o) {
+    var words = picked.map(function (o, i) {
       var st = startStage(o.word);
-      return { word: o.word, obj: o, stage: st, start: st, done: false, wrong: 0 };
+      return {
+        word: o.word, obj: o, stage: st, start: st, done: false, wrong: 0,
+        // 4지선다 방향을 단어마다 번갈아 배정해 한 묶음에 양방향이 섞이게 한다
+        dir: i % 2 === 0 ? 'en-ko' : 'ko-en'
+      };
     });
     var names = words.map(function (w) { return w.word; });
     var queue = window.Quiz.shuffle(names.slice());
 
-    var phase = 'preview';        // preview → intro → drill → outro → done
+    var phase = 'preview';        // preview → drill → outro → done
     var asked = 0;
-    var maxAsked = size * 8;      // 계속 틀려도 세션이 끝없이 늘어나지 않게
+    var maxAsked = size * 5;      // 계속 틀려도 세션이 끝없이 늘어나지 않게
     var pending = null;           // 아직 답하지 않은 문제
     var history = [];             // 출제된 단어 순서 (간격 검사용)
     var fillers = 0;
@@ -152,21 +157,23 @@ window.Conquer = (function () {
      * 빌더는 선택지가 우연히 중복되면 null을 반환한다. 한 번 실패하면 단계를
      * 건너뛰게 되므로 몇 번 재시도해 조용한 학습 손실을 막는다.
      */
-    function buildStage(stage, obj) {
+    function buildStage(stage, e) {
       for (var i = 0; i < 4; i++) {
-        var q = STAGES[stage].build(obj, names);
+        var q = stage === 1
+          ? window.Quiz.build.mcq(e.obj, e.dir, names)
+          : window.Quiz.build.cloze(e.obj, names);
         if (q) return q;
       }
       return null;
     }
 
     function buildFillerQuestion(e) {
-      // 회상 부담이 큰 단계로 복습한다 (뜻→단어 / 문장 빈칸)
-      var order = Math.random() < 0.5 ? [2, 4] : [4, 2];
+      // 회상 부담이 큰 문장 빈칸을 우선 쓰고, 안 되면 4지선다로 복습한다
+      var order = [2, 1];
       for (var i = 0; i < order.length; i++) {
-        var q = buildStage(order[i], e.obj);
+        var q = buildStage(order[i], e);
         if (q) {
-          q.stageLabel = '복습 · ' + STAGES[order[i]].label;
+          q.stageLabel = '복습 · ' + (order[i] === 1 ? '4지선다' : STAGES[2].label);
           return q;
         }
       }
@@ -221,13 +228,6 @@ window.Conquer = (function () {
     function next() {
       if (phase === 'preview') return { type: 'preview', words: objs() };
 
-      if (phase === 'intro') {
-        return {
-          type: 'board', which: 'intro',
-          q: window.Quiz.buildMatchFrom(objs(), 'none')
-        };
-      }
-
       if (phase === 'drill') {
         if (pending) return pending;
         if (remaining() === 0 || asked >= maxAsked) { phase = 'outro'; return next(); }
@@ -255,13 +255,13 @@ window.Conquer = (function () {
             }
           }
 
-          var q = buildStage(e.stage, e.obj);
+          var q = buildStage(e.stage, e);
           if (!q) {
             // 이 단계는 문제를 만들 수 없다 → 통과로 처리하고 다음 단계로 넘긴다
             promote(e);
             continue;
           }
-          q.stageLabel = e.stage + '단계 · ' + STAGES[e.stage].label;
+          q.stageLabel = stageLabel(e.stage, e.dir);
           asked++;
           history.push(e.word);
           pending = { type: 'question', q: q, entry: e, stage: e.stage };
@@ -296,10 +296,8 @@ window.Conquer = (function () {
 
       /* 진행 */
       next: next,
-      startDrill: function () { phase = 'intro'; },
-      onBoardDone: function (which) {
-        phase = which === 'intro' ? 'drill' : 'done';
-      },
+      startDrill: function () { phase = 'drill'; },
+      onBoardDone: function () { phase = 'done'; },
       onAnswer: function (correct) {
         if (!pending) return null;
         var e = pending.entry;

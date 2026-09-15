@@ -99,7 +99,7 @@
     });
 
     // 정복 모드 (코스)
-    $('conquer-n').textContent = state.blockSize + '단어 × 4단계';
+    $('conquer-n').textContent = state.blockSize + '단어';
     var bp = $('block-picker');
     bp.innerHTML = '';
     BLOCK_OPTIONS.forEach(function (n) {
@@ -299,18 +299,16 @@
     if (step.type === 'done') { renderBlockComplete(step.stats); return; }
 
     if (step.type === 'board') {
-      step.q.boardTitle = step.which === 'intro'
-        ? '먼저 뜻을 맞춰보며 익히세요'
-        : '졸업 보드 — 묶음 전체 확인';
+      step.q.boardTitle = '마지막 관문 — 짝 맞추기';
       window.Modes.match.render(step.q, body, {
         boardDone: function (stats) {
-          state.block.onBoardDone(step.which);
+          state.block.onBoardDone();
           var fb = $('quiz-feedback');
           fb.innerHTML = '';
           var box = el('div', 'fb ' + (stats.correct ? 'ok' : 'ng'));
-          box.appendChild(el('div', 'fb-t', step.which === 'intro'
-            ? '이제 단계별로 확인합니다'
-            : (stats.correct ? '졸업 보드 완벽 통과!' : '졸업 보드 완료 · 실수 ' + stats.mistakes + '회')));
+          box.appendChild(el('div', 'fb-t', stats.correct
+            ? '짝 맞추기 완벽 통과!'
+            : '짝 맞추기 완료 · 실수 ' + stats.mistakes + '회'));
           fb.appendChild(box);
           setTimeout(renderConquerStep, 900);
         }
@@ -339,7 +337,7 @@
 
     var head = el('div', 'preview-head');
     head.appendChild(el('b', null, '이번 묶음 ' + step.words.length + '단어'));
-    head.appendChild(el('span', null, '훑어본 뒤 4단계로 확인합니다'));
+    head.appendChild(el('span', null, '훑어본 뒤 4지선다 → 문장 빈칸 → 짝 맞추기로 확인합니다'));
     body.appendChild(head);
 
     var card = el('div', 'card');
