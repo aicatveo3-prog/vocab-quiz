@@ -128,12 +128,32 @@ window.Modes = (function () {
         blank.classList.add('filled');
       }
       // 문장 빈칸·연어: 답을 고르면 문장 바로 아래에 한국어 번역을 보여준다.
-      // 피드백 박스(아래쪽)에도 번역이 나오지만, 문장과 가까이 있어야 이해된다.
-      if (q.ko && !body.querySelector('.q-ko-inline')) {
+      // 단, q-ko-hint가 이미 있으면(문장 빈칸은 처음부터 표시) 중복 삽입하지 않는다.
+      if (q.ko && !body.querySelector('.q-ko-inline') && !body.querySelector('.q-ko-hint')) {
         var koNode = el('div', 'q-ko-inline', q.ko);
         var sentence = body.querySelector('.q-sentence') || body.querySelector('.q-pattern');
         if (sentence && sentence.parentNode) {
           sentence.parentNode.insertBefore(koNode, sentence.nextSibling);
+        }
+      }
+
+      // 아닌 것 고르기: 답을 고른 뒤 각 선택지에 유의어/반의어 여부를 표시
+      if (q.mode === 'not') {
+        var mainObj = null;
+        for (var k = 0; k < window.VOCAB.length; k++) {
+          if (window.VOCAB[k].word === q.word) { mainObj = window.VOCAB[k]; break; }
+        }
+        if (mainObj) {
+          var syns = (mainObj.syn || []).map(function (s) { return s.toLowerCase(); });
+          buttons.forEach(function (b) {
+            var val = b._value.toLowerCase();
+            var isSyn = syns.indexOf(val) !== -1;
+            var detail = el('div', 'opt-detail');
+            detail.textContent = isSyn
+              ? '= ' + mainObj.meanings[0] + ' (유의어)'
+              : '≠ 바꿔 쓸 수 없음';
+            b.appendChild(detail);
+          });
         }
       }
     }
