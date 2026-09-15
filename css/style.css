@@ -279,11 +279,29 @@ b,strong{font-weight:600}
 .pv-item b{font-size:16px}
 .pv-item .pv-mean{color:var(--dim);font-size:13px;text-align:right}
 .pv-item .pv-tag{font-size:11px;color:var(--dimmer);margin-left:7px}
-.pv-timer{height:2px;background:var(--surface-2);border-radius:var(--r-pill);
-  overflow:hidden;margin:16px 0 12px}
-.pv-timer i{display:block;height:100%;width:100%;background:var(--accent);
-  transform-origin:left;animation:shrink 4s linear forwards}
-@keyframes shrink{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+.pv-start{margin-top:20px}
+
+/* ── 이전 / 다음 이동 ─────────────────────
+   자동으로 넘어가지 않으므로 진행은 항상 이 버튼으로 한다. */
+.qnav{display:flex;align-items:center;gap:8px;margin-top:20px;
+  border-top:1px solid var(--line);padding-top:14px}
+.qnav-btn{background:none;border:1px solid var(--line-2);border-radius:var(--r-sm);
+  padding:10px 14px;font-size:14px;color:var(--txt-2);transition:all .12s}
+.qnav-btn:hover:not(:disabled){background:var(--surface);border-color:var(--accent);color:var(--accent)}
+.qnav-btn:disabled{opacity:.35;cursor:default;border-color:var(--line)}
+.qnav-btn.is-next{margin-left:auto;font-weight:600}
+.qnav-btn.is-next:not(:disabled){background:var(--accent);border-color:var(--accent);color:#fff}
+.qnav-btn.is-next:not(:disabled):hover{opacity:.93;color:#fff}
+.qnav-mid{font-size:12px;color:var(--dimmer);font-variant-numeric:tabular-nums}
+
+/* 지난 문제를 다시 볼 때의 안내 */
+.review-note{background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r-sm);padding:10px 14px;font-size:12px;color:var(--dim);
+  text-align:center;margin-bottom:16px}
+.board-summary{border:1px solid var(--line);border-radius:var(--r);
+  padding:28px 20px;text-align:center}
+.board-summary b{display:block;font-size:16px;margin-bottom:4px}
+.board-summary span{font-size:13px;color:var(--dim)}
 
 /* ── 목록 (오답 노트 · 단어장) ───────────── */
 .sub-head{display:flex;align-items:center;gap:12px;margin:0 0 16px}
