@@ -125,6 +125,15 @@ window.Modes = (function () {
         blank.textContent = q.answer;
         blank.classList.add('filled');
       }
+      // 문장 빈칸·연어: 답을 고르면 문장 바로 아래에 한국어 번역을 보여준다.
+      // 피드백 박스(아래쪽)에도 번역이 나오지만, 문장과 가까이 있어야 이해된다.
+      if (q.ko && !body.querySelector('.q-ko-inline')) {
+        var koNode = el('div', 'q-ko-inline', q.ko);
+        var sentence = body.querySelector('.q-sentence') || body.querySelector('.q-pattern');
+        if (sentence && sentence.parentNode) {
+          sentence.parentNode.insertBefore(koNode, sentence.nextSibling);
+        }
+      }
     }
 
     if (review) settle(review.chosen);

@@ -349,3 +349,8 @@ b,strong{font-weight:600}
 .heatmap i[data-lv="2"]{background:#3a63b0}
 .heatmap i[data-lv="3"]{background:var(--accent)}
 .heatmap i[data-lv="4"]{background:var(--ok)}
+
+
+/* 문장 빈칸·연어: 답을 고르면 문장 바로 아래에 한국어 번역 */
+.q-ko-inline{text-align:center;font-size:14px;color:var(--dim);
+  margin:-8px 0 16px;padding:0 8px;animation:in .16s ease}
