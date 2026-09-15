@@ -149,9 +149,21 @@ window.Modes = (function () {
             var val = b._value.toLowerCase();
             var isSyn = syns.indexOf(val) !== -1;
             var detail = el('div', 'opt-detail');
-            detail.textContent = isSyn
-              ? '= ' + mainObj.meanings[0] + ' (유의어)'
-              : '≠ 바꿔 쓸 수 없음';
+            if (isSyn) {
+              detail.textContent = '= ' + mainObj.meanings[0] + ' (유의어)';
+            } else {
+              // 정답(바꿔 쓸 수 없는 것) — VOCAB에서 찾아 뜻을 보여준다
+              var ansObj = null;
+              for (var j = 0; j < window.VOCAB.length; j++) {
+                if (window.VOCAB[j].word.toLowerCase() === val) { ansObj = window.VOCAB[j]; break; }
+              }
+              if (ansObj) {
+                detail.textContent = '≠ ' + b._value + ': ' + ansObj.meanings.join(', ');
+              } else {
+                // VOCAB에 없는 반의어 — 영단어만 표시
+                detail.textContent = '≠ ' + b._value + ' (반의어)';
+              }
+            }
             b.appendChild(detail);
           });
         }
