@@ -170,6 +170,91 @@ window.Store = (function () {
     save();
   }
 
+  /* ── 세션 진행 상태 저장/복원 ─────────────────
+     문제를 풀다 새로고침하거나 나갔다 돌아와도 이어서 풀 수 있도록
+     커서 위치 + 각 슬라이드의 답변 상태를 localStorage에 보관한다.
+     문제 자체(선택지·정답)는 순서가 고정이라 재생성하므로 저장하지 않는다. */
+
+  var SESS_PREFIX = 'vocabQuiz.sess.';
+
+  /** 세션 키를 만든다. 개별 연습은 모드+세트, 정복은 세트+챕터. */
+  function sessionKey(flow, modeId, setName, chapterIndex) {
+    if (flow === 'conquer') return SESS_PREFIX + 'conq_' + setName + '_' + chapterIndex;
+    return SESS_PREFIX + 'prac_' + modeId + '_' + setName;
+  }
+
+  /** 세션 상태를 저장한다. 문제를 풀 때마다 호출. */
+  function saveSession(key, cursor, slides) {
+    try {
+      var correct = 0;
+      var wrong = [];
+      var answers = [];
+
+      slides.forEach(function (s) {
+        if (!s.answered) { answers.push(null); return; }
+        answers.push({
+          a: true,
+          ch: s.chosen || null,
+          ok: !!s.correct,
+          bs: s.boardStats ? { m: s.boardStats.mistakes, c: !!s.boardStats.correct } : null
+        });
+        if (s.boardStats) {
+          if (s.boardStats.correct) correct++;
+          (s.boardStats.wrongWords || []).forEach(function (w) {
+            if (wrong.indexOf(w) === -1) wrong.push(w);
+          });
+        } else {
+          if (s.correct) correct++;
+          else if (s.word && wrong.indexOf(s.word) === -1) wrong.push(s.word);
+        }
+      });
+
+      localStorage.setItem(key, JSON.stringify({
+        cursor: cursor,
+        correct: correct,
+        wrongWords: wrong,
+        answers: answers
+      }));
+    } catch (e) { /* 용량 초과 등 무시 */ }
+  }
+
+  /** 저장된 세션 상태를 불러온다. 없으면 null. */
+  function loadSession(key) {
+    try {
+      var raw = localStorage.getItem(key);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch (e) { return null; }
+  }
+
+  /** 세션 상태를 slides 배열에 복원한다. */
+  function restoreSession(saved, slides) {
+    if (!saved || !saved.answers) return false;
+    var restored = false;
+    var len = Math.min(saved.answers.length, slides.length);
+    for (var i = 0; i < len; i++) {
+      var ans = saved.answers[i];
+      if (!ans || !ans.a) continue;
+      slides[i].answered = true;
+      slides[i].chosen = ans.ch;
+      slides[i].correct = ans.ok;
+      if (ans.bs) {
+        slides[i].boardStats = {
+          mistakes: ans.bs.m,
+          correct: ans.bs.c,
+          wrongWords: []
+        };
+      }
+      restored = true;
+    }
+    return restored;
+  }
+
+  /** 세션 저장을 삭제한다 (완료 후 정리). */
+  function clearSession(key) {
+    try { localStorage.removeItem(key); } catch (e) { /* noop */ }
+  }
+
   return {
     MAX_MASTERY: MAX_MASTERY,
     record: record,
@@ -182,6 +267,11 @@ window.Store = (function () {
     todayCount: todayCount,
     recentDays: recentDays,
     summary: summary,
-    reset: reset
+    reset: reset,
+    sessionKey: sessionKey,
+    saveSession: saveSession,
+    loadSession: loadSession,
+    restoreSession: restoreSession,
+    clearSession: clearSession
   };
 })();
