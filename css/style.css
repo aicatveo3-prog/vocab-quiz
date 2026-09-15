@@ -25,12 +25,12 @@
   --accent-soft:rgba(110,160,255,.18);
 
   --ok:#43dda3;
-  --ok-soft:rgba(67,221,163,.16);
-  --ok-line:rgba(67,221,163,.55);
+  --ok-soft:rgba(67,221,163,.09);
+  --ok-line:rgba(67,221,163,.34);
 
   --ng:#ff8585;
-  --ng-soft:rgba(255,133,133,.16);
-  --ng-line:rgba(255,133,133,.55);
+  --ng-soft:rgba(255,133,133,.09);
+  --ng-line:rgba(255,133,133,.34);
 
   --r:12px;
   --r-sm:8px;
