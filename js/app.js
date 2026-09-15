@@ -9,8 +9,14 @@
   var MATCH_BOARDS = { 10: 3, 15: 4, 20: 5 };
   var AUTO_NEXT_MS = 620;
 
+  var BLOCK_OPTIONS = [4, 5, 6];
+  var PREVIEW_MS = 4000;
+
   var state = {
+    flow: 'practice',      // 'practice' | 'conquer'
     count: 10,
+    blockSize: 5,
+    block: null,
     session: null,
     modeId: null,
     restrictTo: null,
@@ -36,9 +42,10 @@
 
   /* ── 화면 전환 ─────────────────────────────── */
   function go(name) {
-    ['home', 'quiz', 'result', 'wrong', 'words'].forEach(function (n) {
+    ['home', 'quiz', 'result', 'wrong', 'words', 'block'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
+    if (name !== 'quiz') $('conquer-grid').innerHTML = '';
     window.scrollTo(0, 0);
     if (name === 'home') renderHome();
     if (name === 'wrong') renderWrong();
@@ -91,6 +98,17 @@
       list.appendChild(card);
     });
 
+    // 정복 모드 (코스)
+    $('conquer-n').textContent = state.blockSize + '단어 × 4단계';
+    var bp = $('block-picker');
+    bp.innerHTML = '';
+    BLOCK_OPTIONS.forEach(function (n) {
+      var chip = el('button', 'chip' + (state.blockSize === n ? ' is-on' : ''), n + '단어');
+      chip.type = 'button';
+      chip.addEventListener('click', function () { state.blockSize = n; renderHome(); });
+      bp.appendChild(chip);
+    });
+
     // 문제 수
     var picker = $('count-picker');
     picker.innerHTML = '';
@@ -122,6 +140,8 @@
       alert('출제할 수 있는 문제가 없습니다.');
       return;
     }
+    state.flow = 'practice';
+    state.block = null;
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
@@ -133,7 +153,14 @@
   }
 
   $('btn-quit').addEventListener('click', function () {
-    if (confirm('세션을 그만두고 홈으로 갈까요? 지금까지의 기록은 저장됩니다.')) go('home');
+    var msg = state.flow === 'conquer'
+      ? '묶음을 그만두고 홈으로 갈까요? 지금까지의 숙련도는 저장됩니다.'
+      : '세션을 그만두고 홈으로 갈까요? 지금까지의 기록은 저장됩니다.';
+    if (confirm(msg)) {
+      state.block = null;
+      state.flow = 'practice';
+      go('home');
+    }
   });
 
   /* ── 문제 렌더 ─────────────────────────────── */
@@ -183,23 +210,28 @@
   }
 
   /* ── 피드백: 정답은 빠르게, 오답은 확인을 눌러야 넘어감 ── */
-  function showFeedback(correct, q) {
+  function showFeedback(correct, q, onNext, headline) {
+    onNext = onNext || next;
     var fb = $('quiz-feedback');
     fb.innerHTML = '';
     var box = el('div', 'fb ' + (correct ? 'ok' : 'ng'));
 
-    box.appendChild(el('div', 'fb-t', correct ? '정답' : '오답 — 정답: ' + q.answer));
+    box.appendChild(el('div', 'fb-t',
+      headline || (correct ? '정답' : '오답 — 정답: ' + q.answer)));
+    if (!correct && headline) {
+      box.appendChild(el('div', 'fb-note', '정답: ' + q.answer));
+    }
     if (q.note) box.appendChild(el('div', 'fb-note', q.note));
     if (q.ko) box.appendChild(el('div', 'fb-ko', q.ko));
 
     fb.appendChild(box);
 
     if (correct) {
-      setTimeout(next, AUTO_NEXT_MS);
+      setTimeout(onNext, AUTO_NEXT_MS);
     } else {
       var btn = el('button', 'btn btn-ghost', '확인');
       btn.type = 'button';
-      btn.addEventListener('click', next);
+      btn.addEventListener('click', onNext);
       box.appendChild(btn);
       // 작은 화면에서 확인 버튼이 접히지 않도록 피드백을 보이는 위치로 끌어온다
       if (box.scrollIntoView) box.scrollIntoView({ block: 'end', behavior: 'smooth' });
@@ -210,6 +242,171 @@
     state.index++;
     if (state.index >= state.session.length) renderResult();
     else renderQuestion();
+  }
+
+  /* ══════════ 정복 모드 ══════════ */
+
+  $('conquer-card').addEventListener('click', function () { startConquer(); });
+  $('btn-next-block').addEventListener('click', function () { startConquer(); });
+
+  function startConquer() {
+    var block = window.Conquer.createBlock(state.blockSize);
+    if (!block) {
+      alert('묶음을 구성할 수 없습니다.');
+      return;
+    }
+    state.flow = 'conquer';
+    state.block = block;
+    state.session = null;
+    go('quiz');
+    renderConquerStep();
+  }
+
+  /** 진행 현황 — 단어 이름은 정복한 뒤에만 공개한다 */
+  function renderConquerGrid() {
+    var g = $('conquer-grid');
+    g.innerHTML = '';
+    if (state.flow !== 'conquer' || !state.block) return;
+
+    state.block.grid().forEach(function (s) {
+      var slot = el('span', 'cslot' + (s.done ? ' is-done' : ''));
+      slot.appendChild(el('span', 'cn', s.done ? s.word : String(s.n)));
+      var dots = el('span', 'cdots');
+      for (var i = 0; i < s.total; i++) {
+        dots.appendChild(el('b', i < s.skipped ? 'skip' : (i < s.passed ? 'on' : '')));
+      }
+      slot.appendChild(dots);
+      g.appendChild(slot);
+    });
+  }
+
+  function updateConquerHead() {
+    var passed = state.block.passedStages();
+    var total = state.block.totalStages();
+    $('quiz-mode-name').textContent = '정복 모드';
+    $('quiz-progress').textContent = passed + ' / ' + total + ' 단계';
+    $('quiz-bar').style.width = (total ? (passed / total) * 100 : 0) + '%';
+    renderConquerGrid();
+  }
+
+  function renderConquerStep() {
+    var step = state.block.next();
+    var body = $('quiz-body');
+    $('quiz-feedback').innerHTML = '';
+    updateConquerHead();
+
+    if (step.type === 'preview') { renderPreview(step); return; }
+    if (step.type === 'done') { renderBlockComplete(step.stats); return; }
+
+    if (step.type === 'board') {
+      step.q.boardTitle = step.which === 'intro'
+        ? '먼저 뜻을 맞춰보며 익히세요'
+        : '졸업 보드 — 묶음 전체 확인';
+      window.Modes.match.render(step.q, body, {
+        boardDone: function (stats) {
+          state.block.onBoardDone(step.which);
+          var fb = $('quiz-feedback');
+          fb.innerHTML = '';
+          var box = el('div', 'fb ' + (stats.correct ? 'ok' : 'ng'));
+          box.appendChild(el('div', 'fb-t', step.which === 'intro'
+            ? '이제 단계별로 확인합니다'
+            : (stats.correct ? '졸업 보드 완벽 통과!' : '졸업 보드 완료 · 실수 ' + stats.mistakes + '회')));
+          fb.appendChild(box);
+          setTimeout(renderConquerStep, 900);
+        }
+      });
+      return;
+    }
+
+    // step.type === 'question'
+    window.Modes[step.q.mode].render(step.q, body, {
+      resolve: function (correct, q) {
+        var res = state.block.onAnswer(correct);
+        var headline = null;
+        if (correct && res && res.done) headline = '정답 — ' + res.word + ' 정복!';
+        else if (!correct && res && res.demoted) headline = '오답 — 한 단계 내려갑니다';
+        else if (!correct && res && !res.filler) headline = '오답 — 이 단계를 다시 봅니다';
+        updateConquerHead();
+        showFeedback(correct, q, renderConquerStep, headline);
+      }
+    });
+  }
+
+  function renderPreview(step) {
+    var body = $('quiz-body');
+    body.innerHTML = '';
+    var started = false;
+
+    var head = el('div', 'preview-head');
+    head.appendChild(el('b', null, '이번 묶음 ' + step.words.length + '단어'));
+    head.appendChild(el('span', null, '훑어본 뒤 4단계로 확인합니다'));
+    body.appendChild(head);
+
+    var card = el('div', 'card');
+    step.words.forEach(function (w) {
+      var row = el('div', 'pv-item');
+      var left = el('div');
+      left.appendChild(el('b', null, w.word));
+      left.appendChild(el('span', 'pv-tag', w.pos + ' · ' + w.level));
+      row.appendChild(left);
+      row.appendChild(el('div', 'pv-mean', w.meanings.join(', ')));
+      card.appendChild(row);
+    });
+    body.appendChild(card);
+
+    var timer = el('div', 'pv-timer');
+    timer.appendChild(el('i'));
+    body.appendChild(timer);
+
+    var btn = el('button', 'btn btn-primary', '시작하기');
+    btn.type = 'button';
+    btn.addEventListener('click', begin);
+    body.appendChild(btn);
+
+    var t = setTimeout(begin, PREVIEW_MS);
+
+    function begin() {
+      if (started) return;       // 타이머와 버튼이 겹쳐 호출되는 것을 막는다
+      started = true;
+      clearTimeout(t);
+      state.block.startDrill();
+      renderConquerStep();
+    }
+  }
+
+  function renderBlockComplete(stats) {
+    var all = stats.conquered === stats.size;
+    var passed = state.block.passedStages();
+    var total = state.block.totalStages();
+
+    var badge = $('block-badge');
+    badge.textContent = stats.conquered + ' / ' + stats.size;
+    badge.classList.toggle('is-partial', !all);
+    $('block-title').textContent = all ? '묶음 정복!' : '묶음 종료';
+    $('block-sub').textContent = '문제 ' + stats.asked + '개 · 단계 ' + passed + '/' + total +
+      ' 통과' + (stats.demotions ? ' · 강등 ' + stats.demotions + '회' : '');
+
+    var box = $('block-words');
+    box.innerHTML = '';
+    box.appendChild(el('div', 'section-title', '묶음 단어'));
+    stats.words.forEach(function (w) {
+      var row = el('div', 'bw-item');
+      row.appendChild(el('span', 'bw-mark ' + (w.done ? 'ok' : 'ng'), w.done ? '✓' : '·'));
+      var bodyEl = el('div', 'bw-body');
+      bodyEl.appendChild(el('b', null, w.word));
+      bodyEl.appendChild(el('div', 'bw-mean', w.meanings.join(', ')));
+      row.appendChild(bodyEl);
+      var side = w.done ? '정복' : '진행 중';
+      if (w.skipped) side += ' · ' + w.skipped + '단계 생략';
+      if (w.wrong) side += ' · 강등 ' + w.wrong;
+      row.appendChild(el('div', 'bw-side', side));
+      box.appendChild(row);
+    });
+    if (!all) {
+      box.appendChild(el('div', 'site-sub',
+        '정복하지 못한 단어는 숙련도가 남아 다음 묶음에서 이어집니다.'));
+    }
+    go('block');
   }
 
   /* ── 결과 ─────────────────────────────────── */

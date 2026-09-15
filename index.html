@@ -35,7 +35,21 @@
       <div class="heatmap" id="heatmap" aria-label="최근 2주 학습량"></div>
     </div>
 
-    <h2 class="section-title">모드 선택</h2>
+    <h2 class="section-title">코스</h2>
+    <button type="button" id="conquer-card" class="mode-card mode-card-hero">
+      <span class="mode-ico">★</span>
+      <span class="mode-txt">
+        <b>정복 모드</b>
+        <span>단어 묶음이 4단계를 차례로 통과</span>
+      </span>
+      <span class="mode-n" id="conquer-n"></span>
+    </button>
+    <div class="card setting-card">
+      <div class="setting-label">묶음 크기</div>
+      <div id="block-picker" class="chip-row"></div>
+    </div>
+
+    <h2 class="section-title">개별 연습</h2>
     <div id="mode-list" class="mode-list"></div>
 
     <div class="card setting-card">
@@ -57,8 +71,23 @@
       <div class="quiz-meta"><span id="quiz-mode-name"></span><span id="quiz-progress"></span></div>
     </div>
     <div class="bar bar-quiz"><i id="quiz-bar"></i></div>
+    <div id="conquer-grid" class="cgrid"></div>
     <div id="quiz-body" class="quiz-body"></div>
     <div id="quiz-feedback" class="feedback"></div>
+  </section>
+
+  <!-- ══════════ 묶음 완료 ══════════ -->
+  <section id="screen-block" class="screen">
+    <div class="result-head">
+      <div class="conquer-badge" id="block-badge">0 / 0</div>
+      <h2 id="block-title">묶음 완료</h2>
+      <p id="block-sub" class="site-sub"></p>
+    </div>
+    <div id="block-words" class="card"></div>
+    <div class="stack">
+      <button class="btn btn-primary" id="btn-next-block">다음 묶음 시작</button>
+      <button class="btn btn-ghost" data-go="home">홈으로</button>
+    </div>
   </section>
 
   <!-- ══════════ 결과 ══════════ -->
@@ -102,6 +131,7 @@
 <script src="js/data/words.js"></script>
 <script src="js/store.js"></script>
 <script src="js/quizgen.js"></script>
+<script src="js/conquer.js"></script>
 <script src="js/modes.js"></script>
 <script src="js/app.js"></script>
 </body>

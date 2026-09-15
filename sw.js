@@ -1,6 +1,6 @@
 /* 서비스 워커 — 앱 셸을 캐시해 오프라인에서도 학습할 수 있게 한다.
    데이터를 수정한 뒤에는 CACHE 버전을 올려야 새 파일이 반영된다. */
-var CACHE = 'vocab-quiz-v1';
+var CACHE = 'vocab-quiz-v2';
 var ASSETS = [
   './',
   'index.html',
@@ -8,6 +8,7 @@ var ASSETS = [
   'js/data/words.js',
   'js/store.js',
   'js/quizgen.js',
+  'js/conquer.js',
   'js/modes.js',
   'js/app.js',
   'manifest.json',
