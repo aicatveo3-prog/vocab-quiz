@@ -257,10 +257,9 @@ b,strong{font-weight:600}
   transition:all .12s}
 .mitem:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
 .mitem.is-sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
-/* 맞춘 칸은 자리를 유지한 채 빈 슬롯으로 남긴다.
-   제거하면 남은 항목이 밀려 올라가 오탭을 유발한다. */
-.mitem.is-done{pointer-events:none;color:transparent;background:var(--surface);
-  border-style:dashed;border-color:var(--line)}
+/* 맞춘 칸은 텍스트를 남기고 풀었다는 표시만 한다. 사라지지 않는다. */
+.mitem.is-done{pointer-events:none;color:var(--ok);
+  background:var(--ok-soft);border-color:var(--ok-line);opacity:.7}
 .mitem.is-bad{border-color:var(--ng);background:var(--ng-soft);animation:shake .3s}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 
