@@ -420,7 +420,7 @@ window.Quiz = (function () {
     // 목록을 그대로 잘라 쓰면 모든 단어가 정확히 한 번씩 나온다.
     if (modeId === 'match' && ordered) {
       var mPool = eligible('match').slice().sort(byAlpha);
-      return separateClashes(chunkEven(mPool, 5))
+      return separateClashes(dealEven(mPool, 5))
         .map(function (slice) {
           return buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
         })
@@ -442,12 +442,18 @@ window.Quiz = (function () {
       for (var i = 0; i < pool.length && out.length < count; i++) {
         var w = pool[i];
         var q = null;
-        if (modeId === 'mcq') {
-          q = makeMcq(w, mcqDir);
-          if (q) mcqDir = mcqDir === 'en-ko' ? 'ko-en' : 'en-ko';
-        } else {
-          q = BUILDERS[modeId](w);
+
+        // 빌더는 오답 선택지를 무작위로 고르다 실패할 수 있다(뽑은 오답의 뜻이
+        // 정답과 문자열로 겹치면 문제를 버린다). 한 번만 시도하면 그 단어가 조용히
+        // 빠져 세션 길이가 395/396으로 흔들리고, 저장된 답이 인덱스 기준이라
+        // 다른 문제에 붙는다. 여러 번 시도해 길이를 고정한다.
+        for (var attempt = 0; attempt < 8 && !q; attempt++) {
+          q = modeId === 'mcq' ? makeMcq(w, mcqDir) : BUILDERS[modeId](w);
         }
+        if (q && modeId === 'mcq') {
+          mcqDir = mcqDir === 'en-ko' ? 'ko-en' : 'en-ko';
+        }
+
         if (q) {
           out.push(q);
           if (modeId === 'match') {
@@ -550,11 +556,6 @@ window.Quiz = (function () {
   }
 
   /**
-   * 목록을 보드 크기(4~6쌍)로 고르게 나눈다.
-   * 5개씩 단순히 끊으면 마지막에 1~3쌍짜리 보드가 남는데,
-   * 그런 보드는 소거법으로 그냥 풀려 문제가 되지 않는다.
-   */
-  /**
    * 첫 번째 뜻이 완전히 같은 단어를 서로 다른 보드로 갈라놓는다.
    *
    * all at once와 all of a sudden은 둘 다 "갑자기"다. 한 보드에 같이 올리면
@@ -609,24 +610,33 @@ window.Quiz = (function () {
     return groups;
   }
 
-  function chunkEven(list, target) {
+  /**
+   * 알파벳순 목록을 보드(4~6쌍)로 나눈다. 자르지 않고 카드처럼 번갈아 나눠준다.
+   *
+   * 앞에서 5개씩 잘라 쓰면 알파벳이 붙어 있는 파생어가 한 보드에 몰린다.
+   * 실제로 accommodate·accommodation·accompany·accomplish가 한 보드에 있었고,
+   * abrupt·abruptly, absent·absent-minded, abolish·abolition처럼 어근이 같은
+   * 조합이 개별 연습 130쌍, 정복 모드 138쌍이었다. 뜻은 서로 달라도 화면에서는
+   * 거의 같은 단어가 여러 줄 늘어선 것처럼 보여 문제가 지저분해진다.
+   *
+   * 번갈아 나눠주면 한 보드의 단어가 알파벳 전체에 흩어져 겹치는 어근이 없어진다.
+   * 목록 순서가 고정이므로 결과도 매번 같다.
+   *
+   *   자르기: [1 2 3 4 5][6 7 8 9 10]   ← 이웃끼리 뭉친다
+   *   딜링:   [1 3 5 7 9][2 4 6 8 10]   ← 흩어진다
+   */
+  function dealEven(list, target) {
     var n = list.length;
     if (n < 2) return [];
     if (n <= 6) return [list.slice()];
 
-    var groups = Math.max(1, Math.round(n / target));
-    while (groups > 1 && n / groups < 4) groups--;
-    while (groups < n && n / groups > 6) groups++;
+    var count = Math.max(1, Math.round(n / target));
+    while (count > 1 && n / count < 4) count--;
+    while (count < n && n / count > 6) count++;
 
     var out = [];
-    var base = Math.floor(n / groups);
-    var extra = n % groups;
-    var idx = 0;
-    for (var g = 0; g < groups; g++) {
-      var size = base + (g < extra ? 1 : 0);
-      out.push(list.slice(idx, idx + size));
-      idx += size;
-    }
+    for (var i = 0; i < count; i++) out.push([]);
+    for (var j = 0; j < n; j++) out[j % count].push(list[j]);
     return out;
   }
 
@@ -648,18 +658,20 @@ window.Quiz = (function () {
     if (!wordObjs || !wordObjs.length) return [];
     var ordered = wordObjs.slice().sort(byAlpha);
     var boards = [];
-    var CHUNK = 5;
 
     // 이미 어느 보드에든 올라간 단어. 복습 대상은 모두 미리 예약해 둔다.
-    // 그러지 않으면 마지막 보드를 채우는 단어가 앞 보드의 대상과 겹쳐
+    // 그러지 않으면 보드를 채우는 단어가 다른 보드의 대상과 겹쳐
     // 같은 단어가 두 보드에 나온다.
     var usedAll = {};
     ordered.forEach(function (w) { usedAll[w.word] = true; });
 
-    for (var i = 0; i < ordered.length; i += CHUNK) {
-      var slice = ordered.slice(i, i + CHUNK);
+    var groups = dealEven(ordered, 5);
+    if (!groups.length) groups = [ordered.slice()];
+    groups = separateClashes(groups);
 
+    groups.forEach(function (slice) {
       if (slice.length < 4) {
+        // 4쌍에 못 미치면 같은 품사·비슷한 레벨의 단어로 채운다
         var seed = slice[0];
         var base = slice.slice();
         var fillers = window.VOCAB.filter(function (w) {
@@ -676,13 +688,12 @@ window.Quiz = (function () {
           usedAll[f.word] = true;
           slice.push(f);
         }
-        slice.sort(byAlpha);
       }
 
-      if (slice.length < 2) continue;
-      var board = buildMatchFrom(slice, 'normal');
+      if (slice.length < 2) return;
+      var board = buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
       if (board) boards.push(board);
-    }
+    });
 
     boards.forEach(function (b, idx) {
       b.boardTitle = '짝 맞추기 ' + (idx + 1) + ' / ' + boards.length;
@@ -700,6 +711,7 @@ window.Quiz = (function () {
     buildMatchFrom: buildMatchFrom,
     buildMatchReview: buildMatchReview,
     separateClashes: separateClashes,
+    dealEven: dealEven,
     /* 정복 모드가 단계별로 직접 호출하는 개별 빌더 */
     build: {
       mcq: makeMcq,
