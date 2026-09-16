@@ -315,19 +315,32 @@
       box.appendChild(el('div', 'fb-note', '틀린 단어: ' + st.wrongWords.join(', ')));
     }
     fb.appendChild(box);
-  }
 
-  /** 이미 클리어한 보드는 다시 풀 수 없으므로 요약만 보여준다 */
-  function renderBoardSummary(slide, body) {
-    body.innerHTML = '';
-    body.appendChild(el('div', 'review-note', '지난 보드 — 다시 풀 수 없습니다'));
-    var st = slide.boardStats;
-    var box = el('div', 'board-summary');
-    box.appendChild(el('b', null, slide.q.pairs.length + '쌍 완료'));
-    box.appendChild(el('span', null,
-      st.mistakes ? '실수 ' + st.mistakes + '회' : '실수 없음'));
-    body.appendChild(box);
-    showBoardFeedback(slide);
+    // 보드의 각 단어에 대해 발음·뜻·예문을 목록으로 보여준다
+    var pairs = slide.q.pairs || [];
+    if (pairs.length) {
+      var list = el('div', 'board-words');
+      pairs.forEach(function (p) {
+        var w = WORD_INDEX[p.word];
+        if (!w) return;
+        var row = el('div', 'bwd');
+
+        var head = el('div', 'bwd-head');
+        head.appendChild(el('b', 'bwd-word', w.word));
+        if (w.pron) head.appendChild(el('span', 'bwd-pron', '🔊 ' + w.pron));
+        row.appendChild(head);
+
+        row.appendChild(el('div', 'bwd-mean', w.meanings.join(', ')));
+
+        if (w.ex && w.ex.length) {
+          var e = w.ex[0];
+          row.appendChild(el('div', 'bwd-ex', e.s.replace('{{}}', e.f)));
+          if (e.ko) row.appendChild(el('div', 'bwd-ko', e.ko));
+        }
+        list.appendChild(row);
+      });
+      if (list.children.length) fb.appendChild(list);
+    }
   }
 
   /* ── 이전 / 다음 ─────────────────────────── */
