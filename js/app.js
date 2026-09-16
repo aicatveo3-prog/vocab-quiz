@@ -182,7 +182,11 @@
     var body = $('quiz-body');
     if (slide.q.mode === 'match') {
       if (slide.answered) {
-        renderBoardSummary(slide, body);
+        // 완료한 보드는 단어·뜻을 그대로 보여주고 클릭만 막는다
+        window.Modes.match.render(slide.q, body, {
+          review: { stats: slide.boardStats || {} }
+        });
+        showBoardFeedback(slide);
       } else {
         window.Modes.match.render(slide.q, body, {
           boardDone: function (stats) { onBoardAnswer(slide, stats); }
