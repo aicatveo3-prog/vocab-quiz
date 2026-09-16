@@ -305,9 +305,7 @@ window.Quiz = (function () {
 
     return {
       mode: 'match',
-      pairs: chosen.map(function (w) {
-        return { word: w.word, meaning: w.meanings[0], level: w.level };
-      }),
+      pairs: boardPairs(chosen),
       words: chosen.map(function (w) { return w.word; })
     };
   }
@@ -414,6 +412,21 @@ window.Quiz = (function () {
       return buildMatchReview(targets);
     }
 
+    // 짝 맞추기 세트 전체 출제 — 단어를 알파벳순으로 나눠 보드를 만든다.
+    //
+    // seed마다 makeMatch를 부르면 동료 4개를 전체 단어에서 알파벳순으로 뽑기
+    // 때문에 앞쪽 단어만 계속 뽑혀 나온다. 실제로 80보드 400슬롯에 등장하는
+    // 단어가 81개뿐이었고(abbreviation은 25번), 315단어는 한 번도 나오지 않았다.
+    // 목록을 그대로 잘라 쓰면 모든 단어가 정확히 한 번씩 나온다.
+    if (modeId === 'match' && ordered) {
+      var mPool = eligible('match').slice().sort(byAlpha);
+      return separateClashes(chunkEven(mPool, 5))
+        .map(function (slice) {
+          return buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
+        })
+        .filter(Boolean);
+    }
+
     // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
     if (ordered) {
       var pool = eligible(modeId);
@@ -485,16 +498,136 @@ window.Quiz = (function () {
    * @param recordMode 'none'이면 숙련도를 올리지 않고 노출만 기록한다.
    *                   도입 보드는 뜻을 처음 보여주는 자리이므로 'none'을 쓴다.
    */
+  /**
+   * 보드에 올릴 단어-뜻 쌍을 만든다.
+   *
+   * 같은 뜻이 두 번 표시되면 어느 쪽에 연결해도 맞아야 하는데 코드는 한쪽만
+   * 정답으로 보기 때문에 문제가 성립하지 않는다 (advert·advertisement 둘 다 "광고",
+   * auditory·aural 둘 다 "청각의"). 그래서 이미 쓰인 뜻은 피하고 다음 뜻을 쓴다.
+   *
+   * 뜻 후보가 적은 단어부터 고르게 한다. 선택지가 하나뿐인 쪽을 먼저 배정해야
+   * 충돌을 피할 수 있다. 표시 순서는 renderMatch가 알파벳순으로 다시 잡으므로
+   * 여기서의 배정 순서는 화면에 영향을 주지 않는다.
+   */
+  function boardPairs(wordObjs) {
+    var order = wordObjs.map(function (w, i) { return { w: w, i: i }; })
+      .sort(function (a, b) {
+        var d = a.w.meanings.length - b.w.meanings.length;
+        if (d) return d;
+        return a.w.word.toLowerCase().localeCompare(b.w.word.toLowerCase());
+      });
+
+    var taken = {};
+    var chosen = {};
+    order.forEach(function (item) {
+      var ms = item.w.meanings || [];
+      var pick = null;
+      for (var k = 0; k < ms.length; k++) {
+        var key = normalizeMeaning(ms[k]);
+        if (!taken[key]) { pick = ms[k]; taken[key] = true; break; }
+      }
+      if (pick === null) {
+        // 가진 뜻이 전부 이미 쓰였다 — 품사를 덧붙여 구별한다
+        pick = (ms[0] || item.w.word) + ' (' + item.w.pos + ')';
+        taken[normalizeMeaning(pick)] = true;
+      }
+      chosen[item.i] = pick;
+    });
+
+    return wordObjs.map(function (w, i) {
+      return { word: w.word, meaning: chosen[i], level: w.level };
+    });
+  }
+
   function buildMatchFrom(wordObjs, recordMode) {
     if (!wordObjs || wordObjs.length < 2) return null;
     return {
       mode: 'match',
       recordMode: recordMode || 'normal',
-      pairs: wordObjs.map(function (w) {
-        return { word: w.word, meaning: w.meanings[0], level: w.level };
-      }),
+      pairs: boardPairs(wordObjs),
       words: wordObjs.map(function (w) { return w.word; })
     };
+  }
+
+  /**
+   * 목록을 보드 크기(4~6쌍)로 고르게 나눈다.
+   * 5개씩 단순히 끊으면 마지막에 1~3쌍짜리 보드가 남는데,
+   * 그런 보드는 소거법으로 그냥 풀려 문제가 되지 않는다.
+   */
+  /**
+   * 첫 번째 뜻이 완전히 같은 단어를 서로 다른 보드로 갈라놓는다.
+   *
+   * all at once와 all of a sudden은 둘 다 "갑자기"다. 한 보드에 같이 올리면
+   * boardPairs가 한쪽을 "불쑥"으로 바꿔 표시는 구별되지만, 사용자가 어느 쪽에
+   * 연결해도 뜻으로는 맞기 때문에 억울하게 틀린다. 같은 처지가 advert·advertisement,
+   * auditory·aural로 396단어 중 세 쌍이다.
+   *
+   * 철자만 닮은 단어(amiable·amicable, apply·apply for)는 갈라놓지 않는다.
+   * 표시되는 뜻이 분명히 다르고, 오히려 형태를 구별하는 훈련이 된다.
+   *
+   * 교환은 앞쪽 보드부터 순서대로 훑어 결정하므로 결과가 매번 같다.
+   */
+  function separateClashes(groups) {
+    function sameConcept(a, b) {
+      if (a === b) return false;
+      return normalizeMeaning(a.meanings[0]) === normalizeMeaning(b.meanings[0]);
+    }
+    function hasClash(list, w) {
+      for (var i = 0; i < list.length; i++) {
+        if (sameConcept(list[i], w)) return true;
+      }
+      return false;
+    }
+
+    for (var g = 0; g < groups.length; g++) {
+      for (var i = 0; i < groups[g].length; i++) {
+        var w = groups[g][i];
+        var rest = groups[g].filter(function (x) { return x !== w; });
+        if (!hasClash(rest, w)) continue;
+
+        var swapped = false;
+        // 가까운 보드부터 교환 상대를 찾는다
+        for (var off = 1; off < groups.length && !swapped; off++) {
+          var targets = [g + off, g - off];
+          for (var t = 0; t < targets.length && !swapped; t++) {
+            var h = targets[t];
+            if (h < 0 || h >= groups.length) continue;
+            for (var j = 0; j < groups[h].length; j++) {
+              var v = groups[h][j];
+              var hRest = groups[h].filter(function (x) { return x !== v; });
+              // 교환 후 양쪽 보드 모두 충돌이 없어야 한다
+              if (hasClash(hRest, w) || hasClash(rest, v)) continue;
+              groups[g][i] = v;
+              groups[h][j] = w;
+              swapped = true;
+              break;
+            }
+          }
+        }
+      }
+    }
+    return groups;
+  }
+
+  function chunkEven(list, target) {
+    var n = list.length;
+    if (n < 2) return [];
+    if (n <= 6) return [list.slice()];
+
+    var groups = Math.max(1, Math.round(n / target));
+    while (groups > 1 && n / groups < 4) groups--;
+    while (groups < n && n / groups > 6) groups++;
+
+    var out = [];
+    var base = Math.floor(n / groups);
+    var extra = n % groups;
+    var idx = 0;
+    for (var g = 0; g < groups; g++) {
+      var size = base + (g < extra ? 1 : 0);
+      out.push(list.slice(idx, idx + size));
+      idx += size;
+    }
+    return out;
   }
 
   function byAlpha(a, b) {
@@ -517,6 +650,12 @@ window.Quiz = (function () {
     var boards = [];
     var CHUNK = 5;
 
+    // 이미 어느 보드에든 올라간 단어. 복습 대상은 모두 미리 예약해 둔다.
+    // 그러지 않으면 마지막 보드를 채우는 단어가 앞 보드의 대상과 겹쳐
+    // 같은 단어가 두 보드에 나온다.
+    var usedAll = {};
+    ordered.forEach(function (w) { usedAll[w.word] = true; });
+
     for (var i = 0; i < ordered.length; i += CHUNK) {
       var slice = ordered.slice(i, i + CHUNK);
 
@@ -524,7 +663,7 @@ window.Quiz = (function () {
         var seed = slice[0];
         var base = slice.slice();
         var fillers = window.VOCAB.filter(function (w) {
-          if (base.indexOf(w) !== -1) return false;
+          if (usedAll[w.word]) return false;
           if (w.pos !== seed.pos) return false;
           if (levelGap(w, seed) > 1) return false;
           for (var k = 0; k < base.length; k++) {
@@ -532,7 +671,11 @@ window.Quiz = (function () {
           }
           return true;
         }).sort(byAlpha);
-        while (slice.length < 4 && fillers.length) slice.push(fillers.shift());
+        while (slice.length < 4 && fillers.length) {
+          var f = fillers.shift();
+          usedAll[f.word] = true;
+          slice.push(f);
+        }
         slice.sort(byAlpha);
       }
 
@@ -556,6 +699,7 @@ window.Quiz = (function () {
     rankByPriority: rankByPriority,
     buildMatchFrom: buildMatchFrom,
     buildMatchReview: buildMatchReview,
+    separateClashes: separateClashes,
     /* 정복 모드가 단계별로 직접 호출하는 개별 빌더 */
     build: {
       mcq: makeMcq,
