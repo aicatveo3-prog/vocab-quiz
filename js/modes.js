@@ -150,6 +150,7 @@ window.Modes = (function () {
           var detail = el('div', 'opt-detail');
           detail.appendChild(document.createTextNode(obj.meanings.join(', ')));
           if (obj.pron) detail.appendChild(el('span', 'opt-pron', ' 🔊 ' + obj.pron));
+          b.classList.add("has-detail");
           b.appendChild(detail);
         });
       }
@@ -184,7 +185,8 @@ window.Modes = (function () {
                   : '≠ ' + b._value + ' (반의어)';
               }
             }
-            b.appendChild(detail);
+            b.classList.add("has-detail");
+          b.appendChild(detail);
           });
         }
       }
