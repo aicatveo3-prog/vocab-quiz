@@ -222,16 +222,23 @@ window.Modes = (function () {
     if (review) settle(review.chosen);
   }
 
-  /* ── ⑤ 짝 맞추기 ─────────────────────────── */
+  /* ── ⑤ 짝 맞추기 ───────────────────────────
+     ctx.review = { stats } 를 넘기면 이미 클리어한 상태로 그린다.
+     단어와 뜻이 그대로 보이고 클릭만 받지 않는다. */
   function renderMatch(q, body, ctx) {
     body.innerHTML = '';
+    var review = ctx.review;
     var total = q.pairs.length;
     var remaining = total;
-    var mistakes = 0;
+    var mistakes = review && review.stats ? (review.stats.mistakes || 0) : 0;
     var wrongWords = [];
 
     // 도입 보드는 뜻을 처음 보여주는 자리이므로 숙련도를 올리지 않는다
     var noRecord = q.recordMode === 'none';
+
+    if (review) {
+      body.appendChild(el('div', 'review-note', '지난 보드 — 다시 풀 수 없습니다'));
+    }
 
     var head = el('div', 'match-head');
     var title = el('b', null, q.boardTitle || (total + '쌍을 모두 연결하세요'));
@@ -241,7 +248,9 @@ window.Modes = (function () {
     body.appendChild(head);
 
     function updateHead() {
-      sub.textContent = '남은 쌍 ' + remaining + ' · 실수 ' + mistakes;
+      sub.textContent = review
+        ? (total + '쌍 완료 · ' + (mistakes ? '실수 ' + mistakes + '회' : '실수 없음'))
+        : ('남은 쌍 ' + remaining + ' · 실수 ' + mistakes);
     }
     updateHead();
 
@@ -269,6 +278,20 @@ window.Modes = (function () {
     window.Quiz.shuffle(q.pairs).forEach(function (p) {
       colR.appendChild(makeItem(p.meaning, p.word, 'R'));
     });
+
+    // 복습 모드: 모두 맞춘 상태로 표시하고 클릭을 받지 않는다
+    if (review) {
+      remaining = 0;
+      updateHead();
+      [].concat(
+        Array.prototype.slice.call(colL.children),
+        Array.prototype.slice.call(colR.children)
+      ).forEach(function (b) {
+        b.disabled = true;
+        b.classList.add('is-done');
+      });
+      return;
+    }
 
     function clearSel() {
       if (selL) selL.classList.remove('is-sel');
