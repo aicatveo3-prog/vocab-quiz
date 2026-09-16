@@ -142,13 +142,79 @@ window.Conquer = (function () {
         }
       }
       if (!placed) {
-        // 간격을 지킬 수 있는 게 없으면 가장 앞의 것을 강제 배치
-        result.push(queue.shift());
+        // 간격을 지킬 수 있는 게 없어도, 최소한 바로 앞 문제와 같은 단어는 피한다.
+        // 같은 단어가 연달아 나오면 앞 문제에서 본 답이 그대로 힌트가 된다.
+        var prev = result.length ? result[result.length - 1].word : null;
+        var idx = 0;
+        for (var k = 0; k < queue.length; k++) {
+          if (queue[k].word !== prev) { idx = k; break; }
+        }
+        result.push(queue.splice(idx, 1)[0]);
       }
     }
     // 남은 게 있으면 끝에 붙인다
     while (queue.length) result.push(queue.shift());
-    return result;
+    return fixAdjacent(result, gap);
+  }
+
+  /**
+   * 같은 단어가 바로 연달아 놓인 자리를 교환으로 푼다.
+   *
+   * 배치 단계에서는 목록의 끝에 이르면 남은 문제가 하나뿐이라 간격을 지킬 수
+   * 없다(챕터 5의 adverse가 문장 빈칸 → 연어로 붙어 있었다). 다 배치한 뒤
+   * 자리를 바꾸면 해결된다. 가까운 자리부터 순서대로 시도하므로 결과가 매번 같다.
+   */
+  function fixAdjacent(list, gap) {
+    /** 같은 단어가 바로 붙어 있는 첫 자리. 없으면 -1 */
+    function firstAdjacency(l) {
+      for (var k = 1; k < l.length; k++) {
+        if (l[k].word === l[k - 1].word) return k;
+      }
+      return -1;
+    }
+
+    /** 모든 단어의 단계가 1 → 2 → 3 → 4 순서인지.
+        자리를 옮기다 연어(4단계)가 문장 빈칸(3단계)보다 먼저 나오면 안 된다. */
+    function stagesOk(l) {
+      var prev = {};
+      for (var k = 0; k < l.length; k++) {
+        var w = l[k].word;
+        var st = typeof l[k].stage === 'number' ? l[k].stage : 0;
+        if (prev[w] !== undefined && st < prev[w]) return false;
+        prev[w] = st;
+      }
+      return true;
+    }
+
+    /** from 자리의 문제를 빼서 to 자리에 넣은 새 배열 */
+    function moved(l, from, to) {
+      var next = l.slice();
+      var item = next.splice(from, 1)[0];
+      next.splice(to > from ? to - 1 : to, 0, item);
+      return next;
+    }
+
+    var out = list;
+    var i = firstAdjacency(out);
+    var guard = 0;
+
+    while (i !== -1 && guard++ < 40) {
+      // 뒤쪽 문제를 더 뒤로, 앞쪽 문제를 더 앞으로 옮겨 본다.
+      // 교환이 아니라 이동이라 단계 순서를 지킬 여지가 넓다.
+      var plans = [];
+      for (var t = i + gap; t <= out.length; t++) plans.push([i, t]);
+      for (var t2 = i - 1 - gap; t2 >= 0; t2--) plans.push([i - 1, t2]);
+
+      var fixed = null;
+      for (var p = 0; p < plans.length && !fixed; p++) {
+        var cand = moved(out, plans[p][0], plans[p][1]);
+        if (firstAdjacency(cand) === -1 && stagesOk(cand)) fixed = cand;
+      }
+      if (!fixed) break;          // 어떻게 해도 안 되면 그대로 둔다
+      out = fixed;
+      i = firstAdjacency(out);
+    }
+    return out;
   }
 
   function canPlace(result, word, gap) {
@@ -168,15 +234,27 @@ window.Conquer = (function () {
     if (pairsPerBoard < 4) pairsPerBoard = 4;
     if (pairsPerBoard > 6) pairsPerBoard = 5;
 
+    var groups = [];
     for (var i = 0; i < ordered.length; i += pairsPerBoard) {
       var slice = ordered.slice(i, i + pairsPerBoard);
       if (slice.length < 2) break;
-      var board = window.Quiz.buildMatchFrom(slice, 'normal');
+      groups.push(slice);
+    }
+
+    // 뜻이 완전히 같은 단어끼리는 같은 보드에 두지 않는다
+    // (챕터 6의 advert·advertisement, 챕터 19의 auditory·aural)
+    groups = window.Quiz.separateClashes(groups);
+
+    groups.forEach(function (slice) {
+      var sorted = slice.slice().sort(function (a, b) {
+        return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+      });
+      var board = window.Quiz.buildMatchFrom(sorted, 'normal');
       if (board) {
-        board.boardTitle = '짝 맞추기 ' + (boards.length + 1) + ' / ' + BOARDS_PER_CHAPTER;
+        board.boardTitle = '짝 맞추기 ' + (boards.length + 1) + ' / ' + groups.length;
         boards.push(board);
       }
-    }
+    });
     return boards;
   }
 
