@@ -272,10 +272,19 @@ window.Modes = (function () {
       return b;
     }
 
-    window.Quiz.shuffle(q.pairs).forEach(function (p) {
+    // 순서를 고정한다. 왼쪽은 알파벳순, 오른쪽은 같은 목록을 일정 칸수만큼
+    // 회전시켜 배치한다. 랜덤이 아니므로 매번 같은 화면이 나오고,
+    // 같은 행끼리 짝이 되지 않아 문제로서의 의미도 유지된다.
+    var ordered = q.pairs.slice().sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+    });
+    var shift = Math.max(1, Math.floor(ordered.length / 2));
+    var rotated = ordered.slice(shift).concat(ordered.slice(0, shift));
+
+    ordered.forEach(function (p) {
       colL.appendChild(makeItem(p.word, p.word, 'L'));
     });
-    window.Quiz.shuffle(q.pairs).forEach(function (p) {
+    rotated.forEach(function (p) {
       colR.appendChild(makeItem(p.meaning, p.word, 'R'));
     });
 
