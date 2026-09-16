@@ -18,6 +18,8 @@
     cursor: -1,
     correct: 0,
     wrongWords: [],
+    // 오답 복습 세션인지. true면 맞힌 단어를 오답 노트에서 지운다.
+    isReview: false,
     wordFilter: { status: 'all', level: 'all' }
   };
 
@@ -87,6 +89,11 @@
     var badge = $('wrong-badge');
     badge.textContent = wrongN;
     badge.classList.toggle('is-zero', wrongN === 0);
+
+    // 오답 노트 카드 — 틀린 것이 있을 때만 내보낸다
+    var card = $('wrong-card');
+    card.style.display = wrongN ? '' : 'none';
+    $('wrong-card-n').textContent = wrongN + '단어';
   }
 
   // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
@@ -114,9 +121,25 @@
      세트 전체를 한 번에 출제한다. 모든 문제를 미리 만들어 두어야
      진행 바 드래그로 아무 문제로나 자유롭게 이동할 수 있다. */
   function startSession(modeId, restrictTo) {
-    var avail = window.Quiz.availableCount(modeId);
-    var count = modeId === 'match' ? Math.ceil(avail / 5) : avail;
-    var session = window.Quiz.buildSession(modeId, count, restrictTo, !restrictTo);
+    var review = !!(restrictTo && restrictTo.length);
+
+    // 복습 세션은 문제 수를 "대상 단어 수"에 맞춘다.
+    // 전체 단어 수로 계산하면 오답 3개를 복습하려는데 80보드가 만들어진다.
+    var avail = window.Quiz.eligible(modeId).length;
+    if (review) {
+      var allow = {};
+      restrictTo.forEach(function (w) { allow[w] = true; });
+      avail = window.Quiz.eligible(modeId).filter(function (w) {
+        return allow[w.word];
+      }).length;
+      if (!avail) {
+        alert('이 형식으로 출제할 수 있는 오답 단어가 없습니다.');
+        return;
+      }
+    }
+    var count = modeId === 'match' ? Math.max(1, Math.ceil(avail / 5)) : avail;
+
+    var session = window.Quiz.buildSession(modeId, count, restrictTo, true);
     if (!session.length) {
       alert('출제할 수 있는 문제가 없습니다.');
       return;
@@ -125,7 +148,8 @@
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
-    state.setName = restrictTo ? '오답' : 'A';
+    state.isReview = review;
+    state.setName = review ? '오답' : 'A';
     state.correct = 0;
     state.wrongWords = [];
     state.slides = session.map(function (q) {
@@ -134,19 +158,59 @@
     });
     state.cursor = 0;
 
-    // 저장된 세션이 있으면 복원
-    state.sessionKey = window.Store.sessionKey('practice', modeId, state.setName, null);
-    var saved = window.Store.loadSession(state.sessionKey);
-    if (saved && !restrictTo) {
-      window.Store.restoreSession(saved, state.slides);
-      state.correct = saved.correct || 0;
-      state.wrongWords = saved.wrongWords || [];
-      state.cursor = Math.min(saved.cursor || 0, state.slides.length - 1);
+    // 저장된 세션이 있으면 복원.
+    // 복습 세션은 맞힐 때마다 대상 목록이 줄어들어 저장해 두면 어긋나므로 저장하지 않는다.
+    var saved = null;
+    if (review) {
+      state.sessionKey = null;
+    } else {
+      state.sessionKey = window.Store.sessionKey('practice', modeId, state.setName, null);
+      saved = window.Store.loadSession(state.sessionKey);
+      if (saved) {
+        window.Store.restoreSession(saved, state.slides);
+        state.correct = saved.correct || 0;
+        state.wrongWords = saved.wrongWords || [];
+        state.cursor = Math.min(saved.cursor || 0, state.slides.length - 1);
+      }
     }
 
     go('quiz');
-    if (!saved || !restrictTo) persistSession();   // 초기 세션을 저장
+    if (!saved) persistSession();   // 초기 세션을 저장 (복습은 sessionKey가 없어 무시됨)
     renderSlide();
+  }
+
+  /* ── 오답 복습 세션 (정복 방식 · 5개 모드 혼합) ──────
+     결과 화면·챕터 목록·오답 노트에서 공통으로 쓴다.
+     @param words 복습할 단어 이름 배열
+     @param title 화면에 표시할 이름
+     @param back  완료 후 돌아갈 화면을 여는 함수 */
+  function startReviewSession(words, title, back) {
+    var objs = (words || []).map(function (w) { return WORD_INDEX[w]; }).filter(Boolean);
+    if (!objs.length) {
+      alert('복습할 오답이 없습니다.');
+      return;
+    }
+    var sess = window.Conquer.createReviewSession(objs, title);
+    if (!sess || !sess.slides.length) {
+      alert('복습 문제를 만들 수 없습니다.');
+      return;
+    }
+    sess.back = back || function () { go('home'); };
+
+    state.flow = 'conquer';
+    state.session = null;
+    state.modeId = null;
+    state.restrictTo = sess.reviewWords;
+    state.isReview = true;
+    state.conquerSession = sess;
+    state.slides = sess.slides;
+    state.cursor = -1;          // 미리보기부터
+    state.correct = 0;
+    state.wrongWords = [];
+    state.sessionKey = null;    // 복습 세션은 저장하지 않는다
+
+    go('quiz');
+    renderConquerPreview(sess);
   }
 
   // 확인창 없이 바로 홈으로.
@@ -210,20 +274,16 @@
     slide.chosen = chosen;
     slide.correct = correct;
 
-    if (state.flow === 'conquer') {
-      // 정복 모드: 강등 없이 그냥 기록만
-      var q = slide.q;
-      window.Store.record(q.word, correct);
-      if (correct) state.correct++;
-      else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
-      updateHead();
-    } else {
-      var q = slide.q;
-      window.Store.record(q.word, correct);
-      if (correct) state.correct++;
-      else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
-      if (correct && state.restrictTo) window.Store.clearWrong(q.word);
-    }
+    var q = slide.q;
+    window.Store.record(q.word, correct);
+    if (correct) state.correct++;
+    else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
+
+    // 오답 복습에서 맞히면 오답 노트에서 지운다 (개별 연습·정복 복습 공통).
+    // 일반 연습에서 맞힌 것만으로는 지우지 않는다 — 복습으로 확인해야 비워진다.
+    if (correct && state.isReview) window.Store.clearWrong(q.word);
+
+    if (state.flow === 'conquer') updateHead();   // 정복 모드는 강등 없이 기록만
     showFeedbackBox(slide);
     renderNav();
     persistSession();
@@ -234,18 +294,21 @@
     slide.answered = true;
     slide.boardStats = stats;
 
-    if (state.flow === 'conquer') {
-      if (stats.correct) state.correct++;
-      stats.wrongWords.forEach(function (w) {
-        if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
-      });
-      updateHead();
-    } else {
-      if (stats.correct) state.correct++;
-      stats.wrongWords.forEach(function (w) {
-        if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
+    if (stats.correct) state.correct++;
+    stats.wrongWords.forEach(function (w) {
+      if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
+    });
+
+    // 오답 복습에서는 한 번도 틀리지 않고 맞춘 쌍만 오답 노트에서 지운다.
+    // 보드 단위가 아니라 단어 단위로 판정해야 한 단어 실수로 나머지가 남지 않는다.
+    if (state.isReview) {
+      var missed = stats.wrongWords || [];
+      (slide.q.words || []).forEach(function (w) {
+        if (missed.indexOf(w) === -1) window.Store.clearWrong(w);
       });
     }
+
+    if (state.flow === 'conquer') updateHead();
     showBoardFeedback(slide);
     renderNav();
     persistSession();
@@ -498,19 +561,73 @@
     var s = window.Conquer.getSet(setId);
     var chs = window.Conquer.buildChapters(s);
     $('chapters-title').textContent = s.label + ' 세트';
+
+    // 오답 노트는 출처와 무관하게 한 곳에 모이므로,
+    // "챕터 단어 ∩ 오답 노트" 교집합만 구하면 챕터별 오답이 그대로 나온다.
+    var wrongSet = {};
+    window.Store.wrongList().forEach(function (w) { wrongSet[w] = true; });
+
+    var setWrong = [];
+    var back = function () { renderChapters(setId); };
+
     var list = $('chapter-list');
     list.innerHTML = '';
+
     chs.forEach(function (ch) {
+      var chWrong = ch.words
+        .filter(function (w) { return wrongSet[w.word]; })
+        .map(function (w) { return w.word; });
+      chWrong.forEach(function (w) {
+        if (setWrong.indexOf(w) === -1) setWrong.push(w);
+      });
+
+      var pair = el('div', 'row-pair');
+
       var btn = el('button', 'row-btn');
       btn.type = 'button';
       var main = el('span', 'row-main');
       main.appendChild(el('b', null, '챕터 ' + ch.label));
       main.appendChild(el('span', null, ch.from + ' ~ ' + ch.to + '  (' + ch.rangeText + ')'));
       btn.appendChild(main);
-      btn.appendChild(el('span', 'row-n', ch.words.length + '단어'));
+      var n = el('span', 'row-n', ch.words.length + '단어');
+      if (chWrong.length) {
+        n.appendChild(el('span', 'row-wrong', ' · 오답 ' + chWrong.length));
+      }
+      btn.appendChild(n);
       btn.addEventListener('click', function () { startConquerChapter(setId, ch.index); });
-      list.appendChild(btn);
+      pair.appendChild(btn);
+
+      // 오답이 없는 챕터에도 같은 폭의 빈 슬롯을 둔다.
+      // 그래야 행마다 '20단어'가 같은 위치에서 끝나 목록이 흔들리지 않는다.
+      var side = el('button', 'row-side' + (chWrong.length ? '' : ' is-empty'), '복습');
+      side.type = 'button';
+      if (chWrong.length) {
+        side.title = '챕터 ' + ch.label + '의 오답 ' + chWrong.length + '단어만 다시 풀기';
+        side.setAttribute('aria-label', side.title);
+        side.addEventListener('click', function () {
+          startReviewSession(chWrong, '챕터 ' + ch.label, back);
+        });
+      } else {
+        side.disabled = true;
+        side.setAttribute('aria-hidden', 'true');
+      }
+      pair.appendChild(side);
+
+      list.appendChild(pair);
     });
+
+    // 세트 단위 오답 복습 — 챕터를 넘나들며 틀린 것을 한 번에
+    var setBtn = $('btn-set-review');
+    if (setWrong.length) {
+      setBtn.style.display = '';
+      setBtn.textContent = s.label + ' 세트 오답 ' + setWrong.length + '단어 다시 풀기';
+      setBtn.onclick = function () {
+        startReviewSession(setWrong, s.label + ' 세트', back);
+      };
+    } else {
+      setBtn.style.display = 'none';
+    }
+
     go('chapters');
   }
 
@@ -523,9 +640,13 @@
       alert('문제를 만들 수 없습니다.');
       return;
     }
+    sess.back = function () { renderChapters(setId); };
+
     state.flow = 'conquer';
     state.session = null;
     state.modeId = null;
+    state.restrictTo = null;
+    state.isReview = false;
     state.conquerSession = sess;
     state.slides = sess.slides;
     state.cursor = -1;   // 미리보기부터 시작
@@ -559,13 +680,14 @@
     $('quiz-feedback').innerHTML = '';
     hideNav();
     $('conquer-grid').innerHTML = '';
-    $('quiz-mode-name').textContent = '정복 · 챕터 ' + sess.chapter.label;
+    $('quiz-mode-name').textContent = sess.headTitle || ('정복 · 챕터 ' + sess.chapter.label);
     $('quiz-progress').textContent = sess.chapter.words.length + '단어';
     $('quiz-bar-wrap').style.display = 'none';
 
     var head = el('div', 'preview-head');
-    head.appendChild(el('b', null, '챕터 ' + sess.chapter.label + ' · ' + sess.chapter.words.length + '단어'));
-    head.appendChild(el('span', null, '충분히 훑어본 뒤 시작하세요'));
+    head.appendChild(el('b', null, sess.previewTitle ||
+      ('챕터 ' + sess.chapter.label + ' · ' + sess.chapter.words.length + '단어')));
+    head.appendChild(el('span', null, sess.previewNote || '충분히 훑어본 뒤 시작하세요'));
     body.appendChild(head);
 
     var card = el('div', 'panel');
@@ -591,7 +713,7 @@
 
   function updateConquerHead() {
     var sess = state.conquerSession;
-    $('quiz-mode-name').textContent = '정복 · 챕터 ' + sess.chapter.label;
+    $('quiz-mode-name').textContent = sess.headTitle || ('정복 · 챕터 ' + sess.chapter.label);
     $('quiz-progress').textContent = (state.cursor + 1) + ' / ' + state.slides.length;
     var bar = $('quiz-bar-wrap');
     bar.style.display = '';
@@ -611,7 +733,7 @@
     badge.textContent = pct + '%';
     badge.classList.toggle('is-ok', pct >= 80);
     badge.classList.toggle('is-ng', pct < 50);
-    $('block-title').textContent = '챕터 ' + sess.chapter.label + ' 완료';
+    $('block-title').textContent = sess.resultTitle || ('챕터 ' + sess.chapter.label + ' 완료');
     $('block-sub').textContent =
       answered + '문제 중 ' + state.correct + '문제 정답';
 
@@ -629,17 +751,35 @@
     } else {
       box.appendChild(el('div', 'empty', '틀린 단어가 없습니다!'));
     }
-    $('btn-next-block').textContent = '챕터 목록으로';
+
+    // 방금 틀린 단어만 정복 방식(5개 모드 혼합)으로 다시 출제
+    setRetryButton('btn-retry-block',
+      sess.isReview ? sess.chapter.label : '챕터 ' + sess.chapter.label, sess.back);
+
+    $('btn-next-block').textContent = sess.isReview ? '돌아가기' : '챕터 목록으로';
     go('block');
   }
 
   $('btn-next-block').addEventListener('click', function () {
-    if (state.conquerSession) {
-      renderChapters(state.conquerSession.setId);
-    } else {
-      go('home');
-    }
+    var sess = state.conquerSession;
+    if (sess && typeof sess.back === 'function') sess.back();
+    else if (sess && sess.setId) renderChapters(sess.setId);
+    else go('home');
   });
+
+  /** 결과·완료 화면의 "틀린 N단어 다시 풀기" 버튼을 상황에 맞게 설정한다 */
+  function setRetryButton(btnId, title, back) {
+    var btn = $(btnId);
+    if (!btn) return;
+    var words = state.wrongWords.slice();   // 세션이 초기화되기 전에 복사해 둔다
+    if (!words.length) {
+      btn.style.display = 'none';
+      return;
+    }
+    btn.style.display = '';
+    btn.textContent = '틀린 ' + words.length + '단어 다시 풀기';
+    btn.onclick = function () { startReviewSession(words, title, back); };
+  }
 
   /* ── 결과 ─────────────────────────────────── */
   function renderResult() {
@@ -651,7 +791,9 @@
     var ring = $('score-ring');
     ring.classList.toggle('is-ok', answered > 0 && pct >= 80);
     ring.classList.toggle('is-ng', answered > 0 && pct < 50);
-    $('result-title').textContent = modeById(state.modeId).label + ' · ' + state.setName + ' 세트';
+    $('result-title').textContent = state.isReview
+      ? modeById(state.modeId).label + ' · 오답 복습'
+      : modeById(state.modeId).label + ' · ' + state.setName + ' 세트';
     $('result-sub').textContent = answered
       ? (answered + unit + ' 중 ' + state.correct + ' 정답 · 전체 ' + state.slides.length + unit +
         ' · 연속 ' + window.Store.summary(window.VOCAB.length).streak + '일')
@@ -671,11 +813,38 @@
         box.appendChild(row);
       });
     }
+
+    // 개별 연습 결과는 "같은 형식으로" 틀린 것만 다시 푼다.
+    // 방금 4지선다에서 틀렸으면 4지선다로 확인 사살하는 흐름이 자연스럽다.
+    var retry = $('btn-retry-result');
+    var wrongCopy = state.wrongWords.slice();
+    var retryMode = state.modeId;
+    if (!wrongCopy.length) {
+      retry.style.display = 'none';
+    } else {
+      retry.style.display = '';
+      retry.textContent = '틀린 ' + wrongCopy.length +
+        (retryMode === 'match' ? '단어' : '문제') + ' 다시 풀기';
+      retry.onclick = function () { startSession(retryMode, wrongCopy); };
+    }
+
+    $('btn-again').textContent = state.isReview
+      ? '오답 노트 전체 다시 풀기' : '같은 모드로 한 번 더';
+
     go('result');
   }
 
   $('btn-again').addEventListener('click', function () {
-    startSession(state.modeId, state.restrictTo);
+    if (!state.isReview) { startSession(state.modeId, null); return; }
+    // 복습 세션의 "한 번 더"는 남아 있는 오답 전체를 뜻한다.
+    // 빈 배열을 넘기면 세트 전체(396문제)가 시작되므로 반드시 걸러낸다.
+    var remain = window.Store.wrongList();
+    if (!remain.length) {
+      alert('오답 노트가 비었습니다. 완벽합니다!');
+      go('home');
+      return;
+    }
+    startSession(state.modeId, remain);
   });
 
   /* ── 오답 노트 ─────────────────────────────── */
@@ -683,13 +852,26 @@
     var wrong = window.Store.wrongList();
     var chips = $('wrong-modes');
     chips.innerHTML = '';
+    $('wrong-count').textContent = wrong.length + '단어';
 
+    var mixed = $('btn-wrong-mixed');
     if (!wrong.length) {
+      mixed.style.display = 'none';
+      $('wrong-modes-label').style.display = 'none';
       $('wrong-list').innerHTML = '';
-      $('wrong-list').appendChild(el('div', 'empty', '오답 노트가 비어 있습니다.'));
+      $('wrong-list').appendChild(el('div', 'empty',
+        '오답 노트가 비어 있습니다. 틀린 단어는 여기에 모입니다.'));
       return;
     }
 
+    // 기본 = 정복 방식 혼합 복습. 한 단어를 여러 각도로 물어 확실히 굳힌다.
+    mixed.style.display = '';
+    mixed.textContent = '섞어서 복습 · ' + wrong.length + '단어';
+    mixed.onclick = function () {
+      startReviewSession(wrong, '오답 노트', function () { go('wrong'); });
+    };
+
+    $('wrong-modes-label').style.display = '';
     window.Quiz.MODES.forEach(function (m) {
       var eligibleWrong = window.Quiz.eligible(m.id)
         .filter(function (w) { return wrong.indexOf(w.word) !== -1; });

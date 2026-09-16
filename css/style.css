@@ -326,7 +326,8 @@ b,strong{font-weight:600}
 
 /* ── 목록 (오답 노트 · 단어장) ───────────── */
 .sub-head{display:flex;align-items:center;gap:12px;margin:0 0 16px}
-.sub-head h2{font-size:18px}
+.sub-head h2{font-size:18px;flex:1}
+.head-n{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
 .list{display:grid;gap:6px}
 .li{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px}
 .li-top{display:flex;align-items:center;gap:8px}
@@ -388,3 +389,43 @@ b,strong{font-weight:600}
 .bwd-mean{font-size:13px;color:var(--txt-2);margin-top:2px}
 .bwd-ex{font-size:13px;color:var(--dim);margin-top:6px;font-style:italic;line-height:1.55}
 .bwd-ko{font-size:12px;color:var(--dimmer);margin-top:2px;line-height:1.5}
+
+
+
+/* ══════════ 오답 복습 ══════════
+   오답은 파랑(진행) 액센트와 구분되도록 --ng 계열로만 표시한다.
+   진행 중인 학습과 되짚는 학습이 색으로 갈려야 홈에서 한눈에 구분된다. */
+
+/* 홈의 오답 노트 카드 — 정복 카드(파랑)와 나란히 두되 톤을 낮춘다 */
+.hero-alt{background:var(--surface);border:1px solid var(--ng-line);color:var(--txt)}
+.hero-alt:hover{background:var(--surface-2);opacity:1}
+.hero-alt:active{background:var(--surface-2);opacity:1}
+.hero-alt .hero-n{color:var(--ng);opacity:1;font-weight:600}
+.hero-alt .hero-sub{color:var(--dim);opacity:1}
+
+/* 세트 단위 오답 복습 버튼 (챕터 목록 상단) */
+.btn-review{background:var(--ng-soft);border:1px solid var(--ng-line);color:var(--ng);
+  font-size:14px;padding:12px;margin-bottom:12px}
+.btn-review:hover{background:var(--surface-2)}
+
+/* 챕터 행 + 오답 복습 버튼 — 버튼을 겹쳐 넣을 수 없어 행을 둘로 나눈다 */
+.row-pair{display:flex;align-items:stretch;border-bottom:1px solid var(--line)}
+.row-pair:last-child{border-bottom:none}
+.row-pair .row-btn{flex:1;min-width:0;border-bottom:none}
+.row-side{flex:0 0 58px;background:none;border:none;border-left:1px solid var(--line);
+  color:var(--ng);font-size:13px;font-weight:600;line-height:1;
+  display:grid;place-items:center;transition:background .12s}
+.row-side:hover{background:var(--ng-soft)}
+.row-side:active{background:var(--ng-soft)}
+/* 오답이 없는 행 — 자리만 차지하고 보이지 않는다 */
+.row-side.is-empty{visibility:hidden}
+
+/* 챕터 행의 오답 개수 */
+.row-wrong{color:var(--ng)}
+
+/* 오답 노트 화면의 혼합 복습 버튼 */
+#btn-wrong-mixed{margin-bottom:4px}
+
+
+/* 카드가 연달아 놓일 때 간격 정리 */
+.hero + .hero{margin-top:8px}

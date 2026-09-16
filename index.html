@@ -44,6 +44,15 @@
       <span class="hero-sub">세트 → 챕터(20단어) → 4지선다 + 문장 빈칸 + 짝 맞추기</span>
     </button>
 
+    <!-- 오답 복습 — 틀린 것이 있을 때만 나타난다 -->
+    <button type="button" id="wrong-card" class="hero hero-alt" data-go="wrong" style="display:none">
+      <span class="hero-row">
+        <b>오답 노트</b>
+        <span class="hero-n" id="wrong-card-n"></span>
+      </span>
+      <span class="hero-sub">틀린 단어만 모아 다시 풀기 · 맞히면 목록에서 사라집니다</span>
+    </button>
+
     <!-- 보조 -->
     <h2 class="section-title">개별 연습 · A 세트</h2>
     <div id="mode-list" class="rows"></div>
@@ -72,6 +81,7 @@
       <button class="icon-btn" id="btn-back-sets" aria-label="뒤로">‹</button>
       <h2 id="chapters-title">A 세트</h2>
     </div>
+    <button type="button" class="btn btn-review" id="btn-set-review" style="display:none"></button>
     <div id="chapter-list" class="list"></div>
   </section>
 
@@ -107,7 +117,8 @@
     </div>
     <div id="block-words" class="panel"></div>
     <div class="stack">
-      <button class="btn btn-primary" id="btn-next-block">다음 묶음 시작</button>
+      <button class="btn btn-primary" id="btn-retry-block" style="display:none"></button>
+      <button class="btn btn-ghost" id="btn-next-block">다음 묶음 시작</button>
       <button class="btn btn-ghost" data-go="home">홈으로</button>
     </div>
   </section>
@@ -121,7 +132,8 @@
     </div>
     <div id="result-wrong" class="panel"></div>
     <div class="stack">
-      <button class="btn btn-primary" id="btn-again">같은 모드로 한 번 더</button>
+      <button class="btn btn-primary" id="btn-retry-result" style="display:none"></button>
+      <button class="btn btn-ghost" id="btn-again">같은 모드로 한 번 더</button>
       <button class="btn btn-ghost" data-go="home">홈으로</button>
     </div>
   </section>
@@ -131,8 +143,11 @@
     <div class="sub-head">
       <button class="icon-btn" data-go="home" aria-label="뒤로">‹</button>
       <h2>오답 노트</h2>
+      <span class="head-n" id="wrong-count"></span>
     </div>
     <p class="site-sub pad">틀린 단어만 모아 다시 출제합니다. 맞히면 목록에서 사라집니다.</p>
+    <button type="button" class="btn btn-primary" id="btn-wrong-mixed" style="display:none"></button>
+    <p class="section-title" id="wrong-modes-label" style="display:none">한 가지 형식으로만 풀기</p>
     <div id="wrong-modes" class="chip-row pad"></div>
     <div id="wrong-list" class="list"></div>
   </section>
