@@ -126,7 +126,7 @@ window.VOCAB = [
     syn:["mistreatment","misuse","maltreatment"], ant:["care"],
     ex:[{ s:"The report exposed the {{}} of public funds.", f:"abuse", ko:"그 보고서는 공적 자금의 남용을 폭로했다." }] },
 
-  { word:"accede", pron:"악시드", pos:"v", level:"C2", meanings:["동의하다","응하다"],
+  { word:"accede", pron:"억시드", pos:"v", level:"C2", meanings:["동의하다","응하다"],
     syn:["consent","assent","agree"], ant:["refuse"],
     col:[{ p:"accede {{}} their demands", a:"to", pool:"prep", note:"accede to ~ : ~에 응하다" }] },
 

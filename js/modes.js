@@ -137,6 +137,23 @@ window.Modes = (function () {
         }
       }
 
+      // 한→영 4지선다: 답을 고른 뒤 각 선택지(영단어)에 뜻과 발음을 표시.
+      // 오답으로 나온 단어들도 함께 익힐 수 있다.
+      if (q.mode === 'mcq' && q.dir === 'ko-en') {
+        buttons.forEach(function (b) {
+          var val = b._value.toLowerCase();
+          var obj = null;
+          for (var k = 0; k < window.VOCAB.length; k++) {
+            if (window.VOCAB[k].word.toLowerCase() === val) { obj = window.VOCAB[k]; break; }
+          }
+          if (!obj) return;
+          var detail = el('div', 'opt-detail');
+          detail.appendChild(document.createTextNode(obj.meanings.join(', ')));
+          if (obj.pron) detail.appendChild(el('span', 'opt-pron', ' 🔊 ' + obj.pron));
+          b.appendChild(detail);
+        });
+      }
+
       // 아닌 것 고르기: 답을 고른 뒤 각 선택지에 유의어/반의어 여부를 표시
       if (q.mode === 'not') {
         var mainObj = null;
