@@ -285,13 +285,16 @@ window.Quiz = (function () {
 
   /** ⑤ 짝 맞추기 — 5~6쌍. 같은 품사·비슷한 레벨로 묶어 소거법을 어렵게 만든다 */
   function makeMatch(seed) {
-    var size = Math.random() < 0.5 ? 5 : 6;
+    // 크기와 동료 선택을 고정한다. 같은 seed면 항상 같은 보드가 나온다.
+    var size = 5;
     var pool = window.VOCAB.filter(function (w) {
       return w.word !== seed.word && w.pos === seed.pos && levelGap(w, seed) <= 1;
+    }).sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
     });
     // 뜻이 서로 겹치는 단어끼리는 같은 보드에 올리지 않는다
     var chosen = [seed];
-    shuffle(pool).forEach(function (cand) {
+    pool.forEach(function (cand) {
       if (chosen.length >= size) return;
       var clash = chosen.some(function (c) {
         return meaningsOverlap(c, cand) || areSynonyms(c, cand);
