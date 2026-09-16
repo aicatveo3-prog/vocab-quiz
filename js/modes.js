@@ -69,6 +69,35 @@ window.Modes = (function () {
     return wrap;
   }
 
+  /**
+   * 선택지 텍스트로 VOCAB 단어를 찾는다.
+   * 문장 빈칸은 선택지가 변화형(abandoned, accommodations)일 수 있으므로
+   * 원형으로 되돌려 가며 매칭한다.
+   */
+  function findVocabByForm(form) {
+    var v = String(form).toLowerCase();
+    var i;
+    // 1) 그대로 일치
+    for (i = 0; i < window.VOCAB.length; i++) {
+      if (window.VOCAB[i].word.toLowerCase() === v) return window.VOCAB[i];
+    }
+    // 2) 어형 변화를 되돌려 본다
+    var stems = [];
+    if (/ies$/.test(v)) stems.push(v.replace(/ies$/, 'y'));
+    if (/ied$/.test(v)) stems.push(v.replace(/ied$/, 'y'));
+    if (/es$/.test(v)) stems.push(v.replace(/es$/, ''), v.replace(/es$/, 'e'));
+    if (/s$/.test(v)) stems.push(v.replace(/s$/, ''));
+    if (/ed$/.test(v)) stems.push(v.replace(/ed$/, ''), v.replace(/ed$/, 'e'));
+    if (/d$/.test(v)) stems.push(v.replace(/d$/, ''));
+    if (/ing$/.test(v)) stems.push(v.replace(/ing$/, ''), v.replace(/ing$/, 'e'));
+    for (var s = 0; s < stems.length; s++) {
+      for (i = 0; i < window.VOCAB.length; i++) {
+        if (window.VOCAB[i].word.toLowerCase() === stems[s]) return window.VOCAB[i];
+      }
+    }
+    return null;
+  }
+
   /** "{{}}"를 빈칸 span으로 바꾼 문장 노드 */
   function sentenceNode(tpl, cls) {
     var node = el('div', cls);
@@ -137,20 +166,18 @@ window.Modes = (function () {
         }
       }
 
-      // 한→영 4지선다: 답을 고른 뒤 각 선택지(영단어)에 뜻과 발음을 표시.
-      // 오답으로 나온 단어들도 함께 익힐 수 있다.
-      if (q.mode === 'mcq' && q.dir === 'ko-en') {
+      // 선택지가 영단어인 모드(한→영 4지선다·문장 빈칸·연어)는 답을 고른 뒤
+      // 각 선택지에 뜻과 발음을 표시한다. 오답으로 나온 단어도 함께 익힐 수 있다.
+      var showsWordOptions =
+        (q.mode === 'mcq' && q.dir === 'ko-en') || q.mode === 'cloze' || q.mode === 'colloc';
+      if (showsWordOptions) {
         buttons.forEach(function (b) {
-          var val = b._value.toLowerCase();
-          var obj = null;
-          for (var k = 0; k < window.VOCAB.length; k++) {
-            if (window.VOCAB[k].word.toLowerCase() === val) { obj = window.VOCAB[k]; break; }
-          }
+          var obj = findVocabByForm(b._value);
           if (!obj) return;
           var detail = el('div', 'opt-detail');
           detail.appendChild(document.createTextNode(obj.meanings.join(', ')));
           if (obj.pron) detail.appendChild(el('span', 'opt-pron', ' 🔊 ' + obj.pron));
-          b.classList.add("has-detail");
+          b.classList.add('has-detail');
           b.appendChild(detail);
         });
       }
