@@ -234,15 +234,11 @@ window.Conquer = (function () {
     if (pairsPerBoard < 4) pairsPerBoard = 4;
     if (pairsPerBoard > 6) pairsPerBoard = 5;
 
-    var groups = [];
-    for (var i = 0; i < ordered.length; i += pairsPerBoard) {
-      var slice = ordered.slice(i, i + pairsPerBoard);
-      if (slice.length < 2) break;
-      groups.push(slice);
-    }
+    // 알파벳순으로 5개씩 잘라 쓰면 챕터 6처럼 advertise·advertisement·advertising이
+    // 한 보드에 몰린다. 번갈아 나눠줘야 어근이 겹치지 않는다.
+    var groups = window.Quiz.dealEven(ordered, pairsPerBoard);
 
     // 뜻이 완전히 같은 단어끼리는 같은 보드에 두지 않는다
-    // (챕터 6의 advert·advertisement, 챕터 19의 auditory·aural)
     groups = window.Quiz.separateClashes(groups);
 
     groups.forEach(function (slice) {
