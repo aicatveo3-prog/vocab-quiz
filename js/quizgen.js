@@ -406,6 +406,14 @@ window.Quiz = (function () {
     var attempts = 0;
     var mcqDir = 'en-ko';  // ordered일 때 교대 시작을 고정
 
+    // 짝 맞추기 복습은 "대상 단어가 모두 등장"해야 하므로 전용 경로를 쓴다.
+    // 일반 출제는 seed 하나를 고르면 나머지 4개를 전체 단어에서 채우기 때문에
+    // 복습 대상이 한 보드에 몰리거나 아예 빠지는 일이 생긴다.
+    if (modeId === 'match' && restrictTo && restrictTo.length) {
+      var targets = restrictTo.map(byWord).filter(Boolean);
+      return buildMatchReview(targets);
+    }
+
     // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
     if (ordered) {
       var pool = eligible(modeId);
@@ -489,6 +497,56 @@ window.Quiz = (function () {
     };
   }
 
+  function byAlpha(a, b) {
+    return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+  }
+
+  /**
+   * 오답 복습용 짝 맞추기 보드를 만든다.
+   *
+   * 일반 출제와 달리 "대상 단어가 빠짐없이 한 번씩 등장"하는 것이 목적이다.
+   * 그래서 대상 단어를 알파벳순으로 5개씩 끊어 보드를 만들고,
+   * 마지막 조각이 4쌍에 못 미치면 같은 품사·비슷한 레벨의 단어로 채운다.
+   * (2~3쌍 보드는 소거법으로 그냥 풀려 복습 효과가 없다)
+   *
+   * @param wordObjs 복습 대상 단어 객체 배열
+   */
+  function buildMatchReview(wordObjs) {
+    if (!wordObjs || !wordObjs.length) return [];
+    var ordered = wordObjs.slice().sort(byAlpha);
+    var boards = [];
+    var CHUNK = 5;
+
+    for (var i = 0; i < ordered.length; i += CHUNK) {
+      var slice = ordered.slice(i, i + CHUNK);
+
+      if (slice.length < 4) {
+        var seed = slice[0];
+        var base = slice.slice();
+        var fillers = window.VOCAB.filter(function (w) {
+          if (base.indexOf(w) !== -1) return false;
+          if (w.pos !== seed.pos) return false;
+          if (levelGap(w, seed) > 1) return false;
+          for (var k = 0; k < base.length; k++) {
+            if (meaningsOverlap(base[k], w) || areSynonyms(base[k], w)) return false;
+          }
+          return true;
+        }).sort(byAlpha);
+        while (slice.length < 4 && fillers.length) slice.push(fillers.shift());
+        slice.sort(byAlpha);
+      }
+
+      if (slice.length < 2) continue;
+      var board = buildMatchFrom(slice, 'normal');
+      if (board) boards.push(board);
+    }
+
+    boards.forEach(function (b, idx) {
+      b.boardTitle = '짝 맞추기 ' + (idx + 1) + ' / ' + boards.length;
+    });
+    return boards;
+  }
+
   return {
     MODES: MODES,
     buildSession: buildSession,
@@ -497,6 +555,7 @@ window.Quiz = (function () {
     shuffle: shuffle,
     rankByPriority: rankByPriority,
     buildMatchFrom: buildMatchFrom,
+    buildMatchReview: buildMatchReview,
     /* 정복 모드가 단계별로 직접 호출하는 개별 빌더 */
     build: {
       mcq: makeMcq,

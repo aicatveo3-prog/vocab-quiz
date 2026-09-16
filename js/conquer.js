@@ -210,7 +210,66 @@ window.Conquer = (function () {
       setId: setId,
       chapter: ch,
       slides: slides,
-      previewWords: ch.words
+      previewWords: ch.words,
+      isReview: false,
+      headTitle: '정복 · 챕터 ' + ch.label,
+      previewTitle: '챕터 ' + ch.label + ' · ' + ch.words.length + '단어',
+      previewNote: '충분히 훑어본 뒤 시작하세요',
+      resultTitle: '챕터 ' + ch.label + ' 완료'
+    };
+  }
+
+  /**
+   * 오답 복습 세션 — 지정한 단어들만 정복 모드와 같은 방식으로 다시 출제한다.
+   *
+   * 챕터 드릴과 동일한 구성(4지선다 → 아닌 것 → 문장 빈칸 → 연어 → 짝 맞추기)을
+   * 쓰되, 대상이 챕터 20단어가 아니라 "틀린 단어 목록"이다.
+   * 데이터가 없는 단계는 자연히 건너뛰므로 단어 수가 적어도 문제없이 만들어진다.
+   *
+   * @param wordObjs 복습 대상 단어 객체 배열
+   * @param title    화면에 표시할 이름 (예: '챕터 3', '오답 노트')
+   */
+  function createReviewSession(wordObjs, title) {
+    if (!wordObjs || !wordObjs.length) return null;
+
+    var ordered = wordObjs.slice().sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+    });
+
+    var drill = buildDrill(ordered);
+    // 짝 맞추기는 대상 단어가 빠짐없이 등장하는 복습 전용 보드를 쓴다
+    var boards = window.Quiz.buildMatchReview(ordered);
+
+    var slides = [];
+    drill.forEach(function (item) {
+      slides.push({
+        q: item.q, word: item.word, stage: item.stage,
+        answered: false, chosen: null, correct: null,
+        headline: null, boardStats: null
+      });
+    });
+    boards.forEach(function (board) {
+      slides.push({
+        q: board, word: null, stage: 'board',
+        answered: false, chosen: null, correct: null,
+        headline: null, boardStats: null
+      });
+    });
+
+    if (!slides.length) return null;
+
+    var label = title || '오답';
+    return {
+      setId: null,
+      chapter: { label: label, words: ordered, index: -1 },
+      slides: slides,
+      previewWords: ordered,
+      isReview: true,
+      reviewWords: ordered.map(function (w) { return w.word; }),
+      headTitle: '오답 복습 · ' + label,
+      previewTitle: label + ' · ' + ordered.length + '단어',
+      previewNote: '틀렸던 단어입니다. 뜻을 다시 확인한 뒤 시작하세요',
+      resultTitle: label + ' 오답 복습 완료'
     };
   }
 
@@ -219,6 +278,7 @@ window.Conquer = (function () {
     CHAPTER_SIZE: CHAPTER_SIZE,
     getSet: getSet,
     buildChapters: buildChapters,
-    createChapterSession: createChapterSession
+    createChapterSession: createChapterSession,
+    createReviewSession: createReviewSession
   };
 })();
