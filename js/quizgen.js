@@ -17,6 +17,13 @@
 window.Quiz = (function () {
   var LEVELS = { B1: 0, B2: 1, C1: 2, C2: 3 };
 
+  /* 전 세트 합집합.
+     출제 대상은 세트로 갈리지만(B 연습에서는 B 단어만 문제로 나온다),
+     오답 후보·단어 조회는 합집합을 쓴다. 세트 안에서만 오답을 뽑으면
+     부사·구표현처럼 수가 적은 품사에서 후보 3개를 못 채워 그 단어가
+     문제에서 통째로 빠진다. 세트를 늘릴 때는 여기에 추가한다. */
+  var ALL = (window.VOCAB || []).concat(window.VOCAB_B || []);
+
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
     { id: 'not',    label: '아닌 것 고르기', sub: '유의어 구별' },
@@ -94,7 +101,7 @@ window.Quiz = (function () {
   function distractorPool(answer, exclude) {
     var skip = {};
     (exclude || []).forEach(function (w) { skip[String(w).toLowerCase()] = true; });
-    return window.VOCAB.filter(function (w) {
+    return ALL.filter(function (w) {
       if (w.word === answer.word) return false;
       if (skip[w.word.toLowerCase()]) return false;
       if (w.pos !== answer.pos) return false;
@@ -108,8 +115,8 @@ window.Quiz = (function () {
   function byWord(name) {
     if (!name) return null;
     var lower = String(name).toLowerCase();
-    for (var i = 0; i < window.VOCAB.length; i++) {
-      if (window.VOCAB[i].word.toLowerCase() === lower) return window.VOCAB[i];
+    for (var i = 0; i < ALL.length; i++) {
+      if (ALL[i].word.toLowerCase() === lower) return ALL[i];
     }
     return null;
   }
@@ -165,8 +172,13 @@ window.Quiz = (function () {
      사용자가 모드를 직접 고르되, 어떤 단어를 낼지는
      숙련도가 낮거나 최근 틀린 단어를 우선한다. */
 
-  function eligible(modeId) {
-    return window.VOCAB.filter(function (w) {
+  /**
+   * 해당 모드로 출제 가능한 단어 목록.
+   * @param words 출제 대상을 특정 세트로 제한할 때 그 세트의 단어 배열.
+   *   생략하면 전 세트(오답 노트처럼 세트를 가리지 않는 자리).
+   */
+  function eligible(modeId, words) {
+    return (words || ALL).filter(function (w) {
       switch (modeId) {
         case 'not':    return w.syn && w.syn.length >= 3;
         case 'cloze':  return w.ex && w.ex.length > 0;
@@ -193,8 +205,8 @@ window.Quiz = (function () {
       .map(function (x) { return x.w; });
   }
 
-  function pickWords(modeId, count, restrictTo) {
-    var pool = eligible(modeId);
+  function pickWords(modeId, count, restrictTo, words) {
+    var pool = eligible(modeId, words);
     if (restrictTo && restrictTo.length) {
       var allow = {};
       restrictTo.forEach(function (w) { allow[w] = true; });
@@ -287,7 +299,7 @@ window.Quiz = (function () {
   function makeMatch(seed) {
     // 크기와 동료 선택을 고정한다. 같은 seed면 항상 같은 보드가 나온다.
     var size = 5;
-    var pool = window.VOCAB.filter(function (w) {
+    var pool = ALL.filter(function (w) {
       return w.word !== seed.word && w.pos === seed.pos && levelGap(w, seed) <= 1;
     }).sort(function (a, b) {
       return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
@@ -397,8 +409,10 @@ window.Quiz = (function () {
    * @param count   문제 수 (match는 보드 수)
    * @param restrictTo 특정 단어 목록으로 제한 (오답 노트 복습용)
    * @param ordered true면 알파벳순 고정 출제 (개별 연습용)
+   * @param words 출제 대상을 특정 세트로 제한할 때 그 세트의 단어 배열.
+   *   오답 후보는 이것과 무관하게 늘 전 세트에서 뽑는다.
    */
-  function buildSession(modeId, count, restrictTo, ordered) {
+  function buildSession(modeId, count, restrictTo, ordered, words) {
     var out = [];
     var used = {};
     var attempts = 0;
@@ -419,7 +433,7 @@ window.Quiz = (function () {
     // 단어가 81개뿐이었고(abbreviation은 25번), 315단어는 한 번도 나오지 않았다.
     // 목록을 그대로 잘라 쓰면 모든 단어가 정확히 한 번씩 나온다.
     if (modeId === 'match' && ordered) {
-      var mPool = eligible('match').slice().sort(byAlpha);
+      var mPool = eligible('match', words).slice().sort(byAlpha);
       return separateClashes(dealEven(mPool, 5))
         .map(function (slice) {
           return buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
@@ -429,7 +443,7 @@ window.Quiz = (function () {
 
     // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
     if (ordered) {
-      var pool = eligible(modeId);
+      var pool = eligible(modeId, words);
       if (restrictTo && restrictTo.length) {
         var allow = {};
         restrictTo.forEach(function (w) { allow[w] = true; });
@@ -468,7 +482,7 @@ window.Quiz = (function () {
     while (out.length < count && attempts < count * 12) {
       attempts++;
       var need = count - out.length;
-      var candidates = pickWords(modeId, need + 8, restrictTo);
+      var candidates = pickWords(modeId, need + 8, restrictTo, words);
       if (!candidates.length) break;
 
       for (var i = 0; i < candidates.length && out.length < count; i++) {
@@ -489,13 +503,13 @@ window.Quiz = (function () {
           }
         }
       }
-      if (Object.keys(used).length >= eligible(modeId).length) break;
+      if (Object.keys(used).length >= eligible(modeId, words).length) break;
     }
     return out;
   }
 
-  function availableCount(modeId) {
-    return eligible(modeId).length;
+  function availableCount(modeId, words) {
+    return eligible(modeId, words).length;
   }
 
   /**
@@ -674,7 +688,7 @@ window.Quiz = (function () {
         // 4쌍에 못 미치면 같은 품사·비슷한 레벨의 단어로 채운다
         var seed = slice[0];
         var base = slice.slice();
-        var fillers = window.VOCAB.filter(function (w) {
+        var fillers = ALL.filter(function (w) {
           if (usedAll[w.word]) return false;
           if (w.pos !== seed.pos) return false;
           if (levelGap(w, seed) > 1) return false;
@@ -703,6 +717,9 @@ window.Quiz = (function () {
 
   return {
     MODES: MODES,
+    /* 전 세트 합집합 — 단어 조회·오답 후보의 기준.
+       세트와 무관하게 "모든 단어"를 봐야 하는 곳에서 쓴다. */
+    ALL: ALL,
     buildSession: buildSession,
     availableCount: availableCount,
     eligible: eligible,

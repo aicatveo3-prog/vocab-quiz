@@ -16,7 +16,8 @@
   <section id="screen-home" class="screen is-active">
     <header class="site-head">
       <h1>영단어 퀴즈</h1>
-      <p class="site-sub">수능 보카 · A 섹션 396단어</p>
+      <!-- 세트 구성은 app.js가 채운다 (세트를 늘려도 문구가 낡지 않게) -->
+      <p class="site-sub" id="head-sub"></p>
     </header>
 
     <!-- 오늘 현황 — 한 줄 -->
@@ -53,10 +54,8 @@
       <span class="hero-sub">틀린 단어만 모아 다시 풀기 · 맞히면 목록에서 사라집니다</span>
     </button>
 
-    <!-- 보조 -->
-    <h2 class="section-title">개별 연습 · A 세트</h2>
-    <div id="mode-list" class="rows"></div>
-    <p class="set-note">한 세트(A · 396단어)를 통째로 풀며, 진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.</p>
+    <!-- 보조 — 세트별 목록을 app.js가 채운다 (A 5줄 + B 5줄) -->
+    <div id="practice-sets"></div>
 
     <!-- 하단 -->
     <nav class="foot-nav">
@@ -172,7 +171,10 @@
 
 </div>
 
+<!-- 데이터는 quizgen/conquer보다 먼저 로드돼야 한다.
+     quizgen.js가 로드 시점에 합집합을, conquer.js가 SETS를 만든다. -->
 <script src="js/data/words.js"></script>
+<script src="js/data/words-b.js"></script>
 <script src="js/store.js"></script>
 <script src="js/quizgen.js"></script>
 <script src="js/conquer.js"></script>

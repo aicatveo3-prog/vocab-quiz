@@ -23,8 +23,12 @@
     wordFilter: { status: 'all', level: 'all' }
   };
 
+  /* 오답 노트·피드백·복습 세션은 세트를 가리지 않으므로 전 세트 합집합으로 만든다.
+     세트별로 나눠야 하는 것은 "무엇을 출제할지"뿐이다. */
+  var ALL_WORDS = window.Quiz.ALL;
+
   var WORD_INDEX = {};
-  window.VOCAB.forEach(function (w) { WORD_INDEX[w.word] = w; });
+  ALL_WORDS.forEach(function (w) { WORD_INDEX[w.word] = w; });
 
   function $(id) { return document.getElementById(id); }
   function el(tag, cls, text) {
@@ -50,7 +54,13 @@
 
   /* ── 홈 ───────────────────────────────────── */
   function renderHome() {
-    var s = window.Store.summary(window.VOCAB.length);
+    var s = window.Store.summary(ALL_WORDS.length);
+
+    // 부제 — 세트가 늘어나도 문구를 손으로 고치지 않도록 SETS에서 만든다
+    $('head-sub').textContent = '수능 보카 · ' + window.Conquer.SETS
+      .filter(function (set) { return set.words.length; })
+      .map(function (set) { return set.label + ' 섹션 ' + set.words.length + '단어'; })
+      .join(' + ');
 
     // 오늘 현황 — 한 줄로 압축
     var line = $('today-line');
@@ -68,22 +78,19 @@
     $('bar-studied').style.width =
       Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
 
-    // 개별 연습 — 아이콘 없는 목록형 행
-    var list = $('mode-list');
-    list.innerHTML = '';
-    window.Quiz.MODES.forEach(function (m) {
-      var row = el('button', 'row-btn');
-      row.type = 'button';
-      var main = el('span', 'row-main');
-      main.appendChild(el('b', null, m.label));
-      main.appendChild(el('span', null, m.sub));
-      row.appendChild(main);
-      row.appendChild(el('span', 'row-n', window.Quiz.availableCount(m.id) + '단어'));
-      row.addEventListener('click', function () { startSession(m.id, null); });
-      list.appendChild(row);
+    // 개별 연습 — 세트마다 목록을 하나씩 낸다 (A 5줄 + B 5줄)
+    var practice = $('practice-sets');
+    practice.innerHTML = '';
+    window.Conquer.SETS.forEach(function (set) {
+      if (!set.words.length) return;   // 단어가 아직 없는 세트는 내보내지 않는다
+      renderModeList(practice, set);
     });
 
-    $('conquer-n').textContent = window.Conquer.buildChapters(window.Conquer.getSet('A')).length + '챕터';
+    // 정복 모드 카드 — 전 세트 챕터를 합산한다
+    var totalChapters = window.Conquer.SETS.reduce(function (n, set) {
+      return n + window.Conquer.buildChapters(set).length;
+    }, 0);
+    $('conquer-n').textContent = totalChapters + '챕터';
 
     var wrongN = window.Store.wrongList().length;
     var badge = $('wrong-badge');
@@ -94,6 +101,32 @@
     var card = $('wrong-card');
     card.style.display = wrongN ? '' : 'none';
     $('wrong-card-n').textContent = wrongN + '단어';
+  }
+
+  /** 개별 연습 — 세트 하나의 "제목 + 모드 5줄 + 안내문" 블록을 만든다.
+      세트를 늘리면 Conquer.SETS만 보고 자동으로 블록이 하나 더 생긴다. */
+  function renderModeList(host, set) {
+    host.appendChild(el('h2', 'section-title', '개별 연습 · ' + set.label + ' 세트'));
+
+    var list = el('div', 'rows');
+    window.Quiz.MODES.forEach(function (m) {
+      var row = el('button', 'row-btn');
+      row.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, m.label));
+      main.appendChild(el('span', null, m.sub));
+      row.appendChild(main);
+      // 출제 가능 단어 수는 세트 기준으로 센다
+      row.appendChild(el('span', 'row-n',
+        window.Quiz.availableCount(m.id, set.words) + '단어'));
+      row.addEventListener('click', function () { startSession(m.id, null, set.id); });
+      list.appendChild(row);
+    });
+    host.appendChild(list);
+
+    host.appendChild(el('p', 'set-note',
+      set.label + ' 세트 ' + set.words.length + '단어를 통째로 풀며, ' +
+      '진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.'));
   }
 
   // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
@@ -120,16 +153,22 @@
   /* ── 세션 시작 (개별 연습) ─────────────────────
      세트 전체를 한 번에 출제한다. 모든 문제를 미리 만들어 두어야
      진행 바 드래그로 아무 문제로나 자유롭게 이동할 수 있다. */
-  function startSession(modeId, restrictTo) {
+  function startSession(modeId, restrictTo, setId) {
     var review = !!(restrictTo && restrictTo.length);
+
+    // 오답 복습은 세트를 가리지 않는다 — 틀린 단어가 여러 세트에 걸쳐 있다.
+    // 일반 연습만 세트로 출제 범위를 좁힌다. 오답 후보는 어느 쪽이든 전 세트에서 뽑는다.
+    var set = review ? null : window.Conquer.getSet(setId);
+    if (!review && !set) return;
+    var setWords = set ? set.words : null;
 
     // 복습 세션은 문제 수를 "대상 단어 수"에 맞춘다.
     // 전체 단어 수로 계산하면 오답 3개를 복습하려는데 80보드가 만들어진다.
-    var avail = window.Quiz.eligible(modeId).length;
+    var avail = window.Quiz.eligible(modeId, setWords).length;
     if (review) {
       var allow = {};
       restrictTo.forEach(function (w) { allow[w] = true; });
-      avail = window.Quiz.eligible(modeId).filter(function (w) {
+      avail = window.Quiz.eligible(modeId, setWords).filter(function (w) {
         return allow[w.word];
       }).length;
       if (!avail) {
@@ -139,7 +178,7 @@
     }
     var count = modeId === 'match' ? Math.max(1, Math.ceil(avail / 5)) : avail;
 
-    var session = window.Quiz.buildSession(modeId, count, restrictTo, true);
+    var session = window.Quiz.buildSession(modeId, count, restrictTo, true, setWords);
     if (!session.length) {
       alert('출제할 수 있는 문제가 없습니다.');
       return;
@@ -149,7 +188,8 @@
     state.modeId = modeId;
     state.restrictTo = restrictTo;
     state.isReview = review;
-    state.setName = review ? '오답' : 'A';
+    // 세션 키에 그대로 들어간다. A는 'A'를 유지해야 기존 저장 세션이 이어진다.
+    state.setName = review ? '오답' : set.id;
     state.correct = 0;
     state.wrongWords = [];
     state.slides = session.map(function (q) {
@@ -808,7 +848,7 @@
       : modeById(state.modeId).label + ' · ' + state.setName + ' 세트';
     $('result-sub').textContent = answered
       ? (answered + unit + ' 중 ' + state.correct + ' 정답 · 전체 ' + state.slides.length + unit +
-        ' · 연속 ' + window.Store.summary(window.VOCAB.length).streak + '일')
+        ' · 연속 ' + window.Store.summary(ALL_WORDS.length).streak + '일')
       : '아직 푼 문제가 없습니다.';
 
     var box = $('result-wrong');
@@ -847,7 +887,7 @@
   }
 
   $('btn-again').addEventListener('click', function () {
-    if (!state.isReview) { startSession(state.modeId, null); return; }
+    if (!state.isReview) { startSession(state.modeId, null, state.setName); return; }
     // 복습 세션의 "한 번 더"는 남아 있는 오답 전체를 뜻한다.
     // 빈 배열을 넘기면 세트 전체(396문제)가 시작되므로 반드시 걸러낸다.
     var remain = window.Store.wrongList();
@@ -939,7 +979,7 @@
       f.appendChild(c);
     });
 
-    var items = window.VOCAB.filter(function (w) {
+    var items = ALL_WORDS.filter(function (w) {
       var info = window.Store.info(w.word);
       var st = state.wordFilter.status;
       if (st === 'new' && info.seen > 0) return false;

@@ -75,11 +75,12 @@ window.Modes = (function () {
    * 원형으로 되돌려 가며 매칭한다.
    */
   function findVocabByForm(form) {
+    var all = window.Quiz.ALL;
     var v = String(form).toLowerCase();
     var i;
     // 1) 그대로 일치
-    for (i = 0; i < window.VOCAB.length; i++) {
-      if (window.VOCAB[i].word.toLowerCase() === v) return window.VOCAB[i];
+    for (i = 0; i < all.length; i++) {
+      if (all[i].word.toLowerCase() === v) return all[i];
     }
     // 2) 어형 변화를 되돌려 본다
     var stems = [];
@@ -91,8 +92,8 @@ window.Modes = (function () {
     if (/d$/.test(v)) stems.push(v.replace(/d$/, ''));
     if (/ing$/.test(v)) stems.push(v.replace(/ing$/, ''), v.replace(/ing$/, 'e'));
     for (var s = 0; s < stems.length; s++) {
-      for (i = 0; i < window.VOCAB.length; i++) {
-        if (window.VOCAB[i].word.toLowerCase() === stems[s]) return window.VOCAB[i];
+      for (i = 0; i < all.length; i++) {
+        if (all[i].word.toLowerCase() === stems[s]) return all[i];
       }
     }
     return null;
@@ -184,9 +185,10 @@ window.Modes = (function () {
 
       // 아닌 것 고르기: 답을 고른 뒤 각 선택지에 유의어/반의어 여부를 표시
       if (q.mode === 'not') {
+        var allWords = window.Quiz.ALL;
         var mainObj = null;
-        for (var k = 0; k < window.VOCAB.length; k++) {
-          if (window.VOCAB[k].word === q.word) { mainObj = window.VOCAB[k]; break; }
+        for (var k = 0; k < allWords.length; k++) {
+          if (allWords[k].word === q.word) { mainObj = allWords[k]; break; }
         }
         if (mainObj) {
           var syns = (mainObj.syn || []).map(function (s) { return s.toLowerCase(); });
@@ -199,8 +201,8 @@ window.Modes = (function () {
             } else {
               // 정답(바꿔 쓸 수 없는 것) — VOCAB에서 찾아 뜻을 보여준다
               var ansObj = null;
-              for (var j = 0; j < window.VOCAB.length; j++) {
-                if (window.VOCAB[j].word.toLowerCase() === val) { ansObj = window.VOCAB[j]; break; }
+              for (var j = 0; j < allWords.length; j++) {
+                if (allWords[j].word.toLowerCase() === val) { ansObj = allWords[j]; break; }
               }
               if (ansObj) {
                 detail.textContent = '≠ ' + b._value + ': ' + ansObj.meanings.join(', ');
