@@ -48,6 +48,7 @@
     if (t) {
       var target = t.getAttribute('data-go');
       if (target === 'sets') { renderSets(); return; }
+      if (target === 'practice') { renderPracticeSets(); return; }
       go(target);
     }
   });
@@ -78,13 +79,9 @@
     $('bar-studied').style.width =
       Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
 
-    // 개별 연습 — 세트마다 목록을 하나씩 낸다 (A 5줄 + B 5줄)
-    var practice = $('practice-sets');
-    practice.innerHTML = '';
-    window.Conquer.SETS.forEach(function (set) {
-      if (!set.words.length) return;   // 단어가 아직 없는 세트는 내보내지 않는다
-      renderModeList(practice, set);
-    });
+    // 개별 연습 카드 — 세트 수와 형식 수만 요약한다 (목록은 눌러서 들어간다)
+    $('practice-n').textContent =
+      practiceSets().length + '세트 · ' + window.Quiz.MODES.length + '가지 형식';
 
     // 정복 모드 카드 — 전 세트 챕터를 합산한다
     var totalChapters = window.Conquer.SETS.reduce(function (n, set) {
@@ -103,12 +100,43 @@
     $('wrong-card-n').textContent = wrongN + '단어';
   }
 
-  /** 개별 연습 — 세트 하나의 "제목 + 모드 5줄 + 안내문" 블록을 만든다.
-      세트를 늘리면 Conquer.SETS만 보고 자동으로 블록이 하나 더 생긴다. */
-  function renderModeList(host, set) {
-    host.appendChild(el('h2', 'section-title', '개별 연습 · ' + set.label + ' 세트'));
+  /** 단어가 들어 있는 세트만 — 아직 비어 있는 세트는 내보내지 않는다 */
+  function practiceSets() {
+    return window.Conquer.SETS.filter(function (set) { return set.words.length; });
+  }
 
-    var list = el('div', 'rows');
+  /* ── 개별 연습 (정복 모드와 같은 2단 구조) ──────
+     홈 카드 → 세트 목록 → 형식 목록 → 퀴즈.
+     세트를 늘리면 Conquer.SETS만 보고 목록에 한 줄이 자동으로 늘어난다. */
+
+  // 1단: 세트 목록
+  function renderPracticeSets() {
+    var list = $('practice-set-list');
+    list.innerHTML = '';
+    practiceSets().forEach(function (set) {
+      var btn = el('button', 'row-btn');
+      btn.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, set.label + ' 세트'));
+      main.appendChild(el('span', null, set.words.length + '단어 · ' +
+        window.Quiz.MODES.length + '가지 형식'));
+      btn.appendChild(main);
+      btn.appendChild(el('span', 'row-n', '›'));
+      btn.addEventListener('click', function () { renderModes(set.id); });
+      list.appendChild(btn);
+    });
+    go('practice');
+  }
+
+  // 2단: 고른 세트의 형식 목록 — 여기서 고른 형식으로 그 세트만 출제된다
+  function renderModes(setId) {
+    var set = window.Conquer.getSet(setId);
+    if (!set) return;
+    $('modes-title').textContent = set.label + ' 세트';
+    $('modes-n').textContent = set.words.length + '단어';
+
+    var list = $('mode-list');
+    list.innerHTML = '';
     window.Quiz.MODES.forEach(function (m) {
       var row = el('button', 'row-btn');
       row.type = 'button';
@@ -122,12 +150,14 @@
       row.addEventListener('click', function () { startSession(m.id, null, set.id); });
       list.appendChild(row);
     });
-    host.appendChild(list);
 
-    host.appendChild(el('p', 'set-note',
+    $('modes-note').textContent =
       set.label + ' 세트 ' + set.words.length + '단어를 통째로 풀며, ' +
-      '진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.'));
+      '진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.';
+    go('modes');
   }
+
+  $('btn-back-practice').addEventListener('click', function () { renderPracticeSets(); });
 
   // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
   $('btn-reset').addEventListener('click', function () {
@@ -567,7 +597,8 @@
   /* ══════════ 정복 모드 (챕터 기반) ══════════ */
 
   function go(name) {
-    ['home', 'quiz', 'result', 'wrong', 'words', 'block', 'sets', 'chapters'].forEach(function (n) {
+    ['home', 'quiz', 'result', 'wrong', 'words', 'block',
+      'sets', 'chapters', 'practice', 'modes'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
     if (name !== 'quiz') $('conquer-grid').innerHTML = '';

@@ -403,6 +403,14 @@ b,strong{font-weight:600}
 .hero-alt .hero-n{color:var(--ng);opacity:1;font-weight:600}
 .hero-alt .hero-sub{color:var(--dim);opacity:1}
 
+/* 개별 연습 카드 — 정복(파랑)·오답(빨강) 사이의 보조 카드라 톤을 낮춘다.
+   파랑 카드를 둘 두면 무엇이 주역인지 흐려진다. */
+.hero-plain{background:var(--surface);border:1px solid var(--line-2);color:var(--txt)}
+.hero-plain:hover{background:var(--surface-2);opacity:1}
+.hero-plain:active{background:var(--surface-2);opacity:1}
+.hero-plain .hero-n{color:var(--accent);opacity:1;font-weight:600}
+.hero-plain .hero-sub{color:var(--dim);opacity:1}
+
 /* 세트 단위 오답 복습 버튼 (챕터 목록 상단) */
 .btn-review{background:var(--ng-soft);border:1px solid var(--ng-line);color:var(--ng);
   font-size:14px;padding:12px;margin-bottom:12px}
