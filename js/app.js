@@ -160,6 +160,60 @@
     go('mode-sets');
   }
 
+  /* ── 기록 백업 (내보내기 / 가져오기) ──────────────
+     로그인 없이 기록 유실을 막는 장치. 직렬화·병합은 Store가 담당하고
+     여기서는 파일 입출력만 한다. 나중에 서버 동기화를 붙일 때도
+     Store.exportData / mergeData를 그대로 쓴다. */
+
+  function backupNote(msg, bad) {
+    var p = $('backup-note');
+    p.textContent = msg;
+    p.classList.toggle('is-bad', !!bad);
+  }
+
+  $('btn-export').addEventListener('click', function () {
+    try {
+      var payload = JSON.stringify(window.Store.exportData(), null, 2);
+      var blob = new Blob([payload], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      var d = new Date();
+      var stamp = d.getFullYear() +
+        String(d.getMonth() + 1).padStart(2, '0') +
+        String(d.getDate()).padStart(2, '0');
+      a.href = url;
+      a.download = 'vocab-quiz-기록-' + stamp + '.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      backupNote('내보냈습니다. 이 파일을 다른 기기에서 가져오면 기록이 합쳐집니다.');
+    } catch (e) {
+      backupNote('내보내기에 실패했습니다.', true);
+    }
+  });
+
+  $('btn-import').addEventListener('click', function () { $('import-file').click(); });
+
+  $('import-file').addEventListener('change', function (e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      var res = window.Store.importData(String(reader.result));
+      if (!res.ok) {
+        backupNote(res.reason, true);
+      } else {
+        var parts = ['새 단어 ' + res.added + '개', '갱신 ' + res.updated + '개'];
+        if (res.savedDelta) parts.push('저장 +' + res.savedDelta + '개');
+        backupNote('합쳤습니다 — ' + parts.join(', ') +
+          '. 현재 학습 기록 ' + res.total + '개 단어, 저장 ' + res.savedTotal + '개.');
+        renderWords();     // 목록·필터를 새 기록으로 다시 그린다
+      }
+    };
+    reader.onerror = function () { backupNote('파일을 읽을 수 없습니다.', true); };
+    reader.readAsText(file);
+    e.target.value = '';   // 같은 파일을 연달아 고를 수 있게 비운다
+  });
+
   // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
   $('btn-reset').addEventListener('click', function () {
     if (confirm('학습 기록(숙련도·오답 노트·연속 학습일)을 모두 삭제할까요?')) {
@@ -434,7 +488,29 @@
       }
     }
 
+    // 저장 토글 — 방금 만난 단어를 따로 담아 둘 수 있게
+    if (q.word) box.appendChild(saveToggle(q.word));
+
     fb.appendChild(box);
+  }
+
+  /** 단어 저장(북마크) 토글 버튼. 누르면 즉시 상태가 바뀐다. */
+  function saveToggle(word) {
+    var btn = el('button', 'save-btn');
+    btn.type = 'button';
+    function paint() {
+      var on = window.Store.isSaved(word);
+      btn.classList.toggle('is-on', on);
+      btn.textContent = on ? '★ 저장됨' : '☆ 저장';
+      btn.title = on ? word + ' 저장 해제' : word + ' 저장';
+    }
+    paint();
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();          // 단어장 행 클릭과 겹치지 않게
+      window.Store.toggleSaved(word);
+      paint();
+    });
+    return btn;
   }
 
   function showBoardFeedback(slide) {
@@ -981,11 +1057,13 @@
     var f = $('word-filters');
     f.innerHTML = '';
 
+    var savedN = window.Store.savedList().length;
     var statuses = [
       { id: 'all', label: '전체' },
       { id: 'new', label: '미학습' },
       { id: 'learning', label: '학습 중' },
-      { id: 'mastered', label: '마스터' }
+      { id: 'mastered', label: '마스터' },
+      { id: 'saved', label: '★ 저장' + (savedN ? ' ' + savedN : '') }
     ];
     statuses.forEach(function (s) {
       var c = el('button', 'chip' + (state.wordFilter.status === s.id ? ' is-on' : ''), s.label);
@@ -1017,6 +1095,7 @@
       if (st === 'new' && info.seen > 0) return false;
       if (st === 'learning' && !(info.seen > 0 && info.m < window.Store.MAX_MASTERY)) return false;
       if (st === 'mastered' && info.m < window.Store.MAX_MASTERY) return false;
+      if (st === 'saved' && !window.Store.isSaved(w.word)) return false;
       if (state.wordFilter.level !== 'all' && w.level !== state.wordFilter.level) return false;
       return true;
     });
@@ -1044,6 +1123,7 @@
       dots.appendChild(el('i', i < info.m ? 'on' : ''));
     }
     top.appendChild(dots);
+    top.appendChild(saveToggle(w.word));
     row.appendChild(top);
 
     row.appendChild(el('div', 'li-mean', w.meanings.join(', ')));
