@@ -79,6 +79,7 @@
       Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
 
     renderModeList();
+    renderHomeAccount(window.Sync.status());
 
     // 정복 모드 카드 — 전 세트 챕터를 합산한다
     var totalChapters = window.Conquer.SETS.reduce(function (n, set) {
@@ -173,7 +174,36 @@
     return Math.floor(s / 86400) + '일 전';
   }
 
+  /** 홈 헤더의 계정 버튼 — 한 줄로 상태를 요약한다.
+      단어장의 자세한 계정 칸과 같은 상태를 쓰되 표시만 짧게 줄인다. */
+  function renderHomeAccount(st) {
+    var b = $('home-acct');
+    if (!b) return;
+    b.className = 'head-acct';
+    if (!st.available) {
+      // 동기화를 쓸 수 없으면 홈에서는 아예 감춘다.
+      // 학습에 지장이 없는 일로 홈을 어지럽힐 이유가 없다.
+      b.classList.add('is-off');
+      return;
+    }
+    if (!st.user) {
+      b.textContent = '로그인';
+      return;
+    }
+    if (st.lastError) {
+      b.textContent = '동기화 오류';
+      b.classList.add('is-bad');
+      return;
+    }
+    if (st.sending) { b.textContent = '동기화 중…'; return; }
+    if (st.dirty) { b.textContent = '저장 대기'; return; }
+    b.textContent = st.user.email || st.user.name || '로그인됨';
+    b.classList.add('is-on');
+  }
+
   function renderAccount(st) {
+    renderHomeAccount(st);
+
     var who = $('acct-who');
     var btn = $('btn-signin');
     var note = $('acct-note');
@@ -213,10 +243,19 @@
     }
   }
 
-  $('btn-signin').addEventListener('click', function () {
+  function toggleAccount() {
     var st = window.Sync.status();
     if (st.user) window.Sync.signOut();
     else window.Sync.signIn();
+  }
+
+  $('btn-signin').addEventListener('click', toggleAccount);
+
+  /* 홈의 계정 버튼 — 로그인 전이면 바로 로그인,
+     이미 로그인했으면 자세한 상태를 볼 수 있게 단어장으로 보낸다. */
+  $('home-acct').addEventListener('click', function () {
+    if (window.Sync.status().user) go('words');
+    else toggleAccount();
   });
 
   window.Sync.onChange(renderAccount);
