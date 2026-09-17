@@ -9,8 +9,8 @@
  *    여기서 window.ANT_DICT = {...} 로 재대입하면 A 세트의 202개가 통째로
  *    사라진다. 반드시 이 파일 맨 아래처럼 Object.assign 으로 병합할 것.
  *
- * 진행 상황: 234단어 중 100단어 (babble ~ bewildered).
- *   챕터는 20단어씩 잘리므로 현재 5챕터. 나머지 134단어는 이후 차수에서 채운다.
+ * 진행 상황: 234단어 중 160단어 (babble ~ bothersome).
+ *   챕터는 20단어씩 잘리므로 현재 8챕터. 나머지 74단어는 4차에서 채운다.
  */
 window.VOCAB_B = [
   /* ── ba ────────────────────────────────────── */
@@ -378,7 +378,254 @@ window.VOCAB_B = [
 
   { word:"bewildered", pron:"비윌더드", pos:"adj", level:"C1", meanings:["당황한","갈피를 못 잡은"],
     syn:["puzzled","disoriented","baffled"], ant:["confident"],
-    ex:[{ s:"She gave me a {{}} look and said nothing.", f:"bewildered", ko:"그녀는 당황한 표정으로 나를 보며 아무 말도 하지 않았다." }] }
+    ex:[{ s:"She gave me a {{}} look and said nothing.", f:"bewildered", ko:"그녀는 당황한 표정으로 나를 보며 아무 말도 하지 않았다." }] },
+
+  /* ── bey ~ bi ──────────────────────────────── */
+  { word:"beyond", pron:"비욘드", pos:"adv", level:"B1", meanings:["~너머","~을 지나"],
+    syn:["past","farther than","outside"], ant:["within"],
+    ex:[{ s:"The village lies just {{}} those low hills.", f:"beyond", ko:"그 마을은 저 낮은 언덕 바로 너머에 있다." }] },
+
+  /* biannual(연 2회)과 biennial(격년)은 일부러 유의어로 묶지 않았다.
+     서로의 오답으로 등장해야 둘을 구별하는 훈련이 된다. */
+  { word:"biannual", pron:"바이애뉴얼", pos:"adj", level:"C1", meanings:["연 2회의"],
+    syn:["twice-yearly","semiannual","half-yearly"], ant:["annual"],
+    ex:[{ s:"The company holds a {{}} review each June and December.", f:"biannual", ko:"그 회사는 매년 6월과 12월에 연 2회 평가를 한다." }] },
+
+  { word:"biased", pron:"바이어스트", pos:"adj", level:"B2", meanings:["선입견이 있는","편향된"],
+    syn:["prejudiced","partial","one-sided"], ant:["impartial"],
+    ex:[{ s:"The report was clearly {{}} toward one side.", f:"biased", ko:"그 보고서는 분명히 한쪽으로 편향되어 있었다." }] },
+
+  { word:"biennial", pron:"바이에니얼", pos:"adj", level:"C1", meanings:["2년에 한 번의","격년의"],
+    syn:["two-yearly","alternate-year","every-other-year"], ant:["annual"],
+    ex:[{ s:"The festival is a {{}} event, held only in odd years.", f:"biennial", ko:"그 축제는 홀수 해에만 열리는 격년 행사다." }] },
+
+  { word:"big-headed", pron:"빅헤디드", pos:"adj", level:"C1", meanings:["자만하는","잘난체하는"],
+    syn:["arrogant","conceited","boastful"], ant:["modest"],
+    ex:[{ s:"Sudden success made him {{}} and hard to work with.", f:"big-headed", ko:"갑작스러운 성공은 그를 자만하게 만들어 함께 일하기 어렵게 했다." }] },
+
+  { word:"bilateral", pron:"바이래터럴", pos:"adj", level:"C1", meanings:["쌍방의","양쪽의"],
+    syn:["two-sided","mutual","reciprocal"], ant:["unilateral"],
+    ex:[{ s:"The two countries signed a {{}} trade agreement.", f:"bilateral", ko:"두 나라는 쌍방 무역 협정에 서명했다." }] },
+
+  { word:"bilingual", pron:"바이링구얼", pos:"adj", level:"B2", meanings:["2개 국어를 쓰는"],
+    syn:["dual-language","two-language","polyglot"], ant:["monolingual"],
+    ex:[{ s:"She grew up {{}} in Korean and English.", f:"bilingual", ko:"그녀는 한국어와 영어 2개 국어를 쓰며 자랐다." }] },
+
+  { word:"bill", pron:"빌", pos:"n", level:"B1", meanings:["법안","계산서"],
+    syn:["legislation","invoice","statement"],
+    ex:[{ s:"Congress passed the {{}} after a long debate.", f:"bill", ko:"의회는 오랜 논쟁 끝에 그 법안을 통과시켰다." }] },
+
+  { word:"bind", pron:"바인드", pos:"v", level:"B2", meanings:["묶다","의무를 지우다"],
+    syn:["tie","fasten","secure"], ant:["loosen"],
+    ex:[{ s:"They used rope to {{}} the boxes together.", f:"bind", ko:"그들은 상자들을 함께 묶기 위해 밧줄을 썼다." }] },
+
+  { word:"biodegradable", pron:"바이오디그레이더블", pos:"adj", level:"C1", meanings:["자연 분해되는","생물 분해성의"],
+    syn:["compostable","decomposable","degradable"], ant:["persistent"],
+    ex:[{ s:"The packaging is fully {{}} and safe for soil.", f:"biodegradable", ko:"그 포장재는 완전히 자연 분해되며 흙에 무해하다." }] },
+
+  { word:"biodiversity", pron:"바이오다이버시티", pos:"n", level:"C1", meanings:["생물의 다양성"],
+    syn:["species variety","ecological variety","biotic richness"], ant:["monoculture"],
+    ex:[{ s:"Logging threatens the {{}} of the rainforest.", f:"biodiversity", ko:"벌목은 열대우림의 생물 다양성을 위협한다." }] },
+
+  { word:"biography", pron:"바이오그래피", pos:"n", level:"B2", meanings:["전기","일대기"],
+    syn:["life story","memoir","profile"], ant:["fiction"],
+    ex:[{ s:"He wrote a {{}} of the former president.", f:"biography", ko:"그는 전임 대통령의 전기를 썼다." }] },
+
+  { word:"biological", pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
+    syn:["organic","physiological","natural"], ant:["artificial"],
+    ex:[{ s:"The study examined {{}} differences between the species.", f:"biological", ko:"그 연구는 두 종 사이의 생물학적 차이를 조사했다." }] },
+
+  { word:"biology", pron:"바이올로지", pos:"n", level:"B1", meanings:["생물학","생명 활동"],
+    syn:["life science","bioscience","natural science"],
+    ex:[{ s:"She majored in {{}} at university.", f:"biology", ko:"그녀는 대학에서 생물학을 전공했다." }] },
+
+  { word:"biomechanics", pron:"바이오메카닉스", pos:"n", level:"C2", meanings:["생물역학"],
+    syn:["movement science","kinesiology","body mechanics"],
+    ex:[{ s:"Coaches study the {{}} of a runner's stride.", f:"biomechanics", ko:"코치들은 달리는 사람의 보폭에 관한 생물역학을 연구한다." }] },
+
+  { word:"biotechnology", pron:"바이오테크놀로지", pos:"n", level:"C1", meanings:["생명공학"],
+    syn:["biotech","bioengineering","genetic engineering"],
+    ex:[{ s:"Advances in {{}} have transformed modern medicine.", f:"biotechnology", ko:"생명공학의 발전은 현대 의학을 바꿔 놓았다." }] },
+
+  { word:"bitter", pron:"비터", pos:"adj", level:"B1", meanings:["맛이 쓴","격렬한"],
+    syn:["sour","acrid","harsh"], ant:["sweet"],
+    ex:[{ s:"The medicine left a {{}} taste in my mouth.", f:"bitter", ko:"그 약은 입안에 쓴맛을 남겼다." }] },
+
+  { word:"bitterness", pron:"비터니스", pos:"n", level:"B2", meanings:["쓰라림","신랄함"],
+    syn:["resentment","acrimony","rancor"], ant:["sweetness"],
+    ex:[{ s:"Years of failure left him with deep {{}}.", f:"bitterness", ko:"수년간의 실패는 그에게 깊은 쓰라림을 남겼다." }] },
+
+  { word:"bizarre", pron:"비자", pos:"adj", level:"B2", meanings:["이상한","기묘한"],
+    syn:["peculiar","weird","outlandish"], ant:["ordinary"],
+    ex:[{ s:"He told a {{}} story that no one believed.", f:"bizarre", ko:"그는 아무도 믿지 않는 기묘한 이야기를 했다." }] },
+
+  /* ── bl ────────────────────────────────────── */
+  { word:"black eye", pron:"블랙 아이", pos:"n", level:"B2", meanings:["멍든 눈"],
+    syn:["bruised eye","shiner","contusion"],
+    ex:[{ s:"He came home with a {{}} after the fight.", f:"black eye", ko:"그는 싸움 뒤에 멍든 눈으로 집에 왔다." }] },
+
+  { word:"blacken", pron:"블래큰", pos:"v", level:"C1", meanings:["검게 만들다","(명성을) 더럽히다"],
+    syn:["darken","tarnish","smear"], ant:["whiten"],
+    ex:[{ s:"Smoke had {{}} the walls of the kitchen.", f:"blackened", ko:"연기가 부엌 벽을 검게 만들어 놓았다." }] },
+
+  { word:"blackout", pron:"블랙아웃", pos:"n", level:"C1", meanings:["정전","보도 정지"],
+    syn:["power failure","outage","suppression"],
+    ex:[{ s:"The storm caused a city-wide {{}} that lasted hours.", f:"blackout", ko:"그 폭풍은 몇 시간 동안 이어진 도시 전역의 정전을 일으켰다." }] },
+
+  { word:"blacksmith", pron:"블랙스미스", pos:"n", level:"B2", meanings:["대장장이"],
+    syn:["ironworker","farrier","smith"],
+    ex:[{ s:"The village {{}} shaped horseshoes by hand.", f:"blacksmith", ko:"마을 대장장이는 손으로 말굽을 만들었다." }] },
+
+  { word:"blade", pron:"블레이드", pos:"n", level:"B1", meanings:["칼날","(풀의) 잎사귀"],
+    syn:["edge","cutter","knife"],
+    ex:[{ s:"Be careful — the {{}} is extremely sharp.", f:"blade", ko:"조심해라 — 그 칼날은 대단히 날카롭다." }] },
+
+  { word:"blank", pron:"블랭크", pos:"adj", level:"B1", meanings:["텅 빈","멍한"],
+    syn:["empty","vacant","unfilled"], ant:["filled"],
+    ex:[{ s:"She stared at the {{}} page for a whole hour.", f:"blank", ko:"그녀는 텅 빈 페이지를 한 시간 내내 바라보았다." }] },
+
+  { word:"blare", pron:"블레어", pos:"v", level:"C1", meanings:["요란하게 울리다"],
+    syn:["blast","boom","resound"], ant:["whisper"],
+    ex:[{ s:"Sirens {{}} through the empty streets all night.", f:"blared", ko:"사이렌이 밤새 텅 빈 거리에 요란하게 울렸다." }] },
+
+  { word:"blatant", pron:"블레이턴트", pos:"adj", level:"C1", meanings:["노골적인","뻔한"],
+    syn:["flagrant","glaring","overt"], ant:["subtle"],
+    ex:[{ s:"It was a {{}} lie that fooled no one.", f:"blatant", ko:"그것은 아무도 속이지 못한 뻔한 거짓말이었다." }] },
+
+  { word:"blaze", pron:"블레이즈", pos:"v", level:"B2", meanings:["활활 타다","불꽃"],
+    syn:["flame","flare","burn"], ant:["smolder"],
+    ex:[{ s:"The bonfire {{}} well into the night.", f:"blazed", ko:"모닥불은 밤늦게까지 활활 탔다." }] },
+
+  { word:"bleach", pron:"블리치", pos:"v", level:"B2", meanings:["표백하다","바래지게 하다"],
+    syn:["whiten","lighten","fade"], ant:["dye"],
+    ex:[{ s:"Sunlight had {{}} the curtains almost white.", f:"bleached", ko:"햇빛이 커튼을 거의 흰색으로 바래게 했다." }] },
+
+  { word:"bleed", pron:"블리드", pos:"v", level:"B1", meanings:["피를 흘리다"],
+    syn:["hemorrhage","ooze","seep"],
+    ex:[{ s:"The cut continued to {{}} for several minutes.", f:"bleed", ko:"그 상처는 몇 분 동안 계속 피를 흘렸다." }] },
+
+  { word:"blend", pron:"블렌드", pos:"v", level:"B1", meanings:["섞다","혼합하다"],
+    syn:["mix","combine","merge"], ant:["separate"],
+    ex:[{ s:"Slowly {{}} the flour into the melted butter.", f:"blend", ko:"밀가루를 녹인 버터에 천천히 섞어라." }] },
+
+  { word:"blessing", pron:"블레싱", pos:"n", level:"B2", meanings:["축복","승인"],
+    syn:["benediction","approval","boon"], ant:["curse"],
+    ex:[{ s:"They married with her parents' {{}}.", f:"blessing", ko:"그들은 그녀 부모의 축복을 받으며 결혼했다." }] },
+
+  { word:"bliss", pron:"블리스", pos:"n", level:"C1", meanings:["행복","기쁨"],
+    syn:["ecstasy","delight","rapture"], ant:["misery"],
+    ex:[{ s:"The first week of the holiday was pure {{}}.", f:"bliss", ko:"휴가 첫 주는 순전한 행복이었다." }] },
+
+  { word:"blizzard", pron:"블리저드", pos:"n", level:"B2", meanings:["눈보라"],
+    syn:["snowstorm","whiteout","gale"],
+    ex:[{ s:"Schools closed as the {{}} buried the town.", f:"blizzard", ko:"눈보라가 그 도시를 뒤덮으면서 학교들이 문을 닫았다." }] },
+
+  { word:"block out", pron:"블록 아웃", pos:"phr", level:"B2", meanings:["가리다","대강의 계획을 세우다"],
+    syn:["shut out","screen off","obscure"], ant:["let in"] },
+
+  { word:"blood sugar", pron:"블러드 슈거", pos:"n", level:"B2", meanings:["혈당"],
+    syn:["blood glucose","glucose level","sugar level"],
+    ex:[{ s:"Regular exercise helps keep your {{}} stable.", f:"blood sugar", ko:"규칙적인 운동은 혈당을 안정적으로 유지하는 데 도움이 된다." }] },
+
+  { word:"blood type", pron:"블러드 타입", pos:"n", level:"B1", meanings:["혈액형"],
+    syn:["blood group","ABO type","blood classification"],
+    ex:[{ s:"The hospital recorded her {{}} as O negative.", f:"blood type", ko:"병원은 그녀의 혈액형을 O형 음성으로 기록했다." }] },
+
+  /* 주신 목록의 "재난의, 재앙의; 끔찍한"은 disastrous 계열의 뜻으로,
+     원본 복사 오류로 보여 bloodshed의 실제 뜻으로 바로잡았다. */
+  { word:"bloodshed", pron:"블러드셰드", pos:"n", level:"C1", meanings:["유혈","살상"],
+    syn:["carnage","slaughter","killing"], ant:["peace"],
+    ex:[{ s:"The treaty finally ended years of {{}}.", f:"bloodshed", ko:"그 조약은 마침내 수년간의 유혈을 끝냈다." }] },
+
+  { word:"blossom", pron:"블라섬", pos:"v", level:"B2", meanings:["꽃이 피다","번영하다"],
+    syn:["bloom","flower","flourish"], ant:["wither"],
+    ex:[{ s:"Cherry trees {{}} for only a few days each spring.", f:"blossom", ko:"벚나무는 매년 봄 며칠 동안만 꽃이 핀다." }] },
+
+  { word:"blunt", pron:"블런트", pos:"adj", level:"B2", meanings:["무딘"],
+    syn:["dull","unsharpened","rounded"], ant:["sharp"],
+    ex:[{ s:"The knife was far too {{}} to cut the bread.", f:"blunt", ko:"그 칼은 빵을 자르기에 너무 무뎠다." }] },
+
+  { word:"blur", pron:"블러", pos:"n", level:"B2", meanings:["흐릿한 것","희미한 형체"],
+    syn:["haze","smudge","fog"],
+    ex:[{ s:"Without glasses the road sign was just a {{}}.", f:"blur", ko:"안경 없이는 그 도로 표지판이 흐릿한 형체일 뿐이었다." }] },
+
+  { word:"blurry", pron:"블러리", pos:"adj", level:"B2", meanings:["흐릿한","희미한"],
+    syn:["fuzzy","indistinct","hazy"], ant:["sharp"],
+    ex:[{ s:"All the photos from that night came out {{}}.", f:"blurry", ko:"그날 밤 찍은 사진은 모두 흐릿하게 나왔다." }] },
+
+  { word:"blush", pron:"블러쉬", pos:"v", level:"B1", meanings:["얼굴을 붉히다"],
+    syn:["flush","redden","color"],
+    ex:[{ s:"She began to {{}} when he praised her work.", f:"blush", ko:"그가 그녀의 작업을 칭찬하자 그녀는 얼굴을 붉히기 시작했다." }] },
+
+  /* ── bo ────────────────────────────────────── */
+  { word:"board", pron:"보드", pos:"v", level:"B2", meanings:["탑승하다"],
+    syn:["embark","get on","enter"], ant:["disembark"],
+    ex:[{ s:"Passengers may {{}} the plane at gate 12.", f:"board", ko:"승객들은 12번 게이트에서 비행기에 탑승할 수 있다." }] },
+
+  { word:"boast", pron:"보우스트", pos:"v", level:"B2", meanings:["뽐내다","자랑하다"],
+    syn:["brag","show off","crow"], ant:["downplay"],
+    ex:[{ s:"He likes to {{}} about his new car.", f:"boast", ko:"그는 새 차를 자랑하기를 좋아한다." }],
+    col:[{ p:"boast {{}} his wealth", a:"about", pool:"prep", note:"boast about ~ : ~을 자랑하다" }] },
+
+  { word:"boastful", pron:"보우스트풀", pos:"adj", level:"C1", meanings:["자랑하는","허풍 떠는"],
+    syn:["bragging","vain","conceited"], ant:["modest"],
+    ex:[{ s:"His {{}} manner annoyed everyone at the table.", f:"boastful", ko:"그의 허풍 떠는 태도는 식탁의 모두를 짜증나게 했다." }] },
+
+  { word:"bold", pron:"보울드", pos:"adj", level:"B2", meanings:["용기 있는","과감한"],
+    syn:["daring","fearless","audacious"], ant:["timid"],
+    ex:[{ s:"It was a {{}} decision to quit and start over.", f:"bold", ko:"그만두고 다시 시작한 것은 과감한 결정이었다." }] },
+
+  { word:"bolster", pron:"보울스터", pos:"v", level:"C1", meanings:["북돋우다","강화하다"],
+    syn:["strengthen","reinforce","boost"], ant:["undermine"],
+    ex:[{ s:"New evidence helped {{}} their argument.", f:"bolster", ko:"새로운 증거가 그들의 주장을 강화하는 데 도움이 되었다." }] },
+
+  { word:"bombard", pron:"봄바드", pos:"v", level:"C1", meanings:["폭격하다","퍼붓다"],
+    syn:["shell","pelt","barrage"],
+    ex:[{ s:"Reporters {{}} the minister with questions.", f:"bombarded", ko:"기자들은 장관에게 질문을 퍼부었다." }],
+    col:[{ p:"bombard him {{}} questions", a:"with", pool:"prep", note:"bombard A with B : A에게 B를 퍼붓다" }] },
+
+  { word:"bond", pron:"본드", pos:"n", level:"B2", meanings:["유대감","결합"],
+    syn:["tie","link","attachment"],
+    ex:[{ s:"A strong {{}} formed between the two teams.", f:"bond", ko:"두 팀 사이에 강한 유대감이 형성되었다." }] },
+
+  { word:"book", pron:"북", pos:"v", level:"B1", meanings:["예약하다"],
+    syn:["reserve","arrange","schedule"], ant:["cancel"],
+    ex:[{ s:"We should {{}} a table for eight o'clock.", f:"book", ko:"우리는 8시로 자리를 예약해야 한다." }] },
+
+  { word:"booklet", pron:"북릿", pos:"n", level:"B2", meanings:["소책자","팸플릿"],
+    syn:["pamphlet","brochure","leaflet"],
+    ex:[{ s:"The museum handed out a free {{}} at the entrance.", f:"booklet", ko:"그 박물관은 입구에서 무료 소책자를 나눠 주었다." }] },
+
+  { word:"boost", pron:"부스트", pos:"v", level:"B2", meanings:["밀어 올리다","상승시키다"],
+    syn:["raise","lift","increase"], ant:["reduce"],
+    ex:[{ s:"The ad campaign helped {{}} sales by twenty percent.", f:"boost", ko:"그 광고 캠페인은 매출을 20퍼센트 끌어올리는 데 도움이 되었다." }] },
+
+  { word:"border", pron:"보더", pos:"v", level:"B2", meanings:["(경계를) 접하다"],
+    syn:["adjoin","abut","flank"],
+    ex:[{ s:"Their farmland {{}} the national park.", f:"borders", ko:"그들의 농지는 국립공원과 경계를 접한다." }] },
+
+  { word:"boredom", pron:"보덤", pos:"n", level:"B2", meanings:["권태","지루함"],
+    syn:["tedium","monotony","dullness"], ant:["excitement"],
+    ex:[{ s:"He read novels to escape the {{}} of the long trip.", f:"boredom", ko:"그는 긴 여행의 지루함을 피하려고 소설을 읽었다." }] },
+
+  { word:"borrow from", pron:"바로우 프롬", pos:"phr", level:"B1", meanings:["~에서 빌리다","~에서 차용하다"],
+    syn:["take from","obtain from","get a loan from"], ant:["lend to"] },
+
+  { word:"botanic", pron:"버태닉", pos:"adj", level:"C1", meanings:["식물의","식물학의"],
+    syn:["botanical","plant-related","floral"],
+    ex:[{ s:"We spent the whole afternoon in the {{}} gardens.", f:"botanic", ko:"우리는 오후 내내 식물원에서 보냈다." }] },
+
+  { word:"botanical", pron:"버태니컬", pos:"adj", level:"C1", meanings:["식물의","식물에서 얻은"],
+    syn:["botanic","plant-based","herbal"],
+    ex:[{ s:"The book contains detailed {{}} illustrations.", f:"botanical", ko:"그 책에는 상세한 식물 도해가 실려 있다." }] },
+
+  { word:"botany", pron:"바터니", pos:"n", level:"C1", meanings:["식물학"],
+    syn:["plant science","phytology","plant biology"],
+    ex:[{ s:"She studied {{}} before becoming a gardener.", f:"botany", ko:"그녀는 정원사가 되기 전에 식물학을 공부했다." }] },
+
+  { word:"bothersome", pron:"바더섬", pos:"adj", level:"B2", meanings:["짜증나는","성가신"],
+    syn:["annoying","irritating","troublesome"], ant:["pleasant"],
+    ex:[{ s:"The constant noise from the street was extremely {{}}.", f:"bothersome", ko:"거리에서 나는 끊임없는 소음은 대단히 성가셨다." }] }
 ];
 
 
@@ -386,6 +633,8 @@ window.VOCAB_B = [
    words.js 가 만든 객체에 덧붙인다. 재대입하면 A 세트 202개가 사라진다. */
 Object.assign(window.ANT_DICT, {
   "afterward":"나중에, 그 후에",
+  "annual":"연 1회의, 매년의",
+  "artificial":"인공적인",
   "at large":"잡히지 않은, 활개 치는",
   "bankruptcy":"파산",
   "be against":"~에 반대하다",
@@ -413,39 +662,73 @@ Object.assign(window.ANT_DICT, {
   "be unlikely to":"~할 것 같지 않다",
   "be unmoved by":"~에 감동하지 않다",
   "begin":"시작하다",
+  "cancel":"취소하다",
   "civilized":"문명화된, 교양 있는",
   "clarify":"명확히 하다",
   "confident":"자신 있는, 확신하는",
   "contradict":"모순되다, 반박하다",
   "cruel":"잔혹한",
+  "curse":"저주, 화근",
+  "disembark":"하선하다, 내리다",
   "donor":"기부자, 증여자",
+  "downplay":"대단찮게 생각하다, 축소하다",
   "drawback":"결점, 문제점",
+  "dye":"염색하다",
+  "excitement":"흥분, 설렘",
   "fertile":"비옥한, 다산의",
+  "fiction":"허구, 소설",
+  "filled":"채워진",
   "forgive oneself":"자신을 용서하다",
   "fully":"완전히, 충분히",
   "hairy":"털이 많은",
   "harmful":"해로운",
   "hated":"미움 받는",
+  "impartial":"공정한, 편견 없는",
   "least of all":"그중에서도 특히 아닌",
+  "lend to":"~에게 빌려주다",
+  "let in":"들이다, 통과시키다",
+  "loosen":"풀다, 느슨하게 하다",
   "lose":"지다, 잃다",
+  "misery":"고통, 비참",
+  "modest":"잘난 척하지 않는, 소박한",
+  "monoculture":"단일 재배",
+  "monolingual":"1개 국어만 쓰는",
   "one-way":"일방통행의, 편도의",
   "opponent":"반대자, 상대",
+  "ordinary":"평범한, 보통의",
+  "peace":"평화",
   "penniless":"무일푼의",
+  "persistent":"잘 분해되지 않는, 끈질긴",
+  "pleasant":"즐거운, 기분 좋은",
   "praise":"칭찬하다",
   "prompt":"즉각적인, 신속한",
   "recover from":"~에서 회복하다",
+  "reduce":"줄이다",
   "reject":"거부하다, 물리치다",
   "repel":"쫓아내다, 반발하게 하다",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
   "retreat":"물러나다, 후퇴하다",
+  "separate":"분리하다",
+  "sharp":"날카로운, 선명한",
   "silence":"침묵, 정적",
+  "smolder":"연기만 내며 타다",
   "solvent":"지급 능력이 있는",
   "stand up":"일어서다",
   "stay out of":"~에 관여하지 않다",
   "straighten":"곧게 하다, 펴다",
-  "suffer from":"~로 고통받다",
-  "worse off":"형편이 더 나쁜",
+  "subtle":"미묘한, 은근한",
   "succeed":"성공하다",
-  "surrender":"항복하다, 굴복하다"
+  "suffer from":"~로 고통받다",
+  "surrender":"항복하다, 굴복하다",
+  "sweet":"단, 달콤한",
+  "sweetness":"단맛, 감미로움",
+  "timid":"겁 많은, 소심한",
+  "undermine":"약화시키다",
+  "unilateral":"일방적인, 한쪽만의",
+  "whisper":"속삭이다",
+  "whiten":"희게 하다",
+  "wither":"시들다",
+  "within":"~안에, ~이내에",
+  "worse off":"형편이 더 나쁜"
 });
