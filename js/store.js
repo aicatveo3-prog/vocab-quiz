@@ -43,12 +43,25 @@ window.Store = (function () {
     }
   }
 
+  /* 기록이 바뀔 때마다 알린다. 동기화 계층이 이걸 듣고 "보낼 것이 있다"고
+     표시한다. 호출부(record·toggleSaved·clearWrong…)마다 알림을 흩뿌리지 않고
+     save() 한 곳에 두면 빠뜨리는 경로가 생기지 않는다. */
+  var changeHooks = [];
+
+  function onChange(fn) {
+    if (typeof fn === 'function') changeHooks.push(fn);
+  }
+
   function save() {
     try {
       localStorage.setItem(KEY, JSON.stringify(state));
     } catch (e) {
       /* 저장 실패(용량 초과 등)는 학습 진행을 막지 않는다 */
     }
+    // 알림이 실패해도 저장은 이미 끝났으므로 학습을 막지 않는다
+    changeHooks.forEach(function (fn) {
+      try { fn(); } catch (e) { /* noop */ }
+    });
   }
 
   function today() {
@@ -421,6 +434,13 @@ window.Store = (function () {
     exportData: exportData,
     importData: importData,
     mergeData: mergeData,
+    onChange: onChange,
+    /** 서버에서 받은 기록을 합쳐 넣는다 (동기화 계층이 사용) */
+    applyRemote: function (remote) {
+      state = mergeData(state, remote);
+      save();
+      return exportData().data;
+    },
     todayCount: todayCount,
     recentDays: recentDays,
     summary: summary,
