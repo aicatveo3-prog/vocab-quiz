@@ -25,8 +25,11 @@ window.Conquer = (function () {
 
   /* ── 세트 & 챕터 ──────────────────────────── */
 
+  /* 세트 레지스트리. 정복 모드와 개별 연습이 함께 쓴다.
+     여기에 한 줄 추가하면 세트 목록·챕터 목록·개별 연습에 모두 반영된다. */
   var SETS = [
-    { id: 'A', label: 'A', words: window.VOCAB }
+    { id: 'A', label: 'A', words: window.VOCAB },
+    { id: 'B', label: 'B', words: window.VOCAB_B || [] }
   ];
 
   function getSet(id) {
