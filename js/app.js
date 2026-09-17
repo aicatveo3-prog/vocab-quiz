@@ -56,6 +56,12 @@
   function renderHome() {
     var s = window.Store.summary(ALL_WORDS.length);
 
+    // 부제 — 세트가 늘어나도 문구를 손으로 고치지 않도록 SETS에서 만든다
+    $('head-sub').textContent = '수능 보카 · ' + window.Conquer.SETS
+      .filter(function (set) { return set.words.length; })
+      .map(function (set) { return set.label + ' 섹션 ' + set.words.length + '단어'; })
+      .join(' + ');
+
     // 오늘 현황 — 한 줄로 압축
     var line = $('today-line');
     line.innerHTML = '';

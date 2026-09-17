@@ -9,8 +9,7 @@
  *    여기서 window.ANT_DICT = {...} 로 재대입하면 A 세트의 202개가 통째로
  *    사라진다. 반드시 이 파일 맨 아래처럼 Object.assign 으로 병합할 것.
  *
- * 진행 상황: 234단어 중 160단어 (babble ~ bothersome).
- *   챕터는 20단어씩 잘리므로 현재 8챕터. 나머지 74단어는 4차에서 채운다.
+ * 진행 상황: 234단어 전량 완료 (babble ~ bystander) — 12챕터.
  */
 window.VOCAB_B = [
   /* ── ba ────────────────────────────────────── */
@@ -625,7 +624,301 @@ window.VOCAB_B = [
 
   { word:"bothersome", pron:"바더섬", pos:"adj", level:"B2", meanings:["짜증나는","성가신"],
     syn:["annoying","irritating","troublesome"], ant:["pleasant"],
-    ex:[{ s:"The constant noise from the street was extremely {{}}.", f:"bothersome", ko:"거리에서 나는 끊임없는 소음은 대단히 성가셨다." }] }
+    ex:[{ s:"The constant noise from the street was extremely {{}}.", f:"bothersome", ko:"거리에서 나는 끊임없는 소음은 대단히 성가셨다." }] },
+
+  { word:"bough", pron:"바우", pos:"n", level:"C1", meanings:["큰 가지"],
+    syn:["limb","branch","offshoot"],
+    ex:[{ s:"A heavy {{}} snapped under the weight of the snow.", f:"bough", ko:"굵은 가지 하나가 눈의 무게에 부러졌다." }] },
+
+  { word:"bounce", pron:"바운스", pos:"v", level:"B1", meanings:["튀다","깡충깡충 뛰다"],
+    syn:["rebound","spring","hop"],
+    ex:[{ s:"The ball began to {{}} down the stone stairs.", f:"bounce", ko:"공이 돌계단을 튀며 내려가기 시작했다." }] },
+
+  { word:"boundary", pron:"바운더리", pos:"n", level:"B2", meanings:["경계","한계"],
+    syn:["border","limit","perimeter"], ant:["center"],
+    ex:[{ s:"A low stone fence marks the {{}} of the property.", f:"boundary", ko:"낮은 돌담이 그 땅의 경계를 나타낸다." }] },
+
+  { word:"boundless", pron:"바운들리스", pos:"adj", level:"C1", meanings:["무한한","끝이 없는"],
+    syn:["limitless","infinite","endless"], ant:["limited"],
+    ex:[{ s:"She seems to have {{}} energy for her work.", f:"boundless", ko:"그녀는 자기 일에 끝없는 에너지를 가진 듯하다." }] },
+
+  /* ── br ────────────────────────────────────── */
+  { word:"brainwash", pron:"브레인워시", pos:"v", level:"C1", meanings:["세뇌시키다"],
+    syn:["indoctrinate","condition","manipulate"],
+    ex:[{ s:"The regime tried to {{}} its citizens through the media.", f:"brainwash", ko:"그 정권은 언론을 통해 국민을 세뇌시키려 했다." }] },
+
+  { word:"branch", pron:"브랜치", pos:"n", level:"B1", meanings:["나뭇가지","지점"],
+    syn:["limb","bough","division"],
+    ex:[{ s:"A small bird landed on the lowest {{}}.", f:"branch", ko:"작은 새가 가장 낮은 나뭇가지에 내려앉았다." }] },
+
+  { word:"brand-new", pron:"브랜드 뉴", pos:"adj", level:"B1", meanings:["아주 새로운","신품의"],
+    syn:["unused","pristine","fresh"], ant:["secondhand"],
+    ex:[{ s:"He showed up to the interview in a {{}} suit.", f:"brand-new", ko:"그는 새 정장을 입고 면접에 나타났다." }] },
+
+  { word:"brass", pron:"브래스", pos:"n", level:"B2", meanings:["놋쇠","황동"],
+    syn:["alloy","metalwork","copper alloy"],
+    ex:[{ s:"The door handles were made of polished {{}}.", f:"brass", ko:"문 손잡이는 광을 낸 놋쇠로 만들어졌다." }] },
+
+  { word:"bravery", pron:"브레이버리", pos:"n", level:"B2", meanings:["용감함","용감한 행동"],
+    syn:["courage","valor","boldness"], ant:["cowardice"],
+    ex:[{ s:"He received a medal for his {{}} during the fire.", f:"bravery", ko:"그는 화재 당시의 용감함으로 훈장을 받았다." }] },
+
+  { word:"breach", pron:"브리치", pos:"n", level:"C1", meanings:["위반","파기"],
+    syn:["violation","infringement","transgression"], ant:["compliance"],
+    ex:[{ s:"Sharing the file was a clear {{}} of contract.", f:"breach", ko:"그 파일을 공유한 것은 명백한 계약 위반이었다." }],
+    col:[{ p:"a breach {{}} contract", a:"of", pool:"prep", note:"a breach of ~ : ~의 위반" }] },
+
+  { word:"breadth", pron:"브레드스", pos:"n", level:"C1", meanings:["폭","넓음"],
+    syn:["width","span","extent"], ant:["narrowness"],
+    ex:[{ s:"The {{}} of his knowledge impressed the whole panel.", f:"breadth", ko:"그의 지식의 폭은 심사위원 전원에게 인상을 남겼다." }] },
+
+  { word:"break", pron:"브레이크", pos:"v", level:"B1", meanings:["부수다","어기다"],
+    syn:["shatter","smash","fracture"], ant:["repair"],
+    ex:[{ s:"Be careful not to {{}} the glass on the table.", f:"break", ko:"탁자 위의 유리를 깨지 않도록 조심해라." }] },
+
+  /* 주신 목록의 "앞서 나가는, 선두를 달리는"은 break away 계열의 뜻으로,
+     원본 복사 오류로 보여 break free의 실제 뜻으로 바로잡았다. */
+  { word:"break free", pron:"브레이크 프리", pos:"phr", level:"B2", meanings:["벗어나다","탈출하다"],
+    syn:["escape","get away","break loose"], ant:["be trapped"] },
+
+  { word:"break into", pron:"브레이크 인투", pos:"phr", level:"B2", meanings:["침입하다","억지로 열다"],
+    syn:["force entry","raid","burgle"], ant:["exit"] },
+
+  { word:"break new ground", pron:"브레이크 뉴 그라운드", pos:"phr", level:"C1", meanings:["새 분야를 개척하다"],
+    syn:["innovate","pioneer","blaze a trail"], ant:["follow suit"] },
+
+  { word:"break out", pron:"브레이크 아웃", pos:"phr", level:"B2", meanings:["(전쟁이) 발발하다","(화재가) 발생하다"],
+    syn:["erupt","flare up","begin suddenly"], ant:["subside"] },
+
+  { word:"breakdown", pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
+    syn:["malfunction","collapse","failure"],
+    ex:[{ s:"A {{}} on the highway delayed us for three hours.", f:"breakdown", ko:"고속도로에서의 고장으로 우리는 세 시간 지체되었다." }] },
+
+  { word:"breakthrough", pron:"브레이크스루", pos:"n", level:"B2", meanings:["돌파구","획기적 발전"],
+    syn:["advance","leap forward","discovery"], ant:["setback"],
+    ex:[{ s:"The team announced a major {{}} in cancer research.", f:"breakthrough", ko:"그 팀은 암 연구에서 중대한 획기적 발전을 발표했다." }] },
+
+  { word:"breathless", pron:"브레스리스", pos:"adj", level:"B2", meanings:["숨 가쁜","숨을 못 쉴 정도의"],
+    syn:["panting","winded","gasping"],
+    ex:[{ s:"She arrived {{}} after running up six flights of stairs.", f:"breathless", ko:"그녀는 6층까지 계단을 뛰어올라 숨 가쁜 상태로 도착했다." }] },
+
+  /* 주신 목록의 "(공부를) 다시 하다, 더욱 연마하다"는 brush up의 뜻으로,
+     원본 복사 오류로 보여 breathtaking의 실제 뜻으로 바로잡았다. */
+  { word:"breathtaking", pron:"브레스테이킹", pos:"adj", level:"B2", meanings:["숨이 멎을 듯한","놀라운"],
+    syn:["stunning","spectacular","awe-inspiring"], ant:["dull"],
+    ex:[{ s:"The view from the summit was absolutely {{}}.", f:"breathtaking", ko:"정상에서의 전망은 정말로 숨이 멎을 듯했다." }] },
+
+  { word:"breed", pron:"브리드", pos:"v", level:"B2", meanings:["사육하다","재배하다"],
+    syn:["raise","rear","cultivate"],
+    ex:[{ s:"They {{}} horses on a farm in the north.", f:"breed", ko:"그들은 북부의 한 농장에서 말을 사육한다." }] },
+
+  { word:"breeding", pron:"브리딩", pos:"n", level:"C1", meanings:["품종개량","번식"],
+    syn:["reproduction","rearing","cultivation"],
+    ex:[{ s:"The zoo runs a {{}} program for rare birds.", f:"breeding", ko:"그 동물원은 희귀 조류 번식 프로그램을 운영한다." }] },
+
+  { word:"breeze", pron:"브리즈", pos:"n", level:"B1", meanings:["미풍","부드러운 바람"],
+    syn:["draft","light wind","zephyr"], ant:["gale"],
+    ex:[{ s:"A cool {{}} came off the sea at sunset.", f:"breeze", ko:"해질녘 바다에서 시원한 미풍이 불어왔다." }] },
+
+  { word:"bribe", pron:"브라이브", pos:"n", level:"B2", meanings:["뇌물"],
+    syn:["payoff","kickback","inducement"],
+    ex:[{ s:"The official was arrested for taking a {{}}.", f:"bribe", ko:"그 공무원은 뇌물을 받아 체포되었다." }] },
+
+  { word:"bride", pron:"브라이드", pos:"n", level:"B1", meanings:["신부"],
+    syn:["newlywed","wife-to-be","spouse"], ant:["groom"],
+    ex:[{ s:"The {{}} wore her grandmother's wedding dress.", f:"bride", ko:"신부는 할머니의 웨딩드레스를 입었다." }] },
+
+  { word:"bridge", pron:"브리지", pos:"v", level:"B2", meanings:["다리를 놓다","이어주다"],
+    syn:["connect","span","link"], ant:["divide"],
+    ex:[{ s:"The program aims to {{}} the gap between rich and poor.", f:"bridge", ko:"그 프로그램은 부유층과 빈곤층의 격차를 이어주는 것을 목표로 한다." }] },
+
+  { word:"brief", pron:"브리프", pos:"adj", level:"B1", meanings:["잠시 동안의","간단한"],
+    syn:["short","concise","fleeting"], ant:["lengthy"],
+    ex:[{ s:"He gave a {{}} summary of the report.", f:"brief", ko:"그는 그 보고서의 간단한 요약을 제시했다." }] },
+
+  { word:"brilliant", pron:"브릴리언트", pos:"adj", level:"B1", meanings:["우수한","눈부신"],
+    syn:["outstanding","superb","dazzling"], ant:["mediocre"],
+    ex:[{ s:"She came up with a {{}} solution in minutes.", f:"brilliant", ko:"그녀는 몇 분 만에 훌륭한 해결책을 내놓았다." }] },
+
+  { word:"bring about", pron:"브링 어바웃", pos:"phr", level:"B2", meanings:["초래하다","일으키다"],
+    syn:["cause","produce","give rise to"], ant:["prevent"] },
+
+  { word:"bring in", pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
+    syn:["earn","generate","yield"], ant:["lose"] },
+
+  { word:"brink", pron:"브링크", pos:"n", level:"C1", meanings:["가장자리","직전"],
+    syn:["verge","threshold","edge"],
+    ex:[{ s:"The company was on the {{}} of collapse.", f:"brink", ko:"그 회사는 붕괴 직전에 있었다." }] },
+
+  { word:"brisk", pron:"브리스크", pos:"adj", level:"B2", meanings:["빠른","상쾌한"],
+    syn:["quick","lively","energetic"], ant:["sluggish"],
+    ex:[{ s:"They went for a {{}} walk before breakfast.", f:"brisk", ko:"그들은 아침 식사 전에 빠른 걸음으로 산책했다." }] },
+
+  { word:"brittle", pron:"브리틀", pos:"adj", level:"C1", meanings:["깨지기 쉬운","약한"],
+    syn:["fragile","crumbly","delicate"], ant:["flexible"],
+    ex:[{ s:"Old paper becomes {{}} and tears very easily.", f:"brittle", ko:"오래된 종이는 부서지기 쉬워져 아주 쉽게 찢어진다." }] },
+
+  { word:"broadcast", pron:"브로드캐스트", pos:"v", level:"B1", meanings:["방송하다"],
+    syn:["air","transmit","televise"],
+    ex:[{ s:"They plan to {{}} the match live at eight.", f:"broadcast", ko:"그들은 그 경기를 8시에 생중계할 계획이다." }] },
+
+  { word:"broke", pron:"브로우크", pos:"adj", level:"B2", meanings:["무일푼의","파산한"],
+    syn:["penniless","insolvent","bankrupt"], ant:["wealthy"],
+    ex:[{ s:"After the trip I was completely {{}}.", f:"broke", ko:"그 여행 후 나는 완전히 무일푼이었다." }] },
+
+  { word:"broker", pron:"브로커", pos:"n", level:"C1", meanings:["중개인","증권 중개인"],
+    syn:["agent","middleman","dealer"],
+    ex:[{ s:"A {{}} arranged the sale of the property.", f:"broker", ko:"중개인이 그 부동산의 매매를 주선했다." }] },
+
+  { word:"bronze", pron:"브론즈", pos:"n", level:"B2", meanings:["청동"],
+    syn:["casting metal","statuary metal","tin alloy"],
+    ex:[{ s:"The statue in the square was cast in {{}}.", f:"bronze", ko:"광장의 그 조각상은 청동으로 주조되었다." }] },
+
+  { word:"brood", pron:"브루드", pos:"v", level:"C1", meanings:["곰곰이 생각하다"],
+    syn:["dwell","mope","ruminate"],
+    ex:[{ s:"Don't {{}} over mistakes you cannot undo.", f:"brood", ko:"돌이킬 수 없는 실수를 곰곰이 생각하지 마라." }],
+    col:[{ p:"brood {{}} the past", a:"over", pool:"prep", note:"brood over ~ : ~을 곰곰이 생각하다" }] },
+
+  { word:"brook", pron:"브룩", pos:"n", level:"C1", meanings:["시내","개천"],
+    syn:["stream","creek","rivulet"],
+    ex:[{ s:"A narrow {{}} ran just behind the cottage.", f:"brook", ko:"좁은 개천이 그 작은 집 바로 뒤로 흘렀다." }] },
+
+  { word:"broth", pron:"브로스", pos:"n", level:"B2", meanings:["수프","국물"],
+    syn:["stock","bouillon","consomme"],
+    ex:[{ s:"She simmered the chicken {{}} for a full hour.", f:"broth", ko:"그녀는 닭 국물을 꼬박 한 시간 동안 뭉근히 끓였다." }] },
+
+  { word:"browse", pron:"브라우즈", pos:"v", level:"B1", meanings:["둘러보다","뜯어먹다"],
+    syn:["skim","peruse","scan"],
+    ex:[{ s:"I like to {{}} through old bookshops on weekends.", f:"browse", ko:"나는 주말에 오래된 서점을 둘러보는 것을 좋아한다." }] },
+
+  { word:"bruise", pron:"브루즈", pos:"n", level:"B2", meanings:["멍"],
+    syn:["welt","black mark","discoloration"],
+    ex:[{ s:"A dark {{}} appeared on his arm the next day.", f:"bruise", ko:"다음 날 그의 팔에 검은 멍이 나타났다." }] },
+
+  /* 주신 목록의 "~에 휘둘리는, 좌우되어"는 at the mercy of 계열의 뜻으로,
+     원본 복사 오류로 보여 brush up의 실제 뜻으로 바로잡았다. */
+  { word:"brush up", pron:"브러쉬 업", pos:"phr", level:"C1", meanings:["(기술·지식을) 다시 다듬다","복습하다"],
+    syn:["review","refresh","polish up"], ant:["neglect"] },
+
+  { word:"brutal", pron:"브루털", pos:"adj", level:"B2", meanings:["잔혹한","악랄한"],
+    syn:["vicious","merciless","ruthless"], ant:["gentle"],
+    ex:[{ s:"The regime was known for its {{}} treatment of critics.", f:"brutal", ko:"그 정권은 비판자들에 대한 잔혹한 처우로 알려져 있었다." }] },
+
+  { word:"bubble over", pron:"버블 오버", pos:"phr", level:"C1", meanings:["흥분으로 가득 차다"],
+    syn:["overflow","brim","be bursting"], ant:["be subdued"] },
+
+  /* ── bu ────────────────────────────────────── */
+  { word:"bud", pron:"버드", pos:"n", level:"B1", meanings:["싹","봉오리"],
+    syn:["sprout","shoot","germ"],
+    ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
+
+  { word:"budget", pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
+    syn:["allowance","funds","allocation"],
+    ex:[{ s:"The department cut its {{}} by ten percent.", f:"budget", ko:"그 부서는 예산을 10퍼센트 삭감했다." }] },
+
+  { word:"built-up", pron:"빌트 업", pos:"adj", level:"C1", meanings:["건물이 밀집한"],
+    syn:["developed","urbanized","densely built"], ant:["rural"],
+    ex:[{ s:"Speed limits are much lower in {{}} areas.", f:"built-up", ko:"건물이 밀집한 지역에서는 제한 속도가 훨씬 낮다." }] },
+
+  { word:"bulk", pron:"벌크", pos:"n", level:"B2", meanings:["부피","대부분"],
+    syn:["mass","volume","majority"],
+    ex:[{ s:"The {{}} of the work was finished by Friday.", f:"bulk", ko:"그 일의 대부분은 금요일까지 끝났다." }] },
+
+  { word:"bulk up", pron:"벌크 업", pos:"phr", level:"C1", meanings:["부피가 커지다"],
+    syn:["gain mass","thicken","build muscle"], ant:["slim down"] },
+
+  { word:"bullet", pron:"불릿", pos:"n", level:"B1", meanings:["총탄","탄약통"],
+    syn:["round","slug","projectile"],
+    ex:[{ s:"A single {{}} had pierced the wooden door.", f:"bullet", ko:"총탄 한 발이 나무 문을 관통했다." }] },
+
+  { word:"bulletin", pron:"불러틴", pos:"n", level:"B2", meanings:["공보","고시"],
+    syn:["notice","announcement","dispatch"],
+    ex:[{ s:"The station broadcast a news {{}} every hour.", f:"bulletin", ko:"그 방송국은 매시간 뉴스 공보를 방송했다." }] },
+
+  { word:"bulletin board", pron:"불러틴 보드", pos:"n", level:"B1", meanings:["게시판"],
+    syn:["notice board","message board","pinboard"],
+    ex:[{ s:"The new schedule was posted on the {{}}.", f:"bulletin board", ko:"새 일정표가 게시판에 붙었다." }] },
+
+  { word:"bully", pron:"불리", pos:"v", level:"B2", meanings:["괴롭히다"],
+    syn:["intimidate","harass","pick on"], ant:["protect"],
+    ex:[{ s:"Teachers must not let older students {{}} the younger ones.", f:"bully", ko:"교사들은 상급생이 하급생을 괴롭히도록 놔두어서는 안 된다." }] },
+
+  { word:"bullying", pron:"불링", pos:"n", level:"B2", meanings:["약자를 괴롭히기"],
+    syn:["harassment","intimidation","victimization"],
+    ex:[{ s:"The school has a strict policy against {{}}.", f:"bullying", ko:"그 학교는 약자 괴롭히기에 대한 엄격한 방침을 두고 있다." }] },
+
+  { word:"bumpy", pron:"범피", pos:"adj", level:"B1", meanings:["울퉁불퉁한"],
+    syn:["uneven","rough","jolting"], ant:["smooth"],
+    ex:[{ s:"The road to the village was narrow and {{}}.", f:"bumpy", ko:"그 마을로 가는 길은 좁고 울퉁불퉁했다." }] },
+
+  { word:"bunch", pron:"번치", pos:"n", level:"B1", meanings:["무리","다발"],
+    syn:["cluster","bundle","group"],
+    ex:[{ s:"He bought a {{}} of flowers on the way home.", f:"bunch", ko:"그는 집에 오는 길에 꽃 한 다발을 샀다." }] },
+
+  { word:"bundle", pron:"번들", pos:"n", level:"B2", meanings:["뭉치","꾸러미"],
+    syn:["bunch","package","sheaf"],
+    ex:[{ s:"She carried a {{}} of letters under her arm.", f:"bundle", ko:"그녀는 편지 뭉치를 팔 아래에 끼고 있었다." }] },
+
+  { word:"burden", pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
+    syn:["load","strain","encumbrance"], ant:["relief"],
+    ex:[{ s:"Caring for both parents became a heavy {{}}.", f:"burden", ko:"양쪽 부모를 돌보는 일은 무거운 부담이 되었다." }],
+    col:[{ p:"a burden {{}} society", a:"on", pool:"prep", note:"a burden on ~ : ~에 대한 부담" }] },
+
+  { word:"bureau", pron:"뷰로우", pos:"n", level:"C1", meanings:["(관청의) 국","사무국"],
+    syn:["agency","department","office"],
+    ex:[{ s:"He works for the federal {{}} of statistics.", f:"bureau", ko:"그는 연방 통계국에서 일한다." }] },
+
+  { word:"bureaucracy", pron:"뷰라크러시", pos:"n", level:"C1", meanings:["관료제"],
+    syn:["red tape","officialdom","administration"],
+    ex:[{ s:"Endless {{}} delayed the permit for months.", f:"bureaucracy", ko:"끝없는 관료제가 그 허가를 몇 달 지연시켰다." }] },
+
+  /* 주신 목록의 "사기꾼"은 swindler의 뜻이라 절도범으로 바로잡았다. */
+  { word:"burglar", pron:"버글러", pos:"n", level:"B2", meanings:["절도범","빈집털이범"],
+    syn:["thief","intruder","housebreaker"],
+    ex:[{ s:"A {{}} had forced the back window open.", f:"burglar", ko:"절도범이 뒤쪽 창문을 억지로 열었다." }] },
+
+  { word:"burrow", pron:"버로우", pos:"v", level:"C1", meanings:["굴을 파다","파고들다"],
+    syn:["tunnel","excavate","delve"],
+    ex:[{ s:"Rabbits {{}} deep under the thick hedge.", f:"burrow", ko:"토끼들은 두꺼운 산울타리 아래 깊이 굴을 판다." }] },
+
+  { word:"burst", pron:"버스트", pos:"v", level:"B1", meanings:["터지다","파열하다"],
+    syn:["explode","rupture","pop"],
+    ex:[{ s:"The old pipe began to {{}} under the pressure.", f:"burst", ko:"그 낡은 배관이 압력을 받아 터지기 시작했다." }] },
+
+  { word:"bustle", pron:"버슬", pos:"v", level:"C1", meanings:["붐비다","서두르다"],
+    syn:["scurry","hustle","dash"], ant:["idle"],
+    ex:[{ s:"Shoppers {{}} through the market before closing time.", f:"bustled", ko:"쇼핑객들이 폐점 시간 전에 시장을 서둘러 돌아다녔다." }] },
+
+  /* ── by ~ ──────────────────────────────────── */
+  { word:"by all means", pron:"바이 올 민즈", pos:"phr", level:"B2", meanings:["반드시","꼭"],
+    syn:["certainly","without fail","absolutely"], ant:["by no means"] },
+
+  { word:"by contrast", pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
+    syn:["on the other hand","conversely","in comparison"], ant:["likewise"] },
+
+  { word:"by extension", pron:"바이 익스텐션", pos:"phr", level:"C1", meanings:["더 나아가"],
+    syn:["by implication","consequently","in turn"] },
+
+  { word:"by far", pron:"바이 파", pos:"phr", level:"B2", meanings:["훨씬","단연코"],
+    syn:["considerably","decidedly","overwhelmingly"], ant:["slightly"] },
+
+  { word:"by no means", pron:"바이 노우 민즈", pos:"phr", level:"B2", meanings:["결코 ~이 아닌"],
+    syn:["not at all","in no way","under no circumstances"], ant:["by all means"] },
+
+  { word:"by the same token", pron:"바이 더 세임 토큰", pos:"phr", level:"C1", meanings:["마찬가지로"],
+    syn:["likewise","similarly","in the same way"], ant:["conversely"] },
+
+  { word:"by-product", pron:"바이프로덕트", pos:"n", level:"C1", meanings:["부산물","부작용"],
+    syn:["side effect","offshoot","spin-off"],
+    ex:[{ s:"Plastic waste is a {{}} of cheap packaging.", f:"by-product", ko:"플라스틱 쓰레기는 값싼 포장의 부산물이다." }] },
+
+  { word:"bygone", pron:"바이곤", pos:"adj", level:"C1", meanings:["과거의","지나간"],
+    syn:["former","olden","erstwhile"], ant:["current"],
+    ex:[{ s:"The museum recreates daily life in a {{}} era.", f:"bygone", ko:"그 박물관은 지나간 시대의 일상을 재현한다." }] },
+
+  { word:"bystander", pron:"바이스탠더", pos:"n", level:"B2", meanings:["구경꾼","행인"],
+    syn:["onlooker","spectator","passerby"], ant:["participant"],
+    ex:[{ s:"A {{}} called the ambulance within seconds.", f:"bystander", ko:"한 행인이 몇 초 만에 구급차를 불렀다." }] }
 ];
 
 
@@ -658,65 +951,99 @@ Object.assign(window.ANT_DICT, {
   "be resistant to":"~에 잘 견디다, ~에 저항력이 있다",
   "be slow to":"좀처럼 ~하지 않다",
   "be spared":"면하다, 겪지 않다",
+  "be subdued":"가라앉다, 차분하다",
+  "be trapped":"갇히다, 빠져나오지 못하다",
   "be unfamiliar with":"~에 익숙하지 않다",
   "be unlikely to":"~할 것 같지 않다",
   "be unmoved by":"~에 감동하지 않다",
   "begin":"시작하다",
   "cancel":"취소하다",
+  "center":"중심, 중앙",
   "civilized":"문명화된, 교양 있는",
   "clarify":"명확히 하다",
+  "compliance":"준수, 따름",
   "confident":"자신 있는, 확신하는",
   "contradict":"모순되다, 반박하다",
+  "conversely":"반대로, 거꾸로",
+  "cowardice":"비겁함",
   "cruel":"잔혹한",
+  "current":"현재의, 지금의",
   "curse":"저주, 화근",
   "disembark":"하선하다, 내리다",
+  "divide":"나누다, 갈라놓다",
   "donor":"기부자, 증여자",
   "downplay":"대단찮게 생각하다, 축소하다",
   "drawback":"결점, 문제점",
+  "dull":"지루한, 흐릿한",
   "dye":"염색하다",
   "excitement":"흥분, 설렘",
+  "exit":"나가다, 퇴장하다",
   "fertile":"비옥한, 다산의",
   "fiction":"허구, 소설",
   "filled":"채워진",
+  "flexible":"잘 휘는, 유연한",
+  "follow suit":"선례를 따르다",
   "forgive oneself":"자신을 용서하다",
   "fully":"완전히, 충분히",
+  "gale":"강풍, 돌풍",
+  "gentle":"온화한, 부드러운",
+  "groom":"신랑",
   "hairy":"털이 많은",
   "harmful":"해로운",
   "hated":"미움 받는",
+  "idle":"놀다, 게으름 피우다",
   "impartial":"공정한, 편견 없는",
   "least of all":"그중에서도 특히 아닌",
   "lend to":"~에게 빌려주다",
+  "lengthy":"장황한, 아주 긴",
   "let in":"들이다, 통과시키다",
+  "likewise":"마찬가지로",
+  "limited":"한정된, 제한된",
   "loosen":"풀다, 느슨하게 하다",
   "lose":"지다, 잃다",
+  "mediocre":"평범한, 그저 그런",
   "misery":"고통, 비참",
   "modest":"잘난 척하지 않는, 소박한",
   "monoculture":"단일 재배",
   "monolingual":"1개 국어만 쓰는",
+  "narrowness":"좁음",
   "one-way":"일방통행의, 편도의",
   "opponent":"반대자, 상대",
   "ordinary":"평범한, 보통의",
+  "participant":"참가자, 당사자",
   "peace":"평화",
   "penniless":"무일푼의",
   "persistent":"잘 분해되지 않는, 끈질긴",
   "pleasant":"즐거운, 기분 좋은",
   "praise":"칭찬하다",
+  "prevent":"막다, 예방하다",
   "prompt":"즉각적인, 신속한",
+  "protect":"보호하다",
   "recover from":"~에서 회복하다",
   "reduce":"줄이다",
   "reject":"거부하다, 물리치다",
+  "relief":"안도, 경감",
+  "repair":"고치다, 수리하다",
   "repel":"쫓아내다, 반발하게 하다",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
   "retreat":"물러나다, 후퇴하다",
+  "rural":"시골의, 지방의",
+  "secondhand":"중고의",
   "separate":"분리하다",
+  "setback":"차질, 방해",
   "sharp":"날카로운, 선명한",
   "silence":"침묵, 정적",
+  "slightly":"약간, 조금",
+  "slim down":"살을 빼다, 규모를 줄이다",
+  "sluggish":"느릿한, 부진한",
   "smolder":"연기만 내며 타다",
+  "smooth":"매끄러운, 평탄한",
   "solvent":"지급 능력이 있는",
   "stand up":"일어서다",
   "stay out of":"~에 관여하지 않다",
   "straighten":"곧게 하다, 펴다",
+  "subside":"가라앉다, 잦아들다",
   "subtle":"미묘한, 은근한",
   "succeed":"성공하다",
   "suffer from":"~로 고통받다",
@@ -726,6 +1053,7 @@ Object.assign(window.ANT_DICT, {
   "timid":"겁 많은, 소심한",
   "undermine":"약화시키다",
   "unilateral":"일방적인, 한쪽만의",
+  "wealthy":"부유한",
   "whisper":"속삭이다",
   "whiten":"희게 하다",
   "wither":"시들다",
