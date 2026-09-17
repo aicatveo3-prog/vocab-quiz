@@ -15,7 +15,7 @@ window.FIREBASE = {
      이 버전이 존재하지 않으면 스크립트가 404로 조용히 실패한다.
      그때는 아래 한 줄만 고치면 된다 (앱이 화면에 안내를 띄운다).
      최신 버전은 Firebase 콘솔의 웹 앱 설정 코드나 릴리스 노트에서 확인. */
-  sdkVersion: '12.16.0',
+  sdkVersion: '12.19.0',
 
   config: {
     apiKey: 'AIzaSyComnoq3YAk5wFR95LmLpkh37gSLRBSqoE',
