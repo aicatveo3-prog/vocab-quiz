@@ -45,15 +45,6 @@
       <span class="hero-sub">세트 → 챕터(20단어) → 4지선다 + 문장 빈칸 + 짝 맞추기</span>
     </button>
 
-    <!-- 개별 연습 — 세트를 골라 한 가지 형식으로 통째로 -->
-    <button type="button" id="practice-card" class="hero hero-plain" data-go="practice">
-      <span class="hero-row">
-        <b>개별 연습</b>
-        <span class="hero-n" id="practice-n"></span>
-      </span>
-      <span class="hero-sub">세트 → 형식 고르기 → 한 세트를 통째로 풀기</span>
-    </button>
-
     <!-- 오답 복습 — 틀린 것이 있을 때만 나타난다 -->
     <button type="button" id="wrong-card" class="hero hero-alt" data-go="wrong" style="display:none">
       <span class="hero-row">
@@ -63,6 +54,11 @@
       <span class="hero-sub">틀린 단어만 모아 다시 풀기 · 맞히면 목록에서 사라집니다</span>
     </button>
 
+    <!-- 개별 연습 — 형식을 먼저 고르고, 다음 화면에서 세트를 고른다 -->
+    <h2 class="section-title">개별 연습</h2>
+    <div id="mode-list" class="rows"></div>
+    <p class="set-note">형식을 고르면 세트(A · B)를 선택할 수 있습니다. 한 세트를 통째로 풀며, 진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.</p>
+
     <!-- 하단 -->
     <nav class="foot-nav">
       <button class="link-btn" data-go="wrong">오답 노트<span id="wrong-badge" class="badge">0</span></button>
@@ -71,24 +67,14 @@
   </section>
 
   <!-- ══════════ 개별 연습 세트 목록 ══════════ -->
-  <section id="screen-practice" class="screen">
+  <section id="screen-mode-sets" class="screen">
     <div class="sub-head">
       <button class="icon-btn" data-go="home" aria-label="뒤로">‹</button>
-      <h2>개별 연습</h2>
+      <h2 id="mode-sets-title">4지선다</h2>
+      <span class="head-n" id="mode-sets-n"></span>
     </div>
-    <p class="site-sub pad">세트를 골라 한 가지 형식으로 통째로 풉니다.</p>
-    <div id="practice-set-list" class="list"></div>
-  </section>
-
-  <!-- ══════════ 개별 연습 형식 목록 ══════════ -->
-  <section id="screen-modes" class="screen">
-    <div class="sub-head">
-      <button class="icon-btn" id="btn-back-practice" aria-label="뒤로">‹</button>
-      <h2 id="modes-title">A 세트</h2>
-      <span class="head-n" id="modes-n"></span>
-    </div>
-    <div id="mode-list" class="rows"></div>
-    <p class="set-note" id="modes-note"></p>
+    <p class="site-sub pad" id="mode-sets-note"></p>
+    <div id="mode-set-list" class="list"></div>
   </section>
 
   <!-- ══════════ 정복 세트 목록 ══════════ -->
