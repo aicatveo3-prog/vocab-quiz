@@ -404,6 +404,20 @@ b,strong{font-weight:600}
 .hero-alt .hero-sub{color:var(--dim);opacity:1}
 
 /* ══════════ 계정 · 동기화 ══════════ */
+
+/* 홈 헤더의 계정 버튼 — 로그인은 찾기 쉬운 곳에 있어야 한다.
+   상태에 따라 '로그인' / 이메일 / '동기화 중'으로 바뀐다. */
+.head-row{display:flex;align-items:flex-start;gap:12px}
+.head-row h1{flex:1;min-width:0}
+.head-acct{flex:0 0 auto;max-width:45%;background:var(--surface);
+  border:1px solid var(--line-2);color:var(--txt-2);
+  border-radius:var(--r-pill);padding:5px 12px;font-size:12px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:all .12s}
+.head-acct:hover{border-color:var(--accent);color:var(--accent)}
+.head-acct.is-on{border-color:var(--ok-line);color:var(--ok)}
+.head-acct.is-bad{border-color:var(--ng-line);color:var(--ng)}
+.head-acct.is-off{display:none}
+
 .acct{background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r);padding:14px 16px}
 .acct-row{display:flex;align-items:center;gap:12px}

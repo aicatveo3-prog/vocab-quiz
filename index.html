@@ -15,7 +15,11 @@
   <!-- ══════════ 홈 ══════════ -->
   <section id="screen-home" class="screen is-active">
     <header class="site-head">
-      <h1>영단어 퀴즈</h1>
+      <div class="head-row">
+        <h1>영단어 퀴즈</h1>
+        <!-- 계정 — 홈에서 바로 보이지 않으면 찾지 못한다 -->
+        <button type="button" class="head-acct" id="home-acct">로그인</button>
+      </div>
       <!-- 세트 구성은 app.js가 채운다 (세트를 늘려도 문구가 낡지 않게) -->
       <p class="site-sub" id="head-sub"></p>
     </header>
