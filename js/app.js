@@ -48,7 +48,6 @@
     if (t) {
       var target = t.getAttribute('data-go');
       if (target === 'sets') { renderSets(); return; }
-      if (target === 'practice') { renderPracticeSets(); return; }
       go(target);
     }
   });
@@ -79,9 +78,7 @@
     $('bar-studied').style.width =
       Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
 
-    // 개별 연습 카드 — 세트 수와 형식 수만 요약한다 (목록은 눌러서 들어간다)
-    $('practice-n').textContent =
-      practiceSets().length + '세트 · ' + window.Quiz.MODES.length + '가지 형식';
+    renderModeList();
 
     // 정복 모드 카드 — 전 세트 챕터를 합산한다
     var totalChapters = window.Conquer.SETS.reduce(function (n, set) {
@@ -105,36 +102,12 @@
     return window.Conquer.SETS.filter(function (set) { return set.words.length; });
   }
 
-  /* ── 개별 연습 (정복 모드와 같은 2단 구조) ──────
-     홈 카드 → 세트 목록 → 형식 목록 → 퀴즈.
-     세트를 늘리면 Conquer.SETS만 보고 목록에 한 줄이 자동으로 늘어난다. */
+  /* ── 개별 연습 (형식 → 세트 2단) ────────────────
+     홈의 형식 목록 → 그 형식의 세트 목록 → 퀴즈.
+     세트를 늘리면 Conquer.SETS만 보고 세트 목록에 한 줄이 자동으로 늘어난다. */
 
-  // 1단: 세트 목록
-  function renderPracticeSets() {
-    var list = $('practice-set-list');
-    list.innerHTML = '';
-    practiceSets().forEach(function (set) {
-      var btn = el('button', 'row-btn');
-      btn.type = 'button';
-      var main = el('span', 'row-main');
-      main.appendChild(el('b', null, set.label + ' 세트'));
-      main.appendChild(el('span', null, set.words.length + '단어 · ' +
-        window.Quiz.MODES.length + '가지 형식'));
-      btn.appendChild(main);
-      btn.appendChild(el('span', 'row-n', '›'));
-      btn.addEventListener('click', function () { renderModes(set.id); });
-      list.appendChild(btn);
-    });
-    go('practice');
-  }
-
-  // 2단: 고른 세트의 형식 목록 — 여기서 고른 형식으로 그 세트만 출제된다
-  function renderModes(setId) {
-    var set = window.Conquer.getSet(setId);
-    if (!set) return;
-    $('modes-title').textContent = set.label + ' 세트';
-    $('modes-n').textContent = set.words.length + '단어';
-
+  // 1단: 홈의 형식 목록 — 단어 수는 전 세트를 합산해 보여준다
+  function renderModeList() {
     var list = $('mode-list');
     list.innerHTML = '';
     window.Quiz.MODES.forEach(function (m) {
@@ -144,20 +117,48 @@
       main.appendChild(el('b', null, m.label));
       main.appendChild(el('span', null, m.sub));
       row.appendChild(main);
-      // 출제 가능 단어 수는 세트 기준으로 센다
-      row.appendChild(el('span', 'row-n',
-        window.Quiz.availableCount(m.id, set.words) + '단어'));
-      row.addEventListener('click', function () { startSession(m.id, null, set.id); });
+      row.appendChild(el('span', 'row-n', window.Quiz.availableCount(m.id) + '단어'));
+      row.addEventListener('click', function () { renderModeSets(m.id); });
       list.appendChild(row);
     });
-
-    $('modes-note').textContent =
-      set.label + ' 세트 ' + set.words.length + '단어를 통째로 풀며, ' +
-      '진행 바를 드래그해 원하는 문제로 이동할 수 있습니다.';
-    go('modes');
   }
 
-  $('btn-back-practice').addEventListener('click', function () { renderPracticeSets(); });
+  // 2단: 고른 형식의 세트 목록 — 여기서 고른 세트만 출제된다
+  function renderModeSets(modeId) {
+    var mode = modeById(modeId);
+    if (!mode) return;
+    $('mode-sets-title').textContent = mode.label;
+    $('mode-sets-n').textContent = mode.sub;
+    // 조사가 형식 이름마다 달라지므로(4지선다로 / 문장 빈칸으로) 이름을 문장에 넣지 않는다
+    $('mode-sets-note').textContent = '세트를 골라 통째로 풉니다.';
+
+    var list = $('mode-set-list');
+    list.innerHTML = '';
+    practiceSets().forEach(function (set) {
+      // 이 형식으로 출제 가능한 단어 수는 세트마다 다르다
+      // (예: 구·표현에는 예문이 없어 문장 빈칸에서 빠진다)
+      var n = window.Quiz.availableCount(modeId, set.words);
+      var btn = el('button', 'row-btn');
+      btn.type = 'button';
+      var main = el('span', 'row-main');
+      main.appendChild(el('b', null, set.label + ' 세트'));
+      // 이 형식으로 못 내는 단어가 있을 때만 전체 수를 덧붙인다 (356단어 / 전체 396)
+      main.appendChild(el('span', null, n === set.words.length
+        ? n + '단어'
+        : n + '단어 / 전체 ' + set.words.length));
+      btn.appendChild(main);
+      if (n) {
+        btn.appendChild(el('span', 'row-n', '›'));
+        btn.addEventListener('click', function () { startSession(modeId, null, set.id); });
+      } else {
+        // 이 형식으로 낼 수 있는 단어가 없는 세트는 눌러도 막다른 길이다
+        btn.appendChild(el('span', 'row-n', '출제 불가'));
+        btn.disabled = true;
+      }
+      list.appendChild(btn);
+    });
+    go('mode-sets');
+  }
 
   // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
   $('btn-reset').addEventListener('click', function () {
@@ -598,7 +599,7 @@
 
   function go(name) {
     ['home', 'quiz', 'result', 'wrong', 'words', 'block',
-      'sets', 'chapters', 'practice', 'modes'].forEach(function (n) {
+      'sets', 'chapters', 'mode-sets'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
     if (name !== 'quiz') $('conquer-grid').innerHTML = '';
