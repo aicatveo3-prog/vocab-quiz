@@ -403,6 +403,19 @@ b,strong{font-weight:600}
 .hero-alt .hero-n{color:var(--ng);opacity:1;font-weight:600}
 .hero-alt .hero-sub{color:var(--dim);opacity:1}
 
+/* ══════════ 계정 · 동기화 ══════════ */
+.acct{background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:14px 16px}
+.acct-row{display:flex;align-items:center;gap:12px}
+.acct-who{flex:1;min-width:0;font-size:14px;font-weight:600;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acct-btn{flex:0 0 auto;background:var(--surface-2);border:1px solid var(--line-2);
+  color:var(--txt);border-radius:var(--r-sm);padding:8px 14px;
+  font-size:13px;font-weight:600;white-space:nowrap;transition:all .12s}
+.acct-btn:hover{border-color:var(--accent);color:var(--accent)}
+.acct-note{margin:8px 0 0;font-size:12px;color:var(--dim);line-height:1.5}
+.acct-note.is-bad{color:var(--ng)}
+
 /* ══════════ 저장(북마크) ══════════
    오답(--ng)은 "틀려서 자동으로 들어온 것", 저장(--accent)은 "내가 직접 담은 것".
    색으로 갈라야 두 목록이 헷갈리지 않는다. */

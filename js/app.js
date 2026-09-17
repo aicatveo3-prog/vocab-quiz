@@ -160,6 +160,67 @@
     go('mode-sets');
   }
 
+  /* ── 계정 · 동기화 ────────────────────────────
+     로그인은 선택이다. 안 해도 앱은 지금까지처럼 완전히 동작한다.
+     동기화 실패를 사용자에게 알리기만 하고 학습을 막지는 않는다. */
+
+  function timeAgo(ts) {
+    if (!ts) return '';
+    var s = Math.floor((Date.now() - ts) / 1000);
+    if (s < 60) return '방금';
+    if (s < 3600) return Math.floor(s / 60) + '분 전';
+    if (s < 86400) return Math.floor(s / 3600) + '시간 전';
+    return Math.floor(s / 86400) + '일 전';
+  }
+
+  function renderAccount(st) {
+    var who = $('acct-who');
+    var btn = $('btn-signin');
+    var note = $('acct-note');
+    note.classList.remove('is-bad');
+
+    if (!st.available) {
+      who.textContent = '동기화를 쓸 수 없음';
+      btn.style.display = 'none';
+      note.textContent = st.lastError || 'Firebase에 연결할 수 없습니다. 기록은 이 기기에 그대로 저장됩니다.';
+      note.classList.add('is-bad');
+      return;
+    }
+
+    btn.style.display = '';
+    if (!st.user) {
+      who.textContent = '로그인하지 않음';
+      btn.textContent = 'Google로 로그인';
+      note.textContent = st.lastError || '로그인하면 폰과 PC의 기록이 자동으로 합쳐집니다.';
+      if (st.lastError) note.classList.add('is-bad');
+      return;
+    }
+
+    who.textContent = st.user.email || st.user.name || '로그인됨';
+    btn.textContent = '로그아웃';
+
+    if (st.lastError) {
+      note.textContent = st.lastError + ' (기록은 이 기기에 안전하게 있습니다)';
+      note.classList.add('is-bad');
+    } else if (st.sending) {
+      note.textContent = '동기화 중…';
+    } else if (st.dirty) {
+      note.textContent = '변경된 내용이 있습니다. 잠시 뒤 또는 앱을 벗어날 때 저장됩니다.';
+    } else if (st.lastSyncedAt) {
+      note.textContent = '동기화됨 · ' + timeAgo(st.lastSyncedAt);
+    } else {
+      note.textContent = '로그인됨.';
+    }
+  }
+
+  $('btn-signin').addEventListener('click', function () {
+    var st = window.Sync.status();
+    if (st.user) window.Sync.signOut();
+    else window.Sync.signIn();
+  });
+
+  window.Sync.onChange(renderAccount);
+
   /* ── 기록 백업 (내보내기 / 가져오기) ──────────────
      로그인 없이 기록 유실을 막는 장치. 직렬화·병합은 Store가 담당하고
      여기서는 파일 입출력만 한다. 나중에 서버 동기화를 붙일 때도
@@ -1054,6 +1115,7 @@
   /* ── 단어장 ───────────────────────────────── */
   function renderWords() {
     renderHeatmap();
+    renderAccount(window.Sync.status());
     var f = $('word-filters');
     f.innerHTML = '';
 
@@ -1139,6 +1201,19 @@
       navigator.serviceWorker.register('sw.js').catch(function () { /* 무시 */ });
     });
   }
+
+  /* ── 동기화 시작 ──────────────────────────────
+     Store 변경 알림을 걸고, 이탈 시 flush를 등록한다. 이 시점에는 아직
+     Firebase SDK가 없을 수 있다(defer로 늦게 온다). SDK가 준비되면
+     initFirebase()가 전송 계층을 붙인다. 실패해도 앱은 그대로 돌아간다. */
+  window.Sync.start();
+
+  function bootFirebase() {
+    window.Sync.initFirebase();
+    renderAccount(window.Sync.status());
+  }
+  if (window.firebase) bootFirebase();
+  else window.addEventListener('load', bootFirebase);
 
   renderHome();
 })();
