@@ -604,6 +604,7 @@
 
     // 오답 노트는 출처와 무관하게 한 곳에 모이므로,
     // "챕터 단어 ∩ 오답 노트" 교집합만 구하면 챕터별 오답이 그대로 나온다.
+    // 단, 그 교집합을 아직 풀지 않은 챕터에까지 보여주면 안 된다 (아래 played 참고).
     var wrongSet = {};
     window.Store.wrongList().forEach(function (w) { wrongSet[w] = true; });
 
@@ -621,6 +622,17 @@
         if (setWrong.indexOf(w) === -1) setWrong.push(w);
       });
 
+      /* 아직 풀지 않은 챕터에는 오답을 내보내지 않는다.
+         오답 노트는 출처를 가리지 않으므로, 개별 연습(396단어 통째로)이나
+         짝 맞추기에서 틀린 단어가 한 번도 열어보지 않은 챕터에까지 빨간 숫자로
+         붙는다. 그러면 목록만 보고는 내가 푼 챕터인지 알 수 없다.
+         이어풀기 스냅샷은 문제를 하나라도 풀어야 생기므로(미리보기만 보고
+         나가면 생기지 않는다) 별도 기록 없이 "푼 챕터" 표시로 그대로 쓴다.
+         → 빨간 숫자가 있는 챕터 = 내가 정복 모드로 풀어본 챕터. */
+      var played = !!window.Store.loadSession(
+        window.Store.sessionKey('conquer', null, setId, ch.index));
+      var showWrong = played && chWrong.length > 0;
+
       var pair = el('div', 'row-pair');
 
       var btn = el('button', 'row-btn');
@@ -630,7 +642,7 @@
       main.appendChild(el('span', null, ch.from + ' ~ ' + ch.to + '  (' + ch.rangeText + ')'));
       btn.appendChild(main);
       var n = el('span', 'row-n', ch.words.length + '단어');
-      if (chWrong.length) {
+      if (showWrong) {
         n.appendChild(el('span', 'row-wrong', ' · 오답 ' + chWrong.length));
       }
       btn.appendChild(n);
@@ -639,9 +651,9 @@
 
       // 오답이 없는 챕터에도 같은 폭의 빈 슬롯을 둔다.
       // 그래야 행마다 '20단어'가 같은 위치에서 끝나 목록이 흔들리지 않는다.
-      var side = el('button', 'row-side' + (chWrong.length ? '' : ' is-empty'), '복습');
+      var side = el('button', 'row-side' + (showWrong ? '' : ' is-empty'), '복습');
       side.type = 'button';
-      if (chWrong.length) {
+      if (showWrong) {
         side.title = '챕터 ' + ch.label + '의 오답 ' + chWrong.length + '단어만 다시 풀기';
         side.setAttribute('aria-label', side.title);
         side.addEventListener('click', function () {
