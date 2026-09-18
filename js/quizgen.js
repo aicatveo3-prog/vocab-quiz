@@ -191,7 +191,8 @@ window.Quiz = (function () {
   /** 낮을수록 먼저 출제 */
   function priorityScore(w) {
     var info = window.Store.info(w.word);
-    var score = info.m * 10;                         // 숙련도 낮은 단어 우선
+    // 오답 노트 차수가 높은 단어(잘 안 외워지는 단어)를 먼저 낸다
+    var score = -(window.Store.tier(w.word) * 10);
     if (info.seen === 0) score -= 3;                 // 아직 안 본 단어 약간 우선
     if (info.lastWrong && Date.now() - info.lastWrong < 7 * 864e5) score -= 15; // 최근 오답 강하게 우선
     score += Math.random() * 12;                     // 매번 같은 순서가 되지 않게

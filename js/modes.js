@@ -4,6 +4,8 @@
  * 각 렌더러는 ctx를 통해 결과를 app.js에 알린다.
  *   ctx.resolve(correct, payload)  선택형 4개 모드 — 한 문제 종료
  *   ctx.boardDone(stats)           짝 맞추기 — 보드 클리어
+ *   ctx.reviewTier                 오답 노트 복습 차수(1~3). 쌍별 오답을 기록할 때
+ *                                  넘겨야 다음 차수로 승급된다.
  */
 window.Modes = (function () {
   function el(tag, cls, text) {
@@ -350,7 +352,7 @@ window.Modes = (function () {
         mistakes++;
         if (wrongWords.indexOf(a._key) === -1) wrongWords.push(a._key);
         // 도입 보드에서 틀린 것은 아직 배우지 않은 상태이므로 벌점을 주지 않는다
-        if (!noRecord) window.Store.record(a._key, false);
+        if (!noRecord) window.Store.record(a._key, false, ctx.reviewTier);
         a.classList.add('is-bad');
         b.classList.add('is-bad');
         updateHead();

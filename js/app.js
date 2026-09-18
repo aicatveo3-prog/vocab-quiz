@@ -18,8 +18,10 @@
     cursor: -1,
     correct: 0,
     wrongWords: [],
-    // 오답 복습 세션인지. true면 맞힌 단어를 오답 노트에서 지운다.
-    isReview: false,
+    /* 오답 노트 복습 중이면 그 차수(1~3), 아니면 null.
+       boolean으로 두면 "몇 차 복습인가"를 알 수 없어 승급이 불가능하다. */
+    reviewTier: null,
+    wrongTier: 1,          // 오답 노트 화면에서 보고 있는 차수
     wordFilter: { status: 'all', level: 'all' }
   };
 
@@ -70,13 +72,13 @@
     line.appendChild(el('b', 'tnum', String(s.streak)));
     line.appendChild(document.createTextNode('일'));
 
-    // 진척도 — 바 하나 + 숫자 하나
-    $('stat-mastered').textContent = s.mastered;
+    /* 진척도 — 한 번이라도 푼 단어 비율.
+       예전에는 숙련도(0~5)로 '마스터'를 셌지만, 오답 노트가 3차 구조로
+       "얼마나 안 외워지는가"를 표현하게 되어 숙련도와 역할이 겹쳤다.
+       두 체계가 같은 것을 다르게 말하면 헷갈리므로 숙련도를 없앴다. */
+    $('stat-studied-n').textContent = s.studied;
     $('stat-total').textContent = '/ ' + s.total;
-    $('stat-studied').textContent = s.studied;
-    $('bar-mastered').style.width = (s.mastered / s.total) * 100 + '%';
-    $('bar-studied').style.width =
-      Math.max(0, (s.studied - s.mastered) / s.total) * 100 + '%';
+    $('bar-studied').style.width = (s.studied / s.total) * 100 + '%';
 
     renderModeList();
     renderHomeAccount(window.Sync.status());
@@ -87,15 +89,19 @@
     }, 0);
     $('conquer-n').textContent = totalChapters + '챕터';
 
-    var wrongN = window.Store.wrongList().length;
+    var wc = window.Store.wrongCounts();
+    var wrongN = wc[1];
     var badge = $('wrong-badge');
     badge.textContent = wrongN;
     badge.classList.toggle('is-zero', wrongN === 0);
 
-    // 오답 노트 카드 — 틀린 것이 있을 때만 내보낸다
+    // 오답 노트 카드 — 차수별 개수를 한눈에. 2·3차는 있을 때만 덧붙인다.
     var card = $('wrong-card');
     card.style.display = wrongN ? '' : 'none';
-    $('wrong-card-n').textContent = wrongN + '단어';
+    var parts = ['1차 ' + wc[1]];
+    if (wc[2]) parts.push('2차 ' + wc[2]);
+    if (wc[3]) parts.push('3차 ' + wc[3]);
+    $('wrong-card-n').textContent = parts.join(' · ');
   }
 
   /** 단어가 들어 있는 세트만 — 아직 비어 있는 세트는 내보내지 않는다 */
@@ -338,7 +344,11 @@
   /* ── 세션 시작 (개별 연습) ─────────────────────
      세트 전체를 한 번에 출제한다. 모든 문제를 미리 만들어 두어야
      진행 바 드래그로 아무 문제로나 자유롭게 이동할 수 있다. */
-  function startSession(modeId, restrictTo, setId) {
+  /**
+   * @param tier 오답 노트 복습이면 그 차수(1~3). 승급 판정에 쓰인다.
+   *   넘기지 않으면 1차로 본다.
+   */
+  function startSession(modeId, restrictTo, setId, tier) {
     var review = !!(restrictTo && restrictTo.length);
 
     // 오답 복습은 세트를 가리지 않는다 — 틀린 단어가 여러 세트에 걸쳐 있다.
@@ -372,7 +382,7 @@
     state.session = session;
     state.modeId = modeId;
     state.restrictTo = restrictTo;
-    state.isReview = review;
+    state.reviewTier = review ? (tier || 1) : null;
     // 세션 키에 그대로 들어간다. A는 'A'를 유지해야 기존 저장 세션이 이어진다.
     state.setName = review ? '오답' : set.id;
     state.correct = 0;
@@ -409,7 +419,11 @@
      @param words 복습할 단어 이름 배열
      @param title 화면에 표시할 이름
      @param back  완료 후 돌아갈 화면을 여는 함수 */
-  function startReviewSession(words, title, back) {
+  /**
+   * @param tier 오답 노트 복습이면 그 차수(1~3). 챕터·결과 화면에서 불릴 때는
+   *   1차로 본다 (그 단어들은 방금 일반 연습에서 틀린 것이므로).
+   */
+  function startReviewSession(words, title, back, tier) {
     var objs = (words || []).map(function (w) { return WORD_INDEX[w]; }).filter(Boolean);
     if (!objs.length) {
       alert('복습할 오답이 없습니다.');
@@ -426,7 +440,7 @@
     state.session = null;
     state.modeId = null;
     state.restrictTo = sess.reviewWords;
-    state.isReview = true;
+    state.reviewTier = tier || 1;
     state.conquerSession = sess;
     state.slides = sess.slides;
     state.cursor = -1;          // 미리보기부터
@@ -478,6 +492,8 @@
         showBoardFeedback(slide);
       } else {
         window.Modes.match.render(slide.q, body, {
+          // 쌍별 기록은 modes.js가 한다. 승급 판정을 위해 차수를 넘긴다.
+          reviewTier: state.reviewTier,
           boardDone: function (stats) { onBoardAnswer(slide, stats); }
         });
       }
@@ -500,21 +516,19 @@
     slide.correct = correct;
 
     var q = slide.q;
-    window.Store.record(q.word, correct);
+    /* 차수를 함께 넘긴다. 복습에서 틀렸으면 Store가 다음 차수로 올린다.
+       맞힌 경우에는 아무 일도 일어나지 않는다 — 오답 노트에서 사라지지 않는다. */
+    window.Store.record(q.word, correct, state.reviewTier);
     if (correct) state.correct++;
     else if (state.wrongWords.indexOf(q.word) === -1) state.wrongWords.push(q.word);
 
-    // 오답 복습에서 맞히면 오답 노트에서 지운다 (개별 연습·정복 복습 공통).
-    // 일반 연습에서 맞힌 것만으로는 지우지 않는다 — 복습으로 확인해야 비워진다.
-    if (correct && state.isReview) window.Store.clearWrong(q.word);
-
-    if (state.flow === 'conquer') updateHead();   // 정복 모드는 강등 없이 기록만
+    if (state.flow === 'conquer') updateHead();
     showFeedbackBox(slide);
     renderNav();
     persistSession();
   }
 
-  /* 짝 맞추기 보드 응답 (숙련도는 modes.js에서 쌍별로 이미 기록됨) */
+  /* 짝 맞추기 보드 응답 (쌍별 기록은 modes.js에서 이미 했다) */
   function onBoardAnswer(slide, stats) {
     slide.answered = true;
     slide.boardStats = stats;
@@ -523,15 +537,6 @@
     stats.wrongWords.forEach(function (w) {
       if (state.wrongWords.indexOf(w) === -1) state.wrongWords.push(w);
     });
-
-    // 오답 복습에서는 한 번도 틀리지 않고 맞춘 쌍만 오답 노트에서 지운다.
-    // 보드 단위가 아니라 단어 단위로 판정해야 한 단어 실수로 나머지가 남지 않는다.
-    if (state.isReview) {
-      var missed = stats.wrongWords || [];
-      (slide.q.words || []).forEach(function (w) {
-        if (missed.indexOf(w) === -1) window.Store.clearWrong(w);
-      });
-    }
 
     if (state.flow === 'conquer') updateHead();
     showBoardFeedback(slide);
@@ -906,7 +911,7 @@
     state.session = null;
     state.modeId = null;
     state.restrictTo = null;
-    state.isReview = false;
+    state.reviewTier = null;      // 정복 챕터는 복습이 아니다
     state.conquerSession = sess;
     state.slides = sess.slides;
     state.cursor = -1;   // 미리보기부터 시작
@@ -1051,8 +1056,8 @@
     var ring = $('score-ring');
     ring.classList.toggle('is-ok', answered > 0 && pct >= 80);
     ring.classList.toggle('is-ng', answered > 0 && pct < 50);
-    $('result-title').textContent = state.isReview
-      ? modeById(state.modeId).label + ' · 오답 복습'
+    $('result-title').textContent = state.reviewTier
+      ? modeById(state.modeId).label + ' · ' + state.reviewTier + '차 오답 복습'
       : modeById(state.modeId).label + ' · ' + state.setName + ' 세트';
     $('result-sub').textContent = answered
       ? (answered + unit + ' 중 ' + state.correct + ' 정답 · 전체 ' + state.slides.length + unit +
@@ -1088,47 +1093,71 @@
       retry.onclick = function () { startSession(retryMode, wrongCopy); };
     }
 
-    $('btn-again').textContent = state.isReview
-      ? '오답 노트 전체 다시 풀기' : '같은 모드로 한 번 더';
+    $('btn-again').textContent = state.reviewTier
+      ? state.reviewTier + '차 오답 전체 다시 풀기' : '같은 모드로 한 번 더';
 
     go('result');
   }
 
   $('btn-again').addEventListener('click', function () {
-    if (!state.isReview) { startSession(state.modeId, null, state.setName); return; }
-    // 복습 세션의 "한 번 더"는 남아 있는 오답 전체를 뜻한다.
+    if (!state.reviewTier) { startSession(state.modeId, null, state.setName); return; }
+    // 복습 세션의 "한 번 더"는 그 차수에 남아 있는 오답 전체를 뜻한다.
     // 빈 배열을 넘기면 세트 전체(396문제)가 시작되므로 반드시 걸러낸다.
-    var remain = window.Store.wrongList();
+    var tier = state.reviewTier;
+    var remain = window.Store.wrongList(tier);
     if (!remain.length) {
-      alert('오답 노트가 비었습니다. 완벽합니다!');
-      go('home');
+      alert(tier + '차 오답 노트가 비었습니다.');
+      go('wrong');
       return;
     }
-    startSession(state.modeId, remain);
+    startSession(state.modeId, remain, null, tier);
   });
 
   /* ── 오답 노트 ─────────────────────────────── */
   function renderWrong() {
-    var wrong = window.Store.wrongList();
+    var counts = window.Store.wrongCounts();
+    var tier = state.wrongTier;
+    var wrong = window.Store.wrongList(tier);
+
+    // 차수 전환 칩 — 1차는 2·3차 단어를 모두 포함한다
+    var tiers = $('wrong-tiers');
+    tiers.innerHTML = '';
+    for (var t = 1; t <= window.Store.MAX_TIER; t++) {
+      (function (n) {
+        var chip = el('button', 'chip' + (tier === n ? ' is-on' : ''),
+          n + '차 ' + counts[n]);
+        chip.type = 'button';
+        chip.title = n === 1
+          ? '틀린 단어 전체 (2·3차 포함)'
+          : n + '차 — ' + (n - 1) + '차 복습에서 또 틀린 단어';
+        chip.addEventListener('click', function () {
+          state.wrongTier = n;
+          renderWrong();
+        });
+        tiers.appendChild(chip);
+      })(t);
+    }
+
     var chips = $('wrong-modes');
     chips.innerHTML = '';
-    $('wrong-count').textContent = wrong.length + '단어';
+    $('wrong-count').textContent = tier + '차 · ' + wrong.length + '단어';
 
     var mixed = $('btn-wrong-mixed');
     if (!wrong.length) {
       mixed.style.display = 'none';
       $('wrong-modes-label').style.display = 'none';
       $('wrong-list').innerHTML = '';
-      $('wrong-list').appendChild(el('div', 'empty',
-        '오답 노트가 비어 있습니다. 틀린 단어는 여기에 모입니다.'));
+      $('wrong-list').appendChild(el('div', 'empty', tier === 1
+        ? '오답 노트가 비어 있습니다. 틀린 단어와 저장한 단어가 여기에 모입니다.'
+        : tier + '차가 비어 있습니다. ' + (tier - 1) + '차 복습에서 또 틀리면 여기로 올라옵니다.'));
       return;
     }
 
     // 기본 = 정복 방식 혼합 복습. 한 단어를 여러 각도로 물어 확실히 굳힌다.
     mixed.style.display = '';
-    mixed.textContent = '섞어서 복습 · ' + wrong.length + '단어';
+    mixed.textContent = tier + '차 섞어서 복습 · ' + wrong.length + '단어';
     mixed.onclick = function () {
-      startReviewSession(wrong, '오답 노트', function () { go('wrong'); });
+      startReviewSession(wrong, tier + '차 오답', function () { go('wrong'); }, tier);
     };
 
     $('wrong-modes-label').style.display = '';
@@ -1139,7 +1168,7 @@
       var chip = el('button', 'chip', m.label + ' ' + eligibleWrong.length);
       chip.type = 'button';
       chip.addEventListener('click', function () {
-        startSession(m.id, wrong);
+        startSession(m.id, wrong, null, tier);
       });
       chips.appendChild(chip);
     });
@@ -1147,8 +1176,26 @@
     var list = $('wrong-list');
     list.innerHTML = '';
     wrong.forEach(function (w) {
-      list.appendChild(wordRow(WORD_INDEX[w], true));
+      list.appendChild(wrongRow(w));
     });
+  }
+
+  /** 오답 노트 한 줄 — 단어 정보 + ✕ 삭제.
+      맞혀도 자동으로 빠지지 않으므로 직접 뺄 수단이 필요하다. */
+  function wrongRow(word) {
+    var row = wordRow(WORD_INDEX[word], true);
+    var del = el('button', 'row-del', '✕');
+    del.type = 'button';
+    del.title = word + '을(를) 오답 노트에서 빼기';
+    del.setAttribute('aria-label', del.title);
+    del.addEventListener('click', function (e) {
+      e.stopPropagation();
+      window.Store.removeWrong(word);
+      renderWrong();
+    });
+    // 첫 줄(단어 · 차수 · 저장) 오른쪽 끝에 붙인다
+    if (row.children[0]) row.children[0].appendChild(del);
+    return row;
   }
 
   /* ── 단어장 ───────────────────────────────── */
@@ -1159,11 +1206,13 @@
     f.innerHTML = '';
 
     var savedN = window.Store.savedList().length;
+    var wc = window.Store.wrongCounts();
+    // 숙련도를 없앴으므로 '학습 중'·'마스터' 대신 오답 차수로 가른다
     var statuses = [
       { id: 'all', label: '전체' },
       { id: 'new', label: '미학습' },
-      { id: 'learning', label: '학습 중' },
-      { id: 'mastered', label: '마스터' },
+      { id: 'studied', label: '학습함' },
+      { id: 'wrong', label: '오답' + (wc[1] ? ' ' + wc[1] : '') },
       { id: 'saved', label: '★ 저장' + (savedN ? ' ' + savedN : '') }
     ];
     statuses.forEach(function (s) {
@@ -1194,8 +1243,8 @@
       var info = window.Store.info(w.word);
       var st = state.wordFilter.status;
       if (st === 'new' && info.seen > 0) return false;
-      if (st === 'learning' && !(info.seen > 0 && info.m < window.Store.MAX_MASTERY)) return false;
-      if (st === 'mastered' && info.m < window.Store.MAX_MASTERY) return false;
+      if (st === 'studied' && !(info.seen > 0)) return false;
+      if (st === 'wrong' && window.Store.tier(w.word) < 1) return false;
       if (st === 'saved' && !window.Store.isSaved(w.word)) return false;
       if (state.wordFilter.level !== 'all' && w.level !== state.wordFilter.level) return false;
       return true;
@@ -1219,11 +1268,15 @@
     var top = el('div', 'li-top');
     top.appendChild(el('b', null, w.word));
     top.appendChild(el('span', 'li-tag', w.pos + ' · ' + w.level));
-    var dots = el('span', 'li-m');
-    for (var i = 0; i < window.Store.MAX_MASTERY; i++) {
-      dots.appendChild(el('i', i < info.m ? 'on' : ''));
+    // 숙련도 점 5개를 없애고, 대신 오답 노트 차수를 보여준다
+    var t = window.Store.tier(w.word);
+    var badge = el('span', 'li-tier');
+    if (t) {
+      badge.className = 'li-tier is-t' + t;
+      badge.textContent = t + '차';
+      badge.title = t + '차 오답 노트에 있습니다';
     }
-    top.appendChild(dots);
+    top.appendChild(badge);
     top.appendChild(saveToggle(w.word));
     row.appendChild(top);
 

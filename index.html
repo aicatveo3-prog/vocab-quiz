@@ -27,17 +27,13 @@
     <!-- 오늘 현황 — 한 줄 -->
     <p class="today" id="today-line"></p>
 
-    <!-- 진척도 — 바 하나 + 숫자 하나 -->
+    <!-- 진척도 — 한 번이라도 푼 단어 비율 -->
     <div class="prog">
       <div class="prog-top">
-        <span class="prog-label">마스터</span>
-        <span class="prog-val"><b id="stat-mastered">0</b><span id="stat-total">/ 0</span></span>
+        <span class="prog-label">학습한 단어</span>
+        <span class="prog-val"><b id="stat-studied-n">0</b><span id="stat-total">/ 0</span></span>
       </div>
-      <div class="bar"><i id="bar-mastered"></i><i id="bar-studied"></i></div>
-      <div class="prog-legend">
-        <span><i class="dot dot-ok"></i>마스터</span>
-        <span><i class="dot dot-ac"></i>학습 중 <b id="stat-studied">0</b></span>
-      </div>
+      <div class="bar"><i id="bar-studied"></i></div>
     </div>
 
     <!-- 주역 -->
@@ -55,7 +51,7 @@
         <b>오답 노트</b>
         <span class="hero-n" id="wrong-card-n"></span>
       </span>
-      <span class="hero-sub">틀린 단어만 모아 다시 풀기 · 맞히면 목록에서 사라집니다</span>
+      <span class="hero-sub">틀린 단어를 3차까지 누적해 반복합니다 · 맞혀도 사라지지 않습니다</span>
     </button>
 
     <!-- 개별 연습 — 형식을 먼저 고르고, 다음 화면에서 세트를 고른다 -->
@@ -161,7 +157,9 @@
       <h2>오답 노트</h2>
       <span class="head-n" id="wrong-count"></span>
     </div>
-    <p class="site-sub pad">틀린 단어만 모아 다시 출제합니다. 맞히면 목록에서 사라집니다.</p>
+    <p class="site-sub pad">맞혀도 사라지지 않습니다. 복습에서 또 틀리면 다음 차수로 올라갑니다.</p>
+    <!-- 차수 전환 칩 — app.js가 채운다 -->
+    <div class="chip-row pad" id="wrong-tiers"></div>
     <button type="button" class="btn btn-primary" id="btn-wrong-mixed" style="display:none"></button>
     <p class="section-title" id="wrong-modes-label" style="display:none">한 가지 형식으로만 풀기</p>
     <div id="wrong-modes" class="chip-row pad"></div>
