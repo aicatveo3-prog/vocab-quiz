@@ -6,6 +6,7 @@
  *   ctx.boardDone(stats)           짝 맞추기 — 보드 클리어
  *   ctx.reviewTier                 오답 노트 복습 차수(1~3). 쌍별 오답을 기록할 때
  *                                  넘겨야 다음 차수로 승급된다.
+ *   ctx.review.onRetry             이미 답한 문제를 그 자리에서 다시 풀겠다는 요청
  */
 window.Modes = (function () {
   function el(tag, cls, text) {
@@ -13,6 +14,23 @@ window.Modes = (function () {
     if (cls) n.className = cls;
     if (text !== undefined) n.textContent = text;
     return n;
+  }
+
+  /**
+   * 이미 답한 문제·보드 위에 붙는 안내.
+   * ctx.review.onRetry를 주면 "다시 풀기" 버튼을 함께 낸다. 안내와 그 해결책이
+   * 같은 자리에 있어야 막다른 길처럼 보이지 않는다.
+   */
+  function reviewNote(onRetry, doneText, lockText, btnLabel) {
+    var note = el('div', 'review-note' + (onRetry ? ' has-retry' : ''));
+    note.appendChild(el('span', 'rn-text', onRetry ? doneText : lockText));
+    if (typeof onRetry === 'function') {
+      var b = el('button', 'rn-retry', btnLabel);
+      b.type = 'button';
+      b.addEventListener('click', onRetry);
+      note.appendChild(b);
+    }
+    return note;
   }
 
   /* ── 문항 지시문 / 프롬프트 ───────────────────── */
@@ -121,7 +139,8 @@ window.Modes = (function () {
     var review = ctx.review;
 
     if (review) {
-      body.appendChild(el('div', 'review-note', '지난 문제 — 다시 답할 수 없습니다'));
+      body.appendChild(reviewNote(review.onRetry,
+        '이미 답한 문제입니다', '지난 문제 — 다시 답할 수 없습니다', '다시 풀기'));
     }
 
     var promptWrap = buildPrompt(q);
@@ -241,7 +260,8 @@ window.Modes = (function () {
     var noRecord = q.recordMode === 'none';
 
     if (review) {
-      body.appendChild(el('div', 'review-note', '지난 보드 — 다시 풀 수 없습니다'));
+      body.appendChild(reviewNote(review.onRetry,
+        '이미 클리어한 보드입니다', '지난 보드 — 다시 풀 수 없습니다', '이 보드 다시 풀기'));
     }
 
     var head = el('div', 'match-head');

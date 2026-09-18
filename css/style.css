@@ -315,6 +315,14 @@ b,strong{font-weight:600}
 .review-note{background:var(--surface);border:1px solid var(--line);
   border-radius:var(--r-sm);padding:10px 14px;font-size:12px;color:var(--dim);
   text-align:center;margin-bottom:16px}
+/* 다시 풀기 버튼이 붙으면 글과 버튼을 한 줄에 양쪽으로 편다 */
+.review-note.has-retry{display:flex;align-items:center;gap:10px;text-align:left}
+.review-note .rn-text{flex:1;min-width:0}
+.rn-retry{flex:0 0 auto;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:var(--r-sm);padding:7px 12px;font-size:12px;font-weight:600;
+  color:var(--txt);cursor:pointer;transition:background .12s,border-color .12s}
+.rn-retry:hover{background:var(--accent-soft);border-color:var(--accent)}
+.rn-retry:active{background:var(--accent-soft)}
 .board-summary{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
   padding:28px 20px;text-align:center}
 .board-summary b{display:block;font-size:16px;margin-bottom:4px}
@@ -477,6 +485,9 @@ b,strong{font-weight:600}
 .row-side:active{background:var(--ng-soft)}
 /* 오답이 없는 행 — 자리만 차지하고 보이지 않는다 */
 .row-side.is-empty{visibility:hidden}
+/* '처음부터'는 오답 복습(빨강)과 성격이 다르다 — 조용하게, 글자가 들어갈 만큼만 */
+.row-side.is-restart{flex-basis:68px;color:var(--dim);font-size:12px}
+.row-side.is-restart:hover,.row-side.is-restart:active{background:var(--surface-2);color:var(--txt)}
 
 /* 챕터 행의 오답 개수 */
 .row-wrong{color:var(--ng)}
