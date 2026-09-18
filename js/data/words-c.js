@@ -16,7 +16,7 @@
  * 넘고, 보기 넷을 늘어놓으면 읽을 수 없다. 그래서 대표 뜻 2개만 남긴다.
  * 첫 뜻에는 괄호 설명을 넣지 않는다 — 카드에서 가장 크게 보이는 자리다.
  *
- * 진행 상황: 60/466단어 (calamity ~ celebrity) — 1차.
+ * 진행 상황: 120/466단어 (calamity ~ cite) — 2차.
  */
 window.VOCAB_C = [
   /* ── cal ───────────────────────────────────── */
@@ -255,7 +255,253 @@ window.VOCAB_C = [
 
   { word:"celebrity", pron:"셀레브리티", pos:"n", level:"B1", meanings:["유명 인사","명성"],
     syn:["star","personality","fame"],
-    ex:[{ s:"Sudden {{}} made her private life impossible.", f:"celebrity", ko:"갑작스러운 명성은 그녀의 사생활을 불가능하게 만들었다." }] }
+    ex:[{ s:"Sudden {{}} made her private life impossible.", f:"celebrity", ko:"갑작스러운 명성은 그녀의 사생활을 불가능하게 만들었다." }] },
+
+  { word:"celestial", pron:"설레스셜", pos:"adj", level:"C2", meanings:["천체의","하늘의"],
+    syn:["heavenly","astronomical","stellar"], ant:["earthly"],
+    ex:[{ s:"Ancient sailors navigated by {{}} bodies alone.", f:"celestial", ko:"고대 선원들은 천체만으로 항로를 잡았다." }] },
+
+  { word:"cell", pron:"셀", pos:"n", level:"B1", meanings:["세포","감방"],
+    syn:["unit","chamber","compartment"],
+    ex:[{ s:"A single {{}} can divide into two within hours.", f:"cell", ko:"하나의 세포는 몇 시간 안에 둘로 나뉠 수 있다." }] },
+
+  { word:"celluloid", pron:"셀룰로이드", pos:"n", level:"C2", meanings:["영화 필름","셀룰로이드"],
+    syn:["film","plastic","reel"],
+    ex:[{ s:"Early movies survive only on brittle {{}}.", f:"celluloid", ko:"초기 영화는 부서지기 쉬운 필름으로만 남아 있다." }] },
+
+  /* ── cen · cer ─────────────────────────────── */
+  { word:"censor", pron:"센서", pos:"v", level:"C1", meanings:["검열하다","검열관"],
+    syn:["edit","suppress","expurgate"], ant:["permit"],
+    ex:[{ s:"The regime tried to {{}} every foreign newspaper.", f:"censor", ko:"그 정권은 모든 외국 신문을 검열하려 했다." }] },
+
+  { word:"censorship", pron:"센서십", pos:"n", level:"C1", meanings:["검열","검열 제도"],
+    syn:["suppression","restriction","control"], ant:["freedom"],
+    ex:[{ s:"Writers fled the country to escape {{}}.", f:"censorship", ko:"작가들은 검열을 피해 그 나라를 떠났다." }] },
+
+  { word:"censure", pron:"센셔", pos:"v", level:"C2", meanings:["비난하다","책망"],
+    syn:["condemn","rebuke","reproach"], ant:["praise"],
+    ex:[{ s:"The committee voted to {{}} its own chairman.", f:"censure", ko:"위원회는 자기 위원장을 비난하기로 표결했다." }] },
+
+  { word:"centennial", pron:"센테니얼", pos:"adj", level:"C2", meanings:["100주년의","100년마다의"],
+    syn:["hundredth","anniversary","centenary"],
+    ex:[{ s:"The city planned a {{}} parade for its founding.", f:"centennial", ko:"그 도시는 건립 100주년 행진을 계획했다." }] },
+
+  { word:"central", pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
+    syn:["main","chief","core"], ant:["peripheral"],
+    ex:[{ s:"Trust is {{}} to any lasting friendship.", f:"central", ko:"신뢰는 오래가는 우정의 핵심이다." }],
+    col:[{ p:"central {{}} the whole plan", a:"to", pool:"prep", note:"be central to : ~에 핵심적이다" }] },
+
+  { word:"centralize", pron:"센트럴라이즈", pos:"v", level:"C1", meanings:["중앙집권화하다","한곳에 모으다"],
+    syn:["concentrate","consolidate","unify"], ant:["disperse"],
+    ex:[{ s:"The company decided to {{}} all of its buying.", f:"centralize", ko:"그 회사는 모든 구매를 한곳으로 모으기로 했다." }] },
+
+  { word:"CEO", pron:"씨이오", pos:"n", level:"B2", meanings:["최고경영자"],
+    syn:["executive","president","chief"],
+    ex:[{ s:"The board named a new {{}} within a week.", f:"CEO", ko:"이사회는 일주일 안에 새 최고경영자를 임명했다." }] },
+
+  { word:"ceramic", pron:"서래믹", pos:"n", level:"B2", meanings:["도자기"],
+    syn:["pottery","porcelain","earthenware"],
+    ex:[{ s:"She sells hand-painted {{}} at the market.", f:"ceramics", ko:"그녀는 시장에서 손으로 그린 도자기를 판다." }] },
+
+  { word:"ceremony", pron:"세러모니", pos:"n", level:"B1", meanings:["의식","의례"],
+    syn:["ritual","rite","service"],
+    ex:[{ s:"The graduation {{}} lasted barely an hour.", f:"ceremony", ko:"졸업식은 겨우 한 시간 만에 끝났다." }] },
+
+  { word:"certain", pron:"서튼", pos:"adj", level:"B1", meanings:["확실한","특정한"],
+    syn:["sure","definite","positive"], ant:["doubtful"],
+    ex:[{ s:"Nothing is {{}} until the contract is signed.", f:"certain", ko:"계약서에 서명하기 전까지는 아무것도 확실하지 않다." }],
+    col:[{ p:"certain {{}} the outcome", a:"of", pool:"prep", note:"be certain of : ~을 확신하다" }] },
+
+  { word:"certainty", pron:"서튼티", pos:"n", level:"B2", meanings:["확실성","확신"],
+    syn:["assurance","conviction","surety"], ant:["doubt"],
+    ex:[{ s:"No one can predict the weather with {{}}.", f:"certainty", ko:"누구도 날씨를 확실하게 예측할 수는 없다." }] },
+
+  { word:"certificate", pron:"서티피킷", pos:"n", level:"B1", meanings:["증서","자격증"],
+    syn:["diploma","document","license"],
+    ex:[{ s:"You must show a birth {{}} to apply.", f:"certificate", ko:"신청하려면 출생 증명서를 제시해야 한다." }] },
+
+  { word:"certify", pron:"서티파이", pos:"v", level:"B2", meanings:["증명하다","보증하다"],
+    syn:["verify","attest","confirm"], ant:["deny"],
+    ex:[{ s:"A doctor must {{}} that the patient is fit to fly.", f:"certify", ko:"의사가 그 환자가 비행에 적합하다고 증명해야 한다." }] },
+
+  /* ── cha ───────────────────────────────────── */
+  { word:"challenge", pron:"챌린지", pos:"n", level:"B1", meanings:["도전","난관"],
+    syn:["difficulty","test","obstacle"], ant:["ease"],
+    ex:[{ s:"Feeding the city was the mayor's first {{}}.", f:"challenge", ko:"도시를 먹여 살리는 것이 시장의 첫 난관이었다." }] },
+
+  { word:"challenging", pron:"챌린징", pos:"adj", level:"B2", meanings:["힘든","도전적인"],
+    syn:["demanding","testing","tough"], ant:["effortless"],
+    ex:[{ s:"The course is {{}} but never unfair.", f:"challenging", ko:"그 과정은 힘들지만 결코 불공정하지 않다." }] },
+
+  { word:"chamber", pron:"체임버", pos:"n", level:"B2", meanings:["방","응접실"],
+    syn:["room","hall","compartment"],
+    ex:[{ s:"The king received guests in the inner {{}}.", f:"chamber", ko:"왕은 안쪽 방에서 손님을 맞았다." }] },
+
+  { word:"channel", pron:"채널", pos:"n", level:"B1", meanings:["통로","해협"],
+    syn:["route","passage","strait"],
+    ex:[{ s:"Swimmers cross the {{}} between the two coasts each July.", f:"channel", ko:"수영 선수들은 매년 7월 두 해안 사이의 해협을 건넌다." }] },
+
+  { word:"chaos", pron:"케이아스", pos:"n", level:"B2", meanings:["혼돈","무질서"],
+    syn:["disorder","confusion","turmoil"], ant:["order"],
+    ex:[{ s:"The blackout threw the airport into {{}}.", f:"chaos", ko:"정전은 공항을 혼돈에 빠뜨렸다." }] },
+
+  { word:"chaotic", pron:"케이아틱", pos:"adj", level:"B2", meanings:["무질서한","혼란스러운"],
+    syn:["disordered","confused","turbulent"], ant:["orderly"],
+    ex:[{ s:"His desk is {{}} but he finds everything at once.", f:"chaotic", ko:"그의 책상은 무질서하지만 그는 무엇이든 단번에 찾는다." }] },
+
+  { word:"chapel", pron:"채펄", pos:"n", level:"B2", meanings:["예배실","부속 예배당"],
+    syn:["sanctuary","oratory","shrine"],
+    ex:[{ s:"A tiny {{}} stands at the end of the garden.", f:"chapel", ko:"아주 작은 예배실이 정원 끝에 서 있다." }] },
+
+  { word:"character", pron:"캐릭터", pos:"n", level:"B1", meanings:["특징","등장인물"],
+    syn:["nature","personality","quality"],
+    ex:[{ s:"The narrow streets give the town its {{}}.", f:"character", ko:"좁은 골목들이 그 마을에 특색을 준다." }] },
+
+  { word:"characteristic", pron:"캐릭터리스틱", pos:"n", level:"B2", meanings:["특성","특유의"],
+    syn:["trait","feature","attribute"],
+    ex:[{ s:"Patience is the {{}} that made her a good teacher.", f:"characteristic", ko:"인내는 그녀를 좋은 교사로 만든 특성이었다." }] },
+
+  { word:"characterize", pron:"캐릭터라이즈", pos:"v", level:"B2", meanings:["특징짓다","묘사하다"],
+    syn:["define","distinguish","typify"],
+    ex:[{ s:"Long silences {{}} his later music.", f:"characterize", ko:"긴 침묵이 그의 후기 음악을 특징짓는다." }] },
+
+  { word:"charge", pron:"차지", pos:"v", level:"B1", meanings:["청구하다","충전하다"],
+    syn:["bill","demand","levy"], ant:["refund"],
+    ex:[{ s:"The garage did not {{}} us for the inspection.", f:"charge", ko:"그 정비소는 점검 비용을 우리에게 청구하지 않았다." }],
+    col:[{ p:"charge you {{}} the repair", a:"for", pool:"prep", note:"charge A for B : A에게 B의 값을 청구하다" }] },
+
+  { word:"charity", pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
+    syn:["philanthropy","generosity","aid"], ant:["greed"],
+    ex:[{ s:"All ticket money goes to a local {{}}.", f:"charity", ko:"모든 입장료는 지역 자선 단체로 간다." }] },
+
+  { word:"charlatan", pron:"샬러턴", pos:"n", level:"C2", meanings:["사기꾼","돌팔이"],
+    syn:["fraud","impostor","quack"], ant:["expert"],
+    ex:[{ s:"The so-called doctor turned out to be a {{}}.", f:"charlatan", ko:"이른바 그 의사는 돌팔이로 드러났다." }] },
+
+  { word:"charm", pron:"참", pos:"n", level:"B1", meanings:["매력"],
+    syn:["appeal","allure","attraction"], ant:["repulsion"],
+    ex:[{ s:"The old hotel has a faded {{}} about it.", f:"charm", ko:"그 낡은 호텔에는 퇴색한 매력이 있다." }] },
+
+  { word:"charter", pron:"차터", pos:"v", level:"C1", meanings:["전세 내다","헌장"],
+    syn:["hire","lease","rent"],
+    ex:[{ s:"The team decided to {{}} a bus for the trip.", f:"charter", ko:"그 팀은 여행을 위해 버스를 전세 내기로 했다." }] },
+
+  { word:"chase", pron:"체이스", pos:"v", level:"B1", meanings:["뒤쫓다","추격"],
+    syn:["pursue","follow","hunt"], ant:["flee"],
+    ex:[{ s:"The dog loves to {{}} birds across the lawn.", f:"chase", ko:"그 개는 잔디밭에서 새를 뒤쫓는 것을 좋아한다." }] },
+
+  { word:"chase away", pron:"체이스 어웨이", pos:"phr", level:"B2", meanings:["~을 쫓아내다"],
+    syn:["repel","banish","scatter"], ant:["attract"] },
+
+  { word:"chase down", pron:"체이스 다운", pos:"phr", level:"C1", meanings:["끝까지 쫓다","추적하다"],
+    syn:["track","hunt","trace"], ant:["abandon"] },
+
+  /* ── che · chi ─────────────────────────────── */
+  { word:"chef", pron:"셰프", pos:"n", level:"B1", meanings:["주방장","요리사"],
+    syn:["cook","caterer","culinarian"],
+    ex:[{ s:"The {{}} refused to change a single item on the menu.", f:"chef", ko:"주방장은 메뉴의 어떤 항목도 바꾸기를 거부했다." }] },
+
+  { word:"chemical", pron:"케미컬", pos:"n", level:"B1", meanings:["화학 물질","화학의"],
+    syn:["substance","compound","agent"],
+    ex:[{ s:"The factory dumped a toxic {{}} into the river.", f:"chemical", ko:"그 공장은 유독 화학 물질을 강에 버렸다." }] },
+
+  { word:"chemistry", pron:"케미스트리", pos:"n", level:"B1", meanings:["화학","화학적 성질"],
+    syn:["science","composition","reaction"],
+    ex:[{ s:"She switched from physics to {{}} in her second year.", f:"chemistry", ko:"그녀는 2학년에 물리학에서 화학으로 전공을 바꿨다." }] },
+
+  { word:"chemotherapy", pron:"키모테라피", pos:"n", level:"C1", meanings:["화학 요법"],
+    syn:["treatment","therapy","medication"],
+    ex:[{ s:"He lost his hair during six months of {{}}.", f:"chemotherapy", ko:"그는 6개월간의 화학 요법 동안 머리카락을 잃었다." }] },
+
+  { word:"cherish", pron:"체리시", pos:"v", level:"B2", meanings:["소중히 하다","아끼다"],
+    syn:["treasure","prize","value"], ant:["neglect"],
+    ex:[{ s:"She still {{}} the letters her father sent.", f:"cherishes", ko:"그녀는 아버지가 보낸 편지들을 여전히 소중히 여긴다." }] },
+
+  { word:"chest", pron:"체스트", pos:"n", level:"B1", meanings:["가슴","상자"],
+    syn:["thorax","breast","trunk"],
+    ex:[{ s:"A sharp pain ran across his {{}}.", f:"chest", ko:"날카로운 통증이 그의 가슴을 스쳤다." }] },
+
+  { word:"chilly", pron:"칠리", pos:"adj", level:"B1", meanings:["쌀쌀한","으스스한"],
+    syn:["cool","crisp","frosty"], ant:["warm"],
+    ex:[{ s:"The evening turned {{}} as soon as the sun set.", f:"chilly", ko:"해가 지자마자 저녁이 쌀쌀해졌다." }] },
+
+  { word:"chimney", pron:"침니", pos:"n", level:"B1", meanings:["굴뚝"],
+    syn:["flue","stack","vent"],
+    ex:[{ s:"Smoke rose straight from the {{}} in the still air.", f:"chimney", ko:"고요한 공기 속에서 연기가 굴뚝에서 곧게 올라갔다." }] },
+
+  { word:"choke", pron:"초크", pos:"v", level:"B2", meanings:["질식시키다","숨이 막히다"],
+    syn:["suffocate","strangle","stifle"],
+    ex:[{ s:"Thick smoke began to {{}} the trapped miners.", f:"choke", ko:"짙은 연기가 갇힌 광부들을 질식시키기 시작했다." }] },
+
+  { word:"chop", pron:"찹", pos:"v", level:"B1", meanings:["잘게 썰다","자르다"],
+    syn:["dice","mince","hack"],
+    ex:[{ s:"First {{}} the onions as finely as you can.", f:"chop", ko:"먼저 양파를 할 수 있는 만큼 잘게 썰어라." }] },
+
+  { word:"chore", pron:"초어", pos:"n", level:"B2", meanings:["잡일","따분한 일"],
+    syn:["task","duty","errand"],
+    ex:[{ s:"Washing the dishes is his least favorite {{}}.", f:"chore", ko:"설거지는 그가 가장 싫어하는 잡일이다." }] },
+
+  /* ── chr · chu ─────────────────────────────── */
+  { word:"chromosome", pron:"크로머솜", pos:"n", level:"C1", meanings:["염색체"],
+    syn:["gene","genome","DNA"],
+    ex:[{ s:"A single extra {{}} causes the condition.", f:"chromosome", ko:"단 하나의 여분 염색체가 그 질환을 일으킨다." }] },
+
+  { word:"chronic", pron:"크라닉", pos:"adj", level:"B2", meanings:["만성의","고질적인"],
+    syn:["persistent","lingering","habitual"], ant:["acute"],
+    ex:[{ s:"She has lived with {{}} back pain for years.", f:"chronic", ko:"그녀는 수년간 만성 허리 통증을 안고 살아왔다." }] },
+
+  { word:"chronically", pron:"크라니컬리", pos:"adv", level:"C1", meanings:["만성적으로"],
+    syn:["persistently","constantly","habitually"], ant:["briefly"],
+    ex:[{ s:"The hospital is {{}} short of nurses.", f:"chronically", ko:"그 병원은 만성적으로 간호사가 부족하다." }] },
+
+  { word:"chronicle", pron:"크라니클", pos:"n", level:"C1", meanings:["연대기","역사 기록"],
+    syn:["record","account","annals"],
+    ex:[{ s:"A monk's {{}} is the only source for that year.", f:"chronicle", ko:"어느 수도사의 연대기가 그 해의 유일한 기록이다." }] },
+
+  { word:"chronological", pron:"크라널라지컬", pos:"adj", level:"C1", meanings:["연대순의","시간 순서대로 된"],
+    syn:["sequential","consecutive","ordered"], ant:["random"],
+    ex:[{ s:"Arrange the photographs in {{}} order.", f:"chronological", ko:"사진을 시간 순서대로 배열하라." }] },
+
+  { word:"chronology", pron:"크러날러지", pos:"n", level:"C2", meanings:["연대학","연대기"],
+    syn:["sequence","timeline","order"],
+    ex:[{ s:"Scholars still argue over the {{}} of these events.", f:"chronology", ko:"학자들은 이 사건들의 연대 순서를 두고 여전히 다툰다." }] },
+
+  { word:"chubby", pron:"처비", pos:"adj", level:"B2", meanings:["통통한","토실토실한"],
+    syn:["plump","stout","round"], ant:["skinny"],
+    ex:[{ s:"The baby waved a {{}} hand at the camera.", f:"chubby", ko:"아기가 통통한 손을 카메라에 흔들었다." }] },
+
+  { word:"chuckle", pron:"처클", pos:"v", level:"B2", meanings:["낄낄 웃다","혼자 기뻐하다"],
+    syn:["giggle","snicker","laugh"], ant:["frown"],
+    ex:[{ s:"He began to {{}} at his own mistake.", f:"chuckle", ko:"그는 자신의 실수에 낄낄 웃기 시작했다." }] },
+
+  { word:"chunk", pron:"청크", pos:"n", level:"B2", meanings:["큰 덩어리","상당한 양"],
+    syn:["lump","block","hunk"],
+    ex:[{ s:"A huge {{}} of ice broke off the glacier.", f:"chunk", ko:"거대한 얼음 덩어리가 빙하에서 떨어져 나왔다." }] },
+
+  /* ── cir · cit ─────────────────────────────── */
+  { word:"circulate", pron:"서큘레이트", pos:"v", level:"B2", meanings:["순환하다","유포하다"],
+    syn:["flow","spread","distribute"], ant:["stagnate"],
+    ex:[{ s:"Warm air needs room to {{}} through the house.", f:"circulate", ko:"따뜻한 공기가 집 안을 돌 공간이 필요하다." }] },
+
+  { word:"circulation", pron:"서큘레이션", pos:"n", level:"B2", meanings:["발행 부수","유통"],
+    syn:["distribution","spread","flow"],
+    ex:[{ s:"The magazine's {{}} fell by half in two years.", f:"circulation", ko:"그 잡지의 발행 부수는 2년 만에 절반으로 떨어졌다." }] },
+
+  { word:"circumference", pron:"서컴퍼런스", pos:"n", level:"C1", meanings:["둘레","원주"],
+    syn:["perimeter","boundary","girth"],
+    ex:[{ s:"He measured the {{}} of the tree with a string.", f:"circumference", ko:"그는 끈으로 나무의 둘레를 재었다." }] },
+
+  { word:"circumstance", pron:"서컴스턴스", pos:"n", level:"B2", meanings:["상황","환경"],
+    syn:["situation","condition","context"],
+    ex:[{ s:"Under no {{}} should you open that door.", f:"circumstance", ko:"어떤 상황에서도 그 문을 열어서는 안 된다." }] },
+
+  { word:"circumstantial", pron:"서컴스탠셜", pos:"adj", level:"C2", meanings:["정황적인","부수적인"],
+    syn:["indirect","inferred","incidental"], ant:["direct"],
+    ex:[{ s:"The case rested on {{}} evidence alone.", f:"circumstantial", ko:"그 사건은 정황 증거만에 의지하고 있었다." }] },
+
+  { word:"cite", pron:"사이트", pos:"v", level:"B2", meanings:["인용하다","언급하다"],
+    syn:["quote","mention","reference"],
+    ex:[{ s:"The judge went on to {{}} three earlier rulings.", f:"cite", ko:"판사는 이어 이전 판결 세 건을 인용했다." }] }
 ];
 
 /* ── 반의어 뜻 사전 (병합) ──────────────────────
@@ -263,7 +509,30 @@ window.VOCAB_C = [
    ANT_DICT에 없는 반의어는 뜻 없이 영어만 떠서 무엇인지 알 수 없다.
    ⚠️ 재대입(=)이 아니라 Object.assign으로 합쳐야 A·B 세트 것이 살아남는다. */
 Object.assign(window.ANT_DICT, {
+  "acute":"급성의, 심각한",
   "blessing":"축복, 다행",
+  "briefly":"잠깐, 짧게",
+  "direct":"직접적인",
+  "disperse":"흩어지다, 분산시키다",
+  "doubt":"의심, 의문",
+  "doubtful":"의심스러운, 불확실한",
+  "earthly":"지상의, 세속의",
+  "ease":"쉬움, 편안함",
+  "effortless":"힘이 들지 않는",
+  "expert":"전문가",
+  "flee":"도망치다",
+  "freedom":"자유",
+  "frown":"얼굴을 찡그리다",
+  "greed":"탐욕",
+  "permit":"허용하다",
+  "random":"무작위의",
+  "refund":"환불하다, 환불",
+  "orderly":"정돈된, 질서 있는",
+  "peripheral":"주변의, 부차적인",
+  "repulsion":"혐오, 반발",
+  "skinny":"깡마른",
+  "stagnate":"고이다, 정체되다",
+  "warm":"따뜻한",
   "confirm":"확인하다, 확정하다",
   "continue":"계속하다",
   "evasive":"회피하는, 둘러대는",
