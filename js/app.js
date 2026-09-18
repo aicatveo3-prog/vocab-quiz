@@ -613,8 +613,8 @@
 
   /**
    * 단어 저장(북마크) 토글 버튼. 누르면 즉시 상태가 바뀐다.
-   * 저장하면 1차 오답 노트에도 들어가므로, 옆에 붙은 차수 배지를 같이
-   * 새로 그려야 한다. 그래서 토글 뒤에 부를 콜백을 받는다.
+   * 저장하면 1차 오답 노트에 들어가고 해제하면 다시 빠지므로, 옆에 붙은 차수
+   * 배지를 같이 새로 그려야 한다. 그래서 토글 뒤에 부를 콜백을 받는다.
    */
   function saveToggle(word, onToggle) {
     var btn = el('button', 'save-btn');
@@ -623,8 +623,11 @@
       var on = window.Store.isSaved(word);
       btn.classList.toggle('is-on', on);
       btn.textContent = on ? '★ 저장됨' : '☆ 저장';
+      // 해제했을 때 오답 노트에서도 빠지는지는 단어마다 다르다. 그대로 알려준다.
       btn.title = on
-        ? word + ' 저장 해제 (오답 노트에서는 빠지지 않습니다)'
+        ? (window.Store.noteFromBookmark(word)
+          ? word + ' 저장 해제 — 1차 오답 노트에서도 함께 빠집니다'
+          : word + ' 저장 해제 (틀려서 들어간 단어라 오답 노트에는 남습니다)')
         : word + ' 저장 — 1차 오답 노트에도 들어갑니다';
     }
     paint();
@@ -1211,9 +1214,12 @@
   }
 
   /** 오답 노트 한 줄 — 단어 정보 + ✕ 삭제.
-      맞혀도 자동으로 빠지지 않으므로 직접 뺄 수단이 필요하다. */
+      맞혀도 자동으로 빠지지 않으므로 직접 뺄 수단이 필요하다.
+      북마크로 들어온 단어는 저장을 해제하면 이 줄이 사라지므로 목록을 다시 그린다. */
   function wrongRow(word) {
-    var row = wordRow(WORD_INDEX[word], true);
+    var row = wordRow(WORD_INDEX[word], true, function () {
+      if (window.Store.tier(word) < 1) renderWrong();
+    });
     var del = el('button', 'row-del', '✕');
     del.type = 'button';
     del.title = word + '을(를) 오답 노트에서 빼기';
@@ -1290,7 +1296,12 @@
     items.forEach(function (w) { list.appendChild(wordRow(w, false)); });
   }
 
-  function wordRow(w, showSyn) {
+  /**
+   * 단어 한 줄.
+   * @param onSave 저장 토글 뒤에 부를 콜백. 오답 노트처럼 목록 자체가
+   *   저장 상태에 따라 달라지는 화면이 다시 그리기 위해 넘긴다.
+   */
+  function wordRow(w, showSyn, onSave) {
     if (!w) return el('div');
     var info = window.Store.info(w.word);
     var row = el('div', 'li');
@@ -1302,10 +1313,11 @@
     var badge = tierBadge(w.word);
     top.appendChild(badge);
     top.appendChild(saveToggle(w.word, function () {
-      // 저장하면 1차에 편입되므로 배지를 갱신한다
+      // 저장하면 1차에 들어가고 해제하면 빠질 수 있으므로 배지를 갱신한다
       var fresh = tierBadge(w.word);
       badge.className = fresh.className;
       badge.textContent = fresh.textContent;
+      if (onSave) onSave();
     }));
     row.appendChild(top);
 
