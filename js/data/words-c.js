@@ -16,7 +16,7 @@
  * 넘고, 보기 넷을 늘어놓으면 읽을 수 없다. 그래서 대표 뜻 2개만 남긴다.
  * 첫 뜻에는 괄호 설명을 넣지 않는다 — 카드에서 가장 크게 보이는 자리다.
  *
- * 진행 상황: 180/466단어 (calamity ~ comet) — 3차.
+ * 진행 상황: 240/466단어 (calamity ~ compose) — 4차.
  */
 window.VOCAB_C = [
   /* ── cal ───────────────────────────────────── */
@@ -739,7 +739,252 @@ window.VOCAB_C = [
 
   { word:"comet", pron:"카밋", pos:"n", level:"B2", meanings:["혜성"],
     syn:["meteor","asteroid","fireball"],
-    ex:[{ s:"The {{}} returns every seventy-six years.", f:"comet", ko:"그 혜성은 76년마다 돌아온다." }] }
+    ex:[{ s:"The {{}} returns every seventy-six years.", f:"comet", ko:"그 혜성은 76년마다 돌아온다." }] },
+
+  { word:"comfort zone", pron:"컴포트 존", pos:"n", level:"B2", meanings:["안전지대"],
+    syn:["routine","habit","security"],
+    ex:[{ s:"Real learning happens outside your {{}}.", f:"comfort zone", ko:"진짜 배움은 안전지대 밖에서 일어난다." }] },
+
+  { word:"comic strip", pron:"카믹 스트립", pos:"n", level:"B2", meanings:["연재 만화"],
+    syn:["cartoon","strip","funnies"],
+    ex:[{ s:"He read the {{}} before anything else in the paper.", f:"comic strip", ko:"그는 신문에서 연재 만화를 무엇보다 먼저 읽었다." }] },
+
+  /* ── comm ──────────────────────────────────── */
+  { word:"command", pron:"커맨드", pos:"n", level:"B1", meanings:["명령","지휘"],
+    syn:["order","directive","instruction"], ant:["request"],
+    ex:[{ s:"The captain gave the {{}} to turn back.", f:"command", ko:"선장은 되돌아가라는 명령을 내렸다." }] },
+
+  { word:"commandeer", pron:"카먼디어", pos:"v", level:"C2", meanings:["징발하다","강제로 빼앗다"],
+    syn:["seize","appropriate","requisition"], ant:["return"],
+    ex:[{ s:"Troops began to {{}} private trucks for the retreat.", f:"commandeer", ko:"군대는 후퇴를 위해 민간 트럭을 징발하기 시작했다." }] },
+
+  { word:"commander", pron:"커맨더", pos:"n", level:"B2", meanings:["사령관","지휘자"],
+    syn:["chief","leader","officer"], ant:["subordinate"],
+    ex:[{ s:"The {{}} ordered a full retreat before dawn.", f:"commander", ko:"사령관은 새벽 전에 전면 후퇴를 명령했다." }] },
+
+  { word:"commemorate", pron:"커메머레이트", pos:"v", level:"C1", meanings:["기념하다","추모하다"],
+    syn:["honor","celebrate","memorialize"], ant:["forget"],
+    ex:[{ s:"A statue was raised to {{}} the victims.", f:"commemorate", ko:"희생자들을 기념하기 위해 조각상이 세워졌다." }] },
+
+  { word:"commence", pron:"커멘스", pos:"v", level:"C1", meanings:["시작되다","착수하다"],
+    syn:["begin","start","initiate"], ant:["conclude"],
+    ex:[{ s:"The trial will {{}} in early March.", f:"commence", ko:"재판은 3월 초에 시작될 것이다." }] },
+
+  { word:"comment", pron:"카멘트", pos:"v", level:"B1", meanings:["견해를 밝히다","논평"],
+    syn:["remark","observe","state"],
+    ex:[{ s:"He refused to {{}} on the rumour.", f:"comment", ko:"그는 그 소문에 대해 견해를 밝히기를 거부했다." }] },
+
+  { word:"commentary", pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
+    syn:["analysis","narration","review"],
+    ex:[{ s:"Her {{}} made a dull match worth watching.", f:"commentary", ko:"그녀의 해설은 지루한 경기를 볼 만하게 만들었다." }] },
+
+  { word:"commentate", pron:"카먼테이트", pos:"v", level:"C2", meanings:["실황 방송을 하다","중계하다"],
+    syn:["narrate","describe","broadcast"],
+    ex:[{ s:"He was invited to {{}} on the final.", f:"commentate", ko:"그는 결승전 중계를 맡아 달라는 요청을 받았다." }] },
+
+  { word:"commerce", pron:"카머스", pos:"n", level:"B2", meanings:["무역","상거래"],
+    syn:["trade","business","dealing"],
+    ex:[{ s:"The river once carried most of the region's {{}}.", f:"commerce", ko:"그 강은 한때 이 지역 무역의 대부분을 실어 옮겼다." }] },
+
+  { word:"commercial", pron:"커머셜", pos:"adj", level:"B1", meanings:["상업의","광고방송"],
+    syn:["business","profitable","mercantile"], ant:["nonprofit"],
+    ex:[{ s:"The film was a {{}} success but a critical failure.", f:"commercial", ko:"그 영화는 상업적으로는 성공했지만 비평에서는 실패했다." }] },
+
+  { word:"commission", pron:"커미션", pos:"n", level:"B2", meanings:["임무","위원회"],
+    syn:["assignment","task","mandate"],
+    ex:[{ s:"She accepted a {{}} to paint the city hall.", f:"commission", ko:"그녀는 시청을 그리는 임무를 받아들였다." }] },
+
+  { word:"commitment", pron:"커미트먼트", pos:"n", level:"B2", meanings:["약속","헌신"],
+    syn:["pledge","dedication","devotion"], ant:["indifference"],
+    ex:[{ s:"Her {{}} to the team never wavered.", f:"commitment", ko:"팀에 대한 그녀의 헌신은 흔들린 적이 없다." }],
+    col:[{ p:"a commitment {{}} reform", a:"to", pool:"prep", note:"commitment to : ~에 대한 전념·약속" }] },
+
+  { word:"committee", pron:"커미티", pos:"n", level:"B1", meanings:["위원회","위원"],
+    syn:["board","panel","council"],
+    ex:[{ s:"The {{}} meets on the first Monday of each month.", f:"committee", ko:"그 위원회는 매달 첫째 월요일에 모인다." }] },
+
+  { word:"commodity", pron:"커마더티", pos:"n", level:"B2", meanings:["상품","물자"],
+    syn:["goods","product","merchandise"],
+    ex:[{ s:"Clean water is a scarce {{}} in the region.", f:"commodity", ko:"깨끗한 물은 그 지역에서 희소한 물자다." }] },
+
+  { word:"common assessment", pron:"카먼 어세스먼트", pos:"n", level:"C1", meanings:["공통 평가"],
+    syn:["standard test","benchmark","evaluation"],
+    ex:[{ s:"Every school in the district now uses a {{}}.", f:"common assessment", ko:"그 학군의 모든 학교는 이제 공통 평가를 사용한다." }] },
+
+  { word:"common good", pron:"카먼 굿", pos:"n", level:"C1", meanings:["공익"],
+    syn:["public interest","welfare","benefit"],
+    ex:[{ s:"Taxes are meant to serve the {{}}.", f:"common good", ko:"세금은 공익에 쓰이기 위한 것이다." }] },
+
+  { word:"commonality", pron:"카머낼리티", pos:"n", level:"C2", meanings:["공통점"],
+    syn:["similarity","likeness","overlap"], ant:["difference"],
+    ex:[{ s:"The two cases share one striking {{}}.", f:"commonality", ko:"그 두 사건은 놀라운 공통점 하나를 공유한다." }] },
+
+  { word:"commoner", pron:"카머너", pos:"n", level:"C2", meanings:["평민"],
+    syn:["citizen","peasant","layperson"], ant:["noble"],
+    ex:[{ s:"A {{}} could not enter the inner palace.", f:"commoner", ko:"평민은 궁궐 안쪽에 들어갈 수 없었다." }] },
+
+  { word:"commonsense", pron:"카먼센스", pos:"adj", level:"B2", meanings:["상식적인"],
+    syn:["sensible","practical","reasonable"], ant:["absurd"],
+    ex:[{ s:"This is a {{}} rule, not a legal one.", f:"commonsense", ko:"이것은 법이 아니라 상식적인 규칙이다." }] },
+
+  { word:"communal", pron:"커뮤널", pos:"adj", level:"C1", meanings:["공동의","집단의"],
+    syn:["shared","collective","joint"], ant:["personal"],
+    ex:[{ s:"The building has one {{}} kitchen per floor.", f:"communal", ko:"그 건물에는 층마다 공동 주방이 하나 있다." }] },
+
+  { word:"community", pron:"커뮤니티", pos:"n", level:"B1", meanings:["사회","공동체"],
+    syn:["society","population","neighborhood"],
+    ex:[{ s:"The whole {{}} turned out to rebuild the bridge.", f:"community", ko:"온 마을이 다리를 다시 세우러 나왔다." }] },
+
+  { word:"commute", pron:"커뮤트", pos:"v", level:"B1", meanings:["통근하다","통학하다"],
+    syn:["travel","journey","shuttle"],
+    ex:[{ s:"He {{}} two hours in each direction.", f:"commutes", ko:"그는 편도 두 시간씩 통근한다." }] },
+
+  /* ── compa · compe ─────────────────────────── */
+  { word:"compact", pron:"컴팩트", pos:"adj", level:"B2", meanings:["소형의","밀집한"],
+    syn:["small","dense","condensed"], ant:["bulky"],
+    ex:[{ s:"The {{}} camera fits in a coat pocket.", f:"compact", ko:"그 소형 카메라는 외투 주머니에 들어간다." }] },
+
+  { word:"companion", pron:"컴패니언", pos:"n", level:"B1", meanings:["동반자","친구"],
+    syn:["partner","comrade","escort"],
+    ex:[{ s:"A dog makes a loyal {{}} on long walks.", f:"companion", ko:"개는 긴 산책에서 충실한 동반자가 된다." }] },
+
+  { word:"companionship", pron:"컴패니언십", pos:"n", level:"C1", meanings:["교우관계","교제"],
+    syn:["friendship","fellowship","company"], ant:["loneliness"],
+    ex:[{ s:"She missed the {{}} of her old workmates.", f:"companionship", ko:"그녀는 옛 동료들과의 교제를 그리워했다." }] },
+
+  { word:"comparable", pron:"캄퍼러블", pos:"adj", level:"B2", meanings:["비슷한","비교할 만한"],
+    syn:["similar","equivalent","akin"], ant:["unlike"],
+    ex:[{ s:"Their salaries are roughly {{}}.", f:"comparable", ko:"그들의 급여는 대체로 비슷하다." }] },
+
+  { word:"comparative", pron:"컴패러티브", pos:"adj", level:"C1", meanings:["상대적인","비교의"],
+    syn:["relative","proportional","parallel"], ant:["absolute"],
+    ex:[{ s:"In {{}} terms, the risk is very small.", f:"comparative", ko:"상대적으로 보면 그 위험은 아주 작다." }] },
+
+  { word:"compare", pron:"컴페어", pos:"v", level:"B1", meanings:["비교하다"],
+    syn:["contrast","weigh","liken"],
+    ex:[{ s:"It is unfair to {{}} the two systems directly.", f:"compare", ko:"두 체계를 직접 비교하는 것은 부당하다." }],
+    col:[{ p:"compare this one {{}} that", a:"with", pool:"prep", note:"compare A with B : A를 B와 비교하다" }] },
+
+  { word:"compartment", pron:"컴파트먼트", pos:"n", level:"B2", meanings:["칸막이 방","객실"],
+    syn:["section","division","bay"],
+    ex:[{ s:"He stored his bag in the overhead {{}}.", f:"compartment", ko:"그는 머리 위 칸에 가방을 넣었다." }] },
+
+  { word:"compassion", pron:"컴패션", pos:"n", level:"B2", meanings:["동정","연민"],
+    syn:["sympathy","pity","mercy"], ant:["cruelty"],
+    ex:[{ s:"She spoke about the refugees with real {{}}.", f:"compassion", ko:"그녀는 난민들에 대해 진심 어린 연민으로 말했다." }] },
+
+  { word:"compassionate", pron:"컴패셔닛", pos:"adj", level:"C1", meanings:["연민 어린","인정 많은"],
+    syn:["merciful","humane","kind"], ant:["ruthless"],
+    ex:[{ s:"A {{}} judge cut the sentence in half.", f:"compassionate", ko:"인정 많은 판사가 형을 절반으로 줄였다." }] },
+
+  { word:"compatibility", pron:"컴패터빌리티", pos:"n", level:"C1", meanings:["호환성","양립 가능성"],
+    syn:["consistency","harmony","fit"], ant:["conflict"],
+    ex:[{ s:"Check {{}} before you install the driver.", f:"compatibility", ko:"드라이버를 설치하기 전에 호환성을 확인하라." }] },
+
+  { word:"compatible", pron:"컴패터블", pos:"adj", level:"B2", meanings:["호환되는","양립될 수 있는"],
+    syn:["suited","consistent","matching"], ant:["incompatible"],
+    ex:[{ s:"The new part is not {{}} with older models.", f:"compatible", ko:"새 부품은 구형 모델과 호환되지 않는다." }],
+    col:[{ p:"compatible {{}} the old model", a:"with", pool:"prep", note:"be compatible with : ~와 호환되다" }] },
+
+  { word:"compel", pron:"컴펠", pos:"v", level:"B2", meanings:["강요하다","~하게 만들다"],
+    syn:["force","oblige","coerce"], ant:["allow"],
+    ex:[{ s:"Nothing on earth could {{}} him to sign it.", f:"compel", ko:"세상 어떤 것도 그에게 서명을 강요할 수 없었다." }] },
+
+  { word:"compelling", pron:"컴펠링", pos:"adj", level:"C1", meanings:["강력한","설득력 있는"],
+    syn:["persuasive","convincing","forceful"], ant:["weak"],
+    ex:[{ s:"The evidence against him was simply {{}}.", f:"compelling", ko:"그에게 불리한 증거는 그야말로 강력했다." }] },
+
+  { word:"compensate", pron:"캄펜세이트", pos:"v", level:"B2", meanings:["보상하다","배상하다"],
+    syn:["repay","reimburse","offset"],
+    ex:[{ s:"The airline offered to {{}} every passenger.", f:"compensate", ko:"항공사는 모든 승객에게 보상하겠다고 제안했다." }] },
+
+  { word:"compensate for", pron:"캄펜세이트 포", pos:"phr", level:"B2", meanings:["~를 보충하다","메우다"],
+    syn:["offset","balance","make up"] },
+
+  { word:"compete", pron:"컴피트", pos:"v", level:"B1", meanings:["경쟁하다","겨루다"],
+    syn:["contend","vie","rival"], ant:["cooperate"],
+    ex:[{ s:"Small shops cannot {{}} on price alone.", f:"compete", ko:"작은 가게들은 가격만으로 경쟁할 수 없다." }] },
+
+  { word:"compete for", pron:"컴피트 포", pos:"phr", level:"B2", meanings:["~을 두고 경쟁하다"],
+    syn:["contest","pursue","seek"] },
+
+  { word:"competence", pron:"캄피턴스", pos:"n", level:"C1", meanings:["능숙함","능력"],
+    syn:["proficiency","skill","mastery"], ant:["incompetence"],
+    ex:[{ s:"The job demands technical {{}}, not charm.", f:"competence", ko:"그 일은 매력이 아니라 기술적 능숙함을 요구한다." }] },
+
+  { word:"competent", pron:"캄피턴트", pos:"adj", level:"B2", meanings:["유능한","능력이 있는"],
+    syn:["capable","qualified","proficient"], ant:["inept"],
+    ex:[{ s:"She proved a quietly {{}} manager.", f:"competent", ko:"그녀는 조용히 유능한 관리자임을 증명했다." }] },
+
+  { word:"competitive", pron:"컴페터티브", pos:"adj", level:"B2", meanings:["경쟁력 있는","경쟁심이 강한"],
+    syn:["rivalrous","aggressive","ambitious"], ant:["cooperative"],
+    ex:[{ s:"The market here is fiercely {{}}.", f:"competitive", ko:"이곳 시장은 경쟁이 치열하다." }] },
+
+  { word:"competitiveness", pron:"컴페터티브니스", pos:"n", level:"C1", meanings:["경쟁력"],
+    syn:["edge","strength","rivalry"],
+    ex:[{ s:"Training raised the firm's {{}} within a year.", f:"competitiveness", ko:"교육은 1년 만에 그 회사의 경쟁력을 높였다." }] },
+
+  /* ── compi · compl ─────────────────────────── */
+  { word:"compile", pron:"컴파일", pos:"v", level:"B2", meanings:["수집하다","편집하다"],
+    syn:["gather","assemble","collate"], ant:["scatter"],
+    ex:[{ s:"He spent thirty years to {{}} the dictionary.", f:"compile", ko:"그는 그 사전을 편찬하는 데 30년을 썼다." }] },
+
+  { word:"complacent", pron:"컴플레이선트", pos:"adj", level:"C2", meanings:["현실에 안주하는","자기만족적인"],
+    syn:["smug","contented","unconcerned"], ant:["anxious"],
+    ex:[{ s:"One easy win made the team {{}}.", f:"complacent", ko:"한 번의 쉬운 승리가 그 팀을 안주하게 만들었다." }] },
+
+  { word:"complain", pron:"컴플레인", pos:"v", level:"B1", meanings:["불평하다","항의하다"],
+    syn:["protest","grumble","object"], ant:["praise"],
+    ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
+    col:[{ p:"complain {{}} the noise", a:"about", pool:"prep", note:"complain about : ~에 대해 불평하다" }] },
+
+  { word:"complement", pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
+    syn:["addition","supplement","counterpart"],
+    ex:[{ s:"The wine is a perfect {{}} to the fish.", f:"complement", ko:"그 와인은 생선과 완벽하게 어울리는 보완물이다." }] },
+
+  { word:"complementary", pron:"캄플러멘터리", pos:"adj", level:"C1", meanings:["상호 보완적인"],
+    syn:["reciprocal","matching","interdependent"], ant:["conflicting"],
+    ex:[{ s:"Their two skills are entirely {{}}.", f:"complementary", ko:"그들의 두 기술은 완전히 상호 보완적이다." }] },
+
+  { word:"complex", pron:"컴플렉스", pos:"adj", level:"B1", meanings:["복합적인","복잡한"],
+    syn:["intricate","involved","multiple"], ant:["simple"],
+    ex:[{ s:"The problem is far more {{}} than it looks.", f:"complex", ko:"그 문제는 보이는 것보다 훨씬 복합적이다." }] },
+
+  { word:"compliant", pron:"컴플라이언트", pos:"adj", level:"C2", meanings:["순응하는","준수하는"],
+    syn:["obedient","yielding","conforming"], ant:["defiant"],
+    ex:[{ s:"The building is now fully {{}} with fire rules.", f:"compliant", ko:"그 건물은 이제 소방 규정을 완전히 준수한다." }] },
+
+  { word:"complicated", pron:"캄플리케이티드", pos:"adj", level:"B1", meanings:["복잡한","뒤얽힌"],
+    syn:["complex","tangled","elaborate"], ant:["straightforward"],
+    ex:[{ s:"The rules are needlessly {{}}.", f:"complicated", ko:"그 규칙들은 불필요하게 복잡하다." }] },
+
+  { word:"complication", pron:"캄플리케이션", pos:"n", level:"B2", meanings:["합병증","문제"],
+    syn:["difficulty","snag","setback"],
+    ex:[{ s:"A rare {{}} kept him in hospital for weeks.", f:"complication", ko:"드문 합병증 때문에 그는 몇 주간 병원에 있었다." }] },
+
+  { word:"compliment", pron:"캄플러먼트", pos:"n", level:"B1", meanings:["칭찬","찬사"],
+    syn:["praise","tribute","flattery"], ant:["insult"],
+    ex:[{ s:"She blushed at the unexpected {{}}.", f:"compliment", ko:"그녀는 뜻밖의 칭찬에 얼굴을 붉혔다." }] },
+
+  { word:"complimentary", pron:"캄플러멘터리", pos:"adj", level:"B2", meanings:["무료의","칭찬하는"],
+    syn:["free","gratis","flattering"],
+    ex:[{ s:"Breakfast is {{}} for every guest.", f:"complimentary", ko:"아침 식사는 모든 손님에게 무료다." }] },
+
+  { word:"comply", pron:"컴플라이", pos:"v", level:"B2", meanings:["따르다","응하다"],
+    syn:["obey","observe","submit"], ant:["defy"],
+    ex:[{ s:"Drivers must {{}} or lose their licence.", f:"comply", ko:"운전자는 따르지 않으면 면허를 잃는다." }] },
+
+  { word:"comply with", pron:"컴플라이 위드", pos:"phr", level:"B2", meanings:["순응하다","지키다"],
+    syn:["follow","respect","heed"], ant:["violate"] },
+
+  /* ── compo ─────────────────────────────────── */
+  { word:"component", pron:"컴포넌트", pos:"n", level:"B2", meanings:["성분","구성 요소"],
+    syn:["element","part","ingredient"], ant:["whole"],
+    ex:[{ s:"Each {{}} is tested before assembly.", f:"component", ko:"각 부품은 조립 전에 시험을 거친다." }] },
+
+  { word:"compose", pron:"컴포즈", pos:"v", level:"B1", meanings:["구성하다","작곡하다"],
+    syn:["form","constitute","create"],
+    ex:[{ s:"Water is {{}} of hydrogen and oxygen.", f:"composed", ko:"물은 수소와 산소로 구성되어 있다." }] }
 ];
 
 /* ── 반의어 뜻 사전 (병합) ──────────────────────
@@ -751,13 +996,23 @@ Object.assign(window.ANT_DICT, {
   "barbarism":"야만, 미개",
   "blessing":"축복, 다행",
   "briefly":"잠깐, 짧게",
+  "bulky":"부피가 큰, 커서 다루기 힘든",
   "commence":"시작되다, 시작하다",
   "compete":"경쟁하다",
+  "conclude":"끝내다, 결론을 내리다",
   "confirm":"확인하다, 확정하다",
+  "conflict":"갈등, 충돌",
+  "conflicting":"상반되는, 모순되는",
   "continue":"계속하다",
+  "cooperate":"협력하다",
+  "cooperative":"협력하는",
   "counterclockwise":"시계 반대 방향으로",
+  "cruelty":"잔혹함",
+  "defiant":"반항하는",
+  "defy":"거역하다, 무시하다",
   "design":"의도, 계획",
   "differ":"다르다",
+  "difference":"차이",
   "direct":"직접적인",
   "disperse":"흩어지다, 분산시키다",
   "division":"분열, 분할",
@@ -774,6 +1029,7 @@ Object.assign(window.ANT_DICT, {
   "exposure":"노출, 드러남",
   "flee":"도망치다",
   "floor":"바닥, 층",
+  "forget":"잊다",
   "formal":"격식을 갖춘, 공식적인",
   "fragmented":"조각난, 분열된",
   "free":"자유로운, 풀려난",
@@ -789,11 +1045,19 @@ Object.assign(window.ANT_DICT, {
   "herbivorous":"초식(성)의",
   "hush":"조용해지다, 잠잠해지다",
   "incapable":"~할 수 없는",
+  "incompatible":"양립할 수 없는, 호환되지 않는",
+  "incompetence":"무능함",
+  "indifference":"무관심",
   "individual":"개인의, 개별의",
+  "inept":"서투른, 무능한",
+  "insult":"모욕, 모욕하다",
   "lag":"뒤처지다",
   "laity":"평신도",
+  "loneliness":"외로움",
   "military":"군사의, 군대의",
   "minor":"사소한, 작은",
+  "noble":"귀족, 고귀한",
+  "nonprofit":"비영리의",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
   "obscure":"잘 알려지지 않은; 모호하게 하다",
   "occasional":"때때로의, 간간이 있는",
@@ -801,6 +1065,7 @@ Object.assign(window.ANT_DICT, {
   "original":"원본, 원래의",
   "peripheral":"주변의, 부차적인",
   "permit":"허용하다",
+  "personal":"개인적인",
   "private":"사적인, 민간의",
   "proceed":"진행하다, 계속하다",
   "public":"공개된, 공공의",
@@ -809,20 +1074,31 @@ Object.assign(window.ANT_DICT, {
   "reckless":"무모한, 부주의한",
   "refund":"환불하다, 환불",
   "repulsion":"혐오, 반발",
+  "request":"요청, 요청하다",
   "result":"결과",
+  "return":"돌려주다, 반환",
   "rival":"경쟁자",
+  "ruthless":"무자비한",
+  "scatter":"흩뿌리다",
   "scattering":"흩어짐, 산재",
   "seek":"찾다, 구하다",
   "separation":"분리, 분할",
   "shortage":"부족, 결핍",
+  "simple":"단순한",
   "single-sex":"남녀를 구분한",
   "skinny":"깡마른",
   "soldier":"군인",
   "stagnate":"고이다, 정체되다",
   "stare":"응시하다, 빤히 보다",
   "steady":"한결같은, 안정된",
+  "straightforward":"단순명료한, 쉬운",
+  "subordinate":"부하, 하급자",
   "triumph":"승리, 대성공",
+  "unlike":"~와 달리, 다른",
   "vagueness":"모호함",
   "vanish":"사라지다",
-  "warm":"따뜻한"
+  "violate":"위반하다",
+  "warm":"따뜻한",
+  "weak":"약한",
+  "whole":"전체"
 });
