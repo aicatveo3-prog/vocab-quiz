@@ -4,7 +4,8 @@
  * 저장 항목
  *   words[word]  : { seen: 노출 횟수, ok: 정답 수, ng: 오답 수,
  *                    lastWrong: 타임스탬프|null, wn: 오답 노트 차수 0~3,
- *                    at: 마지막 수정 시각 }
+ *                    bm: true(북마크가 오답 노트에 넣은 단어일 때만),
+ *                    wx: 오답 노트에서 뺀 시각, at: 마지막 수정 시각 }
  *   saved[word]  : { at: 시각, on: true|false }  저장(북마크)한 단어
  *   days[YYYY-MM-DD] : 그날 푼 문제 수
  *   streak       : 연속 학습일
@@ -25,8 +26,17 @@
  *   1차 복습에서 틀림   → 2차   /   2차 복습에서 틀림 → 3차   /   3차는 최고
  *   맞힘                → 아무 일도 없다. 목록에서 사라지지 않는다
  *
- * 빠지는 길은 ✕(removeWrong) 하나뿐이다. 예전에는 숙련도가 최고치에 닿으면
- * 자동으로 빠졌지만, 숙련도 시스템 자체를 없애면서 그 출구도 함께 없어졌다.
+ * 맞혀서 빠지는 길은 없다. 예전에는 숙련도가 최고치에 닿으면 자동으로 빠졌지만,
+ * 숙련도 시스템 자체를 없애면서 그 출구도 함께 없어졌다. 나가는 길은 둘이다.
+ *
+ *   ✕(removeWrong)      직접 뺀다. 어떤 단어든 언제든 된다
+ *   북마크 해제           북마크가 넣은 단어(bm)를 다시 뺀다. 넣은 행동을 되돌리는 것
+ *
+ * bm은 "이 단어를 오답 노트에 넣은 것이 북마크다"라는 표시다. 이게 있어야
+ * 북마크 해제가 무엇을 되돌려도 되는지 알 수 있다. 틀려서 들어온 단어에는
+ * bm이 없으므로 북마크를 해제해도 오답 노트에 그대로 남는다. 북마크로 들어온
+ * 뒤에 실제로 틀렸다면 record()가 bm을 지운다 — 그때부터는 제 실력으로
+ * 오답 노트에 있는 것이라 북마크 해제와 무관해진다.
  *
  * at(마지막 수정 시각)은 기기 간 병합의 기준이다. mergeData()가 단어 하나하나에
  * 대해 at이 더 새로운 쪽을 택하기 때문에, 폰과 PC에서 서로 다른 단어를 공부해도
@@ -120,6 +130,9 @@ window.Store = (function () {
     } else {
       r.ng++;
       r.lastWrong = Date.now();
+      /* 실제로 틀렸다 → 이제 북마크가 아니라 제 실력으로 오답 노트에 있다.
+         표시를 지워야 나중에 북마크를 해제해도 함께 빠지지 않는다. */
+      if (r.bm) delete r.bm;
       var cur = tierOf(r);
       if (!reviewTier) {
         /* 일반 연습(정복·개별 연습)에서 틀렸다.
@@ -209,17 +222,38 @@ window.Store = (function () {
   }
 
   /**
-   * 오답 노트에서 완전히 뺀다 (✕ 버튼). 유일한 퇴출 경로다.
+   * 오답 노트에서 빼는 실제 동작. removeWrong(✕)과 북마크 해제가 공유한다.
    * lastWrong까지 지워야 한다 — 안 지우면 tierOf의 하위 호환 경로
    * (lastWrong이 있으면 1차)로 되살아난다.
+   *
+   * wx는 "이 시각에 뺐다"는 기록이다. 병합할 때 다른 기기에 남아 있던 차수가
+   * max 규칙에 얹혀 단어를 되살리는 것을 막는다. 뺀 것이 그 차수보다 나중이면
+   * 뺀 상태가 이긴다.
    */
+  function exitWrong(r) {
+    r.wn = 0;
+    r.lastWrong = null;
+    if (r.bm) delete r.bm;
+    r.wx = Date.now();
+    r.at = r.wx;
+  }
+
+  /** 오답 노트에서 완전히 뺀다 (✕ 버튼) */
   function removeWrong(word) {
     var r = state.words[word];
     if (!r) return;
-    r.wn = 0;
-    r.lastWrong = null;
-    r.at = Date.now();
+    exitWrong(r);
     save();
+  }
+
+  /**
+   * 이 단어가 "북마크 때문에" 오답 노트에 있는가.
+   * 참이면 북마크를 해제하는 순간 오답 노트에서도 빠진다. 버튼 설명을
+   * 상황에 맞게 쓰기 위해 UI가 물어본다.
+   */
+  function noteFromBookmark(word) {
+    var r = state.words[word];
+    return !!(r && r.bm && tierOf(r) === 1);
   }
 
   /* ── 저장(북마크)한 단어 ───────────────────────
@@ -236,14 +270,25 @@ window.Store = (function () {
 
   function setSaved(word, on) {
     state.saved[word] = { at: Date.now(), on: !!on };
-    /* 북마크하면 1차 오답 노트에 자동으로 넣는다.
-       "이 단어 더 연습하고 싶다"는 뜻이므로 복습 대상에 올리는 것이 자연스럽다.
-       이미 1차 이상이면 차수를 내리지 않는다.
-       북마크를 해제해도 오답 노트에서는 빠지지 않는다 — 그 사이에 차수가
-       올라갔을 수 있고, 빼는 것은 ✕ 버튼의 몫이다. */
     if (on) {
+      /* 북마크하면 1차 오답 노트에 자동으로 넣는다.
+         "이 단어 더 연습하고 싶다"는 뜻이므로 복습 대상에 올리는 것이 자연스럽다.
+         이미 1차 이상이면 차수를 내리지 않고, 넣은 것이 북마크라고 표시해 둔다. */
       var r = rec(word);
-      if (tierOf(r) === 0) { r.wn = 1; r.at = Date.now(); }
+      if (tierOf(r) === 0) { r.wn = 1; r.bm = true; r.at = Date.now(); }
+    } else {
+      /* 해제 = 넣었던 행동을 되돌린다. 북마크가 넣은 단어만 되돌린다. */
+      var cur = state.words[word];
+      if (cur && cur.bm) {
+        if (tierOf(cur) === 1) {
+          exitWrong(cur);
+        } else {
+          /* 2차 이상 — 복습에서 또 틀려 올라간 단어다(다른 기기에서 올라간 차수가
+             병합돼 온 경우). 북마크 해제로 지울 성격이 아니므로 표시만 뗀다. */
+          delete cur.bm;
+          cur.at = Date.now();
+        }
+      }
     }
     save();
   }
@@ -321,6 +366,11 @@ window.Store = (function () {
     return (r && typeof r.at === 'number') ? r.at : 0;
   }
 
+  /** 오답 노트에서 뺀 시각. 한 번도 뺀 적 없으면 0 */
+  function wxOf(r) {
+    return (r && typeof r.wx === 'number') ? r.wx : 0;
+  }
+
   /**
    * 두 기록을 합친 새 객체를 돌려준다. 원본은 건드리지 않는다.
    * @param base    기준 기록 (보통 이 기기의 것)
@@ -342,9 +392,28 @@ window.Store = (function () {
       /* 오답 노트 차수는 후퇴하면 안 된다.
          오프라인이던 기기가 나중에 그 단어를 건드리면 레코드가 더 새로워지는데,
          그 기기는 다른 기기에서 올라간 차수를 모른다. 통째로 교체하면 3차가
-         1차로 되돌아간다. 그래서 차수만 따로 max를 취한다. */
-      var top = Math.max(tierOf(mine), tierOf(theirs));
-      if (top > 0 && out.words[w]) out.words[w].wn = top;
+         1차로 되돌아간다. 그래서 차수만 따로 max를 취한다.
+
+         단, 직접 뺀 것(✕·북마크 해제)은 예외다. max만 보면 다른 기기에 남아 있던
+         차수가 방금 뺀 단어를 되살려 버린다. 그래서 퇴출 시각(wx)이 차수를 들고
+         있는 쪽의 수정 시각보다 나중이면 뺀 상태를 지킨다. 그 반대라면 뺀 뒤에
+         다시 틀린 것이므로 차수가 이긴다. */
+      var tm = tierOf(mine), tt = tierOf(theirs);
+      var top = Math.max(tm, tt);
+      if (top > 0 && out.words[w]) {
+        var holderAt = tm === tt
+          ? Math.max(atOf(mine), atOf(theirs))
+          : (tm > tt ? atOf(mine) : atOf(theirs));
+        var wx = Math.max(wxOf(mine), wxOf(theirs));
+        if (wx >= holderAt) {
+          out.words[w].wn = 0;
+          out.words[w].lastWrong = null;
+          out.words[w].wx = wx;
+          if (out.words[w].bm) delete out.words[w].bm;
+        } else {
+          out.words[w].wn = top;
+        }
+      }
     });
 
     // 저장 목록 — 해제(on:false)도 시각으로 판정해야 되살아나지 않는다
@@ -505,6 +574,7 @@ window.Store = (function () {
     wrongList: wrongList,
     wrongCounts: wrongCounts,
     removeWrong: removeWrong,
+    noteFromBookmark: noteFromBookmark,
     isSaved: isSaved,
     toggleSaved: toggleSaved,
     setSaved: setSaved,
