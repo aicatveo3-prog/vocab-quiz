@@ -64,6 +64,12 @@
       .map(function (set) { return set.label + ' 섹션 ' + set.words.length + '단어'; })
       .join(' + ');
 
+    // 개별 연습 안내의 세트 이름도 같은 곳에서 만든다
+    var names = $('set-note-names');
+    if (names) {
+      names.textContent = practiceSets().map(function (set) { return set.label; }).join(' · ');
+    }
+
     // 오늘 현황 — 한 줄로 압축
     var line = $('today-line');
     line.innerHTML = '';

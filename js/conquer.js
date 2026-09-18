@@ -29,7 +29,8 @@ window.Conquer = (function () {
      여기에 한 줄 추가하면 세트 목록·챕터 목록·개별 연습에 모두 반영된다. */
   var SETS = [
     { id: 'A', label: 'A', words: window.VOCAB },
-    { id: 'B', label: 'B', words: window.VOCAB_B || [] }
+    { id: 'B', label: 'B', words: window.VOCAB_B || [] },
+    { id: 'C', label: 'C', words: window.VOCAB_C || [] }
   ];
 
   function getSet(id) {
