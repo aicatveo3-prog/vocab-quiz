@@ -493,6 +493,20 @@ window.Store = (function () {
     return SESS_PREFIX + 'prac_' + modeId + '_' + setName;
   }
 
+  /**
+   * 저장된 세션의 진행 상황. 없으면 null.
+   * 문제를 다시 만들지 않고도 "몇 개까지 풀었나"를 알 수 있어야 세트 목록에서
+   * 진행률과 '처음부터' 버튼을 보여줄 수 있다. answers는 슬라이드마다 한 칸씩
+   * (안 푼 칸은 null) 들어 있으므로 길이가 곧 전체 문제 수다.
+   */
+  function sessionProgress(key) {
+    var s = loadSession(key);
+    if (!s || !s.answers) return null;
+    var done = 0;
+    s.answers.forEach(function (a) { if (a && a.a) done++; });
+    return { done: done, total: s.answers.length, cursor: s.cursor || 0 };
+  }
+
   /** 세션 상태를 저장한다. 문제를 풀 때마다 호출. */
   function saveSession(key, cursor, slides) {
     try {
@@ -596,6 +610,7 @@ window.Store = (function () {
     sessionKey: sessionKey,
     saveSession: saveSession,
     loadSession: loadSession,
+    sessionProgress: sessionProgress,
     restoreSession: restoreSession,
     clearSession: clearSession
   };

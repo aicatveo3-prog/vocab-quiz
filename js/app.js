@@ -145,14 +145,24 @@
       // 이 형식으로 출제 가능한 단어 수는 세트마다 다르다
       // (예: 구·표현에는 예문이 없어 문장 빈칸에서 빠진다)
       var n = window.Quiz.availableCount(modeId, set.words);
+      var key = window.Store.sessionKey('practice', modeId, set.id, null);
+      var prog = n ? window.Store.sessionProgress(key) : null;
+      var unit = modeId === 'match' ? '보드' : '문제';
+
       var btn = el('button', 'row-btn');
       btn.type = 'button';
       var main = el('span', 'row-main');
       main.appendChild(el('b', null, set.label + ' 세트'));
       // 이 형식으로 못 내는 단어가 있을 때만 전체 수를 덧붙인다 (356단어 / 전체 396)
-      main.appendChild(el('span', null, n === set.words.length
-        ? n + '단어'
-        : n + '단어 / 전체 ' + set.words.length));
+      var sub = n === set.words.length ? n + '단어' : n + '단어 / 전체 ' + set.words.length;
+      /* 진행 상황을 여기서 보여준다. 다 푼 세트인지 모르고 들어가면
+         전부 읽기 전용으로 열려 이유를 알 수 없다. */
+      if (prog && prog.done) {
+        sub += ' · ' + (prog.done >= prog.total
+          ? prog.total + unit + ' 완료'
+          : prog.done + '/' + prog.total + unit + ' 진행 중');
+      }
+      main.appendChild(el('span', null, sub));
       btn.appendChild(main);
       if (n) {
         btn.appendChild(el('span', 'row-n', '›'));
@@ -162,7 +172,29 @@
         btn.appendChild(el('span', 'row-n', '출제 불가'));
         btn.disabled = true;
       }
-      list.appendChild(btn);
+
+      // 손댄 세트에만 '처음부터'를 붙인다. 아직 안 푼 세트에는 되돌릴 것이 없다.
+      if (prog && prog.done) {
+        var pair = el('div', 'row-pair');
+        pair.appendChild(btn);
+        var side = el('button', 'row-side is-restart', '처음부터');
+        side.type = 'button';
+        side.title = set.label + ' 세트를 처음부터 다시 풀기';
+        side.setAttribute('aria-label', side.title);
+        side.addEventListener('click', function () {
+          var msg = prog.done >= prog.total
+            ? set.label + ' 세트를 처음부터 다시 풉니다.'
+            : set.label + ' 세트의 진행(' + prog.done + '/' + prog.total + ')을 지우고 처음부터 다시 풉니다.';
+          // 지워지는 것은 진행 상황뿐이다. 오답 노트와 학습 기록은 그대로 남는다.
+          if (!confirm(msg + '\n오답 노트와 학습 기록은 그대로 남습니다.')) return;
+          window.Store.clearSession(key);
+          startSession(modeId, null, set.id);
+        });
+        pair.appendChild(side);
+        list.appendChild(pair);
+      } else {
+        list.appendChild(btn);
+      }
     });
     go('mode-sets');
   }
@@ -485,9 +517,13 @@
     var body = $('quiz-body');
     if (slide.q.mode === 'match') {
       if (slide.answered) {
-        // 완료한 보드는 단어·뜻을 그대로 보여주고 클릭만 막는다
+        // 완료한 보드는 단어·뜻을 그대로 보여주고 클릭만 막는다.
+        // 대신 '다시 풀기'로 이 보드만 되돌려 새로 풀 수 있다.
         window.Modes.match.render(slide.q, body, {
-          review: { stats: slide.boardStats || {} }
+          review: {
+            stats: slide.boardStats || {},
+            onRetry: function () { retrySlide(slide); }
+          }
         });
         showBoardFeedback(slide);
       } else {
@@ -498,7 +534,12 @@
         });
       }
     } else if (slide.answered) {
-      window.Modes[slide.q.mode].render(slide.q, body, { review: { chosen: slide.chosen } });
+      window.Modes[slide.q.mode].render(slide.q, body, {
+        review: {
+          chosen: slide.chosen,
+          onRetry: function () { retrySlide(slide); }
+        }
+      });
       showFeedbackBox(slide);
     } else {
       window.Modes[slide.q.mode].render(slide.q, body, {
@@ -507,6 +548,63 @@
     }
     renderNav();
     window.scrollTo(0, 0);
+  }
+
+  /* ── 이미 푼 문제를 다시 풀기 ────────────────────
+     한 번 답하면 그 슬라이드는 읽기 전용이 된다. 복습에는 맞지만, 세트를 다 푼
+     뒤에는 어디를 눌러도 읽기 전용뿐이어서 막다른 길처럼 느껴진다.
+     그래서 슬라이드 하나를 "안 푼 상태"로 되돌리는 길을 둔다.
+
+     되돌릴 때 세션 집계(정답 수·틀린 단어)에서 그 슬라이드의 몫을 빼야 한다.
+     안 빼면 79문제를 다 맞힌 뒤 하나를 다시 맞히는 순간 정답이 80이 되어
+     정답률이 100%를 넘는다.
+
+     Store에 이미 쌓인 학습 기록(seen·ok·ng·오답 노트)은 건드리지 않는다.
+     실제로 그때 그렇게 답한 것은 사실이고, 다시 풀면 그것도 그대로 기록된다. */
+
+  /** 이 단어를 틀린 다른 슬라이드가 아직 남아 있는가.
+      집계에 넣을 때(onChoiceAnswer)와 같은 q.word를 봐야 짝이 맞는다. */
+  function wrongElsewhere(word) {
+    return state.slides.some(function (s) {
+      if (!s.answered) return false;
+      if (s.boardStats) return (s.boardStats.wrongWords || []).indexOf(word) !== -1;
+      return !s.correct && s.q.word === word;
+    });
+  }
+
+  /** 슬라이드를 안 푼 상태로 되돌리고 세션 집계를 원상 복구한다 */
+  function unanswerSlide(slide) {
+    if (!slide.answered) return;
+
+    var undoWrong = [];
+    if (slide.boardStats) {
+      if (slide.boardStats.correct) state.correct--;
+      undoWrong = (slide.boardStats.wrongWords || []).slice();
+    } else {
+      if (slide.correct) state.correct--;
+      else if (slide.q.word) undoWrong = [slide.q.word];
+    }
+    if (state.correct < 0) state.correct = 0;
+
+    slide.answered = false;
+    slide.chosen = null;
+    slide.correct = null;
+    slide.headline = null;
+    slide.boardStats = null;
+
+    /* 같은 단어를 다른 슬라이드에서도 틀렸다면 목록에 남겨 둔다.
+       이 슬라이드는 위에서 answered를 내렸으므로 검사에서 저절로 빠진다. */
+    undoWrong.forEach(function (w) {
+      if (wrongElsewhere(w)) return;
+      var i = state.wrongWords.indexOf(w);
+      if (i !== -1) state.wrongWords.splice(i, 1);
+    });
+  }
+
+  function retrySlide(slide) {
+    unanswerSlide(slide);
+    persistSession();     // 되돌린 상태를 저장해야 새로고침해도 유지된다
+    renderSlide();        // answered가 내려갔으니 이번엔 풀 수 있게 그려진다
   }
 
   /* 선택형 응답 */
@@ -1133,7 +1231,14 @@
   }
 
   $('btn-again').addEventListener('click', function () {
-    if (!state.reviewTier) { startSession(state.modeId, null, state.setName); return; }
+    if (!state.reviewTier) {
+      /* 저장된 진행을 먼저 지운다. 안 지우면 startSession이 방금 끝낸 세션을
+         그대로 복원해 모든 문제가 읽기 전용으로 열린다 — "한 번 더"가
+         아무 일도 하지 않는 것처럼 보이던 원인이다. */
+      if (state.sessionKey) window.Store.clearSession(state.sessionKey);
+      startSession(state.modeId, null, state.setName);
+      return;
+    }
     // 복습 세션의 "한 번 더"는 그 차수에 남아 있는 오답 전체를 뜻한다.
     // 빈 배열을 넘기면 세트 전체(396문제)가 시작되므로 반드시 걸러낸다.
     var tier = state.reviewTier;
