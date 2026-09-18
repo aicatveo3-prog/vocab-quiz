@@ -599,21 +599,40 @@
     fb.appendChild(box);
   }
 
-  /** 단어 저장(북마크) 토글 버튼. 누르면 즉시 상태가 바뀐다. */
-  function saveToggle(word) {
+  /** 오답 노트 차수 배지. 차수가 0이면 빈 칸으로 자리만 잡는다. */
+  function tierBadge(word) {
+    var t = window.Store.tier(word);
+    var b = el('span', 'li-tier');
+    if (t) {
+      b.className = 'li-tier is-t' + t;
+      b.textContent = t + '차';
+      b.title = t + '차 오답 노트에 있습니다';
+    }
+    return b;
+  }
+
+  /**
+   * 단어 저장(북마크) 토글 버튼. 누르면 즉시 상태가 바뀐다.
+   * 저장하면 1차 오답 노트에도 들어가므로, 옆에 붙은 차수 배지를 같이
+   * 새로 그려야 한다. 그래서 토글 뒤에 부를 콜백을 받는다.
+   */
+  function saveToggle(word, onToggle) {
     var btn = el('button', 'save-btn');
     btn.type = 'button';
     function paint() {
       var on = window.Store.isSaved(word);
       btn.classList.toggle('is-on', on);
       btn.textContent = on ? '★ 저장됨' : '☆ 저장';
-      btn.title = on ? word + ' 저장 해제' : word + ' 저장';
+      btn.title = on
+        ? word + ' 저장 해제 (오답 노트에서는 빠지지 않습니다)'
+        : word + ' 저장 — 1차 오답 노트에도 들어갑니다';
     }
     paint();
     btn.addEventListener('click', function (e) {
       e.stopPropagation();          // 단어장 행 클릭과 겹치지 않게
       window.Store.toggleSaved(word);
       paint();
+      if (onToggle) onToggle();
     });
     return btn;
   }
@@ -631,18 +650,29 @@
     }
     fb.appendChild(box);
 
-    // 보드의 각 단어에 대해 발음·뜻·예문을 목록으로 보여준다
+    /* 보드의 각 단어에 대해 발음·뜻·예문을 목록으로 보여준다.
+       여기가 짝 맞추기에서 단어를 제대로 들여다보는 유일한 자리라,
+       "이건 더 연습해야겠다" 싶은 단어를 바로 담을 수 있어야 한다. */
     var pairs = slide.q.pairs || [];
+    var missed = st.wrongWords || [];
     if (pairs.length) {
       var list = el('div', 'board-words');
       pairs.forEach(function (p) {
         var w = WORD_INDEX[p.word];
         if (!w) return;
-        var row = el('div', 'bwd');
+        // 이 보드에서 틀린 단어는 눈에 띄게 — 위쪽 목록과 대조하지 않아도 되게
+        var row = el('div', 'bwd' + (missed.indexOf(w.word) !== -1 ? ' is-missed' : ''));
 
         var head = el('div', 'bwd-head');
         head.appendChild(el('b', 'bwd-word', w.word));
         if (w.pron) head.appendChild(el('span', 'bwd-pron', '🔊 ' + w.pron));
+        var badge = tierBadge(w.word);
+        head.appendChild(badge);
+        head.appendChild(saveToggle(w.word, function () {
+          var fresh = tierBadge(w.word);
+          badge.className = fresh.className;
+          badge.textContent = fresh.textContent;
+        }));
         row.appendChild(head);
 
         row.appendChild(el('div', 'bwd-mean', w.meanings.join(', ')));
@@ -1269,15 +1299,14 @@
     top.appendChild(el('b', null, w.word));
     top.appendChild(el('span', 'li-tag', w.pos + ' · ' + w.level));
     // 숙련도 점 5개를 없애고, 대신 오답 노트 차수를 보여준다
-    var t = window.Store.tier(w.word);
-    var badge = el('span', 'li-tier');
-    if (t) {
-      badge.className = 'li-tier is-t' + t;
-      badge.textContent = t + '차';
-      badge.title = t + '차 오답 노트에 있습니다';
-    }
+    var badge = tierBadge(w.word);
     top.appendChild(badge);
-    top.appendChild(saveToggle(w.word));
+    top.appendChild(saveToggle(w.word, function () {
+      // 저장하면 1차에 편입되므로 배지를 갱신한다
+      var fresh = tierBadge(w.word);
+      badge.className = fresh.className;
+      badge.textContent = fresh.textContent;
+    }));
     row.appendChild(top);
 
     row.appendChild(el('div', 'li-mean', w.meanings.join(', ')));
