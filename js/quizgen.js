@@ -22,7 +22,9 @@ window.Quiz = (function () {
      오답 후보·단어 조회는 합집합을 쓴다. 세트 안에서만 오답을 뽑으면
      부사·구표현처럼 수가 적은 품사에서 후보 3개를 못 채워 그 단어가
      문제에서 통째로 빠진다. 세트를 늘릴 때는 여기에 추가한다. */
-  var ALL = (window.VOCAB || []).concat(window.VOCAB_B || []);
+  var ALL = (window.VOCAB || [])
+    .concat(window.VOCAB_B || [])
+    .concat(window.VOCAB_C || []);
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
@@ -584,9 +586,37 @@ window.Quiz = (function () {
    * 교환은 앞쪽 보드부터 순서대로 훑어 결정하므로 결과가 매번 같다.
    */
   function separateClashes(groups) {
+    /**
+     * 한 보드에 같이 두면 안 되는 사이인가.
+     *
+     * 예전에는 "첫 뜻이 완전히 같을 때"만 갈랐다. C 섹션을 넣으면서 그 기준이
+     * 너무 좁다는 것이 드러났다. concentrate(집중하다)·concentration(집중),
+     * calculate(계산하다)·calculation(계산)처럼 어근이 같은 파생어가 40가족쯤
+     * 되는데, 뜻 문자열이 정확히 같지는 않아 그대로 통과한다. 두 카드가 나란히
+     * 놓이면 어느 쪽에 연결해도 뜻으로는 맞아 억울하게 틀린다.
+     *
+     * 그래서 세 가지로 넓힌다.
+     *   ① 뜻이 겹친다        집중하다 ↔ 집중
+     *   ② 서로 유의어다      cancel ↔ call off
+     *   ③ 어근이 같다        calculate ↔ calculation
+     *
+     * ③은 공통 접두사 6글자 이상만 본다. amiable·amicable(4글자)처럼 철자만
+     * 닮은 단어는 그대로 한 보드에 둔다 — 뜻이 분명히 다르고 형태를 구별하는
+     * 훈련이 되기 때문이다. 6글자면 우연이 아니라 같은 어근이다.
+     *
+     * 가를 상대를 못 찾으면 그대로 둔다(아래 교환 루프가 건너뛴다). 즉 이 기준을
+     * 넓혀도 보드가 만들어지지 않는 일은 없다.
+     */
+    function sameStem(a, b) {
+      var x = a.word.toLowerCase(), y = b.word.toLowerCase();
+      var n = 0;
+      while (n < x.length && n < y.length && x[n] === y[n]) n++;
+      return n >= 6;
+    }
     function sameConcept(a, b) {
       if (a === b) return false;
-      return normalizeMeaning(a.meanings[0]) === normalizeMeaning(b.meanings[0]);
+      if (normalizeMeaning(a.meanings[0]) === normalizeMeaning(b.meanings[0])) return true;
+      return meaningsOverlap(a, b) || areSynonyms(a, b) || sameStem(a, b);
     }
     function hasClash(list, w) {
       for (var i = 0; i < list.length; i++) {
