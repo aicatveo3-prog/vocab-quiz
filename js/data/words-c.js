@@ -16,7 +16,7 @@
  * 넘고, 보기 넷을 늘어놓으면 읽을 수 없다. 그래서 대표 뜻 2개만 남긴다.
  * 첫 뜻에는 괄호 설명을 넣지 않는다 — 카드에서 가장 크게 보이는 자리다.
  *
- * 진행 상황: 360/466단어 (calamity ~ convince) — 6차.
+ * 진행 상황: 420/466단어 (calamity ~ creator) — 7차.
  */
 window.VOCAB_C = [
   /* ── cal ───────────────────────────────────── */
@@ -1484,7 +1484,262 @@ window.VOCAB_C = [
   { word:"convince", pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
     syn:["persuade","assure","satisfy"], ant:["dissuade"],
     ex:[{ s:"Nothing will {{}} him to change his mind.", f:"convince", ko:"어떤 것도 그가 마음을 바꾸도록 납득시키지 못할 것이다." }],
-    col:[{ p:"convince him {{}} the risk", a:"of", pool:"prep", note:"convince A of B : A에게 B를 납득시키다" }] }
+    col:[{ p:"convince him {{}} the risk", a:"of", pool:"prep", note:"convince A of B : A에게 B를 납득시키다" }] },
+
+  { word:"convincing", pron:"컨빈싱", pos:"adj", level:"B2", meanings:["납득이 가는","설득력 있는"],
+    syn:["persuasive","credible","plausible"], ant:["dubious"],
+    ex:[{ s:"His alibi was not remotely {{}}.", f:"convincing", ko:"그의 알리바이는 조금도 납득이 가지 않았다." }] },
+
+  /* ── coop · coor · cop · cor ───────────────── */
+  { word:"cooperate", pron:"코아퍼레이트", pos:"v", level:"B1", meanings:["협력하다","협동하다"],
+    syn:["collaborate","assist","unite"], ant:["obstruct"],
+    ex:[{ s:"Both towns agreed to {{}} on the new bridge.", f:"cooperate", ko:"두 도시는 새 다리를 두고 협력하기로 합의했다." }],
+    col:[{ p:"cooperate {{}} the police", a:"with", pool:"prep", note:"cooperate with : ~와 협력하다" }] },
+
+  { word:"cooperation", pron:"코아퍼레이션", pos:"n", level:"B1", meanings:["협력","협조"],
+    syn:["teamwork","collaboration","support"], ant:["rivalry"],
+    ex:[{ s:"The work needs close {{}} between departments.", f:"cooperation", ko:"그 일은 부서 간의 긴밀한 협력을 필요로 한다." }] },
+
+  { word:"coordinate", pron:"코오디네이트", pos:"v", level:"B2", meanings:["조정하다","조화를 이루게 하다"],
+    syn:["organize","harmonize","align"],
+    ex:[{ s:"Someone must {{}} the three rescue teams.", f:"coordinate", ko:"누군가 세 구조대를 조정해야 한다." }] },
+
+  { word:"cope with", pron:"코프 위드", pos:"phr", level:"B1", meanings:["대처하다","극복하다"],
+    syn:["manage","handle","endure"], ant:["succumb"] },
+
+  { word:"copper", pron:"카퍼", pos:"n", level:"B1", meanings:["구리"],
+    syn:["metal","bronze","brass"],
+    ex:[{ s:"The old pipes were made of {{}}.", f:"copper", ko:"낡은 배관은 구리로 만들어져 있었다." }] },
+
+  { word:"copyright", pron:"카피라이트", pos:"n", level:"B2", meanings:["저작권","판권"],
+    syn:["patent","ownership","license"],
+    ex:[{ s:"The song is still under {{}}.", f:"copyright", ko:"그 노래는 여전히 저작권 보호를 받는다." }] },
+
+  { word:"cordial", pron:"코디얼", pos:"adj", level:"C2", meanings:["진심의","따뜻한"],
+    syn:["warm","genial","affable"], ant:["frosty"],
+    ex:[{ s:"They exchanged {{}} greetings at the door.", f:"cordial", ko:"그들은 문간에서 진심 어린 인사를 나눴다." }] },
+
+  { word:"core", pron:"코어", pos:"n", level:"B1", meanings:["중심","핵심"],
+    syn:["center","heart","nucleus"], ant:["edge"],
+    ex:[{ s:"Fairness lies at the {{}} of the whole rule.", f:"core", ko:"공정함이 그 규칙 전체의 핵심에 있다." }] },
+
+  { word:"corporal", pron:"코퍼럴", pos:"adj", level:"C2", meanings:["육체의","신체의"],
+    syn:["physical","bodily","carnal"], ant:["spiritual"],
+    ex:[{ s:"The school banned {{}} punishment in 1987.", f:"corporal", ko:"그 학교는 1987년에 체벌을 금지했다." }] },
+
+  { word:"corporation", pron:"코퍼레이션", pos:"n", level:"B2", meanings:["회사","기업"],
+    syn:["company","firm","business"],
+    ex:[{ s:"A large {{}} bought the land last spring.", f:"corporation", ko:"큰 기업이 지난봄에 그 땅을 샀다." }] },
+
+  { word:"correct", pron:"커렉트", pos:"adj", level:"B1", meanings:["옳은","바로잡다"],
+    syn:["right","accurate","proper"], ant:["mistaken"],
+    ex:[{ s:"Only one of the four answers is {{}}.", f:"correct", ko:"네 답 중 하나만 옳다." }] },
+
+  { word:"correction", pron:"커렉션", pos:"n", level:"B2", meanings:["정정","수정"],
+    syn:["amendment","revision","fix"],
+    ex:[{ s:"She made one small {{}} in pencil.", f:"correction", ko:"그녀는 연필로 작은 정정 하나를 했다." }] },
+
+  { word:"correlate", pron:"코럴레이트", pos:"v", level:"C1", meanings:["상관관계가 있다","연관되다"],
+    syn:["relate","associate","match"],
+    ex:[{ s:"Height does not {{}} with talent.", f:"correlate", ko:"키는 재능과 상관관계가 없다." }],
+    col:[{ p:"correlate closely {{}} income", a:"with", pool:"prep", note:"correlate with : ~와 상관관계가 있다" }] },
+
+  /* 원문은 '인과관계'를 함께 적었지만, 상관관계와 인과관계를 구별하는 것이
+     이 단어의 핵심이므로(causality의 예문이 바로 그 이야기다) 넣지 않는다 */
+  { word:"correlation", pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
+    syn:["connection","link","relationship"],
+    ex:[{ s:"There is only a weak {{}} between the two.", f:"correlation", ko:"그 둘 사이에는 약한 상관관계만 있다." }] },
+
+  /* ── correspond 5형제 ──────────────────────
+     공통 접두사 10글자로 서로 갈라야 하는데 한 챕터의 보드는 4개뿐이다.
+     5개를 4개에 나누면 한 보드는 반드시 둘을 받는다(검증이 최소치로 확인). */
+  { word:"correspond to", pron:"코러스판드 투", pos:"phr", level:"B2", meanings:["~에 일치하다","들어맞다"],
+    syn:["match","equal","fit"], ant:["differ"] },
+
+  { word:"correspondence", pron:"코러스판던스", pos:"n", level:"C1", meanings:["서신","편지"],
+    syn:["letters","mail","communication"],
+    ex:[{ s:"Their {{}} lasted nearly forty years.", f:"correspondence", ko:"그들의 서신 교환은 거의 40년간 이어졌다." }] },
+
+  { word:"correspondent", pron:"코러스판던트", pos:"n", level:"C1", meanings:["특파원","통신원"],
+    syn:["reporter","journalist","writer"],
+    ex:[{ s:"Our {{}} in Rome filed the story overnight.", f:"correspondent", ko:"로마 특파원이 밤새 기사를 보냈다." }] },
+
+  { word:"corresponding", pron:"코러스판딩", pos:"adj", level:"B2", meanings:["상응하는","해당하는"],
+    syn:["equivalent","matching","parallel"], ant:["unrelated"],
+    ex:[{ s:"Sales rose in the {{}} month last year.", f:"corresponding", ko:"작년 같은 달에도 매출이 올랐다." }] },
+
+  { word:"correspondingly", pron:"코러스판딩리", pos:"adv", level:"C1", meanings:["상응하여","그에 맞춰"],
+    syn:["accordingly","proportionally","likewise"],
+    ex:[{ s:"Costs fell and prices dropped {{}}.", f:"correspondingly", ko:"비용이 내려가자 가격도 그에 맞춰 떨어졌다." }] },
+
+  { word:"corridor", pron:"코리더", pos:"n", level:"B2", meanings:["복도"],
+    syn:["hallway","passage","aisle"],
+    ex:[{ s:"A long {{}} led to the back office.", f:"corridor", ko:"긴 복도가 뒤쪽 사무실로 이어졌다." }] },
+
+  { word:"corrosion", pron:"커로전", pos:"n", level:"C1", meanings:["부식","녹"],
+    syn:["rust","decay","erosion"],
+    ex:[{ s:"Salt air speeds up {{}} on the bridge.", f:"corrosion", ko:"염분 있는 공기가 다리의 부식을 가속한다." }] },
+
+  { word:"corrupt", pron:"커럽트", pos:"adj", level:"B2", meanings:["부패한","타락시키다"],
+    syn:["dishonest","crooked","venal"], ant:["honest"],
+    ex:[{ s:"The inspector turned out to be {{}}.", f:"corrupt", ko:"그 조사관은 부패한 것으로 드러났다." }] },
+
+  { word:"cosmopolitan", pron:"카즈모폴리턴", pos:"adj", level:"C2", meanings:["국제적인","시야가 넓은"],
+    syn:["worldly","international","urbane"], ant:["provincial"],
+    ex:[{ s:"The port grew into a {{}} city.", f:"cosmopolitan", ko:"그 항구는 국제적인 도시로 성장했다." }] },
+
+  { word:"cosmos", pron:"카즈모스", pos:"n", level:"C1", meanings:["우주","천지만물"],
+    syn:["universe","creation","space"],
+    ex:[{ s:"Ancient people mapped the {{}} by eye alone.", f:"cosmos", ko:"고대인들은 맨눈으로 우주를 지도에 담았다." }] },
+
+  /* ── coun ─────────────────────────────────── */
+  { word:"council", pron:"카운슬", pos:"n", level:"B1", meanings:["협의회","심의회"],
+    syn:["board","assembly","panel"],
+    ex:[{ s:"The city {{}} rejected the plan twice.", f:"council", ko:"시 협의회는 그 계획을 두 번 거부했다." }] },
+
+  { word:"count on", pron:"카운트 온", pos:"phr", level:"B1", meanings:["~을 믿다","기대하다"],
+    syn:["rely","trust","depend"], ant:["doubt"] },
+
+  /* ── counter 9형제 ────────────────────────
+     20챕터에 이 아홉 개가 모두 들어간다. 보드 4개에 나누면
+     [3,2,2,2]가 최선이고 같은 보드 쌍이 6개 남는다 — 알파벳 순서로
+     챕터를 자르는 구조상 피할 수 없다. */
+  { word:"counter", pron:"카운터", pos:"adj", level:"C1", meanings:["반대의","거꾸로"],
+    syn:["opposing","contrary","adverse"], ant:["parallel"],
+    ex:[{ s:"His view runs {{}} to all the evidence.", f:"counter", ko:"그의 견해는 모든 증거와 반대로 간다." }] },
+
+  { word:"counteract", pron:"카운터랙트", pos:"v", level:"C1", meanings:["대응하다","중화하다"],
+    syn:["offset","neutralize","resist"], ant:["reinforce"],
+    ex:[{ s:"Lime is used to {{}} soil acidity.", f:"counteract", ko:"석회는 토양의 산성을 중화하는 데 쓰인다." }] },
+
+  { word:"counterattack", pron:"카운터어택", pos:"n", level:"C1", meanings:["역습","반격"],
+    syn:["retaliation","reprisal","comeback"], ant:["retreat"],
+    ex:[{ s:"The army launched a {{}} at dawn.", f:"counterattack", ko:"군대는 새벽에 역습을 시작했다." }] },
+
+  { word:"counterbalance", pron:"카운터밸런스", pos:"v", level:"C2", meanings:["균형을 잡아 주다","상쇄하다"],
+    syn:["offset","compensate","equalize"],
+    ex:[{ s:"Fuel savings {{}} the higher purchase price.", f:"counterbalance", ko:"연료 절감이 더 높은 구매 가격을 상쇄한다." }] },
+
+  { word:"counterclockwise", pron:"카운터클락와이즈", pos:"adv", level:"B2", meanings:["시계 반대 방향으로"],
+    syn:["leftward","anticlockwise","backward"], ant:["clockwise"],
+    ex:[{ s:"Loosen the cap by turning it {{}}.", f:"counterclockwise", ko:"뚜껑을 시계 반대 방향으로 돌려 풀어라." }] },
+
+  { word:"counterexample", pron:"카운터이그잼플", pos:"n", level:"C2", meanings:["반증","반례"],
+    syn:["exception","refutation","contradiction"],
+    ex:[{ s:"A single {{}} is enough to break the rule.", f:"counterexample", ko:"반례 하나면 그 규칙을 깨기에 충분하다." }] },
+
+  { word:"counterfeit", pron:"카운터핏", pos:"adj", level:"C1", meanings:["가짜의","위조의"],
+    syn:["fake","forged","bogus"], ant:["genuine"],
+    ex:[{ s:"The notes turned out to be {{}}.", f:"counterfeit", ko:"그 지폐들은 위조된 것으로 드러났다." }] },
+
+  { word:"counterpart", pron:"카운터파트", pos:"n", level:"C1", meanings:["대응물","상대방"],
+    syn:["equivalent","peer","match"],
+    ex:[{ s:"She met her {{}} from the Paris office.", f:"counterpart", ko:"그녀는 파리 지사의 상대방을 만났다." }] },
+
+  { word:"counterproductive", pron:"카운터프러덕티브", pos:"adj", level:"C1", meanings:["역효과를 내는"],
+    syn:["harmful","damaging","self-defeating"], ant:["effective"],
+    ex:[{ s:"Shouting proved entirely {{}}.", f:"counterproductive", ko:"소리치는 것은 완전히 역효과였다." }] },
+
+  { word:"countless", pron:"카운틀리스", pos:"adj", level:"B1", meanings:["셀 수 없이 많은","무수한"],
+    syn:["innumerable","myriad","endless"], ant:["few"],
+    ex:[{ s:"He tried {{}} times before it worked.", f:"countless", ko:"그는 성공하기까지 수없이 시도했다." }] },
+
+  /* ── cour · cov ───────────────────────────── */
+  { word:"courageous", pron:"커레이저스", pos:"adj", level:"B2", meanings:["용감한","담대한"],
+    syn:["brave","bold","valiant"], ant:["cowardly"],
+    ex:[{ s:"It was a {{}} decision to speak up.", f:"courageous", ko:"목소리를 낸 것은 용감한 결정이었다." }] },
+
+  { word:"course assessment", pron:"코스 어세스먼트", pos:"n", level:"C1", meanings:["강의 평가"],
+    syn:["review","evaluation","feedback"],
+    ex:[{ s:"Students fill in a {{}} each term.", f:"course assessment", ko:"학생들은 학기마다 강의 평가를 작성한다." }] },
+
+  { word:"courteous", pron:"커티어스", pos:"adj", level:"B2", meanings:["예의 바른","공손한"],
+    syn:["polite","civil","gracious"], ant:["rude"],
+    ex:[{ s:"The staff stayed {{}} under real pressure.", f:"courteous", ko:"직원들은 큰 압박 속에서도 예의를 지켰다." }] },
+
+  { word:"courtesy", pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
+    syn:["politeness","manners","respect"], ant:["rudeness"],
+    ex:[{ s:"He held the door open out of plain {{}}.", f:"courtesy", ko:"그는 순전히 예의로 문을 잡아 주었다." }] },
+
+  { word:"cover", pron:"커버", pos:"v", level:"B1", meanings:["보장하다","다루다"],
+    syn:["include","insure","handle"], ant:["exclude"],
+    ex:[{ s:"Does the policy {{}} flood damage?", f:"cover", ko:"그 보험이 홍수 피해를 보장합니까?" }] },
+
+  { word:"coverage", pron:"커버리지", pos:"n", level:"B2", meanings:["취재","적용 범위"],
+    syn:["reporting","range","scope"],
+    ex:[{ s:"The trial got heavy news {{}}.", f:"coverage", ko:"그 재판은 뉴스에서 대대적으로 취재되었다." }] },
+
+  { word:"cowardly", pron:"카워들리", pos:"adj", level:"B2", meanings:["겁이 많은","비겁한"],
+    syn:["timid","craven","spineless"], ant:["courageous"],
+    ex:[{ s:"Running away felt {{}} to him afterwards.", f:"cowardly", ko:"나중에 그는 도망친 것이 비겁하게 느껴졌다." }] },
+
+  { word:"cozy", pron:"코지", pos:"adj", level:"B1", meanings:["아늑한","편안한"],
+    syn:["snug","comfortable","homely"], ant:["bleak"],
+    ex:[{ s:"The attic room is small but {{}}.", f:"cozy", ko:"그 다락방은 작지만 아늑하다." }] },
+
+  /* ── cra · cre ────────────────────────────── */
+  { word:"crack", pron:"크랙", pos:"n", level:"B1", meanings:["갈라진 틈","금"],
+    syn:["fissure","split","gap"],
+    ex:[{ s:"A thin {{}} ran across the glass.", f:"crack", ko:"얇은 금이 유리를 가로질러 갔다." }] },
+
+  { word:"crack down on", pron:"크랙 다운 온", pos:"phr", level:"C1", meanings:["~에 단호한 조치를 취하다"],
+    syn:["suppress","clamp","police"], ant:["tolerate"] },
+
+  { word:"craft", pron:"크래프트", pos:"n", level:"B2", meanings:["공예","기능"],
+    syn:["trade","skill","handiwork"],
+    ex:[{ s:"Basket weaving is a dying {{}} here.", f:"craft", ko:"바구니 짜기는 이곳에서 사라져 가는 공예다." }] },
+
+  { word:"craftsmanship", pron:"크래프츠먼십", pos:"n", level:"C1", meanings:["손재주","솜씨"],
+    syn:["workmanship","artistry","skill"],
+    ex:[{ s:"The cabinet shows remarkable {{}}.", f:"craftsmanship", ko:"그 장은 놀라운 솜씨를 보여 준다." }] },
+
+  { word:"cram", pron:"크램", pos:"v", level:"B2", meanings:["밀어 넣다","벼락치기로 공부하다"],
+    syn:["stuff","jam","pack"],
+    ex:[{ s:"He tried to {{}} a week of study into one night.", f:"cram", ko:"그는 일주일치 공부를 하룻밤에 밀어 넣으려 했다." }],
+    col:[{ p:"cram everything {{}} one bag", a:"into", pool:"prep", note:"cram A into B : A를 B에 밀어 넣다" }] },
+
+  /* 첫 뜻을 '충돌'로 두면 clash·collision(3차)과 카드 문구가 겹친다 */
+  { word:"crash", pron:"크래시", pos:"v", level:"B1", meanings:["부서지다","추락하다"],
+    syn:["smash","wreck","collide"],
+    ex:[{ s:"The old plane began to {{}} into the trees.", f:"crash", ko:"낡은 비행기가 나무들 속으로 부서져 들어갔다." }],
+    col:[{ p:"crash {{}} a parked van", a:"into", pool:"prep", note:"crash into : ~에 충돌하다" }] },
+
+  { word:"crater", pron:"크레이터", pos:"n", level:"B2", meanings:["분화구","움푹 팬 곳"],
+    syn:["hollow","pit","basin"],
+    ex:[{ s:"Rain filled the {{}} with green water.", f:"crater", ko:"비가 분화구를 초록빛 물로 채웠다." }] },
+
+  { word:"crave", pron:"크레이브", pos:"v", level:"C1", meanings:["갈망하다","열망하다"],
+    syn:["yearn","desire","hunger"], ant:["dislike"],
+    ex:[{ s:"Runners often {{}} salt after a long race.", f:"crave", ko:"주자들은 긴 경기 뒤에 소금을 갈망하곤 한다." }] },
+
+  /* crave와 카드에서 겹치지 않게 '강한 욕구'로 세운다 */
+  { word:"craving", pron:"크레이빙", pos:"n", level:"C1", meanings:["강한 욕구","열망"],
+    syn:["longing","urge","appetite"], ant:["aversion"],
+    ex:[{ s:"A sudden {{}} for sugar hit her at midnight.", f:"craving", ko:"자정에 갑작스러운 단것에 대한 욕구가 그녀를 덮쳤다." }] },
+
+  { word:"crawl", pron:"크롤", pos:"v", level:"B1", meanings:["기어가다","서행하다"],
+    syn:["creep","inch","slither"], ant:["sprint"],
+    ex:[{ s:"The baby began to {{}} at seven months.", f:"crawl", ko:"그 아기는 7개월에 기기 시작했다." }] },
+
+  { word:"craze", pron:"크레이즈", pos:"n", level:"C1", meanings:["대유행","열풍"],
+    syn:["fad","trend","mania"],
+    ex:[{ s:"Roller skating became a national {{}}.", f:"craze", ko:"롤러스케이트는 전국적인 대유행이 되었다." }] },
+
+  { word:"creak", pron:"크리크", pos:"v", level:"B2", meanings:["삐걱거리다"],
+    syn:["squeak","groan","grate"],
+    ex:[{ s:"The floorboards {{}} under his weight.", f:"creaked", ko:"바닥 판자가 그의 무게에 삐걱거렸다." }] },
+
+  { word:"creation", pron:"크리에이션", pos:"n", level:"B1", meanings:["창작물","창작"],
+    syn:["work","invention","product"],
+    ex:[{ s:"The garden is entirely her own {{}}.", f:"creation", ko:"그 정원은 전적으로 그녀 자신의 창작물이다." }] },
+
+  { word:"creativity", pron:"크리에이티비티", pos:"n", level:"B1", meanings:["창조력","독창성"],
+    syn:["imagination","originality","inventiveness"],
+    ex:[{ s:"The job rewards {{}} over speed.", f:"creativity", ko:"그 일은 속도보다 창조력에 보답한다." }] },
+
+  { word:"creator", pron:"크리에이터", pos:"n", level:"B1", meanings:["창작자"],
+    syn:["author","maker","designer"],
+    ex:[{ s:"The {{}} of the series never explained the ending.", f:"creator", ko:"그 시리즈의 창작자는 결말을 끝내 설명하지 않았다." }] }
 ];
 
 /* ── 반의어 뜻 사전 (병합) ──────────────────────
@@ -1495,8 +1750,10 @@ Object.assign(window.ANT_DICT, {
   "acute":"급성의, 심각한",
   "adjourn":"산회하다, 휴회하다",
   "applaud":"칭찬하다, 박수를 보내다",
+  "aversion":"혐오, 질색",
   "baffling":"당혹스러운, 알 수 없는",
   "barbarism":"야만, 미개",
+  "bleak":"황량한, 쓸쓸한",
   "blessing":"축복, 다행",
   "briefly":"잠깐, 짧게",
   "bulky":"부피가 큰, 커서 다루기 힘든",
@@ -1526,6 +1783,7 @@ Object.assign(window.ANT_DICT, {
   "dilate":"확장되다, 넓히다",
   "dilute":"희석하다, 묽게 하다",
   "direct":"직접적인",
+  "dislike":"싫어하다",
   "disperse":"흩어지다, 분산시키다",
   "dispute":"논쟁, 분쟁",
   "dissent":"반대하다, 이견",
@@ -1534,8 +1792,11 @@ Object.assign(window.ANT_DICT, {
   "division":"분열, 분할",
   "doubt":"의심, 의문",
   "doubtful":"의심스러운, 불확실한",
+  "dubious":"의심스러운, 수상한",
   "earthly":"지상의, 세속의",
   "ease":"쉬움, 편안함",
+  "edge":"가장자리, 끝",
+  "effective":"효과적인",
   "effortless":"힘이 들지 않는",
   "element":"원소, 요소",
   "emotional":"감정적인",
@@ -1547,6 +1808,7 @@ Object.assign(window.ANT_DICT, {
   "expand":"확장하다, 늘리다",
   "expert":"전문가",
   "exposure":"노출, 드러남",
+  "few":"거의 없는, 소수의",
   "fixed":"고정된",
   "flee":"도망치다",
   "floor":"바닥, 층",
@@ -1558,7 +1820,9 @@ Object.assign(window.ANT_DICT, {
   "free":"자유로운, 풀려난",
   "freedom":"자유",
   "fresh":"신선한, 갓 만든",
+  "frosty":"쌀쌀한, 냉랭한",
   "frown":"얼굴을 찡그리다",
+  "genuine":"진짜의, 진품의",
   "graceful":"우아한, 매끄러운",
   "greed":"탐욕",
   "guess":"짐작하다, 추측",
@@ -1567,6 +1831,7 @@ Object.assign(window.ANT_DICT, {
   "harmony":"조화, 화합",
   "herbivorous":"초식(성)의",
   "hesitation":"주저, 망설임",
+  "honest":"정직한",
   "hush":"조용해지다, 잠잠해지다",
   "identical":"똑같은, 동일한",
   "incapable":"~할 수 없는",
@@ -1586,6 +1851,7 @@ Object.assign(window.ANT_DICT, {
   "military":"군사의, 군대의",
   "minor":"사소한, 작은",
   "misread":"잘못 읽다, 오해하다",
+  "mistaken":"잘못된, 틀린",
   "noble":"귀족, 고귀한",
   "nonprofit":"비영리의",
   "novel":"새로운, 신기한",
@@ -1593,12 +1859,14 @@ Object.assign(window.ANT_DICT, {
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
   "obscure":"잘 알려지지 않은; 모호하게 하다",
+  "obstruct":"방해하다, 막다",
   "occasional":"때때로의, 간간이 있는",
   "open":"공개된, 열린",
   "opening":"시작, 개막",
   "optional":"선택적인",
   "orderly":"정돈된, 질서 있는",
   "original":"원본, 원래의",
+  "parallel":"평행한, 유사한",
   "partial":"부분적인, 편향된",
   "peripheral":"주변의, 부차적인",
   "permit":"허용하다",
@@ -1608,6 +1876,7 @@ Object.assign(window.ANT_DICT, {
   "produce":"생산하다",
   "producer":"생산자",
   "production":"생산, 생산량",
+  "provincial":"지방의, 편협한",
   "public":"공개된, 공공의",
   "punish":"처벌하다",
   "purify":"정화하다",
@@ -1618,15 +1887,20 @@ Object.assign(window.ANT_DICT, {
   "reckless":"무모한, 부주의한",
   "refund":"환불하다, 환불",
   "refute":"반박하다, 논박하다",
+  "reinforce":"강화하다",
   "repulsion":"혐오, 반발",
   "request":"요청, 요청하다",
   "respect":"존중, 존경",
   "restless":"안절부절못하는",
   "restore":"돌려주다, 복원하다",
   "result":"결과",
+  "retreat":"후퇴, 후퇴하다",
   "return":"돌려주다, 반환",
   "reveal":"드러내다, 밝히다",
   "rival":"경쟁자",
+  "rivalry":"경쟁, 대립",
+  "rude":"무례한",
+  "rudeness":"무례함",
   "ruthless":"무자비한",
   "scatter":"흩뿌리다",
   "scattering":"흩어짐, 산재",
@@ -1638,7 +1912,9 @@ Object.assign(window.ANT_DICT, {
   "single-sex":"남녀를 구분한",
   "skinny":"깡마른",
   "soldier":"군인",
+  "spiritual":"정신적인, 영적인",
   "sporadic":"산발적인, 이따금의",
+  "sprint":"전력으로 달리다",
   "squander":"낭비하다",
   "stagnate":"고이다, 정체되다",
   "stalemate":"교착 상태",
@@ -1646,10 +1922,13 @@ Object.assign(window.ANT_DICT, {
   "steady":"한결같은, 안정된",
   "straightforward":"단순명료한, 쉬운",
   "subordinate":"부하, 하급자",
+  "succumb":"굴복하다, 쓰러지다",
+  "tolerate":"용인하다, 참다",
   "triumph":"승리, 대성공",
   "trivial":"사소한",
   "undisputed":"논란의 여지가 없는",
   "unlike":"~와 달리, 다른",
+  "unrelated":"관련 없는",
   "unwittingly":"무심코, 자기도 모르게",
   "upset":"속상하게 하다",
   "vagueness":"모호함",
