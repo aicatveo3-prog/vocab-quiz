@@ -16,7 +16,7 @@
  * 넘고, 보기 넷을 늘어놓으면 읽을 수 없다. 그래서 대표 뜻 2개만 남긴다.
  * 첫 뜻에는 괄호 설명을 넣지 않는다 — 카드에서 가장 크게 보이는 자리다.
  *
- * 진행 상황: 120/466단어 (calamity ~ cite) — 2차.
+ * 진행 상황: 180/466단어 (calamity ~ comet) — 3차.
  */
 window.VOCAB_C = [
   /* ── cal ───────────────────────────────────── */
@@ -501,7 +501,245 @@ window.VOCAB_C = [
 
   { word:"cite", pron:"사이트", pos:"v", level:"B2", meanings:["인용하다","언급하다"],
     syn:["quote","mention","reference"],
-    ex:[{ s:"The judge went on to {{}} three earlier rulings.", f:"cite", ko:"판사는 이어 이전 판결 세 건을 인용했다." }] }
+    ex:[{ s:"The judge went on to {{}} three earlier rulings.", f:"cite", ko:"판사는 이어 이전 판결 세 건을 인용했다." }] },
+
+  { word:"citizenship", pron:"시티즌십", pos:"n", level:"B2", meanings:["시민권"],
+    syn:["nationality","residency","status"],
+    ex:[{ s:"He applied for {{}} after ten years abroad.", f:"citizenship", ko:"그는 10년간 외국에 산 뒤 시민권을 신청했다." }] },
+
+  /* ── civ ───────────────────────────────────── */
+  { word:"civic", pron:"시빅", pos:"adj", level:"C1", meanings:["시민의","시의"],
+    syn:["municipal","public","communal"], ant:["private"],
+    ex:[{ s:"Voting is treated as a basic {{}} duty here.", f:"civic", ko:"이곳에서 투표는 기본적인 시민의 의무로 여겨진다." }] },
+
+  { word:"civil", pron:"시빌", pos:"adj", level:"B2", meanings:["민간의","정중한"],
+    syn:["civilian","domestic","nonmilitary"], ant:["military"],
+    ex:[{ s:"The airport now handles only {{}} flights.", f:"civil", ko:"그 공항은 이제 민간 항공편만 취급한다." }] },
+
+  { word:"civilian", pron:"서빌리언", pos:"n", level:"B2", meanings:["민간인","일반 시민"],
+    syn:["noncombatant","resident","citizen"], ant:["soldier"],
+    ex:[{ s:"No {{}} was allowed within a mile of the base.", f:"civilian", ko:"기지에서 1마일 안으로는 민간인이 들어갈 수 없었다." }] },
+
+  { word:"civilization", pron:"시벌라이제이션", pos:"n", level:"B2", meanings:["문명"],
+    syn:["culture","society","development"], ant:["barbarism"],
+    ex:[{ s:"The valley gave rise to an early farming {{}}.", f:"civilization", ko:"그 계곡에서 초기 농경 문명이 일어났다." }] },
+
+  { word:"civilize", pron:"시벌라이즈", pos:"v", level:"C1", meanings:["교화하다","세련되게 하다"],
+    syn:["refine","cultivate","enlighten"],
+    ex:[{ s:"The empire claimed a mission to {{}} distant lands.", f:"civilize", ko:"그 제국은 먼 땅을 교화한다는 사명을 내세웠다." }] },
+
+  /* ── cla · cle · cli ───────────────────────── */
+  { word:"claim", pron:"클레임", pos:"v", level:"B1", meanings:["주장하다","요구하다"],
+    syn:["assert","maintain","demand"], ant:["deny"],
+    ex:[{ s:"Two groups {{}} responsibility for the fire.", f:"claimed", ko:"두 단체가 그 화재에 대한 책임을 주장했다." }],
+    col:[{ p:"claim responsibility {{}} the attack", a:"for", pool:"prep", note:"claim responsibility for : ~에 대한 책임을 주장하다" }] },
+
+  { word:"clan", pron:"클랜", pos:"n", level:"C1", meanings:["씨족","부족"],
+    syn:["tribe","family","kin"],
+    ex:[{ s:"Every {{}} sent one elder to the council.", f:"clan", ko:"각 씨족은 원로 한 명을 회의에 보냈다." }] },
+
+  { word:"clarify", pron:"클래러파이", pos:"v", level:"B2", meanings:["명확하게 하다","분명히 하다"],
+    syn:["explain","elucidate","specify"], ant:["obscure"],
+    ex:[{ s:"Let me {{}} what I meant earlier.", f:"clarify", ko:"앞서 내가 뜻한 바를 분명히 하겠다." }] },
+
+  { word:"clarity", pron:"클래러티", pos:"n", level:"B2", meanings:["명확성","명료성"],
+    syn:["lucidity","precision","transparency"], ant:["vagueness"],
+    ex:[{ s:"The report lacks {{}} on where the money went.", f:"clarity", ko:"그 보고서는 돈이 어디로 갔는지가 명확하지 않다." }] },
+
+  { word:"clash", pron:"클래시", pos:"n", level:"B2", meanings:["충돌","대립"],
+    syn:["conflict","confrontation","collision"], ant:["harmony"],
+    ex:[{ s:"A {{}} between rival fans stopped the match.", f:"clash", ko:"라이벌 팬들 사이의 충돌로 경기가 중단되었다." }] },
+
+  { word:"classified", pron:"클래서파이드", pos:"adj", level:"B2", meanings:["기밀의","분류된"],
+    syn:["secret","confidential","restricted"], ant:["public"],
+    ex:[{ s:"The file stays {{}} for another fifty years.", f:"classified", ko:"그 파일은 앞으로 50년 더 기밀로 유지된다." }] },
+
+  { word:"classify", pron:"클래서파이", pos:"v", level:"B2", meanings:["분류하다","구분하다"],
+    syn:["categorize","sort","group"],
+    ex:[{ s:"Botanists {{}} these plants as ferns.", f:"classify", ko:"식물학자들은 이 식물을 양치류로 분류한다." }] },
+
+  { word:"clatter", pron:"클래터", pos:"v", level:"C1", meanings:["달가닥거리다","덜컹거리다"],
+    syn:["rattle","clank","bang"], ant:["hush"],
+    ex:[{ s:"The pans {{}} onto the tiled floor.", f:"clattered", ko:"냄비들이 타일 바닥으로 달가닥거리며 떨어졌다." }] },
+
+  { word:"clear one's throat", pron:"클리어 원스 스로트", pos:"phr", level:"B2", meanings:["목청을 가다듬다","헛기침을 하다"],
+    syn:["cough","hem","rasp"] },
+
+  { word:"clergy", pron:"클러지", pos:"n", level:"C1", meanings:["성직자","목사"],
+    syn:["priesthood","ministry","cleric"], ant:["laity"],
+    ex:[{ s:"Local {{}} joined the march for housing.", f:"clergy", ko:"지역 성직자들이 주거 문제 행진에 참여했다." }] },
+
+  { word:"cliche", pron:"클리셰", pos:"n", level:"C1", meanings:["상투적인 어구","진부한 표현"],
+    syn:["platitude","banality","truism"],
+    ex:[{ s:"The speech was built out of tired {{}}.", f:"cliches", ko:"그 연설은 낡은 상투적 표현으로 짜여 있었다." }] },
+
+  { word:"client", pron:"클라이언트", pos:"n", level:"B1", meanings:["의뢰인","고객"],
+    syn:["customer","patron","buyer"],
+    ex:[{ s:"Every {{}} gets the same first meeting.", f:"client", ko:"모든 의뢰인은 똑같은 첫 상담을 받는다." }] },
+
+  { word:"clinical", pron:"클리니컬", pos:"adj", level:"B2", meanings:["임상의","냉정한"],
+    syn:["medical","diagnostic","detached"],
+    ex:[{ s:"The drug passed its first {{}} trial.", f:"clinical", ko:"그 약은 첫 임상 시험을 통과했다." }] },
+
+  { word:"clipping", pron:"클리핑", pos:"n", level:"B2", meanings:["오려낸 기사","스크랩"],
+    syn:["cutting","excerpt","extract"],
+    ex:[{ s:"She kept a yellowed {{}} from the local paper.", f:"clipping", ko:"그녀는 지역 신문에서 오려낸 누런 기사를 보관했다." }] },
+
+  { word:"clique", pron:"클리크", pos:"n", level:"C2", meanings:["파벌","패거리"],
+    syn:["faction","coterie","circle"],
+    ex:[{ s:"A small {{}} controlled every decision.", f:"clique", ko:"작은 파벌이 모든 결정을 통제했다." }] },
+
+  { word:"clockwise", pron:"클락와이즈", pos:"adv", level:"B2", meanings:["시계 방향으로"],
+    syn:["rightward","around","circularly"], ant:["counterclockwise"],
+    ex:[{ s:"Turn the dial {{}} to lock the door.", f:"clockwise", ko:"문을 잠그려면 손잡이를 시계 방향으로 돌려라." }] },
+
+  { word:"clone", pron:"클론", pos:"n", level:"B2", meanings:["복제 생물","클론"],
+    syn:["duplicate","copy","replica"], ant:["original"],
+    ex:[{ s:"The lamb was the first {{}} of its kind.", f:"clone", ko:"그 양은 그 종류로는 첫 복제 생물이었다." }] },
+
+  { word:"clumsy", pron:"클럼지", pos:"adj", level:"B1", meanings:["서투른","어설픈"],
+    syn:["awkward","inept","ungainly"], ant:["graceful"],
+    ex:[{ s:"His {{}} apology only made things worse.", f:"clumsy", ko:"그의 어설픈 사과는 상황을 더 나쁘게 만들었다." }] },
+
+  { word:"cluster", pron:"클러스터", pos:"n", level:"B2", meanings:["무리","덩어리"],
+    syn:["bunch","batch","clump"], ant:["scattering"],
+    ex:[{ s:"A {{}} of small islands lies just offshore.", f:"cluster", ko:"작은 섬 무리가 해안 바로 앞에 있다." }] },
+
+  /* ── coa · coc · cod · coe ─────────────────── */
+  { word:"coarse", pron:"코스", pos:"adj", level:"B2", meanings:["거친","조잡한"],
+    syn:["rough","crude","harsh"], ant:["smooth"],
+    ex:[{ s:"The blanket felt {{}} against her skin.", f:"coarse", ko:"그 담요는 그녀의 피부에 거칠게 느껴졌다." }] },
+
+  { word:"cocoon", pron:"커쿤", pos:"n", level:"C1", meanings:["고치","보호막"],
+    syn:["casing","shell","wrap"],
+    ex:[{ s:"The larva spins a {{}} of fine silk.", f:"cocoon", ko:"유충은 고운 실로 고치를 짓는다." }] },
+
+  { word:"cod", pron:"카드", pos:"n", level:"B2", meanings:["대구"],
+    syn:["fish","haddock","pollock"],
+    ex:[{ s:"Fishermen once landed {{}} here by the ton.", f:"cod", ko:"어부들은 한때 여기서 대구를 톤 단위로 잡아 올렸다." }] },
+
+  { word:"coed", pron:"코에드", pos:"adj", level:"C1", meanings:["남녀공학의","남녀공용의"],
+    syn:["mixed","joint","integrated"], ant:["single-sex"],
+    ex:[{ s:"It became a {{}} school in the seventies.", f:"coed", ko:"그곳은 70년대에 남녀공학 학교가 되었다." }] },
+
+  { word:"coeducation", pron:"코에듀케이션", pos:"n", level:"C1", meanings:["남녀 공학"],
+    syn:["integration","mixing","inclusion"],
+    ex:[{ s:"The college debated {{}} for a decade.", f:"coeducation", ko:"그 대학은 10년간 남녀 공학을 두고 논쟁했다." }] },
+
+  { word:"coexist", pron:"코이그지스트", pos:"v", level:"C1", meanings:["공존하다"],
+    syn:["cohabit","accompany","survive"], ant:["clash"],
+    ex:[{ s:"The two species {{}} in the same shallow lake.", f:"coexist", ko:"그 두 종은 같은 얕은 호수에서 공존한다." }] },
+
+  /* ── cog · coh · coi ───────────────────────── */
+  { word:"cognitive", pron:"카그니티브", pos:"adj", level:"C1", meanings:["인지의","인식의"],
+    syn:["mental","intellectual","rational"], ant:["emotional"],
+    ex:[{ s:"Puzzles sharpen {{}} skills in young children.", f:"cognitive", ko:"퍼즐은 어린 아이의 인지 능력을 날카롭게 한다." }] },
+
+  { word:"coherent", pron:"코히런트", pos:"adj", level:"C1", meanings:["일관성 있는","논리정연한"],
+    syn:["logical","consistent","lucid"], ant:["rambling"],
+    ex:[{ s:"He could not give a {{}} account of that night.", f:"coherent", ko:"그는 그날 밤에 대해 논리정연한 설명을 하지 못했다." }] },
+
+  { word:"cohesion", pron:"코히전", pos:"n", level:"C1", meanings:["화합","결속"],
+    syn:["unity","solidarity","bonding"], ant:["division"],
+    ex:[{ s:"Shared hardship built {{}} within the crew.", f:"cohesion", ko:"함께 겪은 고난이 승무원들 사이에 화합을 만들었다." }] },
+
+  { word:"cohesive", pron:"코히시브", pos:"adj", level:"C2", meanings:["결합력 있는","화합하는"],
+    syn:["united","integrated","tight-knit"], ant:["fragmented"],
+    ex:[{ s:"A {{}} group resists pressure from outside.", f:"cohesive", ko:"결합력 있는 집단은 외부의 압력에 잘 버틴다." }] },
+
+  { word:"coin", pron:"코인", pos:"n", level:"B1", meanings:["동전","새 말을 만들다"],
+    syn:["change","currency","token"],
+    ex:[{ s:"He found an old {{}} under the floorboards.", f:"coin", ko:"그는 바닥 판자 아래에서 오래된 동전을 발견했다." }] },
+
+  { word:"coincide", pron:"코인사이드", pos:"v", level:"C1", meanings:["동시에 일어나다","일치하다"],
+    syn:["overlap","concur","match"], ant:["differ"],
+    ex:[{ s:"Her visit will {{}} with the harvest festival.", f:"coincide", ko:"그녀의 방문은 추수 축제와 겹칠 것이다." }],
+    col:[{ p:"coincide {{}} the holiday", a:"with", pool:"prep", note:"coincide with : ~와 겹치다·일치하다" }] },
+
+  { word:"coincidence", pron:"코인시던스", pos:"n", level:"B2", meanings:["우연의 일치"],
+    syn:["chance","accident","fluke"], ant:["design"],
+    ex:[{ s:"Meeting him twice in one day was pure {{}}.", f:"coincidence", ko:"하루에 그를 두 번 만난 것은 순전히 우연이었다." }] },
+
+  /* ── col ───────────────────────────────────── */
+  { word:"collaborate", pron:"컬래버레이트", pos:"v", level:"B2", meanings:["공동으로 일하다","협동하다"],
+    syn:["cooperate","partner","team up"], ant:["compete"],
+    ex:[{ s:"Rival labs agreed to {{}} on one vaccine.", f:"collaborate", ko:"경쟁하던 연구소들이 하나의 백신을 두고 협력하기로 했다." }],
+    col:[{ p:"collaborate {{}} a rival firm", a:"with", pool:"prep", note:"collaborate with : ~와 협력하다" }] },
+
+  { word:"collapse", pron:"컬랩스", pos:"v", level:"B2", meanings:["무너지다","붕괴"],
+    syn:["crumble","fall","cave in"], ant:["endure"],
+    ex:[{ s:"The roof began to {{}} under the weight of snow.", f:"collapse", ko:"지붕이 눈의 무게에 무너지기 시작했다." }] },
+
+  { word:"colleague", pron:"칼리그", pos:"n", level:"B1", meanings:["동료"],
+    syn:["coworker","associate","peer"], ant:["rival"],
+    ex:[{ s:"A {{}} offered to cover his night shift.", f:"colleague", ko:"동료 한 명이 그의 야간 근무를 대신해 주겠다고 했다." }] },
+
+  { word:"collect on", pron:"컬렉트 온", pos:"phr", level:"C2", meanings:["~을 상환받다","수령하다"],
+    syn:["recover","claim","redeem"] },
+
+  { word:"collective", pron:"컬렉티브", pos:"adj", level:"B2", meanings:["집단의","공동의"],
+    syn:["joint","shared","communal"], ant:["individual"],
+    ex:[{ s:"The vote was a {{}} decision, not the chair's.", f:"collective", ko:"그 표결은 의장이 아니라 집단의 결정이었다." }] },
+
+  { word:"collide", pron:"컬라이드", pos:"v", level:"B2", meanings:["충돌하다","상충하다"],
+    syn:["clash","crash","hit"], ant:["avoid"],
+    ex:[{ s:"Two trains almost {{}} near the old bridge.", f:"collided", ko:"두 기차가 낡은 다리 근처에서 거의 충돌할 뻔했다." }] },
+
+  { word:"collide with", pron:"컬라이드 위드", pos:"phr", level:"B2", meanings:["~와 충돌하다"],
+    syn:["strike","ram","bump"], ant:["avoid"] },
+
+  { word:"collision", pron:"컬리전", pos:"n", level:"B2", meanings:["충돌 사고","부딪침"],
+    syn:["crash","impact","wreck"],
+    ex:[{ s:"The {{}} crumpled both front doors.", f:"collision", ko:"그 충돌 사고로 앞문 두 짝이 찌그러졌다." }] },
+
+  { word:"colony", pron:"칼러니", pos:"n", level:"B1", meanings:["식민지","군집"],
+    syn:["settlement","territory","outpost"],
+    ex:[{ s:"The island was once a French {{}}.", f:"colony", ko:"그 섬은 한때 프랑스 식민지였다." }] },
+
+  { word:"column", pron:"칼럼", pos:"n", level:"B1", meanings:["칼럼","기고란"],
+    syn:["article","feature","piece"],
+    ex:[{ s:"She writes a weekly {{}} about street food.", f:"column", ko:"그녀는 길거리 음식에 대한 주간 칼럼을 쓴다." }] },
+
+  /* ── com ───────────────────────────────────── */
+  { word:"combination", pron:"캄비네이션", pos:"n", level:"B1", meanings:["조합","배합"],
+    syn:["mixture","blend","pairing"], ant:["separation"],
+    ex:[{ s:"The lock opens with a three-digit {{}}.", f:"combination", ko:"그 자물쇠는 세 자리 조합으로 열린다." }] },
+
+  { word:"combine", pron:"컴바인", pos:"v", level:"B1", meanings:["결합하다","합치다"],
+    syn:["merge","unite","blend"], ant:["separate"],
+    ex:[{ s:"{{}} the dry ingredients before adding milk.", f:"Combine", ko:"우유를 넣기 전에 가루 재료를 섞어라." }] },
+
+  { word:"combustion", pron:"컴버스천", pos:"n", level:"C1", meanings:["연소","발화"],
+    syn:["burning","ignition","oxidation"],
+    ex:[{ s:"Incomplete {{}} fills the room with smoke.", f:"combustion", ko:"불완전 연소는 방을 연기로 채운다." }] },
+
+  { word:"come about", pron:"컴 어바웃", pos:"phr", level:"B2", meanings:["일어나다","발생하다"],
+    syn:["happen","occur","arise"] },
+
+  { word:"come across", pron:"컴 어크로스", pos:"phr", level:"B1", meanings:["우연히 마주치다","발견하다"],
+    syn:["encounter","find","stumble on"], ant:["seek"] },
+
+  { word:"come into existence", pron:"컴 인투 이그지스턴스", pos:"phr", level:"C1", meanings:["탄생하다","생겨나다"],
+    syn:["emerge","originate","form"], ant:["vanish"] },
+
+  { word:"come into sight", pron:"컴 인투 사이트", pos:"phr", level:"B2", meanings:["보이기 시작하다","시야에 들어오다"],
+    syn:["appear","emerge","surface"], ant:["disappear"] },
+
+  { word:"come to an end", pron:"컴 투 언 엔드", pos:"phr", level:"B1", meanings:["끝나다","막을 내리다"],
+    syn:["finish","conclude","terminate"], ant:["commence"] },
+
+  { word:"come to mind", pron:"컴 투 마인드", pos:"phr", level:"B2", meanings:["생각나다","떠오르다"],
+    syn:["occur","strike","register"], ant:["escape"] },
+
+  { word:"come to pass", pron:"컴 투 패스", pos:"phr", level:"C2", meanings:["발생하다","생기다"],
+    syn:["happen","transpire","unfold"] },
+
+  { word:"come up with", pron:"컴 업 위드", pos:"phr", level:"B1", meanings:["찾아내다","제안하다"],
+    syn:["devise","invent","propose"], ant:["abandon"] },
+
+  { word:"comet", pron:"카밋", pos:"n", level:"B2", meanings:["혜성"],
+    syn:["meteor","asteroid","fireball"],
+    ex:[{ s:"The {{}} returns every seventy-six years.", f:"comet", ko:"그 혜성은 76년마다 돌아온다." }] }
 ];
 
 /* ── 반의어 뜻 사전 (병합) ──────────────────────
@@ -510,51 +748,81 @@ window.VOCAB_C = [
    ⚠️ 재대입(=)이 아니라 Object.assign으로 합쳐야 A·B 세트 것이 살아남는다. */
 Object.assign(window.ANT_DICT, {
   "acute":"급성의, 심각한",
+  "barbarism":"야만, 미개",
   "blessing":"축복, 다행",
   "briefly":"잠깐, 짧게",
+  "commence":"시작되다, 시작하다",
+  "compete":"경쟁하다",
+  "confirm":"확인하다, 확정하다",
+  "continue":"계속하다",
+  "counterclockwise":"시계 반대 방향으로",
+  "design":"의도, 계획",
+  "differ":"다르다",
   "direct":"직접적인",
   "disperse":"흩어지다, 분산시키다",
+  "division":"분열, 분할",
   "doubt":"의심, 의문",
   "doubtful":"의심스러운, 불확실한",
   "earthly":"지상의, 세속의",
   "ease":"쉬움, 편안함",
   "effortless":"힘이 들지 않는",
-  "expert":"전문가",
-  "flee":"도망치다",
-  "freedom":"자유",
-  "frown":"얼굴을 찡그리다",
-  "greed":"탐욕",
-  "permit":"허용하다",
-  "random":"무작위의",
-  "refund":"환불하다, 환불",
-  "orderly":"정돈된, 질서 있는",
-  "peripheral":"주변의, 부차적인",
-  "repulsion":"혐오, 반발",
-  "skinny":"깡마른",
-  "stagnate":"고이다, 정체되다",
-  "warm":"따뜻한",
-  "confirm":"확인하다, 확정하다",
-  "continue":"계속하다",
+  "emotional":"감정적인",
+  "endure":"견디다, 지속되다",
+  "escape":"벗어나다, 빠져나가다",
   "evasive":"회피하는, 둘러대는",
+  "expert":"전문가",
   "exposure":"노출, 드러남",
+  "flee":"도망치다",
   "floor":"바닥, 층",
   "formal":"격식을 갖춘, 공식적인",
+  "fragmented":"조각난, 분열된",
   "free":"자유로운, 풀려난",
+  "freedom":"자유",
   "fresh":"신선한, 갓 만든",
+  "frown":"얼굴을 찡그리다",
+  "graceful":"우아한, 매끄러운",
+  "greed":"탐욕",
   "guess":"짐작하다, 추측",
-  "harmless":"해롭지 않은",
-  "minor":"사소한, 작은",
-  "reckless":"무모한, 부주의한",
-  "result":"결과",
-  "steady":"한결같은, 안정된",
   "guesswork":"어림짐작",
+  "harmless":"해롭지 않은",
+  "harmony":"조화, 화합",
   "herbivorous":"초식(성)의",
+  "hush":"조용해지다, 잠잠해지다",
   "incapable":"~할 수 없는",
+  "individual":"개인의, 개별의",
   "lag":"뒤처지다",
-  "obscure":"잘 알려지지 않은",
+  "laity":"평신도",
+  "military":"군사의, 군대의",
+  "minor":"사소한, 작은",
+  // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
+  "obscure":"잘 알려지지 않은; 모호하게 하다",
   "occasional":"때때로의, 간간이 있는",
+  "orderly":"정돈된, 질서 있는",
+  "original":"원본, 원래의",
+  "peripheral":"주변의, 부차적인",
+  "permit":"허용하다",
+  "private":"사적인, 민간의",
   "proceed":"진행하다, 계속하다",
+  "public":"공개된, 공공의",
+  "rambling":"산만한, 종횡무진인",
+  "random":"무작위의",
+  "reckless":"무모한, 부주의한",
+  "refund":"환불하다, 환불",
+  "repulsion":"혐오, 반발",
+  "result":"결과",
+  "rival":"경쟁자",
+  "scattering":"흩어짐, 산재",
+  "seek":"찾다, 구하다",
+  "separation":"분리, 분할",
   "shortage":"부족, 결핍",
+  "single-sex":"남녀를 구분한",
+  "skinny":"깡마른",
+  "soldier":"군인",
+  "stagnate":"고이다, 정체되다",
   "stare":"응시하다, 빤히 보다",
-  "triumph":"승리, 대성공"
+  "steady":"한결같은, 안정된",
+  "triumph":"승리, 대성공",
+  "vagueness":"모호함",
+  "vanish":"사라지다",
+  "warm":"따뜻한"
 });
