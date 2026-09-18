@@ -2,12 +2,31 @@
  * store.js — localStorage 기반 학습 기록 저장소
  *
  * 저장 항목
- *   words[word]  : { m: 숙련도 0~5, seen: 노출 횟수, ok: 정답 수, ng: 오답 수,
- *                    lastWrong: 타임스탬프|null, at: 마지막 수정 시각 }
+ *   words[word]  : { seen: 노출 횟수, ok: 정답 수, ng: 오답 수,
+ *                    lastWrong: 타임스탬프|null, wn: 오답 노트 차수 0~3,
+ *                    at: 마지막 수정 시각 }
  *   saved[word]  : { at: 시각, on: true|false }  저장(북마크)한 단어
  *   days[YYYY-MM-DD] : 그날 푼 문제 수
  *   streak       : 연속 학습일
  *   lastDay      : 마지막 학습 날짜
+ *
+ * ── 오답 노트 3차 구조 ──────────────────────────
+ * wn은 "그 단어가 도달한 최고 차수"다. 목록은 이렇게 나온다.
+ *
+ *   1차 목록 = wn >= 1      ← 2차·3차 단어도 여기 모두 포함된다
+ *   2차 목록 = wn >= 2      ← 3차 단어도 여기 포함된다
+ *   3차 목록 = wn >= 3
+ *
+ * 그래서 "2차로 복사된다"는 규칙이 wn을 2로 올리는 것 하나로 표현된다.
+ * 데이터가 중복되지 않으면서 1차·2차 양쪽 목록에 자동으로 나타난다.
+ *
+ * 승급은 "복습에서도 또 틀렸다"만 센다.
+ *   일반 연습에서 틀림  → 아직 없으면 1차. 이미 1차 이상이면 그대로
+ *   1차 복습에서 틀림   → 2차   /   2차 복습에서 틀림 → 3차   /   3차는 최고
+ *   맞힘                → 아무 일도 없다. 목록에서 사라지지 않는다
+ *
+ * 빠지는 길은 ✕(removeWrong) 하나뿐이다. 예전에는 숙련도가 최고치에 닿으면
+ * 자동으로 빠졌지만, 숙련도 시스템 자체를 없애면서 그 출구도 함께 없어졌다.
  *
  * at(마지막 수정 시각)은 기기 간 병합의 기준이다. mergeData()가 단어 하나하나에
  * 대해 at이 더 새로운 쪽을 택하기 때문에, 폰과 PC에서 서로 다른 단어를 공부해도
@@ -18,7 +37,7 @@
  */
 window.Store = (function () {
   var KEY = 'vocabQuiz.v1';
-  var MAX_MASTERY = 5;
+  var MAX_TIER = 3;          // 오답 노트 차수 (1차·2차·3차)
 
   var state = load();
 
@@ -44,7 +63,7 @@ window.Store = (function () {
   }
 
   /* 기록이 바뀔 때마다 알린다. 동기화 계층이 이걸 듣고 "보낼 것이 있다"고
-     표시한다. 호출부(record·toggleSaved·clearWrong…)마다 알림을 흩뿌리지 않고
+     표시한다. 호출부(record·toggleSaved·removeWrong…)마다 알림을 흩뿌리지 않고
      save() 한 곳에 두면 빠뜨리는 경로가 생기지 않는다. */
   var changeHooks = [];
 
@@ -81,22 +100,37 @@ window.Store = (function () {
 
   function rec(word) {
     if (!state.words[word]) {
-      state.words[word] = { m: 0, seen: 0, ok: 0, ng: 0, lastWrong: null, at: 0 };
+      state.words[word] = { seen: 0, ok: 0, ng: 0, lastWrong: null, wn: 0, at: 0 };
     }
     return state.words[word];
   }
 
-  /** 정답/오답 1건 기록 */
-  function record(word, correct) {
+  /**
+   * 정답/오답 1건 기록
+   * @param reviewTier 오답 노트 복습 중이면 그 차수(1~3), 일반 연습이면 없음.
+   *   승급 규칙이 이 값에 달려 있다 — 어느 차수에서 틀렸는지 알아야
+   *   다음 차수로 올릴 수 있다.
+   */
+  function record(word, correct, reviewTier) {
     var r = rec(word);
     r.seen++;
     if (correct) {
       r.ok++;
-      if (r.m < MAX_MASTERY) r.m++;
+      // 맞혀도 오답 노트에서 빼지 않는다. 한 번 맞힌 것은 운일 수 있다.
     } else {
       r.ng++;
       r.lastWrong = Date.now();
-      if (r.m > 0) r.m--;
+      var cur = tierOf(r);
+      if (!reviewTier) {
+        /* 일반 연습(정복·개별 연습)에서 틀렸다.
+           아직 오답 노트에 없을 때만 1차로 넣는다. 이미 1차 이상이면 그대로 둔다 —
+           개별 연습은 630단어를 통째로 풀어 같은 단어를 자주 만나므로, 여기서도
+           승급시키면 며칠 만에 거의 다 3차가 되어 차수의 의미가 사라진다. */
+        if (cur === 0) r.wn = 1;
+      } else {
+        // 복습에서 틀렸다 → 그 차수의 다음 단계로. 이미 더 높으면 유지.
+        r.wn = Math.max(cur, Math.min(reviewTier + 1, MAX_TIER));
+      }
     }
     r.at = Date.now();      // 병합 기준 — 이 단어를 마지막으로 만진 시각
     touchDay();
@@ -104,7 +138,7 @@ window.Store = (function () {
     save();
   }
 
-  /** 짝 맞추기에서 마지막 남은 쌍처럼 숙련도를 올리지 않고 노출만 기록할 때 */
+  /** 짝 맞추기에서 마지막 남은 쌍처럼 정오 판정 없이 노출만 기록할 때 */
   function recordExposureOnly(word) {
     var r = rec(word);
     r.seen++;
@@ -122,32 +156,70 @@ window.Store = (function () {
     }
   }
 
-  function mastery(word) {
-    return state.words[word] ? state.words[word].m : 0;
-  }
-
   function info(word) {
-    return state.words[word] || { m: 0, seen: 0, ok: 0, ng: 0, lastWrong: null };
+    return state.words[word] ||
+      { seen: 0, ok: 0, ng: 0, lastWrong: null, wn: 0, at: 0 };
   }
 
-  /** 오답 노트: 마지막에 틀렸고 아직 숙련도가 낮은 단어 목록 (최근 오답 우선) */
-  function wrongList() {
+  /* ── 오답 노트 차수 ─────────────────────────── */
+
+  /**
+   * 레코드가 도달한 오답 노트 차수 (0 = 목록에 없음).
+   * wn이 없는 레코드는 이 필드가 생기기 전에 만들어진 것이다.
+   * 틀린 적이 있으면(lastWrong) 1차로 본다 — 기존 사용자의 오답 노트가
+   * 그대로 1차에서 이어진다.
+   */
+  function tierOf(r) {
+    if (!r) return 0;
+    if (typeof r.wn === 'number') return r.wn;
+    return r.lastWrong ? 1 : 0;
+  }
+
+  /** 단어의 차수 (0~3) */
+  function tier(word) {
+    return tierOf(state.words[word]);
+  }
+
+  /** 정렬 기준 — 오답으로 들어온 시각이 없으면(북마크로 편입) 수정 시각을 쓴다 */
+  function wrongAt(r) {
+    return (r && (r.lastWrong || r.at)) || 0;
+  }
+
+  /**
+   * 오답 노트 목록 (최근 것 우선)
+   * @param minTier 1이면 1차 목록(2·3차 포함), 2면 2차 이상, 3이면 3차만. 기본 1.
+   */
+  function wrongList(minTier) {
+    var min = minTier || 1;
     return Object.keys(state.words)
-      .filter(function (w) {
-        var r = state.words[w];
-        return r.lastWrong && r.m < MAX_MASTERY;
-      })
+      .filter(function (w) { return tierOf(state.words[w]) >= min; })
       .sort(function (a, b) {
-        return state.words[b].lastWrong - state.words[a].lastWrong;
+        return wrongAt(state.words[b]) - wrongAt(state.words[a]);
       });
   }
 
-  function clearWrong(word) {
-    if (state.words[word]) {
-      state.words[word].lastWrong = null;
-      state.words[word].at = Date.now();
-      save();
-    }
+  /** 차수별 개수 — 홈 카드와 차수 칩에 쓴다 */
+  function wrongCounts() {
+    var c = [0, 0, 0, 0];    // [미사용, 1차, 2차, 3차]
+    Object.keys(state.words).forEach(function (w) {
+      var t = tierOf(state.words[w]);
+      for (var i = 1; i <= t && i <= MAX_TIER; i++) c[i]++;
+    });
+    return { 1: c[1], 2: c[2], 3: c[3] };
+  }
+
+  /**
+   * 오답 노트에서 완전히 뺀다 (✕ 버튼). 유일한 퇴출 경로다.
+   * lastWrong까지 지워야 한다 — 안 지우면 tierOf의 하위 호환 경로
+   * (lastWrong이 있으면 1차)로 되살아난다.
+   */
+  function removeWrong(word) {
+    var r = state.words[word];
+    if (!r) return;
+    r.wn = 0;
+    r.lastWrong = null;
+    r.at = Date.now();
+    save();
   }
 
   /* ── 저장(북마크)한 단어 ───────────────────────
@@ -162,17 +234,25 @@ window.Store = (function () {
     return !!(s && s.on);
   }
 
+  function setSaved(word, on) {
+    state.saved[word] = { at: Date.now(), on: !!on };
+    /* 북마크하면 1차 오답 노트에 자동으로 넣는다.
+       "이 단어 더 연습하고 싶다"는 뜻이므로 복습 대상에 올리는 것이 자연스럽다.
+       이미 1차 이상이면 차수를 내리지 않는다.
+       북마크를 해제해도 오답 노트에서는 빠지지 않는다 — 그 사이에 차수가
+       올라갔을 수 있고, 빼는 것은 ✕ 버튼의 몫이다. */
+    if (on) {
+      var r = rec(word);
+      if (tierOf(r) === 0) { r.wn = 1; r.at = Date.now(); }
+    }
+    save();
+  }
+
   /** 저장 상태를 뒤집고 결과를 돌려준다 */
   function toggleSaved(word) {
     var on = !isSaved(word);
-    state.saved[word] = { at: Date.now(), on: on };
-    save();
+    setSaved(word, on);
     return on;
-  }
-
-  function setSaved(word, on) {
-    state.saved[word] = { at: Date.now(), on: !!on };
-    save();
   }
 
   /** 저장한 단어 목록 (최근 저장 우선) */
@@ -198,30 +278,17 @@ window.Store = (function () {
   }
 
   /** 전체 진척도 요약 */
-  /** 숙련도를 추가로 올린다 (정복 모드에서 4단계를 모두 통과했을 때의 보너스) */
-  function boost(word, amount) {
-    var r = rec(word);
-    r.m = Math.min(MAX_MASTERY, r.m + (amount || 1));
-    r.at = Date.now();
-    save();
-  }
-
   function summary(totalWords) {
-    var studied = 0, mastered = 0, sumMastery = 0;
+    var studied = 0;
     Object.keys(state.words).forEach(function (w) {
-      var r = state.words[w];
-      if (r.seen > 0) studied++;
-      if (r.m >= MAX_MASTERY) mastered++;
-      sumMastery += r.m;
+      if (state.words[w].seen > 0) studied++;
     });
     return {
       total: totalWords,
       studied: studied,
-      mastered: mastered,
       streak: state.streak,
       today: todayCount(),
-      totalAnswered: state.totalAnswered,
-      avgMastery: studied ? (sumMastery / studied) : 0
+      totalAnswered: state.totalAnswered
     };
   }
 
@@ -263,10 +330,21 @@ window.Store = (function () {
     var out = JSON.parse(JSON.stringify(base));
     if (!incoming || typeof incoming !== 'object') return out;
 
-    // 단어별 — at이 더 새로운 쪽을 통째로 택한다
+    /* 단어별 — at이 더 새로운 쪽을 통째로 택한다.
+       내게 없는 단어는 무조건 받는다. at이 없는(0인) 오래된 레코드도
+       받아야 하므로 `!mine` 조건이 필요하다 — 이게 없으면 이 필드가 생기기
+       전에 만들어진 기록이 새 기기로 넘어오지 못한다. */
     var inWords = incoming.words || {};
     Object.keys(inWords).forEach(function (w) {
-      if (atOf(inWords[w]) > atOf(out.words[w])) out.words[w] = inWords[w];
+      var mine = out.words[w], theirs = inWords[w];
+      if (!mine || atOf(theirs) > atOf(mine)) out.words[w] = theirs;
+
+      /* 오답 노트 차수는 후퇴하면 안 된다.
+         오프라인이던 기기가 나중에 그 단어를 건드리면 레코드가 더 새로워지는데,
+         그 기기는 다른 기기에서 올라간 차수를 모른다. 통째로 교체하면 3차가
+         1차로 되돌아간다. 그래서 차수만 따로 max를 취한다. */
+      var top = Math.max(tierOf(mine), tierOf(theirs));
+      if (top > 0 && out.words[w]) out.words[w].wn = top;
     });
 
     // 저장 목록 — 해제(on:false)도 시각으로 판정해야 되살아나지 않는다
@@ -419,14 +497,14 @@ window.Store = (function () {
   }
 
   return {
-    MAX_MASTERY: MAX_MASTERY,
+    MAX_TIER: MAX_TIER,
     record: record,
     recordExposureOnly: recordExposureOnly,
-    boost: boost,
-    mastery: mastery,
     info: info,
+    tier: tier,
     wrongList: wrongList,
-    clearWrong: clearWrong,
+    wrongCounts: wrongCounts,
+    removeWrong: removeWrong,
     isSaved: isSaved,
     toggleSaved: toggleSaved,
     setSaved: setSaved,

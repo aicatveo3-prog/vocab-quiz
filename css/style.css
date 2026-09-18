@@ -82,12 +82,8 @@ b,strong{font-weight:600}
 .prog-val b{font-size:20px;color:var(--txt);margin-right:2px}
 .bar{display:flex;height:6px;background:var(--surface-2);border-radius:var(--r-pill);overflow:hidden}
 .bar i{display:block;height:100%;transition:width .3s ease}
-#bar-mastered{background:var(--ok)}
-#bar-studied{background:var(--accent);opacity:.35}
-.prog-legend{display:flex;gap:16px;margin-top:10px;font-size:11px;color:var(--dim)}
-.prog-legend .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px}
-.dot-ok{background:var(--ok)}
-.dot-ac{background:var(--accent);opacity:.35}
+#bar-studied{background:var(--accent)}
+
 
 /* ── 정복 모드 카드 (주역) ─────────────────── */
 .hero{display:block;width:100%;text-align:left;margin:24px 0 10px;
@@ -333,9 +329,6 @@ b,strong{font-weight:600}
 .li-top{display:flex;align-items:center;gap:8px}
 .li-top b{font-size:15px}
 .li-tag{font-size:11px;color:var(--dimmer)}
-.li-m{margin-left:auto;display:flex;gap:3px}
-.li-m i{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
-.li-m i.on{background:var(--ok)}
 .li-mean{font-size:13px;color:var(--txt-2);margin-top:3px}
 .li-syn{font-size:12px;color:var(--dimmer);margin-top:2px}
 
@@ -402,6 +395,20 @@ b,strong{font-weight:600}
 .hero-alt:active{background:var(--surface-2);opacity:1}
 .hero-alt .hero-n{color:var(--ng);opacity:1;font-weight:600}
 .hero-alt .hero-sub{color:var(--dim);opacity:1}
+
+/* ══════════ 오답 노트 차수 ══════════
+   차수가 올라갈수록 진해진다 — 3차가 가장 안 외워지는 단어다. */
+.li-tier{margin-left:auto;flex:0 0 auto;font-size:11px;font-weight:600;
+  padding:2px 7px;border-radius:var(--r-pill);white-space:nowrap}
+.li-tier:empty{padding:0}
+.li-tier.is-t1{background:var(--ng-soft);border:1px solid var(--ng-line);color:var(--ng);opacity:.7}
+.li-tier.is-t2{background:var(--ng-soft);border:1px solid var(--ng-line);color:var(--ng)}
+.li-tier.is-t3{background:var(--ng);border:1px solid var(--ng);color:#fff}
+
+/* 오답 노트에서 직접 빼는 버튼 */
+.row-del{flex:0 0 auto;margin-left:8px;background:none;border:none;
+  color:var(--dimmer);font-size:14px;line-height:1;padding:2px 4px;transition:color .12s}
+.row-del:hover{color:var(--ng)}
 
 /* ══════════ 계정 · 동기화 ══════════ */
 
