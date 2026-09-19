@@ -204,39 +204,47 @@ window.Modes = (function () {
         });
       }
 
-      // 아닌 것 고르기: 답을 고른 뒤 각 선택지에 유의어/반의어 여부를 표시
+      /* 아닌 것 고르기: 답을 고른 뒤 각 선택지에 유의어/반의어 여부를 표시.
+       *
+       * ⚠️ 유의어 칸에 표제어의 뜻을 찍으면 안 된다.
+       * calamity 문제에서 misfortune·disaster·catastrophe가 모두 "= 재난"이 되어
+       * 세 줄이 똑같아진다. 반복이 지저분한 것보다 나쁜 문제가 있다 —
+       * misfortune은 '불운'이고 catastrophe는 '대참사'다. 서로 다른 뜻을 가진
+       * 단어들을 같은 말이라고 가르치는 셈이 된다.
+       *
+       * 그래서 유의어도 "그 단어 자신의 뜻"을 보여준다. 단어장에 없는 유의어는
+       * 한국어 뜻을 가진 데가 없으므로, 뜻을 지어내지 않고 관계만 밝힌다. */
       if (q.mode === 'not') {
         var allWords = window.Quiz.ALL;
-        var mainObj = null;
-        for (var k = 0; k < allWords.length; k++) {
-          if (allWords[k].word === q.word) { mainObj = allWords[k]; break; }
-        }
+        var findWord = function (lower) {
+          for (var i = 0; i < allWords.length; i++) {
+            if (allWords[i].word.toLowerCase() === lower) return allWords[i];
+          }
+          return null;
+        };
+        var mainObj = findWord(String(q.word).toLowerCase());
         if (mainObj) {
           var syns = (mainObj.syn || []).map(function (s) { return s.toLowerCase(); });
           buttons.forEach(function (b) {
             var val = b._value.toLowerCase();
             var isSyn = syns.indexOf(val) !== -1;
+            var obj = findWord(val);          // 선택지 단어가 단어장에 있으면 그 뜻을 쓴다
             var detail = el('div', 'opt-detail');
             if (isSyn) {
-              detail.textContent = '= ' + mainObj.meanings[0] + ' (유의어)';
+              detail.textContent = obj
+                ? '= ' + b._value + ': ' + obj.meanings.join(', ')
+                : mainObj.word + '와 바꿔 쓸 수 있는 말';
             } else {
-              // 정답(바꿔 쓸 수 없는 것) — VOCAB에서 찾아 뜻을 보여준다
-              var ansObj = null;
-              for (var j = 0; j < allWords.length; j++) {
-                if (allWords[j].word.toLowerCase() === val) { ansObj = allWords[j]; break; }
-              }
-              if (ansObj) {
-                detail.textContent = '≠ ' + b._value + ': ' + ansObj.meanings.join(', ');
-              } else {
-                // VOCAB에 없는 반의어 — ANT_DICT에서 뜻을 찾는다
-                var antMeaning = window.ANT_DICT && window.ANT_DICT[b._value.toLowerCase()];
-                detail.textContent = antMeaning
+              // 정답(바꿔 쓸 수 없는 것). 단어장에 없으면 ANT_DICT에서 뜻을 찾는다.
+              var antMeaning = obj ? null : (window.ANT_DICT && window.ANT_DICT[val]);
+              detail.textContent = obj
+                ? '≠ ' + b._value + ': ' + obj.meanings.join(', ')
+                : (antMeaning
                   ? '≠ ' + b._value + ': ' + antMeaning
-                  : '≠ ' + b._value + ' (반의어)';
-              }
+                  : '≠ ' + b._value + ' (반의어)');
             }
-            b.classList.add("has-detail");
-          b.appendChild(detail);
+            b.classList.add('has-detail');
+            b.appendChild(detail);
           });
         }
       }
