@@ -16,7 +16,7 @@
  * 넘고, 보기 넷을 늘어놓으면 읽을 수 없다. 그래서 대표 뜻 2개만 남긴다.
  * 첫 뜻에는 괄호 설명을 넣지 않는다 — 카드에서 가장 크게 보이는 자리다.
  *
- * 진행 상황: 420/466단어 (calamity ~ creator) — 7차.
+ * 진행 상황: 466단어 전량 완료 (calamity ~ cynicism) — 24챕터.
  */
 window.VOCAB_C = [
   /* ── cal ───────────────────────────────────── */
@@ -1739,7 +1739,200 @@ window.VOCAB_C = [
 
   { word:"creator", pron:"크리에이터", pos:"n", level:"B1", meanings:["창작자"],
     syn:["author","maker","designer"],
-    ex:[{ s:"The {{}} of the series never explained the ending.", f:"creator", ko:"그 시리즈의 창작자는 결말을 끝내 설명하지 않았다." }] }
+    ex:[{ s:"The {{}} of the series never explained the ending.", f:"creator", ko:"그 시리즈의 창작자는 결말을 끝내 설명하지 않았다." }] },
+
+  /* 첫 뜻을 '신념'으로 두면 conviction(6차)과 카드 문구가 똑같아진다 */
+  { word:"creed", pron:"크리드", pos:"n", level:"C2", meanings:["신조","교리"],
+    syn:["doctrine","belief","dogma"],
+    ex:[{ s:"The group has never had a written {{}}.", f:"creed", ko:"그 단체는 한 번도 문서로 된 신조를 가진 적이 없다." }] },
+
+  { word:"creek", pron:"크리크", pos:"n", level:"B2", meanings:["개울","시내"],
+    syn:["stream","brook","rivulet"],
+    ex:[{ s:"They waded across a shallow {{}}.", f:"creek", ko:"그들은 얕은 개울을 걸어서 건넜다." }] },
+
+  { word:"creep", pron:"크리프", pos:"v", level:"B2", meanings:["천천히 움직이다","기어오르다"],
+    syn:["crawl","inch","slink"], ant:["dash"],
+    ex:[{ s:"Ivy began to {{}} up the north wall.", f:"creep", ko:"담쟁이가 북쪽 벽을 타고 오르기 시작했다." }] },
+
+  /* ── cri · cro · cru ──────────────────────── */
+  /* culprit(범인)과 겹치지 않게 '범죄자'로 세운다 */
+  { word:"criminal", pron:"크리미널", pos:"n", level:"B1", meanings:["범죄자","범죄의"],
+    syn:["offender","felon","lawbreaker"], ant:["victim"],
+    ex:[{ s:"The {{}} was caught just two days later.", f:"criminal", ko:"그 범죄자는 불과 이틀 뒤에 잡혔다." }] },
+
+  { word:"cripple", pron:"크리플", pos:"v", level:"C1", meanings:["심각한 손상을 주다","마비시키다"],
+    syn:["disable","paralyze","incapacitate"], ant:["restore"],
+    ex:[{ s:"A long strike could {{}} the whole port.", f:"cripple", ko:"장기 파업은 항구 전체를 마비시킬 수 있다." }] },
+
+  { word:"criterion", pron:"크라이티리언", pos:"n", level:"C1", meanings:["기준","표준"],
+    syn:["standard","benchmark","measure"],
+    ex:[{ s:"Price was not the only {{}} they used.", f:"criterion", ko:"가격이 그들이 쓴 유일한 기준은 아니었다." }] },
+
+  { word:"critical", pron:"크리티컬", pos:"adj", level:"B1", meanings:["중요한","비판적인"],
+    syn:["vital","crucial","disapproving"], ant:["trivial"],
+    ex:[{ s:"The next hour is {{}} for the patient.", f:"critical", ko:"다음 한 시간이 그 환자에게 중요하다." }] },
+
+  { word:"critique", pron:"크리틱", pos:"n", level:"C1", meanings:["비평","평론"],
+    syn:["review","analysis","appraisal"],
+    ex:[{ s:"She wrote a sharp {{}} of the film.", f:"critique", ko:"그녀는 그 영화에 대한 날카로운 비평을 썼다." }] },
+
+  { word:"crooked", pron:"크루키드", pos:"adj", level:"B2", meanings:["구불구불한","곧지 않은"],
+    syn:["bent","winding","twisted"], ant:["straight"],
+    ex:[{ s:"A {{}} path wound up the hillside.", f:"crooked", ko:"구불구불한 길이 언덕을 따라 올라갔다." }] },
+
+  { word:"crossbreed", pron:"크로스브리드", pos:"v", level:"C2", meanings:["교배하다","잡종을 만들다"],
+    syn:["hybridize","interbreed","mix"],
+    ex:[{ s:"Farmers began to {{}} the two varieties.", f:"crossbreed", ko:"농부들은 두 품종을 교배하기 시작했다." }] },
+
+  { word:"cross-cultural", pron:"크로스 컬처럴", pos:"adj", level:"C1", meanings:["문화간의"],
+    syn:["intercultural","multicultural","comparative"],
+    ex:[{ s:"The study is a {{}} comparison of diets.", f:"cross-cultural", ko:"그 연구는 식단에 대한 문화간 비교다." }] },
+
+  { word:"cross-reference", pron:"크로스 레퍼런스", pos:"n", level:"C1", meanings:["상호 참조"],
+    syn:["citation","pointer","link"],
+    ex:[{ s:"Each entry carries a {{}} to the map.", f:"cross-reference", ko:"각 항목에는 지도로 가는 상호 참조가 달려 있다." }] },
+
+  { word:"crucial", pron:"크루셜", pos:"adj", level:"B2", meanings:["결정적인","매우 중요한"],
+    syn:["decisive","vital","pivotal"], ant:["minor"],
+    ex:[{ s:"Timing was {{}} to the whole rescue.", f:"crucial", ko:"타이밍이 구조 전체에 결정적이었다." }],
+    col:[{ p:"crucial {{}} our success", a:"to", pool:"prep", note:"be crucial to : ~에 결정적이다" }] },
+
+  { word:"crude", pron:"크루드", pos:"adj", level:"B2", meanings:["대충의","원유"],
+    syn:["rough","raw","unrefined"], ant:["refined"],
+    ex:[{ s:"He made a {{}} sketch on a napkin.", f:"crude", ko:"그는 냅킨에 대충 스케치를 했다." }] },
+
+  { word:"cruel", pron:"크루얼", pos:"adj", level:"B1", meanings:["잔인한","잔혹한"],
+    syn:["brutal","savage","heartless"], ant:["humane"],
+    ex:[{ s:"It seems {{}} to keep birds in cages.", f:"cruel", ko:"새를 우리에 두는 것은 잔인해 보인다." }] },
+
+  { word:"cruise", pron:"크루즈", pos:"v", level:"B2", meanings:["순항하다","선박 여행"],
+    syn:["sail","voyage","glide"],
+    ex:[{ s:"The ship will {{}} past three small islands.", f:"cruise", ko:"그 배는 작은 섬 세 개를 지나 순항할 것이다." }] },
+
+  /* 원문의 '빨다'는 '빻다'의 오기로 보인다. 첫 뜻은 crash(부서지다)와
+     겹치지 않게 '바스러지다'로 세운다 */
+  { word:"crumble", pron:"크럼블", pos:"v", level:"B2", meanings:["바스러지다","빻다"],
+    syn:["disintegrate","crush","collapse"],
+    ex:[{ s:"The dry soil began to {{}} in his hand.", f:"crumble", ko:"마른 흙이 그의 손에서 바스러지기 시작했다." }] },
+
+  { word:"crunchy", pron:"크런치", pos:"adj", level:"B1", meanings:["바삭바삭한"],
+    syn:["crisp","brittle","firm"], ant:["soggy"],
+    ex:[{ s:"The salad needs something {{}} on top.", f:"crunchy", ko:"그 샐러드는 위에 바삭한 것이 필요하다." }] },
+
+  { word:"crust", pron:"크러스트", pos:"n", level:"B2", meanings:["지각","껍질"],
+    syn:["shell","layer","rind"],
+    ex:[{ s:"The Earth's {{}} is thinnest under the sea.", f:"crust", ko:"지구의 지각은 바다 아래가 가장 얇다." }] },
+
+  { word:"crutch", pron:"크러치", pos:"n", level:"B2", meanings:["목발"],
+    syn:["support","prop","cane"],
+    ex:[{ s:"He walked in with a single {{}}.", f:"crutch", ko:"그는 목발 하나를 짚고 들어왔다." }] },
+
+  { word:"crystal-clear", pron:"크리스털 클리어", pos:"adj", level:"B2", meanings:["아주 투명한","수정같이 맑은"],
+    syn:["transparent","limpid","obvious"], ant:["murky"],
+    ex:[{ s:"The water in the pool is {{}}.", f:"crystal-clear", ko:"그 못의 물은 아주 투명하다." }] },
+
+  { word:"crystallize", pron:"크리스털라이즈", pos:"v", level:"C2", meanings:["확고해지다","구체화되다"],
+    syn:["solidify","harden","form"], ant:["dissolve"],
+    ex:[{ s:"Her vague doubts slowly began to {{}}.", f:"crystallize", ko:"그녀의 막연한 의심이 서서히 구체화되기 시작했다." }] },
+
+  /* ── cu ───────────────────────────────────── */
+  { word:"cube", pron:"큐브", pos:"n", level:"B1", meanings:["정육면체"],
+    syn:["block","dice","square"],
+    ex:[{ s:"Drop one {{}} of ice into the glass.", f:"cube", ko:"유리잔에 얼음 한 조각을 넣어라." }] },
+
+  { word:"cubic", pron:"큐빅", pos:"adj", level:"B2", meanings:["입방의","3제곱의"],
+    syn:["volumetric","solid","three-dimensional"],
+    ex:[{ s:"The tank holds two {{}} metres of water.", f:"cubic", ko:"그 탱크는 물 2세제곱미터를 담는다." }] },
+
+  { word:"cue", pron:"큐", pos:"n", level:"B2", meanings:["신호","단서"],
+    syn:["signal","hint","prompt"],
+    ex:[{ s:"A short nod was the {{}} to begin.", f:"cue", ko:"짧은 고갯짓이 시작하라는 신호였다." }] },
+
+  { word:"cuisine", pron:"퀴진", pos:"n", level:"B2", meanings:["요리법","음식"],
+    syn:["cooking","food","fare"],
+    ex:[{ s:"The region is known for its simple {{}}.", f:"cuisine", ko:"그 지역은 소박한 요리법으로 유명하다." }] },
+
+  /* come to an end(끝나다)와 겹치지 않게 '정점에 이르다'로 세운다 */
+  { word:"culminate", pron:"컬머네이트", pos:"v", level:"C1", meanings:["정점에 이르다","~으로 끝나다"],
+    syn:["climax","conclude","peak"],
+    ex:[{ s:"Weeks of rehearsal {{}} in one long night.", f:"culminated", ko:"몇 주간의 연습이 긴 하룻밤으로 정점에 이르렀다." }],
+    col:[{ p:"culminate {{}} a final concert", a:"in", pool:"prep", note:"culminate in : ~으로 막을 내리다" }] },
+
+  { word:"culprit", pron:"컬프릿", pos:"n", level:"C1", meanings:["장본인","범인"],
+    syn:["offender","cause","perpetrator"],
+    ex:[{ s:"Damp was the real {{}} all along.", f:"culprit", ko:"습기가 처음부터 진짜 장본인이었다." }] },
+
+  { word:"cultivate", pron:"컬티베이트", pos:"v", level:"B2", meanings:["재배하다","가꾸다"],
+    syn:["grow","farm","nurture"], ant:["neglect"],
+    ex:[{ s:"They {{}} rice on the lower slopes.", f:"cultivate", ko:"그들은 아래쪽 경사면에서 쌀을 재배한다." }] },
+
+  { word:"cunning", pron:"커닝", pos:"adj", level:"B2", meanings:["교활한","간사한"],
+    syn:["sly","crafty","devious"], ant:["naive"],
+    ex:[{ s:"A {{}} fox learned to lift the latch.", f:"cunning", ko:"교활한 여우가 걸쇠를 들어 올리는 법을 익혔다." }] },
+
+  { word:"cure-all", pron:"큐어올", pos:"n", level:"C1", meanings:["만병통치약"],
+    syn:["panacea","remedy","fix"],
+    ex:[{ s:"There is no {{}} for rural poverty.", f:"cure-all", ko:"농촌 빈곤에 만병통치약은 없다." }] },
+
+  { word:"curfew", pron:"커퓨", pos:"n", level:"C1", meanings:["통행금지령"],
+    syn:["restriction","ban","lockdown"],
+    ex:[{ s:"A nightly {{}} was imposed for a month.", f:"curfew", ko:"한 달간 야간 통행금지령이 내려졌다." }] },
+
+  { word:"curious", pron:"큐리어스", pos:"adj", level:"B1", meanings:["호기심이 많은","궁금한"],
+    syn:["inquisitive","interested","nosy"], ant:["indifferent"],
+    ex:[{ s:"She was {{}} about the locked room upstairs.", f:"curious", ko:"그녀는 위층 잠긴 방에 대해 궁금해했다." }],
+    col:[{ p:"curious {{}} the outcome", a:"about", pool:"prep", note:"be curious about : ~를 궁금해하다" }] },
+
+  { word:"curl up", pron:"컬 업", pos:"phr", level:"B1", meanings:["몸을 웅크리다"],
+    syn:["huddle","coil","nestle"], ant:["stretch"] },
+
+  { word:"currency", pron:"커런시", pos:"n", level:"B2", meanings:["통화","유통"],
+    syn:["money","cash","legal tender"],
+    ex:[{ s:"The country changed its {{}} in 2002.", f:"currency", ko:"그 나라는 2002년에 통화를 바꿨다." }] },
+
+  { word:"current", pron:"커런트", pos:"n", level:"B1", meanings:["흐름","현재의"],
+    syn:["flow","stream","tide"],
+    ex:[{ s:"A strong {{}} pulled the boat sideways.", f:"current", ko:"강한 물살이 배를 옆으로 끌었다." }] },
+
+  { word:"curriculum", pron:"커리큘럼", pos:"n", level:"B2", meanings:["교육 과정","이수 과정"],
+    syn:["syllabus","program","course"],
+    ex:[{ s:"The {{}} leaves almost no room for art.", f:"curriculum", ko:"그 교육 과정은 미술에 거의 자리를 주지 않는다." }] },
+
+  { word:"curse", pron:"커스", pos:"n", level:"B2", meanings:["저주","욕설"],
+    syn:["hex","oath","damnation"], ant:["blessing"],
+    ex:[{ s:"He muttered a {{}} under his breath.", f:"curse", ko:"그는 숨죽여 욕설을 중얼거렸다." }] },
+
+  { word:"curtail", pron:"커테일", pos:"v", level:"C2", meanings:["줄이다","제한하다"],
+    syn:["shorten","reduce","trim"], ant:["extend"],
+    ex:[{ s:"Heavy rain forced them to {{}} the trip.", f:"curtail", ko:"폭우 때문에 그들은 여행을 줄여야 했다." }] },
+
+  { word:"curtained", pron:"커튼드", pos:"adj", level:"C1", meanings:["커튼이 쳐진"],
+    syn:["screened","veiled","draped"], ant:["bare"],
+    ex:[{ s:"A {{}} alcove hid the back stairs.", f:"curtained", ko:"커튼이 쳐진 벽감이 뒤쪽 계단을 가리고 있었다." }] },
+
+  { word:"curve", pron:"커브", pos:"v", level:"B1", meanings:["곡선으로 나아가다","곡선"],
+    syn:["bend","arc","turn"], ant:["straighten"],
+    ex:[{ s:"The road begins to {{}} near the bridge.", f:"curve", ko:"그 길은 다리 근처에서 휘기 시작한다." }] },
+
+  { word:"customary", pron:"커스터머리", pos:"adj", level:"C1", meanings:["습관적인","관례적인"],
+    syn:["usual","traditional","routine"], ant:["unusual"],
+    ex:[{ s:"It is {{}} to bow slightly on arrival.", f:"customary", ko:"도착할 때 살짝 고개를 숙이는 것이 관례다." }] },
+
+  { word:"customize", pron:"커스터마이즈", pos:"v", level:"B2", meanings:["주문 제작하다","맞춤화하다"],
+    syn:["tailor","adapt","personalize"],
+    ex:[{ s:"You can {{}} the handle length.", f:"customize", ko:"손잡이 길이를 주문 제작할 수 있다." }] },
+
+  { word:"cut back on", pron:"컷 백 온", pos:"phr", level:"B1", meanings:["~을 줄이다"],
+    syn:["reduce","lessen","trim"], ant:["increase"] },
+
+  { word:"cynical", pron:"시니컬", pos:"adj", level:"B2", meanings:["냉소적인","비관적인"],
+    syn:["skeptical","sardonic","jaded"], ant:["idealistic"],
+    ex:[{ s:"Years in politics left him deeply {{}}.", f:"cynical", ko:"정치권에서 보낸 세월이 그를 깊이 냉소적으로 만들었다." }] },
+
+  /* cynical(냉소적인)과 겹치지 않게 '냉소주의'로 세운다 */
+  { word:"cynicism", pron:"시니시즘", pos:"n", level:"C1", meanings:["냉소주의","비꼬는 버릇"],
+    syn:["skepticism","distrust","pessimism"], ant:["idealism"],
+    ex:[{ s:"His {{}} hid a real disappointment.", f:"cynicism", ko:"그의 냉소주의는 진짜 실망을 감추고 있었다." }] }
 ];
 
 /* ── 반의어 뜻 사전 (병합) ──────────────────────
@@ -1747,30 +1940,22 @@ window.VOCAB_C = [
    ANT_DICT에 없는 반의어는 뜻 없이 영어만 떠서 무엇인지 알 수 없다.
    ⚠️ 재대입(=)이 아니라 Object.assign으로 합쳐야 A·B 세트 것이 살아남는다. */
 Object.assign(window.ANT_DICT, {
-  "acute":"급성의, 심각한",
   "adjourn":"산회하다, 휴회하다",
   "applaud":"칭찬하다, 박수를 보내다",
   "aversion":"혐오, 질색",
   "baffling":"당혹스러운, 알 수 없는",
   "barbarism":"야만, 미개",
+  "bare":"헐벗은, 아무것도 없는",
   "bleak":"황량한, 쓸쓸한",
-  "blessing":"축복, 다행",
   "briefly":"잠깐, 짧게",
   "bulky":"부피가 큰, 커서 다루기 힘든",
   "clear":"트이게 하다, 치우다",
-  "commence":"시작되다, 시작하다",
-  "compete":"경쟁하다",
   "conclude":"끝내다, 결론을 내리다",
-  "confirm":"확인하다, 확정하다",
-  "conflict":"갈등, 충돌",
-  "conflicting":"상반되는, 모순되는",
-  "consistent":"일관된, 한결같은",
   "continue":"계속하다",
   "convex":"볼록한",
-  "cooperate":"협력하다",
   "cooperative":"협력하는",
-  "counterclockwise":"시계 반대 방향으로",
   "cruelty":"잔혹함",
+  "dash":"돌진하다, 급히 가다",
   "defiant":"반항하는",
   "defy":"거역하다, 무시하다",
   "demand":"요구, 요구하다",
@@ -1787,6 +1972,7 @@ Object.assign(window.ANT_DICT, {
   "disperse":"흩어지다, 분산시키다",
   "dispute":"논쟁, 분쟁",
   "dissent":"반대하다, 이견",
+  "dissolve":"녹다, 해산하다",
   "dissuade":"말리다, 단념시키다",
   "distraction":"주의 산만, 방해",
   "division":"분열, 분할",
@@ -1808,6 +1994,7 @@ Object.assign(window.ANT_DICT, {
   "expand":"확장하다, 늘리다",
   "expert":"전문가",
   "exposure":"노출, 드러남",
+  "extend":"늘리다, 연장하다",
   "few":"거의 없는, 소수의",
   "fixed":"고정된",
   "flee":"도망치다",
@@ -1832,13 +2019,17 @@ Object.assign(window.ANT_DICT, {
   "herbivorous":"초식(성)의",
   "hesitation":"주저, 망설임",
   "honest":"정직한",
+  "humane":"인도적인, 자비로운",
   "hush":"조용해지다, 잠잠해지다",
+  "idealism":"이상주의",
+  "idealistic":"이상주의적인",
   "identical":"똑같은, 동일한",
   "incapable":"~할 수 없는",
   "incompatible":"양립할 수 없는, 호환되지 않는",
   "incompetence":"무능함",
   "inconspicuous":"눈에 띄지 않는",
   "indifference":"무관심",
+  "indifferent":"무관심한",
   "individual":"개인의, 개별의",
   "inept":"서투른, 무능한",
   "insulator":"절연체",
@@ -1852,6 +2043,8 @@ Object.assign(window.ANT_DICT, {
   "minor":"사소한, 작은",
   "misread":"잘못 읽다, 오해하다",
   "mistaken":"잘못된, 틀린",
+  "murky":"흐린, 탁한",
+  "naive":"순진한, 어수룩한",
   "noble":"귀족, 고귀한",
   "nonprofit":"비영리의",
   "novel":"새로운, 신기한",
@@ -1885,6 +2078,7 @@ Object.assign(window.ANT_DICT, {
   "random":"무작위의",
   "rebel":"반항하다, 반란자",
   "reckless":"무모한, 부주의한",
+  "refined":"정제된, 세련된",
   "refund":"환불하다, 환불",
   "refute":"반박하다, 논박하다",
   "reinforce":"강화하다",
@@ -1911,6 +2105,7 @@ Object.assign(window.ANT_DICT, {
   "simple":"단순한",
   "single-sex":"남녀를 구분한",
   "skinny":"깡마른",
+  "soggy":"축축한, 질척한",
   "soldier":"군인",
   "spiritual":"정신적인, 영적인",
   "sporadic":"산발적인, 이따금의",
@@ -1920,7 +2115,9 @@ Object.assign(window.ANT_DICT, {
   "stalemate":"교착 상태",
   "stare":"응시하다, 빤히 보다",
   "steady":"한결같은, 안정된",
+  "straight":"곧은, 똑바른",
   "straightforward":"단순명료한, 쉬운",
+  "stretch":"뻗다, 늘이다",
   "subordinate":"부하, 하급자",
   "succumb":"굴복하다, 쓰러지다",
   "tolerate":"용인하다, 참다",
@@ -1929,12 +2126,14 @@ Object.assign(window.ANT_DICT, {
   "undisputed":"논란의 여지가 없는",
   "unlike":"~와 달리, 다른",
   "unrelated":"관련 없는",
+  "unusual":"흔하지 않은",
   "unwittingly":"무심코, 자기도 모르게",
   "upset":"속상하게 하다",
   "vagueness":"모호함",
   "vanish":"사라지다",
   "variability":"변동성, 가변성",
   "variable":"변하기 쉬운, 가변적인",
+  "victim":"피해자, 희생자",
   "violate":"위반하다",
   "wander":"헤매다, 산만해지다",
   "warm":"따뜻한",
