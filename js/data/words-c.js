@@ -5,8 +5,8 @@
  *   word / pos / level 은 필수, meanings 는 1개 이상 있어야 앱이 깨지지 않는다.
  *   syn 3개 → 아닌 것 고르기 / ex → 문장 빈칸 / col → 연어 고르기 해금.
  *
- * ⚠️ COL_POOLS 와 ANT_DICT 는 words.js 가 이미 만들어 둔 객체다.
- *    여기서 window.ANT_DICT = {...} 로 재대입하면 A·B 세트의 것이 통째로
+ * ⚠️ COL_POOLS 와 GLOSS 는 words.js 가 이미 만들어 둔 객체다.
+ *    여기서 window.GLOSS = {...} 로 재대입하면 A·B 세트의 것이 통째로
  *    사라진다. 반드시 이 파일 맨 아래처럼 Object.assign 으로 병합할 것.
  *
  * ── 뜻을 2개로 줄인 이유 ──────────────────────
@@ -1935,11 +1935,11 @@ window.VOCAB_C = [
     ex:[{ s:"His {{}} hid a real disappointment.", f:"cynicism", ko:"그의 냉소주의는 진짜 실망을 감추고 있었다." }] }
 ];
 
-/* ── 반의어 뜻 사전 (병합) ──────────────────────
-   '아닌 것 고르기'에서 반의어를 오답으로 낼 때 한국어 뜻을 함께 보여준다.
-   ANT_DICT에 없는 반의어는 뜻 없이 영어만 떠서 무엇인지 알 수 없다.
+/* ── 뜻 사전 (병합) ────────────────────────────
+   C 섹션 단어의 반의어 중 표제어가 아닌 것들의 한국어 뜻.
+   GLOSS에 없으면 뜻 없이 영어만 떠서 무엇인지 알 수 없다.
    ⚠️ 재대입(=)이 아니라 Object.assign으로 합쳐야 A·B 세트 것이 살아남는다. */
-Object.assign(window.ANT_DICT, {
+Object.assign(window.GLOSS, {
   "adjourn":"산회하다, 휴회하다",
   "applaud":"칭찬하다, 박수를 보내다",
   "aversion":"혐오, 질색",

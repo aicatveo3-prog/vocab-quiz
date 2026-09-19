@@ -5,8 +5,8 @@
  *   word / pos / level 은 필수, meanings 는 1개 이상 있어야 앱이 깨지지 않는다.
  *   syn 3개 → 아닌 것 고르기 / ex → 문장 빈칸 / col → 연어 고르기 해금.
  *
- * ⚠️ COL_POOLS 와 ANT_DICT 는 words.js 가 이미 만들어 둔 객체다.
- *    여기서 window.ANT_DICT = {...} 로 재대입하면 A 세트의 202개가 통째로
+ * ⚠️ COL_POOLS 와 GLOSS 는 words.js 가 이미 만들어 둔 객체다.
+ *    여기서 window.GLOSS = {...} 로 재대입하면 A 세트의 202개가 통째로
  *    사라진다. 반드시 이 파일 맨 아래처럼 Object.assign 으로 병합할 것.
  *
  * 진행 상황: 234단어 전량 완료 (babble ~ bystander) — 12챕터.
@@ -924,11 +924,8 @@ window.VOCAB_B = [
 
 /* 아닌 것 고르기에서 반의어(정답)의 뜻을 보여주기 위한 사전 — B 세트 몫.
    words.js 가 만든 객체에 덧붙인다. 재대입하면 A 세트 202개가 사라진다. */
-Object.assign(window.ANT_DICT, {
+Object.assign(window.GLOSS, {
   "afterward":"나중에, 그 후에",
-  "annual":"연 1회의, 매년의",
-  "artificial":"인공적인",
-  "at large":"잡히지 않은, 활개 치는",
   "bankruptcy":"파산",
   "be against":"~에 반대하다",
   "be barred from":"~에서 배제되다, ~을 금지당하다",
@@ -957,18 +954,11 @@ Object.assign(window.ANT_DICT, {
   "be unlikely to":"~할 것 같지 않다",
   "be unmoved by":"~에 감동하지 않다",
   "begin":"시작하다",
-  "cancel":"취소하다",
   "center":"중심, 중앙",
   "civilized":"문명화된, 교양 있는",
-  "clarify":"명확히 하다",
   "compliance":"준수, 따름",
   "confident":"자신 있는, 확신하는",
-  "contradict":"모순되다, 반박하다",
-  "conversely":"반대로, 거꾸로",
   "cowardice":"비겁함",
-  "cruel":"잔혹한",
-  "current":"현재의, 지금의",
-  "curse":"저주, 화근",
   "disembark":"하선하다, 내리다",
   "divide":"나누다, 갈라놓다",
   "donor":"기부자, 증여자",
