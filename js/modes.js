@@ -228,20 +228,21 @@ window.Modes = (function () {
           buttons.forEach(function (b) {
             var val = b._value.toLowerCase();
             var isSyn = syns.indexOf(val) !== -1;
-            var obj = findWord(val);          // 선택지 단어가 단어장에 있으면 그 뜻을 쓴다
+            /* 뜻은 두 곳에서 찾는다 — 표제어면 단어장, 아니면 GLOSS 사전.
+               유의어든 반의어든 같은 순서로 찾으므로 한쪽만 뜻이 뜨는 일이 없다. */
+            var obj = findWord(val);
+            var gloss = obj ? obj.meanings.join(', ')
+              : (window.GLOSS && window.GLOSS[val]) || null;
             var detail = el('div', 'opt-detail');
             if (isSyn) {
-              detail.textContent = obj
-                ? '= ' + b._value + ': ' + obj.meanings.join(', ')
+              detail.textContent = gloss
+                ? '= ' + b._value + ': ' + gloss
                 : mainObj.word + '와 바꿔 쓸 수 있는 말';
             } else {
-              // 정답(바꿔 쓸 수 없는 것). 단어장에 없으면 ANT_DICT에서 뜻을 찾는다.
-              var antMeaning = obj ? null : (window.ANT_DICT && window.ANT_DICT[val]);
-              detail.textContent = obj
-                ? '≠ ' + b._value + ': ' + obj.meanings.join(', ')
-                : (antMeaning
-                  ? '≠ ' + b._value + ': ' + antMeaning
-                  : '≠ ' + b._value + ' (반의어)');
+              // 정답(바꿔 쓸 수 없는 것)
+              detail.textContent = gloss
+                ? '≠ ' + b._value + ': ' + gloss
+                : '≠ ' + b._value + ' (반의어)';
             }
             b.classList.add('has-detail');
             b.appendChild(detail);
