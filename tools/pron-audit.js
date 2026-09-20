@@ -125,6 +125,56 @@ if (badChar.length) {
     badChar.slice(0, 15).join(' | '));
 }
 
+/* ── 5) 표기 규칙 일관성 ───────────────────────
+   차수를 나눠 작업하면 1차의 규칙이 5차에서 흔들리기 쉽다.
+   접미사별로 끝 글자가 규칙과 맞는지 기계적으로 확인한다.
+   영어 발음 자체가 예외인 단어가 있으므로 경고로만 보고한다. */
+var RULES = [
+  { name: '-tion → 션',   test: /tion$/,        expect: /션$/ },
+  { name: '-sion → 전/션', test: /sion$/,       expect: /[전션]$/ },
+  { name: '-ture → 처',   test: /ture$/,        expect: /처$/ },
+  { name: '-ment → 먼트',  test: /ment$/,       expect: /먼트$/ },
+  { name: '-ness → 니스',  test: /ness$/,       expect: /니스$/ },
+  { name: '-able/-ible → 블', test: /[ai]ble$/, expect: /블$/ },
+  { name: '-ful → 풀',    test: /ful$/,         expect: /풀$/ },
+  { name: '-less → 리스',  test: /less$/,       expect: /리스$/ },
+  { name: '-ity/-ety → 티', test: /[ie]ty$/,    expect: /티$/ },
+  { name: '-ous → 스',    test: /ous$/,         expect: /스$/ },
+  { name: '-ship → 십',   test: /ship$/,        expect: /십$/ },
+  { name: '-ism → 즘',    test: /ism$/,         expect: /즘$/ },
+  { name: '-ize → 이즈',   test: /ize$/,        expect: /이즈$/ }
+];
+
+/* -ing 은 "받침이 ㅇ인가"를 봐야 하므로 정규식으로 안 된다.
+   한글 음절 = 0xAC00 + (초성*21 + 중성)*28 + 종성.  종성 ㅇ의 번호는 21. */
+function endsWithIeung(s) {
+  var c = s.charCodeAt(s.length - 1) - 0xAC00;
+  if (c < 0 || c > 11171) return false;
+  return c % 28 === 21;
+}
+
+var ruleWarn = [];
+var ruleHits = {};                        // 규칙마다 몇 개를 실제로 검사했는가
+RULES.concat([{ name: '-ing → ㅇ받침' }]).forEach(function (r) { ruleHits[r.name] = 0; });
+
+Object.keys(PRON).forEach(function (k) {
+  var last = k.split(' ').pop();          // 구·숙어는 마지막 낱말로 판단
+  var val = PRON[k].split(' ').pop();
+  RULES.forEach(function (r) {
+    if (!r.test.test(last)) return;
+    ruleHits[r.name]++;
+    if (!r.expect.test(val)) ruleWarn.push(r.name + ' 위반: ' + k + ' → ' + PRON[k]);
+  });
+  if (/ing$/.test(last)) {
+    ruleHits['-ing → ㅇ받침']++;
+    if (!endsWithIeung(val)) ruleWarn.push('-ing → ㅇ받침 위반: ' + k + ' → ' + PRON[k]);
+  }
+});
+
+/* 적용 0건인 규칙은 통과한 게 아니라 아무것도 안 한 것이다.
+   규칙을 새로 넣었을 때 정규식이 틀려 늘 통과하는 사고를 막는다. */
+var deadRules = Object.keys(ruleHits).filter(function (n) { return ruleHits[n] === 0; });
+
 /* ── --next: 다음 차수 작업 목록 ──────────────── */
 var nextArg = process.argv.indexOf('--next');
 if (nextArg !== -1) {
@@ -166,9 +216,27 @@ console.log('       PRON 항목 수  : ' + Object.keys(PRON).length + '개' + (h
 var noGloss = missing.filter(function (k) { return !GLOSS[k] && !headword[k]; });
 console.log('       발음·뜻 모두 없음 : ' + noGloss.length + '개');
 
+var checked = Object.keys(ruleHits).reduce(function (s, n) { return s + ruleHits[n]; }, 0);
+if (ruleWarn.length) {
+  console.log('\n⚠️  표기 규칙 확인 필요 ' + ruleWarn.length + '건 / ' + checked + '건 검사');
+  console.log('    (영어 발음 자체가 예외인 단어일 수 있다. 눈으로 판단한다)');
+  ruleWarn.forEach(function (w) { console.log('  · ' + w); });
+} else {
+  console.log('\n✅ 표기 규칙 일관성 — ' + checked + '건 검사, 위반 0건');
+}
+if (deadRules.length) {
+  errors.push('적용 0건인 규칙이 있다 (정규식이 틀렸을 수 있다): ' + deadRules.join(', '));
+}
+if (process.argv.indexOf('--rules') !== -1) {
+  console.log('\n규칙별 검사 건수');
+  Object.keys(ruleHits).forEach(function (n) {
+    console.log('  ' + n + ' : ' + ruleHits[n] + '개');
+  });
+}
+
 if (errors.length) {
   console.log('\n❌ 검사 실패');
   errors.forEach(function (e) { console.log('  · ' + e); });
   process.exit(1);
 }
-console.log('\n✅ 검사 통과');
+console.log('✅ 검사 통과');
