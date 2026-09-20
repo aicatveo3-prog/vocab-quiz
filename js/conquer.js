@@ -30,7 +30,8 @@ window.Conquer = (function () {
   var SETS = [
     { id: 'A', label: 'A', words: window.VOCAB },
     { id: 'B', label: 'B', words: window.VOCAB_B || [] },
-    { id: 'C', label: 'C', words: window.VOCAB_C || [] }
+    { id: 'C', label: 'C', words: window.VOCAB_C || [] },
+    { id: 'D', label: 'D', words: window.VOCAB_D || [] }
   ];
 
   function getSet(id) {
