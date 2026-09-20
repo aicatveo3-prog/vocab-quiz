@@ -129,8 +129,12 @@ if (badChar.length) {
    차수를 나눠 작업하면 1차의 규칙이 5차에서 흔들리기 쉽다.
    접미사별로 끝 글자가 규칙과 맞는지 기계적으로 확인한다.
    영어 발음 자체가 예외인 단어가 있으므로 경고로만 보고한다. */
+/* except: 철자는 접미사처럼 보이지만 실제 접미사가 아닌 경우를 걸러낸다.
+   예외를 단어 목록으로 넣으면 검사가 둔해지므로, 철자 규칙으로 좁힌다.
+     -stion 은 /stʃən/ 이라 '션'이 아니다        question → 퀘스천
+     모음 뒤 ize 는 접미사가 아니다               seize → 시즈 (≠ -ize) */
 var RULES = [
-  { name: '-tion → 션',   test: /tion$/,        expect: /션$/ },
+  { name: '-tion → 션',   test: /tion$/, except: /stion$/, expect: /션$/ },
   { name: '-sion → 전/션', test: /sion$/,       expect: /[전션]$/ },
   { name: '-ture → 처',   test: /ture$/,        expect: /처$/ },
   { name: '-ment → 먼트',  test: /ment$/,       expect: /먼트$/ },
@@ -142,7 +146,7 @@ var RULES = [
   { name: '-ous → 스',    test: /ous$/,         expect: /스$/ },
   { name: '-ship → 십',   test: /ship$/,        expect: /십$/ },
   { name: '-ism → 즘',    test: /ism$/,         expect: /즘$/ },
-  { name: '-ize → 이즈',   test: /ize$/,        expect: /이즈$/ }
+  { name: '-ize → 이즈',   test: /ize$/, except: /[aeiou]ize$/, expect: /이즈$/ }
 ];
 
 /* -ing 은 "받침이 ㅇ인가"를 봐야 하므로 정규식으로 안 된다.
@@ -162,6 +166,7 @@ Object.keys(PRON).forEach(function (k) {
   var val = PRON[k].split(' ').pop();
   RULES.forEach(function (r) {
     if (!r.test.test(last)) return;
+    if (r.except && r.except.test(last)) return;
     ruleHits[r.name]++;
     if (!r.expect.test(val)) ruleWarn.push(r.name + ' 위반: ' + k + ' → ' + PRON[k]);
   });
