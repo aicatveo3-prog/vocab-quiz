@@ -45,6 +45,45 @@ function printQuestion(w) {
   console.log('');
 }
 
+/* --all: 전수 점검.
+   출제 가능한 모든 문제의 모든 선택지를 실제 렌더 경로로 계산해,
+   발음이나 뜻이 빠지는 자리가 하나라도 있는지 확인한다.
+   커버리지 집계(pron-audit)와 달리 '화면에 실제로 찍히는 값'을 본다. */
+if (process.argv.indexOf('--all') !== -1) {
+  var quizzable = ALL.filter(function (w) { return w.syn && w.syn.length >= 3; });
+  var noPron = [], noGloss = [], slots = 0, questions = 0;
+
+  quizzable.forEach(function (w) {
+    /* 선택지는 syn 중 3개를 무작위로 뽑으므로, syn 전체 + 반의어 전체가
+       언젠가는 화면에 뜬다. 한 번이라도 뜰 수 있는 자리를 모두 본다. */
+    var pool = (w.syn || []).concat(w.ant || []);
+    questions++;
+    pool.forEach(function (o) {
+      slots++;
+      var val = String(o).toLowerCase();
+      var obj = findWord(val);
+      var pron = (obj && obj.pron) || PRON[val] || null;
+      var gloss = obj ? obj.meanings.join(', ') : GLOSS[val] || null;
+      if (!pron) noPron.push(w.word + ' → ' + o);
+      if (!gloss) noGloss.push(w.word + ' → ' + o);
+    });
+  });
+
+  console.log('── 전수 점검 (실제 렌더 경로) ──────────────');
+  console.log('출제 가능 문제      : ' + questions + '개');
+  console.log('검사한 선택지 자리  : ' + slots + '개 (중복 포함)');
+  console.log('');
+  console.log('발음이 비는 자리    : ' + noPron.length + '개');
+  if (noPron.length) noPron.slice(0, 20).forEach(function (x) { console.log('  · ' + x); });
+  console.log('뜻이 비는 자리      : ' + noGloss.length + '개');
+  if (noGloss.length) noGloss.slice(0, 20).forEach(function (x) { console.log('  · ' + x); });
+  console.log('');
+  console.log(noPron.length === 0 && noGloss.length === 0
+    ? '✅ 모든 선택지가 발음과 뜻을 갖는다'
+    : '❌ 비는 자리가 있다');
+  process.exit(noPron.length === 0 && noGloss.length === 0 ? 0 : 1);
+}
+
 /* --word 지정 모드 */
 var wArg = process.argv.indexOf('--word');
 if (wArg !== -1) {
