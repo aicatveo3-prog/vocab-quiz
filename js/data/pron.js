@@ -63,7 +63,9 @@
  *   defend / depend → 둘 다 "디펜드"   한글로는 구별되지 않는다
  *   bona fide → "보나 파이디"   라틴계라 철자대로 읽지 않는다
  *   heir → "에어",  honest → "아니스트"    h 를 발음하지 않는다
+ *   vehicle → "비이클"                     h 를 발음하지 않는다 (≠ 비히클)
  *   knack → "낵",  knife → "나이프"        k 를 발음하지 않는다
+ *   wealthy → "웰시"   무성 th 는 ㅅ 이다 (healthy → 헬시 와 같은 꼴)
  *   question → "퀘스천"   -stion 은 /stʃən/ 이라 '션'이 아니다
  *   seize → "시즈"        철자만 ize 로 끝나고 접미사 -ize 가 아니다
  *   torment → "토멘트"    접미사 -ment 가 아니라 어간의 일부다. 모음이
@@ -74,10 +76,25 @@
  *   principal / principle → 둘 다 "프린서펄"
  *   sail / sale → 둘 다 "세일",  right / rite → 둘 다 "라이트"
  *
- * ── 작업 현황 ────────────────────────────────
- * 알파벳 순으로 채운다. 진행 확인: node tools/pron-audit.js
- * 다음 차수 목록:        node tools/pron-audit.js --next 400
- * 표시 확인:            node tools/pron-render-check.js
+ * ── 작업 현황 — 완료 ──────────────────────────
+ * 2,778개 전량. '아닌 것 고르기'에 등장하는 3,097개 단어가 모두 발음을
+ * 갖는다 (표제어 319 + 이 사전 2,778). 지어낸 발음은 없고 비운 칸도 없다.
+ *
+ *   1차  200개  a few ~ be integral to           (배선·표기규칙·검사도구 포함)
+ *   2차  400개  be involved in ~ destroy
+ *   3차  400개  detach ~ free-radical scavenger
+ *   4차  400개  freedom ~ legislature            (표기 일관성 검사 추가)
+ *   5차  400개  legitimacy ~ peruse
+ *   6차  400개  pessimism ~ self-assured
+ *   7차  400개  self-defeating ~ unclear
+ *   8차  178개  uncomfortable ~ zodiac study
+ *
+ * 단어를 새로 추가하면 여기도 채워야 한다. 확인 방법:
+ *   node tools/pron-audit.js               커버리지 + 4종 검사 + 표기 일관성
+ *   node tools/pron-audit.js --next 400    발음 없는 단어 목록
+ *   node tools/pron-audit.js --rules       규칙별 검사 건수
+ *   node tools/pron-render-check.js        화면 표시 형태 미리보기
+ *   node tools/pron-render-check.js --all  전수 점검 (빈 자리 0개 확인)
  */
 window.PRON = window.PRON || {};
 
@@ -2713,4 +2730,187 @@ Object.assign(window.PRON, {
   "uncertainty": "언서튼티",
   "unchanging": "언체인징",
   "unclear": "언클리어"
+});
+
+
+Object.assign(window.PRON, {
+  /* ── 8차: uncomfortable ~ zodiac study (178개) — 전량 완료 ────── */
+  "uncomfortable": "언컴퍼터블",
+  "unconcern": "언컨선",
+  "unconcerned": "언컨선드",
+  "uncontrollable": "언컨트롤러블",
+  "undecided": "언디사이디드",
+  "under no circumstances": "언더 노 서컴스탠시스",
+  "undergo": "언더고",
+  "underline": "언더라인",
+  "undermine": "언더마인",
+  "understand": "언더스탠드",
+  "understanding": "언더스탠딩",
+  "undervalue": "언더밸류",
+  "underwater": "언더워터",
+  "undisputed": "언디스퓨티드",
+  "unease": "언이즈",
+  "uneasy": "언이지",
+  "uneven": "언이븐",
+  "unexpected": "언익스펙티드",
+  "unexpectedly": "언익스펙티들리",
+  "unfamiliar": "언퍼밀리어",
+  "unfavorable": "언페이버러블",
+  "unfilled": "언필드",
+  "unfold": "언폴드",
+  "unfriendly": "언프렌들리",
+  "ungainly": "언게인리",
+  "ungrateful": "언그레이트풀",
+  "unidentified": "언아이덴티파이드",
+  "uniform": "유너폼",
+  "uniformity": "유너포머티",
+  "unify": "유너파이",
+  "unilateral": "유널래터럴",
+  "unintentional": "언인텐셔널",
+  "union": "유니언",
+  "unit": "유닛",
+  "unite": "유나이트",
+  "united": "유나이티드",
+  "unity": "유너티",
+  "universe": "유너버스",
+  "unlike": "언라이크",
+  "unmotivated": "언모터베이티드",
+  "unnamed": "언네임드",
+  "unrefined": "언리파인드",
+  "unrelated": "언릴레이티드",
+  "unreliable": "언릴라이어블",
+  "unrepentant": "언리펜턴트",
+  "unselfish": "언셀피시",
+  "unsharpened": "언샤펀드",
+  "unsociable": "언소셔블",
+  "unsuitable": "언수터블",
+  "unused": "언유즈드",
+  "unusual": "언유주얼",
+  "unwittingly": "언위팅리",
+  "upkeep": "업킵",
+  "upper room": "어퍼 룸",
+  "upset": "업셋",
+  "urbane": "어베인",
+  "urbanized": "어버나이즈드",
+  "urge": "어지",
+  "use": "유스",
+  "user": "유저",
+  "usual": "유주얼",
+  "utilize": "유털라이즈",
+  "utter": "어터",
+  "utterly": "어털리",
+  "vacant": "베이컨트",
+  "vague": "베이그",
+  "vagueness": "베이그니스",
+  "vain": "베인",
+  "valiant": "밸리언트",
+  "validate": "밸리데이트",
+  "validity": "벌리더티",
+  "valley": "밸리",
+  "valor": "밸러",
+  "value": "밸류",
+  "vanish": "배니시",
+  "variability": "베리어빌러티",
+  "variable": "베리어블",
+  "vehicle": "비이클",
+  "vehicular": "비히큘러",
+  "veiled": "베일드",
+  "venal": "비널",
+  "vent": "벤트",
+  "verdict": "버딕트",
+  "verge": "버지",
+  "verify": "베러파이",
+  "versatility": "버서틸러티",
+  "version": "버전",
+  "vexed": "벡스트",
+  "via others": "비아 어더스",
+  "vicious": "비셔스",
+  "victim": "빅텀",
+  "victimization": "빅터머제이션",
+  "victor": "빅터",
+  "vie": "바이",
+  "viewers": "뷰어스",
+  "vigilant": "비질런트",
+  "vigorously": "비거러슬리",
+  "violate": "바이얼레이트",
+  "violation": "바이얼레이션",
+  "visual": "비주얼",
+  "vital": "바이털",
+  "vocation": "보케이션",
+  "voice": "보이스",
+  "void": "보이드",
+  "volume": "발륨",
+  "volumetric": "발류메트릭",
+  "vote": "보트",
+  "voyage": "보이지",
+  "vulnerable": "벌너러블",
+  "wager": "웨이저",
+  "walkway": "워크웨이",
+  "wander": "완더",
+  "warm": "웜",
+  "warmth": "웜스",
+  "wary": "웨리",
+  "waste": "웨이스트",
+  "waste no time in": "웨이스트 노 타임 인",
+  "watch out": "와치 아웃",
+  "watchful": "와치풀",
+  "water-dwelling": "워터 드웰링",
+  "waterway": "워터웨이",
+  "weak": "위크",
+  "weaken": "위컨",
+  "wealth": "웰스",
+  "wealthier": "웰시어",
+  "wealthy": "웰시",
+  "weaponry": "웨퍼너리",
+  "weigh": "웨이",
+  "weight": "웨이트",
+  "weird": "위어드",
+  "welfare": "웰페어",
+  "well-off": "웰 오프",
+  "welt": "웰트",
+  "whatever happens": "왓에버 해픈스",
+  "wheezing disorder": "위징 디스오더",
+  "whimsical": "윔지컬",
+  "whisper": "위스퍼",
+  "whiten": "와이튼",
+  "whiteout": "와이트아웃",
+  "whole": "홀",
+  "wholly": "홀리",
+  "width": "위드스",
+  "wife-to-be": "와이프 투 비",
+  "winded": "윈디드",
+  "winding": "와인딩",
+  "wipe out": "와이프 아웃",
+  "withdrawn": "위드드론",
+  "wither": "위더",
+  "withhold": "위드홀드",
+  "within": "위딘",
+  "without fail": "위드아웃 페일",
+  "withstand": "위스탠드",
+  "wonder": "원더",
+  "wonderful": "원더풀",
+  "work": "워크",
+  "workmanship": "워크먼십",
+  "worldly": "월들리",
+  "worried": "워리드",
+  "worry": "워리",
+  "worry about": "워리 어바우트",
+  "worse off": "워스 오프",
+  "worsen": "워슨",
+  "would-be": "우드 비",
+  "wrap": "랩",
+  "wrap up": "랩 업",
+  "wreck": "렉",
+  "writer": "라이터",
+  "wronged": "롱드",
+  "yap": "얩",
+  "yearly": "이얼리",
+  "yearn": "연",
+  "yelp": "옐프",
+  "yield": "일드",
+  "yielding": "일딩",
+  "youth": "유스",
+  "zealous": "젤러스",
+  "zephyr": "제퍼",
+  "zodiac study": "조디액 스터디"
 });
