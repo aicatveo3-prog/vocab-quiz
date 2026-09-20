@@ -234,15 +234,16 @@ window.Modes = (function () {
             var gloss = obj ? obj.meanings.join(', ')
               : (window.GLOSS && window.GLOSS[val]) || null;
             var detail = el('div', 'opt-detail');
+            /* 단어 이름은 버튼 왼쪽에 이미 있으므로 여기서 반복하지 않는다. */
             if (isSyn) {
               detail.textContent = gloss
-                ? '= ' + b._value + ': ' + gloss
+                ? '= ' + gloss
                 : mainObj.word + '와 바꿔 쓸 수 있는 말';
             } else {
               // 정답(바꿔 쓸 수 없는 것)
               detail.textContent = gloss
-                ? '≠ ' + b._value + ': ' + gloss
-                : '≠ ' + b._value + ' (반의어)';
+                ? '≠ ' + gloss
+                : '≠ 반의어';
             }
             b.classList.add('has-detail');
             b.appendChild(detail);
