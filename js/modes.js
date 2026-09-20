@@ -233,17 +233,20 @@ window.Modes = (function () {
             var obj = findWord(val);
             var gloss = obj ? obj.meanings.join(', ')
               : (window.GLOSS && window.GLOSS[val]) || null;
+            /* 발음도 뜻과 같은 순서로 찾는다 — 표제어면 그 pron, 아니면 PRON 사전.
+               아직 발음이 없는 단어는 뜻만 보여준다. 지어내지 않는다. */
+            var pron = (obj && obj.pron) || (window.PRON && window.PRON[val]) || null;
             var detail = el('div', 'opt-detail');
             /* 단어 이름은 버튼 왼쪽에 이미 있으므로 여기서 반복하지 않는다. */
-            if (isSyn) {
-              detail.textContent = gloss
-                ? '= ' + gloss
-                : mainObj.word + '와 바꿔 쓸 수 있는 말';
+            var mark = isSyn ? '= ' : '≠ ';
+            var tail = gloss
+              || (isSyn ? mainObj.word + '와 바꿔 쓸 수 있는 말' : '반의어');
+            detail.appendChild(document.createTextNode(mark));
+            if (pron) {
+              detail.appendChild(el('span', 'opt-pron', pron));
+              detail.appendChild(document.createTextNode(' · ' + tail));
             } else {
-              // 정답(바꿔 쓸 수 없는 것)
-              detail.textContent = gloss
-                ? '≠ ' + gloss
-                : '≠ 반의어';
+              detail.appendChild(document.createTextNode(tail));
             }
             b.classList.add('has-detail');
             b.appendChild(detail);
