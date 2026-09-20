@@ -241,12 +241,11 @@ window.Modes = (function () {
             var mark = isSyn ? '= ' : '≠ ';
             var tail = gloss
               || (isSyn ? mainObj.word + '와 바꿔 쓸 수 있는 말' : '반의어');
-            detail.appendChild(document.createTextNode(mark));
+            /* 뜻을 먼저, 발음을 뒤에 둔다.   = 토착의; 원주민 · 네이티브 */
+            detail.appendChild(document.createTextNode(mark + tail));
             if (pron) {
+              detail.appendChild(document.createTextNode(' · '));
               detail.appendChild(el('span', 'opt-pron', pron));
-              detail.appendChild(document.createTextNode(' · ' + tail));
-            } else {
-              detail.appendChild(document.createTextNode(tail));
             }
             b.classList.add('has-detail');
             b.appendChild(detail);
