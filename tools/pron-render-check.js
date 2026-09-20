@@ -29,7 +29,7 @@ function detailOf(mainObj, optValue) {
   var pron = (obj && obj.pron) || PRON[val] || null;
   var mark = isSyn ? '= ' : '≠ ';
   var tail = gloss || (isSyn ? mainObj.word + '와 바꿔 쓸 수 있는 말' : '반의어');
-  return mark + (pron ? pron + ' · ' + tail : tail);
+  return mark + (pron ? tail + ' · ' + pron : tail);
 }
 
 function optionsOf(w) {
