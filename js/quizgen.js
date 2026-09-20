@@ -24,7 +24,8 @@ window.Quiz = (function () {
      문제에서 통째로 빠진다. 세트를 늘릴 때는 여기에 추가한다. */
   var ALL = (window.VOCAB || [])
     .concat(window.VOCAB_B || [])
-    .concat(window.VOCAB_C || []);
+    .concat(window.VOCAB_C || [])
+    .concat(window.VOCAB_D || []);
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
