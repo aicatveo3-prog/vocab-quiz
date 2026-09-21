@@ -961,8 +961,6 @@ Object.assign(window.GLOSS, {
   "cowardice":"비겁함",
   "disembark":"하선하다, 내리다",
   "divide":"나누다, 갈라놓다",
-  "drawback":"결점, 문제점",
-  "dull":"지루한, 흐릿한",
   "dye":"염색하다",
   "excitement":"흥분, 설렘",
   "exit":"나가다, 퇴장하다",
