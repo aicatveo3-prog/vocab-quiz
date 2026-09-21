@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 68 / 333단어 (damp ~ deliver) — 2차.
+ * 진행 상황: 106 / 333단어 (damp ~ derived from) — 3차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -338,7 +338,159 @@ window.VOCAB_D = [
 
   { word:"deliver", pron:"딜리버", pos:"v", level:"B1", meanings:["배달하다","전달하다"],
     syn:["hand over","convey","distribute"], ant:["withhold"],
-    ex:[{ s:"The courier promised to {{}} the package before noon.", f:"deliver", ko:"택배 기사가 정오 전에 소포를 배달하겠다고 했다." }] }
+    ex:[{ s:"The courier promised to {{}} the package before noon.", f:"deliver", ko:"택배 기사가 정오 전에 소포를 배달하겠다고 했다." }] },
+
+  { word:"delude", pron:"딜루드", pos:"v", level:"C1", meanings:["착각하게 하다","속이다"],
+    syn:["mislead","deceive","fool"], ant:["enlighten"],
+    ex:[{ s:"Do not {{}} yourself into thinking the problem has gone away.", f:"delude", ko:"문제가 사라졌다고 스스로를 속이지 마라." }] },
+
+  { word:"delusion", pron:"딜루전", pos:"n", level:"C1", meanings:["망상","착각"],
+    syn:["illusion","fallacy","misconception"], ant:["reality"],
+    ex:[{ s:"He clung to the {{}} that the company was still profitable.", f:"delusion", ko:"그는 회사가 여전히 수익을 낸다는 착각에 매달렸다." }] },
+
+  { word:"deluge", pron:"델류지", pos:"n", level:"C2", meanings:["대홍수","쇄도"],
+    syn:["flood","torrent","onslaught"], ant:["drought"],
+    ex:[{ s:"The office received a {{}} of complaints after the outage.", f:"deluge", ko:"정전 이후 사무실에 불만이 쇄도했다." }] },
+
+  { word:"demand", pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
+    syn:["require","insist on","call for"], ant:["offer"],
+    ex:[{ s:"The workers {{}} safer conditions and shorter hours.", f:"demand", ko:"노동자들은 더 안전한 환경과 더 짧은 노동 시간을 요구한다." }] },
+
+  { word:"demanding", pron:"디맨딩", pos:"adj", level:"B2", meanings:["힘든","까다로운"],
+    syn:["taxing","exacting","strenuous"], ant:["effortless"],
+    ex:[{ s:"Nursing is a physically {{}} profession.", f:"demanding", ko:"간호는 육체적으로 힘든 직업이다." }] },
+
+  { word:"demeanor", pron:"디미너", pos:"n", level:"C2", meanings:["태도","몸가짐"],
+    syn:["manner","bearing","conduct"],
+    ex:[{ s:"Her calm {{}} reassured everyone in the room.", f:"demeanor", ko:"그녀의 침착한 태도가 방 안의 모두를 안심시켰다." }] },
+
+  { word:"democracy", pron:"디마크러시", pos:"n", level:"B2", meanings:["민주주의","민주 국가"],
+    syn:["self-government","republic","popular rule"], ant:["tyranny"],
+    ex:[{ s:"The country returned to {{}} after decades of military rule.", f:"democracy", ko:"그 나라는 수십 년의 군사 통치 끝에 민주주의로 돌아갔다." }] },
+
+  /* demographics — 낱말로 바꿔 쓸 수 있는 유의어가 없어 syn 을 비워 둔다 */
+  { word:"demographics", pron:"데머그래픽스", pos:"n", level:"C2", meanings:["인구 통계","인구 구성"],
+    ex:[{ s:"The report analyzes the changing {{}} of rural areas.", f:"demographics", ko:"그 보고서는 농촌 지역의 변화하는 인구 구성을 분석한다." }] },
+
+  { word:"demolish", pron:"디말리시", pos:"v", level:"B2", meanings:["철거하다","허물다"],
+    syn:["raze","tear down","dismantle"], ant:["construct"],
+    ex:[{ s:"The city plans to {{}} the old stadium next spring.", f:"demolish", ko:"시는 내년 봄에 옛 경기장을 철거할 계획이다." }] },
+
+  { word:"demonstrate", pron:"데먼스트레이트", pos:"v", level:"B1", meanings:["입증하다","보여 주다"],
+    syn:["prove","illustrate","exhibit"],
+    ex:[{ s:"The study aims to {{}} a clear link between diet and sleep.", f:"demonstrate", ko:"그 연구는 식단과 수면 사이의 분명한 연관을 입증하려 한다." }] },
+
+  { word:"demoralize", pron:"디모럴라이즈", pos:"v", level:"C2", meanings:["사기를 꺾다","의기소침하게 만들다"],
+    syn:["dishearten","discourage","dispirit"], ant:["encourage"],
+    ex:[{ s:"Repeated defeats began to {{}} the entire team.", f:"demoralize", ko:"반복된 패배가 팀 전체의 사기를 꺾기 시작했다." }] },
+
+  { word:"denounce", pron:"디나운스", pos:"v", level:"C1", meanings:["비난하다","고발하다"],
+    syn:["condemn","censure","decry"], ant:["praise"],
+    ex:[{ s:"Several leaders publicly {{}} the new restrictions.", f:"denounced", ko:"여러 지도자가 새 규제를 공개적으로 비난했다." }] },
+
+  { word:"dense", pron:"덴스", pos:"adj", level:"B2", meanings:["밀집한","짙은"],
+    syn:["crowded","thick","compact"], ant:["sparse"],
+    ex:[{ s:"The village sits in the middle of a {{}} forest.", f:"dense", ko:"그 마을은 우거진 숲 한가운데 있다." }] },
+
+  { word:"density", pron:"덴서티", pos:"n", level:"C1", meanings:["밀도","농도"],
+    syn:["concentration","thickness","compactness"],
+    ex:[{ s:"Population {{}} in the capital has doubled since 1990.", f:"density", ko:"수도의 인구 밀도는 1990년 이후 두 배가 됐다." }] },
+
+  { word:"deny", pron:"디나이", pos:"v", level:"B1", meanings:["부인하다","거부하다"],
+    syn:["refute","contradict","reject"], ant:["admit"],
+    ex:[{ s:"The minister continued to {{}} any knowledge of the deal.", f:"deny", ko:"장관은 그 거래를 전혀 몰랐다고 계속 부인했다." }] },
+
+  { word:"depart", pron:"디파트", pos:"v", level:"B2", meanings:["출발하다","떠나다"],
+    syn:["leave","set off","embark"], ant:["arrive"],
+    ex:[{ s:"The last train will {{}} from platform three at midnight.", f:"depart", ko:"막차는 자정에 3번 플랫폼에서 출발한다." }] },
+
+  { word:"department", pron:"디파트먼트", pos:"n", level:"B1", meanings:["부서","부문"],
+    syn:["division","section","branch"],
+    ex:[{ s:"She now heads the marketing {{}} of a large firm.", f:"department", ko:"그녀는 지금 대기업의 마케팅 부서를 이끈다." }] },
+
+  { word:"depict", pron:"디픽트", pos:"v", level:"C1", meanings:["묘사하다","그려 내다"],
+    syn:["portray","describe","represent"],
+    ex:[{ s:"The mural {{}} scenes from the city's early history.", f:"depicts", ko:"그 벽화는 도시 초기 역사의 장면들을 묘사한다." }] },
+
+  { word:"deplete", pron:"디플리트", pos:"v", level:"C1", meanings:["고갈시키다","소모시키다"],
+    syn:["exhaust","use up","drain"], ant:["replenish"],
+    ex:[{ s:"Overfishing can quickly {{}} local fish stocks.", f:"deplete", ko:"남획은 지역 어족 자원을 빠르게 고갈시킬 수 있다." }] },
+
+  { word:"depletion", pron:"디플리션", pos:"n", level:"C1", meanings:["고갈","소모"],
+    syn:["exhaustion","reduction","consumption"],
+    ex:[{ s:"Rapid {{}} of groundwater has alarmed local farmers.", f:"depletion", ko:"지하수의 급격한 고갈이 지역 농민들을 불안하게 했다." }] },
+
+  { word:"deplorable", pron:"디플로러블", pos:"adj", level:"C2", meanings:["개탄스러운","비참한"],
+    syn:["appalling","disgraceful","lamentable"], ant:["admirable"],
+    ex:[{ s:"The prison was kept in a {{}} state for years.", f:"deplorable", ko:"그 교도소는 여러 해 동안 개탄스러운 상태로 방치됐다." }] },
+
+  { word:"deplore", pron:"디플로", pos:"v", level:"C2", meanings:["개탄하다","한탄하다"],
+    syn:["lament","condemn","bemoan"], ant:["applaud"],
+    ex:[{ s:"Many scholars {{}} the loss of the ancient archive.", f:"deplore", ko:"많은 학자가 그 고대 기록물의 소실을 개탄한다." }] },
+
+  { word:"deploy", pron:"디플로이", pos:"v", level:"C1", meanings:["배치하다","전개하다"],
+    syn:["station","position","mobilize"], ant:["withdraw"],
+    ex:[{ s:"The agency will {{}} extra staff during the festival.", f:"deploy", ko:"그 기관은 축제 기간에 추가 인력을 배치할 것이다." }] },
+
+  { word:"deport", pron:"디포트", pos:"v", level:"C1", meanings:["강제 추방하다","국외로 내보내다"],
+    syn:["expel","banish","exile"], ant:["admit"],
+    ex:[{ s:"The court ruled that the government could not {{}} him.", f:"deport", ko:"법원은 정부가 그를 추방할 수 없다고 판결했다." }] },
+
+  { word:"depose", pron:"디포즈", pos:"v", level:"C2", meanings:["퇴위시키다","파면하다"],
+    syn:["overthrow","oust","dethrone"], ant:["install"],
+    ex:[{ s:"The generals moved to {{}} the president overnight.", f:"depose", ko:"장군들은 하룻밤에 대통령을 퇴위시키려 움직였다." }] },
+
+  { word:"deposit", pron:"디파짓", pos:"n", level:"B2", meanings:["보증금","착수금"],
+    syn:["down payment","advance","prepayment"],
+    ex:[{ s:"Tenants must pay a one-month {{}} before moving in.", f:"deposit", ko:"세입자는 입주 전에 한 달치 보증금을 내야 한다." }] },
+
+  { word:"depot", pron:"디포", pos:"n", level:"C2", meanings:["차고","창고"],
+    syn:["warehouse","storehouse","terminal"],
+    ex:[{ s:"Buses are serviced overnight at the central {{}}.", f:"depot", ko:"버스는 중앙 차고에서 밤새 정비된다." }] },
+
+  { word:"depreciate", pron:"디프리시에이트", pos:"v", level:"C2", meanings:["가치가 떨어지다","가치를 떨어뜨리다"],
+    syn:["devalue","lose value","mark down"], ant:["appreciate"],
+    ex:[{ s:"New cars {{}} fastest during their first two years.", f:"depreciate", ko:"새 차는 처음 2년 동안 가치가 가장 빠르게 떨어진다." }] },
+
+  { word:"depreciation", pron:"디프리시에이션", pos:"n", level:"C2", meanings:["가치 하락","감가상각"],
+    syn:["devaluation","markdown","loss in value"],
+    ex:[{ s:"The report includes {{}} of equipment over five years.", f:"depreciation", ko:"그 보고서는 5년간의 장비 감가상각을 포함한다." }] },
+
+  { word:"depressed", pron:"디프레스트", pos:"adj", level:"B2", meanings:["우울한","침체된"],
+    syn:["gloomy","despondent","dejected"], ant:["cheerful"],
+    ex:[{ s:"He felt {{}} for weeks after losing the job.", f:"depressed", ko:"그는 일자리를 잃고 몇 주간 우울했다." }] },
+
+  { word:"depression", pron:"디프레션", pos:"n", level:"B2", meanings:["우울증","경기 침체"],
+    syn:["melancholy","slump","despondency"],
+    ex:[{ s:"The country slid into a long economic {{}}.", f:"depression", ko:"그 나라는 오랜 경기 침체에 빠졌다." }] },
+
+  { word:"deprivation", pron:"데프리베이션", pos:"n", level:"C2", meanings:["박탈","결핍"],
+    /* want 는 흔히 '원하다'로 읽혀 '결핍' 뜻이 오해를 부른다 → privation */
+    syn:["privation","hardship","destitution"], ant:["abundance"],
+    ex:[{ s:"Years of sleep {{}} had badly damaged his health.", f:"deprivation", ko:"수년간의 수면 부족이 그의 건강을 크게 해쳤다." }] },
+
+  { word:"deprive", pron:"디프라이브", pos:"v", level:"C1", meanings:["빼앗다","박탈하다"],
+    syn:["dispossess","divest","rob"], ant:["grant"],
+    ex:[{ s:"The new law could {{}} thousands of people of their benefits.", f:"deprive", ko:"그 새 법은 수천 명에게서 수급 자격을 빼앗을 수 있다." }] },
+
+  { word:"depth", pron:"뎁스", pos:"n", level:"B1", meanings:["깊이","심도"],
+    syn:["deepness","profundity","thoroughness"],
+    ex:[{ s:"Divers measured the {{}} of the lake at sixty meters.", f:"depth", ko:"잠수부들은 그 호수의 깊이를 60미터로 측정했다." }] },
+
+  { word:"deranged", pron:"디레인지드", pos:"adj", level:"C2", meanings:["정신이 나간","미친"],
+    syn:["insane","unhinged","demented"], ant:["sane"],
+    ex:[{ s:"The letter was clearly written by someone {{}}.", f:"deranged", ko:"그 편지는 분명히 정신이 나간 사람이 쓴 것이었다." }] },
+
+  { word:"derive", pron:"디라이브", pos:"v", level:"C1", meanings:["얻다","비롯되다"],
+    syn:["obtain","gain","stem"], ant:["give up"],
+    ex:[{ s:"Many English words {{}} from Latin roots.", f:"derive", ko:"많은 영어 단어가 라틴어 어근에서 비롯된다." }] },
+
+  /* 자리표시자 a·b 는 발음하지 않는다 (ascribe a to b 선례).
+     구 전체를 대체할 만한 유의어가 없어 syn 을 비워 둔다. */
+  { word:"derive a from b", pron:"디라이브 프럼", pos:"phr", level:"C1", meanings:["B에서 A를 끌어내다"] },
+
+  { word:"derived from", pron:"디라이브드 프럼", pos:"phr", level:"B2", meanings:["~에서 비롯된","~에서 유래된"],
+    syn:["stemming from","originating in","based on"] }
 ];
 
 
@@ -361,7 +513,6 @@ Object.assign(window.GLOSS, {
   "deception":"속임, 사기",
   "decode":"해독하다, 판독하다",
   "degeneracy":"퇴폐, 퇴화",
-  "delude":"착각하게 하다, 속이다",
   "deteriorate":"악화되다, 나빠지다",
   "devolution":"권한 이양",
   "dim":"어둑하게 하다; 어스름한",
@@ -489,5 +640,88 @@ Object.assign(window.GLOSS, {
   "unpleasant":"불쾌한, 기분 나쁜",
   "vandalize":"파괴하다, 훼손하다",
   "warp":"휘게 하다, 뒤틀리다",
-  "work out":"알아내다, 계산해 내다"
+  "work out":"알아내다, 계산해 내다",
+
+  /* ── 3차 (delude ~ derived from) 몫 81개 ────────── */
+  "appalling":"끔찍한, 형편없는",
+  "arrive":"도착하다",
+  "based on":"~에 근거한",
+  "bearing":"태도, 처신",
+  "bemoan":"한탄하다, 슬퍼하다",
+  "cheerful":"명랑한, 기분 좋은",
+  "compactness":"조밀함, 촘촘함",
+  "crowded":"붐비는, 혼잡한",
+  "decry":"매도하다, 깎아내리다",
+  "deepness":"깊음, 깊이",
+  "dejected":"낙심한, 풀이 죽은",
+  "demented":"정신이 나간, 치매의",
+  "despondency":"낙담, 의기소침",
+  "despondent":"낙담한, 의기소침한",
+  "destitution":"궁핍, 빈곤",
+  "dethrone":"왕위에서 몰아내다",
+  "devaluation":"평가 절하, 가치 하락",
+  "devalue":"가치를 떨어뜨리다",
+  "discourage":"의욕을 꺾다, 만류하다",
+  "disgraceful":"수치스러운, 불명예스러운",
+  "dishearten":"낙담시키다",
+  "dismantle":"해체하다, 분해하다",
+  "dispirit":"기를 죽이다",
+  "dispossess":"소유권을 빼앗다",
+  "divest":"박탈하다, 처분하다",
+  "down payment":"계약금, 착수금",
+  "drain":"빼내다, 소모시키다",
+  "drought":"가뭄",
+  "encourage":"격려하다, 장려하다",
+  "exacting":"엄격한, 힘든",
+  "exhaust":"고갈시키다, 다 써 버리다",
+  "exhaustion":"고갈, 탈진",
+  "exhibit":"드러내다; 전시하다",
+  "fallacy":"오류, 잘못된 생각",
+  "fool":"속이다; 바보",
+  "gloomy":"우울한, 침울한",
+  "illusion":"착각, 환상",
+  "illustrate":"예시하다, 분명히 보여 주다",
+  "insane":"미친, 제정신이 아닌",
+  "insist on":"~을 강력히 요구하다",
+  "install":"임명하다; 설치하다",
+  "lament":"애통해하다, 한탄하다",
+  "lamentable":"통탄스러운, 한심한",
+  "lose value":"가치가 떨어지다",
+  "loss in value":"가치 손실",
+  "mark down":"값을 내리다",
+  "markdown":"가격 인하",
+  "melancholy":"우울, 침울함",
+  "misconception":"오해, 잘못된 생각",
+  "mobilize":"동원하다",
+  "offer":"제공하다; 제안",
+  "originating in":"~에서 비롯하는",
+  "oust":"축출하다, 밀어내다",
+  "overthrow":"전복시키다, 타도하다",
+  "popular rule":"민중 통치",
+  "portray":"묘사하다, 그리다",
+  "position":"배치하다; 위치",
+  "prepayment":"선불, 선납",
+  "privation":"결핍, 궁핍",
+  "profundity":"심오함, 깊이",
+  "raze":"완전히 파괴하다",
+  "replenish":"다시 채우다, 보충하다",
+  "republic":"공화국, 공화제",
+  "self-government":"자치",
+  "set off":"출발하다, 떠나다",
+  "slump":"폭락, 부진",
+  "sparse":"드문, 희박한",
+  "stem":"유래하다, 생기다",
+  "stemming from":"~에서 유래하는",
+  "strenuous":"격렬한, 몸이 힘든",
+  "taxing":"부담이 큰, 힘겨운",
+  "tear down":"허물다, 뜯어내다",
+  "terminal":"종착역, 터미널",
+  "thick":"두꺼운; 빽빽한",
+  "thickness":"두께, 진함",
+  "thoroughness":"철저함, 빈틈없음",
+  "torrent":"급류; 빗발",
+  "unhinged":"정신이 이상해진",
+  "use up":"다 써 버리다",
+  "warehouse":"창고, 저장고",
+  "withdraw":"철수하다, 회수하다"
 });
