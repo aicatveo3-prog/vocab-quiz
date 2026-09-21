@@ -55,7 +55,7 @@
  * 챕터는 다음 차수가 건드리지 않는다 — 차수마다 챕터 하나가 확정된다.
  *
  *   1차  20개  e-commerce ~ efficient      ← 완료
- *   2차  20개  effortless ~ elevated
+ *   2차  20개  effortless ~ elevated       ← 완료
  *   3차  20개  elevation ~ eminent
  *   4차  20개  emission ~ encourage
  *   5차  20개  encouragement ~ enlighten
@@ -79,6 +79,27 @@
  *   gloss.js   economical, ecstasy
  *   words-c.js earthly, edge
  *   pron.js    earthly, economical, ecstasy, edge
+ *
+ * ── 2차 기록 ─────────────────────────────────
+ * syn 을 비운 2개 — electoral(선거의)·electromagnetic field(전자기장).
+ * 1차의 7개에서 크게 줄었다. eco-·econ- 명사 무리를 지났기 때문이다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 5개
+ *   gloss.js   elaborate, election, elevated
+ *   words-c.js effortless, element
+ *   pron.js    effortless, elaborate, election, element, elevated
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   element   '성분' → '원소'. compound(화합물)의 반의어로 이미 쓰이고 있어
+ *             원소 갈래를 버리면 그 문제가 무너진다 (Salt is a compound of…)
+ *   elevated  기존 GLOSS "높은, 고상한"과 똑같이 둬서 aerial 의 유의어가 안 변한다
+ *   elements  레벨을 C1 로 벌렸다. element(B1)와 '레벨 ±1' 필터로 갈라져
+ *             철자가 s 하나 다른 두 낱말이 한 문제의 보기로 같이 뜨지 않는다
+ *
+ * 유의어에서 걸러낸 것 — GLOSS 뜻이 문맥과 어긋나는 경우
+ *   electricity 의 current → "흐름, 현재의"   ✗ → electric current(전류)
+ *   eject 의 admit          → "인정하다, 시인하다" ✗ → let in
+ *   elegant 의 crude        → "대충의, 원유"   ✗ → inelegant
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -163,7 +184,91 @@ window.VOCAB_E = [
 
   { word:"efficient", pron:"이피션트", pos:"adj", level:"B2", meanings:["효율적인","능률적인"],
     syn:["effective","productive","streamlined"], ant:["wasteful"],
-    ex:[{ s:"A more {{}} layout cut the walking distance in half.", f:"efficient", ko:"더 효율적인 배치로 이동 거리가 절반으로 줄었다." }] }
+    ex:[{ s:"A more {{}} layout cut the walking distance in half.", f:"efficient", ko:"더 효율적인 배치로 이동 거리가 절반으로 줄었다." }] },
+
+  { word:"effortless", pron:"에퍼틀리스", pos:"adj", level:"B2", meanings:["힘들지 않은","수월한"],
+    syn:["easy","smooth","painless"], ant:["strenuous"],
+    ex:[{ s:"She made the difficult passage sound completely {{}}.", f:"effortless", ko:"그녀는 그 어려운 악절을 완전히 수월하게 들리도록 연주했다." }] },
+
+  /* ── eg ────────────────────────────────────── */
+  { word:"ego", pron:"이고", pos:"n", level:"B2", meanings:["자아","자존심"],
+    syn:["self","self-esteem","pride"], ant:["humility"],
+    ex:[{ s:"Losing so badly bruised his {{}} for weeks.", f:"ego", ko:"그렇게 크게 진 것이 몇 주 동안 그의 자존심을 상하게 했다." }] },
+
+  { word:"egocentric", pron:"이고센트릭", pos:"adj", level:"C1", meanings:["자기중심적인","이기적인"],
+    syn:["selfish","self-centered","narcissistic"], ant:["altruistic"],
+    ex:[{ s:"His {{}} account of the project ignored everyone else.", f:"egocentric", ko:"그 프로젝트에 대한 그의 자기중심적인 설명은 다른 모두를 무시했다." }] },
+
+  /* ── ej · el ───────────────────────────────── */
+  { word:"eject", pron:"이젝트", pos:"v", level:"B2", meanings:["몰아내다","쫓아내다"],
+    syn:["expel","throw out","evict"], ant:["let in"],
+    ex:[{ s:"Guards moved in to {{}} the noisy spectators.", f:"eject", ko:"경비원들이 시끄러운 관중을 몰아내려고 들어왔다." }] },
+
+  { word:"elaborate", pron:"일래버릿", pos:"adj", level:"C1", meanings:["공들인","정교한"],
+    syn:["intricate","detailed","painstaking"], ant:["simple"],
+    ex:[{ s:"The wedding featured an {{}} ten-course dinner.", f:"elaborate", ko:"그 결혼식에는 공들인 10코스 만찬이 있었다." }] },
+
+  { word:"elastic", pron:"일래스틱", pos:"adj", level:"B2", meanings:["탄력 있는","유연한"],
+    syn:["flexible","stretchy","springy"], ant:["rigid"],
+    ex:[{ s:"The waistband is {{}} enough to fit most sizes.", f:"elastic", ko:"그 허리 밴드는 대부분의 치수에 맞을 만큼 탄력이 있다." }] },
+
+  { word:"elated", pron:"일레이티드", pos:"adj", level:"C1", meanings:["마냥 행복해하는","신이 난"],
+    syn:["overjoyed","thrilled","jubilant"], ant:["dejected"],
+    ex:[{ s:"The whole team looked {{}} after the final whistle.", f:"elated", ko:"경기 종료 휘슬이 울린 뒤 팀 전체가 신이 나 보였다." }] },
+
+  { word:"elect", pron:"일렉트", pos:"v", level:"B2", meanings:["선출하다","선택하다"],
+    syn:["choose","vote for","appoint"], ant:["dismiss"],
+    ex:[{ s:"Members will {{}} a new chair at the spring meeting.", f:"elect", ko:"회원들은 봄 총회에서 새 의장을 선출할 것이다." }] },
+
+  { word:"election", pron:"일렉션", pos:"n", level:"B2", meanings:["선거","선정"],
+    syn:["vote","ballot","poll"],
+    ex:[{ s:"Turnout in the local {{}} was unusually high.", f:"election", ko:"그 지방 선거의 투표율은 유난히 높았다." }] },
+
+  { word:"electoral", pron:"일렉터럴", pos:"adj", level:"C1", meanings:["선거의"],
+    ex:[{ s:"The new {{}} map clearly favors rural districts.", f:"electoral", ko:"새 선거 지도는 분명히 농촌 지역에 유리하다." }] },
+
+  { word:"electorate", pron:"일렉터릿", pos:"n", level:"C1", meanings:["유권자"],
+    syn:["voters","constituency","voting public"],
+    ex:[{ s:"The entire {{}} was invited to comment on the plan.", f:"electorate", ko:"전체 유권자가 그 계획에 의견을 낼 수 있도록 초청되었다." }] },
+
+  { word:"electricity", pron:"일렉트리서티", pos:"n", level:"B1", meanings:["전기"],
+    syn:["electric power","electrical energy","electric current"],
+    ex:[{ s:"The storm cut off {{}} to thousands of homes.", f:"electricity", ko:"폭풍이 수천 가구의 전기를 끊었다." }] },
+
+  { word:"electromagnetic field", pron:"일렉트로마그네틱 필드", pos:"n", level:"C1", meanings:["전자기장"],
+    ex:[{ s:"Sensitive instruments detect any shift in the {{}}.", f:"electromagnetic field", ko:"민감한 기기는 전자기장의 어떤 변화도 감지한다." }] },
+
+  { word:"electronic", pron:"일렉트라닉", pos:"adj", level:"B1", meanings:["전자의"],
+    syn:["digital","computerized","electrical"],
+    ex:[{ s:"All {{}} devices must be switched off during takeoff.", f:"electronic", ko:"이륙 중에는 모든 전자 기기를 꺼야 한다." }] },
+
+  { word:"elegant", pron:"엘러건트", pos:"adj", level:"B2", meanings:["우아한","고상한"],
+    syn:["graceful","refined","stylish"], ant:["inelegant"],
+    ex:[{ s:"She wore an {{}} black dress to the ceremony.", f:"elegant", ko:"그녀는 그 행사에 우아한 검은 드레스를 입었다." }] },
+
+  /* element 는 '요소·원소'다. compound(화합물)의 반의어로 이미 쓰이고 있어
+     '원소' 갈래를 버리면 그 문제가 무너진다 — 원본의 '성분'을 '원소'로 둔다. */
+  { word:"element", pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
+    syn:["component","part","ingredient"], ant:["compound"],
+    ex:[{ s:"Trust is the key {{}} in any lasting partnership.", f:"element", ko:"신뢰는 오래가는 모든 동업 관계의 핵심 요소다." }] },
+
+  { word:"elementary", pron:"엘러멘터리", pos:"adj", level:"B1", meanings:["초등 교육의","기본의"],
+    syn:["basic","fundamental","introductory"], ant:["advanced"],
+    ex:[{ s:"The course covers only {{}} statistics.", f:"elementary", ko:"그 강좌는 기본적인 통계만 다룬다." }] },
+
+  /* elements(악천후)는 element(요소)와 철자가 s 하나 차이다. 레벨을 C1 로 벌려
+     두면 '레벨 ±1' 필터에 걸려 두 낱말이 한 문제의 보기로 같이 뜨지 않는다. */
+  { word:"elements", pron:"엘러먼츠", pos:"n", level:"C1", meanings:["악천후","비바람"],
+    syn:["bad weather","foul weather","rough weather"],
+    ex:[{ s:"Left out in the {{}}, the paint began to peel.", f:"elements", ko:"악천후에 노출된 그 페인트는 벗겨지기 시작했다." }] },
+
+  { word:"elevate", pron:"엘러베이트", pos:"v", level:"B2", meanings:["승격시키다","높이다"],
+    syn:["raise","promote","lift"], ant:["lower"],
+    ex:[{ s:"The board voted to {{}} her to senior partner.", f:"elevate", ko:"이사회는 그녀를 수석 파트너로 승격시키기로 의결했다." }] },
+
+  { word:"elevated", pron:"엘러베이티드", pos:"adj", level:"C1", meanings:["높은","고상한"],
+    syn:["lofty","raised","noble"], ant:["lowly"],
+    ex:[{ s:"The house sits on {{}} ground above the river.", f:"elevated", ko:"그 집은 강 위 높은 땅에 자리하고 있다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -201,5 +306,43 @@ Object.assign(window.GLOSS, {
   "uptight":"긴장한, 신경이 날카로운",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
-  "wholehearted":"전심전력의, 진심을 다한"
+  "wholehearted":"전심전력의, 진심을 다한",
+
+  /* ── 2차: effortless ~ elevated (37개) ───────────────── */
+  "advanced":"고급의, 진전된",
+  "bad weather":"나쁜 날씨",
+  "basic":"기본적인",
+  "choose":"고르다, 선택하다",
+  "computerized":"컴퓨터로 처리되는",
+  "detailed":"상세한, 세밀한",
+  "digital":"디지털의",
+  "easy":"쉬운, 수월한",
+  "electric current":"전류",
+  "electric power":"전력",
+  "electrical":"전기의",
+  "electrical energy":"전기 에너지",
+  "evict":"퇴거시키다",
+  "foul weather":"험한 날씨",
+  "inelegant":"품위 없는, 촌스러운",
+  "introductory":"입문의, 소개하는",
+  "jubilant":"환호하는, 승리에 들뜬",
+  "lofty":"아주 높은, 우뚝한",
+  "lower":"낮추다, 내리다",
+  "lowly":"낮은, 미천한",
+  "narcissistic":"자기도취적인",
+  "painless":"고통 없는, 수고롭지 않은",
+  "pride":"자랑, 자부심",
+  "raised":"올려진, 돋운",
+  "rough weather":"거친 날씨",
+  "self":"자기 자신",
+  "self-centered":"자기중심적인",
+  "self-esteem":"자존감",
+  "springy":"튀어 오르는, 반발력 있는",
+  "stretchy":"잘 늘어나는",
+  "stylish":"멋스러운, 세련된",
+  "throw out":"내쫓다, 버리다",
+  "vote for":"~에 투표하다",
+  "voters":"유권자들",
+  "voting public":"투표권을 가진 대중",
+  "constituency":"선거구, 선거구민"
 });

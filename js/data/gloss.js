@@ -552,9 +552,7 @@ Object.assign(window.GLOSS, {
   "ecological variety":"생태적 다양성",
   "edit":"편집하다; 검열하다",
   "effect":"결과, 효과",
-  "elaborate":"정교한; 상세한",
-  "election":"선거",
-  "elevated":"높은, 고상한",
+
   "elevation":"고도, 표고",
   "eliminate":"제거하다, 없애다",
   "elimination":"제거, 폐지",
