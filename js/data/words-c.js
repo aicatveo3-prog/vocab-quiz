@@ -1967,8 +1967,7 @@ Object.assign(window.GLOSS, {
   "doubtful":"의심스러운, 불확실한",
   "ease":"쉬움, 편안함",
   "effective":"효과적인",
-  "effortless":"힘이 들지 않는",
-  "element":"원소, 요소",
+
   "emotional":"감정적인",
   "endure":"견디다, 지속되다",
   "erratic":"불규칙한, 변덕스러운",
