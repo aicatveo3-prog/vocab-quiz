@@ -297,12 +297,20 @@ window.Modes = (function () {
     grid.appendChild(colR);
     body.appendChild(grid);
 
-    /* locked 는 오답 흔들림(340ms) 동안 판을 잠근다. 그런데 그 사이에 누른
-       칸을 그냥 버리면 "눌렀는데 아무 일도 안 일어난다"로 느껴진다. 모바일에서
-       연달아 탭하는 게 자연스러우므로 마지막 한 번을 기억해 두고 잠금이 풀릴 때
-       대신 처리한다. 여러 번 눌렀으면 마지막 것만 남긴다 — 눌렀던 순서대로 다
-       실행하면 의도하지 않은 짝이 평가될 수 있다. */
-    var selL = null, selR = null, locked = false, pendingPick = null;
+    /* 판을 잠그지 않는다.
+       예전에는 오답 흔들림(340ms) 동안 locked 로 판을 막고, 그 사이에 누른
+       탭은 마지막 하나만 기억해 두고 나중에 대신 처리했다. 그런데 그 방식은
+       탭을 버린다. 340ms 안에 두 번 누르면 앞의 것이 사라지므로
+         · 오답을 연달아 두 번 내면 두 번째가 실수로 집계되지 않는다
+         · 오답 직후 다음 짝을 연달아 누르면 그 짝이 맞춰지지 않는다
+       둘 다 "눌렀는데 반응이 없다 / 틀렸는데 오답이 안 된다"로 느껴진다.
+       tools/match-swallow-check.js 가 이 세 경우를 재현한다.
+
+       그래서 잠그는 대신, 새 탭이 들어오면 흔들리고 있던 오답 표시를 그 자리에서
+       걷어내고 탭을 바로 처리한다. 버려지는 탭이 없으니 누른 순서도 결과에
+       영향을 주지 않는다. finished 는 보드가 끝난 뒤(380ms) 들어오는 탭만 막는다. */
+    var selL = null, selR = null, finished = false;
+    var badPair = null, badTimer = null;
 
     function makeItem(label, key, side) {
       var b = el('button', 'mitem', label);
@@ -349,16 +357,18 @@ window.Modes = (function () {
       selL = null; selR = null;
     }
 
-    /* 잠금이 풀린 뒤 기억해 둔 탭을 처리한다. 이미 맞춘 칸이 되었으면 버린다. */
-    function flushPending() {
-      var b = pendingPick;
-      pendingPick = null;
-      if (b && !b.classList.contains('is-done')) pick(b);
+    /* 흔들리고 있던 오답 표시를 걷어낸다. 340ms 타이머가 남아 있으면 취소한다. */
+    function clearBad() {
+      if (!badPair) return;
+      if (badTimer) { clearTimeout(badTimer); badTimer = null; }
+      badPair.forEach(function (n) { n.classList.remove('is-bad', 'is-sel'); });
+      badPair = null;
     }
 
     function pick(btn) {
+      if (finished) return;
       if (btn.classList.contains('is-done')) return;
-      if (locked) { pendingPick = btn; return; }
+      clearBad();
       if (btn._side === 'L') {
         if (selL) selL.classList.remove('is-sel');
         selL = (selL === btn) ? null : btn;
@@ -373,7 +383,6 @@ window.Modes = (function () {
 
     function evaluate() {
       var a = selL, b = selR;
-      locked = true;
       if (a._key === b._key) {
         // 도입 보드는 노출만, 마지막 남은 한 쌍은 소거법으로 자동 정답이 되므로
         // 두 경우 모두 숙련도를 올리지 않는다
@@ -384,9 +393,8 @@ window.Modes = (function () {
         clearSel();
         remaining--;
         updateHead();
-        locked = false;
-        flushPending();
         if (remaining === 0) {
+          finished = true;
           setTimeout(function () {
             ctx.boardDone({
               total: total, mistakes: mistakes,
@@ -402,12 +410,15 @@ window.Modes = (function () {
         a.classList.add('is-bad');
         b.classList.add('is-bad');
         updateHead();
-        setTimeout(function () {
-          a.classList.remove('is-bad', 'is-sel');
-          b.classList.remove('is-bad', 'is-sel');
-          clearSel();
-          locked = false;
-          flushPending();
+        /* 선택 상태는 즉시 비운다. 다음 탭이 곧바로 새 선택이 되게 하려는 것이다.
+           빨간 표시(is-bad·is-sel)는 badPair 가 들고 있다가 340ms 뒤에,
+           또는 그 전에 다음 탭이 들어오면 clearBad 가 걷어낸다. */
+        selL = null;
+        selR = null;
+        badPair = [a, b];
+        badTimer = setTimeout(function () {
+          badTimer = null;
+          clearBad();
         }, 340);
       }
     }
