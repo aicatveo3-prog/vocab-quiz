@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 258 / 333단어 (damp ~ disturbance) — 7차.
+ * 진행 상황: 296 / 333단어 (damp ~ downplay) — 8차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
