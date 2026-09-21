@@ -297,7 +297,12 @@ window.Modes = (function () {
     grid.appendChild(colR);
     body.appendChild(grid);
 
-    var selL = null, selR = null, locked = false;
+    /* locked 는 오답 흔들림(340ms) 동안 판을 잠근다. 그런데 그 사이에 누른
+       칸을 그냥 버리면 "눌렀는데 아무 일도 안 일어난다"로 느껴진다. 모바일에서
+       연달아 탭하는 게 자연스러우므로 마지막 한 번을 기억해 두고 잠금이 풀릴 때
+       대신 처리한다. 여러 번 눌렀으면 마지막 것만 남긴다 — 눌렀던 순서대로 다
+       실행하면 의도하지 않은 짝이 평가될 수 있다. */
+    var selL = null, selR = null, locked = false, pendingPick = null;
 
     function makeItem(label, key, side) {
       var b = el('button', 'mitem', label);
@@ -344,8 +349,16 @@ window.Modes = (function () {
       selL = null; selR = null;
     }
 
+    /* 잠금이 풀린 뒤 기억해 둔 탭을 처리한다. 이미 맞춘 칸이 되었으면 버린다. */
+    function flushPending() {
+      var b = pendingPick;
+      pendingPick = null;
+      if (b && !b.classList.contains('is-done')) pick(b);
+    }
+
     function pick(btn) {
-      if (locked || btn.classList.contains('is-done')) return;
+      if (btn.classList.contains('is-done')) return;
+      if (locked) { pendingPick = btn; return; }
       if (btn._side === 'L') {
         if (selL) selL.classList.remove('is-sel');
         selL = (selL === btn) ? null : btn;
@@ -372,6 +385,7 @@ window.Modes = (function () {
         remaining--;
         updateHead();
         locked = false;
+        flushPending();
         if (remaining === 0) {
           setTimeout(function () {
             ctx.boardDone({
@@ -393,6 +407,7 @@ window.Modes = (function () {
           b.classList.remove('is-bad', 'is-sel');
           clearSel();
           locked = false;
+          flushPending();
         }, 340);
       }
     }

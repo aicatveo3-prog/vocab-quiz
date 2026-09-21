@@ -251,7 +251,13 @@ b,strong{font-weight:600}
   border-radius:var(--r-sm);padding:13px 8px;font-size:14px;text-align:center;
   min-height:52px;display:grid;place-items:center;word-break:break-word;
   transition:all .12s}
-.mitem:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+/* hover 는 마우스가 있는 기기에만. 터치에서는 탭한 칸에 hover 가 남아
+   선택을 해제해도 파랗게 보여서, 실제 상태와 화면이 어긋난다. */
+@media (hover:hover){
+  .mitem:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+}
+/* 탭과 click 사이의 지연을 없애고, 두 번 탭에 확대되는 것도 막는다 */
+.mitem{touch-action:manipulation}
 .mitem.is-sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
 /* 맞춘 칸은 텍스트를 남기고 풀었다는 표시만 한다. 사라지지 않는다. */
 .mitem.is-done{pointer-events:none;color:var(--ok);
