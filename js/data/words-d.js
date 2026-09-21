@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 106 / 333단어 (damp ~ derived from) — 3차.
+ * 진행 상황: 144 / 333단어 (damp ~ deviate) — 4차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -490,7 +490,159 @@ window.VOCAB_D = [
   { word:"derive a from b", pron:"디라이브 프럼", pos:"phr", level:"C1", meanings:["B에서 A를 끌어내다"] },
 
   { word:"derived from", pron:"디라이브드 프럼", pos:"phr", level:"B2", meanings:["~에서 비롯된","~에서 유래된"],
-    syn:["stemming from","originating in","based on"] }
+    syn:["stemming from","originating in","based on"] },
+
+  /* desalinate·desertification·detoxification — 낱말로 대체할 유의어가 없는
+     기술 용어라 syn 을 비워 둔다 */
+  { word:"desalinate", pron:"디샐러네이트", pos:"v", level:"C2", meanings:["담수화하다","염분을 제거하다"],
+    ex:[{ s:"Several coastal plants now {{}} seawater for drinking.", f:"desalinate", ko:"여러 해안 시설이 이제 식수용으로 바닷물을 담수화한다." }] },
+
+  { word:"descend", pron:"디센드", pos:"v", level:"B2", meanings:["내려가다","하강하다"],
+    syn:["go down","drop","sink"], ant:["ascend"],
+    ex:[{ s:"The path begins to {{}} steeply just after the ridge.", f:"descend", ko:"그 길은 능선을 지나자마자 급하게 내려가기 시작한다." }] },
+
+  { word:"descendant", pron:"디센던트", pos:"n", level:"C1", meanings:["자손","후손"],
+    syn:["offspring","heir","successor"], ant:["ancestor"],
+    ex:[{ s:"She is a direct {{}} of the village's founder.", f:"descendant", ko:"그녀는 그 마을 창건자의 직계 후손이다." }] },
+
+  { word:"describe", pron:"디스크라이브", pos:"v", level:"B1", meanings:["묘사하다","설명하다"],
+    syn:["depict","portray","recount"],
+    ex:[{ s:"Witnesses could not clearly {{}} what they had seen.", f:"describe", ko:"목격자들은 자신들이 본 것을 분명히 묘사할 수 없었다." }] },
+
+  { word:"desertification", pron:"디저티피케이션", pos:"n", level:"C2", meanings:["사막화"],
+    ex:[{ s:"Overgrazing has accelerated {{}} across the region.", f:"desertification", ko:"과도한 방목이 그 지역 전역의 사막화를 가속시켰다." }] },
+
+  { word:"deserve", pron:"디저브", pos:"v", level:"B2", meanings:["~할 자격이 있다","받을 만하다"],
+    syn:["merit","earn","warrant"],
+    ex:[{ s:"After such hard work they {{}} a proper holiday.", f:"deserve", ko:"그렇게 열심히 일했으니 그들은 제대로 된 휴가를 누릴 자격이 있다." }] },
+
+  { word:"designate", pron:"데지그네이트", pos:"v", level:"C1", meanings:["지정하다","지명하다"],
+    syn:["appoint","assign","nominate"],
+    ex:[{ s:"The council voted to {{}} the area a nature reserve.", f:"designate", ko:"의회는 그 지역을 자연 보호구역으로 지정하기로 표결했다." }] },
+
+  { word:"designation", pron:"데지그네이션", pos:"n", level:"C2", meanings:["지정","명칭"],
+    syn:["appointment","title","classification"],
+    ex:[{ s:"The site received official {{}} as a heritage landmark.", f:"designation", ko:"그 장소는 문화유산 명소로 공식 지정을 받았다." }] },
+
+  { word:"desirable", pron:"디자이어러블", pos:"adj", level:"B2", meanings:["바람직한","탐나는"],
+    syn:["advantageous","attractive","preferable"], ant:["undesirable"],
+    ex:[{ s:"A quiet location is highly {{}} for a public library.", f:"desirable", ko:"조용한 위치는 공공 도서관에 매우 바람직하다." }] },
+
+  { word:"desire", pron:"디자이어", pos:"n", level:"B1", meanings:["욕구","바람"],
+    syn:["longing","craving","wish"], ant:["aversion"],
+    ex:[{ s:"He felt a strong {{}} to return to his hometown.", f:"desire", ko:"그는 고향으로 돌아가고 싶은 강한 욕구를 느꼈다." }] },
+
+  { word:"desolate", pron:"데설릿", pos:"adj", level:"C2", meanings:["황폐한","쓸쓸한"],
+    syn:["barren","bleak","deserted"], ant:["thriving"],
+    ex:[{ s:"The mine left a {{}} stretch of land behind it.", f:"desolate", ko:"그 광산은 황폐한 땅을 남겨 놓았다." }] },
+
+  { word:"despair", pron:"디스페어", pos:"n", level:"C1", meanings:["절망","자포자기"],
+    syn:["hopelessness","despondency","gloom"], ant:["hope"],
+    ex:[{ s:"A note of {{}} crept into her voice as she spoke.", f:"despair", ko:"말하는 동안 그녀의 목소리에 절망의 기색이 스몄다." }] },
+
+  { word:"despairing", pron:"디스페어링", pos:"adj", level:"C2", meanings:["절망적인","자포자기의"],
+    syn:["hopeless","disconsolate","forlorn"],
+    ex:[{ s:"He gave a {{}} look at the empty scoreboard.", f:"despairing", ko:"그는 텅 빈 점수판을 절망적인 눈빛으로 바라봤다." }] },
+
+  { word:"desperate", pron:"데스퍼릿", pos:"adj", level:"B2", meanings:["필사적인","절박한"],
+    syn:["frantic","urgent","reckless"], ant:["calm"],
+    ex:[{ s:"They made a {{}} attempt to reach the shore before dark.", f:"desperate", ko:"그들은 어두워지기 전에 해안에 닿으려고 필사적인 시도를 했다." }] },
+
+  { word:"desperately", pron:"데스퍼릿리", pos:"adv", level:"B2", meanings:["필사적으로","절박하게"],
+    syn:["frantically","urgently","hopelessly"],
+    ex:[{ s:"She was {{}} trying to finish before the deadline.", f:"desperately", ko:"그녀는 마감 전에 끝내려고 필사적으로 애쓰고 있었다." }] },
+
+  { word:"desperation", pron:"데스퍼레이션", pos:"n", level:"C1", meanings:["자포자기","절박함"],
+    syn:["frenzy","recklessness","hopelessness"],
+    ex:[{ s:"In sheer {{}} he called every number on the list.", f:"desperation", ko:"순전한 절박함에 그는 명단의 모든 번호로 전화했다." }] },
+
+  { word:"destination", pron:"데스터네이션", pos:"n", level:"B1", meanings:["목적지","도착지"],
+    syn:["endpoint","terminus","goal"], ant:["origin"],
+    ex:[{ s:"The final {{}} of the tour is a small mountain village.", f:"destination", ko:"그 여행의 최종 목적지는 작은 산골 마을이다." }] },
+
+  { word:"destiny", pron:"데스터니", pos:"n", level:"B2", meanings:["운명","숙명"],
+    syn:["fate","fortune","providence"],
+    ex:[{ s:"He believed it was his {{}} to lead the company one day.", f:"destiny", ko:"그는 언젠가 회사를 이끄는 것이 자기 운명이라고 믿었다." }] },
+
+  { word:"destroy", pron:"디스트로이", pos:"v", level:"B1", meanings:["파괴하다","부수다"],
+    syn:["demolish","wreck","ruin"], ant:["build"],
+    ex:[{ s:"The fire threatened to {{}} the entire warehouse.", f:"destroy", ko:"그 화재는 창고 전체를 파괴할 뻔했다." }] },
+
+  { word:"destructive", pron:"디스트럭티브", pos:"adj", level:"B2", meanings:["파괴적인","해로운"],
+    syn:["damaging","ruinous","harmful"], ant:["constructive"],
+    ex:[{ s:"The storm was the most {{}} the coast had seen in fifty years.", f:"destructive", ko:"그 폭풍은 그 해안이 50년 만에 겪은 가장 파괴적인 것이었다." }] },
+
+  { word:"detach", pron:"디태치", pos:"v", level:"C1", meanings:["분리하다","떼어 내다"],
+    syn:["separate","disconnect","remove"], ant:["attach"],
+    ex:[{ s:"Carefully {{}} the label before washing the shirt.", f:"detach", ko:"셔츠를 빨기 전에 라벨을 조심히 떼어 내라." }] },
+
+  { word:"detail", pron:"디테일", pos:"n", level:"B1", meanings:["세부 사항","자세한 내용"],
+    syn:["particular","specific","fine point"],
+    ex:[{ s:"She explained every {{}} of the procedure twice.", f:"detail", ko:"그녀는 절차의 모든 세부 사항을 두 번 설명했다." }] },
+
+  { word:"detect", pron:"디텍트", pos:"v", level:"B2", meanings:["감지하다","발견하다"],
+    syn:["sense","discern","spot"], ant:["overlook"],
+    ex:[{ s:"The alarm can {{}} smoke within a few seconds.", f:"detect", ko:"그 경보기는 몇 초 안에 연기를 감지할 수 있다." }] },
+
+  { word:"detector", pron:"디텍터", pos:"n", level:"C1", meanings:["탐지기","감지기"],
+    syn:["sensor","monitor","scanner"],
+    ex:[{ s:"Every room in the building is fitted with a smoke {{}}.", f:"detector", ko:"그 건물의 모든 방에 연기 탐지기가 설치돼 있다." }] },
+
+  { word:"detergent", pron:"디터전트", pos:"n", level:"B2", meanings:["세제","세정제"],
+    syn:["cleanser","soap","cleaning agent"],
+    ex:[{ s:"Use only a mild {{}} on delicate fabrics.", f:"detergent", ko:"섬세한 천에는 순한 세제만 쓰라." }] },
+
+  { word:"deteriorate", pron:"디티리어레이트", pos:"v", level:"C1", meanings:["악화되다","나빠지다"],
+    syn:["worsen","decline","degenerate"], ant:["improve"],
+    ex:[{ s:"His health began to {{}} rapidly after the surgery.", f:"deteriorate", ko:"수술 후 그의 건강은 빠르게 악화되기 시작했다." }] },
+
+  { word:"determinant", pron:"디터머넌트", pos:"n", level:"C2", meanings:["결정 요인","결정 인자"],
+    syn:["factor","cause","influence"],
+    ex:[{ s:"Household income is a major {{}} of educational outcomes.", f:"determinant", ko:"가계 소득은 교육 성과의 주요 결정 요인이다." }] },
+
+  { word:"determination", pron:"디터머네이션", pos:"n", level:"B2", meanings:["결심","투지"],
+    syn:["resolve","persistence","willpower"],
+    ex:[{ s:"Her {{}} to finish the race impressed everyone watching.", f:"determination", ko:"경기를 완주하려는 그녀의 투지가 보던 모두를 감동시켰다." }] },
+
+  { word:"determine", pron:"디터민", pos:"v", level:"B1", meanings:["결정하다","알아내다"],
+    syn:["decide","establish","ascertain"],
+    ex:[{ s:"Tests will {{}} whether the water is safe to drink.", f:"determine", ko:"검사로 그 물이 마셔도 안전한지 알아낼 것이다." }] },
+
+  { word:"deterrent", pron:"디터런트", pos:"n", level:"C2", meanings:["억제책","제지하는 것"],
+    /* check 는 흔히 '확인하다'로 읽혀 '억제' 뜻이 오해를 부른다 → curb */
+    syn:["disincentive","obstacle","curb"],
+    ex:[{ s:"Heavy fines act as a {{}} to illegal dumping.", f:"deterrent", ko:"무거운 벌금이 불법 투기에 대한 억제책으로 작용한다." }] },
+
+  { word:"detest", pron:"디테스트", pos:"v", level:"C1", meanings:["몹시 싫어하다","혐오하다"],
+    syn:["loathe","abhor","despise"], ant:["adore"],
+    ex:[{ s:"She came to {{}} the long commute every single morning.", f:"detest", ko:"그녀는 매일 아침 긴 통근을 몹시 싫어하게 됐다." }] },
+
+  { word:"detour", pron:"디투어", pos:"n", level:"B2", meanings:["우회","우회로"],
+    syn:["diversion","bypass","roundabout route"],
+    ex:[{ s:"Roadwork forced a long {{}} through the hills.", f:"detour", ko:"도로 공사로 언덕을 지나는 긴 우회를 해야 했다." }] },
+
+  { word:"detoxification", pron:"디탁시피케이션", pos:"n", level:"C2", meanings:["해독","해독 작용"],
+    ex:[{ s:"The liver plays a central role in {{}}.", f:"detoxification", ko:"간은 해독에서 핵심 역할을 한다." }] },
+
+  { word:"detract", pron:"디트랙트", pos:"v", level:"C2", meanings:["떨어뜨리다","손상시키다"],
+    syn:["diminish","lessen","devalue"], ant:["enhance"],
+    ex:[{ s:"One weak chapter does not {{}} from the whole book.", f:"detract", ko:"약한 한 장이 책 전체의 가치를 떨어뜨리지는 않는다." }] },
+
+  { word:"devastate", pron:"데버스테이트", pos:"v", level:"C1", meanings:["황폐화하다","큰 충격을 주다"],
+    syn:["ravage","wreck","lay waste"],
+    ex:[{ s:"A single storm can {{}} an entire year's harvest.", f:"devastate", ko:"단 한 번의 폭풍이 한 해 수확 전체를 황폐화할 수 있다." }] },
+
+  { word:"develop", pron:"디벨럽", pos:"v", level:"B1", meanings:["개발하다","발전시키다"],
+    syn:["evolve","expand","cultivate"],
+    ex:[{ s:"The team took two years to {{}} the new engine.", f:"develop", ko:"팀은 새 엔진을 개발하는 데 2년이 걸렸다." }] },
+
+  { word:"deviant", pron:"디비언트", pos:"adj", level:"C2", meanings:["일탈적인","정상에서 벗어난"],
+    syn:["abnormal","aberrant","irregular"], ant:["conventional"],
+    ex:[{ s:"The study focuses on {{}} behavior in large groups.", f:"deviant", ko:"그 연구는 큰 집단에서의 일탈적 행동에 주목한다." }] },
+
+  { word:"deviate", pron:"디비에이트", pos:"v", level:"C1", meanings:["벗어나다","빗나가다"],
+    syn:["diverge","stray","depart"], ant:["conform"],
+    ex:[{ s:"Pilots must never {{}} from the agreed procedure.", f:"deviate", ko:"조종사는 합의된 절차에서 절대 벗어나면 안 된다." }] }
 ];
 
 
@@ -513,7 +665,6 @@ Object.assign(window.GLOSS, {
   "deception":"속임, 사기",
   "decode":"해독하다, 판독하다",
   "degeneracy":"퇴폐, 퇴화",
-  "deteriorate":"악화되다, 나빠지다",
   "devolution":"권한 이양",
   "dim":"어둑하게 하다; 어스름한",
   "discussion":"논의, 토의",
@@ -723,5 +874,67 @@ Object.assign(window.GLOSS, {
   "unhinged":"정신이 이상해진",
   "use up":"다 써 버리다",
   "warehouse":"창고, 저장고",
-  "withdraw":"철수하다, 회수하다"
+  "withdraw":"철수하다, 회수하다",
+
+  /* ── 4차 (desalinate ~ deviate) 몫 60개 ─────────── */
+  "aberrant":"정상에서 벗어난, 이상한",
+  "appoint":"임명하다, 정하다",
+  "ascertain":"확인하다, 알아내다",
+  "attractive":"매력적인, 마음을 끄는",
+  "bypass":"우회로; 우회하다",
+  "cleaning agent":"세정제",
+  "cleanser":"세정제, 클렌저",
+  "constructive":"건설적인, 유익한",
+  "curb":"억제, 제약",
+  "decide":"결정하다, 결심하다",
+  "deserted":"인적이 없는, 버려진",
+  "discern":"알아차리다, 식별하다",
+  "disconnect":"연결을 끊다, 분리하다",
+  "disconsolate":"슬픔에 잠긴, 위로할 수 없는",
+  "disincentive":"억제 요인, 방해 요소",
+  "diverge":"갈라지다, 벗어나다",
+  "drop":"떨어지다; 하락",
+  "endpoint":"종점, 최종 지점",
+  "evolve":"발전하다, 진화하다",
+  "factor":"요인, 요소",
+  "fate":"운명, 숙명",
+  "fine point":"세부 사항, 미세한 점",
+  "forlorn":"쓸쓸한, 절망적인",
+  "fortune":"운, 행운",
+  "frantic":"미친 듯한, 정신없는",
+  "frantically":"미친 듯이, 정신없이",
+  "frenzy":"광란, 격분",
+  "gloom":"침울, 어둠",
+  "go down":"내려가다, 하강하다",
+  "goal":"목표, 골",
+  "hope":"희망, 바람",
+  "hopeless":"절망적인, 방법이 없는",
+  "hopelessly":"절망적으로, 어찌할 수 없이",
+  "hopelessness":"절망, 희망 없음",
+  "lay waste":"황폐하게 만들다",
+  "monitor":"감시 장치; 감시하다",
+  "nominate":"지명하다, 후보로 추천하다",
+  "offspring":"자식, 자손",
+  "persistence":"끈기, 고집",
+  "preferable":"더 나은, 선호되는",
+  "providence":"섭리, 신의 뜻",
+  "ravage":"파괴하다, 유린하다",
+  "recklessness":"무모함, 부주의",
+  "recount":"이야기하다, 상세히 말하다",
+  "roundabout route":"우회로",
+  "scanner":"스캐너, 판독기",
+  "sense":"감지하다; 감각",
+  "sensor":"감지기, 센서",
+  "sink":"가라앉다, 침몰하다",
+  "soap":"비누",
+  "stray":"벗어나다, 빗나가다",
+  "terminus":"종착지, 끝",
+  "thriving":"번성하는, 잘 자라는",
+  "title":"명칭, 칭호",
+  "undesirable":"바람직하지 않은",
+  "urgent":"긴급한, 절박한",
+  "urgently":"긴급히, 절박하게",
+  "warrant":"정당화하다, ~할 만하다",
+  "willpower":"의지력",
+  "wish":"바람, 소망"
 });
