@@ -34,6 +34,13 @@
  *   (deaf·decade·decaffeinate 가 그런 경우다). 그 단어는 '아닌 것 고르기'에만
  *   안 나오고 나머지 모드는 정상으로 출제된다.
  *
+ *   ★ 유의어를 고른 뒤 반드시 렌더 미리보기로 확인할 것.
+ *     그 유의어가 이미 GLOSS에 있으면 '거기 적힌 뜻'이 화면에 뜬다. 품사나
+ *     뜻갈래가 이 문맥과 어긋나면 엉뚱한 설명이 붙는다. 기계 검사는 통과한다.
+ *       decadence 의 유의어 decline → "감소하다; 거절하다"(동사)  ✗ → immorality
+ *       deduce    의 유의어 reason  → "이유; 이성"(명사)          ✗ → work out
+ *     node tools/pron-render-check.js --word <표제어> 로 확인한다.
+ *
  * ant — 진짜 반대말만. 느슨한 연관어는 넣지 않는다.
  *   '아닌 것 고르기'의 정답(바꿔 쓸 수 없는 것)으로 쓰이므로, 애매하면
  *   문제가 논쟁거리가 된다.
@@ -55,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 30 / 333단어 (damp ~ deck) — 1차.
+ * 진행 상황: 68 / 333단어 (damp ~ deliver) — 2차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -178,7 +185,160 @@ window.VOCAB_D = [
 
   { word:"deck", pron:"덱", pos:"n", level:"B2", meanings:["갑판","바닥"],
     syn:["platform","floor","surface"],
-    ex:[{ s:"Passengers gathered on the upper {{}} to watch the harbor.", f:"deck", ko:"승객들이 항구를 보려고 상층 갑판에 모였다." }] }
+    ex:[{ s:"Passengers gathered on the upper {{}} to watch the harbor.", f:"deck", ko:"승객들이 항구를 보려고 상층 갑판에 모였다." }] },
+
+  { word:"declare", pron:"디클레어", pos:"v", level:"B2", meanings:["선언하다","공표하다"],
+    syn:["announce","proclaim","assert"], ant:["deny"],
+    ex:[{ s:"The government is expected to {{}} a state of emergency tonight.", f:"declare", ko:"정부가 오늘 밤 비상사태를 선포할 것으로 보인다." }] },
+
+  { word:"decline", pron:"디클라인", pos:"v", level:"B2", meanings:["감소하다","거절하다"],
+    syn:["decrease","diminish","refuse"], ant:["increase"],
+    ex:[{ s:"Sales began to {{}} sharply after the product recall.", f:"decline", ko:"제품 회수 이후 매출이 급격히 감소하기 시작했다." }] },
+
+  { word:"decompose", pron:"디컴포즈", pos:"v", level:"C1", meanings:["분해되다","부패하다"],
+    syn:["rot","decay","break down"], ant:["preserve"],
+    ex:[{ s:"Fallen leaves {{}} much faster in warm, wet soil.", f:"decompose", ko:"낙엽은 따뜻하고 습한 흙에서 훨씬 빨리 분해된다." }] },
+
+  { word:"decoration", pron:"데커레이션", pos:"n", level:"B1", meanings:["장식","장식품"],
+    syn:["ornament","adornment","trimming"],
+    ex:[{ s:"The hall was covered in {{}} for the graduation ceremony.", f:"decorations", ko:"강당은 졸업식을 위해 장식으로 덮여 있었다." }] },
+
+  { word:"decrease", pron:"디크리스", pos:"v", level:"B1", meanings:["줄다","감소시키다"],
+    syn:["diminish","lessen","dwindle"], ant:["increase"],
+    ex:[{ s:"Fuel consumption will {{}} noticeably if you drive more slowly.", f:"decrease", ko:"더 천천히 운전하면 연료 소비가 뚜렷하게 줄어든다." }] },
+
+  { word:"decree", pron:"디크리", pos:"n", level:"C2", meanings:["법령","판결"],
+    syn:["edict","ordinance","ruling"],
+    ex:[{ s:"The king issued a {{}} banning all public gatherings.", f:"decree", ko:"왕은 모든 공개 집회를 금지하는 법령을 내렸다." }] },
+
+  { word:"deduce", pron:"디두스", pos:"v", level:"C1", meanings:["추론하다","연역하다"],
+    /* reason 은 GLOSS 뜻이 "이유; 이성"(명사)으로 떠서 '추론하다'와 어긋난다 */
+    syn:["infer","conclude","work out"], ant:["guess"],
+    ex:[{ s:"From the footprints we can {{}} that two people passed by.", f:"deduce", ko:"발자국으로 두 사람이 지나갔다고 추론할 수 있다." }] },
+
+  { word:"deduct", pron:"디덕트", pos:"v", level:"C1", meanings:["공제하다","차감하다"],
+    syn:["subtract","withhold","take off"], ant:["add"],
+    ex:[{ s:"The company will {{}} income tax from your monthly pay.", f:"deduct", ko:"회사가 월급에서 소득세를 공제할 것이다." }] },
+
+  { word:"deed", pron:"디드", pos:"n", level:"B2", meanings:["행위","행동"],
+    syn:["act","action","feat"],
+    ex:[{ s:"She was honored for a single brave {{}} that saved two lives.", f:"deed", ko:"그녀는 두 생명을 구한 한 번의 용감한 행동으로 표창받았다." }] },
+
+  { word:"deface", pron:"디페이스", pos:"v", level:"C2", meanings:["훼손하다","외관을 망치다"],
+    syn:["vandalize","mar","disfigure"], ant:["restore"],
+    ex:[{ s:"Someone tried to {{}} the monument with spray paint.", f:"deface", ko:"누군가 스프레이 페인트로 그 기념비를 훼손하려 했다." }] },
+
+  { word:"defect", pron:"디펙트", pos:"n", level:"B2", meanings:["결함","흠"],
+    syn:["flaw","fault","imperfection"], ant:["perfection"],
+    ex:[{ s:"The engine had a serious {{}} that forced a nationwide recall.", f:"defect", ko:"그 엔진에는 전국적 회수를 부른 심각한 결함이 있었다." }] },
+
+  { word:"defend", pron:"디펜드", pos:"v", level:"B1", meanings:["방어하다","변호하다"],
+    syn:["protect","guard","shield"], ant:["attack"],
+    ex:[{ s:"They built thick walls to {{}} the city from invaders.", f:"defend", ko:"그들은 침략자로부터 도시를 방어하려고 두꺼운 성벽을 쌓았다." }] },
+
+  { word:"defer", pron:"디퍼", pos:"v", level:"C1", meanings:["미루다","연기하다"],
+    syn:["postpone","put off","shelve"], ant:["hasten"],
+    ex:[{ s:"The board voted to {{}} the decision until March.", f:"defer", ko:"이사회는 그 결정을 3월까지 미루기로 표결했다." }] },
+
+  { word:"deficiency", pron:"디피션시", pos:"n", level:"C1", meanings:["결핍","부족"],
+    syn:["shortage","lack","insufficiency"], ant:["abundance"],
+    ex:[{ s:"A vitamin D {{}} can gradually weaken the bones.", f:"deficiency", ko:"비타민 D 결핍은 뼈를 서서히 약하게 할 수 있다." }] },
+
+  { word:"deficient", pron:"디피션트", pos:"adj", level:"C1", meanings:["부족한","결핍된"],
+    syn:["lacking","inadequate","insufficient"], ant:["sufficient"],
+    ex:[{ s:"The soil in this valley is {{}} in nitrogen.", f:"deficient", ko:"이 골짜기의 흙은 질소가 부족하다." }] },
+
+  { word:"deficit", pron:"데퍼싯", pos:"n", level:"C1", meanings:["적자","부족액"],
+    syn:["shortfall","gap","arrears"], ant:["surplus"],
+    ex:[{ s:"The city is struggling with a growing budget {{}}.", f:"deficit", ko:"그 도시는 늘어나는 예산 적자와 씨름하고 있다." }] },
+
+  { word:"define", pron:"디파인", pos:"v", level:"B1", meanings:["정의하다","규정하다"],
+    syn:["specify","clarify","characterize"],
+    ex:[{ s:"It is surprisingly hard to {{}} happiness in one sentence.", f:"define", ko:"행복을 한 문장으로 정의하기는 놀랄 만큼 어렵다." }] },
+
+  { word:"definite", pron:"데퍼닛", pos:"adj", level:"B2", meanings:["확실한","명확한"],
+    syn:["certain","clear","specific"], ant:["vague"],
+    ex:[{ s:"We need a {{}} answer from the supplier before Friday.", f:"definite", ko:"금요일 전에 공급업체로부터 확실한 답을 받아야 한다." }] },
+
+  { word:"definitive", pron:"디피니티브", pos:"adj", level:"C2", meanings:["최종적인","확정적인"],
+    syn:["conclusive","final","authoritative"], ant:["tentative"],
+    ex:[{ s:"Researchers still lack a {{}} answer to that question.", f:"definitive", ko:"연구자들은 아직 그 질문에 대한 최종적인 답이 없다." }] },
+
+  { word:"deforestation", pron:"디포리스테이션", pos:"n", level:"C1", meanings:["삼림 벌채","산림 파괴"],
+    syn:["logging","clearing","tree felling"], ant:["reforestation"],
+    ex:[{ s:"Rapid {{}} has driven many species out of the region.", f:"deforestation", ko:"급격한 삼림 벌채가 많은 종을 그 지역에서 내몰았다." }] },
+
+  { word:"deform", pron:"디폼", pos:"v", level:"C1", meanings:["변형시키다","기형으로 만들다"],
+    syn:["distort","warp","misshape"], ant:["straighten"],
+    ex:[{ s:"Extreme heat can {{}} the metal frame within minutes.", f:"deform", ko:"극심한 열은 몇 분 안에 금속 틀을 변형시킬 수 있다." }] },
+
+  { word:"defy", pron:"디파이", pos:"v", level:"C1", meanings:["거역하다","무시하다"],
+    syn:["disobey","resist","flout"], ant:["obey"],
+    ex:[{ s:"A few students chose to {{}} the new rule openly.", f:"defy", ko:"몇몇 학생이 새 규칙에 공개적으로 반항하기로 했다." }] },
+
+  { word:"degenerate", pron:"디제너레이트", pos:"v", level:"C2", meanings:["퇴보하다","변질되다"],
+    syn:["deteriorate","worsen","regress"], ant:["improve"],
+    ex:[{ s:"The debate began to {{}} into personal attacks.", f:"degenerate", ko:"토론이 개인 공격으로 변질되기 시작했다." }] },
+
+  { word:"degradation", pron:"데그러데이션", pos:"n", level:"C2", meanings:["저하","악화"],
+    syn:["deterioration","debasement","decay"], ant:["improvement"],
+    ex:[{ s:"Soil {{}} now threatens food production worldwide.", f:"degradation", ko:"토양 악화가 이제 전 세계 식량 생산을 위협한다." }] },
+
+  { word:"degrade", pron:"디그레이드", pos:"v", level:"C1", meanings:["저하시키다","비하하다"],
+    syn:["demean","impair","cheapen"], ant:["enhance"],
+    ex:[{ s:"Constant criticism can {{}} a person's confidence.", f:"degrade", ko:"끊임없는 비판은 사람의 자신감을 떨어뜨릴 수 있다." }] },
+
+  { word:"degree", pron:"디그리", pos:"n", level:"B1", meanings:["정도","학위"],
+    syn:["extent","level","grade"],
+    ex:[{ s:"The two cases differ in {{}} rather than in kind.", f:"degree", ko:"그 두 사례는 종류보다는 정도에서 다르다." }] },
+
+  { word:"dehydrate", pron:"디하이드레이트", pos:"v", level:"C1", meanings:["탈수시키다","건조시키다"],
+    syn:["dry out","desiccate","parch"], ant:["hydrate"],
+    ex:[{ s:"Long hikes in the heat can quickly {{}} the body.", f:"dehydrate", ko:"더위 속 긴 산행은 몸을 빠르게 탈수시킬 수 있다." }] },
+
+  { word:"delay", pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
+    syn:["postponement","holdup","lag"], ant:["acceleration"],
+    ex:[{ s:"A two-hour {{}} left passengers stranded at the gate.", f:"delay", ko:"두 시간의 지연으로 승객들이 게이트에 발이 묶였다." }] },
+
+  { word:"delegate", pron:"델리깃", pos:"n", level:"C1", meanings:["대표","대리인"],
+    syn:["representative","envoy","deputy"],
+    ex:[{ s:"Each member country sent one {{}} to the conference.", f:"delegate", ko:"각 회원국이 회의에 대표 한 명을 보냈다." }] },
+
+  { word:"delegation", pron:"델리게이션", pos:"n", level:"C1", meanings:["대표단","위임"],
+    syn:["deputation","mission","commission"],
+    ex:[{ s:"A trade {{}} arrived from Brazil early last week.", f:"delegation", ko:"지난주 초 브라질에서 무역 대표단이 도착했다." }] },
+
+  { word:"delete", pron:"딜리트", pos:"v", level:"B1", meanings:["삭제하다","지우다"],
+    syn:["erase","remove","cancel"], ant:["insert"],
+    ex:[{ s:"Please {{}} the old log files before the backup runs.", f:"delete", ko:"백업이 실행되기 전에 옛 기록 파일을 삭제해 주세요." }] },
+
+  { word:"deliberate", pron:"딜리버릿", pos:"adj", level:"C1", meanings:["고의적인","의도적인"],
+    syn:["intentional","calculated","premeditated"], ant:["accidental"],
+    ex:[{ s:"The damage looked {{}} rather than careless.", f:"deliberate", ko:"그 손상은 부주의보다는 고의적으로 보였다." }] },
+
+  { word:"deliberately", pron:"딜리버릿리", pos:"adv", level:"C1", meanings:["고의로","의도적으로"],
+    syn:["intentionally","purposely","knowingly"], ant:["accidentally"],
+    ex:[{ s:"He {{}} left the back door unlocked for her.", f:"deliberately", ko:"그는 그녀를 위해 뒷문을 고의로 잠그지 않았다." }] },
+
+  { word:"delicate", pron:"델리킷", pos:"adj", level:"B2", meanings:["섬세한","연약한"],
+    syn:["fragile","subtle","dainty"], ant:["sturdy"],
+    ex:[{ s:"The lace was far too {{}} to wash by machine.", f:"delicate", ko:"그 레이스는 세탁기로 빨기엔 너무나 섬세했다." }] },
+
+  { word:"delighted", pron:"딜라이티드", pos:"adj", level:"B1", meanings:["아주 기뻐하는","기쁜"],
+    syn:["thrilled","pleased","overjoyed"], ant:["disappointed"],
+    ex:[{ s:"She was {{}} to hear that her application had passed.", f:"delighted", ko:"그녀는 지원이 통과했다는 소식에 아주 기뻐했다." }] },
+
+  { word:"delightful", pron:"딜라이트풀", pos:"adj", level:"B2", meanings:["유쾌한","즐거운"],
+    syn:["charming","pleasant","enjoyable"], ant:["unpleasant"],
+    ex:[{ s:"We spent a {{}} afternoon by the lake with old friends.", f:"delightful", ko:"우리는 오랜 친구들과 호숫가에서 즐거운 오후를 보냈다." }] },
+
+  { word:"delirious", pron:"딜리리어스", pos:"adj", level:"C2", meanings:["정신이 혼미한","광란의"],
+    syn:["incoherent","raving","frenzied"], ant:["lucid"],
+    ex:[{ s:"The fever left him {{}} for two whole days.", f:"delirious", ko:"열 때문에 그는 이틀 내내 정신이 혼미했다." }] },
+
+  { word:"deliver", pron:"딜리버", pos:"v", level:"B1", meanings:["배달하다","전달하다"],
+    syn:["hand over","convey","distribute"], ant:["withhold"],
+    ex:[{ s:"The courier promised to {{}} the package before noon.", f:"deliver", ko:"택배 기사가 정오 전에 소포를 배달하겠다고 했다." }] }
 ];
 
 
@@ -200,9 +360,7 @@ Object.assign(window.GLOSS, {
   "deceitful":"남을 속이는, 부정직한",
   "deception":"속임, 사기",
   "decode":"해독하다, 판독하다",
-  "decompose":"분해되다, 부패하다",
   "degeneracy":"퇴폐, 퇴화",
-  "delegation":"위임; 대표단",
   "delude":"착각하게 하다, 속이다",
   "deteriorate":"악화되다, 나빠지다",
   "devolution":"권한 이양",
@@ -254,5 +412,82 @@ Object.assign(window.GLOSS, {
   "unravel":"풀다, 밝혀내다",
   "venture":"과감히 하다; 모험",
   "virtue":"미덕, 덕목",
-  "wreckage":"잔해, 난파"
+  "wreckage":"잔해, 난파",
+
+  /* ── 2차 (declare ~ deliver) 몫 74개 ──────────── */
+  "acceleration":"가속, 촉진",
+  "accidentally":"우연히, 실수로",
+  "adornment":"장식, 장식품",
+  "break down":"분해되다; 고장 나다",
+  "calculated":"계획적인, 의도된",
+  "cheapen":"값을 떨어뜨리다, 하찮게 만들다",
+  "clearing":"개간지, 벌채지",
+  "dainty":"우아한, 정교한",
+  "debasement":"저하, 하락",
+  "demean":"비하하다, 깎아내리다",
+  "deputation":"대표단, 파견",
+  "deputy":"대리인, 부관",
+  "desiccate":"건조시키다",
+  "deterioration":"악화, 저하",
+  "diminish":"줄이다, 감소하다",
+  "disappointed":"실망한, 낙담한",
+  "disfigure":"흉하게 만들다",
+  "disobey":"불복종하다, 거역하다",
+  "distort":"왜곡하다, 비틀다",
+  "dry out":"말리다, 건조되다",
+  "dwindle":"줄어들다, 작아지다",
+  "edict":"포고령, 칙령",
+  "enhance":"높이다, 향상시키다",
+  "enjoyable":"즐거운, 재미있는",
+  "erase":"지우다, 삭제하다",
+  "fault":"결점, 잘못",
+  "feat":"공적, 위업",
+  "final":"최종적인, 마지막의",
+  "flaw":"결함, 흠",
+  "flout":"무시하다, 어기다",
+  "frenzied":"광분한, 격앙된",
+  "grade":"등급, 단계",
+  "hand over":"건네주다, 인계하다",
+  "holdup":"지연, 정체",
+  "hydrate":"수분을 공급하다",
+  "impair":"손상시키다, 약화시키다",
+  "imperfection":"결함, 불완전함",
+  "improve":"개선하다, 향상되다",
+  "improvement":"개선, 향상",
+  "inadequate":"부적절한, 불충분한",
+  "incoherent":"일관성 없는, 앞뒤가 안 맞는",
+  "infer":"추론하다, 유추하다",
+  "insert":"삽입하다, 끼워 넣다",
+  "insufficiency":"불충분, 부족",
+  "intentional":"의도적인, 고의의",
+  "intentionally":"의도적으로, 고의로",
+  "lacking":"부족한, 없는",
+  "logging":"벌목, 삼림 채벌",
+  "mar":"훼손하다, 망치다",
+  "misshape":"모양을 망치다",
+  "mission":"사절단; 임무",
+  "ordinance":"조례, 법령",
+  "overjoyed":"매우 기뻐하는",
+  "parch":"바싹 마르게 하다",
+  "perfection":"완벽, 완전함",
+  "postponement":"연기, 유예",
+  "premeditated":"미리 계획된",
+  "raving":"헛소리하는, 광란의",
+  "reforestation":"재조림, 삼림 재생",
+  "regress":"퇴행하다, 되돌아가다",
+  "ruling":"판결, 결정",
+  "shelve":"미루다, 보류하다",
+  "shield":"보호하다; 방패",
+  "shortfall":"부족액, 적자",
+  "sturdy":"튼튼한, 견고한",
+  "subtract":"빼다, 공제하다",
+  "take off":"떼다, 공제하다",
+  "tentative":"잠정적인, 임시의",
+  "thrilled":"아주 기쁜, 흥분한",
+  "tree felling":"수목 벌채",
+  "trimming":"장식, 테두리",
+  "unpleasant":"불쾌한, 기분 나쁜",
+  "vandalize":"파괴하다, 훼손하다",
+  "warp":"휘게 하다, 뒤틀리다",
+  "work out":"알아내다, 계산해 내다"
 });
