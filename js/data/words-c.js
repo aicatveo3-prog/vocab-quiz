@@ -1964,8 +1964,6 @@ Object.assign(window.GLOSS, {
   "dilate":"확장되다, 넓히다",
   "dislike":"싫어하다",
   "dissuade":"말리다, 단념시키다",
-  "division":"분열, 분할",
-  "doubt":"의심, 의문",
   "doubtful":"의심스러운, 불확실한",
   "dubious":"의심스러운, 수상한",
   "earthly":"지상의, 세속의",

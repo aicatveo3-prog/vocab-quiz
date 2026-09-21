@@ -1099,7 +1099,161 @@ window.VOCAB_D = [
 
   { word:"disturbance", pron:"디스터번스", pos:"n", level:"C1", meanings:["방해","소란"],
     syn:["commotion","interruption","upheaval"],
-    ex:[{ s:"Police were called to a {{}} outside the stadium.", f:"disturbance", ko:"경찰이 경기장 밖 소란 때문에 출동했다." }] }
+    ex:[{ s:"Police were called to a {{}} outside the stadium.", f:"disturbance", ko:"경찰이 경기장 밖 소란 때문에 출동했다." }] },
+
+  { word:"ditch", pron:"디치", pos:"n", level:"B2", meanings:["배수로","도랑"],
+    syn:["trench","channel","gutter"],
+    ex:[{ s:"Water drained slowly along the roadside {{}}.", f:"ditch", ko:"물이 길가 배수로를 따라 천천히 빠졌다." }] },
+
+  { word:"diverge", pron:"다이버지", pos:"v", level:"C2", meanings:["갈라지다","벗어나다"],
+    syn:["separate","branch off","deviate"], ant:["converge"],
+    ex:[{ s:"The two paths {{}} just beyond the old bridge.", f:"diverge", ko:"두 길은 옛 다리를 지나 바로 갈라진다." }] },
+
+  { word:"diverse", pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
+    syn:["varied","assorted","manifold"], ant:["uniform"],
+    ex:[{ s:"The city has an unusually {{}} population.", f:"diverse", ko:"그 도시는 유난히 다양한 인구 구성을 갖고 있다." }] },
+
+  { word:"diversify", pron:"다이버서파이", pos:"v", level:"C1", meanings:["다양화하다","다각화하다"],
+    syn:["vary","branch out","expand"],
+    ex:[{ s:"The firm decided to {{}} into renewable energy.", f:"diversify", ko:"그 회사는 재생 에너지로 사업을 다각화하기로 했다." }] },
+
+  { word:"diversity", pron:"다이버서티", pos:"n", level:"B2", meanings:["다양성","다양함"],
+    syn:["variety","range","multiplicity"],
+    ex:[{ s:"Biological {{}} is declining across the whole region.", f:"diversity", ko:"그 지역 전역에서 생물 다양성이 줄고 있다." }] },
+
+  { word:"divert", pron:"다이버트", pos:"v", level:"C1", meanings:["전환하다","딴 데로 돌리다"],
+    syn:["redirect","reroute","distract"],
+    ex:[{ s:"Police had to {{}} traffic away from the square.", f:"divert", ko:"경찰은 차량을 광장에서 다른 길로 돌려야 했다." }] },
+
+  { word:"dividend", pron:"디비덴드", pos:"n", level:"C1", meanings:["배당금","이익 배당"],
+    syn:["payout","share","return"],
+    ex:[{ s:"Shareholders received only a modest {{}} this year.", f:"dividend", ko:"주주들은 올해 적은 배당금만 받았다." }] },
+
+  { word:"divine", pron:"디바인", pos:"adj", level:"C1", meanings:["신의","신성한"],
+    syn:["holy","sacred","heavenly"], ant:["earthly"],
+    ex:[{ s:"The temple was believed to hold {{}} power.", f:"divine", ko:"그 신전은 신성한 힘을 지녔다고 여겨졌다." }] },
+
+  { word:"division", pron:"디비전", pos:"n", level:"B2", meanings:["분할","부서"],
+    syn:["separation","partition","department"], ant:["unity"],
+    ex:[{ s:"The {{}} of the land caused decades of conflict.", f:"division", ko:"그 토지 분할은 수십 년의 갈등을 낳았다." }] },
+
+  { word:"divorce", pron:"디보스", pos:"n", level:"B1", meanings:["이혼","단절"],
+    syn:["split","dissolution","breakup"], ant:["marriage"],
+    ex:[{ s:"They finally filed for {{}} after twelve years.", f:"divorce", ko:"그들은 12년 뒤에 마침내 이혼을 신청했다." }] },
+
+  { word:"divulge", pron:"디벌지", pos:"v", level:"C2", meanings:["누설하다","폭로하다"],
+    syn:["reveal","disclose","leak"], ant:["conceal"],
+    ex:[{ s:"He refused to {{}} the source of the funds.", f:"divulge", ko:"그는 그 자금의 출처를 누설하기를 거부했다." }] },
+
+  { word:"dizziness", pron:"디지니스", pos:"n", level:"B2", meanings:["현기증","어지럼증"],
+    syn:["giddiness","vertigo","lightheadedness"],
+    ex:[{ s:"Sudden {{}} forced her to sit down on the step.", f:"dizziness", ko:"갑작스러운 현기증에 그녀는 계단에 앉아야 했다." }] },
+
+  { word:"dizzy", pron:"디지", pos:"adj", level:"B1", meanings:["어지러운","현기증이 나는"],
+    syn:["giddy","lightheaded","faint"],
+    ex:[{ s:"Standing up too quickly can make you {{}}.", f:"dizzy", ko:"너무 빨리 일어나면 어지러울 수 있다." }] },
+
+  { word:"do away with", pron:"두 어웨이 위드", pos:"phr", level:"C1", meanings:["폐지하다","없애다"],
+    syn:["abolish","get rid of","scrap"] },
+
+  { word:"docile", pron:"다설", pos:"adj", level:"C2", meanings:["고분고분한","순한"],
+    syn:["obedient","compliant","tame"], ant:["unruly"],
+    ex:[{ s:"The pony was gentle and unusually {{}}.", f:"docile", ko:"그 조랑말은 순하고 유난히 고분고분했다." }] },
+
+  /* 원본은 '공식적 외교 정책'을 앞에 뒀는데 교리·원칙이 주된 뜻이다 */
+  { word:"doctrine", pron:"닥트린", pos:"n", level:"C1", meanings:["교리","원칙"],
+    syn:["dogma","tenet","creed"],
+    ex:[{ s:"The {{}} was openly challenged by younger scholars.", f:"doctrine", ko:"그 교리는 젊은 학자들의 공개적인 도전을 받았다." }] },
+
+  { word:"document", pron:"다큐먼트", pos:"v", level:"B2", meanings:["기록하다","입증하다"],
+    syn:["record","chronicle","detail"],
+    ex:[{ s:"Researchers carefully {{}} every change in behavior.", f:"document", ko:"연구자들은 행동의 모든 변화를 꼼꼼히 기록한다." }] },
+
+  { word:"dodge", pron:"다지", pos:"v", level:"B2", meanings:["피하다","회피하다"],
+    syn:["evade","sidestep","duck"],
+    ex:[{ s:"The minister tried to {{}} the awkward question.", f:"dodge", ko:"장관은 난처한 질문을 피하려 했다." }] },
+
+  { word:"dogma", pron:"도그마", pos:"n", level:"C2", meanings:["교의","독단"],
+    syn:["doctrine","creed","tenet"],
+    ex:[{ s:"Science advances by questioning accepted {{}}.", f:"dogma", ko:"과학은 받아들여진 교의를 의심하며 발전한다." }] },
+
+  /* 원본 표제어에 '(DIY)' 괄호 약어가 붙어 있었다 — 퀴즈 선택지에 그대로
+     찍히므로 제거했다. 합성어라 대체할 유의어가 없어 syn 을 비워 둔다. */
+  { word:"do-it-yourself", pron:"두 잇 유어셀프", pos:"n", level:"B2", meanings:["직접 만들기","자가 수리"],
+    ex:[{ s:"The shop specializes in {{}} furniture kits.", f:"do-it-yourself", ko:"그 가게는 직접 조립하는 가구 세트를 전문으로 한다." }] },
+
+  { word:"domain", pron:"도메인", pos:"n", level:"C1", meanings:["영역","분야"],
+    syn:["field","sphere","realm"],
+    ex:[{ s:"That question lies well outside my {{}} of expertise.", f:"domain", ko:"그 질문은 내 전문 영역에서 한참 벗어난다." }] },
+
+  { word:"domestic", pron:"더메스틱", pos:"adj", level:"B2", meanings:["국내의","가정의"],
+    syn:["internal","household","native"], ant:["foreign"],
+    ex:[{ s:"The airline mainly serves {{}} routes.", f:"domestic", ko:"그 항공사는 주로 국내 노선을 운항한다." }] },
+
+  /* ★ 원본에 '인식할 수 있는, 알아볼 수 있는'(recognizable 의 뜻)이 잘못
+     들어와 있었다. 바로 다음 행의 domesticated 와 행이 밀린 것으로 보인다. */
+  { word:"domesticate", pron:"더메스티케이트", pos:"v", level:"C2", meanings:["길들이다","사육하다"],
+    syn:["tame","train","break in"], ant:["release"],
+    ex:[{ s:"Humans began to {{}} wild grasses thousands of years ago.", f:"domesticate", ko:"인류는 수천 년 전에 야생 풀을 작물화하기 시작했다." }] },
+
+  { word:"domesticated", pron:"더메스티케이티드", pos:"adj", level:"C1", meanings:["길든","가축화된"],
+    syn:["tamed","trained","house-trained"], ant:["wild"],
+    ex:[{ s:"Cats were {{}} much later than dogs.", f:"domesticated", ko:"고양이는 개보다 훨씬 늦게 길들여졌다." }] },
+
+  { word:"dominant", pron:"다머넌트", pos:"adj", level:"B2", meanings:["지배적인","우세한"],
+    syn:["prevailing","leading","predominant"], ant:["subordinate"],
+    ex:[{ s:"English remains the {{}} language of science.", f:"dominant", ko:"영어는 여전히 과학의 지배적인 언어다." }] },
+
+  { word:"dominate", pron:"다머네이트", pos:"v", level:"B2", meanings:["지배하다","압도하다"],
+    syn:["control","rule","overshadow"],
+    ex:[{ s:"One company came to {{}} the entire market.", f:"dominate", ko:"한 회사가 시장 전체를 지배하게 됐다." }] },
+
+  { word:"dominating", pron:"다머네이팅", pos:"adj", level:"C2", meanings:["지배적인","우위를 차지하는"],
+    syn:["commanding","overbearing","domineering"],
+    ex:[{ s:"She had a {{}} presence in every single meeting.", f:"dominating", ko:"그녀는 모든 회의에서 지배적인 존재감을 보였다." }] },
+
+  { word:"donate", pron:"도네이트", pos:"v", level:"B1", meanings:["기부하다","기증하다"],
+    syn:["give","contribute","bestow"],
+    ex:[{ s:"Readers were asked to {{}} books to the school library.", f:"donate", ko:"독자들에게 학교 도서관에 책을 기부해 달라고 요청했다." }] },
+
+  { word:"donation", pron:"도네이션", pos:"n", level:"B2", meanings:["기부","기증품"],
+    syn:["contribution","gift","offering"],
+    ex:[{ s:"A generous {{}} funded the new reading room.", f:"donation", ko:"넉넉한 기부가 새 열람실 건립 자금이 됐다." }] },
+
+  { word:"donor", pron:"도너", pos:"n", level:"B2", meanings:["기증자","기부자"],
+    syn:["contributor","giver","benefactor"], ant:["recipient"],
+    ex:[{ s:"The {{}} asked to remain completely anonymous.", f:"donor", ko:"그 기증자는 완전히 익명으로 남기를 요청했다." }] },
+
+  { word:"doom", pron:"둠", pos:"n", level:"C1", meanings:["파멸","비운"],
+    syn:["ruin","downfall","destruction"],
+    ex:[{ s:"A sense of {{}} hung over the whole village.", f:"doom", ko:"파멸의 기운이 마을 전체에 감돌았다." }] },
+
+  { word:"dormant", pron:"도먼트", pos:"adj", level:"C2", meanings:["활동을 멈춘","잠든"],
+    syn:["inactive","latent","asleep"], ant:["active"],
+    ex:[{ s:"The volcano has been {{}} for nearly two centuries.", f:"dormant", ko:"그 화산은 거의 200년간 활동을 멈춰 왔다." }] },
+
+  { word:"dormitory", pron:"도머토리", pos:"n", level:"B2", meanings:["기숙사"],
+    ex:[{ s:"First-year students all live in the same {{}}.", f:"dormitory", ko:"1학년 학생은 모두 같은 기숙사에 산다." }] },
+
+  { word:"dose", pron:"도스", pos:"n", level:"B2", meanings:["복용량","양"],
+    syn:["amount","measure","portion"],
+    ex:[{ s:"Take one {{}} every eight hours with water.", f:"dose", ko:"8시간마다 물과 함께 한 회분을 복용하세요." }] },
+
+  { word:"doubt", pron:"다우트", pos:"n", level:"B1", meanings:["의심","의문"],
+    syn:["uncertainty","skepticism","misgiving"], ant:["certainty"],
+    ex:[{ s:"There is little {{}} about who wrote the letter.", f:"doubt", ko:"누가 그 편지를 썼는지에 대한 의심은 거의 없다." }] },
+
+  { word:"down payment", pron:"다운 페이먼트", pos:"n", level:"B2", meanings:["계약금","착수금"],
+    syn:["deposit","advance","initial payment"],
+    ex:[{ s:"They saved for years to afford the {{}}.", f:"down payment", ko:"그들은 계약금을 마련하려고 여러 해 저축했다." }] },
+
+  { word:"downfall", pron:"다운폴", pos:"n", level:"C1", meanings:["몰락","실각"],
+    syn:["ruin","collapse","undoing"], ant:["rise"],
+    ex:[{ s:"Greed eventually proved to be his {{}}.", f:"downfall", ko:"탐욕이 결국 그의 몰락 원인이 됐다." }] },
+
+  { word:"downplay", pron:"다운플레이", pos:"v", level:"C1", meanings:["경시하다","축소하다"],
+    syn:["belittle","minimize","understate"], ant:["exaggerate"],
+    ex:[{ s:"Officials tried to {{}} the scale of the leak.", f:"downplay", ko:"당국은 누출 규모를 축소하려 했다." }] }
 ];
 
 
@@ -1273,7 +1427,6 @@ Object.assign(window.GLOSS, {
   "dispirit":"기를 죽이다",
   "dispossess":"소유권을 빼앗다",
   "divest":"박탈하다, 처분하다",
-  "down payment":"계약금, 착수금",
   "drain":"빼내다, 소모시키다",
   "drought":"가뭄",
   "encourage":"격려하다, 장려하다",
@@ -1345,7 +1498,6 @@ Object.assign(window.GLOSS, {
   "disconnect":"연결을 끊다, 분리하다",
   "disconsolate":"슬픔에 잠긴, 위로할 수 없는",
   "disincentive":"억제 요인, 방해 요소",
-  "diverge":"갈라지다, 벗어나다",
   "drop":"떨어지다; 하락",
   "endpoint":"종점, 최종 지점",
   "evolve":"발전하다, 진화하다",
@@ -1466,7 +1618,6 @@ Object.assign(window.GLOSS, {
   "dismayed":"실망한, 경악한",
   "dissertation":"논문, 논설",
   "distaste":"싫음, 혐오",
-  "divulge":"누설하다, 폭로하다",
   "dole out":"조금씩 나눠주다",
   "dreary":"음울한, 쓸쓸한",
   "dump":"버리다, 내던지다",
@@ -1533,7 +1684,6 @@ Object.assign(window.GLOSS, {
   "disharmony":"부조화, 불화",
   "dispel":"없애다, 떨쳐 버리다",
   "displeasure":"불쾌, 불만",
-  "divert":"전환하다, 딴 데로 돌리다",
   "eminent":"저명한, 뛰어난",
   "excellence":"우수성, 탁월함",
   "expendable":"없애도 되는, 소모성의",
@@ -1571,5 +1721,69 @@ Object.assign(window.GLOSS, {
   "unique":"독특한, 유일한",
   "unmistakable":"오해할 수 없는, 명백한",
   "unsettle":"불안하게 하다, 뒤흔들다",
-  "upheaval":"격변, 대변동"
+  "upheaval":"격변, 대변동",
+
+  /* ── 8차 (ditch ~ downplay) 몫 61개 ────────────── */
+  "asleep":"잠든, 활동하지 않는",
+  "assorted":"여러 가지의, 갖가지의",
+  "branch off":"갈라져 나가다",
+  "branch out":"사업을 확장하다",
+  "break in":"길들이다; 침입하다",
+  "breakup":"결별, 해체",
+  "contribution":"기부, 기여",
+  "contributor":"기부자, 기여자",
+  "converge":"한데 모이다, 수렴하다",
+  "destruction":"파괴, 말살",
+  "dissolution":"해산, 해체",
+  "domineering":"지배하려 드는, 오만한",
+  "duck":"몸을 숙여 피하다",
+  "exaggerate":"과장하다",
+  "faint":"어질한, 희미한",
+  "field":"분야, 영역",
+  "giddiness":"어지럼증, 현기증",
+  "giddy":"어지러운, 아찔한",
+  "gift":"선물, 기증품",
+  "give":"주다, 기부하다",
+  "giver":"주는 사람, 기부자",
+  "gutter":"배수구, 시궁창",
+  "house-trained":"집 안에서 길들여진",
+  "household":"가정의, 가정용의",
+  "inactive":"활동하지 않는, 비활성의",
+  "initial payment":"초기 납입금",
+  "internal":"내부의, 국내의",
+  "latent":"잠재된, 숨어 있는",
+  "leading":"주요한, 선도하는",
+  "leak":"누설하다; 누출",
+  "lightheaded":"어지러운, 멍한",
+  "lightheadedness":"어지러움, 멍함",
+  /* varied 가 '다양한, 여러 가지의'다 — 글자까지 같으면 안 되므로 구별한다 */
+  "manifold":"여러 갈래의, 다방면의",
+  "marriage":"결혼",
+  "minimize":"최소화하다, 축소하다",
+  "misgiving":"의심, 불안",
+  "multiplicity":"다양성, 다수",
+  "offering":"제공물, 기부",
+  "overbearing":"위압적인, 거만한",
+  "overshadow":"그늘지게 하다, 압도하다",
+  "partition":"분할, 칸막이",
+  "payout":"지급금, 배당",
+  "predominant":"두드러진, 우세한",
+  "prevailing":"우세한, 널리 퍼진",
+  "redirect":"방향을 바꾸다",
+  "reroute":"경로를 바꾸다",
+  "share":"배당, 몫",
+  "sphere":"영역, 범위",
+  "tame":"길들이다; 온순한",
+  "tamed":"길들여진",
+  "tenet":"교리, 신조",
+  "train":"훈련시키다, 길들이다",
+  "trained":"훈련된, 길들여진",
+  "trench":"참호, 도랑",
+  "understate":"축소해 말하다",
+  "undoing":"파멸의 원인, 몰락",
+  "unruly":"다루기 힘든, 제멋대로인",
+  "varied":"다양한, 변화가 많은",
+  "variety":"다양성, 여러 가지",
+  "vertigo":"현기증, 어지럼증",
+  "wild":"야생의, 길들지 않은"
 });
