@@ -68,10 +68,10 @@
  *   wealthy → "웰시"   무성 th 는 ㅅ 이다 (healthy → 헬시 와 같은 꼴)
  *   question → "퀘스천"   -stion 은 /stʃən/ 이라 '션'이 아니다
  *   seize → "시즈"        철자만 ize 로 끝나고 접미사 -ize 가 아니다
- *   torment → "토멘트",  lament → "러멘트"
+ *   torment → "토멘트",  lament → "러멘트",  augment → "오그멘트"
  *                         접미사 -ment 가 아니라 어간의 일부다. -ment 가 강세를
  *                         받아 모음이 약화되지 않으므로 '먼트'가 아니다.
- *                         pron-audit 이 이 둘을 경고로 남긴다 —
+ *                         pron-audit 이 이 셋을 경고로 남긴다 —
  *                         철자로 구별할 규칙이 없어 일부러 억누르지 않았다
  *                         (어간 길이로 걸러내면 element 도 함께 빠진다:
  *                          torment 'tor' 3자 / element 'ele' 3자로 같다)
@@ -679,25 +679,16 @@ Object.assign(window.PRON, {
   "devastating": "데버스테이팅",
   "developed": "디벨럽트",
   "development": "디벨럽먼트",
-  "device": "디바이스",
   "devious": "디비어스",
-  "devise": "디바이즈",
   "devotion": "디보션",
-  "devour": "디바우어",
-  "dexterity": "덱스테러티",
   "diagnostic": "다이어그나스틱",
   "dice": "다이스",
   "dictatorship": "딕테이터십",
-  "differ": "디퍼",
   "difference": "디퍼런스",
   "difficulty": "디피컬티",
   "dilate": "다일레이트",
-  "dilute": "다일루트",
   "dinner": "디너",
-  "diploma": "디플로마",
   "diplomat": "디플러맷",
-  "direct": "디렉트",
-  "direction": "디렉션",
   "directive": "디렉티브",
   "director": "디렉터",
   "disable": "디세이블",
@@ -2966,7 +2957,6 @@ Object.assign(window.PRON, {
   "deputy": "데퓨티",
   "desiccate": "데시케이트",
   "deterioration": "디티리어레이션",
-  "diminish": "디미니시",
   "disappointed": "디서포인티드",
   "disfigure": "디스피거",
   "disobey": "디서베이",
@@ -3191,4 +3181,68 @@ Object.assign(window.PRON, {
   "warrant": "워런트",
   "willpower": "윌파워",
   "wish": "위시"
+});
+
+
+Object.assign(window.PRON, {
+  /* D 5차 (device ~ direction) 몫 59개 */
+  "adroitness": "어드로이트니스",
+  "assiduous": "어시주어스",
+  "augment": "오그멘트",
+  "bereft": "비레프트",
+  "caliber": "캘리버",
+  "chart": "차트",
+  "commit": "커미트",
+  "credential": "크리덴셜",
+  "dedicate": "데디케이트",
+  "delve into": "델브 인투",
+  "discriminate": "디스크리머네이트",
+  "draw on": "드로 온",
+  "dunk": "덩크",
+  "faithfully": "페이스풀리",
+  "figure": "피거",
+  "firsthand": "퍼스트핸드",
+  "food-related": "푸드 릴레이티드",
+  "formulate": "포뮬레이트",
+  "full": "풀",
+  "give over": "기브 오버",
+  "gobble": "가블",
+  "hardworking": "하드워킹",
+  "heading": "헤딩",
+  "identification": "아이덴터피케이션",
+  "identify": "아이덴터파이",
+  "immediate": "이미디엇",
+  "impose": "임포즈",
+  "industrious": "인더스트리어스",
+  "instrument": "인스트러먼트",
+  "lazy": "레이지",
+  "local tongue": "로컬 텅",
+  "loyally": "로열리",
+  "measurement": "메저먼트",
+  "number": "넘버",
+  "numeral": "뉴머럴",
+  "nutritional": "뉴트리셔널",
+  "nutritive": "뉴트러티브",
+  "pinpoint": "핀포인트",
+  "poised": "포이즈드",
+  "predicament": "프리디커먼트",
+  "prescribe": "프리스크라이브",
+  "quandary": "콴더리",
+  "recitation": "레서테이션",
+  "regional speech": "리저널 스피치",
+  "schematic": "스키매틱",
+  "self-respect": "셀프 리스펙트",
+  "selflessly": "셀플리슬리",
+  "shrink": "슈링크",
+  "stateliness": "스테이틀리니스",
+  "stately": "스테이틀리",
+  "tell apart": "텔 어파트",
+  "thin": "신",
+  "tight spot": "타이트 스팟",
+  "transcription": "트랜스크립션",
+  "undignified": "언디그니파이드",
+  "vary": "베리",
+  "vernacular": "버내큘러",
+  "water down": "워터 다운",
+  "wolf down": "울프 다운"
 });
