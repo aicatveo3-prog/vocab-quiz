@@ -743,12 +743,8 @@ Object.assign(window.PRON, {
   "eagerly": "이거리",
   "earn": "언",
   "earthenware": "어슨웨어",
-  "earthly": "어슬리",
   "ease": "이즈",
   "ecological variety": "에컬라지컬 버라이어티",
-  "economical": "에커나미컬",
-  "ecstasy": "엑스터시",
-  "edge": "에지",
   "edit": "에디트",
   "effect": "이펙트",
   "effective": "이펙티브",
@@ -3478,4 +3474,44 @@ Object.assign(window.PRON, {
   "twofold": "투폴드",
   "upturn": "업턴",
   "welcome": "웰컴"
+});
+
+
+/* ── E 세트 추가분 ────────────────────────────────
+   words-e.js 가 유의어·반의어로 쓰는 낱말의 발음.
+   표제어(VOCAB~VOCAB_E)인 낱말은 자기 pron 을 가지므로 여기에 넣지 않는다 —
+   tools/pron-audit.js 가 중복을 오류로 잡는다. */
+Object.assign(window.PRON, {
+  /* ── 1차: earnest ~ efficient (31개) ───────────────── */
+  "blot out": "블랏 아웃",
+  "cost-effective": "코스트 이펙티브",
+  "eatable": "이터블",
+  "efficacy": "에피커시",
+  "elation": "일레이션",
+  "fit to eat": "핏 투 잇",
+  "frugal": "프루걸",
+  "futility": "퓨틸러티",
+  "inefficiency": "이너피션시",
+  "insincere": "인신시어",
+  "laid-back": "레이드 백",
+  "leading article": "리딩 아티클",
+  "mundane": "먼데인",
+  "odd": "아드",
+  "opinion piece": "어피니언 피스",
+  "poisonous": "포이즈너스",
+  "potency": "포턴시",
+  "productive": "프로덕티브",
+  "productivity": "프로덕티버티",
+  "rim": "림",
+  "safe to eat": "세이프 투 잇",
+  "serious": "시리어스",
+  "sincere": "신시어",
+  "streamlined": "스트림라인드",
+  "thrifty": "스리프티",
+  "tolerant": "탈러런트",
+  "unconventional": "언컨벤셔널",
+  "uptight": "업타이트",
+  "usefulness": "유스풀니스",
+  "wasteful": "웨이스트풀",
+  "wholehearted": "홀하티드"
 });

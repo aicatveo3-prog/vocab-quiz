@@ -550,8 +550,6 @@ Object.assign(window.GLOSS, {
   "earn":"벌다, 획득하다",
   "earthenware":"토기, 도기",
   "ecological variety":"생태적 다양성",
-  "economical":"경제적인, 절약하는",
-  "ecstasy":"황홀, 극도의 기쁨",
   "edit":"편집하다; 검열하다",
   "effect":"결과, 효과",
   "elaborate":"정교한; 상세한",
