@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 182 / 333단어 (damp ~ direction) — 5차.
+ * 진행 상황: 220 / 333단어 (damp ~ dismal) — 6차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -792,7 +792,158 @@ window.VOCAB_D = [
 
   { word:"direction", pron:"디렉션", pos:"n", level:"B1", meanings:["방향","지시"],
     syn:["course","bearing","heading"],
-    ex:[{ s:"We walked in the wrong {{}} for almost an hour.", f:"direction", ko:"우리는 거의 한 시간 동안 잘못된 방향으로 걸었다." }] }
+    ex:[{ s:"We walked in the wrong {{}} for almost an hour.", f:"direction", ko:"우리는 거의 한 시간 동안 잘못된 방향으로 걸었다." }] },
+
+  { word:"directory", pron:"디렉터리", pos:"n", level:"C1", meanings:["주소록","안내 책자"],
+    syn:["index","listing","register"],
+    ex:[{ s:"Her name is missing from this year's telephone {{}}.", f:"directory", ko:"그녀의 이름이 올해 전화번호부에서 빠져 있다." }] },
+
+  { word:"disability", pron:"디서빌러티", pos:"n", level:"B2", meanings:["장애","무능력"],
+    syn:["impairment","handicap","incapacity"], ant:["ability"],
+    ex:[{ s:"The building was redesigned for people with a {{}}.", f:"disability", ko:"그 건물은 장애가 있는 사람들을 위해 다시 설계됐다." }] },
+
+  { word:"disable", pron:"디세이블", pos:"v", level:"C1", meanings:["무력화하다","작동을 멈추게 하다"],
+    syn:["incapacitate","cripple","deactivate"], ant:["enable"],
+    ex:[{ s:"A single power cut can {{}} the whole security system.", f:"disable", ko:"한 번의 정전이 보안 시스템 전체를 무력화할 수 있다." }] },
+
+  { word:"disabled", pron:"디세이블드", pos:"adj", level:"B2", meanings:["장애가 있는","작동하지 않는"],
+    syn:["impaired","handicapped","incapacitated"], ant:["able-bodied"],
+    ex:[{ s:"The museum offers free entry to {{}} visitors.", f:"disabled", ko:"그 박물관은 장애가 있는 방문객에게 무료 입장을 제공한다." }] },
+
+  { word:"disabling", pron:"디세이블링", pos:"adj", level:"C2", meanings:["장애를 초래하는","심신을 무력하게 하는"],
+    syn:["crippling","incapacitating","debilitating"],
+    ex:[{ s:"Chronic pain can be a deeply {{}} condition.", f:"disabling", ko:"만성 통증은 심신을 크게 무력하게 하는 질환일 수 있다." }] },
+
+  { word:"disagree", pron:"디서그리", pos:"v", level:"B1", meanings:["동의하지 않다","일치하지 않다"],
+    syn:["differ","dissent","object"], ant:["agree"],
+    ex:[{ s:"Experts still {{}} about the cause of the collapse.", f:"disagree", ko:"전문가들은 붕괴 원인에 대해 여전히 의견이 다르다." }] },
+
+  { word:"disagreeable", pron:"디서그리어블", pos:"adj", level:"C1", meanings:["불쾌한","비위에 거슬리는"],
+    syn:["unpleasant","offensive","obnoxious"], ant:["agreeable"],
+    ex:[{ s:"There was a {{}} smell coming from the drain.", f:"disagreeable", ko:"배수구에서 불쾌한 냄새가 났다." }] },
+
+  { word:"disappear", pron:"디서피어", pos:"v", level:"B1", meanings:["사라지다","없어지다"],
+    syn:["vanish","fade","evaporate"], ant:["appear"],
+    ex:[{ s:"The footprints {{}} completely after the heavy rain.", f:"disappeared", ko:"발자국은 폭우가 온 뒤 완전히 사라졌다." }] },
+
+  { word:"disappointed", pron:"디서포인티드", pos:"adj", level:"B1", meanings:["실망한","낙담한"],
+    syn:["let down","dismayed","disheartened"], ant:["pleased"],
+    ex:[{ s:"Fans were deeply {{}} by the team's performance.", f:"disappointed", ko:"팬들은 그 팀의 경기력에 크게 실망했다." }] },
+
+  { word:"disapprove", pron:"디서프루브", pos:"v", level:"B2", meanings:["못마땅해하다","반대하다"],
+    syn:["object","frown on","condemn"], ant:["approve"],
+    ex:[{ s:"Her parents strongly {{}} of the whole plan.", f:"disapprove", ko:"그녀의 부모는 그 계획 전체를 강하게 못마땅해한다." }] },
+
+  { word:"disassociate", pron:"디서소시에이트", pos:"v", level:"C2", meanings:["관계를 끊다","떼어 놓다"],
+    syn:["dissociate","sever","break with"],
+    ex:[{ s:"He tried to {{}} himself from the growing scandal.", f:"disassociate", ko:"그는 커지는 스캔들에서 자신을 떼어 놓으려 했다." }] },
+
+  { word:"disastrous", pron:"디재스트러스", pos:"adj", level:"B2", meanings:["파멸적인","비참한"],
+    syn:["catastrophic","calamitous","ruinous"], ant:["successful"],
+    ex:[{ s:"The decision proved {{}} for the company's finances.", f:"disastrous", ko:"그 결정은 회사 재정에 파멸적인 것으로 드러났다." }] },
+
+  { word:"discard", pron:"디스카드", pos:"v", level:"C1", meanings:["버리다","폐기하다"],
+    syn:["throw away","dump","jettison"], ant:["keep"],
+    ex:[{ s:"Please {{}} any packaging before entering the lab.", f:"discard", ko:"실험실에 들어가기 전에 포장재를 모두 버려 주세요." }] },
+
+  { word:"discern", pron:"디선", pos:"v", level:"C1", meanings:["알아차리다","식별하다"],
+    syn:["perceive","detect","make out"],
+    ex:[{ s:"It was hard to {{}} any pattern in the raw data.", f:"discern", ko:"가공되지 않은 자료에서 어떤 유형도 알아차리기 어려웠다." }] },
+
+  { word:"discharge", pron:"디스차지", pos:"v", level:"C1", meanings:["방출하다","내보내다"],
+    syn:["release","emit","dismiss"],
+    ex:[{ s:"The factory may not {{}} untreated waste into the river.", f:"discharge", ko:"그 공장은 처리되지 않은 폐기물을 강에 방출해서는 안 된다." }] },
+
+  { word:"disciple", pron:"디사이플", pos:"n", level:"C2", meanings:["제자","문하생"],
+    syn:["follower","pupil","adherent"],
+    ex:[{ s:"He was the most devoted {{}} of the old master.", f:"disciple", ko:"그는 그 노스승의 가장 헌신적인 제자였다." }] },
+
+  { word:"discipline", pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
+    syn:["order","training","self-control"],
+    ex:[{ s:"The school has long been known for its strict {{}}.", f:"discipline", ko:"그 학교는 오래전부터 엄격한 규율로 알려져 있다." }] },
+
+  { word:"disclose", pron:"디스클로즈", pos:"v", level:"C1", meanings:["밝히다","공개하다"],
+    syn:["reveal","divulge","make public"], ant:["conceal"],
+    ex:[{ s:"The company refused to {{}} the terms of the deal.", f:"disclose", ko:"그 회사는 거래 조건을 공개하기를 거부했다." }] },
+
+  { word:"discomfort", pron:"디스컴퍼트", pos:"n", level:"B2", meanings:["불편","불쾌감"],
+    syn:["unease","soreness","inconvenience"], ant:["comfort"],
+    ex:[{ s:"Patients reported only mild {{}} after the injection.", f:"discomfort", ko:"환자들은 주사 후 약한 불편만 보고했다." }] },
+
+  { word:"discontent", pron:"디스컨텐트", pos:"n", level:"C1", meanings:["불만","불평"],
+    syn:["dissatisfaction","resentment","unrest"], ant:["contentment"],
+    ex:[{ s:"Growing {{}} among the workers led to a strike.", f:"discontent", ko:"노동자들 사이의 커지는 불만이 파업으로 이어졌다." }] },
+
+  { word:"discord", pron:"디스코드", pos:"n", level:"C2", meanings:["불화","불일치"],
+    syn:["conflict","friction","strife"], ant:["harmony"],
+    ex:[{ s:"Years of {{}} eventually split the organization in two.", f:"discord", ko:"여러 해의 불화가 결국 그 조직을 둘로 갈라놓았다." }] },
+
+  { word:"discount", pron:"디스카운트", pos:"n", level:"B1", meanings:["할인","할인액"],
+    syn:["reduction","markdown","rebate"],
+    ex:[{ s:"Members receive a ten percent {{}} on all books.", f:"discount", ko:"회원은 모든 도서에 10퍼센트 할인을 받는다." }] },
+
+  { word:"discourse", pron:"디스코스", pos:"n", level:"C2", meanings:["담화","담론"],
+    syn:["dialogue","discussion","dissertation"],
+    ex:[{ s:"The book examines political {{}} in the digital age.", f:"discourse", ko:"그 책은 디지털 시대의 정치 담론을 살펴본다." }] },
+
+  { word:"discover", pron:"디스커버", pos:"v", level:"B1", meanings:["발견하다","알아내다"],
+    syn:["find","uncover","unearth"],
+    ex:[{ s:"Researchers hope to {{}} a cure within a decade.", f:"discover", ko:"연구자들은 10년 안에 치료법을 발견하기를 바란다." }] },
+
+  { word:"discreet", pron:"디스크리트", pos:"adj", level:"C2", meanings:["신중한","눈에 띄지 않는"],
+    syn:["tactful","prudent","cautious"], ant:["indiscreet"],
+    ex:[{ s:"She was always {{}} about her clients' private affairs.", f:"discreet", ko:"그녀는 고객의 사적인 일에 대해 늘 신중했다." }] },
+
+  { word:"discrepancy", pron:"디스크레펀시", pos:"n", level:"C2", meanings:["불일치","차이"],
+    syn:["inconsistency","disparity","mismatch"],
+    ex:[{ s:"There is a clear {{}} between the two reports.", f:"discrepancy", ko:"두 보고서 사이에 분명한 불일치가 있다." }] },
+
+  { word:"discriminate", pron:"디스크리머네이트", pos:"v", level:"C1", meanings:["차별하다","구분하다"],
+    syn:["distinguish","differentiate","single out"],
+    ex:[{ s:"No employer may {{}} on the basis of age.", f:"discriminate", ko:"어떤 고용주도 나이를 근거로 차별해서는 안 된다." }] },
+
+  { word:"discrimination", pron:"디스크리머네이션", pos:"n", level:"B2", meanings:["차별","구별"],
+    syn:["prejudice","bias","unfairness"], ant:["equality"],
+    ex:[{ s:"The law bans {{}} in hiring and promotion.", f:"discrimination", ko:"그 법은 채용과 승진에서의 차별을 금지한다." }] },
+
+  { word:"discuss", pron:"디스커스", pos:"v", level:"B1", meanings:["논의하다","의논하다"],
+    syn:["debate","talk over","confer"],
+    ex:[{ s:"The committee will {{}} the proposal again next week.", f:"discuss", ko:"위원회는 다음 주에 그 제안을 다시 논의할 것이다." }] },
+
+  { word:"disease", pron:"디지즈", pos:"n", level:"B1", meanings:["질병","질환"],
+    syn:["illness","ailment","malady"], ant:["health"],
+    ex:[{ s:"The {{}} spreads mainly through contaminated water.", f:"disease", ko:"그 질병은 주로 오염된 물을 통해 퍼진다." }] },
+
+  { word:"disgrace", pron:"디스그레이스", pos:"n", level:"C1", meanings:["불명예","망신"],
+    syn:["shame","dishonor","humiliation"], ant:["honor"],
+    ex:[{ s:"The scandal brought {{}} on the whole family.", f:"disgrace", ko:"그 스캔들은 가족 전체에 불명예를 안겼다." }] },
+
+  { word:"disguise", pron:"디스가이즈", pos:"n", level:"B2", meanings:["변장","위장"],
+    syn:["camouflage","cover","masquerade"],
+    ex:[{ s:"He entered the palace in the {{}} of a merchant.", f:"disguise", ko:"그는 상인으로 변장해 궁에 들어갔다." }] },
+
+  { word:"disgust", pron:"디스거스트", pos:"n", level:"C1", meanings:["역겨움","혐오감"],
+    syn:["revulsion","loathing","distaste"], ant:["delight"],
+    ex:[{ s:"She turned away in {{}} at the sight of the wound.", f:"disgust", ko:"그녀는 상처를 보고 역겨움을 느껴 돌아섰다." }] },
+
+  { word:"disgusting", pron:"디스거스팅", pos:"adj", level:"B2", meanings:["역겨운","혐오스러운"],
+    syn:["revolting","repulsive","sickening"], ant:["appealing"],
+    ex:[{ s:"There was a {{}} smell in the abandoned kitchen.", f:"disgusting", ko:"버려진 주방에서 역겨운 냄새가 났다." }] },
+
+  { word:"dish out", pron:"디시 아웃", pos:"phr", level:"C1", meanings:["나눠주다","퍼 주다"],
+    syn:["hand out","distribute","dole out"] },
+
+  { word:"dishonest", pron:"디스아니스트", pos:"adj", level:"B2", meanings:["부정직한","속이는"],
+    syn:["deceitful","untruthful","crooked"], ant:["honest"],
+    ex:[{ s:"It would be {{}} to hide those figures from investors.", f:"dishonest", ko:"그 수치를 투자자에게 숨기는 것은 부정직한 일일 것이다." }] },
+
+  { word:"disinterested", pron:"디스인터레스티드", pos:"adj", level:"C2", meanings:["사심 없는","공정한"],
+    syn:["impartial","unbiased","neutral"], ant:["biased"],
+    ex:[{ s:"We need a {{}} observer to settle the dispute.", f:"disinterested", ko:"분쟁을 해결하려면 사심 없는 관찰자가 필요하다." }] },
+
+  { word:"dismal", pron:"디즈멀", pos:"adj", level:"C1", meanings:["음울한","형편없는"],
+    syn:["dreary","bleak","gloomy"], ant:["cheerful"],
+    ex:[{ s:"The team endured another {{}} season without a win.", f:"dismal", ko:"그 팀은 승리 없이 또 한 번 형편없는 시즌을 보냈다." }] }
 ];
 
 
@@ -881,7 +1032,6 @@ Object.assign(window.GLOSS, {
   "deputy":"대리인, 부관",
   "desiccate":"건조시키다",
   "deterioration":"악화, 저하",
-  "disappointed":"실망한, 낙담한",
   "disfigure":"흉하게 만들다",
   "disobey":"불복종하다, 거역하다",
   "distort":"왜곡하다, 비틀다",
@@ -1037,7 +1187,6 @@ Object.assign(window.GLOSS, {
   "curb":"억제, 제약",
   "decide":"결정하다, 결심하다",
   "deserted":"인적이 없는, 버려진",
-  "discern":"알아차리다, 식별하다",
   "disconnect":"연결을 끊다, 분리하다",
   "disconsolate":"슬픔에 잠긴, 위로할 수 없는",
   "disincentive":"억제 요인, 방해 요소",
@@ -1098,7 +1247,6 @@ Object.assign(window.GLOSS, {
   "credential":"자격 증명, 증명서",
   "dedicate":"바치다, 전념하다",
   "delve into":"~을 깊이 파다",
-  "discriminate":"구별하다; 차별하다",
   "draw on":"~에서 이끌어내다",
   "dunk":"살짝 담그다",
   "faithfully":"충실하게, 성실히",
@@ -1144,5 +1292,76 @@ Object.assign(window.GLOSS, {
   "vary":"다르다, 달라지다",
   "vernacular":"토착어, 일상어",
   "water down":"물을 타다, 희석하다",
-  "wolf down":"허겁지겁 먹다"
+  "wolf down":"허겁지겁 먹다",
+
+  /* ── 6차 (directory ~ dismal) 몫 69개 ──────────── */
+  "able-bodied":"신체가 건강한",
+  "adherent":"지지자, 신봉자",
+  "appealing":"매력적인, 마음을 끄는",
+  "approve":"찬성하다, 승인하다",
+  "bias":"편견, 편향",
+  "break with":"~와 관계를 끊다",
+  "calamitous":"재난을 초래하는, 비참한",
+  "contentment":"만족, 자족",
+  "crippling":"심각한 타격을 주는",
+  "debilitating":"심신을 약화시키는",
+  "dialogue":"대화, 담화",
+  "disheartened":"낙담한",
+  "dishonor":"불명예, 굴욕",
+  "dismayed":"실망한, 경악한",
+  "dismiss":"해고하다; 일축하다",
+  "dissatisfaction":"불만, 불평",
+  "dissertation":"논문, 논설",
+  "distaste":"싫음, 혐오",
+  "divulge":"누설하다, 폭로하다",
+  "dole out":"조금씩 나눠주다",
+  "dreary":"음울한, 쓸쓸한",
+  "dump":"버리다, 내던지다",
+  "enable":"가능하게 하다",
+  "equality":"평등, 균등",
+  "evaporate":"사라지다, 증발하다",
+  "follower":"추종자, 신봉자",
+  "frown on":"~을 못마땅해하다",
+  "handicap":"장애, 불리한 조건",
+  "handicapped":"장애가 있는",
+  "humiliation":"굴욕, 창피",
+  "impaired":"손상된, 장애가 있는",
+  "impairment":"손상, 장애",
+  "incapacitated":"무력해진, 능력을 잃은",
+  "incapacitating":"무력하게 만드는",
+  "incapacity":"무능력, 무자격",
+  "inconvenience":"불편, 애로",
+  "indiscreet":"분별없는, 무분별한",
+  "jettison":"던져 버리다, 포기하다",
+  "listing":"목록, 명단",
+  "loathing":"혐오, 질색",
+  "make out":"알아보다, 식별하다",
+  "make public":"공개하다",
+  "malady":"병, 질환",
+  "masquerade":"가면, 위장",
+  "mismatch":"불일치, 부조화",
+  "neutral":"중립적인, 공정한",
+  "obnoxious":"아주 불쾌한, 몹시 기분 나쁜",
+  "offensive":"불쾌한, 공격적인",
+  "perceive":"인지하다, 감지하다",
+  "pupil":"학생, 제자",
+  "rebate":"환급금, 할인",
+  "revolting":"역겨운, 구역질나는",
+  "revulsion":"혐오, 역겨움",
+  "self-control":"자제력",
+  "sever":"끊다, 절단하다",
+  "shame":"수치, 창피",
+  "sickening":"역겹게 하는, 진저리나는",
+  "single out":"골라내다, 지목하다",
+  "soreness":"아픔, 쓰라림",
+  "successful":"성공한, 성공적인",
+  "tactful":"요령 있는, 사려 깊은",
+  "talk over":"논의하다, 상의하다",
+  "throw away":"버리다, 내버리다",
+  "unbiased":"편견 없는, 공정한",
+  "uncover":"밝혀내다, 알아내다",
+  "unearth":"발굴하다, 찾아내다",
+  "unfairness":"불공정, 부당함",
+  "unrest":"불안, 소요",
+  "untruthful":"진실하지 않은, 거짓의"
 });

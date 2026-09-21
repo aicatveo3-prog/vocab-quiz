@@ -1647,7 +1647,6 @@ window.GLOSS = {
   "dependence":"의존",
   "dependent":"의존하는",
   "despise":"경멸하다",
-  "disappear":"사라지다",
   "disappearance":"실종, 사라짐",
   "disapproval":"불찬성",
   "disapproving":"못마땅해하는",
