@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 220 / 333단어 (damp ~ dismal) — 6차.
+ * 진행 상황: 258 / 333단어 (damp ~ disturbance) — 7차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -943,7 +943,163 @@ window.VOCAB_D = [
 
   { word:"dismal", pron:"디즈멀", pos:"adj", level:"C1", meanings:["음울한","형편없는"],
     syn:["dreary","bleak","gloomy"], ant:["cheerful"],
-    ex:[{ s:"The team endured another {{}} season without a win.", f:"dismal", ko:"그 팀은 승리 없이 또 한 번 형편없는 시즌을 보냈다." }] }
+    ex:[{ s:"The team endured another {{}} season without a win.", f:"dismal", ko:"그 팀은 승리 없이 또 한 번 형편없는 시즌을 보냈다." }] },
+
+  { word:"dismay", pron:"디스메이", pos:"n", level:"C1", meanings:["경악","실망"],
+    syn:["consternation","alarm","distress"], ant:["relief"],
+    ex:[{ s:"To her {{}}, the entire file had already been deleted.", f:"dismay", ko:"그녀가 경악한 것은 파일 전체가 이미 삭제돼 있었다는 점이다." }] },
+
+  { word:"dismiss", pron:"디스미스", pos:"v", level:"B2", meanings:["해고하다","일축하다"],
+    syn:["fire","discharge","reject"], ant:["hire"],
+    ex:[{ s:"The judge chose to {{}} the case entirely.", f:"dismiss", ko:"판사는 그 사건을 전부 기각하기로 했다." }] },
+
+  { word:"disparage", pron:"디스패리지", pos:"v", level:"C2", meanings:["폄하하다","깎아내리다"],
+    syn:["belittle","denigrate","decry"], ant:["praise"],
+    ex:[{ s:"It is unfair to {{}} work you have never even read.", f:"disparage", ko:"읽어 본 적조차 없는 작업을 폄하하는 것은 부당하다." }] },
+
+  { word:"disparity", pron:"디스패러티", pos:"n", level:"C1", meanings:["격차","차이"],
+    syn:["inequality","gap","imbalance"], ant:["parity"],
+    ex:[{ s:"The wage {{}} between the two regions has widened.", f:"disparity", ko:"두 지역 간 임금 격차가 벌어졌다." }] },
+
+  { word:"dispatch", pron:"디스패치", pos:"v", level:"C1", meanings:["급파하다","발송하다"],
+    syn:["send off","forward","transmit"],
+    ex:[{ s:"The agency will {{}} a rescue team within the hour.", f:"dispatch", ko:"그 기관은 한 시간 안에 구조팀을 급파할 것이다." }] },
+
+  { word:"dispense", pron:"디스펜스", pos:"v", level:"C1", meanings:["나누어 주다","제공하다"],
+    syn:["distribute","hand out","supply"],
+    ex:[{ s:"The machine can {{}} both coffee and tea.", f:"dispense", ko:"그 기계는 커피와 차를 모두 제공할 수 있다." }] },
+
+  { word:"disperse", pron:"디스퍼스", pos:"v", level:"C1", meanings:["흩어지다","분산시키다"],
+    syn:["scatter","diffuse","dispel"], ant:["gather"],
+    ex:[{ s:"The crowd began to {{}} once the rain started.", f:"disperse", ko:"비가 오기 시작하자 군중이 흩어지기 시작했다." }] },
+
+  { word:"display", pron:"디스플레이", pos:"v", level:"B1", meanings:["전시하다","드러내다"],
+    syn:["exhibit","show","present"], ant:["hide"],
+    ex:[{ s:"The gallery will {{}} the original sketches next month.", f:"display", ko:"그 갤러리는 다음 달에 원본 스케치를 전시할 것이다." }] },
+
+  { word:"disposable", pron:"디스포저블", pos:"adj", level:"B2", meanings:["일회용의","쓰고 버리는"],
+    syn:["throwaway","single-use","expendable"], ant:["reusable"],
+    ex:[{ s:"The café stopped using {{}} cups last year.", f:"disposable", ko:"그 카페는 지난해 일회용 컵 사용을 중단했다." }] },
+
+  { word:"dispositional", pron:"디스퍼지셔널", pos:"adj", level:"C2", meanings:["기질적인","성향의"],
+    syn:["temperamental","innate","inborn"],
+    ex:[{ s:"The study separates {{}} factors from situational ones.", f:"dispositional", ko:"그 연구는 기질적 요인을 상황적 요인과 구분한다." }] },
+
+  { word:"disprove", pron:"디스프루브", pos:"v", level:"C1", meanings:["반증하다","틀렸음을 입증하다"],
+    syn:["refute","rebut","invalidate"], ant:["prove"],
+    ex:[{ s:"A single counterexample can {{}} the whole theory.", f:"disprove", ko:"반례 하나가 그 이론 전체를 반증할 수 있다." }] },
+
+  { word:"dispute", pron:"디스퓨트", pos:"n", level:"B2", meanings:["분쟁","논쟁"],
+    syn:["quarrel","controversy","disagreement"], ant:["accord"],
+    ex:[{ s:"The border {{}} has lasted for several decades.", f:"dispute", ko:"그 국경 분쟁은 수십 년간 이어져 왔다." }] },
+
+  { word:"disqualify", pron:"디스콸러파이", pos:"v", level:"C1", meanings:["실격시키다","자격을 박탈하다"],
+    syn:["bar","rule out","debar"], ant:["qualify"],
+    ex:[{ s:"A second false start will {{}} the runner immediately.", f:"disqualify", ko:"두 번째 부정 출발은 그 선수를 즉시 실격시킨다." }] },
+
+  { word:"disregard", pron:"디스리가드", pos:"v", level:"C1", meanings:["무시하다","묵살하다"],
+    syn:["ignore","overlook","brush aside"], ant:["heed"],
+    ex:[{ s:"Drivers who {{}} the warning signs face heavy fines.", f:"disregard", ko:"경고 표지를 무시하는 운전자는 무거운 벌금을 받는다." }] },
+
+  { word:"disrupt", pron:"디스럽트", pos:"v", level:"B2", meanings:["방해하다","중단시키다"],
+    syn:["interrupt","upset","derail"],
+    ex:[{ s:"Heavy snow will {{}} rail services across the region.", f:"disrupt", ko:"폭설이 그 지역 전역의 철도 운행을 중단시킬 것이다." }] },
+
+  { word:"disruption", pron:"디스럽션", pos:"n", level:"B2", meanings:["중단","혼란"],
+    syn:["interruption","upheaval","turmoil"],
+    ex:[{ s:"The strike caused serious {{}} to deliveries.", f:"disruption", ko:"그 파업은 배송에 심각한 중단을 초래했다." }] },
+
+  { word:"dissatisfaction", pron:"디새티스팩션", pos:"n", level:"C1", meanings:["불만","불평"],
+    syn:["discontent","displeasure","frustration"], ant:["satisfaction"],
+    ex:[{ s:"Survey results revealed widespread {{}} among staff.", f:"dissatisfaction", ko:"설문 결과 직원들 사이에 광범위한 불만이 드러났다." }] },
+
+  { word:"disseminate", pron:"디세머네이트", pos:"v", level:"C2", meanings:["퍼뜨리다","전파하다"],
+    syn:["spread","circulate","broadcast"],
+    ex:[{ s:"The group used pamphlets to {{}} its ideas.", f:"disseminate", ko:"그 단체는 소책자로 자기 생각을 퍼뜨렸다." }] },
+
+  { word:"dissent", pron:"디센트", pos:"n", level:"C1", meanings:["반대","이견"],
+    syn:["objection","disagreement","opposition"], ant:["consent"],
+    ex:[{ s:"There was little open {{}} at yesterday's meeting.", f:"dissent", ko:"어제 회의에서 공개적인 반대는 거의 없었다." }] },
+
+  { word:"dissipate", pron:"디서페이트", pos:"v", level:"C2", meanings:["소멸되다","낭비하다"],
+    syn:["disperse","vanish","squander"],
+    ex:[{ s:"The morning fog began to {{}} by nine o'clock.", f:"dissipate", ko:"아침 안개가 9시쯤 사라지기 시작했다." }] },
+
+  { word:"dissolve", pron:"디잘브", pos:"v", level:"B2", meanings:["녹다","해산하다"],
+    syn:["melt","liquefy","disband"],
+    ex:[{ s:"Stir until the sugar begins to {{}} completely.", f:"dissolve", ko:"설탕이 완전히 녹기 시작할 때까지 저어라." }] },
+
+  { word:"dissonance", pron:"디서넌스", pos:"n", level:"C2", meanings:["불협화음","불일치"],
+    syn:["discord","clash","disharmony"], ant:["harmony"],
+    ex:[{ s:"There is a clear {{}} between what he says and what he does.", f:"dissonance", ko:"그가 말하는 것과 행동하는 것 사이에 분명한 불일치가 있다." }] },
+
+  { word:"distance", pron:"디스턴스", pos:"n", level:"B1", meanings:["거리","간격"],
+    syn:["gap","span","interval"],
+    ex:[{ s:"The {{}} between the two villages is only three miles.", f:"distance", ko:"두 마을 사이의 거리는 3마일밖에 안 된다." }] },
+
+  /* 원본 목록에 '헤아릴 수 없을 정도로 엄청난'(immeasurable 의 뜻)이 잘못
+     들어와 있었다. 바로잡아 '불쾌한'으로 넣는다. */
+  { word:"distasteful", pron:"디스테이스트풀", pos:"adj", level:"C1", meanings:["불쾌한","혐오스러운"],
+    syn:["offensive","repugnant","objectionable"], ant:["agreeable"],
+    ex:[{ s:"Many readers found the joke deeply {{}}.", f:"distasteful", ko:"많은 독자가 그 농담을 몹시 불쾌하게 여겼다." }] },
+
+  /* 원본은 뜻을 다섯 묶음 나열했다(명예; 우수성; 차이; 구별; 특징).
+     카드에 찍히는 문자열이므로 대표 2개로 줄인다. */
+  { word:"distinction", pron:"디스팅션", pos:"n", level:"B2", meanings:["구별","뛰어남"],
+    syn:["difference","contrast","excellence"],
+    ex:[{ s:"She graduated with {{}} in mathematics.", f:"distinction", ko:"그녀는 수학에서 뛰어난 성적으로 졸업했다." }] },
+
+  { word:"distinctive", pron:"디스팅티브", pos:"adj", level:"B2", meanings:["독특한","특색 있는"],
+    syn:["characteristic","unique","unmistakable"],
+    ex:[{ s:"The bird has a {{}} call you cannot possibly miss.", f:"distinctive", ko:"그 새는 도저히 놓칠 수 없는 독특한 울음소리를 낸다." }] },
+
+  { word:"distinguish", pron:"디스팅귀시", pos:"v", level:"B2", meanings:["구별하다","식별하다"],
+    syn:["differentiate","tell apart","discern"],
+    ex:[{ s:"Colorblind people cannot always {{}} red from green.", f:"distinguish", ko:"색맹인 사람은 빨강과 초록을 늘 구별하지는 못한다." }] },
+
+  { word:"distinguished", pron:"디스팅귀시트", pos:"adj", level:"C1", meanings:["저명한","뛰어난"],
+    syn:["eminent","renowned","illustrious"], ant:["obscure"],
+    ex:[{ s:"The lecture was given by a {{}} historian.", f:"distinguished", ko:"그 강연은 저명한 역사가가 했다." }] },
+
+  { word:"distort", pron:"디스토트", pos:"v", level:"C1", meanings:["왜곡하다","비틀다"],
+    syn:["twist","misrepresent","warp"],
+    ex:[{ s:"Selective quoting can badly {{}} the original meaning.", f:"distort", ko:"선택적 인용은 원래 뜻을 심하게 왜곡할 수 있다." }] },
+
+  { word:"distorted", pron:"디스토티드", pos:"adj", level:"C1", meanings:["왜곡된","비뚤어진"],
+    syn:["twisted","misshapen","skewed"], ant:["accurate"],
+    ex:[{ s:"The old mirror gave a {{}} image of the room.", f:"distorted", ko:"그 낡은 거울은 방을 왜곡된 모습으로 비췄다." }] },
+
+  { word:"distortion", pron:"디스토션", pos:"n", level:"C1", meanings:["왜곡","뒤틀림"],
+    syn:["misrepresentation","deformation","bias"],
+    ex:[{ s:"The report contains a serious {{}} of the facts.", f:"distortion", ko:"그 보고서에는 사실에 대한 심각한 왜곡이 있다." }] },
+
+  { word:"distract", pron:"디스트랙트", pos:"v", level:"B2", meanings:["주의를 흩뜨리다","산만하게 하다"],
+    syn:["divert","sidetrack","unsettle"],
+    ex:[{ s:"Noise from the street can easily {{}} younger students.", f:"distract", ko:"길거리 소음은 어린 학생들의 주의를 쉽게 흩뜨린다." }] },
+
+  { word:"distraction", pron:"디스트랙션", pos:"n", level:"B2", meanings:["방해하는 것","기분 전환"],
+    syn:["interruption","diversion","amusement"],
+    ex:[{ s:"Phones are by far the biggest {{}} during lessons.", f:"distraction", ko:"수업 중 가장 큰 방해 요소는 단연 휴대폰이다." }] },
+
+  { word:"distress", pron:"디스트레스", pos:"n", level:"B2", meanings:["고통","괴로움"],
+    syn:["anguish","suffering","torment"], ant:["comfort"],
+    ex:[{ s:"The family was in obvious {{}} after hearing the news.", f:"distress", ko:"그 가족은 소식을 듣고 분명히 고통스러워했다." }] },
+
+  { word:"distribute", pron:"디스트리뷰트", pos:"v", level:"B1", meanings:["분배하다","배포하다"],
+    syn:["hand out","allocate","share out"],
+    ex:[{ s:"Volunteers helped {{}} blankets to the affected families.", f:"distribute", ko:"자원봉사자들이 피해 가족에게 담요를 배포하는 것을 도왔다." }] },
+
+  { word:"distribution", pron:"디스트리뷰션", pos:"n", level:"B2", meanings:["분배","유통"],
+    syn:["allocation","dispersal","circulation"],
+    ex:[{ s:"The company handles {{}} across three countries.", f:"distribution", ko:"그 회사는 세 나라에 걸친 유통을 담당한다." }] },
+
+  { word:"disturb", pron:"디스터브", pos:"v", level:"B1", meanings:["방해하다","어지럽히다"],
+    syn:["bother","interrupt","unsettle"],
+    ex:[{ s:"Please do not {{}} the birds while they are nesting.", f:"disturb", ko:"새들이 둥지를 틀 동안 방해하지 마세요." }] },
+
+  { word:"disturbance", pron:"디스터번스", pos:"n", level:"C1", meanings:["방해","소란"],
+    syn:["commotion","interruption","upheaval"],
+    ex:[{ s:"Police were called to a {{}} outside the stadium.", f:"disturbance", ko:"경찰이 경기장 밖 소란 때문에 출동했다." }] }
 ];
 
 
@@ -1034,7 +1190,6 @@ Object.assign(window.GLOSS, {
   "deterioration":"악화, 저하",
   "disfigure":"흉하게 만들다",
   "disobey":"불복종하다, 거역하다",
-  "distort":"왜곡하다, 비틀다",
   "dry out":"말리다, 건조되다",
   "dwindle":"줄어들다, 작아지다",
   "edict":"포고령, 칙령",
@@ -1309,8 +1464,6 @@ Object.assign(window.GLOSS, {
   "disheartened":"낙담한",
   "dishonor":"불명예, 굴욕",
   "dismayed":"실망한, 경악한",
-  "dismiss":"해고하다; 일축하다",
-  "dissatisfaction":"불만, 불평",
   "dissertation":"논문, 논설",
   "distaste":"싫음, 혐오",
   "divulge":"누설하다, 폭로하다",
@@ -1363,5 +1516,60 @@ Object.assign(window.GLOSS, {
   "unearth":"발굴하다, 찾아내다",
   "unfairness":"불공정, 부당함",
   "unrest":"불안, 소요",
-  "untruthful":"진실하지 않은, 거짓의"
+  "untruthful":"진실하지 않은, 거짓의",
+
+  /* ── 7차 (dismay ~ disturbance) 몫 51개 ─────────── */
+  "alarm":"불안, 경악",
+  "bother":"괴롭히다, 신경 쓰이게 하다",
+  "brush aside":"무시하다, 제쳐 두다",
+  "commotion":"소동, 소란",
+  "consternation":"경악, 대경실색",
+  "debar":"자격을 박탈하다",
+  "deformation":"변형, 기형",
+  "denigrate":"비방하다, 폄하하다",
+  "derail":"탈선시키다, 틀어지게 하다",
+  "disagreement":"불일치, 의견 차이",
+  "disband":"해산하다, 해체하다",
+  "disharmony":"부조화, 불화",
+  "dispel":"없애다, 떨쳐 버리다",
+  "displeasure":"불쾌, 불만",
+  "divert":"전환하다, 딴 데로 돌리다",
+  "eminent":"저명한, 뛰어난",
+  "excellence":"우수성, 탁월함",
+  "expendable":"없애도 되는, 소모성의",
+  "fire":"해고하다",
+  "illustrious":"걸출한, 이름난",
+  "imbalance":"불균형",
+  "inborn":"타고난, 선천적인",
+  "inequality":"불평등, 불균등",
+  "innate":"타고난, 본래의",
+  "interrupt":"방해하다, 중단시키다",
+  "interruption":"중단, 방해",
+  "interval":"간격, 사이",
+  "liquefy":"액화하다, 녹이다",
+  "melt":"녹다, 녹이다",
+  "misrepresentation":"잘못된 표현, 허위 진술",
+  "misshapen":"모양이 이상한, 일그러진",
+  "objectionable":"불쾌한, 문제가 되는",
+  "opposition":"반대, 저항",
+  "parity":"동등, 등가",
+  "qualify":"자격을 얻다, 자격을 주다",
+  /* refute 가 이미 '반박하다, 논박하다'다 — 글자까지 같으면 피드백 두 줄이
+     같아지므로 rebut 은 '맞받아 반론하다' 쪽으로 구별한다 */
+  "rebut":"반론하다, 맞받아치다",
+  "repugnant":"혐오스러운, 아주 불쾌한",
+  "reusable":"재사용 가능한",
+  "rule out":"배제하다, 제외하다",
+  "satisfaction":"만족, 충족",
+  "send off":"발송하다, 보내다",
+  "share out":"나눠 주다, 분배하다",
+  "sidetrack":"곁길로 빠지게 하다",
+  "single-use":"일회용의",
+  "skewed":"왜곡된, 편향된",
+  "temperamental":"기질의, 변덕스러운",
+  "throwaway":"일회용의, 쓰고 버리는",
+  "unique":"독특한, 유일한",
+  "unmistakable":"오해할 수 없는, 명백한",
+  "unsettle":"불안하게 하다, 뒤흔들다",
+  "upheaval":"격변, 대변동"
 });

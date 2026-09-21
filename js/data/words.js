@@ -1654,8 +1654,6 @@ window.GLOSS = {
   "disarrange":"어지르다",
   "dislike":"싫어함",
   "dispersal":"분산, 해산",
-  "disperse":"흩어지다, 분산시키다",
-  "disregard":"무시하다",
   "dissociate":"분리하다, 관계를 끊다",
   "distant":"먼, 거리가 있는",
   "distracted":"산만한",
