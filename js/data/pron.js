@@ -68,11 +68,13 @@
  *   wealthy → "웰시"   무성 th 는 ㅅ 이다 (healthy → 헬시 와 같은 꼴)
  *   question → "퀘스천"   -stion 은 /stʃən/ 이라 '션'이 아니다
  *   seize → "시즈"        철자만 ize 로 끝나고 접미사 -ize 가 아니다
- *   torment → "토멘트"    접미사 -ment 가 아니라 어간의 일부다. 모음이
- *                         약화되지 않아 '먼트'가 아니다.
- *                         pron-audit 이 이 한 건을 경고로 남긴다 —
+ *   torment → "토멘트",  lament → "러멘트"
+ *                         접미사 -ment 가 아니라 어간의 일부다. -ment 가 강세를
+ *                         받아 모음이 약화되지 않으므로 '먼트'가 아니다.
+ *                         pron-audit 이 이 둘을 경고로 남긴다 —
  *                         철자로 구별할 규칙이 없어 일부러 억누르지 않았다
- *                         (어간 길이로 걸러내면 element 3자도 함께 빠진다)
+ *                         (어간 길이로 걸러내면 element 도 함께 빠진다:
+ *                          torment 'tor' 3자 / element 'ele' 3자로 같다)
  *   principal / principle → 둘 다 "프린서펄"
  *   sail / sale → 둘 다 "세일",  right / rite → 둘 다 "라이트"
  *
@@ -651,25 +653,13 @@ Object.assign(window.PRON, {
   "delayed": "딜레이드",
   "delight": "딜라이트",
   "delve": "델브",
-  "demand": "디맨드",
-  "demanding": "디맨딩",
-  "democracy": "디마크러시",
-  "demolish": "디말리시",
   "demolition": "데멀리션",
   "denotation": "디노테이션",
-  "denounce": "디나운스",
-  "dense": "덴스",
   "densely built": "덴슬리 빌트",
-  "density": "덴서티",
-  "deny": "디나이",
-  "department": "디파트먼트",
   "departure": "디파처",
   "depend": "디펜드",
   "dependence": "디펜던스",
   "dependent": "디펜던트",
-  "deplorable": "디플로러블",
-  "deport": "디포트",
-  "depth": "뎁스",
   "deputy director": "데퓨티 디렉터",
   "derision": "디리전",
   "descend": "디센드",
@@ -2916,7 +2906,6 @@ Object.assign(window.PRON, {
   "deception": "디셉션",
   "decode": "디코드",
   "degeneracy": "디제너러시",
-  "delude": "딜루드",
   "deteriorate": "디티리어레이트",
   "devolution": "데벌루션",
   "dim": "딤",
@@ -3055,4 +3044,94 @@ Object.assign(window.PRON, {
   "vandalize": "밴덜라이즈",
   "warp": "워프",
   "work out": "워크 아웃"
+});
+
+
+Object.assign(window.PRON, {
+  /* D 3차 (delude ~ derived from) 몫 85개 */
+  "appalling": "어폴링",
+  "arrive": "어라이브",
+  "based on": "베이스트 온",
+  "bearing": "베어링",
+  "bemoan": "비모운",
+  "cheerful": "치어풀",
+  "compactness": "컴팩트니스",
+  "crowded": "크라우디드",
+  "decry": "디크라이",
+  "deepness": "딥니스",
+  "dejected": "디젝티드",
+  "demented": "디멘티드",
+  "despondency": "디스판던시",
+  "despondent": "디스판던트",
+  "destitution": "데스티튜션",
+  "dethrone": "디스론",
+  "devaluation": "디밸류에이션",
+  "devalue": "디밸류",
+  "discourage": "디스커리지",
+  "disgraceful": "디스그레이스풀",
+  "dishearten": "디스하튼",
+  "dismantle": "디스맨틀",
+  "dispirit": "디스피릿",
+  "dispossess": "디스퍼제스",
+  "divest": "디베스트",
+  "down payment": "다운 페이먼트",
+  "drain": "드레인",
+  "drought": "드라우트",
+  "encourage": "인커리지",
+  "exacting": "이그잭팅",
+  "exhaust": "이그조스트",
+  "exhaustion": "이그조스천",
+  "exhibit": "이그지빗",
+  "fallacy": "팰러시",
+  "fool": "풀",
+  "gloomy": "글루미",
+  "illusion": "일루전",
+  "illustrate": "일러스트레이트",
+  "insane": "인세인",
+  "insist on": "인시스트 온",
+  "install": "인스톨",
+  "lament": "러멘트",
+  "lamentable": "래먼터블",
+  "lose value": "루즈 밸류",
+  "loss in value": "로스 인 밸류",
+  "mark down": "마크 다운",
+  "markdown": "마크다운",
+  "melancholy": "멜런칼리",
+  "misconception": "미스컨셉션",
+  "mobilize": "모벌라이즈",
+  "offer": "오퍼",
+  "originating in": "어리저네이팅 인",
+  "oust": "아우스트",
+  "overthrow": "오버스로",
+  "popular rule": "파퓰러 룰",
+  "portray": "포트레이",
+  "position": "퍼지션",
+  "prepayment": "프리페이먼트",
+  "privation": "프라이베이션",
+  "profundity": "프러펀더티",
+  "prove": "프루브",
+  "raze": "레이즈",
+  "replenish": "리플레니시",
+  "republic": "리퍼블릭",
+  "rob": "랍",
+  "sane": "세인",
+  "self-government": "셀프 거버먼트",
+  "set off": "셋 오프",
+  "slump": "슬럼프",
+  "sparse": "스파스",
+  "station": "스테이션",
+  "stem": "스템",
+  "stemming from": "스테밍 프럼",
+  "strenuous": "스트레뉴어스",
+  "taxing": "택싱",
+  "tear down": "테어 다운",
+  "terminal": "터미널",
+  "thick": "식",
+  "thickness": "식니스",
+  "thoroughness": "서로니스",
+  "torrent": "토런트",
+  "unhinged": "언힌지드",
+  "use up": "유스 업",
+  "warehouse": "웨어하우스",
+  "withdraw": "위드드로"
 });

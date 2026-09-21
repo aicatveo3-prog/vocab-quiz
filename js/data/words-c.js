@@ -1957,8 +1957,6 @@ Object.assign(window.GLOSS, {
   "cruelty":"잔혹함",
   "dash":"돌진하다, 급히 가다",
   "defiant":"반항하는",
-  "demand":"요구, 요구하다",
-  "demolish":"철거하다, 허물다",
   "demolition":"철거, 파괴",
   "denotation":"명시적 의미, 지시",
   "design":"의도, 계획",
