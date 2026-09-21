@@ -1965,7 +1965,6 @@ Object.assign(window.GLOSS, {
   "dislike":"싫어하다",
   "dissuade":"말리다, 단념시키다",
   "doubtful":"의심스러운, 불확실한",
-  "dubious":"의심스러운, 수상한",
   "earthly":"지상의, 세속의",
   "ease":"쉬움, 편안함",
   "edge":"가장자리, 끝",

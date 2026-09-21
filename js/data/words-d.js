@@ -62,7 +62,29 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 296 / 333단어 (damp ~ downplay) — 8차.
+ * ── 작업 현황 — 완료 ──────────────────────────
+ * 333단어 전량 (damp ~ dynasty) — 17챕터. 9차에 나눠 작성했다.
+ *   1차  30개  damp ~ deck              (배선·검사도구·규약 포함)
+ *   2차  38개  declare ~ deliver
+ *   3차  38개  delude ~ derived from
+ *   4차  38개  desalinate ~ deviate
+ *   5차  38개  device ~ direction
+ *   6차  38개  directory ~ dismal
+ *   7차  38개  dismay ~ disturbance
+ *   8차  38개  ditch ~ downplay
+ *   9차  37개  downpour ~ dynasty
+ *
+ * 데이터 밀도 — syn 3개 이상 95% / 예문 95% / 반의어 51% / 발음 100%
+ * syn 을 비운 17개는 바꿔 쓸 낱말이 없는 기술 용어·합성어다. 억지로 채우면
+ * 틀린 유의어를 가르치게 되므로 비웠고, 나머지 4개 모드는 정상 출제된다.
+ *
+ * 단어를 더 넣을 때 확인 방법:
+ *   node tools/words-d-audit.js           검사 6종 + 출제 시뮬레이션
+ *   node tools/words-d-audit.js --rules   검사별 수행 건수
+ *   node tools/pron-audit.js              발음 커버리지
+ *   node tools/pron-render-check.js --all 전수 점검
+ *   node tools/pron-render-check.js --word <표제어>  유의어 문맥 확인
+ *   node tools/d-impact.js                기존 세트 영향 측정
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -1253,7 +1275,154 @@ window.VOCAB_D = [
 
   { word:"downplay", pron:"다운플레이", pos:"v", level:"C1", meanings:["경시하다","축소하다"],
     syn:["belittle","minimize","understate"], ant:["exaggerate"],
-    ex:[{ s:"Officials tried to {{}} the scale of the leak.", f:"downplay", ko:"당국은 누출 규모를 축소하려 했다." }] }
+    ex:[{ s:"Officials tried to {{}} the scale of the leak.", f:"downplay", ko:"당국은 누출 규모를 축소하려 했다." }] },
+
+  { word:"downpour", pron:"다운포", pos:"n", level:"C1", meanings:["호우","폭우"],
+    syn:["deluge","cloudburst","heavy rain"],
+    ex:[{ s:"A sudden {{}} flooded the lower streets within minutes.", f:"downpour", ko:"갑작스러운 호우가 몇 분 만에 아래쪽 거리를 침수시켰다." }] },
+
+  { word:"downturn", pron:"다운턴", pos:"n", level:"C1", meanings:["침체","하락"],
+    syn:["slump","decline","recession"], ant:["upturn"],
+    ex:[{ s:"The industry has never fully recovered from the {{}}.", f:"downturn", ko:"그 산업은 침체에서 완전히 회복하지 못했다." }] },
+
+  { word:"doze", pron:"도즈", pos:"v", level:"B2", meanings:["졸다","선잠 자다"],
+    syn:["nap","snooze","drowse"],
+    ex:[{ s:"He would often {{}} in the armchair after lunch.", f:"doze", ko:"그는 점심 후 안락의자에서 자주 졸았다." }] },
+
+  /* dozen — 대체할 낱말이 없어 syn 을 비워 둔다 */
+  { word:"dozen", pron:"더즌", pos:"n", level:"B1", meanings:["12개","한 다스"],
+    ex:[{ s:"She bought half a {{}} eggs on the way home.", f:"dozen", ko:"그녀는 집에 오는 길에 달걀 여섯 개를 샀다." }] },
+
+  { word:"draft", pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],
+    syn:["outline","rough copy","sketch"],
+    ex:[{ s:"The first {{}} of the report was far too long.", f:"draft", ko:"보고서 초안은 너무 길었다." }] },
+
+  /* ★ drag 는 dragged 로 자음을 겹쳐 변화한다. quizgen 의 변환 규칙에 없어
+     불규칙으로 처리되므로 예문 어형을 원형으로 쓴다. */
+  { word:"drag", pron:"드래그", pos:"v", level:"B1", meanings:["끌다","질질 끌다"],
+    syn:["haul","tug","pull"],
+    ex:[{ s:"It took three of us to {{}} the boat ashore.", f:"drag", ko:"배를 물가로 끌어올리는 데 우리 셋이 필요했다." }] },
+
+  { word:"drain", pron:"드레인", pos:"v", level:"B2", meanings:["빼내다","소모시키다"],
+    syn:["empty","siphon","deplete"], ant:["fill"],
+    ex:[{ s:"Engineers had to {{}} the tunnel before starting repairs.", f:"drain", ko:"기술자들은 수리를 시작하기 전에 터널의 물을 빼내야 했다." }] },
+
+  { word:"drainage", pron:"드레이니지", pos:"n", level:"C1", meanings:["배수","배수 시설"],
+    syn:["runoff","outflow","sewerage"],
+    ex:[{ s:"Poor {{}} left the field waterlogged for weeks.", f:"drainage", ko:"배수가 나빠 그 밭은 몇 주간 물에 잠겨 있었다." }] },
+
+  { word:"dramatically", pron:"드러매티컬리", pos:"adv", level:"B2", meanings:["극적으로","급격히"],
+    syn:["sharply","markedly","strikingly"],
+    ex:[{ s:"Prices rose {{}} in the space of a single month.", f:"dramatically", ko:"한 달 사이에 물가가 급격히 올랐다." }] },
+
+  { word:"dramatize", pron:"드래머타이즈", pos:"v", level:"C2", meanings:["각색하다","과장하다"],
+    syn:["adapt","stage","overstate"],
+    ex:[{ s:"The studio plans to {{}} the novel for television.", f:"dramatize", ko:"그 제작사는 소설을 텔레비전용으로 각색할 계획이다." }] },
+
+  { word:"drastic", pron:"드래스틱", pos:"adj", level:"B2", meanings:["과감한","급격한"],
+    syn:["extreme","radical","sweeping"], ant:["mild"],
+    ex:[{ s:"The government took {{}} measures to cut spending.", f:"drastic", ko:"정부는 지출을 줄이려고 과감한 조치를 취했다." }] },
+
+  /* ★ draw 는 draw-drew-drawn 으로 불규칙 변화한다. 예문 어형은 원형으로. */
+  { word:"draw", pron:"드로", pos:"v", level:"B1", meanings:["끌어들이다","그리다"],
+    syn:["attract","pull","sketch"],
+    ex:[{ s:"The festival is expected to {{}} very large crowds.", f:"draw", ko:"그 축제는 아주 많은 인파를 끌어들일 것으로 예상된다." }] },
+
+  { word:"draw on", pron:"드로 온", pos:"phr", level:"C1", meanings:["~에서 이끌어내다","활용하다"],
+    syn:["utilize","tap into","fall back on"] },
+
+  { word:"drawback", pron:"드로백", pos:"n", level:"B2", meanings:["결점","문제점"],
+    syn:["disadvantage","flaw","snag"], ant:["advantage"],
+    ex:[{ s:"The main {{}} of the plan is simply its cost.", f:"drawback", ko:"그 계획의 주된 결점은 그저 비용이다." }] },
+
+  { word:"dread", pron:"드레드", pos:"v", level:"C1", meanings:["몹시 무서워하다","두려워하다"],
+    syn:["fear","shrink from","be terrified of"], ant:["welcome"],
+    ex:[{ s:"Many students {{}} the final oral examination.", f:"dread", ko:"많은 학생이 마지막 구술 시험을 몹시 무서워한다." }] },
+
+  { word:"dreadful", pron:"드레드풀", pos:"adj", level:"B2", meanings:["끔찍한","무시무시한"],
+    syn:["awful","terrible","appalling"], ant:["wonderful"],
+    ex:[{ s:"The weather that whole weekend was simply {{}}.", f:"dreadful", ko:"그 주말 내내 날씨는 그저 끔찍했다." }] },
+
+  /* ★ 원본에 '지저분한, 불결한'(dingy 의 뜻)이 잘못 들어와 있었다. */
+  { word:"dreary", pron:"드리어리", pos:"adj", level:"C1", meanings:["음울한","쓸쓸한"],
+    syn:["bleak","dismal","gloomy"], ant:["cheerful"],
+    ex:[{ s:"They spent a {{}} afternoon indoors watching the rain.", f:"dreary", ko:"그들은 비를 보며 음울한 오후를 실내에서 보냈다." }] },
+
+  { word:"drench", pron:"드렌치", pos:"v", level:"C1", meanings:["흠뻑 적시다","물에 잠기게 하다"],
+    syn:["soak","saturate","douse"],
+    ex:[{ s:"A sudden shower {{}} everyone at the bus stop.", f:"drenched", ko:"갑작스러운 소나기가 버스 정류장의 모두를 흠뻑 적셨다." }] },
+
+  { word:"drift", pron:"드리프트", pos:"v", level:"B2", meanings:["표류하다","떠돌다"],
+    syn:["float","wander","stray"],
+    ex:[{ s:"The empty boat began to {{}} slowly out to sea.", f:"drift", ko:"빈 배가 천천히 바다로 떠내려가기 시작했다." }] },
+
+  /* 원본은 '떠나다; 첫 타를 치다'였는데 쫓아버리다가 주된 뜻이다 */
+  { word:"drive off", pron:"드라이브 오프", pos:"phr", level:"C1", meanings:["쫓아버리다","물리치다"],
+    syn:["repel","chase away","fend off"] },
+
+  { word:"drizzle", pron:"드리즐", pos:"n", level:"B2", meanings:["이슬비","가랑비"],
+    syn:["light rain","mist","sprinkle"],
+    ex:[{ s:"A fine {{}} fell steadily all through the morning.", f:"drizzle", ko:"아침 내내 가랑비가 꾸준히 내렸다." }] },
+
+  { word:"drop by", pron:"드랍 바이", pos:"phr", level:"B2", meanings:["잠깐 들르다","불시에 찾다"],
+    syn:["stop by","call in","look in"] },
+
+  { word:"drop out", pron:"드랍 아웃", pos:"phr", level:"B2", meanings:["중도에 그만두다","빠지다"],
+    syn:["withdraw","quit","pull out"] },
+
+  { word:"drown out", pron:"드라운 아웃", pos:"phr", level:"C1", meanings:["소리를 덮어 버리다","들리지 않게 하다"],
+    syn:["muffle","deafen","overpower"] },
+
+  { word:"drowsy", pron:"드라우지", pos:"adj", level:"B2", meanings:["졸리는","나른한"],
+    syn:["sleepy","lethargic","sluggish"], ant:["alert"],
+    ex:[{ s:"The medicine may make you feel rather {{}}.", f:"drowsy", ko:"그 약은 다소 졸리게 할 수 있다." }] },
+
+  { word:"dual", pron:"듀얼", pos:"adj", level:"B2", meanings:["이중의","둘의"],
+    syn:["twofold","double","binary"], ant:["single"],
+    ex:[{ s:"She holds {{}} citizenship in two countries.", f:"dual", ko:"그녀는 두 나라의 이중 국적을 갖고 있다." }] },
+
+  { word:"dubious", pron:"두비어스", pos:"adj", level:"C1", meanings:["의심스러운","수상한"],
+    syn:["doubtful","questionable","suspect"], ant:["certain"],
+    ex:[{ s:"The whole argument rests on a {{}} assumption.", f:"dubious", ko:"그 주장 전체가 의심스러운 가정에 기대고 있다." }] },
+
+  { word:"due", pron:"듀", pos:"adj", level:"B2", meanings:["기일이 된","예정된"],
+    syn:["owing","payable","expected"],
+    ex:[{ s:"The final payment is {{}} at the end of March.", f:"due", ko:"최종 대금은 3월 말에 지급 기일이 된다." }] },
+
+  { word:"due to", pron:"듀 투", pos:"phr", level:"B1", meanings:["~때문에","~로 인해"],
+    syn:["because of","owing to","thanks to"] },
+
+  { word:"dull", pron:"덜", pos:"adj", level:"B2", meanings:["따분한","흐릿한"],
+    syn:["boring","tedious","drab"], ant:["lively"],
+    ex:[{ s:"The lecture was long and rather {{}}.", f:"dull", ko:"그 강의는 길고 다소 따분했다." }] },
+
+  /* ★ 원본에 '불균형; 눈에 띄는 차이'(disparity 의 뜻)가 잘못 들어와 있었다. */
+  { word:"dumbfounded", pron:"덤파운디드", pos:"adj", level:"C2", meanings:["말문이 막힌","어안이 벙벙한"],
+    syn:["speechless","astounded","flabbergasted"],
+    ex:[{ s:"The audience sat {{}} after the announcement.", f:"dumbfounded", ko:"발표 후 관객은 말문이 막힌 채 앉아 있었다." }] },
+
+  { word:"duplicate", pron:"듀플리케이트", pos:"v", level:"C1", meanings:["복제하다","되풀이하다"],
+    syn:["copy","replicate","reproduce"],
+    ex:[{ s:"It is hard to {{}} those results in another lab.", f:"duplicate", ko:"다른 실험실에서 그 결과를 재현하기는 어렵다." }] },
+
+  { word:"duration", pron:"두레이션", pos:"n", level:"C1", meanings:["지속 기간","기간"],
+    syn:["length","period","span"],
+    ex:[{ s:"The {{}} of the treatment is about six weeks.", f:"duration", ko:"그 치료의 지속 기간은 약 6주다." }] },
+
+  { word:"duty", pron:"듀티", pos:"n", level:"B1", meanings:["의무","임무"],
+    syn:["obligation","responsibility","task"], ant:["privilege"],
+    ex:[{ s:"Every citizen has a {{}} to vote in the election.", f:"duty", ko:"모든 시민은 선거에서 투표할 의무가 있다." }] },
+
+  { word:"dwell on", pron:"드웰 온", pos:"phr", level:"C1", meanings:["곱씹다","되새기다"],
+    syn:["brood over","harp on","linger on"] },
+
+  { word:"dwindle", pron:"드윈들", pos:"v", level:"C1", meanings:["줄어들다","작아지다"],
+    syn:["shrink","diminish","taper off"], ant:["grow"],
+    ex:[{ s:"Supplies began to {{}} after the third week.", f:"dwindle", ko:"3주째가 지나자 물자가 줄어들기 시작했다." }] },
+
+  { word:"dynasty", pron:"다이너스티", pos:"n", level:"C1", meanings:["왕조","왕가"],
+    syn:["lineage","house","regime"],
+    ex:[{ s:"The {{}} ruled the region for over four centuries.", f:"dynasty", ko:"그 왕조는 그 지역을 400년 넘게 통치했다." }] }
 ];
 
 
@@ -1279,7 +1448,6 @@ Object.assign(window.GLOSS, {
   "devolution":"권한 이양",
   "dim":"어둑하게 하다; 어스름한",
   "discussion":"논의, 토의",
-  "drown out":"소리를 덮어 버리다",
   "dry":"마른, 건조한",
   "due date":"만기일, 예정일",
   "dusk":"황혼, 해질녘",
@@ -1345,7 +1513,6 @@ Object.assign(window.GLOSS, {
   "disfigure":"흉하게 만들다",
   "disobey":"불복종하다, 거역하다",
   "dry out":"말리다, 건조되다",
-  "dwindle":"줄어들다, 작아지다",
   "edict":"포고령, 칙령",
   "enhance":"높이다, 향상시키다",
   "enjoyable":"즐거운, 재미있는",
@@ -1402,7 +1569,7 @@ Object.assign(window.GLOSS, {
   "work out":"알아내다, 계산해 내다",
 
   /* ── 3차 (delude ~ derived from) 몫 81개 ────────── */
-  "appalling":"끔찍한, 형편없는",
+  "appalling":"충격적인, 개탄스러운",
   "arrive":"도착하다",
   "based on":"~에 근거한",
   "bearing":"태도, 처신",
@@ -1427,7 +1594,6 @@ Object.assign(window.GLOSS, {
   "dispirit":"기를 죽이다",
   "dispossess":"소유권을 빼앗다",
   "divest":"박탈하다, 처분하다",
-  "drain":"빼내다, 소모시키다",
   "drought":"가뭄",
   "encourage":"격려하다, 장려하다",
   "exacting":"엄격한, 힘든",
@@ -1554,7 +1720,6 @@ Object.assign(window.GLOSS, {
   "credential":"자격 증명, 증명서",
   "dedicate":"바치다, 전념하다",
   "delve into":"~을 깊이 파다",
-  "draw on":"~에서 이끌어내다",
   "dunk":"살짝 담그다",
   "faithfully":"충실하게, 성실히",
   "figure":"수치; 도형",
@@ -1619,7 +1784,6 @@ Object.assign(window.GLOSS, {
   "dissertation":"논문, 논설",
   "distaste":"싫음, 혐오",
   "dole out":"조금씩 나눠주다",
-  "dreary":"음울한, 쓸쓸한",
   "dump":"버리다, 내던지다",
   "enable":"가능하게 하다",
   "equality":"평등, 균등",
@@ -1785,5 +1949,77 @@ Object.assign(window.GLOSS, {
   "varied":"다양한, 변화가 많은",
   "variety":"다양성, 여러 가지",
   "vertigo":"현기증, 어지럼증",
-  "wild":"야생의, 길들지 않은"
+  "wild":"야생의, 길들지 않은",
+
+  /* ── 9차 (downpour ~ dynasty) 몫 68개 — 전량 완료 ─── */
+  "astounded":"경악한, 크게 놀란",
+  "be terrified of":"~을 몹시 두려워하다",
+  "because of":"~때문에",
+  "binary":"이진의, 두 부분의",
+  "boring":"지루한, 재미없는",
+  "brood over":"~을 곱씹다",
+  "call in":"잠깐 들르다",
+  "cloudburst":"갑작스러운 폭우",
+  "disadvantage":"불리한 점, 약점",
+  "double":"두 배의, 이중의",
+  "douse":"물을 끼얹다, 흠뻑 젖게 하다",
+  "drab":"칙칙한, 단조로운",
+  "drowse":"졸다, 선잠 자다",
+  "expected":"예상되는, 예정된",
+  "extreme":"극단적인, 지나친",
+  "fall back on":"~에 의지하다",
+  "fear":"두려워하다, 겁내다",
+  "fend off":"막아 내다, 물리치다",
+  "fill":"채우다, 메우다",
+  "flabbergasted":"몹시 놀란, 기가 막힌",
+  "float":"떠다니다, 뜨다",
+  "harp on":"~을 되풀이해 말하다",
+  "haul":"끌어당기다, 운반하다",
+  "heavy rain":"큰비",
+  "length":"기간; 길이",
+  "lethargic":"무기력한, 축 처진",
+  "light rain":"가벼운 비",
+  "lineage":"혈통, 가계",
+  "linger on":"오래 머무르다",
+  "look in":"잠깐 들여다보다",
+  "markedly":"현저히, 눈에 띄게",
+  "mist":"안개, 옅은 안개비",
+  "nap":"낮잠, 잠깐 잠",
+  "outflow":"유출, 흘러 나감",
+  "overpower":"압도하다, 제압하다",
+  "overstate":"과장해 말하다",
+  "owing":"지불해야 하는, 미납의",
+  "owing to":"~로 인해",
+  "payable":"지불해야 하는, 지불 가능한",
+  "pull out":"물러나다, 손을 떼다",
+  "questionable":"의심스러운, 문제가 있는",
+  "recession":"경기 후퇴, 불황",
+  "regime":"정권, 체제",
+  "replicate":"똑같이 재현하다",
+  "reproduce":"재현하다; 번식하다",
+  "rough copy":"초고, 초벌 원고",
+  "runoff":"흘러내린 물, 유출수",
+  "saturate":"적시다, 포화시키다",
+  "sewerage":"하수 처리, 하수도",
+  "shrink from":"~을 피하다, 꺼리다",
+  "single":"하나의, 단일한",
+  "siphon":"빨아내다, 유출시키다",
+  "sketch":"밑그림, 개요",
+  "sleepy":"졸린, 졸음이 오는",
+  "snooze":"눈을 붙이다, 잠깐 자다",
+  "soak":"흠뻑 젖게 하다",
+  "speechless":"말을 잃은, 말이 안 나오는",
+  "sprinkle":"보슬비; 뿌리다",
+  "stop by":"잠시 들르다",
+  "strikingly":"놀랄 만큼, 두드러지게",
+  "suspect":"의심스러운; 의심하다",
+  "sweeping":"전면적인, 대폭적인",
+  "tap into":"~을 활용하다",
+  "taper off":"점차 줄어들다",
+  "tedious":"지루하고 성가신",
+  "thanks to":"~덕분에",
+  "tug":"세게 당기다",
+  "twofold":"두 겹의, 두 배의",
+  "upturn":"상승, 호전",
+  "welcome":"반기다, 환영하다"
 });
