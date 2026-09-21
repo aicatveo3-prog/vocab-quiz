@@ -62,7 +62,7 @@
  *   deprivation  '파면' 제거,    drive off 쫓아버리다를 앞으로
  *   derive a from b 소문자로 (ascribe a to b 선례),  do-it-yourself 괄호 약어 제거
  *
- * 진행 상황: 144 / 333단어 (damp ~ deviate) — 4차.
+ * 진행 상황: 182 / 333단어 (damp ~ direction) — 5차.
  */
 window.VOCAB_D = [
   /* ── dam ───────────────────────────────────── */
@@ -642,7 +642,157 @@ window.VOCAB_D = [
 
   { word:"deviate", pron:"디비에이트", pos:"v", level:"C1", meanings:["벗어나다","빗나가다"],
     syn:["diverge","stray","depart"], ant:["conform"],
-    ex:[{ s:"Pilots must never {{}} from the agreed procedure.", f:"deviate", ko:"조종사는 합의된 절차에서 절대 벗어나면 안 된다." }] }
+    ex:[{ s:"Pilots must never {{}} from the agreed procedure.", f:"deviate", ko:"조종사는 합의된 절차에서 절대 벗어나면 안 된다." }] },
+
+  { word:"device", pron:"디바이스", pos:"n", level:"B1", meanings:["장치","기구"],
+    syn:["gadget","instrument","apparatus"],
+    ex:[{ s:"The {{}} measures air quality every ten minutes.", f:"device", ko:"그 장치는 10분마다 공기 질을 측정한다." }] },
+
+  { word:"devise", pron:"디바이즈", pos:"v", level:"C1", meanings:["고안하다","창안하다"],
+    syn:["invent","formulate","conceive"],
+    ex:[{ s:"Engineers had to {{}} a new way to cool the reactor.", f:"devise", ko:"기술자들은 원자로를 냉각하는 새 방법을 고안해야 했다." }] },
+
+  { word:"devoid", pron:"디보이드", pos:"adj", level:"C2", meanings:["전혀 없는","결여된"],
+    syn:["lacking","empty","bereft"], ant:["full"],
+    ex:[{ s:"The report was almost entirely {{}} of real evidence.", f:"devoid", ko:"그 보고서에는 실질적인 증거가 거의 전혀 없었다." }] },
+
+  { word:"devote", pron:"디보트", pos:"v", level:"B2", meanings:["바치다","전념하다"],
+    syn:["dedicate","commit","give over"],
+    ex:[{ s:"She decided to {{}} her evenings to learning Spanish.", f:"devote", ko:"그녀는 저녁 시간을 스페인어 배우는 데 바치기로 했다." }] },
+
+  { word:"devotedly", pron:"디보티들리", pos:"adv", level:"C2", meanings:["헌신적으로","충실하게"],
+    syn:["faithfully","loyally","selflessly"],
+    ex:[{ s:"He cared for his mother {{}} for over a decade.", f:"devotedly", ko:"그는 10년 넘게 어머니를 헌신적으로 돌봤다." }] },
+
+  { word:"devour", pron:"디바우어", pos:"v", level:"C1", meanings:["게걸스럽게 먹다","탐독하다"],
+    syn:["gobble","wolf down","consume"],
+    ex:[{ s:"The children {{}} the whole pizza in a matter of minutes.", f:"devoured", ko:"아이들이 몇 분 만에 피자 한 판을 게걸스럽게 먹어 치웠다." }] },
+
+  /* dew point·diabetes·diaper·diarrhea·dimple — 낱말로 대체할 유의어가 없다 */
+  { word:"dew point", pron:"듀 포인트", pos:"n", level:"C2", meanings:["이슬점"],
+    ex:[{ s:"Fog forms when the air cools below the {{}}.", f:"dew point", ko:"공기가 이슬점 아래로 식으면 안개가 생긴다." }] },
+
+  { word:"dexterity", pron:"덱스테러티", pos:"n", level:"C2", meanings:["손재주","민첩함"],
+    syn:["nimbleness","skill","adroitness"], ant:["clumsiness"],
+    ex:[{ s:"Microsurgery demands extraordinary manual {{}}.", f:"dexterity", ko:"미세 수술은 대단한 손재주를 요구한다." }] },
+
+  { word:"diabetes", pron:"다이어비티스", pos:"n", level:"B2", meanings:["당뇨병"],
+    ex:[{ s:"Regular exercise lowers the risk of {{}}.", f:"diabetes", ko:"규칙적인 운동은 당뇨병 위험을 낮춘다." }] },
+
+  { word:"diagnose", pron:"다이어그노즈", pos:"v", level:"B2", meanings:["진단하다","원인을 밝혀내다"],
+    syn:["identify","pinpoint","determine"],
+    ex:[{ s:"Doctors were slow to {{}} the rare condition.", f:"diagnose", ko:"의사들은 그 희귀 질환을 진단하는 데 오래 걸렸다." }] },
+
+  { word:"diagnosis", pron:"다이어그노시스", pos:"n", level:"B2", meanings:["진단","진단 결과"],
+    syn:["identification","assessment","verdict"],
+    ex:[{ s:"The {{}} came only after months of testing.", f:"diagnosis", ko:"그 진단은 몇 달의 검사 끝에야 나왔다." }] },
+
+  { word:"diagram", pron:"다이어그램", pos:"n", level:"B1", meanings:["도표","도식"],
+    syn:["chart","figure","schematic"],
+    ex:[{ s:"The manual includes a clear {{}} of the wiring.", f:"diagram", ko:"설명서에 배선 도표가 분명히 들어 있다." }] },
+
+  { word:"dialect", pron:"다이얼렉트", pos:"n", level:"B2", meanings:["방언","사투리"],
+    syn:["vernacular","regional speech","local tongue"],
+    ex:[{ s:"The northern {{}} differs sharply from the standard language.", f:"dialect", ko:"북부 방언은 표준어와 크게 다르다." }] },
+
+  { word:"diameter", pron:"다이애머터", pos:"n", level:"B2", meanings:["직경","지름"],
+    syn:["width","breadth","caliber"],
+    ex:[{ s:"The pipe has a {{}} of thirty centimeters.", f:"diameter", ko:"그 관은 직경이 30센티미터다." }] },
+
+  { word:"diaper", pron:"다이어퍼", pos:"n", level:"B1", meanings:["기저귀"],
+    ex:[{ s:"He learned to change a {{}} in under a minute.", f:"diaper", ko:"그는 1분 안에 기저귀를 갈 수 있게 됐다." }] },
+
+  { word:"diarrhea", pron:"다이어리아", pos:"n", level:"B2", meanings:["설사"],
+    ex:[{ s:"Contaminated water often causes severe {{}}.", f:"diarrhea", ko:"오염된 물은 흔히 심한 설사를 일으킨다." }] },
+
+  { word:"dictate", pron:"딕테이트", pos:"v", level:"C1", meanings:["좌우하다","받아쓰게 하다"],
+    syn:["determine","impose","prescribe"],
+    ex:[{ s:"Cost will largely {{}} which design we finally choose.", f:"dictate", ko:"비용이 우리가 최종적으로 어떤 설계를 고를지 크게 좌우할 것이다." }] },
+
+  { word:"dictation", pron:"딕테이션", pos:"n", level:"C2", meanings:["받아쓰기","구술"],
+    syn:["transcription","recitation","command"],
+    ex:[{ s:"The class practiced French through {{}} every Friday.", f:"dictation", ko:"그 반은 금요일마다 받아쓰기로 프랑스어를 연습했다." }] },
+
+  { word:"dietary", pron:"다이어테리", pos:"adj", level:"C1", meanings:["식이의","음식의"],
+    syn:["nutritional","food-related","nutritive"],
+    ex:[{ s:"The doctor suggested several simple {{}} changes.", f:"dietary", ko:"의사는 몇 가지 간단한 식이 변화를 제안했다." }] },
+
+  { word:"differ", pron:"디퍼", pos:"v", level:"B1", meanings:["다르다","의견이 다르다"],
+    syn:["diverge","vary","contrast"], ant:["match"],
+    ex:[{ s:"The two accounts {{}} on several key points.", f:"differ", ko:"두 진술은 몇 가지 핵심에서 다르다." }] },
+
+  { word:"differentiate", pron:"디퍼렌시에이트", pos:"v", level:"C1", meanings:["구별하다","차별화하다"],
+    syn:["distinguish","tell apart","discriminate"],
+    ex:[{ s:"Young children cannot always {{}} fantasy from reality.", f:"differentiate", ko:"어린 아이들은 환상과 현실을 늘 구별하지는 못한다." }] },
+
+  { word:"diffuse", pron:"디퓨즈", pos:"v", level:"C2", meanings:["확산시키다","분산시키다"],
+    syn:["scatter","disperse","spread"], ant:["concentrate"],
+    ex:[{ s:"Warm air helps {{}} the scent through the whole room.", f:"diffuse", ko:"따뜻한 공기가 향을 방 전체로 확산시키는 데 도움이 된다." }] },
+
+  /* ★ dig 는 불규칙 동사(dig-dug-dug)다. 예문 어형을 dug 으로 쓰면 오답이
+     원형으로 남아 정답이 한눈에 튄다. 규약대로 원형을 쓴다. */
+  { word:"dig", pron:"디그", pos:"v", level:"B1", meanings:["파다","채굴하다"],
+    syn:["excavate","burrow","tunnel"],
+    ex:[{ s:"Volunteers helped {{}} a well for the village.", f:"dig", ko:"자원봉사자들이 마을에 우물을 파는 것을 도왔다." }] },
+
+  { word:"digest", pron:"다이제스트", pos:"v", level:"B2", meanings:["소화하다","소화시키다"],
+    syn:["break down","absorb","assimilate"],
+    ex:[{ s:"Some people cannot easily {{}} dairy products.", f:"digest", ko:"어떤 사람들은 유제품을 쉽게 소화하지 못한다." }] },
+
+  { word:"digit", pron:"디짓", pos:"n", level:"B2", meanings:["한 자리 숫자","숫자"],
+    syn:["figure","numeral","number"],
+    ex:[{ s:"Enter the last four {{}} of your card number.", f:"digits", ko:"카드 번호의 마지막 네 자리 숫자를 입력하세요." }] },
+
+  { word:"dignified", pron:"디그니파이드", pos:"adj", level:"C1", meanings:["위엄 있는","품위 있는"],
+    syn:["stately","noble","poised"], ant:["undignified"],
+    ex:[{ s:"She gave a {{}} reply to the rude question.", f:"dignified", ko:"그녀는 무례한 질문에 품위 있는 답을 했다." }] },
+
+  { word:"dignity", pron:"디그너티", pos:"n", level:"B2", meanings:["위엄","품위"],
+    syn:["stateliness","self-respect","honor"],
+    ex:[{ s:"He accepted the defeat with quiet {{}}.", f:"dignity", ko:"그는 조용한 품위로 패배를 받아들였다." }] },
+
+  { word:"dilemma", pron:"딜레마", pos:"n", level:"B2", meanings:["딜레마","진퇴양난"],
+    syn:["quandary","predicament","tight spot"],
+    ex:[{ s:"The company faced a real {{}} over the product recall.", f:"dilemma", ko:"그 회사는 제품 회수 문제로 진짜 딜레마에 빠졌다." }] },
+
+  { word:"diligent", pron:"딜리전트", pos:"adj", level:"B2", meanings:["부지런한","근면한"],
+    syn:["industrious","assiduous","hardworking"], ant:["lazy"],
+    ex:[{ s:"A {{}} student rarely misses a deadline.", f:"diligent", ko:"부지런한 학생은 마감을 놓치는 일이 드물다." }] },
+
+  { word:"dilute", pron:"다일루트", pos:"v", level:"C1", meanings:["희석하다","묽게 하다"],
+    syn:["thin","water down","weaken"], ant:["concentrate"],
+    ex:[{ s:"Always {{}} the acid thoroughly before pouring it away.", f:"dilute", ko:"산을 버리기 전에 항상 충분히 희석하라." }] },
+
+  { word:"dimension", pron:"디멘션", pos:"n", level:"B2", meanings:["차원","치수"],
+    syn:["aspect","measurement","extent"],
+    ex:[{ s:"The problem clearly has an ethical {{}} as well.", f:"dimension", ko:"그 문제는 분명히 윤리적 차원도 있다." }] },
+
+  { word:"diminish", pron:"디미니시", pos:"v", level:"C1", meanings:["줄어들다","감소시키다"],
+    syn:["dwindle","lessen","shrink"], ant:["augment"],
+    ex:[{ s:"Interest in the sport began to {{}} after the scandal.", f:"diminish", ko:"그 스캔들 이후 그 종목에 대한 관심이 줄어들기 시작했다." }] },
+
+  { word:"dimple", pron:"딤플", pos:"n", level:"C2", meanings:["보조개","오목한 곳"],
+    ex:[{ s:"A small {{}} appeared whenever she smiled.", f:"dimple", ko:"그녀가 웃을 때마다 작은 보조개가 생겼다." }] },
+
+  { word:"dip into", pron:"딥 인투", pos:"phr", level:"C1", meanings:["살짝 담그다","조금씩 쓰다"],
+    syn:["dunk","delve into","draw on"] },
+
+  { word:"diploma", pron:"디플로마", pos:"n", level:"B2", meanings:["졸업장","학위증"],
+    syn:["certificate","degree","credential"],
+    ex:[{ s:"She framed her {{}} and hung it beside the desk.", f:"diploma", ko:"그녀는 졸업장을 액자에 넣어 책상 옆에 걸었다." }] },
+
+  /* diplomatic — '요령 있는' 쪽 유의어(tactful 등)를 넣으면 이 표제어의 뜻
+     '외교의'와 어긋난다. 외교 뜻의 대체 낱말이 없어 syn 을 비워 둔다. */
+  { word:"diplomatic", pron:"디플러매틱", pos:"adj", level:"B2", meanings:["외교의","외교적인"],
+    ex:[{ s:"The two countries restored {{}} relations last year.", f:"diplomatic", ko:"두 나라는 지난해 외교 관계를 복원했다." }] },
+
+  { word:"direct", pron:"디렉트", pos:"adj", level:"B1", meanings:["직접적인","직행의"],
+    syn:["immediate","straight","firsthand"], ant:["indirect"],
+    ex:[{ s:"There is no {{}} flight between the two cities.", f:"direct", ko:"두 도시 사이에 직항편이 없다." }] },
+
+  { word:"direction", pron:"디렉션", pos:"n", level:"B1", meanings:["방향","지시"],
+    syn:["course","bearing","heading"],
+    ex:[{ s:"We walked in the wrong {{}} for almost an hour.", f:"direction", ko:"우리는 거의 한 시간 동안 잘못된 방향으로 걸었다." }] }
 ];
 
 
@@ -731,7 +881,6 @@ Object.assign(window.GLOSS, {
   "deputy":"대리인, 부관",
   "desiccate":"건조시키다",
   "deterioration":"악화, 저하",
-  "diminish":"줄이다, 감소하다",
   "disappointed":"실망한, 낙담한",
   "disfigure":"흉하게 만들다",
   "disobey":"불복종하다, 거역하다",
@@ -936,5 +1085,64 @@ Object.assign(window.GLOSS, {
   "urgently":"긴급히, 절박하게",
   "warrant":"정당화하다, ~할 만하다",
   "willpower":"의지력",
-  "wish":"바람, 소망"
+  "wish":"바람, 소망",
+
+  /* ── 5차 (device ~ direction) 몫 57개 ──────────── */
+  "adroitness":"능숙함, 솜씨",
+  "assiduous":"근면한, 끈덕진",
+  "augment":"늘리다, 증대시키다",
+  "bereft":"잃은, 결여된",
+  "caliber":"구경; 직경",
+  "chart":"도표, 차트",
+  "commit":"전념하다; 저지르다",
+  "credential":"자격 증명, 증명서",
+  "dedicate":"바치다, 전념하다",
+  "delve into":"~을 깊이 파다",
+  "discriminate":"구별하다; 차별하다",
+  "draw on":"~에서 이끌어내다",
+  "dunk":"살짝 담그다",
+  "faithfully":"충실하게, 성실히",
+  "figure":"수치; 도형",
+  "firsthand":"직접 얻은, 직접적인",
+  "food-related":"음식 관련의",
+  "formulate":"만들어 내다, 공식화하다",
+  "give over":"내주다, 맡기다",
+  "gobble":"급히 먹다, 꿀꺽 삼키다",
+  "hardworking":"열심히 일하는",
+  "heading":"방향; 제목",
+  "identification":"식별, 신원 확인",
+  "identify":"알아보다, 확인하다",
+  "immediate":"직접적인; 즉각적인",
+  "impose":"부과하다, 강요하다",
+  "industrious":"근면한, 부지런한",
+  "instrument":"기구, 도구",
+  "lazy":"게으른, 나태한",
+  "local tongue":"지역 말",
+  "loyally":"충성스럽게",
+  "measurement":"측정, 치수",
+  "number":"수, 숫자",
+  "numeral":"숫자, 수사",
+  "nutritional":"영양의, 영양상의",
+  "nutritive":"영양이 되는",
+  "pinpoint":"정확히 찾아내다",
+  "poised":"침착한, 태연한",
+  "predicament":"곤경, 궁지",
+  "quandary":"곤경, 난처함",
+  "recitation":"암송, 낭독",
+  "regional speech":"지역 말투",
+  "schematic":"개략도, 도해",
+  "self-respect":"자존감",
+  "selflessly":"이타적으로, 헌신적으로",
+  "shrink":"줄어들다, 수축하다",
+  "stateliness":"위엄, 장엄함",
+  "stately":"위엄 있는, 웅장한",
+  "tell apart":"가려내다, 분간하다",
+  "thin":"묽게 하다; 얇은",
+  "tight spot":"궁지, 곤란한 처지",
+  "transcription":"필기, 옮겨 적기",
+  "undignified":"품위 없는, 체면 없는",
+  "vary":"다르다, 달라지다",
+  "vernacular":"토착어, 일상어",
+  "water down":"물을 타다, 희석하다",
+  "wolf down":"허겁지겁 먹다"
 });
