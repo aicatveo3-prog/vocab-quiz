@@ -34,7 +34,7 @@ function show(n) { return n < 1048576 ? kb(n) : mb(n); }
 
 /* ── 현재 ────────────────────────────────── */
 var DATA = ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js',
-  'js/data/words-d.js', 'js/data/words-e.js', 'js/data/gloss.js', 'js/data/pron.js'];
+  'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/gloss.js', 'js/data/pron.js'];
 var CODE = ['js/app.js', 'js/quizgen.js', 'js/modes.js', 'js/conquer.js',
   'js/store.js', 'js/sync.js', 'js/firebase-config.js',
   'css/style.css', 'index.html', 'sw.js', 'manifest.json', 'icon.svg'];
@@ -42,13 +42,18 @@ var CODE = ['js/app.js', 'js/quizgen.js', 'js/modes.js', 'js/conquer.js',
 var data = sum(DATA.map(sizes));
 var code = sum(CODE.map(sizes));
 
-/* 단어 수를 실제로 센다 */
+/* 단어 수를 실제로 센다.
+   DATA 에는 gloss.js·pron.js 도 들어 있는데 그 둘은 표제어를 만들지 않으므로
+   words*.js 만 골라 읽는다. 예전에는 slice(0, 4) 로 앞 네 개만 읽어서 세트를
+   늘릴 때마다 조용히 빠졌다 — 파일 이름으로 고르면 다음 세트도 저절로 잡힌다. */
 global.window = global;
-DATA.slice(0, 4).forEach(function (rel) {
-  new Function(fs.readFileSync(path.join(ROOT, rel), 'utf8')).call(global);
-});
+DATA.filter(function (rel) { return /\/words(-[a-z])?\.js$/.test(rel); })
+  .forEach(function (rel) {
+    new Function(fs.readFileSync(path.join(ROOT, rel), 'utf8')).call(global);
+  });
 var WORDS = (global.VOCAB || []).concat(global.VOCAB_B || [])
-  .concat(global.VOCAB_C || []).concat(global.VOCAB_D || []).concat(global.VOCAB_E || []);
+  .concat(global.VOCAB_C || []).concat(global.VOCAB_D || [])
+  .concat(global.VOCAB_E || []).concat(global.VOCAB_F || []);
 var N = WORDS.length;
 
 console.log('── 지금 (' + N + '단어) ──────────────────────');

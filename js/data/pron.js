@@ -819,16 +819,11 @@ Object.assign(window.PRON, {
   "extra": "엑스트라",
   "face": "페이스",
   "facet": "패싯",
-  "facility": "퍼실러티",
   "fact": "팩트",
   "faction": "팩션",
-  "fad": "패드",
-  "fade": "페이드",
   "fail": "페일",
   "fail to register with": "페일 투 레지스터 위드",
   "failure": "페일러",
-  "faith": "페이스",
-  "fake": "페이크",
   "fakeness": "페이크니스",
   "fall": "폴",
   "fame": "페임",
@@ -3005,7 +3000,6 @@ Object.assign(window.PRON, {
   "disincentive": "디신센티브",
   "drop": "드랍",
   "endpoint": "엔드포인트",
-  "factor": "팩터",
   "fate": "페이트",
   "fine point": "파인 포인트",
   "forlorn": "폴론",
@@ -3333,7 +3327,6 @@ Object.assign(window.PRON, {
   "drowse": "드라우즈",
   "expected": "익스펙티드",
   "extreme": "익스트림",
-  "fall back on": "폴 백 온",
   "fear": "피어",
   "fend off": "펜드 오프",
   "fill": "필",
@@ -3937,4 +3930,51 @@ Object.assign(window.PRON, {
   "empty out": "엠프티 아웃",
   "opposite number": "아퍼짓 넘버",
   "risky undertaking": "리스키 언더테이킹"
+});
+
+
+/* ── F 세트 ────────────────────────────────────────
+   표제어의 발음은 words-f.js 안에 pron 으로 들어 있다. 여기에는 F 세트가
+   유의어·반의어로 쓰는 낱말 중 표제어가 아닌 것만 넣는다. */
+Object.assign(window.PRON, {
+  /* ── F 1차: fable ~ fall off (37개) ─────────────────
+     승격 — facility·factor·fad·fade·faith·fake·fall back on 은 words-f.js 의
+     표제어가 되었으므로 위쪽 배치에서 지웠다. */
+  "allegory": "앨러고리",
+  "allow for": "얼라우 포",
+  "bear in mind": "베어 인 마인드",
+  "cloth": "클로스",
+  "concoct": "컨칵트",
+  "devoted": "디보티드",
+  "die away": "다이 어웨이",
+  "disloyal": "디스로열",
+  "drop back": "드롭 백",
+  "even-handed": "이븐 핸디드",
+  "expedite": "엑스퍼다이트",
+  "falsify": "폴서파이",
+  "fictional": "픽셔널",
+  "folktale": "포크테일",
+  "frontage": "프런티지",
+  "installation": "인스털레이션",
+  "lose color": "루즈 컬러",
+  "loyal": "로열",
+  "make easier": "메이크 이지어",
+  "marvelous": "마벌러스",
+  "mental power": "멘털 파워",
+  "outward appearance": "아웃워드 어피어런스",
+  "parable": "패러블",
+  "phony": "포니",
+  "resort to": "리조트 투",
+  "sham": "샴",
+  "steadfast": "스테드패스트",
+  "take into account": "테이크 인투 어카운트",
+  "terrific": "터리픽",
+  "textile": "텍스타일",
+  "trail": "트레일",
+  "trump up": "트럼프 업",
+  "truthful": "트루스풀",
+  "turn to": "턴 투",
+  "veneer": "버니어",
+  "verifiable": "베러파이어블",
+  "vogue": "보그"
 });

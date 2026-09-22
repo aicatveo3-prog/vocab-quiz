@@ -26,7 +26,8 @@ window.Quiz = (function () {
     .concat(window.VOCAB_B || [])
     .concat(window.VOCAB_C || [])
     .concat(window.VOCAB_D || [])
-    .concat(window.VOCAB_E || []);
+    .concat(window.VOCAB_E || [])
+    .concat(window.VOCAB_F || []);
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
