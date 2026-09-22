@@ -30,6 +30,7 @@ load('js/data/words-c.js');
 load('js/data/words-d.js');
 load('js/data/words-e.js');
 load('js/data/words-f.js');
+load('js/data/words-g.js');
 load('js/data/gloss.js');
 
 var hasPronFile = fs.existsSync(path.join(ROOT, 'js/data/pron.js'));
@@ -39,7 +40,8 @@ var VOCAB = (window.VOCAB || [])
   .concat(window.VOCAB_B || [])
   .concat(window.VOCAB_C || [])
   .concat(window.VOCAB_D || [])
-  .concat(window.VOCAB_E || []).concat(window.VOCAB_F || []);
+  .concat(window.VOCAB_E || []).concat(window.VOCAB_F || [])
+  .concat(window.VOCAB_G || []);
 var GLOSS = window.GLOSS || {};
 var PRON = window.PRON || {};
 

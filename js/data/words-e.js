@@ -2272,7 +2272,6 @@ Object.assign(window.GLOSS, {
   "eat away":"조금씩 먹어 들어가다",
   "evenness":"고름, 균등함",
   "final chapter":"마지막 장",
-  "gear":"장구, 용품",
   "gradual destruction":"서서히 무너짐",
   "inconsistent":"일관성이 없는",
   "milestone":"중대한 사건, 분기점",
