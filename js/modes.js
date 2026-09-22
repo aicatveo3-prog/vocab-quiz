@@ -57,7 +57,7 @@ window.Modes = (function () {
     }
 
     var text = q.mode === 'cloze' ? '빈칸에 알맞은 단어를 고르세요'
-      : q.mode === 'colloc' ? '자연스러운 조합을 고르세요'
+      : q.mode === 'gov' ? '어법이 다른 하나를 고르세요'
       : q.dir === 'en-ko' ? '뜻을 고르세요'
       : '알맞은 단어를 고르세요';
     lead.appendChild(el('span', 'q-instruct', text));
@@ -74,9 +74,19 @@ window.Modes = (function () {
       if (q.ko) wrap.appendChild(el('div', 'q-ko-hint', q.ko));
       return wrap;
     }
-    if (q.mode === 'colloc') {
-      wrap.appendChild(sentenceNode(q.pattern, 'q-pattern'));
-      wrap.appendChild(el('div', 'q-sub', q.promptSub));
+    /* 전치사 구별 — 프롬프트는 전치사 하나다.
+       "빈칸에 to 가 들어갈 수 없는 것은?" 처럼 전치사를 문제문에 박아 두면
+       넷 중 하나만 알아도 답이 나온다. 선택지에 전치사를 보여주고 고르게 하면
+       네 개를 모두 알아야 해서 부분 지식이 보상받지 못한다. */
+    if (q.mode === 'gov') {
+      var gp = el('div', 'q-prompt');
+      var line = el('div', 'q-gov');
+      line.appendChild(document.createTextNode('빈칸에 '));
+      line.appendChild(el('b', 'q-gov-prep', q.prompt));
+      line.appendChild(document.createTextNode(' 를 쓸 수 없는 것은?'));
+      gp.appendChild(line);
+      gp.appendChild(el('div', 'q-sub', q.promptSub));
+      wrap.appendChild(gp);
       return wrap;
     }
 
@@ -178,7 +188,7 @@ window.Modes = (function () {
         blank.textContent = q.answer;
         blank.classList.add('filled');
       }
-      // 문장 빈칸·연어: 답을 고르면 문장 바로 아래에 한국어 번역을 보여준다.
+      // 문장 빈칸: 답을 고르면 문장 바로 아래에 한국어 번역을 보여준다.
       // 단, q-ko-hint가 이미 있으면(문장 빈칸은 처음부터 표시) 중복 삽입하지 않는다.
       if (q.ko && !body.querySelector('.q-ko-inline') && !body.querySelector('.q-ko-hint')) {
         var koNode = el('div', 'q-ko-inline', q.ko);
@@ -188,10 +198,27 @@ window.Modes = (function () {
         }
       }
 
-      // 선택지가 영단어인 모드(한→영 4지선다·문장 빈칸·연어)는 답을 고른 뒤
+      /* 전치사 구별: 답을 고르면 네 선택지의 어법을 각각 보여준다.
+         한 문항이 어법 네 개를 가르친다. 옛 '연어 고르기'는 한 문항에
+         하나였다 — 같은 데이터로 노출이 네 배가 된다. */
+      if (q.mode === 'gov' && q.rows) {
+        var byOpt = {};
+        q.rows.forEach(function (r) { byOpt[r.opt] = r; });
+        buttons.forEach(function (b) {
+          var r = byOpt[b._value];
+          if (!r) return;
+          var d = el('div', 'opt-detail');
+          d.appendChild(el('b', 'opt-prep', r.prep));
+          d.appendChild(document.createTextNode(' · ' + r.usage));
+          b.classList.add('has-detail');
+          b.appendChild(d);
+        });
+      }
+
+      // 선택지가 영단어인 모드(한→영 4지선다·문장 빈칸)는 답을 고른 뒤
       // 각 선택지에 뜻과 발음을 표시한다. 오답으로 나온 단어도 함께 익힐 수 있다.
       var showsWordOptions =
-        (q.mode === 'mcq' && q.dir === 'ko-en') || q.mode === 'cloze' || q.mode === 'colloc';
+        (q.mode === 'mcq' && q.dir === 'ko-en') || q.mode === 'cloze';
       if (showsWordOptions) {
         buttons.forEach(function (b) {
           var obj = findVocabByForm(b._value);
@@ -331,7 +358,8 @@ window.Modes = (function () {
     var rotated = ordered.slice(shift).concat(ordered.slice(0, shift));
 
     ordered.forEach(function (p) {
-      colL.appendChild(makeItem(p.word, p.word, 'L'));
+      // label 은 화면에 찍히는 글자(지배 전치사 포함), 두 번째 인자는 기록 키
+      colL.appendChild(makeItem(p.label || p.word, p.word, 'L'));
     });
     rotated.forEach(function (p) {
       colR.appendChild(makeItem(p.meaning, p.word, 'R'));
@@ -427,8 +455,11 @@ window.Modes = (function () {
   return {
     mcq:    { render: renderChoice },
     not:    { render: renderChoice },
+    /* 전치사 구별은 '아닌 것 고르기'의 두 번째 갈래다. 개별 연습 형식 목록에는
+       따로 나오지 않고(Quiz.MODES 에 없다) not 세션 안에 섞여 나온다.
+       선택지 네 개를 누르는 구조가 같으므로 renderChoice 를 그대로 쓴다. */
+    gov:    { render: renderChoice },
     cloze:  { render: renderChoice },
-    colloc: { render: renderChoice },
     match:  { render: renderMatch }
   };
 })();

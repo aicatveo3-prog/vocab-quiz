@@ -3,10 +3,11 @@
  *
  * 모드
  *   mcq    ① 4지선다 (영→한 / 한→영 양방향 교대)
- *   not    ④ 아닌 것 고르기 (유의어 3 + 비유의어 1)
+ *   not    ④ 아닌 것 고르기 — 두 갈래
+ *            · 유의어 3 + 비유의어 1        (makeNot)
+ *            · 같은 전치사 3 + 다른 것 1    (makeGov)
  *   match  ⑤ 짝 맞추기 (5~6쌍 — 소거법 방지)
  *   cloze  ⑬ 문장 빈칸
- *   colloc ⑯ 연어 고르기
  *
  * 오답 선택지 원칙
  *   - 같은 품사, CEFR 레벨 차이 ±1 이내 (레벨이 튀면 정답이 드러남)
@@ -31,10 +32,9 @@ window.Quiz = (function () {
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
-    { id: 'not',    label: '아닌 것 고르기', sub: '유의어 구별' },
+    { id: 'not',    label: '아닌 것 고르기', sub: '유의어·전치사 구별' },
     { id: 'match',  label: '짝 맞추기',     sub: '5~6쌍 보드' },
-    { id: 'cloze',  label: '문장 빈칸',     sub: '문맥 속 구별' },
-    { id: 'colloc', label: '연어 고르기',   sub: '전치사·동사 조합' }
+    { id: 'cloze',  label: '문장 빈칸',     sub: '문맥 속 구별' }
   ];
 
   /* ── 공통 유틸 ─────────────────────────────── */
@@ -185,9 +185,10 @@ window.Quiz = (function () {
   function eligible(modeId, words) {
     return (words || ALL).filter(function (w) {
       switch (modeId) {
-        case 'not':    return w.syn && w.syn.length >= 3;
+        /* '아닌 것 고르기'는 유의어 문항과 전치사 문항 두 갈래다.
+           어느 한쪽이라도 만들 수 있으면 출제 대상이다. */
+        case 'not':    return (w.syn && w.syn.length >= 3) || !!govOf(w);
         case 'cloze':  return w.ex && w.ex.length > 0;
-        case 'colloc': return w.col && w.col.length > 0;
         default:       return w.meanings && w.meanings.length > 0;
       }
     });
@@ -250,7 +251,8 @@ window.Quiz = (function () {
         promptSub: answer.pos + ' · ' + answer.level,
         options: opts,
         answer: answer.meanings[0],
-        note: answer.meanings.join(', ')
+        note: answer.meanings.join(', '),
+        usage: usageOf(answer)
       };
     }
 
@@ -269,7 +271,8 @@ window.Quiz = (function () {
       promptSub: answer.pos + ' · ' + answer.level,
       options: words,
       answer: answer.word,
-      note: answer.word + ' — ' + answer.meanings.join(', ')
+      note: answer.word + ' — ' + answer.meanings.join(', '),
+      usage: usageOf(answer)
     };
   }
 
@@ -297,7 +300,8 @@ window.Quiz = (function () {
       promptSub: answer.meanings.join(', ') + ' · ' + answer.pos,
       options: shuffle(syns.concat([oddWord])),
       answer: oddWord,
-      note: answer.word + '의 유의어: ' + syns.join(', ')
+      note: answer.word + '의 유의어: ' + syns.join(', '),
+      usage: usageOf(answer)
     };
   }
 
@@ -362,56 +366,123 @@ window.Quiz = (function () {
       options: opts,
       answer: ex.f,
       ko: ex.ko,
-      note: answer.word + ' — ' + answer.meanings.join(', ')
+      note: answer.word + ' — ' + answer.meanings.join(', '),
+      usage: usageOf(answer)
     };
   }
 
-  /** ⑯ 연어 고르기 */
-  function makeColloc(answer) {
-    if (!answer.col || !answer.col.length) return null;
-    var c = answer.col[Math.floor(Math.random() * answer.col.length)];
-    var opts;
+  /* ── 전치사 구별 ('아닌 것 고르기'의 두 번째 갈래) ──────────
+   *
+   * "빈칸에 to 가 들어갈 수 없는 것은?"
+   *     adverse ___ health          (to)
+   *     beneficial ___ health       (to)
+   *     central ___ the whole plan  (to)
+   *   ★ absent ___ class            (from)   ← 정답
+   *
+   * 답으로 누르는 것은 전치사가 아니라 구(句)다. 이것이 예전 '연어 고르기'와
+   * 결정적으로 다른 점이다. 옛 모드는 to/with/from/about 중에서 고르게 했고,
+   * 정답이 to 인 문항이 30%여서 "to 찍기"가 무작위(25%)보다 유리했다.
+   * 답이 놓이는 공간을 전치사 14개에서 구(句)로 옮기면 그 경로가 막힌다.
+   *
+   * 선택지를 단어가 아니라 구로 쓰는 이유 — 단어만 보여주면 to-부정사로
+   * 읽힌다. "to 를 쓰지 않는 것은? → curious" 는 curious to know 가 맞는
+   * 영어이므로 반박당한다. 뒤에 명사구가 오는 형태로 보여주면 막힌다.
+   *
+   * 정답 자리와 오답 자리의 안전성이 다르다.
+   *   오답 "X 는 to 를 받는다"      → 기록된 대로. 항상 참
+   *   정답 "Y 는 to 를 받지 않는다" → prep 목록에 빠진 게 있으면 거짓
+   * 그래서 정답 후보는 prep 에 그 전치사가 없어야 한다는 것만으로는 부족하고,
+   * prep 자체가 빠짐없이 적혀 있어야 한다(words.js 머리주석 참고).
+   */
+  function govOf(w) {
+    return (w.gov && w.gov.prep && w.gov.prep.length && w.gov.pat) ? w.gov : null;
+  }
 
-    if (c.opts && c.opts.length >= 4) {
-      opts = sample(c.opts.filter(function (o) { return o !== c.a; }), 3).concat([c.a]);
-    } else if (c.pool === 'prep' || c.pool === 'verb') {
-      var pool = window.COL_POOLS[c.pool].filter(function (o) { return o !== c.a; });
-      opts = sample(pool, 3).concat([c.a]);
-    } else { // auto — 정답이 표제어 자신인 경우
-      var dp = distractorPool(answer);
-      if (dp.length < 3) return null;
-      opts = sample(dp, 3).map(function (w) { return w.word; }).concat([c.a]);
-    }
-    if (opts.length < 4) return null;
+  /* 어법 해설 한 줄. 모드를 가리지 않고 정답 화면에 띄운다.
+     예전에는 이 한 줄을 보려면 '연어 고르기' 모드를 일부러 골라야 해서
+     사실상 아무도 못 봤다. 전 모드에 얹으면 노출이 오히려 늘어난다. */
+  function usageOf(w) { return (w.gov && w.gov.usage) || null; }
+
+  /** 전치사 구별 문항을 만들 수 있는 단어 목록 */
+  function govPool(words) {
+    return (words || ALL).filter(govOf);
+  }
+
+  function fillBlank(pat) { return pat.replace('{{}}', '___'); }
+
+  /**
+   * @param answer  정답이 될 단어 (= 그 전치사를 쓰지 않는 단어)
+   * @param exclude 오답으로 쓰지 않을 단어 이름 배열 (정복 모드의 같은 챕터)
+   */
+  function makeGov(answer, exclude) {
+    var g = govOf(answer);
+    if (!g) return null;
+    var skip = {};
+    (exclude || []).forEach(function (w) { skip[String(w).toLowerCase()] = true; });
+
+    // 대표 전치사별로 묶는다. 오답은 "대표가 P" 인 단어만 쓴다 —
+    // 두 번째 이후 전치사는 쓸 수 있다는 뜻일 뿐 대표 용법이 아니다.
+    var groups = {};
+    govPool().forEach(function (w) {
+      var wg = govOf(w);
+      (groups[wg.prep[0]] = groups[wg.prep[0]] || []).push(w);
+    });
+
+    var best = null;
+    Object.keys(groups).forEach(function (P) {
+      // ★ 정답이 P 를 받을 수 있으면 그 문항은 성립하지 않는다
+      if (g.prep.indexOf(P) !== -1) return;
+      var mates = groups[P].filter(function (m) {
+        return m.word !== answer.word
+          && m.pos === answer.pos
+          && levelGap(m, answer) <= 1
+          && !skip[m.word.toLowerCase()];
+      });
+      if (mates.length >= 3 && (!best || mates.length > best.mates.length)) {
+        best = { prep: P, mates: mates };
+      }
+    });
+    if (!best) return null;
+
+    // 알파벳순 고정 — 같은 단어면 같은 문항이 나온다
+    var picked = best.mates.slice().sort(byAlpha).slice(0, 3);
+    var rows = picked.concat([answer]).map(function (w) {
+      var wg = govOf(w);
+      return { opt: fillBlank(wg.pat), prep: wg.prep[0], usage: wg.usage };
+    });
 
     return {
-      mode: 'colloc', word: answer.word,
-      pattern: c.p,
-      promptSub: answer.word + ' — ' + answer.meanings.join(', '),
-      options: shuffle(opts),
-      answer: c.a,
-      note: c.note || ''
+      mode: 'gov', word: answer.word,
+      prompt: best.prep,
+      promptSub: answer.pos + ' · ' + answer.level,
+      options: shuffle(rows.map(function (r) { return r.opt; })),
+      answer: fillBlank(g.pat),
+      rows: rows,
+      /* usage 는 여기서 얹지 않는다 — rows 가 네 선택지의 어법을 각각
+         보여주므로(정답 것까지) 같은 줄이 두 번 나온다. */
+      note: answer.word + ' — ' + answer.meanings.join(', ')
     };
   }
 
   /* ── 세션 구성 ────────────────────────────── */
 
   var BUILDERS = {
-    not: makeNot,
+    /* 유의어가 3개 미만이면 전치사 문항으로 대신한다.
+       오답 복습처럼 단어가 정해진 자리에서 그 단어가 조용히 빠지지 않게 한다. */
+    not: function (w, exclude) { return makeNot(w, exclude) || makeGov(w, exclude); },
     match: makeMatch,
-    cloze: makeCloze,
-    colloc: makeColloc
+    cloze: makeCloze
   };
 
   /**
    * 세션 생성
-   * @param modeId  'mcq' | 'not' | 'match' | 'cloze' | 'colloc'
+   * @param modeId  'mcq' | 'not' | 'match' | 'cloze'
    * @param count   문제 수 (match는 보드 수)
    * @param restrictTo 특정 단어 목록으로 제한 (오답 노트 복습용)
    */
   /**
    * 세션 생성
-   * @param modeId  'mcq' | 'not' | 'match' | 'cloze' | 'colloc'
+   * @param modeId  'mcq' | 'not' | 'match' | 'cloze'
    * @param count   문제 수 (match는 보드 수)
    * @param restrictTo 특정 단어 목록으로 제한 (오답 노트 복습용)
    * @param ordered true면 알파벳순 고정 출제 (개별 연습용)
@@ -445,6 +516,30 @@ window.Quiz = (function () {
           return buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
         })
         .filter(Boolean);
+    }
+
+    /* '아닌 것 고르기' 세트 전체 출제 — 유의어 문항 뒤에 전치사 문항을 붙인다.
+     *
+     * 왜 중간에 끼우지 않고 뒤에 붙이나 — 이어풀기 스냅샷이 슬라이드 인덱스로
+     * 저장된다(Store.restoreSession). 중간에 넣으면 이미 푼 사람의 답이 다른
+     * 문제에 붙는다. 뒤에 붙이면 기존 인덱스가 그대로 살아 있다.
+     * 프롬프트 문구가 아예 다르므로("빈칸에 to 가 들어갈 수 없는 것은?")
+     * 섞이지 않고 어법 구간으로 읽힌다. */
+    if (modeId === 'not' && ordered && !(restrictTo && restrictTo.length)) {
+      var synPool = (words || ALL).filter(function (w) {
+        return w.syn && w.syn.length >= 3;
+      }).slice().sort(byAlpha);
+      var out2 = [];
+      synPool.forEach(function (w) {
+        var q = null;
+        for (var a = 0; a < 8 && !q; a++) q = makeNot(w);
+        if (q) out2.push(q);
+      });
+      govPool(words).slice().sort(byAlpha).forEach(function (w) {
+        var q = makeGov(w);
+        if (q) out2.push(q);
+      });
+      return out2;
     }
 
     // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
@@ -561,7 +656,16 @@ window.Quiz = (function () {
     });
 
     return wordObjs.map(function (w, i) {
-      return { word: w.word, meaning: chosen[i], level: w.level };
+      var g = govOf(w);
+      return {
+        word: w.word,
+        /* 카드에 찍히는 글자. 지배 전치사가 있으면 함께 보여준다 —
+           absent 가 아니라 'absent from' 을 외워야 쓸 수 있다.
+           word 는 기록 키(Store.record)이므로 표제어 그대로 두어야 한다. */
+        label: g ? w.word + ' ' + g.prep[0] : w.word,
+        meaning: chosen[i],
+        level: w.level
+      };
     });
   }
 
@@ -768,7 +872,7 @@ window.Quiz = (function () {
       mcq: makeMcq,
       not: makeNot,
       cloze: makeCloze,
-      colloc: makeColloc,
+      gov: makeGov,
       match: makeMatch
     },
     _internals: {

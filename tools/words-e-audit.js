@@ -7,7 +7,6 @@
  * 검사 6종
  *   ① 스키마        필수 필드 / meanings 개수 / pron 한글 / 표제어 중복
  *   ② 예문          {{}} 1개 / f 가 규칙 변화인지 / 문장에 답이 노출됐는지
- *   ③ 연어          pool 유효 / auto 면 오답 후보 확보
  *   ④ 유의어·반의어  개수 / 자기 참조 / syn·ant 교차 / 뜻이 통째로 같은지 /
  *                   모든 선택지가 뜻과 발음을 갖는지
  *   ⑤ 출제 시뮬레이션  quizgen 의 실제 빌더로 5개 모드를 만들어 본다  ★ 핵심
@@ -97,24 +96,6 @@ E.forEach(function (x) {
   });
 });
 
-/* ── ③ 연어 ────────────────────────────────── */
-E.forEach(function (x) {
-  (x.col || []).forEach(function (c) {
-    did('연어');
-    var at = '[' + x.word + ']';
-    if (!c.p || !c.a) return errors.push(at + ' col 에 p 또는 a 가 없음');
-    if ((c.p.match(/\{\{\}\}/g) || []).length !== 1) errors.push(at + ' col 패턴에 {{}} 가 1개여야 한다');
-    if (c.opts) { if (c.opts.length < 4) errors.push(at + ' col.opts 가 4개 미만'); return; }
-    if (c.pool === 'verb' || c.pool === 'prep') {
-      if (!window.COL_POOLS[c.pool]) errors.push(at + ' col.pool 이 COL_POOLS 에 없다: ' + c.pool);
-    } else if (c.pool === 'auto') {
-      if (IN.distractorPool(x).length < 3) errors.push(at + ' col.pool=auto 인데 오답 후보가 3개 미만');
-    } else {
-      errors.push(at + ' col.pool 이 verb/prep/auto 가 아니다: ' + c.pool);
-    }
-  });
-});
-
 /* ── ④ 유의어·반의어 ────────────────────────── */
 E.forEach(function (x) {
   var at = '[' + x.word + ']';
@@ -156,7 +137,7 @@ E.forEach(function (x) {
 });
 
 /* ── ⑤ 출제 시뮬레이션 ──────────────────────── */
-var sim = { mcq: 0, not: 0, cloze: 0, colloc: 0, match: 0 };
+var sim = { mcq: 0, not: 0, cloze: 0, match: 0 };
 var simFail = [];
 E.forEach(function (x) {
   did('출제 시뮬레이션');
@@ -164,7 +145,6 @@ E.forEach(function (x) {
     mcq: true,
     not: !!(x.syn && x.syn.length >= 3),
     cloze: !!(x.ex && x.ex.length),
-    colloc: !!(x.col && x.col.length),
     match: true
   };
   Object.keys(want).forEach(function (m) {
@@ -199,7 +179,6 @@ console.log('출제 시뮬레이션 (quizgen 실제 빌더)');
 console.log('  4지선다    ' + sim.mcq + ' / ' + E.length);
 console.log('  아닌것     ' + sim.not + ' / ' + E.filter(function (x) { return x.syn && x.syn.length >= 3; }).length);
 console.log('  문장빈칸   ' + sim.cloze + ' / ' + E.filter(function (x) { return x.ex && x.ex.length; }).length);
-console.log('  연어       ' + sim.colloc + ' / ' + E.filter(function (x) { return x.col && x.col.length; }).length);
 console.log('  짝맞추기   ' + sim.match + ' / ' + E.length);
 console.log('');
 console.log('syn 을 비워 둔 단어 : ' + E.filter(function (x) { return !x.syn || !x.syn.length; })

@@ -551,6 +551,23 @@ window.Store = (function () {
     return SESS_PREFIX + 'prac_' + modeId + '_' + setName;
   }
 
+  /* ── 없어진 모드의 이어풀기 스냅샷 청소 ──────────
+     '연어 고르기'를 없애면서 vocabQuiz.sess.prac_colloc_* 가 기존 사용자
+     기기에 영구히 남는다. 읽는 코드가 없어 오작동은 안 하지만, 스냅샷 하나가
+     수십~수백 KB라 localStorage 한도를 잡아먹는다. 한 번만 지우면 된다.
+     서버와 무관하다 — 이어풀기 스냅샷은 동기화 대상이 아니다(sync.js 참고). */
+  function dropRetiredSessions() {
+    try {
+      var kill = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(SESS_PREFIX + 'prac_colloc_') === 0) kill.push(k);
+      }
+      kill.forEach(function (k) { localStorage.removeItem(k); });
+    } catch (e) { /* 저장소를 못 읽어도 학습을 막지 않는다 */ }
+  }
+  dropRetiredSessions();
+
   /**
    * 저장된 세션의 진행 상황. 없으면 null.
    * 문제를 다시 만들지 않고도 "몇 개까지 풀었나"를 알 수 있어야 세트 목록에서

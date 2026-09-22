@@ -54,7 +54,7 @@ console.log('');
 console.log('── 모드별 출제 가능 ───────────────────────');
 [['아닌것 (syn 3개 필요)', function (w) { return w.syn && w.syn.length >= 3; }],
  ['문장빈칸 (ex 필요)', function (w) { return w.ex && w.ex.length > 0; }],
- ['연어 (col 필요)', function (w) { return w.col && w.col.length > 0; }]
+ ['어법 (gov 필요)', function (w) { return !!w.gov; }]
 ].forEach(function (p) {
   var n = ALL.filter(p[1]).length;
   console.log(p[0] + ' : ' + n + '개 (' + pct(n, ALL.length) + ')');
@@ -68,7 +68,7 @@ function avg(fn) {
 console.log('뜻 ' + avg(function (w) { return (w.meanings || []).length; }) +
   ' · 유의어 ' + avg(function (w) { return (w.syn || []).length; }) +
   ' · 예문 ' + avg(function (w) { return (w.ex || []).length; }) +
-  ' · 연어 ' + avg(function (w) { return (w.col || []).length; }));
+  ' · 어법 ' + avg(function (w) { return w.gov ? 1 : 0; }));
 console.log('');
 
 console.log('── 단어 객체가 실제로 가진 키 ─────────────');
