@@ -283,10 +283,13 @@
 
   $('btn-signin').addEventListener('click', toggleAccount);
 
-  /* 홈의 계정 버튼 — 로그인 전이면 바로 로그인,
-     이미 로그인했으면 자세한 상태를 볼 수 있게 단어장으로 보낸다. */
+  /* 홈의 계정 버튼 — 로그인 전이면 한 번 눌러 바로 로그인,
+     이미 로그인했으면 설정 화면으로 보낸다.
+     예전에는 단어장으로 보냈는데 계정 칸이 단어 목록(최대 1889행) 아래에
+     있어서, 이메일이 찍힌 버튼을 눌렀는데 단어장이 나오고 로그아웃하려면
+     끝까지 스크롤해야 했다. 버튼에 이메일이 보이면 계정 화면이 나와야 한다. */
   $('home-acct').addEventListener('click', function () {
-    if (window.Sync.status().user) go('words');
+    if (window.Sync.status().user) go('settings');
     else toggleAccount();
   });
 
@@ -363,11 +366,15 @@
     e.target.value = '';   // 같은 파일을 연달아 고를 수 있게 비운다
   });
 
-  // 기록 초기화는 홈에 있을 이유가 없어 단어장 화면 맨 아래로 옮겼다
+  // 기록 초기화는 설정 화면에 둔다 (예전에는 단어장 맨 아래였다)
   $('btn-reset').addEventListener('click', function () {
-    if (confirm('학습 기록(숙련도·오답 노트·연속 학습일)을 모두 삭제할까요?')) {
+    if (confirm('학습 기록(오답 노트·연속 학습일·학습 진척도)을 모두 삭제할까요?')) {
       window.Store.reset();
-      renderWords();
+      /* 지금 보고 있는 화면은 설정이므로 홈 숫자를 다시 그려 둔다.
+         뒤로 나갔을 때 이미 지워진 기록이 남아 보이면 안 지워진 것처럼 느낀다.
+         단어장은 go('words')가 들어갈 때마다 다시 그리므로 여기서 손댈 필요가 없다. */
+      renderHome();
+      renderAccount(window.Sync.status());
     }
   });
 
@@ -925,7 +932,7 @@
 
   function go(name) {
     ['home', 'quiz', 'result', 'wrong', 'words', 'block',
-      'sets', 'chapters', 'mode-sets'].forEach(function (n) {
+      'sets', 'chapters', 'mode-sets', 'settings'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
     if (name !== 'quiz') $('conquer-grid').innerHTML = '';
@@ -933,6 +940,7 @@
     if (name === 'home') renderHome();
     if (name === 'wrong') renderWrong();
     if (name === 'words') renderWords();
+    if (name === 'settings') renderAccount(window.Sync.status());
   }
 
   // 세트 목록
@@ -1356,7 +1364,8 @@
   /* ── 단어장 ───────────────────────────────── */
   function renderWords() {
     renderHeatmap();
-    renderAccount(window.Sync.status());
+    /* 계정 칸은 설정 화면으로 옮겼다. 홈 헤더의 계정 버튼은
+       Sync.onChange 가 갱신하므로 여기서 renderAccount 를 부를 필요가 없다. */
     var f = $('word-filters');
     f.innerHTML = '';
 
