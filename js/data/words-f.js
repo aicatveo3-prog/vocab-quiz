@@ -79,7 +79,27 @@
  *               다. fade 는 자동사다. wither·die away·lose color 로
  *   bogus     → fake 의 유의어로 쓰려 했으나 위 counterfeit 문제와 겹친다
  *
- * 진행 상황: 20 / 210단어 (fable ~ fall off) — 1차, 1챕터 완료.
+ * ── 2차 기록: 승격한 9개의 첫 뜻 ──
+ *   2차는 기존 사전 항목 9개를 표제어로 올렸다. 그중 8개는 기존 뜻을 그대로
+ *   가져와 기존 문제가 한 글자도 바뀌지 않게 했다.
+ *     fallacy·fantasy·fascinate·fatality·fate·fault·favorable — 기존 뜻 유지
+ *     favorable 은 adverse·approving·beneficial·conducive 넷이 참조하는 자리라
+ *     원본 순서('호의적인' 먼저)를 버리고 기존 순서를 지켰다
+ *     fatal  기존 뜻이 표제어 deadly 의 뜻과 글자까지 같았다. 표제어 둘이
+ *            같은 뜻 문자열을 갖지 않도록 ["치명적인","돌이킬 수 없는"] 로
+ *     fare   기존 '요리, 음식' 과 원본 '(교통) 요금' 이 아예 다른 갈래다.
+ *            둘을 모두 담았다(["요금","음식"]). cuisine 의 선택지 설명이
+ *            '요리, 음식' → '요금, 음식' 으로 바뀐다 — 음식 갈래는 그대로
+ *            남으므로 틀린 설명이 되지는 않는다
+ *
+ * ── 2차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   charge       fare 의 유의어로 쓰려 했으나 표제어 뜻이 '청구하다'(동사)다
+ *   acquaintance familiarity 의 유의어로 쓰려 했으나 뜻이 '아는 사람, 지인'
+ *                으로 사람을 가리켜 '익숙함' 문맥에 맞지 않는다
+ *   flaw         fault 의 유의어로 쓰려 했으나 뜻 '결함, 흠' 이 표제어 defect
+ *                의 뜻과 글자까지 같아 한 문제에서 두 선택지가 구별되지 않는다
+ *
+ * 진행 상황: 40 / 210단어 (fable ~ favorably) — 2차, 2챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -175,7 +195,104 @@ window.VOCAB_F = [
     syn:["lag","trail","drop back"] },
 
   { word:"fall off", pron:"폴 오프", pos:"phr", level:"B2", meanings:["줄다","떨어지다"],
-    syn:["decline","decrease","dwindle"] }
+    syn:["decline","decrease","dwindle"] },
+
+  /* ── 2차: fall short of ~ favorably (20개) ─────── */
+
+  { word:"fall short of", pron:"폴 숏 오브", pos:"phr", level:"B2", meanings:["~이 부족하다"],
+    syn:["fail to reach","come up short","not measure up"] },
+
+  { word:"fallacy", pron:"팰러시", pos:"n", level:"C1", meanings:["오류","잘못된 생각"],
+    syn:["misconception","false notion","faulty reasoning"], ant:["truth"],
+    ex:[{ s:"The whole argument rests on a simple {{}} about averages.", f:"fallacy", ko:"그 논증 전체가 평균에 관한 단순한 오류에 기대고 있다." }] },
+
+  { word:"falter", pron:"폴터", pos:"v", level:"C1", meanings:["불안정해지다","머뭇거리다"],
+    syn:["waver","hesitate","lose momentum"], ant:["press on"],
+    ex:[{ s:"His voice began to {{}} as he read the verdict aloud.", f:"falter", ko:"판결문을 소리내어 읽는 동안 그의 목소리가 떨리기 시작했다." }] },
+
+  /* 유의어로 acquaintance 를 쓰려 했으나 표제어 뜻이 '아는 사람, 지인' 이다.
+     '익숙함' 이 아니라 사람을 가리켜 문맥이 어긋난다. */
+  { word:"familiarity", pron:"퍼밀리애러티", pos:"n", level:"B2", meanings:["익숙함","친근함"],
+    syn:["intimacy","closeness","working knowledge"],
+    ex:[{ s:"Years at the bench gave her a deep {{}} with the machine.", f:"familiarity", ko:"작업대에서 보낸 여러 해가 그 기계에 대한 깊은 익숙함을 그녀에게 주었다." }] },
+
+  { word:"famine", pron:"패민", pos:"n", level:"B2", meanings:["굶주림","기아"],
+    syn:["starvation","hunger","food shortage"], ant:["abundance"],
+    ex:[{ s:"Three years of drought brought {{}} to the northern villages.", f:"famine", ko:"3년에 걸친 가뭄이 북부 마을들에 굶주림을 불러왔다." }] },
+
+  { word:"fanatic", pron:"퍼내틱", pos:"n", level:"C1", meanings:["광신자","열광자"],
+    syn:["zealot","extremist","devotee"],
+    ex:[{ s:"Only a true {{}} would camp outside for three nights.", f:"fanatic", ko:"진짜 열광자만이 사흘 밤을 밖에서 야영할 것이다." }] },
+
+  { word:"fantasy", pron:"팬터시", pos:"n", level:"B2", meanings:["환상","공상"],
+    syn:["daydream","illusion","reverie"], ant:["reality"],
+    ex:[{ s:"As a child he escaped into a {{}} of distant planets.", f:"fantasy", ko:"어릴 때 그는 먼 행성들의 환상 속으로 도피했다." }] },
+
+  /* 원본은 '(교통) 요금' 이고 기존 GLOSS 는 '요리, 음식' 이었다. cuisine 의
+     유의어로 쓰이던 자리라 한쪽을 버리면 기존 문제나 원본 중 하나가 어긋난다.
+     두 갈래를 모두 담았다. 유의어는 요금 쪽으로만 모았다 — charge 를 쓰려
+     했으나 표제어 뜻이 '청구하다'(동사)여서 명사 자리에 맞지 않는다. */
+  { word:"fare", pron:"페어", pos:"n", level:"B2", meanings:["요금","음식"],
+    syn:["ticket price","transport cost","passage money"],
+    ex:[{ s:"The bus {{}} went up by twenty cents this month.", f:"fare", ko:"이번 달 버스 요금이 20센트 올랐다." }] },
+
+  { word:"fascinate", pron:"패서네이트", pos:"v", level:"C1", meanings:["매혹하다","흥미를 끌다"],
+    syn:["captivate","intrigue","enthrall"], ant:["bore"],
+    ex:[{ s:"Deep-sea creatures {{}} children more than dinosaurs do.", f:"fascinate", ko:"심해 생물은 공룡보다 더 아이들을 매혹한다." }] },
+
+  { word:"fascinating", pron:"패서네이팅", pos:"adj", level:"B2", meanings:["매력적인","대단히 흥미로운"],
+    syn:["captivating","gripping","absorbing"], ant:["dull"],
+    ex:[{ s:"She gave a {{}} talk on the earliest maps of the coast.", f:"fascinating", ko:"그녀는 그 해안의 최초 지도들에 관해 대단히 흥미로운 강연을 했다." }] },
+
+  /* 원본은 '단식, 금식, 절식; 단식의, 금식의' 로 명사와 형용사가 섞여 있다.
+     명사 쪽으로 정했다. */
+  { word:"fasting", pron:"패스팅", pos:"n", level:"B2", meanings:["단식","금식"],
+    syn:["abstinence","self-denial","going without food"],
+    ex:[{ s:"Many traditions set aside a period of {{}} before a festival.", f:"fasting", ko:"많은 전통이 축제 전에 단식 기간을 따로 둔다." }] },
+
+  /* 기존 GLOSS 는 '치명적인, 죽음을 초래하는' 이었는데 그것은 표제어 deadly 의
+     뜻과 글자까지 똑같다. 표제어 둘이 같은 뜻 문자열을 갖지 않도록 원본의
+     '돌이킬 수 없는' 을 둘째 뜻으로 삼았다. */
+  { word:"fatal", pron:"페이털", pos:"adj", level:"B2", meanings:["치명적인","돌이킬 수 없는"],
+    syn:["deadly","lethal","mortal"], ant:["harmless"],
+    ex:[{ s:"A single careless step proved {{}} on the icy ridge.", f:"fatal", ko:"얼어붙은 능선에서 부주의한 한 걸음이 치명적이었다." }] },
+
+  { word:"fatality", pron:"페이탤러티", pos:"n", level:"B2", meanings:["사망자","치사율"],
+    syn:["death","casualty","loss of life"],
+    ex:[{ s:"Not a single {{}} was reported in the derailment.", f:"fatality", ko:"그 탈선 사고에서 사망자는 한 명도 보고되지 않았다." }] },
+
+  { word:"fate", pron:"페이트", pos:"n", level:"B2", meanings:["운명","숙명"],
+    syn:["destiny","providence","predestination"], ant:["chance"],
+    ex:[{ s:"He accepted his {{}} without a word of complaint.", f:"fate", ko:"그는 불평 한마디 없이 자기 운명을 받아들였다." }] },
+
+  { word:"fatigue", pron:"퍼티그", pos:"n", level:"B2", meanings:["피로"],
+    syn:["exhaustion","weariness","tiredness"], ant:["vigor"],
+    ex:[{ s:"Back-to-back shifts left the crew in deep {{}}.", f:"fatigue", ko:"연달아 이어진 근무가 승무원들을 깊은 피로에 빠뜨렸다." }] },
+
+  { word:"faucet", pron:"포싯", pos:"n", level:"B2", meanings:["수도꼭지"],
+    syn:["tap","spigot","valve"],
+    ex:[{ s:"Water dripped from the kitchen {{}} all night.", f:"faucet", ko:"밤새 부엌 수도꼭지에서 물이 똑똑 떨어졌다." }] },
+
+  /* 유의어에 flaw 를 넣지 않았다. flaw 의 뜻 '결함, 흠' 이 표제어 defect 의
+     뜻과 글자까지 똑같아, 한 문제에서 두 선택지가 구별되지 않는다. */
+  { word:"fault", pron:"폴트", pos:"n", level:"B2", meanings:["결점","잘못"],
+    syn:["defect","shortcoming","blemish"],
+    ex:[{ s:"The report blamed the delay on a design {{}}.", f:"fault", ko:"보고서는 그 지연을 설계 결점 탓으로 돌렸다." }] },
+
+  /* 원본은 '호의; 지지, 선호하다' 로 명사와 동사가 섞여 있다. 명사로 정했다. */
+  { word:"favor", pron:"페이버", pos:"n", level:"B2", meanings:["호의","은혜"],
+    syn:["kindness","goodwill","good turn"],
+    ex:[{ s:"She asked one small {{}} before she left.", f:"favor", ko:"그녀는 떠나기 전에 작은 호의 하나를 부탁했다." }] },
+
+  { word:"favorable", pron:"페이버러블", pos:"adj", level:"B2", meanings:["유리한","호의적인"],
+    syn:["advantageous","approving","beneficial"], ant:["adverse"],
+    ex:[{ s:"The committee returned a {{}} report on the plan.", f:"favorable", ko:"위원회는 그 계획에 유리한 보고서를 냈다." }] },
+
+  /* 전체 adv 가 27개뿐이라 한쪽 레벨로 몰면 오답 후보가 3개 미만이 된다.
+     B2 로 두어 B1·B2·C1 을 후보로 쓸 수 있게 했다. */
+  { word:"favorably", pron:"페이버러블리", pos:"adv", level:"B2", meanings:["호의적으로","유리하게"],
+    syn:["approvingly","positively","in a good light"],
+    ex:[{ s:"The critics spoke {{}} of her first novel.", f:"favorably", ko:"비평가들은 그녀의 첫 소설을 호의적으로 말했다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -226,5 +343,53 @@ Object.assign(window.GLOSS, {
   "turn to":"~에 도움을 청하다",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
-  "vogue":"유행, 인기"
+  "vogue":"유행, 인기",
+
+  /* ── 2차: fall short of ~ favorably (46개) ───────────────── */
+  "absorbing":"몰두하게 하는",
+  "abstinence":"절제, 금욕",
+  "approvingly":"찬성하여",
+  "blemish":"흠, 오점",
+  "bore":"지루하게 하다",
+  "captivating":"매혹적인",
+  "closeness":"가까움, 친밀함",
+  "come up short":"모자라다",
+  "daydream":"백일몽, 공상",
+  "death":"죽음",
+  "devotee":"열렬한 지지자",
+  "enthrall":"마음을 온통 빼앗다",
+  "extremist":"극단주의자",
+  "fail to reach":"이르지 못하다",
+  "false notion":"틀린 관념",
+  "faulty reasoning":"잘못된 추론",
+  "food shortage":"식량 부족",
+  "going without food":"음식을 끊는 것",
+  "good turn":"선행",
+  "goodwill":"호의, 선의",
+  "gripping":"몰입시키는",
+  "in a good light":"좋게",
+  "intimacy":"친밀함",
+  "intrigue":"흥미를 돋우다",
+  "loss of life":"인명 손실",
+  "lose momentum":"기세를 잃다",
+  "not measure up":"기준에 못 미치다",
+  "passage money":"통행 요금",
+  "positively":"긍정적으로",
+  "predestination":"예정된 운명",
+  "press on":"밀고 나아가다",
+  "reverie":"몽상",
+  "self-denial":"자기 절제",
+  "shortcoming":"단점, 결점",
+  "spigot":"주둥이, 꼭지",
+  "starvation":"굶어 죽음, 기아",
+  "tap":"수도꼭지",
+  "ticket price":"승차 요금",
+  "tiredness":"피곤함",
+  "transport cost":"교통비",
+  "valve":"밸브",
+  "vigor":"활력, 기운",
+  "waver":"흔들리다, 주저하다",
+  "weariness":"지침, 피곤",
+  "working knowledge":"실용적 지식",
+  "zealot":"열성분자"
 });
