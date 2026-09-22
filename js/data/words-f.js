@@ -206,7 +206,48 @@
  *   level  flat 의 유의어로 쓰려 했으나 뜻이 '수준, 높이'(명사)다
  *   flutter flap 의 유의어로 쓰려 했으나 7차의 표제어다
  *
- * 진행 상황: 100 / 210단어 (fable ~ flawless) — 5차, 5챕터 완료.
+ * ── 6차 기록 ──
+ *   승격 9개. 이 차수에서 가장 많이 올렸다. 여덟은 기존 뜻을 그대로 가져왔다.
+ *     무변  flee        ["도망치다"]           ← chase(ant)·escape(syn)
+ *           flexibility ["유연성","적응성"]     ← adaptability(syn)
+ *           flexible    ["잘 휘는","유연한"]    ← adaptive·brittle·convertible·
+ *                                              elastic 넷이 참조한다
+ *           float       ["떠다니다","뜨다"]     ← drift(syn)
+ *           flourish    ["번성하다","활짝 피다"] ← blossom(syn)·decay(ant)
+ *           flow        ["흐름","흐르다"]       ← circulate·circulation·
+ *                                              congestion·current 넷이 참조한다
+ *           fluency     ["유창함"]             ← eloquence(syn)
+ *           flush       ["붉어지다","물을 내리다"] ← blush(syn)
+ *     변경  flex "구부리다" → ["관절을 구부리다","움직이다"]
+ *
+ *   flow ★ 기존 사전 뜻이 두 갈래를 함께 담고 있어 그대로 옮기면 네 문제가
+ *     모두 무변이 된다. circulate 는 동사 쪽, circulation·congestion·current 는
+ *     명사 쪽으로 쓰므로 pos 는 참조가 셋인 명사로 두었다
+ *     (firm·fare 와 같은 처리다).
+ *
+ *   flex 기존 뜻 '구부리다' 는 표제어 bend 의 첫 뜻과 글자까지 같았다.
+ *     flex 는 특히 관절·근육을 구부리는 것이라 원본에 맞춰 좁혔다.
+ *     bend 의 유의어 자리에서도 여전히 옳다.
+ *
+ * ── 6차 계열·레벨 배치 ──
+ *   flick·flicker 는 앞 다섯 글자가 같다. separateClashes 는 여섯 글자를 보므로
+ *   갈라 주지 않고 4지선다에는 애초에 그 장치가 없다. 오타처럼 보이지 않게
+ *   레벨을 두 단계 벌렸다(B1 · C1).
+ *   flex(v)·flexibility(n)·flexible(adj) 은 품사가 달라 저절로 갈라진다.
+ *
+ * ── 6차에서 원본을 고친 것 ──
+ *   fluffy  '보풀의, 솜털의' → 솜털의, 푹신한
+ *           '보풀의' 는 옷감에 이는 보풀을 가리켜 fluffy 의 뜻이 아니다
+ *   flick·float·fluid 는 첫 뜻에 있던 괄호 설명을 뺐다
+ *
+ * ── 6차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   waver   flicker·fluctuate 의 유의어로 쓰려 했으나 2차에 넣은 뜻이
+ *           '흔들리다, 주저하다' 로 '주저하다' 가 문맥에 섞인다
+ *   flutter flit·flicker 의 유의어로 쓰려 했으나 7차의 표제어다
+ *   current flow 의 유의어로 쓰려 했으나 표제어 뜻이 '흐름, 현재의' 로
+ *           '현재의' 가 섞인다 → stream·steady movement·running water 로
+ *
+ * 진행 상황: 120 / 210단어 (fable ~ flush) — 6차, 6챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -697,7 +738,103 @@ window.VOCAB_F = [
 
   { word:"flawless", pron:"플로리스", pos:"adj", level:"C1", meanings:["결점이 없는","완벽한"],
     syn:["perfect","impeccable","faultless"], ant:["defective"],
-    ex:[{ s:"Her delivery of the long speech was {{}}.", f:"flawless", ko:"그 긴 연설에 대한 그녀의 전달은 결점이 없었다." }] }
+    ex:[{ s:"Her delivery of the long speech was {{}}.", f:"flawless", ko:"그 긴 연설에 대한 그녀의 전달은 결점이 없었다." }] },
+
+  /* ── 6차: flee ~ flush (20개) ─────────────────── */
+
+  { word:"flee", pron:"플리", pos:"v", level:"B1", meanings:["도망치다"],
+    syn:["run away","escape","take flight"], ant:["chase"],
+    ex:[{ s:"Hundreds began to {{}} the valley as the water rose.", f:"flee", ko:"물이 오르자 수백 명이 골짜기를 떠나 도망치기 시작했다." }] },
+
+  { word:"fleet", pron:"플리트", pos:"n", level:"B2", meanings:["함대"],
+    syn:["armada","naval force","group of ships"],
+    ex:[{ s:"The whole {{}} sailed at first light.", f:"fleet", ko:"함대 전체가 새벽 첫 빛에 출항했다." }] },
+
+  /* 기존 사전 뜻은 '구부리다' 였는데 그것은 표제어 bend 의 첫 뜻과 글자까지
+     같다. flex 는 특히 관절·근육을 구부리는 것이라 원본에 맞춰 좁혔다.
+     bend 의 유의어 자리에서도 여전히 옳다. */
+  { word:"flex", pron:"플렉스", pos:"v", level:"B2", meanings:["관절을 구부리다","움직이다"],
+    syn:["bend","crook","work the joint"],
+    ex:[{ s:"Patients learn to {{}} the knee a little more each day.", f:"flex", ko:"환자들은 날마다 무릎을 조금씩 더 구부리는 법을 배운다." }] },
+
+  { word:"flexibility", pron:"플렉서빌러티", pos:"n", level:"C1", meanings:["유연성","적응성"],
+    syn:["suppleness","adaptability","pliancy"],
+    ex:[{ s:"Daily stretching restored some {{}} to his back.", f:"flexibility", ko:"매일의 스트레칭이 그의 등에 어느 정도 유연성을 되돌려 주었다." }] },
+
+  { word:"flexible", pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
+    syn:["pliable","bendable","adaptable"], ant:["rigid"],
+    ex:[{ s:"Copper pipe is {{}} enough to shape by hand.", f:"flexible", ko:"구리 관은 손으로 모양을 낼 만큼 잘 휜다." }] },
+
+  /* ── flick 과 flicker ───────────────────────────
+     앞 다섯 글자가 같다. separateClashes 는 여섯 글자를 보므로 갈라 주지 않고
+     4지선다에는 애초에 그 장치가 없다. 오타처럼 보이지 않게 레벨을 두 단계
+     벌렸다(B1 · C1). 원본 첫 뜻에 있던 괄호 설명은 뺐다. */
+  { word:"flick", pron:"플릭", pos:"v", level:"B1", meanings:["튀기다","가볍게 치다"],
+    syn:["snap","jerk","give a quick tap"],
+    ex:[{ s:"He would {{}} the switch twice out of old habit.", f:"flick", ko:"그는 오래된 습관으로 스위치를 두 번 튀기곤 했다." }] },
+
+  { word:"flicker", pron:"플리커", pos:"v", level:"C1", meanings:["깜빡거리다"],
+    syn:["blink","glimmer","go on and off"],
+    ex:[{ s:"The old bulb began to {{}} just before it died.", f:"flicker", ko:"낡은 전구가 꺼지기 직전에 깜빡거리기 시작했다." }] },
+
+  { word:"flip", pron:"플립", pos:"v", level:"B2", meanings:["뒤집다"],
+    syn:["turn over","toss","invert"],
+    ex:[{ s:"Wait for bubbles to form before you {{}} the pancake.", f:"flip", ko:"팬케이크를 뒤집기 전에 기포가 생길 때까지 기다려라." }] },
+
+  /* 원본 목록에는 '동성애의, 동성애자인' 으로 적혀 있었다. 사전의 폐어적
+     속어 뜻이 표제 뜻으로 올라온 것이라 0차에서 바로잡았다. */
+  { word:"flit", pron:"플릿", pos:"v", level:"C1", meanings:["훌쩍 날다","스치듯 지나가다"],
+    syn:["dart","skim by","move lightly"],
+    ex:[{ s:"Small birds {{}} between the hedges all morning.", f:"flit", ko:"작은 새들이 아침 내내 산울타리 사이를 훌쩍 날아다닌다." }] },
+
+  { word:"float", pron:"플로트", pos:"v", level:"B1", meanings:["떠다니다","뜨다"],
+    syn:["drift","bob","stay on the surface"],
+    ex:[{ s:"Cork will {{}} even in very rough water.", f:"float", ko:"코르크는 아주 거친 물에서도 떠 있다." }] },
+
+  { word:"flock", pron:"플락", pos:"n", level:"B1", meanings:["떼"],
+    syn:["herd","swarm","group of birds"],
+    ex:[{ s:"A {{}} of geese crossed the field at dusk.", f:"flock", ko:"거위 떼가 해질녘에 밭을 건너갔다." }] },
+
+  { word:"flood into", pron:"플러드 인투", pos:"phr", level:"B2", meanings:["몰려들다"],
+    syn:["pour into","stream into","rush into"] },
+
+  { word:"flourish", pron:"플러리시", pos:"v", level:"B2", meanings:["번성하다","활짝 피다"],
+    syn:["thrive","prosper","do well"], ant:["decay"],
+    ex:[{ s:"Olive trees {{}} on this dry hillside.", f:"flourish", ko:"올리브 나무는 이 건조한 산비탈에서 번성한다." }] },
+
+  /* ★ 네 곳이 참조하는 낱말이다 — circulate 는 동사 쪽, circulation·
+     congestion·current 는 명사 쪽으로 쓴다. 기존 사전 뜻이 '흐름, 흐르다' 로
+     두 갈래를 함께 담고 있었고, 그대로 옮기면 네 문제가 모두 무변이 된다.
+     pos 는 하나만 고를 수 있어 참조가 셋인 명사로 두었다. */
+  { word:"flow", pron:"플로", pos:"n", level:"B1", meanings:["흐름","흐르다"],
+    syn:["stream","steady movement","running water"],
+    ex:[{ s:"Engineers measured the {{}} of the river every week.", f:"flow", ko:"기술자들은 매주 그 강의 흐름을 측정했다." }] },
+
+  { word:"fluctuate", pron:"플럭추에이트", pos:"v", level:"C1", meanings:["변동하다","오르내리다"],
+    syn:["vary","rise and fall","swing up and down"],
+    ex:[{ s:"Prices {{}} sharply during the dry season.", f:"fluctuate", ko:"건기에는 물가가 크게 변동한다." }] },
+
+  { word:"fluency", pron:"플루언시", pos:"n", level:"C1", meanings:["유창함"],
+    syn:["articulacy","command of a language","smooth delivery"],
+    ex:[{ s:"Two years abroad gave her real {{}}.", f:"fluency", ko:"외국에서 보낸 2년이 그녀에게 진짜 유창함을 주었다." }] },
+
+  /* 원본은 '보풀의, 솜털의' 인데 '보풀의' 는 옷감에 이는 보풀을 가리켜
+     fluffy 의 뜻이 아니다. '솜털의, 푹신한' 으로 적었다. */
+  { word:"fluffy", pron:"플러피", pos:"adj", level:"B2", meanings:["솜털의","푹신한"],
+    syn:["downy","soft and light","fleecy"],
+    ex:[{ s:"The chicks were still small and {{}}.", f:"fluffy", ko:"병아리들은 아직 작고 솜털이 보송했다." }] },
+
+  { word:"fluid", pron:"플루이드", pos:"n", level:"C1", meanings:["체액","유동체"],
+    syn:["liquid","bodily liquid","flowing substance"],
+    ex:[{ s:"The doctor drained the {{}} from his swollen knee.", f:"fluid", ko:"의사가 부어오른 그의 무릎에서 체액을 빼냈다." }] },
+
+  { word:"flunk", pron:"플렁크", pos:"v", level:"C1", meanings:["낙제하다"],
+    syn:["fail","not pass","get a failing grade"],
+    ex:[{ s:"He was afraid he would {{}} the final examination.", f:"flunk", ko:"그는 기말시험에서 낙제할까 두려웠다." }] },
+
+  { word:"flush", pron:"플러시", pos:"v", level:"B2", meanings:["붉어지다","물을 내리다"],
+    syn:["redden","blush","go red"],
+    ex:[{ s:"Her cheeks began to {{}} in the cold wind.", f:"flush", ko:"찬 바람에 그녀의 뺨이 붉어지기 시작했다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -953,5 +1090,58 @@ Object.assign(window.GLOSS, {
   "top-notch":"최고 수준의",
   "torch":"손전등",
   "unyielding":"굽히지 않는",
-  "wave up and down":"위아래로 흔들다"
+  "wave up and down":"위아래로 흔들다",
+
+  /* ── 6차: flee ~ flush (48개) ─────────────────────
+     adaptable·rigid·swarm·stream·vary·articulacy·fail·redden 은 이미 GLOSS 에
+     있어서 여기에 없다. escape·chase·bend·adaptability·drift·decay·blush 는
+     표제어다. */
+  "armada":"함대",
+  "bendable":"휘어지는",
+  "blink":"깜박이다",
+  "bob":"물에서 위아래로 움직이다",
+  "bodily liquid":"몸속의 액체",
+  "command of a language":"언어 구사력",
+  "crook":"굽히다",
+  "dart":"쏜살같이 움직이다",
+  "do well":"잘 되어 가다",
+  "downy":"솜털로 덮인",
+  "fleecy":"양털 같은",
+  "flowing substance":"흐르는 물질",
+  "get a failing grade":"낙제 점수를 받다",
+  "give a quick tap":"가볍게 한 번 치다",
+  "glimmer":"희미하게 반짝이다",
+  "go on and off":"켜졌다 꺼졌다 하다",
+  "go red":"빨갛게 되다",
+  "group of birds":"새 무리",
+  "group of ships":"배의 무리",
+  "herd":"가축의 떼",
+  "invert":"거꾸로 하다",
+  "jerk":"홱 움직이다",
+  "liquid":"액체",
+  "move lightly":"가볍게 움직이다",
+  "naval force":"해군 병력",
+  "not pass":"통과하지 못하다",
+  "pliable":"잘 휘어지는",
+  "pliancy":"휘기 쉬움",
+  "pour into":"쏟아져 들어가다",
+  "prosper":"번창하다",
+  "rise and fall":"오르내리다",
+  "run away":"달아나 버리다",
+  "running water":"흐르는 물",
+  "rush into":"급히 들어가다",
+  "skim by":"스쳐 지나가다",
+  "smooth delivery":"막힘 없는 말솜씨",
+  "snap":"딱 튀기다",
+  "soft and light":"부드럽고 가벼운",
+  "stay on the surface":"수면에 머물다",
+  "steady movement":"꾸준한 움직임",
+  "stream into":"줄지어 들어가다",
+  "suppleness":"나긋함",
+  "swing up and down":"위아래로 흔들리다",
+  "take flight":"달아나다",
+  "thrive":"잘 자라다",
+  "toss":"던져 올리다",
+  "turn over":"돌려 뒤집다",
+  "work the joint":"관절을 움직이다"
 });

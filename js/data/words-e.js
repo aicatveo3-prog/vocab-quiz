@@ -2127,7 +2127,6 @@ Object.assign(window.GLOSS, {
   "egg-shaped":"달걀 모양의",
   "entitled":"권리가 있는",
   "expressiveness":"표현력이 풍부함",
-  "fluency":"유창함",
   "fluent":"유창한",
   "go aboard":"배에 오르다",
   "hard to find":"찾기 어려운",
