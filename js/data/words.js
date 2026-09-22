@@ -1683,7 +1683,6 @@ window.GLOSS = {
   "familiar":"익숙한",
   "foreign":"외국의",
   "graceful":"우아한",
-  "gradual":"점진적인",
   "gradually":"점차적으로",
   "ground":"지상의",
   "grounded":"지상에 있는, 이륙하지 못한",

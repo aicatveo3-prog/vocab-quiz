@@ -329,7 +329,106 @@ window.VOCAB_G = [
      유의어로 쓰는 기존 문제는 없어 갈래를 자유롭게 고를 수 있었다. */
   { word:"glow", pron:"글로우", pos:"v", level:"B2", meanings:["은은하게 빛나다","상기되다"],
     syn:["shine","radiate","gleam"],
-    ex:[{ s:"Embers continued to {{}} long after the fire died down.", f:"glow", ko:"불이 잦아든 뒤에도 잉걸불이 계속 은은하게 빛났다." }] }
+    ex:[{ s:"Embers continued to {{}} long after the fire died down.", f:"glow", ko:"불이 잦아든 뒤에도 잉걸불이 계속 은은하게 빛났다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────── */
+
+  /* 원본은 '(접착제로) 붙이다; 접착제, 풀' 이다. 동사 쪽으로 모았다 —
+     첫 뜻에 괄호를 두지 않는다는 규약 때문이기도 하다. */
+  { word:"glue", pron:"글루", pos:"v", level:"B1", meanings:["붙이다","접착하다"],
+    syn:["paste","stick","bond"],
+    ex:[{ s:"He tried to {{}} the broken handle back onto the cup.", f:"glue", ko:"그는 깨진 손잡이를 컵에 다시 붙이려 했다." }] },
+
+  /* 승격 ① — GLOSS '뒤쫓다, 추구하다' 와 같은 갈래다. 참조하는 기존 문제는 없다. */
+  { word:"go after", pron:"고 애프터", pos:"phr", level:"B1", meanings:["뒤쫓다","추구하다"],
+    syn:["pursue","chase","seek"] },
+
+  /* 원본 첫 뜻 '동의하다' 는 기존 표제어 accede 와 같다. '함께 가다' 를 앞에 두어 갈랐다. */
+  { word:"go along", pron:"고 얼롱", pos:"phr", level:"B1", meanings:["함께 가다","동의하다"],
+    syn:["accompany","concur","cooperate"] },
+
+  /* 원본은 go broke 와 go out of business 가 둘 다 '파산하다' 였다. 실제 영어에서도
+     쓰임이 다르다 — go broke 는 개인이 돈이 바닥나는 것, go out of business 는
+     사업체가 문을 닫는 것이다. 그 차이로 갈랐고 서로를 유의어로 등록했다. */
+  { word:"go broke", pron:"고 브로크", pos:"phr", level:"B2", meanings:["빈털터리가 되다","돈이 바닥나다"],
+    syn:["go bankrupt","go under","go out of business"] },
+
+  { word:"go for", pron:"고 포", pos:"phr", level:"B1", meanings:["~을 좋아하다","찬성하다"],
+    syn:["favor","prefer","opt for"] },
+
+  { word:"go out of business", pron:"고 아웃 오브 비즈니스", pos:"phr", level:"B2", meanings:["폐업하다","문을 닫다"],
+    syn:["go bankrupt","shut down","go broke"] },
+
+  /* go over 와 go through 가 원본에서 둘 다 '조사하다' 를 갖는다.
+     go over 는 검토 쪽, go through 는 통과 쪽으로 첫 뜻을 갈랐다. */
+  { word:"go over", pron:"고 오버", pos:"phr", level:"B1", meanings:["검토하다","훑어보다"],
+    syn:["review","examine","inspect"] },
+
+  { word:"go through", pron:"고 스루", pos:"phr", level:"B1", meanings:["통과하다","살펴보다"],
+    syn:["pass","undergo","sift through"] },
+
+  { word:"golden rule", pron:"골든 룰", pos:"phr", level:"B2", meanings:["황금률","철칙"],
+    syn:["guiding principle","maxim","precept"] },
+
+  { word:"gorgeous", pron:"고저스", pos:"adj", level:"B2", meanings:["화려한","호화스러운"],
+    syn:["splendid","dazzling","resplendent"], ant:["drab"],
+    ex:[{ s:"The hall looked absolutely {{}} once the lights came on.", f:"gorgeous", ko:"불이 켜지자 그 홀은 정말 화려해 보였다." }] },
+
+  /* 원본은 '(음식이) 고급인, 값비싼, 미식가' 로 품사가 갈린다. 첫 뜻에 괄호를
+     두지 않는 규약도 있어 명사(미식가) 쪽으로 모았다. */
+  { word:"gourmet", pron:"고메이", pos:"n", level:"C1", meanings:["미식가"],
+    syn:["epicure","connoisseur","food lover"],
+    ex:[{ s:"Only a true {{}} could name every spice in the dish.", f:"gourmet", ko:"진정한 미식가만이 그 요리의 모든 향신료를 짚어낼 수 있었다." }] },
+
+  { word:"govern", pron:"거번", pos:"v", level:"B2", meanings:["다스리다","지배하다"],
+    syn:["rule","administer","preside over"],
+    ex:[{ s:"A council of elders used to {{}} the village.", f:"govern", ko:"원로 회의가 그 마을을 다스리곤 했다." }] },
+
+  /* grab·grip·grasp 세 단어가 원본에서 '움켜잡다' 계열로 뭉친다.
+     grab 은 낚아채는 순간성, grip 은 꽉 쥐고 놓지 않는 힘, grasp 는 이해로
+     갈랐다. grab 은 순간성 쪽이다. */
+  { word:"grab", pron:"그랩", pos:"v", level:"B1", meanings:["잡아채다","움켜쥐다"],
+    syn:["snatch","seize","clutch"],
+    ex:[{ s:"She had to {{}} the railing to keep from falling.", f:"grab", ko:"그녀는 넘어지지 않으려고 난간을 붙잡아야 했다." }] },
+
+  /* 승격 ② — GLOSS 는 '우아한; 친절한' 이고 원본은 '상냥한, 우아한' 이다.
+     원본의 '상냥한' 은 기존 표제어 amiable 과 같아 복수 정답이 되므로,
+     사전 쪽 뜻을 그대로 써서 courteous 문제도 지키고 충돌도 피했다. */
+  { word:"gracious", pron:"그레이셔스", pos:"adj", level:"B2", meanings:["우아한","친절한"],
+    syn:["courteous","cordial","genial"], ant:["rude"],
+    ex:[{ s:"Their host was unfailingly {{}} to every guest.", f:"gracious", ko:"그 주인은 모든 손님에게 한결같이 친절했다." }] },
+
+  /* 승격 ② — GLOSS '등급, 단계' 를 글자까지 지켰다. degree 의 유의어로 쓰이는
+     쪽이 명사라, 원본의 동사 뜻('등급을 나누다')을 쓰면 그 문제가 어긋난다. */
+  { word:"grade", pron:"그레이드", pos:"n", level:"B1", meanings:["등급","단계"],
+    syn:["rank","tier","degree"],
+    ex:[{ s:"Eggs are sorted by size and {{}} before packing.", f:"grade", ko:"달걀은 포장 전에 크기와 등급으로 분류된다." }] },
+
+  /* 승격 ① — GLOSS '점진적인' 을 첫 자리에 지켰다. abrupt 의 반의어로 쓰인다. */
+  { word:"gradual", pron:"그래주얼", pos:"adj", level:"B2", meanings:["점진적인","단계적인"],
+    syn:["incremental","steady","progressive"], ant:["abrupt"],
+    ex:[{ s:"Recovery was slow but {{}} over several months.", f:"gradual", ko:"회복은 느렸지만 여러 달에 걸쳐 점진적이었다." }] },
+
+  /* gradual 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 오지 않는다. */
+  { word:"graduate", pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
+    syn:["finish school","complete studies","earn a degree"],
+    ex:[{ s:"She hopes to {{}} with honours next spring.", f:"graduate", ko:"그녀는 내년 봄에 우등으로 졸업하기를 바란다." }] },
+
+  { word:"grain", pron:"그레인", pos:"n", level:"B1", meanings:["곡물","곡류"],
+    syn:["cereal","corn","kernel"],
+    ex:[{ s:"The region exports more {{}} than any other province.", f:"grain", ko:"그 지역은 어느 주보다 많은 곡물을 수출한다." }] },
+
+  /* 승격 ① — GLOSS '웅장한, 원대한' 과 같은 갈래다. 참조하는 기존 문제는 없어
+     원본의 '웅장한, 장엄한' 을 그대로 썼다. */
+  { word:"grand", pron:"그랜드", pos:"adj", level:"B1", meanings:["웅장한","장엄한"],
+    syn:["majestic","imposing","stately"], ant:["modest"],
+    ex:[{ s:"Guests entered through a {{}} marble hall.", f:"grand", ko:"손님들은 웅장한 대리석 홀을 지나 들어왔다." }] },
+
+  /* 승격 ② — GLOSS '수여하다; 보조금' 이다. bestow·concede 두 문제가 동사 쪽을
+     쓰므로 '수여하다' 를 첫 자리에 남기고 원본의 명사 뜻을 둘째로 담았다. */
+  { word:"grant", pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
+    syn:["bestow","award","confer"], ant:["deny"],
+    ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 재대입(=)이 아니라 Object.assign 이다.
@@ -349,65 +448,95 @@ Object.assign(window.GLOSS, {
   "bring forth":"낳다, 생산하다",
   "car park":"주차장",
   "carport":"간이 차고",
+  "cereal":"곡물, 시리얼",
   "charitable giving":"자선 기부",
+  "clutch":"꽉 붙잡다",
+  "complete studies":"학업을 마치다",
   "congregation":"신도들, 모인 사람들",
+  "connoisseur":"감식가",
+  "corn":"곡물, 낟알",
   "crease":"주름이 지다",
   "crux":"핵심, 관건",
   "culture clash":"문화 충돌",
   "dynamo":"발전기",
+  "earn a degree":"학위를 받다",
   "embark on":"~에 착수하다",
   "engineered":"인위적으로 조작된",
+  "epicure":"식도락가",
   "escape blame":"책임을 면하다",
   "essence":"본질, 요체",
   "exalt":"칭송하다, 높이다",
   "extol":"극찬하다",
   "exude":"뿜어내다",
+  "finish school":"학교를 마치다",
+  "food lover":"음식을 즐기는 사람",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",
   "get on with":"~와 사이가 좋다",
+  "go bankrupt":"파산하다",
+  "go under":"사업이 망하다",
   "grow weary of":"~에 넌더리가 나다",
+  "guiding principle":"지침이 되는 원칙",
   "hit it off with":"~와 금방 친해지다",
   "ice field":"빙원",
   "ice sheet":"대륙 빙상",
   "icecap":"만년설",
   "impede":"지체시키다",
+  "imposing":"위풍당당한",
   "in view of":"~에 비추어",
+  "incremental":"조금씩 늘어나는",
   "inherited":"물려받은",
+  "kernel":"알맹이",
   "landscape":"풍경, 지형",
   "liberal":"후한, 너그러운",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
+  "majestic":"장엄한",
   "make way for":"~에 길을 내주다",
+  "maxim":"격언",
   "microbe":"미생물",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
   "nonspecific":"특정하지 않은",
+  "opt for":"~을 택하다",
   "outfit":"장비 한 벌",
   "pant":"숨을 헐떡이다",
   "parking space":"주차 공간",
+  "pass":"지나가다, 통과되다",
+  "paste":"풀로 붙이다",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
   "peek":"살짝 들여다보다",
   "power unit":"동력 장치",
+  "precept":"계율, 가르침",
+  "prefer":"더 좋아하다",
+  "preside over":"~을 주재하다",
+  "progressive":"점차 진행되는",
   "puff":"숨을 가쁘게 쉬다",
   "pull through":"이겨 내다",
   "put across":"뜻을 전하다",
   "radiate":"발산하다, 내비치다",
   "regional":"지역의",
+  "resplendent":"눈부시게 화려한",
   "run wild":"제멋대로 날뛰다",
   "seeing that":"~인 것을 보면",
   "shimmer":"희미하게 반짝이다",
+  "shut down":"문을 닫다",
+  "sift through":"자세히 살펴보다",
   "sighting":"목격",
+  "snatch":"낚아채다",
   "somber":"침침한, 어두운",
   "sparkle":"불꽃처럼 반짝이다",
   "spatial":"공간의",
   "spiral":"악화로 치닫다",
   "star system":"항성계",
+  "stick":"달라붙다",
   "stingy":"인색한",
   "style":"양식, 형식",
   "succumb to":"~에 무너지다",
   "terrain":"지형, 지대",
+  "tier":"층, 단",
   "topographic":"지형의",
   "topography":"지형, 지세",
   "transgenic":"유전자 이식된",

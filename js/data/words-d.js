@@ -1520,7 +1520,6 @@ Object.assign(window.GLOSS, {
   "final":"최종적인, 마지막의",
   "flout":"무시하다, 어기다",
   "frenzied":"광분한, 격앙된",
-  "grade":"등급, 단계",
   "hand over":"건네주다, 인계하다",
   "holdup":"지연, 정체",
   "hydrate":"수분을 공급하다",
