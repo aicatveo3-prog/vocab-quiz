@@ -924,9 +924,7 @@ Object.assign(window.PRON, {
   "funds": "펀드스",
   "funnel": "퍼널",
   "funnies": "퍼니스",
-  "further": "퍼더",
   "furthermore": "퍼더모",
-  "fuzzy": "퍼지",
   "gadget": "개짓",
   "gain": "게인",
   "gain from": "게인 프럼",
@@ -4435,4 +4433,33 @@ Object.assign(window.PRON, {
   "usable": "유저블",
   "vapor": "베이퍼",
   "worthwhile": "워스와일"
+});
+
+
+Object.assign(window.PRON, {
+  /* ── F 11차: furious ~ fuzzy (21개, F 세트 마지막) ─────────────────
+     승격 — furnish·further·fuzzy 는 words-f.js 의 표제어가 되었으므로 위쪽
+     배치에서 지웠다.
+     ⚠️ provide A with B 처럼 대문자가 든 낱말도 키는 소문자로 적는다. */
+  "blending": "블렌딩",
+  "covered in fur": "커버드 인 퍼",
+  "deep groove": "딥 그루브",
+  "enraged": "인레이지드",
+  "equip": "이퀴프",
+  "fit out": "핏 아웃",
+  "fuzzy-coated": "퍼지 코티드",
+  "give a b": "기브 에이 비",
+  "in vain": "인 베인",
+  "irate": "아이레이트",
+  "merging": "머징",
+  "more": "모어",
+  "needless bother": "니들리스 바더",
+  "plow line": "플라우 라인",
+  "pointless": "포인트리스",
+  "provide a with b": "프러바이드 에이 위드 비",
+  "supply a with b": "서플라이 에이 위드 비",
+  "to-do": "투 두",
+  "useless": "유스리스",
+  "very angry": "베리 앵그리",
+  "wrinkle": "링클"
 });
