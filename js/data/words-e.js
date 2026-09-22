@@ -109,6 +109,14 @@
  *   expect      '기대하다, 예상하다' → '기대하다, 당연히 여기다' (같은 이유)
  *   explicit    '분명한, 명쾌한' → 기존 GLOSS 의 '명시적인' 을 앞으로 (같은 이유)
  *   expel       원본 '내쫓다, 방출하다' 대신 기존 GLOSS "추방하다, 퇴학시키다" 를 썼다
+ *   exploit     '착취하다, (부당하게) 이용하다' → 괄호를 풀고 동사로 정리
+ *   explosive   '폭발성의, 폭발하기 쉬운; 폭발물, 폭약' → 형용사 한 뜻으로
+ *   export      '수출(품); 수출하다, 내보내다' → 괄호를 풀고 동사로
+ *   explore     '탐험하다, 탐사하다; 탐구하다' → 앞 둘이 같은 말이라 둘로
+ *   exquisite   '정교한; 매우 아름다운, 고귀한' → '매우 아름다운' 을 앞으로
+ *   extend      원본 '확대하다, 확장하다' 대신 기존 GLOSS "늘리다, 연장하다" 를 썼다
+ *               (아래 12차 기록의 ★ 참고)
+ *   extinct     '멸종된, 사라진, 사화산의' → 둘로
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -126,7 +134,7 @@
  *   9차  20개  evaporate ~ excess          ← 완료
  *  10차  20개  excessive ~ exhibition      ← 완료
  *  11차  20개  exhilarating ~ explicit     ← 완료
- *  12차  20개  explicitly ~ extinct
+ *  12차  20개  explicitly ~ extinct        ← 완료
  *  13차  10개  extinction ~ eyesore
  *
  * ── 1차 기록 ─────────────────────────────────
@@ -430,7 +438,53 @@
  *
  * PRON 에 뒤늦게 채운 2개 — growth, swell. 10차의 moderate 와 같다.
  *
- * ── 손대지 않고 남겨 둔 기존 문제 4개 ──────────
+ * ── 12차 기록 ────────────────────────────────
+ * 사전에 이미 있던 낱말이 6개. explosion 은 8차에서 eruption 의 유의어로 내가 넣은
+ * 것이다 — 앞 차수 항목이 표제어로 올라온 여섯 번째 사례다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 6개 (GLOSS·PRON 양쪽 12항목)
+ *   gloss.js   exploit, extensive, extent
+ *   words-c.js exposure, extend
+ *   words-e.js explosion(8차)   ← 내가 넣은 것
+ *   pron.js    위 6개 전부
+ *
+ * ★ 뜻이 겹칠 자리를 미리 뒤져서 extend 를 구했다
+ *   조사 스크립트에 '이 뜻 조각을 쓰는 기존 표제어' 를 뽑는 칸을 새로 넣었다.
+ *   '확대' 로 뒤지니 amplify·enlarge·escalate·expand·expansion 다섯이 나왔다.
+ *   원본대로 extend 를 '확대하다, 확장하다' 로 적으면 표제어 enlarge(6차, B2)의 뜻과
+ *   글자까지 같아진다 — 빈자리가 없다. 기존 GLOSS "늘리다, 연장하다" 를 그대로 쓰니
+ *   '연장' 쪽으로 갈라지고 표제어 curtail(반의어)도 함께 지켜졌다.
+ *   ⇒ 11차까지는 베이스라인 렌더로 '이미 쓰는 낱말' 을 확인했는데, 뜻 조각으로
+ *      거꾸로 뒤지면 '앞으로 겹칠 자리' 까지 미리 보인다. 13차에도 쓴다.
+ *
+ *   같은 방법으로 미리 피한 것이 셋 더 있다
+ *     extension  '연장, 확장' — expansion(B2 "팽창, 확대")과 '확대' 가 겹치지 않게
+ *     extent     레벨을 C1 로 — degree(B1 "정도, 학위")와 '정도' 가 겹친다
+ *     exquisite  '매우 아름다운' 을 앞으로 — elaborate(C1 "공들인, 정교한")와 겹친다
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것 — 이번엔 다섯 낱말 모두 기존 GLOSS 를 썼다
+ *   explosion  "폭발, 파열"      — 표제어 eruption 이 유의어로 쓴다
+ *   exposure   "노출, 폭로"      — 표제어 camouflage 의 반의어다
+ *   extend     "늘리다, 연장하다" — 표제어 curtail 의 반의어다 (위 ★ 참고)
+ *   extensive  "광범위한, 방대한" — 표제어 comprehensive 가 유의어로 쓴다
+ *   extent     "범위, 정도"      — breadth·degree·dimension 셋이 유의어로 쓴다
+ *
+ * syn 을 비운 1개 — externalize. 심리학 용어라 바꿔 쓸 한 낱말이 없다.
+ *
+ * 유의어에서 걸러낸 것
+ *   exploit 의 abuse   → 표제어인데 품사가 명사("학대, 남용")  ✗ → use unfairly
+ *   exploit 의 misuse  → "남용, 오용"(명사)                   ✗ → squeeze profit from
+ *   (둘 다 명사 표제어 exploitation 쪽에서는 그대로 쓸 수 있었다)
+ *
+ * 발음은 기존 표기에서 찾아 맞췄다
+ *   expose     be exposed to("비 익스포즈드 투")에 맞췄다
+ *   extension  by extension("바이 익스텐션")에 맞췄다. 이 구는 pos 가 phr 이라
+ *              명사 표제어 extension 과 오답 후보로 겹치지 않는다
+ *   search     researcher("리서처"),  broad  broaden("브로든")에 맞췄다
+ *
+ * PRON 에 뒤늦게 채운 2개 — search, survey. 11차의 growth 들과 같다.
+ *
+ * ── 손대지 않고 남겨 둔 기존 문제 5개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
  * 출제가 변하므로 따로 판단이 필요하다. 셋 다 '동사·명사 표제어에 품사가 다른
  * 유의어가 붙어 있다' 는 같은 꼴이다.
@@ -445,6 +499,13 @@
  *   companion(동반자 — 명사) 의 유의어 escort → 동사 뜻("호위하다")이 뜬다.
  *        escort 는 표제어 accompany(동사)도 유의어로 쓰므로 동사로 둘 수밖에 없었다.
  *        counterpart 와 똑같은 꼴이다. 8차 전에도 같은 동사 뜻이 떴다   (8차에 발견)
+ *   adventure(모험 — 명사) 의 유의어 exploit → 동사 뜻("착취하다")이 뜬다.
+ *        ⚠️ 이것만은 12차에서 내가 바꾼 것이다. 기존 GLOSS 는 "모험; 이용하다" 로
+ *        명사 갈래가 앞에 있었는데, 원본이 exploit 을 동사('착취하다')로만 주고
+ *        시험에 나오는 뜻도 그쪽이라 동사로 정했다. adventure 에는 escapade
+ *        ("모험, 엉뚱한 짓")·quest("탐구, 모험") 두 유의어가 더 있어 '모험' 쪽은
+ *        그것들이 받쳐 준다. 고치려면 adventure 의 syn 에서 exploit 을 빼야 한다
+ *                                                                  (12차에 생김)
  *
  * 넷 다 '명사 표제어에 동사·형용사 유의어가 붙어 있다' 는 한 가지 문제다. 고치려면
  * 그 표제어의 syn 을 품사가 맞는 낱말로 바꿔야 하는데, 그러면 기존 출제가 변한다.
@@ -1704,7 +1765,119 @@ window.VOCAB_E = [
      apparent("명백한, 분명한")와 뜻이 뒤섞여 셋을 구별할 수 없게 된다. */
   { word:"explicit", pron:"익스플리시트", pos:"adj", level:"B2", meanings:["명시적인","명쾌한"],
     syn:["clear-cut","unambiguous","stated plainly"], ant:["ambiguous"],
-    ex:[{ s:"The contract is {{}} about who pays for repairs.", f:"explicit", ko:"그 계약서는 수리비를 누가 내는지 명시적이다." }] }
+    ex:[{ s:"The contract is {{}} about who pays for repairs.", f:"explicit", ko:"그 계약서는 수리비를 누가 내는지 명시적이다." }] },
+
+  /* ── 12차: explicitly ~ extinct ──────────────────── */
+
+  { word:"explicitly", pron:"익스플리시틀리", pos:"adv", level:"B2", meanings:["분명히","명쾌하게"],
+    syn:["clearly","plainly","in so many words"],
+    ex:[{ s:"The notice {{}} bans dogs from the lawn.", f:"explicitly", ko:"그 안내문은 개가 잔디에 들어오는 것을 분명히 금지한다." }] },
+
+  /* ⚠️ 동사로 정했다. 원본이 '착취하다, (부당하게) 이용하다' 로 동사만 주기 때문이다.
+     다만 기존 GLOSS 는 "모험; 이용하다" 로 명사 갈래가 앞에 있었고, 표제어
+     adventure(명사 '모험')가 이 낱말을 유의어로 쓴다 — 그 피드백이 동사 뜻으로
+     바뀐다. 아래 '남겨 둔 기존 문제' 에 적어 두었다. adventure 에는 escapade·quest
+     두 유의어가 더 있어 '모험' 쪽은 그것들이 받쳐 준다.
+     유의어로 abuse·misuse 를 쓰지 않았다 — 둘 다 명사다(abuse 는 표제어 "학대, 남용"). */
+  { word:"exploit", pron:"엑스플로이트", pos:"v", level:"C1", meanings:["착취하다","부당하게 이용하다"],
+    syn:["take advantage of","use unfairly","squeeze profit from"],
+    ex:[{ s:"Some agencies {{}} workers who cannot read the contract.", f:"exploit", ko:"일부 업체는 계약서를 읽지 못하는 노동자를 착취한다." }] },
+
+  { word:"exploitation", pron:"엑스플로이테이션", pos:"n", level:"C1", meanings:["착취","이용"],
+    syn:["abuse","misuse","unfair use"],
+    ex:[{ s:"The report documents the {{}} of child labor.", f:"exploitation", ko:"그 보고서는 아동 노동 착취를 기록한다." }] },
+
+  { word:"exploration", pron:"엑스플러레이션", pos:"n", level:"B2", meanings:["탐사","탐험"],
+    syn:["survey","expedition","investigation"],
+    ex:[{ s:"Deep-sea {{}} still costs more than space travel.", f:"exploration", ko:"심해 탐사는 여전히 우주 여행보다 비용이 많이 든다." }] },
+
+  /* 원본은 '탐험하다, 탐사하다; 탐구하다' 인데 앞 둘이 거의 같은 말이라 둘로 줄였다. */
+  { word:"explore", pron:"익스플로어", pos:"v", level:"B2", meanings:["탐험하다","탐구하다"],
+    syn:["travel through","investigate","search"],
+    ex:[{ s:"They set out to {{}} the caves below the ridge.", f:"explore", ko:"그들은 능선 아래 동굴을 탐험하러 나섰다." }] },
+
+  /* 8차에서 eruption 의 유의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로 올라온다 —
+     그 항목을 지웠다. 뜻 "폭발, 파열" 을 그대로 옮겨 eruption 쪽이 변하지 않게 했다.
+     eruption(B2 "폭발, 분화")과는 뜻이 가깝지만 '파열' 과 '분화' 로 갈린다. */
+  { word:"explosion", pron:"익스플로전", pos:"n", level:"B2", meanings:["폭발","파열"],
+    syn:["blast","detonation","bursting"],
+    ex:[{ s:"The {{}} shattered windows three streets away.", f:"explosion", ko:"그 폭발로 세 블록 떨어진 창문들이 깨졌다." }] },
+
+  /* 원본은 '폭발성의, 폭발하기 쉬운; 폭발물, 폭약' 이다 — 형용사로 정하고, 앞 두 뜻이
+     사실상 같은 말이라 하나만 남겼다(environment-friendly 와 같은 처리). */
+  { word:"explosive", pron:"익스플로시브", pos:"adj", level:"B2", meanings:["폭발성의"],
+    syn:["liable to explode","volatile","highly unstable"],
+    ex:[{ s:"The shed held several {{}} cans of solvent.", f:"explosive", ko:"그 창고에는 폭발성 용제 통이 여러 개 있었다." }] },
+
+  /* 원본 '수출(품); 수출하다, 내보내다' 에서 괄호를 풀고 동사로 정했다. */
+  { word:"export", pron:"엑스포트", pos:"v", level:"B1", meanings:["수출하다","내보내다"],
+    syn:["sell abroad","ship out","send overseas"], ant:["import"],
+    ex:[{ s:"The island began to {{}} salt in the 1800s.", f:"export", ko:"그 섬은 1800년대에 소금을 수출하기 시작했다." }] },
+
+  { word:"expose", pron:"익스포즈", pos:"v", level:"B2", meanings:["폭로하다","노출시키다"],
+    syn:["reveal","uncover","bring to light"], ant:["conceal"],
+    ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
+
+  { word:"exposure", pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
+    syn:["being exposed","revelation","uncovering"],
+    ex:[{ s:"Long {{}} to the sun cracked the paint.", f:"exposure", ko:"오랜 햇빛 노출이 그 페인트를 갈라지게 했다." }] },
+
+  /* 원본은 '정교한; 매우 아름다운, 고귀한' 인데 '매우 아름다운' 을 앞에 뒀다 —
+     표제어 elaborate(C1 "공들인, 정교한")와 첫 뜻이 겹치지 않게 하려는 것이다. */
+  { word:"exquisite", pron:"엑스퀴짓", pos:"adj", level:"C2", meanings:["매우 아름다운","정교한"],
+    syn:["beautifully made","delicate","superb"],
+    ex:[{ s:"The box held an {{}} silver locket.", f:"exquisite", ko:"그 상자에는 매우 아름다운 은 로켓이 들어 있었다." }] },
+
+  /* ★ 원본은 '확대하다, 확장하다; (시간, 기간 등을) 연장하다' 인데 기존 GLOSS
+     "늘리다, 연장하다" 를 그대로 썼다. 원본대로 '확대하다, 확장하다' 로 적으면
+     표제어 enlarge(6차, B2 "확대하다, 확장하다")와 뜻이 글자까지 같아진다.
+     '확대' 계열은 이미 amplify·enlarge·escalate·expand·expansion 다섯이 쓰고 있어
+     빈자리가 없다. '연장' 쪽으로 가르면 표제어 curtail(반의어)도 지켜진다. */
+  { word:"extend", pron:"익스텐드", pos:"v", level:"B1", meanings:["늘리다","연장하다"],
+    syn:["lengthen","prolong","stretch out"], ant:["curtail"],
+    ex:[{ s:"The city may {{}} the bus route past the mill.", f:"extend", ko:"시는 버스 노선을 제분소 너머로 연장할 수도 있다." }] },
+
+  { word:"extended", pron:"익스텐디드", pos:"adj", level:"B2", meanings:["연장된","늘어난"],
+    syn:["lengthened","prolonged","drawn-out"],
+    ex:[{ s:"They asked for an {{}} deadline.", f:"extended", ko:"그들은 연장된 기한을 요청했다." }] },
+
+  /* 뜻을 '연장, 확장' 으로 잡았다 — 표제어 expansion(B2 "팽창, 확대")과 '확대' 가
+     겹치지 않게 하려는 것이다. 기존 표제어 by extension 은 pos 가 phr 이라
+     이 명사와 오답 후보로 겹치지 않는다. */
+  { word:"extension", pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
+    syn:["lengthening","addition","prolonging"],
+    ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
+
+  { word:"extensive", pron:"익스텐시브", pos:"adj", level:"B2", meanings:["광범위한","방대한"],
+    syn:["wide-ranging","far-reaching","broad"],
+    ex:[{ s:"The storm caused {{}} damage to the orchards.", f:"extensive", ko:"그 폭풍은 과수원에 광범위한 피해를 입혔다." }] },
+
+  /* 레벨을 C1 로 뒀다 — 표제어 degree(B1 "정도, 학위")가 이 낱말을 유의어로 쓰고
+     첫 뜻에 '정도' 가 겹치므로, 레벨을 두 칸 벌려 한 문제의 보기로 같이 뜨지
+     않게 했다. 기존 GLOSS "범위, 정도" 는 breadth·degree·dimension 셋이 쓴다. */
+  { word:"extent", pron:"익스텐트", pos:"n", level:"C1", meanings:["범위","정도"],
+    syn:["scope","range","scale"],
+    ex:[{ s:"Nobody knew the full {{}} of the leak.", f:"extent", ko:"아무도 그 누출의 전체 범위를 알지 못했다." }] },
+
+  { word:"exterminate", pron:"익스터머네이트", pos:"v", level:"C1", meanings:["박멸하다","몰살하다"],
+    syn:["wipe out","annihilate","kill off"],
+    ex:[{ s:"It took two winters to {{}} the beetles.", f:"exterminate", ko:"그 딱정벌레를 박멸하는 데 두 번의 겨울이 걸렸다." }] },
+
+  { word:"external", pron:"익스터널", pos:"adj", level:"B2", meanings:["외부의","외면의"],
+    syn:["outer","outside","surface-level"], ant:["internal"],
+    ex:[{ s:"The report blamed {{}} factors for the delay.", f:"external", ko:"그 보고서는 지연의 원인을 외부 요인으로 돌렸다." }] },
+
+  /* syn 을 비웠다 — 심리학 용어라 바꿔 쓸 한 낱말이 없다. 후보는 모두
+     '밖으로 드러내다' 를 길게 풀어 쓴 것뿐이어서 셋을 채우면 같은 말을 세 번 한다
+     (entity·equation·externalize 가 같은 경우다). */
+  { word:"externalize", pron:"익스터널라이즈", pos:"v", level:"C2", meanings:["외면화하다","표면화하다"],
+    ex:[{ s:"Drawing helps children {{}} what they cannot say.", f:"externalize", ko:"그림은 아이가 말로 못 하는 것을 표면화하도록 돕는다." }] },
+
+  /* 원본은 '멸종된, 사라진, 사화산의' 로 셋인데 둘로 줄였다. 표제어 endangered(5차,
+     "멸종 위기에 처한")와는 '멸종된' 과 '멸종 위기' 로 뜻이 분명히 갈린다. */
+  { word:"extinct", pron:"익스팅트", pos:"adj", level:"B2", meanings:["멸종된","사라진"],
+    syn:["died out","no longer existing","wiped out"], ant:["surviving"],
+    ex:[{ s:"The bird has been {{}} for over a century.", f:"extinct", ko:"그 새는 한 세기 넘게 멸종된 상태다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1973,7 +2146,6 @@ Object.assign(window.GLOSS, {
   "conduct safely":"안전하게 데려가다",
   "cultural":"문화의",
   "endless time":"끝없는 시간",
-  "explosion":"폭발, 파열",
   "found":"창립하다",
   "hold in high regard":"높이 받들다",
   "incorrect":"부정확한",
@@ -2114,5 +2286,49 @@ Object.assign(window.GLOSS, {
   "thrilling":"짜릿한",
   "trial run":"시험 가동",
   "unambiguous":"모호하지 않은",
-  "urge strongly":"강하게 권하다"
+  "urge strongly":"강하게 권하다",
+
+  /* ── 12차: explicitly ~ extinct (44개) ───────────────── */
+  "beautifully made":"아름답게 만들어진",
+  "being exposed":"드러나 있음",
+  "bring to light":"세상에 드러내다",
+  "broad":"넓은, 폭넓은",
+  "bursting":"터짐",
+  "clearly":"분명하게",
+  "detonation":"폭발, 기폭",
+  "died out":"멸종해 사라진",
+  "drawn-out":"질질 늘어진",
+  "far-reaching":"파급 효과가 큰",
+  "highly unstable":"매우 불안정한",
+  "import":"수입하다",
+  "in so many words":"딱 그렇게 말로",
+  "investigate":"조사하다, 살피다",
+  "investigation":"조사, 탐구",
+  "kill off":"죽여 없애다",
+  "lengthen":"길게 하다",
+  "lengthened":"길어진",
+  "lengthening":"길게 늘임",
+  "liable to explode":"폭발할 수 있는",
+  "no longer existing":"더 이상 존재하지 않는",
+  "outer":"바깥쪽의",
+  "plainly":"숨김없이, 있는 그대로",
+  "prolong":"오래 끌다",
+  "prolonged":"오래 끌어진",
+  "prolonging":"기간을 늘림",
+  "revelation":"폭로, 뜻밖의 사실",
+  "scale":"규모, 정도",
+  "sell abroad":"해외에 팔다",
+  "send overseas":"해외로 보내다",
+  "ship out":"실어 내보내다",
+  "squeeze profit from":"~에서 이익을 짜내다",
+  "stretch out":"펴서 늘이다",
+  "surface-level":"표면상의",
+  "surviving":"살아남은",
+  "travel through":"~을 돌아다니다",
+  "unfair use":"부당한 이용",
+  "uncovering":"벗겨 냄, 드러냄",
+  "use unfairly":"부당하게 이용하다",
+  "volatile":"휘발성의, 불안정한",
+  "wide-ranging":"폭넓은",
+  "wiped out":"완전히 없어진"
 });

@@ -1970,8 +1970,6 @@ Object.assign(window.GLOSS, {
 
   "emotional":"감정적인",
   "evasive":"회피하는, 둘러대는",
-  "exposure":"노출, 드러남",
-  "extend":"늘리다, 연장하다",
   "few":"거의 없는, 소수의",
   "fixed":"고정된",
   "flee":"도망치다",
