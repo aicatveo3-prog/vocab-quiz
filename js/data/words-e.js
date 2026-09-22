@@ -88,6 +88,12 @@
  *   erroneous   '잘못된' 에 '오류가 있는' 을 붙였다 — 유의어 mistaken 이 "잘못된, 틀린"
  *               이라 '틀린' 을 쓰면 겹친다
  *   evade       '피하다, 회피하다' → '회피하다, 교묘히 피하다'. 아래 8차 기록 참고
+ *   even        '(수가) 같은, 짝수의' → 괄호를 풀었다
+ *   evoke       '(기억, 감정을) 불러일으키다' → 괄호를 풀었다
+ *   evident     '눈의 띄는' → 눈에 띄는  (오타. 위 목록에도 적혀 있다)
+ *   evidence    '증거; 증언; 흔적' → 둘로 줄였다
+ *   excess      '과잉, 초과량, 초과한' → 명사로 정리
+ *   eventually  '결국' 하나만 — 유의어 finally 의 GLOSS 가 "마침내, 결국" 이라 겹친다
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -102,7 +108,7 @@
  *   6차  20개  enormous ~ environment-friendly  ← 완료
  *   7차  20개  envision ~ erratic          ← 완료
  *   8차  20개  erroneous ~ evaluate        ← 완료
- *   9차  20개  evaporate ~ excess
+ *   9차  20개  evaporate ~ excess          ← 완료
  *  10차  20개  excessive ~ exhibition
  *  11차  20개  exhilarating ~ explicit
  *  12차  20개  explicitly ~ extinct
@@ -259,6 +265,54 @@
  *   evade 의 sidestep → dodge 와 뜻이 글자까지 같다    ✗ → shirk
  *
  * PRON 에 뒤늦게 채운 3개 — moral, property, racial. 7차의 outbreak 들과 같다.
+ *
+ * ── 9차 기록 ─────────────────────────────────
+ * 사전에 이미 있던 낱말이 10개. 그 가운데 둘이 내가 앞 차수에 넣은 것이다 —
+ * even(7차, equal 의 유의어)·everlasting(8차, eternal 의 유의어). 7차 eradicate,
+ * 8차 established 에 이어 세 번째·네 번째다. 8차에 넣어 둔 '다음 차수에 올 낱말이
+ * 이미 사전에 있나' 칸이 미리 알려 주었다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 10개 (GLOSS·PRON 양쪽 20항목)
+ *   gloss.js   evident, evoke, examine, excavate, exception
+ *   words-d.js evaporate, evolve, exaggerate
+ *   words-e.js even(7차), everlasting(8차)   ← 내가 넣은 것
+ *   pron.js    위 10개 전부
+ *
+ * ★ 뜻이 거의 같은 형용사·구를 레벨로 갈랐다 — 세 짝
+ *   지금까지는 철자가 비슷한 짝(element/elements)을 갈랐지만, 이번에는 '뜻이 거의
+ *   같아서' 갈라야 하는 경우가 나왔다. 한 문제의 보기로 같이 뜨면 어느 쪽도 답으로
+ *   고를 수 없는 문제가 된다.
+ *     even(C1) / equal(B1)          둘 다 형용사에 첫 뜻이 '같은'
+ *     everlasting(C2) / eternal(B2) 둘 다 '영원한' 계열 형용사
+ *     except(C1) / apart from(B1)   둘 다 phr 에 '~을 제외하고'
+ *   레벨을 두 칸 벌려야 '레벨 ±1' 필터 밖으로 나간다. 한 칸(B2 ↔ B1)은 안 된다.
+ *
+ * except 는 전치사인데 pos 는 v/n/adj/adv/phr 뿐이라 phr 로 담았다 — 기존 표제어
+ * apart from·due to·ahead of 와 같은 처리다. phr 이므로 ex 를 달지 않았다(5차 참고).
+ *
+ * syn 을 비운 1개 — evergreen. conifer·evergreen tree 는 표제어를 달리 말한 것뿐인
+ * 식물 용어다 (7차의 equator·equatorial 과 같다).
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   even       '같은' 을 앞에 — 표제어 equal 의 유의어라 '짝수의' 로 시작하면 안 된다
+ *   evoke      '불러일으키다' 를 앞에 — 표제어 conjure up·elicit(3차)이 유의어로 쓴다
+ *   evident    '분명한' 을 앞에 — 표제어 apparent 가 유의어로 쓴다
+ *   exception  '반례' 갈래 유지 — 표제어 counterexample 이 유의어로 쓴다
+ *   exaggerate '과장하다' 를 앞에 — 표제어 downplay 의 반의어다
+ *   examine    기존 뜻 "조사하다, 검사하다" 그대로 — analyze·audit 이 유의어로 쓴다
+ *
+ * 유의어에서 걸러낸 것
+ *   evident 의 obvious → "분명한, 명백한". 표제어 apparent 의 뜻 "명백한, 분명한" 과
+ *                        두 낱말이 순서만 다른 꼴이라 나란히 뜨면 어색하다 ✗ → clear-cut
+ *   evolve 의 progress → "진보, 전진"(명사)        ✗ → unfold
+ *   exaggerate 의 embellish → "꾸미다, 장식하다"   ✗ → magnify
+ *   evident 의 plain   → "평범한; 명백한"(평범한이 앞) ✗ → unmistakable
+ *
+ * ⚠️ 덤으로 고쳐진 것 — 표제어 apparent 의 유의어 obvious 와 evident 가 둘 다
+ *   "분명한, 명백한" 으로 뜻이 글자까지 같았다(9차 전부터). evident 를 표제어로
+ *   올리며 '눈에 띄는' 오타를 바로잡자 그 중복이 사라졌다.
+ *
+ * PRON 에 뒤늦게 채운 3개 — go beyond, grounds, look into. 8차의 moral 들과 같다.
  *
  * ── 손대지 않고 남겨 둔 기존 문제 4개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
@@ -1214,7 +1268,112 @@ window.VOCAB_E = [
 
   { word:"evaluate", pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
     syn:["appraise","assess","judge"],
-    ex:[{ s:"Teachers {{}} the projects on four criteria.", f:"evaluate", ko:"교사들은 네 가지 기준으로 그 과제를 평가한다." }] }
+    ex:[{ s:"Teachers {{}} the projects on four criteria.", f:"evaluate", ko:"교사들은 네 가지 기준으로 그 과제를 평가한다." }] },
+
+  /* ── 9차: evaporate ~ excess ─────────────────────── */
+
+  { word:"evaporate", pron:"이배퍼레이트", pos:"v", level:"B2", meanings:["증발하다","기화하다"],
+    syn:["vaporize","dry up","disappear"],
+    ex:[{ s:"Shallow puddles {{}} within an hour on hot stone.", f:"evaporate", ko:"얕은 물웅덩이는 뜨거운 돌 위에서 한 시간 안에 증발한다." }] },
+
+  { word:"evasion", pron:"이베이전", pos:"n", level:"C1", meanings:["회피","탈세"],
+    syn:["avoidance","dodging","tax dodging"],
+    ex:[{ s:"The audit uncovered years of tax {{}}.", f:"evasion", ko:"그 감사는 수년간의 탈세를 밝혀냈다." }] },
+
+  /* 원본 '(수가) 같은, 짝수의' 의 괄호를 풀었다. 7차에서 equal 의 유의어로 넣은
+     GLOSS 항목이 표제어로 올라온다 — 그 항목을 지웠다.
+     레벨을 C1 로 뒀다. equal(B1)과 둘 다 형용사에 첫 뜻이 '같은' 이라서, 레벨이
+     붙어 있으면 한 문제의 보기로 같이 떠서 답을 고를 수 없게 된다. '같은' 을 앞에
+     둔 것은 equal 쪽 피드백이 '짝수의' 로 시작하면 안 되기 때문이다. */
+  { word:"even", pron:"이븐", pos:"adj", level:"C1", meanings:["같은","짝수의"],
+    syn:["equal","identical","the same"],
+    ex:[{ s:"Split the bill into two {{}} shares.", f:"even", ko:"계산서를 똑같은 두 몫으로 나누세요." }] },
+
+  /* 뜻을 '결국' 하나만 뒀다 — 유의어 finally 의 GLOSS 가 "마침내, 결국" 이라
+     '마침내' 를 같이 쓰면 표제어와 선택지가 같은 말을 한다. */
+  { word:"eventually", pron:"이벤추얼리", pos:"adv", level:"B1", meanings:["결국"],
+    syn:["in the end","finally","ultimately"],
+    ex:[{ s:"The argument {{}} settled itself.", f:"eventually", ko:"그 논쟁은 결국 저절로 가라앉았다." }] },
+
+  /* syn 을 비웠다 — 식물 용어다. conifer·evergreen tree 는 표제어를 달리 말한
+     것뿐이다 (7차의 equator·equatorial 과 같은 경우). */
+  { word:"evergreen", pron:"에버그린", pos:"n", level:"B2", meanings:["상록수"],
+    ex:[{ s:"A row of {{}} shields the house from wind.", f:"evergreen", ko:"상록수 한 줄이 그 집을 바람에서 막아 준다." }] },
+
+  /* 8차에서 eternal 의 유의어로 넣은 GLOSS 항목이 표제어로 올라온다 — 지웠다.
+     레벨을 C2 로 뒀다. eternal(B2)과 뜻이 거의 같은 형용사라서, 레벨이 가까우면
+     두 낱말이 한 문제의 보기로 같이 떠 답을 고를 수 없게 된다. */
+  { word:"everlasting", pron:"에버래스팅", pos:"adj", level:"C2", meanings:["영원히 계속되는"],
+    syn:["eternal","perpetual","undying"],
+    ex:[{ s:"He wrote of an {{}} bond between the two families.", f:"everlasting", ko:"그는 두 가문 사이의 영원히 계속되는 유대를 적었다." }] },
+
+  /* 원본은 '증거; 증언; 흔적' 으로 갈래가 셋이다 — 둘로 줄였다. */
+  { word:"evidence", pron:"에비던스", pos:"n", level:"B1", meanings:["증거","증언"],
+    syn:["proof","testimony","grounds"],
+    ex:[{ s:"The police found no {{}} of a break-in.", f:"evidence", ko:"경찰은 침입의 증거를 찾지 못했다." }] },
+
+  /* 원본의 '눈의 띄는' 은 오타다 — '눈에 띄는' 으로 바로잡았다(헤더에 적어 둔 대로).
+     유의어로 obvious 를 쓰지 않았다: GLOSS 가 "분명한, 명백한" 인데 표제어 apparent 의
+     뜻 "명백한, 분명한" 과 두 낱말이 순서만 다른 꼴이라 화면에 나란히 뜨면 어색하다. */
+  { word:"evident", pron:"에비던트", pos:"adj", level:"B2", meanings:["분명한","눈에 띄는"],
+    syn:["apparent","unmistakable","clear-cut"],
+    ex:[{ s:"Her relief was {{}} to everyone in the room.", f:"evident", ko:"그녀의 안도는 방 안 모두에게 분명했다." }] },
+
+  /* 원본 '(기억, 감정을) 불러일으키다' 의 괄호를 풀었다. 기존 GLOSS 의 '불러일으키다'
+     를 앞에 그대로 뒀다 — 표제어 conjure up 과 elicit(3차)이 유의어로 쓴다. */
+  { word:"evoke", pron:"이보크", pos:"v", level:"C1", meanings:["불러일으키다","떠올리게 하다"],
+    syn:["conjure up","bring to mind","arouse"],
+    ex:[{ s:"That smell can {{}} a whole childhood.", f:"evoke", ko:"그 냄새는 어린 시절 전체를 불러일으킬 수 있다." }] },
+
+  { word:"evolution", pron:"에벌루션", pos:"n", level:"B2", meanings:["진화","발전"],
+    syn:["development","progression","gradual change"],
+    ex:[{ s:"The book traces the {{}} of written language.", f:"evolution", ko:"그 책은 문자 언어의 진화를 추적한다." }] },
+
+  /* 유의어로 progress 를 쓰지 않았다 — GLOSS 가 "진보, 전진"(명사)이다. */
+  { word:"evolve", pron:"이발브", pos:"v", level:"B2", meanings:["발달하다","진화하다"],
+    syn:["develop","unfold","grow gradually"],
+    ex:[{ s:"Small workshops can {{}} into real factories.", f:"evolve", ko:"작은 공방도 진짜 공장으로 발달할 수 있다." }] },
+
+  { word:"exaggerate", pron:"이그재저레이트", pos:"v", level:"B2", meanings:["과장하다","부풀리다"],
+    syn:["overstate","blow out of proportion","magnify"], ant:["downplay"],
+    ex:[{ s:"Do not {{}} how long the repair will take.", f:"exaggerate", ko:"수리가 얼마나 걸릴지 과장하지 마세요." }] },
+
+  { word:"examine", pron:"이그재민", pos:"v", level:"B1", meanings:["조사하다","검사하다"],
+    syn:["inspect","analyze","look into"],
+    ex:[{ s:"Inspectors will {{}} every weld on the pipe.", f:"examine", ko:"검사관들이 그 배관의 모든 용접부를 조사할 것이다." }] },
+
+  { word:"excavate", pron:"엑스커베이트", pos:"v", level:"C1", meanings:["발굴하다","출토하다"],
+    syn:["dig","unearth","dig up"],
+    ex:[{ s:"The team hopes to {{}} the site before winter.", f:"excavate", ko:"그 팀은 겨울 전에 그 유적을 발굴하기를 바란다." }] },
+
+  { word:"exceed", pron:"익시드", pos:"v", level:"B2", meanings:["넘다","초과하다"],
+    syn:["surpass","go beyond","outdo"],
+    ex:[{ s:"Costs must not {{}} the agreed budget.", f:"exceed", ko:"비용이 합의된 예산을 넘어서는 안 된다." }] },
+
+  { word:"excel", pron:"익셀", pos:"v", level:"C1", meanings:["뛰어나게 잘하다","탁월하다"],
+    syn:["shine","stand out","outperform"],
+    ex:[{ s:"She began to {{}} at long-distance running.", f:"excel", ko:"그녀는 장거리 달리기에서 뛰어나게 잘하기 시작했다." }] },
+
+  /* 전치사지만 pos 는 v/n/adj/adv/phr 뿐이므로 phr 로 담았다 — 기존 표제어
+     apart from·due to·ahead of 와 같은 처리다. phr 이므로 ex 를 달지 않는다(5차 참고).
+     레벨을 C1 로 뒀다: apart from 이 phr B1 에 뜻도 "~을 제외하고, ~외에는" 으로 거의
+     같아서, 레벨이 붙어 있으면 두 낱말이 한 문제의 보기로 같이 떠 답을 고를 수 없다. */
+  { word:"except", pron:"익셉트", pos:"phr", level:"C1", meanings:["~을 제외하고"],
+    syn:["apart from","aside from","other than"] },
+
+  /* 기존 GLOSS "예외; 반례" 의 '반례' 를 살렸다 — 표제어 counterexample 이 유의어로 쓴다. */
+  { word:"exception", pron:"익셉션", pos:"n", level:"B2", meanings:["예외","반례"],
+    syn:["special case","anomaly","counterexample"],
+    ex:[{ s:"Every rule here has one {{}}.", f:"exception", ko:"여기 모든 규칙에는 예외가 하나씩 있다." }] },
+
+  { word:"exceptional", pron:"익셉셔널", pos:"adj", level:"B2", meanings:["예외적인","특별한"],
+    syn:["extraordinary","remarkable","unusual"],
+    ex:[{ s:"They made an {{}} allowance for her.", f:"exceptional", ko:"그들은 그녀에게 예외적인 혜택을 주었다." }] },
+
+  /* 원본은 '과잉, 초과량, 초과한' 으로 명사와 형용사가 섞여 있다 — 명사로 정했다. */
+  { word:"excess", pron:"익세스", pos:"n", level:"C1", meanings:["과잉","초과량"],
+    syn:["surplus","overabundance","too much"], ant:["shortage"],
+    ex:[{ s:"The plant dumped its {{}} into the river.", f:"excess", ko:"그 공장은 초과량을 강에 버렸다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1452,7 +1611,6 @@ Object.assign(window.GLOSS, {
   "contagion":"전염, 감염",
   "corrode":"부식시키다",
   "eat away":"조금씩 먹어 들어가다",
-  "even":"고른, 대등한",
   "evenness":"고름, 균등함",
   "final chapter":"마지막 장",
   "gear":"장구, 용품",
@@ -1485,7 +1643,6 @@ Object.assign(window.GLOSS, {
   "conduct safely":"안전하게 데려가다",
   "cultural":"문화의",
   "endless time":"끝없는 시간",
-  "everlasting":"영구한",
   "explosion":"폭발, 파열",
   "found":"창립하다",
   "hold in high regard":"높이 받들다",
@@ -1511,5 +1668,35 @@ Object.assign(window.GLOSS, {
   "undying":"죽지 않는",
   "unethical":"비윤리적인",
   "upright":"정직한, 청렴한",
-  "well-founded":"근거가 확실한"
+  "well-founded":"근거가 확실한",
+
+  /* ── 9차: evaporate ~ excess (28개) ───────────────── */
+  "anomaly":"변칙, 이례",
+  "arouse":"자극하다, 일깨우다",
+  "avoidance":"회피, 기피",
+  "blow out of proportion":"지나치게 부풀리다",
+  "bring to mind":"떠오르게 하다",
+  "clear-cut":"명확한",
+  "dig up":"파내다",
+  "dodging":"슬쩍 피함",
+  "dry up":"말라 없어지다",
+  "extraordinary":"비범한, 대단한",
+  "gradual change":"서서히 일어나는 변화",
+  "grow gradually":"서서히 자라다",
+  "in the end":"끝에는",
+  "other than":"~이 아닌, ~말고는",
+  "outdo":"앞지르다",
+  "outperform":"더 나은 성과를 내다",
+  "overabundance":"지나치게 많음",
+  "progression":"진행, 연속",
+  "proof":"증명, 입증",
+  "shine":"두각을 나타내다",
+  "special case":"특수한 경우",
+  "stand out":"돋보이다",
+  "surpass":"능가하다",
+  "tax dodging":"탈세",
+  "testimony":"증언",
+  "too much":"너무 많은 것",
+  "ultimately":"궁극적으로",
+  "vaporize":"기화시키다"
 });
