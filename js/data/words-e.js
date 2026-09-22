@@ -64,6 +64,11 @@
  *   enlighten   '계몽하다, 깨우치다, 가르치다' → 둘로 줄였다
  *   enhance     기존 GLOSS 는 "높이다, 향상시키다" 였는데 원본 순서대로 '향상시키다'를
  *               앞으로 돌렸다. 뜻 내용이 같아 degrade·detract 의 반의어 설명은 안 변한다
+ *   enthrone    '(취임식 등에서) 왕좌에 앉히다' → 괄호를 풀었다
+ *   entitle     '제목을 붙이다, 권리를 부여하다' → '권리를 부여하다'를 앞으로
+ *               (시험에 나오는 쪽이고 3차에 넣은 GLOSS "entitled":"권리가 있는" 과 맞는다)
+ *   environment-friendly  '환경친화적인, 친환경적인' → 두 뜻이 사실상 같은 말이라
+ *               하나만 남겼다. 카드에 같은 말이 두 번 찍히는 것을 막는다
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -75,7 +80,7 @@
  *   3차  20개  elevation ~ eminent         ← 완료
  *   4차  20개  emission ~ encourage        ← 완료
  *   5차  20개  encouragement ~ enlighten   ← 완료
- *   6차  20개  enormous ~ environment-friendly
+ *   6차  20개  enormous ~ environment-friendly  ← 완료
  *   7차  20개  envision ~ erratic
  *   8차  20개  erroneous ~ evaluate
  *   9차  20개  evaporate ~ excess
@@ -248,6 +253,51 @@
  * attempt(동사)와 어긋났는데, endeavor 를 동사로 정리하면서 사라졌다.
  * 4차의 encounter 와 같은 꼴이다 — 원본이 동사·명사를 섞어 둔 낱말을 표제어로
  * 올리면 그 참조가 저절로 고쳐진다.
+ *
+ * ── 6차 기록 ─────────────────────────────────
+ * 사전에 이미 있던 낱말이 4개로 확 줄었다(5차 10개). 5차까지 en- 접두사의
+ * 기본 어휘 구간을 지났고, 6차는 entail·entangle·enthrone·entity 처럼 A~D 세트가
+ * 유의어로 쓸 일이 없던 낱말이 많다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 4개 (GLOSS·PRON 양쪽 7항목)
+ *   gloss.js   enormous, enthusiastic, entry
+ *   words.js   enthusiasm
+ *   pron.js    위 4개 전부
+ *
+ * syn 을 비운 1개 — entity. '독립체'는 바꿔 쓸 낱말이 마땅치 않은 추상 명사다.
+ * being·body·unit 은 뜻이 훨씬 넓다(unit 의 GLOSS 는 "단위; 세포" 다).
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   enthusiasm   기존 GLOSS "열정, 열의" 그대로 — apathy 의 반의어다
+ *   enthusiastic 기존 GLOSS "열정적인, 열심인" 그대로 — avid 의 유의어다
+ *   entry        '들어감'을 앞에 두되 '입장'을 남겼다 — access·admission 두 표제어가
+ *                유의어로 쓰는데 entrance("입구; 입장")와 뜻이 글자까지 겹치면 안 된다
+ *
+ * ★ 이번에 낸 실수 — GLOSS 키 중복
+ *   enroll 의 반의어를 withdraw 에서 drop out 으로 바꿀 때, 후보 조사를 이미 끝낸
+ *   뒤라 확인 없이 새 GLOSS·PRON 항목으로 추가했다. drop out 은 words-d.js 의
+ *   표제어(phr B2 "중도에 그만두다, 빠지다")여서 표제어와 사전에 같은 낱말이
+ *   두 번 등록됐다. words-d-audit 과 pron-audit 이 둘 다 오류로 잡아 냈다
+ *   (2차의 let in 과 같은 사고다). 추가한 2항목을 지우면 표제어 쪽이 쓰이고,
+ *   뜻도 반의어로 알맞다.
+ *   ⇒ 조사 뒤에 유의어를 바꿨으면 그 낱말만이라도 다시 확인할 것.
+ *
+ * 유의어에서 걸러낸 것
+ *   entire 의 whole      → "전체"(명사)              ✗ → undivided
+ *   entity 의 unit       → "단위; 세포"              ✗ → syn 을 비웠다
+ *   entrust 의 delegate  → 표제어인데 품사가 명사("대표, 대리인") ✗ → put in the care of
+ *   entry 의 exit        → "나가다, 퇴장하다"(동사)   ✗ → ant 를 비웠다
+ *   enroll 의 join       → "합류하다; 연결하다" + 발음도 없다 ✗ → put one's name down
+ *   enroll 의 withdraw   → "철수하다, 회수하다"       ✗ → drop out(표제어)
+ *   ensure 의 secure     → "확보하다; 안전한"         ✗ → make sure
+ *
+ * 발음에서 바로잡은 것 — 기존 표기를 찾아보고 고친 것들이다
+ *   enthrone  기존 dethrone 이 "디스론" 이라 '인스론' 으로 적었다 (인스로운 ✗)
+ *   enticing  기존 PRON 에 entice "인타이스" 가 있어 '인타이싱' 으로 맞췄다
+ *   jealous 와 zealous 는 한글로 둘 다 "젤러스" 다. 서로 다른 표제어(envious·
+ *   enthusiastic)의 선택지라 한 문제에 같이 뜨지 않는다 — principal/principle 선례.
+ *
+ * PRON 에 뒤늦게 채운 1개 — passion. 5차의 jeopardize 와 같은 경우다.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -726,7 +776,100 @@ window.VOCAB_E = [
      '계몽하다'로도 뜻이 통한다. */
   { word:"enlighten", pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
     syn:["educate","inform","open one's eyes"], ant:["mislead"],
-    ex:[{ s:"A single good teacher can {{}} a whole village.", f:"enlighten", ko:"좋은 교사 한 명이 마을 전체를 계몽할 수 있다." }] }
+    ex:[{ s:"A single good teacher can {{}} a whole village.", f:"enlighten", ko:"좋은 교사 한 명이 마을 전체를 계몽할 수 있다." }] },
+
+  /* ── 6차: enormous ~ environment-friendly ───────── */
+
+  { word:"enormous", pron:"이노머스", pos:"adj", level:"B1", meanings:["막대한","거대한"],
+    syn:["immense","colossal","vast"], ant:["tiny"],
+    ex:[{ s:"Rebuilding the bridge will cost an {{}} amount.", f:"enormous", ko:"그 교량을 다시 세우는 데는 막대한 금액이 들 것이다." }] },
+
+  { word:"enrich", pron:"인리치", pos:"v", level:"B2", meanings:["풍요롭게 하다","질을 높이다"],
+    syn:["improve","fortify","add value to"],
+    ex:[{ s:"Reading widely will {{}} your writing more than any rule.", f:"enrich", ko:"폭넓은 독서는 어떤 규칙보다 당신의 글을 풍요롭게 한다." }] },
+
+  { word:"enroll", pron:"인로울", pos:"v", level:"B2", meanings:["등록하다","입학시키다"],
+    syn:["register","sign up","put one's name down"], ant:["drop out"],
+    ex:[{ s:"Hundreds of adults {{}} in the evening classes each spring.", f:"enroll", ko:"매년 봄 수백 명의 성인이 야간 강좌에 등록한다." }] },
+
+  { word:"enrollment", pron:"인로울먼트", pos:"n", level:"B2", meanings:["등록","입학"],
+    syn:["registration","sign-up","admission"],
+    ex:[{ s:"The college saw {{}} double after the fee was cut.", f:"enrollment", ko:"그 대학은 수강료를 낮춘 뒤 등록이 두 배가 되는 것을 보았다." }] },
+
+  { word:"ensure", pron:"인슈어", pos:"v", level:"B1", meanings:["확실하게 하다","보장하다"],
+    syn:["guarantee","make certain","make sure"],
+    ex:[{ s:"Check the lid twice to {{}} that nothing spills.", f:"ensure", ko:"아무것도 쏟아지지 않도록 뚜껑을 두 번 확인하세요." }] },
+
+  { word:"entail", pron:"인테일", pos:"v", level:"C1", meanings:["수반하다","필요로 하다"],
+    syn:["involve","require","bring with it"],
+    ex:[{ s:"Moving abroad will {{}} more paperwork than you expect.", f:"entail", ko:"외국으로 이주하는 일은 예상보다 많은 서류 작업을 수반한다." }] },
+
+  { word:"entangle", pron:"인탱글", pos:"v", level:"C2", meanings:["얽어매다","꼼짝 못하게 하다"],
+    syn:["ensnare","tangle up","trap"], ant:["disentangle"],
+    ex:[{ s:"Loose nets can {{}} seals and turtles.", f:"entangle", ko:"풀린 그물은 물개와 거북을 얽어맬 수 있다." }] },
+
+  /* 원본 '(취임식 등에서) 왕좌에 앉히다' 의 괄호를 풀었다.
+     발음은 기존 dethrone("디스론")에 맞춰 '인스론' 으로 적었다 — '로운'이 아니다. */
+  { word:"enthrone", pron:"인스론", pos:"v", level:"C2", meanings:["왕좌에 앉히다","즉위시키다"],
+    syn:["install as king","put on the throne","crown as monarch"],
+    ex:[{ s:"The abbey has been used to {{}} monarchs for centuries.", f:"enthrone", ko:"그 수도원은 수 세기 동안 군주를 왕좌에 앉히는 데 쓰였다." }] },
+
+  /* 기존 GLOSS "열정, 열의" 를 그대로 옮겼다 — 표제어 apathy 의 반의어다. */
+  { word:"enthusiasm", pron:"인수지애즘", pos:"n", level:"B2", meanings:["열정","열의"],
+    syn:["eagerness","zeal","passion"], ant:["apathy"],
+    ex:[{ s:"Her {{}} for the project carried the whole team.", f:"enthusiasm", ko:"그 사업에 대한 그녀의 열정이 팀 전체를 이끌었다." }] },
+
+  /* 기존 GLOSS "열정적인, 열심인" 을 그대로 옮겼다 — 표제어 avid 의 유의어다. */
+  { word:"enthusiastic", pron:"인수지애스틱", pos:"adj", level:"B2", meanings:["열정적인","열심인"],
+    syn:["eager","keen","zealous"], ant:["indifferent"],
+    ex:[{ s:"The crowd gave the young pianist an {{}} welcome.", f:"enthusiastic", ko:"관객은 그 젊은 피아니스트를 열정적으로 환영했다." }] },
+
+  { word:"enticing", pron:"인타이싱", pos:"adj", level:"C1", meanings:["유혹적인","마음을 끄는"],
+    syn:["tempting","appealing","alluring"],
+    ex:[{ s:"The offer looked {{}} until we read the small print.", f:"enticing", ko:"그 제안은 작은 글씨의 조항을 읽기 전까지는 유혹적으로 보였다." }] },
+
+  { word:"entire", pron:"인타이어", pos:"adj", level:"B1", meanings:["전체의","온전한"],
+    syn:["complete","total","undivided"], ant:["partial"],
+    ex:[{ s:"She spent the {{}} afternoon sorting old photographs.", f:"entire", ko:"그녀는 오후 전체를 옛 사진을 정리하며 보냈다." }] },
+
+  /* 원본은 '제목을 붙이다, 권리를 부여하다' 순서인데 '권리를 부여하다'를 앞으로
+     돌렸다. 시험에 나오는 쪽이고, 3차에서 넣은 GLOSS "entitled":"권리가 있는" 과
+     방향이 맞는다. entitled 는 형용사 항목이라 이 동사와 오답 후보로 겹치지 않는다. */
+  { word:"entitle", pron:"인타이털", pos:"v", level:"C1", meanings:["권리를 부여하다","제목을 붙이다"],
+    syn:["authorize","qualify","give the right to"],
+    ex:[{ s:"A full ticket will {{}} you to two free refills.", f:"entitle", ko:"정가 티켓은 두 번의 무료 리필을 받을 권리를 부여한다." }] },
+
+  /* syn 을 비웠다 — '독립체'는 바꿔 쓸 낱말이 마땅치 않은 추상 명사다.
+     being·body·unit 은 모두 뜻이 훨씬 넓어 유의어로 가르치면 틀린 것을 가르친다
+     (unit 의 GLOSS 는 "단위; 세포" 다). encyclopedia·e-commerce 와 같은 경우다. */
+  { word:"entity", pron:"엔터티", pos:"n", level:"C1", meanings:["독립체","실체"],
+    ex:[{ s:"After the merger the two firms became a single {{}}.", f:"entity", ko:"합병 후 두 회사는 하나의 독립체가 되었다." }] },
+
+  { word:"entrepreneur", pron:"안트러프러너", pos:"n", level:"B2", meanings:["사업가","기업가"],
+    syn:["businessperson","founder","business owner"],
+    ex:[{ s:"The prize goes to a young {{}} each October.", f:"entrepreneur", ko:"그 상은 매년 10월 젊은 사업가에게 주어진다." }] },
+
+  { word:"entrust", pron:"인트러스트", pos:"v", level:"C1", meanings:["맡기다","위임하다"],
+    syn:["hand over to","assign","put in the care of"],
+    ex:[{ s:"They chose to {{}} the accounts to an outside firm.", f:"entrust", ko:"그들은 회계를 외부 회사에 맡기기로 했다." }] },
+
+  { word:"entry", pron:"엔트리", pos:"n", level:"B1", meanings:["들어감","입장"],
+    syn:["entrance","access","admittance"],
+    ex:[{ s:"A side gate gives {{}} to the garden.", f:"entry", ko:"측면 문으로 정원에 들어갈 수 있다." }] },
+
+  { word:"envious", pron:"엔비어스", pos:"adj", level:"B2", meanings:["부러워하는","시기심이 강한"],
+    syn:["jealous","covetous","green with envy"],
+    ex:[{ s:"He grew {{}} of his cousin's easy success.", f:"envious", ko:"그는 사촌의 손쉬운 성공을 부러워하게 되었다." }] },
+
+  { word:"environment", pron:"인바이런먼트", pos:"n", level:"B1", meanings:["환경"],
+    syn:["surroundings","setting","habitat"],
+    ex:[{ s:"Cutting the old forest would harm the whole {{}}.", f:"environment", ko:"오래된 숲을 베면 환경 전체가 해를 입는다." }] },
+
+  /* 원본은 '환경친화적인, 친환경적인' 인데 두 뜻이 사실상 같은 말이다 — 카드에
+     같은 말이 두 번 찍히므로 하나만 뒀다(electronic·encyclopedia 선례). */
+  { word:"environment-friendly", pron:"인바이런먼트 프렌들리", pos:"adj", level:"B2", meanings:["환경친화적인"],
+    syn:["eco-friendly","green","sustainable"],
+    ex:[{ s:"The company switched to {{}} packaging last year.", f:"environment-friendly", ko:"그 회사는 지난해 환경친화적인 포장으로 바꿨다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -917,5 +1060,45 @@ Object.assign(window.GLOSS, {
   "turn out":"결과적으로 ~이 되다",
   "unending":"그침이 없는",
   "vouch for":"보증하다",
-  "wind up":"결국 ~에 이르다"
+  "wind up":"결국 ~에 이르다",
+
+  /* ── 6차: enormous ~ environment-friendly (39개) ───────────────── */
+  "add value to":"가치를 높이다",
+  "admittance":"입장 허용",
+  "alluring":"매혹적인",
+  "bring with it":"~을 함께 가져오다",
+  "business owner":"사업주",
+  "businessperson":"사업하는 사람",
+  "covetous":"탐내는",
+  "crown as monarch":"왕관을 씌워 즉위시키다",
+  "disentangle":"얽힌 것을 풀다",
+  "eagerness":"열의, 간절함",
+  "eco-friendly":"친환경의",
+  "ensnare":"덫에 걸리게 하다",
+  "fortify":"강화하다, 보강하다",
+  "founder":"창업자, 설립자",
+  "give the right to":"~할 권리를 주다",
+  "green":"환경을 해치지 않는",
+  "green with envy":"몹시 부러워하는",
+  "habitat":"서식지",
+  "hand over to":"~에게 넘기다",
+  "install as king":"왕으로 세우다",
+  "involve":"수반하다, 포함하다",
+  "jealous":"질투하는",
+  "make certain":"확실히 하다",
+  "make sure":"반드시 ~하게 하다",
+  "put in the care of":"~의 보살핌에 맡기다",
+  "put on the throne":"왕좌에 앉히다",
+  "put one's name down":"이름을 올리다",
+  "registration":"등록, 기재",
+  "sign up":"신청하다, 가입하다",
+  "sign-up":"가입, 신청",
+  "surroundings":"주위 환경",
+  "sustainable":"지속 가능한",
+  "tangle up":"뒤엉키게 하다",
+  "tempting":"구미가 당기는",
+  "trap":"가두다, 덫에 빠뜨리다",
+  "undivided":"나뉘지 않은, 온전한",
+  "vast":"광대한, 막대한",
+  "zeal":"열의, 열성"
 });

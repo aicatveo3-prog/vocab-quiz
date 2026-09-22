@@ -767,18 +767,14 @@ Object.assign(window.PRON, {
   "engraving": "인그레이빙",
   "engrossed": "인그로스트",
   "enjoyment": "인조이먼트",
-  "enormous": "이노머스",
   "ensuing": "인수잉",
   "enter": "엔터",
   "enterprising": "엔터프라이징",
   "entertainment": "엔터테인먼트",
-  "enthusiasm": "인수지애즘",
-  "enthusiastic": "인수지애스틱",
   "entice": "인타이스",
   "entirely": "인타이얼리",
   "entrance": "엔트런스",
   "entreat": "인트리트",
-  "entry": "엔트리",
   "enunciate": "이넌시에이트",
   "envision": "인비전",
   "envoy": "엔보이",
@@ -3652,5 +3648,51 @@ Object.assign(window.PRON, {
   "wind up": "와인드 업",
 
   /* GLOSS 에만 있고 발음이 없던 것 — 4차의 stress 와 같은 경우다 */
-  "jeopardize": "제퍼다이즈"
+  "jeopardize": "제퍼다이즈",
+
+  /* ── 6차: enormous ~ environment-friendly (40개) ─────────────────
+     put on the throne 은 기존 dethrone("디스론")에 맞춰 '스론'으로 적었다.
+     jealous 와 zealous 는 한글로 둘 다 "젤러스"다 — 서로 다른 표제어의
+     선택지라 한 문제에 같이 뜨지 않는다(principal/principle 선례). */
+  "add value to": "애드 밸류 투",
+  "admittance": "애드미턴스",
+  "alluring": "얼루어링",
+  "bring with it": "브링 위드 잇",
+  "business owner": "비즈니스 오너",
+  "businessperson": "비즈니스퍼슨",
+  "covetous": "커버터스",
+  "crown as monarch": "크라운 애즈 마너크",
+  "disentangle": "디스인탱글",
+  "eagerness": "이거니스",
+  "eco-friendly": "에코 프렌들리",
+  "ensnare": "인스네어",
+  "fortify": "포터파이",
+  "founder": "파운더",
+  "give the right to": "기브 더 라이트 투",
+  "green": "그린",
+  "green with envy": "그린 위드 엔비",
+  "habitat": "해비탯",
+  "hand over to": "핸드 오버 투",
+  "install as king": "인스톨 애즈 킹",
+  "involve": "인발브",
+  "jealous": "젤러스",
+  "make certain": "메이크 서튼",
+  "make sure": "메이크 슈어",
+  "put in the care of": "풋 인 더 케어 오브",
+  "put on the throne": "풋 온 더 스론",
+  "put one's name down": "풋 원스 네임 다운",
+  "registration": "레지스트레이션",
+  "sign up": "사인 업",
+  "sign-up": "사인 업",
+  "surroundings": "서라운딩스",
+  "sustainable": "서스테이너블",
+  "tangle up": "탱글 업",
+  "tempting": "템팅",
+  "trap": "트랩",
+  "undivided": "언디바이디드",
+  "vast": "배스트",
+  "zeal": "질",
+
+  /* GLOSS 에만 있고 발음이 없던 것 — 5차의 jeopardize 와 같은 경우다 */
+  "passion": "패션"
 });
