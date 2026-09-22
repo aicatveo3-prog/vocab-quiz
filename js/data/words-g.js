@@ -235,13 +235,108 @@ window.VOCAB_G = [
   /* 첫 뜻을 '착수하다' 로 뒀다 — 원본의 '대처하다' 는 기존 표제어 cope with 와
      같아 복수 정답이 된다. */
   { word:"get down to", pron:"겟 다운 투", pos:"phr", level:"B2", meanings:["착수하다","본격적으로 시작하다"],
-    syn:["begin","tackle","embark on"] }
+    syn:["begin","tackle","embark on"] },
+
+  /* ── 챕터 3 ─────────────────────────────── */
+
+  /* 기존 표제어 be fed up with(B 세트)와 뜻이 같다. 승인받은 대로 넣고 서로를
+     유의어로 등록했다 — 유의어끼리는 오답 후보에서 빠지므로 한 문제에서
+     복수 정답으로 만나지 않는다. */
+  /* be sick of 를 쓰지 않았다 — 사전 뜻이 '~에 진저리가 나다' 로 be fed up with
+     와 글자까지 같아 선택지 두 줄이 똑같아진다. be tired of('~에 싫증나다')로
+     바꿨다. F 세트의 ban·candid 결함과 같은 종류를 audit 이 먼저 잡았다. */
+  { word:"get fed up with", pron:"겟 페드 업 위드", pos:"phr", level:"B2", meanings:["~에 진저리가 나다"],
+    syn:["be fed up with","be tired of","grow weary of"] },
+
+  /* 원본 첫 뜻 '방해하다' 는 기존 표제어 disrupt·disturb 와 같다. 구답게
+     '~을 가로막다' 를 앞에 두어 갈랐다. */
+  { word:"get in the way of", pron:"겟 인 더 웨이 오브", pos:"phr", level:"B2", meanings:["~을 가로막다","방해가 되다"],
+    syn:["hinder","obstruct","impede"] },
+
+  { word:"get out of hand", pron:"겟 아웃 오브 핸드", pos:"phr", level:"B2", meanings:["걷잡을 수 없게 되다"],
+    syn:["spiral","run wild","lose control"] },
+
+  /* 승격 ① — GLOSS '~을 제거하다' 를 첫 자리에 지켰다.
+     do away with·eliminate 두 문제가 이 단어를 유의어로 쓴다. */
+  { word:"get rid of", pron:"겟 리드 오브", pos:"phr", level:"B1", meanings:["~을 제거하다","없애다"],
+    syn:["do away with","eliminate","discard"] },
+
+  { word:"get through", pron:"겟 스루", pos:"phr", level:"B2", meanings:["극복하다","겪어 내다"],
+    syn:["endure","survive","pull through"] },
+
+  { word:"gist", pron:"지스트", pos:"n", level:"C1", meanings:["요지","핵심"],
+    syn:["essence","substance","crux"],
+    ex:[{ s:"Just give me the {{}} of the report, not every detail.", f:"gist", ko:"모든 세부가 아니라 보고서의 요지만 말해 주세요." }] },
+
+  { word:"give birth to", pron:"기브 버스 투", pos:"phr", level:"B1", meanings:["낳다","생겨나게 하다"],
+    syn:["bear","spawn","bring forth"] },
+
+  /* 승격 ① — GLOSS 가 '내뿜다, 발산하다' 다. 원본은 순서만 반대이므로 사전
+     순서를 그대로 지켜 emit 문제의 화면이 안 바뀌게 했다. */
+  { word:"give off", pron:"기브 오프", pos:"phr", level:"B2", meanings:["내뿜다","발산하다"],
+    syn:["emit","release","exude"] },
+
+  { word:"give way to", pron:"기브 웨이 투", pos:"phr", level:"B2", meanings:["~에 굽히다","~로 바뀌다"],
+    syn:["yield to","succumb to","make way for"] },
+
+  /* 원본 '~을 고려하면' 은 기존 표제어 considering 과 같다. 첫 뜻을
+     '~임을 감안하면' 으로 바꿔 갈랐다. */
+  { word:"given that", pron:"기븐 댓", pos:"phr", level:"B2", meanings:["~임을 감안하면","~을 고려하면"],
+    syn:["considering","in view of","seeing that"] },
+
+  { word:"giving behavior", pron:"기빙 비헤이비어", pos:"phr", level:"C1", meanings:["기부 행위"],
+    syn:["charitable giving","philanthropy","almsgiving"] },
+
+  { word:"glacier", pron:"글레이셔", pos:"n", level:"B2", meanings:["빙하"],
+    syn:["ice sheet","ice field","icecap"],
+    ex:[{ s:"The {{}} has retreated nearly a kilometre in ten years.", f:"glacier", ko:"그 빙하는 10년 만에 거의 1킬로미터 물러났다." }] },
+
+  /* 승격 ① — GLOSS '흘끗 보다' 를 첫 자리에 지켰다.
+     glimpse 와 함께 catch a glimpse of 의 유의어로 쓰이므로, 둘의 설명이
+     같아지지 않게 glance 는 동사(보다), glimpse 는 명사(봄) 로 갈랐다. */
+  { word:"glance", pron:"글랜스", pos:"v", level:"B1", meanings:["흘끗 보다","대충 보다"],
+    syn:["peek","skim","scan"],
+    ex:[{ s:"She stopped to {{}} at the headlines on her way out.", f:"glance", ko:"그녀는 나가는 길에 멈춰 서서 표제를 흘끗 보았다." }] },
+
+  { word:"gland", pron:"글랜드", pos:"n", level:"C1", meanings:["분비기관"],
+    ex:[{ s:"The {{}} releases hormones directly into the bloodstream.", f:"gland", ko:"그 분비기관은 호르몬을 혈류로 직접 방출한다." }] },
+
+  /* 승격 ① — GLOSS '힐끗 봄' 을 첫 자리에 지켰다. glance 와 달리 명사로 뒀다. */
+  { word:"glimpse", pron:"글림프스", pos:"n", level:"B2", meanings:["힐끗 봄","잠깐 봄"],
+    syn:["peek","glance","sighting"],
+    ex:[{ s:"We caught a brief {{}} of the castle through the fog.", f:"glimpse", ko:"우리는 안개 속에서 그 성을 잠깐 보았다." }] },
+
+  { word:"glitter", pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
+    syn:["sparkle","shimmer","twinkle"],
+    ex:[{ s:"Frost made the whole field {{}} in the morning sun.", f:"glitter", ko:"서리가 아침 햇살에 들판 전체를 반짝이게 했다." }] },
+
+  { word:"globalization", pron:"글로벌라이제이션", pos:"n", level:"B2", meanings:["세계화"],
+    ex:[{ s:"{{}} has reshaped how small firms find customers.", f:"Globalization", ko:"세계화는 작은 기업이 고객을 찾는 방식을 바꿔 놓았다." }] },
+
+  /* 승격 ① — GLOSS '우울한, 침울한' 을 글자까지 지켰다. depressed·dismal·
+     dreary 세 문제가 이 단어를 유의어로 쓴다. 원본은 '암울한, 울적한' 인데
+     한국어로 거의 같은 말이고, 6차의 grim(암울한, 음침한)과 갈라두는 이점도 있다. */
+  { word:"gloomy", pron:"글루미", pos:"adj", level:"B2", meanings:["우울한","침울한"],
+    syn:["dreary","bleak","somber"], ant:["cheerful"],
+    ex:[{ s:"The waiting room felt cold and {{}}.", f:"gloomy", ko:"대기실은 차갑고 우울한 느낌이었다." }] },
+
+  { word:"glorify", pron:"글로리파이", pos:"v", level:"C1", meanings:["찬미하다","칭송하다"],
+    syn:["exalt","extol","venerate"], ant:["belittle"],
+    ex:[{ s:"The film was accused of trying to {{}} war.", f:"glorify", ko:"그 영화는 전쟁을 찬미하려 했다는 비난을 받았다." }] },
+
+  /* 원본은 '은은한 빛; 홍조; 은은하게 빛나다; 상기되다, 빨개지다' 로 네 갈래다.
+     동사 쪽 두 개로 모았다. GLOSS 에 '빛나다; 발광' 으로 있었으나 이 단어를
+     유의어로 쓰는 기존 문제는 없어 갈래를 자유롭게 고를 수 있었다. */
+  { word:"glow", pron:"글로우", pos:"v", level:"B2", meanings:["은은하게 빛나다","상기되다"],
+    syn:["shine","radiate","gleam"],
+    ex:[{ s:"Embers continued to {{}} long after the fire died down.", f:"glow", ko:"불이 잦아든 뒤에도 잉걸불이 계속 은은하게 빛났다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 재대입(=)이 아니라 Object.assign 이다.
    키는 반드시 소문자, 앞뒤 공백 없이 (조회가 s.toLowerCase() 다). */
 Object.assign(window.GLOSS, {
   "age gap":"연령 차이",
+  "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
   "bacterium":"박테리아",
@@ -251,24 +346,39 @@ Object.assign(window.GLOSS, {
   "bioengineered":"생명공학으로 만든",
   "blanket":"일괄적인, 포괄적인",
   "bolt":"튀어 달아나다",
+  "bring forth":"낳다, 생산하다",
   "car park":"주차장",
   "carport":"간이 차고",
+  "charitable giving":"자선 기부",
   "congregation":"신도들, 모인 사람들",
   "crease":"주름이 지다",
+  "crux":"핵심, 관건",
   "culture clash":"문화 충돌",
   "dynamo":"발전기",
   "embark on":"~에 착수하다",
   "engineered":"인위적으로 조작된",
   "escape blame":"책임을 면하다",
+  "essence":"본질, 요체",
+  "exalt":"칭송하다, 높이다",
+  "extol":"극찬하다",
+  "exude":"뿜어내다",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",
   "get on with":"~와 사이가 좋다",
+  "grow weary of":"~에 넌더리가 나다",
   "hit it off with":"~와 금방 친해지다",
+  "ice field":"빙원",
+  "ice sheet":"대륙 빙상",
+  "icecap":"만년설",
+  "impede":"지체시키다",
+  "in view of":"~에 비추어",
   "inherited":"물려받은",
   "landscape":"풍경, 지형",
   "liberal":"후한, 너그러운",
+  "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
+  "make way for":"~에 길을 내주다",
   "microbe":"미생물",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
@@ -278,21 +388,35 @@ Object.assign(window.GLOSS, {
   "parking space":"주차 공간",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
+  "peek":"살짝 들여다보다",
   "power unit":"동력 장치",
   "puff":"숨을 가쁘게 쉬다",
+  "pull through":"이겨 내다",
   "put across":"뜻을 전하다",
+  "radiate":"발산하다, 내비치다",
   "regional":"지역의",
+  "run wild":"제멋대로 날뛰다",
+  "seeing that":"~인 것을 보면",
+  "shimmer":"희미하게 반짝이다",
+  "sighting":"목격",
+  "somber":"침침한, 어두운",
+  "sparkle":"불꽃처럼 반짝이다",
   "spatial":"공간의",
+  "spiral":"악화로 치닫다",
   "star system":"항성계",
   "stingy":"인색한",
   "style":"양식, 형식",
+  "succumb to":"~에 무너지다",
   "terrain":"지형, 지대",
   "topographic":"지형의",
   "topography":"지형, 지세",
   "transgenic":"유전자 이식된",
   "trudge":"터벅터벅 걷다",
   "turbine":"터빈",
+  "twinkle":"깜박이며 빛나다",
   "universal":"보편적인",
+  "venerate":"숭상하다",
   "wheeze":"쌕쌕거리다",
-  "widespread":"널리 퍼진"
+  "widespread":"널리 퍼진",
+  "yield to":"~에 양보하다"
 });
