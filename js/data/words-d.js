@@ -1513,7 +1513,6 @@ Object.assign(window.GLOSS, {
   "disobey":"불복종하다, 거역하다",
   "dry out":"말리다, 건조되다",
   "edict":"포고령, 칙령",
-  "enhance":"높이다, 향상시키다",
   "enjoyable":"즐거운, 재미있는",
   "erase":"지우다, 삭제하다",
   "fault":"결점, 잘못",
