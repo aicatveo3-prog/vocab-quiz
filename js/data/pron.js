@@ -817,7 +817,6 @@ Object.assign(window.PRON, {
   "express regret": "익스프레스 리그레트",
   "expurgate": "엑스퍼게이트",
   "extra": "엑스트라",
-  "extract": "익스트랙트",
   "face": "페이스",
   "facet": "패싯",
   "facility": "퍼실러티",
@@ -3737,7 +3736,6 @@ Object.assign(window.PRON, {
   "dig up": "디그 업",
   "dodging": "다징",
   "dry up": "드라이 업",
-  "extraordinary": "익스트로디너리",
   "gradual change": "그래주얼 체인지",
   "grow gradually": "그로 그래주얼리",
   "in the end": "인 더 엔드",
@@ -3904,5 +3902,30 @@ Object.assign(window.PRON, {
 
   /* GLOSS 에만 있고 발음이 없던 것 — 11차의 growth 들과 같은 경우다 */
   "search": "서치",
-  "survey": "서베이"
+  "survey": "서베이",
+
+  /* ── 13차: extinction ~ eyesore (19개, 마지막) ─────────────────
+     non-inherent 는 기존 be inherent in("비 인히어런트 인")에 맞췄다. */
+  "blot on the landscape": "블랏 온 더 랜드스케이프",
+  "coming from outside": "커밍 프럼 아웃사이드",
+  "distill": "디스틸",
+  "dying out": "다잉 아웃",
+  "intrinsic": "인트린식",
+  "introvert": "인트러버트",
+  "lavish": "래비시",
+  "monstrosity": "만스트라서티",
+  "non-inherent": "난 인히어런트",
+  "outgoing person": "아웃고잉 퍼슨",
+  "people person": "피플 퍼슨",
+  "phenomenal": "퍼나머널",
+  "put out": "풋 아웃",
+  "quench": "퀜치",
+  "snuff out": "스너프 아웃",
+  "sociable type": "소셔블 타입",
+  "take out": "테이크 아웃",
+  "ugly sight": "어글리 사이트",
+  "wiping out": "와이핑 아웃",
+
+  /* GLOSS 에만 있고 발음이 없던 것 — 12차의 search 들과 같은 경우다 */
+  "ignite": "익나이트"
 });

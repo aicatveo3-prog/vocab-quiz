@@ -117,11 +117,16 @@
  *   extend      원본 '확대하다, 확장하다' 대신 기존 GLOSS "늘리다, 연장하다" 를 썼다
  *               (아래 12차 기록의 ★ 참고)
  *   extinct     '멸종된, 사라진, 사화산의' → 둘로
+ *   extract     원본은 동사만 주는데 기존 GLOSS 의 '발췌하다' 를 둘째 뜻으로 남겼다
+ *               (표제어 clipping 이 유의어로 쓴다 — 아래 13차 기록 참고)
+ *   extrinsic   '외적인, 외부의' → '외적인, 외부에서 오는' (external 과 겹치지 않게)
+ *   extrovert   위 목록에 적은 대로 명사 '외향적인 사람' 으로 바로잡았다
+ *   extraterrestrial  '외계인, 우주인; 지구 밖 생물체의, 외계의' → 명사로 정리
  *
- * ── 작업 현황 ─────────────────────────────────
- * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
+ * ── 작업 현황 — 완료 ──────────────────────────
+ * 250단어 전량 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 썼다.
  * 차수를 챕터 크기(20)에 맞췄다. 알파벳순으로 뒤에만 붙으므로 한 번 완성한
- * 챕터는 다음 차수가 건드리지 않는다 — 차수마다 챕터 하나가 확정된다.
+ * 챕터는 다음 차수가 건드리지 않는다 — 차수마다 챕터 하나가 확정됐다.
  *
  *   1차  20개  e-commerce ~ efficient      ← 완료
  *   2차  20개  effortless ~ elevated       ← 완료
@@ -135,7 +140,7 @@
  *  10차  20개  excessive ~ exhibition      ← 완료
  *  11차  20개  exhilarating ~ explicit     ← 완료
  *  12차  20개  explicitly ~ extinct        ← 완료
- *  13차  10개  extinction ~ eyesore
+ *  13차  10개  extinction ~ eyesore        ← 완료
  *
  * ── 1차 기록 ─────────────────────────────────
  * syn 을 비운 7개 (e-commerce·ebb·eclipse·ecological·ecology·ecosystem·
@@ -483,6 +488,80 @@
  *   search     researcher("리서처"),  broad  broaden("브로든")에 맞췄다
  *
  * PRON 에 뒤늦게 채운 2개 — search, survey. 11차의 growth 들과 같다.
+ *
+ * ── 13차 기록 (마지막) ────────────────────────
+ * 사전에 이미 있던 낱말이 2개로 가장 적었다. extraordinary 는 9차에서 exceptional 의
+ * 유의어로 내가 넣은 것이다 — 앞 차수 항목이 표제어로 올라온 일곱 번째이자 마지막 사례다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 2개
+ *   gloss.js   extract
+ *   words-e.js extraordinary(9차)   ← 내가 넣은 것
+ *   pron.js    위 2개 전부
+ *
+ * ★ extract — 뜻을 반씩 가져와 기존 참조를 지켰다
+ *   원본은 '뽑다, 뽑아내다, 추출하다' 로 동사만 주는데, 기존 GLOSS 는 "발췌하다;
+ *   추출물" 이었고 표제어 clipping(명사 "오려낸 기사, 스크랩")이 이 낱말을 유의어로
+ *   쓴다. 원본만 따르면 clipping 쪽에서 '발췌' 갈래가 사라진다.
+ *   그래서 원본의 '추출하다' 를 첫 뜻으로, 기존 GLOSS 의 '발췌하다' 를 둘째 뜻으로
+ *   남겼다 — 품사는 동사이므로 clipping 쪽은 어미만 바뀌고 뜻은 지켜진다.
+ *   12차 exploit(adventure 의 '모험' 갈래를 못 지켰다)과 대비되는 경우다. 원본과
+ *   기존 GLOSS 가 다를 때, 두 쪽에서 한 갈래씩 가져올 수 있으면 그게 가장 낫다.
+ *
+ * 뜻 조각 조사로 미리 피한 것 (12차에서 만든 방법)
+ *   extrinsic  '외부의' 를 '외부에서 오는' 으로, 레벨도 C2 로 — 표제어 external
+ *              (12차, B2 "외부의, 외면의")과 두 칸 벌렸다
+ *   extraordinary  원본의 '놀라운' 을 쓰지 않았다 — amazing(B1 "놀라운, 굉장한")·
+ *              breathtaking(B2 "숨이 멎을 듯한, 놀라운")과 뒤섞인다. 9차에 내가
+ *              넣은 "비범한, 대단한" 을 그대로 썼다(exceptional 도 함께 지켜졌다)
+ *   extinction 원본의 '소멸' 대신 '절멸' — dissipate(C2 "소멸되다, 낭비하다")를 피했다
+ *              (품사가 달라 급하진 않지만 굳이 겹칠 이유가 없다)
+ *
+ * syn 을 비운 2개 — extracurricular·extraterrestrial. 학교 용어와 우주 용어인데
+ * 후보가 모두 표제어를 길게 풀어 쓴 것뿐이다. alien 은 표제어인데 품사가 형용사
+ * ("이질적인, 생소한")여서 extraterrestrial(명사)에 쓸 수 없었다.
+ *
+ * 유의어에서 걸러낸 것
+ *   extract 의 pull out → "물러나다, 손을 떼다"        ✗ → distill
+ *   extraterrestrial 의 alien → 표제어인데 품사가 형용사 ✗ → syn 을 비웠다
+ *
+ * 발음은 기존 표기에서 찾아 맞췄다
+ *   extraterrestrial  기존 PRON 의 terrestrial("터레스트리얼")
+ *   extracurricular   표제어 curriculum("커리큘럼")
+ *   eyesore           표제어 black eye("블랙 아이")
+ *   non-inherent      be inherent in("비 인히어런트 인") — '인히런트' 가 아니다
+ *
+ * PRON 에 뒤늦게 채운 1개 — ignite. 12차의 search 들과 같다.
+ *
+ * ── E 세트를 마치며 ───────────────────────────
+ * 250단어 / 13챕터. 13차수 내내 짝 맞추기 지문 2c5b7afb8552 가 한 번도 바뀌지
+ * 않았다 — A·B·C 세트의 기존 문제는 하나도 변하지 않았다는 뜻이다.
+ *
+ * 차수마다 되풀이된 일 세 가지를 적어 둔다. F 세트에서도 그대로 겪을 것이다.
+ *
+ *  1) 사전에 이미 있는 낱말을 표제어로 올리는 일 — 13차수 합계 92개였다
+ *     (차수별 수는 각 차수 기록에 적어 두었다).
+ *     기존 표제어가 그 낱말을 유의어·반의어로 쓰고 있으면 뜻을 함부로 못 바꾼다.
+ *     작업 전에 영향받는 표제어의 렌더를 먼저 떠 두고, 작업 후 하나씩 대조하는
+ *     방법이 가장 확실했다(4차부터 썼다).
+ *
+ *  2) 앞 차수에서 내가 넣은 GLOSS 가 뒤 차수에 표제어가 되는 일 — 7번 있었다.
+ *     eradicate(7차)·established(8차)·even·everlasting(9차)·exemplify(10차)·
+ *     explosion(12차)·extraordinary(13차). 조사 스크립트가 words-e.js 까지 훑고,
+ *     '다음 차수에 올 낱말이 이미 사전에 있나' 를 세도록 해 두면 미리 보인다.
+ *
+ *  3) 뜻이 겹치는 짝을 갈라 놓는 일 — 레벨을 두 칸 벌리는 것이 정석이다
+ *     (element/elements 이후 계속 썼다). 다만 레벨은 B1·B2·C1·C2 넷뿐이라
+ *     B2 에 있는 짝은 C2 로만 벌릴 수 있다. 기본 낱말끼리 겹치면 레벨로는 풀 수
+ *     없고 뜻으로 갈라야 한다(11차 expand/enlarge). 12차에 만든 '뜻 조각으로
+ *     기존 표제어를 거꾸로 뒤지기' 가 쓰기 전에 알아내는 가장 빠른 방법이었다.
+ *
+ * 덤으로 고쳐진 묵은 중복 2건
+ *   표제어 apparent 의 유의어 obvious 와 evident 가 둘 다 "분명한, 명백한" 이었다 (9차)
+ *   표제어 barter 의 유의어 exchange 와 swap 이 둘 다 "교환하다" 였다        (10차)
+ * 사전 항목은 뜻이 하나뿐인 경우가 많은데, 표제어로 올리면서 뜻을 둘로 적으면
+ * 이런 중복이 저절로 사라진다. 일부러 찾아 고친 것이 아니라 덤으로 얻은 것이다.
+ *
+ * 반대로 동사·명사가 어긋난 채로 남은 것은 아래 '남겨 둔 기존 문제' 5개다.
  *
  * ── 손대지 않고 남겨 둔 기존 문제 5개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
@@ -1877,7 +1956,69 @@ window.VOCAB_E = [
      "멸종 위기에 처한")와는 '멸종된' 과 '멸종 위기' 로 뜻이 분명히 갈린다. */
   { word:"extinct", pron:"익스팅트", pos:"adj", level:"B2", meanings:["멸종된","사라진"],
     syn:["died out","no longer existing","wiped out"], ant:["surviving"],
-    ex:[{ s:"The bird has been {{}} for over a century.", f:"extinct", ko:"그 새는 한 세기 넘게 멸종된 상태다." }] }
+    ex:[{ s:"The bird has been {{}} for over a century.", f:"extinct", ko:"그 새는 한 세기 넘게 멸종된 상태다." }] },
+
+  /* ── 13차: extinction ~ eyesore (10개, 마지막) ────── */
+
+  { word:"extinction", pron:"익스팅션", pos:"n", level:"B2", meanings:["멸종","절멸"],
+    syn:["dying out","disappearance","wiping out"],
+    ex:[{ s:"Two more frog species face {{}} this decade.", f:"extinction", ko:"개구리 두 종이 이번 10년 안에 멸종에 직면한다." }] },
+
+  { word:"extinguish", pron:"익스팅귀시", pos:"v", level:"C1", meanings:["끄다","소멸시키다"],
+    syn:["put out","snuff out","quench"], ant:["ignite"],
+    ex:[{ s:"It took four hours to {{}} the peat fire.", f:"extinguish", ko:"그 토탄 화재를 끄는 데 네 시간이 걸렸다." }] },
+
+  /* ⚠️ 원본은 '뽑다, 뽑아내다, 추출하다' 로 동사만 주지만 기존 GLOSS 는
+     "발췌하다; 추출물" 이었다. 표제어 clipping(명사 "오려낸 기사, 스크랩")이 이 낱말을
+     유의어로 쓰므로 '발췌' 갈래가 살아 있어야 한다 — 그래서 원본의 '추출하다' 를
+     앞에 두고 기존 GLOSS 의 '발췌하다' 를 둘째 뜻으로 남겼다. 품사는 동사이므로
+     clipping 쪽은 어미가 바뀌지만 뜻은 지켜진다(7차 equal 과 같은 꼴).
+     유의어로 pull out 은 쓰지 않았다 — GLOSS 가 "물러나다, 손을 떼다" 다. */
+  { word:"extract", pron:"익스트랙트", pos:"v", level:"C1", meanings:["추출하다","발췌하다"],
+    syn:["draw out","distill","take out"],
+    ex:[{ s:"Machines now {{}} sugar from beet in one pass.", f:"extract", ko:"기계는 이제 한 번에 사탕무에서 설탕을 추출한다." }] },
+
+  /* syn 을 비웠다 — 학교 용어다. after-school·outside the curriculum 류는 모두
+     '정규 과목 밖' 을 달리 말한 것뿐이어서 셋을 채우면 같은 말을 세 번 한다. */
+  { word:"extracurricular", pron:"엑스트러커리큘러", pos:"adj", level:"C1", meanings:["과외의","정규 과목 이외의"],
+    ex:[{ s:"She signed up for two {{}} clubs.", f:"extracurricular", ko:"그녀는 과외 동아리 두 개에 등록했다." }] },
+
+  /* 9차에서 exceptional 의 유의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로
+     올라온다 — 그 항목을 지웠다. 뜻 "비범한, 대단한" 을 그대로 옮겼다.
+     원본의 '놀라운' 을 쓰면 표제어 amazing(B1 "놀라운, 굉장한")·breathtaking
+     (B2 "숨이 멎을 듯한, 놀라운")과 뜻이 뒤섞인다. */
+  { word:"extraordinary", pron:"익스트로디너리", pos:"adj", level:"C1", meanings:["비범한","대단한"],
+    syn:["exceptional","remarkable","phenomenal"],
+    ex:[{ s:"She has an {{}} memory for names.", f:"extraordinary", ko:"그녀는 이름을 기억하는 데 비범한 능력이 있다." }] },
+
+  /* 원본은 '외계인, 우주인; 지구 밖 생물체의, 외계의' 로 명사와 형용사가 섞여 있다 —
+     명사로 정했다. syn 을 비웠다: 후보가 모두 '우주에서 온 존재' 를 달리 말한 것이고,
+     alien 은 표제어인데 품사가 형용사("이질적인, 생소한")라 쓸 수 없다.
+     발음은 기존 PRON 의 terrestrial("터레스트리얼")에 맞췄다. */
+  { word:"extraterrestrial", pron:"엑스트러터레스트리얼", pos:"n", level:"C2", meanings:["외계인","지구 밖 생물체"],
+    ex:[{ s:"The film treats its {{}} as an ordinary neighbor.", f:"extraterrestrial", ko:"그 영화는 외계인을 평범한 이웃처럼 다룬다." }] },
+
+  { word:"extravagant", pron:"익스트래버건트", pos:"adj", level:"C1", meanings:["사치스러운","낭비하는"],
+    syn:["lavish","wasteful","over the top"], ant:["thrifty"],
+    ex:[{ s:"The wedding was more {{}} than anyone expected.", f:"extravagant", ko:"그 결혼식은 누가 예상한 것보다 사치스러웠다." }] },
+
+  /* 뜻을 '외적인, 외부에서 오는' 으로 잡았다 — 표제어 external(12차, B2 "외부의,
+     외면의")과 '외부의' 가 글자까지 겹치지 않게 하려는 것이다. 레벨도 C2 로 둬서
+     B2 와 두 칸 벌렸다. external 을 유의어로 쓰는 것은 그대로 괜찮다. */
+  { word:"extrinsic", pron:"익스트린식", pos:"adj", level:"C2", meanings:["외적인","외부에서 오는"],
+    syn:["external","coming from outside","non-inherent"], ant:["intrinsic"],
+    ex:[{ s:"Pay is an {{}} reward; curiosity is not.", f:"extrinsic", ko:"보수는 외적인 보상이고 호기심은 그렇지 않다." }] },
+
+  /* 원본의 '외향적인'(형용사)은 extroverted 와 혼동한 것이다 — 헤더에 적어 둔 대로
+     명사 '외향적인 사람' 으로 바로잡았다. */
+  { word:"extrovert", pron:"엑스트러버트", pos:"n", level:"C1", meanings:["외향적인 사람"],
+    syn:["outgoing person","sociable type","people person"], ant:["introvert"],
+    ex:[{ s:"Every team needs one {{}} to break the silence.", f:"extrovert", ko:"모든 팀에는 침묵을 깨 줄 외향적인 사람 하나가 필요하다." }] },
+
+  /* E 세트의 마지막 낱말. 발음은 기존 표제어 black eye("블랙 아이")에 맞췄다. */
+  { word:"eyesore", pron:"아이소어", pos:"n", level:"C1", meanings:["눈에 거슬리는 것"],
+    syn:["ugly sight","blot on the landscape","monstrosity"],
+    ex:[{ s:"The half-built tower is an {{}} on the skyline.", f:"eyesore", ko:"그 반쯤 지은 탑은 스카이라인에서 눈에 거슬리는 것이다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -2182,7 +2323,6 @@ Object.assign(window.GLOSS, {
   "dig up":"파내다",
   "dodging":"슬쩍 피함",
   "dry up":"말라 없어지다",
-  "extraordinary":"비범한, 대단한",
   "gradual change":"서서히 일어나는 변화",
   "grow gradually":"서서히 자라다",
   "in the end":"끝에는",
@@ -2330,5 +2470,26 @@ Object.assign(window.GLOSS, {
   "use unfairly":"부당하게 이용하다",
   "volatile":"휘발성의, 불안정한",
   "wide-ranging":"폭넓은",
-  "wiped out":"완전히 없어진"
+  "wiped out":"완전히 없어진",
+
+  /* ── 13차: extinction ~ eyesore (19개, 마지막) ───────────────── */
+  "blot on the landscape":"경관을 망치는 것",
+  "coming from outside":"밖에서 들어오는",
+  "distill":"증류해 뽑아내다",
+  "dying out":"멸종해 감",
+  "intrinsic":"본질적인, 내재적인",
+  "introvert":"내향적인 사람",
+  "lavish":"호화로운",
+  "monstrosity":"기괴하게 흉한 것",
+  "non-inherent":"본래의 것이 아닌",
+  "outgoing person":"사교적인 사람",
+  "people person":"사람을 좋아하는 사람",
+  "phenomenal":"경이로운",
+  "put out":"불을 끄다",
+  "quench":"물로 끄다",
+  "snuff out":"꺼 버리다",
+  "sociable type":"어울리기 좋아하는 사람",
+  "take out":"꺼내다",
+  "ugly sight":"보기 흉한 광경",
+  "wiping out":"완전히 없앰"
 });
