@@ -533,12 +533,99 @@ window.VOCAB_G = [
   /* 원본의 '빵다' 는 오타라 '빻다' 로 고쳤다 (0차에 기록). */
   { word:"grind", pron:"그라인드", pos:"v", level:"B2", meanings:["갈다","빻다"],
     syn:["crush","pulverize","mill"],
-    ex:[{ s:"Machines {{}} the beans into a fine powder.", f:"grind", ko:"기계가 그 원두를 고운 가루로 갈아 낸다." }] }
+    ex:[{ s:"Machines {{}} the beans into a fine powder.", f:"grind", ko:"기계가 그 원두를 고운 가루로 갈아 낸다." }] },
+
+  /* ── 챕터 6 (마지막 15단어) ─────────────────── */
+
+  /* grab·grasp 와 갈라 '놓지 않는 힘' 쪽을 맡는다. 원본의 '통제' 는 장악으로 썼다. */
+  { word:"grip", pron:"그립", pos:"v", level:"B2", meanings:["꽉 붙잡다","장악"],
+    syn:["clasp","clutch","hold fast"],
+    ex:[{ s:"He had to {{}} the rope with both hands.", f:"grip", ko:"그는 두 손으로 그 줄을 꽉 붙잡아야 했다." }] },
+
+  /* 승격 ② — GLOSS '신음하다; 삐걱거리다' 를 글자까지 지켰다. creak 의 유의어로
+     쓰이는 쪽이 '삐걱거리다' 라, 원본의 '끙 하는 소리를 내다' 로 바꾸면
+     그 문제가 어긋난다. */
+  { word:"groan", pron:"그론", pos:"v", level:"B2", meanings:["신음하다","삐걱거리다"],
+    syn:["moan","creak","whine"],
+    ex:[{ s:"The old floorboards {{}} under every step.", f:"groan", ko:"낡은 바닥판이 발걸음마다 삐걱거린다." }] },
+
+  { word:"gross", pron:"그로스", pos:"adj", level:"B2", meanings:["모두 합친","전체의"],
+    syn:["total","aggregate","overall"], ant:["net"],
+    ex:[{ s:"The company reported a {{}} profit of two million.", f:"gross", ko:"그 회사는 200만의 총이익을 보고했다." }] },
+
+  /* 승격 ② + 기존 결함 수정.
+     사전에 ground 가 두 번 등록돼 있었다 — words.js 에 '지상의'(aerial 의
+     반의어용), gloss.js 에 '근거, 근거지'. index.html 이 gloss.js 를 나중에
+     읽으므로 '근거, 근거지' 가 이겨서, aerial(공중의)의 반의어가 화면에
+     '근거, 근거지' 로 찍히고 있었다. 공중의 반의어로 말이 안 되는 문자열이다.
+     기준선(main)에서 실제로 그렇게 나오는 것을 확인했다.
+
+     ground 를 쓰는 기존 문제는 aerial 하나뿐이므로, 그 문제가 성립하도록
+     '지면' 을 첫 자리에 두고 사전에 있던 '근거' 를 둘째로 남겼다.
+     원본의 동사 뜻(토대가 되다, 외출 금지시키다)은 담지 않았다 — 기존 문제를
+     지키는 명사 쪽이 우선이고, meanings 는 2개까지다. */
+  { word:"ground", pron:"그라운드", pos:"n", level:"B1", meanings:["지면","근거"],
+    syn:["basis","foundation","rationale"],
+    ex:[{ s:"There is no {{}} for cancelling the contract.", f:"ground", ko:"그 계약을 취소할 근거가 없다." }] },
+
+  { word:"groundbreaking", pron:"그라운드브레이킹", pos:"adj", level:"B2", meanings:["획기적인"],
+    syn:["pioneering","innovative","trailblazing"],
+    ex:[{ s:"Her {{}} study changed how doctors treat the illness.", f:"groundbreaking", ko:"그녀의 획기적인 연구는 의사들이 그 병을 치료하는 방식을 바꿨다." }] },
+
+  { word:"groundless", pron:"그라운드리스", pos:"adj", level:"C1", meanings:["근거 없는"],
+    syn:["unfounded","baseless","unwarranted"], ant:["justified"],
+    ex:[{ s:"The court found the accusation entirely {{}}.", f:"groundless", ko:"법원은 그 고발이 전혀 근거 없다고 판단했다." }] },
+
+  /* 승격 ② — GLOSS '자라다; 증가하다' 를 글자까지 지켰다. cultivate 의 유의어이고
+     dwindle 문제의 반의어로도 쓰인다. */
+  { word:"grow", pron:"그로우", pos:"v", level:"B1", meanings:["자라다","증가하다"],
+    syn:["expand","develop","flourish"], ant:["shrink"],
+    ex:[{ s:"Sales continued to {{}} through the winter months.", f:"grow", ko:"매출은 겨울 동안 계속 증가했다." }] },
+
+  { word:"growl", pron:"그라울", pos:"v", level:"B2", meanings:["으르렁거리다"],
+    syn:["snarl","rumble","grumble"],
+    ex:[{ s:"The dog began to {{}} at the approaching stranger.", f:"growl", ko:"그 개는 다가오는 낯선 사람에게 으르렁거리기 시작했다." }] },
+
+  { word:"grudge", pron:"그러지", pos:"n", level:"C1", meanings:["원한","앙심"],
+    syn:["resentment","rancor","bitterness"],
+    ex:[{ s:"She held a {{}} against him for years.", f:"grudge", ko:"그녀는 여러 해 그에게 원한을 품었다." }] },
+
+  /* 승격 ② — GLOSS '투덜거리다' 를 첫 자리에 지켰다. 원본 첫 뜻 '불평하다' 는
+     기존 표제어 complain 과 글자까지 같아 복수 정답이 되므로 둘째로 내렸다. */
+  { word:"grumble", pron:"그럼블", pos:"v", level:"B2", meanings:["투덜거리다","불평하다"],
+    syn:["complain","gripe","carp"],
+    ex:[{ s:"Staff began to {{}} about the new schedule.", f:"grumble", ko:"직원들은 새 일정에 대해 투덜거리기 시작했다." }] },
+
+  /* 승격 ② — GLOSS '보장하다; 보증' 을 글자까지 지켰다. assure·ensure 두 문제가
+     이 단어를 유의어로 쓴다. 첫 뜻이 기존 표제어 cover 와 같지만, quizgen 의
+     distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
+  { word:"guarantee", pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
+    syn:["assure","ensure","pledge"],
+    ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },
+
+  /* 원본 첫 뜻 '조합' 은 기존 표제어 combination 과 같아 '길드' 를 앞에 두었다. */
+  { word:"guild", pron:"길드", pos:"n", level:"C1", meanings:["길드","조합"],
+    syn:["association","society","fellowship"],
+    ex:[{ s:"Medieval weavers formed a powerful {{}}.", f:"guild", ko:"중세 직조공들은 강력한 길드를 결성했다." }] },
+
+  /* 승격 ② — GLOSS '죄책감 드는, 유죄의' 를 글자까지 지켰다. ashamed 의 유의어다. */
+  { word:"guilty", pron:"길티", pos:"adj", level:"B1", meanings:["죄책감 드는","유죄의"],
+    syn:["ashamed","remorseful","culpable"], ant:["innocent"],
+    ex:[{ s:"He felt {{}} about forgetting her birthday.", f:"guilty", ko:"그는 그녀의 생일을 잊은 것에 죄책감을 느꼈다." }] },
+
+  { word:"gust", pron:"거스트", pos:"n", level:"B2", meanings:["돌풍"],
+    syn:["blast","squall","flurry"],
+    ex:[{ s:"A sudden {{}} tore the umbrella from her hand.", f:"gust", ko:"갑작스러운 돌풍이 그녀의 손에서 우산을 빼앗았다." }] },
+
+  { word:"gymnastics", pron:"짐내스틱스", pos:"n", level:"B1", meanings:["체조"],
+    syn:["acrobatics","tumbling","calisthenics"],
+    ex:[{ s:"She took up {{}} at the age of six.", f:"gymnastics", ko:"그녀는 여섯 살에 체조를 시작했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 재대입(=)이 아니라 Object.assign 이다.
    키는 반드시 소문자, 앞뒤 공백 없이 (조회가 s.toLowerCase() 다). */
 Object.assign(window.GLOSS, {
+  "acrobatics":"곡예",
   "age gap":"연령 차이",
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
@@ -547,6 +634,8 @@ Object.assign(window.GLOSS, {
   "avarice":"금전욕",
   "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
+  "baseless":"근거가 희박한",
+  "basis":"기반, 밑바탕",
   "be friendly with":"~와 친하게 지내다",
   "beckon":"손짓으로 부르다",
   "benevolence":"자애, 선행",
@@ -554,10 +643,13 @@ Object.assign(window.GLOSS, {
   "blanket":"일괄적인, 포괄적인",
   "bolt":"튀어 달아나다",
   "bring forth":"낳다, 생산하다",
+  "calisthenics":"맨손 체조",
   "car park":"주차장",
+  "carp":"트집을 잡다",
   "carport":"간이 차고",
   "cereal":"곡물, 시리얼",
   "charitable giving":"자선 기부",
+  "clasp":"움켜 안다",
   "clutch":"꽉 붙잡다",
   "complete studies":"학업을 마치다",
   "congregation":"신도들, 모인 사람들",
@@ -569,6 +661,7 @@ Object.assign(window.GLOSS, {
   "covetousness":"남의 것을 바람",
   "crease":"주름이 지다",
   "crux":"핵심, 관건",
+  "culpable":"잘못이 있는",
   "culture clash":"문화 충돌",
   "dire":"극심한, 심각한",
   "downward pull":"아래로 끌는 힘",
@@ -585,6 +678,7 @@ Object.assign(window.GLOSS, {
   "exude":"뿜어내다",
   "fatty":"지방이 많은",
   "finish school":"학교를 마치다",
+  "flurry":"돌발적인 바람",
   "food lover":"음식을 즐기는 사람",
   "forbidding":"위압적인, 험악한",
   "gape":"입을 벌리고 보다",
@@ -595,10 +689,12 @@ Object.assign(window.GLOSS, {
   "go bankrupt":"파산하다",
   "go under":"사업이 망하다",
   "grasping":"욕심 사나운",
+  "gripe":"툴툴대다",
   "grow weary of":"~에 넌더리가 나다",
   "guiding principle":"지침이 되는 원칙",
   "heartache":"가슴앓이",
   "hit it off with":"~와 금방 친해지다",
+  "hold fast":"단단히 붙들다",
   "hopeful":"희망적인",
   "hothouse":"난방 온실",
   "ice field":"빙원",
@@ -611,7 +707,10 @@ Object.assign(window.GLOSS, {
   "indebtedness":"은혜를 입음",
   "ingratitude":"배은망덕",
   "inherited":"물려받은",
+  "innocent":"무죄인",
+  "innovative":"혁신적인",
   "insatiable":"만족을 모르는",
+  "justified":"정당한 근거가 있는",
   "kernel":"알맹이",
   "landscape":"풍경, 지형",
   "lattice":"격자 구조",
@@ -625,6 +724,7 @@ Object.assign(window.GLOSS, {
   "mesh":"그물망",
   "microbe":"미생물",
   "mill":"제분하다",
+  "moan":"앓는 소리를 내다",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
   "network":"망, 연결망",
@@ -639,6 +739,7 @@ Object.assign(window.GLOSS, {
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
   "peek":"살짝 들여다보다",
+  "pioneering":"선구적인",
   "please":"흡족하게 하다",
   "power unit":"동력 장치",
   "precept":"계율, 가르침",
@@ -651,9 +752,11 @@ Object.assign(window.GLOSS, {
   "put across":"뜻을 전하다",
   "radiate":"발산하다, 내비치다",
   "rapacity":"탐욕스러운 강탈",
+  "rationale":"논리적 근거",
   "reclusive":"은둔하는",
   "regional":"지역의",
   "resplendent":"눈부시게 화려한",
+  "rumble":"우르릉거리다",
   "run wild":"제멋대로 날뛰다",
   "seeing that":"~인 것을 보면",
   "shimmer":"희미하게 반짝이다",
@@ -661,6 +764,7 @@ Object.assign(window.GLOSS, {
   "sift through":"자세히 살펴보다",
   "sighting":"목격",
   "slick":"매끄럽고 미끈한",
+  "snarl":"이를 드러내고 으르렁대다",
   "snatch":"낚아채다",
   "solemn":"엄숙한",
   "somber":"침침한, 어두운",
@@ -669,6 +773,7 @@ Object.assign(window.GLOSS, {
   "sparkle":"불꽃처럼 반짝이다",
   "spatial":"공간의",
   "spiral":"악화로 치닫다",
+  "squall":"스콜, 돌풍",
   "star system":"항성계",
   "stark":"냉혹한, 황량한",
   "stick":"달라붙다",
@@ -680,16 +785,21 @@ Object.assign(window.GLOSS, {
   "tier":"층, 단",
   "topographic":"지형의",
   "topography":"지형, 지세",
+  "trailblazing":"길을 개척하는",
   "transgenic":"유전자 이식된",
   "trudge":"터벅터벅 걷다",
+  "tumbling":"공중 곡예",
   "turbine":"터빈",
   "twinkle":"깜박이며 빛나다",
+  "unfounded":"사실 근거가 없는",
   "universal":"보편적인",
+  "unwarranted":"부당한",
   "venerate":"숭상하다",
   "vivid":"선명한",
   "weight force":"무게로 작용하는 힘",
   "weighty":"중대한, 무거운",
   "wheeze":"쌕쌕거리다",
+  "whine":"낑낑거리다",
   "widespread":"널리 퍼진",
   "wince":"움찔하다",
   "yield to":"~에 양보하다"

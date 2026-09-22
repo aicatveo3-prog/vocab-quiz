@@ -1684,7 +1684,6 @@ window.GLOSS = {
   "foreign":"외국의",
   "graceful":"우아한",
   "gradually":"점차적으로",
-  "ground":"지상의",
   "grounded":"지상에 있는, 이륙하지 못한",
   "health":"건강",
   "hinder":"방해하다",
