@@ -1978,7 +1978,6 @@ Object.assign(window.GLOSS, {
   "fixed":"고정된",
   "floor":"바닥, 층",
   "forget":"잊다",
-  "formal":"격식을 갖춘, 공식적인",
   "fragmented":"조각난, 분열된",
   "free":"자유로운, 풀려난",
   "freedom":"자유",

@@ -276,7 +276,52 @@
  *   foremost)은 다섯째 글자부터 갈라져 여섯 글자 가족이 아니다. 0차 보드
  *   예비검사에서도 걸리지 않았다.
  *
- * 진행 상황: 140 / 210단어 (fable ~ foremost) — 7차, 7챕터 완료.
+ * ── 8차 기록 ──
+ *   승격 11개. 가장 많이 올린 차수다.
+ *     무변  foresee ["예견하다","내다보다"] ← anticipate(syn)·expect(syn)
+ *           formal  ["격식을 갖춘","공식적인"] ← casual(ant)
+ *           former  ["이전의","전자의"]      ← bygone(syn)
+ *           fortune ["운","행운"]           ← destiny(syn)
+ *           format·formation·formula 는 사전에만 있고 참조가 없던 항목이라
+ *           무엇으로 정해도 기존 문제에 영향이 없다
+ *     변경  form       "구성하다; 형태"     → ["형성시키다","구성하다"]
+ *           forsake    "버리다, 포기하다"    → ["버리다","떠나다"]
+ *           forthright "솔직한, 거리낌없는"  → ["솔직 담백한","거리낌없는"]
+ *           found      "창립하다"           → ["설립하다","창립하다"]
+ *
+ *   form ★ 네 곳이 참조하고 넷 다 동사 자리다(come into existence·compose·
+ *     constitute·crystallize). 기존 뜻에 섞여 있던 명사 '형태' 는 네 자리
+ *     어디에도 쓰이지 않는 군더더기였다. 동사로만 모아 네 문제의 설명을
+ *     또렷하게 했다. flow(6차)는 명사 자리가 셋이라 두 갈래를 남겼지만
+ *     여기는 넷 다 동사여서 갈래를 하나로 좁히는 것이 옳다.
+ *
+ *   forsake 기존 뜻이 표제어 abandon 의 뜻과 글자까지 같았다.
+ *   forthright 기존 뜻의 첫 마디가 표제어 candid 의 첫 뜻과 같고, 유의어
+ *     frank 의 뜻과도 글자까지 같았다. 원본의 '솔직 담백한' 으로 셋을 갈랐다.
+ *   fortune 2차의 fate 가 ["운명","숙명"] 이고 destiny 는 fate 와 fortune 을
+ *     함께 유의어로 쓴다. 원본의 '운명' 을 첫 뜻으로 쓰면 한 문제에서 두
+ *     선택지가 같은 글자로 시작한다. 기존 뜻을 그대로 두어 갈랐다.
+ *
+ * ── 8차 계열·레벨 배치 ──
+ *   format·formation 이 앞 여섯 글자가 같은 가족이고 둘 다 명사다. 레벨을 두
+ *   단계 벌리고(B1 · C1) 첫 뜻도 겹치지 않게 골랐다(형식 / 형성).
+ *   form(v)·formal(adj)·former(adj)·formula(n) 은 formatN 계열과 다섯째
+ *   글자에서 갈라져 여섯 글자 가족이 아니다. forge(v)·forgery(n) 도 다섯
+ *   글자까지만 같고 품사가 다르다. foresee(v)·foresight(n) 도 같다.
+ *
+ * ── 8차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   counterfeit·fake  forge 의 유의어로 쓰려 했으나 둘 다 형용사 표제어여서
+ *                     동사 자리에 '가짜의' 가 뜬다
+ *   shape   form 의 유의어로 쓰려 했으나 뜻이 '형태; 영향을 미치다' 로 명사가
+ *           먼저 온다
+ *   blunt   forthright 의 유의어로 쓰려 했으나 표제어 뜻이 '무딘' 이다
+ *   past    former 의 유의어로 쓰려 했으나 뜻이 '~을 지나서; 과거' 로 전치사가
+ *           먼저 온다
+ *   spring  fountain 의 유의어로 쓰려 했으나 뜻이 '튀다; 봄' 이다
+ *   prosperity  fortune 의 유의어로 쓰려 했으나 뜻이 '번영, 번창' 이다
+ *   creation    formation 의 유의어로 쓰려 했으나 표제어 뜻이 '창작물, 창작'이다
+ *
+ * 진행 상황: 160 / 210단어 (fable ~ fountain) — 8차, 8챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -957,7 +1002,112 @@ window.VOCAB_F = [
 
   { word:"foremost", pron:"포모스트", pos:"adj", level:"C1", meanings:["가장 중요한","주요한"],
     syn:["leading","principal","chief"],
-    ex:[{ s:"She is the {{}} authority on coastal birds.", f:"foremost", ko:"그녀는 해안 조류에 관한 가장 중요한 권위자다." }] }
+    ex:[{ s:"She is the {{}} authority on coastal birds.", f:"foremost", ko:"그녀는 해안 조류에 관한 가장 중요한 권위자다." }] },
+
+  /* ── 8차: foresee ~ fountain (20개) ───────────── */
+
+  { word:"foresee", pron:"포시", pos:"v", level:"C1", meanings:["예견하다","내다보다"],
+    syn:["predict","see ahead","look ahead to"],
+    ex:[{ s:"No one could {{}} how quickly the rules would change.", f:"foresee", ko:"규칙이 얼마나 빨리 바뀔지는 아무도 예견할 수 없었다." }] },
+
+  { word:"foresight", pron:"포사이트", pos:"n", level:"C1", meanings:["예지력","선견지명"],
+    syn:["prudence","far-sightedness","advance planning"],
+    ex:[{ s:"The tunnel was built with unusual {{}}.", f:"foresight", ko:"그 터널은 드문 선견지명으로 지어졌다." }] },
+
+  { word:"forfeit", pron:"포핏", pos:"v", level:"C2", meanings:["몰수되다","박탈당하다"],
+    syn:["lose by default","give up as a penalty","be deprived of"],
+    ex:[{ s:"Teams that arrive late {{}} their place in the draw.", f:"forfeit", ko:"늦게 도착한 팀은 대진에서 자리를 박탈당한다." }] },
+
+  /* 유의어에 counterfeit·fake 를 쓰지 않았다. 둘 다 표제어인데 품사가 형용사라
+     동사 자리에 형용사 뜻('가짜의')이 뜬다. */
+  { word:"forge", pron:"포지", pos:"v", level:"C1", meanings:["위조하다"],
+    syn:["falsify","fabricate","imitate fraudulently"],
+    ex:[{ s:"He was caught trying to {{}} his supervisor's signature.", f:"forge", ko:"그는 상사의 서명을 위조하려다 붙잡혔다." }] },
+
+  { word:"forgery", pron:"포저리", pos:"n", level:"C1", meanings:["위조","모조"],
+    syn:["fake copy","counterfeit item","forged document"],
+    ex:[{ s:"Experts declared the painting a clever {{}}.", f:"forgery", ko:"전문가들은 그 그림을 교묘한 위조라고 선언했다." }] },
+
+  { word:"forgo", pron:"포고", pos:"v", level:"C2", meanings:["포기하다"],
+    syn:["do without","give up","renounce"],
+    ex:[{ s:"She chose to {{}} a salary in the first year.", f:"forgo", ko:"그녀는 첫해에 급여를 포기하기로 했다." }] },
+
+  /* ★ 네 곳이 참조하는 낱말이고 넷 다 동사 자리다 — come into existence·
+     compose·constitute·crystallize. 기존 사전 뜻은 '구성하다; 형태' 로 명사
+     뜻이 섞여 있었는데, 그 '형태' 는 네 자리 어디에도 쓰이지 않는 군더더기였다.
+     원본 첫 뜻 '형성시키다' 를 앞에 두고 동사로만 모았다 — 네 문제 모두
+     설명이 더 또렷해진다. */
+  { word:"form", pron:"폼", pos:"v", level:"B1", meanings:["형성시키다","구성하다"],
+    syn:["create","constitute","bring into being"],
+    ex:[{ s:"Ice will {{}} on the pond after two cold nights.", f:"form", ko:"추운 밤이 이틀 지나면 못에 얼음이 형성된다." }] },
+
+  { word:"formal", pron:"포멀", pos:"adj", level:"B2", meanings:["격식을 갖춘","공식적인"],
+    syn:["official","ceremonial","proper"], ant:["casual"],
+    ex:[{ s:"The invitation asked for {{}} dress.", f:"formal", ko:"그 초대장은 격식을 갖춘 복장을 요청했다." }] },
+
+  /* ── format 과 formation ────────────────────────
+     앞 여섯 글자가 같은 가족이고 둘 다 명사다. 0차 보드 예비검사가 짚은
+     가족 가운데 이 챕터에 해당하는 자리다. 뜻으로는 갈라지지 않으므로
+     레벨을 두 단계 벌렸다(B1 · C1). 첫 뜻도 겹치지 않게 골랐다
+     (format '형식' / formation '형성'). */
+  { word:"format", pron:"포맷", pos:"n", level:"B1", meanings:["형식","방식"],
+    syn:["layout","arrangement","design"],
+    ex:[{ s:"The report follows the same {{}} every quarter.", f:"format", ko:"그 보고서는 분기마다 같은 형식을 따른다." }] },
+
+  { word:"formation", pron:"포메이션", pos:"n", level:"C1", meanings:["형성","구성"],
+    syn:["development","coming together","taking shape"],
+    ex:[{ s:"Scientists study the {{}} of coral reefs.", f:"formation", ko:"과학자들은 산호초의 형성을 연구한다." }] },
+
+  { word:"former", pron:"포머", pos:"adj", level:"B1", meanings:["이전의","전자의"],
+    syn:["previous","earlier","one-time"], ant:["current"],
+    ex:[{ s:"A {{}} student now runs the whole department.", f:"former", ko:"이전의 학생이 지금 그 학과 전체를 운영한다." }] },
+
+  { word:"formula", pron:"포뮬러", pos:"n", level:"B2", meanings:["공식","방법"],
+    syn:["equation","recipe","set procedure"],
+    ex:[{ s:"There is no simple {{}} for a good lesson.", f:"formula", ko:"좋은 수업을 위한 간단한 공식은 없다." }] },
+
+  /* 기존 사전 뜻 '버리다, 포기하다' 는 표제어 abandon 의 뜻과 글자까지 같다.
+     원본의 '떠나다' 를 둘째 뜻으로 삼아 갈랐다. */
+  { word:"forsake", pron:"포세이크", pos:"v", level:"C1", meanings:["버리다","떠나다"],
+    syn:["abandon","desert","turn one's back on"],
+    ex:[{ s:"He would never {{}} the people who raised him.", f:"forsake", ko:"그는 자기를 키운 사람들을 결코 버리지 않을 것이다." }] },
+
+  /* 기존 사전 뜻 '솔직한, 거리낌없는' 의 첫 마디는 표제어 candid 의 첫 뜻과
+     같고, 유의어 frank 의 뜻과도 글자까지 같다. 원본의 '솔직 담백한' 을 앞에
+     두어 셋을 갈랐다. */
+  { word:"forthright", pron:"포스라이트", pos:"adj", level:"C1", meanings:["솔직 담백한","거리낌없는"],
+    syn:["frank","plain-spoken","outspoken"], ant:["evasive"],
+    ex:[{ s:"His {{}} answer surprised the whole panel.", f:"forthright", ko:"그의 솔직 담백한 대답이 심사위원 전원을 놀라게 했다." }] },
+
+  { word:"fortress", pron:"포트리스", pos:"n", level:"B2", meanings:["요새"],
+    syn:["stronghold","citadel","fortified place"],
+    ex:[{ s:"The hilltop {{}} guarded the valley for centuries.", f:"fortress", ko:"언덕 위 요새가 수백 년 동안 골짜기를 지켰다." }] },
+
+  /* 2차의 fate 가 ["운명","숙명"] 이고 destiny 는 fate 와 fortune 을 함께
+     유의어로 쓴다. 원본의 '운명' 을 첫 뜻으로 쓰면 한 문제에서 두 선택지가
+     같은 글자로 시작한다. 기존 사전 뜻 '운, 행운' 을 그대로 두어 갈랐다. */
+  { word:"fortune", pron:"포천", pos:"n", level:"B2", meanings:["운","행운"],
+    syn:["luck","windfall","stroke of luck"],
+    ex:[{ s:"A little {{}} turned the whole season around.", f:"fortune", ko:"작은 운이 그 시즌 전체를 뒤바꿨다." }] },
+
+  { word:"fossilize", pron:"파설라이즈", pos:"v", level:"C2", meanings:["화석이 되다"],
+    syn:["turn to stone","petrify","harden into rock"],
+    ex:[{ s:"Shells {{}} slowly in fine river mud.", f:"fossilize", ko:"조개껍데기는 고운 강 진흙 속에서 천천히 화석이 된다." }] },
+
+  /* 원본은 '양육하는, 기르는; 양육하다, 기르다' 로 형용사와 동사가 섞여 있다.
+     동사로 정했다. 유의어 nurture 의 뜻이 '양육하다, 기르다' 라서 첫 뜻이
+     겹치지 않도록 둘째 뜻을 '육성하다' 로 골랐다. */
+  { word:"foster", pron:"포스터", pos:"v", level:"B2", meanings:["기르다","육성하다"],
+    syn:["nurture","bring up","raise"],
+    ex:[{ s:"Small grants can {{}} new research in the field.", f:"foster", ko:"작은 보조금이 그 분야의 새 연구를 육성할 수 있다." }] },
+
+  { word:"found", pron:"파운드", pos:"v", level:"B2", meanings:["설립하다","창립하다"],
+    syn:["establish","set up","start up"],
+    ex:[{ s:"Two teachers helped {{}} the school in 1920.", f:"found", ko:"교사 두 명이 1920년에 그 학교를 설립하는 데 힘을 보탰다." }] },
+
+  { word:"fountain", pron:"파운튼", pos:"n", level:"B1", meanings:["분수","샘"],
+    syn:["water jet","spout","wellspring"],
+    ex:[{ s:"Children played around the stone {{}} all afternoon.", f:"fountain", ko:"아이들이 오후 내내 돌 분수 주위에서 놀았다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1131,7 +1281,6 @@ Object.assign(window.GLOSS, {
   "monetary":"통화의, 금전상의",
   "monetary punishment":"금전적 처벌",
   "money-related":"돈에 관한",
-  "made-up story":"지어낸 이야기",
   "make sense of":"~을 이해하다",
   "muck":"거름, 더러운 것",
   "non-literal":"글자 그대로가 아닌",
@@ -1320,5 +1469,50 @@ Object.assign(window.GLOSS, {
   "stomach upset from food":"음식으로 생긴 배앓이",
   "temple area":"관자놀이 쪽",
   "tread":"발걸음",
-  "trophic chain":"영양 단계의 사슬"
+  "trophic chain":"영양 단계의 사슬",
+
+  /* ── 8차: foresee ~ fountain (39개) ───────────────
+     predict·falsify·give up·create·recipe·layout·arrangement·design·
+     development·desert·frank·evasive·official·proper·nurture·raise·set up 은
+     이미 GLOSS 에 있어서 여기에 없다. fabricate·constitute·equation·abandon·
+     establish·current 는 표제어다. */
+  "advance planning":"미리 세운 계획",
+  "be deprived of":"~을 빼앗기다",
+  "bring into being":"생겨나게 하다",
+  "bring up":"길러 내다",
+  "ceremonial":"의례적인",
+  "citadel":"성채",
+  "coming together":"모여 이루어짐",
+  "counterfeit item":"위조된 물건",
+  "do without":"없이 지내다",
+  "earlier":"더 앞선",
+  "fake copy":"가짜 사본",
+  "far-sightedness":"멀리 보는 눈",
+  "forged document":"위조된 문서",
+  "fortified place":"방비를 갖춘 곳",
+  "give up as a penalty":"벌로 내놓다",
+  "harden into rock":"굳어 돌이 되다",
+  "imitate fraudulently":"속일 목적으로 흉내내다",
+  "look ahead to":"앞일을 헤아리다",
+  "lose by default":"기권으로 잃다",
+  "luck":"운수",
+  "one-time":"한때의",
+  "outspoken":"거침없이 말하는",
+  "petrify":"돌처럼 굳히다",
+  "plain-spoken":"꾸밈없이 말하는",
+  "previous":"앞의, 먼저의",
+  "prudence":"앞을 내다보는 신중함",
+  "renounce":"버리고 물러나다",
+  "see ahead":"앞을 내다보다",
+  "set procedure":"정해진 절차",
+  "spout":"물이 뿜어 나오는 주둥이",
+  "start up":"일으켜 시작하다",
+  "stroke of luck":"운 좋은 일",
+  "stronghold":"굳게 지키는 거점",
+  "taking shape":"모양을 갖추어 감",
+  "turn one's back on":"등을 돌리다",
+  "turn to stone":"돌로 바뀌다",
+  "water jet":"솟구치는 물줄기",
+  "wellspring":"물이 솟는 근원",
+  "windfall":"뜻밖의 횡재"
 });
