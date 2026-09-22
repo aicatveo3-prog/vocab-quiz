@@ -966,7 +966,6 @@ Object.assign(window.GLOSS, {
   "dye":"염색하다",
   "excitement":"흥분, 설렘",
   "exit":"나가다, 퇴장하다",
-  "fiction":"허구, 소설",
   "filled":"채워진",
   "flexible":"잘 휘는, 유연한",
   "follow suit":"선례를 따르다",

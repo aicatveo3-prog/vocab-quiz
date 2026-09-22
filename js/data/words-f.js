@@ -135,7 +135,37 @@
  *   down       feather 의 유의어로 쓰려 했으나 '아래로' 로 읽히기 쉬워
  *              soft plumage 로 바꿨다
  *
- * 진행 상황: 60 / 210단어 (fable ~ fetal) — 3차, 3챕터 완료.
+ * ── 4차 기록 ──
+ *   승격 4개.
+ *     무변  fiction ["허구","소설"]   ← biography(ant)
+ *           fill    ["채우다","메우다"] ← drain(ant)
+ *           figure  ["수치","도형"]   ← diagram(syn)·digit(syn)
+ *     변경  finding "결론, 발견" → ["조사 결과","발견"]
+ *
+ *   figure ★ 두 갈래를 모두 남긴 이유
+ *     원본은 뜻이 아홉 갈래다. 기존 사전 뜻은 '수치; 도형' 인데, 이 낱말을
+ *     digit 은 숫자 쪽으로, diagram 은 도형 쪽으로 각각 유의어로 쓰고 있다.
+ *     한 갈래만 남기면 다른 쪽 문제가 어긋난다. 그래서 ["수치","도형"] 으로
+ *     두 갈래를 옮겼다. 유의어는 숫자 쪽으로만 모았다 — 한 문제의 선택지에
+ *     두 갈래가 섞이면 무엇을 묻는지 흐려진다.
+ *
+ *   finding 은 기존 뜻 '결론' 이 틀리지는 않지만 finding 은 결론 자체보다
+ *     조사·연구로 얻은 결과를 가리킨다. 원본에 맞춰 좁혔고, conclusion 의
+ *     유의어 자리에서도 여전히 옳다.
+ *
+ * ── 4차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   result + outcome  둘을 finding 의 유의어로 함께 쓰려 했으나 사전 뜻이
+ *              둘 다 "결과" 로 글자까지 같다. 한 문제에서 두 선택지가
+ *              구별되지 않는다 → result 만 쓰고 research outcome 을 새로 썼다
+ *   refuse     filth 의 유의어로 쓰려 했으나 뜻이 '거절하다'(동사)다
+ *   strain     filter 의 유의어로 쓰려 했으나 '긴장, 압박'(명사)이다
+ *   load       fill 의 유의어로 쓰려 했으나 '짐, 부하'(명사)다
+ *   invention  fiction 의 유의어로 쓰려 했으나 '발명, 창작' 으로 허구 뜻이 없다
+ *   frantic·fiscal·forfeit  각각 feverish·financial·fine 의 유의어로 쓰려
+ *              했으나 9차·5차·8차의 표제어다. 사전에 넣었다가 곧 지우는 일을
+ *              피했다
+ *
+ * 진행 상황: 80 / 210단어 (fable ~ fine-grained) — 4차, 4챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -432,7 +462,97 @@ window.VOCAB_F = [
 
   { word:"fetal", pron:"피틀", pos:"adj", level:"C1", meanings:["태아의"],
     syn:["unborn","prenatal","embryonic"],
-    ex:[{ s:"The scan tracks {{}} growth week by week.", f:"fetal", ko:"그 초음파는 태아의 성장을 주 단위로 추적한다." }] }
+    ex:[{ s:"The scan tracks {{}} growth week by week.", f:"fetal", ko:"그 초음파는 태아의 성장을 주 단위로 추적한다." }] },
+
+  /* ── 4차: fetch ~ fine-grained (20개) ─────────── */
+
+  { word:"fetch", pron:"페치", pos:"v", level:"B1", meanings:["가지고 오다"],
+    syn:["bring","go and get","retrieve"],
+    ex:[{ s:"Could you {{}} the spare key from the drawer?", f:"fetch", ko:"서랍에서 여분 열쇠를 가지고 와 줄래?" }] },
+
+  { word:"fetus", pron:"피터스", pos:"n", level:"C1", meanings:["태아"],
+    syn:["unborn child","embryo","developing baby"],
+    ex:[{ s:"By week twelve the {{}} can already move its fingers.", f:"fetus", ko:"12주가 되면 태아는 이미 손가락을 움직일 수 있다." }] },
+
+  { word:"feudal", pron:"퓨들", pos:"adj", level:"C1", meanings:["봉건 시대의","중세의"],
+    syn:["medieval","manorial","of the Middle Ages"],
+    ex:[{ s:"The village still follows boundaries drawn in {{}} times.", f:"feudal", ko:"그 마을은 아직 봉건 시대에 그어진 경계를 따른다." }] },
+
+  { word:"feverish", pron:"피버리시", pos:"adj", level:"B2", meanings:["열광적인","열띤"],
+    syn:["frenzied","hectic","overexcited"],
+    ex:[{ s:"The last hour before the deadline was {{}}.", f:"feverish", ko:"마감 직전 한 시간은 열광적이었다." }] },
+
+  { word:"fiber", pron:"파이버", pos:"n", level:"B2", meanings:["섬유","실"],
+    syn:["thread","strand","filament"],
+    ex:[{ s:"The rope is woven from a tough plant {{}}.", f:"fiber", ko:"그 밧줄은 질긴 식물 섬유로 짜여 있다." }] },
+
+  { word:"fiction", pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
+    syn:["fabrication","made-up story","invented tale"], ant:["fact"],
+    ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
+
+  { word:"fierce", pron:"피어스", pos:"adj", level:"B2", meanings:["사나운","흉포한"],
+    syn:["ferocious","savage","violent"], ant:["gentle"],
+    ex:[{ s:"A {{}} wind tore the canvas from its frame.", f:"fierce", ko:"사나운 바람이 천을 틀에서 찢어 갔다." }] },
+
+  { word:"figurative", pron:"피규러티브", pos:"adj", level:"C1", meanings:["비유적인","상징적인"],
+    syn:["metaphorical","symbolic","non-literal"], ant:["literal"],
+    ex:[{ s:"Here the word 'storm' is {{}}, not a weather report.", f:"figurative", ko:"여기서 'storm' 은 날씨 보도가 아니라 비유적인 표현이다." }] },
+
+  /* 원본은 뜻이 아홉 갈래다('숫자, 수, 모양, 형태, 모습, 외관, 명사, 거물,
+     역사상의 인물'). 기존 사전 뜻 '수치; 도형' 을 그대로 두 갈래로 옮겼다 —
+     digit 은 숫자 쪽으로, diagram 은 도형 쪽으로 이 낱말을 유의어로 쓰고
+     있어서 한 갈래만 남기면 다른 쪽 문제가 어긋난다. 유의어는 숫자 쪽으로만
+     모았다(두 갈래를 섞으면 '아닌 것 고르기'가 헷갈린다). */
+  { word:"figure", pron:"피거", pos:"n", level:"B2", meanings:["수치","도형"],
+    syn:["numerical value","statistic","amount"],
+    ex:[{ s:"The final {{}} was higher than anyone had expected.", f:"figure", ko:"최종 수치는 누구도 예상하지 못한 만큼 높았다." }] },
+
+  { word:"figure out", pron:"피거 아웃", pos:"phr", level:"B1", meanings:["이해하다","생각해 내다"],
+    syn:["work out","make sense of","puzzle out"] },
+
+  { word:"fill", pron:"필", pos:"v", level:"B1", meanings:["채우다","메우다"],
+    syn:["pack","stuff","top up"], ant:["empty out"],
+    ex:[{ s:"Volunteers {{}} the sandbags before the river rises.", f:"fill", ko:"자원봉사자들이 강물이 오르기 전에 모래주머니를 채운다." }] },
+
+  { word:"filler", pron:"필러", pos:"n", level:"C1", meanings:["충전재"],
+    syn:["packing material","padding","stuffing"],
+    ex:[{ s:"The gap around the pipe was closed with a soft {{}}.", f:"filler", ko:"관 주위의 틈은 부드러운 충전재로 막았다." }] },
+
+  { word:"filter", pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
+    syn:["purify","sift","screen out"],
+    ex:[{ s:"Reeds help {{}} the water before it reaches the pond.", f:"filter", ko:"갈대는 물이 못에 이르기 전에 여과하는 것을 돕는다." }] },
+
+  { word:"filter out of", pron:"필터 아웃 오브", pos:"phr", level:"C1", meanings:["~에서 새어 나오다"],
+    syn:["seep out of","trickle out of","leak from"] },
+
+  { word:"filth", pron:"필스", pos:"n", level:"C1", meanings:["오물","쓰레기"],
+    syn:["grime","muck","squalor"],
+    ex:[{ s:"Years of {{}} had blackened the tall windows.", f:"filth", ko:"여러 해 쌓인 오물이 높은 창들을 검게 만들었다." }] },
+
+  /* 원본 목록에는 '(피해, 상처를) 가하다, 입히다' 로 적혀 있었다. inflict 의
+     뜻이 밀려 들어온 것이라 0차에서 '더러운, 불결한' 으로 바로잡았다. */
+  { word:"filthy", pron:"필시", pos:"adj", level:"B2", meanings:["더러운","불결한"],
+    syn:["grimy","squalid","unclean"], ant:["spotless"],
+    ex:[{ s:"They refused to work in such a {{}} kitchen.", f:"filthy", ko:"그들은 그렇게 더러운 부엌에서 일하기를 거부했다." }] },
+
+  { word:"financial", pron:"파이낸셜", pos:"adj", level:"B1", meanings:["재정적인","재무의"],
+    syn:["monetary","money-related","budgetary"],
+    ex:[{ s:"The club ran into serious {{}} trouble that winter.", f:"financial", ko:"그 클럽은 그해 겨울 심각한 재정적 곤란에 빠졌다." }] },
+
+  /* 기존 사전 뜻은 '결론, 발견' 이었다. finding 은 결론 자체보다 조사·연구로
+     얻은 결과를 가리키므로 원본('조사 결과, 연구 결과')에 맞춰 좁혔다.
+     conclusion 의 유의어 자리에서도 여전히 옳다. */
+  { word:"finding", pron:"파인딩", pos:"n", level:"B2", meanings:["조사 결과","발견"],
+    syn:["result","conclusion","research outcome"],
+    ex:[{ s:"The main {{}} of the study surprised its own authors.", f:"finding", ko:"그 연구의 주요 조사 결과는 저자들 자신을 놀라게 했다." }] },
+
+  { word:"fine", pron:"파인", pos:"n", level:"B2", meanings:["벌금"],
+    syn:["penalty","monetary punishment","surcharge"],
+    ex:[{ s:"He paid a small {{}} for parking beside the curb.", f:"fine", ko:"그는 인도 옆에 주차한 일로 적은 벌금을 냈다." }] },
+
+  { word:"fine-grained", pron:"파인 그레인드", pos:"adj", level:"C1", meanings:["결이 고운","정밀한"],
+    syn:["finely detailed","smooth-textured","high-resolution"], ant:["coarse"],
+    ex:[{ s:"The report gives a {{}} picture of local spending.", f:"fine-grained", ko:"그 보고서는 지역 지출을 정밀하게 보여 준다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -580,5 +700,60 @@ Object.assign(window.GLOSS, {
   "viable":"실행 가능한",
   "womanly":"여자다운",
   "women's rights advocate":"여성 권리 옹호자",
-  "workability":"작동 가능성"
+  "workability":"작동 가능성",
+
+  /* ── 4차: fetch ~ fine-grained (48개) ───────────────── */
+  "bring":"가져오다",
+  "budgetary":"예산상의",
+  "developing baby":"자라는 아기",
+  "embryo":"배아",
+  "fabrication":"날조",
+  "ferocious":"흉포한",
+  "filament":"가느다란 실",
+  "finely detailed":"세밀하게 다듬은",
+  "go and get":"가서 가져오다",
+  "grime":"묵은 때",
+  "grimy":"때가 낀",
+  "hectic":"몹시 바쁜",
+  "high-resolution":"고해상도의",
+  "invented tale":"허구의 이야기",
+  "leak from":"~에서 새다",
+  "literal":"글자 그대로의",
+  "made-up story":"지어낸 이야기",
+  "manorial":"영지의",
+  "medieval":"중세의",
+  "metaphorical":"은유적인",
+  "monetary":"통화의, 금전상의",
+  "monetary punishment":"금전적 처벌",
+  "money-related":"돈에 관한",
+  "made-up story":"지어낸 이야기",
+  "make sense of":"~을 이해하다",
+  "muck":"거름, 더러운 것",
+  "non-literal":"글자 그대로가 아닌",
+  "numerical value":"숫자로 나타낸 값",
+  /* 사전 조회는 소문자로 한다(GLOSS[s.toLowerCase()]). 표제어 쪽 syn 문자열은
+     'of the Middle Ages' 처럼 고유명사를 살려 적지만 키는 반드시 소문자다. */
+  "of the middle ages":"중세 시대의",
+  "overexcited":"지나치게 흥분한",
+  "packing material":"포장 충전물",
+  "padding":"속을 채우는 것",
+  "puzzle out":"궁리해 알아내다",
+  "research outcome":"연구 결과",
+  "screen out":"걸러 내어 막다",
+  "seep out of":"~에서 스며 나오다",
+  "smooth-textured":"결이 매끄러운",
+  "spotless":"티 하나 없는",
+  "squalid":"지저분한",
+  "squalor":"불결한 상태",
+  "statistic":"통계 수치",
+  "strand":"한 가닥",
+  "stuffing":"속을 채운 것",
+  "surcharge":"추가 요금",
+  "symbolic":"상징하는",
+  "thread":"실",
+  "top up":"가득 채우다",
+  "trickle out of":"~에서 방울져 흐르다",
+  "unborn child":"아직 태어나지 않은 아이",
+  "unclean":"깨끗하지 않은",
+  "violent":"폭력적인, 격렬한"
 });

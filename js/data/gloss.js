@@ -644,7 +644,6 @@ Object.assign(window.GLOSS, {
   "film":"영화 필름; 막",
   "finally":"마침내, 결국",
   "find":"발견하다",
-  "finding":"결론, 발견",
   "finish":"끝내다, 마치다",
   "fireball":"화염덩어리, 유성",
   "firm":"회사; 단단한",
