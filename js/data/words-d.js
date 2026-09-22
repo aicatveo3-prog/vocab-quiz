@@ -1955,7 +1955,6 @@ Object.assign(window.GLOSS, {
   "drowse":"졸다, 선잠 자다",
   "expected":"예상되는, 예정된",
   "extreme":"극단적인, 지나친",
-  "fear":"두려워하다, 겁내다",
   "fend off":"막아 내다, 물리치다",
   "fill":"채우다, 메우다",
   "flabbergasted":"몹시 놀란, 기가 막힌",
