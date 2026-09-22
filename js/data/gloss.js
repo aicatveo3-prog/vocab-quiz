@@ -613,7 +613,6 @@ Object.assign(window.GLOSS, {
   "express regret":"유감을 표하다",
   "expurgate":"삭제하다, 검열하다",
   "extra":"추가의, 여분의",
-  "extract":"발췌하다; 추출물",
   "face":"직면하다; 얼굴",
   "facet":"측면, 양상",
   "facility":"시설, 기관",
