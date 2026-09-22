@@ -55,6 +55,15 @@
  *   enact       '(법을) 제정하다; 상연하다; ~을 행하다' → 갈래 셋을 둘로 줄였다
  *   encounter   '맞닥뜨리다, 마주하다; 만남, 조우, 접촉' → 동사로 정리했다.
  *               pos 는 하나여야 하는데 원본이 동사와 명사를 섞어 두었다
+ *   endeavor    '노력하다; 노력' → 동사로 정리 (encounter 와 같은 경우)
+ *   end up      '결국 (어떤 처지에) 처하게 되다' → 첫 뜻의 괄호를 풀었다
+ *   endow       '(능력 등을) 주다, 기부하다' → 부여하다, 기부하다 (같은 이유)
+ *   endorse     갈래 넷을 둘로 (홍보하다·배서하다 제거)
+ *   enforce     '강요하다; 집행하다, 시행하다' → 시행하다를 앞으로, 둘로 줄였다
+ *   engage      '사로잡다, 끌다; 관계를 맺다; 약속하다' → 둘로 줄였다
+ *   enlighten   '계몽하다, 깨우치다, 가르치다' → 둘로 줄였다
+ *   enhance     기존 GLOSS 는 "높이다, 향상시키다" 였는데 원본 순서대로 '향상시키다'를
+ *               앞으로 돌렸다. 뜻 내용이 같아 degrade·detract 의 반의어 설명은 안 변한다
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -65,7 +74,7 @@
  *   2차  20개  effortless ~ elevated       ← 완료
  *   3차  20개  elevation ~ eminent         ← 완료
  *   4차  20개  emission ~ encourage        ← 완료
- *   5차  20개  encouragement ~ enlighten
+ *   5차  20개  encouragement ~ enlighten   ← 완료
  *   6차  20개  enormous ~ environment-friendly
  *   7차  20개  envision ~ erratic
  *   8차  20개  erroneous ~ evaluate
@@ -193,6 +202,52 @@
  *
  * 반대로 encounter 는 이번에 나아졌다. 기존 GLOSS "마주치다, 만남"의 명사 갈래가
  * 표제어 come across(동사)와 어긋났는데, 동사로 정리하면서 사라졌다.
+ *
+ * ── 5차 기록 ─────────────────────────────────
+ * 사전에 이미 있던 낱말이 10개로 가장 많았다(3차 7 → 4차 9 → 5차 10). end-·en-
+ * 구간이 기본 어휘라서 A~D 세트가 이미 유의어로 폭넓게 끌어다 쓰고 있었다.
+ * 영향을 받는 기존 표제어가 18개라, 작업 전에 18개의 렌더를 먼저 떠 두고
+ * 작업 후 하나씩 대조했다. 차수마다 이 방식을 쓰는 게 좋다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 10개 (GLOSS·PRON 양쪽 20항목)
+ *   gloss.js   endangered, endeavor, endless, endorse, endurance, enemy,
+ *              engagement, enlighten
+ *   words-c.js endure
+ *   words-d.js enhance
+ *   pron.js    위 10개 전부
+ *
+ * syn 을 비운 1개 — encyclopedia. 1차의 e-commerce 무리와 같은 기술 명사다.
+ *
+ * E 세트의 첫 구(phr) — end up. ex 를 달지 않았다. 기존 phr 표제어 149개가
+ * 전부 ex 를 갖지 않고 audit 도 경고한다. 구는 빈칸 변환이 첫 낱말만 바뀌어
+ * 오답이 원형으로 남기 쉽다. 처음엔 ex 를 넣었다가 경고를 보고 뺐다.
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   endless   기존 뜻 "끝없는, 무한한" 그대로 — boundless·ceaseless·countless
+ *             세 표제어가 유의어로 쓴다(이번 차수에서 참조가 가장 많은 낱말)
+ *   endorse   기존 뜻 "지지하다, 보증하다" 그대로 — advocate 의 유의어다
+ *   endurance '지구력'을 앞에 뒀다 — aerobic 의 유의어라 지구력 갈래가 먼저 와야 한다
+ *   enemy     '적'을 앞에 뒀다 — adversary 의 유의어다
+ *   engagement '약속'을 앞에 뒀다 — appointment 의 유의어다('예약'을 버렸다)
+ *   endure    원본대로 "견디다, 참다" 로 했다. 기존 GLOSS 의 '지속되다'를 버렸지만
+ *             bear·cope with·be subjected to 세 유의어 쪽이 '견디다'를 필요로 하고,
+ *             반의어 collapse 도 '견디다'로 뜻이 통한다
+ *
+ * 유의어에서 걸러낸 것
+ *   endless 의 infinite   → GLOSS 가 limitless 와 똑같이 "무한한" 이어서 피드백
+ *                           두 줄이 같아진다(audit 이 잡는다)  ✗ → unending
+ *   engross 의 immerse    → "담그다; 몰입하다" (물에 담그는 뜻이 앞) ✗ → fully absorb
+ *   enforce 의 implement  → "실행하다; 도구" (명사 갈래가 섞인다)  ✗ → put in force
+ *   endow 의 confer       → "수여하다; 상의하다"                  ✗ → provide with
+ *   endow 의 grant        → "수여하다; 보조금" (명사 갈래)         ✗ → provide with
+ *   engagement 의 commitment → "헌신, 약속" (헌신이 앞)           ✗ → prior arrangement
+ *
+ * PRON 에 뒤늦게 채운 1개 — jeopardize. 4차의 stress 와 같은 경우다.
+ *
+ * 반대로 attempt 는 이번에 나아졌다. 기존 GLOSS "노력, 시도"(명사)가 표제어
+ * attempt(동사)와 어긋났는데, endeavor 를 동사로 정리하면서 사라졌다.
+ * 4차의 encounter 와 같은 꼴이다 — 원본이 동사·명사를 섞어 둔 낱말을 표제어로
+ * 올리면 그 참조가 저절로 고쳐진다.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -566,7 +621,112 @@ window.VOCAB_E = [
 
   { word:"encourage", pron:"인커리지", pos:"v", level:"B1", meanings:["격려하다","장려하다"],
     syn:["motivate","inspire","cheer on"], ant:["discourage"],
-    ex:[{ s:"Teachers should {{}} students to ask awkward questions.", f:"encourage", ko:"교사는 학생들이 껄끄러운 질문을 하도록 격려해야 한다." }] }
+    ex:[{ s:"Teachers should {{}} students to ask awkward questions.", f:"encourage", ko:"교사는 학생들이 껄끄러운 질문을 하도록 격려해야 한다." }] },
+
+  /* ── 5차: encouragement ~ enlighten ─────────────── */
+
+  { word:"encouragement", pron:"인커리지먼트", pos:"n", level:"B2", meanings:["격려","격려가 되는 말"],
+    syn:["reassurance","moral support","backing"], ant:["discouragement"],
+    ex:[{ s:"A word of {{}} from her coach was all she needed.", f:"encouragement", ko:"그녀에게 필요한 것은 코치의 격려 한마디였다." }] },
+
+  /* syn 을 비웠다 — 백과사전은 바꿔 쓸 낱말이 없는 기술 명사다(1차의 e-commerce
+     무리와 같다). reference work 류를 억지로 넣으면 셋이 서로 비슷해진다. */
+  { word:"encyclopedia", pron:"인사이클러피디어", pos:"n", level:"B2", meanings:["백과사전"],
+    ex:[{ s:"He read the whole {{}} the summer he turned twelve.", f:"encyclopedia", ko:"그는 열두 살이 된 여름에 백과사전을 통째로 읽었다." }] },
+
+  /* 원본 '결국 (어떤 처지에) 처하게 되다' 는 첫 뜻에 괄호가 들어간다 — 풀어 썼다.
+     E 세트의 첫 구(phr)다(오답 후보는 전체 phr 149개에서 나온다).
+
+     ex 를 달지 않았다. 기존 phr 표제어 149개가 전부 ex 를 갖지 않고, audit 도
+     'phr 에 ex 가 있으면' 경고한다. 구는 빈칸 변환이 첫 낱말만 바뀌어서 오답이
+     원형으로 남기 쉽다 — 뜻을 몰라도 정답이 보이는 문제가 된다.
+     나머지 네 모드(4지선다·아닌것·짝맞추기)는 정상 출제된다. */
+  { word:"end up", pron:"엔드 업", pos:"phr", level:"B1", meanings:["결국 ~하게 되다","끝내 ~이 되다"],
+    syn:["wind up","turn out","finish up"] },
+
+  { word:"endanger", pron:"인데인저", pos:"v", level:"B2", meanings:["위험에 빠뜨리다","위협하다"],
+    syn:["imperil","jeopardize","put at risk"], ant:["protect"],
+    ex:[{ s:"Draining the marsh would {{}} dozens of rare species.", f:"endanger", ko:"그 습지를 말리면 희귀종 수십 종을 위험에 빠뜨릴 것이다." }] },
+
+  { word:"endangered", pron:"인데인저드", pos:"adj", level:"B2", meanings:["멸종 위기에 처한","위기에 놓인"],
+    syn:["at risk","threatened","vulnerable"],
+    ex:[{ s:"The reserve shelters three {{}} bird species.", f:"endangered", ko:"그 보호 구역은 멸종 위기에 처한 조류 세 종을 보호한다." }] },
+
+  /* 원본은 '노력하다; 노력' 으로 동사와 명사가 섞여 있다. 동사로 정했다 —
+     표제어 attempt(동사)가 이 낱말을 유의어로 쓰고 있는데 기존 GLOSS 가
+     "노력, 시도"(명사)라서 뜻이 어긋나 있었다. 이번에 바로잡힌다. */
+  { word:"endeavor", pron:"엔데버", pos:"v", level:"C1", meanings:["노력하다","애쓰다"],
+    syn:["strive","attempt","make an effort"],
+    ex:[{ s:"We will {{}} to answer every letter within a week.", f:"endeavor", ko:"우리는 모든 편지에 일주일 안에 답하려 노력할 것이다." }] },
+
+  /* 유의어로 infinite 를 쓰지 않았다 — GLOSS 가 limitless 와 똑같이 "무한한"
+     이어서 피드백 두 줄이 같아진다(audit 이 오류로 잡는다). */
+  { word:"endless", pron:"엔들리스", pos:"adj", level:"B2", meanings:["끝없는","무한한"],
+    syn:["limitless","unending","interminable"], ant:["finite"],
+    ex:[{ s:"The drive across the plain felt {{}}.", f:"endless", ko:"평원을 가로지르는 그 운전은 끝없이 느껴졌다." }] },
+
+  /* 원본은 '지지하다; 보증하다, 홍보하다; (수표에) 배서하다' 로 갈래가 넷이다 —
+     기존 GLOSS "지지하다, 보증하다" 를 그대로 옮겼다(advocate 의 유의어다). */
+  { word:"endorse", pron:"인도스", pos:"v", level:"C1", meanings:["지지하다","보증하다"],
+    syn:["approve","support","vouch for"], ant:["oppose"],
+    ex:[{ s:"Two former mayors agreed to {{}} her campaign.", f:"endorse", ko:"전임 시장 두 명이 그녀의 선거 운동을 지지하기로 했다." }] },
+
+  /* 원본 '(능력 등을) 주다, 기부하다' 의 괄호를 풀었다. */
+  { word:"endow", pron:"인다우", pos:"v", level:"C2", meanings:["부여하다","기부하다"],
+    syn:["bestow","donate","provide with"],
+    ex:[{ s:"An alumnus agreed to {{}} two new scholarships.", f:"endow", ko:"한 졸업생이 새 장학금 두 건을 기부하기로 했다." }] },
+
+  { word:"endurance", pron:"인듀런스", pos:"n", level:"C1", meanings:["지구력","인내력"],
+    syn:["stamina","staying power","perseverance"],
+    ex:[{ s:"Long-distance swimming demands {{}} more than speed.", f:"endurance", ko:"장거리 수영은 속도보다 지구력을 요구한다." }] },
+
+  { word:"endure", pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
+    syn:["bear","withstand","put up with"], ant:["succumb"],
+    ex:[{ s:"The crew had to {{}} three weeks of storms.", f:"endure", ko:"승무원들은 3주간의 폭풍을 견뎌야 했다." }] },
+
+  { word:"enemy", pron:"에너미", pos:"n", level:"B1", meanings:["적","장애물"],
+    syn:["opponent","adversary","foe"], ant:["ally"],
+    ex:[{ s:"Haste is the {{}} of careful work.", f:"enemy", ko:"서두름은 꼼꼼한 작업의 적이다." }] },
+
+  /* 원본은 '강요하다; 집행하다, 시행하다' 다 — 대표 2개로 줄였다.
+     유의어로 implement 를 쓰지 않았다(GLOSS "실행하다; 도구" 에 명사 갈래가 섞인다). */
+  { word:"enforce", pron:"인포스", pos:"v", level:"B2", meanings:["시행하다","강요하다"],
+    syn:["carry out","impose","put in force"],
+    ex:[{ s:"Nobody bothered to {{}} the parking rules.", f:"enforce", ko:"아무도 주차 규정을 시행하려 애쓰지 않았다." }] },
+
+  /* 원본은 '사로잡다, 끌다; 관계를 맺다; 약속하다' 로 갈래가 셋이다 — 둘로 줄였다. */
+  { word:"engage", pron:"인게이지", pos:"v", level:"B2", meanings:["사로잡다","관계를 맺다"],
+    syn:["captivate","draw in","hold the attention of"],
+    ex:[{ s:"A good opening line will {{}} the reader at once.", f:"engage", ko:"좋은 첫 문장은 독자를 곧바로 사로잡는다." }] },
+
+  { word:"engagement", pron:"인게이지먼트", pos:"n", level:"B2", meanings:["약속","약혼"],
+    syn:["appointment","betrothal","prior arrangement"],
+    ex:[{ s:"She had a dinner {{}} she could not cancel.", f:"engagement", ko:"그녀는 취소할 수 없는 저녁 약속이 있었다." }] },
+
+  { word:"engender", pron:"인젠더", pos:"v", level:"C2", meanings:["생기게 하다","불러일으키다"],
+    syn:["give rise to","bring about","provoke"],
+    ex:[{ s:"Secrecy tends to {{}} suspicion among neighbors.", f:"engender", ko:"비밀주의는 이웃들 사이에 의심을 생기게 하는 경향이 있다." }] },
+
+  /* 유의어로 immerse 를 쓰지 않았다 — GLOSS 가 "담그다; 몰입하다" 라서 물에 담그는
+     뜻이 앞에 뜬다. */
+  { word:"engross", pron:"인그로스", pos:"v", level:"C2", meanings:["몰두하게 만들다","빠져들게 하다"],
+    syn:["preoccupy","rivet","fully absorb"],
+    ex:[{ s:"The puzzle can {{}} a child for hours.", f:"engross", ko:"그 퍼즐은 아이를 몇 시간이고 몰두하게 만들 수 있다." }] },
+
+  { word:"enhance", pron:"인핸스", pos:"v", level:"B2", meanings:["향상시키다","높이다"],
+    syn:["improve","boost","heighten"], ant:["degrade"],
+    ex:[{ s:"A little salt will {{}} the flavor of the soup.", f:"enhance", ko:"소금을 조금 넣으면 국의 맛이 향상된다." }] },
+
+  { word:"enlarge", pron:"인라지", pos:"v", level:"B2", meanings:["확대하다","확장하다"],
+    syn:["expand","magnify","broaden"], ant:["shrink"],
+    ex:[{ s:"They want to {{}} the kitchen before winter.", f:"enlarge", ko:"그들은 겨울 전에 부엌을 확장하고 싶어 한다." }] },
+
+  /* 원본은 '계몽하다, 깨우치다, 가르치다' 로 셋이다 — 둘로 줄였다. 기존 GLOSS 는
+     "교화하다, 깨우치다" 였는데 civilize(유의어)·deceive·delude(반의어) 모두
+     '계몽하다'로도 뜻이 통한다. */
+  { word:"enlighten", pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
+    syn:["educate","inform","open one's eyes"], ant:["mislead"],
+    ex:[{ s:"A single good teacher can {{}} a whole village.", f:"enlighten", ko:"좋은 교사 한 명이 마을 전체를 계몽할 수 있다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -722,5 +882,40 @@ Object.assign(window.GLOSS, {
   "send out":"내보내다, 발신하다",
   "surround":"둘러싸다, 에워싸다",
   "sympathetic":"동정하는, 공감하는",
-  "venting":"배출, 뿜어냄"
+  "venting":"배출, 뿜어냄",
+
+  /* ── 5차: encouragement ~ enlighten (33개) ───────────────── */
+  "backing":"후원, 지지",
+  "betrothal":"약혼",
+  "broaden":"넓히다, 확장하다",
+  "discouragement":"낙담, 의욕 저하",
+  "draw in":"끌어들이다",
+  "educate":"교육하다, 가르치다",
+  "finish up":"끝으로 ~하게 되다",
+  "finite":"유한한, 한계가 있는",
+  "fully absorb":"완전히 몰입시키다",
+  "heighten":"높이다, 고조시키다",
+  "hold the attention of":"~의 주의를 붙들다",
+  "imperil":"위험에 빠뜨리다",
+  "inform":"알리다, 알려 주다",
+  "interminable":"끝이 안 보이는, 지루하게 긴",
+  "make an effort":"노력을 기울이다",
+  "moral support":"정신적 지지",
+  "open one's eyes":"눈을 뜨게 하다",
+  "perseverance":"끈기, 꾸준함",
+  "preoccupy":"마음을 온통 차지하다",
+  "prior arrangement":"미리 정한 약속",
+  "provide with":"~을 갖추어 주다",
+  "put at risk":"위험에 놓다",
+  "put in force":"효력을 발생시키다",
+  "put up with":"참고 견디다",
+  "reassurance":"안심시키는 말, 확언",
+  "rivet":"시선을 붙들어 매다",
+  "stamina":"체력, 지구력",
+  "staying power":"버티는 힘",
+  "threatened":"위협받는",
+  "turn out":"결과적으로 ~이 되다",
+  "unending":"그침이 없는",
+  "vouch for":"보증하다",
+  "wind up":"결국 ~에 이르다"
 });

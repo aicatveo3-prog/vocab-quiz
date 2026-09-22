@@ -1969,7 +1969,6 @@ Object.assign(window.GLOSS, {
   "effective":"효과적인",
 
   "emotional":"감정적인",
-  "endure":"견디다, 지속되다",
   "erratic":"불규칙한, 변덕스러운",
   "escape":"벗어나다, 빠져나가다",
   "evade":"회피하다, 피하다",
