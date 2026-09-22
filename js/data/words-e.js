@@ -74,6 +74,20 @@
  *   erect       '세우다, 짓다, 만들다; 똑바로 선, 직립의' → 동사로 정리
  *   epidemic    '유행병, 전염병, 급속한 확산' → 둘로,  era '기원, 연대, 시대' → 둘로
  *   eradicate   '뿌리째 뽑다' 를 살렸다 (3차에서 넣은 GLOSS 항목이 표제어로 올라왔다)
+ *   erupt       '(감정 등이) 터져 나오다; …' → 괄호를 풀고 기존 뜻을 살렸다
+ *   eruption    '(화산의) 폭발, 분화' → 괄호를 풀었다
+ *   establish   '확립하다; (법률, 제도 등을) 제정하다; 설립하다' → 괄호를 풀고 둘로
+ *   established 갈래 넷(인정받는·확실히 자리 잡은·저명한·존경받는) → 뜻은 기존
+ *               "확립된, 기성의" 를 쓰고, 버린 갈래는 유의어 recognized·long-standing 으로 살렸다
+ *   esteem      '존경, 경의; 존경하다' → 동사로 정리 (admire 가 유의어로 쓴다)
+ *   estimate    '견적, 추정; 추정하다, 추산하다' → 동사로 정리 (calculate 가 유의어로 쓴다)
+ *   eternal     '영원한, 끊임없는' → '불멸의' 로 바꿨다. 유의어 perpetual 의 GLOSS 가
+ *               "영원한, 끊임없는" 이라 그대로 두면 표제어와 선택지가 같은 말을 한다
+ *   eternity    '영겁, 오랜 시간' 제거 — '영원' 을 달리 말한 것뿐이다. 기존 GLOSS 의
+ *               '사후 세계' 를 살렸다 (표제어 afterlife 가 유의어로 쓴다)
+ *   erroneous   '잘못된' 에 '오류가 있는' 을 붙였다 — 유의어 mistaken 이 "잘못된, 틀린"
+ *               이라 '틀린' 을 쓰면 겹친다
+ *   evade       '피하다, 회피하다' → '회피하다, 교묘히 피하다'. 아래 8차 기록 참고
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -87,7 +101,7 @@
  *   5차  20개  encouragement ~ enlighten   ← 완료
  *   6차  20개  enormous ~ environment-friendly  ← 완료
  *   7차  20개  envision ~ erratic          ← 완료
- *   8차  20개  erroneous ~ evaluate
+ *   8차  20개  erroneous ~ evaluate        ← 완료
  *   9차  20개  evaporate ~ excess
  *  10차  20개  excessive ~ exhibition
  *  11차  20개  exhilarating ~ explicit
@@ -202,7 +216,51 @@
  *
  * PRON 에 뒤늦게 채운 1개 — stress. 3차의 humiliate·symbol 과 같은 경우다.
  *
- * ── 손대지 않고 남겨 둔 기존 문제 3개 ──────────
+ * ── 8차 기록 ─────────────────────────────────
+ * 사전에 이미 있던 낱말이 10개(7차와 같다). 영향받는 기존 표제어가 17개라
+ * 베이스라인을 먼저 떠 두고 대조했다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 10개 (GLOSS·PRON 양쪽 20항목)
+ *   gloss.js   erupt, escort, esteem, estimate, eternity, evaluate
+ *   words.js   establish
+ *   words-c.js escape, evade
+ *   words-e.js established  ← 4차에서 emerging 의 반의어로 내가 넣은 항목이다
+ *   pron.js    위 10개 전부
+ *
+ * 앞 차수에 넣은 GLOSS 가 표제어로 올라온 두 번째 사례다(7차 eradicate 에 이어).
+ * 조사 스크립트에 '9~13차에 올 낱말이 이미 사전에 있나' 를 세는 칸을 넣어 두니
+ * 30개가 나왔다 — 그 가운데 내가 넣은 것은 even(7차)·exemplify(3차) 둘이다.
+ * 남은 차수에서 이 둘을 지워야 한다.
+ *
+ * ★ 뜻이 '글자까지' 겹치는 것을 미리 피한 사례 — evade
+ *   원본 순서대로 "피하다, 회피하다" 로 두면 표제어 avoid·dodge 의 유의어 목록에
+ *   있는 sidestep(GLOSS "피하다, 회피하다")과 글자까지 같아진다. 그래서 뜻을
+ *   "회피하다, 교묘히 피하다" 로 잡았다. 같은 이유로 dodge 와 sidestep 을 evade 의
+ *   유의어로 함께 쓰지 않았다 — 그 둘끼리도 뜻이 글자까지 같다(dodge 는 표제어
+ *   "피하다, 회피하다", sidestep 은 GLOSS "피하다, 회피하다").
+ *   1·2차에서는 audit 이 잡은 뒤에 고쳤지만, 이번에는 베이스라인 렌더를 먼저 떠
+ *   두었기 때문에 쓰기 전에 알 수 있었다.
+ *
+ * 같은 이유로 뜻을 원본과 달리 잡은 것이 둘 더 있다
+ *   eternal    perpetual 의 GLOSS 가 "영원한, 끊임없는" → 원본의 '끊임없는' 대신 '불멸의'
+ *   erroneous  mistaken 의 GLOSS 가 "잘못된, 틀린"     → '틀린' 대신 '오류가 있는'
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   erupt      기존 뜻 "분출하다, 발발하다" 그대로 — 표제어 break out 이 유의어로 쓴다
+ *   escort     기존 뜻 "호위하다, 수행하다"(동사) 그대로 — 표제어 accompany 가 쓴다
+ *   esteem     동사로 정리 — 표제어 admire(동사)가 쓴다
+ *   estimate   동사로 정리 — 표제어 calculate(동사)가 쓴다
+ *   established 기존 뜻 "확립된, 기성의" 그대로 — 표제어 emerging 의 반의어다
+ *   eternity   '사후 세계' 갈래 유지 — 표제어 afterlife 가 유의어로 쓴다
+ *
+ * 유의어에서 걸러낸 것
+ *   escort 의 guard   → "경비원; 지키다"(명사가 앞)   ✗ → conduct safely
+ *   escalate 의 grow  → "자라다; 증가하다"(자라다가 앞) ✗ → increase sharply
+ *   evade 의 sidestep → dodge 와 뜻이 글자까지 같다    ✗ → shirk
+ *
+ * PRON 에 뒤늦게 채운 3개 — moral, property, racial. 7차의 outbreak 들과 같다.
+ *
+ * ── 손대지 않고 남겨 둔 기존 문제 4개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
  * 출제가 변하므로 따로 판단이 필요하다. 셋 다 '동사·명사 표제어에 품사가 다른
  * 유의어가 붙어 있다' 는 같은 꼴이다.
@@ -214,6 +272,13 @@
  *        equivalent 는 표제어 comparable·corresponding(둘 다 형용사)도 유의어로
  *        쓰므로 형용사로 둘 수밖에 없었다. 명사 하나보다 형용사 둘을 지켰다.
  *        7차 전에도 같은 형용사 뜻이 떴으므로 나빠진 것은 아니다        (7차에 발견)
+ *   companion(동반자 — 명사) 의 유의어 escort → 동사 뜻("호위하다")이 뜬다.
+ *        escort 는 표제어 accompany(동사)도 유의어로 쓰므로 동사로 둘 수밖에 없었다.
+ *        counterpart 와 똑같은 꼴이다. 8차 전에도 같은 동사 뜻이 떴다   (8차에 발견)
+ *
+ * 넷 다 '명사 표제어에 동사·형용사 유의어가 붙어 있다' 는 한 가지 문제다. 고치려면
+ * 그 표제어의 syn 을 품사가 맞는 낱말로 바꿔야 하는데, 그러면 기존 출제가 변한다.
+ * E 세트를 다 넣은 뒤에 한 번에 다루는 편이 낫다.
  *
  * 반대로 encounter 는 이번에 나아졌다. 기존 GLOSS "마주치다, 만남"의 명사 갈래가
  * 표제어 come across(동사)와 어긋났는데, 동사로 정리하면서 사라졌다.
@@ -1041,7 +1106,115 @@ window.VOCAB_E = [
 
   { word:"erratic", pron:"이래틱", pos:"adj", level:"C1", meanings:["예측할 수 없는","일정하지 않은"],
     syn:["unpredictable","inconsistent","irregular"], ant:["consistent"],
-    ex:[{ s:"The old clock keeps {{}} time.", f:"erratic", ko:"그 낡은 시계는 일정하지 않게 시간을 가리킨다." }] }
+    ex:[{ s:"The old clock keeps {{}} time.", f:"erratic", ko:"그 낡은 시계는 일정하지 않게 시간을 가리킨다." }] },
+
+  /* ── 8차: erroneous ~ evaluate ───────────────────── */
+
+  /* 뜻을 '오류가 있는' 으로 잡았다 — 유의어 mistaken 의 GLOSS 가 "잘못된, 틀린"
+     이어서 '틀린' 을 쓰면 표제어와 선택지가 같은 말을 한다. */
+  { word:"erroneous", pron:"이로우니어스", pos:"adj", level:"C1", meanings:["잘못된","오류가 있는"],
+    syn:["incorrect","mistaken","false"], ant:["correct"],
+    ex:[{ s:"The report drew an {{}} conclusion from good data.", f:"erroneous", ko:"그 보고서는 좋은 자료에서 잘못된 결론을 끌어냈다." }] },
+
+  /* 원본 '(감정 등이) 터져 나오다; 분출하다, 분화하다' 에서 괄호를 풀고, 기존 GLOSS
+     "분출하다, 발발하다" 를 그대로 옮겼다 — 표제어 break out 이 유의어로 쓴다. */
+  { word:"erupt", pron:"이럽트", pos:"v", level:"B2", meanings:["분출하다","발발하다"],
+    syn:["break out","burst forth","blow up"],
+    ex:[{ s:"The volcano could {{}} again within months.", f:"erupt", ko:"그 화산은 몇 달 안에 다시 분출할 수 있다." }] },
+
+  /* 원본 '(화산의) 폭발, 분화' 의 괄호를 풀었다. */
+  { word:"eruption", pron:"이럽션", pos:"n", level:"B2", meanings:["폭발","분화"],
+    syn:["outburst","explosion","blast"],
+    ex:[{ s:"Ash from the {{}} grounded flights for a week.", f:"eruption", ko:"그 폭발에서 나온 화산재가 일주일간 항공편을 멈춰 세웠다." }] },
+
+  { word:"escalate", pron:"에스컬레이트", pos:"v", level:"C1", meanings:["확대되다","증가시키다"],
+    syn:["intensify","step up","increase sharply"],
+    ex:[{ s:"A small dispute can {{}} into a strike.", f:"escalate", ko:"작은 분쟁이 파업으로 확대될 수 있다." }] },
+
+  { word:"escape", pron:"이스케이프", pos:"v", level:"B1", meanings:["탈출하다","벗어나다"],
+    syn:["break free","get away","flee"], ant:["be trapped"],
+    ex:[{ s:"Two of the birds managed to {{}} through a gap.", f:"escape", ko:"새 두 마리가 틈으로 탈출하는 데 성공했다." }] },
+
+  /* 기존 GLOSS "호위하다, 수행하다"(동사)를 그대로 뒀다 — 표제어 accompany(동사)가
+     유의어로 쓴다. 유의어로 guard 는 쓰지 않았다(GLOSS 가 "경비원; 지키다" 로 명사가 앞). */
+  { word:"escort", pron:"이스코트", pos:"v", level:"B2", meanings:["호위하다","수행하다"],
+    syn:["accompany","go with","conduct safely"],
+    ex:[{ s:"Two officers will {{}} the visitors to the gate.", f:"escort", ko:"경관 두 명이 방문객을 문까지 호위할 것이다." }] },
+
+  { word:"essential", pron:"이센셜", pos:"adj", level:"B1", meanings:["필수적인","극히 중요한"],
+    syn:["indispensable","vital","crucial"], ant:["optional"],
+    ex:[{ s:"Clean water is {{}} to public health.", f:"essential", ko:"깨끗한 물은 공중 보건에 필수적이다." }] },
+
+  /* 원본은 '확립하다; (법률, 제도 등을) 제정하다; 설립하다' 로 갈래가 셋이다 — 괄호를
+     풀고 둘로 줄였다. 표제어 abolish(반의어)·determine(유의어)이 이 낱말을 쓴다. */
+  { word:"establish", pron:"이스태블리시", pos:"v", level:"B1", meanings:["확립하다","설립하다"],
+    syn:["found","set up","institute"], ant:["abolish"],
+    ex:[{ s:"The town hopes to {{}} a museum in the old mill.", f:"establish", ko:"그 마을은 낡은 제분소에 박물관을 설립하기를 바란다." }] },
+
+  /* 4차에서 emerging 의 반의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로 올라온다 —
+     7차의 eradicate 와 같은 경우다. 그 항목을 지우고 뜻 "확립된, 기성의" 를 그대로
+     옮겨 emerging 쪽이 변하지 않게 했다. 원본의 갈래 넷(인정받는·확실히 자리 잡은·
+     저명한·존경받는)은 recognized·long-standing 을 유의어로 넣어 살렸다. */
+  { word:"established", pron:"이스태블리시트", pos:"adj", level:"B2", meanings:["확립된","기성의"],
+    syn:["long-standing","recognized","well-founded"], ant:["emerging"],
+    ex:[{ s:"She left an {{}} firm to start her own.", f:"established", ko:"그녀는 자리 잡은 회사를 떠나 자기 사업을 시작했다." }] },
+
+  { word:"estate", pron:"이스테이트", pos:"n", level:"B2", meanings:["소유지","재산"],
+    syn:["property","land holding","possessions"],
+    ex:[{ s:"The family sold the {{}} after the war.", f:"estate", ko:"그 가족은 전쟁 후에 소유지를 팔았다." }] },
+
+  /* 원본은 '존경, 경의; 존경하다' 로 명사가 앞이지만 동사로 정했다 — 표제어
+     admire(동사)가 이 낱말을 유의어로 쓴다. */
+  { word:"esteem", pron:"이스팀", pos:"v", level:"C1", meanings:["존경하다","높이 평가하다"],
+    syn:["admire","look up to","hold in high regard"], ant:["despise"],
+    ex:[{ s:"Colleagues {{}} her for her patience.", f:"esteem", ko:"동료들은 그녀의 인내심 때문에 그녀를 존경한다." }] },
+
+  /* 원본은 '견적, 추정; 추정하다, 추산하다' 로 명사와 동사가 섞여 있다 — 동사로
+     정했다. 표제어 calculate(동사)가 유의어로 쓴다. */
+  { word:"estimate", pron:"에스터메이트", pos:"v", level:"B1", meanings:["추정하다","추산하다"],
+    syn:["calculate","reckon","work out"],
+    ex:[{ s:"Surveyors {{}} the repair at twice that figure.", f:"estimate", ko:"조사관들은 수리비를 그 금액의 두 배로 추정한다." }] },
+
+  /* 뜻을 '불멸의' 로 잡았다 — 유의어 perpetual 의 GLOSS 가 "영원한, 끊임없는" 이라
+     원본의 '끊임없는' 을 쓰면 표제어와 선택지가 같은 말을 한다. */
+  { word:"eternal", pron:"이터널", pos:"adj", level:"B2", meanings:["영원한","불멸의"],
+    syn:["everlasting","perpetual","undying"], ant:["temporary"],
+    ex:[{ s:"The poem treats love as an {{}} force.", f:"eternal", ko:"그 시는 사랑을 영원한 힘으로 다룬다." }] },
+
+  /* 기존 GLOSS "영원; 사후 세계" 를 그대로 뒀다 — 표제어 afterlife 가 유의어로 쓰므로
+     '사후 세계' 갈래가 살아 있어야 한다. 원본의 '영겁, 오랜 시간' 은 '영원' 을 달리
+     말한 것뿐이라 버렸다. */
+  { word:"eternity", pron:"이터너티", pos:"n", level:"C1", meanings:["영원","사후 세계"],
+    syn:["afterlife","hereafter","endless time"],
+    ex:[{ s:"The wait felt like an {{}}.", f:"eternity", ko:"그 기다림은 영원처럼 느껴졌다." }] },
+
+  { word:"ethical", pron:"에시컬", pos:"adj", level:"B2", meanings:["윤리적인","도덕적인"],
+    syn:["moral","principled","upright"], ant:["unethical"],
+    ex:[{ s:"The board raised {{}} objections to the plan.", f:"ethical", ko:"이사회는 그 계획에 윤리적인 이의를 제기했다." }] },
+
+  { word:"ethics", pron:"에식스", pos:"n", level:"C1", meanings:["윤리학","윤리"],
+    syn:["moral principles","moral philosophy","code of conduct"],
+    ex:[{ s:"She teaches medical {{}} to first-year students.", f:"ethics", ko:"그녀는 1학년생에게 의료 윤리학을 가르친다." }] },
+
+  { word:"ethnic", pron:"에스닉", pos:"adj", level:"B2", meanings:["민족의","인종의"],
+    syn:["racial","cultural","tribal"],
+    ex:[{ s:"The city celebrates its many {{}} traditions.", f:"ethnic", ko:"그 도시는 여러 민족의 전통을 기린다." }] },
+
+  { word:"evacuate", pron:"이배큐에이트", pos:"v", level:"C1", meanings:["대피시키다","철수시키다"],
+    syn:["clear out","move out","remove to safety"],
+    ex:[{ s:"Crews had to {{}} the village before dawn.", f:"evacuate", ko:"대원들은 새벽 전에 그 마을을 대피시켜야 했다." }] },
+
+  /* 뜻을 '교묘히 피하다' 로 잡았다 — 원본 순서대로 "피하다, 회피하다" 로 두면
+     표제어 avoid·dodge 의 유의어 목록에 있는 sidestep(GLOSS "피하다, 회피하다")과
+     글자까지 같아져 피드백 두 줄이 같아진다. 그래서 dodge 와 sidestep 을 유의어로
+     같이 쓰지도 않았다(그 둘도 서로 뜻이 글자까지 같다). */
+  { word:"evade", pron:"이베이드", pos:"v", level:"C1", meanings:["회피하다","교묘히 피하다"],
+    syn:["avoid","dodge","shirk"], ant:["confront"],
+    ex:[{ s:"He tried to {{}} the question twice.", f:"evade", ko:"그는 그 질문을 두 번 회피하려 했다." }] },
+
+  { word:"evaluate", pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
+    syn:["appraise","assess","judge"],
+    ex:[{ s:"Teachers {{}} the projects on four criteria.", f:"evaluate", ko:"교사들은 네 가지 기준으로 그 과제를 평가한다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1131,7 +1304,6 @@ Object.assign(window.GLOSS, {
   "draw out":"끌어내다, 이끌어 내다",
   "egg-shaped":"달걀 모양의",
   "entitled":"권리가 있는",
-  "established":"확립된, 기성의",
   "exemplify":"전형적으로 보여주다",
   "expressiveness":"표현력이 풍부함",
   "fluency":"유창함",
@@ -1303,5 +1475,41 @@ Object.assign(window.GLOSS, {
   "visualize":"시각적으로 떠올리다",
   "wear away":"닳아 없어지게 하다",
   "wearing away":"닳아 없어짐",
-  "widespread disease":"널리 퍼진 질병"
+  "widespread disease":"널리 퍼진 질병",
+
+  /* ── 8차: erroneous ~ evaluate (35개) ───────────────── */
+  "blow up":"폭발하다",
+  "burst forth":"터져 나오다",
+  "clear out":"비우다, 치우다",
+  "code of conduct":"행동 규범",
+  "conduct safely":"안전하게 데려가다",
+  "cultural":"문화의",
+  "endless time":"끝없는 시간",
+  "everlasting":"영구한",
+  "explosion":"폭발, 파열",
+  "found":"창립하다",
+  "hold in high regard":"높이 받들다",
+  "incorrect":"부정확한",
+  "increase sharply":"급격히 늘다",
+  "indispensable":"없어서는 안 될",
+  "institute":"제정하다, 도입하다",
+  "judge":"판단하다, 심사하다",
+  "land holding":"소유 토지",
+  "long-standing":"오래 이어져 온",
+  "moral philosophy":"도덕 철학",
+  "moral principles":"도덕 원칙",
+  "move out":"옮겨 나가다",
+  "outburst":"터져 나옴, 분출",
+  "possessions":"소유물, 재산",
+  "principled":"원칙을 지키는",
+  "recognized":"인정받는",
+  "remove to safety":"안전한 곳으로 옮기다",
+  "shirk":"회피해 버리다",
+  "step up":"단계적으로 높이다",
+  "temporary":"일시적인",
+  "tribal":"부족의",
+  "undying":"죽지 않는",
+  "unethical":"비윤리적인",
+  "upright":"정직한, 청렴한",
+  "well-founded":"근거가 확실한"
 });

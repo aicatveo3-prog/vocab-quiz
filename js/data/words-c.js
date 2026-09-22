@@ -1969,8 +1969,6 @@ Object.assign(window.GLOSS, {
   "effective":"효과적인",
 
   "emotional":"감정적인",
-  "escape":"벗어나다, 빠져나가다",
-  "evade":"회피하다, 피하다",
   "evasive":"회피하는, 둘러대는",
   "expand":"확장하다, 늘리다",
   "expert":"전문가",

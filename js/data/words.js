@@ -1657,7 +1657,6 @@ window.GLOSS = {
   "dissociate":"분리하다, 관계를 끊다",
   "distant":"먼, 거리가 있는",
   "distracted":"산만한",
-  "establish":"설립하다, 확립하다",
   "establishment":"설립, 기관",
   "exact":"정확한",
   "exactly":"정확히",
