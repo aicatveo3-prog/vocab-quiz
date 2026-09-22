@@ -103,6 +103,12 @@
  *   exhaust     '기진맥진하게 만들다; 배기가스; 배기관' → 동사로 정리. '고갈시키다' 를
  *               앞에 뒀다(deplete 가 유의어로 쓴다). '기진맥진' 은 exhausted 가 맡는다
  *   exhibition  '(감정, 기교 등의) 표현' 갈래 제거,  exclusively 셋 → 둘
+ *   exile       '국외 추방, 망명자, 추방하다' → 동사로 정리 (banish·deport 가 유의어로 쓴다)
+ *   experiment  '실험, 실험하다' → 명사로 정리
+ *   expand      '커지다, 확장하다' → '커지다, 확대되다' (아래 11차 기록 참고)
+ *   expect      '기대하다, 예상하다' → '기대하다, 당연히 여기다' (같은 이유)
+ *   explicit    '분명한, 명쾌한' → 기존 GLOSS 의 '명시적인' 을 앞으로 (같은 이유)
+ *   expel       원본 '내쫓다, 방출하다' 대신 기존 GLOSS "추방하다, 퇴학시키다" 를 썼다
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -119,7 +125,7 @@
  *   8차  20개  erroneous ~ evaluate        ← 완료
  *   9차  20개  evaporate ~ excess          ← 완료
  *  10차  20개  excessive ~ exhibition      ← 완료
- *  11차  20개  exhilarating ~ explicit
+ *  11차  20개  exhilarating ~ explicit     ← 완료
  *  12차  20개  explicitly ~ extinct
  *  13차  10개  extinction ~ eyesore
  *
@@ -370,6 +376,59 @@
  *   art exhibition 은 pos 가 phr 이라 이 명사 표제어와 오답 후보로 겹치지 않는다.
  *
  * PRON 에 뒤늦게 채운 1개 — moderate. 9차의 grounds 들과 같다.
+ *
+ * ── 11차 기록 ────────────────────────────────
+ * 사전에 이미 있던 낱말이 9개. 영향받는 기존 표제어가 16개라 베이스라인을 먼저
+ * 떠 두고 대조했다. 이번에는 내가 앞 차수에 넣은 항목이 하나도 없었다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 9개 (GLOSS·PRON 양쪽 18항목)
+ *   gloss.js   exile, expect, expel, expenditure, explain
+ *   words.js   expansion, explicit
+ *   words-c.js expand, expert
+ *   pron.js    위 9개 전부
+ *
+ * ★ 이 구간은 뜻이 겹치는 짝이 유난히 많다 — 다섯 짝을 손봤다
+ *   레벨을 두 칸 벌려 해결한 것 (9차에서 쓴 방법)
+ *     expenditure(C1) / expense(B1)   둘 다 돈에 관한 명사.  뜻도 '지출/소비량' 과
+ *                                     '비용/돈' 으로 갈랐다
+ *     expert(B1) / expertise(C1)      둘 다 '전문' 명사.  '사람' 과 '지식' 으로 갈린다
+ *   레벨로 풀 수 없어 뜻으로만 가른 것
+ *     expand(B2) / enlarge(B2, 6차)   ⚠️ B2 와 두 칸 떨어진 레벨은 C2 뿐이라
+ *                                     expand 에 맞지 않는다. 자동사(커지다, 확대되다) /
+ *                                     타동사(확대하다, 확장하다)로 뜻을 갈랐다
+ *     expect(B1) / anticipate(B2)     anticipate 의 뜻이 "기대하다, 예상하다" 라서
+ *                                     원본대로 두면 글자까지 같아진다. 둘째 뜻을
+ *                                     '당연히 여기다' 로 바꿨다(첫 뜻은 anticipate 가
+ *                                     이 낱말을 유의어로 쓰므로 그대로 뒀다)
+ *     explicit / evident(9차)·apparent  원본의 '분명한' 을 앞에 쓰면 셋이 뒤섞인다.
+ *                                     기존 GLOSS 의 '명시적인' 을 앞으로 돌렸다
+ *   ⇒ 레벨 간격은 B1·B2·C1·C2 넷뿐이라, B2 짝은 C2 로만 벌릴 수 있다. B2 에 있는
+ *      기본 낱말끼리 겹치면 레벨로는 풀 수 없고 뜻으로 갈라야 한다.
+ *
+ * 추방 낱말이 몰려 있다 — exile(C2)·expel(B2) 이 들어오면서 기존 banish(C1)·
+ * deport(C1)·eject(B2) 와 다섯 낱말이 한 무리가 되었다. banish 와 deport 는 11차
+ * 전부터 서로 이웃 레벨이었으므로 새로 만든 문제는 아니다. 뜻을 '추방하다, 퇴학시키다'
+ * (expel) / '추방하다, 망명시키다'(exile) 로 갈라 글자까지 겹치지 않게 했다.
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   expel       기존 뜻 "추방하다, 퇴학시키다" — banish·deport·eject 셋이 유의어로 쓴다
+ *   expenditure 기존 뜻 "지출, 소비량" — 표제어 consumption 이 유의어로 쓴다
+ *   expect      첫 뜻 '기대하다' 유지 — 표제어 anticipate 가 유의어로 쓴다
+ *   explicit    첫 뜻 '명시적인' 유지 — 표제어 ambiguous·equivocal(7차)의 반의어다
+ *   exile       동사로 정리 — banish·deport(둘 다 동사)가 유의어로 쓴다
+ *
+ * 유의어에서 걸러낸 것
+ *   exhort 의 urge     → "충동; 재촉하다"(명사 갈래가 앞)  ✗ → urge strongly
+ *   expense 의 charge  → 표제어인데 품사가 동사            ✗ → payment
+ *   expert 의 authority → 표제어 "권한, 당국"              ✗ → master
+ *
+ * 발음은 기존 표기에서 찾아 맞췄다
+ *   exist·existence  coexist("코이그지스트")·come into existence("컴 인투 이그지스턴스")
+ *   expense          at the expense of("앳 디 익스펜스 오브") — 이 구는 pos 가 phr 이라
+ *                    명사 표제어 expense 와 오답 후보로 겹치지 않는다
+ *   experiment       experimental("익스페러멘털"),  anticipation → anticipate 에 맞췄다
+ *
+ * PRON 에 뒤늦게 채운 2개 — growth, swell. 10차의 moderate 와 같다.
  *
  * ── 손대지 않고 남겨 둔 기존 문제 4개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
@@ -1536,7 +1595,116 @@ window.VOCAB_E = [
      art exhibition 은 pos 가 phr 이라 이 명사와 오답 후보로 겹치지 않는다. */
   { word:"exhibition", pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
     syn:["showcase","public display","exposition"],
-    ex:[{ s:"The museum opens a new {{}} each spring.", f:"exhibition", ko:"그 박물관은 매년 봄 새 전시회를 연다." }] }
+    ex:[{ s:"The museum opens a new {{}} each spring.", f:"exhibition", ko:"그 박물관은 매년 봄 새 전시회를 연다." }] },
+
+  /* ── 11차: exhilarating ~ explicit ───────────────── */
+
+  { word:"exhilarating", pron:"이그질러레이팅", pos:"adj", level:"C1", meanings:["아주 신나는","즐거운"],
+    syn:["thrilling","stirring","invigorating"],
+    ex:[{ s:"The ride down the valley was {{}}.", f:"exhilarating", ko:"골짜기를 내려가는 그 주행은 아주 신났다." }] },
+
+  /* 유의어로 urge 를 쓰지 않았다 — GLOSS 가 "충동; 재촉하다" 로 명사 갈래가 앞이다
+     (5차 encourage 에서도 같은 이유로 걸러냈다). */
+  { word:"exhort", pron:"이그조트", pos:"v", level:"C2", meanings:["훈계하다","간곡히 권하다"],
+    syn:["urge strongly","admonish","preach to"],
+    ex:[{ s:"The captain would {{}} the crew before every match.", f:"exhort", ko:"주장은 경기마다 선수들을 간곡히 격려하곤 했다." }] },
+
+  /* 원본은 '국외 추방, 망명자, 추방하다' 로 명사 둘과 동사가 섞여 있다 — 동사로
+     정했다. 표제어 banish·deport(둘 다 동사)가 이 낱말을 유의어로 쓴다.
+     '망명시키다' 를 둘째 뜻으로 둔 것은 banish("추방하다, 내쫓다")·deport("강제
+     추방하다, 국외로 내보내다")와 뜻이 글자까지 겹치지 않게 하려는 것이다. */
+  { word:"exile", pron:"엑사일", pos:"v", level:"C2", meanings:["추방하다","망명시키다"],
+    syn:["banish","deport","send into exile"],
+    ex:[{ s:"The new rulers moved to {{}} their rivals.", f:"exile", ko:"새 통치자들은 경쟁자들을 추방하려 움직였다." }] },
+
+  { word:"exist", pron:"이그지스트", pos:"v", level:"B1", meanings:["존재하다"],
+    syn:["be present","be real","live on"],
+    ex:[{ s:"No written record of the village seems to {{}}.", f:"exist", ko:"그 마을의 기록은 남아 있지 않은 것 같다." }] },
+
+  { word:"existence", pron:"이그지스턴스", pos:"n", level:"B2", meanings:["존재"],
+    syn:["being","reality","actual fact"],
+    ex:[{ s:"Nobody doubted the {{}} of the old tunnel.", f:"existence", ko:"아무도 그 낡은 터널의 존재를 의심하지 않았다." }] },
+
+  { word:"exotic", pron:"이그자틱", pos:"adj", level:"B2", meanings:["이국적인","외국산의"],
+    syn:["foreign","unusual","outlandish"],
+    ex:[{ s:"The market sells {{}} fruit from three continents.", f:"exotic", ko:"그 시장은 세 대륙에서 온 이국적인 과일을 판다." }] },
+
+  /* ⚠️ 뜻을 '커지다, 확대되다'(자동사 쪽)로 잡았다. 표제어 enlarge(6차, B2 "확대하다,
+     확장하다")와 뜻이 가까운데, 레벨은 벌릴 수가 없었다 — B2 와 두 칸 떨어진 레벨은
+     C2 뿐이고 expand 에 C2 는 맞지 않는다. 그래서 자동사(커지다)/타동사(확대하다)로
+     뜻을 갈라 두었다. 9차의 even/equal 처럼 레벨로 푸는 편이 낫지만, 이 짝은
+     레벨로 풀 수 없는 자리에 있다. */
+  { word:"expand", pron:"익스팬드", pos:"v", level:"B2", meanings:["커지다","확대되다"],
+    syn:["grow bigger","swell","spread out"],
+    ex:[{ s:"Metal rails {{}} slightly on hot afternoons.", f:"expand", ko:"금속 레일은 더운 오후에 조금 커진다." }] },
+
+  { word:"expansion", pron:"익스팬션", pos:"n", level:"B2", meanings:["팽창","확대"],
+    syn:["growth","increase in size","enlargement"],
+    ex:[{ s:"The {{}} of the port took eight years.", f:"expansion", ko:"그 항구의 확대에는 8년이 걸렸다." }] },
+
+  /* ⚠️ 둘째 뜻을 '당연히 여기다' 로 잡았다. 표제어 anticipate(B2)의 뜻이 "기대하다,
+     예상하다" 여서, 원본대로 두면 두 낱말의 뜻이 글자까지 같아져 한 문제의 보기로
+     같이 뜨면 답을 고를 수 없다. 첫 뜻 '기대하다' 는 anticipate 가 이 낱말을
+     유의어로 쓰기 때문에 그대로 두었다. */
+  { word:"expect", pron:"익스펙트", pos:"v", level:"B1", meanings:["기대하다","당연히 여기다"],
+    syn:["anticipate","foresee","predict"],
+    ex:[{ s:"We did not {{}} so many people to show up.", f:"expect", ko:"우리는 그렇게 많은 사람이 올 줄은 기대하지 않았다." }] },
+
+  { word:"expectancy", pron:"익스펙턴시", pos:"n", level:"C1", meanings:["기대","예상"],
+    syn:["expectation","anticipation","likelihood"],
+    ex:[{ s:"A hush of {{}} fell over the hall.", f:"expectancy", ko:"기대의 정적이 강당에 내렸다." }] },
+
+  { word:"expedition", pron:"엑스퍼디션", pos:"n", level:"B2", meanings:["원정","긴 여행"],
+    syn:["journey","voyage","quest"],
+    ex:[{ s:"The {{}} reached the ridge in eleven days.", f:"expedition", ko:"그 원정대는 11일 만에 능선에 도달했다." }] },
+
+  /* 기존 GLOSS "추방하다, 퇴학시키다" 를 그대로 옮겼다 — 표제어 banish·deport·eject
+     셋이 이 낱말을 유의어로 쓴다. 원본의 '내쫓다, 방출하다' 를 쓰면 banish 자신의
+     뜻("추방하다, 내쫓다")과 겹치는 낱말이 늘어난다. */
+  { word:"expel", pron:"익스펠", pos:"v", level:"B2", meanings:["추방하다","퇴학시키다"],
+    syn:["drive out","throw out","eject"],
+    ex:[{ s:"The school may {{}} anyone caught cheating twice.", f:"expel", ko:"그 학교는 두 번 부정행위를 한 사람을 퇴학시킬 수 있다." }] },
+
+  /* expenditure(C1)와 expense(B1)를 두 칸 벌렸다 — 둘 다 돈에 관한 명사라서
+     레벨이 가까우면 한 문제의 보기로 같이 뜬다. 뜻도 '지출/소비량' 과 '비용/돈' 으로
+     갈라 두었다. 기존 GLOSS "지출, 소비량" 은 표제어 consumption 이 유의어로 쓴다. */
+  { word:"expenditure", pron:"익스펜디처", pos:"n", level:"C1", meanings:["지출","소비량"],
+    syn:["spending","outlay","sum spent"],
+    ex:[{ s:"Public {{}} on roads fell again last year.", f:"expenditure", ko:"도로에 대한 공공 지출이 지난해 또 줄었다." }] },
+
+  { word:"expense", pron:"익스펜스", pos:"n", level:"B1", meanings:["비용","돈"],
+    syn:["cost","outgoings","payment"],
+    ex:[{ s:"They covered the {{}} of the trip themselves.", f:"expense", ko:"그들은 여행 비용을 직접 부담했다." }] },
+
+  /* 원본은 '실험, 실험하다' 로 명사와 동사가 섞여 있다 — 명사로 정했다. */
+  { word:"experiment", pron:"익스페러먼트", pos:"n", level:"B2", meanings:["실험"],
+    syn:["trial run","test","controlled trial"],
+    ex:[{ s:"The {{}} was repeated in four other labs.", f:"experiment", ko:"그 실험은 다른 네 실험실에서도 반복되었다." }] },
+
+  /* expert(B1)와 expertise(C1)도 두 칸 벌렸다 — 둘 다 '전문' 명사다.
+     뜻은 '사람'(전문가)과 '지식'(전문 지식)으로 갈라진다. */
+  { word:"expert", pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
+    syn:["specialist","master","skilled person"],
+    ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
+
+  { word:"expertise", pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
+    syn:["know-how","special skill","technical knowledge"],
+    ex:[{ s:"Restoring the clock needs real {{}}.", f:"expertise", ko:"그 시계를 복원하려면 진짜 전문 지식이 필요하다." }] },
+
+  { word:"expire", pron:"익스파이어", pos:"v", level:"C1", meanings:["만료되다","기한이 끝나다"],
+    syn:["run out","lapse","come to an end"],
+    ex:[{ s:"The permit will {{}} at the end of the month.", f:"expire", ko:"그 허가는 이달 말에 만료된다." }] },
+
+  { word:"explain", pron:"익스플레인", pos:"v", level:"B1", meanings:["설명하다","해명하다"],
+    syn:["clarify","account for","spell out"],
+    ex:[{ s:"Let me {{}} why the schedule slipped.", f:"explain", ko:"일정이 밀린 이유를 설명하겠습니다." }] },
+
+  /* 기존 GLOSS "명시적인" 을 첫 뜻으로 그대로 뒀다 — 표제어 ambiguous·equivocal(7차)의
+     반의어다. 원본의 '분명한' 을 앞에 쓰면 표제어 evident(9차, "분명한, 눈에 띄는")·
+     apparent("명백한, 분명한")와 뜻이 뒤섞여 셋을 구별할 수 없게 된다. */
+  { word:"explicit", pron:"익스플리시트", pos:"adj", level:"B2", meanings:["명시적인","명쾌한"],
+    syn:["clear-cut","unambiguous","stated plainly"], ant:["ambiguous"],
+    ex:[{ s:"The contract is {{}} about who pays for repairs.", f:"explicit", ko:"그 계약서는 수리비를 누가 내는지 명시적이다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1906,5 +2074,45 @@ Object.assign(window.GLOSS, {
   "wear out":"지치게 하다",
   "wield":"휘두르다, 행사하다",
   "worked up":"들뜬",
-  "worn out":"녹초가 된"
+  "worn out":"녹초가 된",
+
+  /* ── 11차: exhilarating ~ explicit (38개) ───────────────── */
+  "actual fact":"실제 사실",
+  "admonish":"타이르다, 훈계하다",
+  "anticipation":"기대감",
+  "be present":"있다, 존재하다",
+  "be real":"실재하다",
+  "being":"존재하는 것",
+  "controlled trial":"통제된 시험",
+  "cost":"비용, 대가",
+  "drive out":"쫓아 버리다",
+  "enlargement":"확대, 증대",
+  "expectation":"기대, 예상되는 것",
+  "grow bigger":"더 커지다",
+  "increase in size":"크기가 커짐",
+  "invigorating":"활기를 주는",
+  "know-how":"실무 지식",
+  "lapse":"효력을 잃다",
+  "likelihood":"가능성",
+  "live on":"계속 살아 있다",
+  "outgoings":"지출액",
+  "outlay":"경비 지출",
+  "payment":"지불, 납부",
+  "preach to":"설교하듯 말하다",
+  "run out":"기한이 다하다",
+  "send into exile":"망명 보내다",
+  "skilled person":"숙련된 사람",
+  "special skill":"특수 기능",
+  "specialist":"특정 분야 전문가",
+  "spell out":"자세히 설명하다",
+  "spending":"지출, 씀",
+  "spread out":"퍼지다, 펼쳐지다",
+  "stated plainly":"분명히 밝힌",
+  "stirring":"가슴 뛰게 하는",
+  "sum spent":"쓴 금액",
+  "technical knowledge":"기술 지식",
+  "thrilling":"짜릿한",
+  "trial run":"시험 가동",
+  "unambiguous":"모호하지 않은",
+  "urge strongly":"강하게 권하다"
 });
