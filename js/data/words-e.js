@@ -94,6 +94,15 @@
  *   evidence    '증거; 증언; 흔적' → 둘로 줄였다
  *   excess      '과잉, 초과량, 초과한' → 명사로 정리
  *   eventually  '결국' 하나만 — 유의어 finally 의 GLOSS 가 "마침내, 결국" 이라 겹친다
+ *   exemplary   '칭찬할만한' → 칭찬할 만한  (띄어쓰기. 위 목록에도 적혀 있다)
+ *   exchange    '교환; 교환하다' → 동사로 정리 (barter 가 유의어로 쓴다)
+ *   execute     '처형하다; (계획을) 실행하다' → 괄호를 풀고 '실행하다' 를 앞으로
+ *               (carry out 이 유의어로 쓰므로 '처형하다' 로 시작하면 엉뚱해진다)
+ *   exempt      '면제되는; 면제하다' → 형용사로 정리
+ *   exert       '(영향, 권력, 억압 등을) 이용하다, 행사하다' → 괄호를 풀고 '행사하다' 를 앞으로
+ *   exhaust     '기진맥진하게 만들다; 배기가스; 배기관' → 동사로 정리. '고갈시키다' 를
+ *               앞에 뒀다(deplete 가 유의어로 쓴다). '기진맥진' 은 exhausted 가 맡는다
+ *   exhibition  '(감정, 기교 등의) 표현' 갈래 제거,  exclusively 셋 → 둘
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -109,7 +118,7 @@
  *   7차  20개  envision ~ erratic          ← 완료
  *   8차  20개  erroneous ~ evaluate        ← 완료
  *   9차  20개  evaporate ~ excess          ← 완료
- *  10차  20개  excessive ~ exhibition
+ *  10차  20개  excessive ~ exhibition      ← 완료
  *  11차  20개  exhilarating ~ explicit
  *  12차  20개  explicitly ~ extinct
  *  13차  10개  extinction ~ eyesore
@@ -313,6 +322,54 @@
  *   올리며 '눈에 띄는' 오타를 바로잡자 그 중복이 사라졌다.
  *
  * PRON 에 뒤늦게 채운 3개 — go beyond, grounds, look into. 8차의 moral 들과 같다.
+ *
+ * ── 10차 기록 ────────────────────────────────
+ * 사전에 이미 있던 낱말이 6개로 줄었다(9차 10개). exemplify 는 3차에서 embody 의
+ * 유의어로 내가 넣은 것이다 — 앞 차수 항목이 표제어로 올라온 다섯 번째 사례다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 6개 (GLOSS·PRON 양쪽 12항목)
+ *   gloss.js   exchange, execute, executive
+ *   words.js   exclusion
+ *   words-d.js exhaust
+ *   words-e.js exemplify(3차)   ← 내가 넣은 것
+ *   pron.js    위 6개 전부
+ *
+ * ★ 명사와 형용사를 한 뜻에 함께 담아야 했던 경우 — executive
+ *   기존 GLOSS 는 "경영진, 관리직의" 로 명사와 형용사가 섞여 있다. 표제어 CEO(명사)는
+ *   '경영진' 을, administrative(형용사)는 '관리직의' 를 필요로 해서 어느 한쪽을
+ *   버리면 그쪽이 어긋난다. 그래서 섞인 뜻을 그대로 옮겼다.
+ *   pos=n 인데 둘째 뜻이 형용사인 표제어는 이미 14개 있다 — characteristic(특성,
+ *   특유의)·chemical(화학 물질, 화학의)·criminal(범죄자, 범죄의)·current(흐름,
+ *   현재의) 가 같은 꼴이다. 새로 만든 예외가 아니라 기존 방식을 따른 것이다.
+ *
+ * ⚠️ 덤으로 고쳐진 것 — 표제어 barter 의 유의어 exchange 와 swap 이 둘 다
+ *   "교환하다" 로 뜻이 글자까지 같았다(10차 전부터). exchange 를 표제어로 올리며
+ *   '주고받다' 를 붙이자 그 중복이 사라졌다. 9차의 apparent(obvious/evident)와
+ *   같은 종류의 덤이다 — 사전 항목을 표제어로 올릴 때 뜻을 두 개로 적으면
+ *   이런 묵은 중복이 저절로 풀린다.
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   execute    '실행하다' 를 앞에 — 표제어 carry out 이 유의어로 쓴다
+ *   exhaust    '고갈시키다' 를 앞에 — 표제어 deplete 가 유의어로 쓴다
+ *   executive  기존 GLOSS 그대로 — 위 ★ 참고
+ *   exemplify  '전형' 갈래를 앞에 — 표제어 embody(3차)가 유의어로 쓴다
+ *   exclusion  '배제' 갈래 유지 — 표제어 access 의 반의어다
+ *
+ * 유의어에서 걸러낸 것
+ *   exhibition 의 display → 표제어인데 품사가 동사("전시하다, 드러내다") ✗ → showcase
+ *   exert 의 apply        → 표제어인데 "지원하다, 적용하다" 로 '지원하다' 가 앞 ✗ → wield
+ *   exchange 의 switch    → "전환하다; 스위치" + 발음도 없다      ✗ → interchange
+ *   executive 의 director → "감독, 지도자"                        ✗ → senior official
+ *   exemplary 의 praiseworthy → "칭찬할 만한". 이 표제어의 둘째 뜻과 글자까지 같아
+ *                               화면에 같은 말이 겹친다           ✗ → first-rate
+ *
+ * 발음은 기존 표기에서 찾아 맞췄다
+ *   exhibition  기존 표제어 art exhibition("아트 엑시비션")에 맞춰 '엑시비션' (엑서비션 ✗)
+ *   administrator  administration("어드미니스트레이션")에 맞췄다
+ *   manager        managerial("매너지리얼")에 맞췄다
+ *   art exhibition 은 pos 가 phr 이라 이 명사 표제어와 오답 후보로 겹치지 않는다.
+ *
+ * PRON 에 뒤늦게 채운 1개 — moderate. 9차의 grounds 들과 같다.
  *
  * ── 손대지 않고 남겨 둔 기존 문제 4개 ──────────
  * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
@@ -1373,7 +1430,113 @@ window.VOCAB_E = [
   /* 원본은 '과잉, 초과량, 초과한' 으로 명사와 형용사가 섞여 있다 — 명사로 정했다. */
   { word:"excess", pron:"익세스", pos:"n", level:"C1", meanings:["과잉","초과량"],
     syn:["surplus","overabundance","too much"], ant:["shortage"],
-    ex:[{ s:"The plant dumped its {{}} into the river.", f:"excess", ko:"그 공장은 초과량을 강에 버렸다." }] }
+    ex:[{ s:"The plant dumped its {{}} into the river.", f:"excess", ko:"그 공장은 초과량을 강에 버렸다." }] },
+
+  /* ── 10차: excessive ~ exhibition ────────────────── */
+
+  { word:"excessive", pron:"익세시브", pos:"adj", level:"B2", meanings:["지나친","과도한"],
+    syn:["extreme","immoderate","over the top"], ant:["moderate"],
+    ex:[{ s:"The fee seemed {{}} for a two-page form.", f:"excessive", ko:"두 장짜리 서식에 그 수수료는 지나쳐 보였다." }] },
+
+  /* 원본은 '교환; 교환하다' 로 명사와 동사가 섞여 있다 — 동사로 정했다.
+     표제어 barter(동사)가 이 낱말을 유의어로 쓴다. */
+  { word:"exchange", pron:"익스체인지", pos:"v", level:"B1", meanings:["교환하다","주고받다"],
+    syn:["swap","barter","interchange"],
+    ex:[{ s:"The two schools {{}} students every summer.", f:"exchange", ko:"두 학교는 매년 여름 학생을 교환한다." }] },
+
+  { word:"excited", pron:"익사이티드", pos:"adj", level:"B1", meanings:["흥분된","신이 난"],
+    syn:["thrilled","elated","worked up"], ant:["calm"],
+    ex:[{ s:"The children were too {{}} to sit still.", f:"excited", ko:"아이들은 너무 흥분해서 가만히 앉아 있지 못했다." }] },
+
+  { word:"exclaim", pron:"익스클레임", pos:"v", level:"B2", meanings:["소리치다","외치다"],
+    syn:["cry out","shout","call out"],
+    ex:[{ s:"She began to {{}} before he finished speaking.", f:"exclaim", ko:"그녀는 그가 말을 끝내기도 전에 소리치기 시작했다." }] },
+
+  { word:"exclamation", pron:"엑스클러메이션", pos:"n", level:"C1", meanings:["감탄","외침"],
+    syn:["outcry","cry","shout of surprise"],
+    ex:[{ s:"A soft {{}} escaped her as the lights came on.", f:"exclamation", ko:"불이 켜지자 그녀에게서 낮은 감탄이 새어 나왔다." }] },
+
+  { word:"exclusion", pron:"익스클루전", pos:"n", level:"B2", meanings:["제외","배제"],
+    syn:["omission","barring","shutting out"], ant:["inclusion"],
+    ex:[{ s:"Her {{}} from the list caused an argument.", f:"exclusion", ko:"그녀가 명단에서 제외된 것이 논쟁을 일으켰다." }] },
+
+  { word:"exclusive", pron:"익스클루시브", pos:"adj", level:"B2", meanings:["배타적인","독점적인"],
+    syn:["sole","restricted","select"], ant:["inclusive"],
+    ex:[{ s:"The club remains {{}} about who may join.", f:"exclusive", ko:"그 클럽은 누가 가입할 수 있는지에 배타적이다." }] },
+
+  /* 원본은 '오로지, 오직 ~만, 배타적으로' 로 셋인데 앞 둘이 같은 말이라 둘로 줄였다. */
+  { word:"exclusively", pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
+    syn:["only","solely","entirely"],
+    ex:[{ s:"The shop sells {{}} secondhand books.", f:"exclusively", ko:"그 가게는 오로지 중고 책만 판다." }] },
+
+  { word:"excursion", pron:"익스커전", pos:"n", level:"B2", meanings:["소풍","유람"],
+    syn:["outing","trip","day trip"],
+    ex:[{ s:"The class took an {{}} to the salt flats.", f:"excursion", ko:"그 반은 염전으로 소풍을 갔다." }] },
+
+  /* 원본은 '처형하다; (계획을) 실행하다' 로 처형이 앞이지만 '실행하다' 를 앞에 뒀다 —
+     표제어 carry out(수행하다, 실행하다)이 이 낱말을 유의어로 쓰므로, 피드백이
+     '처형하다' 로 시작하면 엉뚱해진다. 괄호도 풀었다. */
+  { word:"execute", pron:"엑서큐트", pos:"v", level:"B2", meanings:["실행하다","처형하다"],
+    syn:["carry out","perform","put into effect"],
+    ex:[{ s:"The team will {{}} the plan in three stages.", f:"execute", ko:"그 팀은 계획을 세 단계로 실행할 것이다." }] },
+
+  { word:"execution", pron:"엑서큐션", pos:"n", level:"C1", meanings:["처형","사형 집행"],
+    syn:["capital punishment","death penalty","putting to death"],
+    ex:[{ s:"The country halted every {{}} that year.", f:"execution", ko:"그 나라는 그해 모든 처형을 중단했다." }] },
+
+  /* 기존 GLOSS "경영진, 관리직의" 를 그대로 옮겼다. 명사와 형용사가 섞인 뜻이지만
+     표제어 CEO(명사)는 '경영진' 을, administrative(형용사)는 '관리직의' 를 필요로 해서
+     하나를 버리면 어느 한쪽이 어긋난다. pos=n 에 둘째 뜻이 형용사인 표제어는 이미
+     여럿 있다 — characteristic·chemical·criminal·current 가 같은 꼴이다. */
+  { word:"executive", pron:"이그제큐티브", pos:"n", level:"B2", meanings:["경영진","관리직의"],
+    syn:["manager","administrator","senior official"],
+    ex:[{ s:"A senior {{}} signed off on the deal.", f:"executive", ko:"고위 경영진이 그 거래를 승인했다." }] },
+
+  /* 원본의 '칭찬할만한' 은 띄어쓰기가 틀렸다 — '칭찬할 만한' 으로 바로잡았다
+     (헤더에 적어 둔 대로). 유의어로 praiseworthy 를 쓰지 않았다: GLOSS 가
+     "칭찬할 만한" 으로 이 표제어의 둘째 뜻과 글자까지 같아 화면에 같은 말이 겹친다. */
+  { word:"exemplary", pron:"이그젬플러리", pos:"adj", level:"C1", meanings:["모범적인","칭찬할 만한"],
+    syn:["model","admirable","first-rate"],
+    ex:[{ s:"His record over ten years was {{}}.", f:"exemplary", ko:"10년에 걸친 그의 기록은 모범적이었다." }] },
+
+  /* 3차에서 embody 의 유의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로 올라온다 —
+     그 항목을 지웠다. embody 쪽 피드백이 바뀌지 않도록 '전형' 갈래를 앞에 뒀다. */
+  { word:"exemplify", pron:"이그젬플리파이", pos:"v", level:"C1", meanings:["전형적인 사례가 되다","예증하다"],
+    syn:["illustrate","typify","embody"],
+    ex:[{ s:"These letters {{}} the style of the period.", f:"exemplify", ko:"이 편지들은 그 시대의 문체를 전형적으로 보여 준다." }] },
+
+  /* 원본은 '면제되는; 면제하다' 로 형용사와 동사가 섞여 있다 — 형용사로 정했다. */
+  { word:"exempt", pron:"이그젬프트", pos:"adj", level:"C1", meanings:["면제되는","적용 대상이 아닌"],
+    syn:["excused","not subject to","free from"],
+    ex:[{ s:"Small farms are {{}} from the new levy.", f:"exempt", ko:"작은 농장은 새 부과금에서 면제된다." }] },
+
+  /* 원본 '(영향, 권력, 억압 등을) 이용하다, 행사하다' 의 괄호를 풀고 '행사하다' 를
+     앞에 뒀다 — '이용하다' 는 뜻이 너무 넓어 카드의 첫 뜻으로 맞지 않는다. */
+  { word:"exert", pron:"이그저트", pos:"v", level:"C1", meanings:["행사하다","가하다"],
+    syn:["wield","bring to bear","put forth"],
+    ex:[{ s:"Editors still {{}} real influence over what we read.", f:"exert", ko:"편집자들은 우리가 읽는 것에 여전히 실질적인 영향력을 행사한다." }] },
+
+  { word:"exhale", pron:"엑스헤일", pos:"v", level:"C1", meanings:["내쉬다","내뿜다"],
+    syn:["breathe out","expel air","blow out"], ant:["inhale"],
+    ex:[{ s:"Divers learn to {{}} slowly on the way up.", f:"exhale", ko:"잠수부들은 올라오는 동안 천천히 내쉬는 법을 배운다." }] },
+
+  /* 원본은 '기진맥진하게 만들다; 배기가스; 배기관' 으로 동사와 명사가 섞여 있다 —
+     동사로 정하고, 기존 GLOSS 의 '고갈시키다' 를 앞에 뒀다(표제어 deplete 가
+     유의어로 쓴다). '기진맥진' 쪽은 같은 차수의 exhausted 가 맡는다. */
+  { word:"exhaust", pron:"이그조스트", pos:"v", level:"B2", meanings:["고갈시키다","기진맥진하게 만들다"],
+    syn:["deplete","use up","wear out"],
+    ex:[{ s:"Two dry summers can {{}} the village well.", f:"exhaust", ko:"두 번의 건조한 여름이면 마을 우물을 고갈시킬 수 있다." }] },
+
+  { word:"exhausted", pron:"이그조스티드", pos:"adj", level:"B1", meanings:["몹시 피곤한","기진맥진한"],
+    syn:["worn out","drained","dead tired"],
+    ex:[{ s:"They arrived {{}} after two days on the road.", f:"exhausted", ko:"그들은 이틀간의 여정 끝에 몹시 피곤한 상태로 도착했다." }] },
+
+  /* 발음은 기존 표제어 art exhibition("아트 엑시비션")에 맞춰 '엑시비션' 으로 적었다.
+     원본의 '(감정, 기교 등의) 표현' 갈래는 버렸다(괄호 설명이 필요한 갈래다).
+     art exhibition 은 pos 가 phr 이라 이 명사와 오답 후보로 겹치지 않는다. */
+  { word:"exhibition", pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
+    syn:["showcase","public display","exposition"],
+    ex:[{ s:"The museum opens a new {{}} each spring.", f:"exhibition", ko:"그 박물관은 매년 봄 새 전시회를 연다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1463,7 +1626,6 @@ Object.assign(window.GLOSS, {
   "draw out":"끌어내다, 이끌어 내다",
   "egg-shaped":"달걀 모양의",
   "entitled":"권리가 있는",
-  "exemplify":"전형적으로 보여주다",
   "expressiveness":"표현력이 풍부함",
   "fluency":"유창함",
   "fluent":"유창한",
@@ -1698,5 +1860,51 @@ Object.assign(window.GLOSS, {
   "testimony":"증언",
   "too much":"너무 많은 것",
   "ultimately":"궁극적으로",
-  "vaporize":"기화시키다"
+  "vaporize":"기화시키다",
+
+  /* ── 10차: excessive ~ exhibition (44개) ───────────────── */
+  "administrator":"관리자, 행정관",
+  "barring":"차단, 못 들어오게 함",
+  "blow out":"불어 내보내다",
+  "breathe out":"숨을 내쉬다",
+  "bring to bear":"작용시키다",
+  "capital punishment":"사형",
+  "cry":"외침, 부르짖음",
+  "cry out":"크게 외치다",
+  "day trip":"당일 여행",
+  "dead tired":"몹시 지친",
+  "death penalty":"사형 제도",
+  "drained":"진이 빠진",
+  "excused":"면제된",
+  "expel air":"공기를 밀어내다",
+  "exposition":"박람회, 전시",
+  "first-rate":"일류의",
+  "free from":"~에서 벗어난",
+  "immoderate":"절제 없는",
+  "inclusive":"포용적인",
+  "inhale":"숨을 들이쉬다",
+  "interchange":"서로 바꾸다",
+  "manager":"경영자, 운영자",
+  "model":"모범이 되는",
+  "not subject to":"적용받지 않는",
+  "omission":"생략, 누락",
+  "only":"오직",
+  "outcry":"고함, 절규",
+  "outing":"나들이",
+  "over the top":"정도를 넘은",
+  "public display":"공개 전시",
+  "put forth":"내세우다, 발휘하다",
+  "putting to death":"사형을 집행함",
+  "select":"선별된",
+  "senior official":"고위 간부",
+  "shout of surprise":"놀라서 내는 소리",
+  "showcase":"전시 행사",
+  "shutting out":"몰아냄",
+  "sole":"유일한, 독점의",
+  "solely":"단독으로",
+  "trip":"여행, 이동",
+  "wear out":"지치게 하다",
+  "wield":"휘두르다, 행사하다",
+  "worked up":"들뜬",
+  "worn out":"녹초가 된"
 });
