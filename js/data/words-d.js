@@ -1594,7 +1594,6 @@ Object.assign(window.GLOSS, {
   "divest":"박탈하다, 처분하다",
   "drought":"가뭄",
   "exacting":"엄격한, 힘든",
-  "exhaust":"고갈시키다, 다 써 버리다",
   "exhaustion":"고갈, 탈진",
   "exhibit":"드러내다; 전시하다",
   "fallacy":"오류, 잘못된 생각",

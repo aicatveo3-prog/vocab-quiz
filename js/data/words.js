@@ -1661,7 +1661,6 @@ window.GLOSS = {
   "exact":"정확한",
   "exactly":"정확히",
   "exclude":"제외하다",
-  "exclusion":"배제",
   "expansion":"확장, 팽창",
   "explicit":"명시적인",
   "fail":"실패하다",
