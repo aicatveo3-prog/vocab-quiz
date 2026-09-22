@@ -302,7 +302,24 @@
     else toggleAccount();
   });
 
-  window.Sync.onChange(renderAccount);
+  /* 계정이 바뀌면 화면의 기록도 다시 그린다.
+     로그아웃하면 Sync 가 이 기기에 남은 기록을 지운다(계정 경계). 그런데 화면을
+     그대로 두면 이미 지워진 기록이 숫자로 계속 보여서, 쓰는 사람은 "로그아웃했는데
+     기록이 남아 있다" 고 느낀다. 로그인할 때도 서버에서 받은 기록이 바로 보여야 한다.
+
+     동기화 상태(dirty·sending·lastSyncedAt)는 초 단위로 바뀌므로 그때마다 단어
+     목록을 다시 그리면 낭비다. 계정이 실제로 달라졌을 때만 다시 그린다. */
+  var lastAcctUid = null;
+
+  window.Sync.onChange(function (st) {
+    renderAccount(st);
+    var uid = st.user ? st.user.uid : null;
+    if (uid === lastAcctUid) return;
+    lastAcctUid = uid;
+    renderHome();                                       // 오늘 현황·진척도
+    if ($('screen-words').classList.contains('is-active')) renderWords();
+    if ($('screen-wrong').classList.contains('is-active')) renderWrong();
+  });
 
   /* ── 기록 백업 (내보내기 / 가져오기) ──────────────
      로그인 없이 기록 유실을 막는 장치. 직렬화·병합은 Store가 담당하고
