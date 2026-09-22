@@ -1984,7 +1984,6 @@ Object.assign(window.GLOSS, {
   "fresh":"신선한, 갓 만든",
   "frosty":"쌀쌀한, 냉랭한",
   "graceful":"우아한, 매끄러운",
-  "greed":"탐욕",
   "guess":"짐작하다, 추측",
   "guesswork":"어림짐작",
   "harmless":"해롭지 않은",

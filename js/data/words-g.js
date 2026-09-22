@@ -428,7 +428,112 @@ window.VOCAB_G = [
      쓰므로 '수여하다' 를 첫 자리에 남기고 원본의 명사 뜻을 둘째로 담았다. */
   { word:"grant", pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
     syn:["bestow","award","confer"], ant:["deny"],
-    ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] }
+    ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────── */
+
+  /* 원본은 '그래픽; 도표의; 생생한, 상세한' 으로 세 갈래다. 형용사 쪽으로 모았다. */
+  { word:"graphic", pron:"그래픽", pos:"adj", level:"B2", meanings:["생생한","도표의"],
+    syn:["vivid","explicit","lifelike"],
+    ex:[{ s:"The witness gave a {{}} account of the accident.", f:"graphic", ko:"그 목격자는 사고를 생생하게 진술했다." }] },
+
+  /* 승격 ① — GLOSS '잡다; 이해하다' 를 그대로 지켰다. comprehend 의 유의어로
+     쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
+     원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
+  { word:"grasp", pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+    syn:["comprehend","apprehend","fathom"],
+    ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },
+
+  { word:"gratify", pron:"그래티파이", pos:"v", level:"C1", meanings:["기쁘게 하다","만족시키다"],
+    syn:["please","satisfy","delight"], ant:["frustrate"],
+    ex:[{ s:"Nothing seemed to {{}} him more than a quiet evening.", f:"gratify", ko:"조용한 저녁만큼 그를 기쁘게 하는 것은 없어 보였다." }] },
+
+  { word:"gratitude", pron:"그래티튜드", pos:"n", level:"B2", meanings:["고마움","감사"],
+    syn:["thankfulness","appreciation","indebtedness"], ant:["ingratitude"],
+    ex:[{ s:"She wrote a short note to express her {{}}.", f:"gratitude", ko:"그녀는 고마움을 전하려고 짧은 쪽지를 썼다." }] },
+
+  /* 승격 ① — GLOSS 는 '심각한; 묘지' 인데 참조하는 기존 문제가 없어 갈래를
+     자유롭게 골랐다. 원본의 형용사 쪽(중대한, 근엄한)으로 모았다.
+     원본의 '금엄한' 은 없는 말이라 '근엄한' 으로 고쳤다 (0차에 기록). */
+  { word:"grave", pron:"그레이브", pos:"adj", level:"B2", meanings:["중대한","근엄한"],
+    syn:["solemn","serious","weighty"], ant:["trivial"],
+    ex:[{ s:"The committee treated the warning as a {{}} matter.", f:"grave", ko:"위원회는 그 경고를 중대한 사안으로 다루었다." }] },
+
+  /* gravitation 과 gravity 는 어근이 같고 원본에서 뜻도 겹친다(둘 다 '중력').
+     gravitation 은 끌어당기는 작용(인력), gravity 는 그 힘 자체로 갈랐고
+     서로를 유의어로 등록해 한 문제·한 보드에서 만나지 않게 했다. */
+  { word:"gravitation", pron:"그래비테이션", pos:"n", level:"C1", meanings:["인력","만유인력"],
+    syn:["gravity","attraction","pull"],
+    ex:[{ s:"Newton explained how {{}} keeps the planets in orbit.", f:"gravitation", ko:"뉴턴은 인력이 어떻게 행성을 궤도에 붙잡아 두는지 설명했다." }] },
+
+  { word:"gravity", pron:"그래버티", pos:"n", level:"B2", meanings:["중력"],
+    syn:["gravitation","weight force","downward pull"],
+    ex:[{ s:"Objects fall at the same rate under {{}} in a vacuum.", f:"gravity", ko:"진공에서는 물체가 중력을 받아 같은 속도로 떨어진다." }] },
+
+  { word:"graze", pron:"그레이즈", pos:"v", level:"B2", meanings:["풀을 뜯어먹다","방목하다"],
+    syn:["pasture","browse","feed"],
+    ex:[{ s:"Sheep {{}} on the hillside from spring to autumn.", f:"graze", ko:"양들은 봄부터 가을까지 언덕에서 풀을 뜯어먹는다." }] },
+
+  /* 승격 ① — GLOSS '기름진' 을 첫 자리에 지켰다. 참조하는 기존 문제는 없다. */
+  { word:"greasy", pron:"그리시", pos:"adj", level:"B2", meanings:["기름진","기름이 묻은"],
+    syn:["oily","fatty","slick"],
+    ex:[{ s:"He wiped his {{}} hands on an old towel.", f:"greasy", ko:"그는 기름 묻은 손을 낡은 수건에 닦았다." }] },
+
+  /* 승격 ① — GLOSS '탐욕' 을 첫 자리에 지켰다. charity 문제의 반의어로 쓰인다. */
+  { word:"greed", pron:"그리드", pos:"n", level:"B2", meanings:["탐욕","욕심"],
+    syn:["avarice","covetousness","rapacity"], ant:["generosity"],
+    ex:[{ s:"Unchecked {{}} was blamed for the collapse of the fund.", f:"greed", ko:"제어되지 않은 탐욕이 그 펀드의 붕괴 원인으로 지목됐다." }] },
+
+  /* greed 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 오지 않는다. */
+  { word:"greedy", pron:"그리디", pos:"adj", level:"B1", meanings:["탐욕스러운"],
+    syn:["avaricious","grasping","insatiable"], ant:["selfless"],
+    ex:[{ s:"The story warns children not to be {{}}.", f:"greedy", ko:"그 이야기는 아이들에게 탐욕스러워지지 말라고 경고한다." }] },
+
+  { word:"greenhouse", pron:"그린하우스", pos:"n", level:"B1", meanings:["온실"],
+    syn:["hothouse","glasshouse","conservatory"],
+    ex:[{ s:"Tomatoes ripen weeks earlier inside the {{}}.", f:"greenhouse", ko:"토마토는 온실 안에서 몇 주 더 일찍 익는다." }] },
+
+  { word:"gregarious", pron:"그리게리어스", pos:"adj", level:"C2", meanings:["사교적인"],
+    syn:["sociable","outgoing","convivial"], ant:["reclusive"],
+    ex:[{ s:"His {{}} nature made him the centre of every party.", f:"gregarious", ko:"사교적인 성격 덕에 그는 모든 모임의 중심이 되었다." }] },
+
+  /* 원본 첫 뜻이 '(지도의) 기준선망' 으로 괄호 설명이라 순서를 바꿨다. */
+  { word:"grid", pron:"그리드", pos:"n", level:"B2", meanings:["격자무늬","기준선망"],
+    syn:["lattice","mesh","network"],
+    ex:[{ s:"City streets follow a strict {{}} in this district.", f:"grid", ko:"이 지구의 도로는 엄격한 격자무늬를 따른다." }] },
+
+  /* 승격 ① — GLOSS 는 '비탄, 슬픔' 인데 참조하는 기존 문제가 없어 원본 순서를 썼다. */
+  { word:"grief", pron:"그리프", pos:"n", level:"B2", meanings:["슬픔","비탄"],
+    syn:["sorrow","anguish","heartache"], ant:["joy"],
+    ex:[{ s:"Time did little to ease her {{}}.", f:"grief", ko:"시간은 그녀의 슬픔을 거의 덜어 주지 못했다." }] },
+
+  /* 원본의 '농장 관리인' 은 스코틀랜드 방언이라 삭제했다 (0차에 기록).
+     grief 와 어근이 같지만 품사가 다르고(n/v) 표제어 길이도 달라 보드가 갈린다. */
+  { word:"grieve", pron:"그리브", pos:"v", level:"B2", meanings:["비통해하다","애도하다"],
+    syn:["mourn","lament","sorrow over"],
+    ex:[{ s:"The village gathered to {{}} for those lost at sea.", f:"grieve", ko:"마을 사람들은 바다에서 잃은 이들을 애도하려 모였다." }] },
+
+  { word:"grievous", pron:"그리버스", pos:"adj", level:"C2", meanings:["통탄할","비통한"],
+    syn:["egregious","dire","lamentable"],
+    ex:[{ s:"The report described a {{}} failure of oversight.", f:"grievous", ko:"그 보고서는 통탄할 감독 실패를 기술했다." }] },
+
+  /* 원본은 '엄숙한, 단호한; 암울한, 음침한' 이다. 3차의 gloomy 를 사전 뜻
+     '우울한, 침울한' 으로 지켰으므로 여기서 암울한 쪽을 맡아 둘이 갈린다. */
+  { word:"grim", pron:"그림", pos:"adj", level:"B2", meanings:["암울한","음침한"],
+    syn:["forbidding","stark","dismal"], ant:["hopeful"],
+    ex:[{ s:"The forecast for the harvest looked {{}}.", f:"grim", ko:"수확 전망은 암울해 보였다." }] },
+
+  /* 승격 ② — GLOSS 가 '얼굴을 찡그리다' 인데 그 문자열은 기존 표제어 frown 과
+     같다. 복수 정답이 되므로 '얼굴을 찌푸리다' 로 갈랐다. 참조하는 기존
+     문제가 없어 바꿔도 안전하다. */
+  { word:"grimace", pron:"그리머스", pos:"v", level:"C1", meanings:["얼굴을 찌푸리다","찡그린 표정"],
+    syn:["wince","scowl","contort"],
+    ex:[{ s:"He began to {{}} as the bandage was pulled away.", f:"grimace", ko:"붕대가 떼어지자 그는 얼굴을 찌푸리기 시작했다." }] },
+
+  /* 원본의 '빵다' 는 오타라 '빻다' 로 고쳤다 (0차에 기록). */
+  { word:"grind", pron:"그라인드", pos:"v", level:"B2", meanings:["갈다","빻다"],
+    syn:["crush","pulverize","mill"],
+    ex:[{ s:"Machines {{}} the beans into a fine powder.", f:"grind", ko:"기계가 그 원두를 고운 가루로 갈아 낸다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 재대입(=)이 아니라 Object.assign 이다.
@@ -438,6 +543,9 @@ Object.assign(window.GLOSS, {
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
+  "appreciation":"감사, 고마움",
+  "avarice":"금전욕",
+  "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
   "be friendly with":"~와 친하게 지내다",
   "beckon":"손짓으로 부르다",
@@ -454,12 +562,19 @@ Object.assign(window.GLOSS, {
   "complete studies":"학업을 마치다",
   "congregation":"신도들, 모인 사람들",
   "connoisseur":"감식가",
+  "conservatory":"유리 온실",
+  "contort":"일그러뜨리다",
+  "convivial":"유쾌하게 어울리는",
   "corn":"곡물, 낟알",
+  "covetousness":"남의 것을 바람",
   "crease":"주름이 지다",
   "crux":"핵심, 관건",
   "culture clash":"문화 충돌",
+  "dire":"극심한, 심각한",
+  "downward pull":"아래로 끌는 힘",
   "dynamo":"발전기",
   "earn a degree":"학위를 받다",
+  "egregious":"터무니없이 나쁜",
   "embark on":"~에 착수하다",
   "engineered":"인위적으로 조작된",
   "epicure":"식도락가",
@@ -468,17 +583,24 @@ Object.assign(window.GLOSS, {
   "exalt":"칭송하다, 높이다",
   "extol":"극찬하다",
   "exude":"뿜어내다",
+  "fatty":"지방이 많은",
   "finish school":"학교를 마치다",
   "food lover":"음식을 즐기는 사람",
+  "forbidding":"위압적인, 험악한",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",
   "get on with":"~와 사이가 좋다",
+  "glasshouse":"유리 재배실",
   "go bankrupt":"파산하다",
   "go under":"사업이 망하다",
+  "grasping":"욕심 사나운",
   "grow weary of":"~에 넌더리가 나다",
   "guiding principle":"지침이 되는 원칙",
+  "heartache":"가슴앓이",
   "hit it off with":"~와 금방 친해지다",
+  "hopeful":"희망적인",
+  "hothouse":"난방 온실",
   "ice field":"빙원",
   "ice sheet":"대륙 빙상",
   "icecap":"만년설",
@@ -486,18 +608,26 @@ Object.assign(window.GLOSS, {
   "imposing":"위풍당당한",
   "in view of":"~에 비추어",
   "incremental":"조금씩 늘어나는",
+  "indebtedness":"은혜를 입음",
+  "ingratitude":"배은망덕",
   "inherited":"물려받은",
+  "insatiable":"만족을 모르는",
   "kernel":"알맹이",
   "landscape":"풍경, 지형",
+  "lattice":"격자 구조",
   "liberal":"후한, 너그러운",
+  "lifelike":"실물 같은",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
   "majestic":"장엄한",
   "make way for":"~에 길을 내주다",
   "maxim":"격언",
+  "mesh":"그물망",
   "microbe":"미생물",
+  "mill":"제분하다",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
+  "network":"망, 연결망",
   "nonspecific":"특정하지 않은",
   "opt for":"~을 택하다",
   "outfit":"장비 한 벌",
@@ -505,9 +635,11 @@ Object.assign(window.GLOSS, {
   "parking space":"주차 공간",
   "pass":"지나가다, 통과되다",
   "paste":"풀로 붙이다",
+  "pasture":"방목하다",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
   "peek":"살짝 들여다보다",
+  "please":"흡족하게 하다",
   "power unit":"동력 장치",
   "precept":"계율, 가르침",
   "prefer":"더 좋아하다",
@@ -515,8 +647,11 @@ Object.assign(window.GLOSS, {
   "progressive":"점차 진행되는",
   "puff":"숨을 가쁘게 쉬다",
   "pull through":"이겨 내다",
+  "pulverize":"가루로 만들다",
   "put across":"뜻을 전하다",
   "radiate":"발산하다, 내비치다",
+  "rapacity":"탐욕스러운 강탈",
+  "reclusive":"은둔하는",
   "regional":"지역의",
   "resplendent":"눈부시게 화려한",
   "run wild":"제멋대로 날뛰다",
@@ -525,17 +660,23 @@ Object.assign(window.GLOSS, {
   "shut down":"문을 닫다",
   "sift through":"자세히 살펴보다",
   "sighting":"목격",
+  "slick":"매끄럽고 미끈한",
   "snatch":"낚아채다",
+  "solemn":"엄숙한",
   "somber":"침침한, 어두운",
+  "sorrow":"비애",
+  "sorrow over":"~을 애도하다",
   "sparkle":"불꽃처럼 반짝이다",
   "spatial":"공간의",
   "spiral":"악화로 치닫다",
   "star system":"항성계",
+  "stark":"냉혹한, 황량한",
   "stick":"달라붙다",
   "stingy":"인색한",
   "style":"양식, 형식",
   "succumb to":"~에 무너지다",
   "terrain":"지형, 지대",
+  "thankfulness":"감사하는 마음",
   "tier":"층, 단",
   "topographic":"지형의",
   "topography":"지형, 지세",
@@ -545,7 +686,11 @@ Object.assign(window.GLOSS, {
   "twinkle":"깜박이며 빛나다",
   "universal":"보편적인",
   "venerate":"숭상하다",
+  "vivid":"선명한",
+  "weight force":"무게로 작용하는 힘",
+  "weighty":"중대한, 무거운",
   "wheeze":"쌕쌕거리다",
   "widespread":"널리 퍼진",
+  "wince":"움찔하다",
   "yield to":"~에 양보하다"
 });
