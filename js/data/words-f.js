@@ -247,7 +247,36 @@
  *   current flow 의 유의어로 쓰려 했으나 표제어 뜻이 '흐름, 현재의' 로
  *           '현재의' 가 섞인다 → stream·steady movement·running water 로
  *
- * 진행 상황: 120 / 210단어 (fable ~ flush) — 6차, 6챕터 완료.
+ * ── 7차 기록 ──
+ *   승격은 셋뿐이었다. 그중 하나는 기존 결함을 함께 고쳤다.
+ *     무변  follow suit ["선례를 따르다"] ← break new ground(ant)
+ *     변경  foe    "적"       → ["원수","적"]
+ *           forbid "금지하다" → ["금지하다","못하게 하다"]
+ *
+ *   forbid ★ 기존 결함을 고친 자리다
+ *     표제어 ban 의 유의어가 prohibit·forbid·outlaw 인데 prohibit 의 뜻도
+ *     '금지하다' 여서 그 문제에서는 두 선택지의 설명이 글자까지 같았다.
+ *     한쪽을 골라야 할 근거가 화면에 없는 상태다. words-b.js 에는 세트별
+ *     audit 이 없어(D·E 세트만 있다) 지금까지 걸리지 않던 자리다.
+ *     '못하게 하다' 를 더해 두 선택지를 갈랐다.
+ *
+ *   foe 기존 뜻 '적' 은 표제어 enemy 의 첫 뜻과 같았다. 원본의 '원수' 를 앞에
+ *     두어 갈랐다. comrade·enemy 두 자리에서 여전히 옳다.
+ *
+ * ── 7차에서 같은 세트 안 겹침을 피한 것 ──
+ *   flutter  원본 '날개 치다, 퍼덕거리다' 의 둘째 뜻이 5차 표제어 flap 의 뜻과
+ *            글자까지 같다 → '파르르 떨다' 로 갈랐다
+ *   flux     원본 '(물의) 흐름' 의 첫 뜻이 6차 표제어 flow 와 같다. flux 는
+ *            오늘날 'in flux' 처럼 끊임없는 변화를 가리키는 쪽으로 더 쓰이므로
+ *            ["끊임없는 변화","유동"] 으로 적었다
+ *
+ * ── 7차 계열 ──
+ *   forbid(v)·forbidden(adj) 은 품사가 달라 저절로 갈라진다.
+ *   fore- 로 시작하는 다섯 낱말(foreboding·forecast·foregone·forehead·
+ *   foremost)은 다섯째 글자부터 갈라져 여섯 글자 가족이 아니다. 0차 보드
+ *   예비검사에서도 걸리지 않았다.
+ *
+ * 진행 상황: 140 / 210단어 (fable ~ foremost) — 7차, 7챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -834,7 +863,101 @@ window.VOCAB_F = [
 
   { word:"flush", pron:"플러시", pos:"v", level:"B2", meanings:["붉어지다","물을 내리다"],
     syn:["redden","blush","go red"],
-    ex:[{ s:"Her cheeks began to {{}} in the cold wind.", f:"flush", ko:"찬 바람에 그녀의 뺨이 붉어지기 시작했다." }] }
+    ex:[{ s:"Her cheeks began to {{}} in the cold wind.", f:"flush", ko:"찬 바람에 그녀의 뺨이 붉어지기 시작했다." }] },
+
+  /* ── 7차: flutter ~ foremost (20개) ───────────── */
+
+  /* 원본은 '날개 치다, 퍼덕거리다' 인데 '퍼덕거리다' 는 5차 표제어 flap 의
+     뜻과 글자까지 같다. 같은 세트 안에서 짝 맞추기 카드가 겹치지 않도록
+     둘째 뜻을 '파르르 떨다' 로 갈랐다. */
+  { word:"flutter", pron:"플러터", pos:"v", level:"B2", meanings:["날개 치다","파르르 떨다"],
+    syn:["flap about","quiver","beat the wings"],
+    ex:[{ s:"Moths began to {{}} around the porch light.", f:"flutter", ko:"나방들이 현관 등 주위에서 날개 치기 시작했다." }] },
+
+  /* 원본은 '(물의) 흐름' 이지만 flux 는 오늘날 'in flux' 처럼 끊임없는 변화를
+     가리키는 쪽으로 더 쓰인다. 6차 표제어 flow 의 첫 뜻이 '흐름' 이라 그대로
+     두면 같은 세트에서 카드가 겹치기도 한다. */
+  { word:"flux", pron:"플럭스", pos:"n", level:"C2", meanings:["끊임없는 변화","유동"],
+    syn:["constant change","instability","state of flow"],
+    ex:[{ s:"The whole industry is in {{}} right now.", f:"flux", ko:"업계 전체가 지금 끊임없는 변화 속에 있다." }] },
+
+  /* 기존 사전 뜻은 '적' 한 마디였는데 그것은 표제어 enemy 의 첫 뜻과 같다.
+     원본의 '원수' 를 앞에 두어 갈랐다. */
+  { word:"foe", pron:"포", pos:"n", level:"C1", meanings:["원수","적"],
+    syn:["adversary","opponent","enemy"],
+    ex:[{ s:"He treated every rival as a personal {{}}.", f:"foe", ko:"그는 모든 경쟁자를 개인적인 원수로 대했다." }] },
+
+  { word:"foliage", pron:"폴리이지", pos:"n", level:"C1", meanings:["잎"],
+    syn:["leaves","greenery","leafage"],
+    ex:[{ s:"Dense {{}} hid the path completely.", f:"foliage", ko:"빽빽한 잎이 길을 완전히 가렸다." }] },
+
+  { word:"folk", pron:"포크", pos:"n", level:"B1", meanings:["사람들","가족"],
+    syn:["people","ordinary people","kinfolk"],
+    ex:[{ s:"Local {{}} still gather at the old mill.", f:"folk", ko:"그 지역 사람들은 아직 낡은 방앗간에 모인다." }] },
+
+  /* 원본 목록에는 '수확량, 수익량' 으로 적혀 있었다. yield 의 뜻이 밀려 들어온
+     것이라 0차에서 바로잡았다. 기존 사전 뜻도 '선례를 따르다' 였다. */
+  { word:"follow suit", pron:"팔로 수트", pos:"phr", level:"C1", meanings:["선례를 따르다"],
+    syn:["do the same","copy the example","fall in line"] },
+
+  { word:"food chain", pron:"푸드 체인", pos:"n", level:"B2", meanings:["먹이 사슬"],
+    syn:["feeding order","trophic chain","predator chain"],
+    ex:[{ s:"Removing one predator upsets the whole {{}}.", f:"food chain", ko:"포식자 하나를 없애면 먹이 사슬 전체가 흐트러진다." }] },
+
+  { word:"food poisoning", pron:"푸드 포이즈닝", pos:"n", level:"B2", meanings:["식중독"],
+    syn:["foodborne illness","gastric infection","stomach upset from food"],
+    ex:[{ s:"Twenty guests came down with {{}} after the picnic.", f:"food poisoning", ko:"소풍이 끝난 뒤 손님 스무 명이 식중독에 걸렸다." }] },
+
+  { word:"footnote", pron:"풋노트", pos:"n", level:"C1", meanings:["각주"],
+    syn:["note at the bottom","annotation","side note"],
+    ex:[{ s:"The whole claim rests on a single {{}} in the report.", f:"footnote", ko:"그 주장 전체가 보고서의 각주 하나에 기대고 있다." }] },
+
+  { word:"footstep", pron:"풋스텝", pos:"n", level:"B1", meanings:["발자국","발소리"],
+    syn:["tread","footfall","sound of walking"],
+    ex:[{ s:"A single {{}} echoed down the empty hall.", f:"footstep", ko:"발소리 하나가 빈 복도에 울렸다." }] },
+
+  { word:"for one's sake", pron:"포 원스 세이크", pos:"phr", level:"B2", meanings:["~을 위해서"],
+    syn:["for the benefit of","on behalf of","out of regard for"] },
+
+  { word:"forage", pron:"포리지", pos:"v", level:"C1", meanings:["먹이를 찾다"],
+    syn:["search for food","scavenge","hunt for provisions"],
+    ex:[{ s:"Deer come down to {{}} in the orchard at dusk.", f:"forage", ko:"사슴은 해질녘에 과수원으로 내려와 먹이를 찾는다." }] },
+
+  /* ★ 둘째 뜻을 넣은 이유 — 기존 사전 뜻은 '금지하다' 한 마디였다. 그런데
+     표제어 ban 의 유의어가 prohibit·forbid·outlaw 이고 prohibit 의 뜻도
+     '금지하다' 여서, 그 문제에서는 두 선택지의 설명이 글자까지 같았다.
+     words-b.js 에는 세트별 audit 이 없어(D·E 세트만 있다) 지금까지 걸리지
+     않던 자리다. '못하게 하다' 를 더해 두 선택지를 갈랐다. */
+  { word:"forbid", pron:"퍼비드", pos:"v", level:"B1", meanings:["금지하다","못하게 하다"],
+    syn:["prohibit","ban","outlaw"], ant:["allow"],
+    ex:[{ s:"Some schools {{}} phones during class hours.", f:"forbid", ko:"어떤 학교들은 수업 시간에 휴대전화를 금지한다." }] },
+
+  { word:"forbidden", pron:"퍼비든", pos:"adj", level:"B2", meanings:["금지된"],
+    syn:["prohibited","off-limits","not allowed"], ant:["permitted"],
+    ex:[{ s:"Swimming is {{}} beyond the yellow buoys.", f:"forbidden", ko:"노란 부표 밖에서는 수영이 금지된다." }] },
+
+  { word:"force up", pron:"포스 업", pos:"phr", level:"C1", meanings:["상승시키다"],
+    syn:["drive up","push higher","send up"] },
+
+  { word:"foreboding", pron:"포보딩", pos:"n", level:"C2", meanings:["불길한 예감"],
+    syn:["sense of dread","premonition","misgiving"],
+    ex:[{ s:"A strange {{}} kept her awake that night.", f:"foreboding", ko:"이상한 불길한 예감이 그날 밤 그녀를 깨어 있게 했다." }] },
+
+  { word:"forecast", pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
+    syn:["prediction","outlook","projection"],
+    ex:[{ s:"The weather {{}} promised a dry weekend.", f:"forecast", ko:"일기 예보는 건조한 주말을 예고했다." }] },
+
+  { word:"foregone", pron:"포곤", pos:"adj", level:"C2", meanings:["미리 정해진","불가피한"],
+    syn:["predetermined","inevitable","settled in advance"],
+    ex:[{ s:"With two players injured the result was {{}}.", f:"foregone", ko:"두 선수가 부상해 결과는 미리 정해진 것이었다." }] },
+
+  { word:"forehead", pron:"포헤드", pos:"n", level:"B1", meanings:["이마"],
+    syn:["brow","front of the head","temple area"],
+    ex:[{ s:"She pressed a cool cloth to his {{}}.", f:"forehead", ko:"그녀는 차가운 천을 그의 이마에 댔다." }] },
+
+  { word:"foremost", pron:"포모스트", pos:"adj", level:"C1", meanings:["가장 중요한","주요한"],
+    syn:["leading","principal","chief"],
+    ex:[{ s:"She is the {{}} authority on coastal birds.", f:"foremost", ko:"그녀는 해안 조류에 관한 가장 중요한 권위자다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1143,5 +1266,59 @@ Object.assign(window.GLOSS, {
   "thrive":"잘 자라다",
   "toss":"던져 올리다",
   "turn over":"돌려 뒤집다",
-  "work the joint":"관절을 움직이다"
+  "work the joint":"관절을 움직이다",
+
+  /* ── 7차: flutter ~ foremost (49개) ───────────────
+     opponent·prohibit·outlaw·misgiving·prediction·outlook·leading·principal·
+     chief 은 이미 GLOSS 에 있어서 여기에 없다. adversary·enemy·ban·allow 는
+     표제어다. */
+  "annotation":"주석",
+  "beat the wings":"날개를 치다",
+  "brow":"이마, 눈썹",
+  "constant change":"끊임없는 변화",
+  "copy the example":"본을 그대로 따르다",
+  "do the same":"똑같이 하다",
+  "drive up":"밀어 올리다",
+  "fall in line":"뒤따라 맞추다",
+  "feeding order":"먹이 순서",
+  "flap about":"퍼덕이며 움직이다",
+  "foodborne illness":"음식으로 옮는 병",
+  "footfall":"발 딛는 소리",
+  "for the benefit of":"~의 이익을 위해",
+  "front of the head":"머리의 앞쪽",
+  "gastric infection":"위장 감염",
+  "greenery":"푸른 잎",
+  "hunt for provisions":"먹을 것을 찾아다니다",
+  "inevitable":"피할 수 없는",
+  "instability":"불안정",
+  "kinfolk":"친족",
+  "leafage":"잎의 무성함",
+  "leaves":"나뭇잎",
+  "not allowed":"허용되지 않는",
+  "note at the bottom":"아래쪽에 다는 설명",
+  "off-limits":"출입이 금지된",
+  "on behalf of":"~을 대신하여",
+  "ordinary people":"보통 사람들",
+  "out of regard for":"~을 생각해서",
+  "people":"사람들",
+  "permitted":"허용된",
+  "predator chain":"포식 관계의 사슬",
+  "predetermined":"미리 정해진",
+  "premonition":"미리 드는 느낌",
+  "prohibited":"금지된",
+  "projection":"추정치",
+  "push higher":"더 높이 밀다",
+  "quiver":"떨다",
+  "scavenge":"버려진 먹이를 찾다",
+  "search for food":"먹을 것을 찾다",
+  "send up":"위로 올려 보내다",
+  "sense of dread":"두려운 느낌",
+  "settled in advance":"사전에 결정된",
+  "side note":"곁들인 설명",
+  "sound of walking":"걷는 소리",
+  "state of flow":"흘러 움직이는 상태",
+  "stomach upset from food":"음식으로 생긴 배앓이",
+  "temple area":"관자놀이 쪽",
+  "tread":"발걸음",
+  "trophic chain":"영양 단계의 사슬"
 });

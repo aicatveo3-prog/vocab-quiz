@@ -1977,7 +1977,6 @@ Object.assign(window.GLOSS, {
   "few":"거의 없는, 소수의",
   "fixed":"고정된",
   "floor":"바닥, 층",
-  "foe":"적",
   "forget":"잊다",
   "formal":"격식을 갖춘, 공식적인",
   "fragmented":"조각난, 분열된",

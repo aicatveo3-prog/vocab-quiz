@@ -1667,7 +1667,6 @@ window.GLOSS = {
   "failure":"실패",
   "fakeness":"가짜임",
   "familiar":"익숙한",
-  "forbid":"금지하다",
   "foreign":"외국의",
   "frail":"허약한",
   "graceful":"우아한",

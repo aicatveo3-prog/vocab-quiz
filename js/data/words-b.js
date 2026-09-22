@@ -967,7 +967,6 @@ Object.assign(window.GLOSS, {
   "excitement":"흥분, 설렘",
   "exit":"나가다, 퇴장하다",
   "filled":"채워진",
-  "follow suit":"선례를 따르다",
   "forgive oneself":"자신을 용서하다",
   "fully":"완전히, 충분히",
   "gale":"강풍, 돌풍",
