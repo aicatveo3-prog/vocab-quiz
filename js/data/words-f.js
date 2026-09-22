@@ -354,7 +354,37 @@
  *          자리에 '갈라진 틈' 이 뜬다
  *   wild   frantic 의 유의어로 쓰려 했으나 뜻이 '야생의, 길들지 않은' 이다
  *
- * 진행 상황: 180 / 210단어 (fable ~ from scratch) — 9차, 9챕터 완료.
+ * ── 10차 기록 ──
+ *   승격 6개. 여섯 모두 기존 뜻을 그대로 가져와 기존 문제를 그대로 뒀다.
+ *     frown       ["얼굴을 찡그리다"]    ← chuckle(ant)
+ *     frugal      ["검소한","절약하는"]   ← economical(syn)
+ *     fulfill     ["이행하다","달성하다"] ← accomplish(syn)
+ *     fundamental ["근본적인","기초적인"] ← cardinal(syn)·elementary(syn)
+ *     fuel·function 은 사전에만 있고 참조가 없던 항목이다(둘 다 PRON 도 없었다)
+ *
+ *   fuel  원본이 '연료를 넣다; 악화시키다; 부채질하다; 연료' 로 동사와 명사가
+ *     섞여 있다. 기존 사전 뜻도 '연료; 부추기다' 로 두 갈래였고 참조하는
+ *     표제어가 없어 자유롭게 정할 수 있었다. 두 갈래 모두 수능에 나오므로
+ *     함께 담았다 (2차 fare·5차 firm 과 같은 처리다).
+ *
+ * ── 10차 계열 ──
+ *   0차 f-plan 이 짚은 이 챕터의 여섯 글자 가족 둘은 모두 품사가 달라 저절로
+ *   갈라진다 — frustrate(v)/frustrated(adj), function(n)/functional(adj).
+ *   fruitful(adj)/fruition(n) 은 다섯 글자까지만 같고 품사도 다르다.
+ *   fund-raising(n)/fundamental(adj) 은 네 글자까지만 같다.
+ *
+ * ── 0차에서 바로잡은 낱말 ──
+ *   frustrated  원본에 '좌절시키는' 으로 적혀 있던 것을 '좌절한, 낙담한' 으로
+ *               넣었다 — 능동과 수동이 뒤집혀 있었다(그것은 frustrating 의 뜻)
+ *
+ * ── 10차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   discharge  fulfill  ← 표제어 뜻이 '방출하다, 내보내다' 로 '이행하다' 뜻이 없다
+ *   exhaust    fume     ← 표제어 뜻이 '고갈시키다, 기진맥진하게 만들다' 다
+ *   pelt       fur      ← 뜻이 '세게 던지다; 퍼붓다' 로 동사다
+ *   mold       fungus   ← 뜻이 '틀, 거푸집' 이다
+ *   let down   frustrated ← 뜻이 '실망시키다' 로 형용사 자리에 사역동사가 온다
+ *
+ * 진행 상황: 200 / 210단어 (fable ~ fur) — 10차, 10챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -1230,7 +1260,98 @@ window.VOCAB_F = [
     ex:[{ s:"They crossed the pass in {{}} weather.", f:"frigid", ko:"그들은 몹시 추운 날씨에 그 고개를 넘었다." }] },
 
   { word:"from scratch", pron:"프럼 스크래치", pos:"phr", level:"C1", meanings:["맨 처음부터"],
-    syn:["from the beginning","from nothing","starting over"] }
+    syn:["from the beginning","from nothing","starting over"] },
+
+  /* ── 10차: frontiersman ~ fur (20개) ──────────── */
+
+  { word:"frontiersman", pron:"프런티어즈먼", pos:"n", level:"C2", meanings:["개척자"],
+    syn:["pioneer","settler","trailblazer"],
+    ex:[{ s:"The diary of one {{}} survives from that winter.", f:"frontiersman", ko:"그 겨울에서 개척자 한 사람의 일기가 남아 있다." }] },
+
+  { word:"frost", pron:"프로스트", pos:"n", level:"B1", meanings:["서리"],
+    syn:["frozen dew","hoarfrost","ice crystals"],
+    ex:[{ s:"A light {{}} covered the field before sunrise.", f:"frost", ko:"해가 뜨기 전 밭에 옅은 서리가 덮였다." }] },
+
+  { word:"frown", pron:"프라운", pos:"v", level:"B2", meanings:["얼굴을 찡그리다"],
+    syn:["scowl","knit the brows","look displeased"], ant:["chuckle"],
+    ex:[{ s:"She began to {{}} as she read the last line.", f:"frown", ko:"그녀는 마지막 줄을 읽으며 얼굴을 찡그리기 시작했다." }] },
+
+  { word:"frugal", pron:"프루걸", pos:"adj", level:"C1", meanings:["검소한","절약하는"],
+    syn:["thrifty","sparing","careful with money"], ant:["wasteful"],
+    ex:[{ s:"They lived a {{}} life on a single wage.", f:"frugal", ko:"그들은 한 사람의 급여로 검소한 생활을 했다." }] },
+
+  { word:"fruitful", pron:"프루트풀", pos:"adj", level:"B2", meanings:["생산적인","유익한"],
+    syn:["productive","rewarding","worthwhile"],
+    ex:[{ s:"The two days of talks proved unusually {{}}.", f:"fruitful", ko:"이틀에 걸친 회담은 유난히 생산적이었다." }] },
+
+  { word:"fruition", pron:"프루이션", pos:"n", level:"C2", meanings:["결실","성취"],
+    syn:["realization","coming to pass","successful outcome"],
+    ex:[{ s:"The plan came to {{}} after eleven years.", f:"fruition", ko:"그 계획은 11년이 지나 결실을 맺었다." }] },
+
+  { word:"frustrate", pron:"프러스트레이트", pos:"v", level:"B2", meanings:["좌절시키다"],
+    syn:["thwart","foil","block the plans of"],
+    ex:[{ s:"Heavy snow will {{}} any attempt on the summit.", f:"frustrate", ko:"폭설은 정상 등반 시도를 좌절시킬 것이다." }] },
+
+  /* 원본 목록에는 '좌절시키는' 으로 적혀 있었다. 능동과 수동이 뒤집힌 것이라
+     (그것은 frustrating 의 뜻이다) 0차에서 '좌절한, 낙담한' 으로 바로잡았다.
+     같은 챕터의 frustrate(동사)와는 품사로 갈라진다. */
+  { word:"frustrated", pron:"프러스트레이티드", pos:"adj", level:"B2", meanings:["좌절한","낙담한"],
+    syn:["discouraged","disheartened","dispirited"],
+    ex:[{ s:"Players looked {{}} after the third missed chance.", f:"frustrated", ko:"선수들은 세 번째 기회를 놓친 뒤 좌절한 표정이었다." }] },
+
+  /* 원본은 '연료를 넣다; 악화시키다; 부채질하다; 연료' 로 동사와 명사가 섞여
+     있다. 기존 사전 뜻도 '연료; 부추기다' 로 두 갈래였고 참조하는 표제어가 없어
+     자유롭게 정할 수 있었다. 두 갈래 모두 수능에 나오므로 함께 담았다
+     (2차 fare·5차 firm 과 같은 처리다). */
+  { word:"fuel", pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
+    syn:["gasoline","combustible material","power source"],
+    ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
+
+  { word:"fugitive", pron:"퓨저티브", pos:"n", level:"C1", meanings:["도망자"],
+    syn:["runaway","escapee","person on the run"],
+    ex:[{ s:"The {{}} was found in a barn two counties away.", f:"fugitive", ko:"그 도망자는 두 군 떨어진 헛간에서 발견되었다." }] },
+
+  { word:"fulfill", pron:"풀필", pos:"v", level:"B2", meanings:["이행하다","달성하다"],
+    syn:["carry out","achieve","live up to"],
+    ex:[{ s:"The company failed to {{}} its side of the contract.", f:"fulfill", ko:"그 회사는 계약에서 자기 쪽 의무를 이행하지 못했다." }] },
+
+  { word:"full-scale", pron:"풀 스케일", pos:"adj", level:"C1", meanings:["실물 크기의"],
+    syn:["life-size","complete in scale","actual size"],
+    ex:[{ s:"They built a {{}} model of the cabin in the hall.", f:"full-scale", ko:"그들은 강당에 그 선실의 실물 크기 모형을 지었다." }] },
+
+  { word:"fumble", pron:"펌블", pos:"v", level:"C1", meanings:["더듬어 찾다"],
+    syn:["grope","feel about","handle clumsily"],
+    ex:[{ s:"He had to {{}} for the light switch in the dark.", f:"fumble", ko:"그는 어둠 속에서 전등 스위치를 더듬어 찾아야 했다." }] },
+
+  { word:"fume", pron:"퓸", pos:"n", level:"C1", meanings:["증기","가스"],
+    syn:["vapor","noxious gas","exhaust gas"],
+    ex:[{ s:"Thick {{}} from the engine filled the shed.", f:"fume", ko:"엔진에서 나온 짙은 증기가 창고를 채웠다." }] },
+
+  /* function(n)·functional(adj) 은 앞 여섯 글자가 같은 가족이지만 품사가 달라
+     갈라진다. 참조하는 표제어가 없어 뜻은 기존 사전 것을 그대로 옮겼다. */
+  { word:"function", pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
+    syn:["purpose","role","use"],
+    ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
+
+  { word:"functional", pron:"펑셔널", pos:"adj", level:"B2", meanings:["기능적인","실용적인"],
+    syn:["practical","usable","serviceable"],
+    ex:[{ s:"The furniture is plain but entirely {{}}.", f:"functional", ko:"그 가구는 소박하지만 완전히 기능적이다." }] },
+
+  { word:"fund-raising", pron:"펀드 레이징", pos:"n", level:"C1", meanings:["자선 모금"],
+    syn:["money collecting","charity drive","soliciting donations"],
+    ex:[{ s:"The school relies on {{}} to keep the library open.", f:"fund-raising", ko:"그 학교는 도서관을 열어 두려고 자선 모금에 기댄다." }] },
+
+  { word:"fundamental", pron:"펀더멘털", pos:"adj", level:"B2", meanings:["근본적인","기초적인"],
+    syn:["basic","essential","underlying"],
+    ex:[{ s:"There is a {{}} difference between the two methods.", f:"fundamental", ko:"두 방법 사이에는 근본적인 차이가 있다." }] },
+
+  { word:"fungus", pron:"펑거스", pos:"n", level:"C1", meanings:["균류","버섯"],
+    syn:["mushroom","toadstool","mildew"],
+    ex:[{ s:"A grey {{}} spread across the damp wall.", f:"fungus", ko:"회색 균류가 축축한 벽을 따라 퍼졌다." }] },
+
+  { word:"fur", pron:"퍼", pos:"n", level:"B1", meanings:["털","모피"],
+    syn:["animal hair","coat of hair","hairy skin"],
+    ex:[{ s:"Arctic foxes grow thicker {{}} before winter.", f:"fur", ko:"북극여우는 겨울 전에 더 두꺼운 털이 자란다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1688,5 +1809,58 @@ Object.assign(window.GLOSS, {
   "tiny amount":"아주 적은 양",
   "turn to ice":"얼음으로 바뀌다",
   "wildly agitated":"몹시 흥분한",
-  "without payment":"돈을 내지 않고"
+  "without payment":"돈을 내지 않고",
+
+  /* ── 10차: frontiersman ~ fur (49개) ───────────────
+     pioneer·thrifty·wasteful·productive·disheartened·role·use·practical·basic 은
+     이미 GLOSS 에 있어서 여기에 없다. carry out·achieve·essential 은 표제어다. */
+  "actual size":"실제 크기의",
+  "animal hair":"짐승의 털",
+  "block the plans of":"~의 계획을 막다",
+  "careful with money":"돈을 아껴 쓰는",
+  "charity drive":"자선 모금 운동",
+  "coat of hair":"몸을 덮은 털",
+  "coming to pass":"실제로 이루어짐",
+  "combustible material":"태울 수 있는 물질",
+  "complete in scale":"크기를 그대로 맞춘",
+  "discouraged":"기가 꺾인",
+  "dispirited":"풀이 죽은",
+  "escapee":"탈출한 사람",
+  "exhaust gas":"배기 가스",
+  "feel about":"손으로 더듬다",
+  "foil":"계획을 어그러뜨리다",
+  "frozen dew":"얼어붙은 이슬",
+  "gasoline":"휘발유",
+  "grope":"손으로 짚어 가다",
+  "hairy skin":"털이 난 가죽",
+  "handle clumsily":"서투르게 만지다",
+  "hoarfrost":"흰 서리",
+  "ice crystals":"얼음 결정",
+  "knit the brows":"눈살을 모으다",
+  "life-size":"실물과 같은 크기의",
+  "live up to":"~에 걸맞게 하다",
+  "look displeased":"못마땅한 표정을 짓다",
+  "mildew":"흰곰팡이",
+  "money collecting":"돈을 모으는 일",
+  "mushroom":"버섯",
+  "noxious gas":"해로운 기체",
+  "person on the run":"쫓기는 사람",
+  "power source":"동력을 내는 것",
+  "purpose":"목적, 쓰임",
+  "realization":"실현",
+  "rewarding":"보람 있는",
+  "runaway":"달아난 사람",
+  "serviceable":"쓸 만한",
+  "settler":"정착민",
+  "scowl":"노려보며 찡그리다",
+  "soliciting donations":"기부를 청하는 일",
+  "sparing":"아껴 쓰는",
+  "successful outcome":"좋은 결말",
+  "thwart":"뜻을 꺾다",
+  "toadstool":"독버섯",
+  "trailblazer":"길을 처음 낸 사람",
+  "underlying":"밑바탕에 있는",
+  "usable":"쓸 수 있는",
+  "vapor":"김, 수증기",
+  "worthwhile":"할 만한 값이 있는"
 });
