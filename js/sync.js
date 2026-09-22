@@ -131,7 +131,38 @@ window.Sync = (function () {
     });
   }
 
-  /* ── 로그인 / 로그아웃 ──────────────────────── */
+  /* ── 로그인 / 로그아웃 ────────────────────────
+     ⚠️ 계정이 바뀔 때 이 기기에 남은 기록을 정리하지 않으면 두 가지가 깨진다.
+        localStorage 는 브라우저 하나에 하나뿐이고 "누구의 기록인가" 를 모르기 때문이다.
+
+       ① 로그아웃해도 기록이 남아, 공용 컴퓨터에서 다음 사람이 앞사람 기록을 본다
+       ② 남아 있던 기록이 다음 사람 계정으로 올라간다 — pullThenPush 가 로컬을
+          기준(base)으로 합친 뒤 그 결과를 서버에 되밀기 때문이다. 그 사람이 다른
+          기기에서 로그인하면 또 퍼져서, 기록이 계정 사이로 번진다
+
+     그래서 로그인·로그아웃을 이 두 함수로 모으고, 여기서만 기기 정리를 한다.
+     tools/sync-account-check.js 가 네 가지 시나리오로 검사한다. */
+
+  function handleSignedIn(u) {
+    user = u;
+    /* 이 기기에 남은 기록이 다른 계정의 것이면 Store 가 지운다.
+       지우지 않으면 아래 pullThenPush 가 그것을 이 계정 문서로 올려 버린다.
+       같은 사람의 다른 기기이거나, 로그인 없이 쓰다가 처음 로그인하는 경우에는
+       그대로 두고 합친다 — 그게 "로그인하면 기록이 합쳐진다" 는 약속이다. */
+    window.Store.claimOwner(u.uid);
+    emit();
+    return pullThenPush();
+  }
+
+  function handleSignedOut() {
+    user = null;
+    dirty = false;
+    clearTimer();
+    /* 서버에는 signOut()이 나가기 전에 flush 로 올려 두었으므로 잃는 것은 없다.
+       여기서 지우는 것은 이 기기에 남은 사본뿐이다. */
+    window.Store.resetLocal();
+    emit();
+  }
 
   /**
    * 로그인 직후 양방향으로 합친다.
@@ -210,16 +241,8 @@ window.Sync = (function () {
       available = true;
 
       auth.onAuthStateChanged(function (u) {
-        if (u) {
-          user = { uid: u.uid, name: u.displayName || '', email: u.email || '' };
-          emit();
-          pullThenPush();
-        } else {
-          user = null;
-          dirty = false;
-          clearTimer();
-          emit();
-        }
+        if (u) handleSignedIn({ uid: u.uid, name: u.displayName || '', email: u.email || '' });
+        else handleSignedOut();
       });
       emit();
     } catch (e) {
@@ -288,11 +311,11 @@ window.Sync = (function () {
     return snapshot();
   }
 
-  /** 테스트에서 로그인 상태를 흉내내기 위한 진입점 */
+  /** 테스트에서 로그인 상태를 흉내내기 위한 진입점.
+      실제 경로와 같은 함수를 타야 검사가 뜻이 있으므로 handleSignedIn/Out 을 쓴다. */
   function setUserForTest(u) {
-    user = u;
-    if (u) { emit(); return pullThenPush(); }
-    dirty = false; clearTimer(); emit();
+    if (u) return handleSignedIn(u);
+    handleSignedOut();
     return Promise.resolve();
   }
 

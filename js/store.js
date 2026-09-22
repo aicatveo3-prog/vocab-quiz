@@ -337,9 +337,67 @@ window.Store = (function () {
     };
   }
 
-  function reset() {
+  /* ── 이 기기에서 기록 지우기 · 소유자 표시 ──────────
+     localStorage 는 브라우저 하나에 하나뿐이고 "누구의 기록인가" 를 모른다.
+     한 컴퓨터를 여러 사람이 쓰면 그 사실이 두 가지 사고가 된다.
+
+       ① 로그아웃해도 기록이 남아 다음 사람이 앞사람의 기록을 본다
+       ② 남아 있던 기록이 다음 사람이 로그인할 때 그 사람 계정으로 올라간다
+          (Sync.pullThenPush 가 로컬을 기준으로 합친 뒤 서버에 되밀기 때문)
+          그 사람이 다른 기기에서 로그인하면 또 퍼진다 — 계정 사이로 번진다
+
+     그래서 소유자(uid)를 함께 적어 두고, 로그아웃할 때 지운다.
+     tools/sync-account-check.js 가 이 동작을 검사한다. */
+
+  var KEY_OWNER = 'vocabQuiz.owner';
+
+  /** 이어풀기 스냅샷(vocabQuiz.sess.*)을 전부 지운다 */
+  function clearAllSessions() {
+    try {
+      var kill = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(SESS_PREFIX) === 0) kill.push(k);
+      }
+      kill.forEach(function (k) { localStorage.removeItem(k); });
+    } catch (e) { /* noop */ }
+  }
+
+  /* 기록과 이어풀기를 함께 비운다. 둘 다 "이 기기에 남은 학습 흔적" 이라
+     하나만 지우면 이어풀기가 지운 기록을 되살린다. */
+  function wipeLocal() {
     state = defaults();
+    clearAllSessions();
     save();
+  }
+
+  function reset() {
+    wipeLocal();
+  }
+
+  /** 로그아웃용 — 기록·이어풀기에 소유자 표시까지 지운다 */
+  function resetLocal() {
+    wipeLocal();
+    try { localStorage.removeItem(KEY_OWNER); } catch (e) { /* noop */ }
+  }
+
+  function ownerUid() {
+    try { return localStorage.getItem(KEY_OWNER); } catch (e) { return null; }
+  }
+
+  /**
+   * 로그인할 때 "이 기기에 남은 기록을 이 계정 것으로 봐도 되는가" 를 정한다.
+   * 봐도 되면 true — 서버와 합쳐 올린다(같은 사람의 다른 기기, 또는 로그인 없이
+   * 쓰다가 처음 로그인하는 경우).
+   * 다른 계정의 것이면 남은 기록을 지우고 false — 서버 것만 받아 쓴다.
+   */
+  function claimOwner(uid) {
+    if (!uid) return true;
+    var prev = ownerUid();
+    var mine = (!prev || prev === uid);
+    if (!mine) wipeLocal();       // 앞사람 기록을 이 계정으로 올리지 않는다
+    try { localStorage.setItem(KEY_OWNER, uid); } catch (e) { /* noop */ }
+    return mine;
   }
 
   /* ── 내보내기 / 가져오기 · 병합 ──────────────────
@@ -607,6 +665,10 @@ window.Store = (function () {
     recentDays: recentDays,
     summary: summary,
     reset: reset,
+    /* 계정 경계용 — Sync 가 로그아웃·로그인에서 쓴다 */
+    resetLocal: resetLocal,
+    claimOwner: claimOwner,
+    ownerUid: ownerUid,
     sessionKey: sessionKey,
     saveSession: saveSession,
     loadSession: loadSession,
