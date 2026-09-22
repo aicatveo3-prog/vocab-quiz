@@ -2165,7 +2165,6 @@ Object.assign(window.GLOSS, {
   "encrypt":"암호화하다",
   "evidence-based":"증거에 기반한",
   "experimental":"실험에 의한",
-  "fascinate":"매혹하다, 흥미를 끌다",
   "fellow feeling":"동류 의식, 공감",
   "fence in":"울타리로 둘러막다",
   "follow the example of":"~의 본을 따르다",
