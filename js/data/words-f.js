@@ -321,7 +321,40 @@
  *   prosperity  fortune 의 유의어로 쓰려 했으나 뜻이 '번영, 번창' 이다
  *   creation    formation 의 유의어로 쓰려 했으나 표제어 뜻이 '창작물, 창작'이다
  *
- * 진행 상황: 160 / 210단어 (fable ~ fountain) — 8차, 8챕터 완료.
+ * ── 9차 기록 ──
+ *   승격 10개.
+ *     무변  fragile  ["깨지기 쉬운","허약한"] ← brittle(syn)·delicate(syn)
+ *           frantic  ["미친 듯한","정신없는"]  ← desperate(syn)
+ *           fraud    ["사기꾼","사기"]        ← charlatan(syn)·deceit(syn)
+ *           friction ["마찰","갈등"]          ← conflict(syn)·discord(syn)
+ *           fragment·free of charge·frigid 는 사전에만 있고 참조가 없던 항목이라
+ *           무엇으로 정해도 기존 문제에 영향이 없다 (셋 다 PRON 도 없던 항목이다)
+ *     변경  fracture  "골절; 부수다"   → ["부러지다","부수다"]
+ *           fragrance "향기, 방향"     → ["향기","좋은 냄새"]
+ *           frail     "허약한"         → ["무른","허약한"]
+ *
+ *   fraud·friction 은 기존 사전 뜻이 두 갈래를 함께 담고 있어 그대로 옮기니
+ *     참조하는 두 자리가 모두 무변이 되었다 (fraud 는 charlatan 쪽이 '사기꾼',
+ *     deceit 쪽이 '사기' / friction 은 conflict·discord 쪽이 '갈등').
+ *
+ *   fracture 원본이 '골절; 부러지다' 로 명사와 동사가 섞여 있다. break 의
+ *     유의어 자리이고 형제가 shatter·smash 로 모두 동사라 동사로 모았다.
+ *   fragrance 기존 뜻이 표제어 aroma 의 뜻과 글자까지 같았다 → 둘째 뜻을
+ *     '좋은 냄새' 로 갈랐다.
+ *   frail 기존 뜻 '허약한' 이 3차 표제어 feeble 의 첫 뜻과 같았다. 같은 세트에서
+ *     카드가 겹치지 않도록 원본의 '무른' 을 앞에 두었다.
+ *
+ * ── 9차 계열 ──
+ *   fragrance(n)·fragrant(adj) 은 앞 일곱 글자가 같은 가족이지만 품사가 달라
+ *   갈라진다. frequency(n)·frequent(adj), fright(n)·frighten(v) 도 같다.
+ *   fraction(n)·fracture(v) 는 다섯 글자까지만 같고 품사도 다르다.
+ *
+ * ── 9차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   crack  fracture 의 유의어로 쓰려 했으나 표제어인데 품사가 명사여서 동사
+ *          자리에 '갈라진 틈' 이 뜬다
+ *   wild   frantic 의 유의어로 쓰려 했으나 뜻이 '야생의, 길들지 않은' 이다
+ *
+ * 진행 상황: 180 / 210단어 (fable ~ from scratch) — 9차, 9챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -1107,7 +1140,97 @@ window.VOCAB_F = [
 
   { word:"fountain", pron:"파운튼", pos:"n", level:"B1", meanings:["분수","샘"],
     syn:["water jet","spout","wellspring"],
-    ex:[{ s:"Children played around the stone {{}} all afternoon.", f:"fountain", ko:"아이들이 오후 내내 돌 분수 주위에서 놀았다." }] }
+    ex:[{ s:"Children played around the stone {{}} all afternoon.", f:"fountain", ko:"아이들이 오후 내내 돌 분수 주위에서 놀았다." }] },
+
+  /* ── 9차: fraction ~ from scratch (20개) ───────── */
+
+  { word:"fraction", pron:"프랙션", pos:"n", level:"B2", meanings:["분수","일부"],
+    syn:["small part","portion","tiny amount"],
+    ex:[{ s:"Only a tiny {{}} of the seeds ever sprouted.", f:"fraction", ko:"씨앗 가운데 아주 적은 일부만 싹을 냈다." }] },
+
+  /* 원본은 '골절; 부러지다' 로 명사와 동사가 섞여 있다. 기존 표제어 break 의
+     유의어 자리이고 형제가 shatter·smash 로 모두 동사라 동사로 모았다
+     (3차 ferment·8차 foster 와 같은 판단이다). 유의어에 crack 을 쓰지 않았다 —
+     표제어인데 품사가 명사여서 동사 자리에 '갈라진 틈' 이 뜬다. */
+  { word:"fracture", pron:"프랙처", pos:"v", level:"B2", meanings:["부러지다","부수다"],
+    syn:["shatter","smash","break apart"],
+    ex:[{ s:"A hard fall can {{}} the small bones of the wrist.", f:"fracture", ko:"세게 넘어지면 손목의 작은 뼈가 부러질 수 있다." }] },
+
+  { word:"fragile", pron:"프래절", pos:"adj", level:"B2", meanings:["깨지기 쉬운","허약한"],
+    syn:["breakable","delicate","easily damaged"],
+    ex:[{ s:"Label the box {{}} before you send it.", f:"fragile", ko:"보내기 전에 상자에 깨지기 쉬움 표시를 하라." }] },
+
+  { word:"fragment", pron:"프래그먼트", pos:"n", level:"B2", meanings:["파편","조각"],
+    syn:["shard","chip","broken piece"],
+    ex:[{ s:"A {{}} of pottery told the whole story of the site.", f:"fragment", ko:"토기 조각 하나가 그 유적의 이야기 전부를 말해 주었다." }] },
+
+  /* 원본 목록에는 '(부피, 크기 등이) 늘다, 증가하다' 로 적혀 있었다. swell 의
+     뜻이 밀려 들어온 것이라 0차에서 바로잡았다.
+     기존 사전 뜻 '향기, 방향' 은 표제어 aroma 의 뜻과 글자까지 같아서 둘째 뜻을
+     '좋은 냄새' 로 갈랐다. */
+  { word:"fragrance", pron:"프레이그런스", pos:"n", level:"B2", meanings:["향기","좋은 냄새"],
+    syn:["scent","aroma","perfume"],
+    ex:[{ s:"The whole room held the {{}} of cut lilies.", f:"fragrance", ko:"방 전체에 자른 백합의 향기가 감돌았다." }] },
+
+  { word:"fragrant", pron:"프레이그런트", pos:"adj", level:"B2", meanings:["향기로운"],
+    syn:["sweet-smelling","perfumed","aromatic"],
+    ex:[{ s:"Warm bread makes the kitchen {{}} all morning.", f:"fragrant", ko:"따뜻한 빵이 아침 내내 부엌을 향기롭게 만든다." }] },
+
+  /* 기존 사전 뜻은 '허약한' 한 마디였는데 3차 표제어 feeble 의 첫 뜻과 같다.
+     같은 세트에서 카드가 겹치지 않도록 원본의 '무른' 을 앞에 두었다. */
+  { word:"frail", pron:"프레일", pos:"adj", level:"C1", meanings:["무른","허약한"],
+    syn:["weak","infirm","not robust"], ant:["athletic"],
+    ex:[{ s:"The oldest chair was too {{}} to sit on.", f:"frail", ko:"가장 오래된 의자는 앉기에 너무 무른 상태였다." }] },
+
+  { word:"frantic", pron:"프랜틱", pos:"adj", level:"C1", meanings:["미친 듯한","정신없는"],
+    syn:["frenzied","beside oneself","wildly agitated"],
+    ex:[{ s:"There was a {{}} search for the missing keys.", f:"frantic", ko:"잃어버린 열쇠를 찾는 정신없는 수색이 있었다." }] },
+
+  { word:"fraud", pron:"프로드", pos:"n", level:"C1", meanings:["사기꾼","사기"],
+    syn:["impostor","swindler","deception"],
+    ex:[{ s:"The investment turned out to be an outright {{}}.", f:"fraud", ko:"그 투자는 완전한 사기로 드러났다." }] },
+
+  { word:"free of charge", pron:"프리 오브 차지", pos:"phr", level:"B2", meanings:["무료로"],
+    syn:["at no cost","without payment","for nothing"] },
+
+  { word:"free will", pron:"프리 윌", pos:"n", level:"C1", meanings:["자유 의지"],
+    syn:["own choice","self-determination","freedom to choose"],
+    ex:[{ s:"Philosophers still argue about whether {{}} exists.", f:"free will", ko:"철학자들은 자유 의지가 있는지를 아직도 논쟁한다." }] },
+
+  { word:"freeze", pron:"프리즈", pos:"v", level:"B1", meanings:["얼다","얼리다"],
+    syn:["ice over","turn to ice","chill solid"],
+    ex:[{ s:"The shallow pond will {{}} before the river does.", f:"freeze", ko:"얕은 못이 강보다 먼저 언다." }] },
+
+  { word:"freight", pron:"프레이트", pos:"n", level:"C1", meanings:["화물"],
+    syn:["cargo","goods","shipment"],
+    ex:[{ s:"The night train carries only {{}}, no passengers.", f:"freight", ko:"그 야간 열차는 승객 없이 화물만 실어 나른다." }] },
+
+  { word:"frequency", pron:"프리퀀시", pos:"n", level:"B2", meanings:["빈도","주파수"],
+    syn:["rate of occurrence","how often","recurrence"],
+    ex:[{ s:"They measured the {{}} of storms over fifty years.", f:"frequency", ko:"그들은 50년에 걸친 폭풍의 빈도를 측정했다." }] },
+
+  { word:"frequent", pron:"프리퀀트", pos:"adj", level:"B1", meanings:["빈번한","잦은"],
+    syn:["repeated","recurring","common"],
+    ex:[{ s:"{{}} delays finally drove passengers away.", f:"Frequent", ko:"잦은 지연이 결국 승객들을 떠나게 했다." }] },
+
+  { word:"friction", pron:"프릭션", pos:"n", level:"B2", meanings:["마찰","갈등"],
+    syn:["rubbing","resistance","abrasion"],
+    ex:[{ s:"A drop of oil removes most of the {{}}.", f:"friction", ko:"기름 한 방울이 마찰의 대부분을 없앤다." }] },
+
+  { word:"fright", pron:"프라이트", pos:"n", level:"B2", meanings:["공포","두려움"],
+    syn:["terror","alarm","sudden fear"],
+    ex:[{ s:"The sudden bang gave the whole class a {{}}.", f:"fright", ko:"갑작스러운 소리가 반 전체에 공포를 주었다." }] },
+
+  { word:"frighten", pron:"프라이튼", pos:"v", level:"B1", meanings:["놀라게 만들다"],
+    syn:["scare","startle","terrify"],
+    ex:[{ s:"Loud fireworks {{}} the horses every year.", f:"frighten", ko:"요란한 불꽃놀이가 매년 말들을 놀라게 만든다." }] },
+
+  { word:"frigid", pron:"프리지드", pos:"adj", level:"C1", meanings:["몹시 추운","냉랭한"],
+    syn:["freezing","icy","bitterly cold"],
+    ex:[{ s:"They crossed the pass in {{}} weather.", f:"frigid", ko:"그들은 몹시 추운 날씨에 그 고개를 넘었다." }] },
+
+  { word:"from scratch", pron:"프럼 스크래치", pos:"phr", level:"C1", meanings:["맨 처음부터"],
+    syn:["from the beginning","from nothing","starting over"] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1514,5 +1637,56 @@ Object.assign(window.GLOSS, {
   "turn to stone":"돌로 바뀌다",
   "water jet":"솟구치는 물줄기",
   "wellspring":"물이 솟는 근원",
-  "windfall":"뜻밖의 횡재"
+  "windfall":"뜻밖의 횡재",
+
+  /* ── 9차: fraction ~ from scratch (46개) ───────────
+     portion·shatter·smash·scent·weak·infirm·frenzied·impostor·deception·
+     goods·resistance·alarm 은 이미 GLOSS 에 있어서 여기에 없다.
+     delicate·athletic·crack 은 표제어다. */
+  "abrasion":"쓸림, 마모",
+  "aromatic":"향이 나는",
+  "at no cost":"비용 없이",
+  "beside oneself":"제정신이 아닌",
+  "bitterly cold":"살을 에듯 추운",
+  "break apart":"쪼개어 부수다",
+  "breakable":"깨질 수 있는",
+  "broken piece":"깨진 조각",
+  "cargo":"배나 비행기의 짐",
+  "chill solid":"단단하게 얼리다",
+  "chip":"떨어져 나온 부스러기",
+  "common":"흔한",
+  "easily damaged":"쉽게 상하는",
+  "for nothing":"공짜로",
+  "freedom to choose":"고를 수 있는 자유",
+  "freezing":"얼어붙을 듯한",
+  "from nothing":"아무것도 없는 데서",
+  "from the beginning":"처음부터",
+  "how often":"얼마나 자주인가",
+  "ice over":"얼음으로 덮이다",
+  "icy":"얼음처럼 찬",
+  "not robust":"튼튼하지 못한",
+  "own choice":"스스로의 선택",
+  "perfume":"향수",
+  "perfumed":"향을 입힌",
+  "rate of occurrence":"일어나는 비율",
+  "recurrence":"되풀이됨",
+  "recurring":"되풀이되는",
+  "repeated":"거듭되는",
+  "rubbing":"비벼 닿음",
+  "scare":"겁주다",
+  "self-determination":"스스로 정함",
+  "shard":"깨진 사금파리",
+  "shipment":"실어 보낸 짐",
+  "small part":"작은 부분",
+  "startle":"흠칫 놀라게 하다",
+  "starting over":"처음부터 다시 함",
+  "sudden fear":"갑작스러운 무서움",
+  "sweet-smelling":"좋은 냄새가 나는",
+  "swindler":"남을 속여 뺏는 사람",
+  "terrify":"몹시 두렵게 하다",
+  "terror":"극심한 공포",
+  "tiny amount":"아주 적은 양",
+  "turn to ice":"얼음으로 바뀌다",
+  "wildly agitated":"몹시 흥분한",
+  "without payment":"돈을 내지 않고"
 });

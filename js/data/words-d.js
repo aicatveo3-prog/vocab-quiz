@@ -1662,7 +1662,6 @@ Object.assign(window.GLOSS, {
   "endpoint":"종점, 최종 지점",
   "fine point":"세부 사항, 미세한 점",
   "forlorn":"쓸쓸한, 절망적인",
-  "frantic":"미친 듯한, 정신없는",
   "frantically":"미친 듯이, 정신없이",
   "frenzy":"광란, 격분",
   "gloom":"침울, 어둠",

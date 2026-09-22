@@ -1668,7 +1668,6 @@ window.GLOSS = {
   "fakeness":"가짜임",
   "familiar":"익숙한",
   "foreign":"외국의",
-  "frail":"허약한",
   "graceful":"우아한",
   "gradual":"점진적인",
   "gradually":"점차적으로",
