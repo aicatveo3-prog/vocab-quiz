@@ -1518,7 +1518,6 @@ Object.assign(window.GLOSS, {
   "erase":"지우다, 삭제하다",
   "feat":"공적, 위업",
   "final":"최종적인, 마지막의",
-  "flaw":"결함, 흠",
   "flout":"무시하다, 어기다",
   "frenzied":"광분한, 격앙된",
   "grade":"등급, 단계",
