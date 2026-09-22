@@ -2302,7 +2302,6 @@ Object.assign(window.GLOSS, {
   "conduct safely":"안전하게 데려가다",
   "cultural":"문화의",
   "endless time":"끝없는 시간",
-  "found":"창립하다",
   "hold in high regard":"높이 받들다",
   "incorrect":"부정확한",
   "increase sharply":"급격히 늘다",
