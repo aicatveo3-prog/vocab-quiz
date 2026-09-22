@@ -32,7 +32,8 @@ window.Conquer = (function () {
     { id: 'B', label: 'B', words: window.VOCAB_B || [] },
     { id: 'C', label: 'C', words: window.VOCAB_C || [] },
     { id: 'D', label: 'D', words: window.VOCAB_D || [] },
-    { id: 'E', label: 'E', words: window.VOCAB_E || [] }
+    { id: 'E', label: 'E', words: window.VOCAB_E || [] },
+    { id: 'F', label: 'F', words: window.VOCAB_F || [] }
   ];
 
   function getSet(id) {

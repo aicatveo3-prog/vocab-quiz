@@ -1665,7 +1665,6 @@ window.GLOSS = {
   "exclude":"제외하다",
   "fail":"실패하다",
   "failure":"실패",
-  "fake":"가짜의",
   "fakeness":"가짜임",
   "familiar":"익숙한",
   "fantasy":"환상, 공상",
