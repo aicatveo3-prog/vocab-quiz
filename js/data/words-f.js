@@ -165,7 +165,48 @@
  *              했으나 9차·5차·8차의 표제어다. 사전에 넣었다가 곧 지우는 일을
  *              피했다
  *
- * 진행 상황: 80 / 210단어 (fable ~ fine-grained) — 4차, 4챕터 완료.
+ * ── 5차 기록 ──
+ *   승격 6개. 0차 f-plan ⑧ 이 짚은 자리 둘(firm·fit)이 모두 이 챕터에 있었다.
+ *     무변  finite     ["유한한","한계가 있는"] ← endless(ant)
+ *           first-rate ["일류의"]              ← exemplary(syn)
+ *     변경  firm  "회사; 단단한"  → ["단단한","회사"]  (순서만)
+ *           fit   "맞다; 적합한"  → ["알맞은","건강이 좋은"]
+ *           flare "타오르다; 불빛" → ["확 타오르다","치솟다"]
+ *           flaw  "결함, 흠"      → ["흠","결함"]      (순서만)
+ *
+ *   firm ★ 두 갈래를 한 낱말에 담았다 (2차 fare 와 같은 처리)
+ *     corporation 은 회사 쪽으로, crunchy 는 단단한 쪽으로 이 낱말을 유의어로
+ *     쓴다. 한 갈래만 남기면 다른 쪽 문제의 선택지가 틀린 설명이 된다.
+ *     pos 는 하나만 고를 수 있어 형용사로 두었다(원본도 형용사 뜻이 먼저다).
+ *
+ *   fit ★ 세 갈래가 참조한다
+ *     athletic 은 '건강한' 쪽, compatibility 는 '적합' 쪽, correspond to 는
+ *     '들어맞다' 쪽으로 쓴다. 원본이 전부 형용사 뜻이라 형용사로 두고 세 자리
+ *     모두에서 읽히도록 ["알맞은","건강이 좋은"] 으로 했다. 기존 뜻
+ *     '맞다; 적합한' 은 athletic(몸이 튼튼한) 자리에서 오히려 약했다.
+ *
+ *   flare 기존 뜻은 동사와 명사가 섞여 있었다('타오르다; 불빛'). blaze 의
+ *     유의어 자리이고 형제가 flame·burn 으로 모두 동사라 동사로 모았다.
+ *
+ *   flaw  표제어 defect 의 뜻이 ["결함","흠"] 이라 원본 순서를 그대로 쓰면
+ *     표제어 둘의 뜻 문자열이 같아진다(2차 fatal·deadly 와 같은 경우).
+ *     순서를 바꿔 갈랐다.
+ *
+ * ── 5차 계열·레벨 배치 ──
+ *   flatten·flatter 는 둘 다 동사이고 앞 여섯 글자가 같다. 뜻이 전혀 달라
+ *   뜻겹침으로 갈라지지 않으므로 레벨을 두 단계 벌렸다(B1 · C1).
+ *   fiscal(C1)은 4차의 financial(B1)과 뜻이 겹치는 형용사여서 역시 두 단계
+ *   벌렸다. flat(adj)·flash(v)/flashlight(n)·flaw(n)/flawless(adj)·
+ *   fit(adj)/fitness(n) 은 품사가 달라 저절로 갈라진다.
+ *
+ * ── 5차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   beat   flap 의 유의어로 쓰려 했으나 표제어 뜻이 '이기다, 치다' 로 '이기다'가
+ *          앞에 와 문맥이 흐려진다
+ *   even   flat 의 유의어로 쓰려 했으나 표제어 뜻이 '같은, 짝수의' 다
+ *   level  flat 의 유의어로 쓰려 했으나 뜻이 '수준, 높이'(명사)다
+ *   flutter flap 의 유의어로 쓰려 했으나 7차의 표제어다
+ *
+ * 진행 상황: 100 / 210단어 (fable ~ flawless) — 5차, 5챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -552,7 +593,111 @@ window.VOCAB_F = [
 
   { word:"fine-grained", pron:"파인 그레인드", pos:"adj", level:"C1", meanings:["결이 고운","정밀한"],
     syn:["finely detailed","smooth-textured","high-resolution"], ant:["coarse"],
-    ex:[{ s:"The report gives a {{}} picture of local spending.", f:"fine-grained", ko:"그 보고서는 지역 지출을 정밀하게 보여 준다." }] }
+    ex:[{ s:"The report gives a {{}} picture of local spending.", f:"fine-grained", ko:"그 보고서는 지역 지출을 정밀하게 보여 준다." }] },
+
+  /* ── 5차: finite ~ flawless (20개) ────────────── */
+
+  { word:"finite", pron:"파이나이트", pos:"adj", level:"B2", meanings:["유한한","한계가 있는"],
+    syn:["limited","bounded","measurable"], ant:["endless"],
+    ex:[{ s:"Fresh water is a {{}} resource, not an endless one.", f:"finite", ko:"담수는 무한한 자원이 아니라 유한한 자원이다." }] },
+
+  /* ★ 두 갈래를 한 낱말에 담았다 — 2차의 fare 와 같은 경우다.
+     기존 사전 뜻이 '회사; 단단한' 인데, corporation 은 회사 쪽으로, crunchy 는
+     단단한 쪽으로 각각 이 낱말을 유의어로 쓴다. 한 갈래만 남기면 다른 쪽
+     문제의 선택지가 틀린 설명이 된다. pos 는 하나만 고를 수 있어 형용사로
+     두고(원본도 형용사 뜻이 먼저다) 유의어도 형용사로 모았다. */
+  { word:"firm", pron:"펌", pos:"adj", level:"B2", meanings:["단단한","회사"],
+    syn:["solid","sturdy","unyielding"],
+    ex:[{ s:"Press the soil until it feels {{}} around the stem.", f:"firm", ko:"줄기 주위의 흙이 단단해질 때까지 눌러라." }] },
+
+  { word:"first-rate", pron:"퍼스트 레이트", pos:"adj", level:"C1", meanings:["일류의"],
+    syn:["top-notch","superior","of the highest class"],
+    ex:[{ s:"The orchestra gave a {{}} performance that night.", f:"first-rate", ko:"그 관현악단은 그날 밤 일류의 연주를 했다." }] },
+
+  /* financial(4차)은 B1 이다. 뜻이 겹치는 형용사라 레벨을 두 단계 벌려
+     4지선다에서 서로의 오답으로 뜨지 않게 했다. */
+  { word:"fiscal", pron:"피스컬", pos:"adj", level:"C1", meanings:["재정의","회계의"],
+    syn:["budgetary","monetary","tax-related"],
+    ex:[{ s:"The city closed the {{}} year with a small surplus.", f:"fiscal", ko:"그 시는 회계 연도를 약간의 흑자로 마감했다." }] },
+
+  { word:"fishery", pron:"피셔리", pos:"n", level:"C1", meanings:["어업","어장"],
+    syn:["fishing ground","fishing industry","fish farm"],
+    ex:[{ s:"The northern {{}} was closed for two seasons.", f:"fishery", ko:"북부 어장은 두 계절 동안 폐쇄되었다." }] },
+
+  { word:"fission", pron:"피션", pos:"n", level:"C2", meanings:["분열"],
+    syn:["splitting","division","breaking apart"],
+    ex:[{ s:"Nuclear {{}} releases energy by breaking heavy atoms.", f:"fission", ko:"핵분열은 무거운 원자를 쪼개어 에너지를 낸다." }] },
+
+  { word:"fist", pron:"피스트", pos:"n", level:"B1", meanings:["주먹"],
+    syn:["clenched hand","knuckles","balled hand"],
+    ex:[{ s:"He banged his {{}} on the table once and stopped.", f:"fist", ko:"그는 주먹으로 탁자를 한 번 치고 멈췄다." }] },
+
+  /* ★ 세 갈래가 참조하는 낱말이다 — athletic 은 '건강한' 쪽, compatibility 는
+     '적합' 쪽, correspond to 는 '들어맞다' 쪽으로 이 낱말을 유의어로 쓴다.
+     원본이 전부 형용사 뜻('~하기에 적당한, 알맞은; 건강이 좋은; 어울리는')이라
+     형용사로 두고, 세 자리 모두에서 읽히도록 ["알맞은","건강이 좋은"] 으로
+     했다. 기존 사전 뜻 '맞다; 적합한' 은 athletic(몸이 튼튼한) 자리에서
+     오히려 약했으므로 이 편이 낫다. */
+  { word:"fit", pron:"핏", pos:"adj", level:"B2", meanings:["알맞은","건강이 좋은"],
+    syn:["suitable","appropriate","in good shape"],
+    ex:[{ s:"The old barn is no longer {{}} for storing grain.", f:"fit", ko:"그 낡은 헛간은 더 이상 곡물 보관에 알맞지 않다." }] },
+
+  { word:"fitness", pron:"피트니스", pos:"n", level:"B2", meanings:["신체 단련","적합함"],
+    syn:["physical condition","good health","suitability"],
+    ex:[{ s:"She tracks her {{}} with a simple notebook.", f:"fitness", ko:"그녀는 간단한 공책으로 자기 신체 단련을 기록한다." }] },
+
+  { word:"flammable", pron:"플래머블", pos:"adj", level:"C1", meanings:["가연성의"],
+    syn:["combustible","inflammable","easily burned"], ant:["fireproof"],
+    ex:[{ s:"Keep {{}} liquids away from the workbench.", f:"flammable", ko:"가연성 액체는 작업대에서 멀리 두어라." }] },
+
+  { word:"flap", pron:"플랩", pos:"v", level:"B2", meanings:["퍼덕거리다"],
+    syn:["wave up and down","thrash about","move to and fro"],
+    ex:[{ s:"Geese {{}} hard to lift off from still water.", f:"flap", ko:"거위는 잔잔한 물에서 날아오르려고 힘껏 퍼덕거린다." }] },
+
+  /* 기존 사전 뜻은 '타오르다; 불빛' 로 동사와 명사가 섞여 있었다. blaze 의
+     유의어 자리이고 그 형제가 flame·burn 으로 모두 동사라 동사로 모았다. */
+  { word:"flare", pron:"플레어", pos:"v", level:"B2", meanings:["확 타오르다","치솟다"],
+    syn:["blaze up","flame up","shoot up"],
+    ex:[{ s:"The candle will {{}} when the door lets in a draft.", f:"flare", ko:"문으로 바람이 들면 촛불이 확 타오른다." }] },
+
+  { word:"flash", pron:"플래시", pos:"v", level:"B2", meanings:["비치다","번쩍이다"],
+    syn:["gleam","glint","light up briefly"],
+    ex:[{ s:"Lightning began to {{}} above the far ridge.", f:"flash", ko:"먼 능선 위로 번개가 번쩍이기 시작했다." }] },
+
+  { word:"flashlight", pron:"플래시라이트", pos:"n", level:"B1", meanings:["손전등"],
+    syn:["torch","hand lamp","pocket light"],
+    ex:[{ s:"Take a {{}} — the cellar has no wiring.", f:"flashlight", ko:"손전등을 가져가라 — 지하실에는 전선이 없다." }] },
+
+  /* ── flat 계열 ─────────────────────────────────
+     flatten 과 flatter 는 둘 다 동사이고 앞 여섯 글자가 같다. 뜻이 전혀
+     달라서 뜻겹침으로는 갈라지지 않으므로 레벨을 두 단계 벌렸다
+     (flatten B1 · flatter C1). flat 은 형용사라 저절로 갈라진다. */
+  { word:"flat", pron:"플랫", pos:"adj", level:"B1", meanings:["납작한","편평한"],
+    syn:["smooth","horizontal","evenly surfaced"], ant:["bumpy"],
+    ex:[{ s:"Roll the dough until it is thin and {{}}.", f:"flat", ko:"반죽을 얇고 납작해질 때까지 밀어라." }] },
+
+  { word:"flatten", pron:"플래튼", pos:"v", level:"B1", meanings:["평평하게 하다"],
+    syn:["level off","press flat","smooth out"],
+    ex:[{ s:"Heavy rollers {{}} the track before each race.", f:"flatten", ko:"무거운 롤러가 경기마다 트랙을 평평하게 한다." }] },
+
+  { word:"flatter", pron:"플래터", pos:"v", level:"C1", meanings:["아첨하다"],
+    syn:["compliment excessively","butter up","praise insincerely"],
+    ex:[{ s:"He tried to {{}} the judges before the vote.", f:"flatter", ko:"그는 투표 전에 심사위원들에게 아첨하려 했다." }] },
+
+  { word:"flavor", pron:"플레이버", pos:"n", level:"B1", meanings:["맛"],
+    syn:["taste","savor","tang"],
+    ex:[{ s:"A little salt brings out the {{}} of the melon.", f:"flavor", ko:"소금을 조금 넣으면 멜론의 맛이 살아난다." }] },
+
+  /* 뜻 순서를 원본('결함, 흠')과 바꿨다. 표제어 defect 의 뜻이 ["결함","흠"]
+     로 글자까지 같아지면 표제어 둘이 구별되지 않는다(2차의 fatal·deadly 와
+     같은 경우다). defect·drawback 의 유의어 자리에서는 여전히 옳다. */
+  { word:"flaw", pron:"플로", pos:"n", level:"B2", meanings:["흠","결함"],
+    syn:["defect","imperfection","blemish"],
+    ex:[{ s:"A hairline {{}} in the glaze ruined the bowl.", f:"flaw", ko:"유약의 머리카락 같은 흠이 그 그릇을 망쳤다." }] },
+
+  { word:"flawless", pron:"플로리스", pos:"adj", level:"C1", meanings:["결점이 없는","완벽한"],
+    syn:["perfect","impeccable","faultless"], ant:["defective"],
+    ex:[{ s:"Her delivery of the long speech was {{}}.", f:"flawless", ko:"그 긴 연설에 대한 그녀의 전달은 결점이 없었다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -702,7 +847,7 @@ Object.assign(window.GLOSS, {
   "women's rights advocate":"여성 권리 옹호자",
   "workability":"작동 가능성",
 
-  /* ── 4차: fetch ~ fine-grained (48개) ───────────────── */
+  /* ── 4차: fetch ~ fine-grained (49개) ───────────────── */
   "bring":"가져오다",
   "budgetary":"예산상의",
   "developing baby":"자라는 아기",
@@ -755,5 +900,58 @@ Object.assign(window.GLOSS, {
   "trickle out of":"~에서 방울져 흐르다",
   "unborn child":"아직 태어나지 않은 아이",
   "unclean":"깨끗하지 않은",
-  "violent":"폭력적인, 격렬한"
+  "violent":"폭력적인, 격렬한",
+
+  /* ── 5차: finite ~ flawless (48개) ─────────────────
+     limited·solid·sturdy·smooth·gleam·imperfection·crisp 은 이미 GLOSS 에
+     있어서 여기에 없다. division·appropriate·bumpy·brittle·even 은 표제어다. */
+  "balled hand":"움켜쥔 손",
+  "blaze up":"확 타오르다",
+  "bounded":"경계가 있는",
+  "breaking apart":"쪼개져 갈라짐",
+  "butter up":"비위를 맞추다",
+  "clenched hand":"꽉 쥔 손",
+  "combustible":"불에 타기 쉬운",
+  "compliment excessively":"지나치게 칭찬하다",
+  "defective":"결함이 있는",
+  "easily burned":"쉽게 타는",
+  "evenly surfaced":"표면이 고른",
+  "faultless":"흠 하나 없는",
+  "fireproof":"불에 타지 않는",
+  "fish farm":"양어장",
+  "fishing ground":"어장",
+  "fishing industry":"수산업",
+  "flame up":"불길이 치솟다",
+  "glint":"반짝이다",
+  "good health":"좋은 건강",
+  "hand lamp":"손에 드는 등",
+  "horizontal":"수평의",
+  "impeccable":"나무랄 데 없는",
+  "in good shape":"건강한 상태인",
+  "inflammable":"불이 잘 붙는",
+  "knuckles":"주먹의 관절",
+  "level off":"고르게 하다",
+  "light up briefly":"잠깐 빛나다",
+  "measurable":"헤아릴 수 있는",
+  "move to and fro":"앞뒤로 움직이다",
+  "of the highest class":"최상급의",
+  "perfect":"완벽한",
+  "physical condition":"몸의 상태",
+  "pocket light":"주머니용 조명",
+  "praise insincerely":"마음에 없이 칭찬하다",
+  "press flat":"눌러 납작하게 하다",
+  "savor":"풍미",
+  "shoot up":"급히 치솟다",
+  "smooth out":"매끄럽게 펴다",
+  "splitting":"쪼개짐",
+  "suitability":"적합함",
+  "superior":"더 뛰어난",
+  "tang":"톡 쏘는 맛",
+  "taste":"맛, 미각",
+  "tax-related":"세금에 관한",
+  "thrash about":"몸부림치다",
+  "top-notch":"최고 수준의",
+  "torch":"손전등",
+  "unyielding":"굽히지 않는",
+  "wave up and down":"위아래로 흔들다"
 });
