@@ -1848,7 +1848,6 @@ Object.assign(window.GLOSS, {
   "disharmony":"부조화, 불화",
   "dispel":"없애다, 떨쳐 버리다",
   "displeasure":"불쾌, 불만",
-  "eminent":"저명한, 뛰어난",
   "excellence":"우수성, 탁월함",
   "expendable":"없애도 되는, 소모성의",
   "fire":"해고하다",

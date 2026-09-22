@@ -48,6 +48,8 @@
  *   edge        '우위' 갈래 제거 — 기존 GLOSS "가장자리, 끝"을 그대로 유지해야
  *               blade·brink·competitiveness·core 의 기존 문제가 안 변한다
  *   ecology     '생태계'를 뒤로 — ecosystem 과 뜻이 겹쳐 짝 맞추기가 억울해진다
+ *   embody      '상징하다; 포함하다' → 구현하다, 상징하다  (주된 뜻이 빠져 있었다)
+ *   elliptical  '생략된; 타원형의' → 타원형의를 앞으로 (ecology·earthly 와 같은 이유)
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -56,7 +58,7 @@
  *
  *   1차  20개  e-commerce ~ efficient      ← 완료
  *   2차  20개  effortless ~ elevated       ← 완료
- *   3차  20개  elevation ~ eminent
+ *   3차  20개  elevation ~ eminent         ← 완료
  *   4차  20개  emission ~ encourage
  *   5차  20개  encouragement ~ enlighten
  *   6차  20개  enormous ~ environment-friendly
@@ -100,6 +102,43 @@
  *   electricity 의 current → "흐름, 현재의"   ✗ → electric current(전류)
  *   eject 의 admit          → "인정하다, 시인하다" ✗ → let in
  *   elegant 의 crude        → "대충의, 원유"   ✗ → inelegant
+ *
+ * ── 3차 기록 ─────────────────────────────────
+ * syn 을 비운 1개 — embroider(수놓다). stitch·sew 는 뜻이 더 넓어 유의어로
+ * 가르치면 틀린 것을 가르치게 되는 공예 동사다.
+ * 동사가 9개 들어와 세트 분포가 v 4 → 13 으로 풀렸다 (eco-·elect- 명사 무리를 지났다).
+ *
+ * 표제어가 되면서 사전에서 지운 항목 7개
+ *   gloss.js   elevation, eliminate, embark, embrace, emerge, emergence
+ *   words-d.js eminent
+ *   pron.js    elevation, eliminate, embark, embrace, emerge, emergence, eminent
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   eliminate 기존 GLOSS "제거하다, 없애다"를 그대로 옮겼다. abolish·assassinate 가
+ *             유의어로 쓰고 있어 '탈락시키다' 같은 경기 갈래를 넣으면 암살·폐지
+ *             문제의 피드백이 엉뚱해진다
+ *   eminent   기존 GLOSS "저명한, 뛰어난"을 그대로 뒀다 — distinguished 의 유의어다
+ *             (2차의 elevated 와 같은 처리)
+ *   emergence 레벨을 C1, emergency 를 B1 로 두 칸 벌렸다. 철자가 한 글자 다른 같은
+ *             명사가 '레벨 ±1' 필터에 걸려 한 문제의 보기로 같이 뜨지 않는다.
+ *             2차의 element(B1)/elements(C1) 와 같은 방법이고 실제 난이도와도 맞는다
+ *   embody    반대로 원본을 고칠 수 있었던 경우다 — GLOSS·PRON 어디에도 없던 낱말이라
+ *             '구현하다'를 앞에 세워도 깨질 기존 문제가 없었다
+ *
+ * 유의어에서 걸러낸 것
+ *   eloquent 의 articulate → 표제어인데 품사가 동사("분명히 표현하다") ✗ → well-spoken
+ *   elicit 의 extract      → "발췌하다; 추출물"      ✗ → bring out
+ *   embed 의 lodge         → "숙소; 제기하다"        ✗ → set in
+ *   emblem 의 token        → "표시; 기념품"          ✗ → badge
+ *   emerge 의 surface      → "표면; 나타나다"(명사 갈래) ✗ → come to light
+ *   emergence 의 rise      → "오르다; 상승"(동사)    ✗ → advent
+ *   embarrass 의 shame     → "수치, 창피"(명사)      ✗ → put to shame
+ *   embark 의 get on       → "탑승하다". 뜻이 표제어 board 와 글자까지 같아 피드백
+ *                            두 줄이 똑같아진다(audit 이 오류로 잡았다) ✗ → go aboard
+ *
+ * PRON 에 뒤늦게 채운 2개 — humiliate, symbol. GLOSS 에는 전부터 있었지만 발음이
+ * 없었다. 선택지로 처음 쓰이면서 '선택지는 뜻과 발음을 모두 가져야 한다' 검사에
+ * 걸렸다. 앞 차수에서는 아무도 유의어로 쓰지 않아 드러나지 않았던 구멍이다.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -268,7 +307,111 @@ window.VOCAB_E = [
 
   { word:"elevated", pron:"엘러베이티드", pos:"adj", level:"C1", meanings:["높은","고상한"],
     syn:["lofty","raised","noble"], ant:["lowly"],
-    ex:[{ s:"The house sits on {{}} ground above the river.", f:"elevated", ko:"그 집은 강 위 높은 땅에 자리하고 있다." }] }
+    ex:[{ s:"The house sits on {{}} ground above the river.", f:"elevated", ko:"그 집은 강 위 높은 땅에 자리하고 있다." }] },
+
+  /* ── 3차: elevation ~ eminent ───────────────────── */
+
+  { word:"elevation", pron:"엘러베이션", pos:"n", level:"B2", meanings:["고도","높이"],
+    syn:["altitude","height","loftiness"], ant:["depth"],
+    ex:[{ s:"Crops grow poorly at this {{}} because the air is thin.", f:"elevation", ko:"공기가 희박해서 이 고도에서는 작물이 잘 자라지 않는다." }] },
+
+  { word:"elicit", pron:"일리싯", pos:"v", level:"C1", meanings:["끌어내다","유도해 내다"],
+    syn:["draw out","evoke","bring out"],
+    ex:[{ s:"The lawyer tried to {{}} a clear answer from the witness.", f:"elicit", ko:"변호사는 증인에게서 분명한 답을 끌어내려 했다." }] },
+
+  { word:"eligible", pron:"엘리저블", pos:"adj", level:"B2", meanings:["자격이 있는","적격의"],
+    syn:["qualified","entitled","suitable"], ant:["ineligible"],
+    ex:[{ s:"Only long-term residents are {{}} to vote in this district.", f:"eligible", ko:"이 선거구에서는 장기 거주자만 투표할 자격이 있다." }] },
+
+  /* eliminate 의 뜻은 기존 GLOSS "제거하다, 없애다" 를 그대로 옮겼다.
+     abolish·assassinate 가 이 낱말을 유의어로 쓰고 있어, '탈락시키다' 같은
+     경기 갈래를 넣으면 그 두 문제의 피드백이 엉뚱해진다. */
+  { word:"eliminate", pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
+    syn:["remove","get rid of","eradicate"], ant:["retain"],
+    ex:[{ s:"The new filter helps {{}} harmful bacteria from the water.", f:"eliminate", ko:"새 필터는 물에서 해로운 세균을 제거하는 데 도움이 된다." }] },
+
+  /* 원본은 '생략된; 타원형의' 순서인데 '타원형의'를 앞으로 돌렸다. 카드에 가장
+     크게 찍히는 첫 뜻이고, oval·egg-shaped 로 유의어를 깔끔히 짤 수 있는 쪽이다
+     (ecology '생태계'를 뒤로, earthly '지상의'를 앞으로 돌린 선례와 같다). */
+  { word:"elliptical", pron:"일립티컬", pos:"adj", level:"C2", meanings:["타원형의","생략된"],
+    syn:["oval","egg-shaped","oblong"],
+    ex:[{ s:"The comet follows a long {{}} path around the sun.", f:"elliptical", ko:"그 혜성은 태양 주위로 길게 타원형인 궤도를 따라 돈다." }] },
+
+  { word:"eloquence", pron:"엘러퀀스", pos:"n", level:"C1", meanings:["웅변","설득력"],
+    syn:["fluency","articulacy","expressiveness"],
+    ex:[{ s:"His {{}} at the hearing won over even his critics.", f:"eloquence", ko:"청문회에서 보인 그의 웅변은 비판자들까지 설득했다." }] },
+
+  /* eloquent 의 유의어로 articulate 를 쓰지 않았다 — 표제어인데 품사가 동사
+     ("분명히 표현하다")여서 형용사 자리에 엉뚱한 뜻이 뜬다. well-spoken 으로 뺐다. */
+  { word:"eloquent", pron:"엘러퀀트", pos:"adj", level:"C1", meanings:["웅변의","설득력 있는"],
+    syn:["persuasive","fluent","well-spoken"], ant:["inarticulate"],
+    ex:[{ s:"She gave an {{}} defense of the proposal.", f:"eloquent", ko:"그녀는 그 제안을 설득력 있게 변호했다." }] },
+
+  { word:"elusive", pron:"일루시브", pos:"adj", level:"C1", meanings:["찾기 힘든","붙잡기 어려운"],
+    syn:["hard to find","slippery","evasive"],
+    ex:[{ s:"The cause of the disease remains {{}} after years of study.", f:"elusive", ko:"수년간의 연구에도 그 병의 원인은 여전히 찾기 힘들다." }] },
+
+  /* 유의어로 get on 을 쓰지 않았다 — GLOSS 가 "탑승하다" 인데 표제어 board 의
+     뜻과 글자까지 같아서 피드백 두 줄이 똑같아진다(audit 이 오류로 잡는다). */
+  { word:"embark", pron:"임바크", pos:"v", level:"B2", meanings:["탑승하다","착수하다"],
+    syn:["board","set out","go aboard"], ant:["disembark"],
+    ex:[{ s:"Passengers began to {{}} an hour before departure.", f:"embark", ko:"승객들은 출발 한 시간 전부터 탑승하기 시작했다." }] },
+
+  { word:"embarrass", pron:"임배러스", pos:"v", level:"B1", meanings:["당황스럽게 만들다","난처하게 하다"],
+    syn:["humiliate","mortify","put to shame"],
+    ex:[{ s:"He never meant to {{}} her in front of the whole class.", f:"embarrass", ko:"그는 반 전체 앞에서 그녀를 당황스럽게 만들 생각이 전혀 없었다." }] },
+
+  /* ex.f 를 원형으로 둔다 — embedded 는 자음을 겹치는 변화라서 quizgen 이
+     변환을 포기하고 오답만 원형으로 남긴다(뜻을 몰라도 정답이 보인다). */
+  { word:"embed", pron:"임베드", pos:"v", level:"C1", meanings:["끼워 넣다","박아 넣다"],
+    syn:["insert","implant","set in"],
+    ex:[{ s:"Engineers {{}} sensors in the bridge to track stress.", f:"embed", ko:"기술자들은 응력을 추적하기 위해 교량에 센서를 끼워 넣는다." }] },
+
+  { word:"emblem", pron:"엠블럼", pos:"n", level:"B2", meanings:["상징","표상"],
+    syn:["symbol","insignia","badge"],
+    ex:[{ s:"The olive branch is an {{}} of peace.", f:"emblem", ko:"올리브 가지는 평화의 상징이다." }] },
+
+  /* 원본은 '상징하다; 포함하다' 인데 주된 뜻은 '구현하다' 다. GLOSS·PRON 어디에도
+     없던 낱말이라 기존 문제를 깨지 않고 고칠 수 있었다. */
+  { word:"embody", pron:"임바디", pos:"v", level:"C1", meanings:["구현하다","상징하다"],
+    syn:["personify","represent","exemplify"],
+    ex:[{ s:"These old courtyards {{}} the spirit of the city.", f:"embody", ko:"이 오래된 안마당들은 그 도시의 정신을 구현한다." }] },
+
+  { word:"embrace", pron:"임브레이스", pos:"v", level:"B2", meanings:["받아들이다","포옹하다"],
+    syn:["accept","adopt","welcome"], ant:["reject"],
+    ex:[{ s:"Older firms were slow to {{}} the new technology.", f:"embrace", ko:"오래된 기업들은 새 기술을 받아들이는 데 더뎠다." }] },
+
+  /* syn 을 비웠다 — '수놓다'는 바꿔 쓸 낱말이 마땅치 않은 공예 동사다.
+     stitch·sew 는 뜻이 더 넓어 유의어로 가르치면 틀린 것을 가르치게 된다. */
+  { word:"embroider", pron:"임브로이더", pos:"v", level:"C2", meanings:["수놓다","자수하다"],
+    ex:[{ s:"She learned to {{}} flowers on plain linen.", f:"embroider", ko:"그녀는 무늬 없는 린넨에 꽃을 수놓는 법을 배웠다." }] },
+
+  { word:"emerge", pron:"이머지", pos:"v", level:"B2", meanings:["드러나다","나타나다"],
+    syn:["appear","come out","come to light"], ant:["disappear"],
+    ex:[{ s:"New evidence began to {{}} halfway through the trial.", f:"emerge", ko:"재판 중반에 새로운 증거가 드러나기 시작했다." }] },
+
+  /* emergence(출현)와 emergency(비상사태)는 같은 명사에 철자가 한 글자 차이다.
+     레벨을 C1 / B1 로 두 칸 벌려 '레벨 ±1' 필터에 걸리게 했다 — 두 낱말이 한
+     문제의 보기로 같이 뜨지 않는다. 2차의 element(B1)/elements(C1) 와 같은 방법이고,
+     실제 난이도 순서(비상사태가 기초어)와도 맞는다. 코드는 건드리지 않는다. */
+  { word:"emergence", pron:"이머전스", pos:"n", level:"C1", meanings:["출현","등장"],
+    syn:["appearance","arrival","advent"],
+    ex:[{ s:"The {{}} of cheap sensors changed the whole industry.", f:"emergence", ko:"값싼 센서의 출현이 산업 전체를 바꿔 놓았다." }] },
+
+  { word:"emergency", pron:"이머전시", pos:"n", level:"B1", meanings:["비상사태","긴급 상황"],
+    syn:["crisis","urgent situation","critical situation"],
+    ex:[{ s:"Dial this number only in a genuine {{}}.", f:"emergency", ko:"진짜 비상사태일 때만 이 번호로 전화하세요." }] },
+
+  { word:"emerging", pron:"이머징", pos:"adj", level:"B2", meanings:["신흥의","최근 생겨난"],
+    syn:["rising","developing","up-and-coming"], ant:["established"],
+    ex:[{ s:"The fund puts most of its money into {{}} markets.", f:"emerging", ko:"그 펀드는 자금 대부분을 신흥 시장에 넣는다." }] },
+
+  /* 기존 words-d.js GLOSS 의 "저명한, 뛰어난" 을 그대로 옮겼다 — 표제어
+     distinguished 가 eminent 를 유의어로 쓰고 있어 뜻이 바뀌면 그 문제가 변한다
+     (2차의 elevated 선례). */
+  { word:"eminent", pron:"에머넌트", pos:"adj", level:"C1", meanings:["저명한","뛰어난"],
+    syn:["distinguished","famous","outstanding"], ant:["little-known"],
+    ex:[{ s:"The prize goes to an {{}} scholar each spring.", f:"eminent", ko:"그 상은 매년 봄 저명한 학자에게 주어진다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -344,5 +487,45 @@ Object.assign(window.GLOSS, {
   "vote for":"~에 투표하다",
   "voters":"유권자들",
   "voting public":"투표권을 가진 대중",
-  "constituency":"선거구, 선거구민"
+  "constituency":"선거구, 선거구민",
+
+  /* ── 3차: elevation ~ eminent (38개) ───────────────── */
+  "articulacy":"또렷한 표현력",
+  "badge":"표장, 배지",
+  "bring out":"드러내다, 끄집어내다",
+  "come out":"드러나다, 밝혀지다",
+  "come to light":"세상에 알려지다",
+  "crisis":"위기, 중대 국면",
+  "critical situation":"위태로운 상황",
+  "developing":"발전 중인, 개발 중인",
+  "draw out":"끌어내다, 이끌어 내다",
+  "egg-shaped":"달걀 모양의",
+  "entitled":"권리가 있는",
+  "eradicate":"근절하다, 뿌리 뽑다",
+  "established":"확립된, 기성의",
+  "exemplify":"전형적으로 보여주다",
+  "expressiveness":"표현력이 풍부함",
+  "fluency":"유창함",
+  "fluent":"유창한",
+  "go aboard":"배에 오르다",
+  "hard to find":"찾기 어려운",
+  "implant":"심어 넣다, 이식하다",
+  "inarticulate":"말을 제대로 못 하는",
+  "ineligible":"자격이 없는",
+  "insignia":"휘장, 표장",
+  "little-known":"거의 알려지지 않은",
+  "loftiness":"높음, 우뚝함",
+  "mortify":"창피하게 하다",
+  "oblong":"길둥근, 직사각형의",
+  "oval":"타원형의",
+  "personify":"체현하다, 의인화하다",
+  "put to shame":"부끄럽게 만들다",
+  "retain":"그대로 유지하다",
+  "rising":"떠오르는, 상승하는",
+  "set in":"끼워 넣다, 박아 넣다",
+  "set out":"출발하다, 착수하다",
+  "slippery":"붙잡기 힘든, 미끄러운",
+  "up-and-coming":"전도유망한",
+  "urgent situation":"긴급한 상황",
+  "well-spoken":"말솜씨가 좋은"
 });
