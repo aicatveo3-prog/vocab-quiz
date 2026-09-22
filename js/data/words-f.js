@@ -384,7 +384,68 @@
  *   mold       fungus   ← 뜻이 '틀, 거푸집' 이다
  *   let down   frustrated ← 뜻이 '실망시키다' 로 형용사 자리에 사역동사가 온다
  *
- * 진행 상황: 200 / 210단어 (fable ~ fur) — 10차, 10챕터 완료.
+ * ── 11차 기록 (마지막) ──
+ *   승격 3개.
+ *     무변  fuzzy ["흐릿한","애매한"] ← blurry(syn)
+ *           furnish 는 사전에만 있고 참조가 없던 항목이다(PRON 도 없었다)
+ *     변경  further "추가의; 더 멀리" → ["추가의","촉진하다"]
+ *
+ *   further ★ 기존 결함을 고친 자리다
+ *     두 곳이 참조하는데 필요한 갈래가 서로 다르다 — additional 은 '추가의'
+ *     (형용사) 쪽, advance 는 '촉진하다'(동사) 쪽이다. 기존 사전 뜻에는 동사
+ *     갈래가 아예 없어서, advance 문제에서는 progress·proceed 라는 동사 선택지
+ *     사이에 형용사 뜻이 섞여 있었다. '유의어가 아닌 것' 을 찾는 학생에게
+ *     잘못된 단서를 준다. words.js 는 세트별 audit 이 없어(D·E 세트만 있다)
+ *     걸리지 않던 자리다. 두 갈래를 담아 양쪽을 모두 살렸다.
+ *     원본의 '더 나아가'(부사)는 두 참조 어디에도 쓰이지 않아 내려놓았다.
+ *
+ *   fuzzy 원본은 '흐린, 솜털 있는' 인데 '솜털 있는' 은 6차 표제어 fluffy
+ *     (솜털의)와 겹친다. 기존 사전 뜻을 그대로 두어 blurry 문제도 그대로 남겼다.
+ *
+ * ── 11차 계열 ──
+ *   furnish(v)·furnish A with B(phr) 은 앞 여섯 글자가 같은 가족이지만 품사가
+ *   달라 갈라진다. 10차의 fur(n)과 furry(adj)도 품사가 다르다.
+ *   furrow·furry 는 네 글자까지만 같다.
+ *
+ * ── F 세트를 마치며 ──
+ *   210단어 11챕터. 0차에 규모를 재고 1~11차에 20단어씩(마지막 10단어) 넣었다.
+ *
+ *   원본 목록에서 바로잡은 뜻 5개 — filthy·fragrance·follow suit·frustrated·flit.
+ *   그중 fragrance·follow suit 는 이 저장소의 기존 사전이 이미 옳은 뜻을 갖고
+ *   있어, 원본 쪽이 틀렸다는 근거가 저장소 안에 있었다.
+ *
+ *   기존 문제의 결함 3개를 함께 고쳤다. 모두 '한 문제의 두 선택지가 구별되지
+ *   않거나 품사가 어긋난' 갈래이고, A·B·C 세트에는 세트별 audit 이 없어
+ *   지금까지 걸리지 않던 자리다.
+ *     7차  ban 의 prohibit·forbid 가 둘 다 '금지하다'
+ *     8차  candid 의 frank·forthright 가 둘 다 '솔직한, 거리낌없는'
+ *     11차 advance 의 further 에 동사 갈래가 없었다
+ *   승격할 때 '그 낱말을 유의어로 쓰는 기존 표제어의 형제 선택지' 를 함께 읽는
+ *   습관이 이 셋을 찾아냈다. 다음 세트(G)에서도 같은 순서로 볼 것.
+ *
+ *   승격은 모두 73개였다. 기존 뜻을 그대로 옮길 수 있으면 그렇게 해서 기존
+ *   문제를 건드리지 않았고, 옮길 수 없는 자리만 아래 세 가지로 풀었다.
+ *     ① 두 갈래를 meanings 에 함께 담기 — 참조하는 자리들이 서로 다른 갈래를
+ *        쓸 때. fare·figure·firm·fit·flow·fraud·friction·fuel·further
+ *     ② 한 갈래로 좁히기 — 참조가 모두 같은 품사일 때.
+ *        form(넷 다 동사)·fracture·fear·ferment·foster
+ *     ③ 순서 바꾸기 — 다른 표제어와 뜻 문자열이 글자까지 같아질 때.
+ *        fatal/deadly·flaw/defect·flex/bend·foe/enemy·forsake/abandon·
+ *        fragrance/aroma·frail/feeble
+ *
+ *   같은 F 세트 안에서 첫 뜻이 겹치지 않게도 살폈다 — 짝 맞추기 카드에 같은
+ *   글자가 두 장 뜨면 고를 근거가 없어진다.
+ *     fee/fare·flutter/flap·flux/flow·format/formation·frail/feeble·fuzzy/fluffy
+ *
+ *   계열(앞 여섯 글자가 같은 낱말)은 20묶음이었다. 대부분 품사가 달라 저절로
+ *   갈라졌고, 품사까지 같은 넷만 레벨을 두 단계 벌렸다 —
+ *   fertility/fertilizer·flatten/flatter·fiscal/financial·flick/flicker·
+ *   format/formation.
+ *
+ *   syn 을 비운 낱말은 federal 하나다. '연방제의' 는 제도 용어여서 문맥에서
+ *   바꿔 쓸 수 있는 말이 셋이 안 된다.
+ *
+ * 진행 상황: 210 / 210단어 (fable ~ fuzzy) — 11차, 11챕터. F 세트 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -1351,7 +1412,63 @@ window.VOCAB_F = [
 
   { word:"fur", pron:"퍼", pos:"n", level:"B1", meanings:["털","모피"],
     syn:["animal hair","coat of hair","hairy skin"],
-    ex:[{ s:"Arctic foxes grow thicker {{}} before winter.", f:"fur", ko:"북극여우는 겨울 전에 더 두꺼운 털이 자란다." }] }
+    ex:[{ s:"Arctic foxes grow thicker {{}} before winter.", f:"fur", ko:"북극여우는 겨울 전에 더 두꺼운 털이 자란다." }] },
+
+  /* ── 11차: furious ~ fuzzy (10개, 마지막) ──────── */
+
+  { word:"furious", pron:"퓨리어스", pos:"adj", level:"B2", meanings:["성난","격렬한"],
+    syn:["enraged","irate","very angry"], ant:["calm"],
+    ex:[{ s:"Neighbors were {{}} about the all-night noise.", f:"furious", ko:"이웃들은 밤새 이어진 소음에 성이 났다." }] },
+
+  { word:"furnish", pron:"퍼니시", pos:"v", level:"B2", meanings:["가구를 비치하다","제공하다"],
+    syn:["equip","fit out","supply"],
+    ex:[{ s:"They had to {{}} the whole flat on a small budget.", f:"furnish", ko:"그들은 적은 예산으로 집 전체에 가구를 비치해야 했다." }] },
+
+  /* 템플릿형 표제어다. 원본 그대로 두었다 — 다듬지 않는다는 방침이다.
+     furnish(v)와 앞 여섯 글자가 같지만 품사가 달라 갈라진다.
+     사전 키는 소문자로 적어야 조회에 닿는다(GLOSS[s.toLowerCase()]). 그래서
+     이 낱말의 유의어 provide A with B 등은 아래 블록에서 소문자 키로 넣었다. */
+  { word:"furnish A with B", pron:"퍼니시 에이 위드 비", pos:"phr", level:"B2", meanings:["A에게 B를 제공하다"],
+    syn:["provide A with B","supply A with B","give A B"] },
+
+  { word:"furrow", pron:"퍼로", pos:"n", level:"C1", meanings:["고랑","깊은 주름"],
+    syn:["plow line","deep groove","wrinkle"],
+    ex:[{ s:"Rain collected in every {{}} across the field.", f:"furrow", ko:"비가 밭의 고랑마다 고였다." }] },
+
+  { word:"furry", pron:"퍼리", pos:"adj", level:"B2", meanings:["털로 덮인"],
+    syn:["hairy","fuzzy-coated","covered in fur"],
+    ex:[{ s:"A small {{}} animal darted under the porch.", f:"furry", ko:"털로 덮인 작은 동물이 현관 밑으로 쏜살같이 들어갔다." }] },
+
+  /* ★ 두 곳이 참조하는데 필요한 갈래가 서로 다르다 — additional 은 '추가의'
+     (형용사) 쪽, advance 는 '촉진하다'(동사) 쪽이다. 기존 사전 뜻은
+     '추가의; 더 멀리' 로 동사 갈래가 아예 없었다. 그래서 advance 문제에서는
+     progress·proceed 라는 동사 선택지 사이에 형용사 뜻이 섞여 있었다 —
+     '유의어가 아닌 것' 을 찾는 학생에게 잘못된 단서를 준다.
+     words.js 는 세트별 audit 이 없어(D·E 세트만 있다) 걸리지 않던 자리다.
+     ["추가의","촉진하다"] 로 두 갈래를 담아 양쪽을 모두 살렸다.
+     원본의 '더 나아가'(부사)는 두 참조 어디에도 쓰이지 않아 내려놓았다. */
+  { word:"further", pron:"퍼더", pos:"adj", level:"B1", meanings:["추가의","촉진하다"],
+    syn:["extra","supplementary","more"],
+    ex:[{ s:"The council asked for {{}} details before deciding.", f:"further", ko:"의회는 결정 전에 추가 세부 사항을 요청했다." }] },
+
+  { word:"fusion", pron:"퓨전", pos:"n", level:"C1", meanings:["융합","용해"],
+    syn:["merging","blending","coming together"],
+    ex:[{ s:"The dish is a {{}} of two regional styles.", f:"fusion", ko:"그 요리는 두 지역 양식의 융합이다." }] },
+
+  { word:"fuss", pron:"퍼스", pos:"n", level:"B2", meanings:["호들갑","야단"],
+    syn:["commotion","to-do","needless bother"],
+    ex:[{ s:"He made a great {{}} over a tiny scratch.", f:"fuss", ko:"그는 작은 흠 하나에 큰 호들갑을 떨었다." }] },
+
+  { word:"futile", pron:"퓨틀", pos:"adj", level:"C1", meanings:["헛된","소용없는"],
+    syn:["pointless","useless","in vain"],
+    ex:[{ s:"All their efforts to restart the engine were {{}}.", f:"futile", ko:"엔진을 다시 걸려는 그들의 모든 노력이 헛되었다." }] },
+
+  /* 원본은 '흐린, 솜털 있는' 인데 '솜털 있는' 은 6차 표제어 fluffy(솜털의)와
+     겹친다. 기존 사전 뜻 '흐릿한, 애매한' 을 그대로 두어 blurry 문제도
+     그대로 남겼다. F 세트의 마지막 낱말이다. */
+  { word:"fuzzy", pron:"퍼지", pos:"adj", level:"B2", meanings:["흐릿한","애매한"],
+    syn:["indistinct","hazy","unclear"],
+    ex:[{ s:"The label had gone {{}} in the wash.", f:"fuzzy", ko:"그 상표는 세탁에서 흐릿해졌다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -1862,5 +1979,33 @@ Object.assign(window.GLOSS, {
   "underlying":"밑바탕에 있는",
   "usable":"쓸 수 있는",
   "vapor":"김, 수증기",
-  "worthwhile":"할 만한 값이 있는"
+  "worthwhile":"할 만한 값이 있는",
+
+  /* ── 11차: furious ~ fuzzy (21개, 마지막) ───────────
+     calm·supply·hairy·extra·supplementary·coming together·commotion·
+     indistinct·hazy·unclear 은 이미 GLOSS 에 있어서 여기에 없다.
+     ⚠️ provide A with B 처럼 대문자가 든 낱말도 키는 소문자로 적는다 —
+        조회가 GLOSS[s.toLowerCase()] 이기 때문이다. 표제어 쪽 syn 문자열은
+        'provide A with B' 로 대문자를 살린다. */
+  "blending":"섞여 어우러짐",
+  "covered in fur":"털로 덮인",
+  "deep groove":"깊게 팬 골",
+  "enraged":"격노한",
+  "equip":"장비를 갖추다",
+  "fit out":"필요한 것을 갖춰 주다",
+  "fuzzy-coated":"솜털이 난",
+  "give a b":"A에게 B를 주다",
+  "in vain":"헛되이",
+  "irate":"몹시 화난",
+  "merging":"하나로 합쳐짐",
+  "more":"더 많은",
+  "needless bother":"쓸데없는 수고",
+  "plow line":"쟁기가 낸 줄",
+  "pointless":"의미 없는",
+  "provide a with b":"A에게 B를 마련해 주다",
+  "supply a with b":"A에게 B를 공급하다",
+  "to-do":"부산한 소란",
+  "useless":"쓸모없는",
+  "very angry":"매우 화가 난",
+  "wrinkle":"주름"
 });
