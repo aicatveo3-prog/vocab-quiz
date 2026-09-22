@@ -289,7 +289,9 @@ window.VOCAB_B = [
     ex:[{ s:"You should book the tickets well {{}}.", f:"beforehand", ko:"표는 미리 예약해 두는 것이 좋다." }] },
 
   { word:"beguile", pron:"비가일", pos:"v", level:"C2", meanings:["현혹시키다","속이다"],
-    syn:["charm","enchant","deceive"], ant:["repel"],
+    /* charm 은 쓰지 않는다 — 표제어가 명사("매력")라서 동사 표제어 beguile 의
+       유의어 자리에 명사 뜻이 뜬다. */
+    syn:["captivate","enchant","deceive"], ant:["repel"],
     ex:[{ s:"The salesman tried to {{}} her with empty promises.", f:"beguile", ko:"그 판매원은 빈 약속으로 그녀를 현혹시키려 했다." }] },
 
   { word:"behind bars", pron:"비하인드 바스", pos:"phr", level:"B2", meanings:["투옥된","철창신세인"],
