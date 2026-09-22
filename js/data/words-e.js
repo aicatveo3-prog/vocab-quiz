@@ -50,6 +50,11 @@
  *   ecology     '생태계'를 뒤로 — ecosystem 과 뜻이 겹쳐 짝 맞추기가 억울해진다
  *   embody      '상징하다; 포함하다' → 구현하다, 상징하다  (주된 뜻이 빠져 있었다)
  *   elliptical  '생략된; 타원형의' → 타원형의를 앞으로 (ecology·earthly 와 같은 이유)
+ *   emit        '(빛, 가스 등을) 내뿜다' → 방출하다, 내뿜다   (첫 뜻의 괄호를 풀었다)
+ *   empirical   '경험(실험)에 의거한, 실증적인' → 실증적인을 앞으로 (같은 이유)
+ *   enact       '(법을) 제정하다; 상연하다; ~을 행하다' → 갈래 셋을 둘로 줄였다
+ *   encounter   '맞닥뜨리다, 마주하다; 만남, 조우, 접촉' → 동사로 정리했다.
+ *               pos 는 하나여야 하는데 원본이 동사와 명사를 섞어 두었다
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -59,7 +64,7 @@
  *   1차  20개  e-commerce ~ efficient      ← 완료
  *   2차  20개  effortless ~ elevated       ← 완료
  *   3차  20개  elevation ~ eminent         ← 완료
- *   4차  20개  emission ~ encourage
+ *   4차  20개  emission ~ encourage        ← 완료
  *   5차  20개  encouragement ~ enlighten
  *   6차  20개  enormous ~ environment-friendly
  *   7차  20개  envision ~ erratic
@@ -139,6 +144,55 @@
  * PRON 에 뒤늦게 채운 2개 — humiliate, symbol. GLOSS 에는 전부터 있었지만 발음이
  * 없었다. 선택지로 처음 쓰이면서 '선택지는 뜻과 발음을 모두 가져야 한다' 검사에
  * 걸렸다. 앞 차수에서는 아무도 유의어로 쓰지 않아 드러나지 않았던 구멍이다.
+ *
+ * ── 4차 기록 ─────────────────────────────────
+ * syn 을 비운 1개 — emotionally. E 세트의 첫 부사다. 부사는 바꿔 쓸 낱말을
+ * 만들면 억지가 된다(emotional 은 형용사라 품사가 어긋나고, sentimentally 는
+ * '감상적으로'로 뜻이 기운다). 오답 후보는 전체 adv 23개에서 나오므로 출제는 정상이다.
+ *
+ * 사전에 이미 있던 낱말이 9개로 앞 차수(7개)보다 많았다. em-·en- 접두사 구간이
+ * 기본 어휘라서 A~D 세트가 이미 유의어로 끌어다 쓰고 있었기 때문이다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 9개 (GLOSS·PRON 양쪽 18항목)
+ *   gloss.js   emphasize, empty, enchant, enclose, encounter
+ *   words.js   emit
+ *   words-d.js enable, encode, encourage
+ *   pron.js    위 9개 전부
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   emit      기존 뜻 "방출하다"를 첫 뜻으로 살렸다 — absorb 의 반의어이고
+ *             discharge 의 유의어다
+ *   empty     기존 뜻의 '빈' 갈래를 유지했다 — blank·devoid·drain 이 유의어로 쓴다
+ *   encourage 기존 GLOSS "격려하다, 장려하다" 를 그대로 옮겼다(demoralize 의 반의어).
+ *             원본의 '자극하다'를 쓰지 않은 이유다
+ *   encode    기존 GLOSS 와 똑같이 뒀다 — decipher 의 반의어다
+ *   enable    empower 의 유의어로도 쓰므로 레벨을 B2 로, empower 를 C1 로 벌렸다.
+ *             같은 동사 둘이 한 문제의 보기로 같이 뜨지 않는다
+ *
+ * 유의어에서 걸러낸 것
+ *   emission 의 discharge → 표제어인데 품사가 동사 ✗ 명사 3개(emanation·outflow·
+ *                           venting)로 짰다. discharge 는 emit 쪽에만 썼다
+ *   emulate 의 copy       → "복제품, 사본"(명사)     ✗ → mimic
+ *   encode 의 scramble    → "서두르다; 다투다"       ✗ → put into code
+ *   encompass 의 span     → "기간; 걸치다"           ✗ → incorporate
+ *   encourage 의 urge     → "충동; 재촉하다"(명사 갈래가 앞) ✗ → cheer on
+ *   empathetic 의 understanding → "이해, 인식"(명사) ✗ → caring
+ *   employ 의 recruit     → "신입; 모집하다"(명사가 앞) ✗ → give a job to
+ *   emphasis 의 weight    → "무게; 닻"               ✗ → importance
+ *   enchant 의 charm      → "매력"(명사)             ✗ → captivate
+ *
+ * PRON 에 뒤늦게 채운 1개 — stress. 3차의 humiliate·symbol 과 같은 경우다.
+ *
+ * ── 손대지 않고 남겨 둔 기존 문제 2개 ──────────
+ * 4차에서 눈에 띄었지만 이번 범위가 아니라 그대로 뒀다. 고치면 기존 출제가
+ * 변하므로 따로 판단이 필요하다.
+ *   drain(빼내다 — 동사) 의 유의어 empty  → 형용사 뜻("텅 빈")이 뜬다.
+ *        4차 전에도 "빈, 텅 빈"이 떴으므로 이번 변경으로 나빠진 것은 아니다.
+ *        고치려면 drain 의 syn 을 empty out 같은 동사구로 바꿔야 한다
+ *   beguile(현혹시키다 — 동사) 의 유의어 charm → "매력"(명사)이 뜬다
+ *
+ * 반대로 encounter 는 이번에 나아졌다. 기존 GLOSS "마주치다, 만남"의 명사 갈래가
+ * 표제어 come across(동사)와 어긋났는데, 동사로 정리하면서 사라졌다.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -411,7 +465,108 @@ window.VOCAB_E = [
      (2차의 elevated 선례). */
   { word:"eminent", pron:"에머넌트", pos:"adj", level:"C1", meanings:["저명한","뛰어난"],
     syn:["distinguished","famous","outstanding"], ant:["little-known"],
-    ex:[{ s:"The prize goes to an {{}} scholar each spring.", f:"eminent", ko:"그 상은 매년 봄 저명한 학자에게 주어진다." }] }
+    ex:[{ s:"The prize goes to an {{}} scholar each spring.", f:"eminent", ko:"그 상은 매년 봄 저명한 학자에게 주어진다." }] },
+
+  /* ── 4차: emission ~ encourage ──────────────────── */
+
+  /* 유의어를 명사로만 골랐다 — discharge 는 표제어인데 품사가 동사("방출하다,
+     내보내다")여서 명사 emission 자리에 쓰면 뜻이 어긋난다. emit 쪽에만 쓴다. */
+  { word:"emission", pron:"이미션", pos:"n", level:"B2", meanings:["방출","배출"],
+    syn:["emanation","outflow","venting"], ant:["absorption"],
+    ex:[{ s:"The new rules cap carbon {{}} from heavy industry.", f:"emission", ko:"새 규정은 중공업의 탄소 배출에 상한을 둔다." }] },
+
+  /* 원본은 '(빛, 가스 등을) 내뿜다' 인데 첫 뜻에는 괄호 설명을 넣지 않는다.
+     기존 GLOSS "방출하다"를 첫 뜻으로 살려 absorb(반의어)·discharge(유의어)의
+     기존 문제가 변하지 않게 했다. */
+  { word:"emit", pron:"이미트", pos:"v", level:"B2", meanings:["방출하다","내뿜다"],
+    syn:["discharge","give off","send out"], ant:["absorb"],
+    ex:[{ s:"Older engines {{}} far more soot than modern ones.", f:"emit", ko:"구형 엔진은 현대식 엔진보다 훨씬 많은 매연을 방출한다." }] },
+
+  /* syn 을 비웠다 — 부사는 바꿔 쓸 낱말을 만들면 억지가 된다. emotional(형용사)을
+     넣으면 품사가 어긋나고, sentimentally 는 '감상적으로'로 뜻이 기운다.
+     E 세트의 첫 부사다(오답 후보는 전체 adv 23개에서 나온다). */
+  { word:"emotionally", pron:"이모셔널리", pos:"adv", level:"B2", meanings:["감정적으로","정서적으로"],
+    ex:[{ s:"She spoke {{}} about the years she spent abroad.", f:"emotionally", ko:"그녀는 외국에서 보낸 시절에 대해 감정적으로 이야기했다." }] },
+
+  { word:"empathetic", pron:"엠퍼세틱", pos:"adj", level:"B2", meanings:["공감하는","공감할 수 있는"],
+    syn:["compassionate","sympathetic","caring"], ant:["indifferent"],
+    ex:[{ s:"A good nurse is {{}} without becoming overwhelmed.", f:"empathetic", ko:"좋은 간호사는 압도되지 않으면서도 공감할 수 있다." }] },
+
+  { word:"empathy", pron:"엠퍼시", pos:"n", level:"B2", meanings:["감정이입","공감"],
+    syn:["compassion","sympathy","fellow feeling"], ant:["indifference"],
+    ex:[{ s:"Reading fiction is said to build {{}} for other people.", f:"empathy", ko:"소설 읽기는 타인에 대한 공감을 키운다고 한다." }] },
+
+  { word:"emphasis", pron:"엠퍼시스", pos:"n", level:"B2", meanings:["강조","강세"],
+    syn:["prominence","accent","importance"],
+    ex:[{ s:"The school places heavy {{}} on reading aloud.", f:"emphasis", ko:"그 학교는 소리 내어 읽기를 크게 강조한다." }] },
+
+  { word:"emphasize", pron:"엠퍼사이즈", pos:"v", level:"B1", meanings:["강조하다","역설하다"],
+    syn:["highlight","stress","underline"], ant:["downplay"],
+    ex:[{ s:"The coach likes to {{}} defense over scoring.", f:"emphasize", ko:"그 감독은 득점보다 수비를 강조하기를 좋아한다." }] },
+
+  /* 원본 '경험(실험)에 의거한, 실증적인' 은 첫 뜻에 괄호가 들어간다 — 순서를
+     바꿔 '실증적인'을 앞에 세우고 괄호를 풀었다. */
+  { word:"empirical", pron:"임피리컬", pos:"adj", level:"C1", meanings:["실증적인","경험에 의거한"],
+    syn:["observed","experimental","evidence-based"], ant:["theoretical"],
+    ex:[{ s:"The claim sounds plausible but lacks {{}} support.", f:"empirical", ko:"그 주장은 그럴듯하게 들리지만 실증적인 근거가 없다." }] },
+
+  { word:"employ", pron:"임플로이", pos:"v", level:"B1", meanings:["고용하다","쓰다"],
+    syn:["hire","make use of","give a job to"], ant:["dismiss"],
+    ex:[{ s:"The mill used to {{}} half the town.", f:"employ", ko:"그 공장은 한때 마을 절반을 고용했다." }] },
+
+  { word:"empower", pron:"임파워", pos:"v", level:"C1", meanings:["권한을 주다","힘을 실어 주다"],
+    syn:["authorize","enable","give power to"],
+    ex:[{ s:"The law will {{}} local councils to set their own rules.", f:"empower", ko:"그 법은 지방 의회가 자체 규정을 정할 권한을 준다." }] },
+
+  { word:"empty", pron:"엠프티", pos:"adj", level:"B1", meanings:["텅 빈","공허한"],
+    syn:["vacant","unfilled","bare"], ant:["full"],
+    ex:[{ s:"The theater was almost {{}} on a Tuesday night.", f:"empty", ko:"화요일 밤 극장은 거의 텅 비어 있었다." }] },
+
+  /* 원본의 '치솟다, 급등하다'는 escalate 의 뜻이 섞인 것이다 — 헤더에 적어 둔 대로
+     바로잡았다. */
+  { word:"emulate", pron:"에뮬레이트", pos:"v", level:"C1", meanings:["모방하다","흉내내다"],
+    syn:["imitate","mimic","follow the example of"],
+    ex:[{ s:"Younger players try to {{}} his footwork.", f:"emulate", ko:"어린 선수들은 그의 발놀림을 모방하려 한다." }] },
+
+  { word:"enable", pron:"이네이블", pos:"v", level:"B2", meanings:["할 수 있게 하다","가능하게 하다"],
+    syn:["allow","permit","make possible"], ant:["disable"],
+    ex:[{ s:"A small grant will {{}} her to finish the research.", f:"enable", ko:"작은 보조금이 그녀가 연구를 마칠 수 있게 해 줄 것이다." }] },
+
+  /* 원본은 '(법을) 제정하다; 상연하다; ~을 행하다' 로 갈래가 셋이다 — 대표 2개로
+     줄이고 괄호를 풀었다. */
+  { word:"enact", pron:"이낵트", pos:"v", level:"C1", meanings:["제정하다","상연하다"],
+    syn:["legislate","pass into law","put into effect"], ant:["repeal"],
+    ex:[{ s:"Parliament moved quickly to {{}} the new safety code.", f:"enact", ko:"의회는 새 안전 규정을 제정하려 빠르게 움직였다." }] },
+
+  /* 유의어로 charm 을 쓰지 않았다 — GLOSS 가 "매력"(명사)이라 동사 자리에 안 맞는다
+     (표제어 beguile 이 이미 그 문제를 안고 있다). captivate 로 뺐다. */
+  { word:"enchant", pron:"인챈트", pos:"v", level:"C1", meanings:["황홀하게 만들다","매혹하다"],
+    syn:["captivate","fascinate","bewitch"], ant:["repel"],
+    ex:[{ s:"The old carousel still seems to {{}} every child who sees it.", f:"enchant", ko:"그 낡은 회전목마는 지금도 그것을 보는 모든 아이를 황홀하게 만드는 듯하다." }] },
+
+  { word:"enclose", pron:"인클로즈", pos:"v", level:"B2", meanings:["둘러싸다","동봉하다"],
+    syn:["surround","fence in","encircle"],
+    ex:[{ s:"They plan to {{}} the yard with a low stone wall.", f:"enclose", ko:"그들은 낮은 돌담으로 마당을 둘러쌀 계획이다." }] },
+
+  { word:"encode", pron:"인코드", pos:"v", level:"C1", meanings:["암호화하다","부호화하다"],
+    syn:["encrypt","cipher","put into code"], ant:["decode"],
+    ex:[{ s:"The app will {{}} every message before sending it.", f:"encode", ko:"그 앱은 메시지를 보내기 전에 모두 암호화한다." }] },
+
+  { word:"encompass", pron:"인컴퍼스", pos:"v", level:"C1", meanings:["포함하다","아우르다"],
+    syn:["include","incorporate","bring together"], ant:["exclude"],
+    ex:[{ s:"The survey will {{}} every district in the province.", f:"encompass", ko:"그 조사는 그 도의 모든 구역을 포함할 것이다." }] },
+
+  /* 원본은 '맞닥뜨리다, 마주하다; 만남, 조우, 접촉' 으로 동사와 명사가 섞여 있다.
+     pos 는 하나여야 하므로 동사로 정리했다 — 표제어 come across 가 이 낱말을
+     유의어로 쓰고 있어 동사 갈래가 살아 있어야 한다(기존 GLOSS 는 "마주치다, 만남"
+     이라 명사 갈래가 섞여 있었다). */
+  { word:"encounter", pron:"인카운터", pos:"v", level:"B2", meanings:["맞닥뜨리다","마주치다"],
+    syn:["come across","run into","bump into"],
+    ex:[{ s:"Hikers sometimes {{}} bears on this ridge.", f:"encounter", ko:"등산객들은 이 능선에서 이따금 곰과 맞닥뜨린다." }] },
+
+  { word:"encourage", pron:"인커리지", pos:"v", level:"B1", meanings:["격려하다","장려하다"],
+    syn:["motivate","inspire","cheer on"], ant:["discourage"],
+    ex:[{ s:"Teachers should {{}} students to ask awkward questions.", f:"encourage", ko:"교사는 학생들이 껄끄러운 질문을 하도록 격려해야 한다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -527,5 +682,45 @@ Object.assign(window.GLOSS, {
   "slippery":"붙잡기 힘든, 미끄러운",
   "up-and-coming":"전도유망한",
   "urgent situation":"긴급한 상황",
-  "well-spoken":"말솜씨가 좋은"
+  "well-spoken":"말솜씨가 좋은",
+
+  /* ── 4차: emission ~ encourage (38개) ───────────────── */
+  "accent":"강세, 악센트",
+  "bewitch":"넋을 빼앗다",
+  "bring together":"아우르다, 한데 모으다",
+  "bump into":"마주치다, 부딪치다",
+  "captivate":"마음을 사로잡다",
+  "caring":"배려하는, 보살피는",
+  "cheer on":"응원하다",
+  "cipher":"암호로 바꾸다",
+  "emanation":"발산, 방출",
+  "encircle":"원형으로 둘러싸다",
+  "encrypt":"암호화하다",
+  "evidence-based":"증거에 기반한",
+  "experimental":"실험에 의한",
+  "fascinate":"매혹하다, 흥미를 끌다",
+  "fellow feeling":"동류 의식, 공감",
+  "fence in":"울타리로 둘러막다",
+  "follow the example of":"~의 본을 따르다",
+  "give a job to":"~에게 일자리를 주다",
+  "give off":"내뿜다, 발산하다",
+  "give power to":"~에게 힘을 주다",
+  "imitate":"모방하다, 본뜨다",
+  "importance":"중요성",
+  "incorporate":"포함시키다, 통합하다",
+  "inspire":"고무하다, 영감을 주다",
+  "legislate":"법을 제정하다",
+  "make possible":"가능하게 만들다",
+  "mimic":"흉내 내다, 모방하다",
+  "motivate":"동기를 부여하다",
+  "observed":"관찰된",
+  "pass into law":"법으로 통과시키다",
+  "prominence":"두드러짐, 현저함",
+  "put into code":"부호로 바꾸다",
+  "put into effect":"시행하다",
+  "run into":"우연히 만나다",
+  "send out":"내보내다, 발신하다",
+  "surround":"둘러싸다, 에워싸다",
+  "sympathetic":"동정하는, 공감하는",
+  "venting":"배출, 뿜어냄"
 });
