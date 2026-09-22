@@ -69,6 +69,11 @@
  *               (시험에 나오는 쪽이고 3차에 넣은 GLOSS "entitled":"권리가 있는" 과 맞는다)
  *   environment-friendly  '환경친화적인, 친환경적인' → 두 뜻이 사실상 같은 말이라
  *               하나만 남겼다. 카드에 같은 말이 두 번 찍히는 것을 막는다
+ *   epic        '서사시, 서사시의, 장대한' → 명사로 정리 (명사·형용사가 섞여 있었다)
+ *   equivalent  '동등한, ~에 상당하는, 동등한 것' → 형용사로 정리
+ *   erect       '세우다, 짓다, 만들다; 똑바로 선, 직립의' → 동사로 정리
+ *   epidemic    '유행병, 전염병, 급속한 확산' → 둘로,  era '기원, 연대, 시대' → 둘로
+ *   eradicate   '뿌리째 뽑다' 를 살렸다 (3차에서 넣은 GLOSS 항목이 표제어로 올라왔다)
  *
  * ── 작업 현황 ─────────────────────────────────
  * 250단어 (e-commerce ~ eyesore) — 13챕터. 20개씩 13차에 나눠 쓴다.
@@ -81,7 +86,7 @@
  *   4차  20개  emission ~ encourage        ← 완료
  *   5차  20개  encouragement ~ enlighten   ← 완료
  *   6차  20개  enormous ~ environment-friendly  ← 완료
- *   7차  20개  envision ~ erratic
+ *   7차  20개  envision ~ erratic          ← 완료
  *   8차  20개  erroneous ~ evaluate
  *   9차  20개  evaporate ~ excess
  *  10차  20개  excessive ~ exhibition
@@ -197,13 +202,18 @@
  *
  * PRON 에 뒤늦게 채운 1개 — stress. 3차의 humiliate·symbol 과 같은 경우다.
  *
- * ── 손대지 않고 남겨 둔 기존 문제 2개 ──────────
- * 4차에서 눈에 띄었지만 이번 범위가 아니라 그대로 뒀다. 고치면 기존 출제가
- * 변하므로 따로 판단이 필요하다.
+ * ── 손대지 않고 남겨 둔 기존 문제 3개 ──────────
+ * 차수를 지나며 눈에 띄었지만 그 차수의 범위가 아니라 그대로 뒀다. 고치면 기존
+ * 출제가 변하므로 따로 판단이 필요하다. 셋 다 '동사·명사 표제어에 품사가 다른
+ * 유의어가 붙어 있다' 는 같은 꼴이다.
  *   drain(빼내다 — 동사) 의 유의어 empty  → 형용사 뜻("텅 빈")이 뜬다.
- *        4차 전에도 "빈, 텅 빈"이 떴으므로 이번 변경으로 나빠진 것은 아니다.
- *        고치려면 drain 의 syn 을 empty out 같은 동사구로 바꿔야 한다
- *   beguile(현혹시키다 — 동사) 의 유의어 charm → "매력"(명사)이 뜬다
+ *        4차 전에도 "빈, 텅 빈"이 떴으므로 그 변경으로 나빠진 것은 아니다.
+ *        고치려면 drain 의 syn 을 empty out 같은 동사구로 바꿔야 한다   (4차에 발견)
+ *   beguile(현혹시키다 — 동사) 의 유의어 charm → "매력"(명사)이 뜬다    (4차에 발견)
+ *   counterpart(대응물 — 명사) 의 유의어 equivalent → 형용사 뜻이 뜬다.
+ *        equivalent 는 표제어 comparable·corresponding(둘 다 형용사)도 유의어로
+ *        쓰므로 형용사로 둘 수밖에 없었다. 명사 하나보다 형용사 둘을 지켰다.
+ *        7차 전에도 같은 형용사 뜻이 떴으므로 나빠진 것은 아니다        (7차에 발견)
  *
  * 반대로 encounter 는 이번에 나아졌다. 기존 GLOSS "마주치다, 만남"의 명사 갈래가
  * 표제어 come across(동사)와 어긋났는데, 동사로 정리하면서 사라졌다.
@@ -298,6 +308,65 @@
  *   enthusiastic)의 선택지라 한 문제에 같이 뜨지 않는다 — principal/principle 선례.
  *
  * PRON 에 뒤늦게 채운 1개 — passion. 5차의 jeopardize 와 같은 경우다.
+ *
+ * ── 7차 기록 ─────────────────────────────────
+ * 사전에 이미 있던 낱말이 10개로 다시 늘었다. equi-·err- 구간이 A~D 세트의
+ * 유의어로 많이 쓰이고 있었다. GLOSS·PRON 20항목을 지웠다.
+ *
+ * 표제어가 되면서 사전에서 지운 항목 10개
+ *   gloss.js   envision, equal, equipment, equivalent, equivocal, erect, erosion, errand
+ *   words-c.js erratic
+ *   words-e.js eradicate   ← 3차에서 eliminate 의 유의어로 내가 넣은 항목이다
+ *   pron.js    위 10개 전부
+ *
+ * ★ 자기 세트에 넣은 GLOSS 가 뒤 차수에서 표제어가 될 수 있다.
+ *   eradicate 가 그 첫 사례다. 앞 차수에서 유의어로 쓴 낱말이 알파벳순으로 뒤에
+ *   있으면 반드시 이런 일이 생긴다. 조사 스크립트가 words-e.js 까지 훑어서
+ *   잡아냈다 — 남은 차수에서도 words-e.js 를 조사 대상에 넣어야 한다.
+ *   (뒤 차수에서 표제어가 될 낱말: eruption·escalate·essence 등을 유의어로 썼는지
+ *    확인하면 미리 알 수 있다)
+ *
+ * syn 을 비운 4개 — epic·equation·equator·equatorial. 한 차수에 넷은 1차(7개)
+ * 다음으로 많은데, 이 구간에 문학·수학·지리 용어가 몰려 있어서다(epic·epilogue·
+ * equation·equator·equatorial). 1차의 eco-·econ- 명사 무리와 같은 이유다.
+ *   epic       saga·heroic poem 은 서로 뜻이 거의 같아 셋을 채우면 같은 말을 세 번 한다
+ *   equation   formula 의 GLOSS 가 "공식; 방법" 이라 '방법' 갈래가 섞인다
+ *   equator·equatorial  지리 용어에는 바꿔 쓸 낱말이 없다
+ *
+ * 한 차수 안에서 뜻이 겹치는 짝을 레벨로 갈랐다 — 3차 emergence/emergency 와 같다
+ *   epoch(C2) / era(B2)        둘 다 명사 '시대'.  뜻도 '신기원' / '시대' 로 갈랐다
+ *   equal(B1) / equivalent(C1) 둘 다 형용사 '동등한'. equal 은 '같은' 을 앞에 뒀다
+ *   equator(n) / equatorial(adj) 는 품사가 달라 레벨을 건드릴 필요가 없었다
+ *
+ * 기존 문제를 지키려고 원본과 달리 정한 것
+ *   equivalent 기존 GLOSS "동등한, 상당하는"(형용사) 그대로 — comparable·corresponding
+ *              두 형용사 표제어가 유의어로 쓴다. 원본의 '동등한 것'(명사)은 버렸다
+ *   equivocal  기존 GLOSS "애매한, 이중적인" 그대로 — 원본의 '확실치 않은' 을 쓰면
+ *              표제어 ambiguous 자신의 뜻("애매한, 확실치 않은")과 글자까지 같아진다
+ *   erect      동사로 정리 — 표제어 construct 가 유의어로 쓴다
+ *   eradicate  '근절하다' 를 앞에 그대로 — 표제어 eliminate 가 유의어로 쓴다
+ *   erode      원본의 '밤에 일어나는; 야행성의'(nocturnal 의 뜻)를 바로잡았다.
+ *              표제어 erosion 과 뜻이 짝을 이룬다
+ *
+ * ⚠️ equal 은 형태가 조금 바뀌었다 — 보고 대상
+ *   기존 GLOSS 는 "동등하다; 같다"(서술형)였는데 형용사 표제어로 올리면서
+ *   "같은, 동등한"(관형형)이 되었다. 표제어 correspond to(동사구)가 이 낱말을
+ *   유의어로 쓰므로 그 피드백의 어미가 바뀐다. 뜻 자체는 같고, 같은 목록의
+ *   fit 이 이미 "맞다; 적합한" 으로 형태가 섞여 있어 어색하지 않다. 다만
+ *   '뜻이 아니라 형태가 바뀐' 첫 사례이므로 적어 둔다.
+ *
+ * 유의어에서 걸러낸 것
+ *   epidemic 의 plague  → "괴롭히다; 역병"(동사가 앞)   ✗ → contagion
+ *   equilibrium 의 balance → "균형을 맞추다; 균형"(동사가 앞) ✗ → state of balance
+ *   equation 의 formula → "공식; 방법"                 ✗ → syn 을 비웠다
+ *   erect 의 raise      → "올리다; 기르다"              ✗ → construct(표제어)
+ *
+ * PRON 에 뒤늦게 채운 3개 — outbreak, put up, stability. 6차의 passion 과 같다.
+ *
+ * 발음은 기존 표기에서 찾아 맞췄다
+ *   corrode  기존 corrosive("커로시브")·corrosion("커로전")에 맞췄다
+ *   even·unequal  기존 uneven("언이븐")에 맞췄다
+ *   age      기존 age-old("에이지 올드")에 맞췄다
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-e-audit.js           검사 6종 + 출제 시뮬레이션
@@ -869,7 +938,110 @@ window.VOCAB_E = [
      같은 말이 두 번 찍히므로 하나만 뒀다(electronic·encyclopedia 선례). */
   { word:"environment-friendly", pron:"인바이런먼트 프렌들리", pos:"adj", level:"B2", meanings:["환경친화적인"],
     syn:["eco-friendly","green","sustainable"],
-    ex:[{ s:"The company switched to {{}} packaging last year.", f:"environment-friendly", ko:"그 회사는 지난해 환경친화적인 포장으로 바꿨다." }] }
+    ex:[{ s:"The company switched to {{}} packaging last year.", f:"environment-friendly", ko:"그 회사는 지난해 환경친화적인 포장으로 바꿨다." }] },
+
+  /* ── 7차: envision ~ erratic ─────────────────────── */
+
+  { word:"envision", pron:"인비전", pos:"v", level:"C1", meanings:["마음속에 그리다","상상하다"],
+    syn:["imagine","visualize","picture in one's mind"],
+    ex:[{ s:"It is hard to {{}} the town as it looked a century ago.", f:"envision", ko:"그 마을이 한 세기 전에 어떻게 보였을지 마음속에 그리기는 어렵다." }] },
+
+  /* 원본은 '서사시, 서사시의, 장대한' 으로 명사와 형용사가 섞여 있다 — 명사로 정했다.
+     syn 을 비웠다: saga·heroic poem 은 뜻이 서로 거의 같아 셋을 채우면 피드백이
+     같은 말을 세 번 하게 된다. 문학 용어 명사다. */
+  { word:"epic", pron:"에픽", pos:"n", level:"B2", meanings:["서사시"],
+    ex:[{ s:"The class spent a month on a single Greek {{}}.", f:"epic", ko:"그 수업은 그리스 서사시 한 편에 한 달을 썼다." }] },
+
+  { word:"epidemic", pron:"에퍼데믹", pos:"n", level:"B2", meanings:["유행병","전염병"],
+    syn:["outbreak","contagion","widespread disease"],
+    ex:[{ s:"The city closed its schools during the {{}}.", f:"epidemic", ko:"그 도시는 유행병이 도는 동안 학교를 닫았다." }] },
+
+  { word:"epilogue", pron:"에펄로그", pos:"n", level:"C1", meanings:["에필로그","후기"],
+    syn:["afterword","closing section","final chapter"],
+    ex:[{ s:"A short {{}} tells us what became of the family.", f:"epilogue", ko:"짧은 에필로그가 그 가족이 어떻게 되었는지 알려 준다." }] },
+
+  /* epoch(신기원)와 era(시대)는 같은 명사에 뜻이 겹친다. 레벨을 C2 / B2 로 두 칸
+     벌려 '레벨 ±1' 필터에 걸리게 했고, 뜻도 '신기원' 과 '시대' 로 갈라 두었다.
+     2차 element/elements, 3차 emergence/emergency 와 같은 방법이다. */
+  { word:"epoch", pron:"에폭", pos:"n", level:"C2", meanings:["신기원","획기적인 시대"],
+    syn:["milestone","turning point","new age"],
+    ex:[{ s:"The first printing press opened a new {{}} in learning.", f:"epoch", ko:"최초의 인쇄기는 학문에 새로운 신기원을 열었다." }] },
+
+  /* equal(B1)과 equivalent(C1)도 두 칸 벌렸다 — 둘 다 형용사에 '동등한' 뜻이다.
+     equal 은 '같은' 을 앞에 둬 뜻으로도 갈라 놓았다. */
+  { word:"equal", pron:"이퀄", pos:"adj", level:"B1", meanings:["같은","동등한"],
+    syn:["identical","the same","even"], ant:["unequal"],
+    ex:[{ s:"Cut the dough into six {{}} pieces.", f:"equal", ko:"반죽을 똑같은 크기의 여섯 조각으로 자르세요." }] },
+
+  /* syn 을 비웠다 — 수학 용어다. formula 의 GLOSS 는 "공식; 방법" 이라 '방법' 갈래가
+     섞이고, 나머지 후보는 '등식'을 달리 말한 것뿐이다. */
+  { word:"equation", pron:"이퀘이전", pos:"n", level:"C1", meanings:["방정식","등식"],
+    ex:[{ s:"He solved the {{}} in three lines.", f:"equation", ko:"그는 그 방정식을 세 줄로 풀었다." }] },
+
+  /* equator·equatorial 은 syn 을 비웠다 — 지리 용어에는 바꿔 쓸 낱말이 없다
+     (1차의 ecological·ecology 와 같다). 품사가 명사/형용사로 달라 둘이 한 문제의
+     보기로 같이 뜨지는 않는다. */
+  { word:"equator", pron:"이퀘이터", pos:"n", level:"B2", meanings:["적도"],
+    ex:[{ s:"The ship crossed the {{}} just after midnight.", f:"equator", ko:"그 배는 자정 직후에 적도를 건넜다." }] },
+
+  { word:"equatorial", pron:"에쿼토리얼", pos:"adj", level:"C1", meanings:["적도의","적도 부근의"],
+    ex:[{ s:"Heavy rain falls all year in {{}} regions.", f:"equatorial", ko:"적도 지역에는 일 년 내내 많은 비가 내린다." }] },
+
+  { word:"equilibrium", pron:"이퀄리브리엄", pos:"n", level:"C1", meanings:["균형","평형"],
+    syn:["stability","evenness","state of balance"],
+    ex:[{ s:"The market found a new {{}} after the shock.", f:"equilibrium", ko:"시장은 그 충격 뒤에 새로운 균형을 찾았다." }] },
+
+  { word:"equipment", pron:"이퀴프먼트", pos:"n", level:"B1", meanings:["장비","용품"],
+    syn:["gear","apparatus","tools"],
+    ex:[{ s:"The club lends climbing {{}} to beginners.", f:"equipment", ko:"그 동아리는 초보자에게 등반 장비를 빌려준다." }] },
+
+  /* 기존 GLOSS "동등한, 상당하는"(형용사)을 그대로 옮겼다 — 표제어 comparable·
+     corresponding 두 형용사가 유의어로 쓴다. 원본의 '동등한 것'(명사) 갈래는 버렸다.
+     명사 표제어 counterpart 도 이 낱말을 유의어로 쓰지만, 형용사 둘을 지키는 쪽이
+     낫다(counterpart 의 어긋남은 7차 전에도 있었다 — 아래 '남겨 둔 문제' 참고). */
+  { word:"equivalent", pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
+    syn:["comparable","corresponding","tantamount"],
+    ex:[{ s:"One cup of this flour is {{}} to two of the old kind.", f:"equivalent", ko:"이 밀가루 한 컵은 예전 것 두 컵과 동등하다." }] },
+
+  /* 기존 GLOSS "애매한, 이중적인" 을 그대로 뒀다 — 표제어 ambiguous 가 유의어로 쓰는데
+     원본의 '확실치 않은' 을 쓰면 ambiguous 자신의 뜻과 글자까지 같아진다. */
+  { word:"equivocal", pron:"이퀴버컬", pos:"adj", level:"C2", meanings:["애매한","이중적인"],
+    syn:["ambiguous","vague","open to doubt"], ant:["explicit"],
+    ex:[{ s:"His {{}} reply satisfied neither side.", f:"equivocal", ko:"그의 애매한 답변은 어느 쪽도 만족시키지 못했다." }] },
+
+  { word:"era", pron:"이러", pos:"n", level:"B2", meanings:["시대","연대"],
+    syn:["age","period","epoch"],
+    ex:[{ s:"Steam engines defined an entire {{}} of industry.", f:"era", ko:"증기 기관은 산업의 한 시대 전체를 규정했다." }] },
+
+  /* 3차에서 eliminate 의 유의어로 넣은 GLOSS 항목이 표제어로 올라온다 — 그 항목을
+     지웠다. eliminate 쪽 뜻이 변하지 않게 '근절하다' 를 앞에 그대로 뒀다. */
+  { word:"eradicate", pron:"이래더케이트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
+    syn:["root out","stamp out","wipe out"],
+    ex:[{ s:"Vaccines helped {{}} the disease within a decade.", f:"eradicate", ko:"백신은 10년 안에 그 병을 근절하는 데 도움이 되었다." }] },
+
+  /* 원본은 '세우다, 짓다, 만들다; 똑바로 선, 직립의' 로 동사와 형용사가 섞여 있다 —
+     동사로 정했다. 표제어 construct 가 이 낱말을 유의어로 쓰므로 동사여야 한다. */
+  { word:"erect", pron:"이렉트", pos:"v", level:"B2", meanings:["세우다","짓다"],
+    syn:["build","put up","construct"], ant:["demolish"],
+    ex:[{ s:"Workers will {{}} the frame in a single day.", f:"erect", ko:"작업자들은 하루 만에 그 골조를 세울 것이다." }] },
+
+  /* 원본의 '밤에 일어나는; 야행성의' 는 nocturnal 의 뜻이 섞인 것이다 — 헤더에
+     적어 둔 대로 바로잡았다. 표제어 erosion 과 짝이 맞는 뜻이다. */
+  { word:"erode", pron:"이로드", pos:"v", level:"C1", meanings:["침식하다","부식시키다"],
+    syn:["wear away","eat away","corrode"],
+    ex:[{ s:"Winter rain will {{}} the bare hillside.", f:"erode", ko:"겨울비가 헐벗은 산비탈을 침식할 것이다." }] },
+
+  { word:"erosion", pron:"이로전", pos:"n", level:"B2", meanings:["침식","부식"],
+    syn:["corrosion","wearing away","gradual destruction"],
+    ex:[{ s:"Tree roots slow the {{}} of the riverbank.", f:"erosion", ko:"나무 뿌리는 강둑의 침식을 늦춘다." }] },
+
+  { word:"errand", pron:"에런드", pos:"n", level:"B2", meanings:["심부름","용건"],
+    syn:["chore","task","quick trip"],
+    ex:[{ s:"She stepped out to run a quick {{}}.", f:"errand", ko:"그녀는 잠깐 심부름을 하러 나갔다." }] },
+
+  { word:"erratic", pron:"이래틱", pos:"adj", level:"C1", meanings:["예측할 수 없는","일정하지 않은"],
+    syn:["unpredictable","inconsistent","irregular"], ant:["consistent"],
+    ex:[{ s:"The old clock keeps {{}} time.", f:"erratic", ko:"그 낡은 시계는 일정하지 않게 시간을 가리킨다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -959,7 +1131,6 @@ Object.assign(window.GLOSS, {
   "draw out":"끌어내다, 이끌어 내다",
   "egg-shaped":"달걀 모양의",
   "entitled":"권리가 있는",
-  "eradicate":"근절하다, 뿌리 뽑다",
   "established":"확립된, 기성의",
   "exemplify":"전형적으로 보여주다",
   "expressiveness":"표현력이 풍부함",
@@ -1100,5 +1271,37 @@ Object.assign(window.GLOSS, {
   "trap":"가두다, 덫에 빠뜨리다",
   "undivided":"나뉘지 않은, 온전한",
   "vast":"광대한, 막대한",
-  "zeal":"열의, 열성"
+  "zeal":"열의, 열성",
+
+  /* ── 7차: envision ~ erratic (30개) ───────────────── */
+  "afterword":"후기, 발문",
+  "age":"시대, 시기",
+  "closing section":"맺는 부분",
+  "contagion":"전염, 감염",
+  "corrode":"부식시키다",
+  "eat away":"조금씩 먹어 들어가다",
+  "even":"고른, 대등한",
+  "evenness":"고름, 균등함",
+  "final chapter":"마지막 장",
+  "gear":"장구, 용품",
+  "gradual destruction":"서서히 무너짐",
+  "inconsistent":"일관성이 없는",
+  "milestone":"중대한 사건, 분기점",
+  "new age":"새 시대",
+  "open to doubt":"의심의 여지가 있는",
+  "picture in one's mind":"마음속에 그려 보다",
+  "quick trip":"잠깐 다녀오는 길",
+  "root out":"뿌리부터 제거하다",
+  "stamp out":"근절해 버리다",
+  "state of balance":"균형 잡힌 상태",
+  "tantamount":"~와 다름없는",
+  "the same":"마찬가지인",
+  "tools":"도구, 공구",
+  "turning point":"전환점",
+  "unequal":"동등하지 않은",
+  "unpredictable":"종잡을 수 없는",
+  "visualize":"시각적으로 떠올리다",
+  "wear away":"닳아 없어지게 하다",
+  "wearing away":"닳아 없어짐",
+  "widespread disease":"널리 퍼진 질병"
 });
