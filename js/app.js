@@ -683,6 +683,9 @@
       box.appendChild(el('div', 'fb-note', '정답: ' + q.answer));
     }
     if (q.note) box.appendChild(el('div', 'fb-note', q.note));
+    /* 어법 한 줄 — 모드를 가리지 않는다. 예전에는 '연어 고르기' 모드를
+       일부러 골라야 보였고, D·E·F 세트에는 그 모드 자체가 출제 불가였다. */
+    if (q.usage) box.appendChild(el('div', 'fb-usage', q.usage));
 
     // 한글 발음 표시
     var wordObj = WORD_INDEX[q.word];

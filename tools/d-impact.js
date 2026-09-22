@@ -61,21 +61,21 @@ function poolSize(answer) {
 /* ── ① 모드별 출제 가능 단어 수 ─────────────────────
    오답 후보가 3개 미만이면 그 단어는 그 모드에서 조용히 빠진다. */
 console.log('── 모드별 출제 가능 단어 수 ────────────────');
-console.log('세트  단어   4지선다  아닌것  문장빈칸  연어   후보3미달');
+console.log('세트  단어   4지선다  아닌것  문장빈칸  어법   후보3미달');
 SETS.forEach(function (s) {
   var v = s[1]; if (!v.length) return;
-  var mcq = 0, not = 0, cloze = 0, col = 0, thin = 0;
+  var mcq = 0, not = 0, cloze = 0, gov = 0, thin = 0;
   v.forEach(function (w) {
     var p = poolSize(w);
     if (p < 3) thin++;
     if (p >= 3) mcq++;
     if (w.syn && w.syn.length >= 3) not++;
     if (w.ex && w.ex.length && p >= 3) cloze++;
-    if (w.col && w.col.length) col++;
+    if (w.gov) gov++;
   });
   console.log('  ' + s[0] + '  ' + String(v.length).padStart(4) + '   ' +
     String(mcq).padStart(6) + '  ' + String(not).padStart(5) + '  ' +
-    String(cloze).padStart(7) + '  ' + String(col).padStart(4) + '   ' +
+    String(cloze).padStart(7) + '  ' + String(gov).padStart(4) + '   ' +
     String(thin).padStart(6));
 });
 

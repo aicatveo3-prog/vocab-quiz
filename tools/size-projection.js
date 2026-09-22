@@ -82,7 +82,7 @@ console.log('');
 
 /* ── 필드별로 어디서 용량이 나오나 ──────────── */
 console.log('── 필드별 비중 (원본 기준) ────────────────');
-var fields = ['word', 'pron', 'pos', 'level', 'meanings', 'syn', 'ex', 'ant', 'col'];
+var fields = ['word', 'pron', 'pos', 'level', 'meanings', 'syn', 'ex', 'ant', 'gov'];
 var totalField = 0;
 var each = fields.map(function (f) {
   var b = WORDS.reduce(function (a, w) {

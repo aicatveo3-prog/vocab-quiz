@@ -44,7 +44,7 @@ window.VOCAB_B = [
   { word:"ban", pron:"밴", pos:"v", level:"B1", meanings:["금지하다","금지령"],
     syn:["prohibit","forbid","outlaw"], ant:["allow"],
     ex:[{ s:"The city council voted to {{}} plastic bags.", f:"ban", ko:"시의회는 비닐봉지를 금지하기로 표결했다." }],
-    col:[{ p:"ban him {{}} driving", a:"from", pool:"prep", note:"ban A from B : A가 B하는 것을 금지하다" }] },
+    gov:{ prep:["from","on"], pat:"ban him {{}} driving", usage:"ban A from B : A가 B하는 것을 금지하다" } },
 
   { word:"banish", pron:"배니쉬", pos:"v", level:"C1", meanings:["추방하다","내쫓다"],
     syn:["expel","exile","deport"], ant:["admit"],
@@ -85,7 +85,7 @@ window.VOCAB_B = [
   { word:"barge", pron:"바지", pos:"v", level:"C1", meanings:["난입하다","밀치고 가다"],
     syn:["intrude","shove","push"], ant:["retreat"],
     ex:[{ s:"He tried to {{}} past the guard at the gate.", f:"barge", ko:"그는 문에서 경비원을 밀치고 지나가려 했다." }],
-    col:[{ p:"barge {{}} the meeting", a:"into", pool:"prep", note:"barge into ~ : ~에 난입하다" }] },
+    gov:{ prep:["into","in"], pat:"barge {{}} the meeting", usage:"barge into ~ : ~에 난입하다" } },
 
   { word:"bark", pron:"바크", pos:"v", level:"B1", meanings:["짖다"],
     syn:["yelp","howl","yap"],
@@ -110,12 +110,12 @@ window.VOCAB_B = [
   { word:"barrier", pron:"배리어", pos:"n", level:"B2", meanings:["장벽","장애물"],
     syn:["obstacle","obstruction","blockade"],
     ex:[{ s:"Language can be a serious {{}} to friendship.", f:"barrier", ko:"언어는 우정에 심각한 장벽이 될 수 있다." }],
-    col:[{ p:"a barrier {{}} entry", a:"to", pool:"prep", note:"a barrier to ~ : ~에 대한 장벽" }] },
+    gov:{ prep:["to","against","between","of"], pat:"a barrier {{}} entry", usage:"a barrier to ~ : ~에 대한 장벽" } },
 
   { word:"barter", pron:"바터", pos:"v", level:"C1", meanings:["물물교환하다","교역하다"],
     syn:["exchange","trade","swap"],
     ex:[{ s:"The villagers {{}} grain for cloth and salt.", f:"bartered", ko:"마을 사람들은 곡물을 천과 소금으로 물물교환했다." }],
-    col:[{ p:"barter grain {{}} cloth", a:"for", pool:"prep", note:"barter A for B : A를 B와 물물교환하다" }] },
+    gov:{ prep:["for","with"], pat:"barter grain {{}} cloth", usage:"barter A for B : A를 B와 물물교환하다" } },
 
   { word:"basin", pron:"베이슨", pos:"n", level:"B2", meanings:["분지","대야"],
     syn:["bowl","hollow","valley"],
@@ -124,7 +124,7 @@ window.VOCAB_B = [
   { word:"battle", pron:"배틀", pos:"v", level:"B1", meanings:["싸우다","대결하다"],
     syn:["fight","combat","struggle"], ant:["surrender"],
     ex:[{ s:"Doctors {{}} for hours to save the patient.", f:"battled", ko:"의사들은 그 환자를 살리려고 몇 시간을 싸웠다." }],
-    col:[{ p:"battle {{}} cancer", a:"against", pool:"prep", note:"battle against ~ : ~와 싸우다" }] },
+    gov:{ prep:["against","with","for","over"], pat:"battle {{}} cancer", usage:"battle against ~ : ~와 싸우다" } },
 
   { word:"bay", pron:"베이", pos:"n", level:"B1", meanings:["만"],
     syn:["cove","inlet","gulf"],
@@ -312,7 +312,7 @@ window.VOCAB_B = [
   { word:"belong", pron:"빌롱", pos:"v", level:"B1", meanings:["속하다"],
     syn:["pertain","fit in","be part of"],
     ex:[{ s:"These files {{}} to the finance team.", f:"belong", ko:"이 파일들은 재무팀 소속이다." }],
-    col:[{ p:"belong {{}} a club", a:"to", pool:"prep", note:"belong to ~ : ~에 속하다" }] },
+    gov:{ prep:["to","in","with"], pat:"belong {{}} a club", usage:"belong to ~ : ~에 속하다" } },
 
   { word:"beloved", pron:"빌러브드", pos:"adj", level:"B2", meanings:["사랑 받는","인기 많은"],
     syn:["cherished","adored","dear"], ant:["hated"],
@@ -332,7 +332,7 @@ window.VOCAB_B = [
   { word:"beneficial", pron:"베니피셜", pos:"adj", level:"B2", meanings:["유익한","이로운"],
     syn:["advantageous","helpful","favorable"], ant:["harmful"],
     ex:[{ s:"Regular exercise is {{}} to your heart.", f:"beneficial", ko:"규칙적인 운동은 심장에 유익하다." }],
-    col:[{ p:"beneficial {{}} health", a:"to", pool:"prep", note:"beneficial to ~ : ~에 유익한" }] },
+    gov:{ prep:["to","for"], pat:"beneficial {{}} health", usage:"beneficial to ~ : ~에 유익한" } },
 
   { word:"beneficiary", pron:"베니피셔리", pos:"n", level:"C1", meanings:["수혜자"],
     syn:["recipient","heir","receiver"], ant:["donor"],
@@ -355,7 +355,7 @@ window.VOCAB_B = [
   { word:"bestow", pron:"비스토우", pos:"v", level:"C2", meanings:["수여하다","증여하다"],
     syn:["grant","confer","award"], ant:["withhold"],
     ex:[{ s:"The king chose to {{}} land on his loyal knights.", f:"bestow", ko:"왕은 충성스러운 기사들에게 땅을 수여하기로 했다." }],
-    col:[{ p:"bestow an honor {{}} him", a:"on", pool:"prep", note:"bestow A on B : B에게 A를 수여하다" }] },
+    gov:{ prep:["on","upon","to"], pat:"bestow an honor {{}} him", usage:"bestow A on B : B에게 A를 수여하다" } },
 
   { word:"bet", pron:"벳", pos:"v", level:"B1", meanings:["(내기를) 걸다","단언하다"],
     syn:["wager","gamble","stake"],
@@ -371,7 +371,7 @@ window.VOCAB_B = [
   { word:"beware", pron:"비웨어", pos:"v", level:"B2", meanings:["경계하다","주의하다"],
     syn:["watch out","be cautious","look out"], ant:["ignore"],
     ex:[{ s:"Travelers should {{}} of pickpockets in this area.", f:"beware", ko:"여행자들은 이 지역에서 소매치기를 경계해야 한다." }],
-    col:[{ p:"beware {{}} pickpockets", a:"of", pool:"prep", note:"beware of ~ : ~을 경계하다" }] },
+    gov:{ prep:["of"], pat:"beware {{}} pickpockets", usage:"beware of ~ : ~을 경계하다" } },
 
   { word:"bewilder", pron:"비윌더", pos:"v", level:"C1", meanings:["혼란스럽게 만들다","당황시키다"],
     syn:["confuse","perplex","baffle"], ant:["clarify"],
@@ -566,7 +566,7 @@ window.VOCAB_B = [
   { word:"boast", pron:"보우스트", pos:"v", level:"B2", meanings:["뽐내다","자랑하다"],
     syn:["brag","show off","crow"], ant:["downplay"],
     ex:[{ s:"He likes to {{}} about his new car.", f:"boast", ko:"그는 새 차를 자랑하기를 좋아한다." }],
-    col:[{ p:"boast {{}} his wealth", a:"about", pool:"prep", note:"boast about ~ : ~을 자랑하다" }] },
+    gov:{ prep:["about","of"], pat:"boast {{}} his wealth", usage:"boast about ~ : ~을 자랑하다" } },
 
   { word:"boastful", pron:"보우스트풀", pos:"adj", level:"C1", meanings:["자랑하는","허풍 떠는"],
     syn:["bragging","vain","conceited"], ant:["modest"],
@@ -583,7 +583,7 @@ window.VOCAB_B = [
   { word:"bombard", pron:"봄바드", pos:"v", level:"C1", meanings:["폭격하다","퍼붓다"],
     syn:["shell","pelt","barrage"],
     ex:[{ s:"Reporters {{}} the minister with questions.", f:"bombarded", ko:"기자들은 장관에게 질문을 퍼부었다." }],
-    col:[{ p:"bombard him {{}} questions", a:"with", pool:"prep", note:"bombard A with B : A에게 B를 퍼붓다" }] },
+    gov:{ prep:["with"], pat:"bombard him {{}} questions", usage:"bombard A with B : A에게 B를 퍼붓다" } },
 
   { word:"bond", pron:"본드", pos:"n", level:"B2", meanings:["유대감","결합"],
     syn:["tie","link","attachment"],
@@ -668,7 +668,7 @@ window.VOCAB_B = [
   { word:"breach", pron:"브리치", pos:"n", level:"C1", meanings:["위반","파기"],
     syn:["violation","infringement","transgression"], ant:["compliance"],
     ex:[{ s:"Sharing the file was a clear {{}} of contract.", f:"breach", ko:"그 파일을 공유한 것은 명백한 계약 위반이었다." }],
-    col:[{ p:"a breach {{}} contract", a:"of", pool:"prep", note:"a breach of ~ : ~의 위반" }] },
+    gov:{ prep:["of","in"], pat:"a breach {{}} contract", usage:"a breach of ~ : ~의 위반" } },
 
   { word:"breadth", pron:"브레드스", pos:"n", level:"C1", meanings:["폭","넓음"],
     syn:["width","span","extent"], ant:["narrowness"],
@@ -779,7 +779,7 @@ window.VOCAB_B = [
   { word:"brood", pron:"브루드", pos:"v", level:"C1", meanings:["곰곰이 생각하다"],
     syn:["dwell","mope","ruminate"],
     ex:[{ s:"Don't {{}} over mistakes you cannot undo.", f:"brood", ko:"돌이킬 수 없는 실수를 곰곰이 생각하지 마라." }],
-    col:[{ p:"brood {{}} the past", a:"over", pool:"prep", note:"brood over ~ : ~을 곰곰이 생각하다" }] },
+    gov:{ prep:["over","about","on"], pat:"brood {{}} the past", usage:"brood over ~ : ~을 곰곰이 생각하다" } },
 
   { word:"brook", pron:"브룩", pos:"n", level:"C1", meanings:["시내","개천"],
     syn:["stream","creek","rivulet"],
@@ -864,7 +864,7 @@ window.VOCAB_B = [
   { word:"burden", pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
     syn:["load","strain","encumbrance"], ant:["relief"],
     ex:[{ s:"Caring for both parents became a heavy {{}}.", f:"burden", ko:"양쪽 부모를 돌보는 일은 무거운 부담이 되었다." }],
-    col:[{ p:"a burden {{}} society", a:"on", pool:"prep", note:"a burden on ~ : ~에 대한 부담" }] },
+    gov:{ prep:["on","of","to","for"], pat:"a burden {{}} society", usage:"a burden on ~ : ~에 대한 부담" } },
 
   { word:"bureau", pron:"뷰로우", pos:"n", level:"C1", meanings:["(관청의) 국","사무국"],
     syn:["agency","department","office"],

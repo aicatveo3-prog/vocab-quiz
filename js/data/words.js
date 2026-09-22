@@ -10,8 +10,26 @@
  *   ant      : 반의어              → 모드 ①의 오답 품질 향상, ④의 오답으로 사용
  *   ex       : 예문 배열           → 모드 ⑬(문장 빈칸) 해금
  *              { s: "{{}} 자리가 빈칸", f: 문장에 들어갈 실제 어형, ko: 번역 }
- *   col      : 연어 배열           → 모드 ⑯(연어 고르기) 해금
- *              { p: "{{}} 자리가 빈칸", a: 정답, pool: "verb"|"prep"|"auto", note: 해설 }
+ *   gov      : 어법(지배) 정보     → 모드 ④에 '전치사 구별' 문항을 더하고,
+ *                                   전 모드 피드백에 어법 한 줄을 띄운다
+ *              { prep: 받을 수 있는 전치사 전부, pat: "{{}} 자리가 빈칸", usage: 해설 }
+ *
+ * ── gov 를 쓸 때 반드시 지킬 것 ──────────────────
+ *
+ * prep 에는 "이 단어가 표준 영어에서 받을 수 있는 전치사를 빠짐없이" 적는다.
+ * 첫 번째가 대표(짝 맞추기 카드 라벨·예문 강조에 쓰인다).
+ *
+ * 왜 전부 적어야 하는가 — '전치사 구별' 문항의 정답은 "이 단어는 그 전치사를
+ * 쓰지 않는다"는 부정 명제다. 하나라도 빠지면 문제 자체가 틀린다.
+ * compare 를 prep:["with"] 로만 적으면 "to 를 쓰지 않는 것은? → compare" 라는
+ * 문항이 생기는데, compare to 는 완벽한 영어다. 그래서 ["with","to"] 다.
+ * 넉넉히 적으면 문항이 줄어들 뿐이고, 부족하게 적으면 틀린 문항이 나온다.
+ *
+ * pat 은 뒤에 명사구가 오는 형태로 쓴다. 단어만 보여주면 to-부정사로 읽혀
+ * ("curious to know" 는 맞는 영어다) 문항이 무너진다.
+ *
+ * 전치사 지배가 아닌 어법(win acclaim 처럼 동사+명사 연어)은 prep·pat 을 비우고
+ * usage 만 채운다. 그러면 전치사 문항에서는 빠지고 해설만 노출된다.
  *
  * 구·표현(pos:"phr")은 문장 빈칸에 넣기 어려워 ex를 두지 않습니다.
  * 같은 품사끼리만 오답으로 뽑히므로 표현은 표현끼리 경쟁합니다.
@@ -75,7 +93,7 @@ window.VOCAB = [
   { word:"absent", pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
     syn:["away","missing","gone"], ant:["present"],
     ex:[{ s:"Three students were {{}} from class today.", f:"absent", ko:"오늘 세 명의 학생이 수업에 결석했다." }],
-    col:[{ p:"absent {{}} class", a:"from", pool:"prep", note:"absent from ~ : ~에 결석한" }] },
+    gov:{ prep:["from"], pat:"absent {{}} class", usage:"absent from ~ : ~에 결석한" } },
 
   { word:"absentee", pron:"앱센티", pos:"n", level:"C1", meanings:["결석자","부재자"],
     syn:["truant","no-show","nonattendee"], ant:["attendee"],
@@ -100,7 +118,7 @@ window.VOCAB = [
   { word:"absorbed", pron:"업소브드", pos:"adj", level:"B2", meanings:["열중한","몰두한"],
     syn:["engrossed","immersed","preoccupied"], ant:["distracted"],
     ex:[{ s:"She was so {{}} in her book that she missed her stop.", f:"absorbed", ko:"그녀는 책에 너무 몰두해서 내릴 정류장을 놓쳤다." }],
-    col:[{ p:"absorbed {{}} her work", a:"in", pool:"prep", note:"be absorbed in ~ : ~에 몰두하다" }] },
+    gov:{ prep:["in","by","into"], pat:"absorbed {{}} her work", usage:"be absorbed in ~ : ~에 몰두하다" } },
 
   { word:"abstain from ~ing", pron:"업스테인 프럼", pos:"phr", level:"C1", meanings:["~을 삼가다","~을 그만두다"],
     syn:["refrain from","avoid","give up"], ant:["indulge in"] },
@@ -116,7 +134,7 @@ window.VOCAB = [
   { word:"abundance", pron:"어번던스", pos:"n", level:"B2", meanings:["풍부","풍요"],
     syn:["plenty","profusion","surplus"], ant:["scarcity"],
     ex:[{ s:"The valley is known for an {{}} of wildflowers.", f:"abundance", ko:"그 계곡은 야생화가 풍부한 것으로 유명하다." }],
-    col:[{ p:"an abundance {{}} evidence", a:"of", pool:"prep", note:"an abundance of ~ : 풍부한 ~" }] },
+    gov:{ prep:["of"], pat:"an abundance {{}} evidence", usage:"an abundance of ~ : 풍부한 ~" } },
 
   { word:"abundant", pron:"어번던트", pos:"adj", level:"B2", meanings:["풍부한","많은"],
     syn:["plentiful","ample","copious"], ant:["scarce"],
@@ -128,7 +146,7 @@ window.VOCAB = [
 
   { word:"accede", pron:"억시드", pos:"v", level:"C2", meanings:["동의하다","응하다"],
     syn:["consent","assent","agree"], ant:["refuse"],
-    col:[{ p:"accede {{}} their demands", a:"to", pool:"prep", note:"accede to ~ : ~에 응하다" }] },
+    gov:{ prep:["to"], pat:"accede {{}} their demands", usage:"accede to ~ : ~에 응하다" } },
 
   { word:"accelerate", pron:"악셀러레이트", pos:"v", level:"B2", meanings:["가속화하다","빨라지다"],
     syn:["speed up","hasten","quicken"], ant:["decelerate"],
@@ -149,7 +167,7 @@ window.VOCAB = [
   { word:"access", pron:"액세스", pos:"n", level:"B1", meanings:["접근","이용"],
     syn:["entry","admission","entrance"], ant:["exclusion"],
     ex:[{ s:"Students have free {{}} to the online library.", f:"access", ko:"학생들은 온라인 도서관을 무료로 이용할 수 있다." }],
-    col:[{ p:"access {{}} clean water", a:"to", pool:"prep", note:"access to ~ : ~에 대한 접근" }] },
+    gov:{ prep:["to","for"], pat:"access {{}} clean water", usage:"access to ~ : ~에 대한 접근" } },
 
   { word:"accessible", pron:"억세서블", pos:"adj", level:"B2", meanings:["접근할 수 있는","이용 가능한"],
     syn:["reachable","available","obtainable"], ant:["inaccessible"],
@@ -163,7 +181,7 @@ window.VOCAB = [
   { word:"acclaim", pron:"어클레임", pos:"n", level:"C1", meanings:["환호","찬사"],
     syn:["praise","applause","commendation"], ant:["criticism"],
     ex:[{ s:"Her first novel won critical {{}}.", f:"acclaim", ko:"그녀의 첫 소설은 비평계의 찬사를 받았다." }],
-    col:[{ p:"{{}} critical acclaim", a:"win", opts:["win","beat","score","reach"], note:"win acclaim : 찬사를 받다" }] },
+    gov:{ usage:"win acclaim : 찬사를 받다" } },
 
   { word:"acclimate", pron:"애클러메이트", pos:"v", level:"C1", meanings:["적응하다","순응시키다"],
     syn:["adapt","adjust","acclimatize"], ant:["resist"],
@@ -325,12 +343,12 @@ window.VOCAB = [
 
   { word:"adhere", pron:"애드히어", pos:"v", level:"C1", meanings:["고수하다","들러붙다"],
     syn:["comply","conform","abide"], ant:["deviate"],
-    col:[{ p:"adhere {{}} the rules", a:"to", pool:"prep", note:"adhere to ~ : ~을 준수하다" }] },
+    gov:{ prep:["to"], pat:"adhere {{}} the rules", usage:"adhere to ~ : ~을 준수하다" } },
 
   { word:"adjacent", pron:"어제이슨트", pos:"adj", level:"C1", meanings:["인접한","가까운"],
     syn:["neighboring","adjoining","nearby"], ant:["distant"],
     ex:[{ s:"Our office is {{}} to the train station.", f:"adjacent", ko:"우리 사무실은 기차역에 인접해 있다." }],
-    col:[{ p:"adjacent {{}} the park", a:"to", pool:"prep", note:"adjacent to ~ : ~에 인접한" }] },
+    gov:{ prep:["to"], pat:"adjacent {{}} the park", usage:"adjacent to ~ : ~에 인접한" } },
 
   { word:"adjoin", pron:"어조인", pos:"v", level:"C1", meanings:["붙어 있다","인접하다"],
     syn:["border","abut","touch"], ant:["separate"],
@@ -420,7 +438,7 @@ window.VOCAB = [
   { word:"adverse", pron:"애드버스", pos:"adj", level:"B2", meanings:["불리한","부정적인"],
     syn:["unfavorable","detrimental","harmful"], ant:["favorable"],
     ex:[{ s:"The drug was withdrawn after {{}} effects appeared.", f:"adverse", ko:"부작용이 나타난 후 그 약은 회수되었다." }],
-    col:[{ p:"adverse {{}} health", a:"to", pool:"prep", note:"adverse to ~ : ~에 불리한" }] },
+    gov:{ prep:["to"], pat:"adverse {{}} health", usage:"adverse to ~ : ~에 불리한" } },
 
   { word:"adversity", pron:"애드버시티", pos:"n", level:"C1", meanings:["역경","불운"],
     syn:["hardship","misfortune","trouble"], ant:["prosperity"],
@@ -482,7 +500,7 @@ window.VOCAB = [
   { word:"affinity", pron:"어피니티", pos:"n", level:"C1", meanings:["친밀감","관련성"],
     syn:["rapport","kinship","similarity"], ant:["antipathy"],
     ex:[{ s:"He felt an instant {{}} with the coastal village.", f:"affinity", ko:"그는 그 해안 마을에 즉각적인 친밀감을 느꼈다." }],
-    col:[{ p:"an affinity {{}} old maps", a:"for", pool:"prep", note:"an affinity for ~ : ~에 대한 애착" }] },
+    gov:{ prep:["for","with","between","to"], pat:"an affinity {{}} old maps", usage:"an affinity for ~ : ~에 대한 애착" } },
 
   { word:"affirmative", pron:"어퍼머티브", pos:"adj", level:"C1", meanings:["긍정적인","동의하는"],
     syn:["positive","approving","assenting"], ant:["negative"],
@@ -638,7 +656,7 @@ window.VOCAB = [
   { word:"align", pron:"얼라인", pos:"v", level:"C1", meanings:["일치시키다","가지런히 하다"],
     syn:["line up","coordinate","match"], ant:["misalign"],
     ex:[{ s:"We must {{}} the budget with our real goals.", f:"align", ko:"우리는 예산을 실제 목표와 일치시켜야 한다." }],
-    col:[{ p:"align {{}} our values", a:"with", pool:"prep", note:"align with ~ : ~와 일치시키다" }] },
+    gov:{ prep:["with","to"], pat:"align {{}} our values", usage:"align with ~ : ~와 일치시키다" } },
 
   { word:"all at once", pron:"올 앳 원스", pos:"phr", level:"B1", meanings:["갑자기","한꺼번에"],
     syn:["suddenly","abruptly","all of a sudden"] },
@@ -955,7 +973,7 @@ window.VOCAB = [
   { word:"apologize", pron:"어팔러자이즈", pos:"v", level:"B1", meanings:["사과하다"],
     syn:["say sorry","express regret","atone"],
     ex:[{ s:"He refused to {{}} for the remark.", f:"apologize", ko:"그는 그 발언에 대해 사과하기를 거부했다." }],
-    col:[{ p:"apologize {{}} the delay", a:"for", pool:"prep", note:"apologize for ~ : ~에 대해 사과하다" }] },
+    gov:{ prep:["for","to"], pat:"apologize {{}} the delay", usage:"apologize for ~ : ~에 대해 사과하다" } },
 
   { word:"apparatus", pron:"애퍼래터스", pos:"n", level:"C1", meanings:["장치","기구"],
     syn:["equipment","device","machinery"],
@@ -968,7 +986,7 @@ window.VOCAB = [
   { word:"appeal", pron:"어필", pos:"v", level:"B2", meanings:["호소하다","관심을 끌다"],
     syn:["plead","attract","entreat"],
     ex:[{ s:"The design should {{}} to younger buyers.", f:"appeal", ko:"그 디자인은 젊은 구매자의 관심을 끌어야 한다." }],
-    col:[{ p:"appeal {{}} younger buyers", a:"to", pool:"prep", note:"appeal to ~ : ~의 관심을 끌다" }] },
+    gov:{ prep:["to","for","against"], pat:"appeal {{}} younger buyers", usage:"appeal to ~ : ~의 관심을 끌다" } },
 
   { word:"appearance", pron:"어피어런스", pos:"n", level:"B1", meanings:["외모","출현"],
     syn:["look","aspect","arrival"], ant:["disappearance"],
@@ -1028,7 +1046,7 @@ window.VOCAB = [
   { word:"apprehensive", pron:"애프리헨시브", pos:"adj", level:"C1", meanings:["걱정하는","염려하는"],
     syn:["anxious","uneasy","worried"], ant:["confident"],
     ex:[{ s:"Staff felt {{}} about the coming merger.", f:"apprehensive", ko:"직원들은 다가오는 합병에 대해 걱정했다." }],
-    col:[{ p:"apprehensive {{}} the outcome", a:"about", pool:"prep", note:"apprehensive about ~ : ~을 걱정하는" }] },
+    gov:{ prep:["about","of"], pat:"apprehensive {{}} the outcome", usage:"apprehensive about ~ : ~을 걱정하는" } },
 
   { word:"apprentice", pron:"어프렌티스", pos:"n", level:"C1", meanings:["수습생","도제"],
     syn:["trainee","learner","novice"], ant:["master"],
@@ -1069,7 +1087,7 @@ window.VOCAB = [
   { word:"aptitude", pron:"앱티튜드", pos:"n", level:"C1", meanings:["적성","소질"],
     syn:["talent","flair","knack"], ant:["inability"],
     ex:[{ s:"She showed an early {{}} for numbers.", f:"aptitude", ko:"그녀는 일찍부터 숫자에 소질을 보였다." }],
-    col:[{ p:"an aptitude {{}} languages", a:"for", pool:"prep", note:"an aptitude for ~ : ~에 대한 소질" }] },
+    gov:{ prep:["for"], pat:"an aptitude {{}} languages", usage:"an aptitude for ~ : ~에 대한 소질" } },
 
   { word:"aquatic", pron:"어쿼틱", pos:"adj", level:"C1", meanings:["수생의","물속의"],
     syn:["marine","water-dwelling","underwater"], ant:["terrestrial"],
@@ -1187,7 +1205,7 @@ window.VOCAB = [
 
   { word:"ascribe", pron:"어스크라이브", pos:"v", level:"C2", meanings:["~의 탓으로 돌리다","~에 귀속시키다"],
     syn:["attribute","credit","assign"],
-    col:[{ p:"ascribe the delay {{}} bad weather", a:"to", pool:"prep", note:"ascribe A to B : A를 B의 탓으로 돌리다" }] },
+    gov:{ prep:["to"], pat:"ascribe the delay {{}} bad weather", usage:"ascribe A to B : A를 B의 탓으로 돌리다" } },
 
   { word:"ashamed", pron:"어셰임드", pos:"adj", level:"B1", meanings:["부끄러운","창피한"],
     syn:["embarrassed","guilty","mortified"], ant:["proud"],
@@ -1199,7 +1217,7 @@ window.VOCAB = [
 
   { word:"aspire", pron:"어스파이어", pos:"v", level:"C1", meanings:["열망하다","포부를 갖다"],
     syn:["yearn","strive","seek"],
-    col:[{ p:"aspire {{}} a leadership role", a:"to", pool:"prep", note:"aspire to ~ : ~을 열망하다" }] },
+    gov:{ prep:["to"], pat:"aspire {{}} a leadership role", usage:"aspire to ~ : ~을 열망하다" } },
 
   { word:"aspiring", pron:"어스파이어링", pos:"adj", level:"C1", meanings:["장차 ~가 되려는","포부 있는"],
     syn:["would-be","ambitious","budding"],
@@ -1272,7 +1290,7 @@ window.VOCAB = [
   { word:"associate", pron:"어소시에이트", pos:"v", level:"B2", meanings:["연관 짓다","결부하다"],
     syn:["link","connect","relate"], ant:["dissociate"],
     ex:[{ s:"People often {{}} the color red with danger.", f:"associate", ko:"사람들은 흔히 빨간색을 위험과 연관 짓는다." }],
-    col:[{ p:"associate red {{}} danger", a:"with", pool:"prep", note:"associate A with B : A를 B와 연관 짓다" }] },
+    gov:{ prep:["with"], pat:"associate red {{}} danger", usage:"associate A with B : A를 B와 연관 짓다" } },
 
   { word:"association", pron:"어소시에이션", pos:"n", level:"B2", meanings:["협회","연관"],
     syn:["organization","connection","alliance"],
@@ -1595,11 +1613,7 @@ window.VOCAB = [
     ex:[{ s:"There was an {{}} silence after his joke.", f:"awkward", ko:"그의 농담 뒤에 어색한 침묵이 흘렀다." }] }
 ];
 
-/* 연어 모드에서 오답으로 사용할 고정 풀 */
-window.COL_POOLS = {
-  verb: ["make","do","take","have","give","pay","reach","meet","draw","hold","bring","put","win","keep"],
-  prep: ["on","in","at","to","for","with","of","from","by","about","into","over","against","under"]
-};
+
 
 
 

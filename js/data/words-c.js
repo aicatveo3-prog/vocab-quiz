@@ -80,12 +80,12 @@ window.VOCAB_C = [
   { word:"capable", pron:"케이퍼블", pos:"adj", level:"B1", meanings:["~을 할 수 있는","유능한"],
     syn:["able","competent","skilled"], ant:["incapable"],
     ex:[{ s:"She is {{}} of solving much harder problems.", f:"capable", ko:"그녀는 훨씬 더 어려운 문제도 풀 수 있다." }],
-    col:[{ p:"capable {{}} solving it alone", a:"of", pool:"prep", note:"be capable of + -ing : ~할 수 있다" }] },
+    gov:{ prep:["of"], pat:"capable {{}} solving it alone", usage:"be capable of + -ing : ~할 수 있다" } },
 
   { word:"capacity", pron:"커패시티", pos:"n", level:"B2", meanings:["수용력","용량"],
     syn:["volume","room","size"], ant:["shortage"],
     ex:[{ s:"The hall was filled to {{}} an hour before the show.", f:"capacity", ko:"공연 한 시간 전에 그 홀은 정원까지 가득 찼다." }],
-    col:[{ p:"a great capacity {{}} change", a:"for", pool:"prep", note:"capacity for : ~에 대한 수용력·능력" }] },
+    gov:{ prep:["for","to","of"], pat:"a great capacity {{}} change", usage:"capacity for ~ : ~에 대한 수용력·능력" } },
 
   { word:"capital", pron:"캐피털", pos:"n", level:"B1", meanings:["자본","수도"],
     syn:["funds","assets","wealth"],
@@ -222,12 +222,12 @@ window.VOCAB_C = [
   { word:"cause", pron:"코즈", pos:"n", level:"B1", meanings:["원인","대의"],
     syn:["reason","origin","source"], ant:["result"],
     ex:[{ s:"Investigators never found the {{}} of the fire.", f:"cause", ko:"조사관들은 화재의 원인을 끝내 찾지 못했다." }],
-    col:[{ p:"the cause {{}} the accident", a:"of", pool:"prep", note:"the cause of : ~의 원인" }] },
+    gov:{ prep:["of","for"], pat:"the cause {{}} the accident", usage:"the cause of ~ : ~의 원인" } },
 
   { word:"cautious", pron:"코셔스", pos:"adj", level:"B2", meanings:["조심스러운","신중한"],
     syn:["careful","wary","prudent"], ant:["reckless"],
     ex:[{ s:"Be {{}} about promising what you cannot deliver.", f:"cautious", ko:"지킬 수 없는 것을 약속하는 데는 조심해야 한다." }],
-    col:[{ p:"cautious {{}} making promises", a:"about", pool:"prep", note:"be cautious about : ~에 조심하다" }] },
+    gov:{ prep:["about","of","in"], pat:"cautious {{}} making promises", usage:"be cautious about ~ : ~에 조심하다" } },
 
   { word:"cave in", pron:"케이브 인", pos:"phr", level:"C1", meanings:["굴복하다","내려앉다"],
     syn:["yield","submit","collapse"], ant:["resist"] },
@@ -289,7 +289,7 @@ window.VOCAB_C = [
   { word:"central", pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
     syn:["main","chief","core"], ant:["peripheral"],
     ex:[{ s:"Trust is {{}} to any lasting friendship.", f:"central", ko:"신뢰는 오래가는 우정의 핵심이다." }],
-    col:[{ p:"central {{}} the whole plan", a:"to", pool:"prep", note:"be central to : ~에 핵심적이다" }] },
+    gov:{ prep:["to"], pat:"central {{}} the whole plan", usage:"be central to ~ : ~에 핵심적이다" } },
 
   { word:"centralize", pron:"센트럴라이즈", pos:"v", level:"C1", meanings:["중앙집권화하다","한곳에 모으다"],
     syn:["concentrate","consolidate","unify"], ant:["disperse"],
@@ -310,7 +310,7 @@ window.VOCAB_C = [
   { word:"certain", pron:"서튼", pos:"adj", level:"B1", meanings:["확실한","특정한"],
     syn:["sure","definite","positive"], ant:["doubtful"],
     ex:[{ s:"Nothing is {{}} until the contract is signed.", f:"certain", ko:"계약서에 서명하기 전까지는 아무것도 확실하지 않다." }],
-    col:[{ p:"certain {{}} the outcome", a:"of", pool:"prep", note:"be certain of : ~을 확신하다" }] },
+    gov:{ prep:["of","about"], pat:"certain {{}} the outcome", usage:"be certain of ~ : ~을 확신하다" } },
 
   { word:"certainty", pron:"서튼티", pos:"n", level:"B2", meanings:["확실성","확신"],
     syn:["assurance","conviction","surety"], ant:["doubt"],
@@ -368,7 +368,7 @@ window.VOCAB_C = [
   { word:"charge", pron:"차지", pos:"v", level:"B1", meanings:["청구하다","충전하다"],
     syn:["bill","demand","levy"], ant:["refund"],
     ex:[{ s:"The garage did not {{}} us for the inspection.", f:"charge", ko:"그 정비소는 점검 비용을 우리에게 청구하지 않았다." }],
-    col:[{ p:"charge you {{}} the repair", a:"for", pool:"prep", note:"charge A for B : A에게 B의 값을 청구하다" }] },
+    gov:{ prep:["for","with","to"], pat:"charge you {{}} the repair", usage:"charge A for B : A에게 B의 값을 청구하다" } },
 
   { word:"charity", pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
     syn:["philanthropy","generosity","aid"], ant:["greed"],
@@ -532,7 +532,7 @@ window.VOCAB_C = [
   { word:"claim", pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
     syn:["assert","maintain","demand"], ant:["deny"],
     ex:[{ s:"Two groups {{}} responsibility for the fire.", f:"claimed", ko:"두 단체가 그 화재에 대한 책임을 주장했다." }],
-    col:[{ p:"claim responsibility {{}} the attack", a:"for", pool:"prep", note:"claim responsibility for : ~에 대한 책임을 주장하다" }] },
+    gov:{ prep:["for","to","against"], pat:"claim responsibility {{}} the attack", usage:"claim responsibility for ~ : ~에 대한 책임을 주장하다" } },
 
   { word:"clan", pron:"클랜", pos:"n", level:"C1", meanings:["씨족","부족"],
     syn:["tribe","family","kin"],
@@ -654,7 +654,7 @@ window.VOCAB_C = [
   { word:"coincide", pron:"코인사이드", pos:"v", level:"C1", meanings:["동시에 일어나다","일치하다"],
     syn:["overlap","concur","match"], ant:["differ"],
     ex:[{ s:"Her visit will {{}} with the harvest festival.", f:"coincide", ko:"그녀의 방문은 추수 축제와 겹칠 것이다." }],
-    col:[{ p:"coincide {{}} the holiday", a:"with", pool:"prep", note:"coincide with : ~와 겹치다·일치하다" }] },
+    gov:{ prep:["with"], pat:"coincide {{}} the holiday", usage:"coincide with ~ : ~와 겹치다·일치하다" } },
 
   { word:"coincidence", pron:"코인시던스", pos:"n", level:"B2", meanings:["우연의 일치"],
     syn:["chance","accident","fluke"], ant:["design"],
@@ -664,7 +664,7 @@ window.VOCAB_C = [
   { word:"collaborate", pron:"컬래버레이트", pos:"v", level:"B2", meanings:["공동으로 일하다","협동하다"],
     syn:["cooperate","partner","team up"], ant:["compete"],
     ex:[{ s:"Rival labs agreed to {{}} on one vaccine.", f:"collaborate", ko:"경쟁하던 연구소들이 하나의 백신을 두고 협력하기로 했다." }],
-    col:[{ p:"collaborate {{}} a rival firm", a:"with", pool:"prep", note:"collaborate with : ~와 협력하다" }] },
+    gov:{ prep:["with","on"], pat:"collaborate {{}} a rival firm", usage:"collaborate with ~ : ~와 협력하다" } },
 
   { word:"collapse", pron:"컬랩스", pos:"v", level:"B2", meanings:["무너지다","붕괴"],
     syn:["crumble","fall","cave in"], ant:["endure"],
@@ -797,7 +797,7 @@ window.VOCAB_C = [
   { word:"commitment", pron:"커미트먼트", pos:"n", level:"B2", meanings:["헌신","약속"],
     syn:["pledge","dedication","devotion"], ant:["indifference"],
     ex:[{ s:"Her {{}} to the team never wavered.", f:"commitment", ko:"팀에 대한 그녀의 헌신은 흔들린 적이 없다." }],
-    col:[{ p:"a commitment {{}} reform", a:"to", pool:"prep", note:"commitment to : ~에 대한 전념·약속" }] },
+    gov:{ prep:["to","of","for"], pat:"a commitment {{}} reform", usage:"commitment to ~ : ~에 대한 전념·약속" } },
 
   { word:"committee", pron:"커미티", pos:"n", level:"B1", meanings:["위원회","위원"],
     syn:["board","panel","council"],
@@ -865,7 +865,7 @@ window.VOCAB_C = [
   { word:"compare", pron:"컴페어", pos:"v", level:"B1", meanings:["비교하다"],
     syn:["contrast","weigh","liken"],
     ex:[{ s:"It is unfair to {{}} the two systems directly.", f:"compare", ko:"두 체계를 직접 비교하는 것은 부당하다." }],
-    col:[{ p:"compare this one {{}} that", a:"with", pool:"prep", note:"compare A with B : A를 B와 비교하다" }] },
+    gov:{ prep:["with","to"], pat:"compare this one {{}} that", usage:"compare A with/to B : A를 B와 비교하다" } },
 
   { word:"compartment", pron:"컴파트먼트", pos:"n", level:"B2", meanings:["칸막이 방","객실"],
     syn:["section","division","bay"],
@@ -886,7 +886,7 @@ window.VOCAB_C = [
   { word:"compatible", pron:"컴패터블", pos:"adj", level:"B2", meanings:["호환되는","양립될 수 있는"],
     syn:["suited","consistent","matching"], ant:["incompatible"],
     ex:[{ s:"The new part is not {{}} with older models.", f:"compatible", ko:"새 부품은 구형 모델과 호환되지 않는다." }],
-    col:[{ p:"compatible {{}} the old model", a:"with", pool:"prep", note:"be compatible with : ~와 호환되다" }] },
+    gov:{ prep:["with"], pat:"compatible {{}} the old model", usage:"be compatible with ~ : ~와 호환되다" } },
 
   { word:"compel", pron:"컴펠", pos:"v", level:"B2", meanings:["강요하다","~하게 만들다"],
     syn:["force","oblige","coerce"], ant:["allow"],
@@ -938,7 +938,7 @@ window.VOCAB_C = [
   { word:"complain", pron:"컴플레인", pos:"v", level:"B1", meanings:["불평하다","항의하다"],
     syn:["protest","grumble","object"], ant:["praise"],
     ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
-    col:[{ p:"complain {{}} the noise", a:"about", pool:"prep", note:"complain about : ~에 대해 불평하다" }] },
+    gov:{ prep:["about","of","to"], pat:"complain {{}} the noise", usage:"complain about ~ : ~에 대해 불평하다" } },
 
   { word:"complement", pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
     syn:["addition","supplement","counterpart"],
@@ -1060,7 +1060,7 @@ window.VOCAB_C = [
   { word:"concentrate", pron:"칸선트레이트", pos:"v", level:"B1", meanings:["집중하다","모으다"],
     syn:["focus","fixate","gather"], ant:["wander"],
     ex:[{ s:"It is hard to {{}} with the radio on.", f:"concentrate", ko:"라디오를 켜 두고는 집중하기 어렵다." }],
-    col:[{ p:"concentrate {{}} one task at a time", a:"on", pool:"prep", note:"concentrate on : ~에 집중하다" }] },
+    gov:{ prep:["on","in"], pat:"concentrate {{}} one task at a time", usage:"concentrate on ~ : ~에 집중하다" } },
 
   { word:"concentration", pron:"칸선트레이션", pos:"n", level:"B2", meanings:["집중","농도"],
     syn:["attention","focus","density"], ant:["distraction"],
@@ -1069,7 +1069,7 @@ window.VOCAB_C = [
   { word:"concern", pron:"컨선", pos:"n", level:"B1", meanings:["걱정","우려"],
     syn:["worry","anxiety","unease"], ant:["indifference"],
     ex:[{ s:"Rising costs are a real {{}} for farmers.", f:"concern", ko:"오르는 비용은 농민들에게 실질적인 걱정이다." }],
-    col:[{ p:"concerned {{}} safety", a:"about", pool:"prep", note:"be concerned about : ~를 걱정하다" }] },
+    gov:{ prep:["about","with","for","over","to"], pat:"concerned {{}} safety", usage:"be concerned about ~ : ~를 걱정하다" } },
 
   { word:"concert goer", pron:"칸서트 고어", pos:"n", level:"C1", meanings:["콘서트 관객"],
     syn:["listener","attendee","spectator"],
@@ -1108,7 +1108,7 @@ window.VOCAB_C = [
   { word:"conducive", pron:"컨두시브", pos:"adj", level:"C2", meanings:["~에 좋은","도움이 되는"],
     syn:["helpful","favorable","beneficial"], ant:["harmful"],
     ex:[{ s:"A cool dark room is {{}} to deep sleep.", f:"conducive", ko:"시원하고 어두운 방은 깊은 잠에 좋다." }],
-    col:[{ p:"conducive {{}} good sleep", a:"to", pool:"prep", note:"be conducive to : ~에 도움이 되다" }] },
+    gov:{ prep:["to"], pat:"conducive {{}} good sleep", usage:"be conducive to ~ : ~에 도움이 되다" } },
 
   { word:"conduct", pron:"칸덕트", pos:"n", level:"B2", meanings:["행동","수행"],
     syn:["behavior","manner","action"],
@@ -1166,7 +1166,7 @@ window.VOCAB_C = [
   { word:"conform", pron:"컨폼", pos:"v", level:"B2", meanings:["따르다","순응하다"],
     syn:["obey","adapt","fit in"], ant:["rebel"],
     ex:[{ s:"New buildings must {{}} to the fire code.", f:"conform", ko:"새 건물은 소방 규정을 따라야 한다." }],
-    col:[{ p:"conform {{}} the standard", a:"to", pool:"prep", note:"conform to : ~에 맞추다·순응하다" }] },
+    gov:{ prep:["to","with"], pat:"conform {{}} the standard", usage:"conform to ~ : ~에 맞추다·순응하다" } },
 
   { word:"confront", pron:"컨프런트", pos:"v", level:"B2", meanings:["직면하다","맞서다"],
     syn:["face","tackle","challenge"], ant:["evade"],
@@ -1232,7 +1232,7 @@ window.VOCAB_C = [
   { word:"consent", pron:"컨센트", pos:"n", level:"B2", meanings:["승낙","동의"],
     syn:["permission","approval","assent"], ant:["refusal"],
     ex:[{ s:"No surgery goes ahead without written {{}}.", f:"consent", ko:"서면 승낙 없이는 어떤 수술도 진행되지 않는다." }],
-    col:[{ p:"consent {{}} the operation", a:"to", pool:"prep", note:"consent to : ~에 동의하다" }] },
+    gov:{ prep:["to","of","for"], pat:"consent {{}} the operation", usage:"consent to ~ : ~에 동의하다" } },
 
   { word:"consequence", pron:"칸서퀀스", pos:"n", level:"B1", meanings:["결과","영향"],
     syn:["outcome","result","effect"], ant:["cause"],
@@ -1273,7 +1273,7 @@ window.VOCAB_C = [
   { word:"consist", pron:"컨시스트", pos:"v", level:"B1", meanings:["~로 이루어져 있다","구성되다"],
     syn:["comprise","contain","include"],
     ex:[{ s:"The kit {{}} of six small tools.", f:"consists", ko:"그 세트는 작은 도구 여섯 개로 이루어져 있다." }],
-    col:[{ p:"consist {{}} three parts", a:"of", pool:"prep", note:"consist of : ~로 이루어져 있다" }] },
+    gov:{ prep:["of","in"], pat:"consist {{}} three parts", usage:"consist of ~ : ~로 이루어져 있다" } },
 
   { word:"consistency", pron:"컨시스턴시", pos:"n", level:"B2", meanings:["일관성","한결같음"],
     syn:["steadiness","uniformity","regularity"], ant:["variability"],
@@ -1431,7 +1431,7 @@ window.VOCAB_C = [
   { word:"contribute", pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
     syn:["donate","supply","add"], ant:["withhold"],
     ex:[{ s:"Everyone was asked to {{}} one story.", f:"contribute", ko:"모두가 이야기 하나를 내놓으라는 요청을 받았다." }],
-    col:[{ p:"contribute {{}} the relief fund", a:"to", pool:"prep", note:"contribute to : ~에 기여하다·기부하다" }] },
+    gov:{ prep:["to","towards"], pat:"contribute {{}} the relief fund", usage:"contribute to ~ : ~에 기여하다·기부하다" } },
 
   { word:"contrive", pron:"컨트라이브", pos:"v", level:"C2", meanings:["꾀하다","고안하다"],
     syn:["devise","engineer","plot"],
@@ -1465,7 +1465,7 @@ window.VOCAB_C = [
   { word:"convert", pron:"컨버트", pos:"v", level:"B1", meanings:["전환하다","바꾸다"],
     syn:["change","transform","adapt"],
     ex:[{ s:"They plan to {{}} the barn into flats.", f:"convert", ko:"그들은 그 헛간을 아파트로 바꿀 계획이다." }],
-    col:[{ p:"convert the attic {{}} a study", a:"into", pool:"prep", note:"convert A into B : A를 B로 바꾸다" }] },
+    gov:{ prep:["into","to"], pat:"convert the attic {{}} a study", usage:"convert A into B : A를 B로 바꾸다" } },
 
   { word:"convertible", pron:"컨버터블", pos:"adj", level:"C1", meanings:["바꿀 수 있는","개조할 수 있는"],
     syn:["adaptable","changeable","flexible"], ant:["fixed"],
@@ -1486,7 +1486,7 @@ window.VOCAB_C = [
   { word:"convince", pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
     syn:["persuade","assure","satisfy"], ant:["dissuade"],
     ex:[{ s:"Nothing will {{}} him to change his mind.", f:"convince", ko:"어떤 것도 그가 마음을 바꾸도록 납득시키지 못할 것이다." }],
-    col:[{ p:"convince him {{}} the risk", a:"of", pool:"prep", note:"convince A of B : A에게 B를 납득시키다" }] },
+    gov:{ prep:["of","about","to"], pat:"convince him {{}} the risk", usage:"convince A of B : A에게 B를 납득시키다" } },
 
   { word:"convincing", pron:"컨빈싱", pos:"adj", level:"B2", meanings:["납득이 가는","설득력 있는"],
     syn:["persuasive","credible","plausible"], ant:["dubious"],
@@ -1496,7 +1496,7 @@ window.VOCAB_C = [
   { word:"cooperate", pron:"코아퍼레이트", pos:"v", level:"B1", meanings:["협력하다","협동하다"],
     syn:["collaborate","assist","unite"], ant:["obstruct"],
     ex:[{ s:"Both towns agreed to {{}} on the new bridge.", f:"cooperate", ko:"두 도시는 새 다리를 두고 협력하기로 합의했다." }],
-    col:[{ p:"cooperate {{}} the police", a:"with", pool:"prep", note:"cooperate with : ~와 협력하다" }] },
+    gov:{ prep:["with","on","in"], pat:"cooperate {{}} the police", usage:"cooperate with ~ : ~와 협력하다" } },
 
   { word:"cooperation", pron:"코아퍼레이션", pos:"n", level:"B1", meanings:["협력","협조"],
     syn:["teamwork","collaboration","support"], ant:["rivalry"],
@@ -1544,7 +1544,7 @@ window.VOCAB_C = [
   { word:"correlate", pron:"코럴레이트", pos:"v", level:"C1", meanings:["상관관계가 있다","연관되다"],
     syn:["relate","associate","match"],
     ex:[{ s:"Height does not {{}} with talent.", f:"correlate", ko:"키는 재능과 상관관계가 없다." }],
-    col:[{ p:"correlate closely {{}} income", a:"with", pool:"prep", note:"correlate with : ~와 상관관계가 있다" }] },
+    gov:{ prep:["with","to"], pat:"correlate closely {{}} income", usage:"correlate with ~ : ~와 상관관계가 있다" } },
 
   /* 원문은 '인과관계'를 함께 적었지만, 상관관계와 인과관계를 구별하는 것이
      이 단어의 핵심이므로(causality의 예문이 바로 그 이야기다) 넣지 않는다 */
@@ -1700,13 +1700,13 @@ window.VOCAB_C = [
   { word:"cram", pron:"크램", pos:"v", level:"B2", meanings:["밀어 넣다","벼락치기로 공부하다"],
     syn:["stuff","jam","pack"],
     ex:[{ s:"He tried to {{}} a week of study into one night.", f:"cram", ko:"그는 일주일치 공부를 하룻밤에 밀어 넣으려 했다." }],
-    col:[{ p:"cram everything {{}} one bag", a:"into", pool:"prep", note:"cram A into B : A를 B에 밀어 넣다" }] },
+    gov:{ prep:["into","with","for"], pat:"cram everything {{}} one bag", usage:"cram A into B : A를 B에 밀어 넣다" } },
 
   /* 첫 뜻을 '충돌'로 두면 clash·collision(3차)과 카드 문구가 겹친다 */
   { word:"crash", pron:"크래시", pos:"v", level:"B1", meanings:["부서지다","추락하다"],
     syn:["smash","wreck","collide"],
     ex:[{ s:"The old plane began to {{}} into the trees.", f:"crash", ko:"낡은 비행기가 나무들 속으로 부서져 들어갔다." }],
-    col:[{ p:"crash {{}} a parked van", a:"into", pool:"prep", note:"crash into : ~에 충돌하다" }] },
+    gov:{ prep:["into","through","to"], pat:"crash {{}} a parked van", usage:"crash into ~ : ~에 충돌하다" } },
 
   { word:"crater", pron:"크레이터", pos:"n", level:"B2", meanings:["분화구","움푹 팬 곳"],
     syn:["hollow","pit","basin"],
@@ -1799,7 +1799,7 @@ window.VOCAB_C = [
   { word:"crucial", pron:"크루셜", pos:"adj", level:"B2", meanings:["결정적인","매우 중요한"],
     syn:["decisive","vital","pivotal"], ant:["minor"],
     ex:[{ s:"Timing was {{}} to the whole rescue.", f:"crucial", ko:"타이밍이 구조 전체에 결정적이었다." }],
-    col:[{ p:"crucial {{}} our success", a:"to", pool:"prep", note:"be crucial to : ~에 결정적이다" }] },
+    gov:{ prep:["to","for","in"], pat:"crucial {{}} our success", usage:"be crucial to ~ : ~에 결정적이다" } },
 
   { word:"crude", pron:"크루드", pos:"adj", level:"B2", meanings:["대충의","원유"],
     syn:["rough","raw","unrefined"], ant:["refined"],
@@ -1860,7 +1860,7 @@ window.VOCAB_C = [
   { word:"culminate", pron:"컬머네이트", pos:"v", level:"C1", meanings:["정점에 이르다","~으로 끝나다"],
     syn:["climax","conclude","peak"],
     ex:[{ s:"Weeks of rehearsal {{}} in one long night.", f:"culminated", ko:"몇 주간의 연습이 긴 하룻밤으로 정점에 이르렀다." }],
-    col:[{ p:"culminate {{}} a final concert", a:"in", pool:"prep", note:"culminate in : ~으로 막을 내리다" }] },
+    gov:{ prep:["in","with"], pat:"culminate {{}} a final concert", usage:"culminate in ~ : ~으로 막을 내리다" } },
 
   { word:"culprit", pron:"컬프릿", pos:"n", level:"C1", meanings:["장본인","범인"],
     syn:["offender","cause","perpetrator"],
@@ -1885,7 +1885,7 @@ window.VOCAB_C = [
   { word:"curious", pron:"큐리어스", pos:"adj", level:"B1", meanings:["호기심이 많은","궁금한"],
     syn:["inquisitive","interested","nosy"], ant:["indifferent"],
     ex:[{ s:"She was {{}} about the locked room upstairs.", f:"curious", ko:"그녀는 위층 잠긴 방에 대해 궁금해했다." }],
-    col:[{ p:"curious {{}} the outcome", a:"about", pool:"prep", note:"be curious about : ~를 궁금해하다" }] },
+    gov:{ prep:["about"], pat:"curious {{}} the outcome", usage:"be curious about ~ : ~를 궁금해하다" } },
 
   { word:"curl up", pron:"컬 업", pos:"phr", level:"B1", meanings:["몸을 웅크리다"],
     syn:["huddle","coil","nestle"], ant:["stretch"] },

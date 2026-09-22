@@ -4,11 +4,11 @@
  * 세트(A) → 챕터(20단어) → 드릴 구조.
  *
  *   미리보기  20단어를 뜻과 함께 훑어보기
- *   드릴     5개 모드를 섞어서 출제:
+ *   드릴     여러 형식을 섞어서 출제:
  *            1단계 4지선다 (영↔한)
  *            2단계 아닌 것 고르기 (syn≥3인 단어만)
+ *                  + 전치사 구별  (gov 보유 단어만)
  *            3단계 문장 빈칸 (예문 보유 단어만)
- *            4단계 연어 고르기 (col 보유 단어만)
  *   보드     짝 맞추기 4~5쌍 × 4개 보드로 마무리
  *   결과
  *
@@ -73,7 +73,7 @@ window.Conquer = (function () {
    */
   function buildDrill(chapterWords) {
     var names = chapterWords.map(function (w) { return w.word; });
-    var stages = [[], [], [], []];   // 0=4지선다, 1=아닌것, 2=문장빈칸, 3=연어
+    var stages = [[], [], []];   // 0=4지선다, 1=아닌것·전치사, 2=문장빈칸
     var dir = 'en-ko';
 
     chapterWords.forEach(function (w) {
@@ -94,6 +94,15 @@ window.Conquer = (function () {
         }
       }
 
+      /* 2단계 · 전치사 구별 (gov 보유 단어만).
+         같은 2단계에 둘이 들어가도 spreadByGap 이 같은 단어 사이를
+         MIN_GAP 이상 벌려 주므로 연달아 나오지 않는다. */
+      var q2b = tryBuild(function () { return window.Quiz.build.gov(w, names); });
+      if (q2b) {
+        q2b.stageLabel = '2단계 · 전치사 구별';
+        stages[1].push({ q: q2b, word: w.word, stage: 2 });
+      }
+
       // 3단계: 문장 빈칸 (예문 보유 단어만)
       if (w.ex && w.ex.length) {
         var q3 = tryBuild(function () { return window.Quiz.build.cloze(w, names); });
@@ -103,14 +112,6 @@ window.Conquer = (function () {
         }
       }
 
-      // 4단계: 연어 고르기 (col 보유 단어만)
-      if (w.col && w.col.length) {
-        var q4 = tryBuild(function () { return window.Quiz.build.colloc(w, names); });
-        if (q4) {
-          q4.stageLabel = '4단계 · 연어 고르기';
-          stages[3].push({ q: q4, word: w.word, stage: 4 });
-        }
-      }
     });
 
     // 모든 단계의 문제를 합친 뒤, 같은 단어 사이 간격을 유지하면서 배치한다.
@@ -168,7 +169,7 @@ window.Conquer = (function () {
    * 같은 단어가 바로 연달아 놓인 자리를 교환으로 푼다.
    *
    * 배치 단계에서는 목록의 끝에 이르면 남은 문제가 하나뿐이라 간격을 지킬 수
-   * 없다(챕터 5의 adverse가 문장 빈칸 → 연어로 붙어 있었다). 다 배치한 뒤
+   * 없다(챕터 5의 adverse가 아닌 것 → 문장 빈칸으로 붙어 있었다). 다 배치한 뒤
    * 자리를 바꾸면 해결된다. 가까운 자리부터 순서대로 시도하므로 결과가 매번 같다.
    */
   function fixAdjacent(list, gap) {
@@ -180,8 +181,8 @@ window.Conquer = (function () {
       return -1;
     }
 
-    /** 모든 단어의 단계가 1 → 2 → 3 → 4 순서인지.
-        자리를 옮기다 연어(4단계)가 문장 빈칸(3단계)보다 먼저 나오면 안 된다. */
+    /** 모든 단어의 단계가 1 → 2 → 3 순서인지.
+        자리를 옮기다 문장 빈칸(3단계)이 4지선다(1단계)보다 먼저 나오면 안 된다. */
     function stagesOk(l) {
       var prev = {};
       for (var k = 0; k < l.length; k++) {
@@ -303,7 +304,7 @@ window.Conquer = (function () {
   /**
    * 오답 복습 세션 — 지정한 단어들만 정복 모드와 같은 방식으로 다시 출제한다.
    *
-   * 챕터 드릴과 동일한 구성(4지선다 → 아닌 것 → 문장 빈칸 → 연어 → 짝 맞추기)을
+   * 챕터 드릴과 동일한 구성(4지선다 → 아닌 것·전치사 → 문장 빈칸 → 짝 맞추기)을
    * 쓰되, 대상이 챕터 20단어가 아니라 "틀린 단어 목록"이다.
    * 데이터가 없는 단계는 자연히 건너뛰므로 단어 수가 적어도 문제없이 만들어진다.
    *
