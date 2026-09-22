@@ -50,6 +50,7 @@ window.VOCAB_G = [
      stake 를 유의어로 쓰지 않았다 — 사전에 '지분; 말뚝' 으로 이미 등록돼 있어
      선택지에 그 뜻이 찍힌다. speculate('추측하다; 투기하다')로 바꿨다. */
   { word:"gamble", pron:"갬블", pos:"v", level:"B1", meanings:["도박하다","내기하다"],
+    gov:{ prep:["on","with"], pat:"gamble {{}} the outcome", usage:"gamble on ~ : ~에 돈을 걸다" },
     syn:["bet","wager","speculate"],
     ex:[{ s:"He lost his savings after he began to {{}} online.", f:"gamble", ko:"그는 온라인으로 도박을 시작한 뒤 저축을 잃었다." }] },
 
@@ -64,6 +65,7 @@ window.VOCAB_G = [
     ex:[{ s:"Every {{}} is inspected before it leaves the factory.", f:"garment", ko:"모든 의류는 공장을 떠나기 전에 검사를 받는다." }] },
 
   { word:"gasp", pron:"개스프", pos:"v", level:"B2", meanings:["헐떡거리다","숨이 차다"],
+    gov:{ prep:["at","for","in","with"], pat:"gasp {{}} the sudden sight", usage:"gasp at ~ : ~에 숨이 막히다" },
     syn:["pant","wheeze","puff"],
     ex:[{ s:"He began to {{}} after running up six flights of stairs.", f:"gasp", ko:"그는 계단 여섯 층을 뛰어 올라간 뒤 헐떡거리기 시작했다." }] },
 
@@ -71,6 +73,7 @@ window.VOCAB_G = [
      (accumulate·assemble·compile·concentrate·convene). 뜻갈래가 같으므로
      원본 뜻을 그대로 쓴다. */
   { word:"gather", pron:"개더", pos:"v", level:"B1", meanings:["모으다","모이다"],
+    gov:{ prep:["around","at","in","from"], pat:"gather {{}} the campfire", usage:"gather around ~ : ~ 주위에 모이다" },
     syn:["collect","assemble","amass"], ant:["disperse"],
     ex:[{ s:"Please {{}} all the documents before the meeting starts.", f:"gather", ko:"회의가 시작되기 전에 모든 서류를 모아 주세요." }] },
 
@@ -94,6 +97,7 @@ window.VOCAB_G = [
      peer 를 유의어로 쓰지 않았다 — 사전에 '또래; 동료' 로 이미 등록돼 있어
      응시하다의 유의어 자리에 그 뜻이 찍히면 완전히 다른 말이 된다. */
   { word:"gaze", pron:"게이즈", pos:"v", level:"B2", meanings:["응시하다","바라보다"],
+    gov:{ prep:["at","into","upon","on"], pat:"gaze {{}} the distant horizon", usage:"gaze at ~ : ~을 응시하다" },
     syn:["stare","gape","gawk"],
     ex:[{ s:"She stood at the window and began to {{}} at the sea.", f:"gaze", ko:"그녀는 창가에 서서 바다를 응시하기 시작했다." }] },
 
@@ -153,6 +157,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS 가 '관대한; 너그러운' 이다. 순서를 지켜 ample 문제를 보존했다.
      generosity 와 어근이 같지만 품사가 달라 같은 보드에 오지 않는다. */
   { word:"generous", pron:"제너러스", pos:"adj", level:"B2", meanings:["관대한","너그러운"],
+    gov:{ prep:["with","to","in","toward","of","about"], pat:"generous {{}} her own time", usage:"be generous with ~ : ~을 아끼지 않다" },
     syn:["ample","lavish","liberal"], ant:["stingy"],
     ex:[{ s:"He made a {{}} donation to the local library last year.", f:"generous", ko:"그는 지난해 지역 도서관에 관대한 기부를 했다." }] },
 
@@ -295,6 +300,7 @@ window.VOCAB_G = [
      glimpse 와 함께 catch a glimpse of 의 유의어로 쓰이므로, 둘의 설명이
      같아지지 않게 glance 는 동사(보다), glimpse 는 명사(봄) 로 갈랐다. */
   { word:"glance", pron:"글랜스", pos:"v", level:"B1", meanings:["흘끗 보다","대충 보다"],
+    gov:{ prep:["at","over","through"], pat:"glance {{}} the morning headlines", usage:"glance at ~ : ~을 흘끗 보다" },
     syn:["peek","skim","scan"],
     ex:[{ s:"She stopped to {{}} at the headlines on her way out.", f:"glance", ko:"그녀는 나가는 길에 멈춰 서서 표제를 흘끗 보았다." }] },
 
@@ -328,6 +334,7 @@ window.VOCAB_G = [
      동사 쪽 두 개로 모았다. GLOSS 에 '빛나다; 발광' 으로 있었으나 이 단어를
      유의어로 쓰는 기존 문제는 없어 갈래를 자유롭게 고를 수 있었다. */
   { word:"glow", pron:"글로우", pos:"v", level:"B2", meanings:["은은하게 빛나다","상기되다"],
+    gov:{ prep:["with","in"], pat:"glow {{}} quiet pride", usage:"glow with ~ : ~으로 상기되다" },
     syn:["shine","radiate","gleam"],
     ex:[{ s:"Embers continued to {{}} long after the fire died down.", f:"glow", ko:"불이 잦아든 뒤에도 잉걸불이 계속 은은하게 빛났다." }] },
 
@@ -336,6 +343,7 @@ window.VOCAB_G = [
   /* 원본은 '(접착제로) 붙이다; 접착제, 풀' 이다. 동사 쪽으로 모았다 —
      첫 뜻에 괄호를 두지 않는다는 규약 때문이기도 하다. */
   { word:"glue", pron:"글루", pos:"v", level:"B1", meanings:["붙이다","접착하다"],
+    gov:{ prep:["to","onto","on"], pat:"glue the label {{}} the box", usage:"glue A to B : A를 B에 붙이다" },
     syn:["paste","stick","bond"],
     ex:[{ s:"He tried to {{}} the broken handle back onto the cup.", f:"glue", ko:"그는 깨진 손잡이를 컵에 다시 붙이려 했다." }] },
 
@@ -388,6 +396,7 @@ window.VOCAB_G = [
      grab 은 낚아채는 순간성, grip 은 꽉 쥐고 놓지 않는 힘, grasp 는 이해로
      갈랐다. grab 은 순간성 쪽이다. */
   { word:"grab", pron:"그랩", pos:"v", level:"B1", meanings:["잡아채다","움켜쥐다"],
+    gov:{ prep:["at","for","onto"], pat:"grab {{}} the passing rope", usage:"grab at ~ : ~을 잡으려 하다" },
     syn:["snatch","seize","clutch"],
     ex:[{ s:"She had to {{}} the railing to keep from falling.", f:"grab", ko:"그녀는 넘어지지 않으려고 난간을 붙잡아야 했다." }] },
 
@@ -395,6 +404,7 @@ window.VOCAB_G = [
      원본의 '상냥한' 은 기존 표제어 amiable 과 같아 복수 정답이 되므로,
      사전 쪽 뜻을 그대로 써서 courteous 문제도 지키고 충돌도 피했다. */
   { word:"gracious", pron:"그레이셔스", pos:"adj", level:"B2", meanings:["우아한","친절한"],
+    gov:{ prep:["to","about","in","toward","of"], pat:"gracious {{}} every guest", usage:"be gracious to ~ : ~에게 친절하다" },
     syn:["courteous","cordial","genial"], ant:["rude"],
     ex:[{ s:"Their host was unfailingly {{}} to every guest.", f:"gracious", ko:"그 주인은 모든 손님에게 한결같이 친절했다." }] },
 
@@ -427,6 +437,7 @@ window.VOCAB_G = [
   /* 승격 ② — GLOSS '수여하다; 보조금' 이다. bestow·concede 두 문제가 동사 쪽을
      쓰므로 '수여하다' 를 첫 자리에 남기고 원본의 명사 뜻을 둘째로 담았다. */
   { word:"grant", pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
+    gov:{ prep:["to"], pat:"grant the award {{}} her", usage:"grant A to B : A를 B에게 주다" },
     syn:["bestow","award","confer"], ant:["deny"],
     ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] },
 
@@ -441,14 +452,17 @@ window.VOCAB_G = [
      쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
      원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
   { word:"grasp", pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+    gov:{ prep:["at","for"], pat:"grasp {{}} any excuse", usage:"grasp at ~ : ~을 붙잡으려 하다" },
     syn:["comprehend","apprehend","fathom"],
     ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },
 
   { word:"gratify", pron:"그래티파이", pos:"v", level:"C1", meanings:["기쁘게 하다","만족시키다"],
+    gov:{ prep:["with","by","at"], pat:"gratified {{}} the final result", usage:"be gratified with ~ : ~에 만족하다" },
     syn:["please","satisfy","delight"], ant:["frustrate"],
     ex:[{ s:"Nothing seemed to {{}} him more than a quiet evening.", f:"gratify", ko:"조용한 저녁만큼 그를 기쁘게 하는 것은 없어 보였다." }] },
 
   { word:"gratitude", pron:"그래티튜드", pos:"n", level:"B2", meanings:["고마움","감사"],
+    gov:{ prep:["to","for","toward","towards","of"], pat:"gratitude {{}} the night nurses", usage:"gratitude to ~ : ~에 대한 감사" },
     syn:["thankfulness","appreciation","indebtedness"], ant:["ingratitude"],
     ex:[{ s:"She wrote a short note to express her {{}}.", f:"gratitude", ko:"그녀는 고마움을 전하려고 짧은 쪽지를 썼다." }] },
 
@@ -471,6 +485,7 @@ window.VOCAB_G = [
     ex:[{ s:"Objects fall at the same rate under {{}} in a vacuum.", f:"gravity", ko:"진공에서는 물체가 중력을 받아 같은 속도로 떨어진다." }] },
 
   { word:"graze", pron:"그레이즈", pos:"v", level:"B2", meanings:["풀을 뜯어먹다","방목하다"],
+    gov:{ prep:["on","in","upon"], pat:"graze {{}} the fresh grass", usage:"graze on ~ : ~을 뜯어먹다" },
     syn:["pasture","browse","feed"],
     ex:[{ s:"Sheep {{}} on the hillside from spring to autumn.", f:"graze", ko:"양들은 봄부터 가을까지 언덕에서 풀을 뜯어먹는다." }] },
 
@@ -486,6 +501,7 @@ window.VOCAB_G = [
 
   /* greed 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 오지 않는다. */
   { word:"greedy", pron:"그리디", pos:"adj", level:"B1", meanings:["탐욕스러운"],
+    gov:{ prep:["for","of"], pat:"greedy {{}} political power", usage:"greedy for ~ : ~을 탐하는" },
     syn:["avaricious","grasping","insatiable"], ant:["selfless"],
     ex:[{ s:"The story warns children not to be {{}}.", f:"greedy", ko:"그 이야기는 아이들에게 탐욕스러워지지 말라고 경고한다." }] },
 
@@ -510,6 +526,7 @@ window.VOCAB_G = [
   /* 원본의 '농장 관리인' 은 스코틀랜드 방언이라 삭제했다 (0차에 기록).
      grief 와 어근이 같지만 품사가 다르고(n/v) 표제어 길이도 달라 보드가 갈린다. */
   { word:"grieve", pron:"그리브", pos:"v", level:"B2", meanings:["비통해하다","애도하다"],
+    gov:{ prep:["over","for","about","at"], pat:"grieve {{}} the sudden loss", usage:"grieve over ~ : ~을 슬퍼하다" },
     syn:["mourn","lament","sorrow over"],
     ex:[{ s:"The village gathered to {{}} for those lost at sea.", f:"grieve", ko:"마을 사람들은 바다에서 잃은 이들을 애도하려 모였다." }] },
 
@@ -532,6 +549,7 @@ window.VOCAB_G = [
 
   /* 원본의 '빵다' 는 오타라 '빻다' 로 고쳤다 (0차에 기록). */
   { word:"grind", pron:"그라인드", pos:"v", level:"B2", meanings:["갈다","빻다"],
+    gov:{ prep:["into","to","with"], pat:"grind the beans {{}} fine powder", usage:"grind A into B : A를 갈아 B로 만들다" },
     syn:["crush","pulverize","mill"],
     ex:[{ s:"Machines {{}} the beans into a fine powder.", f:"grind", ko:"기계가 그 원두를 고운 가루로 갈아 낸다." }] },
 
@@ -546,6 +564,7 @@ window.VOCAB_G = [
      쓰이는 쪽이 '삐걱거리다' 라, 원본의 '끙 하는 소리를 내다' 로 바꾸면
      그 문제가 어긋난다. */
   { word:"groan", pron:"그론", pos:"v", level:"B2", meanings:["신음하다","삐걱거리다"],
+    gov:{ prep:["about","at","with","under"], pat:"groan {{}} the extra workload", usage:"groan about ~ : ~에 대해 불평하다" },
     syn:["moan","creak","whine"],
     ex:[{ s:"The old floorboards {{}} under every step.", f:"groan", ko:"낡은 바닥판이 발걸음마다 삐걱거린다." }] },
 
@@ -587,12 +606,14 @@ window.VOCAB_G = [
     ex:[{ s:"The dog began to {{}} at the approaching stranger.", f:"growl", ko:"그 개는 다가오는 낯선 사람에게 으르렁거리기 시작했다." }] },
 
   { word:"grudge", pron:"그러지", pos:"n", level:"C1", meanings:["원한","앙심"],
+    gov:{ prep:["against","toward","towards"], pat:"a grudge {{}} his former partner", usage:"a grudge against ~ : ~에 대한 원한" },
     syn:["resentment","rancor","bitterness"],
     ex:[{ s:"She held a {{}} against him for years.", f:"grudge", ko:"그녀는 여러 해 그에게 원한을 품었다." }] },
 
   /* 승격 ② — GLOSS '투덜거리다' 를 첫 자리에 지켰다. 원본 첫 뜻 '불평하다' 는
      기존 표제어 complain 과 글자까지 같아 복수 정답이 되므로 둘째로 내렸다. */
   { word:"grumble", pron:"그럼블", pos:"v", level:"B2", meanings:["투덜거리다","불평하다"],
+    gov:{ prep:["about","at","over"], pat:"grumble {{}} the constant noise", usage:"grumble about ~ : ~에 대해 투덜거리다" },
     syn:["complain","gripe","carp"],
     ex:[{ s:"Staff began to {{}} about the new schedule.", f:"grumble", ko:"직원들은 새 일정에 대해 투덜거리기 시작했다." }] },
 
@@ -600,6 +621,7 @@ window.VOCAB_G = [
      이 단어를 유의어로 쓴다. 첫 뜻이 기존 표제어 cover 와 같지만, quizgen 의
      distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
   { word:"guarantee", pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
+    gov:{ prep:["against","of","for"], pat:"guarantee {{}} manufacturing defects", usage:"guarantee against ~ : ~에 대해 보증하다" },
     syn:["assure","ensure","pledge"],
     ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },
 
@@ -610,6 +632,7 @@ window.VOCAB_G = [
 
   /* 승격 ② — GLOSS '죄책감 드는, 유죄의' 를 글자까지 지켰다. ashamed 의 유의어다. */
   { word:"guilty", pron:"길티", pos:"adj", level:"B1", meanings:["죄책감 드는","유죄의"],
+    gov:{ prep:["of","about","to"], pat:"guilty {{}} a serious offence", usage:"be guilty of ~ : ~의 죄를 짓다" },
     syn:["ashamed","remorseful","culpable"], ant:["innocent"],
     ex:[{ s:"He felt {{}} about forgetting her birthday.", f:"guilty", ko:"그는 그녀의 생일을 잊은 것에 죄책감을 느꼈다." }] },
 
