@@ -900,14 +900,9 @@ Object.assign(window.PRON, {
   "forgetfulness": "퍼겟풀니스",
   "forgive oneself": "퍼기브 원셀프",
   "forward": "포워드",
-  "fracture": "프랙처",
-  "fragile": "프래절",
   "fragmented": "프래그멘티드",
-  "fragrance": "프레이그런스",
-  "frail": "프레일",
   "framework": "프레임워크",
   "frank": "프랭크",
-  "fraud": "프로드",
   "free": "프리",
   "free-radical scavenger": "프리 래디컬 스캐빈저"
 });
@@ -919,7 +914,6 @@ Object.assign(window.PRON, {
   "freethinker": "프리싱커",
   "fresh": "프레시",
   "fret": "프렛",
-  "friction": "프릭션",
   "friendly": "프렌들리",
   "friendship": "프렌드십",
   "front": "프런트",
@@ -2969,7 +2963,6 @@ Object.assign(window.PRON, {
   "endpoint": "엔드포인트",
   "fine point": "파인 포인트",
   "forlorn": "폴론",
-  "frantic": "프랜틱",
   "frantically": "프랜티컬리",
   "frenzy": "프렌지",
   "gloom": "글룸",
@@ -4330,4 +4323,61 @@ Object.assign(window.PRON, {
   "water jet": "워터 제트",
   "wellspring": "웰스프링",
   "windfall": "윈드폴"
+});
+
+
+Object.assign(window.PRON, {
+  /* ── F 9차: fraction ~ from scratch (47개) ─────────────────
+     승격 — fracture·fragile·fragment·fragrance·frail·frantic·fraud·
+     free of charge·friction·frigid 은 words-f.js 의 표제어가 되었으므로 위쪽
+     배치에서 지웠다.
+     resistance 는 GLOSS 에만 있고 발음이 없던 것이다 — friction 의 유의어로
+     쓰면서 화면에 뜨게 되므로 이제 넣는다. */
+  "abrasion": "어브레이전",
+  "aromatic": "애러매틱",
+  "at no cost": "앳 노 코스트",
+  "beside oneself": "비사이드 원셀프",
+  "bitterly cold": "비털리 코울드",
+  "break apart": "브레이크 어파트",
+  "breakable": "브레이커블",
+  "broken piece": "브로컨 피스",
+  "cargo": "카고",
+  "chill solid": "칠 살리드",
+  "chip": "칩",
+  "common": "카먼",
+  "easily damaged": "이질리 대미지드",
+  "for nothing": "포 너싱",
+  "freedom to choose": "프리덤 투 추즈",
+  "freezing": "프리징",
+  "from nothing": "프럼 너싱",
+  "from the beginning": "프럼 더 비기닝",
+  "how often": "하우 오픈",
+  "ice over": "아이스 오버",
+  "icy": "아이시",
+  "not robust": "낫 로버스트",
+  "own choice": "오운 초이스",
+  "perfume": "퍼퓸",
+  "perfumed": "퍼퓸드",
+  "rate of occurrence": "레이트 오브 어커런스",
+  "recurrence": "리커런스",
+  "recurring": "리커링",
+  "repeated": "리피티드",
+  "resistance": "리지스턴스",
+  "rubbing": "러빙",
+  "scare": "스케어",
+  "self-determination": "셀프 디터머네이션",
+  "shard": "샤드",
+  "shipment": "십먼트",
+  "small part": "스몰 파트",
+  "startle": "스타틀",
+  "starting over": "스타팅 오버",
+  "sudden fear": "서든 피어",
+  "sweet-smelling": "스위트 스멜링",
+  "swindler": "스윈들러",
+  "terrify": "테러파이",
+  "terror": "테러",
+  "tiny amount": "타이니 어마운트",
+  "turn to ice": "턴 투 아이스",
+  "wildly agitated": "와일들리 애지테이티드",
+  "without payment": "위드아웃 페이먼트"
 });
