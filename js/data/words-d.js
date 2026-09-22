@@ -1955,7 +1955,6 @@ Object.assign(window.GLOSS, {
   "extreme":"극단적인, 지나친",
   "fend off":"막아 내다, 물리치다",
   "flabbergasted":"몹시 놀란, 기가 막힌",
-  "float":"떠다니다, 뜨다",
   "harp on":"~을 되풀이해 말하다",
   "haul":"끌어당기다, 운반하다",
   "heavy rain":"큰비",
