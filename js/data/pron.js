@@ -3927,5 +3927,14 @@ Object.assign(window.PRON, {
   "wiping out": "와이핑 아웃",
 
   /* GLOSS 에만 있고 발음이 없던 것 — 12차의 search 들과 같은 경우다 */
-  "ignite": "익나이트"
+  "ignite": "익나이트",
+
+  /* ── 품사가 어긋난 유의어를 바꾸며 넣은 것 (4개) ─────────────────
+     A~D 세트 표제어 다섯 곳의 syn 을 품사가 맞는 낱말로 갈아끼웠다.
+     발음은 기존 표기에 맞췄다 — opposite("아퍼짓")·number("넘버")·
+     close("클로스")·표제어 empty("엠프티"). */
+  "close friend": "클로스 프렌드",
+  "empty out": "엠프티 아웃",
+  "opposite number": "아퍼짓 넘버",
+  "risky undertaking": "리스키 언더테이킹"
 });

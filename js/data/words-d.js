@@ -1304,7 +1304,9 @@ window.VOCAB_D = [
     ex:[{ s:"It took three of us to {{}} the boat ashore.", f:"drag", ko:"배를 물가로 끌어올리는 데 우리 셋이 필요했다." }] },
 
   { word:"drain", pron:"드레인", pos:"v", level:"B2", meanings:["빼내다","소모시키다"],
-    syn:["empty","siphon","deplete"], ant:["fill"],
+    /* empty 는 쓰지 않는다 — E 세트 표제어가 형용사("텅 빈, 공허한")라서
+       동사 표제어 drain 의 유의어 자리에 상태를 나타내는 뜻이 뜬다. */
+    syn:["empty out","siphon","deplete"], ant:["fill"],
     ex:[{ s:"Engineers had to {{}} the tunnel before starting repairs.", f:"drain", ko:"기술자들은 수리를 시작하기 전에 터널의 물을 빼내야 했다." }] },
 
   { word:"drainage", pron:"드레이니지", pos:"n", level:"C1", meanings:["배수","배수 시설"],

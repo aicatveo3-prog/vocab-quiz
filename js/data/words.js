@@ -408,7 +408,9 @@ window.VOCAB = [
     ex:[{ s:"The {{}} of the smartphone changed daily life.", f:"advent", ko:"스마트폰의 출현은 일상을 바꿨다." }] },
 
   { word:"adventure", pron:"어드벤처", pos:"n", level:"B1", meanings:["모험"],
-    syn:["exploit","escapade","quest"], ant:["routine"],
+    /* exploit 은 쓰지 않는다 — E 세트 표제어가 동사("착취하다, 부당하게 이용하다")
+       라서 명사 표제어 adventure 의 유의어 자리에 동사 뜻이 뜬다. */
+    syn:["risky undertaking","escapade","quest"], ant:["routine"],
     ex:[{ s:"Their trip across the desert became a real {{}}.", f:"adventure", ko:"사막을 횡단한 그들의 여행은 진짜 모험이 되었다." }] },
 
   { word:"adversary", pron:"애드버서리", pos:"n", level:"C1", meanings:["상대방","적"],

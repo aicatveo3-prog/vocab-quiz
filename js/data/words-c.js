@@ -845,7 +845,9 @@ window.VOCAB_C = [
     ex:[{ s:"The {{}} camera fits in a coat pocket.", f:"compact", ko:"그 소형 카메라는 외투 주머니에 들어간다." }] },
 
   { word:"companion", pron:"컴패니언", pos:"n", level:"B1", meanings:["동반자","친구"],
-    syn:["partner","comrade","escort"],
+    /* escort 는 쓰지 않는다 — E 세트 표제어가 동사("호위하다, 수행하다")라서
+       명사 표제어 companion 의 유의어 자리에 동사 뜻이 뜬다. */
+    syn:["partner","comrade","close friend"],
     ex:[{ s:"A dog makes a loyal {{}} on long walks.", f:"companion", ko:"개는 긴 산책에서 충실한 동반자가 된다." }] },
 
   { word:"companionship", pron:"컴패니언십", pos:"n", level:"C1", meanings:["교우관계","교제"],
@@ -1633,7 +1635,9 @@ window.VOCAB_C = [
     ex:[{ s:"The notes turned out to be {{}}.", f:"counterfeit", ko:"그 지폐들은 위조된 것으로 드러났다." }] },
 
   { word:"counterpart", pron:"카운터파트", pos:"n", level:"C1", meanings:["대응물","상대방"],
-    syn:["equivalent","peer","match"],
+    /* equivalent 는 쓰지 않는다 — E 세트 표제어가 형용사("동등한, 상당하는")라서
+       명사 표제어 counterpart 의 유의어 자리에 형용사 뜻이 뜬다. */
+    syn:["opposite number","peer","match"],
     ex:[{ s:"She met her {{}} from the Paris office.", f:"counterpart", ko:"그녀는 파리 지사의 상대방을 만났다." }] },
 
   { word:"counterproductive", pron:"카운터프러덕티브", pos:"adj", level:"C1", meanings:["역효과를 내는"],
