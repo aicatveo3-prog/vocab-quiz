@@ -140,7 +140,102 @@ window.VOCAB_G = [
      '통칭하는' 을 앞에 두었다 — generic 의 고유한 뜻은 이쪽이다. */
   { word:"generic", pron:"제네릭", pos:"adj", level:"C1", meanings:["통칭하는","포괄적인"],
     syn:["nonspecific","universal","blanket"], ant:["specific"],
-    ex:[{ s:"Most shoppers picked the cheaper {{}} brand off the shelf.", f:"generic", ko:"대부분의 구매자는 선반에서 더 싼 통칭 브랜드를 골랐다." }] }
+    ex:[{ s:"Most shoppers picked the cheaper {{}} brand off the shelf.", f:"generic", ko:"대부분의 구매자는 선반에서 더 싼 통칭 브랜드를 골랐다." }] },
+
+  /* ── 챕터 2 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS 가 '관대함, 너그러움' 이다. 원본은 순서만 반대이므로
+     사전 순서를 그대로 지켜 charity 문제의 화면이 안 바뀌게 했다. */
+  { word:"generosity", pron:"제너라서티", pos:"n", level:"B2", meanings:["관대함","너그러움"],
+    syn:["benevolence","magnanimity","goodwill"], ant:["greed"],
+    ex:[{ s:"Her {{}} toward complete strangers surprised everyone.", f:"generosity", ko:"낯선 사람들에게 보인 그녀의 관대함은 모두를 놀라게 했다." }] },
+
+  /* 승격 ① — GLOSS 가 '관대한; 너그러운' 이다. 순서를 지켜 ample 문제를 보존했다.
+     generosity 와 어근이 같지만 품사가 달라 같은 보드에 오지 않는다. */
+  { word:"generous", pron:"제너러스", pos:"adj", level:"B2", meanings:["관대한","너그러운"],
+    syn:["ample","lavish","liberal"], ant:["stingy"],
+    ex:[{ s:"He made a {{}} donation to the local library last year.", f:"generous", ko:"그는 지난해 지역 도서관에 관대한 기부를 했다." }] },
+
+  { word:"genetic", pron:"저네틱", pos:"adj", level:"B2", meanings:["유전의","유전자의"],
+    syn:["hereditary","inherited","inborn"],
+    ex:[{ s:"The condition has a strong {{}} component.", f:"genetic", ko:"그 질환은 유전적 요인이 강하다." }] },
+
+  /* 원본 표제어는 'genetically modified(GM)' 이었다. (GM) 은 구의 일부가 아니라
+     약어 주석이고, 표제어에 괄호가 든 전례가 0건이며 24자로 기존 최장(23자)을
+     넘어 짝 맞추기 카드를 흔든다. 괄호를 뺐다. */
+  { word:"genetically modified", pron:"저네티컬리 마디파이드", pos:"phr", level:"C1", meanings:["유전자 변형된"],
+    syn:["engineered","transgenic","bioengineered"] },
+
+  /* syn 을 비웠다 — 학문 이름은 바꿔 쓸 수 있는 말이 없다. genetic 과 어근이
+     같지만 품사가 달라(adj/n) 같은 보드에 오지 않는다. */
+  { word:"genetics", pron:"저네틱스", pos:"n", level:"B2", meanings:["유전학"],
+    ex:[{ s:"She studies {{}} at a government research institute.", f:"genetics", ko:"그녀는 정부 연구소에서 유전학을 연구한다." }] },
+
+  { word:"genre", pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
+    syn:["category","style","classification"],
+    ex:[{ s:"Science fiction has long been his favourite {{}}.", f:"genre", ko:"공상과학은 오랫동안 그가 가장 좋아하는 장르였다." }] },
+
+  /* 승격 ① — GLOSS '진짜의, 진품의' 를 글자까지 지켰다. authentic 의 유의어이고
+     counterfeit·deceptive·fake 세 문제의 반의어로도 쓰인다. */
+  { word:"genuine", pron:"제뉴인", pos:"adj", level:"B2", meanings:["진짜의","진품의"],
+    syn:["authentic","real","bona fide"], ant:["fake"],
+    ex:[{ s:"Experts confirmed that the painting was {{}}.", f:"genuine", ko:"전문가들은 그 그림이 진품임을 확인했다." }] },
+
+  /* 원본은 geographic 과 geographical 이 둘 다 '지리적인; 지리학의' 였다.
+     뜻 문자열이 같으면 4지선다에서 정답이 둘이 되고 짝 맞추기 소거법이 무너진다.
+     뜻을 갈라 쓰고(지리의 / 지리학의) 서로를 유의어로 등록했다 —
+     quizgen 의 distractorPool 과 makeMatch 가 유의어 관계를 보고
+     둘을 한 문제·한 보드에 넣지 않는다. */
+  { word:"geographic", pron:"지오그래픽", pos:"adj", level:"B2", meanings:["지리의","지리적인"],
+    syn:["geographical","regional","spatial"],
+    ex:[{ s:"The survey covers a very wide {{}} area.", f:"geographic", ko:"그 조사는 매우 넓은 지리적 범위를 다룬다." }] },
+
+  { word:"geographical", pron:"지오그래피컬", pos:"adj", level:"B2", meanings:["지리학의","지리학적인"],
+    syn:["geographic","topographic","cartographic"],
+    ex:[{ s:"He published a {{}} study of the northern region.", f:"geographical", ko:"그는 북부 지역에 대한 지리학 연구를 발표했다." }] },
+
+  { word:"geography", pron:"지오그래피", pos:"n", level:"B1", meanings:["지리","지형"],
+    syn:["terrain","topography","landscape"],
+    ex:[{ s:"The {{}} of the island makes large-scale farming difficult.", f:"geography", ko:"그 섬의 지형은 대규모 농사를 어렵게 한다." }] },
+
+  { word:"geology", pron:"지올러지", pos:"n", level:"B2", meanings:["지질학"],
+    ex:[{ s:"He has taught {{}} at the university for twenty years.", f:"geology", ko:"그는 20년간 그 대학에서 지질학을 가르쳤다." }] },
+
+  { word:"geometry", pron:"지아머트리", pos:"n", level:"B2", meanings:["기하학"],
+    ex:[{ s:"Students learn basic {{}} in middle school.", f:"geometry", ko:"학생들은 중학교에서 기초 기하학을 배운다." }] },
+
+  { word:"geothermal", pron:"지오서멀", pos:"adj", level:"C1", meanings:["지열의"],
+    ex:[{ s:"Iceland draws much of its power from {{}} sources.", f:"geothermal", ko:"아이슬란드는 전력의 상당 부분을 지열원에서 얻는다." }] },
+
+  /* 승격 ② — GLOSS 는 '세균; 싹' 인데 원본은 '세균, 병균' 이다. bud 의 유의어로
+     쓰이는 쪽은 '싹' 이라, 병균 대신 싹을 둘째 자리에 남겨 bud 문제를 지켰다. */
+  { word:"germ", pron:"점", pos:"n", level:"B2", meanings:["세균","싹"],
+    syn:["bacterium","microbe","pathogen"],
+    ex:[{ s:"A single {{}} can multiply into millions within hours.", f:"germ", ko:"단 하나의 세균이 몇 시간 안에 수백만 개로 늘어날 수 있다." }] },
+
+  { word:"gesticulate", pron:"제스티큘레이트", pos:"v", level:"C2", meanings:["몸짓으로 이야기하다"],
+    syn:["gesture","signal","motion"],
+    ex:[{ s:"He began to {{}} wildly to make his point clear.", f:"gesticulate", ko:"그는 요점을 분명히 하려고 격렬하게 몸짓을 했다." }] },
+
+  /* 원본은 '몸짓을 하다; (몸짓으로) 가리키다; 몸짓, 제스처' 다. 동사 쪽으로
+     모았다 — gesticulate 의 유의어로 쓰이므로 품사가 맞아야 설명이 자연스럽다. */
+  { word:"gesture", pron:"제스처", pos:"v", level:"B1", meanings:["몸짓을 하다","몸짓으로 가리키다"],
+    syn:["gesticulate","signal","beckon"],
+    ex:[{ s:"She began to {{}} toward the empty seat beside her.", f:"gesture", ko:"그녀는 옆의 빈자리를 몸짓으로 가리켰다." }] },
+
+  { word:"get across", pron:"겟 어크로스", pos:"phr", level:"B2", meanings:["전달되다","이해되다"],
+    syn:["communicate","convey","put across"] },
+
+  { word:"get along with", pron:"겟 얼롱 위드", pos:"phr", level:"B1", meanings:["~와 잘 지내다"],
+    syn:["get on with","hit it off with","be friendly with"] },
+
+  { word:"get away with", pron:"겟 어웨이 위드", pos:"phr", level:"B2", meanings:["~을 모면하다"],
+    syn:["escape blame","evade","dodge"] },
+
+  /* 첫 뜻을 '착수하다' 로 뒀다 — 원본의 '대처하다' 는 기존 표제어 cope with 와
+     같아 복수 정답이 된다. */
+  { word:"get down to", pron:"겟 다운 투", pos:"phr", level:"B2", meanings:["착수하다","본격적으로 시작하다"],
+    syn:["begin","tackle","embark on"] }
 ];
 
 /* 유의어 뜻 사전 병합 — 재대입(=)이 아니라 Object.assign 이다.
@@ -149,6 +244,11 @@ Object.assign(window.GLOSS, {
   "age gap":"연령 차이",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
+  "bacterium":"박테리아",
+  "be friendly with":"~와 친하게 지내다",
+  "beckon":"손짓으로 부르다",
+  "benevolence":"자애, 선행",
+  "bioengineered":"생명공학으로 만든",
   "blanket":"일괄적인, 포괄적인",
   "bolt":"튀어 달아나다",
   "car park":"주차장",
@@ -157,21 +257,42 @@ Object.assign(window.GLOSS, {
   "crease":"주름이 지다",
   "culture clash":"문화 충돌",
   "dynamo":"발전기",
+  "embark on":"~에 착수하다",
+  "engineered":"인위적으로 조작된",
+  "escape blame":"책임을 면하다",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",
+  "get on with":"~와 사이가 좋다",
+  "hit it off with":"~와 금방 친해지다",
+  "inherited":"물려받은",
+  "landscape":"풍경, 지형",
+  "liberal":"후한, 너그러운",
+  "magnanimity":"도량이 큼",
+  "microbe":"미생물",
+  "motion":"몸짓으로 신호하다",
   "nebula":"성운",
   "nonspecific":"특정하지 않은",
   "outfit":"장비 한 벌",
   "pant":"숨을 헐떡이다",
   "parking space":"주차 공간",
+  "pathogen":"병원균",
   "pedigree":"가계, 혈통",
   "power unit":"동력 장치",
   "puff":"숨을 가쁘게 쉬다",
+  "put across":"뜻을 전하다",
+  "regional":"지역의",
+  "spatial":"공간의",
   "star system":"항성계",
+  "stingy":"인색한",
+  "style":"양식, 형식",
+  "terrain":"지형, 지대",
+  "topographic":"지형의",
+  "topography":"지형, 지세",
+  "transgenic":"유전자 이식된",
   "trudge":"터벅터벅 걷다",
   "turbine":"터빈",
   "universal":"보편적인",
   "wheeze":"쌕쌕거리다",
-  "widespread":"널리 퍼진",
+  "widespread":"널리 퍼진"
 });
