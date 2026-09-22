@@ -99,7 +99,43 @@
  *   flaw         fault 의 유의어로 쓰려 했으나 뜻 '결함, 흠' 이 표제어 defect
  *                의 뜻과 글자까지 같아 한 문제에서 두 선택지가 구별되지 않는다
  *
- * 진행 상황: 40 / 210단어 (fable ~ favorably) — 2차, 2챕터 완료.
+ * ── 3차 기록 ──
+ *   승격 5개. 넷은 기존 뜻을 그대로 가져와 기존 문제를 그대로 뒀다.
+ *     feast·feature·fertile·fertilizer — 기존 뜻 유지
+ *       feature 는 aspect·characteristic·column 셋이 참조하는 자리다
+ *       feast 는 원본이 '축제, 축하연' 이지만 feast 는 festival 이 아니라
+ *         잔치를 가리킨다. 기존 '연회, 잔치' 가 더 정확하다
+ *       fertile 은 원본 첫 뜻에 괄호가 있어('(토지가) 비옥한') 기존 뜻을 썼다
+ *     fear  ★ 품사를 동사로 정했다
+ *       원본은 '공포, 두려움; 두려워하다, 염려하다' 로 명사가 먼저다. 그런데
+ *       기존 표제어 dread 의 유의어 자리에 쓰이고 형제 선택지가 shrink from·
+ *       be terrified of 로 모두 동사다. 명사로 올리면 한 문제 안에서 품사가
+ *       어긋난 선택지가 섞인다. 기존 뜻 ["두려워하다","겁내다"] 를 지켰다.
+ *
+ *   fertil 계열 4개가 한 챕터에 몰렸다 — 0차 보드 예비검사가 짚은 자리다.
+ *   fertile(adj B2)·fertilize(v B2) 는 품사로, fertility(n C1)·
+ *   fertilizer(n B1) 는 레벨을 두 단계 벌려 4지선다에서 갈라 놓았다.
+ *
+ *   fee 는 뜻 순서를 원본('요금; 수수료')과 바꿔 ["수수료","요금"] 으로 했다.
+ *   2차의 fare 가 ["요금","음식"] 이라 첫 뜻이 겹치면 짝 맞추기 카드에 같은
+ *   글자가 뜬다.
+ *
+ *   federal 은 syn 을 비웠다. 제도 용어여서 바꿔 쓸 수 있는 말이 셋이 안 된다.
+ *
+ * ── 3차에서 유의어로 쓰지 않은 것과 이유 ──
+ *   apprehend  fear 의 유의어로 쓰려 했으나 표제어 뜻이 '체포하다, 파악하다'다
+ *   attribute  feature 의 유의어로 쓰려 했으나 동사 표제어('~의 결과로 여기다')
+ *   central    federal 의 유의어로 쓰려 했으나 '중심의, 중앙의' 로 연방제와 다르다
+ *   put on     feign 의 유의어로 쓰려 했으나 뜻이 '입다, 올리다'다
+ *   brew·culture  ferment 의 유의어로 쓰려 했으나 '음료; 끓이다'·'문화, 문명'이다
+ *   levy       fee 의 유의어로 쓰려 했으나 '부과하다'(동사)가 먼저다
+ *   spread     feast 의 유의어로 쓰려 했으나 '퍼지다'(동사)가 먼저다
+ *   frail·fruitful  feeble·fertile 의 유의어로 쓰려 했으나 둘 다 뒤 차수의
+ *              표제어다. 사전에 넣었다가 곧 지우는 일을 피했다
+ *   down       feather 의 유의어로 쓰려 했으나 '아래로' 로 읽히기 쉬워
+ *              soft plumage 로 바꿨다
+ *
+ * 진행 상황: 60 / 210단어 (fable ~ fetal) — 3차, 3챕터 완료.
  *
  * 단어를 더 넣을 때 확인 방법:
  *   node tools/words-f-audit.js           검사 6종 + 출제 시뮬레이션
@@ -292,7 +328,111 @@ window.VOCAB_F = [
      B2 로 두어 B1·B2·C1 을 후보로 쓸 수 있게 했다. */
   { word:"favorably", pron:"페이버러블리", pos:"adv", level:"B2", meanings:["호의적으로","유리하게"],
     syn:["approvingly","positively","in a good light"],
-    ex:[{ s:"The critics spoke {{}} of her first novel.", f:"favorably", ko:"비평가들은 그녀의 첫 소설을 호의적으로 말했다." }] }
+    ex:[{ s:"The critics spoke {{}} of her first novel.", f:"favorably", ko:"비평가들은 그녀의 첫 소설을 호의적으로 말했다." }] },
+
+  /* ── 3차: fear ~ fetal (20개) ─────────────────── */
+
+  /* 원본은 '공포, 두려움; 두려워하다, 염려하다' 로 명사와 동사가 섞여 있다.
+     동사로 정했다 — 기존 표제어 dread 의 유의어 자리에 쓰이고 그 형제 선택지가
+     shrink from·be terrified of 로 모두 동사다. 명사로 올리면 한 문제에서
+     품사가 어긋난 선택지가 섞인다(#116 이 그 갈래의 버그였다). */
+  { word:"fear", pron:"피어", pos:"v", level:"B1", meanings:["두려워하다","겁내다"],
+    syn:["dread","be afraid of","be terrified of"],
+    ex:[{ s:"Many first-time flyers {{}} takeoff more than landing.", f:"fear", ko:"처음 비행하는 사람들은 착륙보다 이륙을 더 두려워한다." }] },
+
+  { word:"feasibility", pron:"피저빌러티", pos:"n", level:"C1", meanings:["실행 가능성","타당성"],
+    syn:["practicability","viability","workability"],
+    ex:[{ s:"The council ordered a study on the {{}} of the tunnel.", f:"feasibility", ko:"의회는 그 터널의 실행 가능성에 관한 조사를 지시했다." }] },
+
+  { word:"feasible", pron:"피저블", pos:"adj", level:"B2", meanings:["실행 가능한","그럴듯한"],
+    syn:["practicable","viable","achievable"], ant:["unworkable"],
+    ex:[{ s:"The plan is only {{}} if the funding arrives by June.", f:"feasible", ko:"그 계획은 자금이 6월까지 들어와야만 실행 가능하다." }] },
+
+  /* 원본은 '축제, 축하연' 인데 feast 는 축제(festival)보다 잔치를 가리킨다.
+     기존 사전 뜻 '연회, 잔치' 가 더 정확하고, banquet 문제도 그대로 남는다. */
+  { word:"feast", pron:"피스트", pos:"n", level:"C1", meanings:["연회","잔치"],
+    syn:["banquet","celebration dinner","lavish meal"],
+    ex:[{ s:"The village held a {{}} to mark the end of the harvest.", f:"feast", ko:"마을은 수확이 끝난 것을 기념해 잔치를 열었다." }] },
+
+  { word:"feather", pron:"페더", pos:"n", level:"B1", meanings:["깃털"],
+    syn:["plume","quill","soft plumage"],
+    ex:[{ s:"A single white {{}} drifted down onto the water.", f:"feather", ko:"흰 깃털 하나가 물 위로 떠내려왔다." }] },
+
+  { word:"feature", pron:"피처", pos:"n", level:"B2", meanings:["특징","특색"],
+    syn:["trait","hallmark","distinguishing mark"],
+    ex:[{ s:"The clearest {{}} of the new engine is its silence.", f:"feature", ko:"새 엔진의 가장 뚜렷한 특징은 조용함이다." }] },
+
+  /* syn 을 비워 뒀다. federal 은 '연방제의' 라는 제도 용어여서 문맥에서
+     바꿔 쓸 수 있는 말이 셋이 안 된다. 억지로 채우면 '아닌 것 고르기'가
+     논쟁거리가 된다. */
+  { word:"federal", pron:"페더럴", pos:"adj", level:"B2", meanings:["연방제의","연방 정부의"],
+    ex:[{ s:"The dispute moved to a {{}} court last spring.", f:"federal", ko:"그 분쟁은 지난 봄 연방 법원으로 넘어갔다." }] },
+
+  /* 뜻 순서를 원본('요금; 수수료')과 바꿨다. 2차의 fare 가 이미
+     ["요금","음식"] 이라 첫 뜻이 겹치면 짝 맞추기 카드에 같은 글자가 뜬다. */
+  { word:"fee", pron:"피", pos:"n", level:"B1", meanings:["수수료","요금"],
+    syn:["payment","service charge","dues"],
+    ex:[{ s:"The museum dropped its entrance {{}} for students.", f:"fee", ko:"그 박물관은 학생 입장료를 없앴다." }] },
+
+  { word:"feeble", pron:"피블", pos:"adj", level:"C1", meanings:["허약한","연약한"],
+    syn:["weak","infirm","sickly"], ant:["robust"],
+    ex:[{ s:"His voice had grown {{}} after the long illness.", f:"feeble", ko:"긴 병을 앓은 뒤 그의 목소리는 허약해졌다." }] },
+
+  { word:"feel free to do", pron:"필 프리 투 두", pos:"phr", level:"B1", meanings:["마음대로 ~하다"],
+    syn:["do not hesitate to","be welcome to","go ahead and"] },
+
+  { word:"feign", pron:"페인", pos:"v", level:"C2", meanings:["~인 체하다","가장하다"],
+    syn:["pretend","simulate","make a show of"],
+    ex:[{ s:"He tried to {{}} surprise when the guests walked in.", f:"feign", ko:"손님들이 들어올 때 그는 놀란 체하려 했다." }] },
+
+  { word:"feminine", pron:"페머닌", pos:"adj", level:"B2", meanings:["여성스러운","여자 같은"],
+    syn:["womanly","ladylike","girlish"], ant:["masculine"],
+    ex:[{ s:"The design uses soft, {{}} curves throughout.", f:"feminine", ko:"그 디자인은 전체에 부드럽고 여성스러운 곡선을 쓴다." }] },
+
+  { word:"feminist", pron:"페머니스트", pos:"n", level:"B2", meanings:["여권신장론자"],
+    syn:["women's rights advocate","suffragist","equality campaigner"],
+    ex:[{ s:"She was a leading {{}} of her generation.", f:"feminist", ko:"그녀는 자기 세대를 이끈 여권신장론자였다." }] },
+
+  /* 원본은 '발효시키다; (정치, 사회적) 동요, 소란' 으로 동사와 명사가 섞여
+     있다. 동사로 정했다. 발음은 동사 ferment 가 -ment 에 강세를 받아 '퍼멘트'
+     다 — 기존 torment("토멘트")·lament("러멘트")·augment("오그멘트")와 같은
+     갈래다. 그 셋은 PRON 사전에 있어 pron-audit 의 '-ment → 먼트' 규칙에
+     경고로 잡히지만, 표제어의 pron 은 그 규칙이 보지 않으므로 여기서는
+     경고가 늘지 않는다(검사 757건, 경고 3건 그대로). */
+  { word:"ferment", pron:"퍼멘트", pos:"v", level:"C1", meanings:["발효시키다"],
+    syn:["turn sour","let rise","undergo fermentation"],
+    ex:[{ s:"Cabbage will {{}} in salt water within a week.", f:"ferment", ko:"양배추는 소금물에서 일주일 안에 발효된다." }] },
+
+  /* ── fertil 계열 4개 ────────────────────────────
+     0차 보드 예비검사가 '챕터 3 의 fertil* 4개' 를 최대 위험으로 짚었다.
+     짝 맞추기는 separateClashes 가 갈라 주지만 4지선다에는 그 장치가 없어
+     품사·레벨로 떼어 놓아야 한다.
+       fertile    adj B2      fertilize  v  B2   → 품사가 다르다
+       fertility  n   C1      fertilizer n  B1   → 둘 다 명사라 레벨을 두
+                                                   단계 벌렸다(후보 ±1 밖) */
+  { word:"fertile", pron:"퍼틀", pos:"adj", level:"B2", meanings:["비옥한","다산의"],
+    syn:["productive","rich","lush"], ant:["barren"],
+    ex:[{ s:"The valley floor is {{}} enough for two harvests a year.", f:"fertile", ko:"그 골짜기 바닥은 한 해 두 번 수확할 만큼 비옥하다." }] },
+
+  { word:"fertility", pron:"퍼틸러티", pos:"n", level:"C1", meanings:["비옥함","생식력"],
+    syn:["richness","productiveness","reproductive capacity"],
+    ex:[{ s:"Adding compost slowly restored the soil's {{}}.", f:"fertility", ko:"퇴비를 넣자 흙의 비옥함이 서서히 되살아났다." }] },
+
+  { word:"fertilize", pron:"퍼털라이즈", pos:"v", level:"B2", meanings:["비옥하게 하다","수정시키다"],
+    syn:["enrich","feed","pollinate"],
+    ex:[{ s:"Farmers {{}} the field before the spring planting.", f:"fertilize", ko:"농부들은 봄 파종 전에 밭을 비옥하게 한다." }] },
+
+  { word:"fertilizer", pron:"퍼털라이저", pos:"n", level:"B1", meanings:["비료"],
+    syn:["compost","manure","plant food"],
+    ex:[{ s:"They spread {{}} across the young rows.", f:"fertilizer", ko:"그들은 갓 자란 줄들 위에 비료를 뿌렸다." }] },
+
+  { word:"fervor", pron:"퍼버", pos:"n", level:"C2", meanings:["열정","열렬함"],
+    syn:["zeal","ardor","passion"],
+    ex:[{ s:"She spoke with a {{}} that silenced the whole room.", f:"fervor", ko:"그녀는 방 전체를 조용하게 만드는 열정으로 말했다." }] },
+
+  { word:"fetal", pron:"피틀", pos:"adj", level:"C1", meanings:["태아의"],
+    syn:["unborn","prenatal","embryonic"],
+    ex:[{ s:"The scan tracks {{}} growth week by week.", f:"fetal", ko:"그 초음파는 태아의 성장을 주 단위로 추적한다." }] }
 ];
 
 /* ── F 세트가 쓰는 유의어·반의어의 뜻 ─────────────
@@ -391,5 +531,54 @@ Object.assign(window.GLOSS, {
   "waver":"흔들리다, 주저하다",
   "weariness":"지침, 피곤",
   "working knowledge":"실용적 지식",
-  "zealot":"열성분자"
+  "zealot":"열성분자",
+
+  /* ── 3차: fear ~ fetal (47개) ───────────────── */
+  "achievable":"달성할 수 있는",
+  "ardor":"열렬함, 격정",
+  "be afraid of":"무서워하다",
+  "be welcome to":"~해도 좋다",
+  "celebration dinner":"축하 만찬",
+  "distinguishing mark":"구별되는 표시",
+  "do not hesitate to":"주저 없이 ~하다",
+  "dues":"회비",
+  "embryonic":"배아의, 초기의",
+  "equality campaigner":"평등 운동가",
+  "feed":"양분을 주다",
+  "girlish":"소녀 같은",
+  "go ahead and":"거리낌 없이 ~하다",
+  "hallmark":"전형적 특징",
+  "infirm":"병약한, 노쇠한",
+  "ladylike":"숙녀다운",
+  "lavish meal":"성찬",
+  "let rise":"부풀게 하다",
+  "lush":"우거진, 푸르른",
+  "make a show of":"~하는 티를 내다",
+  "masculine":"남성적인",
+  "plant food":"식물 영양제",
+  "plume":"깃털 장식",
+  "pollinate":"수분시키다",
+  "practicability":"실행할 수 있음",
+  "practicable":"실행에 옮길 수 있는",
+  "prenatal":"출생 전의",
+  "pretend":"~인 척하다",
+  "productiveness":"생산성",
+  "quill":"큰 깃털, 깃대",
+  "reproductive capacity":"번식 능력",
+  "rich":"기름진, 풍부한",
+  "richness":"풍부함",
+  "service charge":"서비스 요금",
+  "sickly":"골골하는",
+  "simulate":"그런 양 꾸미다",
+  "soft plumage":"부드러운 깃",
+  "suffragist":"여성 참정권론자",
+  "turn sour":"쉬다, 산패하다",
+  "unborn":"아직 태어나지 않은",
+  "undergo fermentation":"발효를 거치다",
+  "unworkable":"실행할 수 없는",
+  "viability":"실현 가능성",
+  "viable":"실행 가능한",
+  "womanly":"여자다운",
+  "women's rights advocate":"여성 권리 옹호자",
+  "workability":"작동 가능성"
 });
