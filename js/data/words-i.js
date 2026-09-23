@@ -2004,7 +2004,6 @@ Object.assign(window.GLOSS, {
   "meddling": "쓸데없는 참견",
   "mediation": "조정",
   "member": "구성원",
-  "menace": "으르다",
   "mental capacity": "정신적 역량",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",

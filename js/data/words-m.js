@@ -499,13 +499,126 @@ window.VOCAB_M = [
      원본('평범한' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다. */
   { word:"mediocre", pron:"미디오커", pos:"adj", level:"C1", meanings:["평범한","그저 그런"],
     syn:["indifferent","run-of-the-mill","so-so"], ant:["brilliant"],
-    ex:[{ s:"The food was expensive but distinctly {{}}.", f:"mediocre", ko:"음식은 비쌌지만 뚜렷하게 평범했다." }] }
+    ex:[{ s:"The food was expensive but distinctly {{}}.", f:"mediocre", ko:"음식은 비쌌지만 뚜렷하게 평범했다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────── */
+
+  { word:"meditation", pron:"메더테이션", pos:"n", level:"B2", meanings:["명상","심사숙고"],
+    syn:["contemplation","reflection","mindfulness"],
+    ex:[{ s:"She begins each day with twenty minutes of {{}}.", f:"meditation", ko:"그녀는 매일 20분의 명상으로 하루를 시작한다." }] },
+
+  /* 고유명사다. Mars 와 같이 기존 AI·Antarctic·CEO 선례를 따른다.
+     syn 을 비워 두었다 — 바다 이름을 바꿔 쓸 낱말이 없다. */
+  { word:"Mediterranean", pron:"메디터레이니언", pos:"n", level:"B2", meanings:["지중해"],
+    ex:[{ s:"Olive trees grow all around the {{}}.", f:"Mediterranean", ko:"올리브 나무가 지중해 전역에 자란다." }] },
+
+  /* 원본 셋째 갈래 '중간의'(형용사)는 pos 가 n 이라 담지 못했다. */
+  { word:"medium", pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
+    syn:["middle ground","channel","vehicle"],
+    ex:[{ s:"Radio was once the main {{}} for news.", f:"medium", ko:"라디오는 한때 뉴스의 주된 매개물이었다." }] },
+
+  /* 승격 ② — GLOSS '우울, 침울함' 으로 명사였다. depression(syn) 이 참조하는데
+     그쪽도 명사라 pos 를 n 으로 유지했다. 원본은 형용사('우울한')인데 그대로 쓰면
+     D 세트 depressed·G 세트 gloomy 와 첫 뜻이 같아지므로 사전 쪽이 낫다. */
+  { word:"melancholy", pron:"멜런칼리", pos:"n", level:"C1", meanings:["우울","침울함"],
+    syn:["depression","gloom","sadness"],
+    ex:[{ s:"A deep {{}} settled over the household.", f:"melancholy", ko:"깊은 우울이 그 집안에 내려앉았다." }] },
+
+  { word:"mellow", pron:"멜로", pos:"adj", level:"C1", meanings:["부드러운","감미로운"],
+    syn:["smooth","soothing","rich"], ant:["harsh"],
+    ex:[{ s:"The wine had a {{}} oaky flavour.", f:"mellow", ko:"그 포도주는 부드러운 오크 향이 났다." }] },
+
+  /* 승격 ① — GLOSS '녹다, 녹이다' 를 글자까지 지켰다. dissolve(syn) 가 참조한다.
+     첫 뜻이 dissolve 와 같은데 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다. */
+  { word:"melt", pron:"멜트", pos:"v", level:"B1", meanings:["녹다","녹이다"],
+    syn:["dissolve","thaw","liquefy"], ant:["freeze"],
+    ex:[{ s:"The glaciers {{}} faster every summer.", f:"melt", ko:"그 빙하는 해마다 여름에 더 빨리 녹는다." }] },
+
+  /* 승격 ① — GLOSS '회고록' 을 첫 자리에 지켰다.
+     autobiography(syn)·biography(syn) 두 문제가 참조한다.
+     원본의 '자서전' 을 둘째 자리에 붙였다. */
+  { word:"memoir", pron:"메무아", pos:"n", level:"C1", meanings:["회고록","자서전"],
+    syn:["autobiography","biography","life story"],
+    ex:[{ s:"His wartime {{}} became a bestseller.", f:"memoir", ko:"그의 전시 회고록은 베스트셀러가 되었다." }] },
+
+  /* 승격 ② — GLOSS '기념물; 추모의' 였다. '추모의' 는 '추도의' 의 오기로 보이고
+     참조도 PRON 도 없어, 원본의 '기념의, 추도의' 를 형용사로 정리했다.
+     memoir 와 앞 네 글자가 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"memorial", pron:"머모리얼", pos:"adj", level:"B2", meanings:["기념의","추도의"],
+    syn:["commemorative","remembrance","honoring"],
+    ex:[{ s:"A {{}} service was held at the cathedral.", f:"memorial", ko:"대성당에서 추도 예배가 열렸다." }] },
+
+  /* 승격 ① — GLOSS '으르다' 를 첫 자리에 지켰다. I 세트 intimidate 가 참조한다.
+     원본 '위협적인' 은 형용사인데 menace 는 명사·동사다 — '위협적인' 은
+     menacing 의 뜻이어서 원본이 틀렸다. 사전의 동사 갈래를 따르고 원본의
+     '위협' 대신 '위협하다' 로 적었다. */
+  { word:"menace", pron:"메너스", pos:"v", level:"C1", meanings:["으르다","위협하다"],
+    syn:["intimidate","threaten","bully"],
+    ex:[{ s:"Stray dogs began to {{}} the neighbourhood.", f:"menace", ko:"떠돌이 개들이 그 동네를 위협하기 시작했다." }] },
+
+  /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
+     참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
+  { word:"mental", pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+    syn:["cognitive","psychological","intellectual"], ant:["physical"],
+    ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
+
+  /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
+     원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
+  { word:"mention", pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+    syn:["cite","refer to","bring up"],
+    ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
+
+  /* mental·mention 과 앞 네 글자가 같지만 품사가 셋 다 달라(adj/v/n)
+     같은 보드에 안 온다. */
+  { word:"mentor", pron:"멘토", pos:"n", level:"B2", meanings:["조언자","스승"],
+    syn:["adviser","guide","coach"],
+    ex:[{ s:"She credits her old {{}} for the career change.", f:"mentor", ko:"그녀는 진로 변경을 옛 조언자의 공으로 돌린다." }] },
+
+  { word:"merchant", pron:"머천트", pos:"n", level:"B2", meanings:["상인","무역상"],
+    syn:["trader","dealer","vendor"],
+    ex:[{ s:"A silk {{}} settled in the port town.", f:"merchant", ko:"한 비단 상인이 그 항구 도시에 정착했다." }] },
+
+  /* 승격 ① — GLOSS '자비로운' 을 첫 자리에 지켰다. compassionate(syn) 가 참조한다.
+     원본의 '인정 많은' 을 둘째 자리에 붙였다. */
+  { word:"merciful", pron:"머시풀", pos:"adj", level:"B2", meanings:["자비로운","인정 많은"],
+    syn:["compassionate","lenient","forgiving"], ant:["ruthless"],
+    ex:[{ s:"The judge was unusually {{}} in sentencing.", f:"merciful", ko:"그 판사는 형을 정할 때 이례적으로 자비로웠다." }] },
+
+  { word:"mercury", pron:"머큐리", pos:"n", level:"B2", meanings:["수은"],
+    syn:["quicksilver","liquid metal","heavy metal"],
+    ex:[{ s:"Old thermometers were filled with {{}}.", f:"mercury", ko:"옛 온도계에는 수은이 채워져 있었다." }] },
+
+  { word:"mere", pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
+    syn:["nothing more than","bare","scant"],
+    ex:[{ s:"The whole repair took a {{}} ten minutes.", f:"mere", ko:"수리 전체가 겨우 10분밖에 걸리지 않았다." }] },
+
+  /* 승격 ① — GLOSS '합치다, 병합하다' 를 글자까지 지켰다. 참조가 4곳
+     (blend·combine·consolidate·incorporate)이고 마지막은 I 세트 표제어다.
+     원본의 '합병하다, 합체시키다' 도 같은 갈래다. */
+  { word:"merge", pron:"머지", pos:"v", level:"B2", meanings:["합치다","병합하다"],
+    syn:["blend","combine","consolidate"], ant:["separate"],
+    ex:[{ s:"The two departments will {{}} next year.", f:"merge", ko:"두 부서는 내년에 합쳐질 것이다." }] },
+
+  /* 원본 셋째 갈래 '난잡' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"mess", pron:"메스", pos:"n", level:"B1", meanings:["엉망","혼란"],
+    syn:["muddle","disorder","clutter"],
+    ex:[{ s:"The kitchen was left in a complete {{}}.", f:"mess", ko:"부엌이 완전히 엉망으로 남겨졌다." }] },
+
+  /* mess 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"messy", pron:"메시", pos:"adj", level:"B1", meanings:["엉망인","지저분한"],
+    syn:["untidy","cluttered","disorderly"], ant:["neat"],
+    ex:[{ s:"His desk is always {{}} by Friday.", f:"messy", ko:"그의 책상은 금요일이면 늘 엉망이다." }] },
+
+  { word:"metabolic", pron:"메터발릭", pos:"adj", level:"C1", meanings:["신진대사의"],
+    syn:["biochemical","energy-processing","physiological"],
+    ex:[{ s:"Cold weather raises the body's {{}} rate.", f:"metabolic", ko:"추운 날씨는 신체의 신진대사율을 높인다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "adage": "오래된 격언",
   "add up": "앞뒤가 맞다",
+  "adviser": "조언해 주는 사람",
   "appreciable": "느낄 만한",
   "arbitrate": "조정을 맡다",
   "archaic": "옛 시대의",
@@ -513,6 +626,7 @@ Object.assign(window.GLOSS, {
   "at the same time": "동시에",
   "atone for": "~을 벌충하다",
   "be logical": "논리에 맞다",
+  "biochemical": "생화학의",
   "bog": "늪지",
   "bone marrow": "뼈 속 골수",
   "book ahead": "미리 예약하다",
@@ -523,18 +637,26 @@ Object.assign(window.GLOSS, {
   "churn out": "쏟아 내다",
   "classic": "고전적 명작",
   "clear a path for": "~을 위해 길을 트다",
+  "clutter": "잡다하게 쌓인 것",
+  "cluttered": "잡동사니로 찬",
+  "coach": "지도해 주는 사람",
   "combat sport": "격투 종목",
+  "commemorative": "기리기 위한",
   "complain loudly": "큰 소리로 불평하다",
   "conjugal": "혼인 관계의",
   "conjurer": "요술쟁이",
+  "contemplation": "깊이 헤아림",
   "contrivance": "고안된 장치",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
   "crowning work": "최고의 성취작",
+  "disorderly": "어수선한",
   "drug treatment": "약물 요법",
+  "energy-processing": "에너지를 처리하는",
   "enrage": "분노하게 하다",
   "exasperate": "속을 뒤집어 놓다",
   "fighting art": "싸움 기술",
+  "forgiving": "너그럽게 용서하는",
   "foul-smelling": "역한 냄새의",
   "gain ground": "기반을 넓히다",
   "gauging": "재는 일",
@@ -546,7 +668,9 @@ Object.assign(window.GLOSS, {
   "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
   "hands-on": "직접 손을 쓰는",
+  "heavy metal": "중금속",
   "hold water": "말이 성립하다",
+  "honoring": "기려 받드는",
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
@@ -557,6 +681,7 @@ Object.assign(window.GLOSS, {
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
   "kick up a row": "한바탕 소동을 벌이다",
+  "liquid metal": "액체 금속",
   "machine-driven": "기계로 움직이는",
   "magnetized": "자기를 띤",
   "magnum opus": "대표 역작",
@@ -567,6 +692,8 @@ Object.assign(window.GLOSS, {
   "manufacture at scale": "규모를 갖춰 제조하다",
   "matrimonial": "혼인상의",
   "meet the standard of": "~의 기준을 채우다",
+  "middle ground": "중간 지점",
+  "mindfulness": "마음을 살피는 일",
   "misconduct": "부정 행위",
   "mishandle": "잘못 다루다",
   "most": "대부분의 것",
@@ -574,9 +701,11 @@ Object.assign(window.GLOSS, {
   "muster": "소집하다",
   "nasty": "고약한",
   "navigate": "길을 찾아 나아가다",
+  "neat": "깔끔한",
   "negligence": "태만, 부주의",
   "negligible": "무시해도 될 만한",
   "non-automatic": "자동이 아닌",
+  "nothing more than": "~에 지나지 않는",
   "nurturing": "보살피는",
   "obsession": "집착",
   "obstetric": "산과의",
@@ -594,12 +723,16 @@ Object.assign(window.GLOSS, {
   "pronounced": "두드러진",
   "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
+  "psychological": "심리의",
   "pull it off": "끝내 해내다",
   "quantifiable": "수치로 잴 수 있는",
+  "quicksilver": "수은",
   "reeking": "악취를 풍기는",
+  "refer to": "~을 들어 말하다",
   "robotic": "로봇처럼 움직이는",
   "rubeola": "홍역 바이러스병",
   "run-of-the-mill": "흔해 빠진",
+  "sadness": "슬픔",
   "saying": "속담",
   "scant": "간신히 되는",
   "self-defense skill": "호신 기술",
@@ -609,6 +742,7 @@ Object.assign(window.GLOSS, {
   "smelly": "냄새 나는",
   "so-so": "그저 그런",
   "soothe": "달래다",
+  "soothing": "마음을 누그러뜨리는",
   "spiteful": "앙심을 품은",
   "splendor": "화려함",
   "staffed": "인원이 배치된",
@@ -616,10 +750,14 @@ Object.assign(window.GLOSS, {
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
   "swamp": "늪",
+  "thaw": "얼음이 풀리다",
+  "trader": "거래하는 사람",
   "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",
   "unmanned": "무인의",
+  "untidy": "정돈되지 않은",
+  "vendor": "판매하는 사람",
   "venomous": "독기 서린",
   "vindictive": "앙갚음하려는",
   "viral rash": "바이러스성 발진",
