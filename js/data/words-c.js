@@ -2000,7 +2000,6 @@ Object.assign(window.GLOSS, {
   "insulator":"절연체",
   "intermittent":"간헐적인, 이따금의",
   "laity":"평신도",
-  "liberate":"해방하다, 풀어 주다",
   "loneliness":"외로움",
   "military":"군사의, 군대의",
   "minor":"사소한, 작은",

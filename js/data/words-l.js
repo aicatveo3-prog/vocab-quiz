@@ -250,41 +250,174 @@ window.VOCAB_L = [
 
   { word:"legend", pron:"레전드", pos:"n", level:"B1", meanings:["전설","설화"],
     syn:["myth","folk tale","saga"],
-    ex:[{ s:"Every village has its own {{}} about the lake.", f:"legend", ko:"모든 마을은 그 호수에 대한 자기만의 전설을 갖고 있다." }] }
+    ex:[{ s:"Every village has its own {{}} about the lake.", f:"legend", ko:"모든 마을은 그 호수에 대한 자기만의 전설을 갖고 있다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '전설적인' 을 첫 자리에 지켰다. I 세트 iconic 이 참조한다.
+     원본의 '아주 유명한' 을 둘째 자리에 붙였다. */
+  { word:"legendary", pron:"레전데리", pos:"adj", level:"B2", meanings:["전설적인","아주 유명한"],
+    syn:["iconic","fabled","renowned"],
+    ex:[{ s:"His generosity was {{}} in the village.", f:"legendary", ko:"그의 너그러움은 그 마을에서 전설적이었다." }] },
+
+  /* 승격 ① — GLOSS '읽기 쉬운' 을 첫 자리에 지켰다. I 세트 illegible 의 반의어다.
+     원본의 '명료한' 을 둘째 자리에 붙였다.
+     legitimate 과 어근·품사가 같아 같은 보드에 올 수 있지만 뜻이 '읽기 쉬운' 과
+     '정당한' 으로 완전히 달라 무리가 없다. */
+  { word:"legible", pron:"레저블", pos:"adj", level:"C1", meanings:["읽기 쉬운","명료한"],
+    syn:["readable","decipherable","clear-cut"], ant:["illegible"],
+    ex:[{ s:"His handwriting is only just {{}}.", f:"legible", ko:"그의 필체는 간신히 읽을 수 있을 정도다." }] },
+
+  /* 승격 ① — GLOSS '법률, 법규' 를 글자까지 지켰다. act(syn)·bill(syn) 두 문제가
+     참조하므로 원본('법률 제정, 입법') 대신 사전 쪽을 남겼다. */
+  { word:"legislation", pron:"레지슬레이션", pos:"n", level:"B2", meanings:["법률","법규"],
+    syn:["act","bill","statute"],
+    ex:[{ s:"New {{}} on data privacy takes effect in January.", f:"legislation", ko:"개인정보에 관한 새 법률이 1월에 발효된다." }] },
+
+  /* 원본 뜻은 '합법적인, 적법의' 로 legal 과 첫 뜻이 같았다. legal 이 '합법적인' 을
+     가져가고 이쪽은 '정당한' 으로 돌렸다 — 근거가 옳다는 쪽이다. */
+  { word:"legitimate", pron:"리지터멋", pos:"adj", level:"B2", meanings:["정당한","적법한"],
+    syn:["valid","justifiable","well-founded"], ant:["illegitimate"],
+    ex:[{ s:"She had a {{}} reason for missing the meeting.", f:"legitimate", ko:"그녀는 회의에 빠진 데 정당한 이유가 있었다." }] },
+
+  { word:"leisurely", pron:"리저리", pos:"adj", level:"B2", meanings:["느긋한","여유 있는"],
+    syn:["unhurried","relaxed","easygoing"], ant:["hurried"],
+    ex:[{ s:"They took a {{}} walk along the river.", f:"leisurely", ko:"그들은 강을 따라 느긋한 산책을 했다." }] },
+
+  /* 승격 ① — GLOSS '기간; 길이' 를 글자까지 지켰다. duration(syn) 이 '기간' 갈래를
+     참조하므로 원본('길이')이 아니라 사전 순서를 남겼다. */
+  { word:"length", pron:"렝스", pos:"n", level:"B1", meanings:["기간","길이"],
+    syn:["duration","extent","span"],
+    ex:[{ s:"The {{}} of the course is twelve weeks.", f:"length", ko:"그 과정의 기간은 12주다." }] },
+
+  { word:"less developed", pron:"레스 디벨럽트", pos:"phr", level:"C1", meanings:["저개발의"],
+    syn:["underdeveloped","less advanced","industrially behind"] },
+
+  /* 승격 ① — GLOSS '줄이다, 줄어들다' 를 글자까지 지켰다. 참조가 5곳
+     (cut back on·dampen·decrease·detract·diminish)으로 이 세트에서 가장 많다.
+     원본('줄이다, 감소시키다')과 같은 갈래다.
+     바로 뒤 lesson 과 한글 발음이 '레슨' 으로 같다 — 영어에서도 동음이의어
+     쌍이고 품사가 달라(v/n) 같은 보드에 오지 않는다. */
+  { word:"lessen", pron:"레슨", pos:"v", level:"B2", meanings:["줄이다","줄어들다"],
+    syn:["diminish","decrease","abate"], ant:["increase"],
+    ex:[{ s:"Painkillers will {{}} the discomfort for a while.", f:"lessen", ko:"진통제가 한동안 불편함을 줄여 줄 것이다." }] },
+
+  { word:"lesson", pron:"레슨", pos:"n", level:"B1", meanings:["교훈","수업"],
+    syn:["moral","class","tutorial"],
+    ex:[{ s:"The failure taught him a valuable {{}}.", f:"lesson", ko:"그 실패는 그에게 값진 교훈을 가르쳤다." }] },
+
+  /* 승격 ① — GLOSS '실망시키다' 를 첫 자리에 지켰다. disappointed(syn) 가 참조한다.
+     원본의 '낙담시키다' 를 둘째 자리에 붙였다. */
+  { word:"let down", pron:"렛 다운", pos:"phr", level:"B2", meanings:["실망시키다","낙담시키다"],
+    syn:["disappoint","dishearten","fail"] },
+
+  /* 승격 ① — GLOSS '치사의, 죽음에 이르는' 을 글자까지 지켰다.
+     deadly(syn)·fatal(syn) 두 문제가 참조하므로 원본의 '치명적인' 대신 사전 쪽을
+     남겼다 — 같은 갈래다. */
+  { word:"lethal", pron:"리설", pos:"adj", level:"B2", meanings:["치사의","죽음에 이르는"],
+    syn:["deadly","fatal","mortal"], ant:["harmless"],
+    ex:[{ s:"The dose was high enough to be {{}}.", f:"lethal", ko:"그 투여량은 치사에 이를 만큼 높았다." }] },
+
+  { word:"level-headed", pron:"레벌 헤딧", pos:"adj", level:"C1", meanings:["침착한","분별력 있는"],
+    syn:["composed","sensible","unflappable"], ant:["rash"],
+    ex:[{ s:"In a crisis she stays remarkably {{}}.", f:"level-headed", ko:"위기에서 그녀는 놀랍게 침착하다." }] },
+
+  { word:"levity", pron:"레버티", pos:"n", level:"C2", meanings:["가벼움","경솔"],
+    syn:["frivolity","flippancy","lightheartedness"], ant:["gravity"],
+    ex:[{ s:"A moment of {{}} eased the tension in the room.", f:"levity", ko:"잠깐의 가벼움이 방 안의 긴장을 풀었다." }] },
+
+  { word:"liable", pron:"라이어블", pos:"adj", level:"C1", meanings:["~하기 쉬운","책임이 있는"],
+    syn:["prone","susceptible","answerable"],
+    ex:[{ s:"Metal parts are {{}} to rust in damp air.", f:"liable", ko:"금속 부품은 습한 공기에서 녹이 슬기 쉽다." }] },
+
+  /* 승격 ② — GLOSS '후한, 너그러운' 이다. generous(syn) 가 참조하는 갈래가 '후한'
+     이라 첫 자리에 지켰다. 둘째는 원본의 핵심 뜻 '진보적인' 으로 바꿨다 —
+     사전의 '너그러운' 은 I 세트 indulgent('너그러운, 관대한')와 거의 같은 글자여서
+     비켜 둘 이유도 있었다. */
+  { word:"liberal", pron:"리버럴", pos:"adj", level:"B2", meanings:["후한","진보적인"],
+    syn:["generous","broad-minded","progressive"], ant:["conservative"],
+    ex:[{ s:"He was known for his {{}} donations to the school.", f:"liberal", ko:"그는 학교에 후한 기부로 알려져 있었다." }] },
+
+  /* 승격 ① — GLOSS '해방하다, 풀어 주다' 를 글자까지 지켰다. constrain(ant) 이
+     참조한다. 원본('해방시키다, 자유롭게 하다')과 같은 갈래다.
+     liberal 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 안 온다. */
+  { word:"liberate", pron:"리버레이트", pos:"v", level:"B2", meanings:["해방하다","풀어 주다"],
+    syn:["free","release","emancipate"], ant:["constrain"],
+    ex:[{ s:"The troops moved in to {{}} the city.", f:"liberate", ko:"군대가 그 도시를 해방하기 위해 진입했다." }] },
+
+  { word:"library collection", pron:"라이브레리 컬렉션", pos:"phr", level:"C1", meanings:["도서관 장서"],
+    syn:["library holdings","book stock","archive"] },
+
+  { word:"lid", pron:"리드", pos:"n", level:"B1", meanings:["뚜껑"],
+    syn:["cover","cap","top"],
+    ex:[{ s:"Screw the {{}} on tightly before shaking.", f:"lid", ko:"흔들기 전에 뚜껑을 꽉 돌려 닫으세요." }] },
+
+  /* 원본 셋째 갈래 '놓여 있다' 는 '있다' 와 같은 갈래라 뺐다. */
+  { word:"lie", pron:"라이", pos:"v", level:"B1", meanings:["있다","눕다"],
+    syn:["be situated","recline","rest"],
+    ex:[{ s:"The village {{}} at the foot of the mountain.", f:"lies", ko:"그 마을은 산 밑에 있다." }] },
+
+  /* 승격 ① — GLOSS '실물과 같은 크기의' 를 글자까지 지켰다. full-scale(syn) 이
+     참조한다. 첫 뜻이 full-scale 과 같은데 그쪽이 이 낱말을 유의어로 쓰므로
+     같은 갈래가 맞다. */
+  { word:"life-size", pron:"라이프 사이즈", pos:"adj", level:"C1", meanings:["실물과 같은 크기의"],
+    syn:["full-scale","actual-size","true to size"],
+    ex:[{ s:"The museum displays a {{}} model of the ship.", f:"life-size", ko:"그 박물관은 배의 실물 크기 모형을 전시한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "abate": "잦아들다",
   "above board": "숨김 없이 정당한",
+  "actual-size": "실제 크기의",
   "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
+  "answerable": "책임을 져야 하는",
   "arduous": "몹시 힘든",
   "be outpaced": "앞질리다",
+  "be situated": "위치해 있다",
   "become void": "무효가 되다",
   "booby trap": "위장 폭탄",
+  "book stock": "보유 도서",
   "bound": "껑충 뛰다",
   "bound off": "껑충 뛰어 내려가다",
+  "broad-minded": "아량이 넓은",
   "buried explosive": "땅에 묻은 폭발물",
+  "cap": "마개",
   "coating": "입힌 막",
+  "composed": "차분한",
   "court case": "법정 사건",
   "crippled": "다리를 못 쓰는",
+  "decipherable": "판독할 수 있는",
+  "disappoint": "기대를 깨다",
   "dismissal": "해임",
   "drudgery": "고된 일",
+  "emancipate": "속박에서 풀다",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
+  "fabled": "이야기로 유명한",
   "flanking": "측면을 이루는",
+  "flippancy": "경박한 말투",
   "flyer": "광고 쪽지",
   "folk tale": "민간 설화",
+  "frivolity": "시시한 짓",
   "guide": "안내하다",
   "handbill": "살포용 광고지",
   "hobbling": "다리를 끌며 걷는",
+  "hurried": "서두른",
   "ignorant": "무지한",
+  "illegitimate": "정당하지 못한",
+  "industrially behind": "산업이 뒤처진",
   "job cut": "일자리 감축",
   "jump off": "뛰어서 내려가다",
+  "justifiable": "이유가 서는",
   "kick off": "시작하다",
   "lab": "실험실",
   "legal action": "법적 조치",
+  "less advanced": "덜 발전한",
   "lessor": "임대인",
+  "library holdings": "도서관 소장 자료",
+  "lightheartedness": "마음 가벼움",
   "limping": "다리를 저는",
   "litigation": "소송 절차",
   "make redundant": "정리 해고하다",
@@ -299,10 +432,13 @@ Object.assign(window.GLOSS, {
   "predominantly": "주로, 대부분은",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",
+  "readable": "알아볼 수 있는",
+  "recline": "몸을 뒤로 젖히다",
   "redundancy": "정리 해고",
   "regrettable": "유감스러운",
   "rent out": "세를 놓다",
   "research facility": "연구 시설",
+  "rest": "놓여 있다",
   "saga": "긴 무훈담",
   "seep out": "스며 나오다",
   "seepage": "스며 나옴",
@@ -322,7 +458,12 @@ Object.assign(window.GLOSS, {
   "time lag": "시간차",
   "tip": "쓰레기장",
   "toil": "고생스러운 노동",
+  "true to size": "크기가 실제와 맞는",
+  "tutorial": "개별 지도 수업",
+  "underdeveloped": "개발이 덜 된",
   "uneaten": "먹지 않은",
+  "unflappable": "동요하지 않는",
+  "unhurried": "서두르지 않는",
   "vault": "짚고 뛰어넘다",
   "waste site": "폐기물 처리장",
   "well-read": "책을 많이 읽은"

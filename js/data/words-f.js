@@ -1949,7 +1949,6 @@ Object.assign(window.GLOSS, {
   "hoarfrost":"흰 서리",
   "ice crystals":"얼음 결정",
   "knit the brows":"눈살을 모으다",
-  "life-size":"실물과 같은 크기의",
   "live up to":"~에 걸맞게 하다",
   "look displeased":"못마땅한 표정을 짓다",
   "mildew":"흰곰팡이",

@@ -734,7 +734,6 @@ Object.assign(window.GLOSS, {
   "kernel":"알맹이",
   "landscape":"풍경, 지형",
   "lattice":"격자 구조",
-  "liberal":"후한, 너그러운",
   "lifelike":"실물 같은",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
