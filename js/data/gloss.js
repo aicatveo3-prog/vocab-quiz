@@ -936,7 +936,6 @@ Object.assign(window.GLOSS, {
   "intend":"의도하다, 계획하다",
   "interbreed":"교배하다",
   "intercultural":"문화간의",
-  "interdependent":"상호 의존적인",
   "interested":"관심 있는",
   "intermediary":"중재자, 중개인",
   "international":"국제적인",
