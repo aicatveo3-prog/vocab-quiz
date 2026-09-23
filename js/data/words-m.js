@@ -268,7 +268,115 @@ window.VOCAB_M = [
      뚜렷하다는 뜻이고, 표시가 붙었다는 뜻도 있어 '표시된' 으로 고쳤다. */
   { word:"marked", pron:"마크트", pos:"adj", level:"B2", meanings:["뚜렷한","표시된"],
     syn:["noticeable","pronounced","conspicuous"], ant:["slight"],
-    ex:[{ s:"There has been a {{}} improvement in air quality.", f:"marked", ko:"대기 질에 뚜렷한 개선이 있었다." }] }
+    ex:[{ s:"There has been a {{}} improvement in air quality.", f:"marked", ko:"대기 질에 뚜렷한 개선이 있었다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────── */
+
+  /* 원본 첫 뜻 '뼈골' 은 표준어가 아니어서 '골수, 뼛속' 으로 고쳤다. */
+  { word:"marrow", pron:"매로", pos:"n", level:"C1", meanings:["골수","뼛속"],
+    syn:["bone marrow","pith","innermost part"],
+    ex:[{ s:"The transplant replaced the patient's bone {{}}.", f:"marrow", ko:"그 이식은 환자의 골수를 대체했다." }] },
+
+  /* 고유명사다. 기존에 AI·Antarctic·CEO 선례가 있어 대문자로 시작해도 문제없다.
+     syn 을 비워 두었다 — 행성 이름을 바꿔 쓸 낱말이 없다. */
+  { word:"Mars", pron:"마즈", pos:"n", level:"B1", meanings:["화성"],
+    ex:[{ s:"The rover sent back images from the surface of {{}}.", f:"Mars", ko:"그 탐사차는 화성 표면에서 영상을 보내왔다." }] },
+
+  /* marshal 과 앞 다섯 글자가 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
+  { word:"marsh", pron:"마시", pos:"n", level:"B2", meanings:["습지","늪"],
+    syn:["swamp","wetland","bog"],
+    ex:[{ s:"Rare birds nest in the coastal {{}}.", f:"marsh", ko:"희귀한 새들이 해안 습지에 둥지를 튼다." }] },
+
+  { word:"marshal", pron:"마셜", pos:"v", level:"C2", meanings:["집결시키다","정렬시키다"],
+    syn:["assemble","muster","line up"],
+    ex:[{ s:"The general began to {{}} his forces at dawn.", f:"marshal", ko:"그 장군은 새벽에 병력을 집결시키기 시작했다." }] },
+
+  { word:"martial", pron:"마셜", pos:"adj", level:"C1", meanings:["군사의","전쟁의"],
+    syn:["military","warlike","combative"],
+    ex:[{ s:"The government declared {{}} law that night.", f:"martial", ko:"정부는 그날 밤 계엄령을 선포했다." }] },
+
+  { word:"martial art", pron:"마셜 아트", pos:"phr", level:"B2", meanings:["무술"],
+    syn:["combat sport","self-defense skill","fighting art"] },
+
+  /* marvelous 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"marvel", pron:"마벌", pos:"n", level:"B2", meanings:["경이","놀라운 일"],
+    syn:["wonder","phenomenon","sensation"],
+    ex:[{ s:"The bridge is a {{}} of modern engineering.", f:"marvel", ko:"그 다리는 현대 공학의 경이다." }] },
+
+  /* 승격 ① — GLOSS '놀라운, 굉장한' 을 글자까지 지켰다. fabulous(syn) 가
+     참조하므로 원본의 '멋진' 대신 사전 쪽을 남겼다. */
+  { word:"marvelous", pron:"마벌러스", pos:"adj", level:"B2", meanings:["놀라운","굉장한"],
+    syn:["fabulous","wondrous","stunning"],
+    ex:[{ s:"She has a {{}} memory for names.", f:"marvelous", ko:"그녀는 이름을 기억하는 놀라운 능력이 있다." }] },
+
+  /* 승격 ① — GLOSS '남성적인' 과 같은 갈래다. feminine(ant) 이 참조한다.
+     원본 '남성의, 남자다운' 도 같은 갈래라 사전 쪽 한 갈래로 두었다. */
+  { word:"masculine", pron:"매스큘린", pos:"adj", level:"B2", meanings:["남성적인"],
+    syn:["manly","virile","male"], ant:["feminine"],
+    ex:[{ s:"The design has a distinctly {{}} feel.", f:"masculine", ko:"그 디자인은 뚜렷하게 남성적인 느낌을 준다." }] },
+
+  /* 승격 ① — GLOSS '다량; 질량' 을 글자까지 지켰다. bulk(syn)·lump(syn) 두 문제가
+     참조한다. 원본 첫 뜻 '덩어리' 를 쓰면 L 세트 lump·C 세트 cluster 와 첫 뜻이
+     같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"mass", pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
+    syn:["bulk","lump","quantity"],
+    ex:[{ s:"A {{}} of paperwork arrived that morning.", f:"mass", ko:"그날 아침 다량의 서류가 도착했다." }] },
+
+  { word:"mass produce", pron:"매스 프러두스", pos:"phr", level:"B2", meanings:["대량 생산하다"],
+    syn:["turn out in bulk","churn out","manufacture at scale"] },
+
+  /* 승격 ① — GLOSS '거대한, 대량의' 와 같은 갈래다. 참조도 PRON 도 없어
+     원본 뜻을 그대로 썼다. */
+  { word:"massive", pron:"매시브", pos:"adj", level:"B2", meanings:["거대한","매우 큰"],
+    syn:["colossal","immense","hulking"], ant:["tiny"],
+    ex:[{ s:"A {{}} oak stood at the centre of the lawn.", f:"massive", ko:"거대한 떡갈나무가 잔디밭 가운데 서 있었다." }] },
+
+  /* 승격 ① — GLOSS '숙련자, 장인' 을 글자까지 지켰다.
+     apprentice(ant)·expert(syn) 두 문제가 참조하므로 원본의 '대가, 거장' 대신
+     사전 쪽을 남겼다 — 같은 갈래다. 원본의 동사 갈래('숙련하다')는 pos 가 n 이라 뺐다. */
+  { word:"master", pron:"매스터", pos:"n", level:"B1", meanings:["숙련자","장인"],
+    syn:["expert","virtuoso","adept"], ant:["apprentice"],
+    ex:[{ s:"He trained for years under a {{}} of the craft.", f:"master", ko:"그는 그 공예의 숙련자 밑에서 여러 해 훈련했다." }] },
+
+  /* master 와 어근이 같지만 품사가 둘 다 n 이라 같은 보드에 올 수 있다.
+     다만 뜻이 '숙련자' 와 '걸작' 으로 완전히 달라 무리가 없다. */
+  { word:"masterpiece", pron:"매스터피스", pos:"n", level:"B2", meanings:["걸작"],
+    syn:["magnum opus","crowning work","classic"],
+    ex:[{ s:"The novel is widely regarded as his {{}}.", f:"masterpiece", ko:"그 소설은 널리 그의 걸작으로 평가된다." }] },
+
+  /* 원본은 동사를 앞에 두므로 pos 를 v 로 잡았다. 명사 갈래('친구, 짝')는 뺐다. */
+  { word:"mate", pron:"메이트", pos:"v", level:"B2", meanings:["짝짓기하다","교배하다"],
+    syn:["breed","pair off","couple"],
+    ex:[{ s:"These birds {{}} for life.", f:"mate", ko:"이 새들은 평생 짝짓기한다." }] },
+
+  /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
+     문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
+  { word:"material", pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
+    syn:["fabric","substance","stuff"],
+    ex:[{ s:"The jacket is made from recycled {{}}.", f:"material", ko:"그 재킷은 재활용 재료로 만들어졌다." }] },
+
+  /* material 과 앞 다섯 글자가 같지만 어원이 갈리고 품사도 달라(n/adj)
+     같은 보드에 안 온다. */
+  { word:"maternal", pron:"머터널", pos:"adj", level:"C1", meanings:["모성의","어머니의"],
+    syn:["motherly","nurturing","protective"], ant:["paternal"],
+    ex:[{ s:"She felt a strong {{}} instinct from the first day.", f:"maternal", ko:"그녀는 첫날부터 강한 모성 본능을 느꼈다." }] },
+
+  { word:"maternity", pron:"머터너티", pos:"adj", level:"C1", meanings:["출산의","임산부의"],
+    syn:["prenatal","obstetric","childbearing"],
+    ex:[{ s:"She took six months of {{}} leave.", f:"maternity", ko:"그녀는 6개월의 출산 휴가를 냈다." }] },
+
+  /* 승격 ① — GLOSS '문제; 물질' 을 글자까지 지켰다. content(syn) 가 참조한다.
+     원본의 '일' 은 '문제' 와 같은 갈래이고, 동사 갈래('중요하다')는 pos 가 n 이라 뺐다. */
+  { word:"matter", pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
+    syn:["issue","affair","substance"],
+    ex:[{ s:"We need to settle this {{}} before Friday.", f:"matter", ko:"우리는 금요일 전에 이 문제를 해결해야 한다." }] },
+
+  /* 승격 ① — GLOSS '성숙한; 성숙하다' 를 글자까지 지켰다. I 세트 immature 와
+     J 세트 juvenile 이 반의어로 참조하므로 이 갈래가 바뀌면 방금 넣은 문제 화면이
+     바뀐다. 원본의 '다 자란' 은 '성숙한' 과 같은 갈래다. */
+  { word:"mature", pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
+    syn:["grown-up","developed","ripe"], ant:["immature"],
+    ex:[{ s:"He is remarkably {{}} for his age.", f:"mature", ko:"그는 나이에 비해 놀랄 만큼 성숙하다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -277,23 +385,34 @@ Object.assign(window.GLOSS, {
   "arrive in time": "시간에 맞춰 닿다",
   "atone for": "~을 벌충하다",
   "be logical": "논리에 맞다",
+  "bog": "늪지",
+  "bone marrow": "뼈 속 골수",
   "book ahead": "미리 예약하다",
   "charged": "전하를 띤",
+  "childbearing": "아이를 낳는",
+  "churn out": "쏟아 내다",
+  "classic": "고전적 명작",
   "clear a path for": "~을 위해 길을 트다",
+  "combat sport": "격투 종목",
   "complain loudly": "큰 소리로 불평하다",
   "conjugal": "혼인 관계의",
   "conjurer": "요술쟁이",
+  "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
+  "crowning work": "최고의 성취작",
   "enrage": "분노하게 하다",
   "exasperate": "속을 뒤집어 놓다",
+  "fighting art": "싸움 기술",
   "foul-smelling": "역한 냄새의",
   "gain ground": "기반을 넓히다",
   "glitch": "작은 결함",
   "grandeur": "장대함",
   "greater part": "더 큰 쪽",
+  "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
   "hands-on": "직접 손을 쓰는",
   "hold water": "말이 성립하다",
+  "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
   "ill-natured": "성질이 나쁜",
@@ -301,27 +420,43 @@ Object.assign(window.GLOSS, {
   "illusionist": "환술사",
   "improvised": "즉석에서 만든",
   "infuriate": "격노하게 하다",
+  "innermost part": "가장 깊은 속",
   "kick up a row": "한바탕 소동을 벌이다",
   "magnetized": "자기를 띤",
+  "magnum opus": "대표 역작",
   "majesty": "위엄",
   "make a scene": "사람들 앞에서 난리를 치다",
+  "male": "남성의",
+  "manly": "남자다운",
+  "manufacture at scale": "규모를 갖춰 제조하다",
   "matrimonial": "혼인상의",
   "misconduct": "부정 행위",
   "mishandle": "잘못 다루다",
   "most": "대부분의 것",
+  "motherly": "어머니 같은",
+  "muster": "소집하다",
   "nasty": "고약한",
   "navigate": "길을 찾아 나아가다",
   "negligence": "태만, 부주의",
   "negligible": "무시해도 될 만한",
   "non-automatic": "자동이 아닌",
+  "nurturing": "보살피는",
   "obsession": "집착",
+  "obstetric": "산과의",
   "original copy": "원본",
+  "pair off": "둘씩 짝지다",
+  "paternal": "아버지의",
+  "phenomenon": "현상",
+  "pith": "속심",
   "polarized": "극을 띤",
   "poor diet": "부실한 식사",
   "press forward": "밀고 나아가다",
   "pronounced": "두드러진",
+  "protective": "감싸려 하는",
   "pull it off": "끝내 해내다",
   "reeking": "악취를 풍기는",
+  "self-defense skill": "호신 기술",
+  "sensation": "큰 화제",
   "slight": "미미한",
   "smelly": "냄새 나는",
   "soothe": "달래다",
@@ -331,14 +466,21 @@ Object.assign(window.GLOSS, {
   "steer": "방향을 조종하다",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
+  "swamp": "늪",
+  "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",
   "unmanned": "무인의",
   "venomous": "독기 서린",
   "vindictive": "앙갚음하려는",
+  "virile": "사내다운",
+  "virtuoso": "명인",
+  "warlike": "전쟁을 벌이려는",
   "way": "방식",
   "wedded": "혼인한",
+  "wetland": "습지대",
   "wizard": "마법사",
+  "wondrous": "경이로운",
   "work one's way": "힘써 나아가다",
   "wrongdoing": "비행, 부정"
 });
