@@ -671,7 +671,110 @@ window.VOCAB_O = [
   /* osteoporosis 는 전문어이고 22자다. 유의어 셋을 세울 수 있어 비우지 않았다. */
   { word:"osteoporosis", pron:"아스티오퍼로시스", pos:"n", level:"C2", meanings:["골다공증"],
     syn:["bone-thinning disease","brittle-bone condition","loss of bone density"],
-    ex:[{ s:"Calcium helps guard against {{}}.", f:"osteoporosis", ko:"칼슘은 골다공증을 막는 데 도움이 된다." }] }
+    ex:[{ s:"Calcium helps guard against {{}}.", f:"osteoporosis", ko:"칼슘은 골다공증을 막는 데 도움이 된다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────────────── */
+  /* 'out of ~' 구가 일곱 개 붙는다. 그중 out of date·out of fashion 은 원본이
+     둘 다 '시대에 뒤진, 구식인' 으로 똑같았고, 같은 챕터의 outdated 까지 합쳐
+     셋이 물렸다. 이렇게 갈랐다.
+       out of date '시대에 뒤진'  out of fashion '유행이 지난'  outdated '구식의, 낡은'
+     챕터 1 의 obsolete 는 '한물간, 더 이상 쓰이지 않는' 으로 따로 세워 두었다.  */
+
+  { word:"out of context", pron:"아웃 오브 칸텍스트", pos:"phr", level:"B2", meanings:["전후 관계를 무시하고"],
+    syn:["torn from its setting","stripped of background","without the surrounding words"] },
+
+  { word:"out of control", pron:"아웃 오브 컨트롤", pos:"phr", level:"B1", meanings:["통제할 수 없는"],
+    syn:["beyond restraint","running wild","no longer manageable"] },
+
+  { word:"out of date", pron:"아웃 오브 데이트", pos:"phr", level:"B2", meanings:["시대에 뒤진"],
+    syn:["behind the times","no longer current","past its day"] },
+
+  { word:"out of fashion", pron:"아웃 오브 패션", pos:"phr", level:"B2", meanings:["유행이 지난"],
+    syn:["no longer in style","out of vogue","gone out of favor"] },
+
+  { word:"out of order", pron:"아웃 오브 오더", pos:"phr", level:"B1", meanings:["고장 난"],
+    syn:["not working","broken down","out of action"] },
+
+  /* 원본은 '부적절한; 제자리에 있지 않은' 이었다. '부적절한' 은 improper(I)·
+     misplaced(M) 의 첫 뜻과 같아서 뒤 갈래를 앞세웠다. */
+  { word:"out of place", pron:"아웃 오브 플레이스", pos:"phr", level:"B2", meanings:["제자리에 있지 않은"],
+    syn:["in the wrong spot","not where it belongs","badly positioned"] },
+
+  { word:"out of sync", pron:"아웃 오브 싱크", pos:"phr", level:"B2", meanings:["서로 맞지 않는"],
+    syn:["not matching up","off the beat","failing to line up"] },
+
+  /* 원본은 '(미개척의) 오지, 오지의' 였다. 괄호를 걷고 명사 한 갈래로 정리했다. */
+  { word:"outback", pron:"아웃백", pos:"n", level:"C1", meanings:["오지"],
+    syn:["remote interior","far inland country","back country"],
+    ex:[{ s:"They drove for days across the {{}}.", f:"outback", ko:"그들은 며칠을 오지를 가로질러 달렸다." }] },
+
+  /* 승격 57 — 사전 표현 '발발, 발생' 을 글자까지 지켰다(epidemic, E).
+     원본의 '발발, 급증' 대신 사전 쪽을 남겼다. */
+  { word:"outbreak", pron:"아웃브레이크", pos:"n", level:"B2", meanings:["발발","발생"],
+    syn:["epidemic","sudden spread","flare-up"],
+    ex:[{ s:"An {{}} of flu closed two schools.", f:"outbreak", ko:"독감 발생으로 학교 둘이 문을 닫았다." }] },
+
+  /* 승격 58 — 사전 표현 '터져 나옴, 분출' 을 글자까지 지켰다(eruption, E).
+     원본의 '폭발' 을 쓰면 eruption·explosion(둘 다 E) 의 첫 뜻과 같아진다. */
+  { word:"outburst", pron:"아웃버스트", pos:"n", level:"B2", meanings:["터져 나옴","분출"],
+    syn:["eruption","sudden rush","explosion of feeling"],
+    ex:[{ s:"His angry {{}} shocked the room.", f:"outburst", ko:"그의 성난 터져 나옴이 방을 놀라게 했다." }] },
+
+  { word:"outcast", pron:"아웃캐스트", pos:"n", level:"C1", meanings:["따돌림 당하는 사람"],
+    syn:["rejected person","one pushed out","pariah"],
+    ex:[{ s:"He lived as an {{}} after the trial.", f:"outcast", ko:"그는 재판 뒤 따돌림 당하는 사람으로 살았다." }] },
+
+  /* 승격 59 — ★원본의 '결과, 과정' 에서 '과정' 은 '성과' 의 오타로 보인다.
+     사전의 '결과' 를 첫 자리에 두고 '성과' 를 붙였다(consequence, C).
+     consequence 의 첫 뜻도 '결과' 지만 둘은 서로 유의어다. */
+  { word:"outcome", pron:"아웃컴", pos:"n", level:"B1", meanings:["결과","성과"],
+    syn:["consequence","end result","upshot"],
+    ex:[{ s:"Nobody could predict the {{}} of the vote.", f:"outcome", ko:"아무도 그 투표의 결과를 내다볼 수 없었다." }] },
+
+  /* 승격 60 — 사전 표현 '구식의, 낡은' 을 글자까지 지켰다(발음이 없던 항목이다).
+     원본의 '구식의, 시대에 뒤진, 진부한' 중 '시대에 뒤진' 은 out of date 에 넘겼다. */
+  { word:"outdated", pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
+    syn:["antiquated","no longer up to date","left behind"], ant:["up-to-date"],
+    ex:[{ s:"The software is badly {{}}.", f:"outdated", ko:"그 소프트웨어는 몹시 구식이다." }] },
+
+  /* 승격 61 — 사전 표현 '장비 한 벌' 을 글자까지 지켰다(gear, G).
+     원본의 '장비, 의복' 을 쓰면 equipment·gear 의 첫 뜻 '장비' 와 같아진다. */
+  { word:"outfit", pron:"아웃핏", pos:"n", level:"B2", meanings:["장비 한 벌"],
+    syn:["gear","kit","full set of clothes"],
+    ex:[{ s:"She bought a climbing {{}} for the trip.", f:"outfit", ko:"그녀는 여행을 위해 등반 장비 한 벌을 샀다." }] },
+
+  /* 승격 62 — 사전 표현 '외향적인, 사교적인' 을 글자까지 지켰다
+     (gregarious, G · introverted 의 반의어, I). 원본의 '떠나는' 갈래는 버렸다. */
+  { word:"outgoing", pron:"아웃고잉", pos:"adj", level:"B2", meanings:["외향적인","사교적인"],
+    /* sociable 은 사전 뜻이 gregarious(표제어) 와 똑같이 '사교적인' 이라 검사가
+       잡았다 — 'fond of company' 로 바꿨다. */
+    syn:["gregarious","fond of company","easy with people"], ant:["introverted"],
+    ex:[{ s:"Her {{}} manner won over the class.", f:"outgoing", ko:"그녀의 외향적인 태도가 반 전체를 사로잡았다." }] },
+
+  { word:"outgrow", pron:"아웃그로우", pos:"v", level:"B2", meanings:["~보다 더 커지다","맞지 않게 되다"],
+    syn:["grow too big for","become too large for","leave behind with age"],
+    ex:[{ s:"Children {{}} their shoes within months.", f:"outgrow", ko:"아이들은 몇 달 안에 신발이 맞지 않게 된다." }] },
+
+  /* 승격 63 — 사전 표현 '나들이' 를 글자까지 지켰다(excursion, E).
+     원본의 '소풍' 을 쓰면 excursion(소풍, 유람) 의 첫 뜻과 같아진다. */
+  { word:"outing", pron:"아우팅", pos:"n", level:"B2", meanings:["나들이"],
+    syn:["excursion","jaunt","short pleasure trip"],
+    ex:[{ s:"The class went on a river {{}}.", f:"outing", ko:"그 반은 강 나들이를 갔다." }] },
+
+  /* 승격 64 — 사전이 '금지하다; 무법자' 로 동사와 명사가 섞여 있었다.
+     ban(B)·forbid(F) 둘 다 동사여서 동사로 세우고, 사전의 첫 갈래 '금지하다' 를
+     그대로 첫 자리에 남겼다. 원본의 '무법자, 불량배' 갈래는 버렸다. */
+  { word:"outlaw", pron:"아웃로", pos:"v", level:"C1", meanings:["금지하다","비합법화하다"],
+    syn:["ban","forbid","make illegal"], ant:["legalize"],
+    ex:[{ s:"The city voted to {{}} single-use plastics.", f:"outlaw", ko:"그 도시는 일회용 플라스틱을 금지하기로 표결했다." }] },
+
+  { word:"outlet", pron:"아웃렛", pos:"n", level:"B2", meanings:["출구","소매점"],
+    syn:["way out","retail shop","release point"],
+    ex:[{ s:"The lake has only one {{}} to the sea.", f:"outlet", ko:"그 호수는 바다로 가는 출구가 하나뿐이다." }] },
+
+  { word:"outlive", pron:"아웃리브", pos:"v", level:"B2", meanings:["~보다 더 오래 살다"],
+    syn:["survive longer than","outlast","live on after"],
+    ex:[{ s:"She would {{}} both her brothers.", f:"outlive", ko:"그녀는 두 오라비보다 더 오래 살게 된다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -681,6 +784,7 @@ Object.assign(window.GLOSS, {
   "accepted as standard": "표준으로 받아들여진",
   "adapt to a purpose": "쓸 목적에 맞추다",
   "almost recalled": "거의 떠오른",
+  "antiquated": "케묶은",
   "applied without exception": "예외 없이 적용되는",
   "arise from": "~에서 생겨나다",
   "as a representative of": "~의 대표로서",
@@ -688,13 +792,18 @@ Object.assign(window.GLOSS, {
   "at the brink of": "~의 문턱에서",
   "attacking": "몰아붙이는",
   "auspicious": "좋은 일을 알리는",
+  "back country": "뒤쪽 벽지",
   "backstage": "무대 뒤의",
+  "badly positioned": "자리가 잘못 잡힌",
   "balance out": "서로 맞춰 없애다",
+  "become too large for": "~에 들어가지 않게 되다",
   "before the audience": "관객 앞에서 하는",
   "beginning of an illness": "병이 시작됨",
+  "behind the times": "시절에 뒤처진",
   "best possible state": "가능한 가장 좋은 상태",
   "best suited": "가장 알맞은",
   "betting ratio": "도박에서 매기는 비율",
+  "beyond restraint": "억누를 수 없는",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
   "biological entity": "생물학적 개체",
@@ -706,6 +815,7 @@ Object.assign(window.GLOSS, {
   "breach of law": "법을 어김",
   "bright view": "밝게 보는 태도",
   "brittle-bone condition": "뼈가 잘 부러지는 상태",
+  "broken down": "망가져 버린",
   "by word of mouth": "입으로 전하는",
   "cancel out": "서로 지워 버리다",
   "care home for children": "아이를 보살피는 시설",
@@ -735,20 +845,27 @@ Object.assign(window.GLOSS, {
   "dutiful": "본분을 다하는",
   "earliest": "맨 처음의",
   "eastern": "동쪽의",
+  "easy with people": "사람을 편히 대하는",
   "elaborately decorated": "공들여 꾸민",
+  "end result": "끝에 나온 것",
   "erase all trace of": "~의 흔적을 다 지우다",
   "excess body fat": "넘치는 몸의 지방",
   "expecting the best": "잘될 것으로 보는",
+  "explosion of feeling": "감정이 터져 나옴",
   "extreme overweight": "심한 과체중",
   "facing": "마주 보는",
   "fact-based": "사실에 바탕한",
+  "failing to line up": "줄이 맞지 않는",
   "far from it": "그렇기는커녕",
+  "far inland country": "한참 안쪽 땅",
   "far-eastern": "극동의",
   "favorable moment": "알맞은 때",
   "find one's bearings": "자기 위치를 가늠하다",
   "first appearance": "처음 나타남",
   "first part": "앞부분",
+  "flare-up": "확 번짐",
   "follow orders": "명령을 좇다",
+  "fond of company": "어울리기를 좋아하는",
   "for good": "아주 영영",
   "foundling": "버려진 채 발견된 아이",
   "free of opinion": "의견이 섞이지 않은",
@@ -757,13 +874,16 @@ Object.assign(window.GLOSS, {
   "from another view": "다른 쪽에서 보면",
   "fruit garden": "과일을 기르는 밭",
   "full of fine detail": "잔 무늬가 가득한",
+  "full set of clothes": "옷 한 벌 전체",
   "get hold of": "손에 넣다",
   "give offence to": "~에게 언짢음을 주다",
   "going by": "~을 따라 판단하여",
   "going by the book": "규정을 그대로 따르는",
+  "gone out of favor": "사랑을 잃은",
   "grossly overweight": "지나치게 체중이 많은",
   "grounded on": "~에 발판을 둔",
   "grove of fruit trees": "과일나무 숲",
+  "grow too big for": "~에 비해 너무 커지다",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
@@ -781,6 +901,7 @@ Object.assign(window.GLOSS, {
   "immediate at the scene": "현장에서 곧바로 하는",
   "in place of": "~을 갈음하여",
   "in the world": "세상에",
+  "in the wrong spot": "엉뚱한 자리에 있는",
   "in view of the crowd": "사람들 눈에 보이는",
   "infrequent": "드문드문한",
   "initial briefing": "첫 설명 자리",
@@ -789,6 +910,7 @@ Object.assign(window.GLOSS, {
   "insulting": "모욕하는",
   "internal structure": "몸속 구조물",
   "introductory training": "처음 받는 교육",
+  "jaunt": "짧은 유람",
   "jumpy": "움찔거리는",
   "just out of reach": "손에 닿을 듯 안 닿는",
   "just short of": "~에 조금 못 미쳐",
@@ -797,16 +919,22 @@ Object.assign(window.GLOSS, {
   "keep to the rules": "규칙을 지키다",
   "kept off the books": "기록에 남기지 않는",
   "keyed up": "바짝 긴장한",
+  "kit": "한 벌 도구",
+  "leave behind with age": "나이가 들며 벗어나다",
   "leave no choice for": "~에게 선택을 남기지 않다",
+  "left behind": "뒤에 남겨진",
   "left behind by progress": "발전에 뒤처진",
+  "legalize": "법으로 허용하다",
   "liberating": "놓여나게 하는",
   "life form": "생명 형태",
   "line of work": "일하는 분야",
   "little known": "거의 알려지지 않은",
+  "live on after": "~뒤에도 살아가다",
   "living thing": "살아 있는 것",
   "looking on the bright side": "밝은 쪽을 보는",
   "loss of bone density": "뼈 밀도가 줄어듦",
   "make duty-bound": "할 수밖에 없게 만들다",
+  "make illegal": "법으로 못하게 하다",
   "make unclear": "불분명하게 만들다",
   "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
@@ -814,27 +942,41 @@ Object.assign(window.GLOSS, {
   "move into": "들어가 자리 잡다",
   "naturally grown": "자연스레 기른",
   "nearly remembered": "떠오를 듯한",
+  "no longer current": "지금 것이 아닌",
+  "no longer in style": "더는 멋으로 안 여겨지는",
   "no longer in use": "더 이상 쓰이지 않는",
+  "no longer manageable": "더는 다룰 수 없는",
+  "no longer up to date": "더는 요즘 것이 아닌",
   "not for publication": "실으면 안 되는",
+  "not matching up": "서로 들어맞지 않는",
   "not optional": "고를 수 없는",
+  "not where it belongs": "있어야 할 곳이 아닌",
+  "not working": "돌아가지 않는",
   "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
   "of all things": "하필이면",
   "of the east": "동방에 속한",
+  "off the beat": "박자가 어긋난",
   "on the boards": "무대에 올라 있는",
   "on the facts alone": "사실만을 근거로",
   "on the other side": "건너편의",
   "on the point of": "~하려는 순간에",
   "on-the-record": "공개를 전제로 한",
   "one after another": "잇달아",
+  "one pushed out": "밀려난 이",
   "one such case": "그런 한 가지",
   "one such instance": "그런 한 차례",
   "one who addresses a crowd": "군중에게 말하는 사람",
   "one who fights against": "맞서 싸우는 이",
   "opening for action": "움직일 틈",
+  "out of action": "쓸 수 없는",
   "out of the ordinary": "보통과 다른",
+  "out of vogue": "인기가 식은",
+  "outlast": "~보다 오래 버티다",
   "parentless child": "어버이 없는 아이",
+  "pariah": "천대받는 사람",
   "particular time": "특정한 시점",
+  "past its day": "한창때가 지난",
   "peak condition": "가장 좋은 조건",
   "person looking on": "옆에서 보는 사람",
   "physical body": "형체를 가진 몸",
@@ -853,12 +995,17 @@ Object.assign(window.GLOSS, {
   "put on the table": "논의 자리에 내놓다",
   "quite the opposite": "오히려 거꾸로",
   "receptive": "받아들일 자세가 된",
+  "rejected person": "내쳐진 사람",
+  "release point": "내보내는 지점",
+  "remote interior": "멀리 떨어진 내륙",
   "resting upon": "~에 기대어",
+  "retail shop": "소매로 파는 가게",
   "revolution track": "회전하는 자취",
   "richly adorned": "푸짐하게 꾸민",
   "right before": "바로 앞에",
   "run a business": "사업을 꾸리다",
   "running of a machine": "기계가 돌아감",
+  "running wild": "마구 날뛰는",
   "said aloud": "소리 내어 말한",
   "said unofficially": "비공식으로 한 말의",
   "salve": "바르는 약",
@@ -868,6 +1015,7 @@ Object.assign(window.GLOSS, {
   "set in one's ways": "제 방식만 지키는",
   "settled for ever": "다시 뒤집히지 않게",
   "shelter for orphans": "고아를 돌보는 곳",
+  "short pleasure trip": "가벼운 놀이 여행",
   "singly": "하나씩",
   "sinister": "음험한",
   "skip over": "건너뛰다",
@@ -884,9 +1032,13 @@ Object.assign(window.GLOSS, {
   "standard for all cases": "모든 경우에 같은",
   "star-watching station": "별을 살피는 시설",
   "still under way": "아직 끝나지 않은",
+  "stripped of background": "배경을 걷어 낸",
   "study of vision": "보는 원리 연구",
+  "sudden rush": "갑작스레 몰려나옴",
+  "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
   "surgery": "외과 처치",
+  "survive longer than": "~보다 오래 살아남다",
   "sworn word": "맹세한 말",
   "take place": "벌어지다",
   "taking up of space": "자리를 차지함",
@@ -894,6 +1046,7 @@ Object.assign(window.GLOSS, {
   "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
   "to do with running a group": "집단을 꾸리는 일의",
+  "torn from its setting": "놓인 자리에서 떼어 낸",
   "trinket": "자잘한 장신구",
   "typical": "으레 그런",
   "tyrannical": "폭압을 휘두르는",
@@ -904,6 +1057,8 @@ Object.assign(window.GLOSS, {
   "unlawful act": "법에 어긋난 짓",
   "unofficial": "공식이 아닌",
   "unorthodox": "정통이 아닌",
+  "up-to-date": "요즘 것에 맞는",
+  "upshot": "귀결",
   "use of a place": "장소를 씀",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
@@ -911,12 +1066,14 @@ Object.assign(window.GLOSS, {
   "watch closely": "가까이 지켜보다",
   "watcher": "지켜보는 이",
   "way open to one": "택할 수 있는 길",
+  "way out": "빠져나가는 길",
   "western": "서쪽의",
   "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
   "willing to listen": "귀를 기울이려는",
   "without bias": "치우침 없이",
   "without delay": "늦추지 않고 하는",
+  "without the surrounding words": "앞뒤 말을 빼고",
   "work a machine": "기계를 다루다",
   "working order": "제대로 돌아가는 상태",
   "working unit of the body": "몸에서 일하는 단위",

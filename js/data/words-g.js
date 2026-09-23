@@ -744,7 +744,6 @@ Object.assign(window.GLOSS, {
   "network":"망, 연결망",
   "nonspecific":"특정하지 않은",
   "opt for":"~을 택하다",
-  "outfit":"장비 한 벌",
   "pant":"숨을 헐떡이다",
   "parking space":"주차 공간",
   "pass":"지나가다, 통과되다",
