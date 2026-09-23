@@ -450,25 +450,90 @@ window.VOCAB_I = [
     syn:["beforehand","ahead of time","previously"] },
 
   { word:"in comparison to", pron:"인 컴패리슨 투", pos:"phr", level:"B2", meanings:["~와 비교하여"],
-    syn:["compared with","relative to","as against"] }
+    syn:["compared with","relative to","as against"] },
+
+  /* 아래 세 개는 원본에서 첫 뜻이 모두 '~에 따라' 로 같았다. 갈래를 나눴다.
+       in compliance with  ~을 준수하여   (규칙·명령을 따름)
+       in conformity with  ~와 일치하여   (기준·양식에 맞음)
+       in line with        ~에 부합하여   (방향·방침이 어긋나지 않음) */
+  { word:"in compliance with", pron:"인 컴플라이언스 위드", pos:"phr", level:"C1", meanings:["~을 준수하여"],
+    syn:["in accordance with","abiding by","as required by"] },
+
+  { word:"in conformity with", pron:"인 컨포머티 위드", pos:"phr", level:"C1", meanings:["~와 일치하여"],
+    syn:["consistent with","in agreement with","in harmony with"] },
+
+  { word:"in contrast with", pron:"인 컨트래스트 위드", pos:"phr", level:"B2", meanings:["~와 대조적으로"],
+    syn:["as opposed to","unlike","in opposition to"] },
+
+  { word:"in favor of", pron:"인 페이버 어브", pos:"phr", level:"B2", meanings:["~에 찬성하여"],
+    syn:["in support of","approving of","on the side of"] },
+
+  { word:"in isolation", pron:"인 아이설레이션", pos:"phr", level:"B2", meanings:["홀로","별개로"],
+    syn:["alone","separately","on its own"] },
+
+  /* ── 챕터 5 ─────────────────────────────── */
+
+  { word:"in line with", pron:"인 라인 위드", pos:"phr", level:"B2", meanings:["~에 부합하여","~와 일직선으로"],
+    syn:["in keeping with","corresponding to","in step with"] },
+
+  /* syn 을 비워 두었다. 원본 뜻 '도중에서' 는 틀렸고('경력 중반에' 로 고쳤다),
+     이 구를 바꿔 쓸 수 있는 영어 표현이 셋이 없다. 억지로 만들면 사전에 없는
+     말을 정답으로 가르치게 된다. illiteracy 와 같은 이유다.
+     4지선다·짝맞추기 두 모드로만 출제된다. */
+  { word:"in mid-career", pron:"인 미드 커리어", pos:"phr", level:"C2", meanings:["경력 중반에"] },
+
+  { word:"in particular", pron:"인 퍼티큘러", pos:"phr", level:"B1", meanings:["특히"],
+    syn:["especially","notably","specifically"] },
+
+  { word:"in person", pron:"인 퍼슨", pos:"phr", level:"B1", meanings:["직접","몸소"],
+    syn:["face to face","personally","in the flesh"] },
+
+  { word:"in progress", pron:"인 프라그레스", pos:"phr", level:"B1", meanings:["진행 중인"],
+    syn:["under way","ongoing","in motion"] },
+
+  { word:"in proportion to", pron:"인 프러포션 투", pos:"phr", level:"B2", meanings:["~에 비례하여"],
+    syn:["proportionally to","in ratio to","commensurate with"] },
+
+  { word:"in relation to", pron:"인 릴레이션 투", pos:"phr", level:"B2", meanings:["~와 관련하여"],
+    syn:["with regard to","concerning","as regards"] },
+
+  { word:"in response to", pron:"인 리스판스 투", pos:"phr", level:"B1", meanings:["~에 대응하여"],
+    syn:["in reply to","in reaction to","answering"] },
+
+  { word:"in return for", pron:"인 리턴 포", pos:"phr", level:"B2", meanings:["~의 대가로"],
+    syn:["in exchange for","as payment for","in recompense for"] },
+
+  { word:"in sum", pron:"인 섬", pos:"phr", level:"B2", meanings:["요컨대"],
+    syn:["in short","to sum up","in brief"] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
    블록을 두는 선례가 없다. pron.js 가 이 파일보다 뒤에 로드되므로 여기서
    Object.assign(window.PRON, ...) 을 하면 pron.js 쪽 값에 덮인다). */
 Object.assign(window.GLOSS, {
+  "abiding by": "~을 지키며",
   "ad-lib": "즉흥적으로 하다",
+  "alone": "혼자서",
+  "answering": "응답하는",
   "approaching": "다가오는",
+  "approving of": "~을 승인하여",
   "as against": "~와 대비하여",
+  "as payment for": "~의 값으로",
+  "as regards": "~에 관해서는",
+  "as required by": "~이 요구하는 대로",
   "beg": "간청하다",
   "betterment": "개량",
   "brazen": "낯 두꺼운",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
   "colonialism": "식민주의",
+  "commensurate with": "~에 상응하여",
   "compared with": "~와 비교하면",
   "compulsion": "강한 욕구, 강제",
+  "concerning": "~에 관하여",
   "confinement": "감금",
+  "consistent with": "~와 들어맞는",
+  "corresponding to": "~에 대응하여",
   "creative": "창의적인",
   "damage": "손상시키다, 피해",
   "deathlessness": "불사, 죽지 않음",
@@ -490,6 +555,7 @@ Object.assign(window.GLOSS, {
   "evenhandedly": "치우치지 않게",
   "expansionism": "팽창주의",
   "extemporize": "즉석에서 말하다",
+  "face to face": "얼굴을 맞대고",
   "fairly": "공정하게, 상당히",
   "fallacious": "오류가 있는",
   "faulty": "고장이 있는",
@@ -503,7 +569,23 @@ Object.assign(window.GLOSS, {
   "idol": "우상, 숭배 대상",
   "implied": "함축된",
   "in a way": "어떤 면에서는",
+  "in accordance with": "~에 맞추어",
+  "in agreement with": "~와 합의하여",
+  "in brief": "간단히 말해",
+  "in exchange for": "~와 맞바꾸어",
+  "in harmony with": "~와 조화를 이루어",
+  "in keeping with": "~에 걸맞게",
+  "in motion": "움직이는 중인",
+  "in opposition to": "~에 반대하여",
+  "in ratio to": "~와의 비율로",
+  "in reaction to": "~에 반응하여",
+  "in recompense for": "~의 보상으로",
+  "in reply to": "~에 답하여",
+  "in short": "요약하면",
   "in some respects": "몇몇 점에서는",
+  "in step with": "~와 발을 맞추어",
+  "in support of": "~을 지지하여",
+  "in the flesh": "실물로",
   "incalculable": "헤아릴 수 없이 큰",
   "incarcerate": "수감하다",
   "incarceration": "수감",
@@ -537,14 +619,18 @@ Object.assign(window.GLOSS, {
   "naivety": "순진함",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
+  "on its own": "그 자체만으로",
+  "on the side of": "~의 편에 서서",
   "optimal": "최적의",
   "optimally": "최적으로",
   "partisan": "당파적인",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
+  "personally": "개인적으로, 직접",
   "preferably": "되도록",
   "primeval": "원시의, 태고의",
   "propel": "나아가게 하다",
+  "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
   "regal": "제왕의",
   "relative to": "~에 비하여",
@@ -556,9 +642,11 @@ Object.assign(window.GLOSS, {
   "sameness": "동일성, 똑같음",
   "scrawled": "갈겨쓴",
   "selfhood": "자아, 개체성",
+  "separately": "따로따로",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
   "sovereign": "주권을 가진",
+  "specifically": "구체적으로",
   "speedy": "신속한",
   "spontaneous": "즉흥적인, 자발적인",
   "spur": "박차를 가하다",
@@ -571,8 +659,10 @@ Object.assign(window.GLOSS, {
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
   "to some extent": "어느 정도는",
+  "to sum up": "정리하자면",
   "unauthorized": "무단의, 승인받지 않은",
   "unawareness": "알지 못함",
+  "under way": "진행 중에",
   "undeveloped": "발달하지 않은",
   "uneducated": "교육받지 못한",
   "unfeasible": "실행 불가능한",
@@ -588,5 +678,6 @@ Object.assign(window.GLOSS, {
   "unspoken": "입 밖에 내지 않은",
   "utopianism": "유토피아주의",
   "verification": "입증, 검증",
-  "whim": "일시적 기분"
+  "whim": "일시적 기분",
+  "with regard to": "~에 대해서는"
 });
