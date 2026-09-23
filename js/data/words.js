@@ -1709,7 +1709,6 @@ window.GLOSS = {
   "normal":"정상적인",
   "order":"질서",
   "ordinary":"평범한",
-  "overlook":"간과하다",
   "partially":"부분적으로",
   "partly":"부분적으로",
   "passive":"수동적인",

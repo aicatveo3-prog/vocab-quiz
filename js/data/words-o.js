@@ -889,13 +889,122 @@ window.VOCAB_O = [
 
   { word:"overenthusiastic", pron:"오버인쑤지애스틱", pos:"adj", level:"C1", meanings:["과도하게 열중한"],
     syn:["too keen","carried away by zeal","excessively eager"],
-    ex:[{ s:"The guide was a little {{}} about the ruins.", f:"overenthusiastic", ko:"그 안내인은 그 폐허에 조금 과도하게 열중했다." }] }
+    ex:[{ s:"The guide was a little {{}} about the ruins.", f:"overenthusiastic", ko:"그 안내인은 그 폐허에 조금 과도하게 열중했다." }] },
+
+  /* ── 챕터 8 (마지막) ──────────────────────────────── */
+  /* 18단어. MIN_TAIL(4) 이상이라 독립 챕터로 둔다.
+     'over-' 어근이 열일곱, 그리고 마지막이 owe 다.
+     압도 계열 셋을 이렇게 갈랐다 —
+       overpower '제압하다, 힘으로 누르다'   overwhelm '압도하다, 당황하게 하다'
+       overbear(챕터 7) '억누르다, 짓누르다'                                     */
+
+  { word:"overestimate", pron:"오버에스터메이트", pos:"v", level:"B2", meanings:["과대평가하다"],
+    syn:["rate too highly","think better of than is true","put too high a value on"],
+    ex:[{ s:"Do not {{}} how much time you have.", f:"overestimate", ko:"시간이 얼마나 있는지 과대평가하지 마라." }] },
+
+  { word:"overhear", pron:"오버히어", pos:"v", level:"B2", meanings:["엿듣다"],
+    syn:["catch by chance","hear without meaning to","listen in on"],
+    ex:[{ s:"I happened to {{}} their quarrel.", f:"overhear", ko:"나는 우연히 그들의 말다툼을 엿들었다." }] },
+
+  { word:"overindulge", pron:"오버인덜지", pos:"v", level:"C1", meanings:["탐닉하다","지나치게 빠지다"],
+    syn:["give in to excess","enjoy far too much","let oneself go too far"],
+    ex:[{ s:"It is easy to {{}} during the holidays.", f:"overindulge", ko:"연휴에는 탐닉하기 쉽다." }] },
+
+  /* 승격 74 — 사전이 '겹치다; 중복' 으로 동사와 명사가 섞여 있었다.
+     coincide(C)·commonality(C) 중 coincide 가 동사 갈래를 쓴다. 원본대로 동사로
+     세우고 사전의 첫 갈래 '겹치다' 를 그대로 남겼다. */
+  { word:"overlap", pron:"오버랩", pos:"v", level:"B2", meanings:["겹치다","중복되다"],
+    syn:["coincide","cover part of each other","run into each other"],
+    ex:[{ s:"The two shifts {{}} by one hour.", f:"overlap", ko:"두 근무조는 한 시간 겹친다." }] },
+
+  { word:"overload", pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
+    syn:["load beyond capacity","pile on too much","burden past the limit"],
+    ex:[{ s:"Do not {{}} the small trailer.", f:"overload", ko:"그 작은 트레일러에 지나치게 많이 싣지 마라." }] },
+
+  /* 승격 75 — 사전 표현 '간과하다; 내려다보다' 의 두 갈래를 그대로 살렸다.
+     구분 기호만 쉼표로 바꿨다. 이 세트에서 참조가 가장 많은 낱말이다(5곳) —
+     condone·disregard·ignore 가 유의어, anticipate·detect 가 반의어다. */
+  { word:"overlook", pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
+    syn:["disregard","fail to notice","pass over"],
+    ex:[{ s:"It is easy to {{}} a small error in the total.", f:"overlook", ko:"합계의 작은 오류는 간과하기 쉽다." }] },
+
+  { word:"overnight", pron:"오버나이트", pos:"adv", level:"B1", meanings:["하룻밤 사이에"],
+    syn:["in a single night","between dusk and dawn","very suddenly"],
+    ex:[{ s:"The snow melted {{}}.", f:"overnight", ko:"눈이 하룻밤 사이에 녹았다." }] },
+
+  /* 승격 76 — ★원본의 뜻이 틀렸다. '견줄 데 없는' 은 unrivaled 의 뜻이다.
+     사전은 '압도하다, 제압하다' 였는데 '압도하다' 를 그대로 두면 같은 챕터의
+     overwhelm 과 물리므로 '제압하다' 를 첫 자리에 두고 '힘으로 누르다' 를 붙였다.
+     참조 drown out(D, 소리를 덮어 버리다) 은 힘으로 누르는 뜻을 쓴다. */
+  { word:"overpower", pron:"오버파워", pos:"v", level:"C1", meanings:["제압하다","힘으로 누르다"],
+    syn:["subdue by force","get the better of","overcome by strength"],
+    ex:[{ s:"Three guards had to {{}} the intruder.", f:"overpower", ko:"경비 셋이 그 침입자를 제압해야 했다." }] },
+
+  { word:"overrule", pron:"오버룰", pos:"v", level:"C1", meanings:["기각하다"],
+    syn:["reject a ruling","set aside a decision","rule against"],
+    ex:[{ s:"The judge chose to {{}} the objection.", f:"overrule", ko:"판사는 그 이의를 기각하기로 했다." }] },
+
+  /* 승격 77 — 사전은 '감독하다' 한 갈래였다. 원본의 '감시하다' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(administer, A). 원본은 순서가 거꾸로였다. */
+  { word:"oversee", pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
+    syn:["supervise","keep watch over","be in charge of"],
+    ex:[{ s:"She was asked to {{}} the whole project.", f:"oversee", ko:"그녀는 사업 전체를 감독하도록 요청받았다." }] },
+
+  /* 승격 78 — 사전 표현 '과장해 말하다' 를 글자까지 지켰다
+     (dramatize, D · exaggerate, E). 원본의 '과장하다' 를 쓰면 exaggerate(과장하다,
+     부풀리다) 의 첫 뜻과 같아진다. */
+  { word:"overstate", pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
+    syn:["exaggerate","make more of than is true","blow up in the telling"], ant:["understate"],
+    ex:[{ s:"Reports may {{}} the size of the crowd.", f:"overstate", ko:"보도는 군중의 규모를 과장해 말할 수 있다." }] },
+
+  /* overstructure 는 사전에도 거의 없는 드문 낱말이다. 유의어 셋을 세울 수 있어
+     비우지 않았다. */
+  { word:"overstructure", pron:"오버스트럭처", pos:"v", level:"C2", meanings:["지나치게 구조화하다"],
+    syn:["impose too much structure on","over-organize","hem in with rules"],
+    ex:[{ s:"Teachers should not {{}} every lesson.", f:"overstructure", ko:"교사가 수업마다 지나치게 구조화해서는 안 된다." }] },
+
+  /* 승격 79 — 사전 표현 '추월하다, 따라잡다' 를 글자까지 지켰다
+     (befall, B · catch up with, C). 원본의 '~을 따라잡다, (다른 차를) 추월하다'
+     에서 괄호와 조사를 걷은 셈이다. */
+  { word:"overtake", pron:"오버테이크", pos:"v", level:"B2", meanings:["추월하다","따라잡다"],
+    syn:["catch up with","pass on the road","draw level and go by"],
+    ex:[{ s:"Do not {{}} on a blind bend.", f:"overtake", ko:"앞이 안 보이는 굽이에서 추월하지 마라." }] },
+
+  /* 승격 80 — 사전 표현 '뒤집다, 뒤엎다' 를 글자까지 지켰다(capsize, C).
+     원본의 '뒤집히다, 뒤집다; 번복시키다' 는 자동사와 타동사가 섞여 있었다. */
+  { word:"overturn", pron:"오버턴", pos:"v", level:"B2", meanings:["뒤집다","뒤엎다"],
+    syn:["capsize","turn upside down","knock over"],
+    ex:[{ s:"A gust of wind could {{}} the canoe.", f:"overturn", ko:"한 줄기 돌풍이 그 카누를 뒤집을 수 있었다." }] },
+
+  /* 원본은 '비만의, 과체중의; 중량 초과의' 였다. 챕터 1 의 obese(고도 비만인)·
+     obesity(비만) 와 겹치지 않게 '과체중의' 를 첫 자리에 두었다. */
+  { word:"overweight", pron:"오버웨이트", pos:"adj", level:"B2", meanings:["과체중의","중량 초과의"],
+    syn:["heavier than is healthy","above the weight limit","carrying extra weight"], ant:["underweight"],
+    ex:[{ s:"The suitcase was {{}} by two kilos.", f:"overweight", ko:"그 여행가방은 두 킬로 중량 초과였다." }] },
+
+  /* 승격 81 — 사전은 '압도하다' 한 갈래였고 발음이 없었다. 원본의 '당황하게 하다'
+     를 뒤에 붙였다. 같은 챕터 overpower 를 '제압하다' 로 갈라 두었으므로 이쪽이
+     '압도하다' 를 가져간다. 원본의 '제압하다' 갈래는 overpower 에 넘겼다. */
+  { word:"overwhelm", pron:"오버웰름", pos:"v", level:"B2", meanings:["압도하다","당황하게 하다"],
+    syn:["sweep over","leave at a loss","bear down upon"],
+    ex:[{ s:"The number of requests began to {{}} the small team.", f:"overwhelm", ko:"요청의 수가 그 작은 팀을 압도하기 시작했다." }] },
+
+  /* 승격 82 (마지막) — 사전 표현 '압도적인, 너무도 강력한' 을 글자까지 지켰다
+     (daunting, D · insurmountable, I). 원본의 '저항하기 힘든' 대신 사전 쪽을 남겼다. */
+  { word:"overwhelming", pron:"오버웰밍", pos:"adj", level:"B2", meanings:["압도적인","너무도 강력한"],
+    syn:["daunting","too strong to resist","crushing in scale"],
+    ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
+
+  { word:"owe", pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+    syn:["be in debt for","have to pay back","be indebted to"],
+    ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "abide by": "~을 지키다",
   "about to": "이제 곧 ~할",
+  "above the weight limit": "무게 한도를 넘은",
   "accepted as standard": "표준으로 받아들여진",
   "across the board": "어느 쪽이나 다",
   "adapt to a purpose": "쓸 목적에 맞추다",
@@ -914,8 +1023,11 @@ Object.assign(window.GLOSS, {
   "backstage": "무대 뒤의",
   "badly positioned": "자리가 잘못 잡힌",
   "balance out": "서로 맞춰 없애다",
+  "be in debt for": "~때문에 빚이 있다",
+  "be indebted to": "~에게 신세를 지다",
   "be more numerous than": "~보다 많다",
   "bear down on": "~을 눌러 덮치다",
+  "bear down upon": "~을 밀어붙이다",
   "become too large for": "~에 들어가지 않게 되다",
   "before the audience": "관객 앞에서 하는",
   "beginning of an illness": "병이 시작됨",
@@ -923,12 +1035,14 @@ Object.assign(window.GLOSS, {
   "best possible state": "가능한 가장 좋은 상태",
   "best suited": "가장 알맞은",
   "betting ratio": "도박에서 매기는 비율",
+  "between dusk and dawn": "해 진 뒤 동틀 때까지",
   "beyond all reason": "말도 안 되게 지나친",
   "beyond restraint": "억누를 수 없는",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
   "biological entity": "생물학적 개체",
   "block up": "틀어막다",
+  "blow up in the telling": "말하면서 부풀리다",
   "boding ill": "나쁜 일을 알리는",
   "body of members": "구성원의 모임",
   "body part": "몸의 한 부분",
@@ -937,6 +1051,7 @@ Object.assign(window.GLOSS, {
   "bright view": "밝게 보는 태도",
   "brittle-bone condition": "뼈가 잘 부러지는 상태",
   "broken down": "망가져 버린",
+  "burden past the limit": "한계를 넘겨 짐을 얹다",
   "burning anger": "타오르는 노여움",
   "burst of applause": "터져 나오는 손뼉",
   "by word of mouth": "입으로 전하는",
@@ -944,7 +1059,9 @@ Object.assign(window.GLOSS, {
   "care home for children": "아이를 보살피는 시설",
   "careful noting": "꼼꼼히 적어 둠",
   "carried away by zeal": "열의에 휩쓸린",
+  "carrying extra weight": "살이 더 붙은",
   "carrying far too much fat": "지방이 너무 많은",
+  "catch by chance": "우연히 듣다",
   "chances": "될 성",
   "chemical-free": "화학 약품을 쓰지 않은",
   "child left without parents": "어버이를 잃은 아이",
@@ -959,7 +1076,9 @@ Object.assign(window.GLOSS, {
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
   "course around a body": "천체를 도는 길",
+  "cover part of each other": "서로 일부를 덮다",
   "crushing": "짓누르는",
+  "crushing in scale": "규모로 짓누르는",
   "curtain-raiser": "막을 올리는 순서",
   "dangerous quantity": "위험한 양",
   "deck out": "차려 꾸미다",
@@ -968,6 +1087,7 @@ Object.assign(window.GLOSS, {
   "doing as told": "말하는 대로 하는",
   "done then and there": "그 자리에서 해내는",
   "downright": "에누리 없는",
+  "draw level and go by": "나란히 붙었다가 지나가다",
   "drawn beyond the balance": "잔고보다 많이 빼낸",
   "drop from a list": "목록에서 빼다",
   "dutiful": "본분을 다하는",
@@ -977,6 +1097,7 @@ Object.assign(window.GLOSS, {
   "eat too much": "너무 많이 먹다",
   "elaborately decorated": "공들여 꾸민",
   "end result": "끝에 나온 것",
+  "enjoy far too much": "너무 많이 즐기다",
   "erase all trace of": "~의 흔적을 다 지우다",
   "exceed in number": "수에서 넘어서다",
   "excess body fat": "넘치는 몸의 지방",
@@ -987,6 +1108,7 @@ Object.assign(window.GLOSS, {
   "extreme overweight": "심한 과체중",
   "facing": "마주 보는",
   "fact-based": "사실에 바탕한",
+  "fail to notice": "알아채지 못하다",
   "failing to line up": "줄이 맞지 않는",
   "far from it": "그렇기는커녕",
   "far inland country": "한참 안쪽 땅",
@@ -1008,6 +1130,8 @@ Object.assign(window.GLOSS, {
   "full of fine detail": "잔 무늬가 가득한",
   "full set of clothes": "옷 한 벌 전체",
   "get hold of": "손에 넣다",
+  "get the better of": "~을 눌러 이기다",
+  "give in to excess": "지나침에 무너지다",
   "give offence to": "~에게 언짢음을 주다",
   "going by": "~을 따라 판단하여",
   "going by the book": "규정을 그대로 따르는",
@@ -1021,9 +1145,13 @@ Object.assign(window.GLOSS, {
   "hard to make out": "알아보기 어려운",
   "have its source in": "~에 뿌리를 두다",
   "have the greater count": "더 큰 수를 차지하다",
+  "have to pay back": "갚아야 하다",
   "head and shoulders above": "한참 위에 있는",
   "healing cream": "상처에 바르는 크림",
+  "hear without meaning to": "뜻하지 않게 듣다",
+  "heavier than is healthy": "건강에 좋을 무게보다 무거운",
   "heavy-handed": "함부로 세게 다루는",
+  "hem in with rules": "규칙으로 옥죄다",
   "hide from view": "보이지 않게 가리다",
   "hold by force": "힘으로 붙들다",
   "hold out": "내밀어 주다",
@@ -1033,6 +1161,8 @@ Object.assign(window.GLOSS, {
   "ideal point": "가장 알맞은 지점",
   "ill at ease": "마음이 편치 않은",
   "immediate at the scene": "현장에서 곧바로 하는",
+  "impose too much structure on": "~에 틀을 너무 씌우다",
+  "in a single night": "하루 밤 만에",
   "in place of": "~을 갈음하여",
   "in the world": "세상에",
   "in the wrong spot": "엉뚱한 자리에 있는",
@@ -1052,27 +1182,34 @@ Object.assign(window.GLOSS, {
   "keep in action": "움직이게 유지하다",
   "keep to": "~에서 벗어나지 않다",
   "keep to the rules": "규칙을 지키다",
+  "keep watch over": "~을 지켜 살피다",
   "kept off the books": "기록에 남기지 않는",
   "keyed up": "바짝 긴장한",
   "kit": "한 벌 도구",
+  "knock over": "쳐서 넘어뜨리다",
+  "leave at a loss": "어쩔 줄 모르게 하다",
   "leave behind in a race": "겨루기에서 뒤에 두다",
   "leave behind with age": "나이가 들며 벗어나다",
   "leave no choice for": "~에게 선택을 남기지 않다",
   "left behind": "뒤에 남겨진",
   "left behind by progress": "발전에 뒤처진",
   "legalize": "법으로 허용하다",
+  "let oneself go too far": "자신을 너무 놓아 버리다",
   "liberating": "놓여나게 하는",
   "life form": "생명 형태",
   "line of work": "일하는 분야",
+  "listen in on": "~을 몰래 듣다",
   "little known": "거의 알려지지 않은",
   "live on after": "~뒤에도 살아가다",
   "living thing": "살아 있는 것",
+  "load beyond capacity": "실을 수 있는 양을 넘겨 싣다",
   "long-awaited": "오래 기다려 온",
   "looking on the bright side": "밝은 쪽을 보는",
   "loss of bone density": "뼈 밀도가 줄어듦",
   "loud clapping": "큰 손뼉 소리",
   "make duty-bound": "할 수밖에 없게 만들다",
   "make illegal": "법으로 못하게 하다",
+  "make more of than is true": "사실보다 크게 말하다",
   "make unclear": "불분명하게 만들다",
   "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
@@ -1113,18 +1250,23 @@ Object.assign(window.GLOSS, {
   "out of the ordinary": "보통과 다른",
   "out of vogue": "인기가 식은",
   "outlast": "~보다 오래 버티다",
+  "over-organize": "지나치게 짜 맞추다",
+  "overcome by strength": "힘으로 이겨 내다",
   "overly fretful": "지나치게 안절부절하는",
   "overspent on an account": "계좌에서 넘겨 쓴",
   "overtake in progress": "나아가며 앞질러 가다",
   "parentless child": "어버이 없는 아이",
   "pariah": "천대받는 사람",
   "particular time": "특정한 시점",
+  "pass on the road": "길에서 앞질러 가다",
+  "pass over": "그냥 넘기다",
   "past its day": "한창때가 지난",
   "past the due date": "기한 날짜를 넘긴",
   "peak condition": "가장 좋은 조건",
   "person looking on": "옆에서 보는 사람",
   "physical body": "형체를 가진 몸",
   "physics of lenses": "렌즈의 물리",
+  "pile on too much": "너무 많이 쌓다",
   "place under obligation": "의무 아래 두다",
   "plain to see": "보면 바로 아는",
   "plantation of fruit": "과일 농장",
@@ -1140,8 +1282,11 @@ Object.assign(window.GLOSS, {
   "pushback": "되밀어 내는 움직임",
   "put in order": "가지런히 하다",
   "put on the table": "논의 자리에 내놓다",
+  "put too high a value on": "~에 지나친 값을 두다",
   "quite the opposite": "오히려 거꾸로",
+  "rate too highly": "너무 높이 매기다",
   "receptive": "받아들일 자세가 된",
+  "reject a ruling": "판단을 물리다",
   "rejected person": "내쳐진 사람",
   "release point": "내보내는 지점",
   "remote interior": "멀리 떨어진 내륙",
@@ -1151,7 +1296,9 @@ Object.assign(window.GLOSS, {
   "richly adorned": "푸짐하게 꾸민",
   "right before": "바로 앞에",
   "rounded and long": "둥글고 길쭉한",
+  "rule against": "~에 불리하게 판단하다",
   "run a business": "사업을 꾸리다",
+  "run into each other": "서로 걸쳐 들다",
   "running of a machine": "기계가 돌아감",
   "running wild": "마구 날뛰는",
   "said aloud": "소리 내어 말한",
@@ -1161,6 +1308,7 @@ Object.assign(window.GLOSS, {
   "scandalous": "말썽거리가 될 만한",
   "science of light": "빛을 다루는 학문",
   "sense of direction": "방향을 아는 감각",
+  "set aside a decision": "결정을 무르다",
   "set in one's ways": "제 방식만 지키는",
   "settled for ever": "다시 뒤집히지 않게",
   "shelter for orphans": "고아를 돌보는 곳",
@@ -1186,12 +1334,14 @@ Object.assign(window.GLOSS, {
   "stripped of background": "배경을 걷어 낸",
   "study of vision": "보는 원리 연구",
   "stuff oneself": "배불리 채워 먹다",
+  "subdue by force": "힘으로 눌러 가라앉히다",
   "sudden rush": "갑작스레 몰려나옴",
   "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
   "surgery": "외과 처치",
   "surpass in results": "성과에서 앞서다",
   "survive longer than": "~보다 오래 살아남다",
+  "sweep over": "휩쓸어 덮치다",
   "sworn word": "맹세한 말",
   "take more food than needed": "필요보다 많이 먹다",
   "take place": "벌어지다",
@@ -1200,14 +1350,18 @@ Object.assign(window.GLOSS, {
   "tenancy": "빌려 씀",
   "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
+  "think better of than is true": "실제보다 좋게 여기다",
   "to do with running a group": "집단을 꾸리는 일의",
   "too keen": "너무 열을 올리는",
   "too large a dose": "너무 많은 약 양",
+  "too strong to resist": "버틸 수 없이 센",
   "torn from its setting": "놓인 자리에서 떼어 낸",
   "trinket": "자잘한 장신구",
+  "turn upside down": "위아래를 뒤바꾸다",
   "typical": "으레 그런",
   "tyrannical": "폭압을 휘두르는",
   "under way at present": "지금 진행 중인",
+  "underweight": "몸무게가 모자란",
   "undisguised": "감추지 않은",
   "unfair to one side": "한편에 불리한",
   "unfinished": "마무리되지 않은",
@@ -1218,6 +1372,7 @@ Object.assign(window.GLOSS, {
   "up-to-date": "요즘 것에 맞는",
   "upshot": "귀결",
   "use of a place": "장소를 씀",
+  "very suddenly": "아주 갑작스레",
   "visible from outside": "바깥에서 보이는",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
