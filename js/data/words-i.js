@@ -1496,7 +1496,90 @@ window.VOCAB_I = [
 
   { word:"intolerance", pron:"인탈러런스", pos:"n", level:"C1", meanings:["편협","참을 수 없음"],
     syn:["bigotry","narrow-mindedness","prejudice"], ant:["tolerance"],
-    ex:[{ s:"The campaign fights religious {{}} in schools.", f:"intolerance", ko:"그 운동은 학교의 종교적 편협과 싸운다." }] }
+    ex:[{ s:"The campaign fights religious {{}} in schools.", f:"intolerance", ko:"그 운동은 학교의 종교적 편협과 싸운다." }] },
+
+  { word:"intoxicate", pron:"인탁서케이트", pos:"v", level:"C2", meanings:["취하게 하다","도취시키다"],
+    syn:["inebriate","befuddle","stupefy"],
+    ex:[{ s:"Strong wine can quickly {{}} the unwary.", f:"intoxicate", ko:"독한 포도주는 방심한 사람을 빠르게 취하게 할 수 있다." }] },
+
+  /* 승격 ① — GLOSS '복잡한, 정교한' 을 글자까지 지켰다.
+     complex(syn)·elaborate(syn) 두 문제가 참조하므로 원본의 '뒤얽힌' 대신
+     사전 쪽 '정교한' 을 남겼다. */
+  { word:"intricate", pron:"인트리킷", pos:"adj", level:"C1", meanings:["복잡한","정교한"],
+    syn:["complex","elaborate","convoluted"],
+    ex:[{ s:"The lid was covered in an {{}} carved pattern.", f:"intricate", ko:"그 뚜껑은 복잡한 조각 무늬로 덮여 있었다." }] },
+
+  /* 승격 ① — GLOSS '흥미를 돋우다' 로 동사였다. fascinate(syn) 가 참조하는데
+     그쪽도 동사라 pos 를 v 로 유지하고 첫 뜻을 글자까지 지켰다.
+     원본의 명사 갈래('호기심, 흥미'·'음모')는 pos 가 v 라 담지 못했다. */
+  { word:"intrigue", pron:"인트리그", pos:"v", level:"C1", meanings:["흥미를 돋우다","호기심을 끌다"],
+    syn:["fascinate","captivate","pique"],
+    ex:[{ s:"The unsolved case continues to {{}} historians.", f:"intrigue", ko:"그 미해결 사건은 역사가들의 흥미를 계속 돋운다." }] },
+
+  /* 승격 ① — GLOSS '본질적인, 내재적인' 을 글자까지 지켰다(원본은 순서가 반대).
+     extrinsic(ant) 이 참조한다. */
+  { word:"intrinsic", pron:"인트린식", pos:"adj", level:"C1", meanings:["본질적인","내재적인"],
+    syn:["inherent","fundamental","built-in"], ant:["extrinsic"],
+    ex:[{ s:"The painting has {{}} artistic value beyond its price.", f:"intrinsic", ko:"그 그림은 가격을 넘어서는 본질적인 예술적 가치를 지닌다." }] },
+
+  /* intrinsic 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
+  { word:"intrinsically", pron:"인트린시클리", pos:"adv", level:"C1", meanings:["본질적으로","내재적으로"],
+    syn:["fundamentally","inherently","by nature"],
+    ex:[{ s:"The new method is not {{}} better than the old one.", f:"intrinsically", ko:"그 새 방법이 본질적으로 예전 것보다 더 나은 것은 아니다." }] },
+
+  { word:"introspection", pron:"인트러스펙션", pos:"n", level:"C1", meanings:["내성","자기 성찰"],
+    syn:["self-examination","soul-searching","reflection"],
+    ex:[{ s:"The illness led to a long period of deep {{}}.", f:"introspection", ko:"그 병은 깊은 자기 성찰의 긴 시기로 이어졌다." }] },
+
+  /* introspection 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"introspective", pron:"인트러스펙티브", pos:"adj", level:"C1", meanings:["자아 성찰적인"],
+    syn:["reflective","inward-looking","contemplative"],
+    ex:[{ s:"His later poems grew steadily more {{}}.", f:"introspective", ko:"그의 후기 시들은 점점 더 자아 성찰적으로 변했다." }] },
+
+  /* 승격 ① — GLOSS '내향적인 사람' 을 글자까지 지켰다. extrovert(ant) 가 참조하므로
+     원본의 '내성적인 사람' 대신 사전 쪽 표현을 남겼다.
+     바로 뒤 introverted 가 '내성적인' 을 쓰므로 뜻도 자연스럽게 갈린다. */
+  { word:"introvert", pron:"인트러버트", pos:"n", level:"B2", meanings:["내향적인 사람"],
+    syn:["loner","reserved person","homebody"], ant:["extrovert"],
+    ex:[{ s:"As an {{}}, she found large parties draining.", f:"introvert", ko:"내향적인 사람으로서 그녀는 큰 파티가 기운을 빼앗는다고 느꼈다." }] },
+
+  /* introvert 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"introverted", pron:"인트러버팃", pos:"adj", level:"B2", meanings:["내성적인","내향적인"],
+    syn:["shy","withdrawn","retiring"], ant:["outgoing"],
+    ex:[{ s:"He was quiet and rather {{}} as a child.", f:"introverted", ko:"그는 어릴 때 조용하고 다소 내성적이었다." }] },
+
+  /* 승격 ① — GLOSS '침입하다, 끼어들다' 를 글자까지 지켰다. barge(syn) 가 참조한다.
+     원본은 '침범하다' 인데, 11차에서 infiltrate 를 '침투하다' 로, 이 차수에서
+     invade 를 '침략하다' 로 돌려 두었으므로 '침입하다' 가 비어 있다 —
+     사전 쪽 표현을 그대로 쓸 수 있었다. */
+  { word:"intrude", pron:"인트루드", pos:"v", level:"C1", meanings:["침입하다","끼어들다"],
+    syn:["barge","encroach","trespass"],
+    ex:[{ s:"I did not mean to {{}} on your conversation.", f:"intrude", ko:"당신의 대화에 침입할 의도는 없었습니다." }] },
+
+  /* ── 챕터 15 ────────────────────────────── */
+
+  /* 15차의 instinct 는 '본능, 천성' 으로 돌려 두었다 — 이쪽이 '직감' 을 쓴다. */
+  { word:"intuition", pron:"인투이션", pos:"n", level:"B2", meanings:["직감","직관력"],
+    syn:["gut feeling","hunch","sixth sense"],
+    ex:[{ s:"She trusted her {{}} and declined the offer.", f:"intuition", ko:"그녀는 직감을 믿고 그 제안을 거절했다." }] },
+
+  /* 원본은 '침입하다' 였는데 11차의 infiltrate 와 같았다. infiltrate 가 '침투하다' 를
+     맡고 이쪽은 '침략하다' 로 돌렸다 — 군대가 쳐들어가는 쪽이다. */
+  { word:"invade", pron:"인베이드", pos:"v", level:"B2", meanings:["침략하다","쳐들어가다"],
+    syn:["attack","overrun","storm"],
+    ex:[{ s:"The army planned to {{}} from the north.", f:"invade", ko:"그 군대는 북쪽에서 침략할 계획이었다." }] },
+
+  { word:"invalid", pron:"인밸리드", pos:"adj", level:"B2", meanings:["실효성이 없는","타당하지 않은"],
+    syn:["void","null","unfounded"], ant:["valid"],
+    ex:[{ s:"The ticket becomes {{}} after the expiry date.", f:"invalid", ko:"그 표는 만료일 이후 실효성이 없어진다." }] },
+
+  { word:"invaluable", pron:"인밸류어블", pos:"adj", level:"B2", meanings:["매우 귀중한","값을 헤아릴 수 없는"],
+    syn:["priceless","precious","beyond price"],
+    ex:[{ s:"Her advice proved {{}} during the crisis.", f:"invaluable", ko:"그녀의 조언은 위기 동안 매우 귀중한 것으로 드러났다." }] },
+
+  { word:"invariable", pron:"인베리어블", pos:"adj", level:"C1", meanings:["불변의","변함없는"],
+    syn:["unchanging","constant","fixed"], ant:["variable"],
+    ex:[{ s:"His morning routine was almost {{}}.", f:"invariable", ko:"그의 아침 일과는 거의 불변이었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1528,11 +1611,13 @@ Object.assign(window.GLOSS, {
   "at the outset": "처음에",
   "baby": "아기",
   "be bound up": "서로 얽혀 있다",
+  "befuddle": "정신을 흐리게 하다",
   "beg": "간청하다",
   "bent on": "~하기로 굳게 마음먹은",
   "bequest": "유증, 물려준 것",
   "betterment": "개량",
   "between stars": "별들 사이의",
+  "beyond price": "값을 매길 수 없는",
   "bigotry": "고집스러운 편견",
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
@@ -1547,6 +1632,7 @@ Object.assign(window.GLOSS, {
   "bug spray": "벌레 살충 분무제",
   "bungling": "일을 망치는",
   "butt in": "끼어들다",
+  "by nature": "본성으로",
   "cerebral": "머리를 쓰는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
@@ -1570,6 +1656,8 @@ Object.assign(window.GLOSS, {
   "constituent": "구성 요소",
   "construal": "풀이",
   "construe": "뜻을 새기다",
+  "contemplative": "깊이 생각하는",
+  "convoluted": "뒤얽힌",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
   "creeping": "슬금슬금 퍼지는",
@@ -1614,6 +1702,7 @@ Object.assign(window.GLOSS, {
   "emboss": "도드라지게 새기다",
   "emigration": "국외 이주",
   "emphatic": "단호히 말하는",
+  "encroach": "침범해 들어가다",
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
   "enlightening": "깨우침을 주는",
@@ -1644,17 +1733,20 @@ Object.assign(window.GLOSS, {
   "formalize": "공식화하다",
   "forthcoming": "다가오는, 곧 있을",
   "fumigant": "훈증제",
+  "fundamentally": "근본적으로",
   "galactic": "은하의",
   "garbled": "뒤죽박죽인",
   "give-and-take": "주고받기",
   "grippe": "유행성 감기",
   "guiltless": "죄가 없는",
+  "gut feeling": "본능적인 느낌",
   "hallucination": "환각",
   "hatching": "부화",
   "heartburn": "가슴 쓰림",
   "heat-sensing": "열을 감지하는",
   "hegemony": "패권",
   "hire purchase": "할부 매입",
+  "homebody": "집에 있기 좋아하는 사람",
   "hospitalize": "입원시키다",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
@@ -1702,6 +1794,7 @@ Object.assign(window.GLOSS, {
   "individuality": "개성, 특성",
   "induction": "취임시킴, 유도",
   "industry veteran": "업계 베테랑",
+  "inebriate": "술에 취하게 하다",
   "ineffective": "효과가 없는",
   "inequity": "불공정",
   "inert": "반응이 없는",
@@ -1711,6 +1804,7 @@ Object.assign(window.GLOSS, {
   "inflow": "흘러듦",
   "infuse": "불어넣다",
   "infusion": "주입액",
+  "inherently": "본디부터",
   "inject": "주사로 넣다",
   "innermost": "가장 깊은 곳의",
   "inorganic": "무기의",
@@ -1731,6 +1825,7 @@ Object.assign(window.GLOSS, {
   "intuitive": "직감에 따른",
   "inventive": "창의력이 뛰어난",
   "inward": "안쪽을 향한",
+  "inward-looking": "안으로 파고드는",
   "irresolute": "결단을 못 내리는",
   "jab": "예방주사",
   "jail": "감옥에 넣다",
@@ -1753,6 +1848,7 @@ Object.assign(window.GLOSS, {
   "linked": "이어져 있는",
   "literate": "글을 읽고 쓸 수 있는",
   "local": "그 지역의",
+  "loner": "혼자 지내는 사람",
   "long-wave": "장파의",
   "looming": "곧 닥칠 듯한",
   "make do": "있는 것으로 때우다",
@@ -1785,6 +1881,7 @@ Object.assign(window.GLOSS, {
   "not guilty": "유죄가 아닌",
   "notify": "통보하다",
   "novelty": "새로움",
+  "null": "무효인",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
   "occupant": "점유자",
@@ -1797,6 +1894,7 @@ Object.assign(window.GLOSS, {
   "optimal": "최적의",
   "optimally": "최적으로",
   "over time": "시간이 지나면서",
+  "overrun": "짓밟고 들어가다",
   "pamper": "애지중지하다",
   "participatory": "참여하는",
   "partisan": "당파적인",
@@ -1810,12 +1908,14 @@ Object.assign(window.GLOSS, {
   "personally": "개인적으로, 직접",
   "pest": "해충",
   "pesticide": "농약",
+  "pique": "돋우다, 자극하다",
   "policy": "보험 증권",
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "precariousness": "불안한 상태",
   "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
+  "priceless": "값을 헤아릴 수 없는",
   "primeval": "원시의, 태고의",
   "probing": "파고드는",
   "prominent name": "이름난 인물",
@@ -1830,6 +1930,8 @@ Object.assign(window.GLOSS, {
   "put in place": "자리에 놓다",
   "reading": "읽어 낸 뜻",
   "ready-made": "미리 만들어진",
+  "reflection": "돌아봄, 반영",
+  "reflective": "되돌아보는",
   "reflexive": "반사적인",
   "regal": "제왕의",
   "relational": "관계에 관한",
@@ -1839,9 +1941,11 @@ Object.assign(window.GLOSS, {
   "rendering": "옮겨 냄",
   "repercussion": "파급 효과",
   "research": "연구 조사",
+  "reserved person": "말을 아끼는 사람",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
   "restlessness": "잠 못 이룸",
+  "retiring": "나서기를 꺼리는",
   "reward": "보상",
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
@@ -1852,6 +1956,7 @@ Object.assign(window.GLOSS, {
   "second-rate": "이류의",
   "secondary": "이차적인",
   "selective": "가려서 하는",
+  "self-examination": "자기 점검",
   "selfhood": "자아, 개체성",
   "separately": "따로따로",
   "sepsis": "패혈증",
@@ -1859,12 +1964,15 @@ Object.assign(window.GLOSS, {
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
   "shot": "주사 한 대",
+  "shy": "수줍은",
   "sign": "징후, 표지",
+  "sixth sense": "여섯 번째 감각",
   "sleeplessness": "잠들지 못함",
   "slope": "비탈지다",
   "slot in": "끼워 맞추다",
   "sneak into": "몰래 들어가다",
   "social": "사교의",
+  "soul-searching": "속마음 들여다보기",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
@@ -1878,7 +1986,9 @@ Object.assign(window.GLOSS, {
   "step in": "끼어들어 돕다",
   "stepping in": "나서서 관여함",
   "stoppage": "멈춤",
+  "storm": "돌격하다",
   "striking": "눈에 띄는",
+  "stupefy": "멍하게 하다",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
   "succeed to": "~을 승계하다",
@@ -1904,6 +2014,7 @@ Object.assign(window.GLOSS, {
   "tool": "연장",
   "trade places": "자리를 맞바꾸다",
   "treacherous": "믿을 수 없는",
+  "trespass": "무단으로 들어가다",
   "truly": "참으로",
   "unauthorized": "무단의, 승인받지 않은",
   "unavoidable": "비켜 갈 수 없는",
@@ -1944,6 +2055,7 @@ Object.assign(window.GLOSS, {
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",
+  "valid": "유효한",
   "verification": "입증, 검증",
   "viral illness": "바이러스 질환",
   "volatility": "변동이 심함",

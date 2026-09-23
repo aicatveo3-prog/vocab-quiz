@@ -2474,8 +2474,6 @@ Object.assign(window.GLOSS, {
   "coming from outside":"밖에서 들어오는",
   "distill":"증류해 뽑아내다",
   "dying out":"멸종해 감",
-  "intrinsic":"본질적인, 내재적인",
-  "introvert":"내향적인 사람",
   "lavish":"호화로운",
   "monstrosity":"기괴하게 흉한 것",
   "non-inherent":"본래의 것이 아닌",

@@ -940,8 +940,6 @@ Object.assign(window.GLOSS, {
   "intermediary":"중재자, 중개인",
   "internship":"인턴십, 수습 기간",
   "intimidation":"협박, 위협",
-  "intricate":"복잡한, 정교한",
-  "intrude":"침입하다, 끼어들다",
   "intruder":"침입자",
   "invader":"침략자",
   "invalidate":"무효화하다",
