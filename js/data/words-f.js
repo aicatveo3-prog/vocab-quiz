@@ -1797,8 +1797,6 @@ Object.assign(window.GLOSS, {
   "gastric infection":"위장 감염",
   "greenery":"푸른 잎",
   "hunt for provisions":"먹을 것을 찾아다니다",
-  "inevitable":"피할 수 없는",
-  "instability":"불안정",
   "kinfolk":"친족",
   "leafage":"잎의 무성함",
   "leaves":"나뭇잎",
