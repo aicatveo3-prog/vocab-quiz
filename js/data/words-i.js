@@ -288,7 +288,88 @@ window.VOCAB_I = [
      같은 보드에 안 온다. */
   { word:"impartially", pron:"임파셜리", pos:"adv", level:"C1", meanings:["공정하게","편견 없이"],
     syn:["fairly","objectively","evenhandedly"],
-    ex:[{ s:"Judges must treat all parties {{}}.", f:"impartially", ko:"판사는 모든 당사자를 공정하게 대해야 한다." }] }
+    ex:[{ s:"Judges must treat all parties {{}}.", f:"impartially", ko:"판사는 모든 당사자를 공정하게 대해야 한다." }] },
+
+  { word:"impel", pron:"임펠", pos:"v", level:"C1", meanings:["추진하다","재촉하다"],
+    syn:["propel","compel","spur"], ant:["deter"],
+    ex:[{ s:"Financial pressure {{}} many students to take part-time jobs.", f:"impels", ko:"재정적 압박은 많은 학생이 아르바이트를 하도록 재촉한다." }] },
+
+  /* 원본 첫 뜻은 '임박한' 으로 imminent 과 같았다. imminent 이 '임박한' 을
+     가져가고 이쪽은 '곧 닥칠' 로 돌렸다. */
+  { word:"impending", pron:"임펜딩", pos:"adj", level:"C1", meanings:["곧 닥칠","다가오는"],
+    syn:["imminent","approaching","looming"],
+    ex:[{ s:"Everyone sensed the {{}} crisis but no one acted.", f:"impending", ko:"모두가 곧 닥칠 위기를 감지했지만 아무도 움직이지 않았다." }] },
+
+  { word:"imperative", pron:"임페러티브", pos:"adj", level:"C1", meanings:["꼭 필요한","절박한"],
+    syn:["essential","urgent","crucial"], ant:["optional"],
+    ex:[{ s:"It is {{}} that emissions be cut without delay.", f:"imperative", ko:"배출량을 지체 없이 줄이는 것이 꼭 필요하다." }] },
+
+  /* 둘째 갈래를 '흠이 있는' 으로 했다. '결함이 있는' 은 유의어 flawed 의 뜻과
+     글자까지 같아, 문제와 선택지가 같은 줄을 보여 주게 된다. */
+  { word:"imperfect", pron:"임퍼픽트", pos:"adj", level:"B2", meanings:["불완전한","흠이 있는"],
+    syn:["flawed","faulty","substandard"], ant:["perfect"],
+    ex:[{ s:"Even the finest translation is an {{}} copy of the original.", f:"imperfect", ko:"가장 훌륭한 번역조차 원문의 불완전한 사본이다." }] },
+
+  { word:"imperial", pron:"임피리얼", pos:"adj", level:"C1", meanings:["제국의","황제의"],
+    syn:["royal","sovereign","regal"],
+    ex:[{ s:"The museum displays {{}} robes from the Qing dynasty.", f:"imperial", ko:"그 박물관은 청나라의 황제 의복을 전시한다." }] },
+
+  /* imperial 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"imperialism", pron:"임피리얼리즘", pos:"n", level:"C1", meanings:["제국주의","패권주의"],
+    syn:["colonialism","expansionism","hegemony"],
+    ex:[{ s:"The conflict was driven by nineteenth-century {{}}.", f:"imperialism", ko:"그 분쟁은 19세기 제국주의에 의해 추동되었다." }] },
+
+  { word:"impertinent", pron:"임퍼터넌트", pos:"adj", level:"C2", meanings:["무례한","버릇없는"],
+    syn:["rude","insolent","disrespectful"], ant:["polite"],
+    ex:[{ s:"The student's {{}} remark stunned the whole class.", f:"impertinent", ko:"그 학생의 무례한 말이 반 전체를 아연하게 했다." }] },
+
+  /* 승격 ① — GLOSS '원동력, 추진력' 과 같은 갈래다. 참조하는 기존 문제가 없어
+     원본 뜻 '자극제, 추진력' 을 그대로 썼다. PRON 에는 없었다. */
+  { word:"impetus", pron:"임퍼터스", pos:"n", level:"C1", meanings:["자극제","추진력"],
+    syn:["stimulus","momentum","driving force"],
+    ex:[{ s:"The discovery gave fresh {{}} to cancer research.", f:"impetus", ko:"그 발견은 암 연구에 새로운 자극제가 되었다." }] },
+
+  /* 승격 ② — GLOSS '실행하다; 도구' 다. act on(syn)·apply(syn) 는 둘 다 동사로
+     '실행하다' 갈래를 쓴다. 사전에 있던 명사 '도구' 는 pos 가 v 인 이 표제어에
+     담을 수 없고 참조하는 문제도 없어 뺐다. */
+  { word:"implement", pron:"임플러먼트", pos:"v", level:"B2", meanings:["실행하다","수행하다"],
+    syn:["execute","carry out","enforce"],
+    ex:[{ s:"The city plans to {{}} the new recycling scheme in June.", f:"implement", ko:"그 시는 6월에 새 재활용 제도를 실행할 계획이다." }] },
+
+  /* 승격 ② — GLOSS '함축, 영향' 이다. connotation(syn) 이 쓰는 갈래 '함축' 을
+     첫 자리에 지켰다. 둘째는 원본의 '암시' 로 했다 — '영향' 은 바로 앞
+     impact 가 가져갔다. */
+  { word:"implication", pron:"임플리케이션", pos:"n", level:"B2", meanings:["함축","암시"],
+    syn:["connotation","inference","insinuation"],
+    ex:[{ s:"He denied any {{}} that the figures had been altered.", f:"implication", ko:"그는 수치가 조작되었다는 어떤 암시도 부인했다." }] },
+
+  /* implication 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다.
+     원본 셋째 갈래 '절대적인' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"implicit", pron:"임플리싯", pos:"adj", level:"C1", meanings:["암시된","내포된"],
+    syn:["implied","tacit","unspoken"], ant:["explicit"],
+    ex:[{ s:"There was an {{}} agreement that no one would raise the issue.", f:"implicit", ko:"아무도 그 문제를 꺼내지 않겠다는 암시된 합의가 있었다." }] },
+
+  { word:"implore", pron:"임플로", pos:"v", level:"C2", meanings:["애원하다","탄원하다"],
+    syn:["beg","plead","entreat"],
+    ex:[{ s:"She began to {{}} the judge for leniency.", f:"implore", ko:"그녀는 판사에게 관용을 애원하기 시작했다." }] },
+
+  { word:"imply", pron:"임플라이", pos:"v", level:"B2", meanings:["암시하다","의미하다"],
+    syn:["suggest","hint","insinuate"],
+    ex:[{ s:"Are you trying to {{}} that the record was careless?", f:"imply", ko:"그 기록이 부주의했다고 암시하려는 겁니까?" }] },
+
+  /* 승격 ② — GLOSS '수입하다' 다. export(ant) 가 참조한다. 첫 갈래를 그대로
+     지키고 원본의 '가져오다' 를 뒤에 붙였다.
+     원본 셋째 갈래 '수입품'(명사)은 pos 가 v 라 담지 못했다. */
+  { word:"import", pron:"임포트", pos:"v", level:"B1", meanings:["수입하다","가져오다"],
+    syn:["bring in","introduce","ship in"], ant:["export"],
+    ex:[{ s:"Japan must {{}} most of its energy resources.", f:"import", ko:"일본은 에너지 자원의 대부분을 수입해야 한다." }] },
+
+  /* 승격 ① — GLOSS '부과하다, 강요하다' 를 글자까지 지켰다.
+     dictate(syn)·enforce(syn) 두 문제가 참조하므로 원본('부과하다' 한 갈래)
+     대신 사전 쪽을 남겼다. */
+  { word:"impose", pron:"임포즈", pos:"v", level:"B2", meanings:["부과하다","강요하다"],
+    syn:["levy","inflict","dictate"],
+    ex:[{ s:"The government will {{}} a tax on sugary drinks.", f:"impose", ko:"정부는 설탕이 든 음료에 세금을 부과할 것이다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -296,34 +377,49 @@ window.VOCAB_I = [
    Object.assign(window.PRON, ...) 을 하면 pron.js 쪽 값에 덮인다). */
 Object.assign(window.GLOSS, {
   "approaching": "다가오는",
+  "colonialism": "식민주의",
+  "beg": "간청하다",
   "creative": "창의적인",
   "childish": "어린애 같은",
   "depraved": "타락한",
   "deathlessness": "불사, 죽지 않음",
   "damage": "손상시키다, 피해",
   "detection":"탐지, 발견",
+  "deter": "막다, 억제하다",
   "different":"다른",
+  "disrespectful": "예의 없는",
   "distinguishable":"구별할 수 있는",
   "doctrinal":"교리상의",
   "dogmatic":"독단적인",
+  "driving force": "추진 동력",
   "emblematic":"상징적인",
+  "expansionism": "팽창주의",
   "fairly": "공정하게, 상당히",
   "evenhandedly": "치우치지 않게",
   "endlessness": "끝없음",
   "emigration": "국외 이주",
+  "faulty": "고장이 있는",
   "figuration": "형상화",
   "fallacious": "오류가 있는",
   "figurehead":"명목상의 대표",
   "flawed":"결함이 있는",
   "forthcoming": "다가오는, 곧 있을",
+  "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "hallucination": "환각",
   "idol":"우상, 숭배 대상",
+  "implied": "함축된",
   "indecipherable": "판독할 수 없는",
   "incalculable": "헤아릴 수 없이 큰",
   "indistinguishable":"구별할 수 없는",
   "individuality":"개성, 특성",
   "inexperience":"미숙, 경험 부족",
+  "introduce": "도입하다, 소개하다",
+  "insolent": "건방진",
+  "insinuation": "빗댄 말",
+  "insinuate": "빗대어 말하다",
+  "inflict": "안기다, 가하다",
+  "inference": "추론",
   "juvenile": "유치한, 청소년의",
   "inventive": "창의력이 뛰어난",
   "knowledge":"지식",
@@ -337,6 +433,7 @@ Object.assign(window.GLOSS, {
   "literate": "글을 읽고 쓸 수 있는",
   "light up": "환하게 밝히다",
   "legible": "읽기 쉬운",
+  "momentum": "기세, 탄력",
   "mortality": "죽음을 피할 수 없음, 사망률",
   "naivety":"순진함",
   "objectively": "객관적으로",
@@ -347,6 +444,8 @@ Object.assign(window.GLOSS, {
   "perfectionism":"완벽주의",
   "perfectly":"완벽하게",
   "preferably":"되도록",
+  "regal": "제왕의",
+  "propel": "나아가게 하다",
   "resistant": "저항력이 있는",
   "repercussion": "파급 효과",
   "relocation": "이전, 재배치",
@@ -357,10 +456,15 @@ Object.assign(window.GLOSS, {
   "sameness":"동일성, 똑같음",
   "scrawled": "갈겨쓴",
   "selfhood":"자아, 개체성",
+  "substandard": "표준에 못 미치는",
+  "spur": "박차를 가하다",
+  "sovereign": "주권을 가진",
+  "ship in": "실어 들이다",
   "swift": "빠른, 신속한",
   "susceptible": "영향받기 쉬운",
   "submerge": "물에 잠기게 하다",
   "speedy": "신속한",
+  "tacit": "말 없는, 무언의",
   "unauthorized": "무단의, 승인받지 않은",
   "symbolism": "상징, 상징주의",
   "unawareness":"알지 못함",
@@ -372,6 +476,7 @@ Object.assign(window.GLOSS, {
   "unreasonable": "불합리한, 터무니없는",
   "unreadable": "읽을 수 없는",
   "unlettered": "무학의",
+  "unspoken": "입 밖에 내지 않은",
   "utopianism":"유토피아주의",
   "verification":"입증, 검증"
 });

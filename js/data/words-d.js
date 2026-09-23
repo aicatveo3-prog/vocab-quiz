@@ -1710,7 +1710,6 @@ Object.assign(window.GLOSS, {
   "give over":"내주다, 맡기다",
   "gobble":"급히 먹다, 꿀꺽 삼키다",
   "hardworking":"열심히 일하는",
-  "impose":"부과하다, 강요하다",
   "industrious":"근면한, 부지런한",
   "instrument":"기구, 도구",
   "lazy":"게으른, 나태한",

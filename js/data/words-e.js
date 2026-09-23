@@ -2448,7 +2448,6 @@ Object.assign(window.GLOSS, {
   "drawn-out":"질질 늘어진",
   "far-reaching":"파급 효과가 큰",
   "highly unstable":"매우 불안정한",
-  "import":"수입하다",
   "in so many words":"딱 그렇게 말로",
   "investigate":"조사하다, 살피다",
   "investigation":"조사, 탐구",
