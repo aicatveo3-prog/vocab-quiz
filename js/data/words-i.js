@@ -995,7 +995,92 @@ window.VOCAB_I = [
 
   { word:"initiative", pron:"이니셔티브", pos:"n", level:"B2", meanings:["주도권","발의"],
     syn:["enterprise","drive","first move"],
-    ex:[{ s:"She took the {{}} and organized the whole event.", f:"initiative", ko:"그녀가 주도권을 잡고 행사 전체를 준비했다." }] }
+    ex:[{ s:"She took the {{}} and organized the whole event.", f:"initiative", ko:"그녀가 주도권을 잡고 행사 전체를 준비했다." }] },
+
+  /* ── 챕터 10 ────────────────────────────── */
+
+  { word:"injection", pron:"인젝션", pos:"n", level:"B2", meanings:["주사","주입"],
+    syn:["shot","jab","infusion"],
+    ex:[{ s:"The nurse gave him an {{}} in the upper arm.", f:"injection", ko:"간호사가 그의 위팔에 주사를 놓았다." }] },
+
+  { word:"injustice", pron:"인저스티스", pos:"n", level:"B2", meanings:["불공평","부정"],
+    syn:["unfairness","inequity","wrong"], ant:["justice"],
+    ex:[{ s:"He spent his life fighting social {{}}.", f:"injustice", ko:"그는 사회적 불공평과 싸우며 일생을 보냈다." }] },
+
+  /* 승격 ① — GLOSS '타고난, 본래의' 를 글자까지 지켰다.
+     dispositional(syn)·hard-wired(syn) 두 문제가 참조하므로 원본의 '선천적인'
+     대신 사전 쪽 '본래의' 를 남겼다. */
+  { word:"innate", pron:"이네이트", pos:"adj", level:"C1", meanings:["타고난","본래의"],
+    syn:["inborn","hard-wired","congenital"], ant:["acquired"],
+    ex:[{ s:"Some researchers argue that the ability is {{}}.", f:"innate", ko:"일부 연구자는 그 능력이 타고난 것이라고 주장한다." }] },
+
+  /* 원본 첫 뜻은 '내부의' 로 뒤에 올 internal 과 같았다. internal 이 '내부의' 를
+     가져가고 이쪽은 '내면의' 로 돌렸다. */
+  { word:"inner", pron:"이너", pos:"adj", level:"B1", meanings:["내면의","안쪽의"],
+    syn:["inward","innermost","central"], ant:["outer"],
+    ex:[{ s:"She rarely shares her {{}} thoughts with anyone.", f:"inner", ko:"그녀는 내면의 생각을 누구와도 좀처럼 나누지 않는다." }] },
+
+  /* 승격 ② — GLOSS '무죄인' 이다. guilty(ant) 가 그 갈래를 쓰므로 첫 자리에
+     지키고, 원본의 '순수한' 을 둘째 자리에 붙였다. */
+  { word:"innocent", pron:"이노선트", pos:"adj", level:"B1", meanings:["무죄인","순수한"],
+    syn:["blameless","guiltless","not guilty"], ant:["guilty"],
+    ex:[{ s:"The jury found the defendant {{}} on all counts.", f:"innocent", ko:"배심원단은 피고가 모든 혐의에서 무죄라고 판단했다." }] },
+
+  /* 승격 ① — GLOSS '혁신하다' 를 첫 자리에 지켰다. break new ground(syn) 가
+     참조한다. 원본의 '쇄신하다' 를 둘째 자리에 붙였다. */
+  { word:"innovate", pron:"이너베이트", pos:"v", level:"C1", meanings:["혁신하다","쇄신하다"],
+    syn:["break new ground","modernize","pioneer"],
+    ex:[{ s:"Companies that fail to {{}} soon fall behind.", f:"innovate", ko:"혁신하지 못하는 기업은 곧 뒤처진다." }] },
+
+  { word:"innovation", pron:"이너베이션", pos:"n", level:"B2", meanings:["혁신","쇄신"],
+    syn:["breakthrough","novelty","advance"],
+    ex:[{ s:"The firm built its reputation on constant {{}}.", f:"innovation", ko:"그 회사는 끊임없는 혁신으로 명성을 쌓았다." }] },
+
+  /* 승격 ① — GLOSS '혁신적인' 을 첫 자리에 지켰다. 참조하는 groundbreaking(syn)
+     의 뜻이 '획기적인' 인데, 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다 —
+     원본의 '획기적인' 을 둘째 자리에 붙여 양쪽을 다 살렸다.
+     innovate·innovation 과 어근이 같지만 품사가 셋 다 달라(v/n/adj) 같은 보드에
+     안 온다. */
+  { word:"innovative", pron:"이노베이티브", pos:"adj", level:"B2", meanings:["혁신적인","획기적인"],
+    syn:["groundbreaking","pioneering","inventive"],
+    ex:[{ s:"Their {{}} approach to teaching won several awards.", f:"innovative", ko:"그들의 혁신적인 교육 접근법은 여러 상을 받았다." }] },
+
+  /* 승격 ① — GLOSS '셀 수 없이 많은' 과 글자까지 같다. countless(syn) 가 참조한다.
+     원본도 한 갈래라 그대로 두었다. */
+  { word:"innumerable", pron:"이누머러블", pos:"adj", level:"C1", meanings:["셀 수 없이 많은"],
+    syn:["countless","myriad","untold"],
+    ex:[{ s:"The library holds {{}} medieval manuscripts.", f:"innumerable", ko:"그 도서관은 셀 수 없이 많은 중세 필사본을 소장한다." }] },
+
+  { word:"inoculate", pron:"이나큘레이트", pos:"v", level:"C1", meanings:["접종하다","예방주사를 놓다"],
+    syn:["vaccinate","immunize","inject"],
+    ex:[{ s:"Doctors will {{}} every child against measles.", f:"inoculate", ko:"의사들은 모든 아이에게 홍역 접종을 할 것이다." }] },
+
+  /* 원본 셋째 갈래 '질문' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"inquiry", pron:"인콰이어리", pos:"n", level:"B2", meanings:["연구","탐구"],
+    syn:["investigation","probe","research"],
+    ex:[{ s:"Scientific {{}} depends on careful observation.", f:"inquiry", ko:"과학적 탐구는 주의 깊은 관찰에 달려 있다." }] },
+
+  /* 승격 ① — GLOSS '호기심 많은' 을 글자까지 지켰다. curious(syn) 가 참조한다.
+     원본 '호기심이 많은' 은 같은 갈래라 사전 쪽 표현을 남겼다. */
+  { word:"inquisitive", pron:"인퀴저티브", pos:"adj", level:"C1", meanings:["호기심 많은"],
+    syn:["curious","probing","prying"],
+    ex:[{ s:"The child was endlessly {{}} about how things worked.", f:"inquisitive", ko:"그 아이는 사물이 어떻게 작동하는지에 끝없이 호기심이 많았다." }] },
+
+  /* 승격 ① — GLOSS '미친, 제정신이 아닌' 을 글자까지 지켰다. deranged(syn) 가
+     참조하므로 원본의 순서('제 정신이 아닌, 미친') 대신 사전 쪽을 남겼다. */
+  { word:"insane", pron:"인세인", pos:"adj", level:"B2", meanings:["미친","제정신이 아닌"],
+    syn:["deranged","demented","unhinged"], ant:["sane"],
+    ex:[{ s:"The plan sounded completely {{}} when first proposed.", f:"insane", ko:"그 계획은 처음 제안됐을 때 완전히 미친 것처럼 들렸다." }] },
+
+  /* 승격 ① — GLOSS '만족을 모르는' 을 글자까지 지켰다. greedy(syn) 가 참조한다.
+     원본 '만족할 줄 모르는' 은 같은 갈래라 사전 쪽 표현을 남겼다. */
+  { word:"insatiable", pron:"인세이셔블", pos:"adj", level:"C1", meanings:["만족을 모르는"],
+    syn:["greedy","voracious","unquenchable"],
+    ex:[{ s:"He had an {{}} appetite for detective novels.", f:"insatiable", ko:"그는 추리 소설에 대해 만족을 모르는 욕구를 가졌다." }] },
+
+  { word:"inscription", pron:"인스크립션", pos:"n", level:"C1", meanings:["새겨진 글","비문"],
+    syn:["engraving","epitaph","lettering"],
+    ex:[{ s:"The {{}} on the monument had almost worn away.", f:"inscription", ko:"그 기념비에 새겨진 글은 거의 닳아 없어졌다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1003,6 +1088,7 @@ window.VOCAB_I = [
    Object.assign(window.PRON, ...) 을 하면 pron.js 쪽 값에 덮인다). */
 Object.assign(window.GLOSS, {
   "abiding by": "~을 지키며",
+  "acquired": "후천적으로 얻은",
   "ad-lib": "즉흥적으로 하다",
   "affair": "일, 사건",
   "all-embracing": "모두를 아우르는",
@@ -1024,6 +1110,7 @@ Object.assign(window.GLOSS, {
   "beg": "간청하다",
   "bequest": "유증, 물려준 것",
   "betterment": "개량",
+  "blameless": "잘못이 없는",
   "blight": "병들게 하다",
   "brazen": "낯 두꺼운",
   "breathe in": "숨을 들이켜다",
@@ -1042,6 +1129,7 @@ Object.assign(window.GLOSS, {
   "compulsion": "강한 욕구, 강제",
   "concerning": "~에 관하여",
   "confinement": "감금",
+  "congenital": "선천적인",
   "consistent with": "~와 들어맞는",
   "constituent": "구성 요소",
   "corresponding to": "~에 대응하여",
@@ -1077,6 +1165,7 @@ Object.assign(window.GLOSS, {
   "enhancement": "향상, 강화",
   "enterprise": "진취성, 사업",
   "episode": "일화",
+  "epitaph": "묘비명",
   "evenhandedly": "치우치지 않게",
   "expansionism": "팽창주의",
   "extemporize": "즉석에서 말하다",
@@ -1097,6 +1186,7 @@ Object.assign(window.GLOSS, {
   "forthcoming": "다가오는, 곧 있을",
   "garbled": "뒤죽박죽인",
   "grippe": "유행성 감기",
+  "guiltless": "죄가 없는",
   "hallucination": "환각",
   "hatching": "부화",
   "heartburn": "가슴 쓰림",
@@ -1104,6 +1194,7 @@ Object.assign(window.GLOSS, {
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
+  "immunize": "면역을 주다",
   "impenetrable": "헤아릴 수 없는",
   "implied": "함축된",
   "imprecise": "정밀하지 않은",
@@ -1140,11 +1231,15 @@ Object.assign(window.GLOSS, {
   "induction": "취임시킴, 유도",
   "industry veteran": "업계 베테랑",
   "ineffective": "효과가 없는",
+  "inequity": "불공정",
   "inert": "반응이 없는",
   "inexperience": "미숙, 경험 부족",
   "inference": "추론",
   "inflict": "안기다, 가하다",
   "inflow": "흘러듦",
+  "infusion": "주입액",
+  "inject": "주사로 넣다",
+  "innermost": "가장 깊은 곳의",
   "inorganic": "무기의",
   "insinuate": "빗대어 말하다",
   "insinuation": "빗댄 말",
@@ -1153,8 +1248,11 @@ Object.assign(window.GLOSS, {
   "insufficiently": "넉넉하지 못하게",
   "introduce": "도입하다, 소개하다",
   "inventive": "창의력이 뛰어난",
+  "inward": "안쪽을 향한",
   "irresolute": "결단을 못 내리는",
+  "jab": "예방주사",
   "jail": "감옥에 넣다",
+  "justice": "정의",
   "juvenile": "유치한, 청소년의",
   "knowledge": "지식",
   "latency": "잠재 상태",
@@ -1165,6 +1263,7 @@ Object.assign(window.GLOSS, {
   "legible": "읽기 쉬운",
   "lenient": "처벌이 가벼운",
   "lesser": "더 작은, 못한",
+  "lettering": "글자 새김",
   "lifeless": "생명이 없는",
   "light up": "환하게 밝히다",
   "literate": "글을 읽고 쓸 수 있는",
@@ -1181,12 +1280,15 @@ Object.assign(window.GLOSS, {
   "mirage": "신기루",
   "mishap": "작은 사고",
   "mismatched": "짝이 맞지 않는",
+  "modernize": "현대화하다",
   "momentum": "기세, 탄력",
   "mortality": "죽음을 피할 수 없음, 사망률",
   "motivation": "동기 부여",
   "naivety": "순진함",
   "newborn": "갓난아기",
+  "not guilty": "유죄가 아닌",
   "notify": "통보하다",
+  "novelty": "새로움",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
   "occupant": "점유자",
@@ -1209,18 +1311,21 @@ Object.assign(window.GLOSS, {
   "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
   "primeval": "원시의, 태고의",
+  "probing": "파고드는",
   "prominent name": "이름난 인물",
   "propagandize": "선전하다",
   "propel": "나아가게 하다",
   "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
+  "prying": "남의 일을 캐는",
   "public works": "공공 사업",
   "regal": "제왕의",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
   "remarkably": "눈에 띄게",
   "repercussion": "파급 효과",
+  "research": "연구 조사",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
   "reward": "보상",
@@ -1235,6 +1340,7 @@ Object.assign(window.GLOSS, {
   "sepsis": "패혈증",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
+  "shot": "주사 한 대",
   "sign": "징후, 표지",
   "slope": "비탈지다",
   "sneak into": "몰래 들어가다",
@@ -1281,6 +1387,7 @@ Object.assign(window.GLOSS, {
   "unintelligible": "알아들을 수 없는",
   "unlawful": "위법의",
   "unlettered": "무학의",
+  "unquenchable": "가라앉힐 수 없는",
   "unquestionable": "의문의 여지가 없는",
   "unreachable": "닿을 수 없는",
   "unreadable": "읽을 수 없는",
@@ -1292,15 +1399,19 @@ Object.assign(window.GLOSS, {
   "unseemly": "온당하지 못한",
   "unselective": "가리지 않는",
   "unspoken": "입 밖에 내지 않은",
+  "untold": "헤아릴 수 없는",
   "untreatable": "치료할 수 없는",
   "upset stomach": "배탈",
   "utopianism": "유토피아주의",
+  "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",
   "verification": "입증, 검증",
   "viral illness": "바이러스 질환",
+  "voracious": "식욕이 왕성한",
   "wavering": "흔들리는",
   "whim": "일시적 기분",
   "with regard to": "~에 대해서는",
   "with respect to": "~와 관련해서는",
-  "without": "~이 없이"
+  "without": "~이 없이",
+  "wrong": "잘못된 일"
 });
