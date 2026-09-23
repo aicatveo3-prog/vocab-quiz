@@ -2008,8 +2008,6 @@ Object.assign(window.GLOSS, {
   "murky":"흐린, 탁한",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
-  "obstruct":"방해하다, 막다",
-  "occasional":"때때로의, 간간이 있는",
   "open":"공개된, 열린",
   "opening":"시작, 개막",
   "optional":"선택적인",

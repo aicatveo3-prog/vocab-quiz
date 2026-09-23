@@ -2020,8 +2020,6 @@ Object.assign(window.GLOSS, {
   "not guilty": "유죄가 아닌",
   "null": "무효인",
   "occupant": "점유자",
-  "occupy": "차지하다",
-  "occurrence": "일어남, 사례",
   "off-putting": "꺼려지게 하는",
   "on and off": "이따금",
   "on its own": "그 자체만으로",

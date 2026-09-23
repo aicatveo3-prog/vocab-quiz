@@ -213,18 +213,151 @@ window.VOCAB_O = [
   /* 원본의 '처리하기 힘든' 갈래는 버렸다 — 사람의 성격을 가리키는 갈래만 남겼다. */
   { word:"obstinate", pron:"압스터닛", pos:"adj", level:"C1", meanings:["고집 센","완강한"],
     syn:["stubborn","unyielding","set in one's ways"], ant:["yielding"],
-    ex:[{ s:"He was too {{}} to admit the mistake.", f:"obstinate", ko:"그는 잘못을 인정하기에 너무 고집이 셌다." }] }
+    ex:[{ s:"He was too {{}} to admit the mistake.", f:"obstinate", ko:"그는 잘못을 인정하기에 너무 고집이 셌다." }] },
+
+  /* ── 챕터 2 ─────────────────────────────────────── */
+  /* 이 챕터는 승격이 15개로 가장 많다. 사전 표현이 원본과 같은 갈래인 경우가
+     많아 대부분 글자까지 그대로 지켰다 — 기존 화면이 안 바뀐다.
+     ⑤ 스캔이 '기존 표제어와 첫 뜻이 같다' 고 알린 것들(obtain←acquire,
+     obvious←apparent, offensive←disagreeable 등) 은 실제로 서로 유의어로
+     등록된 관계여서 그대로 두었다. meaningsOverlap 은 오답 자리와 짝 맞추기
+     보드에서만 걸러 내므로 정답이 둘 되는 일은 없다.                        */
+
+  /* 승격 ⑮ — 사전 표현을 글자까지 지켰다(참조 4곳). */
+  { word:"obstruct", pron:"업스트럭트", pos:"v", level:"B2", meanings:["방해하다","막다"],
+    syn:["hinder","block up","stand in the way of"], ant:["cooperate"],
+    ex:[{ s:"Fallen rocks {{}} the mountain road.", f:"obstruct", ko:"떨어진 바위가 산길을 막는다." }] },
+
+  /* 승격 ⑯ — 사전 표현을 글자까지 지켰다(acquire, A · derive, D). */
+  { word:"obtain", pron:"업테인", pos:"v", level:"B2", meanings:["얻다","획득하다"],
+    syn:["acquire","get hold of","come by"],
+    ex:[{ s:"You must {{}} a permit before digging.", f:"obtain", ko:"파기 전에 허가를 얻어야 한다." }] },
+
+  /* 승격 ⑰ — 사전 표현 '분명한, 명백한' 을 글자까지 지켰다(참조 3곳).
+     apparent 와 첫 뜻이 겹치지만 둘은 서로 유의어로 등록된 관계다. */
+  { word:"obvious", pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
+    syn:["apparent","plain to see","unmistakable"],
+    ex:[{ s:"The answer was {{}} once she explained it.", f:"obvious", ko:"그녀가 설명하자 답은 분명했다." }] },
+
+  /* 원본의 '행사' 갈래는 버렸다 — '때, 경우' 와 품사는 같지만 뜻이 멀다. */
+  { word:"occasion", pron:"어케이전", pos:"n", level:"B1", meanings:["때","경우"],
+    syn:["moment","particular time","one such instance"],
+    ex:[{ s:"On one {{}} the train left early.", f:"occasion", ko:"어떤 때에는 기차가 일찍 떠났다." }] },
+
+  /* 승격 ⑱ — ★원본의 '때때로' 는 부사다. 형용사 자리이고 참조 ceaseless(ant, C)
+     도 형용사여서 사전 표현 '때때로의, 간간이 있는' 을 글자까지 지켰다. */
+  { word:"occasional", pron:"어케이저널", pos:"adj", level:"B2", meanings:["때때로의","간간이 있는"],
+    syn:["now-and-then","infrequent","sporadic"], ant:["ceaseless"],
+    ex:[{ s:"There were {{}} showers all afternoon.", f:"occasional", ko:"오후 내내 때때로의 소나기가 있었다." }] },
+
+  /* 원본은 '점유, 점령' 이었다. '점령' 을 그대로 두면 같은 챕터의 occupation
+     (직업, 점령) 과 물리므로 '사용' 으로 갈랐다. */
+  { word:"occupancy", pron:"아큐펀시", pos:"n", level:"C1", meanings:["점유","사용"],
+    syn:["taking up of space","tenancy","use of a place"],
+    ex:[{ s:"The hotel reported full {{}} in August.", f:"occupancy", ko:"그 호텔은 팔월에 만실 점유를 알렸다." }] },
+
+  /* 승격 ⑲ — 사전이 '직업; 점령' 이었다. 구분 기호만 쉼표로 바꿨다(career, C). */
+  { word:"occupation", pron:"아큐페이션", pos:"n", level:"B1", meanings:["직업","점령"],
+    syn:["career","line of work","trade"],
+    ex:[{ s:"Please state your {{}} on the form.", f:"occupation", ko:"양식에 직업을 적어 주세요." }] },
+
+  /* 승격 ⑳ — 사전은 '차지하다' 한 갈래였다. 원본의 셋 중 '점령하다' 를 붙였다
+     (뜻은 두 개까지만 담는다 — '종사하다' 는 occupation 쪽에 있다).
+     첫 뜻은 사전값을 지켰다(inhabit, I). */
+  { word:"occupy", pron:"아큐파이", pos:"v", level:"B2", meanings:["차지하다","점령하다"],
+    syn:["take up","hold by force","move into"],
+    ex:[{ s:"Boxes {{}} most of the hallway.", f:"occupy", ko:"상자들이 복도의 대부분을 차지한다." }] },
+
+  /* 승격 21 — 사전이 '발생하다; 떠오르다' 였다. 구분 기호만 바꿨다.
+     참조 셋 중 come to mind(C) 가 '떠오르다' 갈래를 쓴다. */
+  { word:"occur", pron:"어커", pos:"v", level:"B1", meanings:["발생하다","떠오르다"],
+    syn:["arise","come about","take place"],
+    ex:[{ s:"Such storms {{}} only once a decade.", f:"occur", ko:"그런 폭풍은 십 년에 한 번만 발생한다." }] },
+
+  /* 승격 22 — 사전 표현 '일어남, 사례' 를 글자까지 지켰다. 원본의 '발생' 을
+     쓰면 incidence(발생, 출현, I) 와 첫 뜻이 같아진다. */
+  { word:"occurrence", pron:"어커런스", pos:"n", level:"B2", meanings:["일어남","사례"],
+    syn:["incidence","happening","one such case"],
+    ex:[{ s:"Frost in May is a rare {{}}.", f:"occurrence", ko:"오월의 서리는 드문 일어남이다." }] },
+
+  /* occurrent 는 원본 뜻에 '(= current)', '(= incidental)' 표기가 남아 있었다.
+     표기를 걷고 '현재 일어나고 있는' 한 갈래로 정리했다. 매우 드문 낱말이지만
+     유의어 셋을 세울 수 있어 비우지 않았다. */
+  { word:"occurrent", pron:"어커런트", pos:"adj", level:"C2", meanings:["현재 일어나고 있는"],
+    syn:["happening now","under way at present","presently arising"],
+    ex:[{ s:"The study tracks {{}} changes, not past ones.", f:"occurrent", ko:"그 연구는 지난 변화가 아니라 현재 일어나고 있는 변화를 살핀다." }] },
+
+  /* 승격 23 — 사전 표현 '이상한, 색다른' 을 글자까지 지켰다(eccentric, E).
+     원본의 '홀수의' 갈래는 버렸다 — 한 표제어에 수학 뜻까지 담지 않는다. */
+  { word:"odd", pron:"아드", pos:"adj", level:"B2", meanings:["이상한","색다른"],
+    syn:["eccentric","out of the ordinary","curious"], ant:["typical"],
+    ex:[{ s:"There was an {{}} smell in the kitchen.", f:"odd", ko:"부엌에서 이상한 냄새가 났다." }] },
+
+  { word:"odds", pron:"아즈", pos:"n", level:"B2", meanings:["가능성","확률"],
+    syn:["likelihood","chances","betting ratio"],
+    ex:[{ s:"The {{}} of rain today are low.", f:"odds", ko:"오늘 비 올 가능성은 낮다." }] },
+
+  { word:"odor", pron:"오더", pos:"n", level:"B2", meanings:["냄새","향기"],
+    syn:["smell","scent","whiff"],
+    ex:[{ s:"A faint {{}} of smoke hung in the air.", f:"odor", ko:"희미한 연기 냄새가 공기에 걸려 있었다." }] },
+
+  /* 승격 24 — 사전은 '위법 행동' 한 갈래였다. 원본의 '범죄' 를 붙였다.
+     원본에 남아 있던 '(=offense)' 표기는 걷었다. 첫 뜻은 사전값을 지켰다(misdeed, M). */
+  { word:"offence", pron:"어펜스", pos:"n", level:"B2", meanings:["위법 행동","범죄"],
+    syn:["misdeed","breach of law","unlawful act"],
+    ex:[{ s:"Parking there is a minor {{}}.", f:"offence", ko:"거기에 주차하는 것은 가벼운 위법 행동이다." }] },
+
+  /* 승격 25 — 사전 표현을 글자까지 지켰다(antagonize, A · insult, I).
+     원본의 '불쾌하게 하다' 대신 사전 쪽을 남겼다. */
+  { word:"offend", pron:"어펜드", pos:"v", level:"B2", meanings:["기분을 상하게 하다"],
+    syn:["antagonize","hurt the feelings of","give offence to"], ant:["please"],
+    ex:[{ s:"He did not mean to {{}} anyone.", f:"offend", ko:"그는 누구의 기분을 상하게 할 뜻이 없었다." }] },
+
+  /* 승격 26 — 사전 표현 '불쾌한, 공격적인' 을 글자까지 지켰다.
+     disagreeable·distasteful(둘 다 D) 과 첫 뜻이 겹치지만 서로 유의어다. */
+  { word:"offensive", pron:"어펜시브", pos:"adj", level:"B2", meanings:["불쾌한","공격적인"],
+    syn:["disagreeable","insulting","attacking"], ant:["inoffensive"],
+    ex:[{ s:"The joke was {{}} to many listeners.", f:"offensive", ko:"그 농담은 많은 듣는 이에게 불쾌했다." }] },
+
+  /* 승격 27 — 사전이 '제공하다; 제안' 으로 동사와 명사가 섞여 있었다.
+     demand(ant, D) 가 동사여서 동사로 세우고, 사전의 첫 갈래 '제공하다' 를
+     그대로 첫 자리에 남겼다. 원본의 명사 '제안, 제의' 갈래는 버렸다. */
+  { word:"offer", pron:"오퍼", pos:"v", level:"B1", meanings:["제공하다","제안하다"],
+    syn:["hold out","present for acceptance","put on the table"], ant:["demand"],
+    ex:[{ s:"The shop will {{}} a discount to members.", f:"offer", ko:"그 가게는 회원에게 할인을 제공할 것이다." }] },
+
+  /* 승격 28 — 사전이 '공식적인; 공무원' 으로 형용사와 명사가 섞여 있었다.
+     authoritative(A)·formal(F) 둘 다 형용사여서 형용사로 세우고 '관리' 는 버렸다. */
+  { word:"official", pron:"어피셜", pos:"adj", level:"B2", meanings:["공식적인","공무상의"],
+    syn:["authoritative","formal","sanctioned"], ant:["unofficial"],
+    ex:[{ s:"We are waiting for the {{}} result.", f:"official", ko:"우리는 공식적인 결과를 기다리고 있다." }] },
+
+  /* 승격 29 — ★원본의 뜻이 틀렸다. '능숙함, 능숙도' 는 competence(능숙함, 능력) 의
+     뜻이다. 참조 다섯 곳(compensate·compensate for·counteract·counterbalance·
+     make up for) 이 전부 상쇄 뜻을 쓰고 있어 오류가 분명했다.
+     사전 표현 '상쇄하다, 보충하다' 를 글자까지 지켜 다섯 화면을 그대로 두었다. */
+  { word:"offset", pron:"오프셋", pos:"v", level:"C1", meanings:["상쇄하다","보충하다"],
+    syn:["counteract","balance out","cancel out"],
+    ex:[{ s:"Tree planting can {{}} some carbon emissions.", f:"offset", ko:"나무 심기는 얼마간의 탄소 배출을 상쇄할 수 있다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "abide by": "~을 지키다",
   "astronomy lab": "천문 연구실",
+  "attacking": "몰아붙이는",
+  "balance out": "서로 맞춰 없애다",
+  "betting ratio": "도박에서 매기는 비율",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
+  "block up": "틀어막다",
+  "breach of law": "법을 어김",
+  "cancel out": "서로 지워 버리다",
   "careful noting": "꼼꼼히 적어 둠",
   "carrying far too much fat": "지방이 너무 많은",
+  "chances": "될 성",
   "close watching": "가까이 지켜봄",
+  "come by": "어렵게 구하다",
   "corpulence": "살집이 두둑함",
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
@@ -236,34 +369,66 @@ Object.assign(window.GLOSS, {
   "fact-based": "사실에 바탕한",
   "follow orders": "명령을 좇다",
   "free of opinion": "의견이 섞이지 않은",
+  "get hold of": "손에 넣다",
+  "give offence to": "~에게 언짢음을 주다",
   "grossly overweight": "지나치게 체중이 많은",
+  "happening": "일이 벌어짐",
+  "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
   "hide from view": "보이지 않게 가리다",
+  "hold by force": "힘으로 붙들다",
+  "hold out": "내밀어 주다",
   "hurdle": "넘어야 할 벽",
+  "hurt the feelings of": "~의 마음을 아프게 하다",
+  "infrequent": "드문드문한",
+  "insulting": "모욕하는",
   "keep to": "~에서 벗어나지 않다",
   "keep to the rules": "규칙을 지키다",
   "leave no choice for": "~에게 선택을 남기지 않다",
   "left behind by progress": "발전에 뒤처진",
+  "line of work": "일하는 분야",
   "little known": "거의 알려지지 않은",
   "make duty-bound": "할 수밖에 없게 만들다",
   "make unclear": "불분명하게 만들다",
+  "moment": "그 순간",
+  "move into": "들어가 자리 잡다",
   "no longer in use": "더 이상 쓰이지 않는",
   "not optional": "고를 수 없는",
+  "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
   "on the facts alone": "사실만을 근거로",
+  "one such case": "그런 한 가지",
+  "one such instance": "그런 한 차례",
+  "out of the ordinary": "보통과 다른",
+  "particular time": "특정한 시점",
   "physical body": "형체를 가진 몸",
   "place under obligation": "의무 아래 두다",
+  "plain to see": "보면 바로 아는",
+  "present for acceptance": "받아 달라고 내놓다",
+  "presently arising": "지금 생겨나는",
+  "put on the table": "논의 자리에 내놓다",
+  "sanctioned": "허락을 받은",
   "set in one's ways": "제 방식만 지키는",
   "sky-viewing post": "하늘을 보는 자리",
   "solemn promise": "엄숙한 약속",
   "solid thing": "단단한 것",
   "spoken remark": "입으로 낸 말",
+  "stand in the way of": "~의 앞을 가로막다",
   "star-watching station": "별을 살피는 시설",
   "superseded": "다른 것에 밀려난",
   "sworn word": "맹세한 말",
+  "take place": "벌어지다",
+  "taking up of space": "자리를 차지함",
+  "tenancy": "빌려 씀",
   "thing in the way": "길을 막는 것",
+  "typical": "으레 그런",
+  "under way at present": "지금 진행 중인",
+  "unlawful act": "법에 어긋난 짓",
+  "unofficial": "공식이 아닌",
+  "use of a place": "장소를 씀",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
   "watch closely": "가까이 지켜보다",
+  "whiff": "살짝 스치는 냄새",
   "without bias": "치우침 없이",
 });
