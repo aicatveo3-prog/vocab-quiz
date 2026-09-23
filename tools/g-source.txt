@@ -1,0 +1,141 @@
+# 수능 보카 G 섹션 원본 목록 — 115단어
+#
+# 형식 : 표제어 <TAB> 원본 뜻
+# 이 파일은 작업 대조용 원본이다. 코드가 읽지 않는다.
+#
+# ── 원본에서 고친 것 (사용자 승인) ────────────────
+#   grave   '금엄한' → '근엄한'        금엄한은 없는 말이다
+#   grind   '빵다'  → '빻다'          빻다가 맞다 (저장소가 이미 '빻' 을 쓴다)
+#   generous '관대함' → '관대한'      형용사인데 명사형이 붙어 있었다
+#   grieve  '농장 관리인' 삭제          스코틀랜드 방언의 농장 감독관이다.
+#                                     수능 어휘에서 이 뜻으로 출제될 일이 없고,
+#                                     비통해하다와 한 카드에 담으면 뜻이 흐려진다.
+#   genetically modified(GM) → genetically modified
+#                                     (GM) 은 구의 일부가 아니라 약어 주석이다.
+#                                     표제어에 괄호가 든 전례가 0건이고,
+#                                     24자라 기존 최장(23자, be beyond one's control)을
+#                                     넘어 짝 맞추기 카드 레이아웃을 흔든다.
+#
+# ── 뜻을 갈라 쓴 것 (사용자 승인) ─────────────────
+# 원본에 뜻이 똑같아 4지선다·짝 맞추기에서 복수 정답이 되는 쌍들이다.
+#   geographic  / geographical          둘 다 '지리적인; 지리학의'
+#   go broke    / go out of business    둘 다 '파산하다'
+#   grab / grip / grasp                 grab·grip 이 둘 다 '움켜잡다',
+#                                       grasp 는 GLOSS 에 '잡다; 이해하다'
+# 실제 배정은 words-g.js 의 각 주석에 근거를 남긴다.
+
+galaxy	은하, 은하계
+gallop	전속력으로 달리다, 질주하다; 전속력
+gamble	도박을 하다, 내기를 하다
+garage	차고, 주차장
+garment	의류, 옷
+gasp	헐떡거리다, 숨이 차다
+gather	모으다, 모이다
+gather line	주름살이 늘다
+gathering	모임, 집회
+gauge	게이지, 측정기; 판단하다, 알아내다
+gaze	응시하다, 가만히 바라보다
+gear	기어, 톱니바퀴 장치
+gender	성(性), 성별
+gene	유전자
+genealogy	계보학, 족보학, 가계도
+general	일반의, 전반에 걸치는; 육군 장군
+generate	발생시키다, 만들어 내다
+generation gap	세대차이
+generator	발전기
+generic	포괄적인; 통칭하는
+generosity	너그러움, 관대함
+generous	너그러운, 관대한
+genetic	유전자의, 유전학적인
+genetically modified	유전자 변형된(조작된)
+genetics	유전학
+genre	장르, 유형
+genuine	진짜인, 진품인
+geographic	지리적인; 지리학의
+geographical	지리적인; 지리학의
+geography	지리, 지세, 지형
+geology	지질학
+geometry	기하학
+geothermal	지열의, 지열과 관련된
+germ	세균, 병균
+gesticulate	몸짓[손짓]으로 이야기하다
+gesture	몸짓을 하다; (몸짓으로) 가리키다; 몸짓, 제스처
+get across	(의미가) ~에게 전달되다, 이해되다
+get along with	~와 잘 지내다
+get away with	~을 모면하다; ~을 훔쳐 달아나다
+get down to	대처하다, 차분히 착수하다
+get fed up with	~에 진저리가 나다
+get in the way of	방해하다, 방해되다
+get out of hand	걷잡을 수 없게 되다, 감당할 수 없게 되다
+get rid of	없애다, 제거하다
+get through	극복하다; 겪다
+gist	요지, 핵심
+give birth to	(아이를) 낳다; 〈비유적〉 일으키다, 발생시키다
+give off	발산하다, 내뿜다
+give way to	~에 굽히다; ~로 바뀌다
+given that	~을 고려하면
+giving behavior	기부 행위
+glacier	빙하
+glance	휙 보다, 대충 보다
+gland	분비기관
+glimpse	흘끗 봄, 흘끗 보다
+glitter	반짝반짝 빛나다
+globalization	세계화
+gloomy	암울한, 울적한
+glorify	찬미하다, 칭찬하다
+glow	은은한 빛; 홍조; 은은하게 빛나다; 상기되다, 빨개지다
+glue	(접착제로) 붙이다; 접착제, 풀
+go after	~다음에 가다; ~를 뒤쫓다
+go along	동의하다; 계속하다, 진행되다; ~을 끼고 가다
+go broke	파산하다
+go for	~을 좋아하다; 찬성하다
+go out of business	파산하다
+go over	~을 조사하다, 검토하다
+go through	통과하다; 조사하다, 살펴보다
+golden rule	황금률; 교훈; 철칙
+gorgeous	화려한, 수려한, 호화스러운
+gourmet	(음식이) 고급인, 값비싼, 미식가
+govern	다스리다, 지배하다
+grab	움켜잡다, 붙잡다
+gracious	상냥한, 우아한
+grade	(등급을) 나누다
+gradual	점진적인, 단계적인
+graduate	졸업하다; 대학 졸업생, 대학원생
+grain	곡물, 곡류
+grand	(경치나 건축물이) 웅장한, 장엄한; 주요한, 주된
+grant	주다; (정부) 보조금
+graphic	그래픽; 도표의; 생생한, 상세한
+grasp	꼭 쥐다; 이해하다
+gratify	기쁘게 하다, 만족시키다
+gratitude	고마움, 감사
+grave	중대한, 근엄한, 엄숙한; 무덤
+gravitation	인력, 중력
+gravity	중력
+graze	풀을 뜯어먹다, 방목하다
+greasy	기름진, 기름이 묻은
+greed	탐욕, 욕심
+greedy	탐욕스러운
+greenhouse	온실
+gregarious	사교적인, 남과 어울리기 좋아하는
+grid	(지도의) 기준선망, 격자무늬
+grief	슬픔, 비탄, 비통
+grieve	비통해하다
+grievous	슬픈, 통탄할
+grim	엄숙한, 단호한; 암울한, 음침한
+grimace	얼굴을 찡그리다; 찡그린 표정
+grind	갈다, 빻다
+grip	움켜잡다, 통제
+groan	끙 하는 소리를 내다; 신음
+gross	모두 합친, 전체의
+ground	토대가 되다, 기초가 되다; (자녀를) 외출 금지시키다
+groundbreaking	획기적인
+groundless	근거 없는
+grow	성장하다; 커지다, 증대하다
+growl	으르렁거리다; 으르렁거리는 소리
+grudge	원한, 앙심
+grumble	불평하다, 투덜대다
+guarantee	보장하다, (품질을) 보증하다; 보장, 보증
+guild	조합, 회, 길드
+guilty	죄책감이 드는; 유죄인
+gust	돌풍
+gymnastics	체조, 체육
