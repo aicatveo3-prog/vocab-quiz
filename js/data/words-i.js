@@ -1163,7 +1163,92 @@ window.VOCAB_I = [
      '순간적인' 으로 갈려 짝을 고르는 데 무리가 없다. */
   { word:"instantaneous", pron:"인스턴테이니어스", pos:"adj", level:"C1", meanings:["순간적인","동시에 일어나는"],
     syn:["immediate","instant","split-second"],
-    ex:[{ s:"The response from the sensor was almost {{}}.", f:"instantaneous", ko:"그 센서의 반응은 거의 순간적이었다." }] }
+    ex:[{ s:"The response from the sensor was almost {{}}.", f:"instantaneous", ko:"그 센서의 반응은 거의 순간적이었다." }] },
+
+  { word:"instigate", pron:"인스터게이트", pos:"v", level:"C2", meanings:["착수하게 하다","선동하다"],
+    syn:["provoke","incite","set off"],
+    ex:[{ s:"He was accused of trying to {{}} a riot.", f:"instigate", ko:"그는 폭동을 선동하려 했다는 혐의를 받았다." }] },
+
+  /* 원본 둘째 갈래는 '주입시키다' 였는데 10차의 indoctrinate('사상을 주입하다')와
+     겹쳐, 서서히 배어들게 한다는 이 낱말의 결에 맞춰 '서서히 심어주다' 로 했다. */
+  { word:"instill", pron:"인스틸", pos:"v", level:"C1", meanings:["스며들게 하다","서서히 심어주다"],
+    syn:["implant","inculcate","infuse"],
+    ex:[{ s:"Her parents tried to {{}} a lasting love of reading.", f:"instill", ko:"그녀의 부모는 독서에 대한 오랜 애정을 스며들게 하려 했다." }] },
+
+  /* 뒤에 올 intuition 이 '직감' 을 첫 자리로 쓰므로 여기서는 '천성' 을 택했다. */
+  { word:"instinct", pron:"인스팅트", pos:"n", level:"B2", meanings:["본능","천성"],
+    syn:["impulse","urge","inclination"],
+    ex:[{ s:"Birds migrate by {{}} rather than by learning.", f:"instinct", ko:"새들은 학습보다 본능으로 이동한다." }] },
+
+  /* instinct 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"instinctive", pron:"인스팅티브", pos:"adj", level:"B2", meanings:["본능적인","천성의"],
+    syn:["intuitive","automatic","reflexive"],
+    ex:[{ s:"Her {{}} reaction was to step back from the edge.", f:"instinctive", ko:"그녀의 본능적인 반응은 가장자리에서 뒤로 물러서는 것이었다." }] },
+
+  /* 승격 ② — GLOSS '제정하다, 도입하다' 로 동사였다. establish(syn) 가 참조하므로
+     pos 를 v 로 유지하고 사전의 '제정하다' 를 둘째 자리에 지켰다.
+     원본의 명사 갈래('학회, 시설')는 pos 가 v 라 담지 못했다.
+     institutionalize 와 품사가 둘 다 v 라 같은 보드에 올 수 있지만, 뜻이
+     '설립하다' 와 '시설에 수용하다' 로 갈려 무리가 없다. */
+  { word:"institute", pron:"인스터튜트", pos:"v", level:"B2", meanings:["설립하다","제정하다"],
+    syn:["establish","found","introduce"],
+    ex:[{ s:"The university plans to {{}} a new scholarship fund.", f:"institute", ko:"그 대학은 새 장학 기금을 설립할 계획이다." }] },
+
+  { word:"institution", pron:"인스터튜션", pos:"n", level:"B2", meanings:["기관","단체"],
+    syn:["organization","establishment","body"],
+    ex:[{ s:"The bank is one of the oldest financial {{}} in Europe.", f:"institutions", ko:"그 은행은 유럽에서 가장 오래된 금융 기관 중 하나다." }] },
+
+  { word:"institutionalize", pron:"인스터투셔널라이즈", pos:"v", level:"C2", meanings:["시설에 수용하다","제도화하다"],
+    syn:["hospitalize","formalize","entrench"],
+    ex:[{ s:"The reforms aim to {{}} transparency in government.", f:"institutionalize", ko:"그 개혁은 정부의 투명성을 제도화하는 것을 목표로 한다." }] },
+
+  { word:"instruct", pron:"인스트럭트", pos:"v", level:"B1", meanings:["지시하다","가르치다"],
+    syn:["direct","order","teach"],
+    ex:[{ s:"The judge will {{}} the jury on the relevant law.", f:"instruct", ko:"판사는 배심원단에게 관련 법에 대해 지시할 것이다." }] },
+
+  /* 승격 ① — GLOSS '지시, 명령' 을 글자까지 지켰다. command(syn) 가 참조한다.
+     원본은 '교육, 지도; 지시, 명령' 네 갈래인데 참조가 쓰는 뒤쪽 두 갈래를 남겼다.
+     instruct 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"instruction", pron:"인스트럭션", pos:"n", level:"B1", meanings:["지시","명령"],
+    syn:["command","directive","order"],
+    ex:[{ s:"Follow the {{}} on the label carefully.", f:"instruction", ko:"라벨의 지시를 주의 깊게 따르세요." }] },
+
+  { word:"instructive", pron:"인스트럭티브", pos:"adj", level:"B2", meanings:["교육적인","유익한"],
+    syn:["educational","enlightening","illuminating"],
+    ex:[{ s:"The documentary was both entertaining and {{}}.", f:"instructive", ko:"그 다큐멘터리는 재미있으면서 교육적이었다." }] },
+
+  /* ── 챕터 12 ────────────────────────────── */
+
+  /* 승격 ② — GLOSS '기구, 도구' 다. device(syn) 가 쓰는 갈래 '도구' 를 둘째
+     자리에 지키고, 첫 자리는 원본의 '악기' 로 했다.
+     원본 셋째 갈래 '장치' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"instrument", pron:"인스트러먼트", pos:"n", level:"B1", meanings:["악기","도구"],
+    syn:["device","tool","utensil"],
+    ex:[{ s:"The violin is a difficult {{}} to master.", f:"instrument", ko:"바이올린은 숙달하기 어려운 악기다." }] },
+
+  /* 승격 ① — GLOSS '불충분한' 을 첫 자리에 지켰다.
+     adequate(ant)·deficient(syn) 두 문제가 참조한다. 원본은 '부족한' 이 앞인데,
+     사전 쪽을 쓰면 D 세트 deficient 의 뜻('부족한')과 첫 뜻이 겹치는 것도
+     함께 피할 수 있다. */
+  { word:"insufficient", pron:"인서피션트", pos:"adj", level:"B2", meanings:["불충분한","부족한"],
+    syn:["deficient","inadequate","scanty"], ant:["adequate"],
+    ex:[{ s:"The evidence was {{}} to secure a conviction.", f:"insufficient", ko:"그 증거는 유죄 판결을 얻기에 불충분했다." }] },
+
+  /* 뒤에 올 isolate 는 '고립시키다' 를 첫 자리로 쓴다 — 첫 뜻이 갈린다. */
+  { word:"insulate", pron:"인설레이트", pos:"v", level:"C1", meanings:["격리시키다","단열 처리하다"],
+    syn:["shield","cushion","seal off"],
+    ex:[{ s:"Thick stone walls {{}} the house from winter cold.", f:"insulate", ko:"두꺼운 돌벽이 그 집을 겨울 추위로부터 격리시킨다." }] },
+
+  /* 승격 ② — GLOSS '모욕, 모욕하다' 로 명사와 동사가 섞여 있었다.
+     원본이 동사를 앞에 두므로 pos 를 v 로 잡고, compliment(ant) 가 명사여서
+     사전의 명사 갈래 '모욕' 을 둘째 자리에 지켰다. */
+  { word:"insult", pron:"인설트", pos:"v", level:"B2", meanings:["모욕하다","모욕"],
+    syn:["offend","humiliate","affront"], ant:["compliment"],
+    ex:[{ s:"He did not mean to {{}} anyone with the remark.", f:"insult", ko:"그는 그 말로 누구도 모욕할 의도가 없었다." }] },
+
+  { word:"insurance", pron:"인슈어런스", pos:"n", level:"B1", meanings:["보험","보험금"],
+    syn:["coverage","policy","indemnity"],
+    ex:[{ s:"Travel {{}} covers lost luggage and delays.", f:"insurance", ko:"여행 보험은 분실된 수하물과 지연을 보상한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1176,6 +1261,7 @@ Object.assign(window.GLOSS, {
   "ad-lib": "즉흥적으로 하다",
   "adamant": "단호한",
   "affair": "일, 사건",
+  "affront": "모욕을 주다",
   "all-embracing": "모두를 아우르는",
   "alone": "혼자서",
   "amid": "~의 한복판에",
@@ -1197,6 +1283,7 @@ Object.assign(window.GLOSS, {
   "betterment": "개량",
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
+  "body": "단체, 조직",
   "brazen": "낯 두꺼운",
   "breathe in": "숨을 들이켜다",
   "bring on": "불러오다",
@@ -1225,6 +1312,7 @@ Object.assign(window.GLOSS, {
   "creeping": "슬금슬금 퍼지는",
   "creepy-crawly": "기어 다니는 벌레",
   "curable": "치유 가능한",
+  "cushion": "충격을 줄이다",
   "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
   "deathlessness": "불사, 죽지 않음",
@@ -1250,13 +1338,16 @@ Object.assign(window.GLOSS, {
   "dwell in": "~에 거주하다",
   "dweller": "사는 사람",
   "dyspepsia": "소화 장애",
+  "educational": "교육에 도움이 되는",
   "emblematic": "상징적인",
   "emboss": "도드라지게 새기다",
   "emigration": "국외 이주",
   "emphatic": "단호히 말하는",
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
+  "enlightening": "깨우침을 주는",
   "enterprise": "진취성, 사업",
+  "entrench": "확고히 자리 잡게 하다",
   "episode": "일화",
   "epitaph": "묘비명",
   "evenhandedly": "치우치지 않게",
@@ -1276,6 +1367,7 @@ Object.assign(window.GLOSS, {
   "flu": "인플루엔자",
   "for now": "당장은",
   "for want of": "~이 부족해서",
+  "formalize": "공식화하다",
   "forthcoming": "다가오는, 곧 있을",
   "fumigant": "훈증제",
   "garbled": "뒤죽박죽인",
@@ -1287,8 +1379,10 @@ Object.assign(window.GLOSS, {
   "heat-sensing": "열을 감지하는",
   "hegemony": "패권",
   "hire purchase": "할부 매입",
+  "hospitalize": "입원시키다",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
+  "illuminating": "눈을 뜨게 하는",
   "immunize": "면역을 주다",
   "impenetrable": "헤아릴 수 없는",
   "implied": "함축된",
@@ -1321,7 +1415,10 @@ Object.assign(window.GLOSS, {
   "incarcerate": "수감하다",
   "incarceration": "수감",
   "incensed": "노발대발한",
+  "incite": "부추기다",
+  "inculcate": "되풀이해 가르치다",
   "indecipherable": "판독할 수 없는",
+  "indemnity": "손해 배상금",
   "indistinguishable": "구별할 수 없는",
   "individuality": "개성, 특성",
   "induction": "취임시킴, 유도",
@@ -1333,6 +1430,7 @@ Object.assign(window.GLOSS, {
   "inference": "추론",
   "inflict": "안기다, 가하다",
   "inflow": "흘러듦",
+  "infuse": "불어넣다",
   "infusion": "주입액",
   "inject": "주사로 넣다",
   "innermost": "가장 깊은 곳의",
@@ -1343,6 +1441,7 @@ Object.assign(window.GLOSS, {
   "insolent": "건방진",
   "insufficiently": "넉넉하지 못하게",
   "introduce": "도입하다, 소개하다",
+  "intuitive": "직감에 따른",
   "inventive": "창의력이 뛰어난",
   "inward": "안쪽을 향한",
   "irresolute": "결단을 못 내리는",
@@ -1407,6 +1506,7 @@ Object.assign(window.GLOSS, {
   "personally": "개인적으로, 직접",
   "pest": "해충",
   "pesticide": "농약",
+  "policy": "보험 증권",
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "precariousness": "불안한 상태",
@@ -1425,6 +1525,7 @@ Object.assign(window.GLOSS, {
   "put in": "넣다",
   "put in place": "자리에 놓다",
   "ready-made": "미리 만들어진",
+  "reflexive": "반사적인",
   "regal": "제왕의",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
@@ -1437,7 +1538,9 @@ Object.assign(window.GLOSS, {
   "reward": "보상",
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
+  "scanty": "빈약한",
   "scrawled": "갈겨쓴",
+  "seal off": "차단하다",
   "second-rate": "이류의",
   "secondary": "이차적인",
   "selective": "가려서 하는",
@@ -1474,6 +1577,7 @@ Object.assign(window.GLOSS, {
   "tacit": "말 없는, 무언의",
   "take over": "넘겨받다",
   "taking account of": "~을 감안하여",
+  "teach": "가르치다",
   "tendency": "성향",
   "thermal": "열의",
   "tilt": "기울이다",
@@ -1481,6 +1585,7 @@ Object.assign(window.GLOSS, {
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
   "toddler": "아기, 걸음마쟁이",
+  "tool": "연장",
   "treacherous": "믿을 수 없는",
   "truly": "참으로",
   "unauthorized": "무단의, 승인받지 않은",
@@ -1513,6 +1618,7 @@ Object.assign(window.GLOSS, {
   "untold": "헤아릴 수 없는",
   "untreatable": "치료할 수 없는",
   "upset stomach": "배탈",
+  "utensil": "기구, 용구",
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",

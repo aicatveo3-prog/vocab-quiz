@@ -1998,7 +1998,6 @@ Object.assign(window.GLOSS, {
   "inconspicuous":"눈에 띄지 않는",
   "individual":"개인의, 개별의",
   "insulator":"절연체",
-  "insult":"모욕, 모욕하다",
   "intermittent":"간헐적인, 이따금의",
   "lag":"뒤처지다",
   "laity":"평신도",

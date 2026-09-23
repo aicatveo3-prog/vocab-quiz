@@ -929,7 +929,6 @@ Object.assign(window.GLOSS, {
   "inspect":"검사하다, 조사하다",
   "instead":"대신에",
   "instead of":"~대신에",
-  "instruction":"지시, 명령",
   "insure":"보험에 들다",
   "intake":"섭취량, 흡입",
   "intangible":"무형의, 만질 수 없는",

@@ -1693,7 +1693,6 @@ window.GLOSS = {
   "inaudible":"들리지 않는",
   "individual":"개별적인",
   "indulge in":"~에 탐닉하다",
-  "insufficient":"불충분한",
   "keep":"유지하다, 보관하다",
   "lack":"결핍, 없음",
   "leaky":"새는, 구멍 난",

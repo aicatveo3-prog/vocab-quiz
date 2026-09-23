@@ -2296,7 +2296,6 @@ Object.assign(window.GLOSS, {
   "hold in high regard":"높이 받들다",
   "incorrect":"부정확한",
   "increase sharply":"급격히 늘다",
-  "institute":"제정하다, 도입하다",
   "judge":"판단하다, 심사하다",
   "land holding":"소유 토지",
   "long-standing":"오래 이어져 온",

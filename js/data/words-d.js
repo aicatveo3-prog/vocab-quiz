@@ -1705,7 +1705,6 @@ Object.assign(window.GLOSS, {
   "gobble":"급히 먹다, 꿀꺽 삼키다",
   "hardworking":"열심히 일하는",
   "industrious":"근면한, 부지런한",
-  "instrument":"기구, 도구",
   "lazy":"게으른, 나태한",
   "local tongue":"지역 말",
   "loyally":"충성스럽게",
