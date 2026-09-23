@@ -18,7 +18,7 @@ function load(rel) {
   return true;
 }
 ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js',
- 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
+ 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
 
 var SETS = [
   ['A', window.VOCAB || []],
@@ -29,7 +29,10 @@ var SETS = [
   ['F', window.VOCAB_F || []],
   ['G', window.VOCAB_G || []],
   ['H', window.VOCAB_H || []],
-  ['I', window.VOCAB_I || []]
+  ['I', window.VOCAB_I || []],
+  ['J', window.VOCAB_J || []],
+  ['K', window.VOCAB_K || []],
+  ['L', window.VOCAB_L || []]
 ];
 var ALL = SETS.reduce(function (a, s) { return a.concat(s[1]); }, []);
 var GLOSS = window.GLOSS || {};
