@@ -1999,7 +1999,6 @@ Object.assign(window.GLOSS, {
   "individual":"개인의, 개별의",
   "insulator":"절연체",
   "intermittent":"간헐적인, 이따금의",
-  "lag":"뒤처지다",
   "laity":"평신도",
   "liberate":"해방하다, 풀어 주다",
   "loneliness":"외로움",

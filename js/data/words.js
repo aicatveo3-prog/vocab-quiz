@@ -1694,7 +1694,6 @@ window.GLOSS = {
   "individual":"개별적인",
   "indulge in":"~에 탐닉하다",
   "keep":"유지하다, 보관하다",
-  "lack":"결핍, 없음",
   "leaky":"새는, 구멍 난",
   "leave":"떠나다",
   "liability":"부채, 책임",
