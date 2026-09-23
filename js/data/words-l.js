@@ -362,7 +362,126 @@ window.VOCAB_L = [
      같은 갈래가 맞다. */
   { word:"life-size", pron:"라이프 사이즈", pos:"adj", level:"C1", meanings:["실물과 같은 크기의"],
     syn:["full-scale","actual-size","true to size"],
-    ex:[{ s:"The museum displays a {{}} model of the ship.", f:"life-size", ko:"그 박물관은 배의 실물 크기 모형을 전시한다." }] }
+    ex:[{ s:"The museum displays a {{}} model of the ship.", f:"life-size", ko:"그 박물관은 배의 실물 크기 모형을 전시한다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '올리다; 해제하다' 를 글자까지 지켰다.
+     boost(syn)·elevate(syn) 두 문제가 참조한다.
+     원본의 명사 갈래('승강기')는 pos 가 v 라 담지 못했다. */
+  { word:"lift", pron:"리프트", pos:"v", level:"B1", meanings:["올리다","해제하다"],
+    syn:["raise","elevate","hoist"],
+    ex:[{ s:"The travel ban was finally {{}} in March.", f:"lifted", ko:"여행 금지는 3월에 마침내 해제되었다." }] },
+
+  { word:"light", pron:"라이트", pos:"v", level:"B1", meanings:["빛을 비추다","불을 붙이다"],
+    syn:["illuminate","ignite","kindle"],
+    ex:[{ s:"She struck a match to {{}} the candle.", f:"light", ko:"그녀는 촛불을 붙이려고 성냥을 켰다." }] },
+
+  /* lightning-fast·lightweight 는 앞 네 글자가 같고 품사도 둘 다 adj 라 같은
+     보드에 올 수 있다. 다만 뜻이 '매우 빠른' 과 '가벼운' 으로 달라 무리가 없다. */
+  { word:"lightning-fast", pron:"라이트닝 패스트", pos:"adj", level:"C1", meanings:["매우 빠른","전광석화의"],
+    syn:["blistering","split-second","rapid-fire"],
+    ex:[{ s:"His {{}} reflexes saved the goal.", f:"lightning-fast", ko:"그의 매우 빠른 반사 신경이 골을 막았다." }] },
+
+  { word:"lightweight", pron:"라이트웨이트", pos:"adj", level:"B2", meanings:["가벼운","경량의"],
+    syn:["featherweight","portable","easy to carry"], ant:["heavy"],
+    ex:[{ s:"The tent is made of {{}} nylon.", f:"lightweight", ko:"그 텐트는 가벼운 나일론으로 만들어졌다." }] },
+
+  { word:"likely", pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
+    syn:["probable","expected","apt"], ant:["unlikely"],
+    ex:[{ s:"Rain is {{}} later this evening.", f:"likely", ko:"오늘 저녁 늦게 비가 올 것 같다." }] },
+
+  /* 원본 뜻 '활기찬, 열정적인' 은 틀렸다. like(비슷한) + minded(생각의) 로,
+     생각이나 취향이 서로 맞는다는 뜻이다. '생각이 비슷한, 뜻이 맞는' 으로 고쳤다.
+     (H 세트 작업 때도 hard-and-fast 의 유의어로 이 낱말이 잘못 들어가 고친 적이 있다.) */
+  { word:"like-minded", pron:"라이크 마인디드", pos:"adj", level:"C1", meanings:["생각이 비슷한","뜻이 맞는"],
+    syn:["kindred","agreeing","of one mind"],
+    ex:[{ s:"She found a group of {{}} researchers online.", f:"like-minded", ko:"그녀는 온라인에서 생각이 비슷한 연구자 모임을 찾았다." }] },
+
+  /* 승격 ① — GLOSS '마찬가지로' 와 같은 갈래다. 참조가 3곳(by contrast·
+     by the same token·correspondingly)이라 갈래를 늘리지 않고 한 갈래로 두었다.
+     원본 '또한, 똑같이' 도 같은 갈래다. */
+  { word:"likewise", pron:"라이크와이즈", pos:"adv", level:"B2", meanings:["마찬가지로"],
+    syn:["correspondingly","by the same token","equally"], ant:["by contrast"],
+    ex:[{ s:"He nodded, and she did {{}}.", f:"likewise", ko:"그가 고개를 끄덕였고, 그녀도 마찬가지로 했다." }] },
+
+  /* 승격 ② — GLOSS 는 '(나무의) 가지; 팔다리' 였다. 첫 뜻에 괄호 설명이 들어가면
+     선택지 한 줄이 길어져 검사가 경고한다(words-*-audit 의 스키마 검사).
+     괄호를 풀어 '나뭇가지' 로 적었다 — 참조하는 bough·branch 가 둘 다 가지 쪽이라
+     갈래는 그대로다. */
+  { word:"limb", pron:"림", pos:"n", level:"B2", meanings:["나뭇가지","팔다리"],
+    syn:["bough","branch","appendage"],
+    ex:[{ s:"A heavy {{}} snapped off in the storm.", f:"limb", ko:"폭풍에 무거운 나뭇가지가 부러져 떨어졌다." }] },
+
+  /* 승격 ① — GLOSS '한정된, 제한된' 을 글자까지 지켰다.
+     boundless(ant)·finite(syn) 두 문제가 참조한다.
+     바로 뒤 limitless 와 뜻이 정반대여서 함께 익히기 좋은 쌍이다. */
+  { word:"limited", pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
+    syn:["finite","restricted","narrow"], ant:["boundless"],
+    ex:[{ s:"Seats are {{}} to thirty per session.", f:"limited", ko:"좌석은 회당 30석으로 한정된다." }] },
+
+  /* 승격 ① — GLOSS '무한한' 을 첫 자리에 지켰다. 참조가 4곳(boundless·endless·
+     immeasurable·infinite)인데 뒤 둘은 바로 앞서 넣은 I 세트 표제어다.
+     원본의 '방대한' 을 둘째 자리에 붙였다. */
+  { word:"limitless", pron:"리미틀리스", pos:"adj", level:"B2", meanings:["무한한","방대한"],
+    syn:["boundless","endless","infinite"], ant:["finite"],
+    ex:[{ s:"The internet offers seemingly {{}} information.", f:"limitless", ko:"인터넷은 무한해 보이는 정보를 제공한다." }] },
+
+  /* 챕터 1의 lame('절름발이의')과 품사가 달라(adj/v) 같은 보드에 안 온다.
+     원본의 형용사 갈래('흐느적거리는')는 pos 가 v 라 담지 못했다. */
+  { word:"limp", pron:"림프", pos:"v", level:"B2", meanings:["절뚝거리다","다리를 절다"],
+    syn:["hobble","falter","walk lamely"],
+    ex:[{ s:"He began to {{}} after twisting his ankle.", f:"limp", ko:"그는 발목을 삐고 나서 절뚝거리기 시작했다." }] },
+
+  { word:"linear", pron:"리니어", pos:"adj", level:"C1", meanings:["직선 모양의","선으로 된"],
+    syn:["straight","rectilinear","sequential"],
+    ex:[{ s:"The graph shows a clear {{}} relationship.", f:"linear", ko:"그 그래프는 명확한 직선 관계를 보여 준다." }] },
+
+  { word:"linger", pron:"링거", pos:"v", level:"C1", meanings:["오래 머무르다","떠나지 못하다"],
+    syn:["dawdle","hang around","persist"],
+    ex:[{ s:"The smell of smoke {{}} for days afterwards.", f:"lingered", ko:"연기 냄새가 그 후 며칠 동안 오래 머물렀다." }] },
+
+  /* linger 와 앞 네 글자가 같지만 어원이 무관하고 품사도 달라(v/n)
+     같은 보드에 안 온다. */
+  { word:"linguistics", pron:"링귀스틱스", pos:"n", level:"C1", meanings:["어학","언어학"],
+    syn:["language study","philology","science of language"],
+    ex:[{ s:"She teaches {{}} at the university.", f:"linguistics", ko:"그녀는 대학에서 언어학을 가르친다." }] },
+
+  /* 승격 ① — GLOSS '연결, 관련' 을 글자까지 지켰다. 참조가 6곳(associate·bond·
+     bridge·causality·correlation·cross-reference)으로 이 세트에서 가장 많다.
+     원본의 동사 갈래('연결하다')는 pos 가 n 이라 담지 못했다. */
+  { word:"link", pron:"링크", pos:"n", level:"B1", meanings:["연결","관련"],
+    syn:["bond","connection","tie"],
+    ex:[{ s:"Scientists found a clear {{}} between diet and health.", f:"link", ko:"과학자들은 식사와 건강 사이의 명확한 연결을 발견했다." }] },
+
+  /* 승격 ① — GLOSS '액체' 와 같은 갈래다. fluid(syn) 가 참조한다.
+     원본의 형용사 갈래('액체 형태의')는 pos 가 n 이라 담지 못했다. */
+  { word:"liquid", pron:"리퀴드", pos:"n", level:"B1", meanings:["액체"],
+    syn:["fluid","solution","watery substance"], ant:["solid"],
+    ex:[{ s:"Pour the {{}} slowly into the flask.", f:"liquid", ko:"그 액체를 플라스크에 천천히 부으세요." }] },
+
+  /* liquid 와 앞 네 글자가 같고 품사도 둘 다 n 이지만 뜻이 '액체' 와 '독한 술' 로
+     달라 무리가 없다. */
+  { word:"liquor", pron:"리커", pos:"n", level:"B2", meanings:["독한 술"],
+    syn:["spirits","booze","hard drink"],
+    ex:[{ s:"The corner shop is not allowed to sell {{}}.", f:"liquor", ko:"그 구석 가게는 독한 술을 팔 수 없다." }] },
+
+  /* syn 을 비워 두었다. I 세트 illiteracy 와 같은 사정이다 — '글을 읽고 쓰는 능력' 을
+     바꿔 쓸 낱말이 수능 수준 영어에 셋이 없다. 억지로 채우면 사전에 없는 말을
+     정답으로 가르치게 된다. */
+  { word:"literacy", pron:"리터러시", pos:"n", level:"C1", meanings:["글을 읽고 쓰는 능력"],
+    ex:[{ s:"Adult {{}} programmes have expanded rapidly.", f:"literacy", ko:"성인 문해 프로그램이 빠르게 확대되었다." }] },
+
+  /* 승격 ① — GLOSS '글자 그대로의' 를 첫 자리에 지켰다. figurative(ant) 가 참조한다.
+     원본은 순서가 '문자의, 글자 그대로의' 인데 사전 쪽을 앞에 두었다. */
+  { word:"literal", pron:"리터럴", pos:"adj", level:"B2", meanings:["글자 그대로의","문자의"],
+    syn:["word-for-word","exact","verbatim"], ant:["figurative"],
+    ex:[{ s:"The {{}} meaning differs from the idiom.", f:"literal", ko:"글자 그대로의 뜻은 관용구와 다르다." }] },
+
+  /* literal 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
+  { word:"literally", pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
+    syn:["exactly","to the letter","word for word"],
+    ex:[{ s:"He {{}} ran ten miles before breakfast.", f:"literally", ko:"그는 아침 전에 말 그대로 10마일을 뛰었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -370,15 +489,19 @@ Object.assign(window.GLOSS, {
   "abate": "잦아들다",
   "above board": "숨김 없이 정당한",
   "actual-size": "실제 크기의",
+  "agreeing": "뜻을 같이하는",
   "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
   "answerable": "책임을 져야 하는",
+  "appendage": "몸에 붙은 부분",
   "arduous": "몹시 힘든",
   "be outpaced": "앞질리다",
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
+  "blistering": "맹렬히 빠른",
   "booby trap": "위장 폭탄",
   "book stock": "보유 도서",
+  "booze": "술",
   "bound": "껑충 뛰다",
   "bound off": "껑충 뛰어 내려가다",
   "broad-minded": "아량이 넓은",
@@ -388,14 +511,18 @@ Object.assign(window.GLOSS, {
   "composed": "차분한",
   "court case": "법정 사건",
   "crippled": "다리를 못 쓰는",
+  "dawdle": "느릿느릿 꾸물대다",
   "decipherable": "판독할 수 있는",
   "disappoint": "기대를 깨다",
   "dismissal": "해임",
   "drudgery": "고된 일",
+  "easy to carry": "들고 다니기 쉬운",
   "emancipate": "속박에서 풀다",
+  "equally": "똑같이",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",
+  "featherweight": "깃털처럼 가벼운",
   "flanking": "측면을 이루는",
   "flippancy": "경박한 말투",
   "flyer": "광고 쪽지",
@@ -403,7 +530,12 @@ Object.assign(window.GLOSS, {
   "frivolity": "시시한 짓",
   "guide": "안내하다",
   "handbill": "살포용 광고지",
+  "hang around": "어슬렁거리며 남다",
+  "hard drink": "도수 높은 술",
+  "heavy": "무거운",
+  "hobble": "다리를 절며 걷다",
   "hobbling": "다리를 끌며 걷는",
+  "hoist": "끌어올리다",
   "hurried": "서두른",
   "ignorant": "무지한",
   "illegitimate": "정당하지 못한",
@@ -412,7 +544,10 @@ Object.assign(window.GLOSS, {
   "jump off": "뛰어서 내려가다",
   "justifiable": "이유가 서는",
   "kick off": "시작하다",
+  "kindle": "불붙이다",
+  "kindred": "마음이 통하는",
   "lab": "실험실",
+  "language study": "언어 연구",
   "legal action": "법적 조치",
   "less advanced": "덜 발전한",
   "lessor": "임대인",
@@ -425,21 +560,28 @@ Object.assign(window.GLOSS, {
   "mostly": "대부분",
   "myth": "신화",
   "nonspecialist": "전문가가 아닌 사람",
+  "of one mind": "한마음인",
   "omit": "빠뜨리다",
   "opulent": "사치스러운",
   "ordinary person": "보통 사람",
   "permissible": "허용되는",
+  "philology": "문헌학",
+  "portable": "휴대하기 좋은",
   "predominantly": "주로, 대부분은",
+  "probable": "있을 법한",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",
+  "rapid-fire": "속사포 같은",
   "readable": "알아볼 수 있는",
   "recline": "몸을 뒤로 젖히다",
+  "rectilinear": "직선으로 된",
   "redundancy": "정리 해고",
   "regrettable": "유감스러운",
   "rent out": "세를 놓다",
   "research facility": "연구 시설",
   "rest": "놓여 있다",
   "saga": "긴 무훈담",
+  "science of language": "언어 과학",
   "seep out": "스며 나오다",
   "seepage": "스며 나옴",
   "set down": "내려놓다",
@@ -449,6 +591,7 @@ Object.assign(window.GLOSS, {
   "skip": "건너뛰다",
   "slant": "비스듬해지다",
   "spearhead": "앞장서다",
+  "spirits": "증류주",
   "spring from": "뛰어 벗어나다",
   "stratum": "지층",
   "suede": "스웨이드 가죽",
@@ -457,6 +600,7 @@ Object.assign(window.GLOSS, {
   "testing room": "시험실",
   "time lag": "시간차",
   "tip": "쓰레기장",
+  "to the letter": "한 글자도 틀리지 않게",
   "toil": "고생스러운 노동",
   "true to size": "크기가 실제와 맞는",
   "tutorial": "개별 지도 수업",
@@ -464,7 +608,13 @@ Object.assign(window.GLOSS, {
   "uneaten": "먹지 않은",
   "unflappable": "동요하지 않는",
   "unhurried": "서두르지 않는",
+  "unlikely": "있을 것 같지 않은",
   "vault": "짚고 뛰어넘다",
+  "verbatim": "한마디도 안 빼고",
+  "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",
-  "well-read": "책을 많이 읽은"
+  "watery substance": "물기 있는 물질",
+  "well-read": "책을 많이 읽은",
+  "word for word": "낱말 하나하나",
+  "word-for-word": "낱말 그대로의"
 });
