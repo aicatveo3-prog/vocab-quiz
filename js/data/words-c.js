@@ -773,7 +773,7 @@ window.VOCAB_C = [
     ex:[{ s:"The trial will {{}} in early March.", f:"commence", ko:"재판은 3월 초에 시작될 것이다." }] },
 
   { word:"comment", pron:"카멘트", pos:"v", level:"B1", meanings:["견해를 밝히다","논평"],
-    syn:["remark","observe","state"],
+    syn:["remark","note","state"],
     ex:[{ s:"He refused to {{}} on the rumour.", f:"comment", ko:"그는 그 소문에 대해 견해를 밝히기를 거부했다." }] },
 
   { word:"commentary", pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
@@ -1329,7 +1329,7 @@ window.VOCAB_C = [
     ex:[{ s:"A tight budget will {{}} the whole design.", f:"constrain", ko:"빡빡한 예산이 설계 전체를 제약할 것이다." }] },
 
   { word:"constrict", pron:"컨스트릭트", pos:"v", level:"C2", meanings:["수축시키다","조이다"],
-    syn:["tighten","narrow","squeeze"], ant:["dilate"],
+    syn:["tighten","narrow down","squeeze"], ant:["dilate"],
     ex:[{ s:"Cold air can {{}} the airways.", f:"constrict", ko:"찬 공기는 기도를 수축시킬 수 있다." }] },
 
   { word:"construct", pron:"컨스트럭트", pos:"v", level:"B1", meanings:["건설하다","만들다"],
@@ -2006,10 +2006,6 @@ Object.assign(window.GLOSS, {
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
-  "naive":"순진한, 어수룩한",
-  "noble":"귀족, 고귀한",
-  "nonprofit":"비영리의",
-  "novel":"새로운, 신기한",
   "obey":"따르다, 복종하다",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다

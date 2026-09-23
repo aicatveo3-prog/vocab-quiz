@@ -10,7 +10,7 @@ var fs = require('fs'), path = require('path');
 var ROOT = path.join(__dirname, '..');
 var window = {}; global.window = window;
 function load(rel) { (new Function('window', fs.readFileSync(path.join(ROOT, rel), 'utf8')))(window); }
-['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js',
+['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js',
  'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
 
 var ALL = (window.VOCAB || []).concat(window.VOCAB_B || [])
@@ -22,7 +22,9 @@ var ALL = (window.VOCAB || []).concat(window.VOCAB_B || [])
   .concat(window.VOCAB_J || [])
   .concat(window.VOCAB_K || [])
   .concat(window.VOCAB_L || [])
-  .concat(window.VOCAB_M || []);
+  .concat(window.VOCAB_M || [])
+  .concat(window.VOCAB_N || [])
+  .concat(window.VOCAB_O || []);
 var GLOSS = window.GLOSS || {}, PRON = window.PRON || {};
 var byWord = {};
 ALL.forEach(function (w) { byWord[w.word.toLowerCase()] = w; });

@@ -1286,7 +1286,7 @@ window.VOCAB_D = [
     ex:[{ s:"The industry has never fully recovered from the {{}}.", f:"downturn", ko:"그 산업은 침체에서 완전히 회복하지 못했다." }] },
 
   { word:"doze", pron:"도즈", pos:"v", level:"B2", meanings:["졸다","선잠 자다"],
-    syn:["nap","snooze","drowse"],
+    syn:["take a nap","snooze","drowse"],
     ex:[{ s:"He would often {{}} in the armchair after lunch.", f:"doze", ko:"그는 점심 후 안락의자에서 자주 졸았다." }] },
 
   /* dozen — 대체할 낱말이 없어 syn 을 비워 둔다 */
@@ -1650,7 +1650,6 @@ Object.assign(window.GLOSS, {
   "hopelessly":"절망적으로, 어찌할 수 없이",
   "hopelessness":"절망, 희망 없음",
   "lay waste":"황폐하게 만들다",
-  "nominate":"지명하다, 후보로 추천하다",
   "offspring":"자식, 자손",
   "persistence":"끈기, 고집",
   "preferable":"더 나은, 선호되는",
@@ -1700,7 +1699,6 @@ Object.assign(window.GLOSS, {
   "loyally":"충성스럽게",
   "number":"수, 숫자",
   "numeral":"숫자, 수사",
-  "nutritional":"영양의, 영양상의",
   "nutritive":"영양이 되는",
   "pinpoint":"정확히 찾아내다",
   "poised":"침착한, 태연한",
@@ -1761,7 +1759,6 @@ Object.assign(window.GLOSS, {
   "malady":"병, 질환",
   "masquerade":"가면, 위장",
   "mismatch":"불일치, 부조화",
-  "neutral":"중립적인, 공정한",
   "obnoxious":"아주 불쾌한, 몹시 기분 나쁜",
   "offensive":"불쾌한, 공격적인",
   "perceive":"인지하다, 감지하다",
@@ -1919,7 +1916,6 @@ Object.assign(window.GLOSS, {
   "look in":"잠깐 들여다보다",
   "markedly":"현저히, 눈에 띄게",
   "mist":"안개, 옅은 안개비",
-  "nap":"낮잠, 잠깐 잠",
   "outflow":"유출, 흘러 나감",
   "overpower":"압도하다, 제압하다",
   "overstate":"과장해 말하다",
