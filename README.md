@@ -51,14 +51,14 @@ Q5  fabulous   1단계        ...
 
 ## 개별 연습 5가지 모드
 
-형식을 고른 뒤 세트(A~H)를 고르면 **그 세트를 통째로** 풉니다. 진행 바를 드래그해 원하는 문제로 바로 이동할 수 있습니다.
+형식을 고른 뒤 세트(A~I)를 고르면 **그 세트를 통째로** 풉니다. 진행 바를 드래그해 원하는 문제로 바로 이동할 수 있습니다.
 
 | 모드 | 내용 | 출제 가능 |
 |---|---|---|
-| **4지선다** | 영→한 / 한→영을 번갈아 출제 | 2,106단어 |
-| **아닌 것 고르기** | 유의어 3개 + 바꿔 쓸 수 없는 1개 | 2,049단어 |
-| **짝 맞추기** | 5~6쌍 보드를 모두 연결 | 2,106단어 |
-| **문장 빈칸** | 예문 속 빈칸에 알맞은 단어 | 1,898단어 |
+| **4지선다** | 영→한 / 한→영을 번갈아 출제 | 2,417단어 |
+| **아닌 것 고르기** | 유의어 3개 + 바꿔 쓸 수 없는 1개 | 2,358단어 |
+| **짝 맞추기** | 5~6쌍 보드를 모두 연결 | 2,417단어 |
+| **문장 빈칸** | 예문 속 빈칸에 알맞은 단어 | 2,179단어 |
 
 ## 오답 선택지 설계
 
@@ -131,7 +131,7 @@ Q5  fabulous   1단계        ...
 
 ### 기존 세트에 단어 추가
 
-해당 세트 파일(`js/data/words.js`, `words-b.js` … `words-h.js`)에 항목을 추가하면 됩니다. **채운 필드에 따라 모드가 자동으로 해금**되므로 뜻만 넣어도 바로 출제됩니다.
+해당 세트 파일(`js/data/words.js`, `words-b.js` … `words-i.js`)에 항목을 추가하면 됩니다. **채운 필드에 따라 모드가 자동으로 해금**되므로 뜻만 넣어도 바로 출제됩니다.
 
 ```js
 {
@@ -169,20 +169,31 @@ Object.assign(window.GLOSS, {
 
 ### 새 세트 추가
 
-`js/data/words-i.js`를 만들고 `window.VOCAB_I`로 내보낸 뒤, 다섯 곳을 연결합니다.
+다음 세트는 J입니다. `js/data/words-j.js`를 만들고 `window.VOCAB_J`로 내보낸 뒤, 다섯 곳을 연결합니다.
 
 | 위치 | 할 일 |
 |---|---|
-| `index.html` | `<script src="js/data/words-i.js">` — **`gloss.js`보다 먼저** |
-| `js/conquer.js` `SETS` | `{ id: 'I', label: 'I', words: window.VOCAB_I \|\| [] }` 한 줄. 세트 목록·챕터 목록·개별 연습에 자동 반영됩니다 |
-| `js/quizgen.js` `ALL` | `.concat(window.VOCAB_I \|\| [])` |
+| `index.html` | `<script src="js/data/words-j.js">` — **`gloss.js`보다 먼저** |
+| `js/conquer.js` `SETS` | `{ id: 'J', label: 'J', words: window.VOCAB_J \|\| [] }` 한 줄. 세트 목록·챕터 목록·개별 연습에 자동 반영됩니다 |
+| `js/quizgen.js` `ALL` | `.concat(window.VOCAB_J \|\| [])` |
 | `sw.js` | `ASSETS`에 파일 추가 + `CACHE` 버전 올리기 (안 올리면 기존 사용자에게 반영되지 않습니다) |
-| `tools/*.js` | 각 도구의 데이터 로드 목록에 추가 + `tools/words-h-audit.js`를 복제해 `words-i-audit.js` 만들기 |
+| `tools/*.js` | 각 도구의 데이터 로드 목록에 추가 + `tools/words-i-audit.js`를 복제해 `words-j-audit.js` 만들기 |
+
+> ⚠️ `tools/pron-audit.js`의 `load()`는 **인자를 하나만** 받습니다. 한 줄에 두 파일을
+> 몰아 쓰면 뒤쪽이 조용히 무시되므로 반드시 줄을 나눠 호출하세요.
+
+**승격에 주의하세요.** 새 세트의 표제어가 이미 `GLOSS`·`PRON`에 등록돼 있는 경우가
+많습니다(I 세트는 311단어 중 110개). 표제어가 되면 사전 항목을 지워야 하는데,
+그 항목은 `gloss.js` 한 곳이 아니라 **각 세트 파일의 `Object.assign` 블록에
+흩어져** 있습니다. 또 사전의 뜻과 새 표제어의 뜻이 다르면 그 낱말을 유의어·반의어로
+쓰는 **기존 문제의 화면 글자가 함께 바뀝니다**. 지우기 전에 어느 파일에 있는지,
+어느 문제가 참조하는지 먼저 확인하세요 — `tools/d-impact.js`가 짝 맞추기 보드의
+변화를, `words-*-audit.js`가 사전 중복을 잡아 줍니다.
 
 검증 도구는 `tools/`에 있습니다. 세트를 추가·수정한 뒤 전부 통과해야 합니다.
 
 ```bash
-node tools/words-h-audit.js        # 세트별 데이터 규약 (ex.f 불규칙 변화 등)
+node tools/words-i-audit.js        # 세트별 데이터 규약 (ex.f 불규칙 변화 등)
 node tools/gov-audit.js            # 어법 데이터 + 어법 줄 전량
 node tools/pron-audit.js           # 발음 표기 누락·중복
 node tools/pron-render-check.js --all
@@ -194,7 +205,7 @@ node tools/inventory.js            # 전체 통계
 
 ### 현재 규모
 
-전체 **2,106단어 · 108챕터** (레벨 B1 431 / B2 885 / C1 626 / C2 164, 구·표현 204개)
+전체 **2,417단어 · 124챕터** (레벨 B1 482 / B2 1,023 / C1 732 / C2 180, 구·표현 234개)
 
 | 세트 | 단어 | 챕터 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|
@@ -206,6 +217,7 @@ node tools/inventory.js            # 전체 통계
 | F | 210 | 11 | 41 | 92 | 66 | 11 |
 | G | 115 | 6 | 29 | 67 | 16 | 3 |
 | H | 102 | 5 | 20 | 67 | 15 | 0 |
+| I | 311 | 16 | 51 | 138 | 106 | 16 |
 
 ## 실행
 
@@ -234,6 +246,7 @@ js/data/words-e.js       단어 데이터 E (250)
 js/data/words-f.js       단어 데이터 F (210)
 js/data/words-g.js       단어 데이터 G (115)
 js/data/words-h.js       단어 데이터 H (102)
+js/data/words-i.js       단어 데이터 I (311)
 js/data/gloss.js         유의어 뜻 사전 (표제어가 아닌 유의어의 한국어 뜻)
 js/data/pron.js          한글 발음 사전 (표제어가 아닌 단어의 발음)
 js/store.js              localStorage — 오답 노트 · 저장 · streak · 병합

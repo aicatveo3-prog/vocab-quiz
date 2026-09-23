@@ -1545,7 +1545,6 @@ Object.assign(window.GLOSS, {
   "gripping":"몰입시키는",
   "in a good light":"좋게",
   "intimacy":"친밀함",
-  "intrigue":"흥미를 돋우다",
   "loss of life":"인명 손실",
   "lose momentum":"기세를 잃다",
   "not measure up":"기준에 못 미치다",
