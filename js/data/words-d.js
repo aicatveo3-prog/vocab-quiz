@@ -1761,7 +1761,6 @@ Object.assign(window.GLOSS, {
   "malady":"병, 질환",
   "masquerade":"가면, 위장",
   "mismatch":"불일치, 부조화",
-  "neutral":"중립적인, 공정한",
   "obnoxious":"아주 불쾌한, 몹시 기분 나쁜",
   "offensive":"불쾌한, 공격적인",
   "perceive":"인지하다, 감지하다",

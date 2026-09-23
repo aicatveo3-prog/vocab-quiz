@@ -1439,7 +1439,7 @@ window.VOCAB = [
     ex:[{ s:"{{}} at the lecture was surprisingly high.", f:"Attendance", ko:"그 강연의 참석률은 놀랄 만큼 높았다." }] },
 
   { word:"attention", pron:"어텐션", pos:"n", level:"B1", meanings:["주목","주의"],
-    syn:["notice","focus","concentration"], ant:["neglect"],
+    syn:["notice","focus","concentration"], ant:["inattention"],
     ex:[{ s:"The poster is designed to grab {{}}.", f:"attention", ko:"그 포스터는 주목을 끌도록 디자인되었다." }] },
 
   { word:"attentive", pron:"어텐티브", pos:"adj", level:"C1", meanings:["주의를 기울이는","배려하는"],
@@ -1706,8 +1706,6 @@ window.GLOSS = {
   "modernity":"현대성",
   "named":"이름이 밝혀진",
   "natural":"자연의, 천연의",
-  "negative":"부정적인",
-  "neglect":"방치, 소홀",
   "normal":"정상적인",
   "obscure":"모호한, 무명의",
   "oppose":"반대하다",
