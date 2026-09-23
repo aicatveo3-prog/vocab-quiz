@@ -617,7 +617,6 @@ Object.assign(window.GLOSS, {
   "mix with":"~와 어울리다",
   "modesty":"겸허, 소박함",
   "moisture":"수분",
-  "monumental":"기념비적인, 거대한",
   "mound":"둔덕",
   "mugginess":"무더움",
   "muggy":"무더운",

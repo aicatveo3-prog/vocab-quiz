@@ -2010,7 +2010,6 @@ Object.assign(window.GLOSS, {
   "mismatched": "짝이 맞지 않는",
   "mixed-race": "혼합 인종의",
   "modernize": "현대화하다",
-  "momentum": "기세, 탄력",
   "mortality": "죽음을 피할 수 없음, 사망률",
   "motivation": "동기 부여",
   "multiracial": "여러 인종의",
