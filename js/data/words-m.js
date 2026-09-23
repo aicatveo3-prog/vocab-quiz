@@ -730,11 +730,11 @@ window.VOCAB_M = [
     ex:[{ s:"The spring water is rich in dissolved {{}}.", f:"minerals", ko:"그 샘물은 용해된 무기물이 풍부하다." }] },
 
   { word:"mingle", pron:"밍글", pos:"v", level:"C1", meanings:["섞이다","어우러지다"],
-    syn:["intermix","circulate","mix freely"],
+    syn:["intermix","blend together","mix freely"],
     ex:[{ s:"Guests began to {{}} after the speeches.", f:"mingle", ko:"손님들은 연설이 끝난 뒤 섞이기 시작했다." }] },
 
   { word:"minimal", pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
-    syn:["slightest","nominal","token"], ant:["maximal"],
+    syn:["slightest","nominal","negligible"], ant:["maximal"],
     ex:[{ s:"The repair caused {{}} disruption to traffic.", f:"minimal", ko:"그 수리는 교통에 최소의 지장만 일으켰다." }] },
 
   /* 승격 ① — GLOSS '최소화하다, 축소하다' 를 글자까지 지켰다. downplay(syn) 가
@@ -768,7 +768,7 @@ window.VOCAB_M = [
      원본을 따랐다. 그 대신 looking glass 의 유의어에서 mirror 를 빼고
      silvered glass 로 갈았다 — 명사 자리에 동사 표제어를 두면 설명이 어긋난다. */
   { word:"mirror", pron:"미러", pos:"v", level:"B2", meanings:["반영하다","비추다"],
-    syn:["reflect","echo","parallel"],
+    syn:["reflect","echo","match closely"],
     ex:[{ s:"The survey results {{}} national trends closely.", f:"mirror", ko:"그 조사 결과는 전국 추세를 가깝게 반영한다." }] },
 
   { word:"misbehave", pron:"미스비헤이브", pos:"v", level:"B2", meanings:["무례한 행동을 하다","버릇없이 굴다"],
@@ -912,7 +912,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '완화하다, 줄이다' 와 같은 갈래다. alleviate(syn) 가 참조한다.
      원본 '완화시키다, 누그러뜨리다' 도 같은 갈래라 사전 쪽을 남겼다. */
   { word:"mitigate", pron:"미터게이트", pos:"v", level:"C1", meanings:["완화하다","줄이다"],
-    syn:["alleviate","lessen","ease"], ant:["aggravate"],
+    syn:["alleviate","lessen","take the edge off"], ant:["aggravate"],
     ex:[{ s:"Planting trees helps {{}} the heat in cities.", f:"mitigate", ko:"나무를 심는 것은 도시의 열을 완화하는 데 도움이 된다." }] },
 
   /* 승격 ① — GLOSS '앓는 소리를 내다' 를 글자까지 지켰다. groan(syn) 이 참조한다.
@@ -967,10 +967,13 @@ window.VOCAB_M = [
     ex:[{ s:"Engineers had to {{}} the design twice.", f:"modify", ko:"기술자들은 설계를 두 번 수정해야 했다." }] },
 
   /* 승격 ② — GLOSS '틀, 거푸집; 형성하다' 로 명사와 동사가 섞여 있었다.
-     cast(syn) 가 쓰는 갈래는 명사 '틀' 쪽이라 첫 자리에 지키고, 둘째를 원본의
-     '주물' 로 바꿨다 — 한 표제어에 두 품사를 섞지 않는다. */
+     한 표제어에 두 품사를 섞지 않으므로 수능에서 더 자주 묻는 명사 갈래만
+     남겼다(원본 '모양, 주물').
+     ※ 유일한 참조였던 cast(v, 주조하다)는 섞여 있던 동사 갈래를 쓰고 있었다.
+       명사만 남기면 cast 의 선택지에 명사 뜻이 떠서 어긋나므로, cast 쪽 유의어를
+       'shape in a mold' 로 바꿨다(words-c.js). */
   { word:"mold", pron:"몰드", pos:"n", level:"B2", meanings:["틀","주물"],
-    syn:["cast","form","template"],
+    syn:["casting frame","matrix","template"],
     ex:[{ s:"Hot metal was poured into the {{}}.", f:"mold", ko:"뜨거운 금속이 틀에 부어졌다." }] },
 
   { word:"molecule", pron:"말러큘", pos:"n", level:"B2", meanings:["분자"],
@@ -996,7 +999,7 @@ window.VOCAB_M = [
     ex:[{ s:"The campaign slowly gathered {{}}.", f:"momentum", ko:"그 운동은 천천히 기세를 모았다." }] },
 
   { word:"monarch", pron:"마나크", pos:"n", level:"B2", meanings:["군주","왕"],
-    syn:["sovereign","ruler","crowned head"],
+    syn:["king or queen","ruler","crowned head"],
     ex:[{ s:"The {{}} opened parliament in person.", f:"monarch", ko:"그 군주가 직접 의회를 개회했다." }] },
 
   /* monarch 와 어근이 같지만 품사가 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -1016,7 +1019,7 @@ window.VOCAB_M = [
      명사 갈래를 참조하므로 pos 를 n 으로 유지했다. 원본의 '감독자' 는 사람 쪽이라
      사전의 '감시 장치' 를 첫 자리에 두었다. */
   { word:"monitor", pron:"마니터", pos:"n", level:"B1", meanings:["감시 장치","감독자"],
-    syn:["detector","screen","observer"],
+    syn:["detector","watchdog","observer"],
     ex:[{ s:"A heart {{}} beeped steadily beside the bed.", f:"monitor", ko:"심장 감시 장치가 침대 옆에서 규칙적으로 삐 소리를 냈다." }] },
 
   { word:"monk", pron:"멍크", pos:"n", level:"B2", meanings:["수도승","수도자"],
@@ -1049,7 +1052,7 @@ window.VOCAB_M = [
      참조하므로 원본의 '엄청난' 대신 사전 쪽 '거대한' 을 남겼다.
      monument 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
   { word:"monumental", pron:"마뉴멘털", pos:"adj", level:"B2", meanings:["기념비적인","거대한"],
-    syn:["historic","epic","towering"],
+    syn:["historic","grand in scale","towering"],
     ex:[{ s:"Translating the whole archive was a {{}} task.", f:"monumental", ko:"그 기록 전체를 번역하는 일은 기념비적인 과업이었다." }] },
 
   { word:"moody", pron:"무디", pos:"adj", level:"B2", meanings:["언짢은","변덕스러운"],
@@ -1167,7 +1170,7 @@ window.VOCAB_M = [
     ex:[{ s:"The patient suffered {{}} injuries in the crash.", f:"multiple", ko:"그 환자는 사고로 다수의 부상을 입었다." }] },
 
   { word:"multiply", pron:"멀터플라이", pos:"v", level:"B1", meanings:["증가시키다","곱하다"],
-    syn:["increase","proliferate","compound"], ant:["divide"],
+    syn:["increase","proliferate","grow in number"], ant:["divide"],
     ex:[{ s:"Bacteria {{}} rapidly in warm standing water.", f:"multiply", ko:"세균은 따뜻하게 고인 물에서 빠르게 증가한다." }] },
 
   /* 승격 ① — GLOSS '여러 인종의' 를 첫 자리에 지켰다. I 세트 interracial 이 참조한다.
@@ -1179,12 +1182,81 @@ window.VOCAB_M = [
 
   { word:"multitask", pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
     syn:["juggle tasks","work in parallel","do several things at once"],
-    ex:[{ s:"Few people truly {{}} well under pressure.", f:"multitask", ko:"압박 속에서 동시에 여러 일을 정말 잘하는 사람은 드물다." }] }
+    ex:[{ s:"Few people truly {{}} well under pressure.", f:"multitask", ko:"압박 속에서 동시에 여러 일을 정말 잘하는 사람은 드물다." }] },
+
+  /* ── 챕터 11 ────────────────────────────── */
+
+  /* 챕터 8의 mob 을 '폭도' 로 돌려 두어 이쪽이 '다수, 군중' 을 쓴다. */
+  { word:"multitude", pron:"멀터튜드", pos:"n", level:"C1", meanings:["다수","군중"],
+    syn:["host","great number","large gathering"],
+    ex:[{ s:"A {{}} of small details still needed checking.", f:"multitude", ko:"확인이 더 필요한 자잘한 사항이 다수 있었다." }] },
+
+  /* 승격 ① — GLOSS '중얼거리다' 와 글자까지 같다. articulate(ant) 이 참조한다.
+     원본도 한 갈래다. 뒤에 올 mutter 는 '투덜거리다' 로 돌려 첫 뜻이 갈린다. */
+  { word:"mumble", pron:"멈블", pos:"v", level:"B2", meanings:["중얼거리다"],
+    syn:["murmur","speak indistinctly","mouth quietly"], ant:["articulate"],
+    ex:[{ s:"He tends to {{}} when he is nervous.", f:"mumble", ko:"그는 긴장하면 중얼거리는 경향이 있다." }] },
+
+  /* 승격 ① — GLOSS '시의, 지방 자치의' 를 글자까지 지켰다. civic(syn) 이 참조하므로
+     원본의 '시립의, 자치제의' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
+  { word:"municipal", pron:"뮤니서펄", pos:"adj", level:"B2", meanings:["시의","지방 자치의"],
+    syn:["civic","city-run","local-government"],
+    ex:[{ s:"The {{}} library opens on Sundays now.", f:"municipal", ko:"그 시립 도서관은 이제 일요일에도 문을 연다." }] },
+
+  { word:"muscle", pron:"머슬", pos:"n", level:"B1", meanings:["근육"],
+    syn:["sinew","flesh","tissue"],
+    ex:[{ s:"Stretching keeps the {{}} from tightening.", f:"muscle", ko:"스트레칭은 근육이 굳는 것을 막아 준다." }] },
+
+  /* 승격 ① — GLOSS '근육질의, 건장한' 을 글자까지 지켰다. athletic(syn) 이
+     참조하므로 원본의 '근육의' 대신 사전 쪽을 남겼다.
+     muscle 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"muscular", pron:"머스큘러", pos:"adj", level:"B2", meanings:["근육질의","건장한"],
+    syn:["athletic","brawny","well-built"], ant:["frail"],
+    ex:[{ s:"Years of rowing left him strong and {{}}.", f:"muscular", ko:"여러 해의 조정으로 그는 강하고 근육질이 되었다." }] },
+
+  { word:"mutation", pron:"뮤테이션", pos:"n", level:"B2", meanings:["돌연변이","변화"],
+    syn:["genetic change","variant","alteration"],
+    ex:[{ s:"A single {{}} made the virus spread faster.", f:"mutation", ko:"단 한 번의 돌연변이가 그 바이러스를 더 빠르게 퍼지게 했다." }] },
+
+  { word:"mute", pron:"뮤트", pos:"adj", level:"C1", meanings:["무언의","말이 없는"],
+    syn:["silent","speechless","wordless"], ant:["vocal"],
+    ex:[{ s:"The audience sat {{}} until the last note faded.", f:"mute", ko:"관객은 마지막 음이 사라질 때까지 무언으로 앉아 있었다." }] },
+
+  /* 원본은 '중얼거리다' 가 앞이었는데 바로 앞 mumble 과 같았다. mutter 는 불만을
+     섞어 낮게 말하는 쪽이어서 '투덜거리다' 로 갈랐다.
+     첫 뜻이 G 세트 grumble 과 같지만 meaningsOverlap 이 같은 보기에 함께 뜨지
+     못하게 막으므로 그대로 두었다. */
+  { word:"mutter", pron:"머터", pos:"v", level:"B2", meanings:["투덜거리다","불평하다"],
+    syn:["grumble","gripe","complain under one's breath"],
+    ex:[{ s:"She began to {{}} about the long wait.", f:"mutter", ko:"그녀는 긴 기다림에 대해 투덜거리기 시작했다." }] },
+
+  /* 승격 ① — GLOSS '상호의, 공동의' 를 글자까지 지켰다. bilateral(syn) 이
+     참조하므로 원본의 '서로의, 상호관계가 있는' 대신 사전 쪽을 남겼다. */
+  { word:"mutual", pron:"뮤추얼", pos:"adj", level:"B2", meanings:["상호의","공동의"],
+    syn:["bilateral","reciprocal","shared"], ant:["one-sided"],
+    ex:[{ s:"The deal rests on {{}} trust.", f:"mutual", ko:"그 거래는 상호 신뢰에 기반한다." }] },
+
+  /* 승격 ① — GLOSS '신비로운, 불가사의한' 과 같은 갈래다. 참조도 PRON 도 없어
+     원본의 '이해하기 힘든' 대신 사전 쪽 '신비로운' 을 첫 자리에 두었다. */
+  { word:"mysterious", pron:"미스티리어스", pos:"adj", level:"B1", meanings:["신비로운","불가사의한"],
+    syn:["baffling","enigmatic","inexplicable"],
+    ex:[{ s:"A {{}} light appeared over the harbour.", f:"mysterious", ko:"신비로운 빛이 항구 위에 나타났다." }] },
+
+  /* mythology 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
+     원본 셋째 갈래 '가공의' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"mythical", pron:"미씨컬", pos:"adj", level:"B2", meanings:["신화 속에 나오는","전설상의"],
+    syn:["legendary","fabled","imaginary"], ant:["actual"],
+    ex:[{ s:"The unicorn is a {{}} creature.", f:"mythical", ko:"유니콘은 신화 속에 나오는 생물이다." }] },
+
+  { word:"mythology", pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
+    syn:["legend","folklore","body of myths"],
+    ex:[{ s:"Greek {{}} still shapes modern storytelling.", f:"mythology", ko:"그리스 신화는 여전히 현대 이야기 짓기를 만든다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "act up": "말을 안 듣다",
+  "actual": "실제의",
   "adage": "오래된 격언",
   "add up": "앞뒤가 맞다",
   "adviser": "조언해 주는 사람",
@@ -1205,18 +1277,23 @@ Object.assign(window.GLOSS, {
   "bewail": "한탄하다",
   "biochemical": "생화학의",
   "birth attendant": "출산을 돕는 사람",
+  "blend together": "서로 어우러지다",
   "blunder": "큰 실수",
   "body chemistry": "체내 화학 작용",
+  "body of myths": "신화 전체",
   "bog": "늪지",
   "bone marrow": "뼈 속 골수",
   "book ahead": "미리 예약하다",
   "boost to the full": "최대로 끌어올리다",
+  "brawny": "체격이 다진",
+  "casting frame": "주조하는 틀",
   "catchphrase": "귀에 남는 문구",
   "charged": "전하를 띤",
   "chemical unit": "화학 단위",
   "childbearing": "아이를 낳는",
   "childhood fever": "소아 발열병",
   "churn out": "쏟아 내다",
+  "city-run": "시가 운영하는",
   "city-wide": "도시 전역의",
   "classic": "고전적 명작",
   "cleaning tool": "청소 도구",
@@ -1230,6 +1307,7 @@ Object.assign(window.GLOSS, {
   "combat sport": "격투 종목",
   "commemorative": "기리기 위한",
   "complain loudly": "큰 소리로 불평하다",
+  "complain under one's breath": "낮은 소리로 불평하다",
   "compound unit": "화합물 단위",
   "confusing": "헷갈리게 하는",
   "conjugal": "혼인 관계의",
@@ -1254,6 +1332,7 @@ Object.assign(window.GLOSS, {
   "echo": "되울리다",
   "energy turnover": "에너지 순환량",
   "energy-processing": "에너지를 처리하는",
+  "enigmatic": "속을 알기 어려운",
   "enrage": "분노하게 하다",
   "error": "잘못된 것",
   "ethnically diverse": "민족 구성이 다양한",
@@ -1268,6 +1347,7 @@ Object.assign(window.GLOSS, {
   "fighting art": "싸움 기술",
   "fighting spirit": "싸울 기백",
   "figure of speech": "비유적 표현",
+  "flesh": "살",
   "floor swab": "바닥 닦는 걸레",
   "fluidity": "흐르는 성질",
   "forecaster": "예보하는 사람",
@@ -1279,14 +1359,18 @@ Object.assign(window.GLOSS, {
   "gain ground": "기반을 넓히다",
   "garble the spelling": "철자를 뒤섞다",
   "gauging": "재는 일",
+  "genetic change": "유전적 변화",
   "get the most out of": "~을 최대로 활용하다",
   "get wrong": "잘못 알아듣다",
   "glitch": "작은 결함",
   "government department": "정부 부서",
+  "grand in scale": "규모가 웅장한",
   "grandeur": "장대함",
   "grassland": "초지",
+  "great number": "많은 수",
   "greater part": "더 큰 쪽",
   "group confidence": "집단의 자신감",
+  "grow in number": "수가 늘어나다",
   "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
   "hands-on": "직접 손을 쓰는",
@@ -1297,6 +1381,7 @@ Object.assign(window.GLOSS, {
   "hold water": "말이 성립하다",
   "home loan": "주택 대출",
   "honoring": "기려 받드는",
+  "host": "아주 많은 수",
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
@@ -1310,6 +1395,7 @@ Object.assign(window.GLOSS, {
   "improper use": "옳지 않은 사용",
   "improvised": "즉석에서 만든",
   "in-law": "혼인으로 맺어진 친척",
+  "inexplicable": "설명이 안 되는",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
   "inorganic substance": "무기 물질",
@@ -1318,9 +1404,12 @@ Object.assign(window.GLOSS, {
   "juggle tasks": "여러 일을 돌려 가며 하다",
   "just about": "거의",
   "kick up a row": "한바탕 소동을 벌이다",
+  "king or queen": "왕이나 여왕",
   "kingship": "왕위",
   "lady of the house": "집안의 여주인",
+  "large gathering": "많이 모인 무리",
   "liquid metal": "액체 금속",
+  "local-government": "지방 정부의",
   "lose track of": "어디 있는지 놓치다",
   "machine-driven": "기계로 움직이는",
   "magnetized": "자기를 띤",
@@ -1331,7 +1420,9 @@ Object.assign(window.GLOSS, {
   "manly": "남자다운",
   "manufacture at scale": "규모를 갖춰 제조하다",
   "market corner": "시장 독차지",
+  "match closely": "꼭 맞아떨어지다",
   "matrimonial": "혼인상의",
+  "matrix": "거푸집",
   "matron": "집안을 맡은 여성",
   "maximal": "최대의",
   "meet the standard of": "~의 기준을 채우다",
@@ -1357,6 +1448,7 @@ Object.assign(window.GLOSS, {
   "most": "대부분의 것",
   "most of the time": "대부분의 경우",
   "motherly": "어머니 같은",
+  "mouth quietly": "입만 움직여 조용히 말하다",
   "movability": "움직일 수 있음",
   "movable": "옮길 수 있는",
   "muster": "소집하다",
@@ -1432,8 +1524,11 @@ Object.assign(window.GLOSS, {
   "secured debt": "담보가 잡힌 빚",
   "self-defense skill": "호신 기술",
   "sensation": "큰 화제",
+  "shape in a mold": "틀에 넣어 모양을 만들다",
   "shooting star": "별똥별",
   "signify": "나타내다",
+  "silent": "소리를 내지 않는",
+  "sinew": "힘줄",
   "single marriage": "한 사람과의 혼인",
   "slight": "미미한",
   "slightest": "아주 미미한",
@@ -1447,6 +1542,7 @@ Object.assign(window.GLOSS, {
   "solo speech": "혼자 하는 말하기",
   "soothe": "달래다",
   "soothing": "마음을 누그러뜨리는",
+  "speak indistinctly": "또렷하지 않게 말하다",
   "spell wrongly": "철자를 틀리게 쓰다",
   "spiteful": "앙심을 품은",
   "splendor": "화려함",
@@ -1464,6 +1560,7 @@ Object.assign(window.GLOSS, {
   "sullen": "못마땅해 말이 없는",
   "swamp": "늪",
   "systematic": "체계적인",
+  "take the edge off": "날카로움을 덜다",
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",
   "team spirit": "단결심",
@@ -1476,6 +1573,7 @@ Object.assign(window.GLOSS, {
   "thousand years": "천 해",
   "throng": "인파",
   "thrust": "밀어붙이는 힘",
+  "tissue": "조직",
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",
   "trader": "거래하는 사람",
@@ -1491,6 +1589,7 @@ Object.assign(window.GLOSS, {
   "unvarying": "한결같이 똑같은",
   "urban": "도시의",
   "usually": "대개는",
+  "variant": "변이형",
   "vendor": "판매하는 사람",
   "venomous": "독기 서린",
   "victimize": "부당하게 괴롭히다",
@@ -1499,14 +1598,17 @@ Object.assign(window.GLOSS, {
   "virile": "사내다운",
   "virtuoso": "명인",
   "vitamin or mineral": "비타민이나 무기물",
+  "vocal": "목소리를 내는",
   "wail": "울부짖다",
   "warlike": "전쟁을 벌이려는",
+  "watchdog": "감시 역할을 하는 것",
   "watchword": "표어처럼 쓰는 말",
   "way": "방식",
   "weather science": "날씨 과학",
   "weather scientist": "날씨를 연구하는 사람",
   "weather-related": "날씨와 관련된",
   "wedded": "혼인한",
+  "well-built": "몸이 다져진",
   "wetland": "습지대",
   "whimper": "훌쩍이며 울다",
   "wide of the mark": "과녁에서 크게 벗어난",
@@ -1514,6 +1616,7 @@ Object.assign(window.GLOSS, {
   "with great care": "아주 조심스럽게",
   "wizard": "마법사",
   "wondrous": "경이로운",
+  "wordless": "말이 없는",
   "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
   "workings": "작동 구조",
