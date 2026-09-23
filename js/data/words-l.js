@@ -585,7 +585,7 @@ window.VOCAB_L = [
     syn:["anticipate","await eagerly","be eager for"] },
 
   { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],
-    syn:["mirror","reflector","reflecting surface"] },
+    syn:["reflector","reflecting surface","silvered glass"] },
 
   /* ── 챕터 6 ─────────────────────────────── */
 
@@ -788,7 +788,6 @@ Object.assign(window.GLOSS, {
   "make redundant": "정리 해고하다",
   "mass-market": "대중 시장용의",
   "mine": "지뢰, 광산",
-  "mirror": "거울",
   "mostly": "대부분",
   "myth": "신화",
   "nonspecialist": "전문가가 아닌 사람",
@@ -837,6 +836,7 @@ Object.assign(window.GLOSS, {
   "short-term": "단기간의",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
+  "silvered glass": "은을 입힌 유리",
   "skip": "건너뛰다",
   "skulk": "몰래 숨어 다니다",
   "slacken": "늘어지게 하다",

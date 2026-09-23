@@ -2002,7 +2002,6 @@ Object.assign(window.GLOSS, {
   "laity":"평신도",
   "loneliness":"외로움",
   "military":"군사의, 군대의",
-  "minor":"사소한, 작은",
   "misread":"잘못 읽다, 오해하다",
   "mistaken":"잘못된, 틀린",
   "murky":"흐린, 탁한",

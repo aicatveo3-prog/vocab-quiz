@@ -100,9 +100,9 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '대다수, 과반수' 를 글자까지 지켰다. bulk(syn) 이 참조하므로
      원본의 '대부분' 대신 사전 쪽을 남겼다.
-     반의어 minority 는 뒤 챕터에 올 표제어라 아직 뜻이 없다 — ant 를 비워 두었다. */
+     반의어 minority 는 7차에서 표제어가 되어 채워 넣었다. */
   { word:"majority", pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
-    syn:["bulk","most","greater part"],
+    syn:["bulk","most","greater part"], ant:["minority"],
     ex:[{ s:"A clear {{}} of voters backed the proposal.", f:"majority", ko:"유권자의 분명한 대다수가 그 제안을 지지했다." }] },
 
   /* 'make ~' 구가 여덟 개 이어진다. pos 가 phr 인 항목에는 ex 를 붙이지 않는다 —
@@ -713,11 +713,134 @@ window.VOCAB_M = [
 
   { word:"mindful", pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
     syn:["aware","heedful","attentive"], ant:["oblivious"],
-    ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] }
+    ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] },
+
+  /* ── 챕터 7 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '사고방식, 태도' 를 글자까지 지켰다. attitude(syn) 가 참조하므로
+     원본의 '심적 경향' 대신 사전 쪽 '태도' 를 남겼다.
+     mindful 과 앞 네 글자가 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"mindset", pron:"마인드셋", pos:"n", level:"B2", meanings:["사고방식","태도"],
+    syn:["attitude","outlook","frame of mind"],
+    ex:[{ s:"Changing your {{}} is harder than changing habits.", f:"mindset", ko:"사고방식을 바꾸는 것은 습관을 바꾸는 것보다 어렵다." }] },
+
+  /* 원본 첫 뜻 '미네랄' 은 외래어 그대로여서 뺐다. */
+  { word:"mineral", pron:"미너럴", pos:"n", level:"B1", meanings:["무기물","광물"],
+    syn:["inorganic substance","ore","rock element"],
+    ex:[{ s:"The spring water is rich in dissolved {{}}.", f:"minerals", ko:"그 샘물은 용해된 무기물이 풍부하다." }] },
+
+  { word:"mingle", pron:"밍글", pos:"v", level:"C1", meanings:["섞이다","어우러지다"],
+    syn:["intermix","circulate","mix freely"],
+    ex:[{ s:"Guests began to {{}} after the speeches.", f:"mingle", ko:"손님들은 연설이 끝난 뒤 섞이기 시작했다." }] },
+
+  { word:"minimal", pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
+    syn:["slightest","nominal","token"], ant:["maximal"],
+    ex:[{ s:"The repair caused {{}} disruption to traffic.", f:"minimal", ko:"그 수리는 교통에 최소의 지장만 일으켰다." }] },
+
+  /* 승격 ① — GLOSS '최소화하다, 축소하다' 를 글자까지 지켰다. downplay(syn) 가
+     참조하므로 원본('최소화하다' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다.
+     minimal 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 안 온다. */
+  { word:"minimize", pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
+    syn:["downplay","reduce","play down"], ant:["maximize"],
+    ex:[{ s:"New rules aim to {{}} food waste in canteens.", f:"minimize", ko:"새 규정은 급식소의 음식물 쓰레기를 최소화하는 것을 목표로 한다." }] },
+
+  /* 승격 ① — GLOSS '성직; 부처' 를 글자까지 지켰다. clergy(syn) 가 '성직' 갈래를
+     참조하므로 원본('부처' 가 앞)이 아니라 사전 순서를 남겼다. */
+  { word:"ministry", pron:"미니스트리", pos:"n", level:"B2", meanings:["성직","부처"],
+    syn:["clergy","government department","priesthood"],
+    ex:[{ s:"He left the {{}} after twenty years of service.", f:"ministry", ko:"그는 20년의 봉직 뒤 성직을 떠났다." }] },
+
+  /* 승격 ① — GLOSS '사소한, 작은' 을 글자까지 지켰다. 참조가 3곳
+     (cardinal(ant)·crucial(ant)·incidental)이고 마지막은 I 세트 표제어다.
+     원본의 '미성년'(명사)은 pos 가 adj 라 담지 못했다. */
+  { word:"minor", pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
+    syn:["incidental","slight","trivial"], ant:["crucial"],
+    ex:[{ s:"It turned out to be only a {{}} setback.", f:"minor", ko:"그것은 사소한 차질에 불과한 것으로 드러났다." }] },
+
+  /* minor 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
+     챕터 1의 majority 가 이 낱말을 반의어로 쓴다. */
+  { word:"minority", pron:"마이노러티", pos:"n", level:"B2", meanings:["소수파","소수자"],
+    syn:["smaller group","the few","underrepresented group"], ant:["majority"],
+    ex:[{ s:"A vocal {{}} opposed the whole plan.", f:"minority", ko:"목소리 큰 소수파가 계획 전체에 반대했다." }] },
+
+  /* 승격 ② — GLOSS 는 '거울' 로 명사였지만 원본은 동사('반영하다, 비추다')다.
+     L 세트에 looking glass('거울')가 이미 있어 명사로 두면 표제어가 겹치는 셈이라
+     원본을 따랐다. 그 대신 looking glass 의 유의어에서 mirror 를 빼고
+     silvered glass 로 갈았다 — 명사 자리에 동사 표제어를 두면 설명이 어긋난다. */
+  { word:"mirror", pron:"미러", pos:"v", level:"B2", meanings:["반영하다","비추다"],
+    syn:["reflect","echo","parallel"],
+    ex:[{ s:"The survey results {{}} national trends closely.", f:"mirror", ko:"그 조사 결과는 전국 추세를 가깝게 반영한다." }] },
+
+  { word:"misbehave", pron:"미스비헤이브", pos:"v", level:"B2", meanings:["무례한 행동을 하다","버릇없이 굴다"],
+    syn:["act up","play up","behave badly"],
+    ex:[{ s:"Children who {{}} lose their screen time.", f:"misbehave", ko:"무례한 행동을 하는 아이는 화면 보는 시간을 잃는다." }] },
+
+  /* 원본 첫 뜻 '부정행위' 는 챕터 2에서 malpractice 의 유의어로 쓴 misconduct
+     ('부정 행위')와 띄어쓰기만 다르다. meaningsOverlap 은 글자가 완전히 같을 때만
+     막으므로 '나쁜 행실' 을 앞으로 올렸다.
+     misbehave 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"misbehavior", pron:"미스비헤이비어", pos:"n", level:"B2", meanings:["나쁜 행실","버릇없는 짓"],
+    syn:["misconduct","bad conduct","naughtiness"],
+    ex:[{ s:"Repeated {{}} led to a week's suspension.", f:"misbehavior", ko:"반복된 나쁜 행실이 일주일 정학으로 이어졌다." }] },
+
+  /* 원본 첫 뜻 '잘못' 은 뒤에 올 mistake('실수, 잘못')와 겹쳐 '장난' 을 앞에 두었다.
+     셋째 갈래 '피해' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"mischief", pron:"미스치프", pos:"n", level:"B2", meanings:["장난","말썽"],
+    syn:["naughtiness","prank","trouble"],
+    ex:[{ s:"The kittens got into all sorts of {{}}.", f:"mischief", ko:"그 새끼 고양이들은 온갖 장난을 쳤다." }] },
+
+  /* 원본은 '오해하다' 였는데 뒤에 올 misunderstand 와 같았다. 이쪽은 생각 자체가
+     빗나갔다는 쪽이어서 '잘못 생각하다' 로 갈랐다. */
+  { word:"misconceive", pron:"미스컨시브", pos:"v", level:"C2", meanings:["잘못 생각하다","잘못 알다"],
+    syn:["misjudge","get wrong","misread"],
+    ex:[{ s:"Critics {{}} the whole purpose of the reform.", f:"misconceive", ko:"비평가들은 그 개혁의 목적 전체를 잘못 생각한다." }] },
+
+  /* 승격 ② — GLOSS '오해, 잘못된 생각' 이다. 그대로 쓰면 뒤에 올
+     misunderstanding('오해, 착오')와 첫 뜻이 겹치므로 순서를 뒤집었다.
+     참조하는 delusion('착각')·fallacy('오류')에도 '잘못된 생각' 이 오히려 더 맞는다.
+     mischief·misconceive 와 앞 네 글자가 같은데 mischief 는 품사가 같지만(n)
+     뜻이 '장난' 과 '잘못된 생각' 으로 달라 무리가 없다. */
+  { word:"misconception", pron:"미스컨셉션", pos:"n", level:"B2", meanings:["잘못된 생각","오해"],
+    syn:["delusion","fallacy","false belief"],
+    ex:[{ s:"It is a common {{}} that lightning never strikes twice.", f:"misconception", ko:"번개가 같은 곳에 두 번 치지 않는다는 것은 흔한 잘못된 생각이다." }] },
+
+  /* 원본 셋째 갈래 '범죄' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"misdeed", pron:"미스디드", pos:"n", level:"C1", meanings:["악행","비행"],
+    syn:["wrongdoing","offence","transgression"],
+    ex:[{ s:"He was eventually forgiven for his past {{}}.", f:"misdeeds", ko:"그는 결국 과거의 악행을 용서받았다." }] },
+
+  { word:"miserable", pron:"미저러블", pos:"adj", level:"B1", meanings:["비참한","고약한"],
+    syn:["wretched","dismal","unhappy"], ant:["cheerful"],
+    ex:[{ s:"They spent a {{}} night out in the rain.", f:"miserable", ko:"그들은 빗속에서 비참한 밤을 보냈다." }] },
+
+  /* 승격 ① — GLOSS '의심, 불안' 을 글자까지 지켰다. doubt(syn)·foreboding(syn) 두
+     문제가 참조하므로 원본의 '의혹, 불안감' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
+  { word:"misgiving", pron:"미스기빙", pos:"n", level:"C1", meanings:["의심","불안"],
+    syn:["doubt","foreboding","qualm"],
+    ex:[{ s:"She had serious {{}} about the whole deal.", f:"misgivings", ko:"그녀는 그 거래 전체에 심각한 의심을 품었다." }] },
+
+  /* 승격 ① — GLOSS '작은 사고' 와 같은 갈래다. I 세트 incident 가 참조한다.
+     원본 '불상사, 불운' 도 같은 갈래라 사전 쪽 한 갈래로 두었다. */
+  { word:"mishap", pron:"미스햅", pos:"n", level:"B2", meanings:["작은 사고"],
+    syn:["incident","accident","setback"],
+    ex:[{ s:"A minor {{}} delayed the opening ceremony.", f:"mishap", ko:"작은 사고가 개막식을 지연시켰다." }] },
+
+  /* 원본은 '오해; 오역' 이었는데 '오해' 는 misconception·misunderstanding 과
+     겹쳤다. 이 낱말은 해석을 잘못했다는 쪽이어서 '오역' 을 앞에 두었다. */
+  { word:"misinterpretation", pron:"미스인터프러테이션", pos:"n", level:"C1", meanings:["오역","잘못된 해석"],
+    syn:["mistranslation","misreading","wrong sense"],
+    ex:[{ s:"The error came from a {{}} of the original text.", f:"misinterpretation", ko:"그 오류는 원문의 오역에서 비롯되었다." }] },
+
+  /* 승격 ① — GLOSS '오해를 일으키는' 을 첫 자리에 지켰다. deceptive(syn) 가 참조한다.
+     원본의 '오해의 소지가 있는' 을 둘째 자리에 붙였다. */
+  { word:"misleading", pron:"미스리딩", pos:"adj", level:"B2", meanings:["오해를 일으키는","오해의 소지가 있는"],
+    syn:["deceptive","confusing","ambiguous"],
+    ex:[{ s:"The advert was eventually found to be {{}}.", f:"misleading", ko:"그 광고는 결국 오해를 일으키는 것으로 판정되었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "act up": "말을 안 듣다",
   "adage": "오래된 격언",
   "add up": "앞뒤가 맞다",
   "adviser": "조언해 주는 사람",
@@ -730,7 +853,9 @@ Object.assign(window.GLOSS, {
   "atmospheric science": "대기 과학",
   "atone for": "~을 벌충하다",
   "aware": "알고 있는",
+  "bad conduct": "나쁜 처신",
   "be logical": "논리에 맞다",
+  "behave badly": "행동이 나쁘다",
   "biochemical": "생화학의",
   "birth attendant": "출산을 돕는 사람",
   "body chemistry": "체내 화학 작용",
@@ -754,6 +879,7 @@ Object.assign(window.GLOSS, {
   "combat sport": "격투 종목",
   "commemorative": "기리기 위한",
   "complain loudly": "큰 소리로 불평하다",
+  "confusing": "헷갈리게 하는",
   "conjugal": "혼인 관계의",
   "conjurer": "요술쟁이",
   "contemplation": "깊이 헤아림",
@@ -766,20 +892,25 @@ Object.assign(window.GLOSS, {
   "disorderly": "어수선한",
   "draw off": "빼내다",
   "drug treatment": "약물 요법",
+  "echo": "되울리다",
   "energy turnover": "에너지 순환량",
   "energy-processing": "에너지를 처리하는",
   "enrage": "분노하게 하다",
   "exasperate": "속을 뒤집어 놓다",
   "falling star": "떨어지는 별",
+  "false belief": "틀린 믿음",
   "fighting art": "싸움 기술",
   "figure of speech": "비유적 표현",
   "forecaster": "예보하는 사람",
   "forgiving": "너그럽게 용서하는",
   "foul-smelling": "역한 냄새의",
+  "frame of mind": "마음가짐",
   "gain ground": "기반을 넓히다",
   "gauging": "재는 일",
   "get the most out of": "~을 최대로 활용하다",
+  "get wrong": "잘못 알아듣다",
   "glitch": "작은 결함",
+  "government department": "정부 부서",
   "grandeur": "장대함",
   "grassland": "초지",
   "greater part": "더 큰 쪽",
@@ -800,6 +931,8 @@ Object.assign(window.GLOSS, {
   "improvised": "즉석에서 만든",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
+  "inorganic substance": "무기 물질",
+  "intermix": "서로 섞이다",
   "kick up a row": "한바탕 소동을 벌이다",
   "liquid metal": "액체 금속",
   "machine-driven": "기계로 움직이는",
@@ -811,6 +944,7 @@ Object.assign(window.GLOSS, {
   "manly": "남자다운",
   "manufacture at scale": "규모를 갖춰 제조하다",
   "matrimonial": "혼인상의",
+  "maximal": "최대의",
   "meet the standard of": "~의 기준을 채우다",
   "metabolic rate": "대사율",
   "metre-based": "미터를 기준으로 한",
@@ -820,14 +954,20 @@ Object.assign(window.GLOSS, {
   "mindfulness": "마음을 살피는 일",
   "misconduct": "부정 행위",
   "mishandle": "잘못 다루다",
+  "misjudge": "잘못 판단하다",
+  "misreading": "잘못 읽어 냄",
+  "mistranslation": "잘못된 번역",
+  "mix freely": "자유롭게 섞이다",
   "most": "대부분의 것",
   "motherly": "어머니 같은",
   "muster": "소집하다",
   "nasty": "고약한",
+  "naughtiness": "장난기",
   "navigate": "길을 찾아 나아가다",
   "neat": "깔끔한",
   "negligence": "태만, 부주의",
   "negligible": "무시해도 될 만한",
+  "nominal": "이름뿐인",
   "non-automatic": "자동이 아닌",
   "nothing more than": "~에 지나지 않는",
   "nurturing": "보살피는",
@@ -835,8 +975,10 @@ Object.assign(window.GLOSS, {
   "obsession": "집착",
   "obstetric": "산과의",
   "obstetric nurse": "산과 간호사",
+  "offence": "위법 행동",
   "old-world": "옛 정취의",
   "optimize": "최적화하다",
+  "ore": "광석",
   "original copy": "원본",
   "painstakingly": "공들여",
   "pair off": "둘씩 짝지다",
@@ -844,8 +986,11 @@ Object.assign(window.GLOSS, {
   "paternal": "아버지의",
   "phenomenon": "현상",
   "pith": "속심",
+  "play down": "대수롭지 않게 말하다",
+  "play up": "말썽을 부리다",
   "polarized": "극을 띤",
   "poor diet": "부실한 식사",
+  "prank": "짓궂은 장난",
   "press forward": "밀고 나아가다",
   "procedural": "절차상의",
   "procedure": "절차",
@@ -854,11 +999,13 @@ Object.assign(window.GLOSS, {
   "pry": "엿보며 캐다",
   "psychological": "심리의",
   "pull it off": "끝내 해내다",
+  "qualm": "꺼림칙함",
   "quantifiable": "수치로 잴 수 있는",
   "quicksilver": "수은",
   "reeking": "악취를 풍기는",
   "refer to": "~을 들어 말하다",
   "robotic": "로봇처럼 움직이는",
+  "rock element": "암석 성분",
   "rubeola": "홍역 바이러스병",
   "run-of-the-mill": "흔해 빠진",
   "sadness": "슬픔",
@@ -870,6 +1017,8 @@ Object.assign(window.GLOSS, {
   "shooting star": "별똥별",
   "signify": "나타내다",
   "slight": "미미한",
+  "slightest": "아주 미미한",
+  "smaller group": "더 작은 집단",
   "smelly": "냄새 나는",
   "so-so": "그저 그런",
   "soothe": "달래다",
@@ -888,6 +1037,7 @@ Object.assign(window.GLOSS, {
   "technique": "기법",
   "ten centuries": "10세기 동안",
   "thaw": "얼음이 풀리다",
+  "the few": "소수의 사람들",
   "thousand years": "천 해",
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",
@@ -895,6 +1045,8 @@ Object.assign(window.GLOSS, {
   "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",
+  "underrepresented group": "대표성이 낮은 집단",
+  "unhappy": "행복하지 않은",
   "unmanned": "무인의",
   "untidy": "정돈되지 않은",
   "urban": "도시의",
@@ -917,5 +1069,7 @@ Object.assign(window.GLOSS, {
   "wondrous": "경이로운",
   "work one's way": "힘써 나아가다",
   "workings": "작동 구조",
+  "wretched": "처참한",
+  "wrong sense": "틀린 뜻",
   "wrongdoing": "비행, 부정"
 });

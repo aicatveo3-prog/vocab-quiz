@@ -1119,8 +1119,6 @@ Object.assign(window.GLOSS, {
   "middleman":"중개인",
   "military service":"군 복무",
   "mince":"잘게 다지다",
-  "mindset":"사고방식, 태도",
-  "ministry":"성직; 부처",
   "minor planet":"소행성",
   "minster":"대성당",
   "minute":"아주 작은; 분",

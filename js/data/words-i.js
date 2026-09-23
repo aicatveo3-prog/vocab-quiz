@@ -2007,7 +2007,6 @@ Object.assign(window.GLOSS, {
   "mental capacity": "정신적 역량",
   "migration": "이주, 이동",
   "mirage": "신기루",
-  "mishap": "작은 사고",
   "mismatched": "짝이 맞지 않는",
   "mixed-race": "혼합 인종의",
   "modernize": "현대화하다",
