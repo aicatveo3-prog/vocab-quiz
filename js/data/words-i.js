@@ -569,7 +569,100 @@ window.VOCAB_I = [
      원본은 '무능력' 한 갈래인데 사전 쪽 두 갈래를 그대로 두었다. */
   { word:"incapacity", pron:"인커패서티", pos:"n", level:"C1", meanings:["무능력","무자격"],
     syn:["disability","incompetence","powerlessness"],
-    ex:[{ s:"His {{}} to work was confirmed by two independent doctors.", f:"incapacity", ko:"그의 근로 무능력은 독립적인 두 의사에 의해 확인되었다." }] }
+    ex:[{ s:"His {{}} to work was confirmed by two independent doctors.", f:"incapacity", ko:"그의 근로 무능력은 독립적인 두 의사에 의해 확인되었다." }] },
+
+  { word:"incentive", pron:"인센티브", pos:"n", level:"B2", meanings:["장려책","유인책"],
+    syn:["inducement","motivation","reward"], ant:["deterrent"],
+    ex:[{ s:"Tax breaks act as an {{}} for green investment.", f:"incentive", ko:"세금 감면은 친환경 투자를 위한 장려책으로 작용한다." }] },
+
+  /* 승격 ① — GLOSS '끊임없는' 과 글자까지 같다. ceaseless(syn)·continuous(syn)
+     두 문제가 참조한다. 원본도 한 갈래라 그대로 두었다. */
+  { word:"incessant", pron:"인세선트", pos:"adj", level:"C1", meanings:["끊임없는"],
+    syn:["ceaseless","unrelenting","constant"],
+    ex:[{ s:"The {{}} noise from the building site was unbearable.", f:"incessant", ko:"공사장에서 나는 끊임없는 소음은 참을 수 없었다." }] },
+
+  /* incidence·incident 는 어근이 같고 품사도 둘 다 n 이어서 같은 보드에 올 수
+     있다. 다만 뜻이 '발생, 출현' 과 '사건, 불쾌한 일' 로 뚜렷이 갈려
+     짝을 고르는 데 무리가 없다. */
+  { word:"incidence", pron:"인서던스", pos:"n", level:"C1", meanings:["발생","출현"],
+    syn:["occurrence","frequency","prevalence"],
+    ex:[{ s:"The {{}} of asthma has risen sharply in urban areas.", f:"incidence", ko:"도시 지역에서 천식 발생이 급격히 증가했다." }] },
+
+  { word:"incident", pron:"인서던트", pos:"n", level:"B1", meanings:["사건","불쾌한 일"],
+    syn:["episode","affair","mishap"],
+    ex:[{ s:"Police are still investigating the {{}} at the station.", f:"incident", ko:"경찰은 역에서 일어난 그 사건을 아직 조사하고 있다." }] },
+
+  /* 승격 ① — GLOSS '부수적인, 우연한' 과 글자까지 같고 원본과도 같다.
+     circumstantial(syn) 이 참조한다. */
+  { word:"incidental", pron:"인시덴털", pos:"adj", level:"C1", meanings:["부수적인","우연한"],
+    syn:["circumstantial","secondary","minor"], ant:["essential"],
+    ex:[{ s:"Travel costs are {{}} to the main budget.", f:"incidental", ko:"여행 비용은 주 예산에 부수적이다." }] },
+
+  /* 원본 셋째 갈래 '경사' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"inclination", pron:"인클러네이션", pos:"n", level:"C1", meanings:["경향","성향"],
+    syn:["tendency","propensity","leaning"],
+    ex:[{ s:"He showed little {{}} to change his mind.", f:"inclination", ko:"그는 생각을 바꿀 경향을 거의 보이지 않았다." }] },
+
+  /* 원본은 '기울다; 경사면' 으로 동사와 명사가 갈린다. 동사 쪽으로 모았다.
+     inclination 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
+  { word:"incline", pron:"인클라인", pos:"v", level:"B2", meanings:["기울다","기울이다"],
+    syn:["lean","slope","tilt"],
+    ex:[{ s:"The path begins to {{}} steeply after the bridge.", f:"incline", ko:"그 길은 다리를 지나면 급하게 기울기 시작한다." }] },
+
+  /* 승격 ① — GLOSS '포함하다' 와 글자까지 같다. 참조가 5곳(comprise·consist·
+     contain·cover·encompass)으로 이 세트에서 두 번째로 많다. 갈래를 늘리면
+     그 5곳 화면이 다 바뀌므로 한 갈래로 두었다.
+     뒤에 올 incorporate 는 '통합하다' 로, involve 는 '수반하다' 로 돌려
+     '포함하다' 를 이 표제어가 독점한다. */
+  { word:"include", pron:"인클루드", pos:"v", level:"B1", meanings:["포함하다"],
+    syn:["contain","comprise","encompass"], ant:["exclude"],
+    ex:[{ s:"The advertised price does not {{}} insurance.", f:"include", ko:"광고된 가격은 보험을 포함하지 않는다." }] },
+
+  /* 승격 ② — GLOSS '포용적인' 이다. exclusive(ant) 가 그 갈래를 쓰므로 둘째
+     자리에 지켰다. 첫 자리는 원본의 '포괄적인' 으로 했다. */
+  { word:"inclusive", pron:"인클루시브", pos:"adj", level:"B2", meanings:["포괄적인","포용적인"],
+    syn:["comprehensive","all-embracing","broad"], ant:["exclusive"],
+    ex:[{ s:"The festival aims to be as {{}} as possible.", f:"inclusive", ko:"그 축제는 가능한 한 포괄적이려고 한다." }] },
+
+  /* 승격 ② — GLOSS '일관성 없는, 앞뒤가 안 맞는' 이다. 원본 첫 뜻 '일관되지
+     않는' 은 뒤에 올 inconsistent('일관성이 없는')와 겹쳐, 사전의 둘째 갈래
+     '앞뒤가 안 맞는' 을 첫 자리로 올렸다. 참조하는 delirious(syn) 가
+     '헛소리하는' 이라 이쪽 갈래와 오히려 더 잘 맞는다. */
+  { word:"incoherent", pron:"인코히어런트", pos:"adj", level:"C1", meanings:["앞뒤가 안 맞는","조리 없는"],
+    syn:["rambling","disjointed","garbled"], ant:["lucid"],
+    ex:[{ s:"His explanation was rushed and {{}}.", f:"incoherent", ko:"그의 설명은 급하고 앞뒤가 안 맞았다." }] },
+
+  /* 승격 ① — GLOSS '양립할 수 없는, 호환되지 않는' 을 글자까지 지켰다.
+     compatible(ant) 이 참조한다. */
+  { word:"incompatible", pron:"인컴패터블", pos:"adj", level:"C1", meanings:["양립할 수 없는","호환되지 않는"],
+    syn:["conflicting","clashing","mismatched"], ant:["compatible"],
+    ex:[{ s:"The two schedules proved completely {{}}.", f:"incompatible", ko:"두 일정은 완전히 양립할 수 없음이 드러났다." }] },
+
+  { word:"incomprehensible", pron:"인캄프리헨서블", pos:"adj", level:"C1", meanings:["이해할 수 없는","알아들을 수 없는"],
+    syn:["unintelligible","baffling","impenetrable"], ant:["clear"],
+    ex:[{ s:"The instructions were almost {{}} to a beginner.", f:"incomprehensible", ko:"그 설명서는 초보자에게 거의 이해할 수 없었다." }] },
+
+  /* 승격 ① — GLOSS '모순, 불일치' 를 글자까지 지켰다.
+     contradiction(syn)·discrepancy(syn) 두 문제가 참조한다.
+     원본은 순서가 '불일치, 모순' 이었으나 사전 쪽을 남겼다. */
+  { word:"inconsistency", pron:"인컨시스턴시", pos:"n", level:"C1", meanings:["모순","불일치"],
+    syn:["discrepancy","contradiction","disparity"],
+    ex:[{ s:"The auditor found a serious {{}} in the accounts.", f:"inconsistency", ko:"감사관은 그 계정에서 심각한 모순을 발견했다." }] },
+
+  /* 승격 ① — GLOSS '일관성이 없는' 과 글자까지 같고 원본과도 같다.
+     erratic(syn) 이 참조한다. inconsistency 와 어근이 같지만 품사가 달라(n/adj)
+     같은 보드에 안 온다. */
+  { word:"inconsistent", pron:"인컨시스턴트", pos:"adj", level:"B2", meanings:["일관성이 없는"],
+    syn:["erratic","variable","uneven"], ant:["consistent"],
+    ex:[{ s:"His form this season has been maddeningly {{}}.", f:"inconsistent", ko:"이번 시즌 그의 경기력은 답답할 만큼 일관성이 없었다." }] },
+
+  /* 승격 ② — GLOSS '포함시키다, 통합하다' 다. encompass(syn) 가 참조한다.
+     첫 자리를 '통합하다' 로 바꿔 include('포함하다')와 갈랐고,
+     사전의 '포함시키다' 는 둘째 자리에 지켰다.
+     원본 셋째 갈래 '합병하다' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"incorporate", pron:"인코퍼레이트", pos:"v", level:"B2", meanings:["통합하다","포함시키다"],
+    syn:["merge","absorb","embody"],
+    ex:[{ s:"The new design will {{}} feedback from early users.", f:"incorporate", ko:"새 디자인은 초기 사용자의 피드백을 통합할 것이다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -578,6 +671,8 @@ window.VOCAB_I = [
 Object.assign(window.GLOSS, {
   "abiding by": "~을 지키며",
   "ad-lib": "즉흥적으로 하다",
+  "affair": "일, 사건",
+  "all-embracing": "모두를 아우르는",
   "alone": "혼자서",
   "amid": "~의 한복판에",
   "animate": "살아 있는",
@@ -613,6 +708,7 @@ Object.assign(window.GLOSS, {
   "detention": "구금",
   "deter": "막다, 억제하다",
   "different": "다른",
+  "disjointed": "조리가 없는",
   "disrespectful": "예의 없는",
   "distinguishable": "구별할 수 있는",
   "doctrinal": "교리상의",
@@ -624,6 +720,7 @@ Object.assign(window.GLOSS, {
   "emigration": "국외 이주",
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
+  "episode": "일화",
   "evenhandedly": "치우치지 않게",
   "expansionism": "팽창주의",
   "extemporize": "즉석에서 말하다",
@@ -638,10 +735,12 @@ Object.assign(window.GLOSS, {
   "for now": "당장은",
   "for want of": "~이 부족해서",
   "forthcoming": "다가오는, 곧 있을",
+  "garbled": "뒤죽박죽인",
   "hallucination": "환각",
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
+  "impenetrable": "헤아릴 수 없는",
   "implied": "함축된",
   "imprecise": "정밀하지 않은",
   "in a way": "어떤 면에서는",
@@ -689,6 +788,7 @@ Object.assign(window.GLOSS, {
   "juvenile": "유치한, 청소년의",
   "knowledge": "지식",
   "lawful": "합법적인",
+  "leaning": "기울어짐, 선호",
   "legendary": "전설적인",
   "legible": "읽기 쉬운",
   "lifeless": "생명이 없는",
@@ -701,11 +801,15 @@ Object.assign(window.GLOSS, {
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
+  "mishap": "작은 사고",
+  "mismatched": "짝이 맞지 않는",
   "momentum": "기세, 탄력",
   "mortality": "죽음을 피할 수 없음, 사망률",
+  "motivation": "동기 부여",
   "naivety": "순진함",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
+  "occurrence": "일어남, 사례",
   "on its own": "그 자체만으로",
   "on the side of": "~의 편에 서서",
   "optimal": "최적의",
@@ -718,8 +822,10 @@ Object.assign(window.GLOSS, {
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "preferably": "되도록",
+  "prevalence": "널리 퍼져 있음",
   "primeval": "원시의, 태고의",
   "propel": "나아가게 하다",
+  "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
   "regal": "제왕의",
@@ -728,13 +834,16 @@ Object.assign(window.GLOSS, {
   "repercussion": "파급 효과",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
+  "reward": "보상",
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
   "scrawled": "갈겨쓴",
+  "secondary": "이차적인",
   "selfhood": "자아, 개체성",
   "separately": "따로따로",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
+  "slope": "비탈지다",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
@@ -750,6 +859,8 @@ Object.assign(window.GLOSS, {
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
   "taking account of": "~을 감안하여",
+  "tendency": "성향",
+  "tilt": "기울이다",
   "to begin with": "먼저",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
@@ -760,12 +871,14 @@ Object.assign(window.GLOSS, {
   "uneducated": "교육받지 못한",
   "unfeasible": "실행 불가능한",
   "unimaginative": "상상력이 없는",
+  "unintelligible": "알아들을 수 없는",
   "unlawful": "위법의",
   "unlettered": "무학의",
   "unreachable": "닿을 수 없는",
   "unreadable": "읽을 수 없는",
   "unrealistic": "현실성 없는",
   "unreasonable": "불합리한, 터무니없는",
+  "unrelenting": "누그러지지 않는",
   "unremarkable": "특별할 것 없는",
   "unschooled": "학교 교육을 받지 않은",
   "unseemly": "온당하지 못한",

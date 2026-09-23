@@ -1994,7 +1994,6 @@ Object.assign(window.GLOSS, {
   "hush":"조용해지다, 잠잠해지다",
   "idealistic":"이상주의적인",
   "incapable":"~할 수 없는",
-  "incompatible":"양립할 수 없는, 호환되지 않는",
   "incompetence":"무능함",
   "inconspicuous":"눈에 띄지 않는",
   "indifference":"무관심",
