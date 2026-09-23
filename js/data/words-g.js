@@ -737,8 +737,6 @@ Object.assign(window.GLOSS, {
   "lifelike":"실물 같은",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
-  "majestic":"장엄한",
-  "make way for":"~에 길을 내주다",
   "maxim":"격언",
   "mesh":"그물망",
   "microbe":"미생물",
