@@ -1713,8 +1713,6 @@ Object.assign(window.GLOSS, {
   "give over":"내주다, 맡기다",
   "gobble":"급히 먹다, 꿀꺽 삼키다",
   "hardworking":"열심히 일하는",
-  "identification":"식별, 신원 확인",
-  "identify":"알아보다, 확인하다",
   "immediate":"직접적인; 즉각적인",
   "impose":"부과하다, 강요하다",
   "industrious":"근면한, 부지런한",
