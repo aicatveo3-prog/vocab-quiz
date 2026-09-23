@@ -926,7 +926,6 @@ Object.assign(window.GLOSS, {
   "infringement":"침해, 위반",
   "inlet":"작은 만, 입구",
   "inmate":"수감자, 수용자",
-  "insolvent":"지불 불능의, 파산한",
   "inspect":"검사하다, 조사하다",
   "instead":"대신에",
   "instead of":"~대신에",

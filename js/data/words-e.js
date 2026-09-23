@@ -2170,7 +2170,6 @@ Object.assign(window.GLOSS, {
   "give a job to":"~에게 일자리를 주다",
   "give power to":"~에게 힘을 주다",
   "importance":"중요성",
-  "inspire":"고무하다, 영감을 주다",
   "legislate":"법을 제정하다",
   "make possible":"가능하게 만들다",
   "mimic":"흉내 내다, 모방하다",

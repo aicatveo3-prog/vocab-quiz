@@ -1080,7 +1080,90 @@ window.VOCAB_I = [
 
   { word:"inscription", pron:"인스크립션", pos:"n", level:"C1", meanings:["새겨진 글","비문"],
     syn:["engraving","epitaph","lettering"],
-    ex:[{ s:"The {{}} on the monument had almost worn away.", f:"inscription", ko:"그 기념비에 새겨진 글은 거의 닳아 없어졌다." }] }
+    ex:[{ s:"The {{}} on the monument had almost worn away.", f:"inscription", ko:"그 기념비에 새겨진 글은 거의 닳아 없어졌다." }] },
+
+  /* insect·insecticide 는 어근이 같고 품사도 둘 다 n 이어서 같은 보드에 올 수
+     있다. 다만 뜻이 '곤충' 과 '살충제' 로 완전히 달라 무리가 없다. */
+  { word:"insect", pron:"인섹트", pos:"n", level:"B1", meanings:["곤충","벌레"],
+    syn:["bug","pest","creepy-crawly"],
+    ex:[{ s:"This flower depends on a single {{}} for pollination.", f:"insect", ko:"이 꽃은 수분을 위해 한 종류의 곤충에 의존한다." }] },
+
+  { word:"insecticide", pron:"인섹터사이드", pos:"n", level:"C1", meanings:["살충제"],
+    syn:["pesticide","bug spray","fumigant"],
+    ex:[{ s:"Overuse of {{}} harmed the local bee population.", f:"insecticide", ko:"살충제 과용이 지역 벌 개체 수에 해를 입혔다." }] },
+
+  /* 승격 ① — GLOSS '삽입하다, 끼워 넣다' 를 글자까지 지켰다.
+     delete(ant)·embed(syn) 두 문제가 참조하므로 원본('삽입하다' 한 갈래) 대신
+     사전 쪽을 남겼다. */
+  { word:"insert", pron:"인서트", pos:"v", level:"B2", meanings:["삽입하다","끼워 넣다"],
+    syn:["embed","put in","slot in"], ant:["delete"],
+    ex:[{ s:"Please {{}} the card with the chip facing up.", f:"insert", ko:"칩이 위를 향하도록 카드를 삽입하세요." }] },
+
+  { word:"insider", pron:"인사이더", pos:"n", level:"C1", meanings:["내부자","내부 사정을 아는 사람"],
+    syn:["member","confidant","associate"], ant:["outsider"],
+    ex:[{ s:"Only an {{}} could have known that detail.", f:"insider", ko:"내부자만이 그 세부 사항을 알 수 있었을 것이다." }] },
+
+  { word:"insidious", pron:"인시디어스", pos:"adj", level:"C2", meanings:["서서히 퍼지는","교활한"],
+    syn:["stealthy","creeping","treacherous"],
+    ex:[{ s:"Lead poisoning is an {{}} threat to young children.", f:"insidious", ko:"납 중독은 어린 아이들에게 서서히 퍼지는 위협이다." }] },
+
+  /* ── 챕터 11 ────────────────────────────── */
+
+  { word:"insight", pron:"인사이트", pos:"n", level:"B2", meanings:["통찰력","간파"],
+    syn:["perception","discernment","acumen"],
+    ex:[{ s:"Her book offers real {{}} into rural poverty.", f:"insight", ko:"그녀의 책은 농촌 빈곤에 대한 진정한 통찰력을 준다." }] },
+
+  { word:"insistent", pron:"인시스턴트", pos:"adj", level:"B2", meanings:["주장하는","우기는"],
+    syn:["persistent","emphatic","adamant"],
+    ex:[{ s:"He was {{}} that the meeting should go ahead.", f:"insistent", ko:"그는 회의를 진행해야 한다고 주장했다." }] },
+
+  /* 승격 ① — GLOSS '지불 불능의, 파산한' 을 글자까지 지켰다.
+     bankrupt(syn)·broke(syn) 두 문제가 참조한다. 원본은 순서가 반대였는데,
+     사전 쪽을 쓰면 B 세트 bankrupt 의 뜻('파산한')과 첫 뜻이 겹치는 것도
+     함께 피할 수 있다. */
+  { word:"insolvent", pron:"인살번트", pos:"adj", level:"C1", meanings:["지불 불능의","파산한"],
+    syn:["bankrupt","broke","in the red"], ant:["solvent"],
+    ex:[{ s:"The airline was declared {{}} last month.", f:"insolvent", ko:"그 항공사는 지난달 지불 불능 상태로 선언되었다." }] },
+
+  { word:"insomnia", pron:"인삼니아", pos:"n", level:"C1", meanings:["불면증"],
+    syn:["sleeplessness","wakefulness","restlessness"],
+    ex:[{ s:"Chronic {{}} left her exhausted all day.", f:"insomnia", ko:"만성 불면증은 그녀를 하루 종일 지치게 했다." }] },
+
+  /* 승격 ① — GLOSS '고무하다, 영감을 주다' 가 원본과 글자까지 같다.
+     encourage(syn) 가 참조한다. 손댈 것이 없었다. */
+  { word:"inspire", pron:"인스파이어", pos:"v", level:"B1", meanings:["고무하다","영감을 주다"],
+    syn:["encourage","motivate","stimulate"],
+    ex:[{ s:"Her speech will {{}} a new generation of scientists.", f:"inspire", ko:"그녀의 연설은 새 세대의 과학자들을 고무할 것이다." }] },
+
+  /* 승격 ① — GLOSS '불안정' 과 글자까지 같다. flux(syn) 가 참조한다.
+     원본도 한 갈래라 그대로 두었다. */
+  { word:"instability", pron:"인스터빌러티", pos:"n", level:"B2", meanings:["불안정"],
+    syn:["flux","volatility","precariousness"], ant:["stability"],
+    ex:[{ s:"Political {{}} scared away foreign investors.", f:"instability", ko:"정치적 불안정이 외국 투자자들을 겁주어 쫓아냈다." }] },
+
+  /* 승격 ② — GLOSS '임명하다; 설치하다' 다. depose(ant) 가 참조하는데 그쪽 뜻이
+     '퇴위시키다' 라 이 낱말의 '취임시키다' 갈래와 짝이 된다. 원본 순서대로
+     '설치하다' 를 앞에 두고 그 갈래를 '취임시키다' 로 둘째 자리에 지켰다. */
+  { word:"install", pron:"인스톨", pos:"v", level:"B1", meanings:["설치하다","취임시키다"],
+    syn:["set up","fit","put in place"], ant:["remove"],
+    ex:[{ s:"Engineers will {{}} the new turbine next week.", f:"install", ko:"기술자들이 다음 주에 새 터빈을 설치할 것이다." }] },
+
+  /* 원본 뜻 '할부 판매' 는 파는 쪽 시선이어서 '할부 구매 방식' 으로 고쳤다. */
+  { word:"installment plan", pron:"인스톨먼트 플랜", pos:"phr", level:"C1", meanings:["할부 구매 방식"],
+    syn:["hire purchase","payment plan","deferred payment"] },
+
+  /* 원본에서 immediate·instant·instantaneous 의 첫 뜻이 모두 '즉각적인' 이었다.
+     셋을 갈랐다 — immediate 즉각적인 / instant 즉석의 / instantaneous 순간적인.
+     원본의 명사 갈래('순간, 잠깐')는 pos 가 adj 인 이 표제어에 담지 못했다. */
+  { word:"instant", pron:"인스턴트", pos:"adj", level:"B1", meanings:["즉석의","곧바로 되는"],
+    syn:["immediate","ready-made","on-the-spot"],
+    ex:[{ s:"Just add hot water to the {{}} noodles.", f:"instant", ko:"즉석 국수에 뜨거운 물만 부으면 된다." }] },
+
+  /* instant 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이 '즉석의' 와
+     '순간적인' 으로 갈려 짝을 고르는 데 무리가 없다. */
+  { word:"instantaneous", pron:"인스턴테이니어스", pos:"adj", level:"C1", meanings:["순간적인","동시에 일어나는"],
+    syn:["immediate","instant","split-second"],
+    ex:[{ s:"The response from the sensor was almost {{}}.", f:"instantaneous", ko:"그 센서의 반응은 거의 순간적이었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1089,7 +1172,9 @@ window.VOCAB_I = [
 Object.assign(window.GLOSS, {
   "abiding by": "~을 지키며",
   "acquired": "후천적으로 얻은",
+  "acumen": "예리한 판단력",
   "ad-lib": "즉흥적으로 하다",
+  "adamant": "단호한",
   "affair": "일, 사건",
   "all-embracing": "모두를 아우르는",
   "alone": "혼자서",
@@ -1116,6 +1201,8 @@ Object.assign(window.GLOSS, {
   "breathe in": "숨을 들이켜다",
   "bring on": "불러오다",
   "brooding": "알을 품는 일",
+  "bug": "벌레",
+  "bug spray": "벌레 살충 분무제",
   "bungling": "일을 망치는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
@@ -1128,16 +1215,20 @@ Object.assign(window.GLOSS, {
   "compared with": "~와 비교하면",
   "compulsion": "강한 욕구, 강제",
   "concerning": "~에 관하여",
+  "confidant": "속을 털어놓는 사람",
   "confinement": "감금",
   "congenital": "선천적인",
   "consistent with": "~와 들어맞는",
   "constituent": "구성 요소",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
+  "creeping": "슬금슬금 퍼지는",
+  "creepy-crawly": "기어 다니는 벌레",
   "curable": "치유 가능한",
   "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
   "deathlessness": "불사, 죽지 않음",
+  "deferred payment": "후불",
   "deficiently": "모자라게",
   "denote": "가리키다",
   "depraved": "타락한",
@@ -1146,6 +1237,7 @@ Object.assign(window.GLOSS, {
   "detention": "구금",
   "deter": "막다, 억제하다",
   "different": "다른",
+  "discernment": "식별력",
   "disjointed": "조리가 없는",
   "dispensable": "없어도 되는",
   "disrespectful": "예의 없는",
@@ -1161,6 +1253,7 @@ Object.assign(window.GLOSS, {
   "emblematic": "상징적인",
   "emboss": "도드라지게 새기다",
   "emigration": "국외 이주",
+  "emphatic": "단호히 말하는",
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
   "enterprise": "진취성, 사업",
@@ -1184,6 +1277,7 @@ Object.assign(window.GLOSS, {
   "for now": "당장은",
   "for want of": "~이 부족해서",
   "forthcoming": "다가오는, 곧 있을",
+  "fumigant": "훈증제",
   "garbled": "뒤죽박죽인",
   "grippe": "유행성 감기",
   "guiltless": "죄가 없는",
@@ -1192,6 +1286,7 @@ Object.assign(window.GLOSS, {
   "heartburn": "가슴 쓰림",
   "heat-sensing": "열을 감지하는",
   "hegemony": "패권",
+  "hire purchase": "할부 매입",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
   "immunize": "면역을 주다",
@@ -1221,6 +1316,7 @@ Object.assign(window.GLOSS, {
   "in the long term": "긴 기간으로 보면",
   "in the matter of": "~의 문제에서는",
   "in the middle of": "~의 중간에",
+  "in the red": "적자 상태인",
   "incalculable": "헤아릴 수 없이 큰",
   "incarcerate": "수감하다",
   "incarceration": "수감",
@@ -1275,6 +1371,7 @@ Object.assign(window.GLOSS, {
   "manufacturing": "제조의",
   "meanwhile": "한편으로는",
   "mechanized": "기계화된",
+  "member": "구성원",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
@@ -1296,18 +1393,23 @@ Object.assign(window.GLOSS, {
   "occurrence": "일어남, 사례",
   "on its own": "그 자체만으로",
   "on the side of": "~의 편에 서서",
+  "on-the-spot": "현장에서 바로 하는",
   "optimal": "최적의",
   "optimally": "최적으로",
   "over time": "시간이 지나면서",
   "pamper": "애지중지하다",
   "partisan": "당파적인",
+  "payment plan": "납입 계획",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
   "permeate": "배어들다",
   "permissive": "제약이 느슨한",
   "personally": "개인적으로, 직접",
+  "pest": "해충",
+  "pesticide": "농약",
   "poorly": "형편없이",
   "powerlessness": "무력함",
+  "precariousness": "불안한 상태",
   "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
   "primeval": "원시의, 태고의",
@@ -1320,6 +1422,9 @@ Object.assign(window.GLOSS, {
   "protected": "보호되는",
   "prying": "남의 일을 캐는",
   "public works": "공공 사업",
+  "put in": "넣다",
+  "put in place": "자리에 놓다",
+  "ready-made": "미리 만들어진",
   "regal": "제왕의",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
@@ -1328,6 +1433,7 @@ Object.assign(window.GLOSS, {
   "research": "연구 조사",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
+  "restlessness": "잠 못 이룸",
   "reward": "보상",
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
@@ -1342,15 +1448,19 @@ Object.assign(window.GLOSS, {
   "ship in": "실어 들이다",
   "shot": "주사 한 대",
   "sign": "징후, 표지",
+  "sleeplessness": "잠들지 못함",
   "slope": "비탈지다",
+  "slot in": "끼워 맞추다",
   "sneak into": "몰래 들어가다",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
+  "split-second": "순식간의",
   "spoil": "버릇없게 만들다",
   "spontaneous": "즉흥적인, 자발적인",
   "spur": "박차를 가하다",
   "stamp": "도장을 찍다",
+  "stealthy": "몰래 하는",
   "striking": "눈에 띄는",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
@@ -1371,6 +1481,7 @@ Object.assign(window.GLOSS, {
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
   "toddler": "아기, 걸음마쟁이",
+  "treacherous": "믿을 수 없는",
   "truly": "참으로",
   "unauthorized": "무단의, 승인받지 않은",
   "unavoidable": "비켜 갈 수 없는",
@@ -1407,7 +1518,9 @@ Object.assign(window.GLOSS, {
   "vacillation": "갈팡질팡함",
   "verification": "입증, 검증",
   "viral illness": "바이러스 질환",
+  "volatility": "변동이 심함",
   "voracious": "식욕이 왕성한",
+  "wakefulness": "깨어 있는 상태",
   "wavering": "흔들리는",
   "whim": "일시적 기분",
   "with regard to": "~에 대해서는",
