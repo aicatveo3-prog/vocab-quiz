@@ -1775,7 +1775,6 @@ Object.assign(window.GLOSS, {
   "follower":"추종자, 신봉자",
   "frown on":"~을 못마땅해하다",
   "handicap":"장애, 불리한 조건",
-  "handicapped":"장애가 있는",
   "humiliation":"굴욕, 창피",
   "impaired":"손상된, 장애가 있는",
   "impairment":"손상, 장애",

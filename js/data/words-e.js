@@ -2240,7 +2240,6 @@ Object.assign(window.GLOSS, {
   "give the right to":"~할 권리를 주다",
   "green":"환경을 해치지 않는",
   "green with envy":"몹시 부러워하는",
-  "habitat":"서식지",
   "hand over to":"~에게 넘기다",
   "install as king":"왕으로 세우다",
   "involve":"수반하다, 포함하다",
