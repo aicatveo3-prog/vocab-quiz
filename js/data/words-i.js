@@ -1579,7 +1579,90 @@ window.VOCAB_I = [
 
   { word:"invariable", pron:"인베리어블", pos:"adj", level:"C1", meanings:["불변의","변함없는"],
     syn:["unchanging","constant","fixed"], ant:["variable"],
-    ex:[{ s:"His morning routine was almost {{}}.", f:"invariable", ko:"그의 아침 일과는 거의 불변이었다." }] }
+    ex:[{ s:"His morning routine was almost {{}}.", f:"invariable", ko:"그의 아침 일과는 거의 불변이었다." }] },
+
+  /* 승격 ① — GLOSS '역의, 반대의' 를 글자까지 지켰다. converse(syn) 가 참조한다.
+     원본 셋째 갈래 '반비례의' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"inverse", pron:"인버스", pos:"adj", level:"C1", meanings:["역의","반대의"],
+    syn:["converse","opposite","reversed"],
+    ex:[{ s:"There is an {{}} relationship between price and demand.", f:"inverse", ko:"가격과 수요 사이에는 역의 관계가 있다." }] },
+
+  /* invest·investigate 는 앞 여섯 글자가 같고 품사도 둘 다 v 라 같은 보드에 올 수
+     있다. 다만 뜻이 '투자하다' 와 '조사하다' 로 완전히 달라 무리가 없다. */
+  { word:"invest", pron:"인베스트", pos:"v", level:"B1", meanings:["투자하다","쏟다"],
+    syn:["put money into","fund","back"],
+    ex:[{ s:"They decided to {{}} in renewable energy.", f:"invest", ko:"그들은 재생 에너지에 투자하기로 결정했다." }] },
+
+  /* 승격 ① — GLOSS '조사하다, 살피다' 를 글자까지 지켰다. explore(syn) 가 참조하므로
+     원본의 '연구하다' 대신 사전 쪽을 남겼다 — 13차의 inquiry 가 '연구, 탐구' 를
+     쓰고 있어 갈래가 갈리는 이점도 있다. */
+  { word:"investigate", pron:"인베스터게이트", pos:"v", level:"B2", meanings:["조사하다","살피다"],
+    syn:["explore","probe","look into"],
+    ex:[{ s:"Police are still working to {{}} the cause of the fire.", f:"investigate", ko:"경찰은 화재 원인을 조사하기 위해 여전히 일하고 있다." }] },
+
+  /* 승격 ① — GLOSS '활기를 주는' 을 글자까지 지켰다. exhilarating(syn) 이 참조한다.
+     원본 '기운이 나게 하는' 은 같은 갈래라 사전 쪽 표현을 남겼다. */
+  { word:"invigorating", pron:"인비거레이팅", pos:"adj", level:"C1", meanings:["활기를 주는"],
+    syn:["exhilarating","refreshing","bracing"],
+    ex:[{ s:"A cold morning swim is surprisingly {{}}.", f:"invigorating", ko:"차가운 아침 수영은 놀랍게도 활기를 준다." }] },
+
+  { word:"invincible", pron:"인빈서블", pos:"adj", level:"C1", meanings:["아무도 꺾을 수 없는","무적의"],
+    syn:["unbeatable","indomitable","undefeated"],
+    ex:[{ s:"The champion seemed {{}} throughout that season.", f:"invincible", ko:"그 챔피언은 그 시즌 내내 아무도 꺾을 수 없어 보였다." }] },
+
+  { word:"inviting", pron:"인바이팅", pos:"adj", level:"B2", meanings:["매력적인","마음이 끌리는"],
+    syn:["appealing","tempting","alluring"], ant:["off-putting"],
+    ex:[{ s:"The warm bakery smelled thoroughly {{}}.", f:"inviting", ko:"따뜻한 빵집은 아주 매력적인 냄새가 났다." }] },
+
+  /* 승격 ① — GLOSS '청구서, 송장' 을 글자까지 지켰다(원본은 순서가 반대).
+     bill(syn) 이 참조한다. */
+  { word:"invoice", pron:"인보이스", pos:"n", level:"B2", meanings:["청구서","송장"],
+    syn:["bill","statement","receipt"],
+    ex:[{ s:"Payment is due within 30 days of the {{}}.", f:"invoice", ko:"대금은 청구서 발행 후 30일 내에 지급해야 한다." }] },
+
+  { word:"invoke", pron:"인보크", pos:"v", level:"C1", meanings:["들먹이다","적용하다"],
+    syn:["cite","appeal to","call upon"],
+    ex:[{ s:"He tried to {{}} an old statute in his defence.", f:"invoke", ko:"그는 변호에서 오래된 법령을 들먹이려 했다." }] },
+
+  /* 승격 ② — GLOSS '수반하다, 포함하다' 다. entail(syn)·have to do with(syn) 가
+     참조하는 갈래는 '수반하다' 라 첫 자리에 지켰다.
+     둘째 갈래는 원본의 '관련시키다' 로 바꿨다 — '포함하다' 는 8차의 include 가
+     한 갈래로 독점한다(참조 5곳). */
+  { word:"involve", pron:"인발브", pos:"v", level:"B1", meanings:["수반하다","관련시키다"],
+    syn:["entail","have to do with","necessitate"],
+    ex:[{ s:"The new job will {{}} a great deal of travel.", f:"involve", ko:"그 새 일은 많은 여행을 수반할 것이다." }] },
+
+  /* 승격 ① — GLOSS '복잡한; 관련된' 을 글자까지 지켰다. 참조하는 complex(syn) 가
+     쓰는 갈래가 '복잡한' 이므로 원본('관련된' 이 앞)이 아니라 사전 쪽을 남겼다.
+     원본 '관여하는' 은 셋째 갈래가 되어 뺐다.
+     involve·involvement 와 어근이 같지만 품사가 셋 다 달라(v/adj/n) 같은 보드에
+     안 온다. */
+  { word:"involved", pron:"인발브드", pos:"adj", level:"C1", meanings:["복잡한","관련된"],
+    syn:["complex","convoluted","tangled"],
+    ex:[{ s:"The procedure is far more {{}} than it looks.", f:"involved", ko:"그 절차는 보기보다 훨씬 더 복잡하다." }] },
+
+  { word:"involvement", pron:"인발브먼트", pos:"n", level:"B2", meanings:["참여","관여"],
+    syn:["participation","engagement","role"],
+    ex:[{ s:"He denied any {{}} in the scheme.", f:"involvement", ko:"그는 그 계획에 어떤 참여도 부인했다." }] },
+
+  { word:"irony", pron:"아이러니", pos:"n", level:"B2", meanings:["반어","뜻밖의 결과"],
+    syn:["sarcasm","paradox","twist"],
+    ex:[{ s:"The {{}} was that the fire station itself burned down.", f:"irony", ko:"뜻밖의 결과는 소방서 자체가 불타 버렸다는 것이었다." }] },
+
+  /* 2차의 illogical 은 '비논리적인' 을 첫 자리로 쓴다 — 이쪽은 '비합리적인' 이다. */
+  { word:"irrational", pron:"이래셔널", pos:"adj", level:"B2", meanings:["비합리적인","불합리한"],
+    syn:["illogical","unreasonable","absurd"], ant:["rational"],
+    ex:[{ s:"His fear of flying is entirely {{}}.", f:"irrational", ko:"비행에 대한 그의 두려움은 전적으로 비합리적이다." }] },
+
+  /* 둘째 갈래를 '도저히 맞지 않는' 으로 했다 — '양립 불가능한' 으로 쓰면
+     8차의 incompatible('양립할 수 없는')과 거의 같은 글자가 된다. */
+  { word:"irreconcilable", pron:"이레컨사일러블", pos:"adj", level:"C2", meanings:["화해할 수 없는","도저히 맞지 않는"],
+    syn:["implacable","unappeasable","at odds"],
+    ex:[{ s:"Their differences soon proved {{}}.", f:"irreconcilable", ko:"그들의 차이는 곧 화해할 수 없는 것으로 드러났다." }] },
+
+  { word:"irrelevant", pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
+    syn:["beside the point","immaterial","unrelated"], ant:["relevant"],
+    ex:[{ s:"That detail is {{}} to the main argument.", f:"irrelevant", ko:"그 세부 사항은 주요 논지와 상관없다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1599,6 +1682,7 @@ Object.assign(window.GLOSS, {
   "animate": "살아 있는",
   "answering": "응답하는",
   "apathetic": "시들한, 심드렁한",
+  "appeal to": "~에 의지하다",
   "apprise": "통지하다",
   "approaching": "다가오는",
   "approving of": "~을 승인하여",
@@ -1608,13 +1692,16 @@ Object.assign(window.GLOSS, {
   "as regards": "~에 관해서는",
   "as required by": "~이 요구하는 대로",
   "astonishingly": "깜짝 놀랄 만큼",
+  "at odds": "뜻이 안 맞는",
   "at the outset": "처음에",
   "baby": "아기",
+  "back": "뒤를 받쳐 주다",
   "be bound up": "서로 얽혀 있다",
   "befuddle": "정신을 흐리게 하다",
   "beg": "간청하다",
   "bent on": "~하기로 굳게 마음먹은",
   "bequest": "유증, 물려준 것",
+  "beside the point": "논점에서 벗어난",
   "betterment": "개량",
   "between stars": "별들 사이의",
   "beyond price": "값을 매길 수 없는",
@@ -1622,6 +1709,7 @@ Object.assign(window.GLOSS, {
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
   "body": "단체, 조직",
+  "bracing": "정신이 번쩍 드는",
   "brainpower": "지적 능력",
   "brazen": "낯 두꺼운",
   "breathe in": "숨을 들이켜다",
@@ -1633,6 +1721,7 @@ Object.assign(window.GLOSS, {
   "bungling": "일을 망치는",
   "butt in": "끼어들다",
   "by nature": "본성으로",
+  "call upon": "끌어다 쓰다",
   "cerebral": "머리를 쓰는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
@@ -1733,6 +1822,7 @@ Object.assign(window.GLOSS, {
   "formalize": "공식화하다",
   "forthcoming": "다가오는, 곧 있을",
   "fumigant": "훈증제",
+  "fund": "자금을 대다",
   "fundamentally": "근본적으로",
   "galactic": "은하의",
   "garbled": "뒤죽박죽인",
@@ -1751,8 +1841,10 @@ Object.assign(window.GLOSS, {
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
   "illuminating": "눈을 뜨게 하는",
+  "immaterial": "대수롭지 않은",
   "immunize": "면역을 주다",
   "impenetrable": "헤아릴 수 없는",
+  "implacable": "달랠 수 없는",
   "implied": "함축된",
   "impossible": "불가능한",
   "imprecise": "정밀하지 않은",
@@ -1792,6 +1884,7 @@ Object.assign(window.GLOSS, {
   "indemnity": "손해 배상금",
   "indistinguishable": "구별할 수 없는",
   "individuality": "개성, 특성",
+  "indomitable": "굴하지 않는",
   "induction": "취임시킴, 유도",
   "industry veteran": "업계 베테랑",
   "inebriate": "술에 취하게 하다",
@@ -1887,6 +1980,7 @@ Object.assign(window.GLOSS, {
   "occupant": "점유자",
   "occupy": "차지하다",
   "occurrence": "일어남, 사례",
+  "off-putting": "꺼려지게 하는",
   "on and off": "이따금",
   "on its own": "그 자체만으로",
   "on the side of": "~의 편에 서서",
@@ -1896,6 +1990,7 @@ Object.assign(window.GLOSS, {
   "over time": "시간이 지나면서",
   "overrun": "짓밟고 들어가다",
   "pamper": "애지중지하다",
+  "participation": "참가",
   "participatory": "참여하는",
   "partisan": "당파적인",
   "pause": "잠깐 멈춤",
@@ -1928,11 +2023,14 @@ Object.assign(window.GLOSS, {
   "public works": "공공 사업",
   "put in": "넣다",
   "put in place": "자리에 놓다",
+  "put money into": "~에 돈을 넣다",
   "reading": "읽어 낸 뜻",
   "ready-made": "미리 만들어진",
+  "receipt": "영수증",
   "reflection": "돌아봄, 반영",
   "reflective": "되돌아보는",
   "reflexive": "반사적인",
+  "refreshing": "상쾌하게 하는",
   "regal": "제왕의",
   "relational": "관계에 관한",
   "relative to": "~에 비하여",
@@ -1946,9 +2044,11 @@ Object.assign(window.GLOSS, {
   "resourceful": "기지가 뛰어난",
   "restlessness": "잠 못 이룸",
   "retiring": "나서기를 꺼리는",
+  "reversed": "뒤집힌",
   "reward": "보상",
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
+  "sarcasm": "비꼬는 말",
   "scanty": "빈약한",
   "scholarly": "학문적인",
   "scrawled": "갈겨쓴",
@@ -2016,13 +2116,16 @@ Object.assign(window.GLOSS, {
   "treacherous": "믿을 수 없는",
   "trespass": "무단으로 들어가다",
   "truly": "참으로",
+  "unappeasable": "가라앉히기 어려운",
   "unauthorized": "무단의, 승인받지 않은",
   "unavoidable": "비켜 갈 수 없는",
   "unawareness": "알지 못함",
+  "unbeatable": "당해 낼 수 없는",
   "unbelievable": "믿을 수 없는",
   "unbelievably": "믿을 수 없을 만큼",
   "unconquerable": "정복할 수 없는",
   "undamaged": "훼손되지 않은",
+  "undefeated": "패배를 모르는",
   "undeniable": "부인할 수 없는",
   "under way": "진행 중에",
   "underwrite": "보험을 인수하다",
