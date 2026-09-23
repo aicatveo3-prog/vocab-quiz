@@ -2197,7 +2197,6 @@ Object.assign(window.GLOSS, {
   "educate":"교육하다, 가르치다",
   "finish up":"끝으로 ~하게 되다",
   "fully absorb":"완전히 몰입시키다",
-  "heighten":"높이다, 고조시키다",
   "hold the attention of":"~의 주의를 붙들다",
   "imperil":"위험에 빠뜨리다",
   "inform":"알리다, 알려 주다",
