@@ -1985,8 +1985,6 @@ Object.assign(window.GLOSS, {
   "lawful": "합법적인",
   "leading player": "주요 인물",
   "leaning": "기울어짐, 선호",
-  "legendary": "전설적인",
-  "legible": "읽기 쉬운",
   "lenient": "처벌이 가벼운",
   "lesser": "더 작은, 못한",
   "lettering": "글자 새김",
