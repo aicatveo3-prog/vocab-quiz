@@ -986,7 +986,6 @@ Object.assign(window.GLOSS, {
   "monolingual":"1개 국어만 쓰는",
   "narrowness":"좁음",
   "one-way":"일방통행의, 편도의",
-  "opponent":"반대자, 상대",
   "ordinary":"평범한, 보통의",
   "participant":"참가자, 당사자",
   "peace":"평화",

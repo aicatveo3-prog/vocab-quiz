@@ -435,7 +435,122 @@ window.VOCAB_O = [
      원본은 순서가 '방관자, 구경꾼' 이었지만 사전 쪽을 남겼다. */
   { word:"onlooker", pron:"온루커", pos:"n", level:"B2", meanings:["구경꾼","방관자"],
     syn:["bystander","watcher","person looking on"],
-    ex:[{ s:"An {{}} called the fire brigade.", f:"onlooker", ko:"한 구경꾼이 소방대를 불렀다." }] }
+    ex:[{ s:"An {{}} called the fire brigade.", f:"onlooker", ko:"한 구경꾼이 소방대를 불렀다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────────────── */
+  /* 'op-' 로 시작하는 낱말이 열세 개나 이어 붙는다. opponent·opportunity·oppose·
+     opposite·opposition 다섯이 한 덩어리이고, optics·optimal·optimism·optimistic·
+     optimum·option 여섯이 또 한 덩어리다. 품사와 뜻을 서로 갈라 두었다.        */
+
+  /* 승격 38 — 사전은 '시작, 발병' 이었다. '시작' 을 그대로 두면 같은 챕터의
+     opening(시작, 개막) 과 물리므로 '개시' 로 갈랐다. advent(A) 의 화면 글자가
+     함께 바뀐다. */
+  { word:"onset", pron:"온셋", pos:"n", level:"B2", meanings:["개시","발병"],
+    syn:["first appearance","beginning of an illness","initial stage"],
+    ex:[{ s:"The {{}} of the fever was sudden.", f:"onset", ko:"열의 발병은 갑작스러웠다." }] },
+
+  { word:"onstage", pron:"온스테이지", pos:"adj", level:"B2", meanings:["무대 위의"],
+    syn:["before the audience","on the boards","in view of the crowd"], ant:["backstage"],
+    ex:[{ s:"Her {{}} presence filled the hall.", f:"onstage", ko:"그녀의 무대 위의 존재감이 회관을 채웠다." }] },
+
+  /* 승격 39 — 사전 표현을 글자까지 지켰다(instant, I). 원본의 '현장의, 즉석의'
+     대신 사전 쪽을 남겼다. */
+  { word:"on-the-spot", pron:"온 더 스팟", pos:"adj", level:"B2", meanings:["현장에서 바로 하는"],
+    syn:["done then and there","immediate at the scene","without delay"],
+    ex:[{ s:"Police made an {{}} check of the vehicle.", f:"on-the-spot", ko:"경찰이 그 차량을 현장에서 바로 확인했다." }] },
+
+  /* 승격 40 — ★원본의 뜻이 틀렸다. '공식, 개방' 의 '공식' 은 '공석' 의 오타로 보인다.
+     그대로 두면 formula(공식, 방법, F) 와 첫 뜻이 겹친다. 참조 conclusion(ant, C)·
+     initial(syn, I) 이 모두 시작 뜻을 쓰므로 사전 표현 '시작, 개막' 을 글자까지
+     지켰다. 다만 initial 은 형용사여서 그쪽 유의어를 'earliest' 로 바꿨다. */
+  { word:"opening", pron:"오프닝", pos:"n", level:"B2", meanings:["시작","개막"],
+    syn:["first part","curtain-raiser","commencement"], ant:["conclusion"],
+    ex:[{ s:"The {{}} of the play drew loud applause.", f:"opening", ko:"그 연극의 개막은 큰 박수를 받았다." }] },
+
+  { word:"open-minded", pron:"오픈 마인디드", pos:"adj", level:"B2", meanings:["마음이 열린"],
+    syn:["receptive","willing to listen","free of prejudice"], ant:["narrow-minded"],
+    ex:[{ s:"A good judge stays {{}} until all evidence is in.", f:"open-minded", ko:"좋은 심판은 증거가 다 나올 때까지 마음이 열린 상태를 지킨다." }] },
+
+  { word:"operate", pron:"아퍼레이트", pos:"v", level:"B1", meanings:["경영하다","가동하다"],
+    syn:["run a business","work a machine","keep in action"],
+    ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
+
+  { word:"operation", pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
+    syn:["surgery","running of a machine","working order"],
+    ex:[{ s:"She needs an {{}} on her knee.", f:"operation", ko:"그녀는 무릎 수술이 필요하다." }] },
+
+  /* 승격 41 — 사전 표현 '상대, 적수' 를 글자까지 지켰다(참조 4곳).
+     원본의 '상대방, 적수' 대신 사전 쪽을 남겼다. */
+  { word:"opponent", pron:"어포넌트", pos:"n", level:"B2", meanings:["상대","적수"],
+    syn:["adversary","enemy","one who fights against"], ant:["ally"],
+    ex:[{ s:"He shook hands with his {{}} after the game.", f:"opponent", ko:"그는 경기 뒤 상대와 악수했다." }] },
+
+  { word:"opportunity", pron:"아퍼투너티", pos:"n", level:"B1", meanings:["기회"],
+    syn:["chance","opening for action","favorable moment"],
+    ex:[{ s:"This is a rare {{}} to study abroad.", f:"opportunity", ko:"이것은 해외에서 공부할 드문 기회다." }] },
+
+  /* 승격 42 — 사전은 '반대하다' 한 갈래였다. 원본은 '~에 반대하다' 였지만
+     참조 셋(advocate·endorse 반의어, contradict 유의어) 을 보존하려고 사전값을
+     첫 자리에 남기고 '맞서다' 를 붙였다. */
+  { word:"oppose", pron:"어포즈", pos:"v", level:"B2", meanings:["반대하다","맞서다"],
+    syn:["contradict","speak against","stand up to"], ant:["endorse"],
+    ex:[{ s:"Residents will {{}} the new landfill.", f:"oppose", ko:"주민들은 새 매립지에 반대할 것이다." }] },
+
+  /* 승격 43 — 사전이 '반대의; 맞은편' 으로 형용사와 명사가 섞여 있었다.
+     converse(C)·inverse(I) 둘 다 형용사여서 형용사로 세웠다. 원본 첫 뜻 '반대'(n)
+     를 버리자 같은 챕터의 opposition·objection(챕터 1) 과의 겹침도 함께 풀렸다. */
+  { word:"opposite", pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
+    syn:["converse","facing","on the other side"],
+    ex:[{ s:"The bakery is on the {{}} corner.", f:"opposite", ko:"그 빵집은 맞은편 모서리에 있다." }] },
+
+  /* 승격 44 — 사전 표현 '반대, 저항' 을 글자까지 지켰다(dissent, D).
+     원본의 '반대, 상대; 경쟁자' 중 '상대' 는 같은 챕터 opponent 쪽 뜻이다. */
+  { word:"opposition", pron:"아퍼지션", pos:"n", level:"B2", meanings:["반대","저항"],
+    syn:["dissent","resistance","pushback"], ant:["support"],
+    ex:[{ s:"The bill met strong {{}} in the assembly.", f:"opposition", ko:"그 법안은 의회에서 강한 반대를 만났다." }] },
+
+  { word:"oppressive", pron:"어프레시브", pos:"adj", level:"C1", meanings:["압제적인","압박적인"],
+    syn:["tyrannical","crushing","heavy-handed"], ant:["liberating"],
+    ex:[{ s:"The regime grew more {{}} each year.", f:"oppressive", ko:"그 정권은 해마다 더 압제적이 되었다." }] },
+
+  /* optics 는 전문어다. 유의어 셋을 세울 수 있어 비우지 않았다. */
+  { word:"optics", pron:"압틱스", pos:"n", level:"C2", meanings:["광학"],
+    syn:["science of light","study of vision","physics of lenses"],
+    ex:[{ s:"He studies {{}} at the institute.", f:"optics", ko:"그는 그 연구소에서 광학을 공부한다." }] },
+
+  /* 승격 45 — 사전은 '최적의' 한 갈래였다. 원본의 '최선의' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(ideal, I). 같은 챕터의 optimum 을 명사로 세워
+     겹침을 피했다. */
+  { word:"optimal", pron:"압터멀", pos:"adj", level:"C1", meanings:["최적의","최선의"],
+    syn:["ideal","best suited","most favorable"],
+    ex:[{ s:"Store the film at the {{}} temperature.", f:"optimal", ko:"그 필름을 최적의 온도에 보관하세요." }] },
+
+  { word:"optimism", pron:"압터미즘", pos:"n", level:"B2", meanings:["낙관론","낙천주의"],
+    syn:["hopeful outlook","bright view","positive thinking"], ant:["pessimism"],
+    ex:[{ s:"His {{}} kept the team going.", f:"optimism", ko:"그의 낙관론이 팀을 버티게 했다." }] },
+
+  /* 원본에 남아 있던 '낙천적인; 낙관하는' 의 구분 기호를 쉼표로 바꿨다 —
+     두 갈래가 모두 형용사여서 섞임이 아니다. */
+  { word:"optimistic", pron:"압터미스틱", pos:"adj", level:"B2", meanings:["낙천적인","낙관하는"],
+    syn:["hopeful","looking on the bright side","expecting the best"], ant:["pessimistic"],
+    ex:[{ s:"She stayed {{}} despite the delays.", f:"optimistic", ko:"그녀는 지연에도 낙천적인 태도를 지켰다." }] },
+
+  /* 원본은 '최고의, 최적의; 최적 조건' 으로 형용사와 명사가 섞여 있었다.
+     참조가 없어 자유롭게 고를 수 있었고, 명사 '최적 조건' 으로 세우니 같은 챕터
+     optimal(최적의, 최선의) 과의 겹침이 저절로 풀렸다. */
+  { word:"optimum", pron:"압터멈", pos:"n", level:"C1", meanings:["최적 조건"],
+    syn:["best possible state","ideal point","peak condition"],
+    ex:[{ s:"The plant grows fastest at its {{}}.", f:"optimum", ko:"그 식물은 최적 조건에서 가장 빨리 자란다." }] },
+
+  /* 승격 46 — 사전 표현 '선택, 대안' 을 글자까지 지켰다(alternative, A).
+     원본의 '선택, 선택권' 대신 사전 쪽을 남겼다. */
+  { word:"option", pron:"압션", pos:"n", level:"B1", meanings:["선택","대안"],
+    syn:["alternative","choice","way open to one"],
+    ex:[{ s:"Walking was the only {{}} left.", f:"option", ko:"걷는 것이 남은 유일한 선택이었다." }] },
+
+  { word:"oral", pron:"오럴", pos:"adj", level:"B2", meanings:["구술의","구두의"],
+    syn:["spoken","by word of mouth","said aloud"], ant:["written"],
+    ex:[{ s:"The course ends with an {{}} exam.", f:"oral", ko:"그 과정은 구술의 시험으로 끝난다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -449,13 +564,20 @@ Object.assign(window.GLOSS, {
   "at the brink of": "~의 문턱에서",
   "attacking": "몰아붙이는",
   "auspicious": "좋은 일을 알리는",
+  "backstage": "무대 뒤의",
   "balance out": "서로 맞춰 없애다",
+  "before the audience": "관객 앞에서 하는",
+  "beginning of an illness": "병이 시작됨",
+  "best possible state": "가능한 가장 좋은 상태",
+  "best suited": "가장 알맞은",
   "betting ratio": "도박에서 매기는 비율",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
   "block up": "틀어막다",
   "boding ill": "나쁜 일을 알리는",
   "breach of law": "법을 어김",
+  "bright view": "밝게 보는 태도",
+  "by word of mouth": "입으로 전하는",
   "cancel out": "서로 지워 버리다",
   "careful noting": "꼼꼼히 적어 둠",
   "carrying far too much fat": "지방이 너무 많은",
@@ -468,17 +590,27 @@ Object.assign(window.GLOSS, {
   "corpulence": "살집이 두둑함",
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
+  "crushing": "짓누르는",
+  "curtain-raiser": "막을 올리는 순서",
   "doing as told": "말하는 대로 하는",
+  "done then and there": "그 자리에서 해내는",
   "drop from a list": "목록에서 빼다",
   "dutiful": "본분을 다하는",
+  "earliest": "맨 처음의",
   "erase all trace of": "~의 흔적을 다 지우다",
   "excess body fat": "넘치는 몸의 지방",
+  "expecting the best": "잘될 것으로 보는",
   "extreme overweight": "심한 과체중",
+  "facing": "마주 보는",
   "fact-based": "사실에 바탕한",
   "far from it": "그렇기는커녕",
+  "favorable moment": "알맞은 때",
+  "first appearance": "처음 나타남",
+  "first part": "앞부분",
   "follow orders": "명령을 좇다",
   "for good": "아주 영영",
   "free of opinion": "의견이 섞이지 않은",
+  "free of prejudice": "선입견이 없는",
   "from another view": "다른 쪽에서 보면",
   "get hold of": "손에 넣다",
   "give offence to": "~에게 언짢음을 주다",
@@ -489,32 +621,42 @@ Object.assign(window.GLOSS, {
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
   "healing cream": "상처에 바르는 크림",
+  "heavy-handed": "함부로 세게 다루는",
   "hide from view": "보이지 않게 가리다",
   "hold by force": "힘으로 붙들다",
   "hold out": "내밀어 주다",
+  "hopeful outlook": "희망을 품은 시각",
   "hurdle": "넘어야 할 벽",
   "hurt the feelings of": "~의 마음을 아프게 하다",
+  "ideal point": "가장 알맞은 지점",
   "ill at ease": "마음이 편치 않은",
+  "immediate at the scene": "현장에서 곧바로 하는",
   "in place of": "~을 갈음하여",
   "in the world": "세상에",
+  "in view of the crowd": "사람들 눈에 보이는",
   "infrequent": "드문드문한",
+  "initial stage": "첫 단계",
   "instead of that": "그 대신에",
   "insulting": "모욕하는",
   "jumpy": "움찔거리는",
   "just out of reach": "손에 닿을 듯 안 닿는",
   "just short of": "~에 조금 못 미쳐",
+  "keep in action": "움직이게 유지하다",
   "keep to": "~에서 벗어나지 않다",
   "keep to the rules": "규칙을 지키다",
   "kept off the books": "기록에 남기지 않는",
   "keyed up": "바짝 긴장한",
   "leave no choice for": "~에게 선택을 남기지 않다",
   "left behind by progress": "발전에 뒤처진",
+  "liberating": "놓여나게 하는",
   "line of work": "일하는 분야",
   "little known": "거의 알려지지 않은",
+  "looking on the bright side": "밝은 쪽을 보는",
   "make duty-bound": "할 수밖에 없게 만들다",
   "make unclear": "불분명하게 만들다",
   "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
+  "most favorable": "가장 유리한",
   "move into": "들어가 자리 잡다",
   "nearly remembered": "떠오를 듯한",
   "no longer in use": "더 이상 쓰이지 않는",
@@ -523,28 +665,41 @@ Object.assign(window.GLOSS, {
   "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
   "of all things": "하필이면",
+  "on the boards": "무대에 올라 있는",
   "on the facts alone": "사실만을 근거로",
+  "on the other side": "건너편의",
   "on the point of": "~하려는 순간에",
   "on-the-record": "공개를 전제로 한",
   "one after another": "잇달아",
   "one such case": "그런 한 가지",
   "one such instance": "그런 한 차례",
+  "one who fights against": "맞서 싸우는 이",
+  "opening for action": "움직일 틈",
   "out of the ordinary": "보통과 다른",
   "particular time": "특정한 시점",
+  "peak condition": "가장 좋은 조건",
   "person looking on": "옆에서 보는 사람",
   "physical body": "형체를 가진 몸",
+  "physics of lenses": "렌즈의 물리",
   "place under obligation": "의무 아래 두다",
   "plain to see": "보면 바로 아는",
+  "positive thinking": "긍정으로 생각하기",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
   "progeny": "낳은 자손",
+  "pushback": "되밀어 내는 움직임",
   "put on the table": "논의 자리에 내놓다",
   "quite the opposite": "오히려 거꾸로",
+  "receptive": "받아들일 자세가 된",
   "resting upon": "~에 기대어",
   "right before": "바로 앞에",
+  "run a business": "사업을 꾸리다",
+  "running of a machine": "기계가 돌아감",
+  "said aloud": "소리 내어 말한",
   "said unofficially": "비공식으로 한 말의",
   "salve": "바르는 약",
   "sanctioned": "허락을 받은",
+  "science of light": "빛을 다루는 학문",
   "set in one's ways": "제 방식만 지키는",
   "settled for ever": "다시 뒤집히지 않게",
   "singly": "하나씩",
@@ -554,13 +709,17 @@ Object.assign(window.GLOSS, {
   "slanted": "한쪽으로 기울어진",
   "solemn promise": "엄숙한 약속",
   "solid thing": "단단한 것",
+  "speak against": "반대하는 말을 하다",
   "speaking for": "~을 대변하여",
   "spoken remark": "입으로 낸 말",
   "stand in the way of": "~의 앞을 가로막다",
+  "stand up to": "~에 맞서다",
   "standard for all cases": "모든 경우에 같은",
   "star-watching station": "별을 살피는 시설",
   "still under way": "아직 끝나지 않은",
+  "study of vision": "보는 원리 연구",
   "superseded": "다른 것에 밀려난",
+  "surgery": "외과 처치",
   "sworn word": "맹세한 말",
   "take place": "벌어지다",
   "taking up of space": "자리를 차지함",
@@ -568,6 +727,7 @@ Object.assign(window.GLOSS, {
   "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
   "typical": "으레 그런",
+  "tyrannical": "폭압을 휘두르는",
   "under way at present": "지금 진행 중인",
   "unfair to one side": "한편에 불리한",
   "unfinished": "마무리되지 않은",
@@ -580,8 +740,13 @@ Object.assign(window.GLOSS, {
   "warning of trouble": "말썽을 알리는",
   "watch closely": "가까이 지켜보다",
   "watcher": "지켜보는 이",
+  "way open to one": "택할 수 있는 길",
   "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
+  "willing to listen": "귀를 기울이려는",
   "without bias": "치우침 없이",
+  "without delay": "늦추지 않고 하는",
+  "work a machine": "기계를 다루다",
+  "working order": "제대로 돌아가는 상태",
   "young of a creature": "짐승의 새끼"
 });

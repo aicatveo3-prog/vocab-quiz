@@ -1806,7 +1806,6 @@ Object.assign(window.GLOSS, {
   "misrepresentation":"잘못된 표현, 허위 진술",
   "misshapen":"모양이 이상한, 일그러진",
   "objectionable":"불쾌한, 문제가 되는",
-  "opposition":"반대, 저항",
   "parity":"동등, 등가",
   "qualify":"자격을 얻다, 자격을 주다",
   /* refute 가 이미 '반박하다, 논박하다'다 — 글자까지 같으면 피드백 두 줄이

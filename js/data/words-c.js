@@ -2009,7 +2009,6 @@ Object.assign(window.GLOSS, {
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
   "open":"공개된, 열린",
-  "opening":"시작, 개막",
   "optional":"선택적인",
   "orderly":"정돈된, 질서 있는",
   "original":"원본, 원래의",

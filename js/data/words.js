@@ -1707,7 +1707,6 @@ window.GLOSS = {
   "named":"이름이 밝혀진",
   "natural":"자연의, 천연의",
   "normal":"정상적인",
-  "oppose":"반대하다",
   "order":"질서",
   "ordinary":"평범한",
   "overlook":"간과하다",
