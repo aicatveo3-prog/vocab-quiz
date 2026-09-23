@@ -1412,7 +1412,91 @@ window.VOCAB_I = [
      external(ant) 도 참조한다. 13차의 inner 는 '내면의' 로 돌려 첫 뜻이 갈린다. */
   { word:"internal", pron:"인터널", pos:"adj", level:"B2", meanings:["내부의","국내의"],
     syn:["inside","domestic","in-house"], ant:["external"],
-    ex:[{ s:"The report was circulated for {{}} use only.", f:"internal", ko:"그 보고서는 내부용으로만 배포되었다." }] }
+    ex:[{ s:"The report was circulated for {{}} use only.", f:"internal", ko:"그 보고서는 내부용으로만 배포되었다." }] },
+
+  /* 승격 ① — GLOSS '국제적인' 과 글자까지 같다. cosmopolitan(syn) 이 참조한다.
+     원본도 한 갈래라 그대로 두었다.
+     바로 앞 internal 과 품사가 둘 다 adj 라 같은 보드에 올 수 있지만, 뜻이
+     '내부의' 와 '국제적인' 으로 완전히 달라 무리가 없다. */
+  { word:"international", pron:"인터내셔널", pos:"adj", level:"B1", meanings:["국제적인"],
+    syn:["cosmopolitan","global","worldwide"], ant:["domestic"],
+    ex:[{ s:"The airport handles mainly {{}} flights.", f:"international", ko:"그 공항은 주로 국제 항공편을 취급한다." }] },
+
+  { word:"interpersonal", pron:"인터퍼서널", pos:"adj", level:"C1", meanings:["대인 관계의"],
+    syn:["social","relational","person-to-person"],
+    ex:[{ s:"The job requires strong {{}} skills.", f:"interpersonal", ko:"그 일은 강한 대인 관계 기술을 요구한다." }] },
+
+  /* 승격 ① — GLOSS '해석하다, 통역하다' 를 글자까지 지켰다. decipher(syn) 가
+     참조한다. 원본 둘째 갈래 '이해하다' 를 쓰면 C 세트 comprehend·F 세트
+     figure out 의 뜻과 첫 뜻이 겹치는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"interpret", pron:"인터프리트", pos:"v", level:"B2", meanings:["해석하다","통역하다"],
+    syn:["decipher","construe","make sense of"],
+    ex:[{ s:"Experts disagree on how to {{}} the new data.", f:"interpret", ko:"전문가들은 그 새 데이터를 어떻게 해석할지에 대해 의견이 다르다." }] },
+
+  /* interpret 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"interpretation", pron:"인터프리테이션", pos:"n", level:"B2", meanings:["해석","통역"],
+    syn:["reading","rendering","construal"],
+    ex:[{ s:"His {{}} of the poem was highly unconventional.", f:"interpretation", ko:"그 시에 대한 그의 해석은 매우 독특했다." }] },
+
+  { word:"interracial", pron:"인터레이셜", pos:"adj", level:"C1", meanings:["타 인종 간의"],
+    syn:["mixed-race","cross-racial","multiracial"],
+    ex:[{ s:"The law once banned {{}} marriage outright.", f:"interracial", ko:"그 법은 한때 타 인종 간 결혼을 전면 금지했다." }] },
+
+  /* ── 챕터 14 ────────────────────────────── */
+
+  { word:"interrelate", pron:"인터릴레이트", pos:"v", level:"C2", meanings:["밀접한 연관을 갖다"],
+    syn:["correlate","interconnect","be bound up"],
+    ex:[{ s:"Climate and agriculture {{}} in complex ways.", f:"interrelate", ko:"기후와 농업은 복잡한 방식으로 밀접한 연관을 갖는다." }] },
+
+  /* 승격 ① — GLOSS '방해하다, 중단시키다' 가 원본과 글자까지 같다.
+     disrupt(syn)·disturb(syn) 두 문제가 참조한다. 손댈 것이 없었다. */
+  { word:"interrupt", pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
+    syn:["disrupt","disturb","cut in on"],
+    ex:[{ s:"Please do not {{}} while I am speaking.", f:"interrupt", ko:"제가 말하는 동안 방해하지 마세요." }] },
+
+  /* 승격 ① — GLOSS '중단, 방해' 를 글자까지 지켰다. 참조가 3곳(disruption·
+     distraction·disturbance)이라 원본('중단' 한 갈래) 대신 사전 쪽을 남겼다.
+     interrupt 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"interruption", pron:"인터럽션", pos:"n", level:"B2", meanings:["중단","방해"],
+    syn:["disruption","disturbance","stoppage"],
+    ex:[{ s:"The talk continued without {{}} for a full hour.", f:"interruption", ko:"그 강연은 꼬박 한 시간 동안 중단 없이 이어졌다." }] },
+
+  { word:"intersection", pron:"인터섹션", pos:"n", level:"B2", meanings:["교차로","교차점"],
+    syn:["crossroads","crossing","intersecting point"],
+    ex:[{ s:"Turn left at the next {{}}.", f:"intersection", ko:"다음 교차로에서 좌회전하세요." }] },
+
+  /* 원본 첫 뜻 '행성 간의' 는 틀렸다 — 행성(planet)이 아니라 항성(star) 사이를
+     뜻한다. 원본 둘째 갈래 '별과 별 사이의' 가 그것을 확인해 준다.
+     '항성 간의' 로 고쳤다. */
+  { word:"interstellar", pron:"인터스텔라", pos:"adj", level:"C2", meanings:["항성 간의","별과 별 사이의"],
+    syn:["between stars","deep-space","galactic"],
+    ex:[{ s:"The probe entered {{}} space in 2012.", f:"interstellar", ko:"그 탐사선은 2012년에 항성 간 공간에 진입했다." }] },
+
+  /* 17차의 interfere 는 '간섭하다' 를 첫 자리로 쓴다 — 이쪽은 '개입하다' 다. */
+  { word:"intervene", pron:"인터빈", pos:"v", level:"B2", meanings:["개입하다","간섭하다"],
+    syn:["step in","mediate","intercede"],
+    ex:[{ s:"The police had to {{}} to stop the fight.", f:"intervene", ko:"경찰이 싸움을 멈추기 위해 개입해야 했다." }] },
+
+  /* 17차의 interference 는 '간섭, 개입' 이다. 첫 뜻이 갈리도록 이쪽은
+     '개입' 을 앞에 두었다. 원본 둘째 갈래 '간섭' 은 그 이유로 뺐다.
+     intervene 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"intervention", pron:"인터벤션", pos:"n", level:"B2", meanings:["개입","중재"],
+    syn:["mediation","stepping in","arbitration"],
+    ex:[{ s:"Early {{}} greatly improves the outcome.", f:"intervention", ko:"이른 개입이 결과를 크게 개선한다." }] },
+
+  { word:"intimate", pron:"인터멋", pos:"adj", level:"B2", meanings:["친밀한","개인적인"],
+    syn:["close","familiar","confidential"], ant:["distant"],
+    ex:[{ s:"They shared an {{}} friendship for decades.", f:"intimate", ko:"그들은 수십 년간 친밀한 우정을 나눴다." }] },
+
+  /* 승격 ① — GLOSS '겁주다, 위협하다' 를 글자까지 지켰다. bully(syn) 가 참조하므로
+     원본의 '협박하다' 대신 사전 쪽 순서를 남겼다. */
+  { word:"intimidate", pron:"인티머데이트", pos:"v", level:"B2", meanings:["겁주다","위협하다"],
+    syn:["bully","menace","browbeat"],
+    ex:[{ s:"They tried to {{}} witnesses into silence.", f:"intimidate", ko:"그들은 증인들을 겁주어 침묵시키려 했다." }] },
+
+  { word:"intolerance", pron:"인탈러런스", pos:"n", level:"C1", meanings:["편협","참을 수 없음"],
+    syn:["bigotry","narrow-mindedness","prejudice"], ant:["tolerance"],
+    ex:[{ s:"The campaign fights religious {{}} in schools.", f:"intolerance", ko:"그 운동은 학교의 종교적 편협과 싸운다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1435,6 +1519,7 @@ Object.assign(window.GLOSS, {
   "apprise": "통지하다",
   "approaching": "다가오는",
   "approving of": "~을 승인하여",
+  "arbitration": "중재 재판",
   "as against": "~와 대비하여",
   "as payment for": "~의 값으로",
   "as regards": "~에 관해서는",
@@ -1442,10 +1527,13 @@ Object.assign(window.GLOSS, {
   "astonishingly": "깜짝 놀랄 만큼",
   "at the outset": "처음에",
   "baby": "아기",
+  "be bound up": "서로 얽혀 있다",
   "beg": "간청하다",
   "bent on": "~하기로 굳게 마음먹은",
   "bequest": "유증, 물려준 것",
   "betterment": "개량",
+  "between stars": "별들 사이의",
+  "bigotry": "고집스러운 편견",
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
   "body": "단체, 조직",
@@ -1454,6 +1542,7 @@ Object.assign(window.GLOSS, {
   "breathe in": "숨을 들이켜다",
   "bring on": "불러오다",
   "brooding": "알을 품는 일",
+  "browbeat": "으름장을 놓다",
   "bug": "벌레",
   "bug spray": "벌레 살충 분무제",
   "bungling": "일을 망치는",
@@ -1479,17 +1568,24 @@ Object.assign(window.GLOSS, {
   "connection point": "연결 지점",
   "consistent with": "~와 들어맞는",
   "constituent": "구성 요소",
+  "construal": "풀이",
+  "construe": "뜻을 새기다",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
   "creeping": "슬금슬금 퍼지는",
   "creepy-crawly": "기어 다니는 벌레",
+  "cross-racial": "인종을 넘나드는",
+  "crossing": "건널목",
+  "crossroads": "네거리",
   "curable": "치유 가능한",
   "curiosity": "호기심",
   "cushion": "충격을 줄이다",
+  "cut in on": "말을 끊고 들어오다",
   "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
   "damaged": "손상된",
   "deathlessness": "불사, 죽지 않음",
+  "deep-space": "심우주의",
   "deferred payment": "후불",
   "deficiently": "모자라게",
   "denote": "가리키다",
@@ -1548,6 +1644,7 @@ Object.assign(window.GLOSS, {
   "formalize": "공식화하다",
   "forthcoming": "다가오는, 곧 있을",
   "fumigant": "훈증제",
+  "galactic": "은하의",
   "garbled": "뒤죽박죽인",
   "give-and-take": "주고받기",
   "grippe": "유행성 감기",
@@ -1624,7 +1721,10 @@ Object.assign(window.GLOSS, {
   "insolent": "건방진",
   "insufficiently": "넉넉하지 못하게",
   "intellect": "지력",
+  "intercede": "사이에 나서다",
+  "interconnect": "서로 이어지다",
   "interplay": "서로 영향을 주고받음",
+  "intersecting point": "만나는 지점",
   "intertwine": "서로 뒤얽히다",
   "introduce": "도입하다, 소개하다",
   "intrusion": "허락 없이 끼어듦",
@@ -1662,19 +1762,24 @@ Object.assign(window.GLOSS, {
   "mechanized": "기계화된",
   "meddle": "쓸데없이 참견하다",
   "meddling": "쓸데없는 참견",
+  "mediation": "조정",
   "member": "구성원",
+  "menace": "으르다",
   "mental capacity": "정신적 역량",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
   "mishap": "작은 사고",
   "mismatched": "짝이 맞지 않는",
+  "mixed-race": "혼합 인종의",
   "modernize": "현대화하다",
   "momentum": "기세, 탄력",
   "mortality": "죽음을 피할 수 없음, 사망률",
   "motivation": "동기 부여",
+  "multiracial": "여러 인종의",
   "mutually reliant": "서로에게 기대는",
   "naivety": "순진함",
+  "narrow-mindedness": "속 좁음",
   "newborn": "갓난아기",
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
@@ -1701,6 +1806,7 @@ Object.assign(window.GLOSS, {
   "perfectly": "완벽하게",
   "permeate": "배어들다",
   "permissive": "제약이 느슨한",
+  "person-to-person": "사람과 사람 사이의",
   "personally": "개인적으로, 직접",
   "pest": "해충",
   "pesticide": "농약",
@@ -1722,12 +1828,15 @@ Object.assign(window.GLOSS, {
   "public works": "공공 사업",
   "put in": "넣다",
   "put in place": "자리에 놓다",
+  "reading": "읽어 낸 뜻",
   "ready-made": "미리 만들어진",
   "reflexive": "반사적인",
   "regal": "제왕의",
+  "relational": "관계에 관한",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
   "remarkably": "눈에 띄게",
+  "rendering": "옮겨 냄",
   "repercussion": "파급 효과",
   "research": "연구 조사",
   "resistant": "저항력이 있는",
@@ -1755,6 +1864,7 @@ Object.assign(window.GLOSS, {
   "slope": "비탈지다",
   "slot in": "끼워 맞추다",
   "sneak into": "몰래 들어가다",
+  "social": "사교의",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
@@ -1765,6 +1875,9 @@ Object.assign(window.GLOSS, {
   "spur": "박차를 가하다",
   "stamp": "도장을 찍다",
   "stealthy": "몰래 하는",
+  "step in": "끼어들어 돕다",
+  "stepping in": "나서서 관여함",
+  "stoppage": "멈춤",
   "striking": "눈에 띄는",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
@@ -1787,6 +1900,7 @@ Object.assign(window.GLOSS, {
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
   "toddler": "아기, 걸음마쟁이",
+  "tolerance": "관용",
   "tool": "연장",
   "trade places": "자리를 맞바꾸다",
   "treacherous": "믿을 수 없는",
@@ -1843,6 +1957,7 @@ Object.assign(window.GLOSS, {
   "with respect to": "~와 관련해서는",
   "without": "~이 없이",
   "without interest": "이자 없이",
+  "worldwide": "전 세계의",
   "wrong": "잘못된 일",
   "zero-interest": "이자율이 영인"
 });
