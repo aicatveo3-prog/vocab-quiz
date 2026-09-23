@@ -1691,7 +1691,6 @@ window.GLOSS = {
   "inappropriate":"부적절한",
   "inattentive":"부주의한",
   "inaudible":"들리지 않는",
-  "indifferent":"무관심한",
   "individual":"개별적인",
   "indulge in":"~에 탐닉하다",
   "insufficient":"불충분한",

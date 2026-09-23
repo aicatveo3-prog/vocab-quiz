@@ -749,7 +749,88 @@ window.VOCAB_I = [
      concern·empathy)이라 갈래를 늘리지 않고 한 갈래로 두었다. 원본도 한 갈래다. */
   { word:"indifference", pron:"인디퍼런스", pos:"n", level:"B2", meanings:["무관심"],
     syn:["apathy","detachment","unconcern"], ant:["concern"],
-    ex:[{ s:"Her apparent {{}} to the news surprised everyone.", f:"indifference", ko:"그 소식에 대한 그녀의 명백한 무관심이 모두를 놀라게 했다." }] }
+    ex:[{ s:"Her apparent {{}} to the news surprised everyone.", f:"indifference", ko:"그 소식에 대한 그녀의 명백한 무관심이 모두를 놀라게 했다." }] },
+
+  /* 승격 ① — GLOSS '무관심한' 과 글자까지 같다. 참조가 5곳(ardent·avid·curious·
+     empathetic·enthusiastic)이라 갈래를 늘리지 않았다. 원본도 한 갈래다.
+     사전 항목이 words.js 와 words-c.js 두 곳에 중복으로 있었다 — 둘 다 지웠다.
+     indifference 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"indifferent", pron:"인디퍼런트", pos:"adj", level:"B2", meanings:["무관심한"],
+    syn:["apathetic","unconcerned","detached"], ant:["enthusiastic"],
+    ex:[{ s:"He seemed utterly {{}} to the outcome of the vote.", f:"indifferent", ko:"그는 투표 결과에 완전히 무관심해 보였다." }] },
+
+  /* 승격 ① — GLOSS '토착의, 원주민의' 를 글자까지 지켰다. aboriginal(syn) 이
+     참조하므로 원본의 '자생의' 대신 사전 쪽 '원주민의' 를 남겼다. */
+  { word:"indigenous", pron:"인디저너스", pos:"adj", level:"C1", meanings:["토착의","원주민의"],
+    syn:["aboriginal","native","local"], ant:["foreign"],
+    ex:[{ s:"These plants are {{}} to the highlands of Peru.", f:"indigenous", ko:"이 식물들은 페루 고지대에 토착한 것이다." }] },
+
+  /* indigenous 와 앞 여섯 글자가 같지만 어원이 무관하고 품사도 달라(adj/n)
+     같은 보드에 안 온다. */
+  { word:"indigestion", pron:"인디제스천", pos:"n", level:"B2", meanings:["소화 불량"],
+    syn:["dyspepsia","upset stomach","heartburn"],
+    ex:[{ s:"Eating too quickly often causes {{}}.", f:"indigestion", ko:"너무 빨리 먹으면 소화 불량을 자주 일으킨다." }] },
+
+  { word:"indignant", pron:"인디그넌트", pos:"adj", level:"C1", meanings:["화난","분개한"],
+    syn:["outraged","resentful","incensed"],
+    ex:[{ s:"She was {{}} at being left off the invitation list.", f:"indignant", ko:"그녀는 초청 명단에서 빠진 것에 분개했다." }] },
+
+  { word:"indiscriminate", pron:"인디스크리머넛", pos:"adj", level:"C1", meanings:["무분별한","지각없는"],
+    syn:["random","unselective","sweeping"], ant:["selective"],
+    ex:[{ s:"The report condemned the {{}} use of pesticides.", f:"indiscriminate", ko:"그 보고서는 살충제의 무분별한 사용을 규탄했다." }] },
+
+  /* ── 챕터 8 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '없어서는 안 될' 을 첫 자리에 지켰다. essential(syn) 이 참조한다.
+     원본 첫 뜻 '필수적인' 은 뒤에 올 integral 과 겹쳐, 사전 쪽 표현으로 갈랐다. */
+  { word:"indispensable", pron:"인디스펜서블", pos:"adj", level:"B2", meanings:["없어서는 안 될","불가결한"],
+    syn:["essential","vital","crucial"], ant:["dispensable"],
+    ex:[{ s:"A good dictionary is {{}} for serious study.", f:"indispensable", ko:"좋은 사전은 본격적인 공부에 없어서는 안 된다." }] },
+
+  /* 승격 ① — GLOSS '세뇌시키다' 를 첫 자리에 지켰다. brainwash(syn) 가 참조한다.
+     원본 첫 뜻은 '주입하다' 였는데 뒤에 올 instill('스며들게 하다, 주입시키다')과
+     겹쳐, 사전 쪽을 앞에 두고 '사상을 주입하다' 로 풀어 썼다. */
+  { word:"indoctrinate", pron:"인닥트러네이트", pos:"v", level:"C1", meanings:["세뇌시키다","사상을 주입하다"],
+    syn:["brainwash","condition","propagandize"],
+    ex:[{ s:"The regime sought to {{}} children through school textbooks.", f:"indoctrinate", ko:"그 정권은 학교 교과서를 통해 아이들을 세뇌시키려 했다." }] },
+
+  { word:"indolent", pron:"인덜런트", pos:"adj", level:"C2", meanings:["게으른","나태한"],
+    syn:["lazy","idle","sluggish"], ant:["diligent"],
+    ex:[{ s:"The long humid summer made everyone {{}}.", f:"indolent", ko:"길고 습한 여름은 모두를 게으르게 만들었다." }] },
+
+  { word:"indubitable", pron:"인두버터블", pos:"adj", level:"C2", meanings:["의심의 여지가 없는","명백한"],
+    syn:["unquestionable","undeniable","certain"], ant:["doubtful"],
+    ex:[{ s:"The evidence of warming is now {{}}.", f:"indubitable", ko:"온난화의 증거는 이제 의심의 여지가 없다." }] },
+
+  { word:"induce", pron:"인듀스", pos:"v", level:"C1", meanings:["설득하다","유발하다"],
+    syn:["persuade","bring on","prompt"],
+    ex:[{ s:"Nothing could {{}} him to change his mind.", f:"induce", ko:"어떤 것도 그가 마음을 바꾸도록 설득할 수 없었다." }] },
+
+  { word:"indulge", pron:"인덜지", pos:"v", level:"B2", meanings:["마음껏 하다","채우다"],
+    syn:["pamper","gratify","spoil"],
+    ex:[{ s:"On weekends she likes to {{}} in long hot baths.", f:"indulge", ko:"주말에 그녀는 길고 뜨거운 목욕을 마음껏 즐기기를 좋아한다." }] },
+
+  /* indulge 와 어근이 같지만 품사가 달라(v/adj) 같은 보드에 안 온다.
+     G 세트 generous 의 뜻이 '관대한' 이라 첫 자리는 '너그러운' 으로 두었다. */
+  { word:"indulgent", pron:"인덜전트", pos:"adj", level:"C1", meanings:["너그러운","관대한"],
+    syn:["lenient","permissive","tolerant"], ant:["strict"],
+    ex:[{ s:"His {{}} grandparents never refused him anything.", f:"indulgent", ko:"너그러운 그의 조부모는 그에게 어떤 것도 거절하지 않았다." }] },
+
+  { word:"industrial", pron:"인더스트리얼", pos:"adj", level:"B1", meanings:["산업의","공업의"],
+    syn:["manufacturing","mechanized","commercial"],
+    ex:[{ s:"The city grew up around its {{}} district.", f:"industrial", ko:"그 도시는 공업 지구를 중심으로 성장했다." }] },
+
+  /* industrial 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
+     원본은 '산업' 한 갈래인데, 바로 뒤 industry figure 가 '업계' 쪽 뜻을 쓰므로
+     둘째 갈래로 '업계' 를 붙였다. */
+  { word:"industry", pron:"인더스트리", pos:"n", level:"B1", meanings:["산업","업계"],
+    syn:["business","commerce","trade"],
+    ex:[{ s:"The tourism {{}} employs thousands of local people.", f:"industry", ko:"관광 산업은 수천 명의 지역 주민을 고용한다." }] },
+
+  /* 원본 뜻 '업계 인물' 은 무슨 말인지 모호해 '업계의 유력 인사' 로 고쳤다.
+     굳어진 관용구가 아니라 느슨한 결합이어서 유의어도 같은 결의 표현으로 두었다. */
+  { word:"industry figure", pron:"인더스트리 피규어", pos:"phr", level:"C1", meanings:["업계의 유력 인사"],
+    syn:["leading player","industry veteran","prominent name"] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -764,6 +845,7 @@ Object.assign(window.GLOSS, {
   "amid": "~의 한복판에",
   "animate": "살아 있는",
   "answering": "응답하는",
+  "apathetic": "시들한, 심드렁한",
   "approaching": "다가오는",
   "approving of": "~을 승인하여",
   "as against": "~와 대비하여",
@@ -775,6 +857,7 @@ Object.assign(window.GLOSS, {
   "beg": "간청하다",
   "betterment": "개량",
   "brazen": "낯 두꺼운",
+  "bring on": "불러오다",
   "brooding": "알을 품는 일",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
@@ -801,12 +884,14 @@ Object.assign(window.GLOSS, {
   "deter": "막다, 억제하다",
   "different": "다른",
   "disjointed": "조리가 없는",
+  "dispensable": "없어도 되는",
   "disrespectful": "예의 없는",
   "distinguishable": "구별할 수 있는",
   "doctrinal": "교리상의",
   "dogmatic": "독단적인",
   "down the road": "앞으로 가면",
   "driving force": "추진 동력",
+  "dyspepsia": "소화 장애",
   "emblematic": "상징적인",
   "emboss": "도드라지게 새기다",
   "emigration": "국외 이주",
@@ -830,6 +915,7 @@ Object.assign(window.GLOSS, {
   "garbled": "뒤죽박죽인",
   "hallucination": "환각",
   "hatching": "부화",
+  "heartburn": "가슴 쓰림",
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
@@ -862,10 +948,12 @@ Object.assign(window.GLOSS, {
   "incalculable": "헤아릴 수 없이 큰",
   "incarcerate": "수감하다",
   "incarceration": "수감",
+  "incensed": "노발대발한",
   "indecipherable": "판독할 수 없는",
   "indistinguishable": "구별할 수 없는",
   "individuality": "개성, 특성",
   "induction": "취임시킴, 유도",
+  "industry veteran": "업계 베테랑",
   "inert": "반응이 없는",
   "inexperience": "미숙, 경험 부족",
   "inference": "추론",
@@ -884,16 +972,21 @@ Object.assign(window.GLOSS, {
   "knowledge": "지식",
   "latency": "잠재 상태",
   "lawful": "합법적인",
+  "leading player": "주요 인물",
   "leaning": "기울어짐, 선호",
   "legendary": "전설적인",
   "legible": "읽기 쉬운",
+  "lenient": "처벌이 가벼운",
   "lifeless": "생명이 없는",
   "light up": "환하게 밝히다",
   "literate": "글을 읽고 쓸 수 있는",
+  "local": "그 지역의",
   "looming": "곧 닥칠 듯한",
   "make do": "있는 것으로 때우다",
   "make-believe": "가상의, 거짓의",
+  "manufacturing": "제조의",
   "meanwhile": "한편으로는",
+  "mechanized": "기계화된",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
@@ -911,15 +1004,19 @@ Object.assign(window.GLOSS, {
   "optimal": "최적의",
   "optimally": "최적으로",
   "over time": "시간이 지나면서",
+  "pamper": "애지중지하다",
   "partisan": "당파적인",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
+  "permissive": "제약이 느슨한",
   "personally": "개인적으로, 직접",
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
   "primeval": "원시의, 태고의",
+  "prominent name": "이름난 인물",
+  "propagandize": "선전하다",
   "propel": "나아가게 하다",
   "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
@@ -936,6 +1033,7 @@ Object.assign(window.GLOSS, {
   "sameness": "동일성, 똑같음",
   "scrawled": "갈겨쓴",
   "secondary": "이차적인",
+  "selective": "가려서 하는",
   "selfhood": "자아, 개체성",
   "separately": "따로따로",
   "shameless": "부끄러움을 모르는",
@@ -945,6 +1043,7 @@ Object.assign(window.GLOSS, {
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
+  "spoil": "버릇없게 만들다",
   "spontaneous": "즉흥적인, 자발적인",
   "spur": "박차를 가하다",
   "stamp": "도장을 찍다",
@@ -967,6 +1066,7 @@ Object.assign(window.GLOSS, {
   "unawareness": "알지 못함",
   "unbelievable": "믿을 수 없는",
   "unbelievably": "믿을 수 없을 만큼",
+  "undeniable": "부인할 수 없는",
   "under way": "진행 중에",
   "undeveloped": "발달하지 않은",
   "uneducated": "교육받지 못한",
@@ -975,6 +1075,7 @@ Object.assign(window.GLOSS, {
   "unintelligible": "알아들을 수 없는",
   "unlawful": "위법의",
   "unlettered": "무학의",
+  "unquestionable": "의문의 여지가 없는",
   "unreachable": "닿을 수 없는",
   "unreadable": "읽을 수 없는",
   "unrealistic": "현실성 없는",
@@ -983,8 +1084,10 @@ Object.assign(window.GLOSS, {
   "unremarkable": "특별할 것 없는",
   "unschooled": "학교 교육을 받지 않은",
   "unseemly": "온당하지 못한",
+  "unselective": "가리지 않는",
   "unspoken": "입 밖에 내지 않은",
   "untreatable": "치료할 수 없는",
+  "upset stomach": "배탈",
   "utopianism": "유토피아주의",
   "vacillation": "갈팡질팡함",
   "verification": "입증, 검증",
