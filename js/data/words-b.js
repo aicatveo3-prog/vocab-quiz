@@ -980,7 +980,6 @@ Object.assign(window.GLOSS, {
   "lend to":"~에게 빌려주다",
   "lengthy":"장황한, 아주 긴",
   "let in":"들이다, 통과시키다",
-  "loosen":"풀다, 느슨하게 하다",
   "lose":"지다, 잃다",
   "mediocre":"평범한, 그저 그런",
   "misery":"고통, 비참",

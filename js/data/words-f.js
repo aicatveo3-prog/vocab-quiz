@@ -1587,7 +1587,6 @@ Object.assign(window.GLOSS, {
   "ladylike":"숙녀다운",
   "lavish meal":"성찬",
   "let rise":"부풀게 하다",
-  "lush":"우거진, 푸르른",
   "make a show of":"~하는 티를 내다",
   "masculine":"남성적인",
   "plant food":"식물 영양제",

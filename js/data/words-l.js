@@ -585,7 +585,103 @@ window.VOCAB_L = [
     syn:["anticipate","await eagerly","be eager for"] },
 
   { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],
-    syn:["mirror","reflector","reflecting surface"] }
+    syn:["mirror","reflector","reflecting surface"] },
+
+  /* ── 챕터 6 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '느슨하게 하다' 를 첫 자리에 지켰다. bind(ant) 가 참조한다.
+     원본의 '풀다' 를 둘째 자리에 붙였다. */
+  { word:"loosen", pron:"루슨", pos:"v", level:"B2", meanings:["느슨하게 하다","풀다"],
+    syn:["slacken","untie","relax"], ant:["bind"],
+    ex:[{ s:"He tried in vain to {{}} the rusted bolt.", f:"loosen", ko:"그는 녹슨 볼트를 느슨하게 하려 헛되이 애썼다." }] },
+
+  { word:"lore", pron:"로", pos:"n", level:"C2", meanings:["구전 지식"],
+    syn:["folklore","oral knowledge","handed-down wisdom"],
+    ex:[{ s:"Local {{}} says the well never runs dry.", f:"lore", ko:"지역 구전 지식에 따르면 그 우물은 마르지 않는다." }] },
+
+  { word:"lorry", pron:"로리", pos:"n", level:"B2", meanings:["화물 자동차","트럭"],
+    syn:["truck","van","heavy goods vehicle"],
+    ex:[{ s:"A broken-down {{}} blocked the narrow lane.", f:"lorry", ko:"고장 난 화물 자동차가 좁은 길을 막았다." }] },
+
+  { word:"lose one's temper", pron:"루즈 원스 템퍼", pos:"phr", level:"B2", meanings:["화내다","흥분하다"],
+    syn:["blow up","lose control","fly into a rage"] },
+
+  { word:"lot", pron:"랏", pos:"n", level:"B2", meanings:["제비뽑기","땅"],
+    syn:["draw","parcel of land","plot"],
+    ex:[{ s:"The winner was chosen by {{}}.", f:"lot", ko:"승자는 제비뽑기로 뽑혔다." }] },
+
+  /* 승격 ① — GLOSS '형편없는, 지독한' 이 원본과 같은 갈래다. 참조는 없고
+     PRON 도 없었다. */
+  { word:"lousy", pron:"라우지", pos:"adj", level:"B2", meanings:["형편없는","지독한"],
+    syn:["terrible","awful","dreadful"],
+    ex:[{ s:"The weather stayed {{}} all week.", f:"lousy", ko:"날씨가 일주일 내내 형편없었다." }] },
+
+  { word:"lowbrow", pron:"로브라우", pos:"adj", level:"C2", meanings:["이해가 쉬운","저급한"],
+    syn:["unsophisticated","mass-market","undemanding"], ant:["highbrow"],
+    ex:[{ s:"Critics dismissed the show as {{}} entertainment.", f:"lowbrow", ko:"비평가들은 그 쇼를 저급한 오락으로 일축했다." }] },
+
+  { word:"low-budget", pron:"로 버짓", pos:"adj", level:"B2", meanings:["저예산의"],
+    syn:["cheaply made","shoestring","inexpensive"],
+    ex:[{ s:"The film was a {{}} independent production.", f:"low-budget", ko:"그 영화는 저예산 독립 제작물이었다." }] },
+
+  /* 승격 ① — GLOSS '낮추다, 내리다' 를 글자까지 지켰다. elevate(ant) 가 참조하므로
+     원본의 '떨어뜨리다' 대신 사전 쪽 '내리다' 를 남겼다. */
+  { word:"lower", pron:"로워", pos:"v", level:"B1", meanings:["낮추다","내리다"],
+    syn:["reduce","drop","bring down"], ant:["elevate"],
+    ex:[{ s:"Please {{}} your voice in the reading room.", f:"lower", ko:"열람실에서는 목소리를 낮춰 주세요." }] },
+
+  /* 승격 ① — GLOSS '명료한, 맑은' 을 글자까지 지켰다. 참조가 3곳(coherent·
+     delirious·incoherent)이고 뒤 하나는 I 세트 표제어다. 원본('명확한, 맑은')과
+     같은 갈래다. */
+  { word:"lucid", pron:"루시드", pos:"adj", level:"C1", meanings:["명료한","맑은"],
+    syn:["coherent","intelligible","clear-headed"], ant:["incoherent"],
+    ex:[{ s:"She gave a {{}} account of the accident.", f:"lucid", ko:"그녀는 그 사고에 대해 명료한 설명을 했다." }] },
+
+  { word:"luggage", pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
+    syn:["baggage","bags","suitcases"],
+    ex:[{ s:"Please keep your {{}} with you at all times.", f:"luggage", ko:"항상 수화물을 소지해 주세요." }] },
+
+  /* 승격 ① — GLOSS '덩어리' 와 글자까지 같다. chunk(syn) 가 참조한다. */
+  { word:"lump", pron:"럼프", pos:"n", level:"B2", meanings:["덩어리"],
+    syn:["chunk","clod","mass"],
+    ex:[{ s:"Stir until no {{}} remains in the batter.", f:"lump", ko:"반죽에 덩어리가 남지 않을 때까지 저으세요." }] },
+
+  /* 승격 ① — GLOSS '유혹하다; 미끼' 를 글자까지 지켰다. attract(syn) 가 참조하므로
+     원본의 '꾀다, 유도하다' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
+  { word:"lure", pron:"루어", pos:"v", level:"B2", meanings:["유혹하다","미끼"],
+    syn:["attract","entice","tempt"],
+    ex:[{ s:"Bright colours {{}} insects to the flower.", f:"lure", ko:"밝은 색이 곤충을 그 꽃으로 유혹한다." }] },
+
+  /* 승격 ① — GLOSS '숨어 있다, 도사리다' 가 원본과 글자까지 같다. 참조는 없고
+     PRON 도 없었다. */
+  { word:"lurk", pron:"러크", pos:"v", level:"C1", meanings:["숨어 있다","도사리다"],
+    syn:["skulk","lie in wait","prowl"],
+    ex:[{ s:"Danger can {{}} even in shallow water.", f:"lurk", ko:"위험은 얕은 물에도 숨어 있을 수 있다." }] },
+
+  /* 승격 ① — 원본 뜻 '할당하다' 는 틀렸다(allot 과 혼동한 듯하다). lush 는 초목이
+     우거졌다는 뜻이다. 사전이 이미 '우거진, 푸르른' 이고 fertile(syn) 이 참조하므로
+     사전 쪽을 그대로 썼다 — 원본 오류가 승격으로 자동 교정된 자리다.
+     바로 뒤 luxuriant 는 '무성한' 으로 갈래가 갈린다. */
+  { word:"lush", pron:"러시", pos:"adj", level:"B2", meanings:["우거진","푸르른"],
+    syn:["fertile","verdant","overgrown"],
+    ex:[{ s:"The valley was {{}} after the spring rains.", f:"lush", ko:"그 골짜기는 봄비 뒤에 우거졌다." }] },
+
+  /* luxurious 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 영어에서도 흔히
+     헷갈리는 쌍인데, 뜻이 '무성한' 과 '사치스러운' 으로 뚜렷이 갈려 오히려
+     함께 익히기 좋다. */
+  { word:"luxuriant", pron:"럭주리언트", pos:"adj", level:"C1", meanings:["무성한","잘 자라는"],
+    syn:["lush","thriving","profuse"],
+    ex:[{ s:"Her {{}} hair fell well past her shoulders.", f:"luxuriant", ko:"그녀의 무성한 머리카락이 어깨 아래로 한참 내려왔다." }] },
+
+  /* 승격 ① — GLOSS 는 '호화로운' 인데 챕터 1의 lavish 가 그 뜻을 첫 자리로 쓴다.
+     참조가 없어 자유롭게 정할 수 있었으므로 원본의 '사치스러운' 을 앞에 두어 갈랐다. */
+  { word:"luxurious", pron:"럭주리어스", pos:"adj", level:"B2", meanings:["사치스러운","호화로운"],
+    syn:["opulent","plush","deluxe"], ant:["plain"],
+    ex:[{ s:"They stayed in a {{}} seaside hotel.", f:"luxurious", ko:"그들은 사치스러운 해변 호텔에 머물렀다." }] },
+
+  { word:"lyric", pron:"리릭", pos:"n", level:"C1", meanings:["서정시","가사"],
+    syn:["verse","song words","poem"],
+    ex:[{ s:"The {{}} of the song is printed inside the sleeve.", f:"lyric", ko:"그 노래의 가사가 케이스 안에 인쇄되어 있다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -601,6 +697,8 @@ Object.assign(window.GLOSS, {
   "arduous": "몹시 힘든",
   "argumentation": "논증 과정",
   "await eagerly": "간절히 기다리다",
+  "baggage": "여행 가방류",
+  "bags": "가방들",
   "be eager for": "~을 몹시 바라다",
   "be outpaced": "앞질리다",
   "be situated": "위치해 있다",
@@ -612,17 +710,22 @@ Object.assign(window.GLOSS, {
   "booze": "술",
   "bound": "껑충 뛰다",
   "bound off": "껑충 뛰어 내려가다",
+  "bring down": "끌어내리다",
   "broad-minded": "아량이 넓은",
   "buried explosive": "땅에 묻은 폭발물",
   "cabin": "오두막",
   "cap": "마개",
   "cattle": "소 떼",
+  "cheaply made": "싸게 만든",
+  "clear-headed": "머리가 맑은",
+  "clod": "흙덩이",
   "coating": "입힌 막",
   "composed": "차분한",
   "court case": "법정 사건",
   "crippled": "다리를 못 쓰는",
   "dawdle": "느릿느릿 꾸물대다",
   "decipherable": "판독할 수 있는",
+  "deluxe": "특급의",
   "disappoint": "기대를 깨다",
   "dismissal": "해임",
   "drudgery": "고된 일",
@@ -637,18 +740,22 @@ Object.assign(window.GLOSS, {
   "featherweight": "깃털처럼 가벼운",
   "flanking": "측면을 이루는",
   "flippancy": "경박한 말투",
+  "fly into a rage": "벌컥 화를 내다",
   "flyer": "광고 쪽지",
   "folk tale": "민간 설화",
+  "folklore": "민간 전승",
   "friendless": "벗이 없는",
   "frivolity": "시시한 짓",
   "gecko": "게코도마뱀",
   "guesthouse": "민박집",
   "guide": "안내하다",
   "handbill": "살포용 광고지",
+  "handed-down wisdom": "대대로 전해진 지혜",
   "hang around": "어슬렁거리며 남다",
   "hard drink": "도수 높은 술",
   "have an aversion to": "~을 몹시 꺼리다",
   "heavy": "무거운",
+  "heavy goods vehicle": "대형 화물차",
   "highbrow": "교양 수준이 높은",
   "hobble": "다리를 절며 걷다",
   "hobbling": "다리를 끌며 걷는",
@@ -673,11 +780,13 @@ Object.assign(window.GLOSS, {
   "less advanced": "덜 발전한",
   "lessor": "임대인",
   "library holdings": "도서관 소장 자료",
+  "lie in wait": "숨어서 기다리다",
   "lightheartedness": "마음 가벼움",
   "limping": "다리를 저는",
   "litigation": "소송 절차",
   "long life": "오랜 수명",
   "make redundant": "정리 해고하다",
+  "mass-market": "대중 시장용의",
   "mine": "지뢰, 광산",
   "mirror": "거울",
   "mostly": "대부분",
@@ -686,16 +795,23 @@ Object.assign(window.GLOSS, {
   "of one mind": "한마음인",
   "omit": "빠뜨리다",
   "opulent": "사치스러운",
+  "oral knowledge": "입으로 전해진 지식",
   "ordinary person": "보통 사람",
+  "overgrown": "웃자란",
+  "parcel of land": "한 필지의 땅",
   "permissible": "허용되는",
   "philology": "문헌학",
   "pin down": "범위를 좁혀 짚다",
   "pine": "애타게 그리다",
+  "plush": "푹신하고 고급스러운",
+  "poem": "시",
   "portable": "휴대하기 좋은",
   "predominantly": "주로, 대부분은",
   "probable": "있을 법한",
+  "profuse": "넘칠 만큼 많은",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",
+  "prowl": "살금살금 돌아다니다",
   "rapid-fire": "속사포 같은",
   "readable": "알아볼 수 있는",
   "recline": "몸을 뒤로 젖히다",
@@ -705,6 +821,7 @@ Object.assign(window.GLOSS, {
   "reflecting surface": "빛을 되비추는 면",
   "reflector": "반사기",
   "regrettable": "유감스러운",
+  "relax": "헐겁게 하다",
   "rent out": "세를 놓다",
   "reptile": "파충류",
   "research facility": "연구 시설",
@@ -716,20 +833,26 @@ Object.assign(window.GLOSS, {
   "seepage": "스며 나옴",
   "set down": "내려놓다",
   "set in motion": "움직이게 하다",
+  "shoestring": "아주 적은 돈의",
   "short-term": "단기간의",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "skip": "건너뛰다",
+  "skulk": "몰래 숨어 다니다",
+  "slacken": "늘어지게 하다",
   "slant": "비스듬해지다",
   "soaring": "치솟은",
   "solitary": "홀로 지내는",
+  "song words": "노래 가사",
   "sound": "빈틈없는, 타당한",
   "spearhead": "앞장서다",
   "spirits": "증류주",
   "spring from": "뛰어 벗어나다",
   "stratum": "지층",
   "suede": "스웨이드 가죽",
+  "suitcases": "여행용 가방",
   "sumptuous": "값비싸고 멋진",
+  "tempt": "마음을 끌다",
   "tenant": "세입자",
   "testing room": "시험실",
   "time lag": "시간차",
@@ -738,15 +861,22 @@ Object.assign(window.GLOSS, {
   "toil": "고생스러운 노동",
   "towering": "우뚝 솟은",
   "trash": "폐기물",
+  "truck": "트럭",
   "true to size": "크기가 실제와 맞는",
   "tutorial": "개별 지도 수업",
+  "undemanding": "머리를 안 써도 되는",
   "underdeveloped": "개발이 덜 된",
   "uneaten": "먹지 않은",
   "unflappable": "동요하지 않는",
   "unhurried": "서두르지 않는",
   "unlikely": "있을 것 같지 않은",
+  "unsophisticated": "세련되지 않은",
+  "untie": "매듭을 풀다",
+  "van": "소형 화물차",
   "vault": "짚고 뛰어넘다",
   "verbatim": "한마디도 안 빼고",
+  "verdant": "푸른 풀로 덮인",
+  "verse": "운문",
   "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",
   "watery substance": "물기 있는 물질",
