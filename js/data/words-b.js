@@ -522,7 +522,7 @@ window.VOCAB_B = [
     ex:[{ s:"Schools closed as the {{}} buried the town.", f:"blizzard", ko:"눈보라가 그 도시를 뒤덮으면서 학교들이 문을 닫았다." }] },
 
   { word:"block out", pron:"블록 아웃", pos:"phr", level:"B2", meanings:["가리다","대강의 계획을 세우다"],
-    syn:["shut out","screen off","obscure"], ant:["let in"] },
+    syn:["shut out","screen off","hide from view"], ant:["let in"] },
 
   { word:"blood sugar", pron:"블러드 슈거", pos:"n", level:"B2", meanings:["혈당"],
     syn:["blood glucose","glucose level","sugar level"],
@@ -986,7 +986,6 @@ Object.assign(window.GLOSS, {
   "monolingual":"1개 국어만 쓰는",
   "narrowness":"좁음",
   "one-way":"일방통행의, 편도의",
-  "opponent":"반대자, 상대",
   "ordinary":"평범한, 보통의",
   "participant":"참가자, 당사자",
   "peace":"평화",

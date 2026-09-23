@@ -1794,7 +1794,6 @@ Object.assign(window.GLOSS, {
   "not allowed":"허용되지 않는",
   "note at the bottom":"아래쪽에 다는 설명",
   "off-limits":"출입이 금지된",
-  "on behalf of":"~을 대신하여",
   "ordinary people":"보통 사람들",
   "out of regard for":"~을 생각해서",
   "people":"사람들",

@@ -982,7 +982,7 @@ window.VOCAB_I = [
     ex:[{ s:"The conditions in the holding camp were {{}}.", f:"inhumane", ko:"그 수용소의 환경은 몰인정했다." }] },
 
   { word:"initial", pron:"이니셜", pos:"adj", level:"B1", meanings:["처음의","최초의"],
-    syn:["first","opening","preliminary"], ant:["final"],
+    syn:["first","earliest","preliminary"], ant:["final"],
     ex:[{ s:"The {{}} response to the proposal was positive.", f:"initial", ko:"그 제안에 대한 처음의 반응은 긍정적이었다." }] },
 
   /* 승격 ① — GLOSS '시작하다, 착수하다' 를 글자까지 지켰다. commence(syn) 이
@@ -2019,17 +2019,11 @@ Object.assign(window.GLOSS, {
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
   "null": "무효인",
-  "objective": "객관적인, 목표",
-  "objectively": "객관적으로",
   "occupant": "점유자",
-  "occupy": "차지하다",
-  "occurrence": "일어남, 사례",
   "off-putting": "꺼려지게 하는",
   "on and off": "이따금",
   "on its own": "그 자체만으로",
   "on the side of": "~의 편에 서서",
-  "on-the-spot": "현장에서 바로 하는",
-  "optimal": "최적의",
   "optimally": "최적으로",
   "over time": "시간이 지나면서",
   "overpowering": "압도하는",

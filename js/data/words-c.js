@@ -541,7 +541,7 @@ window.VOCAB_C = [
     ex:[{ s:"Every {{}} sent one elder to the council.", f:"clan", ko:"각 씨족은 원로 한 명을 회의에 보냈다." }] },
 
   { word:"clarify", pron:"클래러파이", pos:"v", level:"B2", meanings:["명확하게 하다","분명히 하다"],
-    syn:["explain","elucidate","specify"], ant:["obscure"],
+    syn:["explain","elucidate","specify"], ant:["make unclear"],
     ex:[{ s:"Let me {{}} what I meant earlier.", f:"clarify", ko:"앞서 내가 뜻한 바를 분명히 하겠다." }] },
 
   { word:"clarity", pron:"클래러티", pos:"n", level:"B2", meanings:["명확성","명료성"],
@@ -938,7 +938,7 @@ window.VOCAB_C = [
     ex:[{ s:"One easy win made the team {{}}.", f:"complacent", ko:"한 번의 쉬운 승리가 그 팀을 안주하게 만들었다." }] },
 
   { word:"complain", pron:"컴플레인", pos:"v", level:"B1", meanings:["불평하다","항의하다"],
-    syn:["protest","grumble","object"], ant:["praise"],
+    syn:["protest","grumble","object to"], ant:["praise"],
     ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
     gov:{ prep:["about","of","to"], pat:"complain {{}} the noise", usage:"complain about ~ : ~에 대해 불평하다" } },
 
@@ -2006,14 +2006,9 @@ Object.assign(window.GLOSS, {
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
-  "obey":"따르다, 복종하다",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
-  "obscure":"잘 알려지지 않은; 모호하게 하다",
-  "obstruct":"방해하다, 막다",
-  "occasional":"때때로의, 간간이 있는",
   "open":"공개된, 열린",
-  "opening":"시작, 개막",
   "optional":"선택적인",
   "orderly":"정돈된, 질서 있는",
   "original":"원본, 원래의",

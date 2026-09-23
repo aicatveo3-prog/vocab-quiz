@@ -1463,7 +1463,6 @@ Object.assign(window.GLOSS, {
   "obsession": "집착",
   "obstetric": "산과의",
   "obstetric nurse": "산과 간호사",
-  "offence": "위법 행동",
   "old-world": "옛 정취의",
   "one-man act": "혼자 하는 공연",
   "one-partner union": "한 상대와의 결합",

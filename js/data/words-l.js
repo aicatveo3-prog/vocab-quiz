@@ -792,7 +792,6 @@ Object.assign(window.GLOSS, {
   "myth": "신화",
   "nonspecialist": "전문가가 아닌 사람",
   "of one mind": "한마음인",
-  "omit": "빠뜨리다",
   "opulent": "사치스러운",
   "oral knowledge": "입으로 전해진 지식",
   "ordinary person": "보통 사람",

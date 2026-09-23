@@ -2059,7 +2059,6 @@ Object.assign(window.GLOSS, {
   "laid-back":"서두르지 않는, 태평한",
   "leading article":"주요 논설",
   "mundane":"평범한, 일상적인",
-  "odd":"이상한, 색다른",
   "opinion piece":"의견 기고문",
   "poisonous":"유독한, 독이 있는",
   "potency":"효력, 위력",

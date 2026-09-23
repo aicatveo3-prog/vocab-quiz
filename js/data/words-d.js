@@ -837,7 +837,7 @@ window.VOCAB_D = [
     ex:[{ s:"Chronic pain can be a deeply {{}} condition.", f:"disabling", ko:"만성 통증은 심신을 크게 무력하게 하는 질환일 수 있다." }] },
 
   { word:"disagree", pron:"디서그리", pos:"v", level:"B1", meanings:["동의하지 않다","일치하지 않다"],
-    syn:["differ","dissent","object"], ant:["agree"],
+    syn:["differ","dissent","object to"], ant:["agree"],
     ex:[{ s:"Experts still {{}} about the cause of the collapse.", f:"disagree", ko:"전문가들은 붕괴 원인에 대해 여전히 의견이 다르다." }] },
 
   { word:"disagreeable", pron:"디서그리어블", pos:"adj", level:"C1", meanings:["불쾌한","비위에 거슬리는"],
@@ -853,7 +853,7 @@ window.VOCAB_D = [
     ex:[{ s:"Fans were deeply {{}} by the team's performance.", f:"disappointed", ko:"팬들은 그 팀의 경기력에 크게 실망했다." }] },
 
   { word:"disapprove", pron:"디서프루브", pos:"v", level:"B2", meanings:["못마땅해하다","반대하다"],
-    syn:["object","frown on","condemn"], ant:["approve"],
+    syn:["object to","frown on","condemn"], ant:["approve"],
     ex:[{ s:"Her parents strongly {{}} of the whole plan.", f:"disapprove", ko:"그녀의 부모는 그 계획 전체를 강하게 못마땅해한다." }] },
 
   { word:"disassociate", pron:"디서소시에이트", pos:"v", level:"C2", meanings:["관계를 끊다","떼어 놓다"],
@@ -1589,7 +1589,6 @@ Object.assign(window.GLOSS, {
   "mark down":"값을 내리다",
   "markdown":"가격 인하",
   "mobilize":"동원하다",
-  "offer":"제공하다; 제안",
   "originating in":"~에서 비롯하는",
   "oust":"축출하다, 밀어내다",
   "overthrow":"전복시키다, 타도하다",
@@ -1650,7 +1649,6 @@ Object.assign(window.GLOSS, {
   "hopelessly":"절망적으로, 어찌할 수 없이",
   "hopelessness":"절망, 희망 없음",
   "lay waste":"황폐하게 만들다",
-  "offspring":"자식, 자손",
   "persistence":"끈기, 고집",
   "preferable":"더 나은, 선호되는",
   "providence":"섭리, 신의 뜻",
@@ -1760,7 +1758,6 @@ Object.assign(window.GLOSS, {
   "masquerade":"가면, 위장",
   "mismatch":"불일치, 부조화",
   "obnoxious":"아주 불쾌한, 몹시 기분 나쁜",
-  "offensive":"불쾌한, 공격적인",
   "perceive":"인지하다, 감지하다",
   "pupil":"학생, 제자",
   "rebate":"환급금, 할인",
@@ -1809,7 +1806,6 @@ Object.assign(window.GLOSS, {
   "misrepresentation":"잘못된 표현, 허위 진술",
   "misshapen":"모양이 이상한, 일그러진",
   "objectionable":"불쾌한, 문제가 되는",
-  "opposition":"반대, 저항",
   "parity":"동등, 등가",
   "qualify":"자격을 얻다, 자격을 주다",
   /* refute 가 이미 '반박하다, 논박하다'다 — 글자까지 같으면 피드백 두 줄이
