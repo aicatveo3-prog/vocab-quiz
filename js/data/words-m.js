@@ -1065,7 +1065,121 @@ window.VOCAB_M = [
      원본은 '도덕적인' 한 갈래인데 갈래를 줄이면 그 세 곳이 바뀌므로 그대로 두었다. */
   { word:"moral", pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
     syn:["ethical","principled","upright"], ant:["immoral"],
-    ex:[{ s:"She felt a {{}} duty to speak up.", f:"moral", ko:"그녀는 목소리를 낼 도덕적 의무를 느꼈다." }] }
+    ex:[{ s:"She felt a {{}} duty to speak up.", f:"moral", ko:"그녀는 목소리를 낼 도덕적 의무를 느꼈다." }] },
+
+  /* ── 챕터 10 ────────────────────────────── */
+
+  /* moral·morality 와 앞 다섯 글자가 같다. morality 와는 품사도 같지만(n)
+     뜻이 '사기' 와 '도덕' 으로 완전히 달라 무리가 없다. */
+  { word:"morale", pron:"머랠", pos:"n", level:"C1", meanings:["사기","의욕"],
+    syn:["team spirit","fighting spirit","group confidence"],
+    ex:[{ s:"Staff {{}} improved after the pay rise.", f:"morale", ko:"급여 인상 후 직원 사기가 좋아졌다." }] },
+
+  /* 승격 ① — GLOSS '도덕, 도의' 를 글자까지 지켰다. conscience(syn) 가 참조하므로
+     원본의 '윤리성' 대신 사전 쪽 '도의' 를 남겼다. */
+  { word:"morality", pron:"머랠러티", pos:"n", level:"C1", meanings:["도덕","도의"],
+    syn:["conscience","ethics","virtue"],
+    ex:[{ s:"The debate soon turned on questions of {{}}.", f:"morality", ko:"그 토론은 곧 도덕의 문제로 옮겨 갔다." }] },
+
+  { word:"more often than not", pron:"모어 오픈 댄 낫", pos:"phr", level:"B2", meanings:["자주","대개"],
+    syn:["usually","as a rule","most of the time"] },
+
+  /* 원본 첫 뜻 '약' 은 한 글자여서 뜻으로 읽히지 않는다. '대략' 을 앞에 두었다. */
+  { word:"more or less", pron:"모어 오어 레스", pos:"phr", level:"B1", meanings:["대략","거의"],
+    syn:["roughly","approximately","just about"] },
+
+  /* 승격 ① — GLOSS '죽을 운명의; 치명적인' 을 글자까지 지켰다. 참조가 4곳
+     (deadly·fatal·immortal(ant)·lethal)이고 뒤 둘은 I·L 세트 표제어다.
+     원본 '영원히 살 수 없는' 은 같은 갈래인데 사전 쪽이 더 간결하다. */
+  { word:"mortal", pron:"모털", pos:"adj", level:"B2", meanings:["죽을 운명의","치명적인"],
+    syn:["deadly","fatal","lethal"], ant:["immortal"],
+    ex:[{ s:"He suffered a {{}} wound in the final battle.", f:"mortal", ko:"그는 마지막 전투에서 치명적인 상처를 입었다." }] },
+
+  /* mortal 과 앞 네 글자가 같지만 어근이 갈리고 품사도 달라(adj/n)
+     같은 보드에 안 온다. 원본의 동사 갈래('담보로 넣다')는 pos 가 n 이라 뺐다. */
+  { word:"mortgage", pron:"모기지", pos:"n", level:"C1", meanings:["융자","저당"],
+    syn:["home loan","property loan","secured debt"],
+    ex:[{ s:"They took out a thirty-year {{}} on the flat.", f:"mortgage", ko:"그들은 그 아파트에 30년 융자를 받았다." }] },
+
+  { word:"mother-in-law", pron:"머더 인 로", pos:"n", level:"B2", meanings:["장모","시어머니"],
+    syn:["wife's mother","husband's mother","in-law"],
+    ex:[{ s:"His {{}} lives just two streets away.", f:"mother-in-law", ko:"그의 장모는 두 블록 떨어진 곳에 산다." }] },
+
+  /* 승격 ① — GLOSS '동기를 부여하다' 를 첫 자리에 지켰다.
+     encourage(syn)·inspire(syn) 두 문제가 참조하고 뒤는 I 세트 표제어다.
+     원본의 '유도하다' 를 둘째 자리에 붙였다. */
+  { word:"motivate", pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
+    syn:["encourage","inspire","spur on"],
+    ex:[{ s:"Good teachers {{}} without applying pressure.", f:"motivate", ko:"좋은 교사는 압박을 주지 않고 동기를 부여한다." }] },
+
+  /* 승격 ① — GLOSS '동기 부여' 를 첫 자리에 지켰다. I 세트 incentive 가 참조한다.
+     원본의 '자극' 을 둘째 자리에 붙였다. */
+  { word:"motivation", pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
+    syn:["incentive","drive","impetus"],
+    ex:[{ s:"Her main {{}} was curiosity, not money.", f:"motivation", ko:"그녀의 주된 동기 부여는 돈이 아니라 호기심이었다." }] },
+
+  /* motivation·motive 와 품사가 다 n 이어서 같은 보드에 올 수 있다. 다만 뜻이
+     '동기 부여'·'동기를 부여하는 사람'·'동기' 로 갈려 짝을 고르는 데 무리가 없다. */
+  { word:"motivator", pron:"모터베이터", pos:"n", level:"C1", meanings:["동기를 부여하는 사람"],
+    syn:["driving force","inspirer","prime mover"],
+    ex:[{ s:"Fear is a poor long-term {{}}.", f:"motivator", ko:"두려움은 장기적으로 좋지 않은 동기 부여 요인이다." }] },
+
+  /* 원본 셋째 갈래 '주제' 는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"motive", pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
+    syn:["reason","grounds","rationale"],
+    ex:[{ s:"Police could find no clear {{}} for the theft.", f:"motive", ko:"경찰은 그 절도의 명확한 동기를 찾을 수 없었다." }] },
+
+  /* 챕터 4의 maxim 이 '격언, 좌우명' 을 쓰므로 이쪽은 '표어' 를 앞에 두었다. */
+  { word:"motto", pron:"마토", pos:"n", level:"B2", meanings:["표어","좌우명"],
+    syn:["slogan","watchword","catchphrase"],
+    ex:[{ s:"Their {{}} is safety before speed.", f:"motto", ko:"그들의 표어는 속도보다 안전이다." }] },
+
+  /* 승격 ① — GLOSS '애도하다, 슬퍼하다' 를 글자까지 지켰다. grieve(syn) 가
+     참조하므로 원본의 순서('슬퍼하다' 가 앞)가 아니라 사전 쪽을 남겼다.
+     챕터 8의 moan 과 한글 발음이 '몬' 으로 같다 — 영어 발음은 다르지만 한글
+     표기로는 구별되지 않는다. 뜻과 철자가 달라 학습에 방해가 되지 않는다. */
+  { word:"mourn", pron:"몬", pos:"v", level:"B2", meanings:["애도하다","슬퍼하다"],
+    syn:["grieve","lament","bewail"],
+    ex:[{ s:"The nation gathered to {{}} its losses.", f:"mourn", ko:"국민이 모여 그 손실을 애도했다." }] },
+
+  /* 승격 ① — GLOSS '다문화의' 와 같은 갈래다. cross-cultural(syn) 이 참조한다.
+     'multi-' 로 시작하는 낱말이 여기서 여덟 개 이어진다 — 알파벳 순이라 한 덩어리로
+     붙는다. 품사가 adj/n/v 로 갈리고 뜻도 서로 달라 같은 보드에서 헷갈리지 않는다. */
+  { word:"multicultural", pron:"멀티컬처럴", pos:"adj", level:"B2", meanings:["다문화의"],
+    syn:["cross-cultural","diverse","pluralistic"],
+    ex:[{ s:"The school serves a highly {{}} neighbourhood.", f:"multicultural", ko:"그 학교는 매우 다문화적인 동네를 담당한다." }] },
+
+  /* 원본 둘째 갈래 '멀티미디어' 는 외래어 그대로여서 뺐다. */
+  { word:"multimedia", pron:"멀티미디어", pos:"n", level:"B2", meanings:["다중매체"],
+    syn:["mixed media","audio-visual","cross-format"],
+    ex:[{ s:"The museum runs a {{}} exhibition this autumn.", f:"multimedia", ko:"그 박물관은 이번 가을 다중매체 전시를 운영한다." }] },
+
+  /* 원본의 명사 갈래('다국적 기업')는 pos 가 adj 라 담지 못했다. */
+  { word:"multinational", pron:"멀티내셔널", pos:"adj", level:"B2", meanings:["다국적의"],
+    syn:["international","global","cross-border"],
+    ex:[{ s:"A {{}} firm bought the local plant.", f:"multinational", ko:"다국적 회사가 그 지역 공장을 사들였다." }] },
+
+  /* 승격 ① — GLOSS '다수의, 복합적인' 을 글자까지 지켰다. complex(syn) 가
+     참조하므로 원본의 순서('복합의' 가 앞)가 아니라 사전 쪽을 남겼다.
+     원본 셋째 갈래 '배수의' 는 뺐다. */
+  { word:"multiple", pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
+    syn:["complex","numerous","manifold"], ant:["single"],
+    ex:[{ s:"The patient suffered {{}} injuries in the crash.", f:"multiple", ko:"그 환자는 사고로 다수의 부상을 입었다." }] },
+
+  { word:"multiply", pron:"멀터플라이", pos:"v", level:"B1", meanings:["증가시키다","곱하다"],
+    syn:["increase","proliferate","compound"], ant:["divide"],
+    ex:[{ s:"Bacteria {{}} rapidly in warm standing water.", f:"multiply", ko:"세균은 따뜻하게 고인 물에서 빠르게 증가한다." }] },
+
+  /* 승격 ① — GLOSS '여러 인종의' 를 첫 자리에 지켰다. I 세트 interracial 이 참조한다.
+     원본 첫 뜻 '다문화의' 는 multicultural 의 뜻이라 틀렸고, 원본의 '다인종의' 를
+     둘째 자리에 붙였다. */
+  { word:"multiracial", pron:"멀티레이셜", pos:"adj", level:"C1", meanings:["여러 인종의","다인종의"],
+    syn:["interracial","mixed-race","ethnically diverse"],
+    ex:[{ s:"The team is proudly {{}}.", f:"multiracial", ko:"그 팀은 자랑스럽게 여러 인종으로 이뤄져 있다." }] },
+
+  { word:"multitask", pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
+    syn:["juggle tasks","work in parallel","do several things at once"],
+    ex:[{ s:"Few people truly {{}} well under pressure.", f:"multitask", ko:"압박 속에서 동시에 여러 일을 정말 잘하는 사람은 드물다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1078,14 +1192,17 @@ Object.assign(window.GLOSS, {
   "arbitrate": "조정을 맡다",
   "archaic": "옛 시대의",
   "arrive in time": "시간에 맞춰 닿다",
+  "as a rule": "보통은",
   "at the same time": "동시에",
   "atmospheric": "대기의",
   "atmospheric science": "대기 과학",
   "atone for": "~을 벌충하다",
+  "audio-visual": "소리와 영상의",
   "aware": "알고 있는",
   "bad conduct": "나쁜 처신",
   "be logical": "논리에 맞다",
   "behave badly": "행동이 나쁘다",
+  "bewail": "한탄하다",
   "biochemical": "생화학의",
   "birth attendant": "출산을 돕는 사람",
   "blunder": "큰 실수",
@@ -1094,6 +1211,7 @@ Object.assign(window.GLOSS, {
   "bone marrow": "뼈 속 골수",
   "book ahead": "미리 예약하다",
   "boost to the full": "최대로 끌어올리다",
+  "catchphrase": "귀에 남는 문구",
   "charged": "전하를 띤",
   "chemical unit": "화학 단위",
   "childbearing": "아이를 낳는",
@@ -1120,6 +1238,8 @@ Object.assign(window.GLOSS, {
   "contrivance": "고안된 장치",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
+  "cross-border": "국경을 넘는",
+  "cross-format": "여러 형식을 아우르는",
   "crossed wires": "말이 엇갈림",
   "crown": "왕권",
   "crowned head": "왕관을 쓴 이",
@@ -1128,6 +1248,7 @@ Object.assign(window.GLOSS, {
   "delivery nurse": "분만 담당 간호사",
   "derisive": "비웃는",
   "disorderly": "어수선한",
+  "do several things at once": "여러 일을 한꺼번에 하다",
   "draw off": "빼내다",
   "drug treatment": "약물 요법",
   "echo": "되울리다",
@@ -1135,6 +1256,7 @@ Object.assign(window.GLOSS, {
   "energy-processing": "에너지를 처리하는",
   "enrage": "분노하게 하다",
   "error": "잘못된 것",
+  "ethnically diverse": "민족 구성이 다양한",
   "evangelist": "복음 전도자",
   "even-tempered": "성정이 고른",
   "exasperate": "속을 뒤집어 놓다",
@@ -1144,6 +1266,7 @@ Object.assign(window.GLOSS, {
   "false belief": "틀린 믿음",
   "female owner": "여자 소유주",
   "fighting art": "싸움 기술",
+  "fighting spirit": "싸울 기백",
   "figure of speech": "비유적 표현",
   "floor swab": "바닥 닦는 걸레",
   "fluidity": "흐르는 성질",
@@ -1163,6 +1286,7 @@ Object.assign(window.GLOSS, {
   "grandeur": "장대함",
   "grassland": "초지",
   "greater part": "더 큰 쪽",
+  "group confidence": "집단의 자신감",
   "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
   "hands-on": "직접 손을 쓰는",
@@ -1171,10 +1295,12 @@ Object.assign(window.GLOSS, {
   "hermit": "은수자",
   "history-making": "역사를 만드는",
   "hold water": "말이 성립하다",
+  "home loan": "주택 대출",
   "honoring": "기려 받드는",
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
+  "husband's mother": "남편의 어머니",
   "ill-judged": "판단이 어긋난",
   "ill-natured": "성질이 나쁜",
   "ill-treat": "부당하게 대하다",
@@ -1183,10 +1309,14 @@ Object.assign(window.GLOSS, {
   "impersonate": "남을 흉내 내어 연기하다",
   "improper use": "옳지 않은 사용",
   "improvised": "즉석에서 만든",
+  "in-law": "혼인으로 맺어진 친척",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
   "inorganic substance": "무기 물질",
+  "inspirer": "영감을 주는 이",
   "intermix": "서로 섞이다",
+  "juggle tasks": "여러 일을 돌려 가며 하다",
+  "just about": "거의",
   "kick up a row": "한바탕 소동을 벌이다",
   "kingship": "왕위",
   "lady of the house": "집안의 여주인",
@@ -1223,7 +1353,9 @@ Object.assign(window.GLOSS, {
   "mistranslation": "잘못된 번역",
   "mix freely": "자유롭게 섞이다",
   "mix-up": "뒤바뀜",
+  "mixed media": "혼합 매체",
   "most": "대부분의 것",
+  "most of the time": "대부분의 경우",
   "motherly": "어머니 같은",
   "movability": "움직일 수 있음",
   "movable": "옮길 수 있는",
@@ -1261,14 +1393,17 @@ Object.assign(window.GLOSS, {
   "pith": "속심",
   "play down": "대수롭지 않게 말하다",
   "play up": "말썽을 부리다",
+  "pluralistic": "여러 갈래가 공존하는",
   "polarized": "극을 띤",
   "poor diet": "부실한 식사",
   "prank": "짓궂은 장난",
   "preacher": "설교하는 사람",
   "press forward": "밀고 나아가다",
+  "prime mover": "일을 일으킨 주역",
   "procedural": "절차상의",
   "procedure": "절차",
   "pronounced": "두드러진",
+  "property loan": "부동산 대출",
   "proselytizer": "개종을 권하는 사람",
   "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
@@ -1294,6 +1429,7 @@ Object.assign(window.GLOSS, {
   "scant": "간신히 되는",
   "scornful": "멸시하는",
   "scrupulously": "빈틈없이",
+  "secured debt": "담보가 잡힌 빚",
   "self-defense skill": "호신 기술",
   "sensation": "큰 화제",
   "shooting star": "별똥별",
@@ -1302,6 +1438,7 @@ Object.assign(window.GLOSS, {
   "slight": "미미한",
   "slightest": "아주 미미한",
   "slip": "사소한 잘못",
+  "slogan": "구호",
   "smaller group": "더 작은 집단",
   "smelly": "냄새 나는",
   "so-so": "그저 그런",
@@ -1313,6 +1450,7 @@ Object.assign(window.GLOSS, {
   "spell wrongly": "철자를 틀리게 쓰다",
   "spiteful": "앙심을 품은",
   "splendor": "화려함",
+  "spur on": "몰아붙여 나아가게 하다",
   "squeegee": "물기 미는 도구",
   "squeeze dry": "짜낼 만큼 짜내다",
   "staffed": "인원이 배치된",
@@ -1328,6 +1466,7 @@ Object.assign(window.GLOSS, {
   "systematic": "체계적인",
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",
+  "team spirit": "단결심",
   "technique": "기법",
   "temperate": "절제된",
   "template": "본뜨는 판",
@@ -1351,6 +1490,7 @@ Object.assign(window.GLOSS, {
   "untidy": "정돈되지 않은",
   "unvarying": "한결같이 똑같은",
   "urban": "도시의",
+  "usually": "대개는",
   "vendor": "판매하는 사람",
   "venomous": "독기 서린",
   "victimize": "부당하게 괴롭히다",
@@ -1361,6 +1501,7 @@ Object.assign(window.GLOSS, {
   "vitamin or mineral": "비타민이나 무기물",
   "wail": "울부짖다",
   "warlike": "전쟁을 벌이려는",
+  "watchword": "표어처럼 쓰는 말",
   "way": "방식",
   "weather science": "날씨 과학",
   "weather scientist": "날씨를 연구하는 사람",
@@ -1369,9 +1510,11 @@ Object.assign(window.GLOSS, {
   "wetland": "습지대",
   "whimper": "훌쩍이며 울다",
   "wide of the mark": "과녁에서 크게 벗어난",
+  "wife's mother": "아내의 어머니",
   "with great care": "아주 조심스럽게",
   "wizard": "마법사",
   "wondrous": "경이로운",
+  "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
   "workings": "작동 구조",
   "wretched": "처참한",

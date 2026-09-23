@@ -2170,7 +2170,6 @@ Object.assign(window.GLOSS, {
   "importance":"중요성",
   "legislate":"법을 제정하다",
   "make possible":"가능하게 만들다",
-  "motivate":"동기를 부여하다",
   "observed":"관찰된",
   "pass into law":"법으로 통과시키다",
   "prominence":"두드러짐, 현저함",

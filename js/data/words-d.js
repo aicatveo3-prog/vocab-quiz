@@ -1463,7 +1463,6 @@ Object.assign(window.GLOSS, {
   "intimidating":"겁을 주는, 위압적인",
   "moist":"촉촉한, 습기 있는",
   "moisten":"축이다, 적시다",
-  "mortal":"죽을 운명의; 치명적인",
   "muffle":"소리를 죽이다, 감싸다",
   "obligation":"의무, 책무",
   "originate in":"~에서 비롯되다",

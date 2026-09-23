@@ -2011,8 +2011,6 @@ Object.assign(window.GLOSS, {
   "mixed-race": "혼합 인종의",
   "modernize": "현대화하다",
   "mortality": "죽음을 피할 수 없음, 사망률",
-  "motivation": "동기 부여",
-  "multiracial": "여러 인종의",
   "mutually reliant": "서로에게 기대는",
   "naivety": "순진함",
   "narrow-mindedness": "속 좁음",
