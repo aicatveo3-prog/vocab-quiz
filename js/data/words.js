@@ -415,7 +415,7 @@ window.VOCAB = [
     ex:[{ s:"The puppies were absolutely {{}}.", f:"adorable", ko:"그 강아지들은 정말 사랑스러웠다." }] },
 
   { word:"adorn", pron:"어돈", pos:"v", level:"C1", meanings:["꾸미다","장식하다"],
-    syn:["decorate","embellish","ornament"], ant:["strip"],
+    syn:["decorate","embellish","deck out"], ant:["strip"],
     ex:[{ s:"Fresh flowers {{}} every table in the hall.", f:"adorn", ko:"생화가 강당의 모든 탁자를 장식한다." }] },
 
   { word:"advance", pron:"어드밴스", pos:"v", level:"B2", meanings:["전진하다","발전시키다"],

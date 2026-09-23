@@ -550,15 +550,139 @@ window.VOCAB_O = [
 
   { word:"oral", pron:"오럴", pos:"adj", level:"B2", meanings:["구술의","구두의"],
     syn:["spoken","by word of mouth","said aloud"], ant:["written"],
-    ex:[{ s:"The course ends with an {{}} exam.", f:"oral", ko:"그 과정은 구술의 시험으로 끝난다." }] }
+    ex:[{ s:"The course ends with an {{}} exam.", f:"oral", ko:"그 과정은 구술의 시험으로 끝난다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────────────── */
+  /* 'organ-' 어근이 여섯 개(organ·organic·organism·organization·organizational·
+     organize), 'orient-' 가 셋, 'origin-' 이 둘, 'orphan-' 이 둘 붙는다.
+     품사가 n/adj/v 로 갈리고 뜻도 서로 달라 같은 보드에서 헷갈리지 않는다.     */
+
+  { word:"orator", pron:"오레이터", pos:"n", level:"C1", meanings:["연설자","강연자"],
+    syn:["public speaker","speech-maker","one who addresses a crowd"],
+    ex:[{ s:"The crowd fell silent as the {{}} began.", f:"orator", ko:"연설자가 시작하자 군중이 조용해졌다." }] },
+
+  /* 원본은 '궤도; 궤도를 돌다' 로 명사와 동사가 섞여 있었다. 참조가 없어
+     자유롭게 고를 수 있었고 명사 한 갈래로 정리했다. */
+  { word:"orbit", pron:"오빗", pos:"n", level:"B2", meanings:["궤도"],
+    syn:["circling path","course around a body","revolution track"],
+    ex:[{ s:"The satellite entered a low {{}}.", f:"orbit", ko:"그 위성은 낮은 궤도에 들어섰다." }] },
+
+  { word:"orchard", pron:"오처드", pos:"n", level:"B2", meanings:["과수원"],
+    syn:["fruit garden","grove of fruit trees","plantation of fruit"],
+    ex:[{ s:"Their {{}} yields apples every autumn.", f:"orchard", ko:"그들의 과수원은 가을마다 사과를 낸다." }] },
+
+  /* 원본의 '(신체) 장기, 기관' 괄호를 걷었다. 같은 챕터 organization 을
+     '조직, 단체' 로 갈라 '기관' 이 서로 물리지 않게 했다. */
+  { word:"organ", pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
+    syn:["body part","internal structure","working unit of the body"],
+    ex:[{ s:"The liver is the largest internal {{}}.", f:"organ", ko:"간은 가장 큰 내부 장기다." }] },
+
+  /* 승격 47 — 사전 표현 '유기적인, 유기농의' 를 글자까지 지켰다(biological, B).
+     원본의 '화학 비료를 쓰지 않는' 은 서술이 길어서 버렸다. */
+  { word:"organic", pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
+    syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
+    ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
+
+  { word:"organism", pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
+    syn:["living thing","life form","biological entity"],
+    ex:[{ s:"Every {{}} needs water to survive.", f:"organism", ko:"모든 유기체는 살아남으려면 물이 필요하다." }] },
+
+  /* 승격 48 — 사전은 '조직, 기관' 이었다. '기관' 을 그대로 두면 같은 챕터의
+     organ(장기, 기관) 과 물리므로 원본의 '단체' 로 갈랐다.
+     association(A)·institution(I) 두 곳의 화면 글자가 함께 바뀐다. */
+  { word:"organization", pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
+    syn:["association","institution","body of members"],
+    ex:[{ s:"She founded an {{}} for street children.", f:"organization", ko:"그녀는 거리 아이들을 위한 단체를 세웠다." }] },
+
+  /* 승격 49 — ★원본의 '구조적인' 은 structural 의 뜻이다. 사전은 '조직의' 한
+     갈래였고, 거기에 원본의 '조직적인' 을 붙였다. 첫 뜻은 사전값을 지켰다
+     (administrative, A). */
+  { word:"organizational", pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
+    syn:["administrative","to do with running a group","managerial"],
+    ex:[{ s:"The delay was an {{}} failure, not a technical one.", f:"organizational", ko:"그 지연은 기술이 아니라 조직의 실패였다." }] },
+
+  /* 승격 50 — 사전 표현 '조직하다, 정리하다' 를 글자까지 지켰다
+     (arrange, A · coordinate, C). 원본의 '체계화하다' 대신 사전 쪽을 남겼다. */
+  { word:"organize", pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
+    syn:["arrange","put in order","set up"],
+    ex:[{ s:"Volunteers helped {{}} the book sale.", f:"organize", ko:"자원봉사자들이 책 판매 행사를 조직하는 것을 도왔다." }] },
+
+  /* 승격 51 — 사전에 뜻만 있고 발음이 없던 항목이다. 사전값 '방향을 잡다' 를
+     첫 자리에 두고 원본의 '~에 맞추다' 를 붙였다(원본의 '(특정 목적에)' 괄호는 걷었다). */
+  { word:"orient", pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
+    syn:["find one's bearings","point in a direction","adapt to a purpose"],
+    ex:[{ s:"Use the map to {{}} yourself before setting off.", f:"orient", ko:"떠나기 전에 지도로 방향을 잡으세요." }] },
+
+  /* 원본의 '동양 (문명)의' 괄호를 걷었다. 유의어는 모두 소문자로 등록했다 —
+     GLOSS·PRON 조회가 toLowerCase() 로 이뤄지므로 대문자 키는 뜻이 비어 보인다. */
+  { word:"oriental", pron:"오리엔털", pos:"adj", level:"C1", meanings:["동양의"],
+    syn:["eastern","of the east","far-eastern"], ant:["western"],
+    ex:[{ s:"The museum holds a fine {{}} collection.", f:"oriental", ko:"그 박물관은 훌륭한 동양의 소장품을 갖고 있다." }] },
+
+  /* 원본의 '오리엔테이션' 은 외래어를 그대로 옮긴 것이어서 뺐다 —
+     M 세트 multimedia 의 '멀티미디어' 와 같은 처리다. */
+  { word:"orientation", pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
+    syn:["introductory training","sense of direction","initial briefing"],
+    ex:[{ s:"New staff attend a two-day {{}}.", f:"orientation", ko:"새 직원은 이틀간의 예비 교육에 참석한다." }] },
+
+  /* 승격 52 — 사전 표현 '독창성' 을 글자까지 지켰다(creativity, C).
+     원본의 '독창력, 독창성' 중 앞 갈래는 뜻이 거의 같아 버렸다. */
+  { word:"originality", pron:"어리저낼러티", pos:"n", level:"C1", meanings:["독창성"],
+    syn:["creativity","inventiveness","freshness of thought"],
+    ex:[{ s:"The judges praised the {{}} of her design.", f:"originality", ko:"심사위원들은 그녀 설계의 독창성을 칭찬했다." }] },
+
+  /* 승격 53 — 사전 표현 '유래하다, 시작되다' 를 글자까지 지켰다
+     (come into existence, C). 원본의 '고안하다' 갈래는 버렸다. */
+  { word:"originate", pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
+    syn:["come into existence","arise from","have its source in"],
+    ex:[{ s:"The custom may {{}} in a harvest festival.", f:"originate", ko:"그 관습은 추수 축제에서 유래할지도 모른다." }] },
+
+  /* 승격 54 — 사전이 '장식하다; 장식품' 으로 동사와 명사가 섞여 있었다.
+     decoration(D) 은 명사, adorn(A) 은 동사였다. 원본이 명사뿐이어서 명사로
+     세우고 adorn 쪽 유의어를 'deck out' 으로 바꿨다(words.js).
+     decoration 의 첫 뜻도 '장식' 이지만 둘은 서로 유의어다. */
+  { word:"ornament", pron:"오너먼트", pos:"n", level:"B2", meanings:["장식","장신구"],
+    syn:["decoration","trinket","decorative piece"],
+    ex:[{ s:"A small glass {{}} hung from the branch.", f:"ornament", ko:"작은 유리 장식이 가지에 걸려 있었다." }] },
+
+  /* 원본은 '화려한, 정교한' 이었다. '화려한' 은 gorgeous(화려한, 호화스러운, G) 의
+     첫 뜻과 같아서 순서를 바꾸고 '정교하게 꾸민' 을 앞세웠다. */
+  { word:"ornate", pron:"오네이트", pos:"adj", level:"C1", meanings:["정교하게 꾸민","화려한"],
+    syn:["elaborately decorated","richly adorned","full of fine detail"], ant:["plain"],
+    ex:[{ s:"The hall had an {{}} ceiling.", f:"ornate", ko:"그 회관에는 정교하게 꾸민 천장이 있었다." }] },
+
+  /* 원본은 '고아로 만들다; 고아' 로 동사와 명사가 섞여 있었다. 참조가 없어
+     자유롭게 고를 수 있었고, 수능에서 흔한 명사로 세웠다. */
+  { word:"orphan", pron:"오펀", pos:"n", level:"B2", meanings:["고아"],
+    syn:["parentless child","child left without parents","foundling"],
+    ex:[{ s:"The war left him an {{}} at the age of six.", f:"orphan", ko:"전쟁은 그를 여섯 살에 고아로 남겼다." }] },
+
+  /* 승격 55 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
+     원본의 '고아원, 보육원' 중 '보육원' 은 뜻이 달라져서 버렸다. */
+  { word:"orphanage", pron:"오퍼니지", pos:"n", level:"B2", meanings:["고아원"],
+    syn:["children's home","shelter for orphans","care home for children"],
+    ex:[{ s:"She grew up in a small {{}} near the river.", f:"orphanage", ko:"그녀는 강 근처의 작은 고아원에서 자랐다." }] },
+
+  /* 승격 56 — 사전 표현과 글자까지 같다(conventional, C). */
+  { word:"orthodox", pron:"오서닥스", pos:"adj", level:"C1", meanings:["정통의","전통적인"],
+    syn:["conventional","accepted as standard","going by the book"], ant:["unorthodox"],
+    ex:[{ s:"He prefers {{}} treatment to new remedies.", f:"orthodox", ko:"그는 새 치료법보다 정통의 치료를 좋아한다." }] },
+
+  /* osteoporosis 는 전문어이고 22자다. 유의어 셋을 세울 수 있어 비우지 않았다. */
+  { word:"osteoporosis", pron:"아스티오퍼로시스", pos:"n", level:"C2", meanings:["골다공증"],
+    syn:["bone-thinning disease","brittle-bone condition","loss of bone density"],
+    ex:[{ s:"Calcium helps guard against {{}}.", f:"osteoporosis", ko:"칼슘은 골다공증을 막는 데 도움이 된다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "abide by": "~을 지키다",
   "about to": "이제 곧 ~할",
+  "accepted as standard": "표준으로 받아들여진",
+  "adapt to a purpose": "쓸 목적에 맞추다",
   "almost recalled": "거의 떠오른",
   "applied without exception": "예외 없이 적용되는",
+  "arise from": "~에서 생겨나다",
   "as a representative of": "~의 대표로서",
   "astronomy lab": "천문 연구실",
   "at the brink of": "~의 문턱에서",
@@ -573,15 +697,25 @@ Object.assign(window.GLOSS, {
   "betting ratio": "도박에서 매기는 비율",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
+  "biological entity": "생물학적 개체",
   "block up": "틀어막다",
   "boding ill": "나쁜 일을 알리는",
+  "body of members": "구성원의 모임",
+  "body part": "몸의 한 부분",
+  "bone-thinning disease": "뼈가 얇아지는 병",
   "breach of law": "법을 어김",
   "bright view": "밝게 보는 태도",
+  "brittle-bone condition": "뼈가 잘 부러지는 상태",
   "by word of mouth": "입으로 전하는",
   "cancel out": "서로 지워 버리다",
+  "care home for children": "아이를 보살피는 시설",
   "careful noting": "꼼꼼히 적어 둠",
   "carrying far too much fat": "지방이 너무 많은",
   "chances": "될 성",
+  "chemical-free": "화학 약품을 쓰지 않은",
+  "child left without parents": "어버이를 잃은 아이",
+  "children's home": "아이들이 지내는 집",
+  "circling path": "돌아가는 길",
   "close to the start of": "~이 시작될 즈음에",
   "close watching": "가까이 지켜봄",
   "come by": "어렵게 구하다",
@@ -590,13 +724,18 @@ Object.assign(window.GLOSS, {
   "corpulence": "살집이 두둑함",
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
+  "course around a body": "천체를 도는 길",
   "crushing": "짓누르는",
   "curtain-raiser": "막을 올리는 순서",
+  "deck out": "차려 꾸미다",
+  "decorative piece": "꾸미는 물건",
   "doing as told": "말하는 대로 하는",
   "done then and there": "그 자리에서 해내는",
   "drop from a list": "목록에서 빼다",
   "dutiful": "본분을 다하는",
   "earliest": "맨 처음의",
+  "eastern": "동쪽의",
+  "elaborately decorated": "공들여 꾸민",
   "erase all trace of": "~의 흔적을 다 지우다",
   "excess body fat": "넘치는 몸의 지방",
   "expecting the best": "잘될 것으로 보는",
@@ -604,22 +743,31 @@ Object.assign(window.GLOSS, {
   "facing": "마주 보는",
   "fact-based": "사실에 바탕한",
   "far from it": "그렇기는커녕",
+  "far-eastern": "극동의",
   "favorable moment": "알맞은 때",
+  "find one's bearings": "자기 위치를 가늠하다",
   "first appearance": "처음 나타남",
   "first part": "앞부분",
   "follow orders": "명령을 좇다",
   "for good": "아주 영영",
+  "foundling": "버려진 채 발견된 아이",
   "free of opinion": "의견이 섞이지 않은",
   "free of prejudice": "선입견이 없는",
+  "freshness of thought": "생각이 새로움",
   "from another view": "다른 쪽에서 보면",
+  "fruit garden": "과일을 기르는 밭",
+  "full of fine detail": "잔 무늬가 가득한",
   "get hold of": "손에 넣다",
   "give offence to": "~에게 언짢음을 주다",
   "going by": "~을 따라 판단하여",
+  "going by the book": "규정을 그대로 따르는",
   "grossly overweight": "지나치게 체중이 많은",
   "grounded on": "~에 발판을 둔",
+  "grove of fruit trees": "과일나무 숲",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
+  "have its source in": "~에 뿌리를 두다",
   "healing cream": "상처에 바르는 크림",
   "heavy-handed": "함부로 세게 다루는",
   "hide from view": "보이지 않게 가리다",
@@ -635,9 +783,12 @@ Object.assign(window.GLOSS, {
   "in the world": "세상에",
   "in view of the crowd": "사람들 눈에 보이는",
   "infrequent": "드문드문한",
+  "initial briefing": "첫 설명 자리",
   "initial stage": "첫 단계",
   "instead of that": "그 대신에",
   "insulting": "모욕하는",
+  "internal structure": "몸속 구조물",
+  "introductory training": "처음 받는 교육",
   "jumpy": "움찔거리는",
   "just out of reach": "손에 닿을 듯 안 닿는",
   "just short of": "~에 조금 못 미쳐",
@@ -649,15 +800,19 @@ Object.assign(window.GLOSS, {
   "leave no choice for": "~에게 선택을 남기지 않다",
   "left behind by progress": "발전에 뒤처진",
   "liberating": "놓여나게 하는",
+  "life form": "생명 형태",
   "line of work": "일하는 분야",
   "little known": "거의 알려지지 않은",
+  "living thing": "살아 있는 것",
   "looking on the bright side": "밝은 쪽을 보는",
+  "loss of bone density": "뼈 밀도가 줄어듦",
   "make duty-bound": "할 수밖에 없게 만들다",
   "make unclear": "불분명하게 만들다",
   "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
   "most favorable": "가장 유리한",
   "move into": "들어가 자리 잡다",
+  "naturally grown": "자연스레 기른",
   "nearly remembered": "떠오를 듯한",
   "no longer in use": "더 이상 쓰이지 않는",
   "not for publication": "실으면 안 되는",
@@ -665,6 +820,7 @@ Object.assign(window.GLOSS, {
   "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
   "of all things": "하필이면",
+  "of the east": "동방에 속한",
   "on the boards": "무대에 올라 있는",
   "on the facts alone": "사실만을 근거로",
   "on the other side": "건너편의",
@@ -673,9 +829,11 @@ Object.assign(window.GLOSS, {
   "one after another": "잇달아",
   "one such case": "그런 한 가지",
   "one such instance": "그런 한 차례",
+  "one who addresses a crowd": "군중에게 말하는 사람",
   "one who fights against": "맞서 싸우는 이",
   "opening for action": "움직일 틈",
   "out of the ordinary": "보통과 다른",
+  "parentless child": "어버이 없는 아이",
   "particular time": "특정한 시점",
   "peak condition": "가장 좋은 조건",
   "person looking on": "옆에서 보는 사람",
@@ -683,15 +841,21 @@ Object.assign(window.GLOSS, {
   "physics of lenses": "렌즈의 물리",
   "place under obligation": "의무 아래 두다",
   "plain to see": "보면 바로 아는",
+  "plantation of fruit": "과일 농장",
+  "point in a direction": "어느 쪽으로 향하게 하다",
   "positive thinking": "긍정으로 생각하기",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
   "progeny": "낳은 자손",
+  "public speaker": "사람들 앞에서 말하는 이",
   "pushback": "되밀어 내는 움직임",
+  "put in order": "가지런히 하다",
   "put on the table": "논의 자리에 내놓다",
   "quite the opposite": "오히려 거꾸로",
   "receptive": "받아들일 자세가 된",
   "resting upon": "~에 기대어",
+  "revolution track": "회전하는 자취",
+  "richly adorned": "푸짐하게 꾸민",
   "right before": "바로 앞에",
   "run a business": "사업을 꾸리다",
   "running of a machine": "기계가 돌아감",
@@ -700,8 +864,10 @@ Object.assign(window.GLOSS, {
   "salve": "바르는 약",
   "sanctioned": "허락을 받은",
   "science of light": "빛을 다루는 학문",
+  "sense of direction": "방향을 아는 감각",
   "set in one's ways": "제 방식만 지키는",
   "settled for ever": "다시 뒤집히지 않게",
+  "shelter for orphans": "고아를 돌보는 곳",
   "singly": "하나씩",
   "sinister": "음험한",
   "skip over": "건너뛰다",
@@ -711,6 +877,7 @@ Object.assign(window.GLOSS, {
   "solid thing": "단단한 것",
   "speak against": "반대하는 말을 하다",
   "speaking for": "~을 대변하여",
+  "speech-maker": "연설을 하는 이",
   "spoken remark": "입으로 낸 말",
   "stand in the way of": "~의 앞을 가로막다",
   "stand up to": "~에 맞서다",
@@ -726,6 +893,8 @@ Object.assign(window.GLOSS, {
   "tenancy": "빌려 씀",
   "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
+  "to do with running a group": "집단을 꾸리는 일의",
+  "trinket": "자잘한 장신구",
   "typical": "으레 그런",
   "tyrannical": "폭압을 휘두르는",
   "under way at present": "지금 진행 중인",
@@ -734,6 +903,7 @@ Object.assign(window.GLOSS, {
   "uniform for everyone": "모두에게 똑같은",
   "unlawful act": "법에 어긋난 짓",
   "unofficial": "공식이 아닌",
+  "unorthodox": "정통이 아닌",
   "use of a place": "장소를 씀",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
@@ -741,6 +911,7 @@ Object.assign(window.GLOSS, {
   "watch closely": "가까이 지켜보다",
   "watcher": "지켜보는 이",
   "way open to one": "택할 수 있는 길",
+  "western": "서쪽의",
   "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
   "willing to listen": "귀를 기울이려는",
@@ -748,5 +919,6 @@ Object.assign(window.GLOSS, {
   "without delay": "늦추지 않고 하는",
   "work a machine": "기계를 다루다",
   "working order": "제대로 돌아가는 상태",
+  "working unit of the body": "몸에서 일하는 단위",
   "young of a creature": "짐승의 새끼"
 });
