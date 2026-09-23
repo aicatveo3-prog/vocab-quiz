@@ -216,9 +216,6 @@ b,strong{font-weight:600}
   border-bottom:2px solid var(--line-2);vertical-align:baseline;height:1.1em}
 .q-sentence .filled,.q-pattern .filled{color:var(--ok);border-bottom:none}
 .q-pattern{font-size:24px;font-weight:600;text-align:center;padding:28px 4px 8px}
-/* 전치사 구별 — 문제문에 전치사를 박아 둔다 */
-.q-gov{font-size:21px;font-weight:600;line-height:1.5;padding:10px 4px 0}
-.q-gov-prep{color:var(--accent);font-size:25px;font-weight:700}
 
 /* 선택지 — 클릭 전용이므로 키보드 배지를 두지 않는다 */
 .opts{display:grid;gap:8px}
@@ -389,8 +386,6 @@ b,strong{font-weight:600}
 .opt-detail{flex:1;min-width:0;font-size:12px;color:var(--dim);
   font-weight:400;text-align:right;line-height:1.45}
 .opt-pron{color:var(--accent);font-weight:600;white-space:nowrap}
-/* 전치사 구별 — 답을 고른 뒤 각 선택지에 붙는 정답 전치사 */
-.opt-prep{color:var(--accent);font-weight:700}
 
 
 /* 짝 맞추기 클리어 후 단어별 발음·뜻·예문 목록 */

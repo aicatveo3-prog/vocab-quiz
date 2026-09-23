@@ -7,7 +7,6 @@
  *   드릴     여러 형식을 섞어서 출제:
  *            1단계 4지선다 (영↔한)
  *            2단계 아닌 것 고르기 (syn≥3인 단어만)
- *                  + 전치사 구별  (gov 보유 단어만)
  *            3단계 문장 빈칸 (예문 보유 단어만)
  *   보드     짝 맞추기 4~5쌍 × 4개 보드로 마무리
  *   결과
@@ -74,7 +73,7 @@ window.Conquer = (function () {
    */
   function buildDrill(chapterWords) {
     var names = chapterWords.map(function (w) { return w.word; });
-    var stages = [[], [], []];   // 0=4지선다, 1=아닌것·전치사, 2=문장빈칸
+    var stages = [[], [], []];   // 0=4지선다, 1=아닌것, 2=문장빈칸
     var dir = 'en-ko';
 
     chapterWords.forEach(function (w) {
@@ -95,14 +94,7 @@ window.Conquer = (function () {
         }
       }
 
-      /* 2단계 · 전치사 구별 (gov 보유 단어만).
-         같은 2단계에 둘이 들어가도 spreadByGap 이 같은 단어 사이를
-         MIN_GAP 이상 벌려 주므로 연달아 나오지 않는다. */
-      var q2b = tryBuild(function () { return window.Quiz.build.gov(w, names); });
-      if (q2b) {
-        q2b.stageLabel = '2단계 · 전치사 구별';
-        stages[1].push({ q: q2b, word: w.word, stage: 2 });
-      }
+
 
       // 3단계: 문장 빈칸 (예문 보유 단어만)
       if (w.ex && w.ex.length) {
@@ -305,7 +297,7 @@ window.Conquer = (function () {
   /**
    * 오답 복습 세션 — 지정한 단어들만 정복 모드와 같은 방식으로 다시 출제한다.
    *
-   * 챕터 드릴과 동일한 구성(4지선다 → 아닌 것·전치사 → 문장 빈칸 → 짝 맞추기)을
+   * 챕터 드릴과 동일한 구성(4지선다 → 아닌 것 → 문장 빈칸 → 짝 맞추기)을
    * 쓰되, 대상이 챕터 20단어가 아니라 "틀린 단어 목록"이다.
    * 데이터가 없는 단계는 자연히 건너뛰므로 단어 수가 적어도 문제없이 만들어진다.
    *

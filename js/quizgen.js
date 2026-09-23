@@ -3,11 +3,28 @@
  *
  * 모드
  *   mcq    ① 4지선다 (영→한 / 한→영 양방향 교대)
- *   not    ④ 아닌 것 고르기 — 두 갈래
- *            · 유의어 3 + 비유의어 1        (makeNot)
- *            · 같은 전치사 3 + 다른 것 1    (makeGov)
+ *   not    ④ 아닌 것 고르기 (유의어 3 + 비유의어 1)
  *   match  ⑤ 짝 맞추기 (5~6쌍 — 소거법 방지)
  *   cloze  ⑬ 문장 빈칸
+ *
+ * ── 어법(gov) 은 문항이 아니라 노출로만 쓴다 ──────
+ *
+ * 한때 '아닌 것 고르기' 안에 "빈칸에 to 를 쓸 수 없는 것은?" 문항을 두었다.
+ * 측정해 보니 평가로 작동하지 않았다.
+ *   · 오답 자리 213개를 서로 다른 구 35개가 채웠다. 상위 3개가 28%였고
+ *     A 세트 14문항 안에서 같은 오답을 5번 봤다
+ *   · 정답 구 71개 중 43개는 오답으로 한 번도 안 나와서,
+ *     "넷 중 처음 보는 걸 찍는다" 는 규칙이 61% 맞았다 (무작위는 25%)
+ *   · 한 문항이 실제로 시험하는 것은 어법 1개다 (문제문에 전치사가 박혀 있다)
+ * 원인은 데이터 부족이다 — 한 문항당 오답 후보가 평균 6.2개뿐이고,
+ * 무작위로 골라도 후보 자체가 없어 반복을 피할 수 없다.
+ *
+ * 반면 어법 '노출' 은 나머지 세 모드가 이미 충분히 하고 있다.
+ *   4지선다·문장 빈칸  정답 화면에 usage 한 줄 (absent from ~ : ~에 결석한)
+ *   짝 맞추기          카드 라벨에 전치사가 붙는다 (absent from)
+ *   문장 빈칸          빈칸 바로 뒤에 지배 전치사가 와서 소거 단서로 작동한다
+ *                     (62개 중 32개가 이 모양이다)
+ * 그래서 문항만 걷어내고 노출은 그대로 두었다. gov 데이터는 살아 있다.
  *
  * 오답 선택지 원칙
  *   - 같은 품사, CEFR 레벨 차이 ±1 이내 (레벨이 튀면 정답이 드러남)
@@ -33,7 +50,7 @@ window.Quiz = (function () {
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
-    { id: 'not',    label: '아닌 것 고르기', sub: '유의어·전치사 구별' },
+    { id: 'not',    label: '아닌 것 고르기', sub: '유의어 구별' },
     { id: 'match',  label: '짝 맞추기',     sub: '5~6쌍 보드' },
     { id: 'cloze',  label: '문장 빈칸',     sub: '문맥 속 구별' }
   ];
@@ -186,9 +203,7 @@ window.Quiz = (function () {
   function eligible(modeId, words) {
     return (words || ALL).filter(function (w) {
       switch (modeId) {
-        /* '아닌 것 고르기'는 유의어 문항과 전치사 문항 두 갈래다.
-           어느 한쪽이라도 만들 수 있으면 출제 대상이다. */
-        case 'not':    return (w.syn && w.syn.length >= 3) || !!govOf(w);
+        case 'not':    return w.syn && w.syn.length >= 3;
         case 'cloze':  return w.ex && w.ex.length > 0;
         default:       return w.meanings && w.meanings.length > 0;
       }
@@ -372,31 +387,11 @@ window.Quiz = (function () {
     };
   }
 
-  /* ── 전치사 구별 ('아닌 것 고르기'의 두 번째 갈래) ──────────
-   *
-   * "빈칸에 to 가 들어갈 수 없는 것은?"
-   *     adverse ___ health          (to)
-   *     beneficial ___ health       (to)
-   *     central ___ the whole plan  (to)
-   *   ★ absent ___ class            (from)   ← 정답
-   *
-   * 답으로 누르는 것은 전치사가 아니라 구(句)다. 이것이 예전 '연어 고르기'와
-   * 결정적으로 다른 점이다. 옛 모드는 to/with/from/about 중에서 고르게 했고,
-   * 정답이 to 인 문항이 30%여서 "to 찍기"가 무작위(25%)보다 유리했다.
-   * 답이 놓이는 공간을 전치사 14개에서 구(句)로 옮기면 그 경로가 막힌다.
-   *
-   * 선택지를 단어가 아니라 구로 쓰는 이유 — 단어만 보여주면 to-부정사로
-   * 읽힌다. "to 를 쓰지 않는 것은? → curious" 는 curious to know 가 맞는
-   * 영어이므로 반박당한다. 뒤에 명사구가 오는 형태로 보여주면 막힌다.
-   *
-   * 정답 자리와 오답 자리의 안전성이 다르다.
-   *   오답 "X 는 to 를 받는다"      → 기록된 대로. 항상 참
-   *   정답 "Y 는 to 를 받지 않는다" → prep 목록에 빠진 게 있으면 거짓
-   * 그래서 정답 후보는 prep 에 그 전치사가 없어야 한다는 것만으로는 부족하고,
-   * prep 자체가 빠짐없이 적혀 있어야 한다(words.js 머리주석 참고).
-   */
+  /* ── 어법(gov) 읽기 ────────────────────────
+     짝 맞추기 카드 라벨(absent → absent from)에 쓴다.
+     전치사 문항을 걷어낸 뒤로 pat 은 읽는 코드가 없어 조건에서 뺐다. */
   function govOf(w) {
-    return (w.gov && w.gov.prep && w.gov.prep.length && w.gov.pat) ? w.gov : null;
+    return (w.gov && w.gov.prep && w.gov.prep.length) ? w.gov : null;
   }
 
   /* 어법 해설 한 줄. 모드를 가리지 않고 정답 화면에 띄운다.
@@ -404,73 +399,10 @@ window.Quiz = (function () {
      사실상 아무도 못 봤다. 전 모드에 얹으면 노출이 오히려 늘어난다. */
   function usageOf(w) { return (w.gov && w.gov.usage) || null; }
 
-  /** 전치사 구별 문항을 만들 수 있는 단어 목록 */
-  function govPool(words) {
-    return (words || ALL).filter(govOf);
-  }
-
-  function fillBlank(pat) { return pat.replace('{{}}', '___'); }
-
-  /**
-   * @param answer  정답이 될 단어 (= 그 전치사를 쓰지 않는 단어)
-   * @param exclude 오답으로 쓰지 않을 단어 이름 배열 (정복 모드의 같은 챕터)
-   */
-  function makeGov(answer, exclude) {
-    var g = govOf(answer);
-    if (!g) return null;
-    var skip = {};
-    (exclude || []).forEach(function (w) { skip[String(w).toLowerCase()] = true; });
-
-    // 대표 전치사별로 묶는다. 오답은 "대표가 P" 인 단어만 쓴다 —
-    // 두 번째 이후 전치사는 쓸 수 있다는 뜻일 뿐 대표 용법이 아니다.
-    var groups = {};
-    govPool().forEach(function (w) {
-      var wg = govOf(w);
-      (groups[wg.prep[0]] = groups[wg.prep[0]] || []).push(w);
-    });
-
-    var best = null;
-    Object.keys(groups).forEach(function (P) {
-      // ★ 정답이 P 를 받을 수 있으면 그 문항은 성립하지 않는다
-      if (g.prep.indexOf(P) !== -1) return;
-      var mates = groups[P].filter(function (m) {
-        return m.word !== answer.word
-          && m.pos === answer.pos
-          && levelGap(m, answer) <= 1
-          && !skip[m.word.toLowerCase()];
-      });
-      if (mates.length >= 3 && (!best || mates.length > best.mates.length)) {
-        best = { prep: P, mates: mates };
-      }
-    });
-    if (!best) return null;
-
-    // 알파벳순 고정 — 같은 단어면 같은 문항이 나온다
-    var picked = best.mates.slice().sort(byAlpha).slice(0, 3);
-    var rows = picked.concat([answer]).map(function (w) {
-      var wg = govOf(w);
-      return { opt: fillBlank(wg.pat), prep: wg.prep[0], usage: wg.usage };
-    });
-
-    return {
-      mode: 'gov', word: answer.word,
-      prompt: best.prep,
-      promptSub: answer.pos + ' · ' + answer.level,
-      options: shuffle(rows.map(function (r) { return r.opt; })),
-      answer: fillBlank(g.pat),
-      rows: rows,
-      /* usage 는 여기서 얹지 않는다 — rows 가 네 선택지의 어법을 각각
-         보여주므로(정답 것까지) 같은 줄이 두 번 나온다. */
-      note: answer.word + ' — ' + answer.meanings.join(', ')
-    };
-  }
-
   /* ── 세션 구성 ────────────────────────────── */
 
   var BUILDERS = {
-    /* 유의어가 3개 미만이면 전치사 문항으로 대신한다.
-       오답 복습처럼 단어가 정해진 자리에서 그 단어가 조용히 빠지지 않게 한다. */
-    not: function (w, exclude) { return makeNot(w, exclude) || makeGov(w, exclude); },
+    not: makeNot,
     match: makeMatch,
     cloze: makeCloze
   };
@@ -517,30 +449,6 @@ window.Quiz = (function () {
           return buildMatchFrom(slice.slice().sort(byAlpha), 'normal');
         })
         .filter(Boolean);
-    }
-
-    /* '아닌 것 고르기' 세트 전체 출제 — 유의어 문항 뒤에 전치사 문항을 붙인다.
-     *
-     * 왜 중간에 끼우지 않고 뒤에 붙이나 — 이어풀기 스냅샷이 슬라이드 인덱스로
-     * 저장된다(Store.restoreSession). 중간에 넣으면 이미 푼 사람의 답이 다른
-     * 문제에 붙는다. 뒤에 붙이면 기존 인덱스가 그대로 살아 있다.
-     * 프롬프트 문구가 아예 다르므로("빈칸에 to 가 들어갈 수 없는 것은?")
-     * 섞이지 않고 어법 구간으로 읽힌다. */
-    if (modeId === 'not' && ordered && !(restrictTo && restrictTo.length)) {
-      var synPool = (words || ALL).filter(function (w) {
-        return w.syn && w.syn.length >= 3;
-      }).slice().sort(byAlpha);
-      var out2 = [];
-      synPool.forEach(function (w) {
-        var q = null;
-        for (var a = 0; a < 8 && !q; a++) q = makeNot(w);
-        if (q) out2.push(q);
-      });
-      govPool(words).slice().sort(byAlpha).forEach(function (w) {
-        var q = makeGov(w);
-        if (q) out2.push(q);
-      });
-      return out2;
     }
 
     // ordered 모드: 알파벳순으로 단어를 정렬해 순서대로 문제를 만든다
@@ -873,7 +781,6 @@ window.Quiz = (function () {
       mcq: makeMcq,
       not: makeNot,
       cloze: makeCloze,
-      gov: makeGov,
       match: makeMatch
     },
     _internals: {

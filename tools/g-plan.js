@@ -22,9 +22,8 @@
  *
  * ⑩ 을 새로 넣은 이유:
  *   G 는 전치사를 고정으로 받는 동사가 유난히 많다 (gaze at, glance at,
- *   grieve over, grumble about …). gov 를 채우면 '전치사 구별' 문항이 늘지만,
- *   정답이 "그 전치사를 쓰지 않는다"는 부정 명제라 prep 목록이 빠짐없어야
- *   한다. 후보를 먼저 세어 두면 작업량과 위험을 같이 가늠할 수 있다.
+ *   grieve over, grumble about …). gov 는 문항을 만들지 않고 어법 한 줄과
+ *   짝 맞추기 카드 라벨에만 쓰이므로, 후보를 세어 두면 노출량을 가늠할 수 있다.
  *
  * f-plan.js 와 달라진 것 — 원본을 탭으로 가른다.
  *   f-source.txt 는 '영문 공백 한글' 이어서 'furnish A with B' 처럼 뜻이
@@ -232,8 +231,7 @@ console.log('   ' + govHit.map(function (it) {
 var cur = 0;
 EXISTING.forEach(function (w) { if (w.gov && w.gov.prep) cur++; });
 console.log('현재 gov 보유 : ' + cur + '개 → G 를 채우면 ' + (cur + govHit.length) + '개');
-console.log('⚠️  정답이 "그 전치사를 쓰지 않는다"는 부정 명제다. prep 목록이');
-console.log('    빠짐없어야 한다. 넉넉히 적으면 문항이 줄고, 부족하면 틀린 문항이 난다.');
-console.log('    tools/gov-audit.js 가 문항 전량을 출력하니 사람이 읽어야 한다.');
+console.log('※ gov 는 문항을 만들지 않는다. 어법 한 줄(정답 화면)과 짝 맞추기');
+console.log('   카드 라벨(absent → absent from)에만 쓰인다. 노출량만 늘어난다.');
 
 console.log('');

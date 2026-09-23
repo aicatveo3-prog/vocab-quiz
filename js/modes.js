@@ -57,7 +57,6 @@ window.Modes = (function () {
     }
 
     var text = q.mode === 'cloze' ? '빈칸에 알맞은 단어를 고르세요'
-      : q.mode === 'gov' ? '어법이 다른 하나를 고르세요'
       : q.dir === 'en-ko' ? '뜻을 고르세요'
       : '알맞은 단어를 고르세요';
     lead.appendChild(el('span', 'q-instruct', text));
@@ -74,21 +73,7 @@ window.Modes = (function () {
       if (q.ko) wrap.appendChild(el('div', 'q-ko-hint', q.ko));
       return wrap;
     }
-    /* 전치사 구별 — 프롬프트는 전치사 하나다.
-       "빈칸에 to 가 들어갈 수 없는 것은?" 처럼 전치사를 문제문에 박아 두면
-       넷 중 하나만 알아도 답이 나온다. 선택지에 전치사를 보여주고 고르게 하면
-       네 개를 모두 알아야 해서 부분 지식이 보상받지 못한다. */
-    if (q.mode === 'gov') {
-      var gp = el('div', 'q-prompt');
-      var line = el('div', 'q-gov');
-      line.appendChild(document.createTextNode('빈칸에 '));
-      line.appendChild(el('b', 'q-gov-prep', q.prompt));
-      line.appendChild(document.createTextNode(' 를 쓸 수 없는 것은?'));
-      gp.appendChild(line);
-      gp.appendChild(el('div', 'q-sub', q.promptSub));
-      wrap.appendChild(gp);
-      return wrap;
-    }
+
 
     // mcq(양방향) · not — 프롬프트가 영단어인지 한국어 뜻인지만 다르다
     var isKoPrompt = q.mode === 'mcq' && q.dir === 'ko-en';
@@ -196,23 +181,6 @@ window.Modes = (function () {
         if (sentence && sentence.parentNode) {
           sentence.parentNode.insertBefore(koNode, sentence.nextSibling);
         }
-      }
-
-      /* 전치사 구별: 답을 고르면 네 선택지의 어법을 각각 보여준다.
-         한 문항이 어법 네 개를 가르친다. 옛 '연어 고르기'는 한 문항에
-         하나였다 — 같은 데이터로 노출이 네 배가 된다. */
-      if (q.mode === 'gov' && q.rows) {
-        var byOpt = {};
-        q.rows.forEach(function (r) { byOpt[r.opt] = r; });
-        buttons.forEach(function (b) {
-          var r = byOpt[b._value];
-          if (!r) return;
-          var d = el('div', 'opt-detail');
-          d.appendChild(el('b', 'opt-prep', r.prep));
-          d.appendChild(document.createTextNode(' · ' + r.usage));
-          b.classList.add('has-detail');
-          b.appendChild(d);
-        });
       }
 
       // 선택지가 영단어인 모드(한→영 4지선다·문장 빈칸)는 답을 고른 뒤
@@ -455,10 +423,6 @@ window.Modes = (function () {
   return {
     mcq:    { render: renderChoice },
     not:    { render: renderChoice },
-    /* 전치사 구별은 '아닌 것 고르기'의 두 번째 갈래다. 개별 연습 형식 목록에는
-       따로 나오지 않고(Quiz.MODES 에 없다) not 세션 안에 섞여 나온다.
-       선택지 네 개를 누르는 구조가 같으므로 renderChoice 를 그대로 쓴다. */
-    gov:    { render: renderChoice },
     cloze:  { render: renderChoice },
     match:  { render: renderMatch }
   };
