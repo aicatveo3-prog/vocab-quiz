@@ -166,7 +166,9 @@ window.VOCAB_C = [
     ex:[{ s:"She counted the coins in the {{}} after closing.", f:"cash register", ko:"그녀는 문을 닫은 뒤 계산대의 동전을 세었다." }] },
 
   { word:"cast", pron:"캐스트", pos:"v", level:"B2", meanings:["주조하다","던지다"],
-    syn:["mold","throw","hurl"],
+    /* mold 가 M 세트에서 명사 표제어 '틀, 주물' 로 승격되어, 동사 cast 의
+       선택지에 명사 뜻이 뜨게 됐다. 같은 뜻의 동사 표현으로 바꿨다. */
+    syn:["shape in a mold","throw","hurl"],
     ex:[{ s:"The statue was {{}} in bronze.", f:"cast", ko:"그 조각상은 청동으로 주조되었다." }] },
 
   { word:"cast doubt on", pron:"캐스트 다웃 온", pos:"phr", level:"C1", meanings:["~을 의심하다","의문을 제기하다"],
@@ -2002,9 +2004,7 @@ Object.assign(window.GLOSS, {
   "laity":"평신도",
   "loneliness":"외로움",
   "military":"군사의, 군대의",
-  "minor":"사소한, 작은",
   "misread":"잘못 읽다, 오해하다",
-  "mistaken":"잘못된, 틀린",
   "murky":"흐린, 탁한",
   "naive":"순진한, 어수룩한",
   "noble":"귀족, 고귀한",

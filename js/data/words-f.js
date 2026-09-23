@@ -1632,7 +1632,6 @@ Object.assign(window.GLOSS, {
   "made-up story":"지어낸 이야기",
   "manorial":"영지의",
   "metaphorical":"은유적인",
-  "monetary":"통화의, 금전상의",
   "monetary punishment":"금전적 처벌",
   "money-related":"돈에 관한",
   "make sense of":"~을 이해하다",

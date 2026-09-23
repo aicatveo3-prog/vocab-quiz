@@ -1704,7 +1704,6 @@ window.GLOSS = {
   "mix":"섞다",
   "modern":"현대의",
   "modernity":"현대성",
-  "mumble":"중얼거리다",
   "named":"이름이 밝혀진",
   "natural":"자연의, 천연의",
   "negative":"부정적인",
