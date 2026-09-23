@@ -550,38 +550,523 @@ window.VOCAB_O = [
 
   { word:"oral", pron:"오럴", pos:"adj", level:"B2", meanings:["구술의","구두의"],
     syn:["spoken","by word of mouth","said aloud"], ant:["written"],
-    ex:[{ s:"The course ends with an {{}} exam.", f:"oral", ko:"그 과정은 구술의 시험으로 끝난다." }] }
+    ex:[{ s:"The course ends with an {{}} exam.", f:"oral", ko:"그 과정은 구술의 시험으로 끝난다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────────────── */
+  /* 'organ-' 어근이 여섯 개(organ·organic·organism·organization·organizational·
+     organize), 'orient-' 가 셋, 'origin-' 이 둘, 'orphan-' 이 둘 붙는다.
+     품사가 n/adj/v 로 갈리고 뜻도 서로 달라 같은 보드에서 헷갈리지 않는다.     */
+
+  { word:"orator", pron:"오레이터", pos:"n", level:"C1", meanings:["연설자","강연자"],
+    syn:["public speaker","speech-maker","one who addresses a crowd"],
+    ex:[{ s:"The crowd fell silent as the {{}} began.", f:"orator", ko:"연설자가 시작하자 군중이 조용해졌다." }] },
+
+  /* 원본은 '궤도; 궤도를 돌다' 로 명사와 동사가 섞여 있었다. 참조가 없어
+     자유롭게 고를 수 있었고 명사 한 갈래로 정리했다. */
+  { word:"orbit", pron:"오빗", pos:"n", level:"B2", meanings:["궤도"],
+    syn:["circling path","course around a body","revolution track"],
+    ex:[{ s:"The satellite entered a low {{}}.", f:"orbit", ko:"그 위성은 낮은 궤도에 들어섰다." }] },
+
+  { word:"orchard", pron:"오처드", pos:"n", level:"B2", meanings:["과수원"],
+    syn:["fruit garden","grove of fruit trees","plantation of fruit"],
+    ex:[{ s:"Their {{}} yields apples every autumn.", f:"orchard", ko:"그들의 과수원은 가을마다 사과를 낸다." }] },
+
+  /* 원본의 '(신체) 장기, 기관' 괄호를 걷었다. 같은 챕터 organization 을
+     '조직, 단체' 로 갈라 '기관' 이 서로 물리지 않게 했다. */
+  { word:"organ", pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
+    syn:["body part","internal structure","working unit of the body"],
+    ex:[{ s:"The liver is the largest internal {{}}.", f:"organ", ko:"간은 가장 큰 내부 장기다." }] },
+
+  /* 승격 47 — 사전 표현 '유기적인, 유기농의' 를 글자까지 지켰다(biological, B).
+     원본의 '화학 비료를 쓰지 않는' 은 서술이 길어서 버렸다. */
+  { word:"organic", pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
+    syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
+    ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
+
+  { word:"organism", pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
+    syn:["living thing","life form","biological entity"],
+    ex:[{ s:"Every {{}} needs water to survive.", f:"organism", ko:"모든 유기체는 살아남으려면 물이 필요하다." }] },
+
+  /* 승격 48 — 사전은 '조직, 기관' 이었다. '기관' 을 그대로 두면 같은 챕터의
+     organ(장기, 기관) 과 물리므로 원본의 '단체' 로 갈랐다.
+     association(A)·institution(I) 두 곳의 화면 글자가 함께 바뀐다. */
+  { word:"organization", pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
+    syn:["association","institution","body of members"],
+    ex:[{ s:"She founded an {{}} for street children.", f:"organization", ko:"그녀는 거리 아이들을 위한 단체를 세웠다." }] },
+
+  /* 승격 49 — ★원본의 '구조적인' 은 structural 의 뜻이다. 사전은 '조직의' 한
+     갈래였고, 거기에 원본의 '조직적인' 을 붙였다. 첫 뜻은 사전값을 지켰다
+     (administrative, A). */
+  { word:"organizational", pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
+    syn:["administrative","to do with running a group","managerial"],
+    ex:[{ s:"The delay was an {{}} failure, not a technical one.", f:"organizational", ko:"그 지연은 기술이 아니라 조직의 실패였다." }] },
+
+  /* 승격 50 — 사전 표현 '조직하다, 정리하다' 를 글자까지 지켰다
+     (arrange, A · coordinate, C). 원본의 '체계화하다' 대신 사전 쪽을 남겼다. */
+  { word:"organize", pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
+    syn:["arrange","put in order","set up"],
+    ex:[{ s:"Volunteers helped {{}} the book sale.", f:"organize", ko:"자원봉사자들이 책 판매 행사를 조직하는 것을 도왔다." }] },
+
+  /* 승격 51 — 사전에 뜻만 있고 발음이 없던 항목이다. 사전값 '방향을 잡다' 를
+     첫 자리에 두고 원본의 '~에 맞추다' 를 붙였다(원본의 '(특정 목적에)' 괄호는 걷었다). */
+  { word:"orient", pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
+    syn:["find one's bearings","point in a direction","adapt to a purpose"],
+    ex:[{ s:"Use the map to {{}} yourself before setting off.", f:"orient", ko:"떠나기 전에 지도로 방향을 잡으세요." }] },
+
+  /* 원본의 '동양 (문명)의' 괄호를 걷었다. 유의어는 모두 소문자로 등록했다 —
+     GLOSS·PRON 조회가 toLowerCase() 로 이뤄지므로 대문자 키는 뜻이 비어 보인다. */
+  { word:"oriental", pron:"오리엔털", pos:"adj", level:"C1", meanings:["동양의"],
+    syn:["eastern","of the east","far-eastern"], ant:["western"],
+    ex:[{ s:"The museum holds a fine {{}} collection.", f:"oriental", ko:"그 박물관은 훌륭한 동양의 소장품을 갖고 있다." }] },
+
+  /* 원본의 '오리엔테이션' 은 외래어를 그대로 옮긴 것이어서 뺐다 —
+     M 세트 multimedia 의 '멀티미디어' 와 같은 처리다. */
+  { word:"orientation", pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
+    syn:["introductory training","sense of direction","initial briefing"],
+    ex:[{ s:"New staff attend a two-day {{}}.", f:"orientation", ko:"새 직원은 이틀간의 예비 교육에 참석한다." }] },
+
+  /* 승격 52 — 사전 표현 '독창성' 을 글자까지 지켰다(creativity, C).
+     원본의 '독창력, 독창성' 중 앞 갈래는 뜻이 거의 같아 버렸다. */
+  { word:"originality", pron:"어리저낼러티", pos:"n", level:"C1", meanings:["독창성"],
+    syn:["creativity","inventiveness","freshness of thought"],
+    ex:[{ s:"The judges praised the {{}} of her design.", f:"originality", ko:"심사위원들은 그녀 설계의 독창성을 칭찬했다." }] },
+
+  /* 승격 53 — 사전 표현 '유래하다, 시작되다' 를 글자까지 지켰다
+     (come into existence, C). 원본의 '고안하다' 갈래는 버렸다. */
+  { word:"originate", pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
+    syn:["come into existence","arise from","have its source in"],
+    ex:[{ s:"The custom may {{}} in a harvest festival.", f:"originate", ko:"그 관습은 추수 축제에서 유래할지도 모른다." }] },
+
+  /* 승격 54 — 사전이 '장식하다; 장식품' 으로 동사와 명사가 섞여 있었다.
+     decoration(D) 은 명사, adorn(A) 은 동사였다. 원본이 명사뿐이어서 명사로
+     세우고 adorn 쪽 유의어를 'deck out' 으로 바꿨다(words.js).
+     decoration 의 첫 뜻도 '장식' 이지만 둘은 서로 유의어다. */
+  { word:"ornament", pron:"오너먼트", pos:"n", level:"B2", meanings:["장식","장신구"],
+    syn:["decoration","trinket","decorative piece"],
+    ex:[{ s:"A small glass {{}} hung from the branch.", f:"ornament", ko:"작은 유리 장식이 가지에 걸려 있었다." }] },
+
+  /* 원본은 '화려한, 정교한' 이었다. '화려한' 은 gorgeous(화려한, 호화스러운, G) 의
+     첫 뜻과 같아서 순서를 바꾸고 '정교하게 꾸민' 을 앞세웠다. */
+  { word:"ornate", pron:"오네이트", pos:"adj", level:"C1", meanings:["정교하게 꾸민","화려한"],
+    syn:["elaborately decorated","richly adorned","full of fine detail"], ant:["plain"],
+    ex:[{ s:"The hall had an {{}} ceiling.", f:"ornate", ko:"그 회관에는 정교하게 꾸민 천장이 있었다." }] },
+
+  /* 원본은 '고아로 만들다; 고아' 로 동사와 명사가 섞여 있었다. 참조가 없어
+     자유롭게 고를 수 있었고, 수능에서 흔한 명사로 세웠다. */
+  { word:"orphan", pron:"오펀", pos:"n", level:"B2", meanings:["고아"],
+    syn:["parentless child","child left without parents","foundling"],
+    ex:[{ s:"The war left him an {{}} at the age of six.", f:"orphan", ko:"전쟁은 그를 여섯 살에 고아로 남겼다." }] },
+
+  /* 승격 55 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
+     원본의 '고아원, 보육원' 중 '보육원' 은 뜻이 달라져서 버렸다. */
+  { word:"orphanage", pron:"오퍼니지", pos:"n", level:"B2", meanings:["고아원"],
+    syn:["children's home","shelter for orphans","care home for children"],
+    ex:[{ s:"She grew up in a small {{}} near the river.", f:"orphanage", ko:"그녀는 강 근처의 작은 고아원에서 자랐다." }] },
+
+  /* 승격 56 — 사전 표현과 글자까지 같다(conventional, C). */
+  { word:"orthodox", pron:"오서닥스", pos:"adj", level:"C1", meanings:["정통의","전통적인"],
+    syn:["conventional","accepted as standard","going by the book"], ant:["unorthodox"],
+    ex:[{ s:"He prefers {{}} treatment to new remedies.", f:"orthodox", ko:"그는 새 치료법보다 정통의 치료를 좋아한다." }] },
+
+  /* osteoporosis 는 전문어이고 22자다. 유의어 셋을 세울 수 있어 비우지 않았다. */
+  { word:"osteoporosis", pron:"아스티오퍼로시스", pos:"n", level:"C2", meanings:["골다공증"],
+    syn:["bone-thinning disease","brittle-bone condition","loss of bone density"],
+    ex:[{ s:"Calcium helps guard against {{}}.", f:"osteoporosis", ko:"칼슘은 골다공증을 막는 데 도움이 된다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────────────── */
+  /* 'out of ~' 구가 일곱 개 붙는다. 그중 out of date·out of fashion 은 원본이
+     둘 다 '시대에 뒤진, 구식인' 으로 똑같았고, 같은 챕터의 outdated 까지 합쳐
+     셋이 물렸다. 이렇게 갈랐다.
+       out of date '시대에 뒤진'  out of fashion '유행이 지난'  outdated '구식의, 낡은'
+     챕터 1 의 obsolete 는 '한물간, 더 이상 쓰이지 않는' 으로 따로 세워 두었다.  */
+
+  { word:"out of context", pron:"아웃 오브 칸텍스트", pos:"phr", level:"B2", meanings:["전후 관계를 무시하고"],
+    syn:["torn from its setting","stripped of background","without the surrounding words"] },
+
+  { word:"out of control", pron:"아웃 오브 컨트롤", pos:"phr", level:"B1", meanings:["통제할 수 없는"],
+    syn:["beyond restraint","running wild","no longer manageable"] },
+
+  { word:"out of date", pron:"아웃 오브 데이트", pos:"phr", level:"B2", meanings:["시대에 뒤진"],
+    syn:["behind the times","no longer current","past its day"] },
+
+  { word:"out of fashion", pron:"아웃 오브 패션", pos:"phr", level:"B2", meanings:["유행이 지난"],
+    syn:["no longer in style","out of vogue","gone out of favor"] },
+
+  { word:"out of order", pron:"아웃 오브 오더", pos:"phr", level:"B1", meanings:["고장 난"],
+    syn:["not working","broken down","out of action"] },
+
+  /* 원본은 '부적절한; 제자리에 있지 않은' 이었다. '부적절한' 은 improper(I)·
+     misplaced(M) 의 첫 뜻과 같아서 뒤 갈래를 앞세웠다. */
+  { word:"out of place", pron:"아웃 오브 플레이스", pos:"phr", level:"B2", meanings:["제자리에 있지 않은"],
+    syn:["in the wrong spot","not where it belongs","badly positioned"] },
+
+  { word:"out of sync", pron:"아웃 오브 싱크", pos:"phr", level:"B2", meanings:["서로 맞지 않는"],
+    syn:["not matching up","off the beat","failing to line up"] },
+
+  /* 원본은 '(미개척의) 오지, 오지의' 였다. 괄호를 걷고 명사 한 갈래로 정리했다. */
+  { word:"outback", pron:"아웃백", pos:"n", level:"C1", meanings:["오지"],
+    syn:["remote interior","far inland country","back country"],
+    ex:[{ s:"They drove for days across the {{}}.", f:"outback", ko:"그들은 며칠을 오지를 가로질러 달렸다." }] },
+
+  /* 승격 57 — 사전 표현 '발발, 발생' 을 글자까지 지켰다(epidemic, E).
+     원본의 '발발, 급증' 대신 사전 쪽을 남겼다. */
+  { word:"outbreak", pron:"아웃브레이크", pos:"n", level:"B2", meanings:["발발","발생"],
+    syn:["epidemic","sudden spread","flare-up"],
+    ex:[{ s:"An {{}} of flu closed two schools.", f:"outbreak", ko:"독감 발생으로 학교 둘이 문을 닫았다." }] },
+
+  /* 승격 58 — 사전 표현 '터져 나옴, 분출' 을 글자까지 지켰다(eruption, E).
+     원본의 '폭발' 을 쓰면 eruption·explosion(둘 다 E) 의 첫 뜻과 같아진다. */
+  { word:"outburst", pron:"아웃버스트", pos:"n", level:"B2", meanings:["터져 나옴","분출"],
+    syn:["eruption","sudden rush","explosion of feeling"],
+    ex:[{ s:"His angry {{}} shocked the room.", f:"outburst", ko:"그의 성난 터져 나옴이 방을 놀라게 했다." }] },
+
+  { word:"outcast", pron:"아웃캐스트", pos:"n", level:"C1", meanings:["따돌림 당하는 사람"],
+    syn:["rejected person","one pushed out","pariah"],
+    ex:[{ s:"He lived as an {{}} after the trial.", f:"outcast", ko:"그는 재판 뒤 따돌림 당하는 사람으로 살았다." }] },
+
+  /* 승격 59 — ★원본의 '결과, 과정' 에서 '과정' 은 '성과' 의 오타로 보인다.
+     사전의 '결과' 를 첫 자리에 두고 '성과' 를 붙였다(consequence, C).
+     consequence 의 첫 뜻도 '결과' 지만 둘은 서로 유의어다. */
+  { word:"outcome", pron:"아웃컴", pos:"n", level:"B1", meanings:["결과","성과"],
+    syn:["consequence","end result","upshot"],
+    ex:[{ s:"Nobody could predict the {{}} of the vote.", f:"outcome", ko:"아무도 그 투표의 결과를 내다볼 수 없었다." }] },
+
+  /* 승격 60 — 사전 표현 '구식의, 낡은' 을 글자까지 지켰다(발음이 없던 항목이다).
+     원본의 '구식의, 시대에 뒤진, 진부한' 중 '시대에 뒤진' 은 out of date 에 넘겼다. */
+  { word:"outdated", pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
+    syn:["antiquated","no longer up to date","left behind"], ant:["up-to-date"],
+    ex:[{ s:"The software is badly {{}}.", f:"outdated", ko:"그 소프트웨어는 몹시 구식이다." }] },
+
+  /* 승격 61 — 사전 표현 '장비 한 벌' 을 글자까지 지켰다(gear, G).
+     원본의 '장비, 의복' 을 쓰면 equipment·gear 의 첫 뜻 '장비' 와 같아진다. */
+  { word:"outfit", pron:"아웃핏", pos:"n", level:"B2", meanings:["장비 한 벌"],
+    syn:["gear","kit","full set of clothes"],
+    ex:[{ s:"She bought a climbing {{}} for the trip.", f:"outfit", ko:"그녀는 여행을 위해 등반 장비 한 벌을 샀다." }] },
+
+  /* 승격 62 — 사전 표현 '외향적인, 사교적인' 을 글자까지 지켰다
+     (gregarious, G · introverted 의 반의어, I). 원본의 '떠나는' 갈래는 버렸다. */
+  { word:"outgoing", pron:"아웃고잉", pos:"adj", level:"B2", meanings:["외향적인","사교적인"],
+    /* sociable 은 사전 뜻이 gregarious(표제어) 와 똑같이 '사교적인' 이라 검사가
+       잡았다 — 'fond of company' 로 바꿨다. */
+    syn:["gregarious","fond of company","easy with people"], ant:["introverted"],
+    ex:[{ s:"Her {{}} manner won over the class.", f:"outgoing", ko:"그녀의 외향적인 태도가 반 전체를 사로잡았다." }] },
+
+  { word:"outgrow", pron:"아웃그로우", pos:"v", level:"B2", meanings:["~보다 더 커지다","맞지 않게 되다"],
+    syn:["grow too big for","become too large for","leave behind with age"],
+    ex:[{ s:"Children {{}} their shoes within months.", f:"outgrow", ko:"아이들은 몇 달 안에 신발이 맞지 않게 된다." }] },
+
+  /* 승격 63 — 사전 표현 '나들이' 를 글자까지 지켰다(excursion, E).
+     원본의 '소풍' 을 쓰면 excursion(소풍, 유람) 의 첫 뜻과 같아진다. */
+  { word:"outing", pron:"아우팅", pos:"n", level:"B2", meanings:["나들이"],
+    syn:["excursion","jaunt","short pleasure trip"],
+    ex:[{ s:"The class went on a river {{}}.", f:"outing", ko:"그 반은 강 나들이를 갔다." }] },
+
+  /* 승격 64 — 사전이 '금지하다; 무법자' 로 동사와 명사가 섞여 있었다.
+     ban(B)·forbid(F) 둘 다 동사여서 동사로 세우고, 사전의 첫 갈래 '금지하다' 를
+     그대로 첫 자리에 남겼다. 원본의 '무법자, 불량배' 갈래는 버렸다. */
+  { word:"outlaw", pron:"아웃로", pos:"v", level:"C1", meanings:["금지하다","비합법화하다"],
+    syn:["ban","forbid","make illegal"], ant:["legalize"],
+    ex:[{ s:"The city voted to {{}} single-use plastics.", f:"outlaw", ko:"그 도시는 일회용 플라스틱을 금지하기로 표결했다." }] },
+
+  { word:"outlet", pron:"아웃렛", pos:"n", level:"B2", meanings:["출구","소매점"],
+    syn:["way out","retail shop","release point"],
+    ex:[{ s:"The lake has only one {{}} to the sea.", f:"outlet", ko:"그 호수는 바다로 가는 출구가 하나뿐이다." }] },
+
+  { word:"outlive", pron:"아웃리브", pos:"v", level:"B2", meanings:["~보다 더 오래 살다"],
+    syn:["survive longer than","outlast","live on after"],
+    ex:[{ s:"She would {{}} both her brothers.", f:"outlive", ko:"그녀는 두 오라비보다 더 오래 살게 된다." }] },
+
+  /* ── 챕터 7 ─────────────────────────────────────── */
+  /* 'over-' 로 시작하는 낱말이 이 챕터 뒤쪽부터 챕터 8 끝까지 스물넷 이어진다.
+     저장소에서 한 어근이 이렇게 길게 붙는 것은 처음이다. 품사가 adj/n/v 로
+     갈리고 뜻도 서로 멀어 같은 보드에서 헷갈리지 않는다.                       */
+
+  /* 승격 65 — 사전이 '전망; 관점' 이었다. 구분 기호만 쉼표로 바꿨다
+     (attitude, A · forecast, F · mindset, M — 세 곳). */
+  { word:"outlook", pron:"아웃룩", pos:"n", level:"B2", meanings:["전망","관점"],
+    syn:["forecast","point of view","way of seeing things"],
+    ex:[{ s:"The economic {{}} has brightened.", f:"outlook", ko:"경제 전망이 밝아졌다." }] },
+
+  { word:"outnumber", pron:"아웃넘버", pos:"v", level:"B2", meanings:["~보다 수가 더 많다"],
+    syn:["exceed in number","be more numerous than","have the greater count"],
+    ex:[{ s:"Cyclists now {{}} cars on this street.", f:"outnumber", ko:"이 거리에서는 이제 자전거가 차보다 수가 더 많다." }] },
+
+  /* 승격 66 — 사전 표현 '더 나은 성과를 내다' 를 글자까지 지켰다(excel, E).
+     원본의 '능가하다' 를 쓰면 같은 챕터의 outstrip 과 부딪힌다. */
+  { word:"outperform", pron:"아웃퍼폼", pos:"v", level:"C1", meanings:["더 나은 성과를 내다"],
+    syn:["excel","do better than","surpass in results"],
+    ex:[{ s:"Small firms often {{}} large ones in service.", f:"outperform", ko:"작은 회사가 서비스에서 큰 회사보다 더 나은 성과를 내는 일이 많다." }] },
+
+  /* 승격 67 — 사전 표현 '생산량, 산출' 을 글자까지 지켰다(발음이 없던 항목이다).
+     원본은 '산출, 생산, 결과; 산출하다, 출력하다' 로 명사와 동사가 섞여 있었다.
+     참조가 없어 자유롭게 고를 수 있었고 명사로 정리했다. */
+  { word:"output", pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
+    syn:["production total","amount produced","yield"],
+    ex:[{ s:"Factory {{}} fell for three months.", f:"output", ko:"공장 생산량이 석 달 동안 떨어졌다." }] },
+
+  /* 승격 68 — 사전 표현 '격분, 분노' 를 글자까지 지켰다(발음이 없던 항목이다).
+     원본은 '몹시 화나게 하다; 분노, 격분' 으로 동사와 명사가 섞여 있었다.
+     참조가 없어 명사로 정리했다. */
+  { word:"outrage", pron:"아웃레이지", pos:"n", level:"B2", meanings:["격분","분노"],
+    syn:["fury","indignation","burning anger"],
+    ex:[{ s:"The decision caused public {{}}.", f:"outrage", ko:"그 결정은 대중의 격분을 불렀다." }] },
+
+  { word:"outrageous", pron:"아웃레이저스", pos:"adj", level:"C1", meanings:["너무나 충격적인","터무니없는"],
+    syn:["shocking","beyond all reason","scandalous"],
+    ex:[{ s:"The price was simply {{}}.", f:"outrageous", ko:"그 값은 그저 터무니없었다." }] },
+
+  /* 승격 69 — 사전 표현 '완전한, 노골적인' 을 글자까지 지켰다(발음이 없던 항목이다).
+     원본의 '전면적인; 직접적인' 대신 사전 쪽을 남겼다. */
+  { word:"outright", pron:"아웃라이트", pos:"adj", level:"C1", meanings:["완전한","노골적인"],
+    syn:["undisguised","with nothing held back","downright"],
+    ex:[{ s:"It was an {{}} refusal, with no excuses.", f:"outright", ko:"그것은 변명 없는 완전한 거절이었다." }] },
+
+  /* 승격 70 — 사전이 '뛰어난; 미해결의' 였다. 두 갈래가 뜻이 너무 멀어
+     원본의 '두드러진' 을 뒤에 붙였다. 첫 뜻은 사전값을 지켰다
+     (brilliant, B · eminent, E). */
+  { word:"outstanding", pron:"아웃스탠딩", pos:"adj", level:"B2", meanings:["뛰어난","두드러진"],
+    syn:["brilliant","exceptional","head and shoulders above"], ant:["mediocre"],
+    ex:[{ s:"Her essay was {{}} among fifty entries.", f:"outstanding", ko:"그녀의 글은 오십 편 가운데 뛰어났다." }] },
+
+  /* 원본은 '초과하다, 능가하다, 벗어나다' 세 갈래였다. '능가하다' 는 같은 챕터의
+     outperform 과 부딪히므로 '앞지르다, 웃돌다' 로 갈랐다. */
+  { word:"outstrip", pron:"아웃스트립", pos:"v", level:"C1", meanings:["앞지르다","웃돌다"],
+    syn:["overtake in progress","go beyond","leave behind in a race"],
+    ex:[{ s:"Demand began to {{}} supply.", f:"outstrip", ko:"수요가 공급을 웃돌기 시작했다." }] },
+
+  { word:"outward", pron:"아웃워드", pos:"adj", level:"B2", meanings:["겉보기의","표면상의"],
+    syn:["on the surface","visible from outside","apparent to the eye"], ant:["inward"],
+    ex:[{ s:"His calm was only {{}}.", f:"outward", ko:"그의 침착함은 겉보기의 것일 뿐이었다." }] },
+
+  /* 승격 71 — 사전은 '타원형의' 한 갈래였다. 원본의 '달걀 모양의' 를 첫 자리에
+     두었다 — elliptical(타원형의, 생략된, E) 과 첫 뜻을 갈라 두는 편이 낫다.
+     그 화면의 글자가 함께 바뀐다. 원본의 명사 '달걀 모양, 타원' 갈래는 버렸다. */
+  { word:"oval", pron:"오벌", pos:"adj", level:"B2", meanings:["달걀 모양의","타원형의"],
+    syn:["elliptical","egg-shaped","rounded and long"],
+    ex:[{ s:"The table had an {{}} top.", f:"oval", ko:"그 탁자는 달걀 모양의 상판을 가졌다." }] },
+
+  { word:"ovation", pron:"오베이션", pos:"n", level:"C1", meanings:["박수","갈채"],
+    syn:["burst of applause","loud clapping","standing cheer"],
+    ex:[{ s:"The singer received a long {{}}.", f:"ovation", ko:"그 가수는 긴 박수를 받았다." }] },
+
+  /* 승격 72 — 사전 표현 '전반적인, 종합적인' 을 글자까지 지켰다
+     (as a whole, A · general, G · gross, G — 세 곳).
+     원본은 '종합적인; 전반적으로' 로 형용사와 부사가 섞여 있었다. 참조 셋 중
+     둘이 형용사여서 형용사로 세웠고, 사전값이 마침 형용사 쪽이었다. */
+  { word:"overall", pron:"오버올", pos:"adj", level:"B2", meanings:["전반적인","종합적인"],
+    syn:["general","taken as a whole","across the board"],
+    ex:[{ s:"The {{}} cost came to eight million won.", f:"overall", ko:"전반적인 비용은 팔백만 원에 이르렀다." }] },
+
+  { word:"overanxious", pron:"오버앵셔스", pos:"adj", level:"C1", meanings:["지나치게 걱정하는"],
+    syn:["worrying too much","overly fretful","needlessly alarmed"],
+    ex:[{ s:"Do not be {{}} about the exam.", f:"overanxious", ko:"시험에 지나치게 걱정하지 마라." }] },
+
+  /* overbear 는 매우 드문 낱말이다. 같은 세트의 overwhelm(압도하다, 당황하게 하다)·
+     overpower(제압하다, 힘으로 누르다) 와 물리지 않게 '억누르다, 짓누르다' 로 갈랐다. */
+  { word:"overbear", pron:"오버베어", pos:"v", level:"C2", meanings:["억누르다","짓누르다"],
+    syn:["bear down on","weigh heavily upon","press down hard"],
+    ex:[{ s:"He tried to {{}} every objection in the room.", f:"overbear", ko:"그는 방 안의 모든 이의를 억누르려 했다." }] },
+
+  /* 원본은 '과다 복용; 과다 복용하다' 로 명사와 동사가 섞여 있었다.
+     참조가 없어 명사 한 갈래로 정리했다. */
+  { word:"overdose", pron:"오버도스", pos:"n", level:"B2", meanings:["과다 복용"],
+    syn:["too large a dose","excessive amount taken","dangerous quantity"],
+    ex:[{ s:"An {{}} of the drug can stop the heart.", f:"overdose", ko:"그 약의 과다 복용은 심장을 멈출 수 있다." }] },
+
+  { word:"overdrawn", pron:"오버드론", pos:"adj", level:"C1", meanings:["초과 인출된"],
+    syn:["in the red","drawn beyond the balance","overspent on an account"],
+    ex:[{ s:"His account has been {{}} since May.", f:"overdrawn", ko:"그의 계좌는 오월부터 초과 인출된 상태다." }] },
+
+  /* 승격 73 — 사전 표현 '기한이 지난, 뒤늦은' 을 글자까지 지켰다(belated, B).
+     원본의 '기한이 지난, 밀린' 대신 사전 쪽을 남겼다. */
+  { word:"overdue", pron:"오버두", pos:"adj", level:"B2", meanings:["기한이 지난","뒤늦은"],
+    syn:["belated","past the due date","long-awaited"],
+    ex:[{ s:"The library book is two weeks {{}}.", f:"overdue", ko:"그 도서관 책은 두 주 기한이 지났다." }] },
+
+  { word:"overeat", pron:"오버이트", pos:"v", level:"B2", meanings:["과식하다"],
+    syn:["eat too much","stuff oneself","take more food than needed"],
+    ex:[{ s:"It is easy to {{}} at a buffet.", f:"overeat", ko:"뷔페에서는 과식하기 쉽다." }] },
+
+  { word:"overenthusiastic", pron:"오버인쑤지애스틱", pos:"adj", level:"C1", meanings:["과도하게 열중한"],
+    syn:["too keen","carried away by zeal","excessively eager"],
+    ex:[{ s:"The guide was a little {{}} about the ruins.", f:"overenthusiastic", ko:"그 안내인은 그 폐허에 조금 과도하게 열중했다." }] },
+
+  /* ── 챕터 8 (마지막) ──────────────────────────────── */
+  /* 18단어. MIN_TAIL(4) 이상이라 독립 챕터로 둔다.
+     'over-' 어근이 열일곱, 그리고 마지막이 owe 다.
+     압도 계열 셋을 이렇게 갈랐다 —
+       overpower '제압하다, 힘으로 누르다'   overwhelm '압도하다, 당황하게 하다'
+       overbear(챕터 7) '억누르다, 짓누르다'                                     */
+
+  { word:"overestimate", pron:"오버에스터메이트", pos:"v", level:"B2", meanings:["과대평가하다"],
+    syn:["rate too highly","think better of than is true","put too high a value on"],
+    ex:[{ s:"Do not {{}} how much time you have.", f:"overestimate", ko:"시간이 얼마나 있는지 과대평가하지 마라." }] },
+
+  { word:"overhear", pron:"오버히어", pos:"v", level:"B2", meanings:["엿듣다"],
+    syn:["catch by chance","hear without meaning to","listen in on"],
+    ex:[{ s:"I happened to {{}} their quarrel.", f:"overhear", ko:"나는 우연히 그들의 말다툼을 엿들었다." }] },
+
+  { word:"overindulge", pron:"오버인덜지", pos:"v", level:"C1", meanings:["탐닉하다","지나치게 빠지다"],
+    syn:["give in to excess","enjoy far too much","let oneself go too far"],
+    ex:[{ s:"It is easy to {{}} during the holidays.", f:"overindulge", ko:"연휴에는 탐닉하기 쉽다." }] },
+
+  /* 승격 74 — 사전이 '겹치다; 중복' 으로 동사와 명사가 섞여 있었다.
+     coincide(C)·commonality(C) 중 coincide 가 동사 갈래를 쓴다. 원본대로 동사로
+     세우고 사전의 첫 갈래 '겹치다' 를 그대로 남겼다. */
+  { word:"overlap", pron:"오버랩", pos:"v", level:"B2", meanings:["겹치다","중복되다"],
+    syn:["coincide","cover part of each other","run into each other"],
+    ex:[{ s:"The two shifts {{}} by one hour.", f:"overlap", ko:"두 근무조는 한 시간 겹친다." }] },
+
+  { word:"overload", pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
+    syn:["load beyond capacity","pile on too much","burden past the limit"],
+    ex:[{ s:"Do not {{}} the small trailer.", f:"overload", ko:"그 작은 트레일러에 지나치게 많이 싣지 마라." }] },
+
+  /* 승격 75 — 사전 표현 '간과하다; 내려다보다' 의 두 갈래를 그대로 살렸다.
+     구분 기호만 쉼표로 바꿨다. 이 세트에서 참조가 가장 많은 낱말이다(5곳) —
+     condone·disregard·ignore 가 유의어, anticipate·detect 가 반의어다. */
+  { word:"overlook", pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
+    syn:["disregard","fail to notice","pass over"],
+    ex:[{ s:"It is easy to {{}} a small error in the total.", f:"overlook", ko:"합계의 작은 오류는 간과하기 쉽다." }] },
+
+  { word:"overnight", pron:"오버나이트", pos:"adv", level:"B1", meanings:["하룻밤 사이에"],
+    syn:["in a single night","between dusk and dawn","very suddenly"],
+    ex:[{ s:"The snow melted {{}}.", f:"overnight", ko:"눈이 하룻밤 사이에 녹았다." }] },
+
+  /* 승격 76 — ★원본의 뜻이 틀렸다. '견줄 데 없는' 은 unrivaled 의 뜻이다.
+     사전은 '압도하다, 제압하다' 였는데 '압도하다' 를 그대로 두면 같은 챕터의
+     overwhelm 과 물리므로 '제압하다' 를 첫 자리에 두고 '힘으로 누르다' 를 붙였다.
+     참조 drown out(D, 소리를 덮어 버리다) 은 힘으로 누르는 뜻을 쓴다. */
+  { word:"overpower", pron:"오버파워", pos:"v", level:"C1", meanings:["제압하다","힘으로 누르다"],
+    syn:["subdue by force","get the better of","overcome by strength"],
+    ex:[{ s:"Three guards had to {{}} the intruder.", f:"overpower", ko:"경비 셋이 그 침입자를 제압해야 했다." }] },
+
+  { word:"overrule", pron:"오버룰", pos:"v", level:"C1", meanings:["기각하다"],
+    syn:["reject a ruling","set aside a decision","rule against"],
+    ex:[{ s:"The judge chose to {{}} the objection.", f:"overrule", ko:"판사는 그 이의를 기각하기로 했다." }] },
+
+  /* 승격 77 — 사전은 '감독하다' 한 갈래였다. 원본의 '감시하다' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(administer, A). 원본은 순서가 거꾸로였다. */
+  { word:"oversee", pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
+    syn:["supervise","keep watch over","be in charge of"],
+    ex:[{ s:"She was asked to {{}} the whole project.", f:"oversee", ko:"그녀는 사업 전체를 감독하도록 요청받았다." }] },
+
+  /* 승격 78 — 사전 표현 '과장해 말하다' 를 글자까지 지켰다
+     (dramatize, D · exaggerate, E). 원본의 '과장하다' 를 쓰면 exaggerate(과장하다,
+     부풀리다) 의 첫 뜻과 같아진다. */
+  { word:"overstate", pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
+    syn:["exaggerate","make more of than is true","blow up in the telling"], ant:["understate"],
+    ex:[{ s:"Reports may {{}} the size of the crowd.", f:"overstate", ko:"보도는 군중의 규모를 과장해 말할 수 있다." }] },
+
+  /* overstructure 는 사전에도 거의 없는 드문 낱말이다. 유의어 셋을 세울 수 있어
+     비우지 않았다. */
+  { word:"overstructure", pron:"오버스트럭처", pos:"v", level:"C2", meanings:["지나치게 구조화하다"],
+    syn:["impose too much structure on","over-organize","hem in with rules"],
+    ex:[{ s:"Teachers should not {{}} every lesson.", f:"overstructure", ko:"교사가 수업마다 지나치게 구조화해서는 안 된다." }] },
+
+  /* 승격 79 — 사전 표현 '추월하다, 따라잡다' 를 글자까지 지켰다
+     (befall, B · catch up with, C). 원본의 '~을 따라잡다, (다른 차를) 추월하다'
+     에서 괄호와 조사를 걷은 셈이다. */
+  { word:"overtake", pron:"오버테이크", pos:"v", level:"B2", meanings:["추월하다","따라잡다"],
+    syn:["catch up with","pass on the road","draw level and go by"],
+    ex:[{ s:"Do not {{}} on a blind bend.", f:"overtake", ko:"앞이 안 보이는 굽이에서 추월하지 마라." }] },
+
+  /* 승격 80 — 사전 표현 '뒤집다, 뒤엎다' 를 글자까지 지켰다(capsize, C).
+     원본의 '뒤집히다, 뒤집다; 번복시키다' 는 자동사와 타동사가 섞여 있었다. */
+  { word:"overturn", pron:"오버턴", pos:"v", level:"B2", meanings:["뒤집다","뒤엎다"],
+    syn:["capsize","turn upside down","knock over"],
+    ex:[{ s:"A gust of wind could {{}} the canoe.", f:"overturn", ko:"한 줄기 돌풍이 그 카누를 뒤집을 수 있었다." }] },
+
+  /* 원본은 '비만의, 과체중의; 중량 초과의' 였다. 챕터 1 의 obese(고도 비만인)·
+     obesity(비만) 와 겹치지 않게 '과체중의' 를 첫 자리에 두었다. */
+  { word:"overweight", pron:"오버웨이트", pos:"adj", level:"B2", meanings:["과체중의","중량 초과의"],
+    syn:["heavier than is healthy","above the weight limit","carrying extra weight"], ant:["underweight"],
+    ex:[{ s:"The suitcase was {{}} by two kilos.", f:"overweight", ko:"그 여행가방은 두 킬로 중량 초과였다." }] },
+
+  /* 승격 81 — 사전은 '압도하다' 한 갈래였고 발음이 없었다. 원본의 '당황하게 하다'
+     를 뒤에 붙였다. 같은 챕터 overpower 를 '제압하다' 로 갈라 두었으므로 이쪽이
+     '압도하다' 를 가져간다. 원본의 '제압하다' 갈래는 overpower 에 넘겼다. */
+  { word:"overwhelm", pron:"오버웰름", pos:"v", level:"B2", meanings:["압도하다","당황하게 하다"],
+    syn:["sweep over","leave at a loss","bear down upon"],
+    ex:[{ s:"The number of requests began to {{}} the small team.", f:"overwhelm", ko:"요청의 수가 그 작은 팀을 압도하기 시작했다." }] },
+
+  /* 승격 82 (마지막) — 사전 표현 '압도적인, 너무도 강력한' 을 글자까지 지켰다
+     (daunting, D · insurmountable, I). 원본의 '저항하기 힘든' 대신 사전 쪽을 남겼다. */
+  { word:"overwhelming", pron:"오버웰밍", pos:"adj", level:"B2", meanings:["압도적인","너무도 강력한"],
+    syn:["daunting","too strong to resist","crushing in scale"],
+    ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
+
+  { word:"owe", pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+    syn:["be in debt for","have to pay back","be indebted to"],
+    ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "abide by": "~을 지키다",
   "about to": "이제 곧 ~할",
+  "above the weight limit": "무게 한도를 넘은",
+  "accepted as standard": "표준으로 받아들여진",
+  "across the board": "어느 쪽이나 다",
+  "adapt to a purpose": "쓸 목적에 맞추다",
   "almost recalled": "거의 떠오른",
+  "amount produced": "만들어 낸 양",
+  "antiquated": "케묶은",
+  "apparent to the eye": "눈에 드러나는",
   "applied without exception": "예외 없이 적용되는",
+  "arise from": "~에서 생겨나다",
   "as a representative of": "~의 대표로서",
   "astronomy lab": "천문 연구실",
   "at the brink of": "~의 문턱에서",
   "attacking": "몰아붙이는",
   "auspicious": "좋은 일을 알리는",
+  "back country": "뒤쪽 벽지",
   "backstage": "무대 뒤의",
+  "badly positioned": "자리가 잘못 잡힌",
   "balance out": "서로 맞춰 없애다",
+  "be in debt for": "~때문에 빚이 있다",
+  "be indebted to": "~에게 신세를 지다",
+  "be more numerous than": "~보다 많다",
+  "bear down on": "~을 눌러 덮치다",
+  "bear down upon": "~을 밀어붙이다",
+  "become too large for": "~에 들어가지 않게 되다",
   "before the audience": "관객 앞에서 하는",
   "beginning of an illness": "병이 시작됨",
+  "behind the times": "시절에 뒤처진",
   "best possible state": "가능한 가장 좋은 상태",
   "best suited": "가장 알맞은",
   "betting ratio": "도박에서 매기는 비율",
+  "between dusk and dawn": "해 진 뒤 동틀 때까지",
+  "beyond all reason": "말도 안 되게 지나친",
+  "beyond restraint": "억누를 수 없는",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
+  "biological entity": "생물학적 개체",
   "block up": "틀어막다",
+  "blow up in the telling": "말하면서 부풀리다",
   "boding ill": "나쁜 일을 알리는",
+  "body of members": "구성원의 모임",
+  "body part": "몸의 한 부분",
+  "bone-thinning disease": "뼈가 얇아지는 병",
   "breach of law": "법을 어김",
   "bright view": "밝게 보는 태도",
+  "brittle-bone condition": "뼈가 잘 부러지는 상태",
+  "broken down": "망가져 버린",
+  "burden past the limit": "한계를 넘겨 짐을 얹다",
+  "burning anger": "타오르는 노여움",
+  "burst of applause": "터져 나오는 손뼉",
   "by word of mouth": "입으로 전하는",
   "cancel out": "서로 지워 버리다",
+  "care home for children": "아이를 보살피는 시설",
   "careful noting": "꼼꼼히 적어 둠",
+  "carried away by zeal": "열의에 휩쓸린",
+  "carrying extra weight": "살이 더 붙은",
   "carrying far too much fat": "지방이 너무 많은",
+  "catch by chance": "우연히 듣다",
   "chances": "될 성",
+  "chemical-free": "화학 약품을 쓰지 않은",
+  "child left without parents": "어버이를 잃은 아이",
+  "children's home": "아이들이 지내는 집",
+  "circling path": "돌아가는 길",
   "close to the start of": "~이 시작될 즈음에",
   "close watching": "가까이 지켜봄",
   "come by": "어렵게 구하다",
@@ -590,38 +1075,83 @@ Object.assign(window.GLOSS, {
   "corpulence": "살집이 두둑함",
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
+  "course around a body": "천체를 도는 길",
+  "cover part of each other": "서로 일부를 덮다",
   "crushing": "짓누르는",
+  "crushing in scale": "규모로 짓누르는",
   "curtain-raiser": "막을 올리는 순서",
+  "dangerous quantity": "위험한 양",
+  "deck out": "차려 꾸미다",
+  "decorative piece": "꾸미는 물건",
+  "do better than": "~보다 잘하다",
   "doing as told": "말하는 대로 하는",
   "done then and there": "그 자리에서 해내는",
+  "downright": "에누리 없는",
+  "draw level and go by": "나란히 붙었다가 지나가다",
+  "drawn beyond the balance": "잔고보다 많이 빼낸",
   "drop from a list": "목록에서 빼다",
   "dutiful": "본분을 다하는",
   "earliest": "맨 처음의",
+  "eastern": "동쪽의",
+  "easy with people": "사람을 편히 대하는",
+  "eat too much": "너무 많이 먹다",
+  "elaborately decorated": "공들여 꾸민",
+  "end result": "끝에 나온 것",
+  "enjoy far too much": "너무 많이 즐기다",
   "erase all trace of": "~의 흔적을 다 지우다",
+  "exceed in number": "수에서 넘어서다",
   "excess body fat": "넘치는 몸의 지방",
+  "excessive amount taken": "지나치게 많이 먹은 양",
+  "excessively eager": "지나치게 들뜬",
   "expecting the best": "잘될 것으로 보는",
+  "explosion of feeling": "감정이 터져 나옴",
   "extreme overweight": "심한 과체중",
   "facing": "마주 보는",
   "fact-based": "사실에 바탕한",
+  "fail to notice": "알아채지 못하다",
+  "failing to line up": "줄이 맞지 않는",
   "far from it": "그렇기는커녕",
+  "far inland country": "한참 안쪽 땅",
+  "far-eastern": "극동의",
   "favorable moment": "알맞은 때",
+  "find one's bearings": "자기 위치를 가늠하다",
   "first appearance": "처음 나타남",
   "first part": "앞부분",
+  "flare-up": "확 번짐",
   "follow orders": "명령을 좇다",
+  "fond of company": "어울리기를 좋아하는",
   "for good": "아주 영영",
+  "foundling": "버려진 채 발견된 아이",
   "free of opinion": "의견이 섞이지 않은",
   "free of prejudice": "선입견이 없는",
+  "freshness of thought": "생각이 새로움",
   "from another view": "다른 쪽에서 보면",
+  "fruit garden": "과일을 기르는 밭",
+  "full of fine detail": "잔 무늬가 가득한",
+  "full set of clothes": "옷 한 벌 전체",
   "get hold of": "손에 넣다",
+  "get the better of": "~을 눌러 이기다",
+  "give in to excess": "지나침에 무너지다",
   "give offence to": "~에게 언짢음을 주다",
   "going by": "~을 따라 판단하여",
+  "going by the book": "규정을 그대로 따르는",
+  "gone out of favor": "사랑을 잃은",
   "grossly overweight": "지나치게 체중이 많은",
   "grounded on": "~에 발판을 둔",
+  "grove of fruit trees": "과일나무 숲",
+  "grow too big for": "~에 비해 너무 커지다",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
+  "have its source in": "~에 뿌리를 두다",
+  "have the greater count": "더 큰 수를 차지하다",
+  "have to pay back": "갚아야 하다",
+  "head and shoulders above": "한참 위에 있는",
   "healing cream": "상처에 바르는 크림",
+  "hear without meaning to": "뜻하지 않게 듣다",
+  "heavier than is healthy": "건강에 좋을 무게보다 무거운",
   "heavy-handed": "함부로 세게 다루는",
+  "hem in with rules": "규칙으로 옥죄다",
   "hide from view": "보이지 않게 가리다",
   "hold by force": "힘으로 붙들다",
   "hold out": "내밀어 주다",
@@ -631,77 +1161,159 @@ Object.assign(window.GLOSS, {
   "ideal point": "가장 알맞은 지점",
   "ill at ease": "마음이 편치 않은",
   "immediate at the scene": "현장에서 곧바로 하는",
+  "impose too much structure on": "~에 틀을 너무 씌우다",
+  "in a single night": "하루 밤 만에",
   "in place of": "~을 갈음하여",
   "in the world": "세상에",
+  "in the wrong spot": "엉뚱한 자리에 있는",
   "in view of the crowd": "사람들 눈에 보이는",
+  "indignation": "분개",
   "infrequent": "드문드문한",
+  "initial briefing": "첫 설명 자리",
   "initial stage": "첫 단계",
   "instead of that": "그 대신에",
   "insulting": "모욕하는",
+  "internal structure": "몸속 구조물",
+  "introductory training": "처음 받는 교육",
+  "jaunt": "짧은 유람",
   "jumpy": "움찔거리는",
   "just out of reach": "손에 닿을 듯 안 닿는",
   "just short of": "~에 조금 못 미쳐",
   "keep in action": "움직이게 유지하다",
   "keep to": "~에서 벗어나지 않다",
   "keep to the rules": "규칙을 지키다",
+  "keep watch over": "~을 지켜 살피다",
   "kept off the books": "기록에 남기지 않는",
   "keyed up": "바짝 긴장한",
+  "kit": "한 벌 도구",
+  "knock over": "쳐서 넘어뜨리다",
+  "leave at a loss": "어쩔 줄 모르게 하다",
+  "leave behind in a race": "겨루기에서 뒤에 두다",
+  "leave behind with age": "나이가 들며 벗어나다",
   "leave no choice for": "~에게 선택을 남기지 않다",
+  "left behind": "뒤에 남겨진",
   "left behind by progress": "발전에 뒤처진",
+  "legalize": "법으로 허용하다",
+  "let oneself go too far": "자신을 너무 놓아 버리다",
   "liberating": "놓여나게 하는",
+  "life form": "생명 형태",
   "line of work": "일하는 분야",
+  "listen in on": "~을 몰래 듣다",
   "little known": "거의 알려지지 않은",
+  "live on after": "~뒤에도 살아가다",
+  "living thing": "살아 있는 것",
+  "load beyond capacity": "실을 수 있는 양을 넘겨 싣다",
+  "long-awaited": "오래 기다려 온",
   "looking on the bright side": "밝은 쪽을 보는",
+  "loss of bone density": "뼈 밀도가 줄어듦",
+  "loud clapping": "큰 손뼉 소리",
   "make duty-bound": "할 수밖에 없게 만들다",
+  "make illegal": "법으로 못하게 하다",
+  "make more of than is true": "사실보다 크게 말하다",
   "make unclear": "불분명하게 만들다",
   "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
   "most favorable": "가장 유리한",
   "move into": "들어가 자리 잡다",
+  "naturally grown": "자연스레 기른",
   "nearly remembered": "떠오를 듯한",
+  "needlessly alarmed": "까닭 없이 놀란",
+  "no longer current": "지금 것이 아닌",
+  "no longer in style": "더는 멋으로 안 여겨지는",
   "no longer in use": "더 이상 쓰이지 않는",
+  "no longer manageable": "더는 다룰 수 없는",
+  "no longer up to date": "더는 요즘 것이 아닌",
   "not for publication": "실으면 안 되는",
+  "not matching up": "서로 들어맞지 않는",
   "not optional": "고를 수 없는",
+  "not where it belongs": "있어야 할 곳이 아닌",
+  "not working": "돌아가지 않는",
   "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
   "of all things": "하필이면",
+  "of the east": "동방에 속한",
+  "off the beat": "박자가 어긋난",
   "on the boards": "무대에 올라 있는",
   "on the facts alone": "사실만을 근거로",
   "on the other side": "건너편의",
   "on the point of": "~하려는 순간에",
+  "on the surface": "겉으로는",
   "on-the-record": "공개를 전제로 한",
   "one after another": "잇달아",
+  "one pushed out": "밀려난 이",
   "one such case": "그런 한 가지",
   "one such instance": "그런 한 차례",
+  "one who addresses a crowd": "군중에게 말하는 사람",
   "one who fights against": "맞서 싸우는 이",
   "opening for action": "움직일 틈",
+  "out of action": "쓸 수 없는",
   "out of the ordinary": "보통과 다른",
+  "out of vogue": "인기가 식은",
+  "outlast": "~보다 오래 버티다",
+  "over-organize": "지나치게 짜 맞추다",
+  "overcome by strength": "힘으로 이겨 내다",
+  "overly fretful": "지나치게 안절부절하는",
+  "overspent on an account": "계좌에서 넘겨 쓴",
+  "overtake in progress": "나아가며 앞질러 가다",
+  "parentless child": "어버이 없는 아이",
+  "pariah": "천대받는 사람",
   "particular time": "특정한 시점",
+  "pass on the road": "길에서 앞질러 가다",
+  "pass over": "그냥 넘기다",
+  "past its day": "한창때가 지난",
+  "past the due date": "기한 날짜를 넘긴",
   "peak condition": "가장 좋은 조건",
   "person looking on": "옆에서 보는 사람",
   "physical body": "형체를 가진 몸",
   "physics of lenses": "렌즈의 물리",
+  "pile on too much": "너무 많이 쌓다",
   "place under obligation": "의무 아래 두다",
   "plain to see": "보면 바로 아는",
+  "plantation of fruit": "과일 농장",
+  "point in a direction": "어느 쪽으로 향하게 하다",
+  "point of view": "바라보는 자리",
   "positive thinking": "긍정으로 생각하기",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
+  "press down hard": "세게 내리누르다",
+  "production total": "생산 합계",
   "progeny": "낳은 자손",
+  "public speaker": "사람들 앞에서 말하는 이",
   "pushback": "되밀어 내는 움직임",
+  "put in order": "가지런히 하다",
   "put on the table": "논의 자리에 내놓다",
+  "put too high a value on": "~에 지나친 값을 두다",
   "quite the opposite": "오히려 거꾸로",
+  "rate too highly": "너무 높이 매기다",
   "receptive": "받아들일 자세가 된",
+  "reject a ruling": "판단을 물리다",
+  "rejected person": "내쳐진 사람",
+  "release point": "내보내는 지점",
+  "remote interior": "멀리 떨어진 내륙",
   "resting upon": "~에 기대어",
+  "retail shop": "소매로 파는 가게",
+  "revolution track": "회전하는 자취",
+  "richly adorned": "푸짐하게 꾸민",
   "right before": "바로 앞에",
+  "rounded and long": "둥글고 길쭉한",
+  "rule against": "~에 불리하게 판단하다",
   "run a business": "사업을 꾸리다",
+  "run into each other": "서로 걸쳐 들다",
   "running of a machine": "기계가 돌아감",
+  "running wild": "마구 날뛰는",
   "said aloud": "소리 내어 말한",
   "said unofficially": "비공식으로 한 말의",
   "salve": "바르는 약",
   "sanctioned": "허락을 받은",
+  "scandalous": "말썽거리가 될 만한",
   "science of light": "빛을 다루는 학문",
+  "sense of direction": "방향을 아는 감각",
+  "set aside a decision": "결정을 무르다",
   "set in one's ways": "제 방식만 지키는",
   "settled for ever": "다시 뒤집히지 않게",
+  "shelter for orphans": "고아를 돌보는 곳",
+  "shocking": "충격을 주는",
+  "short pleasure trip": "가벼운 놀이 여행",
   "singly": "하나씩",
   "sinister": "음험한",
   "skip over": "건너뛰다",
@@ -711,42 +1323,77 @@ Object.assign(window.GLOSS, {
   "solid thing": "단단한 것",
   "speak against": "반대하는 말을 하다",
   "speaking for": "~을 대변하여",
+  "speech-maker": "연설을 하는 이",
   "spoken remark": "입으로 낸 말",
   "stand in the way of": "~의 앞을 가로막다",
   "stand up to": "~에 맞서다",
   "standard for all cases": "모든 경우에 같은",
+  "standing cheer": "일어서서 보내는 환호",
   "star-watching station": "별을 살피는 시설",
   "still under way": "아직 끝나지 않은",
+  "stripped of background": "배경을 걷어 낸",
   "study of vision": "보는 원리 연구",
+  "stuff oneself": "배불리 채워 먹다",
+  "subdue by force": "힘으로 눌러 가라앉히다",
+  "sudden rush": "갑작스레 몰려나옴",
+  "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
   "surgery": "외과 처치",
+  "surpass in results": "성과에서 앞서다",
+  "survive longer than": "~보다 오래 살아남다",
+  "sweep over": "휩쓸어 덮치다",
   "sworn word": "맹세한 말",
+  "take more food than needed": "필요보다 많이 먹다",
   "take place": "벌어지다",
+  "taken as a whole": "전체로 보아",
   "taking up of space": "자리를 차지함",
   "tenancy": "빌려 씀",
   "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
+  "think better of than is true": "실제보다 좋게 여기다",
+  "to do with running a group": "집단을 꾸리는 일의",
+  "too keen": "너무 열을 올리는",
+  "too large a dose": "너무 많은 약 양",
+  "too strong to resist": "버틸 수 없이 센",
+  "torn from its setting": "놓인 자리에서 떼어 낸",
+  "trinket": "자잘한 장신구",
+  "turn upside down": "위아래를 뒤바꾸다",
   "typical": "으레 그런",
   "tyrannical": "폭압을 휘두르는",
   "under way at present": "지금 진행 중인",
+  "underweight": "몸무게가 모자란",
+  "undisguised": "감추지 않은",
   "unfair to one side": "한편에 불리한",
   "unfinished": "마무리되지 않은",
   "uniform for everyone": "모두에게 똑같은",
   "unlawful act": "법에 어긋난 짓",
   "unofficial": "공식이 아닌",
+  "unorthodox": "정통이 아닌",
+  "up-to-date": "요즘 것에 맞는",
+  "upshot": "귀결",
   "use of a place": "장소를 씀",
+  "very suddenly": "아주 갑작스레",
+  "visible from outside": "바깥에서 보이는",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
   "warning of trouble": "말썽을 알리는",
   "watch closely": "가까이 지켜보다",
   "watcher": "지켜보는 이",
+  "way of seeing things": "사물을 보는 방식",
   "way open to one": "택할 수 있는 길",
+  "way out": "빠져나가는 길",
+  "weigh heavily upon": "~을 무겁게 짓누르다",
+  "western": "서쪽의",
   "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
   "willing to listen": "귀를 기울이려는",
+  "with nothing held back": "숨김 하나 없는",
   "without bias": "치우침 없이",
   "without delay": "늦추지 않고 하는",
+  "without the surrounding words": "앞뒤 말을 빼고",
   "work a machine": "기계를 다루다",
   "working order": "제대로 돌아가는 상태",
+  "working unit of the body": "몸에서 일하는 단위",
+  "worrying too much": "너무 걱정하는",
   "young of a creature": "짐승의 새끼"
 });
