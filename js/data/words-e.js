@@ -2094,7 +2094,6 @@ Object.assign(window.GLOSS, {
   "inelegant":"품위 없는, 촌스러운",
   "introductory":"입문의, 소개하는",
   "jubilant":"환호하는, 승리에 들뜬",
-  "lofty":"아주 높은, 우뚝한",
   "lower":"낮추다, 내리다",
   "lowly":"낮은, 미천한",
   "narcissistic":"자기도취적인",

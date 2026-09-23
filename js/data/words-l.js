@@ -481,7 +481,111 @@ window.VOCAB_L = [
   /* literal 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
   { word:"literally", pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
     syn:["exactly","to the letter","word for word"],
-    ex:[{ s:"He {{}} ran ten miles before breakfast.", f:"literally", ko:"그는 아침 전에 말 그대로 10마일을 뛰었다." }] }
+    ex:[{ s:"He {{}} ran ten miles before breakfast.", f:"literally", ko:"그는 아침 전에 말 그대로 10마일을 뛰었다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '문학의' 를 첫 자리에 지켰다. 참조는 없고 PRON 도 없었다.
+     원본의 '문학적인' 을 둘째 자리에 붙였다. */
+  { word:"literary", pron:"리터레리", pos:"adj", level:"B2", meanings:["문학의","문학적인"],
+    syn:["bookish","written","highbrow"],
+    ex:[{ s:"The magazine publishes serious {{}} criticism.", f:"literary", ko:"그 잡지는 본격적인 문학 비평을 게재한다." }] },
+
+  /* literary 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"literature", pron:"리터러처", pos:"n", level:"B1", meanings:["문학","문헌"],
+    syn:["writing","letters","written works"],
+    ex:[{ s:"She majored in English {{}} at university.", f:"literature", ko:"그녀는 대학에서 영문학을 전공했다." }] },
+
+  /* 원본 뜻은 '쓰레기' 였는데 J 세트의 junk 와 같았다. junk 는 버려진 물건·고물
+     쪽, 이쪽은 아무 데나 흩어져 버려진 쓰레기 쪽이라 '버려진 쓰레기' 로 갈랐다.
+     원본의 동사 갈래('쓰레기를 버리다')는 pos 가 n 이라 담지 못했다. */
+  { word:"litter", pron:"리터", pos:"n", level:"B2", meanings:["버려진 쓰레기","어질러진 물건"],
+    syn:["rubbish","trash","refuse"],
+    ex:[{ s:"Please do not drop {{}} in the park.", f:"litter", ko:"공원에 쓰레기를 버리지 마세요." }] },
+
+  { word:"livestock", pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
+    syn:["farm animals","cattle","herd"],
+    ex:[{ s:"Disease spread quickly through the {{}}.", f:"livestock", ko:"질병이 가축 사이로 빠르게 퍼졌다." }] },
+
+  { word:"lizard", pron:"리저드", pos:"n", level:"B1", meanings:["도마뱀"],
+    syn:["reptile","gecko","iguana"],
+    ex:[{ s:"A small {{}} basked on the warm rock.", f:"lizard", ko:"작은 도마뱀이 따뜻한 바위에서 햇볕을 쬈다." }] },
+
+  /* 승격 ① — GLOSS '대출, 빌려 주다' 와 같은 갈래다. 참조도 PRON 도 없어
+     명사 쪽으로 정리했다. 원본의 '대출금' 은 '대출' 이 덮는다. */
+  { word:"loan", pron:"론", pos:"n", level:"B1", meanings:["대출","대여"],
+    syn:["credit","advance","lending"],
+    ex:[{ s:"She took out a small {{}} to buy the van.", f:"loan", ko:"그녀는 밴을 사려고 소액 대출을 받았다." }] },
+
+  /* 승격 ① — GLOSS '질색하다, 넌더리 내다' 를 글자까지 지켰다.
+     abominate(syn)·detest(syn) 두 문제가 참조한다. 원본 '몹시 싫어하다' 를 쓰면
+     그 두 낱말의 뜻과 첫 뜻이 같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"loathe", pron:"로드", pos:"v", level:"C1", meanings:["질색하다","넌더리 내다"],
+    syn:["detest","recoil from","have an aversion to"],
+    ex:[{ s:"He {{}} having to speak in public.", f:"loathes", ko:"그는 공개 연설을 해야 하는 것을 질색한다." }] },
+
+  { word:"localize", pron:"로컬라이즈", pos:"v", level:"C1", meanings:["~을 국한시키다","국지화하다"],
+    syn:["confine","restrict","pin down"],
+    ex:[{ s:"Doctors managed to {{}} the infection quickly.", f:"localize", ko:"의사들은 감염을 빠르게 국한시키는 데 성공했다." }] },
+
+  /* localize 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"location", pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
+    syn:["site","spot","position"],
+    ex:[{ s:"The {{}} of the new school has not been decided.", f:"location", ko:"새 학교의 장소는 아직 정해지지 않았다." }] },
+
+  /* 승격 ② — GLOSS '숙소; 제기하다' 로 명사와 동사가 섞여 있었다.
+     accommodate(syn) 가 참조하는 갈래는 '숙소' 라 첫 자리에 지키고, 둘째는 원본의
+     '산장' 으로 바꿨다 — 한 표제어에 명사와 동사를 섞지 않는 쪽이 읽기 낫다. */
+  { word:"lodge", pron:"로지", pos:"n", level:"B2", meanings:["숙소","산장"],
+    syn:["cabin","inn","guesthouse"],
+    ex:[{ s:"We stayed in a mountain {{}} for two nights.", f:"lodge", ko:"우리는 이틀 밤 산장에 머물렀다." }] },
+
+  /* 승격 ① — GLOSS '아주 높은, 우뚝한' 을 글자까지 지켰다. elevated(syn) 가
+     참조한다. 원본 '높은' 을 쓰면 elevated 의 뜻과 첫 뜻이 같아지는데,
+     사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"lofty", pron:"로프티", pos:"adj", level:"C1", meanings:["아주 높은","우뚝한"],
+    syn:["elevated","towering","soaring"],
+    ex:[{ s:"The cathedral has a {{}} vaulted ceiling.", f:"lofty", ko:"그 대성당은 아주 높은 아치형 천장을 갖고 있다." }] },
+
+  { word:"logic", pron:"라직", pos:"n", level:"B2", meanings:["논리학","논리"],
+    syn:["reasoning","rationale","argumentation"],
+    ex:[{ s:"There is a clear flaw in your {{}}.", f:"logic", ko:"당신의 논리에 명확한 결함이 있다." }] },
+
+  /* 승격 ① — GLOSS '논리적인' 과 글자까지 같다. coherent(syn)·illogical(ant) 두
+     문제가 참조한다. 원본도 한 갈래다.
+     logic 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"logical", pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
+    syn:["coherent","rational","sound"], ant:["illogical"],
+    ex:[{ s:"The next {{}} step is to test the theory.", f:"logical", ko:"다음 논리적인 단계는 그 이론을 검증하는 것이다." }] },
+
+  { word:"lonely", pron:"론리", pos:"adj", level:"B1", meanings:["외로운","쓸쓸한"],
+    syn:["solitary","friendless","forlorn"],
+    ex:[{ s:"He felt {{}} in the unfamiliar city.", f:"lonely", ko:"그는 낯선 도시에서 외로움을 느꼈다." }] },
+
+  { word:"long", pron:"롱", pos:"v", level:"B2", meanings:["애타게 바라다","갈망하다"],
+    syn:["yearn","crave","pine"],
+    ex:[{ s:"She {{}} for news from home.", f:"longed", ko:"그녀는 집에서 오는 소식을 애타게 바랐다." }] },
+
+  /* longevity·longitude 는 앞 네 글자가 같고 품사도 둘 다 n 이지만 뜻이 '장수' 와
+     '경도' 로 완전히 달라 무리가 없다. */
+  { word:"longevity", pron:"란제버티", pos:"n", level:"C1", meanings:["장수"],
+    syn:["long life","durability","endurance"],
+    ex:[{ s:"Diet plays a large part in {{}}.", f:"longevity", ko:"식사는 장수에 큰 역할을 한다." }] },
+
+  /* syn 을 비워 두었다. 챕터 1의 latitude('위도')와 같은 사정이다 — 좌표를 가리키는
+     전문 명사여서 바꿔 쓸 낱말이 셋이 없다. */
+  { word:"longitude", pron:"란저튜드", pos:"n", level:"B2", meanings:["경도","경선"],
+    ex:[{ s:"The ship's {{}} was recorded every hour.", f:"longitude", ko:"그 배의 경도가 매시간 기록되었다." }] },
+
+  { word:"long-term", pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
+    syn:["extended","lasting","prolonged"], ant:["short-term"],
+    ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
+
+  { word:"look forward to", pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
+    syn:["anticipate","await eagerly","be eager for"] },
+
+  { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],
+    syn:["mirror","reflector","reflecting surface"] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -495,18 +599,24 @@ Object.assign(window.GLOSS, {
   "answerable": "책임을 져야 하는",
   "appendage": "몸에 붙은 부분",
   "arduous": "몹시 힘든",
+  "argumentation": "논증 과정",
+  "await eagerly": "간절히 기다리다",
+  "be eager for": "~을 몹시 바라다",
   "be outpaced": "앞질리다",
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
   "blistering": "맹렬히 빠른",
   "booby trap": "위장 폭탄",
   "book stock": "보유 도서",
+  "bookish": "책에 기댄",
   "booze": "술",
   "bound": "껑충 뛰다",
   "bound off": "껑충 뛰어 내려가다",
   "broad-minded": "아량이 넓은",
   "buried explosive": "땅에 묻은 폭발물",
+  "cabin": "오두막",
   "cap": "마개",
+  "cattle": "소 떼",
   "coating": "입힌 막",
   "composed": "차분한",
   "court case": "법정 사건",
@@ -516,30 +626,39 @@ Object.assign(window.GLOSS, {
   "disappoint": "기대를 깨다",
   "dismissal": "해임",
   "drudgery": "고된 일",
+  "durability": "오래 견딤",
   "easy to carry": "들고 다니기 쉬운",
   "emancipate": "속박에서 풀다",
   "equally": "똑같이",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",
+  "farm animals": "농장 동물",
   "featherweight": "깃털처럼 가벼운",
   "flanking": "측면을 이루는",
   "flippancy": "경박한 말투",
   "flyer": "광고 쪽지",
   "folk tale": "민간 설화",
+  "friendless": "벗이 없는",
   "frivolity": "시시한 짓",
+  "gecko": "게코도마뱀",
+  "guesthouse": "민박집",
   "guide": "안내하다",
   "handbill": "살포용 광고지",
   "hang around": "어슬렁거리며 남다",
   "hard drink": "도수 높은 술",
+  "have an aversion to": "~을 몹시 꺼리다",
   "heavy": "무거운",
+  "highbrow": "교양 수준이 높은",
   "hobble": "다리를 절며 걷다",
   "hobbling": "다리를 끌며 걷는",
   "hoist": "끌어올리다",
   "hurried": "서두른",
   "ignorant": "무지한",
+  "iguana": "이구아나",
   "illegitimate": "정당하지 못한",
   "industrially behind": "산업이 뒤처진",
+  "inn": "여관",
   "job cut": "일자리 감축",
   "jump off": "뛰어서 내려가다",
   "justifiable": "이유가 서는",
@@ -548,15 +667,19 @@ Object.assign(window.GLOSS, {
   "kindred": "마음이 통하는",
   "lab": "실험실",
   "language study": "언어 연구",
+  "lasting": "오래가는",
   "legal action": "법적 조치",
+  "lending": "대여, 빌려 줌",
   "less advanced": "덜 발전한",
   "lessor": "임대인",
   "library holdings": "도서관 소장 자료",
   "lightheartedness": "마음 가벼움",
   "limping": "다리를 저는",
   "litigation": "소송 절차",
+  "long life": "오랜 수명",
   "make redundant": "정리 해고하다",
   "mine": "지뢰, 광산",
+  "mirror": "거울",
   "mostly": "대부분",
   "myth": "신화",
   "nonspecialist": "전문가가 아닌 사람",
@@ -566,6 +689,8 @@ Object.assign(window.GLOSS, {
   "ordinary person": "보통 사람",
   "permissible": "허용되는",
   "philology": "문헌학",
+  "pin down": "범위를 좁혀 짚다",
+  "pine": "애타게 그리다",
   "portable": "휴대하기 좋은",
   "predominantly": "주로, 대부분은",
   "probable": "있을 법한",
@@ -574,22 +699,31 @@ Object.assign(window.GLOSS, {
   "rapid-fire": "속사포 같은",
   "readable": "알아볼 수 있는",
   "recline": "몸을 뒤로 젖히다",
+  "recoil from": "질려서 물러나다",
   "rectilinear": "직선으로 된",
   "redundancy": "정리 해고",
+  "reflecting surface": "빛을 되비추는 면",
+  "reflector": "반사기",
   "regrettable": "유감스러운",
   "rent out": "세를 놓다",
+  "reptile": "파충류",
   "research facility": "연구 시설",
   "rest": "놓여 있다",
+  "rubbish": "잡쓰레기",
   "saga": "긴 무훈담",
   "science of language": "언어 과학",
   "seep out": "스며 나오다",
   "seepage": "스며 나옴",
   "set down": "내려놓다",
   "set in motion": "움직이게 하다",
+  "short-term": "단기간의",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "skip": "건너뛰다",
   "slant": "비스듬해지다",
+  "soaring": "치솟은",
+  "solitary": "홀로 지내는",
+  "sound": "빈틈없는, 타당한",
   "spearhead": "앞장서다",
   "spirits": "증류주",
   "spring from": "뛰어 벗어나다",
@@ -602,6 +736,8 @@ Object.assign(window.GLOSS, {
   "tip": "쓰레기장",
   "to the letter": "한 글자도 틀리지 않게",
   "toil": "고생스러운 노동",
+  "towering": "우뚝 솟은",
+  "trash": "폐기물",
   "true to size": "크기가 실제와 맞는",
   "tutorial": "개별 지도 수업",
   "underdeveloped": "개발이 덜 된",
@@ -616,5 +752,8 @@ Object.assign(window.GLOSS, {
   "watery substance": "물기 있는 물질",
   "well-read": "책을 많이 읽은",
   "word for word": "낱말 하나하나",
-  "word-for-word": "낱말 그대로의"
+  "word-for-word": "낱말 그대로의",
+  "writing": "글, 저술",
+  "written": "글로 쓴",
+  "written works": "저술 작품"
 });
