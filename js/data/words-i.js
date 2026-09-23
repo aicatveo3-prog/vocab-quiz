@@ -200,25 +200,122 @@ window.VOCAB_I = [
      immense('막대한, 광대한')와 겹치므로 '측정할 수 없는' 을 택했다. */
   { word:"immeasurable", pron:"이메저러블", pos:"adj", level:"C1", meanings:["헤아릴 수 없는","측정할 수 없는"],
     syn:["incalculable","boundless","limitless"], ant:["finite"],
-    ex:[{ s:"Her contribution to modern medicine was {{}}.", f:"immeasurable", ko:"현대 의학에 대한 그녀의 기여는 헤아릴 수 없었다." }] }
+    ex:[{ s:"Her contribution to modern medicine was {{}}.", f:"immeasurable", ko:"현대 의학에 대한 그녀의 기여는 헤아릴 수 없었다." }] },
+
+  /* 승격 ② — GLOSS '직접적인; 즉각적인' 이다. direct(syn) 가 쓰는 갈래는
+     '직접적인' 이라 둘째 자리에 지켰다. 첫 자리는 '즉각적인' 으로 두어
+     뒤에 올 instant('즉석의')·instantaneous('순간적인')와 갈렸다.
+     원본 셋째 갈래 '당면한' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"immediate", pron:"이미디엇", pos:"adj", level:"B1", meanings:["즉각적인","직접적인"],
+    syn:["prompt","swift","speedy"], ant:["delayed"],
+    ex:[{ s:"The medicine brought {{}} relief from the pain.", f:"immediate", ko:"그 약은 통증에 즉각적인 완화를 가져왔다." }] },
+
+  { word:"immemorial", pron:"이머모리얼", pos:"adj", level:"C2", meanings:["태고의","아득한 옛적의"],
+    syn:["ancient","age-old","primeval"], ant:["modern"],
+    ex:[{ s:"The village has held this festival from time {{}}.", f:"immemorial", ko:"그 마을은 태고로부터 이 축제를 열어 왔다." }] },
+
+  /* 승격 ② — GLOSS '거대한, 엄청난' 이다. astronomical(syn)·enormous(syn) 가
+     참조한다. 원본 뜻 '막대한, 광대한' 으로 바꿨다 — enormous 의 뜻이 '막대한'
+     이고 그쪽이 immense 를 유의어로 쓰므로 같은 갈래가 맞다. */
+  { word:"immense", pron:"이멘스", pos:"adj", level:"B2", meanings:["막대한","광대한"],
+    syn:["enormous","vast","colossal"], ant:["tiny"],
+    ex:[{ s:"The project required an {{}} amount of funding.", f:"immense", ko:"그 사업에는 막대한 자금이 필요했다." }] },
+
+  /* 승격 ① — GLOSS '담그다; 몰입하다' 와 같은 갈래다. 참조하는 기존 문제가 없어
+     원본 뜻을 그대로 썼다. PRON 에는 없었다. */
+  { word:"immerse", pron:"이머스", pos:"v", level:"C1", meanings:["빠져들게 하다","담그다"],
+    syn:["submerge","engross","plunge"],
+    ex:[{ s:"She likes to {{}} herself in a long historical novel.", f:"immerse", ko:"그녀는 긴 역사 소설에 빠져들기를 좋아한다." }] },
+
+  { word:"immigration", pron:"이머그레이션", pos:"n", level:"B1", meanings:["이민","이주"],
+    syn:["migration","settlement","relocation"], ant:["emigration"],
+    ex:[{ s:"New {{}} policies took effect at the start of the year.", f:"immigration", ko:"새 이민 정책이 연초에 발효되었다." }] },
+
+  /* 승격 ② — GLOSS '임박한, 코앞의' 다. at hand(syn) 가 쓰는 갈래 '임박한' 을
+     첫 자리에 지켰다. 둘째 갈래는 원본의 '급박한' 으로 바꿨다.
+     뒤에 올 impending 은 '곧 닥칠' 로 돌려 겹침을 피했다. */
+  { word:"imminent", pron:"이머넌트", pos:"adj", level:"B2", meanings:["임박한","급박한"],
+    syn:["approaching","looming","forthcoming"], ant:["distant"],
+    ex:[{ s:"Dark clouds warned of an {{}} storm.", f:"imminent", ko:"검은 구름이 임박한 폭풍을 알렸다." }] },
+
+  { word:"immoral", pron:"이모럴", pos:"adj", level:"B2", meanings:["부도덕한","품행이 나쁜"],
+    syn:["unethical","corrupt","depraved"], ant:["moral"],
+    ex:[{ s:"Many considered the practice deeply {{}}.", f:"immoral", ko:"많은 사람이 그 관행을 몹시 부도덕하다고 여겼다." }] },
+
+  { word:"immortal", pron:"이모틀", pos:"adj", level:"C1", meanings:["불멸의","불사의"],
+    syn:["undying","eternal","everlasting"], ant:["mortal"],
+    ex:[{ s:"The gods of myth were believed to be {{}}.", f:"immortal", ko:"신화의 신들은 불멸이라고 믿어졌다." }] },
+
+  /* immortal 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"immortality", pron:"이모탤러티", pos:"n", level:"C1", meanings:["불멸","영생"],
+    syn:["eternity","endlessness","deathlessness"], ant:["mortality"],
+    ex:[{ s:"Ancient rulers sought {{}} through vast monuments.", f:"immortality", ko:"고대 통치자들은 거대한 기념물을 통해 불멸을 추구했다." }] },
+
+  { word:"immune", pron:"이뮨", pos:"adj", level:"B2", meanings:["면역성의","면한"],
+    syn:["resistant","exempt","protected"], ant:["susceptible"],
+    ex:[{ s:"Survivors of the disease became {{}} to reinfection.", f:"immune", ko:"그 병을 앓고 살아남은 사람들은 재감염에 면역이 되었다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────── */
+
+  /* 승격 ② — GLOSS '충격; 영향' 이다. affect(syn) 는 '영향' 쪽,
+     collision(syn) 은 '충격' 쪽을 쓴다. 두 갈래를 다 살리고 순서만 원본에 맞췄다.
+     원본 셋째 갈래 '영향을 주다'(동사)는 meanings 2개 제한에 걸려 뺐다. */
+  { word:"impact", pron:"임팩트", pos:"n", level:"B1", meanings:["영향","충격"],
+    syn:["effect","consequence","repercussion"],
+    ex:[{ s:"The report measured the {{}} of tourism on the coral reef.", f:"impact", ko:"그 보고서는 관광이 산호초에 미치는 영향을 측정했다." }] },
+
+  /* 승격 ② — GLOSS '손상시키다, 약화시키다' 다. degrade(syn) 가 참조한다.
+     원본 순서대로 '악화시키다' 를 앞에 두고 '손상시키다' 를 지켰다. */
+  { word:"impair", pron:"임페어", pos:"v", level:"C1", meanings:["악화시키다","손상시키다"],
+    syn:["damage","weaken","diminish"], ant:["enhance"],
+    ex:[{ s:"Lack of sleep can seriously {{}} judgment.", f:"impair", ko:"수면 부족은 판단력을 심각하게 손상시킬 수 있다." }] },
+
+  /* 승격 ② — GLOSS '전하다, 부여하다' 다. convey(syn) 가 쓰는 갈래가
+     '전달하다' 라서 둘째 자리에 지켰다. 사전에 있던 '부여하다' 는 셋째 갈래가
+     되어 meanings 2개 제한에 걸렸다 — 이 갈래를 참조하는 문제는 없다. */
+  { word:"impart", pron:"임파트", pos:"v", level:"C1", meanings:["말해주다","전달하다"],
+    syn:["convey","communicate","disclose"],
+    ex:[{ s:"A good teacher can {{}} enthusiasm as well as facts.", f:"impart", ko:"좋은 교사는 사실뿐 아니라 열정도 전달할 수 있다." }] },
+
+  /* 승격 ① — GLOSS '공정한, 편견 없는' 을 글자까지 지켰다. 참조가 3곳
+     (biased(ant)·disinterested(syn)·fair(syn))이라 원본 '편파적이지 않은' 대신
+     사전 쪽 표현을 남겼다. */
+  { word:"impartial", pron:"임파셜", pos:"adj", level:"C1", meanings:["공정한","편견 없는"],
+    syn:["unbiased","neutral","objective"], ant:["biased"],
+    ex:[{ s:"The dispute was settled by an {{}} mediator.", f:"impartial", ko:"그 분쟁은 공정한 중재자에 의해 해결되었다." }] },
+
+  /* impart·impartial 과 어근이 같지만 품사가 셋 다 달라(v/adj/adv)
+     같은 보드에 안 온다. */
+  { word:"impartially", pron:"임파셜리", pos:"adv", level:"C1", meanings:["공정하게","편견 없이"],
+    syn:["fairly","objectively","evenhandedly"],
+    ex:[{ s:"Judges must treat all parties {{}}.", f:"impartially", ko:"판사는 모든 당사자를 공정하게 대해야 한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
    블록을 두는 선례가 없다. pron.js 가 이 파일보다 뒤에 로드되므로 여기서
    Object.assign(window.PRON, ...) 을 하면 pron.js 쪽 값에 덮인다). */
 Object.assign(window.GLOSS, {
+  "approaching": "다가오는",
   "creative": "창의적인",
   "childish": "어린애 같은",
+  "depraved": "타락한",
+  "deathlessness": "불사, 죽지 않음",
+  "damage": "손상시키다, 피해",
   "detection":"탐지, 발견",
   "different":"다른",
   "distinguishable":"구별할 수 있는",
   "doctrinal":"교리상의",
   "dogmatic":"독단적인",
   "emblematic":"상징적인",
+  "fairly": "공정하게, 상당히",
+  "evenhandedly": "치우치지 않게",
+  "endlessness": "끝없음",
+  "emigration": "국외 이주",
   "figuration": "형상화",
   "fallacious": "오류가 있는",
   "figurehead":"명목상의 대표",
   "flawed":"결함이 있는",
+  "forthcoming": "다가오는, 곧 있을",
   "hypothetical": "가상의, 가설의",
   "hallucination": "환각",
   "idol":"우상, 숭배 대상",
@@ -232,24 +329,38 @@ Object.assign(window.GLOSS, {
   "knowledge":"지식",
   "lawful": "합법적인",
   "legendary":"전설적인",
+  "migration": "이주, 이동",
+  "looming": "곧 닥칠 듯한",
   "mirage": "신기루",
   "metaphor": "은유, 비유",
   "make-believe": "가상의, 거짓의",
   "literate": "글을 읽고 쓸 수 있는",
   "light up": "환하게 밝히다",
   "legible": "읽기 쉬운",
+  "mortality": "죽음을 피할 수 없음, 사망률",
   "naivety":"순진함",
+  "objectively": "객관적으로",
+  "objective": "객관적인, 목표",
   "optimal":"최적의",
   "optimally":"최적으로",
   "partisan":"당파적인",
   "perfectionism":"완벽주의",
   "perfectly":"완벽하게",
   "preferably":"되도록",
+  "resistant": "저항력이 있는",
+  "repercussion": "파급 효과",
+  "relocation": "이전, 재배치",
+  "protected": "보호되는",
+  "primeval": "원시의, 태고의",
   "resourceful": "기지가 뛰어난",
   "romanticism":"낭만주의",
   "sameness":"동일성, 똑같음",
   "scrawled": "갈겨쓴",
   "selfhood":"자아, 개체성",
+  "swift": "빠른, 신속한",
+  "susceptible": "영향받기 쉬운",
+  "submerge": "물에 잠기게 하다",
+  "speedy": "신속한",
   "unauthorized": "무단의, 승인받지 않은",
   "symbolism": "상징, 상징주의",
   "unawareness":"알지 못함",

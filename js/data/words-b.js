@@ -976,7 +976,6 @@ Object.assign(window.GLOSS, {
   "harmful":"해로운",
   "hated":"미움 받는",
   "idle":"놀다, 게으름 피우다",
-  "impartial":"공정한, 편견 없는",
   "least of all":"그중에서도 특히 아닌",
   "lend to":"~에게 빌려주다",
   "lengthy":"장황한, 아주 긴",
