@@ -662,7 +662,94 @@ window.VOCAB_I = [
      원본 셋째 갈래 '합병하다' 는 meanings 2개 제한에 걸려 뺐다. */
   { word:"incorporate", pron:"인코퍼레이트", pos:"v", level:"B2", meanings:["통합하다","포함시키다"],
     syn:["merge","absorb","embody"],
-    ex:[{ s:"The new design will {{}} feedback from early users.", f:"incorporate", ko:"새 디자인은 초기 사용자의 피드백을 통합할 것이다." }] }
+    ex:[{ s:"The new design will {{}} feedback from early users.", f:"incorporate", ko:"새 디자인은 초기 사용자의 피드백을 통합할 것이다." }] },
+
+  /* ── 챕터 7 ─────────────────────────────── */
+
+  /* 승격 ② — GLOSS '증가, 늘다' 로 명사와 동사가 섞여 있었다. 참조가 5곳인데
+     boost(syn)·decline(ant)·decrease(ant)·cut back on(ant) 네 개가 동사라
+     pos 를 v 로 잡고 사전의 '늘다' 를 둘째 자리에 지켰다.
+     abatement(ant)만 명사지만 ant 는 품사를 맞추지 않아도 읽힌다. */
+  { word:"increase", pron:"인크리스", pos:"v", level:"B1", meanings:["증가하다","늘다"],
+    syn:["grow","rise","boost"], ant:["decrease"],
+    ex:[{ s:"Global temperatures continue to {{}} decade after decade.", f:"increase", ko:"지구 기온은 10년마다 계속 증가한다." }] },
+
+  /* 승격 ② — GLOSS '놀라운, 믿기 힘든' 이다. amazing(syn) 이 쓰는 갈래가
+     '놀라운' 이라 둘째 자리에 지켰다. 첫 자리는 원본의 '믿기 어려운' 으로 했다. */
+  { word:"incredible", pron:"인크레더블", pos:"adj", level:"B2", meanings:["믿기 어려운","놀라운"],
+    syn:["unbelievable","astonishing","amazing"],
+    ex:[{ s:"The team made an {{}} comeback in the final minutes.", f:"incredible", ko:"그 팀은 마지막 몇 분에 믿기 어려운 역전을 이뤘다." }] },
+
+  /* incredible 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
+  { word:"incredibly", pron:"인크레더블리", pos:"adv", level:"B2", meanings:["믿기 힘들게도","놀랍게도"],
+    syn:["unbelievably","astonishingly","remarkably"],
+    ex:[{ s:"The old bridge survived {{}} intact after the quake.", f:"incredibly", ko:"그 낡은 다리는 지진 후 놀랍게도 온전히 남았다." }] },
+
+  /* 승격 ① — GLOSS '알을 품다' 를 글자까지 지켰다. hatch(syn) 가 참조한다.
+     원본 둘째 갈래 '배양하다' 를 뒤에 붙였다.
+     H 세트 harbor 의 뜻이 '품다' 라, 원본처럼 '품다' 로 쓰면 첫 뜻이 겹친다 —
+     사전 쪽 '알을 품다' 가 그 문제도 함께 막아 준다. */
+  { word:"incubate", pron:"인큐베이트", pos:"v", level:"C1", meanings:["알을 품다","배양하다"],
+    syn:["hatch","brood","nurture"],
+    ex:[{ s:"The hen will {{}} the eggs for about three weeks.", f:"incubate", ko:"그 암탉은 약 3주 동안 알을 품을 것이다." }] },
+
+  /* incubate 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"incubation", pron:"인큐베이션", pos:"n", level:"C1", meanings:["알을 품음","잠복기"],
+    syn:["brooding","hatching","latency"],
+    ex:[{ s:"The {{}} period for this virus is about five days.", f:"incubation", ko:"이 바이러스의 잠복기는 약 5일이다." }] },
+
+  { word:"incur", pron:"인커", pos:"v", level:"C1", meanings:["초래하다","발생시키다"],
+    syn:["bring about","sustain","provoke"],
+    ex:[{ s:"Late payment will {{}} an additional handling fee.", f:"incur", ko:"연체는 추가 취급 수수료를 초래한다." }] },
+
+  { word:"incurable", pron:"인큐어러블", pos:"adj", level:"B2", meanings:["치유할 수 없는","고칠 수 없는"],
+    syn:["untreatable","terminal","hopeless"], ant:["curable"],
+    ex:[{ s:"The disease was once considered entirely {{}}.", f:"incurable", ko:"그 병은 한때 완전히 치유할 수 없다고 여겨졌다." }] },
+
+  { word:"indecision", pron:"인디시전", pos:"n", level:"C1", meanings:["망설임","우유부단"],
+    syn:["hesitation","uncertainty","vacillation"],
+    ex:[{ s:"Months of {{}} cost the company its lead.", f:"indecision", ko:"수개월의 망설임이 회사의 선두 자리를 잃게 했다." }] },
+
+  /* 승격 ① — GLOSS '결단력 없는, 우유부단한' 을 글자까지 지켰다.
+     decisive(ant)·hesitant(syn) 두 문제가 참조하므로 원본('우유부단한' 한 갈래)
+     대신 사전 쪽을 남겼다.
+     indecision 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"indecisive", pron:"인디사이시브", pos:"adj", level:"B2", meanings:["결단력 없는","우유부단한"],
+    syn:["hesitant","wavering","irresolute"], ant:["decisive"],
+    ex:[{ s:"He was too {{}} to lead a negotiation of that size.", f:"indecisive", ko:"그는 그 규모의 협상을 이끌기에는 너무 결단력이 없었다." }] },
+
+  { word:"indeed", pron:"인디드", pos:"adv", level:"B1", meanings:["정말로","사실은"],
+    syn:["truly","certainly","in fact"],
+    ex:[{ s:"The results were {{}} better than anyone expected.", f:"indeed", ko:"결과는 정말로 누구의 예상보다도 좋았다." }] },
+
+  /* 승격 ① — GLOSS '색인, 목록' 을 글자까지 지켰다.
+     catalog(syn)·directory(syn) 두 문제가 참조하므로 원본의 '찾아보기' 대신
+     사전 쪽 '목록' 을 남겼다. */
+  { word:"index", pron:"인덱스", pos:"n", level:"B1", meanings:["색인","목록"],
+    syn:["catalog","directory","register"],
+    ex:[{ s:"Look up the term in the {{}} at the back of the book.", f:"index", ko:"책 뒤에 있는 색인에서 그 용어를 찾아보세요." }] },
+
+  { word:"indicate", pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],
+    syn:["show","signal","denote"],
+    ex:[{ s:"The survey results {{}} a clear shift in public opinion.", f:"indicate", ko:"조사 결과는 여론의 뚜렷한 변화를 나타낸다." }] },
+
+  /* indication·indicator 는 어근이 같고 품사도 둘 다 n 이어서 같은 보드에 올 수
+     있다. 다만 뜻이 '암시, 조짐' 과 '지표, 표시기' 로 갈려 무리가 없다. */
+  { word:"indication", pron:"인디케이션", pos:"n", level:"B2", meanings:["암시","조짐"],
+    syn:["sign","hint","clue"],
+    ex:[{ s:"There was no {{}} that the engine was about to fail.", f:"indication", ko:"엔진이 곧 고장 날 것이라는 조짐은 없었다." }] },
+
+  /* 승격 ① — GLOSS '지표, 표시기' 를 글자까지 지켰다. barometer(syn) 가 참조하므로
+     원본의 순서('표시기, 지표') 대신 사전 쪽을 남겼다. */
+  { word:"indicator", pron:"인디케이터", pos:"n", level:"B2", meanings:["지표","표시기"],
+    syn:["barometer","gauge","benchmark"],
+    ex:[{ s:"Unemployment remains a key economic {{}}.", f:"indicator", ko:"실업률은 여전히 핵심 경제 지표다." }] },
+
+  /* 승격 ① — GLOSS '무관심' 과 글자까지 같다. 참조가 4곳(apathy·commitment·
+     concern·empathy)이라 갈래를 늘리지 않고 한 갈래로 두었다. 원본도 한 갈래다. */
+  { word:"indifference", pron:"인디퍼런스", pos:"n", level:"B2", meanings:["무관심"],
+    syn:["apathy","detachment","unconcern"], ant:["concern"],
+    ex:[{ s:"Her apparent {{}} to the news surprised everyone.", f:"indifference", ko:"그 소식에 대한 그녀의 명백한 무관심이 모두를 놀라게 했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -683,12 +770,15 @@ Object.assign(window.GLOSS, {
   "as payment for": "~의 값으로",
   "as regards": "~에 관해서는",
   "as required by": "~이 요구하는 대로",
+  "astonishingly": "깜짝 놀랄 만큼",
   "at the outset": "처음에",
   "beg": "간청하다",
   "betterment": "개량",
   "brazen": "낯 두꺼운",
+  "brooding": "알을 품는 일",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
+  "clue": "단서",
   "colonialism": "식민주의",
   "commencement": "시작, 개회",
   "commensurate with": "~에 상응하여",
@@ -699,10 +789,12 @@ Object.assign(window.GLOSS, {
   "consistent with": "~와 들어맞는",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
+  "curable": "치유 가능한",
   "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
   "deathlessness": "불사, 죽지 않음",
   "deficiently": "모자라게",
+  "denote": "가리키다",
   "depraved": "타락한",
   "detection": "탐지, 발견",
   "detention": "구금",
@@ -737,6 +829,7 @@ Object.assign(window.GLOSS, {
   "forthcoming": "다가오는, 곧 있을",
   "garbled": "뒤죽박죽인",
   "hallucination": "환각",
+  "hatching": "부화",
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
@@ -748,6 +841,7 @@ Object.assign(window.GLOSS, {
   "in agreement with": "~와 합의하여",
   "in brief": "간단히 말해",
   "in exchange for": "~와 맞바꾸어",
+  "in fact": "실은",
   "in harmony with": "~와 조화를 이루어",
   "in keeping with": "~에 걸맞게",
   "in motion": "움직이는 중인",
@@ -784,9 +878,11 @@ Object.assign(window.GLOSS, {
   "insufficiently": "넉넉하지 못하게",
   "introduce": "도입하다, 소개하다",
   "inventive": "창의력이 뛰어난",
+  "irresolute": "결단을 못 내리는",
   "jail": "감옥에 넣다",
   "juvenile": "유치한, 청소년의",
   "knowledge": "지식",
+  "latency": "잠재 상태",
   "lawful": "합법적인",
   "leaning": "기울어짐, 선호",
   "legendary": "전설적인",
@@ -831,6 +927,7 @@ Object.assign(window.GLOSS, {
   "regal": "제왕의",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
+  "remarkably": "눈에 띄게",
   "repercussion": "파급 효과",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
@@ -843,6 +940,7 @@ Object.assign(window.GLOSS, {
   "separately": "따로따로",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
+  "sign": "징후, 표지",
   "slope": "비탈지다",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
@@ -864,8 +962,11 @@ Object.assign(window.GLOSS, {
   "to begin with": "먼저",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
+  "truly": "참으로",
   "unauthorized": "무단의, 승인받지 않은",
   "unawareness": "알지 못함",
+  "unbelievable": "믿을 수 없는",
+  "unbelievably": "믿을 수 없을 만큼",
   "under way": "진행 중에",
   "undeveloped": "발달하지 않은",
   "uneducated": "교육받지 못한",
@@ -883,8 +984,11 @@ Object.assign(window.GLOSS, {
   "unschooled": "학교 교육을 받지 않은",
   "unseemly": "온당하지 못한",
   "unspoken": "입 밖에 내지 않은",
+  "untreatable": "치료할 수 없는",
   "utopianism": "유토피아주의",
+  "vacillation": "갈팡질팡함",
   "verification": "입증, 검증",
+  "wavering": "흔들리는",
   "whim": "일시적 기분",
   "with regard to": "~에 대해서는",
   "with respect to": "~와 관련해서는",

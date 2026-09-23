@@ -1460,7 +1460,6 @@ Object.assign(window.GLOSS, {
   "honesty":"정직, 솔직함",
   "immorality":"부도덕, 패륜",
   "indecent":"무례한, 점잖지 못한",
-  "indecisive":"결단력 없는, 우유부단한",
   "interpret":"해석하다, 통역하다",
   "intimidating":"겁을 주는, 위압적인",
   "lethal":"치사의, 죽음에 이르는",

@@ -589,7 +589,6 @@ Object.assign(window.GLOSS, {
   "human race":"인류(전체)",
   "humbleness":"겸허",
   "incompletely":"불완전하게",
-  "incubate":"알을 품다",
   "indignity":"모욕",
   "inflexible":"융통성 없는",
   "ingrained":"깊이 뿌리 박힌",

@@ -1996,7 +1996,6 @@ Object.assign(window.GLOSS, {
   "incapable":"~할 수 없는",
   "incompetence":"무능함",
   "inconspicuous":"눈에 띄지 않는",
-  "indifference":"무관심",
   "indifferent":"무관심한",
   "individual":"개인의, 개별의",
   "inept":"서투른, 무능한",
