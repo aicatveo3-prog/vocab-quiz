@@ -592,7 +592,6 @@ Object.assign(window.GLOSS, {
   "indignity":"모욕",
   "inflexible":"융통성 없는",
   "ingrained":"깊이 뿌리 박힌",
-  "inheritance":"상속, 유산",
   "inheritor":"상속인, 계승자",
   "inhospitable":"불친절한",
   "innocuous":"해롭지 않은",

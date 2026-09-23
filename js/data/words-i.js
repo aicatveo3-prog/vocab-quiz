@@ -917,7 +917,85 @@ window.VOCAB_I = [
 
   { word:"infrared", pron:"인프러레드", pos:"adj", level:"C1", meanings:["적외선의"],
     syn:["thermal","heat-sensing","long-wave"],
-    ex:[{ s:"The camera uses {{}} light to see in total darkness.", f:"infrared", ko:"그 카메라는 완전한 어둠 속에서 보기 위해 적외선을 사용한다." }] }
+    ex:[{ s:"The camera uses {{}} light to see in total darkness.", f:"infrared", ko:"그 카메라는 완전한 어둠 속에서 보기 위해 적외선을 사용한다." }] },
+
+  { word:"infrastructure", pron:"인프러스트럭처", pos:"n", level:"B2", meanings:["사회 기반 시설","기반 구조"],
+    syn:["framework","facilities","public works"],
+    ex:[{ s:"Years of neglect left the road {{}} crumbling.", f:"infrastructure", ko:"수년간의 방치로 도로 기반 시설이 무너져 갔다." }] },
+
+  { word:"ingenious", pron:"인지니어스", pos:"adj", level:"C1", meanings:["기발한","재주가 많은"],
+    syn:["clever","inventive","cunning"], ant:["clumsy"],
+    ex:[{ s:"She found an {{}} solution to the storage problem.", f:"ingenious", ko:"그녀는 보관 문제에 기발한 해법을 찾아냈다." }] },
+
+  /* 승격 ① — GLOSS '재료, 성분' 을 글자까지 지켰다.
+     component(syn)·element(syn) 두 문제가 참조하므로 원본의 순서('성분, 원료,
+     재료') 대신 사전 쪽을 남겼다. */
+  { word:"ingredient", pron:"인그리디언트", pos:"n", level:"B1", meanings:["재료","성분"],
+    syn:["component","element","constituent"],
+    ex:[{ s:"Flour is the main {{}} in most breads.", f:"ingredient", ko:"밀가루는 대부분의 빵에서 주 재료다." }] },
+
+  { word:"inhabit", pron:"인해빗", pos:"v", level:"B2", meanings:["살다","거주하다"],
+    syn:["occupy","dwell in","populate"],
+    ex:[{ s:"Only a few hundred people {{}} the island year-round.", f:"inhabit", ko:"수백 명만이 그 섬에 연중 산다." }] },
+
+  /* inhabit 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"inhabitant", pron:"인해버턴트", pos:"n", level:"B2", meanings:["거주민","주민"],
+    syn:["resident","dweller","occupant"],
+    ex:[{ s:"Every {{}} of the village was interviewed.", f:"inhabitant", ko:"그 마을의 모든 거주민이 면담을 받았다." }] },
+
+  /* 승격 ① — GLOSS '숨을 들이쉬다' 를 글자까지 지켰다. exhale(ant) 이 참조한다.
+     원본 '숨을 들이마시다' 는 같은 갈래라 사전 쪽 표현을 남겼다. */
+  { word:"inhale", pron:"인헤일", pos:"v", level:"B2", meanings:["숨을 들이쉬다"],
+    syn:["breathe in","draw in","suck in"], ant:["exhale"],
+    ex:[{ s:"Try not to {{}} the fumes from the solvent.", f:"inhale", ko:"용제에서 나오는 연기를 들이쉬지 않도록 하세요." }] },
+
+  /* 뒤에 올 innate 가 '타고난' 을 첫 자리로 쓰므로 이쪽은 '내재하는' 을 앞에 두었다. */
+  { word:"inherent", pron:"인히런트", pos:"adj", level:"C1", meanings:["내재하는","타고난"],
+    syn:["built-in","inborn","ingrained"],
+    ex:[{ s:"There is an {{}} risk in any surgical procedure.", f:"inherent", ko:"어떤 외과 수술에도 내재하는 위험이 있다." }] },
+
+  { word:"inherit", pron:"인헤릿", pos:"v", level:"B2", meanings:["상속하다","물려받다"],
+    syn:["succeed to","come into","take over"],
+    ex:[{ s:"She will {{}} the estate from her aunt.", f:"inherit", ko:"그녀는 이모로부터 그 재산을 상속할 것이다." }] },
+
+  /* 승격 ② — GLOSS '상속, 유산' 이다. 참조하는 heredity(syn) 의 뜻이 '유전' 인데
+     사전에는 그 갈래가 없었다. 원본이 '유전' 을 갖고 있어 둘째 자리에 넣고,
+     첫 자리는 사전·원본이 공통으로 가진 '유산' 으로 했다.
+     inherit 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"inheritance", pron:"인헤리턴스", pos:"n", level:"B2", meanings:["유산","유전"],
+    syn:["heredity","legacy","bequest"],
+    ex:[{ s:"The house came to him as an {{}} from his uncle.", f:"inheritance", ko:"그 집은 삼촌에게서 받은 유산으로 그에게 왔다." }] },
+
+  /* 승격 ① — GLOSS '억제하다, 방해하다' 를 글자까지 지켰다. constrain(syn) 이
+     참조하므로 원본의 '금하다' 대신 사전 쪽 '방해하다' 를 남겼다. */
+  { word:"inhibit", pron:"인히빗", pos:"v", level:"C1", meanings:["억제하다","방해하다"],
+    syn:["constrain","restrain","suppress"],
+    ex:[{ s:"Unusually cold weather can {{}} seed germination.", f:"inhibit", ko:"이례적으로 추운 날씨는 씨앗 발아를 억제할 수 있다." }] },
+
+  /* inhibit 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"inhibition", pron:"인히비션", pos:"n", level:"C1", meanings:["억제","억압"],
+    syn:["restraint","suppression","reserve"],
+    ex:[{ s:"Alcohol lowers {{}} and impairs judgment.", f:"inhibition", ko:"알코올은 억제를 낮추고 판단력을 손상시킨다." }] },
+
+  { word:"inhumane", pron:"인휴메인", pos:"adj", level:"C1", meanings:["몰인정한","무자비한"],
+    syn:["cruel","brutal","heartless"], ant:["humane"],
+    ex:[{ s:"The conditions in the holding camp were {{}}.", f:"inhumane", ko:"그 수용소의 환경은 몰인정했다." }] },
+
+  { word:"initial", pron:"이니셜", pos:"adj", level:"B1", meanings:["처음의","최초의"],
+    syn:["first","opening","preliminary"], ant:["final"],
+    ex:[{ s:"The {{}} response to the proposal was positive.", f:"initial", ko:"그 제안에 대한 처음의 반응은 긍정적이었다." }] },
+
+  /* 승격 ① — GLOSS '시작하다, 착수하다' 를 글자까지 지켰다. commence(syn) 이
+     참조하므로 원본의 '개시하다' 대신 사전 쪽 '착수하다' 를 남겼다.
+     initial·initiative 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
+     안 온다. */
+  { word:"initiate", pron:"이니시에이트", pos:"v", level:"C1", meanings:["시작하다","착수하다"],
+    syn:["commence","launch","embark on"],
+    ex:[{ s:"The council will {{}} a full review of the policy.", f:"initiate", ko:"의회는 그 정책에 대한 전면 검토를 시작할 것이다." }] },
+
+  { word:"initiative", pron:"이니셔티브", pos:"n", level:"B2", meanings:["주도권","발의"],
+    syn:["enterprise","drive","first move"],
+    ex:[{ s:"She took the {{}} and organized the whole event.", f:"initiative", ko:"그녀가 주도권을 잡고 행사 전체를 준비했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -944,16 +1022,20 @@ Object.assign(window.GLOSS, {
   "at the outset": "처음에",
   "baby": "아기",
   "beg": "간청하다",
+  "bequest": "유증, 물려준 것",
   "betterment": "개량",
   "blight": "병들게 하다",
   "brazen": "낯 두꺼운",
+  "breathe in": "숨을 들이켜다",
   "bring on": "불러오다",
   "brooding": "알을 품는 일",
   "bungling": "일을 망치는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
+  "clever": "영리한",
   "clue": "단서",
   "colonialism": "식민주의",
+  "come into": "물려받게 되다",
   "commencement": "시작, 개회",
   "commensurate with": "~에 상응하여",
   "compared with": "~와 비교하면",
@@ -961,6 +1043,7 @@ Object.assign(window.GLOSS, {
   "concerning": "~에 관하여",
   "confinement": "감금",
   "consistent with": "~와 들어맞는",
+  "constituent": "구성 요소",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
   "curable": "치유 가능한",
@@ -982,23 +1065,30 @@ Object.assign(window.GLOSS, {
   "doctrinal": "교리상의",
   "dogmatic": "독단적인",
   "down the road": "앞으로 가면",
+  "drive": "추진력",
   "driving force": "추진 동력",
+  "dwell in": "~에 거주하다",
+  "dweller": "사는 사람",
   "dyspepsia": "소화 장애",
   "emblematic": "상징적인",
   "emboss": "도드라지게 새기다",
   "emigration": "국외 이주",
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
+  "enterprise": "진취성, 사업",
   "episode": "일화",
   "evenhandedly": "치우치지 않게",
   "expansionism": "팽창주의",
   "extemporize": "즉석에서 말하다",
   "face to face": "얼굴을 맞대고",
+  "facilities": "설비",
   "fairly": "공정하게, 상당히",
   "fallacious": "오류가 있는",
   "faulty": "고장이 있는",
   "figuration": "형상화",
   "figurehead": "명목상의 대표",
+  "first": "첫 번째의",
+  "first move": "첫 행동",
   "firstly": "첫째로는",
   "flawed": "결함이 있는",
   "flu": "인플루엔자",
@@ -1099,6 +1189,8 @@ Object.assign(window.GLOSS, {
   "notify": "통보하다",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
+  "occupant": "점유자",
+  "occupy": "차지하다",
   "occurrence": "일어남, 사례",
   "on its own": "그 자체만으로",
   "on the side of": "~의 편에 서서",
@@ -1123,6 +1215,7 @@ Object.assign(window.GLOSS, {
   "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
+  "public works": "공공 사업",
   "regal": "제왕의",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
@@ -1155,12 +1248,15 @@ Object.assign(window.GLOSS, {
   "striking": "눈에 띄는",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
+  "succeed to": "~을 승계하다",
+  "suck in": "빨아들이다",
   "surge": "급증",
   "surrounded by": "~에 둘러싸여",
   "susceptible": "영향받기 쉬운",
   "swift": "빠른, 신속한",
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
+  "take over": "넘겨받다",
   "taking account of": "~을 감안하여",
   "tendency": "성향",
   "thermal": "열의",

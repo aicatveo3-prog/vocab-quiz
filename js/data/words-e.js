@@ -2364,7 +2364,6 @@ Object.assign(window.GLOSS, {
   "exposition":"박람회, 전시",
   "free from":"~에서 벗어난",
   "immoderate":"절제 없는",
-  "inhale":"숨을 들이쉬다",
   "interchange":"서로 바꾸다",
   "manager":"경영자, 운영자",
   "model":"모범이 되는",
