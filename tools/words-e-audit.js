@@ -31,7 +31,7 @@ function load(rel) {
   return true;
 }
 ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js',
- 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js'].forEach(load);
+ 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js'].forEach(load);
 
 var E = window.VOCAB_E || [];
 var ALL = window.Quiz.ALL;

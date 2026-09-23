@@ -1,0 +1,921 @@
+/**
+ * 단어 데이터 — 수능 보카 M 섹션
+ *
+ * 스키마는 words.js와 완전히 동일하다. 필드 설명은 그 파일 상단을 참고.
+ *
+ * ⚠️ GLOSS 는 words.js 가 이미 만들어 둔 객체다. 여기서 window.GLOSS = {...} 로
+ *    재대입하면 앞선 세트의 것이 통째로 사라진다. 반드시 이 파일 맨 아래처럼
+ *    Object.assign 으로 병합할 것. 키는 소문자, 앞뒤 공백 없이.
+ *    ⚠️ 또 gloss.js 에 같은 키가 있는지 먼저 확인할 것 — gloss.js 가 이 파일보다
+ *    뒤에 로드되므로 여기 넣은 값이 조용히 덮인다.
+ *
+ * ── 이 세트의 승격: 212단어 중 97개(46%) ──
+ *
+ * 비율로는 이 저장소에서 가장 높다. m 으로 시작하는 낱말 중 쓰이는 것들이
+ * (modest·merge·modify·mortal·measure·moral 같은) 기본 낱말이어서 오래전부터
+ * 다른 문제의 유의어·반의어로 동원돼 왔기 때문이다. 참조는 모두 119곳이다.
+ *
+ * 그중 18개는 바로 앞서 넣은 I·J·K·L 세트가 참조한다.
+ *   mature←immature(I)·juvenile(J)   mortal←immortal(I)·lethal(L)
+ *   moral←immoral(I)·lesson(L)       mirror←looking glass(L)
+ *   meddle←interfere(I)  mediate←intervene(I)  menace←intimidate(I)
+ *   merge←incorporate(I) metaphor←imagery(I)   mimic←imitate(I)
+ *   minor←incidental(I)  mishap←incident(I)    momentum←impetus(I)
+ *   motivate←inspire(I)  motivation←incentive(I)
+ *   multiracial←interracial(I)  meanwhile←in the meantime(I)  modest←impudent(I)
+ *
+ * 원칙은 A~L 세트와 같다.
+ *   ① 같은 갈래면 기존 뜻을 쓴다 (기존 문제 화면이 안 바뀐다)
+ *   ② 다른 갈래면 기존 쪽 뜻을 첫 자리에 남긴다
+ *   ③ 사전에만 있던 갈래는 뒤에 붙여 살린다
+ * 판단 근거는 해당 단어 주석에 적는다.
+ *
+ * ── 원본 뜻 오류를 아홉 고쳤다 ──
+ *   marked      '유포적인' → '표시된'        (뜻이 안 통하는 말이었다)
+ *   millennium  '천 년간의, 천년기의' → '천 년, 천년기' (명사인데 형용사로 적혔다)
+ *   meadow      '녹초지' → '목초지'          (오타)
+ *   mistress    '여왕' → '안주인'            (여왕은 queen)
+ *   manned      '사람이 하는' → '유인의'      (사람이 타고 조작하는 쪽)
+ *   marrow      '뼈골' → '골수, 뼛속'        (표준어가 아니었다)
+ *   monologue   '1인 극' → '1인극'           (띄어쓰기)
+ *   medieval    '중고의, 낡은' → '중세의'     ← 사전에 맞는 값이 있어 승격으로 교정
+ *   menace      '위협적인' → '으르다'(동사)    ← 같음. '위협적인' 은 menacing
+ *   multiracial '다문화의' → '여러 인종의'     ← 같음. '다문화의' 는 multicultural
+ *
+ * ── 뜻이 겹쳐 갈라 쓴 것 (7묶음) ──
+ *   magnificent 웅장한 / majestic 장엄한          (사전 값이 이미 갈려 있었다)
+ *   means 수단 / method 방법                      (사전 값)
+ *   multicultural 다문화의 / multiracial 여러 인종의 (사전 값)
+ *   misconception 잘못된 생각 / misinterpretation 오역 / misunderstanding 오해
+ *   misconceive 잘못 생각하다 / misunderstand 오해하다
+ *   mob 폭도 / multitude 다수
+ *   mumble 중얼거리다(사전 값 유지) / mutter 투덜거리다
+ */
+window.VOCAB_M = [
+  /* ── 챕터 1 ─────────────────────────────── */
+
+  { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
+    syn:["enrage","infuriate","exasperate"], ant:["soothe"],
+    ex:[{ s:"The endless delays began to {{}} passengers.", f:"madden", ko:"끝없는 지연이 승객들을 몹시 화나게 만들기 시작했다." }] },
+
+  { word:"magician", pron:"머지션", pos:"n", level:"B1", meanings:["마법사","마술사"],
+    syn:["conjurer","wizard","illusionist"],
+    ex:[{ s:"The {{}} pulled a rabbit from an empty hat.", f:"magician", ko:"그 마술사는 빈 모자에서 토끼를 꺼냈다." }] },
+
+  { word:"magnetic", pron:"매그네틱", pos:"adj", level:"B2", meanings:["자석의","자기의"],
+    syn:["magnetized","polarized","charged"],
+    ex:[{ s:"The card has a {{}} strip on the back.", f:"magnetic", ko:"그 카드는 뒷면에 자기 띠가 있다." }] },
+
+  /* magnificent 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다.
+     원본 셋째 갈래 '장엄' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"magnificence", pron:"매그니피선스", pos:"n", level:"C1", meanings:["훌륭함","웅장"],
+    syn:["splendor","grandeur","majesty"],
+    ex:[{ s:"Visitors still marvel at the {{}} of the palace.", f:"magnificence", ko:"방문객들은 여전히 그 궁전의 웅장함에 감탄한다." }] },
+
+  /* 승격 ① — GLOSS '웅장한, 훌륭한' 이 원본과 글자까지 같다. awesome(syn) 이 참조한다.
+     바로 뒤 majestic 은 사전 값 '장엄한' 을 쓰므로 첫 뜻이 갈린다. */
+  { word:"magnificent", pron:"매그니피선트", pos:"adj", level:"B2", meanings:["웅장한","훌륭한"],
+    syn:["awesome","splendid","superb"],
+    ex:[{ s:"The cathedral is a {{}} piece of architecture.", f:"magnificent", ko:"그 대성당은 웅장한 건축물이다." }] },
+
+  /* 승격 ① — GLOSS '확대하다, 증폭시키다' 를 글자까지 지켰다.
+     amplify(syn)·enlarge(syn)·exaggerate(syn) 세 문제가 참조하므로 원본의
+     '과장하다' 대신 사전 쪽 '증폭시키다' 를 남겼다. */
+  { word:"magnify", pron:"매그너파이", pos:"v", level:"B2", meanings:["확대하다","증폭시키다"],
+    syn:["amplify","enlarge","exaggerate"],
+    ex:[{ s:"The lens can {{}} the image fifty times.", f:"magnify", ko:"그 렌즈는 상을 50배 확대할 수 있다." }] },
+
+  /* 승격 ① — GLOSS '규모, 크기' 와 같은 갈래다. 참조도 PRON 도 없어 사전 쪽
+     표현을 그대로 썼다 — 원본 '엄청난 크기' 는 '엄청난' 이 뜻에 섞여 어색하다. */
+  { word:"magnitude", pron:"매그너튜드", pos:"n", level:"C1", meanings:["규모","크기"],
+    syn:["scale","extent","dimension"],
+    ex:[{ s:"No one grasped the {{}} of the problem at first.", f:"magnitude", ko:"처음에는 아무도 그 문제의 규모를 파악하지 못했다." }] },
+
+  /* 승격 ① — GLOSS '장엄한' 을 첫 자리에 지켰다. grand(syn) 이 참조한다.
+     원본 첫 뜻 '웅장한' 은 바로 앞 magnificent 와 같아, 사전 쪽을 앞에 두고
+     '위엄 있는' 을 붙여 갈랐다. */
+  { word:"majestic", pron:"머제스틱", pos:"adj", level:"B2", meanings:["장엄한","위엄 있는"],
+    syn:["grand","stately","imposing"],
+    ex:[{ s:"The eagle made a {{}} sweep over the valley.", f:"majestic", ko:"그 독수리가 골짜기 위로 장엄하게 선회했다." }] },
+
+  /* 승격 ① — GLOSS '대다수, 과반수' 를 글자까지 지켰다. bulk(syn) 이 참조하므로
+     원본의 '대부분' 대신 사전 쪽을 남겼다.
+     반의어 minority 는 뒤 챕터에 올 표제어라 아직 뜻이 없다 — ant 를 비워 두었다. */
+  { word:"majority", pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
+    syn:["bulk","most","greater part"],
+    ex:[{ s:"A clear {{}} of voters backed the proposal.", f:"majority", ko:"유권자의 분명한 대다수가 그 제안을 지지했다." }] },
+
+  /* 'make ~' 구가 여덟 개 이어진다. pos 가 phr 인 항목에는 ex 를 붙이지 않는다 —
+     A~L 세트의 phr 248개 중 예문을 가진 것이 0개다. 구는 빈칸으로 파도 어형
+     변화가 없어 문제가 성립하지 않는다. 대신 syn 3개로 '아닌 것 고르기' 를 덮는다. */
+  { word:"make a fuss", pron:"메이크 어 퍼스", pos:"phr", level:"B2", meanings:["소란을 피우다"],
+    syn:["kick up a row","complain loudly","make a scene"] },
+
+  { word:"make a reservation", pron:"메이크 어 레저베이션", pos:"phr", level:"B1", meanings:["예약하다"],
+    syn:["book","reserve","book ahead"] },
+
+  { word:"make headway", pron:"메이크 헤드웨이", pos:"phr", level:"B2", meanings:["나아가다","진전을 보이다"],
+    syn:["progress","gain ground","press forward"] },
+
+  { word:"make it", pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
+    syn:["arrive in time","succeed","pull it off"] },
+
+  { word:"make sense", pron:"메이크 센스", pos:"phr", level:"B1", meanings:["의미가 통하다","이해가 되다"],
+    syn:["be logical","add up","hold water"] },
+
+  /* 승격 ① — GLOSS '구성하다; 화해하다' 를 글자까지 지켰다. 참조가 3곳
+     (account for·compensate for·constitute)이라 그대로 두었다.
+     원본은 명사('구조, 구성; 화장')인데 그 읽기는 보통 makeup 으로 붙여 쓴다. */
+  { word:"make up", pron:"메이크 업", pos:"phr", level:"B2", meanings:["구성하다","화해하다"],
+    syn:["constitute","account for","compose"] },
+
+  /* 승격 ① — GLOSS '보충하다, 만회하다' 를 글자까지 지켰다. 참조도 PRON 도 없다.
+     원본 '보상하다' 를 쓰면 C 세트 compensate 와 첫 뜻이 같아지는데,
+     사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"make up for", pron:"메이크 업 포", pos:"phr", level:"B2", meanings:["보충하다","만회하다"],
+    syn:["compensate for","offset","atone for"] },
+
+  /* 승격 ① — GLOSS '~에 길을 내주다' 와 같은 갈래다. give way to(syn) 가 참조한다. */
+  { word:"make way for", pron:"메이크 웨이 포", pos:"phr", level:"B2", meanings:["~에 길을 내주다"],
+    syn:["give way to","step aside for","clear a path for"] },
+
+  { word:"makeshift", pron:"메이크시프트", pos:"adj", level:"C1", meanings:["임시변통의","임시로 만든"],
+    syn:["temporary","improvised","stopgap"], ant:["permanent"],
+    ex:[{ s:"They built a {{}} shelter out of branches.", f:"makeshift", ko:"그들은 나뭇가지로 임시변통의 대피소를 만들었다." }] },
+
+  { word:"malevolent", pron:"멀레벌런트", pos:"adj", level:"C2", meanings:["악의 있는","심술궂은"],
+    syn:["spiteful","ill-natured","venomous"], ant:["benevolent"],
+    ex:[{ s:"He shot her a {{}} look across the room.", f:"malevolent", ko:"그는 방 건너로 그녀에게 악의 있는 시선을 던졌다." }] },
+
+  /* 승격 ① — GLOSS '고장, 오작동' 을 글자까지 지켰다. breakdown(syn) 이 참조한다.
+     원본은 동사를 앞에 두지만('제대로 작동하지 않다'), 사전이 명사여서 pos 를
+     n 으로 유지했다. */
+  { word:"malfunction", pron:"맬펑션", pos:"n", level:"B2", meanings:["고장","오작동"],
+    syn:["breakdown","fault","glitch"],
+    ex:[{ s:"A software {{}} delayed the whole launch.", f:"malfunction", ko:"소프트웨어 고장이 발사 전체를 지연시켰다." }] },
+
+  /* ── 챕터 2 ─────────────────────────────── */
+
+  /* 원본 둘째 갈래 '심술궂은' 은 챕터 1의 malevolent 와 같다. 이쪽은 실제로 해를
+     끼치려는 쪽이어서 '해를 끼치려는' 으로 갈랐다. */
+  { word:"malicious", pron:"멀리셔스", pos:"adj", level:"C1", meanings:["악의적인","해를 끼치려는"],
+    syn:["malevolent","vindictive","nasty"], ant:["kindly"],
+    ex:[{ s:"The email contained {{}} software.", f:"malicious", ko:"그 이메일에는 악의적인 소프트웨어가 들어 있었다." }] },
+
+  { word:"malnutrition", pron:"맬뉴트리션", pos:"n", level:"B2", meanings:["영양실조","영양 부족"],
+    syn:["undernourishment","starvation","poor diet"],
+    ex:[{ s:"Child {{}} fell sharply after the programme began.", f:"malnutrition", ko:"그 사업이 시작된 뒤 아동 영양실조가 급격히 줄었다." }] },
+
+  { word:"malodorous", pron:"맬로더러스", pos:"adj", level:"C2", meanings:["고약한 냄새가 나는"],
+    syn:["smelly","foul-smelling","reeking"], ant:["fragrant"],
+    ex:[{ s:"A {{}} cloud drifted from the factory.", f:"malodorous", ko:"고약한 냄새가 나는 연무가 공장에서 흘러나왔다." }] },
+
+  { word:"malpractice", pron:"맬프랙티스", pos:"n", level:"C1", meanings:["의료 사고","위법 행위"],
+    syn:["negligence","misconduct","wrongdoing"],
+    ex:[{ s:"The surgeon was sued for {{}}.", f:"malpractice", ko:"그 외과의는 의료 사고로 고소당했다." }] },
+
+  /* 뒤 챕터의 mistreat('학대하다')와 첫 뜻이 갈리도록 둘째 갈래를
+     '험하게 다루다' 로 했다 — 원본의 '학대하다' 는 mistreat 쪽에 남긴다. */
+  { word:"maltreat", pron:"맬트리트", pos:"v", level:"C1", meanings:["거칠게 다루다","험하게 다루다"],
+    syn:["abuse","ill-treat","mishandle"],
+    ex:[{ s:"Staff who {{}} animals face prosecution.", f:"maltreat", ko:"동물을 거칠게 다루는 직원은 기소된다." }] },
+
+  /* 승격 ① — GLOSS '의무적인, 필수의' 를 글자까지 지켰다. compulsory(syn) 가
+     참조하므로 원본의 '강제적인' 대신 사전 쪽을 남겼다. */
+  { word:"mandatory", pron:"맨더토리", pos:"adj", level:"B2", meanings:["의무적인","필수의"],
+    syn:["compulsory","obligatory","required"], ant:["optional"],
+    ex:[{ s:"Helmets are {{}} on all construction sites.", f:"mandatory", ko:"모든 공사 현장에서 안전모는 의무적이다." }] },
+
+  { word:"maneuver", pron:"머누버", pos:"v", level:"C1", meanings:["능숙하게 움직이다","교묘히 다루다"],
+    syn:["navigate","steer","work one's way"],
+    ex:[{ s:"The driver had to {{}} the truck through a narrow gate.", f:"maneuver", ko:"운전자는 좁은 문으로 트럭을 능숙하게 움직여야 했다." }] },
+
+  /* 승격 ① — GLOSS '열광, 광기' 를 글자까지 지켰다. craze(syn) 가 참조하므로
+     원본의 '열중' 대신 사전 쪽 '광기' 를 남겼다. */
+  { word:"mania", pron:"메이니어", pos:"n", level:"C1", meanings:["열광","광기"],
+    syn:["craze","obsession","frenzy"],
+    ex:[{ s:"A {{}} for tulips once swept the Netherlands.", f:"mania", ko:"한때 튤립 열광이 네덜란드를 휩쓸었다." }] },
+
+  /* 원본 셋째 갈래 '분명한'(형용사)은 pos 가 v 라 담지 못했다. */
+  { word:"manifest", pron:"매너페스트", pos:"v", level:"C1", meanings:["보이다","나타내다"],
+    syn:["display","reveal","exhibit"],
+    ex:[{ s:"Symptoms may {{}} themselves years later.", f:"manifest", ko:"증상은 몇 년 뒤에 나타날 수도 있다." }] },
+
+  /* 승격 ① — GLOSS '조종하다, 조작하다' 가 원본과 글자까지 같다.
+     brainwash(syn) 가 참조한다. */
+  { word:"manipulate", pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
+    syn:["brainwash","exploit","control"],
+    ex:[{ s:"Advertisers try to {{}} what we want.", f:"manipulate", ko:"광고주는 우리가 원하는 것을 조종하려 한다." }] },
+
+  /* 승격 ① — GLOSS '인공적인' 과 같은 갈래다. artificial(syn) 이 참조한다.
+     첫 뜻이 artificial 과 같은데 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다.
+     원본의 '인위적인' 은 같은 갈래라 한 갈래로 두었다. */
+  { word:"man-made", pron:"맨 메이드", pos:"adj", level:"B2", meanings:["인공적인"],
+    syn:["artificial","synthetic","human-made"], ant:["natural"],
+    ex:[{ s:"The lake is entirely {{}}.", f:"man-made", ko:"그 호수는 전적으로 인공적이다." }] },
+
+  /* 원본 뜻 '사람이 하는' 은 흐리다. manned spacecraft 처럼 사람이 타고 조작한다는
+     뜻이어서 '유인의, 사람이 탑승한' 으로 고쳤다. */
+  { word:"manned", pron:"맨드", pos:"adj", level:"C1", meanings:["유인의","사람이 탑승한"],
+    syn:["crewed","staffed","human-operated"], ant:["unmanned"],
+    ex:[{ s:"The first {{}} flight to the Moon was in 1969.", f:"manned", ko:"달로 향한 첫 유인 비행은 1969년이었다." }] },
+
+  /* 승격 ② — GLOSS '방법, 태도' 다. 참조 둘(conduct·demeanor)이 쓰는 갈래는
+     '태도' 쪽이라 둘째 자리에 지켰다. 첫 자리는 원본의 '방식' 으로 했다 —
+     사전의 '방법' 을 그대로 쓰면 뒤 챕터의 method('방법, 수법')와 첫 뜻이 겹친다.
+     manned 와 앞 네 글자가 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"manner", pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
+    syn:["conduct","demeanor","way"],
+    ex:[{ s:"She answered in a very polite {{}}.", f:"manner", ko:"그녀는 아주 공손한 방식으로 대답했다." }] },
+
+  /* 승격 ② — GLOSS '수공의; 설명서' 로 형용사와 명사가 섞여 있었다.
+     automatic(ant) 이 참조하는 갈래는 형용사 '수공의' 라 첫 자리에 지키고,
+     둘째를 원본의 '손으로 하는' 으로 바꿨다 — 한 표제어에 형용사와 명사를
+     섞지 않는 쪽이 읽기 낫다. 원본의 '안내서' 는 그래서 뺐다. */
+  { word:"manual", pron:"매뉴얼", pos:"adj", level:"B2", meanings:["수공의","손으로 하는"],
+    syn:["hand-operated","non-automatic","hands-on"], ant:["automatic"],
+    ex:[{ s:"Most of the work on this farm is still {{}}.", f:"manual", ko:"이 농장에서 대부분의 일은 아직 손으로 한다." }] },
+
+  /* 승격 ① — GLOSS '제조하다; 제조' 와 같은 갈래다. 참조도 PRON 도 없어
+     동사 쪽으로 정리했다. 원본의 '제조업' 은 명사 갈래라 뺐다. */
+  { word:"manufacture", pron:"매뉴팩처", pos:"v", level:"B2", meanings:["제조하다","생산하다"],
+    syn:["produce","fabricate","assemble"],
+    ex:[{ s:"The plant will {{}} batteries for electric cars.", f:"manufacture", ko:"그 공장은 전기차용 배터리를 제조할 것이다." }] },
+
+  /* 승격 ① — GLOSS '원고, 필사본' 을 글자까지 지켰다. handwritten(syn) 이 참조한다.
+     manual·manufacture 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
+     안 온다. */
+  { word:"manuscript", pron:"매뉴스크립트", pos:"n", level:"B2", meanings:["원고","필사본"],
+    syn:["draft","typescript","original copy"],
+    ex:[{ s:"The {{}} was rejected by three publishers.", f:"manuscript", ko:"그 원고는 세 출판사에서 거절당했다." }] },
+
+  /* 승격 ① — GLOSS '여백; 차이' 와 같은 갈래다. 참조도 PRON 도 없다.
+     원본 셋째 갈래 '판매 수익' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"margin", pron:"마진", pos:"n", level:"B2", meanings:["여백","차이"],
+    syn:["border","edge","gap"],
+    ex:[{ s:"She wrote notes in the {{}} of the page.", f:"margin", ko:"그녀는 페이지 여백에 메모를 썼다." }] },
+
+  /* margin 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"marginal", pron:"마저널", pos:"adj", level:"C1", meanings:["가장자리의","중요하지 않은"],
+    syn:["peripheral","slight","negligible"], ant:["central"],
+    ex:[{ s:"The change had only a {{}} effect on sales.", f:"marginal", ko:"그 변화는 매출에 중요하지 않은 영향만 있었다." }] },
+
+  { word:"marital", pron:"매러털", pos:"adj", level:"C1", meanings:["결혼의","부부의"],
+    syn:["conjugal","matrimonial","wedded"],
+    ex:[{ s:"The form asks for your {{}} status.", f:"marital", ko:"그 양식은 결혼 여부를 묻는다." }] },
+
+  /* 원본 둘째 갈래 '유포적인' 은 뜻이 안 통하는 말이다. marked 는 눈에 띄게
+     뚜렷하다는 뜻이고, 표시가 붙었다는 뜻도 있어 '표시된' 으로 고쳤다. */
+  { word:"marked", pron:"마크트", pos:"adj", level:"B2", meanings:["뚜렷한","표시된"],
+    syn:["noticeable","pronounced","conspicuous"], ant:["slight"],
+    ex:[{ s:"There has been a {{}} improvement in air quality.", f:"marked", ko:"대기 질에 뚜렷한 개선이 있었다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────── */
+
+  /* 원본 첫 뜻 '뼈골' 은 표준어가 아니어서 '골수, 뼛속' 으로 고쳤다. */
+  { word:"marrow", pron:"매로", pos:"n", level:"C1", meanings:["골수","뼛속"],
+    syn:["bone marrow","pith","innermost part"],
+    ex:[{ s:"The transplant replaced the patient's bone {{}}.", f:"marrow", ko:"그 이식은 환자의 골수를 대체했다." }] },
+
+  /* 고유명사다. 기존에 AI·Antarctic·CEO 선례가 있어 대문자로 시작해도 문제없다.
+     syn 을 비워 두었다 — 행성 이름을 바꿔 쓸 낱말이 없다. */
+  { word:"Mars", pron:"마즈", pos:"n", level:"B1", meanings:["화성"],
+    ex:[{ s:"The rover sent back images from the surface of {{}}.", f:"Mars", ko:"그 탐사차는 화성 표면에서 영상을 보내왔다." }] },
+
+  /* marshal 과 앞 다섯 글자가 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
+  { word:"marsh", pron:"마시", pos:"n", level:"B2", meanings:["습지","늪"],
+    syn:["swamp","wetland","bog"],
+    ex:[{ s:"Rare birds nest in the coastal {{}}.", f:"marsh", ko:"희귀한 새들이 해안 습지에 둥지를 튼다." }] },
+
+  { word:"marshal", pron:"마셜", pos:"v", level:"C2", meanings:["집결시키다","정렬시키다"],
+    syn:["assemble","muster","line up"],
+    ex:[{ s:"The general began to {{}} his forces at dawn.", f:"marshal", ko:"그 장군은 새벽에 병력을 집결시키기 시작했다." }] },
+
+  { word:"martial", pron:"마셜", pos:"adj", level:"C1", meanings:["군사의","전쟁의"],
+    syn:["military","warlike","combative"],
+    ex:[{ s:"The government declared {{}} law that night.", f:"martial", ko:"정부는 그날 밤 계엄령을 선포했다." }] },
+
+  { word:"martial art", pron:"마셜 아트", pos:"phr", level:"B2", meanings:["무술"],
+    syn:["combat sport","self-defense skill","fighting art"] },
+
+  /* marvelous 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"marvel", pron:"마벌", pos:"n", level:"B2", meanings:["경이","놀라운 일"],
+    syn:["wonder","phenomenon","sensation"],
+    ex:[{ s:"The bridge is a {{}} of modern engineering.", f:"marvel", ko:"그 다리는 현대 공학의 경이다." }] },
+
+  /* 승격 ① — GLOSS '놀라운, 굉장한' 을 글자까지 지켰다. fabulous(syn) 가
+     참조하므로 원본의 '멋진' 대신 사전 쪽을 남겼다. */
+  { word:"marvelous", pron:"마벌러스", pos:"adj", level:"B2", meanings:["놀라운","굉장한"],
+    syn:["fabulous","wondrous","stunning"],
+    ex:[{ s:"She has a {{}} memory for names.", f:"marvelous", ko:"그녀는 이름을 기억하는 놀라운 능력이 있다." }] },
+
+  /* 승격 ① — GLOSS '남성적인' 과 같은 갈래다. feminine(ant) 이 참조한다.
+     원본 '남성의, 남자다운' 도 같은 갈래라 사전 쪽 한 갈래로 두었다. */
+  { word:"masculine", pron:"매스큘린", pos:"adj", level:"B2", meanings:["남성적인"],
+    syn:["manly","virile","male"], ant:["feminine"],
+    ex:[{ s:"The design has a distinctly {{}} feel.", f:"masculine", ko:"그 디자인은 뚜렷하게 남성적인 느낌을 준다." }] },
+
+  /* 승격 ① — GLOSS '다량; 질량' 을 글자까지 지켰다. bulk(syn)·lump(syn) 두 문제가
+     참조한다. 원본 첫 뜻 '덩어리' 를 쓰면 L 세트 lump·C 세트 cluster 와 첫 뜻이
+     같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"mass", pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
+    syn:["bulk","lump","quantity"],
+    ex:[{ s:"A {{}} of paperwork arrived that morning.", f:"mass", ko:"그날 아침 다량의 서류가 도착했다." }] },
+
+  { word:"mass produce", pron:"매스 프러두스", pos:"phr", level:"B2", meanings:["대량 생산하다"],
+    syn:["turn out in bulk","churn out","manufacture at scale"] },
+
+  /* 승격 ① — GLOSS '거대한, 대량의' 와 같은 갈래다. 참조도 PRON 도 없어
+     원본 뜻을 그대로 썼다. */
+  { word:"massive", pron:"매시브", pos:"adj", level:"B2", meanings:["거대한","매우 큰"],
+    syn:["colossal","immense","hulking"], ant:["tiny"],
+    ex:[{ s:"A {{}} oak stood at the centre of the lawn.", f:"massive", ko:"거대한 떡갈나무가 잔디밭 가운데 서 있었다." }] },
+
+  /* 승격 ① — GLOSS '숙련자, 장인' 을 글자까지 지켰다.
+     apprentice(ant)·expert(syn) 두 문제가 참조하므로 원본의 '대가, 거장' 대신
+     사전 쪽을 남겼다 — 같은 갈래다. 원본의 동사 갈래('숙련하다')는 pos 가 n 이라 뺐다. */
+  { word:"master", pron:"매스터", pos:"n", level:"B1", meanings:["숙련자","장인"],
+    syn:["expert","virtuoso","adept"], ant:["apprentice"],
+    ex:[{ s:"He trained for years under a {{}} of the craft.", f:"master", ko:"그는 그 공예의 숙련자 밑에서 여러 해 훈련했다." }] },
+
+  /* master 와 어근이 같지만 품사가 둘 다 n 이라 같은 보드에 올 수 있다.
+     다만 뜻이 '숙련자' 와 '걸작' 으로 완전히 달라 무리가 없다. */
+  { word:"masterpiece", pron:"매스터피스", pos:"n", level:"B2", meanings:["걸작"],
+    syn:["magnum opus","crowning work","classic"],
+    ex:[{ s:"The novel is widely regarded as his {{}}.", f:"masterpiece", ko:"그 소설은 널리 그의 걸작으로 평가된다." }] },
+
+  /* 원본은 동사를 앞에 두므로 pos 를 v 로 잡았다. 명사 갈래('친구, 짝')는 뺐다. */
+  { word:"mate", pron:"메이트", pos:"v", level:"B2", meanings:["짝짓기하다","교배하다"],
+    syn:["breed","pair off","couple"],
+    ex:[{ s:"These birds {{}} for life.", f:"mate", ko:"이 새들은 평생 짝짓기한다." }] },
+
+  /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
+     문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
+  { word:"material", pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
+    syn:["fabric","substance","stuff"],
+    ex:[{ s:"The jacket is made from recycled {{}}.", f:"material", ko:"그 재킷은 재활용 재료로 만들어졌다." }] },
+
+  /* material 과 앞 다섯 글자가 같지만 어원이 갈리고 품사도 달라(n/adj)
+     같은 보드에 안 온다. */
+  { word:"maternal", pron:"머터널", pos:"adj", level:"C1", meanings:["모성의","어머니의"],
+    syn:["motherly","nurturing","protective"], ant:["paternal"],
+    ex:[{ s:"She felt a strong {{}} instinct from the first day.", f:"maternal", ko:"그녀는 첫날부터 강한 모성 본능을 느꼈다." }] },
+
+  { word:"maternity", pron:"머터너티", pos:"adj", level:"C1", meanings:["출산의","임산부의"],
+    syn:["prenatal","obstetric","childbearing"],
+    ex:[{ s:"She took six months of {{}} leave.", f:"maternity", ko:"그녀는 6개월의 출산 휴가를 냈다." }] },
+
+  /* 승격 ① — GLOSS '문제; 물질' 을 글자까지 지켰다. content(syn) 가 참조한다.
+     원본의 '일' 은 '문제' 와 같은 갈래이고, 동사 갈래('중요하다')는 pos 가 n 이라 뺐다. */
+  { word:"matter", pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
+    syn:["issue","affair","substance"],
+    ex:[{ s:"We need to settle this {{}} before Friday.", f:"matter", ko:"우리는 금요일 전에 이 문제를 해결해야 한다." }] },
+
+  /* 승격 ① — GLOSS '성숙한; 성숙하다' 를 글자까지 지켰다. I 세트 immature 와
+     J 세트 juvenile 이 반의어로 참조하므로 이 갈래가 바뀌면 방금 넣은 문제 화면이
+     바뀐다. 원본의 '다 자란' 은 '성숙한' 과 같은 갈래다. */
+  { word:"mature", pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
+    syn:["grown-up","developed","ripe"], ant:["immature"],
+    ex:[{ s:"He is remarkably {{}} for his age.", f:"mature", ko:"그는 나이에 비해 놀랄 만큼 성숙하다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '격언' 을 첫 자리에 지켰다. golden rule(syn) 이 참조한다.
+     원본의 '좌우명' 을 둘째 자리에 붙였다. */
+  { word:"maxim", pron:"맥심", pos:"n", level:"C1", meanings:["격언","좌우명"],
+    syn:["golden rule","adage","saying"],
+    ex:[{ s:"He lived by the old {{}} that haste makes waste.", f:"maxim", ko:"그는 서두르면 일을 망친다는 옛 격언대로 살았다." }] },
+
+  /* maxim 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
+  { word:"maximize", pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
+    syn:["optimize","boost to the full","get the most out of"], ant:["minimize"],
+    ex:[{ s:"The layout is designed to {{}} natural light.", f:"maximize", ko:"그 배치는 자연광을 극대화하도록 설계되었다." }] },
+
+  /* 원본 둘째 갈래 '녹초지' 는 오타여서 '목초지' 로 고쳤다. */
+  { word:"meadow", pron:"메도", pos:"n", level:"B1", meanings:["풀밭","목초지"],
+    syn:["pasture","grassland","field"],
+    ex:[{ s:"Wildflowers covered the upland {{}} in June.", f:"meadow", ko:"6월에 들꽃이 고지 풀밭을 덮었다." }] },
+
+  /* 승격 ① — GLOSS '빈약한' 을 첫 자리에 지켰다. ample(ant) 이 참조한다.
+     원본의 '야윈' 을 둘째 자리에 붙였다. */
+  { word:"meager", pron:"미거", pos:"adj", level:"C1", meanings:["빈약한","야윈"],
+    syn:["scant","paltry","sparse"], ant:["ample"],
+    ex:[{ s:"They survived on a {{}} diet of rice and beans.", f:"meager", ko:"그들은 쌀과 콩의 빈약한 식사로 버텼다." }] },
+
+  /* 승격 ① — GLOSS '비열한; 의미하다' 와 같은 갈래다. 참조도 PRON 도 없다.
+     원본이 동사를 앞에 두므로 pos 를 v 로 잡고 '의미하다' 를 첫 자리에 두었다 —
+     사전의 '비열한' 은 형용사라 둘째 갈래로 담기 어려워 원본의 '못된' 으로 적었다. */
+  { word:"mean", pron:"민", pos:"v", level:"B1", meanings:["의미하다","뜻하다"],
+    syn:["signify","denote","imply"],
+    ex:[{ s:"What exactly does this symbol {{}}?", f:"mean", ko:"이 기호는 정확히 무엇을 의미합니까?" }] },
+
+  /* 승격 ① — GLOSS '의미 없는' 과 같은 갈래다. 참조도 PRON 도 없어 원본 뜻을
+     그대로 썼다. */
+  { word:"meaningless", pron:"미닝리스", pos:"adj", level:"B2", meanings:["무의미한","중요하지 않은"],
+    syn:["pointless","futile","empty"], ant:["significant"],
+    ex:[{ s:"Without context the number is {{}}.", f:"meaningless", ko:"맥락이 없으면 그 숫자는 무의미하다." }] },
+
+  /* 승격 ① — GLOSS '수단, 방법' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
+     뒤 챕터의 method 는 '방법, 수법' 이라 첫 뜻이 갈린다. */
+  { word:"means", pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
+    syn:["method","way","instrument"],
+    ex:[{ s:"Email became the main {{}} of contact.", f:"means", ko:"이메일이 주된 연락 수단이 되었다." }] },
+
+  /* 승격 ② — GLOSS '한편으로는' 이다. I 세트 in the meantime 이 참조하는데,
+     그쪽 뜻이 '그 사이에' 라 원본의 '그 동안에' 가 오히려 더 맞는다.
+     원본 순서대로 두고 사전의 '한편' 을 둘째 자리에 지켰다. */
+  { word:"meanwhile", pron:"민와일", pos:"adv", level:"B1", meanings:["그 동안에","한편"],
+    syn:["in the meantime","at the same time","in the interim"],
+    ex:[{ s:"{{}}, the rest of the team kept working.", f:"Meanwhile", ko:"그 동안에 나머지 팀원들은 계속 일했다." }] },
+
+  { word:"measles", pron:"미절즈", pos:"n", level:"B2", meanings:["홍역"],
+    syn:["rubeola","viral rash","childhood fever"],
+    ex:[{ s:"A single shot protects most children from {{}}.", f:"measles", ko:"한 번의 주사가 대부분의 아이를 홍역에서 지켜 준다." }] },
+
+  /* 승격 ② — GLOSS '헤아릴 수 있는' 이다. finite(syn) 가 참조한다. 원본의
+     '측정할 수 있는' 은 같은 갈래라 사전 쪽을 첫 자리에 지키고, 원본의
+     '주목할 만한' 을 둘째 자리에 붙였다. */
+  { word:"measurable", pron:"메저러블", pos:"adj", level:"B2", meanings:["헤아릴 수 있는","주목할 만한"],
+    syn:["finite","quantifiable","appreciable"],
+    ex:[{ s:"The change produced a {{}} drop in emissions.", f:"measurable", ko:"그 변화는 배출량에 헤아릴 수 있는 감소를 낳았다." }] },
+
+  /* 승격 ① — GLOSS '측정하다; 조치' 를 글자까지 지켰다. 참조가 3곳
+     (criterion·dose·gauge)이라 그대로 두었다. 원본의 '척도' 는 '조치' 와 다른
+     갈래지만 참조가 쓰는 쪽이 사전이라 사전을 따랐다. */
+  { word:"measure", pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
+    syn:["gauge","quantify","assess"],
+    ex:[{ s:"Scientists {{}} the ice thickness every spring.", f:"measure", ko:"과학자들은 매년 봄 얼음 두께를 측정한다." }] },
+
+  { word:"measure up to", pron:"메저 업 투", pos:"phr", level:"C1", meanings:["~에 부합하다","들어맞다"],
+    syn:["live up to","meet the standard of","match"] },
+
+  /* 승격 ① — GLOSS '측정, 치수' 를 글자까지 지켰다. dimension(syn) 이 참조하므로
+     원본의 '측량' 대신 사전 쪽을 남겼다.
+     measurable·measure 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
+     안 온다. */
+  { word:"measurement", pron:"메저먼트", pos:"n", level:"B1", meanings:["측정","치수"],
+    syn:["dimension","reading","gauging"],
+    ex:[{ s:"Take the {{}} twice before you cut.", f:"measurement", ko:"자르기 전에 치수를 두 번 재세요." }] },
+
+  /* 승격 ① — GLOSS '기계적인, 자동의' 를 글자까지 지켰다. automatic(syn) 이
+     참조하므로 원본의 '기계의' 대신 사전 쪽을 남겼다. */
+  { word:"mechanical", pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
+    syn:["automatic","machine-driven","robotic"], ant:["manual"],
+    ex:[{ s:"The failure turned out to be purely {{}}.", f:"mechanical", ko:"그 고장은 순전히 기계적인 것으로 드러났다." }] },
+
+  /* 승격 ① — GLOSS '기제, 장치' 와 같은 갈래다. 참조도 PRON 도 없어 원본의
+     '기계 장치' 를 첫 자리에 두고 '부품' 대신 사전의 '기제' 를 살렸다. */
+  { word:"mechanism", pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
+    syn:["device","workings","contrivance"],
+    ex:[{ s:"The locking {{}} had jammed completely.", f:"mechanism", ko:"잠금 기계 장치가 완전히 걸려 버렸다." }] },
+
+  /* 승격 ① — GLOSS '쓸데없이 참견하다' 를 글자까지 지켰다. I 세트 interfere 가
+     참조한다. 원본 '간섭하다' 를 쓰면 그 interfere 와 첫 뜻이 같아지는데,
+     사전 쪽을 쓰면 그 문제도 함께 풀린다. */
+  { word:"meddle", pron:"메들", pos:"v", level:"C1", meanings:["쓸데없이 참견하다","건드리다"],
+    syn:["interfere","pry","tamper"],
+    ex:[{ s:"He was warned not to {{}} in family disputes.", f:"meddle", ko:"그는 집안 분쟁에 쓸데없이 참견하지 말라고 경고받았다." }] },
+
+  /* 승격 ① — GLOSS '중재하다' 를 첫 자리에 지켰다. I 세트 intervene 이 참조한다.
+     원본의 '조정하다' 를 둘째 자리에 붙였다. */
+  { word:"mediate", pron:"미디에이트", pos:"v", level:"C1", meanings:["중재하다","조정하다"],
+    syn:["intervene","arbitrate","broker"],
+    ex:[{ s:"A neutral party was asked to {{}} the dispute.", f:"mediate", ko:"중립적인 쪽에 그 분쟁을 중재해 달라는 요청이 갔다." }] },
+
+  /* 승격 ① — GLOSS '약물 치료, 약' 을 글자까지 지켰다.
+     antidepressant(syn)·chemotherapy(syn) 두 문제가 참조한다. */
+  { word:"medication", pron:"메디케이션", pos:"n", level:"B2", meanings:["약물 치료","약"],
+    syn:["antidepressant","chemotherapy","drug treatment"],
+    ex:[{ s:"She takes daily {{}} for high blood pressure.", f:"medication", ko:"그녀는 고혈압으로 매일 약물 치료를 받는다." }] },
+
+  /* 승격 ① — 원본의 '중고의, 낡은' 은 틀렸다(secondhand 쪽 오역). medieval 은
+     중세를 뜻한다. 사전이 이미 '중세의' 이고 feudal(syn) 이 참조하므로 사전 쪽을
+     첫 자리에 두고 원본의 '중세풍의' 를 붙였다 — 원본 오류가 승격으로 교정된 자리다. */
+  { word:"medieval", pron:"메디이벌", pos:"adj", level:"B2", meanings:["중세의","중세풍의"],
+    syn:["feudal","archaic","old-world"], ant:["modern"],
+    ex:[{ s:"The town still has its {{}} walls.", f:"medieval", ko:"그 도시는 여전히 중세의 성벽을 갖고 있다." }] },
+
+  /* 승격 ① — GLOSS '평범한, 그저 그런' 을 글자까지 지켰다. brilliant(ant) 이 참조하므로
+     원본('평범한' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다. */
+  { word:"mediocre", pron:"미디오커", pos:"adj", level:"C1", meanings:["평범한","그저 그런"],
+    syn:["indifferent","run-of-the-mill","so-so"], ant:["brilliant"],
+    ex:[{ s:"The food was expensive but distinctly {{}}.", f:"mediocre", ko:"음식은 비쌌지만 뚜렷하게 평범했다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────── */
+
+  { word:"meditation", pron:"메더테이션", pos:"n", level:"B2", meanings:["명상","심사숙고"],
+    syn:["contemplation","reflection","mindfulness"],
+    ex:[{ s:"She begins each day with twenty minutes of {{}}.", f:"meditation", ko:"그녀는 매일 20분의 명상으로 하루를 시작한다." }] },
+
+  /* 고유명사다. Mars 와 같이 기존 AI·Antarctic·CEO 선례를 따른다.
+     syn 을 비워 두었다 — 바다 이름을 바꿔 쓸 낱말이 없다. */
+  { word:"Mediterranean", pron:"메디터레이니언", pos:"n", level:"B2", meanings:["지중해"],
+    ex:[{ s:"Olive trees grow all around the {{}}.", f:"Mediterranean", ko:"올리브 나무가 지중해 전역에 자란다." }] },
+
+  /* 원본 셋째 갈래 '중간의'(형용사)는 pos 가 n 이라 담지 못했다. */
+  { word:"medium", pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
+    syn:["middle ground","channel","vehicle"],
+    ex:[{ s:"Radio was once the main {{}} for news.", f:"medium", ko:"라디오는 한때 뉴스의 주된 매개물이었다." }] },
+
+  /* 승격 ② — GLOSS '우울, 침울함' 으로 명사였다. depression(syn) 이 참조하는데
+     그쪽도 명사라 pos 를 n 으로 유지했다. 원본은 형용사('우울한')인데 그대로 쓰면
+     D 세트 depressed·G 세트 gloomy 와 첫 뜻이 같아지므로 사전 쪽이 낫다. */
+  { word:"melancholy", pron:"멜런칼리", pos:"n", level:"C1", meanings:["우울","침울함"],
+    syn:["depression","gloom","sadness"],
+    ex:[{ s:"A deep {{}} settled over the household.", f:"melancholy", ko:"깊은 우울이 그 집안에 내려앉았다." }] },
+
+  { word:"mellow", pron:"멜로", pos:"adj", level:"C1", meanings:["부드러운","감미로운"],
+    syn:["smooth","soothing","rich"], ant:["harsh"],
+    ex:[{ s:"The wine had a {{}} oaky flavour.", f:"mellow", ko:"그 포도주는 부드러운 오크 향이 났다." }] },
+
+  /* 승격 ① — GLOSS '녹다, 녹이다' 를 글자까지 지켰다. dissolve(syn) 가 참조한다.
+     첫 뜻이 dissolve 와 같은데 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다. */
+  { word:"melt", pron:"멜트", pos:"v", level:"B1", meanings:["녹다","녹이다"],
+    syn:["dissolve","thaw","liquefy"], ant:["freeze"],
+    ex:[{ s:"The glaciers {{}} faster every summer.", f:"melt", ko:"그 빙하는 해마다 여름에 더 빨리 녹는다." }] },
+
+  /* 승격 ① — GLOSS '회고록' 을 첫 자리에 지켰다.
+     autobiography(syn)·biography(syn) 두 문제가 참조한다.
+     원본의 '자서전' 을 둘째 자리에 붙였다. */
+  { word:"memoir", pron:"메무아", pos:"n", level:"C1", meanings:["회고록","자서전"],
+    syn:["autobiography","biography","life story"],
+    ex:[{ s:"His wartime {{}} became a bestseller.", f:"memoir", ko:"그의 전시 회고록은 베스트셀러가 되었다." }] },
+
+  /* 승격 ② — GLOSS '기념물; 추모의' 였다. '추모의' 는 '추도의' 의 오기로 보이고
+     참조도 PRON 도 없어, 원본의 '기념의, 추도의' 를 형용사로 정리했다.
+     memoir 와 앞 네 글자가 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"memorial", pron:"머모리얼", pos:"adj", level:"B2", meanings:["기념의","추도의"],
+    syn:["commemorative","remembrance","honoring"],
+    ex:[{ s:"A {{}} service was held at the cathedral.", f:"memorial", ko:"대성당에서 추도 예배가 열렸다." }] },
+
+  /* 승격 ① — GLOSS '으르다' 를 첫 자리에 지켰다. I 세트 intimidate 가 참조한다.
+     원본 '위협적인' 은 형용사인데 menace 는 명사·동사다 — '위협적인' 은
+     menacing 의 뜻이어서 원본이 틀렸다. 사전의 동사 갈래를 따르고 원본의
+     '위협' 대신 '위협하다' 로 적었다. */
+  { word:"menace", pron:"메너스", pos:"v", level:"C1", meanings:["으르다","위협하다"],
+    syn:["intimidate","threaten","bully"],
+    ex:[{ s:"Stray dogs began to {{}} the neighbourhood.", f:"menace", ko:"떠돌이 개들이 그 동네를 위협하기 시작했다." }] },
+
+  /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
+     참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
+  { word:"mental", pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+    syn:["cognitive","psychological","intellectual"], ant:["physical"],
+    ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
+
+  /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
+     원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
+  { word:"mention", pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+    syn:["cite","refer to","bring up"],
+    ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
+
+  /* mental·mention 과 앞 네 글자가 같지만 품사가 셋 다 달라(adj/v/n)
+     같은 보드에 안 온다. */
+  { word:"mentor", pron:"멘토", pos:"n", level:"B2", meanings:["조언자","스승"],
+    syn:["adviser","guide","coach"],
+    ex:[{ s:"She credits her old {{}} for the career change.", f:"mentor", ko:"그녀는 진로 변경을 옛 조언자의 공으로 돌린다." }] },
+
+  { word:"merchant", pron:"머천트", pos:"n", level:"B2", meanings:["상인","무역상"],
+    syn:["trader","dealer","vendor"],
+    ex:[{ s:"A silk {{}} settled in the port town.", f:"merchant", ko:"한 비단 상인이 그 항구 도시에 정착했다." }] },
+
+  /* 승격 ① — GLOSS '자비로운' 을 첫 자리에 지켰다. compassionate(syn) 가 참조한다.
+     원본의 '인정 많은' 을 둘째 자리에 붙였다. */
+  { word:"merciful", pron:"머시풀", pos:"adj", level:"B2", meanings:["자비로운","인정 많은"],
+    syn:["compassionate","lenient","forgiving"], ant:["ruthless"],
+    ex:[{ s:"The judge was unusually {{}} in sentencing.", f:"merciful", ko:"그 판사는 형을 정할 때 이례적으로 자비로웠다." }] },
+
+  { word:"mercury", pron:"머큐리", pos:"n", level:"B2", meanings:["수은"],
+    syn:["quicksilver","liquid metal","heavy metal"],
+    ex:[{ s:"Old thermometers were filled with {{}}.", f:"mercury", ko:"옛 온도계에는 수은이 채워져 있었다." }] },
+
+  { word:"mere", pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
+    syn:["nothing more than","bare","scant"],
+    ex:[{ s:"The whole repair took a {{}} ten minutes.", f:"mere", ko:"수리 전체가 겨우 10분밖에 걸리지 않았다." }] },
+
+  /* 승격 ① — GLOSS '합치다, 병합하다' 를 글자까지 지켰다. 참조가 4곳
+     (blend·combine·consolidate·incorporate)이고 마지막은 I 세트 표제어다.
+     원본의 '합병하다, 합체시키다' 도 같은 갈래다. */
+  { word:"merge", pron:"머지", pos:"v", level:"B2", meanings:["합치다","병합하다"],
+    syn:["blend","combine","consolidate"], ant:["separate"],
+    ex:[{ s:"The two departments will {{}} next year.", f:"merge", ko:"두 부서는 내년에 합쳐질 것이다." }] },
+
+  /* 원본 셋째 갈래 '난잡' 은 meanings 2개 제한에 걸려 뺐다. */
+  { word:"mess", pron:"메스", pos:"n", level:"B1", meanings:["엉망","혼란"],
+    syn:["muddle","disorder","clutter"],
+    ex:[{ s:"The kitchen was left in a complete {{}}.", f:"mess", ko:"부엌이 완전히 엉망으로 남겨졌다." }] },
+
+  /* mess 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"messy", pron:"메시", pos:"adj", level:"B1", meanings:["엉망인","지저분한"],
+    syn:["untidy","cluttered","disorderly"], ant:["neat"],
+    ex:[{ s:"His desk is always {{}} by Friday.", f:"messy", ko:"그의 책상은 금요일이면 늘 엉망이다." }] },
+
+  { word:"metabolic", pron:"메터발릭", pos:"adj", level:"C1", meanings:["신진대사의"],
+    syn:["biochemical","energy-processing","physiological"],
+    ex:[{ s:"Cold weather raises the body's {{}} rate.", f:"metabolic", ko:"추운 날씨는 신체의 신진대사율을 높인다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────── */
+
+  /* metabolic 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"metabolism", pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
+    syn:["energy turnover","body chemistry","metabolic rate"],
+    ex:[{ s:"Exercise speeds up the body's {{}}.", f:"metabolism", ko:"운동은 신체의 신진대사를 빠르게 한다." }] },
+
+  /* 승격 ① — GLOSS '은유, 비유' 를 글자까지 지켰다. I 세트 imagery 가 참조하므로
+     원본의 '상징' 대신 사전 쪽 '비유' 를 남겼다. */
+  { word:"metaphor", pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
+    syn:["imagery","figure of speech","symbol"],
+    ex:[{ s:"The poem uses the sea as a {{}} for memory.", f:"metaphor", ko:"그 시는 바다를 기억의 은유로 쓴다." }] },
+
+  /* 승격 ① — GLOSS '유성' 을 첫 자리에 지켰다. comet(syn) 이 참조한다.
+     원본의 '운석' 을 둘째 자리에 붙였다. */
+  { word:"meteor", pron:"미티어", pos:"n", level:"B2", meanings:["유성","운석"],
+    syn:["comet","shooting star","falling star"],
+    ex:[{ s:"A bright {{}} streaked across the night sky.", f:"meteor", ko:"밝은 유성이 밤하늘을 가로질러 갔다." }] },
+
+  { word:"meteorological", pron:"미티어럴라지컬", pos:"adj", level:"C1", meanings:["기상의","기상학의"],
+    syn:["weather-related","atmospheric","climatic"],
+    ex:[{ s:"The flight was delayed by {{}} conditions.", f:"meteorological", ko:"그 항공편은 기상 조건 때문에 지연되었다." }] },
+
+  { word:"meteorologist", pron:"미티어랄러지스트", pos:"n", level:"C1", meanings:["기상학자"],
+    syn:["weather scientist","forecaster","climatologist"],
+    ex:[{ s:"The {{}} warned of heavy snow by evening.", f:"meteorologist", ko:"그 기상학자는 저녁까지 폭설을 경고했다." }] },
+
+  { word:"meteorology", pron:"미티어랄러지", pos:"n", level:"C1", meanings:["기상학"],
+    syn:["weather science","atmospheric science","climate study"],
+    ex:[{ s:"She switched from physics to {{}}.", f:"meteorology", ko:"그녀는 물리학에서 기상학으로 전공을 바꿨다." }] },
+
+  /* 승격 ① — GLOSS '방법, 수법' 이 원본과 글자까지 같다. 참조는 없다.
+     4차에서 means 의 유의어로 쓰려고 PRON 을 임시로 넣어 두었는데, 여기서
+     표제어가 되면서 그 항목이 지워지고 이 pron 필드가 대신한다.
+     챕터 2의 manner('방식')·챕터 4의 means('수단')와 첫 뜻이 갈린다. */
+  { word:"method", pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
+    syn:["approach","technique","procedure"],
+    ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
+
+  /* method 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"methodological", pron:"메써덜라지컬", pos:"adj", level:"C2", meanings:["방법론의","방법론적인"],
+    syn:["procedural","systematic","structural"],
+    ex:[{ s:"The paper has a serious {{}} flaw.", f:"methodological", ko:"그 논문에는 심각한 방법론적 결함이 있다." }] },
+
+  { word:"meticulously", pron:"머티큘러슬리", pos:"adv", level:"C1", meanings:["꼼꼼하게","좀스럽게"],
+    syn:["painstakingly","scrupulously","with great care"],
+    ex:[{ s:"Every joint was {{}} sanded by hand.", f:"meticulously", ko:"모든 이음새가 손으로 꼼꼼하게 사포질되었다." }] },
+
+  { word:"metric", pron:"메트릭", pos:"adj", level:"B2", meanings:["미터법의"],
+    syn:["decimal","metre-based","standardized"],
+    ex:[{ s:"Most countries use the {{}} system.", f:"metric", ko:"대부분의 나라가 미터법 체계를 쓴다." }] },
+
+  { word:"metropolitan", pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
+    syn:["urban","city-wide","municipal"],
+    ex:[{ s:"The {{}} area holds nine million people.", f:"metropolitan", ko:"그 대도시권에는 900만 명이 산다." }] },
+
+  /* 승격 ① — GLOSS '미생물' 을 첫 자리에 지켰다. germ(syn) 이 참조한다.
+     원본의 '세균' 을 둘째 자리에 붙였다. */
+  { word:"microbe", pron:"마이크로브", pos:"n", level:"B2", meanings:["미생물","세균"],
+    syn:["germ","bacterium","micro-organism"],
+    ex:[{ s:"A single {{}} can multiply within hours.", f:"microbe", ko:"한 마리 미생물이 몇 시간 안에 증식할 수 있다." }] },
+
+  { word:"micronutrient", pron:"마이크로뉴트리언트", pos:"n", level:"C2", meanings:["미량 영양소"],
+    syn:["trace nutrient","vitamin or mineral","trace element"],
+    ex:[{ s:"Leafy greens supply several key {{}}.", f:"micronutrients", ko:"잎채소는 몇 가지 핵심 미량 영양소를 공급한다." }] },
+
+  { word:"midwife", pron:"미드와이프", pos:"n", level:"B2", meanings:["산파","조산사"],
+    syn:["birth attendant","obstetric nurse","delivery nurse"],
+    ex:[{ s:"A {{}} stayed with her through the night.", f:"midwife", ko:"산파가 밤새 그녀와 함께 있었다." }] },
+
+  { word:"mighty", pron:"마이티", pos:"adj", level:"B2", meanings:["강력한","위대한"],
+    syn:["powerful","formidable","potent"], ant:["feeble"],
+    ex:[{ s:"A {{}} river cuts through the canyon.", f:"mighty", ko:"강력한 강이 그 협곡을 가른다." }] },
+
+  /* 승격 ① — GLOSS '중대한 사건, 분기점' 을 글자까지 지켰다. epoch(syn) 이
+     참조하므로 원본의 '중요한 단계, 획기적인 사건' 대신 사전 쪽을 남겼다. */
+  { word:"milestone", pron:"마일스톤", pos:"n", level:"B2", meanings:["중대한 사건","분기점"],
+    syn:["epoch","turning point","landmark"],
+    ex:[{ s:"The treaty was a {{}} in the peace process.", f:"milestone", ko:"그 조약은 평화 과정의 중대한 사건이었다." }] },
+
+  { word:"milk", pron:"밀크", pos:"v", level:"B2", meanings:["젖을 짜다","최대한 뽑아내다"],
+    syn:["draw off","exploit","squeeze dry"],
+    ex:[{ s:"They still {{}} the cows by hand.", f:"milk", ko:"그들은 아직 손으로 소의 젖을 짠다." }] },
+
+  /* 원본 뜻 '천 년간의, 천년기의' 는 형용사로 적혀 있었지만 millennium 은 명사다
+     (형용사는 millennial). '천 년, 천년기' 로 고쳤다. */
+  { word:"millennium", pron:"멀레니엄", pos:"n", level:"C1", meanings:["천 년","천년기"],
+    syn:["thousand years","millennial period","ten centuries"],
+    ex:[{ s:"The cathedral has stood for almost a {{}}.", f:"millennium", ko:"그 대성당은 거의 천 년 동안 서 있었다." }] },
+
+  /* 승격 ① — GLOSS '흉내 내다, 모방하다' 를 글자까지 지켰다.
+     emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
+     원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
+     같아지는 것도 함께 피할 수 있다. */
+  { word:"mimic", pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+    syn:["emulate","imitate","impersonate"],
+    ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
+
+  { word:"mindful", pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
+    syn:["aware","heedful","attentive"], ant:["oblivious"],
+    ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] }
+];
+
+/* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
+Object.assign(window.GLOSS, {
+  "adage": "오래된 격언",
+  "add up": "앞뒤가 맞다",
+  "adviser": "조언해 주는 사람",
+  "appreciable": "느낄 만한",
+  "arbitrate": "조정을 맡다",
+  "archaic": "옛 시대의",
+  "arrive in time": "시간에 맞춰 닿다",
+  "at the same time": "동시에",
+  "atmospheric": "대기의",
+  "atmospheric science": "대기 과학",
+  "atone for": "~을 벌충하다",
+  "aware": "알고 있는",
+  "be logical": "논리에 맞다",
+  "biochemical": "생화학의",
+  "birth attendant": "출산을 돕는 사람",
+  "body chemistry": "체내 화학 작용",
+  "bog": "늪지",
+  "bone marrow": "뼈 속 골수",
+  "book ahead": "미리 예약하다",
+  "boost to the full": "최대로 끌어올리다",
+  "charged": "전하를 띤",
+  "childbearing": "아이를 낳는",
+  "childhood fever": "소아 발열병",
+  "churn out": "쏟아 내다",
+  "city-wide": "도시 전역의",
+  "classic": "고전적 명작",
+  "clear a path for": "~을 위해 길을 트다",
+  "climate study": "기후 연구",
+  "climatic": "기후상의",
+  "climatologist": "기후학자",
+  "clutter": "잡다하게 쌓인 것",
+  "cluttered": "잡동사니로 찬",
+  "coach": "지도해 주는 사람",
+  "combat sport": "격투 종목",
+  "commemorative": "기리기 위한",
+  "complain loudly": "큰 소리로 불평하다",
+  "conjugal": "혼인 관계의",
+  "conjurer": "요술쟁이",
+  "contemplation": "깊이 헤아림",
+  "contrivance": "고안된 장치",
+  "couple": "짝을 이루다",
+  "crewed": "승무원이 탄",
+  "crowning work": "최고의 성취작",
+  "decimal": "십진법의",
+  "delivery nurse": "분만 담당 간호사",
+  "disorderly": "어수선한",
+  "draw off": "빼내다",
+  "drug treatment": "약물 요법",
+  "energy turnover": "에너지 순환량",
+  "energy-processing": "에너지를 처리하는",
+  "enrage": "분노하게 하다",
+  "exasperate": "속을 뒤집어 놓다",
+  "falling star": "떨어지는 별",
+  "fighting art": "싸움 기술",
+  "figure of speech": "비유적 표현",
+  "forecaster": "예보하는 사람",
+  "forgiving": "너그럽게 용서하는",
+  "foul-smelling": "역한 냄새의",
+  "gain ground": "기반을 넓히다",
+  "gauging": "재는 일",
+  "get the most out of": "~을 최대로 활용하다",
+  "glitch": "작은 결함",
+  "grandeur": "장대함",
+  "grassland": "초지",
+  "greater part": "더 큰 쪽",
+  "grown-up": "다 자란",
+  "hand-operated": "손으로 조작하는",
+  "hands-on": "직접 손을 쓰는",
+  "heavy metal": "중금속",
+  "heedful": "주의를 기울이는",
+  "hold water": "말이 성립하다",
+  "honoring": "기려 받드는",
+  "hulking": "덩치가 큰",
+  "human-made": "사람이 만든",
+  "human-operated": "사람이 조작하는",
+  "ill-natured": "성질이 나쁜",
+  "ill-treat": "부당하게 대하다",
+  "illusionist": "환술사",
+  "impersonate": "남을 흉내 내어 연기하다",
+  "improvised": "즉석에서 만든",
+  "infuriate": "격노하게 하다",
+  "innermost part": "가장 깊은 속",
+  "kick up a row": "한바탕 소동을 벌이다",
+  "liquid metal": "액체 금속",
+  "machine-driven": "기계로 움직이는",
+  "magnetized": "자기를 띤",
+  "magnum opus": "대표 역작",
+  "majesty": "위엄",
+  "make a scene": "사람들 앞에서 난리를 치다",
+  "male": "남성의",
+  "manly": "남자다운",
+  "manufacture at scale": "규모를 갖춰 제조하다",
+  "matrimonial": "혼인상의",
+  "meet the standard of": "~의 기준을 채우다",
+  "metabolic rate": "대사율",
+  "metre-based": "미터를 기준으로 한",
+  "micro-organism": "미소 생물",
+  "middle ground": "중간 지점",
+  "millennial period": "천년의 기간",
+  "mindfulness": "마음을 살피는 일",
+  "misconduct": "부정 행위",
+  "mishandle": "잘못 다루다",
+  "most": "대부분의 것",
+  "motherly": "어머니 같은",
+  "muster": "소집하다",
+  "nasty": "고약한",
+  "navigate": "길을 찾아 나아가다",
+  "neat": "깔끔한",
+  "negligence": "태만, 부주의",
+  "negligible": "무시해도 될 만한",
+  "non-automatic": "자동이 아닌",
+  "nothing more than": "~에 지나지 않는",
+  "nurturing": "보살피는",
+  "oblivious": "까맣게 모르는",
+  "obsession": "집착",
+  "obstetric": "산과의",
+  "obstetric nurse": "산과 간호사",
+  "old-world": "옛 정취의",
+  "optimize": "최적화하다",
+  "original copy": "원본",
+  "painstakingly": "공들여",
+  "pair off": "둘씩 짝지다",
+  "paltry": "쥐꼬리만 한",
+  "paternal": "아버지의",
+  "phenomenon": "현상",
+  "pith": "속심",
+  "polarized": "극을 띤",
+  "poor diet": "부실한 식사",
+  "press forward": "밀고 나아가다",
+  "procedural": "절차상의",
+  "procedure": "절차",
+  "pronounced": "두드러진",
+  "protective": "감싸려 하는",
+  "pry": "엿보며 캐다",
+  "psychological": "심리의",
+  "pull it off": "끝내 해내다",
+  "quantifiable": "수치로 잴 수 있는",
+  "quicksilver": "수은",
+  "reeking": "악취를 풍기는",
+  "refer to": "~을 들어 말하다",
+  "robotic": "로봇처럼 움직이는",
+  "rubeola": "홍역 바이러스병",
+  "run-of-the-mill": "흔해 빠진",
+  "sadness": "슬픔",
+  "saying": "속담",
+  "scant": "간신히 되는",
+  "scrupulously": "빈틈없이",
+  "self-defense skill": "호신 기술",
+  "sensation": "큰 화제",
+  "shooting star": "별똥별",
+  "signify": "나타내다",
+  "slight": "미미한",
+  "smelly": "냄새 나는",
+  "so-so": "그저 그런",
+  "soothe": "달래다",
+  "soothing": "마음을 누그러뜨리는",
+  "spiteful": "앙심을 품은",
+  "splendor": "화려함",
+  "squeeze dry": "짜낼 만큼 짜내다",
+  "staffed": "인원이 배치된",
+  "standardized": "표준으로 정해진",
+  "steer": "방향을 조종하다",
+  "step aside for": "~에게 자리를 비켜 주다",
+  "stopgap": "임시로 메우는",
+  "structural": "구조상의",
+  "swamp": "늪",
+  "systematic": "체계적인",
+  "technique": "기법",
+  "ten centuries": "10세기 동안",
+  "thaw": "얼음이 풀리다",
+  "thousand years": "천 해",
+  "trace element": "미량 원소",
+  "trace nutrient": "미량 영양 성분",
+  "trader": "거래하는 사람",
+  "turn out in bulk": "한꺼번에 많이 만들다",
+  "typescript": "타자 원고",
+  "undernourishment": "영양 부족",
+  "unmanned": "무인의",
+  "untidy": "정돈되지 않은",
+  "urban": "도시의",
+  "vendor": "판매하는 사람",
+  "venomous": "독기 서린",
+  "vindictive": "앙갚음하려는",
+  "viral rash": "바이러스성 발진",
+  "virile": "사내다운",
+  "virtuoso": "명인",
+  "vitamin or mineral": "비타민이나 무기물",
+  "warlike": "전쟁을 벌이려는",
+  "way": "방식",
+  "weather science": "날씨 과학",
+  "weather scientist": "날씨를 연구하는 사람",
+  "weather-related": "날씨와 관련된",
+  "wedded": "혼인한",
+  "wetland": "습지대",
+  "with great care": "아주 조심스럽게",
+  "wizard": "마법사",
+  "wondrous": "경이로운",
+  "work one's way": "힘써 나아가다",
+  "workings": "작동 구조",
+  "wrongdoing": "비행, 부정"
+});
