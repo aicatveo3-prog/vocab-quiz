@@ -1649,7 +1649,6 @@ Object.assign(window.GLOSS, {
   "hopelessly":"절망적으로, 어찌할 수 없이",
   "hopelessness":"절망, 희망 없음",
   "lay waste":"황폐하게 만들다",
-  "offspring":"자식, 자손",
   "persistence":"끈기, 고집",
   "preferable":"더 나은, 선호되는",
   "providence":"섭리, 신의 뜻",

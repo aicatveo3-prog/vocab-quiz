@@ -338,97 +338,250 @@ window.VOCAB_O = [
      사전 표현 '상쇄하다, 보충하다' 를 글자까지 지켜 다섯 화면을 그대로 두었다. */
   { word:"offset", pron:"오프셋", pos:"v", level:"C1", meanings:["상쇄하다","보충하다"],
     syn:["counteract","balance out","cancel out"],
-    ex:[{ s:"Tree planting can {{}} some carbon emissions.", f:"offset", ko:"나무 심기는 얼마간의 탄소 배출을 상쇄할 수 있다." }] }
+    ex:[{ s:"Tree planting can {{}} some carbon emissions.", f:"offset", ko:"나무 심기는 얼마간의 탄소 배출을 상쇄할 수 있다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────────────── */
+  /* 'on ~' 으로 시작하는 구가 줄줄이 붙어 구·표현이 열한 개다. 저장소 관례대로
+     phr 에는 ex 를 넣지 않는다(기존 phr 261개 중 ex 가 있는 것 0개).            */
+
+  /* 승격 30 — 사전 표현 '자식, 자손' 을 글자까지 지켰다(descendant, D).
+     원본의 '(동물의) 새끼' 괄호는 걷었다. */
+  { word:"offspring", pron:"오프스프링", pos:"n", level:"B2", meanings:["자식","자손"],
+    syn:["descendant","progeny","young of a creature"],
+    ex:[{ s:"Salmon return upstream to leave their {{}}.", f:"offspring", ko:"연어는 자손을 남기려고 강을 거슬러 돌아온다." }] },
+
+  { word:"off-the-record", pron:"오프 더 레코드", pos:"adj", level:"C1", meanings:["비공개의","비공식의"],
+    syn:["not for publication","said unofficially","kept off the books"], ant:["on-the-record"],
+    ex:[{ s:"The remark was strictly {{}}.", f:"off-the-record", ko:"그 말은 철저히 비공개의 것이었다." }] },
+
+  { word:"ointment", pron:"오인트먼트", pos:"n", level:"B2", meanings:["연고"],
+    syn:["healing cream","salve","medicated balm"],
+    ex:[{ s:"Rub the {{}} gently into the burn.", f:"ointment", ko:"연고를 화상에 살살 바르세요." }] },
+
+  { word:"ominous", pron:"아머너스", pos:"adj", level:"C1", meanings:["불길한","심상치 않은"],
+    syn:["boding ill","sinister","warning of trouble"], ant:["auspicious"],
+    ex:[{ s:"An {{}} silence fell over the room.", f:"ominous", ko:"불길한 침묵이 방에 내렸다." }] },
+
+  /* 승격 31 — 사전은 '빠뜨리다' 한 갈래였다. 원본의 '생략하다' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(leave out, L). */
+  { word:"omit", pron:"오밋", pos:"v", level:"B2", meanings:["빠뜨리다","생략하다"],
+    syn:["leave out","skip over","drop from a list"], ant:["include"],
+    ex:[{ s:"Do not {{}} your phone number on the form.", f:"omit", ko:"양식에 전화번호를 빠뜨리지 마세요." }] },
+
+  /* 승격 32 — 사전 표현 '~을 대신하여' 를 글자까지 지켰다(for one's sake, F). */
+  { word:"on behalf of", pron:"온 비해프 오브", pos:"phr", level:"B2", meanings:["~을 대신하여"],
+    syn:["in place of","as a representative of","speaking for"] },
+
+  { word:"on earth", pron:"온 어쓰", pos:"phr", level:"B2", meanings:["도대체"],
+    syn:["in the world","of all things","whatever for"] },
+
+  /* 원본은 '안절부절못하여, 안달하는, 못견뎌하는' 세 갈래였다.
+     한 갈래로 좁혀 형용사구답게 '안절부절못하는' 으로 두었다. */
+  { word:"on edge", pron:"온 에지", pos:"phr", level:"B2", meanings:["안절부절못하는"],
+    syn:["jumpy","ill at ease","keyed up"] },
+
+  { word:"on the basis of", pron:"온 더 베이시스 오브", pos:"phr", level:"B2", meanings:["~을 기반으로","~에 근거하여"],
+    syn:["grounded on","going by","resting upon"] },
+
+  /* 승격 33 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
+  { word:"on the contrary", pron:"온 더 칸트레리", pos:"phr", level:"B2", meanings:["그와 반대로"],
+    syn:["quite the opposite","far from it","instead of that"] },
+
+  { word:"on the edge of", pron:"온 디 에지 오브", pos:"phr", level:"C1", meanings:["막 ~하려는 참에"],
+    syn:["about to","on the point of","just short of"] },
+
+  /* 승격 34 — 사전 표현 '반면에, 한편' 을 글자까지 지켰다(by contrast, B).
+     원본의 '다른 관점에서' 대신 사전 쪽을 남겼다. */
+  { word:"on the other hand", pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
+    syn:["by contrast","then again","from another view"] },
+
+  /* 원본은 'on the tip of my tongue' 이었다. 저장소의 구 표제어는 사람을
+     가리키지 않고 one's 를 쓴다 — be beyond one's control · clear one's throat ·
+     for one's sake · lose one's temper 가 그렇다. 관례에 맞춰 바꿨다.
+     25자로 기존 최장(23자) 을 넘지만 match-label-audit 이 통과했다. */
+  { word:"on the tip of one's tongue", pron:"온 더 팁 오브 원스 텅", pos:"phr", level:"C1",
+    meanings:["생각이 날 듯 말 듯하다"],
+    syn:["almost recalled","nearly remembered","just out of reach"] },
+
+  { word:"on the verge of", pron:"온 더 버지 오브", pos:"phr", level:"C1", meanings:["~의 직전에"],
+    syn:["right before","close to the start of","at the brink of"] },
+
+  /* 원본은 '완전히, 최종적으로' 였다. '완전히' 는 altogether(완전히, 전적으로, A) 의
+     첫 뜻과 같아서 순서를 바꾸고 '단번에' 를 넣었다. */
+  { word:"once and for all", pron:"원스 앤드 포 올", pos:"phr", level:"B2", meanings:["최종적으로","단번에"],
+    syn:["for good","conclusively","settled for ever"] },
+
+  { word:"one by one", pron:"원 바이 원", pos:"phr", level:"B1", meanings:["차례로"],
+    syn:["in turn","singly","one after another"] },
+
+  /* 승격 35 — 사전 표현 '일방적인, 편파적인' 을 글자까지 지켰다.
+     원본은 순서가 '편파적인, 일방적인' 이었지만 biased(B)·mutual(ant, M) 두 곳을
+     보존하려고 사전 쪽을 남겼다. */
+  { word:"one-sided", pron:"원 사이디드", pos:"adj", level:"B2", meanings:["일방적인","편파적인"],
+    syn:["biased","slanted","unfair to one side"], ant:["even-handed"],
+    ex:[{ s:"The match was {{}} from the first minute.", f:"one-sided", ko:"그 경기는 첫 분부터 일방적이었다." }] },
+
+  { word:"one-size-fits-all", pron:"원 사이즈 핏츠 올", pos:"adj", level:"C1", meanings:["두루 적용되는"],
+    syn:["uniform for everyone","standard for all cases","applied without exception"],
+    ex:[{ s:"A {{}} rule rarely suits every school.", f:"one-size-fits-all", ko:"두루 적용되는 규칙이 모든 학교에 맞는 일은 드물다." }] },
+
+  /* 승격 36 — 사전 표현 '진행 중인, 계속되는' 을 글자까지 지켰다
+     (continuous, C · in progress, I). in progress 와 첫 뜻이 같지만 서로 유의어다. */
+  { word:"ongoing", pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],
+    syn:["continuous","still under way","unfinished"], ant:["completed"],
+    ex:[{ s:"Repairs to the bridge are {{}}.", f:"ongoing", ko:"그 다리 보수는 진행 중이다." }] },
+
+  /* 승격 37 — 사전 표현 '구경꾼, 방관자' 를 글자까지 지켰다(bystander, B).
+     원본은 순서가 '방관자, 구경꾼' 이었지만 사전 쪽을 남겼다. */
+  { word:"onlooker", pron:"온루커", pos:"n", level:"B2", meanings:["구경꾼","방관자"],
+    syn:["bystander","watcher","person looking on"],
+    ex:[{ s:"An {{}} called the fire brigade.", f:"onlooker", ko:"한 구경꾼이 소방대를 불렀다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "abide by": "~을 지키다",
+  "about to": "이제 곧 ~할",
+  "almost recalled": "거의 떠오른",
+  "applied without exception": "예외 없이 적용되는",
+  "as a representative of": "~의 대표로서",
   "astronomy lab": "천문 연구실",
+  "at the brink of": "~의 문턱에서",
   "attacking": "몰아붙이는",
+  "auspicious": "좋은 일을 알리는",
   "balance out": "서로 맞춰 없애다",
   "betting ratio": "도박에서 매기는 비율",
   "bind by duty": "본분으로 묶다",
   "binding vow": "묶어 두는 다짐",
   "block up": "틀어막다",
+  "boding ill": "나쁜 일을 알리는",
   "breach of law": "법을 어김",
   "cancel out": "서로 지워 버리다",
   "careful noting": "꼼꼼히 적어 둠",
   "carrying far too much fat": "지방이 너무 많은",
   "chances": "될 성",
+  "close to the start of": "~이 시작될 즈음에",
   "close watching": "가까이 지켜봄",
   "come by": "어렵게 구하다",
+  "completed": "다 끝난",
+  "conclusively": "결말이 나게",
   "corpulence": "살집이 두둑함",
   "corpulent": "살집이 두둑한",
   "counter-argument": "맞서 내는 주장",
   "doing as told": "말하는 대로 하는",
+  "drop from a list": "목록에서 빼다",
   "dutiful": "본분을 다하는",
   "erase all trace of": "~의 흔적을 다 지우다",
   "excess body fat": "넘치는 몸의 지방",
   "extreme overweight": "심한 과체중",
   "fact-based": "사실에 바탕한",
+  "far from it": "그렇기는커녕",
   "follow orders": "명령을 좇다",
+  "for good": "아주 영영",
   "free of opinion": "의견이 섞이지 않은",
+  "from another view": "다른 쪽에서 보면",
   "get hold of": "손에 넣다",
   "give offence to": "~에게 언짢음을 주다",
+  "going by": "~을 따라 판단하여",
   "grossly overweight": "지나치게 체중이 많은",
+  "grounded on": "~에 발판을 둔",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
+  "healing cream": "상처에 바르는 크림",
   "hide from view": "보이지 않게 가리다",
   "hold by force": "힘으로 붙들다",
   "hold out": "내밀어 주다",
   "hurdle": "넘어야 할 벽",
   "hurt the feelings of": "~의 마음을 아프게 하다",
+  "ill at ease": "마음이 편치 않은",
+  "in place of": "~을 갈음하여",
+  "in the world": "세상에",
   "infrequent": "드문드문한",
+  "instead of that": "그 대신에",
   "insulting": "모욕하는",
+  "jumpy": "움찔거리는",
+  "just out of reach": "손에 닿을 듯 안 닿는",
+  "just short of": "~에 조금 못 미쳐",
   "keep to": "~에서 벗어나지 않다",
   "keep to the rules": "규칙을 지키다",
+  "kept off the books": "기록에 남기지 않는",
+  "keyed up": "바짝 긴장한",
   "leave no choice for": "~에게 선택을 남기지 않다",
   "left behind by progress": "발전에 뒤처진",
   "line of work": "일하는 분야",
   "little known": "거의 알려지지 않은",
   "make duty-bound": "할 수밖에 없게 만들다",
   "make unclear": "불분명하게 만들다",
+  "medicated balm": "약을 넣은 바름약",
   "moment": "그 순간",
   "move into": "들어가 자리 잡다",
+  "nearly remembered": "떠오를 듯한",
   "no longer in use": "더 이상 쓰이지 않는",
+  "not for publication": "실으면 안 되는",
   "not optional": "고를 수 없는",
   "now-and-then": "이따금 있는",
   "object to": "~에 반대하다",
+  "of all things": "하필이면",
   "on the facts alone": "사실만을 근거로",
+  "on the point of": "~하려는 순간에",
+  "on-the-record": "공개를 전제로 한",
+  "one after another": "잇달아",
   "one such case": "그런 한 가지",
   "one such instance": "그런 한 차례",
   "out of the ordinary": "보통과 다른",
   "particular time": "특정한 시점",
+  "person looking on": "옆에서 보는 사람",
   "physical body": "형체를 가진 몸",
   "place under obligation": "의무 아래 두다",
   "plain to see": "보면 바로 아는",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
+  "progeny": "낳은 자손",
   "put on the table": "논의 자리에 내놓다",
+  "quite the opposite": "오히려 거꾸로",
+  "resting upon": "~에 기대어",
+  "right before": "바로 앞에",
+  "said unofficially": "비공식으로 한 말의",
+  "salve": "바르는 약",
   "sanctioned": "허락을 받은",
   "set in one's ways": "제 방식만 지키는",
+  "settled for ever": "다시 뒤집히지 않게",
+  "singly": "하나씩",
+  "sinister": "음험한",
+  "skip over": "건너뛰다",
   "sky-viewing post": "하늘을 보는 자리",
+  "slanted": "한쪽으로 기울어진",
   "solemn promise": "엄숙한 약속",
   "solid thing": "단단한 것",
+  "speaking for": "~을 대변하여",
   "spoken remark": "입으로 낸 말",
   "stand in the way of": "~의 앞을 가로막다",
+  "standard for all cases": "모든 경우에 같은",
   "star-watching station": "별을 살피는 시설",
+  "still under way": "아직 끝나지 않은",
   "superseded": "다른 것에 밀려난",
   "sworn word": "맹세한 말",
   "take place": "벌어지다",
   "taking up of space": "자리를 차지함",
   "tenancy": "빌려 씀",
+  "then again": "그러고 보면 또",
   "thing in the way": "길을 막는 것",
   "typical": "으레 그런",
   "under way at present": "지금 진행 중인",
+  "unfair to one side": "한편에 불리한",
+  "unfinished": "마무리되지 않은",
+  "uniform for everyone": "모두에게 똑같은",
   "unlawful act": "법에 어긋난 짓",
   "unofficial": "공식이 아닌",
   "use of a place": "장소를 씀",
   "voiced disagreement": "소리 내어 밝힌 반대",
   "voluntary": "스스로 하는",
+  "warning of trouble": "말썽을 알리는",
   "watch closely": "가까이 지켜보다",
+  "watcher": "지켜보는 이",
+  "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
   "without bias": "치우침 없이",
+  "young of a creature": "짐승의 새끼"
 });
