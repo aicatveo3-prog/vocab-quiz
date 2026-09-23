@@ -28,12 +28,13 @@ function load(rel) {
   return true;
 }
 ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js',
- 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js',
+ 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js',
  'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
 
 var SETS = [['A', window.VOCAB], ['B', window.VOCAB_B], ['C', window.VOCAB_C],
             ['D', window.VOCAB_D], ['E', window.VOCAB_E], ['F', window.VOCAB_F],
-            ['G', window.VOCAB_G]];
+            ['G', window.VOCAB_G],
+            ['H', window.VOCAB_H]];
 var ALL = [];
 SETS.forEach(function (s) { (s[1] || []).forEach(function (w) {
   w._set = s[0]; ALL.push(w);

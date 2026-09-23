@@ -1,7 +1,7 @@
 /**
- * tools/g-plan.js — G 세트 작업 규모 산정
+ * tools/h-plan.js — H 세트 작업 규모 산정
  *
- * f-plan.js 가 답한 질문에 ⑨⑩ 을 더한다.
+ * h-plan.js 가 답한 질문에 ⑨⑩ 을 더한다.
  *   ① 몇 단어인가, 몇 챕터인가, 몇 차에 나눠야 하나
  *   ② 이미 있는 표제어와 겹치는 것이 있나
  *   ③ 이미 GLOSS·PRON 에 있는 것은 몇 개인가 (표제어가 되면 사전에서 지워야 한다)
@@ -25,12 +25,12 @@
  *   grieve over, grumble about …). gov 는 문항을 만들지 않고 어법 한 줄과
  *   짝 맞추기 카드 라벨에만 쓰이므로, 후보를 세어 두면 노출량을 가늠할 수 있다.
  *
- * f-plan.js 와 달라진 것 — 원본을 탭으로 가른다.
- *   f-source.txt 는 '영문 공백 한글' 이어서 'furnish A with B' 처럼 뜻이
+ * h-plan.js 와 달라진 것 — 원본을 탭으로 가른다.
+ *   h-source.txt 는 '영문 공백 한글' 이어서 'furnish A with B' 처럼 뜻이
  *   영문 대문자로 시작하면 경계를 기계가 못 찾았고, EXPLICIT 배열에 손으로
- *   적어 두어야 했다. g-source.txt 는 탭으로 갈라 그 우회가 아예 없다.
+ *   적어 두어야 했다. h-source.txt 는 탭으로 갈라 그 우회가 아예 없다.
  *
- * 실행: env -u NODE_OPTIONS node tools/g-plan.js
+ * 실행: env -u NODE_OPTIONS node tools/h-plan.js
  */
 'use strict';
 
@@ -54,7 +54,7 @@ var PRON = global.window.PRON || {};
 
 var SETS = [
   ['A', global.window.VOCAB], ['B', global.window.VOCAB_B], ['C', global.window.VOCAB_C],
-  ['D', global.window.VOCAB_D], ['E', global.window.VOCAB_E], ['F', global.window.VOCAB_F],
+  ['D', global.window.VOCAB_D], ['E', global.window.VOCAB_E], ['F', global.window.VOCAB_G],
   ['G', global.window.VOCAB_G || []]
 ];
 var EXISTING = [];
@@ -66,7 +66,7 @@ SETS.forEach(function (s) {
 });
 
 /* ── 원본 파싱 (탭 구분) ───────────────────── */
-var items = fs.readFileSync(path.join(__dirname, 'g-source.txt'), 'utf8')
+var items = fs.readFileSync(path.join(__dirname, 'h-source.txt'), 'utf8')
   .split('\n')
   .filter(function (l) { return l.trim() && l.charAt(0) !== '#'; })
   .map(function (l) {
@@ -87,7 +87,7 @@ var CH = 20;
 
 /* ── ① 규모 ────────────────────────────────── */
 console.log('── ① 규모 ─────────────────────────────────');
-console.log('G 단어        : ' + items.length);
+console.log('H 단어        : ' + items.length);
 console.log('챕터          : ' + Math.ceil(items.length / CH) + '개 (' +
   Math.floor(items.length / CH) + '×' + CH +
   (items.length % CH ? ' + ' + (items.length % CH) : '') + ')');
@@ -120,13 +120,13 @@ console.log('PRON  : ' + inPron.length + '개 → ' +
 
 /* ── ④ 새로 쓸 사전 항목 추정 ──────────────── */
 console.log('\n── ④ 새로 쓸 사전 항목 추정 ────────────────');
-var fSet = global.window.VOCAB_F || [];
+var gSet = global.window.VOCAB_G || [];
 var fSyn = 0, fEx = 0;
-fSet.forEach(function (w) { fSyn += (w.syn || []).length; fEx += (w.ex || []).length; });
-if (fSet.length) {
-  var r = items.length / fSet.length;
-  console.log('F 실적  : ' + fSet.length + '단어 · 유의어 ' + fSyn + ' · 예문 ' + fEx);
-  console.log('G 예상  : 유의어 ' + Math.round(fSyn * r) + ' · 예문 ' + Math.round(fEx * r));
+gSet.forEach(function (w) { fSyn += (w.syn || []).length; fEx += (w.ex || []).length; });
+if (gSet.length) {
+  var r = items.length / gSet.length;
+  console.log('G(기준) 실적  : ' + gSet.length + '단어 · 유의어 ' + fSyn + ' · 예문 ' + fEx);
+  console.log('H 예상  : 유의어 ' + Math.round(fSyn * r) + ' · 예문 ' + Math.round(fEx * r));
   console.log('  그중 사전 신규 등록 ' + Math.round(fSyn * r * 0.55) + '~' +
     Math.round(fSyn * r * 0.65) + '개 (F 실측 55~65%)');
 }

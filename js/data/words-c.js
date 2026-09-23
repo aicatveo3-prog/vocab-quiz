@@ -1986,7 +1986,6 @@ Object.assign(window.GLOSS, {
   "graceful":"우아한, 매끄러운",
   "guess":"짐작하다, 추측",
   "guesswork":"어림짐작",
-  "harmless":"해롭지 않은",
   "harmony":"조화, 화합",
   "herbivorous":"초식(성)의",
   "hesitation":"주저, 망설임",

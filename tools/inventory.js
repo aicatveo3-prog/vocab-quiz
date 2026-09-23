@@ -18,7 +18,7 @@ global.window.Store = {
 var fs = require('fs');
 var path = require('path');
 var ROOT = path.join(__dirname, '..');
-['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js',
+['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js',
   'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js', 'js/conquer.js'].forEach(function (rel) {
     new Function(fs.readFileSync(path.join(ROOT, rel), 'utf8')).call(global);
   });
@@ -46,7 +46,7 @@ console.log('── 세트별 ────────────────�
 Conquer.SETS.forEach(function (s) {
   var ws = s.words;
   console.log(s.id + ' : ' + String(ws.length).padStart(4) + '단어  ' +
-    String(Math.ceil(ws.length / Conquer.CHAPTER_SIZE)).padStart(3) + '챕터  |  ' +
+    String(Conquer.buildChapters({words:ws}).length).padStart(3) + '챕터  |  ' +
     fmt(tally(ws, function (w) { return w.level; })));
 });
 console.log('');
