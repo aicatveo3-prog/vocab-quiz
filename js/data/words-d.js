@@ -1523,7 +1523,6 @@ Object.assign(window.GLOSS, {
   "hydrate":"수분을 공급하다",
   "imperfection":"결함, 불완전함",
   "improve":"개선하다, 향상되다",
-  "improvement":"개선, 향상",
   "inadequate":"부적절한, 불충분한",
   "incoherent":"일관성 없는, 앞뒤가 안 맞는",
   "infer":"추론하다, 유추하다",
