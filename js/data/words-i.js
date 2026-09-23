@@ -1981,7 +1981,6 @@ Object.assign(window.GLOSS, {
   "jab": "예방주사",
   "jail": "감옥에 넣다",
   "junction": "접합점",
-  "knowledge": "지식",
   "latency": "잠재 상태",
   "lawful": "합법적인",
   "leading player": "주요 인물",
