@@ -1452,7 +1452,6 @@ Object.assign(window.GLOSS, {
   "movability": "움직일 수 있음",
   "movable": "옮길 수 있는",
   "muster": "소집하다",
-  "nasty": "고약한",
   "naughtiness": "장난기",
   "navigate": "길을 찾아 나아가다",
   "neat": "깔끔한",

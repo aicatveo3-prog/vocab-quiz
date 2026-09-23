@@ -1329,7 +1329,7 @@ window.VOCAB_C = [
     ex:[{ s:"A tight budget will {{}} the whole design.", f:"constrain", ko:"빡빡한 예산이 설계 전체를 제약할 것이다." }] },
 
   { word:"constrict", pron:"컨스트릭트", pos:"v", level:"C2", meanings:["수축시키다","조이다"],
-    syn:["tighten","narrow","squeeze"], ant:["dilate"],
+    syn:["tighten","narrow down","squeeze"], ant:["dilate"],
     ex:[{ s:"Cold air can {{}} the airways.", f:"constrict", ko:"찬 공기는 기도를 수축시킬 수 있다." }] },
 
   { word:"construct", pron:"컨스트럭트", pos:"v", level:"B1", meanings:["건설하다","만들다"],
@@ -2006,7 +2006,6 @@ Object.assign(window.GLOSS, {
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
-  "naive":"순진한, 어수룩한",
   "noble":"귀족, 고귀한",
   "nonprofit":"비영리의",
   "novel":"새로운, 신기한",

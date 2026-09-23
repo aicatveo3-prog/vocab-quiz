@@ -53,8 +53,160 @@
  */
 
 window.VOCAB_N = [
+  { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
+    syn:["pester","keep on at","harp on"],
+    ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },
+
+  /* 승격 ① — 사전 표현 '순진한, 어수룩한' 을 글자까지 지켰다.
+     cunning(ant, C) 이 반의어로 쓰는 자리라 화면이 바뀌지 않는다. */
+  { word:"naive", pron:"나이브", pos:"adj", level:"B2", meanings:["순진한","어수룩한"],
+    syn:["innocent","unworldly","gullible"], ant:["cunning"],
+    ex:[{ s:"It was {{}} to hand the key to a stranger.", f:"naive", ko:"낯선 사람에게 열쇠를 건넨 것은 순진했다." }] },
+
+  { word:"namely", pron:"네임리", pos:"adv", level:"B2", meanings:["다시 말해","즉"],
+    syn:["that is to say","in other words","specifically"],
+    ex:[{ s:"Only one student was absent, {{}} the class monitor.", f:"namely", ko:"한 학생만 결석했는데, 즉 반장이었다." }] },
+
+  /* 승격 ② — 사전이 '낮잠, 잠깐 잠' 으로 명사였는데 doze(D) 는 동사 '졸다' 의
+     유의어로 쓰고 있었다. 이미 어긋나 있던 자리다. 수능에서 더 흔한 명사로
+     세우고 doze 쪽 유의어를 'take a nap' 으로 바꿨다(words-d.js). */
+  { word:"nap", pron:"냅", pos:"n", level:"B1", meanings:["낮잠"],
+    syn:["short sleep","forty winks","brief rest"],
+    ex:[{ s:"He took a quick {{}} after lunch.", f:"nap", ko:"그는 점심을 먹고 잠깐 낮잠을 잤다." }] },
+
+  /* 승격 ③ — 사전은 '해설, 서술' 이었다. 순서를 뒤집어 '서술' 을 앞세웠다.
+     commentary(C) 의 첫 뜻이 '해설' 이라 그쪽과 첫 뜻을 갈라 두는 편이 낫다. */
+  { word:"narration", pron:"내레이션", pos:"n", level:"B2", meanings:["서술","해설"],
+    syn:["commentary","voice-over","recounting"],
+    ex:[{ s:"The film's {{}} explains each step of the process.", f:"narration", ko:"그 영화의 서술은 과정의 각 단계를 설명한다." }] },
+
+  { word:"narrative", pron:"내러티브", pos:"n", level:"B2", meanings:["이야기","서사"],
+    /* tale 은 사전 뜻이 story 와 똑같은 '이야기' 라 검사가 잡았다 — chronicle 로 바꿨다 */
+    syn:["story","chronicle","storyline"],
+    ex:[{ s:"The {{}} follows three families over a century.", f:"narrative", ko:"그 이야기는 한 세기에 걸쳐 세 가족을 따라간다." }] },
+
+  /* 승격 ④ — 사전이 '좁히다; 좁은' 으로 동사와 형용사가 섞여 있었다.
+     constrict(C) 는 동사 갈래를, limited(L) 는 형용사 갈래를 쓰고 있었다.
+     원본이 형용사여서 형용사로 세우고, constrict 쪽 유의어를 이 세트의
+     'narrow down' 으로 바꿨다(words-c.js) — 동사 자리에 동사구가 온다. */
+  { word:"narrow", pron:"내로", pos:"adj", level:"B1", meanings:["폭이 좁은","빠듯한"],
+    syn:["slim","tight","cramped"], ant:["wide"],
+    ex:[{ s:"The path grew too {{}} for the cart to pass.", f:"narrow", ko:"그 길은 수레가 지나가기에 너무 폭이 좁아졌다." }] },
+
+  { word:"narrow down", pron:"내로 다운", pos:"phr", level:"B2", meanings:["좁히다","줄이다"],
+    syn:["whittle down","cut down","focus in on"] },
+
+  { word:"narrow-minded", pron:"내로 마인디드", pos:"adj", level:"B2", meanings:["속 좁은","옹졸한"],
+    syn:["bigoted","intolerant","small-minded"], ant:["broad-minded"],
+    ex:[{ s:"His {{}} remarks upset the whole room.", f:"narrow-minded", ko:"그의 속 좁은 말이 방 안 사람들 모두를 상하게 했다." }] },
+
+  /* 승격 ⑤ — ★원본의 뜻이 틀렸다. '풀로 덮인, 무성한' 은 grassy 의 뜻이다.
+     사전값 '고약한' 을 첫 자리에 두고 '못된' 을 붙였다. M 세트 malicious 가
+     유의어로 쓰는 자리다. */
+  { word:"nasty", pron:"내스티", pos:"adj", level:"B2", meanings:["고약한","못된"],
+    syn:["spiteful","mean-spirited","foul"], ant:["kindly"],
+    ex:[{ s:"He left a {{}} note on her desk.", f:"nasty", ko:"그는 그녀의 책상에 고약한 쪽지를 남겼다." }] },
+
+  /* 승격 ⑥ — 사전이 '토착의; 원주민' 으로 형용사와 명사가 섞여 있었다.
+     참조 세 곳(aboriginal·domestic·indigenous) 이 모두 형용사 갈래를 쓴다.
+     원본대로 형용사로 세웠다. */
+  { word:"native", pron:"네이티브", pos:"adj", level:"B1", meanings:["태어난 곳의","원주민의"],
+    syn:["indigenous","homegrown","local-born"], ant:["foreign-born"],
+    ex:[{ s:"She returned to her {{}} village after ten years.", f:"native", ko:"그녀는 십 년 만에 태어난 곳의 마을로 돌아갔다." }] },
+
+  { word:"naturalize", pron:"내처럴라이즈", pos:"v", level:"C1", meanings:["귀화시키다","동식물을 들이다"],
+    syn:["grant citizenship to","admit as a citizen","bring in a species"],
+    ex:[{ s:"The country agreed to {{}} the refugees.", f:"naturalize", ko:"그 나라는 난민들을 귀화시키기로 했다." }] },
+
+  /* 승격 ⑦ — 사전은 '본질, 성질' 이었다. 원본의 '천성' 을 앞세웠다 —
+     character(C) 가 유의어로 쓰는 자리여서 그쪽 화면 글자가 함께 바뀐다.
+     '종류; 자연' 갈래는 버렸다(한 표제어에 세 갈래를 담지 않는다). */
+  { word:"nature", pron:"네이처", pos:"n", level:"B1", meanings:["천성","본질"],
+    syn:["disposition","temperament","inherent quality"],
+    ex:[{ s:"It is not in his {{}} to hold a grudge.", f:"nature", ko:"원한을 품는 것은 그의 천성이 아니다." }] },
+
+  { word:"naughty", pron:"노티", pos:"adj", level:"B1", meanings:["버릇없는","개구쟁이인"],
+    syn:["mischievous","disobedient","badly behaved"], ant:["well-behaved"],
+    ex:[{ s:"The {{}} puppy chewed through the cable.", f:"naughty", ko:"버릇없는 강아지가 전선을 물어 끊었다." }] },
+
+  { word:"naval", pron:"네이벌", pos:"adj", level:"B2", meanings:["해군의"],
+    syn:["maritime military","seagoing","fleet-related"],
+    ex:[{ s:"The town grew around a {{}} base.", f:"naval", ko:"그 도시는 해군 기지를 중심으로 자라났다." }] },
+
+  { word:"navigation", pron:"내버게이션", pos:"n", level:"B2", meanings:["항해","길 찾기"],
+    syn:["sailing","wayfinding","course-plotting"],
+    ex:[{ s:"Early sailors used the stars for {{}}.", f:"navigation", ko:"초기 뱃사람들은 항해에 별을 썼다." }] },
+
+  { word:"necessarily", pron:"네서세럴리", pos:"adv", level:"B2", meanings:["필연적으로","반드시"],
+    syn:["inevitably","of necessity","as a matter of course"],
+    ex:[{ s:"A high price does not {{}} mean high quality.", f:"necessarily", ko:"높은 값이 반드시 높은 품질을 뜻하지는 않는다." }] },
+
+  { word:"necessary", pron:"네서세리", pos:"adj", level:"B1", meanings:["필요한","없어서는 안 될"],
+    syn:["required","indispensable","called-for"], ant:["dispensable"],
+    ex:[{ s:"Bring only what is {{}} for the trip.", f:"necessary", ko:"여행에 필요한 것만 가져오세요." }] },
+
+  /* 승격 ⑧ — 사전 표현 '필요로 하다' 를 글자까지 지켰다.
+     call for(C)·involve(I) 두 곳의 화면이 바뀌지 않는다. */
+  { word:"necessitate", pron:"너세서테이트", pos:"v", level:"C1", meanings:["필요로 하다"],
+    syn:["call for","require","make unavoidable"],
+    ex:[{ s:"Heavy rain may {{}} a change of plan.", f:"necessitate", ko:"폭우는 계획 변경을 필요로 할 수 있다." }] },
+
+  { word:"necessity", pron:"너세서티", pos:"n", level:"B2", meanings:["필요성","필수품"],
+    syn:["need","requirement","must-have"], ant:["luxury"],
+    ex:[{ s:"Clean water is a basic {{}}, not a luxury.", f:"necessity", ko:"깨끗한 물은 사치가 아니라 기본 필수품이다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "admit as a citizen": "시민으로 받아들이다",
+  "as a matter of course": "당연한 일로",
+  "badly behaved": "행실이 나쁜",
+  "bigoted": "편견에 찬",
+  "brief rest": "잠깐의 휴식",
+  "bring in a species": "종을 들여오다",
+  "called-for": "꼭 있어야 하는",
+  "course-plotting": "항로를 그림",
+  "cramped": "옹색한",
+  "cut down": "개수를 줄이다",
+  "disobedient": "말을 안 듣는",
+  "disposition": "타고난 성향",
+  "fleet-related": "함대에 관한",
+  "focus in on": "~로 초점을 모으다",
+  "foreign-born": "외국에서 태어난",
+  "forty winks": "눈 좀 붙이기",
+  "foul": "형편없이 나쁜",
+  "grant citizenship to": "~에게 시민권을 주다",
+  "gullible": "잘 속아 넘어가는",
+  "homegrown": "제 땅에서 난",
+  "in other words": "달리 말하면",
+  "inevitably": "어쩔 수 없이",
+  "inherent quality": "본디 지닌 성질",
+  "intolerant": "너그럽지 못한",
+  "keep on at": "계속 다그치다",
+  "local-born": "그 지역에서 태어난",
+  "make unavoidable": "피할 수 없게 만들다",
+  "maritime military": "바다 군사의",
+  "mean-spirited": "심보가 나쁜",
+  "mischievous": "장난이 심한",
+  "must-have": "꼭 있어야 할 것",
+  "need": "필요, 요구",
+  "of necessity": "필요에 따라",
+  "pester": "귀찮게 하다",
+  "recounting": "이야기해 줌",
+  "sailing": "배를 몰기",
+  "seagoing": "바다를 다니는",
+  "short sleep": "짧게 자는 잠",
+  "slim": "가느다란",
+  "small-minded": "생각이 좁은",
+  "storyline": "줄거리",
+  "take a nap": "낮잠을 자다",
+  "temperament": "기질",
+  "that is to say": "말하자면",
+  "tight": "여유가 없는",
+  "unworldly": "세상을 모르는",
+  "voice-over": "화면 밖 목소리",
+  "wayfinding": "길을 찾아냄",
+  "well-behaved": "행동이 바른",
+  "whittle down": "조금씩 줄이다",
+  "wide": "폭이 넓은"
 });

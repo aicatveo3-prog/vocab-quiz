@@ -1286,7 +1286,7 @@ window.VOCAB_D = [
     ex:[{ s:"The industry has never fully recovered from the {{}}.", f:"downturn", ko:"그 산업은 침체에서 완전히 회복하지 못했다." }] },
 
   { word:"doze", pron:"도즈", pos:"v", level:"B2", meanings:["졸다","선잠 자다"],
-    syn:["nap","snooze","drowse"],
+    syn:["take a nap","snooze","drowse"],
     ex:[{ s:"He would often {{}} in the armchair after lunch.", f:"doze", ko:"그는 점심 후 안락의자에서 자주 졸았다." }] },
 
   /* dozen — 대체할 낱말이 없어 syn 을 비워 둔다 */
@@ -1919,7 +1919,6 @@ Object.assign(window.GLOSS, {
   "look in":"잠깐 들여다보다",
   "markedly":"현저히, 눈에 띄게",
   "mist":"안개, 옅은 안개비",
-  "nap":"낮잠, 잠깐 잠",
   "outflow":"유출, 흘러 나감",
   "overpower":"압도하다, 제압하다",
   "overstate":"과장해 말하다",
