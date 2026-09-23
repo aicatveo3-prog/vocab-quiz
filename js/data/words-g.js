@@ -738,7 +738,6 @@ Object.assign(window.GLOSS, {
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
   "mesh":"그물망",
-  "microbe":"미생물",
   "mill":"제분하다",
   "moan":"앓는 소리를 내다",
   "motion":"몸짓으로 신호하다",

@@ -611,7 +611,109 @@ window.VOCAB_M = [
 
   { word:"metabolic", pron:"메터발릭", pos:"adj", level:"C1", meanings:["신진대사의"],
     syn:["biochemical","energy-processing","physiological"],
-    ex:[{ s:"Cold weather raises the body's {{}} rate.", f:"metabolic", ko:"추운 날씨는 신체의 신진대사율을 높인다." }] }
+    ex:[{ s:"Cold weather raises the body's {{}} rate.", f:"metabolic", ko:"추운 날씨는 신체의 신진대사율을 높인다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────── */
+
+  /* metabolic 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"metabolism", pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
+    syn:["energy turnover","body chemistry","metabolic rate"],
+    ex:[{ s:"Exercise speeds up the body's {{}}.", f:"metabolism", ko:"운동은 신체의 신진대사를 빠르게 한다." }] },
+
+  /* 승격 ① — GLOSS '은유, 비유' 를 글자까지 지켰다. I 세트 imagery 가 참조하므로
+     원본의 '상징' 대신 사전 쪽 '비유' 를 남겼다. */
+  { word:"metaphor", pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
+    syn:["imagery","figure of speech","symbol"],
+    ex:[{ s:"The poem uses the sea as a {{}} for memory.", f:"metaphor", ko:"그 시는 바다를 기억의 은유로 쓴다." }] },
+
+  /* 승격 ① — GLOSS '유성' 을 첫 자리에 지켰다. comet(syn) 이 참조한다.
+     원본의 '운석' 을 둘째 자리에 붙였다. */
+  { word:"meteor", pron:"미티어", pos:"n", level:"B2", meanings:["유성","운석"],
+    syn:["comet","shooting star","falling star"],
+    ex:[{ s:"A bright {{}} streaked across the night sky.", f:"meteor", ko:"밝은 유성이 밤하늘을 가로질러 갔다." }] },
+
+  { word:"meteorological", pron:"미티어럴라지컬", pos:"adj", level:"C1", meanings:["기상의","기상학의"],
+    syn:["weather-related","atmospheric","climatic"],
+    ex:[{ s:"The flight was delayed by {{}} conditions.", f:"meteorological", ko:"그 항공편은 기상 조건 때문에 지연되었다." }] },
+
+  { word:"meteorologist", pron:"미티어랄러지스트", pos:"n", level:"C1", meanings:["기상학자"],
+    syn:["weather scientist","forecaster","climatologist"],
+    ex:[{ s:"The {{}} warned of heavy snow by evening.", f:"meteorologist", ko:"그 기상학자는 저녁까지 폭설을 경고했다." }] },
+
+  { word:"meteorology", pron:"미티어랄러지", pos:"n", level:"C1", meanings:["기상학"],
+    syn:["weather science","atmospheric science","climate study"],
+    ex:[{ s:"She switched from physics to {{}}.", f:"meteorology", ko:"그녀는 물리학에서 기상학으로 전공을 바꿨다." }] },
+
+  /* 승격 ① — GLOSS '방법, 수법' 이 원본과 글자까지 같다. 참조는 없다.
+     4차에서 means 의 유의어로 쓰려고 PRON 을 임시로 넣어 두었는데, 여기서
+     표제어가 되면서 그 항목이 지워지고 이 pron 필드가 대신한다.
+     챕터 2의 manner('방식')·챕터 4의 means('수단')와 첫 뜻이 갈린다. */
+  { word:"method", pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
+    syn:["approach","technique","procedure"],
+    ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
+
+  /* method 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"methodological", pron:"메써덜라지컬", pos:"adj", level:"C2", meanings:["방법론의","방법론적인"],
+    syn:["procedural","systematic","structural"],
+    ex:[{ s:"The paper has a serious {{}} flaw.", f:"methodological", ko:"그 논문에는 심각한 방법론적 결함이 있다." }] },
+
+  { word:"meticulously", pron:"머티큘러슬리", pos:"adv", level:"C1", meanings:["꼼꼼하게","좀스럽게"],
+    syn:["painstakingly","scrupulously","with great care"],
+    ex:[{ s:"Every joint was {{}} sanded by hand.", f:"meticulously", ko:"모든 이음새가 손으로 꼼꼼하게 사포질되었다." }] },
+
+  { word:"metric", pron:"메트릭", pos:"adj", level:"B2", meanings:["미터법의"],
+    syn:["decimal","metre-based","standardized"],
+    ex:[{ s:"Most countries use the {{}} system.", f:"metric", ko:"대부분의 나라가 미터법 체계를 쓴다." }] },
+
+  { word:"metropolitan", pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
+    syn:["urban","city-wide","municipal"],
+    ex:[{ s:"The {{}} area holds nine million people.", f:"metropolitan", ko:"그 대도시권에는 900만 명이 산다." }] },
+
+  /* 승격 ① — GLOSS '미생물' 을 첫 자리에 지켰다. germ(syn) 이 참조한다.
+     원본의 '세균' 을 둘째 자리에 붙였다. */
+  { word:"microbe", pron:"마이크로브", pos:"n", level:"B2", meanings:["미생물","세균"],
+    syn:["germ","bacterium","micro-organism"],
+    ex:[{ s:"A single {{}} can multiply within hours.", f:"microbe", ko:"한 마리 미생물이 몇 시간 안에 증식할 수 있다." }] },
+
+  { word:"micronutrient", pron:"마이크로뉴트리언트", pos:"n", level:"C2", meanings:["미량 영양소"],
+    syn:["trace nutrient","vitamin or mineral","trace element"],
+    ex:[{ s:"Leafy greens supply several key {{}}.", f:"micronutrients", ko:"잎채소는 몇 가지 핵심 미량 영양소를 공급한다." }] },
+
+  { word:"midwife", pron:"미드와이프", pos:"n", level:"B2", meanings:["산파","조산사"],
+    syn:["birth attendant","obstetric nurse","delivery nurse"],
+    ex:[{ s:"A {{}} stayed with her through the night.", f:"midwife", ko:"산파가 밤새 그녀와 함께 있었다." }] },
+
+  { word:"mighty", pron:"마이티", pos:"adj", level:"B2", meanings:["강력한","위대한"],
+    syn:["powerful","formidable","potent"], ant:["feeble"],
+    ex:[{ s:"A {{}} river cuts through the canyon.", f:"mighty", ko:"강력한 강이 그 협곡을 가른다." }] },
+
+  /* 승격 ① — GLOSS '중대한 사건, 분기점' 을 글자까지 지켰다. epoch(syn) 이
+     참조하므로 원본의 '중요한 단계, 획기적인 사건' 대신 사전 쪽을 남겼다. */
+  { word:"milestone", pron:"마일스톤", pos:"n", level:"B2", meanings:["중대한 사건","분기점"],
+    syn:["epoch","turning point","landmark"],
+    ex:[{ s:"The treaty was a {{}} in the peace process.", f:"milestone", ko:"그 조약은 평화 과정의 중대한 사건이었다." }] },
+
+  { word:"milk", pron:"밀크", pos:"v", level:"B2", meanings:["젖을 짜다","최대한 뽑아내다"],
+    syn:["draw off","exploit","squeeze dry"],
+    ex:[{ s:"They still {{}} the cows by hand.", f:"milk", ko:"그들은 아직 손으로 소의 젖을 짠다." }] },
+
+  /* 원본 뜻 '천 년간의, 천년기의' 는 형용사로 적혀 있었지만 millennium 은 명사다
+     (형용사는 millennial). '천 년, 천년기' 로 고쳤다. */
+  { word:"millennium", pron:"멀레니엄", pos:"n", level:"C1", meanings:["천 년","천년기"],
+    syn:["thousand years","millennial period","ten centuries"],
+    ex:[{ s:"The cathedral has stood for almost a {{}}.", f:"millennium", ko:"그 대성당은 거의 천 년 동안 서 있었다." }] },
+
+  /* 승격 ① — GLOSS '흉내 내다, 모방하다' 를 글자까지 지켰다.
+     emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
+     원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
+     같아지는 것도 함께 피할 수 있다. */
+  { word:"mimic", pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+    syn:["emulate","imitate","impersonate"],
+    ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
+
+  { word:"mindful", pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
+    syn:["aware","heedful","attentive"], ant:["oblivious"],
+    ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -624,9 +726,14 @@ Object.assign(window.GLOSS, {
   "archaic": "옛 시대의",
   "arrive in time": "시간에 맞춰 닿다",
   "at the same time": "동시에",
+  "atmospheric": "대기의",
+  "atmospheric science": "대기 과학",
   "atone for": "~을 벌충하다",
+  "aware": "알고 있는",
   "be logical": "논리에 맞다",
   "biochemical": "생화학의",
+  "birth attendant": "출산을 돕는 사람",
+  "body chemistry": "체내 화학 작용",
   "bog": "늪지",
   "bone marrow": "뼈 속 골수",
   "book ahead": "미리 예약하다",
@@ -635,8 +742,12 @@ Object.assign(window.GLOSS, {
   "childbearing": "아이를 낳는",
   "childhood fever": "소아 발열병",
   "churn out": "쏟아 내다",
+  "city-wide": "도시 전역의",
   "classic": "고전적 명작",
   "clear a path for": "~을 위해 길을 트다",
+  "climate study": "기후 연구",
+  "climatic": "기후상의",
+  "climatologist": "기후학자",
   "clutter": "잡다하게 쌓인 것",
   "cluttered": "잡동사니로 찬",
   "coach": "지도해 주는 사람",
@@ -650,12 +761,19 @@ Object.assign(window.GLOSS, {
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
   "crowning work": "최고의 성취작",
+  "decimal": "십진법의",
+  "delivery nurse": "분만 담당 간호사",
   "disorderly": "어수선한",
+  "draw off": "빼내다",
   "drug treatment": "약물 요법",
+  "energy turnover": "에너지 순환량",
   "energy-processing": "에너지를 처리하는",
   "enrage": "분노하게 하다",
   "exasperate": "속을 뒤집어 놓다",
+  "falling star": "떨어지는 별",
   "fighting art": "싸움 기술",
+  "figure of speech": "비유적 표현",
+  "forecaster": "예보하는 사람",
   "forgiving": "너그럽게 용서하는",
   "foul-smelling": "역한 냄새의",
   "gain ground": "기반을 넓히다",
@@ -669,6 +787,7 @@ Object.assign(window.GLOSS, {
   "hand-operated": "손으로 조작하는",
   "hands-on": "직접 손을 쓰는",
   "heavy metal": "중금속",
+  "heedful": "주의를 기울이는",
   "hold water": "말이 성립하다",
   "honoring": "기려 받드는",
   "hulking": "덩치가 큰",
@@ -677,6 +796,7 @@ Object.assign(window.GLOSS, {
   "ill-natured": "성질이 나쁜",
   "ill-treat": "부당하게 대하다",
   "illusionist": "환술사",
+  "impersonate": "남을 흉내 내어 연기하다",
   "improvised": "즉석에서 만든",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
@@ -692,7 +812,11 @@ Object.assign(window.GLOSS, {
   "manufacture at scale": "규모를 갖춰 제조하다",
   "matrimonial": "혼인상의",
   "meet the standard of": "~의 기준을 채우다",
+  "metabolic rate": "대사율",
+  "metre-based": "미터를 기준으로 한",
+  "micro-organism": "미소 생물",
   "middle ground": "중간 지점",
+  "millennial period": "천년의 기간",
   "mindfulness": "마음을 살피는 일",
   "misconduct": "부정 행위",
   "mishandle": "잘못 다루다",
@@ -707,11 +831,14 @@ Object.assign(window.GLOSS, {
   "non-automatic": "자동이 아닌",
   "nothing more than": "~에 지나지 않는",
   "nurturing": "보살피는",
+  "oblivious": "까맣게 모르는",
   "obsession": "집착",
   "obstetric": "산과의",
+  "obstetric nurse": "산과 간호사",
   "old-world": "옛 정취의",
   "optimize": "최적화하다",
   "original copy": "원본",
+  "painstakingly": "공들여",
   "pair off": "둘씩 짝지다",
   "paltry": "쥐꼬리만 한",
   "paternal": "아버지의",
@@ -720,6 +847,8 @@ Object.assign(window.GLOSS, {
   "polarized": "극을 띤",
   "poor diet": "부실한 식사",
   "press forward": "밀고 나아가다",
+  "procedural": "절차상의",
+  "procedure": "절차",
   "pronounced": "두드러진",
   "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
@@ -735,8 +864,10 @@ Object.assign(window.GLOSS, {
   "sadness": "슬픔",
   "saying": "속담",
   "scant": "간신히 되는",
+  "scrupulously": "빈틈없이",
   "self-defense skill": "호신 기술",
   "sensation": "큰 화제",
+  "shooting star": "별똥별",
   "signify": "나타내다",
   "slight": "미미한",
   "smelly": "냄새 나는",
@@ -745,28 +876,43 @@ Object.assign(window.GLOSS, {
   "soothing": "마음을 누그러뜨리는",
   "spiteful": "앙심을 품은",
   "splendor": "화려함",
+  "squeeze dry": "짜낼 만큼 짜내다",
   "staffed": "인원이 배치된",
+  "standardized": "표준으로 정해진",
   "steer": "방향을 조종하다",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
+  "structural": "구조상의",
   "swamp": "늪",
+  "systematic": "체계적인",
+  "technique": "기법",
+  "ten centuries": "10세기 동안",
   "thaw": "얼음이 풀리다",
+  "thousand years": "천 해",
+  "trace element": "미량 원소",
+  "trace nutrient": "미량 영양 성분",
   "trader": "거래하는 사람",
   "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",
   "unmanned": "무인의",
   "untidy": "정돈되지 않은",
+  "urban": "도시의",
   "vendor": "판매하는 사람",
   "venomous": "독기 서린",
   "vindictive": "앙갚음하려는",
   "viral rash": "바이러스성 발진",
   "virile": "사내다운",
   "virtuoso": "명인",
+  "vitamin or mineral": "비타민이나 무기물",
   "warlike": "전쟁을 벌이려는",
   "way": "방식",
+  "weather science": "날씨 과학",
+  "weather scientist": "날씨를 연구하는 사람",
+  "weather-related": "날씨와 관련된",
   "wedded": "혼인한",
   "wetland": "습지대",
+  "with great care": "아주 조심스럽게",
   "wizard": "마법사",
   "wondrous": "경이로운",
   "work one's way": "힘써 나아가다",

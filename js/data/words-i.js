@@ -2005,7 +2005,6 @@ Object.assign(window.GLOSS, {
   "mediation": "조정",
   "member": "구성원",
   "mental capacity": "정신적 역량",
-  "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
   "mishap": "작은 사고",
