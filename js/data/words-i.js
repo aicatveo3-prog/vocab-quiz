@@ -830,7 +830,94 @@ window.VOCAB_I = [
   /* 원본 뜻 '업계 인물' 은 무슨 말인지 모호해 '업계의 유력 인사' 로 고쳤다.
      굳어진 관용구가 아니라 느슨한 결합이어서 유의어도 같은 결의 표현으로 두었다. */
   { word:"industry figure", pron:"인더스트리 피규어", pos:"phr", level:"C1", meanings:["업계의 유력 인사"],
-    syn:["leading player","industry veteran","prominent name"] }
+    syn:["leading player","industry veteran","prominent name"] },
+
+  { word:"inefficient", pron:"이니피션트", pos:"adj", level:"B2", meanings:["비능률적인","비효율적인"],
+    syn:["wasteful","ineffective","uneconomical"], ant:["efficient"],
+    ex:[{ s:"The old boiler was noisy and hopelessly {{}}.", f:"inefficient", ko:"그 낡은 보일러는 시끄럽고 구제 불능으로 비능률적이었다." }] },
+
+  /* 승격 ① — GLOSS '서투른, 무능한' 을 글자까지 지켰다.
+     clumsy(syn)·competent(ant) 두 문제가 참조하므로 원본의 '솜씨 없는' 대신
+     사전 쪽 순서를 남겼다. */
+  { word:"inept", pron:"이넵트", pos:"adj", level:"C1", meanings:["서투른","무능한"],
+    syn:["clumsy","bungling","incapable"], ant:["competent"],
+    ex:[{ s:"His {{}} handling of the crisis cost him his job.", f:"inept", ko:"위기에 대한 그의 서투른 대처가 그의 일자리를 잃게 했다." }] },
+
+  /* 승격 ① — GLOSS '불평등, 불균등' 을 글자까지 지켰다. disparity(syn) 가 참조한다.
+     원본은 '불평등' 한 갈래인데 사전 쪽 두 갈래를 그대로 두었다. */
+  { word:"inequality", pron:"이니콸러티", pos:"n", level:"B2", meanings:["불평등","불균등"],
+    syn:["disparity","imbalance","unfairness"], ant:["equality"],
+    ex:[{ s:"The report highlights growing income {{}}.", f:"inequality", ko:"그 보고서는 커지는 소득 불평등을 강조한다." }] },
+
+  /* 승격 ① — GLOSS '피할 수 없는' 을 첫 자리에 지켰다. foregone(syn) 이 참조한다.
+     원본 첫 뜻 '불가피한' 은 같은 갈래라 사전 쪽 표현을 남기고,
+     원본의 '필연적인' 을 둘째 자리에 붙였다. */
+  { word:"inevitable", pron:"인에버터블", pos:"adj", level:"B2", meanings:["피할 수 없는","필연적인"],
+    syn:["unavoidable","foregone","destined"],
+    ex:[{ s:"A clash between the two sides seemed {{}}.", f:"inevitable", ko:"양측의 충돌은 피할 수 없어 보였다." }] },
+
+  { word:"infant", pron:"인펀트", pos:"n", level:"B1", meanings:["유아","젖먹이"],
+    syn:["baby","newborn","toddler"],
+    ex:[{ s:"The vaccine is given to every {{}} at six weeks.", f:"infant", ko:"그 백신은 생후 6주에 모든 유아에게 투여된다." }] },
+
+  /* 승격 ① — GLOSS '감염시키다' 와 글자까지 같다. contaminate(syn) 가 참조한다.
+     원본도 한 갈래라 그대로 두었다. */
+  { word:"infect", pron:"인펙트", pos:"v", level:"B2", meanings:["감염시키다"],
+    syn:["contaminate","taint","blight"],
+    ex:[{ s:"A single carrier can {{}} dozens of people.", f:"infect", ko:"한 명의 보균자가 수십 명을 감염시킬 수 있다." }] },
+
+  /* 승격 ① — GLOSS '감염, 전염' 을 글자까지 지켰다. contamination(syn) 이 참조한다.
+     원본 첫 뜻은 '전염병' 이었으나 참조하는 쪽이 '오염·감염' 결이라 사전을 따랐다.
+     infect 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"infection", pron:"인펙션", pos:"n", level:"B2", meanings:["감염","전염"],
+    syn:["contamination","contagion","sepsis"],
+    ex:[{ s:"The wound became inflamed and showed signs of {{}}.", f:"infection", ko:"그 상처는 염증이 생기고 감염 징후를 보였다." }] },
+
+  { word:"inferior", pron:"인피리어", pos:"adj", level:"B2", meanings:["~보다 못한","열등한"],
+    syn:["lesser","second-rate","subordinate"], ant:["superior"],
+    ex:[{ s:"The cheaper model is clearly {{}} in build quality.", f:"inferior", ko:"더 싼 모델은 제작 품질에서 분명히 열등하다." }] },
+
+  /* 원본 첫 뜻은 '침입하다' 로 뒤에 올 invade 와 같았다. invade 가 '침략하다' 를
+     가져가고 이쪽은 '침투하다' 로 돌렸다 — 몰래 스며드는 쪽이다. */
+  { word:"infiltrate", pron:"인필트레이트", pos:"v", level:"C1", meanings:["침투하다","스며들다"],
+    syn:["penetrate","sneak into","permeate"],
+    ex:[{ s:"Agents managed to {{}} the smuggling network.", f:"infiltrate", ko:"요원들은 그 밀수 조직에 침투하는 데 성공했다." }] },
+
+  /* 승격 ① — GLOSS '무한한' 과 글자까지 같다. boundless(syn) 가 참조한다.
+     원본도 한 갈래라 그대로 두었다. */
+  { word:"infinite", pron:"인퍼닛", pos:"adj", level:"B2", meanings:["무한한"],
+    syn:["boundless","limitless","endless"], ant:["finite"],
+    ex:[{ s:"The universe may well be {{}} in extent.", f:"infinite", ko:"우주는 그 범위가 무한할 수도 있다." }] },
+
+  /* ── 챕터 9 ─────────────────────────────── */
+
+  /* 승격 ② — GLOSS '영향, 영향을 미치다' 로 명사와 동사가 섞여 있었다.
+     참조 둘 중 affect(syn) 가 동사, determinant(syn) 가 명사다.
+     원본 순서대로 pos 를 v 로 잡고 '영향을 미치다' 를 앞에,
+     명사 갈래 '영향력' 을 뒤에 두어 양쪽 참조가 다 읽히게 했다. */
+  { word:"influence", pron:"인플루언스", pos:"v", level:"B1", meanings:["영향을 미치다","영향력"],
+    syn:["affect","sway","shape"],
+    ex:[{ s:"Advertising can strongly {{}} what children want.", f:"influence", ko:"광고는 아이들이 원하는 것에 강하게 영향을 미칠 수 있다." }] },
+
+  /* influence 와 앞 여섯 글자가 같지만 어원이 무관하고 품사도 달라(v/n)
+     같은 보드에 안 온다. */
+  { word:"influenza", pron:"인플루엔자", pos:"n", level:"C1", meanings:["독감","유행성 감기"],
+    syn:["flu","grippe","viral illness"],
+    ex:[{ s:"An outbreak of {{}} closed two primary schools.", f:"influenza", ko:"독감 유행으로 두 초등학교가 문을 닫았다." }] },
+
+  { word:"influx", pron:"인플럭스", pos:"n", level:"C1", meanings:["유입","밀어닥침"],
+    syn:["inflow","surge","stream"], ant:["outflow"],
+    ex:[{ s:"The town saw a sudden {{}} of summer tourists.", f:"influx", ko:"그 마을은 여름 관광객의 갑작스러운 유입을 겪었다." }] },
+
+  /* 승격 ① — GLOSS '알리다, 알려 주다' 를 글자까지 지켰다. enlighten(syn) 이 참조한다.
+     원본은 '알리다' 한 갈래인데 사전 쪽 두 갈래를 그대로 두었다. */
+  { word:"inform", pron:"인폼", pos:"v", level:"B1", meanings:["알리다","알려 주다"],
+    syn:["notify","enlighten","apprise"],
+    ex:[{ s:"Please {{}} us of any change of address.", f:"inform", ko:"주소 변경이 있으면 저희에게 알려 주십시오." }] },
+
+  { word:"infrared", pron:"인프러레드", pos:"adj", level:"C1", meanings:["적외선의"],
+    syn:["thermal","heat-sensing","long-wave"],
+    ex:[{ s:"The camera uses {{}} light to see in total darkness.", f:"infrared", ko:"그 카메라는 완전한 어둠 속에서 보기 위해 적외선을 사용한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -846,6 +933,7 @@ Object.assign(window.GLOSS, {
   "animate": "살아 있는",
   "answering": "응답하는",
   "apathetic": "시들한, 심드렁한",
+  "apprise": "통지하다",
   "approaching": "다가오는",
   "approving of": "~을 승인하여",
   "as against": "~와 대비하여",
@@ -854,11 +942,14 @@ Object.assign(window.GLOSS, {
   "as required by": "~이 요구하는 대로",
   "astonishingly": "깜짝 놀랄 만큼",
   "at the outset": "처음에",
+  "baby": "아기",
   "beg": "간청하다",
   "betterment": "개량",
+  "blight": "병들게 하다",
   "brazen": "낯 두꺼운",
   "bring on": "불러오다",
   "brooding": "알을 품는 일",
+  "bungling": "일을 망치는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
   "clue": "단서",
@@ -879,6 +970,7 @@ Object.assign(window.GLOSS, {
   "deficiently": "모자라게",
   "denote": "가리키다",
   "depraved": "타락한",
+  "destined": "운명으로 정해진",
   "detection": "탐지, 발견",
   "detention": "구금",
   "deter": "막다, 억제하다",
@@ -909,13 +1001,16 @@ Object.assign(window.GLOSS, {
   "figurehead": "명목상의 대표",
   "firstly": "첫째로는",
   "flawed": "결함이 있는",
+  "flu": "인플루엔자",
   "for now": "당장은",
   "for want of": "~이 부족해서",
   "forthcoming": "다가오는, 곧 있을",
   "garbled": "뒤죽박죽인",
+  "grippe": "유행성 감기",
   "hallucination": "환각",
   "hatching": "부화",
   "heartburn": "가슴 쓰림",
+  "heat-sensing": "열을 감지하는",
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
@@ -954,10 +1049,12 @@ Object.assign(window.GLOSS, {
   "individuality": "개성, 특성",
   "induction": "취임시킴, 유도",
   "industry veteran": "업계 베테랑",
+  "ineffective": "효과가 없는",
   "inert": "반응이 없는",
   "inexperience": "미숙, 경험 부족",
   "inference": "추론",
   "inflict": "안기다, 가하다",
+  "inflow": "흘러듦",
   "inorganic": "무기의",
   "insinuate": "빗대어 말하다",
   "insinuation": "빗댄 말",
@@ -977,10 +1074,12 @@ Object.assign(window.GLOSS, {
   "legendary": "전설적인",
   "legible": "읽기 쉬운",
   "lenient": "처벌이 가벼운",
+  "lesser": "더 작은, 못한",
   "lifeless": "생명이 없는",
   "light up": "환하게 밝히다",
   "literate": "글을 읽고 쓸 수 있는",
   "local": "그 지역의",
+  "long-wave": "장파의",
   "looming": "곧 닥칠 듯한",
   "make do": "있는 것으로 때우다",
   "make-believe": "가상의, 거짓의",
@@ -996,6 +1095,8 @@ Object.assign(window.GLOSS, {
   "mortality": "죽음을 피할 수 없음, 사망률",
   "motivation": "동기 부여",
   "naivety": "순진함",
+  "newborn": "갓난아기",
+  "notify": "통보하다",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",
   "occurrence": "일어남, 사례",
@@ -1008,6 +1109,7 @@ Object.assign(window.GLOSS, {
   "partisan": "당파적인",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
+  "permeate": "배어들다",
   "permissive": "제약이 느슨한",
   "personally": "개인적으로, 직접",
   "poorly": "형편없이",
@@ -1032,14 +1134,17 @@ Object.assign(window.GLOSS, {
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
   "scrawled": "갈겨쓴",
+  "second-rate": "이류의",
   "secondary": "이차적인",
   "selective": "가려서 하는",
   "selfhood": "자아, 개체성",
   "separately": "따로따로",
+  "sepsis": "패혈증",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
   "sign": "징후, 표지",
   "slope": "비탈지다",
+  "sneak into": "몰래 들어가다",
   "sovereign": "주권을 가진",
   "specifically": "구체적으로",
   "speedy": "신속한",
@@ -1050,6 +1155,7 @@ Object.assign(window.GLOSS, {
   "striking": "눈에 띄는",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
+  "surge": "급증",
   "surrounded by": "~에 둘러싸여",
   "susceptible": "영향받기 쉬운",
   "swift": "빠른, 신속한",
@@ -1057,18 +1163,22 @@ Object.assign(window.GLOSS, {
   "tacit": "말 없는, 무언의",
   "taking account of": "~을 감안하여",
   "tendency": "성향",
+  "thermal": "열의",
   "tilt": "기울이다",
   "to begin with": "먼저",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
+  "toddler": "아기, 걸음마쟁이",
   "truly": "참으로",
   "unauthorized": "무단의, 승인받지 않은",
+  "unavoidable": "비켜 갈 수 없는",
   "unawareness": "알지 못함",
   "unbelievable": "믿을 수 없는",
   "unbelievably": "믿을 수 없을 만큼",
   "undeniable": "부인할 수 없는",
   "under way": "진행 중에",
   "undeveloped": "발달하지 않은",
+  "uneconomical": "돈이 많이 드는",
   "uneducated": "교육받지 못한",
   "unfeasible": "실행 불가능한",
   "unimaginative": "상상력이 없는",
@@ -1091,6 +1201,7 @@ Object.assign(window.GLOSS, {
   "utopianism": "유토피아주의",
   "vacillation": "갈팡질팡함",
   "verification": "입증, 검증",
+  "viral illness": "바이러스 질환",
   "wavering": "흔들리는",
   "whim": "일시적 기분",
   "with regard to": "~에 대해서는",

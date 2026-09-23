@@ -1822,7 +1822,6 @@ Object.assign(window.GLOSS, {
   "illustrious":"걸출한, 이름난",
   "imbalance":"불균형",
   "inborn":"타고난, 선천적인",
-  "inequality":"불평등, 불균등",
   "innate":"타고난, 본래의",
   "interrupt":"방해하다, 중단시키다",
   "interruption":"중단, 방해",

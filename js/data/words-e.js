@@ -2197,7 +2197,6 @@ Object.assign(window.GLOSS, {
   "fully absorb":"완전히 몰입시키다",
   "hold the attention of":"~의 주의를 붙들다",
   "imperil":"위험에 빠뜨리다",
-  "inform":"알리다, 알려 주다",
   "interminable":"끝이 안 보이는, 지루하게 긴",
   "make an effort":"노력을 기울이다",
   "moral support":"정신적 지지",
