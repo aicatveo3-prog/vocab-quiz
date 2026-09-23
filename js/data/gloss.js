@@ -872,8 +872,6 @@ Object.assign(window.GLOSS, {
   "ignite":"점화하다, 불붙이다",
   "ignition":"점화, 발화",
   "illness":"질병, 병",
-  "illuminate":"비추다, 밝히다",
-  "illustration":"삽화; 설명",
   "illustrator":"삽화가",
   "imagination":"상상력",
   "imagine":"상상하다, 구상하다",

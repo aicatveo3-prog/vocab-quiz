@@ -111,27 +111,133 @@ window.VOCAB_I = [
      이쪽이 '불법의' 를 가져갔다. */
   { word:"illegal", pron:"일리걸", pos:"adj", level:"B1", meanings:["불법의","위법의"],
     syn:["unlawful","criminal","prohibited"], ant:["legal"],
-    ex:[{ s:"It is {{}} to park in front of a fire hydrant.", f:"illegal", ko:"소화전 앞에 주차하는 것은 불법이다." }] }
+    ex:[{ s:"It is {{}} to park in front of a fire hydrant.", f:"illegal", ko:"소화전 앞에 주차하는 것은 불법이다." }] },
+
+  { word:"illegible", pron:"일레저블", pos:"adj", level:"C1", meanings:["읽기 어려운","알아보기 힘든"],
+    syn:["unreadable","indecipherable","scrawled"], ant:["legible"],
+    ex:[{ s:"The doctor's handwriting was almost {{}}.", f:"illegible", ko:"그 의사의 필체는 거의 읽기 어려웠다." }] },
+
+  /* 원본 첫 뜻은 '불법의' 로 illegal 과 같았다. illegal 이 '불법의' 를 가져가고
+     이쪽은 '부정한' 으로 돌렸다. illicit 은 도덕적 부정 쪽 어감이 강하다. */
+  { word:"illicit", pron:"일리싯", pos:"adj", level:"C1", meanings:["부정한","무허가의"],
+    syn:["illegal","unauthorized","forbidden"], ant:["lawful"],
+    ex:[{ s:"Investigators uncovered an {{}} trade in protected species.", f:"illicit", ko:"조사관들은 보호종의 부정한 거래를 적발했다." }] },
+
+  /* syn·ant 를 모두 비워 두었다. '문맹' 을 바꿔 쓸 수 있는 낱말이 영어에 셋이 없다
+     (illiterateness·analphabetism 은 수능 수준을 크게 벗어난다). ignorance 류로
+     채우면 '무지' 를 '문맹' 이라 가르치는 셈이라 넣지 않았다.
+     ant 만 남기는 것도 안 된다 — '아닌 것 고르기' 는 syn 이 3개 이상일 때만
+     만들어지므로, syn 이 없으면 ant 는 화면에 뜰 자리가 없는 죽은 데이터가 된다
+     (pron-audit 이 '유령 발음' 으로 잡아낸다).
+     이 단어는 4지선다·문장빈칸·짝맞추기 세 모드로만 출제된다. */
+  { word:"illiteracy", pron:"일리터러시", pos:"n", level:"C1", meanings:["문맹","무학"],
+    ex:[{ s:"The campaign aimed to reduce adult {{}} in rural areas.", f:"illiteracy", ko:"그 운동은 농촌 지역의 성인 문맹을 줄이는 것을 목표로 했다." }] },
+
+  /* illiteracy 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
+  { word:"illiterate", pron:"일리터럿", pos:"adj", level:"C1", meanings:["글자를 모르는","무식한"],
+    syn:["unlettered","unschooled","uneducated"], ant:["literate"],
+    ex:[{ s:"Nearly a fifth of the adult population remained {{}}.", f:"illiterate", ko:"성인 인구의 거의 5분의 1이 글자를 모르는 상태였다." }] },
+
+  { word:"illogical", pron:"일라지컬", pos:"adj", level:"B2", meanings:["비논리적인","불합리한"],
+    syn:["unreasonable","absurd","fallacious"], ant:["logical"],
+    ex:[{ s:"His argument was {{}} from start to finish.", f:"illogical", ko:"그의 논증은 처음부터 끝까지 비논리적이었다." }] },
+
+  /* ── 챕터 2 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '비추다, 밝히다' 와 같은 갈래다. 참조하는 기존 문제는 없어
+     원본 뜻을 그대로 썼다. PRON 에는 없었다. */
+  { word:"illuminate", pron:"일루머네이트", pos:"v", level:"B2", meanings:["조명하다","밝게 하다"],
+    syn:["brighten","light up","lighten"], ant:["darken"],
+    ex:[{ s:"Floodlights {{}} the stadium during night matches.", f:"illuminate", ko:"야간 경기 중 투광 조명이 경기장을 밝게 비춘다." }] },
+
+  /* 승격 ② — GLOSS '착각, 환상' 이다. delusion(syn)·fantasy(syn) 두 문제가 쓴다.
+     두 갈래가 다 살아 있어 원본 순서('환상' 먼저)로 맞췄다.
+     원본 '오해' 는 셋째 갈래라 meanings 2개 제한에 걸려 뺐다. */
+  { word:"illusion", pron:"일루전", pos:"n", level:"B2", meanings:["환상","착각"],
+    syn:["delusion","hallucination","mirage"],
+    ex:[{ s:"The mirror creates the {{}} of a much larger room.", f:"illusion", ko:"그 거울은 방이 훨씬 더 커 보이는 착각을 만든다." }] },
+
+  /* 승격 ② — GLOSS '예시하다, 분명히 보여 주다' 다. exemplify(syn) 가 쓰는
+     갈래가 '예시하다' 라서 둘째 자리에 지켰다. demonstrate(syn) 도 참조한다. */
+  { word:"illustrate", pron:"일러스트레이트", pos:"v", level:"B2", meanings:["설명하다","예시하다"],
+    syn:["demonstrate","exemplify","depict"],
+    ex:[{ s:"The chart {{}} how rapidly the population grew.", f:"illustrates", ko:"그 도표는 인구가 얼마나 빠르게 늘었는지 설명한다." }] },
+
+  /* 승격 ② — GLOSS '삽화; 설명' 이다. cartooning(syn) 이 쓰는 갈래가 '삽화' 라서
+     첫 자리에 지켰다. 원본 '설명' 은 셋째 갈래라 뺐다.
+     illustrate 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  { word:"illustration", pron:"일러스트레이션", pos:"n", level:"B2", meanings:["삽화","실례"],
+    syn:["drawing","diagram","cartooning"],
+    ex:[{ s:"The book contains a detailed {{}} of the human eye.", f:"illustration", ko:"그 책에는 사람 눈의 상세한 삽화가 실려 있다." }] },
+
+  /* 원본은 '이미지, 형상화; 심상' 으로 세 갈래다. '심상' 을 뺐다 — 앞 두 갈래와
+     묶여 한 덩어리로 읽히는 쪽을 택했다. */
+  { word:"imagery", pron:"이머저리", pos:"n", level:"C1", meanings:["이미지","형상화"],
+    syn:["symbolism","metaphor","figuration"],
+    ex:[{ s:"The poem is rich in nature {{}}.", f:"imagery", ko:"그 시는 자연 이미지가 풍부하다." }] },
+
+  { word:"imaginary", pron:"이매저네리", pos:"adj", level:"B2", meanings:["상상의","가상의"],
+    syn:["fictional","hypothetical","make-believe"], ant:["real"],
+    ex:[{ s:"The child invented an {{}} friend to play with.", f:"imaginary", ko:"그 아이는 함께 놀 상상의 친구를 만들어 냈다." }] },
+
+  /* imaginary 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이
+     '상상의' 와 '상상력이 풍부한' 으로 뚜렷이 갈려 짝을 고르는 데 무리가 없다. */
+  { word:"imaginative", pron:"이매저너티브", pos:"adj", level:"B2", meanings:["상상력이 풍부한","창의적인"],
+    syn:["inventive","creative","resourceful"], ant:["unimaginative"],
+    ex:[{ s:"Her {{}} storytelling captivated the whole class.", f:"imaginative", ko:"그녀의 상상력이 풍부한 이야기가 반 전체를 사로잡았다." }] },
+
+  /* 승격 ① — GLOSS '모방하다, 본뜨다' 를 글자까지 지켰다. emulate(syn) 가 쓴다.
+     원본 둘째 갈래 '흉내 내다' 대신 사전 쪽 '본뜨다' 를 남겨 기존 화면을 보존했다. */
+  { word:"imitate", pron:"이머테이트", pos:"v", level:"B2", meanings:["모방하다","본뜨다"],
+    syn:["emulate","mimic","copy"],
+    ex:[{ s:"Young children naturally {{}} the speech of adults.", f:"imitate", ko:"어린 아이들은 자연스럽게 어른의 말을 모방한다." }] },
+
+  { word:"immature", pron:"이머추어", pos:"adj", level:"B2", meanings:["미숙한","미완성의"],
+    syn:["childish","undeveloped","juvenile"], ant:["mature"],
+    ex:[{ s:"His {{}} response to criticism cost him the promotion.", f:"immature", ko:"비판에 대한 그의 미숙한 반응이 승진을 놓치게 했다." }] },
+
+  /* 원본 '헤아릴 수 없는' 하나뿐이다. 둘째 갈래로 '막대한' 을 붙이면 뒤에 올
+     immense('막대한, 광대한')와 겹치므로 '측정할 수 없는' 을 택했다. */
+  { word:"immeasurable", pron:"이메저러블", pos:"adj", level:"C1", meanings:["헤아릴 수 없는","측정할 수 없는"],
+    syn:["incalculable","boundless","limitless"], ant:["finite"],
+    ex:[{ s:"Her contribution to modern medicine was {{}}.", f:"immeasurable", ko:"현대 의학에 대한 그녀의 기여는 헤아릴 수 없었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
    블록을 두는 선례가 없다. pron.js 가 이 파일보다 뒤에 로드되므로 여기서
    Object.assign(window.PRON, ...) 을 하면 pron.js 쪽 값에 덮인다). */
 Object.assign(window.GLOSS, {
+  "creative": "창의적인",
+  "childish": "어린애 같은",
   "detection":"탐지, 발견",
   "different":"다른",
   "distinguishable":"구별할 수 있는",
   "doctrinal":"교리상의",
   "dogmatic":"독단적인",
   "emblematic":"상징적인",
+  "figuration": "형상화",
+  "fallacious": "오류가 있는",
   "figurehead":"명목상의 대표",
   "flawed":"결함이 있는",
+  "hypothetical": "가상의, 가설의",
+  "hallucination": "환각",
   "idol":"우상, 숭배 대상",
+  "indecipherable": "판독할 수 없는",
+  "incalculable": "헤아릴 수 없이 큰",
   "indistinguishable":"구별할 수 없는",
   "individuality":"개성, 특성",
   "inexperience":"미숙, 경험 부족",
+  "juvenile": "유치한, 청소년의",
+  "inventive": "창의력이 뛰어난",
   "knowledge":"지식",
+  "lawful": "합법적인",
   "legendary":"전설적인",
+  "mirage": "신기루",
+  "metaphor": "은유, 비유",
+  "make-believe": "가상의, 거짓의",
+  "literate": "글을 읽고 쓸 수 있는",
+  "light up": "환하게 밝히다",
+  "legible": "읽기 쉬운",
   "naivety":"순진함",
   "optimal":"최적의",
   "optimally":"최적으로",
@@ -139,11 +245,22 @@ Object.assign(window.GLOSS, {
   "perfectionism":"완벽주의",
   "perfectly":"완벽하게",
   "preferably":"되도록",
+  "resourceful": "기지가 뛰어난",
   "romanticism":"낭만주의",
   "sameness":"동일성, 똑같음",
+  "scrawled": "갈겨쓴",
   "selfhood":"자아, 개체성",
+  "unauthorized": "무단의, 승인받지 않은",
+  "symbolism": "상징, 상징주의",
   "unawareness":"알지 못함",
+  "unimaginative": "상상력이 없는",
+  "uneducated": "교육받지 못한",
+  "undeveloped": "발달하지 않은",
   "unlawful":"위법의",
+  "unschooled": "학교 교육을 받지 않은",
+  "unreasonable": "불합리한, 터무니없는",
+  "unreadable": "읽을 수 없는",
+  "unlettered": "무학의",
   "utopianism":"유토피아주의",
   "verification":"입증, 검증"
 });

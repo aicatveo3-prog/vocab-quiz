@@ -2169,7 +2169,6 @@ Object.assign(window.GLOSS, {
   "follow the example of":"~의 본을 따르다",
   "give a job to":"~에게 일자리를 주다",
   "give power to":"~에게 힘을 주다",
-  "imitate":"모방하다, 본뜨다",
   "importance":"중요성",
   "incorporate":"포함시키다, 통합하다",
   "inspire":"고무하다, 영감을 주다",

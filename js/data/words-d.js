@@ -1593,8 +1593,6 @@ Object.assign(window.GLOSS, {
   "exhaustion":"고갈, 탈진",
   "exhibit":"드러내다; 전시하다",
   "fool":"속이다; 바보",
-  "illusion":"착각, 환상",
-  "illustrate":"예시하다, 분명히 보여 주다",
   "insane":"미친, 제정신이 아닌",
   "insist on":"~을 강력히 요구하다",
   "install":"임명하다; 설치하다",
