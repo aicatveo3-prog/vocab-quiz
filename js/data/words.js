@@ -1688,8 +1688,6 @@ window.GLOSS = {
   "grounded":"지상에 있는, 이륙하지 못한",
   "health":"건강",
   "inability":"무능력",
-  "inaccessible":"접근할 수 없는",
-  "inaccurate":"부정확한",
   "inappropriate":"부적절한",
   "inattentive":"부주의한",
   "inaudible":"들리지 않는",

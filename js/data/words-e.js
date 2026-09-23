@@ -2334,7 +2334,6 @@ Object.assign(window.GLOSS, {
   "dry up":"말라 없어지다",
   "gradual change":"서서히 일어나는 변화",
   "grow gradually":"서서히 자라다",
-  "in the end":"끝에는",
   "other than":"~이 아닌, ~말고는",
   "outdo":"앞지르다",
   "outperform":"더 나은 성과를 내다",

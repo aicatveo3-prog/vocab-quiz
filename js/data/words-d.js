@@ -1768,7 +1768,6 @@ Object.assign(window.GLOSS, {
   "impairment":"손상, 장애",
   "incapacitated":"무력해진, 능력을 잃은",
   "incapacitating":"무력하게 만드는",
-  "incapacity":"무능력, 무자격",
   "inconvenience":"불편, 애로",
   "indiscreet":"분별없는, 무분별한",
   "jettison":"던져 버리다, 포기하다",

@@ -504,7 +504,72 @@ window.VOCAB_I = [
     syn:["in exchange for","as payment for","in recompense for"] },
 
   { word:"in sum", pron:"인 섬", pos:"phr", level:"B2", meanings:["요컨대"],
-    syn:["in short","to sum up","in brief"] }
+    syn:["in short","to sum up","in brief"] },
+
+  { word:"in terms of", pron:"인 텀즈 어브", pos:"phr", level:"B1", meanings:["~에 관해서는","~면에서"],
+    syn:["with respect to","regarding","in the matter of"] },
+
+  { word:"in that", pron:"인 댓", pos:"phr", level:"C1", meanings:["~라는 점에서"],
+    syn:["insofar as","seeing that","given that"] },
+
+  { word:"in the absence of", pron:"인 디 앱선스 어브", pos:"phr", level:"B2", meanings:["~이 없어서","~이 없을 때"],
+    syn:["without","lacking","for want of"] },
+
+  /* 승격 ② — GLOSS 는 '끝에는' 이었다. eventually(syn) 가 참조하는데 그쪽 뜻이
+     '결국' 이므로 사전 쪽이 부정확했다. 원본 '결국, 마침내' 로 바로잡았다. */
+  { word:"in the end", pron:"인 더 엔드", pos:"phr", level:"B1", meanings:["결국","마침내"],
+    syn:["eventually","ultimately","at last"] },
+
+  { word:"in the first place", pron:"인 더 퍼스트 플레이스", pos:"phr", level:"B2", meanings:["우선","첫째로"],
+    syn:["firstly","to begin with","at the outset"] },
+
+  { word:"in the light of", pron:"인 더 라이트 어브", pos:"phr", level:"C1", meanings:["~에 비추어","~을 고려하여"],
+    syn:["considering","in view of","taking account of"] },
+
+  /* 원본 뜻은 '결국에는' 으로 바로 위 in the end('결국, 마침내')와 겹쳤다.
+     이 구는 실제로 '시간을 길게 두고 보면' 이라는 뜻이므로 '장기적으로는' 으로
+     바로잡았다. 겹침도 함께 풀렸다. */
+  { word:"in the long run", pron:"인 더 롱 런", pos:"phr", level:"B2", meanings:["장기적으로는","길게 보면"],
+    syn:["over time","in the long term","down the road"] },
+
+  { word:"in the meantime", pron:"인 더 민타임", pos:"phr", level:"B1", meanings:["그러는 동안에","그동안"],
+    syn:["meanwhile","for now","in the interim"] },
+
+  { word:"in the midst of", pron:"인 더 미드스트 어브", pos:"phr", level:"B2", meanings:["~하는 중에","~의 한가운데에"],
+    syn:["in the middle of","amid","surrounded by"] },
+
+  /* 승격 ① — GLOSS '접근할 수 없는' 을 글자까지 지켰다. accessible(ant) 이 참조한다.
+     원본 '접근하기 어려운' 은 같은 갈래라 사전 쪽 표현을 남겼고, 갈래를 늘리면
+     기존 화면이 바뀌므로 한 갈래로 두었다. */
+  { word:"inaccessible", pron:"인억세서블", pos:"adj", level:"B2", meanings:["접근할 수 없는"],
+    syn:["unreachable","remote","cut off"], ant:["accessible"],
+    ex:[{ s:"The summit is {{}} during winter storms.", f:"inaccessible", ko:"그 정상은 겨울 폭풍이 몰아치는 동안 접근할 수 없다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────── */
+
+  /* 승격 ① — GLOSS '부정확한' 과 글자까지 같다. accurate(ant) 이 참조한다.
+     원본도 한 갈래라 그대로 두었다. */
+  { word:"inaccurate", pron:"인애큐릿", pos:"adj", level:"B2", meanings:["부정확한"],
+    syn:["incorrect","erroneous","imprecise"], ant:["accurate"],
+    ex:[{ s:"The earliest maps of the coast were wildly {{}}.", f:"inaccurate", ko:"그 해안의 초기 지도들은 터무니없이 부정확했다." }] },
+
+  { word:"inadequately", pron:"인애더큇리", pos:"adv", level:"B2", meanings:["부적절하게","불충분하게"],
+    syn:["insufficiently","poorly","deficiently"],
+    ex:[{ s:"The building was {{}} insulated against the cold.", f:"inadequately", ko:"그 건물은 추위에 불충분하게 단열되어 있었다." }] },
+
+  { word:"inanimate", pron:"인애너멋", pos:"adj", level:"C1", meanings:["무생물의","생명이 없는"],
+    syn:["lifeless","inorganic","inert"], ant:["animate"],
+    ex:[{ s:"Children often speak to {{}} objects as if they were alive.", f:"inanimate", ko:"아이들은 무생물 물체에 살아 있는 것처럼 말을 걸곤 한다." }] },
+
+  { word:"inauguration", pron:"이노규레이션", pos:"n", level:"C1", meanings:["취임","개시"],
+    syn:["installation","induction","commencement"],
+    ex:[{ s:"The president's {{}} drew a crowd of thousands.", f:"inauguration", ko:"대통령의 취임식은 수천 명의 인파를 끌어모았다." }] },
+
+  /* 승격 ① — GLOSS '무능력, 무자격' 을 글자까지 지켰다. disability(syn) 가 참조한다.
+     원본은 '무능력' 한 갈래인데 사전 쪽 두 갈래를 그대로 두었다. */
+  { word:"incapacity", pron:"인커패서티", pos:"n", level:"C1", meanings:["무능력","무자격"],
+    syn:["disability","incompetence","powerlessness"],
+    ex:[{ s:"His {{}} to work was confirmed by two independent doctors.", f:"incapacity", ko:"그의 근로 무능력은 독립적인 두 의사에 의해 확인되었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -514,6 +579,8 @@ Object.assign(window.GLOSS, {
   "abiding by": "~을 지키며",
   "ad-lib": "즉흥적으로 하다",
   "alone": "혼자서",
+  "amid": "~의 한복판에",
+  "animate": "살아 있는",
   "answering": "응답하는",
   "approaching": "다가오는",
   "approving of": "~을 승인하여",
@@ -521,12 +588,14 @@ Object.assign(window.GLOSS, {
   "as payment for": "~의 값으로",
   "as regards": "~에 관해서는",
   "as required by": "~이 요구하는 대로",
+  "at the outset": "처음에",
   "beg": "간청하다",
   "betterment": "개량",
   "brazen": "낯 두꺼운",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
   "colonialism": "식민주의",
+  "commencement": "시작, 개회",
   "commensurate with": "~에 상응하여",
   "compared with": "~와 비교하면",
   "compulsion": "강한 욕구, 강제",
@@ -535,8 +604,10 @@ Object.assign(window.GLOSS, {
   "consistent with": "~와 들어맞는",
   "corresponding to": "~에 대응하여",
   "creative": "창의적인",
+  "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
   "deathlessness": "불사, 죽지 않음",
+  "deficiently": "모자라게",
   "depraved": "타락한",
   "detection": "탐지, 발견",
   "detention": "구금",
@@ -546,6 +617,7 @@ Object.assign(window.GLOSS, {
   "distinguishable": "구별할 수 있는",
   "doctrinal": "교리상의",
   "dogmatic": "독단적인",
+  "down the road": "앞으로 가면",
   "driving force": "추진 동력",
   "emblematic": "상징적인",
   "emboss": "도드라지게 새기다",
@@ -561,13 +633,17 @@ Object.assign(window.GLOSS, {
   "faulty": "고장이 있는",
   "figuration": "형상화",
   "figurehead": "명목상의 대표",
+  "firstly": "첫째로는",
   "flawed": "결함이 있는",
+  "for now": "당장은",
+  "for want of": "~이 부족해서",
   "forthcoming": "다가오는, 곧 있을",
   "hallucination": "환각",
   "hegemony": "패권",
   "hypothetical": "가상의, 가설의",
   "idol": "우상, 숭배 대상",
   "implied": "함축된",
+  "imprecise": "정밀하지 않은",
   "in a way": "어떤 면에서는",
   "in accordance with": "~에 맞추어",
   "in agreement with": "~와 합의하여",
@@ -586,18 +662,27 @@ Object.assign(window.GLOSS, {
   "in step with": "~와 발을 맞추어",
   "in support of": "~을 지지하여",
   "in the flesh": "실물로",
+  "in the interim": "그 사이에",
+  "in the long term": "긴 기간으로 보면",
+  "in the matter of": "~의 문제에서는",
+  "in the middle of": "~의 중간에",
   "incalculable": "헤아릴 수 없이 큰",
   "incarcerate": "수감하다",
   "incarceration": "수감",
   "indecipherable": "판독할 수 없는",
   "indistinguishable": "구별할 수 없는",
   "individuality": "개성, 특성",
+  "induction": "취임시킴, 유도",
+  "inert": "반응이 없는",
   "inexperience": "미숙, 경험 부족",
   "inference": "추론",
   "inflict": "안기다, 가하다",
+  "inorganic": "무기의",
   "insinuate": "빗대어 말하다",
   "insinuation": "빗댄 말",
+  "insofar as": "~하는 한에서는",
   "insolent": "건방진",
+  "insufficiently": "넉넉하지 못하게",
   "introduce": "도입하다, 소개하다",
   "inventive": "창의력이 뛰어난",
   "jail": "감옥에 넣다",
@@ -606,11 +691,13 @@ Object.assign(window.GLOSS, {
   "lawful": "합법적인",
   "legendary": "전설적인",
   "legible": "읽기 쉬운",
+  "lifeless": "생명이 없는",
   "light up": "환하게 밝히다",
   "literate": "글을 읽고 쓸 수 있는",
   "looming": "곧 닥칠 듯한",
   "make do": "있는 것으로 때우다",
   "make-believe": "가상의, 거짓의",
+  "meanwhile": "한편으로는",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
@@ -623,10 +710,13 @@ Object.assign(window.GLOSS, {
   "on the side of": "~의 편에 서서",
   "optimal": "최적의",
   "optimally": "최적으로",
+  "over time": "시간이 지나면서",
   "partisan": "당파적인",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
   "personally": "개인적으로, 직접",
+  "poorly": "형편없이",
+  "powerlessness": "무력함",
   "preferably": "되도록",
   "primeval": "원시의, 태고의",
   "propel": "나아가게 하다",
@@ -654,10 +744,13 @@ Object.assign(window.GLOSS, {
   "striking": "눈에 띄는",
   "submerge": "물에 잠기게 하다",
   "substandard": "표준에 못 미치는",
+  "surrounded by": "~에 둘러싸여",
   "susceptible": "영향받기 쉬운",
   "swift": "빠른, 신속한",
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
+  "taking account of": "~을 감안하여",
+  "to begin with": "먼저",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
   "unauthorized": "무단의, 승인받지 않은",
@@ -669,6 +762,7 @@ Object.assign(window.GLOSS, {
   "unimaginative": "상상력이 없는",
   "unlawful": "위법의",
   "unlettered": "무학의",
+  "unreachable": "닿을 수 없는",
   "unreadable": "읽을 수 없는",
   "unrealistic": "현실성 없는",
   "unreasonable": "불합리한, 터무니없는",
@@ -679,5 +773,7 @@ Object.assign(window.GLOSS, {
   "utopianism": "유토피아주의",
   "verification": "입증, 검증",
   "whim": "일시적 기분",
-  "with regard to": "~에 대해서는"
+  "with regard to": "~에 대해서는",
+  "with respect to": "~와 관련해서는",
+  "without": "~이 없이"
 });
