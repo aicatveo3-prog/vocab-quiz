@@ -142,45 +142,188 @@ window.VOCAB_L = [
 
   { word:"lay", pron:"레이", pos:"v", level:"B1", meanings:["놓다","낳다"],
     syn:["place","set down","deposit"],
-    ex:[{ s:"Please {{}} the documents on my desk.", f:"lay", ko:"서류를 제 책상에 놓아 주세요." }] }
+    ex:[{ s:"Please {{}} the documents on my desk.", f:"lay", ko:"서류를 제 책상에 놓아 주세요." }] },
+
+  /* ── 챕터 2 ─────────────────────────────── */
+
+  /* 첫 뜻이 D 세트 dismiss 와 같지만, 뜻이 같은 표제어는 meaningsOverlap 이
+     같은 보기에 함께 뜨지 못하게 막으므로 그대로 두었다.
+     바로 뒤 lay-off(명사)와 품사가 달라(phr/n) 같은 보드에 안 온다. */
+  { word:"lay off", pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
+    syn:["dismiss","let go","make redundant"] },
+
+  /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
+     원본의 동사 갈래('층을 이루다')는 pos 가 n 이라 담지 못했다. */
+  { word:"layer", pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
+    syn:["crust","stratum","coating"],
+    ex:[{ s:"A thin {{}} of dust covered the top shelf.", f:"layer", ko:"얇은 먼지 층이 맨 위 선반을 덮고 있었다." }] },
+
+  { word:"layman", pron:"레이먼", pos:"n", level:"C1", meanings:["비전문가","일반인"],
+    syn:["nonspecialist","amateur","ordinary person"], ant:["expert"],
+    ex:[{ s:"The book explains quantum physics for the {{}}.", f:"layman", ko:"그 책은 비전문가를 위해 양자물리학을 설명한다." }] },
+
+  { word:"lay-off", pron:"레이오프", pos:"n", level:"B2", meanings:["해고","강제 휴업"],
+    syn:["dismissal","redundancy","job cut"],
+    ex:[{ s:"The factory announced a mass {{}} in October.", f:"lay-off", ko:"그 공장은 10월에 대규모 해고를 발표했다." }] },
+
+  /* 승격 ① — GLOSS '배치, 설계' 를 글자까지 지켰다. format(syn) 이 참조하므로
+     원본의 '레이아웃'(외래어) 대신 사전 쪽 '설계' 를 남겼다. */
+  { word:"layout", pron:"레이아웃", pos:"n", level:"B2", meanings:["배치","설계"],
+    syn:["format","arrangement","design"],
+    ex:[{ s:"The {{}} of the page makes it easy to scan.", f:"layout", ko:"그 페이지의 배치는 훑어보기 쉽게 만든다." }] },
+
+  /* 승격 ① — GLOSS '이끌다; 납' 이 원본과 글자까지 같다. head start(syn) 가
+     참조한다. 동사와 명사가 섞였지만 사전이 이미 그렇게 쓰고 있어 그대로 두고
+     pos 는 첫 갈래에 맞춰 v 로 잡았다. */
+  { word:"lead", pron:"리드", pos:"v", level:"B1", meanings:["이끌다","납"],
+    syn:["guide","head","spearhead"],
+    ex:[{ s:"She will {{}} the research team from May.", f:"lead", ko:"그녀는 5월부터 연구팀을 이끌 것이다." }] },
+
+  /* 승격 ① — 원본 뜻 '작은 잎' 은 틀렸다. leaflet 은 전단·소책자를 뜻한다
+     (식물의 '작은 잎' 뜻은 거의 쓰이지 않는다). 사전이 이미 '전단, 소책자' 이고
+     booklet(syn) 이 '소책자' 갈래를 참조하므로 사전 쪽을 그대로 썼다. */
+  { word:"leaflet", pron:"리플릿", pos:"n", level:"B2", meanings:["전단","소책자"],
+    syn:["booklet","flyer","handbill"],
+    ex:[{ s:"Volunteers handed out a {{}} at the station.", f:"leaflet", ko:"자원봉사자들이 역에서 전단을 나눠 주었다." }] },
+
+  /* 승격 ① — GLOSS '누설하다; 누출' 을 글자까지 지켰다. divulge(syn) 가
+     '누설하다' 갈래를 참조하므로 원본의 '새게 하다' 대신 사전 쪽을 남겼다. */
+  { word:"leak", pron:"리크", pos:"v", level:"B2", meanings:["누설하다","누출"],
+    syn:["divulge","disclose","seep out"],
+    ex:[{ s:"Someone must have {{}} the document to the press.", f:"leaked", ko:"누군가 그 문서를 언론에 누설했음이 분명하다." }] },
+
+  /* leak 의 둘째 갈래가 '누출' 이라 이쪽은 '유출' 을 앞에 두었다. 품사도 달라
+     (v/n) 같은 보드에 오지 않는다. */
+  { word:"leakage", pron:"리키지", pos:"n", level:"C1", meanings:["유출","누출"],
+    syn:["escape","seepage","discharge"],
+    ex:[{ s:"Engineers traced the gas {{}} to a cracked pipe.", f:"leakage", ko:"기술자들은 가스 유출을 갈라진 관에서 찾아냈다." }] },
+
+  /* 승격 ① — GLOSS '기울다; 여윈' 을 글자까지 지켰다. I 세트 incline 이
+     '기울다' 갈래를 유의어로 참조하므로 원본('기대다; 날씬한') 대신 사전 쪽을
+     남겼다 — 같은 갈래다. */
+  { word:"lean", pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
+    syn:["incline","tilt","slant"],
+    ex:[{ s:"The old tower began to {{}} to one side.", f:"lean", ko:"그 낡은 탑은 한쪽으로 기울기 시작했다." }] },
+
+  { word:"leap", pron:"리프", pos:"v", level:"B2", meanings:["뛰다","도약하다"],
+    syn:["bound","spring","vault"],
+    ex:[{ s:"The dancer can {{}} higher than anyone on the stage.", f:"leap", ko:"그 무용수는 무대 위 누구보다 높이 뛸 수 있다." }] },
+
+  { word:"leap off", pron:"리프 오프", pos:"phr", level:"B2", meanings:["뛰어내리다"],
+    syn:["jump off","spring from","bound off"] },
+
+  { word:"learned", pron:"러닛", pos:"adj", level:"C1", meanings:["학식이 있는","박식한"],
+    syn:["scholarly","erudite","well-read"], ant:["ignorant"],
+    ex:[{ s:"He was a {{}} man who read six languages.", f:"learned", ko:"그는 여섯 개 언어를 읽는 학식 있는 사람이었다." }] },
+
+  /* 승격 ① — GLOSS '임대하다; 임대' 를 글자까지 지켰다. charter(syn) 가
+     동사 갈래를 참조하므로 pos 를 v 로 유지했다.
+     원본 '임대 계약' 은 같은 개념의 명사 읽기라 둘째 갈래 '임대' 가 덮는다. */
+  { word:"lease", pron:"리스", pos:"v", level:"B2", meanings:["임대하다","임대"],
+    syn:["charter","rent out","let"],
+    ex:[{ s:"They decided to {{}} the building for ten years.", f:"lease", ko:"그들은 그 건물을 10년간 임대하기로 결정했다." }] },
+
+  { word:"leather", pron:"레더", pos:"n", level:"B1", meanings:["가죽","가죽 제품"],
+    syn:["hide","suede","animal skin"],
+    ex:[{ s:"The jacket is made of genuine {{}}.", f:"leather", ko:"그 재킷은 진짜 가죽으로 만들어졌다." }] },
+
+  { word:"leave out", pron:"리브 아웃", pos:"phr", level:"B1", meanings:["빼다","생략하다"],
+    syn:["omit","exclude","skip"] },
+
+  { word:"leftover", pron:"레프트오버", pos:"adj", level:"B2", meanings:["먹다 남은","남은"],
+    syn:["remaining","surplus","uneaten"],
+    ex:[{ s:"We had {{}} rice for breakfast.", f:"leftover", ko:"우리는 아침으로 먹다 남은 밥을 먹었다." }] },
+
+  /* 승격 ① — GLOSS '유산, 유증' 을 글자까지 지켰다.
+     heritage(syn)·inheritance(syn) 두 문제가 참조한다. 첫 뜻이 그 둘과 같은데,
+     그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다. */
+  { word:"legacy", pron:"레거시", pos:"n", level:"B2", meanings:["유산","유증"],
+    syn:["heritage","inheritance","bequest"],
+    ex:[{ s:"The museum was a {{}} from a local collector.", f:"legacy", ko:"그 박물관은 지역 수집가가 남긴 유산이었다." }] },
+
+  /* 승격 ① — GLOSS '합법적인, 법의' 를 글자까지 지켰다. 참조가 둘인데 그중
+     judicial 은 바로 앞 J 세트에서 넣은 표제어다(illegal 은 I 세트).
+     뒤에 올 legitimate 은 '정당한' 으로 돌려 첫 뜻이 갈린다. */
+  { word:"legal", pron:"리걸", pos:"adj", level:"B1", meanings:["합법적인","법의"],
+    syn:["lawful","permissible","above board"], ant:["illegal"],
+    ex:[{ s:"Gambling is {{}} in only a handful of states.", f:"legal", ko:"도박은 소수의 주에서만 합법적이다." }] },
+
+  { word:"legend", pron:"레전드", pos:"n", level:"B1", meanings:["전설","설화"],
+    syn:["myth","folk tale","saga"],
+    ex:[{ s:"Every village has its own {{}} about the lake.", f:"legend", ko:"모든 마을은 그 호수에 대한 자기만의 전설을 갖고 있다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "above board": "숨김 없이 정당한",
+  "amateur": "비전문가, 아마추어",
+  "animal skin": "동물 가죽",
   "arduous": "몹시 힘든",
   "be outpaced": "앞질리다",
   "become void": "무효가 되다",
   "booby trap": "위장 폭탄",
+  "bound": "껑충 뛰다",
+  "bound off": "껑충 뛰어 내려가다",
   "buried explosive": "땅에 묻은 폭발물",
+  "coating": "입힌 막",
   "court case": "법정 사건",
   "crippled": "다리를 못 쓰는",
+  "dismissal": "해임",
   "drudgery": "고된 일",
+  "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "flanking": "측면을 이루는",
+  "flyer": "광고 쪽지",
+  "folk tale": "민간 설화",
+  "guide": "안내하다",
+  "handbill": "살포용 광고지",
   "hobbling": "다리를 끌며 걷는",
+  "ignorant": "무지한",
+  "job cut": "일자리 감축",
+  "jump off": "뛰어서 내려가다",
   "kick off": "시작하다",
   "lab": "실험실",
   "legal action": "법적 조치",
   "lessor": "임대인",
   "limping": "다리를 저는",
   "litigation": "소송 절차",
+  "make redundant": "정리 해고하다",
   "mine": "지뢰, 광산",
   "mostly": "대부분",
+  "myth": "신화",
+  "nonspecialist": "전문가가 아닌 사람",
+  "omit": "빠뜨리다",
   "opulent": "사치스러운",
+  "ordinary person": "보통 사람",
+  "permissible": "허용되는",
   "predominantly": "주로, 대부분은",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",
+  "redundancy": "정리 해고",
   "regrettable": "유감스러운",
+  "rent out": "세를 놓다",
   "research facility": "연구 시설",
+  "saga": "긴 무훈담",
+  "seep out": "스며 나오다",
+  "seepage": "스며 나옴",
   "set down": "내려놓다",
   "set in motion": "움직이게 하다",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
+  "skip": "건너뛰다",
+  "slant": "비스듬해지다",
+  "spearhead": "앞장서다",
+  "spring from": "뛰어 벗어나다",
+  "stratum": "지층",
+  "suede": "스웨이드 가죽",
   "sumptuous": "값비싸고 멋진",
   "tenant": "세입자",
   "testing room": "시험실",
   "time lag": "시간차",
   "tip": "쓰레기장",
   "toil": "고생스러운 노동",
-  "waste site": "폐기물 처리장"
+  "uneaten": "먹지 않은",
+  "vault": "짚고 뛰어넘다",
+  "waste site": "폐기물 처리장",
+  "well-read": "책을 많이 읽은"
 });

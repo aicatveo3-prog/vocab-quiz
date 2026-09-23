@@ -1869,7 +1869,6 @@ Object.assign(window.GLOSS, {
   "inactive":"활동하지 않는, 비활성의",
   "initial payment":"초기 납입금",
   "leading":"주요한, 선도하는",
-  "leak":"누설하다; 누출",
   "lightheaded":"어지러운, 멍한",
   "lightheadedness":"어지러움, 멍함",
   /* varied 가 '다양한, 여러 가지의'다 — 글자까지 같으면 안 되므로 구별한다 */

@@ -601,7 +601,6 @@ Object.assign(window.GLOSS, {
   "keep down":"억누르다",
   "keep hold of":"~을 잡고 놓지 않다",
   "landmark":"기념비적인",
-  "legacy":"유산, 유증",
   "lie dormant":"휴면 상태에 있다",
   "loathsome":"역겨운",
   "lob":"높이 던지다",
