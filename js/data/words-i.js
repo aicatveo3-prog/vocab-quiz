@@ -2019,8 +2019,6 @@ Object.assign(window.GLOSS, {
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
   "null": "무효인",
-  "objective": "객관적인, 목표",
-  "objectively": "객관적으로",
   "occupant": "점유자",
   "occupy": "차지하다",
   "occurrence": "일어남, 사례",

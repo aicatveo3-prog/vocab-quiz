@@ -837,7 +837,7 @@ window.VOCAB_D = [
     ex:[{ s:"Chronic pain can be a deeply {{}} condition.", f:"disabling", ko:"만성 통증은 심신을 크게 무력하게 하는 질환일 수 있다." }] },
 
   { word:"disagree", pron:"디서그리", pos:"v", level:"B1", meanings:["동의하지 않다","일치하지 않다"],
-    syn:["differ","dissent","object"], ant:["agree"],
+    syn:["differ","dissent","object to"], ant:["agree"],
     ex:[{ s:"Experts still {{}} about the cause of the collapse.", f:"disagree", ko:"전문가들은 붕괴 원인에 대해 여전히 의견이 다르다." }] },
 
   { word:"disagreeable", pron:"디서그리어블", pos:"adj", level:"C1", meanings:["불쾌한","비위에 거슬리는"],
@@ -853,7 +853,7 @@ window.VOCAB_D = [
     ex:[{ s:"Fans were deeply {{}} by the team's performance.", f:"disappointed", ko:"팬들은 그 팀의 경기력에 크게 실망했다." }] },
 
   { word:"disapprove", pron:"디서프루브", pos:"v", level:"B2", meanings:["못마땅해하다","반대하다"],
-    syn:["object","frown on","condemn"], ant:["approve"],
+    syn:["object to","frown on","condemn"], ant:["approve"],
     ex:[{ s:"Her parents strongly {{}} of the whole plan.", f:"disapprove", ko:"그녀의 부모는 그 계획 전체를 강하게 못마땅해한다." }] },
 
   { word:"disassociate", pron:"디서소시에이트", pos:"v", level:"C2", meanings:["관계를 끊다","떼어 놓다"],
