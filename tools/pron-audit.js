@@ -32,6 +32,7 @@ load('js/data/words-e.js');
 load('js/data/words-f.js');
 load('js/data/words-g.js');
 load('js/data/words-h.js');
+load('js/data/words-i.js');   /* load 는 인자를 하나만 받는다 — 한 줄에 몰아 쓰면 조용히 무시된다 */
 load('js/data/gloss.js');
 
 var hasPronFile = fs.existsSync(path.join(ROOT, 'js/data/pron.js'));
@@ -43,7 +44,8 @@ var VOCAB = (window.VOCAB || [])
   .concat(window.VOCAB_D || [])
   .concat(window.VOCAB_E || []).concat(window.VOCAB_F || [])
   .concat(window.VOCAB_G || [])
-  .concat(window.VOCAB_H || []);
+  .concat(window.VOCAB_H || [])
+  .concat(window.VOCAB_I || []);
 var GLOSS = window.GLOSS || {};
 var PRON = window.PRON || {};
 
