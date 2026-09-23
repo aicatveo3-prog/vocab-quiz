@@ -1704,7 +1704,6 @@ Object.assign(window.GLOSS, {
   "lazy":"게으른, 나태한",
   "local tongue":"지역 말",
   "loyally":"충성스럽게",
-  "measurement":"측정, 치수",
   "number":"수, 숫자",
   "numeral":"숫자, 수사",
   "nutritional":"영양의, 영양상의",

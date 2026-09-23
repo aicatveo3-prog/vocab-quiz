@@ -1699,7 +1699,6 @@ window.GLOSS = {
   "liability":"부채, 책임",
   "lose":"잃다",
   "loss":"손실, 상실",
-  "meager":"빈약한",
   "mild":"가벼운, 온화한",
   "misalign":"어긋나게 하다",
   "mix":"섞다",
