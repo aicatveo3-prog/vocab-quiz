@@ -57,6 +57,25 @@ window.Conquer = (function () {
         words: slice
       });
     }
+
+    /* 마지막 챕터가 너무 짧으면 앞 챕터에 합친다.
+       짝 맞추기 보드는 4쌍 이상이어야 소거법으로 풀리지 않는다.
+       2~3단어 챕터는 보드가 2~3쌍이라 사실상 퍼즐이 안 된다.
+       기준을 MIN_TAIL(4) 로 잡으면, 기존 A~G 세트의 나머지가
+       전부 6 이상이라 하나도 영향받지 않는다. */
+    var MIN_TAIL = 4;
+    if (chapters.length >= 2) {
+      var last = chapters[chapters.length - 1];
+      if (last.words.length < MIN_TAIL) {
+        var prev = chapters[chapters.length - 2];
+        prev.words = prev.words.concat(last.words);
+        prev.to = last.to;
+        var prevStart = (prev.index) * CHAPTER_SIZE + 1;
+        prev.rangeText = prevStart + '~' + (prevStart + prev.words.length - 1);
+        chapters.pop();
+      }
+    }
+
     return chapters;
   }
 
