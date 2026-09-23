@@ -1248,7 +1248,92 @@ window.VOCAB_I = [
 
   { word:"insurance", pron:"인슈어런스", pos:"n", level:"B1", meanings:["보험","보험금"],
     syn:["coverage","policy","indemnity"],
-    ex:[{ s:"Travel {{}} covers lost luggage and delays.", f:"insurance", ko:"여행 보험은 분실된 수하물과 지연을 보상한다." }] }
+    ex:[{ s:"Travel {{}} covers lost luggage and delays.", f:"insurance", ko:"여행 보험은 분실된 수하물과 지연을 보상한다." }] },
+
+  /* 승격 ① — GLOSS '보험에 들다' 를 글자까지 지켰다. cover(syn) 가 참조한다.
+     원본 '보험에 가입하다' 는 같은 갈래라 사전 쪽 표현을 남겼다. */
+  { word:"insure", pron:"인슈어", pos:"v", level:"B2", meanings:["보험에 들다"],
+    syn:["cover","underwrite","indemnify"],
+    ex:[{ s:"It costs far more to {{}} a sports car.", f:"insure", ko:"스포츠카는 보험에 드는 데 훨씬 더 많은 비용이 든다." }] },
+
+  { word:"insurmountable", pron:"인서마운터블", pos:"adj", level:"C2", meanings:["극복할 수 없는","넘을 수 없는"],
+    syn:["unconquerable","overwhelming","impossible"],
+    ex:[{ s:"The language barrier proved {{}} at first.", f:"insurmountable", ko:"언어 장벽은 처음에 극복할 수 없는 것으로 드러났다." }] },
+
+  { word:"intact", pron:"인택트", pos:"adj", level:"B2", meanings:["온전한","손상되지 않은"],
+    syn:["unbroken","undamaged","whole"], ant:["damaged"],
+    ex:[{ s:"The seal on the jar was still {{}}.", f:"intact", ko:"그 병의 봉인은 여전히 온전했다." }] },
+
+  /* 승격 ① — GLOSS '섭취량, 흡입' 을 글자까지 지켰다. consumption(syn) 이 참조한다.
+     원본 '섭취' 는 같은 갈래라 사전 쪽 '섭취량' 을 남겼다. */
+  { word:"intake", pron:"인테이크", pos:"n", level:"B2", meanings:["섭취량","흡입"],
+    syn:["consumption","absorption","uptake"],
+    ex:[{ s:"Doctors advised him to cut his daily salt {{}}.", f:"intake", ko:"의사들은 그에게 하루 소금 섭취량을 줄이라고 권했다." }] },
+
+  /* 원본 둘째 갈래는 '근본적인' 이었는데, 8차의 indispensable('없어서는 안 될')과
+     역할이 겹치지 않게 '구성에 꼭 필요한' 으로 풀어 썼다 —
+     이 낱말은 '전체를 이루는 한 부분으로서 빠질 수 없다' 는 쪽이다. */
+  { word:"integral", pron:"인터그럴", pos:"adj", level:"C1", meanings:["필수적인","구성에 꼭 필요한"],
+    syn:["essential","fundamental","built-in"],
+    ex:[{ s:"Trust is an {{}} part of any partnership.", f:"integral", ko:"신뢰는 어떤 협력 관계에서도 필수적인 부분이다." }] },
+
+  /* 원본 첫 뜻 '통합시키다' 는 8차의 incorporate('통합하다')와 거의 같은 글자다.
+     meaningsOverlap 은 글자가 완전히 같을 때만 막으므로 이대로 두면 두 낱말이
+     같은 보기에 함께 뜰 수 있다. 원본 둘째 갈래 '융합하다' 를 앞으로 올려 갈랐다.
+     integral·integrity 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
+     안 온다. */
+  { word:"integrate", pron:"인터그레이트", pos:"v", level:"B2", meanings:["융합하다","통합시키다"],
+    syn:["combine","unify","blend"],
+    ex:[{ s:"The city works to {{}} newcomers into local life.", f:"integrate", ko:"그 도시는 새로 온 사람들을 지역 생활에 융합시키려 노력한다." }] },
+
+  { word:"integrity", pron:"인테그러티", pos:"n", level:"C1", meanings:["진실성","완전한 상태"],
+    syn:["honesty","uprightness","wholeness"],
+    ex:[{ s:"Her professional {{}} was never once in doubt.", f:"integrity", ko:"그녀의 직업적 진실성은 한 번도 의심받지 않았다." }] },
+
+  /* 승격 ① — GLOSS '지적인' 을 첫 자리에 지켰다. cognitive(syn) 가 참조한다.
+     원본의 '지능의' 를 둘째 자리에 붙였다. */
+  { word:"intellectual", pron:"인털렉추얼", pos:"adj", level:"B2", meanings:["지적인","지능의"],
+    syn:["cognitive","cerebral","scholarly"],
+    ex:[{ s:"The debate was a purely {{}} exercise.", f:"intellectual", ko:"그 토론은 순전히 지적인 훈련이었다." }] },
+
+  /* intellectual 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
+  { word:"intelligence", pron:"인텔러전스", pos:"n", level:"B1", meanings:["지능","지성"],
+    syn:["intellect","brainpower","mental capacity"],
+    ex:[{ s:"The test claims to measure general {{}}.", f:"intelligence", ko:"그 검사는 일반 지능을 측정한다고 주장한다." }] },
+
+  /* 승격 ② — GLOSS '극심한, 강렬한' 이다. acute(syn) 가 쓰는 갈래가 '극심한' 이라
+     둘째 자리에 지키고, 첫 자리는 원본의 '강렬한' 으로 했다. 순서만 바뀐다. */
+  { word:"intense", pron:"인텐스", pos:"adj", level:"B2", meanings:["강렬한","극심한"],
+    syn:["acute","fierce","severe"],
+    ex:[{ s:"The {{}} midday heat made outdoor work impossible.", f:"intense", ko:"강렬한 한낮의 더위가 야외 작업을 불가능하게 했다." }] },
+
+  /* 승격 ① — GLOSS '강화하다, 심화시키다' 를 글자까지 지켰다.
+     참조가 6곳(aggravate·amplify·dampen·escalate·fade·heighten)으로 이 세트에서
+     가장 많다. 원본은 '강화하다' 한 갈래지만 갈래를 줄이면 여섯 곳 화면이 다
+     바뀌므로 사전 쪽을 그대로 남겼다. */
+  { word:"intensify", pron:"인텐서파이", pos:"v", level:"B2", meanings:["강화하다","심화시키다"],
+    syn:["escalate","heighten","amplify"], ant:["dampen"],
+    ex:[{ s:"The storm is expected to {{}} overnight.", f:"intensify", ko:"그 폭풍은 밤새 강화될 것으로 예상된다." }] },
+
+  { word:"intensity", pron:"인텐서티", pos:"n", level:"B2", meanings:["강렬함","강도"],
+    syn:["strength","severity","ferocity"],
+    ex:[{ s:"The {{}} of the light falls off with distance.", f:"intensity", ko:"빛의 강도는 거리가 멀어지면 떨어진다." }] },
+
+  /* intense 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이 '강렬한' 과
+     '집중적인' 으로 갈려 짝을 고르는 데 무리가 없다. */
+  { word:"intensive", pron:"인텐시브", pos:"adj", level:"B2", meanings:["집중적인","철두철미한"],
+    syn:["concentrated","thorough","exhaustive"],
+    ex:[{ s:"She took an {{}} summer course in Spanish.", f:"intensive", ko:"그녀는 집중적인 여름 스페인어 과정을 수강했다." }] },
+
+  { word:"intent", pron:"인텐트", pos:"adj", level:"C1", meanings:["몰두하는","결심하고 있는"],
+    syn:["absorbed","determined","bent on"],
+    ex:[{ s:"He was {{}} on finishing the repair before dark.", f:"intent", ko:"그는 어두워지기 전에 수리를 끝내려고 몰두하고 있었다." }] },
+
+  /* intent 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
+     원본 '의사' 는 셋째 갈래라 meanings 2개 제한에 걸려 뺐다. */
+  { word:"intention", pron:"인텐션", pos:"n", level:"B1", meanings:["의도","목적"],
+    syn:["aim","purpose","goal"],
+    ex:[{ s:"She had no {{}} of resigning before the audit.", f:"intention", ko:"그녀는 감사가 끝나기 전에 사임할 의도가 없었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1279,11 +1364,13 @@ Object.assign(window.GLOSS, {
   "at the outset": "처음에",
   "baby": "아기",
   "beg": "간청하다",
+  "bent on": "~하기로 굳게 마음먹은",
   "bequest": "유증, 물려준 것",
   "betterment": "개량",
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
   "body": "단체, 조직",
+  "brainpower": "지적 능력",
   "brazen": "낯 두꺼운",
   "breathe in": "숨을 들이켜다",
   "bring on": "불러오다",
@@ -1291,6 +1378,7 @@ Object.assign(window.GLOSS, {
   "bug": "벌레",
   "bug spray": "벌레 살충 분무제",
   "bungling": "일을 망치는",
+  "cerebral": "머리를 쓰는",
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
   "clever": "영리한",
@@ -1301,6 +1389,7 @@ Object.assign(window.GLOSS, {
   "commensurate with": "~에 상응하여",
   "compared with": "~와 비교하면",
   "compulsion": "강한 욕구, 강제",
+  "concentrated": "한곳에 모은",
   "concerning": "~에 관하여",
   "confidant": "속을 털어놓는 사람",
   "confinement": "감금",
@@ -1315,6 +1404,7 @@ Object.assign(window.GLOSS, {
   "cushion": "충격을 줄이다",
   "cut off": "차단된, 외딴",
   "damage": "손상시키다, 피해",
+  "damaged": "손상된",
   "deathlessness": "불사, 죽지 않음",
   "deferred payment": "후불",
   "deficiently": "모자라게",
@@ -1324,6 +1414,7 @@ Object.assign(window.GLOSS, {
   "detection": "탐지, 발견",
   "detention": "구금",
   "deter": "막다, 억제하다",
+  "determined": "단단히 결심한",
   "different": "다른",
   "discernment": "식별력",
   "disjointed": "조리가 없는",
@@ -1351,6 +1442,7 @@ Object.assign(window.GLOSS, {
   "episode": "일화",
   "epitaph": "묘비명",
   "evenhandedly": "치우치지 않게",
+  "exhaustive": "빠뜨림 없는",
   "expansionism": "팽창주의",
   "extemporize": "즉석에서 말하다",
   "face to face": "얼굴을 맞대고",
@@ -1358,6 +1450,7 @@ Object.assign(window.GLOSS, {
   "fairly": "공정하게, 상당히",
   "fallacious": "오류가 있는",
   "faulty": "고장이 있는",
+  "ferocity": "맹렬함",
   "figuration": "형상화",
   "figurehead": "명목상의 대표",
   "first": "첫 번째의",
@@ -1386,6 +1479,7 @@ Object.assign(window.GLOSS, {
   "immunize": "면역을 주다",
   "impenetrable": "헤아릴 수 없는",
   "implied": "함축된",
+  "impossible": "불가능한",
   "imprecise": "정밀하지 않은",
   "in a way": "어떤 면에서는",
   "in accordance with": "~에 맞추어",
@@ -1418,6 +1512,7 @@ Object.assign(window.GLOSS, {
   "incite": "부추기다",
   "inculcate": "되풀이해 가르치다",
   "indecipherable": "판독할 수 없는",
+  "indemnify": "손해를 보상하다",
   "indemnity": "손해 배상금",
   "indistinguishable": "구별할 수 없는",
   "individuality": "개성, 특성",
@@ -1440,6 +1535,7 @@ Object.assign(window.GLOSS, {
   "insofar as": "~하는 한에서는",
   "insolent": "건방진",
   "insufficiently": "넉넉하지 못하게",
+  "intellect": "지력",
   "introduce": "도입하다, 소개하다",
   "intuitive": "직감에 따른",
   "inventive": "창의력이 뛰어난",
@@ -1471,6 +1567,7 @@ Object.assign(window.GLOSS, {
   "meanwhile": "한편으로는",
   "mechanized": "기계화된",
   "member": "구성원",
+  "mental capacity": "정신적 역량",
   "metaphor": "은유, 비유",
   "migration": "이주, 이동",
   "mirage": "신기루",
@@ -1539,6 +1636,7 @@ Object.assign(window.GLOSS, {
   "romanticism": "낭만주의",
   "sameness": "동일성, 똑같음",
   "scanty": "빈약한",
+  "scholarly": "학문적인",
   "scrawled": "갈겨쓴",
   "seal off": "차단하다",
   "second-rate": "이류의",
@@ -1547,6 +1645,7 @@ Object.assign(window.GLOSS, {
   "selfhood": "자아, 개체성",
   "separately": "따로따로",
   "sepsis": "패혈증",
+  "severity": "심각함",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
   "shot": "주사 한 대",
@@ -1593,8 +1692,11 @@ Object.assign(window.GLOSS, {
   "unawareness": "알지 못함",
   "unbelievable": "믿을 수 없는",
   "unbelievably": "믿을 수 없을 만큼",
+  "unconquerable": "정복할 수 없는",
+  "undamaged": "훼손되지 않은",
   "undeniable": "부인할 수 없는",
   "under way": "진행 중에",
+  "underwrite": "보험을 인수하다",
   "undeveloped": "발달하지 않은",
   "uneconomical": "돈이 많이 드는",
   "uneducated": "교육받지 못한",
@@ -1617,7 +1719,9 @@ Object.assign(window.GLOSS, {
   "unspoken": "입 밖에 내지 않은",
   "untold": "헤아릴 수 없는",
   "untreatable": "치료할 수 없는",
+  "uprightness": "곧음, 청렴",
   "upset stomach": "배탈",
+  "uptake": "흡수",
   "utensil": "기구, 용구",
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
@@ -1629,6 +1733,7 @@ Object.assign(window.GLOSS, {
   "wakefulness": "깨어 있는 상태",
   "wavering": "흔들리는",
   "whim": "일시적 기분",
+  "wholeness": "온전함",
   "with regard to": "~에 대해서는",
   "with respect to": "~와 관련해서는",
   "without": "~이 없이",
