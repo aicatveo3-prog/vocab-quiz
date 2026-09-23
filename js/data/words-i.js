@@ -1662,7 +1662,64 @@ window.VOCAB_I = [
 
   { word:"irrelevant", pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
     syn:["beside the point","immaterial","unrelated"], ant:["relevant"],
-    ex:[{ s:"That detail is {{}} to the main argument.", f:"irrelevant", ko:"그 세부 사항은 주요 논지와 상관없다." }] }
+    ex:[{ s:"That detail is {{}} to the main argument.", f:"irrelevant", ko:"그 세부 사항은 주요 논지와 상관없다." }] },
+
+  /* ── 챕터 16 ────────────────────────────── */
+
+  { word:"irresistible", pron:"이리지스터블", pos:"adj", level:"B2", meanings:["거부할 수 없는","억누를 수 없는"],
+    syn:["overpowering","compelling","tempting"],
+    ex:[{ s:"The smell of fresh bread was simply {{}}.", f:"irresistible", ko:"갓 구운 빵 냄새는 그저 거부할 수 없었다." }] },
+
+  { word:"irresponsible", pron:"이리스판서블", pos:"adj", level:"B2", meanings:["무책임한"],
+    syn:["reckless","careless","negligent"], ant:["responsible"],
+    ex:[{ s:"It would be {{}} to ignore a warning like that.", f:"irresponsible", ko:"그런 경고를 무시하는 것은 무책임할 것이다." }] },
+
+  { word:"irreversible", pron:"이리버서블", pos:"adj", level:"C1", meanings:["되돌릴 수 없는","돌이킬 수 없는"],
+    syn:["permanent","unalterable","final"], ant:["reversible"],
+    ex:[{ s:"The damage to the reef may already be {{}}.", f:"irreversible", ko:"그 산호초의 손상은 이미 되돌릴 수 없을지도 모른다." }] },
+
+  { word:"irrigate", pron:"이러게이트", pos:"v", level:"C1", meanings:["물을 대다","관개하다"],
+    syn:["water","flood","supply with water"],
+    ex:[{ s:"Farmers {{}} the fields from a nearby canal.", f:"irrigate", ko:"농부들은 근처 수로에서 밭에 물을 댄다." }] },
+
+  { word:"irritable", pron:"이러터블", pos:"adj", level:"B2", meanings:["짜증을 잘 내는","화를 잘 내는"],
+    syn:["short-tempered","touchy","cranky"], ant:["easygoing"],
+    ex:[{ s:"Lack of sleep made him {{}} all morning.", f:"irritable", ko:"수면 부족이 그를 아침 내내 짜증을 잘 내게 만들었다." }] },
+
+  /* 승격 ② — GLOSS 는 '격리하다, 고립시키다' 였다. 이번엔 사전 순서를 따르지 않고
+     원본 순서('고립시키다' 가 앞)를 택했다 — 15차의 insulate 가 '격리시키다' 를
+     첫 뜻으로 쓰기 때문이다. '격리하다' 와 '격리시키다' 는 글자가 달라
+     meaningsOverlap 이 막지 못하므로, 그대로 두면 두 표제어가 짝 맞추기에서
+     구별되지 않는다. 참조하는 alienate(syn)('멀어지게 하다')도 '고립시키다' 쪽에
+     더 잘 맞는다. 두 갈래는 다 살아 있어 순서만 바뀐다. */
+  { word:"isolate", pron:"아이설레이트", pos:"v", level:"B2", meanings:["고립시키다","격리하다"],
+    syn:["alienate","segregate","quarantine"],
+    ex:[{ s:"The storm {{}} several villages for three days.", f:"isolated", ko:"그 폭풍은 여러 마을을 사흘간 고립시켰다." }] },
+
+  /* isolate 와 어근이 같지만 품사가 달라(v/adj) 같은 보드에 안 온다. */
+  { word:"isolated", pron:"아이설레이팃", pos:"adj", level:"B2", meanings:["고립된","외딴"],
+    syn:["remote","secluded","cut off"],
+    ex:[{ s:"The farm is completely {{}} from the nearest town.", f:"isolated", ko:"그 농장은 가장 가까운 마을에서 완전히 고립되어 있다." }] },
+
+  /* 원본은 '발표하다; 발행하다; 화제' 로 동사와 명사가 갈린다. 동사 쪽으로 모았다 —
+     명사 '화제' 는 바꿔 쓸 유의어 3개를 만들기 어렵다. */
+  { word:"issue", pron:"이슈", pos:"v", level:"B1", meanings:["발표하다","발행하다"],
+    syn:["announce","release","publish"],
+    ex:[{ s:"The ministry will {{}} a full statement tomorrow.", f:"issue", ko:"그 부처는 내일 전체 성명을 발표할 것이다." }] },
+
+  { word:"itchy", pron:"이치", pos:"adj", level:"B2", meanings:["가려운","간질간질한"],
+    syn:["prickly","tickly","irritated"],
+    ex:[{ s:"The wool sweater made his neck {{}}.", f:"itchy", ko:"그 양모 스웨터가 그의 목을 가렵게 했다." }] },
+
+  /* 승격 ① — GLOSS '물품, 항목' 을 글자까지 지켰다. article(syn) 이 참조하므로
+     원본의 순서('항목, 조항, 물건') 대신 사전 쪽을 남겼다. */
+  { word:"item", pron:"아이텀", pos:"n", level:"B1", meanings:["물품","항목"],
+    syn:["article","object","entry"],
+    ex:[{ s:"Please check each {{}} against the packing list.", f:"item", ko:"포장 목록과 대조해 각 물품을 확인하세요." }] },
+
+  { word:"itinerary", pron:"아이티너레리", pos:"n", level:"C1", meanings:["여행 계획","여정"],
+    syn:["schedule","route plan","travel plan"],
+    ex:[{ s:"Our {{}} includes three days in Kyoto.", f:"itinerary", ko:"우리 여행 계획에는 교토에서 사흘이 포함된다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 (세트 파일에 PRON
@@ -1748,6 +1805,7 @@ Object.assign(window.GLOSS, {
   "contemplative": "깊이 생각하는",
   "convoluted": "뒤얽힌",
   "corresponding to": "~에 대응하여",
+  "cranky": "까다로운, 투덜대는",
   "creative": "창의적인",
   "creeping": "슬금슬금 퍼지는",
   "creepy-crawly": "기어 다니는 벌레",
@@ -1969,6 +2027,7 @@ Object.assign(window.GLOSS, {
   "mutually reliant": "서로에게 기대는",
   "naivety": "순진함",
   "narrow-mindedness": "속 좁음",
+  "negligent": "소홀한",
   "newborn": "갓난아기",
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
@@ -1988,6 +2047,7 @@ Object.assign(window.GLOSS, {
   "optimal": "최적의",
   "optimally": "최적으로",
   "over time": "시간이 지나면서",
+  "overpowering": "압도하는",
   "overrun": "짓밟고 들어가다",
   "pamper": "애지중지하다",
   "participation": "참가",
@@ -2011,6 +2071,7 @@ Object.assign(window.GLOSS, {
   "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
   "priceless": "값을 헤아릴 수 없는",
+  "prickly": "따끔거리는",
   "primeval": "원시의, 태고의",
   "probing": "파고드는",
   "prominent name": "이름난 인물",
@@ -2021,6 +2082,7 @@ Object.assign(window.GLOSS, {
   "protected": "보호되는",
   "prying": "남의 일을 캐는",
   "public works": "공공 사업",
+  "publish": "출간하다",
   "put in": "넣다",
   "put in place": "자리에 놓다",
   "put money into": "~에 돈을 넣다",
@@ -2042,11 +2104,14 @@ Object.assign(window.GLOSS, {
   "reserved person": "말을 아끼는 사람",
   "resistant": "저항력이 있는",
   "resourceful": "기지가 뛰어난",
+  "responsible": "책임감 있는",
   "restlessness": "잠 못 이룸",
   "retiring": "나서기를 꺼리는",
   "reversed": "뒤집힌",
+  "reversible": "되돌릴 수 있는",
   "reward": "보상",
   "romanticism": "낭만주의",
+  "route plan": "경로 계획",
   "sameness": "동일성, 똑같음",
   "sarcasm": "비꼬는 말",
   "scanty": "빈약한",
@@ -2055,6 +2120,7 @@ Object.assign(window.GLOSS, {
   "seal off": "차단하다",
   "second-rate": "이류의",
   "secondary": "이차적인",
+  "segregate": "따로 떼어 놓다",
   "selective": "가려서 하는",
   "self-examination": "자기 점검",
   "selfhood": "자아, 개체성",
@@ -2063,6 +2129,7 @@ Object.assign(window.GLOSS, {
   "severity": "심각함",
   "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
+  "short-tempered": "성미가 급한",
   "shot": "주사 한 대",
   "shy": "수줍은",
   "sign": "징후, 표지",
@@ -2093,6 +2160,7 @@ Object.assign(window.GLOSS, {
   "substandard": "표준에 못 미치는",
   "succeed to": "~을 승계하다",
   "suck in": "빨아들이다",
+  "supply with water": "물을 공급하다",
   "surge": "급증",
   "surrounded by": "~에 둘러싸여",
   "susceptible": "영향받기 쉬운",
@@ -2105,6 +2173,7 @@ Object.assign(window.GLOSS, {
   "teach": "가르치다",
   "tendency": "성향",
   "thermal": "열의",
+  "tickly": "간지러운",
   "tilt": "기울이다",
   "to begin with": "먼저",
   "to some extent": "어느 정도는",
@@ -2112,7 +2181,9 @@ Object.assign(window.GLOSS, {
   "toddler": "아기, 걸음마쟁이",
   "tolerance": "관용",
   "tool": "연장",
+  "touchy": "신경이 곤두선",
   "trade places": "자리를 맞바꾸다",
+  "travel plan": "여행 일정표",
   "treacherous": "믿을 수 없는",
   "trespass": "무단으로 들어가다",
   "truly": "참으로",
@@ -2164,6 +2235,7 @@ Object.assign(window.GLOSS, {
   "volatility": "변동이 심함",
   "voracious": "식욕이 왕성한",
   "wakefulness": "깨어 있는 상태",
+  "water": "물을 주다",
   "wavering": "흔들리는",
   "whim": "일시적 기분",
   "wholeness": "온전함",
