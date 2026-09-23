@@ -2003,7 +2003,6 @@ Object.assign(window.GLOSS, {
   "loneliness":"외로움",
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
-  "mistaken":"잘못된, 틀린",
   "murky":"흐린, 탁한",
   "naive":"순진한, 어수룩한",
   "noble":"귀족, 고귀한",

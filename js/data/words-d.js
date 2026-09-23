@@ -1527,7 +1527,6 @@ Object.assign(window.GLOSS, {
   "logging":"벌목, 삼림 채벌",
   "mar":"훼손하다, 망치다",
   "misshape":"모양을 망치다",
-  "mission":"사절단; 임무",
   "ordinance":"조례, 법령",
   "overjoyed":"매우 기뻐하는",
   "parch":"바싹 마르게 하다",

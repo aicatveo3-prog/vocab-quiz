@@ -739,7 +739,6 @@ Object.assign(window.GLOSS, {
   "magnanimity":"도량이 큼",
   "mesh":"그물망",
   "mill":"제분하다",
-  "moan":"앓는 소리를 내다",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
   "network":"망, 연결망",

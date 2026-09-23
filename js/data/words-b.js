@@ -982,7 +982,6 @@ Object.assign(window.GLOSS, {
   "let in":"들이다, 통과시키다",
   "lose":"지다, 잃다",
   "misery":"고통, 비참",
-  "modest":"잘난 척하지 않는, 소박한",
   "monoculture":"단일 재배",
   "monolingual":"1개 국어만 쓰는",
   "narrowness":"좁음",
