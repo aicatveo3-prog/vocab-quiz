@@ -2018,8 +2018,6 @@ Object.assign(window.GLOSS, {
   "newborn": "갓난아기",
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
-  "notify": "통보하다",
-  "novelty": "새로움",
   "null": "무효인",
   "objective": "객관적인, 목표",
   "objectively": "객관적으로",

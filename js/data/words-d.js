@@ -1699,7 +1699,6 @@ Object.assign(window.GLOSS, {
   "loyally":"충성스럽게",
   "number":"수, 숫자",
   "numeral":"숫자, 수사",
-  "nutritional":"영양의, 영양상의",
   "nutritive":"영양이 되는",
   "pinpoint":"정확히 찾아내다",
   "poised":"침착한, 태연한",

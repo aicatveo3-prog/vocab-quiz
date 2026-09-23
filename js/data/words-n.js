@@ -364,11 +364,126 @@ window.VOCAB_N = [
      원본대로 명사로 세우고 '분간하다, 인지하다' 갈래는 버렸다. */
   { word:"notice", pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
     syn:["posted sign","official word","notification"],
-    ex:[{ s:"A {{}} on the door said the shop had moved.", f:"notice", ko:"문에 붙은 통지는 가게가 이사했다고 알렸다." }] }
+    ex:[{ s:"A {{}} on the door said the shop had moved.", f:"notice", ko:"문에 붙은 통지는 가게가 이사했다고 알렸다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────────────── */
+  /* 이 챕터는 손대지 않으면 여섯 낱말이 여덟 번 서로 물린다.
+     nourish·nurture·nutrient·nutrition·nutritious 가 모두 '영양분' 을 품고 있어서
+     meaningsOverlap 이 부분 문자열까지 잡기 때문이다. 아래처럼 갈라 0으로 줄였다.
+       nourish    영양분을 공급하다      nutrient    영양소
+       nurture    양육하다, 보살펴 키우다  nutrition   영양, 영양 섭취
+       nutritious 영양이 풍부한          nutritional 영양의, 영양상의             */
+
+  /* 승격 26 — 사전은 '눈에 띄는' 한 갈래였다. 원본의 '뚜렷한' 을 뒤에 붙였다.
+     conspicuous(C)·marked(M) 가 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다.
+     원본의 '분명한' 은 obvious 쪽 뜻이어서 버렸다. */
+  { word:"noticeable", pron:"노티서블", pos:"adj", level:"B2", meanings:["눈에 띄는","뚜렷한"],
+    syn:["easily seen","standing out","hard to miss"], ant:["faint"],
+    ex:[{ s:"There was a {{}} gap between the two walls.", f:"noticeable", ko:"두 벽 사이에 눈에 띄는 틈이 있었다." }] },
+
+  /* 승격 27 — 사전은 '통보하다' 한 갈래였다. 원본의 '통지하다' 를 뒤에 붙였다.
+     inform(I) 이 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다. */
+  { word:"notify", pron:"노터파이", pos:"v", level:"B2", meanings:["통보하다","통지하다"],
+    syn:["let know","send word to","give notice to"],
+    ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
+
+  /* 승격 28 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
+  { word:"notion", pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
+    syn:["idea","conception","mental picture"],
+    ex:[{ s:"He had no {{}} of how long it would take.", f:"notion", ko:"그는 얼마나 걸릴지에 대한 개념이 없었다." }] },
+
+  /* 승격 29 — 사전은 '악명 높은' 한 갈래였다(발음은 없었다).
+     원본의 '유명한' 은 notable 과 부딪히므로 '소문난' 을 뒤에 붙였다. */
+  { word:"notorious", pron:"노토리어스", pos:"adj", level:"C1", meanings:["악명 높은","소문난"],
+    syn:["infamous","of bad repute","widely criticized"], ant:["esteemed"],
+    ex:[{ s:"The road is {{}} for its sharp bends.", f:"notorious", ko:"그 길은 급한 굽이로 악명 높다." }] },
+
+  { word:"nourish", pron:"너리시", pos:"v", level:"B2", meanings:["영양분을 공급하다"],
+    syn:["feed well","sustain with food","build up"],
+    ex:[{ s:"Leafy greens {{}} the body with iron.", f:"nourish", ko:"잎채소는 몸에 철분으로 영양분을 공급한다." }] },
+
+  /* 승격 30 — 사전이 '소설; 새로운' 으로 명사와 형용사가 섞여 있었다.
+     conventional(ant, C) 이 형용사 갈래를 쓰므로 형용사로 세우고 '소설' 은 버렸다.
+     학생들이 '소설' 로만 알아서 틀리는 쪽이 이 형용사 갈래다. */
+  { word:"novel", pron:"나벌", pos:"adj", level:"B2", meanings:["참신한","신기한"],
+    syn:["fresh","original","never tried before"], ant:["conventional"],
+    ex:[{ s:"She proposed a {{}} way to cut waste.", f:"novel", ko:"그녀는 쓰레기를 줄이는 참신한 방법을 제안했다." }] },
+
+  /* 승격 31 — 사전은 '새로움' 한 갈래였다. 원본의 '진귀함' 을 뒤에 붙였다.
+     innovation(I) 이 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다. */
+  { word:"novelty", pron:"나벌티", pos:"n", level:"B2", meanings:["새로움","진귀함"],
+    syn:["freshness","rarity value","unfamiliar charm"],
+    ex:[{ s:"The {{}} of the game wore off in a week.", f:"novelty", ko:"그 놀이의 새로움은 한 주 만에 사라졌다." }] },
+
+  /* 승격 32 — 사전 표현 '초보자, 풋내기' 를 글자까지 지켰다(apprentice, A). */
+  { word:"novice", pron:"나비스", pos:"n", level:"B2", meanings:["초보자","풋내기"],
+    syn:["beginner","newcomer","raw recruit"], ant:["veteran"],
+    ex:[{ s:"As a {{}}, he kept dropping the tools.", f:"novice", ko:"초보자여서 그는 연장을 계속 떨어뜨렸다." }] },
+
+  { word:"now and then", pron:"나우 앤드 덴", pos:"phr", level:"B1", meanings:["가끔","이따금"],
+    syn:["once in a while","from time to time","at intervals"] },
+
+  { word:"noxious", pron:"낙셔스", pos:"adj", level:"C1", meanings:["유독한","유해한"],
+    syn:["poisonous","harmful to health","injurious"], ant:["wholesome"],
+    ex:[{ s:"The factory released {{}} fumes.", f:"noxious", ko:"그 공장은 유독한 연기를 내보냈다." }] },
+
+  /* 승격 33 — 사전 표현 '핵의, 원자력의' 를 글자까지 지켰다(atomic, A).
+     원본의 '원자핵의' 대신 사전 쪽을 남겼다. */
+  { word:"nuclear", pron:"누클리어", pos:"adj", level:"B2", meanings:["핵의","원자력의"],
+    syn:["atom-based","fission-related","of the atom's core"],
+    ex:[{ s:"The country closed its last {{}} plant.", f:"nuclear", ko:"그 나라는 마지막 원자력의 발전소를 닫았다." }] },
+
+  /* 승격 34 — 사전 표현 '성가신 것, 골칫거리' 를 글자까지 지켰다(annoyance, A).
+     원본의 '성가심, 방해' 대신 사전 쪽을 남겼다. */
+  { word:"nuisance", pron:"누선스", pos:"n", level:"B2", meanings:["성가신 것","골칫거리"],
+    syn:["bother","pest","source of trouble"],
+    ex:[{ s:"The dripping tap became a real {{}}.", f:"nuisance", ko:"물이 떨어지는 수도꼭지가 진짜 골칫거리가 되었다." }] },
+
+  { word:"numb", pron:"넘", pos:"adj", level:"B2", meanings:["감각을 잃은","마비된"],
+    syn:["without feeling","deadened","unable to feel"], ant:["sensitive"],
+    ex:[{ s:"His fingers went {{}} in the cold water.", f:"numb", ko:"그의 손가락이 찬물에서 감각을 잃었다." }] },
+
+  { word:"numerical", pron:"누메리컬", pos:"adj", level:"B2", meanings:["숫자로 나타낸","숫자상의"],
+    syn:["expressed in figures","number-based","quantitative"],
+    ex:[{ s:"Give the answer in {{}} form.", f:"numerical", ko:"답을 숫자로 나타낸 형태로 쓰세요." }] },
+
+  /* 승격 35 — ★원본의 뜻이 '많은' 두 글자여서 선택지에서 뜻으로 읽기 빠듯했다.
+     사전 표현 '수많은, 다수의' 를 글자까지 지켰다(a host of, A · multiple, M). */
+  { word:"numerous", pron:"누머러스", pos:"adj", level:"B2", meanings:["수많은","다수의"],
+    syn:["a great many","countless","plentiful"], ant:["scarce"],
+    ex:[{ s:"The city has {{}} small bookshops.", f:"numerous", ko:"그 도시에는 수많은 작은 책방이 있다." }] },
+
+  /* 승격 36 — 사전은 '양육하다, 기르다' 였다. '기르다' 를 그대로 두면 이 챕터의
+     nourish 와 부딪히므로 '보살펴 키우다' 로 갈랐다. 첫 뜻은 사전값을 지켰다.
+     참조 네 곳(cultivate·foster·harbor·incubate) 이 모두 동사다. */
+  { word:"nurture", pron:"너처", pos:"v", level:"B2", meanings:["양육하다","보살펴 키우다"],
+    syn:["bring up","rear","tend carefully"], ant:["neglect"],
+    ex:[{ s:"Good teachers {{}} curiosity in children.", f:"nurture", ko:"좋은 교사는 아이들의 호기심을 보살펴 키운다." }] },
+
+  /* 승격 37 — 사전은 '영양분, 양분' 이었다. '영양분' 을 그대로 두면 이 챕터의
+     nutrition·nutritious·nourish 와 줄줄이 물리므로 '영양소' 한 갈래로 좁혔다.
+     antioxidant(A) 의 화면 글자가 함께 바뀐다. */
+  { word:"nutrient", pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
+    syn:["nourishing substance","food element","dietary component"],
+    ex:[{ s:"Iron is an essential {{}} for blood.", f:"nutrient", ko:"철분은 피에 꼭 필요한 영양소다." }] },
+
+  { word:"nutrition", pron:"누트리션", pos:"n", level:"B2", meanings:["영양","영양 섭취"],
+    syn:["diet quality","food intake","feeding"],
+    ex:[{ s:"Poor {{}} slows a child's growth.", f:"nutrition", ko:"형편없는 영양은 아이의 성장을 늦춘다." }] },
+
+  /* 승격 38 — 사전 표현 '영양의, 영양상의' 를 글자까지 지켰다(dietary, D). */
+  { word:"nutritional", pron:"뉴트리셔널", pos:"adj", level:"B2", meanings:["영양의","영양상의"],
+    syn:["diet-related","food-value","concerning nourishment"],
+    ex:[{ s:"Check the {{}} label before buying.", f:"nutritional", ko:"사기 전에 영양의 표시를 확인하세요." }] },
+
+  { word:"nutritious", pron:"누트리셔스", pos:"adj", level:"B2", meanings:["영양이 풍부한"],
+    syn:["full of goodness","health-giving","rich in food value"], ant:["empty of value"],
+    ex:[{ s:"Beans are cheap and {{}}.", f:"nutritious", ko:"콩은 값이 싸고 영양이 풍부하다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a great many": "아주 많은 수의",
   "accepted rule": "널리 받아들여진 규칙",
   "admit as a citizen": "시민으로 받아들이다",
   "after-dark": "해 진 뒤의",
@@ -376,56 +491,86 @@ Object.assign(window.GLOSS, {
   "aristocracy": "귀족 계급",
   "aristocratic": "귀족적인",
   "as a matter of course": "당연한 일로",
+  "at intervals": "일정한 사이를 두고",
+  "atom-based": "원자를 이용한",
   "badly behaved": "행실이 나쁜",
   "baseline sample": "기준이 되는 표본",
+  "beginner": "처음 배우는 사람",
   "bigoted": "편견에 찬",
   "brain-circuit": "뇌 회로의",
   "brain-medicine": "뇌 의학의",
   "brief rest": "잠깐의 휴식",
   "bring in a species": "종을 들여오다",
+  "build up": "차츰 튼튼하게 하다",
   "called-for": "꼭 있어야 하는",
   "candidacy": "후보 자격",
   "carelessness": "부주의함",
   "come to terms": "합의에 이르다",
   "comparison group": "비교 대상 집단",
   "composure": "침착함",
+  "conception": "머릿속에 그린 것",
+  "concerning nourishment": "영양에 관한",
   "course-plotting": "항로를 그림",
   "cramped": "옹색한",
   "cut down": "개수를 줄이다",
   "daytime": "낮의",
+  "deadened": "둔해진",
   "deft": "솜씨 좋은",
   "dereliction": "직무 유기",
+  "diet quality": "먹는 것의 질",
+  "diet-related": "식단에 관한",
+  "dietary component": "식단을 이루는 요소",
   "diligence": "근면",
   "disobedient": "말을 안 듣는",
   "disposition": "타고난 성향",
   "downbeat": "가라앉은",
   "drivel": "헛소리",
+  "easily seen": "쉽게 보이는",
   "edginess": "안절부절함",
+  "empty of value": "값이 없는",
   "empty talk": "속 빈 말",
+  "esteemed": "높이 평가받는",
   "even so": "그래도",
   "existing": "실제로 있는",
+  "expressed in figures": "수치로 적은",
   "factual writing": "사실을 적은 글",
   "fail to care for": "돌보지 않다",
+  "feed well": "잘 먹이다",
+  "feeding": "먹여 기름",
+  "fission-related": "핵분열에 관한",
   "fleet-related": "함대에 관한",
   "focus in on": "~로 초점을 모으다",
+  "food element": "먹거리 성분",
+  "food intake": "먹거리 섭취",
+  "food-value": "먹거리로서의 값",
   "for all that": "그런데도",
   "foreign-born": "외국에서 태어난",
   "forty winks": "눈 좀 붙이기",
   "foul": "형편없이 나쁜",
+  "freshness": "새로 나온 느낌",
+  "from time to time": "때에 따라 이따금",
+  "full of goodness": "몸에 좋은 것이 가득한",
   "gestural": "몸짓으로 하는",
+  "give notice to": "~에게 알림을 주다",
   "grant citizenship to": "~에게 시민권을 주다",
   "gullible": "잘 속아 넘어가는",
+  "hard to miss": "놓치기 어려운",
+  "harmful to health": "건강에 나쁜",
+  "health-giving": "건강을 주는",
   "high birth": "높은 가문 태생",
   "high-minded": "뜻이 높은",
   "homegrown": "제 땅에서 난",
   "homesickness": "고향을 그리는 마음",
+  "idea": "착상",
   "ignoble": "비열한",
   "in name only": "이름만 있는",
   "in other words": "달리 말하면",
   "in spite of that": "그것에도 아랑곳없이",
   "inattention": "주의를 기울이지 않음",
   "inevitably": "어쩔 수 없이",
+  "infamous": "나쁜 쪽으로 이름난",
   "inherent quality": "본디 지닌 성질",
+  "injurious": "몸을 해치는",
   "insignificant": "대단치 않은",
   "intolerant": "너그럽지 못한",
   "itinerant": "떠돌이의",
@@ -434,6 +579,7 @@ Object.assign(window.GLOSS, {
   "keep on at": "계속 다그치다",
   "laxity": "느슨함",
   "let alone": "~은커녕",
+  "let know": "알려 주다",
   "let slide": "내버려 두다",
   "light-footed": "발이 가벼운",
   "local-born": "그 지역에서 태어난",
@@ -442,6 +588,7 @@ Object.assign(window.GLOSS, {
   "make unavoidable": "피할 수 없게 만들다",
   "maritime military": "바다 군사의",
   "mean-spirited": "심보가 나쁜",
+  "mental picture": "마음속 그림",
   "mischievous": "장난이 심한",
   "must-have": "꼭 있어야 할 것",
   "name as candidate": "후보로 이름을 올리다",
@@ -451,18 +598,25 @@ Object.assign(window.GLOSS, {
   "nerve-disease-related": "신경 질환에 관한",
   "nerve-related": "신경에 관한",
   "neurology-based": "신경학에 바탕한",
+  "never tried before": "여태 해 본 적 없는",
+  "newcomer": "새로 들어온 사람",
   "night-active": "밤에 움직이는",
   "not physical": "물질이 아닌",
   "not returnable": "되돌려 받을 수 없는",
   "not there at all": "아예 없는",
   "not-for-profit": "이익을 남기지 않는",
   "notification": "알림",
+  "nourishing substance": "영양을 주는 물질",
+  "number-based": "수를 바탕으로 한",
+  "of bad repute": "평판이 나쁜",
   "of consequence": "무게가 있는",
   "of necessity": "필요에 따라",
+  "of the atom's core": "원자 중심에 관한",
   "of the nervous system": "신경계에 속한",
   "of the night": "밤에 속한",
   "of the spirit": "정신에 속한",
   "official word": "공식으로 알리는 말",
+  "once in a while": "때때로 한 번씩",
   "over and above that": "그 위에 더해",
   "paid for good": "낸 뒤 되찾지 못하는",
   "peaceable": "평온하게 하는",
@@ -470,16 +624,22 @@ Object.assign(window.GLOSS, {
   "pester": "귀찮게 하다",
   "point out": "집어서 말하다",
   "posted sign": "붙여 놓은 알림",
+  "quantitative": "양으로 따지는",
   "quick-moving": "빠르게 움직이는",
+  "rarity value": "드물어서 생기는 값",
+  "raw recruit": "갓 들어온 사람",
   "real-life writing": "실제 삶을 다룬 글",
   "recording scheme": "적어 두는 방식",
   "recounting": "이야기해 줌",
   "reference group": "견주어 보는 집단",
   "remark on": "~에 대해 말하다",
+  "rich in food value": "먹거리 값이 높은",
   "roaming": "여기저기 옮겨 다니는",
   "run for public good": "공익을 위해 운영되는",
   "sailing": "배를 몰기",
   "seagoing": "바다를 다니는",
+  "send word to": "~에게 말을 전하다",
+  "sensitive": "느낌이 예민한",
   "set of written signs": "적어 쓰는 기호 묶음",
   "settle cozily": "편안히 자리 잡다",
   "settled": "정착한",
@@ -489,14 +649,18 @@ Object.assign(window.GLOSS, {
   "small-minded": "생각이 좁은",
   "snug spot": "꼭 들어맞는 자리",
   "snuggle": "파고들어 안기다",
+  "source of trouble": "말썽의 근원",
   "specialized corner": "전문화된 영역",
   "spoken": "입으로 말하는",
+  "standing out": "도드라지는",
   "storyline": "줄거리",
+  "sustain with food": "먹거리로 버티게 하다",
   "symbol system": "기호 체계",
   "take a nap": "낮잠을 자다",
   "take note of": "~을 눈여겨보다",
   "taking no side": "편을 들지 않는",
   "temperament": "기질",
+  "tend carefully": "정성껏 돌보다",
   "tension": "팽팽함",
   "that is to say": "말하자면",
   "the titled classes": "작위를 가진 계층",
@@ -509,20 +673,26 @@ Object.assign(window.GLOSS, {
   "trifling": "대수롭지 않은",
   "true account": "실제 있었던 이야기",
   "tuck oneself in": "몸을 들이밀다",
+  "unable to feel": "느낄 수 없는",
   "unaligned": "어느 편도 아닌",
   "unarmed": "무기를 들지 않은",
+  "unfamiliar charm": "낯설어서 끌리는 맛",
   "unworldly": "세상을 모르는",
   "usual pattern": "으레 그러한 틀",
+  "veteran": "오래 해 온 사람",
   "voice-over": "화면 밖 목소리",
   "wandering": "떠돌아다니는",
   "wayfinding": "길을 찾아냄",
   "well-behaved": "행동이 바른",
   "what is expected": "당연히 여겨지는 것",
   "whittle down": "조금씩 줄이다",
+  "wholesome": "몸에 이로운",
   "wholly lacking": "온전히 빠져 있는",
   "wide": "폭이 넓은",
+  "widely criticized": "널리 욕먹는",
   "wistful memory": "아련한 기억",
   "without any trace": "흔적조차 없는",
+  "without feeling": "느낌이 없는",
   "without force": "힘을 쓰지 않는",
   "without money back": "돈을 돌려주지 않는",
   "without speech": "말 없이 하는",

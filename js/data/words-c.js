@@ -2006,7 +2006,6 @@ Object.assign(window.GLOSS, {
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
-  "novel":"새로운, 신기한",
   "obey":"따르다, 복종하다",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
