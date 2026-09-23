@@ -773,7 +773,7 @@ window.VOCAB_C = [
     ex:[{ s:"The trial will {{}} in early March.", f:"commence", ko:"재판은 3월 초에 시작될 것이다." }] },
 
   { word:"comment", pron:"카멘트", pos:"v", level:"B1", meanings:["견해를 밝히다","논평"],
-    syn:["remark","observe","state"],
+    syn:["remark","note","state"],
     ex:[{ s:"He refused to {{}} on the rumour.", f:"comment", ko:"그는 그 소문에 대해 견해를 밝히기를 거부했다." }] },
 
   { word:"commentary", pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
@@ -2006,7 +2006,6 @@ Object.assign(window.GLOSS, {
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
-  "nonprofit":"비영리의",
   "novel":"새로운, 신기한",
   "obey":"따르다, 복종하다",
   "oblivion":"망각, 무의식",

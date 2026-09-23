@@ -261,11 +261,115 @@ window.VOCAB_N = [
      minimal(M) 이 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다. */
   { word:"nominal", pron:"나머널", pos:"adj", level:"C1", meanings:["이름뿐인","명목상의"],
     syn:["in name only","titular","token-level"], ant:["actual"],
-    ex:[{ s:"He is the {{}} head, but others decide.", f:"nominal", ko:"그는 이름뿐인 수장이고, 결정은 다른 이들이 한다." }] }
+    ex:[{ s:"He is the {{}} head, but others decide.", f:"nominal", ko:"그는 이름뿐인 수장이고, 결정은 다른 이들이 한다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────────────── */
+
+  /* 승격 ⑳ — 사전 표현을 글자까지 지켰다(designate, D). */
+  { word:"nominate", pron:"나머네이트", pos:"v", level:"B2", meanings:["지명하다","후보로 추천하다"],
+    syn:["designate","put forward","name as candidate"],
+    ex:[{ s:"The board will {{}} two new directors.", f:"nominate", ko:"이사회는 새 이사 두 명을 지명할 것이다." }] },
+
+  /* 승격 21 — 사전 표현을 글자까지 지켰다(appointment, A). */
+  { word:"nomination", pron:"나머네이션", pos:"n", level:"B2", meanings:["지명","후보 지정"],
+    syn:["appointment","naming","candidacy"],
+    ex:[{ s:"Her {{}} surprised the whole committee.", f:"nomination", ko:"그녀의 지명은 위원회 전체를 놀라게 했다." }] },
+
+  /* nonetheless 는 사전에 없던 낱머다. 챕터 2 의 nevertheless 가 사전 표현
+     '그럼에도 불구하고' 를 쓰므로 이쪽을 '그렇기는 하지만' 으로 갈랐다.
+     둘은 실제로 같은 뜻이어서 서로 유의어로 등록해 두었다. */
+  { word:"nonetheless", pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
+    syn:["nevertheless","in spite of that","just the same"],
+    ex:[{ s:"The road was icy; {{}}, the bus ran on time.", f:"nonetheless", ko:"길이 얼었지만, 그렇기는 하지만 버스는 정시에 다녔다." }] },
+
+  { word:"nonexistent", pron:"난이그지스턴트", pos:"adj", level:"B2", meanings:["존재하지 않는"],
+    syn:["not there at all","wholly lacking","without any trace"], ant:["existing"],
+    ex:[{ s:"Public transport in the village is almost {{}}.", f:"nonexistent", ko:"그 마을의 대중교통은 거의 존재하지 않는다." }] },
+
+  /* 원본 뜻이 '사실이나 실제 일어난 일을 다루는 글' 이라는 서술문이었다 —
+     선택지에 담기엔 길어서 '실화, 논픽션' 으로 줄였다. */
+  { word:"nonfiction", pron:"난픽션", pos:"n", level:"B2", meanings:["실화","논픽션"],
+    syn:["factual writing","true account","real-life writing"], ant:["fiction"],
+    ex:[{ s:"He reads only {{}} these days.", f:"nonfiction", ko:"그는 요즘 실화만 읽는다." }] },
+
+  { word:"nonmaterial", pron:"난머티리얼", pos:"adj", level:"C1", meanings:["비물질적인","영적인"],
+    syn:["immaterial","not physical","of the spirit"], ant:["tangible"],
+    ex:[{ s:"Songs and stories are {{}} heritage.", f:"nonmaterial", ko:"노래와 이야기는 비물질적인 유산이다." }] },
+
+  /* 승격 22 — 사전 표현 '비영리의' 를 글자까지 지켰다(commercial 의 반의어 자리).
+     원본의 '비영리적인' 보다 사전 쪽을 남겼다. */
+  { word:"nonprofit", pron:"난프라핏", pos:"adj", level:"B2", meanings:["비영리의"],
+    syn:["not-for-profit","charitable","run for public good"], ant:["commercial"],
+    ex:[{ s:"She works for a {{}} group that plants trees.", f:"nonprofit", ko:"그녀는 나무를 심는 비영리의 단체에서 일한다." }] },
+
+  { word:"non-refundable", pron:"난 리펀더블", pos:"adj", level:"B2", meanings:["환불이 안 되는"],
+    syn:["not returnable","paid for good","without money back"],
+    ex:[{ s:"The deposit is {{}} once the room is booked.", f:"non-refundable", ko:"방을 예약하면 보증금은 환불이 안 된다." }] },
+
+  { word:"nonsense", pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
+    syn:["rubbish","drivel","empty talk"],
+    ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },
+
+  { word:"nonverbal", pron:"난버벌", pos:"adj", level:"B2", meanings:["비언어적인","말을 쓰지 않는"],
+    syn:["unspoken","gestural","without speech"], ant:["spoken"],
+    ex:[{ s:"A frown is a strong {{}} signal.", f:"nonverbal", ko:"찡그림은 강한 비언어적인 신호다." }] },
+
+  { word:"nonviolent", pron:"난바이얼런트", pos:"adj", level:"B2", meanings:["비폭력의"],
+    syn:["peaceable","without force","unarmed"], ant:["violent"],
+    ex:[{ s:"They staged a {{}} sit-in outside the hall.", f:"nonviolent", ko:"그들은 회관 밖에서 비폭력의 연좌 농성을 벌였다." }] },
+
+  { word:"norm", pron:"놈", pos:"n", level:"B2", meanings:["규범","표준"],
+    syn:["accepted rule","usual pattern","what is expected"],
+    ex:[{ s:"Working from home became the {{}}.", f:"norm", ko:"집에서 일하는 것이 규범이 되었다." }] },
+
+  /* norm group 은 심리 검사에서 쓰는 전문 용어다. 일반 어휘가 아니지만
+     유의어 셋을 세울 수 있어 비우지 않았다. 구·표현이라 ex 는 넣지 않는다. */
+  { word:"norm group", pron:"놈 그룹", pos:"phr", level:"C2", meanings:["기준 집단","준거 집단"],
+    syn:["reference group","comparison group","baseline sample"] },
+
+  { word:"nostalgia", pron:"노스탤저", pos:"n", level:"C1", meanings:["옛날을 그리워함","향수"],
+    syn:["longing for the past","homesickness","wistful memory"],
+    ex:[{ s:"Old photographs filled her with {{}}.", f:"nostalgia", ko:"오래된 사진들이 그녀를 옛날을 그리워함으로 채웠다." }] },
+
+  { word:"not to mention", pron:"낫 투 멘션", pos:"phr", level:"B2", meanings:["~은 말할 것도 없고"],
+    syn:["to say nothing of","let alone","over and above that"] },
+
+  /* 승격 23 — 사전은 '주목할 만한, 유명한' 이었다. '유명한' 은 같은 챕터 4 의
+     notorious(악명 높은, 소문난) 와 부딪히므로 원본의 '중요한' 을 썼다.
+     참조가 없어 화면 변화는 없다. */
+  { word:"notable", pron:"노터블", pos:"adj", level:"B2", meanings:["주목할 만한","중요한"],
+    syn:["striking","worth noting","of consequence"], ant:["unremarkable"],
+    ex:[{ s:"The year brought one {{}} change to the rules.", f:"notable", ko:"그 해는 규칙에 주목할 만한 변화 하나를 가져왔다." }] },
+
+  /* 승격 24 — 사전 표현 '특히, 두드러지게' 를 글자까지 지켰다(in particular, I).
+     원본의 '명백히' 는 버렸다 — 부사 셋을 한 표제어에 담을 필요가 없다. */
+  { word:"notably", pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
+    syn:["in particular","markedly","above all"],
+    ex:[{ s:"Prices rose, {{}} for fresh fruit.", f:"notably", ko:"값이 올랐는데, 특히 신선한 과일이 그랬다." }] },
+
+  { word:"notation", pron:"노테이션", pos:"n", level:"C1", meanings:["기호법","표시법"],
+    syn:["symbol system","set of written signs","recording scheme"],
+    ex:[{ s:"Musical {{}} lets players share a tune.", f:"notation", ko:"음악 기호법은 연주자들이 곡을 나누게 해 준다." }] },
+
+  /* note 는 사전에 없던 낱말이다. 동사로 세웠다 — comment(C, 견해를 밝히다) 가
+     '논평하다' 갈래로 observe 를 유의어로 쓰고 있었는데, observe 를 '관찰하다,
+     준수하다' 로 세우면 그 자리가 어긋난다. comment 쪽 유의어를 이 note 로
+     바꿨다(words-c.js) — '언급하다' 가 딱 맞는다. */
+  { word:"note", pron:"노트", pos:"v", level:"B1", meanings:["주목하다","언급하다"],
+    syn:["take note of","remark on","point out"],
+    ex:[{ s:"Please {{}} the change of time on the form.", f:"note", ko:"양식에 적힌 시간 변경을 주목해 주세요." }] },
+
+  /* 승격 25 — 사전이 '알아차리다; 통지' 로 동사와 명사가 섞여 있었다.
+     참조 네 곳(advert·advertisement·attention·bulletin) 이 모두 명사다.
+     원본대로 명사로 세우고 '분간하다, 인지하다' 갈래는 버렸다. */
+  { word:"notice", pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
+    syn:["posted sign","official word","notification"],
+    ex:[{ s:"A {{}} on the door said the shop had moved.", f:"notice", ko:"문에 붙은 통지는 가게가 이사했다고 알렸다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "accepted rule": "널리 받아들여진 규칙",
   "admit as a citizen": "시민으로 받아들이다",
   "after-dark": "해 진 뒤의",
   "all the same": "그래도 마찬가지로",
@@ -273,14 +377,17 @@ Object.assign(window.GLOSS, {
   "aristocratic": "귀족적인",
   "as a matter of course": "당연한 일로",
   "badly behaved": "행실이 나쁜",
+  "baseline sample": "기준이 되는 표본",
   "bigoted": "편견에 찬",
   "brain-circuit": "뇌 회로의",
   "brain-medicine": "뇌 의학의",
   "brief rest": "잠깐의 휴식",
   "bring in a species": "종을 들여오다",
   "called-for": "꼭 있어야 하는",
+  "candidacy": "후보 자격",
   "carelessness": "부주의함",
   "come to terms": "합의에 이르다",
+  "comparison group": "비교 대상 집단",
   "composure": "침착함",
   "course-plotting": "항로를 그림",
   "cramped": "옹색한",
@@ -292,8 +399,12 @@ Object.assign(window.GLOSS, {
   "disobedient": "말을 안 듣는",
   "disposition": "타고난 성향",
   "downbeat": "가라앉은",
+  "drivel": "헛소리",
   "edginess": "안절부절함",
+  "empty talk": "속 빈 말",
   "even so": "그래도",
+  "existing": "실제로 있는",
+  "factual writing": "사실을 적은 글",
   "fail to care for": "돌보지 않다",
   "fleet-related": "함대에 관한",
   "focus in on": "~로 초점을 모으다",
@@ -301,14 +412,17 @@ Object.assign(window.GLOSS, {
   "foreign-born": "외국에서 태어난",
   "forty winks": "눈 좀 붙이기",
   "foul": "형편없이 나쁜",
+  "gestural": "몸짓으로 하는",
   "grant citizenship to": "~에게 시민권을 주다",
   "gullible": "잘 속아 넘어가는",
   "high birth": "높은 가문 태생",
   "high-minded": "뜻이 높은",
   "homegrown": "제 땅에서 난",
+  "homesickness": "고향을 그리는 마음",
   "ignoble": "비열한",
   "in name only": "이름만 있는",
   "in other words": "달리 말하면",
+  "in spite of that": "그것에도 아랑곳없이",
   "inattention": "주의를 기울이지 않음",
   "inevitably": "어쩔 수 없이",
   "inherent quality": "본디 지닌 성질",
@@ -316,33 +430,57 @@ Object.assign(window.GLOSS, {
   "intolerant": "너그럽지 못한",
   "itinerant": "떠돌이의",
   "jitters": "초조함",
+  "just the same": "그래도 여전히",
   "keep on at": "계속 다그치다",
   "laxity": "느슨함",
+  "let alone": "~은커녕",
   "let slide": "내버려 두다",
   "light-footed": "발이 가벼운",
   "local-born": "그 지역에서 태어난",
   "lofty in character": "인품이 높은",
+  "longing for the past": "지난 때를 그리는 마음",
   "make unavoidable": "피할 수 없게 만들다",
   "maritime military": "바다 군사의",
   "mean-spirited": "심보가 나쁜",
   "mischievous": "장난이 심한",
   "must-have": "꼭 있어야 할 것",
+  "name as candidate": "후보로 이름을 올리다",
+  "naming": "이름을 지어 부름",
   "need": "필요, 요구",
   "nerve fiber": "신경 섬유",
   "nerve-disease-related": "신경 질환에 관한",
   "nerve-related": "신경에 관한",
   "neurology-based": "신경학에 바탕한",
   "night-active": "밤에 움직이는",
+  "not physical": "물질이 아닌",
+  "not returnable": "되돌려 받을 수 없는",
+  "not there at all": "아예 없는",
+  "not-for-profit": "이익을 남기지 않는",
+  "notification": "알림",
+  "of consequence": "무게가 있는",
   "of necessity": "필요에 따라",
   "of the nervous system": "신경계에 속한",
   "of the night": "밤에 속한",
+  "of the spirit": "정신에 속한",
+  "official word": "공식으로 알리는 말",
+  "over and above that": "그 위에 더해",
+  "paid for good": "낸 뒤 되찾지 못하는",
+  "peaceable": "평온하게 하는",
   "pessimistic": "비관적인",
   "pester": "귀찮게 하다",
+  "point out": "집어서 말하다",
+  "posted sign": "붙여 놓은 알림",
   "quick-moving": "빠르게 움직이는",
+  "real-life writing": "실제 삶을 다룬 글",
+  "recording scheme": "적어 두는 방식",
   "recounting": "이야기해 줌",
+  "reference group": "견주어 보는 집단",
+  "remark on": "~에 대해 말하다",
   "roaming": "여기저기 옮겨 다니는",
+  "run for public good": "공익을 위해 운영되는",
   "sailing": "배를 몰기",
   "seagoing": "바다를 다니는",
+  "set of written signs": "적어 쓰는 기호 묶음",
   "settle cozily": "편안히 자리 잡다",
   "settled": "정착한",
   "short sleep": "짧게 자는 잠",
@@ -352,8 +490,11 @@ Object.assign(window.GLOSS, {
   "snug spot": "꼭 들어맞는 자리",
   "snuggle": "파고들어 안기다",
   "specialized corner": "전문화된 영역",
+  "spoken": "입으로 말하는",
   "storyline": "줄거리",
+  "symbol system": "기호 체계",
   "take a nap": "낮잠을 자다",
+  "take note of": "~을 눈여겨보다",
   "taking no side": "편을 들지 않는",
   "temperament": "기질",
   "tension": "팽팽함",
@@ -362,17 +503,29 @@ Object.assign(window.GLOSS, {
   "tight": "여유가 없는",
   "timidity": "겁이 많음",
   "titular": "직함만의",
+  "to say nothing of": "~은 말할 나위 없이",
   "token-level": "형식만 갖춘",
   "too small to count": "셀 가치가 없을 만큼 작은",
   "trifling": "대수롭지 않은",
+  "true account": "실제 있었던 이야기",
   "tuck oneself in": "몸을 들이밀다",
   "unaligned": "어느 편도 아닌",
+  "unarmed": "무기를 들지 않은",
   "unworldly": "세상을 모르는",
+  "usual pattern": "으레 그러한 틀",
   "voice-over": "화면 밖 목소리",
   "wandering": "떠돌아다니는",
   "wayfinding": "길을 찾아냄",
   "well-behaved": "행동이 바른",
+  "what is expected": "당연히 여겨지는 것",
   "whittle down": "조금씩 줄이다",
+  "wholly lacking": "온전히 빠져 있는",
   "wide": "폭이 넓은",
-  "work out terms": "조건을 맞춰 가다"
+  "wistful memory": "아련한 기억",
+  "without any trace": "흔적조차 없는",
+  "without force": "힘을 쓰지 않는",
+  "without money back": "돈을 돌려주지 않는",
+  "without speech": "말 없이 하는",
+  "work out terms": "조건을 맞춰 가다",
+  "worth noting": "눈여겨볼 만한"
 });
