@@ -1675,7 +1675,6 @@ Object.assign(window.GLOSS, {
   "sensor":"감지기, 센서",
   "soap":"비누",
   "terminus":"종착지, 끝",
-  "thriving":"번성하는, 잘 자라는",
   "title":"명칭, 칭호",
   "undesirable":"바람직하지 않은",
   "urgent":"긴급한, 절박한",

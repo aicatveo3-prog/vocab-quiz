@@ -2068,7 +2068,6 @@ Object.assign(window.GLOSS, {
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
-  "thrifty":"알뜰한, 돈을 아끼는",
   "tolerant":"너그러운, 관대한",
   "unconventional":"관습에 얽매이지 않는",
   "uptight":"긴장한, 신경이 날카로운",

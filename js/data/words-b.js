@@ -425,7 +425,11 @@ window.VOCAB_B = [
     ex:[{ s:"Congress passed the {{}} after a long debate.", f:"bill", ko:"의회는 오랜 논쟁 끝에 그 법안을 통과시켰다." }] },
 
   { word:"bind", pron:"바인드", pos:"v", level:"B2", meanings:["묶다","의무를 지우다"],
-    syn:["tie","fasten","secure"], ant:["loosen"],
+    /* ★ syn 의 "tie" 를 "fasten with rope" 로 바꿨다. tie 는 T 세트에서 명사
+       '유대, 매듭' 으로 선다 — 참조 셋 중 bond(유대감)·link(연결) 가 명사여서
+       명사를 골랐고, 동사 쪽을 쓰던 이 자리를 갈았다. 동사 '묶다' 는 같은 세트의
+       tie up 이 받는다. */
+    syn:["fasten with rope","fasten","secure"], ant:["loosen"],
     ex:[{ s:"They used rope to {{}} the boxes together.", f:"bind", ko:"그들은 상자들을 함께 묶기 위해 밧줄을 썼다." }] },
 
   { word:"biodegradable", pron:"바이오디그레이더블", pos:"adj", level:"C1", meanings:["자연 분해되는","생물 분해성의"],

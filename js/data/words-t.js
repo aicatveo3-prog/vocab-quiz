@@ -473,7 +473,128 @@ window.VOCAB_T = [
 
   { word:"thermometer", pron:"서마미터", pos:"n", level:"B2", meanings:["온도계"],
     syn:["heat gauge","tool for measuring warmth","glass with a scale"],
-    ex:[{ s:"The {{}} showed thirty degrees.", f:"thermometer", ko:"온도계가 삼십 도를 가리켰다." }] }
+    ex:[{ s:"The {{}} showed thirty degrees.", f:"thermometer", ko:"온도계가 삼십 도를 가리켰다." }] },
+
+  /* ── 챕터 5 ────────────────────────────────────── */
+  /* 손질이 둘 있는 챕터다. 둘 다 사전이 품사를 반대로 잡아 둔 자리다.
+       pulse(P/n) syn "throb" → beating in the veins
+         사전은 throb 을 명사 '두근거림' 으로 적어 두었다. 교재는 동사였고 게다가
+         '고통치다' 라는 오타였다(고동치다). 동사로 세우고 이 한 곳을 갈았다.
+       bind(B/v) syn "tie" → fasten with rope
+         tie 는 참조 셋 중 bond(유대감)·link(연결) 가 명사여서 명사 '유대, 매듭'
+         으로 세웠다. 동사 '묶다' 는 같은 세트의 tie up(챕터 6) 이 받는다.
+
+     ★ thrust·tread(챕터 9)·treasure(챕터 9) 는 반대로 사전이 맞는 쪽이었다.
+     thrust 의 사전값은 명사 '밀어붙이는 힘' 이고 참조 momentum(기세, 탄력) 도
+     명사다. 교재의 동사 '밀다, 찌르다' 를 버리고 사전값을 지켰다. */
+
+  /* paper(논문, 서류) 와 '논문' 이 겹쳐 자동 배제된다 — treatise(논문 · 챕터 9)
+     와도 맞물린다. */
+  { word:"thesis", pron:"씨시스", pos:"n", level:"B2", meanings:["학위 논문","논제"],
+    syn:["long written study","paper for a degree","point one argues"],
+    ex:[{ s:"She finished her {{}} in May.", f:"thesis", ko:"그녀는 오월에 학위 논문을 마쳤다." }] },
+
+  /* 승격 ㉝ — 사전 글자 유지. 참조 comprehensive(C)·intensive(I)·painstaking(P)
+     세 곳의 화면은 바뀌지 않는다. rigorous(엄격한, 철저한) 와 맞물려 배제된다. */
+  { word:"thorough", pron:"서로", pos:"adj", level:"B2", meanings:["철저한","완전한"],
+    syn:["comprehensive","intensive","painstaking"],
+    ex:[{ s:"They ran a {{}} check on the wiring.", f:"thorough", ko:"그들은 배선을 철저히 점검했다." }] },
+
+  /* 승격 ㉞ — 사전 단일값 유지(참조 considerate). considerate(사려 깊은, 인정이
+     있는) 와 맞물려 배제된다. 교재의 '배려심 있는, 친절한' 은 같은 자리라 버렸다. */
+  { word:"thoughtful", pron:"소트풀", pos:"adj", level:"B1", meanings:["사려 깊은"],
+    syn:["considerate","mindful of others","given to reflection"],
+    ex:[{ s:"That was a {{}} gift.", f:"thoughtful", ko:"그것은 사려 깊은 선물이었다." }] },
+
+  { word:"threat", pron:"쓰렛", pos:"n", level:"B1", meanings:["위협","협박"],
+    syn:["sign of harm to come","warning of danger","menacing word"],
+    ex:[{ s:"The letter was a clear {{}}.", f:"threat", ko:"그 편지는 분명한 협박이었다." }] },
+
+  /* 승격 ㉟ — 사전 단일값 유지. 참조 jeopardize(J)·menace(M) 두 곳의 화면은
+     바뀌지 않는다. endanger·intimidate 까지 넷과 '위협하다' 가 맞물려 배제된다. */
+  { word:"threaten", pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
+    syn:["jeopardize","menace","put in danger"],
+    ex:[{ s:"Rising seas {{}} the village.", f:"threaten", ko:"높아지는 바다가 그 마을을 위협한다." }] },
+
+  /* 승격 ㊱ — 사전의 쌍반점만 쉼표로 갈랐다(참조 brink). 교재의 '입구' 는
+     portal(입구, 관문) 자리라 버렸다. */
+  { word:"threshold", pron:"스레숄드", pos:"n", level:"C1", meanings:["문턱","시작점"],
+    syn:["brink","door sill","point of beginning"],
+    ex:[{ s:"He paused at the {{}}.", f:"threshold", ko:"그는 문턱에서 멈췄다." }] },
+
+  /* 승격 ㊲ — 사전 글자 유지. 참조 economical(E)·extravagant(E)·frugal(F)
+     세 곳의 화면은 바뀌지 않는다. */
+  { word:"thrifty", pron:"스리프티", pos:"adj", level:"C1", meanings:["알뜰한","돈을 아끼는"],
+    syn:["economical","frugal","careful with money"], ant:["extravagant"],
+    ex:[{ s:"She is {{}} but never mean.", f:"thrifty", ko:"그녀는 알뜰하지만 인색하지는 않다." }] },
+
+  /* 교재 [v+n] → 동사. 참조는 없다. */
+  { word:"thrill", pron:"스릴", pos:"v", level:"B2", meanings:["열광시키다"],
+    syn:["excite greatly","set the heart racing","stir with delight"],
+    ex:[{ s:"The ending will {{}} readers.", f:"thrill", ko:"그 결말은 독자를 열광시킬 것이다." }] },
+
+  /* 승격 ㊳ — 사전 글자 유지. 참조 desolate(D)·luxuriant(L) 두 곳의 화면은
+     바뀌지 않는다. luxuriant(무성한, 잘 자라는) 와 맞물려 배제된다. */
+  { word:"thriving", pron:"스라이빙", pos:"adj", level:"C1", meanings:["번성하는","잘 자라는"],
+    syn:["luxuriant","doing very well","growing strongly"], ant:["desolate"],
+    ex:[{ s:"The port became a {{}} town.", f:"thriving", ko:"그 항구는 번성하는 고을이 되었다." }] },
+
+  /* 승격 ㊴ — ★ 교재 '고통치다' 는 '고동치다' 의 오타다. 사전은 명사 '두근거림'
+     이었으나 교재가 동사여서 동사로 세우고, 명사 쪽을 쓰던 pulse(P) 한 곳을
+     'beating in the veins' 로 갈았다. */
+  { word:"throb", pron:"스랍", pos:"v", level:"B2", meanings:["고동치다","맥박이 뛰다"],
+    syn:["beat steadily","pound with each beat","pulse in and out"],
+    ex:[{ s:"My head began to {{}}.", f:"throb", ko:"머리가 고동치기 시작했다." }] },
+
+  { word:"throne", pron:"쓰론", pos:"n", level:"C1", meanings:["왕위","왕권"],
+    syn:["royal seat","kingly power","right to rule as king"],
+    ex:[{ s:"He came to the {{}} at nine.", f:"throne", ko:"그는 아홉 살에 왕위에 올랐다." }] },
+
+  /* 승격 ㊵ — 사전 단일값 유지(참조 mob). 교재의 동사 갈래('몰려들다') 는 버렸고
+     '군중' 은 multitude(다수, 군중) 자리라 쓰지 않았다. */
+  { word:"throng", pron:"쓰롱", pos:"n", level:"C1", meanings:["인파"],
+    syn:["mob","dense crowd","press of people"],
+    ex:[{ s:"A {{}} filled the square.", f:"throng", ko:"인파가 광장을 메웠다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"throughout", pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
+    syn:["all the way through","from start to finish","for the whole time"] },
+
+  /* abandon·discard·forsake·scrap 과 '버리다' 가, do away with·eliminate·
+     get rid of·put an end to 와 '없애다' 가 각각 맞물려 배제된다. */
+  { word:"throw ~ away", pron:"스로 어웨이", pos:"phr", level:"B1", meanings:["버리다","없애다"],
+    syn:["discard","get rid of","toss out"] },
+
+  { word:"throw up", pron:"스로 업", pos:"phr", level:"B2", meanings:["토하다"],
+    syn:["bring up what one ate","be sick","vomit"] },
+
+  /* 승격 ㊶ — ★ 사전 단일값이 명사여서 명사로 세웠다(참조 momentum 도 명사다).
+     교재의 동사 '밀다, 밀치다, 찌르다' 를 버린 아까운 자리다. */
+  { word:"thrust", pron:"쓰러스트", pos:"n", level:"C1", meanings:["밀어붙이는 힘"],
+    syn:["momentum","driving force","push forward"],
+    ex:[{ s:"The engine lost {{}}.", f:"thrust", ko:"엔진이 밀어붙이는 힘을 잃었다." }] },
+
+  { word:"thumb", pron:"썸", pos:"n", level:"B1", meanings:["엄지손가락"],
+    syn:["first and thickest finger","short broad digit","finger set apart"],
+    ex:[{ s:"He hurt his {{}} on the door.", f:"thumb", ko:"그는 문에 엄지손가락을 다쳤다." }] },
+
+  /* 교재 '간지럼 태우다, 간지럽히다' 는 같은 말이라 하나로 줄였다. */
+  { word:"tickle", pron:"티클", pos:"v", level:"B2", meanings:["간지럽히다"],
+    syn:["touch to make one laugh","brush lightly on the skin","cause a ticklish feel"],
+    ex:[{ s:"Do not {{}} the baby's feet.", f:"tickle", ko:"아기의 발을 간지럽히지 마라." }] },
+
+  /* 승격 ㊷ — 사전 글자 유지(참조 current). current(흐름, 현재의) 와 '흐름' 이
+     맞물려 배제된다. */
+  { word:"tide", pron:"타이드", pos:"n", level:"B1", meanings:["조류","흐름"],
+    syn:["current","rise and fall of the sea","flow of water"],
+    ex:[{ s:"The {{}} turned at noon.", f:"tide", ko:"정오에 조류가 바뀌었다." }] },
+
+  /* 승격 ㊸ — ★ 명사로 세웠다. 참조 셋 중 bond(유대감, 결합)·link(연결, 관련) 가
+     명사여서다. 동사 쪽을 쓰던 bind(B) 한 곳을 'fasten with rope' 로 갈았고,
+     동사 '묶다' 는 다음 챕터의 tie up 이 받는다. */
+  { word:"tie", pron:"타이", pos:"n", level:"B1", meanings:["유대","매듭"],
+    syn:["bond","link","knot that fastens"],
+    ex:[{ s:"Family {{}} kept them together.", f:"ties", ko:"가족의 유대가 그들을 붙들었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -486,6 +607,7 @@ Object.assign(window.GLOSS, {
   "after that time": "그때 뒤에",
   "agree to do": "하기로 응하다",
   "aimed at one group": "한 무리를 겨눈",
+  "all the way through": "처음부터 줄곧",
   "allowed against tax": "세금에 맞서 인정되는",
   "assume control": "통제를 맡다",
   "assume from another": "남에게서 맡아 오다",
@@ -496,15 +618,21 @@ Object.assign(window.GLOSS, {
   "be answerable for": "~에 답할 처지가 되다",
   "be praised for": "~로 칭찬을 받다",
   "be proud of": "~을 뿌듯해하다",
+  "be sick": "속을 쏟다",
+  "beat steadily": "고르게 뛰다",
+  "beating in the veins": "핏줄에서 뛰는 것",
   "begin to follow": "따르기 시작하다",
   "bent of mind": "마음이 쏠리는 쪽",
   "beyond cure": "손쓸 수 없는",
   "boast about": "~을 내세우다",
   "bound by time": "시간에 묶인",
   "break into parts": "여러 부분으로 나누다",
+  "bring up what one ate": "먹은 것을 올리다",
+  "brush lightly on the skin": "살갗을 가볍게 스치다",
   "by a shrewd move": "약삭빠른 수로",
   "cashier in a bank": "은행의 계산 담당자",
   "cast of character": "타고난 성품의 틀",
+  "cause a ticklish feel": "간지러운 느낌을 일으키다",
   "chance it": "운에 맡기고 해 보다",
   "charge on goods brought in": "들여온 물품에 붙는 값",
   "cheer up": "기운을 차리다",
@@ -515,32 +643,44 @@ Object.assign(window.GLOSS, {
   "cutting one's taxable sum": "과세 대상 액수를 줄이는",
   "declare one's position": "제 입장을 밝히다",
   "degree of heat": "더운 정도",
+  "dense crowd": "빽빽한 무리",
   "directed at a set goal": "정해진 목표로 향한",
   "do something about it": "그것에 대해 손을 쓰다",
   "doctrine of faith": "믿음의 가르침",
   "dogged": "악착같은",
+  "doing very well": "아주 잘되고 있는",
   "done for show": "보이기 위해 하는",
+  "door sill": "문 아래 턱",
   "dragging on and on": "끝없이 늘어지는",
   "draw with an offer": "제안으로 끌어당기다",
   "duty at the border": "국경에서 매기는 부과금",
   "easily handled": "다루기 쉬운",
   "end of the line": "선로의 끝",
   "enticing thing": "구미를 당기는 것",
+  "excite greatly": "크게 들뜨게 하다",
   "fail to value": "값지게 보지 못하다",
+  "fasten with rope": "밧줄로 묶다",
   "feel encouraged": "힘이 나다",
   "feel of a surface": "표면이 주는 느낌",
   "fill with dread": "두려움으로 채우다",
+  "finger set apart": "따로 벌어진 손가락",
+  "first and thickest finger": "첫째이고 가장 굵은 손가락",
+  "flow of water": "물이 흐르는 것",
   "following that": "그에 이어",
+  "for the whole time": "그 시간 전부에 걸쳐",
   "forbidden thing": "해서는 안 되는 것",
+  "from start to finish": "시작에서 끝까지",
   "from then on": "그때부터",
   "gain courage": "용기를 얻다",
   "gentle with people": "사람에게 순한",
   "give evidence": "증거를 대다",
+  "given to reflection": "곱씹어 보는",
   "glass tube for tests": "실험에 쓰는 유리관",
   "glass with a scale": "눈금이 있는 유리 기구",
   "good for the body": "몸에 좋은",
   "grain of a material": "재료의 결",
   "ground and its shape": "땅과 그 생김새",
+  "growing strongly": "힘차게 자라는",
   "guarding one's ground": "제 터를 지키는",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
@@ -554,6 +694,8 @@ Object.assign(window.GLOSS, {
   "in terms of tactics": "전술로 보아",
   "inborn make-up": "타고난 됨됨이",
   "keeping within limits": "선을 넘지 않는",
+  "kingly power": "임금의 권세",
+  "knot that fastens": "묶어 주는 매듭",
   "lab tube": "실험실용 관",
   "larceny": "재물을 훔침",
   "last stop": "마지막 정차지",
@@ -563,9 +705,11 @@ Object.assign(window.GLOSS, {
   "letter of praise": "칭찬을 적은 편지",
   "level to the ground": "땅바닥까지 밀다",
   "lie of the land": "땅이 놓인 모양",
+  "long written study": "길게 써 낸 연구",
   "made-up cloth goods": "천으로 만든 물품",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
+  "menacing word": "으르는 말",
   "mild in climate": "기후가 순한",
   "money paid to the state": "나라에 내는 돈",
   "move to act": "행동에 나서다",
@@ -588,17 +732,24 @@ Object.assign(window.GLOSS, {
   "one who rents": "빌려 쓰는 사람",
   "open to change": "바뀔 여지가 있는",
   "pace of movement": "움직임의 빠르기",
+  "paper for a degree": "학위를 위한 글",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
   "place for prayer": "기도하는 자리",
   "plan of attack": "밀어붙일 계획",
+  "point of beginning": "처음 딛는 지점",
+  "point one argues": "내세워 다투는 주장",
   "poke fun at": "~을 두고 농을 걸다",
+  "pound with each beat": "박자마다 쿵쿵거리다",
+  "press of people": "밀려드는 사람들",
   "public levy": "공공이 걷는 부과금",
   "pull down": "끌어내려 무너뜨리다",
   "pull from inside": "안에서 끌어내다",
   "pull to pieces": "조각으로 뜯어내다",
   "pull toward wrong": "잘못된 쪽으로 끄는 힘",
+  "pulse in and out": "들고 나며 뛰다",
   "put forward for now": "우선 내놓은",
+  "put in danger": "위험에 놓다",
   "put oneself in danger": "스스로를 위험에 두다",
   "put to use": "써서 쓸모를 내다",
   "raise a protest at": "~에 항의를 내다",
@@ -613,14 +764,20 @@ Object.assign(window.GLOSS, {
   "return for a refund": "환불을 받으려 돌려주다",
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
+  "right to rule as king": "임금으로 다스릴 권리",
+  "rise and fall of the sea": "바다가 오르고 내림",
+  "royal seat": "임금이 앉는 자리",
   "said in few words": "몇 마디로 말한",
   "scare badly": "몹시 겁주다",
   "serving to cure": "낫게 하는 데 쓰이는",
   "set of ideas to explain": "설명하려고 세운 생각의 묶음",
   "set of special words": "특별한 말들의 묶음",
   "set period": "정해진 기간",
+  "set the heart racing": "가슴을 뛰게 하다",
   "short and to the point": "짧고 요점만 있는",
+  "short broad digit": "짧고 넓은 손가락",
   "shrine building": "신을 모신 건물",
+  "sign of harm to come": "해가 올 조짐",
   "skilled worker": "솜씨를 익힌 일꾼",
   "social ban": "사회가 금하는 것",
   "speed of a piece": "곡이 흐르는 빠르기",
@@ -628,6 +785,7 @@ Object.assign(window.GLOSS, {
   "state of feeling": "감정의 상태",
   "state under oath": "선서하고 말하다",
   "step into the role of": "~의 자리를 이어받다",
+  "stir with delight": "기쁨으로 흔들다",
   "study of religion": "종교를 다루는 학문",
   "sum owed to government": "정부에 내야 할 몫",
   "sworn account": "선서한 진술",
@@ -646,9 +804,13 @@ Object.assign(window.GLOSS, {
   "to do with territory": "영토에 관한",
   "to do with time": "시간에 관한",
   "tool for measuring warmth": "따뜻함을 재는 도구",
+  "toss out": "내던져 버리다",
+  "touch to make one laugh": "웃게 하려고 건드리다",
   "turn of mind": "마음이 기우는 결",
   "urge one should resist": "물리쳐야 할 충동",
   "very much indeed": "참으로 많이",
+  "vomit": "구토하다",
+  "warning of danger": "위험을 알리는 말",
   "weigh in the decision": "결정에 견주어 넣다",
   "what must not be done": "하지 말아야 할 일",
   "with a plan in mind": "계획을 두고",

@@ -1558,8 +1558,6 @@ Object.assign(window.GLOSS, {
   "thaw": "얼음이 풀리다",
   "the few": "소수의 사람들",
   "thousand years": "천 해",
-  "throng": "인파",
-  "thrust": "밀어붙이는 힘",
   "tissue": "조직",
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",

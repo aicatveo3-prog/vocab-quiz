@@ -135,6 +135,5 @@ Object.assign(window.GLOSS, {
   "rightful": "정당한 권리의",
   "technical language": "기술 언어",
   "the press": "언론계",
-  "threaten": "위협하다",
   "vindicate": "정당함을 입증하다"
 });
