@@ -1411,7 +1411,10 @@ window.VOCAB_D = [
     ex:[{ s:"She holds {{}} citizenship in two countries.", f:"dual", ko:"그녀는 두 나라의 이중 국적을 갖고 있다." }] },
 
   { word:"dubious", pron:"두비어스", pos:"adj", level:"C1", meanings:["의심스러운","수상한"],
-    syn:["doubtful","questionable","suspect"], ant:["certain"],
+    /* ★ syn 의 "suspect" 를 "open to doubt" 로 바꿨다. 사전이 '의심스러운;
+       의심하다' 로 형용사와 동사를 섞어 두었는데 S 세트에서는 동사 '의심하다' 로
+       선다 — 형용사 목록에 동사가 끼게 된다. */
+    syn:["doubtful","questionable","open to doubt"], ant:["certain"],
     ex:[{ s:"The whole argument rests on a {{}} assumption.", f:"dubious", ko:"그 주장 전체가 의심스러운 가정에 기대고 있다." }] },
 
   { word:"due", pron:"듀", pos:"adj", level:"B2", meanings:["기일이 된","예정된"],
@@ -1559,7 +1562,6 @@ Object.assign(window.GLOSS, {
   "ruling":"판결, 결정",
   "shelve":"미루다, 보류하다",
   "shortfall":"부족액, 적자",
-  "subtract":"빼다, 공제하다",
   "take off":"떼다, 공제하다",
   "tentative":"잠정적인, 임시의",
   "thrilled":"아주 기쁜, 흥분한",
@@ -1927,7 +1929,6 @@ Object.assign(window.GLOSS, {
   "snooze":"눈을 붙이다, 잠깐 자다",
   "speechless":"말을 잃은, 말이 안 나오는",
   "strikingly":"놀랄 만큼, 두드러지게",
-  "suspect":"의심스러운; 의심하다",
   "sweeping":"전면적인, 대폭적인",
   "tap into":"~을 활용하다",
   "taper off":"점차 줄어들다",

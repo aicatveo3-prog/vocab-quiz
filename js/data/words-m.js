@@ -1547,7 +1547,6 @@ Object.assign(window.GLOSS, {
   "structural": "구조상의",
   "sulky": "뾰로통한",
   "sullen": "못마땅해 말이 없는",
-  "swamp": "늪",
   "systematic": "체계적인",
   "take the edge off": "날카로움을 덜다",
   "take wrongly": "잘못 받아들이다",

@@ -749,7 +749,11 @@ window.VOCAB = [
     ex:[{ s:"The plan was {{}} too expensive to approve.", f:"altogether", ko:"그 계획은 승인하기에 전적으로 너무 비쌌다." }] },
 
   { word:"altruistic", pron:"앨트루이스틱", pos:"adj", level:"C1", meanings:["이타적인"],
-    syn:["selfless","unselfish","charitable"], ant:["selfish"],
+    /* ★ syn 의 "unselfish" 를 "giving without reward" 로 바꿨다. 사전이
+       unselfish 와 selfless 에 똑같이 '이타적인' 을 적어 두어 설명이 완전히 같은
+       선택지가 둘 있었다. selfless 가 S 세트에서 표제어가 되면서(챕터 5) 그 글자가
+       확정되므로 이 자리를 갈았다. */
+    syn:["selfless","giving without reward","charitable"], ant:["selfish"],
     ex:[{ s:"Her motives were genuinely {{}}, not commercial.", f:"altruistic", ko:"그녀의 동기는 상업적이 아니라 진정으로 이타적이었다." }] },
 
 
@@ -1317,7 +1321,11 @@ window.VOCAB = [
     ex:[{ s:"Workers {{}} the fruit by size and color.", f:"assort", ko:"인부들은 과일을 크기와 색으로 분류한다." }] },
 
   { word:"assume", pron:"어슘", pos:"v", level:"B2", meanings:["추정하다","(책임을) 지다"],
-    syn:["suppose","presume","take on"],
+    /* ★ syn 의 "presume" 을 "take for granted" 로 바꿨다. presume(P) 은 표제어이고
+       그 뜻이 '추정하다, 가정하다' 인데, 사전이 suppose 에도 똑같은 글자를 적어
+       두어 이 목록에 설명이 완전히 같은 선택지가 둘 있었다. suppose 가 S 세트에서
+       표제어가 되면서 그 글자가 확정되므로 이 자리를 갈았다. */
+    syn:["suppose","take for granted","take on"],
     ex:[{ s:"Do not {{}} that silence means agreement.", f:"assume", ko:"침묵이 동의를 뜻한다고 추정하지 마라." }] },
 
   { word:"assumption", pron:"어섬션", pos:"n", level:"B2", meanings:["추정","가정"],
@@ -1748,7 +1756,6 @@ window.GLOSS = {
   "selfish":"이기적인",
   "stench":"악취",
   "stranger":"낯선 사람",
-  "synthesis":"합성, 종합",
   "terrestrial":"육지의, 지상의",
   "timid":"소심한",
   "tiny":"아주 작은",

@@ -730,7 +730,10 @@ window.VOCAB_C = [
     syn:["emerge","originate","form"], ant:["vanish"] },
 
   { word:"come into sight", pron:"컴 인투 사이트", pos:"phr", level:"B2", meanings:["보이기 시작하다","시야에 들어오다"],
-    syn:["appear","emerge","surface"], ant:["disappear"] },
+    /* ★ syn 의 "surface" 를 "rise into view" 로 바꿨다. 사전이 '표면; 나타나다'
+       로 명사와 동사를 섞어 두었는데, 원본이 명사 쪽이고 다른 참조 deck 도 명사라
+       S 세트에서는 명사 '표면' 으로 선다. */
+    syn:["appear","emerge","rise into view"], ant:["disappear"] },
 
   { word:"come to an end", pron:"컴 투 언 엔드", pos:"phr", level:"B1", meanings:["끝나다","막을 내리다"],
     syn:["finish","conclude","terminate"], ant:["commence"] },
@@ -768,7 +771,11 @@ window.VOCAB_C = [
     ex:[{ s:"Troops began to {{}} private trucks for the retreat.", f:"commandeer", ko:"군대는 후퇴를 위해 민간 트럭을 징발하기 시작했다." }] },
 
   { word:"commander", pron:"커맨더", pos:"n", level:"B2", meanings:["사령관","지휘자"],
-    syn:["chief","leader","officer"], ant:["subordinate"],
+    /* ★ ant 의 "subordinate" 를 "person of lower rank" 로 바꿨다. 사전이
+       '부하; 하급의' 로 명사와 형용사를 섞어 두었는데, 참조 셋 중 둘
+       (dominant·inferior) 이 형용사여서 S 세트에서는 형용사 '종속된, 부수적인'
+       으로 선다 — 명사인 이 표제어의 반의어 자리에 형용사가 들어가게 된다. */
+    syn:["chief","leader","officer"], ant:["person of lower rank"],
     ex:[{ s:"The {{}} ordered a full retreat before dawn.", f:"commander", ko:"사령관은 새벽 전에 전면 후퇴를 명령했다." }] },
 
   { word:"commemorate", pron:"커메머레이트", pos:"v", level:"C1", meanings:["기념하다","추모하다"],
@@ -1085,7 +1092,10 @@ window.VOCAB_C = [
     ex:[{ s:"Every {{}} was handed a paper programme.", f:"concert goer", ko:"모든 콘서트 관객이 종이 프로그램을 받았다." }] },
 
   { word:"concession", pron:"컨세션", pos:"n", level:"C1", meanings:["양보","용인"],
-    syn:["allowance","compromise","surrender"], ant:["demand"],
+    /* ★ syn 의 "surrender" 를 "step back on a point" 로 바꿨다. 사전이
+       '양보; 항복하다' 로 명사와 동사를 섞어 두었는데, 참조 셋 중 둘
+       (battle·conquer) 이 동사여서 S 세트에서는 동사 '항복하다' 로 선다. */
+    syn:["allowance","compromise","step back on a point"], ant:["demand"],
     ex:[{ s:"The union won one small {{}} on hours.", f:"concession", ko:"노조는 근무 시간에서 작은 양보를 얻어냈다." }] },
 
   { word:"conclusion", pron:"컨클루전", pos:"n", level:"B1", meanings:["결론","결말"],
@@ -2073,7 +2083,6 @@ Object.assign(window.GLOSS, {
   "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
-  "subordinate":"부하, 하급자",
   "succumb":"굴복하다, 쓰러지다",
   "tolerate":"용인하다, 참다",
   "triumph":"승리, 대성공",

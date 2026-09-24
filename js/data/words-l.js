@@ -234,7 +234,10 @@ window.VOCAB_L = [
     syn:["omit","exclude","skip"] },
 
   { word:"leftover", pron:"레프트오버", pos:"adj", level:"B2", meanings:["먹다 남은","남은"],
-    syn:["remaining","surplus","uneaten"],
+    /* ★ syn 의 "surplus" 를 "left unused" 로 바꿨다. surplus 는 S 세트에서 명사
+       '잉여, 과잉' 으로 선다 — 형용사인 이 표제어의 목록에 명사가 끼게 된다.
+       참조 넷 가운데 abundance·deficit·excess 가 명사여서 다수를 따랐다. */
+    syn:["remaining","left unused","uneaten"],
     ex:[{ s:"We had {{}} rice for breakfast.", f:"leftover", ko:"우리는 아침으로 먹다 남은 밥을 먹었다." }] },
 
   /* 승격 ① — GLOSS '유산, 유증' 을 글자까지 지켰다.

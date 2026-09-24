@@ -1695,7 +1695,6 @@ Object.assign(window.GLOSS, {
   "smooth out":"매끄럽게 펴다",
   "splitting":"쪼개짐",
   "suitability":"적합함",
-  "superior":"더 뛰어난",
   "tang":"톡 쏘는 맛",
   "taste":"맛, 미각",
   "tax-related":"세금에 관한",
