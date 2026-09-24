@@ -677,7 +677,7 @@ window.VOCAB = [
   { word:"all at once", pron:"올 앳 원스", pos:"phr", level:"B1", meanings:["갑자기","한꺼번에"],
     syn:["suddenly","abruptly","all of a sudden"] },
 
-  { word:"all of a sudden", pron:"올 오브 어 서든", pos:"phr", level:"B1", meanings:["갑자기","불쑥"],
+  { word:"all of a sudden", pron:"올 오브 어 서든", pos:"phr", level:"B1", meanings:["느닷없이","불쑥"],
     syn:["suddenly","abruptly","all at once"] },
 
   { word:"allege", pron:"얼레지", pos:"v", level:"C1", meanings:["주장하다","혐의를 제기하다"],
