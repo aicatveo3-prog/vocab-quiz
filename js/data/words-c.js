@@ -2031,7 +2031,6 @@ Object.assign(window.GLOSS, {
   "reckless":"무모한, 부주의한",
   "refined":"정제된, 세련된",
   "refute":"반박하다, 논박하다",
-  "reinforce":"강화하다",
   "repulsion":"혐오, 반발",
   "request":"요청, 요청하다",
   "respect":"존중, 존경",

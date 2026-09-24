@@ -816,7 +816,6 @@ Object.assign(window.GLOSS, {
   "redundancy": "정리 해고",
   "reflecting surface": "빛을 되비추는 면",
   "reflector": "반사기",
-  "regrettable": "유감스러운",
   "relax": "헐겁게 하다",
   "rent out": "세를 놓다",
   "reptile": "파충류",

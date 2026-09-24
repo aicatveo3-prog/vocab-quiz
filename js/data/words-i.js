@@ -725,8 +725,10 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '색인, 목록' 을 글자까지 지켰다.
      catalog(syn)·directory(syn) 두 문제가 참조하므로 원본의 '찾아보기' 대신
      사전 쪽 '목록' 을 남겼다. */
+  /* 유의어 register 를 list of entries 로 바꿨다 — register 가 동사 표제어로
+     올라가기 때문이다. */
   { word:"index", pron:"인덱스", pos:"n", level:"B1", meanings:["색인","목록"],
-    syn:["catalog","directory","register"],
+    syn:["catalog","directory","list of entries"],
     ex:[{ s:"Look up the term in the {{}} at the back of the book.", f:"index", ko:"책 뒤에 있는 색인에서 그 용어를 찾아보세요." }] },
 
   { word:"indicate", pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],

@@ -486,13 +486,127 @@ window.VOCAB_R = [
   /* '되찾다' 를 recover·retrieve 와 글자까지 맞췄다 — 셋이 서로의 오답에서 빠진다. */
   { word:"regain", pron:"리게인", pos:"v", level:"B2", meanings:["되찾다","다시 얻다"],
     syn:["get back again","recover hold of","come to have once more"],
-    ex:[{ s:"She began to {{}} her strength.", f:"regain", ko:"그녀는 기운을 되찾기 시작했다." }] }
+    ex:[{ s:"She began to {{}} her strength.", f:"regain", ko:"그녀는 기운을 되찾기 시작했다." }] },
+
+  /* ── 챕터 5 ────────────────────────────────────── */
+  /* ★ register 를 동사로 세우면서 명사 뜻('기록부') 을 노리던 참조 세 곳을
+     손질했다 — archive·directory·index 다. 사전값과 원본 첫 갈래가 모두 동사고,
+     참조 다섯 곳 가운데 enroll(등록하다)·come to mind(생각나다) 두 곳이 동사
+     쪽이어서다.
+     ★ rein 은 원본이 '구속; 고삐' 로 순서가 거꾸로였다 — 고삐가 본뜻이다.
+     ★ rehearse 는 원본 '반복하다' 가 reproduce 자리라 '예행연습하다' 로 바꿨고
+     외래어 '리허설' 도 걷었다(rehearsal 도 함께).
+     reign 은 '지배하다' 를 rule·dominate 에 넘기고 '군림하다' 를 받았다. */
+
+  { word:"regard", pron:"리가드", pos:"v", level:"B1", meanings:["여기다","간주하다"],
+    syn:["look on as","think of in a way","hold to be"],
+    ex:[{ s:"We {{}} him as a friend.", f:"regard", ko:"우리는 그를 친구로 여긴다." }] },
+
+  /* 승격 ㊹ — 사전 단일값 유지(considering, C · in terms of, I). */
+  { word:"regarding", pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
+    syn:["about the matter of","with respect to","on the subject of"] },
+
+  { word:"regardless of", pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
+    syn:["no matter what","without regard to","whatever may be"] },
+
+  /* 원본 '재생하다, 재건하다' 에서 '재건하다' 는 reconstruct(챕터 3) 에 넘겼다. */
+  { word:"regenerate", pron:"리제너레이트", pos:"v", level:"C1", meanings:["재생하다","되살아나게 하다"],
+    syn:["grow back","bring new life to","renew itself"],
+    ex:[{ s:"The forest will {{}} in time.", f:"regenerate", ko:"그 숲은 때가 되면 재생할 것이다." }] },
+
+  /* 승격 ㊺ — 사전 글자 유지(dynasty, D). 원본의 괄호 '통치 (방식)' 는 걷고
+     '통치' 는 reign 쪽에 두어 둘을 갈랐다. */
+  { word:"regime", pron:"레짐", pos:"n", level:"C1", meanings:["정권","체제"],
+    syn:["dynasty","ruling set-up","government in power"],
+    ex:[{ s:"The old {{}} fell in a week.", f:"regime", ko:"그 낡은 정권은 한 주 만에 무너졌다." }] },
+
+  /* regime(정권) 과 철자가 한 글자 차이다 — 뜻이 전혀 다름을 예문으로 못박았다. */
+  { word:"regimen", pron:"레지먼", pos:"n", level:"C2", meanings:["식이 요법"],
+    syn:["set plan for eating","rules for diet","course of health care"],
+    ex:[{ s:"The doctor put him on a strict {{}}.", f:"regimen", ko:"의사는 그에게 엄격한 식이 요법을 시켰다." }] },
+
+  /* 승격 ㊻ — ★ 사전·원본 모두 동사다. 명사 뜻('기록부, 명부') 을 노리던 참조
+     세 곳(archive·directory·index) 을 손질하고 동사로 세웠다. 쌍반점만 쉼표로
+     바뀌어 enroll·come to mind 두 곳은 구두점만 달라진다. */
+  { word:"register", pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
+    syn:["enroll","put on a list","take note of"],
+    ex:[{ s:"You must {{}} before Friday.", f:"register", ko:"금요일 전에 등록해야 한다." }] },
+
+  /* 승격 ㊼ — 사전 글자 유지(enrollment, E). 원본의 괄호 '(출생, 사망 등의) 신고'
+     는 걷고 사전의 '기재' 를 썼다. */
+  { word:"registration", pron:"레지스트레이션", pos:"n", level:"B2", meanings:["등록","기재"],
+    syn:["enrollment","signing up","entry on a list"],
+    ex:[{ s:"{{}} closes at noon.", f:"Registration", ko:"등록은 정오에 마감된다." }] },
+
+  /* 승격 ㊽ — 사전 글자 유지(degenerate, D). */
+  { word:"regress", pron:"리그레스", pos:"v", level:"C2", meanings:["퇴행하다","되돌아가다"],
+    syn:["degenerate","slip back","go back to an earlier state"],
+    ex:[{ s:"Without care the patient may {{}}.", f:"regress", ko:"돌보지 않으면 그 환자는 퇴행할 수 있다." }] },
+
+  /* 둘째 갈래를 '유감스러워하다' 로 다듬었다 — '유감으로 여기다' 로 두면 바로 위
+     regard(여기다) 와 글자가 겹친다. */
+  { word:"regret", pron:"리그렛", pos:"v", level:"B1", meanings:["후회하다","유감스러워하다"],
+    syn:["be sorry for","wish one had not","rue a choice"],
+    ex:[{ s:"You will {{}} that later.", f:"regret", ko:"너는 나중에 그것을 후회할 것이다." }] },
+
+  /* 승격 ㊾ — 사전 단일값 유지(lamentable, L). */
+  { word:"regrettable", pron:"리그레터블", pos:"adj", level:"C1", meanings:["유감스러운"],
+    syn:["lamentable","to be sorry about","that one would undo"],
+    ex:[{ s:"The delay was {{}}.", f:"regrettable", ko:"그 지연은 유감스러웠다." }] },
+
+  /* 승격 ㊿ — 사전 글자 유지(adjust, A). restrict(제한하다) 와 갈랐다. */
+  { word:"regulate", pron:"레귤레이트", pos:"v", level:"B2", meanings:["규제하다","조절하다"],
+    syn:["adjust","keep in order by rule","set to a standard"],
+    ex:[{ s:"The law will {{}} online ads.", f:"regulate", ko:"그 법은 온라인 광고를 규제할 것이다." }] },
+
+  /* restore(돌려주다, 복원하다) 와 갈랐다 — 원본의 '회복시키다' 는 쓰지 않았다. */
+  { word:"rehabilitate", pron:"리허빌리테이트", pos:"v", level:"C2", meanings:["재활 치료를 하다","제구실을 하게 돕다"],
+    syn:["nurse back to health","help stand on one's own","bring back into use"],
+    ex:[{ s:"The center will {{}} injured birds.", f:"rehabilitate", ko:"그 센터는 다친 새들에게 재활 치료를 할 것이다." }] },
+
+  /* 외래어 '리허설' 을 걷었다. */
+  { word:"rehearsal", pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
+    syn:["practice before the show","trial run of a play","run-through"],
+    ex:[{ s:"The last {{}} ran late.", f:"rehearsal", ko:"마지막 예행연습이 늦게까지 이어졌다." }] },
+
+  /* ★ 원본은 '반복하다; 리허설을 하다' 였다. '반복하다' 는 reproduce(챕터 8) 자리라
+     '예행연습하다' 를 앞세우고 외래어도 걷었다. */
+  { word:"rehearse", pron:"리허스", pos:"v", level:"B2", meanings:["예행연습하다","되짚어 보다"],
+    syn:["practice for a show","go through it beforehand","run over it again"],
+    ex:[{ s:"They {{}} twice a week.", f:"rehearse", ko:"그들은 주에 두 번 예행연습한다." }] },
+
+  /* 원본은 '지배하다, 주권을 잡다; 통치, 지배' 로 동사와 명사가 섞여 있었다.
+     동사로 세우고 '지배하다' 는 rule·dominate 에 넘겨 '군림하다' 를 썼다. */
+  { word:"reign", pron:"레인", pos:"v", level:"C1", meanings:["군림하다","주권을 잡다"],
+    syn:["sit on the throne","hold sovereign power","rule as a monarch"],
+    ex:[{ s:"She went on to {{}} for forty years.", f:"reign", ko:"그녀는 이어서 40년을 군림했다." }] },
+
+  /* 승격 51 — 사전 글자 유지(compensate, C). */
+  { word:"reimburse", pron:"리임버스", pos:"v", level:"C2", meanings:["상환하다","배상하다"],
+    syn:["compensate","pay one back for costs","make good the outlay"],
+    ex:[{ s:"The firm will {{}} your travel costs.", f:"reimburse", ko:"회사가 당신의 여행 비용을 상환할 것이다." }] },
+
+  /* ★ 원본은 '구속; 고삐' 로 순서가 거꾸로였다 — 고삐가 본뜻이고 '구속' 은
+     비유다. '구속' 은 restraint(절제, 구속 · 챕터 11) 와 글자가 같아 배제된다. */
+  { word:"rein", pron:"레인", pos:"n", level:"C1", meanings:["고삐","구속"],
+    syn:["strap for guiding a horse","check on freedom","hold over another"],
+    ex:[{ s:"He pulled the {{}} to stop the horse.", f:"rein", ko:"그는 말을 세우려 고삐를 당겼다." }] },
+
+  { word:"reincarnate", pron:"리인카네이트", pos:"v", level:"C2", meanings:["환생시키다","다시 태어나게 하다"],
+    syn:["give a new body to","bring back in another form","send back to life"],
+    ex:[{ s:"The tale says the gods {{}} the hero.", f:"reincarnate", ko:"그 이야기는 신들이 그 영웅을 환생시킨다고 한다." }] },
+
+  /* 승격 52 — 사전 단일값 유지(bolster, B · counteract 반의어, C). */
+  { word:"reinforce", pron:"리인포스", pos:"v", level:"B2", meanings:["강화하다"],
+    syn:["bolster","make stronger","back up with more"],
+    ex:[{ s:"Steel bars {{}} the wall.", f:"reinforce", ko:"철근이 그 벽을 강화한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "a looking-up": "찾아보는 일",
   "a making better": "더 낫게 만듦",
+  "about the matter of": "~의 일에 대하여",
   "act in answer": "답으로 움직이다",
   "act of knowing again": "다시 알아봄",
   "act without thought": "생각 없이 나오는 움직임",
@@ -506,12 +620,18 @@ Object.assign(window.GLOSS, {
   "at the root": "뿌리에서부터",
   "atomic pile": "원자로 더미",
   "automatic response": "저절로 나오는 반응",
+  "back up with more": "더 보태어 받치다",
   "balance between two": "둘 사이의 균형",
+  "be sorry for": "~을 안타깝게 여기다",
   "believer in racial superiority": "한 인종이 낫다고 믿는 이",
+  "book of records": "기록을 담은 책",
   "break in the day": "하루 중의 쉼",
+  "bring back in another form": "다른 꼴로 되돌리다",
+  "bring back into use": "다시 쓰이게 되돌리다",
   "bring back to mind": "다시 머리에 떠올리다",
   "bring down in size": "크기를 낮추다",
   "bring into accord": "서로 맞게 하다",
+  "bring new life to": "새 생명을 주다",
   "bring to full growth": "다 자라게 하다",
   "bring up a child": "아이를 길러 내다",
   "build again": "다시 세우다",
@@ -521,9 +641,11 @@ Object.assign(window.GLOSS, {
   "calling in new members": "새 사람을 불러 모음",
   "cattle farm": "소를 기르는 농장",
   "change for the better": "나은 쪽으로 바꿈",
+  "check on freedom": "자유를 누르는 것",
   "come round once more": "한 번 더 돌아오다",
   "come to have once more": "또 지니게 되다",
   "come to know": "알게 되다",
+  "course of health care": "몸을 돌보는 과정",
   "credit given": "인정해 주는 것",
   "defier of authority": "권위를 거스르는 이",
   "do without doing": "하지 않고 넘기다",
@@ -531,6 +653,7 @@ Object.assign(window.GLOSS, {
   "draw away little by little": "조금씩 멀어지다",
   "easy bond": "편한 사이",
   "emitting rays": "빛살을 뿜는",
+  "entry on a list": "명단에 오른 항목",
   "exile from home": "고향을 떠난 이",
   "fair and sensible": "온당하고 슬기로운",
   "fall back": "뒤로 밀려나다",
@@ -550,21 +673,31 @@ Object.assign(window.GLOSS, {
   "get back again": "다시 손에 넣다",
   "get into one's hands": "손에 넣다",
   "get well again": "다시 낫다",
+  "give a new body to": "새 몸을 주다",
   "give out heat": "열을 내보내다",
   "give the money back": "돈을 되돌려 주다",
   "given to quiet thought": "조용히 생각에 잠기는",
   "giving off radiation": "방사선을 내는",
+  "go back to an earlier state": "앞선 상태로 돌아가다",
+  "go through it beforehand": "미리 한 번 해 보다",
   "going to the root": "뿌리까지 파고드는",
+  "government in power": "권력을 쥔 정부",
   "grazing estate": "풀 먹이는 넓은 땅",
+  "grow back": "다시 자라나다",
   "guided by reason": "이치를 따르는",
   "happen again": "또 일어나다",
   "hater of other races": "다른 인종을 미워하는 이",
+  "help stand on one's own": "제 발로 서게 돕다",
   "hiring drive": "사람 뽑기 운동",
   "hold off from": "~하지 않고 버티다",
+  "hold over another": "남을 붙잡아 두는 힘",
+  "hold sovereign power": "으뜸 권력을 쥐다",
+  "hold to be": "~라고 붙들다",
   "how many to how many": "몇 대 몇",
   "image thrown back": "되비친 모습",
   "in a sweeping way": "싹 쓸어내듯",
   "joy that carries one away": "넋을 빼앗는 기쁨",
+  "keep in order by rule": "규칙으로 다잡다",
   "keep oneself from": "스스로 못 하게 하다",
   "keeping to what is possible": "될 만한 데 머무는",
   "kingdom": "임금이 다스리는 나라",
@@ -572,14 +705,18 @@ Object.assign(window.GLOSS, {
   "large stock farm": "큰 가축 농장",
   "left over and useless": "남았는데 쓸 데 없는",
   "light food and drink": "가벼운 음식과 마실 것",
+  "list of entries": "항목을 적은 목록",
   "list one by one": "하나씩 늘어놓다",
   "live as it goes": "되는 대로 바로 내보내는",
+  "look on as": "~로 보다",
   "look to for help": "도움을 찾아 보다",
   "made in advance": "미리 만들어 둔",
+  "make good the outlay": "들인 돈을 메워 주다",
   "make into something new": "새것으로 만들다",
   "make land fit for use": "땅을 쓸 수 있게 만들다",
   "make pure": "순수하게 만들다",
   "make real": "실제가 되게 하다",
+  "make stronger": "더 튼튼하게 하다",
   "make two things agree": "둘을 들어맞게 하다",
   "mark on a scale": "척도 위의 표시",
   "marsh plant": "늪에 자라는 풀",
@@ -591,9 +728,11 @@ Object.assign(window.GLOSS, {
   "not often seen": "자주 보이지 않는",
   "not too much": "지나치지 않은",
   "note pointing elsewhere": "다른 데를 가리키는 쪽지",
+  "nurse back to health": "돌봐 낫게 하다",
   "of atomic decay": "원자가 붕괴하는",
   "of one's race": "제 인종의",
   "off the shelf": "선반에서 바로 꺼내 쓰는",
+  "on the subject of": "~을 두고",
   "one who flees danger": "위험을 피해 온 이",
   "one who judges by race": "인종으로 사람을 가리는 이",
   "one who receives": "받는 이",
@@ -604,6 +743,7 @@ Object.assign(window.GLOSS, {
   "paper showing payment": "값을 치른 것을 보이는 종이",
   "pause in work": "일을 멈춘 동안",
   "pay back": "돈을 갚다",
+  "pay one back for costs": "든 비용을 돌려주다",
   "person given something": "무엇을 받은 사람",
   "person seeking shelter": "몸 붙일 곳을 찾는 사람",
   "picked at will": "되는 대로 골라",
@@ -615,10 +755,13 @@ Object.assign(window.GLOSS, {
   "polish of manner": "몸가짐의 세련",
   "polish to a finer state": "더 곱게 다듬다",
   "position held": "맡고 있는 자리",
+  "practice before the show": "공연 전에 익히기",
+  "practice for a show": "무대에 앞서 익히다",
   "put at ease": "마음을 놓게 하다",
   "put back into use": "다시 쓰이게 하다",
   "put back together": "다시 맞춰 놓다",
   "put forward as good": "좋다고 내놓다",
+  "put on a list": "명단에 올리다",
   "put one's own sense into": "제 생각을 밀어 넣다",
   "quiet thought": "조용한 생각",
   "raise young": "새끼를 치다",
@@ -626,22 +769,33 @@ Object.assign(window.GLOSS, {
   "ready to take in": "받아들일 준비가 된",
   "recover hold of": "다시 붙들다",
   "relation in number": "수로 본 관계",
+  "renew itself": "스스로 새로워지다",
   "response to something": "무엇에 대한 응답",
   "return in time": "때가 되면 되돌아오다",
   "return what was paid": "낸 것을 돌려주다",
   "revolt of the people": "백성이 일으킨 난",
   "rise up against": "맞서 일어서다",
   "rising against rule": "다스림에 맞서 일어섬",
+  "roll of names": "이름을 적은 명부",
+  "rue a choice": "고른 것을 애석해하다",
+  "rule as a monarch": "임금으로서 다스리다",
+  "rules for diet": "먹거리에 대한 규칙",
+  "ruling set-up": "다스리는 틀",
+  "run over it again": "다시 훑어 보다",
+  "run-through": "처음부터 훑어 보기",
   "say from memory": "외운 것을 말하다",
   "saying the same twice": "같은 말을 두 번 하는",
   "scold openly": "드러내어 꾸짖다",
   "score given": "매겨 준 점수",
   "see at last": "마침내 알아보다",
   "seldom found": "좀처럼 볼 수 없는",
+  "send back to life": "다시 살아 오게 하다",
   "send out in rays": "빛살로 내보내다",
   "send out once more": "한 번 더 내보내다",
   "set of cooking steps": "음식 만드는 차례",
   "set one's mind at rest": "걱정을 내려놓게 하다",
+  "set plan for eating": "정해진 먹는 계획",
+  "set to a standard": "기준에 맞춰 두다",
   "settle a quarrel": "다툼을 가라앉히다",
   "shaped like a long box": "긴 상자 꼴인",
   "shelter from danger": "위험을 막아 주는 곳",
@@ -649,6 +803,9 @@ Object.assign(window.GLOSS, {
   "show a second time": "두 번째로 보여 주다",
   "show as in a glass": "거울처럼 비추다",
   "showing things as they are": "있는 대로 보여 주는",
+  "signing up": "이름을 적어 넣음",
+  "sit on the throne": "왕좌에 앉다",
+  "slip back": "뒤로 미끄러지다",
   "slip for what one paid": "낸 값을 적은 쪽지",
   "slump in trade": "거래가 주저앉음",
   "snacks served": "내놓는 간식",
@@ -658,6 +815,7 @@ Object.assign(window.GLOSS, {
   "speed of change": "변하는 빠르기",
   "spot out of harm's way": "해가 미치지 않는 자리",
   "stalk by the water": "물가에 선 줄기",
+  "strap for guiding a horse": "말을 끄는 줄",
   "sweeping repair": "싹 손보는 일",
   "take in the harvest": "가을걷이를 들이다",
   "take more from it than it says": "말한 것보다 더 읽어 내다",
@@ -667,14 +825,18 @@ Object.assign(window.GLOSS, {
   "tall water grass": "물가에 키 큰 풀",
   "tea and cakes": "차와 과자",
   "tell off sharply": "호되게 이르다",
+  "that one would undo": "되돌리고 싶은",
   "thin on the ground": "드물게 흩어져 있는",
+  "think of in a way": "어떻게 생각하다",
   "thinking things through": "끝까지 따져 보는",
   "throw back light": "빛을 되던지다",
   "time off between sessions": "수업 사이의 틈",
+  "to be sorry about": "안타까워할 만한",
   "to do with leisure": "여가에 얽힌",
   "to do with race": "인종에 얽힌",
   "to the very base": "바탕까지",
   "touch that improves": "나아지게 하는 손질",
+  "trial run of a play": "연극을 미리 해 보기",
   "true to life": "실제와 꼭 같은",
   "turning things over": "이리저리 헤아리는",
   "use again": "다시 쓰다",
@@ -684,10 +846,13 @@ Object.assign(window.GLOSS, {
   "way to make it": "만드는 방법",
   "welcoming party": "맞이하는 잔치",
   "what follows an act": "어떤 일 뒤에 따라오는 것",
+  "whatever may be": "어떻든 간에",
   "win back": "되찾아 오다",
   "win back for use": "되찾아 쓰게 하다",
+  "wish one had not": "하지 않았기를 바라다",
   "without a set order": "정해진 차례 없이",
   "without delay in reporting": "알리는 데 늦음이 없는",
+  "without regard to": "~을 셈에 넣지 않고",
   "work out a number": "수를 셈해 내다"
 });
 

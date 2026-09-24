@@ -1126,8 +1126,11 @@ window.VOCAB = [
     syn:["design","construction","structure"],
     ex:[{ s:"The city is famous for its baroque {{}}.", f:"architecture", ko:"그 도시는 바로크 건축으로 유명하다." }] },
 
+  /* 유의어 register 를 book of records 로 바꿨다. register 가 R 세트 챕터 5
+     표제어(등록하다, 감지하다 · v)로 올라가면 명사 표제어의 유의어 자리에 동사
+     뜻이 뜬다. 사전의 register 값도 '등록하다; 감지하다' 로 명사 뜻이 없었다. */
   { word:"archive", pron:"아카이브", pos:"n", level:"C1", meanings:["기록 보관소","기록물"],
-    syn:["record","repository","register"],
+    syn:["record","repository","book of records"],
     ex:[{ s:"The photos are kept in the national {{}}.", f:"archive", ko:"그 사진들은 국가 기록 보관소에 보관되어 있다." }] },
 
   { word:"ardent", pron:"아던트", pos:"adj", level:"C2", meanings:["열렬한","열정적인"],

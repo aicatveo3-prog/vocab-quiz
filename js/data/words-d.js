@@ -821,8 +821,10 @@ window.VOCAB_D = [
     syn:["course","bearing","heading"],
     ex:[{ s:"We walked in the wrong {{}} for almost an hour.", f:"direction", ko:"우리는 거의 한 시간 동안 잘못된 방향으로 걸었다." }] },
 
+  /* 유의어 register 를 roll of names 로 바꿨다 — register 가 동사 표제어로
+     올라가기 때문이다(archive·index 도 같이 손질했다). */
   { word:"directory", pron:"디렉터리", pos:"n", level:"C1", meanings:["주소록","안내 책자"],
-    syn:["index","listing","register"],
+    syn:["index","listing","roll of names"],
     ex:[{ s:"Her name is missing from this year's telephone {{}}.", f:"directory", ko:"그녀의 이름이 올해 전화번호부에서 빠져 있다." }] },
 
   { word:"disability", pron:"디서빌러티", pos:"n", level:"B2", meanings:["장애","무능력"],
@@ -1538,7 +1540,6 @@ Object.assign(window.GLOSS, {
   "premeditated":"미리 계획된",
   "raving":"헛소리하는, 광란의",
   "reforestation":"재조림, 삼림 재생",
-  "regress":"퇴행하다, 되돌아가다",
   "ruling":"판결, 결정",
   "shelve":"미루다, 보류하다",
   "shield":"보호하다; 방패",
@@ -1912,7 +1913,6 @@ Object.assign(window.GLOSS, {
   "payable":"지불해야 하는, 지불 가능한",
   "pull out":"물러나다, 손을 떼다",
   "questionable":"의심스러운, 문제가 있는",
-  "regime":"정권, 체제",
   "replicate":"똑같이 재현하다",
   "reproduce":"재현하다; 번식하다",
   "rough copy":"초고, 초벌 원고",
