@@ -1696,7 +1696,6 @@ Object.assign(window.GLOSS, {
   "taste":"맛, 미각",
   "tax-related":"세금에 관한",
   "thrash about":"몸부림치다",
-  "top-notch":"최고 수준의",
   "torch":"손전등",
   "unyielding":"굽히지 않는",
   "wave up and down":"위아래로 흔들다",

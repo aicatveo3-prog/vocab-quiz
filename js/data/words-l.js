@@ -857,7 +857,6 @@ Object.assign(window.GLOSS, {
   "testing room": "시험실",
   "time lag": "시간차",
   "tip": "쓰레기장",
-  "to the letter": "한 글자도 틀리지 않게",
   "toil": "고생스러운 노동",
   "towering": "우뚝 솟은",
   "trash": "폐기물",

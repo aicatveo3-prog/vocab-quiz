@@ -1631,7 +1631,6 @@ Object.assign(window.GLOSS, {
   "thick":"두꺼운; 빽빽한",
   "thickness":"두께, 진함",
   "thoroughness":"철저함, 빈틈없음",
-  "torrent":"급류; 빗발",
   "unhinged":"정신이 이상해진",
   "use up":"다 써 버리다",
   "warehouse":"창고, 저장고",

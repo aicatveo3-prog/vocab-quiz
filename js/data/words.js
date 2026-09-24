@@ -524,7 +524,10 @@ window.VOCAB = [
     ex:[{ s:"Please {{}} a stamp to the top right corner.", f:"affix", ko:"우표를 오른쪽 위 모서리에 붙여 주세요." }] },
 
   { word:"afflict", pron:"어플릭트", pos:"v", level:"C1", meanings:["괴롭히다","시달리게 하다"],
-    syn:["trouble","torment","plague"], ant:["comfort"],
+    /* ★ syn 의 "torment" 을 "cause suffering to" 로 바꿨다. torment 은 T 세트에서
+       명사 '고통, 고뇌' 로 선다 — 참조 다섯 중 agony·anguish·distress 셋이 명사여서
+       명사를 골랐고, 동사 쪽을 쓰던 이 자리를 갈았다. */
+    syn:["trouble","cause suffering to","plague"], ant:["comfort"],
     ex:[{ s:"Drought continues to {{}} farmers in the south.", f:"afflict", ko:"가뭄이 남부 농민들을 계속 괴롭히고 있다." }] },
 
   { word:"affluent", pron:"애플루언트", pos:"adj", level:"C1", meanings:["풍족한","부유한"],
@@ -1762,7 +1765,6 @@ window.GLOSS = {
   "stench":"악취",
   "stranger":"낯선 사람",
   "terrestrial":"육지의, 지상의",
-  "timid":"소심한",
   "tiny":"아주 작은",
   "unavailable":"이용할 수 없는",
   "uncertain":"불확실한",
