@@ -1500,7 +1500,6 @@ Object.assign(window.GLOSS, {
   "read too much into": "지나치게 해석하다",
   "reeking": "악취를 풍기는",
   "refer to": "~을 들어 말하다",
-  "repetitive": "되풀이되는",
   "robotic": "로봇처럼 움직이는",
   "rock element": "암석 성분",
   "roving": "돌아다니는",

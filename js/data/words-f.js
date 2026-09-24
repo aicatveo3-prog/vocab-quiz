@@ -1843,7 +1843,6 @@ Object.assign(window.GLOSS, {
   "petrify":"돌처럼 굳히다",
   "plain-spoken":"꾸밈없이 말하는",
   "prudence":"앞을 내다보는 신중함",
-  "renounce":"버리고 물러나다",
   "see ahead":"앞을 내다보다",
   "set procedure":"정해진 절차",
   "spout":"물이 뿜어 나오는 주둥이",

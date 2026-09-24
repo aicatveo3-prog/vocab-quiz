@@ -278,8 +278,11 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS 가 '내뿜다, 발산하다' 다. 원본은 순서만 반대이므로 사전
      순서를 그대로 지켜 emit 문제의 화면이 안 바뀌게 했다. */
+  /* 유의어 release 를 let out 으로 바꿨다. release 가 R 세트 챕터 6 표제어
+     (석방하다 · v)로 올라가면 이 자리에 '석방하다' 가 떠 버린다 — '방출하다'
+     뜻을 노린 자리였다. */
   { word:"give off", pron:"기브 오프", pos:"phr", level:"B2", meanings:["내뿜다","발산하다"],
-    syn:["emit","release","exude"] },
+    syn:["emit","let out","exude"] },
 
   { word:"give way to", pron:"기브 웨이 투", pos:"phr", level:"B2", meanings:["~에 굽히다","~로 바뀌다"],
     syn:["yield to","succumb to","make way for"] },

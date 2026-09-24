@@ -977,8 +977,11 @@ window.VOCAB_I = [
     ex:[{ s:"Unusually cold weather can {{}} seed germination.", f:"inhibit", ko:"이례적으로 추운 날씨는 씨앗 발아를 억제할 수 있다." }] },
 
   /* inhibit 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  /* 유의어 reserve 를 holding back of feeling 으로 바꿨다. reserve 가 R 세트
+     챕터 9 표제어(예약하다, 따로 남겨 두다 · v)로 올라가면 명사 표제어의 유의어
+     자리에 '예약하다' 가 떠 버린다 — '속마음을 드러내지 않음' 뜻을 노린 자리였다. */
   { word:"inhibition", pron:"인히비션", pos:"n", level:"C1", meanings:["억제","억압"],
-    syn:["restraint","suppression","reserve"],
+    syn:["restraint","suppression","holding back of feeling"],
     ex:[{ s:"Alcohol lowers {{}} and impairs judgment.", f:"inhibition", ko:"알코올은 억제를 낮추고 판단력을 손상시킨다." }] },
 
   { word:"inhumane", pron:"인휴메인", pos:"adj", level:"C1", meanings:["몰인정한","무자비한"],
@@ -1710,8 +1713,10 @@ window.VOCAB_I = [
 
   /* 원본은 '발표하다; 발행하다; 화제' 로 동사와 명사가 갈린다. 동사 쪽으로 모았다 —
      명사 '화제' 는 바꿔 쓸 유의어 3개를 만들기 어렵다. */
+  /* 유의어 release 를 make public 으로 바꿨다 — release 를 '석방하다' 로 세우기
+     때문이다. 이 자리는 '발표하다' 뜻을 노린 것이었다. */
   { word:"issue", pron:"이슈", pos:"v", level:"B1", meanings:["발표하다","발행하다"],
-    syn:["announce","release","publish"],
+    syn:["announce","make public","publish"],
     ex:[{ s:"The ministry will {{}} a full statement tomorrow.", f:"issue", ko:"그 부처는 내일 전체 성명을 발표할 것이다." }] },
 
   { word:"itchy", pron:"이치", pos:"adj", level:"B2", meanings:["가려운","간질간질한"],
@@ -2076,9 +2081,6 @@ Object.assign(window.GLOSS, {
   "repercussion": "파급 효과",
   "research": "연구 조사",
   "reserved person": "말을 아끼는 사람",
-  "resistant": "저항력이 있는",
-  "resourceful": "기지가 뛰어난",
-  "responsible": "책임감 있는",
   "restlessness": "잠 못 이룸",
   "retiring": "나서기를 꺼리는",
   "reversed": "뒤집힌",

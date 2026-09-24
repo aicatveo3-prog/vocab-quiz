@@ -818,7 +818,6 @@ Object.assign(window.GLOSS, {
   "reflector": "반사기",
   "relax": "헐겁게 하다",
   "rent out": "세를 놓다",
-  "reptile": "파충류",
   "research facility": "연구 시설",
   "rest": "놓여 있다",
   "rubbish": "잡쓰레기",
