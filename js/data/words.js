@@ -1725,7 +1725,6 @@ window.GLOSS = {
   "pleasant":"쾌적한, 즐거운",
   "poison":"독",
   "poor":"가난한",
-  "prosperity":"번영",
   "proud":"자랑스러운",
   "proven":"입증된",
   "punishment":"처벌",

@@ -1651,7 +1651,6 @@ Object.assign(window.GLOSS, {
   "hopelessly":"절망적으로, 어찌할 수 없이",
   "hopelessness":"절망, 희망 없음",
   "lay waste":"황폐하게 만들다",
-  "providence":"섭리, 신의 뜻",
   "ravage":"파괴하다, 유린하다",
   "recklessness":"무모함, 부주의",
   "recount":"이야기하다, 상세히 말하다",

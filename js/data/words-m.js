@@ -1491,7 +1491,6 @@ Object.assign(window.GLOSS, {
   "proselytizer": "개종을 권하는 사람",
   "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
-  "psychological": "심리의",
   "pull it off": "끝내 해내다",
   "put in the wrong place": "엉뚱한 곳에 두다",
   "qualm": "꺼림칙함",
