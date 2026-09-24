@@ -1,8 +1,8 @@
 /**
- * words-h.js 검사 — 매 차수마다 돌린다.
+ * words-y.js 검사 — 매 차수마다 돌린다.
  *
- *   node tools/words-h-audit.js           전체 검사
- *   node tools/words-h-audit.js --rules   규칙별 검사 건수 (죽은 검사 탐지)
+ *   node tools/words-y-audit.js           전체 검사
+ *   node tools/words-y-audit.js --rules   규칙별 검사 건수 (죽은 검사 탐지)
  *
  * 검사 6종
  *   ① 스키마        필수 필드 / meanings 개수 / pron 한글 / 표제어 중복
@@ -34,7 +34,7 @@ function load(rel) {
  'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js', 'js/data/words-t.js', 'js/data/words-u.js', 'js/data/words-v.js', 'js/data/words-w.js', 'js/data/words-y.js', 'js/data/words-z.js', 'js/data/gloss.js', 'js/data/pron.js',
  'js/quizgen.js'].forEach(load);
 
-var H = window.VOCAB_H || [];
+var SET = window.VOCAB_Y || [];
 var ALL = window.Quiz.ALL;
 var GLOSS = window.GLOSS || {}, PRON = window.PRON || {};
 var Q = window.Quiz;
@@ -49,7 +49,7 @@ function did(name, n) { checks[name] = (checks[name] || 0) + (n === undefined ? 
 var POS = { v: 1, n: 1, adj: 1, adv: 1, phr: 1 };
 var LEVEL = { B1: 1, B2: 1, C1: 1, C2: 1 };
 var seen = {};
-H.forEach(function (x) {
+SET.forEach(function (x) {
   var at = '[' + (x.word || '?') + ']';
   did('스키마');
   if (!x.word) return errors.push(at + ' word 없음');
@@ -62,7 +62,7 @@ H.forEach(function (x) {
   else if (!/^[가-힣\s·\-]+$/.test(x.pron)) errors.push(at + ' pron 에 한글 아닌 문자: ' + x.pron);
 
   var l = x.word.toLowerCase();
-  if (seen[l]) errors.push(at + ' H 세트 안에서 표제어 중복');
+  if (seen[l]) errors.push(at + ' Y 세트 안에서 표제어 중복');
   seen[l] = 1;
   var other = ALL.filter(function (w) { return w.word.toLowerCase() === l; });
   if (other.length > 1) errors.push(at + ' 다른 세트와 표제어 중복');
@@ -73,7 +73,7 @@ H.forEach(function (x) {
 });
 
 /* ── ② 예문 ────────────────────────────────── */
-H.forEach(function (x) {
+SET.forEach(function (x) {
   var at = '[' + x.word + ']';
   if (x.pos === 'phr' && x.ex) warns.push(at + ' 구·표현에 ex 가 있다 (빈칸 문제로 만들기 어렵다)');
   (x.ex || []).forEach(function (e) {
@@ -98,7 +98,7 @@ H.forEach(function (x) {
 });
 
 /* ── ④ 유의어·반의어 ────────────────────────── */
-H.forEach(function (x) {
+SET.forEach(function (x) {
   var at = '[' + x.word + ']';
   var syn = (x.syn || []).map(function (s) { return String(s).toLowerCase(); });
   var ant = (x.ant || []).map(function (s) { return String(s).toLowerCase(); });
@@ -140,7 +140,7 @@ H.forEach(function (x) {
 /* ── ⑤ 출제 시뮬레이션 ──────────────────────── */
 var sim = { mcq: 0, not: 0, cloze: 0, match: 0 };
 var simFail = [];
-H.forEach(function (x) {
+SET.forEach(function (x) {
   did('출제 시뮬레이션');
   var want = {
     mcq: true,
@@ -166,23 +166,23 @@ simFail.forEach(function (f) { errors.push(f); });
 /* ── ⑥ 분포 ────────────────────────────────── */
 function tally(key) {
   var t = {};
-  H.forEach(function (x) { t[x[key]] = (t[x[key]] || 0) + 1; });
+  SET.forEach(function (x) { t[x[key]] = (t[x[key]] || 0) + 1; });
   return Object.keys(t).sort().map(function (k) { return k + ' ' + t[k]; }).join('  ');
 }
 
 /* ── 출력 ─────────────────────────────────── */
-console.log('── words-h.js 검사 ─────────────────────────');
-console.log('표제어 : ' + H.length + '개');
+console.log('── words-y.js 검사 ─────────────────────────');
+console.log('표제어 : ' + SET.length + '개');
 console.log('품사   : ' + tally('pos'));
 console.log('레벨   : ' + tally('level'));
 console.log('');
 console.log('출제 시뮬레이션 (quizgen 실제 빌더)');
-console.log('  4지선다    ' + sim.mcq + ' / ' + H.length);
-console.log('  아닌것     ' + sim.not + ' / ' + H.filter(function (x) { return x.syn && x.syn.length >= 3; }).length);
-console.log('  문장빈칸   ' + sim.cloze + ' / ' + H.filter(function (x) { return x.ex && x.ex.length; }).length);
-console.log('  짝맞추기   ' + sim.match + ' / ' + H.length);
+console.log('  4지선다    ' + sim.mcq + ' / ' + SET.length);
+console.log('  아닌것     ' + sim.not + ' / ' + SET.filter(function (x) { return x.syn && x.syn.length >= 3; }).length);
+console.log('  문장빈칸   ' + sim.cloze + ' / ' + SET.filter(function (x) { return x.ex && x.ex.length; }).length);
+console.log('  짝맞추기   ' + sim.match + ' / ' + SET.length);
 console.log('');
-console.log('syn 을 비워 둔 단어 : ' + H.filter(function (x) { return !x.syn || !x.syn.length; })
+console.log('syn 을 비워 둔 단어 : ' + SET.filter(function (x) { return !x.syn || !x.syn.length; })
   .map(function (x) { return x.word; }).join(', ') || '없음');
 
 if (process.argv.indexOf('--rules') !== -1) {

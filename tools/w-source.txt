@@ -1,0 +1,73 @@
+wander	v	B2	헤매다|산만해지다	사전 글자 유지(참조 concentrate·drift). 아래 wander around 가 '헤매다' 를 품어 배제
+wander around	phr	B2	이리저리 헤매다	★교재 '헤메다' 는 오타 — 저장소는 전부 '헤매다' 다
+ward	n	B2	병실|병동	신규
+warehouse	n	B2	창고|저장고	사전 글자 유지(참조 depot). depot 과 맞물려 배제
+warlike	adj	C1	전쟁을 벌이려는	사전 단일값 유지(참조 martial). 교재 '호전적인' 은 combative 자리
+warning	n	B1	경고|주의	attention 과 '주의' 가 맞물려 배제
+warranty	n	C1	보증서|담보	교재 괄호를 풀어 '보증서' 로. guarantee 와 맞물려 배제
+warrior	n	B2	전사	신규
+wary	adj	C1	조심하는|경계하는	사전 글자 유지(참조 cautious). 교재는 순서만 다르다. alert 와 맞물려 배제
+wasteland	n	C1	불모지|황무지	★첫 뜻을 갈랐다 — 아래 wilderness 와 '황무지' 를 맞춰 자동 배제시켰다
+watchdog	n	C1	감시 역할을 하는 것	★교재 '(증거 없이) 추정된, 주장된' 은 alleged 뜻이다. 사전값이 맞다(참조 monitor)
+waterproof	adj	B2	방수의	신규
+waters	n	C1	수역|해역	'바다' 는 sea 자리
+waver	v	C1	흔들리다|주저하다	★교재 '약하다, 약해지다' 는 waver 뜻이 아니다. hesitate 와 맞물려 배제
+weaken	v	B2	약화시키다	사전 단일값 유지(참조 세 곳). dampen·undermine 과 맞물려 배제
+weakness	n	B1	약점|약함	위 weaken(동사) 과 품사로 갈랐다
+wealthy	adj	B2	부유한	사전=교재(참조 affluent·broke). affluent 와 맞물리고 well-to-do 와도 맞물린다
+wear	v	B1	입고 있다|닳게 하다	명사 '의복' 은 attire 자리
+wear out	v	B2	지치게 하다	사전 단일값 유지(참조 exhaust)
+weary	adj	B2	지친|피곤한	exhausted 가 '피곤한' 을 품어 배제
+weave	v	B2	천을 짜다|뜨다	★'짜다' 만으로는 squeeze(짜다)·milk(젖을 짜다) 와 안 갈린다. 교재 괄호를 풀어 앞에 붙였다
+weed	n	B2	잡초	교재 '수초' 는 드문 쪽이라 버렸다
+weigh	v	B1	재다|비교하다	사전의 쌍반점만 쉼표로(참조 compare). compare 와 맞물려 배제
+welfare	n	B2	복지	사전 단일값 유지(참조 common good). '행복' 은 bliss·happiness 자리
+well-grounded	adj	C1	정당한 근거가 있는	legitimate 의 '정당한' 을 품어 배제. 교재 둘째 갈래는 버렸다
+well-meaning	adj	C1	선의의	교재 '선의로 한' 은 같은 말
+well-rounded	adj	C1	균형이 잡힌	'다재다능한' 은 versatile 자리라 넘겼다
+well-to-do	adj	C1	유복한|부유한	★첫 뜻을 갈랐다 — '부유한' 을 둘째로 남겨 wealthy·affluent 와 맞물리게 했다
+wetland	n	B2	습지대	사전 단일값 유지(참조 marsh)
+wheat	n	B1	밀	신규
+when it comes to	phr	B2	~로 말하자면	★'~에 관한 한' 은 in terms of·regarding(~에 관하여) 과 눈으로 안 갈린다
+whereabouts	n	C1	행방|소재	교재 부사 갈래 버림
+whereas	phr	B2	반면에	on the other hand 와 맞물려 배제
+whimper	v	C1	훌쩍이며 울다	사전 단일값 유지(참조 moan). 교재 명사 갈래 버림
+whine	v	B2	낑낑거리다	사전 단일값 유지(참조 groan). 위 whimper 와 갈랐다
+whirl	v	C1	소용돌이치다	교재 명사 갈래 버림
+whisper	v	B1	속삭이다	사전 단일값 유지(참조 blare·call out). 교재 명사 갈래 버림
+wholehearted	adj	C1	전심전력의|진심을 다한	사전 글자 유지(참조 earnest·heartfelt). 교재 '완전한' 은 absolute 등 넷 자리
+wicked	adj	B2	사악한|못된	★앞뒤를 바꿨다 — '못된' 이 앞이면 erroneous(잘못된) 과 한 글자로만 갈린다. vicious 와 '사악한' 이 맞물려 배제
+wide-ranging	adj	C1	폭넓은	사전 단일값 유지(참조 extensive)
+widespread	adj	B2	널리 퍼진	사전 단일값 유지(참조 general). prevalent 와 맞물려 배제
+widow	n	B2	미망인	신규
+width	n	B1	너비|폭	사전 글자 유지(참조 breadth·diameter). 교재는 순서만 다르다
+wilderness	n	C1	황야|황무지	위 wasteland 와 '황무지' 를 맞춰 자동 배제시켰다
+will	n	B2	의지|유언장	아래 willpower 의 첫 뜻을 '정신력' 으로 돌려 이쪽이 '의지' 를 쓸 수 있게 했다
+willing	adj	B1	기꺼이 ~하는	신규
+willingness	n	B2	기꺼이 하는 마음	위 willing(형용사) 과 품사로 갈랐다
+willpower	n	C1	정신력|의지력	★첫 뜻을 갈랐다 — '의지력' 이 앞이면 will(의지) 과 눈으로 안 갈린다. determination 화면 1줄 바뀜
+windfall	n	C2	뜻밖의 횡재	사전 단일값 유지(참조 fortune)
+winding	adj	B2	구불구불한	사전 단일값 유지(참조 crooked). crooked 와 맞물려 배제
+windmill	n	B1	풍차	신규
+with regard to	phr	B2	~에 대해서는	사전 단일값 유지(참조 in relation to). 교재 '~에 관해서는' 은 in terms of 자리
+withdraw	v	B2	철수하다|회수하다	사전 글자 유지(참조 deploy·drop out). recall·retrieve 와 맞물려 배제
+wither	v	C1	시들다	사전 단일값 유지(참조 blossom·fade)
+withhold	v	C1	보류하다|억제하다	사전 글자 유지 — 참조가 일곱 곳이다. 교재는 순서만 다르다
+withstand	v	B2	견디다|버티다	사전 글자 유지(참조 bear·endure). bear·endure·sustain 과 맞물려 배제
+witness	n	B2	목격자|증인	교재 동사 갈래 버림
+wobble	v	C1	흔들리다|떨다	위 waver 와 '흔들리다' 를, quiver 와 '떨다' 를 맞춰 자동 배제시켰다
+woeful	adj	C2	통탄할|한심한	grievous·lamentable 과 맞물려 배제
+wonder	n	B1	놀라움|경이	★사전의 쌍반점만 쉼표로. 교재의 동사 '궁금해하다' 는 버렸다 — 참조 둘이 명사다
+wooden	adj	B1	나무로 된	신규
+work out	phr	B2	알아내다|계산해 내다	★사전값을 따랐다(참조 세 곳). 교재 '운동하다' 는 버렸다. determine·discover·uncover 와 맞물려 배제
+workable	adj	B2	해낼 수 있는|쓸 만한	★viable·feasible 이 '실행 가능한' 을 쓰므로 갈라 썼다
+workload	n	B2	업무량|작업량	신규
+world view	n	C1	세계관	신규
+worship	n	B2	예배|숭배	교재 동사 갈래 버림
+worthwhile	adj	B2	할 만한 값이 있는	사전 단일값 유지(참조 fruitful). 교재 '가치 있는' 은 뜻이 넓다
+worthy	adj	B2	훌륭한|자격이 있는	★앞뒤를 바꿨다 — '자격이 있는' 은 qualified(자격 있는) 와 조사 하나만 다르다. '훌륭한' 은 다섯 곳과 맞물린다
+wound	n	B1	상처	교재 동사 갈래 버림. scar 와 맞물려 배제
+wrap-up	n	C1	요약|결말	résumé·conclusion 과 맞물려 배제
+wrath	n	C2	분노|노여움	outrage·resentment 와 맞물려 배제
+wretched	adj	C1	처참한	사전 단일값 유지(참조 miserable). 교재 '비참한' 은 miserable 등 넷 자리
+wrinkle	n	B2	주름	사전 단일값 유지(참조 furrow·gather line)

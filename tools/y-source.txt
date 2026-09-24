@@ -1,0 +1,5 @@
+yearn	v	C1	갈망하다|동경하다	사전 글자 유지(참조 aspire·crave·long). crave·long 과 맞물려 배제
+year-round	adj	B2	연중 계속되는	'계속되는' 을 품어 continuous·ongoing·uninterrupted 와 맞물려 배제
+yet another	phr	B2	또 하나의	교재 '잇따라' 는 부사라 버렸다
+yield	v	B2	산출하다|양보하다	★사전 첫 갈래를 따랐다(참조 여섯 곳). 명사 쪽 참조 harvest·output 을 손질한다
+yolk	n	B2	노른자	교재 괄호 걷음

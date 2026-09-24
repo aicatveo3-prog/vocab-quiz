@@ -34,7 +34,7 @@ function load(rel) {
    있고(divine 의 반의어 earthly), 그러면 뜻·발음은 그 표제어에서 온다.
    세트를 추가할 때 이 목록에 넣지 않으면 "뜻이 없다"는 헛된 오류가 난다. */
 ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-c.js',
- 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js', 'js/data/words-t.js', 'js/data/words-u.js', 'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js'].forEach(load);
+ 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js', 'js/data/words-t.js', 'js/data/words-u.js', 'js/data/words-v.js', 'js/data/words-w.js', 'js/data/words-y.js', 'js/data/words-z.js', 'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js'].forEach(load);
 
 var D = window.VOCAB_C || [];
 var ALL = window.Quiz.ALL;

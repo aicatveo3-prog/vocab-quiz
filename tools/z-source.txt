@@ -1,0 +1,3 @@
+zeal	n	C1	열의|열성	사전 글자 유지(참조 enthusiasm·fervor). enthusiasm 과 맞물려 배제
+zealous	adj	C2	열의에 찬|열성적인	사전 글자 유지(참조 ardent·enthusiastic). 위 zeal 과 품사로 갈랐다
+zoom in on	phr	C1	서서히 확대하다	'확대하다' 를 품어 amplify·enlarge·magnify 와 맞물려 배제
