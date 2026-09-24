@@ -645,8 +645,6 @@ Object.assign(window.GLOSS, {
   "resister":"저항하는 사람",
   "resume":"다시 시작하다",
   "ruminant":"반추동물",
-  "salute":"경의를 표하다",
-  "sanitation":"위생 시설",
   "satiety":"포만감",
   "scorch":"그슬리다, 태우다",
   "shrill":"귀가 찢어지는 듯한",
