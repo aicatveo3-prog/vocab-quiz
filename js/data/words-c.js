@@ -428,7 +428,10 @@ window.VOCAB_C = [
     ex:[{ s:"The evening turned {{}} as soon as the sun set.", f:"chilly", ko:"해가 지자마자 저녁이 쌀쌀해졌다." }] },
 
   { word:"chimney", pron:"침니", pos:"n", level:"B1", meanings:["굴뚝"],
-    syn:["flue","stack","vent"],
+    /* ★ syn 의 "stack" 을 "smoke pipe" 로 바꿨다. stack 은 S 세트에서 '더미,
+       무더기' 로 선다 — 굴뚝 뜻과는 맞지 않는다(사전값 '쌓다; 더미' 도 이미
+       어긋나 있었다). */
+    syn:["flue","smoke pipe","vent"],
     ex:[{ s:"Smoke rose straight from the {{}} in the still air.", f:"chimney", ko:"고요한 공기 속에서 연기가 굴뚝에서 곧게 올라갔다." }] },
 
   { word:"choke", pron:"초크", pos:"v", level:"B2", meanings:["질식시키다","숨이 막히다"],
@@ -750,7 +753,9 @@ window.VOCAB_C = [
     ex:[{ s:"Real learning happens outside your {{}}.", f:"comfort zone", ko:"진짜 배움은 안전지대 밖에서 일어난다." }] },
 
   { word:"comic strip", pron:"카믹 스트립", pos:"n", level:"B2", meanings:["연재 만화"],
-    syn:["cartoon","strip","funnies"],
+    /* ★ syn 의 "strip" 을 "picture cartoon series" 로 바꿨다. strip 은 S 세트에서
+       동사 '벗기다' 로 선다 — 명사 목록에 동사가 끼게 된다. */
+    syn:["cartoon","picture cartoon series","funnies"],
     ex:[{ s:"He read the {{}} before anything else in the paper.", f:"comic strip", ko:"그는 신문에서 연재 만화를 무엇보다 먼저 읽었다." }] },
 
   /* ── comm ──────────────────────────────────── */
@@ -1160,7 +1165,9 @@ window.VOCAB_C = [
     ex:[{ s:"Guards will {{}} any glass bottle at the gate.", f:"confiscate", ko:"경비원은 정문에서 유리병을 모두 압수한다." }] },
 
   { word:"conflict", pron:"칸플릭트", pos:"n", level:"B1", meanings:["갈등","분쟁"],
-    syn:["dispute","struggle","friction"], ant:["peace"],
+    /* ★ syn 의 "struggle" 을 "open quarrel" 로 바꿨다. struggle 은 S 세트에서
+       동사 '힘겨워하다, 투쟁하다' 로 선다 — 명사 목록에 동사가 끼게 된다. */
+    syn:["dispute","open quarrel","friction"], ant:["peace"],
     ex:[{ s:"The border {{}} lasted eleven years.", f:"conflict", ko:"그 국경 분쟁은 11년간 이어졌다." }] },
 
   { word:"conflicting", pron:"컨플릭팅", pos:"adj", level:"B2", meanings:["모순되는","상반되는"],
@@ -1695,8 +1702,12 @@ window.VOCAB_C = [
     ex:[{ s:"The attic room is small but {{}}.", f:"cozy", ko:"그 다락방은 작지만 아늑하다." }] },
 
   /* ── cra · cre ────────────────────────────── */
+  /* ★ syn 의 "split" 을 "narrow break" 로 바꿨다. 사전이 '나누다; 갈라진 틈' 으로
+     동사와 명사를 섞어 두었는데 S 세트에서는 동사 '나누다' 로 선다 — 명사
+     목록에 동사가 끼게 된다. 마침 사전이 적어 둔 명사 뜻이 이 표제어 자신의
+     첫 뜻('갈라진 틈') 이기도 했다. */
   { word:"crack", pron:"크랙", pos:"n", level:"B1", meanings:["갈라진 틈","금"],
-    syn:["fissure","split","gap"],
+    syn:["fissure","narrow break","gap"],
     ex:[{ s:"A thin {{}} ran across the glass.", f:"crack", ko:"얇은 금이 유리를 가로질러 갔다." }] },
 
   { word:"crack down on", pron:"크랙 다운 온", pos:"phr", level:"C1", meanings:["~에 단호한 조치를 취하다"],
@@ -1735,7 +1746,11 @@ window.VOCAB_C = [
     ex:[{ s:"A sudden {{}} for sugar hit her at midnight.", f:"craving", ko:"자정에 갑작스러운 단것에 대한 욕구가 그녀를 덮쳤다." }] },
 
   { word:"crawl", pron:"크롤", pos:"v", level:"B1", meanings:["기어가다","서행하다"],
-    syn:["creep","inch","slither"], ant:["sprint"],
+    /* ★ ant 의 "sprint" 를 "run flat out" 으로 바꿨다. sprint 는 S 세트에서
+       명사 '단거리 경주' 로 선다 — 동사인 이 표제어의 반의어 자리에 명사가
+       들어가게 된다. 사전이 적어 둔 뜻('전력으로 달리다') 을 그대로 옮겨
+       화면 뜻은 달라지지 않게 했다. */
+    syn:["creep","inch","slither"], ant:["run flat out"],
     ex:[{ s:"The baby began to {{}} at seven months.", f:"crawl", ko:"그 아기는 7개월에 기기 시작했다." }] },
 
   { word:"craze", pron:"크레이즈", pos:"n", level:"C1", meanings:["대유행","열풍"],
@@ -2053,16 +2068,10 @@ Object.assign(window.GLOSS, {
   "single-sex":"남녀를 구분한",
   "soggy":"축축한, 질척한",
   "soldier":"군인",
-  "spiritual":"정신적인, 영적인",
-  "sporadic":"산발적인, 이따금의",
-  "sprint":"전력으로 달리다",
-  "squander":"낭비하다",
   "stagnate":"고이다, 정체되다",
   "stalemate":"교착 상태",
-  "stare":"응시하다, 빤히 보다",
   "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
-  "straightforward":"단순명료한, 쉬운",
   "stretch":"뻗다, 늘이다",
   "subordinate":"부하, 하급자",
   "succumb":"굴복하다, 쓰러지다",

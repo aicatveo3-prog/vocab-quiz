@@ -210,7 +210,10 @@ window.VOCAB_L = [
     ex:[{ s:"The dancer can {{}} higher than anyone on the stage.", f:"leap", ko:"그 무용수는 무대 위 누구보다 높이 뛸 수 있다." }] },
 
   { word:"leap off", pron:"리프 오프", pos:"phr", level:"B2", meanings:["뛰어내리다"],
-    syn:["jump off","spring from","bound off"] },
+    /* ★ syn 의 "spring from" 을 "jump down from" 으로 바꿨다. 사전이
+       '뛰어 벗어나다' 로 적어 두었지만 그것은 이 표제어(leap off) 쪽 뜻이다.
+       spring from 의 실제 뜻은 '~에서 비롯되다' 여서 S 세트에서 그렇게 세웠다. */
+    syn:["jump off","jump down from","bound off"] },
 
   { word:"learned", pron:"러닛", pos:"adj", level:"C1", meanings:["학식이 있는","박식한"],
     syn:["scholarly","erudite","well-read"], ant:["ignorant"],
@@ -533,7 +536,10 @@ window.VOCAB_L = [
 
   /* localize 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
   { word:"location", pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
-    syn:["site","spot","position"],
+    /* ★ syn 의 "spot" 을 "particular place" 로 바꿨다. 사전이 '발견하다; 장소' 로
+       동사와 명사를 섞어 두었는데, 참조 셋 중 둘(catch a glimpse of·detect) 이
+       동사여서 S 세트에서는 동사 '발견하다' 로 선다. */
+    syn:["site","particular place","position"],
     ex:[{ s:"The {{}} of the new school has not been decided.", f:"location", ko:"새 학교의 장소는 아직 정해지지 않았다." }] },
 
   /* 승격 ② — GLOSS '숙소; 제기하다' 로 명사와 동사가 섞여 있었다.
@@ -841,7 +847,6 @@ Object.assign(window.GLOSS, {
   "song words": "노래 가사",
   "spearhead": "앞장서다",
   "spirits": "증류주",
-  "spring from": "뛰어 벗어나다",
   "stratum": "지층",
   "suede": "스웨이드 가죽",
   "suitcases": "여행용 가방",

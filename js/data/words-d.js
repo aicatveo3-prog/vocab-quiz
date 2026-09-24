@@ -139,7 +139,9 @@ window.VOCAB_D = [
     ex:[{ s:"The roar of the engines seemed to {{}} everyone on the platform.", f:"deafen", ko:"엔진의 굉음이 플랫폼에 있던 모두의 귀를 먹먹하게 하는 듯했다." }] },
 
   { word:"deal in", pron:"딜 인", pos:"phr", level:"B2", meanings:["거래하다","취급하다"],
-    syn:["trade in","handle","stock"] },
+    /* ★ syn 의 "stock" 을 "keep goods for sale" 로 바꿨다. stock 이 S 세트에서
+       명사 '재고, 주식' 으로 선다 — 동사 뜻을 늘어놓은 이 자리에 명사가 끼게 된다. */
+    syn:["trade in","handle","keep goods for sale"] },
 
   { word:"deal with", pron:"딜 위드", pos:"phr", level:"B1", meanings:["처리하다","다루다"],
     syn:["handle","address","tackle"], ant:["ignore"] },
@@ -514,7 +516,10 @@ window.VOCAB_D = [
     ex:[{ s:"The letter was clearly written by someone {{}}.", f:"deranged", ko:"그 편지는 분명히 정신이 나간 사람이 쓴 것이었다." }] },
 
   { word:"derive", pron:"디라이브", pos:"v", level:"C1", meanings:["얻다","비롯되다"],
-    syn:["obtain","gain","stem"], ant:["give up"],
+    /* ★ syn 의 "stem" 을 "stem from" 으로 바꿨다. 사전이 stem 의 뜻을
+       '유래하다, 생기다' 로 적어 두었지만 그것은 stem from 쪽 뜻이다. stem 은
+       S 세트에서 명사 '줄기' 로 서고, 동사 뜻은 같은 챕터의 stem from 이 받는다. */
+    syn:["obtain","gain","stem from"], ant:["give up"],
     ex:[{ s:"Many English words {{}} from Latin roots.", f:"derive", ko:"많은 영어 단어가 라틴어 어근에서 비롯된다." }] },
 
   /* 자리표시자 a·b 는 발음하지 않는다 (ascribe a to b 선례).
@@ -1171,8 +1176,10 @@ window.VOCAB_D = [
     syn:["separation","partition","department"], ant:["unity"],
     ex:[{ s:"The {{}} of the land caused decades of conflict.", f:"division", ko:"그 토지 분할은 수십 년의 갈등을 낳았다." }] },
 
+  /* ★ syn 의 "split" 을 "legal end of a marriage" 로 바꿨다 — crack(C) 과 같은
+     이유다. split 이 S 세트에서 동사로 선다. */
   { word:"divorce", pron:"디보스", pos:"n", level:"B1", meanings:["이혼","단절"],
-    syn:["split","dissolution","breakup"], ant:["marriage"],
+    syn:["legal end of a marriage","dissolution","breakup"], ant:["marriage"],
     ex:[{ s:"They finally filed for {{}} after twelve years.", f:"divorce", ko:"그들은 12년 뒤에 마침내 이혼을 신청했다." }] },
 
   { word:"divulge", pron:"디벌지", pos:"v", level:"C2", meanings:["누설하다","폭로하다"],
@@ -1380,7 +1387,10 @@ window.VOCAB_D = [
     syn:["repel","chase away","fend off"] },
 
   { word:"drizzle", pron:"드리즐", pos:"n", level:"B2", meanings:["이슬비","가랑비"],
-    syn:["light rain","mist","sprinkle"],
+    /* ★ syn 의 "sprinkle" 을 "scattered droplets" 로 바꿨다. 사전이 '보슬비;
+       뿌리다' 로 명사와 동사를 섞어 두었는데 S 세트에서는 동사 '뿌리다' 로 선다 —
+       명사 목록에 동사가 끼게 된다. */
+    syn:["light rain","mist","scattered droplets"],
     ex:[{ s:"A fine {{}} fell steadily all through the morning.", f:"drizzle", ko:"아침 내내 가랑비가 꾸준히 내렸다." }] },
 
   { word:"drop by", pron:"드랍 바이", pos:"phr", level:"B2", meanings:["잠깐 들르다","불시에 찾다"],
@@ -1489,7 +1499,6 @@ Object.assign(window.GLOSS, {
   "remains":"유물, 잔존물",
   "rot":"썩다, 부패하다",
   "rubble":"돌무더기, 파편",
-  "stem from":"~에서 유래하다",
   "sunrise":"해돋이, 일출",
   "swing":"흔들리다, 흔들다",
   "time limit":"제한 시간",
@@ -1550,7 +1559,6 @@ Object.assign(window.GLOSS, {
   "ruling":"판결, 결정",
   "shelve":"미루다, 보류하다",
   "shortfall":"부족액, 적자",
-  "sturdy":"튼튼한, 견고한",
   "subtract":"빼다, 공제하다",
   "take off":"떼다, 공제하다",
   "tentative":"잠정적인, 임시의",
@@ -1613,9 +1621,7 @@ Object.assign(window.GLOSS, {
   "self-government":"자치",
   "set off":"출발하다, 떠나다",
   "sparse":"드문, 희박한",
-  "stem":"유래하다, 생기다",
   "stemming from":"~에서 유래하는",
-  "strenuous":"격렬한, 몸이 힘든",
   "taxing":"부담이 큰, 힘겨운",
   "tear down":"허물다, 뜯어내다",
   "terminal":"종착역, 터미널",
@@ -1665,7 +1671,6 @@ Object.assign(window.GLOSS, {
   "sense":"감지하다; 감각",
   "sensor":"감지기, 센서",
   "soap":"비누",
-  "stray":"벗어나다, 빗나가다",
   "terminus":"종착지, 끝",
   "thriving":"번성하는, 잘 자라는",
   "title":"명칭, 칭호",
@@ -1864,7 +1869,6 @@ Object.assign(window.GLOSS, {
   "payout":"지급금, 배당",
   "redirect":"방향을 바꾸다",
   "reroute":"경로를 바꾸다",
-  "sphere":"영역, 범위",
   "tame":"길들이다; 온순한",
   "tamed":"길들여진",
   "tenet":"교리, 신조",
@@ -1922,8 +1926,6 @@ Object.assign(window.GLOSS, {
   "sleepy":"졸린, 졸음이 오는",
   "snooze":"눈을 붙이다, 잠깐 자다",
   "speechless":"말을 잃은, 말이 안 나오는",
-  "sprinkle":"보슬비; 뿌리다",
-  "stop by":"잠시 들르다",
   "strikingly":"놀랄 만큼, 두드러지게",
   "suspect":"의심스러운; 의심하다",
   "sweeping":"전면적인, 대폭적인",

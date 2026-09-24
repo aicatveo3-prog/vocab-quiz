@@ -96,7 +96,9 @@ window.VOCAB_B = [
      끼게 된다. 남은 "stable" 도 S 세트에서 형용사 '안정된' 으로 서므로
      챕터 14 에서 한 번 더 갈아야 한다(지금 떼면 발음만 남은 유령 키가 된다). */
   { word:"barn", pron:"반", pos:"n", level:"B1", meanings:["헛간","광"],
-    syn:["farm hut","stable","storehouse"],
+    /* ★ 챕터 7 에서 "shed" 를 갈았고, 이번에 남은 "stable" 도 갈았다.
+       stable 이 S 세트에서 형용사 '안정된' 으로 서기 때문이다. */
+    syn:["farm hut","outbuilding","storehouse"],
     ex:[{ s:"The farmer stored the hay in the {{}}.", f:"barn", ko:"농부는 건초를 헛간에 보관했다." }] },
 
   { word:"barometer", pron:"버라미터", pos:"n", level:"C1", meanings:["기압계","지표"],
@@ -362,7 +364,9 @@ window.VOCAB_B = [
     gov:{ prep:["on","upon","to"], pat:"bestow an honor {{}} him", usage:"bestow A on B : B에게 A를 수여하다" } },
 
   { word:"bet", pron:"벳", pos:"v", level:"B1", meanings:["(내기를) 걸다","단언하다"],
-    syn:["wager","gamble","stake"],
+    /* ★ syn 의 "stake" 를 "put money on" 으로 바꿨다. stake 는 S 세트에서 명사
+       '지분, 말뚝' 으로 선다 — 동사인 이 표제어의 자리에 명사가 들어가게 된다. */
+    syn:["wager","gamble","put money on"],
     ex:[{ s:"He {{}} ten dollars on the winning horse.", f:"bet", ko:"그는 우승한 말에 10달러를 걸었다." }] },
 
   { word:"better off", pron:"베터 오프", pos:"phr", level:"B2", meanings:["형편이 더 나은","더 잘사는"],
@@ -794,7 +798,10 @@ window.VOCAB_B = [
     ex:[{ s:"A narrow {{}} ran just behind the cottage.", f:"brook", ko:"좁은 개천이 그 작은 집 바로 뒤로 흘렀다." }] },
 
   { word:"broth", pron:"브로스", pos:"n", level:"B2", meanings:["수프","국물"],
-    syn:["stock","bouillon","consomme"],
+    /* ★ syn 의 "stock" 을 "meat water" 로 바꿨다. 사전이 stock 을 '재고;
+       저장하다' 로 적어 두어 이 자리(육수 뜻) 와 이미 어긋나 있었다. S 세트에서는
+       '재고, 주식' 으로 서므로 더 멀어진다. */
+    syn:["meat water","bouillon","consomme"],
     ex:[{ s:"She simmered the chicken {{}} for a full hour.", f:"broth", ko:"그녀는 닭 국물을 꼬박 한 시간 동안 뭉근히 끓였다." }] },
 
   /* ★ syn 의 "scan" 을 "leaf through" 로 바꿨다. S 세트에서 scan·skim 이 둘 다
@@ -827,7 +834,9 @@ window.VOCAB_B = [
      S 세트에서는 동사 '쏘다' 로 선다. 남은 "sprout" 도 동사 '싹트다' 로 서므로
      챕터 14 에서 한 번 더 갈아야 한다. */
   { word:"bud", pron:"버드", pos:"n", level:"B1", meanings:["싹","봉오리"],
-    syn:["young growth","sprout","germ"],
+    /* ★ 챕터 7 에서 "shoot" 를 갈았고, 이번에 남은 "sprout" 도 갈았다.
+       sprout 가 S 세트에서 동사 '싹트다, 발아하다' 로 서기 때문이다. */
+    syn:["young growth","unopened flower","germ"],
     ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
 
   { word:"budget", pron:"버짓", pos:"n", level:"B1", meanings:["예산"],

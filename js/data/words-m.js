@@ -352,7 +352,10 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
      문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
   { word:"material", pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
-    syn:["fabric","substance","stuff"],
+    /* ★ syn 의 "stuff" 를 "raw stuff for making" 으로 바꿨다. stuff 는 S 세트에서
+       동사 '채우다' 로 선다 — 명사 목록에 동사가 끼게 된다. 남은 "substance" 도
+       S 세트 낱말이지만 명사 '물질, 본질' 로 서므로 그대로 두어도 맞는다. */
+    syn:["fabric","substance","raw stuff for making"],
     ex:[{ s:"The jacket is made from recycled {{}}.", f:"material", ko:"그 재킷은 재활용 재료로 만들어졌다." }] },
 
   /* material 과 앞 다섯 글자가 같지만 어원이 갈리고 품사도 달라(n/adj)
@@ -1539,7 +1542,6 @@ Object.assign(window.GLOSS, {
   "staffed": "인원이 배치된",
   "standardized": "표준으로 정해진",
   "stationary": "고정된",
-  "steer": "방향을 조종하다",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
   "structural": "구조상의",
