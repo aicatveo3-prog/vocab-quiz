@@ -1778,7 +1778,6 @@ Object.assign(window.GLOSS, {
   "talk over":"논의하다, 상의하다",
   "throw away":"버리다, 내버리다",
   "unbiased":"편견 없는, 공정한",
-  "uncover":"밝혀내다, 알아내다",
   "unearth":"발굴하다, 찾아내다",
   "unfairness":"불공정, 부당함",
   "unrest":"불안, 소요",

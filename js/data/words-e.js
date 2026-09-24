@@ -2069,7 +2069,6 @@ Object.assign(window.GLOSS, {
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
   "tolerant":"너그러운, 관대한",
-  "unconventional":"관습에 얽매이지 않는",
   "uptight":"긴장한, 신경이 날카로운",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
@@ -2389,7 +2388,6 @@ Object.assign(window.GLOSS, {
   "technical knowledge":"기술 지식",
   "thrilling":"짜릿한",
   "trial run":"시험 가동",
-  "unambiguous":"모호하지 않은",
   "urge strongly":"강하게 권하다",
 
   /* ── 12차: explicitly ~ extinct (44개) ───────────────── */

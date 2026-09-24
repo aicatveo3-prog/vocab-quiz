@@ -1878,7 +1878,6 @@ Object.assign(window.GLOSS, {
   "uncontrollable":"제어 불능의",
   "undecided":"결정하지 못한",
   "under no circumstances":"어떤 상황에서도 ~아닌",
-  "undergo":"겪다, 받다",
   "underline":"강조하다; 밑줄 긋다",
   "understand":"이해하다",
   "understanding":"이해, 인식",

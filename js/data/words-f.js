@@ -1934,7 +1934,6 @@ Object.assign(window.GLOSS, {
   "thwart":"뜻을 꺾다",
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
-  "underlying":"밑바탕에 있는",
   "usable":"쓸 수 있는",
   "vapor":"김, 수증기",
   "worthwhile":"할 만한 값이 있는",
