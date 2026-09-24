@@ -1843,7 +1843,6 @@ Object.assign(window.GLOSS, {
   "outspoken":"거침없이 말하는",
   "petrify":"돌처럼 굳히다",
   "plain-spoken":"꾸밈없이 말하는",
-  "previous":"앞의, 먼저의",
   "prudence":"앞을 내다보는 신중함",
   "renounce":"버리고 물러나다",
   "see ahead":"앞을 내다보다",

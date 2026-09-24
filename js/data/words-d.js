@@ -1858,7 +1858,6 @@ Object.assign(window.GLOSS, {
   "overshadow":"그늘지게 하다, 압도하다",
   "partition":"분할, 칸막이",
   "payout":"지급금, 배당",
-  "prevailing":"우세한, 널리 퍼진",
   "redirect":"방향을 바꾸다",
   "reroute":"경로를 바꾸다",
   "share":"배당, 몫",
