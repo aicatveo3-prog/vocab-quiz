@@ -329,18 +329,170 @@ window.VOCAB_W = [
      widespread 쪽이라 버렸다. */
   { word:"wide-ranging", pron:"와이드 레인징", pos:"adj", level:"C1", meanings:["폭넓은"],
     syn:["extensive","covering much ground","taking in a great deal"],
-    ex:[{ s:"They held a {{}} debate.", f:"wide-ranging", ko:"그들은 폭넓은 토론을 벌였다." }] }
+    ex:[{ s:"They held a {{}} debate.", f:"wide-ranging", ko:"그들은 폭넓은 토론을 벌였다." }] },
+
+  /* ══ 3차 · widespread ~ wonder (20단어) ══════════════════════════════════
+     승격 11 · 신규 9
+
+     will- 무리 넷과 with- 무리 넷이 한꺼번에 들어온다.
+
+     will·willing·willingness·willpower — 공통 접두사가 네 글자('will') 뿐이라
+     짝 맞추기 보드에서 안 갈린다(여섯 글자부터 가른다). willing↔willingness 만
+     일곱 글자로 걸린다. 품사가 will(n)·willing(adj)·willingness(n)·
+     willpower(n) 이니 명사 셋이 서로 부딪친다.
+       ★ will(의지) 과 willpower(의지력) 이 문제였다. '의지력' 은 '의지' 를
+       품는데 **두 글자라 자동 배제가 안 된다**(품기 검사는 양쪽이 세 글자
+       이상일 때만 돈다). 영→한 선택지에 나란히 놓이면 갈리지 않는다.
+       willpower 의 첫 뜻을 '정신력' 으로 돌려 will 이 '의지' 를 쓸 수 있게
+       했다. ★ 참조 determination(D) 의 화면이 한 줄 바뀐다.
+       willingness(기꺼이 하는 마음) 는 셋과 확실히 갈린다.
+
+     withdraw·wither·withhold·withstand — 역시 'with' 네 글자뿐이라 보드에서
+     안 갈리지만 뜻이 아주 달라 그대로 뒀다(철수하다 / 시들다 / 보류하다 /
+     견디다). 넷 다 사전값을 글자까지 지켰다.
+
+     ★ withhold 는 참조가 **일곱 곳**이다(allocate·allot·bestow·contribute·
+     deliver 반의어, deduct·hold back 유의어). 이 세트에서 가장 많다. 교재가
+     '억제하다, 보류하다' 로 순서만 달랐으므로 사전값을 그대로 지켰다.
+
+     ★ wonder 는 교재가 동사('궁금해하다') 를 앞세웠는데 참조 둘
+     (astonishment·marvel) 이 모두 명사다. 명사로 세우고 사전의 쌍반점만
+     쉼표로 고쳤다.
+
+     wobble 은 1차의 waver(흔들리다, 주저하다) 와 '흔들리다' 를, quiver(떨다)
+     와 '떨다' 를 맞춰 자동 배제시켰다. 셋이 다 흔들림을 말하는데 갈라 쓸 수가
+     없어 글자를 맞춘 것이다. */
+
+  /* 승격 ⑱ — 사전 단일값 유지(참조 general). prevalent(널리 퍼진, 흔한) 와
+     맞물려 배제된다. 교재의 '광범위한' 은 extensive 자리다. */
+  { word:"widespread", pron:"와이드스프레드", pos:"adj", level:"B2", meanings:["널리 퍼진"],
+    syn:["general","found nearly everywhere","spread over a large area"],
+    ex:[{ s:"The custom is {{}} in the south.", f:"widespread", ko:"그 풍습은 남부에 널리 퍼져 있다." }] },
+
+  { word:"widow", pron:"위도우", pos:"n", level:"B2", meanings:["미망인"],
+    syn:["woman whose husband has died","wife left alone by death","one bereaved of a husband"],
+    ex:[{ s:"The {{}} sold the farm.", f:"widow", ko:"그 미망인은 농장을 팔았다." }] },
+
+  /* 승격 ⑲ — 사전 글자 유지(참조 breadth·diameter). 교재는 순서만 다르다. */
+  { word:"width", pron:"위드스", pos:"n", level:"B1", meanings:["너비","폭"],
+    syn:["breadth","diameter","how broad a thing is"],
+    ex:[{ s:"Measure the {{}} of the door.", f:"width", ko:"그 문의 너비를 재라." }] },
+
+  /* 1차의 wasteland(불모지, 황무지) 와 '황무지' 를 맞춰 자동 배제시켰고,
+     첫 뜻은 '황야' 와 '불모지' 로 갈린다. */
+  { word:"wilderness", pron:"윌더니스", pos:"n", level:"C1", meanings:["황야","황무지"],
+    syn:["wild land with no people","untamed country","waste of open land"],
+    ex:[{ s:"They trekked across the {{}}.", f:"wilderness", ko:"그들은 황야를 가로질러 걸었다." }] },
+
+  /* ★ 아래 willpower 의 첫 뜻을 '정신력' 으로 돌린 덕에 이쪽이 '의지' 를 쓸 수
+     있다. '의지력' 은 '의지' 를 품지만 두 글자라 자동 배제가 안 되기 때문이다.
+     free will(자유 의지) 과는 '자유' 가 갈래를 못 박아 갈린다. */
+  { word:"will", pron:"윌", pos:"n", level:"B2", meanings:["의지","유언장"],
+    syn:["power to choose","paper leaving one's goods","the mind's resolve"],
+    ex:[{ s:"She has a strong {{}}.", f:"will", ko:"그녀는 강한 의지를 지녔다." }] },
+
+  { word:"willing", pron:"윌링", pos:"adj", level:"B1", meanings:["기꺼이 ~하는"],
+    syn:["ready to do it","not holding back","glad to lend a hand"],
+    ex:[{ s:"He was {{}} to wait.", f:"willing", ko:"그는 기꺼이 기다리려 했다." }] },
+
+  /* 위 willing(형용사) 과 품사로 갈랐다. 공통 접두사가 일곱 글자여서 짝 맞추기
+     보드에서도 갈린다. */
+  { word:"willingness", pron:"윌링니스", pos:"n", level:"B2", meanings:["기꺼이 하는 마음"],
+    syn:["readiness to act","mind glad to do it","being ready to help"],
+    ex:[{ s:"Her {{}} surprised them.", f:"willingness", ko:"그녀의 기꺼이 하는 마음이 그들을 놀라게 했다." }] },
+
+  /* 승격 ⑳ — ★첫 뜻을 '정신력' 으로 갈랐다. 사전값 '의지력' 이 앞이면 위
+     will(의지) 과 눈으로 갈리지 않는다 — '의지력' 이 '의지' 를 품지만 두
+     글자라 자동 배제가 안 된다. ★ 참조 determination(D) 의 화면이 한 줄 바뀐다. */
+  { word:"willpower", pron:"윌파워", pos:"n", level:"C1", meanings:["정신력","의지력"],
+    syn:["determination","strength of mind","grip on oneself"],
+    ex:[{ s:"It took great {{}} to stop.", f:"willpower", ko:"멈추는 데 큰 정신력이 들었다." }] },
+
+  /* 승격 ㉑ — 사전 단일값 유지(참조 fortune). */
+  { word:"windfall", pron:"윈드폴", pos:"n", level:"C2", meanings:["뜻밖의 횡재"],
+    syn:["fortune","money that falls in one's lap","gain nobody looked for"],
+    ex:[{ s:"The sale was a {{}} for them.", f:"windfall", ko:"그 매각은 그들에게 뜻밖의 횡재였다." }] },
+
+  /* 승격 ㉒ — 사전 단일값 유지(참조 crooked). crooked(구불구불한, 곧지 않은)
+     와 맞물려 배제된다. 교재의 '나선형의' 는 버렸다. */
+  { word:"winding", pron:"와인딩", pos:"adj", level:"B2", meanings:["구불구불한"],
+    syn:["crooked","bending this way and that","full of turns"],
+    ex:[{ s:"They took the {{}} path.", f:"winding", ko:"그들은 구불구불한 길로 갔다." }] },
+
+  { word:"windmill", pron:"윈드밀", pos:"n", level:"B1", meanings:["풍차"],
+    syn:["mill turned by the wind","tower with sails","wind-driven mill"],
+    ex:[{ s:"An old {{}} stood on the hill.", f:"windmill", ko:"낡은 풍차가 언덕에 서 있었다." }] },
+
+  /* 승격 ㉓ — 사전 단일값 유지(참조 in relation to). 교재의 '~에 관해서는' 은
+     in terms of(~에 관해서는, ~면에서) 자리라 버렸다. */
+  { word:"with regard to", pron:"위드 리가드 투", pos:"phr", level:"B2", meanings:["~에 대해서는"],
+    syn:["in relation to","as it touches","on the head of"] },
+
+  /* 승격 ㉔ — 사전 글자 유지. 참조 deploy(D 반의어)·drop out(D) 두 곳의 화면은
+     바뀌지 않는다. recall(회상하다, 회수하다)·retrieve(되찾다, 회수하다) 와
+     '회수하다' 가 맞물려 배제된다. 교재의 '치우다' 는 버렸다. */
+  { word:"withdraw", pron:"위드드로", pos:"v", level:"B2", meanings:["철수하다","회수하다"],
+    syn:["drop out","pull back from a place","take out again"], ant:["deploy"],
+    ex:[{ s:"The troops will {{}} by May.", f:"withdraw", ko:"그 군대는 오월까지 철수할 것이다." }] },
+
+  /* 승격 ㉕ — 사전 단일값 유지(참조 blossom 반의어·fade). */
+  { word:"wither", pron:"위더", pos:"v", level:"C1", meanings:["시들다"],
+    syn:["fade","dry up and droop","lose all freshness"], ant:["blossom"],
+    ex:[{ s:"The leaves began to {{}}.", f:"wither", ko:"잎들이 시들기 시작했다." }] },
+
+  /* 승격 ㉖ — ★사전 글자 유지. 참조가 **일곱 곳**으로 이 세트에서 가장 많다
+     (allocate·allot·bestow·contribute·deliver 반의어, deduct·hold back 유의어).
+     교재는 순서만 달랐다. contain·hold back·hold down·inhibit·restrain 이
+     '억제하다' 를, put on hold 가 '보류하다' 를 써서 여섯 곳과 맞물린다. */
+  { word:"withhold", pron:"위드홀드", pos:"v", level:"C1", meanings:["보류하다","억제하다"],
+    syn:["deduct","hold back","keep from giving"],
+    ex:[{ s:"They may {{}} the payment.", f:"withhold", ko:"그들은 지급을 보류할 수 있다." }] },
+
+  /* 승격 ㉗ — 사전 글자 유지(참조 bear·endure). bear(견디다, 감당하다)·
+     endure(견디다, 참다)·sustain(유지하다, 견디다) 와 맞물려 배제된다. */
+  { word:"withstand", pron:"위스탠드", pos:"v", level:"B2", meanings:["견디다","버티다"],
+    syn:["bear","endure","hold out against"],
+    ex:[{ s:"The wall can {{}} a gale.", f:"withstand", ko:"그 벽은 강풍을 견딜 수 있다." }] },
+
+  /* 교재 동사 갈래('목격하다') 는 버렸다. */
+  { word:"witness", pron:"위트니스", pos:"n", level:"B2", meanings:["목격자","증인"],
+    syn:["one who saw it happen","person giving evidence","onlooker in court"],
+    ex:[{ s:"The {{}} took the stand.", f:"witness", ko:"그 목격자가 증인석에 섰다." }] },
+
+  /* 1차의 waver(흔들리다, 주저하다) 와 '흔들리다' 를, quiver(떨다) 와 '떨다' 를
+     맞춰 자동 배제시켰다. 셋이 다 흔들림을 말하는데 갈라 쓸 수가 없어 글자를
+     맞춘 것이다. V 세트 vibrate(진동하다) 와는 확실히 갈린다. */
+  { word:"wobble", pron:"와블", pos:"v", level:"C1", meanings:["흔들리다","떨다"],
+    syn:["quiver","rock unsteadily","shake from side to side"],
+    ex:[{ s:"The table began to {{}}.", f:"wobble", ko:"그 탁자가 흔들리기 시작했다." }] },
+
+  /* grievous(통탄할, 비통한)·lamentable(통탄스러운, 한심한) 과 맞물려 배제된다.
+     교재의 '몹시 슬픈, 비통한' 은 grievous 쪽이라 버렸다. */
+  { word:"woeful", pron:"워풀", pos:"adj", level:"C2", meanings:["통탄할","한심한"],
+    syn:["grievous","lamentable","sad beyond telling"],
+    ex:[{ s:"It was a {{}} waste of money.", f:"woeful", ko:"그것은 통탄할 돈 낭비였다." }] },
+
+  /* 승격 ㉘ — ★사전의 쌍반점만 쉼표로. 교재는 동사('궁금해하다') 를 앞세웠는데
+     참조 둘(astonishment·marvel) 이 모두 명사여서 명사로 세웠다.
+     marvel(경이, 놀라운 일) 과 '경이' 가 맞물려 배제된다. */
+  { word:"wonder", pron:"원더", pos:"n", level:"B1", meanings:["놀라움","경이"],
+    syn:["astonishment","marvel","a sense of awe"],
+    ex:[{ s:"The child stared in {{}}.", f:"wonder", ko:"그 아이는 놀라움에 차서 바라보았다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a sense of awe": "아득한 느낌",
   "acting from good intent": "착한 뜻에서 나온",
   "as for": "그것에 대해서라면",
+  "as it touches": "그것에 닿는 한에서는",
   "backed by sound proof": "단단한 근거가 받쳐 주는",
   "bad at heart": "속이 나쁜",
   "balanced all round": "두루 고른",
   "barren ground": "메마른 땅",
   "be dressed in": "~을 차려입고 있다",
+  "being ready to help": "도울 채비가 되어 있음",
+  "bending this way and that": "이리저리 휘는",
   "body that keeps watch": "지켜보는 단체",
   "care of the needy": "어려운 이를 돌봄",
   "comfortably off": "살림이 넉넉한",
@@ -349,46 +501,72 @@ Object.assign(window.GLOSS, {
   "covering much ground": "아주 넓게 아우르는",
   "cry in small sobs": "잔 흐느낌으로 울다",
   "drain of strength": "힘을 다 빼다",
+  "dry up and droop": "말라 늘어지다",
   "eager to fight": "싸우려 드는",
   "even on every side": "어느 쪽도 치우치지 않은",
   "evil in nature": "본디 악한",
   "fighting man": "싸우는 사내",
   "find the weight of": "무게를 알아내다",
+  "found nearly everywhere": "거의 어디서나 보이는",
+  "full of turns": "굽이가 많은",
+  "gain nobody looked for": "아무도 바라지 않았던 이득",
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
+  "glad to lend a hand": "손을 보태는 것이 반가운",
   "go about with no goal": "목적 없이 돌아다니다",
   "go round and round": "돌고 또 돌다",
   "grain for bread": "빵을 만드는 곡식",
+  "grip on oneself": "스스로를 다잡는 힘",
   "ground that holds water": "물을 머금은 땅",
   "have on": "몸에 걸치고 있다",
   "having plenty": "가진 것이 많은",
   "hospital section": "병원의 한 구역",
+  "how broad a thing is": "얼마나 넓은지",
+  "keep from giving": "주지 않고 두다",
   "keeping water out": "물이 못 들어오게 하는",
   "knit together": "엮어 붙이다",
   "land that grows nothing": "아무것도 자라지 않는 땅",
+  "lose all freshness": "싱싱함을 다 잃다",
   "make a long thin cry": "가늘고 긴 소리를 내다",
   "make less strong": "힘을 덜어 내다",
   "make on a loom": "베틀로 만들다",
   "meant kindly": "좋은 마음으로 한",
+  "mill turned by the wind": "바람으로 돌리는 방아",
+  "mind glad to do it": "즐거이 하려는 마음",
+  "money that falls in one's lap": "굴러 들어온 돈",
   "murmur low": "낮게 웅얼거리다",
+  "not holding back": "마다하지 않는",
   "not letting water through": "물을 통과시키지 않는",
   "notice to take care": "조심하라는 알림",
   "of easy means": "형편이 편한",
   "of large means": "재산이 많은",
   "on one's guard": "단단히 대비하는",
+  "on the head of": "~의 건에 대해",
+  "one bereaved of a husband": "남편을 여읜 이",
   "one that guards against wrong": "잘못을 막아 서는 것",
   "one trained for battle": "싸움을 익힌 이",
+  "one who saw it happen": "그 일을 본 사람",
+  "onlooker in court": "법정에 선 목격자",
+  "paper leaving one's goods": "재산을 남기는 문서",
   "part of a hospital": "병원의 한 부분",
   "part of the ocean": "대양의 한 부분",
+  "person giving evidence": "증거를 대는 사람",
   "place one is at": "머무는 자리",
   "plant nobody wants": "아무도 원치 않는 풀",
   "pledge on goods sold": "판 물건에 대한 다짐",
+  "power to choose": "고를 수 있는 힘",
+  "pull back from a place": "어떤 곳에서 물러나다",
+  "readiness to act": "나설 준비가 됨",
+  "ready to do it": "할 마음이 있는",
   "resting on good reason": "까닭이 튼튼한",
   "roam without aim": "정처 없이 떠돌다",
+  "rock unsteadily": "불안하게 흔들리다",
   "rolling in money": "돈이 넘치는",
   "rooms for the sick": "환자를 두는 방",
   "rub thin by use": "써서 얇아지게 하다",
+  "sad beyond telling": "말로 못 할 만큼 슬픈",
   "sea area": "바다의 한 구역",
+  "shake from side to side": "좌우로 흔들리다",
   "shed for keeping things": "물건을 보관하는 헛간",
   "shedding rain": "비를 흘려 내는",
   "snivel softly": "코를 훌쩍이다",
@@ -398,31 +576,42 @@ Object.assign(window.GLOSS, {
   "speak under one's breath": "숨을 죽이고 말하다",
   "speaking of": "말이 난 김에 그것으로",
   "spin round fast": "빠르게 맴돌다",
+  "spread over a large area": "넓은 지역에 퍼진",
   "state help for all": "나라가 두루 주는 도움",
   "store for goods": "물품을 두는 곳",
   "stray off the point": "갈피를 벗어나다",
+  "strength of mind": "마음의 힘",
   "stretch of sea": "뻗은 바다",
   "stroll to and fro": "어슬렁어슬렁 오가다",
   "sway and hold back": "기울다가 멈칫하다",
+  "take out again": "다시 빼내다",
   "taking in a great deal": "많은 것을 담는",
   "talk very softly": "아주 나직이 말하다",
   "the crop of the field": "밭에서 거두는 작물",
+  "the mind's resolve": "마음이 굳힌 뜻",
   "the spot one has gone to": "떠나간 곳",
   "though the other way": "다른 쪽은 그렇지만",
   "tire right out": "완전히 지치게 하다",
+  "tower with sails": "날개가 달린 탑",
   "turn like a top": "팽이처럼 돌다",
   "turning to the matter of": "화제를 그것으로 돌려",
+  "untamed country": "길들지 않은 들판",
   "unwanted growth": "달갑지 않게 자란 것",
   "walk here and there": "여기저기 걸어 다니다",
   "want of strength": "힘이 모자람",
   "waste country": "버려진 들판",
+  "waste of open land": "텅 빈 벌판",
   "where a person is": "사람이 있는 데",
   "while by contrast": "그와 달리 한편",
+  "wife left alone by death": "죽음으로 홀로 남은 아내",
+  "wild land with no people": "사람 없는 거친 땅",
   "wild plant in a garden": "밭에 난 들풀",
+  "wind-driven mill": "바람이 돌리는 기계",
   "with a kind aim": "고운 속뜻을 지닌",
   "with all one's heart": "온 마음을 다해",
   "with firm footing": "발판이 굳은",
   "without energy left": "남은 기운이 없는",
+  "woman whose husband has died": "남편을 잃은 여자",
   "word of danger ahead": "앞의 위험을 알리는 말",
   "work threads into cloth": "실을 엮어 천으로 만들다",
   "worn down": "기운이 깎인",

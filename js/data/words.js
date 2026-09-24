@@ -1774,6 +1774,5 @@ window.GLOSS = {
   "unreliable":"신뢰할 수 없는",
   "unrepentant":"뉘우치지 않는",
   "unsuitable":"부적합한",
-  "withhold":"보류하다, 억제하다",
   "wonderful":"훌륭한, 멋진"
 };

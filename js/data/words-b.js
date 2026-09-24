@@ -1043,7 +1043,6 @@ Object.assign(window.GLOSS, {
   "sweetness":"단맛, 감미로움",
   "unilateral":"일방적인, 한쪽만의",
   "whiten":"희게 하다",
-  "wither":"시들다",
   "within":"~안에, ~이내에",
   "worse off":"형편이 더 나쁜"
 });

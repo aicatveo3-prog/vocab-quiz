@@ -1834,7 +1834,6 @@ Object.assign(window.GLOSS, {
   "turn to stone":"돌로 바뀌다",
   "water jet":"솟구치는 물줄기",
   "wellspring":"물이 솟는 근원",
-  "windfall":"뜻밖의 횡재",
 
   /* ── 9차: fraction ~ from scratch (46개) ───────────
      portion·shatter·smash·scent·weak·infirm·frenzied·impostor·deception·

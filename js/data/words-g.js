@@ -805,7 +805,6 @@ Object.assign(window.GLOSS, {
   "weight force":"무게로 작용하는 힘",
   "weighty":"중대한, 무거운",
   "wheeze":"쌕쌕거리다",
-  "widespread":"널리 퍼진",
   "wince":"움찔하다",
   "yield to":"~에 양보하다"
 });
