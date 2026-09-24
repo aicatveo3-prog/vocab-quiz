@@ -1742,8 +1742,6 @@ window.GLOSS = {
   "satisfied":"만족한",
   "scarcity":"희소, 드묾",
   "selfish":"이기적인",
-  "sensible":"분별 있는",
-  "separate":"분리하다",
   "sociable":"사교적인",
   "stench":"악취",
   "stranger":"낯선 사람",

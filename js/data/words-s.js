@@ -481,16 +481,136 @@ window.VOCAB_S = [
 
   { word:"self-consciousness", pron:"셀프 칸셔스니스", pos:"n", level:"C1", meanings:["자의식"],
     syn:["awareness of oneself","unease at being watched","shyness before others"],
-    ex:[{ s:"Her {{}} faded as she spoke.", f:"self-consciousness", ko:"말을 이어가며 그녀의 자의식이 옅어졌다." }] }
+    ex:[{ s:"Her {{}} faded as she spoke.", f:"self-consciousness", ko:"말을 이어가며 그녀의 자의식이 옅어졌다." }] },
+
+  /* ── 챕터 5 ────────────────────────────────────── */
+  /* '느낌' 갈래가 넷 몰린 챕터다.
+       sensibility 감수성        ← 느낌을 받아들이는 결
+       sensitive   느낌이 예민한   ← 사전 단일값
+       sensory     감각의        ← 신경으로 오는 쪽
+       sentiment   정서, 감상     ← 원본의 '감정' 은 sensibility 와 갈라 버렸다
+     sensible(분별 있는, 합리적인) 은 이 넷과 뜻이 아예 다르다 — 철자만 닮았다.
+     챕터 1 의 sane(제정신의, 분별 있는) 과는 '분별 있는' 이 글자까지 같아
+     서로의 오답에서 자동으로 빠진다.
+
+     ★ sensation 은 원본이 '감동, 대사건' 이었다. 참조 marvel(경이, 놀라운 일)
+     과 어긋나므로 사전값 '큰 화제' 를 지켰다.
+     sentence 는 사전이 '형벌; 문장' 이었다. 참조가 없어 원본 순서대로
+     '문장, 판결' 로 두고 동사 갈래는 버렸다.
+     semester(학기) 와 session(회기 · 챕터 6) 을 갈라 두었다. */
+
+  { word:"self-contained", pron:"셀프 컨테인드", pos:"adj", level:"C1", meanings:["자족적인","독립적인"],
+    syn:["complete in itself","needing nothing outside","standing alone"],
+    ex:[{ s:"Each flat is fully {{}}.", f:"self-contained", ko:"각 세대는 완전히 독립적이다." }] },
+
+  { word:"self-defense", pron:"셀프 디펜스", pos:"n", level:"B2", meanings:["자기 방어"],
+    syn:["guarding oneself","protection of one's own body","act of fending off attack"],
+    ex:[{ s:"She acted purely in {{}}.", f:"self-defense", ko:"그녀는 순전히 자기 방어로 행동했다." }] },
+
+  { word:"self-employed", pron:"셀프 임플로이드", pos:"adj", level:"B2", meanings:["자영업의"],
+    syn:["working for oneself","running one's own trade","not on a payroll"],
+    ex:[{ s:"He has been {{}} for ten years.", f:"self-employed", ko:"그는 십 년째 자영업을 해 왔다." }] },
+
+  /* 승격 ㊱ — 사전 단일값 유지. 참조 altruistic(A)·greedy(G) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"selfless", pron:"셀플리스", pos:"adj", level:"C1", meanings:["이타적인"],
+    syn:["altruistic","putting others first","free of self-interest"], ant:["greedy"],
+    ex:[{ s:"Her {{}} work saved many lives.", f:"selfless", ko:"그녀의 이타적인 활동이 많은 목숨을 살렸다." }] },
+
+  { word:"semester", pron:"시메스터", pos:"n", level:"B1", meanings:["학기"],
+    syn:["half of a school year","term of study","one of two school terms"],
+    ex:[{ s:"The new {{}} starts in March.", f:"semester", ko:"새 학기는 삼월에 시작한다." }] },
+
+  { word:"semicircle", pron:"세미서클", pos:"n", level:"B2", meanings:["반원"],
+    syn:["half circle","half of a round shape","arc of half a turn"],
+    ex:[{ s:"The children sat in a {{}}.", f:"semicircle", ko:"아이들이 반원으로 앉았다." }] },
+
+  { word:"senator", pron:"세너터", pos:"n", level:"B2", meanings:["상원 의원"],
+    syn:["member of the senate","upper-house lawmaker","elected upper chamber member"],
+    ex:[{ s:"The {{}} voted against the bill.", f:"senator", ko:"그 상원 의원은 그 법안에 반대표를 던졌다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"senior citizen", pron:"시니어 시티즌", pos:"phr", level:"B1", meanings:["노인","고령자"],
+    syn:["elderly person","one of advanced years","older member of society"] },
+
+  /* 승격 ㊲ — ★ 원본 '감동, 대사건' 은 뜻이 어긋난다. 참조 marvel(M) 과 맞는
+     사전값 '큰 화제' 를 지켰다 — 그 한 곳의 화면은 바뀌지 않는다. */
+  { word:"sensation", pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제"],
+    syn:["marvel","talk of the town","thing everyone speaks of"],
+    ex:[{ s:"Her first novel became a {{}}.", f:"sensation", ko:"그녀의 첫 소설은 큰 화제가 되었다." }] },
+
+  { word:"sensational", pron:"센세이셔널", pos:"adj", level:"B2", meanings:["선풍적인","아주 멋진"],
+    syn:["causing a stir","hugely exciting","dazzling to see"],
+    ex:[{ s:"The team made a {{}} comeback.", f:"sensational", ko:"그 팀은 선풍적인 역전을 이뤄 냈다." }] },
+
+  /* 원본의 '감정' 은 아래 sentiment 와 갈라 버렸다. */
+  { word:"sensibility", pron:"센서빌리티", pos:"n", level:"C1", meanings:["감수성"],
+    syn:["fineness of feeling","openness to beauty","delicacy of response"],
+    ex:[{ s:"The poem shows a rare {{}}.", f:"sensibility", ko:"그 시는 드문 감수성을 보여 준다." }] },
+
+  /* 승격 ㊳ — 사전 글자를 그대로 지켰다. 참조 absurd(A)·commonsense(C)·
+     level-headed(L) 세 곳의 화면은 바뀌지 않는다. 첫 갈래 '분별 있는' 이
+     챕터 1 의 sane 과 글자가 같아 서로의 오답에서 자동으로 빠진다. */
+  { word:"sensible", pron:"센서블", pos:"adj", level:"B1", meanings:["분별 있는","합리적인"],
+    syn:["commonsense","level-headed","showing good judgment"], ant:["absurd"],
+    ex:[{ s:"That was a {{}} choice.", f:"sensible", ko:"그것은 분별 있는 선택이었다." }] },
+
+  /* 승격 ㊴ — 사전 단일값 유지. 참조 numb(N) 의 화면은 바뀌지 않는다.
+     원본의 '민감한' 은 같은 말이라 사전 표현을 남겼다. */
+  { word:"sensitive", pron:"센서티브", pos:"adj", level:"B1", meanings:["느낌이 예민한"],
+    syn:["quick to feel","easily affected","responsive to touch"], ant:["numb"],
+    ex:[{ s:"His skin is very {{}} to the sun.", f:"sensitive", ko:"그의 피부는 햇볕에 아주 예민하다." }] },
+
+  { word:"sensory", pron:"센서리", pos:"adj", level:"C1", meanings:["감각의"],
+    syn:["of the senses","to do with feeling","carried by nerves"],
+    ex:[{ s:"The test measures {{}} response.", f:"sensory", ko:"그 검사는 감각의 반응을 잰다." }] },
+
+  { word:"sensual", pron:"센슈얼", pos:"adj", level:"C2", meanings:["관능적인"],
+    syn:["pleasing to the body","of bodily pleasure","stirring the senses"],
+    ex:[{ s:"The music had a {{}} rhythm.", f:"sensual", ko:"그 음악은 관능적인 가락을 지녔다." }] },
+
+  /* 승격 ㊵ — 사전은 '형벌; 문장' 이었다. 참조가 없어 원본 순서대로 두고
+     동사 갈래('선고하다') 는 버렸다 — 화면이 바뀌는 곳은 없다. */
+  { word:"sentence", pron:"센턴스", pos:"n", level:"B1", meanings:["문장","판결"],
+    syn:["string of words","court ruling","words making a full thought"],
+    ex:[{ s:"Write one more {{}} here.", f:"sentence", ko:"여기에 문장 하나를 더 쓰라." }] },
+
+  /* 위 sensibility(감수성) 와 갈랐다 — 원본의 '감정' 은 이 둘이 나눠 가졌다. */
+  { word:"sentiment", pron:"센티먼트", pos:"n", level:"C1", meanings:["정서","감상"],
+    syn:["feeling held","tender mood","view coloured by feeling"],
+    ex:[{ s:"Public {{}} turned against the plan.", f:"sentiment", ko:"대중의 정서가 그 계획에 등을 돌렸다." }] },
+
+  /* 승격 ㊶ — 사전은 '분리하다; 별개의' 로 동사와 형용사가 섞여 있었다. 참조
+     여섯 곳이 모두 동사여서 동사로 세웠다. 그 여섯 곳(adjoin·blend·combine·
+     detach·diverge·merge) 의 설명이 '분리하다; 별개의' 에서 '분리하다, 나누다'
+     가 된다 — 저장소에서 한 낱말이 가진 참조 중 가장 많은 자리다. */
+  { word:"separate", pron:"세퍼레이트", pos:"v", level:"B1", meanings:["분리하다","나누다"],
+    syn:["detach","diverge","set apart"], ant:["combine","merge"],
+    ex:[{ s:"Please {{}} the paper from the plastic.", f:"separate", ko:"종이를 플라스틱에서 분리해 주세요." }] },
+
+  /* 승격 ㊷ — 사전 글자 유지. 참조 combination(C)·division(D) 두 곳의 화면은
+     바뀌지 않는다. 챕터 4 의 segregation(분리, 격리) 과 첫 갈래가 같아 자동
+     배제된다. */
+  { word:"separation", pron:"세퍼레이션", pos:"n", level:"B2", meanings:["분리","분할"],
+    syn:["division","act of parting","split into parts"], ant:["combination"],
+    ex:[{ s:"The {{}} of the two wings took a week.", f:"separation", ko:"두 날개의 분리에 일주일이 걸렸다." }] },
+
+  /* 승격 ㊸ — 사전 글자 유지. 참조 chronology(C) 의 화면은 바뀌지 않는다. */
+  { word:"sequence", pron:"시퀀스", pos:"n", level:"B2", meanings:["연속","순서"],
+    syn:["chronology","one after another","set order"],
+    ex:[{ s:"Keep the pages in the right {{}}.", f:"sequence", ko:"쪽들을 맞는 순서로 두어라." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "academic": "학업의, 학구적인",
+  "act of fending off attack": "공격을 물리치는 일",
+  "act of parting": "갈라서는 일",
   "act of picking out": "골라내는 일",
   "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
   "apparently": "보아하니",
+  "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
@@ -500,6 +620,8 @@ Object.assign(window.GLOSS, {
   "branch of industry": "산업의 한 가지",
   "bring up from water": "물에서 끌어올리다",
   "careful check": "꼼꼼한 확인",
+  "carried by nerves": "신경으로 전해지는",
+  "causing a stir": "들썩이게 하는",
   "causing fear": "두려움을 일으키는",
   "cheer": "기운을 북돋우다",
   "choice made": "내린 고름",
@@ -513,10 +635,14 @@ Object.assign(window.GLOSS, {
   "close look": "바짝 들여다봄",
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
+  "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "contemptuous": "업신여기는",
+  "court ruling": "법정이 내린 결정",
   "cutting tool with teeth": "이가 난 자르는 도구",
   "damage on purpose": "고의로 해를 입히다",
+  "dazzling to see": "보기에 눈부신",
+  "delicacy of response": "반응의 고움",
   "deliverance": "해방, 벗어남",
   "dig out and raise": "파서 들어 올리다",
   "disappointing": "실망스러운",
@@ -524,19 +650,25 @@ Object.assign(window.GLOSS, {
   "disdainful": "깔보는",
   "division by race": "인종에 따른 갈림",
   "drains and clean water": "배수와 깨끗한 물",
+  "easily affected": "쉽게 영향을 받는",
+  "elderly person": "나이가 든 사람",
+  "elected upper chamber member": "뽑힌 윗 의회 구성원",
   "examine closely": "바짝 붙어 살펴보다",
   "experienced": "겪어 본 바가 많은",
   "fasten shut": "잠가서 닫다",
+  "feeling held": "품고 있는 느낌",
   "field of work": "일의 갈래",
   "fill fully": "가득 채우다",
   "fill to the limit": "한도까지 채우다",
   "filled with fear": "두려움에 찬",
+  "fineness of feeling": "느낌의 섬세함",
   "flavor with spice": "향신료로 맛을 내다",
   "fluid given off": "내어놓은 액체",
   "fluid in the mouth": "입안의 액체",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
+  "free of self-interest": "제 이익이 없는",
   "frightened": "놀라 떠는",
   "frightening": "놀라게 하는",
   "fulfilling": "보람 있는",
@@ -548,13 +680,18 @@ Object.assign(window.GLOSS, {
   "glut": "실컷 채우다",
   "grant for study": "공부에 주는 지원금",
   "greet with respect": "예를 갖춰 맞이하다",
+  "guarding oneself": "제 몸을 지킴",
   "guide on avoiding danger": "위험을 피하는 안내",
+  "half circle": "동그라미의 절반",
+  "half of a round shape": "둥근 꼴의 절반",
+  "half of a school year": "한 학년의 절반",
   "handsaw": "손톱질 도구",
   "hard to come by": "구하기 어려운",
   "hardly ever": "좀체 ~ 없는",
   "haven": "안식처",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
+  "hugely exciting": "크게 들뜨게 하는",
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
@@ -577,23 +714,32 @@ Object.assign(window.GLOSS, {
   "make sorrowful": "애석하게 만들다",
   "make sure of": "틀림없이 해 두다",
   "mark left by a wound": "상처가 남긴 자리",
+  "member of the senate": "상원에 속한 사람",
   "mental health": "정신 건강",
   "money for tuition": "수업료에 쓰는 돈",
   "move fast in haste": "급히 빠르게 움직이다",
   "named by oneself": "제가 제 이름을 붙인",
   "natural setting": "자연 그대로의 자리",
+  "needing nothing outside": "밖에서 얻을 것이 없는",
   "not new": "새것이 아닌",
   "not often": "자주 ~ 않는",
+  "not on a payroll": "월급을 받지 않는",
   "not religious": "종교와 무관한",
   "not taking all": "다 받지는 않는",
+  "of bodily pleasure": "몸의 즐거움에 속한",
   "of sound mind": "정신이 온전한",
+  "of the senses": "감각에 속한",
   "of this world": "이 세상에 속한",
   "office assistant": "사무를 돕는 사람",
   "official approval": "공식 승인",
+  "older member of society": "사회의 연장자",
   "on the face of it": "겉으로 보면",
   "one division": "하나의 갈림",
+  "one of advanced years": "연치가 높은 사람",
+  "one of two school terms": "두 기간 중 하나",
   "one who keeps records": "기록을 맡는 사람",
   "oozing out": "스며 나옴",
+  "openness to beauty": "아름다움에 열린 마음",
   "orbiting station": "궤도 위의 기지",
   "out of danger": "위험에서 벗어난",
   "part cut from a whole": "전체에서 잘라 낸 몫",
@@ -602,20 +748,26 @@ Object.assign(window.GLOSS, {
   "pay tribute to": "~에게 찬사를 보내다",
   "picky": "까다롭게 고르는",
   "pleasing": "즐거움을 주는",
+  "pleasing to the body": "몸에 즐거운",
   "point of no more": "더 못 받는 지점",
   "port city": "항만이 있는 도시",
   "pre-owned": "앞서 주인이 있던",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
+  "protection of one's own body": "제 몸을 막아 냄",
+  "putting others first": "남을 앞세우는",
+  "quick to feel": "느낌이 빠른",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
   "rarely": "좀처럼 ~ 않는",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
+  "responsive to touch": "닿는 것에 반응하는",
   "rich tang": "짙은 맛깔",
   "rub hard": "세게 비비다",
   "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
   "run one's eye over": "눈으로 쭉 지나가다",
+  "running one's own trade": "제 장사를 꾸리는",
   "rush about": "부리나케 돌아다니다",
   "safe place for animals": "동물이 지내는 안전한 곳",
   "safety lesson": "안전 수업",
@@ -626,8 +778,11 @@ Object.assign(window.GLOSS, {
   "scrawl": "휘갈겨 적다",
   "secret plan": "몰래 세운 계획",
   "self-styled": "스스로 내세운",
+  "set apart": "따로 떼어 두다",
   "set apart by group": "무리별로 떼어 놓다",
   "set apart for god": "신에게 바쳐진",
+  "set order": "정해진 차례",
+  "showing good judgment": "판단이 옳은",
   "shut away": "가둬 두다",
   "shut with wax": "밀랍으로 막다",
   "shyness before others": "남 앞에서의 수줍음",
@@ -639,29 +794,42 @@ Object.assign(window.GLOSS, {
   "spacecraft in orbit": "궤도를 도는 비행체",
   "spit": "뱉는 침",
   "spittle": "입에서 나온 침",
+  "split into parts": "여러 몫으로 쪼갬",
   "spooky": "으스스한",
+  "standing alone": "홀로 서 있는",
   "standing out most": "가장 도드라지는",
   "state of being full": "가득 찬 상태",
   "state of being shut away": "틀어박혀 있는 상태",
+  "stirring the senses": "감각을 흔드는",
+  "string of words": "낱말을 이은 줄",
   "study award": "학업에 주는 상금",
   "take by force": "힘으로 빼앗다",
+  "talk of the town": "장안의 이야깃거리",
   "taste one enjoys": "즐기는 맛",
+  "tender mood": "다정한 마음결",
+  "term of study": "공부하는 기간",
   "thin in amount": "양이 얇은",
+  "thing everyone speaks of": "모두가 입에 올리는 것",
   "throw out as useless": "쓸모없다고 내버리다",
   "to all appearances": "누가 봐도 그렇게",
+  "to do with feeling": "느낌에 관한",
   "to do with hygiene": "위생에 관한",
   "toothed blade": "이가 난 날",
   "town with a harbor": "항만을 둔 고을",
   "try to find": "찾아내려 애쓰다",
   "try to get": "얻으려 애쓰다",
   "unease at being watched": "보여지는 데서 오는 불편함",
+  "upper-house lawmaker": "윗 의회의 입법자",
   "used": "남이 쓰던",
   "using ridicule": "조롱을 써서",
   "vie with others": "남들과 겨루다",
+  "view coloured by feeling": "느낌이 물든 생각",
   "view of the land": "땅이 보이는 모습",
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
   "win over by charm": "매력으로 끌어들이다",
   "witty attack in writing": "글로 재치 있게 찌름",
+  "words making a full thought": "한 생각을 다 담은 말",
+  "working for oneself": "제 일을 제가 하는",
   "write in a hurry": "급하게 적다"
 });

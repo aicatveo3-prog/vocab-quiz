@@ -1512,7 +1512,6 @@ Object.assign(window.GLOSS, {
   "scrupulously": "빈틈없이",
   "secured debt": "담보가 잡힌 빚",
   "self-defense skill": "호신 기술",
-  "sensation": "큰 화제",
   "shape in a mold": "틀에 넣어 모양을 만들다",
   "shooting star": "별똥별",
   "signify": "나타내다",

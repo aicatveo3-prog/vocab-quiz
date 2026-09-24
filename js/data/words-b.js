@@ -1006,7 +1006,6 @@ Object.assign(window.GLOSS, {
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
   "secondhand":"중고의",
-  "separate":"분리하다",
   "setback":"차질, 방해",
   "sharp":"날카로운, 선명한",
   "silence":"침묵, 정적",
