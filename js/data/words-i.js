@@ -2116,8 +2116,6 @@ Object.assign(window.GLOSS, {
   "specifically": "구체적으로",
   "speedy": "신속한",
   "split-second": "순식간의",
-  "spoil": "버릇없게 만들다",
-  "spontaneous": "즉흥적인, 자발적인",
   "sporadically": "띄엄띄엄",
   "spur": "박차를 가하다",
   "stamp": "도장을 찍다",

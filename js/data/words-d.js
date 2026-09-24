@@ -1171,8 +1171,10 @@ window.VOCAB_D = [
     syn:["separation","partition","department"], ant:["unity"],
     ex:[{ s:"The {{}} of the land caused decades of conflict.", f:"division", ko:"그 토지 분할은 수십 년의 갈등을 낳았다." }] },
 
+  /* ★ syn 의 "split" 을 "legal end of a marriage" 로 바꿨다 — crack(C) 과 같은
+     이유다. split 이 S 세트에서 동사로 선다. */
   { word:"divorce", pron:"디보스", pos:"n", level:"B1", meanings:["이혼","단절"],
-    syn:["split","dissolution","breakup"], ant:["marriage"],
+    syn:["legal end of a marriage","dissolution","breakup"], ant:["marriage"],
     ex:[{ s:"They finally filed for {{}} after twelve years.", f:"divorce", ko:"그들은 12년 뒤에 마침내 이혼을 신청했다." }] },
 
   { word:"divulge", pron:"디벌지", pos:"v", level:"C2", meanings:["누설하다","폭로하다"],
@@ -1864,7 +1866,6 @@ Object.assign(window.GLOSS, {
   "payout":"지급금, 배당",
   "redirect":"방향을 바꾸다",
   "reroute":"경로를 바꾸다",
-  "sphere":"영역, 범위",
   "tame":"길들이다; 온순한",
   "tamed":"길들여진",
   "tenet":"교리, 신조",

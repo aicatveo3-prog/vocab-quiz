@@ -1695,8 +1695,12 @@ window.VOCAB_C = [
     ex:[{ s:"The attic room is small but {{}}.", f:"cozy", ko:"그 다락방은 작지만 아늑하다." }] },
 
   /* ── cra · cre ────────────────────────────── */
+  /* ★ syn 의 "split" 을 "narrow break" 로 바꿨다. 사전이 '나누다; 갈라진 틈' 으로
+     동사와 명사를 섞어 두었는데 S 세트에서는 동사 '나누다' 로 선다 — 명사
+     목록에 동사가 끼게 된다. 마침 사전이 적어 둔 명사 뜻이 이 표제어 자신의
+     첫 뜻('갈라진 틈') 이기도 했다. */
   { word:"crack", pron:"크랙", pos:"n", level:"B1", meanings:["갈라진 틈","금"],
-    syn:["fissure","split","gap"],
+    syn:["fissure","narrow break","gap"],
     ex:[{ s:"A thin {{}} ran across the glass.", f:"crack", ko:"얇은 금이 유리를 가로질러 갔다." }] },
 
   { word:"crack down on", pron:"크랙 다운 온", pos:"phr", level:"C1", meanings:["~에 단호한 조치를 취하다"],
@@ -2053,8 +2057,6 @@ Object.assign(window.GLOSS, {
   "single-sex":"남녀를 구분한",
   "soggy":"축축한, 질척한",
   "soldier":"군인",
-  "spiritual":"정신적인, 영적인",
-  "sporadic":"산발적인, 이따금의",
   "sprint":"전력으로 달리다",
   "squander":"낭비하다",
   "stagnate":"고이다, 정체되다",

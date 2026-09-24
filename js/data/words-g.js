@@ -781,7 +781,6 @@ Object.assign(window.GLOSS, {
   "somber":"침침한, 어두운",
   "sorrow over":"~을 애도하다",
   "sparkle":"불꽃처럼 반짝이다",
-  "spiral":"악화로 치닫다",
   "squall":"스콜, 돌풍",
   "star system":"항성계",
   "stark":"냉혹한, 황량한",
