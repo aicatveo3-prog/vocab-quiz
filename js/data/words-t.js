@@ -1762,7 +1762,6 @@ Object.assign(window.GLOSS, {
   "up with the times": "시류에 뒤지지 않는",
   "urge one should resist": "물리쳐야 할 충동",
   "use of tricks": "꾀를 부리는 짓",
-  "venom": "독액",
   "very much indeed": "참으로 많이",
   "victory at last": "끝내 얻은 이김",
   "vomit": "구토하다",

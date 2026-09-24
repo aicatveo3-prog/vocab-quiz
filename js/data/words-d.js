@@ -1511,7 +1511,6 @@ Object.assign(window.GLOSS, {
   "time limit":"제한 시간",
   "trade in":"~을 거래하다",
   "unravel":"풀다, 밝혀내다",
-  "venture":"과감히 하다; 모험",
   "virtue":"미덕, 덕목",
   "wreckage":"잔해, 난파",
 

@@ -874,7 +874,6 @@ Object.assign(window.GLOSS, {
   "vault": "짚고 뛰어넘다",
   "verbatim": "한마디도 안 빼고",
   "verdant": "푸른 풀로 덮인",
-  "verse": "운문",
   "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",
   "watery substance": "물기 있는 물질",
