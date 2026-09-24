@@ -2318,7 +2318,6 @@ Object.assign(window.GLOSS, {
   "progression":"진행, 연속",
   "shine":"두각을 나타내다",
   "special case":"특수한 경우",
-  "stand out":"돋보이다",
   "surpass":"능가하다",
   "tax dodging":"탈세",
   "testimony":"증언",

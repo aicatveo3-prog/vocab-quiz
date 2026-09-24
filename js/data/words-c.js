@@ -2066,7 +2066,6 @@ Object.assign(window.GLOSS, {
   "soldier":"군인",
   "stagnate":"고이다, 정체되다",
   "stalemate":"교착 상태",
-  "stare":"응시하다, 빤히 보다",
   "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
   "straightforward":"단순명료한, 쉬운",
