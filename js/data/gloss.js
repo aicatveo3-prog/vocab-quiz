@@ -1803,7 +1803,6 @@ Object.assign(window.GLOSS, {
   "tend to":"~하는 경향이 있다",
   "tender":"다정한, 부드러운",
   "tenderness":"다정함, 부드러움",
-  "terminate":"끝내다, 종료하다",
   "termination":"종료, 중단",
   "terrible":"끔찍한",
   "territory":"영토; 구역",

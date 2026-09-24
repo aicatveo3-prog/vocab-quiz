@@ -656,7 +656,6 @@ Object.assign(window.GLOSS, {
   "take note of": "~을 눈여겨보다",
   "taking no side": "편을 들지 않는",
   "tend carefully": "정성껏 돌보다",
-  "tension": "팽팽함",
   "that is to say": "말하자면",
   "the titled classes": "작위를 가진 계층",
   "tight": "여유가 없는",

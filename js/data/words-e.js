@@ -2290,7 +2290,6 @@ Object.assign(window.GLOSS, {
   "remove to safety":"안전한 곳으로 옮기다",
   "shirk":"회피해 버리다",
   "step up":"단계적으로 높이다",
-  "temporary":"일시적인",
   "tribal":"부족의",
   "undying":"죽지 않는",
   "unethical":"비윤리적인",

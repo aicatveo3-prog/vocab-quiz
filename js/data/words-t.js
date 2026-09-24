@@ -237,7 +237,129 @@ window.VOCAB_T = [
   /* 교재 '신전, 성당, 절' 세 갈래 → 둘. */
   { word:"temple", pron:"템플", pos:"n", level:"B1", meanings:["신전","절"],
     syn:["house of worship","shrine building","place for prayer"],
-    ex:[{ s:"They walked up to the old {{}}.", f:"temple", ko:"그들은 오래된 절까지 걸어 올라갔다." }] }
+    ex:[{ s:"They walked up to the old {{}}.", f:"temple", ko:"그들은 오래된 절까지 걸어 올라갔다." }] },
+
+  /* ── 챕터 3 ────────────────────────────────────── */
+  /* 승격이 열둘인데 사전 글자를 그대로 쓸 수 있는 자리가 많다. 손질은 한 곳이다.
+       incurable(I) syn "terminal" → beyond cure
+     terminal 의 사전값은 '종착역, 터미널'(명사) 이고 교재는 '말기의, 말단의;
+     끝, 종점' 으로 형용사를 앞세웠다. 참조가 depot(차고, 창고 · 명사) 와
+     incurable(치유할 수 없는 · 형용사) 로 갈렸는데, 사전이 명사였으므로 명사로
+     세우고 형용사 쪽을 쓰던 한 곳을 갈았다. 외래어 '터미널' 은 '종점' 으로 바꿨다.
+
+     tension 은 사전값이 '팽팽함' 단일이었다. 수능에 훨씬 자주 나오는 교재의
+     '긴장' 을 앞세우고 사전값을 둘째로 살렸다 — 참조 nerve(신경, 긴장) 의 설명이
+     짧아지지 않고 늘어난다. 교재의 '갈등' 은 conflict·friction 자리라 버렸다.
+     term(용어, 기간) 은 jargon(용어)·duration·length·span(기간) 과 두 갈래 모두
+     글자가 맞물려 자동 배제된다. */
+
+  /* rate(속도, 비율 · R) 와 글자를 맞춰 자동 배제시켰다. 괄호 걷음. */
+  { word:"tempo", pron:"템포", pos:"n", level:"B2", meanings:["속도"],
+    syn:["pace of movement","rate of action","speed of a piece"],
+    ex:[{ s:"The band raised the {{}}.", f:"tempo", ko:"그 악단이 속도를 올렸다." }] },
+
+  /* 교재가 앞세운 '속세의' 는 드문 쪽이라 순서를 바꿨다. */
+  { word:"temporal", pron:"템퍼럴", pos:"adj", level:"C1", meanings:["시간의","속세의"],
+    syn:["to do with time","bound by time","of this world"],
+    ex:[{ s:"The study looks at {{}} change.", f:"temporal", ko:"그 연구는 시간의 변화를 살핀다." }] },
+
+  /* 승격 ⑮ — 사전 단일값 유지. 참조 eternal(E)·makeshift(M)·permanent(P)
+     세 곳의 화면은 바뀌지 않는다. transient(오래 가지 않는 · 챕터 8) 와 갈랐다. */
+  { word:"temporary", pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
+    syn:["makeshift","lasting a short while","not meant to stay"], ant:["permanent","eternal"],
+    ex:[{ s:"They found a {{}} home.", f:"temporary", ko:"그들은 일시적인 집을 구했다." }] },
+
+  /* 승격 ⑯ — 사전 단일값 유지. 참조 lure(L)·seduce(S) 두 곳의 화면은 바뀌지
+     않는다. 교재의 '유혹하다' 는 그 두 낱말 자리다. */
+  { word:"tempt", pron:"템트", pos:"v", level:"B2", meanings:["마음을 끌다"],
+    syn:["lure","seduce","draw with an offer"],
+    ex:[{ s:"Low prices {{}} shoppers.", f:"tempt", ko:"싼 값이 손님의 마음을 끈다." }] },
+
+  { word:"temptation", pron:"템테이션", pos:"n", level:"B2", meanings:["유혹"],
+    syn:["pull toward wrong","enticing thing","urge one should resist"],
+    ex:[{ s:"She resisted the {{}}.", f:"temptation", ko:"그녀는 그 유혹을 물리쳤다." }] },
+
+  /* 교재 세 갈래 → 둘. '고집스러운' 은 stubborn(S) 자리다. obstinate(고집 센,
+     완강한) 와 '완강한' 이 맞물려 자동 배제된다. */
+  { word:"tenacious", pron:"터네이셔스", pos:"adj", level:"C2", meanings:["집요한","완강한"],
+    syn:["holding on hard","refusing to let go","dogged"],
+    ex:[{ s:"He kept a {{}} grip on the rope.", f:"tenacious", ko:"그는 줄을 집요하게 붙잡고 있었다." }] },
+
+  /* 승격 ⑰ — 사전 단일값 유지(참조 landlord). */
+  { word:"tenant", pron:"테넌트", pos:"n", level:"B2", meanings:["세입자"],
+    syn:["one who rents","renter of a home","occupier paying rent"], ant:["landlord"],
+    ex:[{ s:"The new {{}} moved in on Friday.", f:"tenant", ko:"새 세입자가 금요일에 들어왔다." }] },
+
+  /* 괄호 걷음. attend to(처리하다, 돌보다) 와 '돌보다' 가 맞물려 배제된다. */
+  { word:"tend", pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
+    syn:["be inclined to","look after","attend to"],
+    ex:[{ s:"Prices {{}} to rise in winter.", f:"tend", ko:"값은 겨울에 오르는 경향이 있다." }] },
+
+  /* 승격 ⑱ — 사전 단일값 유지. 참조 inclination(I) 의 화면은 바뀌지 않는다.
+     교재의 '경향' 은 inclination 자리다. */
+  { word:"tendency", pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
+    syn:["inclination","predisposition","leaning one way"],
+    ex:[{ s:"He has a {{}} to talk too fast.", f:"tendency", ko:"그는 너무 빨리 말하는 성향이 있다." }] },
+
+  /* 승격 ⑲ — 교재의 '긴장' 을 앞세우고 사전값 '팽팽함' 을 둘째로 살렸다.
+     참조 nerve(N) 의 설명이 '팽팽함' 에서 '긴장, 팽팽함' 으로 늘어난다.
+     nerve(신경, 긴장)·strain(S 긴장, 압박) 과 '긴장' 이 맞물려 배제된다.
+     교재의 '갈등' 은 conflict·friction 자리라 버렸다. */
+  { word:"tension", pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
+    syn:["nerve","strain","tightness in the air"],
+    ex:[{ s:"You could feel the {{}} in the room.", f:"tension", ko:"방 안의 긴장이 느껴졌다." }] },
+
+  /* 승격 ⑳ — 사전 글자 유지(참조 definitive). 교재의 '머뭇거리는' 은 버렸다. */
+  { word:"tentative", pron:"텐터티브", pos:"adj", level:"B2", meanings:["잠정적인","임시의"],
+    syn:["not yet settled","open to change","put forward for now"], ant:["definitive"],
+    ex:[{ s:"They set a {{}} date.", f:"tentative", ko:"그들은 잠정적인 날짜를 정했다." }] },
+
+  /* 교재 네 갈래 → 둘. */
+  { word:"tenure", pron:"테뉴어", pos:"n", level:"C2", meanings:["재임 기간","사용권"],
+    syn:["term in a post","right to hold","period of office"],
+    ex:[{ s:"Her {{}} lasted six years.", f:"tenure", ko:"그녀의 재임 기간은 육 년이었다." }] },
+
+  /* jargon(용어)·duration·length·span(기간) 과 두 갈래 모두 맞물려 배제된다. */
+  { word:"term", pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
+    syn:["jargon","word for a thing","set period"],
+    ex:[{ s:"Explain that {{}} in plain words.", f:"term", ko:"그 용어를 쉬운 말로 풀어 주세요." }] },
+
+  /* 승격 ㉑ — ★ 사전이 명사('종착역, 터미널') 였다. 참조가 depot(n)·
+     incurable(adj) 로 갈렸는데 사전을 따라 명사로 세우고, 형용사 쪽을 쓰던
+     incurable(I) 한 곳을 'beyond cure' 로 갈았다. 외래어 '터미널' 은 '종점' 으로. */
+  { word:"terminal", pron:"터미널", pos:"n", level:"B2", meanings:["종착역","종점"],
+    syn:["depot","end of the line","last stop"],
+    ex:[{ s:"The bus waits at the {{}}.", f:"terminal", ko:"그 버스는 종착역에서 기다린다." }] },
+
+  /* 승격 ㉒ — 사전 글자 유지(참조 come to an end). */
+  { word:"terminate", pron:"터머네이트", pos:"v", level:"B2", meanings:["끝내다","종료하다"],
+    syn:["come to an end","bring to a close","wind up"],
+    ex:[{ s:"They may {{}} the contract early.", f:"terminate", ko:"그들은 계약을 일찍 끝낼 수도 있다." }] },
+
+  /* 승격 ㉓ — 사전 단일값 유지(참조 jargon). 교재의 '전문 용어' 는 jargon 자리다. */
+  { word:"terminology", pron:"터머날러지", pos:"n", level:"C1", meanings:["전문어 체계"],
+    syn:["set of special words","words of a field","naming system of a trade"],
+    ex:[{ s:"Legal {{}} takes time to learn.", f:"terminology", ko:"법률 전문어 체계는 익히는 데 시간이 걸린다." }] },
+
+  /* 승격 ㉔ — 사전 글자 유지(참조 geography). geography(지리, 지형) 와 '지형' 이
+     맞물려 배제된다. */
+  { word:"terrain", pron:"터레인", pos:"n", level:"C1", meanings:["지형","지대"],
+    syn:["geography","lie of the land","ground and its shape"],
+    ex:[{ s:"The {{}} grew rocky ahead.", f:"terrain", ko:"앞쪽 지형이 바위투성이가 되었다." }] },
+
+  { word:"terribly", pron:"테러블리", pos:"adv", level:"B2", meanings:["대단히","몹시"],
+    syn:["very much indeed","to a great degree","awfully"],
+    ex:[{ s:"I am {{}} sorry about that.", f:"terribly", ko:"그 일은 대단히 미안합니다." }] },
+
+  /* 승격 ㉕ — 사전 글자 유지(참조 fabulous). 교재의 '아주 좋은' 은 버렸다. */
+  { word:"terrific", pron:"터리픽", pos:"adj", level:"B2", meanings:["멋진","대단한"],
+    syn:["fabulous","really good","splendid to see"],
+    ex:[{ s:"That was a {{}} idea.", f:"terrific", ko:"그것은 멋진 생각이었다." }] },
+
+  /* 승격 ㉖ — 사전 단일값 유지(참조 frighten). */
+  { word:"terrify", pron:"테러파이", pos:"v", level:"B2", meanings:["몹시 두렵게 하다"],
+    syn:["frighten","fill with dread","scare badly"],
+    ex:[{ s:"Loud noises {{}} the dog.", f:"terrify", ko:"큰 소리가 그 개를 몹시 두렵게 한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -252,13 +374,16 @@ Object.assign(window.GLOSS, {
   "assume control": "통제를 맡다",
   "assume from another": "남에게서 맡아 오다",
   "assume without asking": "묻지 않고 그러리라 여기다",
+  "awfully": "무척",
   "bank clerk at a window": "창구에 앉은 은행 직원",
   "be answerable for": "~에 답할 처지가 되다",
   "be praised for": "~로 칭찬을 받다",
   "be proud of": "~을 뿌듯해하다",
   "begin to follow": "따르기 시작하다",
   "bent of mind": "마음이 쏠리는 쪽",
+  "beyond cure": "손쓸 수 없는",
   "boast about": "~을 내세우다",
+  "bound by time": "시간에 묶인",
   "break into parts": "여러 부분으로 나누다",
   "by a shrewd move": "약삭빠른 수로",
   "cashier in a bank": "은행의 계산 담당자",
@@ -273,35 +398,54 @@ Object.assign(window.GLOSS, {
   "degree of heat": "더운 정도",
   "directed at a set goal": "정해진 목표로 향한",
   "do something about it": "그것에 대해 손을 쓰다",
+  "dogged": "악착같은",
   "dragging on and on": "끝없이 늘어지는",
+  "draw with an offer": "제안으로 끌어당기다",
   "duty at the border": "국경에서 매기는 부과금",
   "easily handled": "다루기 쉬운",
+  "end of the line": "선로의 끝",
+  "enticing thing": "구미를 당기는 것",
   "fail to value": "값지게 보지 못하다",
   "feel encouraged": "힘이 나다",
+  "fill with dread": "두려움으로 채우다",
   "forbidden thing": "해서는 안 되는 것",
   "gain courage": "용기를 얻다",
   "gentle with people": "사람에게 순한",
+  "ground and its shape": "땅과 그 생김새",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
+  "holding on hard": "끈덕지게 붙드는",
   "house of worship": "예배를 드리는 집",
   "how hot or cold it is": "덥거나 찬 정도",
   "in terms of tactics": "전술로 보아",
   "inborn make-up": "타고난 됨됨이",
   "keeping within limits": "선을 넘지 않는",
+  "last stop": "마지막 정차지",
+  "lasting a short while": "잠깐만 가는",
+  "leaning one way": "한쪽으로 기우는 결",
   "level to the ground": "땅바닥까지 밀다",
+  "lie of the land": "땅이 놓인 모양",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
   "mild in climate": "기후가 순한",
   "money paid to the state": "나라에 내는 돈",
   "move to act": "행동에 나서다",
   "move to win": "이기려는 수",
+  "naming system of a trade": "업계의 이름 붙이는 체계",
   "needing special skill": "특별한 솜씨가 필요한",
   "needle in jest": "장난으로 콕콕 찌르다",
+  "not meant to stay": "머물 뜻이 없는",
+  "not yet settled": "아직 정해지지 않은",
+  "occupier paying rent": "셋돈을 내고 사는 사람",
   "of applied science": "응용 학문에 속한",
   "official who takes tax": "세금을 받는 관리",
   "one trained in a craft": "한 기예를 배운 사람",
   "one who counts cash": "현금을 세는 사람",
   "one who gathers taxes": "세금을 걷는 사람",
+  "one who rents": "빌려 쓰는 사람",
+  "open to change": "바뀔 여지가 있는",
+  "pace of movement": "움직임의 빠르기",
+  "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
   "place for prayer": "기도하는 자리",
   "plan of attack": "밀어붙일 계획",
@@ -310,27 +454,47 @@ Object.assign(window.GLOSS, {
   "pull down": "끌어내려 무너뜨리다",
   "pull from inside": "안에서 끌어내다",
   "pull to pieces": "조각으로 뜯어내다",
+  "pull toward wrong": "잘못된 쪽으로 끄는 힘",
+  "put forward for now": "우선 내놓은",
   "put oneself in danger": "스스로를 위험에 두다",
   "put to use": "써서 쓸모를 내다",
   "raise a protest at": "~에 항의를 내다",
+  "rate of action": "일이 돌아가는 빠르기",
   "reading on a thermometer": "온도계가 가리키는 값",
   "real to the hand": "손으로 느껴지는",
+  "really good": "참으로 좋은",
   "refuse to accept": "받아들이기를 거부하다",
+  "refusing to let go": "놓기를 마다하는",
+  "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
   "revenue officer": "세입을 맡은 공무원",
+  "right to hold": "가지고 있을 권리",
+  "scare badly": "몹시 겁주다",
+  "set of special words": "특별한 말들의 묶음",
+  "set period": "정해진 기간",
   "shrine building": "신을 모신 건물",
   "skilled worker": "솜씨를 익힌 일꾼",
   "social ban": "사회가 금하는 것",
+  "speed of a piece": "곡이 흐르는 빠르기",
+  "splendid to see": "보기에 훌륭한",
   "state of feeling": "감정의 상태",
   "step into the role of": "~의 자리를 이어받다",
   "sum owed to government": "정부에 내야 할 몫",
   "take the lead": "앞장서다",
   "tax on imports": "들여오는 물건에 매기는 세금",
+  "term in a post": "자리를 맡는 기간",
   "think it is owed": "받아야 할 것이라 여기다",
+  "tightness in the air": "공기가 팽팽한 느낌",
+  "to a great degree": "큰 정도로",
   "to do with technique": "기법에 관한",
+  "to do with time": "시간에 관한",
   "turn of mind": "마음이 기우는 결",
+  "urge one should resist": "물리쳐야 할 충동",
+  "very much indeed": "참으로 많이",
   "weigh in the decision": "결정에 견주어 넣다",
   "what must not be done": "하지 말아야 할 일",
   "with a plan in mind": "계획을 두고",
-  "withdraw what one said": "한 말을 거두어들이다"
+  "withdraw what one said": "한 말을 거두어들이다",
+  "word for a thing": "사물을 가리키는 말",
+  "words of a field": "한 분야의 말들"
 });
