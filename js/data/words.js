@@ -1715,7 +1715,6 @@ window.GLOSS = {
   "passivity":"수동성",
   "peace":"평화",
   "pleasant":"쾌적한, 즐거운",
-  "pleased":"기쁜, 만족한",
   "poison":"독",
   "poor":"가난한",
   "posterior":"뒤쪽의",

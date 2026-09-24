@@ -621,7 +621,6 @@ Object.assign(window.GLOSS, {
   "paid for good": "낸 뒤 되찾지 못하는",
   "peaceable": "평온하게 하는",
   "pester": "귀찮게 하다",
-  "point out": "집어서 말하다",
   "posted sign": "붙여 놓은 알림",
   "quantitative": "양으로 따지는",
   "quick-moving": "빠르게 움직이는",

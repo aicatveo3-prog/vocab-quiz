@@ -2039,7 +2039,6 @@ Object.assign(window.GLOSS, {
   "personally": "개인적으로, 직접",
   "pest": "해충",
   "pique": "돋우다, 자극하다",
-  "policy": "보험 증권",
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "precariousness": "불안한 상태",
