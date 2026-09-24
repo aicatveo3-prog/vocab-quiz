@@ -2022,7 +2022,6 @@ Object.assign(window.GLOSS, {
   "provincial":"지방의, 편협한",
   "public":"공개된, 공공의",
   "purify":"정화하다",
-  "radical":"급진적인",
   "rambling":"산만한, 종횡무진인",
   "random":"무작위의",
   "rebel":"반항하다, 반란자",

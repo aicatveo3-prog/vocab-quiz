@@ -758,7 +758,6 @@ Object.assign(window.GLOSS, {
   "pull through":"이겨 내다",
   "pulverize":"가루로 만들다",
   "put across":"뜻을 전하다",
-  "radiate":"발산하다, 내비치다",
   "rapacity":"탐욕스러운 강탈",
   "rationale":"논리적 근거",
   "reclusive":"은둔하는",
