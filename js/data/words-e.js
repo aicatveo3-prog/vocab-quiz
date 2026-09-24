@@ -2172,7 +2172,6 @@ Object.assign(window.GLOSS, {
   "put into code":"부호로 바꾸다",
   "put into effect":"시행하다",
   "send out":"내보내다, 발신하다",
-  "sympathetic":"동정하는, 공감하는",
   "venting":"배출, 뿜어냄",
 
   /* ── 5차: encouragement ~ enlighten (33개) ───────────────── */

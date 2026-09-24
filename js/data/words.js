@@ -1756,7 +1756,6 @@ window.GLOSS = {
   "selfish":"이기적인",
   "stench":"악취",
   "stranger":"낯선 사람",
-  "synthesis":"합성, 종합",
   "terrestrial":"육지의, 지상의",
   "timid":"소심한",
   "tiny":"아주 작은",

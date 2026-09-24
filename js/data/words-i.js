@@ -2130,7 +2130,6 @@ Object.assign(window.GLOSS, {
   "suck in": "빨아들이다",
   "supply with water": "물을 공급하다",
   "surrounded by": "~에 둘러싸여",
-  "swift": "빠른, 신속한",
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
   "take over": "넘겨받다",
