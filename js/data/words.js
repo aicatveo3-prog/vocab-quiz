@@ -1735,7 +1735,6 @@ window.GLOSS = {
   "refusal":"거절",
   "refuse":"거절하다",
   "relief":"안도, 구제",
-  "repel":"쫓아내다, 물리치다",
   "repulsion":"혐오감, 반발",
   "repulsive":"혐오스러운",
   "resist":"저항하다",

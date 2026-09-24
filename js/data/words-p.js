@@ -2733,7 +2733,6 @@ Object.assign(window.GLOSS, {
   "represent in words": "말로 그려 내다",
   "reproduced page": "다시 찍어 낸 면",
   "required beforehand": "미리 요구되는",
-  "resemblance": "서로 닮음",
   "result-minded": "결과를 먼저 보는",
   "retirement pay": "은퇴 뒤 받는 돈",
   "reverent": "경건한",

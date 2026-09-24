@@ -1913,8 +1913,6 @@ Object.assign(window.GLOSS, {
   "payable":"지불해야 하는, 지불 가능한",
   "pull out":"물러나다, 손을 떼다",
   "questionable":"의심스러운, 문제가 있는",
-  "replicate":"똑같이 재현하다",
-  "reproduce":"재현하다; 번식하다",
   "rough copy":"초고, 초벌 원고",
   "runoff":"흘러내린 물, 유출수",
   "saturate":"적시다, 포화시키다",

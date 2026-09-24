@@ -995,8 +995,6 @@ Object.assign(window.GLOSS, {
   "protect":"보호하다",
   "recover from":"~에서 회복하다",
   "relief":"안도, 경감",
-  "repair":"고치다, 수리하다",
-  "repel":"쫓아내다, 반발하게 하다",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
   "retreat":"물러나다, 후퇴하다",

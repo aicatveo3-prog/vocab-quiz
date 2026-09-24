@@ -977,8 +977,11 @@ window.VOCAB_I = [
     ex:[{ s:"Unusually cold weather can {{}} seed germination.", f:"inhibit", ko:"이례적으로 추운 날씨는 씨앗 발아를 억제할 수 있다." }] },
 
   /* inhibit 과 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
+  /* 유의어 reserve 를 holding back of feeling 으로 바꿨다. reserve 가 R 세트
+     챕터 9 표제어(예약하다, 따로 남겨 두다 · v)로 올라가면 명사 표제어의 유의어
+     자리에 '예약하다' 가 떠 버린다 — '속마음을 드러내지 않음' 뜻을 노린 자리였다. */
   { word:"inhibition", pron:"인히비션", pos:"n", level:"C1", meanings:["억제","억압"],
-    syn:["restraint","suppression","reserve"],
+    syn:["restraint","suppression","holding back of feeling"],
     ex:[{ s:"Alcohol lowers {{}} and impairs judgment.", f:"inhibition", ko:"알코올은 억제를 낮추고 판단력을 손상시킨다." }] },
 
   { word:"inhumane", pron:"인휴메인", pos:"adj", level:"C1", meanings:["몰인정한","무자비한"],
