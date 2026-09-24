@@ -713,60 +713,822 @@ window.VOCAB_S = [
   /* 승격 53 — 사전 단일값 유지. 참조 impudent(I) 의 화면은 바뀌지 않는다. */
   { word:"shameless", pron:"셰임리스", pos:"adj", level:"C1", meanings:["부끄러움을 모르는"],
     syn:["impudent","without shame","brazen"],
-    ex:[{ s:"It was a {{}} lie.", f:"shameless", ko:"그것은 부끄러움을 모르는 거짓말이었다." }] }
+    ex:[{ s:"It was a {{}} lie.", f:"shameless", ko:"그것은 부끄러움을 모르는 거짓말이었다." }] },
+
+  /* ── 챕터 7 ────────────────────────────────────── */
+  /* 사전이 두 품사를 쌍반점으로 붙여 놓은 낱말이 몰린 챕터다. 참조의 품사를
+     보고 한쪽만 남겼고, 참조 쪽이 버린 갈래를 쓰고 있으면 그 자리를 갈았다.
+       shed    흘리다; 헛간     → 흘리다     barn(n) 의 syn 을 farm hut 으로
+       shoot   싹; 쏘다        → 쏘다       bud(n) 의 syn 을 young growth 로
+       shelter 피난처; 보호하다  → 피난처     harbor(v) 의 syn 을 take in and hide 로
+       shield  보호하다; 방패    → 보호하다    insulate(v) 는 그대로 맞는다
+       shift   변화; 교대      → 변화, 교대  참조 없음
+
+     ★ share 는 '공유하다' 를 버렸다. 수능에 자주 나오는 뜻이라 아까운 자리지만
+     참조 dividend(배당금)·have ~ in common 이 둘 다 명사 쪽이어서, 사전값
+     '배당, 몫' 을 지키는 쪽을 골랐다. 참조를 손질하면 두 곳을 건드려야 한다.
+
+     shiver(몸을 떨다) 는 shudder(챕터 16) 와 첫 뜻을 글자까지 맞춰 두었다.
+     shipwreck 은 '난파' 만 남겼다 — '난파선' 은 바로 아래 shipwrecked 와
+     맞물려 흐려진다. */
+
+  /* 승격 54 — 사전 글자 유지. 참조 dividend(D)·have ~ in common(H) 두 곳의
+     화면은 바뀌지 않는다. */
+  { word:"share", pron:"셰어", pos:"n", level:"B1", meanings:["배당","몫"],
+    syn:["dividend","portion due","part one gets"],
+    ex:[{ s:"Each partner takes a {{}} of the profit.", f:"share", ko:"각 동업자가 이익의 몫을 가진다." }] },
+
+  /* 승격 55 — 사전 글자 유지. 참조 acute(A)·blunt(B)·blurry(B) 세 곳의 화면은
+     바뀌지 않는다. */
+  { word:"sharp", pron:"샤프", pos:"adj", level:"B1", meanings:["날카로운","선명한"],
+    syn:["acute","keen-edged","clear in outline"], ant:["blunt","blurry"],
+    ex:[{ s:"He drew a {{}} line across the page.", f:"sharp", ko:"그는 쪽 위로 선명한 선을 그었다." }] },
+
+  /* 승격 56 — 사전 글자 유지. 참조 abruptly(A)·dramatically(D) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"sharply", pron:"샤플리", pos:"adv", level:"B2", meanings:["급격히","날카롭게"],
+    syn:["abruptly","dramatically","with a keen edge"],
+    ex:[{ s:"Prices rose {{}} last month.", f:"sharply", ko:"지난달 값이 급격히 올랐다." }] },
+
+  /* 승격 57 — 사전 단일값 유지. 참조 break(B)·fracture(F) 두 곳의 화면은
+     바뀌지 않는다. smash(부수다 · 챕터 10) 와는 '산산이' 로 갈랐다. */
+  { word:"shatter", pron:"섀터", pos:"v", level:"B2", meanings:["산산이 부수다"],
+    syn:["break","fracture","smash into bits"],
+    ex:[{ s:"One stone can {{}} the whole pane.", f:"shatter", ko:"돌 하나가 창유리 전체를 산산이 부술 수 있다." }] },
+
+  /* 승격 58 — 사전 첫 갈래만 남겼다. '헛간' 을 쓰고 있던 barn(B) 의 그 자리를
+     'farm hut' 으로 갈았다. 원본의 세 갈래와 괄호도 걷었다. */
+  { word:"shed", pron:"셰드", pos:"v", level:"B2", meanings:["흘리다"],
+    syn:["let fall","pour out","drop away"],
+    ex:[{ s:"She did not {{}} a single tear.", f:"shed", ko:"그녀는 눈물 한 방울도 흘리지 않았다." }] },
+
+  { word:"sheer", pron:"시어", pos:"adj", level:"C1", meanings:["완전한","순전한"],
+    syn:["utter","nothing but","pure and simple"],
+    ex:[{ s:"It was {{}} luck that saved them.", f:"sheer", ko:"그들을 살린 것은 순전한 운이었다." }] },
+
+  /* 승격 59 — 원본이 [n+v] 였고 사전도 섞여 있었다. 명사로 세우고, 동사 쪽을
+     쓰던 harbor(H) 의 그 자리를 'take in and hide' 로 갈았다.
+     refuge(피난처 · R) 와 글자가 같아 서로의 오답에서 자동으로 빠진다. */
+  { word:"shelter", pron:"셸터", pos:"n", level:"B2", meanings:["피난처"],
+    syn:["place of safety","cover from danger","roof over one's head"],
+    ex:[{ s:"They ran to a {{}} when the storm hit.", f:"shelter", ko:"폭풍이 닥치자 그들은 피난처로 달려갔다." }] },
+
+  /* 승격 60 — 사전 첫 갈래만 남겼다. 참조 insulate(I) 가 동사라 그대로 맞는다.
+     protect(보호하다) 와 글자가 같아 서로의 오답에서 자동으로 빠진다 —
+     그래서 protect 를 syn 에 넣지 않았다(설명이 똑같아지기 때문이다).
+     defend(D) 의 syn 에서 이 낱말을 뺀 것은 챕터 2 에서 미리 해 두었다. */
+  { word:"shield", pron:"실드", pos:"v", level:"B2", meanings:["보호하다"],
+    syn:["keep from harm","screen from danger","guard with a cover"],
+    ex:[{ s:"A thick wall will {{}} the house from noise.", f:"shield", ko:"두꺼운 벽이 그 집을 소음에서 보호할 것이다." }] },
+
+  /* 승격 61 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
+  { word:"shift", pron:"시프트", pos:"n", level:"B2", meanings:["변화","교대"],
+    syn:["change of position","turn of duty","move to another state"],
+    ex:[{ s:"There was a clear {{}} in opinion.", f:"shift", ko:"여론에 뚜렷한 변화가 있었다." }] },
+
+  /* '난파선' 은 아래 shipwrecked 와 맞물려 버렸다. */
+  { word:"shipwreck", pron:"십렉", pos:"n", level:"B2", meanings:["난파"],
+    syn:["loss of a ship at sea","sinking of a vessel","wreck on the rocks"],
+    ex:[{ s:"The {{}} killed most of the crew.", f:"shipwreck", ko:"그 난파로 선원 대부분이 죽었다." }] },
+
+  { word:"shipwrecked", pron:"십렉트", pos:"adj", level:"C1", meanings:["난파된"],
+    syn:["stranded after a sinking","cast ashore from a wreck","left adrift at sea"],
+    ex:[{ s:"The {{}} sailors waited for help.", f:"shipwrecked", ko:"난파된 선원들이 도움을 기다렸다." }] },
+
+  /* shudder(챕터 16) 와 첫 뜻을 글자까지 맞춰 서로 배제되게 두었다. */
+  { word:"shiver", pron:"시버", pos:"v", level:"B2", meanings:["몸을 떨다"],
+    syn:["tremble","quiver","shake with cold"],
+    ex:[{ s:"The children began to {{}} in the wind.", f:"shiver", ko:"아이들이 바람 속에서 몸을 떨기 시작했다." }] },
+
+  /* 승격 62 — 사전 둘째 갈래만 남겼다. '싹' 을 쓰고 있던 bud(B) 의 그 자리를
+     'young growth' 로 갈았다. 원본의 '촬영하다' 도 버렸다. */
+  { word:"shoot", pron:"슈트", pos:"v", level:"B1", meanings:["쏘다"],
+    syn:["fire a weapon","let fly an arrow","send a bullet"],
+    ex:[{ s:"Do not {{}} until you see the mark.", f:"shoot", ko:"표적이 보일 때까지 쏘지 마라." }] },
+
+  /* 승격 63 — 사전 글자 유지. 참조 bank(B) 의 화면은 바뀌지 않는다. */
+  { word:"shore", pron:"쇼", pos:"n", level:"B1", meanings:["해안","기슭"],
+    syn:["bank","edge of the sea","land by the water"],
+    ex:[{ s:"They walked along the rocky {{}}.", f:"shore", ko:"그들은 바위 많은 해안을 따라 걸었다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"short of breath", pron:"쇼트 오브 브레스", pos:"phr", level:"B2", meanings:["숨이 찬"],
+    syn:["panting hard","out of puff","unable to breathe easily"] },
+
+  /* 승격 64 — 사전 글자 유지. 참조 네 곳(capacity·deficiency·excess·lack) 의
+     화면은 바뀌지 않는다. */
+  { word:"shortage", pron:"쇼티지", pos:"n", level:"B1", meanings:["부족","품귀"],
+    syn:["deficiency","lack","too little to go round"], ant:["excess"],
+    ex:[{ s:"The city faced a water {{}}.", f:"shortage", ko:"그 도시는 물 부족을 겪었다." }] },
+
+  /* 승격 65 — 사전 글자 유지. 참조 fault(F) 의 화면은 바뀌지 않는다.
+     원본의 '결핍' 은 위 shortage 자리라 버렸다. */
+  { word:"shortcoming", pron:"숏커밍", pos:"n", level:"B2", meanings:["단점","결점"],
+    syn:["fault","weak point","failing in something"],
+    ex:[{ s:"Every plan has one {{}}.", f:"shortcoming", ko:"어떤 계획에나 단점 하나는 있다." }] },
+
+  { word:"shorthand", pron:"숏핸드", pos:"n", level:"C2", meanings:["속기"],
+    syn:["quick writing system","note-taking in signs","stenography"],
+    ex:[{ s:"She took the notes in {{}}.", f:"shorthand", ko:"그녀는 속기로 기록을 받아 적었다." }] },
+
+  { word:"short-sighted", pron:"숏 사이티드", pos:"adj", level:"C1", meanings:["근시안적인"],
+    syn:["lacking foresight","seeing only the near","thinking no further ahead"],
+    ex:[{ s:"Cutting research is a {{}} move.", f:"short-sighted", ko:"연구를 줄이는 것은 근시안적인 조치다." }] },
+
+  { word:"shoulder", pron:"숄더", pos:"v", level:"C1", meanings:["떠맡다"],
+    syn:["take on a burden","bear the weight of","accept as one's own load"],
+    ex:[{ s:"She had to {{}} the blame alone.", f:"shoulder", ko:"그녀는 혼자 그 책임을 떠맡아야 했다." }] },
+
+  /* ── 챕터 8 ────────────────────────────────────── */
+  /* 승격 아홉 개가 모두 사전 글자를 그대로 쓴다 — 참조 열두 곳 가운데 화면이
+     바뀌는 곳이 하나도 없는 챕터다(simplify 만 사전 '간소화하다' 에서 원본
+     '단순화하다' 로 갔는데 참조가 없다).
+
+     같은 뿌리끼리 갈라 둔 자리가 셋이다.
+       shiver(챕터 7) ↔ shudder   첫 뜻 '몸을 떨다' 를 글자까지 맞췄다
+       sign up ↔ sign up for     앞은 '신청하다, 가입하다', 뒤는 '~을 신청해 넣다'
+       simultaneous(동시의) ↔ simultaneously(동시에)   품사로 갈린다
+     sign up 의 '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다.
+     shut off 의 원본 '멈추다, 서다' 는 stall 자리라 버렸다.
+     simulate 는 '비슷한 것을 만들다' 를 버리고 사전값을 지켰다 — 참조
+     feign(~인 체하다) 이 '꾸미다' 쪽이다. */
+
+  /* 원본의 명사 갈래('소나기') 는 버렸다. */
+  { word:"shower", pron:"샤워", pos:"v", level:"B2", meanings:["퍼붓다","쏟아 붓다"],
+    syn:["rain down on","pour in plenty","heap upon"],
+    ex:[{ s:"Fans began to {{}} her with gifts.", f:"shower", ko:"팬들이 그녀에게 선물을 퍼붓기 시작했다." }] },
+
+  /* 승격 66 — 사전 글자 유지. 참조 네 곳(diminish·dwindle·enlarge·grow) 의
+     화면은 바뀌지 않는다. */
+  { word:"shrink", pron:"슈링크", pos:"v", level:"B1", meanings:["줄어들다","수축하다"],
+    syn:["diminish","dwindle","get smaller"], ant:["enlarge","grow"],
+    ex:[{ s:"Wool will {{}} in hot water.", f:"shrink", ko:"양털은 뜨거운 물에서 줄어든다." }] },
+
+  /* 원본이 [v+n] 이었다. 동사로 세웠다. */
+  { word:"shrug", pron:"슈러그", pos:"v", level:"B2", meanings:["어깨를 으쓱하다"],
+    syn:["raise the shoulders","show one does not care","lift and drop the shoulders"],
+    ex:[{ s:"He could only {{}} at the question.", f:"shrug", ko:"그는 그 질문에 어깨를 으쓱할 수밖에 없었다." }] },
+
+  /* 챕터 7 의 shiver 와 첫 뜻을 글자까지 맞춰 서로 배제되게 두었다. */
+  { word:"shudder", pron:"셔더", pos:"v", level:"C1", meanings:["몸을 떨다","몸서리치다"],
+    syn:["shake with horror","tremble all over","quake in dread"],
+    ex:[{ s:"She began to {{}} at the thought.", f:"shudder", ko:"그녀는 그 생각에 몸서리치기 시작했다." }] },
+
+  /* 원본의 '멈추다, 서다' 는 stall 자리라 버렸다. 구·표현이라 예문은 두지 않는다. */
+  { word:"shut off", pron:"셧 오프", pos:"phr", level:"B2", meanings:["차단하다","끊다"],
+    syn:["cut the supply of","turn off at the source","block the flow of"] },
+
+  /* 승격 67 — 사전 단일값 유지. 참조 commute(C) 의 화면은 바뀌지 않는다.
+     원본의 명사 갈래('왕복 운행') 는 버렸다. */
+  { word:"shuttle", pron:"셔틀", pos:"v", level:"B2", meanings:["왕복하다"],
+    syn:["commute","go back and forth","run to and fro"],
+    ex:[{ s:"Buses {{}} between the two terminals.", f:"shuttle", ko:"버스가 두 터미널 사이를 왕복한다." }] },
+
+  { word:"sibling", pron:"시블링", pos:"n", level:"B2", meanings:["형제자매"],
+    syn:["brother or sister","child of the same parents","one's own kin"],
+    ex:[{ s:"She has one younger {{}}.", f:"sibling", ko:"그녀는 어린 형제자매가 한 명 있다." }] },
+
+  /* 승격 68 — 사전 단일값 유지. 참조 by-product(B) 의 화면은 바뀌지 않는다.
+     구·표현이라 예문은 두지 않는다. */
+  { word:"side effect", pron:"사이드 이펙트", pos:"phr", level:"B1", meanings:["부작용"],
+    syn:["by-product","unwanted result","effect not aimed at"] },
+
+  { word:"siege", pron:"시지", pos:"n", level:"C2", meanings:["포위 공격"],
+    syn:["surrounding of a town","blockade of a fort","long attack from outside"],
+    ex:[{ s:"The city survived a long {{}}.", f:"siege", ko:"그 도시는 긴 포위 공격을 견뎌 냈다." }] },
+
+  /* 승격 69 — 사전 글자 유지. 참조 enroll(E) 의 화면은 바뀌지 않는다.
+     '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다. */
+  { word:"sign up", pron:"사인 업", pos:"phr", level:"B1", meanings:["신청하다","가입하다"],
+    syn:["enroll","put one's name down","join by writing in"] },
+
+  /* 위 sign up 과 겹치지 않게 '~을' 을 받는 쪽으로 다듬었다. */
+  { word:"sign up for", pron:"사인 업 포", pos:"phr", level:"B1", meanings:["~을 신청해 넣다"],
+    syn:["put one's name down for","take out a place in","commit oneself to"] },
+
+  /* 원본의 외래어 '사인' 은 걷었다. */
+  { word:"signature", pron:"시그너처", pos:"n", level:"B2", meanings:["서명","특징"],
+    syn:["one's written name","mark of one's own","hand-written name"],
+    ex:[{ s:"Put your {{}} at the bottom.", f:"signature", ko:"아래쪽에 서명을 하세요." }] },
+
+  /* 승격 70 — 사전 글자 유지. 참조 considerable(C)·meaningless(M) 두 곳의
+     화면은 바뀌지 않는다. 챕터 1 의 salient 가 '중요한' 을 이 낱말에 넘겼다. */
+  { word:"significant", pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
+    syn:["considerable","weighty in effect","far from small"], ant:["meaningless"],
+    ex:[{ s:"The study found a {{}} change.", f:"significant", ko:"그 연구는 중요한 변화를 찾아냈다." }] },
+
+  /* 외래어 '실루엣' 은 걷었다. */
+  { word:"silhouette", pron:"실루엣", pos:"n", level:"C1", meanings:["검은 윤곽","그림자"],
+    syn:["dark outline","shape against the light","black profile"],
+    ex:[{ s:"We saw the {{}} of a tower.", f:"silhouette", ko:"우리는 탑의 검은 윤곽을 보았다." }] },
+
+  /* 승격 71 — 사전 글자 유지. 참조 affinity(A)·commonality(C)·contrast(C)
+     세 곳의 화면은 바뀌지 않는다. */
+  { word:"similarity", pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
+    syn:["affinity","commonality","likeness between two"], ant:["contrast"],
+    ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
+
+  /* 원본은 '단순함; 소박함; 평이함' 세 갈래였다. 둘로 줄였다. */
+  { word:"simplicity", pron:"심플리시티", pos:"n", level:"B2", meanings:["단순함","소박함"],
+    syn:["plainness","freedom from fuss","lack of frills"],
+    ex:[{ s:"The design wins for its {{}}.", f:"simplicity", ko:"그 설계는 단순함으로 좋은 평을 받는다." }] },
+
+  /* 승격 72 — 사전은 '간소화하다' 였다. 참조가 없어 원본대로 '단순화하다' 로
+     두었다 — 화면이 바뀌는 곳은 없다. */
+  { word:"simplify", pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
+    syn:["make plain","cut out the hard parts","reduce to basics"],
+    ex:[{ s:"We must {{}} the form.", f:"simplify", ko:"우리는 그 서식을 단순화해야 한다." }] },
+
+  /* 승격 73 — 사전 단일값 유지. 참조 feign(F) 의 화면은 바뀌지 않는다.
+     원본의 '비슷한 것을 만들다' 는 버렸다 — feign 이 '꾸미다' 쪽이다. */
+  { word:"simulate", pron:"시뮬레이트", pos:"v", level:"C1", meanings:["그런 양 꾸미다"],
+    syn:["feign","put on an act of","pretend to have"],
+    ex:[{ s:"He tried to {{}} surprise.", f:"simulate", ko:"그는 놀란 양 꾸미려 했다." }] },
+
+  { word:"simultaneous", pron:"사이멀테이니어스", pos:"adj", level:"C1", meanings:["동시의"],
+    syn:["happening together","side by side in time","going on at once"],
+    ex:[{ s:"The hall offers {{}} translation.", f:"simultaneous", ko:"그 회관은 동시 통역을 제공한다." }] },
+
+  /* 승격 74 — 사전 단일값 유지. 참조는 없다. 위 simultaneous 와 품사로 갈린다. */
+  { word:"simultaneously", pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
+    syn:["at one and the same time","together in time","in the same moment"],
+    ex:[{ s:"Both lamps went out {{}}.", f:"simultaneously", ko:"두 등이 동시에 꺼졌다." }] },
+
+  /* ── 챕터 9 ────────────────────────────────────── */
+  /* 승격 열둘 가운데 열하나가 사전 글자를 그대로 쓴다. 바뀌는 곳은 한 곳이다.
+       slaughter  학살; 도살 → 학살, 도살   bloodshed(B) 의 쌍반점만 갈랐다
+
+     ★ skepticism 은 원본이 '회의론, 무신론' 이었다. '무신론' 은 atheism 의
+     뜻이라 사전값 '회의주의' 를 지켰다.
+
+     skim 은 챕터 2 의 scan 과 '훑어보다' 를 글자까지 맞춰 두었다. 그래서
+     skim 의 syn 에 scan 을 넣지 않았다 — 설명이 똑같은 선택지가 둘이 되기
+     때문이다. browse(B) 의 syn 에서 scan 을 떼고 skim 을 남겨 둔 것도
+     같은 이유다(챕터 2 에서 미리 해 두었다).
+
+     '마른' 자리를 셋으로 갈랐다.
+       skinny  깡마른              ← 사전 단일값. ant chubby·plump
+       slender 날씬한, 가느다란      ← 원본 '호리호리한' 쪽
+       slim    가느다란 (챕터 10)   ← slender 의 둘째 갈래와 글자를 맞췄다
+     skyrocket(급등하다) 은 soar(급상승하다, 높이 날다 · 챕터 11) 와 갈랐다. */
+
+  { word:"sin", pron:"신", pos:"n", level:"B2", meanings:["죄","죄악"],
+    syn:["wrongdoing against god","moral fault","breach of divine law"],
+    ex:[{ s:"He confessed his {{}} to the priest.", f:"sin", ko:"그는 사제에게 자신의 죄를 고백했다." }] },
+
+  /* 승격 75 — 사전 글자 유지. 참조 earnest(E)·heartfelt(H)·hypocritical(H)
+     세 곳의 화면은 바뀌지 않는다. */
+  { word:"sincere", pron:"신시어", pos:"adj", level:"B1", meanings:["진심의","진실한"],
+    syn:["earnest","heartfelt","meant truly"], ant:["hypocritical"],
+    ex:[{ s:"She gave a {{}} apology.", f:"sincere", ko:"그녀는 진심의 사과를 했다." }] },
+
+  /* 승격 76 — 사전 글자 유지. 참조 discriminate(D) 의 화면은 바뀌지 않는다.
+     구·표현이라 예문은 두지 않는다. */
+  { word:"single out", pron:"싱글 아웃", pos:"phr", level:"B2", meanings:["골라내다","지목하다"],
+    syn:["discriminate","pick out from the rest","point to just one"] },
+
+  /* 승격 77 — 사전 단일값 유지. 참조 ominous(O) 의 화면은 바뀌지 않는다. */
+  { word:"sinister", pron:"시니스터", pos:"adj", level:"C2", meanings:["음험한"],
+    syn:["ominous","hinting at evil","dark in intent"],
+    ex:[{ s:"There was a {{}} tone in his voice.", f:"sinister", ko:"그의 목소리에 음험한 기색이 있었다." }] },
+
+  /* 승격 78 — 사전 글자 유지. 참조 descend(D) 의 화면은 바뀌지 않는다. */
+  { word:"sink", pron:"싱크", pos:"v", level:"B1", meanings:["가라앉다","침몰하다"],
+    syn:["descend","go under water","drop below the surface"], ant:["float"],
+    ex:[{ s:"The boat began to {{}} slowly.", f:"sink", ko:"그 배가 천천히 가라앉기 시작했다." }] },
+
+  /* 승격 79 — 사전 글자 유지. 참조 location(L) 의 화면은 바뀌지 않는다.
+     원본은 네 갈래였다. 둘로 줄였다. */
+  { word:"site", pron:"사이트", pos:"n", level:"B1", meanings:["부지","장소"],
+    syn:["location","plot of ground","spot for building"],
+    ex:[{ s:"They chose a flat {{}} for the school.", f:"site", ko:"그들은 학교 부지로 평평한 곳을 골랐다." }] },
+
+  { word:"situate", pron:"시추에이트", pos:"v", level:"C1", meanings:["두다","위치시키다"],
+    syn:["place in position","set in a spot","fix the place of"],
+    ex:[{ s:"They will {{}} the office near the station.", f:"situate", ko:"그들은 사무실을 역 가까이에 둘 것이다." }] },
+
+  /* 승격 80 — 사전 단일값 유지. 참조 cynical(C) 의 화면은 바뀌지 않는다. */
+  { word:"skeptical", pron:"스켑티컬", pos:"adj", level:"B2", meanings:["회의적인"],
+    syn:["cynical","slow to believe","full of doubt"],
+    ex:[{ s:"Most experts remain {{}} about the claim.", f:"skeptical", ko:"대부분의 전문가는 그 주장에 회의적이다." }] },
+
+  /* 승격 81 — ★ 원본 '회의론, 무신론' 에서 '무신론' 은 atheism 의 뜻이다.
+     사전 단일값 '회의주의' 를 지켰다 — 참조 cynicism(C)·doubt(D) 두 곳의
+     화면은 바뀌지 않는다. */
+  { word:"skepticism", pron:"스켑티시즘", pos:"n", level:"C1", meanings:["회의주의"],
+    syn:["cynicism","doubt","habit of not believing"],
+    ex:[{ s:"His {{}} slowed the project.", f:"skepticism", ko:"그의 회의주의가 그 사업을 늦췄다." }] },
+
+  /* 승격 82 — 사전 단일값 유지. 참조 browse(B) 의 화면은 바뀌지 않는다.
+     챕터 2 의 scan 과 글자를 맞춰 두었으므로 syn 에 scan 을 넣지 않았다. */
+  { word:"skim", pron:"스킴", pos:"v", level:"B2", meanings:["훑어보다"],
+    syn:["browse","read fast for the gist","glide over the text"],
+    ex:[{ s:"I only had time to {{}} the report.", f:"skim", ko:"나는 그 보고서를 훑어볼 시간밖에 없었다." }] },
+
+  /* 승격 83 — 사전 단일값 유지. 참조 chubby(C)·plump(P) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"skinny", pron:"스키니", pos:"adj", level:"B2", meanings:["깡마른"],
+    syn:["very thin","bony","all skin and bone"], ant:["chubby","plump"],
+    ex:[{ s:"The stray dog was {{}} and weak.", f:"skinny", ko:"그 들개는 깡마르고 약했다." }] },
+
+  /* 승격 84 — 사전 단일값 유지. 참조 leave out(L) 의 화면은 바뀌지 않는다. */
+  { word:"skip", pron:"스킵", pos:"v", level:"B1", meanings:["건너뛰다"],
+    syn:["leave out","pass over","miss on purpose"],
+    ex:[{ s:"You may {{}} the first chapter.", f:"skip", ko:"첫 장은 건너뛰어도 된다." }] },
+
+  /* soar(급상승하다, 높이 날다 · 챕터 11) 와 갈랐다 — 이쪽은 값이 뛰는 쪽이다. */
+  { word:"skyrocket", pron:"스카이라킷", pos:"v", level:"C1", meanings:["급등하다"],
+    syn:["shoot up fast","rise steeply","climb at great speed"],
+    ex:[{ s:"House prices began to {{}}.", f:"skyrocket", ko:"집값이 급등하기 시작했다." }] },
+
+  { word:"skyscraper", pron:"스카이스크레이퍼", pos:"n", level:"B2", meanings:["고층 건물"],
+    syn:["very tall building","high-rise tower","building of many floors"],
+    ex:[{ s:"A new {{}} rose beside the river.", f:"skyscraper", ko:"강 옆에 새 고층 건물이 올라갔다." }] },
+
+  { word:"slam", pron:"슬램", pos:"v", level:"B2", meanings:["쾅 닫다"],
+    syn:["shut with a bang","close hard","bang shut"],
+    ex:[{ s:"Do not {{}} the door.", f:"slam", ko:"문을 쾅 닫지 마라." }] },
+
+  { word:"slap", pron:"슬랩", pos:"v", level:"B2", meanings:["찰싹 때리다"],
+    syn:["strike with the palm","smack","hit flat-handed"],
+    ex:[{ s:"She wanted to {{}} him on the arm.", f:"slap", ko:"그녀는 그의 팔을 찰싹 때리고 싶었다." }] },
+
+  /* 승격 85 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 bloodshed(B) 한 곳의 설명이
+     '학살; 도살' 에서 '학살, 도살' 이 된다. 원본의 동사 갈래는 버렸다. */
+  { word:"slaughter", pron:"슬로터", pos:"n", level:"C1", meanings:["학살","도살"],
+    syn:["bloodshed","mass killing","butchery of animals"],
+    ex:[{ s:"The village remembered the {{}}.", f:"slaughter", ko:"그 마을은 그 학살을 기억했다." }] },
+
+  /* slim(가느다란 · 챕터 10) 과 둘째 갈래를 글자까지 맞춰 두었다. */
+  { word:"slender", pron:"슬렌더", pos:"adj", level:"B2", meanings:["날씬한","가느다란"],
+    syn:["slim in build","gracefully thin","narrow in shape"],
+    ex:[{ s:"She has long {{}} fingers.", f:"slender", ko:"그녀는 길고 가느다란 손가락을 지녔다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"slide into", pron:"슬라이드 인투", pos:"phr", level:"B2", meanings:["~에 미끄러져 들어가다"],
+    syn:["slip into","glide into","ease into without notice"] },
+
+  /* 승격 86 — 사전 글자 유지. 참조 by far(B) 의 화면은 바뀌지 않는다. */
+  { word:"slightly", pron:"슬라이틀리", pos:"adv", level:"B1", meanings:["약간","조금"],
+    syn:["a little","to a small degree","just a bit"], ant:["by far"],
+    ex:[{ s:"The room was {{}} warmer today.", f:"slightly", ko:"그 방은 오늘 약간 더 따뜻했다." }] },
+
+  /* ── 챕터 10 ───────────────────────────────────── */
+  /* 사전이 품사를 잘못 잡아 둔 자리가 둘이다.
+       slope  사전 '비탈지다'(동사) → 원본 쪽 명사 '비탈, 기울기'
+              incline(v) 의 syn 에 명사가 끼게 되므로 그 자리를
+              'rise or fall at an angle' 로 갈았다
+       smash  사전 '부수다; 충돌' → 동사 '부수다'
+              참조 break·crash·fracture 가 모두 동사라 그대로 맞는다
+
+     smash(부수다) 와 shatter(산산이 부수다 · 챕터 7) 는 '산산이' 로 갈랐다.
+     smash 는 break(부수다, 어기다)·fracture(부러지다, 부수다) 와 첫 갈래가
+     글자까지 같아 서로의 오답에서 자동으로 빠진다.
+     soar(급상승하다, 높이 날다) 는 skyrocket(급등하다 · 챕터 9) 와 갈랐다. */
+
+  /* 승격 87 — 사전 단일값 유지. 참조 narrow(N) 의 화면은 바뀌지 않는다.
+     원본의 '호리호리한' 은 챕터 9 의 slender 자리다. */
+  { word:"slim", pron:"슬림", pos:"adj", level:"B1", meanings:["가느다란"],
+    syn:["narrow","thin in form","of small width"],
+    ex:[{ s:"She carried a {{}} notebook.", f:"slim", ko:"그녀는 가느다란 공책을 들고 있었다." }] },
+
+  /* 승격 88 — 사전은 동사 '비탈지다' 였다. 원본이 명사 쪽이라 명사로 세우고
+     참조 incline(I) 의 그 자리를 동사 표현으로 갈았다. */
+  { word:"slope", pron:"슬로프", pos:"n", level:"B2", meanings:["비탈","기울기"],
+    syn:["rising ground","angle of a surface","tilt of the land"],
+    ex:[{ s:"The house stands on a gentle {{}}.", f:"slope", ko:"그 집은 완만한 비탈에 서 있다." }] },
+
+  { word:"sloppy", pron:"슬라피", pos:"adj", level:"C1", meanings:["엉성한","대충하는"],
+    syn:["slapdash","done without care","messy in work"],
+    ex:[{ s:"The teacher returned his {{}} work.", f:"sloppy", ko:"교사는 그의 엉성한 과제를 돌려주었다." }] },
+
+  /* 승격 89 — 사전 글자 유지. 참조 brisk(B)·drowsy(D)·indolent(I) 세 곳의
+     화면은 바뀌지 않는다. */
+  { word:"sluggish", pron:"슬러기시", pos:"adj", level:"C1", meanings:["느릿한","부진한"],
+    syn:["drowsy","indolent","slow to move"], ant:["brisk"],
+    ex:[{ s:"Sales were {{}} all winter.", f:"sluggish", ko:"겨울 내내 판매가 부진했다." }] },
+
+  /* 원본이 [n+v] 였다. 명사로 세웠다. */
+  { word:"slumber", pron:"슬럼버", pos:"n", level:"C2", meanings:["잠","수면"],
+    syn:["deep sleep","time of sleeping","rest with eyes shut"],
+    ex:[{ s:"He fell into a deep {{}}.", f:"slumber", ko:"그는 깊은 잠에 빠졌다." }] },
+
+  /* 승격 90 — 사전 글자 유지. 참조 depression(D)·downturn(D) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"slump", pron:"슬럼프", pos:"n", level:"B2", meanings:["폭락","부진"],
+    syn:["depression","downturn","sharp fall in trade"],
+    ex:[{ s:"The market went through a long {{}}.", f:"slump", ko:"시장은 긴 부진을 겪었다." }] },
+
+  /* 승격 91 — 사전 첫 갈래만 남겼다. 참조 break(B)·crash(C)·fracture(F) 가
+     모두 동사여서 그대로 맞는다. 그 세 곳의 설명이 '부수다; 충돌' 에서
+     '부수다' 로 짧아진다. */
+  { word:"smash", pron:"스매시", pos:"v", level:"B2", meanings:["부수다"],
+    syn:["break","fracture","crash into pieces"],
+    ex:[{ s:"He tried to {{}} the lock.", f:"smash", ko:"그는 그 자물쇠를 부수려 했다." }] },
+
+  /* 승격 92 — 사전 글자 유지. 참조가 다섯 곳(bumpy·coarse·effortless·flat·
+     mellow) 인데 하나도 바뀌지 않는다. */
+  { word:"smooth", pron:"스무드", pos:"adj", level:"B1", meanings:["매끄러운","평탄한"],
+    syn:["effortless","flat","even to the touch"], ant:["bumpy","coarse"],
+    ex:[{ s:"The new road is wide and {{}}.", f:"smooth", ko:"새 길은 넓고 평탄하다." }] },
+
+  /* 원본의 '밀입국하다' 는 버렸다 — 물건을 들이는 쪽만 남겼다. */
+  { word:"smuggle", pron:"스머글", pos:"v", level:"C1", meanings:["밀수하다"],
+    syn:["bring in by stealth","move goods illegally","sneak past customs"],
+    ex:[{ s:"They tried to {{}} gold across the border.", f:"smuggle", ko:"그들은 국경으로 금을 밀수하려 했다." }] },
+
+  /* 승격 93 — 사전 단일값 유지. 참조 flick(F) 의 화면은 바뀌지 않는다. */
+  { word:"snap", pron:"스냅", pos:"v", level:"B2", meanings:["딱 튀기다"],
+    syn:["flick","give a sharp click","break with a crack"],
+    ex:[{ s:"He tried to {{}} his fingers.", f:"snap", ko:"그는 손가락을 딱 튀기려 했다." }] },
+
+  /* 승격 94 — 사전 단일값 유지. 참조 grab(G) 의 화면은 바뀌지 않는다. */
+  { word:"snatch", pron:"스내치", pos:"v", level:"B2", meanings:["낚아채다"],
+    syn:["grab","seize quickly","take with a jerk"],
+    ex:[{ s:"A gull tried to {{}} the bread.", f:"snatch", ko:"갈매기가 그 빵을 낚아채려 했다." }] },
+
+  /* 원본의 둘째 갈래('슬쩍 훔치다') 는 버렸다. */
+  { word:"sneak", pron:"스니크", pos:"v", level:"B2", meanings:["몰래 가다"],
+    syn:["move without being seen","creep quietly","go by stealth"],
+    ex:[{ s:"He tried to {{}} out of the hall.", f:"sneak", ko:"그는 강당에서 몰래 나가려 했다." }] },
+
+  /* 원본이 [v+n] 이었다. 동사로 세웠다. */
+  { word:"sniff", pron:"스니프", pos:"v", level:"B2", meanings:["코를 킁킁거리다"],
+    syn:["draw air in through the nose","smell in short breaths","snuffle"],
+    ex:[{ s:"The dog began to {{}} at the bag.", f:"sniff", ko:"개가 그 가방에 코를 킁킁거리기 시작했다." }] },
+
+  { word:"snore", pron:"스노", pos:"v", level:"B2", meanings:["코를 골다"],
+    syn:["breathe noisily in sleep","make a rough sound asleep","rumble while sleeping"],
+    ex:[{ s:"He began to {{}} loudly.", f:"snore", ko:"그는 크게 코를 골기 시작했다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"so far", pron:"소 파", pos:"phr", level:"B1", meanings:["지금까지"],
+    syn:["up to now","until this point","as of the present"] },
+
+  { word:"so much the better", pron:"소 머치 더 베터", pos:"phr", level:"C2", meanings:["훨씬 더 좋은"],
+    syn:["all the better for it","even more welcome","that much improved"] },
+
+  /* 승격 95 — 사전 단일값 유지. 참조 drench(D) 의 화면은 바뀌지 않는다. */
+  { word:"soak", pron:"소크", pos:"v", level:"B2", meanings:["흠뻑 젖게 하다"],
+    syn:["drench","wet right through","leave in liquid"],
+    ex:[{ s:"The rain will {{}} your coat.", f:"soak", ko:"비가 네 외투를 흠뻑 젖게 할 것이다." }] },
+
+  /* 승격 96 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다.
+     skyrocket(급등하다 · 챕터 9) 와 갈랐다 — 이쪽은 날아오르는 쪽도 맡는다. */
+  { word:"soar", pron:"소", pos:"v", level:"B2", meanings:["급상승하다","높이 날다"],
+    syn:["rise high up","fly far above","climb into the sky"],
+    ex:[{ s:"Eagles {{}} above the cliff.", f:"soar", ko:"독수리들이 절벽 위로 높이 난다." }] },
+
+  { word:"sob", pron:"삽", pos:"v", level:"B2", meanings:["흐느껴 울다"],
+    syn:["weep aloud","cry with catching breath","shed tears noisily"],
+    ex:[{ s:"The child began to {{}}.", f:"sob", ko:"그 아이가 흐느껴 울기 시작했다." }] },
+
+  { word:"sober", pron:"소버", pos:"adj", level:"C1", meanings:["술 취하지 않은","냉철한"],
+    syn:["not drunk","clear-minded","level in judgment"], ant:["drunk"],
+    ex:[{ s:"He stayed {{}} all evening.", f:"sober", ko:"그는 저녁 내내 술에 취하지 않았다." }] },
+
+  /* ── 챕터 11 ───────────────────────────────────── */
+  /* ★ solvent 가 이 세트에서 가장 크게 어긋나 있던 자리다. 원본(교재) 은
+     '용액' 이라고 적어 두었지만 그것은 solution 의 뜻이다. solvent 의 실제 뜻은
+     형용사 '지급 능력이 있는' 이고, 참조 셋 가운데 bankrupt(파산한)·
+     insolvent(지불 불능의) 가 바로 그쪽이다. 남은 한 곳 acid(A) 만 화학 쪽
+     표현 'dissolving agent' 로 갈았다.
+
+     ⚠ liquid(L) 도 손질했다. solid 가 형용사 '단단한, 입방의' 로 서면 명사
+     liquid 의 반의어 자리에 형용사가 들어가게 된다. 'solid matter'(고체) 로
+     갈았다.
+
+     solitary(홀로 지내는) 와 solitude(고독, 혼자 지냄) 는 품사로 갈린다.
+     somewhat(다소) 은 slightly(약간, 조금 · 챕터 9) 와 갈랐다.
+     sole(유일한, 독점의) 과 solely(단독으로) 도 품사로 갈린다. */
+
+  { word:"so-called", pron:"소 콜드", pos:"adj", level:"B2", meanings:["이른바"],
+    syn:["named as such","going by that name","said to be"],
+    ex:[{ s:"The {{}} expert knew little.", f:"so-called", ko:"그 이른바 전문가는 아는 것이 적었다." }] },
+
+  /* 승격 97 — 사전 단일값 유지. 참조 aloof(A)·antisocial(A)·gregarious(G)
+     세 곳의 화면은 바뀌지 않는다. gregarious(사교적인) 와 글자가 같아 서로의
+     오답에서 자동으로 빠진다. */
+  { word:"sociable", pron:"소셔블", pos:"adj", level:"B2", meanings:["사교적인"],
+    syn:["gregarious","fond of company","easy with people"], ant:["aloof","antisocial"],
+    ex:[{ s:"He is a {{}} young man.", f:"sociable", ko:"그는 사교적인 청년이다." }] },
+
+  { word:"socialize", pron:"소셜라이즈", pos:"v", level:"B2", meanings:["사귀다","사회화하다"],
+    syn:["mix with others","spend time together","take on social ways"],
+    ex:[{ s:"She has little time to {{}}.", f:"socialize", ko:"그녀는 사귈 시간이 거의 없다." }] },
+
+  { word:"sociocultural", pron:"소시오컬처럴", pos:"adj", level:"C1", meanings:["사회문화적인"],
+    syn:["of society and culture","to do with people and custom","social and cultural at once"],
+    ex:[{ s:"The study takes a {{}} view.", f:"sociocultural", ko:"그 연구는 사회문화적인 관점을 취한다." }] },
+
+  { word:"sociology", pron:"소시알러지", pos:"n", level:"B2", meanings:["사회학"],
+    syn:["study of society","science of social life","study of human groups"],
+    ex:[{ s:"She teaches {{}} at the college.", f:"sociology", ko:"그녀는 그 대학에서 사회학을 가르친다." }] },
+
+  { word:"solace", pron:"살러스", pos:"n", level:"C2", meanings:["위안","위로"],
+    syn:["comfort in sorrow","easing of grief","relief from pain"],
+    ex:[{ s:"She found {{}} in music.", f:"solace", ko:"그녀는 음악에서 위안을 찾았다." }] },
+
+  { word:"sold-out", pron:"솔드 아웃", pos:"adj", level:"B2", meanings:["매진된"],
+    syn:["all tickets gone","none left to buy","fully taken up"],
+    ex:[{ s:"They played to a {{}} hall.", f:"sold-out", ko:"그들은 매진된 공연장에서 연주했다." }] },
+
+  /* 승격 98 — 사전 글자 유지. 참조 exclusive(E) 의 화면은 바뀌지 않는다. */
+  { word:"sole", pron:"소울", pos:"adj", level:"B2", meanings:["유일한","독점의"],
+    syn:["exclusive","one and only","held by one alone"],
+    ex:[{ s:"She is the {{}} owner of the shop.", f:"sole", ko:"그녀가 그 가게의 유일한 주인이다." }] },
+
+  /* 승격 99 — 사전 단일값 유지. 참조 exclusively(E) 의 화면은 바뀌지 않는다.
+     위 sole(형용사) 과 품사로 갈린다. */
+  { word:"solely", pron:"소울리", pos:"adv", level:"B2", meanings:["단독으로"],
+    syn:["exclusively","on one's own","by oneself alone"],
+    ex:[{ s:"The decision rests {{}} with her.", f:"solely", ko:"그 결정은 단독으로 그녀에게 달려 있다." }] },
+
+  /* 원본은 네 갈래였다. 둘로 줄였다. */
+  { word:"solemnity", pron:"설렘니티", pos:"n", level:"C2", meanings:["근엄함","엄숙함"],
+    syn:["grave manner","deep seriousness","weight of a rite"],
+    ex:[{ s:"The service kept its {{}}.", f:"solemnity", ko:"그 예식은 엄숙함을 지켰다." }] },
+
+  /* 원본의 셋째 갈래('호객하다') 는 버렸다. */
+  { word:"solicit", pron:"설리싯", pos:"v", level:"C2", meanings:["간청하다","요청하다"],
+    syn:["ask earnestly","beg for","seek by asking"],
+    ex:[{ s:"They began to {{}} funds for the school.", f:"solicit", ko:"그들은 학교를 위한 기금을 요청하기 시작했다." }] },
+
+  /* 승격 100 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 cubic(C)·firm(F) 두 곳의
+     설명이 '단단한; 입방의' 에서 '단단한, 입방의' 가 된다. 명사인 liquid(L) 의
+     반의어 자리는 'solid matter'(고체) 로 갈았다.
+     firm(단단한, 회사) 과 첫 갈래가 글자까지 같아 자동 배제된다. */
+  { word:"solid", pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
+    syn:["cubic","firm","hard right through"],
+    ex:[{ s:"The table is made of {{}} oak.", f:"solid", ko:"그 탁자는 단단한 참나무로 만들어졌다." }] },
+
+  /* 승격 101 — 사전 단일값 유지. 참조 lonely(L) 의 화면은 바뀌지 않는다. */
+  { word:"solitary", pron:"살러테리", pos:"adj", level:"C1", meanings:["홀로 지내는"],
+    syn:["lonely","living alone","without company"],
+    ex:[{ s:"He led a {{}} life on the island.", f:"solitary", ko:"그는 그 섬에서 홀로 지내는 삶을 살았다." }] },
+
+  /* 위 solitary(형용사) 와 품사로 갈린다. 챕터 4 의 seclusion(호젓함, 외딴 곳)
+     과도 갈라 두었다. */
+  { word:"solitude", pron:"살러튜드", pos:"n", level:"C1", meanings:["고독","혼자 지냄"],
+    syn:["state of being alone","life apart from others","quiet of one's own"],
+    ex:[{ s:"He writes best in {{}}.", f:"solitude", ko:"그는 혼자 있을 때 가장 잘 쓴다." }] },
+
+  { word:"soluble", pron:"살류블", pos:"adj", level:"C2", meanings:["액체에 녹는"],
+    syn:["able to dissolve","melting in water","breaking up in liquid"],
+    ex:[{ s:"The powder is fully {{}}.", f:"soluble", ko:"그 가루는 완전히 액체에 녹는다." }] },
+
+  /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
+     '해결책; 용액' 에서 '해결책, 용액' 이 된다. */
+  { word:"solution", pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
+    syn:["answer to a problem","way out of trouble","liquid mixture"],
+    ex:[{ s:"They looked for a simple {{}}.", f:"solution", ko:"그들은 간단한 해결책을 찾았다." }] },
+
+  /* 승격 103 — ★ 원본의 '용액' 은 위 solution 의 뜻이다. 사전값
+     '지급 능력이 있는' 을 지켰다 — 참조 bankrupt(B)·insolvent(I) 두 곳이
+     그쪽이라 화면이 바뀌지 않는다. 남은 acid(A) 한 곳만 갈았다. */
+  { word:"solvent", pron:"살번트", pos:"adj", level:"C2", meanings:["지급 능력이 있는"],
+    syn:["able to pay debts","free of debt","having funds to settle"], ant:["bankrupt","insolvent"],
+    ex:[{ s:"The firm is still {{}}.", f:"solvent", ko:"그 회사는 아직 지급 능력이 있다." }] },
+
+  /* slightly(약간, 조금 · 챕터 9) 와 갈랐다 — 이쪽이 조금 더 큰 정도다. */
+  { word:"somewhat", pron:"섬왓", pos:"adv", level:"B2", meanings:["다소"],
+    syn:["to some extent","rather more than a little","in some degree"],
+    ex:[{ s:"The result was {{}} surprising.", f:"somewhat", ko:"그 결과는 다소 놀라웠다." }] },
+
+  /* 승격 104 — 사전 글자 유지. 참조 acoustic(A) 의 화면은 바뀌지 않는다. */
+  { word:"sonic", pron:"사닉", pos:"adj", level:"C1", meanings:["음파의","소리의"],
+    syn:["acoustic","of sound waves","to do with sound"],
+    ex:[{ s:"The jet made a {{}} boom.", f:"sonic", ko:"그 제트기가 음파의 폭음을 냈다." }] },
+
+  /* 승격 105 — 사전 글자 유지. 참조 console(C)·madden(M) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"soothe", pron:"수드", pos:"v", level:"B2", meanings:["달래다","진정시키다"],
+    syn:["console","calm down","quiet a distress"], ant:["madden"],
+    ex:[{ s:"A warm bath will {{}} the ache.", f:"soothe", ko:"따뜻한 목욕이 그 통증을 진정시킬 것이다." }] },
+
+  /* ── 챕터 12 ───────────────────────────────────── */
+  /* ★ sound 는 '소리' 를 버렸다. 수능에 가장 자주 나오는 뜻이라 아까운 자리다.
+     참조 logical(논리적인) 이 형용사 쪽이고 사전값도 '빈틈없는, 타당한' 이어서
+     그쪽을 지켰다. 참조를 손질하는 대신 사전값을 따르는 규칙을 그대로 적용한
+     것이다.
+
+     span 은 사전이 '기간; 걸치다' 로 명사와 동사를 섞어 두었다. 참조 다섯 곳
+     가운데 breadth·distance·duration·length 넷이 명사여서 명사 '기간' 으로
+     세우고, 동사인 bridge(B) 한 곳만 'link two sides' 로 갈았다.
+     '범위' 는 챕터 3 의 scope·range(R) 자리라 쓰지 않았다.
+
+     sow 는 발음을 '소우' 로 적어 챕터 2 의 saw(소) 와 갈라 두었다.
+     specific 은 참조가 여섯 곳으로 이 세트에서 separate 와 함께 가장 많다.
+     사전 글자를 그대로 지켜 하나도 바뀌지 않는다. */
+
+  /* 승격 106 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
+  { word:"sophisticated", pron:"서피스티케이팃", pos:"adj", level:"B2", meanings:["정교한","세련된"],
+    syn:["refined in taste","highly developed","worldly-wise"],
+    ex:[{ s:"The lab uses {{}} tools.", f:"sophisticated", ko:"그 실험실은 정교한 도구를 쓴다." }] },
+
+  { word:"sophomore", pron:"사퍼모", pos:"n", level:"B2", meanings:["2학년"],
+    syn:["second-year student","one in the second year","student of year two"],
+    ex:[{ s:"She is a {{}} at the college.", f:"sophomore", ko:"그녀는 그 대학 2학년이다." }] },
+
+  { word:"sore", pron:"소어", pos:"adj", level:"B1", meanings:["따가운","아픈"],
+    syn:["painful to touch","aching","tender and raw"],
+    ex:[{ s:"My throat felt {{}} all morning.", f:"sore", ko:"아침 내내 목이 따가웠다." }] },
+
+  /* 승격 107 — 사전 단일값 유지. 참조 grief(G) 의 화면은 바뀌지 않는다.
+     원본의 '애도' 는 버렸다 — mourning 자리다. */
+  { word:"sorrow", pron:"소로우", pos:"n", level:"B2", meanings:["비애"],
+    syn:["grief","deep sadness","heavy heart"],
+    ex:[{ s:"Her eyes were full of {{}}.", f:"sorrow", ko:"그녀의 눈은 비애로 가득했다." }] },
+
+  /* 승격 108 — ★ '소리' 를 버린 자리다. 참조 logical(L) 이 형용사여서 사전값
+     '빈틈없는, 타당한' 을 지켰다 — 그 한 곳의 화면은 바뀌지 않는다. */
+  { word:"sound", pron:"사운드", pos:"adj", level:"B2", meanings:["빈틈없는","타당한"],
+    syn:["logical","free of flaws","well-founded"],
+    ex:[{ s:"That is a {{}} argument.", f:"sound", ko:"그것은 타당한 논증이다." }] },
+
+  /* 승격 109 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 bitter(B) 한 곳의 설명이
+     '신; 시큼한' 에서 '신, 시큼한' 이 된다. */
+  { word:"sour", pron:"사우어", pos:"adj", level:"B1", meanings:["신","시큼한"],
+    syn:["bitter","sharp in taste","tart"],
+    ex:[{ s:"The milk has turned {{}}.", f:"sour", ko:"그 우유가 시큼해졌다." }] },
+
+  { word:"souvenir", pron:"수버니어", pos:"n", level:"B1", meanings:["기념품"],
+    syn:["keepsake","memento","gift to remember by"],
+    ex:[{ s:"He bought a small {{}} at the museum.", f:"souvenir", ko:"그는 박물관에서 작은 기념품을 샀다." }] },
+
+  { word:"sovereignty", pron:"사브런티", pos:"n", level:"C2", meanings:["통치권","자주권"],
+    syn:["supreme power","right to rule oneself","full authority of a state"],
+    ex:[{ s:"The island claimed full {{}}.", f:"sovereignty", ko:"그 섬은 완전한 자주권을 주장했다." }] },
+
+  /* 발음을 '소우' 로 적어 챕터 2 의 saw(소) 와 갈랐다. */
+  { word:"sow", pron:"소우", pos:"v", level:"B2", meanings:["씨를 뿌리다"],
+    syn:["plant seed","scatter grain","put seed in the ground"],
+    ex:[{ s:"Farmers {{}} the field in April.", f:"sow", ko:"농부들은 사월에 밭에 씨를 뿌린다." }] },
+
+  /* 승격 110 — 사전 단일값 유지. 참조는 없다. */
+  { word:"spacecraft", pron:"스페이스크래프트", pos:"n", level:"B2", meanings:["우주선"],
+    syn:["vessel for space travel","rocket ship","craft that leaves the earth"],
+    ex:[{ s:"The {{}} reached orbit at dawn.", f:"spacecraft", ko:"그 우주선은 새벽에 궤도에 이르렀다." }] },
+
+  /* 승격 111 — 사전 첫 갈래만 남겼다. 참조 다섯 곳 가운데 넷(breadth·distance·
+     duration·length) 이 명사여서 명사로 세웠다. 그 네 곳의 설명이
+     '기간; 걸치다' 에서 '기간' 으로 짧아지고, 동사인 bridge(B) 한 곳은
+     'link two sides' 로 갈았다.
+     duration(지속 기간, 기간)·length(기간, 길이) 와 글자가 겹쳐 자동 배제된다. */
+  { word:"span", pron:"스팬", pos:"n", level:"B2", meanings:["기간"],
+    syn:["duration","length of time","stretch from end to end"],
+    ex:[{ s:"The work took a short {{}} of three weeks.", f:"span", ko:"그 일은 삼 주라는 짧은 기간이 걸렸다." }] },
+
+  /* 승격 112 — 사전 첫 갈래만 남겼다. 참조는 없다. 원본의 동사 갈래도 버렸다. */
+  { word:"spare", pron:"스페어", pos:"adj", level:"B2", meanings:["여유 있는"],
+    syn:["left over for use","not in use now","kept in reserve"],
+    ex:[{ s:"Do you have a {{}} pen?", f:"spare", ko:"여유 있는 펜이 있나요?" }] },
+
+  /* 승격 113 — 사전 단일값 유지. 참조 geographic(G) 의 화면은 바뀌지 않는다. */
+  { word:"spatial", pron:"스페이셜", pos:"adj", level:"C1", meanings:["공간의"],
+    syn:["geographic","to do with space","of area and place"],
+    ex:[{ s:"The test checks {{}} skill.", f:"spatial", ko:"그 검사는 공간의 능력을 살핀다." }] },
+
+  { word:"spear", pron:"스피어", pos:"n", level:"B2", meanings:["창"],
+    syn:["long pointed weapon","lance","throwing pole with a blade"],
+    ex:[{ s:"He threw the {{}} at the target.", f:"spear", ko:"그는 표적에 창을 던졌다." }] },
+
+  { word:"specialized", pron:"스페셜라이즈드", pos:"adj", level:"B2", meanings:["전문화된"],
+    syn:["narrowed to one field","expert in one area","made for one purpose"],
+    ex:[{ s:"The clinic offers {{}} care.", f:"specialized", ko:"그 진료소는 전문화된 치료를 제공한다." }] },
+
+  /* 원본의 '특성' 은 버렸다 — characteristic 자리다. */
+  { word:"specialty", pron:"스페셜티", pos:"n", level:"B2", meanings:["전문","장기"],
+    syn:["chief skill","field one is best at","what one does best"],
+    ex:[{ s:"Heart surgery is her {{}}.", f:"specialty", ko:"심장 수술이 그녀의 전문이다." }] },
+
+  { word:"species", pron:"스피시즈", pos:"n", level:"B1", meanings:["종","종류"],
+    syn:["kind of living thing","group that breeds together","class of plant or animal"],
+    ex:[{ s:"The island holds one rare {{}}.", f:"species", ko:"그 섬에는 드문 종 하나가 있다." }] },
+
+  /* 승격 114 — 사전 글자 유지. 참조가 여섯 곳(concrete·definite·detail·general·
+     generic·particular) 인데 하나도 바뀌지 않는다 — 챕터 5 의 separate 와 함께
+     이 세트에서 참조가 가장 많은 자리다. */
+  { word:"specific", pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
+    syn:["concrete","definite","particular"], ant:["general","generic"],
+    ex:[{ s:"Give me a {{}} example.", f:"specific", ko:"구체적인 예를 하나 들어 보라." }] },
+
+  /* 승격 115 — 사전 단일값 유지. 참조 clarify(C)·define(D) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"specify", pron:"스페서파이", pos:"v", level:"B2", meanings:["명시하다"],
+    syn:["clarify","define","state exactly"],
+    ex:[{ s:"Please {{}} the size you need.", f:"specify", ko:"필요한 크기를 명시해 주세요." }] },
+
+  { word:"specimen", pron:"스페서먼", pos:"n", level:"C1", meanings:["견본","표본"],
+    syn:["sample for study","example taken","test piece"],
+    ex:[{ s:"The lab kept one {{}} of each rock.", f:"specimen", ko:"그 실험실은 각 암석의 표본을 하나씩 두었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a little": "조금은",
+  "able to dissolve": "녹을 수 있는",
+  "able to pay debts": "빚을 갚을 수 있는",
   "academic": "학업의, 학구적인",
+  "accept as one's own load": "제 짐으로 받아들이다",
+  "aching": "쑤시는",
   "act of fending off attack": "공격을 물리치는 일",
   "act of parting": "갈라서는 일",
   "act of picking out": "골라내는 일",
   "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
+  "all skin and bone": "살가죽과 뼈뿐인",
+  "all the better for it": "그 덕에 더 나은",
+  "all tickets gone": "표가 다 나간",
+  "angle of a surface": "면이 기운 각도",
+  "answer to a problem": "문제에 대한 답",
   "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "army officer of low rank": "계급이 낮은 군 간부",
+  "as of the present": "현재로서는",
+  "ask earnestly": "간절히 청하다",
+  "at one and the same time": "같은 때에 한꺼번에",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
+  "bang shut": "탁 소리 내며 닫히다",
   "barely below the top": "표면 바로 아래인",
   "barely enough": "겨우 될 만한",
+  "bear the weight of": "~의 무게를 지다",
   "bed into place": "자리에 박아 앉히다",
+  "beg for": "~을 애걸하다",
   "begin a task": "일에 손을 대다",
   "begin and stay": "시작해 이어지다",
+  "black profile": "검게 보이는 옆모습",
   "block by sorting": "가려서 막다",
+  "block the flow of": "~의 흐름을 막다",
+  "blockade of a fort": "요새를 에워쌈",
   "body circling a planet": "행성을 도는 천체",
+  "bony": "뼈가 드러난",
   "branch of industry": "산업의 한 가지",
+  "breach of divine law": "신의 법을 어김",
+  "break with a crack": "뚝 소리 내며 끊다",
+  "breaking up in liquid": "액체에서 흩어지는",
+  "breathe noisily in sleep": "잘 때 시끄럽게 숨 쉬다",
+  "bring in by stealth": "몰래 들여오다",
   "bring up from water": "물에서 끌어올리다",
+  "brother or sister": "형제 또는 자매",
+  "building of many floors": "층이 많은 건물",
+  "butchery of animals": "짐승을 잡음",
+  "by oneself alone": "제 혼자서만",
   "calm and untroubled": "잔잔하고 흔들림 없는",
+  "calm down": "가라앉히다",
   "careful check": "꼼꼼한 확인",
   "carried by nerves": "신경으로 전해지는",
   "cast a shadow on": "~에 그림자를 드리우다",
+  "cast ashore from a wreck": "부서진 배에서 밀려 올라온",
   "causing a stir": "들썩이게 하는",
   "causing fear": "두려움을 일으키는",
+  "change of position": "자리의 바뀜",
   "cheer": "기운을 북돋우다",
+  "chief skill": "으뜸 솜씨",
+  "child of the same parents": "같은 부모의 자식",
   "choice made": "내린 고름",
   "choosing with care": "조심해서 고르는",
   "church talk": "교회에서 하는 말씀",
   "claiming the role oneself": "그 자리를 제 것이라 하는",
+  "class of plant or animal": "식물이나 동물의 부류",
   "claw at": "손톱으로 할퀴다",
   "clean and free of germs": "균이 없이 깨끗한",
   "clean by rubbing": "비벼서 깨끗이 하다",
+  "clear in outline": "윤곽이 또렷한",
   "clear judgment": "맑은 판단력",
+  "clear-minded": "머릿속이 맑은",
+  "climb at great speed": "아주 빠르게 올라가다",
+  "climb into the sky": "하늘로 올라가다",
   "close examination": "빈틈없는 살핌",
+  "close hard": "힘껏 닫다",
   "close look": "바짝 들여다봄",
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
   "come to rest": "자리를 잡고 멈추다",
+  "comfort in sorrow": "슬픔 속의 다독임",
+  "commit oneself to": "~에 나서기로 하다",
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "contemptuous": "업신여기는",
   "cool dark spot": "시원하고 어두운 자리",
   "court ruling": "법정이 내린 결정",
+  "cover from danger": "위험을 막아 주는 곳",
+  "craft that leaves the earth": "지구를 벗어나는 기체",
+  "crash into pieces": "박살 나게 하다",
+  "creep quietly": "조용히 기어가다",
+  "cry with catching breath": "숨을 삼키며 울다",
+  "cut out the hard parts": "어려운 데를 덜어 내다",
+  "cut the supply of": "~의 공급을 끊다",
   "cutting tool with teeth": "이가 난 자르는 도구",
   "damage on purpose": "고의로 해를 입히다",
+  "dark in intent": "속뜻이 어두운",
+  "dark outline": "어두운 테두리",
   "dazzling to see": "보기에 눈부신",
+  "deep sadness": "깊은 슬픔",
+  "deep seriousness": "깊은 진지함",
+  "deep sleep": "깊은 잠",
   "delay the progress of": "~의 진행을 늦추다",
   "delicacy of response": "반응의 고움",
   "deliverance": "해방, 벗어남",
@@ -775,225 +1537,466 @@ Object.assign(window.GLOSS, {
   "disappointing": "실망스러운",
   "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
+  "dissolving agent": "녹이는 물질",
   "division by race": "인종에 따른 갈림",
+  "done without care": "공을 들이지 않은",
   "drain water": "배수로로 흐르는 물",
   "drains and clean water": "배수와 깨끗한 물",
+  "draw air in through the nose": "코로 숨을 들이켜다",
+  "drop away": "떨어져 나가다",
+  "drop below the surface": "물낯 아래로 내려가다",
+  "drunk": "술에 취한",
+  "ease into without notice": "티 안 나게 스며들다",
   "easily affected": "쉽게 영향을 받는",
+  "easing of grief": "시름을 덜어 줌",
+  "edge of the sea": "바다의 가장자리",
+  "effect not aimed at": "겨냥하지 않은 영향",
   "elderly person": "나이가 든 사람",
   "elected upper chamber member": "뽑힌 윗 의회 구성원",
+  "even more welcome": "더욱 반가운",
+  "even to the touch": "손에 고르게 닿는",
   "examine closely": "바짝 붙어 살펴보다",
+  "example taken": "떼어 낸 보기",
   "experienced": "겪어 본 바가 많은",
+  "expert in one area": "한 갈래에 밝은",
+  "failing in something": "무언가에서 모자란 점",
+  "far from small": "작다고 할 수 없는",
+  "farm hut": "농가의 헛간",
   "fasten shut": "잠가서 닫다",
   "feeling held": "품고 있는 느낌",
   "field of work": "일의 갈래",
+  "field one is best at": "가장 잘하는 갈래",
   "fill fully": "가득 채우다",
   "fill to the limit": "한도까지 채우다",
   "filled with fear": "두려움에 찬",
   "fineness of feeling": "느낌의 섬세함",
+  "fire a weapon": "무기를 발사하다",
+  "fix the place of": "~의 자리를 정하다",
   "flavor with spice": "향신료로 맛을 내다",
   "fluid given off": "내어놓은 액체",
   "fluid in the mouth": "입안의 액체",
+  "fly far above": "저 위로 날다",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
+  "free of debt": "빚이 없는",
+  "free of flaws": "흠이 없는",
   "free of self-interest": "제 이익이 없는",
   "free of stir": "들썩임이 없는",
+  "freedom from fuss": "번거로움이 없음",
   "frightened": "놀라 떠는",
   "frightening": "놀라게 하는",
   "fulfilling": "보람 있는",
+  "full authority of a state": "나라가 가진 온전한 권한",
+  "full of doubt": "의심으로 가득한",
   "full of salt": "소금기가 많은",
+  "fully taken up": "자리가 다 찬",
   "gather up in one go": "한 번에 그러모으다",
+  "get smaller": "작아지다",
   "get ~ under way": "~이 돌아가기 시작하게 하다",
+  "gift to remember by": "기억하려고 주는 선물",
+  "give a sharp click": "딸깍 소리를 내다",
   "give taste to": "~에 맛을 들이다",
   "giving contentment": "흐뭇함을 주는",
   "giving up of something": "무언가를 내놓음",
+  "glide into": "매끄럽게 들어가다",
+  "glide over the text": "글 위를 스쳐 가다",
   "glut": "실컷 채우다",
+  "go back and forth": "오가다",
+  "go by stealth": "남의 눈을 피해 가다",
+  "go under water": "물밑으로 들어가다",
+  "going by that name": "그 이름으로 통하는",
+  "going on at once": "한꺼번에 진행되는",
+  "gracefully thin": "맵시 있게 마른",
   "grant for study": "공부에 주는 지원금",
+  "grave manner": "무게 있는 몸가짐",
   "greet with respect": "예를 갖춰 맞이하다",
+  "group that breeds together": "서로 번식하는 무리",
+  "guard with a cover": "덮어서 지키다",
   "guarding oneself": "제 몸을 지킴",
   "guide on avoiding danger": "위험을 피하는 안내",
+  "habit of not believing": "믿지 않으려는 버릇",
   "half circle": "동그라미의 절반",
   "half of a round shape": "둥근 꼴의 절반",
   "half of a school year": "한 학년의 절반",
+  "hand-written name": "손으로 쓴 이름",
   "handsaw": "손톱질 도구",
+  "happening together": "함께 일어나는",
+  "hard right through": "속까지 굳은",
   "hard to come by": "구하기 어려운",
   "hardly ever": "좀체 ~ 없는",
   "haven": "안식처",
+  "having funds to settle": "갚을 자금이 있는",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
+  "heap upon": "~에 수북이 얹다",
+  "heavy heart": "무거운 마음",
+  "held by one alone": "한 사람만 가진",
+  "high-rise tower": "높이 솟은 탑 모양 건물",
+  "highly developed": "매우 발달한",
+  "hinting at evil": "나쁜 기미를 띤",
   "hired hand": "품을 받고 일하는 사람",
+  "hit flat-handed": "손을 펴서 때리다",
   "hold up": "붙들어 늦추다",
   "household helper": "집안일을 돕는 사람",
   "hugely exciting": "크게 들뜨게 하는",
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
+  "in some degree": "얼마간은",
+  "in the same moment": "같은 순간에",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
+  "join by writing in": "적어 넣어 들어가다",
   "jot down roughly": "대충 적어 두다",
+  "just a bit": "아주 살짝",
+  "keen-edged": "날이 선",
   "keep apart from others": "남들과 떨어뜨려 두다",
   "keep one's dignity": "품위를 지키다",
   "keep out of the way": "걸리지 않게 두다",
   "keep races or sexes apart": "인종이나 성별을 떼어 두다",
   "keeping groups apart": "무리를 떼어 두는 일",
+  "keepsake": "간직하는 물건",
+  "kept in reserve": "여벌로 둔",
+  "kind of living thing": "생물의 갈래",
+  "lack of frills": "덧붙임이 없음",
   "lacking depth": "깊이가 없는",
+  "lacking foresight": "앞을 못 보는",
+  "lance": "기다란 찌르개",
+  "land by the water": "물가의 땅",
   "lay by for later": "나중을 위해 챙겨 두다",
   "leaf through": "책장을 넘겨 가며 보다",
+  "leave in liquid": "물에 담가 두다",
+  "left adrift at sea": "바다에 떠돌게 된",
+  "left over for use": "쓰려고 남겨 둔",
+  "length of time": "시간의 길이",
+  "let fall": "떨어지게 하다",
+  "let fly an arrow": "화살을 날리다",
+  "level in judgment": "판단이 고른",
+  "life apart from others": "남들과 떨어진 삶",
+  "lift and drop the shoulders": "어깨를 올렸다 내리다",
   "lift with a scoop": "국자로 떠올리다",
+  "link two sides": "두 쪽을 이어 주다",
+  "liquid mixture": "액체로 섞인 것",
+  "living alone": "혼자 사는",
+  "long attack from outside": "밖에서 오래 밀어붙이는 공격",
   "long in practice": "오래 익혀 온",
+  "long pointed weapon": "길고 뾰족한 무기",
   "long telling-off": "길게 이어지는 꾸중",
   "look at in fine detail": "잘게 나눠 들여다보다",
   "look over quickly": "빠르게 눈으로 지나가다",
   "looking down on": "아래로 보는",
   "looking uncared for": "돌보지 않은 듯한",
   "loss for a cause": "대의를 위한 손실",
+  "loss of a ship at sea": "바다에서 배를 잃음",
+  "made for one purpose": "한 가지 쓰임에 맞춰진",
   "madness": "광기",
   "make a mark by rubbing": "비벼서 자국을 내다",
+  "make a rough sound asleep": "잠결에 거친 소리를 내다",
+  "make plain": "알기 쉽게 하다",
   "make sorrowful": "애석하게 만들다",
   "make sure of": "틀림없이 해 두다",
   "mark left by a wound": "상처가 남긴 자리",
+  "mark of one's own": "제 것임을 보이는 표",
+  "mass killing": "무리를 죽임",
+  "meant truly": "참으로 한 말인",
+  "melting in water": "물에서 풀리는",
   "member of the senate": "상원에 속한 사람",
+  "memento": "추억거리",
   "mental health": "정신 건강",
+  "messy in work": "일솜씨가 어수선한",
+  "miss on purpose": "일부러 빼먹다",
+  "mix with others": "남들과 어울리다",
   "money for tuition": "수업료에 쓰는 돈",
+  "moral fault": "도리에 어긋난 잘못",
   "moral lecture": "도리를 일러 주는 말",
   "more than two": "둘보다 많은",
   "move fast in haste": "급히 빠르게 움직이다",
+  "move goods illegally": "물건을 불법으로 옮기다",
+  "move to another state": "다른 상태로 옮김",
+  "move without being seen": "보이지 않게 움직이다",
+  "named as such": "그렇게 불리는",
   "named by oneself": "제가 제 이름을 붙인",
+  "narrow in shape": "꼴이 좁은",
+  "narrowed to one field": "한 분야로 좁혀진",
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
   "non-commissioned officer": "임관하지 않은 간부",
+  "none left to buy": "살 것이 남지 않은",
   "not deep": "깊지 않은",
+  "not drunk": "술기운이 없는",
+  "not in use now": "지금 쓰지 않는",
   "not new": "새것이 아닌",
   "not often": "자주 ~ 않는",
   "not on a payroll": "월급을 받지 않는",
   "not religious": "종교와 무관한",
   "not taking all": "다 받지는 않는",
+  "note-taking in signs": "기호로 받아 적기",
+  "nothing but": "다른 것 없이 오직",
+  "of area and place": "면적과 자리에 속한",
   "of bodily pleasure": "몸의 즐거움에 속한",
+  "of small width": "폭이 작은",
+  "of society and culture": "사회와 문화에 속한",
   "of sound mind": "정신이 온전한",
+  "of sound waves": "소리 물결에 속한",
   "of the senses": "감각에 속한",
   "of this world": "이 세상에 속한",
   "office assistant": "사무를 돕는 사람",
   "official approval": "공식 승인",
   "older member of society": "사회의 연장자",
+  "on one's own": "혼자 힘으로",
   "on the face of it": "겉으로 보면",
+  "one and only": "오직 하나뿐인",
   "one division": "하나의 갈림",
+  "one in the second year": "둘째 해에 있는 사람",
   "one of advanced years": "연치가 높은 사람",
   "one of two school terms": "두 기간 중 하나",
   "one who keeps records": "기록을 맡는 사람",
   "one who waits on others": "남을 받드는 사람",
+  "one's own kin": "제 살붙이",
+  "one's written name": "제가 적은 이름",
   "oozing out": "스며 나옴",
   "openness to beauty": "아름다움에 열린 마음",
   "orbiting station": "궤도 위의 기지",
   "out of danger": "위험에서 벗어난",
+  "out of puff": "숨이 가쁜",
+  "painful to touch": "닿으면 아픈",
+  "panting hard": "숨을 몰아쉬는",
   "part cut from a whole": "전체에서 잘라 낸 몫",
   "part cut off": "잘라 낸 몫",
   "part of the economy": "경제의 한 몫",
+  "part one gets": "차지하는 부분",
   "pay tribute to": "~에게 찬사를 보내다",
   "period of meeting": "모임이 이어지는 기간",
+  "pick out from the rest": "나머지에서 집어내다",
   "picky": "까다롭게 고르는",
+  "place in position": "자리에 놓다",
   "place newly lived in": "새로 들어와 사는 곳",
+  "plainness": "꾸밈없음",
+  "plant seed": "씨를 심다",
   "pleasing": "즐거움을 주는",
   "pleasing to the body": "몸에 즐거운",
+  "plot of ground": "땅의 한 구획",
   "point of no more": "더 못 받는 지점",
+  "point to just one": "딱 하나를 짚다",
   "port city": "항만이 있는 도시",
+  "portion due": "받을 몫",
+  "pour in plenty": "넉넉히 쏟다",
+  "pour out": "쏟아 내다",
   "pre-owned": "앞서 주인이 있던",
+  "pretend to have": "가진 척하다",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
   "protection of one's own body": "제 몸을 막아 냄",
+  "pure and simple": "다름 아닌",
   "push behind schedule": "일정보다 뒤로 밀다",
   "put an end to a dispute": "다툼을 끝맺다",
+  "put on an act of": "~인 척 연기하다",
+  "put one's name down for": "~에 이름을 올려 두다",
+  "put seed in the ground": "땅에 씨를 넣다",
   "put to one side": "옆으로 밀어 두다",
   "put ~ into action": "~을 실제로 돌리다",
   "putting others first": "남을 앞세우는",
+  "quake in dread": "두려움에 흔들리다",
   "quick to feel": "느낌이 빠른",
+  "quick writing system": "빠르게 적는 방식",
+  "quiet a distress": "괴로움을 잠잠하게 하다",
+  "quiet of one's own": "제 것인 고요",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
+  "rain down on": "~에 비처럼 내리다",
+  "raise the shoulders": "어깨를 올리다",
   "rarely": "좀처럼 ~ 않는",
+  "rather more than a little": "조금보다는 더",
+  "read fast for the gist": "요지만 빨리 읽다",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
+  "reduce to basics": "기본만 남기다",
+  "refined in taste": "취향이 다듬어진",
+  "relief from pain": "아픔을 덜어 줌",
   "responsive to touch": "닿는 것에 반응하는",
+  "rest with eyes shut": "눈을 감고 쉼",
   "rich tang": "짙은 맛깔",
+  "right to rule oneself": "스스로 다스릴 권리",
+  "rise high up": "높이 솟아오르다",
+  "rise or fall at an angle": "비스듬히 오르내리다",
+  "rise steeply": "가파르게 오르다",
+  "rising ground": "솟아오른 땅",
+  "rocket ship": "로켓으로 가는 배",
+  "roof over one's head": "머리를 덮어 줄 지붕",
   "rub hard": "세게 비비다",
   "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
+  "rumble while sleeping": "자면서 그렁거리다",
   "run one's eye over": "눈으로 쭉 지나가다",
+  "run to and fro": "이리저리 다니다",
   "run-down": "허름해진",
   "running one's own trade": "제 장사를 꾸리는",
   "rush about": "부리나케 돌아다니다",
   "safe place for animals": "동물이 지내는 안전한 곳",
   "safety lesson": "안전 수업",
+  "said to be": "~라고 하는",
   "salt-laden": "소금이 섞인",
   "salty": "짠",
+  "sample for study": "살펴보려고 뽑은 것",
   "saving from sin": "죄에서 건져 냄",
+  "scatter grain": "곡식 씨를 흩다",
+  "science of social life": "사회 생활을 다루는 학문",
   "scour with a brush": "솔로 닦아 내다",
   "scrawl": "휘갈겨 적다",
   "screen against light": "빛을 막는 가림막",
+  "screen from danger": "위험에서 가려 주다",
+  "second-year student": "둘째 해 학생",
   "secret plan": "몰래 세운 계획",
+  "seeing only the near": "가까운 것만 보는",
+  "seek by asking": "물어 가며 구하다",
+  "seize quickly": "재빨리 붙잡다",
   "self-styled": "스스로 내세운",
+  "send a bullet": "탄알을 보내다",
   "set apart": "따로 떼어 두다",
   "set apart by group": "무리별로 떼어 놓다",
   "set apart for god": "신에게 바쳐진",
+  "set in a spot": "한 자리에 앉히다",
   "set order": "정해진 차례",
   "settle in for a while": "한동안 눌러앉다",
+  "shake with cold": "추위로 떨다",
+  "shake with horror": "끔찍함에 떨다",
+  "shape against the light": "빛을 등진 꼴",
+  "sharp fall in trade": "거래의 급한 떨어짐",
+  "sharp in taste": "맛이 톡 쏘는",
+  "shed tears noisily": "시끄럽게 눈물을 흘리다",
   "shelter from sun": "볕을 가려 주는 곳",
+  "shoot up fast": "빠르게 치솟다",
+  "show one does not care": "대수롭지 않다는 몸짓을 하다",
   "showing good judgment": "판단이 옳은",
   "shut away": "가둬 두다",
+  "shut with a bang": "소리 나게 닫다",
   "shut with wax": "밀랍으로 막다",
   "shyness before others": "남 앞에서의 수줍음",
+  "side by side in time": "때를 나란히 하는",
   "sift out": "체로 골라내다",
+  "sinking of a vessel": "배가 가라앉음",
   "sitting of a body": "기구가 모여 앉는 때",
   "size of a thing": "사물의 크기",
   "slice": "얇게 썬 쪽",
+  "slim in build": "몸매가 호리호리한",
+  "slip into": "슬그머니 들어가다",
+  "slow to believe": "쉽게 믿지 않는",
+  "slow to move": "움직임이 더딘",
+  "smack": "철썩 치다",
+  "smash into bits": "조각조각 깨뜨리다",
+  "smell in short breaths": "짧게 숨 쉬며 냄새를 맡다",
+  "sneak past customs": "세관을 몰래 지나다",
   "sneering": "코웃음 치는",
+  "snuffle": "코를 훌쩍이다",
+  "social and cultural at once": "사회와 문화를 함께 보는",
+  "solid matter": "고체",
   "some in number": "수가 얼마쯤 되는",
   "soundness of mind": "정신의 온전함",
   "spacecraft in orbit": "궤도를 도는 비행체",
+  "spend time together": "함께 시간을 보내다",
   "spit": "뱉는 침",
   "spittle": "입에서 나온 침",
   "split into parts": "여러 몫으로 쪼갬",
   "spooky": "으스스한",
+  "spot for building": "집을 세울 자리",
   "squad leader": "분대를 이끄는 사람",
   "standing alone": "홀로 서 있는",
   "standing out most": "가장 도드라지는",
   "start a journey": "길을 나서다",
   "start ~ going": "~이 굴러가게 하다",
+  "state exactly": "똑똑히 밝히다",
+  "state of being alone": "혼자인 상태",
   "state of being full": "가득 찬 상태",
   "state of being shut away": "틀어박혀 있는 상태",
+  "stenography": "기호 필기법",
   "stirring the senses": "감각을 흔드는",
+  "stranded after a sinking": "배가 가라앉아 발이 묶인",
+  "stretch from end to end": "끝에서 끝까지의 뻗침",
+  "strike with the palm": "손바닥으로 치다",
   "string of words": "낱말을 이은 줄",
+  "student of year two": "이 년차 학생",
   "study award": "학업에 주는 상금",
+  "study of human groups": "사람 무리를 살피는 학문",
+  "study of society": "사회를 살피는 학문",
+  "supreme power": "가장 높은 권력",
+  "surrounding of a town": "고을을 둘러쌈",
   "surroundings of a scene": "장면을 둘러싼 것들",
   "take by force": "힘으로 빼앗다",
   "take hold": "뿌리를 내리다",
+  "take in and hide": "받아들여 숨겨 주다",
+  "take on a burden": "짐을 짊어지다",
+  "take on social ways": "사회의 방식을 익히다",
+  "take out a place in": "~에 자리를 잡아 두다",
+  "take with a jerk": "확 잡아당기다",
   "talk of the town": "장안의 이야깃거리",
+  "tart": "새콤한",
   "taste one enjoys": "즐기는 맛",
+  "tender and raw": "쓰라리고 여린",
   "tender mood": "다정한 마음결",
   "term of study": "공부하는 기간",
+  "test piece": "시험에 쓰는 조각",
+  "that much improved": "그만큼 나아진",
   "thin in amount": "양이 얇은",
+  "thin in form": "꼴이 가는",
   "thing everyone speaks of": "모두가 입에 올리는 것",
+  "thinking no further ahead": "더 멀리 생각하지 않는",
   "throw out as useless": "쓸모없다고 내버리다",
+  "throwing pole with a blade": "날이 달린 던지는 장대",
+  "tilt of the land": "땅의 기울어짐",
   "time a court is open": "법정이 열려 있는 때",
+  "time of sleeping": "잠자는 동안",
+  "to a small degree": "작은 정도로",
   "to all appearances": "누가 봐도 그렇게",
   "to do with feeling": "느낌에 관한",
   "to do with hygiene": "위생에 관한",
+  "to do with people and custom": "사람살이와 풍습에 관한",
+  "to do with sound": "소리에 관한",
+  "to do with space": "공간에 관한",
+  "together in time": "때를 맞춰 함께",
+  "too little to go round": "돌아갈 만큼이 못 되는",
   "toothed blade": "이가 난 날",
   "town with a harbor": "항만을 둔 고을",
+  "tremble": "부들부들 떨다",
+  "tremble all over": "온몸을 떨다",
   "try to find": "찾아내려 애쓰다",
   "try to get": "얻으려 애쓰다",
+  "turn of duty": "맡는 차례",
+  "turn off at the source": "근원에서 잠그다",
+  "unable to breathe easily": "숨쉬기가 어려운",
   "unease at being watched": "보여지는 데서 오는 불편함",
+  "until this point": "이 시점까지",
+  "unwanted result": "바라지 않은 결과",
+  "up to now": "이제까지",
   "upper-house lawmaker": "윗 의회의 입법자",
   "used": "남이 쓰던",
   "using ridicule": "조롱을 써서",
+  "very tall building": "아주 높은 건물",
+  "very thin": "몹시 마른",
+  "vessel for space travel": "우주를 오가는 배",
   "vie with others": "남들과 겨루다",
   "view coloured by feeling": "느낌이 물든 생각",
   "view of the land": "땅이 보이는 모습",
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
   "waste water": "버려지는 물",
+  "way out of trouble": "곤란에서 벗어날 길",
+  "weak point": "약한 데",
+  "weep aloud": "소리 내어 울다",
+  "weight of a rite": "의식이 지닌 무게",
+  "weighty in effect": "영향이 무거운",
+  "wet right through": "속까지 적시다",
+  "what one does best": "제일 잘하는 것",
   "win over by charm": "매력으로 끌어들이다",
+  "with a keen edge": "날이 선 채로",
+  "without company": "함께할 이가 없는",
   "without shame": "부끄러움 없이",
   "witty attack in writing": "글로 재치 있게 찌름",
   "words making a full thought": "한 생각을 다 담은 말",
   "working for oneself": "제 일을 제가 하는",
+  "worldly-wise": "세상 물정에 밝은",
   "worn and poor": "닳고 볼품없는",
-  "write in a hurry": "급하게 적다"
+  "wreck on the rocks": "암초에 부서짐",
+  "write in a hurry": "급하게 적다",
+  "wrongdoing against god": "신을 거스르는 잘못",
+  "young growth": "어린 싹"
 });

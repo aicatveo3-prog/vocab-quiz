@@ -456,8 +456,11 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '액체' 와 같은 갈래다. fluid(syn) 가 참조한다.
      원본의 형용사 갈래('액체 형태의')는 pos 가 n 이라 담지 못했다. */
+  /* ★ ant 의 "solid" 를 "solid matter" 로 바꿨다. solid 는 S 세트에서 형용사
+     '단단한, 입방의' 로 선다 — 명사인 이 표제어의 반의어 자리에 형용사가
+     들어가게 된다. 뜻이 '고체' 인 명사 표현으로 갈았다. */
   { word:"liquid", pron:"리퀴드", pos:"n", level:"B1", meanings:["액체"],
-    syn:["fluid","solution","watery substance"], ant:["solid"],
+    syn:["fluid","solution","watery substance"], ant:["solid matter"],
     ex:[{ s:"Pour the {{}} slowly into the flask.", f:"liquid", ko:"그 액체를 플라스크에 천천히 부으세요." }] },
 
   /* liquid 와 앞 네 글자가 같고 품사도 둘 다 n 이지만 뜻이 '액체' 와 '독한 술' 로
@@ -831,14 +834,11 @@ Object.assign(window.GLOSS, {
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "silvered glass": "은을 입힌 유리",
-  "skip": "건너뛰다",
   "skulk": "몰래 숨어 다니다",
   "slacken": "늘어지게 하다",
   "slant": "비스듬해지다",
   "soaring": "치솟은",
-  "solitary": "홀로 지내는",
   "song words": "노래 가사",
-  "sound": "빈틈없는, 타당한",
   "spearhead": "앞장서다",
   "spirits": "증류주",
   "spring from": "뛰어 벗어나다",

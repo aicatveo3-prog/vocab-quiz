@@ -1313,7 +1313,6 @@ Object.assign(window.GLOSS, {
   "shocking": "충격을 주는",
   "short pleasure trip": "가벼운 놀이 여행",
   "singly": "하나씩",
-  "sinister": "음험한",
   "skip over": "건너뛰다",
   "sky-viewing post": "하늘을 보는 자리",
   "slanted": "한쪽으로 기울어진",

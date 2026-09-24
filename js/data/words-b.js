@@ -91,8 +91,12 @@ window.VOCAB_B = [
     syn:["yelp","howl","yap"],
     ex:[{ s:"The dog began to {{}} at every stranger.", f:"bark", ko:"그 개는 낯선 사람마다 짖기 시작했다." }] },
 
+  /* ★ syn 의 "shed" 를 "farm hut" 으로 바꿨다. 사전이 shed 를 '흘리다; 헛간'
+     으로 적어 두었는데 S 세트에서는 동사 '흘리다' 로 선다 — 명사 목록에 동사가
+     끼게 된다. 남은 "stable" 도 S 세트에서 형용사 '안정된' 으로 서므로
+     챕터 14 에서 한 번 더 갈아야 한다(지금 떼면 발음만 남은 유령 키가 된다). */
   { word:"barn", pron:"반", pos:"n", level:"B1", meanings:["헛간","광"],
-    syn:["shed","stable","storehouse"],
+    syn:["farm hut","stable","storehouse"],
     ex:[{ s:"The farmer stored the hay in the {{}}.", f:"barn", ko:"농부는 건초를 헛간에 보관했다." }] },
 
   { word:"barometer", pron:"버라미터", pos:"n", level:"C1", meanings:["기압계","지표"],
@@ -730,8 +734,12 @@ window.VOCAB_B = [
     syn:["newlywed","wife-to-be","spouse"], ant:["groom"],
     ex:[{ s:"The {{}} wore her grandmother's wedding dress.", f:"bride", ko:"신부는 할머니의 웨딩드레스를 입었다." }] },
 
+  /* ★ syn 의 "span" 을 "link two sides" 로 바꿨다. 사전이 '기간; 걸치다' 로
+     명사와 동사를 섞어 두었는데, 참조 다섯 곳 가운데 breadth·distance·duration·
+     length 넷이 명사여서 S 세트에서는 명사 '기간' 으로 선다 — 이 동사 목록에만
+     맞지 않게 된다. */
   { word:"bridge", pron:"브리지", pos:"v", level:"B2", meanings:["다리를 놓다","이어주다"],
-    syn:["connect","span","link"], ant:["divide"],
+    syn:["connect","link two sides","link"], ant:["divide"],
     ex:[{ s:"The program aims to {{}} the gap between rich and poor.", f:"bridge", ko:"그 프로그램은 부유층과 빈곤층의 격차를 이어주는 것을 목표로 한다." }] },
 
   { word:"brief", pron:"브리프", pos:"adj", level:"B1", meanings:["잠시 동안의","간단한"],
@@ -815,8 +823,11 @@ window.VOCAB_B = [
     syn:["overflow","brim","be bursting"], ant:["be subdued"] },
 
   /* ── bu ────────────────────────────────────── */
+  /* ★ syn 의 "shoot" 를 "young growth" 로 바꿨다. 사전이 '싹; 쏘다' 였는데
+     S 세트에서는 동사 '쏘다' 로 선다. 남은 "sprout" 도 동사 '싹트다' 로 서므로
+     챕터 14 에서 한 번 더 갈아야 한다. */
   { word:"bud", pron:"버드", pos:"n", level:"B1", meanings:["싹","봉오리"],
-    syn:["sprout","shoot","germ"],
+    syn:["young growth","sprout","germ"],
     ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
 
   { word:"budget", pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
@@ -1007,14 +1018,9 @@ Object.assign(window.GLOSS, {
   "resonate with":"~에게 공감을 얻다",
   "secondhand":"중고의",
   "setback":"차질, 방해",
-  "sharp":"날카로운, 선명한",
   "silence":"침묵, 정적",
-  "slightly":"약간, 조금",
   "slim down":"살을 빼다, 규모를 줄이다",
-  "sluggish":"느릿한, 부진한",
   "smolder":"연기만 내며 타다",
-  "smooth":"매끄러운, 평탄한",
-  "solvent":"지급 능력이 있는",
   "stand up":"일어서다",
   "stay out of":"~에 관여하지 않다",
   "straighten":"곧게 하다, 펴다",

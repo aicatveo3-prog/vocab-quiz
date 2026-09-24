@@ -605,8 +605,11 @@ window.VOCAB_I = [
 
   /* 원본은 '기울다; 경사면' 으로 동사와 명사가 갈린다. 동사 쪽으로 모았다.
      inclination 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
+  /* ★ syn 의 "slope" 를 "rise or fall at an angle" 로 바꿨다. 사전이 slope 를
+     동사 '비탈지다' 로 적어 두었는데, 원본이 명사 쪽이라 S 세트에서는
+     '비탈, 기울기' 로 선다 — 동사 목록에 명사가 끼게 된다. */
   { word:"incline", pron:"인클라인", pos:"v", level:"B2", meanings:["기울다","기울이다"],
-    syn:["lean","slope","tilt"],
+    syn:["lean","rise or fall at an angle","tilt"],
     ex:[{ s:"The path begins to {{}} steeply after the bridge.", f:"incline", ko:"그 길은 다리를 지나면 급하게 기울기 시작한다." }] },
 
   /* 승격 ① — GLOSS '포함하다' 와 글자까지 같다. 참조가 5곳(comprise·consist·
@@ -2105,7 +2108,6 @@ Object.assign(window.GLOSS, {
   "sign": "징후, 표지",
   "sixth sense": "여섯 번째 감각",
   "sleeplessness": "잠들지 못함",
-  "slope": "비탈지다",
   "slot in": "끼워 맞추다",
   "sneak into": "몰래 들어가다",
   "social": "사교의",

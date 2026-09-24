@@ -239,8 +239,12 @@ window.VOCAB = [
     syn:["attain","accomplish","reach"], ant:["fail"],
     ex:[{ s:"She worked hard to {{}} her personal best.", f:"achieve", ko:"그녀는 개인 최고 기록을 달성하려고 열심히 노력했다." }] },
 
+  /* ★ syn 의 "solvent" 를 "dissolving agent" 로 바꿨다. 원본(교재) 이 solvent 를
+     '용액' 으로 적어 두었지만 그것은 solution 의 뜻이다. solvent 의 실제 뜻은
+     형용사 '지급 능력이 있는' 이어서 S 세트에서 그렇게 세웠다 — 참조 bankrupt·
+     insolvent 도 그쪽이다. 여기만 화학 쪽 표현으로 갈았다. */
   { word:"acid", pron:"애시드", pos:"n", level:"B2", meanings:["산","산성 물질"],
-    syn:["corrosive","solvent","etchant"], ant:["base"],
+    syn:["corrosive","dissolving agent","etchant"], ant:["base"],
     ex:[{ s:"Rainwater mixed with pollution becomes a weak {{}}.", f:"acid", ko:"오염 물질과 섞인 빗물은 약한 산이 된다." }] },
 
   { word:"acknowledge", pron:"어크널리지", pos:"v", level:"B2", meanings:["인정하다","승인하다"],
@@ -1742,7 +1746,6 @@ window.GLOSS = {
   "satisfied":"만족한",
   "scarcity":"희소, 드묾",
   "selfish":"이기적인",
-  "sociable":"사교적인",
   "stench":"악취",
   "stranger":"낯선 사람",
   "strip":"벗기다",
