@@ -992,7 +992,6 @@ Object.assign(window.GLOSS, {
   "persistent":"잘 분해되지 않는, 끈질긴",
   "pleasant":"즐거운, 기분 좋은",
   "praise":"칭찬하다",
-  "prevent":"막다, 예방하다",
   "prompt":"즉각적인, 신속한",
   "protect":"보호하다",
   "recover from":"~에서 회복하다",

@@ -304,8 +304,11 @@ window.VOCAB_H = [
     syn:["ranking","pecking order","class system"],
     ex:[{ s:"Decisions flow down through a rigid corporate {{}}.", f:"hierarchy", ko:"의사결정은 엄격한 기업 계층 구조를 따라 내려간다." }] },
 
+  /* 반의어를 budget 에서 low-grade 로 바꿨다. budget 은 표제어(예산 · n)라서
+     이 자리에 '예산' 이 떠 있었다 — '최고급의' 의 반대말로는 말이 안 된다.
+     budget 의 형용사 뜻(저가의)을 노린 자리였는데 명사 표제어가 가로챈 것이다. */
   { word:"high-end", pron:"하이 엔드", pos:"adj", level:"B2", meanings:["최고급의","최고가인"],
-    syn:["premium","upscale","luxury"], ant:["budget"],
+    syn:["premium","upscale","luxury"], ant:["low-grade"],
     ex:[{ s:"The brand is known for its {{}} audio equipment.", f:"high-end", ko:"그 브랜드는 최고급 음향 장비로 유명하다." }] },
 
   /* 승격 ① — GLOSS '강조하다; 하이라이트' 와 같은 갈래다. accentuate·emphasize
@@ -630,10 +633,8 @@ Object.assign(window.GLOSS, {
   "perilous":"위태로운",
   "piercing":"찌르는 듯한",
   "plant-eater":"초식동물",
-  "postulate":"상정하다",
   "powerless":"무력한",
   "prejudice attack":"편견에 의한 공격",
-  "premium":"최고급의",
   "profane":"세속적인",
   "ranking":"순위",
   "reaping":"수확",
