@@ -598,7 +598,122 @@ window.VOCAB_S = [
   /* 승격 ㊸ — 사전 글자 유지. 참조 chronology(C) 의 화면은 바뀌지 않는다. */
   { word:"sequence", pron:"시퀀스", pos:"n", level:"B2", meanings:["연속","순서"],
     syn:["chronology","one after another","set order"],
-    ex:[{ s:"Keep the pages in the right {{}}.", f:"sequence", ko:"쪽들을 맞는 순서로 두어라." }] }
+    ex:[{ s:"Keep the pages in the right {{}}.", f:"sequence", ko:"쪽들을 맞는 순서로 두어라." }] },
+
+  /* ── 챕터 6 ────────────────────────────────────── */
+  /* ⚠ 사전값이 아예 틀려서 참조를 손질한 자리가 둘이다.
+       embed(E)  syn "set in" → "bed into place"
+         사전이 set in 의 뜻을 '끼워 넣다, 박아 넣다' 로 적어 두고 있었다.
+         embed 자신의 뜻을 그대로 베낀 것이다. set in 의 실제 뜻은
+         '시작되다, 자리 잡다' 라서 그대로 승격할 수 없었다.
+       darken(D) syn "shade" → "cast a shadow on"
+         shade 는 원본이 명사 쪽이고 사전은 동사가 앞이었다. 명사로 세우면
+         동사 목록에 명사가 끼게 되므로 그 자리를 동사 표현으로 갈았다.
+
+     severe(심각한, 엄격한) 는 둘째 갈래를 strict(엄격한 · 챕터 17)·
+     stern(엄격한, 단호한 · 챕터 16) 과 글자까지 맞춰 두었다 — 셋이 서로의
+     오답에서 자동으로 빠진다.
+     shallow(얕은, 피상적인) 도 superficial(피상적인 · 챕터 20) 과 같은 방식이다.
+     session(회기, 개정 기간) 은 챕터 5 의 semester(학기) 와 갈랐다. */
+
+  /* 승격 ㊹ — 사전 글자 유지. 참조 contented(C) 의 화면은 바뀌지 않는다.
+     '고요한' 은 still(여전히 · 챕터 16) 과 갈라 둔 자리다. */
+  { word:"serene", pron:"서린", pos:"adj", level:"C1", meanings:["고요한","평화로운"],
+    syn:["contented","calm and untroubled","free of stir"],
+    ex:[{ s:"The lake looked {{}} at dawn.", f:"serene", ko:"그 호수는 새벽에 고요해 보였다." }] },
+
+  /* 원본은 '하사관; 경사; 병장' 세 갈래였다. 하나로 줄였다. */
+  { word:"sergeant", pron:"사전트", pos:"n", level:"C1", meanings:["하사관"],
+    syn:["army officer of low rank","non-commissioned officer","squad leader"],
+    ex:[{ s:"The {{}} called the roll.", f:"sergeant", ko:"그 하사관이 점호를 했다." }] },
+
+  { word:"sermon", pron:"서먼", pos:"n", level:"C1", meanings:["설교","잔소리"],
+    syn:["church talk","moral lecture","long telling-off"],
+    ex:[{ s:"The priest gave a short {{}}.", f:"sermon", ko:"그 사제는 짧은 설교를 했다." }] },
+
+  /* 승격 ㊺ — 사전은 '하인, 종' 이었다. 참조가 없어 원본대로 '하인, 고용인'
+     으로 두었다 — 화면이 바뀌는 곳은 없다. */
+  { word:"servant", pron:"서번트", pos:"n", level:"B1", meanings:["하인","고용인"],
+    syn:["household helper","one who waits on others","hired hand"],
+    ex:[{ s:"The old house kept one {{}}.", f:"servant", ko:"그 낡은 집은 하인 한 명을 두었다." }] },
+
+  /* 챕터 5 의 semester(학기) 와 갈랐다 — 원본의 '학기' 는 그쪽 자리다. */
+  { word:"session", pron:"세션", pos:"n", level:"B2", meanings:["회기","개정 기간"],
+    syn:["sitting of a body","period of meeting","time a court is open"],
+    ex:[{ s:"Parliament opens a new {{}} today.", f:"session", ko:"의회는 오늘 새 회기를 연다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"set ~ in motion", pron:"셋 인 모션", pos:"phr", level:"C1", meanings:["~을 움직이게 하다"],
+    syn:["start ~ going","get ~ under way","put ~ into action"] },
+
+  /* put aside(제쳐놓다 · P) 와는 다르다 — 이쪽은 자리를 옮겨 두는 쪽이다. */
+  { word:"set aside", pron:"셋 어사이드", pos:"phr", level:"B2", meanings:["한쪽으로 치워 두다"],
+    syn:["put to one side","keep out of the way","lay by for later"] },
+
+  { word:"set back", pron:"셋 백", pos:"phr", level:"B2", meanings:["방해하다","지연시키다"],
+    syn:["hold up","delay the progress of","push behind schedule"] },
+
+  /* 승격 ㊻ — ⚠ 사전값 '끼워 넣다, 박아 넣다' 는 뜻이 아예 달랐다(embed 의 뜻을
+     베낀 것이다). 실제 뜻으로 세우고 참조 embed(E) 한 곳을 손질했다. */
+  { word:"set in", pron:"셋 인", pos:"phr", level:"B2", meanings:["시작되다","자리 잡다"],
+    syn:["begin and stay","take hold","settle in for a while"] },
+
+  /* 승격 ㊼ — 사전 글자 유지. 참조 embark(E) 의 화면은 바뀌지 않는다. */
+  { word:"set out", pron:"셋 아웃", pos:"phr", level:"B1", meanings:["출발하다","착수하다"],
+    syn:["embark","start a journey","begin a task"] },
+
+  /* 승격 ㊽ — 사전 글자 유지. 참조 context(C)·environment(E) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"setting", pron:"세팅", pos:"n", level:"B2", meanings:["환경","배경"],
+    syn:["context","environment","surroundings of a scene"],
+    ex:[{ s:"The novel has a rural {{}}.", f:"setting", ko:"그 소설은 시골을 배경으로 한다." }] },
+
+  /* 승격 ㊾ — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
+  { word:"settle", pron:"세틀", pos:"v", level:"B1", meanings:["정착하다","해결하다"],
+    syn:["make one's home","put an end to a dispute","come to rest"],
+    ex:[{ s:"They chose to {{}} near the river.", f:"settle", ko:"그들은 강 가까이에 정착하기로 했다." }] },
+
+  /* 승격 ㊿ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 colony(C)·compromise(C)·
+     immigration(I) 세 곳의 설명이 '정착지; 합의' 에서 '정착지, 합의' 가 된다. */
+  { word:"settlement", pron:"세틀먼트", pos:"n", level:"B2", meanings:["정착지","합의"],
+    syn:["colony","compromise","place newly lived in"],
+    ex:[{ s:"A small {{}} grew by the port.", f:"settlement", ko:"항구 옆에 작은 정착지가 자랐다." }] },
+
+  { word:"several", pron:"세버럴", pos:"adj", level:"B1", meanings:["몇몇의"],
+    syn:["a few","more than two","some in number"],
+    ex:[{ s:"{{}} people asked the same question.", f:"Several", ko:"몇몇 사람이 같은 질문을 했다." }] },
+
+  /* 승격 51 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 acute(A)·harsh(H)·
+     intense(I) 세 곳의 설명이 '심각한; 엄격한' 에서 '심각한, 엄격한' 이 된다.
+     둘째 갈래는 strict(챕터 17)·stern(챕터 16) 과 글자를 맞춰 두었다. */
+  { word:"severe", pron:"서비어", pos:"adj", level:"B1", meanings:["심각한","엄격한"],
+    syn:["acute","harsh","intense"],
+    ex:[{ s:"The region faced a {{}} drought.", f:"severe", ko:"그 지역은 심각한 가뭄을 겪었다." }] },
+
+  { word:"sewage", pron:"수이지", pos:"n", level:"C1", meanings:["하수"],
+    syn:["waste water","drain water","dirty water from homes"],
+    ex:[{ s:"The plant treats city {{}}.", f:"sewage", ko:"그 시설은 도시 하수를 처리한다." }] },
+
+  { word:"shabby", pron:"섀비", pos:"adj", level:"C1", meanings:["초라한","누추한"],
+    syn:["worn and poor","run-down","looking uncared for"],
+    ex:[{ s:"He wore a {{}} old coat.", f:"shabby", ko:"그는 초라한 낡은 외투를 입었다." }] },
+
+  /* 승격 52 — 사전은 '그늘지게 하다; 그늘' 로 동사가 앞이었다. 원본이 명사
+     쪽이어서 명사로 세우고, 유일한 참조 darken(D) 의 그 자리를 동사 표현
+     'cast a shadow on' 으로 갈았다. */
+  { word:"shade", pron:"셰이드", pos:"n", level:"B1", meanings:["그늘","빛 가리개"],
+    syn:["shelter from sun","screen against light","cool dark spot"],
+    ex:[{ s:"We sat in the {{}} of a tree.", f:"shade", ko:"우리는 나무 그늘에 앉았다." }] },
+
+  /* superficial(피상적인 · 챕터 20) 과 둘째 갈래를 글자까지 맞춰 두었다. */
+  { word:"shallow", pron:"섈로", pos:"adj", level:"B1", meanings:["얕은","피상적인"],
+    syn:["not deep","barely below the top","lacking depth"], ant:["profound"],
+    ex:[{ s:"The stream is {{}} here.", f:"shallow", ko:"그 개울은 여기가 얕다." }] },
+
+  /* 승격 53 — 사전 단일값 유지. 참조 impudent(I) 의 화면은 바뀌지 않는다. */
+  { word:"shameless", pron:"셰임리스", pos:"adj", level:"C1", meanings:["부끄러움을 모르는"],
+    syn:["impudent","without shame","brazen"],
+    ex:[{ s:"It was a {{}} lie.", f:"shameless", ko:"그것은 부끄러움을 모르는 거짓말이었다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -612,20 +727,28 @@ Object.assign(window.GLOSS, {
   "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
+  "army officer of low rank": "계급이 낮은 군 간부",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
+  "barely below the top": "표면 바로 아래인",
   "barely enough": "겨우 될 만한",
+  "bed into place": "자리에 박아 앉히다",
+  "begin a task": "일에 손을 대다",
+  "begin and stay": "시작해 이어지다",
   "block by sorting": "가려서 막다",
   "body circling a planet": "행성을 도는 천체",
   "branch of industry": "산업의 한 가지",
   "bring up from water": "물에서 끌어올리다",
+  "calm and untroubled": "잔잔하고 흔들림 없는",
   "careful check": "꼼꼼한 확인",
   "carried by nerves": "신경으로 전해지는",
+  "cast a shadow on": "~에 그림자를 드리우다",
   "causing a stir": "들썩이게 하는",
   "causing fear": "두려움을 일으키는",
   "cheer": "기운을 북돋우다",
   "choice made": "내린 고름",
   "choosing with care": "조심해서 고르는",
+  "church talk": "교회에서 하는 말씀",
   "claiming the role oneself": "그 자리를 제 것이라 하는",
   "claw at": "손톱으로 할퀴다",
   "clean and free of germs": "균이 없이 깨끗한",
@@ -635,20 +758,25 @@ Object.assign(window.GLOSS, {
   "close look": "바짝 들여다봄",
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
+  "come to rest": "자리를 잡고 멈추다",
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "contemptuous": "업신여기는",
+  "cool dark spot": "시원하고 어두운 자리",
   "court ruling": "법정이 내린 결정",
   "cutting tool with teeth": "이가 난 자르는 도구",
   "damage on purpose": "고의로 해를 입히다",
   "dazzling to see": "보기에 눈부신",
+  "delay the progress of": "~의 진행을 늦추다",
   "delicacy of response": "반응의 고움",
   "deliverance": "해방, 벗어남",
   "dig out and raise": "파서 들어 올리다",
+  "dirty water from homes": "집에서 나온 더러운 물",
   "disappointing": "실망스러운",
   "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
   "division by race": "인종에 따른 갈림",
+  "drain water": "배수로로 흐르는 물",
   "drains and clean water": "배수와 깨끗한 물",
   "easily affected": "쉽게 영향을 받는",
   "elderly person": "나이가 든 사람",
@@ -669,11 +797,13 @@ Object.assign(window.GLOSS, {
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
   "free of self-interest": "제 이익이 없는",
+  "free of stir": "들썩임이 없는",
   "frightened": "놀라 떠는",
   "frightening": "놀라게 하는",
   "fulfilling": "보람 있는",
   "full of salt": "소금기가 많은",
   "gather up in one go": "한 번에 그러모으다",
+  "get ~ under way": "~이 돌아가기 시작하게 하다",
   "give taste to": "~에 맛을 들이다",
   "giving contentment": "흐뭇함을 주는",
   "giving up of something": "무언가를 내놓음",
@@ -691,6 +821,9 @@ Object.assign(window.GLOSS, {
   "haven": "안식처",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
+  "hired hand": "품을 받고 일하는 사람",
+  "hold up": "붙들어 늦추다",
+  "household helper": "집안일을 돕는 사람",
   "hugely exciting": "크게 들뜨게 하는",
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
@@ -700,14 +833,19 @@ Object.assign(window.GLOSS, {
   "jot down roughly": "대충 적어 두다",
   "keep apart from others": "남들과 떨어뜨려 두다",
   "keep one's dignity": "품위를 지키다",
+  "keep out of the way": "걸리지 않게 두다",
   "keep races or sexes apart": "인종이나 성별을 떼어 두다",
   "keeping groups apart": "무리를 떼어 두는 일",
+  "lacking depth": "깊이가 없는",
+  "lay by for later": "나중을 위해 챙겨 두다",
   "leaf through": "책장을 넘겨 가며 보다",
   "lift with a scoop": "국자로 떠올리다",
   "long in practice": "오래 익혀 온",
+  "long telling-off": "길게 이어지는 꾸중",
   "look at in fine detail": "잘게 나눠 들여다보다",
   "look over quickly": "빠르게 눈으로 지나가다",
   "looking down on": "아래로 보는",
+  "looking uncared for": "돌보지 않은 듯한",
   "loss for a cause": "대의를 위한 손실",
   "madness": "광기",
   "make a mark by rubbing": "비벼서 자국을 내다",
@@ -717,10 +855,14 @@ Object.assign(window.GLOSS, {
   "member of the senate": "상원에 속한 사람",
   "mental health": "정신 건강",
   "money for tuition": "수업료에 쓰는 돈",
+  "moral lecture": "도리를 일러 주는 말",
+  "more than two": "둘보다 많은",
   "move fast in haste": "급히 빠르게 움직이다",
   "named by oneself": "제가 제 이름을 붙인",
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
+  "non-commissioned officer": "임관하지 않은 간부",
+  "not deep": "깊지 않은",
   "not new": "새것이 아닌",
   "not often": "자주 ~ 않는",
   "not on a payroll": "월급을 받지 않는",
@@ -738,6 +880,7 @@ Object.assign(window.GLOSS, {
   "one of advanced years": "연치가 높은 사람",
   "one of two school terms": "두 기간 중 하나",
   "one who keeps records": "기록을 맡는 사람",
+  "one who waits on others": "남을 받드는 사람",
   "oozing out": "스며 나옴",
   "openness to beauty": "아름다움에 열린 마음",
   "orbiting station": "궤도 위의 기지",
@@ -746,7 +889,9 @@ Object.assign(window.GLOSS, {
   "part cut off": "잘라 낸 몫",
   "part of the economy": "경제의 한 몫",
   "pay tribute to": "~에게 찬사를 보내다",
+  "period of meeting": "모임이 이어지는 기간",
   "picky": "까다롭게 고르는",
+  "place newly lived in": "새로 들어와 사는 곳",
   "pleasing": "즐거움을 주는",
   "pleasing to the body": "몸에 즐거운",
   "point of no more": "더 못 받는 지점",
@@ -755,6 +900,10 @@ Object.assign(window.GLOSS, {
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
   "protection of one's own body": "제 몸을 막아 냄",
+  "push behind schedule": "일정보다 뒤로 밀다",
+  "put an end to a dispute": "다툼을 끝맺다",
+  "put to one side": "옆으로 밀어 두다",
+  "put ~ into action": "~을 실제로 돌리다",
   "putting others first": "남을 앞세우는",
   "quick to feel": "느낌이 빠른",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
@@ -767,6 +916,7 @@ Object.assign(window.GLOSS, {
   "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
   "run one's eye over": "눈으로 쭉 지나가다",
+  "run-down": "허름해진",
   "running one's own trade": "제 장사를 꾸리는",
   "rush about": "부리나케 돌아다니다",
   "safe place for animals": "동물이 지내는 안전한 곳",
@@ -776,34 +926,44 @@ Object.assign(window.GLOSS, {
   "saving from sin": "죄에서 건져 냄",
   "scour with a brush": "솔로 닦아 내다",
   "scrawl": "휘갈겨 적다",
+  "screen against light": "빛을 막는 가림막",
   "secret plan": "몰래 세운 계획",
   "self-styled": "스스로 내세운",
   "set apart": "따로 떼어 두다",
   "set apart by group": "무리별로 떼어 놓다",
   "set apart for god": "신에게 바쳐진",
   "set order": "정해진 차례",
+  "settle in for a while": "한동안 눌러앉다",
+  "shelter from sun": "볕을 가려 주는 곳",
   "showing good judgment": "판단이 옳은",
   "shut away": "가둬 두다",
   "shut with wax": "밀랍으로 막다",
   "shyness before others": "남 앞에서의 수줍음",
   "sift out": "체로 골라내다",
+  "sitting of a body": "기구가 모여 앉는 때",
   "size of a thing": "사물의 크기",
   "slice": "얇게 썬 쪽",
   "sneering": "코웃음 치는",
+  "some in number": "수가 얼마쯤 되는",
   "soundness of mind": "정신의 온전함",
   "spacecraft in orbit": "궤도를 도는 비행체",
   "spit": "뱉는 침",
   "spittle": "입에서 나온 침",
   "split into parts": "여러 몫으로 쪼갬",
   "spooky": "으스스한",
+  "squad leader": "분대를 이끄는 사람",
   "standing alone": "홀로 서 있는",
   "standing out most": "가장 도드라지는",
+  "start a journey": "길을 나서다",
+  "start ~ going": "~이 굴러가게 하다",
   "state of being full": "가득 찬 상태",
   "state of being shut away": "틀어박혀 있는 상태",
   "stirring the senses": "감각을 흔드는",
   "string of words": "낱말을 이은 줄",
   "study award": "학업에 주는 상금",
+  "surroundings of a scene": "장면을 둘러싼 것들",
   "take by force": "힘으로 빼앗다",
+  "take hold": "뿌리를 내리다",
   "talk of the town": "장안의 이야깃거리",
   "taste one enjoys": "즐기는 맛",
   "tender mood": "다정한 마음결",
@@ -811,6 +971,7 @@ Object.assign(window.GLOSS, {
   "thin in amount": "양이 얇은",
   "thing everyone speaks of": "모두가 입에 올리는 것",
   "throw out as useless": "쓸모없다고 내버리다",
+  "time a court is open": "법정이 열려 있는 때",
   "to all appearances": "누가 봐도 그렇게",
   "to do with feeling": "느낌에 관한",
   "to do with hygiene": "위생에 관한",
@@ -827,9 +988,12 @@ Object.assign(window.GLOSS, {
   "view of the land": "땅이 보이는 모습",
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
+  "waste water": "버려지는 물",
   "win over by charm": "매력으로 끌어들이다",
+  "without shame": "부끄러움 없이",
   "witty attack in writing": "글로 재치 있게 찌름",
   "words making a full thought": "한 생각을 다 담은 말",
   "working for oneself": "제 일을 제가 하는",
+  "worn and poor": "닳고 볼품없는",
   "write in a hurry": "급하게 적다"
 });

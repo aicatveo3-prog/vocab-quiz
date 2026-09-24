@@ -2098,7 +2098,6 @@ Object.assign(window.GLOSS, {
   "separately": "따로따로",
   "sepsis": "패혈증",
   "severity": "심각함",
-  "shameless": "부끄러움을 모르는",
   "ship in": "실어 들이다",
   "short-tempered": "성미가 급한",
   "shot": "주사 한 대",

@@ -105,7 +105,9 @@ window.VOCAB_D = [
     ex:[{ s:"Few employees would {{}} to question the director openly.", f:"dare", ko:"공개적으로 이사에게 감히 의문을 제기할 직원은 거의 없었다." }] },
 
   { word:"darken", pron:"다컨", pos:"v", level:"B2", meanings:["어둡게 하다","어두워지다"],
-    syn:["dim","shade","blacken"], ant:["brighten"],
+    /* ★ syn 의 "shade" 를 "cast a shadow on" 으로 바꿨다. shade 는 S 세트에서
+       명사 '그늘, 빛 가리개' 로 선다 — 동사 자리에 명사가 들어가게 된다. */
+    syn:["dim","cast a shadow on","blacken"], ant:["brighten"],
     ex:[{ s:"Storm clouds slowly {{}} the afternoon sky.", f:"darkened", ko:"폭풍 구름이 오후 하늘을 서서히 어둡게 했다." }] },
 
   { word:"date back to", pron:"데이트 백 투", pos:"phr", level:"B2", meanings:["~까지 거슬러 올라가다"],
@@ -1487,7 +1489,6 @@ Object.assign(window.GLOSS, {
   "remains":"유물, 잔존물",
   "rot":"썩다, 부패하다",
   "rubble":"돌무더기, 파편",
-  "shade":"그늘지게 하다; 그늘",
   "stem from":"~에서 유래하다",
   "sunrise":"해돋이, 일출",
   "swing":"흔들리다, 흔들다",
