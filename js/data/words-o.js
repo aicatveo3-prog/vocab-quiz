@@ -1340,7 +1340,6 @@ Object.assign(window.GLOSS, {
   "sweep over": "휩쓸어 덮치다",
   "sworn word": "맹세한 말",
   "take more food than needed": "필요보다 많이 먹다",
-  "take place": "벌어지다",
   "taken as a whole": "전체로 보아",
   "taking up of space": "자리를 차지함",
   "tenancy": "빌려 씀",

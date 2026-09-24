@@ -2039,7 +2039,11 @@ window.VOCAB_P = [
     syn:["stop at the roadside","draw up to the curb","bring a car to a halt"] },
 
   { word:"pulse", pron:"펄스", pos:"n", level:"B2", meanings:["맥박","파동"],
-    syn:["beat of the heart","throb","regular beat"],
+    /* ★ syn 의 "throb" 을 "beating in the veins" 로 바꿨다. 사전이 throb 을
+       명사 '두근거림' 으로 적어 두었지만 교재는 동사였고(게다가 '고통치다' 라는
+       오타였다), T 세트에서 동사 '고동치다, 맥박이 뛰다' 로 세웠다 — 명사인 이
+       표제어의 목록에 동사가 끼게 된다. */
+    syn:["beat of the heart","beating in the veins","regular beat"],
     ex:[{ s:"The nurse checked my {{}}.", f:"pulse", ko:"간호사가 내 맥박을 확인했다." }] },
 
   { word:"punctual", pron:"펑추얼", pos:"adj", level:"B2", meanings:["시간을 엄수하는"],
@@ -2913,7 +2917,6 @@ Object.assign(window.GLOSS, {
   "those who come after": "뒤에 오는 이들",
   "threat to life": "목숨을 위협하는 것",
   "thriving state": "잘 되어 가는 형편",
-  "throb": "두근거림",
   "throw oneself into": "~에 몸을 던지다",
   "thrown into confusion": "헷갈려 버린",
   "tight corner": "빠져나가기 힘든 자리",

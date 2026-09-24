@@ -789,7 +789,6 @@ Object.assign(window.GLOSS, {
   "stick":"달라붙다",
   "style":"양식, 형식",
   "succumb to":"~에 무너지다",
-  "terrain":"지형, 지대",
   "thankfulness":"감사하는 마음",
   "tier":"층, 단",
   "topographic":"지형의",

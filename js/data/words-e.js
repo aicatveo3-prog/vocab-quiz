@@ -2068,7 +2068,6 @@ Object.assign(window.GLOSS, {
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
-  "thrifty":"알뜰한, 돈을 아끼는",
   "tolerant":"너그러운, 관대한",
   "unconventional":"관습에 얽매이지 않는",
   "uptight":"긴장한, 신경이 날카로운",
@@ -2290,7 +2289,6 @@ Object.assign(window.GLOSS, {
   "remove to safety":"안전한 곳으로 옮기다",
   "shirk":"회피해 버리다",
   "step up":"단계적으로 높이다",
-  "temporary":"일시적인",
   "tribal":"부족의",
   "undying":"죽지 않는",
   "unethical":"비윤리적인",
@@ -2316,7 +2314,6 @@ Object.assign(window.GLOSS, {
   "shine":"두각을 나타내다",
   "special case":"특수한 경우",
   "tax dodging":"탈세",
-  "testimony":"증언",
   "too much":"너무 많은 것",
   "ultimately":"궁극적으로",
   "vaporize":"기화시키다",
@@ -2450,7 +2447,6 @@ Object.assign(window.GLOSS, {
   "quench":"물로 끄다",
   "snuff out":"꺼 버리다",
   "sociable type":"어울리기 좋아하는 사람",
-  "take out":"꺼내다",
   "ugly sight":"보기 흉한 광경",
   "wiping out":"완전히 없앰"
 });

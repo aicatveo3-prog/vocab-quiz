@@ -706,7 +706,10 @@ window.VOCAB_I = [
     ex:[{ s:"Late payment will {{}} an additional handling fee.", f:"incur", ko:"연체는 추가 취급 수수료를 초래한다." }] },
 
   { word:"incurable", pron:"인큐어러블", pos:"adj", level:"B2", meanings:["치유할 수 없는","고칠 수 없는"],
-    syn:["untreatable","terminal","hopeless"], ant:["curable"],
+    /* ★ syn 의 "terminal" 을 "beyond cure" 로 바꿨다. terminal 은 T 세트에서
+       명사 '종착역, 종점' 으로 선다 — 참조 둘 중 depot(차고, 창고) 이 명사여서
+       명사를 골랐고, 형용사 쪽을 쓰던 이 자리를 갈았다. */
+    syn:["untreatable","beyond cure","hopeless"], ant:["curable"],
     ex:[{ s:"The disease was once considered entirely {{}}.", f:"incurable", ko:"그 병은 한때 완전히 치유할 수 없다고 여겨졌다." }] },
 
   { word:"indecision", pron:"인디시전", pos:"n", level:"C1", meanings:["망설임","우유부단"],
@@ -2132,11 +2135,9 @@ Object.assign(window.GLOSS, {
   "surrounded by": "~에 둘러싸여",
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
-  "take over": "넘겨받다",
   "taking account of": "~을 감안하여",
   "tamper": "허락 없이 손대다",
   "teach": "가르치다",
-  "tendency": "성향",
   "thermal": "열의",
   "tickly": "간지러운",
   "tilt": "기울이다",

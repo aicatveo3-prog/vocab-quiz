@@ -854,8 +854,6 @@ Object.assign(window.GLOSS, {
   "suede": "스웨이드 가죽",
   "suitcases": "여행용 가방",
   "sumptuous": "값비싸고 멋진",
-  "tempt": "마음을 끌다",
-  "tenant": "세입자",
   "testing room": "시험실",
   "time lag": "시간차",
   "tip": "쓰레기장",
