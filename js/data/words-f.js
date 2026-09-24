@@ -1552,7 +1552,6 @@ Object.assign(window.GLOSS, {
   "transport cost":"교통비",
   "valve":"밸브",
   "vigor":"활력, 기운",
-  "waver":"흔들리다, 주저하다",
   "weariness":"지침, 피곤",
   "working knowledge":"실용적 지식",
   "zealot":"열성분자",
@@ -1835,7 +1834,6 @@ Object.assign(window.GLOSS, {
   "turn to stone":"돌로 바뀌다",
   "water jet":"솟구치는 물줄기",
   "wellspring":"물이 솟는 근원",
-  "windfall":"뜻밖의 횡재",
 
   /* ── 9차: fraction ~ from scratch (46개) ───────────
      portion·shatter·smash·scent·weak·infirm·frenzied·impostor·deception·
@@ -1933,7 +1931,6 @@ Object.assign(window.GLOSS, {
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
   "usable":"쓸 수 있는",
-  "worthwhile":"할 만한 값이 있는",
 
   /* ── 11차: furious ~ fuzzy (21개, 마지막) ───────────
      calm·supply·hairy·extra·supplementary·coming together·commotion·
@@ -1960,5 +1957,4 @@ Object.assign(window.GLOSS, {
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
   "very angry":"매우 화가 난",
-  "wrinkle":"주름"
 });

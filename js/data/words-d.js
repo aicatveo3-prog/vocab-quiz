@@ -1569,7 +1569,6 @@ Object.assign(window.GLOSS, {
   "unpleasant":"불쾌한, 기분 나쁜",
   "vandalize":"파괴하다, 훼손하다",
   "warp":"휘게 하다, 뒤틀리다",
-  "work out":"알아내다, 계산해 내다",
 
   /* ── 3차 (delude ~ derived from) 몫 81개 ────────── */
   "appalling":"충격적인, 개탄스러운",
@@ -1629,8 +1628,6 @@ Object.assign(window.GLOSS, {
   "thoroughness":"철저함, 빈틈없음",
   "unhinged":"정신이 이상해진",
   "use up":"다 써 버리다",
-  "warehouse":"창고, 저장고",
-  "withdraw":"철수하다, 회수하다",
 
   /* ── 4차 (desalinate ~ deviate) 몫 60개 ─────────── */
   "aberrant":"정상에서 벗어난, 이상한",
@@ -1674,7 +1671,6 @@ Object.assign(window.GLOSS, {
   "undesirable":"바람직하지 않은",
   "urgently":"긴급히, 절박하게",
   "warrant":"정당화하다, ~할 만하다",
-  "willpower":"의지력",
   "wish":"바람, 소망",
 
   /* ── 5차 (device ~ direction) 몫 57개 ──────────── */

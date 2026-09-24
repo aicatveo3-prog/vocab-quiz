@@ -2200,7 +2200,6 @@ Object.assign(window.GLOSS, {
   "whim": "일시적 기분",
   "wholeness": "온전함",
   "willful": "일부러 하는",
-  "with regard to": "~에 대해서는",
   "with respect to": "~와 관련해서는",
   "without": "~이 없이",
   "without interest": "이자 없이",
