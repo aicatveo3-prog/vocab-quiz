@@ -1711,7 +1711,6 @@ window.GLOSS = {
   "ordinary":"평범한",
   "partially":"부분적으로",
   "partly":"부분적으로",
-  "passive":"수동적인",
   "passively":"수동적으로",
   "passivity":"수동성",
   "peace":"평화",

@@ -486,7 +486,7 @@ window.VOCAB_G = [
 
   { word:"graze", pron:"그레이즈", pos:"v", level:"B2", meanings:["풀을 뜯어먹다","방목하다"],
     gov:{ prep:["on","in","upon"], pat:"graze {{}} the fresh grass", usage:"graze on ~ : ~을 뜯어먹다" },
-    syn:["pasture","browse","feed"],
+    syn:["put out to graze","browse","feed"],
     ex:[{ s:"Sheep {{}} on the hillside from spring to autumn.", f:"graze", ko:"양들은 봄부터 가을까지 언덕에서 풀을 뜯어먹는다." }] },
 
   /* 승격 ① — GLOSS '기름진' 을 첫 자리에 지켰다. 참조하는 기존 문제는 없다. */
@@ -746,8 +746,6 @@ Object.assign(window.GLOSS, {
   "opt for":"~을 택하다",
   "parking space":"주차 공간",
   "pass":"지나가다, 통과되다",
-  "paste":"풀로 붙이다",
-  "pasture":"방목하다",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
   "peek":"살짝 들여다보다",

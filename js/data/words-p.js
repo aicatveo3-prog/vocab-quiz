@@ -182,7 +182,130 @@ window.VOCAB_P = [
 
   { word:"parental", pron:"퍼렌털", pos:"adj", level:"B2", meanings:["부모의"],
     syn:["of a mother or father","motherly and fatherly","coming from parents"],
-    ex:[{ s:"The trip needs {{}} consent.", f:"parental", ko:"그 여행은 부모의 동의가 필요하다." }] }
+    ex:[{ s:"The trip needs {{}} consent.", f:"parental", ko:"그 여행은 부모의 동의가 필요하다." }] },
+
+  /* ── 챕터 2 ─────────────────────────────────────── */
+  /* 'parti-' 어근이 여섯 개 붙는다(partial·participant·participate·particle·
+     particular·partisan). 품사와 뜻을 갈라 두어 같은 보드에서 구별된다.
+     partake·participate·participate in 은 원본이 모두 '참여하다' 로 3중으로
+     물렸다 — '함께하다' / '참여하다' / '~에 가담하다' 로 갈랐다.               */
+
+  /* 승격 ⑧ — 사전은 '의회' 한 갈래였다. 원본의 '국회' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(congress, C). */
+  { word:"parliament", pron:"팔러먼트", pos:"n", level:"B2", meanings:["의회","국회"],
+    syn:["congress","legislative body","house of lawmakers"],
+    ex:[{ s:"The bill passed {{}} last week.", f:"parliament", ko:"그 법안은 지난주 의회를 통과했다." }] },
+
+  { word:"parliamentary", pron:"팔러멘터리", pos:"adj", level:"C1", meanings:["의회의"],
+    syn:["of the legislature","lawmaking","congressional"],
+    ex:[{ s:"A {{}} committee will review the case.", f:"parliamentary", ko:"의회의 위원회가 그 사안을 살필 것이다." }] },
+
+  /* 원본의 '패러디' 는 외래어를 그대로 옮긴 것이어서 뺐다. */
+  { word:"parody", pron:"패러디", pos:"n", level:"C1", meanings:["풍자적 모방","흉내내기"],
+    syn:["mocking imitation","send-up","spoof"],
+    ex:[{ s:"The sketch was a {{}} of the evening news.", f:"parody", ko:"그 촌극은 저녁 뉴스의 풍자적 모방이었다." }] },
+
+  /* partake 는 원본이 '참여하다, 함께하다' 였다. 같은 챕터의 participate 와
+     물리므로 '함께하다' 를 앞세웠다. */
+  { word:"partake", pron:"파테이크", pos:"v", level:"C1", meanings:["함께하다","나누다"],
+    syn:["share in","join in with others","have a part in"],
+    ex:[{ s:"Guests may {{}} of the meal at noon.", f:"partake", ko:"손님들은 정오에 식사를 함께할 수 있다." }] },
+
+  /* 승격 ⑨ — 사전 표현 '부분적인, 편향된' 을 글자까지 지켰다
+     (biased, B · comprehensive 반의어, C · entire 반의어, E — 세 곳).
+     원본의 '불완전한; 편파적인' 대신 사전 쪽을 남겼다. */
+  { word:"partial", pron:"파셜", pos:"adj", level:"B2", meanings:["부분적인","편향된"],
+    syn:["biased","incomplete","covering only some"], ant:["entire"],
+    ex:[{ s:"We received only a {{}} refund.", f:"partial", ko:"우리는 부분적인 환불만 받았다." }] },
+
+  /* 승격 ⑩ — 사전 표현 '참가자, 당사자' 를 글자까지 지켰다(bystander 반의어, B). */
+  { word:"participant", pron:"파티서펀트", pos:"n", level:"B2", meanings:["참가자","당사자"],
+    syn:["one taking part","one who joins in","member of an activity"], ant:["bystander"],
+    ex:[{ s:"Each {{}} received a badge.", f:"participant", ko:"참가자마다 표찰을 받았다." }] },
+
+  /* 승격 ⑪ — 사전 표현 '참여하다' 를 첫 자리에 지키고 '참가하다' 를 붙였다
+     (발음이 없던 항목이다). */
+  { word:"participate", pron:"파티서페이트", pos:"v", level:"B1", meanings:["참여하다","참가하다"],
+    syn:["take part","join in","play a part"],
+    ex:[{ s:"All students must {{}} in the drill.", f:"participate", ko:"모든 학생은 그 훈련에 참여해야 한다." }] },
+
+  /* participate in 은 원본이 '~에 참여하다' 로 participate 와 그대로 물렸다.
+     '~에 가담하다' 로 갈랐다. 구·표현이라 ex 는 넣지 않는다. */
+  { word:"participate in", pron:"파티서페이트 인", pos:"phr", level:"B1", meanings:["~에 가담하다"],
+    syn:["get involved in","be a party to","throw oneself into"] },
+
+  /* 승격 ⑫ — 사전값이 '아주 작은 알' 이라 표제어 뜻으로는 어색했다. 원본의
+     '입자' 를 첫 자리에 두고 '미립자' 를 붙였다(괄호는 걷었다).
+     molecule(M) 의 화면 글자가 함께 바뀐다. */
+  { word:"particle", pron:"파티클", pos:"n", level:"B2", meanings:["입자","미립자"],
+    syn:["tiny bit","speck of matter","minute fragment"],
+    ex:[{ s:"Dust {{}} floated in the sunbeam.", f:"particle", ko:"먼지 입자가 햇살 속에 떠 있었다." }] },
+
+  /* 승격 ⑬ — 사전이 '특정한; 까다로운' 이었다. 첫 뜻 '특정한' 을 지키고
+     원본의 '특별한' 을 붙였다(detail, D). */
+  { word:"particular", pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
+    syn:["specific","singled out","one certain"],
+    ex:[{ s:"Is there a {{}} book you are looking for?", f:"particular", ko:"찾으시는 특정한 책이 있나요?" }] },
+
+  /* 승격 ⑭ — 사전 표현 '당파적인' 을 글자까지 지켰다(ideological, I ·
+     neutral 반의어, N). 원본은 '일당, 당원, 당파심이 강한' 으로 명사와 형용사가
+     섞여 있었는데 참조 둘이 모두 형용사여서 형용사로 세웠다. */
+  { word:"partisan", pron:"파터전", pos:"adj", level:"C1", meanings:["당파적인"],
+    syn:["one-eyed in politics","siding with a faction","loyal to one party"], ant:["neutral"],
+    ex:[{ s:"The debate grew openly {{}}.", f:"partisan", ko:"그 토론은 드러내어 당파적으로 흘렀다." }] },
+
+  { word:"party", pron:"파티", pos:"n", level:"B1", meanings:["정당","한쪽 편"],
+    syn:["political group","side in a dispute","faction"],
+    ex:[{ s:"The ruling {{}} lost twelve seats.", f:"party", ko:"집권 정당은 열두 석을 잃었다." }] },
+
+  { word:"pass down", pron:"패스 다운", pos:"phr", level:"B2", meanings:["전수하다","전해 주다"],
+    syn:["hand on to the next","bequeath","carry forward to others"] },
+
+  /* 승격 ⑮ — 사전이 '통로; 구절' 이었다. 구분 기호만 쉼표로 바꿨다.
+     참조 네 곳(aisle·channel·corridor·hallway) 이 모두 통로 뜻을 쓴다.
+     원본의 '(시간의) 흐름' 갈래는 버렸다. */
+  { word:"passage", pron:"패시지", pos:"n", level:"B2", meanings:["통로","구절"],
+    syn:["corridor","way through","excerpt from a text"],
+    ex:[{ s:"A narrow {{}} led to the courtyard.", f:"passage", ko:"좁은 통로가 안마당으로 이어졌다." }] },
+
+  /* 승격 ⑯ — 사전은 '열정적인' 한 갈래였다. 원본의 '열렬한' 을 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(ardent, A). 원본 첫 뜻 '열렬한' 을 그대로 쓰면
+     ardent 와 첫 글자가 같아진다. */
+  { word:"passionate", pron:"패셔닛", pos:"adj", level:"B2", meanings:["열정적인","열렬한"],
+    syn:["ardent","fervent","full of feeling"], ant:["indifferent"],
+    ex:[{ s:"He is {{}} about old films.", f:"passionate", ko:"그는 옛 영화에 열정적이다." }] },
+
+  /* 승격 ⑰ — 사전은 '수동적인' 한 갈래였다. 원본의 '소극적인' 을 뒤에 붙였다
+     (active·aggressive 반의어 자리). 원본의 '수동의' 는 '수동적인' 과 겹쳐 버렸다. */
+  { word:"passive", pron:"패시브", pos:"adj", level:"B2", meanings:["수동적인","소극적인"],
+    syn:["unresisting","going along with","not acting"], ant:["active"],
+    ex:[{ s:"She played a {{}} role in the talks.", f:"passive", ko:"그녀는 회담에서 수동적인 역할을 했다." }] },
+
+  /* 승격 ⑱ — 사전이 '~을 지나서; 과거' 로 전치사 갈래와 명사 갈래가 섞여 있었다.
+     참조는 beyond(B, adv) 하나뿐인데 그쪽이 쓰는 갈래는 '~을 지나서' 다.
+     그래도 수능에서 명사 '과거' 가 압도적으로 흔하므로 명사로 세우고 beyond 쪽
+     유의어를 'on the far side of' 로 바꿨다(words-b.js) — M 세트 mold, O 세트
+     object 와 같은 판단이다. */
+  { word:"past", pron:"패스트", pos:"n", level:"B1", meanings:["과거","지난날"],
+    syn:["bygone days","times gone by","former times"], ant:["future"],
+    ex:[{ s:"She rarely talks about her {{}}.", f:"past", ko:"그녀는 자기 과거를 좀처럼 말하지 않는다." }] },
+
+  /* 승격 ⑲ — 사전 표현 '풀로 붙이다' 를 글자까지 지켰다(glue, G).
+     원본의 명사 '반죽, 연고' 갈래는 버렸다. */
+  { word:"paste", pron:"페이스트", pos:"v", level:"B1", meanings:["풀로 붙이다"],
+    syn:["glue","stick on","fix with adhesive"],
+    ex:[{ s:"{{}} the photo into the album.", f:"Paste", ko:"그 사진을 앨범에 풀로 붙이세요." }] },
+
+  { word:"pastor", pron:"패스터", pos:"n", level:"B2", meanings:["목사"],
+    syn:["minister of a church","church leader","shepherd of a flock"],
+    ex:[{ s:"The {{}} greeted every family at the door.", f:"pastor", ko:"그 목사는 문에서 모든 가족을 맞았다." }] },
+
+  /* 승격 ⑳ — 사전값은 동사 '방목하다' 인데 원본은 명사다. 참조도 갈렸다 —
+     meadow(M) 는 명사, graze(G) 는 동사였다. 수능에서 명사가 흔하므로 명사로
+     세우고 graze 쪽 유의어를 'put out to graze' 로 바꿨다(words-g.js). */
+  { word:"pasture", pron:"패스처", pos:"n", level:"B2", meanings:["목초","목장"],
+    syn:["meadow","grazing land","grassy field"],
+    ex:[{ s:"The cows were moved to a fresh {{}}.", f:"pasture", ko:"소들은 새 목초지로 옮겨졌다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -191,49 +314,102 @@ Object.assign(window.GLOSS, {
   "academic article": "학술 글",
   "alike in form": "꼴이 비슷한",
   "ashen": "핏기 없는",
+  "be a party to": "~에 한편으로 끼다",
+  "bequeath": "물려주다",
   "blind alarm": "앞뒤 없는 놀람",
   "block of text": "글의 한 덩이",
   "breathe hard": "숨을 거칠게 쉬다",
+  "bygone days": "지나간 날들",
+  "carry forward to others": "남들에게 이어 주다",
+  "church leader": "교회의 지도자",
   "close likeness": "가까운 닮음",
   "coming from parents": "어버이에게서 나온",
+  "congressional": "국회에 관한",
+  "covering only some": "일부만 아우르는",
   "done with great care": "아주 조심스레 한",
   "drained of color": "빛깔이 빠진",
+  "excerpt from a text": "글에서 따온 대목",
   "feeding on another": "남을 먹고 사는",
+  "fix with adhesive": "접착제로 고정하다",
   "flat of the hand": "손의 평평한 면",
+  "former times": "옛 시절",
   "framework of thought": "생각의 뼈대",
   "freeloader": "공짜로 얻어먹는 이",
+  "full of feeling": "감정이 가득한",
+  "get involved in": "~에 발을 담그다",
   "global outbreak": "지구 규모의 발생",
+  "going along with": "그대로 따라가는",
+  "grassy field": "풀이 자란 들",
+  "grazing land": "풀 뜯기는 땅",
   "group of sentences": "문장 묶음",
+  "hand on to the next": "다음 사람에게 넘기다",
+  "have a part in": "~에 한몫 있다",
   "heathen": "이교의",
   "hollow of the hand": "손의 오목한 곳",
+  "house of lawmakers": "입법자들의 모임",
   "idol-worshipping": "우상을 섬기는",
+  "incomplete": "온전하지 않은",
   "inner hand": "손의 안쪽",
+  "join in": "끼어 들다",
+  "join in with others": "남들과 어울려 하다",
+  "lawmaking": "법을 만드는",
+  "legislative body": "법을 만드는 기구",
   "living on a host": "숙주에 붙어 사는",
+  "loyal to one party": "한 정당에만 충성하는",
   "make powerless": "힘을 못 쓰게 하다",
+  "member of an activity": "활동의 구성원",
+  "minister of a church": "교회를 맡은 이",
+  "minute fragment": "몹시 작은 부스러기",
+  "mocking imitation": "비웃으며 흉내 냄",
   "model case": "본보기가 되는 사례",
   "motherly and fatherly": "어머니 아버지의",
+  "not acting": "나서지 않는",
   "of a mother or father": "어버이의",
   "of first importance": "첫째로 중요한",
+  "of the legislature": "입법 기관의",
   "official document": "공식 문서",
+  "on the far side of": "~의 저쪽에",
+  "one certain": "어느 하나의",
+  "one taking part": "한몫 맡은 이",
+  "one who joins in": "끼어든 사람",
+  "one-eyed in politics": "정치에서 한쪽만 보는",
   "organism living off another": "남에게 붙어 사는 생물",
   "outside the church": "교회 밖의",
   "pallid": "해쓱한",
+  "play a part": "한 구실을 하다",
+  "political group": "정치 집단",
   "puff for air": "숨을 몰아쉬다",
+  "put out to graze": "풀 뜯게 내놓다",
   "resemblance": "서로 닮음",
   "rob of movement": "움직임을 앗다",
   "ruddy": "혈색이 좋은",
   "section of writing": "글의 한 부분",
   "self-defeating statement": "스스로를 뒤집는 말",
+  "send-up": "놀리는 흉내",
+  "share in": "~을 나누어 갖다",
+  "shepherd of a flock": "양 떼를 이끄는 이",
+  "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
+  "siding with a faction": "한 파에 붙는",
   "single fix for everything": "하나로 다 해결하는 것",
+  "singled out": "따로 집어낸",
   "slapdash": "엉성한",
+  "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
+  "spoof": "우스꽝스러운 흉내",
+  "stick on": "달라붙게 하다",
   "sudden terror": "갑작스러운 무서움",
   "supreme": "더없이 높은",
   "sweeping disease": "휩쓸고 지나가는 병",
+  "take part": "한몫 맡다",
+  "throw oneself into": "~에 몸을 던지다",
+  "times gone by": "흘러간 시절",
+  "tiny bit": "아주 작은 조각",
   "typical pattern": "전형적인 틀",
   "universal remedy": "두루 듣는 약",
+  "unresisting": "맞서지 않는",
+  "way through": "지나가는 길",
   "worldwide epidemic": "전 세계에 퍼진 유행병",
   "wrapped goods": "싸 놓은 물건",
   "written study": "글로 쓴 연구"

@@ -383,7 +383,7 @@ window.VOCAB_B = [
 
   /* ── bey ~ bi ──────────────────────────────── */
   { word:"beyond", pron:"비욘드", pos:"adv", level:"B1", meanings:["~너머","~을 지나"],
-    syn:["past","farther than","outside"], ant:["within"],
+    syn:["on the far side of","farther than","outside"], ant:["within"],
     ex:[{ s:"The village lies just {{}} those low hills.", f:"beyond", ko:"그 마을은 저 낮은 언덕 바로 너머에 있다." }] },
 
   /* biannual(연 2회)과 biennial(격년)은 일부러 유의어로 묶지 않았다.
@@ -987,7 +987,6 @@ Object.assign(window.GLOSS, {
   "narrowness":"좁음",
   "one-way":"일방통행의, 편도의",
   "ordinary":"평범한, 보통의",
-  "participant":"참가자, 당사자",
   "peace":"평화",
   "penniless":"무일푼의",
   "persistent":"잘 분해되지 않는, 끈질긴",

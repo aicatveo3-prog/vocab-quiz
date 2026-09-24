@@ -1473,7 +1473,6 @@ Object.assign(window.GLOSS, {
   "pair bonding": "짝 결속",
   "pair off": "둘씩 짝지다",
   "paltry": "쥐꼬리만 한",
-  "particle": "아주 작은 알",
   "paternal": "아버지의",
   "pecuniary": "금전에 관한",
   "phenomenon": "현상",

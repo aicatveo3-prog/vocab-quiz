@@ -2012,7 +2012,6 @@ Object.assign(window.GLOSS, {
   "optional":"선택적인",
   "orderly":"정돈된, 질서 있는",
   "original":"원본, 원래의",
-  "partial":"부분적인, 편향된",
   "peripheral":"주변의, 부차적인",
   "permit":"허용하다",
   "personal":"개인적인",
