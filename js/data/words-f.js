@@ -1962,7 +1962,6 @@ Object.assign(window.GLOSS, {
   "provide a with b":"A에게 B를 마련해 주다",
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
-  "useless":"쓸모없는",
   "very angry":"매우 화가 난",
   "wrinkle":"주름"
 });

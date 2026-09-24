@@ -524,11 +524,182 @@ window.VOCAB_U = [
 
   /* T 세트의 to some degree(어느 정도)·to a large extent(상당히, 크게) 와 갈랐다. */
   { word:"up to a point", pron:"업 투 어 포인트", pos:"phr", level:"B2", meanings:["어느 선까지는"],
-    syn:["so far and no further","within limits","to a certain line"] }
+    syn:["so far and no further","within limits","to a certain line"] },
+
+  /* ══ 14차 · upbringing ~ utility (20단어) — U 세트 마지막, A~U 마지막 ═══════
+     승격 8 · 신규 12
+
+     이 챕터의 함정은 모두 **두 글자짜리 뜻**이었다. 자동 배제의 품기 검사는
+     양쪽이 세 글자 이상일 때만 돌아간다. 그래서 '시의'·'기구'·'공익' 처럼 두
+     글자인 말은 더 긴 뜻 안에 통째로 들어가 있어도 걸리지 않는다. 넷을 고쳤다.
+
+       ★ uppermost  가장 높은, 맨 위의 → **맨 위의, 가장 높은**
+         '높은' 을 쓰는 상대가 다섯이다 — elevated(높은, 고상한)·lofty(아주
+         높은)·notorious(악명 높은)·high-pitched(음조가 높은)·renowned(명성
+         높은). 게다가 '가장' 을 쓰는 cardinal·foremost(가장 중요한)·salient
+         (가장 두드러진)·marginal(가장자리의) 도 있다. 어느 쪽으로도 안 갈린다.
+         '맨 위의' 를 앞세웠다. 덤으로 둘째 갈래 '가장 높은' 이 elevated 의
+         '높은' 을 품어 그쪽은 자동 배제까지 된다.
+
+       ★ utensil  기구, 용구 → **용구, 기구**
+         appliance((가정용) 기구 · B2/n) 와 품사·레벨이 같다. '기구' 는 두
+         글자라 '(가정용) 기구' 안에 들어 있어도 자동 배제가 안 된다. '용구' 를
+         앞세웠다. '기구' 는 둘째 갈래로 남아 device(장치, 기구)·apparatus
+         (장치, 기구) 와는 계속 맞물린다. ★ 참조 instrument(I) 의 화면에서
+         두 갈래의 앞뒤가 바뀐다.
+
+       ★ utility  공익사업, 유용성 → **유용성, 공익사업**
+         common good(공익 · C1/n) 을 '공익사업' 이 통째로 품는데 '공익' 이 두
+         글자라 빠져나간다. 수능에서도 utility 는 '유용성' 쪽이 먼저다.
+
+       ★ municipal  시의, 지방 자치의 → **지방 자치의, 시의** (M 세트를 손질)
+         urban 의 뜻 '도시의' 가 '시의' 를 통째로 품는데 역시 두 글자라 안
+         걸린다. 게다가 둘은 레벨 차가 1이고 **metropolitan 의 유의어 목록에
+         나란히 서 있다**. urban 은 참조 metropolitan 이 있어 사전값을 지켜야
+         하므로 municipal 쪽의 앞뒤를 바꿨다. ★ 참조 두 곳의 화면이 바뀐다.
+
+     나머지는 손대지 않아도 자동으로 갈린다.
+       uphold      ← advocate·subscribe·endorse 가 '지지하다' 를 쓴다
+       upright     ← dishonest(부정직한) 가 '정직한' 을 품는다
+       uprising    ← revolt(봉기)·rebellion(반란) 과 글자가 같다
+       uproot      ← eradicate(근절하다, 뿌리째 뽑다) 와 **두 갈래가 통째로 같다**
+       urge        ← impulse(충동, 자극) 와 '충동' 이 같다
+       urgent      ← pressing(긴급한, 절박한) 와 두 갈래가 통째로 같다 · desperate 와 '절박한'
+       utilitarian ← pragmatic(현실적인, 실리를 따지는) 와 '실리를 따지는' 이 같다
+
+     ★ urge 는 사전 첫 갈래만 세웠다(충동). 참조 셋(craving·impulse·instinct)
+     이 모두 명사여서다. 교재의 '설득하다' 는 induce·convince 자리다.
+
+     ★ useless 는 사전 쪽 붙여쓰기('쓸모없는') 를 따랐다. 교재는 '쓸모 없는'
+     으로 띄어 썼는데, 참조 futile 의 화면을 지키려면 사전 글자가 맞다.
+
+     upside down 은 교재의 '거꾸로' 를 버리고 '뒤집혀' 로 좁혔다 — '거꾸로' 는
+     conversely(거꾸로, 반대로 · C1/adv) 자리다. */
+
+  { word:"upbringing", pron:"업브링잉", pos:"n", level:"C1", meanings:["양육","가정 교육"],
+    syn:["the way one is reared","training given at home","rearing of a child"],
+    ex:[{ s:"She had a strict {{}}.", f:"upbringing", ko:"그녀는 엄격한 양육을 받았다." }] },
+
+  /* 교재의 '혼란시키다' 는 turmoil(혼란, 소동)·disrupt 자리라 버렸다. */
+  { word:"upheave", pron:"업히브", pos:"v", level:"C2", meanings:["들어 올리다"],
+    syn:["heave up from below","push up in a mass","raise with force"],
+    ex:[{ s:"Ice can {{}} the whole road.", f:"upheave", ko:"얼음이 길 전체를 들어 올릴 수 있다." }] },
+
+  /* advocate(지지하다, 옹호하다)·subscribe·endorse 가 '지지하다' 를 써서 셋 다
+     맞물려 배제된다. */
+  { word:"uphold", pron:"업홀드", pos:"v", level:"B2", meanings:["떠받치다","지지하다"],
+    syn:["advocate","hold up from under","stand behind"],
+    ex:[{ s:"The court will {{}} the ruling.", f:"uphold", ko:"법원은 그 판결을 지지할 것이다." }] },
+
+  /* ★ 첫 뜻을 '맨 위의' 로 갈랐다. '가장 높은' 을 앞에 두면 elevated·lofty·
+     notorious·high-pitched·renowned 의 '높은' 과도, cardinal·foremost·salient·
+     marginal 의 '가장' 과도 눈으로 갈리지 않는다. 둘째 갈래로 남긴 '가장 높은'
+     이 elevated 의 '높은' 을 품어 그쪽은 자동 배제까지 된다. 교재의 '최고의'
+     는 superb·top-notch 자리다. */
+  { word:"uppermost", pron:"어퍼모스트", pos:"adj", level:"C1", meanings:["맨 위의","가장 높은"],
+    syn:["at the very top","highest of all","on top of everything"],
+    ex:[{ s:"The {{}} shelf is empty.", f:"uppermost", ko:"맨 위 선반은 비어 있다." }] },
+
+  /* 승격 ㉒ — 사전 글자 유지. 참조 ethical(E)·moral(M) 두 곳의 화면은 바뀌지
+     않는다. dishonest(부정직한, 속이는) 가 '정직한' 을 품어 맞물려 배제된다.
+     교재의 '똑바른, 꼿꼿한' 은 버렸다. */
+  { word:"upright", pron:"업라이트", pos:"adj", level:"B2", meanings:["정직한","청렴한"],
+    syn:["ethical","moral","straight in one's dealings"],
+    ex:[{ s:"He was known as an {{}} judge.", f:"upright", ko:"그는 정직한 판사로 알려져 있었다." }] },
+
+  /* revolt(봉기, 반기를 듦)·rebellion(반란, 반항) 과 글자가 맞물려 배제된다. */
+  { word:"uprising", pron:"업라이징", pos:"n", level:"C1", meanings:["봉기","반란"],
+    syn:["revolt","rising against rule","open revolt of the people"],
+    ex:[{ s:"The {{}} began in the port.", f:"uprising", ko:"그 봉기는 항구에서 시작됐다." }] },
+
+  /* eradicate(근절하다, 뿌리째 뽑다 · C1/v) 와 두 갈래가 통째로 같다 — 갈라
+     쓸 수가 없어 일부러 글자를 맞췄다. 그러면 자동으로 서로의 오답에서 빠진다. */
+  { word:"uproot", pron:"업루트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
+    syn:["eradicate","pull up by the roots","wipe out entirely"],
+    ex:[{ s:"They mean to {{}} the practice.", f:"uproot", ko:"그들은 그 관행을 근절할 작정이다." }] },
+
+  /* 교재의 '성쇠' 는 '우여곡절' 과 같은 말이어서 걷었다. */
+  { word:"ups and downs", pron:"업스 앤드 다운스", pos:"phr", level:"C1", meanings:["우여곡절"],
+    syn:["good times and bad","turns of fortune","rough and smooth alike"] },
+
+  /* 교재의 '거꾸로' 는 conversely(거꾸로, 반대로 · C1/adv) 자리라 뜻을 좁혔다. */
+  { word:"upside down", pron:"업사이드 다운", pos:"adv", level:"B1", meanings:["뒤집혀"],
+    syn:["with the top at the bottom","turned over completely","the wrong way up"],
+    ex:[{ s:"The boat lay {{}} on the sand.", f:"upside down", ko:"그 배는 모래 위에 뒤집혀 있었다." }] },
+
+  /* 승격 ㉓ — 사전 글자 유지(참조 easygoing 이 반의어). */
+  { word:"uptight", pron:"업타이트", pos:"adj", level:"C1", meanings:["긴장한","신경이 날카로운"],
+    syn:["strung up tight","on edge","unable to relax"], ant:["easygoing"],
+    ex:[{ s:"He gets {{}} before a test.", f:"uptight", ko:"그는 시험 전에 긴장한다." }] },
+
+  /* 승격 ㉔ — 사전 글자 유지(참조 downturn 이 반의어). */
+  { word:"upturn", pron:"업턴", pos:"n", level:"B2", meanings:["상승","호전"],
+    syn:["turn for the better","rise after a fall","change to the good"], ant:["downturn"],
+    ex:[{ s:"Trade showed a slow {{}}.", f:"upturn", ko:"거래는 더딘 상승을 보였다." }] },
+
+  /* 승격 ㉕ — 사전 단일값 유지(참조 metropolitan). ★ municipal(시의 · B2/adj)
+     과 '시의' 가 겹치는데 두 글자라 자동 배제가 안 된다. 이쪽은 참조가 있어
+     사전값을 지켜야 하므로 municipal 쪽을 '지방 자치의, 시의' 로 손질했다.
+     metropolitan(대도시의, 수도의) 은 '도시의' 를 품어 저절로 배제된다. */
+  { word:"urban", pron:"어번", pos:"adj", level:"B1", meanings:["도시의"],
+    syn:["metropolitan","of the town","of built-up areas"],
+    ex:[{ s:"{{}} life suits her well.", f:"urban", ko:"도시 생활이 그녀에게 잘 맞는다." }] },
+
+  /* 승격 ㉖ — ★ 사전 첫 갈래만 세웠다. 참조 셋(craving·impulse·instinct) 이
+     모두 명사여서다. 교재의 '설득하다' 는 induce·convince 자리다.
+     impulse(충동, 자극) 와 글자가 맞물려 배제된다. */
+  { word:"urge", pron:"어지", pos:"n", level:"B1", meanings:["충동"],
+    syn:["impulse","craving","instinct"],
+    ex:[{ s:"She felt a sudden {{}} to run.", f:"urge", ko:"그녀는 달리고 싶은 갑작스러운 충동을 느꼈다." }] },
+
+  /* 승격 ㉗ — 사전 글자 유지. 참조 desperate(D)·imperative(I) 두 곳의 화면은
+     바뀌지 않는다. pressing(긴급한, 절박한) 과 두 갈래가 통째로 같고
+     desperate(필사적인, 절박한) 와 '절박한' 이 같아 맞물려 배제된다. */
+  { word:"urgent", pron:"어전트", pos:"adj", level:"B1", meanings:["긴급한","절박한"],
+    syn:["pressing","calling for haste","not able to wait"],
+    ex:[{ s:"There is an {{}} need for water.", f:"urgent", ko:"물이 긴급히 필요하다." }] },
+
+  /* 승격 ㉘ — ★ 사전의 붙여쓰기를 따랐다. 교재는 '쓸모 없는' 으로 띄어 썼는데,
+     참조 futile(F) 의 화면을 지키려면 사전 글자가 맞다. */
+  { word:"useless", pron:"유스리스", pos:"adj", level:"B1", meanings:["쓸모없는"],
+    syn:["futile","of no use at all","serving no purpose"],
+    ex:[{ s:"The old key is {{}} now.", f:"useless", ko:"그 낡은 열쇠는 이제 쓸모없다." }] },
+
+  { word:"user-friendly", pron:"유저 프렌들리", pos:"adj", level:"B2", meanings:["사용하기 쉬운"],
+    syn:["simple to work with","made for the plain user","needing no manual"],
+    ex:[{ s:"The new app is {{}}.", f:"user-friendly", ko:"새 앱은 사용하기 쉽다." }] },
+
+  /* 교재는 [v+n] 이지만 동사 쪽만 세웠다. */
+  { word:"usher", pron:"어셔", pos:"v", level:"B2", meanings:["안내하다"],
+    syn:["show the way in","lead to a seat","conduct in politely"],
+    ex:[{ s:"A boy will {{}} the guests in.", f:"usher", ko:"한 소년이 손님들을 안내할 것이다." }] },
+
+  /* 승격 ㉙ — ★ 두 갈래의 앞뒤를 바꿨다. '기구' 를 앞에 두면 appliance
+     ((가정용) 기구 · B2/n) 와 눈으로 갈리지 않는데, 두 글자라 자동 배제도 안
+     된다. '기구' 는 둘째 갈래로 남아 device(장치, 기구)·apparatus(장치, 기구)
+     와는 계속 맞물린다. '도구' 는 instrument(악기, 도구) 자리다.
+     ★ 참조 instrument(I) 의 화면에서 두 갈래의 앞뒤가 바뀐다. */
+  { word:"utensil", pron:"유텐설", pos:"n", level:"B2", meanings:["용구","기구"],
+    syn:["instrument","tool for the kitchen","thing used in work"],
+    ex:[{ s:"Each {{}} hangs on its own hook.", f:"utensil", ko:"각 용구가 제 걸이에 걸려 있다." }] },
+
+  /* pragmatic(현실적인, 실리를 따지는 · C1/adj) 와 '실리를 따지는' 이 맞물려
+     배제된다. practical·functional 은 레벨 차가 3·2다. */
+  { word:"utilitarian", pron:"유틸리테리언", pos:"adj", level:"C2", meanings:["실용적인","실리를 따지는"],
+    syn:["pragmatic","made for use not show","valuing what works"],
+    ex:[{ s:"The building is plain and {{}}.", f:"utilitarian", ko:"그 건물은 꾸밈없고 실용적이다." }] },
+
+  /* ★ 첫 뜻을 '유용성' 으로 갈랐다. '공익사업' 은 common good(공익 · C1/n) 을
+     통째로 품는데 '공익' 이 두 글자라 자동 배제가 안 된다. 수능에서도 이 낱말은
+     '유용성' 쪽이 먼저다. 교재 형용사 갈래는 버렸다. */
+  { word:"utility", pron:"유틸러티", pos:"n", level:"B2", meanings:["유용성","공익사업"],
+    syn:["usefulness in practice","a public service firm","water or power supply"],
+    ex:[{ s:"They questioned the {{}} of the plan.", f:"utility", ko:"그들은 그 계획의 유용성을 의문시했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a public service firm": "공공 서비스를 맡은 회사",
   "a troubled feeling": "뒤숭숭한 느낌",
   "against the law": "법에 어긋나는",
   "against what is right": "옳은 바에 어긋나는",
@@ -537,6 +708,7 @@ Object.assign(window.GLOSS, {
   "as bad luck would have it": "운이 나빠서",
   "at the top alone": "혼자 맨 위에 있는",
   "at the very end": "아주 마지막의",
+  "at the very top": "바로 꼭대기에 있는",
   "beat on price": "값으로 이기다",
   "being at one": "한 덩어리로 있음",
   "being out of work": "일자리가 없는 상태",
@@ -548,8 +720,10 @@ Object.assign(window.GLOSS, {
   "bring into open view": "드러난 자리로 내놓다",
   "bring up from hiding": "숨은 데서 끌어내다",
   "caring nothing for it": "도무지 마음을 두지 않는",
+  "change to the good": "좋은 쪽으로 바뀜",
   "changing without warning": "예고 없이 바뀌는",
   "college learner": "대학에서 배우는 사람",
+  "conduct in politely": "공손히 모셔 들이다",
   "deepest of all": "가장 깊은 데 있는",
   "dig out of the ground": "땅에서 캐내다",
   "draw a line under": "~ 아래에 선을 긋다",
@@ -565,8 +739,12 @@ Object.assign(window.GLOSS, {
   "going on and on": "줄곧 이어지는",
   "going on without a stop": "멈춤 없이 이어지는",
   "going one's own way": "제 길을 가는",
+  "good times and bad": "좋을 때와 나쁠 때",
   "hard to foresee": "미리 알기 어려운",
   "having no contender": "맞설 자가 없는",
+  "heave up from below": "아래에서 밀어 올리다",
+  "highest of all": "그중 제일 높은",
+  "hold up from under": "아래에서 버텨 주다",
   "holding everywhere": "어디서나 통하는",
   "holding the same course": "같은 길을 지키는",
   "holding together": "서로 붙어 버팀",
@@ -577,6 +755,7 @@ Object.assign(window.GLOSS, {
   "knocked out cold": "까무러쳐 쓰러진",
   "lack of jobs": "일자리가 모자람",
   "lay open": "펴서 놓다",
+  "lead to a seat": "자리로 이끌다",
   "leaving no doubt": "의문을 남기지 않는",
   "leaving no room for doubt": "의심할 틈을 안 남기는",
   "let go of learning": "익힌 것을 놓아 버리다",
@@ -584,9 +763,12 @@ Object.assign(window.GLOSS, {
   "like no other": "견줄 데가 없는",
   "live through": "견디며 지나다",
   "lying beneath the surface": "겉 아래에 깔린",
+  "made for the plain user": "보통 사람을 위해 만든",
+  "made for use not show": "보이기보다 쓰려고 만든",
   "mark beneath the words": "글자 밑에 표를 하다",
   "meeting no block": "걸리는 데가 없는",
   "more than is right": "옳은 정도를 넘는",
+  "needing no manual": "설명서가 필요 없는",
   "never broken into": "도중에 끊기지 않는",
   "never coming to a stop": "멈추는 일이 없는",
   "never matched before": "전에 견줄 것이 없던",
@@ -608,14 +790,19 @@ Object.assign(window.GLOSS, {
   "not shaken at all": "조금도 흔들리지 않는",
   "not to be doubted": "의심을 살 수 없는",
   "not yet named": "아직 이름 붙지 않은",
+  "of built-up areas": "건물이 들어찬 지역의",
   "of invisible short rays": "눈에 안 보이는 짧은 빛의",
+  "of no use at all": "하나도 쓰이지 않는",
   "of one mind throughout": "처음부터 끝까지 한마음인",
   "of the burning light": "살을 태우는 빛의",
+  "of the town": "고을의",
   "of unknown name": "이름이 알려지지 않은",
   "offer for less": "더 적은 돈에 내놓다",
   "on one's feet again": "다시 두 발로 선",
+  "on top of everything": "모든 것 위에 얹힌",
   "one reading for a first degree": "첫 학위를 향해 배우는 이",
   "open out a roll": "말린 것을 풀다",
+  "open revolt of the people": "백성이 드러내어 일어섬",
   "open to one reading only": "한 가지로만 읽히는",
   "open with a key": "열쇠로 따다",
   "out of keeping with one's ways": "제 방식에 어울리지 않는",
@@ -626,44 +813,69 @@ Object.assign(window.GLOSS, {
   "plain to look at": "보기에 수수한",
   "poorly rewarded": "보답이 초라한",
   "present in every place": "어느 자리에나 있는",
+  "pull up by the roots": "뿌리까지 뽑아내다",
+  "push up in a mass": "한 덩이째 솟구치게 하다",
   "put aside what one was taught": "배운 바를 내려놓다",
+  "raise with force": "힘으로 치켜올리다",
   "rate too low": "값을 너무 낮게 매기다",
+  "rearing of a child": "아이를 길러 냄",
   "regrettably": "애석하게도",
+  "rise after a fall": "떨어진 뒤의 오름",
+  "rough and smooth alike": "험한 길과 순한 길 모두",
   "rule a line below": "밑으로 줄을 대다",
   "sad to say": "안타깝게도",
   "said straight out": "곧바로 내놓고 말한",
   "sell cheaper than": "~보다 싸게 팔다",
   "set about doing": "~하기에 나서다",
   "show for the first time": "처음으로 내보이다",
+  "show the way in": "들어갈 길을 알려 주다",
+  "simple to work with": "다루기 수월한",
   "so as to draw no eye": "눈길을 끌지 않도록",
   "so far and no further": "거기까지만",
   "spread out flat": "납작하게 펴다",
+  "stand behind": "뒤에서 밀어 주다",
   "standing quite alone": "홀로 우뚝 선",
   "state of having no post": "자리를 잃은 형편",
   "staying in the mind for ever": "마음에 오래 남는",
   "staying just as it is": "그대로 머무는",
   "still at an early stage": "아직 이른 단계인",
+  "straight in one's dealings": "하는 일이 곧은",
+  "strung up tight": "바짝 조여진",
   "student not yet graduated": "아직 졸업하지 않은 학생",
   "take on a task": "일을 떠맡다",
   "take the cover off": "덮은 것을 걷다",
   "that cannot be altered": "고칠 수 없는",
   "the only one of its kind": "그 갈래에 하나뿐인",
+  "the way one is reared": "길러지는 방식",
+  "the wrong way up": "위아래가 틀린 채로",
+  "thing used in work": "일에 쓰는 물건",
   "think too little of": "대수롭지 않게 여기다",
   "to a certain line": "일정한 선까지",
   "too many to count": "셀 수 없을 만큼 많은",
   "too slightly to be marked": "알아챌 수 없을 만큼 조금",
+  "tool for the kitchen": "부엌에서 쓰는 연장",
+  "training given at home": "집에서 받는 가르침",
   "true of all": "누구에게나 들어맞는",
+  "turn for the better": "나아지는 쪽으로 돎",
+  "turned over completely": "아주 엎어진 채로",
   "turning up all over": "곳곳에서 나타나는",
+  "turns of fortune": "운이 뒤바뀌는 일",
+  "unable to relax": "도무지 풀어지지 않는",
   "under the waves": "물결 아래의",
   "unlike how one normally is": "보통의 모습과 딴판인",
+  "usefulness in practice": "실제로 쓸모가 있음",
+  "valuing what works": "되는 것을 값지게 보는",
   "want of calm": "차분함이 모자람",
+  "water or power supply": "물이나 전기의 공급",
   "weaken from below": "아래에서부터 무르게 하다",
   "well enough to move": "움직일 만큼 나은",
+  "wipe out entirely": "깡그리 없애다",
   "with no equal": "맞먹는 것이 없는",
   "with no one to match it": "겨룰 이가 없는",
   "with no wish to know": "알고 싶은 마음이 없는",
   "with not one against": "반대가 하나도 없는",
   "with nothing in the way": "길을 막는 것 없이",
+  "with the top at the bottom": "위가 아래로 가서",
   "within limits": "한도 안에서는",
   "without a break": "쉬는 틈이 없는",
   "without any such aim": "그런 속셈이 전혀 없는",

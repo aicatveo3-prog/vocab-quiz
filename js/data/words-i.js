@@ -2183,7 +2183,6 @@ Object.assign(window.GLOSS, {
   "uprightness": "곧음, 청렴",
   "upset stomach": "배탈",
   "uptake": "흡수",
-  "utensil": "기구, 용구",
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",

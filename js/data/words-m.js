@@ -1202,7 +1202,12 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '시의, 지방 자치의' 를 글자까지 지켰다. civic(syn) 이 참조하므로
      원본의 '시립의, 자치제의' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
-  { word:"municipal", pron:"뮤니서펄", pos:"adj", level:"B2", meanings:["시의","지방 자치의"],
+  /* U 세트 14차에서 urban 을 표제어로 세우며 두 갈래의 앞뒤를 바꿨다. urban 의
+     뜻 '도시의' 가 '시의' 를 통째로 품는데, 자동 배제의 품기 검사는 양쪽이 세
+     글자 이상일 때만 돌아서 두 글자 '시의' 는 빠져나간다. 게다가 둘은 레벨 차가
+     1이고 metropolitan 의 유의어 목록에 나란히 서 있다. '지방 자치의' 를 앞으로
+     올려 화면에서 확실히 갈리게 했다. 두 갈래는 다 살아 있고 순서만 바뀐다. */
+  { word:"municipal", pron:"뮤니서펄", pos:"adj", level:"B2", meanings:["지방 자치의","시의"],
     syn:["civic","city-run","local-government"],
     ex:[{ s:"The {{}} library opens on Sundays now.", f:"municipal", ko:"그 시립 도서관은 이제 일요일에도 문을 연다." }] },
 
@@ -1570,7 +1575,6 @@ Object.assign(window.GLOSS, {
   "unpretentious": "잘난 척하지 않는",
   "untidy": "정돈되지 않은",
   "unvarying": "한결같이 똑같은",
-  "urban": "도시의",
   "usually": "대개는",
   "variant": "변이형",
   "vendor": "판매하는 사람",

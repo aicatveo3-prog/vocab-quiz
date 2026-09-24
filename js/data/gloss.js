@@ -1905,7 +1905,6 @@ Object.assign(window.GLOSS, {
   "upper room":"다락방",
   "urbane":"세련된",
   "urbanized":"도시화된",
-  "urge":"충동; 재촉하다",
   "use":"사용; 쓰다",
   "user":"사용자",
   "usual":"보통의, 평소의",

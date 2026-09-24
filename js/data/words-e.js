@@ -2069,7 +2069,6 @@ Object.assign(window.GLOSS, {
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
   "tolerant":"너그러운, 관대한",
-  "uptight":"긴장한, 신경이 날카로운",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
   "wholehearted":"전심전력의, 진심을 다한",
@@ -2288,7 +2287,6 @@ Object.assign(window.GLOSS, {
   "tribal":"부족의",
   "undying":"죽지 않는",
   "unethical":"비윤리적인",
-  "upright":"정직한, 청렴한",
   "well-founded":"근거가 확실한",
 
   /* ── 9차: evaporate ~ excess (28개) ───────────────── */
