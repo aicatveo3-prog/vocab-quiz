@@ -2085,7 +2085,6 @@ Object.assign(window.GLOSS, {
   "retiring": "나서기를 꺼리는",
   "reversed": "뒤집힌",
   "reversible": "되돌릴 수 있는",
-  "reward": "보상",
   "romanticism": "낭만주의",
   "route plan": "경로 계획",
   "sameness": "동일성, 똑같음",

@@ -997,7 +997,6 @@ Object.assign(window.GLOSS, {
   "relief":"안도, 경감",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
-  "retreat":"물러나다, 후퇴하다",
   "rural":"시골의, 지방의",
   "secondhand":"중고의",
   "separate":"분리하다",

@@ -2136,7 +2136,6 @@ Object.assign(window.GLOSS, {
   "oblong":"길둥근, 직사각형의",
   "personify":"체현하다, 의인화하다",
   "put to shame":"부끄럽게 만들다",
-  "retain":"그대로 유지하다",
   "rising":"떠오르는, 상승하는",
   "set in":"끼워 넣다, 박아 넣다",
   "set out":"출발하다, 착수하다",
