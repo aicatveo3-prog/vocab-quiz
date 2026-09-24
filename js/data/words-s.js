@@ -1543,7 +1543,146 @@ window.VOCAB_S = [
      화면은 바뀌지 않는다. */
   { word:"sporadic", pron:"스퍼래딕", pos:"adj", level:"C1", meanings:["산발적인","이따금의"],
     syn:["occasional","now and then","scattered in time"], ant:["continuous"],
-    ex:[{ s:"There was {{}} rain all week.", f:"sporadic", ko:"한 주 내내 산발적인 비가 내렸다." }] }
+    ex:[{ s:"There was {{}} rain all week.", f:"sporadic", ko:"한 주 내내 산발적인 비가 내렸다." }] },
+
+  /* ── 챕터 14 ───────────────────────────────────── */
+  /* 이 세트에서 참조를 가장 많이 손질한 챕터다 — 아홉 곳이다. 승격 열다섯 개
+     가운데 열이 사전의 품사와 어긋나 있었기 때문이다.
+       location(n)   spot → particular place            spot 이 동사로 선다
+       leap off(phr) spring from → jump down from       사전값이 leap off 자신의 뜻이었다
+       drizzle(n)    sprinkle → scattered droplets      sprinkle 이 동사로 선다
+       crawl(v)      ant sprint → run flat out          sprint 가 명사로 선다
+       gallop(v)     sprint → run flat out              같은 이유
+       bud(n)        sprout → unopened flower           sprout 가 동사로 선다
+       barn(n)       stable → outbuilding               stable 이 형용사로 선다
+       bet(v)        stake → put money on               stake 가 명사로 선다
+       chimney(n)    stack → smoke pipe                 stack 이 '더미' 로 선다
+     bud 와 barn 은 챕터 7 에서 한 번 손질한 자리를 다시 손질했다. 그때 함께
+     떼지 못한 것은 sprout·stable 이 아직 표제어가 아니어서, 참조를 다 떼면
+     pron-audit 이 '발음만 남은 유령 키' 로 잡기 때문이다.
+
+     crawl·gallop 의 'run flat out' 에는 사전이 sprint 에 적어 두었던 뜻
+     ('전력으로 달리다') 을 그대로 옮겼다. 낱말만 바뀌고 화면에 뜨는 뜻은
+     달라지지 않는다.
+
+     stack(더미, 무더기) 은 pile(더미, 무더기 · P) 과 글자가 똑같다. 일부러 그렇게
+     두어 서로의 오답에서 자동으로 빠지게 했다 — 그래서 stack 의 syn 에 pile 을
+     넣지 않았다. */
+
+  /* 승격 127 — 사전 첫 갈래만 남겼다. 참조 셋 중 둘(catch a glimpse of·detect)
+     이 동사라 그대로 맞고, 명사인 location(L) 한 곳만 갈았다.
+     ★ '장소' 를 버린 아까운 자리다 — 그쪽은 챕터 9 의 site 와 location 이 맡는다.
+     detect(감지하다, 발견하다) 와 '발견하다' 가 같아 자동 배제된다. */
+  { word:"spot", pron:"스팟", pos:"v", level:"B1", meanings:["발견하다"],
+    syn:["detect","catch a glimpse of","notice at once"],
+    ex:[{ s:"Did you {{}} the error on page two?", f:"spot", ko:"두 쪽의 오류를 발견했나요?" }] },
+
+  /* 승격 128 — 사전 단일값 유지. 참조 bride(B) 의 화면은 바뀌지 않는다. */
+  { word:"spouse", pron:"스파우스", pos:"n", level:"B2", meanings:["배우자"],
+    syn:["bride","husband or wife","married partner"],
+    ex:[{ s:"Please bring your {{}} to the dinner.", f:"spouse", ko:"만찬에 배우자를 데려오세요." }] },
+
+  /* 원본이 [v+n] 이었다. 동사로 세웠다. */
+  { word:"sprain", pron:"스프레인", pos:"v", level:"B2", meanings:["삐다"],
+    syn:["twist a joint","hurt by wrenching","strain a ligament"],
+    ex:[{ s:"Be careful not to {{}} your ankle.", f:"sprain", ko:"발목을 삐지 않도록 조심하라." }] },
+
+  /* 승격 129 — ⚠ 사전값 '뛰어 벗어나다' 는 참조 leap off(뛰어내리다) 자신의
+     뜻을 베낀 것이었다. 실제 뜻으로 세우고 그 한 곳을 갈았다.
+     구·표현이라 예문은 두지 않는다. */
+  { word:"spring from", pron:"스프링 프럼", pos:"phr", level:"C1", meanings:["~에서 비롯되다"],
+    syn:["arise out of","have its origin in","come from as a source"] },
+
+  /* 승격 130 — 사전 둘째 갈래만 남겼다. 명사 '보슬비' 를 쓰고 있던 drizzle(D)
+     의 그 자리를 'scattered droplets' 로 갈았다. 원본의 '간간이 섞다' 는 버렸다. */
+  { word:"sprinkle", pron:"스프링클", pos:"v", level:"B2", meanings:["뿌리다"],
+    syn:["scatter in drops","shake over lightly","dust with"],
+    ex:[{ s:"{{}} a little salt on the eggs.", f:"Sprinkle", ko:"달걀에 소금을 조금 뿌려라." }] },
+
+  /* 승격 131 — 사전은 동사 '전력으로 달리다' 였다. 원본이 앞세운 명사로 세우고
+     동사 자리를 쓰던 crawl(C)·gallop(G) 두 곳을 'run flat out' 으로 갈았다. */
+  { word:"sprint", pron:"스프린트", pos:"n", level:"B2", meanings:["단거리 경주"],
+    syn:["short fast race","dash over a short way","race at full speed"],
+    ex:[{ s:"He won the hundred-metre {{}}.", f:"sprint", ko:"그는 백 미터 단거리 경주에서 이겼다." }] },
+
+  /* 승격 132 — 사전 첫 갈래만 남겼다. 명사 '새싹' 을 쓰고 있던 bud(B) 의 그
+     자리를 'unopened flower' 로 갈았다. */
+  { word:"sprout", pron:"스프라우트", pos:"v", level:"B2", meanings:["싹트다","발아하다"],
+    syn:["come out of the seed","begin to grow","put out shoots"],
+    ex:[{ s:"The beans began to {{}} after three days.", f:"sprout", ko:"콩이 사흘 뒤에 싹트기 시작했다." }] },
+
+  /* 승격 133 — 사전 단일값 유지. 참조 conserve(C)·dissipate(D) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"squander", pron:"스콴더", pos:"v", level:"C2", meanings:["낭비하다"],
+    syn:["dissipate","waste away","throw money about"], ant:["conserve"],
+    ex:[{ s:"Do not {{}} the chance.", f:"squander", ko:"그 기회를 낭비하지 마라." }] },
+
+  /* 승격 134 — 사전은 형용사 '정사각형의' 였다. 원본이 명사와 형용사를 섞어
+     두었고 참조 cube(정육면체) 가 명사여서 명사로 세웠다 — 그 한 곳의 설명이
+     '정사각형의' 에서 '정사각형, 광장' 이 된다. */
+  { word:"square", pron:"스퀘어", pos:"n", level:"B1", meanings:["정사각형","광장"],
+    syn:["four-sided figure","open public space","plaza in a town"],
+    ex:[{ s:"They met in the town {{}}.", f:"square", ko:"그들은 마을 광장에서 만났다." }] },
+
+  /* 승격 135 — 사전 글자 유지. 참조 compress(C)·constrict(C) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"squeeze", pron:"스퀴즈", pos:"v", level:"B1", meanings:["짜다","압박하다"],
+    syn:["compress","constrict","press hard together"],
+    ex:[{ s:"{{}} the lemon over the fish.", f:"Squeeze", ko:"생선 위에 레몬을 짜라." }] },
+
+  /* 승격 136 — 사전 단일값 유지. 참조 equilibrium(E)·instability(I) 두 곳의
+     화면은 바뀌지 않는다. */
+  { word:"stability", pron:"스터빌러티", pos:"n", level:"B2", meanings:["안정성"],
+    syn:["equilibrium","steady state","firmness over time"], ant:["instability"],
+    ex:[{ s:"The bridge gained {{}} from the new pillar.", f:"stability", ko:"그 다리는 새 기둥으로 안정성을 얻었다." }] },
+
+  /* 원본의 '견고하게 하다' 는 버렸다 — 같은 말이다. */
+  { word:"stabilize", pron:"스테이벌라이즈", pos:"v", level:"B2", meanings:["안정시키다"],
+    syn:["make steady","hold firm","keep from shifting"],
+    ex:[{ s:"They worked to {{}} the wall.", f:"stabilize", ko:"그들은 그 벽을 안정시키려 애썼다." }] },
+
+  /* 승격 137 — 사전 첫 갈래만 남겼다. '마구간' 을 쓰고 있던 barn(B) 의 그
+     자리를 'outbuilding' 으로 갈았다. */
+  { word:"stable", pron:"스테이블", pos:"adj", level:"B1", meanings:["안정된"],
+    syn:["not likely to change","firm in place","steady and sure"],
+    ex:[{ s:"His condition is now {{}}.", f:"stable", ko:"그의 상태는 이제 안정되었다." }] },
+
+  /* 승격 138 — 사전 둘째 갈래만 남겼다. 굴뚝 뜻으로 쓰고 있던 chimney(C) 의 그
+     자리를 'smoke pipe' 로 갈았다. pile(더미, 무더기 · P) 과 글자가 똑같아
+     서로의 오답에서 자동으로 빠진다 — 그래서 syn 에 pile 을 넣지 않았다. */
+  { word:"stack", pron:"스택", pos:"n", level:"B2", meanings:["더미","무더기"],
+    syn:["heap of things","pile of stuff","things laid one on another"],
+    ex:[{ s:"A {{}} of plates stood by the sink.", f:"stack", ko:"접시 더미가 개수대 옆에 서 있었다." }] },
+
+  { word:"staff", pron:"스태프", pos:"n", level:"B1", meanings:["직원","간부"],
+    syn:["group of workers","team of employees","hired people of a place"],
+    ex:[{ s:"The hotel hired more {{}} for summer.", f:"staff", ko:"그 호텔은 여름을 위해 직원을 더 뽑았다." }] },
+
+  /* 승격 139 — 사전 첫 갈래만 남겼다. 참조는 없다. stumble(넘어지다 · 챕터 17)
+     과는 '비틀거리다' 로 갈랐다. */
+  { word:"stagger", pron:"스태거", pos:"v", level:"B2", meanings:["비틀거리다"],
+    syn:["walk unsteadily","reel while walking","sway as one walks"],
+    ex:[{ s:"He began to {{}} down the hall.", f:"stagger", ko:"그는 복도를 비틀거리며 내려갔다." }] },
+
+  { word:"stagnant", pron:"스태그넌트", pos:"adj", level:"C1", meanings:["고여 있는","침체된"],
+    syn:["not flowing","at a standstill","dull and unmoving"],
+    ex:[{ s:"The pond water was {{}}.", f:"stagnant", ko:"그 못의 물은 고여 있었다." }] },
+
+  /* 승격 140 — 사전은 '얼룩; 더럽히다' 였다. 참조가 없어 원본 앞 갈래인 명사로
+     세웠다 — 화면이 바뀌는 곳은 없다. */
+  { word:"stain", pron:"스테인", pos:"n", level:"B2", meanings:["얼룩"],
+    syn:["dirty mark","spot of dirt","patch of colour left"],
+    ex:[{ s:"There is a dark {{}} on the rug.", f:"stain", ko:"깔개에 짙은 얼룩이 있다." }] },
+
+  /* 승격 141 — 사전의 쌍반점만 쉼표로 갈랐다. '내기' 는 담지 않았고, 그 뜻으로
+     쓰고 있던 bet(B) 의 자리를 'put money on' 으로 갈았다. */
+  { word:"stake", pron:"스테이크", pos:"n", level:"B2", meanings:["지분","말뚝"],
+    syn:["share in a firm","pointed post","holding in a business"],
+    ex:[{ s:"She holds a small {{}} in the company.", f:"stake", ko:"그녀는 그 회사에 작은 지분을 갖고 있다." }] },
+
+  { word:"stale", pron:"스테일", pos:"adj", level:"B2", meanings:["상한","김빠진"],
+    syn:["no longer fresh","gone flat","old and dry"],
+    ex:[{ s:"The bread has gone {{}}.", f:"stale", ko:"그 빵이 상했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1568,9 +1707,11 @@ Object.assign(window.GLOSS, {
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "area of concern": "맡아 다루는 자리",
+  "arise out of": "~에서 생겨나다",
   "army officer of low rank": "계급이 낮은 군 간부",
   "as of the present": "현재로서는",
   "ask earnestly": "간절히 청하다",
+  "at a standstill": "멈춰 선",
   "at one and the same time": "같은 때에 한꺼번에",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
@@ -1583,6 +1724,7 @@ Object.assign(window.GLOSS, {
   "beg for": "~을 애걸하다",
   "begin a task": "일에 손을 대다",
   "begin and stay": "시작해 이어지다",
+  "begin to grow": "자라기 시작하다",
   "black profile": "검게 보이는 옆모습",
   "block by sorting": "가려서 막다",
   "block the flow of": "~의 흐름을 막다",
@@ -1631,6 +1773,8 @@ Object.assign(window.GLOSS, {
   "close look": "바짝 들여다봄",
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
+  "come from as a source": "근원으로 삼아 나오다",
+  "come out of the seed": "씨에서 나오다",
   "come to rest": "자리를 잡고 멈추다",
   "comfort in sorrow": "슬픔 속의 다독임",
   "coming of itself": "저절로 나오는",
@@ -1652,6 +1796,7 @@ Object.assign(window.GLOSS, {
   "damage on purpose": "고의로 해를 입히다",
   "dark in intent": "속뜻이 어두운",
   "dark outline": "어두운 테두리",
+  "dash over a short way": "짧은 거리를 내달림",
   "dazzling in scale": "규모가 눈부신",
   "dazzling to see": "보기에 눈부신",
   "deep sadness": "깊은 슬픔",
@@ -1661,6 +1806,7 @@ Object.assign(window.GLOSS, {
   "delicacy of response": "반응의 고움",
   "deliverance": "해방, 벗어남",
   "dig out and raise": "파서 들어 올리다",
+  "dirty mark": "더러워진 자리",
   "dirty water from homes": "집에서 나온 더러운 물",
   "disappointing": "실망스러운",
   "discharge from a gland": "샘에서 나온 것",
@@ -1678,6 +1824,8 @@ Object.assign(window.GLOSS, {
   "drop away": "떨어져 나가다",
   "drop below the surface": "물낯 아래로 내려가다",
   "drunk": "술에 취한",
+  "dull and unmoving": "가라앉아 움직이지 않는",
+  "dust with": "~을 솔솔 얹다",
   "ease into without notice": "티 안 나게 스며들다",
   "easily affected": "쉽게 영향을 받는",
   "easing of grief": "시름을 덜어 줌",
@@ -1704,6 +1852,8 @@ Object.assign(window.GLOSS, {
   "filled with fear": "두려움에 찬",
   "fineness of feeling": "느낌의 섬세함",
   "fire a weapon": "무기를 발사하다",
+  "firm in place": "자리가 단단한",
+  "firmness over time": "오래 버티는 든든함",
   "fix the place of": "~의 자리를 정하다",
   "flavor with spice": "향신료로 맛을 내다",
   "flavouring from plants": "식물에서 얻은 맛내기",
@@ -1713,6 +1863,7 @@ Object.assign(window.GLOSS, {
   "fly far above": "저 위로 날다",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
+  "four-sided figure": "네 변으로 된 꼴",
   "free from harm": "해를 입지 않는",
   "free of debt": "빚이 없는",
   "free of flaws": "흠이 없는",
@@ -1744,6 +1895,7 @@ Object.assign(window.GLOSS, {
   "go under water": "물밑으로 들어가다",
   "going by that name": "그 이름으로 통하는",
   "going on at once": "한꺼번에 진행되는",
+  "gone flat": "기운이 빠진",
   "gracefully thin": "맵시 있게 마른",
   "grand and bright": "웅장하고 환한",
   "grand sight": "웅장한 볼거리",
@@ -1751,6 +1903,7 @@ Object.assign(window.GLOSS, {
   "grant for study": "공부에 주는 지원금",
   "grave manner": "무게 있는 몸가짐",
   "greet with respect": "예를 갖춰 맞이하다",
+  "group of workers": "일하는 사람들의 무리",
   "group that breeds together": "서로 번식하는 무리",
   "guard with a cover": "덮어서 지키다",
   "guarding oneself": "제 몸을 지킴",
@@ -1766,10 +1919,12 @@ Object.assign(window.GLOSS, {
   "hard right through": "속까지 굳은",
   "hard to come by": "구하기 어려운",
   "hardly ever": "좀체 ~ 없는",
+  "have its origin in": "~에 뿌리를 두다",
   "haven": "안식처",
   "having funds to settle": "갚을 자금이 있는",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
+  "heap of things": "물건을 쌓아 놓은 것",
   "heap upon": "~에 수북이 얹다",
   "heavy heart": "무거운 마음",
   "held by one alone": "한 사람만 가진",
@@ -1777,12 +1932,17 @@ Object.assign(window.GLOSS, {
   "highly developed": "매우 발달한",
   "hinting at evil": "나쁜 기미를 띤",
   "hired hand": "품을 받고 일하는 사람",
+  "hired people of a place": "그곳에 고용된 사람들",
   "hit flat-handed": "손을 펴서 때리다",
+  "hold firm": "단단히 붙들다",
   "hold up": "붙들어 늦추다",
+  "holding in a business": "사업에 대한 보유분",
   "hot-tasting addition": "매운맛을 더하는 것",
   "household helper": "집안일을 돕는 사람",
   "hugely exciting": "크게 들뜨게 하는",
   "hunt for": "뒤져서 구하다",
+  "hurt by wrenching": "비틀려 다치다",
+  "husband or wife": "남편이나 아내",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
   "in some degree": "얼마간은",
@@ -1792,9 +1952,11 @@ Object.assign(window.GLOSS, {
   "ironic in tone": "말투가 반어적인",
   "join by writing in": "적어 넣어 들어가다",
   "jot down roughly": "대충 적어 두다",
+  "jump down from": "~에서 뛰어 내려오다",
   "just a bit": "아주 살짝",
   "keen-edged": "날이 선",
   "keep apart from others": "남들과 떨어뜨려 두다",
+  "keep from shifting": "움직이지 않게 두다",
   "keep one's dignity": "품위를 지키다",
   "keep out of the way": "걸리지 않게 두다",
   "keep races or sexes apart": "인종이나 성별을 떼어 두다",
@@ -1842,11 +2004,13 @@ Object.assign(window.GLOSS, {
   "make a rough sound asleep": "잠결에 거친 소리를 내다",
   "make plain": "알기 쉽게 하다",
   "make sorrowful": "애석하게 만들다",
+  "make steady": "흔들리지 않게 하다",
   "make sure of": "틀림없이 해 두다",
   "make water fly": "물이 날게 하다",
   "male seed cell": "수컷의 씨세포",
   "mark left by a wound": "상처가 남긴 자리",
   "mark of one's own": "제 것임을 보이는 표",
+  "married partner": "혼인한 짝",
   "mass killing": "무리를 죽임",
   "meant truly": "참으로 한 말인",
   "melting in water": "물에서 풀리는",
@@ -1871,11 +2035,14 @@ Object.assign(window.GLOSS, {
   "narrowed to one field": "한 분야로 좁혀진",
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
+  "no longer fresh": "더는 싱싱하지 않은",
   "non-commissioned officer": "임관하지 않은 간부",
   "none left to buy": "살 것이 남지 않은",
   "not deep": "깊지 않은",
   "not drunk": "술기운이 없는",
+  "not flowing": "흐르지 않는",
   "not in use now": "지금 쓰지 않는",
+  "not likely to change": "달라질 것 같지 않은",
   "not new": "새것이 아닌",
   "not of the body": "몸에 속하지 않은",
   "not often": "자주 ~ 않는",
@@ -1884,6 +2051,7 @@ Object.assign(window.GLOSS, {
   "not taking all": "다 받지는 않는",
   "note-taking in signs": "기호로 받아 적기",
   "nothing but": "다른 것 없이 오직",
+  "notice at once": "단번에 알아채다",
   "of area and place": "면적과 자리에 속한",
   "of bodily pleasure": "몸의 즐거움에 속한",
   "of small width": "폭이 작은",
@@ -1895,6 +2063,7 @@ Object.assign(window.GLOSS, {
   "of this world": "이 세상에 속한",
   "office assistant": "사무를 돕는 사람",
   "official approval": "공식 승인",
+  "old and dry": "묶고 마른",
   "older member of society": "사회의 연장자",
   "on one's own": "혼자 힘으로",
   "on the face of it": "겉으로 보면",
@@ -1909,35 +2078,43 @@ Object.assign(window.GLOSS, {
   "one's own kin": "제 살붙이",
   "one's written name": "제가 적은 이름",
   "oozing out": "스며 나옴",
+  "open public space": "열린 공공의 자리",
   "openness to beauty": "아름다움에 열린 마음",
   "orbiting station": "궤도 위의 기지",
   "out of danger": "위험에서 벗어난",
   "out of puff": "숨이 가쁜",
+  "outbuilding": "딴채",
   "painful to touch": "닿으면 아픈",
   "panting hard": "숨을 몰아쉬는",
   "part cut from a whole": "전체에서 잘라 낸 몫",
   "part cut off": "잘라 낸 몫",
   "part of the economy": "경제의 한 몫",
   "part one gets": "차지하는 부분",
+  "particular place": "어느 한 자리",
+  "patch of colour left": "색이 남은 자리",
   "pay tribute to": "~에게 찬사를 보내다",
   "period of meeting": "모임이 이어지는 기간",
   "pick out from the rest": "나머지에서 집어내다",
   "picky": "까다롭게 고르는",
+  "pile of stuff": "짐을 겹쳐 놓은 것",
   "place in position": "자리에 놓다",
   "place newly lived in": "새로 들어와 사는 곳",
   "plainness": "꾸밈없음",
   "plant seed": "씨를 심다",
+  "plaza in a town": "고을의 넓은 터",
   "pleasing": "즐거움을 주는",
   "pleasing to the body": "몸에 즐거운",
   "plot of ground": "땅의 한 구획",
   "point of no more": "더 못 받는 지점",
   "point to just one": "딱 하나를 짚다",
+  "pointed post": "뾰족한 기둥",
   "port city": "항만이 있는 도시",
   "portion due": "받을 몫",
   "pour in plenty": "넉넉히 쏟다",
   "pour out": "쏟아 내다",
   "pour out unmeant": "뜻 없이 쏟아 내다",
   "pre-owned": "앞서 주인이 있던",
+  "press hard together": "세게 맞눌러 붙이다",
   "pretend to have": "가진 척하다",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
@@ -1945,8 +2122,10 @@ Object.assign(window.GLOSS, {
   "pure and simple": "다름 아닌",
   "push behind schedule": "일정보다 뒤로 밀다",
   "put an end to a dispute": "다툼을 끝맺다",
+  "put money on": "~에 돈을 걸다",
   "put on an act of": "~인 척 연기하다",
   "put one's name down for": "~에 이름을 올려 두다",
+  "put out shoots": "새순을 내다",
   "put seed in the ground": "땅에 씨를 넣다",
   "put to one side": "옆으로 밀어 두다",
   "put ~ into action": "~을 실제로 돌리다",
@@ -1957,6 +2136,7 @@ Object.assign(window.GLOSS, {
   "quiet a distress": "괴로움을 잠잠하게 하다",
   "quiet of one's own": "제 것인 고요",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
+  "race at full speed": "온 힘으로 달리는 겨루기",
   "rain down on": "~에 비처럼 내리다",
   "raise the shoulders": "어깨를 올리다",
   "rarely": "좀처럼 ~ 않는",
@@ -1966,6 +2146,7 @@ Object.assign(window.GLOSS, {
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
   "reduce to basics": "기본만 남기다",
+  "reel while walking": "걷다가 휘청하다",
   "refined in taste": "취향이 다듬어진",
   "relief from pain": "아픔을 덜어 줌",
   "reproductive cell of a male": "수컷의 생식 세포",
@@ -1984,6 +2165,7 @@ Object.assign(window.GLOSS, {
   "rules for staying safe": "안전하게 지내는 규칙",
   "rumble while sleeping": "자면서 그렁거리다",
   "run away downward": "아래로 내리 치닫다",
+  "run flat out": "전력으로 달리다",
   "run of days": "이어지는 며칠",
   "run one's eye over": "눈으로 쭉 지나가다",
   "run to and fro": "이리저리 다니다",
@@ -1998,6 +2180,8 @@ Object.assign(window.GLOSS, {
   "sample for study": "살펴보려고 뽑은 것",
   "saving from sin": "죄에서 건져 냄",
   "scatter grain": "곡식 씨를 흩다",
+  "scatter in drops": "방울로 흩다",
+  "scattered droplets": "흩날리는 물방울",
   "scattered in time": "때가 띄엄띄엄한",
   "science of social life": "사회 생활을 다루는 학문",
   "scour with a brush": "솔로 닦아 내다",
@@ -2019,14 +2203,17 @@ Object.assign(window.GLOSS, {
   "set in a spot": "한 자리에 앉히다",
   "set order": "정해진 차례",
   "settle in for a while": "한동안 눌러앉다",
+  "shake over lightly": "가볍게 흔들어 얹다",
   "shake with cold": "추위로 떨다",
   "shake with horror": "끔찍함에 떨다",
   "shape against the light": "빛을 등진 꼴",
+  "share in a firm": "회사에 가진 몫",
   "sharp fall in trade": "거래의 급한 떨어짐",
   "sharp in taste": "맛이 톡 쏘는",
   "shed tears noisily": "시끄럽게 눈물을 흘리다",
   "shelter from sun": "볕을 가려 주는 곳",
   "shoot up fast": "빠르게 치솟다",
+  "short fast race": "짧고 빠른 경주",
   "short period": "짧은 동안",
   "show one does not care": "대수롭지 않다는 몸짓을 하다",
   "showing good judgment": "판단이 옳은",
@@ -2047,6 +2234,7 @@ Object.assign(window.GLOSS, {
   "smack": "철썩 치다",
   "smash into bits": "조각조각 깨뜨리다",
   "smell in short breaths": "짧게 숨 쉬며 냄새를 맡다",
+  "smoke pipe": "연기가 나가는 관",
   "sneak past customs": "세관을 몰래 지나다",
   "sneering": "코웃음 치는",
   "snuffle": "코를 훌쩍이다",
@@ -2062,6 +2250,7 @@ Object.assign(window.GLOSS, {
   "split into parts": "여러 몫으로 쪼갬",
   "spooky": "으스스한",
   "spot for building": "집을 세울 자리",
+  "spot of dirt": "때가 묶은 점",
   "spread beyond bounds": "테두리를 넘어 퍼지다",
   "spread from one end to the other": "한끝에서 다른 끝까지의 펼침",
   "squad leader": "분대를 이끄는 사람",
@@ -2073,8 +2262,11 @@ Object.assign(window.GLOSS, {
   "state of being alone": "혼자인 상태",
   "state of being full": "가득 찬 상태",
   "state of being shut away": "틀어박혀 있는 상태",
+  "steady and sure": "고르고 믿음직한",
+  "steady state": "흔들림 없는 상태",
   "stenography": "기호 필기법",
   "stirring the senses": "감각을 흔드는",
+  "strain a ligament": "힘줄을 무리하게 하다",
   "stranded after a sinking": "배가 가라앉아 발이 묶인",
   "stretch from end to end": "끝에서 끝까지의 뻗침",
   "stretch of weather": "한동안 이어진 날씨",
@@ -2088,6 +2280,7 @@ Object.assign(window.GLOSS, {
   "supreme power": "가장 높은 권력",
   "surrounding of a town": "고을을 둘러쌈",
   "surroundings of a scene": "장면을 둘러싼 것들",
+  "sway as one walks": "걸으며 몸이 기울다",
   "take by force": "힘으로 빼앗다",
   "take hold": "뿌리를 내리다",
   "take in and hide": "받아들여 숨겨 주다",
@@ -2098,6 +2291,7 @@ Object.assign(window.GLOSS, {
   "talk of the town": "장안의 이야깃거리",
   "tart": "새콤한",
   "taste one enjoys": "즐기는 맛",
+  "team of employees": "고용된 사람들의 한 조",
   "tender and raw": "쓰라리고 여린",
   "tender mood": "다정한 마음결",
   "term of study": "공부하는 기간",
@@ -2106,7 +2300,9 @@ Object.assign(window.GLOSS, {
   "thin in amount": "양이 얇은",
   "thin in form": "꼴이 가는",
   "thing everyone speaks of": "모두가 입에 올리는 것",
+  "things laid one on another": "하나씩 얹어 놓은 것들",
   "thinking no further ahead": "더 멀리 생각하지 않는",
+  "throw money about": "돈을 함부로 쓰다",
   "throw out as useless": "쓸모없다고 내버리다",
   "throw water about": "물을 끼얹다",
   "throwing pole with a blade": "날이 달린 던지는 장대",
@@ -2131,8 +2327,10 @@ Object.assign(window.GLOSS, {
   "try to get": "얻으려 애쓰다",
   "turn of duty": "맡는 차례",
   "turn off at the source": "근원에서 잠그다",
+  "twist a joint": "관절을 뒤틀다",
   "unable to breathe easily": "숨쉬기가 어려운",
   "unease at being watched": "보여지는 데서 오는 불편함",
+  "unopened flower": "아직 피지 않은 꽃",
   "until this point": "이 시점까지",
   "unwanted result": "바라지 않은 결과",
   "up to now": "이제까지",
@@ -2145,7 +2343,9 @@ Object.assign(window.GLOSS, {
   "vie with others": "남들과 겨루다",
   "view coloured by feeling": "느낌이 물든 생각",
   "view of the land": "땅이 보이는 모습",
+  "walk unsteadily": "흔들리며 걷다",
   "ward off": "막아 내다",
+  "waste away": "헛되이 써 버리다",
   "waste disposal system": "오물 처리 체계",
   "waste water": "버려지는 물",
   "way out of trouble": "곤란에서 벗어날 길",

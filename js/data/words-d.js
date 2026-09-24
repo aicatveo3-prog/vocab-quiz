@@ -1382,7 +1382,10 @@ window.VOCAB_D = [
     syn:["repel","chase away","fend off"] },
 
   { word:"drizzle", pron:"드리즐", pos:"n", level:"B2", meanings:["이슬비","가랑비"],
-    syn:["light rain","mist","sprinkle"],
+    /* ★ syn 의 "sprinkle" 을 "scattered droplets" 로 바꿨다. 사전이 '보슬비;
+       뿌리다' 로 명사와 동사를 섞어 두었는데 S 세트에서는 동사 '뿌리다' 로 선다 —
+       명사 목록에 동사가 끼게 된다. */
+    syn:["light rain","mist","scattered droplets"],
     ex:[{ s:"A fine {{}} fell steadily all through the morning.", f:"drizzle", ko:"아침 내내 가랑비가 꾸준히 내렸다." }] },
 
   { word:"drop by", pron:"드랍 바이", pos:"phr", level:"B2", meanings:["잠깐 들르다","불시에 찾다"],
@@ -1923,7 +1926,6 @@ Object.assign(window.GLOSS, {
   "sleepy":"졸린, 졸음이 오는",
   "snooze":"눈을 붙이다, 잠깐 자다",
   "speechless":"말을 잃은, 말이 안 나오는",
-  "sprinkle":"보슬비; 뿌리다",
   "stop by":"잠시 들르다",
   "strikingly":"놀랄 만큼, 두드러지게",
   "suspect":"의심스러운; 의심하다",

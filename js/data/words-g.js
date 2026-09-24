@@ -43,7 +43,9 @@ window.VOCAB_G = [
     ex:[{ s:"Our solar system sits on the edge of a spiral {{}}.", f:"galaxy", ko:"우리 태양계는 나선 은하의 가장자리에 있다." }] },
 
   { word:"gallop", pron:"갤럽", pos:"v", level:"B2", meanings:["질주하다","전속력으로 달리다"],
-    syn:["sprint","dash","bolt"], ant:["trudge"],
+    /* ★ syn 의 "sprint" 를 "run flat out" 으로 바꿨다 — crawl(C) 과 같은 이유다.
+       뜻('전력으로 달리다') 은 그대로다. */
+    syn:["run flat out","dash","bolt"], ant:["trudge"],
     ex:[{ s:"The horses {{}} across the open field every morning.", f:"gallop", ko:"말들은 아침마다 열린 들판을 질주한다." }] },
 
   /* 승격 ① — GLOSS '도박하다; 모험' 과 같은 갈래다. bet 의 유의어로 쓰인다.

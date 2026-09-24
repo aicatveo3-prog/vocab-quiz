@@ -428,7 +428,10 @@ window.VOCAB_C = [
     ex:[{ s:"The evening turned {{}} as soon as the sun set.", f:"chilly", ko:"해가 지자마자 저녁이 쌀쌀해졌다." }] },
 
   { word:"chimney", pron:"침니", pos:"n", level:"B1", meanings:["굴뚝"],
-    syn:["flue","stack","vent"],
+    /* ★ syn 의 "stack" 을 "smoke pipe" 로 바꿨다. stack 은 S 세트에서 '더미,
+       무더기' 로 선다 — 굴뚝 뜻과는 맞지 않는다(사전값 '쌓다; 더미' 도 이미
+       어긋나 있었다). */
+    syn:["flue","smoke pipe","vent"],
     ex:[{ s:"Smoke rose straight from the {{}} in the still air.", f:"chimney", ko:"고요한 공기 속에서 연기가 굴뚝에서 곧게 올라갔다." }] },
 
   { word:"choke", pron:"초크", pos:"v", level:"B2", meanings:["질식시키다","숨이 막히다"],
@@ -1739,7 +1742,11 @@ window.VOCAB_C = [
     ex:[{ s:"A sudden {{}} for sugar hit her at midnight.", f:"craving", ko:"자정에 갑작스러운 단것에 대한 욕구가 그녀를 덮쳤다." }] },
 
   { word:"crawl", pron:"크롤", pos:"v", level:"B1", meanings:["기어가다","서행하다"],
-    syn:["creep","inch","slither"], ant:["sprint"],
+    /* ★ ant 의 "sprint" 를 "run flat out" 으로 바꿨다. sprint 는 S 세트에서
+       명사 '단거리 경주' 로 선다 — 동사인 이 표제어의 반의어 자리에 명사가
+       들어가게 된다. 사전이 적어 둔 뜻('전력으로 달리다') 을 그대로 옮겨
+       화면 뜻은 달라지지 않게 했다. */
+    syn:["creep","inch","slither"], ant:["run flat out"],
     ex:[{ s:"The baby began to {{}} at seven months.", f:"crawl", ko:"그 아기는 7개월에 기기 시작했다." }] },
 
   { word:"craze", pron:"크레이즈", pos:"n", level:"C1", meanings:["대유행","열풍"],
@@ -2057,8 +2064,6 @@ Object.assign(window.GLOSS, {
   "single-sex":"남녀를 구분한",
   "soggy":"축축한, 질척한",
   "soldier":"군인",
-  "sprint":"전력으로 달리다",
-  "squander":"낭비하다",
   "stagnate":"고이다, 정체되다",
   "stalemate":"교착 상태",
   "stare":"응시하다, 빤히 보다",
