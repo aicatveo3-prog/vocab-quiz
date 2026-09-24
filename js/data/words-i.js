@@ -2034,7 +2034,6 @@ Object.assign(window.GLOSS, {
   "payment plan": "납입 계획",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
-  "permeate": "배어들다",
   "permissive": "제약이 느슨한",
   "person-to-person": "사람과 사람 사이의",
   "personally": "개인적으로, 직접",
