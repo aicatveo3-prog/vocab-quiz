@@ -1507,10 +1507,8 @@ Object.assign(window.GLOSS, {
   "parable":"우화, 비유담",
   "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
-  "trail":"뒤처져 따라가다",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",
-  "turn to":"~에 도움을 청하다",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
   "vogue":"유행, 인기",
@@ -1696,7 +1694,6 @@ Object.assign(window.GLOSS, {
   "taste":"맛, 미각",
   "tax-related":"세금에 관한",
   "thrash about":"몸부림치다",
-  "top-notch":"최고 수준의",
   "torch":"손전등",
   "unyielding":"굽히지 않는",
   "wave up and down":"위아래로 흔들다",
@@ -1749,7 +1746,6 @@ Object.assign(window.GLOSS, {
   "take flight":"달아나다",
   "thrive":"잘 자라다",
   "toss":"던져 올리다",
-  "turn over":"돌려 뒤집다",
   "work the joint":"관절을 움직이다",
 
   /* ── 7차: flutter ~ foremost (49개) ───────────────
@@ -1798,7 +1794,6 @@ Object.assign(window.GLOSS, {
   "state of flow":"흘러 움직이는 상태",
   "stomach upset from food":"음식으로 생긴 배앓이",
   "temple area":"관자놀이 쪽",
-  "tread":"발걸음",
   "trophic chain":"영양 단계의 사슬",
 
   /* ── 8차: foresee ~ fountain (39개) ───────────────

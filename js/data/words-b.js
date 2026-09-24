@@ -1041,7 +1041,6 @@ Object.assign(window.GLOSS, {
   "suffer from":"~로 고통받다",
   "sweet":"단, 달콤한",
   "sweetness":"단맛, 감미로움",
-  "timid":"겁 많은, 소심한",
   "undermine":"약화시키다",
   "unilateral":"일방적인, 한쪽만의",
   "wealthy":"부유한",

@@ -155,7 +155,9 @@ window.VOCAB_H = [
 
   /* 원본 오류 수정 — '유령이 나타나다' 에 타동사 뜻을 추가했다 (0차 기록). */
   { word:"haunt", pron:"혼트", pos:"v", level:"B2", meanings:["머릿속을 떠나지 않다","귀신이 나타나다"],
-    syn:["plague","torment","obsess"],
+    /* ★ syn 의 "torment" 을 "weigh on the mind of" 로 바꿨다 — afflict(A) 와 같은
+       이유다. torment 이 명사로 선다. */
+    syn:["plague","weigh on the mind of","obsess"],
     ex:[{ s:"Memories of the accident still {{}} him at night.", f:"haunt", ko:"그 사고의 기억이 아직도 밤마다 그를 괴롭힌다." }] },
 
   { word:"have ~ in common", pron:"해브 인 커먼", pos:"phr", level:"B1", meanings:["~을 공통으로 지니다"],
@@ -666,7 +668,6 @@ Object.assign(window.GLOSS, {
   "touching":"감동적인",
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
-  "toxic":"유독한",
   "tradition":"전통",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",

@@ -138,26 +138,26 @@ transact	v	C1	거래하다	deal in 과 맞물려 배제
 transaction	n	B2	거래|처리	신규
 transcend	v	C1	초월하다	신규
 transcendence	n	C2	초월|뛰어넘음	★교재 '탁월' 은 transcend 에 없는 뜻이라 버렸다
-transcribe	v	C1	복사하다|베끼다	신규
+transcribe	v	C1	베끼다|옮겨 적다	duplicate(복제하다 · C1/v) 와 '복사하다' 가 너무 가까워 갈랐다
 transcript	n	B2	성적 증명서|필기록	신규
 transfer	v	B1	옮기다|이동하다	relocate 와 '옮기다' 로 맞물려 배제
 transform	v	B1	변환하다|바꾸다	사전 글자 유지(참조 convert). '변형시키다' 는 deform 자리
 transfuse	v	C2	수혈하다|주입하다	신규
 transient	adj	C1	오래 가지 않는	사전 단일값 유지(참조 momentary). '일시적인' 은 temporary 자리
 transit	n	B2	수송|환승	교재 네 갈래 → 둘
-transition	n	B2	전이|이행	신규
+transition	n	B2	이행|전이	★ 첫 뜻을 '이행' 으로 — '전이' 는 transmission(전송) 과 눈으로 갈리지 않는다
 transmission	n	B2	전송	신규
 transmit	v	B2	전달하다|전송하다	사전 글자 유지(참조 두 곳). convey 와 맞물려 배제
 transnational	adj	C1	다국적의|초국가적인	multinational 과 맞물려 배제
 transparent	adj	B2	투명한	사전 단일값 유지(참조 crystal-clear). '명백한' 은 U 세트 자리
 transplant	v	B2	이식하다	교재 [v+n] → 동사
-transport	v	B1	수송하다|이동시키다	아래 transportation(명사) 과 품사로 갈랐다
-transportation	n	B1	교통|운송	신규
+transport	v	B1	수송하다|실어 옮기다	transfer·relocate 의 '옮기다' 를 품어 자동 배제된다
+transportation	n	B1	교통|수송	위 transit 의 '수송' 과 글자를 맞춰 자동 배제시켰다
 trap	v	B1	가두다|덫에 빠뜨리다	사전 글자 유지(참조 entangle). confine 과 맞물려 배제
 trash	n	B1	폐기물	사전 단일값 유지(참조 litter). '쓰레기' 는 filth 자리
-traumatic	adj	C1	대단히 충격적인|정신적 외상의	신규
+traumatic	adj	C1	정신적 외상의|충격적인	horrendous(충격적인)·outrageous(너무나 충격적인) 와 맞물려 배제
 traverse	v	C2	가로지르다|횡단하다	교재 명사 갈래 버림
-treacherous	adj	C1	믿을 수 없는	사전 단일값 유지(참조 insidious). '기만적인' 은 deceptive 자리
+treacherous	adj	C1	배신하는|믿을 수 없는	★ 영→한 선택지는 첫 뜻만 쓴다 — '믿을 수 없는' 이 앞이면 incredible 과 갈리지 않는다
 tread	n	C1	발걸음	사전 단일값 유지(참조 footstep). 교재 동사 갈래 버림
 treasure	v	B1	소중히 하다	★사전 첫 갈래(참조 cherish 가 동사다). 교재의 '보물' 을 버린 아까운 자리
 treatise	n	C2	논문	paper 와 맞물려 배제. thesis(학위 논문) 와도 맞물린다
@@ -165,7 +165,7 @@ treaty	n	B2	조약|협정	신규
 tremble	v	B1	부들부들 떨다	사전 글자 유지 — '떨다' 로 두면 shiver 의 syn 안에서 quiver 와 설명이 같아진다
 tremendous	adj	B2	거대한|굉장한	enormous·massive·monumental 과 맞물려 배제
 trend	n	B1	추세|유행	사전 글자 유지(참조 두 곳). '경향' 은 inclination 자리
-trendy	adj	B2	최신 유행의	교재 명사 갈래 버림
+trendy	adj	B2	유행을 따르는|최신 유행의	★ 첫 뜻을 갈랐다 — '최신 유행의' 는 state-of-the-art(최신의) 와 눈으로 안 갈린다
 trespass	v	C1	무단으로 들어가다	사전 단일값 유지(참조 intrude)
 trial	n	B1	재판|시도	교재 세 갈래 → 둘
 trial and error	phr	B2	시행착오	신규
@@ -188,7 +188,7 @@ tumble	v	B2	굴러 떨어지다	신규
 tumor	n	B2	종양	교재 '종기' 는 boil 뜻이라 버렸다
 turmoil	n	C1	혼란|소동	사전 글자 유지(참조 두 곳). disruption 과 맞물려 배제
 turn down	phr	B1	물리치다	사전 단일값 유지(참조 reject). '거절하다' 는 reject·decline 자리
-turn in	phr	B1	돌려주다|반납하다	restore 와 '돌려주다' 로 맞물려 배제
+turn in	phr	B1	반납하다|돌려주다	★ 첫 뜻을 갈랐다 — 같은 챕터 turn over(돌려 뒤집다) 와 '돌려' 로 겹친다
 turn out	phr	B1	결과적으로 ~이 되다	사전 단일값 유지(참조 end up)
 turn over	phr	B1	돌려 뒤집다	사전 단일값 유지(참조 flip)
 turn to	phr	B1	~에 도움을 청하다	사전 단일값 유지. '~에 의지하다' 는 fall back on 자리

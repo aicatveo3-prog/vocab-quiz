@@ -1353,7 +1353,6 @@ Object.assign(window.GLOSS, {
   "torn from its setting": "놓인 자리에서 떼어 낸",
   "trinket": "자잘한 장신구",
   "turn upside down": "위아래를 뒤바꾸다",
-  "typical": "으레 그런",
   "tyrannical": "폭압을 휘두르는",
   "under way at present": "지금 진행 중인",
   "underweight": "몸무게가 모자란",

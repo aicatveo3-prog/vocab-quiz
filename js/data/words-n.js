@@ -664,7 +664,6 @@ Object.assign(window.GLOSS, {
   "to say nothing of": "~은 말할 나위 없이",
   "token-level": "형식만 갖춘",
   "too small to count": "셀 가치가 없을 만큼 작은",
-  "trifling": "대수롭지 않은",
   "true account": "실제 있었던 이야기",
   "tuck oneself in": "몸을 들이밀다",
   "unable to feel": "느낄 수 없는",

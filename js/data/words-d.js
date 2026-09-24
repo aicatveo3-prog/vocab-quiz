@@ -1510,8 +1510,6 @@ Object.assign(window.GLOSS, {
   "swing":"흔들리다, 흔들다",
   "time limit":"제한 시간",
   "trade in":"~을 거래하다",
-  "trick":"속이다; 속임수",
-  "trickery":"속임수, 사기",
   "unravel":"풀다, 밝혀내다",
   "venture":"과감히 하다; 모험",
   "virtue":"미덕, 덕목",
@@ -1631,7 +1629,6 @@ Object.assign(window.GLOSS, {
   "thick":"두꺼운; 빽빽한",
   "thickness":"두께, 진함",
   "thoroughness":"철저함, 빈틈없음",
-  "torrent":"급류; 빗발",
   "unhinged":"정신이 이상해진",
   "use up":"다 써 버리다",
   "warehouse":"창고, 저장고",
@@ -1933,7 +1930,6 @@ Object.assign(window.GLOSS, {
   "taper off":"점차 줄어들다",
   "thanks to":"~덕분에",
   "tug":"세게 당기다",
-  "twofold":"두 겹의, 두 배의",
   "upturn":"상승, 호전",
   "welcome":"반기다, 환영하다"
 });
