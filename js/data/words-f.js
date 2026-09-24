@@ -1796,7 +1796,6 @@ Object.assign(window.GLOSS, {
   "people":"사람들",
   "permitted":"허용된",
   "predator chain":"포식 관계의 사슬",
-  "predetermined":"미리 정해진",
   "premonition":"미리 드는 느낌",
   "prohibited":"금지된",
   "projection":"추정치",
