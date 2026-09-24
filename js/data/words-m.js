@@ -1539,7 +1539,6 @@ Object.assign(window.GLOSS, {
   "staffed": "인원이 배치된",
   "standardized": "표준으로 정해진",
   "stationary": "고정된",
-  "steer": "방향을 조종하다",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
   "structural": "구조상의",

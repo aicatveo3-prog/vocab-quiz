@@ -514,7 +514,10 @@ window.VOCAB_D = [
     ex:[{ s:"The letter was clearly written by someone {{}}.", f:"deranged", ko:"그 편지는 분명히 정신이 나간 사람이 쓴 것이었다." }] },
 
   { word:"derive", pron:"디라이브", pos:"v", level:"C1", meanings:["얻다","비롯되다"],
-    syn:["obtain","gain","stem"], ant:["give up"],
+    /* ★ syn 의 "stem" 을 "stem from" 으로 바꿨다. 사전이 stem 의 뜻을
+       '유래하다, 생기다' 로 적어 두었지만 그것은 stem from 쪽 뜻이다. stem 은
+       S 세트에서 명사 '줄기' 로 서고, 동사 뜻은 같은 챕터의 stem from 이 받는다. */
+    syn:["obtain","gain","stem from"], ant:["give up"],
     ex:[{ s:"Many English words {{}} from Latin roots.", f:"derive", ko:"많은 영어 단어가 라틴어 어근에서 비롯된다." }] },
 
   /* 자리표시자 a·b 는 발음하지 않는다 (ascribe a to b 선례).
@@ -1494,7 +1497,6 @@ Object.assign(window.GLOSS, {
   "remains":"유물, 잔존물",
   "rot":"썩다, 부패하다",
   "rubble":"돌무더기, 파편",
-  "stem from":"~에서 유래하다",
   "sunrise":"해돋이, 일출",
   "swing":"흔들리다, 흔들다",
   "time limit":"제한 시간",
@@ -1618,7 +1620,6 @@ Object.assign(window.GLOSS, {
   "self-government":"자치",
   "set off":"출발하다, 떠나다",
   "sparse":"드문, 희박한",
-  "stem":"유래하다, 생기다",
   "stemming from":"~에서 유래하는",
   "strenuous":"격렬한, 몸이 힘든",
   "taxing":"부담이 큰, 힘겨운",

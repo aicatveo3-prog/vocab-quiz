@@ -661,7 +661,6 @@ Object.assign(window.GLOSS, {
   "squeaky":"삐걱거리는",
   "stature":"키, 신장",
   "steamy":"후텁지근한",
-  "stiffen":"뻣뻣하게 하다",
   "terrifying":"공포스러운",
   "theorize":"이론을 세우다",
   "theory":"이론",
