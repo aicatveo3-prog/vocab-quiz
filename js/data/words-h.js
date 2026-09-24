@@ -663,7 +663,6 @@ Object.assign(window.GLOSS, {
   "steamy":"후텁지근한",
   "terrifying":"공포스러운",
   "theorize":"이론을 세우다",
-  "theory":"이론",
   "touching":"감동적인",
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",

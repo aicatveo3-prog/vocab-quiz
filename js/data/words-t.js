@@ -359,7 +359,121 @@ window.VOCAB_T = [
   /* 승격 ㉖ — 사전 단일값 유지(참조 frighten). */
   { word:"terrify", pron:"테러파이", pos:"v", level:"B2", meanings:["몹시 두렵게 하다"],
     syn:["frighten","fill with dread","scare badly"],
-    ex:[{ s:"Loud noises {{}} the dog.", f:"terrify", ko:"큰 소리가 그 개를 몹시 두렵게 한다." }] }
+    ex:[{ s:"Loud noises {{}} the dog.", f:"terrify", ko:"큰 소리가 그 개를 몹시 두렵게 한다." }] },
+
+  /* ── 챕터 4 ────────────────────────────────────── */
+  /* 승격 여섯이 모두 사전 글자를 그대로 쓴다 — 기존 화면이 한 곳도 바뀌지 않는
+     챕터다. 손질할 참조도 없다.
+
+     ★ territory 가 이 챕터에서 가장 조심한 자리다. 교재는 '영역, 구역; 영토,
+     영지; 분야' 로 '영역' 을 앞세웠는데, '영역' 은 이미 네 낱말이 쓰고 있다 —
+     spectrum(영역 · S 단일값!) · sphere(영역, 범위 · S) · domain(영역, 분야) ·
+     realm(영역, 왕국). 특히 spectrum 이 '영역' 한 갈래뿐이라 territory 를 거기
+     끼우면 한→영 문제에서 프롬프트가 완전히 같아진다. 사전값 '영토, 구역' 을
+     지켜 그 덩어리를 비켜 갔다 — 참조 colony·continent·habitat 도 모두 그쪽이다.
+
+     theme 은 외래어 '테마' 를 걷고 '주제' 한 갈래로 두었다. subject(주제, 대상 ·
+     S) 와 글자가 맞물려 자동 배제된다.
+     testify(증언하다, 증명하다) 는 attest(증명하다, 증언하다) 와 두 갈래가 앞뒤로
+     맞물린다 — 어느 쪽으로 견주어도 자동 배제된다. */
+
+  { word:"territorial", pron:"테러토리얼", pos:"adj", level:"C1", meanings:["영토의","세력권을 주장하는"],
+    syn:["of a land's borders","guarding one's ground","to do with territory"],
+    ex:[{ s:"The birds are highly {{}}.", f:"territorial", ko:"그 새들은 세력권을 강하게 주장한다." }] },
+
+  /* 승격 ㉗ — ★ 사전 글자 유지(참조 colony·continent·habitat 세 곳). 교재가
+     앞세운 '영역' 은 spectrum·sphere·domain·realm 자리라 쓰지 않았다. */
+  { word:"territory", pron:"테러토리", pos:"n", level:"B1", meanings:["영토","구역"],
+    syn:["colony","continent","habitat"],
+    ex:[{ s:"The tribe defended its {{}}.", f:"territory", ko:"그 부족은 자기 영토를 지켰다." }] },
+
+  /* '간단한' 은 brief(잠시 동안의, 간단한) 자리라 버렸다. */
+  { word:"terse", pron:"터스", pos:"adj", level:"C2", meanings:["간결한","군더더기 없는"],
+    syn:["short and to the point","said in few words","clipped in style"],
+    ex:[{ s:"He gave a {{}} reply.", f:"terse", ko:"그는 간결한 답을 했다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"test tube", pron:"테스트 튜브", pos:"phr", level:"B2", meanings:["시험관"],
+    syn:["glass tube for tests","lab tube","thin vessel for samples"] },
+
+  /* attest(증명하다, 증언하다) 와 두 갈래가 앞뒤로 맞물려 자동 배제된다. */
+  { word:"testify", pron:"테스터파이", pos:"v", level:"B2", meanings:["증언하다","증명하다"],
+    syn:["attest","give evidence","state under oath"],
+    ex:[{ s:"She agreed to {{}} at the trial.", f:"testify", ko:"그녀는 재판에서 증언하기로 했다." }] },
+
+  /* 교재 '증거; 추천서; 기념물' 세 갈래 → 하나. '증거' 는 evidence 자리다. */
+  { word:"testimonial", pron:"테스터모니얼", pos:"n", level:"C2", meanings:["추천서"],
+    syn:["letter of praise","written reference","note vouching for one"],
+    ex:[{ s:"He brought a {{}} from his last boss.", f:"testimonial", ko:"그는 전 상사의 추천서를 가져왔다." }] },
+
+  /* 승격 ㉘ — 사전 단일값 유지(참조 evidence). evidence(증거, 증언) 와 '증언' 이
+     맞물려 자동 배제된다. */
+  { word:"testimony", pron:"테스터모니", pos:"n", level:"B2", meanings:["증언"],
+    syn:["evidence","words given in court","sworn account"],
+    ex:[{ s:"Her {{}} changed the case.", f:"testimony", ko:"그녀의 증언이 그 사건을 바꿨다." }] },
+
+  /* 승격 ㉙ — 사전 글자 유지(참조 fabric). fabric(직물, 천) 과 '직물' 이 맞물려
+     자동 배제된다. */
+  { word:"textile", pron:"텍스타일", pos:"n", level:"B2", meanings:["직물","섬유 제품"],
+    syn:["fabric","woven cloth","made-up cloth goods"],
+    ex:[{ s:"The town lived on {{}} work.", f:"textile", ko:"그 고을은 직물 일로 살았다." }] },
+
+  { word:"texture", pron:"텍스처", pos:"n", level:"B1", meanings:["질감"],
+    syn:["feel of a surface","how it feels to touch","grain of a material"],
+    ex:[{ s:"The cloth has a rough {{}}.", f:"texture", ko:"그 천은 거친 질감을 지녔다." }] },
+
+  /* conversely(거꾸로, 반대로) 와 글자를 통째로 맞춰 자동 배제시켰다.
+     구·표현이라 예문은 두지 않는다. */
+  { word:"the other way around", pron:"디 아더 웨이 어라운드", pos:"phr", level:"B2", meanings:["거꾸로","반대로"],
+    syn:["conversely","in reverse","the opposite way"] },
+
+  { word:"theatrical", pron:"시애트리컬", pos:"adj", level:"C1", meanings:["연극의","극장의"],
+    syn:["of the stage","to do with plays","done for show"],
+    ex:[{ s:"She has a {{}} background.", f:"theatrical", ko:"그녀는 연극 쪽 배경을 지녔다." }] },
+
+  { word:"theft", pron:"세프트", pos:"n", level:"B2", meanings:["절도","도난"],
+    syn:["act of stealing","taking what is not one's own","larceny"],
+    ex:[{ s:"The shop reported a {{}}.", f:"theft", ko:"그 가게는 절도를 신고했다." }] },
+
+  /* ★ 외래어 '테마' 를 걷었다. subject(주제, 대상 · S) 와 글자가 맞물려 자동
+     배제된다. */
+  { word:"theme", pron:"씸", pos:"n", level:"B1", meanings:["주제"],
+    syn:["subject","main idea","thread running through"],
+    ex:[{ s:"Water is the {{}} of the show.", f:"theme", ko:"물이 그 전시의 주제다." }] },
+
+  { word:"theology", pron:"씨알러지", pos:"n", level:"C1", meanings:["신학"],
+    syn:["study of religion","learning about god","doctrine of faith"],
+    ex:[{ s:"He studied {{}} for four years.", f:"theology", ko:"그는 사 년 동안 신학을 공부했다." }] },
+
+  /* 승격 ㉚ — 사전 단일값 유지. 참조 abstract(A)·empirical(E) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"theoretical", pron:"시어레티컬", pos:"adj", level:"B2", meanings:["이론적인"],
+    syn:["abstract","based on theory","not yet tried out"], ant:["empirical"],
+    ex:[{ s:"The gain is purely {{}} so far.", f:"theoretical", ko:"지금까지 그 이득은 순전히 이론적이다." }] },
+
+  /* 승격 ㉛ — 사전 단일값 유지(참조 hypothesis). 교재의 '학설, 추측' 은 버렸다. */
+  { word:"theory", pron:"씨어리", pos:"n", level:"B1", meanings:["이론"],
+    syn:["hypothesis","set of ideas to explain","reasoned account"],
+    ex:[{ s:"The {{}} fits the data well.", f:"theory", ko:"그 이론은 자료에 잘 맞는다." }] },
+
+  /* 교재 '치료상의, 치료법의' 는 같은 말이라 다듬었다. */
+  { word:"therapeutic", pron:"세러퓨틱", pos:"adj", level:"C1", meanings:["치료의","병을 다스리는"],
+    syn:["healing in effect","good for the body","serving to cure"],
+    ex:[{ s:"Warm baths have a {{}} effect.", f:"therapeutic", ko:"따뜻한 목욕은 치료의 효과가 있다." }] },
+
+  /* 승격 ㉜ — 사전 글자 유지. 참조 acupuncture(A)·chemotherapy(C) 두 곳의
+     화면은 바뀌지 않는다. 교재의 '치료법' 은 remedy 자리다. */
+  { word:"therapy", pron:"세러피", pos:"n", level:"B1", meanings:["치료","요법"],
+    syn:["acupuncture","chemotherapy","course of treatment"],
+    ex:[{ s:"She began {{}} last spring.", f:"therapy", ko:"그녀는 지난봄에 치료를 시작했다." }] },
+
+  { word:"thereafter", pron:"데어애프터", pos:"adv", level:"C1", meanings:["그 후"],
+    syn:["from then on","after that time","following that"],
+    ex:[{ s:"{{}} the rule was never used.", f:"Thereafter", ko:"그 후 그 규칙은 한 번도 쓰이지 않았다." }] },
+
+  { word:"thermometer", pron:"서마미터", pos:"n", level:"B2", meanings:["온도계"],
+    syn:["heat gauge","tool for measuring warmth","glass with a scale"],
+    ex:[{ s:"The {{}} showed thirty degrees.", f:"thermometer", ko:"온도계가 삼십 도를 가리켰다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -368,6 +482,8 @@ Object.assign(window.GLOSS, {
   "able to be touched": "손에 닿을 수 있는",
   "accept the honour of": "~의 명예를 받아들이다",
   "act despite danger": "위험을 안고 움직이다",
+  "act of stealing": "훔치는 짓",
+  "after that time": "그때 뒤에",
   "agree to do": "하기로 응하다",
   "aimed at one group": "한 무리를 겨눈",
   "allowed against tax": "세금에 맞서 인정되는",
@@ -376,6 +492,7 @@ Object.assign(window.GLOSS, {
   "assume without asking": "묻지 않고 그러리라 여기다",
   "awfully": "무척",
   "bank clerk at a window": "창구에 앉은 은행 직원",
+  "based on theory": "이론에 바탕을 둔",
   "be answerable for": "~에 답할 처지가 되다",
   "be praised for": "~로 칭찬을 받다",
   "be proud of": "~을 뿌듯해하다",
@@ -392,13 +509,17 @@ Object.assign(window.GLOSS, {
   "charge on goods brought in": "들여온 물품에 붙는 값",
   "cheer up": "기운을 차리다",
   "claim the merit of": "~의 공을 제 것이라 하다",
+  "clipped in style": "말투가 짧게 끊기는",
   "come out for a side": "한쪽 편을 드러내다",
+  "course of treatment": "치료를 이어 가는 과정",
   "cutting one's taxable sum": "과세 대상 액수를 줄이는",
   "declare one's position": "제 입장을 밝히다",
   "degree of heat": "더운 정도",
   "directed at a set goal": "정해진 목표로 향한",
   "do something about it": "그것에 대해 손을 쓰다",
+  "doctrine of faith": "믿음의 가르침",
   "dogged": "악착같은",
+  "done for show": "보이기 위해 하는",
   "dragging on and on": "끝없이 늘어지는",
   "draw with an offer": "제안으로 끌어당기다",
   "duty at the border": "국경에서 매기는 부과금",
@@ -407,24 +528,42 @@ Object.assign(window.GLOSS, {
   "enticing thing": "구미를 당기는 것",
   "fail to value": "값지게 보지 못하다",
   "feel encouraged": "힘이 나다",
+  "feel of a surface": "표면이 주는 느낌",
   "fill with dread": "두려움으로 채우다",
+  "following that": "그에 이어",
   "forbidden thing": "해서는 안 되는 것",
+  "from then on": "그때부터",
   "gain courage": "용기를 얻다",
   "gentle with people": "사람에게 순한",
+  "give evidence": "증거를 대다",
+  "glass tube for tests": "실험에 쓰는 유리관",
+  "glass with a scale": "눈금이 있는 유리 기구",
+  "good for the body": "몸에 좋은",
+  "grain of a material": "재료의 결",
   "ground and its shape": "땅과 그 생김새",
+  "guarding one's ground": "제 터를 지키는",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
+  "healing in effect": "낫게 하는 효과가 있는",
+  "heat gauge": "더운 정도를 재는 기구",
   "holding on hard": "끈덕지게 붙드는",
   "house of worship": "예배를 드리는 집",
   "how hot or cold it is": "덥거나 찬 정도",
+  "how it feels to touch": "만졌을 때의 느낌",
+  "in reverse": "뒤에서 앞으로",
   "in terms of tactics": "전술로 보아",
   "inborn make-up": "타고난 됨됨이",
   "keeping within limits": "선을 넘지 않는",
+  "lab tube": "실험실용 관",
+  "larceny": "재물을 훔침",
   "last stop": "마지막 정차지",
   "lasting a short while": "잠깐만 가는",
   "leaning one way": "한쪽으로 기우는 결",
+  "learning about god": "신에 대한 배움",
+  "letter of praise": "칭찬을 적은 편지",
   "level to the ground": "땅바닥까지 밀다",
   "lie of the land": "땅이 놓인 모양",
+  "made-up cloth goods": "천으로 만든 물품",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
   "mild in climate": "기후가 순한",
@@ -436,8 +575,12 @@ Object.assign(window.GLOSS, {
   "needle in jest": "장난으로 콕콕 찌르다",
   "not meant to stay": "머물 뜻이 없는",
   "not yet settled": "아직 정해지지 않은",
+  "not yet tried out": "아직 해 보지 않은",
+  "note vouching for one": "사람을 보증해 주는 글",
   "occupier paying rent": "셋돈을 내고 사는 사람",
+  "of a land's borders": "나라 경계에 관한",
   "of applied science": "응용 학문에 속한",
+  "of the stage": "무대에 속한",
   "official who takes tax": "세금을 받는 관리",
   "one trained in a craft": "한 기예를 배운 사람",
   "one who counts cash": "현금을 세는 사람",
@@ -463,31 +606,46 @@ Object.assign(window.GLOSS, {
   "reading on a thermometer": "온도계가 가리키는 값",
   "real to the hand": "손으로 느껴지는",
   "really good": "참으로 좋은",
+  "reasoned account": "따져서 세운 설명",
   "refuse to accept": "받아들이기를 거부하다",
   "refusing to let go": "놓기를 마다하는",
   "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
+  "said in few words": "몇 마디로 말한",
   "scare badly": "몹시 겁주다",
+  "serving to cure": "낫게 하는 데 쓰이는",
+  "set of ideas to explain": "설명하려고 세운 생각의 묶음",
   "set of special words": "특별한 말들의 묶음",
   "set period": "정해진 기간",
+  "short and to the point": "짧고 요점만 있는",
   "shrine building": "신을 모신 건물",
   "skilled worker": "솜씨를 익힌 일꾼",
   "social ban": "사회가 금하는 것",
   "speed of a piece": "곡이 흐르는 빠르기",
   "splendid to see": "보기에 훌륭한",
   "state of feeling": "감정의 상태",
+  "state under oath": "선서하고 말하다",
   "step into the role of": "~의 자리를 이어받다",
+  "study of religion": "종교를 다루는 학문",
   "sum owed to government": "정부에 내야 할 몫",
+  "sworn account": "선서한 진술",
   "take the lead": "앞장서다",
+  "taking what is not one's own": "남의 것을 가져감",
   "tax on imports": "들여오는 물건에 매기는 세금",
   "term in a post": "자리를 맡는 기간",
+  "the opposite way": "맞은 쪽으로",
+  "thin vessel for samples": "시료를 담는 가는 그릇",
   "think it is owed": "받아야 할 것이라 여기다",
+  "thread running through": "전체를 꿰는 실마리",
   "tightness in the air": "공기가 팽팽한 느낌",
   "to a great degree": "큰 정도로",
+  "to do with plays": "연극에 관한",
   "to do with technique": "기법에 관한",
+  "to do with territory": "영토에 관한",
   "to do with time": "시간에 관한",
+  "tool for measuring warmth": "따뜻함을 재는 도구",
   "turn of mind": "마음이 기우는 결",
   "urge one should resist": "물리쳐야 할 충동",
   "very much indeed": "참으로 많이",
@@ -496,5 +654,8 @@ Object.assign(window.GLOSS, {
   "with a plan in mind": "계획을 두고",
   "withdraw what one said": "한 말을 거두어들이다",
   "word for a thing": "사물을 가리키는 말",
-  "words of a field": "한 분야의 말들"
+  "words given in court": "법정에서 한 말",
+  "words of a field": "한 분야의 말들",
+  "woven cloth": "짜서 만든 천",
+  "written reference": "글로 써 준 신원 보증"
 });

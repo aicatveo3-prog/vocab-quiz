@@ -1507,7 +1507,6 @@ Object.assign(window.GLOSS, {
   "parable":"우화, 비유담",
   "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
-  "textile":"직물, 섬유 제품",
   "trail":"뒤처져 따라가다",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",

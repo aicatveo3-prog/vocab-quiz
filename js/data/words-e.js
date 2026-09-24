@@ -2315,7 +2315,6 @@ Object.assign(window.GLOSS, {
   "shine":"두각을 나타내다",
   "special case":"특수한 경우",
   "tax dodging":"탈세",
-  "testimony":"증언",
   "too much":"너무 많은 것",
   "ultimately":"궁극적으로",
   "vaporize":"기화시키다",
