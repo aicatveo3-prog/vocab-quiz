@@ -1,8 +1,8 @@
 /**
- * words-i.js 검사 — 매 차수마다 돌린다.
+ * words-q.js 검사 — 매 차수마다 돌린다.
  *
- *   node tools/words-i-audit.js           전체 검사
- *   node tools/words-i-audit.js --rules   규칙별 검사 건수 (죽은 검사 탐지)
+ *   node tools/words-q-audit.js           전체 검사
+ *   node tools/words-q-audit.js --rules   규칙별 검사 건수 (죽은 검사 탐지)
  *
  * 검사 6종
  *   ① 스키마        필수 필드 / meanings 개수 / pron 한글 / 표제어 중복
@@ -34,7 +34,7 @@ function load(rel) {
  'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/gloss.js', 'js/data/pron.js',
  'js/quizgen.js'].forEach(load);
 
-var SET = window.VOCAB_I || [];
+var SET = window.VOCAB_Q || [];
 var ALL = window.Quiz.ALL;
 var GLOSS = window.GLOSS || {}, PRON = window.PRON || {};
 var Q = window.Quiz;
@@ -62,7 +62,7 @@ SET.forEach(function (x) {
   else if (!/^[가-힣\s·\-]+$/.test(x.pron)) errors.push(at + ' pron 에 한글 아닌 문자: ' + x.pron);
 
   var l = x.word.toLowerCase();
-  if (seen[l]) errors.push(at + ' I 세트 안에서 표제어 중복');
+  if (seen[l]) errors.push(at + ' P 세트 안에서 표제어 중복');
   seen[l] = 1;
   var other = ALL.filter(function (w) { return w.word.toLowerCase() === l; });
   if (other.length > 1) errors.push(at + ' 다른 세트와 표제어 중복');
@@ -171,7 +171,7 @@ function tally(key) {
 }
 
 /* ── 출력 ─────────────────────────────────── */
-console.log('── words-i.js 검사 ─────────────────────────');
+console.log('── words-q.js 검사 ─────────────────────────');
 console.log('표제어 : ' + SET.length + '개');
 console.log('품사   : ' + tally('pos'));
 console.log('레벨   : ' + tally('level'));
