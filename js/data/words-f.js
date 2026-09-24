@@ -1509,7 +1509,6 @@ Object.assign(window.GLOSS, {
   "sham":"겉치레의, 거짓된",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",
-  "turn to":"~에 도움을 청하다",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
   "vogue":"유행, 인기",
@@ -1747,7 +1746,6 @@ Object.assign(window.GLOSS, {
   "take flight":"달아나다",
   "thrive":"잘 자라다",
   "toss":"던져 올리다",
-  "turn over":"돌려 뒤집다",
   "work the joint":"관절을 움직이다",
 
   /* ── 7차: flutter ~ foremost (49개) ───────────────

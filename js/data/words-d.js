@@ -1930,7 +1930,6 @@ Object.assign(window.GLOSS, {
   "taper off":"점차 줄어들다",
   "thanks to":"~덕분에",
   "tug":"세게 당기다",
-  "twofold":"두 겹의, 두 배의",
   "upturn":"상승, 호전",
   "welcome":"반기다, 환영하다"
 });

@@ -2200,7 +2200,6 @@ Object.assign(window.GLOSS, {
   "stamina":"체력, 지구력",
   "staying power":"버티는 힘",
   "threatened":"위협받는",
-  "turn out":"결과적으로 ~이 되다",
   "unending":"그침이 없는",
   "vouch for":"보증하다",
   "wind up":"결국 ~에 이르다",

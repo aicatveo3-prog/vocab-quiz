@@ -1181,7 +1181,153 @@ window.VOCAB_T = [
   /* 위 trifling(대수롭지 않은) 과 다음 챕터 trivial(사소한) 과 갈랐다. */
   { word:"trivia", pron:"트리비아", pos:"n", level:"C1", meanings:["하찮은 정보","일반 상식"],
     syn:["odd bits of knowledge","small facts of little weight","general knowledge titbits"],
-    ex:[{ s:"His head is full of {{}}.", f:"trivia", ko:"그의 머리는 하찮은 정보로 가득하다." }] }
+    ex:[{ s:"His head is full of {{}}.", f:"trivia", ko:"그의 머리는 하찮은 정보로 가득하다." }] },
+
+  /* ══ 10차 · trivial ~ tyranny (20단어) — T 세트 마지막 ════════════════════
+     승격 11 · 신규 9
+
+     손볼 자리가 하나였다.
+       ★ turn in  돌려주다, 반납하다 → **반납하다, 돌려주다**
+         같은 챕터에 turn over(돌려 뒤집다) 가 있어 둘 다 '돌려' 로 시작한다.
+         영→한 선택지에는 첫 뜻만 뜨니 나란히 놓이면 갈리지 않는다. turn in 은
+         참조가 없는 신규라 순서를 바꾸는 것이 공짜다 — turn over 는 참조
+         flip(F) 이 있어 사전값을 지켰다. 두 갈래가 다 살아 있으므로
+         restore(돌려주다, 복원하다 · B1/v) 와 맞물리는 것도 그대로다.
+
+     turn 으로 시작하는 구가 다섯에 명사 turnover 까지 여섯이 한자리에 있다.
+     다행히 다섯 구가 모두 참조를 하나씩 끼고 있어 사전값을 지키면 서로
+     갈린다. turnover 는 명사라 품사로 떨어진다.
+       turn down  물리치다              ← reject      · drive off(물리치다) 와 맞물림
+       turn in    반납하다, 돌려주다     ← (신규)      · restore 와 맞물림
+       turn out   결과적으로 ~이 되다    ← end up
+       turn over  돌려 뒤집다           ← flip
+       turn to    ~에 도움을 청하다      ← fall back on
+       turnover   이직률, 거래액         ← (신규)
+
+     나머지는 손대지 않아도 자동으로 갈린다.
+       trivial         ← minor(사소한, 작은) 와 글자가 같다
+       trunk           ← chest(가슴, 상자) 와 '상자' 가 같다
+       trustworthiness ← reliability(신뢰성) 와 '신뢰성' 이 같다
+       trustworthy     ← reliable 과 유의어 관계다
+       turmoil         ← disruption(중단, 혼란)·anarchy(무정부 상태, 혼란) 와 '혼란' 이 같다
+       twofold         ← dual 과 유의어 관계다
+       tyranny         ← autocracy 와 유의어 관계다
+
+     tuition(수업료) 은 lesson(교훈, 수업) 과 '수업' 을 나눠 쓰지만 두 글자라
+     자동 배제가 안 된다. 다만 첫 뜻이 '수업료' 와 '교훈' 이어서 화면에서는
+     확실히 갈린다. tutor(가정교사, 강사) 와 tutoring(과외 지도) 은 공통
+     접두사가 다섯 글자('tutor') 여서 어근 검사(여섯 글자)에 안 걸리는데,
+     첫 뜻이 '가정교사' 와 '과외 지도' 로 분명히 달라 그대로 두었다.
+
+     ★ typical 은 교재와 사전이 갈렸다(교재 '전형적인' / 사전 '으레 그런').
+     교재 쪽을 앞세우고 사전값을 둘째 갈래로 살렸다. 참조는 odd(O) 의 반의어
+     한 곳뿐이고, 그 화면은 '으레 그런' → '전형적인, 으레 그런' 으로 한 줄
+     늘어난다. */
+
+  /* 승격 80 — 사전 단일값 유지. 참조 다섯 곳(minor 유의어, considerable·
+     critical·grave·momentous 반의어) 의 화면은 바뀌지 않는다. minor(사소한,
+     작은) 와 글자가 맞물려 배제된다. */
+  { word:"trivial", pron:"트리비얼", pos:"adj", level:"B1", meanings:["사소한"],
+    syn:["minor","of little weight","not worth troubling over"], ant:["considerable","momentous"],
+    ex:[{ s:"Do not fuss over a {{}} slip.", f:"trivial", ko:"사소한 실수로 법석 떨지 마라." }] },
+
+  { word:"tropical", pron:"트라피컬", pos:"adj", level:"B1", meanings:["열대의","열대성의"],
+    syn:["of the hot zone","found near the equator","of steamy climates"],
+    ex:[{ s:"The island has a {{}} climate.", f:"tropical", ko:"그 섬은 열대 기후를 지녔다." }] },
+
+  /* 승격 81 — 사전의 쌍반점만 쉼표로 갈랐다(참조 chest). 교재의 '줄기' 는
+     stem(줄기 · S) 자리라 버렸다. chest(가슴, 상자) 와 '상자' 가 맞물려
+     배제된다. */
+  { word:"trunk", pron:"트렁크", pos:"n", level:"B1", meanings:["몸통","상자"],
+    syn:["chest","main body of a thing","big travelling case"],
+    ex:[{ s:"The {{}} of the statue is broken.", f:"trunk", ko:"그 조상의 몸통이 깨졌다." }] },
+
+  /* reliability(신뢰성 · B2/n) 와 글자가 맞물려 배제된다. */
+  { word:"trustworthiness", pron:"트러스트워디니스", pos:"n", level:"C1", meanings:["신뢰성","신용"],
+    syn:["reliability","being worthy of trust","soundness of character"],
+    ex:[{ s:"The bank checked his {{}} first.", f:"trustworthiness", ko:"그 은행은 그의 신용을 먼저 살폈다." }] },
+
+  /* 승격 82 — 사전 단일값 유지(참조 reliable). */
+  { word:"trustworthy", pron:"트러스트워디", pos:"adj", level:"B2", meanings:["믿음이 가는"],
+    syn:["reliable","safe to trust","true to one's word"],
+    ex:[{ s:"He is a {{}} witness.", f:"trustworthy", ko:"그는 믿음이 가는 증인이다." }] },
+
+  /* '수업' 은 lesson(교훈, 수업 · B1/n) 자리라 쓰지 않았다. 첫 뜻이 '수업료'
+     와 '교훈' 이어서 화면에서 확실히 갈린다. */
+  { word:"tuition", pron:"투이션", pos:"n", level:"B2", meanings:["수업료"],
+    syn:["fee for teaching","charge for a course","money paid to study"],
+    ex:[{ s:"The {{}} went up again.", f:"tuition", ko:"그 수업료가 또 올랐다." }] },
+
+  { word:"tumble", pron:"텀블", pos:"v", level:"B2", meanings:["굴러 떨어지다"],
+    syn:["fall head over heels","come down in a heap","roll down"],
+    ex:[{ s:"The boxes began to {{}}.", f:"tumble", ko:"그 상자들이 굴러 떨어지기 시작했다." }] },
+
+  /* ★ 교재의 '종기' 는 boil 의 뜻이어서 버렸다. */
+  { word:"tumor", pron:"투머", pos:"n", level:"B2", meanings:["종양"],
+    syn:["lump of bad growth","swelling of cells","growth in the body"],
+    ex:[{ s:"The scan found a small {{}}.", f:"tumor", ko:"그 영상이 작은 종양을 찾아냈다." }] },
+
+  /* 승격 83 — 사전 글자 유지. 참조 chaos(C)·disruption(D) 두 곳의 화면은
+     바뀌지 않는다. disruption(중단, 혼란)·anarchy(무정부 상태, 혼란) 와
+     '혼란' 이 맞물려 배제된다. */
+  { word:"turmoil", pron:"터모일", pos:"n", level:"C1", meanings:["혼란","소동"],
+    syn:["chaos","disruption","wild commotion"],
+    ex:[{ s:"The city was in {{}} all week.", f:"turmoil", ko:"그 도시는 한 주 내내 혼란에 빠져 있었다." }] },
+
+  /* 승격 84 — 사전 단일값 유지(참조 reject). '거절하다' 는 reject(거절하다,
+     배척하다) 자리다. drive off(쫓아버리다, 물리치다 · C1/phr) 와 '물리치다'
+     가 맞물려 배제된다. */
+  { word:"turn down", pron:"턴 다운", pos:"phr", level:"B1", meanings:["물리치다"],
+    syn:["reject","say no to","refuse outright"] },
+
+  /* ★ 첫 뜻을 '반납하다' 로 올렸다. 같은 챕터 turn over(돌려 뒤집다) 와 둘 다
+     '돌려' 로 시작하면 영→한 선택지에서 갈리지 않는다. 둘째 갈래 '돌려주다'
+     는 그대로 살아 있어 restore(돌려주다, 복원하다 · B1/v) 와 맞물린다. */
+  { word:"turn in", pron:"턴 인", pos:"phr", level:"B1", meanings:["반납하다","돌려주다"],
+    syn:["hand back","give up what was lent","return to the owner"] },
+
+  /* 승격 85 — 사전 단일값 유지(참조 end up). */
+  { word:"turn out", pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
+    syn:["end up","prove to be so","come out in the end"] },
+
+  /* 승격 86 — 사전 단일값 유지(참조 flip). */
+  { word:"turn over", pron:"턴 오버", pos:"phr", level:"B1", meanings:["돌려 뒤집다"],
+    syn:["flip","turn the other side up","roll onto the back"] },
+
+  /* 승격 87 — 사전 단일값 유지. '~에 의지하다' 는 fall back on 자리다. */
+  { word:"turn to", pron:"턴 투", pos:"phr", level:"B1", meanings:["~에 도움을 청하다"],
+    syn:["fall back on","go to for help","look to in need"] },
+
+  /* 교재 네 갈래 → 둘. 위 turn over(구) 와 품사로 갈렸다. */
+  { word:"turnover", pron:"턴오버", pos:"n", level:"C1", meanings:["이직률","거래액"],
+    syn:["rate of staff leaving","total of sales","amount of business done"],
+    ex:[{ s:"Staff {{}} is high in that trade.", f:"turnover", ko:"그 업종은 이직률이 높다." }] },
+
+  { word:"tutor", pron:"튜터", pos:"n", level:"B2", meanings:["가정교사","강사"],
+    syn:["private teacher","one who coaches a pupil","teacher for a few"],
+    ex:[{ s:"They hired a {{}} for the boy.", f:"tutor", ko:"그들은 그 아이에게 가정교사를 붙였다." }] },
+
+  /* 교재 두 갈래('과외 지도, 개인 교습') 가 같은 말이어서 하나로 줄였다. */
+  { word:"tutoring", pron:"튜터링", pos:"n", level:"B2", meanings:["과외 지도"],
+    syn:["teaching outside class","coaching one to one","extra lessons given"],
+    ex:[{ s:"She earns a little by {{}}.", f:"tutoring", ko:"그녀는 과외 지도로 조금 번다." }] },
+
+  /* 승격 88 — 사전 글자 유지(참조 dual). '이중의' 는 dual(이중의, 둘의) 자리다. */
+  { word:"twofold", pron:"투폴드", pos:"adj", level:"C1", meanings:["두 겹의","두 배의"],
+    syn:["dual","in two layers","twice as much"],
+    ex:[{ s:"The gain was {{}}.", f:"twofold", ko:"그 이득은 두 배였다." }] },
+
+  /* 승격 89 — ★ 교재의 '전형적인' 을 앞세우고 사전값 '으레 그런' 을 둘째
+     갈래로 살렸다. 참조 odd(O) 의 반의어 화면이 한 줄 늘어난다. */
+  { word:"typical", pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
+    syn:["standing for the whole kind","just as one would expect","true to type"], ant:["odd"],
+    ex:[{ s:"That is a {{}} winter here.", f:"typical", ko:"그것이 이곳의 전형적인 겨울이다." }] },
+
+  /* 승격 90 — 사전 글자 유지. 참조 autocracy(A)·democracy(D) 두 곳의 화면은
+     바뀌지 않는다. '전제 정치' 는 autocracy(독재 정치, 절대 권력) 자리다. */
+  { word:"tyranny", pron:"티러니", pos:"n", level:"C1", meanings:["폭정","독재"],
+    syn:["autocracy","rule by one hard hand","cruel government"], ant:["democracy"],
+    ex:[{ s:"The people rose against the {{}}.", f:"tyranny", ko:"백성이 그 폭정에 맞서 일어섰다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1200,6 +1346,7 @@ Object.assign(window.GLOSS, {
   "aimed at one group": "한 무리를 겨눈",
   "all the way through": "처음부터 줄곧",
   "allowed against tax": "세금에 맞서 인정되는",
+  "amount of business done": "해낸 장사의 크기",
   "as good as it gets": "더 나을 수 없는",
   "assume control": "통제를 맡다",
   "assume from another": "남에게서 맡아 오다",
@@ -1217,9 +1364,11 @@ Object.assign(window.GLOSS, {
   "beating in the veins": "핏줄에서 뛰는 것",
   "become husband and wife": "부부가 되다",
   "begin to follow": "따르기 시작하다",
+  "being worthy of trust": "믿고 맡길 만함",
   "bent of mind": "마음이 쏠리는 쪽",
   "beyond cure": "손쓸 수 없는",
   "beyond one country": "한 나라를 넘어선",
+  "big travelling case": "여행용 큰 궤",
   "boast about": "~을 내세우다",
   "body material": "몸을 이루는 바탕",
   "bound by time": "시간에 묶인",
@@ -1244,16 +1393,21 @@ Object.assign(window.GLOSS, {
   "change of stage": "단계가 달라짐",
   "change of trains": "열차를 갈아탐",
   "change the form of": "~의 모양을 바꾸다",
+  "charge for a course": "한 과정에 드는 돈",
   "charge on goods brought in": "들여온 물품에 붙는 값",
   "cheer up": "기운을 차리다",
   "claim the merit of": "~의 공을 제 것이라 하다",
   "clipped in style": "말투가 짧게 끊기는",
+  "coaching one to one": "한 사람씩 붙어 가르침",
+  "come down in a heap": "한 무더기로 쏟아지다",
   "come out for a side": "한쪽 편을 드러내다",
+  "come out in the end": "끝에 가서 그리 되다",
   "coming at the right moment": "알맞은 때에 오는",
   "container of metal": "금속으로 된 그릇",
   "copy out by hand": "손으로 베껴 쓰다",
   "course of treatment": "치료를 이어 가는 과정",
   "crowning success": "더할 나위 없는 성공",
+  "cruel government": "모진 통치",
   "crush underfoot": "발로 으깨다",
   "cut neat at the edges": "가를 반듯하게 자르다",
   "cut right across": "곧장 가로질러 가다",
@@ -1284,11 +1438,14 @@ Object.assign(window.GLOSS, {
   "exactly as written": "적힌 대로 고스란히",
   "exchange of money": "돈이 오가는 일",
   "excite greatly": "크게 들뜨게 하다",
+  "extra lessons given": "따로 더 해 주는 가르침",
   "fail to value": "값지게 보지 못하다",
   "faint shade": "희미한 빛깔",
   "faint sign": "희미한 낌새",
+  "fall head over heels": "곤두박질치다",
   "fasten tightly": "빈틈없이 조여 매다",
   "fasten with rope": "밧줄로 묶다",
+  "fee for teaching": "가르침에 매긴 값",
   "feed in slowly": "천천히 흘려 넣다",
   "feel encouraged": "힘이 나다",
   "feel of a surface": "표면이 주는 느낌",
@@ -1308,6 +1465,7 @@ Object.assign(window.GLOSS, {
   "forbidden thing": "해서는 안 되는 것",
   "formal pact between states": "나라끼리 맺은 약속",
   "formal piece of writing": "격식을 갖춘 글",
+  "found near the equator": "적도 가까이에 있는",
   "free of trouble": "어지러움이 없는",
   "from start to finish": "시작에서 끝까지",
   "from then on": "그때부터",
@@ -1318,6 +1476,7 @@ Object.assign(window.GLOSS, {
   "gentle with people": "사람에게 순한",
   "get married": "혼인을 맺다",
   "give evidence": "증거를 대다",
+  "give up what was lent": "빌린 것을 내놓다",
   "given to reflection": "곱씹어 보는",
   "giving up one for another": "하나를 내주고 다른 것을 얻음",
   "glass tube for tests": "실험에 쓰는 유리관",
@@ -1325,6 +1484,7 @@ Object.assign(window.GLOSS, {
   "go from side to side": "이쪽에서 저쪽으로 가다",
   "go in where one may not": "들어가서는 안 될 곳에 들다",
   "go past the limit of": "~의 한계를 넘어가다",
+  "go to for help": "도움을 받으러 가다",
   "going beyond limits": "한계를 넘어감",
   "good for the body": "몸에 좋은",
   "graft into place": "접붙여 자리잡게 하다",
@@ -1333,7 +1493,9 @@ Object.assign(window.GLOSS, {
   "ground and its shape": "땅과 그 생김새",
   "group under one chief": "한 우두머리 아래의 무리",
   "growing strongly": "힘차게 자라는",
+  "growth in the body": "몸 안에 자란 것",
   "guarding one's ground": "제 터를 지키는",
+  "hand back": "손에 되돌려 주다",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
   "hard to get over": "좀처럼 헤어나기 어려운",
@@ -1358,8 +1520,10 @@ Object.assign(window.GLOSS, {
   "in terms of tactics": "전술로 보아",
   "in the latest style": "가장 새 모양새의",
   "in three layers": "세 겹으로 된",
+  "in two layers": "두 층으로 된",
   "inborn make-up": "타고난 됨됨이",
   "inflict pain on": "고통을 주다",
+  "just as one would expect": "으레 그럴 줄 아는",
   "keep turning over": "계속 몸을 뒤집다",
   "keeping within limits": "선을 넘지 않는",
   "kingly power": "임금의 권세",
@@ -1380,7 +1544,10 @@ Object.assign(window.GLOSS, {
   "lie of the land": "땅이 놓인 모양",
   "light tone of colour": "연한 색의 결",
   "long written study": "길게 써 낸 연구",
+  "look to in need": "궁할 때 기대다",
+  "lump of bad growth": "나쁘게 자란 덩이",
   "made-up cloth goods": "천으로 만든 물품",
+  "main body of a thing": "물건의 중심 덩어리",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
   "make over into": "~로 고쳐 만들다",
@@ -1391,6 +1558,7 @@ Object.assign(window.GLOSS, {
   "metal can": "쇠로 만든 통",
   "mild in climate": "기후가 순한",
   "money drawer": "돈을 넣는 서랍",
+  "money paid to study": "배우려고 내는 돈",
   "money paid to the state": "나라에 내는 돈",
   "move from one state to another": "한 상태에서 다른 상태로 옮겨감",
   "move to act": "행동에 나서다",
@@ -1403,6 +1571,7 @@ Object.assign(window.GLOSS, {
   "not meant to stay": "머물 뜻이 없는",
   "not to be trusted": "맡길 수 없는",
   "not too late": "늦지 않은",
+  "not worth troubling over": "신경 쓸 값도 없는",
   "not yet settled": "아직 정해지지 않은",
   "not yet tried out": "아직 해 보지 않은",
   "note vouching for one": "사람을 보증해 주는 글",
@@ -1412,13 +1581,17 @@ Object.assign(window.GLOSS, {
   "of a sad ending": "끝이 슬픈",
   "of applied science": "응용 학문에 속한",
   "of great size": "덩치가 아주 큰",
+  "of little weight": "무게가 실리지 않는",
   "of no weight": "무게가 없는",
+  "of steamy climates": "무덥고 습한 기후의",
   "of the highest grade": "등급이 가장 높은",
+  "of the hot zone": "더운 지대의",
   "of the stage": "무대에 속한",
   "official school record": "학교가 낸 공식 기록",
   "official who takes tax": "세금을 받는 관리",
   "one trained in a craft": "한 기예를 배운 사람",
   "one who betrays": "배신하는 사람",
+  "one who coaches a pupil": "한 학생을 붙들고 가르치는 이",
   "one who counts cash": "현금을 세는 사람",
   "one who gathers taxes": "세금을 걷는 사람",
   "one who rents": "빌려 쓰는 사람",
@@ -1444,6 +1617,8 @@ Object.assign(window.GLOSS, {
   "pound with each beat": "박자마다 쿵쿵거리다",
   "pour in from outside": "밖에서 부어 넣다",
   "press of people": "밀려드는 사람들",
+  "private teacher": "개인이 붙이는 선생",
+  "prove to be so": "그런 것으로 드러나다",
   "public levy": "공공이 걷는 부과금",
   "public means of travel": "여럿이 함께 타는 수단",
   "pull down": "끌어내려 무너뜨리다",
@@ -1463,6 +1638,7 @@ Object.assign(window.GLOSS, {
   "quiet of mind": "마음의 조용함",
   "raise a protest at": "~에 항의를 내다",
   "rate of action": "일이 돌아가는 빠르기",
+  "rate of staff leaving": "일꾼이 그만두는 비율",
   "reading on a thermometer": "온도계가 가리키는 값",
   "ready to betray": "언제든 등을 돌릴",
   "real to the hand": "손으로 느껴지는",
@@ -1470,21 +1646,28 @@ Object.assign(window.GLOSS, {
   "reasoned account": "따져서 세운 설명",
   "rebel against one's own": "제 편에 맞서 일어서는 사람",
   "record of marks": "점수를 적어 둔 기록",
+  "refuse outright": "딱 잘라 마다하다",
   "refuse to accept": "받아들이기를 거부하다",
   "refusing to let go": "놓기를 마다하는",
   "relay of a signal": "신호의 중계",
   "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
+  "return to the owner": "임자에게 되보내다",
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
   "right to rule as king": "임금으로 다스릴 권리",
   "rise above": "위로 넘어서다",
   "rise and fall of the sea": "바다가 오르고 내림",
   "roll about in bed": "잠자리에서 이리저리 구르다",
+  "roll down": "아래로 구르다",
+  "roll onto the back": "등이 위로 오게 굴리다",
   "royal seat": "임금이 앉는 자리",
+  "rule by one hard hand": "한 사람의 억센 손이 지배함",
   "rushing stream": "세차게 흐르는 물줄기",
+  "safe to trust": "맡겨도 안심인",
   "said in few words": "몇 마디로 말한",
   "sawn wood": "톱으로 켠 나무",
+  "say no to": "~에 아니라고 하다",
   "scare badly": "몹시 겁주다",
   "scarring": "흉을 남기는",
   "scholarly work": "학문으로 이룬 저술",
@@ -1516,11 +1699,13 @@ Object.assign(window.GLOSS, {
   "soft white metal": "부드러운 흰 금속",
   "somewhat so": "다소 그러한",
   "soon gone": "금세 사라지는",
+  "soundness of character": "사람됨이 단단함",
   "speed of a piece": "곡이 흐르는 빠르기",
   "splendid to see": "보기에 훌륭한",
   "spot for sightseeing": "구경하러 가는 자리",
   "spread from one to another": "하나에서 다른 하나로 퍼짐",
   "stamp down on": "발로 내리찧다",
+  "standing for the whole kind": "그 갈래 전체를 대신하는",
   "state of calm": "차분한 상태",
   "state of feeling": "감정의 상태",
   "state of rising above": "위로 넘어선 상태",
@@ -1533,11 +1718,14 @@ Object.assign(window.GLOSS, {
   "sum owed to government": "정부에 내야 할 몫",
   "surpass all bounds": "모든 한계를 넘어서다",
   "swap of benefits": "이득을 서로 바꿈",
+  "swelling of cells": "세포가 부풀어 난 것",
   "sworn account": "선서한 진술",
   "take in by a ruse": "꾀를 써서 홀리다",
   "take the lead": "앞장서다",
   "taking what is not one's own": "남의 것을 가져감",
   "tax on imports": "들여오는 물건에 매기는 세금",
+  "teacher for a few": "몇 사람만 가르치는 선생",
+  "teaching outside class": "수업 밖에서 가르침",
   "term in a post": "자리를 맡는 기간",
   "test run": "미리 해 보는 시험",
   "the opposite way": "맞은 쪽으로",
@@ -1558,14 +1746,19 @@ Object.assign(window.GLOSS, {
   "tool for measuring warmth": "따뜻함을 재는 도구",
   "torment cruelly": "잔혹하게 괴롭히다",
   "toss out": "내던져 버리다",
+  "total of sales": "판 것의 총액",
   "touch of colour": "살짝 든 빛깔",
   "touch to make one laugh": "웃게 하려고 건드리다",
   "travel over": "넘어서 지나가다",
   "tread heavily on": "무겁게 밟다",
+  "true to one's word": "말을 지키는",
+  "true to type": "본래 꼴에 들어맞는",
   "trying something out": "한번 해 보기",
   "trying until it works": "될 때까지 해 보기",
   "turn of mind": "마음이 기우는 결",
+  "turn the other side up": "반대쪽을 위로 두다",
   "turncoat": "변절자",
+  "twice as much": "두 배만큼의",
   "up with the times": "시류에 뒤지지 않는",
   "urge one should resist": "물리쳐야 할 충동",
   "use of tricks": "꾀를 부리는 짓",
@@ -1580,6 +1773,7 @@ Object.assign(window.GLOSS, {
   "weigh on the mind of": "~의 마음을 무겁게 하다",
   "well timed": "때를 잘 맞춘",
   "what must not be done": "하지 말아야 할 일",
+  "wild commotion": "거친 법석",
   "willingness to allow": "허용하려는 마음",
   "with a plan in mind": "계획을 두고",
   "with all one's might": "있는 힘을 다해",
