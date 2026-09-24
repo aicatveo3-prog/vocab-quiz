@@ -2422,7 +2422,6 @@ Object.assign(window.GLOSS, {
   "unfair use":"부당한 이용",
   "uncovering":"벗겨 냄, 드러냄",
   "use unfairly":"부당하게 이용하다",
-  "volatile":"휘발성의, 불안정한",
   "wide-ranging":"폭넓은",
   "wiped out":"완전히 없어진",
 

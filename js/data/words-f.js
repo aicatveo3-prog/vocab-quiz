@@ -1511,7 +1511,6 @@ Object.assign(window.GLOSS, {
   "truthful":"진실한, 사실대로의",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
-  "vogue":"유행, 인기",
 
   /* ── 2차: fall short of ~ favorably (46개) ───────────────── */
   "absorbing":"몰두하게 하는",

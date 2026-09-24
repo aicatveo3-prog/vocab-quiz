@@ -1764,7 +1764,6 @@ Object.assign(window.GLOSS, {
   "use of tricks": "꾀를 부리는 짓",
   "very much indeed": "참으로 많이",
   "victory at last": "끝내 얻은 이김",
-  "vomit": "구토하다",
   "warning of danger": "위험을 알리는 말",
   "waste thrown away": "내버린 찌꺼기",
   "wed at last": "드디어 짝을 이루다",

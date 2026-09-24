@@ -482,7 +482,124 @@ window.VOCAB_V = [
      바뀌지 않는다. */
   { word:"visual", pron:"비주얼", pos:"adj", level:"B2", meanings:["시각의"],
     syn:["of the sense of sight","seen with the eyes","to do with seeing"], ant:["auditory","aural"],
-    ex:[{ s:"The film relies on {{}} tricks.", f:"visual", ko:"그 영화는 시각적 속임수에 기댄다." }] }
+    ex:[{ s:"The film relies on {{}} tricks.", f:"visual", ko:"그 영화는 시각적 속임수에 기댄다." }] },
+
+  /* ══ 4차 · vital ~ vulnerable (15단어) — V 세트 마지막 ════════════════════
+     승격 9 · 신규 6
+
+     ★ void 를 **동사**로 세웠다. 사전이 '무효화하다; 공허' 로 동사와 명사를
+     섞어 놓았고 참조가 둘인데 품사가 갈린다 — annul(v)·invalid(adj).
+     동사로 세우면 annul(무효화하다, 취소하다) 과 글자가 맞물려 자동 배제되고
+     손질은 invalid 한 곳만 하면 된다. 명사로 세우면 두 곳을 다 손질해야 한다.
+     ★ invalid(I · adj 실효성이 없는) 의 유의어 void → of no legal force 로 갈았다.
+     형용사 표제어의 유의어 칸에 동사가 설 수 없다.
+
+     ★ vogue 의 유의어에 craze 를 넣었다. craze(대유행, 열풍 · C1/n) 와 '유행'
+     은 둘 다 n/C1 인데 글자가 달라 자동 배제가 안 된다. 유의어로 등록하면 앱이
+     둘을 서로의 오답으로 쓰지 않는다. craze 자신의 화면은 바뀌지 않는다.
+     epidemic(유행병, 전염병) 과는 '-병' 이 질병을 뜻해 갈린다.
+
+     ★ voluntary 는 교재 뜻 '자발적인' 을 앞에 두고 사전값 '스스로 하는' 을
+     둘째로 남겼다. '자발적인' 이 있어야 spontaneous(즉흥적인, 자발적인) 와
+     맞물려 배제된다. ★ 참조 obligatory(O) 의 화면이 한 줄 바뀐다.
+
+     품사로 가른 자리 하나 — voluntary(adj 자발적인) ↔ volunteer(n 자원봉사자).
+     공통 접두사가 여섯 글자('volunt') 여서 짝 맞추기 보드에서도 갈린다.
+
+     vital 은 참조가 네 곳(critical·crucial·essential·indispensable) 이라
+     사전값을 지켰다. 교재는 순서만 달랐다('생명의; 필수적인'). 쌍반점만
+     쉼표로 고쳤다. essential(필수적인, 극히 중요한)·integral 과 맞물려 배제된다.
+
+     vitalize 는 bolster(북돋우다, 강화하다) 의 '북돋우다' 를 글자째 품어
+     맞물려 배제된다. */
+
+  /* 승격 ㉙ — 사전의 쌍반점만 쉼표로. 참조 네 곳(critical·crucial·essential·
+     indispensable) 의 화면은 바뀌지 않는다. 교재는 순서만 다르다. */
+  { word:"vital", pron:"바이털", pos:"adj", level:"B1", meanings:["필수적인","생명의"],
+    syn:["critical","crucial","needed for life"],
+    ex:[{ s:"Water is {{}} to all life.", f:"vital", ko:"물은 모든 생명에 필수적이다." }] },
+
+  /* bolster(북돋우다, 강화하다) 의 '북돋우다' 를 품어 맞물려 배제된다. */
+  { word:"vitalize", pron:"바이털라이즈", pos:"v", level:"C2", meanings:["활력을 북돋우다"],
+    syn:["put life into","stir into action","give fresh energy to"],
+    ex:[{ s:"Fresh air seemed to {{}} her.", f:"vitalize", ko:"맑은 공기가 그녀의 활력을 북돋우는 듯했다." }] },
+
+  { word:"vivacious", pron:"비베이셔스", pos:"adj", level:"C2", meanings:["명랑한","쾌활한"],
+    syn:["merry and bright","lively in spirit","full of cheer"],
+    ex:[{ s:"She was as {{}} as ever.", f:"vivacious", ko:"그녀는 여느 때처럼 명랑했다." }] },
+
+  /* 승격 ㉚ — 사전 단일값 유지(참조 graphic). 교재의 '화려한' 은 gorgeous(화려한,
+     호화스러운)·ornate 자리라 버렸다. sharp(날카로운, 선명한) 와 맞물려 배제된다. */
+  { word:"vivid", pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],
+    syn:["graphic","sharply clear","standing out plainly"],
+    ex:[{ s:"She has a {{}} memory of that day.", f:"vivid", ko:"그녀는 그날을 선명하게 기억한다." }] },
+
+  /* 교재의 '직업상의' 는 '직업의' 와 같은 말이어서 하나로 줄였다. */
+  { word:"vocational", pron:"보케이셔널", pos:"adj", level:"B2", meanings:["직업의"],
+    syn:["to do with a trade","for a job","training for work"],
+    ex:[{ s:"He enrolled in a {{}} course.", f:"vocational", ko:"그는 직업 과정에 등록했다." }] },
+
+  /* 승격 ㉛ — 사전 글자 유지(참조 fad). ★craze(대유행, 열풍 · C1/n) 를 유의어로
+     넣었다 — '유행' 과 '대유행' 은 둘 다 n/C1 인데 글자가 달라 자동 배제가
+     안 된다. trend(추세, 유행)·popularity(인기, 평판) 와는 맞물려 배제된다. */
+  { word:"vogue", pron:"보그", pos:"n", level:"C1", meanings:["유행","인기"],
+    syn:["fad","craze","what everyone wants now"],
+    ex:[{ s:"Short coats are in {{}} again.", f:"vogue", ko:"짧은 외투가 다시 유행이다." }] },
+
+  /* 승격 ㉜ — ★사전 첫 갈래(동사) 를 세웠다. 참조가 annul(v)·invalid(adj) 로
+     갈리는데, 동사로 세우면 annul(무효화하다, 취소하다) 과 글자가 맞물려
+     배제되고 손질은 invalid 한 곳만 하면 된다. 교재의 명사 갈래('빈 공간,
+     공허감') 는 버렸다. ★ invalid(I) 의 유의어 칸을 갈았다. */
+  { word:"void", pron:"보이드", pos:"v", level:"C1", meanings:["무효화하다"],
+    syn:["annul","make of no force","cancel in law"],
+    ex:[{ s:"The court may {{}} the contract.", f:"void", ko:"법원이 그 계약을 무효화할 수 있다." }] },
+
+  /* 승격 ㉝ — 사전 글자 유지(참조 explosive). capricious·moody 가 교재의
+     '변덕스러운' 을, instability(불안정)·unease(불안, 불안정한 마음) 가
+     '불안정한' 을 품어 맞물려 배제된다. */
+  { word:"volatile", pron:"발러타일", pos:"adj", level:"C1", meanings:["휘발성의","불안정한"],
+    syn:["explosive","ready to catch fire","liable to blow up"],
+    ex:[{ s:"That liquid is highly {{}}.", f:"volatile", ko:"그 액체는 휘발성이 매우 높다." }] },
+
+  /* 승격 ㉞ — ★교재 뜻 '자발적인' 을 앞에 두고 사전값 '스스로 하는' 을 둘째로
+     남겼다. '자발적인' 이 있어야 spontaneous(즉흥적인, 자발적인) 와 맞물려
+     배제된다. ★ 참조 obligatory(O 반의어) 의 화면이 한 줄 바뀐다. */
+  { word:"voluntary", pron:"발런테리", pos:"adj", level:"B2", meanings:["자발적인","스스로 하는"],
+    syn:["done of one's own will","not forced on one","of free choice"], ant:["obligatory"],
+    ex:[{ s:"Taking part is {{}}.", f:"voluntary", ko:"참가는 자발적이다." }] },
+
+  /* 위 voluntary(형용사) 와 품사로 갈랐다. 공통 접두사가 여섯 글자여서 짝
+     맞추기 보드에서도 갈린다. 교재의 동사 갈래는 버렸다. */
+  { word:"volunteer", pron:"발런티어", pos:"n", level:"B1", meanings:["자원봉사자"],
+    syn:["one who works for free","helper who is not paid","person who offers to help"],
+    ex:[{ s:"Every {{}} wore a red cap.", f:"volunteer", ko:"모든 자원봉사자가 빨간 모자를 썼다." }] },
+
+  /* 승격 ㉟ — 사전 단일값 유지(참조 throw up). throw up(토하다) 을 글자째 품어
+     맞물려 배제되고 erupt(분출하다, 발발하다) 와도 교재 뜻으로 맞물린다. */
+  { word:"vomit", pron:"바밋", pos:"v", level:"B2", meanings:["구토하다"],
+    syn:["throw up","bring up from the stomach","be sick"],
+    ex:[{ s:"The child began to {{}}.", f:"vomit", ko:"그 아이가 구토하기 시작했다." }] },
+
+  /* 승격 ㊱ — 사전 단일값 유지(참조 insatiable). 교재의 '만족할 줄 모르는' 은
+     insatiable(만족을 모르는) 과 거의 같은 말이라 사전값 쪽을 세웠다. */
+  { word:"voracious", pron:"버레이셔스", pos:"adj", level:"C2", meanings:["식욕이 왕성한"],
+    syn:["insatiable","eating a great deal","never filled up"],
+    ex:[{ s:"He is a {{}} reader as well.", f:"voracious", ko:"그는 책에도 왕성한 식욕을 보인다." }] },
+
+  /* 교재의 동사 갈래는 버렸다. oath(맹세, 서약) 와 맞물려 배제된다. */
+  { word:"vow", pron:"바우", pos:"n", level:"B2", meanings:["맹세"],
+    syn:["oath","solemn promise","word given in earnest"],
+    ex:[{ s:"They exchanged a quiet {{}}.", f:"vow", ko:"그들은 조용히 맹세를 나눴다." }] },
+
+  { word:"vulgar", pron:"벌거", pos:"adj", level:"C1", meanings:["저속한","선정적인"],
+    syn:["coarse in taste","in poor taste","crude and showy"],
+    ex:[{ s:"The joke struck them as {{}}.", f:"vulgar", ko:"그 농담은 그들에게 저속하게 들렸다." }] },
+
+  /* 승격 ㊲ — 사전 단일값 유지. 참조 세 곳(at risk·endangered·helpless) 의
+     화면은 바뀌지 않는다. */
+  { word:"vulnerable", pron:"벌너러블", pos:"adj", level:"B2", meanings:["취약한"],
+    syn:["at risk","endangered","helpless"],
+    ex:[{ s:"Young birds are {{}} to cold.", f:"vulnerable", ko:"어린 새는 추위에 취약하다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -506,13 +623,19 @@ Object.assign(window.GLOSS, {
   "blood tube to the heart": "심장으로 가는 핏줄",
   "breaking of a rule": "규칙을 깨뜨림",
   "breaking things on purpose": "일부러 물건을 깨뜨림",
+  "bring up from the stomach": "배 속에서 올려 내다",
   "buzzing with energy": "기운이 들끓는",
+  "cancel in law": "법으로 지우다",
   "check and prove": "살펴서 참임을 밝히다",
+  "coarse in taste": "취향이 거친",
+  "crude and showy": "투박하고 요란한",
   "damage done for its own sake": "까닭 없이 낸 손상",
   "differing one from another": "서로 제각기 다른",
   "doctor for beasts": "가축을 고치는 의사",
+  "done of one's own will": "제 뜻으로 하는",
   "done with great force": "큰 힘을 들여 하는",
   "eater of greens only": "푸성귀만 먹는 이",
+  "eating a great deal": "많이 먹는",
   "eating no animal food at all": "동물성 음식을 아예 안 먹는",
   "emptied of all air": "공기를 다 뺀",
   "equally so in reverse": "뒤바꿔도 마찬가지로",
@@ -522,8 +645,10 @@ Object.assign(window.GLOSS, {
   "first rank of a march": "행렬의 첫 줄",
   "fit for many uses": "여러 곳에 쓸 만한",
   "flow of fresh air": "맑은 공기의 흐름",
+  "for a job": "일자리를 위한",
   "fresh air let in": "들인 맑은 공기",
   "full of change": "변화가 가득한",
+  "full of cheer": "흥이 넘치는",
   "full of life and colour": "생기와 빛깔이 넘치는",
   "full of spirit": "기운이 가득한",
   "give official backing to": "공식으로 뒷받침해 주다",
@@ -531,42 +656,55 @@ Object.assign(window.GLOSS, {
   "good at many things": "여러 가지를 잘하는",
   "goodness of character": "사람됨의 착함",
   "goods of value": "값진 물품",
+  "helper who is not paid": "돈을 받지 않는 도우미",
   "holding good": "효력이 살아 있는",
   "how much it swings": "흔들리는 폭",
   "in a hazy way": "아리송하게",
   "in a lively way": "생기 있게",
   "in effect": "실제로는",
   "in effect if not in name": "이름만 아니라면 그런 셈인",
+  "in poor taste": "품이 떨어지는",
   "in words": "말로 된",
   "leaders of a movement": "운동을 이끄는 이들",
   "left in its first state": "본래 상태로 남은",
   "let fresh air in": "맑은 공기를 들이다",
   "liability to change": "바뀔 수 있는 성질",
+  "liable to blow up": "터질 수 있는",
   "likely to work": "잘될 만한",
   "lines with a beat": "가락이 있는 글줄",
+  "lively in spirit": "기운이 발랄한",
   "low and mean": "낮고 못난",
+  "make of no force": "힘을 잃게 하다",
   "many sorts": "여러 종류",
+  "merry and bright": "즐겁고 환한",
   "mist from hot water": "더운 물에서 나온 안개",
   "more than a few": "한둘이 아닌",
   "move with quick tremors": "잔 떨림으로 움직이다",
   "near enough to be true": "참이라 해도 될 만큼",
+  "needed for life": "살아가는 데 없으면 안 되는",
+  "never filled up": "배가 차지 않는",
   "never touched before": "아직 손대지 않은",
   "not clearly put": "뚜렷하게 말하지 않은",
+  "not forced on one": "떠밀려 하지 않는",
   "not in use": "쓰이지 않는",
   "not quite plainly": "또렷하지 않게",
   "not staying the same": "한결같지 않은",
   "not worth a penny": "한 푼 값도 못 하는",
+  "of free choice": "마음대로 고른",
   "of many kinds": "온갖 종류의",
   "of many sorts": "갖가지의",
+  "of no legal force": "법으로 힘이 없는",
   "of no value at all": "아무 값도 없는",
   "of the sense of sight": "보는 감각의",
   "of the strictest plant diet": "가장 철저한 식물 식단의",
   "one form of a thing": "한 가지 꼴",
   "one who eats no meat": "고기를 안 먹는 사람",
   "one who treats pets": "반려동물을 치료하는 이",
+  "one who works for free": "보수 없이 일하는 사람",
   "open up to the air": "바깥 공기에 열다",
   "over against": "마주 놓고",
   "person on a plant diet": "식물만 먹는 사람",
+  "person who offers to help": "돕겠다고 나서는 사람",
   "physical attack": "몸으로 하는 공격",
   "place for an event": "행사를 치르는 곳",
   "plants of a place": "한 곳에 자란 풀과 나무",
@@ -577,9 +715,11 @@ Object.assign(window.GLOSS, {
   "precious belongings": "소중한 소지품",
   "press on despite danger": "위험을 무릅쓰고 나아가다",
   "put in speech": "말로 옮긴",
+  "put life into": "생기를 불어넣다",
   "quiver fast": "빠르게 떨리다",
   "range of change": "바뀌는 범위",
   "range of kinds": "갖춘 종류의 폭",
+  "ready to catch fire": "불이 붙기 쉬운",
   "right of refusal": "마다할 권리",
   "right to say no": "아니라고 할 권리",
   "risk doing": "위험을 안고 해 보다",
@@ -588,6 +728,7 @@ Object.assign(window.GLOSS, {
   "set against": "맞세워",
   "shabby in conduct": "행실이 치사한",
   "shake to and fro": "앞뒤로 흔들리다",
+  "sharply clear": "또렷하게 밝은",
   "show to be true": "참임을 보여 주다",
   "snake poison": "뱀의 독",
   "space with no air": "공기가 없는 공간",
@@ -595,8 +736,10 @@ Object.assign(window.GLOSS, {
   "spoken rather than written": "글이 아니라 말로 하는",
   "spot where it is held": "그것이 열리는 자리",
   "spread out very far": "아주 멀리 펼쳐진",
+  "standing out plainly": "눈에 뚜렷이 드는",
   "steam given off": "뿜어 나온 김",
   "still in force": "아직 힘을 지닌",
+  "stir into action": "움직이게 뒤흔들다",
   "straight up and down": "곧추 선",
   "the other way round as well": "반대쪽으로도 똑같이",
   "the very edge": "바로 그 끝",
@@ -604,14 +747,18 @@ Object.assign(window.GLOSS, {
   "thing that carries": "실어 옮기는 것",
   "things worth money": "값나가는 물건",
   "those at the front": "맨 앞에 선 이들",
+  "to do with a trade": "생업에 관한",
   "to do with seeing": "보는 일에 관한",
+  "training for work": "일을 익히는",
   "tube carrying blood": "피를 나르는 관",
   "upright in line": "선이 곧게 선",
   "use of force to hurt": "해치려 힘을 씀",
+  "what everyone wants now": "요즘 다들 찾는 것",
   "wickedly cruel": "악독하게 모진",
   "with great force": "큰 힘으로",
   "without honour": "명예를 모르는",
   "without sharp outline": "윤곽이 또렷하지 않게",
+  "word given in earnest": "진심으로 준 말",
   "worth nothing": "값이 나가지 않는",
   "worth of conduct": "행실의 값",
   "wrecking public property": "공공 재산을 부숨"

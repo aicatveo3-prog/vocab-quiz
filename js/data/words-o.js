@@ -1369,7 +1369,6 @@ Object.assign(window.GLOSS, {
   "very suddenly": "아주 갑작스레",
   "visible from outside": "바깥에서 보이는",
   "voiced disagreement": "소리 내어 밝힌 반대",
-  "voluntary": "스스로 하는",
   "warning of trouble": "말썽을 알리는",
   "watch closely": "가까이 지켜보다",
   "watcher": "지켜보는 이",
