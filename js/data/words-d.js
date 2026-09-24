@@ -451,7 +451,7 @@ window.VOCAB_D = [
     ex:[{ s:"Many scholars {{}} the loss of the ancient archive.", f:"deplore", ko:"많은 학자가 그 고대 기록물의 소실을 개탄한다." }] },
 
   { word:"deploy", pron:"디플로이", pos:"v", level:"C1", meanings:["배치하다","전개하다"],
-    syn:["station","position","mobilize"], ant:["withdraw"],
+    syn:["station","put in place","mobilize"], ant:["withdraw"],
     ex:[{ s:"The agency will {{}} extra staff during the festival.", f:"deploy", ko:"그 기관은 축제 기간에 추가 인력을 배치할 것이다." }] },
 
   { word:"deport", pron:"디포트", pos:"v", level:"C1", meanings:["강제 추방하다","국외로 내보내다"],
@@ -1592,8 +1592,6 @@ Object.assign(window.GLOSS, {
   "oust":"축출하다, 밀어내다",
   "overthrow":"전복시키다, 타도하다",
   "popular rule":"민중 통치",
-  "portray":"묘사하다, 그리다",
-  "position":"배치하다; 위치",
   "prepayment":"선불, 선납",
   "privation":"결핍, 궁핍",
   "profundity":"심오함, 깊이",
