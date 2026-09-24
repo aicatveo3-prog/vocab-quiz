@@ -1553,7 +1553,6 @@ Object.assign(window.GLOSS, {
   "taunting": "놀려 대는",
   "team spirit": "단결심",
   "technique": "기법",
-  "temperate": "절제된",
   "template": "본뜨는 판",
   "ten centuries": "10세기 동안",
   "thaw": "얼음이 풀리다",

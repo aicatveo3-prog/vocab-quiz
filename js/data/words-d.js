@@ -1234,7 +1234,11 @@ window.VOCAB_D = [
   /* ★ 원본에 '인식할 수 있는, 알아볼 수 있는'(recognizable 의 뜻)이 잘못
      들어와 있었다. 바로 다음 행의 domesticated 와 행이 밀린 것으로 보인다. */
   { word:"domesticate", pron:"더메스티케이트", pos:"v", level:"C2", meanings:["길들이다","사육하다"],
-    syn:["tame","train","break in"], ant:["release"],
+    /* ★ syn 의 "tame" 을 "make docile" 로 바꿨다. 사전이 tame 을 '길들이다;
+       온순한' 으로 적어 두었는데 앞부분이 이 표제어 자신의 뜻이었다. tame 의
+       실제 무게는 형용사 '유순한' 이고 참조 docile(고분고분한) 도 그쪽이라
+       T 세트에서 형용사로 세웠다. */
+    syn:["make docile","train","break in"], ant:["release"],
     ex:[{ s:"Humans began to {{}} wild grasses thousands of years ago.", f:"domesticate", ko:"인류는 수천 년 전에 야생 풀을 작물화하기 시작했다." }] },
 
   { word:"domesticated", pron:"더메스티케이티드", pos:"adj", level:"C1", meanings:["길든","가축화된"],
@@ -1625,7 +1629,6 @@ Object.assign(window.GLOSS, {
   "sparse":"드문, 희박한",
   "stemming from":"~에서 유래하는",
   "taxing":"부담이 큰, 힘겨운",
-  "tear down":"허물다, 뜯어내다",
   "terminal":"종착역, 터미널",
   "thick":"두꺼운; 빽빽한",
   "thickness":"두께, 진함",
@@ -1871,7 +1874,6 @@ Object.assign(window.GLOSS, {
   "payout":"지급금, 배당",
   "redirect":"방향을 바꾸다",
   "reroute":"경로를 바꾸다",
-  "tame":"길들이다; 온순한",
   "tamed":"길들여진",
   "tenet":"교리, 신조",
   "train":"훈련시키다, 길들이다",
@@ -1932,7 +1934,6 @@ Object.assign(window.GLOSS, {
   "sweeping":"전면적인, 대폭적인",
   "tap into":"~을 활용하다",
   "taper off":"점차 줄어들다",
-  "tedious":"지루하고 성가신",
   "thanks to":"~덕분에",
   "tug":"세게 당기다",
   "twofold":"두 겹의, 두 배의",
