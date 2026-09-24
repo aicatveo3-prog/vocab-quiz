@@ -7,12 +7,12 @@ unattractive	adj	B2	매력 없는	교재 '좋지 않은' 은 뜻이 흐려 버�
 unceasing	adj	C1	끊임없는	ceaseless·incessant·constant·perennial 와 맞물려 배제
 unchangeable	adj	B2	불변의	invariable 과 맞물려 배제. 교재 둘째 갈래는 같은 말
 uncharacteristic	adj	C1	평소답지 않은	교재 '~답지 않은' 의 물결표 걷음
-unconscious	adj	B2	의식을 잃은	교재 두 갈래가 같은 말
+unconscious	adj	B2	의식이 없는	★ '의식을 잃은' 은 numb(감각을 잃은 · B2/adj) 와 꼴이 똑같다
 unconventional	adj	B2	관습에 얽매이지 않는	사전 단일값 유지(참조 eccentric). '독특한' 은 unique 자리
 uncover	v	B2	밝혀내다|알아내다	사전 글자 유지(참조 두 곳). discover 와 맞물려 배제
 undercut	v	C1	~보다 저가로 팔다	'약화시키다' 는 아래 undermine 자리
 undergo	v	B2	겪다|받다	사전 글자 유지(참조 두 곳)
-undergraduate	n	B2	대학생	신규
+undergraduate	n	B2	학부생|대학생	★ pupil(학생) 을 통째로 품지 않게 '학부생' 을 앞세웠다
 underlying	adj	B2	밑바탕에 있는	사전 단일값 유지(참조 두 곳). '근본적인' 은 ultimate·fundamental 자리
 undermine	v	B2	약화시키다	사전 단일값 유지(참조 두 곳). dampen 과 맞물려 배제
 underpaid	adj	C1	저임금의|박봉의	신규
@@ -25,7 +25,7 @@ undeveloped	adj	B2	발달하지 않은	사전 단일값 유지(참조 immature).
 undoubted	adj	C1	확실한|의심할 바 없는	certain·definite 와 '확실한' 으로 맞물려 배제
 undue	adj	C1	지나친|과도한	excessive(지나친, 과도한) 와 글자를 통째로 맞춰 배제
 unearth	v	C1	발굴하다|찾아내다	사전 글자 유지(참조 두 곳). excavate 와 맞물려 배제
-unease	n	B2	불안	★사전 단일값 유지 — 교재 '불안, 우려' 로 두면 anxiety 의 syn 안에서 apprehension 과 설명이 같아진다
+unease	n	B2	불안|불안정한 마음	★ 둘째 갈래로 instability(불안정) 를 품어 자동 배제시켰다. '불안' 은 그대로라 anxiety·misgiving 과도 맞물린다
 unemployment	n	B1	실업|실직	신규
 unequivocal	adj	C2	명백한|에두르지 않는	apparent·obvious·plain 과 '명백한' 으로 맞물려 배제. '분명한' 버림
 uneven	adj	B2	울퉁불퉁한|고르지 않은	사전 글자 유지(참조 두 곳). bumpy 와 맞물려 배제. '불공평한' 버림
@@ -53,7 +53,7 @@ unrivaled	adj	C1	경쟁자가 없는	'비할 데 없는' 은 위 unparalleled �
 unroll	v	B2	펼치다	신규
 unsustainable	adj	B2	지속할 수 없는	교재 '지속불가능한' 을 풀어 썼다
 unswerving	adj	C2	변함없는|약해지지 않는	★교재 '완고한' 은 stubborn(S) 뜻이라 버렸다. steadfast 와 맞물려 배제
-untold	adj	C1	헤아릴 수 없는	사전 단일값 유지(참조 innumerable). '밝혀지지 않은' 버림
+untold	adj	C1	막대한|헤아릴 수 없는	★ 첫 뜻을 '막대한' 으로 — measurable(헤아릴 수 있는) 과 '없는/있는' 한 글자로만 갈린다
 unveil	v	C1	덮개를 벗기다|발표하다	신규
 unwavering	adj	C1	확고한	steadfast(확고한, 변함없는)·resolute 와 맞물려 배제
 up and about	phr	C1	병상에서 일어난	교재 '건강이 좋아진' 은 설명이라 걷었다
@@ -61,7 +61,7 @@ up to a point	phr	B2	어느 선까지는	T 세트 to some degree(어느 정도) 
 upbringing	n	C1	양육|가정 교육	신규
 upheave	v	C2	들어 올리다	'혼란시키다' 는 turmoil·disrupt 자리라 버렸다
 uphold	v	B2	떠받치다|지지하다	신규
-uppermost	adj	C1	가장 높은|맨 위의	'최고의' 는 superb·top-notch 자리
+uppermost	adj	C1	맨 위의|가장 높은	★ 첫 뜻을 갈랐다 — '가장 높은' 은 elevated·lofty·notorious 의 '높은' 과 눈으로 안 갈린다
 upright	adj	B2	정직한|청렴한	사전 글자 유지(참조 ethical·moral). 교재 '똑바른, 꼿꼿한' 버림
 uprising	n	C1	봉기|반란	revolt 와 '봉기' 로 맞물려 배제
 uproot	v	C1	근절하다|뿌리째 뽑다	eradicate(근절하다, 뿌리째 뽑다) 와 글자를 통째로 맞춰 배제
@@ -75,6 +75,6 @@ urgent	adj	B1	긴급한|절박한	사전 글자 유지(참조 두 곳). pressing
 useless	adj	B1	쓸모없는	사전 글자 유지 — 교재의 띄어쓰기('쓸모 없는') 를 사전에 맞췄다(참조 futile)
 user-friendly	adj	B2	사용하기 쉬운	신규
 usher	v	B2	안내하다	교재 [v+n] → 동사
-utensil	n	B2	기구|용구	사전 글자 유지(참조 instrument). '도구' 는 instrument 자리
+utensil	n	B2	용구|기구	★ 첫 뜻을 갈랐다 — '기구' 는 appliance((가정용) 기구) 와 눈으로 안 갈린다. 둘째로 남겨 device·apparatus 와는 계속 맞물린다
 utilitarian	adj	C2	실용적인|실리를 따지는	practical·functional 과 맞물려 배제
-utility	n	B2	공익사업|유용성	교재 형용사 갈래 버림
+utility	n	B2	유용성|공익사업	★ 첫 뜻을 갈랐다 — '공익사업' 은 common good(공익) 을 통째로 품는다

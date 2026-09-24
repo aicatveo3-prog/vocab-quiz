@@ -1674,7 +1674,6 @@ Object.assign(window.GLOSS, {
   "terminus":"종착지, 끝",
   "title":"명칭, 칭호",
   "undesirable":"바람직하지 않은",
-  "urgent":"긴급한, 절박한",
   "urgently":"긴급히, 절박하게",
   "warrant":"정당화하다, ~할 만하다",
   "willpower":"의지력",
@@ -1778,8 +1777,6 @@ Object.assign(window.GLOSS, {
   "talk over":"논의하다, 상의하다",
   "throw away":"버리다, 내버리다",
   "unbiased":"편견 없는, 공정한",
-  "uncover":"밝혀내다, 알아내다",
-  "unearth":"발굴하다, 찾아내다",
   "unfairness":"불공정, 부당함",
   "unrest":"불안, 소요",
   "untruthful":"진실하지 않은, 거짓의",
@@ -1824,7 +1821,6 @@ Object.assign(window.GLOSS, {
   "skewed":"왜곡된, 편향된",
   "temperamental":"기질의, 변덕스러운",
   "throwaway":"일회용의, 쓰고 버리는",
-  "unique":"독특한, 유일한",
   "unmistakable":"오해할 수 없는, 명백한",
   "unsettle":"불안하게 하다, 뒤흔들다",
   "upheaval":"격변, 대변동",
@@ -1930,6 +1926,5 @@ Object.assign(window.GLOSS, {
   "taper off":"점차 줄어들다",
   "thanks to":"~덕분에",
   "tug":"세게 당기다",
-  "upturn":"상승, 호전",
   "welcome":"반기다, 환영하다"
 });

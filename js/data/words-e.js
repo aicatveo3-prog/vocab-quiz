@@ -2069,8 +2069,6 @@ Object.assign(window.GLOSS, {
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
   "tolerant":"너그러운, 관대한",
-  "unconventional":"관습에 얽매이지 않는",
-  "uptight":"긴장한, 신경이 날카로운",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
   "wholehearted":"전심전력의, 진심을 다한",
@@ -2259,7 +2257,6 @@ Object.assign(window.GLOSS, {
   "tools":"도구, 공구",
   "turning point":"전환점",
   "unequal":"동등하지 않은",
-  "unpredictable":"종잡을 수 없는",
   "visualize":"시각적으로 떠올리다",
   "wear away":"닳아 없어지게 하다",
   "wearing away":"닳아 없어짐",
@@ -2290,7 +2287,6 @@ Object.assign(window.GLOSS, {
   "tribal":"부족의",
   "undying":"죽지 않는",
   "unethical":"비윤리적인",
-  "upright":"정직한, 청렴한",
   "well-founded":"근거가 확실한",
 
   /* ── 9차: evaporate ~ excess (28개) ───────────────── */
@@ -2389,7 +2385,6 @@ Object.assign(window.GLOSS, {
   "technical knowledge":"기술 지식",
   "thrilling":"짜릿한",
   "trial run":"시험 가동",
-  "unambiguous":"모호하지 않은",
   "urge strongly":"강하게 권하다",
 
   /* ── 12차: explicitly ~ extinct (44개) ───────────────── */

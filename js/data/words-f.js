@@ -1934,7 +1934,6 @@ Object.assign(window.GLOSS, {
   "thwart":"뜻을 꺾다",
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
-  "underlying":"밑바탕에 있는",
   "usable":"쓸 수 있는",
   "vapor":"김, 수증기",
   "worthwhile":"할 만한 값이 있는",
@@ -1963,7 +1962,6 @@ Object.assign(window.GLOSS, {
   "provide a with b":"A에게 B를 마련해 주다",
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
-  "useless":"쓸모없는",
   "very angry":"매우 화가 난",
   "wrinkle":"주름"
 });

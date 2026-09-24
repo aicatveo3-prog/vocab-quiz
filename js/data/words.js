@@ -1770,7 +1770,6 @@ window.GLOSS = {
   "uncertain":"불확실한",
   "unfriendly":"불친절한",
   "ungrateful":"감사할 줄 모르는",
-  "unite":"통합하다",
   "unmotivated":"의욕 없는",
   "unreliable":"신뢰할 수 없는",
   "unrepentant":"뉘우치지 않는",
