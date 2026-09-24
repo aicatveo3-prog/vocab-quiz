@@ -637,7 +637,6 @@ Object.assign(window.GLOSS, {
   "sailing": "배를 몰기",
   "seagoing": "바다를 다니는",
   "send word to": "~에게 말을 전하다",
-  "sensitive": "느낌이 예민한",
   "set of written signs": "적어 쓰는 기호 묶음",
   "settle cozily": "편안히 자리 잡다",
   "settled": "정착한",

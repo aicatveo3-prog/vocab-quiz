@@ -105,7 +105,9 @@ window.VOCAB_D = [
     ex:[{ s:"Few employees would {{}} to question the director openly.", f:"dare", ko:"공개적으로 이사에게 감히 의문을 제기할 직원은 거의 없었다." }] },
 
   { word:"darken", pron:"다컨", pos:"v", level:"B2", meanings:["어둡게 하다","어두워지다"],
-    syn:["dim","shade","blacken"], ant:["brighten"],
+    /* ★ syn 의 "shade" 를 "cast a shadow on" 으로 바꿨다. shade 는 S 세트에서
+       명사 '그늘, 빛 가리개' 로 선다 — 동사 자리에 명사가 들어가게 된다. */
+    syn:["dim","cast a shadow on","blacken"], ant:["brighten"],
     ex:[{ s:"Storm clouds slowly {{}} the afternoon sky.", f:"darkened", ko:"폭풍 구름이 오후 하늘을 서서히 어둡게 했다." }] },
 
   { word:"date back to", pron:"데이트 백 투", pos:"phr", level:"B2", meanings:["~까지 거슬러 올라가다"],
@@ -260,7 +262,10 @@ window.VOCAB_D = [
     ex:[{ s:"The engine had a serious {{}} that forced a nationwide recall.", f:"defect", ko:"그 엔진에는 전국적 회수를 부른 심각한 결함이 있었다." }] },
 
   { word:"defend", pron:"디펜드", pos:"v", level:"B1", meanings:["방어하다","변호하다"],
-    syn:["protect","guard","shield"], ant:["attack"],
+    /* ★ syn 의 "shield" 를 "ward off" 로 바꿨다. shield 는 S 세트에서 사전
+       첫 갈래인 '보호하다' 로 서는데, 그러면 같은 목록의 protect(보호하다) 와
+       설명이 똑같아진다. 더 흔한 protect 를 남기는 쪽을 골랐다. */
+    syn:["protect","guard","ward off"], ant:["attack"],
     ex:[{ s:"They built thick walls to {{}} the city from invaders.", f:"defend", ko:"그들은 침략자로부터 도시를 방어하려고 두꺼운 성벽을 쌓았다." }] },
 
   { word:"defer", pron:"디퍼", pos:"v", level:"C1", meanings:["미루다","연기하다"],
@@ -1484,7 +1489,6 @@ Object.assign(window.GLOSS, {
   "remains":"유물, 잔존물",
   "rot":"썩다, 부패하다",
   "rubble":"돌무더기, 파편",
-  "shade":"그늘지게 하다; 그늘",
   "stem from":"~에서 유래하다",
   "sunrise":"해돋이, 일출",
   "swing":"흔들리다, 흔들다",
@@ -1916,7 +1920,6 @@ Object.assign(window.GLOSS, {
   "pull out":"물러나다, 손을 떼다",
   "questionable":"의심스러운, 문제가 있는",
   "rough copy":"초고, 초벌 원고",
-  "saturate":"적시다, 포화시키다",
   "sewerage":"하수 처리, 하수도",
   "shrink from":"~을 피하다, 꺼리다",
   "single":"하나의, 단일한",

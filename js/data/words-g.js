@@ -304,7 +304,9 @@ window.VOCAB_G = [
      같아지지 않게 glance 는 동사(보다), glimpse 는 명사(봄) 로 갈랐다. */
   { word:"glance", pron:"글랜스", pos:"v", level:"B1", meanings:["흘끗 보다","대충 보다"],
     gov:{ prep:["at","over","through"], pat:"glance {{}} the morning headlines", usage:"glance at ~ : ~을 흘끗 보다" },
-    syn:["peek","skim","scan"],
+    /* ★ "skim" 을 "run one's eye over" 로 바꿨다 — browse(B) 와 같은 이유다.
+       scan·skim 이 S 세트에서 둘 다 '훑어보다' 가 된다. */
+    syn:["peek","run one's eye over","scan"],
     ex:[{ s:"She stopped to {{}} at the headlines on her way out.", f:"glance", ko:"그녀는 나가는 길에 멈춰 서서 표제를 흘끗 보았다." }] },
 
   { word:"gland", pron:"글랜드", pos:"n", level:"C1", meanings:["분비기관"],

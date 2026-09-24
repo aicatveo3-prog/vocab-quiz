@@ -982,8 +982,11 @@ window.VOCAB_E = [
 
   /* ex.f 를 원형으로 둔다 — embedded 는 자음을 겹치는 변화라서 quizgen 이
      변환을 포기하고 오답만 원형으로 남긴다(뜻을 몰라도 정답이 보인다). */
+  /* ★ syn 의 "set in" 을 "bed into place" 로 바꿨다. 사전이 set in 의 뜻을
+     '끼워 넣다, 박아 넣다' 로 — 이 표제어의 뜻을 그대로 베껴 — 적어 두고 있었다.
+     set in 의 실제 뜻은 '시작되다, 자리 잡다' 여서 S 세트에서 그렇게 세웠다. */
   { word:"embed", pron:"임베드", pos:"v", level:"C1", meanings:["끼워 넣다","박아 넣다"],
-    syn:["insert","implant","set in"],
+    syn:["insert","implant","bed into place"],
     ex:[{ s:"Engineers {{}} sensors in the bridge to track stress.", f:"embed", ko:"기술자들은 응력을 추적하기 위해 교량에 센서를 끼워 넣는다." }] },
 
   { word:"emblem", pron:"엠블럼", pos:"n", level:"B2", meanings:["상징","표상"],
@@ -2137,8 +2140,6 @@ Object.assign(window.GLOSS, {
   "personify":"체현하다, 의인화하다",
   "put to shame":"부끄럽게 만들다",
   "rising":"떠오르는, 상승하는",
-  "set in":"끼워 넣다, 박아 넣다",
-  "set out":"출발하다, 착수하다",
   "slippery":"붙잡기 힘든, 미끄러운",
   "up-and-coming":"전도유망한",
   "urgent situation":"긴급한 상황",
@@ -2430,7 +2431,6 @@ Object.assign(window.GLOSS, {
   "prolonged":"오래 끌어진",
   "prolonging":"기간을 늘림",
   "revelation":"폭로, 뜻밖의 사실",
-  "scale":"규모, 정도",
   "sell abroad":"해외에 팔다",
   "send overseas":"해외로 보내다",
   "ship out":"실어 내보내다",

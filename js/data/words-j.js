@@ -77,8 +77,11 @@ window.VOCAB_J = [
 
   /* 원본 뜻은 '쓰레기' 였는데 L 세트의 litter 와 같았다. junk 는 버려진 물건·고물
      쪽이고 litter 는 흩어진 쓰레기 쪽이라 '폐물, 고물' 로 갈랐다. */
+  /* ★ syn 의 "scrap" 을 "rubbish" 로 바꿨다. scrap 은 S 세트에서 동사
+     '폐기하다, 버리다' 로 선다 — 참조 셋 중 call off·do away with 가 동사이고
+     이 자리만 명사였다. 다수 쪽에 맞추고 이 한 곳을 명사 낱말로 갈았다. */
   { word:"junk", pron:"정크", pos:"n", level:"B2", meanings:["폐물","고물"],
-    syn:["scrap","odds and ends","castoffs"],
+    syn:["rubbish","odds and ends","castoffs"],
     ex:[{ s:"The garage was piled high with old {{}}.", f:"junk", ko:"그 차고는 낡은 폐물이 높이 쌓여 있었다." }] },
 
   /* 승격 ① — GLOSS '공정한; 바로' 를 글자까지 지켰다. 참조 둘이 서로 다른 갈래를

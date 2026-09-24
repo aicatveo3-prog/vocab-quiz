@@ -62,7 +62,7 @@ SET.forEach(function (x) {
   else if (!/^[가-힣\s·\-]+$/.test(x.pron)) errors.push(at + ' pron 에 한글 아닌 문자: ' + x.pron);
 
   var l = x.word.toLowerCase();
-  if (seen[l]) errors.push(at + ' P 세트 안에서 표제어 중복');
+  if (seen[l]) errors.push(at + ' S 세트 안에서 표제어 중복');
   seen[l] = 1;
   var other = ALL.filter(function (w) { return w.word.toLowerCase() === l; });
   if (other.length > 1) errors.push(at + ' 다른 세트와 표제어 중복');
