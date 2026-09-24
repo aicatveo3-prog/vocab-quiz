@@ -620,7 +620,6 @@ Object.assign(window.GLOSS, {
   "over and above that": "그 위에 더해",
   "paid for good": "낸 뒤 되찾지 못하는",
   "peaceable": "평온하게 하는",
-  "pessimistic": "비관적인",
   "pester": "귀찮게 하다",
   "point out": "집어서 말하다",
   "posted sign": "붙여 놓은 알림",

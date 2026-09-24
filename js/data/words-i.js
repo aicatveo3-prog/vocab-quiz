@@ -2038,7 +2038,6 @@ Object.assign(window.GLOSS, {
   "person-to-person": "사람과 사람 사이의",
   "personally": "개인적으로, 직접",
   "pest": "해충",
-  "pesticide": "농약",
   "pique": "돋우다, 자극하다",
   "policy": "보험 증권",
   "poorly": "형편없이",

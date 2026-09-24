@@ -1475,7 +1475,6 @@ Object.assign(window.GLOSS, {
   "paltry": "쥐꼬리만 한",
   "paternal": "아버지의",
   "pecuniary": "금전에 관한",
-  "phenomenon": "현상",
   "pith": "속심",
   "play down": "대수롭지 않게 말하다",
   "play up": "말썽을 부리다",

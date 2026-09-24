@@ -1505,7 +1505,6 @@ Object.assign(window.GLOSS, {
   "mental power":"정신적 능력",
   "outward appearance":"겉모습, 외관",
   "parable":"우화, 비유담",
-  "phony":"허위의, 사이비의",
   "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
   "steadfast":"확고한, 변함없는",
