@@ -1850,8 +1850,11 @@ window.VOCAB_C = [
     syn:["volumetric","solid","three-dimensional"],
     ex:[{ s:"The tank holds two {{}} metres of water.", f:"cubic", ko:"그 탱크는 물 2세제곱미터를 담는다." }] },
 
+  /* prompt 를 reminder to act 로 바꿨다. prompt 가 P 세트 챕터 15 표제어
+     (즉각적인 · adj)로 올라가면 '신호' 의 유의어 자리에 형용사 뜻이 뜬다.
+     사전의 prompt 값도 '즉각적인; 촉구하다' 로 품사가 섞여 있었다. */
   { word:"cue", pron:"큐", pos:"n", level:"B2", meanings:["신호","단서"],
-    syn:["signal","hint","prompt"],
+    syn:["signal","hint","reminder to act"],
     ex:[{ s:"A short nod was the {{}} to begin.", f:"cue", ko:"짧은 고갯짓이 시작하라는 신호였다." }] },
 
   { word:"cuisine", pron:"퀴진", pos:"n", level:"B2", meanings:["요리법","음식"],

@@ -208,8 +208,12 @@ window.VOCAB = [
     syn:["achieve","attain","fulfill"], ant:["fail"],
     ex:[{ s:"The team managed to {{}} the goal ahead of schedule.", f:"accomplish", ko:"그 팀은 예정보다 앞서 목표를 이루어 냈다." }] },
 
+  /* profile 을 user identity 로 바꿨다. profile 이 P 세트 챕터 15 표제어
+     (약력, 인물 소개 · n)로 올라가면 '계좌, 계정' 의 유의어가 '약력' 이 되어
+     버린다. 이 자리가 노린 것은 '쓰는 이의 계정' 쪽 뜻이었다. 사전값도
+     '프로필, 약력' 로 외래어가 섞여 있었다. */
   { word:"account", pron:"어카운트", pos:"n", level:"B1", meanings:["계좌","계정"],
-    syn:["record","ledger","profile"],
+    syn:["record","ledger","user identity"],
     ex:[{ s:"He opened a savings {{}} at the local bank.", f:"account", ko:"그는 동네 은행에 저축 계좌를 열었다." }] },
 
   { word:"account for", pron:"어카운트 포", pos:"phr", level:"B2", meanings:["설명하다","차지하다"],

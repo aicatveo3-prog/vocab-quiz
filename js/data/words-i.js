@@ -802,8 +802,10 @@ window.VOCAB_I = [
     syn:["unquestionable","undeniable","certain"], ant:["doubtful"],
     ex:[{ s:"The evidence of warming is now {{}}.", f:"indubitable", ko:"온난화의 증거는 이제 의심의 여지가 없다." }] },
 
+  /* prompt 를 spur into action 으로 바꿨다. prompt 가 P 세트 챕터 15 표제어
+     (즉각적인 · adj)로 올라가면 동사 표제어의 유의어 자리에 형용사 뜻이 뜬다. */
   { word:"induce", pron:"인듀스", pos:"v", level:"C1", meanings:["설득하다","유발하다"],
-    syn:["persuade","bring on","prompt"],
+    syn:["persuade","bring on","spur into action"],
     ex:[{ s:"Nothing could {{}} him to change his mind.", f:"induce", ko:"어떤 것도 그가 마음을 바꾸도록 설득할 수 없었다." }] },
 
   { word:"indulge", pron:"인덜지", pos:"v", level:"B2", meanings:["마음껏 하다","채우다"],
@@ -2052,7 +2054,6 @@ Object.assign(window.GLOSS, {
   "probing": "파고드는",
   "prominent name": "이름난 인물",
   "propagandize": "선전하다",
-  "propel": "나아가게 하다",
   "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
