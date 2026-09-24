@@ -753,7 +753,9 @@ window.VOCAB_C = [
     ex:[{ s:"Real learning happens outside your {{}}.", f:"comfort zone", ko:"진짜 배움은 안전지대 밖에서 일어난다." }] },
 
   { word:"comic strip", pron:"카믹 스트립", pos:"n", level:"B2", meanings:["연재 만화"],
-    syn:["cartoon","strip","funnies"],
+    /* ★ syn 의 "strip" 을 "picture cartoon series" 로 바꿨다. strip 은 S 세트에서
+       동사 '벗기다' 로 선다 — 명사 목록에 동사가 끼게 된다. */
+    syn:["cartoon","picture cartoon series","funnies"],
     ex:[{ s:"He read the {{}} before anything else in the paper.", f:"comic strip", ko:"그는 신문에서 연재 만화를 무엇보다 먼저 읽었다." }] },
 
   /* ── comm ──────────────────────────────────── */
@@ -1163,7 +1165,9 @@ window.VOCAB_C = [
     ex:[{ s:"Guards will {{}} any glass bottle at the gate.", f:"confiscate", ko:"경비원은 정문에서 유리병을 모두 압수한다." }] },
 
   { word:"conflict", pron:"칸플릭트", pos:"n", level:"B1", meanings:["갈등","분쟁"],
-    syn:["dispute","struggle","friction"], ant:["peace"],
+    /* ★ syn 의 "struggle" 을 "open quarrel" 로 바꿨다. struggle 은 S 세트에서
+       동사 '힘겨워하다, 투쟁하다' 로 선다 — 명사 목록에 동사가 끼게 된다. */
+    syn:["dispute","open quarrel","friction"], ant:["peace"],
     ex:[{ s:"The border {{}} lasted eleven years.", f:"conflict", ko:"그 국경 분쟁은 11년간 이어졌다." }] },
 
   { word:"conflicting", pron:"컨플릭팅", pos:"adj", level:"B2", meanings:["모순되는","상반되는"],
