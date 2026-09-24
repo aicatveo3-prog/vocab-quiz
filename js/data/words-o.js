@@ -801,7 +801,12 @@ window.VOCAB_O = [
      원본은 '산출, 생산, 결과; 산출하다, 출력하다' 로 명사와 동사가 섞여 있었다.
      참조가 없어 자유롭게 고를 수 있었고 명사로 정리했다. */
   { word:"output", pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
-    syn:["production total","amount produced","yield"],
+    /* Y 세트에서 yield 를 동사로 세웠다. 명사 표제어의 유의어 칸에 동사가
+       설 수 없으므로 풀어 쓴 말로 갈았다. harvest(H) 도 같이 손질했다.
+       ⚠️ 처음에 'amount turned out' 을 넣었더니 바로 옆 'amount produced'
+       (만들어 낸 양) 와 설명이 글자까지 같아져 감사에 걸렸다. 한 유의어 목록
+       안에서 설명 두 줄이 같으면 학생에게는 정답이 둘로 보인다. */
+    syn:["production total","amount produced","what a plant puts out"],
     ex:[{ s:"Factory {{}} fell for three months.", f:"output", ko:"공장 생산량이 석 달 동안 떨어졌다." }] },
 
   /* 승격 68 — 사전 표현 '격분, 분노' 를 글자까지 지켰다(발음이 없던 항목이다).
@@ -1377,6 +1382,7 @@ Object.assign(window.GLOSS, {
   "way out": "빠져나가는 길",
   "weigh heavily upon": "~을 무겁게 짓누르다",
   "western": "서쪽의",
+  "what a plant puts out": "공장이 내놓는 양",
   "whatever for": "무엇 때문에",
   "whiff": "살짝 스치는 냄새",
   "willing to listen": "귀를 기울이려는",
