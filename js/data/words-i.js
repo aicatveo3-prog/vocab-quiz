@@ -2031,8 +2031,6 @@ Object.assign(window.GLOSS, {
   "pamper": "애지중지하다",
   "participation": "참가",
   "participatory": "참여하는",
-  "partisan": "당파적인",
-  "pause": "잠깐 멈춤",
   "payment plan": "납입 계획",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",

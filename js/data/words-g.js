@@ -309,7 +309,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '힐끗 봄' 을 첫 자리에 지켰다. glance 와 달리 명사로 뒀다. */
   { word:"glimpse", pron:"글림프스", pos:"n", level:"B2", meanings:["힐끗 봄","잠깐 봄"],
-    syn:["peek","glance","sighting"],
+    syn:["quick look","hasty glance","sighting"],
     ex:[{ s:"We caught a brief {{}} of the castle through the fog.", f:"glimpse", ko:"우리는 안개 속에서 그 성을 잠깐 보았다." }] },
 
   { word:"glitter", pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
@@ -486,7 +486,7 @@ window.VOCAB_G = [
 
   { word:"graze", pron:"그레이즈", pos:"v", level:"B2", meanings:["풀을 뜯어먹다","방목하다"],
     gov:{ prep:["on","in","upon"], pat:"graze {{}} the fresh grass", usage:"graze on ~ : ~을 뜯어먹다" },
-    syn:["pasture","browse","feed"],
+    syn:["put out to graze","browse","feed"],
     ex:[{ s:"Sheep {{}} on the hillside from spring to autumn.", f:"graze", ko:"양들은 봄부터 가을까지 언덕에서 풀을 뜯어먹는다." }] },
 
   /* 승격 ① — GLOSS '기름진' 을 첫 자리에 지켰다. 참조하는 기존 문제는 없다. */
@@ -744,14 +744,10 @@ Object.assign(window.GLOSS, {
   "network":"망, 연결망",
   "nonspecific":"특정하지 않은",
   "opt for":"~을 택하다",
-  "pant":"숨을 헐떡이다",
   "parking space":"주차 공간",
   "pass":"지나가다, 통과되다",
-  "paste":"풀로 붙이다",
-  "pasture":"방목하다",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
-  "peek":"살짝 들여다보다",
   "pioneering":"선구적인",
   "please":"흡족하게 하다",
   "power unit":"동력 장치",
