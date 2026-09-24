@@ -754,7 +754,6 @@ Object.assign(window.GLOSS, {
   "precept":"계율, 가르침",
   "prefer":"더 좋아하다",
   "preside over":"~을 주재하다",
-  "progressive":"점차 진행되는",
   "puff":"숨을 가쁘게 쉬다",
   "pull through":"이겨 내다",
   "pulverize":"가루로 만들다",

@@ -804,7 +804,6 @@ Object.assign(window.GLOSS, {
   "plush": "푹신하고 고급스러운",
   "poem": "시",
   "predominantly": "주로, 대부분은",
-  "probable": "있을 법한",
   "profuse": "넘칠 만큼 많은",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",

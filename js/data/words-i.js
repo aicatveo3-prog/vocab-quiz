@@ -802,8 +802,10 @@ window.VOCAB_I = [
     syn:["unquestionable","undeniable","certain"], ant:["doubtful"],
     ex:[{ s:"The evidence of warming is now {{}}.", f:"indubitable", ko:"온난화의 증거는 이제 의심의 여지가 없다." }] },
 
+  /* prompt 를 spur into action 으로 바꿨다. prompt 가 P 세트 챕터 15 표제어
+     (즉각적인 · adj)로 올라가면 동사 표제어의 유의어 자리에 형용사 뜻이 뜬다. */
   { word:"induce", pron:"인듀스", pos:"v", level:"C1", meanings:["설득하다","유발하다"],
-    syn:["persuade","bring on","prompt"],
+    syn:["persuade","bring on","spur into action"],
     ex:[{ s:"Nothing could {{}} him to change his mind.", f:"induce", ko:"어떤 것도 그가 마음을 바꾸도록 설득할 수 없었다." }] },
 
   { word:"indulge", pron:"인덜지", pos:"v", level:"B2", meanings:["마음껏 하다","채우다"],
@@ -1056,8 +1058,11 @@ window.VOCAB_I = [
     ex:[{ s:"Doctors will {{}} every child against measles.", f:"inoculate", ko:"의사들은 모든 아이에게 홍역 접종을 할 것이다." }] },
 
   /* 원본 셋째 갈래 '질문' 은 meanings 2개 제한에 걸려 뺐다. */
+  /* probe 를 search for facts 로 바꿨다. probe 가 P 세트 챕터 14 표제어
+     (조사하다, 캐다 · v)로 올라가면 명사 표제어의 유의어 자리에 동사 뜻이 뜬다.
+     사전의 probe 값도 '조사하다; 탐침' 으로 품사가 섞여 있었다. */
   { word:"inquiry", pron:"인콰이어리", pos:"n", level:"B2", meanings:["연구","탐구"],
-    syn:["investigation","probe","research"],
+    syn:["investigation","search for facts","research"],
     ex:[{ s:"Scientific {{}} depends on careful observation.", f:"inquiry", ko:"과학적 탐구는 주의 깊은 관찰에 달려 있다." }] },
 
   /* 승격 ① — GLOSS '호기심 많은' 을 글자까지 지켰다. curious(syn) 가 참조한다.
@@ -2049,13 +2054,11 @@ Object.assign(window.GLOSS, {
   "probing": "파고드는",
   "prominent name": "이름난 인물",
   "propagandize": "선전하다",
-  "propel": "나아가게 하다",
   "propensity": "기질, 버릇",
   "proportionally to": "~에 비례하는 만큼",
   "protected": "보호되는",
   "prying": "남의 일을 캐는",
   "public works": "공공 사업",
-  "publish": "출간하다",
   "put in": "넣다",
   "put in place": "자리에 놓다",
   "put money into": "~에 돈을 넣다",

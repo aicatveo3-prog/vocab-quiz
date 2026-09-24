@@ -1943,7 +1943,6 @@ Object.assign(window.GLOSS, {
   "noxious gas":"해로운 기체",
   "person on the run":"쫓기는 사람",
   "power source":"동력을 내는 것",
-  "purpose":"목적, 쓰임",
   "realization":"실현",
   "rewarding":"보람 있는",
   "runaway":"달아난 사람",
