@@ -777,7 +777,6 @@ Object.assign(window.GLOSS, {
   "sighting":"목격",
   "slick":"매끄럽고 미끈한",
   "snarl":"이를 드러내고 으르렁대다",
-  "snatch":"낚아채다",
   "solemn":"엄숙한",
   "somber":"침침한, 어두운",
   "sorrow":"비애",

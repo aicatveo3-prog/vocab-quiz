@@ -1747,7 +1747,6 @@ Object.assign(window.GLOSS, {
   "rush into":"급히 들어가다",
   "skim by":"스쳐 지나가다",
   "smooth delivery":"막힘 없는 말솜씨",
-  "snap":"딱 튀기다",
   "soft and light":"부드럽고 가벼운",
   "stay on the surface":"수면에 머물다",
   "steady movement":"꾸준한 움직임",

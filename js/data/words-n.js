@@ -641,7 +641,6 @@ Object.assign(window.GLOSS, {
   "settle cozily": "편안히 자리 잡다",
   "settled": "정착한",
   "short sleep": "짧게 자는 잠",
-  "slim": "가느다란",
   "small market gap": "작은 시장 틈",
   "small-minded": "생각이 좁은",
   "snug spot": "꼭 들어맞는 자리",

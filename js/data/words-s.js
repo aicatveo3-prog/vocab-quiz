@@ -1071,7 +1071,121 @@ window.VOCAB_S = [
   /* 승격 86 — 사전 글자 유지. 참조 by far(B) 의 화면은 바뀌지 않는다. */
   { word:"slightly", pron:"슬라이틀리", pos:"adv", level:"B1", meanings:["약간","조금"],
     syn:["a little","to a small degree","just a bit"], ant:["by far"],
-    ex:[{ s:"The room was {{}} warmer today.", f:"slightly", ko:"그 방은 오늘 약간 더 따뜻했다." }] }
+    ex:[{ s:"The room was {{}} warmer today.", f:"slightly", ko:"그 방은 오늘 약간 더 따뜻했다." }] },
+
+  /* ── 챕터 10 ───────────────────────────────────── */
+  /* 사전이 품사를 잘못 잡아 둔 자리가 둘이다.
+       slope  사전 '비탈지다'(동사) → 원본 쪽 명사 '비탈, 기울기'
+              incline(v) 의 syn 에 명사가 끼게 되므로 그 자리를
+              'rise or fall at an angle' 로 갈았다
+       smash  사전 '부수다; 충돌' → 동사 '부수다'
+              참조 break·crash·fracture 가 모두 동사라 그대로 맞는다
+
+     smash(부수다) 와 shatter(산산이 부수다 · 챕터 7) 는 '산산이' 로 갈랐다.
+     smash 는 break(부수다, 어기다)·fracture(부러지다, 부수다) 와 첫 갈래가
+     글자까지 같아 서로의 오답에서 자동으로 빠진다.
+     soar(급상승하다, 높이 날다) 는 skyrocket(급등하다 · 챕터 9) 와 갈랐다. */
+
+  /* 승격 87 — 사전 단일값 유지. 참조 narrow(N) 의 화면은 바뀌지 않는다.
+     원본의 '호리호리한' 은 챕터 9 의 slender 자리다. */
+  { word:"slim", pron:"슬림", pos:"adj", level:"B1", meanings:["가느다란"],
+    syn:["narrow","thin in form","of small width"],
+    ex:[{ s:"She carried a {{}} notebook.", f:"slim", ko:"그녀는 가느다란 공책을 들고 있었다." }] },
+
+  /* 승격 88 — 사전은 동사 '비탈지다' 였다. 원본이 명사 쪽이라 명사로 세우고
+     참조 incline(I) 의 그 자리를 동사 표현으로 갈았다. */
+  { word:"slope", pron:"슬로프", pos:"n", level:"B2", meanings:["비탈","기울기"],
+    syn:["rising ground","angle of a surface","tilt of the land"],
+    ex:[{ s:"The house stands on a gentle {{}}.", f:"slope", ko:"그 집은 완만한 비탈에 서 있다." }] },
+
+  { word:"sloppy", pron:"슬라피", pos:"adj", level:"C1", meanings:["엉성한","대충하는"],
+    syn:["slapdash","done without care","messy in work"],
+    ex:[{ s:"The teacher returned his {{}} work.", f:"sloppy", ko:"교사는 그의 엉성한 과제를 돌려주었다." }] },
+
+  /* 승격 89 — 사전 글자 유지. 참조 brisk(B)·drowsy(D)·indolent(I) 세 곳의
+     화면은 바뀌지 않는다. */
+  { word:"sluggish", pron:"슬러기시", pos:"adj", level:"C1", meanings:["느릿한","부진한"],
+    syn:["drowsy","indolent","slow to move"], ant:["brisk"],
+    ex:[{ s:"Sales were {{}} all winter.", f:"sluggish", ko:"겨울 내내 판매가 부진했다." }] },
+
+  /* 원본이 [n+v] 였다. 명사로 세웠다. */
+  { word:"slumber", pron:"슬럼버", pos:"n", level:"C2", meanings:["잠","수면"],
+    syn:["deep sleep","time of sleeping","rest with eyes shut"],
+    ex:[{ s:"He fell into a deep {{}}.", f:"slumber", ko:"그는 깊은 잠에 빠졌다." }] },
+
+  /* 승격 90 — 사전 글자 유지. 참조 depression(D)·downturn(D) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"slump", pron:"슬럼프", pos:"n", level:"B2", meanings:["폭락","부진"],
+    syn:["depression","downturn","sharp fall in trade"],
+    ex:[{ s:"The market went through a long {{}}.", f:"slump", ko:"시장은 긴 부진을 겪었다." }] },
+
+  /* 승격 91 — 사전 첫 갈래만 남겼다. 참조 break(B)·crash(C)·fracture(F) 가
+     모두 동사여서 그대로 맞는다. 그 세 곳의 설명이 '부수다; 충돌' 에서
+     '부수다' 로 짧아진다. */
+  { word:"smash", pron:"스매시", pos:"v", level:"B2", meanings:["부수다"],
+    syn:["break","fracture","crash into pieces"],
+    ex:[{ s:"He tried to {{}} the lock.", f:"smash", ko:"그는 그 자물쇠를 부수려 했다." }] },
+
+  /* 승격 92 — 사전 글자 유지. 참조가 다섯 곳(bumpy·coarse·effortless·flat·
+     mellow) 인데 하나도 바뀌지 않는다. */
+  { word:"smooth", pron:"스무드", pos:"adj", level:"B1", meanings:["매끄러운","평탄한"],
+    syn:["effortless","flat","even to the touch"], ant:["bumpy","coarse"],
+    ex:[{ s:"The new road is wide and {{}}.", f:"smooth", ko:"새 길은 넓고 평탄하다." }] },
+
+  /* 원본의 '밀입국하다' 는 버렸다 — 물건을 들이는 쪽만 남겼다. */
+  { word:"smuggle", pron:"스머글", pos:"v", level:"C1", meanings:["밀수하다"],
+    syn:["bring in by stealth","move goods illegally","sneak past customs"],
+    ex:[{ s:"They tried to {{}} gold across the border.", f:"smuggle", ko:"그들은 국경으로 금을 밀수하려 했다." }] },
+
+  /* 승격 93 — 사전 단일값 유지. 참조 flick(F) 의 화면은 바뀌지 않는다. */
+  { word:"snap", pron:"스냅", pos:"v", level:"B2", meanings:["딱 튀기다"],
+    syn:["flick","give a sharp click","break with a crack"],
+    ex:[{ s:"He tried to {{}} his fingers.", f:"snap", ko:"그는 손가락을 딱 튀기려 했다." }] },
+
+  /* 승격 94 — 사전 단일값 유지. 참조 grab(G) 의 화면은 바뀌지 않는다. */
+  { word:"snatch", pron:"스내치", pos:"v", level:"B2", meanings:["낚아채다"],
+    syn:["grab","seize quickly","take with a jerk"],
+    ex:[{ s:"A gull tried to {{}} the bread.", f:"snatch", ko:"갈매기가 그 빵을 낚아채려 했다." }] },
+
+  /* 원본의 둘째 갈래('슬쩍 훔치다') 는 버렸다. */
+  { word:"sneak", pron:"스니크", pos:"v", level:"B2", meanings:["몰래 가다"],
+    syn:["move without being seen","creep quietly","go by stealth"],
+    ex:[{ s:"He tried to {{}} out of the hall.", f:"sneak", ko:"그는 강당에서 몰래 나가려 했다." }] },
+
+  /* 원본이 [v+n] 이었다. 동사로 세웠다. */
+  { word:"sniff", pron:"스니프", pos:"v", level:"B2", meanings:["코를 킁킁거리다"],
+    syn:["draw air in through the nose","smell in short breaths","snuffle"],
+    ex:[{ s:"The dog began to {{}} at the bag.", f:"sniff", ko:"개가 그 가방에 코를 킁킁거리기 시작했다." }] },
+
+  { word:"snore", pron:"스노", pos:"v", level:"B2", meanings:["코를 골다"],
+    syn:["breathe noisily in sleep","make a rough sound asleep","rumble while sleeping"],
+    ex:[{ s:"He began to {{}} loudly.", f:"snore", ko:"그는 크게 코를 골기 시작했다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"so far", pron:"소 파", pos:"phr", level:"B1", meanings:["지금까지"],
+    syn:["up to now","until this point","as of the present"] },
+
+  { word:"so much the better", pron:"소 머치 더 베터", pos:"phr", level:"C2", meanings:["훨씬 더 좋은"],
+    syn:["all the better for it","even more welcome","that much improved"] },
+
+  /* 승격 95 — 사전 단일값 유지. 참조 drench(D) 의 화면은 바뀌지 않는다. */
+  { word:"soak", pron:"소크", pos:"v", level:"B2", meanings:["흠뻑 젖게 하다"],
+    syn:["drench","wet right through","leave in liquid"],
+    ex:[{ s:"The rain will {{}} your coat.", f:"soak", ko:"비가 네 외투를 흠뻑 젖게 할 것이다." }] },
+
+  /* 승격 96 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다.
+     skyrocket(급등하다 · 챕터 9) 와 갈랐다 — 이쪽은 날아오르는 쪽도 맡는다. */
+  { word:"soar", pron:"소", pos:"v", level:"B2", meanings:["급상승하다","높이 날다"],
+    syn:["rise high up","fly far above","climb into the sky"],
+    ex:[{ s:"Eagles {{}} above the cliff.", f:"soar", ko:"독수리들이 절벽 위로 높이 난다." }] },
+
+  { word:"sob", pron:"삽", pos:"v", level:"B2", meanings:["흐느껴 울다"],
+    syn:["weep aloud","cry with catching breath","shed tears noisily"],
+    ex:[{ s:"The child began to {{}}.", f:"sob", ko:"그 아이가 흐느껴 울기 시작했다." }] },
+
+  { word:"sober", pron:"소버", pos:"adj", level:"C1", meanings:["술 취하지 않은","냉철한"],
+    syn:["not drunk","clear-minded","level in judgment"], ant:["drunk"],
+    ex:[{ s:"He stayed {{}} all evening.", f:"sober", ko:"그는 저녁 내내 술에 취하지 않았다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1085,10 +1199,13 @@ Object.assign(window.GLOSS, {
   "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
   "all skin and bone": "살가죽과 뼈뿐인",
+  "all the better for it": "그 덕에 더 나은",
+  "angle of a surface": "면이 기운 각도",
   "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "army officer of low rank": "계급이 낮은 군 간부",
+  "as of the present": "현재로서는",
   "at one and the same time": "같은 때에 한꺼번에",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
@@ -1107,6 +1224,9 @@ Object.assign(window.GLOSS, {
   "bony": "뼈가 드러난",
   "branch of industry": "산업의 한 가지",
   "breach of divine law": "신의 법을 어김",
+  "break with a crack": "뚝 소리 내며 끊다",
+  "breathe noisily in sleep": "잘 때 시끄럽게 숨 쉬다",
+  "bring in by stealth": "몰래 들여오다",
   "bring up from water": "물에서 끌어올리다",
   "brother or sister": "형제 또는 자매",
   "building of many floors": "층이 많은 건물",
@@ -1130,7 +1250,9 @@ Object.assign(window.GLOSS, {
   "clean by rubbing": "비벼서 깨끗이 하다",
   "clear in outline": "윤곽이 또렷한",
   "clear judgment": "맑은 판단력",
+  "clear-minded": "머릿속이 맑은",
   "climb at great speed": "아주 빠르게 올라가다",
+  "climb into the sky": "하늘로 올라가다",
   "close examination": "빈틈없는 살핌",
   "close hard": "힘껏 닫다",
   "close look": "바짝 들여다봄",
@@ -1144,6 +1266,9 @@ Object.assign(window.GLOSS, {
   "cool dark spot": "시원하고 어두운 자리",
   "court ruling": "법정이 내린 결정",
   "cover from danger": "위험을 막아 주는 곳",
+  "crash into pieces": "박살 나게 하다",
+  "creep quietly": "조용히 기어가다",
+  "cry with catching breath": "숨을 삼키며 울다",
   "cut out the hard parts": "어려운 데를 덜어 내다",
   "cut the supply of": "~의 공급을 끊다",
   "cutting tool with teeth": "이가 난 자르는 도구",
@@ -1151,6 +1276,7 @@ Object.assign(window.GLOSS, {
   "dark in intent": "속뜻이 어두운",
   "dark outline": "어두운 테두리",
   "dazzling to see": "보기에 눈부신",
+  "deep sleep": "깊은 잠",
   "delay the progress of": "~의 진행을 늦추다",
   "delicacy of response": "반응의 고움",
   "deliverance": "해방, 벗어남",
@@ -1160,16 +1286,21 @@ Object.assign(window.GLOSS, {
   "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
   "division by race": "인종에 따른 갈림",
+  "done without care": "공을 들이지 않은",
   "drain water": "배수로로 흐르는 물",
   "drains and clean water": "배수와 깨끗한 물",
+  "draw air in through the nose": "코로 숨을 들이켜다",
   "drop away": "떨어져 나가다",
   "drop below the surface": "물낯 아래로 내려가다",
+  "drunk": "술에 취한",
   "ease into without notice": "티 안 나게 스며들다",
   "easily affected": "쉽게 영향을 받는",
   "edge of the sea": "바다의 가장자리",
   "effect not aimed at": "겨냥하지 않은 영향",
   "elderly person": "나이가 든 사람",
   "elected upper chamber member": "뽑힌 윗 의회 구성원",
+  "even more welcome": "더욱 반가운",
+  "even to the touch": "손에 고르게 닿는",
   "examine closely": "바짝 붙어 살펴보다",
   "experienced": "겪어 본 바가 많은",
   "failing in something": "무언가에서 모자란 점",
@@ -1187,6 +1318,7 @@ Object.assign(window.GLOSS, {
   "flavor with spice": "향신료로 맛을 내다",
   "fluid given off": "내어놓은 액체",
   "fluid in the mouth": "입안의 액체",
+  "fly far above": "저 위로 날다",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
@@ -1201,6 +1333,7 @@ Object.assign(window.GLOSS, {
   "gather up in one go": "한 번에 그러모으다",
   "get smaller": "작아지다",
   "get ~ under way": "~이 돌아가기 시작하게 하다",
+  "give a sharp click": "딸깍 소리를 내다",
   "give taste to": "~에 맛을 들이다",
   "giving contentment": "흐뭇함을 주는",
   "giving up of something": "무언가를 내놓음",
@@ -1208,6 +1341,7 @@ Object.assign(window.GLOSS, {
   "glide over the text": "글 위를 스쳐 가다",
   "glut": "실컷 채우다",
   "go back and forth": "오가다",
+  "go by stealth": "남의 눈을 피해 가다",
   "go under water": "물밑으로 들어가다",
   "going on at once": "한꺼번에 진행되는",
   "gracefully thin": "맵시 있게 마른",
@@ -1257,9 +1391,11 @@ Object.assign(window.GLOSS, {
   "land by the water": "물가의 땅",
   "lay by for later": "나중을 위해 챙겨 두다",
   "leaf through": "책장을 넘겨 가며 보다",
+  "leave in liquid": "물에 담가 두다",
   "left adrift at sea": "바다에 떠돌게 된",
   "let fall": "떨어지게 하다",
   "let fly an arrow": "화살을 날리다",
+  "level in judgment": "판단이 고른",
   "lift and drop the shoulders": "어깨를 올렸다 내리다",
   "lift with a scoop": "국자로 떠올리다",
   "long attack from outside": "밖에서 오래 밀어붙이는 공격",
@@ -1273,6 +1409,7 @@ Object.assign(window.GLOSS, {
   "loss of a ship at sea": "바다에서 배를 잃음",
   "madness": "광기",
   "make a mark by rubbing": "비벼서 자국을 내다",
+  "make a rough sound asleep": "잠결에 거친 소리를 내다",
   "make plain": "알기 쉽게 하다",
   "make sorrowful": "애석하게 만들다",
   "make sure of": "틀림없이 해 두다",
@@ -1282,19 +1419,23 @@ Object.assign(window.GLOSS, {
   "meant truly": "참으로 한 말인",
   "member of the senate": "상원에 속한 사람",
   "mental health": "정신 건강",
+  "messy in work": "일솜씨가 어수선한",
   "miss on purpose": "일부러 빼먹다",
   "money for tuition": "수업료에 쓰는 돈",
   "moral fault": "도리에 어긋난 잘못",
   "moral lecture": "도리를 일러 주는 말",
   "more than two": "둘보다 많은",
   "move fast in haste": "급히 빠르게 움직이다",
+  "move goods illegally": "물건을 불법으로 옮기다",
   "move to another state": "다른 상태로 옮김",
+  "move without being seen": "보이지 않게 움직이다",
   "named by oneself": "제가 제 이름을 붙인",
   "narrow in shape": "꼴이 좁은",
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
   "non-commissioned officer": "임관하지 않은 간부",
   "not deep": "깊지 않은",
+  "not drunk": "술기운이 없는",
   "not new": "새것이 아닌",
   "not often": "자주 ~ 않는",
   "not on a payroll": "월급을 받지 않는",
@@ -1303,6 +1444,7 @@ Object.assign(window.GLOSS, {
   "note-taking in signs": "기호로 받아 적기",
   "nothing but": "다른 것 없이 오직",
   "of bodily pleasure": "몸의 즐거움에 속한",
+  "of small width": "폭이 작은",
   "of sound mind": "정신이 온전한",
   "of the senses": "감각에 속한",
   "of this world": "이 세상에 속한",
@@ -1368,12 +1510,17 @@ Object.assign(window.GLOSS, {
   "redemption": "속죄, 되찾음",
   "reduce to basics": "기본만 남기다",
   "responsive to touch": "닿는 것에 반응하는",
+  "rest with eyes shut": "눈을 감고 쉼",
   "rich tang": "짙은 맛깔",
+  "rise high up": "높이 솟아오르다",
+  "rise or fall at an angle": "비스듬히 오르내리다",
   "rise steeply": "가파르게 오르다",
+  "rising ground": "솟아오른 땅",
   "roof over one's head": "머리를 덮어 줄 지붕",
   "rub hard": "세게 비비다",
   "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
+  "rumble while sleeping": "자면서 그렁거리다",
   "run one's eye over": "눈으로 쭉 지나가다",
   "run to and fro": "이리저리 다니다",
   "run-down": "허름해진",
@@ -1390,6 +1537,7 @@ Object.assign(window.GLOSS, {
   "screen from danger": "위험에서 가려 주다",
   "secret plan": "몰래 세운 계획",
   "seeing only the near": "가까운 것만 보는",
+  "seize quickly": "재빨리 붙잡다",
   "self-styled": "스스로 내세운",
   "send a bullet": "탄알을 보내다",
   "set apart": "따로 떼어 두다",
@@ -1401,6 +1549,8 @@ Object.assign(window.GLOSS, {
   "shake with cold": "추위로 떨다",
   "shake with horror": "끔찍함에 떨다",
   "shape against the light": "빛을 등진 꼴",
+  "sharp fall in trade": "거래의 급한 떨어짐",
+  "shed tears noisily": "시끄럽게 눈물을 흘리다",
   "shelter from sun": "볕을 가려 주는 곳",
   "shoot up fast": "빠르게 치솟다",
   "show one does not care": "대수롭지 않다는 몸짓을 하다",
@@ -1418,9 +1568,13 @@ Object.assign(window.GLOSS, {
   "slim in build": "몸매가 호리호리한",
   "slip into": "슬그머니 들어가다",
   "slow to believe": "쉽게 믿지 않는",
+  "slow to move": "움직임이 더딘",
   "smack": "철썩 치다",
   "smash into bits": "조각조각 깨뜨리다",
+  "smell in short breaths": "짧게 숨 쉬며 냄새를 맡다",
+  "sneak past customs": "세관을 몰래 지나다",
   "sneering": "코웃음 치는",
+  "snuffle": "코를 훌쩍이다",
   "some in number": "수가 얼마쯤 되는",
   "soundness of mind": "정신의 온전함",
   "spacecraft in orbit": "궤도를 도는 비행체",
@@ -1449,15 +1603,20 @@ Object.assign(window.GLOSS, {
   "take in and hide": "받아들여 숨겨 주다",
   "take on a burden": "짐을 짊어지다",
   "take out a place in": "~에 자리를 잡아 두다",
+  "take with a jerk": "확 잡아당기다",
   "talk of the town": "장안의 이야깃거리",
   "taste one enjoys": "즐기는 맛",
   "tender mood": "다정한 마음결",
   "term of study": "공부하는 기간",
+  "that much improved": "그만큼 나아진",
   "thin in amount": "양이 얇은",
+  "thin in form": "꼴이 가는",
   "thing everyone speaks of": "모두가 입에 올리는 것",
   "thinking no further ahead": "더 멀리 생각하지 않는",
   "throw out as useless": "쓸모없다고 내버리다",
+  "tilt of the land": "땅의 기울어짐",
   "time a court is open": "법정이 열려 있는 때",
+  "time of sleeping": "잠자는 동안",
   "to a small degree": "작은 정도로",
   "to all appearances": "누가 봐도 그렇게",
   "to do with feeling": "느낌에 관한",
@@ -1474,7 +1633,9 @@ Object.assign(window.GLOSS, {
   "turn off at the source": "근원에서 잠그다",
   "unable to breathe easily": "숨쉬기가 어려운",
   "unease at being watched": "보여지는 데서 오는 불편함",
+  "until this point": "이 시점까지",
   "unwanted result": "바라지 않은 결과",
+  "up to now": "이제까지",
   "upper-house lawmaker": "윗 의회의 입법자",
   "used": "남이 쓰던",
   "using ridicule": "조롱을 써서",
@@ -1487,7 +1648,9 @@ Object.assign(window.GLOSS, {
   "waste disposal system": "오물 처리 체계",
   "waste water": "버려지는 물",
   "weak point": "약한 데",
+  "weep aloud": "소리 내어 울다",
   "weighty in effect": "영향이 무거운",
+  "wet right through": "속까지 적시다",
   "win over by charm": "매력으로 끌어들이다",
   "with a keen edge": "날이 선 채로",
   "without shame": "부끄러움 없이",
