@@ -1895,7 +1895,6 @@ Object.assign(window.GLOSS, {
   "union":"결합; 노조",
   "unit":"단위; 세포",
   "united":"단결한, 통합된",
-  "unity":"통합, 단결",
   "universe":"우주",
   "unnamed":"이름 없는",
   "unrefined":"정제되지 않은",

@@ -2258,7 +2258,6 @@ Object.assign(window.GLOSS, {
   "tools":"도구, 공구",
   "turning point":"전환점",
   "unequal":"동등하지 않은",
-  "unpredictable":"종잡을 수 없는",
   "visualize":"시각적으로 떠올리다",
   "wear away":"닳아 없어지게 하다",
   "wearing away":"닳아 없어짐",

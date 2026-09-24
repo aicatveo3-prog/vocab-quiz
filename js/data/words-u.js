@@ -358,44 +358,229 @@ window.VOCAB_U = [
   /* 승격 ⑮ — 사전 글자 유지(참조 distinctive). */
   { word:"unique", pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
     syn:["distinctive","the only one of its kind","like no other"],
-    ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] }
+    ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] },
+
+  /* ══ 13차 · unite ~ up to a point (20단어) ═══════════════════════════════
+     승격 6 · 신규 14
+
+     이 챕터가 U 세트에서 가장 빽빽했다. '변함없음'·'견줄 데 없음'·'의심할 수
+     없음' 세 덩어리가 한자리에 모이고, 그중 여럿이 **글자만 살짝 달라** 자동
+     배제를 빠져나간다. 네 자리를 유의어로 묶고 한 자리는 뜻 순서를 바꿨다.
+
+       ★ untold  헤아릴 수 없는 → **막대한, 헤아릴 수 없는**
+         measurable(헤아릴 수 있는 · B2/adj) 와 레벨 차가 1이다. '없는' 과
+         '있는' 한 글자만 다르니 영→한 선택지에 나란히 놓이면 눈으로 갈리지
+         않는다. '막대한' 을 앞세웠다. 사전값은 둘째 갈래로 살아 있어
+         immeasurable(헤아릴 수 없는, 측정할 수 없는 · C1/adj)·priceless·
+         invaluable 과 맞물리는 것도 그대로다. enormous·immense 의 '막대한' 과도
+         새로 맞물린다. ★ 참조 innumerable(I) 의 화면이 한 줄 늘어난다.
+
+       ★ unquestioned 의 유의어에 undoubted·indubitable 을 넣었다
+         셋이 사실상 같은 뜻인데 글자가 조금씩 달라 하나도 배제되지 않았다.
+           unquestioned  의심할 수 없는
+           undoubted     확실한, 의심할 바 없는   ← 앞 챕터
+           indubitable   의심의 여지가 없는, 명백한
+         '의심할 수 없는' 과 '의심할 바 없는' 은 한 글자만 다르다. 한→영에서
+         어느 쪽을 물어도 정답이 둘이 된다. 유의어로 묶어 막았다.
+
+       ★ unswerving 의 유의어에 unwavering 을 넣었다
+         같은 챕터에 있는데 뜻이 사실상 같다('변함없는' / '확고한'). 둘 다
+         steadfast(확고한, 변함없는) 와는 글자가 맞물려 배제되는데 서로는
+         빠져나갔다. 유의어로 묶었다.
+
+       ★ unite 의 유의어에 integrate 를 넣었다
+         incorporate(통합하다, 포함시키다)·consolidate(강화하다, 통합하다) 는
+         '통합하다' 가 글자째 같아 자동 배제되는데, integrate 는 '통합**시키다**'
+         라서 빠져나간다. 뜻은 거의 같다. 유의어로 묶었다.
+
+       ★ unsustainable 의 반의어에 sustainable 을 넣었다 — 자료를 제대로 채운
+         것이다. 앱은 반의어를 오답에서 빼지 않고 오히려 일부러 한 개 넣어
+         뜻의 경계를 묻는다.
+
+     나머지는 손대지 않아도 자동으로 갈린다.
+       unlawful      ← illegal(불법의, 위법의) 와 '위법의' 가 같다
+       unlock        ← reveal·display 가 '드러내다' 를 쓴다
+       unwavering    ← steadfast·resolute 가 '확고한' 을 쓴다
+       unswerving    ← steadfast·invariable 이 '변함없는' 을 쓴다
+       unity·universal·unpredictable ← 참조와 유의어 관계다
+
+     unparalleled(비할 데 없는) 와 unrivaled(경쟁자가 없는) 는 뜻이 가까워
+     한 챕터에 두기가 조심스러웠다. 앞쪽은 '견줄 상대' 에, 뒤쪽은 '겨루는 자'
+     에 무게를 두어 글자로 확실히 갈랐다. */
+
+  /* 승격 ⑯ — 사전 단일값 유지. 참조 세 곳(combine·cooperate 유의어,
+     alienate 반의어) 의 화면은 바뀌지 않는다. '결합시키다' 는 combine 자리다.
+     ★ integrate(융합하다, 통합시키다) 를 유의어로 넣었다 — '통합시키다' 는
+     '통합하다' 와 글자가 달라 자동 배제를 빠져나가기 때문이다.
+     incorporate·consolidate 는 '통합하다' 가 같아 저절로 배제된다. */
+  { word:"unite", pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
+    syn:["combine","integrate","join into one"], ant:["alienate"],
+    ex:[{ s:"The war helped to {{}} the clans.", f:"unite", ko:"그 전쟁은 씨족들을 통합하는 데 도움이 됐다." }] },
+
+  /* 승격 ⑰ — 사전 글자 유지. 참조 cohesion(C)·division(D) 두 곳의 화면은
+     바뀌지 않는다. 교재 세 갈래 중 하나를 버렸다. */
+  { word:"unity", pron:"유너티", pos:"n", level:"B2", meanings:["통합","단결"],
+    syn:["cohesion","being at one","holding together"], ant:["division"],
+    ex:[{ s:"The speech called for {{}}.", f:"unity", ko:"그 연설은 단결을 호소했다." }] },
+
+  /* 승격 ⑱ — 사전 단일값 유지(참조 generic). 교재의 '전 세계의, 우주의' 는
+     버렸다. */
+  { word:"universal", pron:"유니버설", pos:"adj", level:"B1", meanings:["보편적인"],
+    syn:["generic","true of all","holding everywhere"],
+    ex:[{ s:"Kindness is a {{}} value.", f:"universal", ko:"친절은 보편적인 가치다." }] },
+
+  { word:"unjust", pron:"언저스트", pos:"adj", level:"B2", meanings:["부당한"],
+    syn:["not fair","against what is right","wrongly harsh"],
+    ex:[{ s:"The fine seemed {{}}.", f:"unjust", ko:"그 벌금은 부당해 보였다." }] },
+
+  /* 승격 ⑲ — 사전 단일값 유지(참조 illegal). illegal(불법의, 위법의) 와
+     '위법의' 가 맞물려 배제된다. */
+  { word:"unlawful", pron:"언로풀", pos:"adj", level:"B2", meanings:["위법의"],
+    syn:["illegal","against the law","not allowed by law"],
+    ex:[{ s:"The search was ruled {{}}.", f:"unlawful", ko:"그 수색은 위법으로 판정됐다." }] },
+
+  /* 교재는 열일곱 자짜리 설명이었다. 뜻만 남겼다. */
+  { word:"unlearn", pron:"언런", pos:"v", level:"C2", meanings:["배운 것을 잊다"],
+    syn:["put aside what one was taught","drop an old habit of mind","let go of learning"],
+    ex:[{ s:"Players must {{}} bad form first.", f:"unlearn", ko:"선수들은 먼저 나쁜 자세를 잊어야 한다." }] },
+
+  /* reveal(드러내다, 밝히다)·display(전시하다, 드러내다) 와 '드러내다' 가
+     맞물려 배제된다. */
+  { word:"unlock", pron:"언락", pos:"v", level:"B2", meanings:["열다","드러내다"],
+    syn:["reveal","open with a key","let out what was shut in"],
+    ex:[{ s:"One key can {{}} both doors.", f:"unlock", ko:"열쇠 하나가 두 문을 다 열 수 있다." }] },
+
+  { word:"unnoticeably", pron:"언노티서블리", pos:"adv", level:"C2", meanings:["눈에 띄지 않게"],
+    syn:["without being seen","so as to draw no eye","too slightly to be marked"],
+    ex:[{ s:"Prices crept up {{}}.", f:"unnoticeably", ko:"값이 눈에 띄지 않게 슬금슬금 올랐다." }] },
+
+  /* 아래 unrivaled(경쟁자가 없는) 와 갈랐다 — 이쪽은 '견줄 상대' 에 무게를
+     두었다. */
+  { word:"unparalleled", pron:"언패럴렐드", pos:"adj", level:"C1", meanings:["비할 데 없는"],
+    syn:["with no equal","never matched before","standing quite alone"],
+    ex:[{ s:"The city grew at an {{}} pace.", f:"unparalleled", ko:"그 도시는 비할 데 없는 속도로 커졌다." }] },
+
+  /* 승격 ⑳ — 사전 단일값 유지(참조 erratic). '예측할 수 없는' 은 erratic 자리다. */
+  { word:"unpredictable", pron:"언프리딕터블", pos:"adj", level:"B2", meanings:["종잡을 수 없는"],
+    syn:["erratic","hard to foresee","changing without warning"],
+    ex:[{ s:"The weather here is {{}}.", f:"unpredictable", ko:"이곳 날씨는 종잡을 수 없다." }] },
+
+  /* ★ undoubted(확실한, 의심할 바 없는)·indubitable(의심의 여지가 없는,
+     명백한) 을 유의어로 넣었다. 셋이 사실상 같은 뜻인데 '의심할 수 없는' 과
+     '의심할 바 없는' 처럼 한 글자만 달라 하나도 자동 배제되지 않았다.
+     dubious(의심스러운)·suspicious(의심하는) 와는 뜻이 정반대라 한 문제에
+     같이 뜰 수 있다 — 반의어를 일부러 넣는 설계다. */
+  { word:"unquestioned", pron:"언퀘스천드", pos:"adj", level:"C1", meanings:["의심할 수 없는"],
+    syn:["undoubted","indubitable","not to be doubted"],
+    ex:[{ s:"Her skill is {{}}.", f:"unquestioned", ko:"그녀의 솜씨는 의심할 수 없다." }] },
+
+  /* 위 unparalleled(비할 데 없는) 와 갈랐다 — 이쪽은 '겨루는 자' 에 무게를
+     두었다. */
+  { word:"unrivaled", pron:"언라이벌드", pos:"adj", level:"C1", meanings:["경쟁자가 없는"],
+    syn:["with no one to match it","having no contender","at the top alone"],
+    ex:[{ s:"The firm is {{}} in that field.", f:"unrivaled", ko:"그 회사는 그 분야에서 경쟁자가 없다." }] },
+
+  { word:"unroll", pron:"언롤", pos:"v", level:"B2", meanings:["펼치다"],
+    syn:["spread out flat","open out a roll","lay open"],
+    ex:[{ s:"They began to {{}} the map.", f:"unroll", ko:"그들은 지도를 펼치기 시작했다." }] },
+
+  /* 교재의 '지속불가능한' 을 풀어 썼다. ★ 반의어에 sustainable 을 넣었다 —
+     앱은 반의어를 오답에서 빼지 않고 일부러 한 개 넣어 뜻의 경계를 묻는다. */
+  { word:"unsustainable", pron:"언서스테이너블", pos:"adj", level:"B2", meanings:["지속할 수 없는"],
+    syn:["not able to keep going","bound to break down","impossible to maintain"], ant:["sustainable"],
+    ex:[{ s:"That rate of use is {{}}.", f:"unsustainable", ko:"그 정도의 사용량은 지속할 수 없다." }] },
+
+  /* ★ 교재의 '완고한' 은 stubborn(고집 센 · S) 의 뜻이어서 버렸다.
+     steadfast(확고한, 변함없는)·invariable(불변의, 변함없는) 과 '변함없는' 이
+     맞물려 배제된다. ★ 같은 챕터 unwavering 은 뜻이 사실상 같은데 글자가
+     달라 빠져나가므로 유의어로 묶었다. */
+  { word:"unswerving", pron:"언스워빙", pos:"adj", level:"C2", meanings:["변함없는","약해지지 않는"],
+    syn:["unwavering","never turning aside","holding the same course"],
+    ex:[{ s:"He showed {{}} loyalty.", f:"unswerving", ko:"그는 변함없는 충성을 보였다." }] },
+
+  /* 승격 ㉑ — ★ 첫 뜻을 '막대한' 으로 올렸다. 사전값 '헤아릴 수 없는' 혼자로는
+     measurable(헤아릴 수 있는 · B2/adj) 과 '없는/있는' 한 글자로만 갈린다.
+     사전값은 둘째 갈래로 살아 있어 immeasurable·priceless·invaluable 과
+     맞물리는 것이 그대로이고, enormous·immense 의 '막대한' 과도 새로 맞물린다.
+     ★ 참조 innumerable(I) 의 화면이 한 줄 늘어난다. 교재의 '밝혀지지 않은' 은
+     버렸다. */
+  { word:"untold", pron:"언톨드", pos:"adj", level:"C1", meanings:["막대한","헤아릴 수 없는"],
+    syn:["innumerable","too many to count","past all reckoning"],
+    ex:[{ s:"The flood did {{}} harm.", f:"untold", ko:"그 홍수는 막대한 피해를 냈다." }] },
+
+  { word:"unveil", pron:"언베일", pos:"v", level:"C1", meanings:["덮개를 벗기다","발표하다"],
+    syn:["take the cover off","show for the first time","bring into open view"],
+    ex:[{ s:"They will {{}} the statue at noon.", f:"unveil", ko:"그들은 정오에 그 조상의 덮개를 벗길 것이다." }] },
+
+  /* steadfast(확고한, 변함없는)·resolute(단호한, 확고한) 와 '확고한' 이 맞물려
+     배제된다. 위 unswerving 이 이 낱말을 유의어로 등록해 두어 둘도 갈린다. */
+  { word:"unwavering", pron:"언웨이버링", pos:"adj", level:"C1", meanings:["확고한"],
+    syn:["steadfast","not shaken at all","firm throughout"],
+    ex:[{ s:"She kept an {{}} gaze.", f:"unwavering", ko:"그녀는 확고한 시선을 지켰다." }] },
+
+  /* 교재의 '건강이 좋아진' 은 뜻이 아니라 설명이라 걷었다. */
+  { word:"up and about", pron:"업 앤드 어바웃", pos:"phr", level:"C1", meanings:["병상에서 일어난"],
+    syn:["out of one's sick bed","on one's feet again","well enough to move"] },
+
+  /* T 세트의 to some degree(어느 정도)·to a large extent(상당히, 크게) 와 갈랐다. */
+  { word:"up to a point", pron:"업 투 어 포인트", pos:"phr", level:"B2", meanings:["어느 선까지는"],
+    syn:["so far and no further","within limits","to a certain line"] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "a troubled feeling": "뒤숭숭한 느낌",
+  "against the law": "법에 어긋나는",
+  "against what is right": "옳은 바에 어긋나는",
   "agreed by all": "모두가 뜻을 모은",
   "as anyone would": "누구라도 그럴 만하게",
   "as bad luck would have it": "운이 나빠서",
+  "at the top alone": "혼자 맨 위에 있는",
   "at the very end": "아주 마지막의",
   "beat on price": "값으로 이기다",
+  "being at one": "한 덩어리로 있음",
   "being out of work": "일자리가 없는 상태",
   "below the surface": "물 표면 아래의",
   "beyond question": "따질 여지가 없는",
   "beyond the violet end": "보라 끝을 넘어선",
   "beyond what is called for": "필요한 만큼을 넘어선",
+  "bound to break down": "무너지게 되어 있는",
+  "bring into open view": "드러난 자리로 내놓다",
   "bring up from hiding": "숨은 데서 끌어내다",
   "caring nothing for it": "도무지 마음을 두지 않는",
+  "changing without warning": "예고 없이 바뀌는",
   "college learner": "대학에서 배우는 사람",
   "deepest of all": "가장 깊은 데 있는",
   "dig out of the ground": "땅에서 캐내다",
   "draw a line under": "~ 아래에 선을 긋다",
   "drawing no one": "아무도 끌지 못하는",
+  "drop an old habit of mind": "묵은 생각 버릇을 버리다",
   "earning below one's worth": "값어치보다 덜 버는",
   "eat away at": "조금씩 깎아 먹다",
   "final of all": "맨 끝에 오는",
+  "firm throughout": "끝까지 단단한",
   "fixed for good": "아주 굳어 버린",
   "for good reason": "그럴 까닭이 있어서",
   "free to go on": "거침없이 나아가는",
   "going on and on": "줄곧 이어지는",
   "going on without a stop": "멈춤 없이 이어지는",
   "going one's own way": "제 길을 가는",
+  "hard to foresee": "미리 알기 어려운",
+  "having no contender": "맞설 자가 없는",
+  "holding everywhere": "어디서나 통하는",
+  "holding the same course": "같은 길을 지키는",
+  "holding together": "서로 붙어 버팀",
+  "impossible to maintain": "버텨 낼 수 없는",
   "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
+  "join into one": "하나로 합치다",
   "knocked out cold": "까무러쳐 쓰러진",
   "lack of jobs": "일자리가 모자람",
+  "lay open": "펴서 놓다",
   "leaving no doubt": "의문을 남기지 않는",
   "leaving no room for doubt": "의심할 틈을 안 남기는",
+  "let go of learning": "익힌 것을 놓아 버리다",
+  "let out what was shut in": "갇혀 있던 것을 내놓다",
   "like no other": "견줄 데가 없는",
   "live through": "견디며 지나다",
   "lying beneath the surface": "겉 아래에 깔린",
@@ -404,31 +589,44 @@ Object.assign(window.GLOSS, {
   "more than is right": "옳은 정도를 넘는",
   "never broken into": "도중에 끊기지 않는",
   "never coming to a stop": "멈추는 일이 없는",
+  "never matched before": "전에 견줄 것이 없던",
   "never to be lost from memory": "기억에서 사라지지 않는",
+  "never turning aside": "곁길로 새지 않는",
   "new to one": "처음 겪는",
   "no wonder": "놀랄 일이 아니게",
+  "not able to keep going": "계속 이어 갈 수 없는",
+  "not allowed by law": "법이 허락하지 않는",
   "not aware of anything": "아무것도 알아채지 못하는",
   "not doing as others do": "남들 하는 대로 하지 않는",
+  "not fair": "공정하지 못한",
   "not grown out": "다 자라지 못한",
   "not known before": "전에 알던 바 없는",
   "not level": "평평하지 못한",
   "not like one's usual self": "여느 때의 자기와 다른",
   "not meant to happen": "그리 되려던 것이 아닌",
   "not open to doubt": "의심이 끼어들 수 없는",
+  "not shaken at all": "조금도 흔들리지 않는",
+  "not to be doubted": "의심을 살 수 없는",
   "not yet named": "아직 이름 붙지 않은",
   "of invisible short rays": "눈에 안 보이는 짧은 빛의",
   "of one mind throughout": "처음부터 끝까지 한마음인",
   "of the burning light": "살을 태우는 빛의",
   "of unknown name": "이름이 알려지지 않은",
   "offer for less": "더 적은 돈에 내놓다",
+  "on one's feet again": "다시 두 발로 선",
   "one reading for a first degree": "첫 학위를 향해 배우는 이",
+  "open out a roll": "말린 것을 풀다",
   "open to one reading only": "한 가지로만 읽히는",
+  "open with a key": "열쇠로 따다",
   "out of keeping with one's ways": "제 방식에 어울리지 않는",
+  "out of one's sick bed": "앓던 자리에서 나온",
   "paid too little": "너무 적게 받는",
+  "past all reckoning": "가늠을 넘어선",
   "plain for all to see": "누구나 알아볼 만한",
   "plain to look at": "보기에 수수한",
   "poorly rewarded": "보답이 초라한",
   "present in every place": "어느 자리에나 있는",
+  "put aside what one was taught": "배운 바를 내려놓다",
   "rate too low": "값을 너무 낮게 매기다",
   "regrettably": "애석하게도",
   "rule a line below": "밑으로 줄을 대다",
@@ -436,25 +634,41 @@ Object.assign(window.GLOSS, {
   "said straight out": "곧바로 내놓고 말한",
   "sell cheaper than": "~보다 싸게 팔다",
   "set about doing": "~하기에 나서다",
+  "show for the first time": "처음으로 내보이다",
+  "so as to draw no eye": "눈길을 끌지 않도록",
+  "so far and no further": "거기까지만",
+  "spread out flat": "납작하게 펴다",
+  "standing quite alone": "홀로 우뚝 선",
   "state of having no post": "자리를 잃은 형편",
   "staying in the mind for ever": "마음에 오래 남는",
   "staying just as it is": "그대로 머무는",
   "still at an early stage": "아직 이른 단계인",
   "student not yet graduated": "아직 졸업하지 않은 학생",
   "take on a task": "일을 떠맡다",
+  "take the cover off": "덮은 것을 걷다",
   "that cannot be altered": "고칠 수 없는",
   "the only one of its kind": "그 갈래에 하나뿐인",
   "think too little of": "대수롭지 않게 여기다",
+  "to a certain line": "일정한 선까지",
+  "too many to count": "셀 수 없을 만큼 많은",
+  "too slightly to be marked": "알아챌 수 없을 만큼 조금",
+  "true of all": "누구에게나 들어맞는",
   "turning up all over": "곳곳에서 나타나는",
   "under the waves": "물결 아래의",
   "unlike how one normally is": "보통의 모습과 딴판인",
   "want of calm": "차분함이 모자람",
   "weaken from below": "아래에서부터 무르게 하다",
+  "well enough to move": "움직일 만큼 나은",
+  "with no equal": "맞먹는 것이 없는",
+  "with no one to match it": "겨룰 이가 없는",
   "with no wish to know": "알고 싶은 마음이 없는",
   "with not one against": "반대가 하나도 없는",
   "with nothing in the way": "길을 막는 것 없이",
+  "within limits": "한도 안에서는",
   "without a break": "쉬는 틈이 없는",
   "without any such aim": "그런 속셈이 전혀 없는",
+  "without being seen": "보이지 않은 채로",
   "without charm": "끌리는 데가 없는",
-  "without hedging": "둘러대지 않는"
+  "without hedging": "둘러대지 않는",
+  "wrongly harsh": "까닭 없이 모진"
 });

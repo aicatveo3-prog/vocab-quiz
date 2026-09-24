@@ -800,7 +800,6 @@ Object.assign(window.GLOSS, {
   "turbine":"터빈",
   "twinkle":"깜박이며 빛나다",
   "unfounded":"사실 근거가 없는",
-  "universal":"보편적인",
   "unwarranted":"부당한",
   "venerate":"숭상하다",
   "vivid":"선명한",
