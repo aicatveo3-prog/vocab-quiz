@@ -477,13 +477,115 @@ window.VOCAB_W = [
      marvel(경이, 놀라운 일) 과 '경이' 가 맞물려 배제된다. */
   { word:"wonder", pron:"원더", pos:"n", level:"B1", meanings:["놀라움","경이"],
     syn:["astonishment","marvel","a sense of awe"],
-    ex:[{ s:"The child stared in {{}}.", f:"wonder", ko:"그 아이는 놀라움에 차서 바라보았다." }] }
+    ex:[{ s:"The child stared in {{}}.", f:"wonder", ko:"그 아이는 놀라움에 차서 바라보았다." }] },
+
+  /* ══ 4차 · wooden ~ wrinkle (13단어) — W 세트 마지막 ══════════════════════
+     승격 4 · 신규 9
+
+     ★ workable 은 V 세트 때 미리 갈라 둔 자리다. 교재 뜻이 「실행 가능한」
+     인데, 그 자리는 기존 표제어 feasible(실행 가능한, 그럴듯한) 과 V 세트
+     viable(실행 가능한) 이 이미 쓰고 있다. 셋을 다 같은 글자로 맞추면 서로
+     배제되기는 하지만 학생에게는 똑같은 말이 셋 되어 버린다. 그래서 이쪽만
+     「해낼 수 있는, 쓸 만한」 으로 갈라 썼다.
+
+     ★ worthy 는 교재의 「자격이 있는, 훌륭한」 에서 앞뒤를 바꿨다. '자격이
+     있는' 이 첫 뜻이면 qualified(자격 있는) 와 **조사 하나만** 다르다
+     ('자격이 있는' / '자격 있는'). 글자가 달라 자동 배제도 안 되니 영→한
+     선택지에 나란히 놓이면 갈리지 않는다. '훌륭한' 을 앞세우니 admirable·
+     magnificent·respectable·splendid·superb 다섯과 맞물려 배제되고, 둘째로
+     남긴 '자격이 있는' 이 eligible(자격이 있는, 적격의) 와도 맞물린다.
+
+     ★ work out 은 교재가 「운동하다; 잘 풀리다」 인데 사전값은 「알아내다,
+     계산해 내다」 다. 참조 셋(deduce·estimate·figure out) 이 모두 '알아냄'
+     쪽이어서 사전값을 따랐다. determine·discover·uncover 가 '알아내다' 를 써서
+     세 곳과 맞물려 배제된다.
+
+     worthwhile 은 사전값 「할 만한 값이 있는」 을 지켰다. 교재의 '가치 있는' 은
+     뜻이 너무 넓다. worthy 와 공통 접두사가 다섯 글자('worth') 라 짝 맞추기
+     보드에서 안 갈리지만, 첫 뜻이 '할 만한 값이 있는' 과 '훌륭한' 으로 확실히
+     갈린다. */
+
+  { word:"wooden", pron:"우든", pos:"adj", level:"B1", meanings:["나무로 된"],
+    syn:["made of timber","cut from a tree","of wood throughout"],
+    ex:[{ s:"They sat on a {{}} bench.", f:"wooden", ko:"그들은 나무로 된 의자에 앉았다." }] },
+
+  /* 승격 ㉙ — ★사전값을 따랐다. 교재는 '운동하다; 잘 풀리다' 인데 참조 셋
+     (deduce·estimate·figure out) 이 모두 '알아냄' 쪽이다. determine·discover·
+     uncover 가 '알아내다' 를 써서 세 곳과 맞물려 배제된다. */
+  { word:"work out", pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
+    syn:["deduce","estimate","figure out"] },
+
+  /* ★ feasible(실행 가능한, 그럴듯한) 과 V 세트 viable(실행 가능한) 이 교재
+     뜻의 자리를 이미 쓰고 있다. 셋을 같은 글자로 맞추면 서로 배제되기는 하나
+     학생에게는 똑같은 말이 셋 된다. 이쪽만 갈라 썼다. */
+  { word:"workable", pron:"워커블", pos:"adj", level:"B2", meanings:["해낼 수 있는","쓸 만한"],
+    syn:["able to be done","fit to use","good enough to go on with"],
+    ex:[{ s:"That is a {{}} answer.", f:"workable", ko:"그것은 해낼 수 있는 답이다." }] },
+
+  { word:"workload", pron:"워크로드", pos:"n", level:"B2", meanings:["업무량","작업량"],
+    syn:["amount of work to get through","load of tasks","how much there is to do"],
+    ex:[{ s:"Her {{}} doubled that month.", f:"workload", ko:"그달 그녀의 업무량이 두 배가 됐다." }] },
+
+  { word:"world view", pron:"월드 뷰", pos:"n", level:"C1", meanings:["세계관"],
+    syn:["way of seeing the world","one's whole outlook on life","frame of belief"],
+    ex:[{ s:"Travel changed his {{}}.", f:"world view", ko:"여행이 그의 세계관을 바꿨다." }] },
+
+  /* 교재 동사 갈래('숭배하다') 는 버렸다. chapel(예배실, 부속 예배당) 과는
+     '-실' 이 장소를 뜻해 갈린다. */
+  { word:"worship", pron:"워십", pos:"n", level:"B2", meanings:["예배","숭배"],
+    syn:["act of bowing down","reverence paid to a god","service of praise"],
+    ex:[{ s:"They gathered for {{}} at dawn.", f:"worship", ko:"그들은 새벽에 예배를 보러 모였다." }] },
+
+  /* 승격 ㉚ — 사전 단일값 유지(참조 fruitful). 교재의 '가치 있는' 은 뜻이 너무
+     넓어 버렸다. 아래 worthy 와 첫 뜻이 확실히 갈린다. */
+  { word:"worthwhile", pron:"워스와일", pos:"adj", level:"B2", meanings:["할 만한 값이 있는"],
+    syn:["fruitful","worth the trouble","paying for the effort"],
+    ex:[{ s:"The trip proved {{}}.", f:"worthwhile", ko:"그 여행은 할 만한 값이 있었다." }] },
+
+  /* ★ 교재의 '자격이 있는, 훌륭한' 에서 앞뒤를 바꿨다. '자격이 있는' 이 첫
+     뜻이면 qualified(자격 있는) 와 조사 하나만 다르다. '훌륭한' 을 앞세우니
+     admirable·magnificent·respectable·splendid·superb 다섯과 맞물리고, 둘째로
+     남긴 '자격이 있는' 이 eligible(자격이 있는, 적격의) 와도 맞물린다. */
+  { word:"worthy", pron:"워디", pos:"adj", level:"B2", meanings:["훌륭한","자격이 있는"],
+    syn:["of real merit","deserving of it","fit to receive"],
+    ex:[{ s:"It was a {{}} cause.", f:"worthy", ko:"그것은 훌륭한 명분이었다." }] },
+
+  /* 교재 동사 갈래('상처를 입히다') 는 버렸다. scar(흉터, 상처) 와 맞물려
+     배제된다. */
+  { word:"wound", pron:"운드", pos:"n", level:"B1", meanings:["상처"],
+    syn:["cut in the flesh","hurt in the body","open sore from a blow"],
+    ex:[{ s:"The {{}} healed slowly.", f:"wound", ko:"그 상처는 천천히 나았다." }] },
+
+  /* résumé(이력서, 요약)·conclusion(결론, 결말) 과 맞물려 배제된다. */
+  { word:"wrap-up", pron:"랩 업", pos:"n", level:"C1", meanings:["요약","결말"],
+    syn:["summing up at the end","closing account","final round-up"],
+    ex:[{ s:"He gave a short {{}}.", f:"wrap-up", ko:"그는 짧은 요약을 했다." }] },
+
+  /* outrage(격분, 분노)·resentment(분노, 원한) 와 맞물려 배제된다. */
+  { word:"wrath", pron:"래스", pos:"n", level:"C2", meanings:["분노","노여움"],
+    syn:["outrage","resentment","burning anger"],
+    ex:[{ s:"They feared the king's {{}}.", f:"wrath", ko:"그들은 왕의 분노를 두려워했다." }] },
+
+  /* 승격 ㉛ — 사전 단일값 유지(참조 miserable). 교재의 '비참한' 은 miserable·
+     deplorable·disastrous·tragic 넷 자리라 버렸다. */
+  { word:"wretched", pron:"레치드", pos:"adj", level:"C1", meanings:["처참한"],
+    syn:["miserable","in a sorry state","wretchedly poor"],
+    ex:[{ s:"They lived in {{}} huts.", f:"wretched", ko:"그들은 처참한 오막살이에 살았다." }] },
+
+  /* 승격 ㉜ — 사전 단일값 유지(참조 furrow·gather line). 교재의 '잔주름' 은
+     같은 말이어서 하나로 줄였다. */
+  { word:"wrinkle", pron:"링클", pos:"n", level:"B2", meanings:["주름"],
+    syn:["furrow","gather line","line in the skin"],
+    ex:[{ s:"A {{}} showed on her brow.", f:"wrinkle", ko:"그녀의 이마에 주름이 드러났다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "a sense of awe": "아득한 느낌",
+  "able to be done": "해낼 만한",
+  "act of bowing down": "엎드려 절하는 일",
   "acting from good intent": "착한 뜻에서 나온",
+  "amount of work to get through": "해내야 할 일의 양",
   "as for": "그것에 대해서라면",
   "as it touches": "그것에 닿는 한에서는",
   "backed by sound proof": "단단한 근거가 받쳐 주는",
@@ -495,19 +597,27 @@ Object.assign(window.GLOSS, {
   "bending this way and that": "이리저리 휘는",
   "body that keeps watch": "지켜보는 단체",
   "care of the needy": "어려운 이를 돌봄",
+  "closing account": "마무리 보고",
   "comfortably off": "살림이 넉넉한",
   "complain in a high tone": "높은 소리로 불평하다",
   "corn ground into flour": "가루로 빻는 곡물",
   "covering much ground": "아주 넓게 아우르는",
   "cry in small sobs": "잔 흐느낌으로 울다",
+  "cut from a tree": "나무를 잘라 만든",
+  "cut in the flesh": "살이 갈라진 데",
+  "deserving of it": "그럴 만한",
   "drain of strength": "힘을 다 빼다",
   "dry up and droop": "말라 늘어지다",
   "eager to fight": "싸우려 드는",
   "even on every side": "어느 쪽도 치우치지 않은",
   "evil in nature": "본디 악한",
   "fighting man": "싸우는 사내",
+  "final round-up": "마지막 정리",
   "find the weight of": "무게를 알아내다",
+  "fit to receive": "받을 만한",
+  "fit to use": "쓰기에 알맞은",
   "found nearly everywhere": "거의 어디서나 보이는",
+  "frame of belief": "믿음의 틀",
   "full of turns": "굽이가 많은",
   "gain nobody looked for": "아무도 바라지 않았던 이득",
   "given to doing harm": "해를 끼치려 드는",
@@ -515,6 +625,7 @@ Object.assign(window.GLOSS, {
   "glad to lend a hand": "손을 보태는 것이 반가운",
   "go about with no goal": "목적 없이 돌아다니다",
   "go round and round": "돌고 또 돌다",
+  "good enough to go on with": "그럭저럭 밀고 갈 만한",
   "grain for bread": "빵을 만드는 곡식",
   "grip on oneself": "스스로를 다잡는 힘",
   "ground that holds water": "물을 머금은 땅",
@@ -522,11 +633,17 @@ Object.assign(window.GLOSS, {
   "having plenty": "가진 것이 많은",
   "hospital section": "병원의 한 구역",
   "how broad a thing is": "얼마나 넓은지",
+  "how much there is to do": "할 일이 얼마나 되는지",
+  "hurt in the body": "몸에 난 다친 데",
+  "in a sorry state": "딱한 꼴인",
   "keep from giving": "주지 않고 두다",
   "keeping water out": "물이 못 들어오게 하는",
   "knit together": "엮어 붙이다",
   "land that grows nothing": "아무것도 자라지 않는 땅",
+  "line in the skin": "살결에 잡힌 금",
+  "load of tasks": "맡은 일의 짐",
   "lose all freshness": "싱싱함을 다 잃다",
+  "made of timber": "목재로 만든",
   "make a long thin cry": "가늘고 긴 소리를 내다",
   "make less strong": "힘을 덜어 내다",
   "make on a loom": "베틀로 만들다",
@@ -540,16 +657,21 @@ Object.assign(window.GLOSS, {
   "notice to take care": "조심하라는 알림",
   "of easy means": "형편이 편한",
   "of large means": "재산이 많은",
+  "of real merit": "참으로 값진",
+  "of wood throughout": "온통 나무인",
   "on one's guard": "단단히 대비하는",
   "on the head of": "~의 건에 대해",
   "one bereaved of a husband": "남편을 여읜 이",
   "one that guards against wrong": "잘못을 막아 서는 것",
   "one trained for battle": "싸움을 익힌 이",
   "one who saw it happen": "그 일을 본 사람",
+  "one's whole outlook on life": "삶을 보는 전체 눈",
   "onlooker in court": "법정에 선 목격자",
+  "open sore from a blow": "맞아서 터진 자리",
   "paper leaving one's goods": "재산을 남기는 문서",
   "part of a hospital": "병원의 한 부분",
   "part of the ocean": "대양의 한 부분",
+  "paying for the effort": "들인 힘이 되돌아오는",
   "person giving evidence": "증거를 대는 사람",
   "place one is at": "머무는 자리",
   "plant nobody wants": "아무도 원치 않는 풀",
@@ -559,6 +681,7 @@ Object.assign(window.GLOSS, {
   "readiness to act": "나설 준비가 됨",
   "ready to do it": "할 마음이 있는",
   "resting on good reason": "까닭이 튼튼한",
+  "reverence paid to a god": "신에게 드리는 공경",
   "roam without aim": "정처 없이 떠돌다",
   "rock unsteadily": "불안하게 흔들리다",
   "rolling in money": "돈이 넘치는",
@@ -566,6 +689,7 @@ Object.assign(window.GLOSS, {
   "rub thin by use": "써서 얇아지게 하다",
   "sad beyond telling": "말로 못 할 만큼 슬픈",
   "sea area": "바다의 한 구역",
+  "service of praise": "찬양하는 의례",
   "shake from side to side": "좌우로 흔들리다",
   "shed for keeping things": "물건을 보관하는 헛간",
   "shedding rain": "비를 흘려 내는",
@@ -583,6 +707,7 @@ Object.assign(window.GLOSS, {
   "strength of mind": "마음의 힘",
   "stretch of sea": "뻗은 바다",
   "stroll to and fro": "어슬렁어슬렁 오가다",
+  "summing up at the end": "끝에 추려 말함",
   "sway and hold back": "기울다가 멈칫하다",
   "take out again": "다시 빼내다",
   "taking in a great deal": "많은 것을 담는",
@@ -601,6 +726,7 @@ Object.assign(window.GLOSS, {
   "want of strength": "힘이 모자람",
   "waste country": "버려진 들판",
   "waste of open land": "텅 빈 벌판",
+  "way of seeing the world": "세상을 바라보는 방식",
   "where a person is": "사람이 있는 데",
   "while by contrast": "그와 달리 한편",
   "wife left alone by death": "죽음으로 홀로 남은 아내",
@@ -615,5 +741,6 @@ Object.assign(window.GLOSS, {
   "word of danger ahead": "앞의 위험을 알리는 말",
   "work threads into cloth": "실을 엮어 천으로 만들다",
   "worn down": "기운이 깎인",
+  "worth the trouble": "수고할 값이 되는",
   "written promise to repair": "고쳐 주겠다는 문서"
 });

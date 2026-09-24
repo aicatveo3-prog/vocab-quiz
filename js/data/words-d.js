@@ -1569,7 +1569,6 @@ Object.assign(window.GLOSS, {
   "unpleasant":"불쾌한, 기분 나쁜",
   "vandalize":"파괴하다, 훼손하다",
   "warp":"휘게 하다, 뒤틀리다",
-  "work out":"알아내다, 계산해 내다",
 
   /* ── 3차 (delude ~ derived from) 몫 81개 ────────── */
   "appalling":"충격적인, 개탄스러운",

@@ -1931,7 +1931,6 @@ Object.assign(window.GLOSS, {
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
   "usable":"쓸 수 있는",
-  "worthwhile":"할 만한 값이 있는",
 
   /* ── 11차: furious ~ fuzzy (21개, 마지막) ───────────
      calm·supply·hairy·extra·supplementary·coming together·commotion·
@@ -1958,5 +1957,4 @@ Object.assign(window.GLOSS, {
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
   "very angry":"매우 화가 난",
-  "wrinkle":"주름"
 });
