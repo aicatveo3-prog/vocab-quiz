@@ -415,7 +415,121 @@ window.VOCAB_P = [
      참조가 없어 수능에서 흔한 명사로 세웠다. */
   { word:"pedestrian", pron:"퍼데스트리언", pos:"n", level:"B2", meanings:["보행자"],
     syn:["person on foot","walker","one going by foot"],
-    ex:[{ s:"A {{}} was struck at the crossing.", f:"pedestrian", ko:"한 보행자가 횡단보도에서 치였다." }] }
+    ex:[{ s:"A {{}} was struck at the crossing.", f:"pedestrian", ko:"한 보행자가 횡단보도에서 치였다." }] },
+
+  /* ── 챕터 4 ─────────────────────────────────────── */
+  /* 'perce-' 어근 넷(perceive·percentage·perception·perceptual) 이 붙는다.
+     품사가 v/n/adj 로 갈려 같은 보드에서 헷갈리지 않는다.                    */
+
+  { word:"pediatrician", pron:"피디어트리션", pos:"n", level:"C1", meanings:["소아과 의사"],
+    syn:["children's doctor","child health specialist","doctor for infants"],
+    ex:[{ s:"The {{}} weighed the baby.", f:"pediatrician", ko:"소아과 의사가 아기의 무게를 재었다." }] },
+
+  /* 승격 30 — ★원본의 뜻이 틀렸다. '(법 등을) 개정하다' 는 amend 의 뜻이다.
+     사전 표현 '살짝 들여다보다' 를 글자까지 지켰다. 참조는 둘인데 품사가 갈렸다 —
+     glance(G) 는 동사, glimpse(G) 는 명사다. 사전값이 동사여서 동사로 세우고
+     glimpse 쪽 유의어를 'quick look' 으로 바꿨다(words-g.js). */
+  { word:"peek", pron:"피크", pos:"v", level:"B2", meanings:["살짝 들여다보다"],
+    syn:["glance","take a quick look","peep in"],
+    ex:[{ s:"Do not {{}} at the answers.", f:"peek", ko:"답을 살짝 들여다보지 마라." }] },
+
+  /* 원본은 '껍질; 껍질을 벗기다' 로 명사와 동사가 섞여 있었다.
+     참조가 없어 동사로 세웠다 — 명사 '껍질' 은 skin 쪽 뜻이다. */
+  { word:"peel", pron:"필", pos:"v", level:"B1", meanings:["껍질을 벗기다"],
+    syn:["strip the skin from","pare","take the rind off"],
+    ex:[{ s:"Please {{}} the potatoes before boiling.", f:"peel", ko:"끓이기 전에 감자 껍질을 벗겨 주세요." }] },
+
+  /* 승격 31 — 사전이 '또래; 동료' 였다. 구분 기호만 쉼표로 바꿨다
+     (colleague, C · counterpart, C). */
+  { word:"peer", pron:"피어", pos:"n", level:"B2", meanings:["또래","동료"],
+    syn:["colleague","one of the same age","equal in standing"],
+    ex:[{ s:"Teenagers care what their {{}} think.", f:"peer", ko:"십대는 또래가 어떻게 생각하는지를 신경 쓴다." }] },
+
+  /* 원본은 '사용자간 직접 접속(P2P)' 였다. 약어 괄호를 걷고 띄어쓰기를 바로잡았다. */
+  { word:"peer-to-peer", pron:"피어 투 피어", pos:"adj", level:"C1", meanings:["사용자 간 직접 접속의"],
+    syn:["user-to-user","without a middle server","direct between users"],
+    ex:[{ s:"The app uses a {{}} network.", f:"peer-to-peer", ko:"그 앱은 사용자 간 직접 접속 망을 쓴다." }] },
+
+  /* 승격 32 — 사전값 '벌, 처벌' 의 첫 뜻이 한 글자여서 선택지에서 뜻으로 읽기
+     빠듯했다. 원본의 '벌금' 을 첫 자리에 두고, 챕터 17 의 punishment(처벌, 형벌)
+     와 물리지 않게 '과태료' 를 붙였다. fine(F) 의 화면 글자가 함께 바뀐다. */
+  { word:"penalty", pron:"페널티", pos:"n", level:"B2", meanings:["벌금","과태료"],
+    syn:["fine","money forfeit","sum charged for breaking a rule"],
+    ex:[{ s:"There is a {{}} for late filing.", f:"penalty", ko:"늦게 내면 벌금이 있다." }] },
+
+  /* 승격 33 — 사전 표현과 글자까지 같다(infiltrate, I).
+     챕터 6 의 pierce 를 '찌르다' 로 갈라 두어 겹치지 않는다. */
+  { word:"penetrate", pron:"페너트레이트", pos:"v", level:"B2", meanings:["꿰뚫다","침투하다"],
+    syn:["infiltrate","pass right through","work into"],
+    ex:[{ s:"Sunlight cannot {{}} the thick canopy.", f:"penetrate", ko:"햇빛은 두터운 숲 천장을 꿰뚫지 못한다." }] },
+
+  { word:"peninsula", pron:"퍼닌설라", pos:"n", level:"B2", meanings:["반도"],
+    syn:["land jutting into the sea","cape-like landmass","neck of land"],
+    ex:[{ s:"The {{}} is surrounded by water on three sides.", f:"peninsula", ko:"그 반도는 세 면이 물로 둘러싸여 있다." }] },
+
+  /* 승격 34 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
+  { word:"pension", pron:"펜션", pos:"n", level:"B2", meanings:["연금"],
+    syn:["retirement pay","money paid after work ends","old-age allowance"],
+    ex:[{ s:"He lives on a small {{}}.", f:"pension", ko:"그는 적은 연금으로 산다." }] },
+
+  { word:"pentagon", pron:"펜터곤", pos:"n", level:"C1", meanings:["오각형"],
+    syn:["five-sided figure","five-cornered shape","shape with five edges"],
+    ex:[{ s:"Draw a {{}} inside the circle.", f:"pentagon", ko:"원 안에 오각형을 그리세요." }] },
+
+  /* peoples 는 복수형이 따로 뜻을 갖는 낱말이다 — people(사람들) 과 달리
+     '여러 민족' 을 가리킨다. 그래서 단수형과 별개 표제어로 두었다. */
+  { word:"peoples", pron:"피플즈", pos:"n", level:"B2", meanings:["민족들","여러 겨레"],
+    syn:["nations","ethnic groups","races of the world"],
+    ex:[{ s:"The museum shows the art of many {{}}.", f:"peoples", ko:"그 박물관은 여러 민족의 예술을 보여 준다." }] },
+
+  /* 승격 35 — 사전 표현과 글자까지 같다(discern, D). */
+  { word:"perceive", pron:"퍼시브", pos:"v", level:"B2", meanings:["인지하다","감지하다"],
+    syn:["discern","become aware of","make out"],
+    ex:[{ s:"Babies {{}} faces from a very early age.", f:"perceive", ko:"아기는 아주 어릴 때부터 얼굴을 인지한다." }] },
+
+  /* 원본은 '백분율, 퍼센트; 비율; 배당, 몫' 으로 네 갈래였다.
+     '퍼센트' 는 외래어여서 빼고 두 갈래로 줄였다. */
+  { word:"percentage", pron:"퍼센티지", pos:"n", level:"B1", meanings:["백분율","비율"],
+    syn:["rate per hundred","proportion out of a hundred","share expressed in hundredths"],
+    ex:[{ s:"What {{}} of students passed?", f:"percentage", ko:"학생의 몇 백분율이 통과했나요?" }] },
+
+  /* 승격 36 — 사전 표현 '인식, 지각' 을 글자까지 지켰다
+     (consciousness, C · insight, I). 원본의 다섯 갈래 중 사전 쪽을 남겼다. */
+  { word:"perception", pron:"퍼셉션", pos:"n", level:"B2", meanings:["인식","지각"],
+    syn:["consciousness","way of seeing","grasp of the senses"],
+    ex:[{ s:"Colour {{}} differs from person to person.", f:"perception", ko:"색 인식은 사람마다 다르다." }] },
+
+  { word:"perceptual", pron:"퍼셉추얼", pos:"adj", level:"C1", meanings:["지각의","감각의"],
+    syn:["to do with the senses","of perceiving","sense-based"],
+    ex:[{ s:"The test measures {{}} speed.", f:"perceptual", ko:"그 검사는 지각의 속도를 잰다." }] },
+
+  /* 승격 37 — 사전이 '다년생의; 끊임없는' 이었다. 구분 기호만 쉼표로 바꿨다
+     (annual 의 반의어 자리, A). 원본의 '연중 끊이지 않는' 대신 사전 쪽을 남겼다. */
+  { word:"perennial", pron:"퍼레니얼", pos:"adj", level:"C1", meanings:["다년생의","끊임없는"],
+    syn:["lasting many years","coming back each year","never-ending"],
+    ex:[{ s:"Traffic is a {{}} problem in this city.", f:"perennial", ko:"교통은 이 도시의 끊임없는 문제다." }] },
+
+  /* 원본은 '연주, 공연, 실행, 수행' 네 갈래였다. 두 갈래로 줄였다. */
+  { word:"performance", pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
+    syn:["show before an audience","carrying out of a task","staged act"],
+    ex:[{ s:"The evening {{}} sold out.", f:"performance", ko:"저녁 공연은 매진되었다." }] },
+
+  { word:"perhaps", pron:"퍼햅스", pos:"adv", level:"B1", meanings:["아마도"],
+    syn:["maybe","possibly","it may be that"],
+    ex:[{ s:"{{}} we should wait until morning.", f:"Perhaps", ko:"아마도 우리는 아침까지 기다려야 한다." }] },
+
+  /* 승격 38 — 사전 표현 '큰 위험' 을 글자까지 지켰다(hazard, H · jeopardy, J).
+     원본의 '위험' 을 쓰면 그 둘의 첫 뜻과 같아지고, '모험' 은 뜻이 멀어 버렸다. */
+  { word:"peril", pron:"페릴", pos:"n", level:"C1", meanings:["큰 위험"],
+    syn:["hazard","grave danger","threat to life"], ant:["safety"],
+    ex:[{ s:"The crew was in real {{}}.", f:"peril", ko:"그 선원들은 진짜 큰 위험에 놓여 있었다." }] },
+
+  /* 원본은 '주기적인, 정기적인, 정기간행물' 로 형용사와 명사가 섞여 있었다.
+     참조가 없어 명사로 세웠다 — 형용사 갈래는 같은 세트의 periodically(부사) 와
+     뜻이 겹쳐서 명사 쪽이 쓸모가 크다. */
+  { word:"periodical", pron:"피리아디컬", pos:"n", level:"C1", meanings:["정기간행물"],
+    syn:["magazine issued regularly","journal","serial publication"],
+    ex:[{ s:"The library keeps every {{}} for ten years.", f:"periodical", ko:"그 도서관은 모든 정기간행물을 십 년간 보관한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -426,6 +540,7 @@ Object.assign(window.GLOSS, {
   "art of instruction": "가르치는 기술",
   "ashen": "핏기 없는",
   "be a party to": "~에 한편으로 끼다",
+  "become aware of": "~을 알아차리게 되다",
   "being a father": "아버지라는 처지",
   "bequeath": "물려주다",
   "blind alarm": "앞뒤 없는 놀람",
@@ -434,22 +549,33 @@ Object.assign(window.GLOSS, {
   "brief halt": "잠깐의 멈춤",
   "bygone days": "지나간 날들",
   "call on someone": "누군가를 찾아가다",
+  "cape-like landmass": "곶처럼 뻗은 땅덩이",
   "carry forward to others": "남들에게 이어 주다",
+  "carrying out of a task": "맡은 일을 해냄",
+  "child health specialist": "아이 건강 전문가",
+  "children's doctor": "아이를 보는 의사",
   "church leader": "교회의 지도자",
   "close likeness": "가까운 닮음",
+  "coming back each year": "해마다 다시 오는",
   "coming from parents": "어버이에게서 나온",
   "congressional": "국회에 관한",
   "country laborer": "시골 일꾼",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
+  "direct between users": "쓰는 이들 사이를 바로 잇는",
+  "doctor for infants": "갓난아이를 보는 의사",
   "done with great care": "아주 조심스레 한",
   "drained of color": "빛깔이 빠진",
   "drop in on": "~에 들르다",
+  "equal in standing": "처지가 대등한 이",
+  "ethnic groups": "여러 종족 집단",
   "excerpt from a text": "글에서 따온 대목",
   "exclusive right to an invention": "발명에 대한 독점 권리",
   "fatherhood": "아버지 됨",
   "feeding on another": "남을 먹고 사는",
   "final reward": "끝에 받는 보답",
+  "five-cornered shape": "모가 다섯인 꼴",
+  "five-sided figure": "다섯 변을 가진 도형",
   "fix with adhesive": "접착제로 고정하다",
   "flat of the hand": "손의 평평한 면",
   "former times": "옛 시절",
@@ -461,11 +587,14 @@ Object.assign(window.GLOSS, {
   "global outbreak": "지구 규모의 발생",
   "go to see": "보러 가다",
   "going along with": "그대로 따라가는",
+  "grasp of the senses": "감각으로 붙잡음",
   "grassy field": "풀이 자란 들",
+  "grave danger": "엄중한 위태로움",
   "grazing land": "풀 뜯기는 땅",
   "group of sentences": "문장 묶음",
   "hand on to the next": "다음 사람에게 넘기다",
   "handing over of money": "돈을 건넴",
+  "hasty glance": "서둘러 본 것",
   "have a part in": "~에 한몫 있다",
   "hawk goods": "물건을 외치며 팔다",
   "heathen": "이교의",
@@ -477,8 +606,12 @@ Object.assign(window.GLOSS, {
   "incomplete": "온전하지 않은",
   "inner hand": "손의 안쪽",
   "invention statute": "발명 관련 법령",
+  "it may be that": "~일 수도 있다",
   "join in": "끼어 들다",
   "join in with others": "남들과 어울려 하다",
+  "journal": "학술지",
+  "land jutting into the sea": "바다로 튀어나온 땅",
+  "lasting many years": "여러 해를 버티는",
   "law on inventions": "발명에 관한 법",
   "lawmaking": "법을 만드는",
   "lay paving on": "~에 포장재를 깔다",
@@ -486,23 +619,33 @@ Object.assign(window.GLOSS, {
   "living on a host": "숙주에 붙어 사는",
   "loyal to one party": "한 정당에만 충성하는",
   "made-up road": "다져 만든 길",
+  "magazine issued regularly": "때맞춰 나오는 잡지",
   "make powerless": "힘을 못 쓰게 하다",
+  "maybe": "어쩌면",
   "member of an activity": "활동의 구성원",
   "minister of a church": "교회를 맡은 이",
   "minute fragment": "몹시 작은 부스러기",
   "mocking imitation": "비웃으며 흉내 냄",
   "model case": "본보기가 되는 사례",
+  "money forfeit": "물어야 하는 돈",
+  "money paid after work ends": "일을 그친 뒤 받는 돈",
   "monthly pay": "달마다 받는 돈",
   "motherly and fatherly": "어머니 아버지의",
   "moving to pity": "안타깝게 만드는",
+  "nations": "여러 나라",
+  "neck of land": "좁고 긴 땅",
+  "never-ending": "끝날 줄 모르는",
   "not acting": "나서지 않는",
   "of a mother or father": "어버이의",
   "of first importance": "첫째로 중요한",
+  "of perceiving": "알아차리는 것의",
   "of the legislature": "입법 기관의",
   "official document": "공식 문서",
+  "old-age allowance": "노년에 주는 수당",
   "on the far side of": "~의 저쪽에",
   "one certain": "어느 하나의",
   "one going by foot": "걸어서 가는 이",
+  "one of the same age": "나이가 같은 이",
   "one taking part": "한몫 맡은 이",
   "one who gives support": "도움을 주는 이",
   "one who joins in": "끼어든 사람",
@@ -511,18 +654,27 @@ Object.assign(window.GLOSS, {
   "out of the common run": "흔하지 않은",
   "outside the church": "교회 밖의",
   "pallid": "해쓱한",
+  "pare": "깎아 내다",
+  "pass right through": "곧장 뚫고 지나가다",
   "paved surface": "포장된 바닥",
+  "peep in": "들여다보다",
   "person on foot": "걸어 다니는 사람",
   "piece sewn on": "덧대어 박은 천",
   "pitiable": "딱한",
   "play a part": "한 구실을 하다",
   "political group": "정치 집단",
+  "possibly": "혹시",
+  "proportion out of a hundred": "백을 기준으로 한 몫",
   "puff for air": "숨을 몰아쉬다",
   "put out to graze": "풀 뜯게 내놓다",
+  "quick look": "얼른 봄",
+  "races of the world": "세상의 여러 인종",
+  "rate per hundred": "백에 대한 비",
   "registered claim": "등록된 권리 주장",
   "regular customer": "단골손님",
   "remittance": "송금",
   "resemblance": "서로 닮음",
+  "retirement pay": "은퇴 뒤 받는 돈",
   "rob of movement": "움직임을 앗다",
   "ruddy": "혈색이 좋은",
   "rules for patents": "특허를 다루는 규정",
@@ -532,10 +684,15 @@ Object.assign(window.GLOSS, {
   "self-defeating statement": "스스로를 뒤집는 말",
   "sell door to door": "집집이 팔러 다니다",
   "send-up": "놀리는 흉내",
+  "sense-based": "감각에 바탕한",
+  "serial publication": "차례로 내는 간행물",
   "settling of a bill": "셈을 치름",
+  "shape with five edges": "변이 다섯인 모양",
+  "share expressed in hundredths": "백분으로 나타낸 몫",
   "share in": "~을 나누어 갖다",
   "shepherd of a flock": "양 떼를 이끄는 이",
   "short break": "짧은 쉼",
+  "show before an audience": "관객 앞에서 하는 공연",
   "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
   "sidewalk": "인도",
@@ -549,20 +706,27 @@ Object.assign(window.GLOSS, {
   "sponging off others": "남에게 빌붙는",
   "spoof": "우스꽝스러운 흉내",
   "spot of ground": "땅의 한 자리",
+  "staged act": "무대에 올린 연기",
   "stick on": "달라붙게 하다",
+  "strip the skin from": "~의 껍질을 벗겨 내다",
   "stroke gently": "살살 어루만지다",
   "sudden terror": "갑작스러운 무서움",
+  "sum charged for breaking a rule": "규칙을 어겨 물리는 금액",
   "supreme": "더없이 높은",
   "surface a road": "길에 바닥을 깔다",
   "sweeping disease": "휩쓸고 지나가는 병",
+  "take a quick look": "얼른 한번 보다",
   "take part": "한몫 맡다",
+  "take the rind off": "껍데기를 떼다",
   "tap lightly": "가볍게 두드리다",
   "teaching method": "가르치는 방식",
   "tenant farmer": "남의 땅을 부치는 농부",
   "the father's line": "아버지 쪽 핏줄",
+  "threat to life": "목숨을 위협하는 것",
   "throw oneself into": "~에 몸을 던지다",
   "times gone by": "흘러간 시절",
   "tiny bit": "아주 작은 조각",
+  "to do with the senses": "감각에 관한",
   "topmost level": "맨 위 수준",
   "tout wares": "물건을 권하며 팔다",
   "trough": "바닥, 골",
@@ -570,9 +734,13 @@ Object.assign(window.GLOSS, {
   "universal remedy": "두루 듣는 약",
   "unlike any other": "다른 무엇과도 다른",
   "unresisting": "맞서지 않는",
+  "user-to-user": "쓰는 이끼리의",
   "wage packet": "급료 봉투",
   "walker": "걷는 이",
+  "way of seeing": "보는 방식",
   "way through": "지나가는 길",
+  "without a middle server": "중간 서버를 두지 않는",
+  "work into": "~ 속으로 파고들다",
   "worldwide epidemic": "전 세계에 퍼진 유행병",
   "wrapped goods": "싸 놓은 물건",
   "written study": "글로 쓴 연구"

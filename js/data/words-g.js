@@ -309,7 +309,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '힐끗 봄' 을 첫 자리에 지켰다. glance 와 달리 명사로 뒀다. */
   { word:"glimpse", pron:"글림프스", pos:"n", level:"B2", meanings:["힐끗 봄","잠깐 봄"],
-    syn:["peek","glance","sighting"],
+    syn:["quick look","hasty glance","sighting"],
     ex:[{ s:"We caught a brief {{}} of the castle through the fog.", f:"glimpse", ko:"우리는 안개 속에서 그 성을 잠깐 보았다." }] },
 
   { word:"glitter", pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
@@ -748,7 +748,6 @@ Object.assign(window.GLOSS, {
   "pass":"지나가다, 통과되다",
   "pathogen":"병원균",
   "pedigree":"가계, 혈통",
-  "peek":"살짝 들여다보다",
   "pioneering":"선구적인",
   "please":"흡족하게 하다",
   "power unit":"동력 장치",
