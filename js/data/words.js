@@ -1729,7 +1729,6 @@ window.GLOSS = {
   "proven":"입증된",
   "ratify":"비준하다",
   "reasoned":"합리적인",
-  "reduce":"줄이다",
   "refusal":"거절",
   "refuse":"거절하다",
   "reject":"거부하다",

@@ -374,13 +374,128 @@ window.VOCAB_R = [
 
   { word:"rectangular", pron:"렉탱귤러", pos:"adj", level:"B2", meanings:["직사각형의"],
     syn:["shaped like a long box","four-sided with right angles","oblong"],
-    ex:[{ s:"The table is {{}}.", f:"rectangular", ko:"그 탁자는 직사각형이다." }] }
+    ex:[{ s:"The table is {{}}.", f:"rectangular", ko:"그 탁자는 직사각형이다." }] },
+
+  /* ── 챕터 4 ────────────────────────────────────── */
+  /* reflect 어근 넷이 한 챕터에 모였다 — reflect·reflection·reflective·reflex.
+     원본은 reflex 를 '반사 작용, 반영' 으로 적어 두었는데 '반영' 은 reflection 의
+     뜻이다(★ 고쳤다). 품사로도 갈린다 — 동사/명사/형용사/명사.
+     reduce 는 참조가 일곱 곳이라 저장소에서 가장 널리 쓰이는 선택지 가운데 하나다.
+     사전 표현을 글자까지 지켜 일곱 곳을 모두 보존했다. */
+
+  { word:"recur", pron:"리커", pos:"v", level:"C1", meanings:["다시 일어나다","반복되다"],
+    syn:["happen again","come round once more","return in time"],
+    ex:[{ s:"The fault may {{}} next winter.", f:"recur", ko:"그 고장은 다음 겨울에 다시 일어날 수 있다." }] },
+
+  { word:"recycle", pron:"리사이클", pos:"v", level:"B1", meanings:["재활용하다"],
+    syn:["use again","make into something new","put back into use"],
+    ex:[{ s:"We {{}} paper and glass.", f:"recycle", ko:"우리는 종이와 유리를 재활용한다." }] },
+
+  /* 승격 ㉟ — 사전 글자 유지. 참조가 일곱 곳(amplify·boost 반의어, condense·
+     curtail·cut back on·lower·minimize) 이라 R 세트에서 가장 조심한 자리다.
+     원본의 '낮추다' 는 lower 의 첫 뜻이라 붙이지 않았다. */
+  { word:"reduce", pron:"리두스", pos:"v", level:"B1", meanings:["줄이다","감소시키다"],
+    syn:["curtail","lower","bring down in size"],
+    ex:[{ s:"They will {{}} the staff.", f:"reduce", ko:"그들은 직원을 줄일 것이다." }] },
+
+  { word:"redundant", pron:"리던던트", pos:"adj", level:"C1", meanings:["여분의","쓸데없이 많은"],
+    syn:["more than is needed","left over and useless","saying the same twice"],
+    ex:[{ s:"The last line is {{}}.", f:"redundant", ko:"마지막 줄은 여분이다." }] },
+
+  { word:"reed", pron:"리드", pos:"n", level:"C1", meanings:["갈대"],
+    syn:["tall water grass","stalk by the water","marsh plant"],
+    ex:[{ s:"He cut a {{}} by the pond.", f:"reed", ko:"그는 못가에서 갈대를 꺾었다." }] },
+
+  /* 승격 ㊱ — 사전의 쌍반점만 쉼표로 갈랐다(consult, C). '언급하다' 는
+     mention(M) 의 첫 뜻과 같아 서로 오답에서 빠진다. */
+  { word:"refer", pron:"리퍼", pos:"v", level:"B1", meanings:["참조하다","언급하다"],
+    syn:["consult","look to for help","speak of"],
+    ex:[{ s:"Please {{}} to page ten.", f:"refer", ko:"10쪽을 참조하세요." }] },
+
+  /* 승격 ㊲ — 사전의 쌍반점만 쉼표로 갈랐다(cite, C). 원본의 '인용 문헌' 은
+     버렸다. 참조 cite 는 동사라 유의어로는 쓰지 않고 구로 적었다. */
+  { word:"reference", pron:"레퍼런스", pos:"n", level:"B1", meanings:["참조","언급"],
+    syn:["a looking-up","mention of a source","note pointing elsewhere"],
+    ex:[{ s:"The book has no {{}} to that war.", f:"reference", ko:"그 책에는 그 전쟁에 대한 언급이 없다." }] },
+
+  /* 승격 ㊳ — 사전의 쌍반점만 쉼표로 갈랐다(civilize, C). 원본 '개선하다' 는
+     바로 아래 refinement·improvement 자리라 사전값 쪽이 낫다. */
+  { word:"refine", pron:"리파인", pos:"v", level:"B2", meanings:["정제하다","세련되게 하다"],
+    syn:["civilize","make pure","polish to a finer state"],
+    ex:[{ s:"They {{}} sugar at the plant.", f:"refine", ko:"그들은 그 공장에서 설탕을 정제한다." }] },
+
+  /* '개선' 은 improvement 의 첫 뜻과 같아 서로 오답에서 빠진다. */
+  { word:"refinement", pron:"리파인먼트", pos:"n", level:"B2", meanings:["개선","세련됨"],
+    syn:["a making better","polish of manner","touch that improves"],
+    ex:[{ s:"The design needs one more {{}}.", f:"refinement", ko:"그 설계는 개선이 한 번 더 필요하다." }] },
+
+  /* 승격 ㊴ — 사전의 쌍반점만 쉼표로 갈랐다(mirror, M). 원본의 '나타내다' 는
+     represent(챕터 8) 자리다. */
+  { word:"reflect", pron:"리플렉트", pos:"v", level:"B1", meanings:["반영하다","반사하다"],
+    syn:["mirror","throw back light","show as in a glass"],
+    ex:[{ s:"Prices {{}} demand.", f:"reflect", ko:"가격은 수요를 반영한다." }] },
+
+  /* 승격 ㊵ — 사전 글자 유지(introspection, I · meditation, M). */
+  { word:"reflection", pron:"리플렉션", pos:"n", level:"B2", meanings:["돌아봄","반영"],
+    syn:["introspection","quiet thought","image thrown back"],
+    ex:[{ s:"After some {{}} he agreed.", f:"reflection", ko:"얼마간 돌아본 뒤 그는 동의했다." }] },
+
+  /* 승격 ㊶ — 사전 단일값 유지(introspective, I). */
+  { word:"reflective", pron:"리플렉티브", pos:"adj", level:"C1", meanings:["되돌아보는"],
+    syn:["introspective","given to quiet thought","turning things over"],
+    ex:[{ s:"He was in a {{}} mood.", f:"reflective", ko:"그는 되돌아보는 마음가짐이었다." }] },
+
+  /* ★ 원본은 '반사 작용, 반영' 이었다. '반영' 은 바로 위 reflection 의 뜻이라
+     '반사 신경' 으로 바꿨다. */
+  { word:"reflex", pron:"리플렉스", pos:"n", level:"C1", meanings:["반사 작용","반사 신경"],
+    syn:["automatic response","act without thought","built-in reaction"],
+    ex:[{ s:"The doctor tested his {{}}.", f:"reflex", ko:"의사가 그의 반사 작용을 확인했다." }] },
+
+  /* 승격 ㊷ — 사전은 '개혁; 개선하다' 로 명사와 동사가 섞여 있었다. 참조가 없어
+     원본이 앞세운 명사로 세웠다. */
+  { word:"reform", pron:"리폼", pos:"n", level:"B2", meanings:["개혁","쇄신"],
+    syn:["change for the better","overhaul of a system","sweeping repair"],
+    ex:[{ s:"The party promised land {{}}.", f:"reform", ko:"그 정당은 토지 개혁을 약속했다." }] },
+
+  /* ★ 첫 갈래를 '삼가다' 로 잡았다. 원본의 '억제하다' 는 inhibit·hold back 이
+     이미 쓰는 자리이고, repress(억압하다)·restrain(억제하다, 제지하다) 와도
+     부딪힌다. 넷을 삼가다 / 억압하다 / 억제하다 로 갈랐다. */
+  { word:"refrain", pron:"리프레인", pos:"v", level:"B2", meanings:["삼가다","참고 하지 않다"],
+    syn:["hold off from","keep oneself from","do without doing"],
+    ex:[{ s:"Please {{}} from smoking.", f:"refrain", ko:"흡연을 삼가 주세요." }] },
+
+  /* 원본 '가벼운 식사, 다과; 원기회복, 기분상쾌' 네 갈래를 둘로 줄였다. */
+  { word:"refreshments", pron:"리프레시먼츠", pos:"n", level:"B2", meanings:["가벼운 식사","다과"],
+    syn:["light food and drink","snacks served","tea and cakes"],
+    ex:[{ s:"{{}} will be served after the talk.", f:"Refreshments", ko:"강연 뒤에 다과가 나올 것이다." }] },
+
+  { word:"refuge", pron:"레퓨지", pos:"n", level:"B2", meanings:["피난처"],
+    syn:["place of safety","shelter from danger","spot out of harm's way"],
+    ex:[{ s:"They sought {{}} in the church.", f:"refuge", ko:"그들은 교회에서 피난처를 찾았다." }] },
+
+  { word:"refugee", pron:"레퓨지이", pos:"n", level:"B2", meanings:["피난민","망명자"],
+    syn:["one who flees danger","person seeking shelter","exile from home"],
+    ex:[{ s:"The {{}} crossed the border at night.", f:"refugee", ko:"그 피난민은 밤에 국경을 넘었다." }] },
+
+  /* 승격 ㊸ — 사전은 '환불하다, 환불' 로 동사와 명사가 섞여 있었다. 참조
+     charge(청구하다) 가 동사여서 동사로 세웠다. 원본의 괄호 '환불(금)' 도 걷혔다. */
+  { word:"refund", pron:"리펀드", pos:"v", level:"B2", meanings:["환불하다","돈을 돌려주다"],
+    syn:["pay back","give the money back","return what was paid"], ant:["charge"],
+    ex:[{ s:"The shop will {{}} the price.", f:"refund", ko:"그 가게는 값을 환불해 줄 것이다." }] },
+
+  /* '되찾다' 를 recover·retrieve 와 글자까지 맞췄다 — 셋이 서로의 오답에서 빠진다. */
+  { word:"regain", pron:"리게인", pos:"v", level:"B2", meanings:["되찾다","다시 얻다"],
+    syn:["get back again","recover hold of","come to have once more"],
+    ex:[{ s:"She began to {{}} her strength.", f:"regain", ko:"그녀는 기운을 되찾기 시작했다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a looking-up": "찾아보는 일",
+  "a making better": "더 낫게 만듦",
   "act in answer": "답으로 움직이다",
   "act of knowing again": "다시 알아봄",
+  "act without thought": "생각 없이 나오는 움직임",
   "admit to be true": "참이라고 받아들이다",
   "air again": "다시 내보내다",
   "answer with action": "행동으로 답하다",
@@ -390,25 +505,33 @@ Object.assign(window.GLOSS, {
   "ask to have back": "돌려 달라고 하다",
   "at the root": "뿌리에서부터",
   "atomic pile": "원자로 더미",
+  "automatic response": "저절로 나오는 반응",
   "balance between two": "둘 사이의 균형",
   "believer in racial superiority": "한 인종이 낫다고 믿는 이",
   "break in the day": "하루 중의 쉼",
   "bring back to mind": "다시 머리에 떠올리다",
+  "bring down in size": "크기를 낮추다",
   "bring into accord": "서로 맞게 하다",
   "bring to full growth": "다 자라게 하다",
   "bring up a child": "아이를 길러 내다",
   "build again": "다시 세우다",
+  "built-in reaction": "몸에 박힌 반응",
   "by chance": "우연히",
   "call in a faulty product": "흠 있는 물건을 거둬들이다",
   "calling in new members": "새 사람을 불러 모음",
   "cattle farm": "소를 기르는 농장",
+  "change for the better": "나은 쪽으로 바꿈",
+  "come round once more": "한 번 더 돌아오다",
+  "come to have once more": "또 지니게 되다",
   "come to know": "알게 되다",
   "credit given": "인정해 주는 것",
   "defier of authority": "권위를 거스르는 이",
+  "do without doing": "하지 않고 넘기다",
   "done for fun": "즐기려고 하는",
   "draw away little by little": "조금씩 멀어지다",
   "easy bond": "편한 사이",
   "emitting rays": "빛살을 뿜는",
+  "exile from home": "고향을 떠난 이",
   "fair and sensible": "온당하고 슬기로운",
   "fall back": "뒤로 밀려나다",
   "fall in business": "장사가 떨어짐",
@@ -424,64 +547,93 @@ Object.assign(window.GLOSS, {
   "gather a crop": "곡식을 걷다",
   "gathering for a cause": "뜻을 위해 모임",
   "get as a return": "보답으로 얻다",
+  "get back again": "다시 손에 넣다",
   "get into one's hands": "손에 넣다",
   "get well again": "다시 낫다",
   "give out heat": "열을 내보내다",
+  "give the money back": "돈을 되돌려 주다",
+  "given to quiet thought": "조용히 생각에 잠기는",
   "giving off radiation": "방사선을 내는",
   "going to the root": "뿌리까지 파고드는",
   "grazing estate": "풀 먹이는 넓은 땅",
   "guided by reason": "이치를 따르는",
+  "happen again": "또 일어나다",
   "hater of other races": "다른 인종을 미워하는 이",
   "hiring drive": "사람 뽑기 운동",
+  "hold off from": "~하지 않고 버티다",
   "how many to how many": "몇 대 몇",
+  "image thrown back": "되비친 모습",
   "in a sweeping way": "싹 쓸어내듯",
   "joy that carries one away": "넋을 빼앗는 기쁨",
+  "keep oneself from": "스스로 못 하게 하다",
   "keeping to what is possible": "될 만한 데 머무는",
   "kingdom": "임금이 다스리는 나라",
   "know again on sight": "보고 다시 알아보다",
   "large stock farm": "큰 가축 농장",
+  "left over and useless": "남았는데 쓸 데 없는",
+  "light food and drink": "가벼운 음식과 마실 것",
   "list one by one": "하나씩 늘어놓다",
   "live as it goes": "되는 대로 바로 내보내는",
+  "look to for help": "도움을 찾아 보다",
   "made in advance": "미리 만들어 둔",
+  "make into something new": "새것으로 만들다",
   "make land fit for use": "땅을 쓸 수 있게 만들다",
+  "make pure": "순수하게 만들다",
   "make real": "실제가 되게 하다",
   "make two things agree": "둘을 들어맞게 하다",
   "mark on a scale": "척도 위의 표시",
+  "marsh plant": "늪에 자라는 풀",
   "mass meeting": "사람이 많이 모인 자리",
   "measure per unit": "단위마다 재는 값",
+  "mention of a source": "출처를 밝힘",
+  "more than is needed": "필요한 것보다 많은",
   "move back": "뒤로 물러가다",
   "not often seen": "자주 보이지 않는",
   "not too much": "지나치지 않은",
+  "note pointing elsewhere": "다른 데를 가리키는 쪽지",
   "of atomic decay": "원자가 붕괴하는",
   "of one's race": "제 인종의",
   "off the shelf": "선반에서 바로 꺼내 쓰는",
+  "one who flees danger": "위험을 피해 온 이",
   "one who judges by race": "인종으로 사람을 가리는 이",
   "one who receives": "받는 이",
   "one who rises up": "일어나 맞서는 이",
   "open defiance": "드러낸 거스름",
+  "overhaul of a system": "제도를 뜯어고침",
   "pace at which it happens": "일이 일어나는 속도",
   "paper showing payment": "값을 치른 것을 보이는 종이",
   "pause in work": "일을 멈춘 동안",
+  "pay back": "돈을 갚다",
   "person given something": "무엇을 받은 사람",
+  "person seeking shelter": "몸 붙일 곳을 찾는 사람",
   "picked at will": "되는 대로 골라",
   "piece together anew": "조각을 새로 이어 붙이다",
   "place in an order": "차례 속의 자리",
+  "place of safety": "안전한 곳",
   "place on a list": "목록에서의 자리",
   "plant for atomic power": "원자력을 내는 설비",
+  "polish of manner": "몸가짐의 세련",
+  "polish to a finer state": "더 곱게 다듬다",
   "position held": "맡고 있는 자리",
   "put at ease": "마음을 놓게 하다",
+  "put back into use": "다시 쓰이게 하다",
   "put back together": "다시 맞춰 놓다",
   "put forward as good": "좋다고 내놓다",
   "put one's own sense into": "제 생각을 밀어 넣다",
+  "quiet thought": "조용한 생각",
   "raise young": "새끼를 치다",
   "read aloud by heart": "외워 소리 내어 읽다",
   "ready to take in": "받아들일 준비가 된",
+  "recover hold of": "다시 붙들다",
   "relation in number": "수로 본 관계",
   "response to something": "무엇에 대한 응답",
+  "return in time": "때가 되면 되돌아오다",
+  "return what was paid": "낸 것을 돌려주다",
   "revolt of the people": "백성이 일으킨 난",
   "rise up against": "맞서 일어서다",
   "rising against rule": "다스림에 맞서 일어섬",
   "say from memory": "외운 것을 말하다",
+  "saying the same twice": "같은 말을 두 번 하는",
   "scold openly": "드러내어 꾸짖다",
   "score given": "매겨 준 점수",
   "see at last": "마침내 알아보다",
@@ -492,27 +644,40 @@ Object.assign(window.GLOSS, {
   "set one's mind at rest": "걱정을 내려놓게 하다",
   "settle a quarrel": "다툼을 가라앉히다",
   "shaped like a long box": "긴 상자 꼴인",
+  "shelter from danger": "위험을 막아 주는 곳",
   "show a response": "반응을 보이다",
   "show a second time": "두 번째로 보여 주다",
+  "show as in a glass": "거울처럼 비추다",
   "showing things as they are": "있는 대로 보여 주는",
   "slip for what one paid": "낸 값을 적은 쪽지",
   "slump in trade": "거래가 주저앉음",
+  "snacks served": "내놓는 간식",
   "span from end to end": "끝에서 끝까지 걸침",
+  "speak of": "입에 올리다",
   "speak well of": "좋게 말하다",
   "speed of change": "변하는 빠르기",
+  "spot out of harm's way": "해가 미치지 않는 자리",
+  "stalk by the water": "물가에 선 줄기",
+  "sweeping repair": "싹 손보는 일",
   "take in the harvest": "가을걷이를 들이다",
   "take more from it than it says": "말한 것보다 더 읽어 내다",
   "take to be so": "그러하다고 여기다",
   "take what is given": "주는 것을 받다",
   "taking on new people": "새 사람을 들임",
+  "tall water grass": "물가에 키 큰 풀",
+  "tea and cakes": "차와 과자",
   "tell off sharply": "호되게 이르다",
   "thin on the ground": "드물게 흩어져 있는",
   "thinking things through": "끝까지 따져 보는",
+  "throw back light": "빛을 되던지다",
   "time off between sessions": "수업 사이의 틈",
   "to do with leisure": "여가에 얽힌",
   "to do with race": "인종에 얽힌",
   "to the very base": "바탕까지",
+  "touch that improves": "나아지게 하는 손질",
   "true to life": "실제와 꼭 같은",
+  "turning things over": "이리저리 헤아리는",
+  "use again": "다시 쓰다",
   "vessel where reaction runs": "반응이 일어나는 통",
   "violent anger": "거센 노여움",
   "warm understanding": "따뜻한 이해",

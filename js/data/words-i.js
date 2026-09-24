@@ -2063,8 +2063,6 @@ Object.assign(window.GLOSS, {
   "put in place": "자리에 놓다",
   "put money into": "~에 돈을 넣다",
   "reading": "읽어 낸 뜻",
-  "reflection": "돌아봄, 반영",
-  "reflective": "되돌아보는",
   "reflexive": "반사적인",
   "refreshing": "상쾌하게 하는",
   "regal": "제왕의",

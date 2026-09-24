@@ -2030,7 +2030,6 @@ Object.assign(window.GLOSS, {
   "random":"무작위의",
   "reckless":"무모한, 부주의한",
   "refined":"정제된, 세련된",
-  "refund":"환불하다, 환불",
   "refute":"반박하다, 논박하다",
   "reinforce":"강화하다",
   "repulsion":"혐오, 반발",
