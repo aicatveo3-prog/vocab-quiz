@@ -2062,7 +2062,6 @@ Object.assign(window.GLOSS, {
   "opinion piece":"의견 기고문",
   "poisonous":"유독한, 독이 있는",
   "potency":"효력, 위력",
-  "productivity":"생산성",
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
   "sincere":"진심의, 진실한",

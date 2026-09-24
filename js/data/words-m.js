@@ -1486,7 +1486,6 @@ Object.assign(window.GLOSS, {
   "press forward": "밀고 나아가다",
   "prime mover": "일을 일으킨 주역",
   "procedural": "절차상의",
-  "procedure": "절차",
   "pronounced": "두드러진",
   "property loan": "부동산 대출",
   "proselytizer": "개종을 권하는 사람",

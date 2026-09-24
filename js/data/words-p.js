@@ -1600,7 +1600,152 @@ window.VOCAB_P = [
      되풀이하는 셈이라 붙이지 않았다. */
   { word:"primitive", pron:"프리머티브", pos:"adj", level:"B2", meanings:["원시적인"],
     syn:["of early times","rough and simple","not yet developed"],
-    ex:[{ s:"They used {{}} tools.", f:"primitive", ko:"그들은 원시적인 도구를 썼다." }] }
+    ex:[{ s:"They used {{}} tools.", f:"primitive", ko:"그들은 원시적인 도구를 썼다." }] },
+
+  /* ── 챕터 14 ────────────────────────────────────── */
+  /* 이 챕터가 P 세트에서 가장 무겁다 — 스무 자리 가운데 열여섯이 승격이고,
+     사전에 품사가 섞인 항목이 넷이나 된다.
+
+     ★ 원본에서 두 낱말의 뜻이 서로 뒤바뀌어 있던 자리를 바로잡았다.
+          product     생산(수단)  → 제품, 산물
+          production  생산물      → 생산, 생산량
+       product 는 '만들어진 것', production 은 '만드는 일' 이다. 원본은 이 둘을
+       거꾸로 적었다. 사전값이 마침 옳은 쪽이어서 글자까지 그대로 지켰고,
+       그래서 commodity·creation·consumption 세 곳의 화면은 바뀌지 않는다.
+
+     ★ 다른 세트의 유의어 자리 셋을 손질했다. 여기 오르는 낱말이 그 자리에서
+       엉뚱한 뜻으로 뜨기 때문이다.
+          dean(D)    syn head·principal → head of a college · one leading a faculty
+          inquiry(I) syn probe          → search for facts
+
+     품사가 섞여 있던 사전 항목 넷.
+          principal 주요한; 교장      → 주요한, 으뜸의   (형용사로 세웠다)
+          private   사적인; 민간의    → 사적인, 민간의   (쌍반점만 걷었다)
+          probe     조사하다; 탐침    → 조사하다, 캐다   (동사로 세웠다)
+          process   과정; 처리하다    → 과정, 경과       (명사로 세웠다) */
+
+  /* 승격 128 — 사전은 '주요한; 교장' 으로 형용사와 명사가 섞여 있었다. 참조 셋 가운데
+     둘(cardinal, C · foremost, F)이 형용사를 쓰고 하나(dean, D)가 명사를 썼다.
+     원본이 형용사여서 형용사로 세우고 dean 쪽을 고쳤다.
+     '주요한' 은 primary(챕터 13)·foremost 와, '으뜸의' 는 paramount(챕터 2) 와
+     글자가 같아 넷이 서로의 오답에서 빠진다. */
+  { word:"principal", pron:"프린서펄", pos:"adj", level:"B2", meanings:["주요한","으뜸의"],
+    syn:["main in rank","first in importance","greatest in weight"],
+    ex:[{ s:"Cost was the {{}} reason for the delay.", f:"principal", ko:"비용이 그 지연의 주요한 이유였다." }] },
+
+  /* 승격 129 — 사전 표현과 글자까지 같다(conscience, C). principal 과 발음이
+     같은 낱말이다 — 그래서 둘을 나란히 세워 두었다. */
+  { word:"principle", pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
+    syn:["rule one lives by","basic truth","standard of conduct"],
+    ex:[{ s:"He refused on {{}}.", f:"principle", ko:"그는 원칙에 따라 거절했다." }] },
+
+  /* 첫 뜻 '앞의' 는 챕터 13 previous 와 글자가 같아 서로 오답에서 빠진다. */
+  { word:"prior", pron:"프라이어", pos:"adj", level:"B2", meanings:["앞의","사전의"],
+    syn:["earlier than this","coming ahead in time","done beforehand"],
+    ex:[{ s:"No {{}} notice was given.", f:"prior", ko:"사전의 통보는 없었다." }] },
+
+  /* 승격 130 — 사전은 '우선 사항' 한 갈래였고 참조가 없어 '우선순위' 를 붙였다. */
+  { word:"priority", pron:"프라이오러티", pos:"n", level:"B1", meanings:["우선 사항","우선순위"],
+    syn:["what comes first","matter to handle first","order of importance"],
+    ex:[{ s:"Safety is our top {{}}.", f:"priority", ko:"안전이 우리의 가장 높은 우선 사항이다." }] },
+
+  /* 승격 131 — 사전은 '사적인; 민간의' 로 쌍반점을 쓰고 있었다. 둘 다 형용사라
+     갈래만 쉼표로 갈랐다 (civic 반의어, C · confidential 유의어, C — 두 곳의
+     구두점이 달라진다). */
+  { word:"private", pron:"프라이빗", pos:"adj", level:"B1", meanings:["사적인","민간의"],
+    syn:["confidential","not open to all","one's own"], ant:["public"],
+    ex:[{ s:"This is a {{}} matter.", f:"private", ko:"이것은 사적인 일이다." }] },
+
+  /* 승격 132 — 사전은 '특권' 한 갈래였다. '명예' 는 it is a privilege to ~ 의
+     그 뜻이라 갈래가 달라 붙였다 (duty 반의어, D 한 곳이 바뀐다).
+     레벨을 B2 로 두어 챕터 12 prerogative(고유 권한 · C2) 와 두 칸 벌렸다. */
+  { word:"privilege", pron:"프리벌리지", pos:"n", level:"B2", meanings:["특권","명예"],
+    syn:["special right","favor granted to few","honor given"], ant:["duty"],
+    ex:[{ s:"Free parking is a {{}} here.", f:"privilege", ko:"이곳에서 무료 주차는 특권이다." }] },
+
+  { word:"probability", pron:"프라버빌러티", pos:"n", level:"B2", meanings:["확률","개연성"],
+    syn:["odds","chance of happening","how likely it is"],
+    ex:[{ s:"The {{}} of rain is low.", f:"probability", ko:"비가 올 확률은 낮다." }] },
+
+  /* 승격 133 — 사전 표현과 글자까지 같다(likely, L). */
+  { word:"probable", pron:"프라버블", pos:"adj", level:"B2", meanings:["있을 법한"],
+    syn:["likely","to be expected","more than possible"],
+    ex:[{ s:"A {{}} cause was the heat.", f:"probable", ko:"있을 법한 원인은 더위였다." }] },
+
+  /* 승격 134 — 사전은 '조사하다; 탐침' 으로 동사와 명사가 섞여 있었다. 참조 둘
+     가운데 investigate(I) 가 동사를 쓰고 inquiry(I) 가 명사를 썼다. 원본이
+     동사여서 동사로 세우고 inquiry 쪽을 고쳤다. '조사하다' 는 examine(E)·
+     investigate 와 글자가 같아 셋이 서로의 오답에서 빠진다. */
+  { word:"probe", pron:"프로브", pos:"v", level:"C1", meanings:["조사하다","캐다"],
+    syn:["investigate","look into closely","dig for facts"],
+    ex:[{ s:"Reporters began to {{}} the deal.", f:"probe", ko:"기자들이 그 거래를 조사하기 시작했다." }] },
+
+  /* 승격 135 — 사전은 '절차' 한 갈래였다. 갈래가 다른 '순서' 를 붙였다
+     (method 유의어, M 한 곳이 바뀐다). */
+  { word:"procedure", pron:"프러시저", pos:"n", level:"B1", meanings:["절차","순서"],
+    syn:["set way of doing","steps to follow","course of action"],
+    ex:[{ s:"Follow the safety {{}}.", f:"procedure", ko:"안전 절차를 따르라." }] },
+
+  /* 승격 136 — 사전은 '과정; 처리하다' 로 명사와 동사가 섞여 있었다. 참조가
+     없어 원본대로 명사로 세웠다. */
+  { word:"process", pron:"프라세스", pos:"n", level:"B1", meanings:["과정","경과"],
+    syn:["series of steps","way things go along","course of change"],
+    ex:[{ s:"Learning is a slow {{}}.", f:"process", ko:"배움은 느린 과정이다." }] },
+
+  /* 승격 137 — 사전 표현과 글자까지 같다(announce, A · declare, D — 두 곳).
+     '선언하다' 는 declare 의 첫 뜻과 같지만 둘은 서로 유의어라 오답에서 빠진다. */
+  { word:"proclaim", pron:"프러클레임", pos:"v", level:"C1", meanings:["선언하다","공포하다"],
+    syn:["declare","announce openly","make known to all"],
+    ex:[{ s:"The king will {{}} a holiday.", f:"proclaim", ko:"왕이 휴일을 선언할 것이다." }] },
+
+  /* 챕터 10 의 postpone(연기하다, 미루다) 과 '미루다' 로 글자가 같다 — 그래서
+     서로의 오답에서 빠진다. postpone 의 갈래 순서를 그때 되돌려 둔 이유다. */
+  { word:"procrastinate", pron:"프러크래스티네이트", pos:"v", level:"C1", meanings:["늑장 부리다","미루다"],
+    syn:["put off doing","drag one's feet","delay without reason"],
+    ex:[{ s:"Students often {{}} before exams.", f:"procrastinate", ko:"학생들은 시험 앞두고 흔히 늑장 부린다." }] },
+
+  /* 승격 138 — 사전은 '생산하다' 한 갈래였고 참조가 넷(bring about·generate·
+     manufacture 유의어, consume 반의어) 이다. 원본의 '만들어 내다' 는 generate 의
+     첫 뜻과 글자까지 같아 붙이지 않았다 — 네 곳의 화면이 그대로 남는다. */
+  { word:"produce", pron:"프러두스", pos:"v", level:"B1", meanings:["생산하다"],
+    syn:["generate","manufacture","bring into being"],
+    ex:[{ s:"The farm can {{}} enough rice.", f:"produce", ko:"그 농장은 쌀을 넉넉히 생산할 수 있다." }] },
+
+  /* 승격 139 — ★ 원본이 production 과 뜻을 맞바꿔 적어 둔 자리다. 원본은
+     '생산(수단)' 이었는데 그것은 production 쪽 뜻이다. product 는 '만들어진 것' 이다.
+     사전값이 옳은 쪽이어서 글자까지 지켰다 (commodity·creation, C — 두 곳 보존). */
+  { word:"product", pron:"프라덕트", pos:"n", level:"B1", meanings:["제품","산물"],
+    syn:["goods","thing made for sale","what comes out of work"],
+    ex:[{ s:"The new {{}} sells well.", f:"product", ko:"그 새 제품은 잘 팔린다." }] },
+
+  /* 승격 140 — ★ 원본이 product 와 뜻을 맞바꿔 적어 둔 자리다. 원본은 '생산물'
+     이었는데 그것은 product 쪽 뜻이다. production 은 '만드는 일' 이다.
+     사전값이 옳은 쪽이어서 글자까지 지켰다 (consumption, C 한 곳 보존).
+     '생산량' 은 output(생산량, 산출 · B2) 과 글자가 같아 둘이 서로 오답에서 빠진다. */
+  { word:"production", pron:"프러덕션", pos:"n", level:"B1", meanings:["생산","생산량"],
+    syn:["output","act of making","amount turned out"], ant:["consumption"],
+    ex:[{ s:"Steel {{}} fell last year.", f:"production", ko:"철강 생산이 지난해 줄었다." }] },
+
+  /* 승격 141 — 사전 표현과 글자까지 같다(efficiency, E). */
+  { word:"productivity", pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
+    syn:["rate of output","how much is produced","working efficiency"],
+    ex:[{ s:"New tools raised {{}}.", f:"productivity", ko:"새 도구가 생산성을 높였다." }] },
+
+  /* 승격 142 — 사전 표현과 글자까지 같다(career, C). '직업' 은 occupation(직업,
+     점령 · O) 과 글자가 같아 둘이 서로 오답에서 빠진다. */
+  { word:"profession", pron:"프러페션", pos:"n", level:"B1", meanings:["직업","전문직"],
+    syn:["occupation","line of work","calling that needs training"],
+    ex:[{ s:"Teaching is a respected {{}}.", f:"profession", ko:"교직은 존중받는 직업이다." }] },
+
+  { word:"professional", pron:"프러페셔널", pos:"adj", level:"B1", meanings:["전문적인","전문가의"],
+    syn:["done for a living","trained and skilled","of an expert"], ant:["amateur"],
+    ex:[{ s:"She gave {{}} advice.", f:"professional", ko:"그녀는 전문적인 조언을 해 주었다." }] },
+
+  /* 승격 143 — 사전 표현과 글자까지 같다(competence, C). '능숙함' 은 competence 의
+     첫 뜻과 같지만 둘은 서로 유의어라 오답에서 빠진다. */
+  { word:"proficiency", pron:"프러피션시", pos:"n", level:"C1", meanings:["숙달","능숙함"],
+    syn:["competence","skill from practice","being good at it"],
+    ex:[{ s:"He showed great {{}} in Korean.", f:"proficiency", ko:"그는 한국어에 큰 숙달을 보였다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1612,6 +1757,7 @@ Object.assign(window.GLOSS, {
   "academic article": "학술 글",
   "across the whole planet": "지구 전체에 걸친",
   "act of heading off": "미리 가로막는 일",
+  "act of making": "만드는 일",
   "act of putting forward": "내놓는 일",
   "added remark": "덧붙인 말",
   "advance copy": "앞서 내주는 판",
@@ -1621,8 +1767,10 @@ Object.assign(window.GLOSS, {
   "ahead of the main part": "본격적인 것 앞의",
   "alike in form": "꼴이 비슷한",
   "already in place": "이미 갖춰져 있는",
+  "amount turned out": "만들어 낸 양",
   "angle of view": "보는 각도",
   "angle one sees from": "보는 쪽의 각도",
+  "announce openly": "드러내어 알리다",
   "ape or monkey": "유인원이나 원숭이",
   "arousing pity": "안타깝게 하는",
   "art of instruction": "가르치는 기술",
@@ -1631,6 +1779,7 @@ Object.assign(window.GLOSS, {
   "at regular intervals": "일정한 사이를 두고",
   "at the back": "뒤에 있는",
   "bad fix": "난처한 처지",
+  "basic truth": "바탕이 되는 참",
   "be a party to": "~에 한편으로 끼다",
   "be destroyed": "무너져 없어지다",
   "be older than": "~보다 오래되다",
@@ -1642,6 +1791,7 @@ Object.assign(window.GLOSS, {
   "before written records": "글로 남기기 전의",
   "beg earnestly": "간절히 빌다",
   "being a father": "아버지라는 처지",
+  "being good at it": "잘하게 됨",
   "being right to the detail": "세부까지 맞음",
   "being there": "그 자리에 있음",
   "being well liked": "사랑받는 상태",
@@ -1664,6 +1814,7 @@ Object.assign(window.GLOSS, {
   "call on someone": "누군가를 찾아가다",
   "call the outcome": "결과를 짚어 말하다",
   "calling for haste": "서둘러야 하는",
+  "calling that needs training": "익혀야 할 것이 있는 일",
   "camera work": "사진기를 다루는 일",
   "cape-like landmass": "곶처럼 뻗은 땅덩이",
   "care taken beforehand": "미리 들이는 주의",
@@ -1677,6 +1828,7 @@ Object.assign(window.GLOSS, {
   "carrying honor": "명예가 따르는",
   "carrying out of a task": "맡은 일을 해냄",
   "carrying weight": "무게가 실린",
+  "chance of happening": "일어날 가망",
   "chemical for killing pests": "해충을 죽이는 약품",
   "chemist's shop": "약 파는 가게",
   "chest illness": "가슴에 생긴 병",
@@ -1693,6 +1845,7 @@ Object.assign(window.GLOSS, {
   "come before": "앞에 오다",
   "come earlier than": "~보다 이르게 오다",
   "coming ages": "앞으로 올 시대",
+  "coming ahead in time": "때가 앞서 오는",
   "coming at the start": "맨 처음에 오는",
   "coming back each year": "해마다 다시 오는",
   "coming before": "앞서 오는",
@@ -1706,6 +1859,7 @@ Object.assign(window.GLOSS, {
   "count of votes": "표를 셈",
   "country laborer": "시골 일꾼",
   "course of action": "나아갈 방향",
+  "course of change": "변해 가는 흐름",
   "course one must take first": "먼저 들어야 하는 과목",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
@@ -1718,8 +1872,10 @@ Object.assign(window.GLOSS, {
   "deep hole": "깊은 구멍",
   "deep-seated horror": "뿌리 깊은 무서움",
   "deeply religious": "신앙이 깊은",
+  "delay without reason": "까닭 없이 늦추다",
   "devout": "믿음이 굳은",
   "die out": "차츰 사라지다",
+  "dig for facts": "사실을 캐내다",
   "direct between users": "쓰는 이들 사이를 바로 잇는",
   "dirtying agent": "오염을 일으키는 것",
   "dive headlong": "곤두박이로 뛰어들다",
@@ -1727,9 +1883,12 @@ Object.assign(window.GLOSS, {
   "doctor of medicine": "의학을 다루는 의사",
   "doctor's written order": "의사가 적어 준 지시",
   "dogged effort": "질기게 들이는 노력",
+  "done beforehand": "미리 해 둔",
+  "done for a living": "먹고살려고 하는",
   "done to prepare": "준비로 하는",
   "done with great care": "아주 조심스레 한",
   "down-to-earth": "발이 땅에 붙은",
+  "drag one's feet": "발을 끌며 늑장 부리다",
   "drained of color": "빛깔이 빠진",
   "dramatist": "희곡 작가",
   "draw attention to": "~에 눈길을 끌다",
@@ -1743,6 +1902,7 @@ Object.assign(window.GLOSS, {
   "dust with pollen": "꽃가루를 묻히다",
   "earlier in order": "차례가 앞선",
   "earlier model": "앞서 나온 것",
+  "earlier than this": "이보다 이른",
   "earth-wide": "지구 전역의",
   "easy to grasp": "알아듣기 쉬운",
   "end of the earth's axis": "지구 축의 끝",
@@ -1760,11 +1920,13 @@ Object.assign(window.GLOSS, {
   "far-fetched": "억지스러운",
   "farm birds": "농장에서 기르는 새",
   "fatherhood": "아버지 됨",
+  "favor granted to few": "몇몇에게만 주는 혜택",
   "fearing the worst": "가장 나쁜 일을 겁내는",
   "feeding on another": "남을 먹고 사는",
   "final reward": "끝에 받는 보답",
   "fine accuracy": "결 고운 정확함",
   "fired clayware": "구워 낸 흙그릇",
+  "first in importance": "중요함에서 첫째인",
   "first in rank": "자리가 으뜸인",
   "first to go in": "맨 먼저 들어간 이",
   "five-cornered shape": "모가 다섯인 꼴",
@@ -1820,6 +1982,7 @@ Object.assign(window.GLOSS, {
   "grassy field": "풀이 자란 들",
   "grave danger": "엄중한 위태로움",
   "grazing land": "풀 뜯기는 땅",
+  "greatest in weight": "무게가 가장 큰",
   "group of sentences": "문장 묶음",
   "guard against trouble": "화를 막을 대비",
   "guess about the future": "앞일에 대한 짐작",
@@ -1834,6 +1997,7 @@ Object.assign(window.GLOSS, {
   "have as one's own": "자기 것으로 두다",
   "having two opposite poles": "맞선 두 극을 가짐",
   "hawk goods": "물건을 외치며 팔다",
+  "head of a college": "대학의 우두머리",
   "head off": "미리 가로막다",
   "heap": "쌓아 올린 것",
   "heathen": "이교의",
@@ -1856,10 +2020,13 @@ Object.assign(window.GLOSS, {
   "hollow of the hand": "손의 오목한 곳",
   "holy office holder": "거룩한 직을 맡은 이",
   "holy traveler": "거룩한 길을 가는 이",
+  "honor given": "주어진 영광",
   "hopeful in outlook": "앞을 밝게 보는",
   "hound for beliefs": "믿음 때문에 몰아세우다",
   "hound without let-up": "쉼 없이 몰아대다",
   "house of lawmakers": "입법자들의 모임",
+  "how likely it is": "얼마나 그럴듯한지",
+  "how much is produced": "얼마나 만들어지는지",
   "human-resources office": "사람을 맡아 보는 부서",
   "hunted animal": "사냥당하는 짐승",
   "hunting animal": "사냥하는 짐승",
@@ -1904,6 +2071,7 @@ Object.assign(window.GLOSS, {
   "liking for one over another": "하나를 더 좋아함",
   "living growth": "살아서 자라는 것",
   "living on a host": "숙주에 붙어 사는",
+  "look into closely": "자세히 들여다보다",
   "looking on the dark side": "어두운 쪽만 보는",
   "lost in thought": "생각에 빠진",
   "love of knowledge": "앎을 사랑함",
@@ -1915,16 +2083,19 @@ Object.assign(window.GLOSS, {
   "made-up road": "다져 만든 길",
   "magazine issued regularly": "때맞춰 나오는 잡지",
   "main idea": "중심 생각",
+  "main in rank": "등급이 첫째인",
   "mainstay": "버팀목",
   "make a hole in": "~에 구멍을 내다",
   "make impure": "깨끗하지 않게 하다",
   "make it one's own": "제 것으로 만들다",
+  "make known to all": "모두에게 알리다",
   "make last endlessly": "끝없이 가게 만들다",
   "make powerless": "힘을 못 쓰게 하다",
   "make-up of a person": "사람을 이루는 바탕",
   "male plant cells": "식물의 수컷 세포",
   "man of the cloth": "성직에 있는 사람",
   "material rather than mental": "마음이 아니라 물질의",
+  "matter to handle first": "먼저 다뤄야 할 일",
   "matter-of-fact": "있는 대로 따지는",
   "maybe": "어쩌면",
   "medical practitioner": "의료를 하는 사람",
@@ -1946,6 +2117,7 @@ Object.assign(window.GLOSS, {
   "morbid fear": "병적인 두려움",
   "more than a little": "적잖이",
   "more than one": "하나보다 많은",
+  "more than possible": "가능한 정도를 넘는",
   "more to be wished": "더 바랄 만한",
   "most common at the time": "그때 가장 흔한",
   "most important of all": "무엇보다 중요한",
@@ -1964,6 +2136,7 @@ Object.assign(window.GLOSS, {
   "non-surgical doctor": "수술을 하지 않는 의사",
   "not able to wait": "기다릴 수 없는",
   "not acting": "나서지 않는",
+  "not open to all": "누구에게나 열려 있지 않은",
   "not single": "하나가 아닌",
   "not what it claims": "내세우는 것과 다른",
   "not yet developed": "아직 발달하지 않은",
@@ -1973,6 +2146,7 @@ Object.assign(window.GLOSS, {
   "number of inhabitants": "사는 사람의 수",
   "observed event": "관찰된 일",
   "of a mother or father": "어버이의",
+  "of an expert": "전문가다운",
   "of early times": "이른 시대의",
   "of first importance": "첫째로 중요한",
   "of great effect": "효과가 큰",
@@ -1995,6 +2169,7 @@ Object.assign(window.GLOSS, {
   "on the outer edge": "바깥 가장자리에 있는",
   "one certain": "어느 하나의",
   "one going by foot": "걸어서 가는 이",
+  "one leading a faculty": "학부를 이끄는 이",
   "one of the same age": "나이가 같은 이",
   "one on a religious journey": "신앙의 길을 떠난 이",
   "one taking part": "한몫 맡은 이",
@@ -2004,11 +2179,13 @@ Object.assign(window.GLOSS, {
   "one who joins in": "끼어든 사람",
   "one who leads worship": "예배를 이끄는 이",
   "one who mends pipes": "관을 고치는 이",
+  "one's own": "자기만의",
   "one-eyed in politics": "정치에서 한쪽만 보는",
   "opening piece": "여는 곡",
   "opening words": "여는 말",
   "oppress cruelly": "모질게 억누르다",
   "order as treatment": "치료로 지시하다",
+  "order of importance": "중요한 차례",
   "organism living off another": "남에게 붙어 사는 생물",
   "out of the common run": "흔하지 않은",
   "outside the church": "교회 밖의",
@@ -2052,6 +2229,7 @@ Object.assign(window.GLOSS, {
   "puff for air": "숨을 몰아쉬다",
   "puncture": "구멍을 뚫다",
   "push a hole through": "뚫어 구멍을 내다",
+  "put off doing": "하기를 뒤로 미루다",
   "put off to later": "뒤로 물리다",
   "put on for show": "보이기 위해 꾸민",
   "put out to graze": "풀 뜯게 내놓다",
@@ -2060,6 +2238,7 @@ Object.assign(window.GLOSS, {
   "races of the world": "세상의 여러 인종",
   "rain and snow": "비와 눈",
   "raised platform": "높인 단",
+  "rate of output": "산출이 나는 비율",
   "rate per hundred": "백에 대한 비",
   "rear-facing": "뒤를 향한",
   "refusal to quit": "그만두지 않으려는 마음",
@@ -2085,6 +2264,7 @@ Object.assign(window.GLOSS, {
   "rounded and full": "둥그스름하게 찬",
   "rub to a shine": "문질러 윤을 내다",
   "ruddy": "혈색이 좋은",
+  "rule one lives by": "살면서 따르는 규칙",
   "rules for patents": "특허를 다루는 규정",
   "run through": "꿰어 지나가다",
   "running of a state": "나라를 꾸리는 일",
@@ -2095,6 +2275,7 @@ Object.assign(window.GLOSS, {
   "science of living processes": "살아가는 과정의 학문",
   "science of teaching": "가르치는 것에 관한 학문",
   "score in a game": "경기에서 얻는 점",
+  "search for facts": "사실을 찾는 일",
   "secret scheme": "몰래 꾸민 꾀",
   "section of writing": "글의 한 부분",
   "seep into every part": "구석구석 스미다",
@@ -2103,8 +2284,10 @@ Object.assign(window.GLOSS, {
   "send-up": "놀리는 흉내",
   "sense-based": "감각에 바탕한",
   "serial publication": "차례로 내는 간행물",
+  "series of steps": "잇따른 단계",
   "set down as true": "참이라고 두다",
   "set in advance": "미리 잡아 둔",
+  "set way of doing": "정해진 하는 방식",
   "settle in advance": "미리 정해 두다",
   "settled dislike": "굳어 버린 싫음",
   "settled on earlier": "먼저 정해 둔",
@@ -2132,6 +2315,7 @@ Object.assign(window.GLOSS, {
   "singled out": "따로 집어낸",
   "singular": "하나뿐인",
   "sit for a picture": "그림을 위해 앉아 있다",
+  "skill from practice": "익혀서 얻은 솜씨",
   "slapdash": "엉성한",
   "small area": "좁은 구역",
   "small swelling": "작게 부은 것",
@@ -2146,6 +2330,7 @@ Object.assign(window.GLOSS, {
   "speak in defense of": "~을 변호하여 말하다",
   "speaker's stand": "말하는 이가 서는 자리",
   "special power of office": "그 직책에 딸린 특별한 힘",
+  "special right": "특별한 권리",
   "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
@@ -2161,10 +2346,12 @@ Object.assign(window.GLOSS, {
   "stage in a process": "과정의 한 대목",
   "staged act": "무대에 올린 연기",
   "stand in position": "자리에 세우다",
+  "standard of conduct": "행동의 기준",
   "standing in others' eyes": "남의 눈에 비치는 지위",
   "starting belief": "출발이 되는 믿음",
   "step along the way": "거쳐 가는 한 걸음",
   "step taken in advance": "미리 밟아 두는 조치",
+  "steps to follow": "따라야 할 단계",
   "stick on": "달라붙게 하다",
   "stop in advance": "미리 멈춰 세우다",
   "stopping before it starts": "시작되기 전에 멈춤",
@@ -2207,6 +2394,7 @@ Object.assign(window.GLOSS, {
   "the fact of being on the spot": "그 자리를 채우고 있음",
   "the father's line": "아버지 쪽 핏줄",
   "there from before": "전부터 거기 있던",
+  "thing made for sale": "팔려고 만든 것",
   "thing owned": "가진 물건",
   "thing required beforehand": "갖춰 두어야 하는 것",
   "thing that occurs": "일어나는 일",
@@ -2218,6 +2406,7 @@ Object.assign(window.GLOSS, {
   "times gone by": "흘러간 시절",
   "tiny bit": "아주 작은 조각",
   "to a good degree": "어지간한 정도로",
+  "to be expected": "예상되는",
   "to do with government": "정부에 관한",
   "to do with medicines": "약에 관한",
   "to do with the senses": "감각에 관한",
@@ -2228,6 +2417,7 @@ Object.assign(window.GLOSS, {
   "top-grade": "최상급인",
   "topmost level": "맨 위 수준",
   "tout wares": "물건을 권하며 팔다",
+  "trained and skilled": "익히고 능한",
   "treasured": "보물처럼 여기는",
   "trivial in scale": "규모가 자잘한",
   "trough": "바닥, 골",
@@ -2256,6 +2446,7 @@ Object.assign(window.GLOSS, {
   "way of holding the body": "몸을 가누는 방식",
   "way of looking at it": "그것을 보는 방식",
   "way of seeing": "보는 방식",
+  "way things go along": "일이 흘러가는 모양",
   "way through": "지나가는 길",
   "wayfarer to a shrine": "성지로 가는 나그네",
   "weight of demands": "요구가 주는 무게",
@@ -2264,6 +2455,8 @@ Object.assign(window.GLOSS, {
   "well-padded": "살이 두둑한",
   "what a hunter eats": "사냥꾼이 먹는 것",
   "what an argument rests on": "주장이 기대는 바",
+  "what comes first": "먼저 오는 것",
+  "what comes out of work": "일해서 나온 것",
   "what could come of it": "거기서 나올 수 있는 것",
   "what must come first": "먼저 있어야 할 것",
   "what one expects to happen": "일어날 것이라 보는 바",
@@ -2280,6 +2473,7 @@ Object.assign(window.GLOSS, {
   "work out a ruse": "속임수를 짜내다",
   "workable in practice": "실제로 돌아가는",
   "workforce": "일하는 사람들",
+  "working efficiency": "일의 능률",
   "working powerfully": "세게 듣는",
   "workings of the body": "몸이 돌아가는 원리",
   "worldwide epidemic": "전 세계에 퍼진 유행병",

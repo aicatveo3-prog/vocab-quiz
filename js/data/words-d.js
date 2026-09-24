@@ -142,8 +142,13 @@ window.VOCAB_D = [
   { word:"deal with", pron:"딜 위드", pos:"phr", level:"B1", meanings:["처리하다","다루다"],
     syn:["handle","address","tackle"], ant:["ignore"] },
 
+  /* 유의어 둘을 바꿨다. principal 이 P 세트 챕터 14 표제어(주요한, 으뜸의 · adj)로
+     올라가면서 이 자리에 형용사 뜻이 떠 버린다 — '학장' 의 유의어로는 말이 안 된다.
+     사전의 principal 값도 '주요한; 교장' 으로 품사가 섞여 있어 이미 어정쩡했다.
+     head 도 사전값이 '이끌다; 머리' 여서 학장의 유의어로는 어긋나 있었다
+     (lead·be in charge of 쪽에는 맞는 값이라 사전은 그대로 두었다). */
   { word:"dean", pron:"딘", pos:"n", level:"C1", meanings:["학장","학과장"],
-    syn:["head","principal","chair"],
+    syn:["head of a college","one leading a faculty","chair"],
     ex:[{ s:"The {{}} announced sweeping changes to the curriculum.", f:"dean", ko:"학장이 교육과정의 대폭적인 변경을 발표했다." }] },
 
   { word:"debate", pron:"디베이트", pos:"n", level:"B1", meanings:["토론","논쟁"],

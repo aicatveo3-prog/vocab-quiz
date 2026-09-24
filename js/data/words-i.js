@@ -1056,8 +1056,11 @@ window.VOCAB_I = [
     ex:[{ s:"Doctors will {{}} every child against measles.", f:"inoculate", ko:"의사들은 모든 아이에게 홍역 접종을 할 것이다." }] },
 
   /* 원본 셋째 갈래 '질문' 은 meanings 2개 제한에 걸려 뺐다. */
+  /* probe 를 search for facts 로 바꿨다. probe 가 P 세트 챕터 14 표제어
+     (조사하다, 캐다 · v)로 올라가면 명사 표제어의 유의어 자리에 동사 뜻이 뜬다.
+     사전의 probe 값도 '조사하다; 탐침' 으로 품사가 섞여 있었다. */
   { word:"inquiry", pron:"인콰이어리", pos:"n", level:"B2", meanings:["연구","탐구"],
-    syn:["investigation","probe","research"],
+    syn:["investigation","search for facts","research"],
     ex:[{ s:"Scientific {{}} depends on careful observation.", f:"inquiry", ko:"과학적 탐구는 주의 깊은 관찰에 달려 있다." }] },
 
   /* 승격 ① — GLOSS '호기심 많은' 을 글자까지 지켰다. curious(syn) 가 참조한다.
