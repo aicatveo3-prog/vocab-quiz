@@ -395,8 +395,11 @@ window.VOCAB_C = [
   { word:"chase away", pron:"체이스 어웨이", pos:"phr", level:"B2", meanings:["~을 쫓아내다"],
     syn:["repel","banish","scatter"], ant:["attract"] },
 
+  /* T 세트 7차에서 trace 를 표제어로 세우며 뜻을 명사('흔적, 극미량')로 확정했다.
+     동사구인 이 낱말의 유의어 자리에 명사가 서면 안 되므로 풀어 쓴 말로 갈았다.
+     같은 자리의 track 은 동사('추적하다, 뒤쫓다')로 세워 그대로 맞는다. */
   { word:"chase down", pron:"체이스 다운", pos:"phr", level:"C1", meanings:["끝까지 쫓다","추적하다"],
-    syn:["track","hunt","trace"], ant:["abandon"] },
+    syn:["track","hunt","hunt down step by step"], ant:["abandon"] },
 
   /* ── che · chi ─────────────────────────────── */
   { word:"chef", pron:"셰프", pos:"n", level:"B1", meanings:["주방장","요리사"],

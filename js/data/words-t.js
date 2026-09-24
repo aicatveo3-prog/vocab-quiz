@@ -717,13 +717,152 @@ window.VOCAB_T = [
   /* 승격 54 — 사전의 쌍반점만 쉼표로 갈랐다(참조 deluge). */
   { word:"torrent", pron:"토런트", pos:"n", level:"C1", meanings:["급류","빗발"],
     syn:["deluge","rushing stream","heavy downpour"],
-    ex:[{ s:"A {{}} swept down the valley.", f:"torrent", ko:"급류가 골짜기를 휩쓸고 내려갔다." }] }
+    ex:[{ s:"A {{}} swept down the valley.", f:"torrent", ko:"급류가 골짜기를 휩쓸고 내려갔다." }] },
+
+  /* ══ 7차 · torture ~ transcendence (20단어) ══════════════════════════════
+     승격 6(toxic·trace·track·trade·trail·trait) · 신규 14
+
+     ★ 이 챕터의 고비는 '거래' 덩어리 넷이다. trade(거래, 무역)·tradeoff(교환,
+     주고받기)·transact(거래하다)·transaction(거래, 처리) 가 한 챕터에 모여 있다.
+     trade·transaction 은 첫 뜻이 '거래' 로 글자가 같고, transact 의 '거래하다' 는
+     그 둘을 안에 품는다. meaningsOverlap 이 셋을 서로의 오답에서 자동으로 빼므로
+     같은 문제에 나란히 뜨지 않는다 — 일부러 글자를 맞춰 둔 것이다. tradeoff 만
+     '교환, 주고받기' 로 완전히 갈라 세웠다('거래' 는 trade 자리).
+     transact 는 deal in(거래하다, 취급하다 · D) 과도 맞물려 배제된다.
+
+     ★ trace 와 track 을 품사로 갈랐다. 사전은 둘 다 '추적하다' 를 첫 갈래로
+     갖고 있었다(trace 추적하다; 흔적 / track 추적하다; 경로). 그대로 두면 한
+     챕터 안에서 정답이 둘인 문제가 나온다. 확정은 이렇게 했다.
+       trace  n  흔적, 극미량      ← 교재가 쓰는 갈래
+       track  v  추적하다, 뒤쫓다   ← 사전 첫 갈래
+     두 낱말은 참조가 chase down(C) 한 곳에서 겹쳤다. trace 가 명사로 서면
+     동사구의 유의어 자리에 명사가 놓이므로 그 한 곳을 갈았다.
+       chase down(C) trace → hunt down step by step
+     같은 자리의 track 은 동사로 세워 그대로 맞는다. trail 도 사전값 그대로
+     동사('뒤처져 따라가다') 라서 셋이 서로 다른 자리에 선다.
+
+     ★ 앞 챕터의 torment 를 명사로 세운 덕에 torture 가 동사 '고문하다,
+     괴롭히다' 를 온전히 받는다. 교재에서 둘이 '괴롭히다' 로 겹쳐 있던 것이
+     이렇게 풀렸다.
+
+     ★ tranquil·tranquility 는 S 세트와 글자를 맞춰 배제시켰다.
+       tranquil     고요한, 평화로운  = serene(S) 와 글자가 통째로 같다
+       tranquility  평온, 고요        ↔ stillness(S 고요, 평온) 와 앞뒤만 다르다
+     어설프게 다르게 적으면 앱이 둘을 다른 뜻으로 보고 같은 문제에 나란히
+     내놓는다. 똑같이 맞추는 것이 안전하다.
+
+     ★ transcendence 는 교재가 '초월, 탁월' 로 적었는데 '탁월' 은 transcend 에
+     없는 뜻이다. '초월, 뛰어넘음' 으로 바로잡았다.
+
+     trail 은 교재의 '오솔길, 흔적' 을 버렸다. '흔적' 은 바로 위 trace 자리이고,
+     참조 fall behind(F)·lag behind(L) 두 곳이 모두 동사 쪽을 가리킨다.
+     trample 은 교재 두 갈래('짓밟다, 밟아 뭉개다') 가 같은 말이어서 하나로 줄였다. */
+
+  /* 앞 챕터 torment(고통, 고뇌 · 명사) 와 품사로 갈렸다. */
+  { word:"torture", pron:"토처", pos:"v", level:"B2", meanings:["고문하다","괴롭히다"],
+    syn:["inflict pain on","put to the rack","torment cruelly"],
+    ex:[{ s:"The guards used to {{}} their prisoners.", f:"torture", ko:"그 경비들은 죄수들을 고문하곤 했다." }] },
+
+  { word:"toss and turn", pron:"토스 앤드 턴", pos:"phr", level:"B2", meanings:["뒤척이다"],
+    syn:["roll about in bed","sleep badly","keep turning over"] },
+
+  { word:"tourist destination", pron:"투어리스트 데스터네이션", pos:"phr", level:"B1", meanings:["관광지"],
+    syn:["place travellers go","spot for sightseeing","holiday point"] },
+
+  /* 승격 55 — 사전 단일값 유지. 참조 hazardous(H) 한 곳의 화면은 바뀌지 않는다. */
+  { word:"toxic", pron:"톡식", pos:"adj", level:"B2", meanings:["유독한"],
+    syn:["hazardous","full of poison","harmful to life"],
+    ex:[{ s:"The fumes from the pit were {{}}.", f:"toxic", ko:"그 구덩이에서 나온 연기는 유독했다." }] },
+
+  { word:"toxin", pron:"톡신", pos:"n", level:"B2", meanings:["독소"],
+    syn:["poison from a living thing","harmful substance in the body","venom"],
+    ex:[{ s:"The liver breaks down each {{}}.", f:"toxin", ko:"간은 각 독소를 분해한다." }] },
+
+  /* 승격 56 — ★ 사전의 '추적하다; 흔적' 에서 명사 쪽만 세웠다. 아래 track 이
+     동사 '추적하다' 를 받는다. 참조 chase down(C) 한 곳을 갈았다. */
+  { word:"trace", pron:"트레이스", pos:"n", level:"B1", meanings:["흔적","극미량"],
+    syn:["mark left behind","tiny amount","faint sign"],
+    ex:[{ s:"There was not a {{}} of dust on the shelf.", f:"trace", ko:"선반에는 먼지의 흔적조차 없었다." }] },
+
+  /* 승격 57 — 사전 첫 갈래를 세웠다(참조 chase down 유지). '경로' 는 위 trace 의
+     '흔적' 과 가까워 버렸다. pursue(추구하다, 뒤쫓다) 와 '뒤쫓다' 가 맞물려
+     배제된다. */
+  { word:"track", pron:"트랙", pos:"v", level:"B1", meanings:["추적하다","뒤쫓다"],
+    syn:["chase down","pursue","follow the trail of"],
+    ex:[{ s:"The dogs can {{}} a deer for miles.", f:"track", ko:"그 개들은 사슴을 몇 마일이나 추적할 수 있다." }] },
+
+  /* 승격 58 — 사전 글자 유지. 참조 barter(B)·commerce(C)·craft(C)·industry(I)·
+     occupation(O) 다섯 곳의 화면은 바뀌지 않는다. commerce(무역, 상거래) 와
+     '무역' 이 맞물려 배제된다. */
+  { word:"trade", pron:"트레이드", pos:"n", level:"B1", meanings:["거래","무역"],
+    syn:["commerce","industry","buying and selling"],
+    ex:[{ s:"The {{}} between the two ports grew fast.", f:"trade", ko:"두 항구 사이의 거래가 빠르게 늘었다." }] },
+
+  /* '거래' 는 위 trade 자리라 쓰지 않았다. */
+  { word:"tradeoff", pron:"트레이드오프", pos:"n", level:"C1", meanings:["교환","주고받기"],
+    syn:["giving up one for another","balance of gains and losses","swap of benefits"],
+    ex:[{ s:"Speed and safety always involve a {{}}.", f:"tradeoff", ko:"속도와 안전은 늘 교환 관계에 있다." }] },
+
+  { word:"tragic", pron:"트래직", pos:"adj", level:"B2", meanings:["비극의","비참한"],
+    syn:["of a sad ending","deeply sorrowful","ending in disaster"],
+    ex:[{ s:"The play has a {{}} ending.", f:"tragic", ko:"그 연극은 비극의 결말을 지녔다." }] },
+
+  /* 승격 59 — 사전 단일값 유지. 참조 fall behind(F)·lag behind(L) 두 곳의 화면은
+     바뀌지 않는다. 교재의 '오솔길, 흔적' 은 위 trace 자리라 버렸다. */
+  { word:"trail", pron:"트레일", pos:"v", level:"C1", meanings:["뒤처져 따라가다"],
+    syn:["fall behind","lag behind","follow at a distance"],
+    ex:[{ s:"The youngest runner began to {{}}.", f:"trail", ko:"가장 어린 주자가 뒤처져 따라가기 시작했다." }] },
+
+  /* 승격 60 — 사전 글자 유지. 참조 characteristic(C)·feature(F) 두 곳의 화면은
+     바뀌지 않는다. characteristic(특성, 특유의) 과 '특성' 이 맞물려 배제된다. */
+  { word:"trait", pron:"트레이트", pos:"n", level:"B1", meanings:["특성","특질"],
+    syn:["characteristic","feature","mark of one's nature"],
+    ex:[{ s:"Patience is her strongest {{}}.", f:"trait", ko:"인내는 그녀의 가장 두드러진 특성이다." }] },
+
+  { word:"traitor", pron:"트레이터", pos:"n", level:"C1", meanings:["배반자","반역자"],
+    syn:["one who betrays","turncoat","rebel against one's own"],
+    ex:[{ s:"History has named him a {{}}.", f:"traitor", ko:"역사는 그를 배반자로 불러 왔다." }] },
+
+  /* 교재의 '짓밟다, 밟아 뭉개다' 두 갈래가 같은 말이어서 하나로 줄였다. */
+  { word:"trample", pron:"트램플", pos:"v", level:"C1", meanings:["짓밟다"],
+    syn:["tread heavily on","crush underfoot","stamp down on"],
+    ex:[{ s:"Do not {{}} the young plants.", f:"trample", ko:"어린 식물을 짓밟지 마라." }] },
+
+  /* serene(고요한, 평화로운 · S) 과 글자를 통째로 맞춰 자동 배제시켰다. */
+  { word:"tranquil", pron:"트랭퀼", pos:"adj", level:"C1", meanings:["고요한","평화로운"],
+    syn:["calm and quiet","free of trouble","at peace"],
+    ex:[{ s:"The lake was {{}} at dawn.", f:"tranquil", ko:"그 호수는 새벽에 고요했다." }] },
+
+  /* stillness(고요, 평온 · S) 와 앞뒤만 다르게 두어 자동 배제시켰다. */
+  { word:"tranquility", pron:"트랭퀼러티", pos:"n", level:"C1", meanings:["평온","고요"],
+    syn:["state of calm","absence of noise","quiet of mind"],
+    ex:[{ s:"She longed for the {{}} of her old home.", f:"tranquility", ko:"그녀는 옛집의 평온을 그리워했다." }] },
+
+  /* deal in(거래하다, 취급하다 · D) 과 맞물려 배제된다. */
+  { word:"transact", pron:"트랜잭트", pos:"v", level:"C1", meanings:["거래하다"],
+    syn:["deal in","do business","carry out a deal"],
+    ex:[{ s:"The two firms {{}} in metals.", f:"transact", ko:"두 회사는 금속을 거래한다." }] },
+
+  /* 위 trade(거래, 무역) 와 '거래' 가 맞물려 배제된다 — 일부러 글자를 맞췄다. */
+  { word:"transaction", pron:"트랜잭션", pos:"n", level:"B2", meanings:["거래","처리"],
+    syn:["piece of business","deal carried out","exchange of money"],
+    ex:[{ s:"Every {{}} is recorded in the ledger.", f:"transaction", ko:"모든 거래가 장부에 기록된다." }] },
+
+  { word:"transcend", pron:"트랜센드", pos:"v", level:"C1", meanings:["초월하다"],
+    syn:["rise above","go past the limit of","surpass all bounds"],
+    ex:[{ s:"Great music can {{}} language.", f:"transcend", ko:"위대한 음악은 언어를 초월할 수 있다." }] },
+
+  /* ★ 교재의 '탁월' 은 transcend 에 없는 뜻이라 버리고 '뛰어넘음' 으로 바로잡았다. */
+  { word:"transcendence", pron:"트랜센던스", pos:"n", level:"C2", meanings:["초월","뛰어넘음"],
+    syn:["going beyond limits","state of rising above","passing all bounds"],
+    ex:[{ s:"The poem speaks of {{}}.", f:"transcendence", ko:"그 시는 초월을 말한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "able to be taken off tax": "세금에서 덜 수 있는",
   "able to be touched": "손에 닿을 수 있는",
+  "absence of noise": "소리가 없음",
   "accept the honour of": "~의 명예를 받아들이다",
   "act despite danger": "위험을 안고 움직이다",
   "act of stealing": "훔치는 짓",
@@ -736,7 +875,9 @@ Object.assign(window.GLOSS, {
   "assume control": "통제를 맡다",
   "assume from another": "남에게서 맡아 오다",
   "assume without asking": "묻지 않고 그러리라 여기다",
+  "at peace": "평화로이 있는",
   "awfully": "무척",
+  "balance of gains and losses": "얻는 것과 잃는 것의 균형",
   "bank clerk at a window": "창구에 앉은 은행 직원",
   "based on theory": "이론에 바탕을 둔",
   "be answerable for": "~에 답할 처지가 되다",
@@ -756,7 +897,10 @@ Object.assign(window.GLOSS, {
   "break into parts": "여러 부분으로 나누다",
   "bring up what one ate": "먹은 것을 올리다",
   "brush lightly on the skin": "살갗을 가볍게 스치다",
+  "buying and selling": "사고파는 일",
   "by a shrewd move": "약삭빠른 수로",
+  "calm and quiet": "차분하고 조용한",
+  "carry out a deal": "매매를 해내다",
   "cashier in a bank": "은행의 계산 담당자",
   "cast of character": "타고난 성품의 틀",
   "cause a ticklish feel": "간지러운 느낌을 일으키다",
@@ -771,12 +915,16 @@ Object.assign(window.GLOSS, {
   "coming at the right moment": "알맞은 때에 오는",
   "container of metal": "금속으로 된 그릇",
   "course of treatment": "치료를 이어 가는 과정",
+  "crush underfoot": "발로 으깨다",
   "cut wood for building": "집 지으려 잘라 둔 나무",
   "cutting one's taxable sum": "과세 대상 액수를 줄이는",
+  "deal carried out": "이루어진 매매",
   "declare one's position": "제 입장을 밝히다",
+  "deeply sorrowful": "몹시 애달픈",
   "degree of heat": "더운 정도",
   "dense crowd": "빽빽한 무리",
   "directed at a set goal": "정해진 목표로 향한",
+  "do business": "사업을 하다",
   "do something about it": "그것에 대해 손을 쓰다",
   "doctrine of faith": "믿음의 가르침",
   "dogged": "악착같은",
@@ -789,11 +937,14 @@ Object.assign(window.GLOSS, {
   "easily frightened": "쉽게 놀라는",
   "easily handled": "다루기 쉬운",
   "end of the line": "선로의 끝",
+  "ending in disaster": "참사로 끝나는",
   "enticing thing": "구미를 당기는 것",
   "exactly as written": "적힌 대로 고스란히",
+  "exchange of money": "돈이 오가는 일",
   "excite greatly": "크게 들뜨게 하다",
   "fail to value": "값지게 보지 못하다",
   "faint shade": "희미한 빛깔",
+  "faint sign": "희미한 낌새",
   "fasten tightly": "빈틈없이 조여 매다",
   "fasten with rope": "밧줄로 묶다",
   "feel encouraged": "힘이 나다",
@@ -804,19 +955,26 @@ Object.assign(window.GLOSS, {
   "first and thickest finger": "첫째이고 가장 굵은 손가락",
   "first of all": "무엇보다 먼저",
   "flow of water": "물이 흐르는 것",
+  "follow at a distance": "거리를 두고 따라가다",
+  "follow the trail of": "~가 남긴 자취를 따라가다",
   "following that": "그에 이어",
   "for the most part": "대체로",
   "for the whole time": "그 시간 전부에 걸쳐",
   "forbidden thing": "해서는 안 되는 것",
+  "free of trouble": "어지러움이 없는",
   "from start to finish": "시작에서 끝까지",
   "from then on": "그때부터",
+  "full of poison": "독이 가득한",
   "gain courage": "용기를 얻다",
   "gentle with people": "사람에게 순한",
   "get married": "혼인을 맺다",
   "give evidence": "증거를 대다",
   "given to reflection": "곱씹어 보는",
+  "giving up one for another": "하나를 내주고 다른 것을 얻음",
   "glass tube for tests": "실험에 쓰는 유리관",
   "glass with a scale": "눈금이 있는 유리 기구",
+  "go past the limit of": "~의 한계를 넘어가다",
+  "going beyond limits": "한계를 넘어감",
   "good for the body": "몸에 좋은",
   "grain of a material": "재료의 결",
   "ground and its shape": "땅과 그 생김새",
@@ -824,18 +982,24 @@ Object.assign(window.GLOSS, {
   "guarding one's ground": "제 터를 지키는",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
+  "harmful substance in the body": "몸속의 해로운 물질",
+  "harmful to life": "생명에 해로운",
   "healing in effect": "낫게 하는 효과가 있는",
   "heat gauge": "더운 정도를 재는 기구",
   "heavy downpour": "쏟아지는 큰비",
   "holding on hard": "끈덕지게 붙드는",
+  "holiday point": "휴가로 찾는 곳",
   "house of worship": "예배를 드리는 집",
   "how hot or cold it is": "덥거나 찬 정도",
   "how it feels to touch": "만졌을 때의 느낌",
+  "hunt down step by step": "한 걸음씩 뒤를 쫓다",
   "in good part": "꽤 많은 부분에서",
   "in part": "일부는",
   "in reverse": "뒤에서 앞으로",
   "in terms of tactics": "전술로 보아",
   "inborn make-up": "타고난 됨됨이",
+  "inflict pain on": "고통을 주다",
+  "keep turning over": "계속 몸을 뒤집다",
   "keeping within limits": "선을 넘지 않는",
   "kingly power": "임금의 권세",
   "knot that fastens": "묶어 주는 매듭",
@@ -855,6 +1019,8 @@ Object.assign(window.GLOSS, {
   "made-up cloth goods": "천으로 만든 물품",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
+  "mark left behind": "남겨진 자국",
+  "mark of one's nature": "타고난 성질의 표시",
   "menacing word": "으르는 말",
   "metal can": "쇠로 만든 통",
   "mild in climate": "기후가 순한",
@@ -872,11 +1038,13 @@ Object.assign(window.GLOSS, {
   "note vouching for one": "사람을 보증해 주는 글",
   "occupier paying rent": "셋돈을 내고 사는 사람",
   "of a land's borders": "나라 경계에 관한",
+  "of a sad ending": "끝이 슬픈",
   "of applied science": "응용 학문에 속한",
   "of the highest grade": "등급이 가장 높은",
   "of the stage": "무대에 속한",
   "official who takes tax": "세금을 받는 관리",
   "one trained in a craft": "한 기예를 배운 사람",
+  "one who betrays": "배신하는 사람",
   "one who counts cash": "현금을 세는 사람",
   "one who gathers taxes": "세금을 걷는 사람",
   "one who rents": "빌려 쓰는 사람",
@@ -884,12 +1052,16 @@ Object.assign(window.GLOSS, {
   "open to change": "바뀔 여지가 있는",
   "pace of movement": "움직임의 빠르기",
   "paper for a degree": "학위를 위한 글",
+  "passing all bounds": "모든 한계를 지나침",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
+  "piece of business": "한 건의 사업",
   "place for prayer": "기도하는 자리",
+  "place travellers go": "여행자가 찾아가는 곳",
   "plan of attack": "밀어붙일 계획",
   "point of beginning": "처음 딛는 지점",
   "point one argues": "내세워 다투는 주장",
+  "poison from a living thing": "생물이 내는 독",
   "poke fun at": "~을 두고 농을 걸다",
   "pound with each beat": "박자마다 쿵쿵거리다",
   "press of people": "밀려드는 사람들",
@@ -902,14 +1074,17 @@ Object.assign(window.GLOSS, {
   "put forward for now": "우선 내놓은",
   "put in danger": "위험에 놓다",
   "put oneself in danger": "스스로를 위험에 두다",
+  "put to the rack": "모질게 괴롭히다",
   "put to use": "써서 쓸모를 내다",
   "putting up with difference": "다름을 참아 주는 일",
+  "quiet of mind": "마음의 조용함",
   "raise a protest at": "~에 항의를 내다",
   "rate of action": "일이 돌아가는 빠르기",
   "reading on a thermometer": "온도계가 가리키는 값",
   "real to the hand": "손으로 느껴지는",
   "really good": "참으로 좋은",
   "reasoned account": "따져서 세운 설명",
+  "rebel against one's own": "제 편에 맞서 일어서는 사람",
   "refuse to accept": "받아들이기를 거부하다",
   "refusing to let go": "놓기를 마다하는",
   "renter of a home": "집을 빌린 사람",
@@ -917,7 +1092,9 @@ Object.assign(window.GLOSS, {
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
   "right to rule as king": "임금으로 다스릴 권리",
+  "rise above": "위로 넘어서다",
   "rise and fall of the sea": "바다가 오르고 내림",
+  "roll about in bed": "잠자리에서 이리저리 구르다",
   "royal seat": "임금이 앉는 자리",
   "rushing stream": "세차게 흐르는 물줄기",
   "said in few words": "몇 마디로 말한",
@@ -935,17 +1112,24 @@ Object.assign(window.GLOSS, {
   "sign of harm to come": "해가 올 조짐",
   "skilled worker": "솜씨를 익힌 일꾼",
   "slant to one side": "한쪽으로 비스듬히 하다",
+  "sleep badly": "잠을 설치다",
   "social ban": "사회가 금하는 것",
   "soft white metal": "부드러운 흰 금속",
   "somewhat so": "다소 그러한",
   "speed of a piece": "곡이 흐르는 빠르기",
   "splendid to see": "보기에 훌륭한",
+  "spot for sightseeing": "구경하러 가는 자리",
+  "stamp down on": "발로 내리찧다",
+  "state of calm": "차분한 상태",
   "state of feeling": "감정의 상태",
+  "state of rising above": "위로 넘어선 상태",
   "state under oath": "선서하고 말하다",
   "step into the role of": "~의 자리를 이어받다",
   "stir with delight": "기쁨으로 흔들다",
   "study of religion": "종교를 다루는 학문",
   "sum owed to government": "정부에 내야 할 몫",
+  "surpass all bounds": "모든 한계를 넘어서다",
+  "swap of benefits": "이득을 서로 바꿈",
   "sworn account": "선서한 진술",
   "take the lead": "앞장서다",
   "taking what is not one's own": "남의 것을 가져감",
@@ -965,11 +1149,15 @@ Object.assign(window.GLOSS, {
   "to do with time": "시간에 관한",
   "to the last breath": "마지막 숨까지",
   "tool for measuring warmth": "따뜻함을 재는 도구",
+  "torment cruelly": "잔혹하게 괴롭히다",
   "toss out": "내던져 버리다",
   "touch of colour": "살짝 든 빛깔",
   "touch to make one laugh": "웃게 하려고 건드리다",
+  "tread heavily on": "무겁게 밟다",
   "turn of mind": "마음이 기우는 결",
+  "turncoat": "변절자",
   "urge one should resist": "물리쳐야 할 충동",
+  "venom": "독액",
   "very much indeed": "참으로 많이",
   "vomit": "구토하다",
   "warning of danger": "위험을 알리는 말",

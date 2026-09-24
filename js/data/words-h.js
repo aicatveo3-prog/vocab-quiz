@@ -668,7 +668,6 @@ Object.assign(window.GLOSS, {
   "touching":"감동적인",
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
-  "toxic":"유독한",
   "tradition":"전통",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
