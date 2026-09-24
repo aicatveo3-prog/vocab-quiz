@@ -262,58 +262,190 @@ window.VOCAB_R = [
      물이 빠지는 쪽 갈래를 남겼다. */
   { word:"recede", pron:"리시드", pos:"v", level:"C1", meanings:["물러나다","차츰 빠지다"],
     syn:["move back","draw away little by little","fall back"],
-    ex:[{ s:"The floodwater began to {{}}.", f:"recede", ko:"홍수 물이 물러나기 시작했다." }] }
+    ex:[{ s:"The floodwater began to {{}}.", f:"recede", ko:"홍수 물이 물러나기 시작했다." }] },
+
+  /* ── 챕터 3 ────────────────────────────────────── */
+  /* 승격이 열셋으로 많지만 열한 자리는 사전 표현을 글자까지 지켰다.
+     recession 은 ★ 원본이 '퇴거, 후퇴' 로 적어 둔 자리다 — 거의 안 쓰는 뜻이고
+     사전값과 참조 downturn(침체, 하락) 이 모두 경기 뜻이라 사전값으로 바로잡았다.
+     '되찾다' 네 낱말(reclaim·recover·regain·retrieve) 가운데 reclaim 을 이 챕터에서
+     '개간하다' 쪽으로 비켜 세웠다. */
+
+  /* 승격 ㉒ — 사전 글자 유지(invoice, I). */
+  { word:"receipt", pron:"리싯", pos:"n", level:"B1", meanings:["영수증"],
+    syn:["invoice","paper showing payment","slip for what one paid"],
+    ex:[{ s:"Keep the {{}} in a safe place.", f:"receipt", ko:"영수증을 안전한 곳에 보관하라." }] },
+
+  /* 승격 ㉓ — 사전 글자 유지(accept, A · be presented with, B). */
+  { word:"receive", pron:"리시브", pos:"v", level:"B1", meanings:["받다","수령하다"],
+    syn:["accept","take what is given","get into one's hands"],
+    ex:[{ s:"Did you {{}} my letter?", f:"receive", ko:"내 편지를 받았나요?" }] },
+
+  /* 승격 ㉔ — 사전의 쌍반점만 쉼표로 갈랐다(banquet, B · hospitality, H).
+     원본 '받아들임, 수신, 환영회' 세 갈래를 둘로 줄인 셈이다. */
+  { word:"reception", pron:"리셉션", pos:"n", level:"B2", meanings:["접수","환영회"],
+    syn:["banquet","welcoming party","front desk"],
+    ex:[{ s:"The wedding {{}} was held outdoors.", f:"reception", ko:"결혼 환영회는 밖에서 열렸다." }] },
+
+  /* 승격 ㉕ — 사전 단일값 유지(open-minded, O). */
+  { word:"receptive", pron:"리셉티브", pos:"adj", level:"C1", meanings:["받아들일 자세가 된"],
+    syn:["open-minded","ready to take in","willing to listen"],
+    ex:[{ s:"She was {{}} to new ideas.", f:"receptive", ko:"그녀는 새 생각을 받아들일 자세가 되어 있었다." }] },
+
+  /* 원본의 괄호 "휴식 (시간)" 을 걷었다. repose(편안한 쉼 · 챕터 8) 와 갈랐다. */
+  { word:"recess", pron:"리세스", pos:"n", level:"B2", meanings:["휴식 시간"],
+    syn:["break in the day","pause in work","time off between sessions"],
+    ex:[{ s:"The children ran out at {{}}.", f:"recess", ko:"아이들이 휴식 시간에 뛰어나갔다." }] },
+
+  /* 승격 ㉖ — ★ 원본은 '퇴거, 후퇴' 였다. 사전값과 참조 downturn 이 모두 경기
+     뜻이라 사전 표현을 글자까지 지켰다. */
+  { word:"recession", pron:"리세션", pos:"n", level:"B2", meanings:["경기 후퇴","불황"],
+    syn:["downturn","slump in trade","fall in business"],
+    ex:[{ s:"The country slid into {{}}.", f:"recession", ko:"그 나라는 불황에 빠져들었다." }] },
+
+  /* 승격 ㉗ — 사전 글자 유지(formula, F). 원본 '비법' 대신 사전의 '비결' 이다. */
+  { word:"recipe", pron:"레서피", pos:"n", level:"B1", meanings:["조리법","비결"],
+    syn:["formula","set of cooking steps","way to make it"],
+    ex:[{ s:"She followed her mother's {{}}.", f:"recipe", ko:"그녀는 어머니의 조리법을 따랐다." }] },
+
+  /* 승격 ㉘ — 사전 글자 유지(beneficiary, B · donor 반의어, D). 원본은 순서가
+     거꾸로였다. '수혜자' 는 beneficiary 와 글자가 같아 서로 오답에서 빠진다. */
+  { word:"recipient", pron:"리시피언트", pos:"n", level:"C1", meanings:["수령인","수혜자"],
+    syn:["beneficiary","one who receives","person given something"], ant:["donor"],
+    ex:[{ s:"The {{}} signed for the parcel.", f:"recipient", ko:"수령인이 소포에 서명했다." }] },
+
+  /* 원본은 '암송하다, 낭송하다, 열거하다' 세 갈래였다. '낭송하다' 는 '암송하다' 와
+     같은 자리라 버렸다. */
+  { word:"recite", pron:"리사이트", pos:"v", level:"C1", meanings:["암송하다","열거하다"],
+    syn:["say from memory","read aloud by heart","list one by one"],
+    ex:[{ s:"He can {{}} the whole poem.", f:"recite", ko:"그는 그 시 전체를 암송할 수 있다." }] },
+
+  /* 승격 ㉙ — 사전의 쌍반점만 쉼표로 갈랐다(calculate, C · estimate, E).
+     '계산하다' 는 calculate 의 첫 뜻과 같아 서로 오답에서 빠진다. */
+  { word:"reckon", pron:"레컨", pos:"v", level:"B2", meanings:["계산하다","생각하다"],
+    syn:["calculate","work out a number","take to be so"],
+    ex:[{ s:"I {{}} it will rain tonight.", f:"reckon", ko:"오늘 밤 비가 올 것으로 생각한다." }] },
+
+  /* 승격 ㉚ — 사전은 '되찾다; 개간하다' 였다. '되찾다' 는 recover·regain·retrieve
+     세 낱말이 이미 나눠 가진 자리라 둘째 갈래를 앞세웠다. 참조가 없어 자유롭다. */
+  { word:"reclaim", pron:"리클레임", pos:"v", level:"C1", meanings:["개간하다","반환을 요구하다"],
+    syn:["make land fit for use","ask to have back","win back for use"],
+    ex:[{ s:"They plan to {{}} the marsh.", f:"reclaim", ko:"그들은 그 습지를 개간할 계획이다." }] },
+
+  /* 승격 ㉛ — 사전 글자 유지(awareness, A · identification, I). '인식' 은
+     awareness·perception(P) 과 글자가 같아 서로 오답에서 빠진다. */
+  { word:"recognition", pron:"레커그니션", pos:"n", level:"B2", meanings:["인식","인정"],
+    syn:["awareness","act of knowing again","credit given"],
+    ex:[{ s:"The work won wide {{}}.", f:"recognition", ko:"그 작품은 널리 인정을 받았다." }] },
+
+  /* 승격 ㉜ — 사전의 쌍반점만 쉼표로 갈랐다(acknowledge·appreciate·identify 세 곳). */
+  { word:"recognize", pron:"레커그나이즈", pos:"v", level:"B1", meanings:["인식하다","인정하다"],
+    syn:["acknowledge","know again on sight","admit to be true"],
+    ex:[{ s:"I did not {{}} her at first.", f:"recognize", ko:"나는 처음에 그녀를 인식하지 못했다." }] },
+
+  /* 승격 ㉝ — 사전 글자 유지(advise, A). */
+  { word:"recommend", pron:"레커멘드", pos:"v", level:"B1", meanings:["추천하다"],
+    syn:["advise","speak well of","put forward as good"],
+    ex:[{ s:"Can you {{}} a good dentist?", f:"recommend", ko:"좋은 치과 의사를 추천해 주시겠어요?" }] },
+
+  { word:"reconcile", pron:"레컨사일", pos:"v", level:"C1", meanings:["조화시키다","화해시키다"],
+    syn:["bring into accord","settle a quarrel","make two things agree"],
+    ex:[{ s:"It is hard to {{}} the two accounts.", f:"reconcile", ko:"두 진술을 조화시키기는 어렵다." }] },
+
+  /* regenerate(재생하다 · 챕터 5) 에서 '재건하다' 를 빼고 이 자리에 두었다. */
+  { word:"reconstruct", pron:"리컨스트럭트", pos:"v", level:"B2", meanings:["재건하다","재구성하다"],
+    syn:["build again","put back together","piece together anew"],
+    ex:[{ s:"They will {{}} the old bridge.", f:"reconstruct", ko:"그들은 그 낡은 다리를 재건할 것이다." }] },
+
+  /* 승격 ㉞ — 사전의 쌍반점만 쉼표로 갈랐다(collect on, C). '되찾다' 는
+     retrieve·regain 과 글자가 같아 셋이 서로의 오답에서 빠진다. */
+  { word:"recover", pron:"리커버", pos:"v", level:"B1", meanings:["회복하다","되찾다"],
+    syn:["collect on","get well again","win back"],
+    ex:[{ s:"It took a month to {{}}.", f:"recover", ko:"회복하는 데 한 달이 걸렸다." }] },
+
+  { word:"recreational", pron:"레크리에이셔널", pos:"adj", level:"B2", meanings:["휴양의","오락의"],
+    syn:["for rest and play","done for fun","to do with leisure"],
+    ex:[{ s:"The town built a {{}} center.", f:"recreational", ko:"그 고을은 휴양의 시설을 지었다." }] },
+
+  /* 원본 '채용, 신규 모집; 보충' 세 갈래에서 '보충' 을 버렸다. */
+  { word:"recruitment", pron:"리크루트먼트", pos:"n", level:"B2", meanings:["채용","신규 모집"],
+    syn:["taking on new people","hiring drive","calling in new members"],
+    ex:[{ s:"The firm slowed its {{}}.", f:"recruitment", ko:"그 회사는 채용을 늦췄다." }] },
+
+  { word:"rectangular", pron:"렉탱귤러", pos:"adj", level:"B2", meanings:["직사각형의"],
+    syn:["shaped like a long box","four-sided with right angles","oblong"],
+    ex:[{ s:"The table is {{}}.", f:"rectangular", ko:"그 탁자는 직사각형이다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "act in answer": "답으로 움직이다",
+  "act of knowing again": "다시 알아봄",
+  "admit to be true": "참이라고 받아들이다",
   "air again": "다시 내보내다",
   "answer with action": "행동으로 답하다",
   "answering move": "되받아 내는 움직임",
   "as a preference": "더 좋아서",
   "as it happens": "일어나는 그대로",
+  "ask to have back": "돌려 달라고 하다",
   "at the root": "뿌리에서부터",
   "atomic pile": "원자로 더미",
   "balance between two": "둘 사이의 균형",
   "believer in racial superiority": "한 인종이 낫다고 믿는 이",
+  "break in the day": "하루 중의 쉼",
   "bring back to mind": "다시 머리에 떠올리다",
+  "bring into accord": "서로 맞게 하다",
   "bring to full growth": "다 자라게 하다",
   "bring up a child": "아이를 길러 내다",
+  "build again": "다시 세우다",
   "by chance": "우연히",
   "call in a faulty product": "흠 있는 물건을 거둬들이다",
+  "calling in new members": "새 사람을 불러 모음",
   "cattle farm": "소를 기르는 농장",
   "come to know": "알게 되다",
+  "credit given": "인정해 주는 것",
   "defier of authority": "권위를 거스르는 이",
+  "done for fun": "즐기려고 하는",
   "draw away little by little": "조금씩 멀어지다",
   "easy bond": "편한 사이",
   "emitting rays": "빛살을 뿜는",
   "fair and sensible": "온당하고 슬기로운",
   "fall back": "뒤로 밀려나다",
+  "fall in business": "장사가 떨어짐",
   "far-reaching in change": "바꿈이 크게 미치는",
   "field of activity": "활동이 미치는 분야",
   "fighter against rule": "다스림에 맞서 싸우는 이",
   "find a meaning that is not there": "없는 뜻을 찾아내다",
   "fit of temper": "울컥 치미는 화",
+  "for rest and play": "쉬고 놀기 위한",
+  "four-sided with right angles": "네 변에 직각인",
+  "front desk": "맞이하는 창구",
   "full reach": "미치는 만큼 전부",
   "gather a crop": "곡식을 걷다",
   "gathering for a cause": "뜻을 위해 모임",
   "get as a return": "보답으로 얻다",
+  "get into one's hands": "손에 넣다",
+  "get well again": "다시 낫다",
   "give out heat": "열을 내보내다",
   "giving off radiation": "방사선을 내는",
   "going to the root": "뿌리까지 파고드는",
   "grazing estate": "풀 먹이는 넓은 땅",
   "guided by reason": "이치를 따르는",
   "hater of other races": "다른 인종을 미워하는 이",
+  "hiring drive": "사람 뽑기 운동",
   "how many to how many": "몇 대 몇",
   "in a sweeping way": "싹 쓸어내듯",
   "joy that carries one away": "넋을 빼앗는 기쁨",
   "keeping to what is possible": "될 만한 데 머무는",
   "kingdom": "임금이 다스리는 나라",
+  "know again on sight": "보고 다시 알아보다",
   "large stock farm": "큰 가축 농장",
+  "list one by one": "하나씩 늘어놓다",
   "live as it goes": "되는 대로 바로 내보내는",
   "made in advance": "미리 만들어 둔",
+  "make land fit for use": "땅을 쓸 수 있게 만들다",
   "make real": "실제가 되게 하다",
+  "make two things agree": "둘을 들어맞게 하다",
   "mark on a scale": "척도 위의 표시",
   "mass meeting": "사람이 많이 모인 자리",
   "measure per unit": "단위마다 재는 값",
@@ -324,47 +456,73 @@ Object.assign(window.GLOSS, {
   "of one's race": "제 인종의",
   "off the shelf": "선반에서 바로 꺼내 쓰는",
   "one who judges by race": "인종으로 사람을 가리는 이",
+  "one who receives": "받는 이",
   "one who rises up": "일어나 맞서는 이",
   "open defiance": "드러낸 거스름",
   "pace at which it happens": "일이 일어나는 속도",
+  "paper showing payment": "값을 치른 것을 보이는 종이",
+  "pause in work": "일을 멈춘 동안",
+  "person given something": "무엇을 받은 사람",
   "picked at will": "되는 대로 골라",
+  "piece together anew": "조각을 새로 이어 붙이다",
   "place in an order": "차례 속의 자리",
   "place on a list": "목록에서의 자리",
   "plant for atomic power": "원자력을 내는 설비",
   "position held": "맡고 있는 자리",
   "put at ease": "마음을 놓게 하다",
+  "put back together": "다시 맞춰 놓다",
+  "put forward as good": "좋다고 내놓다",
   "put one's own sense into": "제 생각을 밀어 넣다",
   "raise young": "새끼를 치다",
+  "read aloud by heart": "외워 소리 내어 읽다",
+  "ready to take in": "받아들일 준비가 된",
   "relation in number": "수로 본 관계",
   "response to something": "무엇에 대한 응답",
   "revolt of the people": "백성이 일으킨 난",
   "rise up against": "맞서 일어서다",
   "rising against rule": "다스림에 맞서 일어섬",
+  "say from memory": "외운 것을 말하다",
   "scold openly": "드러내어 꾸짖다",
   "score given": "매겨 준 점수",
   "see at last": "마침내 알아보다",
   "seldom found": "좀처럼 볼 수 없는",
   "send out in rays": "빛살로 내보내다",
   "send out once more": "한 번 더 내보내다",
+  "set of cooking steps": "음식 만드는 차례",
   "set one's mind at rest": "걱정을 내려놓게 하다",
+  "settle a quarrel": "다툼을 가라앉히다",
+  "shaped like a long box": "긴 상자 꼴인",
   "show a response": "반응을 보이다",
   "show a second time": "두 번째로 보여 주다",
   "showing things as they are": "있는 대로 보여 주는",
+  "slip for what one paid": "낸 값을 적은 쪽지",
+  "slump in trade": "거래가 주저앉음",
   "span from end to end": "끝에서 끝까지 걸침",
+  "speak well of": "좋게 말하다",
   "speed of change": "변하는 빠르기",
   "take in the harvest": "가을걷이를 들이다",
   "take more from it than it says": "말한 것보다 더 읽어 내다",
+  "take to be so": "그러하다고 여기다",
+  "take what is given": "주는 것을 받다",
+  "taking on new people": "새 사람을 들임",
   "tell off sharply": "호되게 이르다",
   "thin on the ground": "드물게 흩어져 있는",
   "thinking things through": "끝까지 따져 보는",
+  "time off between sessions": "수업 사이의 틈",
+  "to do with leisure": "여가에 얽힌",
   "to do with race": "인종에 얽힌",
   "to the very base": "바탕까지",
   "true to life": "실제와 꼭 같은",
   "vessel where reaction runs": "반응이 일어나는 통",
   "violent anger": "거센 노여움",
   "warm understanding": "따뜻한 이해",
+  "way to make it": "만드는 방법",
+  "welcoming party": "맞이하는 잔치",
   "what follows an act": "어떤 일 뒤에 따라오는 것",
+  "win back": "되찾아 오다",
+  "win back for use": "되찾아 쓰게 하다",
   "without a set order": "정해진 차례 없이",
-  "without delay in reporting": "알리는 데 늦음이 없는"
+  "without delay in reporting": "알리는 데 늦음이 없는",
+  "work out a number": "수를 셈해 내다"
 });
 

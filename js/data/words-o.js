@@ -1284,7 +1284,6 @@ Object.assign(window.GLOSS, {
   "put too high a value on": "~에 지나친 값을 두다",
   "quite the opposite": "오히려 거꾸로",
   "rate too highly": "너무 높이 매기다",
-  "receptive": "받아들일 자세가 된",
   "reject a ruling": "판단을 물리다",
   "rejected person": "내쳐진 사람",
   "release point": "내보내는 지점",
