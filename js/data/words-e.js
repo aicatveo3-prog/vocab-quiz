@@ -2071,7 +2071,6 @@ Object.assign(window.GLOSS, {
   "tolerant":"너그러운, 관대한",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
-  "wholehearted":"전심전력의, 진심을 다한",
 
   /* ── 2차: effortless ~ elevated (37개) ───────────────── */
   "advanced":"고급의, 진전된",
@@ -2421,7 +2420,6 @@ Object.assign(window.GLOSS, {
   "unfair use":"부당한 이용",
   "uncovering":"벗겨 냄, 드러냄",
   "use unfairly":"부당하게 이용하다",
-  "wide-ranging":"폭넓은",
   "wiped out":"완전히 없어진",
 
   /* ── 13차: extinction ~ eyesore (19개, 마지막) ───────────────── */

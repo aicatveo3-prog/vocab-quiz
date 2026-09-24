@@ -1594,8 +1594,6 @@ Object.assign(window.GLOSS, {
   "weather-related": "날씨와 관련된",
   "wedded": "혼인한",
   "well-built": "몸이 다져진",
-  "wetland": "습지대",
-  "whimper": "훌쩍이며 울다",
   "wide of the mark": "과녁에서 크게 벗어난",
   "wife's mother": "아내의 어머니",
   "with great care": "아주 조심스럽게",

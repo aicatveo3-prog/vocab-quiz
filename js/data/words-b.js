@@ -1042,7 +1042,6 @@ Object.assign(window.GLOSS, {
   "sweet":"단, 달콤한",
   "sweetness":"단맛, 감미로움",
   "unilateral":"일방적인, 한쪽만의",
-  "whisper":"속삭이다",
   "whiten":"희게 하다",
   "wither":"시들다",
   "within":"~안에, ~이내에",
