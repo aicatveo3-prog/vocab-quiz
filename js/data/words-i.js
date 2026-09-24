@@ -2093,8 +2093,6 @@ Object.assign(window.GLOSS, {
   "seal off": "차단하다",
   "second-rate": "이류의",
   "secondary": "이차적인",
-  "segregate": "따로 떼어 놓다",
-  "selective": "가려서 하는",
   "self-examination": "자기 점검",
   "selfhood": "자아, 개체성",
   "separately": "따로따로",

@@ -2049,7 +2049,6 @@ Object.assign(window.GLOSS, {
   "rude":"무례한",
   "rudeness":"무례함",
   "scattering":"흩어짐, 산재",
-  "seek":"찾다, 구하다",
   "separation":"분리, 분할",
   "shortage":"부족, 품귀",
   "similarity":"유사함, 닮은 점",

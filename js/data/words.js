@@ -1741,7 +1741,6 @@ window.GLOSS = {
   "rivalry":"경쟁, 라이벌 관계",
   "satisfied":"만족한",
   "scarcity":"희소, 드묾",
-  "segregation":"분리, 격리",
   "selfish":"이기적인",
   "sensible":"분별 있는",
   "separate":"분리하다",

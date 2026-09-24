@@ -365,23 +365,146 @@ window.VOCAB_S = [
      원본의 '분리하다' 는 segregate·separate 자리라 버렸다. */
   { word:"seclude", pron:"시클루드", pos:"v", level:"C2", meanings:["격리하다","고립시키다"],
     syn:["isolate","shut away","keep apart from others"],
-    ex:[{ s:"The monks {{}} themselves from the world.", f:"seclude", ko:"그 수도자들은 세상에서 스스로를 격리한다." }] }
+    ex:[{ s:"The monks {{}} themselves from the world.", f:"seclude", ko:"그 수도자들은 세상에서 스스로를 격리한다." }] },
+
+  /* ── 챕터 4 ────────────────────────────────────── */
+  /* '부분' 자리가 셋이나 몰린 챕터다. 이렇게 갈랐다.
+       section 부분, 구역     ← 사전값. 참조 compartment(C)·department(D)
+       sector  분야, 부문     ← 사전값. '구역' 은 section 에 넘겼다
+       segment 부분, 한 조각   ← 첫 갈래를 section 과 맞춰 자동 배제시켰다
+     segment 는 참조가 없어 원본의 뜻을 살릴 수 있었다. 첫 갈래 '부분' 이
+     section 과 글자가 같으므로 둘은 같은 문제에 나란히 뜨지 않는다.
+
+     ★ section 은 원본이 '절단; 단면; 구분' 으로 세 갈래였다. 참조 둘이 모두
+     '칸·부서' 쪽이라 사전값 '부분, 구역' 으로 바로잡았다.
+
+     secure 는 사전이 '확보하다; 안전한' 으로 동사와 형용사가 섞여 있었다.
+     참조 bind(B)·dangle(D) 이 둘 다 동사여서 동사 '확보하다' 만 남겼다 —
+     '안전한' 은 챕터 1 의 safe 가 맡는다. */
+
+  { word:"seclusion", pron:"시클루전", pos:"n", level:"C2", meanings:["호젓함","외딴 곳"],
+    syn:["privacy away from all","quiet spot far off","state of being shut away"],
+    ex:[{ s:"They live in complete {{}} on the hill.", f:"seclusion", ko:"그들은 언덕에서 완전히 호젓하게 산다." }] },
+
+  { word:"second-hand", pron:"세컨드 핸드", pos:"adj", level:"B2", meanings:["중고의"],
+    syn:["used","pre-owned","not new"], ant:["brand-new"],
+    ex:[{ s:"He bought a {{}} bicycle.", f:"second-hand", ko:"그는 중고 자전거를 샀다." }] },
+
+  /* 원본은 '비서; 서기; 장관' 세 갈래였다. 둘로 줄이고 '비서' 를 앞세웠다. */
+  { word:"secretary", pron:"세크러테리", pos:"n", level:"B1", meanings:["비서","장관"],
+    syn:["office assistant","one who keeps records","head of a department"],
+    ex:[{ s:"The {{}} booked the meeting room.", f:"secretary", ko:"그 비서가 회의실을 예약했다." }] },
+
+  /* 원본의 '숨김, 은닉' 은 버렸다 — secrecy 자리다. */
+  { word:"secretion", pron:"시크리션", pos:"n", level:"C1", meanings:["분비","분비물"],
+    syn:["fluid given off","discharge from a gland","oozing out"],
+    ex:[{ s:"The gland controls this {{}}.", f:"secretion", ko:"그 샘이 이 분비를 조절한다." }] },
+
+  /* 승격 ㉖ — ★ 원본 '절단; 단면; 구분' 을 사전값 '부분, 구역' 으로 바로잡았다.
+     사전 글자를 그대로 지켰으므로 참조 compartment(C)·department(D) 두 곳의
+     화면은 바뀌지 않는다. */
+  { word:"section", pron:"섹션", pos:"n", level:"B1", meanings:["부분","구역"],
+    syn:["compartment","department","part cut off"],
+    ex:[{ s:"Read the last {{}} of the report.", f:"section", ko:"보고서의 마지막 부분을 읽어라." }] },
+
+  /* 승격 ㉗ — 사전 글자 유지. 참조는 없다. '구역' 은 section 에 넘겼다. */
+  { word:"sector", pron:"섹터", pos:"n", level:"B2", meanings:["분야","부문"],
+    syn:["field of work","branch of industry","part of the economy"],
+    ex:[{ s:"The public {{}} added many jobs.", f:"sector", ko:"공공 분야가 많은 일자리를 늘렸다." }] },
+
+  /* 원본의 둘째 갈래는 뜻이 아니라 설명이라 버렸다. ant 는 챕터 1 의 sacred 다. */
+  { word:"secular", pron:"세큘러", pos:"adj", level:"C2", meanings:["세속적인"],
+    syn:["worldly","not religious","of this world"], ant:["sacred"],
+    ex:[{ s:"The school follows a {{}} calendar.", f:"secular", ko:"그 학교는 세속적인 일정을 따른다." }] },
+
+  /* 승격 ㉘ — 사전은 '확보하다; 안전한' 이었다. 참조 bind(B)·dangle(D) 이 둘 다
+     동사여서 동사 한 갈래로 좁혔다. 그 두 곳의 설명이 '확보하다; 안전한' 에서
+     '확보하다' 로 짧아진다. */
+  { word:"secure", pron:"시큐어", pos:"v", level:"B2", meanings:["확보하다"],
+    syn:["bind","get hold of","make sure of"],
+    ex:[{ s:"She managed to {{}} a seat at the front.", f:"secure", ko:"그녀는 앞자리를 확보해 냈다." }] },
+
+  { word:"seduce", pron:"시듀스", pos:"v", level:"C1", meanings:["부추기다","유혹하다"],
+    syn:["tempt","lure","win over by charm"],
+    ex:[{ s:"Cheap prices {{}} shoppers into buying more.", f:"seduce", ko:"싼 값이 손님들을 더 사도록 부추긴다." }] },
+
+  /* 승격 ㉙ — 사전 글자를 그대로 지켰다. 참조가 다섯 곳(apply for·aspire·
+     come across·compete for·go after) 인데 하나도 바뀌지 않는다. */
+  { word:"seek", pron:"시크", pos:"v", level:"B1", meanings:["찾다","추구하다"],
+    syn:["look for","go after","try to get"],
+    ex:[{ s:"Many young people {{}} work in the city.", f:"seek", ko:"많은 젊은이가 도시에서 일자리를 찾는다." }] },
+
+  { word:"seemingly", pron:"시밍리", pos:"adv", level:"B2", meanings:["겉보기에는"],
+    syn:["apparently","on the face of it","to all appearances"],
+    ex:[{ s:"The task was {{}} simple.", f:"seemingly", ko:"그 일은 겉보기에는 단순했다." }] },
+
+  /* 승격 ㉚ — 사전은 '구분, 부분' 이었다. 참조가 없어 원본대로 '부분, 한 조각'
+     으로 두었다. 첫 갈래 '부분' 이 section 과 글자가 같아 자동 배제된다. */
+  { word:"segment", pron:"세그먼트", pos:"n", level:"B2", meanings:["부분","한 조각"],
+    syn:["part cut from a whole","slice","one division"],
+    ex:[{ s:"Cut the orange into each {{}}.", f:"segment", ko:"오렌지를 한 조각씩 자르라." }] },
+
+  /* 승격 ㉛ — 사전 단일값 유지. 참조 isolate(I) 의 화면은 바뀌지 않는다. */
+  { word:"segregate", pron:"세그러게이트", pos:"v", level:"C1", meanings:["따로 떼어 놓다"],
+    syn:["isolate","set apart by group","keep races or sexes apart"],
+    ex:[{ s:"The old law used to {{}} students by sex.", f:"segregate", ko:"그 낡은 법은 학생을 성별로 따로 떼어 놓았다." }] },
+
+  /* 승격 ㉜ — 사전 글자 유지. 참조 assimilation(A) 의 화면은 바뀌지 않는다. */
+  { word:"segregation", pron:"세그리게이션", pos:"n", level:"C1", meanings:["분리","격리"],
+    syn:["keeping groups apart","forced separation","division by race"], ant:["assimilation"],
+    ex:[{ s:"The city ended school {{}} in the sixties.", f:"segregation", ko:"그 도시는 육십 년대에 학교 분리를 끝냈다." }] },
+
+  /* 승격 ㉝ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 다섯 곳(apprehend·capture·
+     commandeer·confiscate·grab) 의 설명이 '붙잡다; 압수하다' 에서
+     '붙잡다, 압수하다' 가 된다. */
+  { word:"seize", pron:"시즈", pos:"v", level:"B2", meanings:["붙잡다","압수하다"],
+    syn:["grab","capture","take by force"],
+    ex:[{ s:"Police will {{}} the goods at the border.", f:"seize", ko:"경찰이 국경에서 그 물품을 압수할 것이다." }] },
+
+  { word:"seldom", pron:"셀덤", pos:"adv", level:"B1", meanings:["거의 ~ 않는"],
+    syn:["rarely","hardly ever","not often"],
+    ex:[{ s:"He {{}} speaks in meetings.", f:"seldom", ko:"그는 회의에서 거의 말하지 않는다." }] },
+
+  /* 승격 ㉞ — 사전 글자 유지. 참조 adoption(A) 의 화면은 바뀌지 않는다. */
+  { word:"selection", pron:"실렉션", pos:"n", level:"B1", meanings:["선발","선택"],
+    syn:["adoption","act of picking out","choice made"],
+    ex:[{ s:"The team announced its final {{}}.", f:"selection", ko:"그 팀은 최종 선발을 발표했다." }] },
+
+  /* 승격 ㉟ — 사전 단일값 유지. 참조 indiscriminate(I) 의 화면은 바뀌지 않는다. */
+  { word:"selective", pron:"설렉티브", pos:"adj", level:"B2", meanings:["가려서 하는"],
+    syn:["picky","choosing with care","not taking all"], ant:["indiscriminate"],
+    ex:[{ s:"The college is highly {{}}.", f:"selective", ko:"그 대학은 매우 가려서 뽑는다." }] },
+
+  { word:"self-appointed", pron:"셀프 어포인티드", pos:"adj", level:"C2", meanings:["자칭의"],
+    syn:["self-styled","named by oneself","claiming the role oneself"],
+    ex:[{ s:"He is the {{}} leader of the group.", f:"self-appointed", ko:"그는 그 모임의 자칭 지도자다." }] },
+
+  { word:"self-consciousness", pron:"셀프 칸셔스니스", pos:"n", level:"C1", meanings:["자의식"],
+    syn:["awareness of oneself","unease at being watched","shyness before others"],
+    ex:[{ s:"Her {{}} faded as she spoke.", f:"self-consciousness", ko:"말을 이어가며 그녀의 자의식이 옅어졌다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "academic": "학업의, 학구적인",
+  "act of picking out": "골라내는 일",
   "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
+  "apparently": "보아하니",
   "area covered": "미치는 구역",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
+  "awareness of oneself": "제 자신을 의식함",
   "barely enough": "겨우 될 만한",
   "block by sorting": "가려서 막다",
   "body circling a planet": "행성을 도는 천체",
+  "branch of industry": "산업의 한 가지",
   "bring up from water": "물에서 끌어올리다",
   "careful check": "꼼꼼한 확인",
   "causing fear": "두려움을 일으키는",
   "cheer": "기운을 북돋우다",
+  "choice made": "내린 고름",
+  "choosing with care": "조심해서 고르는",
+  "claiming the role oneself": "그 자리를 제 것이라 하는",
   "claw at": "손톱으로 할퀴다",
   "clean and free of germs": "균이 없이 깨끗한",
   "clean by rubbing": "비벼서 깨끗이 하다",
@@ -397,16 +520,21 @@ Object.assign(window.GLOSS, {
   "deliverance": "해방, 벗어남",
   "dig out and raise": "파서 들어 올리다",
   "disappointing": "실망스러운",
+  "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
+  "division by race": "인종에 따른 갈림",
   "drains and clean water": "배수와 깨끗한 물",
   "examine closely": "바짝 붙어 살펴보다",
   "experienced": "겪어 본 바가 많은",
   "fasten shut": "잠가서 닫다",
+  "field of work": "일의 갈래",
   "fill fully": "가득 채우다",
   "fill to the limit": "한도까지 채우다",
   "filled with fear": "두려움에 찬",
   "flavor with spice": "향신료로 맛을 내다",
+  "fluid given off": "내어놓은 액체",
   "fluid in the mouth": "입안의 액체",
+  "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
   "frightened": "놀라 떠는",
@@ -423,7 +551,9 @@ Object.assign(window.GLOSS, {
   "guide on avoiding danger": "위험을 피하는 안내",
   "handsaw": "손톱질 도구",
   "hard to come by": "구하기 어려운",
+  "hardly ever": "좀체 ~ 없는",
   "haven": "안식처",
+  "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
@@ -433,6 +563,8 @@ Object.assign(window.GLOSS, {
   "jot down roughly": "대충 적어 두다",
   "keep apart from others": "남들과 떨어뜨려 두다",
   "keep one's dignity": "품위를 지키다",
+  "keep races or sexes apart": "인종이나 성별을 떼어 두다",
+  "keeping groups apart": "무리를 떼어 두는 일",
   "leaf through": "책장을 넘겨 가며 보다",
   "lift with a scoop": "국자로 떠올리다",
   "long in practice": "오래 익혀 온",
@@ -443,20 +575,40 @@ Object.assign(window.GLOSS, {
   "madness": "광기",
   "make a mark by rubbing": "비벼서 자국을 내다",
   "make sorrowful": "애석하게 만들다",
+  "make sure of": "틀림없이 해 두다",
   "mark left by a wound": "상처가 남긴 자리",
   "mental health": "정신 건강",
   "money for tuition": "수업료에 쓰는 돈",
   "move fast in haste": "급히 빠르게 움직이다",
+  "named by oneself": "제가 제 이름을 붙인",
   "natural setting": "자연 그대로의 자리",
+  "not new": "새것이 아닌",
+  "not often": "자주 ~ 않는",
+  "not religious": "종교와 무관한",
+  "not taking all": "다 받지는 않는",
   "of sound mind": "정신이 온전한",
+  "of this world": "이 세상에 속한",
+  "office assistant": "사무를 돕는 사람",
   "official approval": "공식 승인",
+  "on the face of it": "겉으로 보면",
+  "one division": "하나의 갈림",
+  "one who keeps records": "기록을 맡는 사람",
+  "oozing out": "스며 나옴",
   "orbiting station": "궤도 위의 기지",
   "out of danger": "위험에서 벗어난",
+  "part cut from a whole": "전체에서 잘라 낸 몫",
+  "part cut off": "잘라 낸 몫",
+  "part of the economy": "경제의 한 몫",
   "pay tribute to": "~에게 찬사를 보내다",
+  "picky": "까다롭게 고르는",
   "pleasing": "즐거움을 주는",
   "point of no more": "더 못 받는 지점",
   "port city": "항만이 있는 도시",
+  "pre-owned": "앞서 주인이 있던",
+  "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
+  "quiet spot far off": "멀찍이 떨어진 조용한 곳",
+  "rarely": "좀처럼 ~ 않는",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
   "rich tang": "짙은 맛깔",
@@ -473,11 +625,15 @@ Object.assign(window.GLOSS, {
   "scour with a brush": "솔로 닦아 내다",
   "scrawl": "휘갈겨 적다",
   "secret plan": "몰래 세운 계획",
+  "self-styled": "스스로 내세운",
+  "set apart by group": "무리별로 떼어 놓다",
   "set apart for god": "신에게 바쳐진",
   "shut away": "가둬 두다",
   "shut with wax": "밀랍으로 막다",
+  "shyness before others": "남 앞에서의 수줍음",
   "sift out": "체로 골라내다",
   "size of a thing": "사물의 크기",
+  "slice": "얇게 썬 쪽",
   "sneering": "코웃음 치는",
   "soundness of mind": "정신의 온전함",
   "spacecraft in orbit": "궤도를 도는 비행체",
@@ -486,19 +642,26 @@ Object.assign(window.GLOSS, {
   "spooky": "으스스한",
   "standing out most": "가장 도드라지는",
   "state of being full": "가득 찬 상태",
+  "state of being shut away": "틀어박혀 있는 상태",
   "study award": "학업에 주는 상금",
+  "take by force": "힘으로 빼앗다",
   "taste one enjoys": "즐기는 맛",
   "thin in amount": "양이 얇은",
   "throw out as useless": "쓸모없다고 내버리다",
+  "to all appearances": "누가 봐도 그렇게",
   "to do with hygiene": "위생에 관한",
   "toothed blade": "이가 난 날",
   "town with a harbor": "항만을 둔 고을",
   "try to find": "찾아내려 애쓰다",
+  "try to get": "얻으려 애쓰다",
+  "unease at being watched": "보여지는 데서 오는 불편함",
+  "used": "남이 쓰던",
   "using ridicule": "조롱을 써서",
   "vie with others": "남들과 겨루다",
   "view of the land": "땅이 보이는 모습",
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
+  "win over by charm": "매력으로 끌어들이다",
   "witty attack in writing": "글로 재치 있게 찌름",
   "write in a hurry": "급하게 적다"
 });
