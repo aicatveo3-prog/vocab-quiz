@@ -2161,7 +2161,6 @@ Object.assign(window.GLOSS, {
   "undeniable": "부인할 수 없는",
   "under way": "진행 중에",
   "underwrite": "보험을 인수하다",
-  "undeveloped": "발달하지 않은",
   "uneconomical": "돈이 많이 드는",
   "uneducated": "교육받지 못한",
   "unfeasible": "실행 불가능한",

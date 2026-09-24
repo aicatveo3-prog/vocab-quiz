@@ -196,18 +196,189 @@ window.VOCAB_U = [
   /* 교재 두 갈래('당연히, 이해할 수 있게') 가 같은 말이어서 하나로 줄였다. */
   { word:"understandably", pron:"언더스탠더블리", pos:"adv", level:"B2", meanings:["당연히"],
     syn:["as anyone would","for good reason","no wonder"],
-    ex:[{ s:"She was {{}} upset.", f:"understandably", ko:"그녀는 당연히 속상해했다." }] }
+    ex:[{ s:"She was {{}} upset.", f:"understandably", ko:"그녀는 당연히 속상해했다." }] },
+
+  /* ══ 12차 · undertake ~ unique (20단어) ══════════════════════════════════
+     승격 9 · 신규 11
+
+     이 챕터는 사전값을 글자까지 지킨 덕에 거의 다 저절로 갈렸다. '착수함'·
+     '확실함'·'명백함'·'무관심함' 덩어리가 통째로 자동 배제된다.
+       undertake     ← commence·embark·launch·initiate 넷이 '착수하다' 를 쓴다
+       undervalue    ← belittle(과소평가하다, 얕보다) 와 글자가 같다
+       undoubted     ← definite(확실한, 명확한) 와 '확실한' 이 같다 · certain 은 레벨 차 2
+       undue         ← excessive(지나친, 과도한) 와 **두 갈래가 통째로 같다**
+       unearth       ← excavate(발굴하다, 출토하다) 와 '발굴하다' 가 같다
+       unequivocal   ← indubitable(의심의 여지가 없는, 명백한) 와 '명백한' 이 같다
+       uneven        ← bumpy(울퉁불퉁한) 와 글자가 같다
+       uninterested  ← indifferent(무관심한) 와 **글자가 통째로 같다**
+       uninterrupted ← continuous(계속되는, 끊이지 않는) 와 '계속되는' 이 같다
+       unique        ← distinctive(독특한, 특색 있는) 와 '독특한' 이 같다
+
+     손본 자리가 둘이다.
+
+       ★ unease  불안 → **불안, 불안정한 마음**
+         instability(불안정 · B2/n) 와 품사·레벨이 같다. '불안' 은 '불안정' 의
+         앞 두 글자인데, 자동 배제는 **양쪽이 세 글자 이상**일 때만 품기
+         검사를 하므로 두 글자짜리 '불안' 은 빠져나간다. 한국어에서 '정치 불안'
+         과 '정치적 불안정' 이 같은 말로 쓰이니, 한→영에서 '불안' 을 물으면
+         instability 도 맞는 답이 되어 버린다.
+         둘째 갈래 '불안정한 마음' 이 '불안정' 을 글자째 품게 해서 막았다.
+         첫 갈래 '불안' 은 그대로 두었으므로 anxiety(불안, 염려)·misgiving
+         (의심, 불안) 과 맞물리는 것도 살아 있다.
+         ★ 교재의 '불안, 우려' 는 쓸 수 없었다. anxiety 의 유의어 목록 안에
+         apprehension(불안, 우려) 이 함께 서 있어 설명 두 줄이 똑같아진다.
+         ★ 참조 넷(anxiety·concern·discomfort·nervousness) 의 화면이 한 줄씩
+         늘어난다.
+
+       ★ unintended 의 유의어에 accidental 을 넣었다
+         accidental(우연한, 고의가 아닌 · B2/adj) 의 둘째 갈래가 '의도하지
+         않은' 과 사실상 같은 말인데 글자가 달라 자동 배제가 안 된다. 유의어로
+         등록하면 앱이 둘을 서로의 오답으로 쓰지 않는다. accidental 자신의
+         화면은 바뀌지 않는다.
+
+     intentional(의도적인, 고의의) 과 unintended 는 뜻이 정반대여서 한 문제에
+     같이 뜰 수 있다. 앱이 반의어를 일부러 한 개 넣어 뜻의 경계를 묻는 설계다. */
+
+  /* commence·embark·launch·initiate 넷이 '착수하다' 를 써서 모두 맞물려 배제된다. */
+  { word:"undertake", pron:"언더테이크", pos:"v", level:"B2", meanings:["착수하다","책임을 떠맡다"],
+    syn:["embark","take on a task","set about doing"],
+    ex:[{ s:"They will {{}} the repairs next week.", f:"undertake", ko:"그들은 다음 주에 보수에 착수할 것이다." }] },
+
+  /* 승격 ⑦ — 사전 단일값 유지(참조 belittle). '경시하다' 는 downplay(경시하다,
+     축소하다) 자리다. overestimate(과대평가하다) 와는 뜻이 정반대여서 한 문제에
+     같이 뜰 수 있다 — 반의어를 일부러 넣는 설계다. */
+  { word:"undervalue", pron:"언더밸류", pos:"v", level:"C1", meanings:["과소평가하다"],
+    syn:["belittle","rate too low","think too little of"],
+    ex:[{ s:"Do not {{}} her work.", f:"undervalue", ko:"그녀의 일을 과소평가하지 마라." }] },
+
+  /* 승격 ⑧ — 사전 단일값 유지(참조 aquatic). 부사 갈래는 버렸다. */
+  { word:"underwater", pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
+    syn:["aquatic","below the surface","under the waves"],
+    ex:[{ s:"They filmed an {{}} cave.", f:"underwater", ko:"그들은 수중 동굴을 찍었다." }] },
+
+  /* 승격 ⑨ — 사전 단일값 유지(참조 immature). 교재의 '개발되지 않은' 은 버렸다. */
+  { word:"undeveloped", pron:"언디벨럽트", pos:"adj", level:"B2", meanings:["발달하지 않은"],
+    syn:["immature","not grown out","still at an early stage"],
+    ex:[{ s:"The wings are still {{}}.", f:"undeveloped", ko:"그 날개는 아직 발달하지 않았다." }] },
+
+  /* definite(확실한, 명확한 · B2/adj) 와 '확실한' 이 맞물려 배제된다. certain 은
+     레벨 차가 2다. indubitable(의심의 여지가 없는, 명백한 · C2) 과는 첫 뜻이
+     '확실한' 과 '의심의 여지가 없는' 이어서 화면에서 갈린다. */
+  { word:"undoubted", pron:"언다우티드", pos:"adj", level:"C1", meanings:["확실한","의심할 바 없는"],
+    syn:["beyond question","not open to doubt","plain for all to see"],
+    ex:[{ s:"She has {{}} skill.", f:"undoubted", ko:"그녀는 확실한 솜씨를 지녔다." }] },
+
+  /* excessive(지나친, 과도한 · B2/adj) 와 두 갈래가 통째로 같다 — 갈라 쓸 수가
+     없어 일부러 글자를 맞췄다. 그러면 자동으로 서로의 오답에서 빠진다. */
+  { word:"undue", pron:"언듀", pos:"adj", level:"C1", meanings:["지나친","과도한"],
+    syn:["excessive","more than is right","beyond what is called for"],
+    ex:[{ s:"They took {{}} risks.", f:"undue", ko:"그들은 지나친 위험을 감수했다." }] },
+
+  /* 승격 ⑩ — 사전 글자 유지. 참조 discover(D)·excavate(E) 두 곳의 화면은
+     바뀌지 않는다. excavate(발굴하다, 출토하다) 와 '발굴하다' 가 맞물려 배제된다. */
+  { word:"unearth", pron:"언어스", pos:"v", level:"C1", meanings:["발굴하다","찾아내다"],
+    syn:["excavate","dig out of the ground","bring up from hiding"],
+    ex:[{ s:"They hope to {{}} more coins.", f:"unearth", ko:"그들은 동전을 더 발굴하기를 바란다." }] },
+
+  /* 승격 ⑪ — ★ 사전값 '불안' 에 '불안정한 마음' 을 더했다. instability(불안정 ·
+     B2/n) 와 품사·레벨이 같은데, 자동 배제의 품기 검사는 양쪽이 세 글자 이상일
+     때만 돌아서 두 글자 '불안' 은 빠져나간다. 둘째 갈래가 '불안정' 을 글자째
+     품게 해 막았다. '불안' 은 그대로라 anxiety(불안, 염려)·misgiving(의심,
+     불안) 과 맞물리는 것도 살아 있다.
+     ★ 교재의 '불안, 우려' 는 쓸 수 없었다 — anxiety 의 유의어 목록 안에
+     apprehension(불안, 우려) 이 함께 서 있어 설명 두 줄이 똑같아진다.
+     ★ 참조 넷(anxiety·concern·discomfort·nervousness) 의 화면이 한 줄씩 늘어난다. */
+  { word:"unease", pron:"언이즈", pos:"n", level:"B2", meanings:["불안","불안정한 마음"],
+    syn:["anxiety","a troubled feeling","want of calm"],
+    ex:[{ s:"A sense of {{}} filled the room.", f:"unease", ko:"불안한 느낌이 그 방을 채웠다." }] },
+
+  { word:"unemployment", pron:"언임플로이먼트", pos:"n", level:"B1", meanings:["실업","실직"],
+    syn:["being out of work","lack of jobs","state of having no post"],
+    ex:[{ s:"{{}} fell again this year.", f:"unemployment", ko:"실업이 올해 또 줄었다." }] },
+
+  /* indubitable(의심의 여지가 없는, 명백한 · C2/adj) 와 '명백한' 이 맞물려
+     배제된다. apparent·obvious·plain 은 레벨 차가 2~3이다. 교재의 '분명한' 은
+     apparent(명백한, 분명한) 자리라 버렸다. */
+  { word:"unequivocal", pron:"언이퀴버컬", pos:"adj", level:"C2", meanings:["명백한","에두르지 않는"],
+    syn:["leaving no room for doubt","said straight out","without hedging"],
+    ex:[{ s:"His answer was {{}}.", f:"unequivocal", ko:"그의 대답은 명백했다." }] },
+
+  /* 승격 ⑫ — 사전 글자 유지. 참조 bumpy(B)·inconsistent(I) 두 곳의 화면은
+     바뀌지 않는다. bumpy(울퉁불퉁한) 와 글자가 맞물려 배제된다. 교재의
+     '불공평한' 은 버렸다. */
+  { word:"uneven", pron:"언이븐", pos:"adj", level:"B2", meanings:["울퉁불퉁한","고르지 않은"],
+    syn:["bumpy","inconsistent","not level"],
+    ex:[{ s:"The path was rough and {{}}.", f:"uneven", ko:"그 길은 거칠고 울퉁불퉁했다." }] },
+
+  /* 승격 ⑬ — 사전 글자 유지(참조 alien). */
+  { word:"unfamiliar", pron:"언퍼밀리어", pos:"adj", level:"B1", meanings:["낯선","익숙하지 않은"],
+    syn:["alien","new to one","not known before"],
+    ex:[{ s:"The street felt {{}} at night.", f:"unfamiliar", ko:"그 거리는 밤에 낯설게 느껴졌다." }] },
+
+  { word:"unforgettable", pron:"언퍼게터블", pos:"adj", level:"B1", meanings:["잊을 수 없는"],
+    syn:["staying in the mind for ever","impossible to put out of mind","never to be lost from memory"],
+    ex:[{ s:"It was an {{}} night.", f:"unforgettable", ko:"그것은 잊을 수 없는 밤이었다." }] },
+
+  { word:"unfortunately", pron:"언포처너틀리", pos:"adv", level:"B1", meanings:["불행히도"],
+    syn:["sad to say","as bad luck would have it","regrettably"],
+    ex:[{ s:"{{}}, the train was full.", f:"unfortunately", ko:"불행히도 그 기차는 만원이었다." }] },
+
+  /* 아래 uninterrupted(계속되는, 끊기지 않는) 와 갈랐다 — 이쪽은 '막는 것' 에,
+     그쪽은 '끊김' 에 무게를 두었다. */
+  { word:"unhindered", pron:"언힌더드", pos:"adj", level:"C1", meanings:["막는 것이 없는"],
+    syn:["with nothing in the way","free to go on","meeting no block"],
+    ex:[{ s:"The river ran {{}} to the sea.", f:"unhindered", ko:"그 강은 막는 것 없이 바다로 흘렀다." }] },
+
+  /* 승격 ⑭ — 사전 단일값 유지(참조 anonymous). 교재의 '정체불명의' 는 버렸다. */
+  { word:"unidentified", pron:"언아이덴티파이드", pos:"adj", level:"B2", meanings:["미확인의"],
+    syn:["anonymous","of unknown name","not yet named"],
+    ex:[{ s:"An {{}} ship lay offshore.", f:"unidentified", ko:"미확인 배 한 척이 앞바다에 있었다." }] },
+
+  /* ★ accidental(우연한, 고의가 아닌 · B2/adj) 을 유의어로 넣었다. 그쪽 둘째
+     갈래 '고의가 아닌' 이 이 낱말과 사실상 같은 말인데 글자가 달라 자동
+     배제가 안 되기 때문이다. accidental 자신의 화면은 바뀌지 않는다.
+     intentional(의도적인, 고의의) 과는 뜻이 정반대여서 한 문제에 같이 뜰 수
+     있다 — 반의어를 일부러 넣는 설계다. */
+  { word:"unintended", pron:"언인텐디드", pos:"adj", level:"B2", meanings:["의도하지 않은"],
+    syn:["accidental","not meant to happen","without any such aim"],
+    ex:[{ s:"The change had {{}} results.", f:"unintended", ko:"그 변화는 의도하지 않은 결과를 낳았다." }] },
+
+  /* ★ 교재의 '관계가 없는' 은 unrelated 의 뜻이어서 버렸다.
+     indifferent(무관심한 · B2/adj) 와 글자가 통째로 같아 자동 배제된다. */
+  { word:"uninterested", pron:"언인터리스티드", pos:"adj", level:"B2", meanings:["무관심한"],
+    syn:["indifferent","caring nothing for it","with no wish to know"],
+    ex:[{ s:"He seemed quite {{}}.", f:"uninterested", ko:"그는 꽤 무관심해 보였다." }] },
+
+  /* continuous(계속되는, 끊이지 않는 · B1/adj) 와 '계속되는' 이 맞물려 배제된다.
+     위 unhindered(막는 것이 없는) 와 갈랐다. */
+  { word:"uninterrupted", pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
+    syn:["continuous","going on without a stop","never broken into"],
+    ex:[{ s:"She had six hours of {{}} sleep.", f:"uninterrupted", ko:"그녀는 여섯 시간을 계속되는 잠으로 보냈다." }] },
+
+  /* 승격 ⑮ — 사전 글자 유지(참조 distinctive). */
+  { word:"unique", pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
+    syn:["distinctive","the only one of its kind","like no other"],
+    ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a troubled feeling": "뒤숭숭한 느낌",
   "agreed by all": "모두가 뜻을 모은",
   "as anyone would": "누구라도 그럴 만하게",
+  "as bad luck would have it": "운이 나빠서",
   "at the very end": "아주 마지막의",
   "beat on price": "값으로 이기다",
+  "being out of work": "일자리가 없는 상태",
+  "below the surface": "물 표면 아래의",
+  "beyond question": "따질 여지가 없는",
   "beyond the violet end": "보라 끝을 넘어선",
+  "beyond what is called for": "필요한 만큼을 넘어선",
+  "bring up from hiding": "숨은 데서 끌어내다",
+  "caring nothing for it": "도무지 마음을 두지 않는",
   "college learner": "대학에서 배우는 사람",
   "deepest of all": "가장 깊은 데 있는",
+  "dig out of the ground": "땅에서 캐내다",
   "draw a line under": "~ 아래에 선을 긋다",
   "drawing no one": "아무도 끌지 못하는",
   "earning below one's worth": "값어치보다 덜 버는",
@@ -215,39 +386,75 @@ Object.assign(window.GLOSS, {
   "final of all": "맨 끝에 오는",
   "fixed for good": "아주 굳어 버린",
   "for good reason": "그럴 까닭이 있어서",
+  "free to go on": "거침없이 나아가는",
   "going on and on": "줄곧 이어지는",
+  "going on without a stop": "멈춤 없이 이어지는",
   "going one's own way": "제 길을 가는",
+  "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
   "knocked out cold": "까무러쳐 쓰러진",
+  "lack of jobs": "일자리가 모자람",
   "leaving no doubt": "의문을 남기지 않는",
+  "leaving no room for doubt": "의심할 틈을 안 남기는",
+  "like no other": "견줄 데가 없는",
   "live through": "견디며 지나다",
   "lying beneath the surface": "겉 아래에 깔린",
   "mark beneath the words": "글자 밑에 표를 하다",
+  "meeting no block": "걸리는 데가 없는",
+  "more than is right": "옳은 정도를 넘는",
+  "never broken into": "도중에 끊기지 않는",
   "never coming to a stop": "멈추는 일이 없는",
+  "never to be lost from memory": "기억에서 사라지지 않는",
+  "new to one": "처음 겪는",
   "no wonder": "놀랄 일이 아니게",
   "not aware of anything": "아무것도 알아채지 못하는",
   "not doing as others do": "남들 하는 대로 하지 않는",
+  "not grown out": "다 자라지 못한",
+  "not known before": "전에 알던 바 없는",
+  "not level": "평평하지 못한",
   "not like one's usual self": "여느 때의 자기와 다른",
+  "not meant to happen": "그리 되려던 것이 아닌",
+  "not open to doubt": "의심이 끼어들 수 없는",
+  "not yet named": "아직 이름 붙지 않은",
   "of invisible short rays": "눈에 안 보이는 짧은 빛의",
   "of one mind throughout": "처음부터 끝까지 한마음인",
   "of the burning light": "살을 태우는 빛의",
+  "of unknown name": "이름이 알려지지 않은",
   "offer for less": "더 적은 돈에 내놓다",
   "one reading for a first degree": "첫 학위를 향해 배우는 이",
   "open to one reading only": "한 가지로만 읽히는",
   "out of keeping with one's ways": "제 방식에 어울리지 않는",
   "paid too little": "너무 적게 받는",
+  "plain for all to see": "누구나 알아볼 만한",
   "plain to look at": "보기에 수수한",
   "poorly rewarded": "보답이 초라한",
   "present in every place": "어느 자리에나 있는",
+  "rate too low": "값을 너무 낮게 매기다",
+  "regrettably": "애석하게도",
   "rule a line below": "밑으로 줄을 대다",
+  "sad to say": "안타깝게도",
+  "said straight out": "곧바로 내놓고 말한",
   "sell cheaper than": "~보다 싸게 팔다",
+  "set about doing": "~하기에 나서다",
+  "state of having no post": "자리를 잃은 형편",
+  "staying in the mind for ever": "마음에 오래 남는",
   "staying just as it is": "그대로 머무는",
+  "still at an early stage": "아직 이른 단계인",
   "student not yet graduated": "아직 졸업하지 않은 학생",
+  "take on a task": "일을 떠맡다",
   "that cannot be altered": "고칠 수 없는",
+  "the only one of its kind": "그 갈래에 하나뿐인",
+  "think too little of": "대수롭지 않게 여기다",
   "turning up all over": "곳곳에서 나타나는",
+  "under the waves": "물결 아래의",
   "unlike how one normally is": "보통의 모습과 딴판인",
+  "want of calm": "차분함이 모자람",
   "weaken from below": "아래에서부터 무르게 하다",
+  "with no wish to know": "알고 싶은 마음이 없는",
   "with not one against": "반대가 하나도 없는",
+  "with nothing in the way": "길을 막는 것 없이",
   "without a break": "쉬는 틈이 없는",
-  "without charm": "끌리는 데가 없는"
+  "without any such aim": "그런 속셈이 전혀 없는",
+  "without charm": "끌리는 데가 없는",
+  "without hedging": "둘러대지 않는"
 });
