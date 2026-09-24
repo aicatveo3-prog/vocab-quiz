@@ -1645,7 +1645,6 @@ Object.assign(window.GLOSS, {
   "squalid":"지저분한",
   "squalor":"불결한 상태",
   "statistic":"통계 수치",
-  "strand":"한 가닥",
   "stuffing":"속을 채운 것",
   "surcharge":"추가 요금",
   "symbolic":"상징하는",

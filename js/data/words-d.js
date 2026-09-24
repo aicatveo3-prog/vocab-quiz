@@ -139,7 +139,9 @@ window.VOCAB_D = [
     ex:[{ s:"The roar of the engines seemed to {{}} everyone on the platform.", f:"deafen", ko:"엔진의 굉음이 플랫폼에 있던 모두의 귀를 먹먹하게 하는 듯했다." }] },
 
   { word:"deal in", pron:"딜 인", pos:"phr", level:"B2", meanings:["거래하다","취급하다"],
-    syn:["trade in","handle","stock"] },
+    /* ★ syn 의 "stock" 을 "keep goods for sale" 로 바꿨다. stock 이 S 세트에서
+       명사 '재고, 주식' 으로 선다 — 동사 뜻을 늘어놓은 이 자리에 명사가 끼게 된다. */
+    syn:["trade in","handle","keep goods for sale"] },
 
   { word:"deal with", pron:"딜 위드", pos:"phr", level:"B1", meanings:["처리하다","다루다"],
     syn:["handle","address","tackle"], ant:["ignore"] },
@@ -1621,7 +1623,6 @@ Object.assign(window.GLOSS, {
   "set off":"출발하다, 떠나다",
   "sparse":"드문, 희박한",
   "stemming from":"~에서 유래하는",
-  "strenuous":"격렬한, 몸이 힘든",
   "taxing":"부담이 큰, 힘겨운",
   "tear down":"허물다, 뜯어내다",
   "terminal":"종착역, 터미널",
@@ -1671,7 +1672,6 @@ Object.assign(window.GLOSS, {
   "sense":"감지하다; 감각",
   "sensor":"감지기, 센서",
   "soap":"비누",
-  "stray":"벗어나다, 빗나가다",
   "terminus":"종착지, 끝",
   "thriving":"번성하는, 잘 자라는",
   "title":"명칭, 칭호",
@@ -1927,7 +1927,6 @@ Object.assign(window.GLOSS, {
   "sleepy":"졸린, 졸음이 오는",
   "snooze":"눈을 붙이다, 잠깐 자다",
   "speechless":"말을 잃은, 말이 안 나오는",
-  "stop by":"잠시 들르다",
   "strikingly":"놀랄 만큼, 두드러지게",
   "suspect":"의심스러운; 의심하다",
   "sweeping":"전면적인, 대폭적인",

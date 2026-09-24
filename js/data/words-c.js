@@ -2068,7 +2068,6 @@ Object.assign(window.GLOSS, {
   "stalemate":"교착 상태",
   "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
-  "straightforward":"단순명료한, 쉬운",
   "stretch":"뻗다, 늘이다",
   "subordinate":"부하, 하급자",
   "succumb":"굴복하다, 쓰러지다",

@@ -798,7 +798,10 @@ window.VOCAB_B = [
     ex:[{ s:"A narrow {{}} ran just behind the cottage.", f:"brook", ko:"좁은 개천이 그 작은 집 바로 뒤로 흘렀다." }] },
 
   { word:"broth", pron:"브로스", pos:"n", level:"B2", meanings:["수프","국물"],
-    syn:["stock","bouillon","consomme"],
+    /* ★ syn 의 "stock" 을 "meat water" 로 바꿨다. 사전이 stock 을 '재고;
+       저장하다' 로 적어 두어 이 자리(육수 뜻) 와 이미 어긋나 있었다. S 세트에서는
+       '재고, 주식' 으로 서므로 더 멀어진다. */
+    syn:["meat water","bouillon","consomme"],
     ex:[{ s:"She simmered the chicken {{}} for a full hour.", f:"broth", ko:"그녀는 닭 국물을 꼬박 한 시간 동안 뭉근히 끓였다." }] },
 
   /* ★ syn 의 "scan" 을 "leaf through" 로 바꿨다. S 세트에서 scan·skim 이 둘 다
