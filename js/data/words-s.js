@@ -837,7 +837,122 @@ window.VOCAB_S = [
 
   { word:"shoulder", pron:"숄더", pos:"v", level:"C1", meanings:["떠맡다"],
     syn:["take on a burden","bear the weight of","accept as one's own load"],
-    ex:[{ s:"She had to {{}} the blame alone.", f:"shoulder", ko:"그녀는 혼자 그 책임을 떠맡아야 했다." }] }
+    ex:[{ s:"She had to {{}} the blame alone.", f:"shoulder", ko:"그녀는 혼자 그 책임을 떠맡아야 했다." }] },
+
+  /* ── 챕터 8 ────────────────────────────────────── */
+  /* 승격 아홉 개가 모두 사전 글자를 그대로 쓴다 — 참조 열두 곳 가운데 화면이
+     바뀌는 곳이 하나도 없는 챕터다(simplify 만 사전 '간소화하다' 에서 원본
+     '단순화하다' 로 갔는데 참조가 없다).
+
+     같은 뿌리끼리 갈라 둔 자리가 셋이다.
+       shiver(챕터 7) ↔ shudder   첫 뜻 '몸을 떨다' 를 글자까지 맞췄다
+       sign up ↔ sign up for     앞은 '신청하다, 가입하다', 뒤는 '~을 신청해 넣다'
+       simultaneous(동시의) ↔ simultaneously(동시에)   품사로 갈린다
+     sign up 의 '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다.
+     shut off 의 원본 '멈추다, 서다' 는 stall 자리라 버렸다.
+     simulate 는 '비슷한 것을 만들다' 를 버리고 사전값을 지켰다 — 참조
+     feign(~인 체하다) 이 '꾸미다' 쪽이다. */
+
+  /* 원본의 명사 갈래('소나기') 는 버렸다. */
+  { word:"shower", pron:"샤워", pos:"v", level:"B2", meanings:["퍼붓다","쏟아 붓다"],
+    syn:["rain down on","pour in plenty","heap upon"],
+    ex:[{ s:"Fans began to {{}} her with gifts.", f:"shower", ko:"팬들이 그녀에게 선물을 퍼붓기 시작했다." }] },
+
+  /* 승격 66 — 사전 글자 유지. 참조 네 곳(diminish·dwindle·enlarge·grow) 의
+     화면은 바뀌지 않는다. */
+  { word:"shrink", pron:"슈링크", pos:"v", level:"B1", meanings:["줄어들다","수축하다"],
+    syn:["diminish","dwindle","get smaller"], ant:["enlarge","grow"],
+    ex:[{ s:"Wool will {{}} in hot water.", f:"shrink", ko:"양털은 뜨거운 물에서 줄어든다." }] },
+
+  /* 원본이 [v+n] 이었다. 동사로 세웠다. */
+  { word:"shrug", pron:"슈러그", pos:"v", level:"B2", meanings:["어깨를 으쓱하다"],
+    syn:["raise the shoulders","show one does not care","lift and drop the shoulders"],
+    ex:[{ s:"He could only {{}} at the question.", f:"shrug", ko:"그는 그 질문에 어깨를 으쓱할 수밖에 없었다." }] },
+
+  /* 챕터 7 의 shiver 와 첫 뜻을 글자까지 맞춰 서로 배제되게 두었다. */
+  { word:"shudder", pron:"셔더", pos:"v", level:"C1", meanings:["몸을 떨다","몸서리치다"],
+    syn:["shake with horror","tremble all over","quake in dread"],
+    ex:[{ s:"She began to {{}} at the thought.", f:"shudder", ko:"그녀는 그 생각에 몸서리치기 시작했다." }] },
+
+  /* 원본의 '멈추다, 서다' 는 stall 자리라 버렸다. 구·표현이라 예문은 두지 않는다. */
+  { word:"shut off", pron:"셧 오프", pos:"phr", level:"B2", meanings:["차단하다","끊다"],
+    syn:["cut the supply of","turn off at the source","block the flow of"] },
+
+  /* 승격 67 — 사전 단일값 유지. 참조 commute(C) 의 화면은 바뀌지 않는다.
+     원본의 명사 갈래('왕복 운행') 는 버렸다. */
+  { word:"shuttle", pron:"셔틀", pos:"v", level:"B2", meanings:["왕복하다"],
+    syn:["commute","go back and forth","run to and fro"],
+    ex:[{ s:"Buses {{}} between the two terminals.", f:"shuttle", ko:"버스가 두 터미널 사이를 왕복한다." }] },
+
+  { word:"sibling", pron:"시블링", pos:"n", level:"B2", meanings:["형제자매"],
+    syn:["brother or sister","child of the same parents","one's own kin"],
+    ex:[{ s:"She has one younger {{}}.", f:"sibling", ko:"그녀는 어린 형제자매가 한 명 있다." }] },
+
+  /* 승격 68 — 사전 단일값 유지. 참조 by-product(B) 의 화면은 바뀌지 않는다.
+     구·표현이라 예문은 두지 않는다. */
+  { word:"side effect", pron:"사이드 이펙트", pos:"phr", level:"B1", meanings:["부작용"],
+    syn:["by-product","unwanted result","effect not aimed at"] },
+
+  { word:"siege", pron:"시지", pos:"n", level:"C2", meanings:["포위 공격"],
+    syn:["surrounding of a town","blockade of a fort","long attack from outside"],
+    ex:[{ s:"The city survived a long {{}}.", f:"siege", ko:"그 도시는 긴 포위 공격을 견뎌 냈다." }] },
+
+  /* 승격 69 — 사전 글자 유지. 참조 enroll(E) 의 화면은 바뀌지 않는다.
+     '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다. */
+  { word:"sign up", pron:"사인 업", pos:"phr", level:"B1", meanings:["신청하다","가입하다"],
+    syn:["enroll","put one's name down","join by writing in"] },
+
+  /* 위 sign up 과 겹치지 않게 '~을' 을 받는 쪽으로 다듬었다. */
+  { word:"sign up for", pron:"사인 업 포", pos:"phr", level:"B1", meanings:["~을 신청해 넣다"],
+    syn:["put one's name down for","take out a place in","commit oneself to"] },
+
+  /* 원본의 외래어 '사인' 은 걷었다. */
+  { word:"signature", pron:"시그너처", pos:"n", level:"B2", meanings:["서명","특징"],
+    syn:["one's written name","mark of one's own","hand-written name"],
+    ex:[{ s:"Put your {{}} at the bottom.", f:"signature", ko:"아래쪽에 서명을 하세요." }] },
+
+  /* 승격 70 — 사전 글자 유지. 참조 considerable(C)·meaningless(M) 두 곳의
+     화면은 바뀌지 않는다. 챕터 1 의 salient 가 '중요한' 을 이 낱말에 넘겼다. */
+  { word:"significant", pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
+    syn:["considerable","weighty in effect","far from small"], ant:["meaningless"],
+    ex:[{ s:"The study found a {{}} change.", f:"significant", ko:"그 연구는 중요한 변화를 찾아냈다." }] },
+
+  /* 외래어 '실루엣' 은 걷었다. */
+  { word:"silhouette", pron:"실루엣", pos:"n", level:"C1", meanings:["검은 윤곽","그림자"],
+    syn:["dark outline","shape against the light","black profile"],
+    ex:[{ s:"We saw the {{}} of a tower.", f:"silhouette", ko:"우리는 탑의 검은 윤곽을 보았다." }] },
+
+  /* 승격 71 — 사전 글자 유지. 참조 affinity(A)·commonality(C)·contrast(C)
+     세 곳의 화면은 바뀌지 않는다. */
+  { word:"similarity", pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
+    syn:["affinity","commonality","likeness between two"], ant:["contrast"],
+    ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
+
+  /* 원본은 '단순함; 소박함; 평이함' 세 갈래였다. 둘로 줄였다. */
+  { word:"simplicity", pron:"심플리시티", pos:"n", level:"B2", meanings:["단순함","소박함"],
+    syn:["plainness","freedom from fuss","lack of frills"],
+    ex:[{ s:"The design wins for its {{}}.", f:"simplicity", ko:"그 설계는 단순함으로 좋은 평을 받는다." }] },
+
+  /* 승격 72 — 사전은 '간소화하다' 였다. 참조가 없어 원본대로 '단순화하다' 로
+     두었다 — 화면이 바뀌는 곳은 없다. */
+  { word:"simplify", pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
+    syn:["make plain","cut out the hard parts","reduce to basics"],
+    ex:[{ s:"We must {{}} the form.", f:"simplify", ko:"우리는 그 서식을 단순화해야 한다." }] },
+
+  /* 승격 73 — 사전 단일값 유지. 참조 feign(F) 의 화면은 바뀌지 않는다.
+     원본의 '비슷한 것을 만들다' 는 버렸다 — feign 이 '꾸미다' 쪽이다. */
+  { word:"simulate", pron:"시뮬레이트", pos:"v", level:"C1", meanings:["그런 양 꾸미다"],
+    syn:["feign","put on an act of","pretend to have"],
+    ex:[{ s:"He tried to {{}} surprise.", f:"simulate", ko:"그는 놀란 양 꾸미려 했다." }] },
+
+  { word:"simultaneous", pron:"사이멀테이니어스", pos:"adj", level:"C1", meanings:["동시의"],
+    syn:["happening together","side by side in time","going on at once"],
+    ex:[{ s:"The hall offers {{}} translation.", f:"simultaneous", ko:"그 회관은 동시 통역을 제공한다." }] },
+
+  /* 승격 74 — 사전 단일값 유지. 참조는 없다. 위 simultaneous 와 품사로 갈린다. */
+  { word:"simultaneously", pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
+    syn:["at one and the same time","together in time","in the same moment"],
+    ex:[{ s:"Both lamps went out {{}}.", f:"simultaneously", ko:"두 등이 동시에 꺼졌다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -853,6 +968,7 @@ Object.assign(window.GLOSS, {
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "army officer of low rank": "계급이 낮은 군 간부",
+  "at one and the same time": "같은 때에 한꺼번에",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
   "barely below the top": "표면 바로 아래인",
@@ -861,10 +977,14 @@ Object.assign(window.GLOSS, {
   "bed into place": "자리에 박아 앉히다",
   "begin a task": "일에 손을 대다",
   "begin and stay": "시작해 이어지다",
+  "black profile": "검게 보이는 옆모습",
   "block by sorting": "가려서 막다",
+  "block the flow of": "~의 흐름을 막다",
+  "blockade of a fort": "요새를 에워쌈",
   "body circling a planet": "행성을 도는 천체",
   "branch of industry": "산업의 한 가지",
   "bring up from water": "물에서 끌어올리다",
+  "brother or sister": "형제 또는 자매",
   "calm and untroubled": "잔잔하고 흔들림 없는",
   "careful check": "꼼꼼한 확인",
   "carried by nerves": "신경으로 전해지는",
@@ -874,6 +994,7 @@ Object.assign(window.GLOSS, {
   "causing fear": "두려움을 일으키는",
   "change of position": "자리의 바뀜",
   "cheer": "기운을 북돋우다",
+  "child of the same parents": "같은 부모의 자식",
   "choice made": "내린 고름",
   "choosing with care": "조심해서 고르는",
   "church talk": "교회에서 하는 말씀",
@@ -888,14 +1009,18 @@ Object.assign(window.GLOSS, {
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
   "come to rest": "자리를 잡고 멈추다",
+  "commit oneself to": "~에 나서기로 하다",
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "contemptuous": "업신여기는",
   "cool dark spot": "시원하고 어두운 자리",
   "court ruling": "법정이 내린 결정",
   "cover from danger": "위험을 막아 주는 곳",
+  "cut out the hard parts": "어려운 데를 덜어 내다",
+  "cut the supply of": "~의 공급을 끊다",
   "cutting tool with teeth": "이가 난 자르는 도구",
   "damage on purpose": "고의로 해를 입히다",
+  "dark outline": "어두운 테두리",
   "dazzling to see": "보기에 눈부신",
   "delay the progress of": "~의 진행을 늦추다",
   "delicacy of response": "반응의 고움",
@@ -911,11 +1036,13 @@ Object.assign(window.GLOSS, {
   "drop away": "떨어져 나가다",
   "easily affected": "쉽게 영향을 받는",
   "edge of the sea": "바다의 가장자리",
+  "effect not aimed at": "겨냥하지 않은 영향",
   "elderly person": "나이가 든 사람",
   "elected upper chamber member": "뽑힌 윗 의회 구성원",
   "examine closely": "바짝 붙어 살펴보다",
   "experienced": "겪어 본 바가 많은",
   "failing in something": "무언가에서 모자란 점",
+  "far from small": "작다고 할 수 없는",
   "farm hut": "농가의 헛간",
   "fasten shut": "잠가서 닫다",
   "feeling held": "품고 있는 느낌",
@@ -933,16 +1060,20 @@ Object.assign(window.GLOSS, {
   "free from harm": "해를 입지 않는",
   "free of self-interest": "제 이익이 없는",
   "free of stir": "들썩임이 없는",
+  "freedom from fuss": "번거로움이 없음",
   "frightened": "놀라 떠는",
   "frightening": "놀라게 하는",
   "fulfilling": "보람 있는",
   "full of salt": "소금기가 많은",
   "gather up in one go": "한 번에 그러모으다",
+  "get smaller": "작아지다",
   "get ~ under way": "~이 돌아가기 시작하게 하다",
   "give taste to": "~에 맛을 들이다",
   "giving contentment": "흐뭇함을 주는",
   "giving up of something": "무언가를 내놓음",
   "glut": "실컷 채우다",
+  "go back and forth": "오가다",
+  "going on at once": "한꺼번에 진행되는",
   "grant for study": "공부에 주는 지원금",
   "greet with respect": "예를 갖춰 맞이하다",
   "guard with a cover": "덮어서 지키다",
@@ -951,12 +1082,15 @@ Object.assign(window.GLOSS, {
   "half circle": "동그라미의 절반",
   "half of a round shape": "둥근 꼴의 절반",
   "half of a school year": "한 학년의 절반",
+  "hand-written name": "손으로 쓴 이름",
   "handsaw": "손톱질 도구",
+  "happening together": "함께 일어나는",
   "hard to come by": "구하기 어려운",
   "hardly ever": "좀체 ~ 없는",
   "haven": "안식처",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
+  "heap upon": "~에 수북이 얹다",
   "hired hand": "품을 받고 일하는 사람",
   "hold up": "붙들어 늦추다",
   "household helper": "집안일을 돕는 사람",
@@ -964,8 +1098,10 @@ Object.assign(window.GLOSS, {
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
+  "in the same moment": "같은 순간에",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
+  "join by writing in": "적어 넣어 들어가다",
   "jot down roughly": "대충 적어 두다",
   "keen-edged": "날이 선",
   "keep apart from others": "남들과 떨어뜨려 두다",
@@ -973,6 +1109,7 @@ Object.assign(window.GLOSS, {
   "keep out of the way": "걸리지 않게 두다",
   "keep races or sexes apart": "인종이나 성별을 떼어 두다",
   "keeping groups apart": "무리를 떼어 두는 일",
+  "lack of frills": "덧붙임이 없음",
   "lacking depth": "깊이가 없는",
   "lacking foresight": "앞을 못 보는",
   "land by the water": "물가의 땅",
@@ -981,7 +1118,9 @@ Object.assign(window.GLOSS, {
   "left adrift at sea": "바다에 떠돌게 된",
   "let fall": "떨어지게 하다",
   "let fly an arrow": "화살을 날리다",
+  "lift and drop the shoulders": "어깨를 올렸다 내리다",
   "lift with a scoop": "국자로 떠올리다",
+  "long attack from outside": "밖에서 오래 밀어붙이는 공격",
   "long in practice": "오래 익혀 온",
   "long telling-off": "길게 이어지는 꾸중",
   "look at in fine detail": "잘게 나눠 들여다보다",
@@ -992,9 +1131,11 @@ Object.assign(window.GLOSS, {
   "loss of a ship at sea": "바다에서 배를 잃음",
   "madness": "광기",
   "make a mark by rubbing": "비벼서 자국을 내다",
+  "make plain": "알기 쉽게 하다",
   "make sorrowful": "애석하게 만들다",
   "make sure of": "틀림없이 해 두다",
   "mark left by a wound": "상처가 남긴 자리",
+  "mark of one's own": "제 것임을 보이는 표",
   "member of the senate": "상원에 속한 사람",
   "mental health": "정신 건강",
   "money for tuition": "수업료에 쓰는 돈",
@@ -1027,6 +1168,8 @@ Object.assign(window.GLOSS, {
   "one of two school terms": "두 기간 중 하나",
   "one who keeps records": "기록을 맡는 사람",
   "one who waits on others": "남을 받드는 사람",
+  "one's own kin": "제 살붙이",
+  "one's written name": "제가 적은 이름",
   "oozing out": "스며 나옴",
   "openness to beauty": "아름다움에 열린 마음",
   "orbiting station": "궤도 위의 기지",
@@ -1041,28 +1184,37 @@ Object.assign(window.GLOSS, {
   "period of meeting": "모임이 이어지는 기간",
   "picky": "까다롭게 고르는",
   "place newly lived in": "새로 들어와 사는 곳",
+  "plainness": "꾸밈없음",
   "pleasing": "즐거움을 주는",
   "pleasing to the body": "몸에 즐거운",
   "point of no more": "더 못 받는 지점",
   "port city": "항만이 있는 도시",
   "portion due": "받을 몫",
+  "pour in plenty": "넉넉히 쏟다",
   "pour out": "쏟아 내다",
   "pre-owned": "앞서 주인이 있던",
+  "pretend to have": "가진 척하다",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "protect one's honor": "명예를 지키다",
   "protection of one's own body": "제 몸을 막아 냄",
   "pure and simple": "다름 아닌",
   "push behind schedule": "일정보다 뒤로 밀다",
   "put an end to a dispute": "다툼을 끝맺다",
+  "put on an act of": "~인 척 연기하다",
+  "put one's name down for": "~에 이름을 올려 두다",
   "put to one side": "옆으로 밀어 두다",
   "put ~ into action": "~을 실제로 돌리다",
   "putting others first": "남을 앞세우는",
+  "quake in dread": "두려움에 흔들리다",
   "quick to feel": "느낌이 빠른",
   "quick writing system": "빠르게 적는 방식",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
+  "rain down on": "~에 비처럼 내리다",
+  "raise the shoulders": "어깨를 올리다",
   "rarely": "좀처럼 ~ 않는",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
+  "reduce to basics": "기본만 남기다",
   "responsive to touch": "닿는 것에 반응하는",
   "rich tang": "짙은 맛깔",
   "roof over one's head": "머리를 덮어 줄 지붕",
@@ -1070,6 +1222,7 @@ Object.assign(window.GLOSS, {
   "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
   "run one's eye over": "눈으로 쭉 지나가다",
+  "run to and fro": "이리저리 다니다",
   "run-down": "허름해진",
   "running one's own trade": "제 장사를 꾸리는",
   "rush about": "부리나케 돌아다니다",
@@ -1092,11 +1245,15 @@ Object.assign(window.GLOSS, {
   "set order": "정해진 차례",
   "settle in for a while": "한동안 눌러앉다",
   "shake with cold": "추위로 떨다",
+  "shake with horror": "끔찍함에 떨다",
+  "shape against the light": "빛을 등진 꼴",
   "shelter from sun": "볕을 가려 주는 곳",
+  "show one does not care": "대수롭지 않다는 몸짓을 하다",
   "showing good judgment": "판단이 옳은",
   "shut away": "가둬 두다",
   "shut with wax": "밀랍으로 막다",
   "shyness before others": "남 앞에서의 수줍음",
+  "side by side in time": "때를 나란히 하는",
   "sift out": "체로 골라내다",
   "sinking of a vessel": "배가 가라앉음",
   "sitting of a body": "기구가 모여 앉는 때",
@@ -1123,11 +1280,13 @@ Object.assign(window.GLOSS, {
   "stranded after a sinking": "배가 가라앉아 발이 묶인",
   "string of words": "낱말을 이은 줄",
   "study award": "학업에 주는 상금",
+  "surrounding of a town": "고을을 둘러쌈",
   "surroundings of a scene": "장면을 둘러싼 것들",
   "take by force": "힘으로 빼앗다",
   "take hold": "뿌리를 내리다",
   "take in and hide": "받아들여 숨겨 주다",
   "take on a burden": "짐을 짊어지다",
+  "take out a place in": "~에 자리를 잡아 두다",
   "talk of the town": "장안의 이야깃거리",
   "taste one enjoys": "즐기는 맛",
   "tender mood": "다정한 마음결",
@@ -1140,15 +1299,19 @@ Object.assign(window.GLOSS, {
   "to all appearances": "누가 봐도 그렇게",
   "to do with feeling": "느낌에 관한",
   "to do with hygiene": "위생에 관한",
+  "together in time": "때를 맞춰 함께",
   "too little to go round": "돌아갈 만큼이 못 되는",
   "toothed blade": "이가 난 날",
   "town with a harbor": "항만을 둔 고을",
   "tremble": "부들부들 떨다",
+  "tremble all over": "온몸을 떨다",
   "try to find": "찾아내려 애쓰다",
   "try to get": "얻으려 애쓰다",
   "turn of duty": "맡는 차례",
+  "turn off at the source": "근원에서 잠그다",
   "unable to breathe easily": "숨쉬기가 어려운",
   "unease at being watched": "보여지는 데서 오는 불편함",
+  "unwanted result": "바라지 않은 결과",
   "upper-house lawmaker": "윗 의회의 입법자",
   "used": "남이 쓰던",
   "using ridicule": "조롱을 써서",
@@ -1159,6 +1322,7 @@ Object.assign(window.GLOSS, {
   "waste disposal system": "오물 처리 체계",
   "waste water": "버려지는 물",
   "weak point": "약한 데",
+  "weighty in effect": "영향이 무거운",
   "win over by charm": "매력으로 끌어들이다",
   "with a keen edge": "날이 선 채로",
   "without shame": "부끄러움 없이",

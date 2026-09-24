@@ -2234,7 +2234,6 @@ Object.assign(window.GLOSS, {
   "put in the care of":"~의 보살핌에 맡기다",
   "put on the throne":"왕좌에 앉히다",
   "put one's name down":"이름을 올리다",
-  "sign up":"신청하다, 가입하다",
   "sign-up":"가입, 신청",
   "surroundings":"주위 환경",
   "sustainable":"지속 가능한",

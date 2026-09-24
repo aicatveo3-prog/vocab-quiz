@@ -1597,7 +1597,6 @@ Object.assign(window.GLOSS, {
   "richness":"풍부함",
   "service charge":"서비스 요금",
   "sickly":"골골하는",
-  "simulate":"그런 양 꾸미다",
   "soft plumage":"부드러운 깃",
   "suffragist":"여성 참정권론자",
   "turn sour":"쉬다, 산패하다",

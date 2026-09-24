@@ -1713,7 +1713,6 @@ Object.assign(window.GLOSS, {
   "schematic":"개략도, 도해",
   "self-respect":"자존감",
   "selflessly":"이타적으로, 헌신적으로",
-  "shrink":"줄어들다, 수축하다",
   "stateliness":"위엄, 장엄함",
   "stately":"위엄 있는, 웅장한",
   "tell apart":"가려내다, 분간하다",
