@@ -1587,7 +1587,12 @@ window.VOCAB = [
 
   /* 원본의 "선례를 따르다"는 뜻이 틀려 바로잡았습니다 */
   { word:"avail oneself of", pron:"어베일 원셀프 오브", pos:"phr", level:"C2", meanings:["~을 이용하다","~을 활용하다"],
-    syn:["make use of","utilize","take advantage of"] },
+    /* ★ syn 의 "make use of" 를 "put to use" 로 바꿨다. 사전이 make use of 와
+       take advantage of 에 똑같이 '~을 이용하다' 를 적어 두어, 이 목록에 설명이
+       완전히 같은 선택지가 둘 있었다. take advantage of 가 T 세트에서 표제어가
+       되면서 그 글자가 확정되므로 이 자리를 갈았다.
+       make use of 는 employ(E) 에도 참조가 있어 발음만 남는 유령 키가 되지 않는다. */
+    syn:["put to use","utilize","take advantage of"] },
 
   { word:"available", pron:"어베일러블", pos:"adj", level:"B1", meanings:["이용 가능한","시간이 있는"],
     syn:["obtainable","accessible","free"], ant:["unavailable"],

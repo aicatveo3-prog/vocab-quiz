@@ -2450,7 +2450,6 @@ Object.assign(window.GLOSS, {
   "quench":"물로 끄다",
   "snuff out":"꺼 버리다",
   "sociable type":"어울리기 좋아하는 사람",
-  "take out":"꺼내다",
   "ugly sight":"보기 흉한 광경",
   "wiping out":"완전히 없앰"
 });

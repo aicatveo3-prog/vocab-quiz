@@ -2132,7 +2132,6 @@ Object.assign(window.GLOSS, {
   "surrounded by": "~에 둘러싸여",
   "symbolism": "상징, 상징주의",
   "tacit": "말 없는, 무언의",
-  "take over": "넘겨받다",
   "taking account of": "~을 감안하여",
   "tamper": "허락 없이 손대다",
   "teach": "가르치다",
