@@ -305,7 +305,117 @@ window.VOCAB_P = [
      세우고 graze 쪽 유의어를 'put out to graze' 로 바꿨다(words-g.js). */
   { word:"pasture", pron:"패스처", pos:"n", level:"B2", meanings:["목초","목장"],
     syn:["meadow","grazing land","grassy field"],
-    ex:[{ s:"The cows were moved to a fresh {{}}.", f:"pasture", ko:"소들은 새 목초지로 옮겨졌다." }] }
+    ex:[{ s:"The cows were moved to a fresh {{}}.", f:"pasture", ko:"소들은 새 목초지로 옮겨졌다." }] },
+
+  /* ── 챕터 3 ─────────────────────────────────────── */
+  /* 'pay-' 로 시작하는 셋(paycheck·payment·payoff) 이 붙는다. 원본에서
+     paycheck '월급, 급여' 와 payment '지급, 지불; 보답; 급여' 가 '급여' 로
+     물렸다 — paycheck 을 '월급, 봉급' 으로, payment 는 사전값 '지불, 납부' 로
+     갈랐다.                                                                */
+
+  { word:"pat", pron:"팻", pos:"v", level:"B1", meanings:["쓰다듬다"],
+    syn:["stroke gently","tap lightly","give a soft touch"],
+    ex:[{ s:"She stopped to {{}} the dog.", f:"pat", ko:"그녀는 멈춰서 개를 쓰다듬었다." }] },
+
+  { word:"patch", pron:"패치", pos:"n", level:"B1", meanings:["작은 부분","조각"],
+    syn:["small area","piece sewn on","spot of ground"],
+    ex:[{ s:"A {{}} of blue showed through the clouds.", f:"patch", ko:"구름 사이로 파란 부분이 드러났다." }] },
+
+  /* 승격 21 — 사전이 '특허; 명백한' 으로 명사와 형용사가 섞여 있었다.
+     copyright(C) 가 명사여서 명사로 세우고 원본의 '특허권' 을 붙였다. */
+  { word:"patent", pron:"패턴트", pos:"n", level:"B2", meanings:["특허","특허권"],
+    syn:["copyright","exclusive right to an invention","registered claim"],
+    ex:[{ s:"They filed a {{}} for the new battery.", f:"patent", ko:"그들은 새 전지에 대한 특허를 냈다." }] },
+
+  { word:"patent law", pron:"패턴트 로", pos:"phr", level:"C1", meanings:["특허법"],
+    syn:["law on inventions","rules for patents","invention statute"] },
+
+  { word:"paternity", pron:"퍼터너티", pos:"n", level:"C1", meanings:["부성","부계"],
+    syn:["fatherhood","being a father","the father's line"],
+    ex:[{ s:"The court ordered a {{}} test.", f:"paternity", ko:"법원은 부성 검사를 명령했다." }] },
+
+  { word:"pathetic", pron:"퍼쎄틱", pos:"adj", level:"B2", meanings:["애처로운","가엾은"],
+    syn:["pitiable","moving to pity","forlorn"],
+    ex:[{ s:"The kitten gave a {{}} cry.", f:"pathetic", ko:"그 새끼 고양이가 애처로운 울음을 냈다." }] },
+
+  /* 승격 22 — 사전이 '후원자; 고객' 이었다. 구분 기호만 쉼표로 바꿨다
+     (benefactor, B · client, C). 원본의 '홍보 대사' 갈래는 버렸다. */
+  { word:"patron", pron:"페이트런", pos:"n", level:"B2", meanings:["후원자","고객"],
+    syn:["benefactor","regular customer","one who gives support"],
+    ex:[{ s:"A wealthy {{}} paid for the whole library.", f:"patron", ko:"부유한 후원자가 도서관 전체 비용을 냈다." }] },
+
+  /* 승격 23 — 사전값은 명사 '잠깐 멈춤' 인데 원본은 동사 '중단하다' 다.
+     참조 intermission(I) 이 명사여서 사전값을 그대로 지켰다. 수능에서는 동사도
+     흔하지만 참조를 보존하는 쪽을 택했다. */
+  { word:"pause", pron:"포즈", pos:"n", level:"B2", meanings:["잠깐 멈춤"],
+    syn:["intermission","short break","brief halt"],
+    ex:[{ s:"After a long {{}} he answered.", f:"pause", ko:"긴 잠깐 멈춤 뒤에 그가 답했다." }] },
+
+  /* 원본은 '(도로를) 포장하다' 였다. 괄호를 걷고 '길을 깔다' 를 붙였다. */
+  { word:"pave", pron:"페이브", pos:"v", level:"B2", meanings:["포장하다","길을 깔다"],
+    syn:["surface a road","lay paving on","cover with stone"],
+    ex:[{ s:"The city will {{}} the alley next spring.", f:"pave", ko:"시는 다음 봄에 그 골목을 포장할 것이다." }] },
+
+  { word:"pavement", pron:"페이브먼트", pos:"n", level:"B2", meanings:["포장도로"],
+    syn:["paved surface","sidewalk","made-up road"],
+    ex:[{ s:"Rain pooled on the cracked {{}}.", f:"pavement", ko:"비가 갈라진 포장도로에 고였다." }] },
+
+  { word:"pay a visit", pron:"페이 어 비지트", pos:"phr", level:"B1", meanings:["방문하다"],
+    syn:["call on someone","drop in on","go to see"] },
+
+  /* paycheck 은 원본이 '월급, 급여' 였다. '급여' 가 같은 챕터 payment 와 물려서
+     '봉급' 으로 갈랐다. */
+  { word:"paycheck", pron:"페이첵", pos:"n", level:"B2", meanings:["월급","봉급"],
+    syn:["monthly pay","wage packet","salary payment"],
+    ex:[{ s:"His first {{}} arrived on Friday.", f:"paycheck", ko:"그의 첫 월급이 금요일에 들어왔다." }] },
+
+  /* 승격 24 — 사전 표현 '지불, 납부' 를 글자까지 지켰다(expense, E · fee, F).
+     원본의 '지급, 지불; 보답; 급여' 네 갈래 중 사전 쪽을 남겼다. */
+  { word:"payment", pron:"페이먼트", pos:"n", level:"B1", meanings:["지불","납부"],
+    syn:["settling of a bill","handing over of money","remittance"],
+    ex:[{ s:"We accept {{}} by card only.", f:"payment", ko:"우리는 카드 지불만 받는다." }] },
+
+  /* 승격 25 — 사전이 '뇌물; 성과' 였다. 구분 기호만 쉼표로 바꿨다(bribe, B).
+     원본의 '급료 지불(일); 청산, 보복' 은 괄호와 갈래가 많아 사전 쪽을 남겼다. */
+  { word:"payoff", pron:"페이오프", pos:"n", level:"C1", meanings:["뇌물","성과"],
+    syn:["bribe","hush money","final reward"],
+    ex:[{ s:"The scandal began with a small {{}}.", f:"payoff", ko:"그 추문은 작은 뇌물에서 시작됐다." }] },
+
+  /* 승격 26 — 사전이 '절정; 정상' 이었다. 구분 기호만 쉼표로 바꿨다(culminate, C). */
+  { word:"peak", pron:"피크", pos:"n", level:"B1", meanings:["절정","정상"],
+    syn:["highest point","summit","topmost level"], ant:["trough"],
+    ex:[{ s:"Sales reached their {{}} in December.", f:"peak", ko:"판매가 십이월에 절정에 이르렀다." }] },
+
+  /* 승격 27 — 사전 표현 '농민, 소작농' 을 글자까지 지켰다(commoner, C).
+     원본의 '소작농, 소농, 영세 농민' 세 갈래 중 사전 쪽을 남겼다. */
+  { word:"peasant", pron:"페전트", pos:"n", level:"B2", meanings:["농민","소작농"],
+    syn:["commoner","tenant farmer","country laborer"],
+    ex:[{ s:"The land was worked by a single {{}} family.", f:"peasant", ko:"그 땅은 한 농민 가족이 부쳐 먹었다." }] },
+
+  /* 승격 28 — 사전 표현 '독특한, 특이한' 을 글자까지 지켰다
+     (bizarre, B · eccentric, E). 원본의 '이상한' 을 쓰면 bizarre·odd(O) 의
+     첫 뜻과 같아진다. */
+  { word:"peculiar", pron:"퍼큘리어", pos:"adj", level:"B2", meanings:["독특한","특이한"],
+    syn:["bizarre","out of the common run","unlike any other"],
+    ex:[{ s:"The soup had a {{}} aftertaste.", f:"peculiar", ko:"그 국은 독특한 뒷맛이 있었다." }] },
+
+  /* 승격 29 — 사전은 '교육학' 한 갈래였다(발음이 없었다).
+     원본의 '교수법' 을 뒤에 붙였다. */
+  { word:"pedagogy", pron:"페더고지", pos:"n", level:"C2", meanings:["교육학","교수법"],
+    syn:["science of teaching","art of instruction","teaching method"],
+    ex:[{ s:"She studies {{}} at the graduate school.", f:"pedagogy", ko:"그녀는 대학원에서 교육학을 공부한다." }] },
+
+  /* 원본은 '행상하다, (물건을) 팔러 다니다; 퍼뜨리다' 세 갈래였다.
+     괄호를 걷고 앞 두 갈래만 남겼다. */
+  { word:"peddle", pron:"페들", pos:"v", level:"C1", meanings:["행상하다","팔러 다니다"],
+    syn:["hawk goods","sell door to door","tout wares"],
+    ex:[{ s:"He used to {{}} brushes in the village.", f:"peddle", ko:"그는 마을에서 빗자루를 행상했다." }] },
+
+  /* 원본은 '보행자; 도보의, 보행의' 로 명사와 형용사가 섞여 있었다.
+     참조가 없어 수능에서 흔한 명사로 세웠다. */
+  { word:"pedestrian", pron:"퍼데스트리언", pos:"n", level:"B2", meanings:["보행자"],
+    syn:["person on foot","walker","one going by foot"],
+    ex:[{ s:"A {{}} was struck at the crossing.", f:"pedestrian", ko:"한 보행자가 횡단보도에서 치였다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -313,23 +423,33 @@ Object.assign(window.GLOSS, {
   "above all others": "다른 무엇보다 위인",
   "academic article": "학술 글",
   "alike in form": "꼴이 비슷한",
+  "art of instruction": "가르치는 기술",
   "ashen": "핏기 없는",
   "be a party to": "~에 한편으로 끼다",
+  "being a father": "아버지라는 처지",
   "bequeath": "물려주다",
   "blind alarm": "앞뒤 없는 놀람",
   "block of text": "글의 한 덩이",
   "breathe hard": "숨을 거칠게 쉬다",
+  "brief halt": "잠깐의 멈춤",
   "bygone days": "지나간 날들",
+  "call on someone": "누군가를 찾아가다",
   "carry forward to others": "남들에게 이어 주다",
   "church leader": "교회의 지도자",
   "close likeness": "가까운 닮음",
   "coming from parents": "어버이에게서 나온",
   "congressional": "국회에 관한",
+  "country laborer": "시골 일꾼",
+  "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
   "done with great care": "아주 조심스레 한",
   "drained of color": "빛깔이 빠진",
+  "drop in on": "~에 들르다",
   "excerpt from a text": "글에서 따온 대목",
+  "exclusive right to an invention": "발명에 대한 독점 권리",
+  "fatherhood": "아버지 됨",
   "feeding on another": "남을 먹고 사는",
+  "final reward": "끝에 받는 보답",
   "fix with adhesive": "접착제로 고정하다",
   "flat of the hand": "손의 평평한 면",
   "former times": "옛 시절",
@@ -337,32 +457,44 @@ Object.assign(window.GLOSS, {
   "freeloader": "공짜로 얻어먹는 이",
   "full of feeling": "감정이 가득한",
   "get involved in": "~에 발을 담그다",
+  "give a soft touch": "부드럽게 손을 대다",
   "global outbreak": "지구 규모의 발생",
+  "go to see": "보러 가다",
   "going along with": "그대로 따라가는",
   "grassy field": "풀이 자란 들",
   "grazing land": "풀 뜯기는 땅",
   "group of sentences": "문장 묶음",
   "hand on to the next": "다음 사람에게 넘기다",
+  "handing over of money": "돈을 건넴",
   "have a part in": "~에 한몫 있다",
+  "hawk goods": "물건을 외치며 팔다",
   "heathen": "이교의",
+  "highest point": "가장 높은 지점",
   "hollow of the hand": "손의 오목한 곳",
   "house of lawmakers": "입법자들의 모임",
+  "hush money": "입막음 돈",
   "idol-worshipping": "우상을 섬기는",
   "incomplete": "온전하지 않은",
   "inner hand": "손의 안쪽",
+  "invention statute": "발명 관련 법령",
   "join in": "끼어 들다",
   "join in with others": "남들과 어울려 하다",
+  "law on inventions": "발명에 관한 법",
   "lawmaking": "법을 만드는",
+  "lay paving on": "~에 포장재를 깔다",
   "legislative body": "법을 만드는 기구",
   "living on a host": "숙주에 붙어 사는",
   "loyal to one party": "한 정당에만 충성하는",
+  "made-up road": "다져 만든 길",
   "make powerless": "힘을 못 쓰게 하다",
   "member of an activity": "활동의 구성원",
   "minister of a church": "교회를 맡은 이",
   "minute fragment": "몹시 작은 부스러기",
   "mocking imitation": "비웃으며 흉내 냄",
   "model case": "본보기가 되는 사례",
+  "monthly pay": "달마다 받는 돈",
   "motherly and fatherly": "어머니 아버지의",
+  "moving to pity": "안타깝게 만드는",
   "not acting": "나서지 않는",
   "of a mother or father": "어버이의",
   "of first importance": "첫째로 중요한",
@@ -370,45 +502,76 @@ Object.assign(window.GLOSS, {
   "official document": "공식 문서",
   "on the far side of": "~의 저쪽에",
   "one certain": "어느 하나의",
+  "one going by foot": "걸어서 가는 이",
   "one taking part": "한몫 맡은 이",
+  "one who gives support": "도움을 주는 이",
   "one who joins in": "끼어든 사람",
   "one-eyed in politics": "정치에서 한쪽만 보는",
   "organism living off another": "남에게 붙어 사는 생물",
+  "out of the common run": "흔하지 않은",
   "outside the church": "교회 밖의",
   "pallid": "해쓱한",
+  "paved surface": "포장된 바닥",
+  "person on foot": "걸어 다니는 사람",
+  "piece sewn on": "덧대어 박은 천",
+  "pitiable": "딱한",
   "play a part": "한 구실을 하다",
   "political group": "정치 집단",
   "puff for air": "숨을 몰아쉬다",
   "put out to graze": "풀 뜯게 내놓다",
+  "registered claim": "등록된 권리 주장",
+  "regular customer": "단골손님",
+  "remittance": "송금",
   "resemblance": "서로 닮음",
   "rob of movement": "움직임을 앗다",
   "ruddy": "혈색이 좋은",
+  "rules for patents": "특허를 다루는 규정",
+  "salary payment": "봉급 지급",
+  "science of teaching": "가르치는 것에 관한 학문",
   "section of writing": "글의 한 부분",
   "self-defeating statement": "스스로를 뒤집는 말",
+  "sell door to door": "집집이 팔러 다니다",
   "send-up": "놀리는 흉내",
+  "settling of a bill": "셈을 치름",
   "share in": "~을 나누어 갖다",
   "shepherd of a flock": "양 떼를 이끄는 이",
+  "short break": "짧은 쉼",
   "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
+  "sidewalk": "인도",
   "siding with a faction": "한 파에 붙는",
   "single fix for everything": "하나로 다 해결하는 것",
   "singled out": "따로 집어낸",
   "slapdash": "엉성한",
+  "small area": "좁은 구역",
   "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
   "spoof": "우스꽝스러운 흉내",
+  "spot of ground": "땅의 한 자리",
   "stick on": "달라붙게 하다",
+  "stroke gently": "살살 어루만지다",
   "sudden terror": "갑작스러운 무서움",
   "supreme": "더없이 높은",
+  "surface a road": "길에 바닥을 깔다",
   "sweeping disease": "휩쓸고 지나가는 병",
   "take part": "한몫 맡다",
+  "tap lightly": "가볍게 두드리다",
+  "teaching method": "가르치는 방식",
+  "tenant farmer": "남의 땅을 부치는 농부",
+  "the father's line": "아버지 쪽 핏줄",
   "throw oneself into": "~에 몸을 던지다",
   "times gone by": "흘러간 시절",
   "tiny bit": "아주 작은 조각",
+  "topmost level": "맨 위 수준",
+  "tout wares": "물건을 권하며 팔다",
+  "trough": "바닥, 골",
   "typical pattern": "전형적인 틀",
   "universal remedy": "두루 듣는 약",
+  "unlike any other": "다른 무엇과도 다른",
   "unresisting": "맞서지 않는",
+  "wage packet": "급료 봉투",
+  "walker": "걷는 이",
   "way through": "지나가는 길",
   "worldwide epidemic": "전 세계에 퍼진 유행병",
   "wrapped goods": "싸 놓은 물건",

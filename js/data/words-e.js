@@ -2392,7 +2392,6 @@ Object.assign(window.GLOSS, {
   "live on":"계속 살아 있다",
   "outgoings":"지출액",
   "outlay":"경비 지출",
-  "payment":"지불, 납부",
   "preach to":"설교하듯 말하다",
   "run out":"기한이 다하다",
   "send into exile":"망명 보내다",
