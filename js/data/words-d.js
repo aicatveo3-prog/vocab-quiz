@@ -1510,8 +1510,6 @@ Object.assign(window.GLOSS, {
   "swing":"흔들리다, 흔들다",
   "time limit":"제한 시간",
   "trade in":"~을 거래하다",
-  "trick":"속이다; 속임수",
-  "trickery":"속임수, 사기",
   "unravel":"풀다, 밝혀내다",
   "venture":"과감히 하다; 모험",
   "virtue":"미덕, 덕목",

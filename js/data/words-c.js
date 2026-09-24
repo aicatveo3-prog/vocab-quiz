@@ -2087,7 +2087,6 @@ Object.assign(window.GLOSS, {
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
   "succumb":"굴복하다, 쓰러지다",
-  "triumph":"승리, 대성공",
   "trivial":"사소한",
   "undisputed":"논란의 여지가 없는",
   "unlike":"~와 달리, 다른",

@@ -1796,7 +1796,6 @@ Object.assign(window.GLOSS, {
   "state of flow":"흘러 움직이는 상태",
   "stomach upset from food":"음식으로 생긴 배앓이",
   "temple area":"관자놀이 쪽",
-  "tread":"발걸음",
   "trophic chain":"영양 단계의 사슬",
 
   /* ── 8차: foresee ~ fountain (39개) ───────────────

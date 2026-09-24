@@ -1031,7 +1031,157 @@ window.VOCAB_T = [
      deceptive(기만적인 · C1) 자리라 쓰지 않았다. */
   { word:"treacherous", pron:"트레처러스", pos:"adj", level:"C1", meanings:["배신하는","믿을 수 없는"],
     syn:["insidious","ready to betray","not to be trusted"],
-    ex:[{ s:"His closest ally proved {{}}.", f:"treacherous", ko:"그의 가장 가까운 동맹은 믿을 수 없는 자로 드러났다." }] }
+    ex:[{ s:"His closest ally proved {{}}.", f:"treacherous", ko:"그의 가장 가까운 동맹은 믿을 수 없는 자로 드러났다." }] },
+
+  /* ══ 9차 · tread ~ trivia (20단어) ═══════════════════════════════════════
+     승격 12 · 신규 8
+
+     이 챕터는 사전 쪽이 이미 잘 갈라 둔 자리가 많아 손볼 곳이 하나뿐이었다.
+     앞 차수에서 알아낸 '첫 뜻만 선택지에 뜬다' 는 규칙으로 T9~U4 를 미리
+     훑었는데(first-scan.js) 이 챕터에서 걸린 것은 trendy 하나다.
+
+       ★ trendy  최신 유행의 → **유행을 따르는, 최신 유행의**
+         state-of-the-art(최신의 · C1/adj) 와 레벨 차가 1이어서 한 문제에
+         같이 뜬다. 그런데 '최신 유행의' 와 '최신의' 는 글자가 달라 자동
+         배제가 안 되고, 눈으로도 갈리지 않는다. 첫 자리를 '유행을 따르는'
+         으로 바꿔 갈랐다. 교재의 '최신 유행의' 는 둘째 갈래로 살려 두었다.
+
+     ★ tremble 은 사전값 '부들부들 떨다' 를 글자까지 지켰다. '떨다' 로 줄이면
+     shiver(S) 의 유의어 목록 안에서 quiver(떨다) 와 설명이 똑같아진다. 지금
+     글자로는 quiver 의 '떨다' 를 통째로 품어 오답 자리에서도 자동 배제된다.
+
+     ★ 동음이의 두 자리가 스스로 풀렸다. 한국어로 적으면 글자가 같아지는 덕에
+     meaningsOverlap 이 알아서 갈라 준다.
+       tribe(부족)     ↔ shortage(부족, 품귀 · B1/n) · clan(씨족, 부족 · C1/n)
+       trickery(속임수, 사기) ↔ morale(사기, 의욕 · C1/n) · fraud(사기꾼, 사기 · C1/n)
+
+     품사로 가른 자리가 둘이다.
+       trick(v 속이다)    ↔ trickery(n 속임수, 사기)   — 사전이 '속이다; 속임수' 였다
+       tread(n 발걸음)    — 교재 동사 갈래를 버렸다(참조 footstep 이 명사다)
+     trigger 도 사전 첫 갈래만 세우고 명사 '방아쇠' 를 버렸다.
+
+     ★ trigger 의 유의어에 provoke 를 넣었다. provoke(자극하다, 유발하다 ·
+     B2/v) 는 '촉발하다' 와 글자가 달라 자동 배제가 안 되는데 뜻은 거의
+     같다. 유의어로 등록하면 앱이 둘을 서로의 오답으로 쓰지 않는다.
+
+     treasure·tread 는 '아까운 자리' 다. 교재의 '보물' 과 '밟다' 를 버렸는데,
+     참조 cherish(동사)·footstep(명사) 가 각각 반대 품사를 가리키기 때문이다. */
+
+  /* 승격 68 — 사전 단일값 유지. 참조 footstep(F) 한 곳의 화면은 바뀌지 않는다.
+     교재의 동사 갈래('밟다') 는 버렸다 — 아까운 자리다. */
+  { word:"tread", pron:"트레드", pos:"n", level:"C1", meanings:["발걸음"],
+    syn:["footstep","sound of walking","step of the foot"],
+    ex:[{ s:"We heard the heavy {{}} of boots.", f:"tread", ko:"우리는 장화의 무거운 발걸음을 들었다." }] },
+
+  /* 승격 69 — ★ 사전 첫 갈래만 세웠다. 참조 cherish(C) 가 동사여서다. 교재의
+     '보물' 을 버린 아까운 자리다. cherish(소중히 하다, 아끼다) 와 글자가
+     맞물려 배제된다. */
+  { word:"treasure", pron:"트레저", pos:"v", level:"B1", meanings:["소중히 하다"],
+    syn:["cherish","hold dear","set great store by"],
+    ex:[{ s:"She will always {{}} that letter.", f:"treasure", ko:"그녀는 그 편지를 늘 소중히 할 것이다." }] },
+
+  /* paper(논문, 서류 · B1/n) 와 글자가 맞물려 배제된다. thesis(학위 논문 ·
+     B2/n) 와는 레벨 차가 2여서 애초에 같은 문제에 오지 않는다. */
+  { word:"treatise", pron:"트리티스", pos:"n", level:"C2", meanings:["논문"],
+    syn:["long written study","formal piece of writing","scholarly work"],
+    ex:[{ s:"He wrote a long {{}} on light.", f:"treatise", ko:"그는 빛에 관한 긴 논문을 썼다." }] },
+
+  { word:"treaty", pron:"트리티", pos:"n", level:"B2", meanings:["조약","협정"],
+    syn:["formal pact between states","signed agreement","accord between nations"],
+    ex:[{ s:"The two states signed a {{}}.", f:"treaty", ko:"두 나라가 조약에 서명했다." }] },
+
+  /* 승격 70 — ★ 사전 글자를 그대로 지켰다. '떨다' 로 줄이면 shiver(S) 의
+     유의어 목록 안에서 quiver(떨다) 와 설명이 똑같아진다. 지금 글자는
+     quiver 를 통째로 품어 오답 자리에서도 자동 배제된다. */
+  { word:"tremble", pron:"트렘블", pos:"v", level:"B1", meanings:["부들부들 떨다"],
+    syn:["shiver","shake all over","quake with fear"],
+    ex:[{ s:"Her hands began to {{}}.", f:"tremble", ko:"그녀의 손이 부들부들 떨리기 시작했다." }] },
+
+  /* enormous·massive·monumental 이 '거대한' 을, fabulous·marvelous·amazing·
+     awesome 이 '굉장한' 을 써서 일곱 곳이 모두 맞물려 배제된다. */
+  { word:"tremendous", pron:"트리멘더스", pos:"adj", level:"B2", meanings:["거대한","굉장한"],
+    syn:["enormous","of great size","strikingly great"],
+    ex:[{ s:"The bridge bears a {{}} weight.", f:"tremendous", ko:"그 다리는 거대한 무게를 견딘다." }] },
+
+  /* 승격 71 — 사전 글자 유지. 참조 craze(C)·fad(F) 두 곳의 화면은 바뀌지
+     않는다. 교재의 '경향' 은 inclination(경향, 성향) 자리라 버렸다. */
+  { word:"trend", pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
+    syn:["craze","fad","general direction of change"],
+    ex:[{ s:"There is a clear {{}} toward smaller homes.", f:"trend", ko:"더 작은 집을 향한 분명한 추세가 있다." }] },
+
+  /* ★ 첫 뜻을 '유행을 따르는' 으로 갈랐다. '최신 유행의' 를 앞에 두면
+     state-of-the-art(최신의 · C1/adj) 와 눈으로 갈리지 않는다 — 영→한
+     선택지에는 첫 뜻만 뜨기 때문이다. 교재 명사 갈래는 버렸다. */
+  { word:"trendy", pron:"트렌디", pos:"adj", level:"B2", meanings:["유행을 따르는","최신 유행의"],
+    syn:["in the latest style","following the fashion","up with the times"],
+    ex:[{ s:"The café is very {{}} this year.", f:"trendy", ko:"그 카페는 올해 매우 유행을 따른다." }] },
+
+  /* 승격 72 — 사전 단일값 유지(참조 intrude). */
+  { word:"trespass", pron:"트레스퍼스", pos:"v", level:"C1", meanings:["무단으로 들어가다"],
+    syn:["intrude","enter without leave","go in where one may not"],
+    ex:[{ s:"Do not {{}} on private land.", f:"trespass", ko:"사유지에 무단으로 들어가지 마라." }] },
+
+  /* 교재 세 갈래 → 둘. */
+  { word:"trial", pron:"트라이얼", pos:"n", level:"B1", meanings:["재판","시도"],
+    syn:["hearing in court","test run","trying something out"],
+    ex:[{ s:"The {{}} lasted three weeks.", f:"trial", ko:"그 재판은 삼 주간 이어졌다." }] },
+
+  { word:"trial and error", pron:"트라이얼 앤드 에러", pos:"phr", level:"B2", meanings:["시행착오"],
+    syn:["learning by mistakes","trying until it works","feeling one's way"] },
+
+  /* 승격 73 — 사전 단일값 유지(참조 clan). ★ 한국어로 적으면 shortage(부족,
+     품귀 · B1/n) 와 글자가 같아진다. 동음이의가 오히려 도움이 되어
+     meaningsOverlap 이 둘을 서로의 오답에서 자동으로 뺀다. */
+  { word:"tribe", pron:"트라이브", pos:"n", level:"B1", meanings:["부족"],
+    syn:["clan","people of one stock","group under one chief"],
+    ex:[{ s:"The {{}} moved with the rains.", f:"tribe", ko:"그 부족은 비를 따라 움직였다." }] },
+
+  /* 승격 74 — 사전 첫 갈래만 세웠다(참조 deceive). 명사 '속임수' 는 바로
+     아래 trickery 자리다. deceive(속이다, 기만하다) 와 글자가 맞물려 배제된다. */
+  { word:"trick", pron:"트릭", pos:"v", level:"B1", meanings:["속이다"],
+    syn:["deceive","take in by a ruse","play a trick on"],
+    ex:[{ s:"They tried to {{}} the old man.", f:"trick", ko:"그들은 그 노인을 속이려 했다." }] },
+
+  /* 승격 75 — 사전 글자 유지(참조 deceit). 위 trick(동사) 과 품사로 갈렸다.
+     ★ '사기' 가 morale(사기, 의욕 · C1/n)·fraud(사기꾼, 사기 · C1/n) 와
+     글자가 같아 셋이 서로의 오답에서 자동으로 빠진다. */
+  { word:"trickery", pron:"트리커리", pos:"n", level:"C1", meanings:["속임수","사기"],
+    syn:["deceit","use of tricks","sly dealing"],
+    ex:[{ s:"He won by sheer {{}}.", f:"trickery", ko:"그는 순전히 속임수로 이겼다." }] },
+
+  /* 승격 76 — 사전 단일값 유지(참조 negligible). '하찮은' 은 아래 trivia 와
+     다음 챕터 trivial 자리라 쓰지 않았다. */
+  { word:"trifling", pron:"트라이플링", pos:"adj", level:"C2", meanings:["대수롭지 않은"],
+    syn:["negligible","of no weight","hardly worth naming"],
+    ex:[{ s:"It was a {{}} sum.", f:"trifling", ko:"그것은 대수롭지 않은 금액이었다." }] },
+
+  /* 승격 77 — 사전 첫 갈래만 세웠다(참조 activate). 명사 '방아쇠' 는 버렸다.
+     ★ provoke(자극하다, 유발하다 · B2/v) 를 유의어로 넣었다 — '촉발하다' 와
+     글자가 달라 자동 배제가 안 되는데 뜻은 거의 같기 때문이다. */
+  { word:"trigger", pron:"트리거", pos:"v", level:"B2", meanings:["촉발하다"],
+    syn:["activate","provoke","set off at once"],
+    ex:[{ s:"Dust can {{}} an attack.", f:"trigger", ko:"먼지가 발작을 촉발할 수 있다." }] },
+
+  /* 승격 78 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 curtail(C)·cut back on(C)
+     두 곳의 화면은 바뀌지 않는다. curtail·lessen·reduce·mitigate 가 '줄이다'
+     를, polish·pat 이 '다듬다' 를 써서 여섯 곳이 맞물려 배제된다. */
+  { word:"trim", pron:"트림", pos:"v", level:"B2", meanings:["줄이다","다듬다"],
+    syn:["curtail","cut back on","cut neat at the edges"],
+    ex:[{ s:"The firm had to {{}} its costs.", f:"trim", ko:"그 회사는 비용을 줄여야 했다." }] },
+
+  { word:"triple", pron:"트리플", pos:"adj", level:"B2", meanings:["3중의","3배의"],
+    syn:["three times as much","in three layers","threefold"],
+    ex:[{ s:"They asked for a {{}} lock.", f:"triple", ko:"그들은 3중 잠금장치를 요구했다." }] },
+
+  /* 승격 79 — 사전 글자 유지(참조 catastrophe 가 반의어). */
+  { word:"triumph", pron:"트라이엄프", pos:"n", level:"B2", meanings:["승리","대성공"],
+    syn:["great win","crowning success","victory at last"], ant:["catastrophe"],
+    ex:[{ s:"The night ended in {{}}.", f:"triumph", ko:"그 밤은 승리로 끝났다." }] },
+
+  /* 위 trifling(대수롭지 않은) 과 다음 챕터 trivial(사소한) 과 갈랐다. */
+  { word:"trivia", pron:"트리비아", pos:"n", level:"C1", meanings:["하찮은 정보","일반 상식"],
+    syn:["odd bits of knowledge","small facts of little weight","general knowledge titbits"],
+    ex:[{ s:"His head is full of {{}}.", f:"trivia", ko:"그의 머리는 하찮은 정보로 가득하다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1041,6 +1191,7 @@ Object.assign(window.GLOSS, {
   "able to be touched": "손에 닿을 수 있는",
   "absence of noise": "소리가 없음",
   "accept the honour of": "~의 명예를 받아들이다",
+  "accord between nations": "나라 사이의 협약",
   "across many states": "여러 나라에 걸친",
   "act despite danger": "위험을 안고 움직이다",
   "act of stealing": "훔치는 짓",
@@ -1102,7 +1253,9 @@ Object.assign(window.GLOSS, {
   "container of metal": "금속으로 된 그릇",
   "copy out by hand": "손으로 베껴 쓰다",
   "course of treatment": "치료를 이어 가는 과정",
+  "crowning success": "더할 나위 없는 성공",
   "crush underfoot": "발로 으깨다",
+  "cut neat at the edges": "가를 반듯하게 자르다",
   "cut right across": "곧장 가로질러 가다",
   "cut wood for building": "집 지으려 잘라 둔 나무",
   "cutting one's taxable sum": "과세 대상 액수를 줄이는",
@@ -1126,6 +1279,7 @@ Object.assign(window.GLOSS, {
   "easily handled": "다루기 쉬운",
   "end of the line": "선로의 끝",
   "ending in disaster": "참사로 끝나는",
+  "enter without leave": "허락 없이 들어가다",
   "enticing thing": "구미를 당기는 것",
   "exactly as written": "적힌 대로 고스란히",
   "exchange of money": "돈이 오가는 일",
@@ -1138,6 +1292,7 @@ Object.assign(window.GLOSS, {
   "feed in slowly": "천천히 흘려 넣다",
   "feel encouraged": "힘이 나다",
   "feel of a surface": "표면이 주는 느낌",
+  "feeling one's way": "더듬어 가며 나아감",
   "fighting hard": "힘껏 싸우며",
   "fill with dread": "두려움으로 채우다",
   "finger set apart": "따로 벌어진 손가락",
@@ -1147,14 +1302,19 @@ Object.assign(window.GLOSS, {
   "follow at a distance": "거리를 두고 따라가다",
   "follow the trail of": "~가 남긴 자취를 따라가다",
   "following that": "그에 이어",
+  "following the fashion": "유행을 좇는",
   "for the most part": "대체로",
   "for the whole time": "그 시간 전부에 걸쳐",
   "forbidden thing": "해서는 안 되는 것",
+  "formal pact between states": "나라끼리 맺은 약속",
+  "formal piece of writing": "격식을 갖춘 글",
   "free of trouble": "어지러움이 없는",
   "from start to finish": "시작에서 끝까지",
   "from then on": "그때부터",
   "full of poison": "독이 가득한",
   "gain courage": "용기를 얻다",
+  "general direction of change": "바뀌어 가는 큰 방향",
+  "general knowledge titbits": "두루 아는 토막 지식",
   "gentle with people": "사람에게 순한",
   "get married": "혼인을 맺다",
   "give evidence": "증거를 대다",
@@ -1163,23 +1323,29 @@ Object.assign(window.GLOSS, {
   "glass tube for tests": "실험에 쓰는 유리관",
   "glass with a scale": "눈금이 있는 유리 기구",
   "go from side to side": "이쪽에서 저쪽으로 가다",
+  "go in where one may not": "들어가서는 안 될 곳에 들다",
   "go past the limit of": "~의 한계를 넘어가다",
   "going beyond limits": "한계를 넘어감",
   "good for the body": "몸에 좋은",
   "graft into place": "접붙여 자리잡게 하다",
   "grain of a material": "재료의 결",
+  "great win": "큰 이김",
   "ground and its shape": "땅과 그 생김새",
+  "group under one chief": "한 우두머리 아래의 무리",
   "growing strongly": "힘차게 자라는",
   "guarding one's ground": "제 터를 지키는",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
   "hard to get over": "좀처럼 헤어나기 어려운",
+  "hardly worth naming": "입에 올릴 것도 없는",
   "harmful substance in the body": "몸속의 해로운 물질",
   "harmful to life": "생명에 해로운",
   "haul from place to place": "여기서 저기로 끌어 나르다",
   "healing in effect": "낫게 하는 효과가 있는",
+  "hearing in court": "법정에서의 심리",
   "heat gauge": "더운 정도를 재는 기구",
   "heavy downpour": "쏟아지는 큰비",
+  "hold dear": "귀하게 여기다",
   "holding on hard": "끈덕지게 붙드는",
   "holiday point": "휴가로 찾는 곳",
   "house of worship": "예배를 드리는 집",
@@ -1190,6 +1356,8 @@ Object.assign(window.GLOSS, {
   "in part": "일부는",
   "in reverse": "뒤에서 앞으로",
   "in terms of tactics": "전술로 보아",
+  "in the latest style": "가장 새 모양새의",
+  "in three layers": "세 겹으로 된",
   "inborn make-up": "타고난 됨됨이",
   "inflict pain on": "고통을 주다",
   "keep turning over": "계속 몸을 뒤집다",
@@ -1203,6 +1371,7 @@ Object.assign(window.GLOSS, {
   "lasting a short while": "잠깐만 가는",
   "leaning one way": "한쪽으로 기우는 결",
   "learning about god": "신에 대한 배움",
+  "learning by mistakes": "틀려 가며 익힘",
   "leaving a deep wound in the mind": "마음에 깊은 상처를 남기는",
   "let pass": "그냥 지나가게 두다",
   "letter of praise": "칭찬을 적은 편지",
@@ -1238,9 +1407,12 @@ Object.assign(window.GLOSS, {
   "not yet tried out": "아직 해 보지 않은",
   "note vouching for one": "사람을 보증해 주는 글",
   "occupier paying rent": "셋돈을 내고 사는 사람",
+  "odd bits of knowledge": "자잘한 앎의 조각",
   "of a land's borders": "나라 경계에 관한",
   "of a sad ending": "끝이 슬픈",
   "of applied science": "응용 학문에 속한",
+  "of great size": "덩치가 아주 큰",
+  "of no weight": "무게가 없는",
   "of the highest grade": "등급이 가장 높은",
   "of the stage": "무대에 속한",
   "official school record": "학교가 낸 공식 기록",
@@ -1257,12 +1429,14 @@ Object.assign(window.GLOSS, {
   "passage from place to place": "한 곳에서 다른 곳으로 지나감",
   "passing all bounds": "모든 한계를 지나침",
   "passing over": "건너 넘어감",
+  "people of one stock": "한 핏줄의 사람들",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
   "piece of business": "한 건의 사업",
   "place for prayer": "기도하는 자리",
   "place travellers go": "여행자가 찾아가는 곳",
   "plan of attack": "밀어붙일 계획",
+  "play a trick on": "장난을 걸어 골리다",
   "point of beginning": "처음 딛는 지점",
   "point one argues": "내세워 다투는 주장",
   "poison from a living thing": "생물이 내는 독",
@@ -1285,6 +1459,7 @@ Object.assign(window.GLOSS, {
   "put to the rack": "모질게 괴롭히다",
   "put to use": "써서 쓸모를 내다",
   "putting up with difference": "다름을 참아 주는 일",
+  "quake with fear": "무서워 벌벌거리다",
   "quiet of mind": "마음의 조용함",
   "raise a protest at": "~에 항의를 내다",
   "rate of action": "일이 돌아가는 빠르기",
@@ -1312,14 +1487,18 @@ Object.assign(window.GLOSS, {
   "sawn wood": "톱으로 켠 나무",
   "scare badly": "몹시 겁주다",
   "scarring": "흉을 남기는",
+  "scholarly work": "학문으로 이룬 저술",
   "send out over a distance": "먼 곳까지 내보내다",
   "sending out": "밖으로 내보냄",
   "serving to cure": "낫게 하는 데 쓰이는",
+  "set great store by": "크게 값을 두다",
   "set in a new spot": "새 자리에 앉히다",
   "set of ideas to explain": "설명하려고 세운 생각의 묶음",
   "set of special words": "특별한 말들의 묶음",
+  "set off at once": "대번에 터뜨리다",
   "set period": "정해진 기간",
   "set the heart racing": "가슴을 뛰게 하다",
+  "shake all over": "온몸이 흔들리다",
   "shift across": "가로질러 넘기다",
   "short and to the point": "짧고 요점만 있는",
   "short broad digit": "짧고 넓은 손가락",
@@ -1327,9 +1506,12 @@ Object.assign(window.GLOSS, {
   "shut in with no way out": "나갈 길 없이 막아 두다",
   "shy of risk": "위험을 꺼리는",
   "sign of harm to come": "해가 올 조짐",
+  "signed agreement": "서명해 굳힌 합의",
   "skilled worker": "솜씨를 익힌 일꾼",
   "slant to one side": "한쪽으로 비스듬히 하다",
   "sleep badly": "잠을 설치다",
+  "sly dealing": "교활한 수작",
+  "small facts of little weight": "가벼운 잔 사실들",
   "social ban": "사회가 금하는 것",
   "soft white metal": "부드러운 흰 금속",
   "somewhat so": "다소 그러한",
@@ -1344,20 +1526,26 @@ Object.assign(window.GLOSS, {
   "state of rising above": "위로 넘어선 상태",
   "state under oath": "선서하고 말하다",
   "step into the role of": "~의 자리를 이어받다",
+  "step of the foot": "발을 딛는 걸음",
   "stir with delight": "기쁨으로 흔들다",
+  "strikingly great": "눈에 띄게 대단한",
   "study of religion": "종교를 다루는 학문",
   "sum owed to government": "정부에 내야 할 몫",
   "surpass all bounds": "모든 한계를 넘어서다",
   "swap of benefits": "이득을 서로 바꿈",
   "sworn account": "선서한 진술",
+  "take in by a ruse": "꾀를 써서 홀리다",
   "take the lead": "앞장서다",
   "taking what is not one's own": "남의 것을 가져감",
   "tax on imports": "들여오는 물건에 매기는 세금",
   "term in a post": "자리를 맡는 기간",
+  "test run": "미리 해 보는 시험",
   "the opposite way": "맞은 쪽으로",
   "thin vessel for samples": "시료를 담는 가는 그릇",
   "think it is owed": "받아야 할 것이라 여기다",
   "thread running through": "전체를 꿰는 실마리",
+  "three times as much": "세 배만큼의",
+  "threefold": "세 배의",
   "tightness in the air": "공기가 팽팽한 느낌",
   "to a great degree": "큰 정도로",
   "to a high degree": "높은 정도로",
@@ -1374,11 +1562,16 @@ Object.assign(window.GLOSS, {
   "touch to make one laugh": "웃게 하려고 건드리다",
   "travel over": "넘어서 지나가다",
   "tread heavily on": "무겁게 밟다",
+  "trying something out": "한번 해 보기",
+  "trying until it works": "될 때까지 해 보기",
   "turn of mind": "마음이 기우는 결",
   "turncoat": "변절자",
+  "up with the times": "시류에 뒤지지 않는",
   "urge one should resist": "물리쳐야 할 충동",
+  "use of tricks": "꾀를 부리는 짓",
   "venom": "독액",
   "very much indeed": "참으로 많이",
+  "victory at last": "끝내 얻은 이김",
   "vomit": "구토하다",
   "warning of danger": "위험을 알리는 말",
   "waste thrown away": "내버린 찌꺼기",

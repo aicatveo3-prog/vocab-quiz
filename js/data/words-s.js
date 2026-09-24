@@ -3638,7 +3638,6 @@ Object.assign(window.GLOSS, {
   "town on the edge of a city": "도시 가장자리의 고을",
   "town with a harbor": "항만을 둔 고을",
   "track without being seen": "보이지 않게 뒤를 밟다",
-  "tremble": "부들부들 떨다",
   "tremble all over": "온몸을 떨다",
   "trip and fall": "걸려 넘어지다",
   "try to find": "찾아내려 애쓰다",
