@@ -803,7 +803,6 @@ Object.assign(window.GLOSS, {
   "pine": "애타게 그리다",
   "plush": "푹신하고 고급스러운",
   "poem": "시",
-  "portable": "휴대하기 좋은",
   "predominantly": "주로, 대부분은",
   "probable": "있을 법한",
   "profuse": "넘칠 만큼 많은",

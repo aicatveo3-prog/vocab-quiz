@@ -1303,7 +1303,7 @@ window.VOCAB_C = [
     ex:[{ s:"Police uncovered a {{}} to fix ticket prices.", f:"conspiracy", ko:"경찰은 표 값을 조작하려는 음모를 밝혀냈다." }] },
 
   { word:"conspire", pron:"컨스파이어", pos:"v", level:"C1", meanings:["음모를 꾸미다","공모하다"],
-    syn:["plot","scheme","connive"],
+    syn:["hatch a scheme","scheme","connive"],
     ex:[{ s:"The pair began to {{}} against their own captain.", f:"conspire", ko:"그 둘은 자기 주장을 상대로 음모를 꾸미기 시작했다." }] },
 
   /* 첫 뜻을 '끊임없는'으로 두면 ceaseless(2차)와 카드 문구가 똑같아진다 */
@@ -1436,7 +1436,7 @@ window.VOCAB_C = [
     gov:{ prep:["to","towards"], pat:"contribute {{}} the relief fund", usage:"contribute to ~ : ~에 기여하다·기부하다" } },
 
   { word:"contrive", pron:"컨트라이브", pos:"v", level:"C2", meanings:["꾀하다","고안하다"],
-    syn:["devise","engineer","plot"],
+    syn:["devise","engineer","work out a ruse"],
     ex:[{ s:"They managed to {{}} an escape by night.", f:"contrive", ko:"그들은 밤에 탈출을 꾀하는 데 성공했다." }] },
 
   { word:"controversial", pron:"칸트러버셜", pos:"adj", level:"B2", meanings:["논쟁의 여지가 있는","말이 많은"],
@@ -2012,7 +2012,6 @@ Object.assign(window.GLOSS, {
   "optional":"선택적인",
   "orderly":"정돈된, 질서 있는",
   "original":"원본, 원래의",
-  "peripheral":"주변의, 부차적인",
   "permit":"허용하다",
   "personal":"개인적인",
   "private":"사적인, 민간의",

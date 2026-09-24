@@ -529,64 +529,714 @@ window.VOCAB_P = [
      뜻이 겹쳐서 명사 쪽이 쓸모가 크다. */
   { word:"periodical", pron:"피리아디컬", pos:"n", level:"C1", meanings:["정기간행물"],
     syn:["magazine issued regularly","journal","serial publication"],
-    ex:[{ s:"The library keeps every {{}} for ten years.", f:"periodical", ko:"그 도서관은 모든 정기간행물을 십 년간 보관한다." }] }
+    ex:[{ s:"The library keeps every {{}} for ten years.", f:"periodical", ko:"그 도서관은 모든 정기간행물을 십 년간 보관한다." }] },
+
+  /* ── 챕터 5 ─────────────────────────────────────── */
+  /* 'pers-' 어근이 여덟 개 붙는다(persecute·persist·persistence·personality·
+     personalize·personnel·perspective·perspiration·perspire·persuasive).
+     품사와 뜻이 서로 달라 같은 보드에서 헷갈리지 않는다.                      */
+
+  { word:"periodically", pron:"피리아디컬리", pos:"adv", level:"B2", meanings:["정기적으로","주기적으로"],
+    syn:["at regular intervals","from time to time in a cycle","every so often"],
+    ex:[{ s:"The alarm is tested {{}}.", f:"periodically", ko:"그 경보기는 정기적으로 점검된다." }] },
+
+  /* 승격 39 — 사전 표현 '주변의, 부차적인' 을 글자까지 지켰다
+     (central 반의어, C · marginal, M). 원본은 '주변적인, 지엽적인; 주변 장치' 로
+     형용사와 명사가 섞여 있었는데 참조 둘이 모두 형용사여서 형용사로 세웠다. */
+  { word:"peripheral", pron:"퍼리퍼럴", pos:"adj", level:"C1", meanings:["주변의","부차적인"],
+    syn:["marginal","on the outer edge","of lesser weight"], ant:["central"],
+    ex:[{ s:"That issue is {{}} to the main debate.", f:"peripheral", ko:"그 사안은 주된 논쟁에 부차적이다." }] },
+
+  { word:"perish", pron:"페리시", pos:"v", level:"C1", meanings:["죽다","소멸하다"],
+    syn:["die out","be destroyed","come to an end"], ant:["survive"],
+    ex:[{ s:"Many crops {{}} in a long drought.", f:"perish", ko:"많은 작물이 긴 가뭄에 죽는다." }] },
+
+  /* 승격 40 — 사전은 '영구적인' 한 갈래였다. 원본의 '영속적인' 을 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(irreversible, I · makeshift 반의어, M). */
+  { word:"permanent", pron:"퍼머넌트", pos:"adj", level:"B1", meanings:["영구적인","영속적인"],
+    syn:["irreversible","lasting for good","never wearing off"], ant:["temporary"],
+    ex:[{ s:"The injury left a {{}} scar.", f:"permanent", ko:"그 부상은 영구적인 흉터를 남겼다." }] },
+
+  /* 승격 41 — 사전은 '배어들다' 한 갈래였다. 원본의 '스며들다' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(infiltrate, I). */
+  { word:"permeate", pron:"퍼미에이트", pos:"v", level:"C1", meanings:["배어들다","스며들다"],
+    syn:["soak through","spread all through","seep into every part"],
+    ex:[{ s:"The smell of bread began to {{}} the house.", f:"permeate", ko:"빵 냄새가 집 안에 배어들기 시작했다." }] },
+
+  /* 승격 42 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
+     원본의 '영구화하다' 는 '영속시키다' 와 뜻이 같아 버렸다. */
+  { word:"perpetuate", pron:"퍼페추에이트", pos:"v", level:"C2", meanings:["영속시키다"],
+    syn:["keep going for ever","make last endlessly","carry on without end"],
+    ex:[{ s:"Such jokes only {{}} old prejudices.", f:"perpetuate", ko:"그런 농담은 낡은 편견을 영속시킬 뿐이다." }] },
+
+  /* 승격 43 — 사전 표현 '당혹한, 어리둥절한' 을 글자까지 지켰다(at a loss, A). */
+  { word:"perplexed", pron:"퍼플렉스트", pos:"adj", level:"C1", meanings:["당혹한","어리둥절한"],
+    syn:["at a loss","unable to make sense of it","thrown into confusion"],
+    ex:[{ s:"He looked {{}} by the question.", f:"perplexed", ko:"그는 그 질문에 당혹한 듯 보였다." }] },
+
+  /* 승격 44 — 사전에 뜻만 있고 발음이 없던 항목이다. '박해하다' 를 첫 자리에
+     지키고 원본의 '학대하다' 를 '못살게 굴다' 로 다듬어 붙였다 —
+     '학대하다' 는 M 세트 mistreat 의 뜻이다. */
+  { word:"persecute", pron:"퍼서큐트", pos:"v", level:"C1", meanings:["박해하다","못살게 굴다"],
+    syn:["hound for beliefs","oppress cruelly","harry without let-up"],
+    ex:[{ s:"The regime began to {{}} its critics.", f:"persecute", ko:"그 정권은 비판자들을 박해하기 시작했다." }] },
+
+  /* 승격 45 — 사전이 '지속하다; 고집하다' 였다. 구분 기호만 쉼표로 바꿨다
+     (linger, L). 원본의 '집요하게 계속하다' 대신 사전 쪽을 남겼다. */
+  { word:"persist", pron:"퍼시스트", pos:"v", level:"B2", meanings:["지속하다","고집하다"],
+    syn:["linger","keep on regardless","refuse to give up"],
+    ex:[{ s:"The fog will {{}} until noon.", f:"persist", ko:"안개는 정오까지 지속될 것이다." }] },
+
+  /* 승격 46 — 사전 표현 '끈기, 고집' 을 글자까지 지켰다(determination, D).
+     원본의 '고집, 지속됨' 은 순서가 거꾸로였다. */
+  { word:"persistence", pron:"퍼시스턴스", pos:"n", level:"B2", meanings:["끈기","고집"],
+    syn:["determination","refusal to quit","dogged effort"],
+    ex:[{ s:"Her {{}} finally won the case.", f:"persistence", ko:"그녀의 끈기가 마침내 그 사건을 이겼다." }] },
+
+  /* 승격 47 — 사전이 '성격; 유명인' 이었다. 참조 둘 중 character(C) 가 '성격' 을
+     쓰므로 그 갈래를 첫 자리에 지키고 원본의 '개성' 을 붙였다. '유명인' 갈래는
+     celebrity(C) 가 쓰던 쪽인데, 그 화면 글자는 '성격, 개성' 으로 바뀐다. */
+  { word:"personality", pron:"퍼서낼러티", pos:"n", level:"B1", meanings:["성격","개성"],
+    syn:["character","make-up of a person","inborn nature"],
+    ex:[{ s:"She has a warm {{}}.", f:"personality", ko:"그녀는 따뜻한 성격을 가졌다." }] },
+
+  /* 승격 48 — 사전은 '맞춤화하다' 한 갈래였다. 원본의 '개인화하다' 를 뒤에 붙였다
+     (괄호는 걷었다). 첫 뜻은 사전값을 지켰다(customize, C). */
+  { word:"personalize", pron:"퍼서널라이즈", pos:"v", level:"C1", meanings:["맞춤화하다","개인화하다"],
+    syn:["customize","tailor to one person","make it one's own"],
+    ex:[{ s:"You can {{}} the cover with your name.", f:"personalize", ko:"표지를 이름으로 맞춤화할 수 있다." }] },
+
+  { word:"personnel", pron:"퍼서넬", pos:"n", level:"B2", meanings:["직원","인사과"],
+    syn:["staff of a firm","workforce","human-resources office"],
+    ex:[{ s:"All {{}} must wear a badge.", f:"personnel", ko:"모든 직원은 표찰을 달아야 한다." }] },
+
+  /* 승격 49 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
+     원본의 '원근법' 갈래는 버렸다. */
+  { word:"perspective", pron:"퍼스펙티브", pos:"n", level:"B2", meanings:["관점","시각"],
+    syn:["standpoint","angle of view","way of looking at it"],
+    ex:[{ s:"The book offers a fresh {{}} on the war.", f:"perspective", ko:"그 책은 그 전쟁에 새로운 관점을 준다." }] },
+
+  { word:"perspiration", pron:"퍼스퍼레이션", pos:"n", level:"C1", meanings:["땀","발한"],
+    syn:["sweat","moisture from the skin","body damp"],
+    ex:[{ s:"{{}} ran down his forehead.", f:"Perspiration", ko:"땀이 그의 이마를 타고 흘렀다." }] },
+
+  { word:"perspire", pron:"퍼스파이어", pos:"v", level:"C1", meanings:["땀을 흘리다"],
+    syn:["sweat heavily","give off moisture","break into a sweat"],
+    ex:[{ s:"Runners {{}} even in cold weather.", f:"perspire", ko:"달리는 사람은 추운 날씨에도 땀을 흘린다." }] },
+
+  /* 승격 50 — 사전 표현과 글자까지 같다. 이 챕터에서 참조가 가장 많다(3곳) —
+     compelling(C)·convincing(C)·eloquent(E). */
+  { word:"persuasive", pron:"퍼스웨이시브", pos:"adj", level:"B2", meanings:["설득력 있는"],
+    syn:["compelling","carrying weight","good at winning people over"], ant:["unconvincing"],
+    ex:[{ s:"He made a {{}} case for the plan.", f:"persuasive", ko:"그는 그 계획에 설득력 있는 주장을 펼쳤다." }] },
+
+  /* 원본은 '관계있는, 타당한, 적절한' 세 갈래였다. '타당한' 은 plausible(타당한,
+     그럴 듯한) 과, '적절한' 은 proper(적절한, 올바른) 와 부딪히므로 둘을 버리고
+     '딱 맞는' 을 붙였다. */
+  { word:"pertinent", pron:"퍼터넌트", pos:"adj", level:"C1", meanings:["관계있는","딱 맞는"],
+    syn:["bearing on the matter","to the point","germane"], ant:["irrelevant"],
+    ex:[{ s:"Please keep your questions {{}}.", f:"pertinent", ko:"질문을 관계있는 것으로 지켜 주세요." }] },
+
+  { word:"pervasive", pron:"퍼베이시브", pos:"adj", level:"C1", meanings:["만연한","스며드는"],
+    syn:["found everywhere","spread right through","present in every corner"],
+    ex:[{ s:"Plastic waste is {{}} in the ocean.", f:"pervasive", ko:"플라스틱 쓰레기는 바다에 만연하다." }] },
+
+  /* 승격 51 — 사전은 '비관주의' 한 갈래였다. 원본의 '비관론' 을 첫 자리로 올릴 수도
+     있었지만 cynicism(C)·optimism(ant, O) 두 곳을 보존하려고 사전값을 앞에 두었다.
+     O 세트 optimism(낙관론, 낙천주의) 과는 뜻이 반대여서 겹치지 않는다. */
+  { word:"pessimism", pron:"페시미즘", pos:"n", level:"B2", meanings:["비관주의","비관론"],
+    syn:["cynicism","gloomy outlook","expecting the worst"], ant:["optimism"],
+    ex:[{ s:"A mood of {{}} settled over the team.", f:"pessimism", ko:"비관주의 분위기가 팀에 내려앉았다." }] },
+
+  /* ── 챕터 6 ─────────────────────────────────────── */
+  /* 'ph-' 로 시작하는 낱말이 여덟 개 이어진다(pharmaceutical·pharmacy·phase·
+     phenomenon·philosophy·phobia·phony·photocopy·photography). 뜻이 서로 멀다.  */
+
+  /* 승격 52 — 사전 표현과 글자까지 같다(negative, N · optimistic 반의어, O). */
+  { word:"pessimistic", pron:"페서미스틱", pos:"adj", level:"B2", meanings:["비관적인"],
+    syn:["negative","looking on the dark side","fearing the worst"], ant:["optimistic"],
+    ex:[{ s:"He is {{}} about next year's harvest.", f:"pessimistic", ko:"그는 내년 수확에 비관적이다." }] },
+
+  /* 승격 53 — 사전은 '농약' 한 갈래였다. 원본의 '살충제' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(insecticide, I). */
+  { word:"pesticide", pron:"페스터사이드", pos:"n", level:"B2", meanings:["농약","살충제"],
+    syn:["insecticide","chemical for killing pests","crop spray"],
+    ex:[{ s:"The farm stopped using that {{}}.", f:"pesticide", ko:"그 농장은 그 농약 쓰기를 그쳤다." }] },
+
+  { word:"petal", pron:"페털", pos:"n", level:"B1", meanings:["꽃잎"],
+    syn:["leaf of a flower","bloom leaf","flower blade"],
+    ex:[{ s:"A single {{}} fell on the table.", f:"petal", ko:"꽃잎 하나가 탁자에 떨어졌다." }] },
+
+  /* 승격 54 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
+  { word:"petition", pron:"퍼티션", pos:"n", level:"B2", meanings:["청원","탄원"],
+    syn:["formal request to authority","signed appeal","plea in writing"],
+    ex:[{ s:"They handed in a {{}} with ten thousand names.", f:"petition", ko:"그들은 만 명의 이름이 담긴 청원을 냈다." }] },
+
+  { word:"petroleum", pron:"퍼트롤리엄", pos:"n", level:"B2", meanings:["석유"],
+    syn:["crude oil","rock oil","mineral oil"],
+    ex:[{ s:"The country exports {{}} and gas.", f:"petroleum", ko:"그 나라는 석유와 가스를 수출한다." }] },
+
+  /* 원본은 '사소한, 하찮은 (= minor)' 이었다. "=" 표기를 걷고, M 세트
+     minor(사소한, 작은) 와 첫 뜻이 겹치지 않게 '하찮은' 을 앞세웠다. */
+  { word:"petty", pron:"페티", pos:"adj", level:"B2", meanings:["하찮은","자잘한"],
+    syn:["of little account","trivial in scale","small-scale"], ant:["weighty"],
+    ex:[{ s:"They argued over {{}} details.", f:"petty", ko:"그들은 하찮은 세부 사항을 두고 다퉜다." }] },
+
+  { word:"pharmaceutical", pron:"파머슈티컬", pos:"adj", level:"C1", meanings:["제약의","약학의"],
+    syn:["drug-making","to do with medicines","medicine-related"],
+    ex:[{ s:"She works for a {{}} company.", f:"pharmaceutical", ko:"그녀는 제약 회사에서 일한다." }] },
+
+  { word:"pharmacy", pron:"파머시", pos:"n", level:"B1", meanings:["약국","약학"],
+    syn:["chemist's shop","drugstore","study of medicines"],
+    ex:[{ s:"The {{}} closes at nine.", f:"pharmacy", ko:"그 약국은 아홉 시에 닫는다." }] },
+
+  { word:"phase", pron:"페이즈", pos:"n", level:"B1", meanings:["단계","국면"],
+    syn:["stage in a process","step along the way","period of change"],
+    ex:[{ s:"The project entered its final {{}}.", f:"phase", ko:"그 사업은 마지막 단계에 들어섰다." }] },
+
+  /* 승격 55 — 사전 표현과 글자까지 같다(marvel, M). */
+  { word:"phenomenon", pron:"퍼나머넌", pos:"n", level:"B2", meanings:["현상"],
+    syn:["marvel","observed event","thing that occurs"],
+    ex:[{ s:"The northern lights are a striking {{}}.", f:"phenomenon", ko:"북극광은 눈에 띄는 현상이다." }] },
+
+  { word:"philosophy", pron:"펄라서피", pos:"n", level:"B1", meanings:["철학"],
+    syn:["study of wisdom","system of thought","love of knowledge"],
+    ex:[{ s:"He teaches {{}} at the college.", f:"philosophy", ko:"그는 그 대학에서 철학을 가르친다." }] },
+
+  { word:"phobia", pron:"포비어", pos:"n", level:"C1", meanings:["공포증","혐오증"],
+    syn:["dread of something","morbid fear","deep-seated horror"],
+    ex:[{ s:"She has a {{}} about heights.", f:"phobia", ko:"그녀는 높은 곳에 공포증이 있다." }] },
+
+  /* 승격 56 — 사전 표현 '허위의, 사이비의' 를 글자까지 지켰다(fake, F).
+     원본은 '가짜의, 허위의; 겉치레의; 사기꾼, 가짜' 로 형용사와 명사가 섞여 있었고
+     갈래도 넷이었다. '가짜의' 는 fake(가짜의) 의 첫 뜻과 같아서 사전 쪽이 낫다. */
+  { word:"phony", pron:"포니", pos:"adj", level:"C1", meanings:["허위의","사이비의"],
+    syn:["fake","put on for show","not what it claims"], ant:["genuine"],
+    ex:[{ s:"He used a {{}} name at the desk.", f:"phony", ko:"그는 창구에서 허위의 이름을 썼다." }] },
+
+  /* 원본은 '복사; 복사하다' 로 명사와 동사가 섞여 있었다. 참조가 없어 명사로
+     세웠다. '복사물' 을 붙여 뜻이 또렷해지게 했다. */
+  { word:"photocopy", pron:"포토카피", pos:"n", level:"B1", meanings:["복사","복사물"],
+    syn:["duplicate sheet","machine copy","reproduced page"],
+    ex:[{ s:"Please bring a {{}} of your passport.", f:"photocopy", ko:"여권 복사물을 가져오세요." }] },
+
+  /* 원본은 '사진 촬영(기술)' 이었다. 괄호를 걷고 '사진술' 로 풀어 붙였다. */
+  { word:"photography", pron:"퍼타그러피", pos:"n", level:"B1", meanings:["사진 촬영","사진술"],
+    syn:["taking of pictures","camera work","art of the camera"],
+    ex:[{ s:"She took up {{}} after retiring.", f:"photography", ko:"그녀는 은퇴 뒤 사진 촬영을 시작했다." }] },
+
+  /* 승격 57 — 사전이 '신체의; 물리적인' 이었다. 구분 기호만 쉼표로 바꿨다
+     (corporal, C · mental 반의어, M). 원본의 '육체의, 물질의, 물리학의' 세 갈래
+     중 사전 쪽을 남겼다 — '육체의' 는 corporal 의 첫 뜻과 같다. */
+  { word:"physical", pron:"피지컬", pos:"adj", level:"B1", meanings:["신체의","물리적인"],
+    syn:["corporal","of the body","material rather than mental"], ant:["mental"],
+    ex:[{ s:"The job needs real {{}} strength.", f:"physical", ko:"그 일은 진짜 신체의 힘이 필요하다." }] },
+
+  { word:"physician", pron:"퍼지션", pos:"n", level:"B2", meanings:["내과 의사"],
+    syn:["doctor of medicine","medical practitioner","non-surgical doctor"],
+    ex:[{ s:"Her {{}} advised more rest.", f:"physician", ko:"그녀의 내과 의사는 더 쉬라고 권했다." }] },
+
+  /* 승격 58 — 사전값은 '생리학, 해부학' 인데 '해부학' 은 anatomy 의 뜻이어서
+     정확하지 않다. '생리학' 한 갈래로 좁혔다 — anatomy(A) 의 화면 글자가 바뀐다.
+     사전값을 버린 두 번째 경우다(앞서 particle 이 있었다). */
+  { word:"physiology", pron:"피지알러지", pos:"n", level:"C1", meanings:["생리학"],
+    syn:["study of body function","science of living processes","workings of the body"],
+    ex:[{ s:"He lectures on plant {{}}.", f:"physiology", ko:"그는 식물 생리학을 강의한다." }] },
+
+  { word:"pie chart", pron:"파이 차트", pos:"phr", level:"B1", meanings:["원 그래프"],
+    syn:["circle graph","round diagram","wheel chart"] },
+
+  /* 챕터 4 의 penetrate(꿰뚫다, 침투하다) 와 물리지 않게 '찌르다' 를 앞세웠다.
+     원본은 '꿰뚫다, 관통하다' 였다. */
+  { word:"pierce", pron:"피어스", pos:"v", level:"B2", meanings:["찌르다","관통하다"],
+    syn:["make a hole in","run through","puncture"],
+    ex:[{ s:"The thorn can {{}} a thick glove.", f:"pierce", ko:"그 가시는 두터운 장갑도 찌를 수 있다." }] },
+
+  /* ── 챕터 7 ─────────────────────────────────────── */
+  /* 'pl-' 로 시작하는 낱말이 아홉 개 이어진다(place·placebo·plague·plain·
+     planetwide·plant·plausible·play a role in·playful·playwright·plead).
+     품사와 뜻이 서로 달라 같은 보드에서 헷갈리지 않는다.                       */
+
+  /* 원본은 '쌓다; 더미' 로 동사와 명사가 섞여 있었다. 참조가 없어 수능에서 흔한
+     명사('a pile of ~') 로 세웠다. */
+  { word:"pile", pron:"파일", pos:"n", level:"B1", meanings:["더미","무더기"],
+    syn:["heap","stack","mound"],
+    ex:[{ s:"A {{}} of books sat on the desk.", f:"pile", ko:"책 더미가 책상에 놓여 있었다." }] },
+
+  { word:"pilgrim", pron:"필그럼", pos:"n", level:"B2", meanings:["순례자"],
+    syn:["holy traveler","one on a religious journey","wayfarer to a shrine"],
+    ex:[{ s:"Every {{}} walked the last mile barefoot.", f:"pilgrim", ko:"순례자마다 마지막 1마일을 맨발로 걸었다." }] },
+
+  /* ★원본의 '주석, 중추' 에서 '주석' 은 '주축' 의 오타로 보인다. 수능에서 더 흔한
+     '기둥' 을 첫 자리에 두고 '중추' 를 남겼다. */
+  { word:"pillar", pron:"필러", pos:"n", level:"B2", meanings:["기둥","중추"],
+    syn:["column","upright support","mainstay"],
+    ex:[{ s:"A stone {{}} held up the roof.", f:"pillar", ko:"돌 기둥이 지붕을 받쳤다." }] },
+
+  { word:"pimple", pron:"핌플", pos:"n", level:"B1", meanings:["여드름","뾰루지"],
+    syn:["spot on the skin","small swelling","blemish"],
+    ex:[{ s:"A {{}} appeared on his chin.", f:"pimple", ko:"그의 턱에 여드름이 하나 났다." }] },
+
+  /* 승격 59 — 사전이 '개척자; 개척하다' 로 명사와 동사가 섞여 있었다. 참조 셋이
+     갈렸다 — frontiersman(F) 은 명사, innovate(I)·break new ground(B) 는 동사 쪽이다.
+     사전의 첫 갈래가 명사여서 명사로 세우고, 동사 자리 두 곳의 유의어를
+     'lead the way'·'strike out anew' 로 바꿨다(words-i.js·words-b.js). */
+  { word:"pioneer", pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
+    syn:["frontiersman","trailblazer","first to go in"],
+    ex:[{ s:"She was a {{}} of heart surgery.", f:"pioneer", ko:"그녀는 심장 수술의 개척자였다." }] },
+
+  { word:"pious", pron:"파이어스", pos:"adj", level:"C1", meanings:["신앙심이 깊은","독실한"],
+    syn:["devout","deeply religious","reverent"], ant:["irreverent"],
+    ex:[{ s:"His {{}} habits never changed.", f:"pious", ko:"그의 신앙심이 깊은 습관은 바뀌지 않았다." }] },
+
+  /* 승격 60 — 사전 표현과 글자까지 같다(crater, C).
+     원본의 '구멍, 패인 곳, 구덩이' 세 갈래 중 사전 쪽을 남겼다. */
+  { word:"pit", pron:"핏", pos:"n", level:"B1", meanings:["구덩이","움푹한 곳"],
+    syn:["crater","deep hole","hollow in the ground"],
+    ex:[{ s:"They dug a {{}} for the rubbish.", f:"pit", ko:"그들은 쓰레기를 묻을 구덩이를 팠다." }] },
+
+  /* 원본은 '정도, 정점; 음높이; 힘껏 내던지다' 로 세 갈래에 명사와 동사가 섞여
+     있었다. 참조가 없어 '음높이' 갈래로 세웠다 — '정도' 는 degree(정도, D) 의
+     첫 뜻과 같아진다. */
+  { word:"pitch", pron:"피치", pos:"n", level:"B2", meanings:["음높이","가락"],
+    syn:["tone level","highness of a sound","note level"],
+    ex:[{ s:"She sang at a higher {{}} than before.", f:"pitch", ko:"그녀는 전보다 높은 음높이로 노래했다." }] },
+
+  { word:"pitiful", pron:"피티풀", pos:"adj", level:"B2", meanings:["측은한","초라한"],
+    syn:["arousing pity","wretchedly poor","sorry-looking"],
+    ex:[{ s:"The shed was a {{}} sight.", f:"pitiful", ko:"그 헛간은 초라한 광경이었다." }] },
+
+  /* 승격 61 — 사전이 '배치하다; 장소' 로 동사와 명사가 섞여 있었다.
+     lay(L) 가 동사여서 동사로 세우고 사전의 첫 갈래 '배치하다' 를 지켰다.
+     원본 첫 뜻은 명사 '장소' 였지만 참조를 보존하는 쪽을 택했다 —
+     '장소' 는 location(장소, 위치, L) 의 첫 뜻과도 같아진다. */
+  { word:"place", pron:"플레이스", pos:"v", level:"B1", meanings:["배치하다","놓다"],
+    syn:["lay","set down","stand in position"],
+    ex:[{ s:"Please {{}} the vase on the shelf.", f:"place", ko:"그 꽃병을 선반에 놓아 주세요." }] },
+
+  { word:"placebo", pron:"플러시보", pos:"n", level:"C1", meanings:["가짜 약","위약"],
+    syn:["dummy pill","sham medicine","inactive treatment"],
+    ex:[{ s:"Half the group received a {{}}.", f:"placebo", ko:"그 집단의 절반은 가짜 약을 받았다." }] },
+
+  /* 승격 62 — 사전이 '괴롭히다; 역병' 으로 동사와 명사가 섞여 있었다.
+     참조 둘(afflict, A · haunt, H) 이 모두 동사여서 동사로 세웠다.
+     원본 첫 뜻은 명사 '전염병' 이었지만 참조 둘을 보존하는 쪽을 택했다. */
+  { word:"plague", pron:"플레이그", pos:"v", level:"C1", meanings:["괴롭히다","들볶다"],
+    syn:["afflict","hound without let-up","give no peace to"],
+    ex:[{ s:"Doubts continued to {{}} him.", f:"plague", ko:"의심이 계속 그를 괴롭혔다." }] },
+
+  /* 승격 63 — 사전이 '평범한; 명백한' 이었다. 구분 기호만 쉼표로 바꿨다
+     (comprehensible, C · luxurious 반의어, L · ornate 반의어, O — 세 곳).
+     원본은 '분명한, 꾸밈없는; 검소한, 평범한; 평지, 벌판' 으로 형용사와 명사가
+     섞인 다섯 갈래였다. */
+  { word:"plain", pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
+    syn:["comprehensible","unadorned","easy to grasp"], ant:["ornate"],
+    ex:[{ s:"She wore a {{}} grey coat.", f:"plain", ko:"그녀는 평범한 회색 외투를 입었다." }] },
+
+  /* 원본은 '지구적 규모의, 지구 전체에 미치는(= worldwide)' 였다.
+     "=" 표기를 걷고 한 갈래로 정리했다. */
+  { word:"planetwide", pron:"플래닛와이드", pos:"adj", level:"C2", meanings:["지구적 규모의"],
+    syn:["across the whole planet","global in reach","earth-wide"],
+    ex:[{ s:"The study found a {{}} pattern.", f:"planetwide", ko:"그 연구는 지구적 규모의 양상을 찾아냈다." }] },
+
+  /* 승격 64 — 사전이 '식물; 심다' 로 명사와 동사가 섞여 있었다(발음이 없었다).
+     참조가 없어 사전의 첫 갈래 '식물' 을 지키고 원본의 '공장' 을 붙였다. */
+  { word:"plant", pron:"플랜트", pos:"n", level:"B1", meanings:["식물","공장"],
+    syn:["living growth","vegetation","factory building"],
+    ex:[{ s:"This {{}} needs very little water.", f:"plant", ko:"이 식물은 물이 아주 적게 필요하다." }] },
+
+  /* 승격 65 — 사전 표현과 글자까지 같다(convincing, C).
+     원본의 '타당한, 그럴 듯한' 중 '타당한' 은 pertinent 쪽으로 넘겼다. */
+  { word:"plausible", pron:"플로저블", pos:"adj", level:"B2", meanings:["그럴듯한","설득력 있는"],
+    syn:["convincing","believable","ringing true"], ant:["far-fetched"],
+    ex:[{ s:"He gave a {{}} excuse.", f:"plausible", ko:"그는 그럴듯한 변명을 했다." }] },
+
+  { word:"play a role in", pron:"플레이 어 롤 인", pos:"phr", level:"B1", meanings:["~에서 역할을 하다"],
+    syn:["have a hand in","help shape","contribute to"] },
+
+  { word:"playful", pron:"플레이풀", pos:"adj", level:"B1", meanings:["놀기 좋아하는","장난기 많은"],
+    syn:["full of fun","frolicsome","given to play"], ant:["solemn"],
+    ex:[{ s:"The puppy is {{}} all day.", f:"playful", ko:"그 강아지는 온종일 놀기 좋아한다." }] },
+
+  /* 원본은 '각본가, 극작가, 각색자' 세 갈래였다. 두 갈래로 줄였다. */
+  { word:"playwright", pron:"플레이라이트", pos:"n", level:"C1", meanings:["극작가","각본가"],
+    syn:["writer of plays","dramatist","stage author"],
+    ex:[{ s:"The {{}} rewrote the last act.", f:"playwright", ko:"그 극작가는 마지막 막을 다시 썼다." }] },
+
+  /* 승격 66 — 사전 표현과 글자까지 같다(appeal, A · implore, I).
+     원본의 '간청하다' 는 implore 쪽 뜻이어서 사전 쪽을 남겼다. */
+  { word:"plead", pron:"플리드", pos:"v", level:"B2", meanings:["탄원하다","변호하다"],
+    syn:["appeal","beg earnestly","speak in defense of"],
+    ex:[{ s:"She came to {{}} for her brother.", f:"plead", ko:"그녀는 오라비를 위해 탄원하러 왔다." }] },
+
+  /* ── 챕터 8 ─────────────────────────────────────── */
+  /* 'po-' 로 시작하는 낱말이 여덟 개 이어진다(podium·point·point of view·
+     point out·poke·polarity·pole·policy·polish). point 계열 셋은 원본에서
+     '가리키다' 로 물려 있었다 — point '요점, 점수' / point out '지적하다' 로 갈랐다. */
+
+  /* 승격 67 — 사전 표현과 글자까지 같다. 이 챕터에서 참조가 가장 많다(4곳) —
+     contented(C)·delighted(D) 가 유의어, annoyed(A)·disappointed(D) 가 반의어다. */
+  { word:"pleased", pron:"플리즈드", pos:"adj", level:"B1", meanings:["기쁜","만족한"],
+    syn:["contented","glad at heart","well satisfied"], ant:["annoyed"],
+    ex:[{ s:"She was {{}} with the result.", f:"pleased", ko:"그녀는 결과에 만족했다." }] },
+
+  { word:"pleasurable", pron:"플레저러블", pos:"adj", level:"B2", meanings:["즐거운"],
+    syn:["giving enjoyment","agreeable to do","a joy to have"],
+    ex:[{ s:"It was a {{}} afternoon by the lake.", f:"pleasurable", ko:"호수 옆에서 즐거운 오후였다." }] },
+
+  /* 승격 68 — 사전 표현 '서약, 약속' 을 글자까지 지켰다. 참조 둘이 갈렸다 —
+     commitment(C) 는 명사, guarantee(G) 는 동사다. 사전값이 명사여서 명사로 세우고
+     guarantee 쪽 유의어를 'give one's word' 로 바꿨다(words-g.js). */
+  { word:"pledge", pron:"플레지", pos:"n", level:"B2", meanings:["서약","약속"],
+    syn:["commitment","solemn undertaking","word of honor"],
+    ex:[{ s:"They signed a {{}} to cut waste.", f:"pledge", ko:"그들은 쓰레기를 줄이겠다는 서약에 서명했다." }] },
+
+  /* 원본은 '역경, 곤경; 맹세하다, 약혼시키다' 로 명사와 동사가 섞여 있었다.
+     참조가 없어 명사로 세웠고, '역경' 은 adversity(역경, A) 의 첫 뜻과 같아서
+     '곤경' 을 앞세웠다. */
+  { word:"plight", pron:"플라이트", pos:"n", level:"C1", meanings:["곤경","딱한 처지"],
+    syn:["sorry state","tight corner","bad fix"],
+    ex:[{ s:"The film shows the {{}} of refugees.", f:"plight", ko:"그 영화는 난민의 곤경을 보여 준다." }] },
+
+  /* 승격 69 — 사전이 '음모; 줄거리; 구획' 으로 세 갈래였고 참조 넷이 갈렸다 —
+     conspiracy(C)·lot(L) 은 명사, conspire(C)·contrive(C) 는 동사다.
+     명사가 사전의 첫 갈래이고 수능에서도 흔하므로 명사로 세우고, 동사 자리 두 곳의
+     유의어를 'hatch a scheme'·'work out a ruse' 로 바꿨다(words-c.js). */
+  { word:"plot", pron:"플롯", pos:"n", level:"B2", meanings:["음모","줄거리"],
+    syn:["conspiracy","secret scheme","story line"],
+    ex:[{ s:"The {{}} was uncovered before it began.", f:"plot", ko:"그 음모는 시작되기 전에 드러났다." }] },
+
+  { word:"plumber", pron:"플러머", pos:"n", level:"B1", meanings:["배관공"],
+    syn:["pipe fitter","water-pipe worker","one who mends pipes"],
+    ex:[{ s:"We called a {{}} about the leak.", f:"plumber", ko:"우리는 물이 새는 것 때문에 배관공을 불렀다." }] },
+
+  /* 승격 70 — 사전은 '통통한' 한 갈래였다. 원본의 '포동포동한' 을 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(chubby, C). */
+  { word:"plump", pron:"플럼프", pos:"adj", level:"B2", meanings:["통통한","포동포동한"],
+    syn:["chubby","rounded and full","well-padded"], ant:["skinny"],
+    ex:[{ s:"The baby had {{}} cheeks.", f:"plump", ko:"그 아기는 통통한 볼을 가졌다." }] },
+
+  /* 승격 71 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
+     원본의 명사 '약탈, 강탈' 갈래는 버렸다. */
+  { word:"plunder", pron:"플런더", pos:"v", level:"C1", meanings:["약탈하다"],
+    syn:["loot","strip of goods by force","carry off spoils"],
+    ex:[{ s:"Raiders came to {{}} the coastal towns.", f:"plunder", ko:"침입자들이 해안 도시를 약탈하러 왔다." }] },
+
+  /* 승격 72 — ★원본의 '거꾸로지다' 는 오타다. 사전이 '뛰어들다; 급락' 으로 동사와
+     명사가 섞여 있었는데 immerse(I) 가 동사여서 동사로 세우고, 사전의 첫 갈래
+     '뛰어들다' 를 지키고 원본의 '급락하다' 를 동사로 다듬어 붙였다. */
+  { word:"plunge", pron:"플런지", pos:"v", level:"B2", meanings:["뛰어들다","급락하다"],
+    syn:["immerse","dive headlong","drop steeply"],
+    ex:[{ s:"Prices could {{}} after the harvest.", f:"plunge", ko:"수확 뒤에 값이 급락할 수 있다." }] },
+
+  /* 원본은 '복수의; 다종교의; 다인종의' 세 갈래였다. 뒤 둘은 M 세트
+     multiracial(여러 인종의)·multicultural(다문화의) 쪽 뜻이어서 버리고
+     '여러 갈래의' 를 붙였다. */
+  { word:"plural", pron:"플루럴", pos:"adj", level:"B2", meanings:["복수의","여러 갈래의"],
+    syn:["more than one","of several kinds","not single"], ant:["singular"],
+    ex:[{ s:"Add an s to make the {{}} form.", f:"plural", ko:"s 를 붙여 복수의 꼴을 만드세요." }] },
+
+  { word:"pneumonia", pron:"뉴모니어", pos:"n", level:"C1", meanings:["폐렴"],
+    syn:["lung infection","inflamed lungs","chest illness"],
+    ex:[{ s:"He was hospitalized with {{}}.", f:"pneumonia", ko:"그는 폐렴으로 입원했다." }] },
+
+  { word:"podium", pron:"포디엄", pos:"n", level:"B2", meanings:["연단","지휘대"],
+    syn:["raised platform","speaker's stand","rostrum"],
+    ex:[{ s:"She stepped onto the {{}} to speak.", f:"podium", ko:"그녀는 말하려고 연단에 올랐다." }] },
+
+  /* 승격 73 — 사전이 '요점; 가리키다' 로 명사와 동사가 섞여 있었다(발음이 없었다).
+     원본은 '맨 끝, 뾰족한 끝; 시점, 순간; 점수; 가리키다' 로 네 갈래였다.
+     사전의 첫 갈래 '요점' 을 지키고 원본의 '점수' 를 붙였다 — '가리키다' 갈래는
+     같은 챕터의 point out 에 넘겼다. */
+  { word:"point", pron:"포인트", pos:"n", level:"B1", meanings:["요점","점수"],
+    syn:["main idea","gist","score in a game"],
+    ex:[{ s:"You have missed the {{}} of the story.", f:"point", ko:"당신은 그 이야기의 요점을 놓쳤다." }] },
+
+  /* 승격 74 — 사전값 '바라보는 자리' 는 O 세트 outlook 을 위해 내가 만든 표현이다.
+     원본의 '관점, 견해' 가 훨씬 또렷해서 그쪽을 썼다 — outlook(O) 의 화면 글자가
+     바뀐다. "(=viewpoint)" 표기는 걷었다. */
+  { word:"point of view", pron:"포인트 오브 뷰", pos:"phr", level:"B1", meanings:["관점","견해"],
+    syn:["standpoint","angle one sees from","personal take"] },
+
+  /* 승격 75 — 사전값 '집어서 말하다' 를 둘째 자리로 살리고 원본의 '지적하다' 를
+     앞세웠다. 같은 챕터 point(요점, 점수) 와 갈라 두었다. note(N) 의 화면 글자가
+     바뀐다. */
+  { word:"point out", pron:"포인트 아웃", pos:"phr", level:"B1", meanings:["지적하다","집어서 말하다"],
+    syn:["draw attention to","single out for notice","call attention to"] },
+
+  { word:"poke", pron:"포크", pos:"v", level:"B1", meanings:["구멍을 내다","찌르다"],
+    syn:["jab at","prod with a finger","push a hole through"],
+    ex:[{ s:"Do not {{}} the fire with that stick.", f:"poke", ko:"그 막대로 불을 찌르지 마라." }] },
+
+  { word:"polarity", pron:"폴래러티", pos:"n", level:"C2", meanings:["양극성","완전히 다름"],
+    syn:["having two opposite poles","sharp opposition","two-way split"],
+    ex:[{ s:"The magnet's {{}} can be reversed.", f:"polarity", ko:"그 자석의 양극성은 뒤바꿀 수 있다." }] },
+
+  { word:"pole", pron:"폴", pos:"n", level:"B2", meanings:["극","극지"],
+    syn:["end of the earth's axis","far northern or southern point","polar region"],
+    ex:[{ s:"Ice at the south {{}} is melting.", f:"pole", ko:"남극의 얼음이 녹고 있다." }] },
+
+  /* 승격 76 — 사전값은 '보험 증권' 한 갈래뿐이었다. 원본의 '정책' 이 수능에서
+     압도적으로 흔하므로 첫 자리에 두고 사전값을 둘째로 살렸다 —
+     insurance(I) 의 화면 글자가 바뀐다. '방책' 갈래는 버렸다. */
+  { word:"policy", pron:"팔러시", pos:"n", level:"B1", meanings:["정책","보험 증권"],
+    syn:["course of action","official line","insurance contract"],
+    ex:[{ s:"The new {{}} takes effect in May.", f:"policy", ko:"새 정책은 오월에 시행된다." }] },
+
+  /* 원본은 '(광이 나도록) 닦다, 다듬다' 였다. 괄호를 걷었다. */
+  { word:"polish", pron:"팔리시", pos:"v", level:"B1", meanings:["닦다","다듬다"],
+    syn:["rub to a shine","buff up","smooth and refine"],
+    ex:[{ s:"He stopped to {{}} his shoes.", f:"polish", ko:"그는 멈춰서 구두를 닦았다." }] },
+
+  /* ── 챕터 9 ─────────────────────────────────────── */
+  /* 'poll-' 넷(pollen·pollinate·pollutant·pollute) 과 'port-' 넷(portable·portal·
+     portion·portrait·portray) 이 붙는다. 품사와 뜻이 서로 달라 구별된다.        */
+
+  /* 승격 77 — 사전은 '예의 바른' 한 갈래였다. 원본의 '공손한' 을 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(courteous, C · impertinent 반의어, I).
+     원본의 '교양 있는, 세련된' 갈래는 버렸다. */
+  { word:"polite", pron:"펄라이트", pos:"adj", level:"B1", meanings:["예의 바른","공손한"],
+    syn:["courteous","well-mannered","showing good manners"], ant:["impertinent"],
+    ex:[{ s:"He gave a {{}} nod and left.", f:"polite", ko:"그는 예의 바른 목례를 하고 떠났다." }] },
+
+  { word:"political", pron:"펄리티컬", pos:"adj", level:"B1", meanings:["정치적인"],
+    syn:["to do with government","of state affairs","party-related"],
+    ex:[{ s:"The song carried a {{}} message.", f:"political", ko:"그 노래는 정치적인 메시지를 담았다." }] },
+
+  { word:"politics", pron:"팔러틱스", pos:"n", level:"B1", meanings:["정치","정치학"],
+    syn:["running of a state","public affairs","science of government"],
+    ex:[{ s:"She left {{}} after two terms.", f:"politics", ko:"그녀는 두 차례 임기 뒤 정치를 떠났다." }] },
+
+  /* 승격 78 — 사전이 '여론 조사; 투표' 였다. 구분 기호만 쉼표로 바꿨다
+     (ballot, B · election, E). 원본의 '득표 집계' 대신 사전 쪽을 남겼다. */
+  { word:"poll", pron:"폴", pos:"n", level:"B2", meanings:["여론 조사","투표"],
+    syn:["ballot","survey of opinion","count of votes"],
+    ex:[{ s:"The latest {{}} shows a close race.", f:"poll", ko:"가장 최근 여론 조사는 팽팽한 경쟁을 보여 준다." }] },
+
+  { word:"pollen", pron:"팔런", pos:"n", level:"B2", meanings:["꽃가루"],
+    syn:["flower dust","powder from blossoms","male plant cells"],
+    ex:[{ s:"{{}} counts rise every spring.", f:"Pollen", ko:"꽃가루 수치는 봄마다 오른다." }] },
+
+  /* 승격 79 — 사전 표현과 글자까지 같다(fertilize, F).
+     원본의 '수분하다' 는 자동사처럼 읽혀 사전 쪽이 낫다. */
+  { word:"pollinate", pron:"팔러네이트", pos:"v", level:"B2", meanings:["수분시키다"],
+    syn:["fertilize","carry pollen to","dust with pollen"],
+    ex:[{ s:"Bees {{}} most of the orchard.", f:"pollinate", ko:"벌이 그 과수원의 대부분을 수분시킨다." }] },
+
+  { word:"pollutant", pron:"펄루턴트", pos:"n", level:"B2", meanings:["오염 물질","오염원"],
+    syn:["fouling substance","dirtying agent","source of contamination"],
+    ex:[{ s:"Soot is a common urban {{}}.", f:"pollutant", ko:"검댕은 흔한 도시 오염 물질이다." }] },
+
+  /* 승격 80 — 사전 표현과 글자까지 같다(contaminate, C). */
+  { word:"pollute", pron:"펄루트", pos:"v", level:"B1", meanings:["오염시키다"],
+    syn:["contaminate","foul up","make impure"], ant:["purify"],
+    ex:[{ s:"Factories used to {{}} the river freely.", f:"pollute", ko:"공장들은 예전에 강을 마음대로 오염시켰다." }] },
+
+  /* 승격 81 — 사전은 '숙고하다' 한 갈래였다. 원본의 '곰곰이 생각하다' 를 뒤에
+     붙였다(원본에 있던 "(= consider)" 표기는 걷었다). 첫 뜻은 사전값을 지켰다
+     (contemplate, C). */
+  { word:"ponder", pron:"판더", pos:"v", level:"B2", meanings:["숙고하다","곰곰이 생각하다"],
+    syn:["contemplate","turn over in the mind","mull over"],
+    ex:[{ s:"He sat down to {{}} the offer.", f:"ponder", ko:"그는 앉아서 그 제안을 숙고했다." }] },
+
+  { word:"popularity", pron:"파퓰래러티", pos:"n", level:"B1", meanings:["인기","평판"],
+    syn:["wide liking","public favor","being well liked"],
+    ex:[{ s:"The show's {{}} grew each season.", f:"popularity", ko:"그 프로의 인기는 시즌마다 자랐다." }] },
+
+  /* 승격 82 — 사전 표현과 글자까지 같다(community, C). */
+  { word:"population", pron:"파퓰레이션", pos:"n", level:"B1", meanings:["인구","주민"],
+    syn:["community","number of inhabitants","people of a place"],
+    ex:[{ s:"The village has a {{}} of forty.", f:"population", ko:"그 마을은 인구가 마흔이다." }] },
+
+  /* 승격 83 — 사전은 '휴대하기 좋은' 한 갈래였다. 원본의 '휴대용의' 를 뒤에 붙였다.
+     첫 뜻은 사전값을 지켰다(lightweight, L · mobile, M). */
+  { word:"portable", pron:"포터블", pos:"adj", level:"B1", meanings:["휴대하기 좋은","휴대용의"],
+    syn:["lightweight","easy to carry","made to be moved"],
+    ex:[{ s:"She brought a {{}} stove.", f:"portable", ko:"그녀는 휴대용 난로를 가져왔다." }] },
+
+  /* 원본의 '포털(사이트)' 은 외래어여서 뺐다. */
+  { word:"portal", pron:"포털", pos:"n", level:"B2", meanings:["입구","관문"],
+    syn:["grand doorway","gateway","way in"],
+    ex:[{ s:"A stone {{}} led into the garden.", f:"portal", ko:"돌 입구가 정원으로 이어졌다." }] },
+
+  /* 승격 84 — 사전 표현과 글자까지 같다(dose, D · fraction, F).
+     원본의 '한 조각, 일부' 대신 사전 쪽을 남겼다. */
+  { word:"portion", pron:"포션", pos:"n", level:"B1", meanings:["부분","몫"],
+    syn:["fraction","share given out","helping"],
+    ex:[{ s:"A large {{}} of the land is wooded.", f:"portion", ko:"그 땅의 큰 부분이 숲이다." }] },
+
+  { word:"portrait", pron:"포트릿", pos:"n", level:"B1", meanings:["초상화","인물화"],
+    syn:["likeness of a person","painted figure","picture of a face"],
+    ex:[{ s:"A {{}} of the founder hangs in the hall.", f:"portrait", ko:"설립자의 초상화가 회관에 걸려 있다." }] },
+
+  /* 승격 85 — 사전 표현과 글자까지 같다(depict, D · describe, D).
+     원본의 '묘사하다' 한 갈래보다 사전 쪽이 갈래가 둘이어서 낫다. */
+  { word:"portray", pron:"포트레이", pos:"v", level:"B2", meanings:["묘사하다","그리다"],
+    syn:["depict","represent in words","paint a picture of"],
+    ex:[{ s:"The novel tries to {{}} village life.", f:"portray", ko:"그 소설은 마을 삶을 묘사하려 한다." }] },
+
+  /* 원본의 '자세(포즈)를 취하다' 에서 외래어 괄호를 걷었다. */
+  { word:"pose", pron:"포즈", pos:"v", level:"B1", meanings:["자세를 취하다"],
+    syn:["strike an attitude","hold a stance","sit for a picture"],
+    ex:[{ s:"The team lined up to {{}} for the camera.", f:"pose", ko:"그 팀은 사진기를 향해 자세를 취하려고 줄을 섰다." }] },
+
+  /* 승격 86 — 사전이 '배치하다; 위치' 로 동사와 명사가 섞여 있었고 참조도 갈렸다 —
+     deploy(D) 는 동사, location(L) 은 명사다. 원본 첫 뜻이 명사이고 수능에서도
+     명사가 압도적이므로 명사로 세우고 deploy 쪽 유의어를 'put in place' 로
+     바꿨다(words-d.js). */
+  { word:"position", pron:"퍼지션", pos:"n", level:"B1", meanings:["위치","자리"],
+    syn:["location","spot where a thing stands","place taken up"],
+    ex:[{ s:"Mark the {{}} of each plant on the map.", f:"position", ko:"지도에 각 식물의 위치를 표시하세요." }] },
+
+  /* 승격 87 — 사전이 '확신하는; 긍정적인' 이었다. 구분 기호만 쉼표로 바꿔 두 갈래를
+     그대로 살렸다 — certain(C) 이 '확신하는' 을, affirmative(A) 가 '긍정적인' 을
+     쓰기 때문이다. 원본은 '긍정적인' 한 갈래였다. */
+  { word:"positive", pron:"파지티브", pos:"adj", level:"B1", meanings:["확신하는","긍정적인"],
+    syn:["certain","sure beyond doubt","hopeful in outlook"], ant:["negative"],
+    ex:[{ s:"I am {{}} that I locked the door.", f:"positive", ko:"나는 문을 잠갔다고 확신한다." }] },
+
+  { word:"possess", pron:"퍼제스", pos:"v", level:"B1", meanings:["소유하다","지니다"],
+    syn:["own","have as one's own","hold title to"],
+    ex:[{ s:"Few families {{}} land here.", f:"possess", ko:"이곳에서 땅을 소유하는 가족은 드물다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "a joy to have": "누리기에 기쁜",
   "above all others": "다른 무엇보다 위인",
   "academic article": "학술 글",
+  "across the whole planet": "지구 전체에 걸친",
+  "agreeable to do": "하기에 좋은",
   "alike in form": "꼴이 비슷한",
+  "angle of view": "보는 각도",
+  "angle one sees from": "보는 쪽의 각도",
+  "arousing pity": "안타깝게 하는",
   "art of instruction": "가르치는 기술",
+  "art of the camera": "사진기의 예술",
   "ashen": "핏기 없는",
+  "at regular intervals": "일정한 사이를 두고",
+  "bad fix": "난처한 처지",
   "be a party to": "~에 한편으로 끼다",
+  "be destroyed": "무너져 없어지다",
+  "bearing on the matter": "그 일과 맞닿은",
   "become aware of": "~을 알아차리게 되다",
+  "beg earnestly": "간절히 빌다",
   "being a father": "아버지라는 처지",
+  "being well liked": "사랑받는 상태",
+  "believable": "믿을 만한",
   "bequeath": "물려주다",
   "blind alarm": "앞뒤 없는 놀람",
   "block of text": "글의 한 덩이",
+  "bloom leaf": "꽃을 이루는 잎",
+  "body damp": "몸의 습기",
+  "break into a sweat": "땀이 나기 시작하다",
   "breathe hard": "숨을 거칠게 쉬다",
   "brief halt": "잠깐의 멈춤",
+  "buff up": "문질러 반들거리게 하다",
   "bygone days": "지나간 날들",
+  "call attention to": "~을 짚어 알리다",
   "call on someone": "누군가를 찾아가다",
+  "camera work": "사진기를 다루는 일",
   "cape-like landmass": "곶처럼 뻗은 땅덩이",
   "carry forward to others": "남들에게 이어 주다",
+  "carry off spoils": "빼앗은 것을 들고 가다",
+  "carry on without end": "그침 없이 이어 가다",
+  "carry pollen to": "~에 꽃가루를 옮기다",
   "carrying out of a task": "맡은 일을 해냄",
+  "carrying weight": "무게가 실린",
+  "chemical for killing pests": "해충을 죽이는 약품",
+  "chemist's shop": "약 파는 가게",
+  "chest illness": "가슴에 생긴 병",
   "child health specialist": "아이 건강 전문가",
   "children's doctor": "아이를 보는 의사",
   "church leader": "교회의 지도자",
+  "circle graph": "동그란 그래프",
   "close likeness": "가까운 닮음",
   "coming back each year": "해마다 다시 오는",
   "coming from parents": "어버이에게서 나온",
   "congressional": "국회에 관한",
+  "contribute to": "~에 이바지하다",
+  "count of votes": "표를 셈",
   "country laborer": "시골 일꾼",
+  "course of action": "나아갈 방향",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
+  "crop spray": "작물에 뿌리는 약",
+  "crude oil": "정제하지 않은 기름",
+  "deep hole": "깊은 구멍",
+  "deep-seated horror": "뿌리 깊은 무서움",
+  "deeply religious": "신앙이 깊은",
+  "devout": "믿음이 굳은",
+  "die out": "차츰 사라지다",
   "direct between users": "쓰는 이들 사이를 바로 잇는",
+  "dirtying agent": "오염을 일으키는 것",
+  "dive headlong": "곤두박이로 뛰어들다",
   "doctor for infants": "갓난아이를 보는 의사",
+  "doctor of medicine": "의학을 다루는 의사",
+  "dogged effort": "질기게 들이는 노력",
   "done with great care": "아주 조심스레 한",
   "drained of color": "빛깔이 빠진",
+  "dramatist": "희곡 작가",
+  "draw attention to": "~에 눈길을 끌다",
+  "dread of something": "무엇을 몹시 두려워함",
   "drop in on": "~에 들르다",
+  "drop steeply": "급하게 떨어지다",
+  "drug-making": "약을 만드는",
+  "drugstore": "약방",
+  "dummy pill": "약 성분이 없는 알약",
+  "duplicate sheet": "똑같이 떠낸 장",
+  "dust with pollen": "꽃가루를 묻히다",
+  "earth-wide": "지구 전역의",
+  "easy to grasp": "알아듣기 쉬운",
+  "end of the earth's axis": "지구 축의 끝",
   "equal in standing": "처지가 대등한 이",
   "ethnic groups": "여러 종족 집단",
+  "every so often": "이따금씩",
   "excerpt from a text": "글에서 따온 대목",
   "exclusive right to an invention": "발명에 대한 독점 권리",
+  "expecting the worst": "가장 나쁜 쪽을 내다보는",
+  "factory building": "공장 건물",
+  "far northern or southern point": "멀리 북쪽이나 남쪽 끝",
+  "far-fetched": "억지스러운",
   "fatherhood": "아버지 됨",
+  "fearing the worst": "가장 나쁜 일을 겁내는",
   "feeding on another": "남을 먹고 사는",
   "final reward": "끝에 받는 보답",
+  "first to go in": "맨 먼저 들어간 이",
   "five-cornered shape": "모가 다섯인 꼴",
   "five-sided figure": "다섯 변을 가진 도형",
   "fix with adhesive": "접착제로 고정하다",
   "flat of the hand": "손의 평평한 면",
+  "flower blade": "꽃의 얇은 잎",
+  "flower dust": "꽃의 가루",
+  "formal request to authority": "관청에 내는 정식 요청",
   "former times": "옛 시절",
+  "foul up": "더럽게 만들다",
+  "fouling substance": "더럽히는 물질",
+  "found everywhere": "어디서나 보이는",
   "framework of thought": "생각의 뼈대",
   "freeloader": "공짜로 얻어먹는 이",
+  "frolicsome": "뛰놀기 좋아하는",
+  "from time to time in a cycle": "돌아가며 때때로",
   "full of feeling": "감정이 가득한",
+  "full of fun": "재미가 가득한",
+  "gateway": "드나드는 문",
+  "germane": "들어맞는",
   "get involved in": "~에 발을 담그다",
   "give a soft touch": "부드럽게 손을 대다",
+  "give no peace to": "~을 가만두지 않다",
+  "give off moisture": "물기를 내보내다",
+  "give one's word": "약속을 하다",
+  "given to play": "놀이에 잘 빠지는",
+  "giving enjoyment": "즐거움을 주는",
+  "glad at heart": "마음이 흐뭇한",
+  "global in reach": "미치는 범위가 전 세계인",
   "global outbreak": "지구 규모의 발생",
+  "gloomy outlook": "어두운 시각",
   "go to see": "보러 가다",
   "going along with": "그대로 따라가는",
+  "good at winning people over": "사람을 잘 돌려세우는",
+  "grand doorway": "큼직한 문간",
   "grasp of the senses": "감각으로 붙잡음",
   "grassy field": "풀이 자란 들",
   "grave danger": "엄중한 위태로움",
@@ -594,154 +1244,332 @@ Object.assign(window.GLOSS, {
   "group of sentences": "문장 묶음",
   "hand on to the next": "다음 사람에게 넘기다",
   "handing over of money": "돈을 건넴",
+  "harry without let-up": "쉼 없이 괴롭히다",
   "hasty glance": "서둘러 본 것",
+  "hatch a scheme": "꾀를 꾸미다",
+  "have a hand in": "~에 손을 대다",
   "have a part in": "~에 한몫 있다",
+  "have as one's own": "자기 것으로 두다",
+  "having two opposite poles": "맞선 두 극을 가짐",
   "hawk goods": "물건을 외치며 팔다",
+  "heap": "쌓아 올린 것",
   "heathen": "이교의",
+  "help shape": "꼴을 잡는 데 힘이 되다",
+  "helping": "한 사람 몫",
   "highest point": "가장 높은 지점",
+  "highness of a sound": "소리가 높은 정도",
+  "hold a stance": "자세를 유지하다",
+  "hold title to": "~의 권리를 갖다",
+  "hollow in the ground": "땅의 우묶한 곳",
   "hollow of the hand": "손의 오목한 곳",
+  "holy traveler": "거룩한 길을 가는 이",
+  "hopeful in outlook": "앞을 밝게 보는",
+  "hound for beliefs": "믿음 때문에 몰아세우다",
+  "hound without let-up": "쉼 없이 몰아대다",
   "house of lawmakers": "입법자들의 모임",
+  "human-resources office": "사람을 맡아 보는 부서",
   "hush money": "입막음 돈",
   "idol-worshipping": "우상을 섬기는",
+  "inactive treatment": "효과 없는 처치",
+  "inborn nature": "타고난 바탕",
   "incomplete": "온전하지 않은",
+  "inflamed lungs": "염증이 생긴 허파",
   "inner hand": "손의 안쪽",
+  "insurance contract": "보험 계약서",
   "invention statute": "발명 관련 법령",
+  "irreverent": "경건하지 않은",
   "it may be that": "~일 수도 있다",
+  "jab at": "~을 쿡 찌르다",
   "join in": "끼어 들다",
   "join in with others": "남들과 어울려 하다",
   "journal": "학술지",
+  "keep going for ever": "끝없이 이어 가다",
+  "keep on regardless": "아랑곳없이 이어 가다",
   "land jutting into the sea": "바다로 튀어나온 땅",
+  "lasting for good": "영영 이어지는",
   "lasting many years": "여러 해를 버티는",
   "law on inventions": "발명에 관한 법",
   "lawmaking": "법을 만드는",
   "lay paving on": "~에 포장재를 깔다",
+  "lead the way": "앞장서 나아가다",
+  "leaf of a flower": "꽃의 잎",
   "legislative body": "법을 만드는 기구",
+  "likeness of a person": "사람을 닮게 그린 것",
+  "living growth": "살아서 자라는 것",
   "living on a host": "숙주에 붙어 사는",
+  "looking on the dark side": "어두운 쪽만 보는",
+  "love of knowledge": "앎을 사랑함",
   "loyal to one party": "한 정당에만 충성하는",
+  "lung infection": "허파에 생긴 감염",
+  "machine copy": "기계로 뜬 사본",
+  "made to be moved": "옮기도록 만든",
   "made-up road": "다져 만든 길",
   "magazine issued regularly": "때맞춰 나오는 잡지",
+  "main idea": "중심 생각",
+  "mainstay": "버팀목",
+  "make a hole in": "~에 구멍을 내다",
+  "make impure": "깨끗하지 않게 하다",
+  "make it one's own": "제 것으로 만들다",
+  "make last endlessly": "끝없이 가게 만들다",
   "make powerless": "힘을 못 쓰게 하다",
+  "make-up of a person": "사람을 이루는 바탕",
+  "male plant cells": "식물의 수컷 세포",
+  "material rather than mental": "마음이 아니라 물질의",
   "maybe": "어쩌면",
+  "medical practitioner": "의료를 하는 사람",
+  "medicine-related": "의약에 얽힌",
   "member of an activity": "활동의 구성원",
+  "mineral oil": "광물에서 얻은 기름",
   "minister of a church": "교회를 맡은 이",
   "minute fragment": "몹시 작은 부스러기",
   "mocking imitation": "비웃으며 흉내 냄",
   "model case": "본보기가 되는 사례",
+  "moisture from the skin": "살갗에서 나는 물기",
   "money forfeit": "물어야 하는 돈",
   "money paid after work ends": "일을 그친 뒤 받는 돈",
   "monthly pay": "달마다 받는 돈",
+  "morbid fear": "병적인 두려움",
+  "more than one": "하나보다 많은",
   "motherly and fatherly": "어머니 아버지의",
   "moving to pity": "안타깝게 만드는",
+  "mull over": "곱씹어 생각하다",
   "nations": "여러 나라",
   "neck of land": "좁고 긴 땅",
+  "never wearing off": "가시지 않는",
   "never-ending": "끝날 줄 모르는",
+  "non-surgical doctor": "수술을 하지 않는 의사",
   "not acting": "나서지 않는",
+  "not single": "하나가 아닌",
+  "not what it claims": "내세우는 것과 다른",
+  "note level": "음의 자리",
+  "number of inhabitants": "사는 사람의 수",
+  "observed event": "관찰된 일",
   "of a mother or father": "어버이의",
   "of first importance": "첫째로 중요한",
+  "of lesser weight": "무게가 덜한",
+  "of little account": "따질 값이 없는",
   "of perceiving": "알아차리는 것의",
+  "of several kinds": "여러 종류의",
+  "of state affairs": "나라 일의",
+  "of the body": "몸에 속한",
   "of the legislature": "입법 기관의",
   "official document": "공식 문서",
+  "official line": "공식으로 정한 방향",
   "old-age allowance": "노년에 주는 수당",
   "on the far side of": "~의 저쪽에",
+  "on the outer edge": "바깥 가장자리에 있는",
   "one certain": "어느 하나의",
   "one going by foot": "걸어서 가는 이",
   "one of the same age": "나이가 같은 이",
+  "one on a religious journey": "신앙의 길을 떠난 이",
   "one taking part": "한몫 맡은 이",
   "one who gives support": "도움을 주는 이",
   "one who joins in": "끼어든 사람",
+  "one who mends pipes": "관을 고치는 이",
   "one-eyed in politics": "정치에서 한쪽만 보는",
+  "oppress cruelly": "모질게 억누르다",
   "organism living off another": "남에게 붙어 사는 생물",
   "out of the common run": "흔하지 않은",
   "outside the church": "교회 밖의",
+  "own": "제 것으로 가지다",
+  "paint a picture of": "~을 그림으로 담다",
+  "painted figure": "그려 놓은 인물",
   "pallid": "해쓱한",
   "pare": "깎아 내다",
+  "party-related": "정당에 얽힌",
   "pass right through": "곧장 뚫고 지나가다",
   "paved surface": "포장된 바닥",
   "peep in": "들여다보다",
+  "people of a place": "그곳에 사는 사람들",
+  "period of change": "바뀌어 가는 시기",
   "person on foot": "걸어 다니는 사람",
+  "personal take": "개인이 보는 바",
+  "picture of a face": "얼굴을 담은 그림",
   "piece sewn on": "덧대어 박은 천",
+  "pipe fitter": "관을 잇는 일꾼",
   "pitiable": "딱한",
+  "place taken up": "차지하고 있는 자리",
   "play a part": "한 구실을 하다",
+  "plea in writing": "글로 올리는 호소",
+  "polar region": "극 지대",
   "political group": "정치 집단",
   "possibly": "혹시",
+  "powder from blossoms": "꽃에서 나는 가루",
+  "present in every corner": "구석마다 있는",
+  "prod with a finger": "손가락으로 쿡 찌르다",
   "proportion out of a hundred": "백을 기준으로 한 몫",
+  "public affairs": "공적인 일",
+  "public favor": "대중의 호감",
   "puff for air": "숨을 몰아쉬다",
+  "puncture": "구멍을 뚫다",
+  "push a hole through": "뚫어 구멍을 내다",
+  "put on for show": "보이기 위해 꾸민",
   "put out to graze": "풀 뜯게 내놓다",
   "quick look": "얼른 봄",
   "races of the world": "세상의 여러 인종",
+  "raised platform": "높인 단",
   "rate per hundred": "백에 대한 비",
+  "refusal to quit": "그만두지 않으려는 마음",
+  "refuse to give up": "물러서지 않다",
   "registered claim": "등록된 권리 주장",
   "regular customer": "단골손님",
   "remittance": "송금",
+  "represent in words": "말로 그려 내다",
+  "reproduced page": "다시 찍어 낸 면",
   "resemblance": "서로 닮음",
   "retirement pay": "은퇴 뒤 받는 돈",
+  "reverent": "경건한",
+  "ringing true": "참말로 들리는",
   "rob of movement": "움직임을 앗다",
+  "rock oil": "암석에서 나는 기름",
+  "rostrum": "강단",
+  "round diagram": "둥근 도표",
+  "rounded and full": "둥그스름하게 찬",
+  "rub to a shine": "문질러 윤을 내다",
   "ruddy": "혈색이 좋은",
   "rules for patents": "특허를 다루는 규정",
+  "run through": "꿰어 지나가다",
+  "running of a state": "나라를 꾸리는 일",
   "salary payment": "봉급 지급",
+  "science of government": "다스림을 다루는 학문",
+  "science of living processes": "살아가는 과정의 학문",
   "science of teaching": "가르치는 것에 관한 학문",
+  "score in a game": "경기에서 얻는 점",
+  "secret scheme": "몰래 꾸민 꾀",
   "section of writing": "글의 한 부분",
+  "seep into every part": "구석구석 스미다",
   "self-defeating statement": "스스로를 뒤집는 말",
   "sell door to door": "집집이 팔러 다니다",
   "send-up": "놀리는 흉내",
   "sense-based": "감각에 바탕한",
   "serial publication": "차례로 내는 간행물",
   "settling of a bill": "셈을 치름",
+  "sham medicine": "약인 척하는 것",
   "shape with five edges": "변이 다섯인 모양",
   "share expressed in hundredths": "백분으로 나타낸 몫",
+  "share given out": "나누어 준 몫",
   "share in": "~을 나누어 갖다",
+  "sharp opposition": "날카롭게 맞섬",
   "shepherd of a flock": "양 떼를 이끄는 이",
   "short break": "짧은 쉼",
   "show before an audience": "관객 앞에서 하는 공연",
+  "showing good manners": "예절을 갖춘",
   "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
   "sidewalk": "인도",
   "siding with a faction": "한 파에 붙는",
+  "signed appeal": "이름을 적어 올리는 호소",
   "single fix for everything": "하나로 다 해결하는 것",
+  "single out for notice": "따로 집어 알리다",
   "singled out": "따로 집어낸",
+  "singular": "하나뿐인",
+  "sit for a picture": "그림을 위해 앉아 있다",
   "slapdash": "엉성한",
   "small area": "좁은 구역",
+  "small swelling": "작게 부은 것",
+  "small-scale": "작은 규모의",
+  "smooth and refine": "매끄럽게 다듬다",
+  "soak through": "속까지 젖어들다",
+  "solemn undertaking": "엄숙히 다짐한 일",
+  "sorry state": "딱한 상태",
+  "sorry-looking": "보기에 딱한",
+  "source of contamination": "오염의 근원",
+  "speak in defense of": "~을 변호하여 말하다",
+  "speaker's stand": "말하는 이가 서는 자리",
   "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
   "spoof": "우스꽝스러운 흉내",
   "spot of ground": "땅의 한 자리",
+  "spot on the skin": "살갗에 난 점",
+  "spot where a thing stands": "물건이 놓인 지점",
+  "spread all through": "온통 퍼지다",
+  "spread right through": "속속까지 퍼진",
+  "staff of a firm": "회사의 일꾼들",
+  "stage author": "무대 글을 짓는 이",
+  "stage in a process": "과정의 한 대목",
   "staged act": "무대에 올린 연기",
+  "stand in position": "자리에 세우다",
+  "step along the way": "거쳐 가는 한 걸음",
   "stick on": "달라붙게 하다",
+  "story line": "이야기 줄기",
+  "strike an attitude": "몸짓을 꾸며 잡다",
+  "strike out anew": "새로 길을 내다",
+  "strip of goods by force": "힘으로 물건을 빼앗다",
   "strip the skin from": "~의 껍질을 벗겨 내다",
   "stroke gently": "살살 어루만지다",
+  "study of body function": "몸의 작용을 다루는 학문",
+  "study of medicines": "약을 다루는 학문",
+  "study of wisdom": "지혜를 따지는 학문",
   "sudden terror": "갑작스러운 무서움",
   "sum charged for breaking a rule": "규칙을 어겨 물리는 금액",
   "supreme": "더없이 높은",
+  "sure beyond doubt": "의심 없이 확실한",
   "surface a road": "길에 바닥을 깔다",
+  "survey of opinion": "의견을 묻는 조사",
+  "sweat": "땀",
+  "sweat heavily": "땀을 많이 흘리다",
   "sweeping disease": "휩쓸고 지나가는 병",
+  "system of thought": "생각의 체계",
+  "tailor to one person": "한 사람에게 맞추다",
   "take a quick look": "얼른 한번 보다",
   "take part": "한몫 맡다",
   "take the rind off": "껍데기를 떼다",
+  "taking of pictures": "그림을 담아냄",
   "tap lightly": "가볍게 두드리다",
   "teaching method": "가르치는 방식",
   "tenant farmer": "남의 땅을 부치는 농부",
   "the father's line": "아버지 쪽 핏줄",
+  "thing that occurs": "일어나는 일",
   "threat to life": "목숨을 위협하는 것",
   "throw oneself into": "~에 몸을 던지다",
+  "thrown into confusion": "헷갈려 버린",
+  "tight corner": "빠져나가기 힘든 자리",
   "times gone by": "흘러간 시절",
   "tiny bit": "아주 작은 조각",
+  "to do with government": "정부에 관한",
+  "to do with medicines": "약에 관한",
   "to do with the senses": "감각에 관한",
+  "to the point": "요점에 닿은",
+  "tone level": "소리의 높낮이",
   "topmost level": "맨 위 수준",
   "tout wares": "물건을 권하며 팔다",
+  "trivial in scale": "규모가 자잘한",
   "trough": "바닥, 골",
+  "turn over in the mind": "마음속에서 되뇌다",
+  "two-way split": "둘로 갈림",
   "typical pattern": "전형적인 틀",
+  "unable to make sense of it": "갈피를 못 잡는",
+  "unadorned": "꾸미지 않은",
+  "unconvincing": "믿음이 안 가는",
   "universal remedy": "두루 듣는 약",
   "unlike any other": "다른 무엇과도 다른",
   "unresisting": "맞서지 않는",
+  "upright support": "곧게 선 받침",
   "user-to-user": "쓰는 이끼리의",
+  "vegetation": "초목",
   "wage packet": "급료 봉투",
   "walker": "걷는 이",
+  "water-pipe worker": "물관을 다루는 사람",
+  "way in": "들어가는 길",
+  "way of looking at it": "그것을 보는 방식",
   "way of seeing": "보는 방식",
   "way through": "지나가는 길",
+  "wayfarer to a shrine": "성지로 가는 나그네",
+  "well satisfied": "넉넉히 흡족한",
+  "well-mannered": "몸가짐이 바른",
+  "well-padded": "살이 두둑한",
+  "wheel chart": "바퀴 모양 도표",
+  "wide liking": "널리 좋아함",
   "without a middle server": "중간 서버를 두지 않는",
+  "word of honor": "명예를 걸고 한 말",
   "work into": "~ 속으로 파고들다",
+  "work out a ruse": "속임수를 짜내다",
+  "workforce": "일하는 사람들",
+  "workings of the body": "몸이 돌아가는 원리",
   "worldwide epidemic": "전 세계에 퍼진 유행병",
   "wrapped goods": "싸 놓은 물건",
+  "wretchedly poor": "몹시 딱하게 가난한",
+  "writer of plays": "희곡을 쓰는 이",
   "written study": "글로 쓴 연구"
 });

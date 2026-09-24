@@ -687,7 +687,7 @@ window.VOCAB_B = [
     syn:["force entry","raid","burgle"], ant:["exit"] },
 
   { word:"break new ground", pron:"브레이크 뉴 그라운드", pos:"phr", level:"C1", meanings:["새 분야를 개척하다"],
-    syn:["innovate","pioneer","blaze a trail"], ant:["follow suit"] },
+    syn:["innovate","strike out anew","blaze a trail"], ant:["follow suit"] },
 
   { word:"break out", pron:"브레이크 아웃", pos:"phr", level:"B2", meanings:["(전쟁이) 발발하다","(화재가) 발생하다"],
     syn:["erupt","flare up","begin suddenly"], ant:["subside"] },

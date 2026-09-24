@@ -1271,7 +1271,6 @@ Object.assign(window.GLOSS, {
   "plain to see": "보면 바로 아는",
   "plantation of fruit": "과일 농장",
   "point in a direction": "어느 쪽으로 향하게 하다",
-  "point of view": "바라보는 자리",
   "positive thinking": "긍정으로 생각하기",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",

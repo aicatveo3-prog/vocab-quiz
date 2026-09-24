@@ -622,7 +622,7 @@ window.VOCAB_G = [
      distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
   { word:"guarantee", pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
     gov:{ prep:["against","of","for"], pat:"guarantee {{}} manufacturing defects", usage:"guarantee against ~ : ~에 대해 보증하다" },
-    syn:["assure","ensure","pledge"],
+    syn:["assure","ensure","give one's word"],
     ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },
 
   /* 원본 첫 뜻 '조합' 은 기존 표제어 combination 과 같아 '길드' 를 앞에 두었다. */

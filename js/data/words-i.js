@@ -1029,7 +1029,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '혁신하다' 를 첫 자리에 지켰다. break new ground(syn) 가
      참조한다. 원본의 '쇄신하다' 를 둘째 자리에 붙였다. */
   { word:"innovate", pron:"이너베이트", pos:"v", level:"C1", meanings:["혁신하다","쇄신하다"],
-    syn:["break new ground","modernize","pioneer"],
+    syn:["break new ground","modernize","lead the way"],
     ex:[{ s:"Companies that fail to {{}} soon fall behind.", f:"innovate", ko:"혁신하지 못하는 기업은 곧 뒤처진다." }] },
 
   { word:"innovation", pron:"이너베이션", pos:"n", level:"B2", meanings:["혁신","쇄신"],
@@ -2034,14 +2034,11 @@ Object.assign(window.GLOSS, {
   "payment plan": "납입 계획",
   "perfectionism": "완벽주의",
   "perfectly": "완벽하게",
-  "permeate": "배어들다",
   "permissive": "제약이 느슨한",
   "person-to-person": "사람과 사람 사이의",
   "personally": "개인적으로, 직접",
   "pest": "해충",
-  "pesticide": "농약",
   "pique": "돋우다, 자극하다",
-  "policy": "보험 증권",
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "precariousness": "불안한 상태",
