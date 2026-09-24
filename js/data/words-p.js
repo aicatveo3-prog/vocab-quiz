@@ -750,15 +750,134 @@ window.VOCAB_P = [
      원본은 '꿰뚫다, 관통하다' 였다. */
   { word:"pierce", pron:"피어스", pos:"v", level:"B2", meanings:["찌르다","관통하다"],
     syn:["make a hole in","run through","puncture"],
-    ex:[{ s:"The thorn can {{}} a thick glove.", f:"pierce", ko:"그 가시는 두터운 장갑도 찌를 수 있다." }] }
+    ex:[{ s:"The thorn can {{}} a thick glove.", f:"pierce", ko:"그 가시는 두터운 장갑도 찌를 수 있다." }] },
+
+  /* ── 챕터 7 ─────────────────────────────────────── */
+  /* 'pl-' 로 시작하는 낱말이 아홉 개 이어진다(place·placebo·plague·plain·
+     planetwide·plant·plausible·play a role in·playful·playwright·plead).
+     품사와 뜻이 서로 달라 같은 보드에서 헷갈리지 않는다.                       */
+
+  /* 원본은 '쌓다; 더미' 로 동사와 명사가 섞여 있었다. 참조가 없어 수능에서 흔한
+     명사('a pile of ~') 로 세웠다. */
+  { word:"pile", pron:"파일", pos:"n", level:"B1", meanings:["더미","무더기"],
+    syn:["heap","stack","mound"],
+    ex:[{ s:"A {{}} of books sat on the desk.", f:"pile", ko:"책 더미가 책상에 놓여 있었다." }] },
+
+  { word:"pilgrim", pron:"필그럼", pos:"n", level:"B2", meanings:["순례자"],
+    syn:["holy traveler","one on a religious journey","wayfarer to a shrine"],
+    ex:[{ s:"Every {{}} walked the last mile barefoot.", f:"pilgrim", ko:"순례자마다 마지막 1마일을 맨발로 걸었다." }] },
+
+  /* ★원본의 '주석, 중추' 에서 '주석' 은 '주축' 의 오타로 보인다. 수능에서 더 흔한
+     '기둥' 을 첫 자리에 두고 '중추' 를 남겼다. */
+  { word:"pillar", pron:"필러", pos:"n", level:"B2", meanings:["기둥","중추"],
+    syn:["column","upright support","mainstay"],
+    ex:[{ s:"A stone {{}} held up the roof.", f:"pillar", ko:"돌 기둥이 지붕을 받쳤다." }] },
+
+  { word:"pimple", pron:"핌플", pos:"n", level:"B1", meanings:["여드름","뾰루지"],
+    syn:["spot on the skin","small swelling","blemish"],
+    ex:[{ s:"A {{}} appeared on his chin.", f:"pimple", ko:"그의 턱에 여드름이 하나 났다." }] },
+
+  /* 승격 59 — 사전이 '개척자; 개척하다' 로 명사와 동사가 섞여 있었다. 참조 셋이
+     갈렸다 — frontiersman(F) 은 명사, innovate(I)·break new ground(B) 는 동사 쪽이다.
+     사전의 첫 갈래가 명사여서 명사로 세우고, 동사 자리 두 곳의 유의어를
+     'lead the way'·'strike out anew' 로 바꿨다(words-i.js·words-b.js). */
+  { word:"pioneer", pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
+    syn:["frontiersman","trailblazer","first to go in"],
+    ex:[{ s:"She was a {{}} of heart surgery.", f:"pioneer", ko:"그녀는 심장 수술의 개척자였다." }] },
+
+  { word:"pious", pron:"파이어스", pos:"adj", level:"C1", meanings:["신앙심이 깊은","독실한"],
+    syn:["devout","deeply religious","reverent"], ant:["irreverent"],
+    ex:[{ s:"His {{}} habits never changed.", f:"pious", ko:"그의 신앙심이 깊은 습관은 바뀌지 않았다." }] },
+
+  /* 승격 60 — 사전 표현과 글자까지 같다(crater, C).
+     원본의 '구멍, 패인 곳, 구덩이' 세 갈래 중 사전 쪽을 남겼다. */
+  { word:"pit", pron:"핏", pos:"n", level:"B1", meanings:["구덩이","움푹한 곳"],
+    syn:["crater","deep hole","hollow in the ground"],
+    ex:[{ s:"They dug a {{}} for the rubbish.", f:"pit", ko:"그들은 쓰레기를 묻을 구덩이를 팠다." }] },
+
+  /* 원본은 '정도, 정점; 음높이; 힘껏 내던지다' 로 세 갈래에 명사와 동사가 섞여
+     있었다. 참조가 없어 '음높이' 갈래로 세웠다 — '정도' 는 degree(정도, D) 의
+     첫 뜻과 같아진다. */
+  { word:"pitch", pron:"피치", pos:"n", level:"B2", meanings:["음높이","가락"],
+    syn:["tone level","highness of a sound","note level"],
+    ex:[{ s:"She sang at a higher {{}} than before.", f:"pitch", ko:"그녀는 전보다 높은 음높이로 노래했다." }] },
+
+  { word:"pitiful", pron:"피티풀", pos:"adj", level:"B2", meanings:["측은한","초라한"],
+    syn:["arousing pity","wretchedly poor","sorry-looking"],
+    ex:[{ s:"The shed was a {{}} sight.", f:"pitiful", ko:"그 헛간은 초라한 광경이었다." }] },
+
+  /* 승격 61 — 사전이 '배치하다; 장소' 로 동사와 명사가 섞여 있었다.
+     lay(L) 가 동사여서 동사로 세우고 사전의 첫 갈래 '배치하다' 를 지켰다.
+     원본 첫 뜻은 명사 '장소' 였지만 참조를 보존하는 쪽을 택했다 —
+     '장소' 는 location(장소, 위치, L) 의 첫 뜻과도 같아진다. */
+  { word:"place", pron:"플레이스", pos:"v", level:"B1", meanings:["배치하다","놓다"],
+    syn:["lay","set down","stand in position"],
+    ex:[{ s:"Please {{}} the vase on the shelf.", f:"place", ko:"그 꽃병을 선반에 놓아 주세요." }] },
+
+  { word:"placebo", pron:"플러시보", pos:"n", level:"C1", meanings:["가짜 약","위약"],
+    syn:["dummy pill","sham medicine","inactive treatment"],
+    ex:[{ s:"Half the group received a {{}}.", f:"placebo", ko:"그 집단의 절반은 가짜 약을 받았다." }] },
+
+  /* 승격 62 — 사전이 '괴롭히다; 역병' 으로 동사와 명사가 섞여 있었다.
+     참조 둘(afflict, A · haunt, H) 이 모두 동사여서 동사로 세웠다.
+     원본 첫 뜻은 명사 '전염병' 이었지만 참조 둘을 보존하는 쪽을 택했다. */
+  { word:"plague", pron:"플레이그", pos:"v", level:"C1", meanings:["괴롭히다","들볶다"],
+    syn:["afflict","hound without let-up","give no peace to"],
+    ex:[{ s:"Doubts continued to {{}} him.", f:"plague", ko:"의심이 계속 그를 괴롭혔다." }] },
+
+  /* 승격 63 — 사전이 '평범한; 명백한' 이었다. 구분 기호만 쉼표로 바꿨다
+     (comprehensible, C · luxurious 반의어, L · ornate 반의어, O — 세 곳).
+     원본은 '분명한, 꾸밈없는; 검소한, 평범한; 평지, 벌판' 으로 형용사와 명사가
+     섞인 다섯 갈래였다. */
+  { word:"plain", pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
+    syn:["comprehensible","unadorned","easy to grasp"], ant:["ornate"],
+    ex:[{ s:"She wore a {{}} grey coat.", f:"plain", ko:"그녀는 평범한 회색 외투를 입었다." }] },
+
+  /* 원본은 '지구적 규모의, 지구 전체에 미치는(= worldwide)' 였다.
+     "=" 표기를 걷고 한 갈래로 정리했다. */
+  { word:"planetwide", pron:"플래닛와이드", pos:"adj", level:"C2", meanings:["지구적 규모의"],
+    syn:["across the whole planet","global in reach","earth-wide"],
+    ex:[{ s:"The study found a {{}} pattern.", f:"planetwide", ko:"그 연구는 지구적 규모의 양상을 찾아냈다." }] },
+
+  /* 승격 64 — 사전이 '식물; 심다' 로 명사와 동사가 섞여 있었다(발음이 없었다).
+     참조가 없어 사전의 첫 갈래 '식물' 을 지키고 원본의 '공장' 을 붙였다. */
+  { word:"plant", pron:"플랜트", pos:"n", level:"B1", meanings:["식물","공장"],
+    syn:["living growth","vegetation","factory building"],
+    ex:[{ s:"This {{}} needs very little water.", f:"plant", ko:"이 식물은 물이 아주 적게 필요하다." }] },
+
+  /* 승격 65 — 사전 표현과 글자까지 같다(convincing, C).
+     원본의 '타당한, 그럴 듯한' 중 '타당한' 은 pertinent 쪽으로 넘겼다. */
+  { word:"plausible", pron:"플로저블", pos:"adj", level:"B2", meanings:["그럴듯한","설득력 있는"],
+    syn:["convincing","believable","ringing true"], ant:["far-fetched"],
+    ex:[{ s:"He gave a {{}} excuse.", f:"plausible", ko:"그는 그럴듯한 변명을 했다." }] },
+
+  { word:"play a role in", pron:"플레이 어 롤 인", pos:"phr", level:"B1", meanings:["~에서 역할을 하다"],
+    syn:["have a hand in","help shape","contribute to"] },
+
+  { word:"playful", pron:"플레이풀", pos:"adj", level:"B1", meanings:["놀기 좋아하는","장난기 많은"],
+    syn:["full of fun","frolicsome","given to play"], ant:["solemn"],
+    ex:[{ s:"The puppy is {{}} all day.", f:"playful", ko:"그 강아지는 온종일 놀기 좋아한다." }] },
+
+  /* 원본은 '각본가, 극작가, 각색자' 세 갈래였다. 두 갈래로 줄였다. */
+  { word:"playwright", pron:"플레이라이트", pos:"n", level:"C1", meanings:["극작가","각본가"],
+    syn:["writer of plays","dramatist","stage author"],
+    ex:[{ s:"The {{}} rewrote the last act.", f:"playwright", ko:"그 극작가는 마지막 막을 다시 썼다." }] },
+
+  /* 승격 66 — 사전 표현과 글자까지 같다(appeal, A · implore, I).
+     원본의 '간청하다' 는 implore 쪽 뜻이어서 사전 쪽을 남겼다. */
+  { word:"plead", pron:"플리드", pos:"v", level:"B2", meanings:["탄원하다","변호하다"],
+    syn:["appeal","beg earnestly","speak in defense of"],
+    ex:[{ s:"She came to {{}} for her brother.", f:"plead", ko:"그녀는 오라비를 위해 탄원하러 왔다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "above all others": "다른 무엇보다 위인",
   "academic article": "학술 글",
+  "across the whole planet": "지구 전체에 걸친",
   "alike in form": "꼴이 비슷한",
   "angle of view": "보는 각도",
+  "arousing pity": "안타깝게 하는",
   "art of instruction": "가르치는 기술",
   "art of the camera": "사진기의 예술",
   "ashen": "핏기 없는",
@@ -767,7 +886,9 @@ Object.assign(window.GLOSS, {
   "be destroyed": "무너져 없어지다",
   "bearing on the matter": "그 일과 맞닿은",
   "become aware of": "~을 알아차리게 되다",
+  "beg earnestly": "간절히 빌다",
   "being a father": "아버지라는 처지",
+  "believable": "믿을 만한",
   "bequeath": "물려주다",
   "blind alarm": "앞뒤 없는 놀람",
   "block of text": "글의 한 덩이",
@@ -794,12 +915,16 @@ Object.assign(window.GLOSS, {
   "coming back each year": "해마다 다시 오는",
   "coming from parents": "어버이에게서 나온",
   "congressional": "국회에 관한",
+  "contribute to": "~에 이바지하다",
   "country laborer": "시골 일꾼",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
   "crop spray": "작물에 뿌리는 약",
   "crude oil": "정제하지 않은 기름",
+  "deep hole": "깊은 구멍",
   "deep-seated horror": "뿌리 깊은 무서움",
+  "deeply religious": "신앙이 깊은",
+  "devout": "믿음이 굳은",
   "die out": "차츰 사라지다",
   "direct between users": "쓰는 이들 사이를 바로 잇는",
   "doctor for infants": "갓난아이를 보는 의사",
@@ -807,21 +932,28 @@ Object.assign(window.GLOSS, {
   "dogged effort": "질기게 들이는 노력",
   "done with great care": "아주 조심스레 한",
   "drained of color": "빛깔이 빠진",
+  "dramatist": "희곡 작가",
   "dread of something": "무엇을 몹시 두려워함",
   "drop in on": "~에 들르다",
   "drug-making": "약을 만드는",
   "drugstore": "약방",
+  "dummy pill": "약 성분이 없는 알약",
   "duplicate sheet": "똑같이 떠낸 장",
+  "earth-wide": "지구 전역의",
+  "easy to grasp": "알아듣기 쉬운",
   "equal in standing": "처지가 대등한 이",
   "ethnic groups": "여러 종족 집단",
   "every so often": "이따금씩",
   "excerpt from a text": "글에서 따온 대목",
   "exclusive right to an invention": "발명에 대한 독점 권리",
   "expecting the worst": "가장 나쁜 쪽을 내다보는",
+  "factory building": "공장 건물",
+  "far-fetched": "억지스러운",
   "fatherhood": "아버지 됨",
   "fearing the worst": "가장 나쁜 일을 겁내는",
   "feeding on another": "남을 먹고 사는",
   "final reward": "끝에 받는 보답",
+  "first to go in": "맨 먼저 들어간 이",
   "five-cornered shape": "모가 다섯인 꼴",
   "five-sided figure": "다섯 변을 가진 도형",
   "fix with adhesive": "접착제로 고정하다",
@@ -832,12 +964,17 @@ Object.assign(window.GLOSS, {
   "found everywhere": "어디서나 보이는",
   "framework of thought": "생각의 뼈대",
   "freeloader": "공짜로 얻어먹는 이",
+  "frolicsome": "뛰놀기 좋아하는",
   "from time to time in a cycle": "돌아가며 때때로",
   "full of feeling": "감정이 가득한",
+  "full of fun": "재미가 가득한",
   "germane": "들어맞는",
   "get involved in": "~에 발을 담그다",
   "give a soft touch": "부드럽게 손을 대다",
+  "give no peace to": "~을 가만두지 않다",
   "give off moisture": "물기를 내보내다",
+  "given to play": "놀이에 잘 빠지는",
+  "global in reach": "미치는 범위가 전 세계인",
   "global outbreak": "지구 규모의 발생",
   "gloomy outlook": "어두운 시각",
   "go to see": "보러 가다",
@@ -852,20 +989,29 @@ Object.assign(window.GLOSS, {
   "handing over of money": "돈을 건넴",
   "harry without let-up": "쉼 없이 괴롭히다",
   "hasty glance": "서둘러 본 것",
+  "have a hand in": "~에 손을 대다",
   "have a part in": "~에 한몫 있다",
   "hawk goods": "물건을 외치며 팔다",
+  "heap": "쌓아 올린 것",
   "heathen": "이교의",
+  "help shape": "꼴을 잡는 데 힘이 되다",
   "highest point": "가장 높은 지점",
+  "highness of a sound": "소리가 높은 정도",
+  "hollow in the ground": "땅의 우묶한 곳",
   "hollow of the hand": "손의 오목한 곳",
+  "holy traveler": "거룩한 길을 가는 이",
   "hound for beliefs": "믿음 때문에 몰아세우다",
+  "hound without let-up": "쉼 없이 몰아대다",
   "house of lawmakers": "입법자들의 모임",
   "human-resources office": "사람을 맡아 보는 부서",
   "hush money": "입막음 돈",
   "idol-worshipping": "우상을 섬기는",
+  "inactive treatment": "효과 없는 처치",
   "inborn nature": "타고난 바탕",
   "incomplete": "온전하지 않은",
   "inner hand": "손의 안쪽",
   "invention statute": "발명 관련 법령",
+  "irreverent": "경건하지 않은",
   "it may be that": "~일 수도 있다",
   "join in": "끼어 들다",
   "join in with others": "남들과 어울려 하다",
@@ -878,8 +1024,10 @@ Object.assign(window.GLOSS, {
   "law on inventions": "발명에 관한 법",
   "lawmaking": "법을 만드는",
   "lay paving on": "~에 포장재를 깔다",
+  "lead the way": "앞장서 나아가다",
   "leaf of a flower": "꽃의 잎",
   "legislative body": "법을 만드는 기구",
+  "living growth": "살아서 자라는 것",
   "living on a host": "숙주에 붙어 사는",
   "looking on the dark side": "어두운 쪽만 보는",
   "love of knowledge": "앎을 사랑함",
@@ -887,6 +1035,7 @@ Object.assign(window.GLOSS, {
   "machine copy": "기계로 뜬 사본",
   "made-up road": "다져 만든 길",
   "magazine issued regularly": "때맞춰 나오는 잡지",
+  "mainstay": "버팀목",
   "make a hole in": "~에 구멍을 내다",
   "make it one's own": "제 것으로 만들다",
   "make last endlessly": "끝없이 가게 만들다",
@@ -916,6 +1065,7 @@ Object.assign(window.GLOSS, {
   "non-surgical doctor": "수술을 하지 않는 의사",
   "not acting": "나서지 않는",
   "not what it claims": "내세우는 것과 다른",
+  "note level": "음의 자리",
   "observed event": "관찰된 일",
   "of a mother or father": "어버이의",
   "of first importance": "첫째로 중요한",
@@ -931,6 +1081,7 @@ Object.assign(window.GLOSS, {
   "one certain": "어느 하나의",
   "one going by foot": "걸어서 가는 이",
   "one of the same age": "나이가 같은 이",
+  "one on a religious journey": "신앙의 길을 떠난 이",
   "one taking part": "한몫 맡은 이",
   "one who gives support": "도움을 주는 이",
   "one who joins in": "끼어든 사람",
@@ -969,6 +1120,8 @@ Object.assign(window.GLOSS, {
   "reproduced page": "다시 찍어 낸 면",
   "resemblance": "서로 닮음",
   "retirement pay": "은퇴 뒤 받는 돈",
+  "reverent": "경건한",
+  "ringing true": "참말로 들리는",
   "rob of movement": "움직임을 앗다",
   "rock oil": "암석에서 나는 기름",
   "round diagram": "둥근 도표",
@@ -986,6 +1139,7 @@ Object.assign(window.GLOSS, {
   "sense-based": "감각에 바탕한",
   "serial publication": "차례로 내는 간행물",
   "settling of a bill": "셈을 치름",
+  "sham medicine": "약인 척하는 것",
   "shape with five edges": "변이 다섯인 모양",
   "share expressed in hundredths": "백분으로 나타낸 몫",
   "share in": "~을 나누어 갖다",
@@ -1001,20 +1155,27 @@ Object.assign(window.GLOSS, {
   "singled out": "따로 집어낸",
   "slapdash": "엉성한",
   "small area": "좁은 구역",
+  "small swelling": "작게 부은 것",
   "small-scale": "작은 규모의",
   "soak through": "속까지 젖어들다",
+  "sorry-looking": "보기에 딱한",
+  "speak in defense of": "~을 변호하여 말하다",
   "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
   "spoof": "우스꽝스러운 흉내",
   "spot of ground": "땅의 한 자리",
+  "spot on the skin": "살갗에 난 점",
   "spread all through": "온통 퍼지다",
   "spread right through": "속속까지 퍼진",
   "staff of a firm": "회사의 일꾼들",
+  "stage author": "무대 글을 짓는 이",
   "stage in a process": "과정의 한 대목",
   "staged act": "무대에 올린 연기",
+  "stand in position": "자리에 세우다",
   "step along the way": "거쳐 가는 한 걸음",
   "stick on": "달라붙게 하다",
+  "strike out anew": "새로 길을 내다",
   "strip the skin from": "~의 껍질을 벗겨 내다",
   "stroke gently": "살살 어루만지다",
   "study of body function": "몸의 작용을 다루는 학문",
@@ -1046,22 +1207,27 @@ Object.assign(window.GLOSS, {
   "to do with medicines": "약에 관한",
   "to do with the senses": "감각에 관한",
   "to the point": "요점에 닿은",
+  "tone level": "소리의 높낮이",
   "topmost level": "맨 위 수준",
   "tout wares": "물건을 권하며 팔다",
   "trivial in scale": "규모가 자잘한",
   "trough": "바닥, 골",
   "typical pattern": "전형적인 틀",
   "unable to make sense of it": "갈피를 못 잡는",
+  "unadorned": "꾸미지 않은",
   "unconvincing": "믿음이 안 가는",
   "universal remedy": "두루 듣는 약",
   "unlike any other": "다른 무엇과도 다른",
   "unresisting": "맞서지 않는",
+  "upright support": "곧게 선 받침",
   "user-to-user": "쓰는 이끼리의",
+  "vegetation": "초목",
   "wage packet": "급료 봉투",
   "walker": "걷는 이",
   "way of looking at it": "그것을 보는 방식",
   "way of seeing": "보는 방식",
   "way through": "지나가는 길",
+  "wayfarer to a shrine": "성지로 가는 나그네",
   "wheel chart": "바퀴 모양 도표",
   "without a middle server": "중간 서버를 두지 않는",
   "work into": "~ 속으로 파고들다",
@@ -1069,5 +1235,7 @@ Object.assign(window.GLOSS, {
   "workings of the body": "몸이 돌아가는 원리",
   "worldwide epidemic": "전 세계에 퍼진 유행병",
   "wrapped goods": "싸 놓은 물건",
+  "wretchedly poor": "몹시 딱하게 가난한",
+  "writer of plays": "희곡을 쓰는 이",
   "written study": "글로 쓴 연구"
 });
