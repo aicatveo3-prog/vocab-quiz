@@ -2459,7 +2459,6 @@ Object.assign(window.GLOSS, {
   "outgoing person":"사교적인 사람",
   "people person":"사람을 좋아하는 사람",
   "phenomenal":"경이로운",
-  "put out":"불을 끄다",
   "quench":"물로 끄다",
   "snuff out":"꺼 버리다",
   "sociable type":"어울리기 좋아하는 사람",

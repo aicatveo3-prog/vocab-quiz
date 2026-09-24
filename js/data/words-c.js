@@ -2021,7 +2021,6 @@ Object.assign(window.GLOSS, {
   "producer":"생산자",
   "provincial":"지방의, 편협한",
   "public":"공개된, 공공의",
-  "punish":"처벌하다",
   "purify":"정화하다",
   "radical":"급진적인",
   "rambling":"산만한, 종횡무진인",

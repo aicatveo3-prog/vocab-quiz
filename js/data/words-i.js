@@ -2059,7 +2059,6 @@ Object.assign(window.GLOSS, {
   "protected": "보호되는",
   "prying": "남의 일을 캐는",
   "public works": "공공 사업",
-  "publish": "출간하다",
   "put in": "넣다",
   "put in place": "자리에 놓다",
   "put money into": "~에 돈을 넣다",

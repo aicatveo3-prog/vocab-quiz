@@ -1757,7 +1757,6 @@ Object.assign(window.GLOSS, {
   "masquerade":"가면, 위장",
   "mismatch":"불일치, 부조화",
   "obnoxious":"아주 불쾌한, 몹시 기분 나쁜",
-  "pupil":"학생, 제자",
   "rebate":"환급금, 할인",
   "revolting":"역겨운, 구역질나는",
   "revulsion":"혐오, 역겨움",

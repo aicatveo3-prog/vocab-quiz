@@ -1727,7 +1727,6 @@ window.GLOSS = {
   "poor":"가난한",
   "proud":"자랑스러운",
   "proven":"입증된",
-  "punishment":"처벌",
   "ratify":"비준하다",
   "reasoned":"합리적인",
   "reduce":"줄이다",
