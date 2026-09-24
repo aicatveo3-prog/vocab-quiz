@@ -91,8 +91,12 @@ window.VOCAB_B = [
     syn:["yelp","howl","yap"],
     ex:[{ s:"The dog began to {{}} at every stranger.", f:"bark", ko:"그 개는 낯선 사람마다 짖기 시작했다." }] },
 
+  /* ★ syn 의 "shed" 를 "farm hut" 으로 바꿨다. 사전이 shed 를 '흘리다; 헛간'
+     으로 적어 두었는데 S 세트에서는 동사 '흘리다' 로 선다 — 명사 목록에 동사가
+     끼게 된다. 남은 "stable" 도 S 세트에서 형용사 '안정된' 으로 서므로
+     챕터 14 에서 한 번 더 갈아야 한다(지금 떼면 발음만 남은 유령 키가 된다). */
   { word:"barn", pron:"반", pos:"n", level:"B1", meanings:["헛간","광"],
-    syn:["shed","stable","storehouse"],
+    syn:["farm hut","stable","storehouse"],
     ex:[{ s:"The farmer stored the hay in the {{}}.", f:"barn", ko:"농부는 건초를 헛간에 보관했다." }] },
 
   { word:"barometer", pron:"버라미터", pos:"n", level:"C1", meanings:["기압계","지표"],
@@ -815,8 +819,11 @@ window.VOCAB_B = [
     syn:["overflow","brim","be bursting"], ant:["be subdued"] },
 
   /* ── bu ────────────────────────────────────── */
+  /* ★ syn 의 "shoot" 를 "young growth" 로 바꿨다. 사전이 '싹; 쏘다' 였는데
+     S 세트에서는 동사 '쏘다' 로 선다. 남은 "sprout" 도 동사 '싹트다' 로 서므로
+     챕터 14 에서 한 번 더 갈아야 한다. */
   { word:"bud", pron:"버드", pos:"n", level:"B1", meanings:["싹","봉오리"],
-    syn:["sprout","shoot","germ"],
+    syn:["young growth","sprout","germ"],
     ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
 
   { word:"budget", pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
@@ -1007,7 +1014,6 @@ Object.assign(window.GLOSS, {
   "resonate with":"~에게 공감을 얻다",
   "secondhand":"중고의",
   "setback":"차질, 방해",
-  "sharp":"날카로운, 선명한",
   "silence":"침묵, 정적",
   "slightly":"약간, 조금",
   "slim down":"살을 빼다, 규모를 줄이다",

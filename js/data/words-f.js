@@ -1552,7 +1552,6 @@ Object.assign(window.GLOSS, {
   "press on":"밀고 나아가다",
   "reverie":"몽상",
   "self-denial":"자기 절제",
-  "shortcoming":"단점, 결점",
   "spigot":"주둥이, 꼭지",
   "starvation":"굶어 죽음, 기아",
   "tap":"수도꼭지",

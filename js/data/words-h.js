@@ -75,8 +75,11 @@ window.VOCAB_H = [
   /* 원본은 '(배를) 항구에 정박시키다; ~에 장소[거처]를 제공하다' 다.
      첫 뜻에 괄호를 두지 않는 규약 때문에 순서를 바꿨다.
      동사 쪽으로 모았다 — 명사 '항구' 는 port 로 충분히 다뤄진다. */
+  /* ★ syn 의 "shelter" 를 "take in and hide" 로 바꿨다. 사전이 '피난처;
+     보호하다' 로 명사와 동사를 섞어 두었는데, 원본이 명사 쪽이라 S 세트에서는
+     명사 '피난처' 로 선다 — 동사 목록에 명사가 끼게 된다. */
   { word:"harbor", pron:"하버", pos:"v", level:"B2", meanings:["품다","숨겨 주다"],
-    syn:["shelter","conceal","nurture"],
+    syn:["conceal","nurture","take in and hide"],
     ex:[{ s:"He continued to {{}} doubts about the plan.", f:"harbor", ko:"그는 그 계획에 대한 의심을 계속 품었다." }] },
 
   { word:"hard-wired", pron:"하드 와이어드", pos:"adj", level:"C1", meanings:["타고난","고정된"],
