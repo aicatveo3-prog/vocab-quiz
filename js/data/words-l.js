@@ -820,7 +820,6 @@ Object.assign(window.GLOSS, {
   "rent out": "세를 놓다",
   "research facility": "연구 시설",
   "rest": "놓여 있다",
-  "rubbish": "잡쓰레기",
   "saga": "긴 무훈담",
   "science of language": "언어 과학",
   "seep out": "스며 나오다",

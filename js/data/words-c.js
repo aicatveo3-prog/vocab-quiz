@@ -468,8 +468,10 @@ window.VOCAB_C = [
     syn:["sequence","timeline","order"],
     ex:[{ s:"Scholars still argue over the {{}} of these events.", f:"chronology", ko:"학자들은 이 사건들의 연대 순서를 두고 여전히 다툰다." }] },
 
+  /* 유의어 round 를 plump and curved 로 바꿨다 — round 를 '한 차례'(명사) 로
+     세우기 때문이다. 이 자리는 '둥근' 뜻을 노린 것이었다. */
   { word:"chubby", pron:"처비", pos:"adj", level:"B2", meanings:["통통한","토실토실한"],
-    syn:["plump","stout","round"], ant:["skinny"],
+    syn:["plump","stout","plump and curved"], ant:["skinny"],
     ex:[{ s:"The baby waved a {{}} hand at the camera.", f:"chubby", ko:"아기가 통통한 손을 카메라에 흔들었다." }] },
 
   { word:"chuckle", pron:"처클", pos:"v", level:"B2", meanings:["낄낄 웃다","혼자 기뻐하다"],
@@ -1932,8 +1934,10 @@ window.VOCAB_C = [
     syn:["bend","arc","turn"], ant:["straighten"],
     ex:[{ s:"The road begins to {{}} near the bridge.", f:"curve", ko:"그 길은 다리 근처에서 휘기 시작한다." }] },
 
+  /* 유의어 routine 을 done as usual 로 바꿨다. routine 이 R 세트 챕터 14 표제어
+     (일상, 늘 하는 일 · n)로 올라가면 형용사 표제어의 유의어 자리에 명사 뜻이 뜬다. */
   { word:"customary", pron:"커스터머리", pos:"adj", level:"C1", meanings:["습관적인","관례적인"],
-    syn:["usual","traditional","routine"], ant:["unusual"],
+    syn:["usual","traditional","done as usual"], ant:["unusual"],
     ex:[{ s:"It is {{}} to bow slightly on arrival.", f:"customary", ko:"도착할 때 살짝 고개를 숙이는 것이 관례다." }] },
 
   { word:"customize", pron:"커스터마이즈", pos:"v", level:"B2", meanings:["주문 제작하다","맞춤화하다"],
@@ -2044,7 +2048,6 @@ Object.assign(window.GLOSS, {
   "rivalry":"경쟁, 대립",
   "rude":"무례한",
   "rudeness":"무례함",
-  "ruthless":"무자비한",
   "scatter":"흩뿌리다",
   "scattering":"흩어짐, 산재",
   "seek":"찾다, 구하다",

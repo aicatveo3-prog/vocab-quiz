@@ -1253,8 +1253,11 @@ window.VOCAB_D = [
     syn:["contributor","giver","benefactor"], ant:["recipient"],
     ex:[{ s:"The {{}} asked to remain completely anonymous.", f:"donor", ko:"그 기증자는 완전히 익명으로 남기를 요청했다." }] },
 
+  /* 유의어 ruin 을 utter collapse 로 바꿨다. ruin 이 R 세트 챕터 14 표제어
+     (파괴하다, 망치다 · v)로 올라가면 명사 표제어의 유의어 자리에 동사 뜻이 뜬다.
+     사전의 ruin 값도 '파괴하다; 폐허' 로 품사가 섞여 있었다. */
   { word:"doom", pron:"둠", pos:"n", level:"C1", meanings:["파멸","비운"],
-    syn:["ruin","downfall","destruction"],
+    syn:["utter collapse","downfall","destruction"],
     ex:[{ s:"A sense of {{}} hung over the whole village.", f:"doom", ko:"파멸의 기운이 마을 전체에 감돌았다." }] },
 
   { word:"dormant", pron:"도먼트", pos:"adj", level:"C2", meanings:["활동을 멈춘","잠든"],
@@ -1276,8 +1279,10 @@ window.VOCAB_D = [
     syn:["deposit","advance","initial payment"],
     ex:[{ s:"They saved for years to afford the {{}}.", f:"down payment", ko:"그들은 계약금을 마련하려고 여러 해 저축했다." }] },
 
+  /* 유의어 ruin 을 fall from power 로 바꿨다 — ruin 을 동사로 세우기 때문이다
+     (doom 도 같이 손질했다). */
   { word:"downfall", pron:"다운폴", pos:"n", level:"C1", meanings:["몰락","실각"],
-    syn:["ruin","collapse","undoing"], ant:["rise"],
+    syn:["fall from power","collapse","undoing"], ant:["rise"],
     ex:[{ s:"Greed eventually proved to be his {{}}.", f:"downfall", ko:"탐욕이 결국 그의 몰락 원인이 됐다." }] },
 
   { word:"downplay", pron:"다운플레이", pos:"v", level:"C1", meanings:["경시하다","축소하다"],
@@ -1808,7 +1813,6 @@ Object.assign(window.GLOSS, {
   "rebut":"반론하다, 맞받아치다",
   "repugnant":"혐오스러운, 아주 불쾌한",
   "reusable":"재사용 가능한",
-  "rule out":"배제하다, 제외하다",
   "satisfaction":"만족, 충족",
   "send off":"발송하다, 보내다",
   "share out":"나눠 주다, 분배하다",
@@ -1912,7 +1916,6 @@ Object.assign(window.GLOSS, {
   "pull out":"물러나다, 손을 떼다",
   "questionable":"의심스러운, 문제가 있는",
   "rough copy":"초고, 초벌 원고",
-  "runoff":"흘러내린 물, 유출수",
   "saturate":"적시다, 포화시키다",
   "sewerage":"하수 처리, 하수도",
   "shrink from":"~을 피하다, 꺼리다",

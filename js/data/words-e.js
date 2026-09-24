@@ -2171,7 +2171,6 @@ Object.assign(window.GLOSS, {
   "prominence":"두드러짐, 현저함",
   "put into code":"부호로 바꾸다",
   "put into effect":"시행하다",
-  "run into":"우연히 만나다",
   "send out":"내보내다, 발신하다",
   "surround":"둘러싸다, 에워싸다",
   "sympathetic":"동정하는, 공감하는",
