@@ -2186,7 +2186,6 @@ Object.assign(window.GLOSS, {
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",
-  "valid": "유효한",
   "verification": "입증, 검증",
   "viral illness": "바이러스 질환",
   "volatility": "변동이 심함",

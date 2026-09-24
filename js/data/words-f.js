@@ -1935,7 +1935,6 @@ Object.assign(window.GLOSS, {
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
   "usable":"쓸 수 있는",
-  "vapor":"김, 수증기",
   "worthwhile":"할 만한 값이 있는",
 
   /* ── 11차: furious ~ fuzzy (21개, 마지막) ───────────
