@@ -1017,7 +1017,6 @@ Object.assign(window.GLOSS, {
   "silence":"침묵, 정적",
   "slim down":"살을 빼다, 규모를 줄이다",
   "smolder":"연기만 내며 타다",
-  "solvent":"지급 능력이 있는",
   "stand up":"일어서다",
   "stay out of":"~에 관여하지 않다",
   "straighten":"곧게 하다, 펴다",

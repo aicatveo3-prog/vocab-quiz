@@ -1185,12 +1185,133 @@ window.VOCAB_S = [
 
   { word:"sober", pron:"소버", pos:"adj", level:"C1", meanings:["술 취하지 않은","냉철한"],
     syn:["not drunk","clear-minded","level in judgment"], ant:["drunk"],
-    ex:[{ s:"He stayed {{}} all evening.", f:"sober", ko:"그는 저녁 내내 술에 취하지 않았다." }] }
+    ex:[{ s:"He stayed {{}} all evening.", f:"sober", ko:"그는 저녁 내내 술에 취하지 않았다." }] },
+
+  /* ── 챕터 11 ───────────────────────────────────── */
+  /* ★ solvent 가 이 세트에서 가장 크게 어긋나 있던 자리다. 원본(교재) 은
+     '용액' 이라고 적어 두었지만 그것은 solution 의 뜻이다. solvent 의 실제 뜻은
+     형용사 '지급 능력이 있는' 이고, 참조 셋 가운데 bankrupt(파산한)·
+     insolvent(지불 불능의) 가 바로 그쪽이다. 남은 한 곳 acid(A) 만 화학 쪽
+     표현 'dissolving agent' 로 갈았다.
+
+     ⚠ liquid(L) 도 손질했다. solid 가 형용사 '단단한, 입방의' 로 서면 명사
+     liquid 의 반의어 자리에 형용사가 들어가게 된다. 'solid matter'(고체) 로
+     갈았다.
+
+     solitary(홀로 지내는) 와 solitude(고독, 혼자 지냄) 는 품사로 갈린다.
+     somewhat(다소) 은 slightly(약간, 조금 · 챕터 9) 와 갈랐다.
+     sole(유일한, 독점의) 과 solely(단독으로) 도 품사로 갈린다. */
+
+  { word:"so-called", pron:"소 콜드", pos:"adj", level:"B2", meanings:["이른바"],
+    syn:["named as such","going by that name","said to be"],
+    ex:[{ s:"The {{}} expert knew little.", f:"so-called", ko:"그 이른바 전문가는 아는 것이 적었다." }] },
+
+  /* 승격 97 — 사전 단일값 유지. 참조 aloof(A)·antisocial(A)·gregarious(G)
+     세 곳의 화면은 바뀌지 않는다. gregarious(사교적인) 와 글자가 같아 서로의
+     오답에서 자동으로 빠진다. */
+  { word:"sociable", pron:"소셔블", pos:"adj", level:"B2", meanings:["사교적인"],
+    syn:["gregarious","fond of company","easy with people"], ant:["aloof","antisocial"],
+    ex:[{ s:"He is a {{}} young man.", f:"sociable", ko:"그는 사교적인 청년이다." }] },
+
+  { word:"socialize", pron:"소셜라이즈", pos:"v", level:"B2", meanings:["사귀다","사회화하다"],
+    syn:["mix with others","spend time together","take on social ways"],
+    ex:[{ s:"She has little time to {{}}.", f:"socialize", ko:"그녀는 사귈 시간이 거의 없다." }] },
+
+  { word:"sociocultural", pron:"소시오컬처럴", pos:"adj", level:"C1", meanings:["사회문화적인"],
+    syn:["of society and culture","to do with people and custom","social and cultural at once"],
+    ex:[{ s:"The study takes a {{}} view.", f:"sociocultural", ko:"그 연구는 사회문화적인 관점을 취한다." }] },
+
+  { word:"sociology", pron:"소시알러지", pos:"n", level:"B2", meanings:["사회학"],
+    syn:["study of society","science of social life","study of human groups"],
+    ex:[{ s:"She teaches {{}} at the college.", f:"sociology", ko:"그녀는 그 대학에서 사회학을 가르친다." }] },
+
+  { word:"solace", pron:"살러스", pos:"n", level:"C2", meanings:["위안","위로"],
+    syn:["comfort in sorrow","easing of grief","relief from pain"],
+    ex:[{ s:"She found {{}} in music.", f:"solace", ko:"그녀는 음악에서 위안을 찾았다." }] },
+
+  { word:"sold-out", pron:"솔드 아웃", pos:"adj", level:"B2", meanings:["매진된"],
+    syn:["all tickets gone","none left to buy","fully taken up"],
+    ex:[{ s:"They played to a {{}} hall.", f:"sold-out", ko:"그들은 매진된 공연장에서 연주했다." }] },
+
+  /* 승격 98 — 사전 글자 유지. 참조 exclusive(E) 의 화면은 바뀌지 않는다. */
+  { word:"sole", pron:"소울", pos:"adj", level:"B2", meanings:["유일한","독점의"],
+    syn:["exclusive","one and only","held by one alone"],
+    ex:[{ s:"She is the {{}} owner of the shop.", f:"sole", ko:"그녀가 그 가게의 유일한 주인이다." }] },
+
+  /* 승격 99 — 사전 단일값 유지. 참조 exclusively(E) 의 화면은 바뀌지 않는다.
+     위 sole(형용사) 과 품사로 갈린다. */
+  { word:"solely", pron:"소울리", pos:"adv", level:"B2", meanings:["단독으로"],
+    syn:["exclusively","on one's own","by oneself alone"],
+    ex:[{ s:"The decision rests {{}} with her.", f:"solely", ko:"그 결정은 단독으로 그녀에게 달려 있다." }] },
+
+  /* 원본은 네 갈래였다. 둘로 줄였다. */
+  { word:"solemnity", pron:"설렘니티", pos:"n", level:"C2", meanings:["근엄함","엄숙함"],
+    syn:["grave manner","deep seriousness","weight of a rite"],
+    ex:[{ s:"The service kept its {{}}.", f:"solemnity", ko:"그 예식은 엄숙함을 지켰다." }] },
+
+  /* 원본의 셋째 갈래('호객하다') 는 버렸다. */
+  { word:"solicit", pron:"설리싯", pos:"v", level:"C2", meanings:["간청하다","요청하다"],
+    syn:["ask earnestly","beg for","seek by asking"],
+    ex:[{ s:"They began to {{}} funds for the school.", f:"solicit", ko:"그들은 학교를 위한 기금을 요청하기 시작했다." }] },
+
+  /* 승격 100 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 cubic(C)·firm(F) 두 곳의
+     설명이 '단단한; 입방의' 에서 '단단한, 입방의' 가 된다. 명사인 liquid(L) 의
+     반의어 자리는 'solid matter'(고체) 로 갈았다.
+     firm(단단한, 회사) 과 첫 갈래가 글자까지 같아 자동 배제된다. */
+  { word:"solid", pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
+    syn:["cubic","firm","hard right through"],
+    ex:[{ s:"The table is made of {{}} oak.", f:"solid", ko:"그 탁자는 단단한 참나무로 만들어졌다." }] },
+
+  /* 승격 101 — 사전 단일값 유지. 참조 lonely(L) 의 화면은 바뀌지 않는다. */
+  { word:"solitary", pron:"살러테리", pos:"adj", level:"C1", meanings:["홀로 지내는"],
+    syn:["lonely","living alone","without company"],
+    ex:[{ s:"He led a {{}} life on the island.", f:"solitary", ko:"그는 그 섬에서 홀로 지내는 삶을 살았다." }] },
+
+  /* 위 solitary(형용사) 와 품사로 갈린다. 챕터 4 의 seclusion(호젓함, 외딴 곳)
+     과도 갈라 두었다. */
+  { word:"solitude", pron:"살러튜드", pos:"n", level:"C1", meanings:["고독","혼자 지냄"],
+    syn:["state of being alone","life apart from others","quiet of one's own"],
+    ex:[{ s:"He writes best in {{}}.", f:"solitude", ko:"그는 혼자 있을 때 가장 잘 쓴다." }] },
+
+  { word:"soluble", pron:"살류블", pos:"adj", level:"C2", meanings:["액체에 녹는"],
+    syn:["able to dissolve","melting in water","breaking up in liquid"],
+    ex:[{ s:"The powder is fully {{}}.", f:"soluble", ko:"그 가루는 완전히 액체에 녹는다." }] },
+
+  /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
+     '해결책; 용액' 에서 '해결책, 용액' 이 된다. */
+  { word:"solution", pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
+    syn:["answer to a problem","way out of trouble","liquid mixture"],
+    ex:[{ s:"They looked for a simple {{}}.", f:"solution", ko:"그들은 간단한 해결책을 찾았다." }] },
+
+  /* 승격 103 — ★ 원본의 '용액' 은 위 solution 의 뜻이다. 사전값
+     '지급 능력이 있는' 을 지켰다 — 참조 bankrupt(B)·insolvent(I) 두 곳이
+     그쪽이라 화면이 바뀌지 않는다. 남은 acid(A) 한 곳만 갈았다. */
+  { word:"solvent", pron:"살번트", pos:"adj", level:"C2", meanings:["지급 능력이 있는"],
+    syn:["able to pay debts","free of debt","having funds to settle"], ant:["bankrupt","insolvent"],
+    ex:[{ s:"The firm is still {{}}.", f:"solvent", ko:"그 회사는 아직 지급 능력이 있다." }] },
+
+  /* slightly(약간, 조금 · 챕터 9) 와 갈랐다 — 이쪽이 조금 더 큰 정도다. */
+  { word:"somewhat", pron:"섬왓", pos:"adv", level:"B2", meanings:["다소"],
+    syn:["to some extent","rather more than a little","in some degree"],
+    ex:[{ s:"The result was {{}} surprising.", f:"somewhat", ko:"그 결과는 다소 놀라웠다." }] },
+
+  /* 승격 104 — 사전 글자 유지. 참조 acoustic(A) 의 화면은 바뀌지 않는다. */
+  { word:"sonic", pron:"사닉", pos:"adj", level:"C1", meanings:["음파의","소리의"],
+    syn:["acoustic","of sound waves","to do with sound"],
+    ex:[{ s:"The jet made a {{}} boom.", f:"sonic", ko:"그 제트기가 음파의 폭음을 냈다." }] },
+
+  /* 승격 105 — 사전 글자 유지. 참조 console(C)·madden(M) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"soothe", pron:"수드", pos:"v", level:"B2", meanings:["달래다","진정시키다"],
+    syn:["console","calm down","quiet a distress"], ant:["madden"],
+    ex:[{ s:"A warm bath will {{}} the ache.", f:"soothe", ko:"따뜻한 목욕이 그 통증을 진정시킬 것이다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "a little": "조금은",
+  "able to dissolve": "녹을 수 있는",
+  "able to pay debts": "빚을 갚을 수 있는",
   "academic": "학업의, 학구적인",
   "accept as one's own load": "제 짐으로 받아들이다",
   "act of fending off attack": "공격을 물리치는 일",
@@ -1200,12 +1321,15 @@ Object.assign(window.GLOSS, {
   "afraid": "두려워하는",
   "all skin and bone": "살가죽과 뼈뿐인",
   "all the better for it": "그 덕에 더 나은",
+  "all tickets gone": "표가 다 나간",
   "angle of a surface": "면이 기운 각도",
+  "answer to a problem": "문제에 대한 답",
   "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "army officer of low rank": "계급이 낮은 군 간부",
   "as of the present": "현재로서는",
+  "ask earnestly": "간절히 청하다",
   "at one and the same time": "같은 때에 한꺼번에",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
@@ -1214,6 +1338,7 @@ Object.assign(window.GLOSS, {
   "barely enough": "겨우 될 만한",
   "bear the weight of": "~의 무게를 지다",
   "bed into place": "자리에 박아 앉히다",
+  "beg for": "~을 애걸하다",
   "begin a task": "일에 손을 대다",
   "begin and stay": "시작해 이어지다",
   "black profile": "검게 보이는 옆모습",
@@ -1225,13 +1350,16 @@ Object.assign(window.GLOSS, {
   "branch of industry": "산업의 한 가지",
   "breach of divine law": "신의 법을 어김",
   "break with a crack": "뚝 소리 내며 끊다",
+  "breaking up in liquid": "액체에서 흩어지는",
   "breathe noisily in sleep": "잘 때 시끄럽게 숨 쉬다",
   "bring in by stealth": "몰래 들여오다",
   "bring up from water": "물에서 끌어올리다",
   "brother or sister": "형제 또는 자매",
   "building of many floors": "층이 많은 건물",
   "butchery of animals": "짐승을 잡음",
+  "by oneself alone": "제 혼자서만",
   "calm and untroubled": "잔잔하고 흔들림 없는",
+  "calm down": "가라앉히다",
   "careful check": "꼼꼼한 확인",
   "carried by nerves": "신경으로 전해지는",
   "cast a shadow on": "~에 그림자를 드리우다",
@@ -1259,6 +1387,7 @@ Object.assign(window.GLOSS, {
   "close tight": "꽉 닫다",
   "coastal trading town": "바닷가 무역 고을",
   "come to rest": "자리를 잡고 멈추다",
+  "comfort in sorrow": "슬픔 속의 다독임",
   "commit oneself to": "~에 나서기로 하다",
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
@@ -1276,6 +1405,7 @@ Object.assign(window.GLOSS, {
   "dark in intent": "속뜻이 어두운",
   "dark outline": "어두운 테두리",
   "dazzling to see": "보기에 눈부신",
+  "deep seriousness": "깊은 진지함",
   "deep sleep": "깊은 잠",
   "delay the progress of": "~의 진행을 늦추다",
   "delicacy of response": "반응의 고움",
@@ -1285,6 +1415,7 @@ Object.assign(window.GLOSS, {
   "disappointing": "실망스러운",
   "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
+  "dissolving agent": "녹이는 물질",
   "division by race": "인종에 따른 갈림",
   "done without care": "공을 들이지 않은",
   "drain water": "배수로로 흐르는 물",
@@ -1295,6 +1426,7 @@ Object.assign(window.GLOSS, {
   "drunk": "술에 취한",
   "ease into without notice": "티 안 나게 스며들다",
   "easily affected": "쉽게 영향을 받는",
+  "easing of grief": "시름을 덜어 줌",
   "edge of the sea": "바다의 가장자리",
   "effect not aimed at": "겨냥하지 않은 영향",
   "elderly person": "나이가 든 사람",
@@ -1322,6 +1454,7 @@ Object.assign(window.GLOSS, {
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
+  "free of debt": "빚이 없는",
   "free of self-interest": "제 이익이 없는",
   "free of stir": "들썩임이 없는",
   "freedom from fuss": "번거로움이 없음",
@@ -1330,6 +1463,7 @@ Object.assign(window.GLOSS, {
   "fulfilling": "보람 있는",
   "full of doubt": "의심으로 가득한",
   "full of salt": "소금기가 많은",
+  "fully taken up": "자리가 다 찬",
   "gather up in one go": "한 번에 그러모으다",
   "get smaller": "작아지다",
   "get ~ under way": "~이 돌아가기 시작하게 하다",
@@ -1343,9 +1477,11 @@ Object.assign(window.GLOSS, {
   "go back and forth": "오가다",
   "go by stealth": "남의 눈을 피해 가다",
   "go under water": "물밑으로 들어가다",
+  "going by that name": "그 이름으로 통하는",
   "going on at once": "한꺼번에 진행되는",
   "gracefully thin": "맵시 있게 마른",
   "grant for study": "공부에 주는 지원금",
+  "grave manner": "무게 있는 몸가짐",
   "greet with respect": "예를 갖춰 맞이하다",
   "guard with a cover": "덮어서 지키다",
   "guarding oneself": "제 몸을 지킴",
@@ -1357,12 +1493,15 @@ Object.assign(window.GLOSS, {
   "hand-written name": "손으로 쓴 이름",
   "handsaw": "손톱질 도구",
   "happening together": "함께 일어나는",
+  "hard right through": "속까지 굳은",
   "hard to come by": "구하기 어려운",
   "hardly ever": "좀체 ~ 없는",
   "haven": "안식처",
+  "having funds to settle": "갚을 자금이 있는",
   "head of a department": "부처를 이끄는 사람",
   "healed cut": "아문 베인 자리",
   "heap upon": "~에 수북이 얹다",
+  "held by one alone": "한 사람만 가진",
   "high-rise tower": "높이 솟은 탑 모양 건물",
   "hinting at evil": "나쁜 기미를 띤",
   "hired hand": "품을 받고 일하는 사람",
@@ -1373,6 +1512,7 @@ Object.assign(window.GLOSS, {
   "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
+  "in some degree": "얼마간은",
   "in the same moment": "같은 순간에",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
@@ -1396,8 +1536,11 @@ Object.assign(window.GLOSS, {
   "let fall": "떨어지게 하다",
   "let fly an arrow": "화살을 날리다",
   "level in judgment": "판단이 고른",
+  "life apart from others": "남들과 떨어진 삶",
   "lift and drop the shoulders": "어깨를 올렸다 내리다",
   "lift with a scoop": "국자로 떠올리다",
+  "liquid mixture": "액체로 섞인 것",
+  "living alone": "혼자 사는",
   "long attack from outside": "밖에서 오래 밀어붙이는 공격",
   "long in practice": "오래 익혀 온",
   "long telling-off": "길게 이어지는 꾸중",
@@ -1417,10 +1560,12 @@ Object.assign(window.GLOSS, {
   "mark of one's own": "제 것임을 보이는 표",
   "mass killing": "무리를 죽임",
   "meant truly": "참으로 한 말인",
+  "melting in water": "물에서 풀리는",
   "member of the senate": "상원에 속한 사람",
   "mental health": "정신 건강",
   "messy in work": "일솜씨가 어수선한",
   "miss on purpose": "일부러 빼먹다",
+  "mix with others": "남들과 어울리다",
   "money for tuition": "수업료에 쓰는 돈",
   "moral fault": "도리에 어긋난 잘못",
   "moral lecture": "도리를 일러 주는 말",
@@ -1429,11 +1574,13 @@ Object.assign(window.GLOSS, {
   "move goods illegally": "물건을 불법으로 옮기다",
   "move to another state": "다른 상태로 옮김",
   "move without being seen": "보이지 않게 움직이다",
+  "named as such": "그렇게 불리는",
   "named by oneself": "제가 제 이름을 붙인",
   "narrow in shape": "꼴이 좁은",
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
   "non-commissioned officer": "임관하지 않은 간부",
+  "none left to buy": "살 것이 남지 않은",
   "not deep": "깊지 않은",
   "not drunk": "술기운이 없는",
   "not new": "새것이 아닌",
@@ -1445,13 +1592,17 @@ Object.assign(window.GLOSS, {
   "nothing but": "다른 것 없이 오직",
   "of bodily pleasure": "몸의 즐거움에 속한",
   "of small width": "폭이 작은",
+  "of society and culture": "사회와 문화에 속한",
   "of sound mind": "정신이 온전한",
+  "of sound waves": "소리 물결에 속한",
   "of the senses": "감각에 속한",
   "of this world": "이 세상에 속한",
   "office assistant": "사무를 돕는 사람",
   "official approval": "공식 승인",
   "older member of society": "사회의 연장자",
+  "on one's own": "혼자 힘으로",
   "on the face of it": "겉으로 보면",
+  "one and only": "오직 하나뿐인",
   "one division": "하나의 갈림",
   "one of advanced years": "연치가 높은 사람",
   "one of two school terms": "두 기간 중 하나",
@@ -1501,14 +1652,18 @@ Object.assign(window.GLOSS, {
   "quake in dread": "두려움에 흔들리다",
   "quick to feel": "느낌이 빠른",
   "quick writing system": "빠르게 적는 방식",
+  "quiet a distress": "괴로움을 잠잠하게 하다",
+  "quiet of one's own": "제 것인 고요",
   "quiet spot far off": "멀찍이 떨어진 조용한 곳",
   "rain down on": "~에 비처럼 내리다",
   "raise the shoulders": "어깨를 올리다",
   "rarely": "좀처럼 ~ 않는",
+  "rather more than a little": "조금보다는 더",
   "read fast for the gist": "요지만 빨리 읽다",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
   "reduce to basics": "기본만 남기다",
+  "relief from pain": "아픔을 덜어 줌",
   "responsive to touch": "닿는 것에 반응하는",
   "rest with eyes shut": "눈을 감고 쉼",
   "rich tang": "짙은 맛깔",
@@ -1528,15 +1683,18 @@ Object.assign(window.GLOSS, {
   "rush about": "부리나케 돌아다니다",
   "safe place for animals": "동물이 지내는 안전한 곳",
   "safety lesson": "안전 수업",
+  "said to be": "~라고 하는",
   "salt-laden": "소금이 섞인",
   "salty": "짠",
   "saving from sin": "죄에서 건져 냄",
+  "science of social life": "사회 생활을 다루는 학문",
   "scour with a brush": "솔로 닦아 내다",
   "scrawl": "휘갈겨 적다",
   "screen against light": "빛을 막는 가림막",
   "screen from danger": "위험에서 가려 주다",
   "secret plan": "몰래 세운 계획",
   "seeing only the near": "가까운 것만 보는",
+  "seek by asking": "물어 가며 구하다",
   "seize quickly": "재빨리 붙잡다",
   "self-styled": "스스로 내세운",
   "send a bullet": "탄알을 보내다",
@@ -1575,9 +1733,12 @@ Object.assign(window.GLOSS, {
   "sneak past customs": "세관을 몰래 지나다",
   "sneering": "코웃음 치는",
   "snuffle": "코를 훌쩍이다",
+  "social and cultural at once": "사회와 문화를 함께 보는",
+  "solid matter": "고체",
   "some in number": "수가 얼마쯤 되는",
   "soundness of mind": "정신의 온전함",
   "spacecraft in orbit": "궤도를 도는 비행체",
+  "spend time together": "함께 시간을 보내다",
   "spit": "뱉는 침",
   "spittle": "입에서 나온 침",
   "split into parts": "여러 몫으로 쪼갬",
@@ -1588,6 +1749,7 @@ Object.assign(window.GLOSS, {
   "standing out most": "가장 도드라지는",
   "start a journey": "길을 나서다",
   "start ~ going": "~이 굴러가게 하다",
+  "state of being alone": "혼자인 상태",
   "state of being full": "가득 찬 상태",
   "state of being shut away": "틀어박혀 있는 상태",
   "stenography": "기호 필기법",
@@ -1596,12 +1758,15 @@ Object.assign(window.GLOSS, {
   "strike with the palm": "손바닥으로 치다",
   "string of words": "낱말을 이은 줄",
   "study award": "학업에 주는 상금",
+  "study of human groups": "사람 무리를 살피는 학문",
+  "study of society": "사회를 살피는 학문",
   "surrounding of a town": "고을을 둘러쌈",
   "surroundings of a scene": "장면을 둘러싼 것들",
   "take by force": "힘으로 빼앗다",
   "take hold": "뿌리를 내리다",
   "take in and hide": "받아들여 숨겨 주다",
   "take on a burden": "짐을 짊어지다",
+  "take on social ways": "사회의 방식을 익히다",
   "take out a place in": "~에 자리를 잡아 두다",
   "take with a jerk": "확 잡아당기다",
   "talk of the town": "장안의 이야깃거리",
@@ -1621,6 +1786,8 @@ Object.assign(window.GLOSS, {
   "to all appearances": "누가 봐도 그렇게",
   "to do with feeling": "느낌에 관한",
   "to do with hygiene": "위생에 관한",
+  "to do with people and custom": "사람살이와 풍습에 관한",
+  "to do with sound": "소리에 관한",
   "together in time": "때를 맞춰 함께",
   "too little to go round": "돌아갈 만큼이 못 되는",
   "toothed blade": "이가 난 날",
@@ -1647,12 +1814,15 @@ Object.assign(window.GLOSS, {
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
   "waste water": "버려지는 물",
+  "way out of trouble": "곤란에서 벗어날 길",
   "weak point": "약한 데",
   "weep aloud": "소리 내어 울다",
+  "weight of a rite": "의식이 지닌 무게",
   "weighty in effect": "영향이 무거운",
   "wet right through": "속까지 적시다",
   "win over by charm": "매력으로 끌어들이다",
   "with a keen edge": "날이 선 채로",
+  "without company": "함께할 이가 없는",
   "without shame": "부끄러움 없이",
   "witty attack in writing": "글로 재치 있게 찌름",
   "words making a full thought": "한 생각을 다 담은 말",

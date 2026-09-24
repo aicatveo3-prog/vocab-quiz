@@ -1528,7 +1528,6 @@ Object.assign(window.GLOSS, {
   "sole control": "단독 지배",
   "soliloquy": "혼자 하는 말",
   "solo speech": "혼자 하는 말하기",
-  "soothe": "달래다",
   "soothing": "마음을 누그러뜨리는",
   "speak indistinctly": "또렷하지 않게 말하다",
   "spell wrongly": "철자를 틀리게 쓰다",

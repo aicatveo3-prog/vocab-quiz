@@ -2359,8 +2359,6 @@ Object.assign(window.GLOSS, {
   "shout of surprise":"놀라서 내는 소리",
   "showcase":"전시 행사",
   "shutting out":"몰아냄",
-  "sole":"유일한, 독점의",
-  "solely":"단독으로",
   "trip":"여행, 이동",
   "wear out":"지치게 하다",
   "wield":"휘두르다, 행사하다",
