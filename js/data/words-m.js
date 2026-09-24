@@ -1509,7 +1509,6 @@ Object.assign(window.GLOSS, {
   "sadness": "슬픔",
   "saying": "속담",
   "scant": "간신히 되는",
-  "scornful": "멸시하는",
   "scrupulously": "빈틈없이",
   "secured debt": "담보가 잡힌 빚",
   "self-defense skill": "호신 기술",

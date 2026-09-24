@@ -254,29 +254,158 @@ window.VOCAB_S = [
      odor(O) 세 곳의 설명이 '향기; 냄새' 에서 '향기, 냄새' 가 된다. */
   { word:"scent", pron:"센트", pos:"n", level:"B2", meanings:["향기","냄새"],
     syn:["aroma","fragrance","odor"],
-    ex:[{ s:"The {{}} of roses filled the room.", f:"scent", ko:"장미의 향기가 방을 채웠다." }] }
+    ex:[{ s:"The {{}} of roses filled the room.", f:"scent", ko:"장미의 향기가 방을 채웠다." }] },
+
+  /* ── 챕터 3 ────────────────────────────────────── */
+  /* 일부러 글자를 맞춰 서로를 배제시킨 자리가 둘이다.
+       scope   범위          ← range(범위, 다양함 · R) · extent(범위, 정도 · E)
+       seclude 격리하다, 고립시키다 ← isolate(고립시키다, 격리하다 · I) 와 앞뒤만 다르다
+     둘 다 첫 낱말이 상대의 갈래와 글자가 같아 meaningsOverlap 이 자동으로 뺀다.
+
+     scribble 은 원본이 '몰래 살짝 보다' 로 적혀 있었다. peek 의 뜻이 잘못
+     끼어든 것이라 '갈겨쓰다, 낙서하다' 로 고쳤다.
+     seasoned 는 원본의 '양념을 한' 을 버렸다 — 바로 앞 season(양념하다) 과
+     같은 자리다. 사람을 가리키는 '경험이 많은, 노련한' 만 남겼다.
+     seal 은 원본이 [v+n] 이었다. 참조가 없어 동사로만 세웠다('물개' 는 버렸다). */
+
+  /* 승격 ⑲ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 conspiracy(C)·conspire(C)
+     두 곳의 설명이 '계획; 음모' 에서 '계획, 음모' 가 된다. */
+  { word:"scheme", pron:"스킴", pos:"n", level:"B2", meanings:["계획","음모"],
+    syn:["conspiracy","plot","secret plan"],
+    ex:[{ s:"They devised a {{}} to raise funds.", f:"scheme", ko:"그들은 자금을 모을 계획을 짜냈다." }] },
+
+  /* 승격 ⑳ — 사전 단일값 유지. 참조 intellectual(I)·learned(L) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"scholarly", pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
+    syn:["academic","learned","intellectual"],
+    ex:[{ s:"He wrote a {{}} article on the topic.", f:"scholarly", ko:"그는 그 주제로 학문적인 논문을 썼다." }] },
+
+  { word:"scholarship", pron:"스칼러십", pos:"n", level:"B1", meanings:["장학금"],
+    syn:["grant for study","study award","money for tuition"],
+    ex:[{ s:"She won a full {{}} to the college.", f:"scholarship", ko:"그녀는 그 대학의 전액 장학금을 받았다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"scoop up", pron:"스쿱 업", pos:"phr", level:"B2", meanings:["퍼 올리다"],
+    syn:["lift with a scoop","gather up in one go","dig out and raise"] },
+
+  /* 승격 ㉑ — 사전 단일값 유지. 참조 coverage(C)·extent(E) 두 곳의 화면은
+     바뀌지 않는다. '범위' 한 갈래로 둔 것이 range·extent 와 맞물려 배제되는
+     장치다. */
+  { word:"scope", pron:"스코프", pos:"n", level:"B2", meanings:["범위"],
+    syn:["coverage","extent","area covered"],
+    ex:[{ s:"The {{}} of the study was too narrow.", f:"scope", ko:"그 연구의 범위는 너무 좁았다." }] },
+
+  /* 승격 ㉒ — 사전 단일값 유지. 참조 mocking(M) 의 화면은 바뀌지 않는다. */
+  { word:"scornful", pron:"스콘풀", pos:"adj", level:"C1", meanings:["멸시하는"],
+    syn:["contemptuous","disdainful","looking down on"],
+    ex:[{ s:"She gave him a {{}} look.", f:"scornful", ko:"그녀는 그를 멸시하는 눈으로 보았다." }] },
+
+  /* 승격 ㉓ — 사전은 '서두르다; 다투다' 였다. 참조가 없어 원본의 두 갈래를
+     그대로 살렸다 — 화면이 바뀌는 곳은 없다. */
+  { word:"scramble", pron:"스크램블", pos:"v", level:"B2", meanings:["재빨리 움직이다","앞다투다"],
+    syn:["rush about","vie with others","move fast in haste"],
+    ex:[{ s:"Fans began to {{}} for the last tickets.", f:"scramble", ko:"팬들은 남은 표를 앞다투어 잡으려 했다." }] },
+
+  /* 승격 ㉔ — 사전은 '폐기하다; 조각' 으로 동사와 명사가 섞여 있었다. 참조
+     셋 중 call off(C)·do away with(D) 가 동사여서 동사로 세웠다. 그 두 곳의
+     설명이 '폐기하다; 조각' 에서 '폐기하다, 버리다' 가 된다.
+     나머지 한 곳 junk(J) 는 명사라 그 자리만 rubbish 로 갈아 두었다. */
+  { word:"scrap", pron:"스크랩", pos:"v", level:"B2", meanings:["폐기하다","버리다"],
+    syn:["discard","do away with","throw out as useless"],
+    ex:[{ s:"The city will {{}} the old plan.", f:"scrap", ko:"시는 낡은 계획을 폐기할 것이다." }] },
+
+  { word:"scratch", pron:"스크래치", pos:"v", level:"B1", meanings:["긁다","긁어서 내다"],
+    syn:["claw at","rub with nails","make a mark by rubbing"],
+    ex:[{ s:"Do not {{}} the fresh paint.", f:"scratch", ko:"갓 칠한 페인트를 긁지 마라." }] },
+
+  /* 승격 ㉕ — 사전 단일값 유지(filter, F). 구·표현이라 예문은 두지 않는다. */
+  { word:"screen out", pron:"스크린 아웃", pos:"phr", level:"B2", meanings:["걸러 내어 막다"],
+    syn:["filter","sift out","block by sorting"] },
+
+  /* ★ 원본은 '몰래 살짝 보다' 였다 — peek 의 뜻이 끼어든 것이라 고쳤다. */
+  { word:"scribble", pron:"스크리블", pos:"v", level:"C1", meanings:["갈겨쓰다","낙서하다"],
+    syn:["scrawl","write in a hurry","jot down roughly"],
+    ex:[{ s:"He began to {{}} notes in the margin.", f:"scribble", ko:"그는 여백에 메모를 갈겨쓰기 시작했다." }] },
+
+  { word:"scrub", pron:"스크럽", pos:"v", level:"B2", meanings:["북북 문지르다"],
+    syn:["rub hard","clean by rubbing","scour with a brush"],
+    ex:[{ s:"She had to {{}} the kitchen floor.", f:"scrub", ko:"그녀는 주방 바닥을 북북 문질러야 했다." }] },
+
+  { word:"scrutinize", pron:"스크루터나이즈", pos:"v", level:"C2", meanings:["세심히 살피다"],
+    syn:["inspect","examine closely","look at in fine detail"],
+    ex:[{ s:"The board will {{}} every figure.", f:"scrutinize", ko:"이사회는 모든 수치를 세심히 살필 것이다." }] },
+
+  /* scrutinize(v) 와 품사로 갈린다. */
+  { word:"scrutiny", pron:"스크루터니", pos:"n", level:"C2", meanings:["자세한 조사"],
+    syn:["close look","careful check","close examination"],
+    ex:[{ s:"The report came under close {{}}.", f:"scrutiny", ko:"그 보고서는 자세한 조사를 받았다." }] },
+
+  { word:"seal", pron:"실", pos:"v", level:"B2", meanings:["봉인하다"],
+    syn:["close tight","fasten shut","shut with wax"],
+    ex:[{ s:"Please {{}} the envelope before posting.", f:"seal", ko:"보내기 전에 봉투를 봉인해 주세요." }] },
+
+  { word:"seaport", pron:"시포트", pos:"n", level:"B2", meanings:["항구 도시"],
+    syn:["port city","town with a harbor","coastal trading town"],
+    ex:[{ s:"Busan is a busy {{}}.", f:"seaport", ko:"부산은 분주한 항구 도시다." }] },
+
+  /* 구·표현이라 예문은 두지 않는다. */
+  { word:"search for", pron:"서치 포", pos:"phr", level:"B1", meanings:["~을 찾다"],
+    syn:["look for","hunt for","try to find"] },
+
+  { word:"season", pron:"시즌", pos:"v", level:"B2", meanings:["양념하다"],
+    syn:["add salt and spice","flavor with spice","give taste to"],
+    ex:[{ s:"Remember to {{}} the soup lightly.", f:"season", ko:"수프에 가볍게 양념하는 것을 잊지 마라." }] },
+
+  /* 원본의 '양념을 한' 은 바로 위 season 과 같은 자리라 버렸다. */
+  { word:"seasoned", pron:"시즌드", pos:"adj", level:"C1", meanings:["경험이 많은","노련한"],
+    syn:["experienced","veteran","long in practice"],
+    ex:[{ s:"She is a {{}} teacher of twenty years.", f:"seasoned", ko:"그녀는 이십 년 경력의 경험이 많은 교사다." }] },
+
+  /* isolate(고립시키다, 격리하다 · I) 와 앞뒤만 다르게 두어 자동 배제시켰다.
+     원본의 '분리하다' 는 segregate·separate 자리라 버렸다. */
+  { word:"seclude", pron:"시클루드", pos:"v", level:"C2", meanings:["격리하다","고립시키다"],
+    syn:["isolate","shut away","keep apart from others"],
+    ex:[{ s:"The monks {{}} themselves from the world.", f:"seclude", ko:"그 수도자들은 세상에서 스스로를 격리한다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "academic": "학업의, 학구적인",
+  "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
+  "area covered": "미치는 구역",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "barely enough": "겨우 될 만한",
+  "block by sorting": "가려서 막다",
   "body circling a planet": "행성을 도는 천체",
   "bring up from water": "물에서 끌어올리다",
+  "careful check": "꼼꼼한 확인",
   "causing fear": "두려움을 일으키는",
   "cheer": "기운을 북돋우다",
+  "claw at": "손톱으로 할퀴다",
   "clean and free of germs": "균이 없이 깨끗한",
+  "clean by rubbing": "비벼서 깨끗이 하다",
   "clear judgment": "맑은 판단력",
+  "close examination": "빈틈없는 살핌",
+  "close look": "바짝 들여다봄",
+  "close tight": "꽉 닫다",
+  "coastal trading town": "바닷가 무역 고을",
   "complete soaking": "속까지 다 젖음",
+  "contemptuous": "업신여기는",
   "cutting tool with teeth": "이가 난 자르는 도구",
   "damage on purpose": "고의로 해를 입히다",
   "deliverance": "해방, 벗어남",
+  "dig out and raise": "파서 들어 올리다",
   "disappointing": "실망스러운",
+  "disdainful": "깔보는",
   "drains and clean water": "배수와 깨끗한 물",
+  "examine closely": "바짝 붙어 살펴보다",
+  "experienced": "겪어 본 바가 많은",
+  "fasten shut": "잠가서 닫다",
   "fill fully": "가득 채우다",
   "fill to the limit": "한도까지 채우다",
   "filled with fear": "두려움에 찬",
+  "flavor with spice": "향신료로 맛을 내다",
   "fluid in the mouth": "입안의 액체",
   "formal permission": "정식 허가",
   "free from harm": "해를 입지 않는",
@@ -284,27 +413,40 @@ Object.assign(window.GLOSS, {
   "frightening": "놀라게 하는",
   "fulfilling": "보람 있는",
   "full of salt": "소금기가 많은",
+  "gather up in one go": "한 번에 그러모으다",
+  "give taste to": "~에 맛을 들이다",
   "giving contentment": "흐뭇함을 주는",
   "giving up of something": "무언가를 내놓음",
   "glut": "실컷 채우다",
+  "grant for study": "공부에 주는 지원금",
   "greet with respect": "예를 갖춰 맞이하다",
   "guide on avoiding danger": "위험을 피하는 안내",
   "handsaw": "손톱질 도구",
   "hard to come by": "구하기 어려운",
   "haven": "안식처",
   "healed cut": "아문 베인 자리",
+  "hunt for": "뒤져서 구하다",
   "hygienic": "위생적인",
   "in short supply": "공급이 모자란",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
+  "jot down roughly": "대충 적어 두다",
+  "keep apart from others": "남들과 떨어뜨려 두다",
   "keep one's dignity": "품위를 지키다",
   "leaf through": "책장을 넘겨 가며 보다",
+  "lift with a scoop": "국자로 떠올리다",
+  "long in practice": "오래 익혀 온",
+  "look at in fine detail": "잘게 나눠 들여다보다",
   "look over quickly": "빠르게 눈으로 지나가다",
+  "looking down on": "아래로 보는",
   "loss for a cause": "대의를 위한 손실",
   "madness": "광기",
+  "make a mark by rubbing": "비벼서 자국을 내다",
   "make sorrowful": "애석하게 만들다",
   "mark left by a wound": "상처가 남긴 자리",
   "mental health": "정신 건강",
+  "money for tuition": "수업료에 쓰는 돈",
+  "move fast in haste": "급히 빠르게 움직이다",
   "natural setting": "자연 그대로의 자리",
   "of sound mind": "정신이 온전한",
   "official approval": "공식 승인",
@@ -313,18 +455,28 @@ Object.assign(window.GLOSS, {
   "pay tribute to": "~에게 찬사를 보내다",
   "pleasing": "즐거움을 주는",
   "point of no more": "더 못 받는 지점",
+  "port city": "항만이 있는 도시",
   "protect one's honor": "명예를 지키다",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
   "rich tang": "짙은 맛깔",
+  "rub hard": "세게 비비다",
+  "rub with nails": "손톱으로 비비다",
   "rules for staying safe": "안전하게 지내는 규칙",
   "run one's eye over": "눈으로 쭉 지나가다",
+  "rush about": "부리나케 돌아다니다",
   "safe place for animals": "동물이 지내는 안전한 곳",
   "safety lesson": "안전 수업",
   "salt-laden": "소금이 섞인",
   "salty": "짠",
   "saving from sin": "죄에서 건져 냄",
+  "scour with a brush": "솔로 닦아 내다",
+  "scrawl": "휘갈겨 적다",
+  "secret plan": "몰래 세운 계획",
   "set apart for god": "신에게 바쳐진",
+  "shut away": "가둬 두다",
+  "shut with wax": "밀랍으로 막다",
+  "sift out": "체로 골라내다",
   "size of a thing": "사물의 크기",
   "sneering": "코웃음 치는",
   "soundness of mind": "정신의 온전함",
@@ -334,13 +486,19 @@ Object.assign(window.GLOSS, {
   "spooky": "으스스한",
   "standing out most": "가장 도드라지는",
   "state of being full": "가득 찬 상태",
+  "study award": "학업에 주는 상금",
   "taste one enjoys": "즐기는 맛",
   "thin in amount": "양이 얇은",
+  "throw out as useless": "쓸모없다고 내버리다",
   "to do with hygiene": "위생에 관한",
   "toothed blade": "이가 난 날",
+  "town with a harbor": "항만을 둔 고을",
+  "try to find": "찾아내려 애쓰다",
   "using ridicule": "조롱을 써서",
+  "vie with others": "남들과 겨루다",
   "view of the land": "땅이 보이는 모습",
   "ward off": "막아 내다",
   "waste disposal system": "오물 처리 체계",
-  "witty attack in writing": "글로 재치 있게 찌름"
+  "witty attack in writing": "글로 재치 있게 찌름",
+  "write in a hurry": "급하게 적다"
 });

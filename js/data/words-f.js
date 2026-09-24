@@ -1643,7 +1643,6 @@ Object.assign(window.GLOSS, {
   "padding":"속을 채우는 것",
   "puzzle out":"궁리해 알아내다",
   "research outcome":"연구 결과",
-  "screen out":"걸러 내어 막다",
   "seep out of":"~에서 스며 나오다",
   "smooth-textured":"결이 매끄러운",
   "spotless":"티 하나 없는",
