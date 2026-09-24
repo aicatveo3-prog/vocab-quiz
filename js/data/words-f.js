@@ -1697,7 +1697,6 @@ Object.assign(window.GLOSS, {
   "pocket light":"주머니용 조명",
   "praise insincerely":"마음에 없이 칭찬하다",
   "press flat":"눌러 납작하게 하다",
-  "savor":"풍미",
   "shoot up":"급히 치솟다",
   "smooth out":"매끄럽게 펴다",
   "splitting":"쪼개짐",

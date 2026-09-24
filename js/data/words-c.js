@@ -2048,7 +2048,6 @@ Object.assign(window.GLOSS, {
   "rivalry":"경쟁, 대립",
   "rude":"무례한",
   "rudeness":"무례함",
-  "scatter":"흩뿌리다",
   "scattering":"흩어짐, 산재",
   "seek":"찾다, 구하다",
   "separation":"분리, 분할",

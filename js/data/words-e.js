@@ -2430,7 +2430,6 @@ Object.assign(window.GLOSS, {
   "prolonged":"오래 끌어진",
   "prolonging":"기간을 늘림",
   "revelation":"폭로, 뜻밖의 사실",
-  "scale":"규모, 정도",
   "sell abroad":"해외에 팔다",
   "send overseas":"해외로 보내다",
   "ship out":"실어 내보내다",

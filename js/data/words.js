@@ -1740,7 +1740,6 @@ window.GLOSS = {
   "rigidity":"경직성",
   "rivalry":"경쟁, 라이벌 관계",
   "satisfied":"만족한",
-  "scarce":"부족한, 드문",
   "scarcity":"희소, 드묾",
   "segregation":"분리, 격리",
   "selfish":"이기적인",

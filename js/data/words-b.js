@@ -789,8 +789,13 @@ window.VOCAB_B = [
     syn:["stock","bouillon","consomme"],
     ex:[{ s:"She simmered the chicken {{}} for a full hour.", f:"broth", ko:"그녀는 닭 국물을 꼬박 한 시간 동안 뭉근히 끓였다." }] },
 
+  /* ★ syn 의 "scan" 을 "leaf through" 로 바꿨다. S 세트에서 scan·skim 이 둘 다
+     '훑어보다' 한 갈래로 서기 때문이다 — 일부러 글자를 맞춰 서로를 오답에서
+     배제시킨 자리다. 그러면 이 목록에 설명이 똑같은 선택지가 둘이 된다.
+     둘 중 skim 을 남겼다. 아래 glance(G) 에서는 반대로 scan 을 남겨,
+     두 낱말이 각각 참조를 하나씩 지키게 했다(발음만 남은 유령 키 방지). */
   { word:"browse", pron:"브라우즈", pos:"v", level:"B1", meanings:["둘러보다","뜯어먹다"],
-    syn:["skim","peruse","scan"],
+    syn:["skim","peruse","leaf through"],
     ex:[{ s:"I like to {{}} through old bookshops on weekends.", f:"browse", ko:"나는 주말에 오래된 서점을 둘러보는 것을 좋아한다." }] },
 
   { word:"bruise", pron:"브루즈", pos:"n", level:"B2", meanings:["멍"],

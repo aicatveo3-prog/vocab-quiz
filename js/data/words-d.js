@@ -260,7 +260,10 @@ window.VOCAB_D = [
     ex:[{ s:"The engine had a serious {{}} that forced a nationwide recall.", f:"defect", ko:"그 엔진에는 전국적 회수를 부른 심각한 결함이 있었다." }] },
 
   { word:"defend", pron:"디펜드", pos:"v", level:"B1", meanings:["방어하다","변호하다"],
-    syn:["protect","guard","shield"], ant:["attack"],
+    /* ★ syn 의 "shield" 를 "ward off" 로 바꿨다. shield 는 S 세트에서 사전
+       첫 갈래인 '보호하다' 로 서는데, 그러면 같은 목록의 protect(보호하다) 와
+       설명이 똑같아진다. 더 흔한 protect 를 남기는 쪽을 골랐다. */
+    syn:["protect","guard","ward off"], ant:["attack"],
     ex:[{ s:"They built thick walls to {{}} the city from invaders.", f:"defend", ko:"그들은 침략자로부터 도시를 방어하려고 두꺼운 성벽을 쌓았다." }] },
 
   { word:"defer", pron:"디퍼", pos:"v", level:"C1", meanings:["미루다","연기하다"],
@@ -1916,7 +1919,6 @@ Object.assign(window.GLOSS, {
   "pull out":"물러나다, 손을 떼다",
   "questionable":"의심스러운, 문제가 있는",
   "rough copy":"초고, 초벌 원고",
-  "saturate":"적시다, 포화시키다",
   "sewerage":"하수 처리, 하수도",
   "shrink from":"~을 피하다, 꺼리다",
   "single":"하나의, 단일한",

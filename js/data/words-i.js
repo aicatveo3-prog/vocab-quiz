@@ -2089,7 +2089,6 @@ Object.assign(window.GLOSS, {
   "route plan": "경로 계획",
   "sameness": "동일성, 똑같음",
   "sarcasm": "비꼬는 말",
-  "scanty": "빈약한",
   "scholarly": "학문적인",
   "scrawled": "갈겨쓴",
   "seal off": "차단하다",
