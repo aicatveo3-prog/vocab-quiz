@@ -1710,8 +1710,10 @@ window.VOCAB_I = [
 
   /* 원본은 '발표하다; 발행하다; 화제' 로 동사와 명사가 갈린다. 동사 쪽으로 모았다 —
      명사 '화제' 는 바꿔 쓸 유의어 3개를 만들기 어렵다. */
+  /* 유의어 release 를 make public 으로 바꿨다 — release 를 '석방하다' 로 세우기
+     때문이다. 이 자리는 '발표하다' 뜻을 노린 것이었다. */
   { word:"issue", pron:"이슈", pos:"v", level:"B1", meanings:["발표하다","발행하다"],
-    syn:["announce","release","publish"],
+    syn:["announce","make public","publish"],
     ex:[{ s:"The ministry will {{}} a full statement tomorrow.", f:"issue", ko:"그 부처는 내일 전체 성명을 발표할 것이다." }] },
 
   { word:"itchy", pron:"이치", pos:"adj", level:"B2", meanings:["가려운","간질간질한"],

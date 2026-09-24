@@ -599,13 +599,230 @@ window.VOCAB_R = [
   /* 승격 52 — 사전 단일값 유지(bolster, B · counteract 반의어, C). */
   { word:"reinforce", pron:"리인포스", pos:"v", level:"B2", meanings:["강화하다"],
     syn:["bolster","make stronger","back up with more"],
-    ex:[{ s:"Steel bars {{}} the wall.", f:"reinforce", ko:"철근이 그 벽을 강화한다." }] }
+    ex:[{ s:"Steel bars {{}} the wall.", f:"reinforce", ko:"철근이 그 벽을 강화한다." }] },
+
+  /* ── 챕터 6 ────────────────────────────────────── */
+  /* ★ release 는 참조가 아홉 곳으로 R 세트 최다다. 사전값 '석방하다' 한 갈래를
+     지켜 일곱 곳을 보존하고, 다른 뜻을 노리던 두 곳만 손질했다.
+       give off(내뿜다)  syn release → let out      ('방출하다' 뜻을 노린 자리)
+       issue(발표하다)   syn release → make public  ('발표하다' 뜻을 노린 자리)
+     원본은 '발표, 개봉, 석방; 풀어주다; (대중에) 발표하다' 로 다섯 갈래였다.
+     '발표하다' 는 announce·issue·publish(P) 가 이미 나눠 가진 자리다.
+     relieve/relive 는 철자가 한 글자 차이인데 발음이 다르다 — 릴리브 / 리라이브. */
+
+  /* 승격 53 — 사전의 쌍반점만 쉼표로 갈랐다(참조 여섯 곳). */
+  { word:"reject", pron:"리젝트", pos:"v", level:"B1", meanings:["거절하다","배척하다"],
+    syn:["deny","dismiss","turn down"], ant:["accept"],
+    ex:[{ s:"They may {{}} the offer.", f:"reject", ko:"그들은 그 제안을 거절할 수도 있다." }] },
+
+  /* 승격 54 — 사전 글자 유지(acceptance·adoption 반의어). */
+  { word:"rejection", pron:"리젝션", pos:"n", level:"B2", meanings:["거부","거절"],
+    syn:["a turning down","refusal to take","saying no"], ant:["acceptance"],
+    ex:[{ s:"The {{}} came by letter.", f:"rejection", ko:"그 거부는 편지로 왔다." }] },
+
+  { word:"rejoice", pron:"리조이스", pos:"v", level:"C1", meanings:["크게 기뻐하다"],
+    syn:["be full of joy","take great delight","celebrate with joy"],
+    ex:[{ s:"The whole town began to {{}}.", f:"rejoice", ko:"온 고을이 크게 기뻐하기 시작했다." }] },
+
+  /* 승격 55 — 사전 글자 유지(correlation, C). rapport(친밀감, 교감 · 챕터 1) 와
+     갈라 '관계' 를 이 자리에 두었다. */
+  { word:"relationship", pron:"릴레이션십", pos:"n", level:"B1", meanings:["관계"],
+    syn:["correlation","tie between two","way things stand between"],
+    ex:[{ s:"Their {{}} grew closer.", f:"relationship", ko:"그들의 관계는 더 가까워졌다." }] },
+
+  /* 승격 56 — 원본은 '상대적인; 친척' 으로 형용사와 명사가 섞여 있었다. 참조
+     absolute·comparative 가 형용사여서 형용사로 세우고 사전 단일값을 지켰다.
+     '상대적인' 은 comparative 의 첫 뜻과 같아 서로 오답에서 빠진다. */
+  { word:"relative", pron:"렐러티브", pos:"adj", level:"B2", meanings:["상대적인"],
+    syn:["comparative","judged against something else","not absolute"], ant:["absolute"],
+    ex:[{ s:"It is a {{}} matter.", f:"relative", ko:"그것은 상대적인 문제다." }] },
+
+  { word:"relativity", pron:"렐러티버티", pos:"n", level:"C1", meanings:["상대성","관련성"],
+    syn:["being judged by comparison","how things relate","dependence on a frame"],
+    ex:[{ s:"He explained the theory of {{}}.", f:"relativity", ko:"그는 상대성 이론을 설명했다." }] },
+
+  /* 승격 57 — 사전 글자 유지(anxious 반의어 · casual · easygoing · leisurely
+     — 네 곳). 원본 '느긋한, 여유 있는, 편안한' 세 갈래를 사전값 둘로 줄였다. */
+  { word:"relaxed", pron:"릴랙스트", pos:"adj", level:"B1", meanings:["편안한","느긋한"],
+    syn:["casual","easygoing","at ease"], ant:["anxious"],
+    ex:[{ s:"The mood was {{}}.", f:"relaxed", ko:"분위기가 편안했다." }] },
+
+  /* 원본은 '말을 전달하다, 중계하다; 계주' 로 동사와 명사가 섞여 있었다. */
+  { word:"relay", pron:"릴레이", pos:"v", level:"B2", meanings:["전달하다","중계하다"],
+    syn:["pass along","hand on a message","send onward"],
+    ex:[{ s:"He will {{}} the news to us.", f:"relay", ko:"그가 우리에게 그 소식을 전달할 것이다." }] },
+
+  /* 승격 58 — ★ 참조 아홉 곳. 사전 단일값 '석방하다' 를 지키고 다른 뜻을
+     노리던 give off·issue 두 곳을 손질했다. */
+  { word:"release", pron:"릴리스", pos:"v", level:"B1", meanings:["석방하다"],
+    syn:["liberate","let go free","set at liberty"], ant:["imprison"],
+    ex:[{ s:"They will {{}} him tomorrow.", f:"release", ko:"그들은 내일 그를 석방할 것이다." }] },
+
+  /* 원본 '동의하다' 는 accede(A) 의 첫 뜻이라 누그러지는 쪽 갈래를 썼다. */
+  { word:"relent", pron:"릴렌트", pos:"v", level:"C2", meanings:["누그러지다","마음을 굽히다"],
+    syn:["soften one's stand","give way at last","let up"],
+    ex:[{ s:"The father finally began to {{}}.", f:"relent", ko:"그 아버지는 마침내 누그러지기 시작했다." }] },
+
+  /* 승격 59 — 사전 글자 유지(irrelevant 반의어, I). '적절한' 은 apt·proper(P) 와
+     글자가 같아 서로 오답에서 빠진다. */
+  { word:"relevant", pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
+    syn:["bearing on the matter","to the point","having a link"], ant:["irrelevant"],
+    ex:[{ s:"Only {{}} facts were read out.", f:"relevant", ko:"관련 있는 사실만 읽혔다." }] },
+
+  /* 승격 60 — 사전 단일값 유지. 원본의 '확실성' 은 버렸다. 참조는 없다. */
+  { word:"reliability", pron:"릴라이어빌러티", pos:"n", level:"B2", meanings:["신뢰성"],
+    syn:["being able to be trusted","steadiness one can count on","soundness"],
+    ex:[{ s:"The car is known for its {{}}.", f:"reliability", ko:"그 차는 신뢰성으로 알려져 있다." }] },
+
+  /* 승격 61 — 사전 첫 갈래를 지키고 원본의 '의지가 되는' 을 붙였다. 참조 없음. */
+  { word:"reliable", pron:"릴라이어블", pos:"adj", level:"B1", meanings:["믿을 만한","의지가 되는"],
+    syn:["to be counted on","sure not to fail","trustworthy"],
+    ex:[{ s:"She is a {{}} worker.", f:"reliable", ko:"그녀는 믿을 만한 일꾼이다." }] },
+
+  /* "(= dependence)" 표기를 걷었다. */
+  { word:"reliance", pron:"릴라이언스", pos:"n", level:"B2", meanings:["의존","의지함"],
+    syn:["leaning on another","putting trust in","need of support"],
+    ex:[{ s:"Their {{}} on coal is falling.", f:"reliance", ko:"석탄에 대한 그들의 의존이 줄고 있다." }] },
+
+  /* 승격 62 — 사전 글자 유지(antique, A · artifact, A). ruins(폐허 · 챕터 14) 와
+     갈라 '유물, 유적' 을 이 자리에 두었다. */
+  { word:"relic", pron:"렐릭", pos:"n", level:"C1", meanings:["유물","유적"],
+    syn:["antique","artifact","thing left from the past"],
+    ex:[{ s:"The museum holds a stone {{}}.", f:"relic", ko:"그 박물관은 돌 유물을 보관한다." }] },
+
+  /* 승격 63 — 사전의 쌍반점만 쉼표로 갈랐다(alleviate, A). 원본의 괄호
+     "(불쾌함 등을)" 를 걷었다. */
+  { word:"relieve", pron:"릴리브", pos:"v", level:"B2", meanings:["완화하다","덜어 주다"],
+    syn:["alleviate","ease a pain","take a load off"],
+    ex:[{ s:"This will {{}} the ache.", f:"relieve", ko:"이것이 그 통증을 완화할 것이다." }] },
+
+  { word:"relieved", pron:"릴리브드", pos:"adj", level:"B1", meanings:["안도하는"],
+    syn:["freed from worry","glad it is over","easy in mind"],
+    ex:[{ s:"She looked {{}} at the news.", f:"relieved", ko:"그녀는 그 소식에 안도하는 듯했다." }] },
+
+  { word:"religious", pron:"릴리저스", pos:"adj", level:"B1", meanings:["종교적인"],
+    syn:["to do with faith","of worship","bound to a creed"],
+    ex:[{ s:"They hold {{}} services here.", f:"religious", ko:"그들은 이곳에서 종교적인 예배를 연다." }] },
+
+  /* 승격 64 — 사전 글자 유지(abandon, A). renounce(버리고 물러나다) 와 갈랐다 —
+     원본은 둘 다 '포기하다' 였다. */
+  { word:"relinquish", pron:"릴링퀴시", pos:"v", level:"C2", meanings:["포기하다","양도하다"],
+    syn:["abandon","hand over a claim","let go of a right"],
+    ex:[{ s:"He had to {{}} the title.", f:"relinquish", ko:"그는 그 직위를 포기해야 했다." }] },
+
+  { word:"relive", pron:"리라이브", pos:"v", level:"C1", meanings:["다시 체험하다"],
+    syn:["live through again","feel it once more","go back through it"],
+    ex:[{ s:"He does not want to {{}} that day.", f:"relive", ko:"그는 그날을 다시 체험하고 싶지 않다." }] },
+
+  /* ── 챕터 7 ────────────────────────────────────── */
+  /* remind·reminder·reminiscence 셋이 '떠올림' 자리에 몰려 있다 — 상기시키다 /
+     상기시키는 것 / 추억담 으로 갈랐다. remorse(회한) 는 repentance(참회 · 챕터 8)
+     와, renown(명성) 은 reputation(평판, 명성 · 챕터 9) 과 갈라 두었다. */
+
+  { word:"relocate", pron:"릴로케이트", pos:"v", level:"B2", meanings:["이전하다","옮기다"],
+    syn:["move to a new place","shift base","set up elsewhere"],
+    ex:[{ s:"The firm will {{}} next year.", f:"relocate", ko:"그 회사는 내년에 이전할 것이다." }] },
+
+  /* 승격 65 — 사전 글자 유지(hesitant, H). */
+  { word:"reluctant", pron:"릴럭턴트", pos:"adj", level:"B2", meanings:["꺼리는","마지못한"],
+    syn:["hesitant","unwilling to act","holding back"],
+    ex:[{ s:"He was {{}} to answer.", f:"reluctant", ko:"그는 대답하기를 꺼렸다." }] },
+
+  /* 승격 66 — 사전 글자 유지(be dependent on, B · fall back on, F). */
+  { word:"rely on", pron:"릴라이 온", pos:"phr", level:"B1", meanings:["~에 의존하다"],
+    syn:["be dependent on","fall back on","put one's trust in"] },
+
+  /* 승격 67 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
+  { word:"remain", pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
+    syn:["stay behind","be left over","go on being"],
+    ex:[{ s:"Few trees {{}} on the hill.", f:"remain", ko:"그 언덕에 남은 나무는 얼마 없다." }] },
+
+  /* 승격 68 — 사전은 '발언하다; 발언' 으로 동사와 명사가 섞여 있었다. 참조
+     comment 가 동사여서 동사로 세웠다. 원본은 네 갈래였다. */
+  { word:"remark", pron:"리마크", pos:"v", level:"B2", meanings:["발언하다","한마디 하다"],
+    syn:["comment","say in passing","let fall a word"],
+    ex:[{ s:"She did not {{}} on it.", f:"remark", ko:"그녀는 그것에 대해 발언하지 않았다." }] },
+
+  /* 승격 69 — 사전 글자 유지(amazing·exceptional·extraordinary·impressive 네 곳).
+     '뛰어난' 은 outstanding(O) 의 첫 뜻이라 사전값 '놀라운' 을 지켰다. */
+  { word:"remarkable", pron:"리마커블", pos:"adj", level:"B1", meanings:["놀라운","주목할 만한"],
+    syn:["amazing","exceptional","worth notice"],
+    ex:[{ s:"It was a {{}} find.", f:"remarkable", ko:"그것은 놀라운 발견이었다." }] },
+
+  /* 승격 70 — 사전의 쌍반점만 쉼표로 갈랐다(antidote, A · cure-all, C). */
+  { word:"remedy", pron:"레머디", pos:"n", level:"B2", meanings:["치료법","해결책"],
+    syn:["antidote","cure-all","means of putting right"],
+    ex:[{ s:"There is no easy {{}}.", f:"remedy", ko:"쉬운 해결책은 없다." }] },
+
+  { word:"remind", pron:"리마인드", pos:"v", level:"B1", meanings:["상기시키다","떠오르게 하다"],
+    syn:["bring to mind","put in mind of","jog the memory"],
+    ex:[{ s:"Please {{}} me later.", f:"remind", ko:"나중에 저에게 상기시켜 주세요." }] },
+
+  { word:"reminder", pron:"리마인더", pos:"n", level:"B2", meanings:["상기시키는 것","일깨움"],
+    syn:["something that prompts memory","note to jog one","nudge to recall"],
+    ex:[{ s:"The scar is a {{}} of the fall.", f:"reminder", ko:"그 흉은 넘어진 일을 상기시키는 것이다." }] },
+
+  /* "(=memory)(= recollection)" 표기를 걷고 네 갈래를 둘로 줄였다. */
+  { word:"reminiscence", pron:"레머니선스", pos:"n", level:"C2", meanings:["추억담","회상"],
+    syn:["tale of the past","looking back on old days","memory told aloud"],
+    ex:[{ s:"His {{}} filled the evening.", f:"reminiscence", ko:"그의 추억담이 저녁을 채웠다." }] },
+
+  /* repentance(참회, 뉘우침 · 챕터 8) 와 갈랐다 — 원본은 둘 다 '후회' 였다. */
+  { word:"remorse", pron:"리모스", pos:"n", level:"C1", meanings:["회한","깊은 후회"],
+    syn:["bitter regret","sting of guilt","sorrow for a wrong"],
+    ex:[{ s:"He showed no {{}}.", f:"remorse", ko:"그는 회한을 보이지 않았다." }] },
+
+  /* 승격 71 — 사전 글자 유지(inaccessible, I · isolated, I). */
+  { word:"remote", pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
+    syn:["inaccessible","isolated","far from anywhere"],
+    ex:[{ s:"They live in a {{}} valley.", f:"remote", ko:"그들은 외딴 골짜기에 산다." }] },
+
+  /* 승격 72 — 사전 단일값 유지(delete·detach·eliminate, install 반의어 — 네 곳).
+     원본의 '지우다' 는 efface(E) 의 첫 뜻이라 붙이지 않았다. */
+  { word:"remove", pron:"리무브", pos:"v", level:"B1", meanings:["제거하다"],
+    syn:["delete","detach","take away"], ant:["install"],
+    ex:[{ s:"Please {{}} your shoes.", f:"remove", ko:"신을 벗어 주세요." }] },
+
+  /* 원본 '~이 되게 하다, ~로 만들다, ~을 주다' 세 갈래를 둘로 줄였다. */
+  { word:"render", pron:"렌더", pos:"v", level:"C1", meanings:["~이 되게 하다","~로 만들다"],
+    syn:["cause to become","leave in a state","turn into"],
+    ex:[{ s:"Heat can {{}} the metal soft.", f:"render", ko:"열은 그 금속을 부드럽게 만들 수 있다." }] },
+
+  { word:"renew", pron:"리뉴", pos:"v", level:"B2", meanings:["재개하다","갱신하다"],
+    syn:["start again","take up once more","make valid again"],
+    ex:[{ s:"You must {{}} the licence.", f:"renew", ko:"당신은 그 면허를 갱신해야 한다." }] },
+
+  { word:"renewable", pron:"리뉴어블", pos:"adj", level:"B2", meanings:["재생 가능한"],
+    syn:["able to be replaced","that nature makes again","not running out"],
+    ex:[{ s:"Wind is a {{}} source.", f:"renewable", ko:"바람은 재생 가능한 원천이다." }] },
+
+  /* 승격 73 — 사전 단일값 유지(forgo, F). 원본 '포기하다, 끊다' 의 '포기하다' 는
+     relinquish·abandon·forgo 자리라 사전값 쪽이 낫다. */
+  { word:"renounce", pron:"리나운스", pos:"v", level:"C2", meanings:["버리고 물러나다"],
+    syn:["forgo","give up formally","turn one's back on"],
+    ex:[{ s:"He chose to {{}} the throne.", f:"renounce", ko:"그는 왕위를 버리고 물러나기로 했다." }] },
+
+  { word:"renovate", pron:"레너베이트", pos:"v", level:"B2", meanings:["보수하다","개조하다"],
+    syn:["do up anew","make over a building","restore to good order"],
+    ex:[{ s:"They plan to {{}} the old school.", f:"renovate", ko:"그들은 그 낡은 학교를 보수할 계획이다." }] },
+
+  /* reputation(평판, 명성 · 챕터 9) 과 '명성' 으로 맞물려 서로 오답에서 빠진다. */
+  { word:"renown", pron:"리나운", pos:"n", level:"C1", meanings:["명성"],
+    syn:["wide fame","name known far","great repute"],
+    ex:[{ s:"The city has {{}} for its bridges.", f:"renown", ko:"그 도시는 다리로 명성이 있다." }] },
+
+  /* 승격 74 — 사전 글자 유지(celebrated·distinguished·legendary 세 곳). */
+  { word:"renowned", pron:"리나운드", pos:"adj", level:"B2", meanings:["유명한","명성 높은"],
+    syn:["celebrated","distinguished","widely known"],
+    ex:[{ s:"She is a {{}} pianist.", f:"renowned", ko:"그녀는 유명한 피아노 연주자다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
   "a looking-up": "찾아보는 일",
   "a making better": "더 낫게 만듦",
+  "a turning down": "물리침",
+  "able to be replaced": "다시 채울 수 있는",
   "about the matter of": "~의 일에 대하여",
   "act in answer": "답으로 움직이다",
   "act of knowing again": "다시 알아봄",
@@ -617,14 +834,21 @@ Object.assign(window.GLOSS, {
   "as a preference": "더 좋아서",
   "as it happens": "일어나는 그대로",
   "ask to have back": "돌려 달라고 하다",
+  "at ease": "마음이 놓인",
   "at the root": "뿌리에서부터",
   "atomic pile": "원자로 더미",
   "automatic response": "저절로 나오는 반응",
   "back up with more": "더 보태어 받치다",
   "balance between two": "둘 사이의 균형",
+  "be full of joy": "기쁨에 가득하다",
+  "be left over": "남아 있다",
   "be sorry for": "~을 안타깝게 여기다",
+  "being able to be trusted": "믿을 수 있음",
+  "being judged by comparison": "견주어 정해짐",
   "believer in racial superiority": "한 인종이 낫다고 믿는 이",
+  "bitter regret": "쓰라린 후회",
   "book of records": "기록을 담은 책",
+  "bound to a creed": "교리에 매인",
   "break in the day": "하루 중의 쉼",
   "bring back in another form": "다른 꼴로 되돌리다",
   "bring back into use": "다시 쓰이게 되돌리다",
@@ -640,6 +864,8 @@ Object.assign(window.GLOSS, {
   "call in a faulty product": "흠 있는 물건을 거둬들이다",
   "calling in new members": "새 사람을 불러 모음",
   "cattle farm": "소를 기르는 농장",
+  "cause to become": "~이 되게 하다",
+  "celebrate with joy": "기뻐하며 기리다",
   "change for the better": "나은 쪽으로 바꿈",
   "check on freedom": "자유를 누르는 것",
   "come round once more": "한 번 더 돌아오다",
@@ -648,23 +874,30 @@ Object.assign(window.GLOSS, {
   "course of health care": "몸을 돌보는 과정",
   "credit given": "인정해 주는 것",
   "defier of authority": "권위를 거스르는 이",
+  "dependence on a frame": "기준에 딸림",
+  "do up anew": "새로 손보다",
   "do without doing": "하지 않고 넘기다",
   "done for fun": "즐기려고 하는",
   "draw away little by little": "조금씩 멀어지다",
+  "ease a pain": "아픔을 눅이다",
   "easy bond": "편한 사이",
+  "easy in mind": "마음이 편한",
   "emitting rays": "빛살을 뿜는",
   "entry on a list": "명단에 오른 항목",
   "exile from home": "고향을 떠난 이",
   "fair and sensible": "온당하고 슬기로운",
   "fall back": "뒤로 밀려나다",
   "fall in business": "장사가 떨어짐",
+  "far from anywhere": "아무 데서나 멀리 떨어진",
   "far-reaching in change": "바꿈이 크게 미치는",
+  "feel it once more": "한 번 더 느끼다",
   "field of activity": "활동이 미치는 분야",
   "fighter against rule": "다스림에 맞서 싸우는 이",
   "find a meaning that is not there": "없는 뜻을 찾아내다",
   "fit of temper": "울컥 치미는 화",
   "for rest and play": "쉬고 놀기 위한",
   "four-sided with right angles": "네 변에 직각인",
+  "freed from worry": "걱정에서 벗어난",
   "front desk": "맞이하는 창구",
   "full reach": "미치는 만큼 전부",
   "gather a crop": "곡식을 걷다",
@@ -676,61 +909,95 @@ Object.assign(window.GLOSS, {
   "give a new body to": "새 몸을 주다",
   "give out heat": "열을 내보내다",
   "give the money back": "돈을 되돌려 주다",
+  "give up formally": "정식으로 내놓다",
+  "give way at last": "끝내 물러서다",
   "given to quiet thought": "조용히 생각에 잠기는",
   "giving off radiation": "방사선을 내는",
+  "glad it is over": "끝나서 반가운",
+  "go back through it": "그 일을 되짚어 지나다",
   "go back to an earlier state": "앞선 상태로 돌아가다",
+  "go on being": "계속 그러하다",
   "go through it beforehand": "미리 한 번 해 보다",
   "going to the root": "뿌리까지 파고드는",
   "government in power": "권력을 쥔 정부",
   "grazing estate": "풀 먹이는 넓은 땅",
+  "great repute": "큰 평판",
   "grow back": "다시 자라나다",
   "guided by reason": "이치를 따르는",
+  "hand on a message": "말을 건네 주다",
+  "hand over a claim": "권리를 넘겨주다",
   "happen again": "또 일어나다",
   "hater of other races": "다른 인종을 미워하는 이",
+  "having a link": "이어진 데가 있는",
   "help stand on one's own": "제 발로 서게 돕다",
   "hiring drive": "사람 뽑기 운동",
   "hold off from": "~하지 않고 버티다",
   "hold over another": "남을 붙잡아 두는 힘",
   "hold sovereign power": "으뜸 권력을 쥐다",
   "hold to be": "~라고 붙들다",
+  "holding back": "뒤로 물러서는",
   "how many to how many": "몇 대 몇",
+  "how things relate": "서로 얽힌 정도",
   "image thrown back": "되비친 모습",
   "in a sweeping way": "싹 쓸어내듯",
+  "jog the memory": "기억을 건드리다",
   "joy that carries one away": "넋을 빼앗는 기쁨",
+  "judged against something else": "다른 것에 대어 보아 정하는",
   "keep in order by rule": "규칙으로 다잡다",
   "keep oneself from": "스스로 못 하게 하다",
   "keeping to what is possible": "될 만한 데 머무는",
   "kingdom": "임금이 다스리는 나라",
   "know again on sight": "보고 다시 알아보다",
   "large stock farm": "큰 가축 농장",
+  "leaning on another": "남에게 기댐",
+  "leave in a state": "어떤 상태로 두다",
   "left over and useless": "남았는데 쓸 데 없는",
+  "let fall a word": "한마디 떨어뜨리다",
+  "let go free": "놓아 주다",
+  "let go of a right": "권리를 놓아 버리다",
+  "let out": "내보내다",
+  "let up": "기세가 꺾이다",
   "light food and drink": "가벼운 음식과 마실 것",
   "list of entries": "항목을 적은 목록",
   "list one by one": "하나씩 늘어놓다",
   "live as it goes": "되는 대로 바로 내보내는",
+  "live through again": "다시 겪어 보다",
   "look on as": "~로 보다",
   "look to for help": "도움을 찾아 보다",
+  "looking back on old days": "옛날을 돌아봄",
   "made in advance": "미리 만들어 둔",
   "make good the outlay": "들인 돈을 메워 주다",
   "make into something new": "새것으로 만들다",
   "make land fit for use": "땅을 쓸 수 있게 만들다",
+  "make over a building": "건물을 고쳐 짓다",
   "make pure": "순수하게 만들다",
   "make real": "실제가 되게 하다",
   "make stronger": "더 튼튼하게 하다",
   "make two things agree": "둘을 들어맞게 하다",
+  "make valid again": "다시 유효하게 하다",
   "mark on a scale": "척도 위의 표시",
   "marsh plant": "늪에 자라는 풀",
   "mass meeting": "사람이 많이 모인 자리",
+  "means of putting right": "바로잡는 수단",
   "measure per unit": "단위마다 재는 값",
+  "memory told aloud": "소리 내어 들려주는 기억",
   "mention of a source": "출처를 밝힘",
   "more than is needed": "필요한 것보다 많은",
   "move back": "뒤로 물러가다",
+  "move to a new place": "새 자리로 옮기다",
+  "name known far": "멀리까지 알려진 이름",
+  "need of support": "받쳐 줄 것이 필요함",
+  "not absolute": "딱 정해진 것이 아닌",
   "not often seen": "자주 보이지 않는",
+  "not running out": "바닥나지 않는",
   "not too much": "지나치지 않은",
   "note pointing elsewhere": "다른 데를 가리키는 쪽지",
+  "note to jog one": "일러 주려 남긴 쪽지",
+  "nudge to recall": "떠올리도록 건드림",
   "nurse back to health": "돌봐 낫게 하다",
   "of atomic decay": "원자가 붕괴하는",
   "of one's race": "제 인종의",
+  "of worship": "예배에 관한",
   "off the shelf": "선반에서 바로 꺼내 쓰는",
   "on the subject of": "~을 두고",
   "one who flees danger": "위험을 피해 온 이",
@@ -741,6 +1008,7 @@ Object.assign(window.GLOSS, {
   "overhaul of a system": "제도를 뜯어고침",
   "pace at which it happens": "일이 일어나는 속도",
   "paper showing payment": "값을 치른 것을 보이는 종이",
+  "pass along": "넘겨 주다",
   "pause in work": "일을 멈춘 동안",
   "pay back": "돈을 갚다",
   "pay one back for costs": "든 비용을 돌려주다",
@@ -761,16 +1029,21 @@ Object.assign(window.GLOSS, {
   "put back into use": "다시 쓰이게 하다",
   "put back together": "다시 맞춰 놓다",
   "put forward as good": "좋다고 내놓다",
+  "put in mind of": "~을 떠올리게 하다",
   "put on a list": "명단에 올리다",
   "put one's own sense into": "제 생각을 밀어 넣다",
+  "put one's trust in": "~을 믿고 맡기다",
+  "putting trust in": "믿고 맡김",
   "quiet thought": "조용한 생각",
   "raise young": "새끼를 치다",
   "read aloud by heart": "외워 소리 내어 읽다",
   "ready to take in": "받아들일 준비가 된",
   "recover hold of": "다시 붙들다",
+  "refusal to take": "받기를 마다함",
   "relation in number": "수로 본 관계",
   "renew itself": "스스로 새로워지다",
   "response to something": "무엇에 대한 응답",
+  "restore to good order": "멀쩡하게 되돌리다",
   "return in time": "때가 되면 되돌아오다",
   "return what was paid": "낸 것을 돌려주다",
   "revolt of the people": "백성이 일으킨 난",
@@ -784,21 +1057,27 @@ Object.assign(window.GLOSS, {
   "run over it again": "다시 훑어 보다",
   "run-through": "처음부터 훑어 보기",
   "say from memory": "외운 것을 말하다",
+  "say in passing": "지나가듯 말하다",
+  "saying no": "아니라고 함",
   "saying the same twice": "같은 말을 두 번 하는",
   "scold openly": "드러내어 꾸짖다",
   "score given": "매겨 준 점수",
   "see at last": "마침내 알아보다",
   "seldom found": "좀처럼 볼 수 없는",
   "send back to life": "다시 살아 오게 하다",
+  "send onward": "앞으로 보내다",
   "send out in rays": "빛살로 내보내다",
   "send out once more": "한 번 더 내보내다",
+  "set at liberty": "자유롭게 풀어 주다",
   "set of cooking steps": "음식 만드는 차례",
   "set one's mind at rest": "걱정을 내려놓게 하다",
   "set plan for eating": "정해진 먹는 계획",
   "set to a standard": "기준에 맞춰 두다",
+  "set up elsewhere": "다른 데에 자리 잡다",
   "settle a quarrel": "다툼을 가라앉히다",
   "shaped like a long box": "긴 상자 꼴인",
   "shelter from danger": "위험을 막아 주는 곳",
+  "shift base": "터를 옮기다",
   "show a response": "반응을 보이다",
   "show a second time": "두 번째로 보여 주다",
   "show as in a glass": "거울처럼 비추다",
@@ -809,50 +1088,77 @@ Object.assign(window.GLOSS, {
   "slip for what one paid": "낸 값을 적은 쪽지",
   "slump in trade": "거래가 주저앉음",
   "snacks served": "내놓는 간식",
+  "soften one's stand": "태도를 누그러뜨리다",
+  "something that prompts memory": "기억을 부르는 것",
+  "sorrow for a wrong": "잘못을 두고 아파함",
+  "soundness": "탈 없음",
   "span from end to end": "끝에서 끝까지 걸침",
   "speak of": "입에 올리다",
   "speak well of": "좋게 말하다",
   "speed of change": "변하는 빠르기",
   "spot out of harm's way": "해가 미치지 않는 자리",
   "stalk by the water": "물가에 선 줄기",
+  "start again": "다시 시작하다",
+  "stay behind": "뒤에 남다",
+  "steadiness one can count on": "믿고 맡길 만한 한결같음",
+  "sting of guilt": "죄스러움의 쓰림",
   "strap for guiding a horse": "말을 끄는 줄",
+  "sure not to fail": "어긋남이 없을 만한",
   "sweeping repair": "싹 손보는 일",
+  "take a load off": "짐을 덜어 내다",
+  "take away": "치워 없애다",
+  "take great delight": "크게 즐거워하다",
   "take in the harvest": "가을걷이를 들이다",
   "take more from it than it says": "말한 것보다 더 읽어 내다",
   "take to be so": "그러하다고 여기다",
+  "take up once more": "다시 손에 들다",
   "take what is given": "주는 것을 받다",
   "taking on new people": "새 사람을 들임",
+  "tale of the past": "지난 일의 이야기",
   "tall water grass": "물가에 키 큰 풀",
   "tea and cakes": "차와 과자",
   "tell off sharply": "호되게 이르다",
+  "that nature makes again": "자연이 다시 만드는",
   "that one would undo": "되돌리고 싶은",
   "thin on the ground": "드물게 흩어져 있는",
+  "thing left from the past": "지난 시절에서 남은 것",
   "think of in a way": "어떻게 생각하다",
   "thinking things through": "끝까지 따져 보는",
   "throw back light": "빛을 되던지다",
+  "tie between two": "둘을 잇는 끈",
   "time off between sessions": "수업 사이의 틈",
+  "to be counted on": "믿고 맡길 만한",
   "to be sorry about": "안타까워할 만한",
+  "to do with faith": "믿음에 얽힌",
   "to do with leisure": "여가에 얽힌",
   "to do with race": "인종에 얽힌",
   "to the very base": "바탕까지",
   "touch that improves": "나아지게 하는 손질",
   "trial run of a play": "연극을 미리 해 보기",
   "true to life": "실제와 꼭 같은",
+  "trustworthy": "믿음이 가는",
+  "turn down": "물리치다",
+  "turn into": "~으로 바꾸다",
   "turning things over": "이리저리 헤아리는",
+  "unwilling to act": "나서려 하지 않는",
   "use again": "다시 쓰다",
   "vessel where reaction runs": "반응이 일어나는 통",
   "violent anger": "거센 노여움",
   "warm understanding": "따뜻한 이해",
+  "way things stand between": "서로 놓인 사이",
   "way to make it": "만드는 방법",
   "welcoming party": "맞이하는 잔치",
   "what follows an act": "어떤 일 뒤에 따라오는 것",
   "whatever may be": "어떻든 간에",
+  "wide fame": "널리 퍼진 이름",
+  "widely known": "널리 알려진",
   "win back": "되찾아 오다",
   "win back for use": "되찾아 쓰게 하다",
   "wish one had not": "하지 않았기를 바라다",
   "without a set order": "정해진 차례 없이",
   "without delay in reporting": "알리는 데 늦음이 없는",
   "without regard to": "~을 셈에 넣지 않고",
-  "work out a number": "수를 셈해 내다"
+  "work out a number": "수를 셈해 내다",
+  "worth notice": "눈길을 둘 만한"
 });
 

@@ -994,7 +994,6 @@ Object.assign(window.GLOSS, {
   "praise":"칭찬하다",
   "protect":"보호하다",
   "recover from":"~에서 회복하다",
-  "reject":"거부하다, 물리치다",
   "relief":"안도, 경감",
   "repair":"고치다, 수리하다",
   "repel":"쫓아내다, 반발하게 하다",
