@@ -839,7 +839,6 @@ Object.assign(window.GLOSS, {
   "slant": "비스듬해지다",
   "soaring": "치솟은",
   "song words": "노래 가사",
-  "sound": "빈틈없는, 타당한",
   "spearhead": "앞장서다",
   "spirits": "증류주",
   "spring from": "뛰어 벗어나다",

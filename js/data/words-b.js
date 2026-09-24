@@ -734,8 +734,12 @@ window.VOCAB_B = [
     syn:["newlywed","wife-to-be","spouse"], ant:["groom"],
     ex:[{ s:"The {{}} wore her grandmother's wedding dress.", f:"bride", ko:"신부는 할머니의 웨딩드레스를 입었다." }] },
 
+  /* ★ syn 의 "span" 을 "link two sides" 로 바꿨다. 사전이 '기간; 걸치다' 로
+     명사와 동사를 섞어 두었는데, 참조 다섯 곳 가운데 breadth·distance·duration·
+     length 넷이 명사여서 S 세트에서는 명사 '기간' 으로 선다 — 이 동사 목록에만
+     맞지 않게 된다. */
   { word:"bridge", pron:"브리지", pos:"v", level:"B2", meanings:["다리를 놓다","이어주다"],
-    syn:["connect","span","link"], ant:["divide"],
+    syn:["connect","link two sides","link"], ant:["divide"],
     ex:[{ s:"The program aims to {{}} the gap between rich and poor.", f:"bridge", ko:"그 프로그램은 부유층과 빈곤층의 격차를 이어주는 것을 목표로 한다." }] },
 
   { word:"brief", pron:"브리프", pos:"adj", level:"B1", meanings:["잠시 동안의","간단한"],
