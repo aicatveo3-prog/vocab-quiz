@@ -91,8 +91,12 @@ window.VOCAB = [
     syn:["suddenly","unexpectedly","sharply"], ant:["gradually"],
     ex:[{ s:"The music stopped {{}} in the middle of the song.", f:"abruptly", ko:"음악이 노래 중간에 갑자기 멈췄다." }] },
 
+  /* 반의어를 present 에서 in attendance 로 바꿨다. present 가 P 세트 챕터 12
+     표제어(제시하다, 주다 · v)로 올라가면서 이 자리의 뜻풀이가 '제시하다, 주다'
+     로 바뀌어 버린다 — 결석한의 반의어로는 말이 안 된다. 사전에만 있던 동안에도
+     '제시하다; 현재의' 로 떠서 이미 어긋나 있던 자리다. */
   { word:"absent", pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
-    syn:["away","missing","gone"], ant:["present"],
+    syn:["away","missing","gone"], ant:["in attendance"],
     ex:[{ s:"Three students were {{}} from class today.", f:"absent", ko:"오늘 세 명의 학생이 수업에 결석했다." }],
     gov:{ prep:["from"], pat:"absent {{}} class", usage:"absent from ~ : ~에 결석한" } },
 
@@ -1717,7 +1721,6 @@ window.GLOSS = {
   "pleasant":"쾌적한, 즐거운",
   "poison":"독",
   "poor":"가난한",
-  "present":"출석한, 현재의",
   "preserve":"보존하다",
   "prosperity":"번영",
   "proud":"자랑스러운",

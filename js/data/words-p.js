@@ -1339,7 +1339,132 @@ window.VOCAB_P = [
   /* 승격 104 — 사전 표현과 글자까지 같다(desirable, D). */
   { word:"preferable", pron:"프리퍼러블", pos:"adj", level:"B2", meanings:["더 나은","선호되는"],
     syn:["better to choose","more to be wished","worth picking first"],
-    ex:[{ s:"Walking is {{}} to driving here.", f:"preferable", ko:"이곳에서는 걷는 것이 운전보다 더 낫다." }] }
+    ex:[{ s:"Walking is {{}} to driving here.", f:"preferable", ko:"이곳에서는 걷는 것이 운전보다 더 낫다." }] },
+
+  /* ── 챕터 12 ────────────────────────────────────── */
+  /* 이 챕터에는 손이 많이 가는 자리가 둘 있었다.
+
+     ① present — 사전에 '제시하다; 현재의' 로 품사가 섞여 있었고, 참조가 둘인데
+        서로 다른 갈래를 쓰고 있었다.
+             display(syn, D) → 제시하다 (동사)
+             absent(ant, 기본 세트) → 출석한 (형용사)
+        원본도 '제시하다, 주다' 로 동사다. 그래서 동사로 세우고, 어긋난 쪽인
+        absent 의 반의어를 in attendance 로 고쳤다 (words.js). 사전에만 있던
+        동안에도 absent 의 반의어가 '제시하다; 현재의' 로 떠서 이미 틀려 있던
+        자리다 — 이번에 바로잡았다.
+     ② 사전값이 한 갈래뿐이라 그대로 지킨 자리가 둘이다. 둘째 갈래를 붙여도
+        첫 갈래와 같은 말을 되풀이하는 셈이어서 화면을 건드릴 값이 없었다.
+             prejudice 편견   (원본 '편견, 선입견')
+             premium   최고급의 (원본과 같고, high-end 의 '최고가인' 과 겹친다)
+
+     prerequisite(전제 조건) 는 챕터 11 의 precondition(선행 조건) 과 이미
+     갈라 두었다. prerogative(고유 권한) 는 authority(권한, 당국 · B2) 와
+     레벨을 두 칸 벌려(C2) 오답 후보에서 빠지게 했다. */
+
+  { word:"preference", pron:"프레퍼런스", pos:"n", level:"B2", meanings:["선호","애호"],
+    syn:["what one likes better","liking for one over another","choice made by taste"],
+    ex:[{ s:"Do you have a {{}} for tea or coffee?", f:"preference", ko:"차와 커피 가운데 선호가 있으신가요?" }] },
+
+  { word:"prefix", pron:"프리픽스", pos:"n", level:"B2", meanings:["접두사"],
+    syn:["letters put in front","word part at the start","front element"], ant:["suffix"],
+    ex:[{ s:"Add the {{}} 'un-' to the word.", f:"prefix", ko:"그 낱말에 접두사 'un-' 을 붙여라." }] },
+
+  { word:"pregnancy", pron:"프레그넌시", pos:"n", level:"B2", meanings:["임신"],
+    syn:["being with child","carrying a baby","months before birth"],
+    ex:[{ s:"She kept working through her {{}}.", f:"pregnancy", ko:"그녀는 임신 기간에도 계속 일했다." }] },
+
+  { word:"prehistoric", pron:"프리히스토릭", pos:"adj", level:"B2", meanings:["선사 시대의"],
+    syn:["before written records","of the earliest ages","from long before history"],
+    ex:[{ s:"The cave holds {{}} paintings.", f:"prehistoric", ko:"그 굴에는 선사 시대의 그림이 있다." }] },
+
+  /* 승격 105 — 사전은 '편견' 한 갈래였다. 원본의 '선입견' 은 '편견' 과 같은 말을
+     되풀이하는 셈이라 붙이지 않았다 (discrimination, D · intolerance, I — 두 곳의
+     화면이 그대로 남는다). */
+  { word:"prejudice", pron:"프레저디스", pos:"n", level:"B2", meanings:["편견"],
+    syn:["unfair view held in advance","bias against others","settled dislike"],
+    ex:[{ s:"The report found {{}} in the hiring panel.", f:"prejudice", ko:"그 보고서는 채용 심사단에 편견이 있음을 밝혔다." }] },
+
+  /* 승격 106 — 사전 표현과 글자까지 같다(initial, I). */
+  { word:"preliminary", pron:"프릴리머네리", pos:"adj", level:"B2", meanings:["예비의","사전의"],
+    syn:["coming first","done to prepare","ahead of the main part"],
+    ex:[{ s:"The {{}} results look promising.", f:"preliminary", ko:"예비 결과는 기대할 만해 보인다." }] },
+
+  /* 원본은 '서곡, 전주곡' 으로 같은 말이 두 번이었다. 둘째를 '전조' 로 바꿨다 —
+     a prelude to war 의 그 뜻이다. */
+  { word:"prelude", pron:"프렐류드", pos:"n", level:"C1", meanings:["서곡","전조"],
+    syn:["opening piece","music at the start","sign of what follows"],
+    ex:[{ s:"The talks were a {{}} to peace.", f:"prelude", ko:"그 회담은 평화의 전조였다." }] },
+
+  /* 승격 107 — 사전 표현과 글자까지 같다(발음이 없던 항목이다). */
+  { word:"premature", pron:"프리머추어", pos:"adj", level:"B2", meanings:["시기상조의","조숙한"],
+    syn:["too early","before the right time","born before term"],
+    ex:[{ s:"The move proved {{}}.", f:"premature", ko:"그 조치는 시기상조로 드러났다." }] },
+
+  /* 승격 108 — 사전 표현과 글자까지 같다(assumption, A · hypothesis, H — 두 곳). */
+  { word:"premise", pron:"프레미스", pos:"n", level:"B2", meanings:["전제","가정"],
+    syn:["assumption","starting belief","what an argument rests on"],
+    ex:[{ s:"His argument starts from a shaky {{}}.", f:"premise", ko:"그의 주장은 허술한 전제에서 출발한다." }] },
+
+  /* 승격 109 — 사전 표현과 글자까지 같다(high-end, H). 원본도 '최고급의' 한
+     갈래다. high-end 의 둘째 뜻 '최고가인' 과 겹치지만 첫 뜻이 서로 같아
+     quizgen 이 둘을 오답 후보에서 뺀다. 명사 갈래(할증금, 보험료)는 버렸다 —
+     참조가 쓰는 갈래를 남기는 것이 이 세트의 규칙이다. */
+  { word:"premium", pron:"프리미엄", pos:"adj", level:"B2", meanings:["최고급의"],
+    syn:["top-grade","of the best kind","costing more for quality"], ant:["low-grade"],
+    ex:[{ s:"They sell {{}} coffee beans.", f:"premium", ko:"그들은 최고급 커피콩을 판다." }] },
+
+  /* 승격 110 — 사전 표현과 글자까지 같다(absorbed, A). */
+  { word:"preoccupied", pron:"프리아큐파이드", pos:"adj", level:"B2", meanings:["몰두한","정신이 팔린"],
+    syn:["lost in thought","taken up with one thing","absorbed"],
+    ex:[{ s:"He was too {{}} to notice us.", f:"preoccupied", ko:"그는 너무 몰두해서 우리를 알아보지 못했다." }] },
+
+  { word:"preprint", pron:"프리프린트", pos:"n", level:"C2", meanings:["견본 인쇄","사전 배포본"],
+    syn:["copy printed early","paper shared before publication","advance copy"],
+    ex:[{ s:"The study circulated as a {{}}.", f:"preprint", ko:"그 연구는 사전 배포본으로 돌았다." }] },
+
+  /* 승격 111 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
+     챕터 11 의 precondition 은 '선행 조건' 으로 갈라 두었다. */
+  { word:"prerequisite", pron:"프리레커지트", pos:"n", level:"C1", meanings:["전제 조건"],
+    syn:["required beforehand","needed first of all","course one must take first"],
+    ex:[{ s:"Trust is a {{}} for teamwork.", f:"prerequisite", ko:"신뢰는 협업의 전제 조건이다." }] },
+
+  /* authority(권한, 당국 · n · B2) 와 뜻이 가깝다. 레벨을 C2 로 두어 두 칸
+     벌렸다 — quizgen 은 레벨 차가 1을 넘으면 오답 후보에서 뺀다.
+     '특권' 은 챕터 14 privilege 몫으로 남기고 '특혜' 를 썼다. */
+  { word:"prerogative", pron:"프리라거티브", pos:"n", level:"C2", meanings:["고유 권한","특혜"],
+    syn:["right held by one alone","special power of office","privilege of rank"],
+    ex:[{ s:"Naming the ship is the captain's {{}}.", f:"prerogative", ko:"배에 이름을 붙이는 것은 선장의 고유 권한이다." }] },
+
+  /* 승격 112 — 사전은 '처방하다; 규정하다' 로 쌍반점을 쓰고 있었다. 뜻을 두
+     갈래로 나눠 담으면서 쉼표로 바뀐다 — dictate(D) 한 곳의 구두점이 달라진다. */
+  { word:"prescribe", pron:"프리스크라이브", pos:"v", level:"B2", meanings:["처방하다","규정하다"],
+    syn:["order as treatment","lay down as a rule","write out a remedy"],
+    ex:[{ s:"The doctor will {{}} something for the pain.", f:"prescribe", ko:"의사가 통증에 쓸 것을 처방해 줄 것이다." }] },
+
+  { word:"prescription", pron:"프리스크립션", pos:"n", level:"B2", meanings:["처방전","처방약"],
+    syn:["doctor's written order","paper for medicine","medicine so ordered"],
+    ex:[{ s:"Take this {{}} to the pharmacy.", f:"prescription", ko:"이 처방전을 약국에 가져가세요." }] },
+
+  { word:"preselected", pron:"프리셀렉티드", pos:"adj", level:"C1", meanings:["미리 골라 둔"],
+    syn:["chosen in advance","picked beforehand","settled on earlier"],
+    ex:[{ s:"The winners were {{}} by the panel.", f:"preselected", ko:"수상자들은 심사단이 미리 골라 두었다." }] },
+
+  /* 승격 113 — 사전 표현과 글자까지 같다(attendance, A). 둘째 뜻 '존재' 는
+     existence(존재 · E) 와 글자까지 같아 서로 오답에서 빠진다. */
+  { word:"presence", pron:"프레즌스", pos:"n", level:"B2", meanings:["출석","존재"],
+    syn:["attendance","being there","the fact of being on the spot"], ant:["absence"],
+    ex:[{ s:"Her {{}} at the meeting was noted.", f:"presence", ko:"그녀의 회의 출석이 기록되었다." }] },
+
+  /* 승격 114 — 사전은 '제시하다; 현재의' 로 품사가 섞여 있었다. 원본과 참조
+     display(D) 를 따라 동사로 세웠다. 어긋나 있던 absent 의 반의어는
+     in attendance 로 고쳤다 (words.js). */
+  { word:"present", pron:"프리젠트", pos:"v", level:"B2", meanings:["제시하다","주다"],
+    syn:["put forward","hand over","offer for notice"],
+    ex:[{ s:"She will {{}} the findings tomorrow.", f:"present", ko:"그녀는 내일 그 결과를 제시할 것이다." }] },
+
+  { word:"presentation", pron:"프레즌테이션", pos:"n", level:"B2", meanings:["발표","제시"],
+    syn:["talk given to an audience","showing of one's work","act of putting forward"],
+    ex:[{ s:"Her {{}} lasted twenty minutes.", f:"presentation", ko:"그녀의 발표는 20분 동안 이어졌다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -1350,9 +1475,12 @@ Object.assign(window.GLOSS, {
   "above all others": "다른 무엇보다 위인",
   "academic article": "학술 글",
   "across the whole planet": "지구 전체에 걸친",
+  "act of putting forward": "내놓는 일",
   "added remark": "덧붙인 말",
+  "advance copy": "앞서 내주는 판",
   "after one's death": "죽은 다음의",
   "agreeable to do": "하기에 좋은",
+  "ahead of the main part": "본격적인 것 앞의",
   "alike in form": "꼴이 비슷한",
   "already in place": "이미 갖춰져 있는",
   "angle of view": "보는 각도",
@@ -1370,17 +1498,23 @@ Object.assign(window.GLOSS, {
   "bearing on the matter": "그 일과 맞닿은",
   "beast of prey": "육식 맹수",
   "become aware of": "~을 알아차리게 되다",
+  "before the right time": "때가 되기 전의",
+  "before written records": "글로 남기기 전의",
   "beg earnestly": "간절히 빌다",
   "being a father": "아버지라는 처지",
   "being right to the detail": "세부까지 맞음",
+  "being there": "그 자리에 있음",
   "being well liked": "사랑받는 상태",
+  "being with child": "아이를 가진 상태",
   "believable": "믿을 만한",
   "bequeath": "물려주다",
   "better to choose": "고르기에 더 나은",
+  "bias against others": "남을 향한 치우침",
   "blind alarm": "앞뒤 없는 놀람",
   "block of text": "글의 한 덩이",
   "bloom leaf": "꽃을 이루는 잎",
   "body damp": "몸의 습기",
+  "born before term": "달이 차기 전에 난",
   "break into a sweat": "땀이 나기 시작하다",
   "breathe hard": "숨을 거칠게 쉬다",
   "brief halt": "잠깐의 멈춤",
@@ -1398,6 +1532,7 @@ Object.assign(window.GLOSS, {
   "carry off spoils": "빼앗은 것을 들고 가다",
   "carry on without end": "그침 없이 이어 가다",
   "carry pollen to": "~에 꽃가루를 옮기다",
+  "carrying a baby": "배 속에 아기를 지님",
   "carrying out of a task": "맡은 일을 해냄",
   "carrying weight": "무게가 실린",
   "chemical for killing pests": "해충을 죽이는 약품",
@@ -1406,6 +1541,8 @@ Object.assign(window.GLOSS, {
   "chicken and duck meat": "닭과 오리 고기",
   "child health specialist": "아이 건강 전문가",
   "children's doctor": "아이를 보는 의사",
+  "choice made by taste": "취향에 따른 고름",
+  "chosen in advance": "미리 뽑힌",
   "church leader": "교회의 지도자",
   "circle graph": "동그란 그래프",
   "clinging": "붙잡고 놓지 않는",
@@ -1414,13 +1551,17 @@ Object.assign(window.GLOSS, {
   "come earlier than": "~보다 이르게 오다",
   "coming ages": "앞으로 올 시대",
   "coming back each year": "해마다 다시 오는",
+  "coming first": "먼저 오는",
   "coming from parents": "어버이에게서 나온",
   "condition set in advance": "미리 정해 둔 조건",
   "congressional": "국회에 관한",
   "contribute to": "~에 이바지하다",
+  "copy printed early": "미리 찍어 낸 것",
+  "costing more for quality": "질 때문에 값이 더 나가는",
   "count of votes": "표를 셈",
   "country laborer": "시골 일꾼",
   "course of action": "나아갈 방향",
+  "course one must take first": "먼저 들어야 하는 과목",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
   "crop spray": "작물에 뿌리는 약",
@@ -1439,7 +1580,9 @@ Object.assign(window.GLOSS, {
   "dive headlong": "곤두박이로 뛰어들다",
   "doctor for infants": "갓난아이를 보는 의사",
   "doctor of medicine": "의학을 다루는 의사",
+  "doctor's written order": "의사가 적어 준 지시",
   "dogged effort": "질기게 들이는 노력",
+  "done to prepare": "준비로 하는",
   "done with great care": "아주 조심스레 한",
   "down-to-earth": "발이 땅에 붙은",
   "drained of color": "빛깔이 빠진",
@@ -1498,7 +1641,9 @@ Object.assign(window.GLOSS, {
   "framework of thought": "생각의 뼈대",
   "freeloader": "공짜로 얻어먹는 이",
   "frolicsome": "뛰놀기 좋아하는",
+  "from long before history": "역사보다 훨씬 앞선",
   "from time to time in a cycle": "돌아가며 때때로",
+  "front element": "앞에 오는 요소",
   "full of feeling": "감정이 가득한",
   "full of fun": "재미가 가득한",
   "future generations": "다음 세대들",
@@ -1563,6 +1708,7 @@ Object.assign(window.GLOSS, {
   "hunting animal": "사냥하는 짐승",
   "hush money": "입막음 돈",
   "idol-worshipping": "우상을 섬기는",
+  "in attendance": "자리에 나온",
   "inactive treatment": "효과 없는 처치",
   "inborn nature": "타고난 바탕",
   "inborn tendency": "타고난 경향",
@@ -1585,17 +1731,22 @@ Object.assign(window.GLOSS, {
   "lasting many years": "여러 해를 버티는",
   "law on inventions": "발명에 관한 법",
   "lawmaking": "법을 만드는",
+  "lay down as a rule": "규칙으로 정해 두다",
   "lay paving on": "~에 포장재를 깔다",
   "lead the way": "앞장서 나아가다",
   "lead up to": "~로 이어지며 앞서다",
   "leaf of a flower": "꽃의 잎",
   "leaning one is born with": "나면서 지닌 쏠림",
   "legislative body": "법을 만드는 기구",
+  "letters put in front": "앞에 붙는 글자",
   "likeness of a person": "사람을 닮게 그린 것",
+  "liking for one over another": "하나를 더 좋아함",
   "living growth": "살아서 자라는 것",
   "living on a host": "숙주에 붙어 사는",
   "looking on the dark side": "어두운 쪽만 보는",
+  "lost in thought": "생각에 빠진",
   "love of knowledge": "앎을 사랑함",
+  "low-grade": "질이 낮은",
   "loyal to one party": "한 정당에만 충성하는",
   "lung infection": "허파에 생긴 감염",
   "machine copy": "기계로 뜬 사본",
@@ -1615,6 +1766,7 @@ Object.assign(window.GLOSS, {
   "matter-of-fact": "있는 대로 따지는",
   "maybe": "어쩌면",
   "medical practitioner": "의료를 하는 사람",
+  "medicine so ordered": "그렇게 지시된 약",
   "medicine-related": "의약에 얽힌",
   "member of an activity": "활동의 구성원",
   "mineral oil": "광물에서 얻은 기름",
@@ -1626,6 +1778,7 @@ Object.assign(window.GLOSS, {
   "money forfeit": "물어야 하는 돈",
   "money paid after work ends": "일을 그친 뒤 받는 돈",
   "monthly pay": "달마다 받는 돈",
+  "months before birth": "낳기 전의 달들",
   "morbid fear": "병적인 두려움",
   "more than one": "하나보다 많은",
   "more to be wished": "더 바랄 만한",
@@ -1633,8 +1786,10 @@ Object.assign(window.GLOSS, {
   "motherly and fatherly": "어머니 아버지의",
   "moving to pity": "안타깝게 만드는",
   "mull over": "곱씹어 생각하다",
+  "music at the start": "맨 앞에 나오는 음악",
   "nations": "여러 나라",
   "neck of land": "좁고 긴 땅",
+  "needed first of all": "무엇보다 먼저 있어야 하는",
   "never wearing off": "가시지 않는",
   "never-ending": "끝날 줄 모르는",
   "non-surgical doctor": "수술을 하지 않는 의사",
@@ -1655,8 +1810,11 @@ Object.assign(window.GLOSS, {
   "of perceiving": "알아차리는 것의",
   "of several kinds": "여러 종류의",
   "of state affairs": "나라 일의",
+  "of the best kind": "가장 좋은 종류의",
   "of the body": "몸에 속한",
+  "of the earliest ages": "가장 오랜 시대의",
   "of the legislature": "입법 기관의",
+  "offer for notice": "보아 달라고 내놓다",
   "offer up a plea": "간구를 올리다",
   "official document": "공식 문서",
   "official line": "공식으로 정한 방향",
@@ -1674,8 +1832,10 @@ Object.assign(window.GLOSS, {
   "one who joins in": "끼어든 사람",
   "one who mends pipes": "관을 고치는 이",
   "one-eyed in politics": "정치에서 한쪽만 보는",
+  "opening piece": "여는 곡",
   "opening words": "여는 말",
   "oppress cruelly": "모질게 억누르다",
+  "order as treatment": "치료로 지시하다",
   "organism living off another": "남에게 붙어 사는 생물",
   "out of the common run": "흔하지 않은",
   "outside the church": "교회 밖의",
@@ -1683,6 +1843,8 @@ Object.assign(window.GLOSS, {
   "paint a picture of": "~을 그림으로 담다",
   "painted figure": "그려 놓은 인물",
   "pallid": "해쓱한",
+  "paper for medicine": "약을 받는 종이",
+  "paper shared before publication": "정식으로 내기 전에 돌리는 글",
   "pare": "깎아 내다",
   "party-related": "정당에 얽힌",
   "pass right through": "곧장 뚫고 지나가다",
@@ -1692,6 +1854,7 @@ Object.assign(window.GLOSS, {
   "period of change": "바뀌어 가는 시기",
   "person on foot": "걸어 다니는 사람",
   "personal take": "개인이 보는 바",
+  "picked beforehand": "앞서 골라 둔",
   "picture of a face": "얼굴을 담은 그림",
   "piece sewn on": "덧대어 박은 천",
   "pipe fitter": "관을 잇는 일꾼",
@@ -1707,6 +1870,7 @@ Object.assign(window.GLOSS, {
   "present beforehand": "앞서부터 있는",
   "present in every corner": "구석마다 있는",
   "prey": "먹이",
+  "privilege of rank": "지위에 따른 특별 대우",
   "prod with a finger": "손가락으로 쿡 찌르다",
   "proneness": "쉽게 그리 되는 성질",
   "proportion out of a hundred": "백을 기준으로 한 몫",
@@ -1732,10 +1896,12 @@ Object.assign(window.GLOSS, {
   "remittance": "송금",
   "represent in words": "말로 그려 내다",
   "reproduced page": "다시 찍어 낸 면",
+  "required beforehand": "미리 요구되는",
   "resemblance": "서로 닮음",
   "result-minded": "결과를 먼저 보는",
   "retirement pay": "은퇴 뒤 받는 돈",
   "reverent": "경건한",
+  "right held by one alone": "한 사람만 쥔 권리",
   "right to the detail": "세부까지 맞는",
   "ringing true": "참말로 들리는",
   "rob of movement": "움직임을 앗다",
@@ -1766,6 +1932,8 @@ Object.assign(window.GLOSS, {
   "set down as true": "참이라고 두다",
   "set in advance": "미리 잡아 둔",
   "settle in advance": "미리 정해 두다",
+  "settled dislike": "굳어 버린 싫음",
+  "settled on earlier": "먼저 정해 둔",
   "settling of a bill": "셈을 치름",
   "sham medicine": "약인 척하는 것",
   "shape with five edges": "변이 다섯인 모양",
@@ -1777,10 +1945,12 @@ Object.assign(window.GLOSS, {
   "short break": "짧은 쉼",
   "show before an audience": "관객 앞에서 하는 공연",
   "showing good manners": "예절을 갖춘",
+  "showing of one's work": "자기 작업을 보임",
   "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
   "sidewalk": "인도",
   "siding with a faction": "한 파에 붙는",
+  "sign of what follows": "뒤에 올 일의 낌새",
   "signed appeal": "이름을 적어 올리는 호소",
   "single fix for everything": "하나로 다 해결하는 것",
   "single out for notice": "따로 집어 알리다",
@@ -1799,6 +1969,7 @@ Object.assign(window.GLOSS, {
   "source of contamination": "오염의 근원",
   "speak in defense of": "~을 변호하여 말하다",
   "speaker's stand": "말하는 이가 서는 자리",
+  "special power of office": "그 직책에 딸린 특별한 힘",
   "speck of matter": "물질의 티끌",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
@@ -1814,6 +1985,7 @@ Object.assign(window.GLOSS, {
   "stage in a process": "과정의 한 대목",
   "staged act": "무대에 올린 연기",
   "stand in position": "자리에 세우다",
+  "starting belief": "출발이 되는 믿음",
   "step along the way": "거쳐 가는 한 걸음",
   "step taken in advance": "미리 밟아 두는 조치",
   "stick on": "달라붙게 하다",
@@ -1827,6 +1999,7 @@ Object.assign(window.GLOSS, {
   "study of medicines": "약을 다루는 학문",
   "study of wisdom": "지혜를 따지는 학문",
   "sudden terror": "갑작스러운 무서움",
+  "suffix": "접미사",
   "sum charged for breaking a rule": "규칙을 어겨 물리는 금액",
   "sunken dip": "내려앉은 자리",
   "supreme": "더없이 높은",
@@ -1842,11 +2015,14 @@ Object.assign(window.GLOSS, {
   "take as given": "주어진 것으로 삼다",
   "take part": "한몫 맡다",
   "take the rind off": "껍데기를 떼다",
+  "taken up with one thing": "한 가지에 붙들린",
   "taking of pictures": "그림을 담아냄",
+  "talk given to an audience": "사람들 앞에서 하는 말",
   "tap lightly": "가볍게 두드리다",
   "teaching method": "가르치는 방식",
   "tenant farmer": "남의 땅을 부치는 농부",
   "that might be": "그럴 수도 있는",
+  "the fact of being on the spot": "그 자리를 채우고 있음",
   "the father's line": "아버지 쪽 핏줄",
   "there from before": "전부터 거기 있던",
   "thing owned": "가진 물건",
@@ -1864,6 +2040,8 @@ Object.assign(window.GLOSS, {
   "to do with the senses": "감각에 관한",
   "to the point": "요점에 닿은",
   "tone level": "소리의 높낮이",
+  "too early": "너무 이른",
+  "top-grade": "최상급인",
   "topmost level": "맨 위 수준",
   "tout wares": "물건을 권하며 팔다",
   "treasured": "보물처럼 여기는",
@@ -1876,6 +2054,7 @@ Object.assign(window.GLOSS, {
   "unadorned": "꾸미지 않은",
   "unconvincing": "믿음이 안 가는",
   "undeveloped power": "아직 펼치지 않은 힘",
+  "unfair view held in advance": "미리 지닌 치우친 생각",
   "universal remedy": "두루 듣는 약",
   "unlike any other": "다른 무엇과도 다른",
   "unresisting": "맞서지 않는",
@@ -1898,14 +2077,17 @@ Object.assign(window.GLOSS, {
   "well satisfied": "넉넉히 흡족한",
   "well-mannered": "몸가짐이 바른",
   "well-padded": "살이 두둑한",
+  "what an argument rests on": "주장이 기대는 바",
   "what could come of it": "거기서 나올 수 있는 것",
   "what must come first": "먼저 있어야 할 것",
   "what one expects to happen": "일어날 것이라 보는 바",
+  "what one likes better": "더 좋아하는 쪽",
   "wheel chart": "바퀴 모양 도표",
   "wide liking": "널리 좋아함",
   "within reach": "손이 닿는",
   "without a middle server": "중간 서버를 두지 않는",
   "word of honor": "명예를 걸고 한 말",
+  "word part at the start": "낱말 앞머리 조각",
   "work into": "~ 속으로 파고들다",
   "work out a ruse": "속임수를 짜내다",
   "workable in practice": "실제로 돌아가는",
@@ -1919,6 +2101,7 @@ Object.assign(window.GLOSS, {
   "worthless": "값이 없는",
   "wrapped goods": "싸 놓은 물건",
   "wretchedly poor": "몹시 딱하게 가난한",
+  "write out a remedy": "쓸 약을 적어 주다",
   "writer of plays": "희곡을 쓰는 이",
   "written study": "글로 쓴 연구"
 });
