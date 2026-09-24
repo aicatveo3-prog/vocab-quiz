@@ -1165,8 +1165,12 @@ window.VOCAB_C = [
     syn:["contradictory","opposing","clashing"], ant:["consistent"],
     ex:[{ s:"Witnesses gave {{}} accounts of the crash.", f:"conflicting", ko:"증인들은 그 충돌에 대해 상반되는 진술을 했다." }] },
 
+  /* 반의어를 rebel 에서 rise up against 로 바꿨다. rebel 이 R 세트 챕터 2
+     표제어(반역자, 반항자 · n)로 올라가면 동사 표제어의 반의어 자리에 사람을
+     가리키는 명사 뜻이 뜬다. 사전의 rebel 값도 '반항하다, 반란자' 로 품사가
+     섞여 있었다. */
   { word:"conform", pron:"컨폼", pos:"v", level:"B2", meanings:["따르다","순응하다"],
-    syn:["obey","adapt","fit in"], ant:["rebel"],
+    syn:["obey","adapt","fit in"], ant:["rise up against"],
     ex:[{ s:"New buildings must {{}} to the fire code.", f:"conform", ko:"새 건물은 소방 규정을 따라야 한다." }],
     gov:{ prep:["to","with"], pat:"conform {{}} the standard", usage:"conform to ~ : ~에 맞추다·순응하다" } },
 
@@ -2022,15 +2026,11 @@ Object.assign(window.GLOSS, {
   "provincial":"지방의, 편협한",
   "public":"공개된, 공공의",
   "purify":"정화하다",
-  "radical":"급진적인",
   "rambling":"산만한, 종횡무진인",
   "random":"무작위의",
-  "rebel":"반항하다, 반란자",
   "reckless":"무모한, 부주의한",
   "refined":"정제된, 세련된",
-  "refund":"환불하다, 환불",
   "refute":"반박하다, 논박하다",
-  "reinforce":"강화하다",
   "repulsion":"혐오, 반발",
   "request":"요청, 요청하다",
   "respect":"존중, 존경",
