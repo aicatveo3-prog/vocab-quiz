@@ -1511,7 +1511,6 @@ Object.assign(window.GLOSS, {
   "truthful":"진실한, 사실대로의",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
-  "vogue":"유행, 인기",
 
   /* ── 2차: fall short of ~ favorably (46개) ───────────────── */
   "absorbing":"몰두하게 하는",
@@ -1597,7 +1596,6 @@ Object.assign(window.GLOSS, {
   "undergo fermentation":"발효를 거치다",
   "unworkable":"실행할 수 없는",
   "viability":"실현 가능성",
-  "viable":"실행 가능한",
   "womanly":"여자다운",
   "women's rights advocate":"여성 권리 옹호자",
   "workability":"작동 가능성",
@@ -1935,7 +1933,6 @@ Object.assign(window.GLOSS, {
   "toadstool":"독버섯",
   "trailblazer":"길을 처음 낸 사람",
   "usable":"쓸 수 있는",
-  "vapor":"김, 수증기",
   "worthwhile":"할 만한 값이 있는",
 
   /* ── 11차: furious ~ fuzzy (21개, 마지막) ───────────

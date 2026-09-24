@@ -674,7 +674,6 @@ Object.assign(window.GLOSS, {
   "unassuming":"겸손한",
   "uplifting":"기분을 북돋우는",
   "upscale":"상류층 대상의",
-  "vertical":"수직의",
   "wait":"기다리다",
   "welcoming":"환영하는",
   "zone":"지역, 구역"

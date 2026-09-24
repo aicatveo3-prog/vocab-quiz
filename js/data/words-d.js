@@ -1511,8 +1511,6 @@ Object.assign(window.GLOSS, {
   "time limit":"제한 시간",
   "trade in":"~을 거래하다",
   "unravel":"풀다, 밝혀내다",
-  "venture":"과감히 하다; 모험",
-  "virtue":"미덕, 덕목",
   "wreckage":"잔해, 난파",
 
   /* ── 2차 (declare ~ deliver) 몫 74개 ──────────── */
@@ -1721,7 +1719,6 @@ Object.assign(window.GLOSS, {
   "tight spot":"궁지, 곤란한 처지",
   "transcription":"필기, 옮겨 적기",
   "undignified":"품위 없는, 체면 없는",
-  "vary":"다르다, 달라지다",
   "vernacular":"토착어, 일상어",
   "water down":"물을 타다, 희석하다",
   "wolf down":"허겁지겁 먹다",
@@ -1872,8 +1869,6 @@ Object.assign(window.GLOSS, {
   "understate":"축소해 말하다",
   "undoing":"파멸의 원인, 몰락",
   "unruly":"다루기 힘든, 제멋대로인",
-  "varied":"다양한, 변화가 많은",
-  "variety":"다양성, 여러 가지",
   "vertigo":"현기증, 어지럼증",
   "wild":"야생의, 길들지 않은",
 

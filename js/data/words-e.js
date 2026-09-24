@@ -2232,7 +2232,6 @@ Object.assign(window.GLOSS, {
   "tangle up":"뒤엉키게 하다",
   "tempting":"구미가 당기는",
   "undivided":"나뉘지 않은, 온전한",
-  "vast":"광대한, 막대한",
   "zeal":"열의, 열성",
 
   /* ── 7차: envision ~ erratic (30개) ───────────────── */
@@ -2423,7 +2422,6 @@ Object.assign(window.GLOSS, {
   "unfair use":"부당한 이용",
   "uncovering":"벗겨 냄, 드러냄",
   "use unfairly":"부당하게 이용하다",
-  "volatile":"휘발성의, 불안정한",
   "wide-ranging":"폭넓은",
   "wiped out":"완전히 없어진",
 

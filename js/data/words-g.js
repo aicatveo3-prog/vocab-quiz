@@ -802,7 +802,6 @@ Object.assign(window.GLOSS, {
   "unfounded":"사실 근거가 없는",
   "unwarranted":"부당한",
   "venerate":"숭상하다",
-  "vivid":"선명한",
   "weight force":"무게로 작용하는 힘",
   "weighty":"중대한, 무거운",
   "wheeze":"쌕쌕거리다",

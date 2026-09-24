@@ -1586,7 +1586,12 @@ window.VOCAB_I = [
     ex:[{ s:"The army planned to {{}} from the north.", f:"invade", ko:"그 군대는 북쪽에서 침략할 계획이었다." }] },
 
   { word:"invalid", pron:"인밸리드", pos:"adj", level:"B2", meanings:["실효성이 없는","타당하지 않은"],
-    syn:["void","null","unfounded"], ant:["valid"],
+    /* V 세트 4차에서 void 를 표제어로 세우며 **동사**(무효화하다) 로 확정했다.
+       사전값이 '무효화하다; 공허' 였고 참조가 annul(v)·invalid(adj) 로 갈렸는데,
+       동사로 세우면 annul 과 글자가 맞물려 자동 배제되고 손질이 이 한 곳으로
+       끝난다. 형용사 표제어의 유의어 칸에 동사가 설 수 없으므로 풀어 쓴 말로
+       갈았다. */
+    syn:["of no legal force","null","unfounded"], ant:["valid"],
     ex:[{ s:"The ticket becomes {{}} after the expiry date.", f:"invalid", ko:"그 표는 만료일 이후 실효성이 없어진다." }] },
 
   { word:"invaluable", pron:"인밸류어블", pos:"adj", level:"B2", meanings:["매우 귀중한","값을 헤아릴 수 없는"],
@@ -2186,11 +2191,9 @@ Object.assign(window.GLOSS, {
   "utopianism": "유토피아주의",
   "vaccinate": "백신을 놓다",
   "vacillation": "갈팡질팡함",
-  "valid": "유효한",
   "verification": "입증, 검증",
   "viral illness": "바이러스 질환",
   "volatility": "변동이 심함",
-  "voracious": "식욕이 왕성한",
   "wakefulness": "깨어 있는 상태",
   "water": "물을 주다",
   "wavering": "흔들리는",
