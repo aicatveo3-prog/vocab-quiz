@@ -154,7 +154,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑧ — 사전 표현 '의무적인, 필수의' 를 글자까지 지켰다.
      compulsory(C)·mandatory(M) 와 첫 뜻이 같지만 셋은 서로 유의어다. */
-  { word:"obligatory", pron:"어블리거토리", pos:"adj", level:"C1", meanings:["의무적인","필수의"],
+  { word:"obligatory", pron:"어블리거토리", pos:"adj", level:"C1", meanings:["의무로 정해진","꼭 해야 하는"],
     syn:["compulsory","mandatory","not optional"], ant:["voluntary"],
     ex:[{ s:"Attendance at the drill is {{}}.", f:"obligatory", ko:"훈련 참석은 의무적이다." }] },
 
