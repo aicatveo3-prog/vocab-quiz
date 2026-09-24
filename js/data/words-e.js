@@ -2172,7 +2172,6 @@ Object.assign(window.GLOSS, {
   "put into code":"부호로 바꾸다",
   "put into effect":"시행하다",
   "send out":"내보내다, 발신하다",
-  "surround":"둘러싸다, 에워싸다",
   "sympathetic":"동정하는, 공감하는",
   "venting":"배출, 뿜어냄",
 
@@ -2235,7 +2234,6 @@ Object.assign(window.GLOSS, {
   "put one's name down":"이름을 올리다",
   "sign-up":"가입, 신청",
   "surroundings":"주위 환경",
-  "sustainable":"지속 가능한",
   "tangle up":"뒤엉키게 하다",
   "tempting":"구미가 당기는",
   "trap":"가두다, 덫에 빠뜨리다",
@@ -2318,7 +2316,6 @@ Object.assign(window.GLOSS, {
   "progression":"진행, 연속",
   "shine":"두각을 나타내다",
   "special case":"특수한 경우",
-  "surpass":"능가하다",
   "tax dodging":"탈세",
   "testimony":"증언",
   "too much":"너무 많은 것",

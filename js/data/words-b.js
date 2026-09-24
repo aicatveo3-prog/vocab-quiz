@@ -1035,7 +1035,6 @@ Object.assign(window.GLOSS, {
   "straighten":"곧게 하다, 펴다",
   "succeed":"성공하다",
   "suffer from":"~로 고통받다",
-  "surrender":"항복하다, 굴복하다",
   "sweet":"단, 달콤한",
   "sweetness":"단맛, 감미로움",
   "timid":"겁 많은, 소심한",

@@ -1335,7 +1335,6 @@ Object.assign(window.GLOSS, {
   "sudden rush": "갑작스레 몰려나옴",
   "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
-  "surgery": "외과 처치",
   "surpass in results": "성과에서 앞서다",
   "survive longer than": "~보다 오래 살아남다",
   "sweep over": "휩쓸어 덮치다",
