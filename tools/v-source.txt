@@ -1,0 +1,75 @@
+vacant	adj	B2	빈|비어 있는	사전 글자 유지(참조 blank·empty). 교재 '공허한' 은 empty 자리
+vacuum	n	B2	진공	교재 동사 갈래 버림
+vague	adj	B2	모호한|애매한	사전=교재. 참조 네 곳
+vaguely	adv	B2	희미하게|애매모호하게	'약간' 은 slightly 자리
+valid	adj	B2	유효한	사전 단일값 유지(참조 invalid·legitimate)
+validate	v	B2	입증하다|인증하다	★교재를 따랐다 — 사전 '확인하다' 는 아래 verify 첫 뜻과 같아진다. confirm 화면 1줄 바뀜
+valuables	n	B2	귀중품	신규
+valueless	adj	C1	무가치한	신규
+vandalism	n	C1	공공 기물 파손	★교재 '반달리즘' 은 낱말을 한글로 되풀이한 것이라 걷었다
+vanguard	n	C2	선봉	교재 괄호 걷음. '선두' 는 같은 말
+vanish	v	B2	사라지다	사전 단일값 유지(참조 세 곳). disappear 와 맞물려 배제
+vapor	n	B2	수증기|김	★사전의 앞뒤를 바꿨다 — '김' 이 첫 뜻이면 뜻이 흐리다. fume 화면 1줄 바뀜
+variability	n	C1	변동성|가변성	사전 글자 유지(참조 consistency). 교재는 순서만 다르다
+variable	adj	B2	변하기 쉬운|가변적인	사전 글자 유지(참조 세 곳). capricious 와 맞물려 배제
+variation	n	B2	차이|변형	'변화' 는 shift·mutation 자리. '차이' 는 contrast 등 넷과 맞물려 배제
+varied	adj	B2	다양한|변화가 많은	사전 글자 유지(참조 두 곳). 아래 various 와 '다양한' 을 맞춰 배제
+variety	n	B1	다양성|여러 가지	사전 글자 유지(참조 diversity)
+various	adj	B1	다양한|여러 가지의	★varied·diverse 와 글자를 맞춰 자동 배제시켰다 — 갈라 쓸 수 없는 말이다
+vary	v	B1	다르다|달라지다	사전 글자 유지(참조 세 곳). differ 와 맞물려 배제
+vast	adj	B1	광대한|막대한	사전 글자 유지(참조 enormous·immense). enormous·immense·untold 와 맞물려 배제
+vegan	adj	C1	엄격한 채식의	교재 괄호 걷음. '엄격한' 을 품어 strict 등 여섯과 맞물려 배제
+vegetarian	n	B2	채식주의자	위 vegan(형용사) 과 품사로 갈랐다
+vegetation	n	B2	초목	★교재 '식물' 은 plant 뜻이라 버렸다. 사전값이 맞다(참조 plant)
+vehicle	n	B1	차량|수단	사전의 쌍반점만 쉼표로(참조 automobile·medium). means 와 맞물려 배제
+vein	n	B2	정맥|혈관	신규
+velocity	n	C1	속도	교재 '빠른 속도' 는 같은 말. rate·tempo 와 맞물려 배제
+venom	n	C1	독액	사전 단일값 유지(참조 toxin). 교재의 '앙심, 원한' 은 grudge 자리
+ventilate	v	B2	환기하다	교재 '공기를 유통시키다' 는 설명이라 걷었다
+ventilation	n	B2	통풍|환기	위 ventilate(동사) 와 품사로 갈랐다
+venture	v	B2	과감히 하다|감행하다	사전 첫 갈래(참조 dare 가 동사). 명사 '모험' 은 adventure 자리. dare 화면 1줄 바뀜
+venue	n	B2	개최지|장소	'장소' 를 둘째로 남겨 location·site 와 맞물리게 했다
+verbal	adj	B2	언어의|말로 된	교재 괄호 걷음
+verdict	n	C1	평결|판단	사전의 쌍반점만 쉼표로(참조 conclusion·diagnosis). '판결' 은 decree·sentence 자리
+verge	n	C1	가장자리|직전	사전의 쌍반점만 쉼표로(참조 brink). brink 와 두 갈래가 통째로 같아 배제
+verify	v	B2	확인하다|검증하다	사전 글자 유지(참조 세 곳). confirm·identify 와 맞물려 배제
+versatile	adj	C1	다재다능한|다용도의	아래 well-rounded 에서 '다재다능한' 을 빼 이쪽에 주었다
+verse	n	C1	운문	사전 단일값 유지(참조 lyric)
+version	n	B1	판|형태	★사전 '버전' 은 낱말을 한글로 되풀이한 것이라 걷고 교재의 '형태' 를 넣었다. adaptation 화면 1줄 바뀜
+versus	phr	B2	~에 맞서|~와 대비하여	교재 '대' 는 너무 짧아 풀었다
+vertical	adj	B2	수직의	사전=교재(참조 horizontal)
+veterinarian	n	B2	수의사	교재 '(= vet)' 메모 걷음
+veto	n	C1	거부권	교재 동사 갈래 버림. '금지' 도 버렸다
+viable	adj	B2	실행 가능한	사전 단일값 유지(참조 feasible). feasible 과 맞물려 배제 — workable 은 갈라 썼다
+vibrant	adj	B2	활기찬|생기가 넘치는	교재 '(= exciting)' 메모 걷음
+vibrate	v	B2	진동하다	'떨다' 는 quiver·wobble 자리
+vice versa	phr	C1	거꾸로도 마찬가지로	'거꾸로' 를 품어 conversely 등과 맞물려 배제. 교재 '반대로, 거꾸로' 보다 정확하다
+vicious	adj	B2	사악한|잔인한	사전 글자 유지(참조 brutal). cruel·savage 와 맞물리고 wicked 와도 '사악한' 으로 맞물린다
+viewpoint	n	B2	관점|시각	outlook·perspective·standpoint·point of view 와 맞물려 배제
+vigorous	adj	B2	격렬한|활발한	교재 괄호 걷음. acute·bitter·furious·strenuous 와 맞물려 배제
+vigorously	adv	B2	힘차게|활발히	사전 글자 유지(참조 actively)
+vile	adj	C1	비열한|야비한	교재 '비도덕적인' 은 virtuous 의 반대 자리라 버렸다
+villain	n	B2	악당|악인	'범죄자' 는 criminal 자리
+violation	n	B2	위반	사전=교재(참조 breach)
+violence	n	B1	폭력	신규
+virgin	adj	C1	원래 그대로의	교재 그대로
+virtual	adj	B2	가상의|실질적인	imaginary·substantial 과 맞물려 배제
+virtually	adv	B2	사실상|거의	★첫 뜻을 '사실상' 으로 — '거의' 가 앞이면 seldom(거의 ~ 않는) 과 반대 뜻인데 눈으로 안 갈린다
+virtue	n	B2	미덕|덕목	사전 글자 유지(참조 decadence·morality). 교재 '선' 은 너무 넓다
+virtuous	adj	C1	도덕적인|고결한	ethical·moral 과 맞물려 배제
+visual	adj	B2	시각의	사전=교재(참조 auditory·aural)
+vital	adj	B1	필수적인|생명의	사전의 쌍반점만 쉼표로(참조 네 곳). 교재는 순서만 다르다
+vitalize	v	C2	활력을 북돋우다	bolster(북돋우다) 를 품어 맞물려 배제
+vivacious	adj	C2	명랑한|쾌활한	신규
+vivid	adj	B2	선명한	사전 단일값 유지(참조 graphic). '화려한' 은 gorgeous·ornate 자리
+vocational	adj	B2	직업의	교재 '직업상의' 는 같은 말
+vogue	n	C1	유행|인기	사전 글자 유지(참조 fad). ★유의어에 craze 를 넣는다 — '유행' 과 '대유행' 이 안 갈린다
+void	v	C1	무효화하다	★사전 첫 갈래. annul 과 글자가 같아 배제. invalid(형용사) 의 참조를 손질한다
+volatile	adj	C1	휘발성의|불안정한	사전 글자 유지(참조 explosive). instability·unease 와 맞물려 배제
+voluntary	adj	B2	자발적인|스스로 하는	★교재 뜻을 앞에 두어 spontaneous 와 맞물리게 했다. obligatory 화면 1줄 바뀜
+volunteer	n	B1	자원봉사자	위 voluntary(형용사) 와 품사로 갈랐다
+vomit	v	B2	구토하다	사전 단일값 유지(참조 throw up). throw up 을 품어 배제
+voracious	adj	C2	식욕이 왕성한	사전 단일값 유지(참조 insatiable). 교재 '게걸스러운' 은 같은 쪽이다
+vow	n	B2	맹세	교재 동사 갈래 버림. oath 와 맞물려 배제
+vulgar	adj	C1	저속한|선정적인	신규
+vulnerable	adj	B2	취약한	사전 단일값 유지(참조 세 곳)

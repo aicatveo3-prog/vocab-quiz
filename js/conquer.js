@@ -47,7 +47,12 @@ window.Conquer = (function () {
     { id: 'R', label: 'R', words: window.VOCAB_R || [] },
     { id: 'S', label: 'S', words: window.VOCAB_S || [] },
     { id: 'T', label: 'T', words: window.VOCAB_T || [] },
-    { id: 'U', label: 'U', words: window.VOCAB_U || [] }
+    { id: 'U', label: 'U', words: window.VOCAB_U || [] },
+    { id: 'V', label: 'V', words: window.VOCAB_V || [] },
+    { id: 'W', label: 'W', words: window.VOCAB_W || [] },
+    /* X 로 시작하는 수능 낱말은 없어서 세트를 두지 않는다 */
+    { id: 'Y', label: 'Y', words: window.VOCAB_Y || [] },
+    { id: 'Z', label: 'Z', words: window.VOCAB_Z || [] }
   ];
 
   function getSet(id) {

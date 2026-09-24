@@ -10,7 +10,7 @@ var fs = require('fs'), path = require('path');
 var ROOT = path.join(__dirname, '..');
 var window = {}; global.window = window;
 function load(rel) { (new Function('window', fs.readFileSync(path.join(ROOT, rel), 'utf8')))(window); }
-['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js', 'js/data/words-t.js', 'js/data/words-u.js',
+['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js', 'js/data/words-t.js', 'js/data/words-u.js', 'js/data/words-v.js', 'js/data/words-w.js', 'js/data/words-y.js', 'js/data/words-z.js',
  'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
 
 var ALL = (window.VOCAB || []).concat(window.VOCAB_B || [])
@@ -30,7 +30,11 @@ var ALL = (window.VOCAB || []).concat(window.VOCAB_B || [])
   .concat(window.VOCAB_R || [])
   .concat(window.VOCAB_S || [])
   .concat(window.VOCAB_T || [])
-  .concat(window.VOCAB_U || []);
+  .concat(window.VOCAB_U || [])
+  .concat(window.VOCAB_V || [])
+  .concat(window.VOCAB_W || [])
+  .concat(window.VOCAB_Y || [])
+  .concat(window.VOCAB_Z || []);
 var GLOSS = window.GLOSS || {}, PRON = window.PRON || {};
 var byWord = {};
 ALL.forEach(function (w) { byWord[w.word.toLowerCase()] = w; });

@@ -60,7 +60,11 @@ window.Quiz = (function () {
     .concat(window.VOCAB_R || [])
     .concat(window.VOCAB_S || [])
     .concat(window.VOCAB_T || [])
-    .concat(window.VOCAB_U || []);
+    .concat(window.VOCAB_U || [])
+    .concat(window.VOCAB_V || [])
+    .concat(window.VOCAB_W || [])
+    .concat(window.VOCAB_Y || [])
+    .concat(window.VOCAB_Z || []);
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },
