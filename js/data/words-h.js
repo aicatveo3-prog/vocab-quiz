@@ -630,7 +630,6 @@ Object.assign(window.GLOSS, {
   "perilous":"위태로운",
   "piercing":"찌르는 듯한",
   "plant-eater":"초식동물",
-  "postulate":"상정하다",
   "powerless":"무력한",
   "prejudice attack":"편견에 의한 공격",
   "premium":"최고급의",

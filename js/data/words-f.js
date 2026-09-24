@@ -1589,7 +1589,6 @@ Object.assign(window.GLOSS, {
   "plant food":"식물 영양제",
   "plume":"깃털 장식",
   "practicability":"실행할 수 있음",
-  "practicable":"실행에 옮길 수 있는",
   "prenatal":"출생 전의",
   "pretend":"~인 척하다",
   "productiveness":"생산성",

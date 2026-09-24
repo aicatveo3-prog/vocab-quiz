@@ -1717,7 +1717,6 @@ window.GLOSS = {
   "pleasant":"쾌적한, 즐거운",
   "poison":"독",
   "poor":"가난한",
-  "posterior":"뒤쪽의",
   "present":"출석한, 현재의",
   "preserve":"보존하다",
   "prosperity":"번영",
