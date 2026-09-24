@@ -1737,7 +1737,6 @@ window.GLOSS = {
   "relief":"안도, 구제",
   "repulsion":"혐오감, 반발",
   "repulsive":"혐오스러운",
-  "resist":"저항하다",
   "retreat":"후퇴하다",
   "rigid":"경직된",
   "rigidity":"경직성",

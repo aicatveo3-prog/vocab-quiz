@@ -1386,8 +1386,11 @@ window.VOCAB_C = [
     syn:["modern","current","present-day"], ant:["ancient"],
     ex:[{ s:"The gallery shows only {{}} art.", f:"contemporary", ko:"그 갤러리는 현대 미술만 전시한다." }] },
 
+  /* 반의어를 respect 에서 high regard 로 바꿨다. respect 가 R 세트 챕터 10
+     표제어(존경하다, 존중하다 · v)로 올라가면 명사 표제어의 반의어 자리에 동사
+     뜻이 뜬다. 사전의 respect 값은 '존중, 존경'(명사) 이었다. */
   { word:"contempt", pron:"컨템트", pos:"n", level:"C1", meanings:["경멸","무시"],
-    syn:["scorn","disdain","derision"], ant:["respect"],
+    syn:["scorn","disdain","derision"], ant:["high regard"],
     ex:[{ s:"She looked at him with open {{}}.", f:"contempt", ko:"그녀는 드러내 놓고 경멸하는 눈으로 그를 보았다." }] },
 
   { word:"content", pron:"칸텐트", pos:"n", level:"B1", meanings:["내용물","함량"],
@@ -1667,8 +1670,10 @@ window.VOCAB_C = [
     syn:["polite","civil","gracious"], ant:["rude"],
     ex:[{ s:"The staff stayed {{}} under real pressure.", f:"courteous", ko:"직원들은 큰 압박 속에서도 예의를 지켰다." }] },
 
+  /* 유의어 respect 를 regard for others 로 바꿨다 — respect 가 동사 표제어로
+     올라가기 때문이다(contempt 도 같이 손질했다). */
   { word:"courtesy", pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
-    syn:["politeness","manners","respect"], ant:["rudeness"],
+    syn:["politeness","manners","regard for others"], ant:["rudeness"],
     ex:[{ s:"He held the door open out of plain {{}}.", f:"courtesy", ko:"그는 순전히 예의로 문을 잡아 주었다." }] },
 
   { word:"cover", pron:"커버", pos:"v", level:"B1", meanings:["보장하다","다루다"],
@@ -2033,7 +2038,6 @@ Object.assign(window.GLOSS, {
   "refute":"반박하다, 논박하다",
   "repulsion":"혐오, 반발",
   "request":"요청, 요청하다",
-  "respect":"존중, 존경",
   "restless":"안절부절못하는",
   "restore":"돌려주다, 복원하다",
   "result":"결과",

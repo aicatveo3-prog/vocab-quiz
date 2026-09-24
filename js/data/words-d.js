@@ -1477,8 +1477,6 @@ Object.assign(window.GLOSS, {
   "platform":"승강장; 발판",
   "reassuring":"안심시키는",
   "remains":"유물, 잔존물",
-  "resolute":"단호한, 확고한",
-  "respectable":"존경할 만한, 훌륭한",
   "rot":"썩다, 부패하다",
   "rubble":"돌무더기, 파편",
   "shade":"그늘지게 하다; 그늘",
