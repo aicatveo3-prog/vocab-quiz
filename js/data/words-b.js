@@ -1033,8 +1033,6 @@ Object.assign(window.GLOSS, {
   "stand up":"일어서다",
   "stay out of":"~에 관여하지 않다",
   "straighten":"곧게 하다, 펴다",
-  "subside":"가라앉다, 잦아들다",
-  "subtle":"미묘한, 은근한",
   "succeed":"성공하다",
   "suffer from":"~로 고통받다",
   "surrender":"항복하다, 굴복하다",

@@ -1559,7 +1559,6 @@ Object.assign(window.GLOSS, {
   "ruling":"판결, 결정",
   "shelve":"미루다, 보류하다",
   "shortfall":"부족액, 적자",
-  "subtract":"빼다, 공제하다",
   "take off":"떼다, 공제하다",
   "tentative":"잠정적인, 임시의",
   "thrilled":"아주 기쁜, 흥분한",

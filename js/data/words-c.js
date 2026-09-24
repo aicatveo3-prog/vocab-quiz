@@ -768,7 +768,11 @@ window.VOCAB_C = [
     ex:[{ s:"Troops began to {{}} private trucks for the retreat.", f:"commandeer", ko:"군대는 후퇴를 위해 민간 트럭을 징발하기 시작했다." }] },
 
   { word:"commander", pron:"커맨더", pos:"n", level:"B2", meanings:["사령관","지휘자"],
-    syn:["chief","leader","officer"], ant:["subordinate"],
+    /* ★ ant 의 "subordinate" 를 "person of lower rank" 로 바꿨다. 사전이
+       '부하; 하급의' 로 명사와 형용사를 섞어 두었는데, 참조 셋 중 둘
+       (dominant·inferior) 이 형용사여서 S 세트에서는 형용사 '종속된, 부수적인'
+       으로 선다 — 명사인 이 표제어의 반의어 자리에 형용사가 들어가게 된다. */
+    syn:["chief","leader","officer"], ant:["person of lower rank"],
     ex:[{ s:"The {{}} ordered a full retreat before dawn.", f:"commander", ko:"사령관은 새벽 전에 전면 후퇴를 명령했다." }] },
 
   { word:"commemorate", pron:"커메머레이트", pos:"v", level:"C1", meanings:["기념하다","추모하다"],
@@ -2073,7 +2077,6 @@ Object.assign(window.GLOSS, {
   "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
-  "subordinate":"부하, 하급자",
   "succumb":"굴복하다, 쓰러지다",
   "tolerate":"용인하다, 참다",
   "triumph":"승리, 대성공",
