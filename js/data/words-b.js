@@ -829,8 +829,11 @@ window.VOCAB_B = [
   { word:"bulk up", pron:"벌크 업", pos:"phr", level:"C1", meanings:["부피가 커지다"],
     syn:["gain mass","thicken","build muscle"], ant:["slim down"] },
 
+  /* 유의어 round 를 shot fired 로 바꿨다. round 가 R 세트 챕터 13 표제어
+     (한 차례 · n)로 올라가면 이 자리에 '한 차례' 가 떠 버린다 — '탄알 한 발'
+     뜻을 노린 자리였다. */
   { word:"bullet", pron:"불릿", pos:"n", level:"B1", meanings:["총탄","탄약통"],
-    syn:["round","slug","projectile"],
+    syn:["shot fired","slug","projectile"],
     ex:[{ s:"A single {{}} had pierced the wooden door.", f:"bullet", ko:"총탄 한 발이 나무 문을 관통했다." }] },
 
   { word:"bulletin", pron:"불러틴", pos:"n", level:"B2", meanings:["공보","고시"],
@@ -997,8 +1000,6 @@ Object.assign(window.GLOSS, {
   "relief":"안도, 경감",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
-  "retreat":"물러나다, 후퇴하다",
-  "rural":"시골의, 지방의",
   "secondhand":"중고의",
   "separate":"분리하다",
   "setback":"차질, 방해",
