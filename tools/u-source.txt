@@ -1,0 +1,80 @@
+ubiquitous	adj	C1	어디에나 존재하는	★외래어 '유비쿼터스' 걷음 — 낱말 자체를 되풀이한 것이었다
+ultimate	adj	B1	궁극적인|근본적인	'최고의' 는 superb·top-notch 자리
+ultraviolet	adj	B2	자외선의	교재 [adj+n] → 형용사
+unambiguous	adj	C1	모호하지 않은	사전 단일값 유지(참조 explicit). '분명한' 은 evident·obvious 자리
+unanimous	adj	C1	만장일치의	교재 둘째 갈래는 같은 말
+unattractive	adj	B2	매력 없는	교재 '좋지 않은' 은 뜻이 흐려 버렸다
+unceasing	adj	C1	끊임없는	ceaseless·incessant·constant·perennial 와 맞물려 배제
+unchangeable	adj	B2	불변의	invariable 과 맞물려 배제. 교재 둘째 갈래는 같은 말
+uncharacteristic	adj	C1	평소답지 않은	교재 '~답지 않은' 의 물결표 걷음
+unconscious	adj	B2	의식을 잃은	교재 두 갈래가 같은 말
+unconventional	adj	B2	관습에 얽매이지 않는	사전 단일값 유지(참조 eccentric). '독특한' 은 unique 자리
+uncover	v	B2	밝혀내다|알아내다	사전 글자 유지(참조 두 곳). discover 와 맞물려 배제
+undercut	v	C1	~보다 저가로 팔다	'약화시키다' 는 아래 undermine 자리
+undergo	v	B2	겪다|받다	사전 글자 유지(참조 두 곳)
+undergraduate	n	B2	대학생	신규
+underlying	adj	B2	밑바탕에 있는	사전 단일값 유지(참조 두 곳). '근본적인' 은 ultimate·fundamental 자리
+undermine	v	B2	약화시키다	사전 단일값 유지(참조 두 곳). dampen 과 맞물려 배제
+underpaid	adj	C1	저임금의|박봉의	신규
+underscore	v	C1	밑줄을 긋다	교재 [v+n] → 동사
+understandably	adv	B2	당연히	교재 두 갈래가 같은 말
+undertake	v	B2	착수하다|책임을 떠맡다	commence·embark·launch 등과 '착수하다' 로 맞물려 배제
+undervalue	v	C1	과소평가하다	사전 단일값 유지(참조 belittle). '경시하다' 는 downplay 자리
+underwater	adj	B2	수중의	사전 단일값 유지(참조 aquatic). 부사 갈래 버림
+undeveloped	adj	B2	발달하지 않은	사전 단일값 유지(참조 immature). '개발되지 않은' 버림
+undoubted	adj	C1	확실한|의심할 바 없는	certain·definite 와 '확실한' 으로 맞물려 배제
+undue	adj	C1	지나친|과도한	excessive(지나친, 과도한) 와 글자를 통째로 맞춰 배제
+unearth	v	C1	발굴하다|찾아내다	사전 글자 유지(참조 두 곳). excavate 와 맞물려 배제
+unease	n	B2	불안	★사전 단일값 유지 — 교재 '불안, 우려' 로 두면 anxiety 의 syn 안에서 apprehension 과 설명이 같아진다
+unemployment	n	B1	실업|실직	신규
+unequivocal	adj	C2	명백한|에두르지 않는	apparent·obvious·plain 과 '명백한' 으로 맞물려 배제. '분명한' 버림
+uneven	adj	B2	울퉁불퉁한|고르지 않은	사전 글자 유지(참조 두 곳). bumpy 와 맞물려 배제. '불공평한' 버림
+unfamiliar	adj	B1	낯선|익숙하지 않은	사전 글자 유지(참조 alien)
+unforgettable	adj	B1	잊을 수 없는	신규
+unfortunately	adv	B1	불행히도	신규
+unhindered	adj	C1	막는 것이 없는	아래 uninterrupted 와 갈랐다
+unidentified	adj	B2	미확인의	사전 단일값 유지(참조 anonymous). '정체불명의' 버림
+unintended	adj	B2	의도하지 않은	신규
+uninterested	adj	B2	무관심한	★교재 '관계가 없는' 은 unrelated 뜻이라 버렸다
+uninterrupted	adj	B2	계속되는|끊기지 않는	continuous 와 맞물려 배제. 위 unhindered 와 갈랐다
+unique	adj	B1	독특한|유일한	사전 글자 유지(참조 distinctive)
+unite	v	B1	통합하다	사전 단일값 유지(참조 세 곳). '결합시키다' 는 combine 자리
+unity	n	B2	통합|단결	사전 글자 유지(참조 두 곳). 교재 세 갈래 버림
+universal	adj	B1	보편적인	사전 단일값 유지(참조 generic). '전 세계의, 우주의' 버림
+unjust	adj	B2	부당한	신규
+unlawful	adj	B2	위법의	사전 단일값 유지(참조 illegal). illegal 과 맞물려 배제
+unlearn	v	C2	배운 것을 잊다	교재 열일곱 자를 줄였다
+unlock	v	B2	열다|드러내다	신규
+unnoticeably	adv	C2	눈에 띄지 않게	신규
+unparalleled	adj	C1	비할 데 없는	아래 unrivaled 와 갈랐다
+unpredictable	adj	B2	종잡을 수 없는	사전 단일값 유지(참조 erratic). '예측할 수 없는' 은 erratic 자리
+unquestioned	adj	C1	의심할 수 없는	신규
+unrivaled	adj	C1	경쟁자가 없는	'비할 데 없는' 은 위 unparalleled 자리
+unroll	v	B2	펼치다	신규
+unsustainable	adj	B2	지속할 수 없는	교재 '지속불가능한' 을 풀어 썼다
+unswerving	adj	C2	변함없는|약해지지 않는	★교재 '완고한' 은 stubborn(S) 뜻이라 버렸다. steadfast 와 맞물려 배제
+untold	adj	C1	헤아릴 수 없는	사전 단일값 유지(참조 innumerable). '밝혀지지 않은' 버림
+unveil	v	C1	덮개를 벗기다|발표하다	신규
+unwavering	adj	C1	확고한	steadfast(확고한, 변함없는)·resolute 와 맞물려 배제
+up and about	phr	C1	병상에서 일어난	교재 '건강이 좋아진' 은 설명이라 걷었다
+up to a point	phr	B2	어느 선까지는	T 세트 to some degree(어느 정도) 와 갈랐다
+upbringing	n	C1	양육|가정 교육	신규
+upheave	v	C2	들어 올리다	'혼란시키다' 는 turmoil·disrupt 자리라 버렸다
+uphold	v	B2	떠받치다|지지하다	신규
+uppermost	adj	C1	가장 높은|맨 위의	'최고의' 는 superb·top-notch 자리
+upright	adj	B2	정직한|청렴한	사전 글자 유지(참조 ethical·moral). 교재 '똑바른, 꼿꼿한' 버림
+uprising	n	C1	봉기|반란	revolt 와 '봉기' 로 맞물려 배제
+uproot	v	C1	근절하다|뿌리째 뽑다	eradicate(근절하다, 뿌리째 뽑다) 와 글자를 통째로 맞춰 배제
+ups and downs	phr	C1	우여곡절	'성쇠' 는 같은 말이라 걷었다
+upside down	adv	B1	뒤집혀	교재 '거꾸로' 는 conversely 자리라 뜻을 좁혔다
+uptight	adj	C1	긴장한|신경이 날카로운	사전 글자 유지(참조 easygoing)
+upturn	n	B2	상승|호전	사전 글자 유지(참조 downturn)
+urban	adj	B1	도시의	사전 단일값 유지(참조 metropolitan)
+urge	n	B1	충동	★사전 첫 갈래 — 참조 셋이 모두 명사다. 교재 '설득하다' 는 induce·convince 자리
+urgent	adj	B1	긴급한|절박한	사전 글자 유지(참조 두 곳). pressing 과 글자가 같아 배제
+useless	adj	B1	쓸모없는	사전 글자 유지 — 교재의 띄어쓰기('쓸모 없는') 를 사전에 맞췄다(참조 futile)
+user-friendly	adj	B2	사용하기 쉬운	신규
+usher	v	B2	안내하다	교재 [v+n] → 동사
+utensil	n	B2	기구|용구	사전 글자 유지(참조 instrument). '도구' 는 instrument 자리
+utilitarian	adj	C2	실용적인|실리를 따지는	practical·functional 과 맞물려 배제
+utility	n	B2	공익사업|유용성	교재 형용사 갈래 버림

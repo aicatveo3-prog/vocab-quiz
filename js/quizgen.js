@@ -58,7 +58,9 @@ window.Quiz = (function () {
     .concat(window.VOCAB_P || [])
     .concat(window.VOCAB_Q || [])
     .concat(window.VOCAB_R || [])
-    .concat(window.VOCAB_S || []);
+    .concat(window.VOCAB_S || [])
+    .concat(window.VOCAB_T || [])
+    .concat(window.VOCAB_U || []);
 
   var MODES = [
     { id: 'mcq',    label: '4지선다',      sub: '영↔한 양방향' },

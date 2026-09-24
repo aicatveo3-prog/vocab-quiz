@@ -1,0 +1,200 @@
+taboo	n	B2	금기|금단	신규
+tactic	n	B2	전술|꾀	교재가 앞세운 '꾀' 는 드문 쪽이라 순서를 바꿨다
+tactically	adv	C1	전술적으로	신규
+take ~ for granted	phr	B2	당연하게 여기다|대수롭지 않게 여기다	사전의 'take for granted' 는 따로 남는 선택지다
+take a risk	phr	B1	위험을 무릅쓰다	교재 '위험을 무릅쓰고 시도하다' 를 줄였다
+take a stand	phr	B2	태도를 정하다|입장을 취하다	신규
+take action	phr	B1	조치를 취하다	신규
+take advantage of	phr	B1	~을 이용하다	사전 글자 유지(참조 세 곳). 교재 '이용하다' 는 harness 자리
+take apart	phr	B2	분해하다	신규
+take back	phr	B2	취소하다|반품하다	cancel·revoke·annul·call off 와 '취소하다' 로 맞물려 배제
+take charge	phr	B2	책임을 지다	'떠맡다' 는 take on 자리
+take credit for	phr	C1	~의 공을 인정받다	신규
+take exception to	phr	C1	~에 반대하다	신규
+take heart	phr	C1	용기를 내다|자신감을 갖다	교재 'take heart (from)' 의 괄호를 걷었다
+take into account	phr	B2	고려하다|참작하다	사전 글자 유지. 교재의 '계산에 넣다' 버림
+take on	phr	B2	떠맡다|고용하다	사전 쌍반점→쉼표. shoulder(떠맡다) 와 맞물려 배제. '태우다' 버림
+take out	phr	B1	꺼내다	사전 단일값 유지(참조 extract)
+take over	phr	B2	넘겨받다	사전 단일값 유지(참조 inherit). 교재 '인수하다, 인계하다' 버림
+take part in	phr	B1	~에 참여하다	사전 글자 유지(참조 be engaged in)
+take place	phr	B1	벌어지다	사전 단일값 유지(참조 occur). '일어나다' 는 come about 자리
+take pride in	phr	B1	~을 자랑하다	신규
+take up	phr	B2	차지하다|받아들이다	⚠ 참조가 갈린다 — occupy(차지하다)·adopt(받아들이다) 를 둘 다 살렸다
+tame	adj	B2	유순한|사람을 잘 따르는	⚠ domesticate(D) 를 손질한다 — 사전이 domesticate 자신의 뜻을 베꼈다
+tangible	adj	B2	실체가 있는|만질 수 있는	사전 글자 유지. concrete 와 맞물려 배제
+targeted	adj	B2	표적화된|겨냥된	신규
+tariff	n	B2	관세	신규
+tax	n	B1	세금	신규
+tax collector	phr	B2	세금 징수원	교재 둘째 갈래는 설명이라 걷었다
+tax-deductible	adj	C1	세금 공제가 되는	신규
+tear down	phr	B2	허물다|뜯어내다	사전 글자 유지(참조 demolish)
+tease	v	B2	놀리다|괴롭히다	ridicule 과 '놀리다' 로 맞물려 배제
+technical	adj	B1	기술적인|전문의	신규
+technician	n	B2	기술자	신규
+tedious	adj	C1	지루하고 성가신	사전 단일값 유지. 교재 '따분한' 은 dull 자리
+teller	n	B2	금전 출납원	괄호 '(은행의)' 걷음
+temper	n	B2	성질|기질	아래 temperament(기질) 와 글자를 맞춰 배제. 동사 갈래 버림
+temperament	n	C1	기질	사전 단일값 유지(참조 nature)
+temperate	adj	B2	온화한|절제된	교재의 '온대성의' 를 '온화한' 으로, 사전값 '절제된' 을 둘째로 살렸다
+temperature	n	B1	기온|온도	신규
+temple	n	B1	신전|절	교재 세 갈래 → 둘
+tempo	n	B2	속도	rate(속도, 비율) 와 글자를 맞춰 배제. 괄호 걷음
+temporal	adj	C1	시간의|속세의	교재가 앞세운 '속세의' 는 드문 쪽이라 순서를 바꿨다
+temporary	adj	B1	일시적인	사전 단일값 유지(참조 세 곳). transient 와 맞물려 배제
+tempt	v	B2	마음을 끌다	사전 단일값 유지. '유혹하다' 는 lure·seduce 자리
+temptation	n	B2	유혹	신규
+tenacious	adj	C2	집요한|완강한	교재 세 갈래 → 둘. '고집스러운' 은 stubborn 자리
+tenant	n	B2	세입자	사전 단일값 유지(참조 landlord)
+tend	v	B1	경향이 있다|돌보다	괄호 걷음
+tendency	n	B2	성향	사전 단일값 유지. inclination(경향, 성향) 과 맞물려 배제
+tension	n	B1	긴장|팽팽함	교재의 '긴장' 을 앞세우고 사전값을 둘째로 살렸다. '갈등' 은 conflict 자리
+tentative	adj	B2	잠정적인|임시의	사전 글자 유지(참조 definitive). '머뭇거리는' 버림
+tenure	n	C2	재임 기간|사용권	교재 네 갈래 → 둘
+term	n	B1	용어|기간	jargon(용어, 전문 용어) 와 맞물려 배제
+terminal	n	B2	종착역|종점	⚠ 참조가 갈린다 — 사전이 명사여서 명사로 세우고 incurable(I) 을 손질한다
+terminate	v	B2	끝내다|종료하다	사전 글자 유지(참조 come to an end)
+terminology	n	C1	전문어 체계	사전 단일값 유지. '전문 용어' 는 jargon 자리
+terrain	n	C1	지형|지대	사전 글자 유지. geography 와 '지형' 으로 맞물려 배제
+terribly	adv	B2	대단히|몹시	신규
+terrific	adj	B2	멋진|대단한	사전 글자 유지(참조 fabulous). 교재 '아주 좋은' 버림
+terrify	v	B2	몹시 두렵게 하다	사전 단일값 유지(참조 frighten)
+territorial	adj	C1	영토의|세력권을 주장하는	신규
+territory	n	B1	영토|구역	사전 글자 유지(참조 세 곳). '영역' 은 spectrum·sphere·domain·realm 자리
+terse	adj	C2	간결한|군더더기 없는	'간단한' 은 brief 자리
+test tube	phr	B2	시험관	신규
+testify	v	B2	증언하다|증명하다	attest 와 교차로 맞물려 배제
+testimonial	n	C2	추천서	'증거' 는 evidence 자리. '기념물' 버림
+testimony	n	B2	증언	사전 단일값 유지. evidence(증거, 증언) 와 맞물려 배제
+textile	n	B2	직물|섬유 제품	사전 글자 유지. fabric 과 '직물' 로 맞물려 배제
+texture	n	B1	질감	신규
+the other way around	phr	B2	거꾸로|반대로	conversely(거꾸로, 반대로) 와 글자를 맞춰 배제
+theatrical	adj	C1	연극의|극장의	신규
+theft	n	B2	절도|도난	신규
+theme	n	B1	주제	외래어 '테마' 걷음. subject(주제, 대상) 와 맞물려 배제
+theology	n	C1	신학	교재 둘째 갈래는 같은 말
+theoretical	adj	B2	이론적인	사전 단일값 유지(참조 두 곳)
+theory	n	B1	이론	사전 단일값 유지(참조 hypothesis). '학설, 추측' 버림
+therapeutic	adj	C1	치료의|병을 다스리는	교재 두 갈래가 같은 말이라 다듬었다
+therapy	n	B1	치료|요법	사전 글자 유지(참조 두 곳). '치료법' 은 remedy 자리
+thereafter	adv	C1	그 후	신규
+thermometer	n	B2	온도계	신규
+thesis	n	B2	학위 논문|논제	신규
+thorough	adj	B2	철저한|완전한	사전 글자 유지(참조 세 곳). rigorous 와 맞물려 배제
+thoughtful	adj	B1	사려 깊은	사전 단일값 유지. considerate 와 맞물려 배제
+threat	n	B1	위협|협박	신규
+threaten	v	B1	위협하다	사전 단일값 유지(참조 두 곳). 네 낱말과 맞물려 배제
+threshold	n	C1	문턱|시작점	사전 쌍반점→쉼표(참조 brink). '입구' 는 portal 자리
+thrifty	adj	C1	알뜰한|돈을 아끼는	사전 글자 유지(참조 세 곳)
+thrill	v	B2	열광시키다	교재 [v+n] → 동사
+thriving	adj	C1	번성하는|잘 자라는	사전 글자 유지. luxuriant 와 맞물려 배제
+throb	v	B2	고동치다|맥박이 뛰다	★교재 '고통치다' 오타. ⚠ 동사로 세워 pulse(P) 를 손질한다
+throne	n	C1	왕위|왕권	신규
+throng	n	C1	인파	사전 단일값 유지(참조 mob). 동사 갈래 버림
+throughout	phr	B1	~동안 내내|처음부터 끝까지	신규
+throw ~ away	phr	B1	버리다|없애다	abandon·discard·forsake·scrap 과 '버리다' 로 맞물려 배제
+throw up	phr	B2	토하다	신규
+thrust	n	C1	밀어붙이는 힘	사전 단일값 유지(참조 momentum). 교재 동사 갈래 버림
+thumb	n	B1	엄지손가락	신규
+tickle	v	B2	간지럽히다	교재 두 갈래가 같은 말
+tide	n	B1	조류|흐름	사전 글자 유지. current 와 '흐름' 으로 맞물려 배제
+tie	n	B1	유대|매듭	⚠ 참조가 갈린다 — bond·link 가 명사여서 명사로 세우고 bind(B) 를 손질한다
+tie the knot	phr	C1	결혼하다	신규
+tie up	phr	B1	묶다|단단히 동여매다	bind(묶다) 와 맞물려 배제. 위 tie(유대) 와 갈랐다
+till	n	B2	금전 등록기	사전 첫 갈래(참조 cash register). 교재 '경작하다' 버림
+tilt	v	B2	기울이다	사전 단일값 유지(참조 두 곳). incline 과 맞물려 배제
+timber	n	B2	목재|재목	신규
+timely	adj	B2	시기적절한|때맞춘	신규
+timid	adj	B2	겁 많은|소심한	사전 글자 유지(참조 세 곳)
+tin	n	B2	주석|깡통	교재 세 갈래 → 둘
+tint	n	C1	엷은 색|색조	교재 네 갈래 → 둘. 동사 갈래 버림
+tissue	n	B1	조직	사전 단일값 유지(참조 muscle). 괄호 '(생물)' 걷음
+to a large extent	phr	B2	상당히|크게	pretty(꽤, 상당히) 와 맞물려 배제. 교재 세 갈래 → 둘
+to begin with	phr	B1	먼저	사전 단일값 유지(참조 in the first place)
+to some degree	phr	B1	어느 정도	'약간' 은 slightly 자리. U 세트 up to a point 와 갈랐다
+to the letter	phr	C2	한 글자도 틀리지 않게	사전 단일값 유지(참조 literally)
+tolerance	n	B2	관용	사전 단일값 유지(참조 intolerance). '내성' 버림
+tolerate	v	B2	용인하다|참다	사전 글자 유지(참조 두 곳). endure 와 '참다' 로 맞물려 배제
+tooth and nail	phr	C2	전력을 다하여|필사적으로	신규
+top-notch	adj	B2	최고 수준의	사전 단일값 유지(참조 first-rate). '최고의' 는 superb 자리
+torment	n	C1	고통|고뇌	⚠ 참조가 갈린다 — 명사가 셋이라 명사로 세우고 afflict·haunt 를 손질한다
+torrent	n	C1	급류|빗발	사전 쌍반점→쉼표(참조 deluge)
+torture	v	B2	고문하다|괴롭히다	위 torment(명사) 와 품사로 갈랐다
+toss and turn	phr	B2	뒤척이다	신규
+tourist destination	phr	B1	관광지	신규
+toxic	adj	B2	유독한	사전 단일값 유지(참조 hazardous)
+toxin	n	B2	독소	신규
+trace	n	B1	흔적|극미량	⚠ 아래 track(동사) 과 품사로 갈랐다. chase down(C) 을 손질한다
+track	v	B1	추적하다|뒤쫓다	사전 첫 갈래(참조 chase down 유지)
+trade	n	B1	거래|무역	사전 글자 유지(참조 다섯 곳). commerce 와 맞물려 배제
+tradeoff	n	C1	교환|주고받기	'거래' 는 위 trade 자리
+tragic	adj	B2	비극의|비참한	신규
+trail	v	C1	뒤처져 따라가다	사전 단일값 유지(참조 두 곳). 교재 '오솔길, 흔적' 버림
+trait	n	B1	특성|특질	사전 글자 유지(참조 두 곳). characteristic 과 맞물려 배제
+traitor	n	C1	배반자|반역자	신규
+trample	v	C1	짓밟다	교재 두 갈래가 같은 말
+tranquil	adj	C1	고요한|평화로운	serene(S 고요한, 평화로운) 과 글자를 통째로 맞춰 배제
+tranquility	n	C1	평온|고요	stillness(S 고요, 평온) 와 앞뒤만 다르게 두어 배제
+transact	v	C1	거래하다	deal in 과 맞물려 배제
+transaction	n	B2	거래|처리	신규
+transcend	v	C1	초월하다	신규
+transcendence	n	C2	초월|뛰어넘음	★교재 '탁월' 은 transcend 에 없는 뜻이라 버렸다
+transcribe	v	C1	복사하다|베끼다	신규
+transcript	n	B2	성적 증명서|필기록	신규
+transfer	v	B1	옮기다|이동하다	relocate 와 '옮기다' 로 맞물려 배제
+transform	v	B1	변환하다|바꾸다	사전 글자 유지(참조 convert). '변형시키다' 는 deform 자리
+transfuse	v	C2	수혈하다|주입하다	신규
+transient	adj	C1	오래 가지 않는	사전 단일값 유지(참조 momentary). '일시적인' 은 temporary 자리
+transit	n	B2	수송|환승	교재 네 갈래 → 둘
+transition	n	B2	전이|이행	신규
+transmission	n	B2	전송	신규
+transmit	v	B2	전달하다|전송하다	사전 글자 유지(참조 두 곳). convey 와 맞물려 배제
+transnational	adj	C1	다국적의|초국가적인	multinational 과 맞물려 배제
+transparent	adj	B2	투명한	사전 단일값 유지(참조 crystal-clear). '명백한' 은 U 세트 자리
+transplant	v	B2	이식하다	교재 [v+n] → 동사
+transport	v	B1	수송하다|이동시키다	아래 transportation(명사) 과 품사로 갈랐다
+transportation	n	B1	교통|운송	신규
+trap	v	B1	가두다|덫에 빠뜨리다	사전 글자 유지(참조 entangle). confine 과 맞물려 배제
+trash	n	B1	폐기물	사전 단일값 유지(참조 litter). '쓰레기' 는 filth 자리
+traumatic	adj	C1	대단히 충격적인|정신적 외상의	신규
+traverse	v	C2	가로지르다|횡단하다	교재 명사 갈래 버림
+treacherous	adj	C1	믿을 수 없는	사전 단일값 유지(참조 insidious). '기만적인' 은 deceptive 자리
+tread	n	C1	발걸음	사전 단일값 유지(참조 footstep). 교재 동사 갈래 버림
+treasure	v	B1	소중히 하다	★사전 첫 갈래(참조 cherish 가 동사다). 교재의 '보물' 을 버린 아까운 자리
+treatise	n	C2	논문	paper 와 맞물려 배제. thesis(학위 논문) 와도 맞물린다
+treaty	n	B2	조약|협정	신규
+tremble	v	B1	부들부들 떨다	사전 글자 유지 — '떨다' 로 두면 shiver 의 syn 안에서 quiver 와 설명이 같아진다
+tremendous	adj	B2	거대한|굉장한	enormous·massive·monumental 과 맞물려 배제
+trend	n	B1	추세|유행	사전 글자 유지(참조 두 곳). '경향' 은 inclination 자리
+trendy	adj	B2	최신 유행의	교재 명사 갈래 버림
+trespass	v	C1	무단으로 들어가다	사전 단일값 유지(참조 intrude)
+trial	n	B1	재판|시도	교재 세 갈래 → 둘
+trial and error	phr	B2	시행착오	신규
+tribe	n	B1	부족	사전 단일값 유지(참조 clan). shortage(부족, 품귀) 와 동음이의로 맞물려 배제
+trick	v	B1	속이다	사전 첫 갈래(참조 deceive). 명사 '속임수' 는 아래 trickery 자리
+trickery	n	C1	속임수|사기	사전 글자 유지(참조 deceit). morale(사기, 의욕) 와 동음이의로 맞물려 배제
+trifling	adj	C2	대수롭지 않은	사전 단일값 유지(참조 negligible). '하찮은' 은 trivia·trivial 자리
+trigger	v	B2	촉발하다	사전 첫 갈래(참조 activate). 명사 '방아쇠' 버림
+trim	v	B2	줄이다|다듬다	사전 쌍반점→쉼표(참조 두 곳)
+triple	adj	B2	3중의|3배의	신규
+triumph	n	B2	승리|대성공	사전 글자 유지(참조 catastrophe)
+trivia	n	C1	하찮은 정보|일반 상식	trifling·trivial 과 갈랐다
+trivial	adj	B1	사소한	사전 단일값 유지(참조 다섯 곳). minor 와 맞물려 배제
+tropical	adj	B1	열대의|열대성의	신규
+trunk	n	B1	몸통|상자	사전 쌍반점→쉼표(참조 chest). '줄기' 는 stem(S) 자리
+trustworthiness	n	C1	신뢰성|신용	reliability 와 맞물려 배제
+trustworthy	adj	B2	믿음이 가는	사전 단일값 유지(참조 reliable)
+tuition	n	B2	수업료	'수업' 은 lesson 자리
+tumble	v	B2	굴러 떨어지다	신규
+tumor	n	B2	종양	교재 '종기' 는 boil 뜻이라 버렸다
+turmoil	n	C1	혼란|소동	사전 글자 유지(참조 두 곳). disruption 과 맞물려 배제
+turn down	phr	B1	물리치다	사전 단일값 유지(참조 reject). '거절하다' 는 reject·decline 자리
+turn in	phr	B1	돌려주다|반납하다	restore 와 '돌려주다' 로 맞물려 배제
+turn out	phr	B1	결과적으로 ~이 되다	사전 단일값 유지(참조 end up)
+turn over	phr	B1	돌려 뒤집다	사전 단일값 유지(참조 flip)
+turn to	phr	B1	~에 도움을 청하다	사전 단일값 유지. '~에 의지하다' 는 fall back on 자리
+turnover	n	C1	이직률|거래액	교재 네 갈래 → 둘
+tutor	n	B2	가정교사|강사	신규
+tutoring	n	B2	과외 지도	교재 두 갈래가 같은 말
+twofold	adj	C1	두 겹의|두 배의	사전 글자 유지(참조 dual). '이중의' 는 dual 자리
+typical	adj	B1	전형적인|으레 그런	교재의 '전형적인' 을 앞세우고 사전값을 둘째로 살렸다
+tyranny	n	C1	폭정|독재	사전 글자 유지(참조 두 곳). '전제 정치' 는 autocracy 자리
