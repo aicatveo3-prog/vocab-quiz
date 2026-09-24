@@ -1597,7 +1597,6 @@ Object.assign(window.GLOSS, {
   "undergo fermentation":"발효를 거치다",
   "unworkable":"실행할 수 없는",
   "viability":"실현 가능성",
-  "viable":"실행 가능한",
   "womanly":"여자다운",
   "women's rights advocate":"여성 권리 옹호자",
   "workability":"작동 가능성",

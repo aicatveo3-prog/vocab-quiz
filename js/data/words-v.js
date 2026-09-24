@@ -334,7 +334,155 @@ window.VOCAB_V = [
   /* 승격 ㉒ — 사전과 교재가 같다(참조 horizontal 이 반의어). */
   { word:"vertical", pron:"버티컬", pos:"adj", level:"B2", meanings:["수직의"],
     syn:["straight up and down","at a right angle to the ground","upright in line"], ant:["horizontal"],
-    ex:[{ s:"Draw a {{}} line here.", f:"vertical", ko:"여기에 수직선을 그으세요." }] }
+    ex:[{ s:"Draw a {{}} line here.", f:"vertical", ko:"여기에 수직선을 그으세요." }] },
+
+  /* ══ 3차 · veterinarian ~ visual (20단어) ════════════════════════════════
+     승격 6 · 신규 14
+
+     virtu- 무리 넷이 이 챕터에 다 모였다. virtual·virtually·virtue·virtuous.
+     공통 접두사가 다섯 글자('virtu') 뿐이어서 짝 맞추기 보드의 어근 검사(여섯
+     글자) 에 안 걸린다. 다행히 품사가 셋으로 갈리고 뜻도 아주 달라 그대로 뒀다.
+       virtual(adj 가상의, 실질적인)   virtually(adv 사실상, 거의)
+       virtue(n 미덕, 덕목)            virtuous(adj 도덕적인, 고결한)
+     virtual↔virtuous 만 같은 품사인데 '가상의' 와 '도덕적인' 이라 안 부딪친다.
+
+     ★ virtually 의 첫 뜻을 '사실상' 으로 올렸다. 교재는 '거의' 만 주었는데,
+     그러면 seldom(거의 ~ 않는 · B1/adv) 과 나란히 놓인다. 둘은 **뜻이 정반대**
+     인데 영→한 선택지에서는 「거의」 와 「거의 ~ 않는」 으로 떠서 눈으로
+     갈리지 않는다. '사실상' 을 앞세우고 '거의' 를 둘째로 남겼다.
+
+     ★ vibrant 의 유의어에 spirited 를 넣었다. spirited(활기를 띤 · C1/adj) 와
+     '활기찬' 은 사실상 같은 말인데 글자가 달라 자동 배제가 안 된다. 유의어로
+     등록하면 앱이 둘을 서로의 오답으로 쓰지 않는다. spirited 자신의 화면은
+     바뀌지 않는다.
+
+     ★ viable 은 사전값 '실행 가능한' 을 지켰다. feasible(실행 가능한,
+     그럴듯한) 과 글자가 맞물려 배제된다. W 세트의 workable 은 같은 자리를
+     쓸 수 없어 '해낼 수 있는, 쓸 만한' 으로 갈라 썼다.
+
+     ★ vicious 는 사전값 '사악한, 잔인한' 을 지켰다. cruel(잔인한, 잔혹한)·
+     savage(야만적인, 잔인한) 와 '잔인한' 이 맞물리고, W 세트의 wicked(사악한,
+     못된) 와도 '사악한' 이 맞물려 배제된다.
+
+     vice versa 는 교재의 '반대로, 거꾸로' 보다 정확하게 '거꾸로도 마찬가지로'
+     로 적었다. 이 낱말의 핵심은 '서로 바꿔도 같다' 는 것이다. '거꾸로' 를
+     글자째 품으므로 conversely(거꾸로, 반대로)·counter·the other way around 와
+     맞물려 자동 배제되는 것도 그대로다. */
+
+  /* 교재의 '(= vet)' 메모는 뜻이 아니라 참고여서 걷었다. */
+  { word:"veterinarian", pron:"베터러네리언", pos:"n", level:"B2", meanings:["수의사"],
+    syn:["animal doctor","doctor for beasts","one who treats pets"],
+    ex:[{ s:"The {{}} checked the calf.", f:"veterinarian", ko:"수의사가 그 송아지를 살폈다." }] },
+
+  /* 교재의 동사 갈래와 '금지' 는 버렸다. rejection(거부, 거절) 과는 '-권' 이
+     권리를 뜻해 갈린다. */
+  { word:"veto", pron:"비토", pos:"n", level:"C1", meanings:["거부권"],
+    syn:["right to say no","power to block","right of refusal"],
+    ex:[{ s:"The chair used her {{}} once.", f:"veto", ko:"의장은 거부권을 한 번 썼다." }] },
+
+  /* 승격 ㉓ — 사전 단일값 유지(참조 feasible). feasible(실행 가능한, 그럴듯한)
+     과 글자가 맞물려 배제된다. W 세트의 workable 은 이 자리를 쓸 수 없어
+     '해낼 수 있는, 쓸 만한' 으로 갈라 썼다. */
+  { word:"viable", pron:"바이어블", pos:"adj", level:"B2", meanings:["실행 가능한"],
+    syn:["feasible","able to be carried out","likely to work"],
+    ex:[{ s:"That is the only {{}} plan.", f:"viable", ko:"그것이 유일하게 실행 가능한 계획이다." }] },
+
+  /* 교재의 '(= exciting)' 메모 걷음. ★ spirited(활기를 띤 · C1/adj) 를 유의어로
+     넣었다 — '활기찬' 과 사실상 같은 말인데 글자가 달라 자동 배제가 안 된다. */
+  { word:"vibrant", pron:"바이브런트", pos:"adj", level:"B2", meanings:["활기찬","생기가 넘치는"],
+    syn:["spirited","full of life and colour","buzzing with energy"],
+    ex:[{ s:"The market was {{}} at dawn.", f:"vibrant", ko:"그 시장은 새벽에 활기찼다." }] },
+
+  /* '떨다' 는 quiver(떨다) 와 W 세트 wobble(흔들리다, 떨다) 자리라 버렸다. */
+  { word:"vibrate", pron:"바이브레이트", pos:"v", level:"B2", meanings:["진동하다"],
+    syn:["shake to and fro","quiver fast","move with quick tremors"],
+    ex:[{ s:"The whole floor began to {{}}.", f:"vibrate", ko:"바닥 전체가 진동하기 시작했다." }] },
+
+  /* 교재의 '반대로, 거꾸로' 보다 정확하게 적었다 — 이 낱말의 핵심은 '서로
+     바꿔도 같다' 는 것이다. '거꾸로' 를 품어 conversely·counter·the other way
+     around 와 맞물려 배제된다. */
+  { word:"vice versa", pron:"바이스 버사", pos:"phr", level:"C1", meanings:["거꾸로도 마찬가지로"],
+    syn:["the other way round as well","and the reverse holds","equally so in reverse"] },
+
+  /* 승격 ㉔ — 사전 글자 유지(참조 brutal). cruel(잔인한, 잔혹한)·savage(야만적인,
+     잔인한) 와 '잔인한' 이 맞물리고, W 세트 wicked(사악한, 못된) 와도 '사악한'
+     이 맞물려 배제된다. 교재의 '지독한, 심한' 은 lousy·acute 자리다. */
+  { word:"vicious", pron:"비셔스", pos:"adj", level:"B2", meanings:["사악한","잔인한"],
+    syn:["brutal","wickedly cruel","bent on harm"],
+    ex:[{ s:"It was a {{}} attack.", f:"vicious", ko:"그것은 사악한 공격이었다." }] },
+
+  /* outlook(전망, 관점)·perspective(관점, 시각)·standpoint(관점, 입장)·
+     point of view(관점, 견해) 넷과 맞물려 배제된다. */
+  { word:"viewpoint", pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
+    syn:["outlook","perspective","standpoint"],
+    ex:[{ s:"From her {{}} the plan was sound.", f:"viewpoint", ko:"그녀의 관점에서 그 계획은 타당했다." }] },
+
+  /* 교재 괄호를 걷었다. acute(심한, 격렬한)·bitter·furious·strenuous 가
+     '격렬한' 을 써서 넷과 맞물려 배제된다. */
+  { word:"vigorous", pron:"비거러스", pos:"adj", level:"B2", meanings:["격렬한","활발한"],
+    syn:["done with great force","fierce in action","full of spirit"],
+    ex:[{ s:"He took {{}} exercise daily.", f:"vigorous", ko:"그는 날마다 격렬한 운동을 했다." }] },
+
+  /* 승격 ㉕ — 사전 글자 유지(참조 actively). 위 vigorous(형용사) 와 품사로
+     갈렸고 공통 접두사가 여덟 글자여서 보드에서도 갈린다. */
+  { word:"vigorously", pron:"비거러슬리", pos:"adv", level:"B2", meanings:["힘차게","활발히"],
+    syn:["actively","with great force","in a lively way"],
+    ex:[{ s:"She shook her head {{}}.", f:"vigorously", ko:"그녀는 힘차게 고개를 저었다." }] },
+
+  /* 교재의 '비도덕적인' 은 아래 virtuous(도덕적인, 고결한) 의 반대 자리라
+     버렸다. */
+  { word:"vile", pron:"바일", pos:"adj", level:"C1", meanings:["비열한","야비한"],
+    syn:["low and mean","shabby in conduct","without honour"],
+    ex:[{ s:"That was a {{}} trick.", f:"vile", ko:"그것은 비열한 속임수였다." }] },
+
+  /* '범죄자' 는 criminal(범죄자, 범죄의) 자리라 버렸다. */
+  { word:"villain", pron:"빌런", pos:"n", level:"B2", meanings:["악당","악인"],
+    syn:["bad character in a story","evil-doer","the wicked one"],
+    ex:[{ s:"Every tale needs a {{}}.", f:"villain", ko:"모든 이야기에는 악당이 필요하다." }] },
+
+  /* 승격 ㉖ — 사전과 교재가 같다(참조 breach). breach(위반, 파기) 와 맞물려
+     배제된다. */
+  { word:"violation", pron:"바이얼레이션", pos:"n", level:"B2", meanings:["위반"],
+    syn:["breach","breaking of a rule","act against the law"],
+    ex:[{ s:"That is a clear {{}} of the rules.", f:"violation", ko:"그것은 규칙의 분명한 위반이다." }] },
+
+  { word:"violence", pron:"바이얼런스", pos:"n", level:"B1", meanings:["폭력"],
+    syn:["use of force to hurt","rough force","physical attack"],
+    ex:[{ s:"The march ended without {{}}.", f:"violence", ko:"그 행진은 폭력 없이 끝났다." }] },
+
+  { word:"virgin", pron:"버진", pos:"adj", level:"C1", meanings:["원래 그대로의"],
+    syn:["as it first was","never touched before","left in its first state"],
+    ex:[{ s:"They reached {{}} forest at last.", f:"virgin", ko:"그들은 마침내 원래 그대로의 숲에 이르렀다." }] },
+
+  /* imaginary(상상의, 가상의)·substantial(상당한, 실질적인) 과 맞물려 배제된다. */
+  { word:"virtual", pron:"버추얼", pos:"adj", level:"B2", meanings:["가상의","실질적인"],
+    syn:["imaginary","substantial","in effect if not in name"],
+    ex:[{ s:"They met in a {{}} classroom.", f:"virtual", ko:"그들은 가상 교실에서 만났다." }] },
+
+  /* ★ 첫 뜻을 '사실상' 으로 올렸다. 교재의 '거의' 만으로는 seldom(거의 ~ 않는 ·
+     B1/adv) 과 눈으로 갈리지 않는데 둘은 뜻이 정반대다. '거의' 는 둘째로 남겨
+     more or less(대략, 거의) 와 맞물리게 했다. */
+  { word:"virtually", pron:"버추얼리", pos:"adv", level:"B2", meanings:["사실상","거의"],
+    syn:["in effect","all but entirely","near enough to be true"],
+    ex:[{ s:"The work is {{}} done.", f:"virtually", ko:"그 일은 사실상 끝났다." }] },
+
+  /* 승격 ㉗ — 사전 글자 유지. 참조 decadence(D 반의어)·morality(M) 두 곳의
+     화면은 바뀌지 않는다. 교재의 '선' 은 뜻이 너무 넓어 버렸다. */
+  { word:"virtue", pron:"버추", pos:"n", level:"B2", meanings:["미덕","덕목"],
+    syn:["morality","goodness of character","worth of conduct"], ant:["decadence"],
+    ex:[{ s:"Patience is a quiet {{}}.", f:"virtue", ko:"인내는 조용한 미덕이다." }] },
+
+  /* ethical(윤리적인, 도덕적인)·moral(도덕적인, 교훈) 과 '도덕적인' 이 맞물려
+     배제된다. immoral(부도덕한) 과는 '부-' 가 반대를 뜻해 갈린다. */
+  { word:"virtuous", pron:"버추어스", pos:"adj", level:"C1", meanings:["도덕적인","고결한"],
+    syn:["ethical","moral","upright in conduct"],
+    ex:[{ s:"He led a {{}} life.", f:"virtuous", ko:"그는 도덕적인 삶을 살았다." }] },
+
+  /* 승격 ㉘ — 사전과 교재가 같다. 참조 auditory(A)·aural(A) 두 곳의 화면은
+     바뀌지 않는다. */
+  { word:"visual", pron:"비주얼", pos:"adj", level:"B2", meanings:["시각의"],
+    syn:["of the sense of sight","seen with the eyes","to do with seeing"], ant:["auditory","aural"],
+    ex:[{ s:"The film relies on {{}} tricks.", f:"visual", ko:"그 영화는 시각적 속임수에 기댄다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
@@ -342,41 +490,67 @@ Object.assign(window.GLOSS, {
   "a changed form": "달라진 꼴",
   "a retold shape": "다시 옮긴 모습",
   "able to do much": "할 수 있는 것이 많은",
+  "act against the law": "법을 어긴 행위",
   "air out a room": "방의 공기를 갈다",
   "airing of a room": "방의 공기를 갊",
   "airless space": "공기 없는 자리",
+  "all but entirely": "거의 온통",
+  "and the reverse holds": "뒤집어도 들어맞는다",
+  "animal doctor": "짐승을 보는 의사",
+  "as it first was": "처음 모습대로인",
   "at a right angle to the ground": "땅에 직각으로",
   "avoiding milk and eggs too": "우유와 달걀까지 피하는",
+  "bad character in a story": "이야기 속 나쁜 인물",
+  "bent on harm": "해칠 마음을 품은",
   "blood channel": "피가 흐르는 길",
   "blood tube to the heart": "심장으로 가는 핏줄",
+  "breaking of a rule": "규칙을 깨뜨림",
   "breaking things on purpose": "일부러 물건을 깨뜨림",
+  "buzzing with energy": "기운이 들끓는",
   "check and prove": "살펴서 참임을 밝히다",
   "damage done for its own sake": "까닭 없이 낸 손상",
   "differing one from another": "서로 제각기 다른",
+  "doctor for beasts": "가축을 고치는 의사",
+  "done with great force": "큰 힘을 들여 하는",
   "eater of greens only": "푸성귀만 먹는 이",
   "eating no animal food at all": "동물성 음식을 아예 안 먹는",
   "emptied of all air": "공기를 다 뺀",
+  "equally so in reverse": "뒤바꿔도 마찬가지로",
+  "evil-doer": "나쁜 짓을 하는 자",
+  "fierce in action": "움직임이 거센",
   "finding of a court": "법정이 내린 결론",
   "first rank of a march": "행렬의 첫 줄",
   "fit for many uses": "여러 곳에 쓸 만한",
   "flow of fresh air": "맑은 공기의 흐름",
   "fresh air let in": "들인 맑은 공기",
   "full of change": "변화가 가득한",
+  "full of life and colour": "생기와 빛깔이 넘치는",
+  "full of spirit": "기운이 가득한",
   "give official backing to": "공식으로 뒷받침해 주다",
   "go out of sight": "눈앞에서 없어지다",
   "good at many things": "여러 가지를 잘하는",
+  "goodness of character": "사람됨의 착함",
   "goods of value": "값진 물품",
   "holding good": "효력이 살아 있는",
   "how much it swings": "흔들리는 폭",
   "in a hazy way": "아리송하게",
+  "in a lively way": "생기 있게",
+  "in effect": "실제로는",
+  "in effect if not in name": "이름만 아니라면 그런 셈인",
   "in words": "말로 된",
   "leaders of a movement": "운동을 이끄는 이들",
+  "left in its first state": "본래 상태로 남은",
   "let fresh air in": "맑은 공기를 들이다",
   "liability to change": "바뀔 수 있는 성질",
+  "likely to work": "잘될 만한",
   "lines with a beat": "가락이 있는 글줄",
+  "low and mean": "낮고 못난",
   "many sorts": "여러 종류",
   "mist from hot water": "더운 물에서 나온 안개",
   "more than a few": "한둘이 아닌",
+  "move with quick tremors": "잔 떨림으로 움직이다",
+  "near enough to be true": "참이라 해도 될 만큼",
+  "never touched before": "아직 손대지 않은",
   "not clearly put": "뚜렷하게 말하지 않은",
   "not in use": "쓰이지 않는",
   "not quite plainly": "또렷하지 않게",
@@ -385,24 +559,35 @@ Object.assign(window.GLOSS, {
   "of many kinds": "온갖 종류의",
   "of many sorts": "갖가지의",
   "of no value at all": "아무 값도 없는",
+  "of the sense of sight": "보는 감각의",
   "of the strictest plant diet": "가장 철저한 식물 식단의",
   "one form of a thing": "한 가지 꼴",
   "one who eats no meat": "고기를 안 먹는 사람",
+  "one who treats pets": "반려동물을 치료하는 이",
   "open up to the air": "바깥 공기에 열다",
   "over against": "마주 놓고",
   "person on a plant diet": "식물만 먹는 사람",
+  "physical attack": "몸으로 하는 공격",
   "place for an event": "행사를 치르는 곳",
   "plants of a place": "한 곳에 자란 풀과 나무",
   "poetry rather than prose": "산문이 아닌 시",
   "point just before": "바로 앞의 지점",
   "poison from a bite": "물려서 들어온 독",
+  "power to block": "막을 수 있는 힘",
   "precious belongings": "소중한 소지품",
   "press on despite danger": "위험을 무릅쓰고 나아가다",
   "put in speech": "말로 옮긴",
+  "quiver fast": "빠르게 떨리다",
   "range of change": "바뀌는 범위",
   "range of kinds": "갖춘 종류의 폭",
+  "right of refusal": "마다할 권리",
+  "right to say no": "아니라고 할 권리",
   "risk doing": "위험을 안고 해 보다",
+  "rough force": "거친 힘",
+  "seen with the eyes": "눈으로 보는",
   "set against": "맞세워",
+  "shabby in conduct": "행실이 치사한",
+  "shake to and fro": "앞뒤로 흔들리다",
   "show to be true": "참임을 보여 주다",
   "snake poison": "뱀의 독",
   "space with no air": "공기가 없는 공간",
@@ -413,13 +598,21 @@ Object.assign(window.GLOSS, {
   "steam given off": "뿜어 나온 김",
   "still in force": "아직 힘을 지닌",
   "straight up and down": "곧추 선",
+  "the other way round as well": "반대쪽으로도 똑같이",
   "the very edge": "바로 그 끝",
+  "the wicked one": "악한 쪽",
   "thing that carries": "실어 옮기는 것",
   "things worth money": "값나가는 물건",
   "those at the front": "맨 앞에 선 이들",
+  "to do with seeing": "보는 일에 관한",
   "tube carrying blood": "피를 나르는 관",
   "upright in line": "선이 곧게 선",
+  "use of force to hurt": "해치려 힘을 씀",
+  "wickedly cruel": "악독하게 모진",
+  "with great force": "큰 힘으로",
+  "without honour": "명예를 모르는",
   "without sharp outline": "윤곽이 또렷하지 않게",
   "worth nothing": "값이 나가지 않는",
+  "worth of conduct": "행실의 값",
   "wrecking public property": "공공 재산을 부숨"
 });
