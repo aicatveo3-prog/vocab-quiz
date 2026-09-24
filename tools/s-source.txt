@@ -1,0 +1,439 @@
+sabotage	v	C1	고의로 파괴하다|방해하다	★원본 '모방하다, 흉내 내다' 는 emulate 뜻이었다
+sacred	adj	B2	신성한	사전 단일값(divine·holy 두 곳)
+sacrifice	n	B1	희생	원본 [n+v] → 명사. 참조 없음
+sadden	v	B2	슬프게 하다	신규
+safe	adj	B1	안전한	사전 단일값(hazardous 반의어). '금고' 버림 — secure 와 갈림
+safety instruction	phr	B1	안전 교육	띄어쓰기 고침
+salient	adj	C2	가장 두드러진|눈에 먼저 드는	'중요한' 은 significant 자리
+saline	adj	C2	염분이 든	신규
+saliva	n	B2	침	신규
+salute	v	B2	경의를 표하다	사전 단일값. 원본 '경례하다' 버림
+salvage	v	C1	인양하다|건져 내다	'구조' 는 salvation 에 넘겼다
+salvation	n	C1	구원|구제	salvage 와 갈랐다
+sanction	n	C1	제재|인가	사전 쌍반점→쉼표. 참조 approval 이 명사
+sanctuary	n	C1	보호구역|성소	사전 쌍반점→쉼표(참조 두 곳)
+sane	adj	C1	제정신의|분별 있는	사전 글자 유지. 둘째 갈래가 sensible 과 맞물려 배제
+sanitary	adj	C1	위생의	원본 '위생적인' 은 같은 말
+sanitation	n	C1	위생 시설	사전 단일값
+sanity	n	C1	온전한 정신|분별력	sane(adj) 과 품사로 갈린다
+sarcastic	adj	C1	비꼬는|빈정거리는	신규
+satellite	n	B2	위성	괄호 '(인공)' 걷음
+satiate	v	C2	충분히 만족시키다	신규
+satire	n	C1	풍자|비꼼	신규
+satirical	adj	C1	풍자적인	신규
+satisfying	adj	B1	만족스러운	신규
+saturate	v	C1	적시다|포화시키다	사전 글자 유지
+saturation	n	C1	포화 상태	신규
+savage	adj	C1	야만적인|잔인한	사전 글자 유지(참조 세 곳)
+save face	phr	C1	체면을 세우다	신규
+savor	n	C1	풍미	사전 단일값이 명사다. 원본 '만끽하다' 는 버렸다
+saw	n	B1	톱	원본 [v+n] → 명사. see 의 과거형과 헷갈리지 않게 예문도 톱 뜻으로
+scale	n	B1	규모|정도	사전 글자 유지(참조 두 곳). '음계·저울' 버림
+scan	v	B2	훑어보다	사전에서 외래어 '스캔하다' 를 걷었다. skim 과 맞물려 배제
+scanty	adj	C1	빈약한	사전 단일값. scarce 와 갈랐다
+scar	n	B2	흉터|상처	참조 없어 원본대로
+scarce	adj	B2	부족한|드문	사전 글자 유지. 부사 갈래 버림
+scared	adj	B1	무서워하는|겁먹은	신규
+scary	adj	B1	무서운|두려운	신규
+scatter	v	B2	흩뿌리다|분산하다	사전 글자 유지(참조 네 곳)
+scenery	n	B1	풍경|경치	신규
+scent	n	B2	향기|냄새	사전 글자 유지(참조 세 곳)
+scheme	n	B2	계획|음모	사전 글자 유지(참조 두 곳)
+scholarly	adj	B2	학문적인	사전 단일값
+scholarship	n	B1	장학금	신규
+scoop up	phr	B2	퍼 올리다	신규
+scope	n	B2	범위	사전 단일값. range·extent 와 맞물려 배제
+scornful	adj	C1	멸시하는	사전 단일값
+scramble	v	B2	재빨리 움직이다|앞다투다	참조 없어 원본대로
+scrap	v	B2	폐기하다|버리다	⚠ 참조 갈림 — 다수가 동사. junk(J) 를 손질한다
+scratch	v	B1	긁다|긁어서 내다	괄호 걷음
+screen out	phr	B2	걸러 내어 막다	사전 단일값
+scribble	v	C1	갈겨쓰다|낙서하다	★원본 '몰래 살짝 보다' 는 peek 뜻이었다
+scrub	v	B2	북북 문지르다	신규
+scrutinize	v	C2	세심히 살피다	원본 '면밀히 조사하다' 는 같은 말
+scrutiny	n	C2	자세한 조사	원본 '자세한 검사' 는 같은 말
+seal	v	B2	봉인하다	원본 [v+n] → 동사. 참조 없음
+seaport	n	B2	항구 도시	원본 '해안 항' 은 같은 말
+search for	phr	B1	~을 찾다	신규
+season	v	B2	양념하다	신규
+seasoned	adj	C1	경험이 많은|노련한	원본의 '양념을 한' 은 season 과 겹쳐 버렸다
+seclude	v	C2	격리하다|고립시키다	'분리하다' 는 segregate·separate 자리
+seclusion	n	C2	호젓함|외딴 곳	신규
+second-hand	adj	B2	중고의	신규
+secretary	n	B1	비서|장관	원본 세 갈래 → 둘. '비서' 를 앞세웠다
+secretion	n	C1	분비|분비물	원본 '숨김, 은닉' 버림
+section	n	B1	부분|구역	★원본 '절단; 단면; 구분' → 사전값으로 바로잡음(참조 두 곳)
+sector	n	B2	분야|부문	사전값. '구역' 은 section 자리
+secular	adj	C2	세속적인	원본 둘째 갈래는 설명이라 버렸다
+secure	v	B2	확보하다	사전 단일값. 참조 bind·dangle 이 동사. safe 와 갈림
+seduce	v	C1	부추기다|유혹하다	신규
+seek	v	B1	찾다|추구하다	사전 글자 유지(참조 다섯 곳)
+seemingly	adv	B2	겉보기에는	신규
+segment	n	B2	부분|한 조각	참조 없어 원본대로. section 과 맞물려 배제
+segregate	v	C1	따로 떼어 놓다	사전 단일값
+segregation	n	C1	분리|격리	사전 글자 유지
+seize	v	B2	붙잡다|압수하다	사전 글자 유지(참조 다섯 곳)
+seldom	adv	B1	거의 ~ 않는	신규
+selection	n	B1	선발|선택	사전 글자 유지
+selective	adj	B2	가려서 하는	사전 단일값
+self-appointed	adj	C2	자칭의	원본 '자기 혼자 정한' 은 같은 말
+self-consciousness	n	C1	자의식	신규
+self-contained	adj	C1	자족적인|독립적인	신규
+self-defense	n	B2	자기 방어	신규
+self-employed	adj	B2	자영업의	신규
+selfless	adj	C1	이타적인	사전 단일값
+semester	n	B1	학기	session 은 '회기' 로 갈랐다
+semicircle	n	B2	반원	신규
+senator	n	B2	상원 의원	신규
+senior citizen	phr	B1	노인|고령자	신규
+sensation	n	B2	큰 화제	사전 단일값. ★원본 '감동, 대사건' 은 뜻이 어긋난다
+sensational	adj	B2	선풍적인|아주 멋진	신규
+sensibility	n	C1	감수성	'감정' 은 sentiment 자리
+sensible	adj	B1	분별 있는|합리적인	사전 글자 유지(참조 세 곳)
+sensitive	adj	B1	느낌이 예민한	사전 단일값
+sensory	adj	C1	감각의	신규
+sensual	adj	C2	관능적인	신규
+sentence	n	B1	문장|판결	참조 없어 원본대로. 동사 갈래 버림
+sentiment	n	C1	정서|감상	'감정' 은 sensibility 와 갈랐다
+separate	v	B1	분리하다|나누다	사전 첫 갈래(참조 여섯 곳 모두 동사)
+separation	n	B2	분리|분할	사전 글자 유지
+sequence	n	B2	연속|순서	사전 글자 유지
+serene	adj	C1	고요한|평화로운	사전 글자 유지. still 은 '여전히' 로 갈랐다
+sergeant	n	C1	하사관	원본 세 갈래 → 하나
+sermon	n	C1	설교|잔소리	신규
+servant	n	B1	하인|고용인	참조 없어 원본대로
+session	n	B2	회기|개정 기간	'학기' 는 semester 자리
+set ~ in motion	phr	C1	~을 움직이게 하다	신규
+set aside	phr	B2	한쪽으로 치워 두다	put aside(P 제쳐놓다) 와 다르다
+set back	phr	B2	방해하다|지연시키다	신규
+set in	phr	B2	시작되다|자리 잡다	⚠ 사전값 '끼워 넣다' 는 뜻이 다르다 — 참조 한 곳을 손질한다
+set out	phr	B1	출발하다|착수하다	사전 글자 유지
+setting	n	B2	환경|배경	사전 글자 유지
+settle	v	B1	정착하다|해결하다	사전 쌍반점→쉼표. 참조 없음
+settlement	n	B2	정착지|합의	사전 글자 유지(참조 세 곳)
+several	adj	B1	몇몇의	신규
+severe	adj	B1	심각한|엄격한	사전 글자 유지. strict·stern 과 맞물려 배제
+sewage	n	C1	하수	신규
+shabby	adj	C1	초라한|누추한	신규
+shade	n	B1	그늘|빛 가리개	원본 [n] 쪽. 사전은 동사가 앞이었다
+shallow	adj	B1	얕은|피상적인	superficial 과 맞물려 배제
+shameless	adj	C1	부끄러움을 모르는	사전 단일값
+share	n	B1	배당|몫	사전 글자 유지(참조 두 곳이 명사). ★'공유하다' 는 아까운 자리
+sharp	adj	B1	날카로운|선명한	사전 글자 유지(참조 세 곳)
+sharply	adv	B2	급격히|날카롭게	사전 글자 유지
+shatter	v	B2	산산이 부수다	사전 단일값. smash 와 갈랐다
+shed	v	B2	흘리다	사전 첫 갈래. 원본 세 갈래·괄호 걷음
+sheer	adj	C1	완전한|순전한	신규
+shelter	n	B2	피난처	사전 첫 갈래. 원본 [n+v] → 명사
+shield	v	B2	보호하다	사전 첫 갈래(참조 두 곳)
+shift	n	B2	변화|교대	사전 글자 유지. 참조 없음
+shipwreck	n	B2	난파	'난파선' 은 shipwrecked 와 맞물려 버렸다
+shipwrecked	adj	C1	난파된	신규
+shiver	v	B2	몸을 떨다	shudder 와 첫 뜻을 맞춰 서로 배제
+shoot	v	B1	쏘다	사전 둘째 갈래. 원본 '촬영하다' 는 버렸다
+shore	n	B1	해안|기슭	사전 글자 유지
+short of breath	phr	B2	숨이 찬	신규
+shortage	n	B1	부족|품귀	사전 글자 유지(참조 네 곳)
+shortcoming	n	B2	단점|결점	사전 글자 유지. '결핍' 은 shortage 자리
+shorthand	n	C2	속기	신규
+short-sighted	adj	C1	근시안적인	신규
+shoulder	v	C1	떠맡다	원본 [v] · 괄호 걷음
+shower	v	B2	퍼붓다|쏟아 붓다	원본 명사 갈래 버림
+shrink	v	B1	줄어들다|수축하다	사전 글자 유지(참조 네 곳)
+shrug	v	B2	어깨를 으쓱하다	원본 [v+n] → 동사
+shudder	v	C1	몸을 떨다|몸서리치다	shiver 와 첫 뜻을 맞춰 서로 배제
+shut off	phr	B2	차단하다|끊다	원본 '멈추다, 서다' 는 stall 자리
+shuttle	v	B2	왕복하다	사전 단일값. 원본 명사 갈래 버림
+sibling	n	B2	형제자매	신규
+side effect	phr	B1	부작용	사전 단일값
+siege	n	C2	포위 공격	신규
+sign up	phr	B1	신청하다|가입하다	사전값. '등록하다' 는 register(R)·enroll(E) 자리
+sign up for	phr	B1	~을 신청해 넣다	sign up 과 겹치지 않게 다듬었다
+signature	n	B2	서명|특징	원본 외래어 '사인' 걷음
+significant	adj	B1	중요한|상당한	사전 글자 유지(참조 두 곳)
+silhouette	n	C1	검은 윤곽|그림자	외래어 '실루엣' 걷음
+similarity	n	B1	유사함|닮은 점	사전 글자 유지(참조 세 곳)
+simplicity	n	B2	단순함|소박함	원본 세 갈래 → 둘
+simplify	v	B2	단순화하다	참조 없어 원본대로
+simulate	v	C1	그런 양 꾸미다	사전 단일값. '비슷한 것을 만들다' 는 버렸다
+simultaneous	adj	C1	동시의	simultaneously(부사) 와 품사로 갈린다
+simultaneously	adv	C1	동시에	참조 없어 원본대로
+sin	n	B2	죄|죄악	신규
+sincere	adj	B1	진심의|진실한	사전 글자 유지(참조 세 곳)
+single out	phr	B2	골라내다|지목하다	사전 글자 유지
+sinister	adj	C2	음험한	사전 단일값
+sink	v	B1	가라앉다|침몰하다	사전 글자 유지
+site	n	B1	부지|장소	사전 글자 유지. 원본 네 갈래 → 둘
+situate	v	C1	두다|위치시키다	신규
+skeptical	adj	B2	회의적인	사전 단일값
+skepticism	n	C1	회의주의	사전 단일값. ★원본 '무신론' 은 atheism 뜻
+skim	v	B2	훑어보다	사전 단일값. scan 과 맞물려 배제
+skinny	adj	B2	깡마른	사전 단일값
+skip	v	B1	건너뛰다	사전 단일값
+skyrocket	v	C1	급등하다	soar 와 갈랐다
+skyscraper	n	B2	고층 건물	원본 '마천루' 는 같은 말
+slam	v	B2	쾅 닫다	괄호 걷음
+slap	v	B2	찰싹 때리다	신규
+slaughter	n	C1	학살|도살	사전 글자 유지. 원본 동사 갈래 버림
+slender	adj	B2	날씬한|가느다란	slim 과 갈랐다
+slide into	phr	B2	~에 미끄러져 들어가다	신규
+slightly	adv	B1	약간|조금	사전 글자 유지
+slim	adj	B1	가느다란	사전 단일값. '호리호리한' 은 slender 자리
+slope	n	B2	비탈|기울기	원본 [n] 쪽. 사전은 동사였다
+sloppy	adj	C1	엉성한|대충하는	신규
+sluggish	adj	C1	느릿한|부진한	사전 글자 유지(참조 세 곳)
+slumber	n	C2	잠|수면	원본 [n+v] → 명사
+slump	n	B2	폭락|부진	사전 글자 유지
+smash	v	B2	부수다	사전 첫 갈래. shatter 와 갈랐다
+smooth	adj	B1	매끄러운|평탄한	사전 글자 유지(참조 다섯 곳)
+smuggle	v	C1	밀수하다	원본 '밀입국하다' 버림
+snap	v	B2	딱 튀기다	사전 단일값
+snatch	v	B2	낚아채다	사전 단일값
+sneak	v	B2	몰래 가다	원본 둘째 갈래 버림
+sniff	v	B2	코를 킁킁거리다	원본 [v+n] → 동사
+snore	v	B2	코를 골다	신규
+so far	phr	B1	지금까지	신규
+so much the better	phr	C2	훨씬 더 좋은	신규
+soak	v	B2	흠뻑 젖게 하다	사전 단일값
+soar	v	B2	급상승하다|높이 날다	참조 없어 사전값. skyrocket 과 갈랐다
+sob	v	B2	흐느껴 울다	신규
+sober	adj	C1	술 취하지 않은|냉철한	신규
+so-called	adj	B2	이른바	원본 '소위' 는 같은 말
+sociable	adj	B2	사교적인	사전 단일값(참조 세 곳)
+socialize	v	B2	사귀다|사회화하다	신규
+sociocultural	adj	C1	사회문화적인	신규
+sociology	n	B2	사회학	신규
+solace	n	C2	위안|위로	신규
+sold-out	adj	B2	매진된	신규
+sole	adj	B2	유일한|독점의	사전 글자 유지
+solely	adv	B2	단독으로	사전 단일값
+solemnity	n	C2	근엄함|엄숙함	원본 네 갈래 → 둘
+solicit	v	C2	간청하다|요청하다	원본 셋째 갈래 버림
+solid	adj	B1	단단한|입방의	사전 글자 유지. ⚠ liquid(L) 를 손질한다
+solitary	adj	C1	홀로 지내는	사전 단일값
+solitude	n	C1	고독|혼자 지냄	신규
+soluble	adj	C2	액체에 녹는	신규
+solution	n	B1	해결책|용액	사전 쌍반점→쉼표
+solvent	adj	C2	지급 능력이 있는	★원본 '용액' 은 solution 뜻. ⚠ acid(A) 를 손질한다
+somewhat	adv	B2	다소	slightly 와 갈랐다
+sonic	adj	C1	음파의|소리의	사전 글자 유지
+soothe	v	B2	달래다|진정시키다	사전 글자 유지
+sophisticated	adj	B2	정교한|세련된	참조 없어 사전값(쌍반점→쉼표)
+sophomore	n	B2	2학년	괄호 걷음
+sore	adj	B1	따가운|아픈	신규
+sorrow	n	B2	비애	사전 단일값. 원본 '애도' 버림
+sound	adj	B2	빈틈없는|타당한	사전 글자 유지. ★'소리' 는 아까운 자리
+sour	adj	B1	신|시큼한	사전 글자 유지
+souvenir	n	B1	기념품	신규
+sovereignty	n	C2	통치권|자주권	신규
+sow	v	B2	씨를 뿌리다	발음을 소우 로 적어 saw(소) 와 갈랐다
+spacecraft	n	B2	우주선	참조 없어 원본대로
+span	n	B2	기간	사전 첫 갈래. '범위' 는 scope·range 자리
+spare	adj	B2	여유 있는	사전 첫 갈래. 원본 동사 갈래 버림
+spatial	adj	C1	공간의	사전 단일값
+spear	n	B2	창	신규
+specialized	adj	B2	전문화된	신규
+specialty	n	B2	전문|장기	원본 '특성' 버림
+species	n	B1	종|종류	신규
+specific	adj	B1	특정한|구체적인	사전 글자 유지(참조 여섯 곳)
+specify	v	B2	명시하다	사전 단일값
+specimen	n	C1	견본|표본	신규
+spectacle	n	C1	광경|장관	'구경거리' 버림
+spectacular	adj	B2	장관인|눈부신	사전 글자 유지
+spectator	n	B2	관람자|관객	사전 글자 유지
+spectrum	n	C1	영역	'범위' 는 scope 자리
+speculate	v	C1	추측하다|투기하다	사전 글자 유지
+spell	n	C1	한동안의 계속	원본 [n+v] → 명사
+sperm	n	C1	정자	신규
+sphere	n	C1	영역|범위	사전 글자 유지 ⚠ spectrum 과 맞물려 배제
+spice	n	B1	양념|향신료	원본 '풍미' 는 savor 자리
+spill	v	B1	쏟다|흘리다	신규
+spill over	phr	C1	넘치다|번지다	신규
+spiral	v	C1	악화로 치닫다	사전 단일값. 원본 형용사 갈래 버림
+spirited	adj	C1	활기를 띤	신규
+spiritual	adj	B2	정신적인|영적인	사전 글자 유지
+splash	v	B2	튀기다	괄호 걷음
+splendid	adj	B2	훌륭한|빛나는	사전 글자 유지. superb 와 갈림
+split	v	B2	나누다	사전 첫 갈래. 원본 명사 갈래 버림
+spoil	v	B1	버릇없게 만들다	사전 단일값. 원본 '망치다' 는 ruin(R) 자리
+spontaneous	adj	B2	즉흥적인|자발적인	사전 글자 유지
+sporadic	adj	C1	산발적인|이따금의	사전 글자 유지
+spot	v	B1	발견하다	사전 첫 갈래. ⚠ location(L) 를 손질한다
+spouse	n	B2	배우자	사전 단일값
+sprain	v	B2	삐다	원본 [v+n] → 동사
+spring from	phr	C1	~에서 비롯되다	사전값 '뛰어 벗어나다' 는 뜻이 어긋난다 — 참조 한 곳을 손질한다
+sprinkle	v	B2	뿌리다	사전 둘째 갈래. 원본 '간간이 섞다' 버림
+sprint	n	B2	단거리 경주	사전은 동사였다. 원본이 앞세운 명사로
+sprout	v	B2	싹트다|발아하다	사전 첫 갈래
+squander	v	C2	낭비하다	사전 단일값
+square	n	B1	정사각형|광장	원본 [adj+n] → 명사
+squeeze	v	B1	짜다|압박하다	사전 글자 유지
+stability	n	B2	안정성	사전 단일값
+stabilize	v	B2	안정시키다	원본 '견고하게 하다' 버림
+stable	adj	B1	안정된	사전 첫 갈래. '마구간' 은 담지 않았다
+stack	n	B2	더미|무더기	사전 둘째 갈래. 원본 '산더미, 다량' 은 같은 말
+staff	n	B1	직원|간부	신규
+stagger	v	B2	비틀거리다	사전 첫 갈래. stumble 과 갈랐다
+stagnant	adj	C1	고여 있는|침체된	신규
+stain	n	B2	얼룩	참조 없어 원본 앞 갈래
+stake	n	B2	지분|말뚝	사전 글자 유지. '내기' 버림
+stale	adj	B2	상한|김빠진	신규
+stalk	v	C1	조용히 뒤쫓다|몰래 따라붙다	원본 세 갈래 → 둘
+stall	v	B2	갑자기 멎다	원본 [v+n] → 동사. 괄호 걷음
+stand out	phr	B1	돋보이다	사전 단일값
+standardize	v	B2	표준화하다	신규
+standpoint	n	B2	관점|입장	사전 글자 유지
+standstill	n	C1	정지|멈춤	신규
+staple	adj	C1	주된|주요한	신규
+stare	v	B1	응시하다|빤히 보다	사전 글자 유지. ⚠ catch a glimpse of(C) 는 명사를 노렸다
+starry	adj	B2	별이 많은	stellar 와 갈랐다
+startle	v	B2	흠칫 놀라게 하다	사전 단일값
+startling	adj	B2	깜짝 놀랄|아주 놀라운	신규
+starvation	n	B2	굶어 죽음|기아	사전 글자 유지(참조 세 곳)
+starve	v	B1	굶주리다	신규
+state	v	B1	말하다|진술하다	참조 comment 가 동사. 사전 첫 갈래 '발언하다' 는 remark(R) 자리
+state-of-the-art	adj	C1	최신의	원본 앞 갈래는 설명이라 줄였다
+statesman	n	C1	정치가	신규
+static	adj	C1	움직이지 않는|변하지 않는	원본 '잡음' 버림
+statistical	adj	B2	통계에 근거한	원본 세 갈래 → 하나. statistics 와 갈랐다
+statistics	n	B2	통계|통계학	신규
+statue	n	B1	조각상	사전 단일값
+status	n	B1	지위|상태	사전 글자 유지
+status symbol	phr	C1	신분을 드러내는 것	원본이 길어 줄였다
+steadfast	adj	C2	확고한|변함없는	사전 글자 유지
+steel	n	B1	강철	신규
+steep	adj	B1	가파른|급격한	괄호 걷음
+steer	v	B2	방향을 조종하다	사전 단일값
+stellar	adj	C1	별의|뛰어난	사전 글자 유지. starry 와 갈랐다
+stem	n	B1	줄기	원본 [n+v] → 명사. 동사 뜻은 stem from 이 받는다
+stem from	phr	B2	~에서 유래하다	사전 단일값
+step out of	phr	B1	~에서 나오다	신규
+stereotype	n	B2	고정관념	신규
+sterile	adj	C1	메마른|무균의	사전 글자 유지
+sterilize	v	C1	소독하다|살균하다	신규
+stern	adj	C1	엄격한|단호한	사전 글자 유지. strict·severe 와 맞물려 배제
+stick to	phr	B1	~을 고수하다	사전 없음 · 원본 앞 갈래
+stick to one's last	phr	C2	본분을 지키다	원본 둘째 갈래는 설명이라 버렸다
+stick with	phr	B1	~와 함께 있다	'고수하다' 는 stick to 자리
+stiffen	v	C1	뻣뻣하게 하다	사전 단일값
+stifle	v	C1	억누르다|질식시키다	사전 글자 유지. suppress·repress(R) 와 갈림
+still	adj	B1	고요한|잔잔한	참조 없어 원본대로. serene 과 맞물려 배제
+stillness	n	B2	고요|평온	신규
+stimulate	v	B1	자극하다|활성화하다	사전 글자 유지. 원본 명사 갈래 버림
+sting	v	B2	찌르다|쏘다	원본 [v+n] → 동사
+stingy	adj	C1	인색한	사전 단일값
+stir	v	B1	젓다|감동시키다	사전 글자 유지
+stock	n	B1	재고|주식	사전 첫 갈래 + 원본. share 와 '주식' 으로 맞물려 배제
+stockholder	n	C1	주주	신규
+stockpile	v	C1	비축하다	사전 첫 갈래
+stop by	phr	B1	잠시 들르다	사전 단일값
+stopover	n	C2	단기 체류	원본 '도중하차' 버림
+storage	n	B2	저장|보관	참조 없어 원본 앞 갈래
+store	v	B1	저장하다	사전 첫 갈래
+straightforward	adj	B2	단순명료한|쉬운	★원본 '눈에 잘 띄는' 은 conspicuous 뜻이었다
+strain	n	B2	긴장|압박	사전 글자 유지
+strand	n	C1	한 가닥	사전 단일값. 원본 동사 갈래 버림
+strategy	n	B1	전략	사전 단일값
+stray	v	B2	벗어나다|빗나가다	사전 글자 유지
+strenuous	adj	C1	격렬한|몸이 힘든	사전 글자 유지(참조 세 곳)
+strict	adj	B1	엄격한	사전 단일값. stern·severe 와 맞물려 배제
+stride	v	B2	성큼성큼 걷다	신규
+striking	adj	B2	눈에 띄는	사전 단일값
+string	n	B1	줄|끈	신규
+strip	v	B2	벗기다	사전 첫 갈래. 원본 명사 갈래 버림
+strive	v	B2	노력하다|분투하다	사전 글자 유지(참조 네 곳). struggle 과 갈랐다
+structure	n	B1	구조	사전 단일값. 원본 동사 갈래 버림
+struggle	v	B1	힘겨워하다|투쟁하다	사전 둘째 갈래를 앞세웠다. strive 와 갈랐다
+stubborn	adj	B2	완고한|고집 센	사전 글자 유지
+student union	phr	B2	학생회관	신규
+stuff	v	B1	채우다	사전 첫 갈래. ⚠ material(M) 은 명사를 노렸다
+stumble	v	B2	넘어지다	stagger 와 갈랐다
+stunning	adj	B2	놀라운|멋진	사전 글자 유지(참조 세 곳)
+sturdy	adj	B2	튼튼한|견고한	사전 글자 유지
+subconscious	n	C1	잠재의식	subliminal(형용사) 과 품사로 갈린다
+subdue	v	C1	제압하다|진정시키다	사전 글자 유지
+subject	n	B1	주제|대상	참조 없어 원본 앞 갈래
+subjective	adj	B2	주관적인	사전 단일값
+subliminal	adj	C2	잠재의식의	subconscious 와 품사로 갈린다
+submarine	n	B2	잠수함	원본 [adj+n] → 명사
+submerge	v	C1	물에 잠기게 하다	사전 단일값
+submit	v	B1	제출하다|굴복하다	사전 글자 유지. surrender 와 갈림
+subordinate	adj	C1	종속된|부수적인	⚠ 참조 갈림 — 다수가 형용사. commander(C) 를 손질한다
+subscribe	v	B2	구독하다|지지하다	괄호 걷음
+subsequence	n	C2	이어서 일어나는 것	신규
+subsequent	adj	B2	뒤이은|차후의	사전 글자 유지
+subsequently	adv	B2	그 후에	사전 단일값
+subside	v	C1	가라앉다|잦아들다	사전 글자 유지
+subsidize	v	C1	보조금을 주다	사전 단일값
+subsidy	n	C1	보조금	사전 단일값
+substance	n	B1	물질|본질	사전 글자 유지(참조 다섯 곳)
+substantial	adj	B2	상당한|실질적인	사전 글자 유지
+substitute	n	B2	대리인	사전 첫 갈래. 원본 세 갈래 → 하나
+subtle	adj	B2	미묘한	사전 단일값
+subtract	v	B1	빼다|공제하다	사전 글자 유지
+suburb	n	B1	교외|근교	신규
+successive	adj	B2	연속적인	사전 단일값
+successor	n	B2	후임자|계승자	사전 글자 유지(참조 세 곳). predecessor(P) 와 짝이다
+suck	v	B1	빨다|흡수하다	신규
+sudden	adj	B1	갑작스러운	사전 단일값
+sufficient	adj	B1	충분한	사전 단일값(참조 세 곳)
+suffocate	v	C1	질식시키다	사전 단일값
+suggestion	n	B1	제안|암시	신규
+suitable	adj	B1	적합한	사전 단일값(참조 네 곳)
+summit	n	B2	정상|정상회담	사전 글자 유지
+summon	v	C1	소환하다|불러 모으다	사전 글자 유지(참조 세 곳)
+sun-baked	adj	C2	햇볕에 말린	신규
+sunken	adj	B2	가라앉은|움푹한	사전 글자 유지
+sunscreen	n	B2	자외선 차단제	신규
+superb	adj	B2	훌륭한|최고의	사전 글자 유지(참조 네 곳). splendid 와 갈림
+superficial	adj	B2	피상적인	사전 단일값. shallow 와 맞물려 배제
+superfluous	adj	C2	필요 없는	'여분의' 는 spare·redundant(R) 자리
+superior	adj	B2	더 뛰어난	사전 단일값
+supernatural	adj	B2	초자연적인	신규
+superstition	n	B2	미신	신규
+supervise	v	B2	감독하다	사전 단일값
+supervision	n	B2	감독|관리	원본 네 갈래 → 둘
+supplement	n	B2	보충|부록	사전 글자 유지(참조 세 곳)
+supply	v	B1	공급하다	사전 첫 갈래
+supporter	n	B1	지지자|후원자	사전 글자 유지
+suppose	v	B1	추정하다|가정하다	사전 글자 유지
+suppress	v	B2	억압하다	사전 첫 갈래(참조 다섯 곳). repress(R) 와 맞물려 배제
+surface	n	B1	표면	사전 첫 갈래
+surge	n	B2	급증	사전 단일값
+surgeon	n	B2	외과 전문의	신규
+surgery	n	B1	외과 처치	사전 단일값
+surpass	v	B2	능가하다	사전 단일값
+surplus	n	B2	잉여|과잉	⚠ 참조 갈림 — 다수가 명사. leftover(L) 를 손질한다
+surrender	v	B2	항복하다	⚠ 참조 갈림 — 다수가 동사. concession(C) 를 손질한다
+surrogate	adj	C2	대리의|대용의	신규
+surround	v	B1	둘러싸다|에워싸다	사전 글자 유지
+survey	n	B1	조사	사전 첫 갈래
+survival	n	B1	생존	사전 단일값
+survive	v	B1	살아남다	사전 단일값(참조 세 곳)
+susceptible	adj	C1	영향받기 쉬운	사전 단일값
+suspect	v	B2	의심하다	사전 둘째 갈래를 동사로
+suspend	v	B2	중단하다|매달다	사전 글자 유지
+suspense	n	B2	걱정|긴장감	신규
+suspicious	adj	B2	의심하는|수상한	신규
+sustain	v	B2	유지하다|견디다	사전 글자 유지
+sustainable	adj	B2	지속 가능한	사전 단일값
+swallow	v	B1	삼키다	신규
+swamp	n	B2	늪	사전 단일값
+swell	v	B2	부풀다|증가하다	사전 글자 유지
+swift	adj	B2	빠른|신속한	사전 글자 유지
+swine	n	C1	돼지	신규
+swirl	v	C1	빙빙 돌다	신규
+switch	v	B1	바꾸다|전환하다	참조 없어 원본대로
+syllabus	n	B2	강의 계획	사전 둘째 갈래
+symbolize	v	B2	상징하다	신규
+symmetry	n	C1	좌우 대칭|균형	신규
+sympathetic	adj	B2	동정하는|공감하는	사전 글자 유지
+symposium	n	C1	학술회|토론회	신규
+symptom	n	B1	증상|징후	신규
+synchronize	v	C1	동시에 일어나게 하다	신규
+syndrome	n	B2	증후군	신규
+synopsis	n	C2	줄거리|개요	사전 글자 유지
+synthesis	n	C1	합성|종합	사전 글자 유지
+synthesize	v	C1	합성하다|종합하다	신규
+synthetic	adj	B2	합성의|인조의	사전 글자 유지(참조 세 곳)
+syringe	n	C1	주사기	원본 [n+v] → 명사
