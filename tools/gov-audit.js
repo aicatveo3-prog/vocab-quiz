@@ -28,7 +28,7 @@ function load(rel) {
   return true;
 }
 ['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js',
- 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js',
+ 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js', 'js/data/words-s.js',
  'js/data/gloss.js', 'js/data/pron.js'].forEach(load);
 
 var SETS = [['A', window.VOCAB], ['B', window.VOCAB_B], ['C', window.VOCAB_C],
@@ -42,7 +42,8 @@ var SETS = [['A', window.VOCAB], ['B', window.VOCAB_B], ['C', window.VOCAB_C],
             ['O', window.VOCAB_O || []],
   ['P', window.VOCAB_P || []],
   ['Q', window.VOCAB_Q || []],
-  ['R', window.VOCAB_R || []]];
+  ['R', window.VOCAB_R || []],
+  ['S', window.VOCAB_S || []]];
 var ALL = [];
 SETS.forEach(function (s) { (s[1] || []).forEach(function (w) {
   w._set = s[0]; ALL.push(w);
