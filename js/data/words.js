@@ -809,7 +809,7 @@ window.VOCAB = [
     ex:[{ s:"She watched the puppies with obvious {{}}.", f:"amusement", ko:"그녀는 강아지들을 뚜렷한 즐거움으로 바라보았다." }] },
 
   { word:"analogy", pron:"어낼러지", pos:"n", level:"C1", meanings:["비유","유사점"],
-    syn:["comparison","parallel","likeness"], ant:["contrast"],
+    syn:["comparison","close likeness","resemblance"], ant:["contrast"],
     ex:[{ s:"He drew an {{}} between the brain and a city.", f:"analogy", ko:"그는 뇌와 도시 사이의 비유를 이끌어 냈다." }] },
 
   { word:"analysis", pron:"어낼러시스", pos:"n", level:"B1", meanings:["분석","분해"],
