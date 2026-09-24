@@ -42,7 +42,9 @@ window.Conquer = (function () {
     { id: 'M', label: 'M', words: window.VOCAB_M || [] },
     { id: 'N', label: 'N', words: window.VOCAB_N || [] },
     { id: 'O', label: 'O', words: window.VOCAB_O || [] },
-    { id: 'P', label: 'P', words: window.VOCAB_P || [] }
+    { id: 'P', label: 'P', words: window.VOCAB_P || [] },
+    { id: 'Q', label: 'Q', words: window.VOCAB_Q || [] },
+    { id: 'R', label: 'R', words: window.VOCAB_R || [] }
   ];
 
   function getSet(id) {

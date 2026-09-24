@@ -947,7 +947,9 @@
   function renderSets() {
     var list = $('set-list');
     list.innerHTML = '';
-    window.Conquer.SETS.forEach(function (s) {
+    /* 아직 단어를 붙이지 않은 세트는 목록에 내지 않는다. 새 세트를 미리 배선해
+       두어도 "R 세트 0단어 · 0챕터" 같은 빈 줄이 뜨지 않게 한다. */
+    window.Conquer.SETS.filter(function (s) { return s.words.length; }).forEach(function (s) {
       var chs = window.Conquer.buildChapters(s);
       var btn = el('button', 'row-btn');
       btn.type = 'button';

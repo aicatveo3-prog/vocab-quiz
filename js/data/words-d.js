@@ -1804,7 +1804,6 @@ Object.assign(window.GLOSS, {
   "misshapen":"모양이 이상한, 일그러진",
   "objectionable":"불쾌한, 문제가 되는",
   "parity":"동등, 등가",
-  "qualify":"자격을 얻다, 자격을 주다",
   /* refute 가 이미 '반박하다, 논박하다'다 — 글자까지 같으면 피드백 두 줄이
      같아지므로 rebut 은 '맞받아 반론하다' 쪽으로 구별한다 */
   "rebut":"반론하다, 맞받아치다",

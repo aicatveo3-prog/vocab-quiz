@@ -1800,7 +1800,6 @@ Object.assign(window.GLOSS, {
   "prohibited":"금지된",
   "projection":"추정치",
   "push higher":"더 높이 밀다",
-  "quiver":"떨다",
   "scavenge":"버려진 먹이를 찾다",
   "search for food":"먹을 것을 찾다",
   "send up":"위로 올려 보내다",

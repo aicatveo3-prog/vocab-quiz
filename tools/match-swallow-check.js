@@ -54,7 +54,7 @@ global.window.Store = {
 var fs = require('fs');
 var path = require('path');
 var ROOT = path.join(__dirname, '..');
-['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js',
+['js/data/words.js', 'js/data/words-b.js', 'js/data/words-c.js', 'js/data/words-d.js', 'js/data/words-e.js', 'js/data/words-f.js', 'js/data/words-g.js', 'js/data/words-h.js', 'js/data/words-i.js', 'js/data/words-j.js', 'js/data/words-k.js', 'js/data/words-l.js', 'js/data/words-m.js', 'js/data/words-n.js', 'js/data/words-o.js', 'js/data/words-p.js', 'js/data/words-q.js', 'js/data/words-r.js',
   'js/data/gloss.js', 'js/data/pron.js', 'js/quizgen.js', 'js/conquer.js',
   'js/modes.js'].forEach(function (rel) {
     new Function(fs.readFileSync(path.join(ROOT, rel), 'utf8')).call(global);
