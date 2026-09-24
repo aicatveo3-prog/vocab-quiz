@@ -134,7 +134,11 @@ window.VOCAB_H = [
   /* 승격 ② — GLOSS '수확하다; 수확' 이다. 품사가 갈린다.
      참조하는 기존 문제가 없어 자유롭게 골랐다. 원본의 명사 쪽으로 모았다. */
   { word:"harvest", pron:"하비스트", pos:"n", level:"B1", meanings:["추수","수확"],
-    syn:["crop","yield","reaping"],
+    /* Y 세트에서 yield 를 표제어로 세우며 **동사**(산출하다, 양보하다) 로
+       확정했다. 참조 여섯 곳의 품사가 phr 2 · v 2 · n 2 로 갈렸는데, 사전 첫
+       갈래가 동사이고 concede·generate 가 동사여서 동사를 택했다. 명사 표제어의
+       유의어 칸에 동사가 설 수 없으므로 풀어 쓴 말로 갈았다. */
+    syn:["crop","what is gathered in","reaping"],
     ex:[{ s:"This year's wheat {{}} was the largest on record.", f:"harvest", ko:"올해 밀 수확은 기록상 최대였다." }] },
 
   { word:"hatch", pron:"해치", pos:"v", level:"B2", meanings:["부화하다"],

@@ -1975,12 +1975,9 @@ Object.assign(window.GLOSS, {
   "wronged":"억울한, 부당한 대우를 받은",
   "yap":"짖다; 재잘거리다",
   "yearly":"매년의",
-  "yearn":"갈망하다, 동경하다",
   "yelp":"비명을 지르다; 짧게 짖다",
-  "yield":"산출하다; 양보하다",
   "yielding":"순종하는, 유연한",
   "youth":"젊음, 청년기",
-  "zealous":"열의에 찬, 열성적인",
   "zephyr":"솔솔 부는 바람",
   "zodiac study":"별자리로 보는 점"
 });

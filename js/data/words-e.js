@@ -2231,7 +2231,6 @@ Object.assign(window.GLOSS, {
   "tangle up":"뒤엉키게 하다",
   "tempting":"구미가 당기는",
   "undivided":"나뉘지 않은, 온전한",
-  "zeal":"열의, 열성",
 
   /* ── 7차: envision ~ erratic (30개) ───────────────── */
   "afterword":"후기, 발문",
