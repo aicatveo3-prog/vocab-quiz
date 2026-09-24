@@ -855,15 +855,193 @@ window.VOCAB_T = [
   /* ★ 교재의 '탁월' 은 transcend 에 없는 뜻이라 버리고 '뛰어넘음' 으로 바로잡았다. */
   { word:"transcendence", pron:"트랜센던스", pos:"n", level:"C2", meanings:["초월","뛰어넘음"],
     syn:["going beyond limits","state of rising above","passing all bounds"],
-    ex:[{ s:"The poem speaks of {{}}.", f:"transcendence", ko:"그 시는 초월을 말한다." }] }
+    ex:[{ s:"The poem speaks of {{}}.", f:"transcendence", ko:"그 시는 초월을 말한다." }] },
+
+  /* ══ 8차 · transcribe ~ treacherous (20단어) ═════════════════════════════
+     승격 7(transform·transient·transmit·transparent·trap·trash·treacherous) · 신규 13
+
+     ★ 이 챕터는 T 세트에서 가장 위험했다. trans- 로 시작하는 낱말이 열셋이나
+     한자리에 모여 '옮김·보냄' 을 저마다 조금씩 다르게 말한다. 게다가 앱의
+     4지선다는 한→영에서 **철자가 닮은 낱말을 오답으로 먼저 고른다**(quizgen 의
+     spellingScore). 즉 이 열셋은 서로의 오답으로 뜨는 것이 기본값이다.
+
+     짝 맞추기 보드는 공통 접두사 6글자 이상을 같은 어근으로 보고 가른다. 그래서
+     transmit↔transmission(7) · transport↔transportation(9) · transit↔transition(7) ·
+     transcribe↔transcript(8) · transfer↔transfuse(6) 는 자동으로 갈린다. 그런데
+     'trans' 다섯 글자만 같은 짝은 걸리지 않는다. 남는 위험이 둘이었다.
+
+       ① transfer(v 옮기다, 이동하다) ↔ transport(v 수송하다, 이동시키다)
+          '이동하다' 와 '이동시키다' 는 글자가 달라 자동 배제가 안 된다.
+          → transport 를 '수송하다, 실어 옮기다' 로 고쳤다. '실어 옮기다' 가
+            transfer 의 '옮기다' 를 글자째 품으므로 meaningsOverlap 이 둘을
+            서로의 오답에서 자동으로 뺀다. relocate(이전하다, 옮기다 · R) 와도
+            같은 이유로 갈린다.
+
+       ② transit(n 수송, 환승) ↔ transportation(n 교통, 운송)
+          '수송' 과 '운송' 은 사실상 같은 말인데 글자가 달라 그냥 통과한다.
+          → transportation 을 '교통, 수송' 으로 고쳤다. '수송' 을 글자까지
+            맞추니 자동 배제된다.
+
+     밖에서 걸어 들어오는 함정도 셋 있었다.
+       ③ traumatic  대단히 충격적인 → **정신적 외상의, 충격적인**
+          horrendous(충격적인 · C1/adj) 와 outrageous(너무나 충격적인 · C1/adj) 가
+          이미 그 자리를 쓰고 있었다. '대단히 충격적인' 은 셋 다 글자가 달라
+          하나도 배제되지 않는다. '충격적인' 으로 맞추니 둘 다 자동 배제된다.
+       ④ treacherous  믿을 수 없는 → **배신하는, 믿을 수 없는**
+          한국어 '믿을 수 없는' 은 '신뢰할 수 없는' 과 '믿기 어려운' 두 쪽으로
+          읽힌다. incredible(믿기 어려운, 놀라운 · B2/adj) 와 레벨 차가 1이어서
+          한 문제에 같이 뜨는데, 한→영에서 '믿을 수 없는' 을 물으면 incredible
+          도 맞는 답이 되어 버린다.
+          ★ 여기서 quizgen 을 다시 읽고 알아낸 것이 하나 있다. **영→한 4지선다는
+          선택지에 첫 뜻만 쓴다**(makeMcq 의 en-ko 갈래가 meanings[0] 만 모은다).
+          그래서 갈래를 더하는 것만으로는 부족하고 **첫 자리에 놓아야** 갈린다.
+          '배신하는' 을 앞으로 올렸다. ★ insidious(I) 의 화면이 한 줄 늘어난다.
+       ⑦ transition  전이, 이행 → **이행, 전이**
+          같은 이유다. 첫 뜻 '전이' 는 같은 챕터 transmission(전송) 과 눈으로
+          갈리지 않는다. 둘은 품사·레벨이 같고 접두사가 다섯 글자('trans') 만
+          겹쳐 어근 검사(여섯 글자)에도 안 걸린다. '이행' 을 앞으로 올렸다.
+       ⑤ transcribe  복사하다, 베끼다 → **베끼다, 옮겨 적다**
+          duplicate(복제하다, 되풀이하다 · C1/v) 와 레벨·품사가 같은데 '복사하다'
+          와 '복제하다' 는 글자가 달라 배제되지 않는다. transcribe 는 말을 글로
+          옮기는 쪽이므로 '옮겨 적다' 로 갈랐다.
+       ⑥ trash(폐기물) ↔ rubbish(잡쓰레기 · B2/n)
+          뜻을 가를 수가 없어서 rubbish 를 trash 의 유의어로 등록했다. 앱은
+          유의어 관계인 두 낱말을 서로의 오답으로 쓰지 않는다. rubbish 자신의
+          화면은 바뀌지 않는다.
+
+     나머지는 손대지 않아도 자동으로 갈린다.
+       transform  ← convert·alter·switch 가 모두 '바꾸다' 를 써서 맞물린다
+       transient  ← momentary 와 유의어 관계 · temporary 는 레벨 차 2
+       transmit   ← convey·deliver·relay·impart 가 '전달하다' 로 맞물린다
+       transparent ← crystal-clear(아주 투명한) 가 '투명한' 을 품는다
+       transnational ← multinational(다국적의) 와 글자가 같다
+       transfuse  ← indoctrinate(사상을 주입하다) 가 '주입하다' 를 품는다
+       trap       ← imprison(투옥하다, 가두다) 와 '가두다' 가 같다 · confine 은 레벨 차 2 */
+
+  /* ★ duplicate(복제하다 · C1/v) 를 피해 '복사하다' 를 '옮겨 적다' 로 갈랐다. */
+  { word:"transcribe", pron:"트랜스크라이브", pos:"v", level:"C1", meanings:["베끼다","옮겨 적다"],
+    syn:["copy out by hand","write out word for word","put speech into writing"],
+    ex:[{ s:"She had to {{}} the whole interview.", f:"transcribe", ko:"그녀는 면담 전체를 옮겨 적어야 했다." }] },
+
+  { word:"transcript", pron:"트랜스크립트", pos:"n", level:"B2", meanings:["성적 증명서","필기록"],
+    syn:["record of marks","written copy of speech","official school record"],
+    ex:[{ s:"The college asked for her {{}}.", f:"transcript", ko:"그 대학은 그녀의 성적 증명서를 요구했다." }] },
+
+  /* relocate(이전하다, 옮기다 · R) 와 '옮기다' 가 맞물려 배제된다. 아래 transport
+     도 '실어 옮기다' 로 두어 이 낱말과 갈렸다. */
+  { word:"transfer", pron:"트랜스퍼", pos:"v", level:"B1", meanings:["옮기다","이동하다"],
+    syn:["relocate","move to another place","shift across"],
+    ex:[{ s:"They will {{}} him to another branch.", f:"transfer", ko:"그들은 그를 다른 지점으로 옮길 것이다." }] },
+
+  /* 승격 61 — 사전 글자 유지(참조 convert). 교재의 '변형시키다' 는
+     deform(변형시키다, 기형으로 만들다 · D) 자리라 버렸다. convert·alter·switch
+     가 모두 '바꾸다' 를 써서 맞물려 배제된다. */
+  { word:"transform", pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
+    syn:["convert","make over into","change the form of"],
+    ex:[{ s:"Rain can {{}} the whole valley.", f:"transform", ko:"비는 골짜기 전체를 바꿔 놓을 수 있다." }] },
+
+  { word:"transfuse", pron:"트랜스퓨즈", pos:"v", level:"C2", meanings:["수혈하다","주입하다"],
+    syn:["put blood into","pour in from outside","feed in slowly"],
+    ex:[{ s:"The doctors had to {{}} blood at once.", f:"transfuse", ko:"의사들은 즉시 수혈해야 했다." }] },
+
+  /* 승격 62 — 사전 단일값 유지. 참조 momentary(M) 한 곳의 화면은 바뀌지 않는다.
+     '일시적인' 은 temporary(일시적인 · T… 아닌 B1 표제어) 자리라 쓰지 않았다. */
+  { word:"transient", pron:"트랜지언트", pos:"adj", level:"C1", meanings:["오래 가지 않는"],
+    syn:["momentary","lasting a short while","soon gone"],
+    ex:[{ s:"Fame of that kind is {{}}.", f:"transient", ko:"그런 종류의 명성은 오래 가지 않는다." }] },
+
+  /* 교재 네 갈래 → 둘. 아래 transportation 을 '교통, 수송' 으로 맞춰 이 낱말의
+     '수송' 과 자동 배제되게 했다. */
+  { word:"transit", pron:"트랜싯", pos:"n", level:"B2", meanings:["수송","환승"],
+    syn:["carriage of goods","change of trains","passage from place to place"],
+    ex:[{ s:"The goods were damaged in {{}}.", f:"transit", ko:"그 물품은 수송 중에 손상되었다." }] },
+
+  { word:"transition", pron:"트랜지션", pos:"n", level:"B2", meanings:["이행","전이"],
+    syn:["move from one state to another","passing over","change of stage"],
+    ex:[{ s:"The {{}} to the new system took a year.", f:"transition", ko:"새 체계로의 이행은 일 년이 걸렸다." }] },
+
+  { word:"transmission", pron:"트랜스미션", pos:"n", level:"B2", meanings:["전송"],
+    syn:["sending out","relay of a signal","spread from one to another"],
+    ex:[{ s:"The {{}} was cut off by the storm.", f:"transmission", ko:"그 전송은 폭풍으로 끊겼다." }] },
+
+  /* 승격 63 — 사전 글자 유지. 참조 broadcast(B)·dispatch(D) 두 곳의 화면은
+     바뀌지 않는다. convey·deliver·relay·impart 가 모두 '전달하다' 를 써서
+     맞물려 배제된다. */
+  { word:"transmit", pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
+    syn:["broadcast","dispatch","send out over a distance"],
+    ex:[{ s:"The station will {{}} the match live.", f:"transmit", ko:"그 방송국은 경기를 생중계로 전달할 것이다." }] },
+
+  /* multinational(다국적의 · M) 과 글자가 같아 자동 배제된다. */
+  { word:"transnational", pron:"트랜스내셔널", pos:"adj", level:"C1", meanings:["다국적의","초국가적인"],
+    syn:["multinational","across many states","beyond one country"],
+    ex:[{ s:"It grew into a {{}} firm.", f:"transnational", ko:"그것은 다국적 회사로 커졌다." }] },
+
+  /* 승격 64 — 사전 단일값 유지. 참조 crystal-clear(C) 한 곳의 화면은 바뀌지
+     않는다. 교재의 '명백한' 은 U 세트 자리라 버렸다. */
+  { word:"transparent", pron:"트랜스패런트", pos:"adj", level:"B2", meanings:["투명한"],
+    syn:["crystal-clear","able to be seen through","letting light pass"],
+    ex:[{ s:"The wings are almost {{}}.", f:"transparent", ko:"그 날개는 거의 투명하다." }] },
+
+  /* 교재는 [v+n] 이지만 동사 쪽만 세웠다. */
+  { word:"transplant", pron:"트랜스플랜트", pos:"v", level:"B2", meanings:["이식하다"],
+    syn:["move to another body","graft into place","set in a new spot"],
+    ex:[{ s:"Surgeons can {{}} a kidney.", f:"transplant", ko:"외과의는 콩팥을 이식할 수 있다." }] },
+
+  /* ★ '이동시키다' 를 '실어 옮기다' 로 고쳤다. 위 transfer 의 '옮기다' 를
+     글자째 품어 자동 배제된다. 아래 transportation(명사) 과는 품사로 갈렸다. */
+  { word:"transport", pron:"트랜스포트", pos:"v", level:"B1", meanings:["수송하다","실어 옮기다"],
+    syn:["carry goods across","haul from place to place","ship out"],
+    ex:[{ s:"Lorries {{}} the grain to the port.", f:"transport", ko:"트럭들이 곡물을 항구로 수송한다." }] },
+
+  /* ★ '운송' 을 '수송' 으로 고쳤다. 위 transit(수송, 환승) 과 글자를 맞춰
+     자동 배제시킨 것이다 — 둘은 사실상 같은 말이어서 갈라 쓸 수 없었다. */
+  { word:"transportation", pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
+    syn:["means of getting about","carriage of people","public means of travel"],
+    ex:[{ s:"Public {{}} is cheap here.", f:"transportation", ko:"이곳은 대중 교통이 싸다." }] },
+
+  /* 승격 65 — 사전 글자 유지. 참조 entangle(E) 한 곳의 화면은 바뀌지 않는다.
+     imprison(투옥하다, 가두다) 과 '가두다' 가 맞물려 배제되고, confine 은
+     레벨 차가 2여서 애초에 같은 문제에 오지 않는다. */
+  { word:"trap", pron:"트랩", pos:"v", level:"B1", meanings:["가두다","덫에 빠뜨리다"],
+    syn:["entangle","catch in a snare","shut in with no way out"],
+    ex:[{ s:"The flood may {{}} them in the cellar.", f:"trap", ko:"홍수가 그들을 지하실에 가둘 수 있다." }] },
+
+  /* 승격 66 — 사전 단일값 유지. 참조 litter(L) 한 곳의 화면은 바뀌지 않는다.
+     ★ rubbish(잡쓰레기 · B2/n) 는 뜻을 가를 수가 없어 유의어로 등록했다 —
+     앱은 유의어 관계인 두 낱말을 서로의 오답으로 쓰지 않는다. '쓰레기' 는
+     filth(오물, 쓰레기 · C1) 자리라 쓰지 않았다. */
+  { word:"trash", pron:"트래시", pos:"n", level:"B1", meanings:["폐기물"],
+    syn:["litter","rubbish","waste thrown away"],
+    ex:[{ s:"The yard was full of {{}}.", f:"trash", ko:"그 마당은 폐기물로 가득했다." }] },
+
+  /* ★ '대단히 충격적인' 을 '충격적인' 으로 맞췄다. horrendous(충격적인)·
+     outrageous(너무나 충격적인) 둘이 이렇게 해야 자동 배제된다. */
+  { word:"traumatic", pron:"트로매틱", pos:"adj", level:"C1", meanings:["정신적 외상의","충격적인"],
+    syn:["leaving a deep wound in the mind","hard to get over","scarring"],
+    ex:[{ s:"The crash was {{}} for the whole crew.", f:"traumatic", ko:"그 충돌은 승무원 전체에게 정신적 외상을 남겼다." }] },
+
+  /* 교재의 명사 갈래('가로지름') 는 버렸다. */
+  { word:"traverse", pron:"트래버스", pos:"v", level:"C2", meanings:["가로지르다","횡단하다"],
+    syn:["cut right across","go from side to side","travel over"],
+    ex:[{ s:"They had to {{}} the frozen lake.", f:"traverse", ko:"그들은 얼어붙은 호수를 가로질러야 했다." }] },
+
+  /* 승격 67 — ★ 사전 단일값에 '배신하는' 을 더했다. '믿을 수 없는' 혼자로는
+     incredible(믿기 어려운, 놀라운 · B2/adj) 과 구별되지 않는다. 참조
+     insidious(I) 의 화면이 한 줄 늘어난다. 교재의 '기만적인' 은
+     deceptive(기만적인 · C1) 자리라 쓰지 않았다. */
+  { word:"treacherous", pron:"트레처러스", pos:"adj", level:"C1", meanings:["배신하는","믿을 수 없는"],
+    syn:["insidious","ready to betray","not to be trusted"],
+    ex:[{ s:"His closest ally proved {{}}.", f:"treacherous", ko:"그의 가장 가까운 동맹은 믿을 수 없는 자로 드러났다." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
+  "able to be seen through": "속이 들여다보이는",
   "able to be taken off tax": "세금에서 덜 수 있는",
   "able to be touched": "손에 닿을 수 있는",
   "absence of noise": "소리가 없음",
   "accept the honour of": "~의 명예를 받아들이다",
+  "across many states": "여러 나라에 걸친",
   "act despite danger": "위험을 안고 움직이다",
   "act of stealing": "훔치는 짓",
   "after that time": "그때 뒤에",
@@ -890,6 +1068,7 @@ Object.assign(window.GLOSS, {
   "begin to follow": "따르기 시작하다",
   "bent of mind": "마음이 쏠리는 쪽",
   "beyond cure": "손쓸 수 없는",
+  "beyond one country": "한 나라를 넘어선",
   "boast about": "~을 내세우다",
   "body material": "몸을 이루는 바탕",
   "bound by time": "시간에 묶인",
@@ -900,13 +1079,20 @@ Object.assign(window.GLOSS, {
   "buying and selling": "사고파는 일",
   "by a shrewd move": "약삭빠른 수로",
   "calm and quiet": "차분하고 조용한",
+  "carriage of goods": "물건을 실어 나름",
+  "carriage of people": "사람을 실어 나름",
+  "carry goods across": "물건을 실어 건네다",
   "carry out a deal": "매매를 해내다",
   "cashier in a bank": "은행의 계산 담당자",
   "cast of character": "타고난 성품의 틀",
+  "catch in a snare": "올가미로 잡다",
   "cause a ticklish feel": "간지러운 느낌을 일으키다",
   "cause suffering to": "~에게 괴로움을 안기다",
   "cells of one kind": "같은 갈래의 세포",
   "chance it": "운에 맡기고 해 보다",
+  "change of stage": "단계가 달라짐",
+  "change of trains": "열차를 갈아탐",
+  "change the form of": "~의 모양을 바꾸다",
   "charge on goods brought in": "들여온 물품에 붙는 값",
   "cheer up": "기운을 차리다",
   "claim the merit of": "~의 공을 제 것이라 하다",
@@ -914,8 +1100,10 @@ Object.assign(window.GLOSS, {
   "come out for a side": "한쪽 편을 드러내다",
   "coming at the right moment": "알맞은 때에 오는",
   "container of metal": "금속으로 된 그릇",
+  "copy out by hand": "손으로 베껴 쓰다",
   "course of treatment": "치료를 이어 가는 과정",
   "crush underfoot": "발로 으깨다",
+  "cut right across": "곧장 가로질러 가다",
   "cut wood for building": "집 지으려 잘라 둔 나무",
   "cutting one's taxable sum": "과세 대상 액수를 줄이는",
   "deal carried out": "이루어진 매매",
@@ -947,6 +1135,7 @@ Object.assign(window.GLOSS, {
   "faint sign": "희미한 낌새",
   "fasten tightly": "빈틈없이 조여 매다",
   "fasten with rope": "밧줄로 묶다",
+  "feed in slowly": "천천히 흘려 넣다",
   "feel encouraged": "힘이 나다",
   "feel of a surface": "표면이 주는 느낌",
   "fighting hard": "힘껏 싸우며",
@@ -973,17 +1162,21 @@ Object.assign(window.GLOSS, {
   "giving up one for another": "하나를 내주고 다른 것을 얻음",
   "glass tube for tests": "실험에 쓰는 유리관",
   "glass with a scale": "눈금이 있는 유리 기구",
+  "go from side to side": "이쪽에서 저쪽으로 가다",
   "go past the limit of": "~의 한계를 넘어가다",
   "going beyond limits": "한계를 넘어감",
   "good for the body": "몸에 좋은",
+  "graft into place": "접붙여 자리잡게 하다",
   "grain of a material": "재료의 결",
   "ground and its shape": "땅과 그 생김새",
   "growing strongly": "힘차게 자라는",
   "guarding one's ground": "제 터를 지키는",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
+  "hard to get over": "좀처럼 헤어나기 어려운",
   "harmful substance in the body": "몸속의 해로운 물질",
   "harmful to life": "생명에 해로운",
+  "haul from place to place": "여기서 저기로 끌어 나르다",
   "healing in effect": "낫게 하는 효과가 있는",
   "heat gauge": "더운 정도를 재는 기구",
   "heavy downpour": "쏟아지는 큰비",
@@ -1010,8 +1203,10 @@ Object.assign(window.GLOSS, {
   "lasting a short while": "잠깐만 가는",
   "leaning one way": "한쪽으로 기우는 결",
   "learning about god": "신에 대한 배움",
+  "leaving a deep wound in the mind": "마음에 깊은 상처를 남기는",
   "let pass": "그냥 지나가게 두다",
   "letter of praise": "칭찬을 적은 편지",
+  "letting light pass": "빛을 지나게 하는",
   "level to the ground": "땅바닥까지 밀다",
   "lie of the land": "땅이 놓인 모양",
   "light tone of colour": "연한 색의 결",
@@ -1019,19 +1214,25 @@ Object.assign(window.GLOSS, {
   "made-up cloth goods": "천으로 만든 물품",
   "make docile": "길들여 순하게 하다",
   "make one's view plain": "제 견해를 분명히 하다",
+  "make over into": "~로 고쳐 만들다",
   "mark left behind": "남겨진 자국",
   "mark of one's nature": "타고난 성질의 표시",
+  "means of getting about": "다니는 수단",
   "menacing word": "으르는 말",
   "metal can": "쇠로 만든 통",
   "mild in climate": "기후가 순한",
   "money drawer": "돈을 넣는 서랍",
   "money paid to the state": "나라에 내는 돈",
+  "move from one state to another": "한 상태에서 다른 상태로 옮겨감",
   "move to act": "행동에 나서다",
+  "move to another body": "다른 몸으로 옮기다",
+  "move to another place": "다른 곳으로 움직이다",
   "move to win": "이기려는 수",
   "naming system of a trade": "업계의 이름 붙이는 체계",
   "needing special skill": "특별한 솜씨가 필요한",
   "needle in jest": "장난으로 콕콕 찌르다",
   "not meant to stay": "머물 뜻이 없는",
+  "not to be trusted": "맡길 수 없는",
   "not too late": "늦지 않은",
   "not yet settled": "아직 정해지지 않은",
   "not yet tried out": "아직 해 보지 않은",
@@ -1042,6 +1243,7 @@ Object.assign(window.GLOSS, {
   "of applied science": "응용 학문에 속한",
   "of the highest grade": "등급이 가장 높은",
   "of the stage": "무대에 속한",
+  "official school record": "학교가 낸 공식 기록",
   "official who takes tax": "세금을 받는 관리",
   "one trained in a craft": "한 기예를 배운 사람",
   "one who betrays": "배신하는 사람",
@@ -1052,7 +1254,9 @@ Object.assign(window.GLOSS, {
   "open to change": "바뀔 여지가 있는",
   "pace of movement": "움직임의 빠르기",
   "paper for a degree": "학위를 위한 글",
+  "passage from place to place": "한 곳에서 다른 곳으로 지나감",
   "passing all bounds": "모든 한계를 지나침",
+  "passing over": "건너 넘어감",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
   "piece of business": "한 건의 사업",
@@ -1064,16 +1268,20 @@ Object.assign(window.GLOSS, {
   "poison from a living thing": "생물이 내는 독",
   "poke fun at": "~을 두고 농을 걸다",
   "pound with each beat": "박자마다 쿵쿵거리다",
+  "pour in from outside": "밖에서 부어 넣다",
   "press of people": "밀려드는 사람들",
   "public levy": "공공이 걷는 부과금",
+  "public means of travel": "여럿이 함께 타는 수단",
   "pull down": "끌어내려 무너뜨리다",
   "pull from inside": "안에서 끌어내다",
   "pull to pieces": "조각으로 뜯어내다",
   "pull toward wrong": "잘못된 쪽으로 끄는 힘",
   "pulse in and out": "들고 나며 뛰다",
+  "put blood into": "피를 넣어 주다",
   "put forward for now": "우선 내놓은",
   "put in danger": "위험에 놓다",
   "put oneself in danger": "스스로를 위험에 두다",
+  "put speech into writing": "말을 글로 바꾸어 놓다",
   "put to the rack": "모질게 괴롭히다",
   "put to use": "써서 쓸모를 내다",
   "putting up with difference": "다름을 참아 주는 일",
@@ -1081,12 +1289,15 @@ Object.assign(window.GLOSS, {
   "raise a protest at": "~에 항의를 내다",
   "rate of action": "일이 돌아가는 빠르기",
   "reading on a thermometer": "온도계가 가리키는 값",
+  "ready to betray": "언제든 등을 돌릴",
   "real to the hand": "손으로 느껴지는",
   "really good": "참으로 좋은",
   "reasoned account": "따져서 세운 설명",
   "rebel against one's own": "제 편에 맞서 일어서는 사람",
+  "record of marks": "점수를 적어 둔 기록",
   "refuse to accept": "받아들이기를 거부하다",
   "refusing to let go": "놓기를 마다하는",
+  "relay of a signal": "신호의 중계",
   "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
   "revenue officer": "세입을 맡은 공무원",
@@ -1100,14 +1311,20 @@ Object.assign(window.GLOSS, {
   "said in few words": "몇 마디로 말한",
   "sawn wood": "톱으로 켠 나무",
   "scare badly": "몹시 겁주다",
+  "scarring": "흉을 남기는",
+  "send out over a distance": "먼 곳까지 내보내다",
+  "sending out": "밖으로 내보냄",
   "serving to cure": "낫게 하는 데 쓰이는",
+  "set in a new spot": "새 자리에 앉히다",
   "set of ideas to explain": "설명하려고 세운 생각의 묶음",
   "set of special words": "특별한 말들의 묶음",
   "set period": "정해진 기간",
   "set the heart racing": "가슴을 뛰게 하다",
+  "shift across": "가로질러 넘기다",
   "short and to the point": "짧고 요점만 있는",
   "short broad digit": "짧고 넓은 손가락",
   "shrine building": "신을 모신 건물",
+  "shut in with no way out": "나갈 길 없이 막아 두다",
   "shy of risk": "위험을 꺼리는",
   "sign of harm to come": "해가 올 조짐",
   "skilled worker": "솜씨를 익힌 일꾼",
@@ -1116,9 +1333,11 @@ Object.assign(window.GLOSS, {
   "social ban": "사회가 금하는 것",
   "soft white metal": "부드러운 흰 금속",
   "somewhat so": "다소 그러한",
+  "soon gone": "금세 사라지는",
   "speed of a piece": "곡이 흐르는 빠르기",
   "splendid to see": "보기에 훌륭한",
   "spot for sightseeing": "구경하러 가는 자리",
+  "spread from one to another": "하나에서 다른 하나로 퍼짐",
   "stamp down on": "발로 내리찧다",
   "state of calm": "차분한 상태",
   "state of feeling": "감정의 상태",
@@ -1153,6 +1372,7 @@ Object.assign(window.GLOSS, {
   "toss out": "내던져 버리다",
   "touch of colour": "살짝 든 빛깔",
   "touch to make one laugh": "웃게 하려고 건드리다",
+  "travel over": "넘어서 지나가다",
   "tread heavily on": "무겁게 밟다",
   "turn of mind": "마음이 기우는 결",
   "turncoat": "변절자",
@@ -1161,6 +1381,7 @@ Object.assign(window.GLOSS, {
   "very much indeed": "참으로 많이",
   "vomit": "구토하다",
   "warning of danger": "위험을 알리는 말",
+  "waste thrown away": "내버린 찌꺼기",
   "wed at last": "드디어 짝을 이루다",
   "weigh in the decision": "결정에 견주어 넣다",
   "weigh on the mind of": "~의 마음을 무겁게 하다",
@@ -1175,5 +1396,7 @@ Object.assign(window.GLOSS, {
   "words given in court": "법정에서 한 말",
   "words of a field": "한 분야의 말들",
   "woven cloth": "짜서 만든 천",
+  "write out word for word": "한 마디씩 그대로 써 내려가다",
+  "written copy of speech": "말을 글로 옮긴 사본",
   "written reference": "글로 써 준 신원 보증"
 });

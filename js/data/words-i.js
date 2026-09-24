@@ -2147,7 +2147,6 @@ Object.assign(window.GLOSS, {
   "touchy": "신경이 곤두선",
   "trade places": "자리를 맞바꾸다",
   "travel plan": "여행 일정표",
-  "treacherous": "믿을 수 없는",
   "trespass": "무단으로 들어가다",
   "truly": "참으로",
   "unappeasable": "가라앉히기 어려운",

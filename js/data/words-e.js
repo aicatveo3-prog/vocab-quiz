@@ -2234,7 +2234,6 @@ Object.assign(window.GLOSS, {
   "surroundings":"주위 환경",
   "tangle up":"뒤엉키게 하다",
   "tempting":"구미가 당기는",
-  "trap":"가두다, 덫에 빠뜨리다",
   "undivided":"나뉘지 않은, 온전한",
   "vast":"광대한, 막대한",
   "zeal":"열의, 열성",

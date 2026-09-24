@@ -1561,7 +1561,6 @@ Object.assign(window.GLOSS, {
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",
   "trader": "거래하는 사람",
-  "transient": "오래 가지 않는",
   "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",

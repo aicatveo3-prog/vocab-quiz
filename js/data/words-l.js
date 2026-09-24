@@ -859,7 +859,6 @@ Object.assign(window.GLOSS, {
   "tip": "쓰레기장",
   "toil": "고생스러운 노동",
   "towering": "우뚝 솟은",
-  "trash": "폐기물",
   "truck": "트럭",
   "true to size": "크기가 실제와 맞는",
   "tutorial": "개별 지도 수업",
