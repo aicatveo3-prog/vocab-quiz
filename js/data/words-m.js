@@ -1587,8 +1587,6 @@ Object.assign(window.GLOSS, {
   "vitamin or mineral": "비타민이나 무기물",
   "vocal": "목소리를 내는",
   "wail": "울부짖다",
-  "warlike": "전쟁을 벌이려는",
-  "watchdog": "감시 역할을 하는 것",
   "watchword": "표어처럼 쓰는 말",
   "way": "방식",
   "weather science": "날씨 과학",

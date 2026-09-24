@@ -1552,7 +1552,6 @@ Object.assign(window.GLOSS, {
   "transport cost":"교통비",
   "valve":"밸브",
   "vigor":"활력, 기운",
-  "waver":"흔들리다, 주저하다",
   "weariness":"지침, 피곤",
   "working knowledge":"실용적 지식",
   "zealot":"열성분자",

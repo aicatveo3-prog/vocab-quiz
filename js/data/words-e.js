@@ -2345,7 +2345,6 @@ Object.assign(window.GLOSS, {
   "showcase":"전시 행사",
   "shutting out":"몰아냄",
   "trip":"여행, 이동",
-  "wear out":"지치게 하다",
   "wield":"휘두르다, 행사하다",
   "worked up":"들뜬",
   "worn out":"녹초가 된",

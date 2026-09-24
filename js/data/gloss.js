@@ -1938,7 +1938,6 @@ Object.assign(window.GLOSS, {
   "wager":"내기; 걸다",
   "walkway":"보행로, 통로",
   "warmth":"따뜻함; 다정함",
-  "wary":"조심하는, 경계하는",
   "waste no time in":"즉시 ~하다",
   "watch out":"조심하다",
   "watchful":"경계하는, 방심하지 않는",

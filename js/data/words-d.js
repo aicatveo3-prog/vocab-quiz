@@ -1629,7 +1629,6 @@ Object.assign(window.GLOSS, {
   "thoroughness":"철저함, 빈틈없음",
   "unhinged":"정신이 이상해진",
   "use up":"다 써 버리다",
-  "warehouse":"창고, 저장고",
   "withdraw":"철수하다, 회수하다",
 
   /* ── 4차 (desalinate ~ deviate) 몫 60개 ─────────── */

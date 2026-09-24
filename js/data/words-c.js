@@ -2096,10 +2096,8 @@ Object.assign(window.GLOSS, {
   "vagueness":"모호함",
   "victim":"피해자, 희생자",
   "violate":"위반하다",
-  "wander":"헤매다, 산만해지다",
   "warm":"따뜻한",
   "waste":"낭비, 폐기물",
   "weak":"약한",
-  "weaken":"약화시키다",
   "whole":"전체"
 });
