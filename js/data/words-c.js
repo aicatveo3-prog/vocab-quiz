@@ -2051,7 +2051,6 @@ Object.assign(window.GLOSS, {
   "scattering":"흩어짐, 산재",
   "simple":"단순한",
   "single-sex":"남녀를 구분한",
-  "skinny":"깡마른",
   "soggy":"축축한, 질척한",
   "soldier":"군인",
   "spiritual":"정신적인, 영적인",

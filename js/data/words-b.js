@@ -1015,7 +1015,6 @@ Object.assign(window.GLOSS, {
   "secondhand":"중고의",
   "setback":"차질, 방해",
   "silence":"침묵, 정적",
-  "slightly":"약간, 조금",
   "slim down":"살을 빼다, 규모를 줄이다",
   "sluggish":"느릿한, 부진한",
   "smolder":"연기만 내며 타다",

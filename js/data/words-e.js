@@ -2067,7 +2067,6 @@ Object.assign(window.GLOSS, {
   "potency":"효력, 위력",
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
-  "sincere":"진심의, 진실한",
   "streamlined":"간소화된, 군더더기 없는",
   "thrifty":"알뜰한, 돈을 아끼는",
   "tolerant":"너그러운, 관대한",

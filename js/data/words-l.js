@@ -831,7 +831,6 @@ Object.assign(window.GLOSS, {
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "silvered glass": "은을 입힌 유리",
-  "skip": "건너뛰다",
   "skulk": "몰래 숨어 다니다",
   "slacken": "늘어지게 하다",
   "slant": "비스듬해지다",
