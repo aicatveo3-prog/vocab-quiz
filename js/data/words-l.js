@@ -83,7 +83,7 @@ window.VOCAB_L = [
 
   /* landfill·landlord·landmine 은 앞 네 글자가 같지만 뜻이 서로 완전히 달라
      같은 보드에 와도 짝을 고르는 데 무리가 없다. */
-  { word:"landfill", pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
+  { word:"landfill", exams:["공무원"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
     syn:["dump","waste site","tip"],
     ex:[{ s:"Most of the plastic ends up in a {{}}.", f:"landfill", ko:"플라스틱 대부분은 쓰레기 매립지로 간다." }] },
 
@@ -129,7 +129,7 @@ window.VOCAB_L = [
      I 세트 표제어의 뜻이 '시작하다, 착수하다' 로 글자까지 같다. 사전 값을 그대로
      쓰면 두 표제어의 뜻이 완전히 같아져 4지선다에서 서로 오답 후보가 되지 못한다.
      참조가 쓰는 '착수하다' 를 첫 자리에 지키고, 원본의 '발사하다' 를 붙여 갈랐다. */
-  { word:"launch", pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
+  { word:"launch", exams:["공무원"], pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
     syn:["initiate","set in motion","kick off"],
     ex:[{ s:"The agency will {{}} the satellite next month.", f:"launch", ko:"그 기관은 다음 달에 위성을 발사할 것이다." }] },
 
@@ -153,7 +153,7 @@ window.VOCAB_L = [
   /* 첫 뜻이 D 세트 dismiss 와 같지만, 뜻이 같은 표제어는 meaningsOverlap 이
      같은 보기에 함께 뜨지 못하게 막으므로 그대로 두었다.
      바로 뒤 lay-off(명사)와 품사가 달라(phr/n) 같은 보드에 안 온다. */
-  { word:"lay off", pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
+  { word:"lay off", exams:["공무원"], pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
     syn:["dismiss","let go","make redundant"] },
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
@@ -258,7 +258,7 @@ window.VOCAB_L = [
     syn:["lawful","permissible","above board"], ant:["illegal"],
     ex:[{ s:"Gambling is {{}} in only a handful of states.", f:"legal", ko:"도박은 소수의 주에서만 합법적이다." }] },
 
-  { word:"legend", pron:"레전드", pos:"n", level:"B1", meanings:["전설","설화"],
+  { word:"legend", exams:["공무원"], pron:"레전드", pos:"n", level:"B1", meanings:["전설","설화"],
     syn:["myth","folk tale","saga"],
     ex:[{ s:"Every village has its own {{}} about the lake.", f:"legend", ko:"모든 마을은 그 호수에 대한 자기만의 전설을 갖고 있다." }] },
 
@@ -664,7 +664,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '유혹하다; 미끼' 를 글자까지 지켰다. attract(syn) 가 참조하므로
      원본의 '꾀다, 유도하다' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
-  { word:"lure", pron:"루어", pos:"v", level:"B2", meanings:["유혹하다","미끼"],
+  { word:"lure", exams:["공무원"], pron:"루어", pos:"v", level:"B2", meanings:["유혹하다","미끼"],
     syn:["attract","entice","tempt"],
     ex:[{ s:"Bright colours {{}} insects to the flower.", f:"lure", ko:"밝은 색이 곤충을 그 꽃으로 유혹한다." }] },
 
@@ -691,7 +691,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS 는 '호화로운' 인데 챕터 1의 lavish 가 그 뜻을 첫 자리로 쓴다.
      참조가 없어 자유롭게 정할 수 있었으므로 원본의 '사치스러운' 을 앞에 두어 갈랐다. */
-  { word:"luxurious", pron:"럭주리어스", pos:"adj", level:"B2", meanings:["사치스러운","호화로운"],
+  { word:"luxurious", exams:["공무원"], pron:"럭주리어스", pos:"adj", level:"B2", meanings:["사치스러운","호화로운"],
     syn:["opulent","plush","deluxe"], ant:["plain"],
     ex:[{ s:"They stayed in a {{}} seaside hotel.", f:"luxurious", ko:"그들은 사치스러운 해변 호텔에 머물렀다." }] },
 

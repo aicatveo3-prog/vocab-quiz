@@ -78,7 +78,7 @@ window.VOCAB_C = [
     syn:["revoke","annul","call off"], ant:["confirm"],
     ex:[{ s:"Heavy snow forced the airline to {{}} the flight.", f:"cancel", ko:"폭설로 항공사는 그 항공편을 취소해야 했다." }] },
 
-  { word:"candid", pron:"캔디드", pos:"adj", level:"C1", meanings:["솔직한","숨김없는"],
+  { word:"candid", exams:["공무원"], pron:"캔디드", pos:"adj", level:"C1", meanings:["솔직한","숨김없는"],
     syn:["frank","honest","forthright"], ant:["evasive"],
     ex:[{ s:"She gave a {{}} account of her own mistakes.", f:"candid", ko:"그녀는 자신의 실수를 솔직하게 이야기했다." }] },
 
@@ -100,7 +100,7 @@ window.VOCAB_C = [
     ex:[{ s:"She is {{}} of solving much harder problems.", f:"capable", ko:"그녀는 훨씬 더 어려운 문제도 풀 수 있다." }],
     gov:{ prep:["of"], pat:"capable {{}} solving it alone", usage:"be capable of + -ing : ~할 수 있다" } },
 
-  { word:"capacity", pron:"커패시티", pos:"n", level:"B2", meanings:["수용력","용량"],
+  { word:"capacity", exams:["공무원"], pron:"커패시티", pos:"n", level:"B2", meanings:["수용력","용량"],
     syn:["volume","room","size"], ant:["shortage"],
     ex:[{ s:"The hall was filled to {{}} an hour before the show.", f:"capacity", ko:"공연 한 시간 전에 그 홀은 정원까지 가득 찼다." }],
     gov:{ prep:["for","to","of"], pat:"a great capacity {{}} change", usage:"capacity for ~ : ~에 대한 수용력·능력" } },
@@ -171,7 +171,7 @@ window.VOCAB_C = [
     syn:["sculpt","engrave","chisel"],
     ex:[{ s:"The artist began to {{}} a face out of the oak.", f:"carve", ko:"그 예술가는 참나무에서 얼굴을 조각하기 시작했다." }] },
 
-  { word:"carving", pron:"카빙", pos:"n", level:"B2", meanings:["조각품","조각술"],
+  { word:"carving", exams:["공무원"], pron:"카빙", pos:"n", level:"B2", meanings:["조각품","조각술"],
     syn:["sculpture","engraving","statue"],
     ex:[{ s:"A wooden {{}} of a bear stood by the door.", f:"carving", ko:"곰을 새긴 나무 조각품이 문가에 서 있었다." }] },
 
@@ -257,7 +257,7 @@ window.VOCAB_C = [
     ex:[{ s:"The dentist found one small {{}} in her back tooth.", f:"cavity", ko:"치과의사는 그녀의 어금니에서 작은 충치 하나를 발견했다." }] },
 
   /* ── cea · cei · cel ───────────────────────── */
-  { word:"cease", pron:"시스", pos:"v", level:"B2", meanings:["중단하다","그치다"],
+  { word:"cease", exams:["공무원"], pron:"시스", pos:"v", level:"B2", meanings:["중단하다","그치다"],
     syn:["stop","halt","discontinue"], ant:["begin"],
     ex:[{ s:"The rain did not {{}} until midnight.", f:"cease", ko:"비는 자정이 되도록 그치지 않았다." }] },
 
@@ -269,7 +269,7 @@ window.VOCAB_C = [
     syn:["roof","top","limit"], ant:["floor"],
     ex:[{ s:"Water stains spread across the {{}}.", f:"ceiling", ko:"물 얼룩이 천장 전체로 퍼졌다." }] },
 
-  { word:"celebrated", pron:"셀러브레이티드", pos:"adj", level:"B2", meanings:["유명한","저명한"],
+  { word:"celebrated", exams:["공무원"], pron:"셀러브레이티드", pos:"adj", level:"B2", meanings:["유명한","저명한"],
     syn:["famous","renowned","acclaimed"], ant:["obscure"],
     ex:[{ s:"The town is {{}} for its cherry trees.", f:"celebrated", ko:"그 마을은 벚나무로 유명하다." }] },
 
@@ -472,7 +472,7 @@ window.VOCAB_C = [
     syn:["gene","genome","DNA"],
     ex:[{ s:"A single extra {{}} causes the condition.", f:"chromosome", ko:"단 하나의 여분 염색체가 그 질환을 일으킨다." }] },
 
-  { word:"chronic", pron:"크라닉", pos:"adj", level:"B2", meanings:["만성의","고질적인"],
+  { word:"chronic", exams:["공무원"], pron:"크라닉", pos:"adj", level:"B2", meanings:["만성의","고질적인"],
     syn:["persistent","lingering","habitual"], ant:["acute"],
     ex:[{ s:"She has lived with {{}} back pain for years.", f:"chronic", ko:"그녀는 수년간 만성 허리 통증을 안고 살아왔다." }] },
 
@@ -484,7 +484,7 @@ window.VOCAB_C = [
     syn:["record","account","annals"],
     ex:[{ s:"A monk's {{}} is the only source for that year.", f:"chronicle", ko:"어느 수도사의 연대기가 그 해의 유일한 기록이다." }] },
 
-  { word:"chronological", pron:"크라널라지컬", pos:"adj", level:"C1", meanings:["연대순의","시간 순서대로 된"],
+  { word:"chronological", exams:["공무원"], pron:"크라널라지컬", pos:"adj", level:"C1", meanings:["연대순의","시간 순서대로 된"],
     syn:["sequential","consecutive","ordered"], ant:["random"],
     ex:[{ s:"Arrange the photographs in {{}} order.", f:"chronological", ko:"사진을 시간 순서대로 배열하라." }] },
 
@@ -511,7 +511,7 @@ window.VOCAB_C = [
     syn:["flow","spread","distribute"], ant:["stagnate"],
     ex:[{ s:"Warm air needs room to {{}} through the house.", f:"circulate", ko:"따뜻한 공기가 집 안을 돌 공간이 필요하다." }] },
 
-  { word:"circulation", pron:"서큘레이션", pos:"n", level:"B2", meanings:["발행 부수","유통"],
+  { word:"circulation", exams:["공무원"], pron:"서큘레이션", pos:"n", level:"B2", meanings:["발행 부수","유통"],
     syn:["distribution","spread","flow"],
     ex:[{ s:"The magazine's {{}} fell by half in two years.", f:"circulation", ko:"그 잡지의 발행 부수는 2년 만에 절반으로 떨어졌다." }] },
 
@@ -593,7 +593,7 @@ window.VOCAB_C = [
   { word:"clear one's throat", pron:"클리어 원스 스로트", pos:"phr", level:"B2", meanings:["목청을 가다듬다","헛기침을 하다"],
     syn:["cough","hem","rasp"] },
 
-  { word:"clergy", pron:"클러지", pos:"n", level:"C1", meanings:["성직자","목사"],
+  { word:"clergy", exams:["공무원"], pron:"클러지", pos:"n", level:"C1", meanings:["성직자","목사"],
     syn:["priesthood","ministry","cleric"], ant:["laity"],
     ex:[{ s:"Local {{}} joined the march for housing.", f:"clergy", ko:"지역 성직자들이 주거 문제 행진에 참여했다." }] },
 
@@ -705,7 +705,7 @@ window.VOCAB_C = [
   { word:"collect on", pron:"컬렉트 온", pos:"phr", level:"C2", meanings:["~을 상환받다","수령하다"],
     syn:["recover","claim","redeem"] },
 
-  { word:"collective", pron:"컬렉티브", pos:"adj", level:"B2", meanings:["집단의","공동의"],
+  { word:"collective", exams:["공무원"], pron:"컬렉티브", pos:"adj", level:"B2", meanings:["집단의","공동의"],
     syn:["joint","shared","communal"], ant:["individual"],
     ex:[{ s:"The vote was a {{}} decision, not the chair's.", f:"collective", ko:"그 표결은 의장이 아니라 집단의 결정이었다." }] },
 
@@ -947,7 +947,7 @@ window.VOCAB_C = [
   { word:"compete for", pron:"컴피트 포", pos:"phr", level:"B2", meanings:["~을 두고 경쟁하다"],
     syn:["contest","pursue","seek"] },
 
-  { word:"competence", pron:"캄피턴스", pos:"n", level:"C1", meanings:["능숙함","능력"],
+  { word:"competence", exams:["공무원"], pron:"캄피턴스", pos:"n", level:"C1", meanings:["능숙함","능력"],
     syn:["proficiency","skill","mastery"], ant:["incompetence"],
     ex:[{ s:"The job demands technical {{}}, not charm.", f:"competence", ko:"그 일은 매력이 아니라 기술적 능숙함을 요구한다." }] },
 
@@ -1001,7 +1001,7 @@ window.VOCAB_C = [
     syn:["difficulty","snag","setback"],
     ex:[{ s:"A rare {{}} kept him in hospital for weeks.", f:"complication", ko:"드문 합병증 때문에 그는 몇 주간 병원에 있었다." }] },
 
-  { word:"compliment", pron:"캄플러먼트", pos:"n", level:"B1", meanings:["칭찬","찬사"],
+  { word:"compliment", exams:["공무원"], pron:"캄플러먼트", pos:"n", level:"B1", meanings:["칭찬","찬사"],
     syn:["praise","tribute","flattery"], ant:["insult"],
     ex:[{ s:"She blushed at the unexpected {{}}.", f:"compliment", ko:"그녀는 뜻밖의 칭찬에 얼굴을 붉혔다." }] },
 
@@ -1078,7 +1078,7 @@ window.VOCAB_C = [
     syn:["hollow","sunken","curved"], ant:["convex"],
     ex:[{ s:"The mirror's {{}} surface gathers the light.", f:"concave", ko:"그 거울의 오목한 면이 빛을 모은다." }] },
 
-  { word:"conceal", pron:"컨실", pos:"v", level:"B2", meanings:["숨기다","비밀로 하다"],
+  { word:"conceal", exams:["공무원"], pron:"컨실", pos:"v", level:"B2", meanings:["숨기다","비밀로 하다"],
     syn:["hide","mask","cover"], ant:["reveal"],
     ex:[{ s:"He could not {{}} his disappointment.", f:"conceal", ko:"그는 실망을 숨길 수 없었다." }] },
 
@@ -1090,7 +1090,7 @@ window.VOCAB_C = [
     syn:["arrogant","vain","boastful"], ant:["modest"],
     ex:[{ s:"Success made him insufferably {{}}.", f:"conceited", ko:"성공은 그를 참기 힘들 만큼 오만하게 만들었다." }] },
 
-  { word:"conceive", pron:"컨시브", pos:"v", level:"C1", meanings:["마음속에 품다","구상하다"],
+  { word:"conceive", exams:["공무원"], pron:"컨시브", pos:"v", level:"C1", meanings:["마음속에 품다","구상하다"],
     syn:["imagine","devise","envision"],
     ex:[{ s:"She first {{}} the idea on a night train.", f:"conceived", ko:"그녀는 야간 열차에서 처음 그 착상을 떠올렸다." }] },
 
@@ -1187,7 +1187,7 @@ window.VOCAB_C = [
     syn:["restrict","limit","imprison"], ant:["release"],
     ex:[{ s:"Please {{}} your answer to one page.", f:"confine", ko:"답변을 한 페이지로 국한해 주십시오." }] },
 
-  { word:"confirm", pron:"컨펌", pos:"v", level:"B1", meanings:["확인하다","확실히 하다"],
+  { word:"confirm", exams:["공무원"], pron:"컨펌", pos:"v", level:"B1", meanings:["확인하다","확실히 하다"],
     syn:["verify","validate","certify"], ant:["refute"],
     ex:[{ s:"Two witnesses {{}} his version of events.", f:"confirmed", ko:"두 증인이 그의 진술을 확인해 주었다." }] },
 
@@ -1338,11 +1338,11 @@ window.VOCAB_C = [
     ex:[{ s:"The firm moved to {{}} its two city offices.", f:"consolidate", ko:"그 회사는 도심의 두 사무소를 통합하기로 했다." }] },
 
   /* ── conspi · const ───────────────────────── */
-  { word:"conspicuous", pron:"컨스피큐어스", pos:"adj", level:"C1", meanings:["눈에 잘 띄는","두드러진"],
+  { word:"conspicuous", exams:["공무원"], pron:"컨스피큐어스", pos:"adj", level:"C1", meanings:["눈에 잘 띄는","두드러진"],
     syn:["noticeable","obvious","prominent"], ant:["inconspicuous"],
     ex:[{ s:"A red coat made her {{}} in the grey crowd.", f:"conspicuous", ko:"빨간 외투가 회색 군중 속에서 그녀를 눈에 띄게 했다." }] },
 
-  { word:"conspiracy", pron:"컨스피러시", pos:"n", level:"C1", meanings:["음모","공모"],
+  { word:"conspiracy", exams:["공무원"], pron:"컨스피러시", pos:"n", level:"C1", meanings:["음모","공모"],
     syn:["plot","scheme","collusion"],
     ex:[{ s:"Police uncovered a {{}} to fix ticket prices.", f:"conspiracy", ko:"경찰은 표 값을 조작하려는 음모를 밝혀냈다." }] },
 
@@ -1385,7 +1385,7 @@ window.VOCAB_C = [
     ex:[{ s:"The {{}} of the tunnel took eight years.", f:"construction", ko:"그 터널의 건설에는 8년이 걸렸다." }] },
 
   /* ── consult · consum ─────────────────────── */
-  { word:"consult", pron:"컨설트", pos:"v", level:"B1", meanings:["참고하다","상담하다"],
+  { word:"consult", exams:["공무원"], pron:"컨설트", pos:"v", level:"B1", meanings:["참고하다","상담하다"],
     syn:["refer","ask","confer"],
     ex:[{ s:"You should {{}} a lawyer before signing.", f:"consult", ko:"서명하기 전에 변호사와 상담해야 한다." }] },
 
@@ -1551,7 +1551,7 @@ window.VOCAB_C = [
     syn:["teamwork","collaboration","support"], ant:["rivalry"],
     ex:[{ s:"The work needs close {{}} between departments.", f:"cooperation", ko:"그 일은 부서 간의 긴밀한 협력을 필요로 한다." }] },
 
-  { word:"coordinate", pron:"코오디네이트", pos:"v", level:"B2", meanings:["조정하다","조화를 이루게 하다"],
+  { word:"coordinate", exams:["공무원"], pron:"코오디네이트", pos:"v", level:"B2", meanings:["조정하다","조화를 이루게 하다"],
     syn:["organize","harmonize","align"],
     ex:[{ s:"Someone must {{}} the three rescue teams.", f:"coordinate", ko:"누군가 세 구조대를 조정해야 한다." }] },
 
@@ -1698,7 +1698,7 @@ window.VOCAB_C = [
     ex:[{ s:"He tried {{}} times before it worked.", f:"countless", ko:"그는 성공하기까지 수없이 시도했다." }] },
 
   /* ── cour · cov ───────────────────────────── */
-  { word:"courageous", pron:"커레이저스", pos:"adj", level:"B2", meanings:["용감한","담대한"],
+  { word:"courageous", exams:["공무원"], pron:"커레이저스", pos:"adj", level:"B2", meanings:["용감한","담대한"],
     syn:["brave","bold","valiant"], ant:["cowardly"],
     ex:[{ s:"It was a {{}} decision to speak up.", f:"courageous", ko:"목소리를 낸 것은 용감한 결정이었다." }] },
 
@@ -1910,7 +1910,7 @@ window.VOCAB_C = [
   /* prompt 를 reminder to act 로 바꿨다. prompt 가 P 세트 챕터 15 표제어
      (즉각적인 · adj)로 올라가면 '신호' 의 유의어 자리에 형용사 뜻이 뜬다.
      사전의 prompt 값도 '즉각적인; 촉구하다' 로 품사가 섞여 있었다. */
-  { word:"cue", pron:"큐", pos:"n", level:"B2", meanings:["신호","단서"],
+  { word:"cue", exams:["공무원"], pron:"큐", pos:"n", level:"B2", meanings:["신호","단서"],
     syn:["signal","hint","reminder to act"],
     ex:[{ s:"A short nod was the {{}} to begin.", f:"cue", ko:"짧은 고갯짓이 시작하라는 신호였다." }] },
 

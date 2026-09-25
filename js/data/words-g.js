@@ -304,7 +304,7 @@ window.VOCAB_G = [
   { word:"giving behavior", pron:"기빙 비헤이비어", pos:"phr", level:"C1", meanings:["기부 행위"],
     syn:["charitable giving","philanthropy","almsgiving"] },
 
-  { word:"glacier", pron:"글레이셔", pos:"n", level:"B2", meanings:["빙하"],
+  { word:"glacier", exams:["공무원"], pron:"글레이셔", pos:"n", level:"B2", meanings:["빙하"],
     syn:["ice sheet","ice field","icecap"],
     ex:[{ s:"The {{}} has retreated nearly a kilometre in ten years.", f:"glacier", ko:"그 빙하는 10년 만에 거의 1킬로미터 물러났다." }] },
 
@@ -318,7 +318,7 @@ window.VOCAB_G = [
     syn:["peek","run one's eye over","scan"],
     ex:[{ s:"She stopped to {{}} at the headlines on her way out.", f:"glance", ko:"그녀는 나가는 길에 멈춰 서서 표제를 흘끗 보았다." }] },
 
-  { word:"gland", pron:"글랜드", pos:"n", level:"C1", meanings:["분비기관"],
+  { word:"gland", exams:["공무원"], pron:"글랜드", pos:"n", level:"C1", meanings:["분비기관"],
     ex:[{ s:"The {{}} releases hormones directly into the bloodstream.", f:"gland", ko:"그 분비기관은 호르몬을 혈류로 직접 방출한다." }] },
 
   /* 승격 ① — GLOSS '힐끗 봄' 을 첫 자리에 지켰다. glance 와 달리 명사로 뒀다. */
@@ -533,7 +533,7 @@ window.VOCAB_G = [
     ex:[{ s:"City streets follow a strict {{}} in this district.", f:"grid", ko:"이 지구의 도로는 엄격한 격자무늬를 따른다." }] },
 
   /* 승격 ① — GLOSS 는 '비탄, 슬픔' 인데 참조하는 기존 문제가 없어 원본 순서를 썼다. */
-  { word:"grief", pron:"그리프", pos:"n", level:"B2", meanings:["슬픔","비탄"],
+  { word:"grief", exams:["공무원"], pron:"그리프", pos:"n", level:"B2", meanings:["슬픔","비탄"],
     syn:["sorrow","anguish","heartache"], ant:["joy"],
     ex:[{ s:"Time did little to ease her {{}}.", f:"grief", ko:"시간은 그녀의 슬픔을 거의 덜어 주지 못했다." }] },
 

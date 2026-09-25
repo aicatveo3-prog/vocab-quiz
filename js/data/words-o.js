@@ -512,7 +512,7 @@ window.VOCAB_O = [
 
   /* 승격 44 — 사전 표현 '반대, 저항' 을 글자까지 지켰다(dissent, D).
      원본의 '반대, 상대; 경쟁자' 중 '상대' 는 같은 챕터 opponent 쪽 뜻이다. */
-  { word:"opposition", pron:"아퍼지션", pos:"n", level:"B2", meanings:["반대","저항"],
+  { word:"opposition", exams:["공무원"], pron:"아퍼지션", pos:"n", level:"B2", meanings:["반대","저항"],
     syn:["dissent","resistance","pushback"], ant:["support"],
     ex:[{ s:"The bill met strong {{}} in the assembly.", f:"opposition", ko:"그 법안은 의회에서 강한 반대를 만났다." }] },
 
@@ -570,7 +570,7 @@ window.VOCAB_O = [
 
   /* 원본은 '궤도; 궤도를 돌다' 로 명사와 동사가 섞여 있었다. 참조가 없어
      자유롭게 고를 수 있었고 명사 한 갈래로 정리했다. */
-  { word:"orbit", pron:"오빗", pos:"n", level:"B2", meanings:["궤도"],
+  { word:"orbit", exams:["공무원"], pron:"오빗", pos:"n", level:"B2", meanings:["궤도"],
     syn:["circling path","course around a body","revolution track"],
     ex:[{ s:"The satellite entered a low {{}}.", f:"orbit", ko:"그 위성은 낮은 궤도에 들어섰다." }] },
 
@@ -752,7 +752,7 @@ window.VOCAB_O = [
 
   /* 승격 62 — 사전 표현 '외향적인, 사교적인' 을 글자까지 지켰다
      (gregarious, G · introverted 의 반의어, I). 원본의 '떠나는' 갈래는 버렸다. */
-  { word:"outgoing", pron:"아웃고잉", pos:"adj", level:"B2", meanings:["외향적인","사교적인"],
+  { word:"outgoing", exams:["공무원"], pron:"아웃고잉", pos:"adj", level:"B2", meanings:["외향적인","사교적인"],
     /* sociable 은 사전 뜻이 gregarious(표제어) 와 똑같이 '사교적인' 이라 검사가
        잡았다 — 'fond of company' 로 바꿨다. */
     syn:["gregarious","fond of company","easy with people"], ant:["introverted"],

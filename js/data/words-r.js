@@ -78,7 +78,7 @@ window.VOCAB_R = [
     ex:[{ s:"The plan {{}} changed the city.", f:"radically", ko:"그 계획은 도시를 근본적으로 바꿨다." }] },
 
   /* ★ 원본은 '방사능의, 방사성의' 로 같은 말을 두 번 적은 셈이었다 — 한 갈래로. */
-  { word:"radioactive", pron:"레이디오액티브", pos:"adj", level:"B2", meanings:["방사능의"],
+  { word:"radioactive", exams:["공무원"], pron:"레이디오액티브", pos:"adj", level:"B2", meanings:["방사능의"],
     syn:["giving off radiation","of atomic decay","emitting rays"],
     ex:[{ s:"The site stores {{}} waste.", f:"radioactive", ko:"그 부지는 방사능의 폐기물을 보관한다." }] },
 
@@ -204,7 +204,7 @@ window.VOCAB_R = [
 
   /* 승격 ⑭ — 사전은 '현실적인' 한 갈래였고 참조가 없어 '사실적인' 을 붙였다.
      '현실적인' 은 pragmatic(P) 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"realistic", pron:"리얼리스틱", pos:"adj", level:"B1", meanings:["현실적인","사실적인"],
+  { word:"realistic", exams:["공무원"], pron:"리얼리스틱", pos:"adj", level:"B1", meanings:["현실적인","사실적인"],
     syn:["true to life","keeping to what is possible","showing things as they are"],
     ex:[{ s:"We need a {{}} plan.", f:"realistic", ko:"우리에게는 현실적인 계획이 필요하다." }] },
 
@@ -214,7 +214,7 @@ window.VOCAB_R = [
 
   /* 승격 ⑮ — 사전의 쌍반점만 쉼표로 갈랐다(domain, D 한 곳). 원본의 괄호
      "(활동, 지식 등의)" 는 걷었다. */
-  { word:"realm", pron:"렐름", pos:"n", level:"C1", meanings:["영역","왕국"],
+  { word:"realm", exams:["공무원"], pron:"렐름", pos:"n", level:"C1", meanings:["영역","왕국"],
     syn:["domain","field of activity","kingdom"],
     ex:[{ s:"That lies outside my {{}}.", f:"realm", ko:"그것은 내 영역 밖의 일이다." }] },
 
@@ -1076,7 +1076,7 @@ window.VOCAB_R = [
     ex:[{ s:"They chose to {{}} the order.", f:"resist", ko:"그들은 그 명령에 저항하기로 했다." }] },
 
   /* 승격 100 — 사전 글자 유지(friction, F · opposition, O). */
-  { word:"resistance", pron:"리지스턴스", pos:"n", level:"B2", meanings:["저항"],
+  { word:"resistance", exams:["공무원"], pron:"리지스턴스", pos:"n", level:"B2", meanings:["저항"],
     syn:["opposition","standing against","force that holds back"],
     ex:[{ s:"The plan met strong {{}}.", f:"resistance", ko:"그 계획은 강한 저항에 맞닥뜨렸다." }] },
 
@@ -1237,7 +1237,7 @@ window.VOCAB_R = [
     ex:[{ s:"The goods are sold at {{}}.", f:"retail", ko:"그 물건은 소매로 팔린다." }] },
 
   /* 승격 116 — 사전 단일값 유지(eliminate 반의어, E). */
-  { word:"retain", pron:"리테인", pos:"v", level:"B2", meanings:["그대로 유지하다"],
+  { word:"retain", exams:["공무원"], pron:"리테인", pos:"v", level:"B2", meanings:["그대로 유지하다"],
     syn:["keep as it is","keep in one's hands","not let go of"], ant:["eliminate"],
     ex:[{ s:"The soil can {{}} water.", f:"retain", ko:"그 흙은 물을 그대로 유지할 수 있다." }] },
 
@@ -1269,7 +1269,7 @@ window.VOCAB_R = [
 
   /* 승격 118 — 사전은 '후퇴, 후퇴하다' 로 명사와 동사가 섞여 있었다. 원본과 참조
      네 곳(advance·approach·barge·counterattack 반의어) 이 동사 쪽이라 동사로 세웠다. */
-  { word:"retreat", pron:"리트리트", pos:"v", level:"B2", meanings:["후퇴하다","멀어져 가다"],
+  { word:"retreat", exams:["공무원"], pron:"리트리트", pos:"v", level:"B2", meanings:["후퇴하다","멀어져 가다"],
     syn:["fall back","draw back from battle","move away"], ant:["advance"],
     ex:[{ s:"The troops began to {{}}.", f:"retreat", ko:"군대가 후퇴하기 시작했다." }] },
 
@@ -1307,7 +1307,7 @@ window.VOCAB_R = [
     ex:[{ s:"She wanted {{}}.", f:"revenge", ko:"그녀는 복수를 원했다." }] },
 
   /* 승격 122 — 사전 글자 유지. 원본의 '소득' 은 income 자리라 사전값을 지켰다. */
-  { word:"revenue", pron:"레버뉴", pos:"n", level:"B2", meanings:["수입","세입"],
+  { word:"revenue", exams:["공무원"], pron:"레버뉴", pos:"n", level:"B2", meanings:["수입","세입"],
     syn:["money coming in","income of a state","takings"],
     ex:[{ s:"Tax {{}} fell last year.", f:"revenue", ko:"세입이 지난해 줄었다." }] },
 
@@ -1441,7 +1441,7 @@ window.VOCAB_R = [
 
   /* 승격 136 — 사전 글자 유지(ceremony, C). '의식' 은 consciousness(의식) 과 글자가
      같다 — 한자가 다른 동음이의어다(儀式/意識). 글자가 같으니 서로 오답에서 빠진다. */
-  { word:"ritual", pron:"리추얼", pos:"n", level:"B2", meanings:["의식","의례"],
+  { word:"ritual", exams:["공무원"], pron:"리추얼", pos:"n", level:"B2", meanings:["의식","의례"],
     syn:["ceremony","set form of worship","custom done the same way"],
     ex:[{ s:"The {{}} is repeated each spring.", f:"ritual", ko:"그 의식은 봄마다 되풀이된다." }] },
 
@@ -1536,7 +1536,7 @@ window.VOCAB_R = [
 
   /* 원본 '폐허, 유적, 파멸' 에서 '유적' 은 relic(유물, 유적 · 챕터 6), '파멸' 은
      doom(파멸, 비운 · D) 자리라 '폐허' 만 남겼다. */
-  { word:"ruins", pron:"루인즈", pos:"n", level:"B2", meanings:["폐허"],
+  { word:"ruins", exams:["공무원"], pron:"루인즈", pos:"n", level:"B2", meanings:["폐허"],
     syn:["broken remains of buildings","walls left standing","wreck of a town"],
     ex:[{ s:"They dug among the {{}}.", f:"ruins", ko:"그들은 폐허 사이를 파헤쳤다." }] },
 

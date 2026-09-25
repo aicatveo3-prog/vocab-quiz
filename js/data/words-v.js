@@ -79,7 +79,7 @@ window.VOCAB_V = [
 
   /* 승격 ① — 사전 글자 유지. 참조 blank(B)·empty(E) 두 곳의 화면은 바뀌지
      않는다. 교재의 '공허한' 은 empty(텅 빈, 공허한) 자리라 버렸다. */
-  { word:"vacant", pron:"베이컨트", pos:"adj", level:"B2", meanings:["빈","비어 있는"],
+  { word:"vacant", exams:["공무원"], pron:"베이컨트", pos:"adj", level:"B2", meanings:["빈","비어 있는"],
     syn:["blank","empty","not in use"],
     ex:[{ s:"The seat beside her was {{}}.", f:"vacant", ko:"그녀 옆자리는 비어 있었다." }] },
 
@@ -136,7 +136,7 @@ window.VOCAB_V = [
   /* 승격 ⑤ — 사전 단일값 유지. 참조 세 곳(disappear·dissipate 유의어,
      come into existence 반의어) 의 화면은 바뀌지 않는다. disappear(사라지다,
      없어지다) 와 글자가 맞물려 배제되고 fade 의 '서서히 사라지다' 도 품는다. */
-  { word:"vanish", pron:"배니시", pos:"v", level:"B2", meanings:["사라지다"],
+  { word:"vanish", exams:["공무원"], pron:"배니시", pos:"v", level:"B2", meanings:["사라지다"],
     syn:["disappear","dissipate","go out of sight"],
     ex:[{ s:"The mist will {{}} by noon.", f:"vanish", ko:"안개는 정오까지 사라질 것이다." }] },
 
@@ -284,12 +284,12 @@ window.VOCAB_V = [
     ex:[{ s:"Few would {{}} out in that storm.", f:"venture", ko:"그 폭풍 속에 과감히 나설 사람은 드물다." }] },
 
   /* '장소' 를 둘째로 남겨 location(장소, 위치)·site(부지, 장소) 와 맞물리게 했다. */
-  { word:"venue", pron:"베뉴", pos:"n", level:"B2", meanings:["개최지","장소"],
+  { word:"venue", exams:["공무원"], pron:"베뉴", pos:"n", level:"B2", meanings:["개최지","장소"],
     syn:["place for an event","spot where it is held","site"],
     ex:[{ s:"They changed the {{}} at short notice.", f:"venue", ko:"그들은 급히 개최지를 바꿨다." }] },
 
   /* 교재 괄호('구두의') 를 걷었다. */
-  { word:"verbal", pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
+  { word:"verbal", exams:["공무원"], pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
     syn:["spoken rather than written","in words","put in speech"],
     ex:[{ s:"They had only a {{}} agreement.", f:"verbal", ko:"그들은 말로 된 합의만 했다." }] },
 

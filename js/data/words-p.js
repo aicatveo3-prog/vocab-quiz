@@ -163,7 +163,7 @@ window.VOCAB_P = [
      있었고 참조도 갈렸다 — comparative(C)·corresponding(C)·counter(ant, C) 는
      형용사, analogy(A) 만 명사였다. 셋을 따라 형용사로 세우고 analogy 쪽 유의어를
      'close likeness' 로 바꿨다(words.js). */
-  { word:"parallel", pron:"패럴렐", pos:"adj", level:"B2", meanings:["평행한","유사한"],
+  { word:"parallel", exams:["공무원"], pron:"패럴렐", pos:"adj", level:"B2", meanings:["평행한","유사한"],
     syn:["corresponding","side-by-side","alike in form"],
     ex:[{ s:"The two roads run {{}} for a mile.", f:"parallel", ko:"두 길은 1마일 동안 평행하게 뻗는다." }] },
 
@@ -289,7 +289,7 @@ window.VOCAB_P = [
 
   /* 승격 ⑰ — 사전은 '수동적인' 한 갈래였다. 원본의 '소극적인' 을 뒤에 붙였다
      (active·aggressive 반의어 자리). 원본의 '수동의' 는 '수동적인' 과 겹쳐 버렸다. */
-  { word:"passive", pron:"패시브", pos:"adj", level:"B2", meanings:["수동적인","소극적인"],
+  { word:"passive", exams:["공무원"], pron:"패시브", pos:"adj", level:"B2", meanings:["수동적인","소극적인"],
     syn:["unresisting","going along with","not acting"], ant:["active"],
     ex:[{ s:"She played a {{}} role in the talks.", f:"passive", ko:"그녀는 회담에서 수동적인 역할을 했다." }] },
 
@@ -577,7 +577,7 @@ window.VOCAB_P = [
 
   /* 승격 42 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      원본의 '영구화하다' 는 '영속시키다' 와 뜻이 같아 버렸다. */
-  { word:"perpetuate", pron:"퍼페추에이트", pos:"v", level:"C2", meanings:["영속시키다"],
+  { word:"perpetuate", exams:["공무원"], pron:"퍼페추에이트", pos:"v", level:"C2", meanings:["영속시키다"],
     syn:["keep going for ever","make last endlessly","carry on without end"],
     ex:[{ s:"Such jokes only {{}} old prejudices.", f:"perpetuate", ko:"그런 농담은 낡은 편견을 영속시킬 뿐이다." }] },
 
@@ -595,7 +595,7 @@ window.VOCAB_P = [
 
   /* 승격 45 — 사전이 '지속하다; 고집하다' 였다. 구분 기호만 쉼표로 바꿨다
      (linger, L). 원본의 '집요하게 계속하다' 대신 사전 쪽을 남겼다. */
-  { word:"persist", pron:"퍼시스트", pos:"v", level:"B2", meanings:["지속하다","고집하다"],
+  { word:"persist", exams:["공무원"], pron:"퍼시스트", pos:"v", level:"B2", meanings:["지속하다","고집하다"],
     syn:["linger","keep on regardless","refuse to give up"],
     ex:[{ s:"The fog will {{}} until noon.", f:"persist", ko:"안개는 정오까지 지속될 것이다." }] },
 
@@ -638,7 +638,7 @@ window.VOCAB_P = [
 
   /* 승격 50 — 사전 표현과 글자까지 같다. 이 챕터에서 참조가 가장 많다(3곳) —
      compelling(C)·convincing(C)·eloquent(E). */
-  { word:"persuasive", pron:"퍼스웨이시브", pos:"adj", level:"B2", meanings:["설득력 있는"],
+  { word:"persuasive", exams:["공무원"], pron:"퍼스웨이시브", pos:"adj", level:"B2", meanings:["설득력 있는"],
     syn:["compelling","carrying weight","good at winning people over"], ant:["unconvincing"],
     ex:[{ s:"He made a {{}} case for the plan.", f:"persuasive", ko:"그는 그 계획에 설득력 있는 주장을 펼쳤다." }] },
 
@@ -649,7 +649,7 @@ window.VOCAB_P = [
     syn:["bearing on the matter","to the point","germane"], ant:["irrelevant"],
     ex:[{ s:"Please keep your questions {{}}.", f:"pertinent", ko:"질문을 관계있는 것으로 지켜 주세요." }] },
 
-  { word:"pervasive", pron:"퍼베이시브", pos:"adj", level:"C1", meanings:["만연한","스며드는"],
+  { word:"pervasive", exams:["공무원"], pron:"퍼베이시브", pos:"adj", level:"C1", meanings:["만연한","스며드는"],
     syn:["found everywhere","spread right through","present in every corner"],
     ex:[{ s:"Plastic waste is {{}} in the ocean.", f:"pervasive", ko:"플라스틱 쓰레기는 바다에 만연하다." }] },
 
@@ -665,7 +665,7 @@ window.VOCAB_P = [
      phenomenon·philosophy·phobia·phony·photocopy·photography). 뜻이 서로 멀다.  */
 
   /* 승격 52 — 사전 표현과 글자까지 같다(negative, N · optimistic 반의어, O). */
-  { word:"pessimistic", pron:"페서미스틱", pos:"adj", level:"B2", meanings:["비관적인"],
+  { word:"pessimistic", exams:["공무원"], pron:"페서미스틱", pos:"adj", level:"B2", meanings:["비관적인"],
     syn:["negative","looking on the dark side","fearing the worst"], ant:["optimistic"],
     ex:[{ s:"He is {{}} about next year's harvest.", f:"pessimistic", ko:"그는 내년 수확에 비관적이다." }] },
 
@@ -707,7 +707,7 @@ window.VOCAB_P = [
     ex:[{ s:"The project entered its final {{}}.", f:"phase", ko:"그 사업은 마지막 단계에 들어섰다." }] },
 
   /* 승격 55 — 사전 표현과 글자까지 같다(marvel, M). */
-  { word:"phenomenon", pron:"퍼나머넌", pos:"n", level:"B2", meanings:["현상"],
+  { word:"phenomenon", exams:["공무원"], pron:"퍼나머넌", pos:"n", level:"B2", meanings:["현상"],
     syn:["marvel","observed event","thing that occurs"],
     ex:[{ s:"The northern lights are a striking {{}}.", f:"phenomenon", ko:"북극광은 눈에 띄는 현상이다." }] },
 
@@ -744,7 +744,7 @@ window.VOCAB_P = [
     syn:["corporal","of the body","material rather than mental"], ant:["mental"],
     ex:[{ s:"The job needs real {{}} strength.", f:"physical", ko:"그 일은 진짜 신체의 힘이 필요하다." }] },
 
-  { word:"physician", pron:"퍼지션", pos:"n", level:"B2", meanings:["내과 의사"],
+  { word:"physician", exams:["공무원"], pron:"퍼지션", pos:"n", level:"B2", meanings:["내과 의사"],
     syn:["doctor of medicine","medical practitioner","non-surgical doctor"],
     ex:[{ s:"Her {{}} advised more rest.", f:"physician", ko:"그녀의 내과 의사는 더 쉬라고 권했다." }] },
 
@@ -1197,7 +1197,7 @@ window.VOCAB_P = [
     ex:[{ s:"The car hit a deep {{}}.", f:"pothole", ko:"그 차는 깊이 움푹 팬 구멍에 부딪혔다." }] },
 
   /* 승격 93 — 사전 표현과 글자까지 같다(ceramic, C). */
-  { word:"pottery", pron:"파터리", pos:"n", level:"B2", meanings:["도자기","도기"],
+  { word:"pottery", exams:["공무원"], pron:"파터리", pos:"n", level:"B2", meanings:["도자기","도기"],
     syn:["ceramic","fired clayware","earthenware"],
     ex:[{ s:"The museum shows Joseon {{}}.", f:"pottery", ko:"그 박물관은 조선 도자기를 보여 준다." }] },
 
@@ -1263,11 +1263,11 @@ window.VOCAB_P = [
     ex:[{ s:"A short speech will {{}} the meal.", f:"precede", ko:"짧은 연설이 식사보다 앞설 것이다." }] },
 
   /* 승격 96 — 사전 표현과 글자까지 같다(invaluable, I). */
-  { word:"precious", pron:"프레셔스", pos:"adj", level:"B1", meanings:["소중한","귀중한"],
+  { word:"precious", exams:["공무원"], pron:"프레셔스", pos:"adj", level:"B1", meanings:["소중한","귀중한"],
     syn:["of great worth","dear to one","treasured"], ant:["worthless"],
     ex:[{ s:"Water is {{}} in the desert.", f:"precious", ko:"사막에서 물은 소중하다." }] },
 
-  { word:"precipitation", pron:"프리시피테이션", pos:"n", level:"C1", meanings:["강수량"],
+  { word:"precipitation", exams:["공무원"], pron:"프리시피테이션", pos:"n", level:"C1", meanings:["강수량"],
     syn:["rain and snow","fallen moisture","water from the sky"],
     ex:[{ s:"Yearly {{}} has dropped since 2010.", f:"precipitation", ko:"연간 강수량은 2010년 이후 줄었다." }] },
 
@@ -1295,7 +1295,7 @@ window.VOCAB_P = [
     ex:[{ s:"These walls {{}} the church itself.", f:"pre-date", ko:"이 벽들은 교회 자체보다 먼저 생겼다." }] },
 
   /* 원본은 '포식 동물, 약탈자,' 로 끝에 쉼표가 달려 있었다 — 고쳤다. */
-  { word:"predator", pron:"프레더터", pos:"n", level:"B2", meanings:["포식 동물","약탈자"],
+  { word:"predator", exams:["공무원"], pron:"프레더터", pos:"n", level:"B2", meanings:["포식 동물","약탈자"],
     syn:["hunting animal","beast of prey","one that preys"], ant:["prey"],
     ex:[{ s:"The wolf is the main {{}} here.", f:"predator", ko:"이곳의 주된 포식 동물은 늑대다." }] },
 
@@ -1436,7 +1436,7 @@ window.VOCAB_P = [
 
   /* 승격 111 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      챕터 11 의 precondition 은 '선행 조건' 으로 갈라 두었다. */
-  { word:"prerequisite", pron:"프리레커지트", pos:"n", level:"C1", meanings:["전제 조건"],
+  { word:"prerequisite", exams:["공무원"], pron:"프리레커지트", pos:"n", level:"C1", meanings:["전제 조건"],
     syn:["required beforehand","needed first of all","course one must take first"],
     ex:[{ s:"Trust is a {{}} for teamwork.", f:"prerequisite", ko:"신뢰는 협업의 전제 조건이다." }] },
 
@@ -1500,7 +1500,7 @@ window.VOCAB_P = [
 
   /* 승격 115 — 사전은 '보존하다; 보호 구역' 으로 품사가 섞여 있었다. 원본과
      참조 다섯 곳이 모두 동사 쪽이라 동사로 세웠다. */
-  { word:"preserve", pron:"프리저브", pos:"v", level:"B1", meanings:["보존하다","보호하다"],
+  { word:"preserve", exams:["공무원"], pron:"프리저브", pos:"v", level:"B1", meanings:["보존하다","보호하다"],
     syn:["conserve","keep from harm","keep as it is"],
     ex:[{ s:"The town works to {{}} its old walls.", f:"preserve", ko:"그 고을은 오래된 성벽을 보존하려 애쓴다." }] },
 
@@ -1558,7 +1558,7 @@ window.VOCAB_P = [
     ex:[{ s:"The habit is {{}} among students.", f:"prevalent", ko:"그 습관은 학생들 사이에 널리 퍼져 있다." }] },
 
   /* 승격 122 — 사전 표현과 글자까지 같다(avert, A · bring about 반의어, B). */
-  { word:"prevent", pron:"프리벤트", pos:"v", level:"B1", meanings:["방지하다","막다"],
+  { word:"prevent", exams:["공무원"], pron:"프리벤트", pos:"v", level:"B1", meanings:["방지하다","막다"],
     syn:["keep from happening","head off","stop in advance"], ant:["bring about"],
     ex:[{ s:"Simple steps can {{}} most fires.", f:"prevent", ko:"간단한 조치로 대부분의 화재를 방지할 수 있다." }] },
 
@@ -1600,11 +1600,11 @@ window.VOCAB_P = [
   /* 승격 126 — 사전은 '주요한; 초등의' 였다. 원본의 '주요한, 최초의' 를 썼다.
      '주요한' 은 foremost(F)·챕터 14 principal 과, '최초의' 는 initial(I) 과
      글자가 같아 넷이 서로의 오답에서 빠진다. 참조는 없다. */
-  { word:"primary", pron:"프라이머리", pos:"adj", level:"B1", meanings:["주요한","최초의"],
+  { word:"primary", exams:["공무원"], pron:"프라이머리", pos:"adj", level:"B1", meanings:["주요한","최초의"],
     syn:["first in rank","most important of all","coming at the start"],
     ex:[{ s:"Safety is our {{}} concern.", f:"primary", ko:"안전이 우리의 주요한 관심사다." }] },
 
-  { word:"primate", pron:"프라이메이트", pos:"n", level:"C1", meanings:["영장류"],
+  { word:"primate", exams:["공무원"], pron:"프라이메이트", pos:"n", level:"C1", meanings:["영장류"],
     syn:["ape or monkey","hand-using mammal","member of the highest mammal order"],
     ex:[{ s:"The {{}} uses tools to crack nuts.", f:"primate", ko:"그 영장류는 도구로 열매를 깬다." }] },
 
@@ -1817,7 +1817,7 @@ window.VOCAB_P = [
 
   /* 승격 149 — 사전은 '금지하다' 한 갈래였다. 원본의 '못하게 하다' 는 forbid(F) 의
      둘째 뜻과 글자까지 같아 붙이지 않았다 (ban, B · forbid 두 곳 보존). */
-  { word:"prohibit", pron:"프러히빗", pos:"v", level:"B2", meanings:["금지하다"],
+  { word:"prohibit", exams:["공무원"], pron:"프러히빗", pos:"v", level:"B2", meanings:["금지하다"],
     syn:["ban","forbid","rule out by law"],
     ex:[{ s:"The law will {{}} smoking here.", f:"prohibit", ko:"그 법은 이곳에서 흡연을 금지할 것이다." }] },
 

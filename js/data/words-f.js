@@ -567,7 +567,7 @@ window.VOCAB_F = [
     syn:["intimacy","closeness","working knowledge"],
     ex:[{ s:"Years at the bench gave her a deep {{}} with the machine.", f:"familiarity", ko:"작업대에서 보낸 여러 해가 그 기계에 대한 깊은 익숙함을 그녀에게 주었다." }] },
 
-  { word:"famine", pron:"패민", pos:"n", level:"B2", meanings:["굶주림","기아"],
+  { word:"famine", exams:["공무원"], pron:"패민", pos:"n", level:"B2", meanings:["굶주림","기아"],
     syn:["starvation","hunger","food shortage"], ant:["abundance"],
     ex:[{ s:"Three years of drought brought {{}} to the northern villages.", f:"famine", ko:"3년에 걸친 가뭄이 북부 마을들에 굶주림을 불러왔다." }] },
 
@@ -725,7 +725,7 @@ window.VOCAB_F = [
        fertile    adj B2      fertilize  v  B2   → 품사가 다르다
        fertility  n   C1      fertilizer n  B1   → 둘 다 명사라 레벨을 두
                                                    단계 벌렸다(후보 ±1 밖) */
-  { word:"fertile", pron:"퍼틀", pos:"adj", level:"B2", meanings:["비옥한","다산의"],
+  { word:"fertile", exams:["공무원"], pron:"퍼틀", pos:"adj", level:"B2", meanings:["비옥한","다산의"],
     syn:["productive","rich","lush"], ant:["barren"],
     ex:[{ s:"The valley floor is {{}} enough for two harvests a year.", f:"fertile", ko:"그 골짜기 바닥은 한 해 두 번 수확할 만큼 비옥하다." }] },
 
@@ -960,7 +960,7 @@ window.VOCAB_F = [
     syn:["bend","crook","work the joint"],
     ex:[{ s:"Patients learn to {{}} the knee a little more each day.", f:"flex", ko:"환자들은 날마다 무릎을 조금씩 더 구부리는 법을 배운다." }] },
 
-  { word:"flexibility", pron:"플렉서빌러티", pos:"n", level:"C1", meanings:["유연성","적응성"],
+  { word:"flexibility", exams:["공무원"], pron:"플렉서빌러티", pos:"n", level:"C1", meanings:["유연성","적응성"],
     syn:["suppleness","adaptability","pliancy"],
     ex:[{ s:"Daily stretching restored some {{}} to his back.", f:"flexibility", ko:"매일의 스트레칭이 그의 등에 어느 정도 유연성을 되돌려 주었다." }] },
 
@@ -1297,7 +1297,7 @@ window.VOCAB_F = [
     syn:["ice over","turn to ice","chill solid"],
     ex:[{ s:"The shallow pond will {{}} before the river does.", f:"freeze", ko:"얕은 못이 강보다 먼저 언다." }] },
 
-  { word:"freight", pron:"프레이트", pos:"n", level:"C1", meanings:["화물"],
+  { word:"freight", exams:["공무원"], pron:"프레이트", pos:"n", level:"C1", meanings:["화물"],
     syn:["cargo","goods","shipment"],
     ex:[{ s:"The night train carries only {{}}, no passengers.", f:"freight", ko:"그 야간 열차는 승객 없이 화물만 실어 나른다." }] },
 
@@ -1361,7 +1361,7 @@ window.VOCAB_F = [
   /* 원본 목록에는 '좌절시키는' 으로 적혀 있었다. 능동과 수동이 뒤집힌 것이라
      (그것은 frustrating 의 뜻이다) 0차에서 '좌절한, 낙담한' 으로 바로잡았다.
      같은 챕터의 frustrate(동사)와는 품사로 갈라진다. */
-  { word:"frustrated", pron:"프러스트레이티드", pos:"adj", level:"B2", meanings:["좌절한","낙담한"],
+  { word:"frustrated", exams:["공무원"], pron:"프러스트레이티드", pos:"adj", level:"B2", meanings:["좌절한","낙담한"],
     syn:["discouraged","disheartened","dispirited"],
     ex:[{ s:"Players looked {{}} after the third missed chance.", f:"frustrated", ko:"선수들은 세 번째 기회를 놓친 뒤 좌절한 표정이었다." }] },
 
@@ -1399,7 +1399,7 @@ window.VOCAB_F = [
     syn:["purpose","role","use"],
     ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
 
-  { word:"functional", pron:"펑셔널", pos:"adj", level:"B2", meanings:["기능적인","실용적인"],
+  { word:"functional", exams:["공무원"], pron:"펑셔널", pos:"adj", level:"B2", meanings:["기능적인","실용적인"],
     syn:["practical","usable","serviceable"],
     ex:[{ s:"The furniture is plain but entirely {{}}.", f:"functional", ko:"그 가구는 소박하지만 완전히 기능적이다." }] },
 
@@ -1407,7 +1407,7 @@ window.VOCAB_F = [
     syn:["money collecting","charity drive","soliciting donations"],
     ex:[{ s:"The school relies on {{}} to keep the library open.", f:"fund-raising", ko:"그 학교는 도서관을 열어 두려고 자선 모금에 기댄다." }] },
 
-  { word:"fundamental", pron:"펀더멘털", pos:"adj", level:"B2", meanings:["근본적인","기초적인"],
+  { word:"fundamental", exams:["공무원"], pron:"펀더멘털", pos:"adj", level:"B2", meanings:["근본적인","기초적인"],
     syn:["basic","essential","underlying"],
     ex:[{ s:"There is a {{}} difference between the two methods.", f:"fundamental", ko:"두 방법 사이에는 근본적인 차이가 있다." }] },
 

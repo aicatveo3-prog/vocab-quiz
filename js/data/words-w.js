@@ -240,7 +240,7 @@ window.VOCAB_W = [
 
   /* 승격 ⑪ — 사전 단일값 유지(참조 common good). 교재의 '행복' 은 bliss(행복,
      기쁨)·happiness 자리라 버렸다. */
-  { word:"welfare", pron:"웰페어", pos:"n", level:"B2", meanings:["복지"],
+  { word:"welfare", exams:["공무원"], pron:"웰페어", pos:"n", level:"B2", meanings:["복지"],
     syn:["common good","care of the needy","state help for all"],
     ex:[{ s:"The city spends much on {{}}.", f:"welfare", ko:"그 도시는 복지에 많이 쓴다." }] },
 
@@ -453,7 +453,7 @@ window.VOCAB_W = [
 
   /* 승격 ㉗ — 사전 글자 유지(참조 bear·endure). bear(견디다, 감당하다)·
      endure(견디다, 참다)·sustain(유지하다, 견디다) 와 맞물려 배제된다. */
-  { word:"withstand", pron:"위스탠드", pos:"v", level:"B2", meanings:["견디다","버티다"],
+  { word:"withstand", exams:["공무원"], pron:"위스탠드", pos:"v", level:"B2", meanings:["견디다","버티다"],
     syn:["bear","endure","hold out against"],
     ex:[{ s:"The wall can {{}} a gale.", f:"withstand", ko:"그 벽은 강풍을 견딜 수 있다." }] },
 
@@ -577,7 +577,7 @@ window.VOCAB_W = [
 
   /* 승격 ㉜ — 사전 단일값 유지(참조 furrow·gather line). 교재의 '잔주름' 은
      같은 말이어서 하나로 줄였다. */
-  { word:"wrinkle", pron:"링클", pos:"n", level:"B2", meanings:["주름"],
+  { word:"wrinkle", exams:["공무원"], pron:"링클", pos:"n", level:"B2", meanings:["주름"],
     syn:["furrow","gather line","line in the skin"],
     ex:[{ s:"A {{}} showed on her brow.", f:"wrinkle", ko:"그녀의 이마에 주름이 드러났다." }] }
 ];

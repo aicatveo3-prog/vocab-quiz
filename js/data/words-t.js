@@ -388,7 +388,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉗ — ★ 사전 글자 유지(참조 colony·continent·habitat 세 곳). 교재가
      앞세운 '영역' 은 spectrum·sphere·domain·realm 자리라 쓰지 않았다. */
-  { word:"territory", pron:"테러토리", pos:"n", level:"B1", meanings:["영토","구역"],
+  { word:"territory", exams:["공무원"], pron:"테러토리", pos:"n", level:"B1", meanings:["영토","구역"],
     syn:["colony","continent","habitat"],
     ex:[{ s:"The tribe defended its {{}}.", f:"territory", ko:"그 부족은 자기 영토를 지켰다." }] },
 
@@ -642,7 +642,7 @@ window.VOCAB_T = [
     syn:["incline","lean","slant to one side"],
     ex:[{ s:"Do not {{}} the glass.", f:"tilt", ko:"그 잔을 기울이지 마라." }] },
 
-  { word:"timber", pron:"팀버", pos:"n", level:"B2", meanings:["목재","재목"],
+  { word:"timber", exams:["공무원"], pron:"팀버", pos:"n", level:"B2", meanings:["목재","재목"],
     syn:["cut wood for building","wood as material","sawn wood"],
     ex:[{ s:"The roof is made of {{}}.", f:"timber", ko:"그 지붕은 목재로 만들어졌다." }] },
 
@@ -988,7 +988,7 @@ window.VOCAB_T = [
     ex:[{ s:"The wings are almost {{}}.", f:"transparent", ko:"그 날개는 거의 투명하다." }] },
 
   /* 교재는 [v+n] 이지만 동사 쪽만 세웠다. */
-  { word:"transplant", pron:"트랜스플랜트", pos:"v", level:"B2", meanings:["이식하다"],
+  { word:"transplant", exams:["공무원"], pron:"트랜스플랜트", pos:"v", level:"B2", meanings:["이식하다"],
     syn:["move to another body","graft into place","set in a new spot"],
     ex:[{ s:"Surgeons can {{}} a kidney.", f:"transplant", ko:"외과의는 콩팥을 이식할 수 있다." }] },
 
@@ -1081,7 +1081,7 @@ window.VOCAB_T = [
   /* 승격 69 — ★ 사전 첫 갈래만 세웠다. 참조 cherish(C) 가 동사여서다. 교재의
      '보물' 을 버린 아까운 자리다. cherish(소중히 하다, 아끼다) 와 글자가
      맞물려 배제된다. */
-  { word:"treasure", pron:"트레저", pos:"v", level:"B1", meanings:["소중히 하다"],
+  { word:"treasure", exams:["공무원"], pron:"트레저", pos:"v", level:"B1", meanings:["소중히 하다"],
     syn:["cherish","hold dear","set great store by"],
     ex:[{ s:"She will always {{}} that letter.", f:"treasure", ko:"그녀는 그 편지를 늘 소중히 할 것이다." }] },
 
@@ -1324,7 +1324,7 @@ window.VOCAB_T = [
 
   /* 승격 89 — ★ 교재의 '전형적인' 을 앞세우고 사전값 '으레 그런' 을 둘째
      갈래로 살렸다. 참조 odd(O) 의 반의어 화면이 한 줄 늘어난다. */
-  { word:"typical", pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
+  { word:"typical", exams:["공무원"], pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
     syn:["standing for the whole kind","just as one would expect","true to type"], ant:["odd"],
     ex:[{ s:"That is a {{}} winter here.", f:"typical", ko:"그것이 이곳의 전형적인 겨울이다." }] },
 

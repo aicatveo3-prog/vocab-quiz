@@ -877,7 +877,7 @@ window.VOCAB_E = [
     syn:["expel","throw out","evict"], ant:["let in"],
     ex:[{ s:"Guards moved in to {{}} the noisy spectators.", f:"eject", ko:"경비원들이 시끄러운 관중을 몰아내려고 들어왔다." }] },
 
-  { word:"elaborate", pron:"일래버릿", pos:"adj", level:"C1", meanings:["공들인","정교한"],
+  { word:"elaborate", exams:["공무원"], pron:"일래버릿", pos:"adj", level:"C1", meanings:["공들인","정교한"],
     syn:["intricate","detailed","painstaking"], ant:["simple"],
     ex:[{ s:"The wedding featured an {{}} ten-course dinner.", f:"elaborate", ko:"그 결혼식에는 공들인 10코스 만찬이 있었다." }] },
 
@@ -1061,7 +1061,7 @@ window.VOCAB_E = [
   /* 원본은 '(빛, 가스 등을) 내뿜다' 인데 첫 뜻에는 괄호 설명을 넣지 않는다.
      기존 GLOSS "방출하다"를 첫 뜻으로 살려 absorb(반의어)·discharge(유의어)의
      기존 문제가 변하지 않게 했다. */
-  { word:"emit", pron:"이미트", pos:"v", level:"B2", meanings:["방출하다","내뿜다"],
+  { word:"emit", exams:["공무원"], pron:"이미트", pos:"v", level:"B2", meanings:["방출하다","내뿜다"],
     syn:["discharge","give off","send out"], ant:["absorb"],
     ex:[{ s:"Older engines {{}} far more soot than modern ones.", f:"emit", ko:"구형 엔진은 현대식 엔진보다 훨씬 많은 매연을 방출한다." }] },
 
@@ -1252,7 +1252,7 @@ window.VOCAB_E = [
   /* 원본은 '계몽하다, 깨우치다, 가르치다' 로 셋이다 — 둘로 줄였다. 기존 GLOSS 는
      "교화하다, 깨우치다" 였는데 civilize(유의어)·deceive·delude(반의어) 모두
      '계몽하다'로도 뜻이 통한다. */
-  { word:"enlighten", pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
+  { word:"enlighten", exams:["공무원"], pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
     syn:["educate","inform","open one's eyes"], ant:["mislead"],
     ex:[{ s:"A single good teacher can {{}} a whole village.", f:"enlighten", ko:"좋은 교사 한 명이 마을 전체를 계몽할 수 있다." }] },
 
@@ -1320,7 +1320,7 @@ window.VOCAB_E = [
   /* syn 을 비웠다 — '독립체'는 바꿔 쓸 낱말이 마땅치 않은 추상 명사다.
      being·body·unit 은 모두 뜻이 훨씬 넓어 유의어로 가르치면 틀린 것을 가르친다
      (unit 의 GLOSS 는 "단위; 세포" 다). encyclopedia·e-commerce 와 같은 경우다. */
-  { word:"entity", pron:"엔터티", pos:"n", level:"C1", meanings:["독립체","실체"],
+  { word:"entity", exams:["공무원"], pron:"엔터티", pos:"n", level:"C1", meanings:["독립체","실체"],
     ex:[{ s:"After the merger the two firms became a single {{}}.", f:"entity", ko:"합병 후 두 회사는 하나의 독립체가 되었다." }] },
 
   { word:"entrepreneur", pron:"안트러프러너", pos:"n", level:"B2", meanings:["사업가","기업가"],
@@ -1409,7 +1409,7 @@ window.VOCAB_E = [
      명사 표제어 counterpart 도 이 낱말을 유의어로 쓰지만, 형용사 둘을 지키는 쪽이
      낫다(counterpart 의 어긋남은 7차 전에도 있었다. E 세트를 마친 뒤 counterpart 쪽
      syn 을 opposite number 로 바꿔 정리했다 — 아래 '품사가 어긋난 유의어 5곳' 참고). */
-  { word:"equivalent", pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
+  { word:"equivalent", exams:["공무원"], pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
     syn:["comparable","corresponding","tantamount"],
     ex:[{ s:"One cup of this flour is {{}} to two of the old kind.", f:"equivalent", ko:"이 밀가루 한 컵은 예전 것 두 컵과 동등하다." }] },
 
@@ -1441,7 +1441,7 @@ window.VOCAB_E = [
     syn:["wear away","eat away","corrode"],
     ex:[{ s:"Winter rain will {{}} the bare hillside.", f:"erode", ko:"겨울비가 헐벗은 산비탈을 침식할 것이다." }] },
 
-  { word:"erosion", pron:"이로전", pos:"n", level:"B2", meanings:["침식","부식"],
+  { word:"erosion", exams:["공무원"], pron:"이로전", pos:"n", level:"B2", meanings:["침식","부식"],
     syn:["corrosion","wearing away","gradual destruction"],
     ex:[{ s:"Tree roots slow the {{}} of the riverbank.", f:"erosion", ko:"나무 뿌리는 강둑의 침식을 늦춘다." }] },
 
@@ -1553,7 +1553,7 @@ window.VOCAB_E = [
      표제어 avoid·dodge 의 유의어 목록에 있는 sidestep(GLOSS "피하다, 회피하다")과
      글자까지 같아져 피드백 두 줄이 같아진다. 그래서 dodge 와 sidestep 을 유의어로
      같이 쓰지도 않았다(그 둘도 서로 뜻이 글자까지 같다). */
-  { word:"evade", pron:"이베이드", pos:"v", level:"C1", meanings:["회피하다","교묘히 피하다"],
+  { word:"evade", exams:["공무원"], pron:"이베이드", pos:"v", level:"C1", meanings:["회피하다","교묘히 피하다"],
     syn:["avoid","dodge","shirk"], ant:["confront"],
     ex:[{ s:"He tried to {{}} the question twice.", f:"evade", ko:"그는 그 질문을 두 번 회피하려 했다." }] },
 
@@ -1633,7 +1633,7 @@ window.VOCAB_E = [
     syn:["inspect","analyze","look into"],
     ex:[{ s:"Inspectors will {{}} every weld on the pipe.", f:"examine", ko:"검사관들이 그 배관의 모든 용접부를 조사할 것이다." }] },
 
-  { word:"excavate", pron:"엑스커베이트", pos:"v", level:"C1", meanings:["발굴하다","출토하다"],
+  { word:"excavate", exams:["공무원"], pron:"엑스커베이트", pos:"v", level:"C1", meanings:["발굴하다","출토하다"],
     syn:["dig","unearth","dig up"],
     ex:[{ s:"The team hopes to {{}} the site before winter.", f:"excavate", ko:"그 팀은 겨울 전에 그 유적을 발굴하기를 바란다." }] },
 
@@ -1735,7 +1735,7 @@ window.VOCAB_E = [
 
   /* 3차에서 embody 의 유의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로 올라온다 —
      그 항목을 지웠다. embody 쪽 피드백이 바뀌지 않도록 '전형' 갈래를 앞에 뒀다. */
-  { word:"exemplify", pron:"이그젬플리파이", pos:"v", level:"C1", meanings:["전형적인 사례가 되다","예증하다"],
+  { word:"exemplify", exams:["공무원"], pron:"이그젬플리파이", pos:"v", level:"C1", meanings:["전형적인 사례가 되다","예증하다"],
     syn:["illustrate","typify","embody"],
     ex:[{ s:"These letters {{}} the style of the period.", f:"exemplify", ko:"이 편지들은 그 시대의 문체를 전형적으로 보여 준다." }] },
 
@@ -1894,7 +1894,7 @@ window.VOCAB_E = [
      정리했다(아래 '품사가 어긋난 유의어 5곳'). adventure 에는 escapade·quest
      두 유의어가 더 있어 '모험' 쪽은 그것들이 받쳐 준다.
      유의어로 abuse·misuse 를 쓰지 않았다 — 둘 다 명사다(abuse 는 표제어 "학대, 남용"). */
-  { word:"exploit", pron:"엑스플로이트", pos:"v", level:"C1", meanings:["착취하다","부당하게 이용하다"],
+  { word:"exploit", exams:["공무원"], pron:"엑스플로이트", pos:"v", level:"C1", meanings:["착취하다","부당하게 이용하다"],
     syn:["take advantage of","use unfairly","squeeze profit from"],
     ex:[{ s:"Some agencies {{}} workers who cannot read the contract.", f:"exploit", ko:"일부 업체는 계약서를 읽지 못하는 노동자를 착취한다." }] },
 
@@ -1963,7 +1963,7 @@ window.VOCAB_E = [
     syn:["lengthening","addition","prolonging"],
     ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
 
-  { word:"extensive", pron:"익스텐시브", pos:"adj", level:"B2", meanings:["광범위한","방대한"],
+  { word:"extensive", exams:["공무원"], pron:"익스텐시브", pos:"adj", level:"B2", meanings:["광범위한","방대한"],
     syn:["wide-ranging","far-reaching","broad"],
     ex:[{ s:"The storm caused {{}} damage to the orchards.", f:"extensive", ko:"그 폭풍은 과수원에 광범위한 피해를 입혔다." }] },
 
@@ -1990,7 +1990,7 @@ window.VOCAB_E = [
 
   /* 원본은 '멸종된, 사라진, 사화산의' 로 셋인데 둘로 줄였다. 표제어 endangered(5차,
      "멸종 위기에 처한")와는 '멸종된' 과 '멸종 위기' 로 뜻이 분명히 갈린다. */
-  { word:"extinct", pron:"익스팅트", pos:"adj", level:"B2", meanings:["멸종된","사라진"],
+  { word:"extinct", exams:["공무원"], pron:"익스팅트", pos:"adj", level:"B2", meanings:["멸종된","사라진"],
     syn:["died out","no longer existing","wiped out"], ant:["surviving"],
     ex:[{ s:"The bird has been {{}} for over a century.", f:"extinct", ko:"그 새는 한 세기 넘게 멸종된 상태다." }] },
 

@@ -86,7 +86,7 @@ window.VOCAB_U = [
      가릴 만한 훈련이다. 뜻이 분명히 다르다. */
 
   /* ★ 교재 둘째 갈래 '유비쿼터스' 를 걷었다 — 낱말을 한글로 되풀이한 것이다. */
-  { word:"ubiquitous", pron:"유비쿼터스", pos:"adj", level:"C1", meanings:["어디에나 존재하는"],
+  { word:"ubiquitous", exams:["공무원"], pron:"유비쿼터스", pos:"adj", level:"C1", meanings:["어디에나 존재하는"],
     syn:["found everywhere","present in every place","turning up all over"],
     ex:[{ s:"Mobile phones are now {{}}.", f:"ubiquitous", ko:"휴대전화는 이제 어디에나 존재한다." }] },
 
@@ -280,7 +280,7 @@ window.VOCAB_U = [
 
   /* 승격 ⑩ — 사전 글자 유지. 참조 discover(D)·excavate(E) 두 곳의 화면은
      바뀌지 않는다. excavate(발굴하다, 출토하다) 와 '발굴하다' 가 맞물려 배제된다. */
-  { word:"unearth", pron:"언어스", pos:"v", level:"C1", meanings:["발굴하다","찾아내다"],
+  { word:"unearth", exams:["공무원"], pron:"언어스", pos:"v", level:"C1", meanings:["발굴하다","찾아내다"],
     syn:["excavate","dig out of the ground","bring up from hiding"],
     ex:[{ s:"They hope to {{}} more coins.", f:"unearth", ko:"그들은 동전을 더 발굴하기를 바란다." }] },
 
@@ -591,7 +591,7 @@ window.VOCAB_U = [
 
   /* advocate(지지하다, 옹호하다)·subscribe·endorse 가 '지지하다' 를 써서 셋 다
      맞물려 배제된다. */
-  { word:"uphold", pron:"업홀드", pos:"v", level:"B2", meanings:["떠받치다","지지하다"],
+  { word:"uphold", exams:["공무원"], pron:"업홀드", pos:"v", level:"B2", meanings:["떠받치다","지지하다"],
     syn:["advocate","hold up from under","stand behind"],
     ex:[{ s:"The court will {{}} the ruling.", f:"uphold", ko:"법원은 그 판결을 지지할 것이다." }] },
 

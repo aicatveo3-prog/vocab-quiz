@@ -183,7 +183,7 @@ window.VOCAB_N = [
     ex:[{ s:"The price difference was {{}}.", f:"negligible", ko:"값 차이는 무시해도 될 만했다." }] },
 
   /* 승격 ⑬ — 사전에는 뜻만 있고 발음이 없던 항목이다(참조도 없었다). */
-  { word:"negotiate", pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
+  { word:"negotiate", exams:["공무원"], pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
     syn:["bargain","work out terms","come to terms"],
     ex:[{ s:"The two sides met to {{}} a ceasefire.", f:"negotiate", ko:"양측은 휴전을 협상하려고 만났다." }] },
 
@@ -312,7 +312,7 @@ window.VOCAB_N = [
     syn:["rubbish","drivel","empty talk"],
     ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },
 
-  { word:"nonverbal", pron:"난버벌", pos:"adj", level:"B2", meanings:["비언어적인","말을 쓰지 않는"],
+  { word:"nonverbal", exams:["공무원"], pron:"난버벌", pos:"adj", level:"B2", meanings:["비언어적인","말을 쓰지 않는"],
     syn:["unspoken","gestural","without speech"], ant:["spoken"],
     ex:[{ s:"A frown is a strong {{}} signal.", f:"nonverbal", ko:"찡그림은 강한 비언어적인 신호다." }] },
 
@@ -320,7 +320,7 @@ window.VOCAB_N = [
     syn:["peaceable","without force","unarmed"], ant:["violent"],
     ex:[{ s:"They staged a {{}} sit-in outside the hall.", f:"nonviolent", ko:"그들은 회관 밖에서 비폭력의 연좌 농성을 벌였다." }] },
 
-  { word:"norm", pron:"놈", pos:"n", level:"B2", meanings:["규범","표준"],
+  { word:"norm", exams:["공무원"], pron:"놈", pos:"n", level:"B2", meanings:["규범","표준"],
     syn:["accepted rule","usual pattern","what is expected"],
     ex:[{ s:"Working from home became the {{}}.", f:"norm", ko:"집에서 일하는 것이 규범이 되었다." }] },
 
@@ -379,7 +379,7 @@ window.VOCAB_N = [
   /* 승격 26 — 사전은 '눈에 띄는' 한 갈래였다. 원본의 '뚜렷한' 을 뒤에 붙였다.
      conspicuous(C)·marked(M) 가 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다.
      원본의 '분명한' 은 obvious 쪽 뜻이어서 버렸다. */
-  { word:"noticeable", pron:"노티서블", pos:"adj", level:"B2", meanings:["눈에 띄는","뚜렷한"],
+  { word:"noticeable", exams:["공무원"], pron:"노티서블", pos:"adj", level:"B2", meanings:["눈에 띄는","뚜렷한"],
     syn:["easily seen","standing out","hard to miss"], ant:["faint"],
     ex:[{ s:"There was a {{}} gap between the two walls.", f:"noticeable", ko:"두 벽 사이에 눈에 띄는 틈이 있었다." }] },
 
@@ -396,7 +396,7 @@ window.VOCAB_N = [
 
   /* 승격 29 — 사전은 '악명 높은' 한 갈래였다(발음은 없었다).
      원본의 '유명한' 은 notable 과 부딪히므로 '소문난' 을 뒤에 붙였다. */
-  { word:"notorious", pron:"노토리어스", pos:"adj", level:"C1", meanings:["악명 높은","소문난"],
+  { word:"notorious", exams:["공무원"], pron:"노토리어스", pos:"adj", level:"C1", meanings:["악명 높은","소문난"],
     syn:["infamous","of bad repute","widely criticized"], ant:["esteemed"],
     ex:[{ s:"The road is {{}} for its sharp bends.", f:"notorious", ko:"그 길은 급한 굽이로 악명 높다." }] },
 
@@ -465,7 +465,7 @@ window.VOCAB_N = [
   /* 승격 37 — 사전은 '영양분, 양분' 이었다. '영양분' 을 그대로 두면 이 챕터의
      nutrition·nutritious·nourish 와 줄줄이 물리므로 '영양소' 한 갈래로 좁혔다.
      antioxidant(A) 의 화면 글자가 함께 바뀐다. */
-  { word:"nutrient", pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
+  { word:"nutrient", exams:["공무원"], pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
     syn:["nourishing substance","food element","dietary component"],
     ex:[{ s:"Iron is an essential {{}} for blood.", f:"nutrient", ko:"철분은 피에 꼭 필요한 영양소다." }] },
 
