@@ -127,7 +127,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '거친, 가혹한' 이다. bitter 는 '가혹한' 쪽, coarse 는 '거친' 쪽.
      양쪽을 다 지키려면 둘 다 담아야 한다. 사전 순서를 그대로 지켰다. */
-  { word:"harsh", pron:"하쉬", pos:"adj", level:"B2", meanings:["거친","가혹한"],
+  { word:"harsh", exams:["공무원"], pron:"하쉬", pos:"adj", level:"B2", meanings:["거친","가혹한"],
     syn:["severe","brutal","stern"], ant:["mild"],
     ex:[{ s:"Winters here are long and {{}}.", f:"harsh", ko:"이곳의 겨울은 길고 혹독하다." }] },
 
@@ -285,7 +285,7 @@ window.VOCAB_H = [
     ex:[{ s:"Both environment and {{}} shape a child's temperament.", f:"heredity", ko:"환경과 유전이 모두 아이의 기질을 형성한다." }] },
 
   /* 승격 ① — GLOSS '유산, 전통' 과 같은 갈래다. 참조 없음. */
-  { word:"heritage", pron:"헤리티지", pos:"n", level:"B2", meanings:["유산","전통"],
+  { word:"heritage", exams:["공무원"], pron:"헤리티지", pos:"n", level:"B2", meanings:["유산","전통"],
     syn:["legacy","tradition","birthright"],
     ex:[{ s:"The town's rich cultural {{}} attracts many tourists.", f:"heritage", ko:"그 마을의 풍부한 문화유산은 많은 관광객을 끌어들인다." }] },
 
@@ -384,7 +384,7 @@ window.VOCAB_H = [
     syn:["cozy","snug","homely"], ant:["bleak"],
     ex:[{ s:"The café has a warm and {{}} feel.", f:"homey", ko:"그 카페는 따뜻하고 아늑한 느낌이다." }] },
 
-  { word:"homicide", pron:"하미사이드", pos:"n", level:"C1", meanings:["살인"],
+  { word:"homicide", exams:["공무원"], pron:"하미사이드", pos:"n", level:"C1", meanings:["살인"],
     syn:["murder","killing","manslaughter"],
     ex:[{ s:"Police are investigating the case as a possible {{}}.", f:"homicide", ko:"경찰은 이 사건을 살인 가능성으로 수사하고 있다." }] },
 
@@ -505,7 +505,7 @@ window.VOCAB_H = [
     gov:{ prep:["at","into","against"], usage:"hurl A at B : A를 B에게 던지다" } },
 
   /* 승격 ① — GLOSS '혼종의, 잡종' 과 같은 갈래다. 참조 없음. */
-  { word:"hybrid", pron:"하이브리드", pos:"n", level:"B2", meanings:["잡종","혼합물"],
+  { word:"hybrid", exams:["공무원"], pron:"하이브리드", pos:"n", level:"B2", meanings:["잡종","혼합물"],
     syn:["crossbreed","mixture","blend"],
     ex:[{ s:"The car is a {{}} that runs on both petrol and electricity.", f:"hybrid", ko:"그 차는 휘발유와 전기 둘 다로 달리는 하이브리드이다." }] },
 

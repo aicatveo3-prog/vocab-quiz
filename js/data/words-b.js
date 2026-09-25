@@ -125,7 +125,7 @@ window.VOCAB_B = [
     ex:[{ s:"The villagers {{}} grain for cloth and salt.", f:"bartered", ko:"마을 사람들은 곡물을 천과 소금으로 물물교환했다." }],
     gov:{ prep:["for","with"], pat:"barter grain {{}} cloth", usage:"barter A for B : A를 B와 물물교환하다" } },
 
-  { word:"basin", pron:"베이슨", pos:"n", level:"B2", meanings:["분지","대야"],
+  { word:"basin", exams:["공무원"], pron:"베이슨", pos:"n", level:"B2", meanings:["분지","대야"],
     syn:["bowl","hollow","valley"],
     ex:[{ s:"The Amazon {{}} spans several countries.", f:"basin", ko:"아마존 분지는 여러 나라에 걸쳐 있다." }] },
 
@@ -594,7 +594,7 @@ window.VOCAB_B = [
     syn:["strengthen","reinforce","boost"], ant:["undermine"],
     ex:[{ s:"New evidence helped {{}} their argument.", f:"bolster", ko:"새로운 증거가 그들의 주장을 강화하는 데 도움이 되었다." }] },
 
-  { word:"bombard", pron:"봄바드", pos:"v", level:"C1", meanings:["폭격하다","퍼붓다"],
+  { word:"bombard", exams:["공무원"], pron:"봄바드", pos:"v", level:"C1", meanings:["폭격하다","퍼붓다"],
     syn:["shell","pelt","barrage"],
     ex:[{ s:"Reporters {{}} the minister with questions.", f:"bombarded", ko:"기자들은 장관에게 질문을 퍼부었다." }],
     gov:{ prep:["with"], pat:"bombard him {{}} questions", usage:"bombard A with B : A에게 B를 퍼붓다" } },
@@ -679,7 +679,7 @@ window.VOCAB_B = [
     syn:["courage","valor","boldness"], ant:["cowardice"],
     ex:[{ s:"He received a medal for his {{}} during the fire.", f:"bravery", ko:"그는 화재 당시의 용감함으로 훈장을 받았다." }] },
 
-  { word:"breach", pron:"브리치", pos:"n", level:"C1", meanings:["위반","파기"],
+  { word:"breach", exams:["공무원"], pron:"브리치", pos:"n", level:"C1", meanings:["위반","파기"],
     syn:["violation","infringement","transgression"], ant:["compliance"],
     ex:[{ s:"Sharing the file was a clear {{}} of contract.", f:"breach", ko:"그 파일을 공유한 것은 명백한 계약 위반이었다." }],
     gov:{ prep:["of","in"], pat:"a breach {{}} contract", usage:"a breach of ~ : ~의 위반" } },
@@ -697,7 +697,7 @@ window.VOCAB_B = [
   { word:"break free", pron:"브레이크 프리", pos:"phr", level:"B2", meanings:["벗어나다","탈출하다"],
     syn:["escape","get away","break loose"], ant:["be trapped"] },
 
-  { word:"break into", pron:"브레이크 인투", pos:"phr", level:"B2", meanings:["침입하다","억지로 열다"],
+  { word:"break into", exams:["공무원"], pron:"브레이크 인투", pos:"phr", level:"B2", meanings:["침입하다","억지로 열다"],
     syn:["force entry","raid","burgle"], ant:["exit"] },
 
   { word:"break new ground", pron:"브레이크 뉴 그라운드", pos:"phr", level:"C1", meanings:["새 분야를 개척하다"],
@@ -938,7 +938,7 @@ window.VOCAB_B = [
   { word:"by far", pron:"바이 파", pos:"phr", level:"B2", meanings:["훨씬","단연코"],
     syn:["considerably","decidedly","overwhelmingly"], ant:["slightly"] },
 
-  { word:"by no means", pron:"바이 노우 민즈", pos:"phr", level:"B2", meanings:["결코 ~이 아닌"],
+  { word:"by no means", exams:["공무원"], pron:"바이 노우 민즈", pos:"phr", level:"B2", meanings:["결코 ~이 아닌"],
     syn:["not at all","in no way","under no circumstances"], ant:["by all means"] },
 
   { word:"by the same token", pron:"바이 더 세임 토큰", pos:"phr", level:"C1", meanings:["마찬가지로"],

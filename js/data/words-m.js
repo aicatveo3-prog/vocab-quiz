@@ -68,7 +68,7 @@ window.VOCAB_M = [
     syn:["conjurer","wizard","illusionist"],
     ex:[{ s:"The {{}} pulled a rabbit from an empty hat.", f:"magician", ko:"그 마술사는 빈 모자에서 토끼를 꺼냈다." }] },
 
-  { word:"magnetic", pron:"매그네틱", pos:"adj", level:"B2", meanings:["자석의","자기의"],
+  { word:"magnetic", exams:["공무원"], pron:"매그네틱", pos:"adj", level:"B2", meanings:["자석의","자기의"],
     syn:["magnetized","polarized","charged"],
     ex:[{ s:"The card has a {{}} strip on the back.", f:"magnetic", ko:"그 카드는 뒷면에 자기 띠가 있다." }] },
 
@@ -262,7 +262,7 @@ window.VOCAB_M = [
     ex:[{ s:"She wrote notes in the {{}} of the page.", f:"margin", ko:"그녀는 페이지 여백에 메모를 썼다." }] },
 
   /* margin 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"marginal", pron:"마저널", pos:"adj", level:"C1", meanings:["가장자리의","중요하지 않은"],
+  { word:"marginal", exams:["공무원"], pron:"마저널", pos:"adj", level:"C1", meanings:["가장자리의","중요하지 않은"],
     syn:["peripheral","slight","negligible"], ant:["central"],
     ex:[{ s:"The change had only a {{}} effect on sales.", f:"marginal", ko:"그 변화는 매출에 중요하지 않은 영향만 있었다." }] },
 
@@ -500,7 +500,7 @@ window.VOCAB_M = [
   /* 승격 ① — 원본의 '중고의, 낡은' 은 틀렸다(secondhand 쪽 오역). medieval 은
      중세를 뜻한다. 사전이 이미 '중세의' 이고 feudal(syn) 이 참조하므로 사전 쪽을
      첫 자리에 두고 원본의 '중세풍의' 를 붙였다 — 원본 오류가 승격으로 교정된 자리다. */
-  { word:"medieval", pron:"메디이벌", pos:"adj", level:"B2", meanings:["중세의","중세풍의"],
+  { word:"medieval", exams:["공무원"], pron:"메디이벌", pos:"adj", level:"B2", meanings:["중세의","중세풍의"],
     syn:["feudal","archaic","old-world"], ant:["modern"],
     ex:[{ s:"The town still has its {{}} walls.", f:"medieval", ko:"그 도시는 여전히 중세의 성벽을 갖고 있다." }] },
 
@@ -512,7 +512,7 @@ window.VOCAB_M = [
 
   /* ── 챕터 5 ─────────────────────────────── */
 
-  { word:"meditation", pron:"메더테이션", pos:"n", level:"B2", meanings:["명상","심사숙고"],
+  { word:"meditation", exams:["공무원"], pron:"메더테이션", pos:"n", level:"B2", meanings:["명상","심사숙고"],
     syn:["contemplation","reflection","mindfulness"],
     ex:[{ s:"She begins each day with twenty minutes of {{}}.", f:"meditation", ko:"그녀는 매일 20분의 명상으로 하루를 시작한다." }] },
 
@@ -522,7 +522,7 @@ window.VOCAB_M = [
     ex:[{ s:"Olive trees grow all around the {{}}.", f:"Mediterranean", ko:"올리브 나무가 지중해 전역에 자란다." }] },
 
   /* 원본 셋째 갈래 '중간의'(형용사)는 pos 가 n 이라 담지 못했다. */
-  { word:"medium", pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
+  { word:"medium", exams:["공무원"], pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
     syn:["middle ground","channel","vehicle"],
     ex:[{ s:"Radio was once the main {{}} for news.", f:"medium", ko:"라디오는 한때 뉴스의 주된 매개물이었다." }] },
 
@@ -625,7 +625,7 @@ window.VOCAB_M = [
   /* ── 챕터 6 ─────────────────────────────── */
 
   /* metabolic 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"metabolism", pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
+  { word:"metabolism", exams:["공무원"], pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
     syn:["energy turnover","body chemistry","metabolic rate"],
     ex:[{ s:"Exercise speeds up the body's {{}}.", f:"metabolism", ko:"운동은 신체의 신진대사를 빠르게 한다." }] },
 
@@ -971,7 +971,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수정하다, 변경하다' 를 글자까지 지켰다. 참조가 4곳
      (adapt·adjust·alter·amend)이라 원본의 '바꾸다' 대신 사전 쪽을 남겼다. */
-  { word:"modify", pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
+  { word:"modify", exams:["공무원"], pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
     syn:["adapt","adjust","amend"],
     ex:[{ s:"Engineers had to {{}} the design twice.", f:"modify", ko:"기술자들은 설계를 두 번 수정해야 했다." }] },
 
@@ -989,7 +989,7 @@ window.VOCAB_M = [
     syn:["particle","chemical unit","compound unit"],
     ex:[{ s:"A water {{}} has two hydrogen atoms.", f:"molecule", ko:"물 분자는 수소 원자 두 개를 갖는다." }] },
 
-  { word:"momentary", pron:"모먼테리", pos:"adj", level:"B2", meanings:["순간의","잠깐의"],
+  { word:"momentary", exams:["공무원"], pron:"모먼테리", pos:"adj", level:"B2", meanings:["순간의","잠깐의"],
     syn:["fleeting","brief","transient"], ant:["lasting"],
     ex:[{ s:"There was a {{}} pause before she answered.", f:"momentary", ko:"그녀가 대답하기 전에 순간의 멈춤이 있었다." }] },
 
@@ -1027,7 +1027,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '감시 장치; 감시하다' 를 글자까지 지켰다. detector(syn) 가
      명사 갈래를 참조하므로 pos 를 n 으로 유지했다. 원본의 '감독자' 는 사람 쪽이라
      사전의 '감시 장치' 를 첫 자리에 두었다. */
-  { word:"monitor", pron:"마니터", pos:"n", level:"B1", meanings:["감시 장치","감독자"],
+  { word:"monitor", exams:["공무원"], pron:"마니터", pos:"n", level:"B1", meanings:["감시 장치","감독자"],
     syn:["detector","watchdog","observer"],
     ex:[{ s:"A heart {{}} beeped steadily beside the bed.", f:"monitor", ko:"심장 감시 장치가 침대 옆에서 규칙적으로 삐 소리를 냈다." }] },
 
@@ -1103,7 +1103,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '죽을 운명의; 치명적인' 을 글자까지 지켰다. 참조가 4곳
      (deadly·fatal·immortal(ant)·lethal)이고 뒤 둘은 I·L 세트 표제어다.
      원본 '영원히 살 수 없는' 은 같은 갈래인데 사전 쪽이 더 간결하다. */
-  { word:"mortal", pron:"모털", pos:"adj", level:"B2", meanings:["죽을 운명의","치명적인"],
+  { word:"mortal", exams:["공무원"], pron:"모털", pos:"adj", level:"B2", meanings:["죽을 운명의","치명적인"],
     syn:["deadly","fatal","lethal"], ant:["immortal"],
     ex:[{ s:"He suffered a {{}} wound in the final battle.", f:"mortal", ko:"그는 마지막 전투에서 치명적인 상처를 입었다." }] },
 
@@ -1196,7 +1196,7 @@ window.VOCAB_M = [
   /* ── 챕터 11 ────────────────────────────── */
 
   /* 챕터 8의 mob 을 '폭도' 로 돌려 두어 이쪽이 '다수, 군중' 을 쓴다. */
-  { word:"multitude", pron:"멀터튜드", pos:"n", level:"C1", meanings:["다수","군중"],
+  { word:"multitude", exams:["공무원"], pron:"멀터튜드", pos:"n", level:"C1", meanings:["다수","군중"],
     syn:["host","great number","large gathering"],
     ex:[{ s:"A {{}} of small details still needed checking.", f:"multitude", ko:"확인이 더 필요한 자잘한 사항이 다수 있었다." }] },
 
@@ -1258,11 +1258,11 @@ window.VOCAB_M = [
 
   /* mythology 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
      원본 셋째 갈래 '가공의' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"mythical", pron:"미씨컬", pos:"adj", level:"B2", meanings:["신화 속에 나오는","전설상의"],
+  { word:"mythical", exams:["공무원"], pron:"미씨컬", pos:"adj", level:"B2", meanings:["신화 속에 나오는","전설상의"],
     syn:["legendary","fabled","imaginary"], ant:["actual"],
     ex:[{ s:"The unicorn is a {{}} creature.", f:"mythical", ko:"유니콘은 신화 속에 나오는 생물이다." }] },
 
-  { word:"mythology", pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
+  { word:"mythology", exams:["공무원"], pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
     syn:["legend","folklore","body of myths"],
     ex:[{ s:"Greek {{}} still shapes modern storytelling.", f:"mythology", ko:"그리스 신화는 여전히 현대 이야기 짓기를 만든다." }] }
 ];

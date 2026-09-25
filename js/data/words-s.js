@@ -450,7 +450,7 @@ window.VOCAB_S = [
   /* 승격 ㉘ — 사전은 '확보하다; 안전한' 이었다. 참조 bind(B)·dangle(D) 이 둘 다
      동사여서 동사 한 갈래로 좁혔다. 그 두 곳의 설명이 '확보하다; 안전한' 에서
      '확보하다' 로 짧아진다. */
-  { word:"secure", pron:"시큐어", pos:"v", level:"B2", meanings:["확보하다"],
+  { word:"secure", exams:["공무원"], pron:"시큐어", pos:"v", level:"B2", meanings:["확보하다"],
     syn:["bind","get hold of","make sure of"],
     ex:[{ s:"She managed to {{}} a seat at the front.", f:"secure", ko:"그녀는 앞자리를 확보해 냈다." }] },
 
@@ -614,7 +614,7 @@ window.VOCAB_S = [
      여섯 곳이 모두 동사여서 동사로 세웠다. 그 여섯 곳(adjoin·blend·combine·
      detach·diverge·merge) 의 설명이 '분리하다; 별개의' 에서 '분리하다, 나누다'
      가 된다 — 저장소에서 한 낱말이 가진 참조 중 가장 많은 자리다. */
-  { word:"separate", pron:"세퍼레이트", pos:"v", level:"B1", meanings:["분리하다","나누다"],
+  { word:"separate", exams:["공무원"], pron:"세퍼레이트", pos:"v", level:"B1", meanings:["분리하다","나누다"],
     syn:["detach","diverge","set apart"], ant:["combine","merge"],
     ex:[{ s:"Please {{}} the paper from the plastic.", f:"separate", ko:"종이를 플라스틱에서 분리해 주세요." }] },
 
@@ -736,7 +736,7 @@ window.VOCAB_S = [
     ex:[{ s:"We sat in the {{}} of a tree.", f:"shade", ko:"우리는 나무 그늘에 앉았다." }] },
 
   /* superficial(피상적인 · 챕터 20) 과 둘째 갈래를 글자까지 맞춰 두었다. */
-  { word:"shallow", pron:"섈로", pos:"adj", level:"B1", meanings:["얕은","피상적인"],
+  { word:"shallow", exams:["공무원"], pron:"섈로", pos:"adj", level:"B1", meanings:["얕은","피상적인"],
     syn:["not deep","barely below the top","lacking depth"], ant:["profound"],
     ex:[{ s:"The stream is {{}} here.", f:"shallow", ko:"그 개울은 여기가 얕다." }] },
 
@@ -890,7 +890,7 @@ window.VOCAB_S = [
 
   /* 승격 66 — 사전 글자 유지. 참조 네 곳(diminish·dwindle·enlarge·grow) 의
      화면은 바뀌지 않는다. */
-  { word:"shrink", pron:"슈링크", pos:"v", level:"B1", meanings:["줄어들다","수축하다"],
+  { word:"shrink", exams:["공무원"], pron:"슈링크", pos:"v", level:"B1", meanings:["줄어들다","수축하다"],
     syn:["diminish","dwindle","get smaller"], ant:["enlarge","grow"],
     ex:[{ s:"Wool will {{}} in hot water.", f:"shrink", ko:"양털은 뜨거운 물에서 줄어든다." }] },
 
@@ -980,7 +980,7 @@ window.VOCAB_S = [
     ex:[{ s:"The hall offers {{}} translation.", f:"simultaneous", ko:"그 회관은 동시 통역을 제공한다." }] },
 
   /* 승격 74 — 사전 단일값 유지. 참조는 없다. 위 simultaneous 와 품사로 갈린다. */
-  { word:"simultaneously", pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
+  { word:"simultaneously", exams:["공무원"], pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
     syn:["at one and the same time","together in time","in the same moment"],
     ex:[{ s:"Both lamps went out {{}}.", f:"simultaneously", ko:"두 등이 동시에 꺼졌다." }] },
 
@@ -1199,7 +1199,7 @@ window.VOCAB_S = [
     syn:["all the better for it","even more welcome","that much improved"] },
 
   /* 승격 95 — 사전 단일값 유지. 참조 drench(D) 의 화면은 바뀌지 않는다. */
-  { word:"soak", pron:"소크", pos:"v", level:"B2", meanings:["흠뻑 젖게 하다"],
+  { word:"soak", exams:["공무원"], pron:"소크", pos:"v", level:"B2", meanings:["흠뻑 젖게 하다"],
     syn:["drench","wet right through","leave in liquid"],
     ex:[{ s:"The rain will {{}} your coat.", f:"soak", ko:"비가 네 외투를 흠뻑 젖게 할 것이다." }] },
 
@@ -1332,7 +1332,7 @@ window.VOCAB_S = [
 
   /* 승격 105 — 사전 글자 유지. 참조 console(C)·madden(M) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"soothe", pron:"수드", pos:"v", level:"B2", meanings:["달래다","진정시키다"],
+  { word:"soothe", exams:["공무원"], pron:"수드", pos:"v", level:"B2", meanings:["달래다","진정시키다"],
     syn:["console","calm down","quiet a distress"], ant:["madden"],
     ex:[{ s:"A warm bath will {{}} the ache.", f:"soothe", ko:"따뜻한 목욕이 그 통증을 진정시킬 것이다." }] },
 
@@ -1366,7 +1366,7 @@ window.VOCAB_S = [
 
   /* 승격 107 — 사전 단일값 유지. 참조 grief(G) 의 화면은 바뀌지 않는다.
      원본의 '애도' 는 버렸다 — mourning 자리다. */
-  { word:"sorrow", pron:"소로우", pos:"n", level:"B2", meanings:["비애"],
+  { word:"sorrow", exams:["공무원"], pron:"소로우", pos:"n", level:"B2", meanings:["비애"],
     syn:["grief","deep sadness","heavy heart"],
     ex:[{ s:"Her eyes were full of {{}}.", f:"sorrow", ko:"그녀의 눈은 비애로 가득했다." }] },
 
@@ -1680,7 +1680,7 @@ window.VOCAB_S = [
   /* 승격 138 — 사전 둘째 갈래만 남겼다. 굴뚝 뜻으로 쓰고 있던 chimney(C) 의 그
      자리를 'smoke pipe' 로 갈았다. pile(더미, 무더기 · P) 과 글자가 똑같아
      서로의 오답에서 자동으로 빠진다 — 그래서 syn 에 pile 을 넣지 않았다. */
-  { word:"stack", pron:"스택", pos:"n", level:"B2", meanings:["더미","무더기"],
+  { word:"stack", exams:["공무원"], pron:"스택", pos:"n", level:"B2", meanings:["더미","무더기"],
     syn:["heap of things","pile of stuff","things laid one on another"],
     ex:[{ s:"A {{}} of plates stood by the sink.", f:"stack", ko:"접시 더미가 개수대 옆에 서 있었다." }] },
 
@@ -2109,7 +2109,7 @@ window.VOCAB_S = [
 
   /* 승격 178 — 사전 단일값 유지. 참조 anatomy(A)·architecture(A) 두 곳의
      화면은 바뀌지 않는다. 원본의 동사 갈래는 버렸다. */
-  { word:"structure", pron:"스트럭처", pos:"n", level:"B1", meanings:["구조"],
+  { word:"structure", exams:["공무원"], pron:"스트럭처", pos:"n", level:"B1", meanings:["구조"],
     syn:["anatomy","architecture","way parts are put together"],
     ex:[{ s:"The {{}} of the bone is hollow.", f:"structure", ko:"그 뼈의 구조는 속이 비어 있다." }] },
 
@@ -2399,7 +2399,7 @@ window.VOCAB_S = [
 
   /* 승격 210 — 사전 단일값 유지. 참조 first-rate(F)·inferior(I) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"superior", pron:"수피어리어", pos:"adj", level:"B2", meanings:["더 뛰어난"],
+  { word:"superior", exams:["공무원"], pron:"수피어리어", pos:"adj", level:"B2", meanings:["더 뛰어난"],
     syn:["first-rate","better than others","above in quality"], ant:["inferior"],
     ex:[{ s:"This cloth is {{}} to that one.", f:"superior", ko:"이 천이 그것보다 더 뛰어나다." }] },
 
@@ -2424,7 +2424,7 @@ window.VOCAB_S = [
 
   /* 승격 212 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 additive(A)·appendix(A)·
      complement(C) 세 곳의 설명이 '보충; 부록' 에서 '보충, 부록' 이 된다. */
-  { word:"supplement", pron:"서플러먼트", pos:"n", level:"B2", meanings:["보충","부록"],
+  { word:"supplement", exams:["공무원"], pron:"서플러먼트", pos:"n", level:"B2", meanings:["보충","부록"],
     syn:["additive","appendix","complement"],
     ex:[{ s:"The paper has a weekend {{}}.", f:"supplement", ko:"그 신문에는 주말 부록이 있다." }] },
 
@@ -2528,7 +2528,7 @@ window.VOCAB_S = [
 
   /* 승격 226 — 사전 단일값 유지. 참조 coexist(C)·get through(G)·perish(P)
      세 곳의 화면은 바뀌지 않는다. */
-  { word:"survive", pron:"서바이브", pos:"v", level:"B1", meanings:["살아남다"],
+  { word:"survive", exams:["공무원"], pron:"서바이브", pos:"v", level:"B1", meanings:["살아남다"],
     syn:["coexist","get through","live on after"], ant:["perish"],
     ex:[{ s:"Few seeds {{}} the frost.", f:"survive", ko:"서리를 살아남는 씨앗은 적다." }] },
 
@@ -2547,7 +2547,7 @@ window.VOCAB_S = [
 
   /* 승격 229 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 dangle(D)·halt(H) 두 곳의
      설명이 '중단하다; 매달다' 에서 '중단하다, 매달다' 가 된다. */
-  { word:"suspend", pron:"서스펜드", pos:"v", level:"B2", meanings:["중단하다","매달다"],
+  { word:"suspend", exams:["공무원"], pron:"서스펜드", pos:"v", level:"B2", meanings:["중단하다","매달다"],
     syn:["dangle","halt","hang from above"],
     ex:[{ s:"They had to {{}} the search at dusk.", f:"suspend", ko:"그들은 해질 무렵 수색을 중단해야 했다." }] },
 
@@ -2562,7 +2562,7 @@ window.VOCAB_S = [
 
   /* 승격 230 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 afford(A)·incur(I) 두 곳의
      설명이 '유지하다; 견디다' 에서 '유지하다, 견디다' 가 된다. */
-  { word:"sustain", pron:"서스테인", pos:"v", level:"B2", meanings:["유지하다","견디다"],
+  { word:"sustain", exams:["공무원"], pron:"서스테인", pos:"v", level:"B2", meanings:["유지하다","견디다"],
     syn:["afford","incur","keep going"],
     ex:[{ s:"The team could not {{}} the pace.", f:"sustain", ko:"그 팀은 속도를 유지할 수 없었다." }] },
 
