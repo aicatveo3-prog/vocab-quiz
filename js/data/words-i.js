@@ -31,6 +31,12 @@
  * in one sense 는 in a sense 와 가를 방법이 없어 목록에서 뺐다 (311단어).
  */
 window.VOCAB_I = [
+  { word:"improve", exams:["공무원"], pron:"임프루브", pos:"v", level:"B1", meanings:["개선하다","나아지다"], syn:["enhance","better","upgrade"], ant:["worsen"], ex:[{ s:"Schools are seeking ways to {{}} effectiveness.", f:"improve", ko:"학교들은 효과성을 개선할 방법을 찾고 있다." }] },
+  { word:"inspect", exams:["공무원"], pron:"인스펙트", pos:"v", level:"B2", meanings:["점검하다","검사하다"], syn:["examine","check","scrutinize"], ex:[{ s:"Our team will {{}} your property for signs of rats.", f:"inspect", ko:"우리 팀이 쥐의 흔적을 찾아 당신의 건물을 점검할 것이다." }] },
+  { word:"insightful", exams:["공무원"], pron:"인사이트풀", pos:"adj", level:"C1", meanings:["통찰력 있는"], syn:["perceptive","astute","discerning"], ant:["superficial"], ex:[{ s:"Movies can be an {{}} source for learning about culture.", f:"insightful", ko:"영화는 문화를 배우는 통찰력 있는 자료가 될 수 있다." }] },
+  { word:"inspiration", exams:["공무원"], pron:"인스퍼레이션", pos:"n", level:"B2", meanings:["영감"], syn:["stimulus","motivation","muse"], ex:[{ s:"She drew {{}} from the world around her.", f:"inspiration", ko:"그녀는 주변 세계에서 영감을 얻었다." }] },
+  { word:"interact", exams:["공무원"], pron:"인터랙트", pos:"v", level:"B2", meanings:["상호작용하다","교류하다"], syn:["communicate","engage","connect"], ex:[{ s:"The AI agents can post and {{}} with each other.", f:"interact", ko:"그 인공지능 에이전트들은 서로 글을 올리고 교류할 수 있다." }] },
+  { word:"ivory", exams:["공무원"], pron:"아이보리", pos:"n", level:"B2", meanings:["상아"], ex:[{ s:"The small plaque was carved from mammoth {{}}.", f:"ivory", ko:"그 작은 명판은 매머드 상아로 조각되었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -60,7 +66,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '똑같은, 동일한' 과 글자까지 같다.
      converse(ant)·equal(syn)·even(syn)·homogeneous(syn) 네 문제가 이 뜻을 쓴다. */
-  { word:"identical", pron:"아이덴티컬", pos:"adj", level:"B2", meanings:["똑같은","동일한"],
+  { word:"identical", exams:["공무원"], pron:"아이덴티컬", pos:"adj", level:"B2", meanings:["똑같은","동일한"],
     syn:["indistinguishable","equivalent","matching"], ant:["different"],
     ex:[{ s:"The twins wore {{}} outfits to the ceremony.", f:"identical", ko:"그 쌍둥이는 식에 똑같은 옷을 입고 왔다." }] },
 
@@ -71,7 +77,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '식별, 신원 확인' 이다. 두 갈래가 다 살아 있어 순서만
      원본에 맞췄다. diagnosis(syn) 가 쓰는 갈래는 '식별' 이라 뒤에 지켰다.
      원본 '신분증' 은 셋째 갈래라 meanings 2개 제한에 걸려 뺐다. */
-  { word:"identification", pron:"아이덴터피케이션", pos:"n", level:"B2", meanings:["신원 확인","식별"],
+  { word:"identification", exams:["공무원"], pron:"아이덴터피케이션", pos:"n", level:"B2", meanings:["신원 확인","식별"],
     syn:["recognition","detection","verification"],
     ex:[{ s:"Positive {{}} of the species required DNA analysis.", f:"identification", ko:"그 종의 확실한 식별에는 DNA 분석이 필요했다." }] },
 
@@ -933,7 +939,7 @@ window.VOCAB_I = [
     syn:["framework","facilities","public works"],
     ex:[{ s:"Years of neglect left the road {{}} crumbling.", f:"infrastructure", ko:"수년간의 방치로 도로 기반 시설이 무너져 갔다." }] },
 
-  { word:"ingenious", pron:"인지니어스", pos:"adj", level:"C1", meanings:["기발한","재주가 많은"],
+  { word:"ingenious", exams:["공무원"], pron:"인지니어스", pos:"adj", level:"C1", meanings:["기발한","재주가 많은"],
     syn:["clever","inventive","cunning"], ant:["clumsy"],
     ex:[{ s:"She found an {{}} solution to the storage problem.", f:"ingenious", ko:"그녀는 보관 문제에 기발한 해법을 찾아냈다." }] },
 
@@ -1045,7 +1051,7 @@ window.VOCAB_I = [
     syn:["break new ground","modernize","lead the way"],
     ex:[{ s:"Companies that fail to {{}} soon fall behind.", f:"innovate", ko:"혁신하지 못하는 기업은 곧 뒤처진다." }] },
 
-  { word:"innovation", pron:"이너베이션", pos:"n", level:"B2", meanings:["혁신","쇄신"],
+  { word:"innovation", exams:["공무원"], pron:"이너베이션", pos:"n", level:"B2", meanings:["혁신","쇄신"],
     syn:["breakthrough","novelty","advance"],
     ex:[{ s:"The firm built its reputation on constant {{}}.", f:"innovation", ko:"그 회사는 끊임없는 혁신으로 명성을 쌓았다." }] },
 
@@ -1125,7 +1131,7 @@ window.VOCAB_I = [
 
   /* ── 챕터 11 ────────────────────────────── */
 
-  { word:"insight", pron:"인사이트", pos:"n", level:"B2", meanings:["통찰력","간파"],
+  { word:"insight", exams:["공무원"], pron:"인사이트", pos:"n", level:"B2", meanings:["통찰력","간파"],
     syn:["perception","discernment","acumen"],
     ex:[{ s:"Her book offers real {{}} into rural poverty.", f:"insight", ko:"그녀의 책은 농촌 빈곤에 대한 진정한 통찰력을 준다." }] },
 
@@ -1238,7 +1244,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '기구, 도구' 다. device(syn) 가 쓰는 갈래 '도구' 를 둘째
      자리에 지키고, 첫 자리는 원본의 '악기' 로 했다.
      원본 셋째 갈래 '장치' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"instrument", pron:"인스트러먼트", pos:"n", level:"B1", meanings:["악기","도구"],
+  { word:"instrument", exams:["공무원"], pron:"인스트러먼트", pos:"n", level:"B1", meanings:["악기","도구"],
     syn:["device","tool","utensil"],
     ex:[{ s:"The violin is a difficult {{}} to master.", f:"instrument", ko:"바이올린은 숙달하기 어려운 악기다." }] },
 
@@ -1575,7 +1581,7 @@ window.VOCAB_I = [
   /* ── 챕터 15 ────────────────────────────── */
 
   /* 15차의 instinct 는 '본능, 천성' 으로 돌려 두었다 — 이쪽이 '직감' 을 쓴다. */
-  { word:"intuition", pron:"인투이션", pos:"n", level:"B2", meanings:["직감","직관력"],
+  { word:"intuition", exams:["공무원"], pron:"인투이션", pos:"n", level:"B2", meanings:["직감","직관력"],
     syn:["gut feeling","hunch","sixth sense"],
     ex:[{ s:"She trusted her {{}} and declined the offer.", f:"intuition", ko:"그녀는 직감을 믿고 그 제안을 거절했다." }] },
 

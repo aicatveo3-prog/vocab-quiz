@@ -87,6 +87,16 @@
  *   node tools/d-impact.js                기존 세트 영향 측정
  */
 window.VOCAB_D = [
+  { word:"deconstruct", exams:["공무원"], pron:"디컨스트럭트", pos:"v", level:"C1", meanings:["해체하다","분석하다"], syn:["dismantle","analyze","break down"], ant:["construct"], ex:[{ s:"The essay tries to {{}} the myth of the hero.", f:"deconstruct", ko:"그 글은 영웅 신화를 해체하려 한다." }] },
+  { word:"diet", exams:["공무원"], pron:"다이엇", pos:"n", level:"B1", meanings:["식단","식습관"], syn:["nutrition","regimen","food intake"], ex:[{ s:"Students behaved better regardless of their {{}}.", f:"diet", ko:"학생들은 식단과 상관없이 더 잘 행동했다." }] },
+  { word:"director", exams:["공무원"], pron:"디렉터", pos:"n", level:"B1", meanings:["관리자","책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
+  { word:"discreetly", exams:["공무원"], pron:"디스크리틀리", pos:"adv", level:"C1", meanings:["신중하게","조심스럽게"], syn:["cautiously","carefully","tactfully"], ant:["openly"], ex:[{ s:"I suggest that you discuss this matter {{}}.", f:"discreetly", ko:"이 문제를 신중하게 논의하시길 권합니다." }] },
+  { word:"dispose", exams:["공무원"], pron:"디스포즈", pos:"v", level:"B2", meanings:["처리하다","버리다"], syn:["discard","throw away","get rid of"], ant:["keep"], ex:[{ s:"You must {{}} of these products safely.", f:"dispose", ko:"이 제품들을 안전하게 처리해야 한다." }], gov:{ prep:["of"], usage:"dispose of ~ : ~을 처리하다/버리다" } },
+  { word:"disposal", exams:["공무원"], pron:"디스포절", pos:"n", level:"B2", meanings:["처리","폐기"], syn:["removal","discarding","dumping"], ex:[{ s:"The notice promotes the safe {{}} of hazardous waste.", f:"disposal", ko:"그 공지는 유해 폐기물의 안전한 처리를 권장한다." }] },
+  { word:"distinct", exams:["공무원"], pron:"디스팅트", pos:"adj", level:"B2", meanings:["뚜렷한","별개의"], syn:["separate","distinctive","clear"], ant:["indistinct"], ex:[{ s:"Green and blue are {{}} colors in English.", f:"distinct", ko:"영어에서 초록과 파랑은 별개의 색이다." }] },
+  { word:"documentation", exams:["공무원"], pron:"다큐멘테이션", pos:"n", level:"C1", meanings:["서류","증빙 자료"], syn:["paperwork","records","evidence"], ex:[{ s:"I am happy to provide any {{}} required.", f:"documentation", ko:"요구되는 어떤 서류든 기꺼이 제출하겠습니다." }] },
+  { word:"dump", exams:["공무원"], pron:"덤프", pos:"v", level:"B2", meanings:["버리다","내다 버리다"], syn:["discard","unload","offload"], ant:["collect"], ex:[{ s:"Never {{}} chemicals on the ground.", f:"dump", ko:"화학 물질을 땅에 함부로 버리지 마라." }] },
+  { word:"dynamics", exams:["공무원"], pron:"다이내믹스", pos:"n", level:"C1", meanings:["역학","역학 관계"], syn:["forces","interactions","mechanics"], ex:[{ s:"The test reveals the {{}} of their relationships.", f:"dynamics", ko:"그 검사는 그들 관계의 역학을 드러낸다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -159,7 +169,7 @@ window.VOCAB_D = [
     syn:["discussion","argument","dispute"], ant:["agreement"],
     ex:[{ s:"The proposed bill sparked fierce {{}} in parliament.", f:"debate", ko:"발의된 법안은 의회에서 격렬한 논쟁을 불러일으켰다." }] },
 
-  { word:"debris", pron:"더브리", pos:"n", level:"C1", meanings:["잔해","파편"],
+  { word:"debris", exams:["공무원"], pron:"더브리", pos:"n", level:"C1", meanings:["잔해","파편"],
     syn:["wreckage","rubble","remains"],
     ex:[{ s:"Rescue teams searched the {{}} for survivors all night.", f:"debris", ko:"구조대는 밤새 잔해를 뒤져 생존자를 찾았다." }] },
 
@@ -410,7 +420,7 @@ window.VOCAB_D = [
     syn:["raze","tear down","dismantle"], ant:["construct"],
     ex:[{ s:"The city plans to {{}} the old stadium next spring.", f:"demolish", ko:"시는 내년 봄에 옛 경기장을 철거할 계획이다." }] },
 
-  { word:"demonstrate", pron:"데먼스트레이트", pos:"v", level:"B1", meanings:["입증하다","보여 주다"],
+  { word:"demonstrate", exams:["공무원"], pron:"데먼스트레이트", pos:"v", level:"B1", meanings:["입증하다","보여 주다"],
     syn:["prove","illustrate","exhibit"],
     ex:[{ s:"The study aims to {{}} a clear link between diet and sleep.", f:"demonstrate", ko:"그 연구는 식단과 수면 사이의 분명한 연관을 입증하려 한다." }] },
 
@@ -629,7 +639,7 @@ window.VOCAB_D = [
     syn:["cleanser","soap","cleaning agent"],
     ex:[{ s:"Use only a mild {{}} on delicate fabrics.", f:"detergent", ko:"섬세한 천에는 순한 세제만 쓰라." }] },
 
-  { word:"deteriorate", pron:"디티리어레이트", pos:"v", level:"C1", meanings:["악화되다","나빠지다"],
+  { word:"deteriorate", exams:["공무원"], pron:"디티리어레이트", pos:"v", level:"C1", meanings:["악화되다","나빠지다"],
     syn:["worsen","decline","degenerate"], ant:["improve"],
     ex:[{ s:"His health began to {{}} rapidly after the surgery.", f:"deteriorate", ko:"수술 후 그의 건강은 빠르게 악화되기 시작했다." }] },
 
@@ -897,7 +907,7 @@ window.VOCAB_D = [
     syn:["follower","pupil","adherent"],
     ex:[{ s:"He was the most devoted {{}} of the old master.", f:"disciple", ko:"그는 그 노스승의 가장 헌신적인 제자였다." }] },
 
-  { word:"discipline", pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
+  { word:"discipline", exams:["공무원"], pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
     syn:["order","training","self-control"],
     ex:[{ s:"The school has long been known for its strict {{}}.", f:"discipline", ko:"그 학교는 오래전부터 엄격한 규율로 알려져 있다." }] },
 
@@ -945,11 +955,11 @@ window.VOCAB_D = [
     syn:["prejudice","bias","unfairness"], ant:["equality"],
     ex:[{ s:"The law bans {{}} in hiring and promotion.", f:"discrimination", ko:"그 법은 채용과 승진에서의 차별을 금지한다." }] },
 
-  { word:"discuss", pron:"디스커스", pos:"v", level:"B1", meanings:["논의하다","의논하다"],
+  { word:"discuss", exams:["공무원"], pron:"디스커스", pos:"v", level:"B1", meanings:["논의하다","의논하다"],
     syn:["debate","talk over","confer"],
     ex:[{ s:"The committee will {{}} the proposal again next week.", f:"discuss", ko:"위원회는 다음 주에 그 제안을 다시 논의할 것이다." }] },
 
-  { word:"disease", pron:"디지즈", pos:"n", level:"B1", meanings:["질병","질환"],
+  { word:"disease", exams:["공무원"], pron:"디지즈", pos:"n", level:"B1", meanings:["질병","질환"],
     syn:["illness","ailment","malady"], ant:["health"],
     ex:[{ s:"The {{}} spreads mainly through contaminated water.", f:"disease", ko:"그 질병은 주로 오염된 물을 통해 퍼진다." }] },
 
@@ -1000,7 +1010,7 @@ window.VOCAB_D = [
     syn:["inequality","gap","imbalance"], ant:["parity"],
     ex:[{ s:"The wage {{}} between the two regions has widened.", f:"disparity", ko:"두 지역 간 임금 격차가 벌어졌다." }] },
 
-  { word:"dispatch", pron:"디스패치", pos:"v", level:"C1", meanings:["급파하다","발송하다"],
+  { word:"dispatch", exams:["공무원"], pron:"디스패치", pos:"v", level:"C1", meanings:["급파하다","발송하다"],
     syn:["send off","forward","transmit"],
     ex:[{ s:"The agency will {{}} a rescue team within the hour.", f:"dispatch", ko:"그 기관은 한 시간 안에 구조팀을 급파할 것이다." }] },
 
@@ -1092,7 +1102,7 @@ window.VOCAB_D = [
     syn:["characteristic","unique","unmistakable"],
     ex:[{ s:"The bird has a {{}} call you cannot possibly miss.", f:"distinctive", ko:"그 새는 도저히 놓칠 수 없는 독특한 울음소리를 낸다." }] },
 
-  { word:"distinguish", pron:"디스팅귀시", pos:"v", level:"B2", meanings:["구별하다","식별하다"],
+  { word:"distinguish", exams:["공무원"], pron:"디스팅귀시", pos:"v", level:"B2", meanings:["구별하다","식별하다"],
     syn:["differentiate","tell apart","discern"],
     ex:[{ s:"Colorblind people cannot always {{}} red from green.", f:"distinguish", ko:"색맹인 사람은 빨강과 초록을 늘 구별하지는 못한다." }] },
 
@@ -1148,7 +1158,7 @@ window.VOCAB_D = [
     syn:["separate","branch off","deviate"], ant:["converge"],
     ex:[{ s:"The two paths {{}} just beyond the old bridge.", f:"diverge", ko:"두 길은 옛 다리를 지나 바로 갈라진다." }] },
 
-  { word:"diverse", pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
+  { word:"diverse", exams:["공무원"], pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
     syn:["varied","assorted","manifold"], ant:["uniform"],
     ex:[{ s:"The city has an unusually {{}} population.", f:"diverse", ko:"그 도시는 유난히 다양한 인구 구성을 갖고 있다." }] },
 
@@ -1331,7 +1341,7 @@ window.VOCAB_D = [
     syn:["haul","tug","pull"],
     ex:[{ s:"It took three of us to {{}} the boat ashore.", f:"drag", ko:"배를 물가로 끌어올리는 데 우리 셋이 필요했다." }] },
 
-  { word:"drain", pron:"드레인", pos:"v", level:"B2", meanings:["빼내다","소모시키다"],
+  { word:"drain", exams:["공무원"], pron:"드레인", pos:"v", level:"B2", meanings:["빼내다","소모시키다"],
     /* empty 는 쓰지 않는다 — E 세트 표제어가 형용사("텅 빈, 공허한")라서
        동사 표제어 drain 의 유의어 자리에 상태를 나타내는 뜻이 뜬다. */
     syn:["empty out","siphon","deplete"], ant:["fill"],

@@ -88,6 +88,11 @@
  */
 
 window.VOCAB_O = [
+  { word:"observer", exams:["공무원"], pron:"업저버", pos:"n", level:"B2", meanings:["관찰자","참관인"], syn:["onlooker","spectator","witness"], ant:["participant"], ex:[{ s:"Humans are allowed, but only as {{}}.", f:"observers", ko:"인간은 허용되지만 오직 참관인으로만 가능하다." }] },
+  { word:"ordinary", exams:["공무원"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
+  { word:"outwardly", exams:["공무원"], pron:"아웃워들리", pos:"adv", level:"C1", meanings:["겉으로는","외관상"], syn:["externally","apparently","seemingly"], ant:["inwardly"], ex:[{ s:"He remained {{}} calm during the crisis.", f:"outwardly", ko:"그는 위기 동안 겉으로는 침착함을 유지했다." }] },
+  { word:"overconsumption", exams:["공무원"], pron:"오버컨섬션", pos:"n", level:"C1", meanings:["과소비","과잉 섭취"], syn:["overuse","excess","overindulgence"], ant:["moderation"], ex:[{ s:"Children's health is declining due to {{}} of fast food.", f:"overconsumption", ko:"패스트푸드의 과잉 섭취로 아이들의 건강이 나빠지고 있다." }] },
+  { word:"overgrown", exams:["공무원"], pron:"오버그로운", pos:"adj", level:"C1", meanings:["웃자란","무성한"], syn:["unkempt","weedy","overrun"], ant:["trimmed"], ex:[{ s:"The program requires no {{}} yards.", f:"overgrown", ko:"그 프로그램은 웃자란 마당이 없을 것을 요구한다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -181,7 +186,7 @@ window.VOCAB_O = [
     syn:["unclear","hard to make out","little known"], ant:["apparent"],
     ex:[{ s:"The origin of the custom is {{}}.", f:"obscure", ko:"그 관습의 기원은 분명하지 않다." }] },
 
-  { word:"observation", pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
+  { word:"observation", exams:["공무원"], pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
     syn:["close watching","careful noting","spoken remark"],
     ex:[{ s:"Years of {{}} led to the discovery.", f:"observation", ko:"여러 해의 관찰이 그 발견으로 이어졌다." }] },
 
@@ -246,7 +251,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑱ — ★원본의 '때때로' 는 부사다. 형용사 자리이고 참조 ceaseless(ant, C)
      도 형용사여서 사전 표현 '때때로의, 간간이 있는' 을 글자까지 지켰다. */
-  { word:"occasional", pron:"어케이저널", pos:"adj", level:"B2", meanings:["때때로의","간간이 있는"],
+  { word:"occasional", exams:["공무원"], pron:"어케이저널", pos:"adj", level:"B2", meanings:["때때로의","간간이 있는"],
     syn:["now-and-then","infrequent","sporadic"], ant:["ceaseless"],
     ex:[{ s:"There were {{}} showers all afternoon.", f:"occasional", ko:"오후 내내 때때로의 소나기가 있었다." }] },
 
@@ -583,7 +588,7 @@ window.VOCAB_O = [
     syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
     ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
 
-  { word:"organism", pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
+  { word:"organism", exams:["공무원"], pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
     syn:["living thing","life form","biological entity"],
     ex:[{ s:"Every {{}} needs water to survive.", f:"organism", ko:"모든 유기체는 살아남으려면 물이 필요하다." }] },
 
@@ -603,7 +608,7 @@ window.VOCAB_O = [
 
   /* 승격 50 — 사전 표현 '조직하다, 정리하다' 를 글자까지 지켰다
      (arrange, A · coordinate, C). 원본의 '체계화하다' 대신 사전 쪽을 남겼다. */
-  { word:"organize", pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
+  { word:"organize", exams:["공무원"], pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
     syn:["arrange","put in order","set up"],
     ex:[{ s:"Volunteers helped {{}} the book sale.", f:"organize", ko:"자원봉사자들이 책 판매 행사를 조직하는 것을 도왔다." }] },
 

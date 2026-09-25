@@ -26,6 +26,9 @@
  *   like-minded '활기찬, 열정적인' → '생각이 비슷한, 뜻이 맞는'
  */
 window.VOCAB_L = [
+  { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
+  { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },
+  { word:"loudly", exams:["공무원"], pron:"라우들리", pos:"adv", level:"B1", meanings:["큰 소리로"], syn:["noisily","boisterously","vociferously"], ant:["quietly"], ex:[{ s:"He spoke so {{}} that everyone turned around.", f:"loudly", ko:"그가 너무 큰 소리로 말해서 모두가 돌아보았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -233,7 +236,7 @@ window.VOCAB_L = [
   { word:"leave out", pron:"리브 아웃", pos:"phr", level:"B1", meanings:["빼다","생략하다"],
     syn:["omit","exclude","skip"] },
 
-  { word:"leftover", pron:"레프트오버", pos:"adj", level:"B2", meanings:["먹다 남은","남은"],
+  { word:"leftover", exams:["공무원"], pron:"레프트오버", pos:"adj", level:"B2", meanings:["먹다 남은","남은"],
     /* ★ syn 의 "surplus" 를 "left unused" 로 바꿨다. surplus 는 S 세트에서 명사
        '잉여, 과잉' 으로 선다 — 형용사인 이 표제어의 목록에 명사가 끼게 된다.
        참조 넷 가운데 abundance·deficit·excess 가 명사여서 다수를 따랐다. */
@@ -496,7 +499,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '문학의' 를 첫 자리에 지켰다. 참조는 없고 PRON 도 없었다.
      원본의 '문학적인' 을 둘째 자리에 붙였다. */
-  { word:"literary", pron:"리터레리", pos:"adj", level:"B2", meanings:["문학의","문학적인"],
+  { word:"literary", exams:["공무원"], pron:"리터레리", pos:"adj", level:"B2", meanings:["문학의","문학적인"],
     syn:["bookish","written","highbrow"],
     ex:[{ s:"The magazine publishes serious {{}} criticism.", f:"literary", ko:"그 잡지는 본격적인 문학 비평을 게재한다." }] },
 
@@ -538,7 +541,7 @@ window.VOCAB_L = [
     ex:[{ s:"Doctors managed to {{}} the infection quickly.", f:"localize", ko:"의사들은 감염을 빠르게 국한시키는 데 성공했다." }] },
 
   /* localize 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"location", pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
+  { word:"location", exams:["공무원"], pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
     /* ★ syn 의 "spot" 을 "particular place" 로 바꿨다. 사전이 '발견하다; 장소' 로
        동사와 명사를 섞어 두었는데, 참조 셋 중 둘(catch a glimpse of·detect) 이
        동사여서 S 세트에서는 동사 '발견하다' 로 선다. */
@@ -649,7 +652,7 @@ window.VOCAB_L = [
     syn:["coherent","intelligible","clear-headed"], ant:["incoherent"],
     ex:[{ s:"She gave a {{}} account of the accident.", f:"lucid", ko:"그녀는 그 사고에 대해 명료한 설명을 했다." }] },
 
-  { word:"luggage", pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
+  { word:"luggage", exams:["공무원"], pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
     syn:["baggage","bags","suitcases"],
     ex:[{ s:"Please keep your {{}} with you at all times.", f:"luggage", ko:"항상 수화물을 소지해 주세요." }] },
 

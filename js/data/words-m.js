@@ -52,6 +52,10 @@
  *   mumble 중얼거리다(사전 값 유지) / mutter 투덜거리다
  */
 window.VOCAB_M = [
+  { word:"maintain", exams:["공무원"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
+  { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
+  { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
+  { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

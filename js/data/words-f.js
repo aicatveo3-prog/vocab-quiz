@@ -457,6 +457,7 @@
  *   node tools/f-plan.js                  남은 목록의 함정 재확인
  */
 window.VOCAB_F = [
+  { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -487,7 +488,7 @@ window.VOCAB_F = [
     syn:["assist","expedite","make easier"],
     ex:[{ s:"A shared language can {{}} trade between neighbors.", f:"facilitate", ko:"공통 언어는 이웃 나라 사이의 교역을 쉽게 할 수 있다." }] },
 
-  { word:"facility", pron:"퍼실러티", pos:"n", level:"B2", meanings:["시설","설비"],
+  { word:"facility", exams:["공무원"], pron:"퍼실러티", pos:"n", level:"B2", meanings:["시설","설비"],
     syn:["installation","amenity","establishment"],
     ex:[{ s:"The town opened a new sports {{}} beside the river.", f:"facility", ko:"그 도시는 강가에 새 체육 시설을 열었다." }] },
 

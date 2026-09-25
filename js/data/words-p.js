@@ -68,6 +68,14 @@
  */
 
 window.VOCAB_P = [
+  { word:"partnership", exams:["공무원"], pron:"파트너십", pos:"n", level:"B2", meanings:["동반 관계","협력"], syn:["alliance","collaboration","association"], ex:[{ s:"The projects create new {{}} opportunities.", f:"partnership", ko:"그 사업들은 새로운 협력 기회를 만들어 낸다." }] },
+  { word:"pedagogical", exams:["공무원"], pron:"페더고지컬", pos:"adj", level:"C2", meanings:["교육의","교수법의"], syn:["educational","instructional","teaching"], ex:[{ s:"Their {{}} knowledge leaves when they retire.", f:"pedagogical", ko:"그들이 은퇴하면 그들의 교수법 지식도 함께 사라진다." }] },
+  { word:"permission", exams:["공무원"], pron:"퍼미션", pos:"n", level:"B1", meanings:["허가","허락"], syn:["consent","authorization","approval"], ant:["prohibition"], ex:[{ s:"I would appreciate it if you could grant me {{}}.", f:"permission", ko:"허가를 내주신다면 감사하겠습니다." }] },
+  { word:"pinpoint", exams:["공무원"], pron:"핀포인트", pos:"v", level:"C1", meanings:["정확히 찾아내다","정확히 지적하다"], syn:["identify","locate","determine"], ex:[{ s:"Researchers cannot {{}} why breakfast aids learning.", f:"pinpoint", ko:"연구자들은 아침 식사가 학습에 도움이 되는 이유를 정확히 짚어내지 못한다." }] },
+  { word:"plaque", exams:["공무원"], pron:"플라크", pos:"n", level:"C1", meanings:["명판","장식판"], ex:[{ s:"A small {{}} was carved from ivory.", f:"plaque", ko:"작은 명판 하나가 상아로 조각되었다." }] },
+  { word:"platform", exams:["공무원"], pron:"플랫폼", pos:"n", level:"B1", meanings:["플랫폼","연단","승강장"], syn:["stage","podium","dais"], ex:[{ s:"The {{}} had over a million agents signed up.", f:"platform", ko:"그 플랫폼에는 백만 개가 넘는 에이전트가 가입되어 있었다." }] },
+  { word:"prism", exams:["공무원"], pron:"프리즘", pos:"n", level:"C1", meanings:["프리즘"], ex:[{ s:"Movies can be used as a {{}} to understand the world.", f:"prism", ko:"영화는 세상을 이해하는 프리즘으로 쓰일 수 있다." }] },
+  { word:"publicly", exams:["공무원"], pron:"퍼블리클리", pos:"adv", level:"B2", meanings:["공개적으로"], syn:["openly","overtly","officially"], ant:["privately"], ex:[{ s:"He refused to discuss the matter {{}}.", f:"publicly", ko:"그는 그 문제를 공개적으로 논의하기를 거부했다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -271,7 +279,7 @@ window.VOCAB_P = [
   /* 승격 ⑯ — 사전은 '열정적인' 한 갈래였다. 원본의 '열렬한' 을 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(ardent, A). 원본 첫 뜻 '열렬한' 을 그대로 쓰면
      ardent 와 첫 글자가 같아진다. */
-  { word:"passionate", pron:"패셔닛", pos:"adj", level:"B2", meanings:["열정적인","열렬한"],
+  { word:"passionate", exams:["공무원"], pron:"패셔닛", pos:"adj", level:"B2", meanings:["열정적인","열렬한"],
     syn:["ardent","fervent","full of feeling"], ant:["indifferent"],
     ex:[{ s:"He is {{}} about old films.", f:"passionate", ko:"그는 옛 영화에 열정적이다." }] },
 
@@ -317,7 +325,7 @@ window.VOCAB_P = [
     syn:["stroke gently","tap lightly","give a soft touch"],
     ex:[{ s:"She stopped to {{}} the dog.", f:"pat", ko:"그녀는 멈춰서 개를 쓰다듬었다." }] },
 
-  { word:"patch", pron:"패치", pos:"n", level:"B1", meanings:["작은 부분","조각"],
+  { word:"patch", exams:["공무원"], pron:"패치", pos:"n", level:"B1", meanings:["작은 부분","조각"],
     syn:["small area","piece sewn on","spot of ground"],
     ex:[{ s:"A {{}} of blue showed through the clouds.", f:"patch", ko:"구름 사이로 파란 부분이 드러났다." }] },
 
@@ -483,7 +491,7 @@ window.VOCAB_P = [
     ex:[{ s:"The museum shows the art of many {{}}.", f:"peoples", ko:"그 박물관은 여러 민족의 예술을 보여 준다." }] },
 
   /* 승격 35 — 사전 표현과 글자까지 같다(discern, D). */
-  { word:"perceive", pron:"퍼시브", pos:"v", level:"B2", meanings:["인지하다","감지하다"],
+  { word:"perceive", exams:["공무원"], pron:"퍼시브", pos:"v", level:"B2", meanings:["인지하다","감지하다"],
     syn:["discern","become aware of","make out"],
     ex:[{ s:"Babies {{}} faces from a very early age.", f:"perceive", ko:"아기는 아주 어릴 때부터 얼굴을 인지한다." }] },
 
@@ -553,7 +561,7 @@ window.VOCAB_P = [
 
   /* 승격 40 — 사전은 '영구적인' 한 갈래였다. 원본의 '영속적인' 을 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(irreversible, I · makeshift 반의어, M). */
-  { word:"permanent", pron:"퍼머넌트", pos:"adj", level:"B1", meanings:["영구적인","영속적인"],
+  { word:"permanent", exams:["공무원"], pron:"퍼머넌트", pos:"adj", level:"B1", meanings:["영구적인","영속적인"],
     syn:["irreversible","lasting for good","never wearing off"], ant:["temporary"],
     ex:[{ s:"The injury left a {{}} scar.", f:"permanent", ko:"그 부상은 영구적인 흉터를 남겼다." }] },
 
@@ -596,7 +604,7 @@ window.VOCAB_P = [
   /* 승격 47 — 사전이 '성격; 유명인' 이었다. 참조 둘 중 character(C) 가 '성격' 을
      쓰므로 그 갈래를 첫 자리에 지키고 원본의 '개성' 을 붙였다. '유명인' 갈래는
      celebrity(C) 가 쓰던 쪽인데, 그 화면 글자는 '성격, 개성' 으로 바뀐다. */
-  { word:"personality", pron:"퍼서낼러티", pos:"n", level:"B1", meanings:["성격","개성"],
+  { word:"personality", exams:["공무원"], pron:"퍼서낼러티", pos:"n", level:"B1", meanings:["성격","개성"],
     syn:["character","make-up of a person","inborn nature"],
     ex:[{ s:"She has a warm {{}}.", f:"personality", ko:"그녀는 따뜻한 성격을 가졌다." }] },
 
@@ -612,7 +620,7 @@ window.VOCAB_P = [
 
   /* 승격 49 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      원본의 '원근법' 갈래는 버렸다. */
-  { word:"perspective", pron:"퍼스펙티브", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"perspective", exams:["공무원"], pron:"퍼스펙티브", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["standpoint","angle of view","way of looking at it"],
     ex:[{ s:"The book offers a fresh {{}} on the war.", f:"perspective", ko:"그 책은 그 전쟁에 새로운 관점을 준다." }] },
 
@@ -659,7 +667,7 @@ window.VOCAB_P = [
 
   /* 승격 53 — 사전은 '농약' 한 갈래였다. 원본의 '살충제' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(insecticide, I). */
-  { word:"pesticide", pron:"페스터사이드", pos:"n", level:"B2", meanings:["농약","살충제"],
+  { word:"pesticide", exams:["공무원"], pron:"페스터사이드", pos:"n", level:"B2", meanings:["농약","살충제"],
     syn:["insecticide","chemical for killing pests","crop spray"],
     ex:[{ s:"The farm stopped using that {{}}.", f:"pesticide", ko:"그 농장은 그 농약 쓰기를 그쳤다." }] },
 
@@ -1373,7 +1381,7 @@ window.VOCAB_P = [
     syn:["being with child","carrying a baby","months before birth"],
     ex:[{ s:"She kept working through her {{}}.", f:"pregnancy", ko:"그녀는 임신 기간에도 계속 일했다." }] },
 
-  { word:"prehistoric", pron:"프리히스토릭", pos:"adj", level:"B2", meanings:["선사 시대의"],
+  { word:"prehistoric", exams:["공무원"], pron:"프리히스토릭", pos:"adj", level:"B2", meanings:["선사 시대의"],
     syn:["before written records","of the earliest ages","from long before history"],
     ex:[{ s:"The cave holds {{}} paintings.", f:"prehistoric", ko:"그 굴에는 선사 시대의 그림이 있다." }] },
 

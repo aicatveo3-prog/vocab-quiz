@@ -39,6 +39,7 @@
  * 걸러내므로 화면에는 아직 W 세트가 뜨지 않는다.
  */
 window.VOCAB_W = [
+  { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -160,7 +161,7 @@ window.VOCAB_W = [
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
   /* 위 weaken(동사) 과 품사로 갈랐다. */
-  { word:"weakness", pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
+  { word:"weakness", exams:["공무원"], pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
     syn:["weak point","want of strength","soft spot"],
     ex:[{ s:"Pride was his one {{}}.", f:"weakness", ko:"자만이 그의 유일한 약점이었다." }] },
 
