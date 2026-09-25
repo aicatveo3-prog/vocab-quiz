@@ -768,6 +768,16 @@
  *   node tools/match-order-check.js       짝 맞추기 보드 전수 검사
  */
 window.VOCAB_E = [
+  { word:"echo", exams:["공무원"], pron:"에코", pos:"v", level:"B2", meanings:["그대로 되풀이하다","반향하다"], syn:["repeat","reiterate","resonate"], ex:[{ s:"Don't just {{}} a worn-out, hand-me-down argument.", f:"echo", ko:"낡고 물려받은 주장을 그대로 되풀이하지 마라." }] },
+  { word:"egalitarian", exams:["공무원"], pron:"이갤리테리언", pos:"adj", level:"C2", meanings:["평등주의의"], syn:["equal","democratic","classless"], ant:["hierarchical"], ex:[{ s:"Coffeehouses were England's first {{}} meeting place.", f:"egalitarian", ko:"커피하우스는 잉글랜드 최초의 평등한 만남의 장이었다." }] },
+  { word:"electron", exams:["공무원"], pron:"일렉트론", pos:"n", level:"B2", meanings:["전자"], ex:[{ s:"Lasers depend on how light interacts with {{}}.", f:"electrons", ko:"레이저는 빛이 전자와 상호작용하는 방식에 달려 있다." }] },
+  { word:"emperor", exams:["공무원"], pron:"엠퍼러", pos:"n", level:"B2", meanings:["황제"], syn:["monarch","ruler","sovereign"], ex:[{ s:"He gave a demonstration before the {{}}.", f:"emperor", ko:"그는 황제 앞에서 시연을 했다." }] },
+  { word:"enslave", exams:["공무원"], pron:"인슬레이브", pos:"v", level:"C1", meanings:["노예로 만들다"], syn:["subjugate","enthrall","subject"], ant:["liberate"], ex:[{ s:"The trade {{}} millions of Africans.", f:"enslaved", ko:"그 무역은 수백만 명의 아프리카인을 노예로 만들었다." }] },
+  { word:"equate", exams:["공무원"], pron:"이퀘이트", pos:"v", level:"C1", meanings:["동일시하다"], syn:["identify","associate","liken"], ex:[{ s:"They began to {{}} failure with stupidity.", f:"equate", ko:"그들은 실패를 어리석음과 동일시하기 시작했다." }] },
+  { word:"etch", exams:["공무원"], pron:"에치", pos:"v", level:"C1", meanings:["새기다","아로새기다"], syn:["engrave","inscribe","carve"], ex:[{ s:"Messages were {{}} in cardboard and snow.", f:"etched", ko:"메시지가 판지와 눈에 새겨졌다." }] },
+  { word:"evaporation", exams:["공무원"], pron:"이배퍼레이션", pos:"n", level:"B2", meanings:["증발"], ex:[{ s:"Drylands lose moisture through {{}}.", f:"evaporation", ko:"건조지는 증발을 통해 수분을 잃는다." }] },
+  { word:"exhaustion", exams:["공무원"], pron:"이그조스천", pos:"n", level:"B2", meanings:["탈진","고갈"], syn:["fatigue","tiredness","weariness"], ant:["energy"], ex:[{ s:"Emotional {{}} is the core of burnout.", f:"exhaustion", ko:"정서적 탈진이 번아웃의 핵심이다." }] },
+  { word:"exposition", exams:["공무원"], pron:"엑스포지션", pos:"n", level:"C1", meanings:["박람회","전시회","설명"], syn:["exhibition","fair","display"], ex:[{ s:"The wildlife {{}} runs all weekend.", f:"exposition", ko:"그 야생동물 박람회는 주말 내내 열린다." }] },
   { word:"exclude", exams:["공무원"], pron:"익스클루드", pos:"v", level:"B2", meanings:["제외하다","배제하다"], syn:["omit","bar","leave out"], ant:["include"], ex:[{ s:"People aim to {{}} plastic waste from daily life.", f:"exclude", ko:"사람들은 일상에서 플라스틱 쓰레기를 배제하려 한다." }] },
   { word:"embassy", exams:["공무원"], pron:"엠버시", pos:"n", level:"B2", meanings:["대사관"], ex:[{ s:"Complaints are handled by the relevant {{}}.", f:"embassy", ko:"불만은 해당 대사관이 처리한다." }] },
   { word:"energetic", exams:["공무원"], pron:"에너제틱", pos:"adj", level:"B2", meanings:["활기찬","정력적인"], syn:["lively","vigorous","dynamic"], ant:["lethargic"], ex:[{ s:"Young people are {{}} and active.", f:"energetic", ko:"젊은이들은 활기차고 활동적이다." }] },
