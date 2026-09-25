@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1116">
+<title>버전 선택 UI 시안 — A / B / C</title>
+<style>
+:root{
+  --bg:#161a22; --surface:#222834; --surface-2:#2c3340; --line:#3a4251; --line-2:#4d5666;
+  --txt:#f2f4f9; --txt-2:#cbd2de; --dim:#9aa3b2; --dimmer:#727b8a;
+  --accent:#6ea0ff; --accent-soft:rgba(110,160,255,.18);
+  --ok:#43dda3; --ng:#ff8585;
+  --r:12px; --r-sm:8px; --r-pill:999px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",Roboto,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;line-height:1.35;letter-spacing:-.01em}
+button{font-family:inherit;font-size:inherit;color:inherit;cursor:pointer}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* 페이지 레이아웃 */
+.page{max-width:1240px;margin:0 auto;padding:32px 20px 80px}
+.page > h1{font-size:24px;font-weight:700;margin-bottom:4px}
+.page > p.lead{color:var(--dim);font-size:14px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+
+.col > h2{font-size:16px;font-weight:650;margin-bottom:6px}
+.col > h2 .tag{display:inline-block;background:var(--accent);color:#fff;font-size:11px;
+  font-weight:700;border-radius:var(--r-pill);padding:1px 8px;margin-left:6px;vertical-align:2px}
+.col > .desc{color:var(--dim);font-size:13px;margin:0 0 14px;min-height:56px}
+.pros{list-style:none;padding:0;margin:14px 0 0;font-size:12.5px}
+.pros li{padding:3px 0 3px 18px;position:relative;color:var(--txt-2)}
+.pros li.pro::before{content:'＋';position:absolute;left:0;color:var(--ok);font-weight:700}
+.pros li.con::before{content:'－';position:absolute;left:0;color:var(--ng);font-weight:700}
+
+/* 폰 프레임 */
+.phone{background:var(--bg);border:1px solid var(--line-2);border-radius:22px;
+  padding:20px 18px 22px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+
+/* ── 앱 컴포넌트 (실제 테마 이식) ── */
+.site-head{margin:2px 0 18px}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-head h1{font-size:20px;font-weight:650}
+.head-acct{background:var(--surface);border:1px solid var(--line);color:var(--txt-2);
+  border-radius:var(--r-pill);padding:5px 12px;font-size:12px}
+.today{margin:0 0 16px;font-size:13px;color:var(--dim)}
+.today b{color:var(--txt);font-weight:600}
+.prog{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.prog-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.prog-label{font-size:13px;color:var(--dim)}
+.prog-val{font-size:13px;color:var(--dimmer)}
+.prog-val b{font-size:20px;color:var(--txt);margin-right:2px}
+.bar{display:flex;height:6px;background:var(--surface-2);border-radius:var(--r-pill);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.hero{display:block;width:100%;text-align:left;margin:22px 0 10px;background:var(--accent);
+  border:none;border-radius:var(--r);padding:16px 18px;color:#fff}
+.hero-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.hero-row b{font-size:16px;font-weight:650}
+.hero-n{font-size:12px;opacity:.8;white-space:nowrap}
+.hero-sub{display:block;margin-top:3px;font-size:12px;opacity:.85}
+.hero-alt{background:var(--surface);border:1px solid var(--line)}
+.hero-alt .hero-row b{color:var(--txt)}
+.hero-alt .hero-n{color:var(--dim)}
+.hero-alt .hero-sub{color:var(--dim)}
+.section-title{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--dimmer);margin:24px 0 8px}
+.rows{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.row-btn{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;
+  border:none;border-bottom:1px solid var(--line);padding:13px 15px}
+.row-btn:last-child{border-bottom:none}
+.row-main{flex:1;min-width:0}
+.row-main b{display:block;font-size:14px;font-weight:600}
+.row-main span{font-size:12px;color:var(--dim)}
+.row-n{font-size:12px;color:var(--dimmer);white-space:nowrap}
+.foot-nav{display:flex;gap:8px;margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+.link-btn{flex:1;background:none;border:none;padding:9px;font-size:13px;color:var(--txt-2);border-radius:var(--r-sm)}
+
+/* ── A: 세그먼트 탭 ── */
+.ed-seg{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:4px;margin:0 0 16px;overflow-x:auto}
+.ed-seg button{flex:1;min-width:64px;background:none;border:none;border-radius:var(--r-sm);
+  padding:8px 6px 7px;text-align:center;color:var(--txt-2);white-space:nowrap}
+.ed-seg button b{display:block;font-size:13px;font-weight:600}
+.ed-seg button span{display:block;font-size:10.5px;color:var(--dimmer);margin-top:1px;font-variant-numeric:tabular-nums}
+.ed-seg button.is-on{background:var(--accent);color:#fff}
+.ed-seg button.is-on span{color:rgba(255,255,255,.8)}
+.ed-seg button.is-soon{opacity:.5}
+.ed-seg button.is-soon span{color:var(--dimmer)}
+
+/* ── B: 드롭다운 셀렉터 ── */
+.ed-drop{position:relative;margin:0 0 16px}
+.ed-drop-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;
+  background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r);padding:12px 15px;text-align:left}
+.ed-drop-btn .lab{font-size:11px;color:var(--dimmer);letter-spacing:.04em;text-transform:uppercase}
+.ed-drop-btn .cur{font-size:15px;font-weight:650}
+.ed-drop-btn .cur small{font-size:12px;color:var(--dim);font-weight:400;margin-left:6px}
+.ed-drop-btn .chev{color:var(--dim);font-size:13px}
+.ed-menu{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.ed-menu button{display:flex;align-items:center;justify-content:space-between;width:100%;background:none;
+  border:none;border-bottom:1px solid var(--line);padding:12px 15px;text-align:left;color:var(--txt)}
+.ed-menu button:last-child{border-bottom:none}
+.ed-menu button.is-on{background:var(--accent-soft)}
+.ed-menu button.is-on .nm{color:var(--accent);font-weight:650}
+.ed-menu .nm{font-size:14px}
+.ed-menu .ct{font-size:12px;color:var(--dimmer);font-variant-numeric:tabular-nums}
+.ed-menu button.is-soon .nm{color:var(--dimmer)}
+
+/* ── C: 첫 진입 전체화면 + 미니 칩 ── */
+.ed-chip{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--line);
+  color:var(--txt-2);border-radius:var(--r-pill);padding:5px 12px;font-size:12px}
+.ed-chip b{color:var(--txt);font-weight:600}
+.ed-chip .chev{color:var(--dim)}
+.picker-title{font-size:19px;font-weight:700;margin:8px 0 2px;text-align:center}
+.picker-sub{color:var(--dim);font-size:13px;text-align:center;margin:0 0 20px}
+.picker-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pick{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 14px;text-align:center}
+.pick.is-on{border-color:var(--accent);background:var(--accent-soft)}
+.pick .emoji{font-size:26px}
+.pick b{display:block;font-size:15px;font-weight:650;margin-top:6px}
+.pick span{display:block;font-size:12px;color:var(--dim);margin-top:2px;font-variant-numeric:tabular-nums}
+.pick.is-soon{opacity:.55}
+.picker-note{text-align:center;color:var(--dimmer);font-size:12px;margin-top:18px}
+.mini-caption{font-size:11px;color:var(--dimmer);text-align:center;margin:10px 0 0}
+.divider{border-top:1px dashed var(--line-2);margin:18px 0;text-align:center}
+.divider span{position:relative;top:-11px;background:var(--bg);padding:0 10px;font-size:11px;color:var(--dimmer)}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>버전 선택 UI 시안</h1>
+  <p class="lead">앱의 실제 다크 테마를 그대로 적용한 목업입니다. 현재 선택은 <b>공무원(184단어)</b> 기준이며, 수능·토익은 아직 데이터가 없어 <b>준비 중</b> 상태로 표시됩니다.</p>
+
+  <div class="grid">
+
+    <!-- ══════════ A ══════════ -->
+    <div class="col">
+      <h2>A. 가로 세그먼트 탭 <span class="tag">추천</span></h2>
+      <p class="desc">4개 버전이 홈 상단에 항상 보이는 탭. 탭을 누르면 아래 전체(진척도·정복·연습)가 즉시 그 버전으로 갱신됩니다.</p>
+      <div class="phone">
+        <header class="site-head">
+          <div class="head-row"><h1>영단어 퀴즈</h1><button class="head-acct">로그인</button></div>
+        </header>
+        <div class="ed-seg">
+          <button><b>종합</b><span>4,606</span></button>
+          <button class="is-on"><b>공무원</b><span>184</span></button>
+          <button class="is-soon"><b>수능</b><span>준비중</span></button>
+          <button class="is-soon"><b>토익</b><span>준비중</span></button>
+        </div>
+        <p class="today"><b class="tnum">12</b>문제 · 연속 <b class="tnum">3</b>일</p>
+        <div class="prog">
+          <div class="prog-top"><span class="prog-label">학습한 단어</span>
+            <span class="prog-val"><b>23</b>/ 184</span></div>
+          <div class="bar"><i style="width:12%"></i></div>
+        </div>
+        <button class="hero">
+          <span class="hero-row"><b>정복 모드</b><span class="hero-n">10챕터</span></span>
+          <span class="hero-sub">세트 → 챕터(20단어) → 4가지 형식 훈련</span>
+        </button>
+        <button class="hero hero-alt">
+          <span class="hero-row"><b>오답 노트</b><span class="hero-n">1차 5</span></span>
+          <span class="hero-sub">버전과 무관하게 공유됩니다</span>
+        </button>
+        <h2 class="section-title">개별 연습</h2>
+        <div class="rows">
+          <div class="row-btn"><span class="row-main"><b>4지선다</b><span>영↔한 양방향</span></span><span class="row-n">184단어</span></div>
+          <div class="row-btn"><span class="row-main"><b>아닌 것 고르기</b><span>유의어 구별</span></span><span class="row-n">120단어</span></div>
+          <div class="row-btn"><span class="row-main"><b>문장 빈칸</b><span>문맥 속 구별</span></span><span class="row-n">156단어</span></div>
+        </div>
+        <nav class="foot-nav"><button class="link-btn">오답 노트</button><button class="link-btn">단어장</button><button class="link-btn">설정</button></nav>
+      </div>
+      <ul class="pros">
+        <li class="pro">한 번에 전체 버전이 보여 전환이 가장 빠름</li>
+        <li class="pro">지금 어떤 버전인지 항상 명확</li>
+        <li class="con">버전이 더 늘면 한 줄이 좁아짐(가로 스크롤 필요)</li>
+      </ul>
+    </div>
+
+    <!-- ══════════ B ══════════ -->
+    <div class="col">
+      <h2>B. 드롭다운 셀렉터</h2>
+      <p class="desc">"현재: 공무원 ▾" 한 줄로 접어두고, 누르면 목록이 펼쳐집니다. 공간을 아끼고 버전이 많아져도 깔끔합니다.</p>
+      <div class="phone">
+        <header class="site-head">
+          <div class="head-row"><h1>영단어 퀴즈</h1><button class="head-acct">로그인</button></div>
+        </header>
+        <div class="ed-drop">
+          <button class="ed-drop-btn">
+            <span><span class="lab">버전</span><br><span class="cur">공무원 <small>184단어</small></span></span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="ed-menu">
+            <button><span class="nm">종합</span><span class="ct">4,606</span></button>
+            <button class="is-on"><span class="nm">공무원</span><span class="ct">184</span></button>
+            <button class="is-soon"><span class="nm">수능</span><span class="ct">준비중</span></button>
+            <button class="is-soon"><span class="nm">토익</span><span class="ct">준비중</span></button>
+          </div>
+        </div>
+        <p class="today"><b class="tnum">12</b>문제 · 연속 <b class="tnum">3</b>일</p>
+        <div class="prog">
+          <div class="prog-top"><span class="prog-label">학습한 단어</span>
+            <span class="prog-val"><b>23</b>/ 184</span></div>
+          <div class="bar"><i style="width:12%"></i></div>
+        </div>
+        <button class="hero">
+          <span class="hero-row"><b>정복 모드</b><span class="hero-n">10챕터</span></span>
+          <span class="hero-sub">세트 → 챕터(20단어) → 4가지 형식 훈련</span>
+        </button>
+        <p class="mini-caption">↑ 펼친 상태를 함께 보여준 목업 (실제로는 접혀 있음)</p>
+      </div>
+      <ul class="pros">
+        <li class="pro">공간 절약 — 홈이 덜 복잡함</li>
+        <li class="pro">버전이 5개 이상 늘어도 깔끔</li>
+        <li class="con">전환에 탭이 2번(열기→고르기) 필요</li>
+        <li class="con">현재 버전이 살짝 덜 눈에 띔</li>
+      </ul>
+    </div>
+
+    <!-- ══════════ C ══════════ -->
+    <div class="col">
+      <h2>C. 첫 진입 전체화면 + 미니 표시</h2>
+      <p class="desc">앱을 처음 켜면 큰 카드로 버전을 고르고, 이후 홈에는 작은 현재 표시만 둡니다. 온보딩이 뚜렷합니다.</p>
+      <div class="phone">
+        <p class="picker-title">어떤 시험을 준비하세요?</p>
+        <p class="picker-sub">언제든 홈에서 바꿀 수 있어요</p>
+        <div class="picker-grid">
+          <div class="pick"><span class="emoji">📚</span><b>종합</b><span>4,606단어</span></div>
+          <div class="pick is-on"><span class="emoji">👨‍⚖️</span><b>공무원</b><span>184단어</span></div>
+          <div class="pick is-soon"><span class="emoji">🎓</span><b>수능</b><span>준비중</span></div>
+          <div class="pick is-soon"><span class="emoji">💼</span><b>토익</b><span>준비중</span></div>
+        </div>
+        <p class="picker-note">고른 버전으로 학습이 시작됩니다</p>
+        <div class="divider"><span>이후 홈 상단</span></div>
+        <div class="head-row">
+          <h1 style="font-size:20px;font-weight:650">영단어 퀴즈</h1>
+          <span class="ed-chip">👨‍⚖️ <b>공무원</b> <span class="chev">▾</span></span>
+        </div>
+        <p class="mini-caption">홈에는 이 작은 칩만 — 누르면 다시 선택 화면</p>
+      </div>
+      <ul class="pros">
+        <li class="pro">처음 사용자가 목적을 뚜렷이 선택 (온보딩)</li>
+        <li class="pro">홈이 가장 깔끔</li>
+        <li class="con">전환하려면 화면을 한 번 거쳐야 함</li>
+        <li class="con">자주 버전을 오가는 사용자에겐 번거로움</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
