@@ -322,11 +322,13 @@ window.Store = (function () {
     return out;
   }
 
-  /** 전체 진척도 요약 */
-  function summary(totalWords) {
+  /** 전체 진척도 요약.
+     @param scope 있으면 그 단어 이름 집합({word:true}) 안에서만 학습 수를 센다.
+       버전별 진척도(공무원 184단어 중 몇 개 학습)를 위해 넘긴다. 없으면 전체. */
+  function summary(totalWords, scope) {
     var studied = 0;
     Object.keys(state.words).forEach(function (w) {
-      if (state.words[w].seen > 0) studied++;
+      if (state.words[w].seen > 0 && (!scope || scope[w])) studied++;
     });
     return {
       total: totalWords,
@@ -545,10 +547,18 @@ window.Store = (function () {
 
   var SESS_PREFIX = 'vocabQuiz.sess.';
 
-  /** 세션 키를 만든다. 개별 연습은 모드+세트, 정복은 세트+챕터. */
+  /** 세션 키를 만든다. 개별 연습은 모드+세트, 정복은 세트+챕터.
+     버전(에디션)이 종합이 아니면 접두사를 붙여 진행을 분리한다. 공무원 A세트와
+     종합 A세트는 출제 대상이 다르므로 이어풀기도 섞이면 안 된다. 종합('all')은
+     접두사를 붙이지 않아 기존 사용자의 이어풀기 스냅샷을 그대로 잇는다. */
+  function editionPrefix() {
+    var ed = (window.Edition && window.Edition.get) ? window.Edition.get() : null;
+    return (ed && ed !== 'all') ? ed + '_' : '';
+  }
   function sessionKey(flow, modeId, setName, chapterIndex) {
-    if (flow === 'conquer') return SESS_PREFIX + 'conq_' + setName + '_' + chapterIndex;
-    return SESS_PREFIX + 'prac_' + modeId + '_' + setName;
+    var pfx = editionPrefix();
+    if (flow === 'conquer') return SESS_PREFIX + pfx + 'conq_' + setName + '_' + chapterIndex;
+    return SESS_PREFIX + pfx + 'prac_' + modeId + '_' + setName;
   }
 
   /* ── 없어진 모드의 이어풀기 스냅샷 청소 ──────────

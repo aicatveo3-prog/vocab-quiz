@@ -507,3 +507,33 @@ b,strong{font-weight:600}
 
 /* 카드가 연달아 놓일 때 간격 정리 */
 .hero + .hero{margin-top:8px}
+
+
+/* ══════════ 버전(에디션) ══════════ */
+
+/* 홈 미니 칩 — 헤더 아래 왼쪽에 작게. 현재 버전을 보여주고 누르면 선택 화면 */
+.ed-chip{display:inline-flex;align-items:center;gap:6px;margin:0 0 16px;
+  background:var(--surface);border:1px solid var(--line);color:var(--txt-2);
+  border-radius:var(--r-pill);padding:6px 12px;font-size:13px;transition:background .12s}
+.ed-chip:hover{background:var(--surface-2)}
+.ed-chip b{color:var(--txt);font-weight:600}
+.ed-chip-chev{color:var(--dim);font-size:11px}
+
+/* 버전 선택 화면 — 첫 진입 시 전체 화면 */
+.picker-wrap{position:relative;padding-top:44px;max-width:420px;margin:0 auto}
+.picker-back{position:absolute;top:0;left:0}
+.picker-title{font-size:20px;font-weight:700;text-align:center;margin:8px 0 4px}
+.picker-sub{color:var(--dim);font-size:13px;text-align:center;margin:0 0 22px}
+.picker-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pick{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:20px 14px;text-align:center;transition:border-color .12s,background .12s}
+.pick:not(:disabled):hover{background:var(--surface-2)}
+.pick.is-on{border-color:var(--accent);background:var(--accent-soft)}
+.pick-emoji{display:block;font-size:28px;line-height:1}
+.pick b{display:block;font-size:15px;font-weight:650;margin-top:8px}
+.pick span{display:block;font-size:12px;color:var(--dim);margin-top:2px;
+  font-variant-numeric:tabular-nums}
+.pick.is-soon{opacity:.5}
+.pick.is-soon span{color:var(--dimmer)}
+.picker-note{text-align:center;color:var(--dimmer);font-size:12px;
+  line-height:1.6;margin:22px 8px 0}

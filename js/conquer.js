@@ -61,7 +61,11 @@ window.Conquer = (function () {
   }
 
   function buildChapters(set) {
-    var sorted = set.words.slice().sort(function (a, b) {
+    // 버전(에디션)이 종합이 아니면 이 버전에 속한 단어만 챕터로 묶는다.
+    // 세트 목록·챕터 목록·챕터 세션이 모두 이 함수를 거치므로 한 곳만 걸러도
+    // 정복 흐름 전체가 버전을 따른다.
+    var src = (window.Edition ? window.Edition.filter(set.words) : set.words);
+    var sorted = src.slice().sort(function (a, b) {
       return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
     });
     var chapters = [];
