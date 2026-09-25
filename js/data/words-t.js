@@ -31,6 +31,17 @@
  * 걸러내므로 화면에는 아직 T 세트가 뜨지 않는다.
  */
 window.VOCAB_T = [
+  { word:"taxonomist", exams:["공무원"], pron:"택소노미스트", pos:"n", level:"C2", meanings:["분류학자"], ex:[{ s:"{{}} recognize about 1.5 million living species.", f:"Taxonomists", ko:"분류학자들은 약 150만 종의 생물을 인정한다." }] },
+  { word:"template", exams:["공무원"], pron:"템플릿", pos:"n", level:"C1", meanings:["본보기","견본","템플릿"], syn:["model","pattern","guide"], ex:[{ s:"It could act as a {{}} for the whole discipline.", f:"template", ko:"그것은 그 분야 전체의 본보기가 될 수 있다." }] },
+  { word:"tense", exams:["공무원"], pron:"텐스", pos:"v", level:"B2", meanings:["긴장시키다","긴장한"], syn:["tighten","stiffen","strain"], ant:["relax"], ex:[{ s:"Adrenaline {{}} the muscles for action.", f:"tenses", ko:"아드레날린은 행동을 위해 근육을 긴장시킨다." }] },
+  { word:"tentatively", exams:["공무원"], pron:"텐터티블리", pos:"adv", level:"C1", meanings:["잠정적으로","머뭇거리며"], syn:["provisionally","hesitantly","cautiously"], ant:["definitely"], ex:[{ s:"He answered {{}}, unsure of the facts.", f:"tentatively", ko:"그는 사실을 확신하지 못한 채 머뭇거리며 답했다." }] },
+  { word:"thoroughly", exams:["공무원"], pron:"써로울리", pos:"adv", level:"B2", meanings:["철저히","완전히"], syn:["completely","fully","exhaustively"], ex:[{ s:"He knows the city {{}}.", f:"thoroughly", ko:"그는 그 도시를 철저히 안다." }] },
+  { word:"thrilled", exams:["공무원"], pron:"쓰릴드", pos:"adj", level:"B2", meanings:["아주 신이 난","짜릿한"], syn:["excited","delighted","exhilarated"], ant:["bored"], ex:[{ s:"He felt {{}} and excited by the discovery.", f:"thrilled", ko:"그는 그 발견에 아주 신이 나고 들떴다." }] },
+  { word:"tolerable", exams:["공무원"], pron:"탈러러블", pos:"adj", level:"C1", meanings:["견딜 만한"], syn:["bearable","endurable","acceptable"], ant:["intolerable"], ex:[{ s:"Sustained g-force is more {{}} when lying down.", f:"tolerable", ko:"누워 있으면 지속적인 중력이 더 견딜 만하다." }] },
+  { word:"tragedy", exams:["공무원"], pron:"트래저디", pos:"n", level:"B2", meanings:["비극"], syn:["catastrophe","disaster","calamity"], ant:["comedy"], ex:[{ s:"Oedipus the King is a classical {{}}.", f:"tragedy", ko:"'오이디푸스 왕'은 고전 비극이다." }] },
+  { word:"tribal", exams:["공무원"], pron:"트라이벌", pos:"adj", level:"C1", meanings:["부족의"], syn:["ethnic","clan","native"], ex:[{ s:"{{}} oral history suggests a mudslide occurred.", f:"Tribal", ko:"부족의 구전 역사는 진흙 사태가 있었음을 시사한다." }] },
+  { word:"tribute", exams:["공무원"], pron:"트리뷰트", pos:"n", level:"C1", meanings:["헌사","경의"], syn:["homage","respect","honor"], ex:[{ s:"They made attempts to pay {{}} to the team.", f:"tribute", ko:"그들은 팀에 경의를 표하려 애썼다." }] },
+  { word:"trove", exams:["공무원"], pron:"트로브", pos:"n", level:"C2", meanings:["귀중한 발견물","수집물"], syn:["hoard","cache","collection"], ex:[{ s:"Evans found a {{}} of artifacts from the Minoan age.", f:"trove", ko:"에번스는 미노아 시대 유물의 보고를 발견했다." }] },
   { word:"thereby", exams:["공무원"], pron:"데어바이", pos:"adv", level:"C1", meanings:["그렇게 함으로써","그것에 의해"], syn:["thus","thereupon","consequently"], ex:[{ s:"We pollute the oceans, {{}} harming ourselves.", f:"thereby", ko:"우리는 바다를 오염시켜, 그렇게 함으로써 우리 자신을 해친다." }] },
   { word:"takeaway", exams:["공무원"], pron:"테이크어웨이", pos:"n", level:"B2", meanings:["포장 음식","테이크아웃"], syn:["takeout","fast food"], ex:[{ s:"Target the {{}} items that end up in the ocean.", f:"takeaway", ko:"바다로 흘러드는 포장 음식 용기를 겨냥하라." }] },
   { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
