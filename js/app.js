@@ -47,6 +47,28 @@
     return set;
   }
 
+  /* ── 오답 노트의 버전별 표시 ────────────────────
+     오답 기록은 버전을 가리지 않고 하나로 쌓인다(store.js). 다만 "공무원 오답
+     노트"는 전체 오답 중 공무원 단어만 보여야 하므로, 표시 단계에서 현재 버전
+     단어로 거른다. 종합·미선택이면 전체를 그대로 보여준다. */
+  function edWrongList(tier) {
+    var scope = edScopeSet();
+    var list = window.Store.wrongList(tier);
+    return scope ? list.filter(function (w) { return scope[w]; }) : list;
+  }
+  /** 버전으로 거른 차수별 오답 개수 {1,2,3}. 종합·미선택이면 전체 집계. */
+  function edWrongCounts() {
+    var scope = edScopeSet();
+    if (!scope) return window.Store.wrongCounts();
+    var c = { 1: 0, 2: 0, 3: 0 };
+    window.Store.wrongList(1).forEach(function (w) {
+      if (!scope[w]) return;
+      var t = window.Store.tier(w);
+      for (var i = 1; i <= t && i <= window.Store.MAX_TIER; i++) c[i]++;
+    });
+    return c;
+  }
+
   function $(id) { return document.getElementById(id); }
 
   /* ── 버전 칩 · 선택 화면 ──────────────────────
@@ -142,7 +164,7 @@
     }, 0);
     $('conquer-n').textContent = totalChapters + '챕터';
 
-    var wc = window.Store.wrongCounts();
+    var wc = edWrongCounts();
     var wrongN = wc[1];
     var badge = $('wrong-badge');
     badge.textContent = wrongN;
@@ -1330,8 +1352,9 @@
     }
     // 복습 세션의 "한 번 더"는 그 차수에 남아 있는 오답 전체를 뜻한다.
     // 빈 배열을 넘기면 세트 전체(396문제)가 시작되므로 반드시 걸러낸다.
+    // 현재 버전의 오답만 다시 푼다 (공무원 복습은 공무원 오답만).
     var tier = state.reviewTier;
-    var remain = window.Store.wrongList(tier);
+    var remain = edWrongList(tier);
     if (!remain.length) {
       alert(tier + '차 오답 노트가 비었습니다.');
       go('wrong');
@@ -1342,9 +1365,15 @@
 
   /* ── 오답 노트 ─────────────────────────────── */
   function renderWrong() {
-    var counts = window.Store.wrongCounts();
+    var counts = edWrongCounts();
     var tier = state.wrongTier;
-    var wrong = window.Store.wrongList(tier);
+    var wrong = edWrongList(tier);
+
+    // 오답 노트 헤더에 현재 버전을 표시한다 (종합이면 생략)
+    var edId = window.Edition && window.Edition.get();
+    var edLabel = (edId && edId !== 'all') ? window.Edition.label(edId) : '';
+    $('wrong-ed').textContent = edLabel;
+    $('wrong-ed').style.display = edLabel ? '' : 'none';
 
     // 차수 전환 칩 — 1차는 2·3차 단어를 모두 포함한다
     var tiers = $('wrong-tiers');

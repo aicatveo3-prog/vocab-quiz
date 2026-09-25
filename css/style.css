@@ -341,6 +341,9 @@ b,strong{font-weight:600}
 .sub-head{display:flex;align-items:center;gap:12px;margin:0 0 16px}
 .sub-head h2{font-size:18px;flex:1}
 .head-n{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+/* 오답 노트 헤더의 현재 버전 표시 pill */
+.ed-tag{background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;
+  border-radius:var(--r-pill);padding:3px 10px;white-space:nowrap}
 .list{display:grid;gap:6px}
 .li{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px}
 .li-top{display:flex;align-items:center;gap:8px}
