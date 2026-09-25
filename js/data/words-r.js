@@ -20,6 +20,12 @@
  * 걸러내므로 화면에는 아직 R 세트가 뜨지 않는다.
  */
 window.VOCAB_R = [
+  { word:"radiation", exams:["공무원"], pron:"레이디에이션", pos:"n", level:"B2", meanings:["방사선","복사"], syn:["radioactivity","rays","emission"], ex:[{ s:"Astronauts could not safely pass through the belt of {{}}.", f:"radiation", ko:"우주비행사들은 방사선 벨트를 안전하게 통과할 수 없었다." }] },
+  { word:"reassurance", exams:["공무원"], pron:"리어슈어런스", pos:"n", level:"C1", meanings:["안심","확신을 줌"], syn:["comfort","consolation","encouragement"], ex:[{ s:"Bodily contact provides {{}} of safety.", f:"reassurance", ko:"신체 접촉은 안전에 대한 안심을 준다." }] },
+  { word:"replenish", exams:["공무원"], pron:"리플레니시", pos:"v", level:"C1", meanings:["다시 채우다","보충하다"], syn:["refill","restock","top up"], ant:["deplete"], ex:[{ s:"The king {{}} his treasury for a time.", f:"replenished", ko:"그 왕은 한동안 국고를 다시 채웠다." }] },
+  { word:"reputable", exams:["공무원"], pron:"레퓨터블", pos:"adj", level:"C1", meanings:["평판이 좋은","존경받는"], syn:["respected","esteemed","reliable"], ant:["disreputable"], ex:[{ s:"She wanted to work for a {{}} company.", f:"reputable", ko:"그녀는 평판 좋은 회사에서 일하고 싶어 했다." }] },
+  { word:"rotate", exams:["공무원"], pron:"로테이트", pos:"v", level:"B2", meanings:["회전시키다","교대하다"], syn:["revolve","turn","alternate"], ex:[{ s:"Arrange toys in baskets and {{}} them occasionally.", f:"rotate", ko:"장난감을 바구니에 넣고 가끔씩 교체해 주어라." }] },
+  { word:"rudimentary", exams:["공무원"], pron:"루디멘터리", pos:"adj", level:"C2", meanings:["기초적인","초보적인"], syn:["basic","elementary","primitive"], ant:["advanced"], ex:[{ s:"Primates acquire only a {{}} communicative system.", f:"rudimentary", ko:"영장류는 초보적인 의사소통 체계만 습득한다." }] },
   { word:"retailer", exams:["공무원"], pron:"리테일러", pos:"n", level:"B2", meanings:["소매업체","소매상"], syn:["seller","merchant","vendor"], ex:[{ s:"The {{}} offers online grocery shopping.", f:"retailer", ko:"그 소매업체는 온라인 식료품 쇼핑을 제공한다." }] },
   { word:"reusable", exams:["공무원"], pron:"리유저블", pos:"adj", level:"B2", meanings:["재사용 가능한"], syn:["recyclable","washable","durable"], ant:["disposable"], ex:[{ s:"Opt for {{}} containers instead of plastic.", f:"reusable", ko:"플라스틱 대신 재사용 가능한 용기를 선택하라." }] },
   { word:"rearrange", exams:["공무원"], pron:"리어레인지", pos:"v", level:"B2", meanings:["재배치하다","재정리하다"], syn:["reorganize","reorder","shuffle"], ex:[{ s:"They began {{}} their environment to suit themselves.", f:"rearranging", ko:"그들은 환경을 자신에게 맞게 재배치하기 시작했다." }] },
