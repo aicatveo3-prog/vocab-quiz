@@ -68,6 +68,10 @@
  */
 
 window.VOCAB_P = [
+  { word:"packaging", exams:["공무원"], pron:"패키징", pos:"n", level:"B2", meanings:["포장","포장재"], syn:["wrapping","packing","wrapper"], ex:[{ s:"Avoid single-use plastic {{}}.", f:"packaging", ko:"일회용 플라스틱 포장을 피하라." }] },
+  { word:"poised", exams:["공무원"], pron:"포이즈드", pos:"adj", level:"C1", meanings:["준비된","태세를 갖춘"], syn:["ready","prepared","set"], ex:[{ s:"Employment is {{}} for significant change.", f:"poised", ko:"고용은 큰 변화를 앞두고 있다." }] },
+  { word:"prioritize", exams:["공무원"], pron:"프라이오리타이즈", pos:"v", level:"B2", meanings:["우선순위를 두다"], syn:["rank","emphasize","prefer"], ex:[{ s:"It is critical to {{}} training and education.", f:"prioritize", ko:"훈련과 교육에 우선순위를 두는 것이 중요하다." }] },
+  { word:"productive", exams:["공무원"], pron:"프러덕티브", pos:"adj", level:"B2", meanings:["생산적인"], syn:["efficient","fruitful","prolific"], ant:["unproductive"], ex:[{ s:"Rewarding effort makes a system more {{}}.", f:"productive", ko:"노력을 보상하면 체계가 더 생산적이 된다." }] },
   { word:"partnership", exams:["공무원"], pron:"파트너십", pos:"n", level:"B2", meanings:["동반 관계","협력"], syn:["alliance","collaboration","association"], ex:[{ s:"The projects create new {{}} opportunities.", f:"partnership", ko:"그 사업들은 새로운 협력 기회를 만들어 낸다." }] },
   { word:"pedagogical", exams:["공무원"], pron:"페더고지컬", pos:"adj", level:"C2", meanings:["교육의","교수법의"], syn:["educational","instructional","teaching"], ex:[{ s:"Their {{}} knowledge leaves when they retire.", f:"pedagogical", ko:"그들이 은퇴하면 그들의 교수법 지식도 함께 사라진다." }] },
   { word:"permission", exams:["공무원"], pron:"퍼미션", pos:"n", level:"B1", meanings:["허가","허락"], syn:["consent","authorization","approval"], ant:["prohibition"], ex:[{ s:"I would appreciate it if you could grant me {{}}.", f:"permission", ko:"허가를 내주신다면 감사하겠습니다." }] },
@@ -170,7 +174,7 @@ window.VOCAB_P = [
 
   /* paramount 의 원본 뜻 '가장 중요한' 은 cardinal(C)·foremost(F) 의 첫 뜻과
      같아서 '무엇보다 중요한' 으로 갈랐다. */
-  { word:"paramount", pron:"패러마운트", pos:"adj", level:"C1", meanings:["무엇보다 중요한","으뜸의"],
+  { word:"paramount", exams:["공무원"], pron:"패러마운트", pos:"adj", level:"C1", meanings:["무엇보다 중요한","으뜸의"],
     syn:["supreme","above all others","of first importance"],
     ex:[{ s:"Safety is {{}} on a building site.", f:"paramount", ko:"공사장에서 안전은 무엇보다 중요하다." }] },
 
@@ -227,13 +231,13 @@ window.VOCAB_P = [
     ex:[{ s:"We received only a {{}} refund.", f:"partial", ko:"우리는 부분적인 환불만 받았다." }] },
 
   /* 승격 ⑩ — 사전 표현 '참가자, 당사자' 를 글자까지 지켰다(bystander 반의어, B). */
-  { word:"participant", pron:"파티서펀트", pos:"n", level:"B2", meanings:["참가자","당사자"],
+  { word:"participant", exams:["공무원"], pron:"파티서펀트", pos:"n", level:"B2", meanings:["참가자","당사자"],
     syn:["one taking part","one who joins in","member of an activity"], ant:["bystander"],
     ex:[{ s:"Each {{}} received a badge.", f:"participant", ko:"참가자마다 표찰을 받았다." }] },
 
   /* 승격 ⑪ — 사전 표현 '참여하다' 를 첫 자리에 지키고 '참가하다' 를 붙였다
      (발음이 없던 항목이다). */
-  { word:"participate", pron:"파티서페이트", pos:"v", level:"B1", meanings:["참여하다","참가하다"],
+  { word:"participate", exams:["공무원"], pron:"파티서페이트", pos:"v", level:"B1", meanings:["참여하다","참가하다"],
     syn:["take part","join in","play a part"],
     ex:[{ s:"All students must {{}} in the drill.", f:"participate", ko:"모든 학생은 그 훈련에 참여해야 한다." }] },
 
@@ -1036,7 +1040,7 @@ window.VOCAB_P = [
     ex:[{ s:"Soot is a common urban {{}}.", f:"pollutant", ko:"검댕은 흔한 도시 오염 물질이다." }] },
 
   /* 승격 80 — 사전 표현과 글자까지 같다(contaminate, C). */
-  { word:"pollute", pron:"펄루트", pos:"v", level:"B1", meanings:["오염시키다"],
+  { word:"pollute", exams:["공무원"], pron:"펄루트", pos:"v", level:"B1", meanings:["오염시키다"],
     syn:["contaminate","foul up","make impure"], ant:["purify"],
     ex:[{ s:"Factories used to {{}} the river freely.", f:"pollute", ko:"공장들은 예전에 강을 마음대로 오염시켰다." }] },
 
@@ -1188,7 +1192,7 @@ window.VOCAB_P = [
 
   /* 원본은 '깊은 구멍, 둥근 웅덩이' 였다. 챕터 7 의 pit(구덩이, 움푹한 곳) 과
      물리지 않게 '움푹 팬 구멍' 한 갈래로 좁혔다. */
-  { word:"pothole", pron:"팟홀", pos:"n", level:"B2", meanings:["움푹 팬 구멍"],
+  { word:"pothole", exams:["공무원"], pron:"팟홀", pos:"n", level:"B2", meanings:["움푹 팬 구멍"],
     syn:["hole in a road","sunken dip","worn-out hollow"],
     ex:[{ s:"The car hit a deep {{}}.", f:"pothole", ko:"그 차는 깊이 움푹 팬 구멍에 부딪혔다." }] },
 
@@ -1817,13 +1821,13 @@ window.VOCAB_P = [
     syn:["ban","forbid","rule out by law"],
     ex:[{ s:"The law will {{}} smoking here.", f:"prohibit", ko:"그 법은 이곳에서 흡연을 금지할 것이다." }] },
 
-  { word:"proliferation", pron:"프러리퍼레이션", pos:"n", level:"C1", meanings:["급증","확산"],
+  { word:"proliferation", exams:["공무원"], pron:"프러리퍼레이션", pos:"n", level:"C1", meanings:["급증","확산"],
     syn:["rapid rise in number","spreading wide","fast growth"],
     ex:[{ s:"The {{}} of small shops changed the street.", f:"proliferation", ko:"작은 가게의 급증이 그 거리를 바꿨다." }] },
 
   /* 승격 150 — 사전은 '오래 끌다' 한 갈래였다. 원본의 '연장하다' 는 extend(E) 의
      둘째 뜻과 글자까지 같아 붙이지 않았다 — extend 한 곳이 그대로 남는다. */
-  { word:"prolong", pron:"프럴롱", pos:"v", level:"B2", meanings:["오래 끌다"],
+  { word:"prolong", exams:["공무원"], pron:"프럴롱", pos:"v", level:"B2", meanings:["오래 끌다"],
     syn:["extend","drag out","make last longer"],
     ex:[{ s:"Do not {{}} the meeting.", f:"prolong", ko:"회의를 오래 끌지 마라." }] },
 
@@ -1837,7 +1841,7 @@ window.VOCAB_P = [
 
   /* 승격 152 — 사전은 '촉진하다; 승진시키다' 로 쌍반점을 쓰고 있었다. 둘 다
      동사라 갈래만 쉼표로 갈랐다 (advertise, A · elevate, E — 두 곳). */
-  { word:"promote", pron:"프러모트", pos:"v", level:"B2", meanings:["촉진하다","승진시키다"],
+  { word:"promote", exams:["공무원"], pron:"프러모트", pos:"v", level:"B2", meanings:["촉진하다","승진시키다"],
     syn:["help along","push forward","raise to a higher post"],
     ex:[{ s:"The campaign will {{}} healthy eating.", f:"promote", ko:"그 운동은 건강한 식생활을 촉진할 것이다." }] },
 
@@ -1882,7 +1886,7 @@ window.VOCAB_P = [
   /* 승격 158 — 사전은 '재산; 특성' 으로 쌍반점을 쓰고 있었다. 둘 다 명사라 갈래만
      쉼표로 갈랐다 (estate, E 한 곳). '재산' 은 estate 의 둘째 뜻과, '특성' 은
      characteristic 의 첫 뜻과 글자가 같다. */
-  { word:"property", pron:"프라퍼티", pos:"n", level:"B1", meanings:["재산","특성"],
+  { word:"property", exams:["공무원"], pron:"프라퍼티", pos:"n", level:"B1", meanings:["재산","특성"],
     syn:["estate","what one owns","trait of a thing"],
     ex:[{ s:"The {{}} was sold last year.", f:"property", ko:"그 재산은 지난해 팔렸다." }] },
 
@@ -2081,7 +2085,7 @@ window.VOCAB_P = [
 
   /* 승격 174 — 사전은 '구매하다; 구매' 로 동사와 명사가 섞여 있었다. 참조
      acquisition(습득, 취득 · n) 과 원본이 모두 명사여서 명사로 세웠다. */
-  { word:"purchase", pron:"퍼처스", pos:"n", level:"B2", meanings:["구매","구입"],
+  { word:"purchase", exams:["공무원"], pron:"퍼처스", pos:"n", level:"B2", meanings:["구매","구입"],
     syn:["buying","thing bought","act of paying for goods"],
     ex:[{ s:"Keep the receipt for your {{}}.", f:"purchase", ko:"구매한 물건의 영수증을 보관하세요." }] },
 

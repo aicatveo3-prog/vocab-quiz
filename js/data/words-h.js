@@ -133,7 +133,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '수확하다; 수확' 이다. 품사가 갈린다.
      참조하는 기존 문제가 없어 자유롭게 골랐다. 원본의 명사 쪽으로 모았다. */
-  { word:"harvest", pron:"하비스트", pos:"n", level:"B1", meanings:["추수","수확"],
+  { word:"harvest", exams:["공무원"], pron:"하비스트", pos:"n", level:"B1", meanings:["추수","수확"],
     /* Y 세트에서 yield 를 표제어로 세우며 **동사**(산출하다, 양보하다) 로
        확정했다. 참조 여섯 곳의 품사가 phr 2 · v 2 · n 2 로 갈렸는데, 사전 첫
        갈래가 동사이고 concede·generate 가 동사여서 동사를 택했다. 명사 표제어의
@@ -181,7 +181,7 @@ window.VOCAB_H = [
   { word:"have to do with", pron:"해브 투 두 위드", pos:"phr", level:"B1", meanings:["~와 관계가 있다"],
     syn:["concern","relate to","involve"] },
 
-  { word:"hazard", pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
+  { word:"hazard", exams:["공무원"], pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
     syn:["danger","risk","peril"],
     ex:[{ s:"Slippery floors are a common {{}} in the workplace.", f:"hazard", ko:"미끄러운 바닥은 직장에서 흔한 위험 요소이다." }] },
 

@@ -88,6 +88,8 @@
  */
 
 window.VOCAB_O = [
+  { word:"opt", exams:["공무원"], pron:"옵트", pos:"v", level:"C1", meanings:["선택하다"], syn:["choose","select","decide"], ex:[{ s:"They {{}} for reusable containers instead.", f:"opt", ko:"그들은 대신 재사용 용기를 선택한다." }], gov:{ prep:["for"], usage:"opt for ~ : ~을 선택하다 / opt out : 빠지다" } },
+  { word:"overspend", exams:["공무원"], pron:"오버스펜드", pos:"v", level:"C1", meanings:["과소비하다","초과 지출하다"], syn:["splurge","overpay","squander"], ant:["save"], ex:[{ s:"The season can be a time you {{}} on gifts.", f:"overspend", ko:"그 시즌은 선물에 과소비하는 때가 될 수 있다." }] },
   { word:"observer", exams:["공무원"], pron:"업저버", pos:"n", level:"B2", meanings:["관찰자","참관인"], syn:["onlooker","spectator","witness"], ant:["participant"], ex:[{ s:"Humans are allowed, but only as {{}}.", f:"observers", ko:"인간은 허용되지만 오직 참관인으로만 가능하다." }] },
   { word:"ordinary", exams:["공무원"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
   { word:"outwardly", exams:["공무원"], pron:"아웃워들리", pos:"adv", level:"C1", meanings:["겉으로는","외관상"], syn:["externally","apparently","seemingly"], ant:["inwardly"], ex:[{ s:"He remained {{}} calm during the crisis.", f:"outwardly", ko:"그는 위기 동안 겉으로는 침착함을 유지했다." }] },
@@ -141,7 +143,7 @@ window.VOCAB_O = [
   /* 승격 ⑥ — 사전이 '객관적인, 목표' 로 형용사와 명사가 섞여 있었다.
      impartial(I) 이 형용사 갈래를 쓰므로 형용사로 세우고 '목적, 목표' 는 버렸다.
      아까운 자리지만 참조를 보존하는 규칙을 따랐다. */
-  { word:"objective", pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
+  { word:"objective", exams:["공무원"], pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
     syn:["unbiased","fact-based","free of opinion"], ant:["subjective"],
     ex:[{ s:"The report gives an {{}} account of the fire.", f:"objective", ko:"그 보고서는 화재를 객관적인 서술로 담았다." }] },
 
@@ -490,7 +492,7 @@ window.VOCAB_O = [
     syn:["adversary","enemy","one who fights against"], ant:["ally"],
     ex:[{ s:"He shook hands with his {{}} after the game.", f:"opponent", ko:"그는 경기 뒤 상대와 악수했다." }] },
 
-  { word:"opportunity", pron:"아퍼투너티", pos:"n", level:"B1", meanings:["기회"],
+  { word:"opportunity", exams:["공무원"], pron:"아퍼투너티", pos:"n", level:"B1", meanings:["기회"],
     syn:["chance","opening for action","favorable moment"],
     ex:[{ s:"This is a rare {{}} to study abroad.", f:"opportunity", ko:"이것은 해외에서 공부할 드문 기회다." }] },
 

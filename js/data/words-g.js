@@ -35,6 +35,10 @@
  * 판단 근거는 해당 단어 주석에 적는다.
  */
 window.VOCAB_G = [
+  { word:"generation", exams:["공무원"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
+  { word:"generative", exams:["공무원"], pron:"제너러티브", pos:"adj", level:"C1", meanings:["생성적인","생성형의"], syn:["productive","creative","fertile"], ex:[{ s:"{{}} AI is advancing rapidly.", f:"Generative", ko:"생성형 AI가 빠르게 발전하고 있다." }] },
+  { word:"globally", exams:["공무원"], pron:"글로벌리", pos:"adv", level:"B2", meanings:["세계적으로","전 세계에서"], syn:["worldwide","internationally","universally"], ex:[{ s:"The agency must engage {{}} to fulfill its mission.", f:"globally", ko:"그 기관은 사명을 완수하려 전 세계적으로 관여해야 한다." }] },
+  { word:"gratification", exams:["공무원"], pron:"그래티피케이션", pos:"n", level:"C1", meanings:["만족","충족"], syn:["satisfaction","pleasure","fulfillment"], ex:[{ s:"Short-term {{}} can eclipse long-term focus.", f:"gratification", ko:"단기적 만족이 장기적 집중을 가릴 수 있다." }] },
   { word:"gap", exams:["공무원"], pron:"갭", pos:"n", level:"B1", meanings:["격차","틈"], syn:["difference","gulf","disparity"], ex:[{ s:"The {{}} had more to do with each school's resources.", f:"gap", ko:"그 격차는 각 학교의 자원과 더 관련이 있었다." }] },
   { word:"giraffe", exams:["공무원"], pron:"지래프", pos:"n", level:"B1", meanings:["기린"], ex:[{ s:"A baby {{}} has its own unique markings.", f:"giraffe", ko:"새끼 기린은 저마다 고유한 무늬를 지닌다." }] },
   { word:"greet", exams:["공무원"], pron:"그릿", pos:"v", level:"B1", meanings:["인사하다","맞이하다"], syn:["welcome","salute","receive"], ant:["ignore"], ex:[{ s:"Volunteers warmly {{}} and assist visitors.", f:"greet", ko:"자원봉사자들은 방문객을 따뜻하게 맞이하고 돕는다." }] },
@@ -471,7 +475,7 @@ window.VOCAB_G = [
     syn:["please","satisfy","delight"], ant:["frustrate"],
     ex:[{ s:"Nothing seemed to {{}} him more than a quiet evening.", f:"gratify", ko:"조용한 저녁만큼 그를 기쁘게 하는 것은 없어 보였다." }] },
 
-  { word:"gratitude", pron:"그래티튜드", pos:"n", level:"B2", meanings:["고마움","감사"],
+  { word:"gratitude", exams:["공무원"], pron:"그래티튜드", pos:"n", level:"B2", meanings:["고마움","감사"],
     gov:{ prep:["to","for","toward","towards","of"], pat:"gratitude {{}} the night nurses", usage:"gratitude to ~ : ~에 대한 감사" },
     syn:["thankfulness","appreciation","indebtedness"], ant:["ingratitude"],
     ex:[{ s:"She wrote a short note to express her {{}}.", f:"gratitude", ko:"그녀는 고마움을 전하려고 짧은 쪽지를 썼다." }] },

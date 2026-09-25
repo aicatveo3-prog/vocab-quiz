@@ -457,6 +457,10 @@
  *   node tools/f-plan.js                  남은 목록의 함정 재확인
  */
 window.VOCAB_F = [
+  { word:"feedback", exams:["공무원"], pron:"피드백", pos:"n", level:"B1", meanings:["의견","피드백"], syn:["response","comments","input"], ex:[{ s:"We welcome all {{}} about our services.", f:"feedback", ko:"우리는 서비스에 대한 모든 의견을 환영한다." }] },
+  { word:"flooding", exams:["공무원"], pron:"플러딩", pos:"n", level:"B2", meanings:["홍수","침수"], syn:["flood","deluge","inundation"], ex:[{ s:"{{}}, drought and storms can destroy crops.", f:"Flooding", ko:"홍수, 가뭄, 폭풍은 농작물을 망칠 수 있다." }] },
+  { word:"favoritism", exams:["공무원"], pron:"페이버리티즘", pos:"n", level:"C1", meanings:["편애","편파"], syn:["bias","partiality","nepotism"], ant:["fairness"], ex:[{ s:"It hands out positions based on {{}}.", f:"favoritism", ko:"그것은 편애에 따라 자리를 나눠준다." }] },
+  { word:"fairness", exams:["공무원"], pron:"페어니스", pos:"n", level:"B2", meanings:["공정성"], syn:["justice","equity","impartiality"], ant:["unfairness"], ex:[{ s:"Rewarding merit has the virtue of {{}}.", f:"fairness", ko:"실력을 보상하는 것은 공정성의 미덕을 지닌다." }] },
   { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
@@ -669,14 +673,14 @@ window.VOCAB_F = [
     syn:["plume","quill","soft plumage"],
     ex:[{ s:"A single white {{}} drifted down onto the water.", f:"feather", ko:"흰 깃털 하나가 물 위로 떠내려왔다." }] },
 
-  { word:"feature", pron:"피처", pos:"n", level:"B2", meanings:["특징","특색"],
+  { word:"feature", exams:["공무원"], pron:"피처", pos:"n", level:"B2", meanings:["특징","특색"],
     syn:["trait","hallmark","distinguishing mark"],
     ex:[{ s:"The clearest {{}} of the new engine is its silence.", f:"feature", ko:"새 엔진의 가장 뚜렷한 특징은 조용함이다." }] },
 
   /* syn 을 비워 뒀다. federal 은 '연방제의' 라는 제도 용어여서 문맥에서
      바꿔 쓸 수 있는 말이 셋이 안 된다. 억지로 채우면 '아닌 것 고르기'가
      논쟁거리가 된다. */
-  { word:"federal", pron:"페더럴", pos:"adj", level:"B2", meanings:["연방제의","연방 정부의"],
+  { word:"federal", exams:["공무원"], pron:"페더럴", pos:"adj", level:"B2", meanings:["연방제의","연방 정부의"],
     ex:[{ s:"The dispute moved to a {{}} court last spring.", f:"federal", ko:"그 분쟁은 지난 봄 연방 법원으로 넘어갔다." }] },
 
   /* 뜻 순서를 원본('요금; 수수료')과 바꿨다. 2차의 fare 가 이미
@@ -1222,7 +1226,7 @@ window.VOCAB_F = [
   /* 원본은 '양육하는, 기르는; 양육하다, 기르다' 로 형용사와 동사가 섞여 있다.
      동사로 정했다. 유의어 nurture 의 뜻이 '양육하다, 기르다' 라서 첫 뜻이
      겹치지 않도록 둘째 뜻을 '육성하다' 로 골랐다. */
-  { word:"foster", pron:"포스터", pos:"v", level:"B2", meanings:["기르다","육성하다"],
+  { word:"foster", exams:["공무원"], pron:"포스터", pos:"v", level:"B2", meanings:["기르다","육성하다"],
     syn:["nurture","bring up","raise"],
     ex:[{ s:"Small grants can {{}} new research in the field.", f:"foster", ko:"작은 보조금이 그 분야의 새 연구를 육성할 수 있다." }] },
 

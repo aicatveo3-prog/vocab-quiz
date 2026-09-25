@@ -31,6 +31,10 @@
  * in one sense 는 in a sense 와 가를 방법이 없어 목록에서 뺐다 (311단어).
  */
 window.VOCAB_I = [
+  { word:"investment", exams:["공무원"], pron:"인베스트먼트", pos:"n", level:"B2", meanings:["투자"], syn:["funding","backing","stake"], ex:[{ s:"Farming requires long-term {{}}.", f:"investments", ko:"농업은 장기 투자를 요한다." }] },
+  { word:"interpretive", exams:["공무원"], pron:"인터프리티브", pos:"adj", level:"C1", meanings:["해석의","설명적인"], syn:["explanatory","interpretative","illustrative"], ex:[{ s:"Campers engage in {{}} art and science lessons.", f:"interpretive", ko:"참가자들은 해석적 미술·과학 수업에 참여한다." }] },
+  { word:"integration", exams:["공무원"], pron:"인테그레이션", pos:"n", level:"B2", meanings:["통합"], syn:["incorporation","unification","merging"], ant:["separation"], ex:[{ s:"AI {{}} raises questions about workers' rights.", f:"integration", ko:"AI 통합은 근로자 권리에 대한 물음을 낳는다." }] },
+  { word:"inflection", exams:["공무원"], pron:"인플렉션", pos:"n", level:"C1", meanings:["억양","어조 변화"], syn:["intonation","tone","modulation"], ex:[{ s:"Your brain processes tone and {{}}.", f:"inflection", ko:"뇌는 어조와 억양을 처리한다." }] },
   { word:"improve", exams:["공무원"], pron:"임프루브", pos:"v", level:"B1", meanings:["개선하다","나아지다"], syn:["enhance","better","upgrade"], ant:["worsen"], ex:[{ s:"Schools are seeking ways to {{}} effectiveness.", f:"improve", ko:"학교들은 효과성을 개선할 방법을 찾고 있다." }] },
   { word:"inspect", exams:["공무원"], pron:"인스펙트", pos:"v", level:"B2", meanings:["점검하다","검사하다"], syn:["examine","check","scrutinize"], ex:[{ s:"Our team will {{}} your property for signs of rats.", f:"inspect", ko:"우리 팀이 쥐의 흔적을 찾아 당신의 건물을 점검할 것이다." }] },
   { word:"insightful", exams:["공무원"], pron:"인사이트풀", pos:"adj", level:"C1", meanings:["통찰력 있는"], syn:["perceptive","astute","discerning"], ant:["superficial"], ex:[{ s:"Movies can be an {{}} source for learning about culture.", f:"insightful", ko:"영화는 문화를 배우는 통찰력 있는 자료가 될 수 있다." }] },
@@ -109,7 +113,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '무시하다' 와 글자까지 같다. 참조가 7곳(act on·address·
      be concerned about·be glued to·beware·deal with·disregard)으로 이 세트에서
      가장 많다. 갈래를 늘리면 그 7곳 화면이 다 바뀌므로 한 갈래로 두었다. */
-  { word:"ignore", pron:"이그노", pos:"v", level:"B1", meanings:["무시하다"],
+  { word:"ignore", exams:["공무원"], pron:"이그노", pos:"v", level:"B1", meanings:["무시하다"],
     syn:["disregard","overlook","neglect"], ant:["heed"],
     ex:[{ s:"Drivers who {{}} speed limits face heavy fines.", f:"ignore", ko:"제한 속도를 무시하는 운전자는 무거운 벌금을 물게 된다." }] },
 
@@ -430,7 +434,7 @@ window.VOCAB_I = [
     syn:["brazen","shameless","cheeky"], ant:["modest"],
     ex:[{ s:"His {{}} reply left the committee speechless.", f:"impudent", ko:"그의 뻔뻔스러운 대답에 위원회는 할 말을 잃었다." }] },
 
-  { word:"impulse", pron:"임펄스", pos:"n", level:"B2", meanings:["충동","자극"],
+  { word:"impulse", exams:["공무원"], pron:"임펄스", pos:"n", level:"B2", meanings:["충동","자극"],
     syn:["urge","whim","compulsion"],
     ex:[{ s:"She resisted the {{}} to check her phone again.", f:"impulse", ko:"그녀는 휴대전화를 다시 확인하려는 충동을 참았다." }] },
 
@@ -629,7 +633,7 @@ window.VOCAB_I = [
 
   /* 승격 ② — GLOSS '포용적인' 이다. exclusive(ant) 가 그 갈래를 쓰므로 둘째
      자리에 지켰다. 첫 자리는 원본의 '포괄적인' 으로 했다. */
-  { word:"inclusive", pron:"인클루시브", pos:"adj", level:"B2", meanings:["포괄적인","포용적인"],
+  { word:"inclusive", exams:["공무원"], pron:"인클루시브", pos:"adj", level:"B2", meanings:["포괄적인","포용적인"],
     syn:["comprehensive","all-embracing","broad"], ant:["exclusive"],
     ex:[{ s:"The festival aims to be as {{}} as possible.", f:"inclusive", ko:"그 축제는 가능한 한 포괄적이려고 한다." }] },
 
@@ -1012,7 +1016,7 @@ window.VOCAB_I = [
     syn:["commence","launch","embark on"],
     ex:[{ s:"The council will {{}} a full review of the policy.", f:"initiate", ko:"의회는 그 정책에 대한 전면 검토를 시작할 것이다." }] },
 
-  { word:"initiative", pron:"이니셔티브", pos:"n", level:"B2", meanings:["주도권","발의"],
+  { word:"initiative", exams:["공무원"], pron:"이니셔티브", pos:"n", level:"B2", meanings:["주도권","발의"],
     syn:["enterprise","drive","first move"],
     ex:[{ s:"She took the {{}} and organized the whole event.", f:"initiative", ko:"그녀가 주도권을 잡고 행사 전체를 준비했다." }] },
 
@@ -1029,7 +1033,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '타고난, 본래의' 를 글자까지 지켰다.
      dispositional(syn)·hard-wired(syn) 두 문제가 참조하므로 원본의 '선천적인'
      대신 사전 쪽 '본래의' 를 남겼다. */
-  { word:"innate", pron:"이네이트", pos:"adj", level:"C1", meanings:["타고난","본래의"],
+  { word:"innate", exams:["공무원"], pron:"이네이트", pos:"adj", level:"C1", meanings:["타고난","본래의"],
     syn:["inborn","hard-wired","congenital"], ant:["acquired"],
     ex:[{ s:"Some researchers argue that the ability is {{}}.", f:"innate", ko:"일부 연구자는 그 능력이 타고난 것이라고 주장한다." }] },
 
@@ -1177,7 +1181,7 @@ window.VOCAB_I = [
   /* 원본에서 immediate·instant·instantaneous 의 첫 뜻이 모두 '즉각적인' 이었다.
      셋을 갈랐다 — immediate 즉각적인 / instant 즉석의 / instantaneous 순간적인.
      원본의 명사 갈래('순간, 잠깐')는 pos 가 adj 인 이 표제어에 담지 못했다. */
-  { word:"instant", pron:"인스턴트", pos:"adj", level:"B1", meanings:["즉석의","곧바로 되는"],
+  { word:"instant", exams:["공무원"], pron:"인스턴트", pos:"adj", level:"B1", meanings:["즉석의","곧바로 되는"],
     syn:["immediate","ready-made","on-the-spot"],
     ex:[{ s:"Just add hot water to the {{}} noodles.", f:"instant", ko:"즉석 국수에 뜨거운 물만 부으면 된다." }] },
 
@@ -1268,7 +1272,7 @@ window.VOCAB_I = [
     syn:["offend","humiliate","affront"], ant:["compliment"],
     ex:[{ s:"He did not mean to {{}} anyone with the remark.", f:"insult", ko:"그는 그 말로 누구도 모욕할 의도가 없었다." }] },
 
-  { word:"insurance", pron:"인슈어런스", pos:"n", level:"B1", meanings:["보험","보험금"],
+  { word:"insurance", exams:["공무원"], pron:"인슈어런스", pos:"n", level:"B1", meanings:["보험","보험금"],
     syn:["coverage","policy","indemnity"],
     ex:[{ s:"Travel {{}} covers lost luggage and delays.", f:"insurance", ko:"여행 보험은 분실된 수하물과 지연을 보상한다." }] },
 
@@ -1288,7 +1292,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '섭취량, 흡입' 을 글자까지 지켰다. consumption(syn) 이 참조한다.
      원본 '섭취' 는 같은 갈래라 사전 쪽 '섭취량' 을 남겼다. */
-  { word:"intake", pron:"인테이크", pos:"n", level:"B2", meanings:["섭취량","흡입"],
+  { word:"intake", exams:["공무원"], pron:"인테이크", pos:"n", level:"B2", meanings:["섭취량","흡입"],
     syn:["consumption","absorption","uptake"],
     ex:[{ s:"Doctors advised him to cut his daily salt {{}}.", f:"intake", ko:"의사들은 그에게 하루 소금 섭취량을 줄이라고 권했다." }] },
 
@@ -1600,7 +1604,7 @@ window.VOCAB_I = [
     syn:["of no legal force","null","unfounded"], ant:["valid"],
     ex:[{ s:"The ticket becomes {{}} after the expiry date.", f:"invalid", ko:"그 표는 만료일 이후 실효성이 없어진다." }] },
 
-  { word:"invaluable", pron:"인밸류어블", pos:"adj", level:"B2", meanings:["매우 귀중한","값을 헤아릴 수 없는"],
+  { word:"invaluable", exams:["공무원"], pron:"인밸류어블", pos:"adj", level:"B2", meanings:["매우 귀중한","값을 헤아릴 수 없는"],
     syn:["priceless","precious","beyond price"],
     ex:[{ s:"Her advice proved {{}} during the crisis.", f:"invaluable", ko:"그녀의 조언은 위기 동안 매우 귀중한 것으로 드러났다." }] },
 
@@ -1687,7 +1691,7 @@ window.VOCAB_I = [
     syn:["implacable","unappeasable","at odds"],
     ex:[{ s:"Their differences soon proved {{}}.", f:"irreconcilable", ko:"그들의 차이는 곧 화해할 수 없는 것으로 드러났다." }] },
 
-  { word:"irrelevant", pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
+  { word:"irrelevant", exams:["공무원"], pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
     syn:["beside the point","immaterial","unrelated"], ant:["relevant"],
     ex:[{ s:"That detail is {{}} to the main argument.", f:"irrelevant", ko:"그 세부 사항은 주요 논지와 상관없다." }] },
 

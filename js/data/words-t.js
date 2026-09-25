@@ -31,6 +31,9 @@
  * 걸러내므로 화면에는 아직 T 세트가 뜨지 않는다.
  */
 window.VOCAB_T = [
+  { word:"thereby", exams:["공무원"], pron:"데어바이", pos:"adv", level:"C1", meanings:["그렇게 함으로써","그것에 의해"], syn:["thus","thereupon","consequently"], ex:[{ s:"We pollute the oceans, {{}} harming ourselves.", f:"thereby", ko:"우리는 바다를 오염시켜, 그렇게 함으로써 우리 자신을 해친다." }] },
+  { word:"takeaway", exams:["공무원"], pron:"테이크어웨이", pos:"n", level:"B2", meanings:["포장 음식","테이크아웃"], syn:["takeout","fast food"], ex:[{ s:"Target the {{}} items that end up in the ocean.", f:"takeaway", ko:"바다로 흘러드는 포장 음식 용기를 겨냥하라." }] },
+  { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
   { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다","대하다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
   { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리","대우"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
 
@@ -267,7 +270,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑮ — 사전 단일값 유지. 참조 eternal(E)·makeshift(M)·permanent(P)
      세 곳의 화면은 바뀌지 않는다. transient(오래 가지 않는 · 챕터 8) 와 갈랐다. */
-  { word:"temporary", pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
+  { word:"temporary", exams:["공무원"], pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
     syn:["makeshift","lasting a short while","not meant to stay"], ant:["permanent","eternal"],
     ex:[{ s:"They found a {{}} home.", f:"temporary", ko:"그들은 일시적인 집을 구했다." }] },
 
@@ -465,7 +468,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉜ — 사전 글자 유지. 참조 acupuncture(A)·chemotherapy(C) 두 곳의
      화면은 바뀌지 않는다. 교재의 '치료법' 은 remedy 자리다. */
-  { word:"therapy", pron:"세러피", pos:"n", level:"B1", meanings:["치료","요법"],
+  { word:"therapy", exams:["공무원"], pron:"세러피", pos:"n", level:"B1", meanings:["치료","요법"],
     syn:["acupuncture","chemotherapy","course of treatment"],
     ex:[{ s:"She began {{}} last spring.", f:"therapy", ko:"그녀는 지난봄에 치료를 시작했다." }] },
 

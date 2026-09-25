@@ -43,6 +43,9 @@
  * 걸러내므로 화면에는 아직 U 세트가 뜨지 않는다.
  */
 window.VOCAB_U = [
+  { word:"universally", exams:["공무원"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
+  { word:"upgrade", exams:["공무원"], pron:"업그레이드", pos:"v", level:"B2", meanings:["향상시키다","개선하다"], syn:["improve","enhance","boost"], ant:["downgrade"], ex:[{ s:"We assess and {{}} our services.", f:"upgrade", ko:"우리는 서비스를 평가하고 개선한다." }] },
+  { word:"uncertain", exams:["공무원"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
   { word:"uniform", exams:["공무원"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
@@ -174,7 +177,7 @@ window.VOCAB_U = [
 
   /* 승격 ⑤ — 사전 단일값 유지. 참조 fundamental(F)·latent(L) 두 곳의 화면은
      바뀌지 않는다. '근본적인' 은 위 ultimate 과 fundamental 자리다. */
-  { word:"underlying", pron:"언덜라잉", pos:"adj", level:"B2", meanings:["밑바탕에 있는"],
+  { word:"underlying", exams:["공무원"], pron:"언덜라잉", pos:"adj", level:"B2", meanings:["밑바탕에 있는"],
     syn:["fundamental","latent","lying beneath the surface"],
     ex:[{ s:"We must find the {{}} cause.", f:"underlying", ko:"우리는 밑바탕에 있는 원인을 찾아야 한다." }] },
 
@@ -190,7 +193,7 @@ window.VOCAB_U = [
     ex:[{ s:"The staff felt {{}}.", f:"underpaid", ko:"직원들은 박봉이라고 느꼈다." }] },
 
   /* 교재는 [v+n] 이지만 동사 쪽만 세웠다. */
-  { word:"underscore", pron:"언더스코어", pos:"v", level:"C1", meanings:["밑줄을 긋다"],
+  { word:"underscore", exams:["공무원"], pron:"언더스코어", pos:"v", level:"C1", meanings:["밑줄을 긋다"],
     syn:["draw a line under","mark beneath the words","rule a line below"],
     ex:[{ s:"Please {{}} the title.", f:"underscore", ko:"제목에 밑줄을 그어 주세요." }] },
 
@@ -649,7 +652,7 @@ window.VOCAB_U = [
   /* 승격 ㉖ — ★ 사전 첫 갈래만 세웠다. 참조 셋(craving·impulse·instinct) 이
      모두 명사여서다. 교재의 '설득하다' 는 induce·convince 자리다.
      impulse(충동, 자극) 와 글자가 맞물려 배제된다. */
-  { word:"urge", pron:"어지", pos:"n", level:"B1", meanings:["충동"],
+  { word:"urge", exams:["공무원"], pron:"어지", pos:"n", level:"B1", meanings:["충동"],
     syn:["impulse","craving","instinct"],
     ex:[{ s:"She felt a sudden {{}} to run.", f:"urge", ko:"그녀는 달리고 싶은 갑작스러운 충동을 느꼈다." }] },
 

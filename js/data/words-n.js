@@ -53,6 +53,7 @@
  */
 
 window.VOCAB_N = [
+  { word:"navigate", exams:["공무원"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
