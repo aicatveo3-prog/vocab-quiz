@@ -38,6 +38,11 @@
  * 걸러내므로 화면에는 아직 V 세트가 뜨지 않는다.
  */
 window.VOCAB_V = [
+  { word:"vaporous", exams:["공무원"], pron:"베이퍼러스", pos:"adj", level:"C2", meanings:["증기의","수증기 같은"], syn:["misty","gaseous","foggy"], ex:[{ s:"The air near the geyser was thick and {{}}.", f:"vaporous", ko:"간헐천 근처의 공기는 짙고 수증기 같았다." }] },
+  { word:"vexed", exams:["공무원"], pron:"벡스트", pos:"adj", level:"C1", meanings:["짜증난","골치 아픈"], syn:["annoyed","irritated","troubled"], ant:["pleased"], ex:[{ s:"The novel is about the {{}} parents of an unruly teenager.", f:"vexed", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
+  { word:"visually", exams:["공무원"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
+  { word:"vocalization", exams:["공무원"], pron:"보컬라이제이션", pos:"n", level:"C2", meanings:["발성","발성음"], ex:[{ s:"Human language differs from the {{}} of monkeys.", f:"vocalizations", ko:"인간 언어는 원숭이의 발성음과 다르다." }] },
+  { word:"volcanic", exams:["공무원"], pron:"볼캐닉", pos:"adj", level:"B2", meanings:["화산의"], ex:[{ s:"Yellowstone was known to be {{}} in nature.", f:"volcanic", ko:"옐로스톤은 본래 화산성으로 알려져 있었다." }] },
   { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["비전","구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The {{}} started in Western Australia in 2011.", f:"vision", ko:"그 구상은 2011년 서호주에서 시작되었다." }] },
   { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["(질병) 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
