@@ -35,6 +35,13 @@
  * 판단 근거는 해당 단어 주석에 적는다.
  */
 window.VOCAB_G = [
+  { word:"geopolitics", exams:["공무원"], pron:"지오폴리틱스", pos:"n", level:"C2", meanings:["지정학"], ex:[{ s:"Some things are undeniable: climate change and {{}}.", f:"geopolitics", ko:"부인할 수 없는 것들이 있다: 기후 변화와 지정학이다." }] },
+  { word:"gill", exams:["공무원"], pron:"길", pos:"n", level:"C1", meanings:["아가미"], ex:[{ s:"The bodies of fish grow faster than their {{}}.", f:"gills", ko:"물고기의 몸은 아가미보다 빨리 자란다." }] },
+  { word:"governor", exams:["공무원"], pron:"거버너", pos:"n", level:"B2", meanings:["주지사","총재"], syn:["administrator","leader","chief"], ex:[{ s:"The Regional {{}} would abide by the court's ruling.", f:"governor", ko:"지역 주지사는 법원의 판결을 따르겠다고 했다." }] },
+  { word:"gravel", exams:["공무원"], pron:"그래블", pos:"n", level:"B2", meanings:["자갈"], syn:["pebbles","stones","grit"], ex:[{ s:"The rock stood out from a pile of {{}}.", f:"gravel", ko:"그 돌은 자갈 더미에서 눈에 띄었다." }] },
+  { word:"gravitational", exams:["공무원"], pron:"그래비테이셔널", pos:"adj", level:"C1", meanings:["중력의"], ex:[{ s:"People can be exposed to {{}} force in different ways.", f:"gravitational", ko:"사람들은 여러 방식으로 중력에 노출될 수 있다." }] },
+  { word:"guts", exams:["공무원"], pron:"것츠", pos:"n", level:"C1", meanings:["배짱","용기"], syn:["courage","nerve","boldness"], ant:["cowardice"], ex:[{ s:"She had the {{}} to go for what she wanted.", f:"guts", ko:"그녀는 원하는 것을 향해 나아갈 배짱이 있었다." }] },
+  { word:"gullible", exams:["공무원"], pron:"걸러블", pos:"adj", level:"C1", meanings:["잘 속는","순진한"], syn:["naive","credulous","trusting"], ant:["skeptical"], ex:[{ s:"I think you are being {{}}.", f:"gullible", ko:"내 생각에 너는 잘 속고 있는 것 같다." }] },
   { word:"generation", exams:["공무원"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
   { word:"generative", exams:["공무원"], pron:"제너러티브", pos:"adj", level:"C1", meanings:["생성적인","생성형의"], syn:["productive","creative","fertile"], ex:[{ s:"{{}} AI is advancing rapidly.", f:"Generative", ko:"생성형 AI가 빠르게 발전하고 있다." }] },
   { word:"globally", exams:["공무원"], pron:"글로벌리", pos:"adv", level:"B2", meanings:["세계적으로","전 세계에서"], syn:["worldwide","internationally","universally"], ex:[{ s:"The agency must engage {{}} to fulfill its mission.", f:"globally", ko:"그 기관은 사명을 완수하려 전 세계적으로 관여해야 한다." }] },
