@@ -37,6 +37,10 @@
  * 빈칸 하나로 승부가 갈리는 자리도 있었다.
  */
 window.VOCAB_S = [
+  { word:"salary", exams:["공무원"], pron:"샐러리", pos:"n", level:"B1", meanings:["급여","봉급"], syn:["pay","wage","income"], ex:[{ s:"Some staff who are paid a {{}} were underpaid.", f:"salary", ko:"급여를 받는 일부 직원은 적게 받았다." }] },
+  { word:"security", exams:["공무원"], pron:"시큐리티", pos:"n", level:"B1", meanings:["안보","보안","안전"], syn:["safety","protection","defense"], ex:[{ s:"Young farmers help ensure food {{}}.", f:"security", ko:"젊은 농부들은 식량 안보를 보장하는 데 이바지한다." }] },
+  { word:"situational", exams:["공무원"], pron:"시추에이셔널", pos:"adj", level:"C1", meanings:["상황의","상황에 따른"], syn:["contextual","circumstantial","conditional"], ex:[{ s:"Maintain a level of {{}} awareness while driving.", f:"situational", ko:"운전 중에는 상황 인식을 유지하라." }] },
+  { word:"safeguard", exams:["공무원"], pron:"세이프가드", pos:"v", level:"C1", meanings:["보호하다","지키다"], syn:["protect","defend","shield"], ant:["endanger"], ex:[{ s:"We must {{}} workers' rights.", f:"safeguard", ko:"우리는 근로자의 권리를 보호해야 한다." }] },
   { word:"skateboard", exams:["공무원"], pron:"스케이트보드", pos:"v", level:"B1", meanings:["스케이트보드를 타다"], ex:[{ s:"He broke his arm while {{}}.", f:"skateboarding", ko:"그는 스케이트보드를 타다가 팔이 부러졌다." }] },
   { word:"specialist", exams:["공무원"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
   { word:"speculation", exams:["공무원"], pron:"스페큘레이션", pos:"n", level:"C1", meanings:["추측","짐작"], syn:["conjecture","guesswork","supposition"], ant:["fact"], ex:[{ s:"The report was based on {{}} rather than evidence.", f:"speculation", ko:"그 보고서는 증거보다 추측에 근거했다." }] },
@@ -1276,7 +1280,7 @@ window.VOCAB_S = [
     ex:[{ s:"The service kept its {{}}.", f:"solemnity", ko:"그 예식은 엄숙함을 지켰다." }] },
 
   /* 원본의 셋째 갈래('호객하다') 는 버렸다. */
-  { word:"solicit", pron:"설리싯", pos:"v", level:"C2", meanings:["간청하다","요청하다"],
+  { word:"solicit", exams:["공무원"], pron:"설리싯", pos:"v", level:"C2", meanings:["간청하다","요청하다"],
     syn:["ask earnestly","beg for","seek by asking"],
     ex:[{ s:"They began to {{}} funds for the school.", f:"solicit", ko:"그들은 학교를 위한 기금을 요청하기 시작했다." }] },
 
@@ -1965,7 +1969,7 @@ window.VOCAB_S = [
 
   /* 승격 160 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 inspire(I) 한 곳의 설명이
      '자극하다; 활성화하다' 에서 '자극하다, 활성화하다' 가 된다. */
-  { word:"stimulate", pron:"스티뮬레이트", pos:"v", level:"B1", meanings:["자극하다","활성화하다"],
+  { word:"stimulate", exams:["공무원"], pron:"스티뮬레이트", pos:"v", level:"B1", meanings:["자극하다","활성화하다"],
     syn:["inspire","rouse to action","spur into life"],
     ex:[{ s:"Low rates {{}} the economy.", f:"stimulate", ko:"낮은 금리가 경제를 자극한다." }] },
 
@@ -2257,7 +2261,7 @@ window.VOCAB_S = [
 
   /* 승격 195 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 considerable(C) 한 곳의
      설명이 '상당한; 실질적인' 에서 '상당한, 실질적인' 이 된다. */
-  { word:"substantial", pron:"섭스탠셜", pos:"adj", level:"B2", meanings:["상당한","실질적인"],
+  { word:"substantial", exams:["공무원"], pron:"섭스탠셜", pos:"adj", level:"B2", meanings:["상당한","실질적인"],
     syn:["considerable","large in amount","real and solid"],
     ex:[{ s:"They made a {{}} gain this year.", f:"substantial", ko:"그들은 올해 상당한 이익을 냈다." }] },
 
@@ -2427,7 +2431,7 @@ window.VOCAB_S = [
   /* 승격 213 — 사전 첫 갈래만 남겼다. 참조 contribute(C)·dispense(D)·
      furnish(F) 가 모두 동사라 그대로 맞는다. 그 세 곳의 설명이
      '공급하다; 공급' 에서 '공급하다' 로 짧아진다. */
-  { word:"supply", pron:"서플라이", pos:"v", level:"B1", meanings:["공급하다"],
+  { word:"supply", exams:["공무원"], pron:"서플라이", pos:"v", level:"B1", meanings:["공급하다"],
     syn:["contribute","dispense","furnish"],
     ex:[{ s:"The well will {{}} enough water.", f:"supply", ko:"그 우물이 충분한 물을 공급할 것이다." }] },
 

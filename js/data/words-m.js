@@ -52,6 +52,8 @@
  *   mumble 중얼거리다(사전 값 유지) / mutter 투덜거리다
  */
 window.VOCAB_M = [
+  { word:"mentality", exams:["공무원"], pron:"멘탤리티", pos:"n", level:"C1", meanings:["사고방식","태도"], syn:["mindset","attitude","outlook"], ex:[{ s:"They have a 'can-do' {{}}.", f:"mentality", ko:"그들은 '할 수 있다'는 사고방식을 지녔다." }] },
+  { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로","실력"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 실력에 따라 배분되어야 한다." }] },
   { word:"maintain", exams:["공무원"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
@@ -668,7 +670,7 @@ window.VOCAB_M = [
     syn:["painstakingly","scrupulously","with great care"],
     ex:[{ s:"Every joint was {{}} sanded by hand.", f:"meticulously", ko:"모든 이음새가 손으로 꼼꼼하게 사포질되었다." }] },
 
-  { word:"metric", pron:"메트릭", pos:"adj", level:"B2", meanings:["미터법의"],
+  { word:"metric", exams:["공무원"], pron:"메트릭", pos:"adj", level:"B2", meanings:["미터법의"],
     syn:["decimal","metre-based","standardized"],
     ex:[{ s:"Most countries use the {{}} system.", f:"metric", ko:"대부분의 나라가 미터법 체계를 쓴다." }] },
 
@@ -860,7 +862,7 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '사절단; 임무' 다. delegation(syn) 이 쓰는 갈래는 '사절단' 이라
      첫 자리에 지켰다. 둘째는 원본의 '임무' 로 했다 — 원본 첫 뜻 '임무' 를 앞에 두면
      C 세트 commission 과 첫 뜻이 같아진다. 원본 셋째 갈래 '선교' 는 뺐다. */
-  { word:"mission", pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
+  { word:"mission", exams:["공무원"], pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
     syn:["delegation","assignment","errand"],
     ex:[{ s:"A trade {{}} flew out to Seoul last week.", f:"mission", ko:"통상 사절단이 지난주 서울로 떠났다." }] },
 

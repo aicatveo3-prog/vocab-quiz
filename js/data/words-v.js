@@ -38,6 +38,8 @@
  * 걸러내므로 화면에는 아직 V 세트가 뜨지 않는다.
  */
 window.VOCAB_V = [
+  { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["비전","구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The {{}} started in Western Australia in 2011.", f:"vision", ko:"그 구상은 2011년 서호주에서 시작되었다." }] },
+  { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["(질병) 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
@@ -456,7 +458,7 @@ window.VOCAB_V = [
     ex:[{ s:"They reached {{}} forest at last.", f:"virgin", ko:"그들은 마침내 원래 그대로의 숲에 이르렀다." }] },
 
   /* imaginary(상상의, 가상의)·substantial(상당한, 실질적인) 과 맞물려 배제된다. */
-  { word:"virtual", pron:"버추얼", pos:"adj", level:"B2", meanings:["가상의","실질적인"],
+  { word:"virtual", exams:["공무원"], pron:"버추얼", pos:"adj", level:"B2", meanings:["가상의","실질적인"],
     syn:["imaginary","substantial","in effect if not in name"],
     ex:[{ s:"They met in a {{}} classroom.", f:"virtual", ko:"그들은 가상 교실에서 만났다." }] },
 
@@ -469,7 +471,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉗ — 사전 글자 유지. 참조 decadence(D 반의어)·morality(M) 두 곳의
      화면은 바뀌지 않는다. 교재의 '선' 은 뜻이 너무 넓어 버렸다. */
-  { word:"virtue", pron:"버추", pos:"n", level:"B2", meanings:["미덕","덕목"],
+  { word:"virtue", exams:["공무원"], pron:"버추", pos:"n", level:"B2", meanings:["미덕","덕목"],
     syn:["morality","goodness of character","worth of conduct"], ant:["decadence"],
     ex:[{ s:"Patience is a quiet {{}}.", f:"virtue", ko:"인내는 조용한 미덕이다." }] },
 

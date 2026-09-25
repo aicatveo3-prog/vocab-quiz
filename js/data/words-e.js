@@ -768,6 +768,16 @@
  *   node tools/match-order-check.js       짝 맞추기 보드 전수 검사
  */
 window.VOCAB_E = [
+  { word:"exclude", exams:["공무원"], pron:"익스클루드", pos:"v", level:"B2", meanings:["제외하다","배제하다"], syn:["omit","bar","leave out"], ant:["include"], ex:[{ s:"People aim to {{}} plastic waste from daily life.", f:"exclude", ko:"사람들은 일상에서 플라스틱 쓰레기를 배제하려 한다." }] },
+  { word:"embassy", exams:["공무원"], pron:"엠버시", pos:"n", level:"B2", meanings:["대사관"], ex:[{ s:"Complaints are handled by the relevant {{}}.", f:"embassy", ko:"불만은 해당 대사관이 처리한다." }] },
+  { word:"energetic", exams:["공무원"], pron:"에너제틱", pos:"adj", level:"B2", meanings:["활기찬","정력적인"], syn:["lively","vigorous","dynamic"], ant:["lethargic"], ex:[{ s:"Young people are {{}} and active.", f:"energetic", ko:"젊은이들은 활기차고 활동적이다." }] },
+  { word:"employer", exams:["공무원"], pron:"임플로이어", pos:"n", level:"B1", meanings:["고용주"], syn:["boss","company","hirer"], ant:["employee"], ex:[{ s:"Agriculture is still the largest {{}}.", f:"employer", ko:"농업은 여전히 최대 고용주다." }] },
+  { word:"elderly", exams:["공무원"], pron:"엘더리", pos:"adj", level:"B2", meanings:["나이 든","고령의"], syn:["aged","old","senior"], ant:["young"], ex:[{ s:"The center offers programs for the {{}}.", f:"elderly", ko:"그 센터는 고령자를 위한 프로그램을 제공한다." }] },
+  { word:"educator", exams:["공무원"], pron:"에듀케이터", pos:"n", level:"B2", meanings:["교육자"], syn:["teacher","instructor","tutor"], ex:[{ s:"The camp is led by studio art {{}}.", f:"educators", ko:"그 캠프는 스튜디오 미술 교육자들이 이끈다." }] },
+  { word:"extraneous", exams:["공무원"], pron:"익스트레이니어스", pos:"adj", level:"C2", meanings:["관계없는","외부의"], syn:["irrelevant","unrelated","extrinsic"], ant:["relevant"], ex:[{ s:"Don't let {{}} stuff eat up your attention.", f:"extraneous", ko:"관계없는 것이 주의를 잡아먹게 하지 마라." }] },
+  { word:"equip", exams:["공무원"], pron:"이큅", pos:"v", level:"B2", meanings:["갖추게 하다","장비를 갖추다"], syn:["provide","furnish","arm"], ex:[{ s:"Training can {{}} workers with necessary skills.", f:"equip", ko:"훈련은 근로자에게 필요한 기술을 갖추게 할 수 있다." }] },
+  { word:"effective", exams:["공무원"], pron:"이펙티브", pos:"adj", level:"B2", meanings:["효과적인"], syn:["efficient","successful","productive"], ant:["ineffective"], ex:[{ s:"Understand what is involved in {{}} communication.", f:"effective", ko:"효과적인 의사소통에 무엇이 관여하는지 이해하라." }] },
+  { word:"extroverted", exams:["공무원"], pron:"엑스트러버티드", pos:"adj", level:"C1", meanings:["외향적인"], syn:["outgoing","sociable","gregarious"], ant:["introverted"], ex:[{ s:"Active listening doesn't require an {{}} personality.", f:"extroverted", ko:"적극적 경청에 외향적 성격이 필요한 것은 아니다." }] },
   { word:"employee", exams:["공무원"], pron:"임플로이", pos:"n", level:"B1", meanings:["직원","종업원"], syn:["worker","staff member","staffer"], ant:["employer"], ex:[{ s:"Each {{}} has different working patterns.", f:"employee", ko:"직원마다 서로 다른 업무 방식을 지닌다." }] },
   { word:"entrance", exams:["공무원"], pron:"엔트런스", pos:"n", level:"B1", meanings:["입구"], syn:["entry","doorway","gateway"], ant:["exit"], ex:[{ s:"We are in front of the main {{}} of city hall.", f:"entrance", ko:"우리는 시청 정문 앞에 있다." }] },
   { word:"exact", exams:["공무원"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
@@ -796,7 +806,7 @@ window.VOCAB_E = [
     syn:["odd","peculiar","unconventional"], ant:["conventional"],
     ex:[{ s:"The inventor's {{}} habits amused the whole village.", f:"eccentric", ko:"그 발명가의 유별난 습관은 마을 전체를 즐겁게 했다." }] },
 
-  { word:"eclipse", pron:"이클립스", pos:"n", level:"C1", meanings:["일식","월식"],
+  { word:"eclipse", exams:["공무원"], pron:"이클립스", pos:"n", level:"C1", meanings:["일식","월식"],
     ex:[{ s:"Crowds filled the beach to watch the total {{}}.", f:"eclipse", ko:"개기 일식을 보려고 사람들이 해변을 가득 메웠다." }] },
 
   { word:"ecological", pron:"에컬라지컬", pos:"adj", level:"B2", meanings:["생태계의","생태학적인"],
@@ -841,7 +851,7 @@ window.VOCAB_E = [
     syn:["efficacy","potency","usefulness"], ant:["futility"],
     ex:[{ s:"The trial measured the {{}} of the new vaccine.", f:"effectiveness", ko:"그 임상시험은 새 백신의 유효성을 측정했다." }] },
 
-  { word:"efficiency", pron:"이피션시", pos:"n", level:"B2", meanings:["능률","효율"],
+  { word:"efficiency", exams:["공무원"], pron:"이피션시", pos:"n", level:"B2", meanings:["능률","효율"],
     syn:["productivity","effectiveness","competence"], ant:["inefficiency"],
     ex:[{ s:"Automating the line raised {{}} by a third.", f:"efficiency", ko:"생산 라인을 자동화해 능률이 3분의 1 높아졌다." }] },
 
@@ -1143,7 +1153,7 @@ window.VOCAB_E = [
 
   /* ── 5차: encouragement ~ enlighten ─────────────── */
 
-  { word:"encouragement", pron:"인커리지먼트", pos:"n", level:"B2", meanings:["격려","격려가 되는 말"],
+  { word:"encouragement", exams:["공무원"], pron:"인커리지먼트", pos:"n", level:"B2", meanings:["격려","격려가 되는 말"],
     syn:["reassurance","moral support","backing"], ant:["discouragement"],
     ex:[{ s:"A word of {{}} from her coach was all she needed.", f:"encouragement", ko:"그녀에게 필요한 것은 코치의 격려 한마디였다." }] },
 
@@ -1213,7 +1223,7 @@ window.VOCAB_E = [
     ex:[{ s:"Nobody bothered to {{}} the parking rules.", f:"enforce", ko:"아무도 주차 규정을 시행하려 애쓰지 않았다." }] },
 
   /* 원본은 '사로잡다, 끌다; 관계를 맺다; 약속하다' 로 갈래가 셋이다 — 둘로 줄였다. */
-  { word:"engage", pron:"인게이지", pos:"v", level:"B2", meanings:["사로잡다","관계를 맺다"],
+  { word:"engage", exams:["공무원"], pron:"인게이지", pos:"v", level:"B2", meanings:["사로잡다","관계를 맺다"],
     syn:["captivate","draw in","hold the attention of"],
     ex:[{ s:"A good opening line will {{}} the reader at once.", f:"engage", ko:"좋은 첫 문장은 독자를 곧바로 사로잡는다." }] },
 
@@ -1264,7 +1274,7 @@ window.VOCAB_E = [
     syn:["registration","sign-up","admission"],
     ex:[{ s:"The college saw {{}} double after the fee was cut.", f:"enrollment", ko:"그 대학은 수강료를 낮춘 뒤 등록이 두 배가 되는 것을 보았다." }] },
 
-  { word:"ensure", pron:"인슈어", pos:"v", level:"B1", meanings:["확실하게 하다","보장하다"],
+  { word:"ensure", exams:["공무원"], pron:"인슈어", pos:"v", level:"B1", meanings:["확실하게 하다","보장하다"],
     syn:["guarantee","make certain","make sure"],
     ex:[{ s:"Check the lid twice to {{}} that nothing spills.", f:"ensure", ko:"아무것도 쏟아지지 않도록 뚜껑을 두 번 확인하세요." }] },
 
@@ -1547,7 +1557,7 @@ window.VOCAB_E = [
     syn:["avoid","dodge","shirk"], ant:["confront"],
     ex:[{ s:"He tried to {{}} the question twice.", f:"evade", ko:"그는 그 질문을 두 번 회피하려 했다." }] },
 
-  { word:"evaluate", pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
+  { word:"evaluate", exams:["공무원"], pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
     syn:["appraise","assess","judge"],
     ex:[{ s:"Teachers {{}} the projects on four criteria.", f:"evaluate", ko:"교사들은 네 가지 기준으로 그 과제를 평가한다." }] },
 
@@ -1758,7 +1768,7 @@ window.VOCAB_E = [
   /* 발음은 기존 표제어 art exhibition("아트 엑시비션")에 맞춰 '엑시비션' 으로 적었다.
      원본의 '(감정, 기교 등의) 표현' 갈래는 버렸다(괄호 설명이 필요한 갈래다).
      art exhibition 은 pos 가 phr 이라 이 명사와 오답 후보로 겹치지 않는다. */
-  { word:"exhibition", pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
+  { word:"exhibition", exams:["공무원"], pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
     syn:["showcase","public display","exposition"],
     ex:[{ s:"The museum opens a new {{}} each spring.", f:"exhibition", ko:"그 박물관은 매년 봄 새 전시회를 연다." }] },
 
@@ -1892,7 +1902,7 @@ window.VOCAB_E = [
     syn:["abuse","misuse","unfair use"],
     ex:[{ s:"The report documents the {{}} of child labor.", f:"exploitation", ko:"그 보고서는 아동 노동 착취를 기록한다." }] },
 
-  { word:"exploration", pron:"엑스플러레이션", pos:"n", level:"B2", meanings:["탐사","탐험"],
+  { word:"exploration", exams:["공무원"], pron:"엑스플러레이션", pos:"n", level:"B2", meanings:["탐사","탐험"],
     syn:["survey","expedition","investigation"],
     ex:[{ s:"Deep-sea {{}} still costs more than space travel.", f:"exploration", ko:"심해 탐사는 여전히 우주 여행보다 비용이 많이 든다." }] },
 

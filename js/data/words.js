@@ -36,6 +36,12 @@
  * 같은 품사끼리만 오답으로 뽑히므로 표현은 표현끼리 경쟁합니다.
  */
 window.VOCAB = [
+  { word:"acceptable", exams:["공무원"], pron:"억셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 있는","용인되는"], syn:["satisfactory","adequate","permissible"], ant:["unacceptable"], ex:[{ s:"All travelers must carry {{}} identification.", f:"acceptable", ko:"모든 여행자는 인정되는 신분증을 소지해야 한다." }] },
+  { word:"accuse", exams:["공무원"], pron:"어큐즈", pos:"v", level:"B2", meanings:["비난하다","고발하다"], syn:["blame","charge","indict"], ant:["defend"], ex:[{ s:"They {{}} him of stealing the funds.", f:"accuse", ko:"그들은 그가 자금을 훔쳤다고 고발한다." }], gov:{ prep:["of"], usage:"accuse A of B : A를 B의 이유로 비난/고발하다" } },
+  { word:"achievement", exams:["공무원"], pron:"어치브먼트", pos:"n", level:"B2", meanings:["성취","업적"], syn:["accomplishment","feat","success"], ant:["failure"], ex:[{ s:"We celebrate the artistic {{}} of each participant.", f:"achievements", ko:"우리는 각 참가자의 예술적 성취를 축하한다." }] },
+  { word:"advancement", exams:["공무원"], pron:"어드밴스먼트", pos:"n", level:"B2", meanings:["발전","진보","승진"], syn:["progress","development","growth"], ex:[{ s:"Rapid {{}} in AI is reshaping work.", f:"advancements", ko:"AI의 급속한 발전이 일을 재편하고 있다." }] },
+  { word:"availability", exams:["공무원"], pron:"어베일러빌리티", pos:"n", level:"B2", meanings:["이용 가능성","가용성"], syn:["accessibility","obtainability","readiness"], ex:[{ s:"There is increased {{}} of AI-skilled workers.", f:"availability", ko:"AI 숙련 인력의 가용성이 높아졌다." }] },
+  { word:"appealing", exams:["공무원"], pron:"어필링", pos:"adj", level:"B2", meanings:["매력적인","호소력 있는"], syn:["attractive","tempting","engaging"], ant:["unappealing"], ex:[{ s:"The idea is {{}} for several reasons.", f:"appealing", ko:"그 생각은 여러 이유로 매력적이다." }] },
   { word:"ambulance", exams:["공무원"], pron:"앰뷸런스", pos:"n", level:"B1", meanings:["구급차"], ex:[{ s:"The {{}} arrived within a few minutes.", f:"ambulance", ko:"구급차가 몇 분 안에 도착했다." }] },
   { word:"agency", exams:["공무원"], pron:"에이전시", pos:"n", level:"B1", meanings:["기관","대행사"], syn:["bureau","organization","office"], ex:[{ s:"Check with your local waste management {{}}.", f:"agency", ko:"지역 폐기물 관리 기관에 확인하세요." }] },
   { word:"authorization", exams:["공무원"], pron:"오써라이제이션", pos:"n", level:"C1", meanings:["허가","승인"], syn:["permission","approval","consent"], ant:["prohibition"], ex:[{ s:"Using the facilities requires proper {{}}.", f:"authorization", ko:"시설을 이용하려면 적절한 허가가 필요하다." }] },
@@ -132,7 +138,7 @@ window.VOCAB = [
   { word:"abstain from ~ing", pron:"업스테인 프럼", pos:"phr", level:"C1", meanings:["~을 삼가다","~을 그만두다"],
     syn:["refrain from","avoid","give up"], ant:["indulge in"] },
 
-  { word:"abstract", pron:"앱스트랙트", pos:"adj", level:"B2", meanings:["추상적인","관념적인"],
+  { word:"abstract", exams:["공무원"], pron:"앱스트랙트", pos:"adj", level:"B2", meanings:["추상적인","관념적인"],
     syn:["theoretical","conceptual","intangible"], ant:["concrete"],
     ex:[{ s:"Children struggle with {{}} ideas like justice.", f:"abstract", ko:"아이들은 정의처럼 추상적인 개념을 어려워한다." }] },
 
@@ -354,7 +360,7 @@ window.VOCAB = [
     syn:["skilled","proficient","expert"], ant:["clumsy"],
     ex:[{ s:"She is {{}} at solving problems under pressure.", f:"adept", ko:"그녀는 압박 속에서 문제를 해결하는 데 능숙하다." }] },
 
-  { word:"adequate", pron:"애디퀴트", pos:"adj", level:"B2", meanings:["적합한","충분한"],
+  { word:"adequate", exams:["공무원"], pron:"애디퀴트", pos:"adj", level:"B2", meanings:["적합한","충분한"],
     syn:["sufficient","satisfactory","ample"], ant:["insufficient"],
     ex:[{ s:"The shelter offers {{}} protection from the cold.", f:"adequate", ko:"그 대피소는 추위로부터 충분한 보호를 제공한다." }] },
 
@@ -382,7 +388,7 @@ window.VOCAB = [
     syn:["modification","alteration","tweak"],
     ex:[{ s:"A small {{}} to the schedule solved the conflict.", f:"adjustment", ko:"일정을 약간 조정하니 충돌이 해결되었다." }] },
 
-  { word:"administer", pron:"어드미니스터", pos:"v", level:"C1", meanings:["관리하다","집행하다"],
+  { word:"administer", exams:["공무원"], pron:"어드미니스터", pos:"v", level:"C1", meanings:["관리하다","집행하다"],
     syn:["manage","oversee","direct"], ant:["neglect"],
     ex:[{ s:"A trustee will {{}} the fund until 2030.", f:"administer", ko:"수탁자가 2030년까지 그 기금을 관리할 것이다." }] },
 
@@ -486,7 +492,7 @@ window.VOCAB = [
     ex:[{ s:"He serves on an {{}} board for the ministry.", f:"advisory", ko:"그는 그 부처의 자문 위원회에서 일한다." }] },
 
 
-  { word:"advocate", pron:"애드버킷", pos:"v", level:"B2", meanings:["지지하다","옹호하다"],
+  { word:"advocate", exams:["공무원"], pron:"애드버킷", pos:"v", level:"B2", meanings:["지지하다","옹호하다"],
     syn:["support","champion","endorse"], ant:["oppose"],
     ex:[{ s:"Many economists {{}} raising rates gradually.", f:"advocate", ko:"많은 경제학자가 금리를 점진적으로 올리는 것을 지지한다." }] },
 
@@ -620,7 +626,7 @@ window.VOCAB = [
     syn:["farmer","agronomist","grower"],
     ex:[{ s:"An {{}} advised the village on crop rotation.", f:"agriculturalist", ko:"한 농업 전문가가 마을에 윤작을 조언했다." }] },
 
-  { word:"agriculture", pron:"애그리컬처", pos:"n", level:"B1", meanings:["농업"],
+  { word:"agriculture", exams:["공무원"], pron:"애그리컬처", pos:"n", level:"B1", meanings:["농업"],
     syn:["farming","cultivation","husbandry"],
     ex:[{ s:"{{}} still employs most people in the region.", f:"Agriculture", ko:"농업은 여전히 그 지역 대부분의 사람을 고용한다." }] },
 
@@ -700,7 +706,7 @@ window.VOCAB = [
     syn:["coalition","partnership","union"], ant:["rivalry"],
     ex:[{ s:"The two parties formed a fragile {{}}.", f:"alliance", ko:"두 정당은 취약한 동맹을 결성했다." }] },
 
-  { word:"allocate", pron:"앨러케이트", pos:"v", level:"B2", meanings:["배분하다","할당하다"],
+  { word:"allocate", exams:["공무원"], pron:"앨러케이트", pos:"v", level:"B2", meanings:["배분하다","할당하다"],
     syn:["assign","distribute","apportion"], ant:["withhold"],
     ex:[{ s:"The city will {{}} more funds to public transit.", f:"allocate", ko:"그 도시는 대중교통에 더 많은 자금을 배분할 것이다." }] },
 
@@ -1282,7 +1288,7 @@ window.VOCAB = [
     syn:["confidence","forcefulness","firmness"], ant:["passivity"],
     ex:[{ s:"The workshop teaches {{}} without aggression.", f:"assertiveness", ko:"그 워크숍은 공격성 없는 자기주장을 가르친다." }] },
 
-  { word:"assess", pron:"어세스", pos:"v", level:"B2", meanings:["평가하다","가늠하다"],
+  { word:"assess", exams:["공무원"], pron:"어세스", pos:"v", level:"B2", meanings:["평가하다","가늠하다"],
     syn:["evaluate","gauge","appraise"],
     ex:[{ s:"Judges will {{}} each entry on originality.", f:"assess", ko:"심사위원들은 각 출품작을 독창성으로 평가할 것이다." }] },
 
@@ -1584,7 +1590,7 @@ window.VOCAB = [
     syn:["independent","self-governing","self-ruling"], ant:["dependent"],
     ex:[{ s:"The region became largely {{}} after the treaty.", f:"autonomous", ko:"그 지역은 조약 이후 대체로 자치를 이루게 되었다." }] },
 
-  { word:"autonomy", pron:"오타너미", pos:"n", level:"C1", meanings:["자율성","자치권"],
+  { word:"autonomy", exams:["공무원"], pron:"오타너미", pos:"n", level:"C1", meanings:["자율성","자치권"],
     syn:["independence","self-rule","freedom"], ant:["dependence"],
     ex:[{ s:"Teachers want more {{}} over the curriculum.", f:"autonomy", ko:"교사들은 교육과정에 대한 더 많은 자율성을 원한다." }] },
 
@@ -1632,7 +1638,7 @@ window.VOCAB = [
     syn:["prize","honor","accolade"],
     ex:[{ s:"She received an {{}} for her research.", f:"award", ko:"그녀는 연구로 상을 받았다." }] },
 
-  { word:"awareness", pron:"어웨어니스", pos:"n", level:"B2", meanings:["인식","알고 있음"],
+  { word:"awareness", exams:["공무원"], pron:"어웨어니스", pos:"n", level:"B2", meanings:["인식","알고 있음"],
     syn:["consciousness","recognition","understanding"], ant:["ignorance"],
     ex:[{ s:"The campaign raised {{}} of ocean plastic.", f:"awareness", ko:"그 캠페인은 해양 플라스틱에 대한 인식을 높였다." }] },
 

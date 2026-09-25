@@ -20,6 +20,12 @@
  * 걸러내므로 화면에는 아직 R 세트가 뜨지 않는다.
  */
 window.VOCAB_R = [
+  { word:"retailer", exams:["공무원"], pron:"리테일러", pos:"n", level:"B2", meanings:["소매업체","소매상"], syn:["seller","merchant","vendor"], ex:[{ s:"The {{}} offers online grocery shopping.", f:"retailer", ko:"그 소매업체는 온라인 식료품 쇼핑을 제공한다." }] },
+  { word:"reusable", exams:["공무원"], pron:"리유저블", pos:"adj", level:"B2", meanings:["재사용 가능한"], syn:["recyclable","washable","durable"], ant:["disposable"], ex:[{ s:"Opt for {{}} containers instead of plastic.", f:"reusable", ko:"플라스틱 대신 재사용 가능한 용기를 선택하라." }] },
+  { word:"rearrange", exams:["공무원"], pron:"리어레인지", pos:"v", level:"B2", meanings:["재배치하다","재정리하다"], syn:["reorganize","reorder","shuffle"], ex:[{ s:"They began {{}} their environment to suit themselves.", f:"rearranging", ko:"그들은 환경을 자신에게 맞게 재배치하기 시작했다." }] },
+  { word:"responsibility", exams:["공무원"], pron:"리스판서빌리티", pos:"n", level:"B1", meanings:["책임","책무"], syn:["duty","obligation","accountability"], ex:[{ s:"Society allocates positions of {{}} by merit.", f:"responsibility", ko:"사회는 능력에 따라 책임 있는 자리를 배분한다." }] },
+  { word:"relegate", exams:["공무원"], pron:"렐리게이트", pos:"v", level:"C2", meanings:["격하하다","밀쳐두다"], syn:["demote","downgrade","consign"], ant:["promote"], ex:[{ s:"Schedule time to {{}} distractions to set times.", f:"relegate", ko:"방해 요소를 정해진 시간으로 밀쳐두도록 시간을 짜라." }] },
+  { word:"risky", exams:["공무원"], pron:"리스키", pos:"adj", level:"B2", meanings:["위험한"], syn:["dangerous","hazardous","precarious"], ant:["safe"], ex:[{ s:"Farming is quite {{}} and uncertain.", f:"risky", ko:"농업은 꽤 위험하고 불확실하다." }] },
   { word:"ration", exams:["공무원"], pron:"래션", pos:"n", level:"B2", meanings:["배급량","정량"], syn:["allowance","portion","quota"], ex:[{ s:"A student's daily {{}} of cereal made little difference.", f:"ration", ko:"학생의 하루 시리얼 배급량은 거의 차이를 만들지 않았다." }] },
   { word:"recyclable", exams:["공무원"], pron:"리사이클러블", pos:"adj", level:"B2", meanings:["재활용 가능한"], syn:["reusable","reprocessable","salvageable"], ant:["disposable"], ex:[{ s:"Separate the {{}} materials from the trash.", f:"recyclable", ko:"재활용 가능한 물품을 쓰레기와 분리하세요." }] },
   { word:"regardless", exams:["공무원"], pron:"리가들리스", pos:"adv", level:"B2", meanings:["상관없이","개의치 않고"], syn:["nevertheless","anyway","nonetheless"], ex:[{ s:"Students behave better {{}} of their diet.", f:"regardless", ko:"학생들은 식단과 상관없이 더 잘 행동한다." }], gov:{ prep:["of"], usage:"regardless of ~ : ~에 상관없이" } },
@@ -292,7 +298,7 @@ window.VOCAB_R = [
 
   /* 승격 ㉔ — 사전의 쌍반점만 쉼표로 갈랐다(banquet, B · hospitality, H).
      원본 '받아들임, 수신, 환영회' 세 갈래를 둘로 줄인 셈이다. */
-  { word:"reception", pron:"리셉션", pos:"n", level:"B2", meanings:["접수","환영회"],
+  { word:"reception", exams:["공무원"], pron:"리셉션", pos:"n", level:"B2", meanings:["접수","환영회"],
     syn:["banquet","welcoming party","front desk"],
     ex:[{ s:"The wedding {{}} was held outdoors.", f:"reception", ko:"결혼 환영회는 밖에서 열렸다." }] },
 
@@ -440,7 +446,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊴ — 사전의 쌍반점만 쉼표로 갈랐다(mirror, M). 원본의 '나타내다' 는
      represent(챕터 8) 자리다. */
-  { word:"reflect", pron:"리플렉트", pos:"v", level:"B1", meanings:["반영하다","반사하다"],
+  { word:"reflect", exams:["공무원"], pron:"리플렉트", pos:"v", level:"B1", meanings:["반영하다","반사하다"],
     syn:["mirror","throw back light","show as in a glass"],
     ex:[{ s:"Prices {{}} demand.", f:"reflect", ko:"가격은 수요를 반영한다." }] },
 
@@ -642,7 +648,7 @@ window.VOCAB_R = [
   /* 승격 56 — 원본은 '상대적인; 친척' 으로 형용사와 명사가 섞여 있었다. 참조
      absolute·comparative 가 형용사여서 형용사로 세우고 사전 단일값을 지켰다.
      '상대적인' 은 comparative 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"relative", pron:"렐러티브", pos:"adj", level:"B2", meanings:["상대적인"],
+  { word:"relative", exams:["공무원"], pron:"렐러티브", pos:"adj", level:"B2", meanings:["상대적인"],
     syn:["comparative","judged against something else","not absolute"], ant:["absolute"],
     ex:[{ s:"It is a {{}} matter.", f:"relative", ko:"그것은 상대적인 문제다." }] },
 
@@ -674,7 +680,7 @@ window.VOCAB_R = [
 
   /* 승격 59 — 사전 글자 유지(irrelevant 반의어, I). '적절한' 은 apt·proper(P) 와
      글자가 같아 서로 오답에서 빠진다. */
-  { word:"relevant", pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
+  { word:"relevant", exams:["공무원"], pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
     syn:["bearing on the matter","to the point","having a link"], ant:["irrelevant"],
     ex:[{ s:"Only {{}} facts were read out.", f:"relevant", ko:"관련 있는 사실만 읽혔다." }] },
 
@@ -684,7 +690,7 @@ window.VOCAB_R = [
     ex:[{ s:"The car is known for its {{}}.", f:"reliability", ko:"그 차는 신뢰성으로 알려져 있다." }] },
 
   /* 승격 61 — 사전 첫 갈래를 지키고 원본의 '의지가 되는' 을 붙였다. 참조 없음. */
-  { word:"reliable", pron:"릴라이어블", pos:"adj", level:"B1", meanings:["믿을 만한","의지가 되는"],
+  { word:"reliable", exams:["공무원"], pron:"릴라이어블", pos:"adj", level:"B1", meanings:["믿을 만한","의지가 되는"],
     syn:["to be counted on","sure not to fail","trustworthy"],
     ex:[{ s:"She is a {{}} worker.", f:"reliable", ko:"그녀는 믿을 만한 일꾼이다." }] },
 
@@ -793,7 +799,7 @@ window.VOCAB_R = [
     ex:[{ s:"Please {{}} your shoes.", f:"remove", ko:"신을 벗어 주세요." }] },
 
   /* 원본 '~이 되게 하다, ~로 만들다, ~을 주다' 세 갈래를 둘로 줄였다. */
-  { word:"render", pron:"렌더", pos:"v", level:"C1", meanings:["~이 되게 하다","~로 만들다"],
+  { word:"render", exams:["공무원"], pron:"렌더", pos:"v", level:"C1", meanings:["~이 되게 하다","~로 만들다"],
     syn:["cause to become","leave in a state","turn into"],
     ex:[{ s:"Heat can {{}} the metal soft.", f:"render", ko:"열은 그 금속을 부드럽게 만들 수 있다." }] },
 
@@ -1039,7 +1045,7 @@ window.VOCAB_R = [
 
   /* 승격 97 — 원본은 '거주자, 거주하는, 고유의, 내재의' 로 네 갈래에 품사가
      섞여 있었다. 참조 civilian·inhabitant 가 명사여서 사전 단일값을 지켰다. */
-  { word:"resident", pron:"레지던트", pos:"n", level:"B2", meanings:["거주자"],
+  { word:"resident", exams:["공무원"], pron:"레지던트", pos:"n", level:"B2", meanings:["거주자"],
     syn:["inhabitant","one who lives there","dweller"],
     ex:[{ s:"Every {{}} got a notice.", f:"resident", ko:"모든 거주자가 통지를 받았다." }] },
 
@@ -1087,7 +1093,7 @@ window.VOCAB_R = [
   /* 승격 103 — 사전의 쌍반점만 쉼표로 갈랐다(determination, D). 원본은 괄호
      "(문제를) 해결하다, 다짐하다" 였는데 사전 순서를 지켜 참조 쪽 뜻('결심') 을
      앞에 두었다. */
-  { word:"resolve", pron:"리잘브", pos:"v", level:"B2", meanings:["결심하다","해결하다"],
+  { word:"resolve", exams:["공무원"], pron:"리잘브", pos:"v", level:"B2", meanings:["결심하다","해결하다"],
     syn:["make up one's mind","settle a problem","clear up a dispute"],
     ex:[{ s:"He {{}} to try once more.", f:"resolved", ko:"그는 한 번 더 해 보기로 결심했다." }] },
 
@@ -1340,7 +1346,7 @@ window.VOCAB_R = [
 
   /* 승격 128 — 사전의 쌍반점만 쉼표로 갈랐다. '회전' 을 이쪽에 두고 rotation 은
      '순환, 교대' 로 비켜 세웠다. 참조는 없다. */
-  { word:"revolution", pron:"레벌루션", pos:"n", level:"B1", meanings:["혁명","회전"],
+  { word:"revolution", exams:["공무원"], pron:"레벌루션", pos:"n", level:"B1", meanings:["혁명","회전"],
     syn:["overthrow of a rule","sweeping change","one full turn"],
     ex:[{ s:"The {{}} changed the country.", f:"revolution", ko:"그 혁명이 나라를 바꿨다." }] },
 
@@ -1350,7 +1356,7 @@ window.VOCAB_R = [
 
   /* 승격 129 — 사전 단일값 유지(incentive, I). 원본은 '보상, 사례; 보상하다' 로
      명사와 동사가 섞여 있었다. */
-  { word:"reward", pron:"리워드", pos:"n", level:"B1", meanings:["보상"],
+  { word:"reward", exams:["공무원"], pron:"리워드", pos:"n", level:"B1", meanings:["보상"],
     syn:["incentive","prize for good work","return for effort"],
     ex:[{ s:"They offered a {{}} for the find.", f:"reward", ko:"그들은 그 발견에 보상을 내걸었다." }] },
 

@@ -19,6 +19,18 @@
  * 진행 상황: 466단어 전량 완료 (calamity ~ cynicism) — 24챕터.
  */
 window.VOCAB_C = [
+  { word:"cure", exams:["공무원"], pron:"큐어", pos:"v", level:"B1", meanings:["치료하다","낫게 하다"], syn:["heal","remedy","treat"], ant:["worsen"], ex:[{ s:"The new drug can {{}} the disease.", f:"cure", ko:"그 신약은 그 병을 치료할 수 있다." }] },
+  { word:"container", exams:["공무원"], pron:"컨테이너", pos:"n", level:"B1", meanings:["용기","그릇"], syn:["vessel","receptacle","holder"], ex:[{ s:"Choose reusable {{}} for your food.", f:"containers", ko:"음식에는 재사용 용기를 골라라." }] },
+  { word:"convenient", exams:["공무원"], pron:"컨비니언트", pos:"adj", level:"B1", meanings:["편리한"], syn:["handy","suitable","accessible"], ant:["inconvenient"], ex:[{ s:"Meeting online is sometimes more {{}}.", f:"convenient", ko:"온라인 회의가 때로는 더 편리하다." }] },
+  { word:"convenience", exams:["공무원"], pron:"컨비니언스", pos:"n", level:"B2", meanings:["편리","편의"], syn:["ease","comfort","accessibility"], ant:["inconvenience"], ex:[{ s:"Plastic is part of our {{}} lifestyle.", f:"convenience", ko:"플라스틱은 우리 편의적 생활의 일부다." }] },
+  { word:"consular", exams:["공무원"], pron:"칸설러", pos:"adj", level:"C1", meanings:["영사의"], ex:[{ s:"We welcome feedback about our {{}} services.", f:"consular", ko:"우리는 영사 업무에 대한 의견을 환영한다." }] },
+  { word:"consulate", exams:["공무원"], pron:"칸설럿", pos:"n", level:"C1", meanings:["영사관"], ex:[{ s:"The relevant {{}} will reply to you.", f:"consulate", ko:"해당 영사관이 답변할 것이다." }] },
+  { word:"complaint", exams:["공무원"], pron:"컴플레인트", pos:"n", level:"B1", meanings:["불만","항의"], syn:["grievance","protest","objection"], ex:[{ s:"Send details of your {{}} to the form.", f:"complaint", ko:"불만 내용을 양식으로 보내라." }] },
+  { word:"consultant", exams:["공무원"], pron:"컨설턴트", pos:"n", level:"B2", meanings:["자문위원","컨설턴트"], syn:["adviser","expert","specialist"], ex:[{ s:"The lessons were created by a STEM {{}}.", f:"consultant", ko:"그 수업은 STEM 자문위원이 만들었다." }] },
+  { word:"caregiver", exams:["공무원"], pron:"케어기버", pos:"n", level:"B2", meanings:["돌보는 사람","보호자"], syn:["carer","guardian","nurse"], ex:[{ s:"We invite families and {{}} to the reception.", f:"caregivers", ko:"우리는 가족과 보호자를 리셉션에 초대한다." }] },
+  { word:"crop", exams:["공무원"], pron:"크랍", pos:"n", level:"B2", meanings:["농작물","수확물"], syn:["harvest","produce","yield"], ex:[{ s:"Storms can destroy farmers' {{}}.", f:"crops", ko:"폭풍은 농부의 농작물을 망칠 수 있다." }] },
+  { word:"climate", exams:["공무원"], pron:"클라이밋", pos:"n", level:"B1", meanings:["기후"], syn:["weather","conditions","atmosphere"], ex:[{ s:"Farming relies heavily on the {{}}.", f:"climate", ko:"농업은 기후에 크게 의존한다." }] },
+  { word:"contribution", exams:["공무원"], pron:"컨트리뷰션", pos:"n", level:"B2", meanings:["기여","공헌"], syn:["input","donation","involvement"], ex:[{ s:"It pays everyone the same regardless of {{}}.", f:"contribution", ko:"그것은 기여와 무관하게 모두에게 똑같이 지급한다." }] },
   { word:"categorize", exams:["공무원"], pron:"카테고라이즈", pos:"v", level:"B2", meanings:["분류하다"], syn:["classify","sort","group"], ex:[{ s:"The system {{}} people by how they think and act.", f:"categorizes", ko:"그 체계는 사람들을 사고방식과 행동 방식으로 분류한다." }] },
   { word:"closure", exams:["공무원"], pron:"클로저", pos:"n", level:"B2", meanings:["폐쇄","종료"], syn:["shutdown","closing","termination"], ant:["opening"], ex:[{ s:"There are no anticipated road {{}} in the community.", f:"closures", ko:"지역 내에 예상되는 도로 폐쇄는 없다." }] },
   { word:"collaboration", exams:["공무원"], pron:"컬래버레이션", pos:"n", level:"B2", meanings:["협력","공동 작업"], syn:["cooperation","partnership","teamwork"], ant:["competition"], ex:[{ s:"The projects will expand research {{}} among disciplines.", f:"collaboration", ko:"그 사업들은 여러 분야 간 연구 협력을 확대할 것이다." }] },
@@ -647,7 +659,7 @@ window.VOCAB_C = [
     ex:[{ s:"The two species {{}} in the same shallow lake.", f:"coexist", ko:"그 두 종은 같은 얕은 호수에서 공존한다." }] },
 
   /* ── cog · coh · coi ───────────────────────── */
-  { word:"cognitive", pron:"카그니티브", pos:"adj", level:"C1", meanings:["인지의","인식의"],
+  { word:"cognitive", exams:["공무원"], pron:"카그니티브", pos:"adj", level:"C1", meanings:["인지의","인식의"],
     syn:["mental","intellectual","rational"], ant:["emotional"],
     ex:[{ s:"Puzzles sharpen {{}} skills in young children.", f:"cognitive", ko:"퍼즐은 어린 아이의 인지 능력을 날카롭게 한다." }] },
 
@@ -815,7 +827,7 @@ window.VOCAB_C = [
     syn:["business","profitable","mercantile"], ant:["nonprofit"],
     ex:[{ s:"The film was a {{}} success but a critical failure.", f:"commercial", ko:"그 영화는 상업적으로는 성공했지만 비평에서는 실패했다." }] },
 
-  { word:"commission", pron:"커미션", pos:"n", level:"B2", meanings:["임무","위원회"],
+  { word:"commission", exams:["공무원"], pron:"커미션", pos:"n", level:"B2", meanings:["임무","위원회"],
     syn:["assignment","task","mandate"],
     ex:[{ s:"She accepted a {{}} to paint the city hall.", f:"commission", ko:"그녀는 시청을 그리는 임무를 받아들였다." }] },
 
@@ -1263,7 +1275,7 @@ window.VOCAB_C = [
     syn:["agreement","accord","unanimity"], ant:["dispute"],
     ex:[{ s:"The panel reached no {{}} after six hours.", f:"consensus", ko:"위원단은 여섯 시간이 지나도 합의에 이르지 못했다." }] },
 
-  { word:"consent", pron:"컨센트", pos:"n", level:"B2", meanings:["승낙","동의"],
+  { word:"consent", exams:["공무원"], pron:"컨센트", pos:"n", level:"B2", meanings:["승낙","동의"],
     syn:["permission","approval","assent"], ant:["refusal"],
     ex:[{ s:"No surgery goes ahead without written {{}}.", f:"consent", ko:"서면 승낙 없이는 어떤 수술도 진행되지 않는다." }],
     gov:{ prep:["to","of","for"], pat:"consent {{}} the operation", usage:"consent to ~ : ~에 동의하다" } },
@@ -1385,7 +1397,7 @@ window.VOCAB_C = [
     syn:["buyer","shopper","user"], ant:["producer"],
     ex:[{ s:"The average {{}} never reads the label.", f:"consumer", ko:"보통 소비자는 라벨을 결코 읽지 않는다." }] },
 
-  { word:"consumption", pron:"컨섬션", pos:"n", level:"B2", meanings:["소비","소비량"],
+  { word:"consumption", exams:["공무원"], pron:"컨섬션", pos:"n", level:"B2", meanings:["소비","소비량"],
     syn:["use","intake","expenditure"], ant:["production"],
     ex:[{ s:"Meat {{}} has fallen steadily since 2010.", f:"consumption", ko:"육류 소비는 2010년 이후 꾸준히 줄었다." }] },
 
@@ -1940,7 +1952,7 @@ window.VOCAB_C = [
   { word:"curl up", pron:"컬 업", pos:"phr", level:"B1", meanings:["몸을 웅크리다"],
     syn:["huddle","coil","nestle"], ant:["stretch"] },
 
-  { word:"currency", pron:"커런시", pos:"n", level:"B2", meanings:["통화","유통"],
+  { word:"currency", exams:["공무원"], pron:"커런시", pos:"n", level:"B2", meanings:["통화","유통"],
     syn:["money","cash","legal tender"],
     ex:[{ s:"The country changed its {{}} in 2002.", f:"currency", ko:"그 나라는 2002년에 통화를 바꿨다." }] },
 

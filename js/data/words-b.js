@@ -434,7 +434,7 @@ window.VOCAB_B = [
     syn:["fasten with rope","fasten","secure"], ant:["loosen"],
     ex:[{ s:"They used rope to {{}} the boxes together.", f:"bind", ko:"그들은 상자들을 함께 묶기 위해 밧줄을 썼다." }] },
 
-  { word:"biodegradable", pron:"바이오디그레이더블", pos:"adj", level:"C1", meanings:["자연 분해되는","생물 분해성의"],
+  { word:"biodegradable", exams:["공무원"], pron:"바이오디그레이더블", pos:"adj", level:"C1", meanings:["자연 분해되는","생물 분해성의"],
     syn:["compostable","decomposable","degradable"], ant:["persistent"],
     ex:[{ s:"The packaging is fully {{}} and safe for soil.", f:"biodegradable", ko:"그 포장재는 완전히 자연 분해되며 흙에 무해하다." }] },
 

@@ -26,6 +26,7 @@
  *   like-minded '활기찬, 열정적인' → '생각이 비슷한, 뜻이 맞는'
  */
 window.VOCAB_L = [
+  { word:"landscape", exams:["공무원"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형","판도"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
   { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
   { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },
   { word:"loudly", exams:["공무원"], pron:"라우들리", pos:"adv", level:"B1", meanings:["큰 소리로"], syn:["noisily","boisterously","vociferously"], ant:["quietly"], ex:[{ s:"He spoke so {{}} that everyone turned around.", f:"loudly", ko:"그가 너무 큰 소리로 말해서 모두가 돌아보았다." }] },
@@ -515,7 +516,7 @@ window.VOCAB_L = [
     syn:["rubbish","trash","refuse"],
     ex:[{ s:"Please do not drop {{}} in the park.", f:"litter", ko:"공원에 쓰레기를 버리지 마세요." }] },
 
-  { word:"livestock", pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
+  { word:"livestock", exams:["공무원"], pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
     syn:["farm animals","cattle","herd"],
     ex:[{ s:"Disease spread quickly through the {{}}.", f:"livestock", ko:"질병이 가축 사이로 빠르게 퍼졌다." }] },
 
@@ -525,7 +526,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '대출, 빌려 주다' 와 같은 갈래다. 참조도 PRON 도 없어
      명사 쪽으로 정리했다. 원본의 '대출금' 은 '대출' 이 덮는다. */
-  { word:"loan", pron:"론", pos:"n", level:"B1", meanings:["대출","대여"],
+  { word:"loan", exams:["공무원"], pron:"론", pos:"n", level:"B1", meanings:["대출","대여"],
     syn:["credit","advance","lending"],
     ex:[{ s:"She took out a small {{}} to buy the van.", f:"loan", ko:"그녀는 밴을 사려고 소액 대출을 받았다." }] },
 

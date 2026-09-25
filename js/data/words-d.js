@@ -87,6 +87,8 @@
  *   node tools/d-impact.js                기존 세트 영향 측정
  */
 window.VOCAB_D = [
+  { word:"dialogue", exams:["공무원"], pron:"다이얼로그", pos:"n", level:"B1", meanings:["대화","논의"], syn:["conversation","discussion","talk"], ex:[{ s:"Social {{}} will be key to success.", f:"dialogue", ko:"사회적 대화가 성공의 열쇠가 될 것이다." }] },
+  { word:"drought", exams:["공무원"], pron:"드라웃", pos:"n", level:"B2", meanings:["가뭄"], syn:["dry spell","water shortage","aridity"], ex:[{ s:"Flooding, {{}} and storms damage crops.", f:"drought", ko:"홍수, 가뭄, 폭풍은 농작물에 피해를 준다." }] },
   { word:"deconstruct", exams:["공무원"], pron:"디컨스트럭트", pos:"v", level:"C1", meanings:["해체하다","분석하다"], syn:["dismantle","analyze","break down"], ant:["construct"], ex:[{ s:"The essay tries to {{}} the myth of the hero.", f:"deconstruct", ko:"그 글은 영웅 신화를 해체하려 한다." }] },
   { word:"diet", exams:["공무원"], pron:"다이엇", pos:"n", level:"B1", meanings:["식단","식습관"], syn:["nutrition","regimen","food intake"], ex:[{ s:"Students behaved better regardless of their {{}}.", f:"diet", ko:"학생들은 식단과 상관없이 더 잘 행동했다." }] },
   { word:"director", exams:["공무원"], pron:"디렉터", pos:"n", level:"B1", meanings:["관리자","책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
@@ -340,7 +342,7 @@ window.VOCAB_D = [
     syn:["dry out","desiccate","parch"], ant:["hydrate"],
     ex:[{ s:"Long hikes in the heat can quickly {{}} the body.", f:"dehydrate", ko:"더위 속 긴 산행은 몸을 빠르게 탈수시킬 수 있다." }] },
 
-  { word:"delay", pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
+  { word:"delay", exams:["공무원"], pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
     syn:["postponement","holdup","lag"], ant:["acceleration"],
     ex:[{ s:"A two-hour {{}} left passengers stranded at the gate.", f:"delay", ko:"두 시간의 지연으로 승객들이 게이트에 발이 묶였다." }] },
 
@@ -513,7 +515,7 @@ window.VOCAB_D = [
     syn:["privation","hardship","destitution"], ant:["abundance"],
     ex:[{ s:"Years of sleep {{}} had badly damaged his health.", f:"deprivation", ko:"수년간의 수면 부족이 그의 건강을 크게 해쳤다." }] },
 
-  { word:"deprive", pron:"디프라이브", pos:"v", level:"C1", meanings:["빼앗다","박탈하다"],
+  { word:"deprive", exams:["공무원"], pron:"디프라이브", pos:"v", level:"C1", meanings:["빼앗다","박탈하다"],
     syn:["dispossess","divest","rob"], ant:["grant"],
     ex:[{ s:"The new law could {{}} thousands of people of their benefits.", f:"deprive", ko:"그 새 법은 수천 명에게서 수급 자격을 빼앗을 수 있다." }] },
 
@@ -947,7 +949,7 @@ window.VOCAB_D = [
     syn:["inconsistency","disparity","mismatch"],
     ex:[{ s:"There is a clear {{}} between the two reports.", f:"discrepancy", ko:"두 보고서 사이에 분명한 불일치가 있다." }] },
 
-  { word:"discriminate", pron:"디스크리머네이트", pos:"v", level:"C1", meanings:["차별하다","구분하다"],
+  { word:"discriminate", exams:["공무원"], pron:"디스크리머네이트", pos:"v", level:"C1", meanings:["차별하다","구분하다"],
     syn:["distinguish","differentiate","single out"],
     ex:[{ s:"No employer may {{}} on the basis of age.", f:"discriminate", ko:"어떤 고용주도 나이를 근거로 차별해서는 안 된다." }] },
 
@@ -1054,7 +1056,7 @@ window.VOCAB_D = [
     syn:["interrupt","upset","derail"],
     ex:[{ s:"Heavy snow will {{}} rail services across the region.", f:"disrupt", ko:"폭설이 그 지역 전역의 철도 운행을 중단시킬 것이다." }] },
 
-  { word:"disruption", pron:"디스럽션", pos:"n", level:"B2", meanings:["중단","혼란"],
+  { word:"disruption", exams:["공무원"], pron:"디스럽션", pos:"n", level:"B2", meanings:["중단","혼란"],
     syn:["interruption","upheaval","turmoil"],
     ex:[{ s:"The strike caused serious {{}} to deliveries.", f:"disruption", ko:"그 파업은 배송에 심각한 중단을 초래했다." }] },
 
@@ -1182,7 +1184,7 @@ window.VOCAB_D = [
     syn:["holy","sacred","heavenly"], ant:["earthly"],
     ex:[{ s:"The temple was believed to hold {{}} power.", f:"divine", ko:"그 신전은 신성한 힘을 지녔다고 여겨졌다." }] },
 
-  { word:"division", pron:"디비전", pos:"n", level:"B2", meanings:["분할","부서"],
+  { word:"division", exams:["공무원"], pron:"디비전", pos:"n", level:"B2", meanings:["분할","부서"],
     syn:["separation","partition","department"], ant:["unity"],
     ex:[{ s:"The {{}} of the land caused decades of conflict.", f:"division", ko:"그 토지 분할은 수십 년의 갈등을 낳았다." }] },
 
@@ -1216,7 +1218,7 @@ window.VOCAB_D = [
     syn:["dogma","tenet","creed"],
     ex:[{ s:"The {{}} was openly challenged by younger scholars.", f:"doctrine", ko:"그 교리는 젊은 학자들의 공개적인 도전을 받았다." }] },
 
-  { word:"document", pron:"다큐먼트", pos:"v", level:"B2", meanings:["기록하다","입증하다"],
+  { word:"document", exams:["공무원"], pron:"다큐먼트", pos:"v", level:"B2", meanings:["기록하다","입증하다"],
     syn:["record","chronicle","detail"],
     ex:[{ s:"Researchers carefully {{}} every change in behavior.", f:"document", ko:"연구자들은 행동의 모든 변화를 꼼꼼히 기록한다." }] },
 
@@ -1237,7 +1239,7 @@ window.VOCAB_D = [
     syn:["field","sphere","realm"],
     ex:[{ s:"That question lies well outside my {{}} of expertise.", f:"domain", ko:"그 질문은 내 전문 영역에서 한참 벗어난다." }] },
 
-  { word:"domestic", pron:"더메스틱", pos:"adj", level:"B2", meanings:["국내의","가정의"],
+  { word:"domestic", exams:["공무원"], pron:"더메스틱", pos:"adj", level:"B2", meanings:["국내의","가정의"],
     syn:["internal","household","native"], ant:["foreign"],
     ex:[{ s:"The airline mainly serves {{}} routes.", f:"domestic", ko:"그 항공사는 주로 국내 노선을 운항한다." }] },
 

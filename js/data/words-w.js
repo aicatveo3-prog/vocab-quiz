@@ -39,6 +39,8 @@
  * 걸러내므로 화면에는 아직 W 세트가 뜨지 않는다.
  */
 window.VOCAB_W = [
+  { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
+  { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복","복지"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
   { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
