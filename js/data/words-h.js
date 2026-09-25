@@ -16,6 +16,11 @@
  * 판단 근거는 해당 단어 주석에 적는다.
  */
 window.VOCAB_H = [
+  { word:"hit the roof", exams:["공무원"], pron:"힛 더 루프", pos:"phr", level:"C1", meanings:["몹시 화내다","격분하다"], syn:["explode","lose one's temper","blow up"], ex:[{ s:"The boss will {{}} when he sees the budget is gone.", f:"hit the roof", ko:"사장은 예산이 다 없어진 것을 보면 격분할 것이다." }] },
+  { word:"hoard", exams:["공무원"], pron:"호드", pos:"n", level:"C1", meanings:["축적물","비축물"], syn:["stockpile","cache","stash"], ex:[{ s:"The good coins were driven into a {{}}.", f:"hoard", ko:"좋은 주화들은 비축물 속으로 사라졌다." }] },
+  { word:"hold off", exams:["공무원"], pron:"홀드 오프", pos:"phr", level:"B2", meanings:["미루다","보류하다"], syn:["delay","postpone","defer"], ex:[{ s:"The company had to {{}} the training plan.", f:"hold off", ko:"그 회사는 교육 계획을 미뤄야 했다." }] },
+  { word:"homespun", exams:["공무원"], pron:"홈스펀", pos:"adj", level:"C1", meanings:["소박한","손수 만든"], syn:["simple","plain","unsophisticated"], ant:["sophisticated"], ex:[{ s:"There were thousands of {{}} attempts to pay tribute.", f:"homespun", ko:"경의를 표하려는 소박한 시도가 수천 건 있었다." }] },
+  { word:"hormone", exams:["공무원"], pron:"호르몬", pos:"n", level:"B2", meanings:["호르몬"], ex:[{ s:"Glands release chemical {{}} into the bloodstream.", f:"hormones", ko:"분비샘은 화학 호르몬을 혈류로 방출한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
