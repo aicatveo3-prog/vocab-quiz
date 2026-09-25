@@ -31,6 +31,8 @@
  * 걸러내므로 화면에는 아직 T 세트가 뜨지 않는다.
  */
 window.VOCAB_T = [
+  { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다","대하다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
+  { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리","대우"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -929,7 +931,7 @@ window.VOCAB_T = [
 
   /* relocate(이전하다, 옮기다 · R) 와 '옮기다' 가 맞물려 배제된다. 아래 transport
      도 '실어 옮기다' 로 두어 이 낱말과 갈렸다. */
-  { word:"transfer", pron:"트랜스퍼", pos:"v", level:"B1", meanings:["옮기다","이동하다"],
+  { word:"transfer", exams:["공무원"], pron:"트랜스퍼", pos:"v", level:"B1", meanings:["옮기다","이동하다"],
     syn:["relocate","move to another place","shift across"],
     ex:[{ s:"They will {{}} him to another branch.", f:"transfer", ko:"그들은 그를 다른 지점으로 옮길 것이다." }] },
 

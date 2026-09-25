@@ -38,6 +38,7 @@
  * 걸러내므로 화면에는 아직 V 세트가 뜨지 않는다.
  */
 window.VOCAB_V = [
+  { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["(질병) 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -157,7 +158,7 @@ window.VOCAB_V = [
 
   /* '변화' 는 shift(변화, 교대)·mutation(돌연변이, 변화) 자리라 버렸다.
      '차이' 는 contrast·discrepancy·disparity·margin 넷과 맞물려 배제된다. */
-  { word:"variation", pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
+  { word:"variation", exams:["공무원"], pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
     syn:["contrast","discrepancy","a changed form"],
     ex:[{ s:"There is little {{}} between them.", f:"variation", ko:"그들 사이에는 차이가 거의 없다." }] },
 
@@ -242,7 +243,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑭ — 사전의 쌍반점만 쉼표로. 참조 automobile(A)·medium(M) 두 곳의
      화면은 바뀌지 않는다. means(수단, 방법) 와 '수단' 이 맞물려 배제된다. */
-  { word:"vehicle", pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
+  { word:"vehicle", exams:["공무원"], pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
     syn:["automobile","medium","thing that carries"],
     ex:[{ s:"No {{}} may enter the lane.", f:"vehicle", ko:"어떤 차량도 그 길에 들어갈 수 없다." }] },
 
@@ -515,7 +516,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉙ — 사전의 쌍반점만 쉼표로. 참조 네 곳(critical·crucial·essential·
      indispensable) 의 화면은 바뀌지 않는다. 교재는 순서만 다르다. */
-  { word:"vital", pron:"바이털", pos:"adj", level:"B1", meanings:["필수적인","생명의"],
+  { word:"vital", exams:["공무원"], pron:"바이털", pos:"adj", level:"B1", meanings:["필수적인","생명의"],
     syn:["critical","crucial","needed for life"],
     ex:[{ s:"Water is {{}} to all life.", f:"vital", ko:"물은 모든 생명에 필수적이다." }] },
 
@@ -570,7 +571,7 @@ window.VOCAB_V = [
 
   /* 위 voluntary(형용사) 와 품사로 갈랐다. 공통 접두사가 여섯 글자여서 짝
      맞추기 보드에서도 갈린다. 교재의 동사 갈래는 버렸다. */
-  { word:"volunteer", pron:"발런티어", pos:"n", level:"B1", meanings:["자원봉사자"],
+  { word:"volunteer", exams:["공무원"], pron:"발런티어", pos:"n", level:"B1", meanings:["자원봉사자"],
     syn:["one who works for free","helper who is not paid","person who offers to help"],
     ex:[{ s:"Every {{}} wore a red cap.", f:"volunteer", ko:"모든 자원봉사자가 빨간 모자를 썼다." }] },
 

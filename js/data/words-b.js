@@ -12,6 +12,8 @@
  * 진행 상황: 234단어 전량 완료 (babble ~ bystander) — 12챕터.
  */
 window.VOCAB_B = [
+  { word:"biologist", exams:["공무원"], pron:"바이올로지스트", pos:"n", level:"B2", meanings:["생물학자"], ex:[{ s:"The {{}} examined baby giraffes in the wild.", f:"biologist", ko:"그 생물학자는 야생의 새끼 기린들을 조사했다." }] },
+  { word:"burnable", exams:["공무원"], pron:"버너블", pos:"adj", level:"B2", meanings:["태울 수 있는","가연성의"], syn:["combustible","flammable","inflammable"], ant:["fireproof","nonflammable"], ex:[{ s:"Sort the {{}} waste from the recyclables.", f:"burnable", ko:"가연성 쓰레기를 재활용품과 분리하세요." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],
@@ -344,7 +346,7 @@ window.VOCAB_B = [
     syn:["recipient","heir","receiver"], ant:["donor"],
     ex:[{ s:"She was the sole {{}} of her uncle's will.", f:"beneficiary", ko:"그녀는 삼촌 유언의 유일한 수혜자였다." }] },
 
-  { word:"benefit", pron:"베니핏", pos:"n", level:"B1", meanings:["혜택","이득"],
+  { word:"benefit", exams:["공무원"], pron:"베니핏", pos:"n", level:"B1", meanings:["혜택","이득"],
     syn:["advantage","gain","profit"], ant:["drawback"],
     ex:[{ s:"One {{}} of the job is free travel.", f:"benefit", ko:"그 일자리의 한 가지 혜택은 무료 여행이다." }] },
 
@@ -609,7 +611,7 @@ window.VOCAB_B = [
     syn:["pamphlet","brochure","leaflet"],
     ex:[{ s:"The museum handed out a free {{}} at the entrance.", f:"booklet", ko:"그 박물관은 입구에서 무료 소책자를 나눠 주었다." }] },
 
-  { word:"boost", pron:"부스트", pos:"v", level:"B2", meanings:["밀어 올리다","상승시키다"],
+  { word:"boost", exams:["공무원"], pron:"부스트", pos:"v", level:"B2", meanings:["밀어 올리다","상승시키다"],
     syn:["raise","lift","increase"], ant:["reduce"],
     ex:[{ s:"The ad campaign helped {{}} sales by twenty percent.", f:"boost", ko:"그 광고 캠페인은 매출을 20퍼센트 끌어올리는 데 도움이 되었다." }] },
 

@@ -43,6 +43,7 @@
  * 걸러내므로 화면에는 아직 U 세트가 뜨지 않는다.
  */
 window.VOCAB_U = [
+  { word:"uniform", exams:["공무원"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -692,7 +693,7 @@ window.VOCAB_U = [
   /* ★ 첫 뜻을 '유용성' 으로 갈랐다. '공익사업' 은 common good(공익 · C1/n) 을
      통째로 품는데 '공익' 이 두 글자라 자동 배제가 안 된다. 수능에서도 이 낱말은
      '유용성' 쪽이 먼저다. 교재 형용사 갈래는 버렸다. */
-  { word:"utility", pron:"유틸러티", pos:"n", level:"B2", meanings:["유용성","공익사업"],
+  { word:"utility", exams:["공무원"], pron:"유틸러티", pos:"n", level:"B2", meanings:["유용성","공익사업"],
     syn:["usefulness in practice","a public service firm","water or power supply"],
     ex:[{ s:"They questioned the {{}} of the plan.", f:"utility", ko:"그들은 그 계획의 유용성을 의문시했다." }] }
 ];

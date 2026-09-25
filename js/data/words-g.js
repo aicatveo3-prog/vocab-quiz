@@ -35,10 +35,13 @@
  * 판단 근거는 해당 단어 주석에 적는다.
  */
 window.VOCAB_G = [
+  { word:"gap", exams:["공무원"], pron:"갭", pos:"n", level:"B1", meanings:["격차","틈"], syn:["difference","gulf","disparity"], ex:[{ s:"The {{}} had more to do with each school's resources.", f:"gap", ko:"그 격차는 각 학교의 자원과 더 관련이 있었다." }] },
+  { word:"giraffe", exams:["공무원"], pron:"지래프", pos:"n", level:"B1", meanings:["기린"], ex:[{ s:"A baby {{}} has its own unique markings.", f:"giraffe", ko:"새끼 기린은 저마다 고유한 무늬를 지닌다." }] },
+  { word:"greet", exams:["공무원"], pron:"그릿", pos:"v", level:"B1", meanings:["인사하다","맞이하다"], syn:["welcome","salute","receive"], ant:["ignore"], ex:[{ s:"Volunteers warmly {{}} and assist visitors.", f:"greet", ko:"자원봉사자들은 방문객을 따뜻하게 맞이하고 돕는다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
-  { word:"galaxy", pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
+  { word:"galaxy", exams:["공무원"], pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
     syn:["star system","nebula","cosmos"],
     ex:[{ s:"Our solar system sits on the edge of a spiral {{}}.", f:"galaxy", ko:"우리 태양계는 나선 은하의 가장자리에 있다." }] },
 
@@ -58,7 +61,7 @@ window.VOCAB_G = [
 
   /* 첫 뜻 '차고' 는 기존 표제어 depot 과 같다. 다만 quizgen 의 distractorPool 이
      뜻이 겹치는 단어를 오답에서 빼므로 둘이 한 문제에서 만나지 않는다. */
-  { word:"garage", pron:"거라지", pos:"n", level:"B1", meanings:["차고","정비소"],
+  { word:"garage", exams:["공무원"], pron:"거라지", pos:"n", level:"B1", meanings:["차고","정비소"],
     syn:["carport","car park","parking space"],
     ex:[{ s:"She parked the car in the {{}} beside the house.", f:"garage", ko:"그녀는 집 옆 차고에 차를 세웠다." }] },
 
@@ -74,7 +77,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '모으다, 수집하다' 와 같은 갈래다. 참조가 5곳으로 가장 많다
      (accumulate·assemble·compile·concentrate·convene). 뜻갈래가 같으므로
      원본 뜻을 그대로 쓴다. */
-  { word:"gather", pron:"개더", pos:"v", level:"B1", meanings:["모으다","모이다"],
+  { word:"gather", exams:["공무원"], pron:"개더", pos:"v", level:"B1", meanings:["모으다","모이다"],
     gov:{ prep:["around","at","in","from"], pat:"gather {{}} the campfire", usage:"gather around ~ : ~ 주위에 모이다" },
     syn:["collect","assemble","amass"], ant:["disperse"],
     ex:[{ s:"Please {{}} all the documents before the meeting starts.", f:"gather", ko:"회의가 시작되기 전에 모든 서류를 모아 주세요." }] },
@@ -443,7 +446,7 @@ window.VOCAB_G = [
 
   /* 승격 ② — GLOSS '수여하다; 보조금' 이다. bestow·concede 두 문제가 동사 쪽을
      쓰므로 '수여하다' 를 첫 자리에 남기고 원본의 명사 뜻을 둘째로 담았다. */
-  { word:"grant", pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
+  { word:"grant", exams:["공무원"], pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
     gov:{ prep:["to"], pat:"grant the award {{}} her", usage:"grant A to B : A를 B에게 주다" },
     syn:["bestow","award","confer"], ant:["deny"],
     ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] },

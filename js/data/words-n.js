@@ -53,6 +53,7 @@
  */
 
 window.VOCAB_N = [
+  { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },

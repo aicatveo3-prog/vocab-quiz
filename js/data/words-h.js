@@ -187,7 +187,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — GLOSS '위험한' 과 같은 갈래다. 참조하는 기존 문제는 없다.
      원본 첫 뜻에 괄호('(안전, 건강에)')가 있어 순서를 바꿨다. */
-  { word:"hazardous", pron:"해저더스", pos:"adj", level:"B2", meanings:["유해한","위험한"],
+  { word:"hazardous", exams:["공무원"], pron:"해저더스", pos:"adj", level:"B2", meanings:["유해한","위험한"],
     syn:["dangerous","perilous","toxic"], ant:["safe"],
     ex:[{ s:"Workers must wear protective gear when handling {{}} chemicals.", f:"hazardous", ko:"근로자는 유해 화학 물질을 다룰 때 보호 장비를 착용해야 한다." }],
     gov:{ prep:["to","for"], usage:"hazardous to ~ : ~에 유해한" } },

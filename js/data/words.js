@@ -36,6 +36,10 @@
  * 같은 품사끼리만 오답으로 뽑히므로 표현은 표현끼리 경쟁합니다.
  */
 window.VOCAB = [
+  { word:"ambulance", exams:["공무원"], pron:"앰뷸런스", pos:"n", level:"B1", meanings:["구급차"], ex:[{ s:"The {{}} arrived within a few minutes.", f:"ambulance", ko:"구급차가 몇 분 안에 도착했다." }] },
+  { word:"agency", exams:["공무원"], pron:"에이전시", pos:"n", level:"B1", meanings:["기관","대행사"], syn:["bureau","organization","office"], ex:[{ s:"Check with your local waste management {{}}.", f:"agency", ko:"지역 폐기물 관리 기관에 확인하세요." }] },
+  { word:"authorization", exams:["공무원"], pron:"오써라이제이션", pos:"n", level:"C1", meanings:["허가","승인"], syn:["permission","approval","consent"], ant:["prohibition"], ex:[{ s:"Using the facilities requires proper {{}}.", f:"authorization", ko:"시설을 이용하려면 적절한 허가가 필요하다." }] },
+  { word:"automated", exams:["공무원"], pron:"오토메이티드", pos:"adj", level:"B2", meanings:["자동화된"], syn:["automatic","mechanized","computerized"], ant:["manual"], ex:[{ s:"The bot acts as an {{}} agent for users.", f:"automated", ko:"그 봇은 사용자를 위한 자동화된 대리자 역할을 한다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
@@ -342,7 +346,7 @@ window.VOCAB = [
     syn:["preservative","supplement","agent"],
     ex:[{ s:"The label lists every {{}} used in the sauce.", f:"additive", ko:"라벨에는 그 소스에 쓰인 모든 첨가물이 적혀 있다." }] },
 
-  { word:"address", pron:"어드레스", pos:"v", level:"B2", meanings:["다루다","고심하다"],
+  { word:"address", exams:["공무원"], pron:"어드레스", pos:"v", level:"B2", meanings:["다루다","고심하다"],
     syn:["tackle","handle","confront"], ant:["ignore"],
     ex:[{ s:"The council must {{}} the housing shortage soon.", f:"address", ko:"의회는 주택 부족 문제를 곧 다루어야 한다." }] },
 
@@ -367,7 +371,7 @@ window.VOCAB = [
     syn:["border","abut","touch"], ant:["separate"],
     ex:[{ s:"The garden {{}} an old stone wall.", f:"adjoins", ko:"그 정원은 오래된 돌담과 붙어 있다." }] },
 
-  { word:"adjust", pron:"어저스트", pos:"v", level:"B1", meanings:["조절하다","적응하다"],
+  { word:"adjust", exams:["공무원"], pron:"어저스트", pos:"v", level:"B1", meanings:["조절하다","적응하다"],
     syn:["modify","adapt","regulate"],
     ex:[{ s:"Please {{}} the seat before you start driving.", f:"adjust", ko:"운전을 시작하기 전에 좌석을 조절하세요." }] },
 
@@ -430,7 +434,7 @@ window.VOCAB = [
     syn:["decorate","embellish","deck out"], ant:["strip"],
     ex:[{ s:"Fresh flowers {{}} every table in the hall.", f:"adorn", ko:"생화가 강당의 모든 탁자를 장식한다." }] },
 
-  { word:"advance", pron:"어드밴스", pos:"v", level:"B2", meanings:["전진하다","발전시키다"],
+  { word:"advance", exams:["공무원"], pron:"어드밴스", pos:"v", level:"B2", meanings:["전진하다","발전시키다"],
     syn:["progress","proceed","further"], ant:["retreat"],
     ex:[{ s:"New tools helped {{}} our understanding of the brain.", f:"advance", ko:"새로운 도구는 뇌에 대한 우리의 이해를 발전시키는 데 도움이 되었다." }] },
 
@@ -735,7 +739,7 @@ window.VOCAB = [
     syn:["rotating","successive","every other"],
     ex:[{ s:"Classes meet on {{}} Fridays this term.", f:"alternate", ko:"이번 학기 수업은 격주 금요일에 열린다." }] },
 
-  { word:"alternative", pron:"올터너티브", pos:"n", level:"B1", meanings:["대안","선택지"],
+  { word:"alternative", exams:["공무원"], pron:"올터너티브", pos:"n", level:"B1", meanings:["대안","선택지"],
     syn:["option","substitute","choice"],
     ex:[{ s:"Solar power became a real {{}} to coal.", f:"alternative", ko:"태양광은 석탄의 진정한 대안이 되었다." }] },
 
@@ -835,7 +839,7 @@ window.VOCAB = [
     syn:["examination","study","breakdown"], ant:["synthesis"],
     ex:[{ s:"A careful {{}} revealed two separate causes.", f:"analysis", ko:"신중한 분석이 두 개의 별개 원인을 드러냈다." }] },
 
-  { word:"analyze", pron:"애널라이즈", pos:"v", level:"B1", meanings:["분석하다","해석하다"],
+  { word:"analyze", exams:["공무원"], pron:"애널라이즈", pos:"v", level:"B1", meanings:["분석하다","해석하다"],
     syn:["examine","study","dissect"],
     ex:[{ s:"Researchers will {{}} the samples next week.", f:"analyze", ko:"연구자들은 다음 주에 시료를 분석할 것이다." }] },
 
@@ -935,7 +939,7 @@ window.VOCAB = [
     syn:["immunoglobulin","defense protein","immune agent"],
     ex:[{ s:"The vaccine helps the body make each {{}}.", f:"antibody", ko:"백신은 몸이 항체를 만들도록 돕는다." }] },
 
-  { word:"anticipate", pron:"앤티서페이트", pos:"v", level:"B2", meanings:["기대하다","예상하다"],
+  { word:"anticipate", exams:["공무원"], pron:"앤티서페이트", pos:"v", level:"B2", meanings:["기대하다","예상하다"],
     syn:["expect","foresee","predict"], ant:["overlook"],
     ex:[{ s:"We {{}} heavy traffic during the holiday.", f:"anticipate", ko:"우리는 연휴 동안 극심한 교통 정체를 예상한다." }] },
 
@@ -1028,7 +1032,7 @@ window.VOCAB = [
     syn:["candidate","petitioner","aspirant"],
     ex:[{ s:"Each {{}} must submit two references.", f:"applicant", ko:"각 지원자는 추천서 두 통을 제출해야 한다." }] },
 
-  { word:"application", pron:"애플리케이션", pos:"n", level:"B1", meanings:["지원(서)","적용"],
+  { word:"application", exams:["공무원"], pron:"애플리케이션", pos:"n", level:"B1", meanings:["지원(서)","적용"],
     syn:["request","use","implementation"],
     ex:[{ s:"Her {{}} for the grant was approved.", f:"application", ko:"그녀의 보조금 신청이 승인되었다." }] },
 
@@ -1234,7 +1238,7 @@ window.VOCAB = [
     syn:["embarrassed","guilty","mortified"], ant:["proud"],
     ex:[{ s:"He felt {{}} of his rude reply.", f:"ashamed", ko:"그는 무례한 대답이 부끄러웠다." }] },
 
-  { word:"aspect", pron:"애스펙트", pos:"n", level:"B2", meanings:["측면","양상"],
+  { word:"aspect", exams:["공무원"], pron:"애스펙트", pos:"n", level:"B2", meanings:["측면","양상"],
     syn:["facet","feature","angle"],
     ex:[{ s:"Cost is only one {{}} of the decision.", f:"aspect", ko:"비용은 그 결정의 한 측면일 뿐이다." }] },
 
@@ -1283,7 +1287,7 @@ window.VOCAB = [
     ex:[{ s:"Judges will {{}} each entry on originality.", f:"assess", ko:"심사위원들은 각 출품작을 독창성으로 평가할 것이다." }] },
 
 
-  { word:"assessment", pron:"어세스먼트", pos:"n", level:"B2", meanings:["평가","사정"],
+  { word:"assessment", exams:["공무원"], pron:"어세스먼트", pos:"n", level:"B2", meanings:["평가","사정"],
     syn:["evaluation","appraisal","judgment"],
     ex:[{ s:"The teacher's {{}} of his work was fair.", f:"assessment", ko:"그의 작업에 대한 교사의 평가는 공정했다." }] },
 
@@ -1291,7 +1295,7 @@ window.VOCAB = [
     syn:["resource","advantage","holding"], ant:["liability"],
     ex:[{ s:"Her calm under pressure is a real {{}}.", f:"asset", ko:"압박 속에서의 침착함은 그녀의 진정한 자산이다." }] },
 
-  { word:"assign", pron:"어사인", pos:"v", level:"B2", meanings:["배정하다","할당하다"],
+  { word:"assign", exams:["공무원"], pron:"어사인", pos:"v", level:"B2", meanings:["배정하다","할당하다"],
     syn:["allocate","allot","designate"],
     ex:[{ s:"The editor will {{}} each writer a topic.", f:"assign", ko:"편집장은 각 작가에게 주제를 배정할 것이다." }] },
 
@@ -1303,7 +1307,7 @@ window.VOCAB = [
     syn:["integration","absorption","incorporation"], ant:["segregation"],
     ex:[{ s:"The film studies the {{}} of immigrants.", f:"assimilation", ko:"그 영화는 이민자들의 동화를 다룬다." }] },
 
-  { word:"assist", pron:"어시스트", pos:"v", level:"B1", meanings:["돕다","보조하다"],
+  { word:"assist", exams:["공무원"], pron:"어시스트", pos:"v", level:"B1", meanings:["돕다","보조하다"],
     syn:["help","aid","support"], ant:["hinder"],
     ex:[{ s:"Volunteers {{}} the staff during festivals.", f:"assist", ko:"자원봉사자들은 축제 동안 직원을 돕는다." }] },
 

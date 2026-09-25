@@ -768,11 +768,16 @@
  *   node tools/match-order-check.js       짝 맞추기 보드 전수 검사
  */
 window.VOCAB_E = [
+  { word:"employee", exams:["공무원"], pron:"임플로이", pos:"n", level:"B1", meanings:["직원","종업원"], syn:["worker","staff member","staffer"], ant:["employer"], ex:[{ s:"Each {{}} has different working patterns.", f:"employee", ko:"직원마다 서로 다른 업무 방식을 지닌다." }] },
+  { word:"entrance", exams:["공무원"], pron:"엔트런스", pos:"n", level:"B1", meanings:["입구"], syn:["entry","doorway","gateway"], ant:["exit"], ex:[{ s:"We are in front of the main {{}} of city hall.", f:"entrance", ko:"우리는 시청 정문 앞에 있다." }] },
+  { word:"exact", exams:["공무원"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
+  { word:"explode", exams:["공무원"], pron:"익스플로드", pos:"v", level:"B1", meanings:["폭발하다"], syn:["blow up","burst","detonate"], ant:["implode"], ex:[{ s:"These products can catch fire or {{}}.", f:"explode", ko:"이 제품들은 불이 붙거나 폭발할 수 있다." }] },
+  { word:"exterminator", exams:["공무원"], pron:"익스터미네이터", pos:"n", level:"C1", meanings:["방역업자","해충 구제업자"], ex:[{ s:"Please contact a licensed {{}}.", f:"exterminator", ko:"허가받은 방역업자에게 연락하세요." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
 
-  { word:"earnest", pron:"어니스트", pos:"adj", level:"B2", meanings:["성실한","진지한"],
+  { word:"earnest", exams:["공무원"], pron:"어니스트", pos:"adj", level:"B2", meanings:["성실한","진지한"],
     syn:["sincere","wholehearted","serious"], ant:["insincere"],
     ex:[{ s:"His {{}} concern for the workers finally won their trust.", f:"earnest", ko:"노동자들을 향한 그의 성실한 관심이 마침내 그들의 신뢰를 얻었다." }] },
 
@@ -832,7 +837,7 @@ window.VOCAB_E = [
     syn:["erase","obliterate","blot out"], ant:["restore"],
     ex:[{ s:"Centuries of wind had begun to {{}} the inscription.", f:"efface", ko:"수백 년의 바람이 그 새긴 글귀를 지우기 시작했다." }] },
 
-  { word:"effectiveness", pron:"이펙티브니스", pos:"n", level:"B2", meanings:["유효성","효과"],
+  { word:"effectiveness", exams:["공무원"], pron:"이펙티브니스", pos:"n", level:"B2", meanings:["유효성","효과"],
     syn:["efficacy","potency","usefulness"], ant:["futility"],
     ex:[{ s:"The trial measured the {{}} of the new vaccine.", f:"effectiveness", ko:"그 임상시험은 새 백신의 유효성을 측정했다." }] },
 
@@ -910,7 +915,7 @@ window.VOCAB_E = [
     syn:["component","part","ingredient"], ant:["compound"],
     ex:[{ s:"Trust is the key {{}} in any lasting partnership.", f:"element", ko:"신뢰는 오래가는 모든 동업 관계의 핵심 요소다." }] },
 
-  { word:"elementary", pron:"엘러멘터리", pos:"adj", level:"B1", meanings:["초등 교육의","기본의"],
+  { word:"elementary", exams:["공무원"], pron:"엘러멘터리", pos:"adj", level:"B1", meanings:["초등 교육의","기본의"],
     syn:["basic","fundamental","introductory"], ant:["advanced"],
     ex:[{ s:"The course covers only {{}} statistics.", f:"elementary", ko:"그 강좌는 기본적인 통계만 다룬다." }] },
 
@@ -952,7 +957,7 @@ window.VOCAB_E = [
   /* 원본은 '생략된; 타원형의' 순서인데 '타원형의'를 앞으로 돌렸다. 카드에 가장
      크게 찍히는 첫 뜻이고, oval·egg-shaped 로 유의어를 깔끔히 짤 수 있는 쪽이다
      (ecology '생태계'를 뒤로, earthly '지상의'를 앞으로 돌린 선례와 같다). */
-  { word:"elliptical", pron:"일립티컬", pos:"adj", level:"C2", meanings:["타원형의","생략된"],
+  { word:"elliptical", exams:["공무원"], pron:"일립티컬", pos:"adj", level:"C2", meanings:["타원형의","생략된"],
     syn:["oval","egg-shaped","oblong"],
     ex:[{ s:"The comet follows a long {{}} path around the sun.", f:"elliptical", ko:"그 혜성은 태양 주위로 길게 타원형인 궤도를 따라 돈다." }] },
 
@@ -1008,7 +1013,7 @@ window.VOCAB_E = [
   { word:"embroider", pron:"임브로이더", pos:"v", level:"C2", meanings:["수놓다","자수하다"],
     ex:[{ s:"She learned to {{}} flowers on plain linen.", f:"embroider", ko:"그녀는 무늬 없는 린넨에 꽃을 수놓는 법을 배웠다." }] },
 
-  { word:"emerge", pron:"이머지", pos:"v", level:"B2", meanings:["드러나다","나타나다"],
+  { word:"emerge", exams:["공무원"], pron:"이머지", pos:"v", level:"B2", meanings:["드러나다","나타나다"],
     syn:["appear","come out","come to light"], ant:["disappear"],
     ex:[{ s:"New evidence began to {{}} halfway through the trial.", f:"emerge", ko:"재판 중반에 새로운 증거가 드러나기 시작했다." }] },
 
@@ -1020,7 +1025,7 @@ window.VOCAB_E = [
     syn:["appearance","arrival","advent"],
     ex:[{ s:"The {{}} of cheap sensors changed the whole industry.", f:"emergence", ko:"값싼 센서의 출현이 산업 전체를 바꿔 놓았다." }] },
 
-  { word:"emergency", pron:"이머전시", pos:"n", level:"B1", meanings:["비상사태","긴급 상황"],
+  { word:"emergency", exams:["공무원"], pron:"이머전시", pos:"n", level:"B1", meanings:["비상사태","긴급 상황"],
     syn:["crisis","urgent situation","critical situation"],
     ex:[{ s:"Dial this number only in a genuine {{}}.", f:"emergency", ko:"진짜 비상사태일 때만 이 번호로 전화하세요." }] },
 
@@ -1226,7 +1231,7 @@ window.VOCAB_E = [
     syn:["preoccupy","rivet","fully absorb"],
     ex:[{ s:"The puzzle can {{}} a child for hours.", f:"engross", ko:"그 퍼즐은 아이를 몇 시간이고 몰두하게 만들 수 있다." }] },
 
-  { word:"enhance", pron:"인핸스", pos:"v", level:"B2", meanings:["향상시키다","높이다"],
+  { word:"enhance", exams:["공무원"], pron:"인핸스", pos:"v", level:"B2", meanings:["향상시키다","높이다"],
     syn:["improve","boost","heighten"], ant:["degrade"],
     ex:[{ s:"A little salt will {{}} the flavor of the soup.", f:"enhance", ko:"소금을 조금 넣으면 국의 맛이 향상된다." }] },
 
@@ -1606,15 +1611,15 @@ window.VOCAB_E = [
     ex:[{ s:"The book traces the {{}} of written language.", f:"evolution", ko:"그 책은 문자 언어의 진화를 추적한다." }] },
 
   /* 유의어로 progress 를 쓰지 않았다 — GLOSS 가 "진보, 전진"(명사)이다. */
-  { word:"evolve", pron:"이발브", pos:"v", level:"B2", meanings:["발달하다","진화하다"],
+  { word:"evolve", exams:["공무원"], pron:"이발브", pos:"v", level:"B2", meanings:["발달하다","진화하다"],
     syn:["develop","unfold","grow gradually"],
     ex:[{ s:"Small workshops can {{}} into real factories.", f:"evolve", ko:"작은 공방도 진짜 공장으로 발달할 수 있다." }] },
 
-  { word:"exaggerate", pron:"이그재저레이트", pos:"v", level:"B2", meanings:["과장하다","부풀리다"],
+  { word:"exaggerate", exams:["공무원"], pron:"이그재저레이트", pos:"v", level:"B2", meanings:["과장하다","부풀리다"],
     syn:["overstate","blow out of proportion","magnify"], ant:["downplay"],
     ex:[{ s:"Do not {{}} how long the repair will take.", f:"exaggerate", ko:"수리가 얼마나 걸릴지 과장하지 마세요." }] },
 
-  { word:"examine", pron:"이그재민", pos:"v", level:"B1", meanings:["조사하다","검사하다"],
+  { word:"examine", exams:["공무원"], pron:"이그재민", pos:"v", level:"B1", meanings:["조사하다","검사하다"],
     syn:["inspect","analyze","look into"],
     ex:[{ s:"Inspectors will {{}} every weld on the pipe.", f:"examine", ko:"검사관들이 그 배관의 모든 용접부를 조사할 것이다." }] },
 
@@ -1837,7 +1842,7 @@ window.VOCAB_E = [
     ex:[{ s:"They covered the {{}} of the trip themselves.", f:"expense", ko:"그들은 여행 비용을 직접 부담했다." }] },
 
   /* 원본은 '실험, 실험하다' 로 명사와 동사가 섞여 있다 — 명사로 정했다. */
-  { word:"experiment", pron:"익스페러먼트", pos:"n", level:"B2", meanings:["실험"],
+  { word:"experiment", exams:["공무원"], pron:"익스페러먼트", pos:"n", level:"B2", meanings:["실험"],
     syn:["trial run","test","controlled trial"],
     ex:[{ s:"The {{}} was repeated in four other labs.", f:"experiment", ko:"그 실험은 다른 네 실험실에서도 반복되었다." }] },
 

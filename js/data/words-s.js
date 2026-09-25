@@ -37,6 +37,16 @@
  * 빈칸 하나로 승부가 갈리는 자리도 있었다.
  */
 window.VOCAB_S = [
+  { word:"skateboard", exams:["공무원"], pron:"스케이트보드", pos:"v", level:"B1", meanings:["스케이트보드를 타다"], ex:[{ s:"He broke his arm while {{}}.", f:"skateboarding", ko:"그는 스케이트보드를 타다가 팔이 부러졌다." }] },
+  { word:"specialist", exams:["공무원"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
+  { word:"speculation", exams:["공무원"], pron:"스페큘레이션", pos:"n", level:"C1", meanings:["추측","짐작"], syn:["conjecture","guesswork","supposition"], ant:["fact"], ex:[{ s:"The report was based on {{}} rather than evidence.", f:"speculation", ko:"그 보고서는 증거보다 추측에 근거했다." }] },
+  { word:"stomach", exams:["공무원"], pron:"스터먹", pos:"n", level:"B1", meanings:["위","배"], syn:["belly","abdomen","tummy"], ex:[{ s:"It is hard to focus on an empty {{}}.", f:"stomach", ko:"빈속으로는 집중하기 어렵다." }] },
+  { word:"strength", exams:["공무원"], pron:"스트렝쓰", pos:"n", level:"B1", meanings:["힘","강점"], syn:["power","force","asset"], ant:["weakness"], ex:[{ s:"Each system has its own {{}} and weaknesses.", f:"strengths", ko:"각 체계에는 저마다의 강점과 약점이 있다." }] },
+  { word:"succession", exams:["공무원"], pron:"석세션", pos:"n", level:"C1", meanings:["연속","계승"], syn:["sequence","series","progression"], ex:[{ s:"Effective {{}} planning captures departing knowledge.", f:"succession", ko:"효과적인 계승 계획은 떠나는 사람의 지식을 붙잡아 둔다." }] },
+  { word:"suggest", exams:["공무원"], pron:"서제스트", pos:"v", level:"B1", meanings:["제안하다","암시하다"], syn:["propose","recommend","imply"], ex:[{ s:"I {{}} that you discuss this matter discreetly.", f:"suggest", ko:"이 문제를 신중하게 논의하시길 제안합니다." }] },
+  { word:"summarize", exams:["공무원"], pron:"서머라이즈", pos:"v", level:"B2", meanings:["요약하다"], syn:["sum up","recap","condense"], ex:[{ s:"The bot can read and {{}} emails.", f:"summarize", ko:"그 봇은 이메일을 읽고 요약할 수 있다." }] },
+  { word:"surrounding", exams:["공무원"], pron:"서라운딩", pos:"adj", level:"B2", meanings:["주위의","인근의"], syn:["nearby","adjacent","neighboring"], ex:[{ s:"There are no impacts to utilities in the {{}} area.", f:"surrounding", ko:"인근 지역의 공공 설비에는 영향이 없다." }] },
+  { word:"sensitivity", exams:["공무원"], pron:"센서티비티", pos:"n", level:"B2", meanings:["민감성","감수성"], syn:["responsiveness","awareness","perceptiveness"], ant:["insensitivity"], ex:[{ s:"Language can refine our visual {{}} to color.", f:"sensitivity", ko:"언어는 색에 대한 우리의 시각적 민감성을 정교하게 다듬을 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -717,7 +727,7 @@ window.VOCAB_S = [
   /* 승격 52 — 사전은 '그늘지게 하다; 그늘' 로 동사가 앞이었다. 원본이 명사
      쪽이어서 명사로 세우고, 유일한 참조 darken(D) 의 그 자리를 동사 표현
      'cast a shadow on' 으로 갈았다. */
-  { word:"shade", pron:"셰이드", pos:"n", level:"B1", meanings:["그늘","빛 가리개"],
+  { word:"shade", exams:["공무원"], pron:"셰이드", pos:"n", level:"B1", meanings:["그늘","빛 가리개"],
     syn:["shelter from sun","screen against light","cool dark spot"],
     ex:[{ s:"We sat in the {{}} of a tree.", f:"shade", ko:"우리는 나무 그늘에 앉았다." }] },
 
@@ -833,7 +843,7 @@ window.VOCAB_S = [
 
   /* 승격 64 — 사전 글자 유지. 참조 네 곳(capacity·deficiency·excess·lack) 의
      화면은 바뀌지 않는다. */
-  { word:"shortage", pron:"쇼티지", pos:"n", level:"B1", meanings:["부족","품귀"],
+  { word:"shortage", exams:["공무원"], pron:"쇼티지", pos:"n", level:"B1", meanings:["부족","품귀"],
     syn:["deficiency","lack","too little to go round"], ant:["excess"],
     ex:[{ s:"The city faced a water {{}}.", f:"shortage", ko:"그 도시는 물 부족을 겪었다." }] },
 
@@ -929,7 +939,7 @@ window.VOCAB_S = [
 
   /* 승격 70 — 사전 글자 유지. 참조 considerable(C)·meaningless(M) 두 곳의
      화면은 바뀌지 않는다. 챕터 1 의 salient 가 '중요한' 을 이 낱말에 넘겼다. */
-  { word:"significant", pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
+  { word:"significant", exams:["공무원"], pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
     syn:["considerable","weighty in effect","far from small"], ant:["meaningless"],
     ex:[{ s:"The study found a {{}} change.", f:"significant", ko:"그 연구는 중요한 변화를 찾아냈다." }] },
 
@@ -1474,7 +1484,7 @@ window.VOCAB_S = [
 
   /* sphere 의 첫 갈래와 글자를 맞춰 자동 배제시켰다. 원본의 '범위' 는
      챕터 3 의 scope 자리다. */
-  { word:"spectrum", pron:"스펙트럼", pos:"n", level:"C1", meanings:["영역"],
+  { word:"spectrum", exams:["공무원"], pron:"스펙트럼", pos:"n", level:"C1", meanings:["영역"],
     syn:["band of related things","full range of kinds","spread from one end to the other"],
     ex:[{ s:"The party covers a wide {{}} of views.", f:"spectrum", ko:"그 정당은 넓은 영역의 견해를 담는다." }] },
 
@@ -1495,7 +1505,7 @@ window.VOCAB_S = [
 
   /* 승격 119 — 사전 글자 유지. 참조 domain(D) 의 화면은 바뀌지 않는다.
      첫 갈래 '영역' 이 위 spectrum 과 글자가 같아 자동 배제된다. */
-  { word:"sphere", pron:"스피어", pos:"n", level:"C1", meanings:["영역","범위"],
+  { word:"sphere", exams:["공무원"], pron:"스피어", pos:"n", level:"C1", meanings:["영역","범위"],
     syn:["domain","field of action","area of concern"],
     ex:[{ s:"That lies outside my {{}}.", f:"sphere", ko:"그것은 내 영역 밖이다." }] },
 
@@ -2503,12 +2513,12 @@ window.VOCAB_S = [
     ex:[{ s:"Tall trees {{}} the house.", f:"surround", ko:"키 큰 나무들이 그 집을 둘러싼다." }] },
 
   /* 승격 224 — 사전 첫 갈래만 남겼다. 참조 exploration(E) 이 명사라 그대로 맞는다. */
-  { word:"survey", pron:"서베이", pos:"n", level:"B1", meanings:["조사"],
+  { word:"survey", exams:["공무원"], pron:"서베이", pos:"n", level:"B1", meanings:["조사"],
     syn:["exploration","study of opinion","gathering of answers"],
     ex:[{ s:"The {{}} covered two thousand homes.", f:"survey", ko:"그 조사는 이천 가구를 다뤘다." }] },
 
   /* 승격 225 — 사전 단일값 유지. 참조는 없다. */
-  { word:"survival", pron:"서바이벌", pos:"n", level:"B1", meanings:["생존"],
+  { word:"survival", exams:["공무원"], pron:"서바이벌", pos:"n", level:"B1", meanings:["생존"],
     syn:["staying alive","living on","escape from death"],
     ex:[{ s:"Water is the key to {{}}.", f:"survival", ko:"물이 생존의 열쇠다." }] },
 
