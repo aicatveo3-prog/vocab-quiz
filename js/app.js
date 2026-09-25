@@ -32,7 +32,65 @@
   var WORD_INDEX = {};
   ALL_WORDS.forEach(function (w) { WORD_INDEX[w.word] = w; });
 
+  /* ── 버전(에디션) 필터 ────────────────────────
+     고른 버전에 속한 단어만 남긴다. 종합·미선택이면 전체를 그대로 돌려준다.
+     오답 후보·단어 조회(WORD_INDEX)는 버전을 가리지 않으므로 여기서 거르지 않는다. */
+  function edFilter(words) {
+    return window.Edition ? window.Edition.filter(words) : words;
+  }
+  /** 현재 버전에 속한 단어 이름 집합. 종합·미선택이면 null(=진척도 전체 집계). */
+  function edScopeSet() {
+    var ed = window.Edition && window.Edition.get();
+    if (!ed || ed === 'all') return null;
+    var set = {};
+    edFilter(ALL_WORDS).forEach(function (w) { set[w.word] = true; });
+    return set;
+  }
+
   function $(id) { return document.getElementById(id); }
+
+  /* ── 버전 칩 · 선택 화면 ──────────────────────
+     홈의 미니 칩은 현재 버전을 보여주고, 누르면 선택 화면을 연다.
+     선택 화면은 첫 진입 때(되돌아갈 홈이 아직 없음) 되돌아가기를 숨긴다.
+     아직 태그된 단어가 없는 버전(count 0)은 '준비중'으로 잠근다. */
+  function renderEditionChip() {
+    var chip = $('ed-chip');
+    if (!chip || !window.Edition) return;
+    var ed = window.Edition.byId(window.Edition.get()) || window.Edition.byId('all');
+    $('ed-chip-emoji').textContent = ed.emoji;
+    $('ed-chip-label').textContent = ed.label;
+  }
+
+  function openEdition(hasBack) {
+    var grid = $('picker-grid');
+    grid.innerHTML = '';
+    var currentId = window.Edition.get();
+    window.Edition.EDITIONS.forEach(function (ed) {
+      var n = window.Edition.count(ed.id);
+      var ready = n > 0;
+      var card = el('button', 'pick' +
+        (ed.id === currentId ? ' is-on' : '') + (ready ? '' : ' is-soon'));
+      card.type = 'button';
+      card.appendChild(el('span', 'pick-emoji', ed.emoji));
+      card.appendChild(el('b', null, ed.label));
+      card.appendChild(el('span', null, ready ? n.toLocaleString() + '단어' : '준비중'));
+      if (ready) {
+        card.addEventListener('click', function () { chooseEdition(ed.id); });
+      } else {
+        card.disabled = true;
+        card.title = ed.label + ' 버전은 기출이 반영되면 열립니다';
+      }
+      grid.appendChild(card);
+    });
+    $('ed-back').style.display = hasBack ? '' : 'none';
+    go('edition');
+  }
+
+  function chooseEdition(id) {
+    window.Edition.set(id);
+    renderHome();     // 새 버전 기준으로 진척도·목록을 다시 채운다
+    go('home');
+  }
   function el(tag, cls, text) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;
@@ -56,7 +114,8 @@
 
   /* ── 홈 ───────────────────────────────────── */
   function renderHome() {
-    var s = window.Store.summary(ALL_WORDS.length);
+    renderEditionChip();
+    var s = window.Store.summary(window.Edition.count(), edScopeSet());
 
     // 오늘 현황 — 한 줄로 압축
     var line = $('today-line');
@@ -100,7 +159,7 @@
 
   /** 단어가 들어 있는 세트만 — 아직 비어 있는 세트는 내보내지 않는다 */
   function practiceSets() {
-    return window.Conquer.SETS.filter(function (set) { return set.words.length; });
+    return window.Conquer.SETS.filter(function (set) { return edFilter(set.words).length; });
   }
 
   /* ── 개별 연습 (형식 → 세트 2단) ────────────────
@@ -118,7 +177,7 @@
       main.appendChild(el('b', null, m.label));
       main.appendChild(el('span', null, m.sub));
       row.appendChild(main);
-      row.appendChild(el('span', 'row-n', window.Quiz.availableCount(m.id) + '단어'));
+      row.appendChild(el('span', 'row-n', window.Quiz.availableCount(m.id, edFilter(ALL_WORDS)) + '단어'));
       row.addEventListener('click', function () { renderModeSets(m.id); });
       list.appendChild(row);
     });
@@ -138,7 +197,8 @@
     practiceSets().forEach(function (set) {
       // 이 형식으로 출제 가능한 단어 수는 세트마다 다르다
       // (예: 구·표현에는 예문이 없어 문장 빈칸에서 빠진다)
-      var n = window.Quiz.availableCount(modeId, set.words);
+      var setWords = edFilter(set.words);        // 현재 버전에 속한 이 세트의 단어
+      var n = window.Quiz.availableCount(modeId, setWords);
       var key = window.Store.sessionKey('practice', modeId, set.id, null);
       var prog = n ? window.Store.sessionProgress(key) : null;
       var unit = modeId === 'match' ? '보드' : '문제';
@@ -148,7 +208,7 @@
       var main = el('span', 'row-main');
       main.appendChild(el('b', null, set.label + ' 세트'));
       // 이 형식으로 못 내는 단어가 있을 때만 전체 수를 덧붙인다 (356단어 / 전체 396)
-      var sub = n === set.words.length ? n + '단어' : n + '단어 / 전체 ' + set.words.length;
+      var sub = n === setWords.length ? n + '단어' : n + '단어 / 전체 ' + setWords.length;
       /* 진행 상황을 여기서 보여준다. 다 푼 세트인지 모르고 들어가면
          전부 읽기 전용으로 열려 이유를 알 수 없다. */
       if (prog && prog.done) {
@@ -293,6 +353,10 @@
     else toggleAccount();
   });
 
+  // 버전 미니 칩 → 선택 화면(되돌아가기 있음) · 선택 화면의 뒤로 → 홈
+  $('ed-chip').addEventListener('click', function () { openEdition(true); });
+  $('ed-back').addEventListener('click', function () { go('home'); });
+
   /* 계정이 바뀌면 화면의 기록도 다시 그린다.
      로그아웃하면 Sync 가 이 기기에 남은 기록을 지운다(계정 경계). 그런데 화면을
      그대로 두면 이미 지워진 기록이 숫자로 계속 보여서, 쓰는 사람은 "로그아웃했는데
@@ -405,7 +469,8 @@
     // 일반 연습만 세트로 출제 범위를 좁힌다. 오답 후보는 어느 쪽이든 전 세트에서 뽑는다.
     var set = review ? null : window.Conquer.getSet(setId);
     if (!review && !set) return;
-    var setWords = set ? set.words : null;
+    // 일반 연습은 현재 버전에 속한 세트 단어만 출제한다. 복습은 세트를 가리지 않는다.
+    var setWords = set ? edFilter(set.words) : null;
 
     // 복습 세션은 문제 수를 "대상 단어 수"에 맞춘다.
     // 전체 단어 수로 계산하면 오답 3개를 복습하려는데 80보드가 만들어진다.
@@ -932,7 +997,7 @@
 
   function go(name) {
     ['home', 'quiz', 'result', 'wrong', 'words', 'block',
-      'sets', 'chapters', 'mode-sets', 'settings'].forEach(function (n) {
+      'sets', 'chapters', 'mode-sets', 'settings', 'edition'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
     if (name !== 'quiz') $('conquer-grid').innerHTML = '';
@@ -949,13 +1014,13 @@
     list.innerHTML = '';
     /* 아직 단어를 붙이지 않은 세트는 목록에 내지 않는다. 새 세트를 미리 배선해
        두어도 "R 세트 0단어 · 0챕터" 같은 빈 줄이 뜨지 않게 한다. */
-    window.Conquer.SETS.filter(function (s) { return s.words.length; }).forEach(function (s) {
+    window.Conquer.SETS.filter(function (s) { return edFilter(s.words).length; }).forEach(function (s) {
       var chs = window.Conquer.buildChapters(s);
       var btn = el('button', 'row-btn');
       btn.type = 'button';
       var main = el('span', 'row-main');
       main.appendChild(el('b', null, s.label + ' 세트'));
-      main.appendChild(el('span', null, s.words.length + '단어 · ' + chs.length + '챕터'));
+      main.appendChild(el('span', null, edFilter(s.words).length + '단어 · ' + chs.length + '챕터'));
       btn.appendChild(main);
       btn.appendChild(el('span', 'row-n', '›'));
       btn.addEventListener('click', function () { state.conquerSetId = s.id; renderChapters(s.id); });
@@ -1478,5 +1543,8 @@
   if (window.firebase) bootFirebase();
   else window.addEventListener('load', bootFirebase);
 
+  // 홈은 미리 채워 둔다(버전을 고르면 바로 보이게). 아직 버전을 고르지 않았으면
+  // 선택 화면을 전면에 띄운다 — 첫 진입이라 되돌아갈 곳이 없으므로 뒤로가기는 숨긴다.
   renderHome();
+  if (!window.Edition.isChosen()) openEdition(false);
 })();
