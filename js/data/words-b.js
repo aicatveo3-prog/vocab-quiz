@@ -12,6 +12,15 @@
  * 진행 상황: 234단어 전량 완료 (babble ~ bystander) — 12챕터.
  */
 window.VOCAB_B = [
+  { word:"bereaved", exams:["공무원"], pron:"비리브드", pos:"adj", level:"C1", meanings:["사별한","유가족의"], syn:["grieving","mourning","bereft"], ex:[{ s:"The {{}} are encouraged to express their sorrow.", f:"bereaved", ko:"사별한 이들은 슬픔을 표현하도록 권장된다." }] },
+  { word:"biblical", exams:["공무원"], pron:"비블리컬", pos:"adj", level:"C1", meanings:["성경의"], ex:[{ s:"The novel combines semiotics with {{}} analysis.", f:"biblical", ko:"그 소설은 기호학과 성경 분석을 결합한다." }] },
+  { word:"biomedical", exams:["공무원"], pron:"바이오메디컬", pos:"adj", level:"C1", meanings:["생물의학의"], ex:[{ s:"The {{}} view treats a transplant as a bounded event.", f:"biomedical", ko:"생물의학적 관점은 이식을 한정된 사건으로 본다." }] },
+  { word:"birthright", exams:["공무원"], pron:"버쓰라이트", pos:"n", level:"C1", meanings:["타고난 권리","생득권"], syn:["heritage","inheritance","entitlement"], ex:[{ s:"Gun advocates consider ownership a {{}}.", f:"birthright", ko:"총기 옹호자들은 소유를 타고난 권리로 여긴다." }] },
+  { word:"blazing", exams:["공무원"], pron:"블레이징", pos:"adj", level:"B2", meanings:["타는 듯한","이글거리는"], syn:["scorching","burning","fiery"], ex:[{ s:"In the {{}} midday sun, the rock stood out.", f:"blazing", ko:"이글거리는 한낮의 태양 아래 그 돌이 눈에 띄었다." }] },
+  { word:"bloodstream", exams:["공무원"], pron:"블러드스트림", pos:"n", level:"B2", meanings:["혈류"], ex:[{ s:"The glands release hormones into the {{}}.", f:"bloodstream", ko:"그 분비샘은 혈류로 호르몬을 방출한다." }] },
+  { word:"bounded", exams:["공무원"], pron:"바운디드", pos:"adj", level:"C1", meanings:["경계 지어진","한정된"], syn:["limited","confined","restricted"], ant:["boundless"], ex:[{ s:"They view organ transplant as a {{}} event.", f:"bounded", ko:"그들은 장기 이식을 한정된 사건으로 본다." }] },
+  { word:"brush up on", exams:["공무원"], pron:"브러시 업 온", pos:"phr", level:"C1", meanings:["다시 익히다","복습하다"], syn:["review","revise","refresh"], ex:[{ s:"She decided to {{}} her Spanish before the trip.", f:"brush up on", ko:"그녀는 여행 전에 스페인어를 다시 익히기로 했다." }] },
+  { word:"burnout", exams:["공무원"], pron:"번아웃", pos:"n", level:"B2", meanings:["번아웃","극도의 피로"], syn:["exhaustion","fatigue","breakdown"], ex:[{ s:"Overwork has caused {{}} and unhappiness.", f:"burnout", ko:"과로가 번아웃과 불행을 초래했다." }] },
   { word:"biologist", exams:["공무원"], pron:"바이올로지스트", pos:"n", level:"B2", meanings:["생물학자"], ex:[{ s:"The {{}} examined baby giraffes in the wild.", f:"biologist", ko:"그 생물학자는 야생의 새끼 기린들을 조사했다." }] },
   { word:"burnable", exams:["공무원"], pron:"버너블", pos:"adj", level:"B2", meanings:["태울 수 있는","가연성의"], syn:["combustible","flammable","inflammable"], ant:["fireproof","nonflammable"], ex:[{ s:"Sort the {{}} waste from the recyclables.", f:"burnable", ko:"가연성 쓰레기를 재활용품과 분리하세요." }] },
   /* ── ba ────────────────────────────────────── */
