@@ -43,6 +43,12 @@
  * 걸러내므로 화면에는 아직 U 세트가 뜨지 않는다.
  */
 window.VOCAB_U = [
+  { word:"undeniable", exams:["공무원"], pron:"언디나이어블", pos:"adj", level:"C1", meanings:["부인할 수 없는","명백한"], syn:["indisputable","unquestionable","irrefutable"], ant:["doubtful"], ex:[{ s:"Some things are {{}}: climate change and shifting demographics.", f:"undeniable", ko:"기후 변화와 인구 변동 같은 것은 부인할 수 없다." }] },
+  { word:"underestimate", exams:["공무원"], pron:"언더에스티메이트", pos:"v", level:"B2", meanings:["과소평가하다"], syn:["undervalue","belittle","discount"], ant:["overestimate"], ex:[{ s:"Officials tend to {{}} the scale of the troubles.", f:"underestimate", ko:"관계자들은 문제의 규모를 과소평가하는 경향이 있다." }] },
+  { word:"underline", exams:["공무원"], pron:"언더라인", pos:"v", level:"B2", meanings:["강조하다","밑줄을 긋다"], syn:["emphasize","stress","highlight"], ex:[{ s:"The report {{}} the need for reform.", f:"underlines", ko:"그 보고서는 개혁의 필요성을 강조한다." }] },
+  { word:"unequivocally", exams:["공무원"], pron:"언이퀴버컬리", pos:"adv", level:"C2", meanings:["명백하게","분명히"], syn:["clearly","definitely","categorically"], ant:["ambiguously"], ex:[{ s:"Life tells them {{}} how capable they really are.", f:"unequivocally", ko:"삶은 그들이 얼마나 유능한지 분명하게 알려 준다." }] },
+  { word:"unravel", exams:["공무원"], pron:"언래블", pos:"v", level:"C1", meanings:["풀다","해결하다"], syn:["solve","untangle","decipher"], ant:["complicate"], ex:[{ s:"Detectives tried to {{}} the mystery of the disappearance.", f:"unravel", ko:"형사들은 실종의 미스터리를 풀려고 애썼다." }] },
+  { word:"unruly", exams:["공무원"], pron:"언룰리", pos:"adj", level:"C1", meanings:["다루기 힘든","제멋대로인"], syn:["disorderly","rowdy","unmanageable"], ant:["obedient"], ex:[{ s:"The novel is about the vexed parents of an {{}} teenager.", f:"unruly", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
   { word:"universally", exams:["공무원"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
   { word:"upgrade", exams:["공무원"], pron:"업그레이드", pos:"v", level:"B2", meanings:["향상시키다","개선하다"], syn:["improve","enhance","boost"], ant:["downgrade"], ex:[{ s:"We assess and {{}} our services.", f:"upgrade", ko:"우리는 서비스를 평가하고 개선한다." }] },
   { word:"uncertain", exams:["공무원"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
