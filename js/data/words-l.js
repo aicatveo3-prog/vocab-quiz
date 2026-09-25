@@ -26,6 +26,14 @@
  *   like-minded '활기찬, 열정적인' → '생각이 비슷한, 뜻이 맞는'
  */
 window.VOCAB_L = [
+  { word:"legion", exams:["공무원"], pron:"리전", pos:"n", level:"C1", meanings:["군단","다수"], syn:["multitude","host","throng"], ex:[{ s:"A {{}} of tourists turned Old Town into chaos.", f:"legion", ko:"수많은 관광객이 올드타운을 혼란에 빠뜨렸다." }] },
+  { word:"legislature", exams:["공무원"], pron:"레지슬레이처", pos:"n", level:"C1", meanings:["입법부","의회"], syn:["parliament","assembly","congress"], ex:[{ s:"Archives hold more than the minutes of the {{}}.", f:"legislature", ko:"기록보관소에는 의회 회의록 이상의 것이 있다." }] },
+  { word:"legitimately", exams:["공무원"], pron:"리지티밋리", pos:"adv", level:"C1", meanings:["정당하게","합법적으로"], syn:["legally","rightfully","validly"], ant:["illegitimately"], ex:[{ s:"If you're {{}} concerned about the offer, say so.", f:"legitimately", ko:"제안이 정당하게 우려된다면 그렇게 말하라." }] },
+  { word:"literati", exams:["공무원"], pron:"리터라티", pos:"n", level:"C2", meanings:["지식인들","문인들"], syn:["intellectuals","scholars","intelligentsia"], ex:[{ s:"Coffeehouses served merchants, traders, and {{}}.", f:"literati", ko:"커피하우스는 상인, 무역상, 문인들을 상대했다." }] },
+  { word:"lobbyist", exams:["공무원"], pron:"로비스트", pos:"n", level:"C1", meanings:["로비스트"], syn:["advocate","campaigner","pressure agent"], ex:[{ s:"Businesses hire a {{}} to take concerns to Congress.", f:"lobbyist", ko:"기업들은 의회에 사안을 전하려고 로비스트를 고용한다." }] },
+  { word:"localized", exams:["공무원"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
+  { word:"longhouse", exams:["공무원"], pron:"롱하우스", pos:"n", level:"C2", meanings:["롱하우스","전통 공동 주거"], ex:[{ s:"The mudslide covered several {{}}.", f:"longhouses", ko:"산사태가 여러 채의 롱하우스를 덮었다." }] },
+  { word:"ludicrous", exams:["공무원"], pron:"루디크러스", pos:"adj", level:"C2", meanings:["터무니없는","우스꽝스러운"], syn:["absurd","ridiculous","preposterous"], ant:["sensible"], ex:[{ s:"The claim sounds {{}} to most people.", f:"ludicrous", ko:"그 주장은 대부분의 사람에게 터무니없게 들린다." }] },
   { word:"landscape", exams:["공무원"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형","판도"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
   { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
   { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },

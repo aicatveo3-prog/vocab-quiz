@@ -23,6 +23,8 @@
  * 판단 근거는 해당 단어 주석에 적는다.
  */
 window.VOCAB_J = [
+  { word:"jewelry", exams:["공무원"], pron:"주얼리", pos:"n", level:"B2", meanings:["보석류","장신구"], syn:["jewels","ornaments","trinkets"], ex:[{ s:"Evans found a trove of {{}} and pottery.", f:"jewelry", ko:"에번스는 보석류와 도기가 담긴 보물 더미를 발견했다." }] },
+  { word:"journalist", exams:["공무원"], pron:"저널리스트", pos:"n", level:"B2", meanings:["기자","언론인"], syn:["reporter","correspondent","columnist"], ex:[{ s:"Foreign {{}} hope to cover as much news as possible.", f:"journalists", ko:"외국 기자들은 가능한 한 많은 뉴스를 취재하기를 바란다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"janitor", pron:"재너터", pos:"n", level:"B2", meanings:["경비","관리인"],
