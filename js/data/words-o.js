@@ -88,6 +88,11 @@
  */
 
 window.VOCAB_O = [
+  { word:"obsession", exams:["공무원"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
+  { word:"occasionally", exams:["공무원"], pron:"어케이저널리", pos:"adv", level:"B2", meanings:["가끔","때때로"], syn:["sometimes","now and then","periodically"], ant:["frequently"], ex:[{ s:"They speak only {{}} while playing on their own.", f:"occasionally", ko:"그들은 혼자 놀면서 가끔씩만 말한다." }] },
+  { word:"oddity", exams:["공무원"], pron:"아디티", pos:"n", level:"C1", meanings:["특이한 것","기이함"], syn:["peculiarity","curiosity","anomaly"], ex:[{ s:"Archives hold oddities such as peddler licenses.", f:"oddities", ko:"기록보관소에는 행상 면허 같은 특이한 것들이 있다." }] },
+  { word:"opulent", exams:["공무원"], pron:"아퓰런트", pos:"adj", level:"C2", meanings:["호화로운","부유한"], syn:["luxurious","lavish","sumptuous"], ant:["modest"], ex:[{ s:"Their house seemed unnecessarily {{}}.", f:"opulent", ko:"그들의 집은 불필요하게 호화로워 보였다." }] },
+  { word:"otherworldly", exams:["공무원"], pron:"아더월들리", pos:"adj", level:"C2", meanings:["초현실적인","이 세상 것 같지 않은"], syn:["unearthly","surreal","ethereal"], ex:[{ s:"The driest deserts are harsh and {{}}.", f:"otherworldly", ko:"가장 건조한 사막은 혹독하고 초현실적이다." }] },
   { word:"opt", exams:["공무원"], pron:"옵트", pos:"v", level:"C1", meanings:["선택하다"], syn:["choose","select","decide"], ex:[{ s:"They {{}} for reusable containers instead.", f:"opt", ko:"그들은 대신 재사용 용기를 선택한다." }], gov:{ prep:["for"], usage:"opt for ~ : ~을 선택하다 / opt out : 빠지다" } },
   { word:"overspend", exams:["공무원"], pron:"오버스펜드", pos:"v", level:"C1", meanings:["과소비하다","초과 지출하다"], syn:["splurge","overpay","squander"], ant:["save"], ex:[{ s:"The season can be a time you {{}} on gifts.", f:"overspend", ko:"그 시즌은 선물에 과소비하는 때가 될 수 있다." }] },
   { word:"observer", exams:["공무원"], pron:"업저버", pos:"n", level:"B2", meanings:["관찰자","참관인"], syn:["onlooker","spectator","witness"], ant:["participant"], ex:[{ s:"Humans are allowed, but only as {{}}.", f:"observers", ko:"인간은 허용되지만 오직 참관인으로만 가능하다." }] },

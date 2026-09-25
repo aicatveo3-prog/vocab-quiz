@@ -53,6 +53,11 @@
  */
 
 window.VOCAB_N = [
+  { word:"nonattachment", exams:["공무원"], pron:"논어태치먼트", pos:"n", level:"C2", meanings:["무집착","초연"], ex:[{ s:"The child develops an attitude of {{}}.", f:"nonattachment", ko:"그 아이는 무집착의 태도를 기른다." }] },
+  { word:"nondependency", exams:["공무원"], pron:"논디펜던시", pos:"n", level:"C2", meanings:["비의존","의존하지 않음"], ex:[{ s:"These times teach a healthy {{}} on things.", f:"nondependency", ko:"이런 시기는 물건에 대한 건강한 비의존을 가르친다." }] },
+  { word:"nosy", exams:["공무원"], pron:"노지", pos:"adj", level:"C1", meanings:["참견하기 좋아하는"], syn:["prying","inquisitive","intrusive"], ex:[{ s:"She is not {{}} about other people's business.", f:"nosy", ko:"그녀는 남의 일에 참견하지 않는다." }] },
+  { word:"nucleus", exams:["공무원"], pron:"뉴클리어스", pos:"n", level:"C1", meanings:["핵","중심"], syn:["core","center","heart"], ex:[{ s:"Energy levels are like orbits around a {{}}.", f:"nucleus", ko:"에너지 준위는 핵 주위의 궤도와 같다." }] },
+  { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
   { word:"navigate", exams:["공무원"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
