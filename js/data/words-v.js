@@ -176,7 +176,7 @@ window.VOCAB_V = [
     ex:[{ s:"She has a {{}} taste in books.", f:"varied", ko:"그녀는 책에 다양한 취향을 지녔다." }] },
 
   /* 승격 ⑩ — 사전 글자 유지(참조 diversity). 교재의 '변종, 품종' 은 버렸다. */
-  { word:"variety", pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
+  { word:"variety", exams:["공무원"], pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
     syn:["diversity","range of kinds","many sorts"],
     ex:[{ s:"The shop offers a wide {{}}.", f:"variety", ko:"그 가게는 폭넓은 다양성을 갖추고 있다." }] },
 
@@ -605,7 +605,7 @@ window.VOCAB_V = [
 
   /* 승격 ㊲ — 사전 단일값 유지. 참조 세 곳(at risk·endangered·helpless) 의
      화면은 바뀌지 않는다. */
-  { word:"vulnerable", pron:"벌너러블", pos:"adj", level:"B2", meanings:["취약한"],
+  { word:"vulnerable", exams:["공무원"], pron:"벌너러블", pos:"adj", level:"B2", meanings:["취약한"],
     syn:["at risk","endangered","helpless"],
     ex:[{ s:"Young birds are {{}} to cold.", f:"vulnerable", ko:"어린 새는 추위에 취약하다." }] }
 ];

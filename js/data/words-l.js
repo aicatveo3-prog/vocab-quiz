@@ -405,7 +405,7 @@ window.VOCAB_L = [
     syn:["featherweight","portable","easy to carry"], ant:["heavy"],
     ex:[{ s:"The tent is made of {{}} nylon.", f:"lightweight", ko:"그 텐트는 가벼운 나일론으로 만들어졌다." }] },
 
-  { word:"likely", pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
+  { word:"likely", exams:["공무원"], pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
     syn:["probable","expected","apt"], ant:["unlikely"],
     ex:[{ s:"Rain is {{}} later this evening.", f:"likely", ko:"오늘 저녁 늦게 비가 올 것 같다." }] },
 
@@ -434,7 +434,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '한정된, 제한된' 을 글자까지 지켰다.
      boundless(ant)·finite(syn) 두 문제가 참조한다.
      바로 뒤 limitless 와 뜻이 정반대여서 함께 익히기 좋은 쌍이다. */
-  { word:"limited", pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
+  { word:"limited", exams:["공무원"], pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
     syn:["finite","restricted","narrow"], ant:["boundless"],
     ex:[{ s:"Seats are {{}} to thirty per session.", f:"limited", ko:"좌석은 회당 30석으로 한정된다." }] },
 
@@ -455,7 +455,7 @@ window.VOCAB_L = [
     syn:["straight","rectilinear","sequential"],
     ex:[{ s:"The graph shows a clear {{}} relationship.", f:"linear", ko:"그 그래프는 명확한 직선 관계를 보여 준다." }] },
 
-  { word:"linger", pron:"링거", pos:"v", level:"C1", meanings:["오래 머무르다","떠나지 못하다"],
+  { word:"linger", exams:["공무원"], pron:"링거", pos:"v", level:"C1", meanings:["오래 머무르다","떠나지 못하다"],
     syn:["dawdle","hang around","persist"],
     ex:[{ s:"The smell of smoke {{}} for days afterwards.", f:"lingered", ko:"연기 냄새가 그 후 며칠 동안 오래 머물렀다." }] },
 
@@ -571,7 +571,7 @@ window.VOCAB_L = [
     syn:["elevated","towering","soaring"],
     ex:[{ s:"The cathedral has a {{}} vaulted ceiling.", f:"lofty", ko:"그 대성당은 아주 높은 아치형 천장을 갖고 있다." }] },
 
-  { word:"logic", pron:"라직", pos:"n", level:"B2", meanings:["논리학","논리"],
+  { word:"logic", exams:["공무원"], pron:"라직", pos:"n", level:"B2", meanings:["논리학","논리"],
     syn:["reasoning","rationale","argumentation"],
     ex:[{ s:"There is a clear flaw in your {{}}.", f:"logic", ko:"당신의 논리에 명확한 결함이 있다." }] },
 
@@ -601,7 +601,7 @@ window.VOCAB_L = [
   { word:"longitude", pron:"란저튜드", pos:"n", level:"B2", meanings:["경도","경선"],
     ex:[{ s:"The ship's {{}} was recorded every hour.", f:"longitude", ko:"그 배의 경도가 매시간 기록되었다." }] },
 
-  { word:"long-term", pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
+  { word:"long-term", exams:["공무원"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 

@@ -145,7 +145,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS 가 '만들어 내다, 발생시키다' 다. 원본은 순서만 반대이므로
      사전 순서를 그대로 지켜 bring in 문제의 화면이 한 글자도 안 바뀌게 했다. */
-  { word:"generate", pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
+  { word:"generate", exams:["공무원"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
     syn:["produce","create","yield"],
     ex:[{ s:"Solar panels {{}} enough power for the whole building.", f:"generate", ko:"태양 전지판이 건물 전체에 쓸 충분한 전력을 만들어 낸다." }] },
 
@@ -526,7 +526,7 @@ window.VOCAB_G = [
     syn:["avaricious","grasping","insatiable"], ant:["selfless"],
     ex:[{ s:"The story warns children not to be {{}}.", f:"greedy", ko:"그 이야기는 아이들에게 탐욕스러워지지 말라고 경고한다." }] },
 
-  { word:"greenhouse", pron:"그린하우스", pos:"n", level:"B1", meanings:["온실"],
+  { word:"greenhouse", exams:["공무원"], pron:"그린하우스", pos:"n", level:"B1", meanings:["온실"],
     syn:["hothouse","glasshouse","conservatory"],
     ex:[{ s:"Tomatoes ripen weeks earlier inside the {{}}.", f:"greenhouse", ko:"토마토는 온실 안에서 몇 주 더 일찍 익는다." }] },
 
@@ -641,7 +641,7 @@ window.VOCAB_G = [
   /* 승격 ② — GLOSS '보장하다; 보증' 을 글자까지 지켰다. assure·ensure 두 문제가
      이 단어를 유의어로 쓴다. 첫 뜻이 기존 표제어 cover 와 같지만, quizgen 의
      distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
-  { word:"guarantee", pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
+  { word:"guarantee", exams:["공무원"], pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
     gov:{ prep:["against","of","for"], pat:"guarantee {{}} manufacturing defects", usage:"guarantee against ~ : ~에 대해 보증하다" },
     syn:["assure","ensure","give one's word"],
     ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },

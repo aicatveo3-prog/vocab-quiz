@@ -258,7 +258,7 @@ window.VOCAB_H = [
     ex:[{ s:"The eldest son was named {{}} to the entire estate.", f:"heir", ko:"장남이 전 재산의 상속인으로 지명됐다." }],
     gov:{ prep:["to"], usage:"heir to ~ : ~의 상속인" } },
 
-  { word:"helpless", pron:"헬프리스", pos:"adj", level:"B2", meanings:["무력한"],
+  { word:"helpless", exams:["공무원"], pron:"헬프리스", pos:"adj", level:"B2", meanings:["무력한"],
     syn:["powerless","defenseless","vulnerable"], ant:["capable"],
     ex:[{ s:"Without electricity the hospital felt utterly {{}}.", f:"helpless", ko:"전기 없이 병원은 완전히 무력하게 느껴졌다." }] },
 
@@ -415,7 +415,7 @@ window.VOCAB_H = [
     syn:["terrifying","gruesome","nightmarish"],
     ex:[{ s:"Witnesses described the accident as {{}}.", f:"horrific", ko:"목격자들은 그 사고를 무시무시했다고 묘사했다." }] },
 
-  { word:"hospitable", pron:"하스피터블", pos:"adj", level:"B2", meanings:["환대하는","호의적인"],
+  { word:"hospitable", exams:["공무원"], pron:"하스피터블", pos:"adj", level:"B2", meanings:["환대하는","살기 좋은"],
     syn:["welcoming","generous","warm"], ant:["inhospitable"],
     ex:[{ s:"The villagers were remarkably {{}} to the visitors.", f:"hospitable", ko:"마을 사람들은 방문객에게 놀라울 정도로 친절했다." }],
     gov:{ prep:["to","toward"], usage:"hospitable to ~ : ~에게 환대하는" } },
@@ -450,7 +450,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '가정의, 가정용의' 이다. domestic 이 형용사를 쓴다.
      원본은 '가정' (명사)인데 domestic 문맥을 지키려면 형용사로 둬야 한다. */
-  { word:"household", pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
+  { word:"household", exams:["공무원"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
     syn:["domestic","family","residential"],
     ex:[{ s:"{{}} waste is collected twice a week.", f:"Household", ko:"가정 폐기물은 주 2회 수거된다." }] },
 

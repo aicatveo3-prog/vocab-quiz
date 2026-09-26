@@ -262,7 +262,7 @@ window.VOCAB_U = [
     ex:[{ s:"Do not {{}} her work.", f:"undervalue", ko:"그녀의 일을 과소평가하지 마라." }] },
 
   /* 승격 ⑧ — 사전 단일값 유지(참조 aquatic). 부사 갈래는 버렸다. */
-  { word:"underwater", pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
+  { word:"underwater", exams:["공무원"], pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
     syn:["aquatic","below the surface","under the waves"],
     ex:[{ s:"They filmed an {{}} cave.", f:"underwater", ko:"그들은 수중 동굴을 찍었다." }] },
 

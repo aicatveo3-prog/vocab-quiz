@@ -367,7 +367,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
      문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
-  { word:"material", pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
+  { word:"material", exams:["공무원"], pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
     /* ★ syn 의 "stuff" 를 "raw stuff for making" 으로 바꿨다. stuff 는 S 세트에서
        동사 '채우다' 로 선다 — 명사 목록에 동사가 끼게 된다. 남은 "substance" 도
        S 세트 낱말이지만 명사 '물질, 본질' 로 서므로 그대로 두어도 맞는다. */
@@ -386,7 +386,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '문제; 물질' 을 글자까지 지켰다. content(syn) 가 참조한다.
      원본의 '일' 은 '문제' 와 같은 갈래이고, 동사 갈래('중요하다')는 pos 가 n 이라 뺐다. */
-  { word:"matter", pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
+  { word:"matter", exams:["공무원"], pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
     syn:["issue","affair","substance"],
     ex:[{ s:"We need to settle this {{}} before Friday.", f:"matter", ko:"우리는 금요일 전에 이 문제를 해결해야 한다." }] },
 
@@ -406,7 +406,7 @@ window.VOCAB_M = [
     ex:[{ s:"He lived by the old {{}} that haste makes waste.", f:"maxim", ko:"그는 서두르면 일을 망친다는 옛 격언대로 살았다." }] },
 
   /* maxim 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"maximize", pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
+  { word:"maximize", exams:["공무원"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
     syn:["optimize","boost to the full","get the most out of"], ant:["minimize"],
     ex:[{ s:"The layout is designed to {{}} natural light.", f:"maximize", ko:"그 배치는 자연광을 극대화하도록 설계되었다." }] },
 
@@ -436,7 +436,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수단, 방법' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
      뒤 챕터의 method 는 '방법, 수법' 이라 첫 뜻이 갈린다. */
-  { word:"means", pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
+  { word:"means", exams:["공무원"], pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
     syn:["method","way","instrument"],
     ex:[{ s:"Email became the main {{}} of contact.", f:"means", ko:"이메일이 주된 연락 수단이 되었다." }] },
 
@@ -461,7 +461,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '측정하다; 조치' 를 글자까지 지켰다. 참조가 3곳
      (criterion·dose·gauge)이라 그대로 두었다. 원본의 '척도' 는 '조치' 와 다른
      갈래지만 참조가 쓰는 쪽이 사전이라 사전을 따랐다. */
-  { word:"measure", pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
+  { word:"measure", exams:["공무원"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
     syn:["gauge","quantify","assess"],
     ex:[{ s:"Scientists {{}} the ice thickness every spring.", f:"measure", ko:"과학자들은 매년 봄 얼음 두께를 측정한다." }] },
 
@@ -484,7 +484,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기제, 장치' 와 같은 갈래다. 참조도 PRON 도 없어 원본의
      '기계 장치' 를 첫 자리에 두고 '부품' 대신 사전의 '기제' 를 살렸다. */
-  { word:"mechanism", pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
+  { word:"mechanism", exams:["공무원"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
     syn:["device","workings","contrivance"],
     ex:[{ s:"The locking {{}} had jammed completely.", f:"mechanism", ko:"잠금 기계 장치가 완전히 걸려 버렸다." }] },
 
@@ -577,7 +577,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
      참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
-  { word:"mental", pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+  { word:"mental", exams:["공무원"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
     syn:["cognitive","psychological","intellectual"], ant:["physical"],
     ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
 
@@ -1058,7 +1058,7 @@ window.VOCAB_M = [
     syn:["sole control","exclusive rights","market corner"],
     ex:[{ s:"The firm held a near {{}} on rail freight.", f:"monopoly", ko:"그 회사는 철도 화물에 거의 독점을 쥐고 있었다." }] },
 
-  { word:"monotonous", pron:"머나터너스", pos:"adj", level:"B2", meanings:["단조로운","변화 없는"],
+  { word:"monotonous", exams:["공무원"], pron:"머나터너스", pos:"adj", level:"B2", meanings:["단조로운","변화 없는"],
     syn:["repetitive","tedious","unvarying"], ant:["varied"],
     ex:[{ s:"The work was safe but utterly {{}}.", f:"monotonous", ko:"그 일은 안전했지만 아주 단조로웠다." }] },
 
@@ -1085,7 +1085,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '도덕적인; 교훈' 을 글자까지 지켰다. 참조가 3곳
      (ethical·immoral(ant)·lesson)이고 뒤 둘은 I·L 세트 표제어다.
      원본은 '도덕적인' 한 갈래인데 갈래를 줄이면 그 세 곳이 바뀌므로 그대로 두었다. */
-  { word:"moral", pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
+  { word:"moral", exams:["공무원"], pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
     syn:["ethical","principled","upright"], ant:["immoral"],
     ex:[{ s:"She felt a {{}} duty to speak up.", f:"moral", ko:"그녀는 목소리를 낼 도덕적 의무를 느꼈다." }] },
 

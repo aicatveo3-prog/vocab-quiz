@@ -96,7 +96,7 @@ window.VOCAB_N = [
      constrict(C) 는 동사 갈래를, limited(L) 는 형용사 갈래를 쓰고 있었다.
      원본이 형용사여서 형용사로 세우고, constrict 쪽 유의어를 이 세트의
      'narrow down' 으로 바꿨다(words-c.js) — 동사 자리에 동사구가 온다. */
-  { word:"narrow", pron:"내로", pos:"adj", level:"B1", meanings:["폭이 좁은","빠듯한"],
+  { word:"narrow", exams:["공무원"], pron:"내로", pos:"adj", level:"B1", meanings:["폭이 좁은","빠듯한"],
     syn:["slim","tight","cramped"], ant:["wide"],
     ex:[{ s:"The path grew too {{}} for the cart to pass.", f:"narrow", ko:"그 길은 수레가 지나가기에 너무 폭이 좁아졌다." }] },
 

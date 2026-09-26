@@ -229,7 +229,7 @@ window.VOCAB_I = [
      '직접적인' 이라 둘째 자리에 지켰다. 첫 자리는 '즉각적인' 으로 두어
      뒤에 올 instant('즉석의')·instantaneous('순간적인')와 갈렸다.
      원본 셋째 갈래 '당면한' 은 meanings 2개 제한에 걸려 뺐다. */
-  { word:"immediate", pron:"이미디엇", pos:"adj", level:"B1", meanings:["즉각적인","직접적인"],
+  { word:"immediate", exams:["공무원"], pron:"이미디엇", pos:"adj", level:"B1", meanings:["즉각적인","직접적인"],
     syn:["prompt","swift","speedy"], ant:["delayed"],
     ex:[{ s:"The medicine brought {{}} relief from the pain.", f:"immediate", ko:"그 약은 통증에 즉각적인 완화를 가져왔다." }] },
 
@@ -283,7 +283,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '충격; 영향' 이다. affect(syn) 는 '영향' 쪽,
      collision(syn) 은 '충격' 쪽을 쓴다. 두 갈래를 다 살리고 순서만 원본에 맞췄다.
      원본 셋째 갈래 '영향을 주다'(동사)는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"impact", pron:"임팩트", pos:"n", level:"B1", meanings:["영향","충격"],
+  { word:"impact", exams:["공무원"], pron:"임팩트", pos:"n", level:"B1", meanings:["영향","충격"],
     syn:["effect","consequence","repercussion"],
     ex:[{ s:"The report measured the {{}} of tourism on the coral reef.", f:"impact", ko:"그 보고서는 관광이 산호초에 미치는 영향을 측정했다." }] },
 
@@ -707,7 +707,7 @@ window.VOCAB_I = [
     ex:[{ s:"The team made an {{}} comeback in the final minutes.", f:"incredible", ko:"그 팀은 마지막 몇 분에 믿기 어려운 역전을 이뤘다." }] },
 
   /* incredible 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
-  { word:"incredibly", pron:"인크레더블리", pos:"adv", level:"B2", meanings:["믿기 힘들게도","놀랍게도"],
+  { word:"incredibly", exams:["공무원"], pron:"인크레더블리", pos:"adv", level:"B2", meanings:["믿기 힘들게도","놀랍게도"],
     syn:["unbelievably","astonishingly","remarkably"],
     ex:[{ s:"The old bridge survived {{}} intact after the quake.", f:"incredibly", ko:"그 낡은 다리는 지진 후 놀랍게도 온전히 남았다." }] },
 
@@ -856,7 +856,7 @@ window.VOCAB_I = [
   /* industrial 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다.
      원본은 '산업' 한 갈래인데, 바로 뒤 industry figure 가 '업계' 쪽 뜻을 쓰므로
      둘째 갈래로 '업계' 를 붙였다. */
-  { word:"industry", pron:"인더스트리", pos:"n", level:"B1", meanings:["산업","업계"],
+  { word:"industry", exams:["공무원"], pron:"인더스트리", pos:"n", level:"B1", meanings:["산업","업계"],
     syn:["business","commerce","trade"],
     ex:[{ s:"The tourism {{}} employs thousands of local people.", f:"industry", ko:"관광 산업은 수천 명의 지역 주민을 고용한다." }] },
 
@@ -963,7 +963,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '재료, 성분' 을 글자까지 지켰다.
      component(syn)·element(syn) 두 문제가 참조하므로 원본의 순서('성분, 원료,
      재료') 대신 사전 쪽을 남겼다. */
-  { word:"ingredient", pron:"인그리디언트", pos:"n", level:"B1", meanings:["재료","성분"],
+  { word:"ingredient", exams:["공무원"], pron:"인그리디언트", pos:"n", level:"B1", meanings:["재료","성분"],
     syn:["component","element","constituent"],
     ex:[{ s:"Flour is the main {{}} in most breads.", f:"ingredient", ko:"밀가루는 대부분의 빵에서 주 재료다." }] },
 
@@ -1013,11 +1013,11 @@ window.VOCAB_I = [
     syn:["restraint","suppression","holding back of feeling"],
     ex:[{ s:"Alcohol lowers {{}} and impairs judgment.", f:"inhibition", ko:"알코올은 억제를 낮추고 판단력을 손상시킨다." }] },
 
-  { word:"inhumane", pron:"인휴메인", pos:"adj", level:"C1", meanings:["몰인정한","무자비한"],
+  { word:"inhumane", exams:["공무원"], pron:"인휴메인", pos:"adj", level:"C1", meanings:["몰인정한","무자비한"],
     syn:["cruel","brutal","heartless"], ant:["humane"],
     ex:[{ s:"The conditions in the holding camp were {{}}.", f:"inhumane", ko:"그 수용소의 환경은 몰인정했다." }] },
 
-  { word:"initial", pron:"이니셜", pos:"adj", level:"B1", meanings:["처음의","최초의"],
+  { word:"initial", exams:["공무원"], pron:"이니셜", pos:"adj", level:"B1", meanings:["처음의","최초의"],
     syn:["first","earliest","preliminary"], ant:["final"],
     ex:[{ s:"The {{}} response to the proposal was positive.", f:"initial", ko:"그 제안에 대한 처음의 반응은 긍정적이었다." }] },
 
@@ -1200,7 +1200,7 @@ window.VOCAB_I = [
 
   /* instant 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이 '즉석의' 와
      '순간적인' 으로 갈려 짝을 고르는 데 무리가 없다. */
-  { word:"instantaneous", pron:"인스턴테이니어스", pos:"adj", level:"C1", meanings:["순간적인","동시에 일어나는"],
+  { word:"instantaneous", exams:["공무원"], pron:"인스턴테이니어스", pos:"adj", level:"C1", meanings:["순간적인","동시에 일어나는"],
     syn:["immediate","instant","split-second"],
     ex:[{ s:"The response from the sensor was almost {{}}.", f:"instantaneous", ko:"그 센서의 반응은 거의 순간적이었다." }] },
 
@@ -1336,7 +1336,7 @@ window.VOCAB_I = [
     ex:[{ s:"The debate was a purely {{}} exercise.", f:"intellectual", ko:"그 토론은 순전히 지적인 훈련이었다." }] },
 
   /* intellectual 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"intelligence", pron:"인텔러전스", pos:"n", level:"B1", meanings:["지능","지성"],
+  { word:"intelligence", exams:["공무원"], pron:"인텔러전스", pos:"n", level:"B1", meanings:["지능","지성"],
     syn:["intellect","brainpower","mental capacity"],
     ex:[{ s:"The test claims to measure general {{}}.", f:"intelligence", ko:"그 검사는 일반 지능을 측정한다고 주장한다." }] },
 
@@ -1449,7 +1449,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '내부의, 국내의' 를 글자까지 지켰다. 참조 둘 중 domestic(syn)
      이 '국내의' 갈래를 쓰므로 원본의 '체내의' 대신 사전 쪽을 남겼다.
      external(ant) 도 참조한다. 13차의 inner 는 '내면의' 로 돌려 첫 뜻이 갈린다. */
-  { word:"internal", pron:"인터널", pos:"adj", level:"B2", meanings:["내부의","국내의"],
+  { word:"internal", exams:["공무원"], pron:"인터널", pos:"adj", level:"B2", meanings:["내부의","국내의"],
     syn:["inside","domestic","in-house"], ant:["external"],
     ex:[{ s:"The report was circulated for {{}} use only.", f:"internal", ko:"그 보고서는 내부용으로만 배포되었다." }] },
 
@@ -1672,7 +1672,7 @@ window.VOCAB_I = [
      참조하는 갈래는 '수반하다' 라 첫 자리에 지켰다.
      둘째 갈래는 원본의 '관련시키다' 로 바꿨다 — '포함하다' 는 8차의 include 가
      한 갈래로 독점한다(참조 5곳). */
-  { word:"involve", pron:"인발브", pos:"v", level:"B1", meanings:["수반하다","관련시키다"],
+  { word:"involve", exams:["공무원"], pron:"인발브", pos:"v", level:"B1", meanings:["수반하다","관련시키다"],
     syn:["entail","have to do with","necessitate"],
     ex:[{ s:"The new job will {{}} a great deal of travel.", f:"involve", ko:"그 새 일은 많은 여행을 수반할 것이다." }] },
 
@@ -1681,7 +1681,7 @@ window.VOCAB_I = [
      원본 '관여하는' 은 셋째 갈래가 되어 뺐다.
      involve·involvement 와 어근이 같지만 품사가 셋 다 달라(v/adj/n) 같은 보드에
      안 온다. */
-  { word:"involved", pron:"인발브드", pos:"adj", level:"C1", meanings:["복잡한","관련된"],
+  { word:"involved", exams:["공무원"], pron:"인발브드", pos:"adj", level:"C1", meanings:["복잡한","관련된"],
     syn:["complex","convoluted","tangled"],
     ex:[{ s:"The procedure is far more {{}} than it looks.", f:"involved", ko:"그 절차는 보기보다 훨씬 더 복잡하다." }] },
 
@@ -1763,7 +1763,7 @@ window.VOCAB_I = [
     syn:["article","object","entry"],
     ex:[{ s:"Please check each {{}} against the packing list.", f:"item", ko:"포장 목록과 대조해 각 물품을 확인하세요." }] },
 
-  { word:"itinerary", pron:"아이티너레리", pos:"n", level:"C1", meanings:["여행 계획","여정"],
+  { word:"itinerary", exams:["공무원"], pron:"아이티너레리", pos:"n", level:"C1", meanings:["여행 계획","여정"],
     syn:["schedule","route plan","travel plan"],
     ex:[{ s:"Our {{}} includes three days in Kyoto.", f:"itinerary", ko:"우리 여행 계획에는 교토에서 사흘이 포함된다." }] }
 ];

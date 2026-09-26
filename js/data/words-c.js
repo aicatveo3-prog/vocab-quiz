@@ -169,7 +169,7 @@ window.VOCAB_C = [
     syn:["bearer","transmitter","courier"],
     ex:[{ s:"A healthy {{}} can spread the virus without knowing.", f:"carrier", ko:"건강한 보균자는 모르는 채로 바이러스를 퍼뜨릴 수 있다." }] },
 
-  { word:"carry out", pron:"캐리 아웃", pos:"phr", level:"B1", meanings:["수행하다","실행하다"],
+  { word:"carry out", exams:["공무원"], pron:"캐리 아웃", pos:"phr", level:"B1", meanings:["수행하다","실행하다"],
     syn:["perform","execute","conduct"], ant:["abandon"] },
 
   { word:"cartographic", pron:"카토그래픽", pos:"adj", level:"C2", meanings:["지도 제작의"],
@@ -365,7 +365,7 @@ window.VOCAB_C = [
     syn:["difficulty","test","obstacle"], ant:["ease"],
     ex:[{ s:"Feeding the city was the mayor's first {{}}.", f:"challenge", ko:"도시를 먹여 살리는 것이 시장의 첫 난관이었다." }] },
 
-  { word:"challenging", pron:"챌린징", pos:"adj", level:"B2", meanings:["힘든","도전적인"],
+  { word:"challenging", exams:["공무원"], pron:"챌린징", pos:"adj", level:"B2", meanings:["힘든","도전적인"],
     syn:["demanding","testing","tough"], ant:["effortless"],
     ex:[{ s:"The course is {{}} but never unfair.", f:"challenging", ko:"그 과정은 힘들지만 결코 불공정하지 않다." }] },
 
@@ -393,7 +393,7 @@ window.VOCAB_C = [
     syn:["nature","personality","quality"],
     ex:[{ s:"The narrow streets give the town its {{}}.", f:"character", ko:"좁은 골목들이 그 마을에 특색을 준다." }] },
 
-  { word:"characteristic", pron:"캐릭터리스틱", pos:"n", level:"B2", meanings:["특성","특유의"],
+  { word:"characteristic", exams:["공무원"], pron:"캐릭터리스틱", pos:"n", level:"B2", meanings:["특성","특유의"],
     syn:["trait","feature","attribute"],
     ex:[{ s:"Patience is the {{}} that made her a good teacher.", f:"characteristic", ko:"인내는 그녀를 좋은 교사로 만든 특성이었다." }] },
 
@@ -564,7 +564,7 @@ window.VOCAB_C = [
     syn:["noncombatant","resident","citizen"], ant:["soldier"],
     ex:[{ s:"No {{}} was allowed within a mile of the base.", f:"civilian", ko:"기지에서 1마일 안으로는 민간인이 들어갈 수 없었다." }] },
 
-  { word:"civilization", pron:"시벌라이제이션", pos:"n", level:"B2", meanings:["문명"],
+  { word:"civilization", exams:["공무원"], pron:"시벌라이제이션", pos:"n", level:"B2", meanings:["문명"],
     syn:["culture","society","development"], ant:["barbarism"],
     ex:[{ s:"The valley gave rise to an early farming {{}}.", f:"civilization", ko:"그 계곡에서 초기 농경 문명이 일어났다." }] },
 
@@ -705,7 +705,7 @@ window.VOCAB_C = [
     ex:[{ s:"Meeting him twice in one day was pure {{}}.", f:"coincidence", ko:"하루에 그를 두 번 만난 것은 순전히 우연이었다." }] },
 
   /* ── col ───────────────────────────────────── */
-  { word:"collaborate", pron:"컬래버레이트", pos:"v", level:"B2", meanings:["공동으로 일하다","협동하다"],
+  { word:"collaborate", exams:["공무원"], pron:"컬래버레이트", pos:"v", level:"B2", meanings:["공동으로 일하다","협동하다"],
     syn:["cooperate","partner","team up"], ant:["compete"],
     ex:[{ s:"Rival labs agreed to {{}} on one vaccine.", f:"collaborate", ko:"경쟁하던 연구소들이 하나의 백신을 두고 협력하기로 했다." }],
     gov:{ prep:["with","on"], pat:"collaborate {{}} a rival firm", usage:"collaborate with ~ : ~와 협력하다" } },
@@ -839,7 +839,7 @@ window.VOCAB_C = [
     syn:["trade","business","dealing"],
     ex:[{ s:"The river once carried most of the region's {{}}.", f:"commerce", ko:"그 강은 한때 이 지역 무역의 대부분을 실어 옮겼다." }] },
 
-  { word:"commercial", pron:"커머셜", pos:"adj", level:"B1", meanings:["상업의","광고방송"],
+  { word:"commercial", exams:["공무원"], pron:"커머셜", pos:"adj", level:"B1", meanings:["상업의","광고방송"],
     syn:["business","profitable","mercantile"], ant:["nonprofit"],
     ex:[{ s:"The film was a {{}} success but a critical failure.", f:"commercial", ko:"그 영화는 상업적으로는 성공했지만 비평에서는 실패했다." }] },
 
@@ -945,7 +945,7 @@ window.VOCAB_C = [
     syn:["force","oblige","coerce"], ant:["allow"],
     ex:[{ s:"Nothing on earth could {{}} him to sign it.", f:"compel", ko:"세상 어떤 것도 그에게 서명을 강요할 수 없었다." }] },
 
-  { word:"compelling", pron:"컴펠링", pos:"adj", level:"C1", meanings:["강력한","설득력 있는"],
+  { word:"compelling", exams:["공무원"], pron:"컴펠링", pos:"adj", level:"C1", meanings:["강력한","설득력 있는"],
     syn:["persuasive","convincing","forceful"], ant:["weak"],
     ex:[{ s:"The evidence against him was simply {{}}.", f:"compelling", ko:"그에게 불리한 증거는 그야말로 강력했다." }] },
 
@@ -1119,7 +1119,7 @@ window.VOCAB_C = [
     syn:["attention","focus","density"], ant:["distraction"],
     ex:[{ s:"One shout broke her {{}} completely.", f:"concentration", ko:"한 번의 외침이 그녀의 집중을 완전히 깨뜨렸다." }] },
 
-  { word:"concern", pron:"컨선", pos:"n", level:"B1", meanings:["걱정","우려"],
+  { word:"concern", exams:["공무원"], pron:"컨선", pos:"n", level:"B1", meanings:["걱정","우려"],
     syn:["worry","anxiety","unease"], ant:["indifference"],
     ex:[{ s:"Rising costs are a real {{}} for farmers.", f:"concern", ko:"오르는 비용은 농민들에게 실질적인 걱정이다." }],
     gov:{ prep:["about","with","for","over","to"], pat:"concerned {{}} safety", usage:"be concerned about ~ : ~를 걱정하다" } },
@@ -1179,7 +1179,7 @@ window.VOCAB_C = [
     ex:[{ s:"Road crews set a orange {{}} at each corner.", f:"cone", ko:"도로 작업반이 각 모서리에 주황색 원뿔을 놓았다." }] },
 
   /* ── conf ──────────────────────────────────── */
-  { word:"conference", pron:"칸퍼런스", pos:"n", level:"B1", meanings:["회의","회담"],
+  { word:"conference", exams:["공무원"], pron:"칸퍼런스", pos:"n", level:"B1", meanings:["회의","회담"],
     syn:["meeting","convention","summit"],
     ex:[{ s:"She presented the data at a medical {{}}.", f:"conference", ko:"그녀는 의학 회의에서 그 자료를 발표했다." }] },
 
@@ -1211,7 +1211,7 @@ window.VOCAB_C = [
     syn:["seize","impound","appropriate"], ant:["restore"],
     ex:[{ s:"Guards will {{}} any glass bottle at the gate.", f:"confiscate", ko:"경비원은 정문에서 유리병을 모두 압수한다." }] },
 
-  { word:"conflict", pron:"칸플릭트", pos:"n", level:"B1", meanings:["갈등","분쟁"],
+  { word:"conflict", exams:["공무원"], pron:"칸플릭트", pos:"n", level:"B1", meanings:["갈등","분쟁"],
     /* ★ syn 의 "struggle" 을 "open quarrel" 로 바꿨다. struggle 은 S 세트에서
        동사 '힘겨워하다, 투쟁하다' 로 선다 — 명사 목록에 동사가 끼게 된다. */
     syn:["dispute","open quarrel","friction"], ant:["peace"],
@@ -1449,7 +1449,7 @@ window.VOCAB_C = [
     syn:["scorn","disdain","derision"], ant:["high regard"],
     ex:[{ s:"She looked at him with open {{}}.", f:"contempt", ko:"그녀는 드러내 놓고 경멸하는 눈으로 그를 보았다." }] },
 
-  { word:"content", pron:"칸텐트", pos:"n", level:"B1", meanings:["내용물","함량"],
+  { word:"content", exams:["공무원"], pron:"칸텐트", pos:"n", level:"B1", meanings:["내용물","함량"],
     syn:["substance","material","matter"],
     ex:[{ s:"Check the fat {{}} printed on the label.", f:"content", ko:"라벨에 적힌 지방 함량을 확인하라." }] },
 
@@ -1563,7 +1563,7 @@ window.VOCAB_C = [
     ex:[{ s:"Both towns agreed to {{}} on the new bridge.", f:"cooperate", ko:"두 도시는 새 다리를 두고 협력하기로 합의했다." }],
     gov:{ prep:["with","on","in"], pat:"cooperate {{}} the police", usage:"cooperate with ~ : ~와 협력하다" } },
 
-  { word:"cooperation", pron:"코아퍼레이션", pos:"n", level:"B1", meanings:["협력","협조"],
+  { word:"cooperation", exams:["공무원"], pron:"코아퍼레이션", pos:"n", level:"B1", meanings:["협력","협조"],
     syn:["teamwork","collaboration","support"], ant:["rivalry"],
     ex:[{ s:"The work needs close {{}} between departments.", f:"cooperation", ko:"그 일은 부서 간의 긴밀한 협력을 필요로 한다." }] },
 
@@ -1944,7 +1944,7 @@ window.VOCAB_C = [
     syn:["offender","cause","perpetrator"],
     ex:[{ s:"Damp was the real {{}} all along.", f:"culprit", ko:"습기가 처음부터 진짜 장본인이었다." }] },
 
-  { word:"cultivate", pron:"컬티베이트", pos:"v", level:"B2", meanings:["재배하다","가꾸다"],
+  { word:"cultivate", exams:["공무원"], pron:"컬티베이트", pos:"v", level:"B2", meanings:["재배하다","가꾸다"],
     syn:["grow","farm","nurture"], ant:["neglect"],
     ex:[{ s:"They {{}} rice on the lower slopes.", f:"cultivate", ko:"그들은 아래쪽 경사면에서 쌀을 재배한다." }] },
 
@@ -2009,7 +2009,7 @@ window.VOCAB_C = [
   { word:"cut back on", pron:"컷 백 온", pos:"phr", level:"B1", meanings:["~을 줄이다"],
     syn:["reduce","lessen","trim"], ant:["increase"] },
 
-  { word:"cynical", pron:"시니컬", pos:"adj", level:"B2", meanings:["냉소적인","비관적인"],
+  { word:"cynical", exams:["공무원"], pron:"시니컬", pos:"adj", level:"B2", meanings:["냉소적인","비관적인"],
     syn:["skeptical","sardonic","jaded"], ant:["idealistic"],
     ex:[{ s:"Years in politics left him deeply {{}}.", f:"cynical", ko:"정치권에서 보낸 세월이 그를 깊이 냉소적으로 만들었다." }] },
 

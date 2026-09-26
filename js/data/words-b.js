@@ -120,7 +120,7 @@ window.VOCAB_B = [
     syn:["cask","keg","drum"],
     ex:[{ s:"They aged the wine in an oak {{}} for two years.", f:"barrel", ko:"그들은 그 와인을 오크 통에서 2년간 숙성시켰다." }] },
 
-  { word:"barren", pron:"배런", pos:"adj", level:"C1", meanings:["불모의","임신을 못하는"],
+  { word:"barren", exams:["공무원"], pron:"배런", pos:"adj", level:"C1", meanings:["불모의","임신을 못하는"],
     syn:["infertile","sterile","desolate"], ant:["fertile"],
     ex:[{ s:"Almost nothing grows in this {{}} land.", f:"barren", ko:"이 불모의 땅에서는 거의 아무것도 자라지 않는다." }] },
 
@@ -854,7 +854,7 @@ window.VOCAB_B = [
     syn:["young growth","unopened flower","germ"],
     ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
 
-  { word:"budget", pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
+  { word:"budget", exams:["공무원"], pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
     syn:["allowance","funds","allocation"],
     ex:[{ s:"The department cut its {{}} by ten percent.", f:"budget", ko:"그 부서는 예산을 10퍼센트 삭감했다." }] },
 

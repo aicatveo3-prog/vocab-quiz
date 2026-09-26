@@ -253,7 +253,7 @@ window.VOCAB_D = [
     syn:["announce","proclaim","assert"], ant:["deny"],
     ex:[{ s:"The government is expected to {{}} a state of emergency tonight.", f:"declare", ko:"정부가 오늘 밤 비상사태를 선포할 것으로 보인다." }] },
 
-  { word:"decline", pron:"디클라인", pos:"v", level:"B2", meanings:["감소하다","거절하다"],
+  { word:"decline", exams:["공무원"], pron:"디클라인", pos:"v", level:"B2", meanings:["감소하다","거절하다"],
     syn:["decrease","diminish","refuse"], ant:["increase"],
     ex:[{ s:"Sales began to {{}} sharply after the product recall.", f:"decline", ko:"제품 회수 이후 매출이 급격히 감소하기 시작했다." }] },
 
@@ -317,11 +317,11 @@ window.VOCAB_D = [
     syn:["shortfall","gap","arrears"], ant:["surplus"],
     ex:[{ s:"The city is struggling with a growing budget {{}}.", f:"deficit", ko:"그 도시는 늘어나는 예산 적자와 씨름하고 있다." }] },
 
-  { word:"define", pron:"디파인", pos:"v", level:"B1", meanings:["정의하다","규정하다"],
+  { word:"define", exams:["공무원"], pron:"디파인", pos:"v", level:"B1", meanings:["정의하다","규정하다"],
     syn:["specify","clarify","characterize"],
     ex:[{ s:"It is surprisingly hard to {{}} happiness in one sentence.", f:"define", ko:"행복을 한 문장으로 정의하기는 놀랄 만큼 어렵다." }] },
 
-  { word:"definite", pron:"데퍼닛", pos:"adj", level:"B2", meanings:["확실한","명확한"],
+  { word:"definite", exams:["공무원"], pron:"데퍼닛", pos:"adj", level:"B2", meanings:["확실한","명확한"],
     syn:["certain","clear","specific"], ant:["vague"],
     ex:[{ s:"We need a {{}} answer from the supplier before Friday.", f:"definite", ko:"금요일 전에 공급업체로부터 확실한 답을 받아야 한다." }] },
 
@@ -469,7 +469,7 @@ window.VOCAB_D = [
     syn:["leave","set off","embark"], ant:["arrive"],
     ex:[{ s:"The last train will {{}} from platform three at midnight.", f:"depart", ko:"막차는 자정에 3번 플랫폼에서 출발한다." }] },
 
-  { word:"department", pron:"디파트먼트", pos:"n", level:"B1", meanings:["부서","부문"],
+  { word:"department", exams:["공무원"], pron:"디파트먼트", pos:"n", level:"B1", meanings:["부서","부문"],
     syn:["division","section","branch"],
     ex:[{ s:"She now heads the marketing {{}} of a large firm.", f:"department", ko:"그녀는 지금 대기업의 마케팅 부서를 이끈다." }] },
 
@@ -538,7 +538,7 @@ window.VOCAB_D = [
     syn:["dispossess","divest","rob"], ant:["grant"],
     ex:[{ s:"The new law could {{}} thousands of people of their benefits.", f:"deprive", ko:"그 새 법은 수천 명에게서 수급 자격을 빼앗을 수 있다." }] },
 
-  { word:"depth", pron:"뎁스", pos:"n", level:"B1", meanings:["깊이","심도"],
+  { word:"depth", exams:["공무원"], pron:"뎁스", pos:"n", level:"B1", meanings:["깊이","심도"],
     syn:["deepness","profundity","thoroughness"],
     ex:[{ s:"Divers measured the {{}} of the lake at sixty meters.", f:"depth", ko:"잠수부들은 그 호수의 깊이를 60미터로 측정했다." }] },
 
@@ -596,7 +596,7 @@ window.VOCAB_D = [
     syn:["advantageous","attractive","preferable"], ant:["undesirable"],
     ex:[{ s:"A quiet location is highly {{}} for a public library.", f:"desirable", ko:"조용한 위치는 공공 도서관에 매우 바람직하다." }] },
 
-  { word:"desire", pron:"디자이어", pos:"n", level:"B1", meanings:["욕구","바람"],
+  { word:"desire", exams:["공무원"], pron:"디자이어", pos:"n", level:"B1", meanings:["욕구","바람"],
     syn:["longing","craving","wish"], ant:["aversion"],
     ex:[{ s:"He felt a strong {{}} to return to his hometown.", f:"desire", ko:"그는 고향으로 돌아가고 싶은 강한 욕구를 느꼈다." }] },
 
@@ -747,7 +747,7 @@ window.VOCAB_D = [
   { word:"diabetes", pron:"다이어비티스", pos:"n", level:"B2", meanings:["당뇨병"],
     ex:[{ s:"Regular exercise lowers the risk of {{}}.", f:"diabetes", ko:"규칙적인 운동은 당뇨병 위험을 낮춘다." }] },
 
-  { word:"diagnose", pron:"다이어그노즈", pos:"v", level:"B2", meanings:["진단하다","원인을 밝혀내다"],
+  { word:"diagnose", exams:["공무원"], pron:"다이어그노즈", pos:"v", level:"B2", meanings:["진단하다","원인을 밝혀내다"],
     syn:["identify","pinpoint","determine"],
     ex:[{ s:"Doctors were slow to {{}} the rare condition.", f:"diagnose", ko:"의사들은 그 희귀 질환을 진단하는 데 오래 걸렸다." }] },
 
@@ -936,7 +936,7 @@ window.VOCAB_D = [
     syn:["reveal","divulge","make public"], ant:["conceal"],
     ex:[{ s:"The company refused to {{}} the terms of the deal.", f:"disclose", ko:"그 회사는 거래 조건을 공개하기를 거부했다." }] },
 
-  { word:"discomfort", pron:"디스컴퍼트", pos:"n", level:"B2", meanings:["불편","불쾌감"],
+  { word:"discomfort", exams:["공무원"], pron:"디스컴퍼트", pos:"n", level:"B2", meanings:["불편","불쾌감"],
     syn:["unease","soreness","inconvenience"], ant:["comfort"],
     ex:[{ s:"Patients reported only mild {{}} after the injection.", f:"discomfort", ko:"환자들은 주사 후 약한 불편만 보고했다." }] },
 
@@ -1119,7 +1119,7 @@ window.VOCAB_D = [
     syn:["difference","contrast","excellence"],
     ex:[{ s:"She graduated with {{}} in mathematics.", f:"distinction", ko:"그녀는 수학에서 뛰어난 성적으로 졸업했다." }] },
 
-  { word:"distinctive", pron:"디스팅티브", pos:"adj", level:"B2", meanings:["독특한","특색 있는"],
+  { word:"distinctive", exams:["공무원"], pron:"디스팅티브", pos:"adj", level:"B2", meanings:["독특한","특색 있는"],
     syn:["characteristic","unique","unmistakable"],
     ex:[{ s:"The bird has a {{}} call you cannot possibly miss.", f:"distinctive", ko:"그 새는 도저히 놓칠 수 없는 독특한 울음소리를 낸다." }] },
 
@@ -1352,7 +1352,7 @@ window.VOCAB_D = [
   { word:"dozen", pron:"더즌", pos:"n", level:"B1", meanings:["12개","한 다스"],
     ex:[{ s:"She bought half a {{}} eggs on the way home.", f:"dozen", ko:"그녀는 집에 오는 길에 달걀 여섯 개를 샀다." }] },
 
-  { word:"draft", pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],
+  { word:"draft", exams:["공무원"], pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],
     syn:["outline","rough copy","sketch"],
     ex:[{ s:"The first {{}} of the report was far too long.", f:"draft", ko:"보고서 초안은 너무 길었다." }] },
 
@@ -1389,7 +1389,7 @@ window.VOCAB_D = [
     syn:["attract","pull","sketch"],
     ex:[{ s:"The festival is expected to {{}} very large crowds.", f:"draw", ko:"그 축제는 아주 많은 인파를 끌어들일 것으로 예상된다." }] },
 
-  { word:"draw on", pron:"드로 온", pos:"phr", level:"C1", meanings:["~에서 이끌어내다","활용하다"],
+  { word:"draw on", exams:["공무원"], pron:"드로 온", pos:"phr", level:"C1", meanings:["~에서 이끌어내다","활용하다"],
     syn:["utilize","tap into","fall back on"] },
 
   { word:"drawback", pron:"드로백", pos:"n", level:"B2", meanings:["결점","문제점"],
@@ -1456,7 +1456,7 @@ window.VOCAB_D = [
     syn:["owing","payable","expected"],
     ex:[{ s:"The final payment is {{}} at the end of March.", f:"due", ko:"최종 대금은 3월 말에 지급 기일이 된다." }] },
 
-  { word:"due to", pron:"듀 투", pos:"phr", level:"B1", meanings:["~때문에","~로 인해"],
+  { word:"due to", exams:["공무원"], pron:"듀 투", pos:"phr", level:"B1", meanings:["~때문에","~로 인해"],
     syn:["because of","owing to","thanks to"] },
 
   { word:"dull", pron:"덜", pos:"adj", level:"B2", meanings:["따분한","흐릿한"],

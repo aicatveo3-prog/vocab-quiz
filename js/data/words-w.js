@@ -463,7 +463,7 @@ window.VOCAB_W = [
     ex:[{ s:"The wall can {{}} a gale.", f:"withstand", ko:"그 벽은 강풍을 견딜 수 있다." }] },
 
   /* 교재 동사 갈래('목격하다') 는 버렸다. */
-  { word:"witness", pron:"위트니스", pos:"n", level:"B2", meanings:["목격자","증인"],
+  { word:"witness", exams:["공무원"], pron:"위트니스", pos:"n", level:"B2", meanings:["목격자","증인"],
     syn:["one who saw it happen","person giving evidence","onlooker in court"],
     ex:[{ s:"The {{}} took the stand.", f:"witness", ko:"그 목격자가 증인석에 섰다." }] },
 

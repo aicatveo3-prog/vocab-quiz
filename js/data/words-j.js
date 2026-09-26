@@ -104,7 +104,7 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '정당화하다, 설명하다' 를 글자까지 지켰다. account for(syn) 가
      참조하므로 원본의 '해명하다' 대신 사전 쪽 '설명하다' 를 남겼다.
      justice 와 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"justify", pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
+  { word:"justify", exams:["공무원"], pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
     syn:["account for","defend","vindicate"],
     ex:[{ s:"Nothing can {{}} cruelty on that scale.", f:"justify", ko:"어떤 것도 그 정도 규모의 잔인함을 정당화할 수 없다." }] },
 

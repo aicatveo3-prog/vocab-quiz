@@ -785,7 +785,7 @@ window.VOCAB_F = [
     syn:["thread","strand","filament"],
     ex:[{ s:"The rope is woven from a tough plant {{}}.", f:"fiber", ko:"그 밧줄은 질긴 식물 섬유로 짜여 있다." }] },
 
-  { word:"fiction", pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
+  { word:"fiction", exams:["공무원"], pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
     syn:["fabrication","made-up story","invented tale"], ant:["fact"],
     ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
 
@@ -1409,7 +1409,7 @@ window.VOCAB_F = [
 
   /* function(n)·functional(adj) 은 앞 여섯 글자가 같은 가족이지만 품사가 달라
      갈라진다. 참조하는 표제어가 없어 뜻은 기존 사전 것을 그대로 옮겼다. */
-  { word:"function", pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
+  { word:"function", exams:["공무원"], pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
     syn:["purpose","role","use"],
     ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
 

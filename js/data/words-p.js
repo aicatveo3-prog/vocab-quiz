@@ -139,7 +139,7 @@ window.VOCAB_P = [
     syn:["cure-all","universal remedy","single fix for everything"],
     ex:[{ s:"Technology is no {{}} for poverty.", f:"panacea", ko:"기술은 가난의 만병통치약이 아니다." }] },
 
-  { word:"pandemic", pron:"팬데믹", pos:"n", level:"B2", meanings:["전염병","대유행병"],
+  { word:"pandemic", exams:["공무원"], pron:"팬데믹", pos:"n", level:"B2", meanings:["전염병","대유행병"],
     syn:["worldwide epidemic","global outbreak","sweeping disease"],
     ex:[{ s:"The {{}} closed borders for months.", f:"pandemic", ko:"그 전염병은 여러 달 국경을 닫게 했다." }] },
 
@@ -411,7 +411,7 @@ window.VOCAB_P = [
     ex:[{ s:"The scandal began with a small {{}}.", f:"payoff", ko:"그 추문은 작은 뇌물에서 시작됐다." }] },
 
   /* 승격 26 — 사전이 '절정; 정상' 이었다. 구분 기호만 쉼표로 바꿨다(culminate, C). */
-  { word:"peak", pron:"피크", pos:"n", level:"B1", meanings:["절정","정상"],
+  { word:"peak", exams:["공무원"], pron:"피크", pos:"n", level:"B1", meanings:["절정","정상"],
     syn:["highest point","summit","topmost level"], ant:["trough"],
     ex:[{ s:"Sales reached their {{}} in December.", f:"peak", ko:"판매가 십이월에 절정에 이르렀다." }] },
 
@@ -728,7 +728,7 @@ window.VOCAB_P = [
     syn:["marvel","observed event","thing that occurs"],
     ex:[{ s:"The northern lights are a striking {{}}.", f:"phenomenon", ko:"북극광은 눈에 띄는 현상이다." }] },
 
-  { word:"philosophy", pron:"펄라서피", pos:"n", level:"B1", meanings:["철학"],
+  { word:"philosophy", exams:["공무원"], pron:"펄라서피", pos:"n", level:"B1", meanings:["철학"],
     syn:["study of wisdom","system of thought","love of knowledge"],
     ex:[{ s:"He teaches {{}} at the college.", f:"philosophy", ko:"그는 그 대학에서 철학을 가르친다." }] },
 
@@ -757,7 +757,7 @@ window.VOCAB_P = [
   /* 승격 57 — 사전이 '신체의; 물리적인' 이었다. 구분 기호만 쉼표로 바꿨다
      (corporal, C · mental 반의어, M). 원본의 '육체의, 물질의, 물리학의' 세 갈래
      중 사전 쪽을 남겼다 — '육체의' 는 corporal 의 첫 뜻과 같다. */
-  { word:"physical", pron:"피지컬", pos:"adj", level:"B1", meanings:["신체의","물리적인"],
+  { word:"physical", exams:["공무원"], pron:"피지컬", pos:"adj", level:"B1", meanings:["신체의","물리적인"],
     syn:["corporal","of the body","material rather than mental"], ant:["mental"],
     ex:[{ s:"The job needs real {{}} strength.", f:"physical", ko:"그 일은 진짜 신체의 힘이 필요하다." }] },
 
@@ -1008,7 +1008,7 @@ window.VOCAB_P = [
   /* 승격 76 — 사전값은 '보험 증권' 한 갈래뿐이었다. 원본의 '정책' 이 수능에서
      압도적으로 흔하므로 첫 자리에 두고 사전값을 둘째로 살렸다 —
      insurance(I) 의 화면 글자가 바뀐다. '방책' 갈래는 버렸다. */
-  { word:"policy", pron:"팔러시", pos:"n", level:"B1", meanings:["정책","보험 증권"],
+  { word:"policy", exams:["공무원"], pron:"팔러시", pos:"n", level:"B1", meanings:["정책","보험 증권"],
     syn:["course of action","official line","insurance contract"],
     ex:[{ s:"The new {{}} takes effect in May.", f:"policy", ko:"새 정책은 오월에 시행된다." }] },
 
@@ -1294,7 +1294,7 @@ window.VOCAB_P = [
     ex:[{ s:"Give me the {{}} time of arrival.", f:"precise", ko:"도착 시각을 정확히 알려 주세요." }] },
 
   /* 승격 98 — 사전 표현과 글자까지 같다(clarity, C). */
-  { word:"precision", pron:"프리시전", pos:"n", level:"C1", meanings:["정밀함","정확성"],
+  { word:"precision", exams:["공무원"], pron:"프리시전", pos:"n", level:"C1", meanings:["정밀함","정확성"],
     syn:["exactness","fine accuracy","being right to the detail"],
     ex:[{ s:"The parts are cut with great {{}}.", f:"precision", ko:"그 부품들은 아주 정밀하게 절단된다." }] },
 
@@ -1425,7 +1425,7 @@ window.VOCAB_P = [
     ex:[{ s:"The talks were a {{}} to peace.", f:"prelude", ko:"그 회담은 평화의 전조였다." }] },
 
   /* 승격 107 — 사전 표현과 글자까지 같다(발음이 없던 항목이다). */
-  { word:"premature", pron:"프리머추어", pos:"adj", level:"B2", meanings:["시기상조의","조숙한"],
+  { word:"premature", exams:["공무원"], pron:"프리머추어", pos:"adj", level:"B2", meanings:["시기상조의","조숙한"],
     syn:["too early","before the right time","born before term"],
     ex:[{ s:"The move proved {{}}.", f:"premature", ko:"그 조치는 시기상조로 드러났다." }] },
 
@@ -1480,7 +1480,7 @@ window.VOCAB_P = [
 
   /* 승격 113 — 사전 표현과 글자까지 같다(attendance, A). 둘째 뜻 '존재' 는
      existence(존재 · E) 와 글자까지 같아 서로 오답에서 빠진다. */
-  { word:"presence", pron:"프레즌스", pos:"n", level:"B2", meanings:["출석","존재"],
+  { word:"presence", exams:["공무원"], pron:"프레즌스", pos:"n", level:"B2", meanings:["출석","존재"],
     syn:["attendance","being there","the fact of being on the spot"], ant:["absence"],
     ex:[{ s:"Her {{}} at the meeting was noted.", f:"presence", ko:"그녀의 회의 출석이 기록되었다." }] },
 
@@ -1527,7 +1527,7 @@ window.VOCAB_P = [
 
   /* 승격 116 — 사전은 '압력; 압박하다' 로 명사와 동사가 섞여 있었다. 참조가
      없어 원본대로 명사로 세웠다. */
-  { word:"pressure", pron:"프레셔", pos:"n", level:"B1", meanings:["압력","압박"],
+  { word:"pressure", exams:["공무원"], pron:"프레셔", pos:"n", level:"B1", meanings:["압력","압박"],
     syn:["force pushing down","weight of demands","strain put on one"],
     ex:[{ s:"The {{}} in the pipe rose fast.", f:"pressure", ko:"관 속의 압력이 빠르게 올랐다." }] },
 
@@ -1681,7 +1681,7 @@ window.VOCAB_P = [
   /* 승격 131 — 사전은 '사적인; 민간의' 로 쌍반점을 쓰고 있었다. 둘 다 형용사라
      갈래만 쉼표로 갈랐다 (civic 반의어, C · confidential 유의어, C — 두 곳의
      구두점이 달라진다). */
-  { word:"private", pron:"프라이빗", pos:"adj", level:"B1", meanings:["사적인","민간의"],
+  { word:"private", exams:["공무원"], pron:"프라이빗", pos:"adj", level:"B1", meanings:["사적인","민간의"],
     syn:["confidential","not open to all","one's own"], ant:["public"],
     ex:[{ s:"This is a {{}} matter.", f:"private", ko:"이것은 사적인 일이다." }] },
 
@@ -2020,7 +2020,7 @@ window.VOCAB_P = [
   /* 승격 167 — 사전은 '심리의' 한 갈래였다. 참조 mental(정신의, 인지의 · M) 이
      쓰는 갈래를 넓혀 '정신적인' 을 붙였다 — 이 차수에서 화면이 바뀌는 한 줄이다.
      mental 과 서로 유의어라 오답에서는 이미 빠져 있다. */
-  { word:"psychological", pron:"사이컬라지컬", pos:"adj", level:"B2", meanings:["심리의","정신적인"],
+  { word:"psychological", exams:["공무원"], pron:"사이컬라지컬", pos:"adj", level:"B2", meanings:["심리의","정신적인"],
     syn:["mental","of the mind","to do with feelings"],
     ex:[{ s:"The injury left a {{}} scar.", f:"psychological", ko:"그 상처는 심리의 흉을 남겼다." }] },
 

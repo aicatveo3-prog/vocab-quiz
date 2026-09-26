@@ -209,11 +209,11 @@ window.VOCAB_T = [
     syn:["make fun of","poke fun at","needle in jest"],
     ex:[{ s:"Do not {{}} your little brother.", f:"tease", ko:"동생을 놀리지 마라." }] },
 
-  { word:"technical", pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
+  { word:"technical", exams:["공무원"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
     syn:["to do with technique","of applied science","needing special skill"],
     ex:[{ s:"The report is too {{}} for me.", f:"technical", ko:"그 보고서는 내게 너무 기술적이다." }] },
 
-  { word:"technician", pron:"테크니션", pos:"n", level:"B2", meanings:["기술자"],
+  { word:"technician", exams:["공무원"], pron:"테크니션", pos:"n", level:"B2", meanings:["기술자"],
     syn:["skilled worker","one trained in a craft","hands-on expert"],
     ex:[{ s:"A {{}} came to fix the line.", f:"technician", ko:"기술자가 선로를 고치러 왔다." }] },
 
@@ -313,7 +313,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑱ — 사전 단일값 유지. 참조 inclination(I) 의 화면은 바뀌지 않는다.
      교재의 '경향' 은 inclination 자리다. */
-  { word:"tendency", pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
+  { word:"tendency", exams:["공무원"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
     syn:["inclination","predisposition","leaning one way"],
     ex:[{ s:"He has a {{}} to talk too fast.", f:"tendency", ko:"그는 너무 빨리 말하는 성향이 있다." }] },
 
@@ -336,7 +336,7 @@ window.VOCAB_T = [
     ex:[{ s:"Her {{}} lasted six years.", f:"tenure", ko:"그녀의 재임 기간은 육 년이었다." }] },
 
   /* jargon(용어)·duration·length·span(기간) 과 두 갈래 모두 맞물려 배제된다. */
-  { word:"term", pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
+  { word:"term", exams:["공무원"], pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
     syn:["jargon","word for a thing","set period"],
     ex:[{ s:"Explain that {{}} in plain words.", f:"term", ko:"그 용어를 쉬운 말로 풀어 주세요." }] },
 
@@ -972,7 +972,7 @@ window.VOCAB_T = [
     syn:["carriage of goods","change of trains","passage from place to place"],
     ex:[{ s:"The goods were damaged in {{}}.", f:"transit", ko:"그 물품은 수송 중에 손상되었다." }] },
 
-  { word:"transition", pron:"트랜지션", pos:"n", level:"B2", meanings:["이행","전이"],
+  { word:"transition", exams:["공무원"], pron:"트랜지션", pos:"n", level:"B2", meanings:["이행","전이"],
     syn:["move from one state to another","passing over","change of stage"],
     ex:[{ s:"The {{}} to the new system took a year.", f:"transition", ko:"새 체계로의 이행은 일 년이 걸렸다." }] },
 
@@ -983,7 +983,7 @@ window.VOCAB_T = [
   /* 승격 63 — 사전 글자 유지. 참조 broadcast(B)·dispatch(D) 두 곳의 화면은
      바뀌지 않는다. convey·deliver·relay·impart 가 모두 '전달하다' 를 써서
      맞물려 배제된다. */
-  { word:"transmit", pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
+  { word:"transmit", exams:["공무원"], pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
     syn:["broadcast","dispatch","send out over a distance"],
     ex:[{ s:"The station will {{}} the match live.", f:"transmit", ko:"그 방송국은 경기를 생중계로 전달할 것이다." }] },
 
@@ -1121,7 +1121,7 @@ window.VOCAB_T = [
 
   /* 승격 71 — 사전 글자 유지. 참조 craze(C)·fad(F) 두 곳의 화면은 바뀌지
      않는다. 교재의 '경향' 은 inclination(경향, 성향) 자리라 버렸다. */
-  { word:"trend", pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
+  { word:"trend", exams:["공무원"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
     syn:["craze","fad","general direction of change"],
     ex:[{ s:"There is a clear {{}} toward smaller homes.", f:"trend", ko:"더 작은 집을 향한 분명한 추세가 있다." }] },
 
@@ -1243,7 +1243,7 @@ window.VOCAB_T = [
   /* 승격 80 — 사전 단일값 유지. 참조 다섯 곳(minor 유의어, considerable·
      critical·grave·momentous 반의어) 의 화면은 바뀌지 않는다. minor(사소한,
      작은) 와 글자가 맞물려 배제된다. */
-  { word:"trivial", pron:"트리비얼", pos:"adj", level:"B1", meanings:["사소한"],
+  { word:"trivial", exams:["공무원"], pron:"트리비얼", pos:"adj", level:"B1", meanings:["사소한"],
     syn:["minor","of little weight","not worth troubling over"], ant:["considerable","momentous"],
     ex:[{ s:"Do not fuss over a {{}} slip.", f:"trivial", ko:"사소한 실수로 법석 떨지 마라." }] },
 

@@ -865,7 +865,7 @@ window.VOCAB_E = [
     syn:["productivity","effectiveness","competence"], ant:["inefficiency"],
     ex:[{ s:"Automating the line raised {{}} by a third.", f:"efficiency", ko:"생산 라인을 자동화해 능률이 3분의 1 높아졌다." }] },
 
-  { word:"efficient", pron:"이피션트", pos:"adj", level:"B2", meanings:["효율적인","능률적인"],
+  { word:"efficient", exams:["공무원"], pron:"이피션트", pos:"adj", level:"B2", meanings:["효율적인","능률적인"],
     syn:["effective","productive","streamlined"], ant:["wasteful"],
     ex:[{ s:"A more {{}} layout cut the walking distance in half.", f:"efficient", ko:"더 효율적인 배치로 이동 거리가 절반으로 줄었다." }] },
 
@@ -931,7 +931,7 @@ window.VOCAB_E = [
 
   /* element 는 '요소·원소'다. compound(화합물)의 반의어로 이미 쓰이고 있어
      '원소' 갈래를 버리면 그 문제가 무너진다 — 원본의 '성분'을 '원소'로 둔다. */
-  { word:"element", pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
+  { word:"element", exams:["공무원"], pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
     syn:["component","part","ingredient"], ant:["compound"],
     ex:[{ s:"Trust is the key {{}} in any lasting partnership.", f:"element", ko:"신뢰는 오래가는 모든 동업 관계의 핵심 요소다." }] },
 
@@ -970,7 +970,7 @@ window.VOCAB_E = [
   /* eliminate 의 뜻은 기존 GLOSS "제거하다, 없애다" 를 그대로 옮겼다.
      abolish·assassinate 가 이 낱말을 유의어로 쓰고 있어, '탈락시키다' 같은
      경기 갈래를 넣으면 그 두 문제의 피드백이 엉뚱해진다. */
-  { word:"eliminate", pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
+  { word:"eliminate", exams:["공무원"], pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
     syn:["remove","get rid of","eradicate"], ant:["retain"],
     ex:[{ s:"The new filter helps {{}} harmful bacteria from the water.", f:"eliminate", ko:"새 필터는 물에서 해로운 세균을 제거하는 데 도움이 된다." }] },
 
@@ -1041,7 +1041,7 @@ window.VOCAB_E = [
      레벨을 C1 / B1 로 두 칸 벌려 '레벨 ±1' 필터에 걸리게 했다 — 두 낱말이 한
      문제의 보기로 같이 뜨지 않는다. 2차의 element(B1)/elements(C1) 와 같은 방법이고,
      실제 난이도 순서(비상사태가 기초어)와도 맞는다. 코드는 건드리지 않는다. */
-  { word:"emergence", pron:"이머전스", pos:"n", level:"C1", meanings:["출현","등장"],
+  { word:"emergence", exams:["공무원"], pron:"이머전스", pos:"n", level:"C1", meanings:["출현","등장"],
     syn:["appearance","arrival","advent"],
     ex:[{ s:"The {{}} of cheap sensors changed the whole industry.", f:"emergence", ko:"값싼 센서의 출현이 산업 전체를 바꿔 놓았다." }] },
 
@@ -1268,7 +1268,7 @@ window.VOCAB_E = [
 
   /* ── 6차: enormous ~ environment-friendly ───────── */
 
-  { word:"enormous", pron:"이노머스", pos:"adj", level:"B1", meanings:["막대한","거대한"],
+  { word:"enormous", exams:["공무원"], pron:"이노머스", pos:"adj", level:"B1", meanings:["막대한","거대한"],
     syn:["immense","colossal","vast"], ant:["tiny"],
     ex:[{ s:"Rebuilding the bridge will cost an {{}} amount.", f:"enormous", ko:"그 교량을 다시 세우는 데는 막대한 금액이 들 것이다." }] },
 
@@ -1410,7 +1410,7 @@ window.VOCAB_E = [
     syn:["stability","evenness","state of balance"],
     ex:[{ s:"The market found a new {{}} after the shock.", f:"equilibrium", ko:"시장은 그 충격 뒤에 새로운 균형을 찾았다." }] },
 
-  { word:"equipment", pron:"이퀴프먼트", pos:"n", level:"B1", meanings:["장비","용품"],
+  { word:"equipment", exams:["공무원"], pron:"이퀴프먼트", pos:"n", level:"B1", meanings:["장비","용품"],
     syn:["gear","apparatus","tools"],
     ex:[{ s:"The club lends climbing {{}} to beginners.", f:"equipment", ko:"그 동아리는 초보자에게 등반 장비를 빌려준다." }] },
 
@@ -1502,7 +1502,7 @@ window.VOCAB_E = [
 
   /* 원본은 '확립하다; (법률, 제도 등을) 제정하다; 설립하다' 로 갈래가 셋이다 — 괄호를
      풀고 둘로 줄였다. 표제어 abolish(반의어)·determine(유의어)이 이 낱말을 쓴다. */
-  { word:"establish", pron:"이스태블리시", pos:"v", level:"B1", meanings:["확립하다","설립하다"],
+  { word:"establish", exams:["공무원"], pron:"이스태블리시", pos:"v", level:"B1", meanings:["확립하다","설립하다"],
     syn:["found","set up","institute"], ant:["abolish"],
     ex:[{ s:"The town hopes to {{}} a museum in the old mill.", f:"establish", ko:"그 마을은 낡은 제분소에 박물관을 설립하기를 바란다." }] },
 
@@ -1802,7 +1802,7 @@ window.VOCAB_E = [
     syn:["banish","deport","send into exile"],
     ex:[{ s:"The new rulers moved to {{}} their rivals.", f:"exile", ko:"새 통치자들은 경쟁자들을 추방하려 움직였다." }] },
 
-  { word:"exist", pron:"이그지스트", pos:"v", level:"B1", meanings:["존재하다"],
+  { word:"exist", exams:["공무원"], pron:"이그지스트", pos:"v", level:"B1", meanings:["존재하다"],
     syn:["be present","be real","live on"],
     ex:[{ s:"No written record of the village seems to {{}}.", f:"exist", ko:"그 마을의 기록은 남아 있지 않은 것 같다." }] },
 
@@ -1819,7 +1819,7 @@ window.VOCAB_E = [
      C2 뿐이고 expand 에 C2 는 맞지 않는다. 그래서 자동사(커지다)/타동사(확대하다)로
      뜻을 갈라 두었다. 9차의 even/equal 처럼 레벨로 푸는 편이 낫지만, 이 짝은
      레벨로 풀 수 없는 자리에 있다. */
-  { word:"expand", pron:"익스팬드", pos:"v", level:"B2", meanings:["커지다","확대되다"],
+  { word:"expand", exams:["공무원"], pron:"익스팬드", pos:"v", level:"B2", meanings:["커지다","확대되다"],
     syn:["grow bigger","swell","spread out"],
     ex:[{ s:"Metal rails {{}} slightly on hot afternoons.", f:"expand", ko:"금속 레일은 더운 오후에 조금 커진다." }] },
 
@@ -1868,7 +1868,7 @@ window.VOCAB_E = [
 
   /* expert(B1)와 expertise(C1)도 두 칸 벌렸다 — 둘 다 '전문' 명사다.
      뜻은 '사람'(전문가)과 '지식'(전문 지식)으로 갈라진다. */
-  { word:"expert", pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
+  { word:"expert", exams:["공무원"], pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
     syn:["specialist","master","skilled person"],
     ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
 
@@ -1969,7 +1969,7 @@ window.VOCAB_E = [
   /* 뜻을 '연장, 확장' 으로 잡았다 — 표제어 expansion(B2 "팽창, 확대")과 '확대' 가
      겹치지 않게 하려는 것이다. 기존 표제어 by extension 은 pos 가 phr 이라
      이 명사와 오답 후보로 겹치지 않는다. */
-  { word:"extension", pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
+  { word:"extension", exams:["공무원"], pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
     syn:["lengthening","addition","prolonging"],
     ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
 
@@ -1988,7 +1988,7 @@ window.VOCAB_E = [
     syn:["wipe out","annihilate","kill off"],
     ex:[{ s:"It took two winters to {{}} the beetles.", f:"exterminate", ko:"그 딱정벌레를 박멸하는 데 두 번의 겨울이 걸렸다." }] },
 
-  { word:"external", pron:"익스터널", pos:"adj", level:"B2", meanings:["외부의","외면의"],
+  { word:"external", exams:["공무원"], pron:"익스터널", pos:"adj", level:"B2", meanings:["외부의","외면의"],
     syn:["outer","outside","surface-level"], ant:["internal"],
     ex:[{ s:"The report blamed {{}} factors for the delay.", f:"external", ko:"그 보고서는 지연의 원인을 외부 요인으로 돌렸다." }] },
 

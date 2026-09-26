@@ -119,7 +119,7 @@ window.VOCAB_R = [
   /* 승격 ⑥ — 원본은 '범위; 범위가 ~이다; 정렬시키다' 로 명사와 동사가 섞여
      있었다. 참조 넷(array·coverage·diversity·extent) 이 모두 명사여서 명사로
      세우고 쌍반점만 쉼표로 갈랐다. '범위' 는 extent 의 첫 뜻과 같아 배제된다. */
-  { word:"range", pron:"레인지", pos:"n", level:"B1", meanings:["범위","다양함"],
+  { word:"range", exams:["공무원"], pron:"레인지", pos:"n", level:"B1", meanings:["범위","다양함"],
     syn:["extent","span from end to end","full reach"],
     ex:[{ s:"The {{}} of prices is wide.", f:"range", ko:"가격의 범위가 넓다." }] },
 
@@ -149,14 +149,14 @@ window.VOCAB_R = [
 
   /* 원본은 '속도, 비율, 등급' 세 갈래였다. '등급' 은 바로 위 rank 와 grade 의
      자리라 버렸다. '비율' 은 아래 ratio 와 글자가 같아 서로 오답에서 빠진다. */
-  { word:"rate", pron:"레이트", pos:"n", level:"B1", meanings:["속도","비율"],
+  { word:"rate", exams:["공무원"], pron:"레이트", pos:"n", level:"B1", meanings:["속도","비율"],
     syn:["speed of change","measure per unit","pace at which it happens"],
     ex:[{ s:"The birth {{}} has fallen.", f:"rate", ko:"출생률이 떨어졌다." }] },
 
   /* ★ 원본은 '상당히, 꽤; 오히려, 차라리' 였다. 앞 갈래는 pretty(P 꽤, 상당히)·
      quite(Q 꽤, 전적으로) 가 이미 갖고 있어서 뒤 갈래만 남겼다. 부사 셋이 서로를
      흐리지 않게 가른 것이다. */
-  { word:"rather", pron:"래더", pos:"adv", level:"B1", meanings:["오히려","차라리"],
+  { word:"rather", exams:["공무원"], pron:"래더", pos:"adv", level:"B1", meanings:["오히려","차라리"],
     syn:["instead","as a preference","on the contrary"],
     ex:[{ s:"I would {{}} walk than drive.", f:"rather", ko:"나는 운전하기보다 차라리 걷겠다." }] },
 
@@ -191,7 +191,7 @@ window.VOCAB_R = [
     ex:[{ s:"How did they {{}} to the news?", f:"react", ko:"그들은 그 소식에 어떻게 반응했나요?" }] },
 
   /* 승격 ⑫ — 사전 글자 유지(chemistry, C). */
-  { word:"reaction", pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
+  { word:"reaction", exams:["공무원"], pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
     syn:["response to something","what follows an act","answering move"],
     ex:[{ s:"His first {{}} was to laugh.", f:"reaction", ko:"그의 첫 반응은 웃는 것이었다." }] },
 
@@ -225,7 +225,7 @@ window.VOCAB_R = [
     ex:[{ s:"That lies outside my {{}}.", f:"realm", ko:"그것은 내 영역 밖의 일이다." }] },
 
   /* ★ 원본은 '실시간' 으로 형용사인데 명사 뜻이 달려 있었다 — '실시간의' 로 고쳤다. */
-  { word:"real-time", pron:"리얼 타임", pos:"adj", level:"C1", meanings:["실시간의"],
+  { word:"real-time", exams:["공무원"], pron:"리얼 타임", pos:"adj", level:"C1", meanings:["실시간의"],
     syn:["as it happens","without delay in reporting","live as it goes"],
     ex:[{ s:"The app gives {{}} traffic data.", f:"real-time", ko:"그 앱은 실시간의 교통 정보를 준다." }] },
 
@@ -320,7 +320,7 @@ window.VOCAB_R = [
 
   /* 승격 ㉖ — ★ 원본은 '퇴거, 후퇴' 였다. 사전값과 참조 downturn 이 모두 경기
      뜻이라 사전 표현을 글자까지 지켰다. */
-  { word:"recession", pron:"리세션", pos:"n", level:"B2", meanings:["경기 후퇴","불황"],
+  { word:"recession", exams:["공무원"], pron:"리세션", pos:"n", level:"B2", meanings:["경기 후퇴","불황"],
     syn:["downturn","slump in trade","fall in business"],
     ex:[{ s:"The country slid into {{}}.", f:"recession", ko:"그 나라는 불황에 빠져들었다." }] },
 
@@ -365,7 +365,7 @@ window.VOCAB_R = [
     ex:[{ s:"I did not {{}} her at first.", f:"recognize", ko:"나는 처음에 그녀를 인식하지 못했다." }] },
 
   /* 승격 ㉝ — 사전 글자 유지(advise, A). */
-  { word:"recommend", pron:"레커멘드", pos:"v", level:"B1", meanings:["추천하다"],
+  { word:"recommend", exams:["공무원"], pron:"레커멘드", pos:"v", level:"B1", meanings:["추천하다"],
     syn:["advise","speak well of","put forward as good"],
     ex:[{ s:"Can you {{}} a good dentist?", f:"recommend", ko:"좋은 치과 의사를 추천해 주시겠어요?" }] },
 
@@ -429,7 +429,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊱ — 사전의 쌍반점만 쉼표로 갈랐다(consult, C). '언급하다' 는
      mention(M) 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"refer", pron:"리퍼", pos:"v", level:"B1", meanings:["참조하다","언급하다"],
+  { word:"refer", exams:["공무원"], pron:"리퍼", pos:"v", level:"B1", meanings:["참조하다","언급하다"],
     syn:["consult","look to for help","speak of"],
     ex:[{ s:"Please {{}} to page ten.", f:"refer", ko:"10쪽을 참조하세요." }] },
 
@@ -527,7 +527,7 @@ window.VOCAB_R = [
   { word:"regarding", pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
     syn:["about the matter of","with respect to","on the subject of"] },
 
-  { word:"regardless of", pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
+  { word:"regardless of", exams:["공무원"], pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
     syn:["no matter what","without regard to","whatever may be"] },
 
   /* 원본 '재생하다, 재건하다' 에서 '재건하다' 는 reconstruct(챕터 3) 에 넘겼다. */
@@ -555,7 +555,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊼ — 사전 글자 유지(enrollment, E). 원본의 괄호 '(출생, 사망 등의) 신고'
      는 걷고 사전의 '기재' 를 썼다. */
-  { word:"registration", pron:"레지스트레이션", pos:"n", level:"B2", meanings:["등록","기재"],
+  { word:"registration", exams:["공무원"], pron:"레지스트레이션", pos:"n", level:"B2", meanings:["등록","기재"],
     syn:["enrollment","signing up","entry on a list"],
     ex:[{ s:"{{}} closes at noon.", f:"Registration", ko:"등록은 정오에 마감된다." }] },
 
@@ -632,7 +632,7 @@ window.VOCAB_R = [
      relieve/relive 는 철자가 한 글자 차이인데 발음이 다르다 — 릴리브 / 리라이브. */
 
   /* 승격 53 — 사전의 쌍반점만 쉼표로 갈랐다(참조 여섯 곳). */
-  { word:"reject", pron:"리젝트", pos:"v", level:"B1", meanings:["거절하다","배척하다"],
+  { word:"reject", exams:["공무원"], pron:"리젝트", pos:"v", level:"B1", meanings:["거절하다","배척하다"],
     syn:["deny","dismiss","turn down"], ant:["accept"],
     ex:[{ s:"They may {{}} the offer.", f:"reject", ko:"그들은 그 제안을 거절할 수도 있다." }] },
 
@@ -754,7 +754,7 @@ window.VOCAB_R = [
     syn:["be dependent on","fall back on","put one's trust in"] },
 
   /* 승격 67 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"remain", pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
+  { word:"remain", exams:["공무원"], pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
     syn:["stay behind","be left over","go on being"],
     ex:[{ s:"Few trees {{}} on the hill.", f:"remain", ko:"그 언덕에 남은 나무는 얼마 없다." }] },
 
@@ -794,7 +794,7 @@ window.VOCAB_R = [
     ex:[{ s:"He showed no {{}}.", f:"remorse", ko:"그는 회한을 보이지 않았다." }] },
 
   /* 승격 71 — 사전 글자 유지(inaccessible, I · isolated, I). */
-  { word:"remote", pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
+  { word:"remote", exams:["공무원"], pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
     syn:["inaccessible","isolated","far from anywhere"],
     ex:[{ s:"They live in a {{}} valley.", f:"remote", ko:"그들은 외딴 골짜기에 산다." }] },
 
@@ -813,7 +813,7 @@ window.VOCAB_R = [
     syn:["start again","take up once more","make valid again"],
     ex:[{ s:"You must {{}} the licence.", f:"renew", ko:"당신은 그 면허를 갱신해야 한다." }] },
 
-  { word:"renewable", pron:"리뉴어블", pos:"adj", level:"B2", meanings:["재생 가능한"],
+  { word:"renewable", exams:["공무원"], pron:"리뉴어블", pos:"adj", level:"B2", meanings:["재생 가능한"],
     syn:["able to be replaced","that nature makes again","not running out"],
     ex:[{ s:"Wind is a {{}} source.", f:"renewable", ko:"바람은 재생 가능한 원천이다." }] },
 
@@ -891,7 +891,7 @@ window.VOCAB_R = [
     syn:["monotonous","doing the same over","without change"],
     ex:[{ s:"The work is dull and {{}}.", f:"repetitive", ko:"그 일은 재미없고 되풀이된다." }] },
 
-  { word:"replace", pron:"리플레이스", pos:"v", level:"B1", meanings:["대체하다","대신하다"],
+  { word:"replace", exams:["공무원"], pron:"리플레이스", pos:"v", level:"B1", meanings:["대체하다","대신하다"],
     syn:["take the place of","put another in place","swap in for"],
     ex:[{ s:"Machines will {{}} the old line.", f:"replace", ko:"기계가 그 낡은 설비를 대체할 것이다." }] },
 
@@ -988,12 +988,12 @@ window.VOCAB_R = [
     ex:[{ s:"The shop has a good {{}}.", f:"reputation", ko:"그 가게는 좋은 평판을 갖고 있다." }] },
 
   /* 승격 89 — 사전 글자 유지(call for·demand·entail·necessitate 네 곳). */
-  { word:"require", pron:"리콰이어", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
+  { word:"require", exams:["공무원"], pron:"리콰이어", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
     syn:["call for","demand","must have"],
     ex:[{ s:"The job will {{}} long hours.", f:"require", ko:"그 일은 긴 시간을 요구할 것이다." }] },
 
   /* 승격 90 — 사전 글자 유지(necessity, N). */
-  { word:"requirement", pron:"리콰이어먼트", pos:"n", level:"B1", meanings:["요건","필요조건"],
+  { word:"requirement", exams:["공무원"], pron:"리콰이어먼트", pos:"n", level:"B1", meanings:["요건","필요조건"],
     syn:["necessity","thing that must be met","standard one has to reach"],
     ex:[{ s:"Two years of work is a {{}}.", f:"requirement", ko:"2년의 경력이 요건이다." }] },
 
@@ -1170,7 +1170,7 @@ window.VOCAB_R = [
     ex:[{ s:"Nobody would {{}} to the notice.", f:"respond", ko:"아무도 그 공지에 응답하려 하지 않았다." }] },
 
   /* 승격 109 — 사전 단일값 유지(irresponsible 반의어, I). */
-  { word:"responsible", pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
+  { word:"responsible", exams:["공무원"], pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
     syn:["answerable for it","to be trusted with duty","carrying the blame or credit"],
     ant:["irresponsible"],
     ex:[{ s:"She is {{}} for the whole team.", f:"responsible", ko:"그녀는 팀 전체에 책임감 있게 임한다." }] },
@@ -1293,7 +1293,7 @@ window.VOCAB_R = [
        revitalize 활력을 불어넣다 ↔ resuscitate 소생시키다(챕터 11) */
 
   /* 승격 119 — 사전 글자 유지(fetch, F). recover·regain 과 '되찾다' 로 맞물린다. */
-  { word:"retrieve", pron:"리트리브", pos:"v", level:"B2", meanings:["되찾다","회수하다"],
+  { word:"retrieve", exams:["공무원"], pron:"리트리브", pos:"v", level:"B2", meanings:["되찾다","회수하다"],
     syn:["fetch","get back and bring","recover an item"],
     ex:[{ s:"The dog can {{}} the ball.", f:"retrieve", ko:"그 개는 공을 되찾아 올 수 있다." }] },
 
@@ -1331,7 +1331,7 @@ window.VOCAB_R = [
     ex:[{ s:"The book got a good {{}}.", f:"review", ko:"그 책은 좋은 비평을 받았다." }] },
 
   /* 승격 125 — 사전 글자 유지(amend, A). 원본의 괄호 두 개를 걷었다. */
-  { word:"revise", pron:"리바이즈", pos:"v", level:"B2", meanings:["수정하다","고치다"],
+  { word:"revise", exams:["공무원"], pron:"리바이즈", pos:"v", level:"B2", meanings:["수정하다","고치다"],
     syn:["amend","go over and change","put right in a new version"],
     ex:[{ s:"We must {{}} the plan.", f:"revise", ko:"우리는 그 계획을 수정해야 한다." }] },
 

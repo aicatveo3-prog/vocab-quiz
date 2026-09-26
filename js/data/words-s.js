@@ -254,7 +254,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑫ — 사전 글자를 그대로 지켰다. 참조 extent(E)·magnitude(M) 두 곳의
      화면은 바뀌지 않는다. */
-  { word:"scale", pron:"스케일", pos:"n", level:"B1", meanings:["규모","정도"],
+  { word:"scale", exams:["공무원"], pron:"스케일", pos:"n", level:"B1", meanings:["규모","정도"],
     syn:["extent","magnitude","size of a thing"],
     ex:[{ s:"The project grew in {{}} every year.", f:"scale", ko:"그 사업은 해마다 규모가 커졌다." }] },
 
@@ -857,7 +857,7 @@ window.VOCAB_S = [
     ex:[{ s:"Do not {{}} until you see the mark.", f:"shoot", ko:"표적이 보일 때까지 쏘지 마라." }] },
 
   /* 승격 63 — 사전 글자 유지. 참조 bank(B) 의 화면은 바뀌지 않는다. */
-  { word:"shore", pron:"쇼", pos:"n", level:"B1", meanings:["해안","기슭"],
+  { word:"shore", exams:["공무원"], pron:"쇼", pos:"n", level:"B1", meanings:["해안","기슭"],
     syn:["bank","edge of the sea","land by the water"],
     ex:[{ s:"They walked along the rocky {{}}.", f:"shore", ko:"그들은 바위 많은 해안을 따라 걸었다." }] },
 
@@ -985,7 +985,7 @@ window.VOCAB_S = [
 
   /* 승격 72 — 사전은 '간소화하다' 였다. 참조가 없어 원본대로 '단순화하다' 로
      두었다 — 화면이 바뀌는 곳은 없다. */
-  { word:"simplify", pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
+  { word:"simplify", exams:["공무원"], pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
     syn:["make plain","cut out the hard parts","reduce to basics"],
     ex:[{ s:"We must {{}} the form.", f:"simplify", ko:"우리는 그 서식을 단순화해야 한다." }] },
 
@@ -1308,7 +1308,7 @@ window.VOCAB_S = [
      설명이 '단단한; 입방의' 에서 '단단한, 입방의' 가 된다. 명사인 liquid(L) 의
      반의어 자리는 'solid matter'(고체) 로 갈았다.
      firm(단단한, 회사) 과 첫 갈래가 글자까지 같아 자동 배제된다. */
-  { word:"solid", pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
+  { word:"solid", exams:["공무원"], pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
     syn:["cubic","firm","hard right through"],
     ex:[{ s:"The table is made of {{}} oak.", f:"solid", ko:"그 탁자는 단단한 참나무로 만들어졌다." }] },
 
@@ -1840,7 +1840,7 @@ window.VOCAB_S = [
     syn:["based on figures","to do with data counts","drawn from numbers"],
     ex:[{ s:"They found a {{}} link.", f:"statistical", ko:"그들은 통계에 근거한 연관을 찾았다." }] },
 
-  { word:"statistics", pron:"스터티스틱스", pos:"n", level:"B2", meanings:["통계","통계학"],
+  { word:"statistics", exams:["공무원"], pron:"스터티스틱스", pos:"n", level:"B2", meanings:["통계","통계학"],
     syn:["collected figures","study of numerical data","numbers gathered together"],
     ex:[{ s:"The {{}} show a clear rise.", f:"statistics", ko:"그 통계는 뚜렷한 상승을 보인다." }] },
 
@@ -2042,7 +2042,7 @@ window.VOCAB_S = [
 
   /* 승격 167 — 사전 첫 갈래만 남겼다. 참조 house(H) 가 동사라 그대로 맞는다.
      위 stock 이 넘긴 '저장하다' 를 이 낱말이 받는다. */
-  { word:"store", pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
+  { word:"store", exams:["공무원"], pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
     syn:["house","put away for later","keep in a safe place"],
     ex:[{ s:"We {{}} the grain in a dry barn.", f:"store", ko:"우리는 마른 헛간에 곡식을 저장한다." }] },
 
@@ -2054,7 +2054,7 @@ window.VOCAB_S = [
     ex:[{ s:"The rule is quite {{}}.", f:"straightforward", ko:"그 규칙은 꽤 단순명료하다." }] },
 
   /* 승격 169 — 사전 글자 유지. 참조 burden(B) 의 화면은 바뀌지 않는다. */
-  { word:"strain", pron:"스트레인", pos:"n", level:"B2", meanings:["긴장","압박"],
+  { word:"strain", exams:["공무원"], pron:"스트레인", pos:"n", level:"B2", meanings:["긴장","압박"],
     syn:["burden","tight pressure","heavy demand on one"],
     ex:[{ s:"The long trial put a {{}} on her.", f:"strain", ko:"그 긴 재판이 그녀에게 압박을 주었다." }] },
 
@@ -2433,7 +2433,7 @@ window.VOCAB_S = [
 
   /* 승격 211 — 사전 단일값 유지. 참조 be in charge of(B)·oversee(O) 두 곳의
      화면은 바뀌지 않는다. */
-  { word:"supervise", pron:"수퍼바이즈", pos:"v", level:"B2", meanings:["감독하다"],
+  { word:"supervise", exams:["공무원"], pron:"수퍼바이즈", pos:"v", level:"B2", meanings:["감독하다"],
     syn:["be in charge of","oversee","watch over the work of"],
     ex:[{ s:"One teacher will {{}} the test.", f:"supervise", ko:"교사 한 명이 그 시험을 감독할 것이다." }] },
 
@@ -2471,7 +2471,7 @@ window.VOCAB_S = [
   /* 승격 216 — 사전 첫 갈래만 남겼다. 참조가 다섯 곳(censor·crack down on·
      hold back·hold down·inhibit) 인데 모두 '억누르다' 쪽이라 그대로 맞는다.
      repress(R) 와 맞물려 자동 배제된다. */
-  { word:"suppress", pron:"서프레스", pos:"v", level:"B2", meanings:["억압하다"],
+  { word:"suppress", exams:["공무원"], pron:"서프레스", pos:"v", level:"B2", meanings:["억압하다"],
     syn:["censor","hold down","inhibit"],
     ex:[{ s:"The regime tried to {{}} the news.", f:"suppress", ko:"그 정권은 그 소식을 억압하려 했다." }] },
 
@@ -2510,7 +2510,7 @@ window.VOCAB_S = [
     ex:[{ s:"He needs {{}} on his knee.", f:"surgery", ko:"그는 무릎에 외과 처치가 필요하다." }] },
 
   /* 승격 220 — 사전 단일값 유지. 참조 exceed(E) 의 화면은 바뀌지 않는다. */
-  { word:"surpass", pron:"서패스", pos:"v", level:"B2", meanings:["능가하다"],
+  { word:"surpass", exams:["공무원"], pron:"서패스", pos:"v", level:"B2", meanings:["능가하다"],
     syn:["exceed","go beyond","do better than"],
     ex:[{ s:"Her score will {{}} last year's mark.", f:"surpass", ko:"그녀의 점수가 지난해 기록을 능가할 것이다." }] },
 
@@ -2576,7 +2576,7 @@ window.VOCAB_S = [
     ex:[{ s:"The wait kept us in {{}}.", f:"suspense", ko:"그 기다림이 우리를 긴장감에 두었다." }] },
 
   /* dubious(의심스러운, 수상한 · D) 와 둘째 갈래를 글자까지 맞춰 두었다. */
-  { word:"suspicious", pron:"서스피셔스", pos:"adj", level:"B2", meanings:["의심하는","수상한"],
+  { word:"suspicious", exams:["공무원"], pron:"서스피셔스", pos:"adj", level:"B2", meanings:["의심하는","수상한"],
     syn:["slow to trust","looking wrong","raising doubt"],
     ex:[{ s:"The guard grew {{}} of the van.", f:"suspicious", ko:"경비는 그 승합차를 수상하게 여겼다." }] },
 
@@ -2588,7 +2588,7 @@ window.VOCAB_S = [
 
   /* 승격 231 — 사전 단일값 유지. 참조 environment-friendly(E) 의 화면은
      바뀌지 않는다. */
-  { word:"sustainable", pron:"서스테이너블", pos:"adj", level:"B2", meanings:["지속 가능한"],
+  { word:"sustainable", exams:["공무원"], pron:"서스테이너블", pos:"adj", level:"B2", meanings:["지속 가능한"],
     syn:["environment-friendly","able to keep going","kept up without harm"],
     ex:[{ s:"They aim for {{}} growth.", f:"sustainable", ko:"그들은 지속 가능한 성장을 목표로 한다." }] },
 

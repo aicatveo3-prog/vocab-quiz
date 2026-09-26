@@ -483,7 +483,7 @@ window.VOCAB_O = [
     syn:["receptive","willing to listen","free of prejudice"], ant:["narrow-minded"],
     ex:[{ s:"A good judge stays {{}} until all evidence is in.", f:"open-minded", ko:"좋은 심판은 증거가 다 나올 때까지 마음이 열린 상태를 지킨다." }] },
 
-  { word:"operate", pron:"아퍼레이트", pos:"v", level:"B1", meanings:["경영하다","가동하다"],
+  { word:"operate", exams:["공무원"], pron:"아퍼레이트", pos:"v", level:"B1", meanings:["경영하다","가동하다"],
     syn:["run a business","work a machine","keep in action"],
     ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
 
@@ -602,7 +602,7 @@ window.VOCAB_O = [
   /* 승격 48 — 사전은 '조직, 기관' 이었다. '기관' 을 그대로 두면 같은 챕터의
      organ(장기, 기관) 과 물리므로 원본의 '단체' 로 갈랐다.
      association(A)·institution(I) 두 곳의 화면 글자가 함께 바뀐다. */
-  { word:"organization", pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
+  { word:"organization", exams:["공무원"], pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
     syn:["association","institution","body of members"],
     ex:[{ s:"She founded an {{}} for street children.", f:"organization", ko:"그녀는 거리 아이들을 위한 단체를 세웠다." }] },
 
