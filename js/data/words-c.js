@@ -419,7 +419,7 @@ window.VOCAB_C = [
     ex:[{ s:"The garage did not {{}} us for the inspection.", f:"charge", ko:"그 정비소는 점검 비용을 우리에게 청구하지 않았다." }],
     gov:{ prep:["for","with","to"], pat:"charge you {{}} the repair", usage:"charge A for B : A에게 B의 값을 청구하다" } },
 
-  { word:"charity", pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
+  { word:"charity", exams:["공무원"], pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
     syn:["philanthropy","generosity","aid"], ant:["greed"],
     ex:[{ s:"All ticket money goes to a local {{}}.", f:"charity", ko:"모든 입장료는 지역 자선 단체로 간다." }] },
 
@@ -1478,7 +1478,7 @@ window.VOCAB_C = [
     syn:["landmass","mainland","territory"],
     ex:[{ s:"No other {{}} is so dry.", f:"continent", ko:"그만큼 건조한 대륙은 없다." }] },
 
-  { word:"continuous", pron:"컨티뉴어스", pos:"adj", level:"B1", meanings:["계속되는","끊이지 않는"],
+  { word:"continuous", exams:["공무원"], pron:"컨티뉴어스", pos:"adj", level:"B1", meanings:["계속되는","끊이지 않는"],
     syn:["unbroken","ongoing","incessant"], ant:["sporadic"],
     ex:[{ s:"The machine gave off a {{}} hum.", f:"continuous", ko:"그 기계는 계속되는 웅웅 소리를 냈다." }] },
 
@@ -1722,7 +1722,7 @@ window.VOCAB_C = [
     syn:["harmful","damaging","self-defeating"], ant:["effective"],
     ex:[{ s:"Shouting proved entirely {{}}.", f:"counterproductive", ko:"소리치는 것은 완전히 역효과였다." }] },
 
-  { word:"countless", pron:"카운틀리스", pos:"adj", level:"B1", meanings:["셀 수 없이 많은","무수한"],
+  { word:"countless", exams:["공무원"], pron:"카운틀리스", pos:"adj", level:"B1", meanings:["셀 수 없이 많은","무수한"],
     syn:["innumerable","myriad","endless"], ant:["few"],
     ex:[{ s:"He tried {{}} times before it worked.", f:"countless", ko:"그는 성공하기까지 수없이 시도했다." }] },
 
@@ -1741,7 +1741,7 @@ window.VOCAB_C = [
 
   /* 유의어 respect 를 regard for others 로 바꿨다 — respect 가 동사 표제어로
      올라가기 때문이다(contempt 도 같이 손질했다). */
-  { word:"courtesy", pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
+  { word:"courtesy", exams:["공무원"], pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
     syn:["politeness","manners","regard for others"], ant:["rudeness"],
     ex:[{ s:"He held the door open out of plain {{}}.", f:"courtesy", ko:"그는 순전히 예의로 문을 잡아 주었다." }] },
 
@@ -1796,7 +1796,7 @@ window.VOCAB_C = [
     syn:["hollow","pit","basin"],
     ex:[{ s:"Rain filled the {{}} with green water.", f:"crater", ko:"비가 분화구를 초록빛 물로 채웠다." }] },
 
-  { word:"crave", pron:"크레이브", pos:"v", level:"C1", meanings:["갈망하다","열망하다"],
+  { word:"crave", exams:["공무원"], pron:"크레이브", pos:"v", level:"C1", meanings:["갈망하다","열망하다"],
     syn:["yearn","desire","hunger"], ant:["dislike"],
     ex:[{ s:"Runners often {{}} salt after a long race.", f:"crave", ko:"주자들은 긴 경기 뒤에 소금을 갈망하곤 한다." }] },
 

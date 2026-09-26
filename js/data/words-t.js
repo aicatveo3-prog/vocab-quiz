@@ -538,7 +538,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉟ — 사전 단일값 유지. 참조 jeopardize(J)·menace(M) 두 곳의 화면은
      바뀌지 않는다. endanger·intimidate 까지 넷과 '위협하다' 가 맞물려 배제된다. */
-  { word:"threaten", pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
+  { word:"threaten", exams:["공무원"], pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
     syn:["jeopardize","menace","put in danger"],
     ex:[{ s:"Rising seas {{}} the village.", f:"threaten", ko:"높아지는 바다가 그 마을을 위협한다." }] },
 
@@ -583,7 +583,7 @@ window.VOCAB_T = [
     ex:[{ s:"A {{}} filled the square.", f:"throng", ko:"인파가 광장을 메웠다." }] },
 
   /* 구·표현이라 예문은 두지 않는다. */
-  { word:"throughout", pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
+  { word:"throughout", exams:["공무원"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
     syn:["all the way through","from start to finish","for the whole time"] },
 
   /* abandon·discard·forsake·scrap 과 '버리다' 가, do away with·eliminate·
@@ -713,7 +713,7 @@ window.VOCAB_T = [
 
   /* 승격 50 — 사전 단일값 유지(참조 intolerance). 교재의 '내성, 저항력' 은
      버렸다. */
-  { word:"tolerance", pron:"탈러런스", pos:"n", level:"B2", meanings:["관용"],
+  { word:"tolerance", exams:["공무원"], pron:"탈러런스", pos:"n", level:"B2", meanings:["관용"],
     syn:["willingness to allow","open mind toward others","putting up with difference"],
     ex:[{ s:"The city is known for its {{}}.", f:"tolerance", ko:"그 도시는 관용으로 알려져 있다." }] },
 

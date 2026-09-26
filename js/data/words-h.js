@@ -352,7 +352,7 @@ window.VOCAB_H = [
   /* 승격 ② — GLOSS '고용하다; 빌리다' 를 글자까지 지켰다.
      charter 는 '빌리다' 쪽, employ 는 '고용하다' 쪽, dismiss 는 반의어.
      양쪽을 다 지키려면 사전 순서를 그대로 쓰면 된다. */
-  { word:"hire", pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
+  { word:"hire", exams:["공무원"], pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
     syn:["employ","recruit","engage"], ant:["dismiss"],
     ex:[{ s:"The factory plans to {{}} fifty new workers next month.", f:"hire", ko:"그 공장은 다음 달에 새 근로자 50명을 고용할 계획이다." }],
     gov:{ prep:["as","for"], usage:"hire A as B : A를 B로 고용하다" } },

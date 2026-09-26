@@ -542,7 +542,7 @@ window.VOCAB_I = [
   { word:"in sum", pron:"인 섬", pos:"phr", level:"B2", meanings:["요컨대"],
     syn:["in short","to sum up","in brief"] },
 
-  { word:"in terms of", pron:"인 텀즈 어브", pos:"phr", level:"B1", meanings:["~에 관해서는","~면에서"],
+  { word:"in terms of", exams:["공무원"], pron:"인 텀즈 어브", pos:"phr", level:"B1", meanings:["~에 관해서는","~면에서"],
     syn:["with respect to","regarding","in the matter of"] },
 
   { word:"in that", pron:"인 댓", pos:"phr", level:"C1", meanings:["~라는 점에서"],
@@ -565,7 +565,7 @@ window.VOCAB_I = [
   /* 원본 뜻은 '결국에는' 으로 바로 위 in the end('결국, 마침내')와 겹쳤다.
      이 구는 실제로 '시간을 길게 두고 보면' 이라는 뜻이므로 '장기적으로는' 으로
      바로잡았다. 겹침도 함께 풀렸다. */
-  { word:"in the long run", pron:"인 더 롱 런", pos:"phr", level:"B2", meanings:["장기적으로는","길게 보면"],
+  { word:"in the long run", exams:["공무원"], pron:"인 더 롱 런", pos:"phr", level:"B2", meanings:["장기적으로는","길게 보면"],
     syn:["over time","in the long term","down the road"] },
 
   { word:"in the meantime", pron:"인 더 민타임", pos:"phr", level:"B1", meanings:["그러는 동안에","그동안"],
@@ -908,7 +908,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '감염시키다' 와 글자까지 같다. contaminate(syn) 가 참조한다.
      원본도 한 갈래라 그대로 두었다. */
-  { word:"infect", pron:"인펙트", pos:"v", level:"B2", meanings:["감염시키다"],
+  { word:"infect", exams:["공무원"], pron:"인펙트", pos:"v", level:"B2", meanings:["감염시키다"],
     syn:["contaminate","taint","blight"],
     ex:[{ s:"A single carrier can {{}} dozens of people.", f:"infect", ko:"한 명의 보균자가 수십 명을 감염시킬 수 있다." }] },
 

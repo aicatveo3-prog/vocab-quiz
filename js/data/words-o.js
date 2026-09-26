@@ -504,7 +504,7 @@ window.VOCAB_O = [
 
   /* 승격 41 — 사전 표현 '상대, 적수' 를 글자까지 지켰다(참조 4곳).
      원본의 '상대방, 적수' 대신 사전 쪽을 남겼다. */
-  { word:"opponent", pron:"어포넌트", pos:"n", level:"B2", meanings:["상대","적수"],
+  { word:"opponent", exams:["공무원"], pron:"어포넌트", pos:"n", level:"B2", meanings:["상대","적수"],
     syn:["adversary","enemy","one who fights against"], ant:["ally"],
     ex:[{ s:"He shook hands with his {{}} after the game.", f:"opponent", ko:"그는 경기 뒤 상대와 악수했다." }] },
 

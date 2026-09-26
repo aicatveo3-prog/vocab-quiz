@@ -85,7 +85,7 @@ window.VOCAB = [
     syn:["unusual","atypical","irregular"], ant:["normal"],
     ex:[{ s:"The test revealed an {{}} level of iron in his blood.", f:"abnormal", ko:"검사에서 그의 혈액 내 철분이 비정상적인 수치로 나타났다." }] },
 
-  { word:"abolish", pron:"어발리쉬", pos:"v", level:"B2", meanings:["폐지하다","철폐하다"],
+  { word:"abolish", exams:["공무원"], pron:"어발리쉬", pos:"v", level:"B2", meanings:["폐지하다","철폐하다"],
     syn:["eliminate","repeal","annul"], ant:["establish"],
     ex:[{ s:"The country voted to {{}} the death penalty.", f:"abolish", ko:"그 나라는 사형제를 폐지하기로 표결했다." }] },
 
@@ -502,7 +502,7 @@ window.VOCAB = [
     syn:["marketing","publicity","promotion"],
     ex:[{ s:"She built a career in digital {{}}.", f:"advertising", ko:"그녀는 디지털 광고 분야에서 경력을 쌓았다." }] },
 
-  { word:"advise", pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
+  { word:"advise", exams:["공무원"], pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
     syn:["counsel","recommend","suggest"],
     ex:[{ s:"Doctors {{}} patients to walk every day.", f:"advise", ko:"의사들은 환자에게 매일 걷기를 권고한다." }] },
 
@@ -1004,7 +1004,7 @@ window.VOCAB = [
     syn:["worried","nervous","uneasy"], ant:["relaxed"],
     ex:[{ s:"She felt {{}} before the interview.", f:"anxious", ko:"그녀는 면접 전에 불안했다." }] },
 
-  { word:"apart from", pron:"어파트 프럼", pos:"phr", level:"B1", meanings:["~을 제외하고","~외에는"],
+  { word:"apart from", exams:["공무원"], pron:"어파트 프럼", pos:"phr", level:"B1", meanings:["~을 제외하고","~외에는"],
     syn:["except for","besides","aside from"] },
 
   { word:"apathy", pron:"애퍼시", pos:"n", level:"C1", meanings:["무관심","냉담"],
@@ -1068,7 +1068,7 @@ window.VOCAB = [
   { word:"apply for", pron:"어플라이 포", pos:"phr", level:"B1", meanings:["~에 지원하다","~을 신청하다"],
     syn:["request","seek","put in for"] },
 
-  { word:"apply to", pron:"어플라이 투", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
+  { word:"apply to", exams:["공무원"], pron:"어플라이 투", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
     syn:["pertain to","relate to","concern"] },
 
   { word:"appointment", exams:["공무원"], pron:"어포인트먼트", pos:"n", level:"B1", meanings:["약속","임명"],

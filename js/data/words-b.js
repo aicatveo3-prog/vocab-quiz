@@ -463,7 +463,7 @@ window.VOCAB_B = [
     syn:["life story","memoir","profile"], ant:["fiction"],
     ex:[{ s:"He wrote a {{}} of the former president.", f:"biography", ko:"그는 전임 대통령의 전기를 썼다." }] },
 
-  { word:"biological", pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
+  { word:"biological", exams:["공무원"], pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
     syn:["organic","physiological","natural"], ant:["artificial"],
     ex:[{ s:"The study examined {{}} differences between the species.", f:"biological", ko:"그 연구는 두 종 사이의 생물학적 차이를 조사했다." }] },
 
@@ -647,7 +647,7 @@ window.VOCAB_B = [
     syn:["botanical","plant-related","floral"],
     ex:[{ s:"We spent the whole afternoon in the {{}} gardens.", f:"botanic", ko:"우리는 오후 내내 식물원에서 보냈다." }] },
 
-  { word:"botanical", pron:"버태니컬", pos:"adj", level:"C1", meanings:["식물의","식물에서 얻은"],
+  { word:"botanical", exams:["공무원"], pron:"버태니컬", pos:"adj", level:"C1", meanings:["식물의","식물에서 얻은"],
     syn:["botanic","plant-based","herbal"],
     ex:[{ s:"The book contains detailed {{}} illustrations.", f:"botanical", ko:"그 책에는 상세한 식물 도해가 실려 있다." }] },
 
@@ -780,7 +780,7 @@ window.VOCAB_B = [
   { word:"bring about", pron:"브링 어바웃", pos:"phr", level:"B2", meanings:["초래하다","일으키다"],
     syn:["cause","produce","give rise to"], ant:["prevent"] },
 
-  { word:"bring in", pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
+  { word:"bring in", exams:["공무원"], pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
     syn:["earn","generate","yield"], ant:["lose"] },
 
   { word:"brink", pron:"브링크", pos:"n", level:"C1", meanings:["가장자리","직전"],

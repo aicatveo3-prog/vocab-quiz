@@ -907,7 +907,7 @@ window.VOCAB_E = [
     syn:["choose","vote for","appoint"], ant:["dismiss"],
     ex:[{ s:"Members will {{}} a new chair at the spring meeting.", f:"elect", ko:"회원들은 봄 총회에서 새 의장을 선출할 것이다." }] },
 
-  { word:"election", pron:"일렉션", pos:"n", level:"B2", meanings:["선거","선정"],
+  { word:"election", exams:["공무원"], pron:"일렉션", pos:"n", level:"B2", meanings:["선거","선정"],
     syn:["vote","ballot","poll"],
     ex:[{ s:"Turnout in the local {{}} was unusually high.", f:"election", ko:"그 지방 선거의 투표율은 유난히 높았다." }] },
 
@@ -1125,7 +1125,7 @@ window.VOCAB_E = [
     syn:["imitate","mimic","follow the example of"],
     ex:[{ s:"Younger players try to {{}} his footwork.", f:"emulate", ko:"어린 선수들은 그의 발놀림을 모방하려 한다." }] },
 
-  { word:"enable", pron:"이네이블", pos:"v", level:"B2", meanings:["할 수 있게 하다","가능하게 하다"],
+  { word:"enable", exams:["공무원"], pron:"이네이블", pos:"v", level:"B2", meanings:["할 수 있게 하다","가능하게 하다"],
     syn:["allow","permit","make possible"], ant:["disable"],
     ex:[{ s:"A small grant will {{}} her to finish the research.", f:"enable", ko:"작은 보조금이 그녀가 연구를 마칠 수 있게 해 줄 것이다." }] },
 
@@ -1203,7 +1203,7 @@ window.VOCAB_E = [
 
   /* 유의어로 infinite 를 쓰지 않았다 — GLOSS 가 limitless 와 똑같이 "무한한"
      이어서 피드백 두 줄이 같아진다(audit 이 오류로 잡는다). */
-  { word:"endless", pron:"엔들리스", pos:"adj", level:"B2", meanings:["끝없는","무한한"],
+  { word:"endless", exams:["공무원"], pron:"엔들리스", pos:"adj", level:"B2", meanings:["끝없는","무한한"],
     syn:["limitless","unending","interminable"], ant:["finite"],
     ex:[{ s:"The drive across the plain felt {{}}.", f:"endless", ko:"평원을 가로지르는 그 운전은 끝없이 느껴졌다." }] },
 
@@ -1375,7 +1375,7 @@ window.VOCAB_E = [
   { word:"epic", pron:"에픽", pos:"n", level:"B2", meanings:["서사시"],
     ex:[{ s:"The class spent a month on a single Greek {{}}.", f:"epic", ko:"그 수업은 그리스 서사시 한 편에 한 달을 썼다." }] },
 
-  { word:"epidemic", pron:"에퍼데믹", pos:"n", level:"B2", meanings:["유행병","전염병"],
+  { word:"epidemic", exams:["공무원"], pron:"에퍼데믹", pos:"n", level:"B2", meanings:["유행병","전염병"],
     syn:["outbreak","contagion","widespread disease"],
     ex:[{ s:"The city closed its schools during the {{}}.", f:"epidemic", ko:"그 도시는 유행병이 도는 동안 학교를 닫았다." }] },
 
@@ -1771,7 +1771,7 @@ window.VOCAB_E = [
   /* 원본은 '기진맥진하게 만들다; 배기가스; 배기관' 으로 동사와 명사가 섞여 있다 —
      동사로 정하고, 기존 GLOSS 의 '고갈시키다' 를 앞에 뒀다(표제어 deplete 가
      유의어로 쓴다). '기진맥진' 쪽은 같은 차수의 exhausted 가 맡는다. */
-  { word:"exhaust", pron:"이그조스트", pos:"v", level:"B2", meanings:["고갈시키다","기진맥진하게 만들다"],
+  { word:"exhaust", exams:["공무원"], pron:"이그조스트", pos:"v", level:"B2", meanings:["고갈시키다","기진맥진하게 만들다"],
     syn:["deplete","use up","wear out"],
     ex:[{ s:"Two dry summers can {{}} the village well.", f:"exhaust", ko:"두 번의 건조한 여름이면 마을 우물을 고갈시킬 수 있다." }] },
 
@@ -1921,7 +1921,7 @@ window.VOCAB_E = [
     ex:[{ s:"Deep-sea {{}} still costs more than space travel.", f:"exploration", ko:"심해 탐사는 여전히 우주 여행보다 비용이 많이 든다." }] },
 
   /* 원본은 '탐험하다, 탐사하다; 탐구하다' 인데 앞 둘이 거의 같은 말이라 둘로 줄였다. */
-  { word:"explore", pron:"익스플로어", pos:"v", level:"B2", meanings:["탐험하다","탐구하다"],
+  { word:"explore", exams:["공무원"], pron:"익스플로어", pos:"v", level:"B2", meanings:["탐험하다","탐구하다"],
     syn:["travel through","investigate","search"],
     ex:[{ s:"They set out to {{}} the caves below the ridge.", f:"explore", ko:"그들은 능선 아래 동굴을 탐험하러 나섰다." }] },
 
@@ -1962,7 +1962,7 @@ window.VOCAB_E = [
      표제어 enlarge(6차, B2 "확대하다, 확장하다")와 뜻이 글자까지 같아진다.
      '확대' 계열은 이미 amplify·enlarge·escalate·expand·expansion 다섯이 쓰고 있어
      빈자리가 없다. '연장' 쪽으로 가르면 표제어 curtail(반의어)도 지켜진다. */
-  { word:"extend", pron:"익스텐드", pos:"v", level:"B1", meanings:["늘리다","연장하다"],
+  { word:"extend", exams:["공무원"], pron:"익스텐드", pos:"v", level:"B1", meanings:["늘리다","연장하다"],
     syn:["lengthen","prolong","stretch out"], ant:["curtail"],
     ex:[{ s:"The city may {{}} the bus route past the mill.", f:"extend", ko:"시는 버스 노선을 제분소 너머로 연장할 수도 있다." }] },
 

@@ -879,7 +879,7 @@ window.VOCAB_F = [
 
   /* financial(4차)은 B1 이다. 뜻이 겹치는 형용사라 레벨을 두 단계 벌려
      4지선다에서 서로의 오답으로 뜨지 않게 했다. */
-  { word:"fiscal", pron:"피스컬", pos:"adj", level:"C1", meanings:["재정의","회계의"],
+  { word:"fiscal", exams:["공무원"], pron:"피스컬", pos:"adj", level:"C1", meanings:["재정의","회계의"],
     syn:["budgetary","monetary","tax-related"],
     ex:[{ s:"The city closed the {{}} year with a small surplus.", f:"fiscal", ko:"그 시는 회계 연도를 약간의 흑자로 마감했다." }] },
 
@@ -1471,7 +1471,7 @@ window.VOCAB_F = [
      words.js 는 세트별 audit 이 없어(D·E 세트만 있다) 걸리지 않던 자리다.
      ["추가의","촉진하다"] 로 두 갈래를 담아 양쪽을 모두 살렸다.
      원본의 '더 나아가'(부사)는 두 참조 어디에도 쓰이지 않아 내려놓았다. */
-  { word:"further", pron:"퍼더", pos:"adj", level:"B1", meanings:["추가의","촉진하다"],
+  { word:"further", exams:["공무원"], pron:"퍼더", pos:"adj", level:"B1", meanings:["추가의","촉진하다"],
     syn:["extra","supplementary","more"],
     ex:[{ s:"The council asked for {{}} details before deciding.", f:"further", ko:"의회는 결정 전에 추가 세부 사항을 요청했다." }] },
 

@@ -153,7 +153,7 @@ window.VOCAB_U = [
   /* ★ 교재의 '의식을 잃은' 을 '의식이 없는' 으로 바꿨다. numb(감각을 잃은,
      마비된 · B2/adj) 와 꼴이 똑같아 영→한 선택지에 나란히 놓이면 '의식' 과
      '감각' 한 낱말로만 갈리기 때문이다. 교재 두 갈래는 같은 말이었다. */
-  { word:"unconscious", pron:"언칸셔스", pos:"adj", level:"B2", meanings:["의식이 없는"],
+  { word:"unconscious", exams:["공무원"], pron:"언칸셔스", pos:"adj", level:"B2", meanings:["의식이 없는"],
     syn:["knocked out cold","not aware of anything","in a dead faint"],
     ex:[{ s:"They found him {{}} on the floor.", f:"unconscious", ko:"그들은 그가 바닥에서 의식이 없는 것을 발견했다." }] },
 

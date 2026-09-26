@@ -79,7 +79,7 @@ window.VOCAB_Q = [
 
   /* 승격 ⑥ — 사전은 '4분의 1; 숙소' 로 쌍반점을 쓰고 있었다. 둘 다 명사라
      갈래만 쉼표로 갈랐다. 원본의 '4분의 1의'(형용사) 는 버렸다. 참조는 없다. */
-  { word:"quarter", pron:"쿼터", pos:"n", level:"B1", meanings:["4분의 1","숙소"],
+  { word:"quarter", exams:["공무원"], pron:"쿼터", pos:"n", level:"B1", meanings:["4분의 1","숙소"],
     syn:["one of four parts","fourth part","lodging"],
     ex:[{ s:"Only a {{}} of the class passed.", f:"quarter", ko:"학급의 4분의 1만 통과했다." }] },
 

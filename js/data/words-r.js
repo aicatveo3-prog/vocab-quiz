@@ -108,7 +108,7 @@ window.VOCAB_R = [
      사전의 두 갈래를 쓰고 쌍반점만 쉼표로 갈랐다 — 참조가 다섯 곳(boost·breed·
      elevate·foster·lift) 이라 이 챕터에서 화면이 가장 많이 바뀌는 자리다.
      '기르다' 는 foster 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"raise", pron:"레이즈", pos:"v", level:"B1", meanings:["올리다","기르다"],
+  { word:"raise", exams:["공무원"], pron:"레이즈", pos:"v", level:"B1", meanings:["올리다","기르다"],
     syn:["lift","boost","bring up a child"],
     ex:[{ s:"They will {{}} the price next month.", f:"raise", ko:"그들은 다음 달에 가격을 올릴 것이다." }] },
 
@@ -425,7 +425,7 @@ window.VOCAB_R = [
   /* 승격 ㉟ — 사전 글자 유지. 참조가 일곱 곳(amplify·boost 반의어, condense·
      curtail·cut back on·lower·minimize) 이라 R 세트에서 가장 조심한 자리다.
      원본의 '낮추다' 는 lower 의 첫 뜻이라 붙이지 않았다. */
-  { word:"reduce", pron:"리두스", pos:"v", level:"B1", meanings:["줄이다","감소시키다"],
+  { word:"reduce", exams:["공무원"], pron:"리두스", pos:"v", level:"B1", meanings:["줄이다","감소시키다"],
     syn:["curtail","lower","bring down in size"],
     ex:[{ s:"They will {{}} the staff.", f:"reduce", ko:"그들은 직원을 줄일 것이다." }] },
 
@@ -843,7 +843,7 @@ window.VOCAB_R = [
     ex:[{ s:"The city has {{}} for its bridges.", f:"renown", ko:"그 도시는 다리로 명성이 있다." }] },
 
   /* 승격 74 — 사전 글자 유지(celebrated·distinguished·legendary 세 곳). */
-  { word:"renowned", pron:"리나운드", pos:"adj", level:"B2", meanings:["유명한","명성 높은"],
+  { word:"renowned", exams:["공무원"], pron:"리나운드", pos:"adj", level:"B2", meanings:["유명한","명성 높은"],
     syn:["celebrated","distinguished","widely known"],
     ex:[{ s:"She is a {{}} pianist.", f:"renowned", ko:"그녀는 유명한 피아노 연주자다." }] },
 
@@ -1087,7 +1087,7 @@ window.VOCAB_R = [
 
   /* 승격 99 — 사전 단일값 유지(acclimate·cave in 반의어, counteract·defy — 네 곳).
      원본의 '견디다' 는 bear(B) 의 첫 뜻이라 붙이지 않았다. */
-  { word:"resist", pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
+  { word:"resist", exams:["공무원"], pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
     syn:["defy","stand against","hold out against"],
     ex:[{ s:"They chose to {{}} the order.", f:"resist", ko:"그들은 그 명령에 저항하기로 했다." }] },
 
@@ -1336,7 +1336,7 @@ window.VOCAB_R = [
   /* 승격 124 — 사전의 쌍반점만 쉼표로 갈랐다. 참조가 여섯 곳(audit·brush up·
      commentary·course assessment·critique·go over) 이라 이 챕터에서 화면이 가장
      많이 바뀌는 자리다. 사전값이 명사라 명사로 세웠다. */
-  { word:"review", pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
+  { word:"review", exams:["공무원"], pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
     syn:["critique","going over again","written judgment"],
     ex:[{ s:"The book got a good {{}}.", f:"review", ko:"그 책은 좋은 비평을 받았다." }] },
 

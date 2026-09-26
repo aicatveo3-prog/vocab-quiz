@@ -849,7 +849,7 @@ window.VOCAB_S = [
     ex:[{ s:"A thick wall will {{}} the house from noise.", f:"shield", ko:"두꺼운 벽이 그 집을 소음에서 보호할 것이다." }] },
 
   /* 승격 61 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"shift", pron:"시프트", pos:"n", level:"B2", meanings:["변화","교대"],
+  { word:"shift", exams:["공무원"], pron:"시프트", pos:"n", level:"B2", meanings:["변화","교대"],
     syn:["change of position","turn of duty","move to another state"],
     ex:[{ s:"There was a clear {{}} in opinion.", f:"shift", ko:"여론에 뚜렷한 변화가 있었다." }] },
 
@@ -1060,7 +1060,7 @@ window.VOCAB_S = [
     ex:[{ s:"There was a {{}} tone in his voice.", f:"sinister", ko:"그의 목소리에 음험한 기색이 있었다." }] },
 
   /* 승격 78 — 사전 글자 유지. 참조 descend(D) 의 화면은 바뀌지 않는다. */
-  { word:"sink", pron:"싱크", pos:"v", level:"B1", meanings:["가라앉다","침몰하다"],
+  { word:"sink", exams:["공무원"], pron:"싱크", pos:"v", level:"B1", meanings:["가라앉다","침몰하다"],
     syn:["descend","go under water","drop below the surface"], ant:["float"],
     ex:[{ s:"The boat began to {{}} slowly.", f:"sink", ko:"그 배가 천천히 가라앉기 시작했다." }] },
 
@@ -1276,7 +1276,7 @@ window.VOCAB_S = [
   /* 승격 97 — 사전 단일값 유지. 참조 aloof(A)·antisocial(A)·gregarious(G)
      세 곳의 화면은 바뀌지 않는다. gregarious(사교적인) 와 글자가 같아 서로의
      오답에서 자동으로 빠진다. */
-  { word:"sociable", pron:"소셔블", pos:"adj", level:"B2", meanings:["사교적인"],
+  { word:"sociable", exams:["공무원"], pron:"소셔블", pos:"adj", level:"B2", meanings:["사교적인"],
     syn:["gregarious","fond of company","easy with people"], ant:["aloof","antisocial"],
     ex:[{ s:"He is a {{}} young man.", f:"sociable", ko:"그는 사교적인 청년이다." }] },
 
@@ -1469,7 +1469,7 @@ window.VOCAB_S = [
     syn:["chief skill","field one is best at","what one does best"],
     ex:[{ s:"Heart surgery is her {{}}.", f:"specialty", ko:"심장 수술이 그녀의 전문이다." }] },
 
-  { word:"species", pron:"스피시즈", pos:"n", level:"B1", meanings:["종","종류"],
+  { word:"species", exams:["공무원"], pron:"스피시즈", pos:"n", level:"B1", meanings:["종","종류"],
     syn:["kind of living thing","group that breeds together","class of plant or animal"],
     ex:[{ s:"The island holds one rare {{}}.", f:"species", ko:"그 섬에는 드문 종 하나가 있다." }] },
 
@@ -2264,7 +2264,7 @@ window.VOCAB_S = [
     ex:[{ s:"The report traced each {{}}.", f:"subsequence", ko:"그 보고서는 이어서 일어나는 것을 하나씩 짚었다." }] },
 
   /* 승격 189 — 사전 글자 유지. 참조 consequent(C) 의 화면은 바뀌지 않는다. */
-  { word:"subsequent", pron:"섭시퀀트", pos:"adj", level:"B2", meanings:["뒤이은","차후의"],
+  { word:"subsequent", exams:["공무원"], pron:"섭시퀀트", pos:"adj", level:"B2", meanings:["뒤이은","차후의"],
     syn:["consequent","coming next in order","following in time"],
     ex:[{ s:"The {{}} meeting settled it.", f:"subsequent", ko:"뒤이은 회의가 그것을 마무리했다." }] },
 
@@ -2398,7 +2398,7 @@ window.VOCAB_S = [
   /* 승격 206 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 call out(C)·conjure up(C)·
      convene(C) 세 곳의 설명이 '소환하다; 불러 모으다' 에서 '소환하다, 불러 모으다'
      가 된다. */
-  { word:"summon", pron:"서먼", pos:"v", level:"C1", meanings:["소환하다","불러 모으다"],
+  { word:"summon", exams:["공무원"], pron:"서먼", pos:"v", level:"C1", meanings:["소환하다","불러 모으다"],
     syn:["call out","convene","conjure up"],
     ex:[{ s:"The court will {{}} both sides.", f:"summon", ko:"법원이 양쪽을 소환할 것이다." }] },
 

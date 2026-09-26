@@ -386,7 +386,7 @@ window.VOCAB_D = [
     syn:["erase","remove","cancel"], ant:["insert"],
     ex:[{ s:"Please {{}} the old log files before the backup runs.", f:"delete", ko:"백업이 실행되기 전에 옛 기록 파일을 삭제해 주세요." }] },
 
-  { word:"deliberate", pron:"딜리버릿", pos:"adj", level:"C1", meanings:["고의적인","의도적인"],
+  { word:"deliberate", exams:["공무원"], pron:"딜리버릿", pos:"adj", level:"C1", meanings:["고의적인","의도적인"],
     syn:["intentional","calculated","premeditated"], ant:["accidental"],
     ex:[{ s:"The damage looked {{}} rather than careless.", f:"deliberate", ko:"그 손상은 부주의보다는 고의적으로 보였다." }] },
 
@@ -426,7 +426,7 @@ window.VOCAB_D = [
     syn:["flood","torrent","onslaught"], ant:["drought"],
     ex:[{ s:"The office received a {{}} of complaints after the outage.", f:"deluge", ko:"정전 이후 사무실에 불만이 쇄도했다." }] },
 
-  { word:"demand", pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
+  { word:"demand", exams:["공무원"], pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
     syn:["require","insist on","call for"], ant:["offer"],
     ex:[{ s:"The workers {{}} safer conditions and shorter hours.", f:"demand", ko:"노동자들은 더 안전한 환경과 더 짧은 노동 시간을 요구한다." }] },
 
@@ -1156,7 +1156,7 @@ window.VOCAB_D = [
     syn:["divert","sidetrack","unsettle"],
     ex:[{ s:"Noise from the street can easily {{}} younger students.", f:"distract", ko:"길거리 소음은 어린 학생들의 주의를 쉽게 흩뜨린다." }] },
 
-  { word:"distraction", pron:"디스트랙션", pos:"n", level:"B2", meanings:["방해하는 것","기분 전환"],
+  { word:"distraction", exams:["공무원"], pron:"디스트랙션", pos:"n", level:"B2", meanings:["방해하는 것","기분 전환"],
     syn:["interruption","diversion","amusement"],
     ex:[{ s:"Phones are by far the biggest {{}} during lessons.", f:"distraction", ko:"수업 중 가장 큰 방해 요소는 단연 휴대폰이다." }] },
 
@@ -1234,7 +1234,7 @@ window.VOCAB_D = [
     syn:["giddy","lightheaded","faint"],
     ex:[{ s:"Standing up too quickly can make you {{}}.", f:"dizzy", ko:"너무 빨리 일어나면 어지러울 수 있다." }] },
 
-  { word:"do away with", pron:"두 어웨이 위드", pos:"phr", level:"C1", meanings:["폐지하다","없애다"],
+  { word:"do away with", exams:["공무원"], pron:"두 어웨이 위드", pos:"phr", level:"C1", meanings:["폐지하다","없애다"],
     syn:["abolish","get rid of","scrap"] },
 
   { word:"docile", pron:"다설", pos:"adj", level:"C2", meanings:["고분고분한","순한"],
@@ -1358,7 +1358,7 @@ window.VOCAB_D = [
     ex:[{ s:"He would often {{}} in the armchair after lunch.", f:"doze", ko:"그는 점심 후 안락의자에서 자주 졸았다." }] },
 
   /* dozen — 대체할 낱말이 없어 syn 을 비워 둔다 */
-  { word:"dozen", pron:"더즌", pos:"n", level:"B1", meanings:["12개","한 다스"],
+  { word:"dozen", exams:["공무원"], pron:"더즌", pos:"n", level:"B1", meanings:["12개","한 다스"],
     ex:[{ s:"She bought half a {{}} eggs on the way home.", f:"dozen", ko:"그녀는 집에 오는 길에 달걀 여섯 개를 샀다." }] },
 
   { word:"draft", exams:["공무원"], pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],

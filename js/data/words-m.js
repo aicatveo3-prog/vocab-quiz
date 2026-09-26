@@ -738,7 +738,7 @@ window.VOCAB_M = [
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
-  { word:"mindful", pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
+  { word:"mindful", exams:["공무원"], pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
     syn:["aware","heedful","attentive"], ant:["oblivious"],
     ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] },
 
@@ -767,7 +767,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '최소화하다, 축소하다' 를 글자까지 지켰다. downplay(syn) 가
      참조하므로 원본('최소화하다' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다.
      minimal 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 안 온다. */
-  { word:"minimize", pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
+  { word:"minimize", exams:["공무원"], pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
     syn:["downplay","reduce","play down"], ant:["maximize"],
     ex:[{ s:"New rules aim to {{}} food waste in canteens.", f:"minimize", ko:"새 규정은 급식소의 음식물 쓰레기를 최소화하는 것을 목표로 한다." }] },
 

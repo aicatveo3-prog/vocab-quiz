@@ -558,7 +558,7 @@ window.VOCAB_P = [
     ex:[{ s:"Traffic is a {{}} problem in this city.", f:"perennial", ko:"교통은 이 도시의 끊임없는 문제다." }] },
 
   /* 원본은 '연주, 공연, 실행, 수행' 네 갈래였다. 두 갈래로 줄였다. */
-  { word:"performance", pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
+  { word:"performance", exams:["공무원"], pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
     syn:["show before an audience","carrying out of a task","staged act"],
     ex:[{ s:"The evening {{}} sold out.", f:"performance", ko:"저녁 공연은 매진되었다." }] },
 
@@ -1353,13 +1353,13 @@ window.VOCAB_P = [
 
   /* 승격 101 — 사전 표현과 글자까지 같다(anticipate, A · expect, E · foresee, F
      — 세 곳). 원본도 한 갈래여서 그대로 지켰다. */
-  { word:"predict", pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
+  { word:"predict", exams:["공무원"], pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
     syn:["foretell","say what will come","call the outcome"],
     ex:[{ s:"No one can {{}} the market.", f:"predict", ko:"아무도 시장을 예측할 수 없다." }] },
 
   /* 승격 102 — 사전은 '예측' 한 갈래였다. 원본의 '예측, 예보' 를 그대로 쓰면
      forecast(예측, 예보 · F) 와 글자까지 통째로 같아진다. 사전값을 지켰다. */
-  { word:"prediction", pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
+  { word:"prediction", exams:["공무원"], pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
     syn:["forecast","what one expects to happen","guess about the future"],
     ex:[{ s:"His {{}} turned out to be right.", f:"prediction", ko:"그의 예측은 옳았던 것으로 드러났다." }] },
 
@@ -1683,7 +1683,7 @@ window.VOCAB_P = [
 
   /* 승격 129 — 사전 표현과 글자까지 같다(conscience, C). principal 과 발음이
      같은 낱말이다 — 그래서 둘을 나란히 세워 두었다. */
-  { word:"principle", pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
+  { word:"principle", exams:["공무원"], pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
     syn:["rule one lives by","basic truth","standard of conduct"],
     ex:[{ s:"He refused on {{}}.", f:"principle", ko:"그는 원칙에 따라 거절했다." }] },
 
