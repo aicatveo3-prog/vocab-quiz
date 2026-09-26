@@ -694,6 +694,7 @@ Object.assign(window.GLOSS, {
   "many sorts": "여러 종류",
   "merry and bright": "즐겁고 환한",
   "mist from hot water": "더운 물에서 나온 안개",
+  "misty": "엷은 안개가 낀",
   "more than a few": "한둘이 아닌",
   "move with quick tremors": "잔 떨림으로 움직이다",
   "near enough to be true": "참이라 해도 될 만큼",

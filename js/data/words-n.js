@@ -619,6 +619,7 @@ Object.assign(window.GLOSS, {
   "not there at all": "아예 없는",
   "not-for-profit": "이익을 남기지 않는",
   "nourishing substance": "영양을 주는 물질",
+  "nudge": "살짝 밀다, 쿡 찌르다",
   "number-based": "수를 바탕으로 한",
   "of bad repute": "평판이 나쁜",
   "of consequence": "무게가 있는",

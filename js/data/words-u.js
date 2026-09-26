@@ -852,6 +852,7 @@ Object.assign(window.GLOSS, {
   "regrettably": "애석하게도",
   "rise after a fall": "떨어진 뒤의 오름",
   "rough and smooth alike": "험한 길과 순한 길 모두",
+  "rowdy": "소란스러운, 난폭한",
   "rule a line below": "밑으로 줄을 대다",
   "sad to say": "안타깝게도",
   "said straight out": "곧바로 내놓고 말한",

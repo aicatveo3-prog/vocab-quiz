@@ -137,6 +137,7 @@ Object.assign(window.GLOSS, {
   "lingo": "특수 용어",
   "news media": "보도 매체",
   "odds and ends": "잡동사니",
+  "ornaments": "장식품",
   "righteousness": "의로움",
   "rightful": "정당한 권리의",
   "technical language": "기술 언어",
