@@ -483,6 +483,7 @@ window.VOCAB_F = [
   { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
   { word:"following", exams:["공무원"], pron:"팔로잉", pos:"adj", level:"B1", meanings:["다음의","이후의"], syn:["subsequent","next","ensuing"], ant:["preceding"], ex:[{ s:"The results will be announced the {{}} week.", f:"following", ko:"결과는 그다음 주에 발표될 것이다." }] },
   { word:"furthermore", exams:["공무원"], pron:"퍼더모어", pos:"adv", level:"B2", meanings:["게다가","더욱이"], syn:["moreover","additionally","besides"], ex:[{ s:"The plan is too costly. {{}}, it would take years to finish.", f:"Furthermore", ko:"그 계획은 비용이 너무 든다. 게다가 끝내는 데 몇 년이 걸릴 것이다." }] },
+  { word:"figure of speech", exams:["공무원"], pron:"피겨 오브 스피치", pos:"phr", level:"C1", meanings:["비유적 표현","수사법"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */

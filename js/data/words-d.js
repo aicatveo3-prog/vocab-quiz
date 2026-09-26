@@ -133,6 +133,7 @@ window.VOCAB_D = [
   { word:"dye", exams:["공무원"], pron:"다이", pos:"v", level:"B1", meanings:["염색하다","염료"], ant:["bleach"], ex:[{ s:"She decided to {{}} her hair dark red.", f:"dye", ko:"그녀는 머리를 짙은 빨간색으로 염색하기로 했다." }] },
   { word:"descent", exams:["공무원"], pron:"디센트", pos:"n", level:"C1", meanings:["하강","혈통"], ex:[{ s:"The plane began its {{}} toward the airport.", f:"descent", ko:"비행기는 공항을 향해 하강을 시작했다." }] },
   { word:"dissimilar", exams:["공무원"], pron:"디시밀러", pos:"adj", level:"C1", meanings:["같지 않은","다른"], syn:["different","unlike","distinct"], ant:["similar"], ex:[{ s:"The two cars look {{}} but share the same engine.", f:"dissimilar", ko:"두 차는 서로 달라 보이지만 같은 엔진을 쓴다." }] },
+  { word:"don", exams:["공무원"], pron:"단", pos:"v", level:"C2", meanings:["입다","착용하다"], syn:["put on","wear","dress in"], ant:["take off"], ex:[{ s:"Before each show, the actors {{}} old-fashioned costumes.", f:"don", ko:"공연 전마다 배우들은 옛날 의상을 입는다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1547,6 +1548,7 @@ Object.assign(window.GLOSS, {
   "disparager": "헐뜯는 사람",
   "dispassionate": "냉정한, 공정한",
   "displease": "불쾌하게 하다",
+  "dress in": "~을 입다",
   "dribble": "똑똑 떨어지다",
   "dry":"마른, 건조한",
   "dry spell": "건기, 가문 시기",

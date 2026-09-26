@@ -73,6 +73,7 @@ window.VOCAB_C = [
   { word:"creatively", exams:["공무원"], pron:"크리에이티블리", pos:"adv", level:"B2", meanings:["창의적으로"], syn:["imaginatively","inventively","innovatively"], ex:[{ s:"The team solved the problem {{}} with very few tools.", f:"creatively", ko:"그 팀은 아주 적은 도구로 문제를 창의적으로 해결했다." }] },
   { word:"critic", exams:["공무원"], pron:"크리틱", pos:"n", level:"B2", meanings:["평론가","비판자"], syn:["reviewer","commentator","detractor"], ant:["supporter"], ex:[{ s:"The art {{}} looked at the picture carefully.", f:"critic", ko:"그 미술 평론가는 그림을 주의 깊게 살펴보았다." }] },
   { word:"considerably", exams:["공무원"], pron:"컨시더러블리", pos:"adv", level:"B2", meanings:["상당히","꽤"], syn:["significantly","substantially","markedly"], ant:["marginally"] },
+  { word:"catch up on", exams:["공무원"], pron:"캐치 업 온", pos:"phr", level:"B2", meanings:["밀린 ~을 하다","소식 등을 따라잡다"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],

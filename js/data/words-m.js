@@ -1395,7 +1395,6 @@ Object.assign(window.GLOSS, {
   "female owner": "여자 소유주",
   "fighting art": "싸움 기술",
   "fighting spirit": "싸울 기백",
-  "figure of speech": "비유적 표현",
   "flesh": "살",
   "floor swab": "바닥 닦는 걸레",
   "fluidity": "흐르는 성질",

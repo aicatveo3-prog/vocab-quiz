@@ -113,6 +113,8 @@ window.VOCAB_O = [
   { word:"otherwise", exams:["공무원"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
   { word:"overwork", exams:["공무원"], pron:"오버워크", pos:"v", level:"B2", meanings:["과로하다","혹사하다"], ex:[{ s:"Doctors warn that people who {{}} risk burnout.", f:"overwork", ko:"의사들은 과로하는 사람들이 번아웃 위험에 처한다고 경고한다." }] },
   { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
+  { word:"on purpose", exams:["공무원"], pron:"온 퍼퍼스", pos:"phr", level:"B1", meanings:["일부러","고의로"], syn:["deliberately","intentionally","purposely"], ant:["by chance"] },
+  { word:"on the rise", exams:["공무원"], pron:"온 더 라이즈", pos:"phr", level:"B2", meanings:["증가하고 있는","상승 중인"], syn:["increasing","growing","mounting"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1175,6 +1177,7 @@ Object.assign(window.GLOSS, {
   "grounded on": "~에 발판을 둔",
   "grove of fruit trees": "과일나무 숲",
   "grow too big for": "~에 비해 너무 커지다",
+  "growing": "커지는, 늘어나는",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
@@ -1202,6 +1205,7 @@ Object.assign(window.GLOSS, {
   "in the world": "세상에",
   "in the wrong spot": "엉뚱한 자리에 있는",
   "in view of the crowd": "사람들 눈에 보이는",
+  "increasing": "증가하는",
   "indignation": "분개",
   "infrequent": "드문드문한",
   "initial briefing": "첫 설명 자리",
@@ -1251,6 +1255,7 @@ Object.assign(window.GLOSS, {
   "moderation": "절제, 적당함",
   "moment": "그 순간",
   "most favorable": "가장 유리한",
+  "mounting": "점점 쌓여 가는",
   "move into": "들어가 자리 잡다",
   "naturally grown": "자연스레 기른",
   "nearly remembered": "떠오를 듯한",

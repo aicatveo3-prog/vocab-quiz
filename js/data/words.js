@@ -1809,7 +1809,6 @@ window.GLOSS = {
   "tampering": "부정 조작, 변조",
   "terrestrial":"육지의, 지상의",
   "tiny":"아주 작은",
-  "unacceptable": "받아들일 수 없는",
   "unappealing": "매력 없는",
   "unavailable":"이용할 수 없는",
   "unfriendly":"불친절한",

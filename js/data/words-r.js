@@ -53,6 +53,9 @@ window.VOCAB_R = [
   { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
   { word:"rescue", exams:["공무원"], pron:"레스큐", pos:"v", level:"B1", meanings:["구조하다","구조"], syn:["save","salvage","liberate"], ex:[{ s:"Firefighters managed to {{}} the family from the flames.", f:"rescue", ko:"소방관들은 불길 속에서 그 가족을 가까스로 구조했다." }] },
   { word:"resort to", exams:["공무원"], pron:"리조트 투", pos:"phr", level:"C1", meanings:["~에 의지하다","~의 수단에 호소하다"], syn:["fall back on","turn to","rely on"] },
+  { word:"recognizable", exams:["공무원"], pron:"레커그나이저블", pos:"adj", level:"B2", meanings:["알아볼 수 있는","쉽게 식별되는"], syn:["identifiable","distinguishable","familiar"], ant:["unrecognizable"], ex:[{ s:"After twenty years, the town was hardly {{}} to him.", f:"recognizable", ko:"20년이 지나자 그 마을은 그가 거의 알아볼 수 없을 정도였다." }] },
+  { word:"resign", exams:["공무원"], pron:"리자인", pos:"v", level:"B2", meanings:["사임하다","체념하다"], syn:["step down","quit","stand down"], ex:[{ s:"Facing heavy criticism, the minister decided to {{}}.", f:"resign", ko:"거센 비판에 직면하자 장관은 사임하기로 했다." }] },
+  { word:"roll up one's sleeves", exams:["공무원"], pron:"롤 업 원스 슬리브즈", pos:"phr", level:"C1", meanings:["소매를 걷어붙이다","본격적으로 일에 착수하다"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -2213,6 +2216,7 @@ Object.assign(window.GLOSS, {
   "square corner": "네모지게 꺾인 모",
   "stalk by the water": "물가에 선 줄기",
   "stand against": "맞서 버티다",
+  "stand down": "사퇴하다",
   "stand for a group": "한 무리를 대신하다",
   "stand for election": "선거에 나서다",
   "stand-in for a body": "단체를 대신하는 이",
@@ -2223,6 +2227,7 @@ Object.assign(window.GLOSS, {
   "stay behind": "뒤에 남다",
   "steadiness one can count on": "믿고 맡길 만한 한결같음",
   "step back from a job": "일자리에서 물러나다",
+  "step down": "자리에서 물러나다",
   "stepping down": "자리에서 내려옴",
   "stiff and unbending": "딱딱하고 굽지 않는",
   "stillness of body": "몸의 잠잠함",
@@ -2311,6 +2316,7 @@ Object.assign(window.GLOSS, {
   "turning from a wrong": "잘못에서 돌아섬",
   "turning things over": "이리저리 헤아리는",
   "unable to keep still": "가만히 있지 못하는",
+  "unrecognizable": "알아볼 수 없는",
   "unwilling to act": "나서려 하지 않는",
   "upright in conduct": "행실이 곧은",
   "uproar in the streets": "거리의 소동",

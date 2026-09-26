@@ -70,6 +70,7 @@ window.VOCAB_I = [
   { word:"incoming", exams:["공무원"], pron:"인커밍", pos:"adj", level:"B2", meanings:["들어오는","새로 취임하는"], ex:[{ s:"Check your {{}} messages only twice a day.", f:"incoming", ko:"들어오는 메시지는 하루에 두 번만 확인하라." }] },
   { word:"in danger of", exams:["공무원"], pron:"인 데인저 오브", pos:"phr", level:"B1", meanings:["~할 위험이 있는","~의 위기에 처한"], syn:["at risk","in jeopardy","under threat"] },
   { word:"idiom", exams:["공무원"], pron:"이디엄", pos:"n", level:"B2", meanings:["관용구","숙어"], syn:["expression","phrase","saying"], ex:[{ s:"'Break a leg' is an English {{}} that means 'good luck'.", f:"idiom", ko:"'Break a leg'는 '행운을 빈다'는 뜻의 영어 관용구다." }] },
+  { word:"in addition to", exams:["공무원"], pron:"인 어디션 투", pos:"phr", level:"B1", meanings:["~에 더하여","~뿐만 아니라"], syn:["besides","as well as","along with"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],

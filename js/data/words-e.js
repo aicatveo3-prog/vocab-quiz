@@ -2275,7 +2275,6 @@ Object.assign(window.GLOSS, {
   "put on the throne":"왕좌에 앉히다",
   "put one's name down":"이름을 올리다",
   "sign-up":"가입, 신청",
-  "surroundings":"주위 환경",
   "tangle up":"뒤엉키게 하다",
   "tempting":"구미가 당기는",
   "undivided":"나뉘지 않은, 온전한",

@@ -1049,7 +1049,6 @@ Object.assign(window.GLOSS, {
   "mourning": "애도하는, 상중인",
   "narrowness":"좁음",
   "nonflammable": "불연성의, 타지 않는",
-  "on purpose": "일부러, 고의로",
   "one-way":"일방통행의, 편도의",
   "peace":"평화",
   "penniless":"무일푼의",

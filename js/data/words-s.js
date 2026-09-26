@@ -102,6 +102,8 @@ window.VOCAB_S = [
   { word:"slit", exams:["공무원"], pron:"슬릿", pos:"n", level:"C1", meanings:["가느다란 틈","길게 벤 자국"], ex:[{ s:"He cut a thin {{}} in the bark with a knife.", f:"slit", ko:"그는 칼로 나무껍질에 가느다란 틈을 냈다." }] },
   { word:"serve as", exams:["공무원"], pron:"서브 애즈", pos:"phr", level:"B2", meanings:["~로 쓰이다","역할을 하다"] },
   { word:"start over", exams:["공무원"], pron:"스타트 오버", pos:"phr", level:"B1", meanings:["처음부터 다시 하다"] },
+  { word:"surroundings", exams:["공무원"], pron:"서라운딩즈", pos:"n", level:"B2", meanings:["주위 환경","주변"], syn:["environment","setting","milieu"], ex:[{ s:"The app streams live video of the user's {{}}.", f:"surroundings", ko:"그 앱은 사용자 주변의 실시간 영상을 전송한다." }] },
+  { word:"sooner or later", exams:["공무원"], pron:"수너 오어 레이터", pos:"phr", level:"B1", meanings:["조만간","머지않아"], syn:["eventually","in the end","in time"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3156,6 +3158,7 @@ Object.assign(window.GLOSS, {
   "in short supply": "공급이 모자란",
   "in some degree": "얼마간은",
   "in the same moment": "같은 순간에",
+  "in time": "머지않아, 때맞춰",
   "income": "소득, 수입",
   "inner and sacred": "속 깊고 거룩한",
   "insensitivity": "무신경, 둔감함",
@@ -3282,6 +3285,7 @@ Object.assign(window.GLOSS, {
   "memento": "추억거리",
   "mental health": "정신 건강",
   "messy in work": "일솜씨가 어수선한",
+  "milieu": "사회적 환경",
   "mind one's own work": "제 몫의 일을 살피다",
   "mirror likeness": "거울처럼 같은 꼴",
   "miss on purpose": "일부러 빼먹다",

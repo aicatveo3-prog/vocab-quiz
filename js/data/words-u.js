@@ -61,6 +61,10 @@ window.VOCAB_U = [
   { word:"unemotional", exams:["공무원"], pron:"언이모셔널", pos:"adj", level:"C1", meanings:["감정을 드러내지 않는","냉정한"], syn:["detached","impassive","stoic"], ant:["emotional"], ex:[{ s:"Critical thinking may seem cold and {{}}, but it can stir strong feelings.", f:"unemotional", ko:"비판적 사고는 차갑고 감정 없는 것처럼 보이지만 강한 감정을 불러일으킬 수 있다." }] },
   { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
   { word:"upset", exams:["공무원"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
+  { word:"unacceptable", exams:["공무원"], pron:"언액셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 없는","용납할 수 없는"], syn:["intolerable","inadmissible","objectionable"], ant:["acceptable"], ex:[{ s:"Such rude behavior is simply {{}} in this office.", f:"unacceptable", ko:"그런 무례한 행동은 이 사무실에서 도저히 용납할 수 없다." }] },
+  { word:"unfold", exams:["공무원"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
+  { word:"utter", exams:["공무원"], pron:"어터", pos:"adj", level:"C1", meanings:["완전한","입 밖에 내다"], syn:["absolute","sheer","complete","total"], ex:[{ s:"The meeting was {{}} chaos from start to finish.", f:"utter", ko:"그 회의는 처음부터 끝까지 완전한 혼돈이었다." }] },
+  { word:"undo", exams:["공무원"], pron:"언두", pos:"v", level:"B2", meanings:["풀다","원래대로 되돌리다"], syn:["unfasten","reverse","cancel"], ex:[{ s:"He loosened his collar and began to {{}} his tie.", f:"undo", ko:"그는 옷깃을 느슨하게 하고 넥타이를 풀기 시작했다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -778,6 +782,7 @@ Object.assign(window.GLOSS, {
   "impossible to maintain": "버텨 낼 수 없는",
   "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
+  "inadmissible": "허용될 수 없는",
   "indisputable": "논란의 여지가 없는",
   "irrefutable": "반박할 수 없는",
   "join into one": "하나로 합치다",
@@ -898,6 +903,7 @@ Object.assign(window.GLOSS, {
   "unable to relax": "도무지 풀어지지 않는",
   "uncrewed": "승무원이 없는",
   "under the waves": "물결 아래의",
+  "unfasten": "끄르다, 풀다",
   "unforeseen": "예견하지 못한",
   "unlike how one normally is": "보통의 모습과 딴판인",
   "unmanageable": "감당할 수 없는",
