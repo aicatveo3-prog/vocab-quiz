@@ -164,7 +164,6 @@ Object.assign(window.PRON, {
   "accomplishment": "어캄플리시먼트",
   "accord": "어코드",
   "accord between nations": "어코드 비트윈 네이션스",
-  "accordingly": "어코딩리",
   "achievement": "어치브먼트",
   "aching": "에이킹",
   "acquired": "어콰이어드",
@@ -303,7 +302,6 @@ Object.assign(window.PRON, {
   "amazement": "어메이즈먼트",
   "ambience": "앰비언스",
   "amendment": "어멘드먼트",
-  "amid": "어미드",
   "amount left over": "어마운트 레프트 오버",
   "amount of business done": "어마운트 오브 비즈니스 던",
   "amount of work to get through": "어마운트 오브 워크 투 겟 스루",
@@ -693,7 +691,6 @@ Object.assign(window.PRON, {
   "beginner": "비기너",
   "beginning of an illness": "비기닝 오브 언 일니스",
   "behave badly": "비헤이브 배들리",
-  "behavior": "비헤이비어",
   "behind": "비하인드",
   "behind the times": "비하인드 더 타임즈",
   "being a father": "비잉 어 파더",
@@ -1151,7 +1148,6 @@ Object.assign(window.PRON, {
   "circularly": "서큘러리",
   "citation": "사이테이션",
   "cited line": "사이티드 라인",
-  "citizen": "시티즌",
   "city-run": "시티 런",
   "city-wide": "시티 와이드",
   "civilized": "시빌라이즈드",
@@ -1345,10 +1341,8 @@ Object.assign(window.PRON, {
   "conjurer": "칸저러",
   "connect": "커넥트",
   "connect with": "커넥트 위드",
-  "connection": "커넥션",
   "connection point": "커넥션 포인트",
   "connive": "커나이브",
-  "consider": "컨시더",
   "considerably": "컨시더러블리",
   "consist of": "컨시스트 오브",
   "consistent with": "컨시스턴트 위드",
@@ -1402,7 +1396,6 @@ Object.assign(window.PRON, {
   "cosmology": "카즈말러지",
   "cosmonaut": "카즈머노트",
   "costing more for quality": "코스팅 모어 포 퀄러티",
-  "costly": "코스틀리",
   "coterie": "코터리",
   "cough": "코프",
   "counsel": "카운설",
@@ -1612,7 +1605,7 @@ Object.assign(window.PRON, {
   "designer": "디자이너",
   "despise": "디스파이즈",
   "despite": "디스파이트",
-  "despotism": "데스퍼티즘",
+  "despotism": "데스퍼티즘"
 });
 
 
@@ -7512,7 +7505,7 @@ Object.assign(window.PRON, {
   "trimming": "트리밍",
   "unpleasant": "언플레전트",
   "vandalize": "밴덜라이즈",
-  "warp": "워프",
+  "warp": "워프"
 });
 
 
@@ -7577,7 +7570,7 @@ Object.assign(window.PRON, {
   "thickness": "식니스",
   "thoroughness": "서로니스",
   "unhinged": "언힌지드",
-  "use up": "유스 업",
+  "use up": "유스 업"
 });
 
 
@@ -7590,7 +7583,6 @@ Object.assign(window.PRON, {
   "bypass": "바이패스",
   "cleaning agent": "클리닝 에이전트",
   "cleanser": "클렌저",
-  "constructive": "컨스트럭티브",
   "curb": "커브",
   "decide": "디사이드",
   "deserted": "디저티드",
@@ -7637,7 +7629,6 @@ Object.assign(window.PRON, {
   "bereft": "비레프트",
   "caliber": "캘리버",
   "chart": "차트",
-  "commit": "커미트",
   "credential": "크리덴셜",
   "dedicate": "데디케이트",
   "delve into": "델브 인투",
@@ -7684,7 +7675,6 @@ Object.assign(window.PRON, {
   "able-bodied": "에이블 바디드",
   "adherent": "애드히어런트",
   "appealing": "어필링",
-  "approve": "어프루브",
   "bias": "바이어스",
   "break with": "브레이크 위드",
   "calamitous": "컬래머터스",
@@ -7925,7 +7915,7 @@ Object.assign(window.PRON, {
   "streamlined": "스트림라인드",
   "tolerant": "탈러런트",
   "usefulness": "유스풀니스",
-  "wasteful": "웨이스트풀",
+  "wasteful": "웨이스트풀"
 });
 
 
@@ -8282,7 +8272,6 @@ Object.assign(window.PRON, {
   "beautifully made": "뷰터펄리 메이드",
   "being exposed": "비잉 익스포즈드",
   "bring to light": "브링 투 라이트",
-  "broad": "브로드",
   "bursting": "버스팅",
   "clearly": "클리어리",
   "detonation": "데터네이션",
@@ -8384,7 +8373,7 @@ Object.assign(window.PRON, {
   "trump up": "트럼프 업",
   "truthful": "트루스풀",
   "veneer": "버니어",
-  "verifiable": "베러파이어블",
+  "verifiable": "베러파이어블"
 });
 
 
@@ -8743,7 +8732,7 @@ Object.assign(window.PRON, {
   "turn one's back on": "턴 원스 백 온",
   "turn to stone": "턴 투 스톤",
   "water jet": "워터 제트",
-  "wellspring": "웰스프링",
+  "wellspring": "웰스프링"
 });
 
 
@@ -8851,7 +8840,7 @@ Object.assign(window.PRON, {
   "thwart": "스워트",
   "toadstool": "토드스툴",
   "trailblazer": "트레일블레이저",
-  "usable": "유저블",
+  "usable": "유저블"
 });
 
 
@@ -8878,7 +8867,7 @@ Object.assign(window.PRON, {
   "provide a with b": "프러바이드 에이 위드 비",
   "supply a with b": "서플라이 에이 위드 비",
   "to-do": "투 두",
-  "very angry": "베리 앵그리",
+  "very angry": "베리 앵그리"
 });
 
 
@@ -8894,7 +8883,6 @@ Object.assign(window.PRON, {
   "avaricious": "애버리셔스",
   "bacterium": "백티리엄",
   "baseless": "베이스리스",
-  "basis": "베이시스",
   "be friendly with": "비 프렌들리 위드",
   "beckon": "베컨",
   "benevolence": "버네벌런스",
@@ -9062,7 +9050,6 @@ Object.assign(window.PRON, {
   "benign": "비나인",
   "bias crime": "바이어스 크라임",
   "birthright": "버스라이트",
-  "blessed": "블레시드",
   "built-in": "빌트 인",
   "bustling": "버슬링",
   "caption": "캡션",
@@ -9190,4 +9177,18 @@ Object.assign(window.PRON, {
   "wait": "웨이트",
   "welcoming": "웰커밍",
   "zone": "존"
+});
+
+
+/* ── 공무원 단어에서 새로 쓰인 선택지의 발음 ────────── */
+Object.assign(window.PRON, {
+  "amidst": "어미드스트",
+  "cursed": "커스트",
+  "double-cross": "더블 크로스",
+  "during": "듀어링",
+  "exorbitant": "이그조비턴트",
+  "expensive": "익스펜시브",
+  "limitation": "리미테이션",
+  "perpetrate": "퍼페트레이트",
+  "pricey": "프라이시"
 });

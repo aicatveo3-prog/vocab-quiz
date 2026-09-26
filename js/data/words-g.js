@@ -679,7 +679,6 @@ Object.assign(window.GLOSS, {
   "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
   "baseless":"근거가 희박한",
-  "basis":"기반, 밑바탕",
   "be friendly with":"~와 친하게 지내다",
   "beckon":"손짓으로 부르다",
   "benevolence":"자애, 선행",

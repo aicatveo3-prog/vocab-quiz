@@ -2412,7 +2412,6 @@ Object.assign(window.GLOSS, {
   "beautifully made":"아름답게 만들어진",
   "being exposed":"드러나 있음",
   "bring to light":"세상에 드러내다",
-  "broad":"넓은, 폭넓은",
   "bursting":"터짐",
   "clearly":"분명하게",
   "detonation":"폭발, 기폭",

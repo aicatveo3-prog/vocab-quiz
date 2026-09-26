@@ -1781,7 +1781,6 @@ Object.assign(window.GLOSS, {
   "affront": "모욕을 주다",
   "all-embracing": "모두를 아우르는",
   "alone": "혼자서",
-  "amid": "~의 한복판에",
   "animate": "살아 있는",
   "answering": "응답하는",
   "apathetic": "시들한, 심드렁한",

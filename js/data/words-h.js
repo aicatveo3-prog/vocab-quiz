@@ -560,7 +560,6 @@ Object.assign(window.GLOSS, {
   "benign":"무해한, 양성의",
   "bias crime":"편견 범죄",
   "birthright":"생득권",
-  "blessed":"신성한, 축복받은",
   "built-in":"내장된",
   "bustling":"북적이는",
   "caption":"캡션, 설명문",
