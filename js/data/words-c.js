@@ -2135,7 +2135,6 @@ Object.assign(window.GLOSS, {
   "stretch":"뻗다, 늘이다",
   "succumb":"굴복하다, 쓰러지다",
   "undisputed":"논란의 여지가 없는",
-  "unlike":"~와 달리, 다른",
   "unrelated":"관련 없는",
   "unusual":"흔하지 않은",
   "unwittingly":"무심코, 자기도 모르게",
@@ -2144,7 +2143,6 @@ Object.assign(window.GLOSS, {
   "victim":"피해자, 희생자",
   "violate":"위반하다",
   "warm":"따뜻한",
-  "waste":"낭비, 폐기물",
   "weak":"약한",
   "whole":"전체"
 });

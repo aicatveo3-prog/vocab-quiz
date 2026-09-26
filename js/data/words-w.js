@@ -47,6 +47,8 @@ window.VOCAB_W = [
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복","복지"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
   { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
+  { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
+  { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -628,6 +630,7 @@ Object.assign(window.GLOSS, {
   "frame of belief": "믿음의 틀",
   "full of turns": "굽이가 많은",
   "gain nobody looked for": "아무도 바라지 않았던 이득",
+  "garbage": "쓰레기",
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
   "glad to lend a hand": "손을 보태는 것이 반가운",

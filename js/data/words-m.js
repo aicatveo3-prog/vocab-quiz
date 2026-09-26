@@ -1587,7 +1587,6 @@ Object.assign(window.GLOSS, {
   "undernourishment": "영양 부족",
   "underrepresented group": "대표성이 낮은 집단",
   "unhappy": "행복하지 않은",
-  "unmanned": "무인의",
   "unpretentious": "잘난 척하지 않는",
   "untidy": "정돈되지 않은",
   "unvarying": "한결같이 똑같은",

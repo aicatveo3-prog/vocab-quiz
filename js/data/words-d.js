@@ -1697,7 +1697,6 @@ Object.assign(window.GLOSS, {
   "roundabout route":"우회로",
   "scanner":"스캐너, 판독기",
   "sense":"감지하다; 감각",
-  "sensor":"감지기, 센서",
   "soap":"비누",
   "terminus":"종착지, 끝",
   "title":"명칭, 칭호",

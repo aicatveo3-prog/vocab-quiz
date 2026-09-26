@@ -47,6 +47,11 @@ window.VOCAB_T = [
   { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
   { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다","대하다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
   { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리","대우"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
+  { word:"task", exams:["공무원"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
+  { word:"telling", exams:["공무원"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
+  { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
+  { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
+  { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -1405,6 +1410,7 @@ Object.assign(window.GLOSS, {
   "cause a ticklish feel": "간지러운 느낌을 일으키다",
   "cause suffering to": "~에게 괴로움을 안기다",
   "cells of one kind": "같은 갈래의 세포",
+  "chain": "사슬로 묶다",
   "chance it": "운에 맡기고 해 보다",
   "change of stage": "단계가 달라짐",
   "change of trains": "열차를 갈아탐",
@@ -1669,6 +1675,7 @@ Object.assign(window.GLOSS, {
   "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
   "return to the owner": "임자에게 되보내다",
+  "revealing": "많은 것을 드러내는",
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
   "right to rule as king": "임금으로 다스릴 권리",
@@ -1750,6 +1757,7 @@ Object.assign(window.GLOSS, {
   "thread running through": "전체를 꿰는 실마리",
   "three times as much": "세 배만큼의",
   "threefold": "세 배의",
+  "thus far": "지금까지는",
   "tightness in the air": "공기가 팽팽한 느낌",
   "to a great degree": "큰 정도로",
   "to a high degree": "높은 정도로",
