@@ -48,6 +48,7 @@ window.VOCAB_V = [
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
   { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
+  { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -723,6 +724,7 @@ Object.assign(window.GLOSS, {
   "person on a plant diet": "식물만 먹는 사람",
   "person who offers to help": "돕겠다고 나서는 사람",
   "physical attack": "몸으로 하는 공격",
+  "picture": "그려 보다, 상상하다",
   "place for an event": "행사를 치르는 곳",
   "plants of a place": "한 곳에 자란 풀과 나무",
   "poetry rather than prose": "산문이 아닌 시",

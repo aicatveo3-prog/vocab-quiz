@@ -48,6 +48,7 @@ window.VOCAB_L = [
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
   { word:"liveliness", exams:["공무원"], pron:"라이블리니스", pos:"n", level:"B2", meanings:["활기","생기"], syn:["vitality","vivacity","energy"], ex:[{ s:"The {{}} of the night market attracts many tourists.", f:"liveliness", ko:"야시장의 활기가 많은 관광객을 끌어들인다." }] },
+  { word:"linguistic", exams:["공무원"], pron:"링귀스틱", pos:"adj", level:"C1", meanings:["언어의","언어학의"], ex:[{ s:"English and German share many {{}} features, such as similar words.", f:"linguistic", ko:"영어와 독일어는 비슷한 단어처럼 많은 언어적 특징을 공유한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.

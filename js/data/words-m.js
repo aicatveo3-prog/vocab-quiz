@@ -80,6 +80,7 @@ window.VOCAB_M = [
   { word:"misperception", exams:["공무원"], pron:"미스퍼셉션", pos:"n", level:"C1", meanings:["오해","잘못된 인식"], syn:["misconception","misunderstanding","fallacy","misinterpretation"], ex:[{ s:"A common {{}} is that roller coasters lose energy.", f:"misperception", ko:"흔한 오해는 롤러코스터가 에너지를 잃는다는 것이다." }] },
   { word:"mistakenly", exams:["공무원"], pron:"미스테이컨리", pos:"adv", level:"B2", meanings:["잘못하여","실수로"], syn:["wrongly","erroneously","incorrectly"], ant:["correctly"], ex:[{ s:"Many riders {{}} believe the cars run out of energy.", f:"mistakenly", ko:"많은 탑승객은 차량의 에너지가 바닥난다고 잘못 믿는다." }] },
   { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
+  { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1567,7 +1568,6 @@ Object.assign(window.GLOSS, {
   "shape in a mold": "틀에 넣어 모양을 만들다",
   "shooting star": "별똥별",
   "sidelined": "뒷전으로 밀린",
-  "signify": "나타내다",
   "silent": "소리를 내지 않는",
   "sinew": "힘줄",
   "single marriage": "한 사람과의 혼인",
@@ -1597,7 +1597,6 @@ Object.assign(window.GLOSS, {
   "structural": "구조상의",
   "sulky": "뾰로통한",
   "sullen": "못마땅해 말이 없는",
-  "systematic": "체계적인",
   "take the edge off": "날카로움을 덜다",
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",

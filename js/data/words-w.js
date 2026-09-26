@@ -52,6 +52,7 @@ window.VOCAB_W = [
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
   { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
   { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
+  { word:"workaholic", exams:["공무원"], pron:"워커홀릭", pos:"n", level:"B2", meanings:["일중독자"], ex:[{ s:"My father is a true {{}} who works even on weekends.", f:"workaholic", ko:"우리 아버지는 주말에도 일하는 진정한 일중독자다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11

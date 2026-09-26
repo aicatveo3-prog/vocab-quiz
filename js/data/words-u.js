@@ -65,6 +65,9 @@ window.VOCAB_U = [
   { word:"unfold", exams:["공무원"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
   { word:"utter", exams:["공무원"], pron:"어터", pos:"adj", level:"C1", meanings:["완전한","입 밖에 내다"], syn:["absolute","sheer","complete","total"], ex:[{ s:"The meeting was {{}} chaos from start to finish.", f:"utter", ko:"그 회의는 처음부터 끝까지 완전한 혼돈이었다." }] },
   { word:"undo", exams:["공무원"], pron:"언두", pos:"v", level:"B2", meanings:["풀다","원래대로 되돌리다"], syn:["unfasten","reverse","cancel"], ex:[{ s:"He loosened his collar and began to {{}} his tie.", f:"undo", ko:"그는 옷깃을 느슨하게 하고 넥타이를 풀기 시작했다." }] },
+  { word:"unpredictably", exams:["공무원"], pron:"언프리딕터블리", pos:"adv", level:"C1", meanings:["예측할 수 없게","갑자기"] },
+  { word:"unplug", exams:["공무원"], pron:"언플러그", pos:"v", level:"B2", meanings:["플러그를 뽑다","잠시 일에서 벗어나다"], ex:[{ s:"Remember to {{}} the heater before you leave.", f:"unplug", ko:"나가기 전에 히터 플러그를 뽑는 것을 잊지 마라." }] },
+  { word:"uncertainty", exams:["공무원"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -907,6 +910,7 @@ Object.assign(window.GLOSS, {
   "unforeseen": "예견하지 못한",
   "unlike how one normally is": "보통의 모습과 딴판인",
   "unmanageable": "감당할 수 없는",
+  "unpredictability": "예측 불가능성",
   "unsettling": "마음을 뒤숭숭하게 하는",
   "unsure": "확신이 없는",
   "untangle": "엉킨 것을 풀다",

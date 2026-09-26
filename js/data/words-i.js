@@ -72,6 +72,9 @@ window.VOCAB_I = [
   { word:"idiom", exams:["공무원"], pron:"이디엄", pos:"n", level:"B2", meanings:["관용구","숙어"], syn:["expression","phrase","saying"], ex:[{ s:"'Break a leg' is an English {{}} that means 'good luck'.", f:"idiom", ko:"'Break a leg'는 '행운을 빈다'는 뜻의 영어 관용구다." }] },
   { word:"in addition to", exams:["공무원"], pron:"인 어디션 투", pos:"phr", level:"B1", meanings:["~에 더하여","~뿐만 아니라"], syn:["besides","as well as","along with"] },
   { word:"inability", exams:["공무원"], pron:"이너빌리티", pos:"n", level:"C1", meanings:["무능력","~할 수 없음"], ant:["capability"], ex:[{ s:"The government's {{}} to act angered many voters.", f:"inability", ko:"정부가 아무 조치도 하지 못하자 많은 유권자가 분노했다." }] },
+  { word:"incumbent", exams:["공무원"], pron:"인컴번트", pos:"adj", level:"C2", meanings:["의무로 지워지는","재임 중인"], syn:["obligatory","mandatory","binding"], ex:[{ s:"It is {{}} on parents to keep their children safe.", f:"incumbent", ko:"아이들을 안전하게 지키는 것은 부모의 의무다." }] },
+  { word:"individualism", exams:["공무원"], pron:"인디비주얼리즘", pos:"n", level:"C1", meanings:["개인주의"], ex:[{ s:"American culture places great value on {{}}.", f:"individualism", ko:"미국 문화는 개인주의를 크게 중시한다." }] },
+  { word:"intuitive", exams:["공무원"], pron:"인투이티브", pos:"adj", level:"C1", meanings:["직관적인","이해하기 쉬운"], ex:[{ s:"The new app has a simple and {{}} design.", f:"intuitive", ko:"새 앱은 단순하고 직관적인 디자인을 갖췄다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -1829,6 +1832,7 @@ Object.assign(window.GLOSS, {
   "between stars": "별들 사이의",
   "beyond price": "값을 매길 수 없는",
   "bigotry": "고집스러운 편견",
+  "binding": "구속력 있는",
   "blameless": "잘못이 없는",
   "blight": "병들게 하다",
   "body": "단체, 조직",
@@ -2046,7 +2050,6 @@ Object.assign(window.GLOSS, {
   "intonation": "억양, 음조",
   "introduce": "도입하다, 소개하다",
   "intrusion": "허락 없이 끼어듦",
-  "intuitive": "직감에 따른",
   "inventive": "창의력이 뛰어난",
   "inward": "안쪽을 향한",
   "inward-looking": "안으로 파고드는",
