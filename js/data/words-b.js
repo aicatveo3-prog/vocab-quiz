@@ -81,7 +81,7 @@ window.VOCAB_B = [
     syn:["feast","reception","dinner"],
     ex:[{ s:"The hotel hosted a wedding {{}} for two hundred guests.", f:"banquet", ko:"그 호텔은 하객 200명을 위한 결혼 연회를 열었다." }] },
 
-  { word:"bar", pron:"바", pos:"n", level:"C1", meanings:["법조계","변호사단","법정"],
+  { word:"bar", pron:"바", pos:"n", level:"C1", meanings:["법조계","변호사단"],
     syn:["judiciary","court","tribunal"],
     ex:[{ s:"She was admitted to the {{}} after passing the exam.", f:"bar", ko:"그녀는 시험에 합격한 뒤 변호사 자격을 얻었다." }] },
 

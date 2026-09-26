@@ -31,7 +31,7 @@
  * in one sense 는 in a sense 와 가를 방법이 없어 목록에서 뺐다 (311단어).
  */
 window.VOCAB_I = [
-  { word:"idle", exams:["공무원"], pron:"아이들", pos:"adj", level:"B2", meanings:["놀고 있는","쉬는","게으른"], syn:["unused","inactive","unemployed"], ant:["busy"], ex:[{ s:"Valuable vacant land rarely sits {{}}.", f:"idle", ko:"가치 있는 빈 땅은 좀처럼 놀고 있지 않는다." }] },
+  { word:"idle", exams:["공무원"], pron:"아이들", pos:"adj", level:"B2", meanings:["놀고 있는","게으른"], syn:["unused","inactive","unemployed"], ant:["busy"], ex:[{ s:"Valuable vacant land rarely sits {{}}.", f:"idle", ko:"가치 있는 빈 땅은 좀처럼 놀고 있지 않는다." }] },
   { word:"inconceivable", exams:["공무원"], pron:"인컨시버블", pos:"adj", level:"C2", meanings:["상상할 수 없는"], syn:["unimaginable","unthinkable","implausible"], ant:["conceivable"], ex:[{ s:"The rise in prices is not {{}}.", f:"inconceivable", ko:"가격 인상은 상상할 수 없는 일이 아니다." }] },
   { word:"inequity", exams:["공무원"], pron:"인에쿼티", pos:"n", level:"C1", meanings:["불공평"], syn:["unfairness","injustice","disparity"], ant:["equity"], ex:[{ s:"Overwork has caused burnout and {{}}.", f:"inequity", ko:"과로는 번아웃과 불공평을 초래했다." }] },
   { word:"inescapable", exams:["공무원"], pron:"인이스케이퍼블", pos:"adj", level:"C1", meanings:["피할 수 없는"], syn:["unavoidable","inevitable","certain"], ant:["avoidable"], ex:[{ s:"Climate change impacts will be {{}} by 2040.", f:"inescapable", ko:"2040년이면 기후 변화의 영향은 피할 수 없을 것이다." }] },
@@ -39,7 +39,7 @@ window.VOCAB_I = [
   { word:"infringe", exams:["공무원"], pron:"인프린지", pos:"v", level:"C1", meanings:["침해하다","위반하다"], syn:["violate","breach","encroach"], ex:[{ s:"The right of the people shall not be {{}}.", f:"infringed", ko:"국민의 권리는 침해되어서는 안 된다." }] },
   { word:"inject", exams:["공무원"], pron:"인젝트", pos:"v", level:"B2", meanings:["주입하다","주사하다"], syn:["introduce","insert","instill"], ex:[{ s:"Energy can be {{}} by a flash of light.", f:"injected", ko:"에너지는 빛의 섬광으로 주입될 수 있다." }] },
   { word:"insecurity", exams:["공무원"], pron:"인시큐리티", pos:"n", level:"C1", meanings:["불안정","불안감"], syn:["instability","uncertainty","anxiety"], ant:["security"], ex:[{ s:"Urban agriculture is a reaction to food {{}}.", f:"insecurity", ko:"도시 농업은 식량 불안정에 대한 반응이다." }] },
-  { word:"inside out", exams:["공무원"], pron:"인사이드 아웃", pos:"phr", level:"B2", meanings:["속속들이","완전히"], syn:["thoroughly","completely"], ex:[{ s:"He knows the city {{}}.", f:"inside out", ko:"그는 그 도시를 속속들이 안다." }] },
+  { word:"inside out", exams:["공무원"], pron:"인사이드 아웃", pos:"phr", level:"B2", meanings:["속속들이","완전히"], syn:["thoroughly","completely","through and through"], ex:[{ s:"He knows the city {{}}.", f:"inside out", ko:"그는 그 도시를 속속들이 안다." }] },
   { word:"interpersonally", exams:["공무원"], pron:"인터퍼스널리", pos:"adv", level:"C2", meanings:["대인관계상으로"], ex:[{ s:"The job requires communicating {{}} with others.", f:"interpersonally", ko:"그 일은 타인과 대인관계상으로 소통하기를 요구한다." }] },
   { word:"interrelated", exams:["공무원"], pron:"인터릴레이티드", pos:"adj", level:"C1", meanings:["상호 연관된"], syn:["interconnected","linked","interdependent"], ex:[{ s:"The language arts are all {{}}.", f:"interrelated", ko:"언어 기능들은 모두 상호 연관되어 있다." }] },
   { word:"intermittent", exams:["공무원"], pron:"인터미턴트", pos:"adj", level:"C1", meanings:["간헐적인"], syn:["sporadic","periodic","occasional"], ant:["continuous"], ex:[{ s:"The signal was weak and {{}}.", f:"intermittent", ko:"신호는 약하고 간헐적이었다." }] },
@@ -2194,6 +2194,7 @@ Object.assign(window.GLOSS, {
   "tamper": "허락 없이 손대다",
   "teach": "가르치다",
   "thermal": "열의",
+  "through and through": "철두철미하게, 속속들이",
   "tickly": "간지러운",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",

@@ -50,7 +50,7 @@ window.VOCAB = [
   { word:"acceptable", exams:["공무원"], pron:"억셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 있는","용인되는"], syn:["satisfactory","adequate","permissible"], ant:["unacceptable"], ex:[{ s:"All travelers must carry {{}} identification.", f:"acceptable", ko:"모든 여행자는 인정되는 신분증을 소지해야 한다." }] },
   { word:"accuse", exams:["공무원"], pron:"어큐즈", pos:"v", level:"B2", meanings:["비난하다","고발하다"], syn:["blame","charge","indict"], ant:["defend"], ex:[{ s:"They {{}} him of stealing the funds.", f:"accuse", ko:"그들은 그가 자금을 훔쳤다고 고발한다." }], gov:{ prep:["of"], usage:"accuse A of B : A를 B의 이유로 비난/고발하다" } },
   { word:"achievement", exams:["공무원"], pron:"어치브먼트", pos:"n", level:"B2", meanings:["성취","업적"], syn:["accomplishment","feat","success"], ant:["failure"], ex:[{ s:"We celebrate the artistic {{}} of each participant.", f:"achievements", ko:"우리는 각 참가자의 예술적 성취를 축하한다." }] },
-  { word:"advancement", exams:["공무원"], pron:"어드밴스먼트", pos:"n", level:"B2", meanings:["발전","진보","승진"], syn:["progress","development","growth"], ex:[{ s:"Rapid {{}} in AI is reshaping work.", f:"advancements", ko:"AI의 급속한 발전이 일을 재편하고 있다." }] },
+  { word:"advancement", exams:["공무원"], pron:"어드밴스먼트", pos:"n", level:"B2", meanings:["발전","승진"], syn:["progress","development","growth"], ex:[{ s:"Rapid {{}} in AI are reshaping work.", f:"advancements", ko:"AI의 급속한 발전이 일을 재편하고 있다." }] },
   { word:"availability", exams:["공무원"], pron:"어베일러빌리티", pos:"n", level:"B2", meanings:["이용 가능성","가용성"], syn:["accessibility","obtainability","readiness"], ex:[{ s:"There is increased {{}} of AI-skilled workers.", f:"availability", ko:"AI 숙련 인력의 가용성이 높아졌다." }] },
   { word:"appealing", exams:["공무원"], pron:"어필링", pos:"adj", level:"B2", meanings:["매력적인","호소력 있는"], syn:["attractive","tempting","engaging"], ant:["unappealing"], ex:[{ s:"The idea is {{}} for several reasons.", f:"appealing", ko:"그 생각은 여러 이유로 매력적이다." }] },
   { word:"ambulance", exams:["공무원"], pron:"앰뷸런스", pos:"n", level:"B1", meanings:["구급차"], ex:[{ s:"The {{}} arrived within a few minutes.", f:"ambulance", ko:"구급차가 몇 분 안에 도착했다." }] },
@@ -679,7 +679,7 @@ window.VOCAB = [
   { word:"alchemy", pron:"앨커미", pos:"n", level:"C2", meanings:["연금술"],
     ex:[{ s:"Medieval {{}} slowly gave way to chemistry.", f:"alchemy", ko:"중세의 연금술은 서서히 화학으로 대체되었다." }] },
 
-  { word:"alert", pron:"얼러트", pos:"adj", level:"B2", meanings:["경계하는","방심하지 않는"],
+  { word:"alert", pron:"얼러트", pos:"adj", level:"B2", meanings:["경계하는","기민한"],
     syn:["watchful","vigilant","attentive"], ant:["careless"],
     ex:[{ s:"Guards must stay {{}} throughout the night.", f:"alert", ko:"경비원들은 밤새 경계를 유지해야 한다." }] },
 
@@ -731,7 +731,7 @@ window.VOCAB = [
 
   { word:"allot", pron:"얼랏", pos:"v", level:"C1", meanings:["할당하다","배정하다"],
     syn:["assign","allocate","apportion"], ant:["withhold"],
-    ex:[{ s:"Each speaker was {{}} ten minutes.", f:"allotted", ko:"각 발표자에게 10분이 배정되었다." }] },
+    ex:[{ s:"The chair will {{}} each speaker ten minutes.", f:"allot", ko:"의장은 각 발표자에게 10분을 배정할 것이다." }] },
 
   { word:"allow", pron:"얼라우", pos:"v", level:"B1", meanings:["허용하다","허락하다"],
     syn:["permit","let","authorize"], ant:["forbid"],

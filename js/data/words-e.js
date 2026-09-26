@@ -777,7 +777,7 @@ window.VOCAB_E = [
   { word:"etch", exams:["공무원"], pron:"에치", pos:"v", level:"C1", meanings:["새기다","아로새기다"], syn:["engrave","inscribe","carve"], ex:[{ s:"Messages were {{}} in cardboard and snow.", f:"etched", ko:"메시지가 판지와 눈에 새겨졌다." }] },
   { word:"evaporation", exams:["공무원"], pron:"이배퍼레이션", pos:"n", level:"B2", meanings:["증발"], ex:[{ s:"Drylands lose moisture through {{}}.", f:"evaporation", ko:"건조지는 증발을 통해 수분을 잃는다." }] },
   { word:"exhaustion", exams:["공무원"], pron:"이그조스천", pos:"n", level:"B2", meanings:["탈진","고갈"], syn:["fatigue","tiredness","weariness"], ant:["energy"], ex:[{ s:"Emotional {{}} is the core of burnout.", f:"exhaustion", ko:"정서적 탈진이 번아웃의 핵심이다." }] },
-  { word:"exposition", exams:["공무원"], pron:"엑스포지션", pos:"n", level:"C1", meanings:["박람회","전시회","설명"], syn:["exhibition","fair","display"], ex:[{ s:"The wildlife {{}} runs all weekend.", f:"exposition", ko:"그 야생동물 박람회는 주말 내내 열린다." }] },
+  { word:"exposition", exams:["공무원"], pron:"엑스포지션", pos:"n", level:"C1", meanings:["박람회","설명"], syn:["exhibition","fair","display"], ex:[{ s:"The wildlife {{}} runs all weekend.", f:"exposition", ko:"그 야생동물 박람회는 주말 내내 열린다." }] },
   { word:"exclude", exams:["공무원"], pron:"익스클루드", pos:"v", level:"B2", meanings:["제외하다","배제하다"], syn:["omit","bar","leave out"], ant:["include"], ex:[{ s:"People aim to {{}} plastic waste from daily life.", f:"exclude", ko:"사람들은 일상에서 플라스틱 쓰레기를 배제하려 한다." }] },
   { word:"embassy", exams:["공무원"], pron:"엠버시", pos:"n", level:"B2", meanings:["대사관"], ex:[{ s:"Complaints are handled by the relevant {{}}.", f:"embassy", ko:"불만은 해당 대사관이 처리한다." }] },
   { word:"energetic", exams:["공무원"], pron:"에너제틱", pos:"adj", level:"B2", meanings:["활기찬","정력적인"], syn:["lively","vigorous","dynamic"], ant:["lethargic"], ex:[{ s:"Young people are {{}} and active.", f:"energetic", ko:"젊은이들은 활기차고 활동적이다." }] },
@@ -2309,7 +2309,7 @@ Object.assign(window.GLOSS, {
   "widespread disease":"널리 퍼진 질병",
 
   /* ── 8차: erroneous ~ evaluate (35개) ───────────────── */
-  "blow up":"폭발하다",
+  "blow up":"폭발하다, 벌컥 화내다",
   "burst forth":"터져 나오다",
   "clear out":"비우다, 치우다",
   "code of conduct":"행동 규범",

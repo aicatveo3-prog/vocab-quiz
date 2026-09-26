@@ -534,7 +534,7 @@ window.VOCAB_G = [
     syn:["hothouse","glasshouse","conservatory"],
     ex:[{ s:"Tomatoes ripen weeks earlier inside the {{}}.", f:"greenhouse", ko:"토마토는 온실 안에서 몇 주 더 일찍 익는다." }] },
 
-  { word:"gregarious", pron:"그리게리어스", pos:"adj", level:"C2", meanings:["사교적인"],
+  { word:"gregarious", pron:"그리게리어스", pos:"adj", level:"C2", meanings:["사교적인","무리 지어 사는"],
     syn:["sociable","outgoing","convivial"], ant:["reclusive"],
     ex:[{ s:"His {{}} nature made him the centre of every party.", f:"gregarious", ko:"사교적인 성격 덕에 그는 모든 모임의 중심이 되었다." }] },
 

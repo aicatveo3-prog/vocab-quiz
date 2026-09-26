@@ -93,7 +93,7 @@ window.VOCAB_D = [
   { word:"demonstrator", exams:["공무원"], pron:"데먼스트레이터", pos:"n", level:"C1", meanings:["시위자"], syn:["protester","activist","rallier"], ex:[{ s:"A group of young {{}} approached the station.", f:"demonstrators", ko:"한 무리의 젊은 시위자들이 그 역에 접근했다." }] },
   { word:"depersonalization", exams:["공무원"], pron:"디퍼스널라이제이션", pos:"n", level:"C2", meanings:["비인격화","이인증"], ex:[{ s:"The third dimension of burnout is {{}}.", f:"depersonalization", ko:"번아웃의 세 번째 차원은 비인격화다." }] },
   { word:"deregulated", exams:["공무원"], pron:"디레귤레이티드", pos:"adj", level:"C1", meanings:["규제가 철폐된"], syn:["liberalized","unregulated","freed"], ant:["regulated"], ex:[{ s:"{{}} financial markets shift capital within seconds.", f:"Deregulated", ko:"규제가 풀린 금융 시장은 순식간에 자본을 이동시킨다." }] },
-  { word:"detached", exams:["공무원"], pron:"디태치드", pos:"adj", level:"C1", meanings:["초연한","무심한","분리된"], syn:["aloof","indifferent","dispassionate"], ant:["involved"], ex:[{ s:"He felt {{}} and indifferent to the outcome.", f:"detached", ko:"그는 결과에 초연하고 무심했다." }] },
+  { word:"detached", exams:["공무원"], pron:"디태치드", pos:"adj", level:"C1", meanings:["초연한","분리된"], syn:["aloof","indifferent","dispassionate"], ant:["involved"], ex:[{ s:"He felt {{}} and indifferent to the outcome.", f:"detached", ko:"그는 결과에 초연하고 무심했다." }] },
   { word:"detractor", exams:["공무원"], pron:"디트랙터", pos:"n", level:"C2", meanings:["비방하는 사람","반대자"], syn:["critic","disparager","faultfinder"], ant:["supporter"], ex:[{ s:"{{}} argue that trading water is unethical.", f:"Detractors", ko:"반대자들은 물을 거래하는 것이 비윤리적이라고 주장한다." }] },
   { word:"diligently", exams:["공무원"], pron:"딜리전틀리", pos:"adv", level:"B2", meanings:["부지런히","성실히"], syn:["industriously","assiduously","conscientiously"], ant:["lazily"], ex:[{ s:"She worked {{}} to get what she wanted.", f:"diligently", ko:"그녀는 원하는 것을 얻으려고 성실히 일했다." }] },
   { word:"discernment", exams:["공무원"], pron:"디서언먼트", pos:"n", level:"C2", meanings:["안목","분별력"], syn:["insight","judgment","perception"], ex:[{ s:"He handled the topic with good humor and {{}}.", f:"discernment", ko:"그는 그 주제를 유머와 분별력으로 다뤘다." }] },
@@ -110,7 +110,7 @@ window.VOCAB_D = [
   { word:"drought", exams:["공무원"], pron:"드라웃", pos:"n", level:"B2", meanings:["가뭄"], syn:["dry spell","water shortage","aridity"], ex:[{ s:"Flooding, {{}} and storms damage crops.", f:"drought", ko:"홍수, 가뭄, 폭풍은 농작물에 피해를 준다." }] },
   { word:"deconstruct", exams:["공무원"], pron:"디컨스트럭트", pos:"v", level:"C1", meanings:["해체하다","분석하다"], syn:["dismantle","analyze","break down"], ant:["construct"], ex:[{ s:"The essay tries to {{}} the myth of the hero.", f:"deconstruct", ko:"그 글은 영웅 신화를 해체하려 한다." }] },
   { word:"diet", exams:["공무원"], pron:"다이엇", pos:"n", level:"B1", meanings:["식단","식습관"], syn:["nutrition","regimen","food intake"], ex:[{ s:"Students behaved better regardless of their {{}}.", f:"diet", ko:"학생들은 식단과 상관없이 더 잘 행동했다." }] },
-  { word:"director", exams:["공무원"], pron:"디렉터", pos:"n", level:"B1", meanings:["관리자","책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
+  { word:"director", exams:["공무원"], pron:"디렉터", pos:"n", level:"B1", meanings:["책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
   { word:"discreetly", exams:["공무원"], pron:"디스크리틀리", pos:"adv", level:"C1", meanings:["신중하게","조심스럽게"], syn:["cautiously","carefully","tactfully"], ant:["openly"], ex:[{ s:"I suggest that you discuss this matter {{}}.", f:"discreetly", ko:"이 문제를 신중하게 논의하시길 권합니다." }] },
   { word:"dispose", exams:["공무원"], pron:"디스포즈", pos:"v", level:"B2", meanings:["처리하다","버리다"], syn:["discard","throw away","get rid of"], ant:["keep"], ex:[{ s:"You must {{}} of these products safely.", f:"dispose", ko:"이 제품들을 안전하게 처리해야 한다." }], gov:{ prep:["of"], usage:"dispose of ~ : ~을 처리하다/버리다" } },
   { word:"disposal", exams:["공무원"], pron:"디스포절", pos:"n", level:"B2", meanings:["처리","폐기"], syn:["removal","discarding","dumping"], ex:[{ s:"The notice promotes the safe {{}} of hazardous waste.", f:"disposal", ko:"그 공지는 유해 폐기물의 안전한 처리를 권장한다." }] },
@@ -426,7 +426,7 @@ window.VOCAB_D = [
     syn:["flood","torrent","onslaught"], ant:["drought"],
     ex:[{ s:"The office received a {{}} of complaints after the outage.", f:"deluge", ko:"정전 이후 사무실에 불만이 쇄도했다." }] },
 
-  { word:"demand", pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
+  { word:"demand", pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
     syn:["require","insist on","call for"], ant:["offer"],
     ex:[{ s:"The workers {{}} safer conditions and shorter hours.", f:"demand", ko:"노동자들은 더 안전한 환경과 더 짧은 노동 시간을 요구한다." }] },
 

@@ -29,12 +29,12 @@ window.VOCAB_C = [
   { word:"coherence", exams:["공무원"], pron:"코히런스", pos:"n", level:"C1", meanings:["일관성","결속"], syn:["consistency","unity","cohesion"], ant:["incoherence"], ex:[{ s:"The field seeks {{}} rather than fragmentation.", f:"coherence", ko:"그 분야는 분열보다 결속을 추구한다." }] },
   { word:"collectively", exams:["공무원"], pron:"컬렉티블리", pos:"adv", level:"B2", meanings:["집합적으로","통틀어"], syn:["jointly","together","as a whole"], ant:["individually"], ex:[{ s:"The three plays are known {{}} as the Theban plays.", f:"collectively", ko:"세 작품은 통틀어 테베 극이라 불린다." }] },
   { word:"colonial", exams:["공무원"], pron:"컬로니얼", pos:"adj", level:"B2", meanings:["식민지의"], ex:[{ s:"Slavery was an institution before the {{}} period.", f:"colonial", ko:"노예제는 식민지 시대 이전에도 하나의 제도였다." }] },
-  { word:"conception", exams:["공무원"], pron:"컨셉션", pos:"n", level:"C1", meanings:["개념","이해","구상"], syn:["notion","idea","concept"], ex:[{ s:"The common {{}} of deserts is that they are hot.", f:"conception", ko:"사막에 대한 일반적 개념은 덥다는 것이다." }] },
+  { word:"conception", exams:["공무원"], pron:"컨셉션", pos:"n", level:"C1", meanings:["개념","구상"], syn:["notion","idea","concept"], ex:[{ s:"The common {{}} of deserts is that they are hot.", f:"conception", ko:"사막에 대한 일반적 개념은 덥다는 것이다." }] },
   { word:"conjunction", exams:["공무원"], pron:"컨정션", pos:"n", level:"C1", meanings:["결합","연결"], syn:["combination","association","union"], ex:[{ s:"Privacy shapes behavior in {{}} with other practices.", f:"conjunction", ko:"사생활은 다른 관행과 결합하여 행동을 형성한다." }], gov:{ prep:["with"], usage:"in conjunction with ~ : ~와 함께/결합하여" } },
   { word:"contrary", exams:["공무원"], pron:"컨트러리", pos:"adj", level:"B2", meanings:["반대의","정반대의"], syn:["opposite","contradictory","conflicting"], ex:[{ s:"{{}} to what many believe, it is found everywhere.", f:"Contrary", ko:"많은 이들의 생각과 달리, 그것은 어디에나 있다." }], gov:{ prep:["to"], usage:"contrary to ~ : ~와는 반대로" } },
   { word:"courteously", exams:["공무원"], pron:"커티어슬리", pos:"adv", level:"C1", meanings:["정중하게","공손하게"], syn:["politely","respectfully","graciously"], ant:["rudely"], ex:[{ s:"Treat them {{}} even if you disagree.", f:"courteously", ko:"의견이 달라도 그들을 정중하게 대하라." }] },
   { word:"curb", exams:["공무원"], pron:"커브", pos:"v", level:"B2", meanings:["억제하다","제한하다"], syn:["restrain","limit","check"], ant:["encourage"], ex:[{ s:"The city tried to {{}} cruise ship tourism.", f:"curb", ko:"그 도시는 크루즈 관광을 억제하려 했다." }] },
-  { word:"curiosity", exams:["공무원"], pron:"큐리오시티", pos:"n", level:"B2", meanings:["호기심"], syn:["inquisitiveness","interest","nosiness"], ex:[{ s:"Out of {{}}, he picked up the rock.", f:"curiosity", ko:"호기심에 그는 그 돌을 집어 들었다." }] },
+  { word:"curiosity", exams:["공무원"], pron:"큐리오시티", pos:"n", level:"B2", meanings:["호기심","진기한 것"], syn:["inquisitiveness","interest","nosiness"], ex:[{ s:"Out of {{}}, he picked up the rock.", f:"curiosity", ko:"호기심에 그는 그 돌을 집어 들었다." }] },
   { word:"cure", exams:["공무원"], pron:"큐어", pos:"v", level:"B1", meanings:["치료하다","낫게 하다"], syn:["heal","remedy","treat"], ant:["worsen"], ex:[{ s:"The new drug can {{}} the disease.", f:"cure", ko:"그 신약은 그 병을 치료할 수 있다." }] },
   { word:"container", exams:["공무원"], pron:"컨테이너", pos:"n", level:"B1", meanings:["용기","그릇"], syn:["vessel","receptacle","holder"], ex:[{ s:"Choose reusable {{}} for your food.", f:"containers", ko:"음식에는 재사용 용기를 골라라." }] },
   { word:"convenient", exams:["공무원"], pron:"컨비니언트", pos:"adj", level:"B1", meanings:["편리한"], syn:["handy","suitable","accessible"], ant:["inconvenient"], ex:[{ s:"Meeting online is sometimes more {{}}.", f:"convenient", ko:"온라인 회의가 때로는 더 편리하다." }] },
@@ -50,7 +50,7 @@ window.VOCAB_C = [
   { word:"categorize", exams:["공무원"], pron:"카테고라이즈", pos:"v", level:"B2", meanings:["분류하다"], syn:["classify","sort","group"], ex:[{ s:"The system {{}} people by how they think and act.", f:"categorizes", ko:"그 체계는 사람들을 사고방식과 행동 방식으로 분류한다." }] },
   { word:"closure", exams:["공무원"], pron:"클로저", pos:"n", level:"B2", meanings:["폐쇄","종료"], syn:["shutdown","closing","termination"], ant:["opening"], ex:[{ s:"There are no anticipated road {{}} in the community.", f:"closures", ko:"지역 내에 예상되는 도로 폐쇄는 없다." }] },
   { word:"collaboration", exams:["공무원"], pron:"컬래버레이션", pos:"n", level:"B2", meanings:["협력","공동 작업"], syn:["cooperation","partnership","teamwork"], ant:["competition"], ex:[{ s:"The projects will expand research {{}} among disciplines.", f:"collaboration", ko:"그 사업들은 여러 분야 간 연구 협력을 확대할 것이다." }] },
-  { word:"collection", exams:["공무원"], pron:"컬렉션", pos:"n", level:"B1", meanings:["수집","수거","소장품"], syn:["gathering","accumulation","assortment"], ex:[{ s:"Look for a special {{}} event in your community.", f:"collection", ko:"지역에서 특별 수거 행사를 찾아보세요." }] },
+  { word:"collection", exams:["공무원"], pron:"컬렉션", pos:"n", level:"B1", meanings:["수집","소장품"], syn:["gathering","accumulation","assortment"], ex:[{ s:"Look for a special {{}} event in your community.", f:"collection", ko:"지역에서 특별 수거 행사를 찾아보세요." }] },
   { word:"consideration", exams:["공무원"], pron:"컨시더레이션", pos:"n", level:"B2", meanings:["고려","배려"], syn:["thought","reflection","attention"], ex:[{ s:"Thank you for your time and {{}}.", f:"consideration", ko:"시간과 배려에 감사드립니다." }] },
   { word:"credible", exams:["공무원"], pron:"크레더블", pos:"adj", level:"B2", meanings:["믿을 만한","신뢰할 수 있는"], syn:["believable","convincing","plausible"], ant:["incredible","implausible"], ex:[{ s:"Scientists are {{}} because they rely on evidence.", f:"credible", ko:"과학자들은 증거에 의존하므로 믿을 만하다." }] },
   { word:"citizen", exams:["공무원"], pron:"시티즌", pos:"n", level:"B1", meanings:["시민","국민"], syn:["resident","civilian","inhabitant"], ex:[{ s:"{{}} will no longer need to check local recycling rules.", f:"Citizens", ko:"시민들은 더 이상 지역 재활용 규칙을 확인할 필요가 없을 것이다." }] },
@@ -1159,7 +1159,7 @@ window.VOCAB_C = [
   /* 첫 뜻을 '동의하다'로 두면 A 세트 accede와 카드 문구가 똑같아진다 */
   { word:"concur", pron:"컨커", pos:"v", level:"C2", meanings:["의견이 일치하다","동의하다"],
     syn:["agree","assent","coincide"], ant:["dissent"],
-    ex:[{ s:"Two of the three judges {{}} with the ruling.", f:"concurred", ko:"세 판사 중 둘이 그 판결에 동의했다." }] },
+    ex:[{ s:"All three judges {{}}, so the decision is unanimous.", f:"concur", ko:"세 판사 모두 의견이 일치하므로 그 결정은 만장일치다." }] },
 
   /* ── cond · condu ──────────────────────────── */
   { word:"condemn", pron:"컨뎀", pos:"v", level:"B2", meanings:["규탄하다","유죄를 선고하다"],
@@ -1264,7 +1264,7 @@ window.VOCAB_C = [
     syn:["jam","crowding","blockage"], ant:["flow"],
     ex:[{ s:"A new tunnel eased the worst of the {{}}.", f:"congestion", ko:"새 터널이 최악의 정체를 완화했다." }] },
 
-  { word:"congress", pron:"캉그레스", pos:"n", level:"B1", meanings:["의회","국회"],
+  { word:"congress", pron:"캉그레스", pos:"n", level:"B1", meanings:["의회","회의"],
     syn:["parliament","assembly","legislature"],
     ex:[{ s:"The bill passed {{}} by a single vote.", f:"congress", ko:"그 법안은 단 한 표 차이로 의회를 통과했다." }] },
 

@@ -21,7 +21,7 @@
  * 진행 상황: 2415/2415 — 전량 완성.
  */
 Object.assign(window.GLOSS, {
-  "abdomen":"배, 복부",
+  "abdomen":"복부",
   "abhor":"혐오하다, 증오하다",
   "abide":"지키다, 준수하다",
   "ability":"능력",
@@ -891,7 +891,7 @@ Object.assign(window.GLOSS, {
   "intimidation":"협박, 위협",
   "intruder":"침입자",
   "invader":"침략자",
-  "invalidate":"무효화하다",
+  "invalidate":"무효로 만들다, 틀렸음을 입증하다",
   "invent":"발명하다, 고안하다",
   "invention":"발명, 창작",
   "inventiveness":"독창성, 발명력",
@@ -1822,7 +1822,7 @@ Object.assign(window.GLOSS, {
   "warmth":"따뜻함; 다정함",
   "waste no time in":"즉시 ~하다",
   "watch out":"조심하다",
-  "watchful":"경계하는, 방심하지 않는",
+  "watchful":"주의 깊게 지켜보는",
   "water-dwelling":"수생의",
   "waterway":"수로, 운하",
   "wealth":"부; 재산",
