@@ -54,6 +54,7 @@ window.VOCAB_G = [
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
   { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
   { word:"grateful", exams:["공무원"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
+  { word:"gossip", exams:["공무원"], pron:"가십", pos:"v", level:"B2", meanings:["험담하다","잡담하다"], ex:[{ s:"They love to {{}} about their neighbors.", f:"gossip", ko:"그들은 이웃에 대해 험담하기를 좋아한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */

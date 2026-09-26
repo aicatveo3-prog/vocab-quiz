@@ -104,6 +104,8 @@ window.VOCAB_S = [
   { word:"start over", exams:["공무원"], pron:"스타트 오버", pos:"phr", level:"B1", meanings:["처음부터 다시 하다"] },
   { word:"surroundings", exams:["공무원"], pron:"서라운딩즈", pos:"n", level:"B2", meanings:["주위 환경","주변"], syn:["environment","setting","milieu"], ex:[{ s:"The app streams live video of the user's {{}}.", f:"surroundings", ko:"그 앱은 사용자 주변의 실시간 영상을 전송한다." }] },
   { word:"sooner or later", exams:["공무원"], pron:"수너 오어 레이터", pos:"phr", level:"B1", meanings:["조만간","머지않아"], syn:["eventually","in the end","in time"] },
+  { word:"satisfaction", exams:["공무원"], pron:"새티스팩션", pos:"n", level:"B1", meanings:["만족","흡족함"], syn:["gratification","contentment","fulfillment"], ant:["dissatisfaction"], ex:[{ s:"Customer {{}} is our top priority.", f:"satisfaction", ko:"고객 만족이 우리의 최우선 과제다." }] },
+  { word:"speed up", exams:["공무원"], pron:"스피드 업", pos:"phr", level:"B1", meanings:["속도를 높이다","가속하다"], syn:["accelerate","hasten","quicken"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

@@ -120,6 +120,7 @@ window.VOCAB_P = [
   { word:"paradoxically", exams:["공무원"], pron:"패러닥시컬리", pos:"adv", level:"C1", meanings:["역설적으로"], ex:[{ s:"{{}}, trying hard to fall asleep can keep you awake.", f:"Paradoxically", ko:"역설적으로, 잠들려고 애쓰면 오히려 잠이 달아날 수 있다." }] },
   { word:"put up with", exams:["공무원"], pron:"풋 업 위드", pos:"phr", level:"B2", meanings:["참고 견디다","감수하다"], syn:["endure","tolerate","bear"] },
   { word:"proprietary", exams:["공무원"], pron:"프러프라이어테리", pos:"adj", level:"C1", meanings:["독점의","소유주의"], syn:["exclusive","monopolistic","patented"], ex:[{ s:"Users need the company's own {{}} glasses to use the service.", f:"proprietary", ko:"이 서비스를 쓰려면 그 회사의 독점 안경이 필요하다." }] },
+  { word:"pick up", exams:["공무원"], pron:"픽 업", pos:"phr", level:"B1", meanings:["집어 들다","습득하다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

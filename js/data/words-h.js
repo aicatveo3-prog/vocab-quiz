@@ -29,6 +29,7 @@ window.VOCAB_H = [
   { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   { word:"have no alternative but to", exams:["공무원"], pron:"해브 노 얼터너티브 벗 투", pos:"phr", level:"B2", meanings:["~할 수밖에 없다"], syn:["have no choice but to","cannot help but","be compelled to do"] },
+  { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -594,6 +595,7 @@ Object.assign(window.GLOSS, {
   "experiential": "경험에 근거한",
   "fastener":"잠금장치",
   "fling":"세게 던지다",
+  "formerly": "이전에",
   "foyer":"현관 로비",
   "frenetic":"열광적인, 광란의",
   "future":"미래, 앞날",
@@ -613,6 +615,7 @@ Object.assign(window.GLOSS, {
   "hub":"중심지, 허브",
   "human race":"인류(전체)",
   "humbleness":"겸허",
+  "in the past": "과거에",
   "incompletely":"불완전하게",
   "indignity":"모욕",
   "inflexible":"융통성 없는",
@@ -686,6 +689,7 @@ Object.assign(window.GLOSS, {
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
   "tradition":"전통",
+  "traditionally": "전통적으로",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
   "unassuming":"겸손한",

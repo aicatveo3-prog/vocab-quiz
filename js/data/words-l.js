@@ -47,6 +47,7 @@ window.VOCAB_L = [
   { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
+  { word:"liveliness", exams:["공무원"], pron:"라이블리니스", pos:"n", level:"B2", meanings:["활기","생기"], syn:["vitality","vivacity","energy"], ex:[{ s:"The {{}} of the night market attracts many tourists.", f:"liveliness", ko:"야시장의 활기가 많은 관광객을 끌어들인다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -906,6 +907,8 @@ Object.assign(window.GLOSS, {
   "verbatim": "한마디도 안 빼고",
   "verdant": "푸른 풀로 덮인",
   "view": "경치, 전망",
+  "vitality": "활력",
+  "vivacity": "명랑함, 쾌활함",
   "vociferously": "소리 높여, 격렬하게",
   "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",

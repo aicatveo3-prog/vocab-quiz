@@ -56,6 +56,7 @@ window.VOCAB_R = [
   { word:"recognizable", exams:["공무원"], pron:"레커그나이저블", pos:"adj", level:"B2", meanings:["알아볼 수 있는","쉽게 식별되는"], syn:["identifiable","distinguishable","familiar"], ant:["unrecognizable"], ex:[{ s:"After twenty years, the town was hardly {{}} to him.", f:"recognizable", ko:"20년이 지나자 그 마을은 그가 거의 알아볼 수 없을 정도였다." }] },
   { word:"resign", exams:["공무원"], pron:"리자인", pos:"v", level:"B2", meanings:["사임하다","체념하다"], syn:["step down","quit","stand down"], ex:[{ s:"Facing heavy criticism, the minister decided to {{}}.", f:"resign", ko:"거센 비판에 직면하자 장관은 사임하기로 했다." }] },
   { word:"roll up one's sleeves", exams:["공무원"], pron:"롤 업 원스 슬리브즈", pos:"phr", level:"C1", meanings:["소매를 걷어붙이다","본격적으로 일에 착수하다"] },
+  { word:"restriction", exams:["공무원"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.

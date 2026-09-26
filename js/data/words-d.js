@@ -134,6 +134,7 @@ window.VOCAB_D = [
   { word:"descent", exams:["공무원"], pron:"디센트", pos:"n", level:"C1", meanings:["하강","혈통"], ex:[{ s:"The plane began its {{}} toward the airport.", f:"descent", ko:"비행기는 공항을 향해 하강을 시작했다." }] },
   { word:"dissimilar", exams:["공무원"], pron:"디시밀러", pos:"adj", level:"C1", meanings:["같지 않은","다른"], syn:["different","unlike","distinct"], ant:["similar"], ex:[{ s:"The two cars look {{}} but share the same engine.", f:"dissimilar", ko:"두 차는 서로 달라 보이지만 같은 엔진을 쓴다." }] },
   { word:"don", exams:["공무원"], pron:"단", pos:"v", level:"C2", meanings:["입다","착용하다"], syn:["put on","wear","dress in"], ant:["take off"], ex:[{ s:"Before each show, the actors {{}} old-fashioned costumes.", f:"don", ko:"공연 전마다 배우들은 옛날 의상을 입는다." }] },
+  { word:"digitalization", exams:["공무원"], pron:"디지털리제이션", pos:"n", level:"C1", meanings:["디지털화"], ex:[{ s:"The {{}} of public records made them easier to search.", f:"digitalization", ko:"공공 기록이 디지털화되면서 검색이 쉬워졌다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1880,7 +1881,6 @@ Object.assign(window.GLOSS, {
      같아지므로 rebut 은 '맞받아 반론하다' 쪽으로 구별한다 */
   "rebut":"반론하다, 맞받아치다",
   "repugnant":"혐오스러운, 아주 불쾌한",
-  "satisfaction":"만족, 충족",
   "send off":"발송하다, 보내다",
   "share out":"나눠 주다, 분배하다",
   "sidetrack":"곁길로 빠지게 하다",
