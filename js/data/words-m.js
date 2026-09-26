@@ -76,6 +76,7 @@ window.VOCAB_M = [
   { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
   { word:"markedly", exams:["공무원"], pron:"마키들리", pos:"adv", level:"C1", meanings:["현저히","눈에 띄게"], syn:["noticeably","considerably","significantly"], ant:["marginally","slightly"], ex:[{ s:"The two reports differ so {{}} that they seem to describe different events.", f:"markedly", ko:"두 보고서는 너무나 현저히 달라서 서로 다른 사건을 다룬 것처럼 보인다." }] },
   { word:"municipality", exams:["공무원"], pron:"뮤니서팰러티", pos:"n", level:"C1", meanings:["지방 자치 단체","시 당국"], ex:[{ s:"Each {{}} runs its own recycling program.", f:"municipality", ko:"지방 자치 단체마다 자체 재활용 프로그램을 운영한다." }] },
+  { word:"manageable", exams:["공무원"], pron:"매니저블", pos:"adj", level:"B2", meanings:["감당할 수 있는","다루기 쉬운"], syn:["controllable","feasible","tolerable"], ant:["unmanageable"], ex:[{ s:"Break the big task into {{}} steps.", f:"manageable", ko:"큰 일을 감당할 만한 단계로 나누어라." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1351,6 +1352,7 @@ Object.assign(window.GLOSS, {
   "conjurer": "요술쟁이",
   "contemplation": "깊이 헤아림",
   "contrivance": "고안된 장치",
+  "controllable": "통제할 수 있는",
   "controlling": "지배하는, 통제하는",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",

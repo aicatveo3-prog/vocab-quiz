@@ -67,6 +67,7 @@ window.VOCAB = [
   { word:"authorize", exams:["공무원"], pron:"오서라이즈", pos:"v", level:"B2", meanings:["허가하다","권한을 주다"], syn:["approve","permit","allow"], ant:["prohibit"], ex:[{ s:"Only the manager can {{}} this payment.", f:"authorize", ko:"관리자만 이 지불을 허가할 수 있다." }] },
   { word:"apocalyptic", exams:["공무원"], pron:"어파컬립틱", pos:"adj", level:"C2", meanings:["종말론적인","대재앙의"], syn:["catastrophic","cataclysmic","doomsday"], ex:[{ s:"Early talks about AI often ended with {{}} warnings.", f:"apocalyptic", ko:"AI에 관한 초기 논의는 흔히 종말론적인 경고로 끝났다." }] },
   { word:"avoidance", exams:["공무원"], pron:"어보이던스", pos:"n", level:"C1", meanings:["회피","기피"], syn:["evasion","dodging","escape"], ex:[{ s:"{{}} of the problem only makes anxiety worse.", f:"Avoidance", ko:"문제를 회피하면 불안이 더 심해질 뿐이다." }] },
+  { word:"advanced", exams:["공무원"], pron:"어드밴스트", pos:"adj", level:"B1", meanings:["고급의","선진의"], syn:["sophisticated","developed","cutting-edge"], ant:["elementary","rudimentary"], ex:[{ s:"Only students who pass the basic level may take {{}} classes.", f:"advanced", ko:"기초 단계를 통과한 학생만 고급 수업을 들을 수 있다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
@@ -1719,6 +1720,7 @@ window.GLOSS = {
   "comfort":"편안함, 위안",
   "confident":"자신 있는",
   "criticism":"비판, 비평",
+  "cutting-edge": "최첨단의",
   "deactivate":"비활성화하다",
   "decelerate":"감속하다",
   "delight":"기쁨, 즐거움",

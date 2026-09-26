@@ -2124,7 +2124,6 @@ Object.assign(window.GLOSS, {
   "wasteful":"낭비하는, 헤픈",
 
   /* ── 2차: effortless ~ elevated (37개) ───────────────── */
-  "advanced":"고급의, 진전된",
   "bad weather":"나쁜 날씨",
   "basic":"기본적인",
   "choose":"고르다, 선택하다",

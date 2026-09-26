@@ -1551,7 +1551,6 @@ Object.assign(window.GLOSS, {
   "partiality": "편파, 치우침",
   "pistol": "권총",
   "refreshed": "상쾌한, 기운을 되찾은",
-  "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
   "side": "측면, 면",
   "system": "체계, 제도",

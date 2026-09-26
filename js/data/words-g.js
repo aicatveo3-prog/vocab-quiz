@@ -53,6 +53,7 @@ window.VOCAB_G = [
   { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
   { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
+  { word:"grateful", exams:["공무원"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -756,6 +757,7 @@ Object.assign(window.GLOSS, {
   "imposing":"위풍당당한",
   "in view of":"~에 비추어",
   "incremental":"조금씩 늘어나는",
+  "indebted": "신세를 진, 빚진",
   "indebtedness":"은혜를 입음",
   "ingratitude":"배은망덕",
   "inherited":"물려받은",

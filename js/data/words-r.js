@@ -51,6 +51,8 @@ window.VOCAB_R = [
   { word:"reduction", exams:["공무원"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
   { word:"repetition", exams:["공무원"], pron:"레퍼티션", pos:"n", level:"B2", meanings:["반복","되풀이"], syn:["recurrence","duplication","reiteration"], ex:[{ s:"Children learn new words through {{}}, hearing them again and again.", f:"repetition", ko:"아이들은 새 단어를 몇 번이고 들으며 반복을 통해 익힌다." }] },
   { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
+  { word:"rescue", exams:["공무원"], pron:"레스큐", pos:"v", level:"B1", meanings:["구조하다","구조"], syn:["save","salvage","liberate"], ex:[{ s:"Firefighters managed to {{}} the family from the flames.", f:"rescue", ko:"소방관들은 불길 속에서 그 가족을 가까스로 구조했다." }] },
+  { word:"resort to", exams:["공무원"], pron:"리조트 투", pos:"phr", level:"C1", meanings:["~에 의지하다","~의 수단에 호소하다"], syn:["fall back on","turn to","rely on"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -1698,7 +1700,6 @@ Object.assign(window.GLOSS, {
   "broken remains of buildings": "부서져 남은 건물",
   "build again": "다시 세우다",
   "built-in reaction": "몸에 박힌 반응",
-  "by chance": "우연히",
   "call back an order": "명령을 거두어들이다",
   "call in a faulty product": "흠 있는 물건을 거둬들이다",
   "call to account": "따져 묻다",
