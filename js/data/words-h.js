@@ -155,7 +155,7 @@ window.VOCAB_H = [
     syn:["crop","what is gathered in","reaping"],
     ex:[{ s:"This year's wheat {{}} was the largest on record.", f:"harvest", ko:"올해 밀 수확은 기록상 최대였다." }] },
 
-  { word:"hatch", pron:"해치", pos:"v", level:"B2", meanings:["부화하다"],
+  { word:"hatch", exams:["공무원"], pron:"해치", pos:"v", level:"B2", meanings:["부화하다"],
     syn:["incubate","emerge","breed"],
     ex:[{ s:"The eggs will {{}} in about three weeks.", f:"hatch", ko:"알은 약 3주 뒤에 부화할 것이다." }] },
 

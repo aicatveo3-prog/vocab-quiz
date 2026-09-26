@@ -1980,7 +1980,7 @@ window.VOCAB_P = [
     ex:[{ s:"We met two {{}} buyers.", f:"prospective", ko:"우리는 예비 구매자 둘을 만났다." }] },
 
   /* 승격 162 — 사전 표현과 글자까지 같다(adversity 반의어, A). */
-  { word:"prosperity", pron:"프라스페러티", pos:"n", level:"B2", meanings:["번영","번창"],
+  { word:"prosperity", exams:["공무원"], pron:"프라스페러티", pos:"n", level:"B2", meanings:["번영","번창"],
     syn:["good fortune","thriving state","wealth and success"], ant:["adversity"],
     ex:[{ s:"The town enjoyed years of {{}}.", f:"prosperity", ko:"그 고을은 여러 해 번영을 누렸다." }] },
 
@@ -2002,7 +2002,7 @@ window.VOCAB_P = [
     syn:["destiny","hand of heaven","care from above"],
     ex:[{ s:"They called it {{}}.", f:"providence", ko:"그들은 그것을 섭리라 불렀다." }] },
 
-  { word:"province", pron:"프라빈스", pos:"n", level:"B2", meanings:["지방","주"],
+  { word:"province", exams:["공무원"], pron:"프라빈스", pos:"n", level:"B2", meanings:["지방","주"],
     syn:["large district","part of a country","region under one rule"],
     ex:[{ s:"She grew up in a northern {{}}.", f:"province", ko:"그녀는 북쪽 지방에서 자랐다." }] },
 
@@ -2109,7 +2109,7 @@ window.VOCAB_P = [
     ex:[{ s:"Check the {{}} in the last line.", f:"punctuation", ko:"마지막 줄의 구두점을 확인해라." }] },
 
   /* 승격 171 — 사전 표현과 글자까지 같다(condone 반의어, C). */
-  { word:"punish", pron:"퍼니시", pos:"v", level:"B1", meanings:["처벌하다"],
+  { word:"punish", exams:["공무원"], pron:"퍼니시", pos:"v", level:"B1", meanings:["처벌하다"],
     syn:["make pay for a wrong","give a penalty to","deal out discipline"], ant:["condone"],
     ex:[{ s:"The school may {{}} cheating.", f:"punish", ko:"학교는 부정행위를 처벌할 수 있다." }] },
 
@@ -2141,7 +2141,7 @@ window.VOCAB_P = [
     ex:[{ s:"What is the {{}} of this form?", f:"purpose", ko:"이 서식의 목적은 무엇인가요?" }] },
 
   /* 원본은 '지갑, 핸드백' 이었다. 외래어를 걷어 '손가방' 으로 적었다. */
-  { word:"purse", pron:"퍼스", pos:"n", level:"B1", meanings:["지갑","손가방"],
+  { word:"purse", exams:["공무원"], pron:"퍼스", pos:"n", level:"B1", meanings:["지갑","손가방"],
     syn:["small money bag","bag for coins","hand-held bag"],
     ex:[{ s:"She left her {{}} on the seat.", f:"purse", ko:"그녀는 지갑을 자리에 두고 갔다." }] },
 

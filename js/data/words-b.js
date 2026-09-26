@@ -727,7 +727,7 @@ window.VOCAB_B = [
   { word:"break out", pron:"브레이크 아웃", pos:"phr", level:"B2", meanings:["(전쟁이) 발발하다","(화재가) 발생하다"],
     syn:["erupt","flare up","begin suddenly"], ant:["subside"] },
 
-  { word:"breakdown", pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
+  { word:"breakdown", exams:["공무원"], pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
     syn:["malfunction","collapse","failure"],
     ex:[{ s:"A {{}} on the highway delayed us for three hours.", f:"breakdown", ko:"고속도로에서의 고장으로 우리는 세 시간 지체되었다." }] },
 
@@ -896,7 +896,7 @@ window.VOCAB_B = [
     syn:["notice board","message board","pinboard"],
     ex:[{ s:"The new schedule was posted on the {{}}.", f:"bulletin board", ko:"새 일정표가 게시판에 붙었다." }] },
 
-  { word:"bully", pron:"불리", pos:"v", level:"B2", meanings:["괴롭히다"],
+  { word:"bully", exams:["공무원"], pron:"불리", pos:"v", level:"B2", meanings:["괴롭히다"],
     syn:["intimidate","harass","pick on"], ant:["protect"],
     ex:[{ s:"Teachers must not let older students {{}} the younger ones.", f:"bully", ko:"교사들은 상급생이 하급생을 괴롭히도록 놔두어서는 안 된다." }] },
 

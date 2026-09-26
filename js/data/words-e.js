@@ -1550,7 +1550,7 @@ window.VOCAB_E = [
     syn:["afterlife","hereafter","endless time"],
     ex:[{ s:"The wait felt like an {{}}.", f:"eternity", ko:"그 기다림은 영원처럼 느껴졌다." }] },
 
-  { word:"ethical", pron:"에시컬", pos:"adj", level:"B2", meanings:["윤리적인","도덕적인"],
+  { word:"ethical", exams:["공무원"], pron:"에시컬", pos:"adj", level:"B2", meanings:["윤리적인","도덕적인"],
     syn:["moral","principled","upright"], ant:["unethical"],
     ex:[{ s:"The board raised {{}} objections to the plan.", f:"ethical", ko:"이사회는 그 계획에 윤리적인 이의를 제기했다." }] },
 
@@ -1842,7 +1842,7 @@ window.VOCAB_E = [
     syn:["anticipate","foresee","predict"],
     ex:[{ s:"We did not {{}} so many people to show up.", f:"expect", ko:"우리는 그렇게 많은 사람이 올 줄은 기대하지 않았다." }] },
 
-  { word:"expectancy", pron:"익스펙턴시", pos:"n", level:"C1", meanings:["기대","예상"],
+  { word:"expectancy", exams:["공무원"], pron:"익스펙턴시", pos:"n", level:"C1", meanings:["기대","예상"],
     syn:["expectation","anticipation","likelihood"],
     ex:[{ s:"A hush of {{}} fell over the hall.", f:"expectancy", ko:"기대의 정적이 강당에 내렸다." }] },
 
@@ -1883,7 +1883,7 @@ window.VOCAB_E = [
     syn:["know-how","special skill","technical knowledge"],
     ex:[{ s:"Restoring the clock needs real {{}}.", f:"expertise", ko:"그 시계를 복원하려면 진짜 전문 지식이 필요하다." }] },
 
-  { word:"expire", pron:"익스파이어", pos:"v", level:"C1", meanings:["만료되다","기한이 끝나다"],
+  { word:"expire", exams:["공무원"], pron:"익스파이어", pos:"v", level:"C1", meanings:["만료되다","기한이 끝나다"],
     syn:["run out","lapse","come to an end"],
     ex:[{ s:"The permit will {{}} at the end of the month.", f:"expire", ko:"그 허가는 이달 말에 만료된다." }] },
 
@@ -1969,7 +1969,7 @@ window.VOCAB_E = [
     syn:["lengthen","prolong","stretch out"], ant:["curtail"],
     ex:[{ s:"The city may {{}} the bus route past the mill.", f:"extend", ko:"시는 버스 노선을 제분소 너머로 연장할 수도 있다." }] },
 
-  { word:"extended", pron:"익스텐디드", pos:"adj", level:"B2", meanings:["연장된","늘어난"],
+  { word:"extended", exams:["공무원"], pron:"익스텐디드", pos:"adj", level:"B2", meanings:["연장된","늘어난"],
     syn:["lengthened","prolonged","drawn-out"],
     ex:[{ s:"They asked for an {{}} deadline.", f:"extended", ko:"그들은 연장된 기한을 요청했다." }] },
 

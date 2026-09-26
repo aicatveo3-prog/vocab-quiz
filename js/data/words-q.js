@@ -97,7 +97,7 @@ window.VOCAB_Q = [
     ex:[{ s:"His {{}} for truth took years.", f:"quest", ko:"진리를 향한 그의 탐구는 여러 해가 걸렸다." }] },
 
   /* 승격 ⑧ — 사전은 '설문지' 한 갈래였고 참조가 없어 '질문서' 를 붙였다. */
-  { word:"questionnaire", pron:"퀘스처네어", pos:"n", level:"B2", meanings:["설문지","질문서"],
+  { word:"questionnaire", exams:["공무원"], pron:"퀘스처네어", pos:"n", level:"B2", meanings:["설문지","질문서"],
     syn:["sheet of questions","survey form","list of queries"],
     ex:[{ s:"Please fill in the {{}}.", f:"questionnaire", ko:"설문지를 작성해 주세요." }] },
 

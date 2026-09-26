@@ -424,7 +424,7 @@ window.VOCAB_V = [
 
   /* outlook(전망, 관점)·perspective(관점, 시각)·standpoint(관점, 입장)·
      point of view(관점, 견해) 넷과 맞물려 배제된다. */
-  { word:"viewpoint", pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"viewpoint", exams:["공무원"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["outlook","perspective","standpoint"],
     ex:[{ s:"From her {{}} the plan was sound.", f:"viewpoint", ko:"그녀의 관점에서 그 계획은 타당했다." }] },
 

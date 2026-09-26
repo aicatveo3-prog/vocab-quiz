@@ -84,7 +84,7 @@ window.VOCAB_J = [
   /* ★ syn 의 "scrap" 을 "rubbish" 로 바꿨다. scrap 은 S 세트에서 동사
      '폐기하다, 버리다' 로 선다 — 참조 셋 중 call off·do away with 가 동사이고
      이 자리만 명사였다. 다수 쪽에 맞추고 이 한 곳을 명사 낱말로 갈았다. */
-  { word:"junk", pron:"정크", pos:"n", level:"B2", meanings:["폐물","고물"],
+  { word:"junk", exams:["공무원"], pron:"정크", pos:"n", level:"B2", meanings:["폐물","고물"],
     syn:["rubbish","odds and ends","castoffs"],
     ex:[{ s:"The garage was piled high with old {{}}.", f:"junk", ko:"그 차고는 낡은 폐물이 높이 쌓여 있었다." }] },
 

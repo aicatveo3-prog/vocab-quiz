@@ -802,7 +802,7 @@ window.VOCAB_F = [
     syn:["fabrication","made-up story","invented tale"], ant:["fact"],
     ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
 
-  { word:"fierce", pron:"피어스", pos:"adj", level:"B2", meanings:["사나운","흉포한"],
+  { word:"fierce", exams:["공무원"], pron:"피어스", pos:"adj", level:"B2", meanings:["사나운","흉포한"],
     syn:["ferocious","savage","violent"], ant:["gentle"],
     ex:[{ s:"A {{}} wind tore the canvas from its frame.", f:"fierce", ko:"사나운 바람이 천을 틀에서 찢어 갔다." }] },
 
@@ -830,7 +830,7 @@ window.VOCAB_F = [
     syn:["packing material","padding","stuffing"],
     ex:[{ s:"The gap around the pipe was closed with a soft {{}}.", f:"filler", ko:"관 주위의 틈은 부드러운 충전재로 막았다." }] },
 
-  { word:"filter", pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
+  { word:"filter", exams:["공무원"], pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
     syn:["purify","sift","screen out"],
     ex:[{ s:"Reeds help {{}} the water before it reaches the pond.", f:"filter", ko:"갈대는 물이 못에 이르기 전에 여과하는 것을 돕는다." }] },
 
@@ -1313,7 +1313,7 @@ window.VOCAB_F = [
     syn:["impostor","swindler","deception"],
     ex:[{ s:"The investment turned out to be an outright {{}}.", f:"fraud", ko:"그 투자는 완전한 사기로 드러났다." }] },
 
-  { word:"free of charge", pron:"프리 오브 차지", pos:"phr", level:"B2", meanings:["무료로"],
+  { word:"free of charge", exams:["공무원"], pron:"프리 오브 차지", pos:"phr", level:"B2", meanings:["무료로"],
     syn:["at no cost","without payment","for nothing"] },
 
   { word:"free will", pron:"프리 윌", pos:"n", level:"C1", meanings:["자유 의지"],

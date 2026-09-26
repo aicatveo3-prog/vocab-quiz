@@ -447,7 +447,7 @@ window.VOCAB_G = [
     ex:[{ s:"Recovery was slow but {{}} over several months.", f:"gradual", ko:"회복은 느렸지만 여러 달에 걸쳐 점진적이었다." }] },
 
   /* gradual 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 오지 않는다. */
-  { word:"graduate", pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
+  { word:"graduate", exams:["공무원"], pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
     syn:["finish school","complete studies","earn a degree"],
     ex:[{ s:"She hopes to {{}} with honours next spring.", f:"graduate", ko:"그녀는 내년 봄에 우등으로 졸업하기를 바란다." }] },
 

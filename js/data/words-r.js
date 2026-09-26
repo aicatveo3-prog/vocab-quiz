@@ -583,7 +583,7 @@ window.VOCAB_R = [
 
   /* 둘째 갈래를 '유감스러워하다' 로 다듬었다 — '유감으로 여기다' 로 두면 바로 위
      regard(여기다) 와 글자가 겹친다. */
-  { word:"regret", pron:"리그렛", pos:"v", level:"B1", meanings:["후회하다","유감스러워하다"],
+  { word:"regret", exams:["공무원"], pron:"리그렛", pos:"v", level:"B1", meanings:["후회하다","유감스러워하다"],
     syn:["be sorry for","wish one had not","rue a choice"],
     ex:[{ s:"You will {{}} that later.", f:"regret", ko:"너는 나중에 그것을 후회할 것이다." }] },
 
@@ -730,7 +730,7 @@ window.VOCAB_R = [
 
   /* 승격 63 — 사전의 쌍반점만 쉼표로 갈랐다(alleviate, A). 원본의 괄호
      "(불쾌함 등을)" 를 걷었다. */
-  { word:"relieve", pron:"릴리브", pos:"v", level:"B2", meanings:["완화하다","덜어 주다"],
+  { word:"relieve", exams:["공무원"], pron:"릴리브", pos:"v", level:"B2", meanings:["완화하다","덜어 주다"],
     syn:["alleviate","ease a pain","take a load off"],
     ex:[{ s:"This will {{}} the ache.", f:"relieve", ko:"이것이 그 통증을 완화할 것이다." }] },
 
@@ -1280,7 +1280,7 @@ window.VOCAB_R = [
     ex:[{ s:"He will {{}} next spring.", f:"retire", ko:"그는 다음 봄에 퇴직할 것이다." }] },
 
   /* 승격 117 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"retirement", pron:"리타이어먼트", pos:"n", level:"B1", meanings:["은퇴","퇴직"],
+  { word:"retirement", exams:["공무원"], pron:"리타이어먼트", pos:"n", level:"B1", meanings:["은퇴","퇴직"],
     syn:["leaving work for good","years after one stops working","end of working life"],
     ex:[{ s:"She looks forward to {{}}.", f:"retirement", ko:"그녀는 은퇴를 기다린다." }] },
 

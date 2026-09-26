@@ -83,7 +83,7 @@ window.VOCAB_C = [
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
     ex:[{ s:"The flood was the worst {{}} in the region's history.", f:"calamity", ko:"그 홍수는 그 지역 역사상 최악의 재난이었다." }] },
 
-  { word:"calculate", pron:"캘큘레이트", pos:"v", level:"B1", meanings:["계산하다","산출하다"],
+  { word:"calculate", exams:["공무원"], pron:"캘큘레이트", pos:"v", level:"B1", meanings:["계산하다","산출하다"],
     syn:["compute","reckon","estimate"], ant:["guess"],
     ex:[{ s:"We need to {{}} the total cost before ordering.", f:"calculate", ko:"주문하기 전에 총비용을 계산해야 한다." }] },
 
@@ -111,7 +111,7 @@ window.VOCAB_C = [
     syn:["disguise","concealment","cover"], ant:["exposure"],
     ex:[{ s:"The insect's {{}} makes it look like a dead leaf.", f:"camouflage", ko:"그 곤충의 위장은 자신을 마른 잎처럼 보이게 한다." }] },
 
-  { word:"canal", pron:"커낼", pos:"n", level:"B2", meanings:["운하","수로"],
+  { word:"canal", exams:["공무원"], pron:"커낼", pos:"n", level:"B2", meanings:["운하","수로"],
     syn:["waterway","channel","duct"],
     ex:[{ s:"Goods once moved through the city by {{}}.", f:"canal", ko:"한때 물자는 운하를 통해 도시를 지나갔다." }] },
 
@@ -136,7 +136,7 @@ window.VOCAB_C = [
     syn:["ability","competence","skill"], ant:["inability"],
     ex:[{ s:"The team lacks the {{}} to finish on time.", f:"capability", ko:"그 팀은 제때 끝낼 역량이 없다." }] },
 
-  { word:"capable", pron:"케이퍼블", pos:"adj", level:"B1", meanings:["~을 할 수 있는","유능한"],
+  { word:"capable", exams:["공무원"], pron:"케이퍼블", pos:"adj", level:"B1", meanings:["~을 할 수 있는","유능한"],
     syn:["able","competent","skilled"], ant:["incapable"],
     ex:[{ s:"She is {{}} of solving much harder problems.", f:"capable", ko:"그녀는 훨씬 더 어려운 문제도 풀 수 있다." }],
     gov:{ prep:["of"], pat:"capable {{}} solving it alone", usage:"be capable of + -ing : ~할 수 있다" } },
@@ -171,7 +171,7 @@ window.VOCAB_C = [
     syn:["starch","sugar","carb"],
     ex:[{ s:"Rice is a major source of {{}} in many diets.", f:"carbohydrate", ko:"쌀은 많은 식단에서 탄수화물의 주요 공급원이다." }] },
 
-  { word:"carbon", pron:"카본", pos:"n", level:"B1", meanings:["탄소"],
+  { word:"carbon", exams:["공무원"], pron:"카본", pos:"n", level:"B1", meanings:["탄소"],
     ex:[{ s:"Burning coal releases {{}} into the air.", f:"carbon", ko:"석탄을 태우면 탄소가 공기 중으로 방출된다." }] },
 
   { word:"cardiac", pron:"카디액", pos:"adj", level:"C1", meanings:["심장의"],
@@ -465,7 +465,7 @@ window.VOCAB_C = [
     syn:["cook","caterer","culinarian"],
     ex:[{ s:"The {{}} refused to change a single item on the menu.", f:"chef", ko:"주방장은 메뉴의 어떤 항목도 바꾸기를 거부했다." }] },
 
-  { word:"chemical", pron:"케미컬", pos:"n", level:"B1", meanings:["화학 물질","화학의"],
+  { word:"chemical", exams:["공무원"], pron:"케미컬", pos:"n", level:"B1", meanings:["화학 물질","화학의"],
     syn:["substance","compound","agent"],
     ex:[{ s:"The factory dumped a toxic {{}} into the river.", f:"chemical", ko:"그 공장은 유독 화학 물질을 강에 버렸다." }] },
 
@@ -1018,7 +1018,7 @@ window.VOCAB_C = [
     ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
     gov:{ prep:["about","of","to"], pat:"complain {{}} the noise", usage:"complain about ~ : ~에 대해 불평하다" } },
 
-  { word:"complement", pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
+  { word:"complement", exams:["공무원"], pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
     syn:["addition","supplement","counterpart"],
     ex:[{ s:"The wine is a perfect {{}} to the fish.", f:"complement", ko:"그 와인은 생선과 완벽하게 어울리는 보완물이다." }] },
 
@@ -1430,7 +1430,7 @@ window.VOCAB_C = [
     syn:["refer","ask","confer"],
     ex:[{ s:"You should {{}} a lawyer before signing.", f:"consult", ko:"서명하기 전에 변호사와 상담해야 한다." }] },
 
-  { word:"consume", pron:"컨슘", pos:"v", level:"B1", meanings:["소비하다","먹다"],
+  { word:"consume", exams:["공무원"], pron:"컨슘", pos:"v", level:"B1", meanings:["소비하다","먹다"],
     syn:["use","expend","devour"], ant:["produce"],
     ex:[{ s:"These lamps {{}} very little power.", f:"consume", ko:"이 램프들은 전력을 거의 쓰지 않는다." }] },
 
@@ -1463,7 +1463,7 @@ window.VOCAB_C = [
     syn:["ponder","consider","muse"],
     ex:[{ s:"He sat by the window and began to {{}} his options.", f:"contemplate", ko:"그는 창가에 앉아 선택지를 심사숙고하기 시작했다." }] },
 
-  { word:"contemporary", pron:"컨템퍼러리", pos:"adj", level:"B2", meanings:["현대의","동시대의"],
+  { word:"contemporary", exams:["공무원"], pron:"컨템퍼러리", pos:"adj", level:"B2", meanings:["현대의","동시대의"],
     syn:["modern","current","present-day"], ant:["ancient"],
     ex:[{ s:"The gallery shows only {{}} art.", f:"contemporary", ko:"그 갤러리는 현대 미술만 전시한다." }] },
 
@@ -1905,7 +1905,7 @@ window.VOCAB_C = [
     syn:["rough","raw","unrefined"], ant:["refined"],
     ex:[{ s:"He made a {{}} sketch on a napkin.", f:"crude", ko:"그는 냅킨에 대충 스케치를 했다." }] },
 
-  { word:"cruel", pron:"크루얼", pos:"adj", level:"B1", meanings:["잔인한","잔혹한"],
+  { word:"cruel", exams:["공무원"], pron:"크루얼", pos:"adj", level:"B1", meanings:["잔인한","잔혹한"],
     syn:["brutal","savage","heartless"], ant:["humane"],
     ex:[{ s:"It seems {{}} to keep birds in cages.", f:"cruel", ko:"새를 우리에 두는 것은 잔인해 보인다." }] },
 
@@ -1997,7 +1997,7 @@ window.VOCAB_C = [
     syn:["money","cash","legal tender"],
     ex:[{ s:"The country changed its {{}} in 2002.", f:"currency", ko:"그 나라는 2002년에 통화를 바꿨다." }] },
 
-  { word:"current", pron:"커런트", pos:"n", level:"B1", meanings:["흐름","현재의"],
+  { word:"current", exams:["공무원"], pron:"커런트", pos:"n", level:"B1", meanings:["흐름","현재의"],
     syn:["flow","stream","tide"],
     ex:[{ s:"A strong {{}} pulled the boat sideways.", f:"current", ko:"강한 물살이 배를 옆으로 끌었다." }] },
 

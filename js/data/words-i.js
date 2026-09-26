@@ -205,7 +205,7 @@ window.VOCAB_I = [
 
   /* 승격 ② — GLOSS '예시하다, 분명히 보여 주다' 다. exemplify(syn) 가 쓰는
      갈래가 '예시하다' 라서 둘째 자리에 지켰다. demonstrate(syn) 도 참조한다. */
-  { word:"illustrate", pron:"일러스트레이트", pos:"v", level:"B2", meanings:["설명하다","예시하다"],
+  { word:"illustrate", exams:["공무원"], pron:"일러스트레이트", pos:"v", level:"B2", meanings:["설명하다","예시하다"],
     syn:["demonstrate","exemplify","depict"],
     ex:[{ s:"The chart {{}} how rapidly the population grew.", f:"illustrates", ko:"그 도표는 인구가 얼마나 빠르게 늘었는지 설명한다." }] },
 
@@ -385,7 +385,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '함축, 영향' 이다. connotation(syn) 이 쓰는 갈래 '함축' 을
      첫 자리에 지켰다. 둘째는 원본의 '암시' 로 했다 — '영향' 은 바로 앞
      impact 가 가져갔다. */
-  { word:"implication", pron:"임플리케이션", pos:"n", level:"B2", meanings:["함축","암시"],
+  { word:"implication", exams:["공무원"], pron:"임플리케이션", pos:"n", level:"B2", meanings:["함축","암시"],
     syn:["connotation","inference","insinuation"],
     ex:[{ s:"He denied any {{}} that the figures had been altered.", f:"implication", ko:"그는 수치가 조작되었다는 어떤 암시도 부인했다." }] },
 
@@ -1297,7 +1297,7 @@ window.VOCAB_I = [
     ex:[{ s:"The evidence was {{}} to secure a conviction.", f:"insufficient", ko:"그 증거는 유죄 판결을 얻기에 불충분했다." }] },
 
   /* 뒤에 올 isolate 는 '고립시키다' 를 첫 자리로 쓴다 — 첫 뜻이 갈린다. */
-  { word:"insulate", pron:"인설레이트", pos:"v", level:"C1", meanings:["격리시키다","단열 처리하다"],
+  { word:"insulate", exams:["공무원"], pron:"인설레이트", pos:"v", level:"C1", meanings:["격리시키다","단열 처리하다"],
     syn:["shield","cushion","seal off"],
     ex:[{ s:"Thick stone walls {{}} the house from winter cold.", f:"insulate", ko:"두꺼운 돌벽이 그 집을 겨울 추위로부터 격리시킨다." }] },
 
@@ -1484,14 +1484,14 @@ window.VOCAB_I = [
     syn:["cosmopolitan","global","worldwide"], ant:["domestic"],
     ex:[{ s:"The airport handles mainly {{}} flights.", f:"international", ko:"그 공항은 주로 국제 항공편을 취급한다." }] },
 
-  { word:"interpersonal", pron:"인터퍼서널", pos:"adj", level:"C1", meanings:["대인 관계의"],
+  { word:"interpersonal", exams:["공무원"], pron:"인터퍼서널", pos:"adj", level:"C1", meanings:["대인 관계의"],
     syn:["social","relational","person-to-person"],
     ex:[{ s:"The job requires strong {{}} skills.", f:"interpersonal", ko:"그 일은 강한 대인 관계 기술을 요구한다." }] },
 
   /* 승격 ① — GLOSS '해석하다, 통역하다' 를 글자까지 지켰다. decipher(syn) 가
      참조한다. 원본 둘째 갈래 '이해하다' 를 쓰면 C 세트 comprehend·F 세트
      figure out 의 뜻과 첫 뜻이 겹치는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"interpret", pron:"인터프리트", pos:"v", level:"B2", meanings:["해석하다","통역하다"],
+  { word:"interpret", exams:["공무원"], pron:"인터프리트", pos:"v", level:"B2", meanings:["해석하다","통역하다"],
     syn:["decipher","construe","make sense of"],
     ex:[{ s:"Experts disagree on how to {{}} the new data.", f:"interpret", ko:"전문가들은 그 새 데이터를 어떻게 해석할지에 대해 의견이 다르다." }] },
 
@@ -1512,7 +1512,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '방해하다, 중단시키다' 가 원본과 글자까지 같다.
      disrupt(syn)·disturb(syn) 두 문제가 참조한다. 손댈 것이 없었다. */
-  { word:"interrupt", pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
+  { word:"interrupt", exams:["공무원"], pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
     syn:["disrupt","disturb","cut in on"],
     ex:[{ s:"Please do not {{}} while I am speaking.", f:"interrupt", ko:"제가 말하는 동안 방해하지 마세요." }] },
 

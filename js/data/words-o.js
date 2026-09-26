@@ -949,7 +949,7 @@ window.VOCAB_O = [
     syn:["coincide","cover part of each other","run into each other"],
     ex:[{ s:"The two shifts {{}} by one hour.", f:"overlap", ko:"두 근무조는 한 시간 겹친다." }] },
 
-  { word:"overload", pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
+  { word:"overload", exams:["공무원"], pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
     syn:["load beyond capacity","pile on too much","burden past the limit"],
     ex:[{ s:"Do not {{}} the small trailer.", f:"overload", ko:"그 작은 트레일러에 지나치게 많이 싣지 마라." }] },
 

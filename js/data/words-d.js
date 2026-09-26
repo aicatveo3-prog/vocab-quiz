@@ -212,7 +212,7 @@ window.VOCAB_D = [
     syn:["wreckage","rubble","remains"],
     ex:[{ s:"Rescue teams searched the {{}} for survivors all night.", f:"debris", ko:"구조대는 밤새 잔해를 뒤져 생존자를 찾았다." }] },
 
-  { word:"debt", pron:"데트", pos:"n", level:"B1", meanings:["빚","부채"],
+  { word:"debt", exams:["공무원"], pron:"데트", pos:"n", level:"B1", meanings:["빚","부채"],
     syn:["liability","obligation","arrears"], ant:["asset"],
     ex:[{ s:"The company took years to pay off its remaining {{}}.", f:"debt", ko:"그 회사는 남은 부채를 갚는 데 여러 해가 걸렸다." }] },
 
@@ -267,7 +267,7 @@ window.VOCAB_D = [
     syn:["platform","floor","surface"],
     ex:[{ s:"Passengers gathered on the upper {{}} to watch the harbor.", f:"deck", ko:"승객들이 항구를 보려고 상층 갑판에 모였다." }] },
 
-  { word:"declare", pron:"디클레어", pos:"v", level:"B2", meanings:["선언하다","공표하다"],
+  { word:"declare", exams:["공무원"], pron:"디클레어", pos:"v", level:"B2", meanings:["선언하다","공표하다"],
     syn:["announce","proclaim","assert"], ant:["deny"],
     ex:[{ s:"The government is expected to {{}} a state of emergency tonight.", f:"declare", ko:"정부가 오늘 밤 비상사태를 선포할 것으로 보인다." }] },
 
@@ -978,7 +978,7 @@ window.VOCAB_D = [
     syn:["find","uncover","unearth"],
     ex:[{ s:"Researchers hope to {{}} a cure within a decade.", f:"discover", ko:"연구자들은 10년 안에 치료법을 발견하기를 바란다." }] },
 
-  { word:"discreet", pron:"디스크리트", pos:"adj", level:"C2", meanings:["신중한","눈에 띄지 않는"],
+  { word:"discreet", exams:["공무원"], pron:"디스크리트", pos:"adj", level:"C2", meanings:["신중한","눈에 띄지 않는"],
     syn:["tactful","prudent","cautious"], ant:["indiscreet"],
     ex:[{ s:"She was always {{}} about her clients' private affairs.", f:"discreet", ko:"그녀는 고객의 사적인 일에 대해 늘 신중했다." }] },
 
@@ -1113,7 +1113,7 @@ window.VOCAB_D = [
     syn:["disperse","vanish","squander"],
     ex:[{ s:"The morning fog began to {{}} by nine o'clock.", f:"dissipate", ko:"아침 안개가 9시쯤 사라지기 시작했다." }] },
 
-  { word:"dissolve", pron:"디잘브", pos:"v", level:"B2", meanings:["녹다","해산하다"],
+  { word:"dissolve", exams:["공무원"], pron:"디잘브", pos:"v", level:"B2", meanings:["녹다","해산하다"],
     syn:["melt","liquefy","disband"],
     ex:[{ s:"Stir until the sugar begins to {{}} completely.", f:"dissolve", ko:"설탕이 완전히 녹기 시작할 때까지 저어라." }] },
 
@@ -1133,7 +1133,7 @@ window.VOCAB_D = [
 
   /* 원본은 뜻을 다섯 묶음 나열했다(명예; 우수성; 차이; 구별; 특징).
      카드에 찍히는 문자열이므로 대표 2개로 줄인다. */
-  { word:"distinction", pron:"디스팅션", pos:"n", level:"B2", meanings:["구별","뛰어남"],
+  { word:"distinction", exams:["공무원"], pron:"디스팅션", pos:"n", level:"B2", meanings:["구별","뛰어남"],
     syn:["difference","contrast","excellence"],
     ex:[{ s:"She graduated with {{}} in mathematics.", f:"distinction", ko:"그녀는 수학에서 뛰어난 성적으로 졸업했다." }] },
 
@@ -1298,7 +1298,7 @@ window.VOCAB_D = [
     syn:["prevailing","leading","predominant"], ant:["subordinate"],
     ex:[{ s:"English remains the {{}} language of science.", f:"dominant", ko:"영어는 여전히 과학의 지배적인 언어다." }] },
 
-  { word:"dominate", pron:"다머네이트", pos:"v", level:"B2", meanings:["지배하다","압도하다"],
+  { word:"dominate", exams:["공무원"], pron:"다머네이트", pos:"v", level:"B2", meanings:["지배하다","압도하다"],
     syn:["control","rule","overshadow"],
     ex:[{ s:"One company came to {{}} the entire market.", f:"dominate", ko:"한 회사가 시장 전체를 지배하게 됐다." }] },
 

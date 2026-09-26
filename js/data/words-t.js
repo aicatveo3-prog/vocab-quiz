@@ -132,7 +132,7 @@ window.VOCAB_T = [
     syn:["cheer up","gain courage","feel encouraged"] },
 
   /* 승격 ② — 사전 글자 유지(참조 factor in). 교재의 '계산에 넣다' 는 버렸다. */
-  { word:"take into account", pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
+  { word:"take into account", exams:["공무원"], pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
     syn:["factor in","allow for","weigh in the decision"] },
 
   /* 승격 ③ — 사전의 쌍반점만 쉼표로 갈랐다(참조 assume). shoulder(S 떠맡다) 와
@@ -189,7 +189,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑩ — 사전 글자 유지. 참조 concrete(C)·nonmaterial(N) 두 곳의 화면은
      바뀌지 않는다. concrete(구체적인, 실체가 있는) 와 맞물려 배제된다. */
-  { word:"tangible", pron:"탠저블", pos:"adj", level:"B2", meanings:["실체가 있는","만질 수 있는"],
+  { word:"tangible", exams:["공무원"], pron:"탠저블", pos:"adj", level:"B2", meanings:["실체가 있는","만질 수 있는"],
     syn:["concrete","able to be touched","real to the hand"], ant:["nonmaterial"],
     ex:[{ s:"They wanted a {{}} result.", f:"tangible", ko:"그들은 실체가 있는 성과를 원했다." }] },
 
@@ -575,7 +575,7 @@ window.VOCAB_T = [
     syn:["beat steadily","pound with each beat","pulse in and out"],
     ex:[{ s:"My head began to {{}}.", f:"throb", ko:"머리가 고동치기 시작했다." }] },
 
-  { word:"throne", pron:"쓰론", pos:"n", level:"C1", meanings:["왕위","왕권"],
+  { word:"throne", exams:["공무원"], pron:"쓰론", pos:"n", level:"C1", meanings:["왕위","왕권"],
     syn:["royal seat","kingly power","right to rule as king"],
     ex:[{ s:"He came to the {{}} at nine.", f:"throne", ko:"그는 아홉 살에 왕위에 올랐다." }] },
 
@@ -965,7 +965,7 @@ window.VOCAB_T = [
   /* 승격 61 — 사전 글자 유지(참조 convert). 교재의 '변형시키다' 는
      deform(변형시키다, 기형으로 만들다 · D) 자리라 버렸다. convert·alter·switch
      가 모두 '바꾸다' 를 써서 맞물려 배제된다. */
-  { word:"transform", pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
+  { word:"transform", exams:["공무원"], pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
     syn:["convert","make over into","change the form of"],
     ex:[{ s:"Rain can {{}} the whole valley.", f:"transform", ko:"비는 골짜기 전체를 바꿔 놓을 수 있다." }] },
 

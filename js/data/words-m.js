@@ -161,7 +161,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '보충하다, 만회하다' 를 글자까지 지켰다. 참조도 PRON 도 없다.
      원본 '보상하다' 를 쓰면 C 세트 compensate 와 첫 뜻이 같아지는데,
      사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"make up for", pron:"메이크 업 포", pos:"phr", level:"B2", meanings:["보충하다","만회하다"],
+  { word:"make up for", exams:["공무원"], pron:"메이크 업 포", pos:"phr", level:"B2", meanings:["보충하다","만회하다"],
     syn:["compensate for","offset","atone for"] },
 
   /* 승격 ① — GLOSS '~에 길을 내주다' 와 같은 갈래다. give way to(syn) 가 참조한다. */
@@ -785,7 +785,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '사소한, 작은' 을 글자까지 지켰다. 참조가 3곳
      (cardinal(ant)·crucial(ant)·incidental)이고 마지막은 I 세트 표제어다.
      원본의 '미성년'(명사)은 pos 가 adj 라 담지 못했다. */
-  { word:"minor", pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
+  { word:"minor", exams:["공무원"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
     syn:["incidental","slight","trivial"], ant:["crucial"],
     ex:[{ s:"It turned out to be only a {{}} setback.", f:"minor", ko:"그것은 사소한 차질에 불과한 것으로 드러났다." }] },
 
@@ -1043,7 +1043,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '통화의, 금전상의' 를 글자까지 지켰다.
      financial(syn)·fiscal(syn) 두 문제가 참조하므로 원본의 '화폐의, 재정의' 대신
      사전 쪽을 남겼다 — 같은 갈래다. */
-  { word:"monetary", pron:"머너테리", pos:"adj", level:"B2", meanings:["통화의","금전상의"],
+  { word:"monetary", exams:["공무원"], pron:"머너테리", pos:"adj", level:"B2", meanings:["통화의","금전상의"],
     syn:["financial","fiscal","pecuniary"],
     ex:[{ s:"The bank tightened {{}} policy in March.", f:"monetary", ko:"그 은행은 3월에 통화 정책을 조였다." }] },
 

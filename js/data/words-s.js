@@ -208,7 +208,7 @@ window.VOCAB_S = [
     ex:[{ s:"The doctor judged him fully {{}}.", f:"sane", ko:"의사는 그가 완전히 제정신이라고 판단했다." }] },
 
   /* 원본 '위생적인' 은 같은 말이라 '위생의' 로 줄였다. */
-  { word:"sanitary", pron:"새니터리", pos:"adj", level:"C1", meanings:["위생의"],
+  { word:"sanitary", exams:["공무원"], pron:"새니터리", pos:"adj", level:"C1", meanings:["위생의"],
     syn:["hygienic","clean and free of germs","to do with hygiene"],
     ex:[{ s:"The kitchen met every {{}} standard.", f:"sanitary", ko:"그 주방은 모든 위생 기준을 충족했다." }] },
 
@@ -554,7 +554,7 @@ window.VOCAB_S = [
     syn:["grab","capture","take by force"],
     ex:[{ s:"Police will {{}} the goods at the border.", f:"seize", ko:"경찰이 국경에서 그 물품을 압수할 것이다." }] },
 
-  { word:"seldom", pron:"셀덤", pos:"adv", level:"B1", meanings:["거의 ~ 않는"],
+  { word:"seldom", exams:["공무원"], pron:"셀덤", pos:"adv", level:"B1", meanings:["거의 ~ 않는"],
     syn:["rarely","hardly ever","not often"],
     ex:[{ s:"He {{}} speaks in meetings.", f:"seldom", ko:"그는 회의에서 거의 말하지 않는다." }] },
 
@@ -650,7 +650,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊴ — 사전 단일값 유지. 참조 numb(N) 의 화면은 바뀌지 않는다.
      원본의 '민감한' 은 같은 말이라 사전 표현을 남겼다. */
-  { word:"sensitive", pron:"센서티브", pos:"adj", level:"B1", meanings:["느낌이 예민한"],
+  { word:"sensitive", exams:["공무원"], pron:"센서티브", pos:"adj", level:"B1", meanings:["느낌이 예민한"],
     syn:["quick to feel","easily affected","responsive to touch"], ant:["numb"],
     ex:[{ s:"His skin is very {{}} to the sun.", f:"sensitive", ko:"그의 피부는 햇볕에 아주 예민하다." }] },
 
@@ -1753,7 +1753,7 @@ window.VOCAB_S = [
 
   /* 승격 139 — 사전 첫 갈래만 남겼다. 참조는 없다. stumble(넘어지다 · 챕터 17)
      과는 '비틀거리다' 로 갈랐다. */
-  { word:"stagger", pron:"스태거", pos:"v", level:"B2", meanings:["비틀거리다"],
+  { word:"stagger", exams:["공무원"], pron:"스태거", pos:"v", level:"B2", meanings:["비틀거리다"],
     syn:["walk unsteadily","reel while walking","sway as one walks"],
     ex:[{ s:"He began to {{}} down the hall.", f:"stagger", ko:"그는 복도를 비틀거리며 내려갔다." }] },
 
@@ -1888,7 +1888,7 @@ window.VOCAB_S = [
     ex:[{ s:"The {{}} show a clear rise.", f:"statistics", ko:"그 통계는 뚜렷한 상승을 보인다." }] },
 
   /* 승격 148 — 사전 단일값 유지. 참조 carving(C) 의 화면은 바뀌지 않는다. */
-  { word:"statue", pron:"스태추", pos:"n", level:"B1", meanings:["조각상"],
+  { word:"statue", exams:["공무원"], pron:"스태추", pos:"n", level:"B1", meanings:["조각상"],
     syn:["carving","figure in stone","sculpted image"],
     ex:[{ s:"A bronze {{}} stood in the park.", f:"statue", ko:"공원에 청동 조각상이 서 있었다." }] },
 
@@ -2671,7 +2671,7 @@ window.VOCAB_S = [
     syn:["pig","hog","farm animal with a snout"],
     ex:[{ s:"The farm keeps twenty {{}}.", f:"swine", ko:"그 농장은 돼지 스무 마리를 기른다." }] },
 
-  { word:"swirl", pron:"스월", pos:"v", level:"C1", meanings:["빙빙 돌다"],
+  { word:"swirl", exams:["공무원"], pron:"스월", pos:"v", level:"C1", meanings:["빙빙 돌다"],
     syn:["spin round and round","whirl about","turn in circles"],
     ex:[{ s:"Leaves began to {{}} in the wind.", f:"swirl", ko:"잎들이 바람에 빙빙 돌기 시작했다." }] },
 

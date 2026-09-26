@@ -177,7 +177,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
      원본의 동사 갈래('층을 이루다')는 pos 가 n 이라 담지 못했다. */
-  { word:"layer", pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
+  { word:"layer", exams:["공무원"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
     syn:["crust","stratum","coating"],
     ex:[{ s:"A thin {{}} of dust covered the top shelf.", f:"layer", ko:"얇은 먼지 층이 맨 위 선반을 덮고 있었다." }] },
 
@@ -571,7 +571,7 @@ window.VOCAB_L = [
   /* 승격 ② — GLOSS '숙소; 제기하다' 로 명사와 동사가 섞여 있었다.
      accommodate(syn) 가 참조하는 갈래는 '숙소' 라 첫 자리에 지키고, 둘째는 원본의
      '산장' 으로 바꿨다 — 한 표제어에 명사와 동사를 섞지 않는 쪽이 읽기 낫다. */
-  { word:"lodge", pron:"로지", pos:"n", level:"B2", meanings:["숙소","산장"],
+  { word:"lodge", exams:["공무원"], pron:"로지", pos:"n", level:"B2", meanings:["숙소","산장"],
     syn:["cabin","inn","guesthouse"],
     ex:[{ s:"We stayed in a mountain {{}} for two nights.", f:"lodge", ko:"우리는 이틀 밤 산장에 머물렀다." }] },
 
