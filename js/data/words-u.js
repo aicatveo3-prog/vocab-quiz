@@ -58,6 +58,8 @@ window.VOCAB_U = [
   { word:"unmanned", exams:["공무원"], pron:"언맨드", pos:"adj", level:"B2", meanings:["무인의","사람이 타지 않은"], syn:["uncrewed","pilotless","automated"], ant:["manned"], ex:[{ s:"AUVs are {{}} underwater robots.", f:"unmanned", ko:"AUV는 무인 수중 로봇이다." }] },
   { word:"unnerving", exams:["공무원"], pron:"언너빙", pos:"adj", level:"C1", meanings:["불안하게 만드는","초조하게 하는"], syn:["disturbing","unsettling","disconcerting"], ex:[{ s:"Not knowing how a decision is made is {{}}.", f:"unnerving", ko:"결정이 어떻게 내려지는지 모른다는 것은 사람을 불안하게 만든다." }] },
   { word:"utilize", exams:["공무원"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
+  { word:"unemotional", exams:["공무원"], pron:"언이모셔널", pos:"adj", level:"C1", meanings:["감정을 드러내지 않는","냉정한"], syn:["detached","impassive","stoic"], ant:["emotional"], ex:[{ s:"Critical thinking may seem cold and {{}}, but it can stir strong feelings.", f:"unemotional", ko:"비판적 사고는 차갑고 감정 없는 것처럼 보이지만 강한 감정을 불러일으킬 수 있다." }] },
+  { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -766,6 +768,7 @@ Object.assign(window.GLOSS, {
   "holding everywhere": "어디서나 통하는",
   "holding the same course": "같은 길을 지키는",
   "holding together": "서로 붙어 버팀",
+  "impassive": "무표정한",
   "impossible to maintain": "버텨 낼 수 없는",
   "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
@@ -859,6 +862,7 @@ Object.assign(window.GLOSS, {
   "staying in the mind for ever": "마음에 오래 남는",
   "staying just as it is": "그대로 머무는",
   "still at an early stage": "아직 이른 단계인",
+  "stoic": "금욕적인, 극기의",
   "straight in one's dealings": "하는 일이 곧은",
   "strung up tight": "바짝 조여진",
   "student not yet graduated": "아직 졸업하지 않은 학생",

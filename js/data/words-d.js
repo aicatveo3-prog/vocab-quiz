@@ -1930,7 +1930,6 @@ Object.assign(window.GLOSS, {
   "lineage":"혈통, 가계",
   "linger on":"오래 머무르다",
   "look in":"잠깐 들여다보다",
-  "markedly":"현저히, 눈에 띄게",
   "mist":"안개, 옅은 안개비",
   "outflow":"유출, 흘러 나감",
   "owing":"지불해야 하는, 미납의",

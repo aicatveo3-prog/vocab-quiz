@@ -85,6 +85,9 @@ window.VOCAB_S = [
   { word:"showcase", exams:["공무원"], pron:"쇼케이스", pos:"v", level:"B2", meanings:["보여 주다","전시하다"], syn:["display","exhibit","demonstrate"], ex:[{ s:"Punctuality {{}} a person's commitment to meeting deadlines.", f:"showcases", ko:"시간 엄수는 마감을 지키려는 사람의 의지를 보여 준다." }] },
   { word:"sincerity", exams:["공무원"], pron:"신세러티", pos:"n", level:"B2", meanings:["진심","성실"], syn:["honesty","genuineness","earnestness"], ant:["hypocrisy"], ex:[{ s:"I never doubted the {{}} of her apology.", f:"sincerity", ko:"나는 그녀 사과의 진심을 의심한 적이 없다." }] },
   { word:"societal", exams:["공무원"], pron:"서사이어털", pos:"adj", level:"C1", meanings:["사회의","사회적인"], ex:[{ s:"Health contributes to {{}} well-being and economic growth.", f:"societal", ko:"건강은 사회적 안녕과 경제 성장에 기여한다." }] },
+  { word:"shareholder", exams:["공무원"], pron:"셰어홀더", pos:"n", level:"B2", meanings:["주주"], ex:[{ s:"Every {{}} receives part of the company's profits.", f:"shareholder", ko:"모든 주주는 회사 이익의 일부를 받는다." }] },
+  { word:"short-term", exams:["공무원"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
+  { word:"skillful", exams:["공무원"], pron:"스킬풀", pos:"adj", level:"B2", meanings:["능숙한","솜씨 좋은"], syn:["adept","proficient","competent"], ant:["clumsy"], ex:[{ s:"She is so {{}} with her hands that she can fix almost anything.", f:"skillful", ko:"그녀는 손재주가 아주 좋아서 거의 뭐든 고칠 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

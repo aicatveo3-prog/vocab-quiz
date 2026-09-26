@@ -112,6 +112,10 @@ window.VOCAB_P = [
   { word:"proliferate", exams:["공무원"], pron:"프럴리퍼레이트", pos:"v", level:"C1", meanings:["급증하다","확산되다"], syn:["multiply","spread","increase"], ex:[{ s:"Fake news can {{}} quickly on social media.", f:"proliferate", ko:"가짜 뉴스는 소셜 미디어에서 빠르게 확산될 수 있다." }] },
   { word:"prosperous", exams:["공무원"], pron:"프라스퍼러스", pos:"adj", level:"B2", meanings:["번영하는","부유한"], syn:["affluent","thriving","flourishing"], ant:["poor"], ex:[{ s:"The port city grew rich and {{}} through trade.", f:"prosperous", ko:"그 항구 도시는 무역으로 부유하고 번영하게 되었다." }] },
   { word:"punctuality", exams:["공무원"], pron:"펑추앨러티", pos:"n", level:"C1", meanings:["시간 엄수","시간을 잘 지킴"], ex:[{ s:"In business, {{}} shows respect for others' time.", f:"punctuality", ko:"비즈니스에서 시간 엄수는 남의 시간을 존중한다는 표시다." }] },
+  { word:"paradoxical", exams:["공무원"], pron:"패러닥시컬", pos:"adj", level:"C1", meanings:["역설적인","모순된"], syn:["contradictory","ironic","self-contradictory"], ex:[{ s:"It is {{}} that nobody wants to invest in such a profitable plant.", f:"paradoxical", ko:"그렇게 수익성 좋은 발전소에 아무도 투자하려 하지 않는다는 것은 역설적이다." }] },
+  { word:"practically", exams:["공무원"], pron:"프랙티컬리", pos:"adv", level:"B2", meanings:["거의","실질적으로"], syn:["virtually","nearly","all but"], ex:[{ s:"The stadium was {{}} empty, with only a few fans left.", f:"practically", ko:"경기장은 팬 몇 명만 남아 거의 텅 비어 있었다." }] },
+  { word:"profit", exams:["공무원"], pron:"프라핏", pos:"n", level:"B1", meanings:["이익","수익"], syn:["earnings","revenue","gain"], ant:["loss"], ex:[{ s:"The company made a large {{}} last year.", f:"profit", ko:"그 회사는 작년에 큰 이익을 냈다." }] },
+  { word:"provided that", exams:["공무원"], pron:"프러바이디드 댓", pos:"phr", level:"B2", meanings:["~라면","~라는 조건으로"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2187,6 +2191,7 @@ Object.assign(window.GLOSS, {
   "ahead of the main part": "본격적인 것 앞의",
   "aim in doing": "하려는 바",
   "alike in form": "꼴이 비슷한",
+  "all but": "거의 ~나 다름없는",
   "already in place": "이미 갖춰져 있는",
   "amount turned out": "만들어 낸 양",
   "angle of view": "보는 각도",
@@ -2357,6 +2362,7 @@ Object.assign(window.GLOSS, {
   "earlier model": "앞서 나온 것",
   "earlier than this": "이보다 이른",
   "earliest form": "가장 이른 꼴",
+  "earnings": "소득, 수익",
   "earth-wide": "지구 전역의",
   "easy to grasp": "알아듣기 쉬운",
   "edgy on purpose": "일부러 날을 세운",
@@ -2517,6 +2523,7 @@ Object.assign(window.GLOSS, {
   "inner hand": "손의 안쪽",
   "insurance contract": "보험 계약서",
   "invention statute": "발명 관련 법령",
+  "ironic": "반어적인, 아이러니한",
   "irreverent": "경건하지 않은",
   "issuing in print": "인쇄로 내놓음",
   "it may be that": "~일 수도 있다",
@@ -2820,6 +2827,7 @@ Object.assign(window.GLOSS, {
   "section of writing": "글의 한 부분",
   "seek after steadily": "꾸준히 찾아 나서다",
   "seep into every part": "구석구석 스미다",
+  "self-contradictory": "자기모순적인",
   "self-defeating statement": "스스로를 뒤집는 말",
   "sell door to door": "집집이 팔러 다니다",
   "send ahead": "앞으로 내보내다",

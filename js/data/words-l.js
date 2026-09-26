@@ -859,7 +859,6 @@ Object.assign(window.GLOSS, {
   "set down": "내려놓다",
   "set in motion": "움직이게 하다",
   "shoestring": "아주 적은 돈의",
-  "short-term": "단기간의",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "silvered glass": "은을 입힌 유리",

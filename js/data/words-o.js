@@ -109,6 +109,8 @@ window.VOCAB_O = [
   { word:"on a tight budget", exams:["공무원"], pron:"온 어 타이트 버짓", pos:"phr", level:"B2", meanings:["예산이 빠듯한","돈이 넉넉지 않은"] },
   { word:"outrun", exams:["공무원"], pron:"아웃런", pos:"v", level:"C1", meanings:["~보다 빨리 달리다","앞지르다"], syn:["outpace","outstrip","outdistance"], ex:[{ s:"The thief could not {{}} the police car on foot.", f:"outrun", ko:"도둑은 걸어서는 경찰차를 따돌릴 수 없었다." }] },
   { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
+  { word:"obviously", exams:["공무원"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
+  { word:"otherwise", exams:["공무원"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1109,6 +1111,7 @@ Object.assign(window.GLOSS, {
   "dangerous quantity": "위험한 양",
   "deck out": "차려 꾸미다",
   "decorative piece": "꾸미는 물건",
+  "differently": "다르게",
   "do better than": "~보다 잘하다",
   "doing as told": "말하는 대로 하는",
   "done then and there": "그 자리에서 해내는",
@@ -1125,6 +1128,7 @@ Object.assign(window.GLOSS, {
   "end result": "끝에 나온 것",
   "enjoy far too much": "너무 많이 즐기다",
   "erase all trace of": "~의 흔적을 다 지우다",
+  "evidently": "명백히",
   "exceed in number": "수에서 넘어서다",
   "excess body fat": "넘치는 몸의 지방",
   "excessive amount taken": "지나치게 많이 먹은 양",
@@ -1272,6 +1276,7 @@ Object.assign(window.GLOSS, {
   "one who addresses a crowd": "군중에게 말하는 사람",
   "one who fights against": "맞서 싸우는 이",
   "opening for action": "움직일 틈",
+  "or else": "그러지 않으면",
   "out of action": "쓸 수 없는",
   "out of the ordinary": "보통과 다른",
   "out of vogue": "인기가 식은",

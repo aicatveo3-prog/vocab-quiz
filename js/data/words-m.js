@@ -71,6 +71,11 @@ window.VOCAB_M = [
   { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
   { word:"mankind", exams:["공무원"], pron:"맨카인드", pos:"n", level:"B2", meanings:["인류","인간 전체"], syn:["humanity","humankind","the human race"], ex:[{ s:"Neither skill was of much use to early {{}}.", f:"mankind", ko:"어느 기술도 초기 인류에게는 별 쓸모가 없었다." }] },
   { word:"moreover", exams:["공무원"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
+  { word:"make strides", exams:["공무원"], pron:"메이크 스트라이즈", pos:"phr", level:"C1", meanings:["큰 진전을 이루다","크게 발전하다"] },
+  { word:"make the most of", exams:["공무원"], pron:"메이크 더 모스트 오브", pos:"phr", level:"B2", meanings:["~을 최대한 활용하다","~을 십분 이용하다"], syn:["get the most out of","take advantage of","capitalize on"] },
+  { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
+  { word:"markedly", exams:["공무원"], pron:"마키들리", pos:"adv", level:"C1", meanings:["현저히","눈에 띄게"], syn:["noticeably","considerably","significantly"], ant:["marginally","slightly"], ex:[{ s:"The two reports differ so {{}} that they seem to describe different events.", f:"markedly", ko:"두 보고서는 너무나 현저히 달라서 서로 다른 사건을 다룬 것처럼 보인다." }] },
+  { word:"municipality", exams:["공무원"], pron:"뮤니서팰러티", pos:"n", level:"C1", meanings:["지방 자치 단체","시 당국"], ex:[{ s:"Each {{}} runs its own recycling program.", f:"municipality", ko:"지방 자치 단체마다 자체 재활용 프로그램을 운영한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1313,6 +1318,7 @@ Object.assign(window.GLOSS, {
   "book ahead": "미리 예약하다",
   "boost to the full": "최대로 끌어올리다",
   "brawny": "체격이 다진",
+  "capitalize on": "~을 기회로 삼다",
   "casting frame": "주조하는 틀",
   "catchphrase": "귀에 남는 문구",
   "charged": "전하를 띤",
@@ -1483,6 +1489,7 @@ Object.assign(window.GLOSS, {
   "neat": "깔끔한",
   "non-automatic": "자동이 아닌",
   "nothing more than": "~에 지나지 않는",
+  "noticeably": "눈에 띄게",
   "nurturing": "보살피는",
   "oblivious": "까맣게 모르는",
   "observer": "지켜보는 사람",

@@ -47,6 +47,10 @@ window.VOCAB_R = [
   { word:"residual", exams:["공무원"], pron:"리지주얼", pos:"adj", level:"C1", meanings:["잔여의","남은"], syn:["remaining","leftover","lingering"], ex:[{ s:"Put {{}}, non-recyclable waste in the gray container.", f:"residual", ko:"재활용할 수 없는 잔여 쓰레기는 회색 용기에 넣으세요." }] },
   { word:"response", exams:["공무원"], pron:"리스판스", pos:"n", level:"B1", meanings:["반응","대응"], syn:["reaction","reply","answer"], ex:[{ s:"Running away is a natural {{}} to danger.", f:"response", ko:"도망치는 것은 위험에 대한 자연스러운 반응이다." }], gov:{ prep:["to"], usage:"in response to ~ : ~에 대응하여 · a response to ~ : ~에 대한 반응" } },
   { word:"request", exams:["공무원"], pron:"리퀘스트", pos:"v", level:"B1", meanings:["요청하다","요청"], syn:["ask for","seek","demand"], ex:[{ s:"You can {{}} a refund if the item is damaged.", f:"request", ko:"물건이 손상되었으면 환불을 요청할 수 있다." }] },
+  { word:"recruit", exams:["공무원"], pron:"리크루트", pos:"v", level:"B2", meanings:["모집하다","채용하다"], syn:["hire","enlist","employ"], ant:["dismiss"], ex:[{ s:"Should we {{}} more volunteers for our program?", f:"recruit", ko:"우리 프로그램을 위해 자원봉사자를 더 모집해야 할까요?" }] },
+  { word:"reduction", exams:["공무원"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
+  { word:"repetition", exams:["공무원"], pron:"레퍼티션", pos:"n", level:"B2", meanings:["반복","되풀이"], syn:["recurrence","duplication","reiteration"], ex:[{ s:"Children learn new words through {{}}, hearing them again and again.", f:"repetition", ko:"아이들은 새 단어를 몇 번이고 들으며 반복을 통해 익힌다." }] },
+  { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -1727,6 +1731,7 @@ Object.assign(window.GLOSS, {
   "crowd running wild": "날뛰는 무리",
   "curb on action": "움직임을 막는 테두리",
   "custom done the same way": "늘 같게 치르는 관습",
+  "cut": "삭감, 인하",
   "cycle of change": "돌고 도는 바뀜",
   "defier of authority": "권위를 거스르는 이",
   "dependence on a frame": "기준에 딸림",
@@ -1744,6 +1749,7 @@ Object.assign(window.GLOSS, {
   "draw in again": "다시 안으로 당기다",
   "drilling without understanding": "뜻 없이 익히게 함",
   "driving one away": "멀어지게 하는",
+  "duplication": "중복, 복제",
   "dwell in a place": "한 곳에 머물러 살다",
   "dwelling place": "살림 자리",
   "each in turn": "차례차례 저마다",
@@ -1757,6 +1763,7 @@ Object.assign(window.GLOSS, {
   "emitting rays": "빛살을 뿜는",
   "end of working life": "일하는 삶의 끝",
   "end up as": "끝내 ~이 되다",
+  "enlist": "입대시키다, 참여시키다",
   "enter a price at the till": "계산대에 값을 넣다",
   "entry on a list": "명단에 오른 항목",
   "exact copy": "똑같은 것",
@@ -2080,6 +2087,7 @@ Object.assign(window.GLOSS, {
   "reddish coat on iron": "쇠에 앉은 붉은 껍질",
   "refusal to take": "받기를 마다함",
   "regard for others": "남을 받드는 마음",
+  "reiteration": "반복해 말하기",
   "relation in number": "수로 본 관계",
   "renew itself": "스스로 새로워지다",
   "repeat of a trial": "시험을 되풀이함",
