@@ -52,7 +52,7 @@ window.VOCAB_L = [
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
      다만 뜻이 '노동' 과 '실험실' 로 완전히 달라 무리가 없다.
      원본의 동사 갈래('일하다, 노력하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"labor", pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
+  { word:"labor", exams:["공무원"], pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
     syn:["toil","exertion","drudgery"],
     ex:[{ s:"The factory still relies on cheap manual {{}}.", f:"labor", ko:"그 공장은 여전히 값싼 육체 노동에 의존한다." }] },
 

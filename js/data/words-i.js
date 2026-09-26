@@ -219,7 +219,7 @@ window.VOCAB_I = [
 
   /* imaginary 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이
      '상상의' 와 '상상력이 풍부한' 으로 뚜렷이 갈려 짝을 고르는 데 무리가 없다. */
-  { word:"imaginative", pron:"이매저너티브", pos:"adj", level:"B2", meanings:["상상력이 풍부한","창의적인"],
+  { word:"imaginative", exams:["공무원"], pron:"이매저너티브", pos:"adj", level:"B2", meanings:["상상력이 풍부한","창의적인"],
     syn:["inventive","creative","resourceful"], ant:["unimaginative"],
     ex:[{ s:"Her {{}} storytelling captivated the whole class.", f:"imaginative", ko:"그녀의 상상력이 풍부한 이야기가 반 전체를 사로잡았다." }] },
 
@@ -502,7 +502,7 @@ window.VOCAB_I = [
   { word:"in contrast with", pron:"인 컨트래스트 위드", pos:"phr", level:"B2", meanings:["~와 대조적으로"],
     syn:["as opposed to","unlike","in opposition to"] },
 
-  { word:"in favor of", pron:"인 페이버 어브", pos:"phr", level:"B2", meanings:["~에 찬성하여"],
+  { word:"in favor of", exams:["공무원"], pron:"인 페이버 어브", pos:"phr", level:"B2", meanings:["~에 찬성하여"],
     syn:["in support of","approving of","on the side of"] },
 
   { word:"in isolation", pron:"인 아이설레이션", pos:"phr", level:"B2", meanings:["홀로","별개로"],
@@ -903,7 +903,7 @@ window.VOCAB_I = [
     syn:["unavoidable","foregone","destined"],
     ex:[{ s:"A clash between the two sides seemed {{}}.", f:"inevitable", ko:"양측의 충돌은 피할 수 없어 보였다." }] },
 
-  { word:"infant", pron:"인펀트", pos:"n", level:"B1", meanings:["유아","젖먹이"],
+  { word:"infant", exams:["공무원"], pron:"인펀트", pos:"n", level:"B1", meanings:["유아","젖먹이"],
     syn:["baby","newborn","toddler"],
     ex:[{ s:"The vaccine is given to every {{}} at six weeks.", f:"infant", ko:"그 백신은 생후 6주에 모든 유아에게 투여된다." }] },
 
@@ -920,7 +920,7 @@ window.VOCAB_I = [
     syn:["contamination","contagion","sepsis"],
     ex:[{ s:"The wound became inflamed and showed signs of {{}}.", f:"infection", ko:"그 상처는 염증이 생기고 감염 징후를 보였다." }] },
 
-  { word:"inferior", pron:"인피리어", pos:"adj", level:"B2", meanings:["~보다 못한","열등한"],
+  { word:"inferior", exams:["공무원"], pron:"인피리어", pos:"adj", level:"B2", meanings:["~보다 못한","열등한"],
     syn:["lesser","second-rate","subordinate"], ant:["superior"],
     ex:[{ s:"The cheaper model is clearly {{}} in build quality.", f:"inferior", ko:"더 싼 모델은 제작 품질에서 분명히 열등하다." }] },
 
@@ -1295,7 +1295,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '모욕, 모욕하다' 로 명사와 동사가 섞여 있었다.
      원본이 동사를 앞에 두므로 pos 를 v 로 잡고, compliment(ant) 가 명사여서
      사전의 명사 갈래 '모욕' 을 둘째 자리에 지켰다. */
-  { word:"insult", pron:"인설트", pos:"v", level:"B2", meanings:["모욕하다","모욕"],
+  { word:"insult", exams:["공무원"], pron:"인설트", pos:"v", level:"B2", meanings:["모욕하다","모욕"],
     syn:["offend","humiliate","affront"], ant:["compliment"],
     ex:[{ s:"He did not mean to {{}} anyone with the remark.", f:"insult", ko:"그는 그 말로 누구도 모욕할 의도가 없었다." }] },
 
@@ -1641,7 +1641,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '역의, 반대의' 를 글자까지 지켰다. converse(syn) 가 참조한다.
      원본 셋째 갈래 '반비례의' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"inverse", pron:"인버스", pos:"adj", level:"C1", meanings:["역의","반대의"],
+  { word:"inverse", exams:["공무원"], pron:"인버스", pos:"adj", level:"C1", meanings:["역의","반대의"],
     syn:["converse","opposite","reversed"],
     ex:[{ s:"There is an {{}} relationship between price and demand.", f:"inverse", ko:"가격과 수요 사이에는 역의 관계가 있다." }] },
 

@@ -91,7 +91,7 @@ window.VOCAB_V = [
     ex:[{ s:"The seat beside her was {{}}.", f:"vacant", ko:"그녀 옆자리는 비어 있었다." }] },
 
   /* 교재의 동사 갈래('진공청소기로 청소하다') 는 버렸다. */
-  { word:"vacuum", pron:"배큠", pos:"n", level:"B2", meanings:["진공"],
+  { word:"vacuum", exams:["공무원"], pron:"배큠", pos:"n", level:"B2", meanings:["진공"],
     syn:["space with no air","emptied of all air","airless space"],
     ex:[{ s:"Sound cannot travel in a {{}}.", f:"vacuum", ko:"소리는 진공에서 이동할 수 없다." }] },
 
@@ -191,7 +191,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑪ — 사전 글자 유지. 참조 세 곳(differ·diversify·fluctuate) 의 화면은
      바뀌지 않는다. differ(다르다, 의견이 다르다) 와 맞물려 배제된다. */
-  { word:"vary", pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
+  { word:"vary", exams:["공무원"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
     syn:["differ","diversify","fluctuate"],
     ex:[{ s:"Prices {{}} from shop to shop.", f:"vary", ko:"값은 가게마다 다르다." }] },
 

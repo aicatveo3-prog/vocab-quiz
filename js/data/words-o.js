@@ -259,7 +259,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑰ — 사전 표현 '분명한, 명백한' 을 글자까지 지켰다(참조 3곳).
      apparent 와 첫 뜻이 겹치지만 둘은 서로 유의어로 등록된 관계다. */
-  { word:"obvious", pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
+  { word:"obvious", exams:["공무원"], pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
     syn:["apparent","plain to see","unmistakable"],
     ex:[{ s:"The answer was {{}} once she explained it.", f:"obvious", ko:"그녀가 설명하자 답은 분명했다." }] },
 
@@ -1024,7 +1024,7 @@ window.VOCAB_O = [
     syn:["daunting","too strong to resist","crushing in scale"],
     ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
 
-  { word:"owe", pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+  { word:"owe", exams:["공무원"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
     syn:["be in debt for","have to pay back","be indebted to"],
     ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];

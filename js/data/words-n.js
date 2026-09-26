@@ -289,7 +289,7 @@ window.VOCAB_N = [
   /* nonetheless 는 사전에 없던 낱머다. 챕터 2 의 nevertheless 가 사전 표현
      '그럼에도 불구하고' 를 쓰므로 이쪽을 '그렇기는 하지만' 으로 갈랐다.
      둘은 실제로 같은 뜻이어서 서로 유의어로 등록해 두었다. */
-  { word:"nonetheless", pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
+  { word:"nonetheless", exams:["공무원"], pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
     syn:["nevertheless","in spite of that","just the same"],
     ex:[{ s:"The road was icy; {{}}, the bus ran on time.", f:"nonetheless", ko:"길이 얼었지만, 그렇기는 하지만 버스는 정시에 다녔다." }] },
 

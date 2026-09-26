@@ -63,7 +63,7 @@ window.VOCAB_B = [
     syn:["vote","poll","election"],
     ex:[{ s:"Voters marked their choice on the {{}}.", f:"ballot", ko:"유권자들은 투표용지에 선택을 표시했다." }] },
 
-  { word:"ban", pron:"밴", pos:"v", level:"B1", meanings:["금지하다","금지령"],
+  { word:"ban", exams:["공무원"], pron:"밴", pos:"v", level:"B1", meanings:["금지하다","금지령"],
     syn:["prohibit","forbid","outlaw"], ant:["allow"],
     ex:[{ s:"The city council voted to {{}} plastic bags.", f:"ban", ko:"시의회는 비닐봉지를 금지하기로 표결했다." }],
     gov:{ prep:["from","on"], pat:"ban him {{}} driving", usage:"ban A from B : A가 B하는 것을 금지하다" } },
@@ -298,7 +298,7 @@ window.VOCAB_B = [
     syn:["defeat","overcome","strike"], ant:["lose"],
     ex:[{ s:"Our team managed to {{}} the defending champions.", f:"beat", ko:"우리 팀은 디펜딩 챔피언을 이겨냈다." }] },
 
-  { word:"beat oneself up", pron:"비트 원셀프 업", pos:"phr", level:"C1", meanings:["자책하다"],
+  { word:"beat oneself up", exams:["공무원"], pron:"비트 원셀프 업", pos:"phr", level:"C1", meanings:["자책하다"],
     syn:["blame oneself","reproach oneself","feel guilty"], ant:["forgive oneself"] },
 
   { word:"become acquainted with", pron:"비컴 어퀘인티드 위드", pos:"phr", level:"B2", meanings:["~에 정통해지다","~와 알게 되다"],

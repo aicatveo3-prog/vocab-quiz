@@ -332,7 +332,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑱ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 aroma(A)·fragrance(F)·
      odor(O) 세 곳의 설명이 '향기; 냄새' 에서 '향기, 냄새' 가 된다. */
-  { word:"scent", pron:"센트", pos:"n", level:"B2", meanings:["향기","냄새"],
+  { word:"scent", exams:["공무원"], pron:"센트", pos:"n", level:"B2", meanings:["향기","냄새"],
     syn:["aroma","fragrance","odor"],
     ex:[{ s:"The {{}} of roses filled the room.", f:"scent", ko:"장미의 향기가 방을 채웠다." }] },
 
@@ -964,7 +964,7 @@ window.VOCAB_S = [
     syn:["commute","go back and forth","run to and fro"],
     ex:[{ s:"Buses {{}} between the two terminals.", f:"shuttle", ko:"버스가 두 터미널 사이를 왕복한다." }] },
 
-  { word:"sibling", pron:"시블링", pos:"n", level:"B2", meanings:["형제자매"],
+  { word:"sibling", exams:["공무원"], pron:"시블링", pos:"n", level:"B2", meanings:["형제자매"],
     syn:["brother or sister","child of the same parents","one's own kin"],
     ex:[{ s:"She has one younger {{}}.", f:"sibling", ko:"그녀는 어린 형제자매가 한 명 있다." }] },
 
@@ -1293,7 +1293,7 @@ window.VOCAB_S = [
     syn:["gregarious","fond of company","easy with people"], ant:["aloof","antisocial"],
     ex:[{ s:"He is a {{}} young man.", f:"sociable", ko:"그는 사교적인 청년이다." }] },
 
-  { word:"socialize", pron:"소셜라이즈", pos:"v", level:"B2", meanings:["사귀다","사회화하다"],
+  { word:"socialize", exams:["공무원"], pron:"소셜라이즈", pos:"v", level:"B2", meanings:["사귀다","사회화하다"],
     syn:["mix with others","spend time together","take on social ways"],
     ex:[{ s:"She has little time to {{}}.", f:"socialize", ko:"그녀는 사귈 시간이 거의 없다." }] },
 
@@ -1723,7 +1723,7 @@ window.VOCAB_S = [
 
   /* 승격 137 — 사전 첫 갈래만 남겼다. '마구간' 을 쓰고 있던 barn(B) 의 그
      자리를 'outbuilding' 으로 갈았다. */
-  { word:"stable", pron:"스테이블", pos:"adj", level:"B1", meanings:["안정된"],
+  { word:"stable", exams:["공무원"], pron:"스테이블", pos:"adj", level:"B1", meanings:["안정된"],
     syn:["not likely to change","firm in place","steady and sure"],
     ex:[{ s:"His condition is now {{}}.", f:"stable", ko:"그의 상태는 이제 안정되었다." }] },
 
@@ -1933,7 +1933,7 @@ window.VOCAB_S = [
   /* 승격 153 — ⚠ 사전값 '유래하다, 생기다' 는 아래 stem from 쪽 뜻이었다.
      원본이 앞세운 명사 '줄기' 로 세우고 참조 derive(D) 의 syn 을 'stem from'
      으로 옮겼다. */
-  { word:"stem", pron:"스템", pos:"n", level:"B1", meanings:["줄기"],
+  { word:"stem", exams:["공무원"], pron:"스템", pos:"n", level:"B1", meanings:["줄기"],
     syn:["part that holds a plant up","stalk of a plant","main shaft of a plant"],
     ex:[{ s:"Cut the {{}} just below the leaf.", f:"stem", ko:"잎 바로 아래에서 줄기를 자르라." }] },
 
@@ -2622,7 +2622,7 @@ window.VOCAB_S = [
     syn:["environment-friendly","able to keep going","kept up without harm"],
     ex:[{ s:"They aim for {{}} growth.", f:"sustainable", ko:"그들은 지속 가능한 성장을 목표로 한다." }] },
 
-  { word:"swallow", pron:"스왈로", pos:"v", level:"B1", meanings:["삼키다"],
+  { word:"swallow", exams:["공무원"], pron:"스왈로", pos:"v", level:"B1", meanings:["삼키다"],
     syn:["take down the throat","gulp","let go down"],
     ex:[{ s:"It is hard to {{}} a big pill.", f:"swallow", ko:"큰 알약을 삼키기는 어렵다." }] },
 

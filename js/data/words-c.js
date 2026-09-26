@@ -1210,7 +1210,7 @@ window.VOCAB_C = [
     syn:["booth","cubicle","chamber"],
     ex:[{ s:"A curtain hung across the old {{}}.", f:"confessional", ko:"낡은 고해실에 커튼이 드리워져 있었다." }] },
 
-  { word:"confidence", pron:"칸피던스", pos:"n", level:"B1", meanings:["신뢰","자신감"],
+  { word:"confidence", exams:["공무원"], pron:"칸피던스", pos:"n", level:"B1", meanings:["신뢰","자신감"],
     syn:["assurance","trust","belief"], ant:["doubt"],
     ex:[{ s:"Losing twice shook his {{}} badly.", f:"confidence", ko:"두 번의 패배는 그의 자신감을 크게 흔들었다." }] },
 
@@ -1328,7 +1328,7 @@ window.VOCAB_C = [
     ex:[{ s:"He missed the train and {{}} lost the job.", f:"consequently", ko:"그는 기차를 놓쳐서 그 결과 일자리를 잃었다." }] },
 
   /* ── conserv · consid · consist ────────────── */
-  { word:"conservation", pron:"칸서베이션", pos:"n", level:"B2", meanings:["보존","보호"],
+  { word:"conservation", exams:["공무원"], pron:"칸서베이션", pos:"n", level:"B2", meanings:["보존","보호"],
     syn:["preservation","protection","upkeep"], ant:["waste"],
     ex:[{ s:"The park funds wildlife {{}} in the valley.", f:"conservation", ko:"그 공원은 계곡의 야생동물 보호에 자금을 댄다." }] },
 
@@ -1476,7 +1476,7 @@ window.VOCAB_C = [
     syn:["satisfied","pleased","serene"], ant:["restless"],
     ex:[{ s:"A {{}} cat slept beside the stove.", f:"contented", ko:"만족한 고양이가 난로 옆에서 잠들어 있었다." }] },
 
-  { word:"context", pron:"칸텍스트", pos:"n", level:"B1", meanings:["문맥","맥락"],
+  { word:"context", exams:["공무원"], pron:"칸텍스트", pos:"n", level:"B1", meanings:["문맥","맥락"],
     syn:["setting","background","framework"],
     ex:[{ s:"The quote makes no sense out of {{}}.", f:"context", ko:"그 인용구는 문맥을 벗어나면 뜻이 통하지 않는다." }] },
 
@@ -1542,7 +1542,7 @@ window.VOCAB_C = [
     syn:["opposite","reverse","inverse"], ant:["identical"],
     ex:[{ s:"The {{}} is also true in cold weather.", f:"converse", ko:"추운 날씨에서는 그 반대도 성립한다." }] },
 
-  { word:"conversely", pron:"컨버슬리", pos:"adv", level:"C1", meanings:["거꾸로","반대로"],
+  { word:"conversely", exams:["공무원"], pron:"컨버슬리", pos:"adv", level:"C1", meanings:["거꾸로","반대로"],
     syn:["contrarily","oppositely","instead"],
     ex:[{ s:"{{}}, warm water holds less oxygen.", f:"Conversely", ko:"거꾸로, 따뜻한 물은 산소를 덜 담는다." }] },
 
@@ -1567,7 +1567,7 @@ window.VOCAB_C = [
     syn:["belief","certainty","faith"], ant:["hesitation"],
     ex:[{ s:"She spoke with quiet {{}} about the plan.", f:"conviction", ko:"그녀는 그 계획에 대해 조용한 신념으로 말했다." }] },
 
-  { word:"convince", pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
+  { word:"convince", exams:["공무원"], pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
     syn:["persuade","assure","satisfy"], ant:["dissuade"],
     ex:[{ s:"Nothing will {{}} him to change his mind.", f:"convince", ko:"어떤 것도 그가 마음을 바꾸도록 납득시키지 못할 것이다." }],
     gov:{ prep:["of","about","to"], pat:"convince him {{}} the risk", usage:"convince A of B : A에게 B를 납득시키다" } },
@@ -1590,7 +1590,7 @@ window.VOCAB_C = [
     syn:["organize","harmonize","align"],
     ex:[{ s:"Someone must {{}} the three rescue teams.", f:"coordinate", ko:"누군가 세 구조대를 조정해야 한다." }] },
 
-  { word:"cope with", pron:"코프 위드", pos:"phr", level:"B1", meanings:["대처하다","극복하다"],
+  { word:"cope with", exams:["공무원"], pron:"코프 위드", pos:"phr", level:"B1", meanings:["대처하다","극복하다"],
     syn:["manage","handle","endure"], ant:["succumb"] },
 
   { word:"copper", pron:"카퍼", pos:"n", level:"B1", meanings:["구리"],
@@ -1831,7 +1831,7 @@ window.VOCAB_C = [
     syn:["work","invention","product"],
     ex:[{ s:"The garden is entirely her own {{}}.", f:"creation", ko:"그 정원은 전적으로 그녀 자신의 창작물이다." }] },
 
-  { word:"creativity", pron:"크리에이티비티", pos:"n", level:"B1", meanings:["창조력","독창성"],
+  { word:"creativity", exams:["공무원"], pron:"크리에이티비티", pos:"n", level:"B1", meanings:["창조력","독창성"],
     syn:["imagination","originality","inventiveness"],
     ex:[{ s:"The job rewards {{}} over speed.", f:"creativity", ko:"그 일은 속도보다 창조력에 보답한다." }] },
 

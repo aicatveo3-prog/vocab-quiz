@@ -369,12 +369,12 @@ window.VOCAB_U = [
 
   /* continuous(계속되는, 끊이지 않는 · B1/adj) 와 '계속되는' 이 맞물려 배제된다.
      위 unhindered(막는 것이 없는) 와 갈랐다. */
-  { word:"uninterrupted", pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
+  { word:"uninterrupted", exams:["공무원"], pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
     syn:["continuous","going on without a stop","never broken into"],
     ex:[{ s:"She had six hours of {{}} sleep.", f:"uninterrupted", ko:"그녀는 여섯 시간을 계속되는 잠으로 보냈다." }] },
 
   /* 승격 ⑮ — 사전 글자 유지(참조 distinctive). */
-  { word:"unique", pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
+  { word:"unique", exams:["공무원"], pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
     syn:["distinctive","the only one of its kind","like no other"],
     ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] },
 

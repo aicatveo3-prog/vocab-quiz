@@ -681,7 +681,7 @@ window.VOCAB_D = [
     syn:["factor","cause","influence"],
     ex:[{ s:"Household income is a major {{}} of educational outcomes.", f:"determinant", ko:"가계 소득은 교육 성과의 주요 결정 요인이다." }] },
 
-  { word:"determination", pron:"디터머네이션", pos:"n", level:"B2", meanings:["결심","투지"],
+  { word:"determination", exams:["공무원"], pron:"디터머네이션", pos:"n", level:"B2", meanings:["결심","투지"],
     syn:["resolve","persistence","willpower"],
     ex:[{ s:"Her {{}} to finish the race impressed everyone watching.", f:"determination", ko:"경기를 완주하려는 그녀의 투지가 보던 모두를 감동시켰다." }] },
 
@@ -909,7 +909,7 @@ window.VOCAB_D = [
     syn:["vanish","fade","evaporate"], ant:["appear"],
     ex:[{ s:"The footprints {{}} completely after the heavy rain.", f:"disappeared", ko:"발자국은 폭우가 온 뒤 완전히 사라졌다." }] },
 
-  { word:"disappointed", pron:"디서포인티드", pos:"adj", level:"B1", meanings:["실망한","낙담한"],
+  { word:"disappointed", exams:["공무원"], pron:"디서포인티드", pos:"adj", level:"B1", meanings:["실망한","낙담한"],
     syn:["let down","dismayed","disheartened"], ant:["pleased"],
     ex:[{ s:"Fans were deeply {{}} by the team's performance.", f:"disappointed", ko:"팬들은 그 팀의 경기력에 크게 실망했다." }] },
 
@@ -925,7 +925,7 @@ window.VOCAB_D = [
     syn:["catastrophic","calamitous","ruinous"], ant:["successful"],
     ex:[{ s:"The decision proved {{}} for the company's finances.", f:"disastrous", ko:"그 결정은 회사 재정에 파멸적인 것으로 드러났다." }] },
 
-  { word:"discard", pron:"디스카드", pos:"v", level:"C1", meanings:["버리다","폐기하다"],
+  { word:"discard", exams:["공무원"], pron:"디스카드", pos:"v", level:"C1", meanings:["버리다","폐기하다"],
     syn:["throw away","dump","jettison"], ant:["keep"],
     ex:[{ s:"Please {{}} any packaging before entering the lab.", f:"discard", ko:"실험실에 들어가기 전에 포장재를 모두 버려 주세요." }] },
 
@@ -1485,7 +1485,7 @@ window.VOCAB_D = [
     syn:["copy","replicate","reproduce"],
     ex:[{ s:"It is hard to {{}} those results in another lab.", f:"duplicate", ko:"다른 실험실에서 그 결과를 재현하기는 어렵다." }] },
 
-  { word:"duration", pron:"두레이션", pos:"n", level:"C1", meanings:["지속 기간","기간"],
+  { word:"duration", exams:["공무원"], pron:"두레이션", pos:"n", level:"C1", meanings:["지속 기간","기간"],
     syn:["length","period","span"],
     ex:[{ s:"The {{}} of the treatment is about six weeks.", f:"duration", ko:"그 치료의 지속 기간은 약 6주다." }] },
 

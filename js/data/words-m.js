@@ -249,7 +249,7 @@ window.VOCAB_M = [
      '태도' 쪽이라 둘째 자리에 지켰다. 첫 자리는 원본의 '방식' 으로 했다 —
      사전의 '방법' 을 그대로 쓰면 뒤 챕터의 method('방법, 수법')와 첫 뜻이 겹친다.
      manned 와 앞 네 글자가 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"manner", pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
+  { word:"manner", exams:["공무원"], pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
     syn:["conduct","demeanor","way"],
     ex:[{ s:"She answered in a very polite {{}}.", f:"manner", ko:"그녀는 아주 공손한 방식으로 대답했다." }] },
 
@@ -487,7 +487,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기계적인, 자동의' 를 글자까지 지켰다. automatic(syn) 이
      참조하므로 원본의 '기계의' 대신 사전 쪽을 남겼다. */
-  { word:"mechanical", pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
+  { word:"mechanical", exams:["공무원"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
     syn:["automatic","machine-driven","robotic"], ant:["manual"],
     ex:[{ s:"The failure turned out to be purely {{}}.", f:"mechanical", ko:"그 고장은 순전히 기계적인 것으로 드러났다." }] },
 
@@ -1022,7 +1022,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기세, 탄력' 을 글자까지 지켰다. I 세트 impetus 가 참조하므로
      원본의 '가속도' 대신 사전 쪽 '기세' 를 남겼다. */
-  { word:"momentum", pron:"모멘텀", pos:"n", level:"B2", meanings:["기세","탄력"],
+  { word:"momentum", exams:["공무원"], pron:"모멘텀", pos:"n", level:"B2", meanings:["기세","탄력"],
     syn:["impetus","drive","thrust"],
     ex:[{ s:"The campaign slowly gathered {{}}.", f:"momentum", ko:"그 운동은 천천히 기세를 모았다." }] },
 
@@ -1208,7 +1208,7 @@ window.VOCAB_M = [
     syn:["interracial","mixed-race","ethnically diverse"],
     ex:[{ s:"The team is proudly {{}}.", f:"multiracial", ko:"그 팀은 자랑스럽게 여러 인종으로 이뤄져 있다." }] },
 
-  { word:"multitask", pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
+  { word:"multitask", exams:["공무원"], pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
     syn:["juggle tasks","work in parallel","do several things at once"],
     ex:[{ s:"Few people truly {{}} well under pressure.", f:"multitask", ko:"압박 속에서 동시에 여러 일을 정말 잘하는 사람은 드물다." }] },
 

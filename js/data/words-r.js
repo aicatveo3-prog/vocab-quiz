@@ -840,7 +840,7 @@ window.VOCAB_R = [
     ex:[{ s:"They plan to {{}} the old school.", f:"renovate", ko:"그들은 그 낡은 학교를 보수할 계획이다." }] },
 
   /* reputation(평판, 명성 · 챕터 9) 과 '명성' 으로 맞물려 서로 오답에서 빠진다. */
-  { word:"renown", pron:"리나운", pos:"n", level:"C1", meanings:["명성"],
+  { word:"renown", exams:["공무원"], pron:"리나운", pos:"n", level:"C1", meanings:["명성"],
     syn:["wide fame","name known far","great repute"],
     ex:[{ s:"The city has {{}} for its bridges.", f:"renown", ko:"그 도시는 다리로 명성이 있다." }] },
 
@@ -872,7 +872,7 @@ window.VOCAB_R = [
     syn:["mend","put right again","set in working order"], ant:["break"],
     ex:[{ s:"He can {{}} the roof himself.", f:"repair", ko:"그는 그 지붕을 혼자 고칠 수 있다." }] },
 
-  { word:"repeatedly", pron:"리피티들리", pos:"adv", level:"B1", meanings:["여러 차례","되풀이하여"],
+  { word:"repeatedly", exams:["공무원"], pron:"리피티들리", pos:"adv", level:"B1", meanings:["여러 차례","되풀이하여"],
     syn:["again and again","time after time","over and over"],
     ex:[{ s:"She knocked {{}} on the door.", f:"repeatedly", ko:"그녀는 문을 여러 차례 두드렸다." }] },
 
@@ -1583,7 +1583,7 @@ window.VOCAB_R = [
   { word:"run into", pron:"런 인투", pos:"phr", level:"B1", meanings:["우연히 만나다"],
     syn:["encounter","come across by chance","bump into"] },
 
-  { word:"run out of", pron:"런 아웃 오브", pos:"phr", level:"B1", meanings:["~을 다 써 버리다"],
+  { word:"run out of", exams:["공무원"], pron:"런 아웃 오브", pos:"phr", level:"B1", meanings:["~을 다 써 버리다"],
     syn:["use up all of","be left with none","exhaust the supply"] },
 
   { word:"run the risk of", pron:"런 더 리스크 오브", pos:"phr", level:"C1", meanings:["~의 위험을 무릅쓰다"],

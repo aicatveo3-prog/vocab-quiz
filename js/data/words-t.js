@@ -332,7 +332,7 @@ window.VOCAB_T = [
      참조 nerve(N) 의 설명이 '팽팽함' 에서 '긴장, 팽팽함' 으로 늘어난다.
      nerve(신경, 긴장)·strain(S 긴장, 압박) 과 '긴장' 이 맞물려 배제된다.
      교재의 '갈등' 은 conflict·friction 자리라 버렸다. */
-  { word:"tension", pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
+  { word:"tension", exams:["공무원"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
     syn:["nerve","strain","tightness in the air"],
     ex:[{ s:"You could feel the {{}} in the room.", f:"tension", ko:"방 안의 긴장이 느껴졌다." }] },
 
@@ -1159,7 +1159,7 @@ window.VOCAB_T = [
   /* 승격 73 — 사전 단일값 유지(참조 clan). ★ 한국어로 적으면 shortage(부족,
      품귀 · B1/n) 와 글자가 같아진다. 동음이의가 오히려 도움이 되어
      meaningsOverlap 이 둘을 서로의 오답에서 자동으로 뺀다. */
-  { word:"tribe", pron:"트라이브", pos:"n", level:"B1", meanings:["부족"],
+  { word:"tribe", exams:["공무원"], pron:"트라이브", pos:"n", level:"B1", meanings:["부족"],
     syn:["clan","people of one stock","group under one chief"],
     ex:[{ s:"The {{}} moved with the rains.", f:"tribe", ko:"그 부족은 비를 따라 움직였다." }] },
 
@@ -1314,7 +1314,7 @@ window.VOCAB_T = [
     syn:["hand back","give up what was lent","return to the owner"] },
 
   /* 승격 85 — 사전 단일값 유지(참조 end up). */
-  { word:"turn out", pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
+  { word:"turn out", exams:["공무원"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
     syn:["end up","prove to be so","come out in the end"] },
 
   /* 승격 86 — 사전 단일값 유지(참조 flip). */

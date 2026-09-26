@@ -203,7 +203,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '진짜의, 진품의' 를 글자까지 지켰다. authentic 의 유의어이고
      counterfeit·deceptive·fake 세 문제의 반의어로도 쓰인다. */
-  { word:"genuine", pron:"제뉴인", pos:"adj", level:"B2", meanings:["진짜의","진품의"],
+  { word:"genuine", exams:["공무원"], pron:"제뉴인", pos:"adj", level:"B2", meanings:["진짜의","진품의"],
     syn:["authentic","real","bona fide"], ant:["fake"],
     ex:[{ s:"Experts confirmed that the painting was {{}}.", f:"genuine", ko:"전문가들은 그 그림이 진품임을 확인했다." }] },
 
@@ -506,7 +506,7 @@ window.VOCAB_G = [
     syn:["gravity","attraction","pull"],
     ex:[{ s:"Newton explained how {{}} keeps the planets in orbit.", f:"gravitation", ko:"뉴턴은 인력이 어떻게 행성을 궤도에 붙잡아 두는지 설명했다." }] },
 
-  { word:"gravity", pron:"그래버티", pos:"n", level:"B2", meanings:["중력"],
+  { word:"gravity", exams:["공무원"], pron:"그래버티", pos:"n", level:"B2", meanings:["중력"],
     syn:["gravitation","weight force","downward pull"],
     ex:[{ s:"Objects fall at the same rate under {{}} in a vacuum.", f:"gravity", ko:"진공에서는 물체가 중력을 받아 같은 속도로 떨어진다." }] },
 

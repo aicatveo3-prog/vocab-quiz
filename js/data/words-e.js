@@ -1107,7 +1107,7 @@ window.VOCAB_E = [
     syn:["observed","experimental","evidence-based"], ant:["theoretical"],
     ex:[{ s:"The claim sounds plausible but lacks {{}} support.", f:"empirical", ko:"그 주장은 그럴듯하게 들리지만 실증적인 근거가 없다." }] },
 
-  { word:"employ", pron:"임플로이", pos:"v", level:"B1", meanings:["고용하다","쓰다"],
+  { word:"employ", exams:["공무원"], pron:"임플로이", pos:"v", level:"B1", meanings:["고용하다","쓰다"],
     syn:["hire","make use of","give a job to"], ant:["dismiss"],
     ex:[{ s:"The mill used to {{}} half the town.", f:"employ", ko:"그 공장은 한때 마을 절반을 고용했다." }] },
 
@@ -1161,7 +1161,7 @@ window.VOCAB_E = [
     syn:["come across","run into","bump into"],
     ex:[{ s:"Hikers sometimes {{}} bears on this ridge.", f:"encounter", ko:"등산객들은 이 능선에서 이따금 곰과 맞닥뜨린다." }] },
 
-  { word:"encourage", pron:"인커리지", pos:"v", level:"B1", meanings:["격려하다","장려하다"],
+  { word:"encourage", exams:["공무원"], pron:"인커리지", pos:"v", level:"B1", meanings:["격려하다","장려하다"],
     syn:["motivate","inspire","cheer on"], ant:["discourage"],
     ex:[{ s:"Teachers should {{}} students to ask awkward questions.", f:"encourage", ko:"교사는 학생들이 껄끄러운 질문을 하도록 격려해야 한다." }] },
 
@@ -1183,7 +1183,7 @@ window.VOCAB_E = [
      'phr 에 ex 가 있으면' 경고한다. 구는 빈칸 변환이 첫 낱말만 바뀌어서 오답이
      원형으로 남기 쉽다 — 뜻을 몰라도 정답이 보이는 문제가 된다.
      나머지 네 모드(4지선다·아닌것·짝맞추기)는 정상 출제된다. */
-  { word:"end up", pron:"엔드 업", pos:"phr", level:"B1", meanings:["결국 ~하게 되다","끝내 ~이 되다"],
+  { word:"end up", exams:["공무원"], pron:"엔드 업", pos:"phr", level:"B1", meanings:["결국 ~하게 되다","끝내 ~이 되다"],
     syn:["wind up","turn out","finish up"] },
 
   { word:"endanger", pron:"인데인저", pos:"v", level:"B2", meanings:["위험에 빠뜨리다","위협하다"],
@@ -1320,7 +1320,7 @@ window.VOCAB_E = [
     syn:["tempting","appealing","alluring"],
     ex:[{ s:"The offer looked {{}} until we read the small print.", f:"enticing", ko:"그 제안은 작은 글씨의 조항을 읽기 전까지는 유혹적으로 보였다." }] },
 
-  { word:"entire", pron:"인타이어", pos:"adj", level:"B1", meanings:["전체의","온전한"],
+  { word:"entire", exams:["공무원"], pron:"인타이어", pos:"adj", level:"B1", meanings:["전체의","온전한"],
     syn:["complete","total","undivided"], ant:["partial"],
     ex:[{ s:"She spent the {{}} afternoon sorting old photographs.", f:"entire", ko:"그녀는 오후 전체를 옛 사진을 정리하며 보냈다." }] },
 
@@ -1500,7 +1500,7 @@ window.VOCAB_E = [
     syn:["accompany","go with","conduct safely"],
     ex:[{ s:"Two officers will {{}} the visitors to the gate.", f:"escort", ko:"경관 두 명이 방문객을 문까지 호위할 것이다." }] },
 
-  { word:"essential", pron:"이센셜", pos:"adj", level:"B1", meanings:["필수적인","극히 중요한"],
+  { word:"essential", exams:["공무원"], pron:"이센셜", pos:"adj", level:"B1", meanings:["필수적인","극히 중요한"],
     syn:["indispensable","vital","crucial"], ant:["optional"],
     ex:[{ s:"Clean water is {{}} to public health.", f:"essential", ko:"깨끗한 물은 공중 보건에 필수적이다." }] },
 
@@ -1596,7 +1596,7 @@ window.VOCAB_E = [
 
   /* 뜻을 '결국' 하나만 뒀다 — 유의어 finally 의 GLOSS 가 "마침내, 결국" 이라
      '마침내' 를 같이 쓰면 표제어와 선택지가 같은 말을 한다. */
-  { word:"eventually", pron:"이벤추얼리", pos:"adv", level:"B1", meanings:["결국"],
+  { word:"eventually", exams:["공무원"], pron:"이벤추얼리", pos:"adv", level:"B1", meanings:["결국"],
     syn:["in the end","finally","ultimately"],
     ex:[{ s:"The argument {{}} settled itself.", f:"eventually", ko:"그 논쟁은 결국 저절로 가라앉았다." }] },
 
@@ -1943,7 +1943,7 @@ window.VOCAB_E = [
     syn:["sell abroad","ship out","send overseas"], ant:["import"],
     ex:[{ s:"The island began to {{}} salt in the 1800s.", f:"export", ko:"그 섬은 1800년대에 소금을 수출하기 시작했다." }] },
 
-  { word:"expose", pron:"익스포즈", pos:"v", level:"B2", meanings:["폭로하다","노출시키다"],
+  { word:"expose", exams:["공무원"], pron:"익스포즈", pos:"v", level:"B2", meanings:["폭로하다","노출시키다"],
     syn:["reveal","uncover","bring to light"], ant:["conceal"],
     ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
 
@@ -1984,7 +1984,7 @@ window.VOCAB_E = [
   /* 레벨을 C1 로 뒀다 — 표제어 degree(B1 "정도, 학위")가 이 낱말을 유의어로 쓰고
      첫 뜻에 '정도' 가 겹치므로, 레벨을 두 칸 벌려 한 문제의 보기로 같이 뜨지
      않게 했다. 기존 GLOSS "범위, 정도" 는 breadth·degree·dimension 셋이 쓴다. */
-  { word:"extent", pron:"익스텐트", pos:"n", level:"C1", meanings:["범위","정도"],
+  { word:"extent", exams:["공무원"], pron:"익스텐트", pos:"n", level:"C1", meanings:["범위","정도"],
     syn:["scope","range","scale"],
     ex:[{ s:"Nobody knew the full {{}} of the leak.", f:"extent", ko:"아무도 그 누출의 전체 범위를 알지 못했다." }] },
 

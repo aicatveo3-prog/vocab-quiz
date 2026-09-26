@@ -870,7 +870,7 @@ window.VOCAB_F = [
      단단한 쪽으로 각각 이 낱말을 유의어로 쓴다. 한 갈래만 남기면 다른 쪽
      문제의 선택지가 틀린 설명이 된다. pos 는 하나만 고를 수 있어 형용사로
      두고(원본도 형용사 뜻이 먼저다) 유의어도 형용사로 모았다. */
-  { word:"firm", pron:"펌", pos:"adj", level:"B2", meanings:["단단한","회사"],
+  { word:"firm", exams:["공무원"], pron:"펌", pos:"adj", level:"B2", meanings:["단단한","회사"],
     syn:["solid","sturdy","unyielding"],
     ex:[{ s:"Press the soil until it feels {{}} around the stem.", f:"firm", ko:"줄기 주위의 흙이 단단해질 때까지 눌러라." }] },
 
@@ -984,7 +984,7 @@ window.VOCAB_F = [
     syn:["suppleness","adaptability","pliancy"],
     ex:[{ s:"Daily stretching restored some {{}} to his back.", f:"flexibility", ko:"매일의 스트레칭이 그의 등에 어느 정도 유연성을 되돌려 주었다." }] },
 
-  { word:"flexible", pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
+  { word:"flexible", exams:["공무원"], pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
     syn:["pliable","bendable","adaptable"], ant:["rigid"],
     ex:[{ s:"Copper pipe is {{}} enough to shape by hand.", f:"flexible", ko:"구리 관은 손으로 모양을 낼 만큼 잘 휜다." }] },
 
@@ -1047,7 +1047,7 @@ window.VOCAB_F = [
     syn:["downy","soft and light","fleecy"],
     ex:[{ s:"The chicks were still small and {{}}.", f:"fluffy", ko:"병아리들은 아직 작고 솜털이 보송했다." }] },
 
-  { word:"fluid", pron:"플루이드", pos:"n", level:"C1", meanings:["체액","유동체"],
+  { word:"fluid", exams:["공무원"], pron:"플루이드", pos:"n", level:"C1", meanings:["체액","유동체"],
     syn:["liquid","bodily liquid","flowing substance"],
     ex:[{ s:"The doctor drained the {{}} from his swollen knee.", f:"fluid", ko:"의사가 부어오른 그의 무릎에서 체액을 빼냈다." }] },
 
@@ -1085,7 +1085,7 @@ window.VOCAB_F = [
     syn:["leaves","greenery","leafage"],
     ex:[{ s:"Dense {{}} hid the path completely.", f:"foliage", ko:"빽빽한 잎이 길을 완전히 가렸다." }] },
 
-  { word:"folk", pron:"포크", pos:"n", level:"B1", meanings:["사람들","가족"],
+  { word:"folk", exams:["공무원"], pron:"포크", pos:"n", level:"B1", meanings:["사람들","가족"],
     syn:["people","ordinary people","kinfolk"],
     ex:[{ s:"Local {{}} still gather at the old mill.", f:"folk", ko:"그 지역 사람들은 아직 낡은 방앗간에 모인다." }] },
 
@@ -1321,7 +1321,7 @@ window.VOCAB_F = [
     syn:["cargo","goods","shipment"],
     ex:[{ s:"The night train carries only {{}}, no passengers.", f:"freight", ko:"그 야간 열차는 승객 없이 화물만 실어 나른다." }] },
 
-  { word:"frequency", pron:"프리퀀시", pos:"n", level:"B2", meanings:["빈도","주파수"],
+  { word:"frequency", exams:["공무원"], pron:"프리퀀시", pos:"n", level:"B2", meanings:["빈도","주파수"],
     syn:["rate of occurrence","how often","recurrence"],
     ex:[{ s:"They measured the {{}} of storms over fifty years.", f:"frequency", ko:"그들은 50년에 걸친 폭풍의 빈도를 측정했다." }] },
 
@@ -1329,7 +1329,7 @@ window.VOCAB_F = [
     syn:["repeated","recurring","common"],
     ex:[{ s:"{{}} delays finally drove passengers away.", f:"Frequent", ko:"잦은 지연이 결국 승객들을 떠나게 했다." }] },
 
-  { word:"friction", pron:"프릭션", pos:"n", level:"B2", meanings:["마찰","갈등"],
+  { word:"friction", exams:["공무원"], pron:"프릭션", pos:"n", level:"B2", meanings:["마찰","갈등"],
     syn:["rubbing","resistance","abrasion"],
     ex:[{ s:"A drop of oil removes most of the {{}}.", f:"friction", ko:"기름 한 방울이 마찰의 대부분을 없앤다." }] },
 

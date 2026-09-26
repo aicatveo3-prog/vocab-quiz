@@ -293,7 +293,7 @@ window.VOCAB_P = [
 
   /* 승격 ⑬ — 사전이 '특정한; 까다로운' 이었다. 첫 뜻 '특정한' 을 지키고
      원본의 '특별한' 을 붙였다(detail, D). */
-  { word:"particular", pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
+  { word:"particular", exams:["공무원"], pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
     syn:["specific","singled out","one certain"],
     ex:[{ s:"Is there a {{}} book you are looking for?", f:"particular", ko:"찾으시는 특정한 책이 있나요?" }] },
 
@@ -718,7 +718,7 @@ window.VOCAB_P = [
     ex:[{ s:"A single {{}} fell on the table.", f:"petal", ko:"꽃잎 하나가 탁자에 떨어졌다." }] },
 
   /* 승격 54 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"petition", pron:"퍼티션", pos:"n", level:"B2", meanings:["청원","탄원"],
+  { word:"petition", exams:["공무원"], pron:"퍼티션", pos:"n", level:"B2", meanings:["청원","탄원"],
     syn:["formal request to authority","signed appeal","plea in writing"],
     ex:[{ s:"They handed in a {{}} with ten thousand names.", f:"petition", ko:"그들은 만 명의 이름이 담긴 청원을 냈다." }] },
 
@@ -879,7 +879,7 @@ window.VOCAB_P = [
      (comprehensible, C · luxurious 반의어, L · ornate 반의어, O — 세 곳).
      원본은 '분명한, 꾸밈없는; 검소한, 평범한; 평지, 벌판' 으로 형용사와 명사가
      섞인 다섯 갈래였다. */
-  { word:"plain", pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
+  { word:"plain", exams:["공무원"], pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
     syn:["comprehensible","unadorned","easy to grasp"], ant:["ornate"],
     ex:[{ s:"She wore a {{}} grey coat.", f:"plain", ko:"그녀는 평범한 회색 외투를 입었다." }] },
 
@@ -1161,7 +1161,7 @@ window.VOCAB_P = [
 
   /* 승격 88 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      원본은 '소유' 한 갈래였다. */
-  { word:"possession", pron:"퍼제션", pos:"n", level:"B1", meanings:["소유","소유물"],
+  { word:"possession", exams:["공무원"], pron:"퍼제션", pos:"n", level:"B1", meanings:["소유","소유물"],
     syn:["ownership","thing owned","holding"],
     ex:[{ s:"The land came into his {{}} last year.", f:"possession", ko:"그 땅은 지난해 그의 소유가 되었다." }] },
 
@@ -1220,7 +1220,7 @@ window.VOCAB_P = [
   /* 원본은 '잠재적인; 가능성, 잠재력' 으로 형용사와 명사가 섞여 있었다.
      참조가 없어 형용사로 세웠고, 명사 갈래는 바로 다음의 potentiality 가 담는다 —
      그래야 둘이 '잠재력' 으로 물리지 않는다. */
-  { word:"potential", pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
+  { word:"potential", exams:["공무원"], pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
     syn:["possible in future","latent","waiting to develop"],
     ex:[{ s:"We found three {{}} buyers.", f:"potential", ko:"우리는 잠재적인 구매자 셋을 찾았다." }] },
 
@@ -1777,7 +1777,7 @@ window.VOCAB_P = [
     ex:[{ s:"Steel {{}} fell last year.", f:"production", ko:"철강 생산이 지난해 줄었다." }] },
 
   /* 승격 141 — 사전 표현과 글자까지 같다(efficiency, E). */
-  { word:"productivity", pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
+  { word:"productivity", exams:["공무원"], pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
     syn:["rate of output","how much is produced","working efficiency"],
     ex:[{ s:"New tools raised {{}}.", f:"productivity", ko:"새 도구가 생산성을 높였다." }] },
 
@@ -1904,7 +1904,7 @@ window.VOCAB_P = [
 
   /* 승격 155 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      '선전' 은 advertisement(광고, 선전) 와 글자가 같아 둘이 서로 오답에서 빠진다. */
-  { word:"propaganda", pron:"프라퍼갠더", pos:"n", level:"C1", meanings:["선전","홍보"],
+  { word:"propaganda", exams:["공무원"], pron:"프라퍼갠더", pos:"n", level:"C1", meanings:["선전","홍보"],
     syn:["one-sided message","spread to sway people","words to win support"],
     ex:[{ s:"Wartime {{}} filled the papers.", f:"propaganda", ko:"전시의 선전이 신문을 채웠다." }] },
 
@@ -2150,7 +2150,7 @@ window.VOCAB_P = [
   { word:"push into", pron:"푸시 인투", pos:"phr", level:"B2", meanings:["~에 밀고 들어오다"],
     syn:["force one's way in","shove inside","press into a place"] },
 
-  { word:"put an end to", pron:"풋 언 엔드 투", pos:"phr", level:"B2", meanings:["~을 끝내다","없애다"],
+  { word:"put an end to", exams:["공무원"], pron:"풋 언 엔드 투", pos:"phr", level:"B2", meanings:["~을 끝내다","없애다"],
     syn:["stop for good","bring to a close","do away with"] },
 
   { word:"put aside", pron:"풋 어사이드", pos:"phr", level:"B2", meanings:["제쳐놓다","무시하다"],

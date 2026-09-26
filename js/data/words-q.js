@@ -73,7 +73,7 @@ window.VOCAB_Q = [
   /* 승격 ⑤ — 원본은 '언쟁, 싸움; 다투다, 싸우다' 로 명사와 동사가 섞여 있었다.
      참조 controversy(C)·dispute(D) 가 모두 명사여서 명사로 세우고 사전 표현을
      글자까지 지켰다. */
-  { word:"quarrel", pron:"코럴", pos:"n", level:"B2", meanings:["말다툼","논쟁"],
+  { word:"quarrel", exams:["공무원"], pron:"코럴", pos:"n", level:"B2", meanings:["말다툼","논쟁"],
     syn:["dispute","angry exchange","falling-out"],
     ex:[{ s:"The {{}} lasted all evening.", f:"quarrel", ko:"그 말다툼은 저녁 내내 이어졌다." }] },
 

@@ -566,7 +566,7 @@ window.VOCAB = [
     syn:["wealthy","prosperous","well-off"], ant:["poor"],
     ex:[{ s:"The school serves a largely {{}} neighborhood.", f:"affluent", ko:"그 학교는 대체로 부유한 지역을 담당한다." }] },
 
-  { word:"afford", pron:"어포드", pos:"v", level:"B1", meanings:["~할 여유가 있다","감당하다"],
+  { word:"afford", exams:["공무원"], pron:"어포드", pos:"v", level:"B1", meanings:["~할 여유가 있다","감당하다"],
     syn:["manage","bear","sustain"],
     ex:[{ s:"We cannot {{}} to lose another week.", f:"afford", ko:"우리는 또 한 주를 잃을 여유가 없다." }] },
 
@@ -587,7 +587,7 @@ window.VOCAB = [
     syn:["schedule","program","plan"],
     ex:[{ s:"Climate policy topped the {{}} at the summit.", f:"agenda", ko:"정상회담에서 기후 정책이 의제의 첫 순위였다." }] },
 
-  { word:"agent", pron:"에이전트", pos:"n", level:"B1", meanings:["대리인","중개인"],
+  { word:"agent", exams:["공무원"], pron:"에이전트", pos:"n", level:"B1", meanings:["대리인","중개인"],
     syn:["representative","broker","intermediary"],
     ex:[{ s:"Her {{}} negotiated the contract for her.", f:"agent", ko:"그녀의 대리인이 그녀를 위해 계약을 협상했다." }] },
 
@@ -859,7 +859,7 @@ window.VOCAB = [
     syn:["entertainment","enjoyment","diversion"], ant:["boredom"],
     ex:[{ s:"She watched the puppies with obvious {{}}.", f:"amusement", ko:"그녀는 강아지들을 뚜렷한 즐거움으로 바라보았다." }] },
 
-  { word:"analogy", pron:"어낼러지", pos:"n", level:"C1", meanings:["비유","유사점"],
+  { word:"analogy", exams:["공무원"], pron:"어낼러지", pos:"n", level:"C1", meanings:["비유","유사점"],
     syn:["comparison","close likeness","resemblance"], ant:["contrast"],
     ex:[{ s:"He drew an {{}} between the brain and a city.", f:"analogy", ko:"그는 뇌와 도시 사이의 비유를 이끌어 냈다." }] },
 
@@ -1027,7 +1027,7 @@ window.VOCAB = [
     ex:[{ s:"He refused to {{}} for the remark.", f:"apologize", ko:"그는 그 발언에 대해 사과하기를 거부했다." }],
     gov:{ prep:["for","to"], pat:"apologize {{}} the delay", usage:"apologize for ~ : ~에 대해 사과하다" } },
 
-  { word:"apparatus", pron:"애퍼래터스", pos:"n", level:"C1", meanings:["장치","기구"],
+  { word:"apparatus", exams:["공무원"], pron:"애퍼래터스", pos:"n", level:"C1", meanings:["장치","기구"],
     syn:["equipment","device","machinery"],
     ex:[{ s:"The lab installed new breathing {{}}.", f:"apparatus", ko:"실험실은 새 호흡 장치를 설치했다." }] },
 
@@ -1298,7 +1298,7 @@ window.VOCAB = [
     syn:["gathering","congress","meeting"],
     ex:[{ s:"The {{}} voted to delay the new law.", f:"assembly", ko:"의회는 새 법을 미루기로 표결했다." }] },
 
-  { word:"assert", pron:"어서트", pos:"v", level:"C1", meanings:["단언하다","주장하다"],
+  { word:"assert", exams:["공무원"], pron:"어서트", pos:"v", level:"C1", meanings:["단언하다","주장하다"],
     syn:["declare","affirm","maintain"], ant:["deny"],
     ex:[{ s:"She continued to {{}} her innocence.", f:"assert", ko:"그녀는 계속 자신의 결백을 주장했다." }] },
 
@@ -1469,7 +1469,7 @@ window.VOCAB = [
     syn:["nuclear","subatomic","molecular"],
     ex:[{ s:"The museum explains {{}} energy simply.", f:"atomic", ko:"그 박물관은 원자력 에너지를 쉽게 설명한다." }] },
 
-  { word:"attach", pron:"어태치", pos:"v", level:"B1", meanings:["첨부하다","붙이다"],
+  { word:"attach", exams:["공무원"], pron:"어태치", pos:"v", level:"B1", meanings:["첨부하다","붙이다"],
     syn:["fasten","affix","append"], ant:["detach"],
     ex:[{ s:"Please {{}} your resume to the email.", f:"attach", ko:"이메일에 이력서를 첨부해 주세요." }] },
 
@@ -1485,7 +1485,7 @@ window.VOCAB = [
     syn:["achievement","accomplishment","success"], ant:["failure"],
     ex:[{ s:"The award honors lifetime {{}} in science.", f:"attainment", ko:"그 상은 과학 분야의 평생 업적을 기린다." }] },
 
-  { word:"attempt", pron:"어템트", pos:"v", level:"B1", meanings:["시도하다","노력하다"],
+  { word:"attempt", exams:["공무원"], pron:"어템트", pos:"v", level:"B1", meanings:["시도하다","노력하다"],
     syn:["try","endeavor","strive"],
     ex:[{ s:"She will {{}} the exam again next month.", f:"attempt", ko:"그녀는 다음 달에 그 시험에 다시 도전할 것이다." }] },
 
@@ -1512,7 +1512,7 @@ window.VOCAB = [
     syn:["loft","garret","upper room"], ant:["basement"],
     ex:[{ s:"Old letters were stored in the {{}}.", f:"attic", ko:"오래된 편지들은 다락방에 보관되어 있었다." }] },
 
-  { word:"attire", pron:"어타이어", pos:"n", level:"C1", meanings:["의복","복장"],
+  { word:"attire", exams:["공무원"], pron:"어타이어", pos:"n", level:"C1", meanings:["의복","복장"],
     syn:["clothing","dress","garb"],
     ex:[{ s:"Formal {{}} is required at the ceremony.", f:"attire", ko:"그 행사에는 정장 복장이 요구된다." }] },
 
@@ -1524,7 +1524,7 @@ window.VOCAB = [
     syn:["lawyer","counsel","advocate"],
     ex:[{ s:"Her {{}} advised her to stay silent.", f:"attorney", ko:"그녀의 변호사는 침묵을 지키라고 조언했다." }] },
 
-  { word:"attract", pron:"어트랙트", pos:"v", level:"B1", meanings:["끌다","매혹하다"],
+  { word:"attract", exams:["공무원"], pron:"어트랙트", pos:"v", level:"B1", meanings:["끌다","매혹하다"],
     syn:["draw","lure","entice"], ant:["repel"],
     ex:[{ s:"Bright flowers {{}} bees and butterflies.", f:"attract", ko:"화려한 꽃은 벌과 나비를 끌어들인다." }] },
 
@@ -1547,7 +1547,7 @@ window.VOCAB = [
     syn:["perceptible","clear","discernible"], ant:["inaudible"],
     ex:[{ s:"Her voice was barely {{}} over the wind.", f:"audible", ko:"그녀의 목소리는 바람 소리에 거의 들리지 않았다." }] },
 
-  { word:"audience", pron:"오디언스", pos:"n", level:"B1", meanings:["관객","청중"],
+  { word:"audience", exams:["공무원"], pron:"오디언스", pos:"n", level:"B1", meanings:["관객","청중"],
     syn:["spectators","viewers","listeners"],
     ex:[{ s:"The {{}} clapped for a full minute.", f:"audience", ko:"관객은 꼬박 1분간 박수를 쳤다." }] },
 

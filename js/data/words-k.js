@@ -39,7 +39,7 @@ window.VOCAB_K = [
   { word:"keep pace with", pron:"킵 페이스 위드", pos:"phr", level:"B2", meanings:["~와 보조를 맞추다"],
     syn:["move in step with","stay level with","match the speed of"] },
 
-  { word:"keep up with", pron:"킵 업 위드", pos:"phr", level:"B1", meanings:["~에 뒤지지 않다","~에 정통하다"],
+  { word:"keep up with", exams:["공무원"], pron:"킵 업 위드", pos:"phr", level:"B1", meanings:["~에 뒤지지 않다","~에 정통하다"],
     syn:["stay abreast of","follow closely","not fall behind"] },
 
   { word:"kerosene", pron:"케러신", pos:"n", level:"C1", meanings:["등유"],
