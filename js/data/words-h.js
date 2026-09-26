@@ -677,6 +677,7 @@ Object.assign(window.GLOSS, {
   "spend time with":"~와 시간을 보내다",
   "spotlight":"주목하다",
   "squeaky":"삐걱거리는",
+  "stash": "몰래 모아 둔 것",
   "stature":"키, 신장",
   "steamy":"후텁지근한",
   "terrifying":"공포스러운",

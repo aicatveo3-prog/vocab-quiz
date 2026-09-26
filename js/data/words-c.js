@@ -2159,6 +2159,7 @@ Object.assign(window.GLOSS, {
   "rudeness":"무례함",
   "scattering":"흩어짐, 산재",
   "scheming": "모략을 꾸미는",
+  "shutdown": "가동 중단, 휴업",
   "simple":"단순한",
   "single-sex":"남녀를 구분한",
   "soggy":"축축한, 질척한",
@@ -2169,6 +2170,8 @@ Object.assign(window.GLOSS, {
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
   "succumb":"굴복하다, 쓰러지다",
+  "thought": "생각, 사려",
+  "together": "다 같이, 한꺼번에",
   "undisputed":"논란의 여지가 없는",
   "unrelated":"관련 없는",
   "unusual":"흔하지 않은",
@@ -2179,5 +2182,6 @@ Object.assign(window.GLOSS, {
   "violate":"위반하다",
   "warm":"따뜻한",
   "weak":"약한",
+  "weather": "날씨, 기상",
   "whole":"전체"
 });

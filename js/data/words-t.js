@@ -1772,6 +1772,7 @@ Object.assign(window.GLOSS, {
   "term in a post": "자리를 맡는 기간",
   "test run": "미리 해 보는 시험",
   "the opposite way": "맞은 쪽으로",
+  "thereupon": "그 결과, 그 즉시",
   "thin vessel for samples": "시료를 담는 가는 그릇",
   "think it is owed": "받아야 할 것이라 여기다",
   "thread running through": "전체를 꿰는 실마리",

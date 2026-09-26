@@ -2113,7 +2113,12 @@ Object.assign(window.GLOSS, {
   "resonate": "울려 퍼지다, 공명하다",
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
+  "senior": "연장자의, 노년의",
+  "staff member": "직원",
+  "staffer": "부서원, 사원",
   "streamlined":"간소화된, 군더더기 없는",
+  "subjugate": "예속시키다, 정복하다",
+  "teacher": "선생님",
   "tolerant":"너그러운, 관대한",
   "unfair": "불공평한",
   "usefulness":"유용성",
@@ -2391,6 +2396,7 @@ Object.assign(window.GLOSS, {
   "trip":"여행, 이동",
   "wield":"휘두르다, 행사하다",
   "worked up":"들뜬",
+  "worker": "일꾼, 근로자",
   "worn out":"녹초가 된",
 
   /* ── 11차: exhilarating ~ explicit (38개) ───────────────── */
@@ -2480,5 +2486,6 @@ Object.assign(window.GLOSS, {
   "snuff out":"꺼 버리다",
   "sociable type":"어울리기 좋아하는 사람",
   "ugly sight":"보기 흉한 광경",
-  "wiping out":"완전히 없앰"
+  "wiping out":"완전히 없앰",
+  "young": "젊은"
 });

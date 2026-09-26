@@ -1055,6 +1055,7 @@ Object.assign(window.GLOSS, {
   "relief":"안도, 경감",
   "report to":"~에게 보고하다, ~의 지휘를 받다",
   "resonate with":"~에게 공감을 얻다",
+  "scorching": "몹시 뜨거운, 찌는 듯한",
   "secondhand":"중고의",
   "setback":"차질, 방해",
   "silence":"침묵, 정적",

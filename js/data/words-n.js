@@ -686,6 +686,7 @@ Object.assign(window.GLOSS, {
   "unworldly": "세상을 모르는",
   "usual pattern": "으레 그러한 틀",
   "veteran": "오래 해 온 사람",
+  "vicinity": "부근, 근처",
   "voice-over": "화면 밖 목소리",
   "wandering": "떠돌아다니는",
   "wayfinding": "길을 찾아냄",
