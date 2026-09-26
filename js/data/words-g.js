@@ -52,6 +52,7 @@ window.VOCAB_G = [
   { word:"gain", exams:["공무원"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
   { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
+  { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -758,6 +759,7 @@ Object.assign(window.GLOSS, {
   "landscape":"풍경, 지형",
   "lattice":"격자 구조",
   "lifelike":"실물 같은",
+  "little by little": "조금씩",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
   "mesh":"그물망",
@@ -777,6 +779,7 @@ Object.assign(window.GLOSS, {
   "precept":"계율, 가르침",
   "prefer":"더 좋아하다",
   "preside over":"~을 주재하다",
+  "progressively": "점진적으로",
   "puff":"숨을 가쁘게 쉬다",
   "pull through":"이겨 내다",
   "pulverize":"가루로 만들다",
@@ -802,6 +805,7 @@ Object.assign(window.GLOSS, {
   "squall":"스콜, 돌풍",
   "star system":"항성계",
   "stark":"냉혹한, 황량한",
+  "steadily": "꾸준히",
   "stick":"달라붙다",
   "style":"양식, 형식",
   "succumb to":"~에 무너지다",

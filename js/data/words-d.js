@@ -126,6 +126,7 @@ window.VOCAB_D = [
   { word:"deepen", exams:["공무원"], pron:"디펀", pos:"v", level:"B2", meanings:["깊게 하다","심화시키다"], syn:["intensify","heighten","strengthen"], ex:[{ s:"Educational programs {{}} historical understanding among citizens.", f:"deepen", ko:"교육 프로그램은 시민들의 역사 이해를 깊게 한다." }] },
   { word:"defense", exams:["공무원"], pron:"디펜스", pos:"n", level:"B1", meanings:["방어","수비"], syn:["protection","security","guard"], ant:["attack","offense"], ex:[{ s:"More daytime sunlight gives children a better {{}} against blue light.", f:"defense", ko:"낮에 햇빛을 더 쬐면 아이들은 블루라이트를 더 잘 막아 낸다." }], gov:{ prep:["against"], usage:"(a) defense against ~ : ~에 대한 방어" } },
   { word:"driving force", exams:["공무원"], pron:"드라이빙 포스", pos:"phr", level:"B2", meanings:["원동력","추진력"] },
+  { word:"dependence", exams:["공무원"], pron:"디펜던스", pos:"n", level:"B2", meanings:["의존","의존성"], ant:["independence","autonomy"], ex:[{ s:"Latin America is reducing its {{}} on oil.", f:"dependence", ko:"라틴 아메리카는 석유 의존도를 줄이고 있다." }], gov:{ prep:["on","upon"], usage:"dependence on ~ : ~에 대한 의존" } },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1919,7 +1920,6 @@ Object.assign(window.GLOSS, {
   "drab":"칙칙한, 단조로운",
   "drowse":"졸다, 선잠 자다",
   "expected":"예상되는, 예정된",
-  "extreme":"극단적인, 지나친",
   "fend off":"막아 내다, 물리치다",
   "flabbergasted":"몹시 놀란, 기가 막힌",
   "harp on":"~을 되풀이해 말하다",

@@ -30,6 +30,7 @@ window.VOCAB_B = [
   { word:"broad", exams:["공무원"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"The program has {{}} support from national organizations.", f:"broad", ko:"그 프로그램은 국가 기관들로부터 폭넓은 지지를 받는다." }] },
   { word:"better safe than sorry", exams:["공무원"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
   { word:"buildup", exams:["공무원"], pron:"빌드업", pos:"n", level:"C1", meanings:["축적","증강"], syn:["accumulation","growth","escalation"], ex:[{ s:"Daily sunshine creates a protective {{}} against blue light.", f:"buildup", ko:"매일 햇빛을 쬐면 블루라이트에 맞서는 보호막이 쌓인다." }] },
+  { word:"booming", exams:["공무원"], pron:"부밍", pos:"adj", level:"B2", meanings:["호황을 누리는","급성장하는"], syn:["thriving","flourishing","prosperous"], ant:["declining"], ex:[{ s:"Tourism is {{}} in the region these days.", f:"booming", ko:"요즘 그 지역에서는 관광업이 호황을 누리고 있다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],
@@ -1012,6 +1013,7 @@ Object.assign(window.GLOSS, {
   "confident":"자신 있는, 확신하는",
   "cowardice":"비겁함",
   "cursed": "저주받은",
+  "declining": "쇠퇴하는, 감소하는",
   "disembark":"하선하다, 내리다",
   "divide":"나누다, 갈라놓다",
   "double-cross": "배반하다, 뒤통수치다",

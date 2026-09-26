@@ -65,6 +65,7 @@ window.VOCAB_C = [
   { word:"clear up", exams:["공무원"], pron:"클리어 업", pos:"phr", level:"B2", meanings:["날이 개다","해결하다"] },
   { word:"collectible", exams:["공무원"], pron:"컬렉터블", pos:"n", level:"C1", meanings:["수집품","수집할 가치가 있는 물건"], ex:[{ s:"This rare airline poster is a valuable {{}}.", f:"collectible", ko:"이 희귀한 항공 포스터는 값진 수집품이다." }] },
   { word:"crafty", exams:["공무원"], pron:"크래프티", pos:"adj", level:"C1", meanings:["교활한","약삭빠른"], syn:["cunning","artful","scheming"], ant:["naive"], ex:[{ s:"What matters is how much more {{}} you are than other people.", f:"crafty", ko:"중요한 것은 당신이 다른 사람들보다 얼마나 더 약삭빠른가이다." }] },
+  { word:"cash cow", exams:["공무원"], pron:"캐시 카우", pos:"phr", level:"C1", meanings:["돈줄","확실한 수익원"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],

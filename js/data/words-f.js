@@ -480,6 +480,7 @@ window.VOCAB_F = [
   { word:"for ages", exams:["공무원"], pron:"포 에이지스", pos:"phr", level:"B2", meanings:["오랫동안","아주 오래"] },
   { word:"follow up", exams:["공무원"], pron:"팔로 업", pos:"phr", level:"B2", meanings:["후속 조치를 하다","추가로 확인하다"] },
   { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
+  { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1509,6 +1510,7 @@ Object.assign(window.GLOSS, {
   "accustomed": "익숙해진",
   "allegory":"풍유, 비유",
   "allow for":"~을 감안하다",
+  "bankroll": "자금을 대 주다",
   "bear in mind":"명심하다, 유념하다",
   "cloth":"천, 옷감",
   "concoct":"꾸며내다, 조작하다",

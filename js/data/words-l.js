@@ -43,6 +43,9 @@ window.VOCAB_L = [
   { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
   { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
   { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
+  { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
+  { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
+  { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.

@@ -63,6 +63,10 @@ window.VOCAB_I = [
   { word:"individual", exams:["공무원"], pron:"인디비주얼", pos:"n", level:"B1", meanings:["개인","개인의"], ant:["collective"], ex:[{ s:"Each {{}} relies on the knowledge of others.", f:"individual", ko:"각 개인은 다른 사람들의 지식에 의존한다." }] },
   { word:"inquire", exams:["공무원"], pron:"인콰이어", pos:"v", level:"B2", meanings:["문의하다","묻다"], syn:["ask","query","investigate"], ex:[{ s:"I am writing to {{}} about the status of my application.", f:"inquire", ko:"제 지원 현황에 대해 문의드리고자 연락드립니다." }], gov:{ prep:["about","into"], usage:"inquire about ~ : ~에 대해 문의하다 · inquire into ~ : ~을 조사하다" } },
   { word:"intellect", exams:["공무원"], pron:"인털렉트", pos:"n", level:"C1", meanings:["지성","지력"], syn:["intelligence","reason","mind"], ex:[{ s:"Humans use their {{}} to outwit each other.", f:"intellect", ko:"인간은 서로를 앞지르는 데 지성을 쓴다." }] },
+  { word:"impressed", exams:["공무원"], pron:"임프레스트", pos:"adj", level:"B1", meanings:["감명받은","깊은 인상을 받은"], ex:[{ s:"The king was {{}} with the soldiers' colorful scarves.", f:"impressed", ko:"왕은 병사들의 화려한 스카프에 감명받았다." }], gov:{ prep:["with","by"], usage:"be impressed with/by ~ : ~에 감명받다" } },
+  { word:"in charge of", exams:["공무원"], pron:"인 차지 오브", pos:"phr", level:"B1", meanings:["~을 맡은","~을 책임지는"] },
+  { word:"in spite of", exams:["공무원"], pron:"인 스파이트 오브", pos:"phr", level:"B1", meanings:["~에도 불구하고"], syn:["despite","notwithstanding","regardless of"] },
+  { word:"indiscernibly", exams:["공무원"], pron:"인디서너블리", pos:"adv", level:"C2", meanings:["분간할 수 없게","알아차릴 수 없을 만큼"], ant:["markedly"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -2074,6 +2078,7 @@ Object.assign(window.GLOSS, {
   "newborn": "갓난아기",
   "non-interest-bearing": "이자가 붙지 않는",
   "not guilty": "유죄가 아닌",
+  "notwithstanding": "~에도 아랑곳없이",
   "null": "무효인",
   "occupant": "점유자",
   "off-putting": "꺼려지게 하는",

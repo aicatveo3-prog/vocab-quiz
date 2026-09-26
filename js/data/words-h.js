@@ -27,6 +27,7 @@ window.VOCAB_H = [
   { word:"harmful", exams:["공무원"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
   { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
   { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
+  { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
