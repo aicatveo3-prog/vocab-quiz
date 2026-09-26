@@ -797,6 +797,7 @@ window.VOCAB_E = [
   { word:"equitable", exams:["공무원"], pron:"에쿼터블", pos:"adj", level:"C1", meanings:["공평한","공정한"], syn:["fair","just","impartial"], ant:["unfair"], ex:[{ s:"Access to health care is not always {{}}.", f:"equitable", ko:"의료 서비스 접근이 늘 공평한 것은 아니다." }] },
   { word:"extremity", exams:["공무원"], pron:"익스트리머티", pos:"n", level:"C1", meanings:["손발","극단"] },
   { word:"extreme", exams:["공무원"], pron:"익스트림", pos:"adj", level:"B1", meanings:["극단적인","지나친"], syn:["excessive","radical","drastic"], ant:["moderate"], ex:[{ s:"Some cravats were so {{}} that a man could not move his head.", f:"extreme", ko:"어떤 크러뱃은 너무 지나쳐서 목을 움직일 수 없을 정도였다." }] },
+  { word:"exhibit", exams:["공무원"], pron:"이그지빗", pos:"v", level:"B2", meanings:["드러내다","전시하다"], syn:["display","show","demonstrate"], ex:[{ s:"The museum will {{}} the paintings until May.", f:"exhibit", ko:"그 미술관은 5월까지 그 그림들을 전시할 것이다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2240,7 +2241,6 @@ Object.assign(window.GLOSS, {
   "provide with":"~을 갖추어 주다",
   "put at risk":"위험에 놓다",
   "put in force":"효력을 발생시키다",
-  "put up with":"참고 견디다",
   "rivet":"시선을 붙들어 매다",
   "stamina":"체력, 지구력",
   "staying power":"버티는 힘",

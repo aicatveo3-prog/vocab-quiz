@@ -50,6 +50,7 @@ window.VOCAB_W = [
   { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
   { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
+  { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11

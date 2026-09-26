@@ -101,6 +101,7 @@ window.VOCAB_S = [
   { word:"sap", exams:["공무원"], pron:"샙", pos:"n", level:"C1", meanings:["수액"], ex:[{ s:"Farmers collect the {{}} from maple trees each spring.", f:"sap", ko:"농부들은 매년 봄 단풍나무에서 수액을 모은다." }] },
   { word:"slit", exams:["공무원"], pron:"슬릿", pos:"n", level:"C1", meanings:["가느다란 틈","길게 벤 자국"], ex:[{ s:"He cut a thin {{}} in the bark with a knife.", f:"slit", ko:"그는 칼로 나무껍질에 가느다란 틈을 냈다." }] },
   { word:"serve as", exams:["공무원"], pron:"서브 애즈", pos:"phr", level:"B2", meanings:["~로 쓰이다","역할을 하다"] },
+  { word:"start over", exams:["공무원"], pron:"스타트 오버", pos:"phr", level:"B1", meanings:["처음부터 다시 하다"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

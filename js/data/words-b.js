@@ -34,6 +34,7 @@ window.VOCAB_B = [
   { word:"boldness", exams:["공무원"], pron:"볼드니스", pos:"n", level:"C1", meanings:["대담함","용기"], syn:["bravery","daring","audacity"], ant:["timidity"], ex:[{ s:"Her {{}} in speaking up surprised everyone.", f:"boldness", ko:"당당히 의견을 말한 그녀의 대담함에 모두가 놀랐다." }] },
   { word:"be drawn to", exams:["공무원"], pron:"비 드론 투", pos:"phr", level:"B2", meanings:["~에 끌리다","~에 이끌리다"] },
   { word:"by chance", exams:["공무원"], pron:"바이 챈스", pos:"phr", level:"B1", meanings:["우연히"], syn:["accidentally","by accident","coincidentally"], ant:["on purpose"] },
+  { word:"brainstorm", exams:["공무원"], pron:"브레인스톰", pos:"v", level:"B2", meanings:["아이디어를 짜내다","머리를 맞대다"], ex:[{ s:"The team met to {{}} names for the new product.", f:"brainstorm", ko:"팀은 새 제품의 이름을 짜내려고 모였다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],

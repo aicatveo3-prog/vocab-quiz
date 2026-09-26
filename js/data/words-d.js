@@ -131,6 +131,8 @@ window.VOCAB_D = [
   { word:"dedication", exams:["공무원"], pron:"데디케이션", pos:"n", level:"B2", meanings:["전념","헌신"], syn:["commitment","devotion","zeal"], ex:[{ s:"Only years of {{}} can turn talent into success.", f:"dedication", ko:"오랜 헌신만이 재능을 성공으로 바꿀 수 있다." }] },
   { word:"drip", exams:["공무원"], pron:"드립", pos:"v", level:"B2", meanings:["뚝뚝 떨어지다","방울지다"], syn:["trickle","dribble","leak"], ex:[{ s:"Water began to {{}} from the ceiling.", f:"drip", ko:"천장에서 물이 뚝뚝 떨어지기 시작했다." }] },
   { word:"dye", exams:["공무원"], pron:"다이", pos:"v", level:"B1", meanings:["염색하다","염료"], ant:["bleach"], ex:[{ s:"She decided to {{}} her hair dark red.", f:"dye", ko:"그녀는 머리를 짙은 빨간색으로 염색하기로 했다." }] },
+  { word:"descent", exams:["공무원"], pron:"디센트", pos:"n", level:"C1", meanings:["하강","혈통"], ex:[{ s:"The plane began its {{}} toward the airport.", f:"descent", ko:"비행기는 공항을 향해 하강을 시작했다." }] },
+  { word:"dissimilar", exams:["공무원"], pron:"디시밀러", pos:"adj", level:"C1", meanings:["같지 않은","다른"], syn:["different","unlike","distinct"], ant:["similar"], ex:[{ s:"The two cars look {{}} but share the same engine.", f:"dissimilar", ko:"두 차는 서로 달라 보이지만 같은 엔진을 쓴다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1545,7 +1547,6 @@ Object.assign(window.GLOSS, {
   "disparager": "헐뜯는 사람",
   "dispassionate": "냉정한, 공정한",
   "displease": "불쾌하게 하다",
-  "dissimilar": "같지 않은, 다른",
   "dribble": "똑똑 떨어지다",
   "dry":"마른, 건조한",
   "dry spell": "건기, 가문 시기",
@@ -1605,7 +1606,6 @@ Object.assign(window.GLOSS, {
   "wreckage":"잔해, 난파",
 
   /* ── 2차 (declare ~ deliver) 몫 74개 ──────────── */
-  "acceleration":"가속, 촉진",
   "accidentally":"우연히, 실수로",
   "adornment":"장식, 장식품",
   "break down":"분해되다; 고장 나다",
@@ -1685,7 +1685,6 @@ Object.assign(window.GLOSS, {
   "dispossess":"소유권을 빼앗다",
   "divest":"박탈하다, 처분하다",
   "exacting":"엄격한, 힘든",
-  "exhibit":"드러내다; 전시하다",
   "fool":"속이다; 바보",
   "insist on":"~을 강력히 요구하다",
   "lament":"애통해하다, 한탄하다",

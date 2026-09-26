@@ -72,6 +72,7 @@ window.VOCAB_C = [
   { word:"connectivity", exams:["공무원"], pron:"커넥티비티", pos:"n", level:"C1", meanings:["연결성","접속"], ex:[{ s:"Rural areas still lack fast internet {{}}.", f:"connectivity", ko:"시골 지역은 아직 빠른 인터넷 연결이 부족하다." }] },
   { word:"creatively", exams:["공무원"], pron:"크리에이티블리", pos:"adv", level:"B2", meanings:["창의적으로"], syn:["imaginatively","inventively","innovatively"], ex:[{ s:"The team solved the problem {{}} with very few tools.", f:"creatively", ko:"그 팀은 아주 적은 도구로 문제를 창의적으로 해결했다." }] },
   { word:"critic", exams:["공무원"], pron:"크리틱", pos:"n", level:"B2", meanings:["평론가","비판자"], syn:["reviewer","commentator","detractor"], ant:["supporter"], ex:[{ s:"The art {{}} looked at the picture carefully.", f:"critic", ko:"그 미술 평론가는 그림을 주의 깊게 살펴보았다." }] },
+  { word:"considerably", exams:["공무원"], pron:"컨시더러블리", pos:"adv", level:"B2", meanings:["상당히","꽤"], syn:["significantly","substantially","markedly"], ant:["marginally"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],

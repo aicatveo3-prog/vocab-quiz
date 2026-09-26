@@ -58,6 +58,7 @@ window.VOCAB_T = [
   { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
   { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
   { word:"transparency", exams:["공무원"], pron:"트랜스패런시", pos:"n", level:"C1", meanings:["투명성","명료함"], syn:["openness","clarity","candor"], ant:["secrecy"], ex:[{ s:"Voters demand greater {{}} in how the budget is spent.", f:"transparency", ko:"유권자들은 예산 집행에 대해 더 큰 투명성을 요구한다." }] },
+  { word:"turn into", exams:["공무원"], pron:"턴 인투", pos:"phr", level:"B1", meanings:["~으로 바뀌다","~으로 바꾸다"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

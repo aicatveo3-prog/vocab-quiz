@@ -68,6 +68,9 @@ window.VOCAB = [
   { word:"apocalyptic", exams:["공무원"], pron:"어파컬립틱", pos:"adj", level:"C2", meanings:["종말론적인","대재앙의"], syn:["catastrophic","cataclysmic","doomsday"], ex:[{ s:"Early talks about AI often ended with {{}} warnings.", f:"apocalyptic", ko:"AI에 관한 초기 논의는 흔히 종말론적인 경고로 끝났다." }] },
   { word:"avoidance", exams:["공무원"], pron:"어보이던스", pos:"n", level:"C1", meanings:["회피","기피"], syn:["evasion","dodging","escape"], ex:[{ s:"{{}} of the problem only makes anxiety worse.", f:"Avoidance", ko:"문제를 회피하면 불안이 더 심해질 뿐이다." }] },
   { word:"advanced", exams:["공무원"], pron:"어드밴스트", pos:"adj", level:"B1", meanings:["고급의","선진의"], syn:["sophisticated","developed","cutting-edge"], ant:["elementary","rudimentary"], ex:[{ s:"Only students who pass the basic level may take {{}} classes.", f:"advanced", ko:"기초 단계를 통과한 학생만 고급 수업을 들을 수 있다." }] },
+  { word:"adaptable", exams:["공무원"], pron:"어댑터블", pos:"adj", level:"B2", meanings:["적응력 있는","융통성 있는"], syn:["flexible","versatile","adjustable","adaptive"], ant:["rigid"], ex:[{ s:"Good employees are {{}} and quickly adjust to new tasks.", f:"adaptable", ko:"좋은 직원은 적응력이 있어 새 업무에 빨리 적응한다." }] },
+  { word:"analogous", exams:["공무원"], pron:"어낼러거스", pos:"adj", level:"C1", meanings:["유사한","비슷한"], syn:["similar","comparable","parallel"], ant:["dissimilar"], ex:[{ s:"In some ways the heart is {{}} to a pump.", f:"analogous", ko:"몇 가지 면에서 심장은 펌프와 유사하다." }] },
+  { word:"acceleration", exams:["공무원"], pron:"액셀러레이션", pos:"n", level:"C1", meanings:["가속","촉진"], ex:[{ s:"The car's sudden {{}} pressed us back into our seats.", f:"acceleration", ko:"차가 갑자기 가속하자 우리는 좌석 뒤로 밀렸다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },

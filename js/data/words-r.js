@@ -2304,7 +2304,6 @@ Object.assign(window.GLOSS, {
   "trial run of a play": "연극을 미리 해 보기",
   "true to life": "실제와 꼭 같은",
   "turn away in disgust": "역겨워 등을 돌리게 하다",
-  "turn into": "~으로 바꾸다",
   "turn of a quarter circle": "동그라미의 사분의 일 만큼 꺾임",
   "turn on an axis": "축을 두고 돌다",
   "turn ripe": "익어 가다",

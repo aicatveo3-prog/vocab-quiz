@@ -77,6 +77,9 @@ window.VOCAB_M = [
   { word:"markedly", exams:["공무원"], pron:"마키들리", pos:"adv", level:"C1", meanings:["현저히","눈에 띄게"], syn:["noticeably","considerably","significantly"], ant:["marginally","slightly"], ex:[{ s:"The two reports differ so {{}} that they seem to describe different events.", f:"markedly", ko:"두 보고서는 너무나 현저히 달라서 서로 다른 사건을 다룬 것처럼 보인다." }] },
   { word:"municipality", exams:["공무원"], pron:"뮤니서팰러티", pos:"n", level:"C1", meanings:["지방 자치 단체","시 당국"], ex:[{ s:"Each {{}} runs its own recycling program.", f:"municipality", ko:"지방 자치 단체마다 자체 재활용 프로그램을 운영한다." }] },
   { word:"manageable", exams:["공무원"], pron:"매니저블", pos:"adj", level:"B2", meanings:["감당할 수 있는","다루기 쉬운"], syn:["controllable","feasible","tolerable"], ant:["unmanageable"], ex:[{ s:"Break the big task into {{}} steps.", f:"manageable", ko:"큰 일을 감당할 만한 단계로 나누어라." }] },
+  { word:"misperception", exams:["공무원"], pron:"미스퍼셉션", pos:"n", level:"C1", meanings:["오해","잘못된 인식"], syn:["misconception","misunderstanding","fallacy","misinterpretation"], ex:[{ s:"A common {{}} is that roller coasters lose energy.", f:"misperception", ko:"흔한 오해는 롤러코스터가 에너지를 잃는다는 것이다." }] },
+  { word:"mistakenly", exams:["공무원"], pron:"미스테이컨리", pos:"adv", level:"B2", meanings:["잘못하여","실수로"], syn:["wrongly","erroneously","incorrectly"], ant:["correctly"], ex:[{ s:"Many riders {{}} believe the cars run out of energy.", f:"mistakenly", ko:"많은 탑승객은 차량의 에너지가 바닥난다고 잘못 믿는다." }] },
+  { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1354,6 +1357,7 @@ Object.assign(window.GLOSS, {
   "contrivance": "고안된 장치",
   "controllable": "통제할 수 있는",
   "controlling": "지배하는, 통제하는",
+  "correctly": "올바르게",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
   "cross-border": "국경을 넘는",
@@ -1377,6 +1381,7 @@ Object.assign(window.GLOSS, {
   "enigmatic": "속을 알기 어려운",
   "enrage": "분노하게 하다",
   "eons": "영겁, 무한히 긴 세월",
+  "erroneously": "틀리게",
   "error": "잘못된 것",
   "ethnically diverse": "민족 구성이 다양한",
   "evangelist": "복음 전도자",
@@ -1440,6 +1445,7 @@ Object.assign(window.GLOSS, {
   "improper use": "옳지 않은 사용",
   "improvised": "즉석에서 만든",
   "in-law": "혼인으로 맺어진 친척",
+  "incorrectly": "부정확하게",
   "inexplicable": "설명이 안 되는",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
@@ -1645,5 +1651,6 @@ Object.assign(window.GLOSS, {
   "worth": "가치, 값어치",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
-  "wrongdoing": "비행, 부정"
+  "wrongdoing": "비행, 부정",
+  "wrongly": "그릇되게, 잘못"
 });

@@ -118,6 +118,7 @@ window.VOCAB_P = [
   { word:"provided that", exams:["공무원"], pron:"프러바이디드 댓", pos:"phr", level:"B2", meanings:["~라면","~라는 조건으로"] },
   { word:"politeness", exams:["공무원"], pron:"펄라이트니스", pos:"n", level:"B2", meanings:["예의 바름","공손함"], syn:["courtesy","civility","manners"], ant:["rudeness"], ex:[{ s:"Saying thank you is a basic form of {{}}.", f:"politeness", ko:"고맙다고 말하는 것은 예의의 기본 형태다." }] },
   { word:"paradoxically", exams:["공무원"], pron:"패러닥시컬리", pos:"adv", level:"C1", meanings:["역설적으로"], ex:[{ s:"{{}}, trying hard to fall asleep can keep you awake.", f:"Paradoxically", ko:"역설적으로, 잠들려고 애쓰면 오히려 잠이 달아날 수 있다." }] },
+  { word:"put up with", exams:["공무원"], pron:"풋 업 위드", pos:"phr", level:"B2", meanings:["참고 견디다","감수하다"], syn:["endure","tolerate","bear"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

@@ -18,6 +18,7 @@
  * 챕터는 1개이고 8단어다. MIN_TAIL(4) 이상이라 독립 챕터로 남는다.
  */
 window.VOCAB_K = [
+  { word:"kinetic", exams:["공무원"], pron:"키네틱", pos:"adj", level:"C1", meanings:["운동의","운동에 의한"], ex:[{ s:"A moving roller coaster has plenty of {{}} energy.", f:"kinetic", ko:"움직이는 롤러코스터는 운동 에너지가 풍부하다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '열심인; 날카로운' 을 글자까지 지켰다.
