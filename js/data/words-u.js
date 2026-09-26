@@ -656,7 +656,7 @@ window.VOCAB_U = [
      과 '시의' 가 겹치는데 두 글자라 자동 배제가 안 된다. 이쪽은 참조가 있어
      사전값을 지켜야 하므로 municipal 쪽을 '지방 자치의, 시의' 로 손질했다.
      metropolitan(대도시의, 수도의) 은 '도시의' 를 품어 저절로 배제된다. */
-  { word:"urban", pron:"어번", pos:"adj", level:"B1", meanings:["도시의"],
+  { word:"urban", exams:["공무원"], pron:"어번", pos:"adj", level:"B1", meanings:["도시의"],
     syn:["metropolitan","of the town","of built-up areas"],
     ex:[{ s:"{{}} life suits her well.", f:"urban", ko:"도시 생활이 그녀에게 잘 맞는다." }] },
 

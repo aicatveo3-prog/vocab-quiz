@@ -220,7 +220,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '조종하다, 조작하다' 가 원본과 글자까지 같다.
      brainwash(syn) 가 참조한다. */
-  { word:"manipulate", pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
+  { word:"manipulate", exams:["공무원"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
     syn:["brainwash","exploit","control"],
     ex:[{ s:"Advertisers try to {{}} what we want.", f:"manipulate", ko:"광고주는 우리가 원하는 것을 조종하려 한다." }] },
 
@@ -335,7 +335,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다량; 질량' 을 글자까지 지켰다. bulk(syn)·lump(syn) 두 문제가
      참조한다. 원본 첫 뜻 '덩어리' 를 쓰면 L 세트 lump·C 세트 cluster 와 첫 뜻이
      같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"mass", pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
+  { word:"mass", exams:["공무원"], pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
     syn:["bulk","lump","quantity"],
     ex:[{ s:"A {{}} of paperwork arrived that morning.", f:"mass", ko:"그날 아침 다량의 서류가 도착했다." }] },
 
@@ -668,7 +668,7 @@ window.VOCAB_M = [
      4차에서 means 의 유의어로 쓰려고 PRON 을 임시로 넣어 두었는데, 여기서
      표제어가 되면서 그 항목이 지워지고 이 pron 필드가 대신한다.
      챕터 2의 manner('방식')·챕터 4의 means('수단')와 첫 뜻이 갈린다. */
-  { word:"method", pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
+  { word:"method", exams:["공무원"], pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
     syn:["approach","technique","procedure"],
     ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
 
@@ -727,7 +727,7 @@ window.VOCAB_M = [
      emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
      원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
      같아지는 것도 함께 피할 수 있다. */
-  { word:"mimic", pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+  { word:"mimic", exams:["공무원"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
@@ -1148,7 +1148,7 @@ window.VOCAB_M = [
     ex:[{ s:"Fear is a poor long-term {{}}.", f:"motivator", ko:"두려움은 장기적으로 좋지 않은 동기 부여 요인이다." }] },
 
   /* 원본 셋째 갈래 '주제' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"motive", pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
+  { word:"motive", exams:["공무원"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
     syn:["reason","grounds","rationale"],
     ex:[{ s:"Police could find no clear {{}} for the theft.", f:"motive", ko:"경찰은 그 절도의 명확한 동기를 찾을 수 없었다." }] },
 
@@ -1185,7 +1185,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다수의, 복합적인' 을 글자까지 지켰다. complex(syn) 가
      참조하므로 원본의 순서('복합의' 가 앞)가 아니라 사전 쪽을 남겼다.
      원본 셋째 갈래 '배수의' 는 뺐다. */
-  { word:"multiple", pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
+  { word:"multiple", exams:["공무원"], pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
     syn:["complex","numerous","manifold"], ant:["single"],
     ex:[{ s:"The patient suffered {{}} injuries in the crash.", f:"multiple", ko:"그 환자는 사고로 다수의 부상을 입었다." }] },
 

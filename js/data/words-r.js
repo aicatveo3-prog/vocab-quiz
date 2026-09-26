@@ -148,7 +148,7 @@ window.VOCAB_R = [
     ex:[{ s:"The crowd listened in {{}}.", f:"rapture", ko:"군중은 황홀에 빠져 들었다." }] },
 
   /* 승격 ⑩ — 사전 표현을 글자까지 지켰다(원본은 순서가 거꾸로였다). 참조는 없다. */
-  { word:"rare", pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
+  { word:"rare", exams:["공무원"], pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
     syn:["seldom found","not often seen","thin on the ground"], ant:["common"],
     ex:[{ s:"This bird is {{}} in winter.", f:"rare", ko:"이 새는 겨울에 드물다." }] },
 
@@ -529,7 +529,7 @@ window.VOCAB_R = [
     ex:[{ s:"We {{}} him as a friend.", f:"regard", ko:"우리는 그를 친구로 여긴다." }] },
 
   /* 승격 ㊹ — 사전 단일값 유지(considering, C · in terms of, I). */
-  { word:"regarding", pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
+  { word:"regarding", exams:["공무원"], pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
     syn:["about the matter of","with respect to","on the subject of"] },
 
   { word:"regardless of", exams:["공무원"], pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
@@ -554,7 +554,7 @@ window.VOCAB_R = [
   /* 승격 ㊻ — ★ 사전·원본 모두 동사다. 명사 뜻('기록부, 명부') 을 노리던 참조
      세 곳(archive·directory·index) 을 손질하고 동사로 세웠다. 쌍반점만 쉼표로
      바뀌어 enroll·come to mind 두 곳은 구두점만 달라진다. */
-  { word:"register", pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
+  { word:"register", exams:["공무원"], pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
     syn:["enroll","put on a list","take note of"],
     ex:[{ s:"You must {{}} before Friday.", f:"register", ko:"금요일 전에 등록해야 한다." }] },
 
@@ -712,7 +712,7 @@ window.VOCAB_R = [
 
   /* 승격 62 — 사전 글자 유지(antique, A · artifact, A). ruins(폐허 · 챕터 14) 와
      갈라 '유물, 유적' 을 이 자리에 두었다. */
-  { word:"relic", pron:"렐릭", pos:"n", level:"C1", meanings:["유물","유적"],
+  { word:"relic", exams:["공무원"], pron:"렐릭", pos:"n", level:"C1", meanings:["유물","유적"],
     syn:["antique","artifact","thing left from the past"],
     ex:[{ s:"The museum holds a stone {{}}.", f:"relic", ko:"그 박물관은 돌 유물을 보관한다." }] },
 
@@ -755,7 +755,7 @@ window.VOCAB_R = [
     ex:[{ s:"He was {{}} to answer.", f:"reluctant", ko:"그는 대답하기를 꺼렸다." }] },
 
   /* 승격 66 — 사전 글자 유지(be dependent on, B · fall back on, F). */
-  { word:"rely on", pron:"릴라이 온", pos:"phr", level:"B1", meanings:["~에 의존하다"],
+  { word:"rely on", exams:["공무원"], pron:"릴라이 온", pos:"phr", level:"B1", meanings:["~에 의존하다"],
     syn:["be dependent on","fall back on","put one's trust in"] },
 
   /* 승격 67 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
@@ -918,7 +918,7 @@ window.VOCAB_R = [
 
   /* 승격 80 — 사전은 '응답하다; 대답' 으로 동사와 명사가 섞여 있었다. 원본이
      동사여서 동사로 세우고, '응답하다' 는 respond(챕터 10) 에 넘겼다. */
-  { word:"reply", pron:"리플라이", pos:"v", level:"B1", meanings:["대답하다","답장하다"],
+  { word:"reply", exams:["공무원"], pron:"리플라이", pos:"v", level:"B1", meanings:["대답하다","답장하다"],
     syn:["answer back","write back","give an answer"],
     ex:[{ s:"He did not {{}} to my note.", f:"reply", ko:"그는 내 쪽지에 답장하지 않았다." }] },
 
@@ -1308,7 +1308,7 @@ window.VOCAB_R = [
 
   /* 승격 120 — 사전 글자 유지(conceal 반의어, disclose·divulge·expose·manifest
      — 다섯 곳). */
-  { word:"reveal", pron:"리빌", pos:"v", level:"B1", meanings:["드러내다","밝히다"],
+  { word:"reveal", exams:["공무원"], pron:"리빌", pos:"v", level:"B1", meanings:["드러내다","밝히다"],
     syn:["disclose","divulge","bring to light"], ant:["conceal"],
     ex:[{ s:"He would not {{}} the name.", f:"reveal", ko:"그는 그 이름을 밝히려 하지 않았다." }] },
 
@@ -1589,7 +1589,7 @@ window.VOCAB_R = [
 
   /* 승격 147 — 사전 글자 유지(built-up 반의어, B). 원본의 '지방의' 는 province
      (지방, 주 · P) 와 부딪혀 사전값을 지켰다. */
-  { word:"rural", pron:"루럴", pos:"adj", level:"B1", meanings:["시골의","농촌의"],
+  { word:"rural", exams:["공무원"], pron:"루럴", pos:"adj", level:"B1", meanings:["시골의","농촌의"],
     syn:["of the countryside","away from the city","farming in character"], ant:["built-up"],
     ex:[{ s:"They moved to a {{}} area.", f:"rural", ko:"그들은 시골의 지역으로 옮겼다." }] },
 

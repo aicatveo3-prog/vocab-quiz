@@ -409,7 +409,7 @@ window.VOCAB_P = [
 
   /* 승격 24 — 사전 표현 '지불, 납부' 를 글자까지 지켰다(expense, E · fee, F).
      원본의 '지급, 지불; 보답; 급여' 네 갈래 중 사전 쪽을 남겼다. */
-  { word:"payment", pron:"페이먼트", pos:"n", level:"B1", meanings:["지불","납부"],
+  { word:"payment", exams:["공무원"], pron:"페이먼트", pos:"n", level:"B1", meanings:["지불","납부"],
     syn:["settling of a bill","handing over of money","remittance"],
     ex:[{ s:"We accept {{}} by card only.", f:"payment", ko:"우리는 카드 지불만 받는다." }] },
 
@@ -1122,7 +1122,7 @@ window.VOCAB_P = [
      deploy(D) 는 동사, location(L) 은 명사다. 원본 첫 뜻이 명사이고 수능에서도
      명사가 압도적이므로 명사로 세우고 deploy 쪽 유의어를 'put in place' 로
      바꿨다(words-d.js). */
-  { word:"position", pron:"퍼지션", pos:"n", level:"B1", meanings:["위치","자리"],
+  { word:"position", exams:["공무원"], pron:"퍼지션", pos:"n", level:"B1", meanings:["위치","자리"],
     syn:["location","spot where a thing stands","place taken up"],
     ex:[{ s:"Mark the {{}} of each plant on the map.", f:"position", ko:"지도에 각 식물의 위치를 표시하세요." }] },
 
@@ -1242,7 +1242,7 @@ window.VOCAB_P = [
   /* 승격 95 — 사전은 '실용적인' 한 갈래였다. 원본의 '실제적인' 을 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(commonsense, C · functional, F · impractical 반의어, I
      — 세 곳). 원본의 '타당한' 갈래는 pertinent 쪽으로 넘겼다. */
-  { word:"practical", pron:"프랙티컬", pos:"adj", level:"B1", meanings:["실용적인","실제적인"],
+  { word:"practical", exams:["공무원"], pron:"프랙티컬", pos:"adj", level:"B1", meanings:["실용적인","실제적인"],
     syn:["functional","useful in real life","down-to-earth"], ant:["impractical"],
     ex:[{ s:"She gave some {{}} advice.", f:"practical", ko:"그녀는 몇 가지 실용적인 조언을 했다." }] },
 
@@ -1423,7 +1423,7 @@ window.VOCAB_P = [
     ex:[{ s:"The report found {{}} in the hiring panel.", f:"prejudice", ko:"그 보고서는 채용 심사단에 편견이 있음을 밝혔다." }] },
 
   /* 승격 106 — 사전 표현과 글자까지 같다(initial, I). */
-  { word:"preliminary", pron:"프릴리머네리", pos:"adj", level:"B2", meanings:["예비의","사전의"],
+  { word:"preliminary", exams:["공무원"], pron:"프릴리머네리", pos:"adj", level:"B2", meanings:["예비의","사전의"],
     syn:["coming first","done to prepare","ahead of the main part"],
     ex:[{ s:"The {{}} results look promising.", f:"preliminary", ko:"예비 결과는 기대할 만해 보인다." }] },
 
@@ -1500,7 +1500,7 @@ window.VOCAB_P = [
     syn:["put forward","hand over","offer for notice"],
     ex:[{ s:"She will {{}} the findings tomorrow.", f:"present", ko:"그녀는 내일 그 결과를 제시할 것이다." }] },
 
-  { word:"presentation", pron:"프레즌테이션", pos:"n", level:"B2", meanings:["발표","제시"],
+  { word:"presentation", exams:["공무원"], pron:"프레즌테이션", pos:"n", level:"B2", meanings:["발표","제시"],
     syn:["talk given to an audience","showing of one's work","act of putting forward"],
     ex:[{ s:"Her {{}} lasted twenty minutes.", f:"presentation", ko:"그녀의 발표는 20분 동안 이어졌다." }] },
 
@@ -1636,7 +1636,7 @@ window.VOCAB_P = [
 
   /* 승격 127 — 사전은 '원시적인' 한 갈래였다. 원본의 '원시의' 는 같은 말을
      되풀이하는 셈이라 붙이지 않았다. */
-  { word:"primitive", pron:"프리머티브", pos:"adj", level:"B2", meanings:["원시적인"],
+  { word:"primitive", exams:["공무원"], pron:"프리머티브", pos:"adj", level:"B2", meanings:["원시적인"],
     syn:["of early times","rough and simple","not yet developed"],
     ex:[{ s:"They used {{}} tools.", f:"primitive", ko:"그들은 원시적인 도구를 썼다." }] },
 
@@ -1726,7 +1726,7 @@ window.VOCAB_P = [
 
   /* 승격 136 — 사전은 '과정; 처리하다' 로 명사와 동사가 섞여 있었다. 참조가
      없어 원본대로 명사로 세웠다. */
-  { word:"process", pron:"프라세스", pos:"n", level:"B1", meanings:["과정","경과"],
+  { word:"process", exams:["공무원"], pron:"프라세스", pos:"n", level:"B1", meanings:["과정","경과"],
     syn:["series of steps","way things go along","course of change"],
     ex:[{ s:"Learning is a slow {{}}.", f:"process", ko:"배움은 느린 과정이다." }] },
 
@@ -2033,7 +2033,7 @@ window.VOCAB_P = [
     syn:["mental","of the mind","to do with feelings"],
     ex:[{ s:"The injury left a {{}} scar.", f:"psychological", ko:"그 상처는 심리의 흉을 남겼다." }] },
 
-  { word:"psychology", pron:"사이칼러지", pos:"n", level:"B1", meanings:["심리학","심리 상태"],
+  { word:"psychology", exams:["공무원"], pron:"사이칼러지", pos:"n", level:"B1", meanings:["심리학","심리 상태"],
     syn:["study of the mind","science of behavior","workings of the mind"],
     ex:[{ s:"She majored in {{}}.", f:"psychology", ko:"그녀는 심리학을 전공했다." }] },
 

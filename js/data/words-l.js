@@ -260,7 +260,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '유산, 유증' 을 글자까지 지켰다.
      heritage(syn)·inheritance(syn) 두 문제가 참조한다. 첫 뜻이 그 둘과 같은데,
      그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다. */
-  { word:"legacy", pron:"레거시", pos:"n", level:"B2", meanings:["유산","유증"],
+  { word:"legacy", exams:["공무원"], pron:"레거시", pos:"n", level:"B2", meanings:["유산","유증"],
     syn:["heritage","inheritance","bequest"],
     ex:[{ s:"The museum was a {{}} from a local collector.", f:"legacy", ko:"그 박물관은 지역 수집가가 남긴 유산이었다." }] },
 
@@ -655,7 +655,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '낮추다, 내리다' 를 글자까지 지켰다. elevate(ant) 가 참조하므로
      원본의 '떨어뜨리다' 대신 사전 쪽 '내리다' 를 남겼다. */
-  { word:"lower", pron:"로워", pos:"v", level:"B1", meanings:["낮추다","내리다"],
+  { word:"lower", exams:["공무원"], pron:"로워", pos:"v", level:"B1", meanings:["낮추다","내리다"],
     syn:["reduce","drop","bring down"], ant:["elevate"],
     ex:[{ s:"Please {{}} your voice in the reading room.", f:"lower", ko:"열람실에서는 목소리를 낮춰 주세요." }] },
 

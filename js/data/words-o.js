@@ -346,7 +346,7 @@ window.VOCAB_O = [
 
   /* 승격 28 — 사전이 '공식적인; 공무원' 으로 형용사와 명사가 섞여 있었다.
      authoritative(A)·formal(F) 둘 다 형용사여서 형용사로 세우고 '관리' 는 버렸다. */
-  { word:"official", pron:"어피셜", pos:"adj", level:"B2", meanings:["공식적인","공무상의"],
+  { word:"official", exams:["공무원"], pron:"어피셜", pos:"adj", level:"B2", meanings:["공식적인","공무상의"],
     syn:["authoritative","formal","sanctioned"], ant:["unofficial"],
     ex:[{ s:"We are waiting for the {{}} result.", f:"official", ko:"우리는 공식적인 결과를 기다리고 있다." }] },
 
@@ -493,7 +493,7 @@ window.VOCAB_O = [
     syn:["run a business","work a machine","keep in action"],
     ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
 
-  { word:"operation", pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
+  { word:"operation", exams:["공무원"], pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
     syn:["surgery","running of a machine","working order"],
     ex:[{ s:"She needs an {{}} on her knee.", f:"operation", ko:"그녀는 무릎 수술이 필요하다." }] },
 
@@ -517,7 +517,7 @@ window.VOCAB_O = [
   /* 승격 43 — 사전이 '반대의; 맞은편' 으로 형용사와 명사가 섞여 있었다.
      converse(C)·inverse(I) 둘 다 형용사여서 형용사로 세웠다. 원본 첫 뜻 '반대'(n)
      를 버리자 같은 챕터의 opposition·objection(챕터 1) 과의 겹침도 함께 풀렸다. */
-  { word:"opposite", pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
+  { word:"opposite", exams:["공무원"], pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
     syn:["converse","facing","on the other side"],
     ex:[{ s:"The bakery is on the {{}} corner.", f:"opposite", ko:"그 빵집은 맞은편 모서리에 있다." }] },
 
@@ -539,7 +539,7 @@ window.VOCAB_O = [
   /* 승격 45 — 사전은 '최적의' 한 갈래였다. 원본의 '최선의' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(ideal, I). 같은 챕터의 optimum 을 명사로 세워
      겹침을 피했다. */
-  { word:"optimal", pron:"압터멀", pos:"adj", level:"C1", meanings:["최적의","최선의"],
+  { word:"optimal", exams:["공무원"], pron:"압터멀", pos:"adj", level:"C1", meanings:["최적의","최선의"],
     syn:["ideal","best suited","most favorable"],
     ex:[{ s:"Store the film at the {{}} temperature.", f:"optimal", ko:"그 필름을 최적의 온도에 보관하세요." }] },
 
@@ -902,7 +902,7 @@ window.VOCAB_O = [
 
   /* 승격 73 — 사전 표현 '기한이 지난, 뒤늦은' 을 글자까지 지켰다(belated, B).
      원본의 '기한이 지난, 밀린' 대신 사전 쪽을 남겼다. */
-  { word:"overdue", pron:"오버두", pos:"adj", level:"B2", meanings:["기한이 지난","뒤늦은"],
+  { word:"overdue", exams:["공무원"], pron:"오버두", pos:"adj", level:"B2", meanings:["기한이 지난","뒤늦은"],
     syn:["belated","past the due date","long-awaited"],
     ex:[{ s:"The library book is two weeks {{}}.", f:"overdue", ko:"그 도서관 책은 두 주 기한이 지났다." }] },
 

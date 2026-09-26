@@ -146,7 +146,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑦ — 사전 단일값 유지(참조 occur). 교재의 '일어나다' 는 come about
      자리여서 버렸고, 그 come about 을 선택지로 썼다. */
-  { word:"take place", pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
+  { word:"take place", exams:["공무원"], pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
     syn:["occur","come about","happen as planned"] },
 
   /* ── 챕터 2 ────────────────────────────────────── */
@@ -312,7 +312,7 @@ window.VOCAB_T = [
     ex:[{ s:"The new {{}} moved in on Friday.", f:"tenant", ko:"새 세입자가 금요일에 들어왔다." }] },
 
   /* 괄호 걷음. attend to(처리하다, 돌보다) 와 '돌보다' 가 맞물려 배제된다. */
-  { word:"tend", pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
+  { word:"tend", exams:["공무원"], pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
     syn:["be inclined to","look after","attend to"],
     ex:[{ s:"Prices {{}} to rise in winter.", f:"tend", ko:"값은 겨울에 오르는 경향이 있다." }] },
 
@@ -1016,7 +1016,7 @@ window.VOCAB_T = [
 
   /* ★ '운송' 을 '수송' 으로 고쳤다. 위 transit(수송, 환승) 과 글자를 맞춰
      자동 배제시킨 것이다 — 둘은 사실상 같은 말이어서 갈라 쓸 수 없었다. */
-  { word:"transportation", pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
+  { word:"transportation", exams:["공무원"], pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
     syn:["means of getting about","carriage of people","public means of travel"],
     ex:[{ s:"Public {{}} is cheap here.", f:"transportation", ko:"이곳은 대중 교통이 싸다." }] },
 
@@ -1147,7 +1147,7 @@ window.VOCAB_T = [
     syn:["hearing in court","test run","trying something out"],
     ex:[{ s:"The {{}} lasted three weeks.", f:"trial", ko:"그 재판은 삼 주간 이어졌다." }] },
 
-  { word:"trial and error", pron:"트라이얼 앤드 에러", pos:"phr", level:"B2", meanings:["시행착오"],
+  { word:"trial and error", exams:["공무원"], pron:"트라이얼 앤드 에러", pos:"phr", level:"B2", meanings:["시행착오"],
     syn:["learning by mistakes","trying until it works","feeling one's way"] },
 
   /* 승격 73 — 사전 단일값 유지(참조 clan). ★ 한국어로 적으면 shortage(부족,

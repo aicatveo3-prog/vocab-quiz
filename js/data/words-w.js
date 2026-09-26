@@ -522,7 +522,7 @@ window.VOCAB_W = [
   /* 승격 ㉙ — ★사전값을 따랐다. 교재는 '운동하다; 잘 풀리다' 인데 참조 셋
      (deduce·estimate·figure out) 이 모두 '알아냄' 쪽이다. determine·discover·
      uncover 가 '알아내다' 를 써서 세 곳과 맞물려 배제된다. */
-  { word:"work out", pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
+  { word:"work out", exams:["공무원"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
     syn:["deduce","estimate","figure out"] },
 
   /* ★ feasible(실행 가능한, 그럴듯한) 과 V 세트 viable(실행 가능한) 이 교재

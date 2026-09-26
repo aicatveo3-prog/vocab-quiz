@@ -176,7 +176,7 @@ window.VOCAB_B = [
   { word:"be caught up in", pron:"비 코트 업 인", pos:"phr", level:"B2", meanings:["~에 휘말려 들다","~에 사로잡히다"],
     syn:["be involved in","be entangled in","be absorbed in"], ant:["stay out of"] },
 
-  { word:"be committed to", pron:"비 커미티드 투", pos:"phr", level:"B2", meanings:["~에 헌신하다","~에 전념하다"],
+  { word:"be committed to", exams:["공무원"], pron:"비 커미티드 투", pos:"phr", level:"B2", meanings:["~에 헌신하다","~에 전념하다"],
     syn:["be devoted to","be dedicated to","be pledged to"], ant:["neglect"] },
 
   { word:"be compelled to do", pron:"비 컴펠드 투 두", pos:"phr", level:"C1", meanings:["할 수 없이 ~하다"],
@@ -742,11 +742,11 @@ window.VOCAB_B = [
     syn:["raise","rear","cultivate"],
     ex:[{ s:"They {{}} horses on a farm in the north.", f:"breed", ko:"그들은 북부의 한 농장에서 말을 사육한다." }] },
 
-  { word:"breeding", pron:"브리딩", pos:"n", level:"C1", meanings:["품종개량","번식"],
+  { word:"breeding", exams:["공무원"], pron:"브리딩", pos:"n", level:"C1", meanings:["품종개량","번식"],
     syn:["reproduction","rearing","cultivation"],
     ex:[{ s:"The zoo runs a {{}} program for rare birds.", f:"breeding", ko:"그 동물원은 희귀 조류 번식 프로그램을 운영한다." }] },
 
-  { word:"breeze", pron:"브리즈", pos:"n", level:"B1", meanings:["미풍","부드러운 바람"],
+  { word:"breeze", exams:["공무원"], pron:"브리즈", pos:"n", level:"B1", meanings:["미풍","부드러운 바람"],
     syn:["draft","light wind","zephyr"], ant:["gale"],
     ex:[{ s:"A cool {{}} came off the sea at sunset.", f:"breeze", ko:"해질녘 바다에서 시원한 미풍이 불어왔다." }] },
 
@@ -804,7 +804,7 @@ window.VOCAB_B = [
     syn:["agent","middleman","dealer"],
     ex:[{ s:"A {{}} arranged the sale of the property.", f:"broker", ko:"중개인이 그 부동산의 매매를 주선했다." }] },
 
-  { word:"bronze", pron:"브론즈", pos:"n", level:"B2", meanings:["청동"],
+  { word:"bronze", exams:["공무원"], pron:"브론즈", pos:"n", level:"B2", meanings:["청동"],
     syn:["casting metal","statuary metal","tin alloy"],
     ex:[{ s:"The statue in the square was cast in {{}}.", f:"bronze", ko:"광장의 그 조각상은 청동으로 주조되었다." }] },
 

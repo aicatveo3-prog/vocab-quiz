@@ -55,7 +55,7 @@ window.VOCAB_K = [
 
   /* 승격 ① — GLOSS '지식' 과 글자까지 같다. I 세트 ignorance 의 반의어로
      쓰이므로 이 갈래가 바뀌면 방금 넣은 문제 화면이 바뀐다. 원본도 한 갈래다. */
-  { word:"knowledge", pron:"날리지", pos:"n", level:"B1", meanings:["지식"],
+  { word:"knowledge", exams:["공무원"], pron:"날리지", pos:"n", level:"B1", meanings:["지식"],
     syn:["information","learning","expertise"], ant:["ignorance"],
     ex:[{ s:"Her {{}} of local plants is remarkable.", f:"knowledge", ko:"지역 식물에 대한 그녀의 지식은 놀랍다." }] }
 ];

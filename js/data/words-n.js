@@ -72,7 +72,7 @@ window.VOCAB_N = [
     syn:["innocent","unworldly","gullible"], ant:["cunning"],
     ex:[{ s:"It was {{}} to hand the key to a stranger.", f:"naive", ko:"낯선 사람에게 열쇠를 건넨 것은 순진했다." }] },
 
-  { word:"namely", pron:"네임리", pos:"adv", level:"B2", meanings:["다시 말해","즉"],
+  { word:"namely", exams:["공무원"], pron:"네임리", pos:"adv", level:"B2", meanings:["다시 말해","즉"],
     syn:["that is to say","in other words","specifically"],
     ex:[{ s:"Only one student was absent, {{}} the class monitor.", f:"namely", ko:"한 학생만 결석했는데, 즉 반장이었다." }] },
 
@@ -392,7 +392,7 @@ window.VOCAB_N = [
 
   /* 승격 27 — 사전은 '통보하다' 한 갈래였다. 원본의 '통지하다' 를 뒤에 붙였다.
      inform(I) 이 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다. */
-  { word:"notify", pron:"노터파이", pos:"v", level:"B2", meanings:["통보하다","통지하다"],
+  { word:"notify", exams:["공무원"], pron:"노터파이", pos:"v", level:"B2", meanings:["통보하다","통지하다"],
     syn:["let know","send word to","give notice to"],
     ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
 
@@ -407,7 +407,7 @@ window.VOCAB_N = [
     syn:["infamous","of bad repute","widely criticized"], ant:["esteemed"],
     ex:[{ s:"The road is {{}} for its sharp bends.", f:"notorious", ko:"그 길은 급한 굽이로 악명 높다." }] },
 
-  { word:"nourish", pron:"너리시", pos:"v", level:"B2", meanings:["영양분을 공급하다"],
+  { word:"nourish", exams:["공무원"], pron:"너리시", pos:"v", level:"B2", meanings:["영양분을 공급하다"],
     syn:["feed well","sustain with food","build up"],
     ex:[{ s:"Leafy greens {{}} the body with iron.", f:"nourish", ko:"잎채소는 몸에 철분으로 영양분을 공급한다." }] },
 

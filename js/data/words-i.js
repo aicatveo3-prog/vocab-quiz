@@ -110,7 +110,7 @@ window.VOCAB_I = [
     syn:["recognize","pinpoint","detect"],
     ex:[{ s:"Researchers were able to {{}} the virus within days.", f:"identify", ko:"연구자들은 며칠 안에 그 바이러스를 식별할 수 있었다." }] },
 
-  { word:"identity", pron:"아이덴터티", pos:"n", level:"B1", meanings:["동일함","신원"],
+  { word:"identity", exams:["공무원"], pron:"아이덴터티", pos:"n", level:"B1", meanings:["동일함","신원"],
     syn:["sameness","selfhood","individuality"],
     ex:[{ s:"The thief stole her {{}} and opened several credit accounts.", f:"identity", ko:"그 도둑은 그녀의 신원을 훔쳐 여러 신용 계좌를 개설했다." }] },
 
@@ -182,7 +182,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '착각, 환상' 이다. delusion(syn)·fantasy(syn) 두 문제가 쓴다.
      두 갈래가 다 살아 있어 원본 순서('환상' 먼저)로 맞췄다.
      원본 '오해' 는 셋째 갈래라 meanings 2개 제한에 걸려 뺐다. */
-  { word:"illusion", pron:"일루전", pos:"n", level:"B2", meanings:["환상","착각"],
+  { word:"illusion", exams:["공무원"], pron:"일루전", pos:"n", level:"B2", meanings:["환상","착각"],
     syn:["delusion","hallucination","mirage"],
     ex:[{ s:"The mirror creates the {{}} of a much larger room.", f:"illusion", ko:"그 거울은 방이 훨씬 더 커 보이는 착각을 만든다." }] },
 
@@ -252,7 +252,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '담그다; 몰입하다' 와 같은 갈래다. 참조하는 기존 문제가 없어
      원본 뜻을 그대로 썼다. PRON 에는 없었다. */
-  { word:"immerse", pron:"이머스", pos:"v", level:"C1", meanings:["빠져들게 하다","담그다"],
+  { word:"immerse", exams:["공무원"], pron:"이머스", pos:"v", level:"C1", meanings:["빠져들게 하다","담그다"],
     syn:["submerge","engross","plunge"],
     ex:[{ s:"She likes to {{}} herself in a long historical novel.", f:"immerse", ko:"그녀는 긴 역사 소설에 빠져들기를 좋아한다." }] },
 
@@ -753,7 +753,7 @@ window.VOCAB_I = [
     syn:["hesitant","wavering","irresolute"], ant:["decisive"],
     ex:[{ s:"He was too {{}} to lead a negotiation of that size.", f:"indecisive", ko:"그는 그 규모의 협상을 이끌기에는 너무 결단력이 없었다." }] },
 
-  { word:"indeed", pron:"인디드", pos:"adv", level:"B1", meanings:["정말로","사실은"],
+  { word:"indeed", exams:["공무원"], pron:"인디드", pos:"adv", level:"B1", meanings:["정말로","사실은"],
     syn:["truly","certainly","in fact"],
     ex:[{ s:"The results were {{}} better than anyone expected.", f:"indeed", ko:"결과는 정말로 누구의 예상보다도 좋았다." }] },
 
@@ -766,7 +766,7 @@ window.VOCAB_I = [
     syn:["catalog","directory","list of entries"],
     ex:[{ s:"Look up the term in the {{}} at the back of the book.", f:"index", ko:"책 뒤에 있는 색인에서 그 용어를 찾아보세요." }] },
 
-  { word:"indicate", pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],
+  { word:"indicate", exams:["공무원"], pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],
     syn:["show","signal","denote"],
     ex:[{ s:"The survey results {{}} a clear shift in public opinion.", f:"indicate", ko:"조사 결과는 여론의 뚜렷한 변화를 나타낸다." }] },
 
@@ -1646,7 +1646,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '조사하다, 살피다' 를 글자까지 지켰다. explore(syn) 가 참조하므로
      원본의 '연구하다' 대신 사전 쪽을 남겼다 — 13차의 inquiry 가 '연구, 탐구' 를
      쓰고 있어 갈래가 갈리는 이점도 있다. */
-  { word:"investigate", pron:"인베스터게이트", pos:"v", level:"B2", meanings:["조사하다","살피다"],
+  { word:"investigate", exams:["공무원"], pron:"인베스터게이트", pos:"v", level:"B2", meanings:["조사하다","살피다"],
     syn:["explore","probe","look into"],
     ex:[{ s:"Police are still working to {{}} the cause of the fire.", f:"investigate", ko:"경찰은 화재 원인을 조사하기 위해 여전히 일하고 있다." }] },
 

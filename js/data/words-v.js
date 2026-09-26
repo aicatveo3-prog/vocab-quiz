@@ -198,7 +198,7 @@ window.VOCAB_V = [
   /* 승격 ⑫ — 사전 글자 유지. 참조 enormous(E)·immense(I) 두 곳의 화면은
      바뀌지 않는다. enormous·immense·untold 가 '막대한' 을, extensive·
      limitless 가 교재의 '방대한' 을 써서 여러 곳과 맞물린다. */
-  { word:"vast", pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
+  { word:"vast", exams:["공무원"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
     syn:["enormous","immense","spread out very far"],
     ex:[{ s:"A {{}} plain lay before them.", f:"vast", ko:"광대한 평원이 그들 앞에 놓여 있었다." }] },
 
@@ -332,7 +332,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉑ — ★사전의 '버전' 은 낱말을 한글로 되풀이한 것이라 걷고 교재의
      '형태' 를 넣었다. ★ 참조 adaptation(A) 의 화면이 한 줄 바뀐다. */
-  { word:"version", pron:"버전", pos:"n", level:"B1", meanings:["판","형태"],
+  { word:"version", exams:["공무원"], pron:"버전", pos:"n", level:"B1", meanings:["판","형태"],
     syn:["adaptation","one form of a thing","a retold shape"],
     ex:[{ s:"This is the latest {{}} of the map.", f:"version", ko:"이것이 그 지도의 최신판이다." }] },
 

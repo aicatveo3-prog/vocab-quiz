@@ -550,7 +550,7 @@ window.VOCAB_F = [
     ex:[{ s:"He stayed {{}} to the promise he had made years earlier.", f:"faithful", ko:"그는 몇 해 전에 한 약속에 충실했다." }] },
 
   /* meanings 가 한 개인 이유는 이 파일 헤더 '1차 기록' 에 적었다. */
-  { word:"fake", pron:"페이크", pos:"adj", level:"B1", meanings:["가짜의"],
+  { word:"fake", exams:["공무원"], pron:"페이크", pos:"adj", level:"B1", meanings:["가짜의"],
     syn:["counterfeit","phony","sham"], ant:["genuine"],
     ex:[{ s:"Customs officers seized a crate of {{}} watches.", f:"fake", ko:"세관원들이 가짜 시계 한 상자를 압수했다." }] },
 
@@ -847,7 +847,7 @@ window.VOCAB_F = [
     syn:["result","conclusion","research outcome"],
     ex:[{ s:"The main {{}} of the study surprised its own authors.", f:"finding", ko:"그 연구의 주요 조사 결과는 저자들 자신을 놀라게 했다." }] },
 
-  { word:"fine", pron:"파인", pos:"n", level:"B2", meanings:["벌금"],
+  { word:"fine", exams:["공무원"], pron:"파인", pos:"n", level:"B2", meanings:["벌금"],
     syn:["penalty","monetary punishment","surcharge"],
     ex:[{ s:"He paid a small {{}} for parking beside the curb.", f:"fine", ko:"그는 인도 옆에 주차한 일로 적은 벌금을 냈다." }] },
 
@@ -898,7 +898,7 @@ window.VOCAB_F = [
      형용사로 두고, 세 자리 모두에서 읽히도록 ["알맞은","건강이 좋은"] 으로
      했다. 기존 사전 뜻 '맞다; 적합한' 은 athletic(몸이 튼튼한) 자리에서
      오히려 약했으므로 이 편이 낫다. */
-  { word:"fit", pron:"핏", pos:"adj", level:"B2", meanings:["알맞은","건강이 좋은"],
+  { word:"fit", exams:["공무원"], pron:"핏", pos:"adj", level:"B2", meanings:["알맞은","건강이 좋은"],
     syn:["suitable","appropriate","in good shape"],
     ex:[{ s:"The old barn is no longer {{}} for storing grain.", f:"fit", ko:"그 낡은 헛간은 더 이상 곡물 보관에 알맞지 않다." }] },
 
@@ -1025,7 +1025,7 @@ window.VOCAB_F = [
      congestion·current 는 명사 쪽으로 쓴다. 기존 사전 뜻이 '흐름, 흐르다' 로
      두 갈래를 함께 담고 있었고, 그대로 옮기면 네 문제가 모두 무변이 된다.
      pos 는 하나만 고를 수 있어 참조가 셋인 명사로 두었다. */
-  { word:"flow", pron:"플로", pos:"n", level:"B1", meanings:["흐름","흐르다"],
+  { word:"flow", exams:["공무원"], pron:"플로", pos:"n", level:"B1", meanings:["흐름","흐르다"],
     syn:["stream","steady movement","running water"],
     ex:[{ s:"Engineers measured the {{}} of the river every week.", f:"flow", ko:"기술자들은 매주 그 강의 흐름을 측정했다." }] },
 
@@ -1389,7 +1389,7 @@ window.VOCAB_F = [
     syn:["gasoline","combustible material","power source"],
     ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
 
-  { word:"fugitive", pron:"퓨저티브", pos:"n", level:"C1", meanings:["도망자"],
+  { word:"fugitive", exams:["공무원"], pron:"퓨저티브", pos:"n", level:"C1", meanings:["도망자"],
     syn:["runaway","escapee","person on the run"],
     ex:[{ s:"The {{}} was found in a barn two counties away.", f:"fugitive", ko:"그 도망자는 두 군 떨어진 헛간에서 발견되었다." }] },
 

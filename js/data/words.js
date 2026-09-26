@@ -260,7 +260,7 @@ window.VOCAB = [
     syn:["precise","exact","correct"], ant:["inaccurate"],
     ex:[{ s:"We need an {{}} count before we order.", f:"accurate", ko:"주문하기 전에 정확한 수량이 필요하다." }] },
 
-  { word:"achieve", pron:"어치브", pos:"v", level:"B1", meanings:["성취하다","달성하다"],
+  { word:"achieve", exams:["공무원"], pron:"어치브", pos:"v", level:"B1", meanings:["성취하다","달성하다"],
     syn:["attain","accomplish","reach"], ant:["fail"],
     ex:[{ s:"She worked hard to {{}} her personal best.", f:"achieve", ko:"그녀는 개인 최고 기록을 달성하려고 열심히 노력했다." }] },
 
@@ -354,7 +354,7 @@ window.VOCAB = [
     syn:["abuser","user","junkie"],
     ex:[{ s:"The clinic treats every {{}} without charge.", f:"addict", ko:"그 병원은 모든 중독자를 무료로 치료한다." }] },
 
-  { word:"additional", pron:"어디셔널", pos:"adj", level:"B1", meanings:["추가의","부가적인"],
+  { word:"additional", exams:["공무원"], pron:"어디셔널", pos:"adj", level:"B1", meanings:["추가의","부가적인"],
     syn:["extra","supplementary","further"],
     ex:[{ s:"There is an {{}} charge for late delivery.", f:"additional", ko:"늦은 배송에는 추가 요금이 있다." }] },
 
@@ -523,7 +523,7 @@ window.VOCAB = [
     syn:["artistic","tasteful","stylistic"],
     ex:[{ s:"The bridge was praised on {{}} grounds alone.", f:"aesthetic", ko:"그 다리는 미적인 이유만으로 호평받았다." }] },
 
-  { word:"affect", pron:"어펙트", pos:"v", level:"B1", meanings:["영향을 미치다","작용하다"],
+  { word:"affect", exams:["공무원"], pron:"어펙트", pos:"v", level:"B1", meanings:["영향을 미치다","작용하다"],
     syn:["influence","impact","shape"],
     ex:[{ s:"Lack of sleep can seriously {{}} memory.", f:"affect", ko:"수면 부족은 기억력에 심각한 영향을 미칠 수 있다." }] },
 
@@ -752,7 +752,7 @@ window.VOCAB = [
     syn:["shrine","sanctuary","chancel"],
     ex:[{ s:"Candles burned on the stone {{}} all night.", f:"altar", ko:"돌 제단 위에서 촛불이 밤새 타올랐다." }] },
 
-  { word:"alter", pron:"올터", pos:"v", level:"B2", meanings:["바꾸다","변경하다"],
+  { word:"alter", exams:["공무원"], pron:"올터", pos:"v", level:"B2", meanings:["바꾸다","변경하다"],
     syn:["change","modify","amend"], ant:["preserve"],
     ex:[{ s:"One small detail could {{}} the whole result.", f:"alter", ko:"작은 세부 하나가 전체 결과를 바꿀 수 있다." }] },
 
@@ -984,7 +984,7 @@ window.VOCAB = [
     syn:["relic","collectible","heirloom"],
     ex:[{ s:"The clock is a valuable {{}} from the 1800s.", f:"antique", ko:"그 시계는 1800년대의 값진 골동품이다." }] },
 
-  { word:"antiquity", pron:"앤티퀴티", pos:"n", level:"C2", meanings:["고대","아주 오래됨"],
+  { word:"antiquity", exams:["공무원"], pron:"앤티퀴티", pos:"n", level:"C2", meanings:["고대","아주 오래됨"],
     syn:["ancient times","old age","the past"], ant:["modernity"],
     ex:[{ s:"The site has been sacred since {{}}.", f:"antiquity", ko:"그 장소는 고대부터 신성하게 여겨졌다." }] },
 
@@ -1067,7 +1067,7 @@ window.VOCAB = [
   { word:"apply to", pron:"어플라이 투", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
     syn:["pertain to","relate to","concern"] },
 
-  { word:"appointment", pron:"어포인트먼트", pos:"n", level:"B1", meanings:["약속","임명"],
+  { word:"appointment", exams:["공무원"], pron:"어포인트먼트", pos:"n", level:"B1", meanings:["약속","임명"],
     syn:["meeting","engagement","nomination"],
     ex:[{ s:"I have a dental {{}} at three o'clock.", f:"appointment", ko:"나는 3시에 치과 예약이 있다." }] },
 
@@ -1075,7 +1075,7 @@ window.VOCAB = [
     syn:["assess","evaluate","value"],
     ex:[{ s:"An expert came to {{}} the old painting.", f:"appraise", ko:"전문가가 그 오래된 그림을 감정하러 왔다." }] },
 
-  { word:"appreciate", pron:"어프리시에이트", pos:"v", level:"B1", meanings:["감사하다","감상하다"],
+  { word:"appreciate", exams:["공무원"], pron:"어프리시에이트", pos:"v", level:"B1", meanings:["감사하다","감상하다"],
     syn:["value","cherish","recognize"], ant:["disregard"],
     ex:[{ s:"We truly {{}} all your help this week.", f:"appreciate", ko:"우리는 이번 주 당신의 모든 도움에 진심으로 감사한다." }] },
 
@@ -1232,11 +1232,11 @@ window.VOCAB = [
     syn:["express","voice","enunciate"], ant:["mumble"],
     ex:[{ s:"He struggled to {{}} his fears.", f:"articulate", ko:"그는 자신의 두려움을 분명히 표현하기 힘들어했다." }] },
 
-  { word:"artifact", pron:"아티팩트", pos:"n", level:"C1", meanings:["공예품","유물"],
+  { word:"artifact", exams:["공무원"], pron:"아티팩트", pos:"n", level:"C1", meanings:["공예품","유물"],
     syn:["relic","object","artefact"],
     ex:[{ s:"Each {{}} was labeled and photographed.", f:"artifact", ko:"각 유물에는 라벨이 붙고 사진이 찍혔다." }] },
 
-  { word:"artificial", pron:"아티피셜", pos:"adj", level:"B1", meanings:["인공적인","인위적인"],
+  { word:"artificial", exams:["공무원"], pron:"아티피셜", pos:"adj", level:"B1", meanings:["인공적인","인위적인"],
     syn:["synthetic","man-made","fake"], ant:["natural"],
     ex:[{ s:"The lake is {{}}, built for the city's water.", f:"artificial", ko:"그 호수는 도시의 물을 위해 만든 인공 호수다." }] },
 
@@ -1470,7 +1470,7 @@ window.VOCAB = [
     syn:["assault","strike","assail"], ant:["defend"],
     ex:[{ s:"Critics were quick to {{}} the new tax.", f:"attack", ko:"비평가들은 새 세금을 재빨리 공격했다." }] },
 
-  { word:"attain", pron:"어테인", pos:"v", level:"C1", meanings:["얻다","성취하다"],
+  { word:"attain", exams:["공무원"], pron:"어테인", pos:"v", level:"C1", meanings:["얻다","성취하다"],
     syn:["achieve","reach","accomplish"], ant:["lose"],
     ex:[{ s:"Few runners {{}} such a fast time.", f:"attain", ko:"그렇게 빠른 기록을 달성하는 주자는 드물다." }] },
 
@@ -1576,7 +1576,7 @@ window.VOCAB = [
     syn:["definitive","official","commanding"], ant:["unreliable"],
     ex:[{ s:"Her book is the most {{}} on the subject.", f:"authoritative", ko:"그녀의 책은 그 주제에 관해 가장 권위 있다." }] },
 
-  { word:"authority", pron:"어소리티", pos:"n", level:"B2", meanings:["권한","당국"],
+  { word:"authority", exams:["공무원"], pron:"어소리티", pos:"n", level:"B2", meanings:["권한","당국"],
     syn:["power","control","jurisdiction"],
     ex:[{ s:"Only the manager has the {{}} to sign.", f:"authority", ko:"오직 관리자만 서명할 권한이 있다." }] },
 
@@ -1637,7 +1637,7 @@ window.VOCAB = [
     syn:["prevent","avoid","deflect"], ant:["cause"],
     ex:[{ s:"Quick action helped {{}} a disaster.", f:"avert", ko:"신속한 조치가 재앙을 막는 데 도움이 되었다." }] },
 
-  { word:"aviation", pron:"에이비에이션", pos:"n", level:"C1", meanings:["항공","비행"],
+  { word:"aviation", exams:["공무원"], pron:"에이비에이션", pos:"n", level:"C1", meanings:["항공","비행"],
     syn:["flying","aeronautics","air travel"],
     ex:[{ s:"The museum traces the history of {{}}.", f:"aviation", ko:"그 박물관은 항공의 역사를 추적한다." }] },
 
@@ -1649,7 +1649,7 @@ window.VOCAB = [
     syn:["evade","shun","sidestep"], ant:["confront"],
     ex:[{ s:"Drivers should {{}} the flooded road.", f:"avoid", ko:"운전자들은 침수된 도로를 피해야 한다." }] },
 
-  { word:"award", pron:"어워드", pos:"n", level:"B1", meanings:["상","수상"],
+  { word:"award", exams:["공무원"], pron:"어워드", pos:"n", level:"B1", meanings:["상","수상"],
     syn:["prize","honor","accolade"],
     ex:[{ s:"She received an {{}} for her research.", f:"award", ko:"그녀는 연구로 상을 받았다." }] },
 

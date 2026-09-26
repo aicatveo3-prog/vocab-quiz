@@ -352,7 +352,7 @@ window.VOCAB_H = [
     ex:[{ s:"The factory plans to {{}} fifty new workers next month.", f:"hire", ko:"그 공장은 다음 달에 새 근로자 50명을 고용할 계획이다." }],
     gov:{ prep:["as","for"], usage:"hire A as B : A를 B로 고용하다" } },
 
-  { word:"historic", pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
+  { word:"historic", exams:["공무원"], pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
     syn:["landmark","epochal","monumental"],
     ex:[{ s:"The signing of the treaty was a truly {{}} event.", f:"historic", ko:"그 조약의 서명은 진정으로 역사적인 사건이었다." }] },
 
@@ -467,7 +467,7 @@ window.VOCAB_H = [
     ex:[{ s:"{{}} has always sought to understand the stars.", f:"Humankind", ko:"인류는 항상 별을 이해하려 했다." }] },
 
   /* 승격 ① — arrogant 의 반의어로 쓰인다. */
-  { word:"humble", pron:"험블", pos:"adj", level:"B2", meanings:["겸손한","비천한"],
+  { word:"humble", exams:["공무원"], pron:"험블", pos:"adj", level:"B2", meanings:["겸손한","비천한"],
     syn:["modest","meek","unassuming"], ant:["arrogant"],
     ex:[{ s:"Despite his fame, he remained {{}} and approachable.", f:"humble", ko:"명성에도 그는 겸손하고 다가가기 쉬운 사람이었다." }] },
 
@@ -494,7 +494,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — ego 의 반의어로 쓰인다. humble·humiliate·humiliation 과 어근이
      같지만 품사가 명사라 다른 품사와 같은 보드에 안 온다. */
-  { word:"humility", pron:"휴밀리티", pos:"n", level:"B2", meanings:["겸손"],
+  { word:"humility", exams:["공무원"], pron:"휴밀리티", pos:"n", level:"B2", meanings:["겸손"],
     syn:["modesty","meekness","humbleness"], ant:["pride"],
     ex:[{ s:"True strength lies in showing {{}} when you succeed.", f:"humility", ko:"진정한 강인함은 성공했을 때 겸손을 보이는 데 있다." }] },
 

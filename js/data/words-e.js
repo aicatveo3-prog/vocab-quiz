@@ -1211,7 +1211,7 @@ window.VOCAB_E = [
     ex:[{ s:"Two former mayors agreed to {{}} her campaign.", f:"endorse", ko:"전임 시장 두 명이 그녀의 선거 운동을 지지하기로 했다." }] },
 
   /* 원본 '(능력 등을) 주다, 기부하다' 의 괄호를 풀었다. */
-  { word:"endow", pron:"인다우", pos:"v", level:"C2", meanings:["부여하다","기부하다"],
+  { word:"endow", exams:["공무원"], pron:"인다우", pos:"v", level:"C2", meanings:["부여하다","기부하다"],
     syn:["bestow","donate","provide with"],
     ex:[{ s:"An alumnus agreed to {{}} two new scholarships.", f:"endow", ko:"한 졸업생이 새 장학금 두 건을 기부하기로 했다." }] },
 
@@ -1219,7 +1219,7 @@ window.VOCAB_E = [
     syn:["stamina","staying power","perseverance"],
     ex:[{ s:"Long-distance swimming demands {{}} more than speed.", f:"endurance", ko:"장거리 수영은 속도보다 지구력을 요구한다." }] },
 
-  { word:"endure", pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
+  { word:"endure", exams:["공무원"], pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
     syn:["bear","withstand","put up with"], ant:["succumb"],
     ex:[{ s:"The crew had to {{}} three weeks of storms.", f:"endure", ko:"승무원들은 3주간의 폭풍을 견뎌야 했다." }] },
 
@@ -1436,7 +1436,7 @@ window.VOCAB_E = [
 
   /* 3차에서 eliminate 의 유의어로 넣은 GLOSS 항목이 표제어로 올라온다 — 그 항목을
      지웠다. eliminate 쪽 뜻이 변하지 않게 '근절하다' 를 앞에 그대로 뒀다. */
-  { word:"eradicate", pron:"이래더케이트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
+  { word:"eradicate", exams:["공무원"], pron:"이래더케이트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
     syn:["root out","stamp out","wipe out"],
     ex:[{ s:"Vaccines helped {{}} the disease within a decade.", f:"eradicate", ko:"백신은 10년 안에 그 병을 근절하는 데 도움이 되었다." }] },
 
@@ -1511,7 +1511,7 @@ window.VOCAB_E = [
      7차의 eradicate 와 같은 경우다. 그 항목을 지우고 뜻 "확립된, 기성의" 를 그대로
      옮겨 emerging 쪽이 변하지 않게 했다. 원본의 갈래 넷(인정받는·확실히 자리 잡은·
      저명한·존경받는)은 recognized·long-standing 을 유의어로 넣어 살렸다. */
-  { word:"established", pron:"이스태블리시트", pos:"adj", level:"B2", meanings:["확립된","기성의"],
+  { word:"established", exams:["공무원"], pron:"이스태블리시트", pos:"adj", level:"B2", meanings:["확립된","기성의"],
     syn:["long-standing","recognized","well-founded"], ant:["emerging"],
     ex:[{ s:"She left an {{}} firm to start her own.", f:"established", ko:"그녀는 자리 잡은 회사를 떠나 자기 사업을 시작했다." }] },
 
@@ -1710,7 +1710,7 @@ window.VOCAB_E = [
     ex:[{ s:"The club remains {{}} about who may join.", f:"exclusive", ko:"그 클럽은 누가 가입할 수 있는지에 배타적이다." }] },
 
   /* 원본은 '오로지, 오직 ~만, 배타적으로' 로 셋인데 앞 둘이 같은 말이라 둘로 줄였다. */
-  { word:"exclusively", pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
+  { word:"exclusively", exams:["공무원"], pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
     syn:["only","solely","entirely"],
     ex:[{ s:"The shop sells {{}} secondhand books.", f:"exclusively", ko:"그 가게는 오로지 중고 책만 판다." }] },
 
@@ -1873,7 +1873,7 @@ window.VOCAB_E = [
     syn:["specialist","master","skilled person"],
     ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
 
-  { word:"expertise", pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
+  { word:"expertise", exams:["공무원"], pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
     syn:["know-how","special skill","technical knowledge"],
     ex:[{ s:"Restoring the clock needs real {{}}.", f:"expertise", ko:"그 시계를 복원하려면 진짜 전문 지식이 필요하다." }] },
 
@@ -1944,7 +1944,7 @@ window.VOCAB_E = [
     syn:["reveal","uncover","bring to light"], ant:["conceal"],
     ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
 
-  { word:"exposure", pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
+  { word:"exposure", exams:["공무원"], pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
     syn:["being exposed","revelation","uncovering"],
     ex:[{ s:"Long {{}} to the sun cracked the paint.", f:"exposure", ko:"오랜 햇빛 노출이 그 페인트를 갈라지게 했다." }] },
 
@@ -2021,7 +2021,7 @@ window.VOCAB_E = [
      앞에 두고 기존 GLOSS 의 '발췌하다' 를 둘째 뜻으로 남겼다. 품사는 동사이므로
      clipping 쪽은 어미가 바뀌지만 뜻은 지켜진다(7차 equal 과 같은 꼴).
      유의어로 pull out 은 쓰지 않았다 — GLOSS 가 "물러나다, 손을 떼다" 다. */
-  { word:"extract", pron:"익스트랙트", pos:"v", level:"C1", meanings:["추출하다","발췌하다"],
+  { word:"extract", exams:["공무원"], pron:"익스트랙트", pos:"v", level:"C1", meanings:["추출하다","발췌하다"],
     syn:["draw out","distill","take out"],
     ex:[{ s:"Machines now {{}} sugar from beet in one pass.", f:"extract", ko:"기계는 이제 한 번에 사탕무에서 설탕을 추출한다." }] },
 

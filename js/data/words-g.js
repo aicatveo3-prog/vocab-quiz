@@ -132,7 +132,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '유전자' 와 글자까지 같다. chromosome 의 유의어로 쓰인다.
      syn 은 비웠다 — 유전자의 동의어라 할 만한 낱말이 없다. */
-  { word:"gene", pron:"진", pos:"n", level:"B2", meanings:["유전자"],
+  { word:"gene", exams:["공무원"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
     ex:[{ s:"Scientists located the {{}} responsible for the disorder.", f:"gene", ko:"과학자들은 그 질환을 일으키는 유전자를 찾아냈다." }] },
 
   { word:"genealogy", pron:"지니앨러지", pos:"n", level:"C1", meanings:["계보","족보"],
@@ -141,7 +141,7 @@ window.VOCAB_G = [
 
   /* 원본은 '일반의, 전반에 걸치는; 육군 장군' 이다. 두 갈래는 품사가 달라
      한 카드에 담으면 뜻이 흐려진다. 형용사 쪽으로 모았다. */
-  { word:"general", pron:"제너럴", pos:"adj", level:"B1", meanings:["일반의","전반적인"],
+  { word:"general", exams:["공무원"], pron:"제너럴", pos:"adj", level:"B1", meanings:["일반의","전반적인"],
     syn:["overall","widespread","broad"], ant:["specific"],
     ex:[{ s:"There is {{}} agreement that the plan should go ahead.", f:"general", ko:"그 계획을 진행해야 한다는 데 전반적인 동의가 있다." }] },
 
@@ -453,7 +453,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '웅장한, 원대한' 과 같은 갈래다. 참조하는 기존 문제는 없어
      원본의 '웅장한, 장엄한' 을 그대로 썼다. */
-  { word:"grand", pron:"그랜드", pos:"adj", level:"B1", meanings:["웅장한","장엄한"],
+  { word:"grand", exams:["공무원"], pron:"그랜드", pos:"adj", level:"B1", meanings:["웅장한","장엄한"],
     syn:["majestic","imposing","stately"], ant:["modest"],
     ex:[{ s:"Guests entered through a {{}} marble hall.", f:"grand", ko:"손님들은 웅장한 대리석 홀을 지나 들어왔다." }] },
 

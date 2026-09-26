@@ -335,7 +335,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑳ — 사전 단일값 유지. 참조 intellectual(I)·learned(L) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"scholarly", pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
+  { word:"scholarly", exams:["공무원"], pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
     syn:["academic","learned","intellectual"],
     ex:[{ s:"He wrote a {{}} article on the topic.", f:"scholarly", ko:"그는 그 주제로 학문적인 논문을 썼다." }] },
 
@@ -594,11 +594,11 @@ window.VOCAB_S = [
 
   /* 승격 ㊲ — ★ 원본 '감동, 대사건' 은 뜻이 어긋난다. 참조 marvel(M) 과 맞는
      사전값 '큰 화제' 를 지켰다 — 그 한 곳의 화면은 바뀌지 않는다. */
-  { word:"sensation", pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제"],
+  { word:"sensation", exams:["공무원"], pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제","감각"],
     syn:["marvel","talk of the town","thing everyone speaks of"],
     ex:[{ s:"Her first novel became a {{}}.", f:"sensation", ko:"그녀의 첫 소설은 큰 화제가 되었다." }] },
 
-  { word:"sensational", pron:"센세이셔널", pos:"adj", level:"B2", meanings:["선풍적인","아주 멋진"],
+  { word:"sensational", exams:["공무원"], pron:"센세이셔널", pos:"adj", level:"B2", meanings:["선풍적인","아주 멋진"],
     syn:["causing a stir","hugely exciting","dazzling to see"],
     ex:[{ s:"The team made a {{}} comeback.", f:"sensational", ko:"그 팀은 선풍적인 역전을 이뤄 냈다." }] },
 
@@ -723,7 +723,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊽ — 사전 글자 유지. 참조 context(C)·environment(E) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"setting", pron:"세팅", pos:"n", level:"B2", meanings:["환경","배경"],
+  { word:"setting", exams:["공무원"], pron:"세팅", pos:"n", level:"B2", meanings:["환경","배경"],
     syn:["context","environment","surroundings of a scene"],
     ex:[{ s:"The novel has a rural {{}}.", f:"setting", ko:"그 소설은 시골을 배경으로 한다." }] },
 
@@ -1100,7 +1100,7 @@ window.VOCAB_S = [
     syn:["shoot up fast","rise steeply","climb at great speed"],
     ex:[{ s:"House prices began to {{}}.", f:"skyrocket", ko:"집값이 급등하기 시작했다." }] },
 
-  { word:"skyscraper", pron:"스카이스크레이퍼", pos:"n", level:"B2", meanings:["고층 건물"],
+  { word:"skyscraper", exams:["공무원"], pron:"스카이스크레이퍼", pos:"n", level:"B2", meanings:["고층 건물"],
     syn:["very tall building","high-rise tower","building of many floors"],
     ex:[{ s:"A new {{}} rose beside the river.", f:"skyscraper", ko:"강 옆에 새 고층 건물이 올라갔다." }] },
 
@@ -1338,7 +1338,7 @@ window.VOCAB_S = [
 
   /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
      '해결책; 용액' 에서 '해결책, 용액' 이 된다. */
-  { word:"solution", pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
+  { word:"solution", exams:["공무원"], pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
     syn:["answer to a problem","way out of trouble","liquid mixture"],
     ex:[{ s:"They looked for a simple {{}}.", f:"solution", ko:"그들은 간단한 해결책을 찾았다." }] },
 
@@ -1468,7 +1468,7 @@ window.VOCAB_S = [
   /* 승격 114 — 사전 글자 유지. 참조가 여섯 곳(concrete·definite·detail·general·
      generic·particular) 인데 하나도 바뀌지 않는다 — 챕터 5 의 separate 와 함께
      이 세트에서 참조가 가장 많은 자리다. */
-  { word:"specific", pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
+  { word:"specific", exams:["공무원"], pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
     syn:["concrete","definite","particular"], ant:["general","generic"],
     ex:[{ s:"Give me a {{}} example.", f:"specific", ko:"구체적인 예를 하나 들어 보라." }] },
 
@@ -1877,7 +1877,7 @@ window.VOCAB_S = [
 
   /* 승격 149 — 사전 글자 유지. 참조 citizenship(C) 의 화면은 바뀌지 않는다.
      챕터 15 의 state 가 넘긴 '상태' 를 이 낱말이 받는다. */
-  { word:"status", pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
+  { word:"status", exams:["공무원"], pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
     syn:["citizenship","rank in society","place one holds"],
     ex:[{ s:"Her legal {{}} is still unclear.", f:"status", ko:"그녀의 법적 지위는 아직 분명하지 않다." }] },
 
@@ -2074,7 +2074,7 @@ window.VOCAB_S = [
     ex:[{ s:"One {{}} of hair lay on the desk.", f:"strand", ko:"머리카락 한 가닥이 책상에 놓여 있었다." }] },
 
   /* 승격 171 — 사전 단일값 유지. 참조는 없다. */
-  { word:"strategy", pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
+  { word:"strategy", exams:["공무원"], pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
     syn:["plan of action","long-term plan","way worked out in advance"],
     ex:[{ s:"They changed their {{}} at halftime.", f:"strategy", ko:"그들은 전반이 끝나고 전략을 바꿨다." }] },
 
@@ -2224,7 +2224,7 @@ window.VOCAB_S = [
   /* 승격 187 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 cave in(C)·comply(C) 두 곳의
      설명이 '제출하다; 굴복하다' 에서 '제출하다, 굴복하다' 가 된다.
      surrender(항복하다 · 챕터 21) 와는 갈라 두었다. */
-  { word:"submit", pron:"섭미트", pos:"v", level:"B1", meanings:["제출하다","굴복하다"],
+  { word:"submit", exams:["공무원"], pron:"섭미트", pos:"v", level:"B1", meanings:["제출하다","굴복하다"],
     syn:["cave in","comply","hand in for review"],
     ex:[{ s:"Please {{}} the form by Friday.", f:"submit", ko:"금요일까지 그 서식을 제출해 주세요." }] },
 
@@ -2284,7 +2284,7 @@ window.VOCAB_S = [
   /* 승격 194 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 다섯 곳(chemical·content·
      gist·material·matter) 의 설명이 '물질; 본질' 에서 '물질, 본질' 이 된다.
      matter(문제, 물질) 와 '물질' 이 같아 자동 배제된다. */
-  { word:"substance", pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
+  { word:"substance", exams:["공무원"], pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
     syn:["chemical","gist","matter"],
     ex:[{ s:"The jar held an odd {{}}.", f:"substance", ko:"그 병에는 이상한 물질이 들어 있었다." }] },
 
@@ -2500,7 +2500,7 @@ window.VOCAB_S = [
 
   /* 승격 217 — 사전 첫 갈래만 남겼다. 동사 쪽을 쓰던 come into sight(C) 의 그
      자리를 'rise into view' 로 갈았다. 다른 참조 deck(D) 은 명사라 맞는다. */
-  { word:"surface", pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
+  { word:"surface", exams:["공무원"], pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
     syn:["outer face of a thing","top layer","outside skin"],
     ex:[{ s:"Dust settled on every {{}}.", f:"surface", ko:"먼지가 모든 표면에 내려앉았다." }] },
 
@@ -2541,7 +2541,7 @@ window.VOCAB_S = [
     ex:[{ s:"They found a {{}} parent for the cub.", f:"surrogate", ko:"그들은 그 새끼에게 대리 어미를 찾아 주었다." }] },
 
   /* 승격 223 — 사전 글자 유지. 참조 enclose(E) 의 화면은 바뀌지 않는다. */
-  { word:"surround", pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
+  { word:"surround", exams:["공무원"], pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
     syn:["enclose","ring about","shut in on all sides"],
     ex:[{ s:"Tall trees {{}} the house.", f:"surround", ko:"키 큰 나무들이 그 집을 둘러싼다." }] },
 

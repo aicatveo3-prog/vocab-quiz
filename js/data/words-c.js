@@ -74,7 +74,7 @@ window.VOCAB_C = [
     syn:["computation","reckoning","estimation"], ant:["guesswork"],
     ex:[{ s:"A single error ruined the whole {{}}.", f:"calculation", ko:"단 하나의 오류가 계산 전체를 망쳤다." }] },
 
-  { word:"call for", pron:"콜 포", pos:"phr", level:"B2", meanings:["필요로 하다","요구하다"],
+  { word:"call for", exams:["공무원"], pron:"콜 포", pos:"phr", level:"B2", meanings:["필요로 하다","요구하다"],
     syn:["demand","require","necessitate"], ant:["refuse"] },
 
   { word:"call it a day", pron:"콜 잇 어 데이", pos:"phr", level:"B2", meanings:["일을 그만하다","하루 일을 마치다"],
@@ -360,7 +360,7 @@ window.VOCAB_C = [
     syn:["assurance","conviction","surety"], ant:["doubt"],
     ex:[{ s:"No one can predict the weather with {{}}.", f:"certainty", ko:"누구도 날씨를 확실하게 예측할 수는 없다." }] },
 
-  { word:"certificate", pron:"서티피킷", pos:"n", level:"B1", meanings:["증서","자격증"],
+  { word:"certificate", exams:["공무원"], pron:"서티피킷", pos:"n", level:"B1", meanings:["증서","자격증"],
     syn:["diploma","document","license"],
     ex:[{ s:"You must show a birth {{}} to apply.", f:"certificate", ko:"신청하려면 출생 증명서를 제시해야 한다." }] },
 
@@ -555,7 +555,7 @@ window.VOCAB_C = [
     syn:["quote","mention","reference"],
     ex:[{ s:"The judge went on to {{}} three earlier rulings.", f:"cite", ko:"판사는 이어 이전 판결 세 건을 인용했다." }] },
 
-  { word:"citizenship", pron:"시티즌십", pos:"n", level:"B2", meanings:["시민권"],
+  { word:"citizenship", exams:["공무원"], pron:"시티즌십", pos:"n", level:"B2", meanings:["시민권"],
     syn:["nationality","residency","status"],
     ex:[{ s:"He applied for {{}} after ten years abroad.", f:"citizenship", ko:"그는 10년간 외국에 산 뒤 시민권을 신청했다." }] },
 
@@ -625,7 +625,7 @@ window.VOCAB_C = [
     syn:["platitude","banality","truism"],
     ex:[{ s:"The speech was built out of tired {{}}.", f:"cliches", ko:"그 연설은 낡은 상투적 표현으로 짜여 있었다." }] },
 
-  { word:"client", pron:"클라이언트", pos:"n", level:"B1", meanings:["의뢰인","고객"],
+  { word:"client", exams:["공무원"], pron:"클라이언트", pos:"n", level:"B1", meanings:["의뢰인","고객"],
     syn:["customer","patron","buyer"],
     ex:[{ s:"Every {{}} gets the same first meeting.", f:"client", ko:"모든 의뢰인은 똑같은 첫 상담을 받는다." }] },
 
@@ -789,7 +789,7 @@ window.VOCAB_C = [
   { word:"come to pass", pron:"컴 투 패스", pos:"phr", level:"C2", meanings:["발생하다","생기다"],
     syn:["happen","transpire","unfold"] },
 
-  { word:"come up with", pron:"컴 업 위드", pos:"phr", level:"B1", meanings:["찾아내다","제안하다"],
+  { word:"come up with", exams:["공무원"], pron:"컴 업 위드", pos:"phr", level:"B1", meanings:["찾아내다","제안하다"],
     syn:["devise","invent","propose"], ant:["abandon"] },
 
   { word:"comet", pron:"카밋", pos:"n", level:"B2", meanings:["혜성"],
@@ -1242,7 +1242,7 @@ window.VOCAB_C = [
     syn:["face","tackle","challenge"], ant:["evade"],
     ex:[{ s:"She decided to {{}} him about the missing files.", f:"confront", ko:"그녀는 사라진 파일에 대해 그와 맞서기로 했다." }] },
 
-  { word:"confuse", pron:"컨퓨즈", pos:"v", level:"B1", meanings:["혼동하다","헷갈리게 하다"],
+  { word:"confuse", exams:["공무원"], pron:"컨퓨즈", pos:"v", level:"B1", meanings:["혼동하다","헷갈리게 하다"],
     syn:["muddle","mix up","bewilder"], ant:["clarify"],
     ex:[{ s:"People often {{}} the two brothers.", f:"confuse", ko:"사람들은 종종 그 두 형제를 혼동한다." }] },
 
@@ -1304,7 +1304,7 @@ window.VOCAB_C = [
     ex:[{ s:"No surgery goes ahead without written {{}}.", f:"consent", ko:"서면 승낙 없이는 어떤 수술도 진행되지 않는다." }],
     gov:{ prep:["to","of","for"], pat:"consent {{}} the operation", usage:"consent to ~ : ~에 동의하다" } },
 
-  { word:"consequence", pron:"칸서퀀스", pos:"n", level:"B1", meanings:["결과","영향"],
+  { word:"consequence", exams:["공무원"], pron:"칸서퀀스", pos:"n", level:"B1", meanings:["결과","영향"],
     syn:["outcome","result","effect"], ant:["cause"],
     ex:[{ s:"He never thought about the {{}} of lying.", f:"consequence", ko:"그는 거짓말의 결과를 한 번도 생각하지 않았다." }] },
 
@@ -1430,7 +1430,7 @@ window.VOCAB_C = [
     syn:["infectious","catching","transmissible"],
     ex:[{ s:"Measles is highly {{}} in crowded rooms.", f:"contagious", ko:"홍역은 붐비는 방에서 전염성이 매우 높다." }] },
 
-  { word:"contain", pron:"컨테인", pos:"v", level:"B1", meanings:["~이 들어 있다","억제하다"],
+  { word:"contain", exams:["공무원"], pron:"컨테인", pos:"v", level:"B1", meanings:["~이 들어 있다","억제하다"],
     syn:["hold","include","enclose"], ant:["exclude"],
     ex:[{ s:"The box may {{}} fragile items.", f:"contain", ko:"그 상자에는 깨지기 쉬운 물건이 들어 있을 수 있다." }] },
 
@@ -1535,7 +1535,7 @@ window.VOCAB_C = [
     syn:["contrarily","oppositely","instead"],
     ex:[{ s:"{{}}, warm water holds less oxygen.", f:"Conversely", ko:"거꾸로, 따뜻한 물은 산소를 덜 담는다." }] },
 
-  { word:"convert", pron:"컨버트", pos:"v", level:"B1", meanings:["전환하다","바꾸다"],
+  { word:"convert", exams:["공무원"], pron:"컨버트", pos:"v", level:"B1", meanings:["전환하다","바꾸다"],
     syn:["change","transform","adapt"],
     ex:[{ s:"They plan to {{}} the barn into flats.", f:"convert", ko:"그들은 그 헛간을 아파트로 바꿀 계획이다." }],
     gov:{ prep:["into","to"], pat:"convert the attic {{}} a study", usage:"convert A into B : A를 B로 바꾸다" } },
@@ -1566,7 +1566,7 @@ window.VOCAB_C = [
     ex:[{ s:"His alibi was not remotely {{}}.", f:"convincing", ko:"그의 알리바이는 조금도 납득이 가지 않았다." }] },
 
   /* ── coop · coor · cop · cor ───────────────── */
-  { word:"cooperate", pron:"코아퍼레이트", pos:"v", level:"B1", meanings:["협력하다","협동하다"],
+  { word:"cooperate", exams:["공무원"], pron:"코아퍼레이트", pos:"v", level:"B1", meanings:["협력하다","협동하다"],
     syn:["collaborate","assist","unite"], ant:["obstruct"],
     ex:[{ s:"Both towns agreed to {{}} on the new bridge.", f:"cooperate", ko:"두 도시는 새 다리를 두고 협력하기로 합의했다." }],
     gov:{ prep:["with","on","in"], pat:"cooperate {{}} the police", usage:"cooperate with ~ : ~와 협력하다" } },
@@ -1594,7 +1594,7 @@ window.VOCAB_C = [
     syn:["warm","genial","affable"], ant:["frosty"],
     ex:[{ s:"They exchanged {{}} greetings at the door.", f:"cordial", ko:"그들은 문간에서 진심 어린 인사를 나눴다." }] },
 
-  { word:"core", pron:"코어", pos:"n", level:"B1", meanings:["중심","핵심"],
+  { word:"core", exams:["공무원"], pron:"코어", pos:"n", level:"B1", meanings:["중심","핵심"],
     syn:["center","heart","nucleus"], ant:["edge"],
     ex:[{ s:"Fairness lies at the {{}} of the whole rule.", f:"core", ko:"공정함이 그 규칙 전체의 핵심에 있다." }] },
 
@@ -1683,7 +1683,7 @@ window.VOCAB_C = [
     syn:["opposing","contrary","adverse"], ant:["parallel"],
     ex:[{ s:"His view runs {{}} to all the evidence.", f:"counter", ko:"그의 견해는 모든 증거와 반대로 간다." }] },
 
-  { word:"counteract", pron:"카운터랙트", pos:"v", level:"C1", meanings:["대응하다","중화하다"],
+  { word:"counteract", exams:["공무원"], pron:"카운터랙트", pos:"v", level:"C1", meanings:["대응하다","중화하다"],
     syn:["offset","neutralize","resist"], ant:["reinforce"],
     ex:[{ s:"Lime is used to {{}} soil acidity.", f:"counteract", ko:"석회는 토양의 산성을 중화하는 데 쓰인다." }] },
 
@@ -1816,7 +1816,7 @@ window.VOCAB_C = [
     syn:["squeak","groan","grate"],
     ex:[{ s:"The floorboards {{}} under his weight.", f:"creaked", ko:"바닥 판자가 그의 무게에 삐걱거렸다." }] },
 
-  { word:"creation", pron:"크리에이션", pos:"n", level:"B1", meanings:["창작물","창작"],
+  { word:"creation", exams:["공무원"], pron:"크리에이션", pos:"n", level:"B1", meanings:["창작물","창작"],
     syn:["work","invention","product"],
     ex:[{ s:"The garden is entirely her own {{}}.", f:"creation", ko:"그 정원은 전적으로 그녀 자신의 창작물이다." }] },
 
@@ -1855,7 +1855,7 @@ window.VOCAB_C = [
     syn:["standard","benchmark","measure"],
     ex:[{ s:"Price was not the only {{}} they used.", f:"criterion", ko:"가격이 그들이 쓴 유일한 기준은 아니었다." }] },
 
-  { word:"critical", pron:"크리티컬", pos:"adj", level:"B1", meanings:["중요한","비판적인"],
+  { word:"critical", exams:["공무원"], pron:"크리티컬", pos:"adj", level:"B1", meanings:["중요한","비판적인"],
     syn:["vital","crucial","disapproving"], ant:["trivial"],
     ex:[{ s:"The next hour is {{}} for the patient.", f:"critical", ko:"다음 한 시간이 그 환자에게 중요하다." }] },
 
