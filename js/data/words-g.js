@@ -675,6 +675,7 @@ window.VOCAB_G = [
 Object.assign(window.GLOSS, {
   "acrobatics":"곡예",
   "age gap":"연령 차이",
+  "age group": "연령대",
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
@@ -698,6 +699,7 @@ Object.assign(window.GLOSS, {
   "charitable giving":"자선 기부",
   "clasp":"움켜 안다",
   "clutch":"꽉 붙잡다",
+  "cohort": "동년배 집단, 코호트",
   "complete studies":"학업을 마치다",
   "congregation":"신도들, 모인 사람들",
   "connoisseur":"감식가",

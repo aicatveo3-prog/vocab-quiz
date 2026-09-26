@@ -2079,7 +2079,11 @@ window.VOCAB_E = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A~D 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차: earnest ~ efficient (28개) ───────────────── */
+  "aged": "나이 든, 노령의",
+  "arm": "무장시키다, 갖추게 하다",
   "blot out":"지워 없애다, 가리다",
+  "boss": "상사, 사장",
+  "classless": "계급 없는",
   "cost-effective":"비용 대비 효과가 좋은",
   "eatable":"먹을 수 있는",
   "efficacy":"효능",

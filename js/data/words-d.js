@@ -1507,9 +1507,15 @@ window.VOCAB_D = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A·B·C 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차 (damp ~ deck) 몫 66개 ───────────────── */
+  "activist": "활동가, 운동가",
+  "anguished": "괴로워하는, 고뇌에 찬",
+  "aridity": "건조함, 메마름",
   "arrears":"연체금, 미납금",
   /* asset 은 이미 A~C 세트의 표제어다 — 사전에 넣으면 중복이다 */
+  "assiduously": "끈기 있게, 꾸준히 힘써",
   "brighten":"밝게 하다, 밝아지다",
+  "carefully": "조심스럽게",
+  "cautiously": "주의 깊게, 신중히",
   "centralization":"중앙 집권화",
   "chair":"의장; 의장을 맡다",
   "clammy":"축축하고 차가운, 끈적한",

@@ -569,6 +569,7 @@ Object.assign(window.GLOSS, {
   "birthright":"생득권",
   "built-in":"내장된",
   "bustling":"북적이는",
+  "cache": "은닉처, 숨겨 둔 것",
   "caption":"캡션, 설명문",
   "central office":"중앙 사무소",
   "class system":"계급 제도",

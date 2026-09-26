@@ -126,6 +126,7 @@ Object.assign(window.GLOSS, {
   "caretaker": "시설 관리인",
   "castoffs": "버려진 물건",
   "censorious": "비난하기 좋아하는",
+  "columnist": "칼럼니스트",
   "court-related": "법정에 관한",
   "custodian": "관리 책임자",
   "doorkeeper": "문지기",

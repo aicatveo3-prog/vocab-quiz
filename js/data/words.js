@@ -1692,6 +1692,7 @@ window.VOCAB = [
 window.GLOSS = {
   "a few":"소수의, 약간의",
   "absence":"부재, 결석",
+  "accessibility": "접근성, 이용 편의",
   "adore":"숭배하다, 아주 좋아하다",
   "agreeable":"쾌적한, 기분 좋은",
   "agreement":"동의, 합의",
@@ -1699,6 +1700,7 @@ window.GLOSS = {
   "amidst": "~의 가운데에서",
   "anaerobic":"무산소의",
   "appease":"달래다, 진정시키다",
+  "assertively": "단호하게, 적극적으로",
   "aversion":"혐오, 반감",
   "base":"염기, 알칼리",
   "basement":"지하실",
@@ -1706,6 +1708,7 @@ window.GLOSS = {
   "believer":"신자, 믿는 사람",
   "belonging":"소속감",
   "birth":"출생, 탄생",
+  "blame": "탓하다, 비난하다",
   "calm":"차분한, 침착한",
   "care":"돌봄, 보살핌",
   "careless":"부주의한",

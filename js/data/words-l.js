@@ -720,6 +720,7 @@ window.VOCAB_L = [
 Object.assign(window.GLOSS, {
   "abate": "잦아들다",
   "above board": "숨김 없이 정당한",
+  "accountability": "책임성, 해명 의무",
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
   "amateur": "비전문가, 아마추어",
@@ -736,6 +737,7 @@ Object.assign(window.GLOSS, {
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
   "blistering": "맹렬히 빠른",
+  "boisterously": "떠들썩하게",
   "booby trap": "위장 폭탄",
   "book stock": "보유 도서",
   "bookish": "책에 기댄",
@@ -746,6 +748,7 @@ Object.assign(window.GLOSS, {
   "broad-minded": "아량이 넓은",
   "buried explosive": "땅에 묻은 폭발물",
   "cabin": "오두막",
+  "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
