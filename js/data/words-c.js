@@ -61,6 +61,10 @@ window.VOCAB_C = [
   { word:"constraint", exams:["공무원"], pron:"컨스트레인트", pos:"n", level:"C1", meanings:["제약","제한"], syn:["restriction","limitation","restraint"], ant:["freedom"], ex:[{ s:"The venue was chosen due to budget {{}}.", f:"constraints", ko:"그 장소는 예산 제약 때문에 선택되었다." }] },
   { word:"constructive", exams:["공무원"], pron:"컨스트럭티브", pos:"adj", level:"B2", meanings:["건설적인","유익한"], syn:["helpful","productive","positive"], ant:["destructive"], ex:[{ s:"You can grow through {{}} feedback.", f:"constructive", ko:"건설적인 피드백을 통해 성장할 수 있다." }] },
   { word:"costly", exams:["공무원"], pron:"코스틀리", pos:"adj", level:"B2", meanings:["비싼","대가가 큰"], syn:["expensive","pricey","exorbitant"], ant:["inexpensive","affordable"], ex:[{ s:"Saving water removes the need for {{}} system upgrades.", f:"costly", ko:"물을 아끼면 비용이 많이 드는 시스템 개선이 필요 없어진다." }] },
+  { word:"circadian", exams:["공무원"], pron:"서케이디언", pos:"adj", level:"C2", meanings:["생체 리듬의","24시간 주기의"], ex:[{ s:"Blue light at night confuses the body's {{}} clock.", f:"circadian", ko:"밤의 블루라이트는 몸의 생체 시계를 혼란스럽게 한다." }] },
+  { word:"clear up", exams:["공무원"], pron:"클리어 업", pos:"phr", level:"B2", meanings:["날이 개다","해결하다"] },
+  { word:"collectible", exams:["공무원"], pron:"컬렉터블", pos:"n", level:"C1", meanings:["수집품","수집할 가치가 있는 물건"], ex:[{ s:"This rare airline poster is a valuable {{}}.", f:"collectible", ko:"이 희귀한 항공 포스터는 값진 수집품이다." }] },
+  { word:"crafty", exams:["공무원"], pron:"크래프티", pos:"adj", level:"C1", meanings:["교활한","약삭빠른"], syn:["cunning","artful","scheming"], ant:["naive"], ex:[{ s:"What matters is how much more {{}} you are than other people.", f:"crafty", ko:"중요한 것은 당신이 다른 사람들보다 얼마나 더 약삭빠른가이다." }] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2124,6 +2128,7 @@ Object.assign(window.GLOSS, {
   "rude":"무례한",
   "rudeness":"무례함",
   "scattering":"흩어짐, 산재",
+  "scheming": "모략을 꾸미는",
   "simple":"단순한",
   "single-sex":"남녀를 구분한",
   "soggy":"축축한, 질척한",

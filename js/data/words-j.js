@@ -126,7 +126,6 @@ Object.assign(window.GLOSS, {
   "court-related": "법정에 관한",
   "custodian": "관리 책임자",
   "doorkeeper": "문지기",
-  "equitable": "형평에 맞는",
   "equity": "형평, 공평",
   "fairness": "공정함",
   "juridical": "법률상의",

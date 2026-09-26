@@ -1892,7 +1892,6 @@ Object.assign(window.GLOSS, {
   "dogmatic": "독단적인",
   "down the road": "앞으로 가면",
   "drive": "추진력",
-  "driving force": "추진 동력",
   "dwell in": "~에 거주하다",
   "dweller": "사는 사람",
   "dyspepsia": "소화 장애",

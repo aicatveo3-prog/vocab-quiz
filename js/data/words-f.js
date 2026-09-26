@@ -478,6 +478,8 @@ window.VOCAB_F = [
   { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
   { word:"familiar", exams:["공무원"], pron:"퍼밀리어", pos:"adj", level:"B1", meanings:["익숙한","친숙한"], syn:["recognizable","known","accustomed"], ant:["unfamiliar","alien"], ex:[{ s:"Traditional tools feel {{}} to most people.", f:"familiar", ko:"전통적인 도구는 대부분의 사람에게 익숙하게 느껴진다." }], gov:{ prep:["with","to"], usage:"be familiar with ~ : ~을 잘 알다 · be familiar to ~ : ~에게 익숙하다" } },
   { word:"for ages", exams:["공무원"], pron:"포 에이지스", pos:"phr", level:"B2", meanings:["오랫동안","아주 오래"] },
+  { word:"follow up", exams:["공무원"], pron:"팔로 업", pos:"phr", level:"B2", meanings:["후속 조치를 하다","추가로 확인하다"] },
+  { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1514,8 +1516,10 @@ Object.assign(window.GLOSS, {
   "die away":"차츰 사라지다",
   "disloyal":"불충한, 배신하는",
   "drop back":"뒤로 처지다",
+  "economy": "절약; 경제",
   "even-handed":"공평한",
   "expedite":"신속히 처리하다",
+  "extravagance": "낭비, 사치",
   "falsify":"위조하다, 변조하다",
   "fictional":"허구의, 소설의",
   "folktale":"민간 설화, 옛이야기",
@@ -1530,6 +1534,7 @@ Object.assign(window.GLOSS, {
   "parable":"우화, 비유담",
   "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
+  "thrift": "절약, 검약",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",
   "veneer":"겉치장, 허울",

@@ -794,6 +794,8 @@ window.VOCAB_E = [
   { word:"explode", exams:["공무원"], pron:"익스플로드", pos:"v", level:"B1", meanings:["폭발하다"], syn:["blow up","burst","detonate"], ant:["implode"], ex:[{ s:"These products can catch fire or {{}}.", f:"explode", ko:"이 제품들은 불이 붙거나 폭발할 수 있다." }] },
   { word:"exterminator", exams:["공무원"], pron:"익스터미네이터", pos:"n", level:"C1", meanings:["방역업자","해충 구제업자"], ex:[{ s:"Please contact a licensed {{}}.", f:"exterminator", ko:"허가받은 방역업자에게 연락하세요." }] },
   { word:"eager", exams:["공무원"], pron:"이거", pos:"adj", level:"B2", meanings:["열망하는","간절히 바라는"], syn:["keen","avid","enthusiastic","willing"], ant:["reluctant"], ex:[{ s:"Many graduates are {{}} to start their careers.", f:"eager", ko:"많은 졸업생이 어서 경력을 시작하고 싶어 한다." }], gov:{ prep:["to","for"], usage:"be eager to ~ : 몹시 ~하고 싶어 하다 · be eager for ~ : ~을 갈망하다" } },
+  { word:"equitable", exams:["공무원"], pron:"에쿼터블", pos:"adj", level:"C1", meanings:["공평한","공정한"], syn:["fair","just","impartial"], ant:["unfair"], ex:[{ s:"Access to health care is not always {{}}.", f:"equitable", ko:"의료 서비스 접근이 늘 공평한 것은 아니다." }] },
+  { word:"extremity", exams:["공무원"], pron:"익스트리머티", pos:"n", level:"C1", meanings:["손발","극단"] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2095,6 +2097,7 @@ Object.assign(window.GLOSS, {
   "safe to eat":"먹어도 안전한",
   "streamlined":"간소화된, 군더더기 없는",
   "tolerant":"너그러운, 관대한",
+  "unfair": "불공평한",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
 

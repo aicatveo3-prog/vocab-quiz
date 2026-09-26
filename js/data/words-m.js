@@ -1398,7 +1398,6 @@ Object.assign(window.GLOSS, {
   "grow in number": "수가 늘어나다",
   "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
-  "hands-on": "직접 손을 쓰는",
   "heavy metal": "중금속",
   "heedful": "주의를 기울이는",
   "hermit": "은수자",

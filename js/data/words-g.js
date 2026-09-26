@@ -51,6 +51,7 @@ window.VOCAB_G = [
   { word:"greet", exams:["공무원"], pron:"그릿", pos:"v", level:"B1", meanings:["인사하다","맞이하다"], syn:["welcome","salute","receive"], ant:["ignore"], ex:[{ s:"Volunteers warmly {{}} and assist visitors.", f:"greet", ko:"자원봉사자들은 방문객을 따뜻하게 맞이하고 돕는다." }] },
   { word:"gain", exams:["공무원"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
   { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
+  { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
