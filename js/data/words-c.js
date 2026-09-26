@@ -2060,6 +2060,8 @@ Object.assign(window.GLOSS, {
   "convex":"볼록한",
   "cooperative":"협력하는",
   "cruelty":"잔혹함",
+  "crusade": "개혁 운동, 성전",
+  "customers": "손님들",
   "dash":"돌진하다, 급히 가다",
   "defiant":"반항하는",
   "demolition":"철거, 파괴",

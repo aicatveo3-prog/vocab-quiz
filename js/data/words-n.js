@@ -522,6 +522,7 @@ Object.assign(window.GLOSS, {
   "concerning nourishment": "영양에 관한",
   "course-plotting": "항로를 그림",
   "cramped": "옹색한",
+  "cuddle": "껴안다",
   "cut down": "개수를 줄이다",
   "daytime": "낮의",
   "deadened": "둔해진",

@@ -634,6 +634,7 @@ Object.assign(window.GLOSS, {
   "full of turns": "굽이가 많은",
   "gain nobody looked for": "아무도 바라지 않았던 이득",
   "garbage": "쓰레기",
+  "garments": "옷가지, 의류",
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
   "glad to lend a hand": "손을 보태는 것이 반가운",

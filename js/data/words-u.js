@@ -745,6 +745,7 @@ Object.assign(window.GLOSS, {
   "commonly": "흔히, 일반적으로",
   "complicate": "복잡하게 하다",
   "conduct in politely": "공손히 모셔 들이다",
+  "costume": "의상, 복장",
   "deepest of all": "가장 깊은 데 있는",
   "different from": "~와 다른",
   "dig out of the ground": "땅에서 캐내다",
