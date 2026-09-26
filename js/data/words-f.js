@@ -481,6 +481,7 @@ window.VOCAB_F = [
   { word:"follow up", exams:["공무원"], pron:"팔로 업", pos:"phr", level:"B2", meanings:["후속 조치를 하다","추가로 확인하다"] },
   { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
   { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
+  { word:"following", exams:["공무원"], pron:"팔로잉", pos:"adj", level:"B1", meanings:["다음의","이후의"], syn:["subsequent","next","ensuing"], ant:["preceding"], ex:[{ s:"The results will be announced the {{}} week.", f:"following", ko:"결과는 그다음 주에 발표될 것이다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1544,6 +1545,7 @@ Object.assign(window.GLOSS, {
   "make easier":"더 쉽게 하다",
   "mental power":"정신적 능력",
   "nepotism": "족벌주의, 친족 등용",
+  "next": "다음의, 그다음",
   "outward appearance":"겉모습, 외관",
   "parable":"우화, 비유담",
   "partiality": "편파, 치우침",

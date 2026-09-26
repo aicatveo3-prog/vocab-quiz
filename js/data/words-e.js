@@ -2337,7 +2337,6 @@ Object.assign(window.GLOSS, {
   /* ── 9차: evaporate ~ excess (28개) ───────────────── */
   "anomaly":"변칙, 이례",
   "arouse":"자극하다, 일깨우다",
-  "avoidance":"회피, 기피",
   "blow out of proportion":"지나치게 부풀리다",
   "bring to mind":"떠오르게 하다",
   "clear-cut":"명확한",

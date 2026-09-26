@@ -31,6 +31,8 @@ window.VOCAB_B = [
   { word:"better safe than sorry", exams:["공무원"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
   { word:"buildup", exams:["공무원"], pron:"빌드업", pos:"n", level:"C1", meanings:["축적","증강"], syn:["accumulation","growth","escalation"], ex:[{ s:"Daily sunshine creates a protective {{}} against blue light.", f:"buildup", ko:"매일 햇빛을 쬐면 블루라이트에 맞서는 보호막이 쌓인다." }] },
   { word:"booming", exams:["공무원"], pron:"부밍", pos:"adj", level:"B2", meanings:["호황을 누리는","급성장하는"], syn:["thriving","flourishing","prosperous"], ant:["declining"], ex:[{ s:"Tourism is {{}} in the region these days.", f:"booming", ko:"요즘 그 지역에서는 관광업이 호황을 누리고 있다." }] },
+  { word:"boldness", exams:["공무원"], pron:"볼드니스", pos:"n", level:"C1", meanings:["대담함","용기"], syn:["bravery","daring","audacity"], ant:["timidity"], ex:[{ s:"Her {{}} in speaking up surprised everyone.", f:"boldness", ko:"당당히 의견을 말한 그녀의 대담함에 모두가 놀랐다." }] },
+  { word:"be drawn to", exams:["공무원"], pron:"비 드론 투", pos:"phr", level:"B2", meanings:["~에 끌리다","~에 이끌리다"] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],
@@ -979,6 +981,7 @@ window.VOCAB_B = [
    words.js 가 만든 객체에 덧붙인다. 재대입하면 A 세트 202개가 사라진다. */
 Object.assign(window.GLOSS, {
   "afterward":"나중에, 그 후에",
+  "audacity": "뻔뻔함, 대담함",
   "bankruptcy":"파산",
   "be against":"~에 반대하다",
   "be barred from":"~에서 배제되다, ~을 금지당하다",

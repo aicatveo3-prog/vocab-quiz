@@ -127,6 +127,8 @@ window.VOCAB_D = [
   { word:"defense", exams:["공무원"], pron:"디펜스", pos:"n", level:"B1", meanings:["방어","수비"], syn:["protection","security","guard"], ant:["attack","offense"], ex:[{ s:"More daytime sunlight gives children a better {{}} against blue light.", f:"defense", ko:"낮에 햇빛을 더 쬐면 아이들은 블루라이트를 더 잘 막아 낸다." }], gov:{ prep:["against"], usage:"(a) defense against ~ : ~에 대한 방어" } },
   { word:"driving force", exams:["공무원"], pron:"드라이빙 포스", pos:"phr", level:"B2", meanings:["원동력","추진력"] },
   { word:"dependence", exams:["공무원"], pron:"디펜던스", pos:"n", level:"B2", meanings:["의존","의존성"], ant:["independence","autonomy"], ex:[{ s:"Latin America is reducing its {{}} on oil.", f:"dependence", ko:"라틴 아메리카는 석유 의존도를 줄이고 있다." }], gov:{ prep:["on","upon"], usage:"dependence on ~ : ~에 대한 의존" } },
+  { word:"deception", exams:["공무원"], pron:"디셉션", pos:"n", level:"C1", meanings:["속임","사기"], syn:["deceit","fraud","trickery"], ant:["honesty"], ex:[{ s:"The scheme relied on {{}} to win over investors.", f:"deception", ko:"그 계획은 투자자를 끌어들이려고 속임수에 기댔다." }] },
+  { word:"dedication", exams:["공무원"], pron:"데디케이션", pos:"n", level:"B2", meanings:["전념","헌신"], syn:["commitment","devotion","zeal"], ex:[{ s:"Only years of {{}} can turn talent into success.", f:"dedication", ko:"오랜 헌신만이 재능을 성공으로 바꿀 수 있다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1531,7 +1533,6 @@ Object.assign(window.GLOSS, {
   "debauched": "타락한",
   "decadent": "퇴폐적인",
   "deceitful":"남을 속이는, 부정직한",
-  "deception":"속임, 사기",
   "decode":"해독하다, 판독하다",
   "degeneracy":"퇴폐, 퇴화",
   "departed": "고인이 된, 떠난",

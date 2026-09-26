@@ -46,6 +46,7 @@ window.VOCAB_L = [
   { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
   { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
+  { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.

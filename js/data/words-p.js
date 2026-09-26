@@ -116,6 +116,8 @@ window.VOCAB_P = [
   { word:"practically", exams:["공무원"], pron:"프랙티컬리", pos:"adv", level:"B2", meanings:["거의","실질적으로"], syn:["virtually","nearly","all but"], ex:[{ s:"The stadium was {{}} empty, with only a few fans left.", f:"practically", ko:"경기장은 팬 몇 명만 남아 거의 텅 비어 있었다." }] },
   { word:"profit", exams:["공무원"], pron:"프라핏", pos:"n", level:"B1", meanings:["이익","수익"], syn:["earnings","revenue","gain"], ant:["loss"], ex:[{ s:"The company made a large {{}} last year.", f:"profit", ko:"그 회사는 작년에 큰 이익을 냈다." }] },
   { word:"provided that", exams:["공무원"], pron:"프러바이디드 댓", pos:"phr", level:"B2", meanings:["~라면","~라는 조건으로"] },
+  { word:"politeness", exams:["공무원"], pron:"펄라이트니스", pos:"n", level:"B2", meanings:["예의 바름","공손함"], syn:["courtesy","civility","manners"], ant:["rudeness"], ex:[{ s:"Saying thank you is a basic form of {{}}.", f:"politeness", ko:"고맙다고 말하는 것은 예의의 기본 형태다." }] },
+  { word:"paradoxically", exams:["공무원"], pron:"패러닥시컬리", pos:"adv", level:"C1", meanings:["역설적으로"], ex:[{ s:"{{}}, trying hard to fall asleep can keep you awake.", f:"Paradoxically", ko:"역설적으로, 잠들려고 애쓰면 오히려 잠이 달아날 수 있다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2287,6 +2289,7 @@ Object.assign(window.GLOSS, {
   "chosen in advance": "미리 뽑힌",
   "church leader": "교회의 지도자",
   "circle graph": "동그란 그래프",
+  "civility": "예의 바른 태도",
   "clinging": "붙잡고 놓지 않는",
   "clip shown ahead": "앞서 내보이는 조각",
   "close likeness": "가까운 닮음",
@@ -2314,7 +2317,6 @@ Object.assign(window.GLOSS, {
   "course one must take first": "먼저 들어야 하는 과목",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
-  "criticize": "비판하다, 비난하다",
   "crop spray": "작물에 뿌리는 약",
   "crude oil": "정제하지 않은 기름",
   "custom": "관습, 풍습",

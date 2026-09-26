@@ -88,6 +88,10 @@ window.VOCAB_S = [
   { word:"shareholder", exams:["공무원"], pron:"셰어홀더", pos:"n", level:"B2", meanings:["주주"], ex:[{ s:"Every {{}} receives part of the company's profits.", f:"shareholder", ko:"모든 주주는 회사 이익의 일부를 받는다." }] },
   { word:"short-term", exams:["공무원"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
   { word:"skillful", exams:["공무원"], pron:"스킬풀", pos:"adj", level:"B2", meanings:["능숙한","솜씨 좋은"], syn:["adept","proficient","competent"], ant:["clumsy"], ex:[{ s:"She is so {{}} with her hands that she can fix almost anything.", f:"skillful", ko:"그녀는 손재주가 아주 좋아서 거의 뭐든 고칠 수 있다." }] },
+  { word:"supplementary", exams:["공무원"], pron:"서플러멘터리", pos:"adj", level:"C1", meanings:["보충의","추가의"], syn:["additional","extra","complementary"], ex:[{ s:"Students can find {{}} materials on the course website.", f:"supplementary", ko:"학생들은 강의 웹사이트에서 보충 자료를 찾을 수 있다." }] },
+  { word:"symbiosis", exams:["공무원"], pron:"심바이오시스", pos:"n", level:"C2", meanings:["공생","공생 관계"], syn:["mutualism","interdependence","cooperation"], ex:[{ s:"Many creatures rely on {{}} rather than living alone.", f:"symbiosis", ko:"많은 생물은 홀로 살기보다 공생에 의존한다." }] },
+  { word:"self-sufficient", exams:["공무원"], pron:"셀프 서피션트", pos:"adj", level:"C1", meanings:["자급자족하는","자립적인"], syn:["independent","self-reliant","autonomous","self-contained"], ant:["dependent"], ex:[{ s:"The farm is almost fully {{}} in food.", f:"self-sufficient", ko:"그 농장은 식량을 거의 완전히 자급자족한다." }] },
+  { word:"subjectively", exams:["공무원"], pron:"서브젝티블리", pos:"adv", level:"C1", meanings:["주관적으로"], ant:["objectively"], ex:[{ s:"Each person judges beauty {{}}, based on personal taste.", f:"subjectively", ko:"사람은 저마다 개인 취향에 따라 아름다움을 주관적으로 판단한다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3143,6 +3147,7 @@ Object.assign(window.GLOSS, {
   "income": "소득, 수입",
   "inner and sacred": "속 깊고 거룩한",
   "insensitivity": "무신경, 둔감함",
+  "interdependence": "상호 의존",
   "iron mixed with carbon": "탄소를 섞은 쇠",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
@@ -3282,6 +3287,7 @@ Object.assign(window.GLOSS, {
   "move the heart of": "~의 마음을 흔들다",
   "move to another state": "다른 상태로 옮김",
   "move without being seen": "보이지 않게 움직이다",
+  "mutualism": "상리 공생",
   "named as such": "그렇게 불리는",
   "named by oneself": "제가 제 이름을 붙인",
   "narrow break": "좁게 벌어진 자리",
