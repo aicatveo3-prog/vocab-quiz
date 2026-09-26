@@ -1603,7 +1603,6 @@ Object.assign(window.GLOSS, {
   "plume":"깃털 장식",
   "practicability":"실행할 수 있음",
   "prenatal":"출생 전의",
-  "pretend":"~인 척하다",
   "productiveness":"생산성",
   "quill":"큰 깃털, 깃대",
   "reproductive capacity":"번식 능력",

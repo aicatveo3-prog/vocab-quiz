@@ -68,6 +68,7 @@ window.VOCAB_M = [
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
+  { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1490,7 +1491,6 @@ Object.assign(window.GLOSS, {
   "old-world": "옛 정취의",
   "one-man act": "혼자 하는 공연",
   "one-partner union": "한 상대와의 결합",
-  "optimize": "최적화하다",
   "ore": "광석",
   "original copy": "원본",
   "painstakingly": "공들여",

@@ -100,6 +100,12 @@ window.VOCAB_O = [
   { word:"outwardly", exams:["공무원"], pron:"아웃워들리", pos:"adv", level:"C1", meanings:["겉으로는","외관상"], syn:["externally","apparently","seemingly"], ant:["inwardly"], ex:[{ s:"He remained {{}} calm during the crisis.", f:"outwardly", ko:"그는 위기 동안 겉으로는 침착함을 유지했다." }] },
   { word:"overconsumption", exams:["공무원"], pron:"오버컨섬션", pos:"n", level:"C1", meanings:["과소비","과잉 섭취"], syn:["overuse","excess","overindulgence"], ant:["moderation"], ex:[{ s:"Children's health is declining due to {{}} of fast food.", f:"overconsumption", ko:"패스트푸드의 과잉 섭취로 아이들의 건강이 나빠지고 있다." }] },
   { word:"overgrown", exams:["공무원"], pron:"오버그로운", pos:"adj", level:"C1", meanings:["웃자란","무성한"], syn:["unkempt","weedy","overrun"], ant:["trimmed"], ex:[{ s:"The program requires no {{}} yards.", f:"overgrown", ko:"그 프로그램은 웃자란 마당이 없을 것을 요구한다." }] },
+  { word:"off-peak", exams:["공무원"], pron:"오프 피크", pos:"adj", level:"C1", meanings:["비수기의","한가한 시간대의"], ex:[{ s:"Residents will enjoy a low {{}} rate during the rainy season.", f:"off-peak", ko:"주민들은 우기에 낮은 비수기 요금을 적용받는다." }] },
+  { word:"onboard", exams:["공무원"], pron:"온보드", pos:"adj", level:"C1", meanings:["탑재된","기내의"], ex:[{ s:"The AUV stores all data on {{}} computers.", f:"onboard", ko:"AUV는 모든 데이터를 탑재된 컴퓨터에 저장한다." }] },
+  { word:"optimize", exams:["공무원"], pron:"압터마이즈", pos:"v", level:"B2", meanings:["최적화하다","최대한 활용하다"], syn:["maximize","improve","enhance"], ex:[{ s:"AI tools promise to {{}} speed and accuracy.", f:"optimize", ko:"AI 도구는 속도와 정확성을 최적화해 주겠다고 약속한다." }] },
+  { word:"origin", exams:["공무원"], pron:"오리진", pos:"n", level:"B1", meanings:["기원","유래"], syn:["source","root","wellspring"], ant:["destination"], ex:[{ s:"The {{}} of the word cravat goes back to Croatian soldiers.", f:"origin", ko:"크러뱃이라는 단어의 기원은 크로아티아 군인들에게로 거슬러 올라간다." }] },
+  { word:"overtime", exams:["공무원"], pron:"오버타임", pos:"n", level:"B2", meanings:["초과 근무","야근"], ex:[{ s:"Employees are paid extra for {{}}.", f:"overtime", ko:"직원들은 초과 근무에 대해 추가 수당을 받는다." }] },
+  { word:"overview", exams:["공무원"], pron:"오버뷰", pos:"n", level:"B2", meanings:["개요","개관"], syn:["summary","outline","synopsis"], ex:[{ s:"The first slide shows a quick {{}} of the whole project.", f:"overview", ko:"첫 슬라이드는 프로젝트 전체의 간단한 개요를 보여 준다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).

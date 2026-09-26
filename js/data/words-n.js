@@ -60,6 +60,8 @@ window.VOCAB_N = [
   { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
   { word:"navigate", exams:["공무원"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
+  { word:"no longer", exams:["공무원"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
+  { word:"no matter how", exams:["공무원"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },

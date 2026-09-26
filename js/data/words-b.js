@@ -1041,7 +1041,6 @@ Object.assign(window.GLOSS, {
   "penniless":"무일푼의",
   "persistent":"잘 분해되지 않는, 끈질긴",
   "pleasant":"즐거운, 기분 좋은",
-  "praise":"칭찬하다",
   "protect":"보호하다",
   "recover from":"~에서 회복하다",
   "relief":"안도, 경감",
