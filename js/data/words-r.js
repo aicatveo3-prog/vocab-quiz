@@ -592,7 +592,7 @@ window.VOCAB_R = [
     ex:[{ s:"The center will {{}} injured birds.", f:"rehabilitate", ko:"그 센터는 다친 새들에게 재활 치료를 할 것이다." }] },
 
   /* 외래어 '리허설' 을 걷었다. */
-  { word:"rehearsal", pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
+  { word:"rehearsal", exams:["공무원"], pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
     syn:["practice before the show","trial run of a play","run-through"],
     ex:[{ s:"The last {{}} ran late.", f:"rehearsal", ko:"마지막 예행연습이 늦게까지 이어졌다." }] },
 
@@ -815,7 +815,7 @@ window.VOCAB_R = [
     syn:["cause to become","leave in a state","turn into"],
     ex:[{ s:"Heat can {{}} the metal soft.", f:"render", ko:"열은 그 금속을 부드럽게 만들 수 있다." }] },
 
-  { word:"renew", pron:"리뉴", pos:"v", level:"B2", meanings:["재개하다","갱신하다"],
+  { word:"renew", exams:["공무원"], pron:"리뉴", pos:"v", level:"B2", meanings:["재개하다","갱신하다"],
     syn:["start again","take up once more","make valid again"],
     ex:[{ s:"You must {{}} the licence.", f:"renew", ko:"당신은 그 면허를 갱신해야 한다." }] },
 
@@ -1560,7 +1560,7 @@ window.VOCAB_R = [
     ex:[{ s:"A queen used to {{}} the island.", f:"rule", ko:"여왕이 그 섬을 통치하곤 했다." }] },
 
   /* 승격 143 — 사전 글자 유지(disqualify, D). */
-  { word:"rule out", pron:"룰 아웃", pos:"phr", level:"B2", meanings:["배제하다","제외하다"],
+  { word:"rule out", exams:["공무원"], pron:"룰 아웃", pos:"phr", level:"B2", meanings:["배제하다","제외하다"],
     syn:["disqualify","shut out as impossible","take off the list"] },
 
   /* 승격 144 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. 원본의 괄호

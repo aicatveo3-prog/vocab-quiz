@@ -223,7 +223,7 @@ window.VOCAB = [
     syn:["house","lodge","hold"], ant:["exclude"],
     ex:[{ s:"The new hall can {{}} up to 500 guests.", f:"accommodate", ko:"새 강당은 최대 500명의 손님을 수용할 수 있다." }] },
 
-  { word:"accommodation", pron:"어카머데이션", pos:"n", level:"B2", meanings:["숙박 시설","편의"],
+  { word:"accommodation", exams:["공무원"], pron:"어카머데이션", pos:"n", level:"B2", meanings:["숙박 시설","편의"],
     syn:["lodging","housing","quarters"],
     ex:[{ s:"The fee includes meals and {{}}.", f:"accommodation", ko:"그 요금에는 식사와 숙박이 포함된다." }] },
 
@@ -425,7 +425,7 @@ window.VOCAB = [
     syn:["commander","flag officer","naval chief"],
     ex:[{ s:"The {{}} ordered the fleet to withdraw.", f:"admiral", ko:"제독은 함대에 철수를 명령했다." }] },
 
-  { word:"admire", pron:"애드마이어", pos:"v", level:"B1", meanings:["존경하다","감탄하다"],
+  { word:"admire", exams:["공무원"], pron:"애드마이어", pos:"v", level:"B1", meanings:["존경하다","감탄하다"],
     syn:["respect","esteem","look up to"], ant:["despise"],
     ex:[{ s:"I {{}} her patience with difficult customers.", f:"admire", ko:"나는 까다로운 손님을 대하는 그녀의 인내심에 감탄한다." }] },
 
@@ -578,7 +578,7 @@ window.VOCAB = [
     syn:["later","subsequently","then"], ant:["beforehand"],
     ex:[{ s:"We ate first and walked home {{}}.", f:"afterwards", ko:"우리는 먼저 먹고 그 뒤에 걸어서 집에 갔다." }] },
 
-  { word:"agenda", pron:"어젠다", pos:"n", level:"B2", meanings:["안건","의제"],
+  { word:"agenda", exams:["공무원"], pron:"어젠다", pos:"n", level:"B2", meanings:["안건","의제"],
     syn:["schedule","program","plan"],
     ex:[{ s:"Climate policy topped the {{}} at the summit.", f:"agenda", ko:"정상회담에서 기후 정책이 의제의 첫 순위였다." }] },
 
@@ -1059,7 +1059,7 @@ window.VOCAB = [
     syn:["request","use","implementation"],
     ex:[{ s:"Her {{}} for the grant was approved.", f:"application", ko:"그녀의 보조금 신청이 승인되었다." }] },
 
-  { word:"apply", pron:"어플라이", pos:"v", level:"B1", meanings:["지원하다","적용하다"],
+  { word:"apply", exams:["공무원"], pron:"어플라이", pos:"v", level:"B1", meanings:["지원하다","적용하다"],
     syn:["request","use","implement"],
     ex:[{ s:"You can {{}} the same rule to both cases.", f:"apply", ko:"두 경우 모두에 같은 규칙을 적용할 수 있다." }] },
 
@@ -1103,7 +1103,7 @@ window.VOCAB = [
     syn:["traineeship","internship","training"],
     ex:[{ s:"She completed a four-year {{}} as an electrician.", f:"apprenticeship", ko:"그녀는 전기공으로 4년의 수습 과정을 마쳤다." }] },
 
-  { word:"approach", pron:"어프로치", pos:"v", level:"B1", meanings:["접근하다","다가가다"],
+  { word:"approach", exams:["공무원"], pron:"어프로치", pos:"v", level:"B1", meanings:["접근하다","다가가다"],
     syn:["near","advance","come toward"], ant:["retreat"],
     ex:[{ s:"Do not {{}} the animals during feeding.", f:"approach", ko:"먹이를 줄 때 동물에게 다가가지 마세요." }] },
 
@@ -1175,7 +1175,7 @@ window.VOCAB = [
     syn:["fervent","passionate","zealous"], ant:["indifferent"],
     ex:[{ s:"He is an {{}} supporter of the reform.", f:"ardent", ko:"그는 그 개혁의 열렬한 지지자이다." }] },
 
-  { word:"argue", pron:"아규", pos:"v", level:"B1", meanings:["주장하다","논쟁하다"],
+  { word:"argue", exams:["공무원"], pron:"아규", pos:"v", level:"B1", meanings:["주장하다","논쟁하다"],
     syn:["contend","claim","dispute"],
     ex:[{ s:"Critics {{}} that the policy costs too much.", f:"argue", ko:"비평가들은 그 정책이 너무 많은 비용을 든다고 주장한다." }] },
 
@@ -1591,7 +1591,7 @@ window.VOCAB = [
     syn:["dictatorship","despotism","tyranny"], ant:["democracy"],
     ex:[{ s:"The reforms slowly replaced the old {{}}.", f:"autocracy", ko:"그 개혁은 낡은 독재 체제를 서서히 대체했다." }] },
 
-  { word:"automatic", pron:"오토매틱", pos:"adj", level:"B1", meanings:["자동의"],
+  { word:"automatic", exams:["공무원"], pron:"오토매틱", pos:"adj", level:"B1", meanings:["자동의"],
     syn:["self-acting","mechanical","automated"], ant:["manual"],
     ex:[{ s:"The doors are fully {{}}.", f:"automatic", ko:"그 문은 완전히 자동이다." }] },
 
@@ -1624,7 +1624,7 @@ window.VOCAB = [
        make use of 는 employ(E) 에도 참조가 있어 발음만 남는 유령 키가 되지 않는다. */
     syn:["put to use","utilize","take advantage of"] },
 
-  { word:"available", pron:"어베일러블", pos:"adj", level:"B1", meanings:["이용 가능한","시간이 있는"],
+  { word:"available", exams:["공무원"], pron:"어베일러블", pos:"adj", level:"B1", meanings:["이용 가능한","시간이 있는"],
     syn:["obtainable","accessible","free"], ant:["unavailable"],
     ex:[{ s:"A doctor is {{}} around the clock.", f:"available", ko:"의사가 24시간 대기하고 있다." }] },
 

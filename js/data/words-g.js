@@ -228,7 +228,7 @@ window.VOCAB_G = [
   { word:"geometry", pron:"지아머트리", pos:"n", level:"B2", meanings:["기하학"],
     ex:[{ s:"Students learn basic {{}} in middle school.", f:"geometry", ko:"학생들은 중학교에서 기초 기하학을 배운다." }] },
 
-  { word:"geothermal", pron:"지오서멀", pos:"adj", level:"C1", meanings:["지열의"],
+  { word:"geothermal", exams:["공무원"], pron:"지오서멀", pos:"adj", level:"C1", meanings:["지열의"],
     ex:[{ s:"Iceland draws much of its power from {{}} sources.", f:"geothermal", ko:"아이슬란드는 전력의 상당 부분을 지열원에서 얻는다." }] },
 
   /* 승격 ② — GLOSS 는 '세균; 싹' 인데 원본은 '세균, 병균' 이다. bud 의 유의어로
@@ -336,7 +336,7 @@ window.VOCAB_G = [
     syn:["quick look","hasty glance","sighting"],
     ex:[{ s:"We caught a brief {{}} of the castle through the fog.", f:"glimpse", ko:"우리는 안개 속에서 그 성을 잠깐 보았다." }] },
 
-  { word:"glitter", pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
+  { word:"glitter", exams:["공무원"], pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
     syn:["sparkle","shimmer","twinkle"],
     ex:[{ s:"Frost made the whole field {{}} in the morning sun.", f:"glitter", ko:"서리가 아침 햇살에 들판 전체를 반짝이게 했다." }] },
 

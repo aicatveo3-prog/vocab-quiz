@@ -506,7 +506,7 @@ window.VOCAB_F = [
     syn:["frontage","outward appearance","veneer"],
     ex:[{ s:"The bank kept its old stone {{}} when the inside was rebuilt.", f:"facade", ko:"그 은행은 내부를 다시 지으면서도 오래된 석조 정면을 남겼다." }] },
 
-  { word:"facilitate", pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
+  { word:"facilitate", exams:["공무원"], pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
     syn:["assist","expedite","make easier"],
     ex:[{ s:"A shared language can {{}} trade between neighbors.", f:"facilitate", ko:"공통 언어는 이웃 나라 사이의 교역을 쉽게 할 수 있다." }] },
 
@@ -732,7 +732,7 @@ window.VOCAB_F = [
      갈래다. 그 셋은 PRON 사전에 있어 pron-audit 의 '-ment → 먼트' 규칙에
      경고로 잡히지만, 표제어의 pron 은 그 규칙이 보지 않으므로 여기서는
      경고가 늘지 않는다(검사 757건, 경고 3건 그대로). */
-  { word:"ferment", pron:"퍼멘트", pos:"v", level:"C1", meanings:["발효시키다"],
+  { word:"ferment", exams:["공무원"], pron:"퍼멘트", pos:"v", level:"C1", meanings:["발효시키다"],
     syn:["turn sour","let rise","undergo fermentation"],
     ex:[{ s:"Cabbage will {{}} in salt water within a week.", f:"ferment", ko:"양배추는 소금물에서 일주일 안에 발효된다." }] },
 
@@ -838,7 +838,7 @@ window.VOCAB_F = [
     syn:["grimy","squalid","unclean"], ant:["spotless"],
     ex:[{ s:"They refused to work in such a {{}} kitchen.", f:"filthy", ko:"그들은 그렇게 더러운 부엌에서 일하기를 거부했다." }] },
 
-  { word:"financial", pron:"파이낸셜", pos:"adj", level:"B1", meanings:["재정적인","재무의"],
+  { word:"financial", exams:["공무원"], pron:"파이낸셜", pos:"adj", level:"B1", meanings:["재정적인","재무의"],
     syn:["monetary","money-related","budgetary"],
     ex:[{ s:"The club ran into serious {{}} trouble that winter.", f:"financial", ko:"그 클럽은 그해 겨울 심각한 재정적 곤란에 빠졌다." }] },
 
@@ -1372,7 +1372,7 @@ window.VOCAB_F = [
     syn:["realization","coming to pass","successful outcome"],
     ex:[{ s:"The plan came to {{}} after eleven years.", f:"fruition", ko:"그 계획은 11년이 지나 결실을 맺었다." }] },
 
-  { word:"frustrate", pron:"프러스트레이트", pos:"v", level:"B2", meanings:["좌절시키다"],
+  { word:"frustrate", exams:["공무원"], pron:"프러스트레이트", pos:"v", level:"B2", meanings:["좌절시키다"],
     syn:["thwart","foil","block the plans of"],
     ex:[{ s:"Heavy snow will {{}} any attempt on the summit.", f:"frustrate", ko:"폭설은 정상 등반 시도를 좌절시킬 것이다." }] },
 

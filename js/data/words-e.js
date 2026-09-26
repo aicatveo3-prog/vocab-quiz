@@ -1156,7 +1156,7 @@ window.VOCAB_E = [
      pos 는 하나여야 하므로 동사로 정리했다 — 표제어 come across 가 이 낱말을
      유의어로 쓰고 있어 동사 갈래가 살아 있어야 한다(기존 GLOSS 는 "마주치다, 만남"
      이라 명사 갈래가 섞여 있었다). */
-  { word:"encounter", pron:"인카운터", pos:"v", level:"B2", meanings:["맞닥뜨리다","마주치다"],
+  { word:"encounter", exams:["공무원"], pron:"인카운터", pos:"v", level:"B2", meanings:["맞닥뜨리다","마주치다"],
     syn:["come across","run into","bump into"],
     ex:[{ s:"Hikers sometimes {{}} bears on this ridge.", f:"encounter", ko:"등산객들은 이 능선에서 이따금 곰과 맞닥뜨린다." }] },
 
@@ -1344,7 +1344,7 @@ window.VOCAB_E = [
     syn:["hand over to","assign","put in the care of"],
     ex:[{ s:"They chose to {{}} the accounts to an outside firm.", f:"entrust", ko:"그들은 회계를 외부 회사에 맡기기로 했다." }] },
 
-  { word:"entry", pron:"엔트리", pos:"n", level:"B1", meanings:["들어감","입장"],
+  { word:"entry", exams:["공무원"], pron:"엔트리", pos:"n", level:"B1", meanings:["들어감","입장"],
     syn:["entrance","access","admittance"],
     ex:[{ s:"A side gate gives {{}} to the garden.", f:"entry", ko:"측면 문으로 정원에 들어갈 수 있다." }] },
 
@@ -1612,7 +1612,7 @@ window.VOCAB_E = [
     ex:[{ s:"He wrote of an {{}} bond between the two families.", f:"everlasting", ko:"그는 두 가문 사이의 영원히 계속되는 유대를 적었다." }] },
 
   /* 원본은 '증거; 증언; 흔적' 으로 갈래가 셋이다 — 둘로 줄였다. */
-  { word:"evidence", pron:"에비던스", pos:"n", level:"B1", meanings:["증거","증언"],
+  { word:"evidence", exams:["공무원"], pron:"에비던스", pos:"n", level:"B1", meanings:["증거","증언"],
     syn:["proof","testimony","grounds"],
     ex:[{ s:"The police found no {{}} of a break-in.", f:"evidence", ko:"경찰은 침입의 증거를 찾지 못했다." }] },
 
@@ -1687,7 +1687,7 @@ window.VOCAB_E = [
 
   /* 원본은 '교환; 교환하다' 로 명사와 동사가 섞여 있다 — 동사로 정했다.
      표제어 barter(동사)가 이 낱말을 유의어로 쓴다. */
-  { word:"exchange", pron:"익스체인지", pos:"v", level:"B1", meanings:["교환하다","주고받다"],
+  { word:"exchange", exams:["공무원"], pron:"익스체인지", pos:"v", level:"B1", meanings:["교환하다","주고받다"],
     syn:["swap","barter","interchange"],
     ex:[{ s:"The two schools {{}} students every summer.", f:"exchange", ko:"두 학교는 매년 여름 학생을 교환한다." }] },
 
@@ -1911,7 +1911,7 @@ window.VOCAB_E = [
     syn:["take advantage of","use unfairly","squeeze profit from"],
     ex:[{ s:"Some agencies {{}} workers who cannot read the contract.", f:"exploit", ko:"일부 업체는 계약서를 읽지 못하는 노동자를 착취한다." }] },
 
-  { word:"exploitation", pron:"엑스플로이테이션", pos:"n", level:"C1", meanings:["착취","이용"],
+  { word:"exploitation", exams:["공무원"], pron:"엑스플로이테이션", pos:"n", level:"C1", meanings:["착취","이용"],
     syn:["abuse","misuse","unfair use"],
     ex:[{ s:"The report documents the {{}} of child labor.", f:"exploitation", ko:"그 보고서는 아동 노동 착취를 기록한다." }] },
 

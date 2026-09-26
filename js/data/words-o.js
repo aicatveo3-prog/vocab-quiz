@@ -214,7 +214,7 @@ window.VOCAB_O = [
      comply(C) 가 '준수하다' 갈래를 쓴다. comment(C) 는 '논평하다' 갈래를 쓰고
      있었는데 N 세트에서 그쪽 유의어를 note 로 옮겨 두었다.
      원본의 '목격하다' 는 witness 쪽 뜻이어서 버렸다. */
-  { word:"observe", pron:"업저브", pos:"v", level:"B1", meanings:["관찰하다","준수하다"],
+  { word:"observe", exams:["공무원"], pron:"업저브", pos:"v", level:"B1", meanings:["관찰하다","준수하다"],
     syn:["watch closely","abide by","keep to"],
     ex:[{ s:"Scientists {{}} the birds from a hidden blind.", f:"observe", ko:"과학자들은 숨은 가림막에서 그 새들을 관찰한다." }] },
 
@@ -261,7 +261,7 @@ window.VOCAB_O = [
     ex:[{ s:"The answer was {{}} once she explained it.", f:"obvious", ko:"그녀가 설명하자 답은 분명했다." }] },
 
   /* 원본의 '행사' 갈래는 버렸다 — '때, 경우' 와 품사는 같지만 뜻이 멀다. */
-  { word:"occasion", pron:"어케이전", pos:"n", level:"B1", meanings:["때","경우"],
+  { word:"occasion", exams:["공무원"], pron:"어케이전", pos:"n", level:"B1", meanings:["때","경우"],
     syn:["moment","particular time","one such instance"],
     ex:[{ s:"On one {{}} the train left early.", f:"occasion", ko:"어떤 때에는 기차가 일찍 떠났다." }] },
 
@@ -291,7 +291,7 @@ window.VOCAB_O = [
 
   /* 승격 21 — 사전이 '발생하다; 떠오르다' 였다. 구분 기호만 바꿨다.
      참조 셋 중 come to mind(C) 가 '떠오르다' 갈래를 쓴다. */
-  { word:"occur", pron:"어커", pos:"v", level:"B1", meanings:["발생하다","떠오르다"],
+  { word:"occur", exams:["공무원"], pron:"어커", pos:"v", level:"B1", meanings:["발생하다","떠오르다"],
     syn:["arise","come about","take place"],
     ex:[{ s:"Such storms {{}} only once a decade.", f:"occur", ko:"그런 폭풍은 십 년에 한 번만 발생한다." }] },
 
@@ -413,7 +413,7 @@ window.VOCAB_O = [
 
   /* 승격 34 — 사전 표현 '반면에, 한편' 을 글자까지 지켰다(by contrast, B).
      원본의 '다른 관점에서' 대신 사전 쪽을 남겼다. */
-  { word:"on the other hand", pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
+  { word:"on the other hand", exams:["공무원"], pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
     syn:["by contrast","then again","from another view"] },
 
   /* 원본은 'on the tip of my tongue' 이었다. 저장소의 구 표제어는 사람을
@@ -821,7 +821,7 @@ window.VOCAB_O = [
   /* 승격 67 — 사전 표현 '생산량, 산출' 을 글자까지 지켰다(발음이 없던 항목이다).
      원본은 '산출, 생산, 결과; 산출하다, 출력하다' 로 명사와 동사가 섞여 있었다.
      참조가 없어 자유롭게 고를 수 있었고 명사로 정리했다. */
-  { word:"output", pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
+  { word:"output", exams:["공무원"], pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
     /* Y 세트에서 yield 를 동사로 세웠다. 명사 표제어의 유의어 칸에 동사가
        설 수 없으므로 풀어 쓴 말로 갈았다. harvest(H) 도 같이 손질했다.
        ⚠️ 처음에 'amount turned out' 을 넣었더니 바로 옆 'amount produced'

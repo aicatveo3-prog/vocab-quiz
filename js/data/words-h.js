@@ -220,7 +220,7 @@ window.VOCAB_H = [
 
   /* ── 챕터 3 ─────────────────────────────── */
 
-  { word:"hear from", pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
+  { word:"hear from", exams:["공무원"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
     syn:["get word from","receive news from","be contacted by"] },
 
   { word:"heartfelt", pron:"하트펠트", pos:"adj", level:"B2", meanings:["진심에서 우러난"],

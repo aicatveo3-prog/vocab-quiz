@@ -586,7 +586,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
      원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
-  { word:"mention", pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+  { word:"mention", exams:["공무원"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
     syn:["cite","refer to","bring up"],
     ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
 
@@ -687,7 +687,7 @@ window.VOCAB_M = [
     syn:["decimal","metre-based","standardized"],
     ex:[{ s:"Most countries use the {{}} system.", f:"metric", ko:"대부분의 나라가 미터법 체계를 쓴다." }] },
 
-  { word:"metropolitan", pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
+  { word:"metropolitan", exams:["공무원"], pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
     syn:["urban","city-wide","municipal"],
     ex:[{ s:"The {{}} area holds nine million people.", f:"metropolitan", ko:"그 대도시권에는 900만 명이 산다." }] },
 
@@ -1122,7 +1122,7 @@ window.VOCAB_M = [
 
   /* mortal 과 앞 네 글자가 같지만 어근이 갈리고 품사도 달라(adj/n)
      같은 보드에 안 온다. 원본의 동사 갈래('담보로 넣다')는 pos 가 n 이라 뺐다. */
-  { word:"mortgage", pron:"모기지", pos:"n", level:"C1", meanings:["융자","저당"],
+  { word:"mortgage", exams:["공무원"], pron:"모기지", pos:"n", level:"C1", meanings:["융자","저당"],
     syn:["home loan","property loan","secured debt"],
     ex:[{ s:"They took out a thirty-year {{}} on the flat.", f:"mortgage", ko:"그들은 그 아파트에 30년 융자를 받았다." }] },
 

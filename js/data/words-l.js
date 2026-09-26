@@ -583,7 +583,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '논리적인' 과 글자까지 같다. coherent(syn)·illogical(ant) 두
      문제가 참조한다. 원본도 한 갈래다.
      logic 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"logical", pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
+  { word:"logical", exams:["공무원"], pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
     syn:["coherent","rational","sound"], ant:["illogical"],
     ex:[{ s:"The next {{}} step is to test the theory.", f:"logical", ko:"다음 논리적인 단계는 그 이론을 검증하는 것이다." }] },
 
@@ -610,7 +610,7 @@ window.VOCAB_L = [
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 
-  { word:"look forward to", pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
+  { word:"look forward to", exams:["공무원"], pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
     syn:["anticipate","await eagerly","be eager for"] },
 
   { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],

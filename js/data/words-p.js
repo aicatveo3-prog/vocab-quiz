@@ -512,7 +512,7 @@ window.VOCAB_P = [
     ex:[{ s:"The {{}} is surrounded by water on three sides.", f:"peninsula", ko:"그 반도는 세 면이 물로 둘러싸여 있다." }] },
 
   /* 승격 34 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"pension", pron:"펜션", pos:"n", level:"B2", meanings:["연금"],
+  { word:"pension", exams:["공무원"], pron:"펜션", pos:"n", level:"B2", meanings:["연금"],
     syn:["retirement pay","money paid after work ends","old-age allowance"],
     ex:[{ s:"He lives on a small {{}}.", f:"pension", ko:"그는 적은 연금으로 산다." }] },
 
@@ -650,7 +650,7 @@ window.VOCAB_P = [
     syn:["customize","tailor to one person","make it one's own"],
     ex:[{ s:"You can {{}} the cover with your name.", f:"personalize", ko:"표지를 이름으로 맞춤화할 수 있다." }] },
 
-  { word:"personnel", pron:"퍼서넬", pos:"n", level:"B2", meanings:["직원","인사과"],
+  { word:"personnel", exams:["공무원"], pron:"퍼서넬", pos:"n", level:"B2", meanings:["직원","인사과"],
     syn:["staff of a firm","workforce","human-resources office"],
     ex:[{ s:"All {{}} must wear a badge.", f:"personnel", ko:"모든 직원은 표찰을 달아야 한다." }] },
 
@@ -734,7 +734,7 @@ window.VOCAB_P = [
     syn:["chemist's shop","drugstore","study of medicines"],
     ex:[{ s:"The {{}} closes at nine.", f:"pharmacy", ko:"그 약국은 아홉 시에 닫는다." }] },
 
-  { word:"phase", pron:"페이즈", pos:"n", level:"B1", meanings:["단계","국면"],
+  { word:"phase", exams:["공무원"], pron:"페이즈", pos:"n", level:"B1", meanings:["단계","국면"],
     syn:["stage in a process","step along the way","period of change"],
     ex:[{ s:"The project entered its final {{}}.", f:"phase", ko:"그 사업은 마지막 단계에 들어섰다." }] },
 
@@ -885,7 +885,7 @@ window.VOCAB_P = [
 
   /* 승격 64 — 사전이 '식물; 심다' 로 명사와 동사가 섞여 있었다(발음이 없었다).
      참조가 없어 사전의 첫 갈래 '식물' 을 지키고 원본의 '공장' 을 붙였다. */
-  { word:"plant", pron:"플랜트", pos:"n", level:"B1", meanings:["식물","공장"],
+  { word:"plant", exams:["공무원"], pron:"플랜트", pos:"n", level:"B1", meanings:["식물","공장"],
     syn:["living growth","vegetation","factory building"],
     ex:[{ s:"This {{}} needs very little water.", f:"plant", ko:"이 식물은 물이 아주 적게 필요하다." }] },
 
@@ -999,7 +999,7 @@ window.VOCAB_P = [
   /* 승격 74 — 사전값 '바라보는 자리' 는 O 세트 outlook 을 위해 내가 만든 표현이다.
      원본의 '관점, 견해' 가 훨씬 또렷해서 그쪽을 썼다 — outlook(O) 의 화면 글자가
      바뀐다. "(=viewpoint)" 표기는 걷었다. */
-  { word:"point of view", pron:"포인트 오브 뷰", pos:"phr", level:"B1", meanings:["관점","견해"],
+  { word:"point of view", exams:["공무원"], pron:"포인트 오브 뷰", pos:"phr", level:"B1", meanings:["관점","견해"],
     syn:["standpoint","angle one sees from","personal take"] },
 
   /* 승격 75 — 사전값 '집어서 말하다' 를 둘째 자리로 살리고 원본의 '지적하다' 를
@@ -1139,7 +1139,7 @@ window.VOCAB_P = [
     syn:["certain","sure beyond doubt","hopeful in outlook"], ant:["negative"],
     ex:[{ s:"I am {{}} that I locked the door.", f:"positive", ko:"나는 문을 잠갔다고 확신한다." }] },
 
-  { word:"possess", pron:"퍼제스", pos:"v", level:"B1", meanings:["소유하다","지니다"],
+  { word:"possess", exams:["공무원"], pron:"퍼제스", pos:"v", level:"B1", meanings:["소유하다","지니다"],
     syn:["own","have as one's own","hold title to"],
     ex:[{ s:"Few families {{}} land here.", f:"possess", ko:"이곳에서 땅을 소유하는 가족은 드물다." }] },
 
@@ -1502,7 +1502,7 @@ window.VOCAB_P = [
   /* 승격 114 — 사전은 '제시하다; 현재의' 로 품사가 섞여 있었다. 원본과 참조
      display(D) 를 따라 동사로 세웠다. 어긋나 있던 absent 의 반의어는
      in attendance 로 고쳤다 (words.js). */
-  { word:"present", pron:"프리젠트", pos:"v", level:"B2", meanings:["제시하다","주다"],
+  { word:"present", exams:["공무원"], pron:"프리젠트", pos:"v", level:"B2", meanings:["제시하다","주다"],
     syn:["put forward","hand over","offer for notice"],
     ex:[{ s:"She will {{}} the findings tomorrow.", f:"present", ko:"그녀는 내일 그 결과를 제시할 것이다." }] },
 
@@ -1689,7 +1689,7 @@ window.VOCAB_P = [
     ex:[{ s:"No {{}} notice was given.", f:"prior", ko:"사전의 통보는 없었다." }] },
 
   /* 승격 130 — 사전은 '우선 사항' 한 갈래였고 참조가 없어 '우선순위' 를 붙였다. */
-  { word:"priority", pron:"프라이오러티", pos:"n", level:"B1", meanings:["우선 사항","우선순위"],
+  { word:"priority", exams:["공무원"], pron:"프라이오러티", pos:"n", level:"B1", meanings:["우선 사항","우선순위"],
     syn:["what comes first","matter to handle first","order of importance"],
     ex:[{ s:"Safety is our top {{}}.", f:"priority", ko:"안전이 우리의 가장 높은 우선 사항이다." }] },
 
@@ -1781,7 +1781,7 @@ window.VOCAB_P = [
     syn:["occupation","line of work","calling that needs training"],
     ex:[{ s:"Teaching is a respected {{}}.", f:"profession", ko:"교직은 존중받는 직업이다." }] },
 
-  { word:"professional", pron:"프러페셔널", pos:"adj", level:"B1", meanings:["전문적인","전문가의"],
+  { word:"professional", exams:["공무원"], pron:"프러페셔널", pos:"adj", level:"B1", meanings:["전문적인","전문가의"],
     syn:["done for a living","trained and skilled","of an expert"], ant:["amateur"],
     ex:[{ s:"She gave {{}} advice.", f:"professional", ko:"그녀는 전문적인 조언을 해 주었다." }] },
 
@@ -2126,7 +2126,7 @@ window.VOCAB_P = [
     ex:[{ s:"Water {{}} takes three steps.", f:"purification", ko:"물 정화는 세 단계를 거친다." }] },
 
   /* 승격 175 — 사전 표현과 글자까지 같다(function, F · intention, I — 두 곳). */
-  { word:"purpose", pron:"퍼퍼스", pos:"n", level:"B1", meanings:["목적","쓰임"],
+  { word:"purpose", exams:["공무원"], pron:"퍼퍼스", pos:"n", level:"B1", meanings:["목적","쓰임"],
     syn:["aim in doing","what a thing is for","end one has in mind"],
     ex:[{ s:"What is the {{}} of this form?", f:"purpose", ko:"이 서식의 목적은 무엇인가요?" }] },
 

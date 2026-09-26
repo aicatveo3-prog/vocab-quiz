@@ -131,7 +131,7 @@ window.VOCAB_B = [
     syn:["infertile","sterile","desolate"], ant:["fertile"],
     ex:[{ s:"Almost nothing grows in this {{}} land.", f:"barren", ko:"이 불모의 땅에서는 거의 아무것도 자라지 않는다." }] },
 
-  { word:"barrier", pron:"배리어", pos:"n", level:"B2", meanings:["장벽","장애물"],
+  { word:"barrier", exams:["공무원"], pron:"배리어", pos:"n", level:"B2", meanings:["장벽","장애물"],
     syn:["obstacle","obstruction","blockade"],
     ex:[{ s:"Language can be a serious {{}} to friendship.", f:"barrier", ko:"언어는 우정에 심각한 장벽이 될 수 있다." }],
     gov:{ prep:["to","against","between","of"], pat:"a barrier {{}} entry", usage:"a barrier to ~ : ~에 대한 장벽" } },
@@ -619,7 +619,7 @@ window.VOCAB_B = [
     syn:["tie","link","attachment"],
     ex:[{ s:"A strong {{}} formed between the two teams.", f:"bond", ko:"두 팀 사이에 강한 유대감이 형성되었다." }] },
 
-  { word:"book", pron:"북", pos:"v", level:"B1", meanings:["예약하다"],
+  { word:"book", exams:["공무원"], pron:"북", pos:"v", level:"B1", meanings:["예약하다"],
     syn:["reserve","arrange","schedule"], ant:["cancel"],
     ex:[{ s:"We should {{}} a table for eight o'clock.", f:"book", ko:"우리는 8시로 자리를 예약해야 한다." }] },
 

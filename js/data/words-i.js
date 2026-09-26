@@ -392,7 +392,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '수입하다' 다. export(ant) 가 참조한다. 첫 갈래를 그대로
      지키고 원본의 '가져오다' 를 뒤에 붙였다.
      원본 셋째 갈래 '수입품'(명사)은 pos 가 v 라 담지 못했다. */
-  { word:"import", pron:"임포트", pos:"v", level:"B1", meanings:["수입하다","가져오다"],
+  { word:"import", exams:["공무원"], pron:"임포트", pos:"v", level:"B1", meanings:["수입하다","가져오다"],
     syn:["bring in","introduce","ship in"], ant:["export"],
     ex:[{ s:"Japan must {{}} most of its energy resources.", f:"import", ko:"일본은 에너지 자원의 대부분을 수입해야 한다." }] },
 
@@ -514,7 +514,7 @@ window.VOCAB_I = [
      4지선다·짝맞추기 두 모드로만 출제된다. */
   { word:"in mid-career", pron:"인 미드 커리어", pos:"phr", level:"C2", meanings:["경력 중반에"] },
 
-  { word:"in particular", pron:"인 퍼티큘러", pos:"phr", level:"B1", meanings:["특히"],
+  { word:"in particular", exams:["공무원"], pron:"인 퍼티큘러", pos:"phr", level:"B1", meanings:["특히"],
     syn:["especially","notably","specifically"] },
 
   { word:"in person", pron:"인 퍼슨", pos:"phr", level:"B1", meanings:["직접","몸소"],
@@ -1642,7 +1642,7 @@ window.VOCAB_I = [
 
   /* invest·investigate 는 앞 여섯 글자가 같고 품사도 둘 다 v 라 같은 보드에 올 수
      있다. 다만 뜻이 '투자하다' 와 '조사하다' 로 완전히 달라 무리가 없다. */
-  { word:"invest", pron:"인베스트", pos:"v", level:"B1", meanings:["투자하다","쏟다"],
+  { word:"invest", exams:["공무원"], pron:"인베스트", pos:"v", level:"B1", meanings:["투자하다","쏟다"],
     syn:["put money into","fund","back"],
     ex:[{ s:"They decided to {{}} in renewable energy.", f:"invest", ko:"그들은 재생 에너지에 투자하기로 결정했다." }] },
 

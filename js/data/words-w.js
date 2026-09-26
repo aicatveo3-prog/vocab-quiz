@@ -166,7 +166,7 @@ window.VOCAB_W = [
   /* 승격 ⑦ — 사전 단일값 유지. 참조 세 곳(dilute·impair 유의어, consolidate
      반의어) 의 화면은 바뀌지 않는다. dampen(약화시키다, 적시다)·undermine
      (약화시키다) 과 글자가 맞물려 배제된다. */
-  { word:"weaken", pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
+  { word:"weaken", exams:["공무원"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
     syn:["dilute","impair","make less strong"], ant:["consolidate"],
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 

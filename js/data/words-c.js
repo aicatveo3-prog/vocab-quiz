@@ -896,7 +896,7 @@ window.VOCAB_C = [
     syn:["shared","collective","joint"], ant:["personal"],
     ex:[{ s:"The building has one {{}} kitchen per floor.", f:"communal", ko:"그 건물에는 층마다 공동 주방이 하나 있다." }] },
 
-  { word:"community", pron:"커뮤니티", pos:"n", level:"B1", meanings:["사회","공동체"],
+  { word:"community", exams:["공무원"], pron:"커뮤니티", pos:"n", level:"B1", meanings:["사회","공동체"],
     syn:["society","population","neighborhood"],
     ex:[{ s:"The whole {{}} turned out to rebuild the bridge.", f:"community", ko:"온 마을이 다리를 다시 세우러 나왔다." }] },
 
@@ -1379,7 +1379,7 @@ window.VOCAB_C = [
     ex:[{ s:"The pair began to {{}} against their own captain.", f:"conspire", ko:"그 둘은 자기 주장을 상대로 음모를 꾸미기 시작했다." }] },
 
   /* 첫 뜻을 '끊임없는'으로 두면 ceaseless(2차)와 카드 문구가 똑같아진다 */
-  { word:"constant", pron:"칸스턴트", pos:"adj", level:"B1", meanings:["일정한","끊임없는"],
+  { word:"constant", exams:["공무원"], pron:"칸스턴트", pos:"adj", level:"B1", meanings:["일정한","끊임없는"],
     syn:["steady","unchanging","perpetual"], ant:["variable"],
     ex:[{ s:"The engine held a {{}} speed for hours.", f:"constant", ko:"엔진은 몇 시간이나 일정한 속도를 유지했다." }] },
 
@@ -1486,7 +1486,7 @@ window.VOCAB_C = [
     syn:["agreement","deal","pact"],
     ex:[{ s:"They signed a three-year {{}} in May.", f:"contract", ko:"그들은 5월에 3년 계약을 맺었다." }] },
 
-  { word:"contradict", pron:"칸트러딕트", pos:"v", level:"B2", meanings:["반박하다","부정하다"],
+  { word:"contradict", exams:["공무원"], pron:"칸트러딕트", pos:"v", level:"B2", meanings:["반박하다","부정하다"],
     syn:["dispute","deny","oppose"], ant:["confirm"],
     ex:[{ s:"The new data {{}} the earlier study.", f:"contradicts", ko:"새 자료는 앞선 연구를 반박한다." }] },
 
@@ -1497,7 +1497,7 @@ window.VOCAB_C = [
   { word:"contrary to", pron:"칸트레리 투", pos:"phr", level:"B2", meanings:["~에 반해"],
     syn:["against","despite","unlike"] },
 
-  { word:"contrast", pron:"칸트래스트", pos:"n", level:"B1", meanings:["대비","차이"],
+  { word:"contrast", exams:["공무원"], pron:"칸트래스트", pos:"n", level:"B1", meanings:["대비","차이"],
     syn:["difference","distinction","disparity"], ant:["similarity"],
     ex:[{ s:"The {{}} between the twins is striking.", f:"contrast", ko:"그 쌍둥이 사이의 차이는 놀랍다." }] },
 
@@ -1565,7 +1565,7 @@ window.VOCAB_C = [
     ex:[{ s:"Nothing will {{}} him to change his mind.", f:"convince", ko:"어떤 것도 그가 마음을 바꾸도록 납득시키지 못할 것이다." }],
     gov:{ prep:["of","about","to"], pat:"convince him {{}} the risk", usage:"convince A of B : A에게 B를 납득시키다" } },
 
-  { word:"convincing", pron:"컨빈싱", pos:"adj", level:"B2", meanings:["납득이 가는","설득력 있는"],
+  { word:"convincing", exams:["공무원"], pron:"컨빈싱", pos:"adj", level:"B2", meanings:["납득이 가는","설득력 있는"],
     syn:["persuasive","credible","plausible"], ant:["dubious"],
     ex:[{ s:"His alibi was not remotely {{}}.", f:"convincing", ko:"그의 알리바이는 조금도 납득이 가지 않았다." }] },
 

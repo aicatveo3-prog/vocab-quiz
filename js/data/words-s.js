@@ -334,7 +334,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑲ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 conspiracy(C)·conspire(C)
      두 곳의 설명이 '계획; 음모' 에서 '계획, 음모' 가 된다. */
-  { word:"scheme", pron:"스킴", pos:"n", level:"B2", meanings:["계획","음모"],
+  { word:"scheme", exams:["공무원"], pron:"스킴", pos:"n", level:"B2", meanings:["계획","음모"],
     syn:["conspiracy","plot","secret plan"],
     ex:[{ s:"They devised a {{}} to raise funds.", f:"scheme", ko:"그들은 자금을 모을 계획을 짜냈다." }] },
 
@@ -472,7 +472,7 @@ window.VOCAB_S = [
     ex:[{ s:"Read the last {{}} of the report.", f:"section", ko:"보고서의 마지막 부분을 읽어라." }] },
 
   /* 승격 ㉗ — 사전 글자 유지. 참조는 없다. '구역' 은 section 에 넘겼다. */
-  { word:"sector", pron:"섹터", pos:"n", level:"B2", meanings:["분야","부문"],
+  { word:"sector", exams:["공무원"], pron:"섹터", pos:"n", level:"B2", meanings:["분야","부문"],
     syn:["field of work","branch of industry","part of the economy"],
     ex:[{ s:"The public {{}} added many jobs.", f:"sector", ko:"공공 분야가 많은 일자리를 늘렸다." }] },
 
@@ -733,7 +733,7 @@ window.VOCAB_S = [
     ex:[{ s:"The novel has a rural {{}}.", f:"setting", ko:"그 소설은 시골을 배경으로 한다." }] },
 
   /* 승격 ㊾ — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"settle", pron:"세틀", pos:"v", level:"B1", meanings:["정착하다","해결하다"],
+  { word:"settle", exams:["공무원"], pron:"세틀", pos:"v", level:"B1", meanings:["정착하다","해결하다"],
     syn:["make one's home","put an end to a dispute","come to rest"],
     ex:[{ s:"They chose to {{}} near the river.", f:"settle", ko:"그들은 강 가까이에 정착하기로 했다." }] },
 
@@ -988,7 +988,7 @@ window.VOCAB_S = [
 
   /* 승격 71 — 사전 글자 유지. 참조 affinity(A)·commonality(C)·contrast(C)
      세 곳의 화면은 바뀌지 않는다. */
-  { word:"similarity", pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
+  { word:"similarity", exams:["공무원"], pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
     syn:["affinity","commonality","likeness between two"], ant:["contrast"],
     ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
 
@@ -1588,7 +1588,7 @@ window.VOCAB_S = [
   /* 승격 123 — 사전 첫 갈래만 남겼다. 참조 crack(C)·divorce(D) 가 둘 다 명사
      여서 그 두 자리를 각각 'narrow break'·'legal end of a marriage' 로 갈았다.
      챕터 5 의 separate(분리하다, 나누다) 와 '나누다' 가 같아 자동 배제된다. */
-  { word:"split", pron:"스플릿", pos:"v", level:"B2", meanings:["나누다"],
+  { word:"split", exams:["공무원"], pron:"스플릿", pos:"v", level:"B2", meanings:["나누다"],
     syn:["divide in two","cut apart","break along a line"],
     ex:[{ s:"They agreed to {{}} the cost.", f:"split", ko:"그들은 비용을 나누기로 했다." }] },
 
@@ -1808,7 +1808,7 @@ window.VOCAB_S = [
     ex:[{ s:"They slept under a {{}} sky.", f:"starry", ko:"그들은 별이 많은 하늘 아래 잤다." }] },
 
   /* 승격 145 — 사전 단일값 유지. 참조 frighten(F) 의 화면은 바뀌지 않는다. */
-  { word:"startle", pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
+  { word:"startle", exams:["공무원"], pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
     syn:["frighten","give a sudden shock","make jump"],
     ex:[{ s:"The noise will {{}} the horses.", f:"startle", ko:"그 소음이 말들을 흠칫 놀라게 할 것이다." }] },
 
@@ -2382,7 +2382,7 @@ window.VOCAB_S = [
 
   /* 승격 204 — 사전 단일값 유지. 참조 네 곳(appropriate·apt·eligible·fit) 의
      화면은 바뀌지 않는다. */
-  { word:"suitable", pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
+  { word:"suitable", exams:["공무원"], pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
     syn:["appropriate","apt","fit"],
     ex:[{ s:"This film is not {{}} for children.", f:"suitable", ko:"이 영화는 아이들에게 적합하지 않다." }] },
 

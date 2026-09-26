@@ -567,7 +567,7 @@ window.VOCAB_V = [
   /* 승격 ㉝ — 사전 글자 유지(참조 explosive). capricious·moody 가 교재의
      '변덕스러운' 을, instability(불안정)·unease(불안, 불안정한 마음) 가
      '불안정한' 을 품어 맞물려 배제된다. */
-  { word:"volatile", pron:"발러타일", pos:"adj", level:"C1", meanings:["휘발성의","불안정한"],
+  { word:"volatile", exams:["공무원"], pron:"발러타일", pos:"adj", level:"C1", meanings:["휘발성의","불안정한"],
     syn:["explosive","ready to catch fire","liable to blow up"],
     ex:[{ s:"That liquid is highly {{}}.", f:"volatile", ko:"그 액체는 휘발성이 매우 높다." }] },
 

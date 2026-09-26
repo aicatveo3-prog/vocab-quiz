@@ -149,7 +149,7 @@ window.VOCAB_D = [
     syn:["dim","cast a shadow on","blacken"], ant:["brighten"],
     ex:[{ s:"Storm clouds slowly {{}} the afternoon sky.", f:"darkened", ko:"폭풍 구름이 오후 하늘을 서서히 어둡게 했다." }] },
 
-  { word:"date back to", pron:"데이트 백 투", pos:"phr", level:"B2", meanings:["~까지 거슬러 올라가다"],
+  { word:"date back to", exams:["공무원"], pron:"데이트 백 투", pos:"phr", level:"B2", meanings:["~까지 거슬러 올라가다"],
     syn:["go back to","originate in","stem from"] },
 
   { word:"daunting", pron:"돈팅", pos:"adj", level:"C1", meanings:["벅찬","기가 죽게 하는"],
@@ -208,7 +208,7 @@ window.VOCAB_D = [
 
   /* ── dec ───────────────────────────────────── */
   /* decade — 바꿔 쓸 수 있는 낱말이 사실상 없어 syn 을 비워 둔다 */
-  { word:"decade", pron:"데케이드", pos:"n", level:"B1", meanings:["10년"],
+  { word:"decade", exams:["공무원"], pron:"데케이드", pos:"n", level:"B1", meanings:["10년"],
     ex:[{ s:"The neighborhood has changed enormously over the past {{}}.", f:"decade", ko:"그 동네는 지난 10년간 엄청나게 변했다." }] },
 
   { word:"decadence", pron:"데커던스", pos:"n", level:"C2", meanings:["타락","퇴폐"],
@@ -253,7 +253,7 @@ window.VOCAB_D = [
     syn:["conclusive","crucial","resolute"], ant:["indecisive"],
     ex:[{ s:"Her testimony turned out to be {{}} in the trial.", f:"decisive", ko:"그녀의 증언은 재판에서 결정적인 것으로 드러났다." }] },
 
-  { word:"deck", pron:"덱", pos:"n", level:"B2", meanings:["갑판","바닥"],
+  { word:"deck", exams:["공무원"], pron:"덱", pos:"n", level:"B2", meanings:["갑판","바닥"],
     syn:["platform","floor","surface"],
     ex:[{ s:"Passengers gathered on the upper {{}} to watch the harbor.", f:"deck", ko:"승객들이 항구를 보려고 상층 갑판에 모였다." }] },
 
@@ -273,7 +273,7 @@ window.VOCAB_D = [
     syn:["ornament","adornment","trimming"],
     ex:[{ s:"The hall was covered in {{}} for the graduation ceremony.", f:"decorations", ko:"강당은 졸업식을 위해 장식으로 덮여 있었다." }] },
 
-  { word:"decrease", pron:"디크리스", pos:"v", level:"B1", meanings:["줄다","감소시키다"],
+  { word:"decrease", exams:["공무원"], pron:"디크리스", pos:"v", level:"B1", meanings:["줄다","감소시키다"],
     syn:["diminish","lessen","dwindle"], ant:["increase"],
     ex:[{ s:"Fuel consumption will {{}} noticeably if you drive more slowly.", f:"decrease", ko:"더 천천히 운전하면 연료 소비가 뚜렷하게 줄어든다." }] },
 
@@ -373,7 +373,7 @@ window.VOCAB_D = [
     syn:["postponement","holdup","lag"], ant:["acceleration"],
     ex:[{ s:"A two-hour {{}} left passengers stranded at the gate.", f:"delay", ko:"두 시간의 지연으로 승객들이 게이트에 발이 묶였다." }] },
 
-  { word:"delegate", pron:"델리깃", pos:"n", level:"C1", meanings:["대표","대리인"],
+  { word:"delegate", exams:["공무원"], pron:"델리깃", pos:"n", level:"C1", meanings:["대표","대리인"],
     syn:["representative","envoy","deputy"],
     ex:[{ s:"Each member country sent one {{}} to the conference.", f:"delegate", ko:"각 회원국이 회의에 대표 한 명을 보냈다." }] },
 
@@ -793,7 +793,7 @@ window.VOCAB_D = [
     syn:["nutritional","food-related","nutritive"],
     ex:[{ s:"The doctor suggested several simple {{}} changes.", f:"dietary", ko:"의사는 몇 가지 간단한 식이 변화를 제안했다." }] },
 
-  { word:"differ", pron:"디퍼", pos:"v", level:"B1", meanings:["다르다","의견이 다르다"],
+  { word:"differ", exams:["공무원"], pron:"디퍼", pos:"v", level:"B1", meanings:["다르다","의견이 다르다"],
     syn:["diverge","vary","contrast"], ant:["match"],
     ex:[{ s:"The two accounts {{}} on several key points.", f:"differ", ko:"두 진술은 몇 가지 핵심에서 다르다." }] },
 
@@ -1262,7 +1262,7 @@ window.VOCAB_D = [
   { word:"do-it-yourself", pron:"두 잇 유어셀프", pos:"n", level:"B2", meanings:["직접 만들기","자가 수리"],
     ex:[{ s:"The shop specializes in {{}} furniture kits.", f:"do-it-yourself", ko:"그 가게는 직접 조립하는 가구 세트를 전문으로 한다." }] },
 
-  { word:"domain", pron:"도메인", pos:"n", level:"C1", meanings:["영역","분야"],
+  { word:"domain", exams:["공무원"], pron:"도메인", pos:"n", level:"C1", meanings:["영역","분야"],
     syn:["field","sphere","realm"],
     ex:[{ s:"That question lies well outside my {{}} of expertise.", f:"domain", ko:"그 질문은 내 전문 영역에서 한참 벗어난다." }] },
 
