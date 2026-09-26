@@ -197,7 +197,7 @@ window.VOCAB_G = [
   { word:"genetics", pron:"저네틱스", pos:"n", level:"B2", meanings:["유전학"],
     ex:[{ s:"She studies {{}} at a government research institute.", f:"genetics", ko:"그녀는 정부 연구소에서 유전학을 연구한다." }] },
 
-  { word:"genre", pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
+  { word:"genre", exams:["공무원"], pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
     syn:["category","style","classification"],
     ex:[{ s:"Science fiction has long been his favourite {{}}.", f:"genre", ko:"공상과학은 오랫동안 그가 가장 좋아하는 장르였다." }] },
 
@@ -342,7 +342,7 @@ window.VOCAB_G = [
     syn:["sparkle","shimmer","twinkle"],
     ex:[{ s:"Frost made the whole field {{}} in the morning sun.", f:"glitter", ko:"서리가 아침 햇살에 들판 전체를 반짝이게 했다." }] },
 
-  { word:"globalization", pron:"글로벌라이제이션", pos:"n", level:"B2", meanings:["세계화"],
+  { word:"globalization", exams:["공무원"], pron:"글로벌라이제이션", pos:"n", level:"B2", meanings:["세계화"],
     ex:[{ s:"{{}} has reshaped how small firms find customers.", f:"Globalization", ko:"세계화는 작은 기업이 고객을 찾는 방식을 바꿔 놓았다." }] },
 
   /* 승격 ① — GLOSS '우울한, 침울한' 을 글자까지 지켰다. depressed·dismal·
@@ -477,7 +477,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '잡다; 이해하다' 를 그대로 지켰다. comprehend 의 유의어로
      쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
      원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
-  { word:"grasp", pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+  { word:"grasp", exams:["공무원"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
     gov:{ prep:["at","for"], pat:"grasp {{}} any excuse", usage:"grasp at ~ : ~을 붙잡으려 하다" },
     syn:["comprehend","apprehend","fathom"],
     ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },

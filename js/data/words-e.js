@@ -1112,7 +1112,7 @@ window.VOCAB_E = [
     syn:["hire","make use of","give a job to"], ant:["dismiss"],
     ex:[{ s:"The mill used to {{}} half the town.", f:"employ", ko:"그 공장은 한때 마을 절반을 고용했다." }] },
 
-  { word:"empower", pron:"임파워", pos:"v", level:"C1", meanings:["권한을 주다","힘을 실어 주다"],
+  { word:"empower", exams:["공무원"], pron:"임파워", pos:"v", level:"C1", meanings:["권한을 주다","힘을 실어 주다"],
     syn:["authorize","enable","give power to"],
     ex:[{ s:"The law will {{}} local councils to set their own rules.", f:"empower", ko:"그 법은 지방 의회가 자체 규정을 정할 권한을 준다." }] },
 
@@ -1150,7 +1150,7 @@ window.VOCAB_E = [
     syn:["encrypt","cipher","put into code"], ant:["decode"],
     ex:[{ s:"The app will {{}} every message before sending it.", f:"encode", ko:"그 앱은 메시지를 보내기 전에 모두 암호화한다." }] },
 
-  { word:"encompass", pron:"인컴퍼스", pos:"v", level:"C1", meanings:["포함하다","아우르다"],
+  { word:"encompass", exams:["공무원"], pron:"인컴퍼스", pos:"v", level:"C1", meanings:["포함하다","아우르다"],
     syn:["include","incorporate","bring together"], ant:["exclude"],
     ex:[{ s:"The survey will {{}} every district in the province.", f:"encompass", ko:"그 조사는 그 도의 모든 구역을 포함할 것이다." }] },
 
@@ -1242,7 +1242,7 @@ window.VOCAB_E = [
     syn:["captivate","draw in","hold the attention of"],
     ex:[{ s:"A good opening line will {{}} the reader at once.", f:"engage", ko:"좋은 첫 문장은 독자를 곧바로 사로잡는다." }] },
 
-  { word:"engagement", pron:"인게이지먼트", pos:"n", level:"B2", meanings:["약속","약혼"],
+  { word:"engagement", exams:["공무원"], pron:"인게이지먼트", pos:"n", level:"B2", meanings:["약속","약혼"],
     syn:["appointment","betrothal","prior arrangement"],
     ex:[{ s:"She had a dinner {{}} she could not cancel.", f:"engagement", ko:"그녀는 취소할 수 없는 저녁 약속이 있었다." }] },
 
@@ -1434,7 +1434,7 @@ window.VOCAB_E = [
     syn:["ambiguous","vague","open to doubt"], ant:["explicit"],
     ex:[{ s:"His {{}} reply satisfied neither side.", f:"equivocal", ko:"그의 애매한 답변은 어느 쪽도 만족시키지 못했다." }] },
 
-  { word:"era", pron:"이러", pos:"n", level:"B2", meanings:["시대","연대"],
+  { word:"era", exams:["공무원"], pron:"이러", pos:"n", level:"B2", meanings:["시대","연대"],
     syn:["age","period","epoch"],
     ex:[{ s:"Steam engines defined an entire {{}} of industry.", f:"era", ko:"증기 기관은 산업의 한 시대 전체를 규정했다." }] },
 
@@ -1531,7 +1531,7 @@ window.VOCAB_E = [
 
   /* 원본은 '견적, 추정; 추정하다, 추산하다' 로 명사와 동사가 섞여 있다 — 동사로
      정했다. 표제어 calculate(동사)가 유의어로 쓴다. */
-  { word:"estimate", pron:"에스터메이트", pos:"v", level:"B1", meanings:["추정하다","추산하다"],
+  { word:"estimate", exams:["공무원"], pron:"에스터메이트", pos:"v", level:"B1", meanings:["추정하다","추산하다"],
     syn:["calculate","reckon","work out"],
     ex:[{ s:"Surveyors {{}} the repair at twice that figure.", f:"estimate", ko:"조사관들은 수리비를 그 금액의 두 배로 추정한다." }] },
 
@@ -1725,7 +1725,7 @@ window.VOCAB_E = [
   /* 원본은 '처형하다; (계획을) 실행하다' 로 처형이 앞이지만 '실행하다' 를 앞에 뒀다 —
      표제어 carry out(수행하다, 실행하다)이 이 낱말을 유의어로 쓰므로, 피드백이
      '처형하다' 로 시작하면 엉뚱해진다. 괄호도 풀었다. */
-  { word:"execute", pron:"엑서큐트", pos:"v", level:"B2", meanings:["실행하다","처형하다"],
+  { word:"execute", exams:["공무원"], pron:"엑서큐트", pos:"v", level:"B2", meanings:["실행하다","처형하다"],
     syn:["carry out","perform","put into effect"],
     ex:[{ s:"The team will {{}} the plan in three stages.", f:"execute", ko:"그 팀은 계획을 세 단계로 실행할 것이다." }] },
 
@@ -2011,7 +2011,7 @@ window.VOCAB_E = [
 
   /* ── 13차: extinction ~ eyesore (10개, 마지막) ────── */
 
-  { word:"extinction", pron:"익스팅션", pos:"n", level:"B2", meanings:["멸종","절멸"],
+  { word:"extinction", exams:["공무원"], pron:"익스팅션", pos:"n", level:"B2", meanings:["멸종","절멸"],
     syn:["dying out","disappearance","wiping out"],
     ex:[{ s:"Two more frog species face {{}} this decade.", f:"extinction", ko:"개구리 두 종이 이번 10년 안에 멸종에 직면한다." }] },
 

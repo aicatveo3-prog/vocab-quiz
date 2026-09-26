@@ -381,7 +381,7 @@ window.VOCAB_B = [
   { word:"best of all", pron:"베스트 오브 올", pos:"phr", level:"B1", meanings:["무엇보다도"],
     syn:["above all","most importantly","first and foremost"], ant:["least of all"] },
 
-  { word:"bestow", pron:"비스토우", pos:"v", level:"C2", meanings:["수여하다","증여하다"],
+  { word:"bestow", exams:["공무원"], pron:"비스토우", pos:"v", level:"C2", meanings:["수여하다","증여하다"],
     syn:["grant","confer","award"], ant:["withhold"],
     ex:[{ s:"The king chose to {{}} land on his loyal knights.", f:"bestow", ko:"왕은 충성스러운 기사들에게 땅을 수여하기로 했다." }],
     gov:{ prep:["on","upon","to"], pat:"bestow an honor {{}} him", usage:"bestow A on B : B에게 A를 수여하다" } },
@@ -916,7 +916,7 @@ window.VOCAB_B = [
     syn:["bunch","package","sheaf"],
     ex:[{ s:"She carried a {{}} of letters under her arm.", f:"bundle", ko:"그녀는 편지 뭉치를 팔 아래에 끼고 있었다." }] },
 
-  { word:"burden", pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
+  { word:"burden", exams:["공무원"], pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
     syn:["load","strain","encumbrance"], ant:["relief"],
     ex:[{ s:"Caring for both parents became a heavy {{}}.", f:"burden", ko:"양쪽 부모를 돌보는 일은 무거운 부담이 되었다." }],
     gov:{ prep:["on","of","to","for"], pat:"a burden {{}} society", usage:"a burden on ~ : ~에 대한 부담" } },
@@ -950,7 +950,7 @@ window.VOCAB_B = [
   { word:"by all means", pron:"바이 올 민즈", pos:"phr", level:"B2", meanings:["반드시","꼭"],
     syn:["certainly","without fail","absolutely"], ant:["by no means"] },
 
-  { word:"by contrast", pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
+  { word:"by contrast", exams:["공무원"], pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
     syn:["on the other hand","conversely","in comparison"], ant:["likewise"] },
 
   { word:"by extension", pron:"바이 익스텐션", pos:"phr", level:"C1", meanings:["더 나아가"],

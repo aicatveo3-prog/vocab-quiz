@@ -121,7 +121,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '대체로, 주로' 가 원본과 글자까지 같다. 참조는 없고 PRON 도
      없었다. 손댈 것이 없었다. */
-  { word:"largely", pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
+  { word:"largely", exams:["공무원"], pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
     syn:["mostly","predominantly","on the whole"],
     ex:[{ s:"The restoration was {{}} successful.", f:"largely", ko:"그 복원은 대체로 성공적이었다." }] },
 
@@ -222,7 +222,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '기울다; 여윈' 을 글자까지 지켰다. I 세트 incline 이
      '기울다' 갈래를 유의어로 참조하므로 원본('기대다; 날씬한') 대신 사전 쪽을
      남겼다 — 같은 갈래다. */
-  { word:"lean", pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
+  { word:"lean", exams:["공무원"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
     syn:["incline","tilt","slant"],
     ex:[{ s:"The old tower began to {{}} to one side.", f:"lean", ko:"그 낡은 탑은 한쪽으로 기울기 시작했다." }] },
 

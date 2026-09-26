@@ -417,7 +417,7 @@ window.VOCAB_P = [
 
   /* paycheck 은 원본이 '월급, 급여' 였다. '급여' 가 같은 챕터 payment 와 물려서
      '봉급' 으로 갈랐다. */
-  { word:"paycheck", pron:"페이첵", pos:"n", level:"B2", meanings:["월급","봉급"],
+  { word:"paycheck", exams:["공무원"], pron:"페이첵", pos:"n", level:"B2", meanings:["월급","봉급"],
     syn:["monthly pay","wage packet","salary payment"],
     ex:[{ s:"His first {{}} arrived on Friday.", f:"paycheck", ko:"그의 첫 월급이 금요일에 들어왔다." }] },
 
@@ -696,7 +696,7 @@ window.VOCAB_P = [
   /* 승격 51 — 사전은 '비관주의' 한 갈래였다. 원본의 '비관론' 을 첫 자리로 올릴 수도
      있었지만 cynicism(C)·optimism(ant, O) 두 곳을 보존하려고 사전값을 앞에 두었다.
      O 세트 optimism(낙관론, 낙천주의) 과는 뜻이 반대여서 겹치지 않는다. */
-  { word:"pessimism", pron:"페시미즘", pos:"n", level:"B2", meanings:["비관주의","비관론"],
+  { word:"pessimism", exams:["공무원"], pron:"페시미즘", pos:"n", level:"B2", meanings:["비관주의","비관론"],
     syn:["cynicism","gloomy outlook","expecting the worst"], ant:["optimism"],
     ex:[{ s:"A mood of {{}} settled over the team.", f:"pessimism", ko:"비관주의 분위기가 팀에 내려앉았다." }] },
 
@@ -833,7 +833,7 @@ window.VOCAB_P = [
      갈렸다 — frontiersman(F) 은 명사, innovate(I)·break new ground(B) 는 동사 쪽이다.
      사전의 첫 갈래가 명사여서 명사로 세우고, 동사 자리 두 곳의 유의어를
      'lead the way'·'strike out anew' 로 바꿨다(words-i.js·words-b.js). */
-  { word:"pioneer", pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
+  { word:"pioneer", exams:["공무원"], pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
     syn:["frontiersman","trailblazer","first to go in"],
     ex:[{ s:"She was a {{}} of heart surgery.", f:"pioneer", ko:"그녀는 심장 수술의 개척자였다." }] },
 
@@ -2155,7 +2155,7 @@ window.VOCAB_P = [
   { word:"put an end to", exams:["공무원"], pron:"풋 언 엔드 투", pos:"phr", level:"B2", meanings:["~을 끝내다","없애다"],
     syn:["stop for good","bring to a close","do away with"] },
 
-  { word:"put aside", pron:"풋 어사이드", pos:"phr", level:"B2", meanings:["제쳐놓다","무시하다"],
+  { word:"put aside", exams:["공무원"], pron:"풋 어사이드", pos:"phr", level:"B2", meanings:["제쳐놓다","무시하다"],
     syn:["set to one side","leave out of account","lay away for later"] },
 
   /* 승격 177 — 사전 표현과 글자까지 같다(nominate, N). 챕터 12 에서 present 의

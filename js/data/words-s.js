@@ -325,7 +325,7 @@ window.VOCAB_S = [
   /* 승격 ⑰ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 네 곳(chase away·compile·
      diffuse·disperse) 의 설명이 '흩뿌리다; 분산하다' 에서 '흩뿌리다, 분산하다'
      가 된다. */
-  { word:"scatter", pron:"스캐터", pos:"v", level:"B2", meanings:["흩뿌리다","분산하다"],
+  { word:"scatter", exams:["공무원"], pron:"스캐터", pos:"v", level:"B2", meanings:["흩뿌리다","분산하다"],
     syn:["disperse","diffuse","chase away"], ant:["gather"],
     ex:[{ s:"The wind will {{}} the seeds.", f:"scatter", ko:"바람이 씨앗을 흩뿌릴 것이다." }] },
 
@@ -513,7 +513,7 @@ window.VOCAB_S = [
 
   /* 승격 ㉙ — 사전 글자를 그대로 지켰다. 참조가 다섯 곳(apply for·aspire·
      come across·compete for·go after) 인데 하나도 바뀌지 않는다. */
-  { word:"seek", pron:"시크", pos:"v", level:"B1", meanings:["찾다","추구하다"],
+  { word:"seek", exams:["공무원"], pron:"시크", pos:"v", level:"B1", meanings:["찾다","추구하다"],
     syn:["look for","go after","try to get"],
     ex:[{ s:"Many young people {{}} work in the city.", f:"seek", ko:"많은 젊은이가 도시에서 일자리를 찾는다." }] },
 
@@ -600,7 +600,7 @@ window.VOCAB_S = [
     syn:["altruistic","putting others first","free of self-interest"], ant:["greedy"],
     ex:[{ s:"Her {{}} work saved many lives.", f:"selfless", ko:"그녀의 이타적인 활동이 많은 목숨을 살렸다." }] },
 
-  { word:"semester", pron:"시메스터", pos:"n", level:"B1", meanings:["학기"],
+  { word:"semester", exams:["공무원"], pron:"시메스터", pos:"n", level:"B1", meanings:["학기"],
     syn:["half of a school year","term of study","one of two school terms"],
     ex:[{ s:"The new {{}} starts in March.", f:"semester", ko:"새 학기는 삼월에 시작한다." }] },
 
@@ -758,7 +758,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊿ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 colony(C)·compromise(C)·
      immigration(I) 세 곳의 설명이 '정착지; 합의' 에서 '정착지, 합의' 가 된다. */
-  { word:"settlement", pron:"세틀먼트", pos:"n", level:"B2", meanings:["정착지","합의"],
+  { word:"settlement", exams:["공무원"], pron:"세틀먼트", pos:"n", level:"B2", meanings:["정착지","합의"],
     syn:["colony","compromise","place newly lived in"],
     ex:[{ s:"A small {{}} grew by the port.", f:"settlement", ko:"항구 옆에 작은 정착지가 자랐다." }] },
 
@@ -852,7 +852,7 @@ window.VOCAB_S = [
   /* 승격 59 — 원본이 [n+v] 였고 사전도 섞여 있었다. 명사로 세우고, 동사 쪽을
      쓰던 harbor(H) 의 그 자리를 'take in and hide' 로 갈았다.
      refuge(피난처 · R) 와 글자가 같아 서로의 오답에서 자동으로 빠진다. */
-  { word:"shelter", pron:"셸터", pos:"n", level:"B2", meanings:["피난처"],
+  { word:"shelter", exams:["공무원"], pron:"셸터", pos:"n", level:"B2", meanings:["피난처"],
     syn:["place of safety","cover from danger","roof over one's head"],
     ex:[{ s:"They ran to a {{}} when the storm hit.", f:"shelter", ko:"폭풍이 닥치자 그들은 피난처로 달려갔다." }] },
 
@@ -1590,7 +1590,7 @@ window.VOCAB_S = [
     ex:[{ s:"They held a {{}} debate.", f:"spirited", ko:"그들은 활기를 띤 토론을 벌였다." }] },
 
   /* 승격 121 — 사전 글자 유지. 참조 corporal(C) 의 화면은 바뀌지 않는다. */
-  { word:"spiritual", pron:"스피리추얼", pos:"adj", level:"B2", meanings:["정신적인","영적인"],
+  { word:"spiritual", exams:["공무원"], pron:"스피리추얼", pos:"adj", level:"B2", meanings:["정신적인","영적인"],
     syn:["of the soul","not of the body","inner and sacred"], ant:["corporal"],
     ex:[{ s:"She sought {{}} peace.", f:"spiritual", ko:"그녀는 정신적인 평온을 구했다." }] },
 
@@ -1969,7 +1969,7 @@ window.VOCAB_S = [
     syn:["harsh","firm in manner","allowing no excuse"],
     ex:[{ s:"He gave a {{}} warning.", f:"stern", ko:"그는 단호한 경고를 했다." }] },
 
-  { word:"stick to", pron:"스틱 투", pos:"phr", level:"B1", meanings:["~을 고수하다"],
+  { word:"stick to", exams:["공무원"], pron:"스틱 투", pos:"phr", level:"B1", meanings:["~을 고수하다"],
     syn:["hold to firmly","keep on with","not give up on"] },
 
   /* 원본의 둘째 갈래는 뜻이 아니라 설명이라 버렸다. */
@@ -2156,7 +2156,7 @@ window.VOCAB_S = [
 
   /* 승격 177 — 사전 글자 유지. 참조가 네 곳(aim·aspire·attempt·endeavor) 인데
      하나도 바뀌지 않는다. */
-  { word:"strive", pron:"스트라이브", pos:"v", level:"B2", meanings:["노력하다","분투하다"],
+  { word:"strive", exams:["공무원"], pron:"스트라이브", pos:"v", level:"B2", meanings:["노력하다","분투하다"],
     syn:["aspire","endeavor","work hard at"],
     ex:[{ s:"They {{}} to finish before winter.", f:"strive", ko:"그들은 겨울 전에 끝내려고 노력한다." }] },
 
@@ -2678,7 +2678,7 @@ window.VOCAB_S = [
     syn:["curriculum","outline of a course","list of topics to teach"],
     ex:[{ s:"The {{}} lists every reading.", f:"syllabus", ko:"그 강의 계획은 모든 읽을거리를 적어 두었다." }] },
 
-  { word:"symbolize", pron:"심벌라이즈", pos:"v", level:"B2", meanings:["상징하다"],
+  { word:"symbolize", exams:["공무원"], pron:"심벌라이즈", pos:"v", level:"B2", meanings:["상징하다"],
     syn:["stand for","be a sign of","represent in a figure"],
     ex:[{ s:"The dove came to {{}} peace.", f:"symbolize", ko:"비둘기는 평화를 상징하게 되었다." }] },
 

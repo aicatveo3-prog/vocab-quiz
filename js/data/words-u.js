@@ -110,7 +110,7 @@ window.VOCAB_U = [
 
   /* fundamental(근본적인, 기초적인 · B2/adj) 와 '근본적인' 이 맞물려 배제된다.
      교재의 '최고의' 는 superb(훌륭한, 최고의)·top-notch(최고 수준의) 자리다. */
-  { word:"ultimate", pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
+  { word:"ultimate", exams:["공무원"], pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
     syn:["final of all","at the very end","deepest of all"],
     ex:[{ s:"Peace was their {{}} aim.", f:"ultimate", ko:"평화가 그들의 궁극적인 목표였다." }] },
 
@@ -435,7 +435,7 @@ window.VOCAB_U = [
      ★ integrate(융합하다, 통합시키다) 를 유의어로 넣었다 — '통합시키다' 는
      '통합하다' 와 글자가 달라 자동 배제를 빠져나가기 때문이다.
      incorporate·consolidate 는 '통합하다' 가 같아 저절로 배제된다. */
-  { word:"unite", pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
+  { word:"unite", exams:["공무원"], pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
     syn:["combine","integrate","join into one"], ant:["alienate"],
     ex:[{ s:"The war helped to {{}} the clans.", f:"unite", ko:"그 전쟁은 씨족들을 통합하는 데 도움이 됐다." }] },
 

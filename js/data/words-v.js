@@ -338,7 +338,7 @@ window.VOCAB_V = [
 
   /* 교재의 '대' 는 너무 짧아 풀어 썼다. 전치사지만 스키마에 prep 이 없어
      구·표현(phr) 으로 두었다. */
-  { word:"versus", pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
+  { word:"versus", exams:["공무원"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
     syn:["set against","compared with","over against"] },
 
   /* 승격 ㉒ — 사전과 교재가 같다(참조 horizontal 이 반의어). */

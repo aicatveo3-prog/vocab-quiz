@@ -1187,7 +1187,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '고무하다, 영감을 주다' 가 원본과 글자까지 같다.
      encourage(syn) 가 참조한다. 손댈 것이 없었다. */
-  { word:"inspire", pron:"인스파이어", pos:"v", level:"B1", meanings:["고무하다","영감을 주다"],
+  { word:"inspire", exams:["공무원"], pron:"인스파이어", pos:"v", level:"B1", meanings:["고무하다","영감을 주다"],
     syn:["encourage","motivate","stimulate"],
     ex:[{ s:"Her speech will {{}} a new generation of scientists.", f:"inspire", ko:"그녀의 연설은 새 세대의 과학자들을 고무할 것이다." }] },
 
@@ -1608,7 +1608,7 @@ window.VOCAB_I = [
      원본은 '침범하다' 인데, 11차에서 infiltrate 를 '침투하다' 로, 이 차수에서
      invade 를 '침략하다' 로 돌려 두었으므로 '침입하다' 가 비어 있다 —
      사전 쪽 표현을 그대로 쓸 수 있었다. */
-  { word:"intrude", pron:"인트루드", pos:"v", level:"C1", meanings:["침입하다","끼어들다"],
+  { word:"intrude", exams:["공무원"], pron:"인트루드", pos:"v", level:"C1", meanings:["침입하다","끼어들다"],
     syn:["barge","encroach","trespass"],
     ex:[{ s:"I did not mean to {{}} on your conversation.", f:"intrude", ko:"당신의 대화에 침입할 의도는 없었습니다." }] },
 

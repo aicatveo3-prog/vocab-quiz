@@ -237,7 +237,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑯ — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      같은 세트의 nonetheless 와 겹치므로 그쪽을 '그렇기는 하지만' 으로 갈랐다. */
-  { word:"nevertheless", pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
+  { word:"nevertheless", exams:["공무원"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
     syn:["even so","all the same","for all that"],
     ex:[{ s:"The plan was costly; {{}}, the city approved it.", f:"nevertheless", ko:"그 계획은 비쌌지만, 그럼에도 불구하고 시는 승인했다." }] },
 
@@ -356,7 +356,7 @@ window.VOCAB_N = [
 
   /* 승격 24 — 사전 표현 '특히, 두드러지게' 를 글자까지 지켰다(in particular, I).
      원본의 '명백히' 는 버렸다 — 부사 셋을 한 표제어에 담을 필요가 없다. */
-  { word:"notably", pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
+  { word:"notably", exams:["공무원"], pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
     syn:["in particular","markedly","above all"],
     ex:[{ s:"Prices rose, {{}} for fresh fruit.", f:"notably", ko:"값이 올랐는데, 특히 신선한 과일이 그랬다." }] },
 
@@ -401,7 +401,7 @@ window.VOCAB_N = [
     ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
 
   /* 승격 28 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"notion", pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
+  { word:"notion", exams:["공무원"], pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
     syn:["idea","conception","mental picture"],
     ex:[{ s:"He had no {{}} of how long it would take.", f:"notion", ko:"그는 얼마나 걸릴지에 대한 개념이 없었다." }] },
 
@@ -433,7 +433,7 @@ window.VOCAB_N = [
     syn:["beginner","newcomer","raw recruit"], ant:["veteran"],
     ex:[{ s:"As a {{}}, he kept dropping the tools.", f:"novice", ko:"초보자여서 그는 연장을 계속 떨어뜨렸다." }] },
 
-  { word:"now and then", pron:"나우 앤드 덴", pos:"phr", level:"B1", meanings:["가끔","이따금"],
+  { word:"now and then", exams:["공무원"], pron:"나우 앤드 덴", pos:"phr", level:"B1", meanings:["가끔","이따금"],
     syn:["once in a while","from time to time","at intervals"] },
 
   { word:"noxious", pron:"낙셔스", pos:"adj", level:"C1", meanings:["유독한","유해한"],

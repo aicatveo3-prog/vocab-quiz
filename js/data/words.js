@@ -130,7 +130,7 @@ window.VOCAB = [
      표제어(제시하다, 주다 · v)로 올라가면서 이 자리의 뜻풀이가 '제시하다, 주다'
      로 바뀌어 버린다 — 결석한의 반의어로는 말이 안 된다. 사전에만 있던 동안에도
      '제시하다; 현재의' 로 떠서 이미 어긋나 있던 자리다. */
-  { word:"absent", pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
+  { word:"absent", exams:["공무원"], pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
     syn:["away","missing","gone"], ant:["in attendance"],
     ex:[{ s:"Three students were {{}} from class today.", f:"absent", ko:"오늘 세 명의 학생이 수업에 결석했다." }],
     gov:{ prep:["from"], pat:"absent {{}} class", usage:"absent from ~ : ~에 결석한" } },
@@ -1093,7 +1093,7 @@ window.VOCAB = [
     syn:["grateful","thankful","admiring"], ant:["ungrateful"],
     ex:[{ s:"The crowd was warmly {{}} of the performance.", f:"appreciative", ko:"관중은 그 공연에 따뜻한 찬사를 보냈다." }] },
 
-  { word:"apprehend", pron:"애프리헨드", pos:"v", level:"C2", meanings:["체포하다","파악하다"],
+  { word:"apprehend", exams:["공무원"], pron:"애프리헨드", pos:"v", level:"C2", meanings:["체포하다","파악하다"],
     syn:["arrest","capture","seize"], ant:["release"],
     ex:[{ s:"Police managed to {{}} the suspect at dawn.", f:"apprehend", ko:"경찰은 새벽에 용의자를 체포하는 데 성공했다." }] },
 
@@ -1366,7 +1366,7 @@ window.VOCAB = [
     syn:["suppose","take for granted","take on"],
     ex:[{ s:"Do not {{}} that silence means agreement.", f:"assume", ko:"침묵이 동의를 뜻한다고 추정하지 마라." }] },
 
-  { word:"assumption", pron:"어섬션", pos:"n", level:"B2", meanings:["추정","가정"],
+  { word:"assumption", exams:["공무원"], pron:"어섬션", pos:"n", level:"B2", meanings:["추정","가정"],
     syn:["presumption","supposition","premise"],
     ex:[{ s:"The plan rests on one shaky {{}}.", f:"assumption", ko:"그 계획은 하나의 불안정한 가정에 기대고 있다." }] },
 

@@ -343,7 +343,7 @@ window.VOCAB_C = [
     syn:["hundredth","anniversary","centenary"],
     ex:[{ s:"The city planned a {{}} parade for its founding.", f:"centennial", ko:"그 도시는 건립 100주년 행진을 계획했다." }] },
 
-  { word:"central", pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
+  { word:"central", exams:["공무원"], pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
     syn:["main","chief","core"], ant:["peripheral"],
     ex:[{ s:"Trust is {{}} to any lasting friendship.", f:"central", ko:"신뢰는 오래가는 우정의 핵심이다." }],
     gov:{ prep:["to"], pat:"central {{}} the whole plan", usage:"be central to ~ : ~에 핵심적이다" } },
@@ -394,7 +394,7 @@ window.VOCAB_C = [
     syn:["room","hall","compartment"],
     ex:[{ s:"The king received guests in the inner {{}}.", f:"chamber", ko:"왕은 안쪽 방에서 손님을 맞았다." }] },
 
-  { word:"channel", pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
+  { word:"channel", exams:["공무원"], pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
     syn:["route","passage","strait"],
     ex:[{ s:"Swimmers cross the {{}} between the two coasts each July.", f:"channel", ko:"수영 선수들은 매년 7월 두 해안 사이의 해협을 건넌다." }] },
 
@@ -594,7 +594,7 @@ window.VOCAB_C = [
     ex:[{ s:"The empire claimed a mission to {{}} distant lands.", f:"civilize", ko:"그 제국은 먼 땅을 교화한다는 사명을 내세웠다." }] },
 
   /* ── cla · cle · cli ───────────────────────── */
-  { word:"claim", pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
+  { word:"claim", exams:["공무원"], pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
     syn:["assert","maintain","demand"], ant:["deny"],
     ex:[{ s:"Two groups {{}} responsibility for the fire.", f:"claimed", ko:"두 단체가 그 화재에 대한 책임을 주장했다." }],
     gov:{ prep:["for","to","against"], pat:"claim responsibility {{}} the attack", usage:"claim responsibility for ~ : ~에 대한 책임을 주장하다" } },
@@ -848,7 +848,7 @@ window.VOCAB_C = [
     syn:["remark","note","state"],
     ex:[{ s:"He refused to {{}} on the rumour.", f:"comment", ko:"그는 그 소문에 대해 견해를 밝히기를 거부했다." }] },
 
-  { word:"commentary", pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
+  { word:"commentary", exams:["공무원"], pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
     syn:["analysis","narration","review"],
     ex:[{ s:"Her {{}} made a dull match worth watching.", f:"commentary", ko:"그녀의 해설은 지루한 경기를 볼 만하게 만들었다." }] },
 
@@ -1034,7 +1034,7 @@ window.VOCAB_C = [
     syn:["complex","tangled","elaborate"], ant:["straightforward"],
     ex:[{ s:"The rules are needlessly {{}}.", f:"complicated", ko:"그 규칙들은 불필요하게 복잡하다." }] },
 
-  { word:"complication", pron:"캄플리케이션", pos:"n", level:"B2", meanings:["합병증","문제"],
+  { word:"complication", exams:["공무원"], pron:"캄플리케이션", pos:"n", level:"B2", meanings:["합병증","문제"],
     syn:["difficulty","snag","setback"],
     ex:[{ s:"A rare {{}} kept him in hospital for weeks.", f:"complication", ko:"드문 합병증 때문에 그는 몇 주간 병원에 있었다." }] },
 
@@ -1098,7 +1098,7 @@ window.VOCAB_C = [
     syn:["settlement","deal","concession"], ant:["stalemate"],
     ex:[{ s:"Both sides settled on an awkward {{}}.", f:"compromise", ko:"양측은 어색한 타협에 이르렀다." }] },
 
-  { word:"compulsive", pron:"컴펄시브", pos:"adj", level:"C1", meanings:["강박적인","억제하기 힘든"],
+  { word:"compulsive", exams:["공무원"], pron:"컴펄시브", pos:"adj", level:"C1", meanings:["강박적인","억제하기 힘든"],
     syn:["obsessive","uncontrollable","addictive"],
     ex:[{ s:"He is a {{}} checker of locks and windows.", f:"compulsive", ko:"그는 강박적으로 문과 창문을 확인한다." }] },
 
@@ -1131,7 +1131,7 @@ window.VOCAB_C = [
     syn:["imagine","devise","envision"],
     ex:[{ s:"She first {{}} the idea on a night train.", f:"conceived", ko:"그녀는 야간 열차에서 처음 그 착상을 떠올렸다." }] },
 
-  { word:"concentrate", pron:"칸선트레이트", pos:"v", level:"B1", meanings:["집중하다","모으다"],
+  { word:"concentrate", exams:["공무원"], pron:"칸선트레이트", pos:"v", level:"B1", meanings:["집중하다","모으다"],
     syn:["focus","fixate","gather"], ant:["wander"],
     ex:[{ s:"It is hard to {{}} with the radio on.", f:"concentrate", ko:"라디오를 켜 두고는 집중하기 어렵다." }],
     gov:{ prep:["on","in"], pat:"concentrate {{}} one task at a time", usage:"concentrate on ~ : ~에 집중하다" } },
@@ -1160,7 +1160,7 @@ window.VOCAB_C = [
     syn:["ending","finding","verdict"], ant:["opening"],
     ex:[{ s:"He reached the same {{}} by a different route.", f:"conclusion", ko:"그는 다른 경로로 같은 결론에 이르렀다." }] },
 
-  { word:"concrete", pron:"칸크리트", pos:"adj", level:"B2", meanings:["구체적인","실체가 있는"],
+  { word:"concrete", exams:["공무원"], pron:"칸크리트", pos:"adj", level:"B2", meanings:["구체적인","실체가 있는"],
     syn:["definite","tangible","specific"], ant:["abstract"],
     ex:[{ s:"We need {{}} proposals, not vague hopes.", f:"concrete", ko:"우리에게는 막연한 희망이 아니라 구체적인 제안이 필요하다." }] },
 
@@ -1514,7 +1514,7 @@ window.VOCAB_C = [
     syn:["breach","infringe","defy"], ant:["obey"],
     ex:[{ s:"The new fence may {{}} local rules.", f:"contravene", ko:"새 울타리는 지역 규정을 위반할 수 있다." }] },
 
-  { word:"contribute", pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
+  { word:"contribute", exams:["공무원"], pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
     syn:["donate","supply","add"], ant:["withhold"],
     ex:[{ s:"Everyone was asked to {{}} one story.", f:"contribute", ko:"모두가 이야기 하나를 내놓으라는 요청을 받았다." }],
     gov:{ prep:["to","towards"], pat:"contribute {{}} the relief fund", usage:"contribute to ~ : ~에 기여하다·기부하다" } },
@@ -1634,7 +1634,7 @@ window.VOCAB_C = [
 
   /* 원문은 '인과관계'를 함께 적었지만, 상관관계와 인과관계를 구별하는 것이
      이 단어의 핵심이므로(causality의 예문이 바로 그 이야기다) 넣지 않는다 */
-  { word:"correlation", pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
+  { word:"correlation", exams:["공무원"], pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
     syn:["connection","link","relationship"],
     ex:[{ s:"There is only a weak {{}} between the two.", f:"correlation", ko:"그 둘 사이에는 약한 상관관계만 있다." }] },
 

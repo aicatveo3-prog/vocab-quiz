@@ -1139,7 +1139,7 @@ window.VOCAB_F = [
     syn:["sense of dread","premonition","misgiving"],
     ex:[{ s:"A strange {{}} kept her awake that night.", f:"foreboding", ko:"이상한 불길한 예감이 그날 밤 그녀를 깨어 있게 했다." }] },
 
-  { word:"forecast", pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
+  { word:"forecast", exams:["공무원"], pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
     syn:["prediction","outlook","projection"],
     ex:[{ s:"The weather {{}} promised a dry weekend.", f:"forecast", ko:"일기 예보는 건조한 주말을 예고했다." }] },
 
@@ -1391,7 +1391,7 @@ window.VOCAB_F = [
      있다. 기존 사전 뜻도 '연료; 부추기다' 로 두 갈래였고 참조하는 표제어가 없어
      자유롭게 정할 수 있었다. 두 갈래 모두 수능에 나오므로 함께 담았다
      (2차 fare·5차 firm 과 같은 처리다). */
-  { word:"fuel", pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
+  { word:"fuel", exams:["공무원"], pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
     syn:["gasoline","combustible material","power source"],
     ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
 

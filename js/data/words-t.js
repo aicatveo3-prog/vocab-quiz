@@ -107,7 +107,7 @@ window.VOCAB_T = [
 
   /* 승격 ① — 사전 글자 유지. 참조 avail oneself of(A)·benefit from(B)·exploit(E)
      세 곳의 화면은 바뀌지 않는다. 교재의 '이용하다' 는 harness 자리다. */
-  { word:"take advantage of", pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
+  { word:"take advantage of", exams:["공무원"], pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
     syn:["avail oneself of","benefit from","exploit"] },
 
   { word:"take apart", pron:"테이크 어파트", pos:"phr", level:"B2", meanings:["분해하다"],
@@ -645,7 +645,7 @@ window.VOCAB_T = [
      교재의 to an extent·to advantage·to the point of 는 이 덩어리가 이미 빽빽해서
      아예 뺐다. */
 
-  { word:"tie the knot", pron:"타이 더 낫", pos:"phr", level:"C1", meanings:["결혼하다"],
+  { word:"tie the knot", exams:["공무원"], pron:"타이 더 낫", pos:"phr", level:"C1", meanings:["결혼하다"],
     syn:["get married","wed at last","become husband and wife"] },
 
   /* 앞 챕터의 tie(유대, 매듭) 가 넘긴 동사 '묶다' 를 이 낱말이 받는다.
@@ -862,7 +862,7 @@ window.VOCAB_T = [
     ex:[{ s:"The lake was {{}} at dawn.", f:"tranquil", ko:"그 호수는 새벽에 고요했다." }] },
 
   /* stillness(고요, 평온 · S) 와 앞뒤만 다르게 두어 자동 배제시켰다. */
-  { word:"tranquility", pron:"트랭퀼러티", pos:"n", level:"C1", meanings:["평온","고요"],
+  { word:"tranquility", exams:["공무원"], pron:"트랭퀼러티", pos:"n", level:"C1", meanings:["평온","고요"],
     syn:["state of calm","absence of noise","quiet of mind"],
     ex:[{ s:"She longed for the {{}} of her old home.", f:"tranquility", ko:"그녀는 옛집의 평온을 그리워했다." }] },
 
@@ -1305,7 +1305,7 @@ window.VOCAB_T = [
   /* 승격 84 — 사전 단일값 유지(참조 reject). '거절하다' 는 reject(거절하다,
      배척하다) 자리다. drive off(쫓아버리다, 물리치다 · C1/phr) 와 '물리치다'
      가 맞물려 배제된다. */
-  { word:"turn down", pron:"턴 다운", pos:"phr", level:"B1", meanings:["물리치다"],
+  { word:"turn down", exams:["공무원"], pron:"턴 다운", pos:"phr", level:"B1", meanings:["물리치다"],
     syn:["reject","say no to","refuse outright"] },
 
   /* ★ 첫 뜻을 '반납하다' 로 올렸다. 같은 챕터 turn over(돌려 뒤집다) 와 둘 다

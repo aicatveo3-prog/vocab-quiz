@@ -509,7 +509,7 @@ window.VOCAB_R = [
     syn:["place of safety","shelter from danger","spot out of harm's way"],
     ex:[{ s:"They sought {{}} in the church.", f:"refuge", ko:"그들은 교회에서 피난처를 찾았다." }] },
 
-  { word:"refugee", pron:"레퓨지이", pos:"n", level:"B2", meanings:["피난민","망명자"],
+  { word:"refugee", exams:["공무원"], pron:"레퓨지이", pos:"n", level:"B2", meanings:["피난민","망명자"],
     syn:["one who flees danger","person seeking shelter","exile from home"],
     ex:[{ s:"The {{}} crossed the border at night.", f:"refugee", ko:"그 피난민은 밤에 국경을 넘었다." }] },
 
@@ -794,7 +794,7 @@ window.VOCAB_R = [
     syn:["bring to mind","put in mind of","jog the memory"],
     ex:[{ s:"Please {{}} me later.", f:"remind", ko:"나중에 저에게 상기시켜 주세요." }] },
 
-  { word:"reminder", pron:"리마인더", pos:"n", level:"B2", meanings:["상기시키는 것","일깨움"],
+  { word:"reminder", exams:["공무원"], pron:"리마인더", pos:"n", level:"B2", meanings:["상기시키는 것","일깨움"],
     syn:["something that prompts memory","note to jog one","nudge to recall"],
     ex:[{ s:"The scar is a {{}} of the fall.", f:"reminder", ko:"그 흉은 넘어진 일을 상기시키는 것이다." }] },
 
@@ -1234,7 +1234,7 @@ window.VOCAB_R = [
     syn:["come out of","arise because of","follow from a cause"] },
 
   /* 승격 115 — 사전 단일값 유지. 원본의 '결국 ~로 끝나다' 는 같은 자리다. */
-  { word:"result in", pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
+  { word:"result in", exams:["공무원"], pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
     syn:["lead to","end up as","bring on as an outcome"] },
 
   { word:"resultant", pron:"리절턴트", pos:"adj", level:"C2", meanings:["그 결과로 생긴"],

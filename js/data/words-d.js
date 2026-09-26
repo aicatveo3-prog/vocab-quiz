@@ -397,7 +397,7 @@ window.VOCAB_D = [
     syn:["intentional","calculated","premeditated"], ant:["accidental"],
     ex:[{ s:"The damage looked {{}} rather than careless.", f:"deliberate", ko:"그 손상은 부주의보다는 고의적으로 보였다." }] },
 
-  { word:"deliberately", pron:"딜리버릿리", pos:"adv", level:"C1", meanings:["고의로","의도적으로"],
+  { word:"deliberately", exams:["공무원"], pron:"딜리버릿리", pos:"adv", level:"C1", meanings:["고의로","의도적으로"],
     syn:["intentionally","purposely","knowingly"], ant:["accidentally"],
     ex:[{ s:"He {{}} left the back door unlocked for her.", f:"deliberately", ko:"그는 그녀를 위해 뒷문을 고의로 잠그지 않았다." }] },
 
@@ -417,7 +417,7 @@ window.VOCAB_D = [
     syn:["incoherent","raving","frenzied"], ant:["lucid"],
     ex:[{ s:"The fever left him {{}} for two whole days.", f:"delirious", ko:"열 때문에 그는 이틀 내내 정신이 혼미했다." }] },
 
-  { word:"deliver", pron:"딜리버", pos:"v", level:"B1", meanings:["배달하다","전달하다"],
+  { word:"deliver", exams:["공무원"], pron:"딜리버", pos:"v", level:"B1", meanings:["배달하다","전달하다"],
     syn:["hand over","convey","distribute"], ant:["withhold"],
     ex:[{ s:"The courier promised to {{}} the package before noon.", f:"deliver", ko:"택배 기사가 정오 전에 소포를 배달하겠다고 했다." }] },
 
@@ -541,7 +541,7 @@ window.VOCAB_D = [
     syn:["gloomy","despondent","dejected"], ant:["cheerful"],
     ex:[{ s:"He felt {{}} for weeks after losing the job.", f:"depressed", ko:"그는 일자리를 잃고 몇 주간 우울했다." }] },
 
-  { word:"depression", pron:"디프레션", pos:"n", level:"B2", meanings:["우울증","경기 침체"],
+  { word:"depression", exams:["공무원"], pron:"디프레션", pos:"n", level:"B2", meanings:["우울증","경기 침체"],
     syn:["melancholy","slump","despondency"],
     ex:[{ s:"The country slid into a long economic {{}}.", f:"depression", ko:"그 나라는 오랜 경기 침체에 빠졌다." }] },
 
@@ -1159,7 +1159,7 @@ window.VOCAB_D = [
     syn:["misrepresentation","deformation","bias"],
     ex:[{ s:"The report contains a serious {{}} of the facts.", f:"distortion", ko:"그 보고서에는 사실에 대한 심각한 왜곡이 있다." }] },
 
-  { word:"distract", pron:"디스트랙트", pos:"v", level:"B2", meanings:["주의를 흩뜨리다","산만하게 하다"],
+  { word:"distract", exams:["공무원"], pron:"디스트랙트", pos:"v", level:"B2", meanings:["주의를 흩뜨리다","산만하게 하다"],
     syn:["divert","sidetrack","unsettle"],
     ex:[{ s:"Noise from the street can easily {{}} younger students.", f:"distract", ko:"길거리 소음은 어린 학생들의 주의를 쉽게 흩뜨린다." }] },
 
@@ -1304,7 +1304,7 @@ window.VOCAB_D = [
     syn:["commanding","overbearing","domineering"],
     ex:[{ s:"She had a {{}} presence in every single meeting.", f:"dominating", ko:"그녀는 모든 회의에서 지배적인 존재감을 보였다." }] },
 
-  { word:"donate", pron:"도네이트", pos:"v", level:"B1", meanings:["기부하다","기증하다"],
+  { word:"donate", exams:["공무원"], pron:"도네이트", pos:"v", level:"B1", meanings:["기부하다","기증하다"],
     syn:["give","contribute","bestow"],
     ex:[{ s:"Readers were asked to {{}} books to the school library.", f:"donate", ko:"독자들에게 학교 도서관에 책을 기부해 달라고 요청했다." }] },
 
@@ -1374,7 +1374,7 @@ window.VOCAB_D = [
 
   /* ★ drag 는 dragged 로 자음을 겹쳐 변화한다. quizgen 의 변환 규칙에 없어
      불규칙으로 처리되므로 예문 어형을 원형으로 쓴다. */
-  { word:"drag", pron:"드래그", pos:"v", level:"B1", meanings:["끌다","질질 끌다"],
+  { word:"drag", exams:["공무원"], pron:"드래그", pos:"v", level:"B1", meanings:["끌다","질질 끌다"],
     syn:["haul","tug","pull"],
     ex:[{ s:"It took three of us to {{}} the boat ashore.", f:"drag", ko:"배를 물가로 끌어올리는 데 우리 셋이 필요했다." }] },
 

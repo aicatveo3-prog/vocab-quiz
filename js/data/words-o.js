@@ -426,7 +426,7 @@ window.VOCAB_O = [
      가리키지 않고 one's 를 쓴다 — be beyond one's control · clear one's throat ·
      for one's sake · lose one's temper 가 그렇다. 관례에 맞춰 바꿨다.
      25자로 기존 최장(23자) 을 넘지만 match-label-audit 이 통과했다. */
-  { word:"on the tip of one's tongue", pron:"온 더 팁 오브 원스 텅", pos:"phr", level:"C1",
+  { word:"on the tip of one's tongue", exams:["공무원"], pron:"온 더 팁 오브 원스 텅", pos:"phr", level:"C1",
     meanings:["생각이 날 듯 말 듯하다"],
     syn:["almost recalled","nearly remembered","just out of reach"] },
 
@@ -552,7 +552,7 @@ window.VOCAB_O = [
     syn:["ideal","best suited","most favorable"],
     ex:[{ s:"Store the film at the {{}} temperature.", f:"optimal", ko:"그 필름을 최적의 온도에 보관하세요." }] },
 
-  { word:"optimism", pron:"압터미즘", pos:"n", level:"B2", meanings:["낙관론","낙천주의"],
+  { word:"optimism", exams:["공무원"], pron:"압터미즘", pos:"n", level:"B2", meanings:["낙관론","낙천주의"],
     syn:["hopeful outlook","bright view","positive thinking"], ant:["pessimism"],
     ex:[{ s:"His {{}} kept the team going.", f:"optimism", ko:"그의 낙관론이 팀을 버티게 했다." }] },
 

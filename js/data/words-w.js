@@ -243,7 +243,7 @@ window.VOCAB_W = [
 
   /* 승격 ⑩ — 사전의 쌍반점만 쉼표로(참조 compare). compare(비교하다) 와
      맞물려 배제된다. 교재의 '무게가 ~이다' 는 자동사 쪽이라 버렸다. */
-  { word:"weigh", pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
+  { word:"weigh", exams:["공무원"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
     syn:["compare","find the weight of","turn over in the mind"],
     ex:[{ s:"Please {{}} the parcel first.", f:"weigh", ko:"그 소포를 먼저 재 주세요." }] },
 

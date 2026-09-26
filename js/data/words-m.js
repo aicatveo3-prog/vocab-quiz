@@ -1142,13 +1142,13 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '동기를 부여하다' 를 첫 자리에 지켰다.
      encourage(syn)·inspire(syn) 두 문제가 참조하고 뒤는 I 세트 표제어다.
      원본의 '유도하다' 를 둘째 자리에 붙였다. */
-  { word:"motivate", pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
+  { word:"motivate", exams:["공무원"], pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
     syn:["encourage","inspire","spur on"],
     ex:[{ s:"Good teachers {{}} without applying pressure.", f:"motivate", ko:"좋은 교사는 압박을 주지 않고 동기를 부여한다." }] },
 
   /* 승격 ① — GLOSS '동기 부여' 를 첫 자리에 지켰다. I 세트 incentive 가 참조한다.
      원본의 '자극' 을 둘째 자리에 붙였다. */
-  { word:"motivation", pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
+  { word:"motivation", exams:["공무원"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
     syn:["incentive","drive","impetus"],
     ex:[{ s:"Her main {{}} was curiosity, not money.", f:"motivation", ko:"그녀의 주된 동기 부여는 돈이 아니라 호기심이었다." }] },
 
