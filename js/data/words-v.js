@@ -45,7 +45,7 @@ window.VOCAB_V = [
   { word:"volcanic", exams:["공무원"], pron:"볼캐닉", pos:"adj", level:"B2", meanings:["화산의"], ex:[{ s:"Yellowstone was known to be {{}} in nature.", f:"volcanic", ko:"옐로스톤은 본래 화산성으로 알려져 있었다." }] },
   { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
   { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
-  { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["(질병) 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
+  { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
   { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
 

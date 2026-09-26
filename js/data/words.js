@@ -1049,7 +1049,7 @@ window.VOCAB = [
     syn:["hunger","craving","desire"], ant:["aversion"],
     ex:[{ s:"The long walk gave us a huge {{}}.", f:"appetite", ko:"긴 산책은 우리에게 엄청난 식욕을 주었다." }] },
 
-  { word:"appliance", exams:["공무원"], pron:"어플라이언스", pos:"n", level:"B2", meanings:["(가정용) 기구","전자제품"],
+  { word:"appliance", exams:["공무원"], pron:"어플라이언스", pos:"n", level:"B2", meanings:["가정용 기구","전자제품"],
     syn:["device","gadget","machine"],
     ex:[{ s:"Every kitchen {{}} here saves energy.", f:"appliance", ko:"이곳의 모든 주방 기구는 에너지를 절약한다." }] },
 
@@ -1057,7 +1057,7 @@ window.VOCAB = [
     syn:["candidate","petitioner","aspirant"],
     ex:[{ s:"Each {{}} must submit two references.", f:"applicant", ko:"각 지원자는 추천서 두 통을 제출해야 한다." }] },
 
-  { word:"application", exams:["공무원"], pron:"애플리케이션", pos:"n", level:"B1", meanings:["지원(서)","적용"],
+  { word:"application", exams:["공무원"], pron:"애플리케이션", pos:"n", level:"B1", meanings:["신청","적용"],
     syn:["request","use","implementation"],
     ex:[{ s:"Her {{}} for the grant was approved.", f:"application", ko:"그녀의 보조금 신청이 승인되었다." }] },
 
