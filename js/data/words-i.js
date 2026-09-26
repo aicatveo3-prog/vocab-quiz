@@ -79,6 +79,7 @@ window.VOCAB_I = [
   { word:"in addition", exams:["공무원"], pron:"인 어디션", pos:"phr", level:"B1", meanings:["게다가","또한"], syn:["furthermore","moreover","additionally"] },
   { word:"in contrast", exams:["공무원"], pron:"인 칸트래스트", pos:"phr", level:"B1", meanings:["대조적으로","그와 달리"], syn:["by contrast","conversely","on the other hand"] },
   { word:"industrialization", exams:["공무원"], pron:"인더스트리얼리제이션", pos:"n", level:"C1", meanings:["산업화"], ex:[{ s:"Before {{}}, most people lived and worked on farms.", f:"industrialization", ko:"산업화 이전에는 대부분의 사람이 농장에서 살며 일했다." }] },
+  { word:"influential", exams:["공무원"], pron:"인플루엔셜", pos:"adj", level:"B2", meanings:["영향력 있는","유력한"], syn:["powerful","prominent","leading"], ex:[{ s:"His ideas were so {{}} that they shaped national policy for decades.", f:"influential", ko:"그의 생각은 영향력이 매우 커서 수십 년 동안 국가 정책을 좌우했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -2161,7 +2162,6 @@ Object.assign(window.GLOSS, {
   "romanticism": "낭만주의",
   "route plan": "경로 계획",
   "sameness": "동일성, 똑같음",
-  "sarcasm": "비꼬는 말",
   "scrawled": "갈겨쓴",
   "seal off": "차단하다",
   "second-rate": "이류의",

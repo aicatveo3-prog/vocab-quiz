@@ -61,6 +61,8 @@ window.VOCAB_T = [
   { word:"turn into", exams:["공무원"], pron:"턴 인투", pos:"phr", level:"B1", meanings:["~으로 바뀌다","~으로 바꾸다"] },
   { word:"take a hit", exams:["공무원"], pron:"테이크 어 힛", pos:"phr", level:"C1", meanings:["타격을 입다","손해를 보다"] },
   { word:"touch off", exams:["공무원"], pron:"터치 오프", pos:"phr", level:"C1", meanings:["촉발하다","일으키다"], syn:["trigger","spark","give rise to"] },
+  { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
+  { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -1815,6 +1817,7 @@ Object.assign(window.GLOSS, {
   "turncoat": "변절자",
   "twice as much": "두 배만큼의",
   "up with the times": "시류에 뒤지지 않는",
+  "uproar": "대소동, 격렬한 항의",
   "urge one should resist": "물리쳐야 할 충동",
   "use of tricks": "꾀를 부리는 짓",
   "very much indeed": "참으로 많이",

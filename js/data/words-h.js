@@ -32,6 +32,7 @@ window.VOCAB_H = [
   { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
   { word:"heirloom", exams:["공무원"], pron:"에어룸", pos:"n", level:"C1", meanings:["가보","대대로 물려받은 물건"], ex:[{ s:"This ring is a family {{}} that my great-grandmother once wore.", f:"heirloom", ko:"이 반지는 증조할머니가 끼시던 집안의 가보다." }] },
   { word:"hypnotic", exams:["공무원"], pron:"힙나틱", pos:"adj", level:"C1", meanings:["최면을 거는","넋을 빼놓는"], ex:[{ s:"The serpent's {{}} eyes seemed to follow every visitor.", f:"hypnotic", ko:"뱀의 최면을 거는 듯한 눈이 모든 방문객을 따라다니는 것 같았다." }] },
+  { word:"have an eye for", exams:["공무원"], pron:"해브 언 아이 포", pos:"phr", level:"B2", meanings:["~을 보는 안목이 있다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */

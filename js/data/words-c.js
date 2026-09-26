@@ -80,6 +80,7 @@ window.VOCAB_C = [
   { word:"cooperative", exams:["공무원"], pron:"코아퍼러티브", pos:"adj", level:"B2", meanings:["협력하는","협동조합의"], syn:["collaborative","helpful","supportive"], ant:["uncooperative"], ex:[{ s:"The staff were very {{}} during the inspection.", f:"cooperative", ko:"직원들은 점검 기간 동안 매우 협조적이었다." }] },
   { word:"coil", exams:["공무원"], pron:"코일", pos:"v", level:"C1", meanings:["감다","똬리를 틀다"], ex:[{ s:"The snake began to {{}} around the branch.", f:"coil", ko:"뱀이 나뭇가지를 휘감기 시작했다." }] },
   { word:"conceptual", exams:["공무원"], pron:"컨셉추얼", pos:"adj", level:"C1", meanings:["개념적인","추상적인"], syn:["abstract","theoretical","notional"], ant:["practical"], ex:[{ s:"The lecture focused on {{}} questions rather than practical ones.", f:"conceptual", ko:"그 강의는 실용적인 문제보다 개념적인 문제에 집중했다." }] },
+  { word:"casually", exams:["공무원"], pron:"캐주얼리", pos:"adv", level:"B2", meanings:["무심코","편하게"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2154,7 +2155,6 @@ Object.assign(window.GLOSS, {
   "personal":"개인적인",
   "politely": "예의 바르게",
   "pricey": "값이 비싼",
-  "prized": "소중한, 귀한",
   "proceed":"진행하다, 계속하다",
   "producer":"생산자",
   "provincial":"지방의, 편협한",

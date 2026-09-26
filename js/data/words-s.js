@@ -114,6 +114,10 @@ window.VOCAB_S = [
   { word:"scenario", exams:["공무원"], pron:"시나리오", pos:"n", level:"B2", meanings:["상황","시나리오"], ex:[{ s:"Always prepare for the worst-case {{}}.", f:"scenario", ko:"항상 최악의 상황에 대비하라." }] },
   { word:"salaried", exams:["공무원"], pron:"샐러리드", pos:"adj", level:"C1", meanings:["봉급을 받는","월급제의"], ex:[{ s:"The new tax fell heavily on {{}} workers.", f:"salaried", ko:"새 세금은 봉급 생활자에게 무겁게 부과되었다." }] },
   { word:"smoothly", exams:["공무원"], pron:"스무들리", pos:"adv", level:"B2", meanings:["순조롭게","매끄럽게"] },
+  { word:"sarcasm", exams:["공무원"], pron:"사캐즘", pos:"n", level:"C1", meanings:["빈정거림","비꼬는 말"], syn:["irony","mockery","cynicism","satire"], ex:[{ s:"Her reply was full of {{}}, not real praise.", f:"sarcasm", ko:"그녀의 대답은 진짜 칭찬이 아니라 빈정거림으로 가득했다." }] },
+  { word:"subservient", exams:["공무원"], pron:"서브서비언트", pos:"adj", level:"C2", meanings:["굴종하는","종속된"], syn:["submissive","servile","obedient"], ant:["dominant"] },
+  { word:"staggering", exams:["공무원"], pron:"스태거링", pos:"adj", level:"C1", meanings:["엄청난","충격적인"], syn:["astonishing","overwhelming","enormous"], ex:[{ s:"Many graduates leave college with {{}} amounts of debt.", f:"staggering", ko:"많은 졸업생이 엄청난 액수의 빚을 안고 대학을 나선다." }] },
+  { word:"stand up for", exams:["공무원"], pron:"스탠드 업 포", pos:"phr", level:"B2", meanings:["~을 지키다","~의 편을 들다"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3572,6 +3576,7 @@ Object.assign(window.GLOSS, {
   "senior figure in government": "정부의 원로",
   "sequentially": "순차적으로",
   "series": "연속, 일련",
+  "servile": "비굴한",
   "serving no purpose": "쓸 데가 없는",
   "set a common form": "공통의 꼴을 정하다",
   "set apart": "따로 떼어 두다",
@@ -3692,6 +3697,7 @@ Object.assign(window.GLOSS, {
   "study of opinion": "여론을 살피는 일",
   "study of society": "사회를 살피는 학문",
   "subject to another": "남에게 딸린",
+  "submissive": "순종적인",
   "subsidiary": "부수적인, 자회사의",
   "substantially": "상당히, 대폭",
   "sudden and surprising": "갑작스럽고 뜻밖인",

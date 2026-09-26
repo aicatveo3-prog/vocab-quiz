@@ -1272,7 +1272,6 @@ Object.assign(window.GLOSS, {
   "pretense":"가식, 구실",
   "previously":"이전에",
   "priesthood":"성직",
-  "primarily":"주로, 우선",
   "prime":"주요한; 전성기",
   "principally":"주로",
   "prior to":"~이전에",

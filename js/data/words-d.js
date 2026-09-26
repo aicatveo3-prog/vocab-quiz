@@ -138,6 +138,7 @@ window.VOCAB_D = [
   { word:"drag on", exams:["공무원"], pron:"드래그 온", pos:"phr", level:"B2", meanings:["질질 끌다","오래 계속되다"] },
   { word:"decorative", exams:["공무원"], pron:"데커러티브", pos:"adj", level:"B2", meanings:["장식용의","장식적인"], syn:["ornamental","ornate","fancy"], ex:[{ s:"These old clocks were {{}} but not very useful.", f:"decorative", ko:"이 오래된 시계들은 장식용이었지만 그다지 쓸모가 없었다." }] },
   { word:"dissolution", exams:["공무원"], pron:"디설루션", pos:"n", level:"C2", meanings:["용해","해체"], ex:[{ s:"Warmer water speeds up the {{}} of the sand.", f:"dissolution", ko:"더 따뜻한 물은 모래의 용해를 빠르게 한다." }] },
+  { word:"draw inspiration from", exams:["공무원"], pron:"드로 인스퍼레이션 프롬", pos:"phr", level:"C1", meanings:["~에서 영감을 얻다"] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],

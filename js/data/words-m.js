@@ -82,6 +82,7 @@ window.VOCAB_M = [
   { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
   { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
   { word:"make a case for", exams:["공무원"], pron:"메이크 어 케이스 포", pos:"phr", level:"C1", meanings:["~을 옹호하는 주장을 펴다","~을 강력히 주장하다"] },
+  { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1462,7 +1463,6 @@ Object.assign(window.GLOSS, {
   "large gathering": "많이 모인 무리",
   "liquid metal": "액체 금속",
   "local-government": "지방 정부의",
-  "lose track of": "어디 있는지 놓치다",
   "machine-driven": "기계로 움직이는",
   "magnetized": "자기를 띤",
   "magnum opus": "대표 역작",

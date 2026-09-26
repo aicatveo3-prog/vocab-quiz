@@ -58,6 +58,7 @@ window.VOCAB_R = [
   { word:"roll up one's sleeves", exams:["공무원"], pron:"롤 업 원스 슬리브즈", pos:"phr", level:"C1", meanings:["소매를 걷어붙이다","본격적으로 일에 착수하다"] },
   { word:"restriction", exams:["공무원"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
   { word:"remotely", exams:["공무원"], pron:"리모틀리", pos:"adv", level:"B2", meanings:["원격으로","멀리서"], ex:[{ s:"Engineers can now control the machine {{}} from another city.", f:"remotely", ko:"이제 기술자들은 다른 도시에서 그 기계를 원격으로 조종할 수 있다." }] },
+  { word:"reef", exams:["공무원"], pron:"리프", pos:"n", level:"B2", meanings:["암초","산호초"], ex:[{ s:"Divers came to explore the famous coral {{}}.", f:"reef", ko:"다이버들이 그 유명한 산호초를 탐험하러 왔다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.

@@ -122,6 +122,9 @@ window.VOCAB_P = [
   { word:"proprietary", exams:["공무원"], pron:"프러프라이어테리", pos:"adj", level:"C1", meanings:["독점의","소유주의"], syn:["exclusive","monopolistic","patented"], ex:[{ s:"Users need the company's own {{}} glasses to use the service.", f:"proprietary", ko:"이 서비스를 쓰려면 그 회사의 독점 안경이 필요하다." }] },
   { word:"pick up", exams:["공무원"], pron:"픽 업", pos:"phr", level:"B1", meanings:["집어 들다","습득하다"] },
   { word:"premeditation", exams:["공무원"], pron:"프리메디테이션", pos:"n", level:"C2", meanings:["사전 계획","미리 생각함"], ex:[{ s:"The judge found no evidence of {{}} in the attack.", f:"premeditation", ko:"판사는 그 공격이 미리 계획되었다는 증거를 찾지 못했다." }] },
+  { word:"prized", exams:["공무원"], pron:"프라이즈드", pos:"adj", level:"C1", meanings:["소중한","귀하게 여기는"], syn:["cherished","treasured","valued"], ex:[{ s:"Among her most {{}} possessions was an old silver watch.", f:"prized", ko:"그녀가 가장 아끼는 소지품 중에 낡은 은시계가 있었다." }] },
+  { word:"primarily", exams:["공무원"], pron:"프라이메럴리", pos:"adv", level:"B2", meanings:["주로","우선"], syn:["mainly","chiefly","mostly"] },
+  { word:"pass away", exams:["공무원"], pron:"패스 어웨이", pos:"phr", level:"B1", meanings:["세상을 떠나다","돌아가시다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2287,6 +2290,7 @@ Object.assign(window.GLOSS, {
   "chest illness": "가슴에 생긴 병",
   "chicken and duck meat": "닭과 오리 고기",
   "chief backer of a cause": "어떤 일을 앞장서 미는 이",
+  "chiefly": "무엇보다도, 특히",
   "child health specialist": "아이 건강 전문가",
   "children's doctor": "아이를 보는 의사",
   "choice made by taste": "취향에 따른 고름",
@@ -2590,6 +2594,7 @@ Object.assign(window.GLOSS, {
   "main character": "중심이 되는 인물",
   "main idea": "중심 생각",
   "main in rank": "등급이 첫째인",
+  "mainly": "대체로, 주로",
   "mainstay": "버팀목",
   "make a hole in": "~에 구멍을 내다",
   "make impure": "깨끗하지 않게 하다",
@@ -3046,6 +3051,7 @@ Object.assign(window.GLOSS, {
   "useful in real life": "실생활에 쓸모 있는",
   "user identity": "쓰는 이의 신분",
   "user-to-user": "쓰는 이끼리의",
+  "valued": "귀중한, 존중받는",
   "very deep in meaning": "뜻이 매우 깊은",
   "wage packet": "급료 봉투",
   "waiting to develop": "펼쳐지기를 기다리는",
