@@ -69,6 +69,8 @@ window.VOCAB_M = [
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
   { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
+  { word:"mankind", exams:["공무원"], pron:"맨카인드", pos:"n", level:"B2", meanings:["인류","인간 전체"], syn:["humanity","humankind","the human race"], ex:[{ s:"Neither skill was of much use to early {{}}.", f:"mankind", ko:"어느 기술도 초기 인류에게는 별 쓸모가 없었다." }] },
+  { word:"moreover", exams:["공무원"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1572,11 +1574,11 @@ Object.assign(window.GLOSS, {
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",
   "team spirit": "단결심",
-  "technique": "기법",
   "template": "본뜨는 판",
   "ten centuries": "10세기 동안",
   "thaw": "얼음이 풀리다",
   "the few": "소수의 사람들",
+  "the human race": "인류",
   "thousand years": "천 해",
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",
@@ -1616,7 +1618,6 @@ Object.assign(window.GLOSS, {
   "wordless": "말이 없는",
   "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
-  "workings": "작동 구조",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
   "wrongdoing": "비행, 부정"

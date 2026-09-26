@@ -106,6 +106,12 @@ window.VOCAB_P = [
   { word:"proposal", exams:["공무원"], pron:"프러포절", pos:"n", level:"B1", meanings:["제안","제안서"], syn:["suggestion","proposition","plan"], ex:[{ s:"Thank you for your {{}} for the anniversary event.", f:"proposal", ko:"기념행사에 대한 제안에 감사드립니다." }] },
   { word:"propose", exams:["공무원"], pron:"프러포즈", pos:"v", level:"B1", meanings:["제안하다","청혼하다"], syn:["suggest","put forward","recommend"], ex:[{ s:"I {{}} that we reserve a larger conference hall.", f:"propose", ko:"더 큰 회의장을 예약할 것을 제안합니다." }] },
   { word:"provide", exams:["공무원"], pron:"프러바이드", pos:"v", level:"B1", meanings:["제공하다","공급하다"], syn:["supply","offer","furnish"], ex:[{ s:"The museum {{}} visitors with free maps.", f:"provides", ko:"그 박물관은 방문객에게 무료 지도를 제공한다." }], gov:{ prep:["with","for"], usage:"provide A with B : A에게 B를 제공하다 (= provide B for A)" } },
+  { word:"perilous", exams:["공무원"], pron:"페릴러스", pos:"adj", level:"C1", meanings:["위험한","위태로운"], syn:["hazardous","risky","precarious"], ant:["safe"], ex:[{ s:"Crossing the mountains in winter is {{}}.", f:"perilous", ko:"겨울에 그 산맥을 넘는 것은 위험하다." }] },
+  { word:"philanthropist", exams:["공무원"], pron:"필랜스러피스트", pos:"n", level:"C1", meanings:["자선가","박애주의자"], ex:[{ s:"The {{}} donated millions to local hospitals.", f:"philanthropist", ko:"그 자선가는 지역 병원에 수백만 달러를 기부했다." }] },
+  { word:"pivotal", exams:["공무원"], pron:"피버털", pos:"adj", level:"C1", meanings:["중추적인","결정적인"], syn:["crucial","critical","central","essential","vital","indispensable"], ex:[{ s:"Teachers are {{}} to a child's development.", f:"pivotal", ko:"교사는 아이의 발달에 결정적인 역할을 한다." }] },
+  { word:"proliferate", exams:["공무원"], pron:"프럴리퍼레이트", pos:"v", level:"C1", meanings:["급증하다","확산되다"], syn:["multiply","spread","increase"], ex:[{ s:"Fake news can {{}} quickly on social media.", f:"proliferate", ko:"가짜 뉴스는 소셜 미디어에서 빠르게 확산될 수 있다." }] },
+  { word:"prosperous", exams:["공무원"], pron:"프라스퍼러스", pos:"adj", level:"B2", meanings:["번영하는","부유한"], syn:["affluent","thriving","flourishing"], ant:["poor"], ex:[{ s:"The port city grew rich and {{}} through trade.", f:"prosperous", ko:"그 항구 도시는 무역으로 부유하고 번영하게 되었다." }] },
+  { word:"punctuality", exams:["공무원"], pron:"펑추앨러티", pos:"n", level:"C1", meanings:["시간 엄수","시간을 잘 지킴"], ex:[{ s:"In business, {{}} shows respect for others' time.", f:"punctuality", ko:"비즈니스에서 시간 엄수는 남의 시간을 존중한다는 표시다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2388,6 +2394,7 @@ Object.assign(window.GLOSS, {
   "fix with adhesive": "접착제로 고정하다",
   "fixed beforehand": "미리 굳혀 둔",
   "flat of the hand": "손의 평평한 면",
+  "flourishing": "번창하는",
   "flower blade": "꽃의 얇은 잎",
   "flower dust": "꽃의 가루",
   "force one's way in": "억지로 밀고 들다",
@@ -2731,6 +2738,7 @@ Object.assign(window.GLOSS, {
   "possible in future": "앞으로 그럴 수 있는",
   "possibly": "혹시",
   "powder from blossoms": "꽃에서 나는 가루",
+  "precarious": "불안정한, 위태로운",
   "prediction of fate": "운명에 대한 예측",
   "present beforehand": "앞서부터 있는",
   "present in every corner": "구석마다 있는",

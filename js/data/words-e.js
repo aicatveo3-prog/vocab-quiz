@@ -2369,7 +2369,6 @@ Object.assign(window.GLOSS, {
   "select":"선별된",
   "senior official":"고위 간부",
   "shout of surprise":"놀라서 내는 소리",
-  "showcase":"전시 행사",
   "shutting out":"몰아냄",
   "trip":"여행, 이동",
   "wield":"휘두르다, 행사하다",

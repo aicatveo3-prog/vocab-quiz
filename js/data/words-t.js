@@ -52,6 +52,11 @@ window.VOCAB_T = [
   { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
   { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
   { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
+  { word:"target", exams:["공무원"], pron:"타깃", pos:"v", level:"B1", meanings:["겨냥하다","목표로 삼다"], syn:["aim at","single out","focus on"], ex:[{ s:"The scam {{}} people who own cars.", f:"targets", ko:"그 사기는 차를 가진 사람들을 노린다." }] },
+  { word:"technique", exams:["공무원"], pron:"테크닉", pos:"n", level:"B1", meanings:["기법","기술"], syn:["method","procedure","skill"], ex:[{ s:"Cooling your hands is a simple {{}} for beating the heat.", f:"technique", ko:"손을 식히는 것은 더위를 이기는 간단한 기법이다." }] },
+  { word:"thus", exams:["공무원"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
+  { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
+  { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -1364,6 +1369,7 @@ Object.assign(window.GLOSS, {
   "act of stealing": "훔치는 짓",
   "after that time": "그때 뒤에",
   "agree to do": "하기로 응하다",
+  "aim at": "~을 겨누다",
   "aimed at one group": "한 무리를 겨눈",
   "all the way through": "처음부터 줄곧",
   "allowed against tax": "세금에 맞서 인정되는",
@@ -1478,6 +1484,7 @@ Object.assign(window.GLOSS, {
   "first and thickest finger": "첫째이고 가장 굵은 손가락",
   "first of all": "무엇보다 먼저",
   "flow of water": "물이 흐르는 것",
+  "focus on": "~에 집중하다",
   "follow at a distance": "거리를 두고 따라가다",
   "follow the trail of": "~가 남긴 자취를 따라가다",
   "following that": "그에 이어",
@@ -1759,6 +1766,7 @@ Object.assign(window.GLOSS, {
   "threefold": "세 배의",
   "thus far": "지금까지는",
   "tightness in the air": "공기가 팽팽한 느낌",
+  "timetable": "시간표",
   "to a great degree": "큰 정도로",
   "to a high degree": "높은 정도로",
   "to an extent": "얼마쯤은",

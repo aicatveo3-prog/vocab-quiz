@@ -106,6 +106,9 @@ window.VOCAB_O = [
   { word:"origin", exams:["공무원"], pron:"오리진", pos:"n", level:"B1", meanings:["기원","유래"], syn:["source","root","wellspring"], ant:["destination"], ex:[{ s:"The {{}} of the word cravat goes back to Croatian soldiers.", f:"origin", ko:"크러뱃이라는 단어의 기원은 크로아티아 군인들에게로 거슬러 올라간다." }] },
   { word:"overtime", exams:["공무원"], pron:"오버타임", pos:"n", level:"B2", meanings:["초과 근무","야근"], ex:[{ s:"Employees are paid extra for {{}}.", f:"overtime", ko:"직원들은 초과 근무에 대해 추가 수당을 받는다." }] },
   { word:"overview", exams:["공무원"], pron:"오버뷰", pos:"n", level:"B2", meanings:["개요","개관"], syn:["summary","outline","synopsis"], ex:[{ s:"The first slide shows a quick {{}} of the whole project.", f:"overview", ko:"첫 슬라이드는 프로젝트 전체의 간단한 개요를 보여 준다." }] },
+  { word:"on a tight budget", exams:["공무원"], pron:"온 어 타이트 버짓", pos:"phr", level:"B2", meanings:["예산이 빠듯한","돈이 넉넉지 않은"] },
+  { word:"outrun", exams:["공무원"], pron:"아웃런", pos:"v", level:"C1", meanings:["~보다 빨리 달리다","앞지르다"], syn:["outpace","outstrip","outdistance"], ex:[{ s:"The thief could not {{}} the police car on foot.", f:"outrun", ko:"도둑은 걸어서는 경찰차를 따돌릴 수 없었다." }] },
+  { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1272,7 +1275,11 @@ Object.assign(window.GLOSS, {
   "out of action": "쓸 수 없는",
   "out of the ordinary": "보통과 다른",
   "out of vogue": "인기가 식은",
+  "outdistance": "크게 앞지르다",
   "outlast": "~보다 오래 버티다",
+  "outmaneuver": "책략으로 이기다",
+  "outpace": "~보다 빨리 나아가다",
+  "outsmart": "꾀로 이기다",
   "over-organize": "지나치게 짜 맞추다",
   "overcome by strength": "힘으로 이겨 내다",
   "overly fretful": "지나치게 안절부절하는",

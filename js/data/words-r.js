@@ -46,6 +46,7 @@ window.VOCAB_R = [
   { word:"rein in", exams:["공무원"], pron:"레인 인", pos:"phr", level:"C1", meanings:["억제하다","통제하다"], syn:["curb","restrain","control"] },
   { word:"residual", exams:["공무원"], pron:"리지주얼", pos:"adj", level:"C1", meanings:["잔여의","남은"], syn:["remaining","leftover","lingering"], ex:[{ s:"Put {{}}, non-recyclable waste in the gray container.", f:"residual", ko:"재활용할 수 없는 잔여 쓰레기는 회색 용기에 넣으세요." }] },
   { word:"response", exams:["공무원"], pron:"리스판스", pos:"n", level:"B1", meanings:["반응","대응"], syn:["reaction","reply","answer"], ex:[{ s:"Running away is a natural {{}} to danger.", f:"response", ko:"도망치는 것은 위험에 대한 자연스러운 반응이다." }], gov:{ prep:["to"], usage:"in response to ~ : ~에 대응하여 · a response to ~ : ~에 대한 반응" } },
+  { word:"request", exams:["공무원"], pron:"리퀘스트", pos:"v", level:"B1", meanings:["요청하다","요청"], syn:["ask for","seek","demand"], ex:[{ s:"You can {{}} a refund if the item is damaged.", f:"request", ko:"물건이 손상되었으면 환불을 요청할 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -1643,6 +1644,7 @@ Object.assign(window.GLOSS, {
   "art of persuasive speech": "말로 설득하는 기술",
   "as a preference": "더 좋아서",
   "as it happens": "일어나는 그대로",
+  "ask for": "~을 요청하다",
   "ask to have back": "돌려 달라고 하다",
   "asked for effect": "효과를 노려 묻는",
   "at ease": "마음이 놓인",
