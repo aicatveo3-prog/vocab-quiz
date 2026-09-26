@@ -73,7 +73,8 @@
 
   /* ── 버전 칩 · 선택 화면 ──────────────────────
      홈의 미니 칩은 현재 버전을 보여주고, 누르면 선택 화면을 연다.
-     선택 화면은 첫 진입 때(되돌아갈 홈이 아직 없음) 되돌아가기를 숨긴다.
+     선택 화면은 앱을 열 때마다 먼저 뜬다. 첫 진입 때(되돌아갈 홈이 아직 없음)는
+     되돌아가기를 숨긴다.
      아직 태그된 단어가 없는 버전(count 0)은 '준비중'으로 잠근다. */
   function renderEditionChip() {
     var chip = $('ed-chip');
@@ -1572,8 +1573,9 @@
   if (window.firebase) bootFirebase();
   else window.addEventListener('load', bootFirebase);
 
-  // 홈은 미리 채워 둔다(버전을 고르면 바로 보이게). 아직 버전을 고르지 않았으면
-  // 선택 화면을 전면에 띄운다 — 첫 진입이라 되돌아갈 곳이 없으므로 뒤로가기는 숨긴다.
+  // 홈은 미리 채워 둔다(버전을 고르면 바로 보이게). 앱을 열 때마다 선택 화면을
+  // 먼저 띄운다. 이미 고른 버전이 있으면 뒤로가기로 그 버전 그대로 홈에 갈 수 있고,
+  // 첫 진입이라 고른 적이 없으면 되돌아갈 곳이 없으므로 뒤로가기는 숨긴다.
   renderHome();
-  if (!window.Edition.isChosen()) openEdition(false);
+  openEdition(window.Edition.isChosen());
 })();
