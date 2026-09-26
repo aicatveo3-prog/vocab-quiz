@@ -45,8 +45,11 @@ window.VOCAB_W = [
   { word:"wireless", exams:["공무원"], pron:"와이어리스", pos:"adj", level:"B2", meanings:["무선의"], ex:[{ s:"The {{}} industry launched an education campaign.", f:"wireless", ko:"무선 통신 업계는 교육 캠페인을 시작했다." }] },
   { word:"wrestle", exams:["공무원"], pron:"레슬", pos:"v", level:"C1", meanings:["씨름하다","맞붙어 싸우다"], syn:["grapple","struggle","tussle"], ex:[{ s:"Artists will {{}} with the possibilities of the post-human.", f:"wrestle", ko:"예술가들은 포스트휴먼의 가능성과 씨름할 것이다." }] },
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
-  { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복","복지"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
+  { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
   { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
+  { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
+  { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
+  { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -163,7 +166,7 @@ window.VOCAB_W = [
   /* 승격 ⑦ — 사전 단일값 유지. 참조 세 곳(dilute·impair 유의어, consolidate
      반의어) 의 화면은 바뀌지 않는다. dampen(약화시키다, 적시다)·undermine
      (약화시키다) 과 글자가 맞물려 배제된다. */
-  { word:"weaken", pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
+  { word:"weaken", exams:["공무원"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
     syn:["dilute","impair","make less strong"], ant:["consolidate"],
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
@@ -463,7 +466,7 @@ window.VOCAB_W = [
     ex:[{ s:"The wall can {{}} a gale.", f:"withstand", ko:"그 벽은 강풍을 견딜 수 있다." }] },
 
   /* 교재 동사 갈래('목격하다') 는 버렸다. */
-  { word:"witness", pron:"위트니스", pos:"n", level:"B2", meanings:["목격자","증인"],
+  { word:"witness", exams:["공무원"], pron:"위트니스", pos:"n", level:"B2", meanings:["목격자","증인"],
     syn:["one who saw it happen","person giving evidence","onlooker in court"],
     ex:[{ s:"The {{}} took the stand.", f:"witness", ko:"그 목격자가 증인석에 섰다." }] },
 
@@ -520,7 +523,7 @@ window.VOCAB_W = [
   /* 승격 ㉙ — ★사전값을 따랐다. 교재는 '운동하다; 잘 풀리다' 인데 참조 셋
      (deduce·estimate·figure out) 이 모두 '알아냄' 쪽이다. determine·discover·
      uncover 가 '알아내다' 를 써서 세 곳과 맞물려 배제된다. */
-  { word:"work out", pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
+  { word:"work out", exams:["공무원"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
     syn:["deduce","estimate","figure out"] },
 
   /* ★ feasible(실행 가능한, 그럴듯한) 과 V 세트 viable(실행 가능한) 이 교재
@@ -605,7 +608,9 @@ Object.assign(window.GLOSS, {
   "bending this way and that": "이리저리 휘는",
   "body that keeps watch": "지켜보는 단체",
   "care of the needy": "어려운 이를 돌봄",
+  "closet": "벽장, 옷장",
   "closing account": "마무리 보고",
+  "clothes": "옷, 의복",
   "comfortably off": "살림이 넉넉한",
   "complain in a high tone": "높은 소리로 불평하다",
   "corn ground into flour": "가루로 빻는 곡물",
@@ -628,6 +633,8 @@ Object.assign(window.GLOSS, {
   "frame of belief": "믿음의 틀",
   "full of turns": "굽이가 많은",
   "gain nobody looked for": "아무도 바라지 않았던 이득",
+  "garbage": "쓰레기",
+  "garments": "옷가지, 의류",
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
   "glad to lend a hand": "손을 보태는 것이 반가운",
@@ -635,11 +642,13 @@ Object.assign(window.GLOSS, {
   "go round and round": "돌고 또 돌다",
   "good enough to go on with": "그럭저럭 밀고 갈 만한",
   "grain for bread": "빵을 만드는 곡식",
+  "grapple": "맞붙다, 고심하다",
   "grip on oneself": "스스로를 다잡는 힘",
   "ground that holds water": "물을 머금은 땅",
   "have on": "몸에 걸치고 있다",
   "having plenty": "가진 것이 많은",
   "hospital section": "병원의 한 구역",
+  "hostilities": "교전, 전투 행위",
   "how broad a thing is": "얼마나 넓은지",
   "how much there is to do": "할 일이 얼마나 되는지",
   "hurt in the body": "몸에 난 다친 데",
@@ -647,6 +656,7 @@ Object.assign(window.GLOSS, {
   "keep from giving": "주지 않고 두다",
   "keeping water out": "물이 못 들어오게 하는",
   "knit together": "엮어 붙이다",
+  "labor force": "노동 인구",
   "land that grows nothing": "아무것도 자라지 않는 땅",
   "line in the skin": "살결에 잡힌 금",
   "load of tasks": "맡은 일의 짐",
@@ -728,6 +738,7 @@ Object.assign(window.GLOSS, {
   "tower with sails": "날개가 달린 탑",
   "turn like a top": "팽이처럼 돌다",
   "turning to the matter of": "화제를 그것으로 돌려",
+  "tussle": "몸싸움하다, 옥신각신하다",
   "untamed country": "길들지 않은 들판",
   "unwanted growth": "달갑지 않게 자란 것",
   "walk here and there": "여기저기 걸어 다니다",
@@ -735,6 +746,7 @@ Object.assign(window.GLOSS, {
   "waste country": "버려진 들판",
   "waste of open land": "텅 빈 벌판",
   "way of seeing the world": "세상을 바라보는 방식",
+  "wellness": "건강, 웰빙",
   "where a person is": "사람이 있는 데",
   "while by contrast": "그와 달리 한편",
   "wife left alone by death": "죽음으로 홀로 남은 아내",

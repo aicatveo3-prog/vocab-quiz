@@ -60,6 +60,9 @@ window.VOCAB_N = [
   { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
   { word:"navigate", exams:["공무원"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
+  { word:"no longer", exams:["공무원"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
+  { word:"no matter how", exams:["공무원"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
+  { word:"notification", exams:["공무원"], pron:"노터피케이션", pos:"n", level:"B2", meanings:["통지","알림"], ex:[{ s:"You will receive an email {{}} when the payment is due.", f:"notification", ko:"납부 기한이 되면 이메일 알림을 받게 됩니다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },
@@ -70,7 +73,7 @@ window.VOCAB_N = [
     syn:["innocent","unworldly","gullible"], ant:["cunning"],
     ex:[{ s:"It was {{}} to hand the key to a stranger.", f:"naive", ko:"낯선 사람에게 열쇠를 건넨 것은 순진했다." }] },
 
-  { word:"namely", pron:"네임리", pos:"adv", level:"B2", meanings:["다시 말해","즉"],
+  { word:"namely", exams:["공무원"], pron:"네임리", pos:"adv", level:"B2", meanings:["다시 말해","즉"],
     syn:["that is to say","in other words","specifically"],
     ex:[{ s:"Only one student was absent, {{}} the class monitor.", f:"namely", ko:"한 학생만 결석했는데, 즉 반장이었다." }] },
 
@@ -96,7 +99,7 @@ window.VOCAB_N = [
      constrict(C) 는 동사 갈래를, limited(L) 는 형용사 갈래를 쓰고 있었다.
      원본이 형용사여서 형용사로 세우고, constrict 쪽 유의어를 이 세트의
      'narrow down' 으로 바꿨다(words-c.js) — 동사 자리에 동사구가 온다. */
-  { word:"narrow", pron:"내로", pos:"adj", level:"B1", meanings:["폭이 좁은","빠듯한"],
+  { word:"narrow", exams:["공무원"], pron:"내로", pos:"adj", level:"B1", meanings:["폭이 좁은","빠듯한"],
     syn:["slim","tight","cramped"], ant:["wide"],
     ex:[{ s:"The path grew too {{}} for the cart to pass.", f:"narrow", ko:"그 길은 수레가 지나가기에 너무 폭이 좁아졌다." }] },
 
@@ -390,7 +393,7 @@ window.VOCAB_N = [
 
   /* 승격 27 — 사전은 '통보하다' 한 갈래였다. 원본의 '통지하다' 를 뒤에 붙였다.
      inform(I) 이 유의어로 쓰는 자리여서 첫 뜻은 사전값을 지켰다. */
-  { word:"notify", pron:"노터파이", pos:"v", level:"B2", meanings:["통보하다","통지하다"],
+  { word:"notify", exams:["공무원"], pron:"노터파이", pos:"v", level:"B2", meanings:["통보하다","통지하다"],
     syn:["let know","send word to","give notice to"],
     ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
 
@@ -405,7 +408,7 @@ window.VOCAB_N = [
     syn:["infamous","of bad repute","widely criticized"], ant:["esteemed"],
     ex:[{ s:"The road is {{}} for its sharp bends.", f:"notorious", ko:"그 길은 급한 굽이로 악명 높다." }] },
 
-  { word:"nourish", pron:"너리시", pos:"v", level:"B2", meanings:["영양분을 공급하다"],
+  { word:"nourish", exams:["공무원"], pron:"너리시", pos:"v", level:"B2", meanings:["영양분을 공급하다"],
     syn:["feed well","sustain with food","build up"],
     ex:[{ s:"Leafy greens {{}} the body with iron.", f:"nourish", ko:"잎채소는 몸에 철분으로 영양분을 공급한다." }] },
 
@@ -515,10 +518,10 @@ Object.assign(window.GLOSS, {
   "come to terms": "합의에 이르다",
   "comparison group": "비교 대상 집단",
   "composure": "침착함",
-  "conception": "머릿속에 그린 것",
   "concerning nourishment": "영양에 관한",
   "course-plotting": "항로를 그림",
   "cramped": "옹색한",
+  "cuddle": "껴안다",
   "cut down": "개수를 줄이다",
   "daytime": "낮의",
   "deadened": "둔해진",
@@ -560,7 +563,6 @@ Object.assign(window.GLOSS, {
   "gestural": "몸짓으로 하는",
   "give notice to": "~에게 알림을 주다",
   "grant citizenship to": "~에게 시민권을 주다",
-  "gullible": "잘 속아 넘어가는",
   "hard to miss": "놓치기 어려운",
   "harmful to health": "건강에 나쁜",
   "health-giving": "건강을 주는",
@@ -580,6 +582,7 @@ Object.assign(window.GLOSS, {
   "injurious": "몸을 해치는",
   "insignificant": "대단치 않은",
   "intolerant": "너그럽지 못한",
+  "intrusive": "거슬리는, 침해하는",
   "itinerant": "떠돌이의",
   "jitters": "초조함",
   "just the same": "그래도 여전히",
@@ -590,6 +593,7 @@ Object.assign(window.GLOSS, {
   "let slide": "내버려 두다",
   "light-footed": "발이 가벼운",
   "local-born": "그 지역에서 태어난",
+  "locality": "지역, 인근",
   "lofty in character": "인품이 높은",
   "longing for the past": "지난 때를 그리는 마음",
   "make unavoidable": "피할 수 없게 만들다",
@@ -612,8 +616,8 @@ Object.assign(window.GLOSS, {
   "not returnable": "되돌려 받을 수 없는",
   "not there at all": "아예 없는",
   "not-for-profit": "이익을 남기지 않는",
-  "notification": "알림",
   "nourishing substance": "영양을 주는 물질",
+  "nudge": "살짝 밀다, 쿡 찌르다",
   "number-based": "수를 바탕으로 한",
   "of bad repute": "평판이 나쁜",
   "of consequence": "무게가 있는",
@@ -680,6 +684,7 @@ Object.assign(window.GLOSS, {
   "unworldly": "세상을 모르는",
   "usual pattern": "으레 그러한 틀",
   "veteran": "오래 해 온 사람",
+  "vicinity": "부근, 근처",
   "voice-over": "화면 밖 목소리",
   "wandering": "떠돌아다니는",
   "wayfinding": "길을 찾아냄",

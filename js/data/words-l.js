@@ -34,10 +34,18 @@ window.VOCAB_L = [
   { word:"localized", exams:["공무원"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
   { word:"longhouse", exams:["공무원"], pron:"롱하우스", pos:"n", level:"C2", meanings:["롱하우스","전통 공동 주거"], ex:[{ s:"The mudslide covered several {{}}.", f:"longhouses", ko:"산사태가 여러 채의 롱하우스를 덮었다." }] },
   { word:"ludicrous", exams:["공무원"], pron:"루디크러스", pos:"adj", level:"C2", meanings:["터무니없는","우스꽝스러운"], syn:["absurd","ridiculous","preposterous"], ant:["sensible"], ex:[{ s:"The claim sounds {{}} to most people.", f:"ludicrous", ko:"그 주장은 대부분의 사람에게 터무니없게 들린다." }] },
-  { word:"landscape", exams:["공무원"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형","판도"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
+  { word:"landscape", exams:["공무원"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
   { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
   { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },
   { word:"loudly", exams:["공무원"], pron:"라우들리", pos:"adv", level:"B1", meanings:["큰 소리로"], syn:["noisily","boisterously","vociferously"], ant:["quietly"], ex:[{ s:"He spoke so {{}} that everyone turned around.", f:"loudly", ko:"그가 너무 큰 소리로 말해서 모두가 돌아보았다." }] },
+  { word:"lab-grown", exams:["공무원"], pron:"랩 그로운", pos:"adj", level:"C1", meanings:["실험실에서 배양한","인공 배양된"], ex:[{ s:"Many experts say {{}} meat has not lived up to its promise.", f:"lab-grown", ko:"많은 전문가는 배양육이 기대에 부응하지 못했다고 말한다." }] },
+  { word:"lead to", exams:["공무원"], pron:"리드 투", pos:"phr", level:"B1", meanings:["~로 이어지다","~을 초래하다"], syn:["result in","bring about","give rise to"] },
+  { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
+  { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
+  { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
+  { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
+  { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
+  { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -255,7 +263,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '유산, 유증' 을 글자까지 지켰다.
      heritage(syn)·inheritance(syn) 두 문제가 참조한다. 첫 뜻이 그 둘과 같은데,
      그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다. */
-  { word:"legacy", pron:"레거시", pos:"n", level:"B2", meanings:["유산","유증"],
+  { word:"legacy", exams:["공무원"], pron:"레거시", pos:"n", level:"B2", meanings:["유산","유증"],
     syn:["heritage","inheritance","bequest"],
     ex:[{ s:"The museum was a {{}} from a local collector.", f:"legacy", ko:"그 박물관은 지역 수집가가 남긴 유산이었다." }] },
 
@@ -405,7 +413,7 @@ window.VOCAB_L = [
     syn:["featherweight","portable","easy to carry"], ant:["heavy"],
     ex:[{ s:"The tent is made of {{}} nylon.", f:"lightweight", ko:"그 텐트는 가벼운 나일론으로 만들어졌다." }] },
 
-  { word:"likely", pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
+  { word:"likely", exams:["공무원"], pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
     syn:["probable","expected","apt"], ant:["unlikely"],
     ex:[{ s:"Rain is {{}} later this evening.", f:"likely", ko:"오늘 저녁 늦게 비가 올 것 같다." }] },
 
@@ -434,7 +442,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '한정된, 제한된' 을 글자까지 지켰다.
      boundless(ant)·finite(syn) 두 문제가 참조한다.
      바로 뒤 limitless 와 뜻이 정반대여서 함께 익히기 좋은 쌍이다. */
-  { word:"limited", pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
+  { word:"limited", exams:["공무원"], pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
     syn:["finite","restricted","narrow"], ant:["boundless"],
     ex:[{ s:"Seats are {{}} to thirty per session.", f:"limited", ko:"좌석은 회당 30석으로 한정된다." }] },
 
@@ -455,7 +463,7 @@ window.VOCAB_L = [
     syn:["straight","rectilinear","sequential"],
     ex:[{ s:"The graph shows a clear {{}} relationship.", f:"linear", ko:"그 그래프는 명확한 직선 관계를 보여 준다." }] },
 
-  { word:"linger", pron:"링거", pos:"v", level:"C1", meanings:["오래 머무르다","떠나지 못하다"],
+  { word:"linger", exams:["공무원"], pron:"링거", pos:"v", level:"C1", meanings:["오래 머무르다","떠나지 못하다"],
     syn:["dawdle","hang around","persist"],
     ex:[{ s:"The smell of smoke {{}} for days afterwards.", f:"lingered", ko:"연기 냄새가 그 후 며칠 동안 오래 머물렀다." }] },
 
@@ -571,14 +579,14 @@ window.VOCAB_L = [
     syn:["elevated","towering","soaring"],
     ex:[{ s:"The cathedral has a {{}} vaulted ceiling.", f:"lofty", ko:"그 대성당은 아주 높은 아치형 천장을 갖고 있다." }] },
 
-  { word:"logic", pron:"라직", pos:"n", level:"B2", meanings:["논리학","논리"],
+  { word:"logic", exams:["공무원"], pron:"라직", pos:"n", level:"B2", meanings:["논리학","논리"],
     syn:["reasoning","rationale","argumentation"],
     ex:[{ s:"There is a clear flaw in your {{}}.", f:"logic", ko:"당신의 논리에 명확한 결함이 있다." }] },
 
   /* 승격 ① — GLOSS '논리적인' 과 글자까지 같다. coherent(syn)·illogical(ant) 두
      문제가 참조한다. 원본도 한 갈래다.
      logic 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"logical", pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
+  { word:"logical", exams:["공무원"], pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
     syn:["coherent","rational","sound"], ant:["illogical"],
     ex:[{ s:"The next {{}} step is to test the theory.", f:"logical", ko:"다음 논리적인 단계는 그 이론을 검증하는 것이다." }] },
 
@@ -601,11 +609,11 @@ window.VOCAB_L = [
   { word:"longitude", pron:"란저튜드", pos:"n", level:"B2", meanings:["경도","경선"],
     ex:[{ s:"The ship's {{}} was recorded every hour.", f:"longitude", ko:"그 배의 경도가 매시간 기록되었다." }] },
 
-  { word:"long-term", pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
+  { word:"long-term", exams:["공무원"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 
-  { word:"look forward to", pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
+  { word:"look forward to", exams:["공무원"], pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
     syn:["anticipate","await eagerly","be eager for"] },
 
   { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],
@@ -650,7 +658,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '낮추다, 내리다' 를 글자까지 지켰다. elevate(ant) 가 참조하므로
      원본의 '떨어뜨리다' 대신 사전 쪽 '내리다' 를 남겼다. */
-  { word:"lower", pron:"로워", pos:"v", level:"B1", meanings:["낮추다","내리다"],
+  { word:"lower", exams:["공무원"], pron:"로워", pos:"v", level:"B1", meanings:["낮추다","내리다"],
     syn:["reduce","drop","bring down"], ant:["elevate"],
     ex:[{ s:"Please {{}} your voice in the reading room.", f:"lower", ko:"열람실에서는 목소리를 낮춰 주세요." }] },
 
@@ -712,6 +720,7 @@ window.VOCAB_L = [
 Object.assign(window.GLOSS, {
   "abate": "잦아들다",
   "above board": "숨김 없이 정당한",
+  "accountability": "책임성, 해명 의무",
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
   "amateur": "비전문가, 아마추어",
@@ -728,6 +737,7 @@ Object.assign(window.GLOSS, {
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
   "blistering": "맹렬히 빠른",
+  "boisterously": "떠들썩하게",
   "booby trap": "위장 폭탄",
   "book stock": "보유 도서",
   "bookish": "책에 기댄",
@@ -738,6 +748,7 @@ Object.assign(window.GLOSS, {
   "broad-minded": "아량이 넓은",
   "buried explosive": "땅에 묻은 폭발물",
   "cabin": "오두막",
+  "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
@@ -788,8 +799,11 @@ Object.assign(window.GLOSS, {
   "ignorant": "무지한",
   "iguana": "이구아나",
   "illegitimate": "정당하지 못한",
+  "illegitimately": "부당하게, 불법으로",
   "industrially behind": "산업이 뒤처진",
   "inn": "여관",
+  "intellectuals": "지식인들",
+  "intelligentsia": "지식 계층, 인텔리겐치아",
   "job cut": "일자리 감축",
   "jump off": "뛰어서 내려가다",
   "justifiable": "이유가 서는",
@@ -800,6 +814,7 @@ Object.assign(window.GLOSS, {
   "language study": "언어 연구",
   "lasting": "오래가는",
   "legal action": "법적 조치",
+  "legally": "법적으로, 합법적으로",
   "lending": "대여, 빌려 줌",
   "less advanced": "덜 발전한",
   "lessor": "임대인",
@@ -814,12 +829,11 @@ Object.assign(window.GLOSS, {
   "mine": "지뢰, 광산",
   "mostly": "대부분",
   "myth": "신화",
+  "noisily": "시끄럽게",
   "nonspecialist": "전문가가 아닌 사람",
   "of one mind": "한마음인",
-  "opulent": "사치스러운",
   "oral knowledge": "입으로 전해진 지식",
   "ordinary person": "보통 사람",
-  "overgrown": "웃자란",
   "parcel of land": "한 필지의 땅",
   "permissible": "허용되는",
   "philology": "문헌학",
@@ -828,10 +842,12 @@ Object.assign(window.GLOSS, {
   "plush": "푹신하고 고급스러운",
   "poem": "시",
   "predominantly": "주로, 대부분은",
+  "pressure agent": "압력 단체 요원",
   "profuse": "넘칠 만큼 많은",
   "property owner": "부동산 소유자",
   "proprietor": "소유주",
   "prowl": "살금살금 돌아다니다",
+  "quietly": "조용히",
   "rapid-fire": "속사포 같은",
   "readable": "알아볼 수 있는",
   "recline": "몸을 뒤로 젖히다",
@@ -844,14 +860,15 @@ Object.assign(window.GLOSS, {
   "rent out": "세를 놓다",
   "research facility": "연구 시설",
   "rest": "놓여 있다",
+  "rightfully": "정당하게, 당연히",
   "saga": "긴 무훈담",
+  "scholars": "학자들",
   "science of language": "언어 과학",
   "seep out": "스며 나오다",
   "seepage": "스며 나옴",
   "set down": "내려놓다",
   "set in motion": "움직이게 하다",
   "shoestring": "아주 적은 돈의",
-  "short-term": "단기간의",
   "side-to-side": "좌우로의",
   "sideways": "옆쪽으로",
   "silvered glass": "은을 입힌 유리",
@@ -882,10 +899,13 @@ Object.assign(window.GLOSS, {
   "unlikely": "있을 것 같지 않은",
   "unsophisticated": "세련되지 않은",
   "untie": "매듭을 풀다",
+  "validly": "유효하게, 타당하게",
   "van": "소형 화물차",
   "vault": "짚고 뛰어넘다",
   "verbatim": "한마디도 안 빼고",
   "verdant": "푸른 풀로 덮인",
+  "view": "경치, 전망",
+  "vociferously": "소리 높여, 격렬하게",
   "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",
   "watery substance": "물기 있는 물질",

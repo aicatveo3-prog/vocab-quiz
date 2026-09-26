@@ -36,11 +36,21 @@ window.VOCAB_R = [
   { word:"recyclable", exams:["공무원"], pron:"리사이클러블", pos:"adj", level:"B2", meanings:["재활용 가능한"], syn:["reusable","reprocessable","salvageable"], ant:["disposable"], ex:[{ s:"Separate the {{}} materials from the trash.", f:"recyclable", ko:"재활용 가능한 물품을 쓰레기와 분리하세요." }] },
   { word:"regardless", exams:["공무원"], pron:"리가들리스", pos:"adv", level:"B2", meanings:["상관없이","개의치 않고"], syn:["nevertheless","anyway","nonetheless"], ex:[{ s:"Students behave better {{}} of their diet.", f:"regardless", ko:"학생들은 식단과 상관없이 더 잘 행동한다." }], gov:{ prep:["of"], usage:"regardless of ~ : ~에 상관없이" } },
   { word:"regional", exams:["공무원"], pron:"리저널", pos:"adj", level:"B2", meanings:["지역의"], syn:["local","territorial","provincial"], ant:["national"], ex:[{ s:"The rules vary by {{}} authority.", f:"regional", ko:"규정은 지역 당국마다 다르다." }] },
-  { word:"regular", exams:["공무원"], pron:"레귤러", pos:"adj", level:"B1", meanings:["보통의","정규의","규칙적인"], syn:["ordinary","normal","routine"], ant:["irregular"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"regular", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
+  { word:"regular", exams:["공무원"], pron:"레귤러", pos:"adj", level:"B1", meanings:["보통의","규칙적인"], syn:["ordinary","normal","routine"], ant:["irregular"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"regular", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
   { word:"regulation", exams:["공무원"], pron:"레귤레이션", pos:"n", level:"B2", meanings:["규정","규제"], syn:["rule","directive","statute"], ex:[{ s:"I will comply with any rules and {{}}.", f:"regulations", ko:"어떤 규칙과 규정에도 따르겠습니다." }] },
   { word:"renovation", exams:["공무원"], pron:"레노베이션", pos:"n", level:"B2", meanings:["개조","보수"], syn:["refurbishment","remodeling","restoration"], ex:[{ s:"The {{}} projects will enable new research.", f:"renovation", ko:"그 보수 사업들은 새로운 연구를 가능하게 할 것이다." }] },
-  { word:"reverence", exams:["공무원"], pron:"레버런스", pos:"n", level:"C2", meanings:["숭배","경외","존경"], syn:["respect","veneration","awe"], ant:["contempt"], ex:[{ s:"Westerners have a special {{}} for observed facts.", f:"reverence", ko:"서양인들은 관찰된 사실에 대해 특별한 경외심을 지닌다." }] },
+  { word:"reverence", exams:["공무원"], pron:"레버런스", pos:"n", level:"C2", meanings:["경외","숭배"], syn:["respect","veneration","awe"], ant:["contempt"], ex:[{ s:"Westerners have a special {{}} for observed facts.", f:"reverence", ko:"서양인들은 관찰된 사실에 대해 특별한 경외심을 지닌다." }] },
   { word:"rewarding", exams:["공무원"], pron:"리워딩", pos:"adj", level:"B2", meanings:["보람 있는"], syn:["fulfilling","satisfying","gratifying"], ant:["thankless"], ex:[{ s:"Volunteering can be a {{}} experience.", f:"rewarding", ko:"자원봉사는 보람 있는 경험이 될 수 있다." }] },
+  { word:"readily", exams:["공무원"], pron:"레딜리", pos:"adv", level:"B2", meanings:["쉽게","기꺼이"], syn:["easily","willingly","promptly"], ex:[{ s:"She {{}} agreed to help with the project.", f:"readily", ko:"그녀는 그 프로젝트를 돕는 데 선뜻 동의했다." }] },
+  { word:"region", exams:["공무원"], pron:"리전", pos:"n", level:"B1", meanings:["지역","지방"], syn:["area","district","zone"], ex:[{ s:"Each {{}} has its own recycling rules.", f:"region", ko:"지역마다 재활용 규칙이 따로 있다." }] },
+  { word:"rein in", exams:["공무원"], pron:"레인 인", pos:"phr", level:"C1", meanings:["억제하다","통제하다"], syn:["curb","restrain","control"] },
+  { word:"residual", exams:["공무원"], pron:"리지주얼", pos:"adj", level:"C1", meanings:["잔여의","남은"], syn:["remaining","leftover","lingering"], ex:[{ s:"Put {{}}, non-recyclable waste in the gray container.", f:"residual", ko:"재활용할 수 없는 잔여 쓰레기는 회색 용기에 넣으세요." }] },
+  { word:"response", exams:["공무원"], pron:"리스판스", pos:"n", level:"B1", meanings:["반응","대응"], syn:["reaction","reply","answer"], ex:[{ s:"Running away is a natural {{}} to danger.", f:"response", ko:"도망치는 것은 위험에 대한 자연스러운 반응이다." }], gov:{ prep:["to"], usage:"in response to ~ : ~에 대응하여 · a response to ~ : ~에 대한 반응" } },
+  { word:"request", exams:["공무원"], pron:"리퀘스트", pos:"v", level:"B1", meanings:["요청하다","요청"], syn:["ask for","seek","demand"], ex:[{ s:"You can {{}} a refund if the item is damaged.", f:"request", ko:"물건이 손상되었으면 환불을 요청할 수 있다." }] },
+  { word:"recruit", exams:["공무원"], pron:"리크루트", pos:"v", level:"B2", meanings:["모집하다","채용하다"], syn:["hire","enlist","employ"], ant:["dismiss"], ex:[{ s:"Should we {{}} more volunteers for our program?", f:"recruit", ko:"우리 프로그램을 위해 자원봉사자를 더 모집해야 할까요?" }] },
+  { word:"reduction", exams:["공무원"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
+  { word:"repetition", exams:["공무원"], pron:"레퍼티션", pos:"n", level:"B2", meanings:["반복","되풀이"], syn:["recurrence","duplication","reiteration"], ex:[{ s:"Children learn new words through {{}}, hearing them again and again.", f:"repetition", ko:"아이들은 새 단어를 몇 번이고 들으며 반복을 통해 익힌다." }] },
+  { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -119,7 +129,7 @@ window.VOCAB_R = [
   /* 승격 ⑥ — 원본은 '범위; 범위가 ~이다; 정렬시키다' 로 명사와 동사가 섞여
      있었다. 참조 넷(array·coverage·diversity·extent) 이 모두 명사여서 명사로
      세우고 쌍반점만 쉼표로 갈랐다. '범위' 는 extent 의 첫 뜻과 같아 배제된다. */
-  { word:"range", pron:"레인지", pos:"n", level:"B1", meanings:["범위","다양함"],
+  { word:"range", exams:["공무원"], pron:"레인지", pos:"n", level:"B1", meanings:["범위","다양함"],
     syn:["extent","span from end to end","full reach"],
     ex:[{ s:"The {{}} of prices is wide.", f:"range", ko:"가격의 범위가 넓다." }] },
 
@@ -143,20 +153,20 @@ window.VOCAB_R = [
     ex:[{ s:"The crowd listened in {{}}.", f:"rapture", ko:"군중은 황홀에 빠져 들었다." }] },
 
   /* 승격 ⑩ — 사전 표현을 글자까지 지켰다(원본은 순서가 거꾸로였다). 참조는 없다. */
-  { word:"rare", pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
+  { word:"rare", exams:["공무원"], pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
     syn:["seldom found","not often seen","thin on the ground"], ant:["common"],
     ex:[{ s:"This bird is {{}} in winter.", f:"rare", ko:"이 새는 겨울에 드물다." }] },
 
   /* 원본은 '속도, 비율, 등급' 세 갈래였다. '등급' 은 바로 위 rank 와 grade 의
      자리라 버렸다. '비율' 은 아래 ratio 와 글자가 같아 서로 오답에서 빠진다. */
-  { word:"rate", pron:"레이트", pos:"n", level:"B1", meanings:["속도","비율"],
+  { word:"rate", exams:["공무원"], pron:"레이트", pos:"n", level:"B1", meanings:["속도","비율"],
     syn:["speed of change","measure per unit","pace at which it happens"],
     ex:[{ s:"The birth {{}} has fallen.", f:"rate", ko:"출생률이 떨어졌다." }] },
 
   /* ★ 원본은 '상당히, 꽤; 오히려, 차라리' 였다. 앞 갈래는 pretty(P 꽤, 상당히)·
      quite(Q 꽤, 전적으로) 가 이미 갖고 있어서 뒤 갈래만 남겼다. 부사 셋이 서로를
      흐리지 않게 가른 것이다. */
-  { word:"rather", pron:"래더", pos:"adv", level:"B1", meanings:["오히려","차라리"],
+  { word:"rather", exams:["공무원"], pron:"래더", pos:"adv", level:"B1", meanings:["오히려","차라리"],
     syn:["instead","as a preference","on the contrary"],
     ex:[{ s:"I would {{}} walk than drive.", f:"rather", ko:"나는 운전하기보다 차라리 걷겠다." }] },
 
@@ -191,7 +201,7 @@ window.VOCAB_R = [
     ex:[{ s:"How did they {{}} to the news?", f:"react", ko:"그들은 그 소식에 어떻게 반응했나요?" }] },
 
   /* 승격 ⑫ — 사전 글자 유지(chemistry, C). */
-  { word:"reaction", pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
+  { word:"reaction", exams:["공무원"], pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
     syn:["response to something","what follows an act","answering move"],
     ex:[{ s:"His first {{}} was to laugh.", f:"reaction", ko:"그의 첫 반응은 웃는 것이었다." }] },
 
@@ -225,7 +235,7 @@ window.VOCAB_R = [
     ex:[{ s:"That lies outside my {{}}.", f:"realm", ko:"그것은 내 영역 밖의 일이다." }] },
 
   /* ★ 원본은 '실시간' 으로 형용사인데 명사 뜻이 달려 있었다 — '실시간의' 로 고쳤다. */
-  { word:"real-time", pron:"리얼 타임", pos:"adj", level:"C1", meanings:["실시간의"],
+  { word:"real-time", exams:["공무원"], pron:"리얼 타임", pos:"adj", level:"C1", meanings:["실시간의"],
     syn:["as it happens","without delay in reporting","live as it goes"],
     ex:[{ s:"The app gives {{}} traffic data.", f:"real-time", ko:"그 앱은 실시간의 교통 정보를 준다." }] },
 
@@ -320,7 +330,7 @@ window.VOCAB_R = [
 
   /* 승격 ㉖ — ★ 원본은 '퇴거, 후퇴' 였다. 사전값과 참조 downturn 이 모두 경기
      뜻이라 사전 표현을 글자까지 지켰다. */
-  { word:"recession", pron:"리세션", pos:"n", level:"B2", meanings:["경기 후퇴","불황"],
+  { word:"recession", exams:["공무원"], pron:"리세션", pos:"n", level:"B2", meanings:["경기 후퇴","불황"],
     syn:["downturn","slump in trade","fall in business"],
     ex:[{ s:"The country slid into {{}}.", f:"recession", ko:"그 나라는 불황에 빠져들었다." }] },
 
@@ -365,7 +375,7 @@ window.VOCAB_R = [
     ex:[{ s:"I did not {{}} her at first.", f:"recognize", ko:"나는 처음에 그녀를 인식하지 못했다." }] },
 
   /* 승격 ㉝ — 사전 글자 유지(advise, A). */
-  { word:"recommend", pron:"레커멘드", pos:"v", level:"B1", meanings:["추천하다"],
+  { word:"recommend", exams:["공무원"], pron:"레커멘드", pos:"v", level:"B1", meanings:["추천하다"],
     syn:["advise","speak well of","put forward as good"],
     ex:[{ s:"Can you {{}} a good dentist?", f:"recommend", ko:"좋은 치과 의사를 추천해 주시겠어요?" }] },
 
@@ -429,7 +439,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊱ — 사전의 쌍반점만 쉼표로 갈랐다(consult, C). '언급하다' 는
      mention(M) 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"refer", pron:"리퍼", pos:"v", level:"B1", meanings:["참조하다","언급하다"],
+  { word:"refer", exams:["공무원"], pron:"리퍼", pos:"v", level:"B1", meanings:["참조하다","언급하다"],
     syn:["consult","look to for help","speak of"],
     ex:[{ s:"Please {{}} to page ten.", f:"refer", ko:"10쪽을 참조하세요." }] },
 
@@ -524,10 +534,10 @@ window.VOCAB_R = [
     ex:[{ s:"We {{}} him as a friend.", f:"regard", ko:"우리는 그를 친구로 여긴다." }] },
 
   /* 승격 ㊹ — 사전 단일값 유지(considering, C · in terms of, I). */
-  { word:"regarding", pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
+  { word:"regarding", exams:["공무원"], pron:"리가딩", pos:"phr", level:"B2", meanings:["~에 관하여"],
     syn:["about the matter of","with respect to","on the subject of"] },
 
-  { word:"regardless of", pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
+  { word:"regardless of", exams:["공무원"], pron:"리가드리스 오브", pos:"phr", level:"B2", meanings:["~에 상관없이"],
     syn:["no matter what","without regard to","whatever may be"] },
 
   /* 원본 '재생하다, 재건하다' 에서 '재건하다' 는 reconstruct(챕터 3) 에 넘겼다. */
@@ -549,13 +559,13 @@ window.VOCAB_R = [
   /* 승격 ㊻ — ★ 사전·원본 모두 동사다. 명사 뜻('기록부, 명부') 을 노리던 참조
      세 곳(archive·directory·index) 을 손질하고 동사로 세웠다. 쌍반점만 쉼표로
      바뀌어 enroll·come to mind 두 곳은 구두점만 달라진다. */
-  { word:"register", pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
+  { word:"register", exams:["공무원"], pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
     syn:["enroll","put on a list","take note of"],
     ex:[{ s:"You must {{}} before Friday.", f:"register", ko:"금요일 전에 등록해야 한다." }] },
 
   /* 승격 ㊼ — 사전 글자 유지(enrollment, E). 원본의 괄호 '(출생, 사망 등의) 신고'
      는 걷고 사전의 '기재' 를 썼다. */
-  { word:"registration", pron:"레지스트레이션", pos:"n", level:"B2", meanings:["등록","기재"],
+  { word:"registration", exams:["공무원"], pron:"레지스트레이션", pos:"n", level:"B2", meanings:["등록","기재"],
     syn:["enrollment","signing up","entry on a list"],
     ex:[{ s:"{{}} closes at noon.", f:"Registration", ko:"등록은 정오에 마감된다." }] },
 
@@ -586,7 +596,7 @@ window.VOCAB_R = [
     ex:[{ s:"The center will {{}} injured birds.", f:"rehabilitate", ko:"그 센터는 다친 새들에게 재활 치료를 할 것이다." }] },
 
   /* 외래어 '리허설' 을 걷었다. */
-  { word:"rehearsal", pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
+  { word:"rehearsal", exams:["공무원"], pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
     syn:["practice before the show","trial run of a play","run-through"],
     ex:[{ s:"The last {{}} ran late.", f:"rehearsal", ko:"마지막 예행연습이 늦게까지 이어졌다." }] },
 
@@ -632,7 +642,7 @@ window.VOCAB_R = [
      relieve/relive 는 철자가 한 글자 차이인데 발음이 다르다 — 릴리브 / 리라이브. */
 
   /* 승격 53 — 사전의 쌍반점만 쉼표로 갈랐다(참조 여섯 곳). */
-  { word:"reject", pron:"리젝트", pos:"v", level:"B1", meanings:["거절하다","배척하다"],
+  { word:"reject", exams:["공무원"], pron:"리젝트", pos:"v", level:"B1", meanings:["거절하다","배척하다"],
     syn:["deny","dismiss","turn down"], ant:["accept"],
     ex:[{ s:"They may {{}} the offer.", f:"reject", ko:"그들은 그 제안을 거절할 수도 있다." }] },
 
@@ -707,7 +717,7 @@ window.VOCAB_R = [
 
   /* 승격 62 — 사전 글자 유지(antique, A · artifact, A). ruins(폐허 · 챕터 14) 와
      갈라 '유물, 유적' 을 이 자리에 두었다. */
-  { word:"relic", pron:"렐릭", pos:"n", level:"C1", meanings:["유물","유적"],
+  { word:"relic", exams:["공무원"], pron:"렐릭", pos:"n", level:"C1", meanings:["유물","유적"],
     syn:["antique","artifact","thing left from the past"],
     ex:[{ s:"The museum holds a stone {{}}.", f:"relic", ko:"그 박물관은 돌 유물을 보관한다." }] },
 
@@ -750,11 +760,11 @@ window.VOCAB_R = [
     ex:[{ s:"He was {{}} to answer.", f:"reluctant", ko:"그는 대답하기를 꺼렸다." }] },
 
   /* 승격 66 — 사전 글자 유지(be dependent on, B · fall back on, F). */
-  { word:"rely on", pron:"릴라이 온", pos:"phr", level:"B1", meanings:["~에 의존하다"],
+  { word:"rely on", exams:["공무원"], pron:"릴라이 온", pos:"phr", level:"B1", meanings:["~에 의존하다"],
     syn:["be dependent on","fall back on","put one's trust in"] },
 
   /* 승격 67 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"remain", pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
+  { word:"remain", exams:["공무원"], pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
     syn:["stay behind","be left over","go on being"],
     ex:[{ s:"Few trees {{}} on the hill.", f:"remain", ko:"그 언덕에 남은 나무는 얼마 없다." }] },
 
@@ -794,7 +804,7 @@ window.VOCAB_R = [
     ex:[{ s:"He showed no {{}}.", f:"remorse", ko:"그는 회한을 보이지 않았다." }] },
 
   /* 승격 71 — 사전 글자 유지(inaccessible, I · isolated, I). */
-  { word:"remote", pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
+  { word:"remote", exams:["공무원"], pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
     syn:["inaccessible","isolated","far from anywhere"],
     ex:[{ s:"They live in a {{}} valley.", f:"remote", ko:"그들은 외딴 골짜기에 산다." }] },
 
@@ -809,11 +819,11 @@ window.VOCAB_R = [
     syn:["cause to become","leave in a state","turn into"],
     ex:[{ s:"Heat can {{}} the metal soft.", f:"render", ko:"열은 그 금속을 부드럽게 만들 수 있다." }] },
 
-  { word:"renew", pron:"리뉴", pos:"v", level:"B2", meanings:["재개하다","갱신하다"],
+  { word:"renew", exams:["공무원"], pron:"리뉴", pos:"v", level:"B2", meanings:["재개하다","갱신하다"],
     syn:["start again","take up once more","make valid again"],
     ex:[{ s:"You must {{}} the licence.", f:"renew", ko:"당신은 그 면허를 갱신해야 한다." }] },
 
-  { word:"renewable", pron:"리뉴어블", pos:"adj", level:"B2", meanings:["재생 가능한"],
+  { word:"renewable", exams:["공무원"], pron:"리뉴어블", pos:"adj", level:"B2", meanings:["재생 가능한"],
     syn:["able to be replaced","that nature makes again","not running out"],
     ex:[{ s:"Wind is a {{}} source.", f:"renewable", ko:"바람은 재생 가능한 원천이다." }] },
 
@@ -891,7 +901,7 @@ window.VOCAB_R = [
     syn:["monotonous","doing the same over","without change"],
     ex:[{ s:"The work is dull and {{}}.", f:"repetitive", ko:"그 일은 재미없고 되풀이된다." }] },
 
-  { word:"replace", pron:"리플레이스", pos:"v", level:"B1", meanings:["대체하다","대신하다"],
+  { word:"replace", exams:["공무원"], pron:"리플레이스", pos:"v", level:"B1", meanings:["대체하다","대신하다"],
     syn:["take the place of","put another in place","swap in for"],
     ex:[{ s:"Machines will {{}} the old line.", f:"replace", ko:"기계가 그 낡은 설비를 대체할 것이다." }] },
 
@@ -913,7 +923,7 @@ window.VOCAB_R = [
 
   /* 승격 80 — 사전은 '응답하다; 대답' 으로 동사와 명사가 섞여 있었다. 원본이
      동사여서 동사로 세우고, '응답하다' 는 respond(챕터 10) 에 넘겼다. */
-  { word:"reply", pron:"리플라이", pos:"v", level:"B1", meanings:["대답하다","답장하다"],
+  { word:"reply", exams:["공무원"], pron:"리플라이", pos:"v", level:"B1", meanings:["대답하다","답장하다"],
     syn:["answer back","write back","give an answer"],
     ex:[{ s:"He did not {{}} to my note.", f:"reply", ko:"그는 내 쪽지에 답장하지 않았다." }] },
 
@@ -988,12 +998,12 @@ window.VOCAB_R = [
     ex:[{ s:"The shop has a good {{}}.", f:"reputation", ko:"그 가게는 좋은 평판을 갖고 있다." }] },
 
   /* 승격 89 — 사전 글자 유지(call for·demand·entail·necessitate 네 곳). */
-  { word:"require", pron:"리콰이어", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
+  { word:"require", exams:["공무원"], pron:"리콰이어", pos:"v", level:"B1", meanings:["요구하다","필요로 하다"],
     syn:["call for","demand","must have"],
     ex:[{ s:"The job will {{}} long hours.", f:"require", ko:"그 일은 긴 시간을 요구할 것이다." }] },
 
   /* 승격 90 — 사전 글자 유지(necessity, N). */
-  { word:"requirement", pron:"리콰이어먼트", pos:"n", level:"B1", meanings:["요건","필요조건"],
+  { word:"requirement", exams:["공무원"], pron:"리콰이어먼트", pos:"n", level:"B1", meanings:["요건","필요조건"],
     syn:["necessity","thing that must be met","standard one has to reach"],
     ex:[{ s:"Two years of work is a {{}}.", f:"requirement", ko:"2년의 경력이 요건이다." }] },
 
@@ -1170,7 +1180,7 @@ window.VOCAB_R = [
     ex:[{ s:"Nobody would {{}} to the notice.", f:"respond", ko:"아무도 그 공지에 응답하려 하지 않았다." }] },
 
   /* 승격 109 — 사전 단일값 유지(irresponsible 반의어, I). */
-  { word:"responsible", pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
+  { word:"responsible", exams:["공무원"], pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
     syn:["answerable for it","to be trusted with duty","carrying the blame or credit"],
     ant:["irresponsible"],
     ex:[{ s:"She is {{}} for the whole team.", f:"responsible", ko:"그녀는 팀 전체에 책임감 있게 임한다." }] },
@@ -1293,7 +1303,7 @@ window.VOCAB_R = [
        revitalize 활력을 불어넣다 ↔ resuscitate 소생시키다(챕터 11) */
 
   /* 승격 119 — 사전 글자 유지(fetch, F). recover·regain 과 '되찾다' 로 맞물린다. */
-  { word:"retrieve", pron:"리트리브", pos:"v", level:"B2", meanings:["되찾다","회수하다"],
+  { word:"retrieve", exams:["공무원"], pron:"리트리브", pos:"v", level:"B2", meanings:["되찾다","회수하다"],
     syn:["fetch","get back and bring","recover an item"],
     ex:[{ s:"The dog can {{}} the ball.", f:"retrieve", ko:"그 개는 공을 되찾아 올 수 있다." }] },
 
@@ -1303,7 +1313,7 @@ window.VOCAB_R = [
 
   /* 승격 120 — 사전 글자 유지(conceal 반의어, disclose·divulge·expose·manifest
      — 다섯 곳). */
-  { word:"reveal", pron:"리빌", pos:"v", level:"B1", meanings:["드러내다","밝히다"],
+  { word:"reveal", exams:["공무원"], pron:"리빌", pos:"v", level:"B1", meanings:["드러내다","밝히다"],
     syn:["disclose","divulge","bring to light"], ant:["conceal"],
     ex:[{ s:"He would not {{}} the name.", f:"reveal", ko:"그는 그 이름을 밝히려 하지 않았다." }] },
 
@@ -1331,7 +1341,7 @@ window.VOCAB_R = [
     ex:[{ s:"The book got a good {{}}.", f:"review", ko:"그 책은 좋은 비평을 받았다." }] },
 
   /* 승격 125 — 사전 글자 유지(amend, A). 원본의 괄호 두 개를 걷었다. */
-  { word:"revise", pron:"리바이즈", pos:"v", level:"B2", meanings:["수정하다","고치다"],
+  { word:"revise", exams:["공무원"], pron:"리바이즈", pos:"v", level:"B2", meanings:["수정하다","고치다"],
     syn:["amend","go over and change","put right in a new version"],
     ex:[{ s:"We must {{}} the plan.", f:"revise", ko:"우리는 그 계획을 수정해야 한다." }] },
 
@@ -1554,7 +1564,7 @@ window.VOCAB_R = [
     ex:[{ s:"A queen used to {{}} the island.", f:"rule", ko:"여왕이 그 섬을 통치하곤 했다." }] },
 
   /* 승격 143 — 사전 글자 유지(disqualify, D). */
-  { word:"rule out", pron:"룰 아웃", pos:"phr", level:"B2", meanings:["배제하다","제외하다"],
+  { word:"rule out", exams:["공무원"], pron:"룰 아웃", pos:"phr", level:"B2", meanings:["배제하다","제외하다"],
     syn:["disqualify","shut out as impossible","take off the list"] },
 
   /* 승격 144 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. 원본의 괄호
@@ -1584,7 +1594,7 @@ window.VOCAB_R = [
 
   /* 승격 147 — 사전 글자 유지(built-up 반의어, B). 원본의 '지방의' 는 province
      (지방, 주 · P) 와 부딪혀 사전값을 지켰다. */
-  { word:"rural", pron:"루럴", pos:"adj", level:"B1", meanings:["시골의","농촌의"],
+  { word:"rural", exams:["공무원"], pron:"루럴", pos:"adj", level:"B1", meanings:["시골의","농촌의"],
     syn:["of the countryside","away from the city","farming in character"], ant:["built-up"],
     ex:[{ s:"They moved to a {{}} area.", f:"rural", ko:"그들은 시골의 지역으로 옮겼다." }] },
 
@@ -1628,15 +1638,18 @@ Object.assign(window.GLOSS, {
   "allowing no freedom": "자유를 주지 않는",
   "anger held in": "안에 담아 둔 화",
   "animal that gnaws with front teeth": "앞니로 갉아 먹는 짐승",
+  "answer": "대답, 해답",
   "answer a call": "부름에 답하다",
   "answer back": "되받아 답하다",
   "answer with action": "행동으로 답하다",
   "answerable for it": "그 일을 떠맡는",
   "answering move": "되받아 내는 움직임",
+  "anyway": "어쨌든",
   "arise because of": "~ 때문에 생기다",
   "art of persuasive speech": "말로 설득하는 기술",
   "as a preference": "더 좋아서",
   "as it happens": "일어나는 그대로",
+  "ask for": "~을 요청하다",
   "ask to have back": "돌려 달라고 하다",
   "asked for effect": "효과를 노려 묻는",
   "at ease": "마음이 놓인",
@@ -1644,6 +1657,7 @@ Object.assign(window.GLOSS, {
   "atomic pile": "원자로 더미",
   "automatic response": "저절로 나오는 반응",
   "away from the city": "도시에서 떨어진",
+  "awe": "경외감",
   "back up with more": "더 보태어 받치다",
   "bad feeling that lasts": "오래 남는 나쁜 마음",
   "balance between two": "둘 사이의 균형",
@@ -1712,6 +1726,8 @@ Object.assign(window.GLOSS, {
   "coming back together": "다시 한자리에 모임",
   "coming from it": "그것에서 나온",
   "confession of fault": "잘못을 털어놓음",
+  "consign": "밀어내다, 넘겨주다",
+  "consolation": "위안, 위로",
   "copy exactly": "똑같이 옮기다",
   "corner of ninety degrees": "구십 도로 꺾인 모",
   "course of health care": "몸을 돌보는 과정",
@@ -1719,9 +1735,13 @@ Object.assign(window.GLOSS, {
   "crowd running wild": "날뛰는 무리",
   "curb on action": "움직임을 막는 테두리",
   "custom done the same way": "늘 같게 치르는 관습",
+  "cut": "삭감, 인하",
   "cycle of change": "돌고 도는 바뀜",
   "defier of authority": "권위를 거스르는 이",
+  "demote": "강등시키다",
   "dependence on a frame": "기준에 딸림",
+  "disreputable": "평판이 나쁜",
+  "district": "지구, 구역",
   "do over with the same result": "같은 결과로 다시 해내다",
   "do up anew": "새로 손보다",
   "do without doing": "하지 않고 넘기다",
@@ -1729,16 +1749,20 @@ Object.assign(window.GLOSS, {
   "done as usual": "늘 하던 대로 하는",
   "done for fun": "즐기려고 하는",
   "done in outline only": "줄거리만 잡은",
+  "downgrade": "격하시키다, 강등하다",
   "draw away little by little": "조금씩 멀어지다",
   "draw back from battle": "싸움에서 뒤로 빼다",
   "draw breath": "숨을 들이켜다",
   "draw in again": "다시 안으로 당기다",
   "drilling without understanding": "뜻 없이 익히게 함",
   "driving one away": "멀어지게 하는",
+  "duplication": "중복, 복제",
+  "durable": "내구성 있는, 오래가는",
   "dwell in a place": "한 곳에 머물러 살다",
   "dwelling place": "살림 자리",
   "each in turn": "차례차례 저마다",
   "ease a pain": "아픔을 눅이다",
+  "easily": "쉽게, 수월하게",
   "easy bond": "편한 사이",
   "easy in mind": "마음이 편한",
   "eating away of metal": "쇠가 삭아 가는 것",
@@ -1747,6 +1771,7 @@ Object.assign(window.GLOSS, {
   "emitting rays": "빛살을 뿜는",
   "end of working life": "일하는 삶의 끝",
   "end up as": "끝내 ~이 되다",
+  "enlist": "입대시키다, 참여시키다",
   "enter a price at the till": "계산대에 값을 넣다",
   "entry on a list": "명단에 오른 항목",
   "exact copy": "똑같은 것",
@@ -1819,6 +1844,7 @@ Object.assign(window.GLOSS, {
   "good at making do": "있는 것으로 잘 꾸리는",
   "good enough to be proud of": "자랑할 만큼 좋은",
   "government in power": "권력을 쥔 정부",
+  "gratifying": "만족스러운, 흐뭇한",
   "grazing estate": "풀 먹이는 넓은 땅",
   "great repute": "큰 평판",
   "grow back": "다시 자라나다",
@@ -1886,7 +1912,6 @@ Object.assign(window.GLOSS, {
   "large stock farm": "큰 가축 농장",
   "late in coming on": "더디게 나타나는",
   "laugh at cruelly": "모질게 비웃다",
-  "lead to": "~로 이어지다",
   "leaning on another": "남에게 기댐",
   "learning by heart only": "외우기만 하는 배움",
   "leave in a state": "어떤 상태로 두다",
@@ -1962,6 +1987,7 @@ Object.assign(window.GLOSS, {
   "name known far": "멀리까지 알려진 이름",
   "name one has": "지닌 이름",
   "named seat": "이름이 붙은 자리",
+  "national": "국가의, 전국적인",
   "need of support": "받쳐 줄 것이 필요함",
   "never at rest": "도무지 쉬지 못하는",
   "never stopping": "멈추는 일이 없는",
@@ -2036,6 +2062,7 @@ Object.assign(window.GLOSS, {
   "practice for a show": "무대에 앞서 익히다",
   "prize for good work": "잘한 일에 주는 상",
   "produced by the cause": "그 원인이 낳은",
+  "promptly": "즉시, 신속히",
   "punishment deserved": "마땅히 받을 벌",
   "push back an attack": "공격을 밀어내다",
   "put another in place": "다른 것을 대신 놓다",
@@ -2057,10 +2084,12 @@ Object.assign(window.GLOSS, {
   "putting trust in": "믿고 맡김",
   "quick to find a way": "길을 빨리 찾아내는",
   "quiet thought": "조용한 생각",
+  "radioactivity": "방사능",
   "raise young": "새끼를 치다",
   "raised line": "도도록하게 솟은 줄",
   "range far and wide": "멀리까지 돌아다니다",
   "range one has mastered": "익혀 둔 폭",
+  "rays": "광선",
   "read aloud by heart": "외워 소리 내어 읽다",
   "ready to take in": "받아들일 준비가 된",
   "record a sale": "판 것을 적어 넣다",
@@ -2068,12 +2097,20 @@ Object.assign(window.GLOSS, {
   "recover an item": "물건을 찾아 오다",
   "recover hold of": "다시 붙들다",
   "reddish coat on iron": "쇠에 앉은 붉은 껍질",
+  "refill": "리필하다, 다시 채우다",
+  "refurbishment": "새 단장",
   "refusal to take": "받기를 마다함",
   "regard for others": "남을 받드는 마음",
+  "reiteration": "반복해 말하기",
   "relation in number": "수로 본 관계",
+  "remodeling": "리모델링, 개조",
   "renew itself": "스스로 새로워지다",
+  "reorder": "순서를 바꾸다",
+  "reorganize": "재편성하다",
   "repeat of a trial": "시험을 되풀이함",
+  "reprocessable": "재처리 가능한",
   "response to something": "무엇에 대한 응답",
+  "restock": "재입고하다",
   "restore to good order": "멀쩡하게 되돌리다",
   "return for effort": "힘쓴 것에 대한 보답",
   "return in time": "때가 되면 되돌아오다",
@@ -2092,6 +2129,7 @@ Object.assign(window.GLOSS, {
   "ruling set-up": "다스리는 틀",
   "run over it again": "다시 훑어 보다",
   "run-through": "처음부터 훑어 보기",
+  "salvageable": "회수해 쓸 수 있는",
   "save from death": "죽음에서 건져 내다",
   "say from memory": "외운 것을 말하다",
   "say in passing": "지나가듯 말하다",
@@ -2105,6 +2143,7 @@ Object.assign(window.GLOSS, {
   "see at last": "마침내 알아보다",
   "seek office": "공직을 노리다",
   "seldom found": "좀처럼 볼 수 없는",
+  "seller": "판매자",
   "selling to the public": "사람들에게 직접 팖",
   "send back to life": "다시 살아 오게 하다",
   "send onward": "앞으로 보내다",
@@ -2139,6 +2178,7 @@ Object.assign(window.GLOSS, {
   "showing no pity": "딱하게 여기지 않는",
   "showing regard": "받드는 마음을 보이는",
   "showing things as they are": "있는 대로 보여 주는",
+  "shuffle": "뒤섞다, 이리저리 옮기다",
   "shut out as impossible": "안 될 일로 잘라 두다",
   "signing up": "이름을 적어 넣음",
   "silly beyond words": "말도 못 하게 어리석은",
@@ -2233,6 +2273,7 @@ Object.assign(window.GLOSS, {
   "tea and cakes": "차와 과자",
   "teaching by memorizing": "외우게 해서 가르침",
   "tell off sharply": "호되게 이르다",
+  "thankless": "보람 없는, 고마움을 모르는",
   "that nature makes again": "자연이 다시 만드는",
   "that one would undo": "되돌리고 싶은",
   "the other way round": "거꾸로 된",
@@ -2277,12 +2318,14 @@ Object.assign(window.GLOSS, {
   "use up all of": "~을 모두 써 버리다",
   "used in taking air": "공기를 들이는 데 쓰는",
   "utter collapse": "아주 무너짐",
+  "veneration": "숭배, 존경",
   "vessel where reaction runs": "반응이 일어나는 통",
   "violent anger": "거센 노여움",
   "violent disorder": "거친 난장",
   "walls left standing": "남아 선 벽",
   "wander with no aim": "갈 곳 없이 헤매다",
   "warm understanding": "따뜻한 이해",
+  "washable": "세탁 가능한",
   "waste thrown out": "내버린 것",
   "water flowing off land": "땅에서 흘러나가는 물",
   "way things stand between": "서로 놓인 사이",
@@ -2293,6 +2336,7 @@ Object.assign(window.GLOSS, {
   "whisper like dry leaves": "마른 잎처럼 속삭이다",
   "wide fame": "널리 퍼진 이름",
   "widely known": "널리 알려진",
+  "willingly": "기꺼이",
   "win back": "되찾아 오다",
   "win back for use": "되찾아 쓰게 하다",
   "wish one had not": "하지 않았기를 바라다",

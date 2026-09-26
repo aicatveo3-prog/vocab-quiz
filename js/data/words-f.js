@@ -476,6 +476,11 @@ window.VOCAB_F = [
   { word:"favoritism", exams:["공무원"], pron:"페이버리티즘", pos:"n", level:"C1", meanings:["편애","편파"], syn:["bias","partiality","nepotism"], ant:["fairness"], ex:[{ s:"It hands out positions based on {{}}.", f:"favoritism", ko:"그것은 편애에 따라 자리를 나눠준다." }] },
   { word:"fairness", exams:["공무원"], pron:"페어니스", pos:"n", level:"B2", meanings:["공정성"], syn:["justice","equity","impartiality"], ant:["unfairness"], ex:[{ s:"Rewarding merit has the virtue of {{}}.", f:"fairness", ko:"실력을 보상하는 것은 공정성의 미덕을 지닌다." }] },
   { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
+  { word:"familiar", exams:["공무원"], pron:"퍼밀리어", pos:"adj", level:"B1", meanings:["익숙한","친숙한"], syn:["recognizable","known","accustomed"], ant:["unfamiliar","alien"], ex:[{ s:"Traditional tools feel {{}} to most people.", f:"familiar", ko:"전통적인 도구는 대부분의 사람에게 익숙하게 느껴진다." }], gov:{ prep:["with","to"], usage:"be familiar with ~ : ~을 잘 알다 · be familiar to ~ : ~에게 익숙하다" } },
+  { word:"for ages", exams:["공무원"], pron:"포 에이지스", pos:"phr", level:"B2", meanings:["오랫동안","아주 오래"] },
+  { word:"follow up", exams:["공무원"], pron:"팔로 업", pos:"phr", level:"B2", meanings:["후속 조치를 하다","추가로 확인하다"] },
+  { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
+  { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -502,7 +507,7 @@ window.VOCAB_F = [
     syn:["frontage","outward appearance","veneer"],
     ex:[{ s:"The bank kept its old stone {{}} when the inside was rebuilt.", f:"facade", ko:"그 은행은 내부를 다시 지으면서도 오래된 석조 정면을 남겼다." }] },
 
-  { word:"facilitate", pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
+  { word:"facilitate", exams:["공무원"], pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
     syn:["assist","expedite","make easier"],
     ex:[{ s:"A shared language can {{}} trade between neighbors.", f:"facilitate", ko:"공통 언어는 이웃 나라 사이의 교역을 쉽게 할 수 있다." }] },
 
@@ -548,7 +553,7 @@ window.VOCAB_F = [
     ex:[{ s:"He stayed {{}} to the promise he had made years earlier.", f:"faithful", ko:"그는 몇 해 전에 한 약속에 충실했다." }] },
 
   /* meanings 가 한 개인 이유는 이 파일 헤더 '1차 기록' 에 적었다. */
-  { word:"fake", pron:"페이크", pos:"adj", level:"B1", meanings:["가짜의"],
+  { word:"fake", exams:["공무원"], pron:"페이크", pos:"adj", level:"B1", meanings:["가짜의"],
     syn:["counterfeit","phony","sham"], ant:["genuine"],
     ex:[{ s:"Customs officers seized a crate of {{}} watches.", f:"fake", ko:"세관원들이 가짜 시계 한 상자를 압수했다." }] },
 
@@ -728,7 +733,7 @@ window.VOCAB_F = [
      갈래다. 그 셋은 PRON 사전에 있어 pron-audit 의 '-ment → 먼트' 규칙에
      경고로 잡히지만, 표제어의 pron 은 그 규칙이 보지 않으므로 여기서는
      경고가 늘지 않는다(검사 757건, 경고 3건 그대로). */
-  { word:"ferment", pron:"퍼멘트", pos:"v", level:"C1", meanings:["발효시키다"],
+  { word:"ferment", exams:["공무원"], pron:"퍼멘트", pos:"v", level:"C1", meanings:["발효시키다"],
     syn:["turn sour","let rise","undergo fermentation"],
     ex:[{ s:"Cabbage will {{}} in salt water within a week.", f:"ferment", ko:"양배추는 소금물에서 일주일 안에 발효된다." }] },
 
@@ -785,7 +790,7 @@ window.VOCAB_F = [
     syn:["thread","strand","filament"],
     ex:[{ s:"The rope is woven from a tough plant {{}}.", f:"fiber", ko:"그 밧줄은 질긴 식물 섬유로 짜여 있다." }] },
 
-  { word:"fiction", pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
+  { word:"fiction", exams:["공무원"], pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
     syn:["fabrication","made-up story","invented tale"], ant:["fact"],
     ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
 
@@ -834,7 +839,7 @@ window.VOCAB_F = [
     syn:["grimy","squalid","unclean"], ant:["spotless"],
     ex:[{ s:"They refused to work in such a {{}} kitchen.", f:"filthy", ko:"그들은 그렇게 더러운 부엌에서 일하기를 거부했다." }] },
 
-  { word:"financial", pron:"파이낸셜", pos:"adj", level:"B1", meanings:["재정적인","재무의"],
+  { word:"financial", exams:["공무원"], pron:"파이낸셜", pos:"adj", level:"B1", meanings:["재정적인","재무의"],
     syn:["monetary","money-related","budgetary"],
     ex:[{ s:"The club ran into serious {{}} trouble that winter.", f:"financial", ko:"그 클럽은 그해 겨울 심각한 재정적 곤란에 빠졌다." }] },
 
@@ -845,7 +850,7 @@ window.VOCAB_F = [
     syn:["result","conclusion","research outcome"],
     ex:[{ s:"The main {{}} of the study surprised its own authors.", f:"finding", ko:"그 연구의 주요 조사 결과는 저자들 자신을 놀라게 했다." }] },
 
-  { word:"fine", pron:"파인", pos:"n", level:"B2", meanings:["벌금"],
+  { word:"fine", exams:["공무원"], pron:"파인", pos:"n", level:"B2", meanings:["벌금"],
     syn:["penalty","monetary punishment","surcharge"],
     ex:[{ s:"He paid a small {{}} for parking beside the curb.", f:"fine", ko:"그는 인도 옆에 주차한 일로 적은 벌금을 냈다." }] },
 
@@ -896,7 +901,7 @@ window.VOCAB_F = [
      형용사로 두고, 세 자리 모두에서 읽히도록 ["알맞은","건강이 좋은"] 으로
      했다. 기존 사전 뜻 '맞다; 적합한' 은 athletic(몸이 튼튼한) 자리에서
      오히려 약했으므로 이 편이 낫다. */
-  { word:"fit", pron:"핏", pos:"adj", level:"B2", meanings:["알맞은","건강이 좋은"],
+  { word:"fit", exams:["공무원"], pron:"핏", pos:"adj", level:"B2", meanings:["알맞은","건강이 좋은"],
     syn:["suitable","appropriate","in good shape"],
     ex:[{ s:"The old barn is no longer {{}} for storing grain.", f:"fit", ko:"그 낡은 헛간은 더 이상 곡물 보관에 알맞지 않다." }] },
 
@@ -1023,7 +1028,7 @@ window.VOCAB_F = [
      congestion·current 는 명사 쪽으로 쓴다. 기존 사전 뜻이 '흐름, 흐르다' 로
      두 갈래를 함께 담고 있었고, 그대로 옮기면 네 문제가 모두 무변이 된다.
      pos 는 하나만 고를 수 있어 참조가 셋인 명사로 두었다. */
-  { word:"flow", pron:"플로", pos:"n", level:"B1", meanings:["흐름","흐르다"],
+  { word:"flow", exams:["공무원"], pron:"플로", pos:"n", level:"B1", meanings:["흐름","흐르다"],
     syn:["stream","steady movement","running water"],
     ex:[{ s:"Engineers measured the {{}} of the river every week.", f:"flow", ko:"기술자들은 매주 그 강의 흐름을 측정했다." }] },
 
@@ -1368,7 +1373,7 @@ window.VOCAB_F = [
     syn:["realization","coming to pass","successful outcome"],
     ex:[{ s:"The plan came to {{}} after eleven years.", f:"fruition", ko:"그 계획은 11년이 지나 결실을 맺었다." }] },
 
-  { word:"frustrate", pron:"프러스트레이트", pos:"v", level:"B2", meanings:["좌절시키다"],
+  { word:"frustrate", exams:["공무원"], pron:"프러스트레이트", pos:"v", level:"B2", meanings:["좌절시키다"],
     syn:["thwart","foil","block the plans of"],
     ex:[{ s:"Heavy snow will {{}} any attempt on the summit.", f:"frustrate", ko:"폭설은 정상 등반 시도를 좌절시킬 것이다." }] },
 
@@ -1387,7 +1392,7 @@ window.VOCAB_F = [
     syn:["gasoline","combustible material","power source"],
     ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
 
-  { word:"fugitive", pron:"퓨저티브", pos:"n", level:"C1", meanings:["도망자"],
+  { word:"fugitive", exams:["공무원"], pron:"퓨저티브", pos:"n", level:"C1", meanings:["도망자"],
     syn:["runaway","escapee","person on the run"],
     ex:[{ s:"The {{}} was found in a barn two counties away.", f:"fugitive", ko:"그 도망자는 두 군 떨어진 헛간에서 발견되었다." }] },
 
@@ -1409,7 +1414,7 @@ window.VOCAB_F = [
 
   /* function(n)·functional(adj) 은 앞 여섯 글자가 같은 가족이지만 품사가 달라
      갈라진다. 참조하는 표제어가 없어 뜻은 기존 사전 것을 그대로 옮겼다. */
-  { word:"function", pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
+  { word:"function", exams:["공무원"], pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
     syn:["purpose","role","use"],
     ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
 
@@ -1502,32 +1507,57 @@ window.VOCAB_F = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A~E 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차: fable ~ fall off (37개) ───────────────── */
+  "accustomed": "익숙해진",
   "allegory":"풍유, 비유",
   "allow for":"~을 감안하다",
+  "bankroll": "자금을 대 주다",
   "bear in mind":"명심하다, 유념하다",
+  "bottle": "병",
+  "camp": "진영, 편",
   "cloth":"천, 옷감",
+  "comments": "논평, 언급",
   "concoct":"꾸며내다, 조작하다",
   "devoted":"헌신적인, 열성적인",
   "die away":"차츰 사라지다",
+  "disintegration": "붕괴, 해체",
   "disloyal":"불충한, 배신하는",
   "drop back":"뒤로 처지다",
+  "economy": "절약; 경제",
   "even-handed":"공평한",
   "expedite":"신속히 처리하다",
+  "extravagance": "낭비, 사치",
   "falsify":"위조하다, 변조하다",
+  "favored": "혜택받은, 유리한",
+  "ferryboat": "나룻배, 연락선",
   "fictional":"허구의, 소설의",
   "folktale":"민간 설화, 옛이야기",
   "frontage":"건물 정면",
+  "groundwork": "기초 작업, 토대",
+  "gun": "총",
+  "impartiality": "공평함, 치우치지 않음",
   "installation":"설비, 시설물",
+  "inundation": "범람, 쇄도",
+  "known": "알려진",
   "lose color":"색이 바래다",
   "loyal":"충성스러운",
+  "lucky": "행운의, 운 좋은",
   "make easier":"더 쉽게 하다",
   "mental power":"정신적 능력",
+  "nepotism": "족벌주의, 친족 등용",
   "outward appearance":"겉모습, 외관",
   "parable":"우화, 비유담",
+  "partiality": "편파, 치우침",
+  "pistol": "권총",
+  "refreshed": "상쾌한, 기운을 되찾은",
   "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
+  "side": "측면, 면",
+  "system": "체계, 제도",
+  "thrift": "절약, 검약",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",
+  "unfortunate": "불운한",
+  "unification": "통일, 통합",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
 
@@ -1570,7 +1600,9 @@ Object.assign(window.GLOSS, {
   "tiredness":"피곤함",
   "transport cost":"교통비",
   "valve":"밸브",
+  "vial": "약병, 작은 유리병",
   "vigor":"활력, 기운",
+  "weapon": "무기",
   "weariness":"지침, 피곤",
   "working knowledge":"실용적 지식",
   "zealot":"열성분자",
@@ -1599,7 +1631,6 @@ Object.assign(window.GLOSS, {
   "plume":"깃털 장식",
   "practicability":"실행할 수 있음",
   "prenatal":"출생 전의",
-  "pretend":"~인 척하다",
   "productiveness":"생산성",
   "quill":"큰 깃털, 깃대",
   "reproductive capacity":"번식 능력",
@@ -1671,7 +1702,6 @@ Object.assign(window.GLOSS, {
      있어서 여기에 없다. division·appropriate·bumpy·brittle·even 은 표제어다. */
   "balled hand":"움켜쥔 손",
   "blaze up":"확 타오르다",
-  "bounded":"경계가 있는",
   "breaking apart":"쪼개져 갈라짐",
   "butter up":"비위를 맞추다",
   "clenched hand":"꽉 쥔 손",
@@ -1929,7 +1959,6 @@ Object.assign(window.GLOSS, {
   "hoarfrost":"흰 서리",
   "ice crystals":"얼음 결정",
   "knit the brows":"눈살을 모으다",
-  "live up to":"~에 걸맞게 하다",
   "look displeased":"못마땅한 표정을 짓다",
   "mildew":"흰곰팡이",
   "money collecting":"돈을 모으는 일",
@@ -1938,7 +1967,6 @@ Object.assign(window.GLOSS, {
   "person on the run":"쫓기는 사람",
   "power source":"동력을 내는 것",
   "realization":"실현",
-  "rewarding":"보람 있는",
   "runaway":"달아난 사람",
   "serviceable":"쓸 만한",
   "settler":"정착민",
@@ -1961,7 +1989,6 @@ Object.assign(window.GLOSS, {
   "covered in fur":"털로 덮인",
   "deep groove":"깊게 팬 골",
   "enraged":"격노한",
-  "equip":"장비를 갖추다",
   "fit out":"필요한 것을 갖춰 주다",
   "fuzzy-coated":"솜털이 난",
   "give a b":"A에게 B를 주다",
@@ -1975,5 +2002,5 @@ Object.assign(window.GLOSS, {
   "provide a with b":"A에게 B를 마련해 주다",
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
-  "very angry":"매우 화가 난",
+  "very angry":"매우 화가 난"
 });

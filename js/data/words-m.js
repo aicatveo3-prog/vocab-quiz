@@ -61,13 +61,21 @@ window.VOCAB_M = [
   { word:"monopolistic", exams:["공무원"], pron:"모노폴리스틱", pos:"adj", level:"C2", meanings:["독점적인"], syn:["exclusive","controlling","dominating"], ant:["competitive"], ex:[{ s:"Critics said it subjected the Third World to a {{}} capitalism.", f:"monopolistic", ko:"비평가들은 그것이 제3세계를 독점적 자본주의에 종속시켰다고 했다." }] },
   { word:"mortar", exams:["공무원"], pron:"모터", pos:"n", level:"C1", meanings:["회반죽","박격포"], syn:["cement","plaster","render"], ex:[{ s:"The lime {{}} between bricks held the house together.", f:"mortar", ko:"벽돌 사이의 석회 회반죽이 집을 지탱했다." }] },
   { word:"mudslide", exams:["공무원"], pron:"머드슬라이드", pos:"n", level:"C1", meanings:["진흙 사태","이류"], syn:["landslide","mudflow","avalanche"], ex:[{ s:"A {{}} destroyed part of the village.", f:"mudslide", ko:"진흙 사태가 마을의 일부를 파괴했다." }] },
-  { word:"multicellular", exams:["공무원"], pron:"멀티셀룰러", pos:"adj", level:"C2", meanings:["다세포의"], ant:["unicellular"], ex:[{ s:"Complex, {{}} forms evolved over this period.", f:"multicellular", ko:"이 기간에 복잡한 다세포 생물이 진화했다." }] },
+  { word:"multicellular", exams:["공무원"], pron:"멀티셀룰러", pos:"adj", level:"C2", meanings:["다세포의"], ex:[{ s:"Complex, {{}} forms evolved over this period.", f:"multicellular", ko:"이 기간에 복잡한 다세포 생물이 진화했다." }] },
   { word:"mentality", exams:["공무원"], pron:"멘탤리티", pos:"n", level:"C1", meanings:["사고방식","태도"], syn:["mindset","attitude","outlook"], ex:[{ s:"They have a 'can-do' {{}}.", f:"mentality", ko:"그들은 '할 수 있다'는 사고방식을 지녔다." }] },
-  { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로","실력"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 실력에 따라 배분되어야 한다." }] },
+  { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
   { word:"maintain", exams:["공무원"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
+  { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
+  { word:"mankind", exams:["공무원"], pron:"맨카인드", pos:"n", level:"B2", meanings:["인류","인간 전체"], syn:["humanity","humankind","the human race"], ex:[{ s:"Neither skill was of much use to early {{}}.", f:"mankind", ko:"어느 기술도 초기 인류에게는 별 쓸모가 없었다." }] },
+  { word:"moreover", exams:["공무원"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
+  { word:"make strides", exams:["공무원"], pron:"메이크 스트라이즈", pos:"phr", level:"C1", meanings:["큰 진전을 이루다","크게 발전하다"] },
+  { word:"make the most of", exams:["공무원"], pron:"메이크 더 모스트 오브", pos:"phr", level:"B2", meanings:["~을 최대한 활용하다","~을 십분 이용하다"], syn:["get the most out of","take advantage of","capitalize on"] },
+  { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
+  { word:"markedly", exams:["공무원"], pron:"마키들리", pos:"adv", level:"C1", meanings:["현저히","눈에 띄게"], syn:["noticeably","considerably","significantly"], ant:["marginally","slightly"], ex:[{ s:"The two reports differ so {{}} that they seem to describe different events.", f:"markedly", ko:"두 보고서는 너무나 현저히 달라서 서로 다른 사건을 다룬 것처럼 보인다." }] },
+  { word:"municipality", exams:["공무원"], pron:"뮤니서팰러티", pos:"n", level:"C1", meanings:["지방 자치 단체","시 당국"], ex:[{ s:"Each {{}} runs its own recycling program.", f:"municipality", ko:"지방 자치 단체마다 자체 재활용 프로그램을 운영한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -219,7 +227,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '조종하다, 조작하다' 가 원본과 글자까지 같다.
      brainwash(syn) 가 참조한다. */
-  { word:"manipulate", pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
+  { word:"manipulate", exams:["공무원"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
     syn:["brainwash","exploit","control"],
     ex:[{ s:"Advertisers try to {{}} what we want.", f:"manipulate", ko:"광고주는 우리가 원하는 것을 조종하려 한다." }] },
 
@@ -334,7 +342,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다량; 질량' 을 글자까지 지켰다. bulk(syn)·lump(syn) 두 문제가
      참조한다. 원본 첫 뜻 '덩어리' 를 쓰면 L 세트 lump·C 세트 cluster 와 첫 뜻이
      같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"mass", pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
+  { word:"mass", exams:["공무원"], pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
     syn:["bulk","lump","quantity"],
     ex:[{ s:"A {{}} of paperwork arrived that morning.", f:"mass", ko:"그날 아침 다량의 서류가 도착했다." }] },
 
@@ -367,7 +375,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
      문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
-  { word:"material", pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
+  { word:"material", exams:["공무원"], pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
     /* ★ syn 의 "stuff" 를 "raw stuff for making" 으로 바꿨다. stuff 는 S 세트에서
        동사 '채우다' 로 선다 — 명사 목록에 동사가 끼게 된다. 남은 "substance" 도
        S 세트 낱말이지만 명사 '물질, 본질' 로 서므로 그대로 두어도 맞는다. */
@@ -386,7 +394,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '문제; 물질' 을 글자까지 지켰다. content(syn) 가 참조한다.
      원본의 '일' 은 '문제' 와 같은 갈래이고, 동사 갈래('중요하다')는 pos 가 n 이라 뺐다. */
-  { word:"matter", pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
+  { word:"matter", exams:["공무원"], pron:"매터", pos:"n", level:"B1", meanings:["문제","물질"],
     syn:["issue","affair","substance"],
     ex:[{ s:"We need to settle this {{}} before Friday.", f:"matter", ko:"우리는 금요일 전에 이 문제를 해결해야 한다." }] },
 
@@ -406,7 +414,7 @@ window.VOCAB_M = [
     ex:[{ s:"He lived by the old {{}} that haste makes waste.", f:"maxim", ko:"그는 서두르면 일을 망친다는 옛 격언대로 살았다." }] },
 
   /* maxim 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"maximize", pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
+  { word:"maximize", exams:["공무원"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
     syn:["optimize","boost to the full","get the most out of"], ant:["minimize"],
     ex:[{ s:"The layout is designed to {{}} natural light.", f:"maximize", ko:"그 배치는 자연광을 극대화하도록 설계되었다." }] },
 
@@ -436,7 +444,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수단, 방법' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
      뒤 챕터의 method 는 '방법, 수법' 이라 첫 뜻이 갈린다. */
-  { word:"means", pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
+  { word:"means", exams:["공무원"], pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
     syn:["method","way","instrument"],
     ex:[{ s:"Email became the main {{}} of contact.", f:"means", ko:"이메일이 주된 연락 수단이 되었다." }] },
 
@@ -461,7 +469,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '측정하다; 조치' 를 글자까지 지켰다. 참조가 3곳
      (criterion·dose·gauge)이라 그대로 두었다. 원본의 '척도' 는 '조치' 와 다른
      갈래지만 참조가 쓰는 쪽이 사전이라 사전을 따랐다. */
-  { word:"measure", pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
+  { word:"measure", exams:["공무원"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
     syn:["gauge","quantify","assess"],
     ex:[{ s:"Scientists {{}} the ice thickness every spring.", f:"measure", ko:"과학자들은 매년 봄 얼음 두께를 측정한다." }] },
 
@@ -484,7 +492,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기제, 장치' 와 같은 갈래다. 참조도 PRON 도 없어 원본의
      '기계 장치' 를 첫 자리에 두고 '부품' 대신 사전의 '기제' 를 살렸다. */
-  { word:"mechanism", pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
+  { word:"mechanism", exams:["공무원"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
     syn:["device","workings","contrivance"],
     ex:[{ s:"The locking {{}} had jammed completely.", f:"mechanism", ko:"잠금 기계 장치가 완전히 걸려 버렸다." }] },
 
@@ -577,13 +585,13 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
      참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
-  { word:"mental", pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+  { word:"mental", exams:["공무원"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
     syn:["cognitive","psychological","intellectual"], ant:["physical"],
     ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
 
   /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
      원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
-  { word:"mention", pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+  { word:"mention", exams:["공무원"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
     syn:["cite","refer to","bring up"],
     ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
 
@@ -667,7 +675,7 @@ window.VOCAB_M = [
      4차에서 means 의 유의어로 쓰려고 PRON 을 임시로 넣어 두었는데, 여기서
      표제어가 되면서 그 항목이 지워지고 이 pron 필드가 대신한다.
      챕터 2의 manner('방식')·챕터 4의 means('수단')와 첫 뜻이 갈린다. */
-  { word:"method", pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
+  { word:"method", exams:["공무원"], pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
     syn:["approach","technique","procedure"],
     ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
 
@@ -684,7 +692,7 @@ window.VOCAB_M = [
     syn:["decimal","metre-based","standardized"],
     ex:[{ s:"Most countries use the {{}} system.", f:"metric", ko:"대부분의 나라가 미터법 체계를 쓴다." }] },
 
-  { word:"metropolitan", pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
+  { word:"metropolitan", exams:["공무원"], pron:"메트러팔러턴", pos:"adj", level:"B2", meanings:["대도시의","수도의"],
     syn:["urban","city-wide","municipal"],
     ex:[{ s:"The {{}} area holds nine million people.", f:"metropolitan", ko:"그 대도시권에는 900만 명이 산다." }] },
 
@@ -726,7 +734,7 @@ window.VOCAB_M = [
      emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
      원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
      같아지는 것도 함께 피할 수 있다. */
-  { word:"mimic", pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+  { word:"mimic", exams:["공무원"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
@@ -1058,7 +1066,7 @@ window.VOCAB_M = [
     syn:["sole control","exclusive rights","market corner"],
     ex:[{ s:"The firm held a near {{}} on rail freight.", f:"monopoly", ko:"그 회사는 철도 화물에 거의 독점을 쥐고 있었다." }] },
 
-  { word:"monotonous", pron:"머나터너스", pos:"adj", level:"B2", meanings:["단조로운","변화 없는"],
+  { word:"monotonous", exams:["공무원"], pron:"머나터너스", pos:"adj", level:"B2", meanings:["단조로운","변화 없는"],
     syn:["repetitive","tedious","unvarying"], ant:["varied"],
     ex:[{ s:"The work was safe but utterly {{}}.", f:"monotonous", ko:"그 일은 안전했지만 아주 단조로웠다." }] },
 
@@ -1085,7 +1093,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '도덕적인; 교훈' 을 글자까지 지켰다. 참조가 3곳
      (ethical·immoral(ant)·lesson)이고 뒤 둘은 I·L 세트 표제어다.
      원본은 '도덕적인' 한 갈래인데 갈래를 줄이면 그 세 곳이 바뀌므로 그대로 두었다. */
-  { word:"moral", pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
+  { word:"moral", exams:["공무원"], pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
     syn:["ethical","principled","upright"], ant:["immoral"],
     ex:[{ s:"She felt a {{}} duty to speak up.", f:"moral", ko:"그녀는 목소리를 낼 도덕적 의무를 느꼈다." }] },
 
@@ -1119,7 +1127,7 @@ window.VOCAB_M = [
 
   /* mortal 과 앞 네 글자가 같지만 어근이 갈리고 품사도 달라(adj/n)
      같은 보드에 안 온다. 원본의 동사 갈래('담보로 넣다')는 pos 가 n 이라 뺐다. */
-  { word:"mortgage", pron:"모기지", pos:"n", level:"C1", meanings:["융자","저당"],
+  { word:"mortgage", exams:["공무원"], pron:"모기지", pos:"n", level:"C1", meanings:["융자","저당"],
     syn:["home loan","property loan","secured debt"],
     ex:[{ s:"They took out a thirty-year {{}} on the flat.", f:"mortgage", ko:"그들은 그 아파트에 30년 융자를 받았다." }] },
 
@@ -1147,7 +1155,7 @@ window.VOCAB_M = [
     ex:[{ s:"Fear is a poor long-term {{}}.", f:"motivator", ko:"두려움은 장기적으로 좋지 않은 동기 부여 요인이다." }] },
 
   /* 원본 셋째 갈래 '주제' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"motive", pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
+  { word:"motive", exams:["공무원"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
     syn:["reason","grounds","rationale"],
     ex:[{ s:"Police could find no clear {{}} for the theft.", f:"motive", ko:"경찰은 그 절도의 명확한 동기를 찾을 수 없었다." }] },
 
@@ -1184,7 +1192,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다수의, 복합적인' 을 글자까지 지켰다. complex(syn) 가
      참조하므로 원본의 순서('복합의' 가 앞)가 아니라 사전 쪽을 남겼다.
      원본 셋째 갈래 '배수의' 는 뺐다. */
-  { word:"multiple", pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
+  { word:"multiple", exams:["공무원"], pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
     syn:["complex","numerous","manifold"], ant:["single"],
     ex:[{ s:"The patient suffered {{}} injuries in the crash.", f:"multiple", ko:"그 환자는 사고로 다수의 부상을 입었다." }] },
 
@@ -1284,9 +1292,11 @@ Object.assign(window.GLOSS, {
   "adage": "오래된 격언",
   "add up": "앞뒤가 맞다",
   "adviser": "조언해 주는 사람",
+  "ages": "오랜 세월",
   "appreciable": "느낄 만한",
   "arbitrate": "조정을 맡다",
   "archaic": "옛 시대의",
+  "armed force": "무장 병력, 군대",
   "arrive in time": "시간에 맞춰 닿다",
   "as a rule": "보통은",
   "at the same time": "동시에",
@@ -1296,6 +1306,7 @@ Object.assign(window.GLOSS, {
   "audio-visual": "소리와 영상의",
   "aware": "알고 있는",
   "bad conduct": "나쁜 처신",
+  "bazaar": "시장, 바자",
   "be logical": "논리에 맞다",
   "behave badly": "행동이 나쁘다",
   "bewail": "한탄하다",
@@ -1310,8 +1321,10 @@ Object.assign(window.GLOSS, {
   "book ahead": "미리 예약하다",
   "boost to the full": "최대로 끌어올리다",
   "brawny": "체격이 다진",
+  "capitalize on": "~을 기회로 삼다",
   "casting frame": "주조하는 틀",
   "catchphrase": "귀에 남는 문구",
+  "cement": "시멘트",
   "charged": "전하를 띤",
   "chemical unit": "화학 단위",
   "childbearing": "아이를 낳는",
@@ -1338,6 +1351,7 @@ Object.assign(window.GLOSS, {
   "conjurer": "요술쟁이",
   "contemplation": "깊이 헤아림",
   "contrivance": "고안된 장치",
+  "controlling": "지배하는, 통제하는",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
   "cross-border": "국경을 넘는",
@@ -1346,23 +1360,27 @@ Object.assign(window.GLOSS, {
   "crown": "왕권",
   "crowned head": "왕관을 쓴 이",
   "crowning work": "최고의 성취작",
+  "danger zone": "위험 지대",
   "decimal": "십진법의",
   "delivery nurse": "분만 담당 간호사",
+  "demerit": "단점, 결점",
   "derisive": "비웃는",
+  "disadvantaged": "혜택받지 못한, 불우한",
   "disorderly": "어수선한",
   "do several things at once": "여러 일을 한꺼번에 하다",
   "draw off": "빼내다",
   "drug treatment": "약물 요법",
-  "echo": "되울리다",
   "energy turnover": "에너지 순환량",
   "energy-processing": "에너지를 처리하는",
   "enigmatic": "속을 알기 어려운",
   "enrage": "분노하게 하다",
+  "eons": "영겁, 무한히 긴 세월",
   "error": "잘못된 것",
   "ethnically diverse": "민족 구성이 다양한",
   "evangelist": "복음 전도자",
   "even-tempered": "성정이 고른",
   "exasperate": "속을 뒤집어 놓다",
+  "excluded": "배제된",
   "exclusive rights": "배타적 권리",
   "failure to grasp": "알아듣지 못함",
   "falling star": "떨어지는 별",
@@ -1397,7 +1415,6 @@ Object.assign(window.GLOSS, {
   "grow in number": "수가 늘어나다",
   "grown-up": "다 자란",
   "hand-operated": "손으로 조작하는",
-  "hands-on": "직접 손을 쓰는",
   "heavy metal": "중금속",
   "heedful": "주의를 기울이는",
   "hermit": "은수자",
@@ -1409,7 +1426,9 @@ Object.assign(window.GLOSS, {
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
+  "humdrum": "단조로운, 따분한",
   "husband's mother": "남편의 어머니",
+  "ill-advised": "경솔한, 현명하지 못한",
   "ill-judged": "판단이 어긋난",
   "ill-natured": "성질이 나쁜",
   "ill-treat": "부당하게 대하다",
@@ -1457,6 +1476,7 @@ Object.assign(window.GLOSS, {
   "middle ground": "중간 지점",
   "middling": "중간 정도의",
   "millennial period": "천년의 기간",
+  "millenniums": "천 년 단위의 세월",
   "mindfulness": "마음을 살피는 일",
   "misconduct": "부정 행위",
   "mishandle": "잘못 다루다",
@@ -1464,6 +1484,7 @@ Object.assign(window.GLOSS, {
   "misinformed": "잘못 전해 들은",
   "misjudge": "잘못 판단하다",
   "mislay": "어디 뒀는지 잊다",
+  "misled": "오도된, 속은",
   "misreading": "잘못 읽어 냄",
   "mistranslation": "잘못된 번역",
   "mix freely": "자유롭게 섞이다",
@@ -1475,32 +1496,31 @@ Object.assign(window.GLOSS, {
   "mouth quietly": "입만 움직여 조용히 말하다",
   "movability": "움직일 수 있음",
   "movable": "옮길 수 있는",
+  "mudflow": "이류, 진흙 흐름",
   "muster": "소집하다",
   "naughtiness": "장난기",
-  "navigate": "길을 찾아 나아가다",
   "neat": "깔끔한",
   "non-automatic": "자동이 아닌",
   "nothing more than": "~에 지나지 않는",
+  "noticeably": "눈에 띄게",
   "nurturing": "보살피는",
   "oblivious": "까맣게 모르는",
-  "observer": "지켜보는 사람",
-  "obsession": "집착",
   "obstetric": "산과의",
   "obstetric nurse": "산과 간호사",
   "old-world": "옛 정취의",
   "one-man act": "혼자 하는 공연",
   "one-partner union": "한 상대와의 결합",
-  "optimize": "최적화하다",
   "ore": "광석",
   "original copy": "원본",
   "painstakingly": "공들여",
   "pair bonding": "짝 결속",
   "pair off": "둘씩 짝지다",
   "paltry": "쥐꼬리만 한",
+  "paramilitary": "준군사 조직",
   "paternal": "아버지의",
   "pecuniary": "금전에 관한",
   "pith": "속심",
-  "play down": "대수롭지 않게 말하다",
+  "plaster": "석고, 회반죽",
   "play up": "말썽을 부리다",
   "pluralistic": "여러 갈래가 공존하는",
   "polarized": "극을 띤",
@@ -1517,6 +1537,7 @@ Object.assign(window.GLOSS, {
   "pry": "엿보며 캐다",
   "pull it off": "끝내 해내다",
   "put in the wrong place": "엉뚱한 곳에 두다",
+  "quagmire": "수렁, 곤경",
   "qualm": "꺼림칙함",
   "quantifiable": "수치로 잴 수 있는",
   "quicksilver": "수은",
@@ -1538,6 +1559,7 @@ Object.assign(window.GLOSS, {
   "self-defense skill": "호신 기술",
   "shape in a mold": "틀에 넣어 모양을 만들다",
   "shooting star": "별똥별",
+  "sidelined": "뒷전으로 밀린",
   "signify": "나타내다",
   "silent": "소리를 내지 않는",
   "sinew": "힘줄",
@@ -1573,21 +1595,20 @@ Object.assign(window.GLOSS, {
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",
   "team spirit": "단결심",
-  "technique": "기법",
-  "template": "본뜨는 판",
   "ten centuries": "10세기 동안",
   "thaw": "얼음이 풀리다",
   "the few": "소수의 사람들",
+  "the human race": "인류",
   "thousand years": "천 해",
   "trace element": "미량 원소",
   "trace nutrient": "미량 영양 성분",
   "trader": "거래하는 사람",
+  "trading place": "거래 장소",
   "turn out in bulk": "한꺼번에 많이 만들다",
   "typescript": "타자 원고",
   "undernourishment": "영양 부족",
   "underrepresented group": "대표성이 낮은 집단",
   "unhappy": "행복하지 않은",
-  "unmanned": "무인의",
   "unpretentious": "잘난 척하지 않는",
   "untidy": "정돈되지 않은",
   "unvarying": "한결같이 똑같은",
@@ -1602,6 +1623,7 @@ Object.assign(window.GLOSS, {
   "virtuoso": "명인",
   "vitamin or mineral": "비타민이나 무기물",
   "vocal": "목소리를 내는",
+  "volunteers": "의용군, 자원자들",
   "wail": "울부짖다",
   "watchword": "표어처럼 쓰는 말",
   "way": "방식",
@@ -1618,7 +1640,7 @@ Object.assign(window.GLOSS, {
   "wordless": "말이 없는",
   "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
-  "workings": "작동 구조",
+  "worth": "가치, 값어치",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
   "wrongdoing": "비행, 부정"

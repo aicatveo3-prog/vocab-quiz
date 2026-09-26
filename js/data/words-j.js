@@ -25,6 +25,8 @@
 window.VOCAB_J = [
   { word:"jewelry", exams:["공무원"], pron:"주얼리", pos:"n", level:"B2", meanings:["보석류","장신구"], syn:["jewels","ornaments","trinkets"], ex:[{ s:"Evans found a trove of {{}} and pottery.", f:"jewelry", ko:"에번스는 보석류와 도기가 담긴 보물 더미를 발견했다." }] },
   { word:"journalist", exams:["공무원"], pron:"저널리스트", pos:"n", level:"B2", meanings:["기자","언론인"], syn:["reporter","correspondent","columnist"], ex:[{ s:"Foreign {{}} hope to cover as much news as possible.", f:"journalists", ko:"외국 기자들은 가능한 한 많은 뉴스를 취재하기를 바란다." }] },
+  { word:"judgmental", exams:["공무원"], pron:"저지멘털", pos:"adj", level:"C1", meanings:["비판적인","쉽게 단정하는"], syn:["critical","disapproving","censorious"], ex:[{ s:"Try not to be {{}} when others share their problems.", f:"judgmental", ko:"다른 사람이 고민을 털어놓을 때 함부로 판단하지 않도록 하라." }] },
+  { word:"just in case", exams:["공무원"], pron:"저스트 인 케이스", pos:"phr", level:"B1", meanings:["만일을 대비해","혹시 모르니"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"janitor", pron:"재너터", pos:"n", level:"B2", meanings:["경비","관리인"],
@@ -104,7 +106,7 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '정당화하다, 설명하다' 를 글자까지 지켰다. account for(syn) 가
      참조하므로 원본의 '해명하다' 대신 사전 쪽 '설명하다' 를 남겼다.
      justice 와 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"justify", pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
+  { word:"justify", exams:["공무원"], pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
     syn:["account for","defend","vindicate"],
     ex:[{ s:"Nothing can {{}} cruelty on that scale.", f:"justify", ko:"어떤 것도 그 정도 규모의 잔인함을 정당화할 수 없다." }] },
 
@@ -123,19 +125,22 @@ Object.assign(window.GLOSS, {
   "adolescent": "사춘기의",
   "caretaker": "시설 관리인",
   "castoffs": "버려진 물건",
+  "censorious": "비난하기 좋아하는",
+  "columnist": "칼럼니스트",
   "court-related": "법정에 관한",
   "custodian": "관리 책임자",
   "doorkeeper": "문지기",
-  "equitable": "형평에 맞는",
   "equity": "형평, 공평",
-  "fairness": "공정함",
+  "jewels": "보석들",
   "juridical": "법률상의",
   "lingo": "특수 용어",
   "news media": "보도 매체",
   "odds and ends": "잡동사니",
+  "ornaments": "장식품",
   "righteousness": "의로움",
   "rightful": "정당한 권리의",
   "technical language": "기술 언어",
   "the press": "언론계",
+  "trinkets": "싸구려 장신구",
   "vindicate": "정당함을 입증하다"
 });

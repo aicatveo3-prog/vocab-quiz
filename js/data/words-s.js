@@ -44,13 +44,13 @@ window.VOCAB_S = [
   { word:"serially", exams:["공무원"], pron:"시리얼리", pos:"adv", level:"C1", meanings:["연속적으로","차례로"], syn:["sequentially","consecutively","in sequence"], ant:["simultaneously"], ex:[{ s:"Negotiate multiple issues at once, not {{}}.", f:"serially", ko:"여러 사안을 차례로가 아니라 한꺼번에 협상하라." }] },
   { word:"sheepishly", exams:["공무원"], pron:"쉬피쉬리", pos:"adv", level:"C2", meanings:["멋쩍게","수줍어하며"], syn:["bashfully","timidly","awkwardly"], ant:["boldly"], ex:[{ s:"{{}}, he brought the stone to an experienced miner.", f:"Sheepishly", ko:"멋쩍게 그는 그 돌을 경험 많은 광부에게 가져갔다." }] },
   { word:"simulation", exams:["공무원"], pron:"시뮬레이션", pos:"n", level:"B2", meanings:["모의실험","시뮬레이션"], syn:["imitation","reproduction","model"], ex:[{ s:"The training used a computer {{}} of the crash.", f:"simulation", ko:"그 훈련은 충돌의 컴퓨터 시뮬레이션을 사용했다." }] },
-  { word:"skeletal", exams:["공무원"], pron:"스켈레털", pos:"adj", level:"C1", meanings:["골격의","뼈대의"], syn:["bony","osseous"], ex:[{ s:"Adrenaline tenses the {{}} muscles to react to threat.", f:"skeletal", ko:"아드레날린은 위협에 반응하도록 골격근을 긴장시킨다." }] },
+  { word:"skeletal", exams:["공무원"], pron:"스켈레털", pos:"adj", level:"C1", meanings:["골격의","앙상한"], syn:["bony","emaciated","gaunt","skinny"], ex:[{ s:"Adrenaline tenses the {{}} muscles to react to threat.", f:"skeletal", ko:"아드레날린은 위협에 반응하도록 골격근을 긴장시킨다." }] },
   { word:"smokehouse", exams:["공무원"], pron:"스모크하우스", pos:"n", level:"C2", meanings:["훈제장","훈제실"], ex:[{ s:"They smoked their catch in racks and {{}}.", f:"smokehouses", ko:"그들은 잡은 것을 선반과 훈제장에서 훈제했다." }] },
-  { word:"socialism", exams:["공무원"], pron:"소셜리즘", pos:"n", level:"C1", meanings:["사회주의"], ant:["capitalism"], ex:[{ s:"{{}} was on the retreat in the late twentieth century.", f:"Socialism", ko:"20세기 후반 사회주의는 후퇴하고 있었다." }] },
+  { word:"socialism", exams:["공무원"], pron:"소셜리즘", pos:"n", level:"C1", meanings:["사회주의"], ex:[{ s:"{{}} was on the retreat in the late twentieth century.", f:"Socialism", ko:"20세기 후반 사회주의는 후퇴하고 있었다." }] },
   { word:"sophistication", exams:["공무원"], pron:"소피스티케이션", pos:"n", level:"C1", meanings:["정교함","세련됨"], syn:["complexity","refinement","finesse"], ant:["simplicity"], ex:[{ s:"Human language exhibits a degree of {{}}.", f:"sophistication", ko:"인간 언어는 상당한 정교함을 보인다." }] },
   { word:"speciation", exams:["공무원"], pron:"스피시에이션", pos:"n", level:"C2", meanings:["종 분화","종 형성"], ex:[{ s:"The natural process of {{}} generates new species.", f:"speciation", ko:"종 분화라는 자연 과정이 새로운 종을 만들어 낸다." }] },
   { word:"standardization", exams:["공무원"], pron:"스탠더다이제이션", pos:"n", level:"C1", meanings:["표준화"], syn:["normalization","uniformity","regulation"], ex:[{ s:"Online sharing boosted the need for advertising {{}}.", f:"standardization", ko:"온라인 공유는 광고 표준화의 필요를 키웠다." }] },
-  { word:"start-up", exams:["공무원"], pron:"스타트업", pos:"n", level:"B2", meanings:["신생 기업","창업"], syn:["new venture","fledgling firm"], ex:[{ s:"The troubles are typical of any {{}} operation.", f:"start-up", ko:"그 문제들은 어느 신생 사업에나 흔하다." }] },
+  { word:"start-up", exams:["공무원"], pron:"스타트업", pos:"n", level:"B2", meanings:["신생 기업","창업"], syn:["new venture","fledgling firm","new business"], ex:[{ s:"The troubles are typical of any {{}} operation.", f:"start-up", ko:"그 문제들은 어느 신생 사업에나 흔하다." }] },
   { word:"stressor", exams:["공무원"], pron:"스트레서", pos:"n", level:"C1", meanings:["스트레스 요인"], syn:["strain","pressure","trigger"], ex:[{ s:"Daily work {{}} take their toll on employees.", f:"stressors", ko:"매일의 업무 스트레스 요인이 직원들에게 타격을 준다." }] },
   { word:"stylistic", exams:["공무원"], pron:"스타일리스틱", pos:"adj", level:"C1", meanings:["문체의","양식의"], ex:[{ s:"Most popular music owes its {{}} roots to jazz.", f:"stylistic", ko:"대부분의 대중음악은 그 양식적 뿌리를 재즈에 두고 있다." }] },
   { word:"stupidity", exams:["공무원"], pron:"스투피디티", pos:"n", level:"B2", meanings:["어리석음"], syn:["foolishness","folly","idiocy"], ant:["intelligence"], ex:[{ s:"They began to equate failure with {{}}.", f:"stupidity", ko:"그들은 실패를 어리석음과 동일시하기 시작했다." }] },
@@ -58,11 +58,11 @@ window.VOCAB_S = [
   { word:"suite", exams:["공무원"], pron:"스위트", pos:"n", level:"B2", meanings:["스위트룸","한 벌"], syn:["set","apartment","series"], ex:[{ s:"We offer two room types: the deluxe room and the luxury {{}}.", f:"suite", ko:"우리는 디럭스룸과 럭셔리 스위트 두 종류를 제공한다." }] },
   { word:"swarm", exams:["공무원"], pron:"스웜", pos:"n", level:"C1", meanings:["무리","떼"], syn:["throng","horde","multitude"], ex:[{ s:"Old Town cannot escape the perpetual {{}} of tourists.", f:"swarm", ko:"올드타운은 끊임없는 관광객 무리를 피할 수 없다." }] },
   { word:"salary", exams:["공무원"], pron:"샐러리", pos:"n", level:"B1", meanings:["급여","봉급"], syn:["pay","wage","income"], ex:[{ s:"Some staff who are paid a {{}} were underpaid.", f:"salary", ko:"급여를 받는 일부 직원은 적게 받았다." }] },
-  { word:"security", exams:["공무원"], pron:"시큐리티", pos:"n", level:"B1", meanings:["안보","보안","안전"], syn:["safety","protection","defense"], ex:[{ s:"Young farmers help ensure food {{}}.", f:"security", ko:"젊은 농부들은 식량 안보를 보장하는 데 이바지한다." }] },
+  { word:"security", exams:["공무원"], pron:"시큐리티", pos:"n", level:"B1", meanings:["안보","안전"], syn:["safety","protection","defense"], ex:[{ s:"Young farmers help ensure food {{}}.", f:"security", ko:"젊은 농부들은 식량 안보를 보장하는 데 이바지한다." }] },
   { word:"situational", exams:["공무원"], pron:"시추에이셔널", pos:"adj", level:"C1", meanings:["상황의","상황에 따른"], syn:["contextual","circumstantial","conditional"], ex:[{ s:"Maintain a level of {{}} awareness while driving.", f:"situational", ko:"운전 중에는 상황 인식을 유지하라." }] },
   { word:"safeguard", exams:["공무원"], pron:"세이프가드", pos:"v", level:"C1", meanings:["보호하다","지키다"], syn:["protect","defend","shield"], ant:["endanger"], ex:[{ s:"We must {{}} workers' rights.", f:"safeguard", ko:"우리는 근로자의 권리를 보호해야 한다." }] },
   { word:"skateboard", exams:["공무원"], pron:"스케이트보드", pos:"v", level:"B1", meanings:["스케이트보드를 타다"], ex:[{ s:"He broke his arm while {{}}.", f:"skateboarding", ko:"그는 스케이트보드를 타다가 팔이 부러졌다." }] },
-  { word:"specialist", exams:["공무원"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
+  { word:"specialist", exams:["공무원"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가","전문의"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
   { word:"speculation", exams:["공무원"], pron:"스페큘레이션", pos:"n", level:"C1", meanings:["추측","짐작"], syn:["conjecture","guesswork","supposition"], ant:["fact"], ex:[{ s:"The report was based on {{}} rather than evidence.", f:"speculation", ko:"그 보고서는 증거보다 추측에 근거했다." }] },
   { word:"stomach", exams:["공무원"], pron:"스터먹", pos:"n", level:"B1", meanings:["위","배"], syn:["belly","abdomen","tummy"], ex:[{ s:"It is hard to focus on an empty {{}}.", f:"stomach", ko:"빈속으로는 집중하기 어렵다." }] },
   { word:"strength", exams:["공무원"], pron:"스트렝쓰", pos:"n", level:"B1", meanings:["힘","강점"], syn:["power","force","asset"], ant:["weakness"], ex:[{ s:"Each system has its own {{}} and weaknesses.", f:"strengths", ko:"각 체계에는 저마다의 강점과 약점이 있다." }] },
@@ -71,6 +71,23 @@ window.VOCAB_S = [
   { word:"summarize", exams:["공무원"], pron:"서머라이즈", pos:"v", level:"B2", meanings:["요약하다"], syn:["sum up","recap","condense"], ex:[{ s:"The bot can read and {{}} emails.", f:"summarize", ko:"그 봇은 이메일을 읽고 요약할 수 있다." }] },
   { word:"surrounding", exams:["공무원"], pron:"서라운딩", pos:"adj", level:"B2", meanings:["주위의","인근의"], syn:["nearby","adjacent","neighboring"], ex:[{ s:"There are no impacts to utilities in the {{}} area.", f:"surrounding", ko:"인근 지역의 공공 설비에는 영향이 없다." }] },
   { word:"sensitivity", exams:["공무원"], pron:"센서티비티", pos:"n", level:"B2", meanings:["민감성","감수성"], syn:["responsiveness","awareness","perceptiveness"], ant:["insensitivity"], ex:[{ s:"Language can refine our visual {{}} to color.", f:"sensitivity", ko:"언어는 색에 대한 우리의 시각적 민감성을 정교하게 다듬을 수 있다." }] },
+  { word:"sample", exams:["공무원"], pron:"샘플", pos:"v", level:"B2", meanings:["표본을 채취하다","맛보다"], syn:["test","taste","try"], ex:[{ s:"Scientists use robots to {{}} water from the deep sea.", f:"sample", ko:"과학자들은 로봇을 이용해 심해의 물을 채취한다." }] },
+  { word:"seasonal", exams:["공무원"], pron:"시즈널", pos:"adj", level:"B2", meanings:["계절의","계절에 따른"], ex:[{ s:"The city will explain its {{}} water rate changes.", f:"seasonal", ko:"시는 계절에 따른 수도 요금 변경을 설명할 것이다." }] },
+  { word:"sensor", exams:["공무원"], pron:"센서", pos:"n", level:"B2", meanings:["감지기","센서"], ex:[{ s:"AUVs carry cameras, sonar, and depth {{}}.", f:"sensors", ko:"AUV는 카메라, 음파 탐지기, 수심 센서를 싣고 다닌다." }] },
+  { word:"shape", exams:["공무원"], pron:"셰이프", pos:"v", level:"B1", meanings:["형성하다","영향을 미치다"], syn:["form","influence","define"], ex:[{ s:"We work together to {{}} a secure energy future.", f:"shape", ko:"우리는 안전한 에너지 미래를 만들어 가기 위해 협력한다." }] },
+  { word:"shun", exams:["공무원"], pron:"션", pos:"v", level:"C1", meanings:["피하다","멀리하다"], syn:["avoid","keep away from","steer clear of"], ant:["embrace"], ex:[{ s:"Many young workers {{}} traditional career paths.", f:"shun", ko:"많은 젊은 직장인이 전통적인 경력 경로를 기피한다." }] },
+  { word:"source", exams:["공무원"], pron:"소스", pos:"n", level:"B1", meanings:["원천","출처"], syn:["origin","root","wellspring"], ex:[{ s:"We should use renewable {{}} to generate electricity.", f:"sources", ko:"우리는 전기를 생산하는 데 재생 가능한 에너지원을 써야 한다." }] },
+  { word:"spacious", exams:["공무원"], pron:"스페이셔스", pos:"adj", level:"B2", meanings:["넓은","널찍한"], syn:["roomy","ample","capacious"], ant:["cramped"], ex:[{ s:"We expect more guests, so we need a more {{}} venue.", f:"spacious", ko:"손님이 더 올 것으로 예상되니 더 넓은 장소가 필요하다." }] },
+  { word:"stand for", exams:["공무원"], pron:"스탠드 포", pos:"phr", level:"B1", meanings:["~을 나타내다","~을 상징하다"], syn:["represent","symbolize","signify"] },
+  { word:"suffer", exams:["공무원"], pron:"서퍼", pos:"v", level:"B1", meanings:["겪다","고통받다"], syn:["undergo","endure","experience"], ex:[{ s:"Many workers {{}} from stress and lack of sleep.", f:"suffer", ko:"많은 직장인이 스트레스와 수면 부족에 시달린다." }], gov:{ prep:["from"], usage:"suffer from ~ : ~로 고통받다, ~을 앓다" } },
+  { word:"scam", exams:["공무원"], pron:"스캠", pos:"n", level:"B2", meanings:["사기","신용 사기"], syn:["fraud","swindle","con"], ex:[{ s:"Police warned citizens about a new parking ticket {{}}.", f:"scam", ko:"경찰은 시민들에게 새로운 주차 과태료 사기를 경고했다." }] },
+  { word:"scenic", exams:["공무원"], pron:"시닉", pos:"adj", level:"B2", meanings:["경치가 좋은","풍경의"], syn:["picturesque","panoramic","breathtaking"], ex:[{ s:"Visitors enjoy the {{}} views from the hill.", f:"scenic", ko:"방문객들은 언덕에서 보는 멋진 경치를 즐긴다." }] },
+  { word:"showcase", exams:["공무원"], pron:"쇼케이스", pos:"v", level:"B2", meanings:["보여 주다","전시하다"], syn:["display","exhibit","demonstrate"], ex:[{ s:"Punctuality {{}} a person's commitment to meeting deadlines.", f:"showcases", ko:"시간 엄수는 마감을 지키려는 사람의 의지를 보여 준다." }] },
+  { word:"sincerity", exams:["공무원"], pron:"신세러티", pos:"n", level:"B2", meanings:["진심","성실"], syn:["honesty","genuineness","earnestness"], ant:["hypocrisy"], ex:[{ s:"I never doubted the {{}} of her apology.", f:"sincerity", ko:"나는 그녀 사과의 진심을 의심한 적이 없다." }] },
+  { word:"societal", exams:["공무원"], pron:"서사이어털", pos:"adj", level:"C1", meanings:["사회의","사회적인"], ex:[{ s:"Health contributes to {{}} well-being and economic growth.", f:"societal", ko:"건강은 사회적 안녕과 경제 성장에 기여한다." }] },
+  { word:"shareholder", exams:["공무원"], pron:"셰어홀더", pos:"n", level:"B2", meanings:["주주"], ex:[{ s:"Every {{}} receives part of the company's profits.", f:"shareholder", ko:"모든 주주는 회사 이익의 일부를 받는다." }] },
+  { word:"short-term", exams:["공무원"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
+  { word:"skillful", exams:["공무원"], pron:"스킬풀", pos:"adj", level:"B2", meanings:["능숙한","솜씨 좋은"], syn:["adept","proficient","competent"], ant:["clumsy"], ex:[{ s:"She is so {{}} with her hands that she can fix almost anything.", f:"skillful", ko:"그녀는 손재주가 아주 좋아서 거의 뭐든 고칠 수 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -254,7 +271,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑫ — 사전 글자를 그대로 지켰다. 참조 extent(E)·magnitude(M) 두 곳의
      화면은 바뀌지 않는다. */
-  { word:"scale", pron:"스케일", pos:"n", level:"B1", meanings:["규모","정도"],
+  { word:"scale", exams:["공무원"], pron:"스케일", pos:"n", level:"B1", meanings:["규모","정도"],
     syn:["extent","magnitude","size of a thing"],
     ex:[{ s:"The project grew in {{}} every year.", f:"scale", ko:"그 사업은 해마다 규모가 커졌다." }] },
 
@@ -320,13 +337,13 @@ window.VOCAB_S = [
 
   /* 승격 ⑲ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 conspiracy(C)·conspire(C)
      두 곳의 설명이 '계획; 음모' 에서 '계획, 음모' 가 된다. */
-  { word:"scheme", pron:"스킴", pos:"n", level:"B2", meanings:["계획","음모"],
+  { word:"scheme", exams:["공무원"], pron:"스킴", pos:"n", level:"B2", meanings:["계획","음모"],
     syn:["conspiracy","plot","secret plan"],
     ex:[{ s:"They devised a {{}} to raise funds.", f:"scheme", ko:"그들은 자금을 모을 계획을 짜냈다." }] },
 
   /* 승격 ⑳ — 사전 단일값 유지. 참조 intellectual(I)·learned(L) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"scholarly", pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
+  { word:"scholarly", exams:["공무원"], pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
     syn:["academic","learned","intellectual"],
     ex:[{ s:"He wrote a {{}} article on the topic.", f:"scholarly", ko:"그는 그 주제로 학문적인 논문을 썼다." }] },
 
@@ -458,7 +475,7 @@ window.VOCAB_S = [
     ex:[{ s:"Read the last {{}} of the report.", f:"section", ko:"보고서의 마지막 부분을 읽어라." }] },
 
   /* 승격 ㉗ — 사전 글자 유지. 참조는 없다. '구역' 은 section 에 넘겼다. */
-  { word:"sector", pron:"섹터", pos:"n", level:"B2", meanings:["분야","부문"],
+  { word:"sector", exams:["공무원"], pron:"섹터", pos:"n", level:"B2", meanings:["분야","부문"],
     syn:["field of work","branch of industry","part of the economy"],
     ex:[{ s:"The public {{}} added many jobs.", f:"sector", ko:"공공 분야가 많은 일자리를 늘렸다." }] },
 
@@ -585,11 +602,11 @@ window.VOCAB_S = [
 
   /* 승격 ㊲ — ★ 원본 '감동, 대사건' 은 뜻이 어긋난다. 참조 marvel(M) 과 맞는
      사전값 '큰 화제' 를 지켰다 — 그 한 곳의 화면은 바뀌지 않는다. */
-  { word:"sensation", pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제"],
+  { word:"sensation", exams:["공무원"], pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제","감각"],
     syn:["marvel","talk of the town","thing everyone speaks of"],
     ex:[{ s:"Her first novel became a {{}}.", f:"sensation", ko:"그녀의 첫 소설은 큰 화제가 되었다." }] },
 
-  { word:"sensational", pron:"센세이셔널", pos:"adj", level:"B2", meanings:["선풍적인","아주 멋진"],
+  { word:"sensational", exams:["공무원"], pron:"센세이셔널", pos:"adj", level:"B2", meanings:["선풍적인","아주 멋진"],
     syn:["causing a stir","hugely exciting","dazzling to see"],
     ex:[{ s:"The team made a {{}} comeback.", f:"sensational", ko:"그 팀은 선풍적인 역전을 이뤄 냈다." }] },
 
@@ -714,12 +731,12 @@ window.VOCAB_S = [
 
   /* 승격 ㊽ — 사전 글자 유지. 참조 context(C)·environment(E) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"setting", pron:"세팅", pos:"n", level:"B2", meanings:["환경","배경"],
+  { word:"setting", exams:["공무원"], pron:"세팅", pos:"n", level:"B2", meanings:["환경","배경"],
     syn:["context","environment","surroundings of a scene"],
     ex:[{ s:"The novel has a rural {{}}.", f:"setting", ko:"그 소설은 시골을 배경으로 한다." }] },
 
   /* 승격 ㊾ — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"settle", pron:"세틀", pos:"v", level:"B1", meanings:["정착하다","해결하다"],
+  { word:"settle", exams:["공무원"], pron:"세틀", pos:"v", level:"B1", meanings:["정착하다","해결하다"],
     syn:["make one's home","put an end to a dispute","come to rest"],
     ex:[{ s:"They chose to {{}} near the river.", f:"settle", ko:"그들은 강 가까이에 정착하기로 했다." }] },
 
@@ -827,7 +844,7 @@ window.VOCAB_S = [
      protect(보호하다) 와 글자가 같아 서로의 오답에서 자동으로 빠진다 —
      그래서 protect 를 syn 에 넣지 않았다(설명이 똑같아지기 때문이다).
      defend(D) 의 syn 에서 이 낱말을 뺀 것은 챕터 2 에서 미리 해 두었다. */
-  { word:"shield", pron:"실드", pos:"v", level:"B2", meanings:["보호하다"],
+  { word:"shield", pron:"실드", pos:"v", level:"B2", meanings:["보호하다","막아 주다"],
     syn:["keep from harm","screen from danger","guard with a cover"],
     ex:[{ s:"A thick wall will {{}} the house from noise.", f:"shield", ko:"두꺼운 벽이 그 집을 소음에서 보호할 것이다." }] },
 
@@ -857,7 +874,7 @@ window.VOCAB_S = [
     ex:[{ s:"Do not {{}} until you see the mark.", f:"shoot", ko:"표적이 보일 때까지 쏘지 마라." }] },
 
   /* 승격 63 — 사전 글자 유지. 참조 bank(B) 의 화면은 바뀌지 않는다. */
-  { word:"shore", pron:"쇼", pos:"n", level:"B1", meanings:["해안","기슭"],
+  { word:"shore", exams:["공무원"], pron:"쇼", pos:"n", level:"B1", meanings:["해안","기슭"],
     syn:["bank","edge of the sea","land by the water"],
     ex:[{ s:"They walked along the rocky {{}}.", f:"shore", ko:"그들은 바위 많은 해안을 따라 걸었다." }] },
 
@@ -974,7 +991,7 @@ window.VOCAB_S = [
 
   /* 승격 71 — 사전 글자 유지. 참조 affinity(A)·commonality(C)·contrast(C)
      세 곳의 화면은 바뀌지 않는다. */
-  { word:"similarity", pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
+  { word:"similarity", exams:["공무원"], pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
     syn:["affinity","commonality","likeness between two"], ant:["contrast"],
     ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
 
@@ -985,7 +1002,7 @@ window.VOCAB_S = [
 
   /* 승격 72 — 사전은 '간소화하다' 였다. 참조가 없어 원본대로 '단순화하다' 로
      두었다 — 화면이 바뀌는 곳은 없다. */
-  { word:"simplify", pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
+  { word:"simplify", exams:["공무원"], pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
     syn:["make plain","cut out the hard parts","reduce to basics"],
     ex:[{ s:"We must {{}} the form.", f:"simplify", ko:"우리는 그 서식을 단순화해야 한다." }] },
 
@@ -1091,7 +1108,7 @@ window.VOCAB_S = [
     syn:["shoot up fast","rise steeply","climb at great speed"],
     ex:[{ s:"House prices began to {{}}.", f:"skyrocket", ko:"집값이 급등하기 시작했다." }] },
 
-  { word:"skyscraper", pron:"스카이스크레이퍼", pos:"n", level:"B2", meanings:["고층 건물"],
+  { word:"skyscraper", exams:["공무원"], pron:"스카이스크레이퍼", pos:"n", level:"B2", meanings:["고층 건물"],
     syn:["very tall building","high-rise tower","building of many floors"],
     ex:[{ s:"A new {{}} rose beside the river.", f:"skyscraper", ko:"강 옆에 새 고층 건물이 올라갔다." }] },
 
@@ -1308,7 +1325,7 @@ window.VOCAB_S = [
      설명이 '단단한; 입방의' 에서 '단단한, 입방의' 가 된다. 명사인 liquid(L) 의
      반의어 자리는 'solid matter'(고체) 로 갈았다.
      firm(단단한, 회사) 과 첫 갈래가 글자까지 같아 자동 배제된다. */
-  { word:"solid", pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
+  { word:"solid", exams:["공무원"], pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
     syn:["cubic","firm","hard right through"],
     ex:[{ s:"The table is made of {{}} oak.", f:"solid", ko:"그 탁자는 단단한 참나무로 만들어졌다." }] },
 
@@ -1329,7 +1346,7 @@ window.VOCAB_S = [
 
   /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
      '해결책; 용액' 에서 '해결책, 용액' 이 된다. */
-  { word:"solution", pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
+  { word:"solution", exams:["공무원"], pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
     syn:["answer to a problem","way out of trouble","liquid mixture"],
     ex:[{ s:"They looked for a simple {{}}.", f:"solution", ko:"그들은 간단한 해결책을 찾았다." }] },
 
@@ -1459,7 +1476,7 @@ window.VOCAB_S = [
   /* 승격 114 — 사전 글자 유지. 참조가 여섯 곳(concrete·definite·detail·general·
      generic·particular) 인데 하나도 바뀌지 않는다 — 챕터 5 의 separate 와 함께
      이 세트에서 참조가 가장 많은 자리다. */
-  { word:"specific", pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
+  { word:"specific", exams:["공무원"], pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
     syn:["concrete","definite","particular"], ant:["general","generic"],
     ex:[{ s:"Give me a {{}} example.", f:"specific", ko:"구체적인 예를 하나 들어 보라." }] },
 
@@ -1574,7 +1591,7 @@ window.VOCAB_S = [
   /* 승격 123 — 사전 첫 갈래만 남겼다. 참조 crack(C)·divorce(D) 가 둘 다 명사
      여서 그 두 자리를 각각 'narrow break'·'legal end of a marriage' 로 갈았다.
      챕터 5 의 separate(분리하다, 나누다) 와 '나누다' 가 같아 자동 배제된다. */
-  { word:"split", pron:"스플릿", pos:"v", level:"B2", meanings:["나누다"],
+  { word:"split", exams:["공무원"], pron:"스플릿", pos:"v", level:"B2", meanings:["나누다"],
     syn:["divide in two","cut apart","break along a line"],
     ex:[{ s:"They agreed to {{}} the cost.", f:"split", ko:"그들은 비용을 나누기로 했다." }] },
 
@@ -1794,7 +1811,7 @@ window.VOCAB_S = [
     ex:[{ s:"They slept under a {{}} sky.", f:"starry", ko:"그들은 별이 많은 하늘 아래 잤다." }] },
 
   /* 승격 145 — 사전 단일값 유지. 참조 frighten(F) 의 화면은 바뀌지 않는다. */
-  { word:"startle", pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
+  { word:"startle", exams:["공무원"], pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
     syn:["frighten","give a sudden shock","make jump"],
     ex:[{ s:"The noise will {{}} the horses.", f:"startle", ko:"그 소음이 말들을 흠칫 놀라게 할 것이다." }] },
 
@@ -1840,7 +1857,7 @@ window.VOCAB_S = [
     syn:["based on figures","to do with data counts","drawn from numbers"],
     ex:[{ s:"They found a {{}} link.", f:"statistical", ko:"그들은 통계에 근거한 연관을 찾았다." }] },
 
-  { word:"statistics", pron:"스터티스틱스", pos:"n", level:"B2", meanings:["통계","통계학"],
+  { word:"statistics", exams:["공무원"], pron:"스터티스틱스", pos:"n", level:"B2", meanings:["통계","통계학"],
     syn:["collected figures","study of numerical data","numbers gathered together"],
     ex:[{ s:"The {{}} show a clear rise.", f:"statistics", ko:"그 통계는 뚜렷한 상승을 보인다." }] },
 
@@ -1868,7 +1885,7 @@ window.VOCAB_S = [
 
   /* 승격 149 — 사전 글자 유지. 참조 citizenship(C) 의 화면은 바뀌지 않는다.
      챕터 15 의 state 가 넘긴 '상태' 를 이 낱말이 받는다. */
-  { word:"status", pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
+  { word:"status", exams:["공무원"], pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
     syn:["citizenship","rank in society","place one holds"],
     ex:[{ s:"Her legal {{}} is still unclear.", f:"status", ko:"그녀의 법적 지위는 아직 분명하지 않다." }] },
 
@@ -2042,7 +2059,7 @@ window.VOCAB_S = [
 
   /* 승격 167 — 사전 첫 갈래만 남겼다. 참조 house(H) 가 동사라 그대로 맞는다.
      위 stock 이 넘긴 '저장하다' 를 이 낱말이 받는다. */
-  { word:"store", pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
+  { word:"store", exams:["공무원"], pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
     syn:["house","put away for later","keep in a safe place"],
     ex:[{ s:"We {{}} the grain in a dry barn.", f:"store", ko:"우리는 마른 헛간에 곡식을 저장한다." }] },
 
@@ -2054,7 +2071,7 @@ window.VOCAB_S = [
     ex:[{ s:"The rule is quite {{}}.", f:"straightforward", ko:"그 규칙은 꽤 단순명료하다." }] },
 
   /* 승격 169 — 사전 글자 유지. 참조 burden(B) 의 화면은 바뀌지 않는다. */
-  { word:"strain", pron:"스트레인", pos:"n", level:"B2", meanings:["긴장","압박"],
+  { word:"strain", exams:["공무원"], pron:"스트레인", pos:"n", level:"B2", meanings:["긴장","압박"],
     syn:["burden","tight pressure","heavy demand on one"],
     ex:[{ s:"The long trial put a {{}} on her.", f:"strain", ko:"그 긴 재판이 그녀에게 압박을 주었다." }] },
 
@@ -2065,7 +2082,7 @@ window.VOCAB_S = [
     ex:[{ s:"One {{}} of hair lay on the desk.", f:"strand", ko:"머리카락 한 가닥이 책상에 놓여 있었다." }] },
 
   /* 승격 171 — 사전 단일값 유지. 참조는 없다. */
-  { word:"strategy", pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
+  { word:"strategy", exams:["공무원"], pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
     syn:["plan of action","long-term plan","way worked out in advance"],
     ex:[{ s:"They changed their {{}} at halftime.", f:"strategy", ko:"그들은 전반이 끝나고 전략을 바꿨다." }] },
 
@@ -2215,7 +2232,7 @@ window.VOCAB_S = [
   /* 승격 187 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 cave in(C)·comply(C) 두 곳의
      설명이 '제출하다; 굴복하다' 에서 '제출하다, 굴복하다' 가 된다.
      surrender(항복하다 · 챕터 21) 와는 갈라 두었다. */
-  { word:"submit", pron:"섭미트", pos:"v", level:"B1", meanings:["제출하다","굴복하다"],
+  { word:"submit", exams:["공무원"], pron:"섭미트", pos:"v", level:"B1", meanings:["제출하다","굴복하다"],
     syn:["cave in","comply","hand in for review"],
     ex:[{ s:"Please {{}} the form by Friday.", f:"submit", ko:"금요일까지 그 서식을 제출해 주세요." }] },
 
@@ -2275,7 +2292,7 @@ window.VOCAB_S = [
   /* 승격 194 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 다섯 곳(chemical·content·
      gist·material·matter) 의 설명이 '물질; 본질' 에서 '물질, 본질' 이 된다.
      matter(문제, 물질) 와 '물질' 이 같아 자동 배제된다. */
-  { word:"substance", pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
+  { word:"substance", exams:["공무원"], pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
     syn:["chemical","gist","matter"],
     ex:[{ s:"The jar held an odd {{}}.", f:"substance", ko:"그 병에는 이상한 물질이 들어 있었다." }] },
 
@@ -2368,7 +2385,7 @@ window.VOCAB_S = [
 
   /* 승격 204 — 사전 단일값 유지. 참조 네 곳(appropriate·apt·eligible·fit) 의
      화면은 바뀌지 않는다. */
-  { word:"suitable", pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
+  { word:"suitable", exams:["공무원"], pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
     syn:["appropriate","apt","fit"],
     ex:[{ s:"This film is not {{}} for children.", f:"suitable", ko:"이 영화는 아이들에게 적합하지 않다." }] },
 
@@ -2433,7 +2450,7 @@ window.VOCAB_S = [
 
   /* 승격 211 — 사전 단일값 유지. 참조 be in charge of(B)·oversee(O) 두 곳의
      화면은 바뀌지 않는다. */
-  { word:"supervise", pron:"수퍼바이즈", pos:"v", level:"B2", meanings:["감독하다"],
+  { word:"supervise", exams:["공무원"], pron:"수퍼바이즈", pos:"v", level:"B2", meanings:["감독하다"],
     syn:["be in charge of","oversee","watch over the work of"],
     ex:[{ s:"One teacher will {{}} the test.", f:"supervise", ko:"교사 한 명이 그 시험을 감독할 것이다." }] },
 
@@ -2471,7 +2488,7 @@ window.VOCAB_S = [
   /* 승격 216 — 사전 첫 갈래만 남겼다. 참조가 다섯 곳(censor·crack down on·
      hold back·hold down·inhibit) 인데 모두 '억누르다' 쪽이라 그대로 맞는다.
      repress(R) 와 맞물려 자동 배제된다. */
-  { word:"suppress", pron:"서프레스", pos:"v", level:"B2", meanings:["억압하다"],
+  { word:"suppress", exams:["공무원"], pron:"서프레스", pos:"v", level:"B2", meanings:["억압하다"],
     syn:["censor","hold down","inhibit"],
     ex:[{ s:"The regime tried to {{}} the news.", f:"suppress", ko:"그 정권은 그 소식을 억압하려 했다." }] },
 
@@ -2491,7 +2508,7 @@ window.VOCAB_S = [
 
   /* 승격 217 — 사전 첫 갈래만 남겼다. 동사 쪽을 쓰던 come into sight(C) 의 그
      자리를 'rise into view' 로 갈았다. 다른 참조 deck(D) 은 명사라 맞는다. */
-  { word:"surface", pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
+  { word:"surface", exams:["공무원"], pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
     syn:["outer face of a thing","top layer","outside skin"],
     ex:[{ s:"Dust settled on every {{}}.", f:"surface", ko:"먼지가 모든 표면에 내려앉았다." }] },
 
@@ -2510,7 +2527,7 @@ window.VOCAB_S = [
     ex:[{ s:"He needs {{}} on his knee.", f:"surgery", ko:"그는 무릎에 외과 처치가 필요하다." }] },
 
   /* 승격 220 — 사전 단일값 유지. 참조 exceed(E) 의 화면은 바뀌지 않는다. */
-  { word:"surpass", pron:"서패스", pos:"v", level:"B2", meanings:["능가하다"],
+  { word:"surpass", exams:["공무원"], pron:"서패스", pos:"v", level:"B2", meanings:["능가하다"],
     syn:["exceed","go beyond","do better than"],
     ex:[{ s:"Her score will {{}} last year's mark.", f:"surpass", ko:"그녀의 점수가 지난해 기록을 능가할 것이다." }] },
 
@@ -2532,7 +2549,7 @@ window.VOCAB_S = [
     ex:[{ s:"They found a {{}} parent for the cub.", f:"surrogate", ko:"그들은 그 새끼에게 대리 어미를 찾아 주었다." }] },
 
   /* 승격 223 — 사전 글자 유지. 참조 enclose(E) 의 화면은 바뀌지 않는다. */
-  { word:"surround", pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
+  { word:"surround", exams:["공무원"], pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
     syn:["enclose","ring about","shut in on all sides"],
     ex:[{ s:"Tall trees {{}} the house.", f:"surround", ko:"키 큰 나무들이 그 집을 둘러싼다." }] },
 
@@ -2576,7 +2593,7 @@ window.VOCAB_S = [
     ex:[{ s:"The wait kept us in {{}}.", f:"suspense", ko:"그 기다림이 우리를 긴장감에 두었다." }] },
 
   /* dubious(의심스러운, 수상한 · D) 와 둘째 갈래를 글자까지 맞춰 두었다. */
-  { word:"suspicious", pron:"서스피셔스", pos:"adj", level:"B2", meanings:["의심하는","수상한"],
+  { word:"suspicious", exams:["공무원"], pron:"서스피셔스", pos:"adj", level:"B2", meanings:["의심하는","수상한"],
     syn:["slow to trust","looking wrong","raising doubt"],
     ex:[{ s:"The guard grew {{}} of the van.", f:"suspicious", ko:"경비는 그 승합차를 수상하게 여겼다." }] },
 
@@ -2588,7 +2605,7 @@ window.VOCAB_S = [
 
   /* 승격 231 — 사전 단일값 유지. 참조 environment-friendly(E) 의 화면은
      바뀌지 않는다. */
-  { word:"sustainable", pron:"서스테이너블", pos:"adj", level:"B2", meanings:["지속 가능한"],
+  { word:"sustainable", exams:["공무원"], pron:"서스테이너블", pos:"adj", level:"B2", meanings:["지속 가능한"],
     syn:["environment-friendly","able to keep going","kept up without harm"],
     ex:[{ s:"They aim for {{}} growth.", f:"sustainable", ko:"그들은 지속 가능한 성장을 목표로 한다." }] },
 
@@ -2731,6 +2748,7 @@ Object.assign(window.GLOSS, {
   "angle one looks from": "바라보는 쪽",
   "answer to a problem": "문제에 대한 답",
   "anxious waiting": "애타는 기다림",
+  "apartment": "아파트, 공동 주택",
   "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
@@ -2746,6 +2764,7 @@ Object.assign(window.GLOSS, {
   "at rest": "가만히 있는",
   "avoid looking bad": "모양이 나빠지지 않게 하다",
   "awareness of oneself": "제 자신을 의식함",
+  "awkwardly": "어색하게",
   "balance of form": "모양의 균형",
   "band of related things": "이어진 것들의 띠",
   "bang shut": "탁 소리 내며 닫히다",
@@ -2753,6 +2772,7 @@ Object.assign(window.GLOSS, {
   "barely enough": "겨우 될 만한",
   "based on figures": "수치를 바탕으로 한",
   "based on one's own view": "자기 견해에 기댄",
+  "bashfully": "수줍게",
   "basic and regular": "기본이 되고 늘 쓰이는",
   "be a sign of": "~의 표시가 되다",
   "be plain to see": "한눈에 보이다",
@@ -2774,6 +2794,7 @@ Object.assign(window.GLOSS, {
   "boat that dives": "잠기는 배",
   "body circling a planet": "행성을 도는 천체",
   "boggy land": "질척한 땅",
+  "boldly": "대담하게",
   "bony": "뼈가 드러난",
   "branch of industry": "산업의 한 가지",
   "breach of divine law": "신의 법을 어김",
@@ -2800,6 +2821,7 @@ Object.assign(window.GLOSS, {
   "calm down": "가라앉히다",
   "calm with no sound": "소리 없이 잔잔함",
   "calm without a ripple": "물결 하나 없이 잔잔한",
+  "capacious": "용량이 큰",
   "care and control": "돌봄과 다스림",
   "careful check": "꼼꼼한 확인",
   "carried by nerves": "신경으로 전해지는",
@@ -2851,7 +2873,11 @@ Object.assign(window.GLOSS, {
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "complete stop": "완전한 멈춤",
+  "complexity": "복잡성",
+  "con": "속임수",
+  "conditional": "조건부의",
   "contemptuous": "업신여기는",
+  "contextual": "맥락상의, 문맥의",
   "cool dark spot": "시원하고 어두운 자리",
   "court ruling": "법정이 내린 결정",
   "cover from danger": "위험을 막아 주는 곳",
@@ -2915,6 +2941,7 @@ Object.assign(window.GLOSS, {
   "dry and bare": "마르고 헐벗은",
   "dull and unmoving": "가라앉아 움직이지 않는",
   "dust with": "~을 솔솔 얹다",
+  "earnestness": "진지함, 열의",
   "ease into without notice": "티 안 나게 스며들다",
   "easily affected": "쉽게 영향을 받는",
   "easily swayed": "쉽게 휘둘리는",
@@ -2924,6 +2951,7 @@ Object.assign(window.GLOSS, {
   "effect not aimed at": "겨냥하지 않은 영향",
   "elderly person": "나이가 든 사람",
   "elected upper chamber member": "뽑힌 윗 의회 구성원",
+  "emaciated": "몹시 여윈",
   "enough for the need": "필요한 만큼 되는",
   "escape from death": "죽음을 벗어남",
   "even match of sides": "양쪽이 고르게 맞음",
@@ -2932,6 +2960,7 @@ Object.assign(window.GLOSS, {
   "exact in demand": "요구가 빈틈없는",
   "examine closely": "바짝 붙어 살펴보다",
   "example taken": "떼어 낸 보기",
+  "experience": "경험하다, 겪다",
   "experienced": "겪어 본 바가 많은",
   "expert in one area": "한 갈래에 밝은",
   "failing in something": "무언가에서 모자란 점",
@@ -2951,6 +2980,7 @@ Object.assign(window.GLOSS, {
   "filled with fear": "두려움에 찬",
   "fine in shade": "빛깔 차이가 고운",
   "fineness of feeling": "느낌의 섬세함",
+  "finesse": "기교, 세련된 솜씨",
   "fire a weapon": "무기를 발사하다",
   "firm about rules": "규칙에 단단한",
   "firm and unchanging": "단단하고 달라지지 않는",
@@ -2963,6 +2993,7 @@ Object.assign(window.GLOSS, {
   "fixed in place": "한자리에 붙은",
   "flavor with spice": "향신료로 맛을 내다",
   "flavouring from plants": "식물에서 얻은 맛내기",
+  "fledgling firm": "갓 생긴 회사",
   "flow past the edge": "가장자리를 넘어 흐르다",
   "fluid given off": "내어놓은 액체",
   "fluid in the mouth": "입안의 액체",
@@ -2970,6 +3001,8 @@ Object.assign(window.GLOSS, {
   "follow in secret": "남몰래 따라가다",
   "follower of a side": "한쪽을 따르는 사람",
   "following in time": "시간상 뒤에 오는",
+  "folly": "어리석은 짓",
+  "foolishness": "어리석음, 바보짓",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "four-sided figure": "네 변으로 된 꼴",
@@ -2995,6 +3028,8 @@ Object.assign(window.GLOSS, {
   "gather up in one go": "한 번에 그러모으다",
   "gathering for discussion": "논의를 위한 모임",
   "gathering of answers": "답을 모으는 일",
+  "gaunt": "수척한",
+  "generalist": "다방면에 아는 사람, 제너럴리스트",
   "get smaller": "작아지다",
   "get ~ under way": "~이 돌아가기 시작하게 하다",
   "gift to remember by": "기억하려고 주는 선물",
@@ -3099,10 +3134,15 @@ Object.assign(window.GLOSS, {
   "hush over all": "온통 내린 잠잠함",
   "hygienic": "위생적인",
   "idea put forward": "내놓은 생각",
+  "idiocy": "우둔함, 멍청함",
+  "imitation": "모방, 모조",
+  "in sequence": "순서대로, 차례차례",
   "in short supply": "공급이 모자란",
   "in some degree": "얼마간은",
   "in the same moment": "같은 순간에",
+  "income": "소득, 수입",
   "inner and sacred": "속 깊고 거룩한",
+  "insensitivity": "무신경, 둔감함",
   "iron mixed with carbon": "탄소를 섞은 쇠",
   "ironic in a cutting way": "날카롭게 비꼬는",
   "ironic in tone": "말투가 반어적인",
@@ -3250,10 +3290,13 @@ Object.assign(window.GLOSS, {
   "natural setting": "자연 그대로의 자리",
   "needing nothing outside": "밖에서 얻을 것이 없는",
   "needle and plunger": "바늘과 밀대",
+  "new business": "신규 사업체",
+  "new venture": "새로 벌인 사업",
   "newest in design": "설계가 가장 새로운",
   "no longer fresh": "더는 싱싱하지 않은",
   "non-commissioned officer": "임관하지 않은 간부",
   "none left to buy": "살 것이 남지 않은",
+  "normalization": "정상화, 규격화",
   "not deep": "깊지 않은",
   "not drunk": "술기운이 없는",
   "not flowing": "흐르지 않는",
@@ -3324,6 +3367,7 @@ Object.assign(window.GLOSS, {
   "pack in tightly": "빈틈없이 밀어 넣다",
   "painful to touch": "닿으면 아픈",
   "panel on one topic": "한 주제를 놓고 하는 토론",
+  "panoramic": "전경이 펼쳐진",
   "panting hard": "숨을 몰아쉬는",
   "parched by heat": "열에 바짝 마른",
   "part cut from a whole": "전체에서 잘라 낸 몫",
@@ -3337,16 +3381,19 @@ Object.assign(window.GLOSS, {
   "past all natural law": "자연의 법을 벗어난",
   "patch of colour left": "색이 남은 자리",
   "pattern of illness": "병이 나타나는 틀",
+  "pay": "보수, 임금",
   "pay part of the cost": "비용의 일부를 대다",
   "pay to receive": "값을 내고 받다",
   "pay tribute to": "~에게 찬사를 보내다",
   "peel bare": "말끔히 까다",
+  "perceptiveness": "지각력, 예리함",
   "period of meeting": "모임이 이어지는 기간",
   "person giving help": "도움을 주는 사람",
   "person of lower rank": "아래 계급의 사람",
   "pick out from the rest": "나머지에서 집어내다",
   "picky": "까다롭게 고르는",
   "picture cartoon series": "그림 만화 연작",
+  "picturesque": "그림 같은",
   "pig": "돼지 짐승",
   "pile of stuff": "짐을 겹쳐 놓은 것",
   "place in position": "자리에 놓다",
@@ -3412,6 +3459,7 @@ Object.assign(window.GLOSS, {
   "reach further than meant": "뜻한 데보다 멀리 미치다",
   "read fast for the gist": "요지만 빨리 읽다",
   "real and solid": "실제로 알찬",
+  "recap": "요약하다, 되짚다",
   "recover from wreck": "난파선에서 되찾다",
   "redemption": "속죄, 되찾음",
   "reduce by": "~만큼 줄이다",
@@ -3424,6 +3472,7 @@ Object.assign(window.GLOSS, {
   "reproductive cell of a male": "수컷의 생식 세포",
   "respected political leader": "높이 평가되는 정치 지도자",
   "responsive to touch": "닿는 것에 반응하는",
+  "responsiveness": "반응성, 민감한 반응",
   "rest with eyes shut": "눈을 감고 쉼",
   "rich tang": "짙은 맛깔",
   "right to rule oneself": "스스로 다스릴 권리",
@@ -3436,6 +3485,7 @@ Object.assign(window.GLOSS, {
   "rising sharply": "날카롭게 올라가는",
   "rocket ship": "로켓으로 가는 배",
   "roof over one's head": "머리를 덮어 줄 지붕",
+  "roomy": "널찍한",
   "rouse to action": "움직이도록 일깨우다",
   "rub hard": "세게 비비다",
   "rub with nails": "손톱으로 비비다",
@@ -3475,9 +3525,14 @@ Object.assign(window.GLOSS, {
   "seek by asking": "물어 가며 구하다",
   "seen at a glance": "흘끗 보아 아는",
   "seize quickly": "재빨리 붙잡다",
+  "self-regard": "자기 존중",
   "self-styled": "스스로 내세운",
+  "self-sufficiency": "자급자족",
+  "self-worth": "자기 가치감",
   "send a bullet": "탄알을 보내다",
   "senior figure in government": "정부의 원로",
+  "sequentially": "순차적으로",
+  "series": "연속, 일련",
   "serving no purpose": "쓸 데가 없는",
   "set a common form": "공통의 꼴을 정하다",
   "set apart": "따로 떼어 두다",
@@ -3562,7 +3617,6 @@ Object.assign(window.GLOSS, {
   "spur into life": "살아나게 몰아붙이다",
   "squad leader": "분대를 이끄는 사람",
   "stalk of a plant": "식물의 대",
-  "stand for": "~을 나타내다",
   "stand-in for another": "남을 대신 서는 사람",
   "standing alone": "홀로 서 있는",
   "standing for another": "다른 것을 대신 서는",
@@ -3578,6 +3632,7 @@ Object.assign(window.GLOSS, {
   "staying alive": "살아 있는 상태로 남음",
   "steady and sure": "고르고 믿음직한",
   "steady state": "흔들림 없는 상태",
+  "steer clear of": "~을 피하다",
   "stenography": "기호 필기법",
   "step back on a point": "한 가지에서 물러서 줌",
   "stirring the senses": "감각을 흔드는",
@@ -3598,9 +3653,11 @@ Object.assign(window.GLOSS, {
   "study of opinion": "여론을 살피는 일",
   "study of society": "사회를 살피는 학문",
   "subject to another": "남에게 딸린",
+  "subsidiary": "부수적인, 자회사의",
   "sudden and surprising": "갑작스럽고 뜻밖인",
   "sudden swell in number": "수가 갑자기 부풀어 오름",
   "suffer hunger": "배고픔을 겪다",
+  "sum up": "간추려 말하다",
   "summary of a story": "이야기를 줄인 것",
   "supply kept on hand": "갖춰 둔 물량",
   "support with funds": "자금으로 뒷받침하다",
@@ -3608,6 +3665,7 @@ Object.assign(window.GLOSS, {
   "surrounding of a town": "고을을 둘러쌈",
   "surroundings of a scene": "장면을 둘러싼 것들",
   "sway as one walks": "걸으며 몸이 기울다",
+  "swindle": "사기, 협잡",
   "take a paper regularly": "신문을 꾸준히 받다",
   "take away from": "~에서 덜어 내다",
   "take by force": "힘으로 빼앗다",
@@ -3654,6 +3712,7 @@ Object.assign(window.GLOSS, {
   "tilt of the land": "땅의 기울어짐",
   "time a court is open": "법정이 열려 있는 때",
   "time of sleeping": "잠자는 동안",
+  "timidly": "소심하게",
   "tip out by accident": "실수로 기울여 붓다",
   "to a small degree": "작은 정도로",
   "to all appearances": "누가 봐도 그렇게",
@@ -3677,6 +3736,7 @@ Object.assign(window.GLOSS, {
   "try to find": "찾아내려 애쓰다",
   "try to get": "얻으려 애쓰다",
   "tube for injection": "주사에 쓰는 관",
+  "tummy": "배",
   "turn in circles": "동그라미를 그리며 돌다",
   "turn of duty": "맡는 차례",
   "turn off at the source": "근원에서 잠그다",
@@ -3705,6 +3765,7 @@ Object.assign(window.GLOSS, {
   "vie with others": "남들과 겨루다",
   "view coloured by feeling": "느낌이 물든 생각",
   "view of the land": "땅이 보이는 모습",
+  "wage": "임금, 품삯",
   "walk out of": "~에서 걸어 나오다",
   "walk unsteadily": "흔들리며 걷다",
   "walk with long steps": "긴 걸음으로 걷다",

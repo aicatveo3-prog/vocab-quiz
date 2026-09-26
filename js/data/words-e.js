@@ -777,7 +777,7 @@ window.VOCAB_E = [
   { word:"etch", exams:["공무원"], pron:"에치", pos:"v", level:"C1", meanings:["새기다","아로새기다"], syn:["engrave","inscribe","carve"], ex:[{ s:"Messages were {{}} in cardboard and snow.", f:"etched", ko:"메시지가 판지와 눈에 새겨졌다." }] },
   { word:"evaporation", exams:["공무원"], pron:"이배퍼레이션", pos:"n", level:"B2", meanings:["증발"], ex:[{ s:"Drylands lose moisture through {{}}.", f:"evaporation", ko:"건조지는 증발을 통해 수분을 잃는다." }] },
   { word:"exhaustion", exams:["공무원"], pron:"이그조스천", pos:"n", level:"B2", meanings:["탈진","고갈"], syn:["fatigue","tiredness","weariness"], ant:["energy"], ex:[{ s:"Emotional {{}} is the core of burnout.", f:"exhaustion", ko:"정서적 탈진이 번아웃의 핵심이다." }] },
-  { word:"exposition", exams:["공무원"], pron:"엑스포지션", pos:"n", level:"C1", meanings:["박람회","전시회","설명"], syn:["exhibition","fair","display"], ex:[{ s:"The wildlife {{}} runs all weekend.", f:"exposition", ko:"그 야생동물 박람회는 주말 내내 열린다." }] },
+  { word:"exposition", exams:["공무원"], pron:"엑스포지션", pos:"n", level:"C1", meanings:["박람회","설명"], syn:["exhibition","fair","display"], ex:[{ s:"The wildlife {{}} runs all weekend.", f:"exposition", ko:"그 야생동물 박람회는 주말 내내 열린다." }] },
   { word:"exclude", exams:["공무원"], pron:"익스클루드", pos:"v", level:"B2", meanings:["제외하다","배제하다"], syn:["omit","bar","leave out"], ant:["include"], ex:[{ s:"People aim to {{}} plastic waste from daily life.", f:"exclude", ko:"사람들은 일상에서 플라스틱 쓰레기를 배제하려 한다." }] },
   { word:"embassy", exams:["공무원"], pron:"엠버시", pos:"n", level:"B2", meanings:["대사관"], ex:[{ s:"Complaints are handled by the relevant {{}}.", f:"embassy", ko:"불만은 해당 대사관이 처리한다." }] },
   { word:"energetic", exams:["공무원"], pron:"에너제틱", pos:"adj", level:"B2", meanings:["활기찬","정력적인"], syn:["lively","vigorous","dynamic"], ant:["lethargic"], ex:[{ s:"Young people are {{}} and active.", f:"energetic", ko:"젊은이들은 활기차고 활동적이다." }] },
@@ -793,6 +793,10 @@ window.VOCAB_E = [
   { word:"exact", exams:["공무원"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
   { word:"explode", exams:["공무원"], pron:"익스플로드", pos:"v", level:"B1", meanings:["폭발하다"], syn:["blow up","burst","detonate"], ant:["implode"], ex:[{ s:"These products can catch fire or {{}}.", f:"explode", ko:"이 제품들은 불이 붙거나 폭발할 수 있다." }] },
   { word:"exterminator", exams:["공무원"], pron:"익스터미네이터", pos:"n", level:"C1", meanings:["방역업자","해충 구제업자"], ex:[{ s:"Please contact a licensed {{}}.", f:"exterminator", ko:"허가받은 방역업자에게 연락하세요." }] },
+  { word:"eager", exams:["공무원"], pron:"이거", pos:"adj", level:"B2", meanings:["열망하는","간절히 바라는"], syn:["keen","avid","enthusiastic","willing"], ant:["reluctant"], ex:[{ s:"Many graduates are {{}} to start their careers.", f:"eager", ko:"많은 졸업생이 어서 경력을 시작하고 싶어 한다." }], gov:{ prep:["to","for"], usage:"be eager to ~ : 몹시 ~하고 싶어 하다 · be eager for ~ : ~을 갈망하다" } },
+  { word:"equitable", exams:["공무원"], pron:"에쿼터블", pos:"adj", level:"C1", meanings:["공평한","공정한"], syn:["fair","just","impartial"], ant:["unfair"], ex:[{ s:"Access to health care is not always {{}}.", f:"equitable", ko:"의료 서비스 접근이 늘 공평한 것은 아니다." }] },
+  { word:"extremity", exams:["공무원"], pron:"익스트리머티", pos:"n", level:"C1", meanings:["손발","극단"] },
+  { word:"extreme", exams:["공무원"], pron:"익스트림", pos:"adj", level:"B1", meanings:["극단적인","지나친"], syn:["excessive","radical","drastic"], ant:["moderate"], ex:[{ s:"Some cravats were so {{}} that a man could not move his head.", f:"extreme", ko:"어떤 크러뱃은 너무 지나쳐서 목을 움직일 수 없을 정도였다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -865,7 +869,7 @@ window.VOCAB_E = [
     syn:["productivity","effectiveness","competence"], ant:["inefficiency"],
     ex:[{ s:"Automating the line raised {{}} by a third.", f:"efficiency", ko:"생산 라인을 자동화해 능률이 3분의 1 높아졌다." }] },
 
-  { word:"efficient", pron:"이피션트", pos:"adj", level:"B2", meanings:["효율적인","능률적인"],
+  { word:"efficient", exams:["공무원"], pron:"이피션트", pos:"adj", level:"B2", meanings:["효율적인","능률적인"],
     syn:["effective","productive","streamlined"], ant:["wasteful"],
     ex:[{ s:"A more {{}} layout cut the walking distance in half.", f:"efficient", ko:"더 효율적인 배치로 이동 거리가 절반으로 줄었다." }] },
 
@@ -931,7 +935,7 @@ window.VOCAB_E = [
 
   /* element 는 '요소·원소'다. compound(화합물)의 반의어로 이미 쓰이고 있어
      '원소' 갈래를 버리면 그 문제가 무너진다 — 원본의 '성분'을 '원소'로 둔다. */
-  { word:"element", pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
+  { word:"element", exams:["공무원"], pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
     syn:["component","part","ingredient"], ant:["compound"],
     ex:[{ s:"Trust is the key {{}} in any lasting partnership.", f:"element", ko:"신뢰는 오래가는 모든 동업 관계의 핵심 요소다." }] },
 
@@ -970,7 +974,7 @@ window.VOCAB_E = [
   /* eliminate 의 뜻은 기존 GLOSS "제거하다, 없애다" 를 그대로 옮겼다.
      abolish·assassinate 가 이 낱말을 유의어로 쓰고 있어, '탈락시키다' 같은
      경기 갈래를 넣으면 그 두 문제의 피드백이 엉뚱해진다. */
-  { word:"eliminate", pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
+  { word:"eliminate", exams:["공무원"], pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
     syn:["remove","get rid of","eradicate"], ant:["retain"],
     ex:[{ s:"The new filter helps {{}} harmful bacteria from the water.", f:"eliminate", ko:"새 필터는 물에서 해로운 세균을 제거하는 데 도움이 된다." }] },
 
@@ -1041,7 +1045,7 @@ window.VOCAB_E = [
      레벨을 C1 / B1 로 두 칸 벌려 '레벨 ±1' 필터에 걸리게 했다 — 두 낱말이 한
      문제의 보기로 같이 뜨지 않는다. 2차의 element(B1)/elements(C1) 와 같은 방법이고,
      실제 난이도 순서(비상사태가 기초어)와도 맞는다. 코드는 건드리지 않는다. */
-  { word:"emergence", pron:"이머전스", pos:"n", level:"C1", meanings:["출현","등장"],
+  { word:"emergence", exams:["공무원"], pron:"이머전스", pos:"n", level:"C1", meanings:["출현","등장"],
     syn:["appearance","arrival","advent"],
     ex:[{ s:"The {{}} of cheap sensors changed the whole industry.", f:"emergence", ko:"값싼 센서의 출현이 산업 전체를 바꿔 놓았다." }] },
 
@@ -1153,7 +1157,7 @@ window.VOCAB_E = [
      pos 는 하나여야 하므로 동사로 정리했다 — 표제어 come across 가 이 낱말을
      유의어로 쓰고 있어 동사 갈래가 살아 있어야 한다(기존 GLOSS 는 "마주치다, 만남"
      이라 명사 갈래가 섞여 있었다). */
-  { word:"encounter", pron:"인카운터", pos:"v", level:"B2", meanings:["맞닥뜨리다","마주치다"],
+  { word:"encounter", exams:["공무원"], pron:"인카운터", pos:"v", level:"B2", meanings:["맞닥뜨리다","마주치다"],
     syn:["come across","run into","bump into"],
     ex:[{ s:"Hikers sometimes {{}} bears on this ridge.", f:"encounter", ko:"등산객들은 이 능선에서 이따금 곰과 맞닥뜨린다." }] },
 
@@ -1210,7 +1214,7 @@ window.VOCAB_E = [
     ex:[{ s:"Two former mayors agreed to {{}} her campaign.", f:"endorse", ko:"전임 시장 두 명이 그녀의 선거 운동을 지지하기로 했다." }] },
 
   /* 원본 '(능력 등을) 주다, 기부하다' 의 괄호를 풀었다. */
-  { word:"endow", pron:"인다우", pos:"v", level:"C2", meanings:["부여하다","기부하다"],
+  { word:"endow", exams:["공무원"], pron:"인다우", pos:"v", level:"C2", meanings:["부여하다","기부하다"],
     syn:["bestow","donate","provide with"],
     ex:[{ s:"An alumnus agreed to {{}} two new scholarships.", f:"endow", ko:"한 졸업생이 새 장학금 두 건을 기부하기로 했다." }] },
 
@@ -1218,7 +1222,7 @@ window.VOCAB_E = [
     syn:["stamina","staying power","perseverance"],
     ex:[{ s:"Long-distance swimming demands {{}} more than speed.", f:"endurance", ko:"장거리 수영은 속도보다 지구력을 요구한다." }] },
 
-  { word:"endure", pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
+  { word:"endure", exams:["공무원"], pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
     syn:["bear","withstand","put up with"], ant:["succumb"],
     ex:[{ s:"The crew had to {{}} three weeks of storms.", f:"endure", ko:"승무원들은 3주간의 폭풍을 견뎌야 했다." }] },
 
@@ -1268,7 +1272,7 @@ window.VOCAB_E = [
 
   /* ── 6차: enormous ~ environment-friendly ───────── */
 
-  { word:"enormous", pron:"이노머스", pos:"adj", level:"B1", meanings:["막대한","거대한"],
+  { word:"enormous", exams:["공무원"], pron:"이노머스", pos:"adj", level:"B1", meanings:["막대한","거대한"],
     syn:["immense","colossal","vast"], ant:["tiny"],
     ex:[{ s:"Rebuilding the bridge will cost an {{}} amount.", f:"enormous", ko:"그 교량을 다시 세우는 데는 막대한 금액이 들 것이다." }] },
 
@@ -1341,7 +1345,7 @@ window.VOCAB_E = [
     syn:["hand over to","assign","put in the care of"],
     ex:[{ s:"They chose to {{}} the accounts to an outside firm.", f:"entrust", ko:"그들은 회계를 외부 회사에 맡기기로 했다." }] },
 
-  { word:"entry", pron:"엔트리", pos:"n", level:"B1", meanings:["들어감","입장"],
+  { word:"entry", exams:["공무원"], pron:"엔트리", pos:"n", level:"B1", meanings:["들어감","입장"],
     syn:["entrance","access","admittance"],
     ex:[{ s:"A side gate gives {{}} to the garden.", f:"entry", ko:"측면 문으로 정원에 들어갈 수 있다." }] },
 
@@ -1410,7 +1414,7 @@ window.VOCAB_E = [
     syn:["stability","evenness","state of balance"],
     ex:[{ s:"The market found a new {{}} after the shock.", f:"equilibrium", ko:"시장은 그 충격 뒤에 새로운 균형을 찾았다." }] },
 
-  { word:"equipment", pron:"이퀴프먼트", pos:"n", level:"B1", meanings:["장비","용품"],
+  { word:"equipment", exams:["공무원"], pron:"이퀴프먼트", pos:"n", level:"B1", meanings:["장비","용품"],
     syn:["gear","apparatus","tools"],
     ex:[{ s:"The club lends climbing {{}} to beginners.", f:"equipment", ko:"그 동아리는 초보자에게 등반 장비를 빌려준다." }] },
 
@@ -1435,7 +1439,7 @@ window.VOCAB_E = [
 
   /* 3차에서 eliminate 의 유의어로 넣은 GLOSS 항목이 표제어로 올라온다 — 그 항목을
      지웠다. eliminate 쪽 뜻이 변하지 않게 '근절하다' 를 앞에 그대로 뒀다. */
-  { word:"eradicate", pron:"이래더케이트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
+  { word:"eradicate", exams:["공무원"], pron:"이래더케이트", pos:"v", level:"C1", meanings:["근절하다","뿌리째 뽑다"],
     syn:["root out","stamp out","wipe out"],
     ex:[{ s:"Vaccines helped {{}} the disease within a decade.", f:"eradicate", ko:"백신은 10년 안에 그 병을 근절하는 데 도움이 되었다." }] },
 
@@ -1502,7 +1506,7 @@ window.VOCAB_E = [
 
   /* 원본은 '확립하다; (법률, 제도 등을) 제정하다; 설립하다' 로 갈래가 셋이다 — 괄호를
      풀고 둘로 줄였다. 표제어 abolish(반의어)·determine(유의어)이 이 낱말을 쓴다. */
-  { word:"establish", pron:"이스태블리시", pos:"v", level:"B1", meanings:["확립하다","설립하다"],
+  { word:"establish", exams:["공무원"], pron:"이스태블리시", pos:"v", level:"B1", meanings:["확립하다","설립하다"],
     syn:["found","set up","institute"], ant:["abolish"],
     ex:[{ s:"The town hopes to {{}} a museum in the old mill.", f:"establish", ko:"그 마을은 낡은 제분소에 박물관을 설립하기를 바란다." }] },
 
@@ -1510,7 +1514,7 @@ window.VOCAB_E = [
      7차의 eradicate 와 같은 경우다. 그 항목을 지우고 뜻 "확립된, 기성의" 를 그대로
      옮겨 emerging 쪽이 변하지 않게 했다. 원본의 갈래 넷(인정받는·확실히 자리 잡은·
      저명한·존경받는)은 recognized·long-standing 을 유의어로 넣어 살렸다. */
-  { word:"established", pron:"이스태블리시트", pos:"adj", level:"B2", meanings:["확립된","기성의"],
+  { word:"established", exams:["공무원"], pron:"이스태블리시트", pos:"adj", level:"B2", meanings:["확립된","기성의"],
     syn:["long-standing","recognized","well-founded"], ant:["emerging"],
     ex:[{ s:"She left an {{}} firm to start her own.", f:"established", ko:"그녀는 자리 잡은 회사를 떠나 자기 사업을 시작했다." }] },
 
@@ -1609,7 +1613,7 @@ window.VOCAB_E = [
     ex:[{ s:"He wrote of an {{}} bond between the two families.", f:"everlasting", ko:"그는 두 가문 사이의 영원히 계속되는 유대를 적었다." }] },
 
   /* 원본은 '증거; 증언; 흔적' 으로 갈래가 셋이다 — 둘로 줄였다. */
-  { word:"evidence", pron:"에비던스", pos:"n", level:"B1", meanings:["증거","증언"],
+  { word:"evidence", exams:["공무원"], pron:"에비던스", pos:"n", level:"B1", meanings:["증거","증언"],
     syn:["proof","testimony","grounds"],
     ex:[{ s:"The police found no {{}} of a break-in.", f:"evidence", ko:"경찰은 침입의 증거를 찾지 못했다." }] },
 
@@ -1684,7 +1688,7 @@ window.VOCAB_E = [
 
   /* 원본은 '교환; 교환하다' 로 명사와 동사가 섞여 있다 — 동사로 정했다.
      표제어 barter(동사)가 이 낱말을 유의어로 쓴다. */
-  { word:"exchange", pron:"익스체인지", pos:"v", level:"B1", meanings:["교환하다","주고받다"],
+  { word:"exchange", exams:["공무원"], pron:"익스체인지", pos:"v", level:"B1", meanings:["교환하다","주고받다"],
     syn:["swap","barter","interchange"],
     ex:[{ s:"The two schools {{}} students every summer.", f:"exchange", ko:"두 학교는 매년 여름 학생을 교환한다." }] },
 
@@ -1709,7 +1713,7 @@ window.VOCAB_E = [
     ex:[{ s:"The club remains {{}} about who may join.", f:"exclusive", ko:"그 클럽은 누가 가입할 수 있는지에 배타적이다." }] },
 
   /* 원본은 '오로지, 오직 ~만, 배타적으로' 로 셋인데 앞 둘이 같은 말이라 둘로 줄였다. */
-  { word:"exclusively", pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
+  { word:"exclusively", exams:["공무원"], pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
     syn:["only","solely","entirely"],
     ex:[{ s:"The shop sells {{}} secondhand books.", f:"exclusively", ko:"그 가게는 오로지 중고 책만 판다." }] },
 
@@ -1802,7 +1806,7 @@ window.VOCAB_E = [
     syn:["banish","deport","send into exile"],
     ex:[{ s:"The new rulers moved to {{}} their rivals.", f:"exile", ko:"새 통치자들은 경쟁자들을 추방하려 움직였다." }] },
 
-  { word:"exist", pron:"이그지스트", pos:"v", level:"B1", meanings:["존재하다"],
+  { word:"exist", exams:["공무원"], pron:"이그지스트", pos:"v", level:"B1", meanings:["존재하다"],
     syn:["be present","be real","live on"],
     ex:[{ s:"No written record of the village seems to {{}}.", f:"exist", ko:"그 마을의 기록은 남아 있지 않은 것 같다." }] },
 
@@ -1819,7 +1823,7 @@ window.VOCAB_E = [
      C2 뿐이고 expand 에 C2 는 맞지 않는다. 그래서 자동사(커지다)/타동사(확대하다)로
      뜻을 갈라 두었다. 9차의 even/equal 처럼 레벨로 푸는 편이 낫지만, 이 짝은
      레벨로 풀 수 없는 자리에 있다. */
-  { word:"expand", pron:"익스팬드", pos:"v", level:"B2", meanings:["커지다","확대되다"],
+  { word:"expand", exams:["공무원"], pron:"익스팬드", pos:"v", level:"B2", meanings:["커지다","확대되다"],
     syn:["grow bigger","swell","spread out"],
     ex:[{ s:"Metal rails {{}} slightly on hot afternoons.", f:"expand", ko:"금속 레일은 더운 오후에 조금 커진다." }] },
 
@@ -1868,11 +1872,11 @@ window.VOCAB_E = [
 
   /* expert(B1)와 expertise(C1)도 두 칸 벌렸다 — 둘 다 '전문' 명사다.
      뜻은 '사람'(전문가)과 '지식'(전문 지식)으로 갈라진다. */
-  { word:"expert", pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
+  { word:"expert", exams:["공무원"], pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
     syn:["specialist","master","skilled person"],
     ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
 
-  { word:"expertise", pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
+  { word:"expertise", exams:["공무원"], pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
     syn:["know-how","special skill","technical knowledge"],
     ex:[{ s:"Restoring the clock needs real {{}}.", f:"expertise", ko:"그 시계를 복원하려면 진짜 전문 지식이 필요하다." }] },
 
@@ -1908,7 +1912,7 @@ window.VOCAB_E = [
     syn:["take advantage of","use unfairly","squeeze profit from"],
     ex:[{ s:"Some agencies {{}} workers who cannot read the contract.", f:"exploit", ko:"일부 업체는 계약서를 읽지 못하는 노동자를 착취한다." }] },
 
-  { word:"exploitation", pron:"엑스플로이테이션", pos:"n", level:"C1", meanings:["착취","이용"],
+  { word:"exploitation", exams:["공무원"], pron:"엑스플로이테이션", pos:"n", level:"C1", meanings:["착취","이용"],
     syn:["abuse","misuse","unfair use"],
     ex:[{ s:"The report documents the {{}} of child labor.", f:"exploitation", ko:"그 보고서는 아동 노동 착취를 기록한다." }] },
 
@@ -1943,7 +1947,7 @@ window.VOCAB_E = [
     syn:["reveal","uncover","bring to light"], ant:["conceal"],
     ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
 
-  { word:"exposure", pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
+  { word:"exposure", exams:["공무원"], pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
     syn:["being exposed","revelation","uncovering"],
     ex:[{ s:"Long {{}} to the sun cracked the paint.", f:"exposure", ko:"오랜 햇빛 노출이 그 페인트를 갈라지게 했다." }] },
 
@@ -1969,7 +1973,7 @@ window.VOCAB_E = [
   /* 뜻을 '연장, 확장' 으로 잡았다 — 표제어 expansion(B2 "팽창, 확대")과 '확대' 가
      겹치지 않게 하려는 것이다. 기존 표제어 by extension 은 pos 가 phr 이라
      이 명사와 오답 후보로 겹치지 않는다. */
-  { word:"extension", pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
+  { word:"extension", exams:["공무원"], pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
     syn:["lengthening","addition","prolonging"],
     ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
 
@@ -1988,7 +1992,7 @@ window.VOCAB_E = [
     syn:["wipe out","annihilate","kill off"],
     ex:[{ s:"It took two winters to {{}} the beetles.", f:"exterminate", ko:"그 딱정벌레를 박멸하는 데 두 번의 겨울이 걸렸다." }] },
 
-  { word:"external", pron:"익스터널", pos:"adj", level:"B2", meanings:["외부의","외면의"],
+  { word:"external", exams:["공무원"], pron:"익스터널", pos:"adj", level:"B2", meanings:["외부의","외면의"],
     syn:["outer","outside","surface-level"], ant:["internal"],
     ex:[{ s:"The report blamed {{}} factors for the delay.", f:"external", ko:"그 보고서는 지연의 원인을 외부 요인으로 돌렸다." }] },
 
@@ -2020,7 +2024,7 @@ window.VOCAB_E = [
      앞에 두고 기존 GLOSS 의 '발췌하다' 를 둘째 뜻으로 남겼다. 품사는 동사이므로
      clipping 쪽은 어미가 바뀌지만 뜻은 지켜진다(7차 equal 과 같은 꼴).
      유의어로 pull out 은 쓰지 않았다 — GLOSS 가 "물러나다, 손을 떼다" 다. */
-  { word:"extract", pron:"익스트랙트", pos:"v", level:"C1", meanings:["추출하다","발췌하다"],
+  { word:"extract", exams:["공무원"], pron:"익스트랙트", pos:"v", level:"C1", meanings:["추출하다","발췌하다"],
     syn:["draw out","distill","take out"],
     ex:[{ s:"Machines now {{}} sugar from beet in one pass.", f:"extract", ko:"기계는 이제 한 번에 사탕무에서 설탕을 추출한다." }] },
 
@@ -2075,25 +2079,47 @@ window.VOCAB_E = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A~D 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차: earnest ~ efficient (28개) ───────────────── */
+  "aged": "나이 든, 노령의",
+  "arm": "무장시키다, 갖추게 하다",
   "blot out":"지워 없애다, 가리다",
+  "boss": "상사, 사장",
+  "classless": "계급 없는",
   "cost-effective":"비용 대비 효과가 좋은",
+  "democratic": "민주적인",
+  "detonate": "폭발시키다, 터뜨리다",
+  "doorway": "출입구",
   "eatable":"먹을 수 있는",
   "efficacy":"효능",
   "elation":"의기양양, 들뜬 기쁨",
+  "energy": "기운, 에너지",
   "fit to eat":"먹기에 적합한",
   "futility":"무익함, 헛됨",
+  "hierarchical": "위계적인, 계층적인",
+  "hirer": "고용하는 사람",
+  "implode": "안으로 붕괴하다, 내파하다",
   "inefficiency":"비능률, 비효율",
+  "inscribe": "새기다, 적다",
   "insincere":"진심이 아닌, 겉치레의",
+  "instructor": "강사, 교사",
   "laid-back":"서두르지 않는, 태평한",
   "leading article":"주요 논설",
-  "mundane":"평범한, 일상적인",
+  "old": "늙은, 오래된",
   "opinion piece":"의견 기고문",
   "poisonous":"유독한, 독이 있는",
   "potency":"효력, 위력",
+  "reiterate": "거듭 말하다",
+  "repeat": "반복하다, 되풀이하다",
+  "resonate": "울려 퍼지다, 공명하다",
   "rim":"테두리, 언저리",
   "safe to eat":"먹어도 안전한",
+  "senior": "연장자의, 노년의",
+  "staff member": "직원",
+  "staffer": "부서원, 사원",
   "streamlined":"간소화된, 군더더기 없는",
+  "subjugate": "예속시키다, 정복하다",
+  "teacher": "선생님",
   "tolerant":"너그러운, 관대한",
+  "unfair": "불공평한",
   "usefulness":"유용성",
   "wasteful":"낭비하는, 헤픈",
 
@@ -2123,7 +2149,6 @@ Object.assign(window.GLOSS, {
   "rough weather":"거친 날씨",
   "self":"자기 자신",
   "self-centered":"자기중심적인",
-  "self-esteem":"자존감",
   "springy":"튀어 오르는, 반발력 있는",
   "stretchy":"잘 늘어나는",
   "stylish":"멋스러운, 세련된",
@@ -2217,7 +2242,6 @@ Object.assign(window.GLOSS, {
   "put at risk":"위험에 놓다",
   "put in force":"효력을 발생시키다",
   "put up with":"참고 견디다",
-  "reassurance":"안심시키는 말, 확언",
   "rivet":"시선을 붙들어 매다",
   "stamina":"체력, 지구력",
   "staying power":"버티는 힘",
@@ -2285,7 +2309,7 @@ Object.assign(window.GLOSS, {
   "widespread disease":"널리 퍼진 질병",
 
   /* ── 8차: erroneous ~ evaluate (35개) ───────────────── */
-  "blow up":"폭발하다",
+  "blow up":"폭발하다, 벌컥 화내다",
   "burst forth":"터져 나오다",
   "clear out":"비우다, 치우다",
   "code of conduct":"행동 규범",
@@ -2306,7 +2330,6 @@ Object.assign(window.GLOSS, {
   "remove to safety":"안전한 곳으로 옮기다",
   "shirk":"회피해 버리다",
   "step up":"단계적으로 높이다",
-  "tribal":"부족의",
   "undying":"죽지 않는",
   "unethical":"비윤리적인",
   "well-founded":"근거가 확실한",
@@ -2349,7 +2372,6 @@ Object.assign(window.GLOSS, {
   "drained":"진이 빠진",
   "excused":"면제된",
   "expel air":"공기를 밀어내다",
-  "exposition":"박람회, 전시",
   "free from":"~에서 벗어난",
   "immoderate":"절제 없는",
   "manager":"경영자, 운영자",
@@ -2365,11 +2387,11 @@ Object.assign(window.GLOSS, {
   "select":"선별된",
   "senior official":"고위 간부",
   "shout of surprise":"놀라서 내는 소리",
-  "showcase":"전시 행사",
   "shutting out":"몰아냄",
   "trip":"여행, 이동",
   "wield":"휘두르다, 행사하다",
   "worked up":"들뜬",
+  "worker": "일꾼, 근로자",
   "worn out":"녹초가 된",
 
   /* ── 11차: exhilarating ~ explicit (38개) ───────────────── */
@@ -2396,7 +2418,6 @@ Object.assign(window.GLOSS, {
   "send into exile":"망명 보내다",
   "skilled person":"숙련된 사람",
   "special skill":"특수 기능",
-  "specialist":"특정 분야 전문가",
   "spell out":"자세히 설명하다",
   "spending":"지출, 씀",
   "spread out":"퍼지다, 펼쳐지다",
@@ -2412,7 +2433,6 @@ Object.assign(window.GLOSS, {
   "beautifully made":"아름답게 만들어진",
   "being exposed":"드러나 있음",
   "bring to light":"세상에 드러내다",
-  "broad":"넓은, 폭넓은",
   "bursting":"터짐",
   "clearly":"분명하게",
   "detonation":"폭발, 기폭",
@@ -2460,5 +2480,6 @@ Object.assign(window.GLOSS, {
   "snuff out":"꺼 버리다",
   "sociable type":"어울리기 좋아하는 사람",
   "ugly sight":"보기 흉한 광경",
-  "wiping out":"완전히 없앰"
+  "wiping out":"완전히 없앰",
+  "young": "젊은"
 });

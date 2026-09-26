@@ -49,6 +49,10 @@ window.VOCAB_G = [
   { word:"gap", exams:["공무원"], pron:"갭", pos:"n", level:"B1", meanings:["격차","틈"], syn:["difference","gulf","disparity"], ex:[{ s:"The {{}} had more to do with each school's resources.", f:"gap", ko:"그 격차는 각 학교의 자원과 더 관련이 있었다." }] },
   { word:"giraffe", exams:["공무원"], pron:"지래프", pos:"n", level:"B1", meanings:["기린"], ex:[{ s:"A baby {{}} has its own unique markings.", f:"giraffe", ko:"새끼 기린은 저마다 고유한 무늬를 지닌다." }] },
   { word:"greet", exams:["공무원"], pron:"그릿", pos:"v", level:"B1", meanings:["인사하다","맞이하다"], syn:["welcome","salute","receive"], ant:["ignore"], ex:[{ s:"Volunteers warmly {{}} and assist visitors.", f:"greet", ko:"자원봉사자들은 방문객을 따뜻하게 맞이하고 돕는다." }] },
+  { word:"gain", exams:["공무원"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
+  { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
+  { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
+  { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -130,7 +134,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '유전자' 와 글자까지 같다. chromosome 의 유의어로 쓰인다.
      syn 은 비웠다 — 유전자의 동의어라 할 만한 낱말이 없다. */
-  { word:"gene", pron:"진", pos:"n", level:"B2", meanings:["유전자"],
+  { word:"gene", exams:["공무원"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
     ex:[{ s:"Scientists located the {{}} responsible for the disorder.", f:"gene", ko:"과학자들은 그 질환을 일으키는 유전자를 찾아냈다." }] },
 
   { word:"genealogy", pron:"지니앨러지", pos:"n", level:"C1", meanings:["계보","족보"],
@@ -139,13 +143,13 @@ window.VOCAB_G = [
 
   /* 원본은 '일반의, 전반에 걸치는; 육군 장군' 이다. 두 갈래는 품사가 달라
      한 카드에 담으면 뜻이 흐려진다. 형용사 쪽으로 모았다. */
-  { word:"general", pron:"제너럴", pos:"adj", level:"B1", meanings:["일반의","전반적인"],
+  { word:"general", exams:["공무원"], pron:"제너럴", pos:"adj", level:"B1", meanings:["일반의","전반적인"],
     syn:["overall","widespread","broad"], ant:["specific"],
     ex:[{ s:"There is {{}} agreement that the plan should go ahead.", f:"general", ko:"그 계획을 진행해야 한다는 데 전반적인 동의가 있다." }] },
 
   /* 승격 ① — GLOSS 가 '만들어 내다, 발생시키다' 다. 원본은 순서만 반대이므로
      사전 순서를 그대로 지켜 bring in 문제의 화면이 한 글자도 안 바뀌게 했다. */
-  { word:"generate", pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
+  { word:"generate", exams:["공무원"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
     syn:["produce","create","yield"],
     ex:[{ s:"Solar panels {{}} enough power for the whole building.", f:"generate", ko:"태양 전지판이 건물 전체에 쓸 충분한 전력을 만들어 낸다." }] },
 
@@ -225,7 +229,7 @@ window.VOCAB_G = [
   { word:"geometry", pron:"지아머트리", pos:"n", level:"B2", meanings:["기하학"],
     ex:[{ s:"Students learn basic {{}} in middle school.", f:"geometry", ko:"학생들은 중학교에서 기초 기하학을 배운다." }] },
 
-  { word:"geothermal", pron:"지오서멀", pos:"adj", level:"C1", meanings:["지열의"],
+  { word:"geothermal", exams:["공무원"], pron:"지오서멀", pos:"adj", level:"C1", meanings:["지열의"],
     ex:[{ s:"Iceland draws much of its power from {{}} sources.", f:"geothermal", ko:"아이슬란드는 전력의 상당 부분을 지열원에서 얻는다." }] },
 
   /* 승격 ② — GLOSS 는 '세균; 싹' 인데 원본은 '세균, 병균' 이다. bud 의 유의어로
@@ -333,7 +337,7 @@ window.VOCAB_G = [
     syn:["quick look","hasty glance","sighting"],
     ex:[{ s:"We caught a brief {{}} of the castle through the fog.", f:"glimpse", ko:"우리는 안개 속에서 그 성을 잠깐 보았다." }] },
 
-  { word:"glitter", pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
+  { word:"glitter", exams:["공무원"], pron:"글리터", pos:"v", level:"B2", meanings:["반짝반짝 빛나다"],
     syn:["sparkle","shimmer","twinkle"],
     ex:[{ s:"Frost made the whole field {{}} in the morning sun.", f:"glitter", ko:"서리가 아침 햇살에 들판 전체를 반짝이게 했다." }] },
 
@@ -451,7 +455,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '웅장한, 원대한' 과 같은 갈래다. 참조하는 기존 문제는 없어
      원본의 '웅장한, 장엄한' 을 그대로 썼다. */
-  { word:"grand", pron:"그랜드", pos:"adj", level:"B1", meanings:["웅장한","장엄한"],
+  { word:"grand", exams:["공무원"], pron:"그랜드", pos:"adj", level:"B1", meanings:["웅장한","장엄한"],
     syn:["majestic","imposing","stately"], ant:["modest"],
     ex:[{ s:"Guests entered through a {{}} marble hall.", f:"grand", ko:"손님들은 웅장한 대리석 홀을 지나 들어왔다." }] },
 
@@ -526,11 +530,11 @@ window.VOCAB_G = [
     syn:["avaricious","grasping","insatiable"], ant:["selfless"],
     ex:[{ s:"The story warns children not to be {{}}.", f:"greedy", ko:"그 이야기는 아이들에게 탐욕스러워지지 말라고 경고한다." }] },
 
-  { word:"greenhouse", pron:"그린하우스", pos:"n", level:"B1", meanings:["온실"],
+  { word:"greenhouse", exams:["공무원"], pron:"그린하우스", pos:"n", level:"B1", meanings:["온실"],
     syn:["hothouse","glasshouse","conservatory"],
     ex:[{ s:"Tomatoes ripen weeks earlier inside the {{}}.", f:"greenhouse", ko:"토마토는 온실 안에서 몇 주 더 일찍 익는다." }] },
 
-  { word:"gregarious", pron:"그리게리어스", pos:"adj", level:"C2", meanings:["사교적인"],
+  { word:"gregarious", pron:"그리게리어스", pos:"adj", level:"C2", meanings:["사교적인","무리 지어 사는"],
     syn:["sociable","outgoing","convivial"], ant:["reclusive"],
     ex:[{ s:"His {{}} nature made him the centre of every party.", f:"gregarious", ko:"사교적인 성격 덕에 그는 모든 모임의 중심이 되었다." }] },
 
@@ -641,7 +645,7 @@ window.VOCAB_G = [
   /* 승격 ② — GLOSS '보장하다; 보증' 을 글자까지 지켰다. assure·ensure 두 문제가
      이 단어를 유의어로 쓴다. 첫 뜻이 기존 표제어 cover 와 같지만, quizgen 의
      distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
-  { word:"guarantee", pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
+  { word:"guarantee", exams:["공무원"], pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
     gov:{ prep:["against","of","for"], pat:"guarantee {{}} manufacturing defects", usage:"guarantee against ~ : ~에 대해 보증하다" },
     syn:["assure","ensure","give one's word"],
     ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },
@@ -671,6 +675,7 @@ window.VOCAB_G = [
 Object.assign(window.GLOSS, {
   "acrobatics":"곡예",
   "age gap":"연령 차이",
+  "age group": "연령대",
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
@@ -679,7 +684,6 @@ Object.assign(window.GLOSS, {
   "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
   "baseless":"근거가 희박한",
-  "basis":"기반, 밑바탕",
   "be friendly with":"~와 친하게 지내다",
   "beckon":"손짓으로 부르다",
   "benevolence":"자애, 선행",
@@ -695,6 +699,7 @@ Object.assign(window.GLOSS, {
   "charitable giving":"자선 기부",
   "clasp":"움켜 안다",
   "clutch":"꽉 붙잡다",
+  "cohort": "동년배 집단, 코호트",
   "complete studies":"학업을 마치다",
   "congregation":"신도들, 모인 사람들",
   "connoisseur":"감식가",
@@ -704,6 +709,7 @@ Object.assign(window.GLOSS, {
   "corn":"곡물, 낟알",
   "covetousness":"남의 것을 바람",
   "crease":"주름이 지다",
+  "credulous": "쉽게 믿는",
   "crux":"핵심, 관건",
   "culpable":"잘못이 있는",
   "culture clash":"문화 충돌",
@@ -725,6 +731,7 @@ Object.assign(window.GLOSS, {
   "flurry":"돌발적인 바람",
   "food lover":"음식을 즐기는 사람",
   "forbidding":"위압적인, 험악한",
+  "fulfillment": "성취감, 충족",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",
@@ -734,6 +741,7 @@ Object.assign(window.GLOSS, {
   "go under":"사업이 망하다",
   "grasping":"욕심 사나운",
   "gripe":"툴툴대다",
+  "grit": "모래알, 잔돌",
   "grow weary of":"~에 넌더리가 나다",
   "guiding principle":"지침이 되는 원칙",
   "heartache":"가슴앓이",
@@ -751,11 +759,12 @@ Object.assign(window.GLOSS, {
   "indebtedness":"은혜를 입음",
   "ingratitude":"배은망덕",
   "inherited":"물려받은",
+  "internationally": "국제적으로",
   "justified":"정당한 근거가 있는",
   "kernel":"알맹이",
-  "landscape":"풍경, 지형",
   "lattice":"격자 구조",
   "lifelike":"실물 같은",
+  "little by little": "조금씩",
   "lose control":"통제를 잃다",
   "magnanimity":"도량이 큼",
   "mesh":"그물망",
@@ -768,13 +777,16 @@ Object.assign(window.GLOSS, {
   "parking space":"주차 공간",
   "pass":"지나가다, 통과되다",
   "pathogen":"병원균",
+  "pebbles": "조약돌",
   "pedigree":"가계, 혈통",
   "pioneering":"선구적인",
   "please":"흡족하게 하다",
+  "pleasure": "기쁨, 즐거움",
   "power unit":"동력 장치",
   "precept":"계율, 가르침",
   "prefer":"더 좋아하다",
   "preside over":"~을 주재하다",
+  "progressively": "점진적으로",
   "puff":"숨을 가쁘게 쉬다",
   "pull through":"이겨 내다",
   "pulverize":"가루로 만들다",
@@ -782,7 +794,6 @@ Object.assign(window.GLOSS, {
   "rapacity":"탐욕스러운 강탈",
   "rationale":"논리적 근거",
   "reclusive":"은둔하는",
-  "regional":"지역의",
   "resplendent":"눈부시게 화려한",
   "rumble":"우르릉거리다",
   "run wild":"제멋대로 날뛰다",
@@ -800,7 +811,9 @@ Object.assign(window.GLOSS, {
   "squall":"스콜, 돌풍",
   "star system":"항성계",
   "stark":"냉혹한, 황량한",
+  "steadily": "꾸준히",
   "stick":"달라붙다",
+  "stones": "돌멩이",
   "style":"양식, 형식",
   "succumb to":"~에 무너지다",
   "thankfulness":"감사하는 마음",
@@ -810,6 +823,7 @@ Object.assign(window.GLOSS, {
   "trailblazing":"길을 개척하는",
   "transgenic":"유전자 이식된",
   "trudge":"터벅터벅 걷다",
+  "trusting": "남을 잘 믿는",
   "tumbling":"공중 곡예",
   "turbine":"터빈",
   "twinkle":"깜박이며 빛나다",

@@ -54,7 +54,7 @@ window.VOCAB_Y = [
     ex:[{ s:"They {{}} for a quiet life.", f:"yearn", ko:"그들은 조용한 삶을 갈망한다." }] },
 
   /* '계속되는' 을 품어 continuous·ongoing·uninterrupted 셋과 맞물려 배제된다. */
-  { word:"year-round", pron:"이어 라운드", pos:"adj", level:"B2", meanings:["연중 계속되는"],
+  { word:"year-round", exams:["공무원"], pron:"이어 라운드", pos:"adj", level:"B2", meanings:["연중 계속되는"],
     syn:["going on all year","lasting the whole year","through every season"],
     ex:[{ s:"It is a {{}} resort.", f:"year-round", ko:"그곳은 연중 계속되는 휴양지다." }] },
 

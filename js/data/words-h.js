@@ -21,6 +21,13 @@ window.VOCAB_H = [
   { word:"hold off", exams:["공무원"], pron:"홀드 오프", pos:"phr", level:"B2", meanings:["미루다","보류하다"], syn:["delay","postpone","defer"], ex:[{ s:"The company had to {{}} the training plan.", f:"hold off", ko:"그 회사는 교육 계획을 미뤄야 했다." }] },
   { word:"homespun", exams:["공무원"], pron:"홈스펀", pos:"adj", level:"C1", meanings:["소박한","손수 만든"], syn:["simple","plain","unsophisticated"], ant:["sophisticated"], ex:[{ s:"There were thousands of {{}} attempts to pay tribute.", f:"homespun", ko:"경의를 표하려는 소박한 시도가 수천 건 있었다." }] },
   { word:"hormone", exams:["공무원"], pron:"호르몬", pos:"n", level:"B2", meanings:["호르몬"], ex:[{ s:"Glands release chemical {{}} into the bloodstream.", f:"hormones", ko:"분비샘은 화학 호르몬을 혈류로 방출한다." }] },
+  { word:"habitable", exams:["공무원"], pron:"해비터블", pos:"adj", level:"C1", meanings:["살기에 적합한","거주할 수 있는"], syn:["livable","inhabitable","hospitable"], ant:["uninhabitable"], ex:[{ s:"People will move to more {{}} areas as the climate changes.", f:"habitable", ko:"기후가 변하면서 사람들은 더 살기 좋은 지역으로 이동할 것이다." }] },
+  { word:"handle", exams:["공무원"], pron:"핸들", pos:"v", level:"B1", meanings:["다루다","감당하다"], syn:["deal with","cope with","manage"], ex:[{ s:"Tell our assistant, and she will {{}} it.", f:"handle", ko:"우리 조수에게 말하면 그녀가 처리할 거예요." }] },
+  { word:"hands-on", exams:["공무원"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
+  { word:"harmful", exams:["공무원"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
+  { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
+  { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
+  { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -214,7 +221,7 @@ window.VOCAB_H = [
 
   /* ── 챕터 3 ─────────────────────────────── */
 
-  { word:"hear from", pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
+  { word:"hear from", exams:["공무원"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
     syn:["get word from","receive news from","be contacted by"] },
 
   { word:"heartfelt", pron:"하트펠트", pos:"adj", level:"B2", meanings:["진심에서 우러난"],
@@ -258,7 +265,7 @@ window.VOCAB_H = [
     ex:[{ s:"The eldest son was named {{}} to the entire estate.", f:"heir", ko:"장남이 전 재산의 상속인으로 지명됐다." }],
     gov:{ prep:["to"], usage:"heir to ~ : ~의 상속인" } },
 
-  { word:"helpless", pron:"헬프리스", pos:"adj", level:"B2", meanings:["무력한"],
+  { word:"helpless", exams:["공무원"], pron:"헬프리스", pos:"adj", level:"B2", meanings:["무력한"],
     syn:["powerless","defenseless","vulnerable"], ant:["capable"],
     ex:[{ s:"Without electricity the hospital felt utterly {{}}.", f:"helpless", ko:"전기 없이 병원은 완전히 무력하게 느껴졌다." }] },
 
@@ -350,7 +357,7 @@ window.VOCAB_H = [
     ex:[{ s:"The factory plans to {{}} fifty new workers next month.", f:"hire", ko:"그 공장은 다음 달에 새 근로자 50명을 고용할 계획이다." }],
     gov:{ prep:["as","for"], usage:"hire A as B : A를 B로 고용하다" } },
 
-  { word:"historic", pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
+  { word:"historic", exams:["공무원"], pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
     syn:["landmark","epochal","monumental"],
     ex:[{ s:"The signing of the treaty was a truly {{}} event.", f:"historic", ko:"그 조약의 서명은 진정으로 역사적인 사건이었다." }] },
 
@@ -415,7 +422,7 @@ window.VOCAB_H = [
     syn:["terrifying","gruesome","nightmarish"],
     ex:[{ s:"Witnesses described the accident as {{}}.", f:"horrific", ko:"목격자들은 그 사고를 무시무시했다고 묘사했다." }] },
 
-  { word:"hospitable", pron:"하스피터블", pos:"adj", level:"B2", meanings:["환대하는","호의적인"],
+  { word:"hospitable", exams:["공무원"], pron:"하스피터블", pos:"adj", level:"B2", meanings:["환대하는","살기 좋은"],
     syn:["welcoming","generous","warm"], ant:["inhospitable"],
     ex:[{ s:"The villagers were remarkably {{}} to the visitors.", f:"hospitable", ko:"마을 사람들은 방문객에게 놀라울 정도로 친절했다." }],
     gov:{ prep:["to","toward"], usage:"hospitable to ~ : ~에게 환대하는" } },
@@ -450,7 +457,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '가정의, 가정용의' 이다. domestic 이 형용사를 쓴다.
      원본은 '가정' (명사)인데 domestic 문맥을 지키려면 형용사로 둬야 한다. */
-  { word:"household", pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
+  { word:"household", exams:["공무원"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
     syn:["domestic","family","residential"],
     ex:[{ s:"{{}} waste is collected twice a week.", f:"Household", ko:"가정 폐기물은 주 2회 수거된다." }] },
 
@@ -465,7 +472,7 @@ window.VOCAB_H = [
     ex:[{ s:"{{}} has always sought to understand the stars.", f:"Humankind", ko:"인류는 항상 별을 이해하려 했다." }] },
 
   /* 승격 ① — arrogant 의 반의어로 쓰인다. */
-  { word:"humble", pron:"험블", pos:"adj", level:"B2", meanings:["겸손한","비천한"],
+  { word:"humble", exams:["공무원"], pron:"험블", pos:"adj", level:"B2", meanings:["겸손한","비천한"],
     syn:["modest","meek","unassuming"], ant:["arrogant"],
     ex:[{ s:"Despite his fame, he remained {{}} and approachable.", f:"humble", ko:"명성에도 그는 겸손하고 다가가기 쉬운 사람이었다." }] },
 
@@ -492,7 +499,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — ego 의 반의어로 쓰인다. humble·humiliate·humiliation 과 어근이
      같지만 품사가 명사라 다른 품사와 같은 보드에 안 온다. */
-  { word:"humility", pron:"휴밀리티", pos:"n", level:"B2", meanings:["겸손"],
+  { word:"humility", exams:["공무원"], pron:"휴밀리티", pos:"n", level:"B2", meanings:["겸손"],
     syn:["modesty","meekness","humbleness"], ant:["pride"],
     ex:[{ s:"True strength lies in showing {{}} when you succeed.", f:"humility", ko:"진정한 강인함은 성공했을 때 겸손을 보이는 데 있다." }] },
 
@@ -559,10 +566,9 @@ Object.assign(window.GLOSS, {
   "belligerent":"호전적인",
   "benign":"무해한, 양성의",
   "bias crime":"편견 범죄",
-  "birthright":"생득권",
-  "blessed":"신성한, 축복받은",
   "built-in":"내장된",
   "bustling":"북적이는",
+  "cache": "은닉처, 숨겨 둔 것",
   "caption":"캡션, 설명문",
   "central office":"중앙 사무소",
   "class system":"계급 제도",
@@ -570,7 +576,6 @@ Object.assign(window.GLOSS, {
   "concordant":"조화하는",
   "conjecture":"추측",
   "core region":"핵심 지역",
-  "crop":"수확, 농작물",
   "dampness":"습기",
   "danger":"위험, 위험성",
   "dangerous":"위험한",
@@ -584,6 +589,7 @@ Object.assign(window.GLOSS, {
   "dwelling":"거주지, 주거",
   "enmity":"원한",
   "epochal":"획기적인(시대를 가르는)",
+  "experiential": "경험에 근거한",
   "fastener":"잠금장치",
   "fling":"세게 던지다",
   "foyer":"현관 로비",
@@ -609,6 +615,7 @@ Object.assign(window.GLOSS, {
   "indignity":"모욕",
   "inflexible":"융통성 없는",
   "ingrained":"깊이 뿌리 박힌",
+  "inhabitable": "사람이 살 수 있는",
   "inheritor":"상속인, 계승자",
   "inhospitable":"불친절한",
   "innocuous":"해롭지 않은",
@@ -619,6 +626,7 @@ Object.assign(window.GLOSS, {
   "keep hold of":"~을 잡고 놓지 않다",
   "landmark":"기념비적인",
   "lie dormant":"휴면 상태에 있다",
+  "livable": "살기 좋은",
   "loathsome":"역겨운",
   "lob":"높이 던지다",
   "longhand":"필기체",
@@ -626,7 +634,6 @@ Object.assign(window.GLOSS, {
   "low-pitched":"저음의",
   "luxury":"호화스러운",
   "main office":"본사, 본부",
-  "mankind":"인류",
   "manslaughter":"과실치사",
   "meek":"순한, 온순한",
   "meekness":"유순함",
@@ -644,7 +651,6 @@ Object.assign(window.GLOSS, {
   "overwinter":"겨울을 나다",
   "pecking order":"서열",
   "peg":"못, 걸이",
-  "perilous":"위태로운",
   "piercing":"찌르는 듯한",
   "plant-eater":"초식동물",
   "powerless":"무력한",
@@ -662,7 +668,6 @@ Object.assign(window.GLOSS, {
   "satiety":"포만감",
   "scorch":"그슬리다, 태우다",
   "shrill":"귀가 찢어지는 듯한",
-  "sincerity":"진심",
   "sleep":"잠들다",
   "socialize with":"~와 사교하다",
   "soften":"부드럽게 하다",
@@ -670,6 +675,7 @@ Object.assign(window.GLOSS, {
   "spend time with":"~와 시간을 보내다",
   "spotlight":"주목하다",
   "squeaky":"삐걱거리는",
+  "stash": "몰래 모아 둔 것",
   "stature":"키, 신장",
   "steamy":"후텁지근한",
   "terrifying":"공포스러운",
@@ -681,6 +687,7 @@ Object.assign(window.GLOSS, {
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
   "unassuming":"겸손한",
+  "uninhabitable": "사람이 살 수 없는",
   "uplifting":"기분을 북돋우는",
   "upscale":"상류층 대상의",
   "wait":"기다리다",

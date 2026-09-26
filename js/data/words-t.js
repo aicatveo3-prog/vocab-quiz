@@ -32,7 +32,7 @@
  */
 window.VOCAB_T = [
   { word:"taxonomist", exams:["공무원"], pron:"택소노미스트", pos:"n", level:"C2", meanings:["분류학자"], ex:[{ s:"{{}} recognize about 1.5 million living species.", f:"Taxonomists", ko:"분류학자들은 약 150만 종의 생물을 인정한다." }] },
-  { word:"template", exams:["공무원"], pron:"템플릿", pos:"n", level:"C1", meanings:["본보기","견본","템플릿"], syn:["model","pattern","guide"], ex:[{ s:"It could act as a {{}} for the whole discipline.", f:"template", ko:"그것은 그 분야 전체의 본보기가 될 수 있다." }] },
+  { word:"template", exams:["공무원"], pron:"템플릿", pos:"n", level:"C1", meanings:["본보기","견본"], syn:["model","pattern","guide"], ex:[{ s:"It could act as a {{}} for the whole discipline.", f:"template", ko:"그것은 그 분야 전체의 본보기가 될 수 있다." }] },
   { word:"tense", exams:["공무원"], pron:"텐스", pos:"v", level:"B2", meanings:["긴장시키다","긴장한"], syn:["tighten","stiffen","strain"], ant:["relax"], ex:[{ s:"Adrenaline {{}} the muscles for action.", f:"tenses", ko:"아드레날린은 행동을 위해 근육을 긴장시킨다." }] },
   { word:"tentatively", exams:["공무원"], pron:"텐터티블리", pos:"adv", level:"C1", meanings:["잠정적으로","머뭇거리며"], syn:["provisionally","hesitantly","cautiously"], ant:["definitely"], ex:[{ s:"He answered {{}}, unsure of the facts.", f:"tentatively", ko:"그는 사실을 확신하지 못한 채 머뭇거리며 답했다." }] },
   { word:"thoroughly", exams:["공무원"], pron:"써로울리", pos:"adv", level:"B2", meanings:["철저히","완전히"], syn:["completely","fully","exhaustively"], ex:[{ s:"He knows the city {{}}.", f:"thoroughly", ko:"그는 그 도시를 철저히 안다." }] },
@@ -43,10 +43,20 @@ window.VOCAB_T = [
   { word:"tribute", exams:["공무원"], pron:"트리뷰트", pos:"n", level:"C1", meanings:["헌사","경의"], syn:["homage","respect","honor"], ex:[{ s:"They made attempts to pay {{}} to the team.", f:"tribute", ko:"그들은 팀에 경의를 표하려 애썼다." }] },
   { word:"trove", exams:["공무원"], pron:"트로브", pos:"n", level:"C2", meanings:["귀중한 발견물","수집물"], syn:["hoard","cache","collection"], ex:[{ s:"Evans found a {{}} of artifacts from the Minoan age.", f:"trove", ko:"에번스는 미노아 시대 유물의 보고를 발견했다." }] },
   { word:"thereby", exams:["공무원"], pron:"데어바이", pos:"adv", level:"C1", meanings:["그렇게 함으로써","그것에 의해"], syn:["thus","thereupon","consequently"], ex:[{ s:"We pollute the oceans, {{}} harming ourselves.", f:"thereby", ko:"우리는 바다를 오염시켜, 그렇게 함으로써 우리 자신을 해친다." }] },
-  { word:"takeaway", exams:["공무원"], pron:"테이크어웨이", pos:"n", level:"B2", meanings:["포장 음식","테이크아웃"], syn:["takeout","fast food"], ex:[{ s:"Target the {{}} items that end up in the ocean.", f:"takeaway", ko:"바다로 흘러드는 포장 음식 용기를 겨냥하라." }] },
+  { word:"takeaway", exams:["공무원"], pron:"테이크어웨이", pos:"n", level:"B2", meanings:["포장 음식","테이크아웃"], syn:["takeout","carryout","fast food"], ex:[{ s:"Target the {{}} items that end up in the ocean.", f:"takeaway", ko:"바다로 흘러드는 포장 음식 용기를 겨냥하라." }] },
   { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
-  { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다","대하다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
-  { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리","대우"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
+  { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
+  { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
+  { word:"task", exams:["공무원"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
+  { word:"telling", exams:["공무원"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
+  { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
+  { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
+  { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
+  { word:"target", exams:["공무원"], pron:"타깃", pos:"v", level:"B1", meanings:["겨냥하다","목표로 삼다"], syn:["aim at","single out","focus on"], ex:[{ s:"The scam {{}} people who own cars.", f:"targets", ko:"그 사기는 차를 가진 사람들을 노린다." }] },
+  { word:"technique", exams:["공무원"], pron:"테크닉", pos:"n", level:"B1", meanings:["기법","기술"], syn:["method","procedure","skill"], ex:[{ s:"Cooling your hands is a simple {{}} for beating the heat.", f:"technique", ko:"손을 식히는 것은 더위를 이기는 간단한 기법이다." }] },
+  { word:"thus", exams:["공무원"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
+  { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
+  { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -141,7 +151,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑦ — 사전 단일값 유지(참조 occur). 교재의 '일어나다' 는 come about
      자리여서 버렸고, 그 come about 을 선택지로 썼다. */
-  { word:"take place", pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
+  { word:"take place", exams:["공무원"], pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
     syn:["occur","come about","happen as planned"] },
 
   /* ── 챕터 2 ────────────────────────────────────── */
@@ -209,11 +219,11 @@ window.VOCAB_T = [
     syn:["make fun of","poke fun at","needle in jest"],
     ex:[{ s:"Do not {{}} your little brother.", f:"tease", ko:"동생을 놀리지 마라." }] },
 
-  { word:"technical", pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
+  { word:"technical", exams:["공무원"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
     syn:["to do with technique","of applied science","needing special skill"],
     ex:[{ s:"The report is too {{}} for me.", f:"technical", ko:"그 보고서는 내게 너무 기술적이다." }] },
 
-  { word:"technician", pron:"테크니션", pos:"n", level:"B2", meanings:["기술자"],
+  { word:"technician", exams:["공무원"], pron:"테크니션", pos:"n", level:"B2", meanings:["기술자"],
     syn:["skilled worker","one trained in a craft","hands-on expert"],
     ex:[{ s:"A {{}} came to fix the line.", f:"technician", ko:"기술자가 선로를 고치러 왔다." }] },
 
@@ -307,13 +317,13 @@ window.VOCAB_T = [
     ex:[{ s:"The new {{}} moved in on Friday.", f:"tenant", ko:"새 세입자가 금요일에 들어왔다." }] },
 
   /* 괄호 걷음. attend to(처리하다, 돌보다) 와 '돌보다' 가 맞물려 배제된다. */
-  { word:"tend", pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
+  { word:"tend", exams:["공무원"], pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
     syn:["be inclined to","look after","attend to"],
     ex:[{ s:"Prices {{}} to rise in winter.", f:"tend", ko:"값은 겨울에 오르는 경향이 있다." }] },
 
   /* 승격 ⑱ — 사전 단일값 유지. 참조 inclination(I) 의 화면은 바뀌지 않는다.
      교재의 '경향' 은 inclination 자리다. */
-  { word:"tendency", pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
+  { word:"tendency", exams:["공무원"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
     syn:["inclination","predisposition","leaning one way"],
     ex:[{ s:"He has a {{}} to talk too fast.", f:"tendency", ko:"그는 너무 빨리 말하는 성향이 있다." }] },
 
@@ -336,7 +346,7 @@ window.VOCAB_T = [
     ex:[{ s:"Her {{}} lasted six years.", f:"tenure", ko:"그녀의 재임 기간은 육 년이었다." }] },
 
   /* jargon(용어)·duration·length·span(기간) 과 두 갈래 모두 맞물려 배제된다. */
-  { word:"term", pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
+  { word:"term", exams:["공무원"], pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
     syn:["jargon","word for a thing","set period"],
     ex:[{ s:"Explain that {{}} in plain words.", f:"term", ko:"그 용어를 쉬운 말로 풀어 주세요." }] },
 
@@ -972,7 +982,7 @@ window.VOCAB_T = [
     syn:["carriage of goods","change of trains","passage from place to place"],
     ex:[{ s:"The goods were damaged in {{}}.", f:"transit", ko:"그 물품은 수송 중에 손상되었다." }] },
 
-  { word:"transition", pron:"트랜지션", pos:"n", level:"B2", meanings:["이행","전이"],
+  { word:"transition", exams:["공무원"], pron:"트랜지션", pos:"n", level:"B2", meanings:["이행","전이"],
     syn:["move from one state to another","passing over","change of stage"],
     ex:[{ s:"The {{}} to the new system took a year.", f:"transition", ko:"새 체계로의 이행은 일 년이 걸렸다." }] },
 
@@ -983,7 +993,7 @@ window.VOCAB_T = [
   /* 승격 63 — 사전 글자 유지. 참조 broadcast(B)·dispatch(D) 두 곳의 화면은
      바뀌지 않는다. convey·deliver·relay·impart 가 모두 '전달하다' 를 써서
      맞물려 배제된다. */
-  { word:"transmit", pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
+  { word:"transmit", exams:["공무원"], pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
     syn:["broadcast","dispatch","send out over a distance"],
     ex:[{ s:"The station will {{}} the match live.", f:"transmit", ko:"그 방송국은 경기를 생중계로 전달할 것이다." }] },
 
@@ -1011,7 +1021,7 @@ window.VOCAB_T = [
 
   /* ★ '운송' 을 '수송' 으로 고쳤다. 위 transit(수송, 환승) 과 글자를 맞춰
      자동 배제시킨 것이다 — 둘은 사실상 같은 말이어서 갈라 쓸 수 없었다. */
-  { word:"transportation", pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
+  { word:"transportation", exams:["공무원"], pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
     syn:["means of getting about","carriage of people","public means of travel"],
     ex:[{ s:"Public {{}} is cheap here.", f:"transportation", ko:"이곳은 대중 교통이 싸다." }] },
 
@@ -1121,7 +1131,7 @@ window.VOCAB_T = [
 
   /* 승격 71 — 사전 글자 유지. 참조 craze(C)·fad(F) 두 곳의 화면은 바뀌지
      않는다. 교재의 '경향' 은 inclination(경향, 성향) 자리라 버렸다. */
-  { word:"trend", pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
+  { word:"trend", exams:["공무원"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
     syn:["craze","fad","general direction of change"],
     ex:[{ s:"There is a clear {{}} toward smaller homes.", f:"trend", ko:"더 작은 집을 향한 분명한 추세가 있다." }] },
 
@@ -1142,7 +1152,7 @@ window.VOCAB_T = [
     syn:["hearing in court","test run","trying something out"],
     ex:[{ s:"The {{}} lasted three weeks.", f:"trial", ko:"그 재판은 삼 주간 이어졌다." }] },
 
-  { word:"trial and error", pron:"트라이얼 앤드 에러", pos:"phr", level:"B2", meanings:["시행착오"],
+  { word:"trial and error", exams:["공무원"], pron:"트라이얼 앤드 에러", pos:"phr", level:"B2", meanings:["시행착오"],
     syn:["learning by mistakes","trying until it works","feeling one's way"] },
 
   /* 승격 73 — 사전 단일값 유지(참조 clan). ★ 한국어로 적으면 shortage(부족,
@@ -1243,7 +1253,7 @@ window.VOCAB_T = [
   /* 승격 80 — 사전 단일값 유지. 참조 다섯 곳(minor 유의어, considerable·
      critical·grave·momentous 반의어) 의 화면은 바뀌지 않는다. minor(사소한,
      작은) 와 글자가 맞물려 배제된다. */
-  { word:"trivial", pron:"트리비얼", pos:"adj", level:"B1", meanings:["사소한"],
+  { word:"trivial", exams:["공무원"], pron:"트리비얼", pos:"adj", level:"B1", meanings:["사소한"],
     syn:["minor","of little weight","not worth troubling over"], ant:["considerable","momentous"],
     ex:[{ s:"Do not fuss over a {{}} slip.", f:"trivial", ko:"사소한 실수로 법석 떨지 마라." }] },
 
@@ -1359,6 +1369,7 @@ Object.assign(window.GLOSS, {
   "act of stealing": "훔치는 짓",
   "after that time": "그때 뒤에",
   "agree to do": "하기로 응하다",
+  "aim at": "~을 겨누다",
   "aimed at one group": "한 무리를 겨눈",
   "all the way through": "처음부터 줄곧",
   "allowed against tax": "세금에 맞서 인정되는",
@@ -1376,6 +1387,7 @@ Object.assign(window.GLOSS, {
   "be praised for": "~로 칭찬을 받다",
   "be proud of": "~을 뿌듯해하다",
   "be sick": "속을 쏟다",
+  "bearable": "참을 만한",
   "beat steadily": "고르게 뛰다",
   "beating in the veins": "핏줄에서 뛰는 것",
   "become husband and wife": "부부가 되다",
@@ -1387,6 +1399,7 @@ Object.assign(window.GLOSS, {
   "big travelling case": "여행용 큰 궤",
   "boast about": "~을 내세우다",
   "body material": "몸을 이루는 바탕",
+  "bored": "지루해하는",
   "bound by time": "시간에 묶인",
   "box for takings": "받은 돈을 담는 함",
   "break into parts": "여러 부분으로 나누다",
@@ -1399,12 +1412,14 @@ Object.assign(window.GLOSS, {
   "carriage of people": "사람을 실어 나름",
   "carry goods across": "물건을 실어 건네다",
   "carry out a deal": "매매를 해내다",
+  "carryout": "포장 판매 음식",
   "cashier in a bank": "은행의 계산 담당자",
   "cast of character": "타고난 성품의 틀",
   "catch in a snare": "올가미로 잡다",
   "cause a ticklish feel": "간지러운 느낌을 일으키다",
   "cause suffering to": "~에게 괴로움을 안기다",
   "cells of one kind": "같은 갈래의 세포",
+  "chain": "사슬로 묶다",
   "chance it": "운에 맡기고 해 보다",
   "change of stage": "단계가 달라짐",
   "change of trains": "열차를 갈아탐",
@@ -1418,6 +1433,7 @@ Object.assign(window.GLOSS, {
   "come down in a heap": "한 무더기로 쏟아지다",
   "come out for a side": "한쪽 편을 드러내다",
   "come out in the end": "끝에 가서 그리 되다",
+  "comedy": "희극",
   "coming at the right moment": "알맞은 때에 오는",
   "container of metal": "금속으로 된 그릇",
   "copy out by hand": "손으로 베껴 쓰다",
@@ -1432,6 +1448,7 @@ Object.assign(window.GLOSS, {
   "deal carried out": "이루어진 매매",
   "declare one's position": "제 입장을 밝히다",
   "deeply sorrowful": "몹시 애달픈",
+  "definitely": "분명히, 확실히",
   "degree of heat": "더운 정도",
   "dense crowd": "빽빽한 무리",
   "directed at a set goal": "정해진 목표로 향한",
@@ -1449,16 +1466,20 @@ Object.assign(window.GLOSS, {
   "easily handled": "다루기 쉬운",
   "end of the line": "선로의 끝",
   "ending in disaster": "참사로 끝나는",
+  "endurable": "견딜 수 있는",
   "enter without leave": "허락 없이 들어가다",
   "enticing thing": "구미를 당기는 것",
   "exactly as written": "적힌 대로 고스란히",
   "exchange of money": "돈이 오가는 일",
   "excite greatly": "크게 들뜨게 하다",
+  "exhaustively": "철저하게, 남김없이",
+  "exhilarated": "들뜬, 아주 신나는",
   "extra lessons given": "따로 더 해 주는 가르침",
   "fail to value": "값지게 보지 못하다",
   "faint shade": "희미한 빛깔",
   "faint sign": "희미한 낌새",
   "fall head over heels": "곤두박질치다",
+  "fast food": "패스트푸드, 즉석 음식",
   "fasten tightly": "빈틈없이 조여 매다",
   "fasten with rope": "밧줄로 묶다",
   "fee for teaching": "가르침에 매긴 값",
@@ -1472,6 +1493,7 @@ Object.assign(window.GLOSS, {
   "first and thickest finger": "첫째이고 가장 굵은 손가락",
   "first of all": "무엇보다 먼저",
   "flow of water": "물이 흐르는 것",
+  "focus on": "~에 집중하다",
   "follow at a distance": "거리를 두고 따라가다",
   "follow the trail of": "~가 남긴 자취를 따라가다",
   "following that": "그에 이어",
@@ -1512,6 +1534,7 @@ Object.assign(window.GLOSS, {
   "growth in the body": "몸 안에 자란 것",
   "guarding one's ground": "제 터를 지키는",
   "hand back": "손에 되돌려 주다",
+  "handling": "처리, 취급",
   "hands-on expert": "손수 다루는 전문가",
   "happen as planned": "예정대로 일어나다",
   "hard to get over": "좀처럼 헤어나기 어려운",
@@ -1523,9 +1546,11 @@ Object.assign(window.GLOSS, {
   "hearing in court": "법정에서의 심리",
   "heat gauge": "더운 정도를 재는 기구",
   "heavy downpour": "쏟아지는 큰비",
+  "hesitantly": "주저하며, 망설이며",
   "hold dear": "귀하게 여기다",
   "holding on hard": "끈덕지게 붙드는",
   "holiday point": "휴가로 찾는 곳",
+  "homage": "경의, 존경의 표시",
   "house of worship": "예배를 드리는 집",
   "how hot or cold it is": "덥거나 찬 정도",
   "how it feels to touch": "만졌을 때의 느낌",
@@ -1539,6 +1564,7 @@ Object.assign(window.GLOSS, {
   "in two layers": "두 층으로 된",
   "inborn make-up": "타고난 됨됨이",
   "inflict pain on": "고통을 주다",
+  "intolerable": "견딜 수 없는",
   "just as one would expect": "으레 그럴 줄 아는",
   "keep turning over": "계속 몸을 뒤집다",
   "keeping within limits": "선을 넘지 않는",
@@ -1618,6 +1644,7 @@ Object.assign(window.GLOSS, {
   "passage from place to place": "한 곳에서 다른 곳으로 지나감",
   "passing all bounds": "모든 한계를 지나침",
   "passing over": "건너 넘어감",
+  "pattern": "본보기, 패턴",
   "people of one stock": "한 핏줄의 사람들",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
@@ -1635,6 +1662,7 @@ Object.assign(window.GLOSS, {
   "press of people": "밀려드는 사람들",
   "private teacher": "개인이 붙이는 선생",
   "prove to be so": "그런 것으로 드러나다",
+  "provisionally": "임시로",
   "public levy": "공공이 걷는 부과금",
   "public means of travel": "여럿이 함께 타는 수단",
   "pull down": "끌어내려 무너뜨리다",
@@ -1669,6 +1697,7 @@ Object.assign(window.GLOSS, {
   "renter of a home": "집을 빌린 사람",
   "return for a refund": "환불을 받으려 돌려주다",
   "return to the owner": "임자에게 되보내다",
+  "revealing": "많은 것을 드러내는",
   "revenue officer": "세입을 맡은 공무원",
   "right to hold": "가지고 있을 권리",
   "right to rule as king": "임금으로 다스릴 권리",
@@ -1738,6 +1767,7 @@ Object.assign(window.GLOSS, {
   "sworn account": "선서한 진술",
   "take in by a ruse": "꾀를 써서 홀리다",
   "take the lead": "앞장서다",
+  "takeout": "포장 음식",
   "taking what is not one's own": "남의 것을 가져감",
   "tax on imports": "들여오는 물건에 매기는 세금",
   "teacher for a few": "몇 사람만 가르치는 선생",
@@ -1745,12 +1775,15 @@ Object.assign(window.GLOSS, {
   "term in a post": "자리를 맡는 기간",
   "test run": "미리 해 보는 시험",
   "the opposite way": "맞은 쪽으로",
+  "thereupon": "그 결과, 그 즉시",
   "thin vessel for samples": "시료를 담는 가는 그릇",
   "think it is owed": "받아야 할 것이라 여기다",
   "thread running through": "전체를 꿰는 실마리",
   "three times as much": "세 배만큼의",
   "threefold": "세 배의",
+  "thus far": "지금까지는",
   "tightness in the air": "공기가 팽팽한 느낌",
+  "timetable": "시간표",
   "to a great degree": "큰 정도로",
   "to a high degree": "높은 정도로",
   "to an extent": "얼마쯤은",

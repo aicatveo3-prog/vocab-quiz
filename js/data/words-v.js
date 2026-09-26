@@ -43,9 +43,11 @@ window.VOCAB_V = [
   { word:"visually", exams:["공무원"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
   { word:"vocalization", exams:["공무원"], pron:"보컬라이제이션", pos:"n", level:"C2", meanings:["발성","발성음"], ex:[{ s:"Human language differs from the {{}} of monkeys.", f:"vocalizations", ko:"인간 언어는 원숭이의 발성음과 다르다." }] },
   { word:"volcanic", exams:["공무원"], pron:"볼캐닉", pos:"adj", level:"B2", meanings:["화산의"], ex:[{ s:"Yellowstone was known to be {{}} in nature.", f:"volcanic", ko:"옐로스톤은 본래 화산성으로 알려져 있었다." }] },
-  { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["비전","구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The {{}} started in Western Australia in 2011.", f:"vision", ko:"그 구상은 2011년 서호주에서 시작되었다." }] },
+  { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
   { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
-  { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["(질병) 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
+  { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
+  { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
+  { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -176,7 +178,7 @@ window.VOCAB_V = [
     ex:[{ s:"She has a {{}} taste in books.", f:"varied", ko:"그녀는 책에 다양한 취향을 지녔다." }] },
 
   /* 승격 ⑩ — 사전 글자 유지(참조 diversity). 교재의 '변종, 품종' 은 버렸다. */
-  { word:"variety", pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
+  { word:"variety", exams:["공무원"], pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
     syn:["diversity","range of kinds","many sorts"],
     ex:[{ s:"The shop offers a wide {{}}.", f:"variety", ko:"그 가게는 폭넓은 다양성을 갖추고 있다." }] },
 
@@ -196,7 +198,7 @@ window.VOCAB_V = [
   /* 승격 ⑫ — 사전 글자 유지. 참조 enormous(E)·immense(I) 두 곳의 화면은
      바뀌지 않는다. enormous·immense·untold 가 '막대한' 을, extensive·
      limitless 가 교재의 '방대한' 을 써서 여러 곳과 맞물린다. */
-  { word:"vast", pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
+  { word:"vast", exams:["공무원"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
     syn:["enormous","immense","spread out very far"],
     ex:[{ s:"A {{}} plain lay before them.", f:"vast", ko:"광대한 평원이 그들 앞에 놓여 있었다." }] },
 
@@ -330,7 +332,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉑ — ★사전의 '버전' 은 낱말을 한글로 되풀이한 것이라 걷고 교재의
      '형태' 를 넣었다. ★ 참조 adaptation(A) 의 화면이 한 줄 바뀐다. */
-  { word:"version", pron:"버전", pos:"n", level:"B1", meanings:["판","형태"],
+  { word:"version", exams:["공무원"], pron:"버전", pos:"n", level:"B1", meanings:["판","형태"],
     syn:["adaptation","one form of a thing","a retold shape"],
     ex:[{ s:"This is the latest {{}} of the map.", f:"version", ko:"이것이 그 지도의 최신판이다." }] },
 
@@ -565,7 +567,7 @@ window.VOCAB_V = [
   /* 승격 ㉝ — 사전 글자 유지(참조 explosive). capricious·moody 가 교재의
      '변덕스러운' 을, instability(불안정)·unease(불안, 불안정한 마음) 가
      '불안정한' 을 품어 맞물려 배제된다. */
-  { word:"volatile", pron:"발러타일", pos:"adj", level:"C1", meanings:["휘발성의","불안정한"],
+  { word:"volatile", exams:["공무원"], pron:"발러타일", pos:"adj", level:"C1", meanings:["휘발성의","불안정한"],
     syn:["explosive","ready to catch fire","liable to blow up"],
     ex:[{ s:"That liquid is highly {{}}.", f:"volatile", ko:"그 액체는 휘발성이 매우 높다." }] },
 
@@ -605,7 +607,7 @@ window.VOCAB_V = [
 
   /* 승격 ㊲ — 사전 단일값 유지. 참조 세 곳(at risk·endangered·helpless) 의
      화면은 바뀌지 않는다. */
-  { word:"vulnerable", pron:"벌너러블", pos:"adj", level:"B2", meanings:["취약한"],
+  { word:"vulnerable", exams:["공무원"], pron:"벌너러블", pos:"adj", level:"B2", meanings:["취약한"],
     syn:["at risk","endangered","helpless"],
     ex:[{ s:"Young birds are {{}} to cold.", f:"vulnerable", ko:"어린 새는 추위에 취약하다." }] }
 ];
@@ -629,10 +631,13 @@ Object.assign(window.GLOSS, {
   "bent on harm": "해칠 마음을 품은",
   "blood channel": "피가 흐르는 길",
   "blood tube to the heart": "심장으로 가는 핏줄",
+  "boat": "작은 배, 보트",
   "breaking of a rule": "규칙을 깨뜨림",
   "breaking things on purpose": "일부러 물건을 깨뜨림",
   "bring up from the stomach": "배 속에서 올려 내다",
   "buzzing with energy": "기운이 들끓는",
+  "by means of": "~을 수단으로",
+  "by way of": "~을 거쳐서",
   "cancel in law": "법으로 지우다",
   "check and prove": "살펴서 참임을 밝히다",
   "coarse in taste": "취향이 거친",
@@ -642,6 +647,7 @@ Object.assign(window.GLOSS, {
   "doctor for beasts": "가축을 고치는 의사",
   "done of one's own will": "제 뜻으로 하는",
   "done with great force": "큰 힘을 들여 하는",
+  "dream": "꿈, 이상",
   "eater of greens only": "푸성귀만 먹는 이",
   "eating a great deal": "많이 먹는",
   "eating no animal food at all": "동물성 음식을 아예 안 먹는",
@@ -653,12 +659,14 @@ Object.assign(window.GLOSS, {
   "first rank of a march": "행렬의 첫 줄",
   "fit for many uses": "여러 곳에 쓸 만한",
   "flow of fresh air": "맑은 공기의 흐름",
+  "foggy": "안개 낀, 흐릿한",
   "for a job": "일자리를 위한",
   "fresh air let in": "들인 맑은 공기",
   "full of change": "변화가 가득한",
   "full of cheer": "흥이 넘치는",
   "full of life and colour": "생기와 빛깔이 넘치는",
   "full of spirit": "기운이 가득한",
+  "gaseous": "기체의, 가스 상태의",
   "give official backing to": "공식으로 뒷받침해 주다",
   "go out of sight": "눈앞에서 없어지다",
   "good at many things": "여러 가지를 잘하는",
@@ -686,6 +694,7 @@ Object.assign(window.GLOSS, {
   "many sorts": "여러 종류",
   "merry and bright": "즐겁고 환한",
   "mist from hot water": "더운 물에서 나온 안개",
+  "misty": "엷은 안개가 낀",
   "more than a few": "한둘이 아닌",
   "move with quick tremors": "잔 떨림으로 움직이다",
   "near enough to be true": "참이라 해도 될 만큼",
@@ -737,6 +746,7 @@ Object.assign(window.GLOSS, {
   "shabby in conduct": "행실이 치사한",
   "shake to and fro": "앞뒤로 흔들리다",
   "sharply clear": "또렷하게 밝은",
+  "ship": "배, 선박",
   "show to be true": "참임을 보여 주다",
   "snake poison": "뱀의 독",
   "space with no air": "공기가 없는 공간",
@@ -755,12 +765,14 @@ Object.assign(window.GLOSS, {
   "thing that carries": "실어 옮기는 것",
   "things worth money": "값나가는 물건",
   "those at the front": "맨 앞에 선 이들",
+  "through": "~을 통하여",
   "to do with a trade": "생업에 관한",
   "to do with seeing": "보는 일에 관한",
   "training for work": "일을 익히는",
   "tube carrying blood": "피를 나르는 관",
   "upright in line": "선이 곧게 선",
   "use of force to hurt": "해치려 힘을 씀",
+  "watercraft": "선박, 수상 운송 수단",
   "what everyone wants now": "요즘 다들 찾는 것",
   "wickedly cruel": "악독하게 모진",
   "with great force": "큰 힘으로",
