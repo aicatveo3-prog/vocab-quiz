@@ -777,6 +777,8 @@ Object.assign(window.GLOSS, {
   "impossible to maintain": "버텨 낼 수 없는",
   "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
+  "indisputable": "논란의 여지가 없는",
+  "irrefutable": "반박할 수 없는",
   "join into one": "하나로 합치다",
   "knocked out cold": "까무러쳐 쓰러진",
   "lack of jobs": "일자리가 모자람",

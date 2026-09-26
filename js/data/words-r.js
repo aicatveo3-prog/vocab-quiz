@@ -1844,6 +1844,7 @@ Object.assign(window.GLOSS, {
   "good at making do": "있는 것으로 잘 꾸리는",
   "good enough to be proud of": "자랑할 만큼 좋은",
   "government in power": "권력을 쥔 정부",
+  "gratifying": "만족스러운, 흐뭇한",
   "grazing estate": "풀 먹이는 넓은 땅",
   "great repute": "큰 평판",
   "grow back": "다시 자라나다",

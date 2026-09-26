@@ -1028,6 +1028,7 @@ Object.assign(window.GLOSS, {
   "fully":"완전히, 충분히",
   "gale":"강풍, 돌풍",
   "gentle":"온화한, 부드러운",
+  "grieving": "슬퍼하는, 비탄에 잠긴",
   "groom":"신랑",
   "hairy":"털이 많은",
   "hated":"미움 받는",

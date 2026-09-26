@@ -1209,6 +1209,7 @@ Object.assign(window.GLOSS, {
   "insulting": "모욕하는",
   "internal structure": "몸속 구조물",
   "introductory training": "처음 받는 교육",
+  "inwardly": "마음속으로, 내심",
   "jaunt": "짧은 유람",
   "jumpy": "움찔거리는",
   "just out of reach": "손에 닿을 듯 안 닿는",

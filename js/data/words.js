@@ -1752,6 +1752,7 @@ window.GLOSS = {
   "inappropriate":"부적절한",
   "inattentive":"부주의한",
   "inaudible":"들리지 않는",
+  "indict": "기소하다",
   "indulge in":"~에 탐닉하다",
   "keep":"유지하다, 보관하다",
   "leaky":"새는, 구멍 난",
