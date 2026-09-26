@@ -489,6 +489,8 @@ window.VOCAB_F = [
   { word:"frivolous", exams:["공무원"], pron:"프리벌러스", pos:"adj", level:"C1", meanings:["경박한","하찮은"], syn:["trivial","silly","petty"], ant:["serious"], ex:[{ s:"Their talk was far from {{}}; they discussed serious issues.", f:"frivolous", ko:"그들의 대화는 결코 하찮지 않았다. 그들은 심각한 문제를 논의했다." }] },
   { word:"freelancer", exams:["공무원"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
   { word:"free up", exams:["공무원"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
+  { word:"fashionable", exams:["공무원"], pron:"패셔너블", pos:"adj", level:"B1", meanings:["유행하는","최신 유행의"], syn:["stylish","trendy","in vogue"], ant:["old-fashioned"], ex:[{ s:"It became {{}} to own a pocket watch.", f:"fashionable", ko:"회중시계를 갖는 것이 유행하게 되었다." }] },
+  { word:"financially", exams:["공무원"], pron:"파이낸셜리", pos:"adv", level:"B2", meanings:["재정적으로","경제적으로"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1543,6 +1545,7 @@ Object.assign(window.GLOSS, {
   "groundwork": "기초 작업, 토대",
   "gun": "총",
   "impartiality": "공평함, 치우치지 않음",
+  "in vogue": "대유행 중인",
   "installation":"설비, 시설물",
   "inundation": "범람, 쇄도",
   "known": "알려진",
@@ -1553,6 +1556,7 @@ Object.assign(window.GLOSS, {
   "mental power":"정신적 능력",
   "nepotism": "족벌주의, 친족 등용",
   "next": "다음의, 그다음",
+  "old-fashioned": "구식의",
   "outward appearance":"겉모습, 외관",
   "parable":"우화, 비유담",
   "partiality": "편파, 치우침",

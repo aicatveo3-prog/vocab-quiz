@@ -68,6 +68,7 @@ window.VOCAB_U = [
   { word:"unpredictably", exams:["공무원"], pron:"언프리딕터블리", pos:"adv", level:"C1", meanings:["예측할 수 없게","갑자기"] },
   { word:"unplug", exams:["공무원"], pron:"언플러그", pos:"v", level:"B2", meanings:["플러그를 뽑다","잠시 일에서 벗어나다"], ex:[{ s:"Remember to {{}} the heater before you leave.", f:"unplug", ko:"나가기 전에 히터 플러그를 뽑는 것을 잊지 마라." }] },
   { word:"uncertainty", exams:["공무원"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
+  { word:"unrelated", exams:["공무원"], pron:"언릴레이티드", pos:"adj", level:"B2", meanings:["관련 없는","무관한"], syn:["irrelevant","extraneous","unconnected"], ant:["related"], ex:[{ s:"The police said the two fires were {{}}; one was an accident.", f:"unrelated", ko:"경찰은 두 화재가 서로 무관하다고 밝혔다. 하나는 사고였다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -859,6 +860,7 @@ Object.assign(window.GLOSS, {
   "rate too low": "값을 너무 낮게 매기다",
   "rearing of a child": "아이를 길러 냄",
   "regrettably": "애석하게도",
+  "related": "관련된",
   "rise after a fall": "떨어진 뒤의 오름",
   "rough and smooth alike": "험한 길과 순한 길 모두",
   "rowdy": "소란스러운, 난폭한",
@@ -904,6 +906,7 @@ Object.assign(window.GLOSS, {
   "turning up all over": "곳곳에서 나타나는",
   "turns of fortune": "운이 뒤바뀌는 일",
   "unable to relax": "도무지 풀어지지 않는",
+  "unconnected": "연관 없는",
   "uncrewed": "승무원이 없는",
   "under the waves": "물결 아래의",
   "unfasten": "끄르다, 풀다",

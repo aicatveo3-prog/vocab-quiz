@@ -78,6 +78,8 @@ window.VOCAB_C = [
   { word:"calligraphy", exams:["공무원"], pron:"컬리그러피", pos:"n", level:"C1", meanings:["서예","붓글씨"], ex:[{ s:"She practices Chinese {{}} with a brush every morning.", f:"calligraphy", ko:"그녀는 매일 아침 붓으로 중국 서예를 연습한다." }] },
   { word:"conceptualize", exams:["공무원"], pron:"컨셉추얼라이즈", pos:"v", level:"C1", meanings:["개념화하다"], syn:["conceive","envisage","formulate"], ex:[{ s:"This philosophy tries to {{}} goodness as a form of service.", f:"conceptualize", ko:"이 철학은 선함을 봉사의 한 형태로 개념화하려 한다." }] },
   { word:"cooperative", exams:["공무원"], pron:"코아퍼러티브", pos:"adj", level:"B2", meanings:["협력하는","협동조합의"], syn:["collaborative","helpful","supportive"], ant:["uncooperative"], ex:[{ s:"The staff were very {{}} during the inspection.", f:"cooperative", ko:"직원들은 점검 기간 동안 매우 협조적이었다." }] },
+  { word:"coil", exams:["공무원"], pron:"코일", pos:"v", level:"C1", meanings:["감다","똬리를 틀다"], ex:[{ s:"The snake began to {{}} around the branch.", f:"coil", ko:"뱀이 나뭇가지를 휘감기 시작했다." }] },
+  { word:"conceptual", exams:["공무원"], pron:"컨셉추얼", pos:"adj", level:"C1", meanings:["개념적인","추상적인"], syn:["abstract","theoretical","notional"], ant:["practical"], ex:[{ s:"The lecture focused on {{}} questions rather than practical ones.", f:"conceptual", ko:"그 강의는 실용적인 문제보다 개념적인 문제에 집중했다." }] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2138,6 +2140,7 @@ Object.assign(window.GLOSS, {
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
   "nosiness": "참견하기 좋아함",
+  "notional": "관념상의",
   "nurse": "간호사, 돌보는 사람",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
@@ -2190,7 +2193,6 @@ Object.assign(window.GLOSS, {
   "together": "다 같이, 한꺼번에",
   "uncooperative": "비협조적인",
   "undisputed":"논란의 여지가 없는",
-  "unrelated":"관련 없는",
   "unusual":"흔하지 않은",
   "unwittingly":"무심코, 자기도 모르게",
   "vagueness":"모호함",

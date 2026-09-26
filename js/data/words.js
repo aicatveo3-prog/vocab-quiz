@@ -74,6 +74,11 @@ window.VOCAB = [
   { word:"addiction", exams:["공무원"], pron:"어딕션", pos:"n", level:"B2", meanings:["중독","탐닉"], syn:["dependence","compulsion","obsession"], ex:[{ s:"His {{}} to video games worried his parents.", f:"addiction", ko:"그의 비디오 게임 중독은 부모를 걱정시켰다." }] },
   { word:"advantageous", exams:["공무원"], pron:"애드밴테이저스", pos:"adj", level:"C1", meanings:["유리한","이로운"], syn:["beneficial","favorable","profitable"], ant:["disadvantageous"], ex:[{ s:"The new tax rules are {{}} to small businesses.", f:"advantageous", ko:"새 세법은 소기업에 유리하다." }] },
   { word:"around the corner", exams:["공무원"], pron:"어라운드 더 코너", pos:"phr", level:"B2", meanings:["코앞에 다가온","아주 가까이에"], syn:["imminent","upcoming","approaching"] },
+  { word:"acidification", exams:["공무원"], pron:"어시디피케이션", pos:"n", level:"C2", meanings:["산성화"], ex:[{ s:"Ocean {{}} threatens coral reefs around the world.", f:"acidification", ko:"해양 산성화는 전 세계의 산호초를 위협한다." }] },
+  { word:"acidify", exams:["공무원"], pron:"어시디파이", pos:"v", level:"C2", meanings:["산성화하다","산성이 되다"], ex:[{ s:"As the oceans absorb carbon dioxide, they slowly {{}}.", f:"acidify", ko:"바다는 이산화탄소를 흡수하면서 서서히 산성화된다." }] },
+  { word:"acidity", exams:["공무원"], pron:"어시디티", pos:"n", level:"C1", meanings:["산성도","신맛"], ex:[{ s:"Farmers test the {{}} of the soil before planting.", f:"acidity", ko:"농부들은 씨를 뿌리기 전에 토양의 산성도를 검사한다." }] },
+  { word:"amass", exams:["공무원"], pron:"어매스", pos:"v", level:"C1", meanings:["모으다","쌓아 올리다"], syn:["accumulate","gather","hoard"], ex:[{ s:"Over the years she managed to {{}} a large fortune.", f:"amass", ko:"그녀는 수년에 걸쳐 막대한 재산을 모았다." }] },
+  { word:"assurance", exams:["공무원"], pron:"어슈어런스", pos:"n", level:"C1", meanings:["확신","보증"], syn:["confidence","certainty","conviction"], ant:["nervousness"], ex:[{ s:"She answered the difficult question with calm {{}}.", f:"assurance", ko:"그녀는 어려운 질문에 침착하고 자신 있게 답했다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },

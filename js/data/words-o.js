@@ -115,6 +115,7 @@ window.VOCAB_O = [
   { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
   { word:"on purpose", exams:["공무원"], pron:"온 퍼퍼스", pos:"phr", level:"B1", meanings:["일부러","고의로"], syn:["deliberately","intentionally","purposely"], ant:["by chance"] },
   { word:"on the rise", exams:["공무원"], pron:"온 더 라이즈", pos:"phr", level:"B2", meanings:["증가하고 있는","상승 중인"], syn:["increasing","growing","mounting"] },
+  { word:"object to", exams:["공무원"], pron:"어브젝트 투", pos:"phr", level:"B2", meanings:["~에 반대하다","~에 이의를 제기하다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1271,7 +1272,6 @@ Object.assign(window.GLOSS, {
   "not where it belongs": "있어야 할 곳이 아닌",
   "not working": "돌아가지 않는",
   "now-and-then": "이따금 있는",
-  "object to": "~에 반대하다",
   "of all things": "하필이면",
   "of the east": "동방에 속한",
   "off the beat": "박자가 어긋난",

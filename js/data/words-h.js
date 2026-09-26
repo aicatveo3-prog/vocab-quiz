@@ -30,6 +30,8 @@ window.VOCAB_H = [
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   { word:"have no alternative but to", exams:["공무원"], pron:"해브 노 얼터너티브 벗 투", pos:"phr", level:"B2", meanings:["~할 수밖에 없다"], syn:["have no choice but to","cannot help but","be compelled to do"] },
   { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
+  { word:"heirloom", exams:["공무원"], pron:"에어룸", pos:"n", level:"C1", meanings:["가보","대대로 물려받은 물건"], ex:[{ s:"This ring is a family {{}} that my great-grandmother once wore.", f:"heirloom", ko:"이 반지는 증조할머니가 끼시던 집안의 가보다." }] },
+  { word:"hypnotic", exams:["공무원"], pron:"힙나틱", pos:"adj", level:"C1", meanings:["최면을 거는","넋을 빼놓는"], ex:[{ s:"The serpent's {{}} eyes seemed to follow every visitor.", f:"hypnotic", ko:"뱀의 최면을 거는 듯한 눈이 모든 방문객을 따라다니는 것 같았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */

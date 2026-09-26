@@ -77,6 +77,8 @@ window.VOCAB_I = [
   { word:"intuitive", exams:["공무원"], pron:"인투이티브", pos:"adj", level:"C1", meanings:["직관적인","이해하기 쉬운"], ex:[{ s:"The new app has a simple and {{}} design.", f:"intuitive", ko:"새 앱은 단순하고 직관적인 디자인을 갖췄다." }] },
   { word:"it is no use ~ing", exams:["공무원"], pron:"잇 이즈 노 유스", pos:"phr", level:"B2", meanings:["~해 봐야 소용없다"] },
   { word:"in addition", exams:["공무원"], pron:"인 어디션", pos:"phr", level:"B1", meanings:["게다가","또한"], syn:["furthermore","moreover","additionally"] },
+  { word:"in contrast", exams:["공무원"], pron:"인 칸트래스트", pos:"phr", level:"B1", meanings:["대조적으로","그와 달리"], syn:["by contrast","conversely","on the other hand"] },
+  { word:"industrialization", exams:["공무원"], pron:"인더스트리얼리제이션", pos:"n", level:"C1", meanings:["산업화"], ex:[{ s:"Before {{}}, most people lived and worked on farms.", f:"industrialization", ko:"산업화 이전에는 대부분의 사람이 농장에서 살며 일했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],

@@ -49,6 +49,7 @@ window.VOCAB_L = [
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
   { word:"liveliness", exams:["공무원"], pron:"라이블리니스", pos:"n", level:"B2", meanings:["활기","생기"], syn:["vitality","vivacity","energy"], ex:[{ s:"The {{}} of the night market attracts many tourists.", f:"liveliness", ko:"야시장의 활기가 많은 관광객을 끌어들인다." }] },
   { word:"linguistic", exams:["공무원"], pron:"링귀스틱", pos:"adj", level:"C1", meanings:["언어의","언어학의"], ex:[{ s:"English and German share many {{}} features, such as similar words.", f:"linguistic", ko:"영어와 독일어는 비슷한 단어처럼 많은 언어적 특징을 공유한다." }] },
+  { word:"look after", exams:["공무원"], pron:"룩 애프터", pos:"phr", level:"B1", meanings:["돌보다","보살피다"], syn:["take care of","care for","tend"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -753,6 +754,7 @@ Object.assign(window.GLOSS, {
   "cabin": "오두막",
   "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
+  "care for": "보살피다, 좋아하다",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
   "clear-headed": "머리가 맑은",
