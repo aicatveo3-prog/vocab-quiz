@@ -1030,7 +1030,6 @@ window.VOCAB_O = [
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */
 Object.assign(window.GLOSS, {
-  "abide by": "~을 지키다",
   "about to": "이제 곧 ~할",
   "above the weight limit": "무게 한도를 넘은",
   "accepted as standard": "표준으로 받아들여진",

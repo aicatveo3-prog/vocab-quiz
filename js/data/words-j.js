@@ -131,7 +131,6 @@ Object.assign(window.GLOSS, {
   "custodian": "관리 책임자",
   "doorkeeper": "문지기",
   "equity": "형평, 공평",
-  "fairness": "공정함",
   "jewels": "보석들",
   "juridical": "법률상의",
   "lingo": "특수 용어",

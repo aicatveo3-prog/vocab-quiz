@@ -1702,7 +1702,6 @@ Object.assign(window.GLOSS, {
      있어서 여기에 없다. division·appropriate·bumpy·brittle·even 은 표제어다. */
   "balled hand":"움켜쥔 손",
   "blaze up":"확 타오르다",
-  "bounded":"경계가 있는",
   "breaking apart":"쪼개져 갈라짐",
   "butter up":"비위를 맞추다",
   "clenched hand":"꽉 쥔 손",
@@ -1968,7 +1967,6 @@ Object.assign(window.GLOSS, {
   "person on the run":"쫓기는 사람",
   "power source":"동력을 내는 것",
   "realization":"실현",
-  "rewarding":"보람 있는",
   "runaway":"달아난 사람",
   "serviceable":"쓸 만한",
   "settler":"정착민",
@@ -1991,7 +1989,6 @@ Object.assign(window.GLOSS, {
   "covered in fur":"털로 덮인",
   "deep groove":"깊게 팬 골",
   "enraged":"격노한",
-  "equip":"장비를 갖추다",
   "fit out":"필요한 것을 갖춰 주다",
   "fuzzy-coated":"솜털이 난",
   "give a b":"A에게 B를 주다",

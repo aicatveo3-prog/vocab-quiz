@@ -2073,7 +2073,6 @@ Object.assign(window.GLOSS, {
   "dissuade":"말리다, 단념시키다",
   "doubtful":"의심스러운, 불확실한",
   "ease":"쉬움, 편안함",
-  "effective":"효과적인",
 
   "emotional":"감정적인",
   "evasive":"회피하는, 둘러대는",
@@ -2114,7 +2113,6 @@ Object.assign(window.GLOSS, {
   "input": "의견, 투입",
   "inquisitiveness": "캐묻기 좋아함, 탐구심",
   "insulator":"절연체",
-  "intermittent":"간헐적인, 이따금의",
   "jointly": "공동으로, 함께",
   "laity":"평신도",
   "limitation": "한계, 제약",
