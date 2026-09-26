@@ -66,6 +66,7 @@ window.VOCAB_N = [
   { word:"neutrally", exams:["공무원"], pron:"뉴트럴리", pos:"adv", level:"C1", meanings:["중립적으로","공정하게"], syn:["impartially","objectively","even-handedly"], ex:[{ s:"A good judge must listen {{}} to both sides.", f:"neutrally", ko:"훌륭한 판사는 양측의 말을 중립적으로 들어야 한다." }] },
   { word:"no sooner A than B", exams:["공무원"], pron:"노 수너 댄", pos:"phr", level:"C1", meanings:["A하자마자 B하다"] },
   { word:"name A after B", exams:["공무원"], pron:"네임 애프터", pos:"phr", level:"B2", meanings:["B의 이름을 따서 A의 이름을 짓다"] },
+  { word:"needless to say", exams:["공무원"], pron:"니들리스 투 세이", pos:"phr", level:"B2", meanings:["말할 필요도 없이"] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },

@@ -75,6 +75,8 @@ window.VOCAB_I = [
   { word:"incumbent", exams:["공무원"], pron:"인컴번트", pos:"adj", level:"C2", meanings:["의무로 지워지는","재임 중인"], syn:["obligatory","mandatory","binding"], ex:[{ s:"It is {{}} on parents to keep their children safe.", f:"incumbent", ko:"아이들을 안전하게 지키는 것은 부모의 의무다." }] },
   { word:"individualism", exams:["공무원"], pron:"인디비주얼리즘", pos:"n", level:"C1", meanings:["개인주의"], ex:[{ s:"American culture places great value on {{}}.", f:"individualism", ko:"미국 문화는 개인주의를 크게 중시한다." }] },
   { word:"intuitive", exams:["공무원"], pron:"인투이티브", pos:"adj", level:"C1", meanings:["직관적인","이해하기 쉬운"], ex:[{ s:"The new app has a simple and {{}} design.", f:"intuitive", ko:"새 앱은 단순하고 직관적인 디자인을 갖췄다." }] },
+  { word:"it is no use ~ing", exams:["공무원"], pron:"잇 이즈 노 유스", pos:"phr", level:"B2", meanings:["~해 봐야 소용없다"] },
+  { word:"in addition", exams:["공무원"], pron:"인 어디션", pos:"phr", level:"B1", meanings:["게다가","또한"], syn:["furthermore","moreover","additionally"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],

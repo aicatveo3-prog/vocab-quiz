@@ -113,6 +113,7 @@ window.VOCAB_S = [
   { word:"self-confidence", exams:["공무원"], pron:"셀프 칸피던스", pos:"n", level:"B2", meanings:["자신감"], syn:["self-assurance","confidence","self-esteem"], ex:[{ s:"Finishing a hard task can boost your {{}}.", f:"self-confidence", ko:"어려운 일을 해내면 자신감이 높아질 수 있다." }] },
   { word:"scenario", exams:["공무원"], pron:"시나리오", pos:"n", level:"B2", meanings:["상황","시나리오"], ex:[{ s:"Always prepare for the worst-case {{}}.", f:"scenario", ko:"항상 최악의 상황에 대비하라." }] },
   { word:"salaried", exams:["공무원"], pron:"샐러리드", pos:"adj", level:"C1", meanings:["봉급을 받는","월급제의"], ex:[{ s:"The new tax fell heavily on {{}} workers.", f:"salaried", ko:"새 세금은 봉급 생활자에게 무겁게 부과되었다." }] },
+  { word:"smoothly", exams:["공무원"], pron:"스무들리", pos:"adv", level:"B2", meanings:["순조롭게","매끄럽게"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

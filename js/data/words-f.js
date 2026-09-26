@@ -488,6 +488,7 @@ window.VOCAB_F = [
   { word:"fall on", exams:["공무원"], pron:"폴 온", pos:"phr", level:"B2", meanings:["~에게 떨어지다","~에 해당하다"] },
   { word:"frivolous", exams:["공무원"], pron:"프리벌러스", pos:"adj", level:"C1", meanings:["경박한","하찮은"], syn:["trivial","silly","petty"], ant:["serious"], ex:[{ s:"Their talk was far from {{}}; they discussed serious issues.", f:"frivolous", ko:"그들의 대화는 결코 하찮지 않았다. 그들은 심각한 문제를 논의했다." }] },
   { word:"freelancer", exams:["공무원"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
+  { word:"free up", exams:["공무원"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */

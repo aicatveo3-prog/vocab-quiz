@@ -833,7 +833,6 @@ Object.assign(window.GLOSS, {
   "impurity":"불순물, 오염물",
   "in a better position":"상황이 더 나은",
   "in accord":"일치하는, 합의된",
-  "in addition":"게다가, 또한",
   "in common":"공통으로",
   "in comparison":"비교하면",
   "in consequence":"그 결과",

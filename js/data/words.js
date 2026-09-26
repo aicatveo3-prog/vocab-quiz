@@ -73,6 +73,7 @@ window.VOCAB = [
   { word:"acceleration", exams:["공무원"], pron:"액셀러레이션", pos:"n", level:"C1", meanings:["가속","촉진"], ex:[{ s:"The car's sudden {{}} pressed us back into our seats.", f:"acceleration", ko:"차가 갑자기 가속하자 우리는 좌석 뒤로 밀렸다." }] },
   { word:"addiction", exams:["공무원"], pron:"어딕션", pos:"n", level:"B2", meanings:["중독","탐닉"], syn:["dependence","compulsion","obsession"], ex:[{ s:"His {{}} to video games worried his parents.", f:"addiction", ko:"그의 비디오 게임 중독은 부모를 걱정시켰다." }] },
   { word:"advantageous", exams:["공무원"], pron:"애드밴테이저스", pos:"adj", level:"C1", meanings:["유리한","이로운"], syn:["beneficial","favorable","profitable"], ant:["disadvantageous"], ex:[{ s:"The new tax rules are {{}} to small businesses.", f:"advantageous", ko:"새 세법은 소기업에 유리하다." }] },
+  { word:"around the corner", exams:["공무원"], pron:"어라운드 더 코너", pos:"phr", level:"B2", meanings:["코앞에 다가온","아주 가까이에"], syn:["imminent","upcoming","approaching"] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
