@@ -38,6 +38,11 @@ window.VOCAB_L = [
   { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
   { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },
   { word:"loudly", exams:["공무원"], pron:"라우들리", pos:"adv", level:"B1", meanings:["큰 소리로"], syn:["noisily","boisterously","vociferously"], ant:["quietly"], ex:[{ s:"He spoke so {{}} that everyone turned around.", f:"loudly", ko:"그가 너무 큰 소리로 말해서 모두가 돌아보았다." }] },
+  { word:"lab-grown", exams:["공무원"], pron:"랩 그로운", pos:"adj", level:"C1", meanings:["실험실에서 배양한","인공 배양된"], ex:[{ s:"Many experts say {{}} meat has not lived up to its promise.", f:"lab-grown", ko:"많은 전문가는 배양육이 기대에 부응하지 못했다고 말한다." }] },
+  { word:"lead to", exams:["공무원"], pron:"리드 투", pos:"phr", level:"B1", meanings:["~로 이어지다","~을 초래하다"], syn:["result in","bring about","give rise to"] },
+  { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
+  { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
+  { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.

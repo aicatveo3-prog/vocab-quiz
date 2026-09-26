@@ -476,6 +476,8 @@ window.VOCAB_F = [
   { word:"favoritism", exams:["공무원"], pron:"페이버리티즘", pos:"n", level:"C1", meanings:["편애","편파"], syn:["bias","partiality","nepotism"], ant:["fairness"], ex:[{ s:"It hands out positions based on {{}}.", f:"favoritism", ko:"그것은 편애에 따라 자리를 나눠준다." }] },
   { word:"fairness", exams:["공무원"], pron:"페어니스", pos:"n", level:"B2", meanings:["공정성"], syn:["justice","equity","impartiality"], ant:["unfairness"], ex:[{ s:"Rewarding merit has the virtue of {{}}.", f:"fairness", ko:"실력을 보상하는 것은 공정성의 미덕을 지닌다." }] },
   { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
+  { word:"familiar", exams:["공무원"], pron:"퍼밀리어", pos:"adj", level:"B1", meanings:["익숙한","친숙한"], syn:["recognizable","known","accustomed"], ant:["unfamiliar","alien"], ex:[{ s:"Traditional tools feel {{}} to most people.", f:"familiar", ko:"전통적인 도구는 대부분의 사람에게 익숙하게 느껴진다." }], gov:{ prep:["with","to"], usage:"be familiar with ~ : ~을 잘 알다 · be familiar to ~ : ~에게 익숙하다" } },
+  { word:"for ages", exams:["공무원"], pron:"포 에이지스", pos:"phr", level:"B2", meanings:["오랫동안","아주 오래"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1502,6 +1504,7 @@ window.VOCAB_F = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A~E 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차: fable ~ fall off (37개) ───────────────── */
+  "accustomed": "익숙해진",
   "allegory":"풍유, 비유",
   "allow for":"~을 감안하다",
   "bear in mind":"명심하다, 유념하다",
@@ -1518,6 +1521,7 @@ Object.assign(window.GLOSS, {
   "folktale":"민간 설화, 옛이야기",
   "frontage":"건물 정면",
   "installation":"설비, 시설물",
+  "known": "알려진",
   "lose color":"색이 바래다",
   "loyal":"충성스러운",
   "make easier":"더 쉽게 하다",
@@ -1929,7 +1933,6 @@ Object.assign(window.GLOSS, {
   "hoarfrost":"흰 서리",
   "ice crystals":"얼음 결정",
   "knit the brows":"눈살을 모으다",
-  "live up to":"~에 걸맞게 하다",
   "look displeased":"못마땅한 표정을 짓다",
   "mildew":"흰곰팡이",
   "money collecting":"돈을 모으는 일",
@@ -1975,5 +1978,5 @@ Object.assign(window.GLOSS, {
   "provide a with b":"A에게 B를 마련해 주다",
   "supply a with b":"A에게 B를 공급하다",
   "to-do":"부산한 소란",
-  "very angry":"매우 화가 난",
+  "very angry":"매우 화가 난"
 });

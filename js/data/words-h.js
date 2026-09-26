@@ -21,6 +21,8 @@ window.VOCAB_H = [
   { word:"hold off", exams:["공무원"], pron:"홀드 오프", pos:"phr", level:"B2", meanings:["미루다","보류하다"], syn:["delay","postpone","defer"], ex:[{ s:"The company had to {{}} the training plan.", f:"hold off", ko:"그 회사는 교육 계획을 미뤄야 했다." }] },
   { word:"homespun", exams:["공무원"], pron:"홈스펀", pos:"adj", level:"C1", meanings:["소박한","손수 만든"], syn:["simple","plain","unsophisticated"], ant:["sophisticated"], ex:[{ s:"There were thousands of {{}} attempts to pay tribute.", f:"homespun", ko:"경의를 표하려는 소박한 시도가 수천 건 있었다." }] },
   { word:"hormone", exams:["공무원"], pron:"호르몬", pos:"n", level:"B2", meanings:["호르몬"], ex:[{ s:"Glands release chemical {{}} into the bloodstream.", f:"hormones", ko:"분비샘은 화학 호르몬을 혈류로 방출한다." }] },
+  { word:"habitable", exams:["공무원"], pron:"해비터블", pos:"adj", level:"C1", meanings:["살기에 적합한","거주할 수 있는"], syn:["livable","inhabitable","hospitable"], ant:["uninhabitable"], ex:[{ s:"People will move to more {{}} areas as the climate changes.", f:"habitable", ko:"기후가 변하면서 사람들은 더 살기 좋은 지역으로 이동할 것이다." }] },
+  { word:"handle", exams:["공무원"], pron:"핸들", pos:"v", level:"B1", meanings:["다루다","감당하다"], syn:["deal with","cope with","manage"], ex:[{ s:"Tell our assistant, and she will {{}} it.", f:"handle", ko:"우리 조수에게 말하면 그녀가 처리할 거예요." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -608,6 +610,7 @@ Object.assign(window.GLOSS, {
   "indignity":"모욕",
   "inflexible":"융통성 없는",
   "ingrained":"깊이 뿌리 박힌",
+  "inhabitable": "사람이 살 수 있는",
   "inheritor":"상속인, 계승자",
   "inhospitable":"불친절한",
   "innocuous":"해롭지 않은",
@@ -618,6 +621,7 @@ Object.assign(window.GLOSS, {
   "keep hold of":"~을 잡고 놓지 않다",
   "landmark":"기념비적인",
   "lie dormant":"휴면 상태에 있다",
+  "livable": "살기 좋은",
   "loathsome":"역겨운",
   "lob":"높이 던지다",
   "longhand":"필기체",
@@ -680,6 +684,7 @@ Object.assign(window.GLOSS, {
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
   "unassuming":"겸손한",
+  "uninhabitable": "사람이 살 수 없는",
   "uplifting":"기분을 북돋우는",
   "upscale":"상류층 대상의",
   "wait":"기다리다",

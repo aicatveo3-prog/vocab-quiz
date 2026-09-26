@@ -1513,7 +1513,6 @@ Object.assign(window.PRON, {
   "cutting to treat": "커팅 투 트리트",
   "cutting tool with teeth": "커팅 툴 위드 티스",
   "cycle of change": "사이클 오브 체인지",
-  "damage": "대미지",
   "damage done for its own sake": "대미지 던 포 이츠 오운 세이크",
   "damage on purpose": "대미지 온 퍼퍼스",
   "damaged": "대미지드",
@@ -1825,7 +1824,6 @@ Object.assign(window.PRON, {
   "dynamic": "다이내믹",
   "dyspepsia": "디스펩시아",
   "each in turn": "이치 인 턴",
-  "eager": "이거",
   "eager to fight": "이거 투 파이트",
   "eagerly": "이거리",
   "earlier in order": "얼리어 인 오더",
@@ -2072,7 +2070,6 @@ Object.assign(window.PRON, {
   "falling-out": "폴링 아웃",
   "false belief": "폴스 빌리프",
   "fame": "페임",
-  "familiar": "퍼밀리어",
   "family": "패밀리",
   "famous": "페이머스",
   "far from anywhere": "파 프롬 애니웨어",
@@ -2431,7 +2428,6 @@ Object.assign(window.PRON, {
   "fury": "퓨리",
   "future generations": "퓨처 제너레이션즈",
   "gadget": "개짓",
-  "gain": "게인",
   "gain courage": "게인 커리지",
   "gain from": "게인 프럼",
   "gain ground": "게인 그라운드",
@@ -2726,7 +2722,6 @@ Object.assign(window.PRON, {
   "handed-down wisdom": "핸디드 다운 위즈덤",
   "handing over of money": "핸딩 오버 오브 머니",
   "handiwork": "핸디워크",
-  "handle": "핸들",
   "hands-on": "핸즈 온",
   "hands-on expert": "핸즈 온 엑스퍼트",
   "handsaw": "핸드소",
@@ -3167,7 +3162,6 @@ Object.assign(window.PRON, {
   "indemnify": "인뎀너파이",
   "indemnity": "인뎀너티",
   "independence": "인디펜던스",
-  "independent": "인디펜던트",
   "indignation": "인디그네이션",
   "indirect": "인디렉트",
   "indirectly": "인디렉틀리",
@@ -3198,7 +3192,6 @@ Object.assign(window.PRON, {
   "inflict": "인플릭트",
   "inflict pain on": "인플릭트 페인 온",
   "inflow": "인플로",
-  "informal": "인포멀",
   "information": "인퍼메이션",
   "infrequent": "인프리퀀트",
   "infringe": "인프린지",
@@ -3464,7 +3457,6 @@ Object.assign(window.PRON, {
   "lay up a supply": "레이 업 어 서플라이",
   "layperson": "레이퍼슨",
   "lead the way": "리드 더 웨이",
-  "lead to": "리드 투",
   "lead to a seat": "리드 투 어 시트",
   "lead up to": "리드 업 투",
   "leader": "리더",
@@ -8264,7 +8256,6 @@ Object.assign(window.PRON, {
   "urge strongly": "어지 스트롱리",
 
   /* GLOSS 에만 있고 발음이 없던 것 — 10차의 moderate 와 같은 경우다 */
-  "growth": "그로스",
 
   /* ── 12차: explicitly ~ extinct (44개) ─────────────────
      search 는 기존 researcher("리서처")에, broad 는 broaden("브로든")·
@@ -8819,7 +8810,6 @@ Object.assign(window.PRON, {
   "hoarfrost": "호프로스트",
   "ice crystals": "아이스 크리스털스",
   "knit the brows": "니트 더 브라우스",
-  "live up to": "리브 업 투",
   "look displeased": "룩 디스플리즈드",
   "mildew": "밀듀",
   "money collecting": "머니 컬렉팅",
@@ -9182,13 +9172,27 @@ Object.assign(window.PRON, {
 
 /* ── 공무원 단어에서 새로 쓰인 선택지의 발음 ────────── */
 Object.assign(window.PRON, {
+  "accustomed": "어커스텀드",
   "amidst": "어미드스트",
+  "consecutively": "컨세큐티블리",
+  "cross-examine": "크로스 이그재민",
   "cursed": "커스트",
   "double-cross": "더블 크로스",
   "during": "듀어링",
   "exorbitant": "이그조비턴트",
   "expensive": "익스펜시브",
+  "grill": "그릴",
+  "harm": "함",
+  "in succession": "인 석세션",
+  "inhabitable": "인해비터블",
+  "known": "노운",
   "limitation": "리미테이션",
+  "livable": "리버블",
+  "meet": "미트",
   "perpetrate": "퍼페트레이트",
-  "pricey": "프라이시"
+  "pricey": "프라이시",
+  "self-reliant": "셀프 릴라이언트",
+  "self-sufficient": "셀프 서피션트",
+  "successively": "석세시블리",
+  "uninhabitable": "언인해비터블"
 });

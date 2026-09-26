@@ -1886,7 +1886,6 @@ Object.assign(window.GLOSS, {
   "large stock farm": "큰 가축 농장",
   "late in coming on": "더디게 나타나는",
   "laugh at cruelly": "모질게 비웃다",
-  "lead to": "~로 이어지다",
   "leaning on another": "남에게 기댐",
   "learning by heart only": "외우기만 하는 배움",
   "leave in a state": "어떤 상태로 두다",

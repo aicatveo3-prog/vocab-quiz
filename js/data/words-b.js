@@ -27,7 +27,7 @@ window.VOCAB_B = [
   { word:"behavior", exams:["공무원"], pron:"비헤이비어", pos:"n", level:"B1", meanings:["행동","태도"], syn:["conduct","manner","demeanor"], ex:[{ s:"These brain areas help you plan goal-oriented {{}}.", f:"behavior", ko:"이 뇌 영역들은 목표 지향적인 행동을 계획하도록 돕는다." }] },
   { word:"betray", exams:["공무원"], pron:"비트레이", pos:"v", level:"B2", meanings:["배신하다","저버리다"], syn:["deceive","let down","double-cross"], ant:["support"], ex:[{ s:"People worry that AI tools may {{}} their trust.", f:"betray", ko:"사람들은 AI 도구가 자신의 신뢰를 저버릴까 걱정한다." }] },
   { word:"blessed", exams:["공무원"], pron:"블레시드", pos:"adj", level:"B2", meanings:["축복받은","신성한"], syn:["fortunate","holy","sacred"], ant:["cursed"], ex:[{ s:"Humans are {{}} with remarkable intelligence.", f:"blessed", ko:"인간은 놀라운 지능을 타고났다." }], gov:{ prep:["with"], usage:"be blessed with ~ : ~을 타고나다, ~의 복을 누리다" } },
-  { word:"broad", exams:["공무원"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"We work with a {{}} range of national organizations.", f:"broad", ko:"우리는 폭넓은 국가 기관들과 협력한다." }] },
+  { word:"broad", exams:["공무원"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"The program has {{}} support from national organizations.", f:"broad", ko:"그 프로그램은 국가 기관들로부터 폭넓은 지지를 받는다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],

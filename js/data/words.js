@@ -1738,7 +1738,6 @@ window.GLOSS = {
   "fail":"실패하다",
   "failure":"실패",
   "fakeness":"가짜임",
-  "familiar":"익숙한",
   "foreign":"외국의",
   "graceful":"우아한",
   "gradually":"점차적으로",
