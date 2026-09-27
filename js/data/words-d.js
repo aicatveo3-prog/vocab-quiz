@@ -151,6 +151,10 @@ window.VOCAB_D = [
   { word:"discouraged", exams:["수능"], pron:"디스커리지드", pos:"adj", level:"B2", meanings:["낙담한","의욕을 잃은"], syn:["disheartened","dispirited","demoralized"], ant:["encouraged"], ex:[{ s:"After failing the test twice, he felt {{}} and wanted to quit.", f:"discouraged", ko:"시험에 두 번 떨어지자 그는 낙담해서 그만두고 싶었다." }] },
   { word:"displacement", exams:["수능"], pron:"디스플레이스먼트", pos:"n", level:"C1", meanings:["강제 이주","위치 이동"], ex:[{ s:"The war caused the {{}} of thousands of families.", f:"displacement", ko:"전쟁으로 수천 가구가 강제로 삶의 터전을 떠났다." }] },
   { word:"dramatic", exams:["수능"], pron:"드러매틱", pos:"adj", level:"B2", meanings:["극적인","급격한"], syn:["striking","spectacular","drastic"], ex:[{ s:"The automobile brought {{}} changes to daily life.", f:"dramatic", ko:"자동차는 일상생활에 극적인 변화를 가져왔다." }] },
+  { word:"definitively", exams:["수능"], pron:"디피니티블리", pos:"adv", level:"C1", meanings:["최종적으로","명확하게"] },
+  { word:"delight", exams:["수능"], pron:"딜라이트", pos:"n", level:"B2", meanings:["기쁨","즐거움"], ex:[{ s:"To our {{}}, the rain stopped just before the picnic.", f:"delight", ko:"기쁘게도 소풍 직전에 비가 그쳤다." }] },
+  { word:"departure", exams:["수능"], pron:"디파처", pos:"n", level:"B1", meanings:["출발","떠남"], ex:[{ s:"Please arrive at the gate 30 minutes before {{}}.", f:"departure", ko:"출발 30분 전까지 탑승구에 와 주세요." }] },
+  { word:"description", exams:["수능"], pron:"디스크립션", pos:"n", level:"B1", meanings:["묘사","설명"], ex:[{ s:"Can you give me a clear {{}} of the man you saw?", f:"description", ko:"당신이 본 남자를 분명하게 묘사해 줄 수 있나요?" }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1628,7 +1632,6 @@ Object.assign(window.GLOSS, {
   "wreckage":"잔해, 난파",
 
   /* ── 2차 (declare ~ deliver) 몫 74개 ──────────── */
-  "accidentally":"우연히, 실수로",
   "adornment":"장식, 장식품",
   "break down":"분해되다; 고장 나다",
   "calculated":"계획적인, 의도된",

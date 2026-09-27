@@ -39,6 +39,8 @@ window.VOCAB_B = [
   { word:"bodily", exams:["수능"], pron:"바딜리", pos:"adj", level:"C1", meanings:["신체의","육체의"], syn:["physical","corporal","corporeal"], ex:[{ s:"Players act through the virtual {{}} space of the avatar.", f:"bodily", ko:"플레이어는 아바타의 가상 신체 공간을 통해 행동한다." }] },
   { word:"brighten", exams:["수능"], pron:"브라이튼", pos:"v", level:"B2", meanings:["밝게 하다","밝아지다"], syn:["illuminate","light up","cheer up"], ant:["darken"], ex:[{ s:"Her face began to {{}} at the good news.", f:"brighten", ko:"좋은 소식에 그녀의 얼굴이 밝아지기 시작했다." }] },
   { word:"broadcaster", exams:["수능"], pron:"브로드캐스터", pos:"n", level:"B2", meanings:["방송인","방송사"], ex:[{ s:"The {{}} described every play of the game live on the radio.", f:"broadcaster", ko:"방송인은 경기의 모든 플레이를 라디오로 생중계했다." }] },
+  { word:"belief", exams:["수능"], pron:"빌리프", pos:"n", level:"B1", meanings:["믿음","신념"], ex:[{ s:"Her strong {{}} in hard work helped her succeed.", f:"belief", ko:"노력에 대한 그녀의 굳은 믿음이 성공을 도왔다." }] },
+  { word:"buyer", exams:["수능"], pron:"바이어", pos:"n", level:"B1", meanings:["구매자","바이어"], syn:["purchaser","customer","consumer"], ant:["seller"], ex:[{ s:"The {{}} and the seller finally agreed on a fair price.", f:"buyer", ko:"구매자와 판매자는 마침내 적정한 가격에 합의했다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],
@@ -1058,6 +1060,7 @@ Object.assign(window.GLOSS, {
   "persistent":"잘 분해되지 않는, 끈질긴",
   "pleasant":"즐거운, 기분 좋은",
   "protect":"보호하다",
+  "purchaser": "구입자",
   "recover from":"~에서 회복하다",
   "relief":"안도, 경감",
   "report to":"~에게 보고하다, ~의 지휘를 받다",

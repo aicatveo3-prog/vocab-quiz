@@ -1962,7 +1962,6 @@ Object.assign(window.GLOSS, {
   "exhaustive": "빠뜨림 없는",
   "expansionism": "팽창주의",
   "explanatory": "설명하는, 설명적인",
-  "expression": "표현, 표정",
   "extemporize": "즉석에서 말하다",
   "face to face": "얼굴을 맞대고",
   "facilities": "설비",

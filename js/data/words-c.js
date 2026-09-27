@@ -110,6 +110,10 @@ window.VOCAB_C = [
   { word:"coordination", exams:["수능"], pron:"코오디네이션", pos:"n", level:"B2", meanings:["조정","협응"], syn:["cooperation","collaboration","synchronization"], ex:[{ s:"Playing tennis well requires good hand-eye {{}}.", f:"coordination", ko:"테니스를 잘 치려면 손과 눈의 협응이 좋아야 한다." }] },
   { word:"creative", exams:["수능"], pron:"크리에이티브", pos:"adj", level:"B1", meanings:["창의적인","창조적인"], syn:["imaginative","inventive","innovative"], ant:["unimaginative"], ex:[{ s:"Children need plenty of time for {{}} play.", f:"creative", ko:"아이들에게는 창의적인 놀이를 할 시간이 충분히 필요하다." }] },
   { word:"critically", exams:["수능"], pron:"크리티컬리", pos:"adv", level:"C1", meanings:["비판적으로","결정적으로"] },
+  { word:"clarification", exams:["수능"], pron:"클래러피케이션", pos:"n", level:"C1", meanings:["해명","명확화"], ex:[{ s:"The student asked for {{}} of the homework instructions.", f:"clarification", ko:"그 학생은 숙제 지시 사항을 분명히 설명해 달라고 요청했다." }] },
+  { word:"communicate", exams:["수능"], pron:"커뮤니케이트", pos:"v", level:"B1", meanings:["의사소통하다","전달하다"], ex:[{ s:"Dolphins {{}} with each other using clicks and whistles.", f:"communicate", ko:"돌고래는 딸깍 소리와 휘파람 소리로 서로 의사소통한다." }] },
+  { word:"concise", exams:["수능"], pron:"컨사이스", pos:"adj", level:"B2", meanings:["간결한","간명한"], syn:["brief","succinct","terse"], ant:["lengthy","wordy"], ex:[{ s:"Please keep your answers {{}} and to the point.", f:"concise", ko:"답은 간결하고 요점만 담아 주세요." }] },
+  { word:"conformity", exams:["수능"], pron:"컨포머티", pos:"n", level:"C1", meanings:["순응","따름"], ex:[{ s:"Some schools value {{}} more than creativity.", f:"conformity", ko:"어떤 학교는 창의성보다 순응을 더 중시한다." }] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2231,5 +2235,6 @@ Object.assign(window.GLOSS, {
   "warm":"따뜻한",
   "weak":"약한",
   "weather": "날씨, 기상",
-  "whole":"전체"
+  "whole":"전체",
+  "wordy": "장황한"
 });

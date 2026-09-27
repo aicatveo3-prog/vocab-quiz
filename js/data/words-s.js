@@ -2795,7 +2795,6 @@ Object.assign(window.GLOSS, {
   "answer to a problem": "문제에 대한 답",
   "anxious waiting": "애타는 기다림",
   "apartment": "아파트, 공동 주택",
-  "apparently": "보아하니",
   "arc of half a turn": "반 바퀴의 활꼴",
   "area covered": "미치는 구역",
   "area of concern": "맡아 다루는 자리",

@@ -689,7 +689,6 @@ Object.assign(window.GLOSS, {
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
-  "appreciation":"감사, 고마움",
   "avarice":"금전욕",
   "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
