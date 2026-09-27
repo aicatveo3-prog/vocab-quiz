@@ -1914,7 +1914,7 @@ window.VOCAB_C = [
     syn:["citation","pointer","link"],
     ex:[{ s:"Each entry carries a {{}} to the map.", f:"cross-reference", ko:"각 항목에는 지도로 가는 상호 참조가 달려 있다." }] },
 
-  { word:"crucial", pron:"크루셜", pos:"adj", level:"B2", meanings:["결정적인","매우 중요한"],
+  { word:"crucial", exams:["수능"], pron:"크루셜", pos:"adj", level:"B2", meanings:["결정적인","매우 중요한"],
     syn:["decisive","vital","pivotal"], ant:["minor"],
     ex:[{ s:"Timing was {{}} to the whole rescue.", f:"crucial", ko:"타이밍이 구조 전체에 결정적이었다." }],
     gov:{ prep:["to","for","in"], pat:"crucial {{}} our success", usage:"be crucial to ~ : ~에 결정적이다" } },

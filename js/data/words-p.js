@@ -1552,7 +1552,7 @@ window.VOCAB_P = [
 
   /* 승격 115 — 사전은 '보존하다; 보호 구역' 으로 품사가 섞여 있었다. 원본과
      참조 다섯 곳이 모두 동사 쪽이라 동사로 세웠다. */
-  { word:"preserve", exams:["공무원"], pron:"프리저브", pos:"v", level:"B1", meanings:["보존하다","보호하다"],
+  { word:"preserve", exams:["공무원","수능"], pron:"프리저브", pos:"v", level:"B1", meanings:["보존하다","보호하다"],
     syn:["conserve","keep from harm","keep as it is"],
     ex:[{ s:"The town works to {{}} its old walls.", f:"preserve", ko:"그 고을은 오래된 성벽을 보존하려 애쓴다." }] },
 

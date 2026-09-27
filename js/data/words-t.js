@@ -385,7 +385,7 @@ window.VOCAB_T = [
     ex:[{ s:"I am {{}} sorry about that.", f:"terribly", ko:"그 일은 대단히 미안합니다." }] },
 
   /* 승격 ㉕ — 사전 글자 유지(참조 fabulous). 교재의 '아주 좋은' 은 버렸다. */
-  { word:"terrific", pron:"터리픽", pos:"adj", level:"B2", meanings:["멋진","대단한"],
+  { word:"terrific", exams:["수능"], pron:"터리픽", pos:"adj", level:"B2", meanings:["멋진","대단한"],
     syn:["fabulous","really good","splendid to see"],
     ex:[{ s:"That was a {{}} idea.", f:"terrific", ko:"그것은 멋진 생각이었다." }] },
 
