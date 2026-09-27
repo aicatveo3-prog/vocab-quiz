@@ -48,6 +48,7 @@ window.VOCAB_H = [
   { word:"horizon", exams:["수능"], pron:"허라이즌", pos:"n", level:"B2", meanings:["지평선","시야"], ex:[{ s:"The sun slowly disappeared below the {{}}.", f:"horizon", ko:"해가 천천히 지평선 아래로 사라졌다." }] },
   { word:"hardly", exams:["수능"], pron:"하들리", pos:"adv", level:"B1", meanings:["거의 ~ 않다","간신히"], syn:["barely","scarcely","rarely"] },
   { word:"harmonize", exams:["수능"], pron:"하머나이즈", pos:"v", level:"C1", meanings:["조화시키다","조화를 이루다"], syn:["reconcile","coordinate","blend"], ex:[{ s:"The two singers' voices {{}} beautifully.", f:"harmonize", ko:"두 가수의 목소리가 아름답게 어우러진다." }] },
+  { word:"humorous", exams:["수능"], pron:"휴머러스", pos:"adj", level:"B2", meanings:["재미있는","유머러스한"], syn:["amusing","witty","comic"], ex:[{ s:"His {{}} speech made everyone at the wedding laugh.", f:"humorous", ko:"그의 재미있는 연설에 결혼식 하객 모두가 웃었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -573,6 +574,7 @@ window.VOCAB_H = [
 /* 유의어 뜻 사전 병합 */
 Object.assign(window.GLOSS, {
   "abhorrent":"혐오스러운",
+  "amusing": "재미있는, 즐거운",
   "animosity":"적의, 앙심",
   "antagonism":"적대, 대립",
   "antagonistic":"적대적인",
@@ -593,6 +595,7 @@ Object.assign(window.GLOSS, {
   "central office":"중앙 사무소",
   "class system":"계급 제도",
   "cleanliness":"청결",
+  "comic": "웃기는, 희극의",
   "concord": "화합, 일치",
   "concordant":"조화하는",
   "conjecture":"추측",
@@ -716,5 +719,6 @@ Object.assign(window.GLOSS, {
   "upscale":"상류층 대상의",
   "wait":"기다리다",
   "welcoming":"환영하는",
+  "witty": "재치 있는",
   "zone":"지역, 구역"
 });

@@ -2606,7 +2606,6 @@ Object.assign(window.GLOSS, {
   "lasting for good": "영영 이어지는",
   "lasting many years": "여러 해를 버티는",
   "law on inventions": "발명에 관한 법",
-  "lawmaker": "입법자, 국회의원",
   "lawmaking": "법을 만드는",
   "lawyer for the state": "나라를 대리하는 법률가",
   "lay away for later": "나중을 위해 챙겨 두다",

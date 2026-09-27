@@ -516,6 +516,8 @@ window.VOCAB_F = [
   { word:"fossil", exams:["수능"], pron:"파슬", pos:"n", level:"B2", meanings:["화석"], ex:[{ s:"Scientists found a dinosaur {{}} in the desert.", f:"fossil", ko:"과학자들은 사막에서 공룡 화석을 발견했다." }] },
   { word:"facilitator", exams:["수능"], pron:"퍼실러테이터", pos:"n", level:"C1", meanings:["진행자","촉진자"], ex:[{ s:"The workshop {{}} made sure everyone had a chance to speak.", f:"facilitator", ko:"워크숍 진행자는 모두가 말할 기회를 갖도록 했다." }] },
   { word:"fingerprint", exams:["수능"], pron:"핑거프린트", pos:"n", level:"B2", meanings:["지문"], ex:[{ s:"The police found the thief's {{}} on the window.", f:"fingerprint", ko:"경찰은 창문에서 도둑의 지문을 찾아냈다." }] },
+  { word:"fond", exams:["수능"], pron:"판드", pos:"adj", level:"B2", meanings:["좋아하는","다정한"], ex:[{ s:"My grandmother is very {{}} of gardening.", f:"fond", ko:"우리 할머니는 정원 가꾸기를 무척 좋아하신다." }] },
+  { word:"functionality", exams:["수능"], pron:"펑크셔낼러티", pos:"n", level:"C1", meanings:["기능성","기능"], ex:[{ s:"The new phone offers more {{}} than the old model.", f:"functionality", ko:"새 휴대폰은 이전 모델보다 기능이 더 많다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */

@@ -72,6 +72,12 @@ window.VOCAB_L = [
   { word:"linguist", exams:["수능"], pron:"링귀스트", pos:"n", level:"C1", meanings:["언어학자","외국어에 능통한 사람"], ex:[{ s:"The {{}} spent years studying ancient languages.", f:"linguist", ko:"그 언어학자는 수년간 고대 언어를 연구했다." }] },
   { word:"learn", exams:["수능"], pron:"런", pos:"v", level:"B1", meanings:["배우다","알게 되다"], ex:[{ s:"Children {{}} new languages faster than adults do.", f:"learn", ko:"아이들은 어른보다 새 언어를 더 빨리 배운다." }] },
   { word:"likeness", exams:["수능"], pron:"라이크니스", pos:"n", level:"C1", meanings:["닮음","유사성"], syn:["resemblance","similarity","sameness"], ex:[{ s:"There is a strong family {{}} between the two brothers.", f:"likeness", ko:"두 형제는 집안 내력으로 많이 닮았다." }] },
+  { word:"laughter", exams:["수능"], pron:"래프터", pos:"n", level:"B1", meanings:["웃음","웃음소리"], ex:[{ s:"The room was filled with {{}} during the comedy show.", f:"laughter", ko:"코미디 공연 내내 방은 웃음소리로 가득했다." }] },
+  { word:"lawmaker", exams:["수능"], pron:"로메이커", pos:"n", level:"B2", meanings:["입법자","국회의원"], ex:[{ s:"Every {{}} voted against the new tax.", f:"lawmaker", ko:"모든 국회의원이 새 세금에 반대표를 던졌다." }] },
+  { word:"leadership", exams:["수능"], pron:"리더십", pos:"n", level:"B2", meanings:["지도력","지도부"], ex:[{ s:"She showed strong {{}} during the crisis.", f:"leadership", ko:"그녀는 위기 동안 강한 지도력을 보여 주었다." }] },
+  { word:"legally", exams:["수능"], pron:"리걸리", pos:"adv", level:"C1", meanings:["법적으로","합법적으로"] },
+  { word:"lifestyle", exams:["수능"], pron:"라이프스타일", pos:"n", level:"B2", meanings:["생활 방식"], ex:[{ s:"Many young people now choose a simple {{}} with few possessions.", f:"lifestyle", ko:"요즘 많은 젊은이가 소유물이 적은 단순한 생활 방식을 택한다." }] },
+  { word:"literate", exams:["수능"], pron:"리터럿", pos:"adj", level:"C1", meanings:["글을 읽고 쓸 줄 아는","교양 있는"], ex:[{ s:"In ancient times, only a small part of the population was {{}}.", f:"literate", ko:"고대에는 인구의 극히 일부만 글을 읽고 쓸 줄 알았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -842,7 +848,6 @@ Object.assign(window.GLOSS, {
   "language study": "언어 연구",
   "lasting": "오래가는",
   "legal action": "법적 조치",
-  "legally": "법적으로, 합법적으로",
   "lending": "대여, 빌려 줌",
   "less advanced": "덜 발전한",
   "lessor": "임대인",
