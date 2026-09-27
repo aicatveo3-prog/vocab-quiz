@@ -77,7 +77,7 @@ window.VOCAB_P = [
   { word:"persuade", exams:["공무원"], pron:"퍼스웨이드", pos:"v", level:"B2", meanings:["설득하다"], syn:["convince","coax","urge"], ant:["dissuade"], ex:[{ s:"Activists try to {{}} their fellow citizens.", f:"persuade", ko:"활동가들은 동료 시민들을 설득하려 한다." }] },
   { word:"plantation", exams:["공무원"], pron:"플랜테이션", pos:"n", level:"C1", meanings:["대규모 농장","플랜테이션"], syn:["estate","farm","grange"], ex:[{ s:"Enslaved Africans were brought to work the {{}}.", f:"plantations", ko:"노예가 된 아프리카인들이 대농장에서 일하도록 끌려왔다." }] },
   { word:"play down", exams:["공무원"], pron:"플레이 다운", pos:"phr", level:"C1", meanings:["대수롭지 않게 다루다","축소하다"], syn:["downplay","minimize","understate"], ant:["exaggerate"], ex:[{ s:"Officials {{}} the troubles as typical of any start-up.", f:"play down", ko:"관계자들은 그 문제를 초기 운영의 흔한 일로 축소한다." }] },
-  { word:"politician", exams:["공무원"], pron:"폴리티션", pos:"n", level:"B2", meanings:["정치인"], syn:["statesman","legislator","lawmaker"], ex:[{ s:"Nearly every major {{}} hires media consultants.", f:"politician", ko:"거의 모든 주요 정치인은 미디어 컨설턴트를 고용한다." }] },
+  { word:"politician", exams:["공무원","수능"], pron:"폴리티션", pos:"n", level:"B2", meanings:["정치인"], syn:["statesman","legislator","lawmaker"], ex:[{ s:"Nearly every major {{}} hires media consultants.", f:"politician", ko:"거의 모든 주요 정치인은 미디어 컨설턴트를 고용한다." }] },
   { word:"premises", exams:["공무원"], pron:"프레미시즈", pos:"n", level:"C1", meanings:["부지","건물과 대지"], syn:["property","grounds","site"], ex:[{ s:"The coffeehouses occupied more {{}} than any other trade.", f:"premises", ko:"커피하우스는 다른 어떤 업종보다 많은 부지를 차지했다." }] },
   { word:"preposterous", exams:["공무원"], pron:"프리파스터러스", pos:"adj", level:"C2", meanings:["터무니없는","말도 안 되는"], syn:["absurd","ludicrous","ridiculous"], ant:["reasonable"], ex:[{ s:"The idea seemed utterly {{}} to the experts.", f:"preposterous", ko:"그 생각은 전문가들에게 완전히 터무니없어 보였다." }] },
   { word:"proactive", exams:["공무원"], pron:"프로액티브", pos:"adj", level:"C1", meanings:["선제적인","적극적인"], syn:["preemptive","forward-looking","enterprising"], ant:["reactive"], ex:[{ s:"The city has been {{}} in trying to curb tourism.", f:"proactive", ko:"그 도시는 관광을 억제하려 선제적으로 노력해 왔다." }] },
@@ -87,25 +87,25 @@ window.VOCAB_P = [
   { word:"pyramidal", exams:["공무원"], pron:"피라미덜", pos:"adj", level:"C2", meanings:["피라미드 모양의"], ex:[{ s:"He fingered the flat, {{}} planes of the rock.", f:"pyramidal", ko:"그는 그 돌의 납작한 피라미드 모양 면들을 만졌다." }] },
   { word:"packaging", exams:["공무원"], pron:"패키징", pos:"n", level:"B2", meanings:["포장","포장재"], syn:["wrapping","packing","wrapper"], ex:[{ s:"Avoid single-use plastic {{}}.", f:"packaging", ko:"일회용 플라스틱 포장을 피하라." }] },
   { word:"poised", exams:["공무원"], pron:"포이즈드", pos:"adj", level:"C1", meanings:["준비된","태세를 갖춘"], syn:["ready","prepared","set"], ex:[{ s:"Employment is {{}} for significant change.", f:"poised", ko:"고용은 큰 변화를 앞두고 있다." }] },
-  { word:"prioritize", exams:["공무원"], pron:"프라이오리타이즈", pos:"v", level:"B2", meanings:["우선순위를 두다"], syn:["rank","emphasize","prefer"], ex:[{ s:"It is critical to {{}} training and education.", f:"prioritize", ko:"훈련과 교육에 우선순위를 두는 것이 중요하다." }] },
+  { word:"prioritize", exams:["공무원","수능"], pron:"프라이오리타이즈", pos:"v", level:"B2", meanings:["우선순위를 두다"], syn:["rank","emphasize","prefer"], ex:[{ s:"It is critical to {{}} training and education.", f:"prioritize", ko:"훈련과 교육에 우선순위를 두는 것이 중요하다." }] },
   { word:"productive", exams:["공무원"], pron:"프러덕티브", pos:"adj", level:"B2", meanings:["생산적인"], syn:["efficient","fruitful","prolific"], ant:["unproductive"], ex:[{ s:"Rewarding effort makes a system more {{}}.", f:"productive", ko:"노력을 보상하면 체계가 더 생산적이 된다." }] },
   { word:"partnership", exams:["공무원"], pron:"파트너십", pos:"n", level:"B2", meanings:["동반 관계","협력"], syn:["alliance","collaboration","association"], ex:[{ s:"The projects create new {{}} opportunities.", f:"partnership", ko:"그 사업들은 새로운 협력 기회를 만들어 낸다." }] },
   { word:"pedagogical", exams:["공무원"], pron:"페더고지컬", pos:"adj", level:"C2", meanings:["교육의","교수법의"], syn:["educational","instructional","teaching"], ex:[{ s:"Their {{}} knowledge leaves when they retire.", f:"pedagogical", ko:"그들이 은퇴하면 그들의 교수법 지식도 함께 사라진다." }] },
   { word:"permission", exams:["공무원"], pron:"퍼미션", pos:"n", level:"B1", meanings:["허가","허락"], syn:["consent","authorization","approval"], ant:["prohibition"], ex:[{ s:"I would appreciate it if you could grant me {{}}.", f:"permission", ko:"허가를 내주신다면 감사하겠습니다." }] },
   { word:"pinpoint", exams:["공무원"], pron:"핀포인트", pos:"v", level:"C1", meanings:["정확히 찾아내다","정확히 지적하다"], syn:["identify","locate","determine"], ex:[{ s:"Researchers cannot {{}} why breakfast aids learning.", f:"pinpoint", ko:"연구자들은 아침 식사가 학습에 도움이 되는 이유를 정확히 짚어내지 못한다." }] },
   { word:"plaque", exams:["공무원"], pron:"플라크", pos:"n", level:"C1", meanings:["명판","장식판"], ex:[{ s:"A small {{}} was carved from ivory.", f:"plaque", ko:"작은 명판 하나가 상아로 조각되었다." }] },
-  { word:"platform", exams:["공무원"], pron:"플랫폼", pos:"n", level:"B1", meanings:["플랫폼","연단"], syn:["stage","podium","dais"], ex:[{ s:"The {{}} had over a million agents signed up.", f:"platform", ko:"그 플랫폼에는 백만 개가 넘는 에이전트가 가입되어 있었다." }] },
+  { word:"platform", exams:["공무원","수능"], pron:"플랫폼", pos:"n", level:"B1", meanings:["플랫폼","연단"], syn:["stage","podium","dais"], ex:[{ s:"The {{}} had over a million agents signed up.", f:"platform", ko:"그 플랫폼에는 백만 개가 넘는 에이전트가 가입되어 있었다." }] },
   { word:"prism", exams:["공무원"], pron:"프리즘", pos:"n", level:"C1", meanings:["프리즘"], ex:[{ s:"Movies can be used as a {{}} to understand the world.", f:"prism", ko:"영화는 세상을 이해하는 프리즘으로 쓰일 수 있다." }] },
   { word:"publicly", exams:["공무원"], pron:"퍼블리클리", pos:"adv", level:"B2", meanings:["공개적으로"], syn:["openly","overtly","officially"], ant:["privately"], ex:[{ s:"He refused to discuss the matter {{}}.", f:"publicly", ko:"그는 그 문제를 공개적으로 논의하기를 거부했다." }] },
-  { word:"period", exams:["공무원"], pron:"피리어드", pos:"n", level:"B1", meanings:["기간","시대"], syn:["era","age","duration"], ex:[{ s:"The Middle Ages was a long {{}} of change in Europe.", f:"period", ko:"중세는 유럽에서 오랜 변화의 시대였다." }] },
+  { word:"period", exams:["공무원","수능"], pron:"피리어드", pos:"n", level:"B1", meanings:["기간","시대"], syn:["era","age","duration"], ex:[{ s:"The Middle Ages was a long {{}} of change in Europe.", f:"period", ko:"중세는 유럽에서 오랜 변화의 시대였다." }] },
   { word:"periphery", exams:["공무원"], pron:"퍼리퍼리", pos:"n", level:"C2", meanings:["주변부","변두리"], syn:["edge","fringe","margin"], ant:["center","core"], ex:[{ s:"The region was on the {{}} of ancient civilization.", f:"periphery", ko:"그 지역은 고대 문명의 주변부에 있었다." }], gov:{ prep:["of"], usage:"on the periphery of ~ : ~의 주변부에" } },
   { word:"practice", exams:["공무원"], pron:"프랙티스", pos:"n", level:"B1", meanings:["관행","연습"], syn:["custom","habit","routine"], ex:[{ s:"Conscious unbossing is the {{}} of avoiding management roles.", f:"practice", ko:"의식적 언보싱은 관리직을 피하는 관행이다." }] },
   { word:"praise", exams:["공무원"], pron:"프레이즈", pos:"v", level:"B1", meanings:["칭찬하다","찬사"], syn:["compliment","commend","acclaim"], ant:["criticize","censure"], ex:[{ s:"Parents should {{}} children for their efforts, not just results.", f:"praise", ko:"부모는 결과만이 아니라 노력에 대해서도 아이를 칭찬해야 한다." }], gov:{ prep:["for"], usage:"praise A for B : B에 대해 A를 칭찬하다" } },
   { word:"pretend", exams:["공무원"], pron:"프리텐드", pos:"v", level:"B1", meanings:["~인 척하다","가장하다"], syn:["feign","simulate","bluff"], ex:[{ s:"Children often {{}} to be superheroes when they play.", f:"pretend", ko:"아이들은 놀 때 흔히 슈퍼히어로인 척한다." }] },
   { word:"promise", exams:["공무원"], pron:"프라미스", pos:"n", level:"B1", meanings:["약속","가능성"], syn:["pledge","vow","guarantee"], ex:[{ s:"Lab-grown meat has failed to live up to its {{}}.", f:"promise", ko:"배양육은 기대만큼의 성과를 내지 못했다." }] },
-  { word:"proposal", exams:["공무원"], pron:"프러포절", pos:"n", level:"B1", meanings:["제안","제안서"], syn:["suggestion","proposition","plan"], ex:[{ s:"Thank you for your {{}} for the anniversary event.", f:"proposal", ko:"기념행사에 대한 제안에 감사드립니다." }] },
-  { word:"propose", exams:["공무원"], pron:"프러포즈", pos:"v", level:"B1", meanings:["제안하다","청혼하다"], syn:["suggest","put forward","recommend"], ex:[{ s:"I {{}} that we reserve a larger conference hall.", f:"propose", ko:"더 큰 회의장을 예약할 것을 제안합니다." }] },
-  { word:"provide", exams:["공무원"], pron:"프러바이드", pos:"v", level:"B1", meanings:["제공하다","공급하다"], syn:["supply","offer","furnish"], ex:[{ s:"The museum {{}} visitors with free maps.", f:"provides", ko:"그 박물관은 방문객에게 무료 지도를 제공한다." }], gov:{ prep:["with","for"], usage:"provide A with B : A에게 B를 제공하다 (= provide B for A)" } },
+  { word:"proposal", exams:["공무원","수능"], pron:"프러포절", pos:"n", level:"B1", meanings:["제안","제안서"], syn:["suggestion","proposition","plan"], ex:[{ s:"Thank you for your {{}} for the anniversary event.", f:"proposal", ko:"기념행사에 대한 제안에 감사드립니다." }] },
+  { word:"propose", exams:["공무원","수능"], pron:"프러포즈", pos:"v", level:"B1", meanings:["제안하다","청혼하다"], syn:["suggest","put forward","recommend"], ex:[{ s:"I {{}} that we reserve a larger conference hall.", f:"propose", ko:"더 큰 회의장을 예약할 것을 제안합니다." }] },
+  { word:"provide", exams:["공무원","수능"], pron:"프러바이드", pos:"v", level:"B1", meanings:["제공하다","공급하다"], syn:["supply","offer","furnish"], ex:[{ s:"The museum {{}} visitors with free maps.", f:"provides", ko:"그 박물관은 방문객에게 무료 지도를 제공한다." }], gov:{ prep:["with","for"], usage:"provide A with B : A에게 B를 제공하다 (= provide B for A)" } },
   { word:"perilous", exams:["공무원"], pron:"페릴러스", pos:"adj", level:"C1", meanings:["위험한","위태로운"], syn:["hazardous","risky","precarious"], ant:["safe"], ex:[{ s:"Crossing the mountains in winter is {{}}.", f:"perilous", ko:"겨울에 그 산맥을 넘는 것은 위험하다." }] },
   { word:"philanthropist", exams:["공무원"], pron:"필랜스러피스트", pos:"n", level:"C1", meanings:["자선가","박애주의자"], ex:[{ s:"The {{}} donated millions to local hospitals.", f:"philanthropist", ko:"그 자선가는 지역 병원에 수백만 달러를 기부했다." }] },
   { word:"pivotal", exams:["공무원"], pron:"피버털", pos:"adj", level:"C1", meanings:["중추적인","결정적인"], syn:["crucial","critical","central","essential","vital","indispensable"], ex:[{ s:"Teachers are {{}} to a child's development.", f:"pivotal", ko:"교사는 아이의 발달에 결정적인 역할을 한다." }] },
@@ -123,7 +123,7 @@ window.VOCAB_P = [
   { word:"pick up", exams:["공무원"], pron:"픽 업", pos:"phr", level:"B1", meanings:["집어 들다","습득하다"] },
   { word:"premeditation", exams:["공무원"], pron:"프리메디테이션", pos:"n", level:"C2", meanings:["사전 계획","미리 생각함"], ex:[{ s:"The judge found no evidence of {{}} in the attack.", f:"premeditation", ko:"판사는 그 공격이 미리 계획되었다는 증거를 찾지 못했다." }] },
   { word:"prized", exams:["공무원"], pron:"프라이즈드", pos:"adj", level:"C1", meanings:["소중한","귀하게 여기는"], syn:["cherished","treasured","valued"], ex:[{ s:"Among her most {{}} possessions was an old silver watch.", f:"prized", ko:"그녀가 가장 아끼는 소지품 중에 낡은 은시계가 있었다." }] },
-  { word:"primarily", exams:["공무원"], pron:"프라이메럴리", pos:"adv", level:"B2", meanings:["주로","우선"], syn:["mainly","chiefly","mostly"] },
+  { word:"primarily", exams:["공무원","수능"], pron:"프라이메럴리", pos:"adv", level:"B2", meanings:["주로","우선"], syn:["mainly","chiefly","mostly"] },
   { word:"pass away", exams:["공무원"], pron:"패스 어웨이", pos:"phr", level:"B1", meanings:["세상을 떠나다","돌아가시다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
@@ -276,7 +276,7 @@ window.VOCAB_P = [
     ex:[{ s:"We received only a {{}} refund.", f:"partial", ko:"우리는 부분적인 환불만 받았다." }] },
 
   /* 승격 ⑩ — 사전 표현 '참가자, 당사자' 를 글자까지 지켰다(bystander 반의어, B). */
-  { word:"participant", exams:["공무원"], pron:"파티서펀트", pos:"n", level:"B2", meanings:["참가자","당사자"],
+  { word:"participant", exams:["공무원","수능"], pron:"파티서펀트", pos:"n", level:"B2", meanings:["참가자","당사자"],
     syn:["one taking part","one who joins in","member of an activity"], ant:["bystander"],
     ex:[{ s:"Each {{}} received a badge.", f:"participant", ko:"참가자마다 표찰을 받았다." }] },
 
@@ -300,7 +300,7 @@ window.VOCAB_P = [
 
   /* 승격 ⑬ — 사전이 '특정한; 까다로운' 이었다. 첫 뜻 '특정한' 을 지키고
      원본의 '특별한' 을 붙였다(detail, D). */
-  { word:"particular", exams:["공무원"], pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
+  { word:"particular", exams:["공무원","수능"], pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
     syn:["specific","singled out","one certain"],
     ex:[{ s:"Is there a {{}} book you are looking for?", f:"particular", ko:"찾으시는 특정한 책이 있나요?" }] },
 
@@ -540,23 +540,23 @@ window.VOCAB_P = [
     ex:[{ s:"The museum shows the art of many {{}}.", f:"peoples", ko:"그 박물관은 여러 민족의 예술을 보여 준다." }] },
 
   /* 승격 35 — 사전 표현과 글자까지 같다(discern, D). */
-  { word:"perceive", exams:["공무원"], pron:"퍼시브", pos:"v", level:"B2", meanings:["인지하다","감지하다"],
+  { word:"perceive", exams:["공무원","수능"], pron:"퍼시브", pos:"v", level:"B2", meanings:["인지하다","감지하다"],
     syn:["discern","become aware of","make out"],
     ex:[{ s:"Babies {{}} faces from a very early age.", f:"perceive", ko:"아기는 아주 어릴 때부터 얼굴을 인지한다." }] },
 
   /* 원본은 '백분율, 퍼센트; 비율; 배당, 몫' 으로 네 갈래였다.
      '퍼센트' 는 외래어여서 빼고 두 갈래로 줄였다. */
-  { word:"percentage", pron:"퍼센티지", pos:"n", level:"B1", meanings:["백분율","비율"],
+  { word:"percentage", exams:["수능"], pron:"퍼센티지", pos:"n", level:"B1", meanings:["백분율","비율"],
     syn:["rate per hundred","proportion out of a hundred","share expressed in hundredths"],
     ex:[{ s:"What {{}} of students passed?", f:"percentage", ko:"학생의 몇 백분율이 통과했나요?" }] },
 
   /* 승격 36 — 사전 표현 '인식, 지각' 을 글자까지 지켰다
      (consciousness, C · insight, I). 원본의 다섯 갈래 중 사전 쪽을 남겼다. */
-  { word:"perception", pron:"퍼셉션", pos:"n", level:"B2", meanings:["인식","지각"],
+  { word:"perception", exams:["수능"], pron:"퍼셉션", pos:"n", level:"B2", meanings:["인식","지각"],
     syn:["consciousness","way of seeing","grasp of the senses"],
     ex:[{ s:"Colour {{}} differs from person to person.", f:"perception", ko:"색 인식은 사람마다 다르다." }] },
 
-  { word:"perceptual", pron:"퍼셉추얼", pos:"adj", level:"C1", meanings:["지각의","감각의"],
+  { word:"perceptual", exams:["수능"], pron:"퍼셉추얼", pos:"adj", level:"C1", meanings:["지각의","감각의"],
     syn:["to do with the senses","of perceiving","sense-based"],
     ex:[{ s:"The test measures {{}} speed.", f:"perceptual", ko:"그 검사는 지각의 속도를 잰다." }] },
 
@@ -567,7 +567,7 @@ window.VOCAB_P = [
     ex:[{ s:"Traffic is a {{}} problem in this city.", f:"perennial", ko:"교통은 이 도시의 끊임없는 문제다." }] },
 
   /* 원본은 '연주, 공연, 실행, 수행' 네 갈래였다. 두 갈래로 줄였다. */
-  { word:"performance", exams:["공무원"], pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
+  { word:"performance", exams:["공무원","수능"], pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
     syn:["show before an audience","carrying out of a task","staged act"],
     ex:[{ s:"The evening {{}} sold out.", f:"performance", ko:"저녁 공연은 매진되었다." }] },
 
@@ -663,13 +663,13 @@ window.VOCAB_P = [
     syn:["customize","tailor to one person","make it one's own"],
     ex:[{ s:"You can {{}} the cover with your name.", f:"personalize", ko:"표지를 이름으로 맞춤화할 수 있다." }] },
 
-  { word:"personnel", exams:["공무원"], pron:"퍼서넬", pos:"n", level:"B2", meanings:["직원","인사과"],
+  { word:"personnel", exams:["공무원","수능"], pron:"퍼서넬", pos:"n", level:"B2", meanings:["직원","인사과"],
     syn:["staff of a firm","workforce","human-resources office"],
     ex:[{ s:"All {{}} must wear a badge.", f:"personnel", ko:"모든 직원은 표찰을 달아야 한다." }] },
 
   /* 승격 49 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      원본의 '원근법' 갈래는 버렸다. */
-  { word:"perspective", exams:["공무원"], pron:"퍼스펙티브", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"perspective", exams:["공무원","수능"], pron:"퍼스펙티브", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["standpoint","angle of view","way of looking at it"],
     ex:[{ s:"The book offers a fresh {{}} on the war.", f:"perspective", ko:"그 책은 그 전쟁에 새로운 관점을 준다." }] },
 
@@ -756,7 +756,7 @@ window.VOCAB_P = [
     syn:["marvel","observed event","thing that occurs"],
     ex:[{ s:"The northern lights are a striking {{}}.", f:"phenomenon", ko:"북극광은 눈에 띄는 현상이다." }] },
 
-  { word:"philosophy", exams:["공무원"], pron:"펄라서피", pos:"n", level:"B1", meanings:["철학"],
+  { word:"philosophy", exams:["공무원","수능"], pron:"펄라서피", pos:"n", level:"B1", meanings:["철학"],
     syn:["study of wisdom","system of thought","love of knowledge"],
     ex:[{ s:"He teaches {{}} at the college.", f:"philosophy", ko:"그는 그 대학에서 철학을 가르친다." }] },
 
@@ -785,7 +785,7 @@ window.VOCAB_P = [
   /* 승격 57 — 사전이 '신체의; 물리적인' 이었다. 구분 기호만 쉼표로 바꿨다
      (corporal, C · mental 반의어, M). 원본의 '육체의, 물질의, 물리학의' 세 갈래
      중 사전 쪽을 남겼다 — '육체의' 는 corporal 의 첫 뜻과 같다. */
-  { word:"physical", exams:["공무원"], pron:"피지컬", pos:"adj", level:"B1", meanings:["신체의","물리적인"],
+  { word:"physical", exams:["공무원","수능"], pron:"피지컬", pos:"adj", level:"B1", meanings:["신체의","물리적인"],
     syn:["corporal","of the body","material rather than mental"], ant:["mental"],
     ex:[{ s:"The job needs real {{}} strength.", f:"physical", ko:"그 일은 진짜 신체의 힘이 필요하다." }] },
 
@@ -838,7 +838,7 @@ window.VOCAB_P = [
      갈렸다 — frontiersman(F) 은 명사, innovate(I)·break new ground(B) 는 동사 쪽이다.
      사전의 첫 갈래가 명사여서 명사로 세우고, 동사 자리 두 곳의 유의어를
      'lead the way'·'strike out anew' 로 바꿨다(words-i.js·words-b.js). */
-  { word:"pioneer", exams:["공무원"], pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
+  { word:"pioneer", exams:["공무원","수능"], pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
     syn:["frontiersman","trailblazer","first to go in"],
     ex:[{ s:"She was a {{}} of heart surgery.", f:"pioneer", ko:"그녀는 심장 수술의 개척자였다." }] },
 
@@ -1036,12 +1036,12 @@ window.VOCAB_P = [
   /* 승격 76 — 사전값은 '보험 증권' 한 갈래뿐이었다. 원본의 '정책' 이 수능에서
      압도적으로 흔하므로 첫 자리에 두고 사전값을 둘째로 살렸다 —
      insurance(I) 의 화면 글자가 바뀐다. '방책' 갈래는 버렸다. */
-  { word:"policy", exams:["공무원"], pron:"팔러시", pos:"n", level:"B1", meanings:["정책","보험 증권"],
+  { word:"policy", exams:["공무원","수능"], pron:"팔러시", pos:"n", level:"B1", meanings:["정책","보험 증권"],
     syn:["course of action","official line","insurance contract"],
     ex:[{ s:"The new {{}} takes effect in May.", f:"policy", ko:"새 정책은 오월에 시행된다." }] },
 
   /* 원본은 '(광이 나도록) 닦다, 다듬다' 였다. 괄호를 걷었다. */
-  { word:"polish", pron:"팔리시", pos:"v", level:"B1", meanings:["닦다","다듬다"],
+  { word:"polish", exams:["수능"], pron:"팔리시", pos:"v", level:"B1", meanings:["닦다","다듬다"],
     syn:["rub to a shine","buff up","smooth and refine"],
     ex:[{ s:"He stopped to {{}} his shoes.", f:"polish", ko:"그는 멈춰서 구두를 닦았다." }] },
 
@@ -1056,7 +1056,7 @@ window.VOCAB_P = [
     syn:["courteous","well-mannered","showing good manners"], ant:["impertinent"],
     ex:[{ s:"He gave a {{}} nod and left.", f:"polite", ko:"그는 예의 바른 목례를 하고 떠났다." }] },
 
-  { word:"political", pron:"펄리티컬", pos:"adj", level:"B1", meanings:["정치적인"],
+  { word:"political", exams:["수능"], pron:"펄리티컬", pos:"adj", level:"B1", meanings:["정치적인"],
     syn:["to do with government","of state affairs","party-related"],
     ex:[{ s:"The song carried a {{}} message.", f:"political", ko:"그 노래는 정치적인 메시지를 담았다." }] },
 
@@ -1101,7 +1101,7 @@ window.VOCAB_P = [
     ex:[{ s:"The show's {{}} grew each season.", f:"popularity", ko:"그 프로의 인기는 시즌마다 자랐다." }] },
 
   /* 승격 82 — 사전 표현과 글자까지 같다(community, C). */
-  { word:"population", pron:"파퓰레이션", pos:"n", level:"B1", meanings:["인구","주민"],
+  { word:"population", exams:["수능"], pron:"파퓰레이션", pos:"n", level:"B1", meanings:["인구","주민"],
     syn:["community","number of inhabitants","people of a place"],
     ex:[{ s:"The village has a {{}} of forty.", f:"population", ko:"그 마을은 인구가 마흔이다." }] },
 
@@ -1227,7 +1227,7 @@ window.VOCAB_P = [
   /* 원본은 '잠재적인; 가능성, 잠재력' 으로 형용사와 명사가 섞여 있었다.
      참조가 없어 형용사로 세웠고, 명사 갈래는 바로 다음의 potentiality 가 담는다 —
      그래야 둘이 '잠재력' 으로 물리지 않는다. */
-  { word:"potential", exams:["공무원"], pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
+  { word:"potential", exams:["공무원","수능"], pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
     syn:["possible in future","latent","waiting to develop"],
     ex:[{ s:"We found three {{}} buyers.", f:"potential", ko:"우리는 잠재적인 구매자 셋을 찾았다." }] },
 
@@ -1261,7 +1261,7 @@ window.VOCAB_P = [
   /* 승격 95 — 사전은 '실용적인' 한 갈래였다. 원본의 '실제적인' 을 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(commonsense, C · functional, F · impractical 반의어, I
      — 세 곳). 원본의 '타당한' 갈래는 pertinent 쪽으로 넘겼다. */
-  { word:"practical", exams:["공무원"], pron:"프랙티컬", pos:"adj", level:"B1", meanings:["실용적인","실제적인"],
+  { word:"practical", exams:["공무원","수능"], pron:"프랙티컬", pos:"adj", level:"B1", meanings:["실용적인","실제적인"],
     syn:["functional","useful in real life","down-to-earth"], ant:["impractical"],
     ex:[{ s:"She gave some {{}} advice.", f:"practical", ko:"그녀는 몇 가지 실용적인 조언을 했다." }] },
 
@@ -1381,7 +1381,7 @@ window.VOCAB_P = [
     ex:[{ s:"She has a {{}} to allergies.", f:"predisposition", ko:"그녀는 알레르기에 걸리기 쉬운 성질이 있다." }] },
 
   /* 승격 103 — 사전 표현과 글자까지 같다(dominant, D). */
-  { word:"predominant", pron:"프리다머넌트", pos:"adj", level:"C1", meanings:["두드러진","우세한"],
+  { word:"predominant", exams:["수능"], pron:"프리다머넌트", pos:"adj", level:"C1", meanings:["두드러진","우세한"],
     syn:["main","most noticeable","holding the upper hand"], ant:["secondary"],
     ex:[{ s:"Rice is the {{}} crop in this region.", f:"predominant", ko:"쌀은 이 지역에서 두드러진 작물이다." }] },
 
@@ -1418,7 +1418,7 @@ window.VOCAB_P = [
      갈라 두었다. prerogative(고유 권한) 는 authority(권한, 당국 · B2) 와
      레벨을 두 칸 벌려(C2) 오답 후보에서 빠지게 했다. */
 
-  { word:"preference", pron:"프레퍼런스", pos:"n", level:"B2", meanings:["선호","애호"],
+  { word:"preference", exams:["수능"], pron:"프레퍼런스", pos:"n", level:"B2", meanings:["선호","애호"],
     syn:["what one likes better","liking for one over another","choice made by taste"],
     ex:[{ s:"Do you have a {{}} for tea or coffee?", f:"preference", ko:"차와 커피 가운데 선호가 있으신가요?" }] },
 
@@ -1692,7 +1692,7 @@ window.VOCAB_P = [
 
   /* 승격 129 — 사전 표현과 글자까지 같다(conscience, C). principal 과 발음이
      같은 낱말이다 — 그래서 둘을 나란히 세워 두었다. */
-  { word:"principle", exams:["공무원"], pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
+  { word:"principle", exams:["공무원","수능"], pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
     syn:["rule one lives by","basic truth","standard of conduct"],
     ex:[{ s:"He refused on {{}}.", f:"principle", ko:"그는 원칙에 따라 거절했다." }] },
 
@@ -1745,7 +1745,7 @@ window.VOCAB_P = [
 
   /* 승격 136 — 사전은 '과정; 처리하다' 로 명사와 동사가 섞여 있었다. 참조가
      없어 원본대로 명사로 세웠다. */
-  { word:"process", exams:["공무원"], pron:"프라세스", pos:"n", level:"B1", meanings:["과정","경과"],
+  { word:"process", exams:["공무원","수능"], pron:"프라세스", pos:"n", level:"B1", meanings:["과정","경과"],
     syn:["series of steps","way things go along","course of change"],
     ex:[{ s:"Learning is a slow {{}}.", f:"process", ko:"배움은 느린 과정이다." }] },
 
@@ -1779,12 +1779,12 @@ window.VOCAB_P = [
      이었는데 그것은 product 쪽 뜻이다. production 은 '만드는 일' 이다.
      사전값이 옳은 쪽이어서 글자까지 지켰다 (consumption, C 한 곳 보존).
      '생산량' 은 output(생산량, 산출 · B2) 과 글자가 같아 둘이 서로 오답에서 빠진다. */
-  { word:"production", pron:"프러덕션", pos:"n", level:"B1", meanings:["생산","생산량"],
+  { word:"production", exams:["수능"], pron:"프러덕션", pos:"n", level:"B1", meanings:["생산","생산량"],
     syn:["output","act of making","amount turned out"], ant:["consumption"],
     ex:[{ s:"Steel {{}} fell last year.", f:"production", ko:"철강 생산이 지난해 줄었다." }] },
 
   /* 승격 141 — 사전 표현과 글자까지 같다(efficiency, E). */
-  { word:"productivity", exams:["공무원"], pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
+  { word:"productivity", exams:["공무원","수능"], pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
     syn:["rate of output","how much is produced","working efficiency"],
     ex:[{ s:"New tools raised {{}}.", f:"productivity", ko:"새 도구가 생산성을 높였다." }] },
 
@@ -1794,7 +1794,7 @@ window.VOCAB_P = [
     syn:["occupation","line of work","calling that needs training"],
     ex:[{ s:"Teaching is a respected {{}}.", f:"profession", ko:"교직은 존중받는 직업이다." }] },
 
-  { word:"professional", exams:["공무원"], pron:"프러페셔널", pos:"adj", level:"B1", meanings:["전문적인","전문가의"],
+  { word:"professional", exams:["공무원","수능"], pron:"프러페셔널", pos:"adj", level:"B1", meanings:["전문적인","전문가의"],
     syn:["done for a living","trained and skilled","of an expert"], ant:["amateur"],
     ex:[{ s:"She gave {{}} advice.", f:"professional", ko:"그녀는 전문적인 조언을 해 주었다." }] },
 
@@ -1942,7 +1942,7 @@ window.VOCAB_P = [
 
   /* 승격 159 — 사전 표현과 글자까지 같다(발음이 없던 항목이다). '비율' 은
      percentage(백분율, 비율) 와 글자가 같아 둘이 서로 오답에서 빠진다. */
-  { word:"proportion", pron:"프러포션", pos:"n", level:"B2", meanings:["비율","비례"],
+  { word:"proportion", exams:["수능"], pron:"프러포션", pos:"n", level:"B2", meanings:["비율","비례"],
     syn:["share of the whole","relation in size","part measured against all"],
     ex:[{ s:"A large {{}} of the class passed.", f:"proportion", ko:"그 학급의 큰 비율이 통과했다." }] },
 
@@ -1978,7 +1978,7 @@ window.VOCAB_P = [
 
   /* 승격 161 — 사전 표현과 글자까지 같다. 첫 뜻 '예비의' 는 챕터 12 의
      preliminary(예비의, 사전의) 와 글자가 같아 서로 오답에서 빠진다. */
-  { word:"prospective", pron:"프러스펙티브", pos:"adj", level:"B2", meanings:["예비의","장래의"],
+  { word:"prospective", exams:["수능"], pron:"프러스펙티브", pos:"adj", level:"B2", meanings:["예비의","장래의"],
     syn:["likely to become","expected in future","would-be"],
     ex:[{ s:"We met two {{}} buyers.", f:"prospective", ko:"우리는 예비 구매자 둘을 만났다." }] },
 
@@ -2052,7 +2052,7 @@ window.VOCAB_P = [
     syn:["mental","of the mind","to do with feelings"],
     ex:[{ s:"The injury left a {{}} scar.", f:"psychological", ko:"그 상처는 심리의 흉을 남겼다." }] },
 
-  { word:"psychology", exams:["공무원"], pron:"사이칼러지", pos:"n", level:"B1", meanings:["심리학","심리 상태"],
+  { word:"psychology", exams:["공무원","수능"], pron:"사이칼러지", pos:"n", level:"B1", meanings:["심리학","심리 상태"],
     syn:["study of the mind","science of behavior","workings of the mind"],
     ex:[{ s:"She majored in {{}}.", f:"psychology", ko:"그녀는 심리학을 전공했다." }] },
 
@@ -2088,7 +2088,7 @@ window.VOCAB_P = [
 
   /* 승격 170 — 사전은 '출간하다' 한 갈래였다. 참조 issue(발표하다, 발행하다 · I) 가
      쓰는 갈래를 넓혀 '발표하다' 를 붙였다 — 글자가 같아 서로 오답에서 빠진다. */
-  { word:"publish", pron:"퍼블리시", pos:"v", level:"B1", meanings:["출간하다","발표하다"],
+  { word:"publish", exams:["수능"], pron:"퍼블리시", pos:"v", level:"B1", meanings:["출간하다","발표하다"],
     syn:["issue","put out in print","bring before the public"],
     ex:[{ s:"They will {{}} the report next week.", f:"publish", ko:"그들은 다음 주에 그 보고서를 출간할 것이다." }] },
 
@@ -2130,7 +2130,7 @@ window.VOCAB_P = [
 
   /* 승격 174 — 사전은 '구매하다; 구매' 로 동사와 명사가 섞여 있었다. 참조
      acquisition(습득, 취득 · n) 과 원본이 모두 명사여서 명사로 세웠다. */
-  { word:"purchase", exams:["공무원"], pron:"퍼처스", pos:"n", level:"B2", meanings:["구매","구입"],
+  { word:"purchase", exams:["공무원","수능"], pron:"퍼처스", pos:"n", level:"B2", meanings:["구매","구입"],
     syn:["buying","thing bought","act of paying for goods"],
     ex:[{ s:"Keep the receipt for your {{}}.", f:"purchase", ko:"구매한 물건의 영수증을 보관하세요." }] },
 
@@ -2139,7 +2139,7 @@ window.VOCAB_P = [
     ex:[{ s:"Water {{}} takes three steps.", f:"purification", ko:"물 정화는 세 단계를 거친다." }] },
 
   /* 승격 175 — 사전 표현과 글자까지 같다(function, F · intention, I — 두 곳). */
-  { word:"purpose", exams:["공무원"], pron:"퍼퍼스", pos:"n", level:"B1", meanings:["목적","쓰임"],
+  { word:"purpose", exams:["공무원","수능"], pron:"퍼퍼스", pos:"n", level:"B1", meanings:["목적","쓰임"],
     syn:["aim in doing","what a thing is for","end one has in mind"],
     ex:[{ s:"What is the {{}} of this form?", f:"purpose", ko:"이 서식의 목적은 무엇인가요?" }] },
 
@@ -2150,7 +2150,7 @@ window.VOCAB_P = [
 
   /* 승격 176 — 사전은 '추구하다; 뒤쫓다' 로 쌍반점을 쓰고 있었다. 둘 다 동사라
      갈래만 쉼표로 갈랐다 (chase, C · compete for, C · go after, G — 세 곳). */
-  { word:"pursue", pron:"퍼수", pos:"v", level:"B2", meanings:["추구하다","뒤쫓다"],
+  { word:"pursue", exams:["수능"], pron:"퍼수", pos:"v", level:"B2", meanings:["추구하다","뒤쫓다"],
     syn:["chase","go after","seek after steadily"],
     ex:[{ s:"She will {{}} a career in law.", f:"pursue", ko:"그녀는 법조계 경력을 추구할 것이다." }] },
 

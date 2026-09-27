@@ -64,7 +64,7 @@ window.VOCAB_M = [
   { word:"multicellular", exams:["공무원"], pron:"멀티셀룰러", pos:"adj", level:"C2", meanings:["다세포의"], ex:[{ s:"Complex, {{}} forms evolved over this period.", f:"multicellular", ko:"이 기간에 복잡한 다세포 생물이 진화했다." }] },
   { word:"mentality", exams:["공무원"], pron:"멘탤리티", pos:"n", level:"C1", meanings:["사고방식","태도"], syn:["mindset","attitude","outlook"], ex:[{ s:"They have a 'can-do' {{}}.", f:"mentality", ko:"그들은 '할 수 있다'는 사고방식을 지녔다." }] },
   { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
-  { word:"maintain", exams:["공무원"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
+  { word:"maintain", exams:["공무원","수능"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
@@ -151,13 +151,13 @@ window.VOCAB_M = [
   { word:"make it", pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
     syn:["arrive in time","succeed","pull it off"] },
 
-  { word:"make sense", pron:"메이크 센스", pos:"phr", level:"B1", meanings:["의미가 통하다","이해가 되다"],
+  { word:"make sense", exams:["수능"], pron:"메이크 센스", pos:"phr", level:"B1", meanings:["의미가 통하다","이해가 되다"],
     syn:["be logical","add up","hold water"] },
 
   /* 승격 ① — GLOSS '구성하다; 화해하다' 를 글자까지 지켰다. 참조가 3곳
      (account for·compensate for·constitute)이라 그대로 두었다.
      원본은 명사('구조, 구성; 화장')인데 그 읽기는 보통 makeup 으로 붙여 쓴다. */
-  { word:"make up", pron:"메이크 업", pos:"phr", level:"B2", meanings:["구성하다","화해하다"],
+  { word:"make up", exams:["수능"], pron:"메이크 업", pos:"phr", level:"B2", meanings:["구성하다","화해하다"],
     syn:["constitute","account for","compose"] },
 
   /* 승격 ① — GLOSS '보충하다, 만회하다' 를 글자까지 지켰다. 참조도 PRON 도 없다.
@@ -255,7 +255,7 @@ window.VOCAB_M = [
      '태도' 쪽이라 둘째 자리에 지켰다. 첫 자리는 원본의 '방식' 으로 했다 —
      사전의 '방법' 을 그대로 쓰면 뒤 챕터의 method('방법, 수법')와 첫 뜻이 겹친다.
      manned 와 앞 네 글자가 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"manner", exams:["공무원"], pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
+  { word:"manner", exams:["공무원","수능"], pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
     syn:["conduct","demeanor","way"],
     ex:[{ s:"She answered in a very polite {{}}.", f:"manner", ko:"그녀는 아주 공손한 방식으로 대답했다." }] },
 
@@ -297,7 +297,7 @@ window.VOCAB_M = [
 
   /* 원본 둘째 갈래 '유포적인' 은 뜻이 안 통하는 말이다. marked 는 눈에 띄게
      뚜렷하다는 뜻이고, 표시가 붙었다는 뜻도 있어 '표시된' 으로 고쳤다. */
-  { word:"marked", pron:"마크트", pos:"adj", level:"B2", meanings:["뚜렷한","표시된"],
+  { word:"marked", exams:["수능"], pron:"마크트", pos:"adj", level:"B2", meanings:["뚜렷한","표시된"],
     syn:["noticeable","pronounced","conspicuous"], ant:["slight"],
     ex:[{ s:"There has been a {{}} improvement in air quality.", f:"marked", ko:"대기 질에 뚜렷한 개선이 있었다." }] },
 
@@ -349,7 +349,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다량; 질량' 을 글자까지 지켰다. bulk(syn)·lump(syn) 두 문제가
      참조한다. 원본 첫 뜻 '덩어리' 를 쓰면 L 세트 lump·C 세트 cluster 와 첫 뜻이
      같아지는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"mass", exams:["공무원"], pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
+  { word:"mass", exams:["공무원","수능"], pron:"매스", pos:"n", level:"B2", meanings:["다량","질량"],
     syn:["bulk","lump","quantity"],
     ex:[{ s:"A {{}} of paperwork arrived that morning.", f:"mass", ko:"그날 아침 다량의 서류가 도착했다." }] },
 
@@ -358,7 +358,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '거대한, 대량의' 와 같은 갈래다. 참조도 PRON 도 없어
      원본 뜻을 그대로 썼다. */
-  { word:"massive", pron:"매시브", pos:"adj", level:"B2", meanings:["거대한","매우 큰"],
+  { word:"massive", exams:["수능"], pron:"매시브", pos:"adj", level:"B2", meanings:["거대한","매우 큰"],
     syn:["colossal","immense","hulking"], ant:["tiny"],
     ex:[{ s:"A {{}} oak stood at the centre of the lawn.", f:"massive", ko:"거대한 떡갈나무가 잔디밭 가운데 서 있었다." }] },
 
@@ -382,7 +382,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '재료, 물질' 을 글자까지 지켰다. content(syn)·fabric(syn) 두
      문제가 참조하므로 원본의 '자료, 데이터' 대신 사전 쪽을 남겼다. */
-  { word:"material", exams:["공무원"], pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
+  { word:"material", exams:["공무원","수능"], pron:"머티리얼", pos:"n", level:"B1", meanings:["재료","물질"],
     /* ★ syn 의 "stuff" 를 "raw stuff for making" 으로 바꿨다. stuff 는 S 세트에서
        동사 '채우다' 로 선다 — 명사 목록에 동사가 끼게 된다. 남은 "substance" 도
        S 세트 낱말이지만 명사 '물질, 본질' 로 서므로 그대로 두어도 맞는다. */
@@ -451,7 +451,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수단, 방법' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
      뒤 챕터의 method 는 '방법, 수법' 이라 첫 뜻이 갈린다. */
-  { word:"means", exams:["공무원"], pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
+  { word:"means", exams:["공무원","수능"], pron:"민즈", pos:"n", level:"B1", meanings:["수단","방법"],
     syn:["method","way","instrument"],
     ex:[{ s:"Email became the main {{}} of contact.", f:"means", ko:"이메일이 주된 연락 수단이 되었다." }] },
 
@@ -682,7 +682,7 @@ window.VOCAB_M = [
      4차에서 means 의 유의어로 쓰려고 PRON 을 임시로 넣어 두었는데, 여기서
      표제어가 되면서 그 항목이 지워지고 이 pron 필드가 대신한다.
      챕터 2의 manner('방식')·챕터 4의 means('수단')와 첫 뜻이 갈린다. */
-  { word:"method", exams:["공무원"], pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
+  { word:"method", exams:["공무원","수능"], pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
     syn:["approach","technique","procedure"],
     ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
 
@@ -774,7 +774,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '최소화하다, 축소하다' 를 글자까지 지켰다. downplay(syn) 가
      참조하므로 원본('최소화하다' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다.
      minimal 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 안 온다. */
-  { word:"minimize", exams:["공무원"], pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
+  { word:"minimize", exams:["공무원","수능"], pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
     syn:["downplay","reduce","play down"], ant:["maximize"],
     ex:[{ s:"New rules aim to {{}} food waste in canteens.", f:"minimize", ko:"새 규정은 급식소의 음식물 쓰레기를 최소화하는 것을 목표로 한다." }] },
 
@@ -1100,7 +1100,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '도덕적인; 교훈' 을 글자까지 지켰다. 참조가 3곳
      (ethical·immoral(ant)·lesson)이고 뒤 둘은 I·L 세트 표제어다.
      원본은 '도덕적인' 한 갈래인데 갈래를 줄이면 그 세 곳이 바뀌므로 그대로 두었다. */
-  { word:"moral", exams:["공무원"], pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
+  { word:"moral", exams:["공무원","수능"], pron:"모럴", pos:"adj", level:"B1", meanings:["도덕적인","교훈"],
     syn:["ethical","principled","upright"], ant:["immoral"],
     ex:[{ s:"She felt a {{}} duty to speak up.", f:"moral", ko:"그녀는 목소리를 낼 도덕적 의무를 느꼈다." }] },
 
@@ -1114,7 +1114,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '도덕, 도의' 를 글자까지 지켰다. conscience(syn) 가 참조하므로
      원본의 '윤리성' 대신 사전 쪽 '도의' 를 남겼다. */
-  { word:"morality", pron:"머랠러티", pos:"n", level:"C1", meanings:["도덕","도의"],
+  { word:"morality", exams:["수능"], pron:"머랠러티", pos:"n", level:"C1", meanings:["도덕","도의"],
     syn:["conscience","ethics","virtue"],
     ex:[{ s:"The debate soon turned on questions of {{}}.", f:"morality", ko:"그 토론은 곧 도덕의 문제로 옮겨 갔다." }] },
 
@@ -1145,7 +1145,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '동기를 부여하다' 를 첫 자리에 지켰다.
      encourage(syn)·inspire(syn) 두 문제가 참조하고 뒤는 I 세트 표제어다.
      원본의 '유도하다' 를 둘째 자리에 붙였다. */
-  { word:"motivate", exams:["공무원"], pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
+  { word:"motivate", exams:["공무원","수능"], pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
     syn:["encourage","inspire","spur on"],
     ex:[{ s:"Good teachers {{}} without applying pressure.", f:"motivate", ko:"좋은 교사는 압박을 주지 않고 동기를 부여한다." }] },
 
@@ -1199,7 +1199,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '다수의, 복합적인' 을 글자까지 지켰다. complex(syn) 가
      참조하므로 원본의 순서('복합의' 가 앞)가 아니라 사전 쪽을 남겼다.
      원본 셋째 갈래 '배수의' 는 뺐다. */
-  { word:"multiple", exams:["공무원"], pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
+  { word:"multiple", exams:["공무원","수능"], pron:"멀티플", pos:"adj", level:"B2", meanings:["다수의","복합적인"],
     syn:["complex","numerous","manifold"], ant:["single"],
     ex:[{ s:"The patient suffered {{}} injuries in the crash.", f:"multiple", ko:"그 환자는 사고로 다수의 부상을 입었다." }] },
 
@@ -1277,7 +1277,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '신비로운, 불가사의한' 과 같은 갈래다. 참조도 PRON 도 없어
      원본의 '이해하기 힘든' 대신 사전 쪽 '신비로운' 을 첫 자리에 두었다. */
-  { word:"mysterious", pron:"미스티리어스", pos:"adj", level:"B1", meanings:["신비로운","불가사의한"],
+  { word:"mysterious", exams:["수능"], pron:"미스티리어스", pos:"adj", level:"B1", meanings:["신비로운","불가사의한"],
     syn:["baffling","enigmatic","inexplicable"],
     ex:[{ s:"A {{}} light appeared over the harbour.", f:"mysterious", ko:"신비로운 빛이 항구 위에 나타났다." }] },
 

@@ -89,7 +89,7 @@
 
 window.VOCAB_O = [
   { word:"obsession", exams:["공무원"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
-  { word:"occasionally", exams:["공무원"], pron:"어케이저널리", pos:"adv", level:"B2", meanings:["가끔","때때로"], syn:["sometimes","now and then","periodically"], ant:["frequently"], ex:[{ s:"They speak only {{}} while playing on their own.", f:"occasionally", ko:"그들은 혼자 놀면서 가끔씩만 말한다." }] },
+  { word:"occasionally", exams:["공무원","수능"], pron:"어케이저널리", pos:"adv", level:"B2", meanings:["가끔","때때로"], syn:["sometimes","now and then","periodically"], ant:["frequently"], ex:[{ s:"They speak only {{}} while playing on their own.", f:"occasionally", ko:"그들은 혼자 놀면서 가끔씩만 말한다." }] },
   { word:"oddity", exams:["공무원"], pron:"아디티", pos:"n", level:"C1", meanings:["특이한 것","기이함"], syn:["peculiarity","curiosity","anomaly"], ex:[{ s:"Most files are ordinary, but one {{}} stands out: a peddler license from 1890.", f:"oddity", ko:"대부분의 문서는 평범하지만 특이한 것 하나가 눈에 띈다. 1890년의 행상 면허다." }] },
   { word:"opulent", exams:["공무원"], pron:"아퓰런트", pos:"adj", level:"C2", meanings:["호화로운","부유한"], syn:["luxurious","lavish","sumptuous"], ant:["modest"], ex:[{ s:"Their house seemed unnecessarily {{}}.", f:"opulent", ko:"그들의 집은 불필요하게 호화로워 보였다." }] },
   { word:"otherworldly", exams:["공무원"], pron:"아더월들리", pos:"adj", level:"C2", meanings:["초현실적인","이 세상 것 같지 않은"], syn:["unearthly","surreal","ethereal"], ex:[{ s:"The driest deserts are harsh and {{}}.", f:"otherworldly", ko:"가장 건조한 사막은 혹독하고 초현실적이다." }] },
@@ -103,14 +103,14 @@ window.VOCAB_O = [
   { word:"off-peak", exams:["공무원"], pron:"오프 피크", pos:"adj", level:"C1", meanings:["비수기의","한가한 시간대의"], ex:[{ s:"Residents will enjoy a low {{}} rate during the rainy season.", f:"off-peak", ko:"주민들은 우기에 낮은 비수기 요금을 적용받는다." }] },
   { word:"onboard", exams:["공무원"], pron:"온보드", pos:"adj", level:"C1", meanings:["탑재된","기내의"], ex:[{ s:"The AUV stores all data on {{}} computers.", f:"onboard", ko:"AUV는 모든 데이터를 탑재된 컴퓨터에 저장한다." }] },
   { word:"optimize", exams:["공무원"], pron:"압터마이즈", pos:"v", level:"B2", meanings:["최적화하다","최대한 활용하다"], syn:["maximize","improve","enhance"], ex:[{ s:"AI tools promise to {{}} speed and accuracy.", f:"optimize", ko:"AI 도구는 속도와 정확성을 최적화해 주겠다고 약속한다." }] },
-  { word:"origin", exams:["공무원"], pron:"오리진", pos:"n", level:"B1", meanings:["기원","유래"], syn:["source","root","wellspring"], ant:["destination"], ex:[{ s:"The {{}} of the word cravat goes back to Croatian soldiers.", f:"origin", ko:"크러뱃이라는 단어의 기원은 크로아티아 군인들에게로 거슬러 올라간다." }] },
+  { word:"origin", exams:["공무원","수능"], pron:"오리진", pos:"n", level:"B1", meanings:["기원","유래"], syn:["source","root","wellspring"], ant:["destination"], ex:[{ s:"The {{}} of the word cravat goes back to Croatian soldiers.", f:"origin", ko:"크러뱃이라는 단어의 기원은 크로아티아 군인들에게로 거슬러 올라간다." }] },
   { word:"overtime", exams:["공무원"], pron:"오버타임", pos:"n", level:"B2", meanings:["초과 근무","야근"], ex:[{ s:"Employees are paid extra for {{}}.", f:"overtime", ko:"직원들은 초과 근무에 대해 추가 수당을 받는다." }] },
   { word:"overview", exams:["공무원"], pron:"오버뷰", pos:"n", level:"B2", meanings:["개요","개관"], syn:["summary","outline","synopsis"], ex:[{ s:"The first slide shows a quick {{}} of the whole project.", f:"overview", ko:"첫 슬라이드는 프로젝트 전체의 간단한 개요를 보여 준다." }] },
   { word:"on a tight budget", exams:["공무원"], pron:"온 어 타이트 버짓", pos:"phr", level:"B2", meanings:["예산이 빠듯한","돈이 넉넉지 않은"] },
   { word:"outrun", exams:["공무원"], pron:"아웃런", pos:"v", level:"C1", meanings:["~보다 빨리 달리다","앞지르다"], syn:["outpace","outstrip","outdistance"], ex:[{ s:"The thief could not {{}} the police car on foot.", f:"outrun", ko:"도둑은 걸어서는 경찰차를 따돌릴 수 없었다." }] },
   { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
   { word:"obviously", exams:["공무원"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
-  { word:"otherwise", exams:["공무원"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
+  { word:"otherwise", exams:["공무원","수능"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
   { word:"overwork", exams:["공무원"], pron:"오버워크", pos:"v", level:"B2", meanings:["과로하다","혹사하다"], ex:[{ s:"Doctors warn that people who {{}} risk burnout.", f:"overwork", ko:"의사들은 과로하는 사람들이 번아웃 위험에 처한다고 경고한다." }] },
   { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
   { word:"on purpose", exams:["공무원"], pron:"온 퍼퍼스", pos:"phr", level:"B1", meanings:["일부러","고의로"], syn:["deliberately","intentionally","purposely"], ant:["by chance"] },
@@ -221,7 +221,7 @@ window.VOCAB_O = [
      comply(C) 가 '준수하다' 갈래를 쓴다. comment(C) 는 '논평하다' 갈래를 쓰고
      있었는데 N 세트에서 그쪽 유의어를 note 로 옮겨 두었다.
      원본의 '목격하다' 는 witness 쪽 뜻이어서 버렸다. */
-  { word:"observe", exams:["공무원"], pron:"업저브", pos:"v", level:"B1", meanings:["관찰하다","준수하다"],
+  { word:"observe", exams:["공무원","수능"], pron:"업저브", pos:"v", level:"B1", meanings:["관찰하다","준수하다"],
     syn:["watch closely","abide by","keep to"],
     ex:[{ s:"Scientists {{}} the birds from a hidden blind.", f:"observe", ko:"과학자들은 숨은 가림막에서 그 새들을 관찰한다." }] },
 
@@ -263,12 +263,12 @@ window.VOCAB_O = [
 
   /* 승격 ⑰ — 사전 표현 '분명한, 명백한' 을 글자까지 지켰다(참조 3곳).
      apparent 와 첫 뜻이 겹치지만 둘은 서로 유의어로 등록된 관계다. */
-  { word:"obvious", exams:["공무원"], pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
+  { word:"obvious", exams:["공무원","수능"], pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
     syn:["apparent","plain to see","unmistakable"],
     ex:[{ s:"The answer was {{}} once she explained it.", f:"obvious", ko:"그녀가 설명하자 답은 분명했다." }] },
 
   /* 원본의 '행사' 갈래는 버렸다 — '때, 경우' 와 품사는 같지만 뜻이 멀다. */
-  { word:"occasion", exams:["공무원"], pron:"어케이전", pos:"n", level:"B1", meanings:["때","경우"],
+  { word:"occasion", exams:["공무원","수능"], pron:"어케이전", pos:"n", level:"B1", meanings:["때","경우"],
     syn:["moment","particular time","one such instance"],
     ex:[{ s:"On one {{}} the train left early.", f:"occasion", ko:"어떤 때에는 기차가 일찍 떠났다." }] },
 
@@ -298,7 +298,7 @@ window.VOCAB_O = [
 
   /* 승격 21 — 사전이 '발생하다; 떠오르다' 였다. 구분 기호만 바꿨다.
      참조 셋 중 come to mind(C) 가 '떠오르다' 갈래를 쓴다. */
-  { word:"occur", exams:["공무원"], pron:"어커", pos:"v", level:"B1", meanings:["발생하다","떠오르다"],
+  { word:"occur", exams:["공무원","수능"], pron:"어커", pos:"v", level:"B1", meanings:["발생하다","떠오르다"],
     syn:["arise","come about","take place"],
     ex:[{ s:"Such storms {{}} only once a decade.", f:"occur", ko:"그런 폭풍은 십 년에 한 번만 발생한다." }] },
 
@@ -356,7 +356,7 @@ window.VOCAB_O = [
 
   /* 승격 28 — 사전이 '공식적인; 공무원' 으로 형용사와 명사가 섞여 있었다.
      authoritative(A)·formal(F) 둘 다 형용사여서 형용사로 세우고 '관리' 는 버렸다. */
-  { word:"official", exams:["공무원"], pron:"어피셜", pos:"adj", level:"B2", meanings:["공식적인","공무상의"],
+  { word:"official", exams:["공무원","수능"], pron:"어피셜", pos:"adj", level:"B2", meanings:["공식적인","공무상의"],
     syn:["authoritative","formal","sanctioned"], ant:["unofficial"],
     ex:[{ s:"We are waiting for the {{}} result.", f:"official", ko:"우리는 공식적인 결과를 기다리고 있다." }] },
 
@@ -412,7 +412,7 @@ window.VOCAB_O = [
     syn:["grounded on","going by","resting upon"] },
 
   /* 승격 33 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"on the contrary", pron:"온 더 칸트레리", pos:"phr", level:"B2", meanings:["그와 반대로"],
+  { word:"on the contrary", exams:["수능"], pron:"온 더 칸트레리", pos:"phr", level:"B2", meanings:["그와 반대로"],
     syn:["quite the opposite","far from it","instead of that"] },
 
   { word:"on the edge of", pron:"온 디 에지 오브", pos:"phr", level:"C1", meanings:["막 ~하려는 참에"],
@@ -499,7 +499,7 @@ window.VOCAB_O = [
     syn:["receptive","willing to listen","free of prejudice"], ant:["narrow-minded"],
     ex:[{ s:"A good judge stays {{}} until all evidence is in.", f:"open-minded", ko:"좋은 심판은 증거가 다 나올 때까지 마음이 열린 상태를 지킨다." }] },
 
-  { word:"operate", exams:["공무원"], pron:"아퍼레이트", pos:"v", level:"B1", meanings:["경영하다","가동하다"],
+  { word:"operate", exams:["공무원","수능"], pron:"아퍼레이트", pos:"v", level:"B1", meanings:["경영하다","가동하다"],
     syn:["run a business","work a machine","keep in action"],
     ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
 
@@ -513,7 +513,7 @@ window.VOCAB_O = [
     syn:["adversary","enemy","one who fights against"], ant:["ally"],
     ex:[{ s:"He shook hands with his {{}} after the game.", f:"opponent", ko:"그는 경기 뒤 상대와 악수했다." }] },
 
-  { word:"opportunity", exams:["공무원"], pron:"아퍼투너티", pos:"n", level:"B1", meanings:["기회"],
+  { word:"opportunity", exams:["공무원","수능"], pron:"아퍼투너티", pos:"n", level:"B1", meanings:["기회"],
     syn:["chance","opening for action","favorable moment"],
     ex:[{ s:"This is a rare {{}} to study abroad.", f:"opportunity", ko:"이것은 해외에서 공부할 드문 기회다." }] },
 
@@ -533,7 +533,7 @@ window.VOCAB_O = [
 
   /* 승격 44 — 사전 표현 '반대, 저항' 을 글자까지 지켰다(dissent, D).
      원본의 '반대, 상대; 경쟁자' 중 '상대' 는 같은 챕터 opponent 쪽 뜻이다. */
-  { word:"opposition", exams:["공무원"], pron:"아퍼지션", pos:"n", level:"B2", meanings:["반대","저항"],
+  { word:"opposition", exams:["공무원","수능"], pron:"아퍼지션", pos:"n", level:"B2", meanings:["반대","저항"],
     syn:["dissent","resistance","pushback"], ant:["support"],
     ex:[{ s:"The bill met strong {{}} in the assembly.", f:"opposition", ko:"그 법안은 의회에서 강한 반대를 만났다." }] },
 
@@ -559,7 +559,7 @@ window.VOCAB_O = [
 
   /* 원본에 남아 있던 '낙천적인; 낙관하는' 의 구분 기호를 쉼표로 바꿨다 —
      두 갈래가 모두 형용사여서 섞임이 아니다. */
-  { word:"optimistic", pron:"압터미스틱", pos:"adj", level:"B2", meanings:["낙천적인","낙관하는"],
+  { word:"optimistic", exams:["수능"], pron:"압터미스틱", pos:"adj", level:"B2", meanings:["낙천적인","낙관하는"],
     syn:["hopeful","looking on the bright side","expecting the best"], ant:["pessimistic"],
     ex:[{ s:"She stayed {{}} despite the delays.", f:"optimistic", ko:"그녀는 지연에도 낙천적인 태도를 지켰다." }] },
 
@@ -631,7 +631,7 @@ window.VOCAB_O = [
 
   /* 승격 50 — 사전 표현 '조직하다, 정리하다' 를 글자까지 지켰다
      (arrange, A · coordinate, C). 원본의 '체계화하다' 대신 사전 쪽을 남겼다. */
-  { word:"organize", exams:["공무원"], pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
+  { word:"organize", exams:["공무원","수능"], pron:"오거나이즈", pos:"v", level:"B1", meanings:["조직하다","정리하다"],
     syn:["arrange","put in order","set up"],
     ex:[{ s:"Volunteers helped {{}} the book sale.", f:"organize", ko:"자원봉사자들이 책 판매 행사를 조직하는 것을 도왔다." }] },
 
@@ -755,7 +755,7 @@ window.VOCAB_O = [
   /* 승격 59 — ★원본의 '결과, 과정' 에서 '과정' 은 '성과' 의 오타로 보인다.
      사전의 '결과' 를 첫 자리에 두고 '성과' 를 붙였다(consequence, C).
      consequence 의 첫 뜻도 '결과' 지만 둘은 서로 유의어다. */
-  { word:"outcome", pron:"아웃컴", pos:"n", level:"B1", meanings:["결과","성과"],
+  { word:"outcome", exams:["수능"], pron:"아웃컴", pos:"n", level:"B1", meanings:["결과","성과"],
     syn:["consequence","end result","upshot"],
     ex:[{ s:"Nobody could predict the {{}} of the vote.", f:"outcome", ko:"아무도 그 투표의 결과를 내다볼 수 없었다." }] },
 
@@ -811,7 +811,7 @@ window.VOCAB_O = [
 
   /* 승격 65 — 사전이 '전망; 관점' 이었다. 구분 기호만 쉼표로 바꿨다
      (attitude, A · forecast, F · mindset, M — 세 곳). */
-  { word:"outlook", pron:"아웃룩", pos:"n", level:"B2", meanings:["전망","관점"],
+  { word:"outlook", exams:["수능"], pron:"아웃룩", pos:"n", level:"B2", meanings:["전망","관점"],
     syn:["forecast","point of view","way of seeing things"],
     ex:[{ s:"The economic {{}} has brightened.", f:"outlook", ko:"경제 전망이 밝아졌다." }] },
 
@@ -857,7 +857,7 @@ window.VOCAB_O = [
   /* 승격 70 — 사전이 '뛰어난; 미해결의' 였다. 두 갈래가 뜻이 너무 멀어
      원본의 '두드러진' 을 뒤에 붙였다. 첫 뜻은 사전값을 지켰다
      (brilliant, B · eminent, E). */
-  { word:"outstanding", pron:"아웃스탠딩", pos:"adj", level:"B2", meanings:["뛰어난","두드러진"],
+  { word:"outstanding", exams:["수능"], pron:"아웃스탠딩", pos:"adj", level:"B2", meanings:["뛰어난","두드러진"],
     syn:["brilliant","exceptional","head and shoulders above"], ant:["mediocre"],
     ex:[{ s:"Her essay was {{}} among fifty entries.", f:"outstanding", ko:"그녀의 글은 오십 편 가운데 뛰어났다." }] },
 
@@ -886,7 +886,7 @@ window.VOCAB_O = [
      (as a whole, A · general, G · gross, G — 세 곳).
      원본은 '종합적인; 전반적으로' 로 형용사와 부사가 섞여 있었다. 참조 셋 중
      둘이 형용사여서 형용사로 세웠고, 사전값이 마침 형용사 쪽이었다. */
-  { word:"overall", pron:"오버올", pos:"adj", level:"B2", meanings:["전반적인","종합적인"],
+  { word:"overall", exams:["수능"], pron:"오버올", pos:"adj", level:"B2", meanings:["전반적인","종합적인"],
     syn:["general","taken as a whole","across the board"],
     ex:[{ s:"The {{}} cost came to eight million won.", f:"overall", ko:"전반적인 비용은 팔백만 원에 이르렀다." }] },
 

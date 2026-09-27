@@ -150,7 +150,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '수확하다; 수확' 이다. 품사가 갈린다.
      참조하는 기존 문제가 없어 자유롭게 골랐다. 원본의 명사 쪽으로 모았다. */
-  { word:"harvest", exams:["공무원"], pron:"하비스트", pos:"n", level:"B1", meanings:["추수","수확"],
+  { word:"harvest", exams:["공무원","수능"], pron:"하비스트", pos:"n", level:"B1", meanings:["추수","수확"],
     /* Y 세트에서 yield 를 표제어로 세우며 **동사**(산출하다, 양보하다) 로
        확정했다. 참조 여섯 곳의 품사가 phr 2 · v 2 · n 2 로 갈렸는데, 사전 첫
        갈래가 동사이고 concede·generate 가 동사여서 동사를 택했다. 명사 표제어의
@@ -357,12 +357,12 @@ window.VOCAB_H = [
   /* 승격 ② — GLOSS '고용하다; 빌리다' 를 글자까지 지켰다.
      charter 는 '빌리다' 쪽, employ 는 '고용하다' 쪽, dismiss 는 반의어.
      양쪽을 다 지키려면 사전 순서를 그대로 쓰면 된다. */
-  { word:"hire", exams:["공무원"], pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
+  { word:"hire", exams:["공무원","수능"], pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
     syn:["employ","recruit","engage"], ant:["dismiss"],
     ex:[{ s:"The factory plans to {{}} fifty new workers next month.", f:"hire", ko:"그 공장은 다음 달에 새 근로자 50명을 고용할 계획이다." }],
     gov:{ prep:["as","for"], usage:"hire A as B : A를 B로 고용하다" } },
 
-  { word:"historic", exams:["공무원"], pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
+  { word:"historic", exams:["공무원","수능"], pron:"히스토릭", pos:"adj", level:"B1", meanings:["역사적인"],
     syn:["landmark","epochal","monumental"],
     ex:[{ s:"The signing of the treaty was a truly {{}} event.", f:"historic", ko:"그 조약의 서명은 진정으로 역사적인 사건이었다." }] },
 

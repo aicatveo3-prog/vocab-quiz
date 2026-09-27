@@ -105,16 +105,16 @@ window.VOCAB_D = [
   { word:"distilled", exams:["공무원"], pron:"디스틸드", pos:"adj", level:"C1", meanings:["증류된"], ex:[{ s:"Drinking {{}} water can be beneficial.", f:"distilled", ko:"증류수를 마시는 것은 이로울 수 있다." }] },
   { word:"distressed", exams:["공무원"], pron:"디스트레스드", pos:"adj", level:"B2", meanings:["괴로워하는","곤경에 처한"], syn:["troubled","upset","anguished"], ant:["calm"], ex:[{ s:"He looked painful and {{}}.", f:"distressed", ko:"그는 괴롭고 고통스러워 보였다." }] },
   { word:"dramatist", exams:["공무원"], pron:"드라마티스트", pos:"n", level:"C1", meanings:["극작가"], syn:["playwright","screenwriter","scriptwriter"], ex:[{ s:"Sophocles was a Greek {{}}.", f:"dramatist", ko:"소포클레스는 그리스의 극작가였다." }] },
-  { word:"dynamic", exams:["공무원"], pron:"다이내믹", pos:"adj", level:"B2", meanings:["역동적인"], syn:["energetic","active","vibrant"], ant:["static"], ex:[{ s:"It is a complex and {{}} process.", f:"dynamic", ko:"그것은 복잡하고 역동적인 과정이다." }] },
+  { word:"dynamic", exams:["공무원","수능"], pron:"다이내믹", pos:"adj", level:"B2", meanings:["역동적인"], syn:["energetic","active","vibrant"], ant:["static"], ex:[{ s:"It is a complex and {{}} process.", f:"dynamic", ko:"그것은 복잡하고 역동적인 과정이다." }] },
   { word:"dialogue", exams:["공무원"], pron:"다이얼로그", pos:"n", level:"B1", meanings:["대화","논의"], syn:["conversation","discussion","talk"], ex:[{ s:"Social {{}} will be key to success.", f:"dialogue", ko:"사회적 대화가 성공의 열쇠가 될 것이다." }] },
   { word:"drought", exams:["공무원"], pron:"드라웃", pos:"n", level:"B2", meanings:["가뭄"], syn:["dry spell","water shortage","aridity"], ex:[{ s:"Flooding, {{}} and storms damage crops.", f:"drought", ko:"홍수, 가뭄, 폭풍은 농작물에 피해를 준다." }] },
   { word:"deconstruct", exams:["공무원"], pron:"디컨스트럭트", pos:"v", level:"C1", meanings:["해체하다","분석하다"], syn:["dismantle","analyze","break down"], ant:["construct"], ex:[{ s:"The essay tries to {{}} the myth of the hero.", f:"deconstruct", ko:"그 글은 영웅 신화를 해체하려 한다." }] },
   { word:"diet", exams:["공무원"], pron:"다이엇", pos:"n", level:"B1", meanings:["식단","식습관"], syn:["nutrition","regimen","food intake"], ex:[{ s:"Students behaved better regardless of their {{}}.", f:"diet", ko:"학생들은 식단과 상관없이 더 잘 행동했다." }] },
-  { word:"director", exams:["공무원"], pron:"디렉터", pos:"n", level:"B1", meanings:["책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
+  { word:"director", exams:["공무원","수능"], pron:"디렉터", pos:"n", level:"B1", meanings:["책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
   { word:"discreetly", exams:["공무원"], pron:"디스크리틀리", pos:"adv", level:"C1", meanings:["신중하게","조심스럽게"], syn:["cautiously","carefully","tactfully"], ant:["openly"], ex:[{ s:"I suggest that you discuss this matter {{}}.", f:"discreetly", ko:"이 문제를 신중하게 논의하시길 권합니다." }] },
   { word:"dispose", exams:["공무원"], pron:"디스포즈", pos:"v", level:"B2", meanings:["처리하다","버리다"], syn:["discard","throw away","get rid of"], ant:["keep"], ex:[{ s:"You must {{}} of these products safely.", f:"dispose", ko:"이 제품들을 안전하게 처리해야 한다." }], gov:{ prep:["of"], usage:"dispose of ~ : ~을 처리하다/버리다" } },
   { word:"disposal", exams:["공무원"], pron:"디스포절", pos:"n", level:"B2", meanings:["처리","폐기"], syn:["removal","discarding","dumping"], ex:[{ s:"The notice promotes the safe {{}} of hazardous waste.", f:"disposal", ko:"그 공지는 유해 폐기물의 안전한 처리를 권장한다." }] },
-  { word:"distinct", exams:["공무원"], pron:"디스팅트", pos:"adj", level:"B2", meanings:["뚜렷한","별개의"], syn:["separate","distinctive","clear"], ant:["indistinct"], ex:[{ s:"Green and blue are {{}} colors in English.", f:"distinct", ko:"영어에서 초록과 파랑은 별개의 색이다." }] },
+  { word:"distinct", exams:["공무원","수능"], pron:"디스팅트", pos:"adj", level:"B2", meanings:["뚜렷한","별개의"], syn:["separate","distinctive","clear"], ant:["indistinct"], ex:[{ s:"Green and blue are {{}} colors in English.", f:"distinct", ko:"영어에서 초록과 파랑은 별개의 색이다." }] },
   { word:"documentation", exams:["공무원"], pron:"다큐멘테이션", pos:"n", level:"C1", meanings:["서류","증빙 자료"], syn:["paperwork","records","evidence"], ex:[{ s:"I am happy to provide any {{}} required.", f:"documentation", ko:"요구되는 어떤 서류든 기꺼이 제출하겠습니다." }] },
   { word:"dump", exams:["공무원"], pron:"덤프", pos:"v", level:"B2", meanings:["버리다","내다 버리다"], syn:["discard","unload","offload"], ant:["collect"], ex:[{ s:"Never {{}} chemicals on the ground.", f:"dump", ko:"화학 물질을 땅에 함부로 버리지 마라." }] },
   { word:"dynamics", exams:["공무원"], pron:"다이내믹스", pos:"n", level:"C1", meanings:["역학","역학 관계"], syn:["forces","interactions","mechanics"], ex:[{ s:"The test reveals the {{}} of their relationships.", f:"dynamics", ko:"그 검사는 그들 관계의 역학을 드러낸다." }] },
@@ -129,14 +129,14 @@ window.VOCAB_D = [
   { word:"dependence", exams:["공무원"], pron:"디펜던스", pos:"n", level:"B2", meanings:["의존","의존성"], ant:["independence","autonomy"], ex:[{ s:"Latin America is reducing its {{}} on oil.", f:"dependence", ko:"라틴 아메리카는 석유 의존도를 줄이고 있다." }], gov:{ prep:["on","upon"], usage:"dependence on ~ : ~에 대한 의존" } },
   { word:"deception", exams:["공무원"], pron:"디셉션", pos:"n", level:"C1", meanings:["속임","사기"], syn:["deceit","fraud","trickery"], ant:["honesty"], ex:[{ s:"The scheme relied on {{}} to win over investors.", f:"deception", ko:"그 계획은 투자자를 끌어들이려고 속임수에 기댔다." }] },
   { word:"dedication", exams:["공무원"], pron:"데디케이션", pos:"n", level:"B2", meanings:["전념","헌신"], syn:["commitment","devotion","zeal"], ex:[{ s:"Only years of {{}} can turn talent into success.", f:"dedication", ko:"오랜 헌신만이 재능을 성공으로 바꿀 수 있다." }] },
-  { word:"drip", exams:["공무원"], pron:"드립", pos:"v", level:"B2", meanings:["뚝뚝 떨어지다","방울지다"], syn:["trickle","dribble","leak"], ex:[{ s:"Water began to {{}} from the ceiling.", f:"drip", ko:"천장에서 물이 뚝뚝 떨어지기 시작했다." }] },
+  { word:"drip", exams:["공무원","수능"], pron:"드립", pos:"v", level:"B2", meanings:["뚝뚝 떨어지다","방울지다"], syn:["trickle","dribble","leak"], ex:[{ s:"Water began to {{}} from the ceiling.", f:"drip", ko:"천장에서 물이 뚝뚝 떨어지기 시작했다." }] },
   { word:"dye", exams:["공무원"], pron:"다이", pos:"v", level:"B1", meanings:["염색하다","염료"], ant:["bleach"], ex:[{ s:"She decided to {{}} her hair dark red.", f:"dye", ko:"그녀는 머리를 짙은 빨간색으로 염색하기로 했다." }] },
   { word:"descent", exams:["공무원"], pron:"디센트", pos:"n", level:"C1", meanings:["하강","혈통"], ex:[{ s:"The plane began its {{}} toward the airport.", f:"descent", ko:"비행기는 공항을 향해 하강을 시작했다." }] },
   { word:"dissimilar", exams:["공무원"], pron:"디시밀러", pos:"adj", level:"C1", meanings:["같지 않은","다른"], syn:["different","unlike","distinct"], ant:["similar"], ex:[{ s:"The two cars look {{}} but share the same engine.", f:"dissimilar", ko:"두 차는 서로 달라 보이지만 같은 엔진을 쓴다." }] },
   { word:"don", exams:["공무원"], pron:"단", pos:"v", level:"C2", meanings:["입다","착용하다"], syn:["put on","wear","dress in"], ant:["take off"], ex:[{ s:"Before each show, the actors {{}} old-fashioned costumes.", f:"don", ko:"공연 전마다 배우들은 옛날 의상을 입는다." }] },
   { word:"digitalization", exams:["공무원"], pron:"디지털리제이션", pos:"n", level:"C1", meanings:["디지털화"], ex:[{ s:"The {{}} of public records made them easier to search.", f:"digitalization", ko:"공공 기록이 디지털화되면서 검색이 쉬워졌다." }] },
   { word:"drag on", exams:["공무원"], pron:"드래그 온", pos:"phr", level:"B2", meanings:["질질 끌다","오래 계속되다"] },
-  { word:"decorative", exams:["공무원"], pron:"데커러티브", pos:"adj", level:"B2", meanings:["장식용의","장식적인"], syn:["ornamental","ornate","fancy"], ex:[{ s:"These old clocks were {{}} but not very useful.", f:"decorative", ko:"이 오래된 시계들은 장식용이었지만 그다지 쓸모가 없었다." }] },
+  { word:"decorative", exams:["공무원","수능"], pron:"데커러티브", pos:"adj", level:"B2", meanings:["장식용의","장식적인"], syn:["ornamental","ornate","fancy"], ex:[{ s:"These old clocks were {{}} but not very useful.", f:"decorative", ko:"이 오래된 시계들은 장식용이었지만 그다지 쓸모가 없었다." }] },
   { word:"dissolution", exams:["공무원"], pron:"디설루션", pos:"n", level:"C2", meanings:["용해","해체"], ex:[{ s:"Warmer water speeds up the {{}} of the sand.", f:"dissolution", ko:"더 따뜻한 물은 모래의 용해를 빠르게 한다." }] },
   { word:"draw inspiration from", exams:["공무원"], pron:"드로 인스퍼레이션 프롬", pos:"phr", level:"C1", meanings:["~에서 영감을 얻다"] },
   /* ── dam ───────────────────────────────────── */
@@ -174,7 +174,7 @@ window.VOCAB_D = [
     ex:[{ s:"The climbers set out at {{}} to reach the summit by noon.", f:"dawn", ko:"등반가들은 정오까지 정상에 오르려고 새벽에 출발했다." }] },
 
   /* ── dea ───────────────────────────────────── */
-  { word:"deadline", exams:["공무원"], pron:"데드라인", pos:"n", level:"B1", meanings:["기한","마감"],
+  { word:"deadline", exams:["공무원","수능"], pron:"데드라인", pos:"n", level:"B1", meanings:["기한","마감"],
     syn:["due date","time limit","cutoff"],
     ex:[{ s:"The team missed the {{}} for the final report by two days.", f:"deadline", ko:"팀은 최종 보고서 기한을 이틀 넘겼다." }] },
 
@@ -234,7 +234,7 @@ window.VOCAB_D = [
   { word:"decaffeinate", pron:"디캐퍼네이트", pos:"v", level:"C2", meanings:["카페인을 제거하다"],
     ex:[{ s:"Producers {{}} the beans before roasting them.", f:"decaffeinate", ko:"생산자들은 볶기 전에 원두에서 카페인을 제거한다." }] },
 
-  { word:"decay", exams:["공무원"], pron:"디케이", pos:"v", level:"B2", meanings:["썩다","쇠퇴하다"],
+  { word:"decay", exams:["공무원","수능"], pron:"디케이", pos:"v", level:"B2", meanings:["썩다","쇠퇴하다"],
     syn:["rot","decompose","deteriorate"], ant:["flourish"],
     ex:[{ s:"Sugar left on the teeth makes them {{}} far more quickly.", f:"decay", ko:"치아에 남은 설탕은 치아를 훨씬 빨리 썩게 한다." }] },
 
@@ -315,7 +315,7 @@ window.VOCAB_D = [
     syn:["flaw","fault","imperfection"], ant:["perfection"],
     ex:[{ s:"The engine had a serious {{}} that forced a nationwide recall.", f:"defect", ko:"그 엔진에는 전국적 회수를 부른 심각한 결함이 있었다." }] },
 
-  { word:"defend", pron:"디펜드", pos:"v", level:"B1", meanings:["방어하다","변호하다"],
+  { word:"defend", exams:["수능"], pron:"디펜드", pos:"v", level:"B1", meanings:["방어하다","변호하다"],
     /* ★ syn 의 "shield" 를 "ward off" 로 바꿨다. shield 는 S 세트에서 사전
        첫 갈래인 '보호하다' 로 서는데, 그러면 같은 목록의 protect(보호하다) 와
        설명이 똑같아진다. 더 흔한 protect 를 남기는 쪽을 골랐다. */
@@ -338,7 +338,7 @@ window.VOCAB_D = [
     syn:["shortfall","gap","arrears"], ant:["surplus"],
     ex:[{ s:"The city is struggling with a growing budget {{}}.", f:"deficit", ko:"그 도시는 늘어나는 예산 적자와 씨름하고 있다." }] },
 
-  { word:"define", exams:["공무원"], pron:"디파인", pos:"v", level:"B1", meanings:["정의하다","규정하다"],
+  { word:"define", exams:["공무원","수능"], pron:"디파인", pos:"v", level:"B1", meanings:["정의하다","규정하다"],
     syn:["specify","clarify","characterize"],
     ex:[{ s:"It is surprisingly hard to {{}} happiness in one sentence.", f:"define", ko:"행복을 한 문장으로 정의하기는 놀랄 만큼 어렵다." }] },
 
@@ -346,7 +346,7 @@ window.VOCAB_D = [
     syn:["certain","clear","specific"], ant:["vague"],
     ex:[{ s:"We need a {{}} answer from the supplier before Friday.", f:"definite", ko:"금요일 전에 공급업체로부터 확실한 답을 받아야 한다." }] },
 
-  { word:"definitive", pron:"디피니티브", pos:"adj", level:"C2", meanings:["최종적인","확정적인"],
+  { word:"definitive", exams:["수능"], pron:"디피니티브", pos:"adj", level:"C2", meanings:["최종적인","확정적인"],
     syn:["conclusive","final","authoritative"], ant:["tentative"],
     ex:[{ s:"Researchers still lack a {{}} answer to that question.", f:"definitive", ko:"연구자들은 아직 그 질문에 대한 최종적인 답이 없다." }] },
 
@@ -374,7 +374,7 @@ window.VOCAB_D = [
     syn:["demean","impair","cheapen"], ant:["enhance"],
     ex:[{ s:"Constant criticism can {{}} a person's confidence.", f:"degrade", ko:"끊임없는 비판은 사람의 자신감을 떨어뜨릴 수 있다." }] },
 
-  { word:"degree", pron:"디그리", pos:"n", level:"B1", meanings:["정도","학위"],
+  { word:"degree", exams:["수능"], pron:"디그리", pos:"n", level:"B1", meanings:["정도","학위"],
     syn:["extent","level","grade"],
     ex:[{ s:"The two cases differ in {{}} rather than in kind.", f:"degree", ko:"그 두 사례는 종류보다는 정도에서 다르다." }] },
 
@@ -406,7 +406,7 @@ window.VOCAB_D = [
     syn:["intentionally","purposely","knowingly"], ant:["accidentally"],
     ex:[{ s:"He {{}} left the back door unlocked for her.", f:"deliberately", ko:"그는 그녀를 위해 뒷문을 고의로 잠그지 않았다." }] },
 
-  { word:"delicate", pron:"델리킷", pos:"adj", level:"B2", meanings:["섬세한","연약한"],
+  { word:"delicate", exams:["수능"], pron:"델리킷", pos:"adj", level:"B2", meanings:["섬세한","연약한"],
     syn:["fragile","subtle","dainty"], ant:["sturdy"],
     ex:[{ s:"The lace was far too {{}} to wash by machine.", f:"delicate", ko:"그 레이스는 세탁기로 빨기엔 너무나 섬세했다." }] },
 
@@ -438,7 +438,7 @@ window.VOCAB_D = [
     syn:["flood","torrent","onslaught"], ant:["drought"],
     ex:[{ s:"The office received a {{}} of complaints after the outage.", f:"deluge", ko:"정전 이후 사무실에 불만이 쇄도했다." }] },
 
-  { word:"demand", exams:["공무원"], pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
+  { word:"demand", exams:["공무원","수능"], pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
     syn:["require","insist on","call for"], ant:["offer"],
     ex:[{ s:"The workers {{}} safer conditions and shorter hours.", f:"demand", ko:"노동자들은 더 안전한 환경과 더 짧은 노동 시간을 요구한다." }] },
 
@@ -617,7 +617,7 @@ window.VOCAB_D = [
     syn:["advantageous","attractive","preferable"], ant:["undesirable"],
     ex:[{ s:"A quiet location is highly {{}} for a public library.", f:"desirable", ko:"조용한 위치는 공공 도서관에 매우 바람직하다." }] },
 
-  { word:"desire", exams:["공무원"], pron:"디자이어", pos:"n", level:"B1", meanings:["욕구","바람"],
+  { word:"desire", exams:["공무원","수능"], pron:"디자이어", pos:"n", level:"B1", meanings:["욕구","바람"],
     syn:["longing","craving","wish"], ant:["aversion"],
     ex:[{ s:"He felt a strong {{}} to return to his hometown.", f:"desire", ko:"그는 고향으로 돌아가고 싶은 강한 욕구를 느꼈다." }] },
 
@@ -806,7 +806,7 @@ window.VOCAB_D = [
     syn:["nutritional","food-related","nutritive"],
     ex:[{ s:"The doctor suggested several simple {{}} changes.", f:"dietary", ko:"의사는 몇 가지 간단한 식이 변화를 제안했다." }] },
 
-  { word:"differ", exams:["공무원"], pron:"디퍼", pos:"v", level:"B1", meanings:["다르다","의견이 다르다"],
+  { word:"differ", exams:["공무원","수능"], pron:"디퍼", pos:"v", level:"B1", meanings:["다르다","의견이 다르다"],
     syn:["diverge","vary","contrast"], ant:["match"],
     ex:[{ s:"The two accounts {{}} on several key points.", f:"differ", ko:"두 진술은 몇 가지 핵심에서 다르다." }] },
 
@@ -840,7 +840,7 @@ window.VOCAB_D = [
     syn:["stateliness","self-respect","honor"],
     ex:[{ s:"He accepted the defeat with quiet {{}}.", f:"dignity", ko:"그는 조용한 품위로 패배를 받아들였다." }] },
 
-  { word:"dilemma", pron:"딜레마", pos:"n", level:"B2", meanings:["딜레마","진퇴양난"],
+  { word:"dilemma", exams:["수능"], pron:"딜레마", pos:"n", level:"B2", meanings:["딜레마","진퇴양난"],
     syn:["quandary","predicament","tight spot"],
     ex:[{ s:"The company faced a real {{}} over the product recall.", f:"dilemma", ko:"그 회사는 제품 회수 문제로 진짜 딜레마에 빠졌다." }] },
 
@@ -949,7 +949,7 @@ window.VOCAB_D = [
     syn:["follower","pupil","adherent"],
     ex:[{ s:"He was the most devoted {{}} of the old master.", f:"disciple", ko:"그는 그 노스승의 가장 헌신적인 제자였다." }] },
 
-  { word:"discipline", exams:["공무원"], pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
+  { word:"discipline", exams:["공무원","수능"], pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
     syn:["order","training","self-control"],
     ex:[{ s:"The school has long been known for its strict {{}}.", f:"discipline", ko:"그 학교는 오래전부터 엄격한 규율로 알려져 있다." }] },
 
@@ -1064,7 +1064,7 @@ window.VOCAB_D = [
     syn:["scatter","diffuse","dispel"], ant:["gather"],
     ex:[{ s:"The crowd began to {{}} once the rain started.", f:"disperse", ko:"비가 오기 시작하자 군중이 흩어지기 시작했다." }] },
 
-  { word:"display", exams:["공무원"], pron:"디스플레이", pos:"v", level:"B1", meanings:["전시하다","드러내다"],
+  { word:"display", exams:["공무원","수능"], pron:"디스플레이", pos:"v", level:"B1", meanings:["전시하다","드러내다"],
     syn:["exhibit","show","present"], ant:["hide"],
     ex:[{ s:"The gallery will {{}} the original sketches next month.", f:"display", ko:"그 갤러리는 다음 달에 원본 스케치를 전시할 것이다." }] },
 
@@ -1144,11 +1144,11 @@ window.VOCAB_D = [
     syn:["characteristic","unique","unmistakable"],
     ex:[{ s:"The bird has a {{}} call you cannot possibly miss.", f:"distinctive", ko:"그 새는 도저히 놓칠 수 없는 독특한 울음소리를 낸다." }] },
 
-  { word:"distinguish", exams:["공무원"], pron:"디스팅귀시", pos:"v", level:"B2", meanings:["구별하다","식별하다"],
+  { word:"distinguish", exams:["공무원","수능"], pron:"디스팅귀시", pos:"v", level:"B2", meanings:["구별하다","식별하다"],
     syn:["differentiate","tell apart","discern"],
     ex:[{ s:"Colorblind people cannot always {{}} red from green.", f:"distinguish", ko:"색맹인 사람은 빨강과 초록을 늘 구별하지는 못한다." }] },
 
-  { word:"distinguished", pron:"디스팅귀시트", pos:"adj", level:"C1", meanings:["저명한","뛰어난"],
+  { word:"distinguished", exams:["수능"], pron:"디스팅귀시트", pos:"adj", level:"C1", meanings:["저명한","뛰어난"],
     syn:["eminent","renowned","illustrious"], ant:["obscure"],
     ex:[{ s:"The lecture was given by a {{}} historian.", f:"distinguished", ko:"그 강연은 저명한 역사가가 했다." }] },
 
@@ -1180,7 +1180,7 @@ window.VOCAB_D = [
     syn:["hand out","allocate","share out"],
     ex:[{ s:"Volunteers helped {{}} blankets to the affected families.", f:"distribute", ko:"자원봉사자들이 피해 가족에게 담요를 배포하는 것을 도왔다." }] },
 
-  { word:"distribution", pron:"디스트리뷰션", pos:"n", level:"B2", meanings:["분배","유통"],
+  { word:"distribution", exams:["수능"], pron:"디스트리뷰션", pos:"n", level:"B2", meanings:["분배","유통"],
     syn:["allocation","dispersal","circulation"],
     ex:[{ s:"The company handles {{}} across three countries.", f:"distribution", ko:"그 회사는 세 나라에 걸친 유통을 담당한다." }] },
 
@@ -1200,7 +1200,7 @@ window.VOCAB_D = [
     syn:["separate","branch off","deviate"], ant:["converge"],
     ex:[{ s:"The two paths {{}} just beyond the old bridge.", f:"diverge", ko:"두 길은 옛 다리를 지나 바로 갈라진다." }] },
 
-  { word:"diverse", exams:["공무원"], pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
+  { word:"diverse", exams:["공무원","수능"], pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
     syn:["varied","assorted","manifold"], ant:["uniform"],
     ex:[{ s:"The city has an unusually {{}} population.", f:"diverse", ko:"그 도시는 유난히 다양한 인구 구성을 갖고 있다." }] },
 
@@ -1301,7 +1301,7 @@ window.VOCAB_D = [
     syn:["prevailing","leading","predominant"], ant:["subordinate"],
     ex:[{ s:"English remains the {{}} language of science.", f:"dominant", ko:"영어는 여전히 과학의 지배적인 언어다." }] },
 
-  { word:"dominate", exams:["공무원"], pron:"다머네이트", pos:"v", level:"B2", meanings:["지배하다","압도하다"],
+  { word:"dominate", exams:["공무원","수능"], pron:"다머네이트", pos:"v", level:"B2", meanings:["지배하다","압도하다"],
     syn:["control","rule","overshadow"],
     ex:[{ s:"One company came to {{}} the entire market.", f:"dominate", ko:"한 회사가 시장 전체를 지배하게 됐다." }] },
 
@@ -1339,7 +1339,7 @@ window.VOCAB_D = [
     syn:["amount","measure","portion"],
     ex:[{ s:"Take one {{}} every eight hours with water.", f:"dose", ko:"8시간마다 물과 함께 한 회분을 복용하세요." }] },
 
-  { word:"doubt", pron:"다우트", pos:"n", level:"B1", meanings:["의심","의문"],
+  { word:"doubt", exams:["수능"], pron:"다우트", pos:"n", level:"B1", meanings:["의심","의문"],
     syn:["uncertainty","skepticism","misgiving"], ant:["certainty"],
     ex:[{ s:"There is little {{}} about who wrote the letter.", f:"doubt", ko:"누가 그 편지를 썼는지에 대한 의심은 거의 없다." }] },
 
@@ -1373,7 +1373,7 @@ window.VOCAB_D = [
   { word:"dozen", exams:["공무원"], pron:"더즌", pos:"n", level:"B1", meanings:["12개","한 다스"],
     ex:[{ s:"She bought half a {{}} eggs on the way home.", f:"dozen", ko:"그녀는 집에 오는 길에 달걀 여섯 개를 샀다." }] },
 
-  { word:"draft", exams:["공무원"], pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],
+  { word:"draft", exams:["공무원","수능"], pron:"드래프트", pos:"n", level:"B2", meanings:["초안","원고"],
     syn:["outline","rough copy","sketch"],
     ex:[{ s:"The first {{}} of the report was far too long.", f:"draft", ko:"보고서 초안은 너무 길었다." }] },
 
@@ -1477,7 +1477,7 @@ window.VOCAB_D = [
     syn:["owing","payable","expected"],
     ex:[{ s:"The final payment is {{}} at the end of March.", f:"due", ko:"최종 대금은 3월 말에 지급 기일이 된다." }] },
 
-  { word:"due to", exams:["공무원"], pron:"듀 투", pos:"phr", level:"B1", meanings:["~때문에","~로 인해"],
+  { word:"due to", exams:["공무원","수능"], pron:"듀 투", pos:"phr", level:"B1", meanings:["~때문에","~로 인해"],
     syn:["because of","owing to","thanks to"] },
 
   { word:"dull", pron:"덜", pos:"adj", level:"B2", meanings:["따분한","흐릿한"],

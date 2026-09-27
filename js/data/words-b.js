@@ -27,7 +27,7 @@ window.VOCAB_B = [
   { word:"behavior", exams:["공무원"], pron:"비헤이비어", pos:"n", level:"B1", meanings:["행동","태도"], syn:["conduct","manner","demeanor"], ex:[{ s:"These brain areas help you plan goal-oriented {{}}.", f:"behavior", ko:"이 뇌 영역들은 목표 지향적인 행동을 계획하도록 돕는다." }] },
   { word:"betray", exams:["공무원"], pron:"비트레이", pos:"v", level:"B2", meanings:["배신하다","저버리다"], syn:["deceive","let down","double-cross"], ant:["support"], ex:[{ s:"People worry that AI tools may {{}} their trust.", f:"betray", ko:"사람들은 AI 도구가 자신의 신뢰를 저버릴까 걱정한다." }] },
   { word:"blessed", exams:["공무원"], pron:"블레시드", pos:"adj", level:"B2", meanings:["축복받은","신성한"], syn:["fortunate","holy","sacred"], ant:["cursed"], ex:[{ s:"Humans are {{}} with remarkable intelligence.", f:"blessed", ko:"인간은 놀라운 지능을 타고났다." }], gov:{ prep:["with"], usage:"be blessed with ~ : ~을 타고나다, ~의 복을 누리다" } },
-  { word:"broad", exams:["공무원"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"The program has {{}} support from national organizations.", f:"broad", ko:"그 프로그램은 국가 기관들로부터 폭넓은 지지를 받는다." }] },
+  { word:"broad", exams:["공무원","수능"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"The program has {{}} support from national organizations.", f:"broad", ko:"그 프로그램은 국가 기관들로부터 폭넓은 지지를 받는다." }] },
   { word:"better safe than sorry", exams:["공무원"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
   { word:"buildup", exams:["공무원"], pron:"빌드업", pos:"n", level:"C1", meanings:["축적","증강"], syn:["accumulation","growth","escalation"], ex:[{ s:"Daily sunshine creates a protective {{}} against blue light.", f:"buildup", ko:"매일 햇빛을 쬐면 블루라이트에 맞서는 보호막이 쌓인다." }] },
   { word:"booming", exams:["공무원"], pron:"부밍", pos:"adj", level:"B2", meanings:["호황을 누리는","급성장하는"], syn:["thriving","flourishing","prosperous"], ant:["declining"], ex:[{ s:"Tourism is {{}} in the region these days.", f:"booming", ko:"요즘 그 지역에서는 관광업이 호황을 누리고 있다." }] },
@@ -207,7 +207,7 @@ window.VOCAB_B = [
   { word:"be done with", pron:"비 던 위드", pos:"phr", level:"B2", meanings:["~을 다 처리하다","~을 끝장내다"],
     syn:["be finished with","wrap up","have completed"], ant:["begin"] },
 
-  { word:"be engaged in", pron:"비 인게이지드 인", pos:"phr", level:"B2", meanings:["~에 종사하고 있다","~으로 바쁘다"],
+  { word:"be engaged in", exams:["수능"], pron:"비 인게이지드 인", pos:"phr", level:"B2", meanings:["~에 종사하고 있다","~으로 바쁘다"],
     syn:["be involved in","take part in","be occupied with"], ant:["be idle"] },
 
   { word:"be entitled to", pron:"비 인타이틀드 투", pos:"phr", level:"B2", meanings:["~에 대한 자격이 주어지다"],
@@ -231,7 +231,7 @@ window.VOCAB_B = [
   { word:"be inclined to", pron:"비 인클라인드 투", pos:"phr", level:"C1", meanings:["~할 의향이 있다","~하는 편이다"],
     syn:["be disposed to","lean toward","feel like"], ant:["be reluctant to"] },
 
-  { word:"be known for", pron:"비 노운 포", pos:"phr", level:"B1", meanings:["~로 알려져 있다"],
+  { word:"be known for", exams:["수능"], pron:"비 노운 포", pos:"phr", level:"B1", meanings:["~로 알려져 있다"],
     syn:["be famous for","be noted for","be renowned for"], ant:["be obscure"] },
 
   { word:"be liable to do", pron:"비 라이어블 투 두", pos:"phr", level:"C1", meanings:["~할 것 같다","~하기 쉽다"],
@@ -261,7 +261,7 @@ window.VOCAB_B = [
   { word:"be quick to", pron:"비 퀵 투", pos:"phr", level:"B2", meanings:["~가 빠르다","선뜻 ~하다"],
     syn:["be prompt to","be swift to","waste no time in"], ant:["be slow to"] },
 
-  { word:"be regarded as", pron:"비 리가디드 애즈", pos:"phr", level:"B2", meanings:["~로 여겨지다","~로 간주되다"],
+  { word:"be regarded as", exams:["수능"], pron:"비 리가디드 애즈", pos:"phr", level:"B2", meanings:["~로 여겨지다","~로 간주되다"],
     syn:["be seen as","be viewed as","be considered"], ant:["be dismissed as"] },
 
   { word:"be restricted to", pron:"비 리스트릭티드 투", pos:"phr", level:"B2", meanings:["~에 국한되다","~에 제한되다"],
@@ -287,7 +287,7 @@ window.VOCAB_B = [
     syn:["ray","shaft","gleam"],
     ex:[{ s:"A {{}} of sunlight came through the narrow window.", f:"beam", ko:"좁은 창을 통해 한 줄기 햇빛이 들어왔다." }] },
 
-  { word:"bear", pron:"베어", pos:"v", level:"B1", meanings:["견디다","감당하다"],
+  { word:"bear", exams:["수능"], pron:"베어", pos:"v", level:"B1", meanings:["견디다","감당하다"],
     syn:["endure","tolerate","withstand"], ant:["reject"],
     ex:[{ s:"She could not {{}} the pain any longer.", f:"bear", ko:"그녀는 더 이상 그 고통을 견딜 수 없었다." }] },
 
@@ -358,7 +358,7 @@ window.VOCAB_B = [
     syn:["patron","donor","sponsor"], ant:["opponent"],
     ex:[{ s:"An anonymous {{}} paid for the new library.", f:"benefactor", ko:"익명의 후원자가 새 도서관 비용을 댔다." }] },
 
-  { word:"beneficial", pron:"베니피셜", pos:"adj", level:"B2", meanings:["유익한","이로운"],
+  { word:"beneficial", exams:["수능"], pron:"베니피셜", pos:"adj", level:"B2", meanings:["유익한","이로운"],
     syn:["advantageous","helpful","favorable"], ant:["harmful"],
     ex:[{ s:"Regular exercise is {{}} to your heart.", f:"beneficial", ko:"규칙적인 운동은 심장에 유익하다." }],
     gov:{ prep:["to","for"], pat:"beneficial {{}} health", usage:"beneficial to ~ : ~에 유익한" } },
@@ -367,11 +367,11 @@ window.VOCAB_B = [
     syn:["recipient","heir","receiver"], ant:["donor"],
     ex:[{ s:"She was the sole {{}} of her uncle's will.", f:"beneficiary", ko:"그녀는 삼촌 유언의 유일한 수혜자였다." }] },
 
-  { word:"benefit", exams:["공무원"], pron:"베니핏", pos:"n", level:"B1", meanings:["혜택","이득"],
+  { word:"benefit", exams:["공무원","수능"], pron:"베니핏", pos:"n", level:"B1", meanings:["혜택","이득"],
     syn:["advantage","gain","profit"], ant:["drawback"],
     ex:[{ s:"One {{}} of the job is free travel.", f:"benefit", ko:"그 일자리의 한 가지 혜택은 무료 여행이다." }] },
 
-  { word:"benefit from", pron:"베니핏 프롬", pos:"phr", level:"B1", meanings:["~로부터 혜택을 받다"],
+  { word:"benefit from", exams:["수능"], pron:"베니핏 프롬", pos:"phr", level:"B1", meanings:["~로부터 혜택을 받다"],
     syn:["profit from","gain from","take advantage of"], ant:["suffer from"] },
 
   { word:"benevolent", pron:"버네벌런트", pos:"adj", level:"C1", meanings:["자애로운","자비로운"],
@@ -395,7 +395,7 @@ window.VOCAB_B = [
   { word:"better off", pron:"베터 오프", pos:"phr", level:"B2", meanings:["형편이 더 나은","더 잘사는"],
     syn:["more fortunate","wealthier","in a better position"], ant:["worse off"] },
 
-  { word:"beverage", pron:"베버리지", pos:"n", level:"B2", meanings:["음료"],
+  { word:"beverage", exams:["수능"], pron:"베버리지", pos:"n", level:"B2", meanings:["음료"],
     syn:["drink","refreshment","brew"],
     ex:[{ s:"The airline serves a hot {{}} after takeoff.", f:"beverage", ko:"그 항공사는 이륙 후 따뜻한 음료를 제공한다." }] },
 
@@ -447,7 +447,7 @@ window.VOCAB_B = [
     syn:["legislation","invoice","statement"],
     ex:[{ s:"Congress passed the {{}} after a long debate.", f:"bill", ko:"의회는 오랜 논쟁 끝에 그 법안을 통과시켰다." }] },
 
-  { word:"bind", pron:"바인드", pos:"v", level:"B2", meanings:["묶다","의무를 지우다"],
+  { word:"bind", exams:["수능"], pron:"바인드", pos:"v", level:"B2", meanings:["묶다","의무를 지우다"],
     /* ★ syn 의 "tie" 를 "fasten with rope" 로 바꿨다. tie 는 T 세트에서 명사
        '유대, 매듭' 으로 선다 — 참조 셋 중 bond(유대감)·link(연결) 가 명사여서
        명사를 골랐고, 동사 쪽을 쓰던 이 자리를 갈았다. 동사 '묶다' 는 같은 세트의
@@ -471,7 +471,7 @@ window.VOCAB_B = [
     syn:["organic","physiological","natural"], ant:["artificial"],
     ex:[{ s:"The study examined {{}} differences between the species.", f:"biological", ko:"그 연구는 두 종 사이의 생물학적 차이를 조사했다." }] },
 
-  { word:"biology", pron:"바이올로지", pos:"n", level:"B1", meanings:["생물학","생명 활동"],
+  { word:"biology", exams:["수능"], pron:"바이올로지", pos:"n", level:"B1", meanings:["생물학","생명 활동"],
     syn:["life science","bioscience","natural science"],
     ex:[{ s:"She majored in {{}} at university.", f:"biology", ko:"그녀는 대학에서 생물학을 전공했다." }] },
 
@@ -671,7 +671,7 @@ window.VOCAB_B = [
     syn:["rebound","spring","hop"],
     ex:[{ s:"The ball began to {{}} down the stone stairs.", f:"bounce", ko:"공이 돌계단을 튀며 내려가기 시작했다." }] },
 
-  { word:"boundary", pron:"바운더리", pos:"n", level:"B2", meanings:["경계","한계"],
+  { word:"boundary", exams:["수능"], pron:"바운더리", pos:"n", level:"B2", meanings:["경계","한계"],
     syn:["border","limit","perimeter"], ant:["center"],
     ex:[{ s:"A low stone fence marks the {{}} of the property.", f:"boundary", ko:"낮은 돌담이 그 땅의 경계를 나타낸다." }] },
 
@@ -684,7 +684,7 @@ window.VOCAB_B = [
     syn:["indoctrinate","condition","manipulate"],
     ex:[{ s:"The regime tried to {{}} its citizens through the media.", f:"brainwash", ko:"그 정권은 언론을 통해 국민을 세뇌시키려 했다." }] },
 
-  { word:"branch", pron:"브랜치", pos:"n", level:"B1", meanings:["나뭇가지","지점"],
+  { word:"branch", exams:["수능"], pron:"브랜치", pos:"n", level:"B1", meanings:["나뭇가지","지점"],
     syn:["limb","bough","division"],
     ex:[{ s:"A small bird landed on the lowest {{}}.", f:"branch", ko:"작은 새가 가장 낮은 나뭇가지에 내려앉았다." }] },
 
@@ -769,7 +769,7 @@ window.VOCAB_B = [
      명사와 동사를 섞어 두었는데, 참조 다섯 곳 가운데 breadth·distance·duration·
      length 넷이 명사여서 S 세트에서는 명사 '기간' 으로 선다 — 이 동사 목록에만
      맞지 않게 된다. */
-  { word:"bridge", pron:"브리지", pos:"v", level:"B2", meanings:["다리를 놓다","이어주다"],
+  { word:"bridge", exams:["수능"], pron:"브리지", pos:"v", level:"B2", meanings:["다리를 놓다","이어주다"],
     syn:["connect","link two sides","link"], ant:["divide"],
     ex:[{ s:"The program aims to {{}} the gap between rich and poor.", f:"bridge", ko:"그 프로그램은 부유층과 빈곤층의 격차를 이어주는 것을 목표로 한다." }] },
 
@@ -950,7 +950,7 @@ window.VOCAB_B = [
   { word:"by all means", pron:"바이 올 민즈", pos:"phr", level:"B2", meanings:["반드시","꼭"],
     syn:["certainly","without fail","absolutely"], ant:["by no means"] },
 
-  { word:"by contrast", exams:["공무원"], pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
+  { word:"by contrast", exams:["공무원","수능"], pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
     syn:["on the other hand","conversely","in comparison"], ant:["likewise"] },
 
   { word:"by extension", pron:"바이 익스텐션", pos:"phr", level:"C1", meanings:["더 나아가"],

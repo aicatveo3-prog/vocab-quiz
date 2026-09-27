@@ -51,10 +51,10 @@ window.VOCAB_U = [
   { word:"unruly", exams:["공무원"], pron:"언룰리", pos:"adj", level:"C1", meanings:["다루기 힘든","제멋대로인"], syn:["disorderly","rowdy","unmanageable"], ant:["obedient"], ex:[{ s:"The novel is about the vexed parents of an {{}} teenager.", f:"unruly", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
   { word:"universally", exams:["공무원"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
   { word:"upgrade", exams:["공무원"], pron:"업그레이드", pos:"v", level:"B2", meanings:["향상시키다","개선하다"], syn:["improve","enhance","boost"], ant:["downgrade"], ex:[{ s:"We assess and {{}} our services.", f:"upgrade", ko:"우리는 서비스를 평가하고 개선한다." }] },
-  { word:"uncertain", exams:["공무원"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
+  { word:"uncertain", exams:["공무원","수능"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
   { word:"uniform", exams:["공무원"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
-  { word:"unexpected", exams:["공무원"], pron:"언익스펙티드", pos:"adj", level:"B1", meanings:["예상치 못한","뜻밖의"], syn:["unforeseen","surprising","sudden"], ant:["expected","predictable"], ex:[{ s:"Life is full of {{}} happy moments.", f:"unexpected", ko:"인생은 예상치 못한 행복한 순간들로 가득하다." }] },
-  { word:"unlike", exams:["공무원"], pron:"언라이크", pos:"phr", level:"B1", meanings:["~와 달리","~와 다른"], syn:["contrary to","in contrast with","different from"] },
+  { word:"unexpected", exams:["공무원","수능"], pron:"언익스펙티드", pos:"adj", level:"B1", meanings:["예상치 못한","뜻밖의"], syn:["unforeseen","surprising","sudden"], ant:["expected","predictable"], ex:[{ s:"Life is full of {{}} happy moments.", f:"unexpected", ko:"인생은 예상치 못한 행복한 순간들로 가득하다." }] },
+  { word:"unlike", exams:["공무원","수능"], pron:"언라이크", pos:"phr", level:"B1", meanings:["~와 달리","~와 다른"], syn:["contrary to","in contrast with","different from"] },
   { word:"unmanned", exams:["공무원"], pron:"언맨드", pos:"adj", level:"B2", meanings:["무인의","사람이 타지 않은"], syn:["uncrewed","pilotless","automated"], ant:["manned"], ex:[{ s:"AUVs are {{}} underwater robots.", f:"unmanned", ko:"AUV는 무인 수중 로봇이다." }] },
   { word:"unnerving", exams:["공무원"], pron:"언너빙", pos:"adj", level:"C1", meanings:["불안하게 만드는","초조하게 하는"], syn:["disturbing","unsettling","disconcerting"], ex:[{ s:"Not knowing how a decision is made is {{}}.", f:"unnerving", ko:"결정이 어떻게 내려지는지 모른다는 것은 사람을 불안하게 만든다." }] },
   { word:"utilize", exams:["공무원"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
@@ -62,12 +62,12 @@ window.VOCAB_U = [
   { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
   { word:"upset", exams:["공무원"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
   { word:"unacceptable", exams:["공무원"], pron:"언액셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 없는","용납할 수 없는"], syn:["intolerable","inadmissible","objectionable"], ant:["acceptable"], ex:[{ s:"Such rude behavior is simply {{}} in this office.", f:"unacceptable", ko:"그런 무례한 행동은 이 사무실에서 도저히 용납할 수 없다." }] },
-  { word:"unfold", exams:["공무원"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
+  { word:"unfold", exams:["공무원","수능"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
   { word:"utter", exams:["공무원"], pron:"어터", pos:"adj", level:"C1", meanings:["완전한","입 밖에 내다"], syn:["absolute","sheer","complete","total"], ex:[{ s:"The meeting was {{}} chaos from start to finish.", f:"utter", ko:"그 회의는 처음부터 끝까지 완전한 혼돈이었다." }] },
   { word:"undo", exams:["공무원"], pron:"언두", pos:"v", level:"B2", meanings:["풀다","원래대로 되돌리다"], syn:["unfasten","reverse","cancel"], ex:[{ s:"He loosened his collar and began to {{}} his tie.", f:"undo", ko:"그는 옷깃을 느슨하게 하고 넥타이를 풀기 시작했다." }] },
   { word:"unpredictably", exams:["공무원"], pron:"언프리딕터블리", pos:"adv", level:"C1", meanings:["예측할 수 없게","갑자기"] },
   { word:"unplug", exams:["공무원"], pron:"언플러그", pos:"v", level:"B2", meanings:["플러그를 뽑다","잠시 일에서 벗어나다"], ex:[{ s:"Remember to {{}} the heater before you leave.", f:"unplug", ko:"나가기 전에 히터 플러그를 뽑는 것을 잊지 마라." }] },
-  { word:"uncertainty", exams:["공무원"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
+  { word:"uncertainty", exams:["공무원","수능"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
   { word:"unrelated", exams:["공무원"], pron:"언릴레이티드", pos:"adj", level:"B2", meanings:["관련 없는","무관한"], syn:["irrelevant","extraneous","unconnected"], ant:["related"], ex:[{ s:"The police said the two fires were {{}}; one was an accident.", f:"unrelated", ko:"경찰은 두 화재가 서로 무관하다고 밝혔다. 하나는 사고였다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
@@ -114,7 +114,7 @@ window.VOCAB_U = [
 
   /* fundamental(근본적인, 기초적인 · B2/adj) 와 '근본적인' 이 맞물려 배제된다.
      교재의 '최고의' 는 superb(훌륭한, 최고의)·top-notch(최고 수준의) 자리다. */
-  { word:"ultimate", exams:["공무원"], pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
+  { word:"ultimate", exams:["공무원","수능"], pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
     syn:["final of all","at the very end","deepest of all"],
     ex:[{ s:"Peace was their {{}} aim.", f:"ultimate", ko:"평화가 그들의 궁극적인 목표였다." }] },
 
@@ -193,7 +193,7 @@ window.VOCAB_U = [
 
   /* ★ '학부생' 을 앞세웠다. '대학생' 은 pupil(학생, 제자 · B1/n) 의 '학생' 을
      통째로 품는데 두 글자라 자동 배제가 안 되고 화면에서도 갈리지 않는다. */
-  { word:"undergraduate", pron:"언더그래주엇", pos:"n", level:"B2", meanings:["학부생","대학생"],
+  { word:"undergraduate", exams:["수능"], pron:"언더그래주엇", pos:"n", level:"B2", meanings:["학부생","대학생"],
     syn:["student not yet graduated","one reading for a first degree","college learner"],
     ex:[{ s:"She is still an {{}}.", f:"undergraduate", ko:"그녀는 아직 학부생이다." }] },
 
@@ -377,12 +377,12 @@ window.VOCAB_U = [
 
   /* continuous(계속되는, 끊이지 않는 · B1/adj) 와 '계속되는' 이 맞물려 배제된다.
      위 unhindered(막는 것이 없는) 와 갈랐다. */
-  { word:"uninterrupted", exams:["공무원"], pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
+  { word:"uninterrupted", exams:["공무원","수능"], pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
     syn:["continuous","going on without a stop","never broken into"],
     ex:[{ s:"She had six hours of {{}} sleep.", f:"uninterrupted", ko:"그녀는 여섯 시간을 계속되는 잠으로 보냈다." }] },
 
   /* 승격 ⑮ — 사전 글자 유지(참조 distinctive). */
-  { word:"unique", exams:["공무원"], pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
+  { word:"unique", exams:["공무원","수능"], pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
     syn:["distinctive","the only one of its kind","like no other"],
     ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] },
 
@@ -451,7 +451,7 @@ window.VOCAB_U = [
 
   /* 승격 ⑱ — 사전 단일값 유지(참조 generic). 교재의 '전 세계의, 우주의' 는
      버렸다. */
-  { word:"universal", pron:"유니버설", pos:"adj", level:"B1", meanings:["보편적인"],
+  { word:"universal", exams:["수능"], pron:"유니버설", pos:"adj", level:"B1", meanings:["보편적인"],
     syn:["generic","true of all","holding everywhere"],
     ex:[{ s:"Kindness is a {{}} value.", f:"universal", ko:"친절은 보편적인 가치다." }] },
 

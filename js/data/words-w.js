@@ -42,7 +42,7 @@ window.VOCAB_W = [
   { word:"wardrobe", exams:["공무원"], pron:"워드로브", pos:"n", level:"B2", meanings:["옷장","옷(전체)"], syn:["closet","clothes","garments"], ex:[{ s:"That is 66 percent of the average {{}} budget.", f:"wardrobe", ko:"그것은 평균 의복 예산의 66퍼센트다." }] },
   { word:"warfare", exams:["공무원"], pron:"워페어", pos:"n", level:"C1", meanings:["전쟁","전투"], syn:["combat","conflict","hostilities"], ant:["peace"], ex:[{ s:"The king lost his treasure on interminable {{}}.", f:"warfare", ko:"그 왕은 끝없는 전쟁으로 재물을 잃었다." }] },
   { word:"whale", exams:["공무원"], pron:"웨일", pos:"n", level:"B2", meanings:["고래"], ex:[{ s:"Members of the Makah tribe hunted {{}}.", f:"whales", ko:"마카 부족 사람들은 고래를 사냥했다." }] },
-  { word:"wireless", exams:["공무원"], pron:"와이어리스", pos:"adj", level:"B2", meanings:["무선의"], ex:[{ s:"The {{}} industry launched an education campaign.", f:"wireless", ko:"무선 통신 업계는 교육 캠페인을 시작했다." }] },
+  { word:"wireless", exams:["공무원","수능"], pron:"와이어리스", pos:"adj", level:"B2", meanings:["무선의"], ex:[{ s:"The {{}} industry launched an education campaign.", f:"wireless", ko:"무선 통신 업계는 교육 캠페인을 시작했다." }] },
   { word:"wrestle", exams:["공무원"], pron:"레슬", pos:"v", level:"C1", meanings:["씨름하다","맞붙어 싸우다"], syn:["grapple","struggle","tussle"], ex:[{ s:"Artists will {{}} with the possibilities of the post-human.", f:"wrestle", ko:"예술가들은 포스트휴먼의 가능성과 씨름할 것이다." }] },
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
@@ -170,7 +170,7 @@ window.VOCAB_W = [
   /* 승격 ⑦ — 사전 단일값 유지. 참조 세 곳(dilute·impair 유의어, consolidate
      반의어) 의 화면은 바뀌지 않는다. dampen(약화시키다, 적시다)·undermine
      (약화시키다) 과 글자가 맞물려 배제된다. */
-  { word:"weaken", exams:["공무원"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
+  { word:"weaken", exams:["공무원","수능"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
     syn:["dilute","impair","make less strong"], ant:["consolidate"],
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
