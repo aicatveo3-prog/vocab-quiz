@@ -132,6 +132,14 @@ window.VOCAB_P = [
   { word:"profitability", exams:["수능"], pron:"프라피터빌리티", pos:"n", level:"C1", meanings:["수익성"], ex:[{ s:"Access to market information was key to the firms' {{}}.", f:"profitability", ko:"시장 정보를 얻는 것이 그 회사들의 수익성의 열쇠였다." }] },
   { word:"prosper", exams:["수능"], pron:"프라스퍼", pos:"v", level:"B2", meanings:["번영하다","번창하다"], syn:["flourish","thrive","boom"], ant:["decline"], ex:[{ s:"Only under stable laws can a nation truly {{}}.", f:"prosper", ko:"안정된 법 아래에서만 나라가 진정으로 번영할 수 있다." }] },
   { word:"pursuit", exams:["수능"], pron:"퍼수트", pos:"n", level:"B2", meanings:["추구","추적"], syn:["quest","search","chase"], ex:[{ s:"The {{}} of happiness is a basic human right.", f:"pursuit", ko:"행복 추구는 인간의 기본권이다." }] },
+  { word:"particularly", exams:["수능"], pron:"퍼티큘러리", pos:"adv", level:"B2", meanings:["특히","유난히"], syn:["especially","notably","specifically"] },
+  { word:"pattern", exams:["수능"], pron:"패턴", pos:"n", level:"B1", meanings:["양식","패턴"], ex:[{ s:"Changes in your sleep {{}} can affect your mood.", f:"pattern", ko:"수면 패턴이 바뀌면 기분에 영향을 줄 수 있다." }] },
+  { word:"piecemeal", exams:["수능"], pron:"피스밀", pos:"adj", level:"C2", meanings:["단편적인","조금씩 하는"], ex:[{ s:"The city made {{}} repairs instead of fixing the whole bridge.", f:"piecemeal", ko:"시는 다리 전체를 고치는 대신 찔끔찔끔 보수만 했다." }] },
+  { word:"precedent", exams:["수능"], pron:"프레서던트", pos:"n", level:"C1", meanings:["선례","전례"], ex:[{ s:"The court's ruling became an important {{}} for later cases.", f:"precedent", ko:"그 법원 판결은 이후 사건들의 중요한 선례가 되었다." }] },
+  { word:"precisely", exams:["수능"], pron:"프리사이슬리", pos:"adv", level:"B2", meanings:["정확히","바로"] },
+  { word:"predictability", exams:["수능"], pron:"프리딕터빌리티", pos:"n", level:"C1", meanings:["예측 가능성"], ex:[{ s:"Investors value the {{}} of steady profits.", f:"predictability", ko:"투자자들은 꾸준한 이익의 예측 가능성을 중시한다." }] },
+  { word:"predominantly", exams:["수능"], pron:"프리다머넌틀리", pos:"adv", level:"C1", meanings:["주로","대부분"], syn:["mainly","primarily","chiefly"] },
+  { word:"previously", exams:["수능"], pron:"프리비어슬리", pos:"adv", level:"B2", meanings:["이전에","앞서"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

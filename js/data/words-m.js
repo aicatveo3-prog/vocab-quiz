@@ -85,6 +85,8 @@ window.VOCAB_M = [
   { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
   { word:"manipulation", exams:["수능"], pron:"머니퓰레이션", pos:"n", level:"C1", meanings:["조작","교묘한 처리"], ex:[{ s:"The lyricists used clever linguistic {{}} to tell stories.", f:"manipulation", ko:"작사가들은 영리한 언어 조작으로 이야기를 들려주었다." }] },
   { word:"movement", exams:["수능"], pron:"무브먼트", pos:"n", level:"B1", meanings:["움직임","운동"], ex:[{ s:"The dancer's every {{}} was smooth and graceful.", f:"movement", ko:"그 무용수의 움직임 하나하나가 부드럽고 우아했다." }] },
+  { word:"maintenance", exams:["수능"], pron:"메인터넌스", pos:"n", level:"B2", meanings:["유지","보수 관리"], ex:[{ s:"Old cars need regular {{}} to run safely.", f:"maintenance", ko:"오래된 차는 안전하게 달리려면 정기적인 정비가 필요하다." }] },
+  { word:"mood", exams:["수능"], pron:"무드", pos:"n", level:"B1", meanings:["기분","분위기"], ex:[{ s:"Sunny weather always puts me in a better {{}}.", f:"mood", ko:"화창한 날씨는 늘 내 기분을 더 좋게 해 준다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

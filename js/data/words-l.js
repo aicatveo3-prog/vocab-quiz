@@ -60,6 +60,12 @@ window.VOCAB_L = [
   { word:"lively", exams:["수능"], pron:"라이블리", pos:"adj", level:"B1", meanings:["활기찬","생동감 있는"], syn:["energetic","vibrant","spirited"], ant:["dull","lifeless"], ex:[{ s:"Their conversation grew {{}} as everyone joined in.", f:"lively", ko:"모두가 끼어들면서 그들의 대화는 활기를 띠었다." }] },
   { word:"loop", exams:["수능"], pron:"루프", pos:"n", level:"B2", meanings:["고리","순환"], ex:[{ s:"Perception and action form a feedback {{}}.", f:"loop", ko:"지각과 행동은 피드백 고리를 이룬다." }] },
   { word:"loyalty", exams:["수능"], pron:"로열티", pos:"n", level:"B2", meanings:["충성","충실"], syn:["allegiance","devotion","faithfulness"], ant:["betrayal"], ex:[{ s:"The firms were built on family ties, trust, and {{}}.", f:"loyalty", ko:"그 회사들은 가족 유대, 신뢰, 충성을 바탕으로 세워졌다." }] },
+  { word:"laborer", exams:["수능"], pron:"레이버러", pos:"n", level:"B2", meanings:["노동자","인부"], ex:[{ s:"The {{}} carried heavy bricks all day in the heat.", f:"laborer", ko:"그 인부는 더위 속에서 하루 종일 무거운 벽돌을 날랐다." }] },
+  { word:"landowner", exams:["수능"], pron:"랜드오너", pos:"n", level:"C1", meanings:["지주","토지 소유자"], ex:[{ s:"The {{}} rented his fields to local farmers.", f:"landowner", ko:"그 지주는 자기 밭을 지역 농부들에게 빌려주었다." }] },
+  { word:"liberation", exams:["수능"], pron:"리버레이션", pos:"n", level:"C1", meanings:["해방","자유롭게 함"], ex:[{ s:"The {{}} of the city ended years of foreign rule.", f:"liberation", ko:"그 도시의 해방으로 수년간의 외세 지배가 끝났다." }] },
+  { word:"lifespan", exams:["수능"], pron:"라이프스팬", pos:"n", level:"B2", meanings:["수명","존속 기간"], ex:[{ s:"The average {{}} of a smartphone is only a few years.", f:"lifespan", ko:"스마트폰의 평균 수명은 몇 년에 불과하다." }] },
+  { word:"lifetime", exams:["수능"], pron:"라이프타임", pos:"n", level:"B1", meanings:["평생","일생"], ex:[{ s:"My grandmother saw huge changes during her {{}}.", f:"lifetime", ko:"우리 할머니는 평생 동안 엄청난 변화를 목격하셨다." }] },
+  { word:"locally", exams:["수능"], pron:"로컬리", pos:"adv", level:"B2", meanings:["지역에서","현지에서"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -861,7 +867,6 @@ Object.assign(window.GLOSS, {
   "pine": "애타게 그리다",
   "plush": "푹신하고 고급스러운",
   "poem": "시",
-  "predominantly": "주로, 대부분은",
   "pressure agent": "압력 단체 요원",
   "profuse": "넘칠 만큼 많은",
   "property owner": "부동산 소유자",

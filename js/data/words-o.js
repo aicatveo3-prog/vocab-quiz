@@ -118,6 +118,8 @@ window.VOCAB_O = [
   { word:"object to", exams:["공무원"], pron:"어브젝트 투", pos:"phr", level:"B2", meanings:["~에 반대하다","~에 이의를 제기하다"] },
   { word:"outsourcing", exams:["수능"], pron:"아웃소싱", pos:"n", level:"C1", meanings:["외주","외부 위탁"], ex:[{ s:"{{}} lets large companies move work to cheaper markets.", f:"Outsourcing", ko:"외주 덕분에 대기업은 일을 더 싼 시장으로 옮길 수 있다." }] },
   { word:"on the spot", exams:["수능"], pron:"온 더 스팟", pos:"phr", level:"B2", meanings:["즉석에서","현장에서"] },
+  { word:"originally", exams:["수능"], pron:"어리저널리", pos:"adv", level:"B2", meanings:["원래","처음에는"] },
+  { word:"overuse", exams:["수능"], pron:"오버유즈", pos:"v", level:"B2", meanings:["남용하다","지나치게 쓰다"], ex:[{ s:"Teenagers who {{}} their phones at night often sleep badly.", f:"overuse", ko:"밤에 휴대폰을 지나치게 쓰는 십대는 잠을 잘 못 자는 경우가 많다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1306,7 +1308,6 @@ Object.assign(window.GLOSS, {
   "overpay": "너무 많이 지불하다",
   "overspent on an account": "계좌에서 넘겨 쓴",
   "overtake in progress": "나아가며 앞질러 가다",
-  "overuse": "남용, 과다 사용",
   "parentless child": "어버이 없는 아이",
   "pariah": "천대받는 사람",
   "particular time": "특정한 시점",

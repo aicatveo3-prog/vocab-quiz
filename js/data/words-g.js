@@ -782,7 +782,6 @@ Object.assign(window.GLOSS, {
   "mill":"제분하다",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
-  "network":"망, 연결망",
   "nonspecific":"특정하지 않은",
   "opt for":"~을 택하다",
   "parking space":"주차 공간",

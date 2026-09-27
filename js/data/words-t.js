@@ -1653,7 +1653,6 @@ Object.assign(window.GLOSS, {
   "passage from place to place": "한 곳에서 다른 곳으로 지나감",
   "passing all bounds": "모든 한계를 지나침",
   "passing over": "건너 넘어감",
-  "pattern": "본보기, 패턴",
   "people of one stock": "한 핏줄의 사람들",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
