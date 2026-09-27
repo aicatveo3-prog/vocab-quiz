@@ -2264,7 +2264,6 @@ Object.assign(window.GLOSS, {
   "unemployed": "실직한",
   "unevenness": "고르지 않음",
   "unfeasible": "실행 불가능한",
-  "unimaginable": "상상도 못 할",
   "unimaginative": "상상력이 없는",
   "unintelligible": "알아들을 수 없는",
   "unlettered": "무학의",

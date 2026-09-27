@@ -136,6 +136,11 @@ window.VOCAB_S = [
   { word:"seller", exams:["수능"], pron:"셀러", pos:"n", level:"B1", meanings:["판매자","파는 사람"], syn:["vendor","merchant","retailer","dealer"], ant:["buyer"], ex:[{ s:"The {{}} lowered the price when I asked politely.", f:"seller", ko:"내가 정중히 부탁하자 판매자가 가격을 낮춰 주었다." }] },
   { word:"signal", exams:["수능"], pron:"시그널", pos:"n", level:"B1", meanings:["신호","징후"], ex:[{ s:"The red light is the {{}} for cars to stop.", f:"signal", ko:"빨간불은 차가 멈추라는 신호다." }] },
   { word:"similar", exams:["수능"], pron:"시밀러", pos:"adj", level:"B1", meanings:["비슷한","유사한"], syn:["comparable","analogous","alike"], ant:["different","dissimilar"], ex:[{ s:"My sister and I have {{}} tastes in music.", f:"similar", ko:"언니와 나는 음악 취향이 비슷하다." }] },
+  { word:"sketch", exams:["수능"], pron:"스케치", pos:"n", level:"B1", meanings:["스케치","밑그림"], ex:[{ s:"The artist made a quick {{}} of the old bridge.", f:"sketch", ko:"화가는 오래된 다리를 재빨리 스케치했다." }] },
+  { word:"spotlight", exams:["수능"], pron:"스팟라이트", pos:"n", level:"B2", meanings:["스포트라이트","주목"], ex:[{ s:"The young singer loves being in the {{}}.", f:"spotlight", ko:"그 젊은 가수는 주목받는 것을 좋아한다." }] },
+  { word:"stimulus", exams:["수능"], pron:"스티뮬러스", pos:"n", level:"C1", meanings:["자극","격려"], ex:[{ s:"Babies react to every new {{}} around them.", f:"stimulus", ko:"아기는 주변의 모든 새로운 자극에 반응한다." }] },
+  { word:"stressful", exams:["수능"], pron:"스트레스풀", pos:"adj", level:"B2", meanings:["스트레스가 많은","긴장되는"], ex:[{ s:"Waiting for exam results can be really {{}}.", f:"stressful", ko:"시험 결과를 기다리는 일은 정말 스트레스가 클 수 있다." }] },
+  { word:"symbol", exams:["수능"], pron:"심벌", pos:"n", level:"B1", meanings:["상징","기호"], ex:[{ s:"The dove has long been the {{}} of peace.", f:"symbol", ko:"비둘기는 오랫동안 평화의 상징이었다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

@@ -67,6 +67,8 @@ window.VOCAB_T = [
   { word:"tiresome", exams:["수능"], pron:"타이어섬", pos:"adj", level:"C1", meanings:["지루한","귀찮은"], syn:["tedious","wearisome","exhausting"], ex:[{ s:"Filling out the same form again and again is {{}}.", f:"tiresome", ko:"같은 서류를 몇 번이고 작성하는 일은 지루하다." }] },
   { word:"toxicity", exams:["수능"], pron:"탁시서티", pos:"n", level:"C1", meanings:["독성","유독성"], ex:[{ s:"Scientists tested the {{}} of the new chemical on plants.", f:"toxicity", ko:"과학자들은 새 화학 물질이 식물에 미치는 독성을 시험했다." }] },
   { word:"trustee", exams:["수능"], pron:"트러스티", pos:"n", level:"C1", meanings:["수탁자","관리 위원"], ex:[{ s:"Her uncle served as the {{}} of her inheritance.", f:"trustee", ko:"그녀의 삼촌이 그녀가 받은 유산의 수탁자 역할을 했다." }] },
+  { word:"theorist", exams:["수능"], pron:"시어리스트", pos:"n", level:"C1", meanings:["이론가"], ex:[{ s:"The French painter and {{}} wrote about emotions in art.", f:"theorist", ko:"그 프랑스 화가이자 이론가는 미술 속 감정에 관해 썼다." }] },
+  { word:"typically", exams:["수능"], pron:"티피컬리", pos:"adv", level:"B2", meanings:["보통","전형적으로"], syn:["usually","normally","generally"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

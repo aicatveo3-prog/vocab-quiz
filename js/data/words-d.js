@@ -1993,7 +1993,6 @@ Object.assign(window.GLOSS, {
   "shrink from":"~을 피하다, 꺼리다",
   "single":"하나의, 단일한",
   "siphon":"빨아내다, 유출시키다",
-  "sketch":"밑그림, 개요",
   "sleepy":"졸린, 졸음이 오는",
   "snooze":"눈을 붙이다, 잠깐 자다",
   "speechless":"말을 잃은, 말이 안 나오는",

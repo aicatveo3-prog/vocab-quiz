@@ -51,6 +51,8 @@ window.VOCAB_V = [
   { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
   { word:"violent", exams:["수능"], pron:"바이얼런트", pos:"adj", level:"B1", meanings:["폭력적인","격렬한"], syn:["brutal","aggressive","fierce"], ant:["nonviolent"], ex:[{ s:"The movie was too {{}} for young children.", f:"violent", ko:"그 영화는 어린아이들이 보기에 너무 폭력적이었다." }] },
   { word:"violate", exams:["수능"], pron:"바이얼레이트", pos:"v", level:"B2", meanings:["위반하다","침해하다"], syn:["infringe","break","disobey"], ant:["obey"], ex:[{ s:"Companies that {{}} safety rules must pay a fine.", f:"violate", ko:"안전 규칙을 위반한 회사는 벌금을 내야 한다." }] },
+  { word:"victim", exams:["수능"], pron:"빅텀", pos:"n", level:"B1", meanings:["피해자","희생자"], ex:[{ s:"The {{}} of the robbery described the thief to the police.", f:"victim", ko:"강도 피해자는 경찰에게 도둑의 인상착의를 설명했다." }] },
+  { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8

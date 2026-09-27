@@ -78,6 +78,11 @@ window.VOCAB_U = [
   { word:"underpinning", exams:["수능"], pron:"언더피닝", pos:"n", level:"C2", meanings:["토대","기반"], ex:[{ s:"The theory has a strong mathematical {{}}.", f:"underpinning", ko:"그 이론에는 튼튼한 수학적 토대가 있다." }] },
   { word:"upward", exams:["수능"], pron:"업워드", pos:"adj", level:"B2", meanings:["위쪽으로의","상승하는"], ex:[{ s:"House prices have shown a steady {{}} trend.", f:"upward", ko:"집값은 꾸준한 상승 추세를 보여 왔다." }] },
   { word:"utilization", exams:["수능"], pron:"유털리제이션", pos:"n", level:"C1", meanings:["활용","이용"], ex:[{ s:"Better {{}} of resources can cut costs.", f:"utilization", ko:"자원을 더 잘 활용하면 비용을 줄일 수 있다." }] },
+  { word:"unanswered", exams:["수능"], pron:"언앤서드", pos:"adj", level:"C1", meanings:["답이 없는","응답받지 못한"], ex:[{ s:"Many of my emails went {{}} for weeks.", f:"unanswered", ko:"내 이메일 중 상당수는 몇 주 동안 답이 없었다." }] },
+  { word:"unimaginable", exams:["수능"], pron:"언이매지너블", pos:"adj", level:"B2", meanings:["상상도 못 할","상상할 수 없는"], syn:["inconceivable","unthinkable","incredible"], ex:[{ s:"Life without the Internet is now {{}} for most teenagers.", f:"unimaginable", ko:"이제 대부분의 십대에게 인터넷 없는 삶은 상상도 할 수 없다." }] },
+  { word:"unoccupied", exams:["수능"], pron:"언아큐파이드", pos:"adj", level:"C1", meanings:["비어 있는","사람이 없는"], syn:["vacant","empty","available"], ant:["occupied"], ex:[{ s:"The house has been {{}} since the family moved away.", f:"unoccupied", ko:"그 가족이 이사 간 뒤로 그 집은 비어 있다." }] },
+  { word:"unusual", exams:["수능"], pron:"언유주얼", pos:"adj", level:"B1", meanings:["흔치 않은","특이한"], syn:["rare","uncommon","strange"], ant:["ordinary","typical"], ex:[{ s:"It is {{}} to see snow here in April.", f:"unusual", ko:"이곳에서 4월에 눈을 보는 것은 흔치 않다." }] },
+  { word:"upcycle", exams:["수능"], pron:"업사이클", pos:"v", level:"C1", meanings:["업사이클하다","새 제품으로 재활용하다"], ex:[{ s:"Some designers {{}} old jeans into stylish bags.", f:"upcycle", ko:"어떤 디자이너들은 낡은 청바지를 멋진 가방으로 업사이클한다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -837,6 +842,7 @@ Object.assign(window.GLOSS, {
   "not shaken at all": "조금도 흔들리지 않는",
   "not to be doubted": "의심을 살 수 없는",
   "not yet named": "아직 이름 붙지 않은",
+  "occupied": "사용 중인",
   "of built-up areas": "건물이 들어찬 지역의",
   "of invisible short rays": "눈에 안 보이는 짧은 빛의",
   "of no use at all": "하나도 쓰이지 않는",
@@ -916,6 +922,7 @@ Object.assign(window.GLOSS, {
   "turning up all over": "곳곳에서 나타나는",
   "turns of fortune": "운이 뒤바뀌는 일",
   "unable to relax": "도무지 풀어지지 않는",
+  "uncommon": "흔하지 않은",
   "unconnected": "연관 없는",
   "uncrewed": "승무원이 없는",
   "under the waves": "물결 아래의",
@@ -933,7 +940,6 @@ Object.assign(window.GLOSS, {
   "water or power supply": "물이나 전기의 공급",
   "weaken from below": "아래에서부터 무르게 하다",
   "well enough to move": "움직일 만큼 나은",
-  "widely": "폭넓게",
   "wipe out entirely": "깡그리 없애다",
   "with no equal": "맞먹는 것이 없는",
   "with no one to match it": "겨룰 이가 없는",

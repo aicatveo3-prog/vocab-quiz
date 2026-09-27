@@ -60,6 +60,11 @@ window.VOCAB_W = [
   { word:"wage", exams:["수능"], pron:"웨이지", pos:"n", level:"B1", meanings:["임금","품삯"], syn:["salary","pay","earnings"], ex:[{ s:"The factory raised the minimum {{}} for its workers.", f:"wage", ko:"공장은 노동자들의 최저 임금을 올렸다." }] },
   { word:"well-defined", exams:["수능"], pron:"웰 디파인드", pos:"adj", level:"C1", meanings:["명확한","뚜렷한"], syn:["clear-cut","definite","distinct"], ant:["vague"], ex:[{ s:"Good projects have {{}} goals from the start.", f:"well-defined", ko:"좋은 프로젝트는 처음부터 목표가 명확하다." }] },
   { word:"wisdom", exams:["수능"], pron:"위즈덤", pos:"n", level:"B1", meanings:["지혜","통념"], ex:[{ s:"Old proverbs are full of practical {{}}.", f:"wisdom", ko:"옛 속담에는 실용적인 지혜가 가득하다." }] },
+  { word:"well-intentioned", exams:["수능"], pron:"웰 인텐션드", pos:"adj", level:"C1", meanings:["선의의","좋은 뜻의"], ex:[{ s:"Even {{}} advice can sometimes hurt people.", f:"well-intentioned", ko:"선의의 조언도 때로는 사람에게 상처를 줄 수 있다." }] },
+  { word:"well-spoken", exams:["수능"], pron:"웰 스포컨", pos:"adj", level:"C1", meanings:["말솜씨가 좋은","말씨가 고상한"], syn:["eloquent","fluent","persuasive"], ex:[{ s:"She is so {{}} that she can give a speech without any notes.", f:"well-spoken", ko:"그녀는 말솜씨가 아주 좋아서 메모 없이도 연설을 할 수 있다." }] },
+  { word:"widely", exams:["수능"], pron:"와이들리", pos:"adv", level:"B2", meanings:["널리","폭넓게"] },
+  { word:"widen", exams:["수능"], pron:"와이든", pos:"v", level:"B2", meanings:["넓히다","넓어지다"], syn:["broaden","expand","enlarge"], ex:[{ s:"The city plans to {{}} the road to reduce traffic.", f:"widen", ko:"시는 교통량을 줄이려고 도로를 넓힐 계획이다." }] },
+  { word:"wildlife", exams:["수능"], pron:"와일드라이프", pos:"n", level:"B1", meanings:["야생 동물"], ex:[{ s:"The national park is home to rich {{}}.", f:"wildlife", ko:"그 국립공원에는 야생 동물이 풍부하게 산다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11

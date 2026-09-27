@@ -2204,7 +2204,6 @@ Object.assign(window.GLOSS, {
   "slippery":"붙잡기 힘든, 미끄러운",
   "up-and-coming":"전도유망한",
   "urgent situation":"긴급한 상황",
-  "well-spoken":"말솜씨가 좋은",
 
   /* ── 4차: emission ~ encourage (38개) ───────────────── */
   "accent":"강세, 악센트",
