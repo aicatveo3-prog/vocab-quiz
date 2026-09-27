@@ -1563,6 +1563,56 @@
     });
   }
 
+  /* ── 앱 설치 (PWA) ────────────────────────────
+     안드로이드·PC 크롬은 beforeinstallprompt로 설치 버튼을 띄울 수 있고,
+     iOS Safari는 그 이벤트가 없어 "공유 → 홈 화면에 추가"를 안내한다.
+     이미 앱으로 실행 중(standalone)이면 아무것도 보이지 않는다. */
+  (function () {
+    var card = $('install-card');
+    if (!card) return;
+    var title = $('install-title');
+    var sub = $('install-sub');
+    var deferred = null;   // beforeinstallprompt 이벤트 (있으면 네이티브 설치 창)
+    var iosHint = false;   // iOS Safari — 누르면 방법을 설명한다
+
+    function standalone() {
+      return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+             window.navigator.standalone === true;
+    }
+    function hide() { card.style.display = 'none'; }
+    function show(t, s) {
+      if (standalone()) { hide(); return; }
+      title.textContent = t;
+      sub.textContent = s;
+      card.style.display = '';
+    }
+
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferred = e;
+      iosHint = false;
+      show('앱으로 설치', '홈 화면에 추가하면 오프라인에서도 바로 열립니다');
+    });
+    window.addEventListener('appinstalled', function () { deferred = null; hide(); });
+
+    card.addEventListener('click', function () {
+      if (deferred) {
+        deferred.prompt();
+        deferred.userChoice.then(function () { deferred = null; hide(); });
+      } else if (iosHint) {
+        alert('Safari 하단의 공유 버튼(⬆︎)을 누른 뒤\n"홈 화면에 추가"를 선택하세요.');
+      }
+    });
+
+    var ua = navigator.userAgent;
+    var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    var isSafari = /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(ua);
+    if (isIOS && isSafari && !standalone()) {
+      iosHint = true;
+      show('홈 화면에 추가', '공유 버튼 ⬆︎ → "홈 화면에 추가"를 누르세요');
+    }
+  })();
+
   /* ── 동기화 시작 ──────────────────────────────
      Store 변경 알림을 걸고, 이탈 시 flush를 등록한다. 이 시점에는 아직
      Firebase SDK가 없을 수 있다(defer로 늦게 온다). SDK가 준비되면

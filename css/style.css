@@ -96,6 +96,15 @@ b,strong{font-weight:600}
 .hero-n{font-size:12px;opacity:.8;white-space:nowrap}
 .hero-sub{display:block;margin-top:3px;font-size:13px;opacity:.85}
 
+/* ── 앱 설치 안내 (PWA) ───────────────────────
+   정복 모드 카드와 구분되게 낮은 톤으로 둔다. 설치 프롬프트가 뜨면 나타난다. */
+.install-card{display:block;width:100%;text-align:left;margin:20px 0 0;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:16px 18px;color:var(--txt);transition:background .12s}
+.install-card:hover{background:var(--surface-2)}
+.install-card .hero-row b{font-size:15px}
+.install-card .hero-sub{color:var(--dim);opacity:1}
+
 /* ── 설정 한 줄 ─────────────────────────── */
 .opt-row{display:flex;align-items:center;justify-content:space-between;
   gap:12px;padding:10px 2px}
