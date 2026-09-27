@@ -756,7 +756,6 @@ Object.assign(window.GLOSS, {
   "change to the good": "좋은 쪽으로 바뀜",
   "changing without warning": "예고 없이 바뀌는",
   "college learner": "대학에서 배우는 사람",
-  "commonly": "흔히, 일반적으로",
   "complicate": "복잡하게 하다",
   "conduct in politely": "공손히 모셔 들이다",
   "deepest of all": "가장 깊은 데 있는",

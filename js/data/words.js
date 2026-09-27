@@ -61,7 +61,7 @@ window.VOCAB = [
   { word:"accordingly", exams:["공무원"], pron:"어코딩리", pos:"adv", level:"B2", meanings:["그에 따라","그에 맞게"], syn:["correspondingly","consequently","therefore"], ex:[{ s:"If more guests come, we will adjust the budget {{}}.", f:"accordingly", ko:"손님이 더 오면 그에 맞게 예산을 조정할 것이다." }] },
   { word:"amid", exams:["공무원"], pron:"어미드", pos:"phr", level:"C1", meanings:["~의 한가운데에","~하는 와중에"], syn:["in the midst of","amidst","during"] },
   { word:"approve", exams:["공무원"], pron:"어프루브", pos:"v", level:"B1", meanings:["승인하다","찬성하다"], syn:["endorse","ratify","authorize"], ant:["disapprove","reject"], ex:[{ s:"Most residents {{}} of the new recycling rules.", f:"approve", ko:"대부분의 주민은 새 재활용 규칙에 찬성한다." }], gov:{ prep:["of"], usage:"approve of ~ : ~에 찬성하다 (approve ~ : ~을 승인하다)" } },
-  { word:"analytical", exams:["공무원"], pron:"애널리티컬", pos:"adj", level:"C1", meanings:["분석적인","분석의"], syn:["logical","rational","systematic"], ex:[{ s:"Good managers need strong {{}} skills.", f:"analytical", ko:"유능한 관리자에게는 뛰어난 분석 능력이 필요하다." }] },
+  { word:"analytical", exams:["공무원","수능"], pron:"애널리티컬", pos:"adj", level:"C1", meanings:["분석적인","분석의"], syn:["logical","rational","systematic"], ex:[{ s:"Good managers need strong {{}} skills.", f:"analytical", ko:"유능한 관리자에게는 뛰어난 분석 능력이 필요하다." }] },
   { word:"attendee", exams:["공무원"], pron:"어텐디", pos:"n", level:"B2", meanings:["참석자","출석자"], ant:["absentee"], ex:[{ s:"We printed enough copies for every {{}} of the seminar.", f:"attendee", ko:"세미나 참석자 모두에게 돌아갈 만큼 사본을 인쇄했다." }] },
   { word:"adulthood", exams:["공무원"], pron:"어덜트후드", pos:"n", level:"B2", meanings:["성인기","성년"], ant:["adolescence"], ex:[{ s:"Some of them are still in early {{}}.", f:"adulthood", ko:"그들 중 일부는 아직 성인기 초반에 있다." }] },
   { word:"authorize", exams:["공무원"], pron:"오서라이즈", pos:"v", level:"B2", meanings:["허가하다","권한을 주다"], syn:["approve","permit","allow"], ant:["prohibit"], ex:[{ s:"Only the manager can {{}} this payment.", f:"authorize", ko:"관리자만 이 지불을 허가할 수 있다." }] },
@@ -86,6 +86,14 @@ window.VOCAB = [
   { word:"appropriately", exams:["수능"], pron:"어프로프리엇리", pos:"adv", level:"B2", meanings:["적절하게","알맞게"], syn:["properly","suitably","fittingly"], ant:["inappropriately"] },
   { word:"attractive", exams:["수능"], pron:"어트랙티브", pos:"adj", level:"B1", meanings:["매력적인","마음을 끄는"], syn:["appealing","charming","alluring"], ant:["unattractive"], ex:[{ s:"The low price makes the offer very {{}} to buyers.", f:"attractive", ko:"낮은 가격 덕분에 그 제안은 구매자들에게 매우 매력적이다." }] },
   { word:"atom", exams:["수능"], pron:"애텀", pos:"n", level:"B2", meanings:["원자"], ex:[{ s:"Every carbon {{}} has six protons in its center.", f:"atom", ko:"모든 탄소 원자는 중심에 양성자 여섯 개를 가진다." }] },
+  { word:"accessibility", exams:["수능"], pron:"액세서빌리티", pos:"n", level:"C1", meanings:["접근성","이용 편의"], ex:[{ s:"The new ramp improves {{}} for wheelchair users.", f:"accessibility", ko:"새 경사로는 휠체어 이용자의 접근성을 높인다." }] },
+  { word:"affordability", exams:["수능"], pron:"어포더빌리티", pos:"n", level:"C1", meanings:["감당할 수 있는 비용","적정 가격"], ex:[{ s:"Many young families worry about the {{}} of housing in big cities.", f:"affordability", ko:"많은 젊은 가정이 대도시 주거비를 감당할 수 있을지 걱정한다." }] },
+  { word:"allergic", exams:["수능"], pron:"얼러직", pos:"adj", level:"B2", meanings:["알레르기가 있는","알레르기성의"], ex:[{ s:"My brother is {{}} to peanuts, so he never eats them.", f:"allergic", ko:"내 남동생은 땅콩 알레르기가 있어서 절대 먹지 않는다." }] },
+  { word:"anatomical", exams:["수능"], pron:"애너타미컬", pos:"adj", level:"C1", meanings:["해부학적인","해부의"], ex:[{ s:"Medical students study the {{}} structure of the human hand.", f:"anatomical", ko:"의대생들은 사람 손의 해부학적 구조를 공부한다." }] },
+  { word:"appreciably", exams:["수능"], pron:"어프리셔블리", pos:"adv", level:"C1", meanings:["눈에 띄게","상당히"], syn:["considerably","significantly","noticeably"] },
+  { word:"architectural", exams:["수능"], pron:"아키텍처럴", pos:"adj", level:"B2", meanings:["건축의","건축학의"], ex:[{ s:"The old church is famous for its {{}} beauty.", f:"architectural", ko:"그 오래된 교회는 건축미로 유명하다." }] },
+  { word:"artistic", exams:["수능"], pron:"아티스틱", pos:"adj", level:"B2", meanings:["예술적인","예술의"], syn:["creative","aesthetic","imaginative"], ex:[{ s:"She showed great {{}} talent from a young age.", f:"artistic", ko:"그녀는 어릴 때부터 뛰어난 예술적 재능을 보였다." }] },
+  { word:"await", exams:["수능"], pron:"어웨이트", pos:"v", level:"B2", meanings:["기다리다","대기하다"], syn:["anticipate","expect","wait for"], ex:[{ s:"Many broken machines {{}} repair in the basement for months.", f:"await", ko:"고장 난 많은 기계가 몇 달씩 지하실에서 수리를 기다린다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
@@ -1712,7 +1720,6 @@ window.VOCAB = [
       찾으므로 죽은 항목이 되고, 뜻이 두 곳으로 갈라진다. */
 window.GLOSS = {
   "a few":"소수의, 약간의",
-  "accessibility": "접근성, 이용 편의",
   "adore":"숭배하다, 아주 좋아하다",
   "agreeable":"쾌적한, 기분 좋은",
   "agreement":"동의, 합의",
@@ -1833,5 +1840,6 @@ window.GLOSS = {
   "unreliable":"신뢰할 수 없는",
   "unrepentant":"뉘우치지 않는",
   "unsuitable":"부적합한",
+  "wait for": "~을 기다리다",
   "wonderful":"훌륭한, 멋진"
 };

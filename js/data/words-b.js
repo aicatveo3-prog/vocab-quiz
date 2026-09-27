@@ -38,6 +38,7 @@ window.VOCAB_B = [
   { word:"balanced", exams:["수능"], pron:"밸런스드", pos:"adj", level:"B2", meanings:["균형 잡힌","안정된"], syn:["well-rounded","harmonious","stable"], ex:[{ s:"Children need {{}} meals with enough vegetables.", f:"balanced", ko:"아이들에게는 채소가 충분한 균형 잡힌 식사가 필요하다." }] },
   { word:"bodily", exams:["수능"], pron:"바딜리", pos:"adj", level:"C1", meanings:["신체의","육체의"], syn:["physical","corporal","corporeal"], ex:[{ s:"Players act through the virtual {{}} space of the avatar.", f:"bodily", ko:"플레이어는 아바타의 가상 신체 공간을 통해 행동한다." }] },
   { word:"brighten", exams:["수능"], pron:"브라이튼", pos:"v", level:"B2", meanings:["밝게 하다","밝아지다"], syn:["illuminate","light up","cheer up"], ant:["darken"], ex:[{ s:"Her face began to {{}} at the good news.", f:"brighten", ko:"좋은 소식에 그녀의 얼굴이 밝아지기 시작했다." }] },
+  { word:"broadcaster", exams:["수능"], pron:"브로드캐스터", pos:"n", level:"B2", meanings:["방송인","방송사"], ex:[{ s:"The {{}} described every play of the game live on the radio.", f:"broadcaster", ko:"방송인은 경기의 모든 플레이를 라디오로 생중계했다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],

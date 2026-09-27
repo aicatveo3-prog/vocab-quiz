@@ -2291,7 +2291,6 @@ Object.assign(window.GLOSS, {
   "afterword":"후기, 발문",
   "age":"시대, 시기",
   "closing section":"맺는 부분",
-  "contagion":"전염, 감염",
   "corrode":"부식시키다",
   "eat away":"조금씩 먹어 들어가다",
   "evenness":"고름, 균등함",
