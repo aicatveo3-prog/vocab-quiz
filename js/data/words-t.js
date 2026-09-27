@@ -79,6 +79,8 @@ window.VOCAB_T = [
   { word:"token", exams:["수능"], pron:"토컨", pos:"n", level:"B2", meanings:["표시","상징"], ex:[{ s:"This small gift is our {{}} of thanks for your help.", f:"token", ko:"이 작은 선물은 도와주신 데 대한 감사의 표시입니다." }] },
   { word:"troubled", exams:["수능"], pron:"트러블드", pos:"adj", level:"B2", meanings:["근심하는","문제가 많은"], syn:["worried","anxious","distressed"], ex:[{ s:"He looked {{}} after hearing the bad news.", f:"troubled", ko:"그는 나쁜 소식을 듣고 근심스러워 보였다." }] },
   { word:"twist", exams:["수능"], pron:"트위스트", pos:"v", level:"B2", meanings:["비틀다","삐다"], syn:["distort","bend","warp"], ex:[{ s:"Be careful not to {{}} your ankle on the rocks.", f:"twist", ko:"바위에서 발목을 삐지 않도록 조심해라." }] },
+  { word:"totality", exams:["수능"], pron:"토탤러티", pos:"n", level:"C1", meanings:["전체","총체"], ex:[{ s:"We must look at the problem in its {{}}.", f:"totality", ko:"우리는 그 문제를 전체적으로 보아야 한다." }] },
+  { word:"turbine", exams:["수능"], pron:"터빈", pos:"n", level:"B2", meanings:["터빈"], ex:[{ s:"Each wind {{}} makes enough power for 500 homes.", f:"turbine", ko:"풍력 터빈 하나가 500가구에 쓸 전기를 만든다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

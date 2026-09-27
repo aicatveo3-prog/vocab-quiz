@@ -99,6 +99,10 @@ window.VOCAB_U = [
   { word:"unfit", exams:["수능"], pron:"언핏", pos:"adj", level:"B2", meanings:["부적합한","건강하지 않은"], syn:["unsuitable","inappropriate","unsuited"], ant:["fit"], ex:[{ s:"The old house was {{}} for a family with small children.", f:"unfit", ko:"그 낡은 집은 어린아이가 있는 가족에게 적합하지 않았다." }] },
   { word:"unify", exams:["수능"], pron:"유너파이", pos:"v", level:"C1", meanings:["통합하다","통일하다"], syn:["unite","integrate","merge"], ex:[{ s:"The king worked hard to {{}} the divided country.", f:"unify", ko:"왕은 분열된 나라를 통일하려고 애썼다." }] },
   { word:"unsuited", exams:["수능"], pron:"언수티드", pos:"adj", level:"C1", meanings:["적합하지 않은","어울리지 않는"], ex:[{ s:"He was {{}} to office work and soon quit.", f:"unsuited", ko:"그는 사무직이 맞지 않아 곧 그만두었다." }] },
+  { word:"unending", exams:["수능"], pron:"언엔딩", pos:"adj", level:"C1", meanings:["끝없는","그치지 않는"], syn:["endless","never-ending","ceaseless"], ex:[{ s:"The {{}} noise from the construction site gave me a headache.", f:"unending", ko:"공사장에서 끝없이 나는 소음 때문에 머리가 아팠다." }] },
+  { word:"unsatisfactory", exams:["수능"], pron:"언새티스팩터리", pos:"adj", level:"C1", meanings:["만족스럽지 못한","불충분한"], syn:["disappointing","inadequate","unacceptable"], ant:["satisfactory"], ex:[{ s:"The hotel service was {{}}, so we complained to the manager.", f:"unsatisfactory", ko:"호텔 서비스가 만족스럽지 못해서 우리는 매니저에게 항의했다." }] },
+  { word:"upstream", exams:["수능"], pron:"업스트림", pos:"adv", level:"B2", meanings:["상류로","상류에서"], ex:[{ s:"Salmon swim {{}}, against the current, to lay their eggs.", f:"upstream", ko:"연어는 알을 낳으려고 물살을 거슬러 상류로 헤엄친다." }] },
+  { word:"utopian", exams:["수능"], pron:"유토피언", pos:"adj", level:"C1", meanings:["유토피아적인","이상향의"], syn:["idealistic","ideal","visionary"], ex:[{ s:"Many novels describe {{}} worlds where everyone is happy.", f:"utopian", ko:"많은 소설이 모두가 행복한 이상향의 세계를 그린다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -952,6 +956,7 @@ Object.assign(window.GLOSS, {
   "untangle": "엉킨 것을 풀다",
   "usefulness in practice": "실제로 쓸모가 있음",
   "valuing what works": "되는 것을 값지게 보는",
+  "visionary": "선견지명이 있는, 공상적인",
   "want of calm": "차분함이 모자람",
   "water or power supply": "물이나 전기의 공급",
   "weaken from below": "아래에서부터 무르게 하다",

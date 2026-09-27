@@ -57,6 +57,7 @@ window.VOCAB_V = [
   { word:"valuable", exams:["수능"], pron:"밸류어블", pos:"adj", level:"B1", meanings:["귀중한","값비싼"], ex:[{ s:"Don't leave {{}} items in your car.", f:"valuable", ko:"차 안에 귀중품을 두지 마세요." }] },
   { word:"veil", exams:["수능"], pron:"베일", pos:"v", level:"C1", meanings:["가리다","감추다"], syn:["conceal","mask","shroud"], ant:["reveal"], ex:[{ s:"Thick clouds often {{}} the top of the mountain.", f:"veil", ko:"짙은 구름이 산꼭대기를 자주 가린다." }] },
   { word:"valued", exams:["수능"], pron:"밸류드", pos:"adj", level:"C1", meanings:["소중한","존중받는"], syn:["prized","cherished","esteemed"], ex:[{ s:"Every {{}} customer receives a birthday coupon.", f:"valued", ko:"소중한 고객 모두에게 생일 쿠폰을 드립니다." }] },
+  { word:"vain", exams:["수능"], pron:"베인", pos:"adj", level:"B2", meanings:["헛된","허영심 있는"], syn:["futile","useless","fruitless"], ex:[{ s:"All their efforts proved {{}}, and the old barn burned down.", f:"vain", ko:"그들의 모든 노력은 헛되었고, 낡은 헛간은 다 타 버렸다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -671,6 +672,7 @@ Object.assign(window.GLOSS, {
   "foggy": "안개 낀, 흐릿한",
   "for a job": "일자리를 위한",
   "fresh air let in": "들인 맑은 공기",
+  "fruitless": "성과 없는",
   "full of change": "변화가 가득한",
   "full of cheer": "흥이 넘치는",
   "full of life and colour": "생기와 빛깔이 넘치는",

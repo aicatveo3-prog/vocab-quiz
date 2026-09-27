@@ -165,6 +165,7 @@ window.VOCAB_S = [
   { word:"spark", exams:["수능"], pron:"스파크", pos:"v", level:"B2", meanings:["촉발하다","불러일으키다"], syn:["trigger","provoke","ignite"], ex:[{ s:"Good books can {{}} a child's curiosity.", f:"spark", ko:"좋은 책은 아이의 호기심을 불러일으킬 수 있다." }] },
   { word:"strategist", exams:["수능"], pron:"스트래터지스트", pos:"n", level:"C1", meanings:["전략가"], ex:[{ s:"The military {{}} planned every move of the battle.", f:"strategist", ko:"그 군사 전략가는 전투의 모든 움직임을 계획했다." }] },
   { word:"subconsciously", exams:["수능"], pron:"섭칸셔슬리", pos:"adv", level:"C1", meanings:["잠재의식적으로","무의식적으로"] },
+  { word:"socially", exams:["수능"], pron:"소셜리", pos:"adv", level:"C1", meanings:["사회적으로","사교적으로"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

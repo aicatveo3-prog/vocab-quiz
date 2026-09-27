@@ -178,6 +178,11 @@ window.VOCAB_P = [
   { word:"problematic", exams:["수능"], pron:"프라블러매틱", pos:"adj", level:"C1", meanings:["문제가 많은","문제가 있는"], ex:[{ s:"Using the same password for every site is {{}}.", f:"problematic", ko:"모든 사이트에 같은 비밀번호를 쓰는 것은 문제가 있다." }] },
   { word:"proverb", exams:["수능"], pron:"프라버브", pos:"n", level:"B2", meanings:["속담","격언"], syn:["saying","maxim","adage"], ex:[{ s:"An old {{}} says that time is money.", f:"proverb", ko:"시간은 돈이라는 옛 속담이 있다." }] },
   { word:"purely", exams:["수능"], pron:"퓨얼리", pos:"adv", level:"C1", meanings:["순전히","오로지"] },
+  { word:"physically", exams:["수능"], pron:"피지컬리", pos:"adv", level:"B2", meanings:["신체적으로","물리적으로"] },
+  { word:"preconception", exams:["수능"], pron:"프리컨셉션", pos:"n", level:"C1", meanings:["선입견","예단"], syn:["prejudice","bias","assumption"], ex:[{ s:"Try to meet new people without any {{}} about them.", f:"preconception", ko:"새로운 사람을 만날 때는 아무런 선입견 없이 대하려고 해라." }] },
+  { word:"preoccupation", exams:["수능"], pron:"프리아큐페이션", pos:"n", level:"C1", meanings:["몰두","집착"], ex:[{ s:"Her {{}} with her phone worried her parents.", f:"preoccupation", ko:"그녀가 휴대폰에 몰두하자 부모님이 걱정했다." }] },
+  { word:"present-day", exams:["수능"], pron:"프레즌트 데이", pos:"adj", level:"B2", meanings:["현대의","오늘날의"], ex:[{ s:"{{}} Seoul looks very different from the city of the 1950s.", f:"Present-day", ko:"오늘날의 서울은 1950년대의 서울과 무척 다르다." }] },
+  { word:"psychologist", exams:["수능"], pron:"사이칼러지스트", pos:"n", level:"B2", meanings:["심리학자"], ex:[{ s:"The {{}} studied how young children learn to share.", f:"psychologist", ko:"그 심리학자는 어린아이들이 나누는 법을 어떻게 배우는지 연구했다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

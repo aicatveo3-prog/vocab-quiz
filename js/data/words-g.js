@@ -835,7 +835,6 @@ Object.assign(window.GLOSS, {
   "trudge":"터벅터벅 걷다",
   "trusting": "남을 잘 믿는",
   "tumbling":"공중 곡예",
-  "turbine":"터빈",
   "twinkle":"깜박이며 빛나다",
   "unfounded":"사실 근거가 없는",
   "unwarranted":"부당한",

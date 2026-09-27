@@ -129,6 +129,7 @@ window.VOCAB_O = [
   { word:"overflow", exams:["수능"], pron:"오버플로", pos:"v", level:"B2", meanings:["넘치다","범람하다"], ex:[{ s:"The river may {{}} after days of heavy rain.", f:"overflow", ko:"며칠 동안 폭우가 내리면 강이 범람할 수 있다." }] },
   { word:"ownership", exams:["수능"], pron:"오너십", pos:"n", level:"B2", meanings:["소유권","소유"], ex:[{ s:"Home {{}} is a dream for many young couples.", f:"ownership", ko:"내 집 마련은 많은 젊은 부부의 꿈이다." }] },
   { word:"outpace", exams:["수능"], pron:"아웃페이스", pos:"v", level:"C1", meanings:["앞지르다","능가하다"], syn:["outstrip","surpass","overtake"], ex:[{ s:"Demand for clean water may soon {{}} supply.", f:"outpace", ko:"깨끗한 물의 수요가 곧 공급을 앞지를 수도 있다." }] },
+  { word:"oversimplified", exams:["수능"], pron:"오버심플러파이드", pos:"adj", level:"C1", meanings:["지나치게 단순화된"], syn:["simplistic","naive","superficial"], ex:[{ s:"Their explanation of the problem was badly {{}}.", f:"oversimplified", ko:"그 문제에 대한 그들의 설명은 지나치게 단순화되어 있었다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1334,7 +1335,6 @@ Object.assign(window.GLOSS, {
   "plantation of fruit": "과일 농장",
   "point in a direction": "어느 쪽으로 향하게 하다",
   "positive thinking": "긍정으로 생각하기",
-  "preoccupation": "몰두, 사로잡힘",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
   "press down hard": "세게 내리누르다",

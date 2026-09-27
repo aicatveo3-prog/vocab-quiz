@@ -94,6 +94,10 @@ window.VOCAB_R = [
   { word:"recount", exams:["수능"], pron:"리카운트", pos:"v", level:"C1", meanings:["이야기하다","상세히 말하다"], syn:["narrate","relate","describe"], ex:[{ s:"Grandpa loves to {{}} stories from his childhood.", f:"recount", ko:"할아버지는 어린 시절 이야기를 들려주기를 좋아하신다." }] },
   { word:"redistribution", exams:["수능"], pron:"리디스트리뷰션", pos:"n", level:"C1", meanings:["재분배"], ex:[{ s:"The {{}} of wealth is a major political issue.", f:"redistribution", ko:"부의 재분배는 주요한 정치 쟁점이다." }] },
   { word:"relatively", exams:["수능"], pron:"렐러티블리", pos:"adv", level:"B2", meanings:["비교적","상대적으로"] },
+  { word:"religion", exams:["수능"], pron:"릴리전", pos:"n", level:"B1", meanings:["종교","신앙"], ex:[{ s:"Freedom of {{}} is protected by law.", f:"religion", ko:"종교의 자유는 법으로 보호된다." }] },
+  { word:"retrospect", exams:["수능"], pron:"레트러스펙트", pos:"n", level:"C1", meanings:["회고","돌이켜 봄"], ex:[{ s:"In {{}}, I should have studied harder in high school.", f:"retrospect", ko:"돌이켜 보면 고등학교 때 공부를 더 열심히 했어야 했다." }] },
+  { word:"reunite", exams:["수능"], pron:"리유나이트", pos:"v", level:"B2", meanings:["재회하다","다시 결합하다"], ex:[{ s:"The program helps {{}} families separated by war.", f:"reunite", ko:"그 프로그램은 전쟁으로 헤어진 가족의 재회를 돕는다." }] },
+  { word:"roadblock", exams:["수능"], pron:"로드블록", pos:"n", level:"B2", meanings:["장애물","도로 차단물"], syn:["obstacle","barrier","hindrance"], ex:[{ s:"Fear of failure is the biggest {{}} to trying new things.", f:"roadblock", ko:"실패에 대한 두려움은 새로운 일을 시도하는 데 가장 큰 장애물이다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -1900,6 +1904,7 @@ Object.assign(window.GLOSS, {
   "held in esteem": "높이 받들어지는 처지인",
   "help stand on one's own": "제 발로 서게 돕다",
   "high regard": "높이 받듦",
+  "hindrance": "방해, 장애",
   "hiring drive": "사람 뽑기 운동",
   "hold down by force": "힘으로 눌러 두다",
   "hold off from": "~하지 않고 버티다",
