@@ -95,8 +95,11 @@
         (ed.id === currentId ? ' is-on' : '') + (ready ? '' : ' is-soon'));
       card.type = 'button';
       card.appendChild(el('span', 'pick-emoji', ed.emoji));
-      card.appendChild(el('b', null, ed.label));
-      card.appendChild(el('span', null, ready ? n.toLocaleString() + '단어' : '준비중'));
+      var text = el('span', 'pick-text');
+      text.appendChild(el('b', null, ed.label));
+      text.appendChild(el('span', 'pick-desc', ed.desc));
+      card.appendChild(text);
+      card.appendChild(el('span', 'pick-count', ready ? n.toLocaleString() + '단어' : '준비중'));
       if (ready) {
         card.addEventListener('click', function () { chooseEdition(ed.id); });
       } else {
