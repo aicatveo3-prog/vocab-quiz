@@ -144,6 +144,14 @@ window.VOCAB_P = [
   { word:"producer", exams:["수능"], pron:"프러두서", pos:"n", level:"B2", meanings:["생산자","제작자"], ex:[{ s:"Brazil is the world's largest {{}} of coffee.", f:"producer", ko:"브라질은 세계 최대의 커피 생산국이다." }] },
   { word:"progression", exams:["수능"], pron:"프러그레션", pos:"n", level:"C1", meanings:["진행","발전"], ex:[{ s:"The disease follows a slow {{}} over many years.", f:"progression", ko:"그 병은 여러 해에 걸쳐 천천히 진행된다." }] },
   { word:"protection", exams:["수능"], pron:"프러텍션", pos:"n", level:"B1", meanings:["보호","방어"], ex:[{ s:"Sunscreen offers {{}} against harmful rays.", f:"protection", ko:"자외선 차단제는 해로운 광선으로부터 피부를 보호해 준다." }] },
+  { word:"passion", exams:["수능"], pron:"패션", pos:"n", level:"B1", meanings:["열정","격정"], syn:["enthusiasm","zeal","fervor"], ex:[{ s:"After the injury, she found a new {{}} for bike riding.", f:"passion", ko:"부상 이후 그녀는 자전거 타기에서 새로운 열정을 찾았다." }] },
+  { word:"personally", exams:["수능"], pron:"퍼서널리", pos:"adv", level:"B2", meanings:["개인적으로","직접"] },
+  { word:"physicist", exams:["수능"], pron:"피지시스트", pos:"n", level:"B2", meanings:["물리학자"], ex:[{ s:"Albert Einstein was a famous {{}}.", f:"physicist", ko:"알베르트 아인슈타인은 유명한 물리학자였다." }] },
+  { word:"polarize", exams:["수능"], pron:"포울러라이즈", pos:"v", level:"C1", meanings:["양극화하다","대립시키다"], syn:["divide","split","separate"], ex:[{ s:"Issues like this can {{}} a whole nation.", f:"polarize", ko:"이런 문제는 나라 전체를 양극화할 수 있다." }] },
+  { word:"policymaker", exams:["수능"], pron:"팔러시메이커", pos:"n", level:"C1", meanings:["정책 입안자"], ex:[{ s:"Every {{}} should read this report before voting.", f:"policymaker", ko:"모든 정책 입안자는 표결 전에 이 보고서를 읽어야 한다." }] },
+  { word:"predominate", exams:["수능"], pron:"프리다머네이트", pos:"v", level:"C1", meanings:["우세하다","두드러지다"], syn:["prevail","dominate","outnumber"], ex:[{ s:"In this forest, pine trees {{}} over other species.", f:"predominate", ko:"이 숲에서는 소나무가 다른 종보다 우세하다." }] },
+  { word:"prescriptive", exams:["수능"], pron:"프리스크립티브", pos:"adj", level:"C1", meanings:["규범적인","지시하는"], ex:[{ s:"The teacher's {{}} rules left no room for creativity.", f:"prescriptive", ko:"그 교사의 지시적인 규칙에는 창의성이 끼어들 여지가 없었다." }] },
+  { word:"proceed", exams:["수능"], pron:"프러시드", pos:"v", level:"B2", meanings:["진행하다","나아가다"], syn:["continue","advance","progress"], ex:[{ s:"After the break, the meeting will {{}} as planned.", f:"proceed", ko:"휴식 후 회의는 예정대로 진행될 것이다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2676,7 +2684,6 @@ Object.assign(window.GLOSS, {
   "needing action now": "지금 손써야 하는",
   "never late": "늦는 일이 없는",
   "never wearing off": "가시지 않는",
-  "never-ending": "끝날 줄 모르는",
   "no longer owned": "임자가 없어진",
   "non-surgical doctor": "수술을 하지 않는 의사",
   "not able to wait": "기다릴 수 없는",

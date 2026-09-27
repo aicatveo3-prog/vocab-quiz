@@ -72,6 +72,8 @@ window.VOCAB_N = [
   { word:"negotiable", exams:["수능"], pron:"니고시어블", pos:"adj", level:"C1", meanings:["협상 가능한","양도 가능한"], ex:[{ s:"The price is not {{}}, so please don't ask for a discount.", f:"negotiable", ko:"가격은 협상할 수 없으니 할인을 요청하지 마세요." }] },
   { word:"network", exams:["수능"], pron:"네트워크", pos:"n", level:"B1", meanings:["망","연결망"], ex:[{ s:"The city has a large {{}} of bike paths.", f:"network", ko:"그 도시에는 자전거 도로망이 넓게 깔려 있다." }] },
   { word:"narrowly", exams:["수능"], pron:"내로울리", pos:"adv", level:"B2", meanings:["간신히","좁게"] },
+  { word:"negotiation", exams:["수능"], pron:"니고시에이션", pos:"n", level:"B2", meanings:["협상","교섭"], ex:[{ s:"After weeks of {{}}, the two companies signed a deal.", f:"negotiation", ko:"몇 주간의 협상 끝에 두 회사는 계약을 맺었다." }] },
+  { word:"never-ending", exams:["수능"], pron:"네버 엔딩", pos:"adj", level:"B2", meanings:["끝없는","끝날 줄 모르는"], syn:["endless","interminable","perpetual"], ex:[{ s:"Residents were tired of the {{}} arguments about parking.", f:"never-ending", ko:"주민들은 주차를 둘러싼 끝없는 논쟁에 지쳐 있었다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },

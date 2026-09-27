@@ -120,6 +120,8 @@ window.VOCAB_O = [
   { word:"on the spot", exams:["수능"], pron:"온 더 스팟", pos:"phr", level:"B2", meanings:["즉석에서","현장에서"] },
   { word:"originally", exams:["수능"], pron:"어리저널리", pos:"adv", level:"B2", meanings:["원래","처음에는"] },
   { word:"overuse", exams:["수능"], pron:"오버유즈", pos:"v", level:"B2", meanings:["남용하다","지나치게 쓰다"], ex:[{ s:"Teenagers who {{}} their phones at night often sleep badly.", f:"overuse", ko:"밤에 휴대폰을 지나치게 쓰는 십대는 잠을 잘 못 자는 경우가 많다." }] },
+  { word:"overcome", exams:["수능"], pron:"오버컴", pos:"v", level:"B1", meanings:["극복하다","이겨내다"], syn:["conquer","surmount","defeat"], ex:[{ s:"She trained hard to {{}} her fear of water.", f:"overcome", ko:"그녀는 물에 대한 두려움을 극복하려고 열심히 훈련했다." }] },
+  { word:"overtourism", exams:["수능"], pron:"오버투어리즘", pos:"n", level:"C1", meanings:["과잉 관광"], ex:[{ s:"Venice suffers from {{}} every summer.", f:"overtourism", ko:"베네치아는 매년 여름 과잉 관광에 시달린다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1392,6 +1394,7 @@ Object.assign(window.GLOSS, {
   "sudden rush": "갑작스레 몰려나옴",
   "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
+  "surmount": "넘다, 이겨내다",
   "surpass in results": "성과에서 앞서다",
   "surreal": "비현실적인, 꿈같은",
   "survive longer than": "~보다 오래 살아남다",

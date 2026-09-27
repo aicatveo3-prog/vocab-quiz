@@ -3967,7 +3967,6 @@ Object.assign(window.PRON, {
   "needlessly alarmed": "니들리슬리 얼람드",
   "needling": "니들링",
   "negligent": "네글러전트",
-  "negotiation": "니고시에이션",
   "neighboring": "네이버링",
   "nerve fiber": "너브 파이버",
   "nerve-disease-related": "너브 디지즈 릴레이팃",
@@ -3987,7 +3986,6 @@ Object.assign(window.PRON, {
   "never tried before": "네버 트라이드 비포",
   "never turning aside": "네버 터닝 어사이드",
   "never wearing off": "네버 웨어링 오프",
-  "never-ending": "네버 엔딩",
   "new to one": "뉴 투 원",
   "newborn": "뉴본",
   "newcomer": "뉴커머",
@@ -4406,7 +4404,6 @@ Object.assign(window.PRON, {
   "over and over": "오버 앤드 오버",
   "over time": "오버 타임",
   "over-organize": "오버 오거나이즈",
-  "overcome": "오버컴",
   "overcome by strength": "오버컴 바이 스트렝쓰",
   "overflow": "오버플로",
   "overflow from rain": "오버플로 프롬 레인",
@@ -4554,7 +4551,6 @@ Object.assign(window.PRON, {
   "personal": "퍼서널",
   "personal history": "퍼서널 히스토리",
   "personal take": "퍼서널 테이크",
-  "personally": "퍼서널리",
   "pertain": "퍼테인",
   "pertain to": "퍼테인 투",
   "peruse": "퍼루즈"
@@ -4756,7 +4752,6 @@ Object.assign(window.PRON, {
   "prize for good work": "프라이즈 포 굿 워크",
   "probing": "프로빙",
   "procedural": "프러시저럴",
-  "proceed": "프러시드",
   "procure": "프러큐어",
   "procurement": "프러큐어먼트",
   "prod with a finger": "프라드 위드 어 핑거",
@@ -5054,7 +5049,6 @@ Object.assign(window.PRON, {
   "regrettably": "리그레터블리",
   "regular beat": "레귤러 비트",
   "regular customer": "레귤러 커스터머",
-  "regularity": "레귤래러티",
   "reject a ruling": "리젝트 어 룰링",
   "rejected person": "리젝팃 퍼슨",
   "relate": "릴레이트",
@@ -5602,7 +5596,6 @@ Object.assign(window.PRON, {
   "sign of illness": "사인 오브 일니스",
   "sign of wealth": "사인 오브 웰스",
   "sign of what follows": "사인 오브 왓 팔로즈",
-  "signal": "시그널",
   "signed agreement": "사인드 어그리먼트",
   "signed appeal": "사인드 어필",
   "signing up": "사이닝 업",
@@ -5610,7 +5603,6 @@ Object.assign(window.PRON, {
   "silent": "사일런트",
   "silly beyond words": "실리 비욘드 워즈",
   "silvered glass": "실버드 글래스",
-  "similar": "시밀러",
   "similarly": "시멀럴리",
   "simple": "심플",
   "simple to grasp": "심플 투 그래스프",
@@ -7782,7 +7774,6 @@ Object.assign(window.PRON, {
   "undivided": "언디바이디드",
 
   /* GLOSS 에만 있고 발음이 없던 것 — 5차의 jeopardize 와 같은 경우다 */
-  "passion": "패션",
 
   /* ── 7차: envision ~ erratic (33개) ─────────────────
      corrode 는 기존 corrosive("커로시브")·corrosion("커로전")에 맞췄고,
@@ -9264,7 +9255,6 @@ Object.assign(window.PRON, {
   "self-reliant": "셀프 릴라이언트",
   "self-sufficiency": "셀프 서피션시",
   "self-worth": "셀프 워스",
-  "seller": "셀러",
   "senior": "시니어",
   "sequentially": "시퀀셜리",
   "series": "시리즈",
@@ -9389,6 +9379,7 @@ Object.assign(window.PRON, {
 /* ── 수능 단어에서 새로 쓰인 선택지의 발음 ────────── */
 Object.assign(window.PRON, {
   "accumulated": "어큐뮬레이티드",
+  "alike": "얼라이크",
   "allegiance": "얼리전스",
   "always": "올웨이즈",
   "basically": "베이시컬리",
@@ -9450,6 +9441,7 @@ Object.assign(window.PRON, {
   "sponsorship": "스판서십",
   "succinct": "석싱크트",
   "suitably": "수터블리",
+  "surmount": "서마운트",
   "synchronization": "싱크러나이제이션",
   "truthfulness": "트루스풀니스",
   "typically": "티피컬리",

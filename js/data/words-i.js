@@ -2151,7 +2151,6 @@ Object.assign(window.GLOSS, {
   "periodic": "주기적인",
   "permissive": "제약이 느슨한",
   "person-to-person": "사람과 사람 사이의",
-  "personally": "개인적으로, 직접",
   "pest": "해충",
   "pique": "돋우다, 자극하다",
   "poorly": "형편없이",

@@ -133,6 +133,9 @@ window.VOCAB_S = [
   { word:"statement", exams:["수능"], pron:"스테이트먼트", pos:"n", level:"B1", meanings:["성명","진술"], ex:[{ s:"The minister's official {{}} was read on the evening news.", f:"statement", ko:"장관의 공식 성명이 저녁 뉴스에서 낭독되었다." }] },
   { word:"strong", exams:["수능"], pron:"스트롱", pos:"adj", level:"B1", meanings:["강한","튼튼한"], syn:["powerful","sturdy","robust"], ant:["weak","feeble"], ex:[{ s:"The wind was so {{}} that it knocked down several trees.", f:"strong", ko:"바람이 너무 강해서 나무 몇 그루가 쓰러졌다." }] },
   { word:"symbolically", exams:["수능"], pron:"심발리컬리", pos:"adv", level:"C1", meanings:["상징적으로"] },
+  { word:"seller", exams:["수능"], pron:"셀러", pos:"n", level:"B1", meanings:["판매자","파는 사람"], syn:["vendor","merchant","retailer","dealer"], ant:["buyer"], ex:[{ s:"The {{}} lowered the price when I asked politely.", f:"seller", ko:"내가 정중히 부탁하자 판매자가 가격을 낮춰 주었다." }] },
+  { word:"signal", exams:["수능"], pron:"시그널", pos:"n", level:"B1", meanings:["신호","징후"], ex:[{ s:"The red light is the {{}} for cars to stop.", f:"signal", ko:"빨간불은 차가 멈추라는 신호다." }] },
+  { word:"similar", exams:["수능"], pron:"시밀러", pos:"adj", level:"B1", meanings:["비슷한","유사한"], syn:["comparable","analogous","alike"], ant:["different","dissimilar"], ex:[{ s:"My sister and I have {{}} tastes in music.", f:"similar", ko:"언니와 나는 음악 취향이 비슷하다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -2783,6 +2786,7 @@ Object.assign(window.GLOSS, {
   "add salt and spice": "소금과 향신료를 넣다",
   "afraid": "두려워하는",
   "agree with a view": "어떤 견해에 손을 들다",
+  "alike": "서로 같은",
   "all skin and bone": "살가죽과 뼈뿐인",
   "all the better for it": "그 덕에 더 나은",
   "all tickets gone": "표가 다 나간",

@@ -2188,7 +2188,6 @@ Object.assign(window.GLOSS, {
   "personal":"개인적인",
   "politely": "예의 바르게",
   "pricey": "값이 비싼",
-  "proceed":"진행하다, 계속하다",
   "provincial":"지방의, 편협한",
   "public":"공개된, 공공의",
   "purify":"정화하다",
