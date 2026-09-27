@@ -72,7 +72,7 @@ window.VOCAB_R = [
   { word:"research", exams:["수능"], pron:"리서치", pos:"n", level:"B1", meanings:["연구","조사"], ex:[{ s:"Scientists are doing {{}} on new cancer treatments.", f:"research", ko:"과학자들은 새로운 암 치료법을 연구하고 있다." }] },
   { word:"reservation", exams:["수능"], pron:"레저베이션", pos:"n", level:"B1", meanings:["예약","의구심"], ex:[{ s:"Please call the restaurant to confirm our {{}} for Friday.", f:"reservation", ko:"식당에 전화해서 금요일 예약을 확인해 주세요." }] },
   { word:"resolution", exams:["수능"], pron:"레절루션", pos:"n", level:"B2", meanings:["해결","결심"], syn:["solution","settlement","determination"], ex:[{ s:"The two sides finally reached a peaceful {{}}.", f:"resolution", ko:"양측은 마침내 평화적인 해결에 이르렀다." }] },
-  { word:"revolutionize", exams:["수능"], pron:"레벌루셔나이즈", pos:"v", level:"C1", meanings:["혁명을 일으키다","완전히 바꾸다"], ex:[{ s:"The steam engine helped {{}} an entire industry.", f:"revolutionize", ko:"증기 기관은 산업 전체에 혁명을 일으키는 데 한몫했다." }] },
+  { word:"revolutionize", exams:["수능"], pron:"레벌루셔나이즈", pos:"v", level:"C1", meanings:["혁명을 일으키다","완전히 바꾸다"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
