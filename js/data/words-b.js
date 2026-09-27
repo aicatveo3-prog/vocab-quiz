@@ -42,6 +42,7 @@ window.VOCAB_B = [
   { word:"belief", exams:["수능"], pron:"빌리프", pos:"n", level:"B1", meanings:["믿음","신념"], ex:[{ s:"Her strong {{}} in hard work helped her succeed.", f:"belief", ko:"노력에 대한 그녀의 굳은 믿음이 성공을 도왔다." }] },
   { word:"buyer", exams:["수능"], pron:"바이어", pos:"n", level:"B1", meanings:["구매자","바이어"], syn:["purchaser","customer","consumer"], ant:["seller"], ex:[{ s:"The {{}} and the seller finally agreed on a fair price.", f:"buyer", ko:"구매자와 판매자는 마침내 적정한 가격에 합의했다." }] },
   { word:"blindness", exams:["수능"], pron:"블라인드니스", pos:"n", level:"B2", meanings:["실명","맹목"], ex:[{ s:"Red-green color {{}} is more common in men than in women.", f:"blindness", ko:"적록 색맹은 여성보다 남성에게 더 흔하다." }] },
+  { word:"biosphere", exams:["수능"], pron:"바이오스피어", pos:"n", level:"C1", meanings:["생물권"] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],

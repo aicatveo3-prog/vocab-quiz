@@ -823,6 +823,11 @@ window.VOCAB_E = [
   { word:"excellence", exams:["수능"], pron:"엑설런스", pos:"n", level:"B2", meanings:["우수성","탁월함"], ex:[{ s:"The school is known for its {{}} in science education.", f:"excellence", ko:"그 학교는 과학 교육이 우수하기로 유명하다." }] },
   { word:"expend", exams:["수능"], pron:"익스펜드", pos:"v", level:"C1", meanings:["소비하다","쓰다"], ex:[{ s:"Birds {{}} a lot of energy during long flights.", f:"expend", ko:"새들은 장거리 비행 중에 많은 에너지를 소비한다." }] },
   { word:"explanation", exams:["수능"], pron:"익스플러네이션", pos:"n", level:"B1", meanings:["설명","해명"], ex:[{ s:"The teacher gave a clear {{}} of the new rule.", f:"explanation", ko:"선생님은 새 규칙을 명확하게 설명해 주었다." }] },
+  { word:"elimination", exams:["수능"], pron:"일리머네이션", pos:"n", level:"C1", meanings:["제거","탈락"], ex:[{ s:"The {{}} of waste can save the company money.", f:"elimination", ko:"낭비를 없애면 회사는 돈을 아낄 수 있다." }] },
+  { word:"employment", exams:["수능"], pron:"임플로이먼트", pos:"n", level:"B2", meanings:["고용","취업"], ex:[{ s:"The new factory will provide {{}} for 500 people.", f:"employment", ko:"새 공장은 500명을 고용할 것이다." }] },
+  { word:"enterprise", exams:["수능"], pron:"엔터프라이즈", pos:"n", level:"B2", meanings:["기업","사업"], ex:[{ s:"The government encourages free {{}} and fair competition.", f:"enterprise", ko:"정부는 자유 기업 활동과 공정한 경쟁을 장려한다." }] },
+  { word:"entirely", exams:["수능"], pron:"인타이어리", pos:"adv", level:"B2", meanings:["완전히","전적으로"], syn:["completely","wholly","totally"], ant:["partly"] },
+  { word:"essence", exams:["수능"], pron:"에센스", pos:"n", level:"C1", meanings:["본질","정수"], ex:[{ s:"Honesty is the {{}} of a true friendship.", f:"essence", ko:"정직은 진정한 우정의 본질이다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2113,7 +2118,6 @@ Object.assign(window.GLOSS, {
   "boss": "상사, 사장",
   "classless": "계급 없는",
   "cost-effective":"비용 대비 효과가 좋은",
-  "democratic": "민주적인",
   "detonate": "폭발시키다, 터뜨리다",
   "doorway": "출입구",
   "eatable":"먹을 수 있는",
@@ -2416,7 +2420,6 @@ Object.assign(window.GLOSS, {
   /* ── 11차: exhilarating ~ explicit (38개) ───────────────── */
   "actual fact":"실제 사실",
   "admonish":"타이르다, 훈계하다",
-  "anticipation":"기대감",
   "be present":"있다, 존재하다",
   "be real":"실재하다",
   "being":"존재하는 것",

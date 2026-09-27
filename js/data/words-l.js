@@ -748,7 +748,6 @@ Object.assign(window.GLOSS, {
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
   "allegiance": "충성 서약, 충절",
-  "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
   "answerable": "책임을 져야 하는",
   "appendage": "몸에 붙은 부분",

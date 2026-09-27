@@ -161,6 +161,9 @@ window.VOCAB_D = [
   { word:"disclosure", exams:["수능"], pron:"디스클로저", pos:"n", level:"C1", meanings:["공개","폭로"], ex:[{ s:"The law requires full {{}} of product safety information.", f:"disclosure", ko:"그 법은 제품 안전 정보를 완전히 공개하도록 요구한다." }] },
   { word:"dismissal", exams:["수능"], pron:"디스미설", pos:"n", level:"C1", meanings:["해고","묵살"], ex:[{ s:"His sudden {{}} from the company surprised everyone.", f:"dismissal", ko:"그가 갑자기 회사에서 해고되자 모두가 놀랐다." }] },
   { word:"district", exams:["수능"], pron:"디스트릭트", pos:"n", level:"B2", meanings:["지역","행정 구역"], ex:[{ s:"They live in a quiet residential {{}} near the park.", f:"district", ko:"그들은 공원 근처의 조용한 주택 지구에 산다." }] },
+  { word:"democratic", exams:["수능"], pron:"데머크래틱", pos:"adj", level:"B2", meanings:["민주주의의","민주적인"], ex:[{ s:"Citizens choose their leaders in free and {{}} elections.", f:"democratic", ko:"시민들은 자유롭고 민주적인 선거로 지도자를 뽑는다." }] },
+  { word:"deserted", exams:["수능"], pron:"디저티드", pos:"adj", level:"B2", meanings:["인적이 없는","버려진"], syn:["empty","abandoned","desolate"], ex:[{ s:"At midnight, the streets were completely {{}}.", f:"deserted", ko:"자정이 되자 거리에는 인적이 완전히 끊겼다." }] },
+  { word:"design", exams:["수능"], pron:"디자인", pos:"v", level:"B1", meanings:["설계하다","고안하다"], ex:[{ s:"Engineers {{}} bridges to survive strong earthquakes.", f:"design", ko:"기술자들은 강한 지진에도 견디도록 다리를 설계한다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1541,6 +1544,7 @@ window.VOCAB_D = [
    ⚠️ 재대입(=)이 아니라 Object.assign 으로 합쳐야 A·B·C 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
   /* ── 1차 (damp ~ deck) 몫 66개 ───────────────── */
+  "abandoned": "버려진, 버림받은",
   "activist": "활동가, 운동가",
   "anguished": "괴로워하는, 고뇌에 찬",
   "aridity": "건조함, 메마름",
@@ -1750,7 +1754,6 @@ Object.assign(window.GLOSS, {
   "cleaning agent":"세정제",
   "cleanser":"세정제, 클렌저",
   "decide":"결정하다, 결심하다",
-  "deserted":"인적이 없는, 버려진",
   "disconsolate":"슬픔에 잠긴, 위로할 수 없는",
   "disincentive":"억제 요인, 방해 요소",
   "drop":"떨어지다; 하락",

@@ -1963,7 +1963,6 @@ Object.assign(window.GLOSS, {
   "endlessness": "끝없음",
   "enhancement": "향상, 강화",
   "enlightening": "깨우침을 주는",
-  "enterprise": "진취성, 사업",
   "entrench": "확고히 자리 잡게 하다",
   "episode": "일화",
   "epitaph": "묘비명",

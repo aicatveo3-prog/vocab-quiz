@@ -733,7 +733,6 @@ Object.assign(window.GLOSS, {
   "engineered":"인위적으로 조작된",
   "epicure":"식도락가",
   "escape blame":"책임을 면하다",
-  "essence":"본질, 요체",
   "exalt":"칭송하다, 높이다",
   "extol":"극찬하다",
   "exude":"뿜어내다",
