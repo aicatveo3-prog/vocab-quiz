@@ -524,7 +524,7 @@ window.VOCAB_L = [
   /* syn 을 비워 두었다. I 세트 illiteracy 와 같은 사정이다 — '글을 읽고 쓰는 능력' 을
      바꿔 쓸 낱말이 수능 수준 영어에 셋이 없다. 억지로 채우면 사전에 없는 말을
      정답으로 가르치게 된다. */
-  { word:"literacy", pron:"리터러시", pos:"n", level:"C1", meanings:["글을 읽고 쓰는 능력"],
+  { word:"literacy", exams:["수능"], pron:"리터러시", pos:"n", level:"C1", meanings:["글을 읽고 쓰는 능력"],
     ex:[{ s:"Adult {{}} programmes have expanded rapidly.", f:"literacy", ko:"성인 문해 프로그램이 빠르게 확대되었다." }] },
 
   /* 승격 ① — GLOSS '글자 그대로의' 를 첫 자리에 지켰다. figurative(ant) 가 참조한다.

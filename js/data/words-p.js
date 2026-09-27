@@ -96,7 +96,7 @@ window.VOCAB_P = [
   { word:"plaque", exams:["공무원"], pron:"플라크", pos:"n", level:"C1", meanings:["명판","장식판"], ex:[{ s:"A small {{}} was carved from ivory.", f:"plaque", ko:"작은 명판 하나가 상아로 조각되었다." }] },
   { word:"platform", exams:["공무원","수능"], pron:"플랫폼", pos:"n", level:"B1", meanings:["플랫폼","연단"], syn:["stage","podium","dais"], ex:[{ s:"The {{}} had over a million agents signed up.", f:"platform", ko:"그 플랫폼에는 백만 개가 넘는 에이전트가 가입되어 있었다." }] },
   { word:"prism", exams:["공무원"], pron:"프리즘", pos:"n", level:"C1", meanings:["프리즘"], ex:[{ s:"Movies can be used as a {{}} to understand the world.", f:"prism", ko:"영화는 세상을 이해하는 프리즘으로 쓰일 수 있다." }] },
-  { word:"publicly", exams:["공무원"], pron:"퍼블리클리", pos:"adv", level:"B2", meanings:["공개적으로"], syn:["openly","overtly","officially"], ant:["privately"], ex:[{ s:"He refused to discuss the matter {{}}.", f:"publicly", ko:"그는 그 문제를 공개적으로 논의하기를 거부했다." }] },
+  { word:"publicly", exams:["공무원","수능"], pron:"퍼블리클리", pos:"adv", level:"B2", meanings:["공개적으로"], syn:["openly","overtly","officially"], ant:["privately"], ex:[{ s:"He refused to discuss the matter {{}}.", f:"publicly", ko:"그는 그 문제를 공개적으로 논의하기를 거부했다." }] },
   { word:"period", exams:["공무원","수능"], pron:"피리어드", pos:"n", level:"B1", meanings:["기간","시대"], syn:["era","age","duration"], ex:[{ s:"The Middle Ages was a long {{}} of change in Europe.", f:"period", ko:"중세는 유럽에서 오랜 변화의 시대였다." }] },
   { word:"periphery", exams:["공무원"], pron:"퍼리퍼리", pos:"n", level:"C2", meanings:["주변부","변두리"], syn:["edge","fringe","margin"], ant:["center","core"], ex:[{ s:"The region was on the {{}} of ancient civilization.", f:"periphery", ko:"그 지역은 고대 문명의 주변부에 있었다." }], gov:{ prep:["of"], usage:"on the periphery of ~ : ~의 주변부에" } },
   { word:"practice", exams:["공무원","수능"], pron:"프랙티스", pos:"n", level:"B1", meanings:["관행","연습"], syn:["custom","habit","routine"], ex:[{ s:"Conscious unbossing is the {{}} of avoiding management roles.", f:"practice", ko:"의식적 언보싱은 관리직을 피하는 관행이다." }] },
@@ -205,7 +205,7 @@ window.VOCAB_P = [
     syn:["ashen","pallid","drained of color"], ant:["ruddy"],
     ex:[{ s:"She looked {{}} after the long flight.", f:"pale", ko:"그녀는 긴 비행 뒤에 창백해 보였다." }] },
 
-  { word:"palm", pron:"팜", pos:"n", level:"B1", meanings:["손바닥"],
+  { word:"palm", exams:["수능"], pron:"팜", pos:"n", level:"B1", meanings:["손바닥"],
     syn:["inner hand","flat of the hand","hollow of the hand"],
     ex:[{ s:"He held the coin in his {{}}.", f:"palm", ko:"그는 동전을 손바닥에 쥐었다." }] },
 
@@ -958,7 +958,7 @@ window.VOCAB_P = [
   { word:"play a role in", exams:["수능"], pron:"플레이 어 롤 인", pos:"phr", level:"B1", meanings:["~에서 역할을 하다"],
     syn:["have a hand in","help shape","contribute to"] },
 
-  { word:"playful", pron:"플레이풀", pos:"adj", level:"B1", meanings:["놀기 좋아하는","장난기 많은"],
+  { word:"playful", exams:["수능"], pron:"플레이풀", pos:"adj", level:"B1", meanings:["놀기 좋아하는","장난기 많은"],
     syn:["full of fun","frolicsome","given to play"], ant:["solemn"],
     ex:[{ s:"The puppy is {{}} all day.", f:"playful", ko:"그 강아지는 온종일 놀기 좋아한다." }] },
 
@@ -1175,7 +1175,7 @@ window.VOCAB_P = [
 
   /* 승격 85 — 사전 표현과 글자까지 같다(depict, D · describe, D).
      원본의 '묘사하다' 한 갈래보다 사전 쪽이 갈래가 둘이어서 낫다. */
-  { word:"portray", pron:"포트레이", pos:"v", level:"B2", meanings:["묘사하다","그리다"],
+  { word:"portray", exams:["수능"], pron:"포트레이", pos:"v", level:"B2", meanings:["묘사하다","그리다"],
     syn:["depict","represent in words","paint a picture of"],
     ex:[{ s:"The novel tries to {{}} village life.", f:"portray", ko:"그 소설은 마을 삶을 묘사하려 한다." }] },
 
@@ -1744,7 +1744,7 @@ window.VOCAB_P = [
     ex:[{ s:"He refused on {{}}.", f:"principle", ko:"그는 원칙에 따라 거절했다." }] },
 
   /* 첫 뜻 '앞의' 는 챕터 13 previous 와 글자가 같아 서로 오답에서 빠진다. */
-  { word:"prior", pron:"프라이어", pos:"adj", level:"B2", meanings:["앞의","사전의"],
+  { word:"prior", exams:["수능"], pron:"프라이어", pos:"adj", level:"B2", meanings:["앞의","사전의"],
     syn:["earlier than this","coming ahead in time","done beforehand"],
     ex:[{ s:"No {{}} notice was given.", f:"prior", ko:"사전의 통보는 없었다." }] },
 
@@ -1818,7 +1818,7 @@ window.VOCAB_P = [
   /* 승격 139 — ★ 원본이 production 과 뜻을 맞바꿔 적어 둔 자리다. 원본은
      '생산(수단)' 이었는데 그것은 production 쪽 뜻이다. product 는 '만들어진 것' 이다.
      사전값이 옳은 쪽이어서 글자까지 지켰다 (commodity·creation, C — 두 곳 보존). */
-  { word:"product", pron:"프라덕트", pos:"n", level:"B1", meanings:["제품","산물"],
+  { word:"product", exams:["수능"], pron:"프라덕트", pos:"n", level:"B1", meanings:["제품","산물"],
     syn:["goods","thing made for sale","what comes out of work"],
     ex:[{ s:"The new {{}} sells well.", f:"product", ko:"그 새 제품은 잘 팔린다." }] },
 

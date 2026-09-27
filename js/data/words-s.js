@@ -65,7 +65,7 @@ window.VOCAB_S = [
   { word:"specialist", exams:["공무원","수능"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가","전문의"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
   { word:"speculation", exams:["공무원"], pron:"스페큘레이션", pos:"n", level:"C1", meanings:["추측","짐작"], syn:["conjecture","guesswork","supposition"], ant:["fact"], ex:[{ s:"The report was based on {{}} rather than evidence.", f:"speculation", ko:"그 보고서는 증거보다 추측에 근거했다." }] },
   { word:"stomach", exams:["공무원"], pron:"스터먹", pos:"n", level:"B1", meanings:["위","배"], syn:["belly","abdomen","tummy"], ex:[{ s:"It is hard to focus on an empty {{}}.", f:"stomach", ko:"빈속으로는 집중하기 어렵다." }] },
-  { word:"strength", exams:["공무원"], pron:"스트렝쓰", pos:"n", level:"B1", meanings:["힘","강점"], syn:["power","force","asset"], ant:["weakness"], ex:[{ s:"Each system has its own {{}} and weaknesses.", f:"strengths", ko:"각 체계에는 저마다의 강점과 약점이 있다." }] },
+  { word:"strength", exams:["공무원","수능"], pron:"스트렝쓰", pos:"n", level:"B1", meanings:["힘","강점"], syn:["power","force","asset"], ant:["weakness"], ex:[{ s:"Each system has its own {{}} and weaknesses.", f:"strengths", ko:"각 체계에는 저마다의 강점과 약점이 있다." }] },
   { word:"succession", exams:["공무원"], pron:"석세션", pos:"n", level:"C1", meanings:["연속","계승"], syn:["sequence","series","progression"], ex:[{ s:"Effective {{}} planning captures departing knowledge.", f:"succession", ko:"효과적인 계승 계획은 떠나는 사람의 지식을 붙잡아 둔다." }] },
   { word:"suggest", exams:["공무원","수능"], pron:"서제스트", pos:"v", level:"B1", meanings:["제안하다","암시하다"], syn:["propose","recommend","imply"], ex:[{ s:"I {{}} that you discuss this matter discreetly.", f:"suggest", ko:"이 문제를 신중하게 논의하시길 제안합니다." }] },
   { word:"summarize", exams:["공무원"], pron:"서머라이즈", pos:"v", level:"B2", meanings:["요약하다"], syn:["sum up","recap","condense"], ex:[{ s:"The bot can read and {{}} emails.", f:"summarize", ko:"그 봇은 이메일을 읽고 요약할 수 있다." }] },
@@ -672,7 +672,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊲ — ★ 원본 '감동, 대사건' 은 뜻이 어긋난다. 참조 marvel(M) 과 맞는
      사전값 '큰 화제' 를 지켰다 — 그 한 곳의 화면은 바뀌지 않는다. */
-  { word:"sensation", exams:["공무원"], pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제","감각"],
+  { word:"sensation", exams:["공무원","수능"], pron:"센세이션", pos:"n", level:"B2", meanings:["큰 화제","감각"],
     syn:["marvel","talk of the town","thing everyone speaks of"],
     ex:[{ s:"Her first novel became a {{}}.", f:"sensation", ko:"그녀의 첫 소설은 큰 화제가 되었다." }] },
 
@@ -698,7 +698,7 @@ window.VOCAB_S = [
     syn:["quick to feel","easily affected","responsive to touch"], ant:["numb"],
     ex:[{ s:"His skin is very {{}} to the sun.", f:"sensitive", ko:"그의 피부는 햇볕에 아주 예민하다." }] },
 
-  { word:"sensory", pron:"센서리", pos:"adj", level:"C1", meanings:["감각의"],
+  { word:"sensory", exams:["수능"], pron:"센서리", pos:"adj", level:"C1", meanings:["감각의"],
     syn:["of the senses","to do with feeling","carried by nerves"],
     ex:[{ s:"The test measures {{}} response.", f:"sensory", ko:"그 검사는 감각의 반응을 잰다." }] },
 
@@ -883,7 +883,7 @@ window.VOCAB_S = [
 
   /* 승격 56 — 사전 글자 유지. 참조 abruptly(A)·dramatically(D) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"sharply", pron:"샤플리", pos:"adv", level:"B2", meanings:["급격히","날카롭게"],
+  { word:"sharply", exams:["수능"], pron:"샤플리", pos:"adv", level:"B2", meanings:["급격히","날카롭게"],
     syn:["abruptly","dramatically","with a keen edge"],
     ex:[{ s:"Prices rose {{}} last month.", f:"sharply", ko:"지난달 값이 급격히 올랐다." }] },
 
@@ -1087,7 +1087,7 @@ window.VOCAB_S = [
     ex:[{ s:"The hall offers {{}} translation.", f:"simultaneous", ko:"그 회관은 동시 통역을 제공한다." }] },
 
   /* 승격 74 — 사전 단일값 유지. 참조는 없다. 위 simultaneous 와 품사로 갈린다. */
-  { word:"simultaneously", exams:["공무원"], pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
+  { word:"simultaneously", exams:["공무원","수능"], pron:"사이멀테이니어슬리", pos:"adv", level:"C1", meanings:["동시에"],
     syn:["at one and the same time","together in time","in the same moment"],
     ex:[{ s:"Both lamps went out {{}}.", f:"simultaneously", ko:"두 등이 동시에 꺼졌다." }] },
 
@@ -1115,7 +1115,7 @@ window.VOCAB_S = [
 
   /* 승격 75 — 사전 글자 유지. 참조 earnest(E)·heartfelt(H)·hypocritical(H)
      세 곳의 화면은 바뀌지 않는다. */
-  { word:"sincere", pron:"신시어", pos:"adj", level:"B1", meanings:["진심의","진실한"],
+  { word:"sincere", exams:["수능"], pron:"신시어", pos:"adj", level:"B1", meanings:["진심의","진실한"],
     syn:["earnest","heartfelt","meant truly"], ant:["hypocritical"],
     ex:[{ s:"She gave a {{}} apology.", f:"sincere", ko:"그녀는 진심의 사과를 했다." }] },
 
@@ -1377,7 +1377,7 @@ window.VOCAB_S = [
 
   /* 승격 99 — 사전 단일값 유지. 참조 exclusively(E) 의 화면은 바뀌지 않는다.
      위 sole(형용사) 과 품사로 갈린다. */
-  { word:"solely", pron:"소울리", pos:"adv", level:"B2", meanings:["단독으로"],
+  { word:"solely", exams:["수능"], pron:"소울리", pos:"adv", level:"B2", meanings:["단독으로"],
     syn:["exclusively","on one's own","by oneself alone"],
     ex:[{ s:"The decision rests {{}} with her.", f:"solely", ko:"그 결정은 단독으로 그녀에게 달려 있다." }] },
 
@@ -1774,7 +1774,7 @@ window.VOCAB_S = [
     ex:[{ s:"The bridge gained {{}} from the new pillar.", f:"stability", ko:"그 다리는 새 기둥으로 안정성을 얻었다." }] },
 
   /* 원본의 '견고하게 하다' 는 버렸다 — 같은 말이다. */
-  { word:"stabilize", pron:"스테이벌라이즈", pos:"v", level:"B2", meanings:["안정시키다"],
+  { word:"stabilize", exams:["수능"], pron:"스테이벌라이즈", pos:"v", level:"B2", meanings:["안정시키다"],
     syn:["make steady","hold firm","keep from shifting"],
     ex:[{ s:"They worked to {{}} the wall.", f:"stabilize", ko:"그들은 그 벽을 안정시키려 애썼다." }] },
 
@@ -2578,7 +2578,7 @@ window.VOCAB_S = [
 
   /* 승격 217 — 사전 첫 갈래만 남겼다. 동사 쪽을 쓰던 come into sight(C) 의 그
      자리를 'rise into view' 로 갈았다. 다른 참조 deck(D) 은 명사라 맞는다. */
-  { word:"surface", exams:["공무원"], pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
+  { word:"surface", exams:["공무원","수능"], pron:"서피스", pos:"n", level:"B1", meanings:["표면"],
     syn:["outer face of a thing","top layer","outside skin"],
     ex:[{ s:"Dust settled on every {{}}.", f:"surface", ko:"먼지가 모든 표면에 내려앉았다." }] },
 

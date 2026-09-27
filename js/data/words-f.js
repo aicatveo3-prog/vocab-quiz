@@ -844,7 +844,7 @@ window.VOCAB_F = [
     syn:["numerical value","statistic","amount"],
     ex:[{ s:"The final {{}} was higher than anyone had expected.", f:"figure", ko:"최종 수치는 누구도 예상하지 못한 만큼 높았다." }] },
 
-  { word:"figure out", pron:"피거 아웃", pos:"phr", level:"B1", meanings:["이해하다","생각해 내다"],
+  { word:"figure out", exams:["수능"], pron:"피거 아웃", pos:"phr", level:"B1", meanings:["이해하다","생각해 내다"],
     syn:["work out","make sense of","puzzle out"] },
 
   { word:"fill", pron:"필", pos:"v", level:"B1", meanings:["채우다","메우다"],
@@ -1421,7 +1421,7 @@ window.VOCAB_F = [
      있다. 기존 사전 뜻도 '연료; 부추기다' 로 두 갈래였고 참조하는 표제어가 없어
      자유롭게 정할 수 있었다. 두 갈래 모두 수능에 나오므로 함께 담았다
      (2차 fare·5차 firm 과 같은 처리다). */
-  { word:"fuel", exams:["공무원"], pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
+  { word:"fuel", exams:["공무원","수능"], pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
     syn:["gasoline","combustible material","power source"],
     ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
 

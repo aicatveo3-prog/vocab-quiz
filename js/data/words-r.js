@@ -27,11 +27,11 @@ window.VOCAB_R = [
   { word:"rotate", exams:["공무원"], pron:"로테이트", pos:"v", level:"B2", meanings:["회전시키다","교대하다"], syn:["revolve","turn","alternate"], ex:[{ s:"Arrange toys in baskets and {{}} them occasionally.", f:"rotate", ko:"장난감을 바구니에 넣고 가끔씩 교체해 주어라." }] },
   { word:"rudimentary", exams:["공무원"], pron:"루디멘터리", pos:"adj", level:"C2", meanings:["기초적인","초보적인"], syn:["basic","elementary","primitive"], ant:["advanced"], ex:[{ s:"Primates acquire only a {{}} communicative system.", f:"rudimentary", ko:"영장류는 초보적인 의사소통 체계만 습득한다." }] },
   { word:"retailer", exams:["공무원"], pron:"리테일러", pos:"n", level:"B2", meanings:["소매업체","소매상"], syn:["seller","merchant","vendor"], ex:[{ s:"The {{}} offers online grocery shopping.", f:"retailer", ko:"그 소매업체는 온라인 식료품 쇼핑을 제공한다." }] },
-  { word:"reusable", exams:["공무원"], pron:"리유저블", pos:"adj", level:"B2", meanings:["재사용 가능한"], syn:["recyclable","washable","durable"], ant:["disposable"], ex:[{ s:"Opt for {{}} containers instead of plastic.", f:"reusable", ko:"플라스틱 대신 재사용 가능한 용기를 선택하라." }] },
+  { word:"reusable", exams:["공무원","수능"], pron:"리유저블", pos:"adj", level:"B2", meanings:["재사용 가능한"], syn:["recyclable","washable","durable"], ant:["disposable"], ex:[{ s:"Opt for {{}} containers instead of plastic.", f:"reusable", ko:"플라스틱 대신 재사용 가능한 용기를 선택하라." }] },
   { word:"rearrange", exams:["공무원"], pron:"리어레인지", pos:"v", level:"B2", meanings:["재배치하다","재정리하다"], syn:["reorganize","reorder","shuffle"], ex:[{ s:"They began {{}} their environment to suit themselves.", f:"rearranging", ko:"그들은 환경을 자신에게 맞게 재배치하기 시작했다." }] },
   { word:"responsibility", exams:["공무원","수능"], pron:"리스판서빌리티", pos:"n", level:"B1", meanings:["책임","책무"], syn:["duty","obligation","accountability"], ex:[{ s:"Society allocates positions of {{}} by merit.", f:"responsibility", ko:"사회는 능력에 따라 책임 있는 자리를 배분한다." }] },
   { word:"relegate", exams:["공무원"], pron:"렐리게이트", pos:"v", level:"C2", meanings:["격하하다","밀쳐두다"], syn:["demote","downgrade","consign"], ant:["promote"], ex:[{ s:"Schedule time to {{}} distractions to set times.", f:"relegate", ko:"방해 요소를 정해진 시간으로 밀쳐두도록 시간을 짜라." }] },
-  { word:"risky", exams:["공무원"], pron:"리스키", pos:"adj", level:"B2", meanings:["위험한"], syn:["dangerous","hazardous","precarious"], ant:["safe"], ex:[{ s:"Farming is quite {{}} and uncertain.", f:"risky", ko:"농업은 꽤 위험하고 불확실하다." }] },
+  { word:"risky", exams:["공무원","수능"], pron:"리스키", pos:"adj", level:"B2", meanings:["위험한"], syn:["dangerous","hazardous","precarious"], ant:["safe"], ex:[{ s:"Farming is quite {{}} and uncertain.", f:"risky", ko:"농업은 꽤 위험하고 불확실하다." }] },
   { word:"ration", exams:["공무원"], pron:"래션", pos:"n", level:"B2", meanings:["배급량","정량"], syn:["allowance","portion","quota"], ex:[{ s:"A student's daily {{}} of cereal made little difference.", f:"ration", ko:"학생의 하루 시리얼 배급량은 거의 차이를 만들지 않았다." }] },
   { word:"recyclable", exams:["공무원"], pron:"리사이클러블", pos:"adj", level:"B2", meanings:["재활용 가능한"], syn:["reusable","reprocessable","salvageable"], ant:["disposable"], ex:[{ s:"Separate the {{}} materials from the trash.", f:"recyclable", ko:"재활용 가능한 물품을 쓰레기와 분리하세요." }] },
   { word:"regardless", exams:["공무원"], pron:"리가들리스", pos:"adv", level:"B2", meanings:["상관없이","개의치 않고"], syn:["nevertheless","anyway","nonetheless"], ex:[{ s:"Students behave better {{}} of their diet.", f:"regardless", ko:"학생들은 식단과 상관없이 더 잘 행동한다." }], gov:{ prep:["of"], usage:"regardless of ~ : ~에 상관없이" } },
@@ -324,7 +324,7 @@ window.VOCAB_R = [
   /* 승격 ㉑ — 사전 첫 갈래를 지키고 쌍반점을 쉼표로 갈랐다(conjure up 한 곳).
      원본은 '기억해내다; 취소하다; 회수하다' 세 갈래였다. '취소하다' 는
      revoke(챕터 12) 자리라 '회수하다' 를 남겼다. */
-  { word:"recall", pron:"리콜", pos:"v", level:"B1", meanings:["회상하다","회수하다"],
+  { word:"recall", exams:["수능"], pron:"리콜", pos:"v", level:"B1", meanings:["회상하다","회수하다"],
     syn:["conjure up","bring back to mind","call in a faulty product"],
     ex:[{ s:"I cannot {{}} his name.", f:"recall", ko:"나는 그의 이름을 회상할 수 없다." }] },
 
@@ -707,7 +707,7 @@ window.VOCAB_R = [
     syn:["comparative","judged against something else","not absolute"], ant:["absolute"],
     ex:[{ s:"It is a {{}} matter.", f:"relative", ko:"그것은 상대적인 문제다." }] },
 
-  { word:"relativity", pron:"렐러티버티", pos:"n", level:"C1", meanings:["상대성","관련성"],
+  { word:"relativity", exams:["수능"], pron:"렐러티버티", pos:"n", level:"C1", meanings:["상대성","관련성"],
     syn:["being judged by comparison","how things relate","dependence on a frame"],
     ex:[{ s:"He explained the theory of {{}}.", f:"relativity", ko:"그는 상대성 이론을 설명했다." }] },
 
@@ -809,7 +809,7 @@ window.VOCAB_R = [
 
   /* 승격 68 — 사전은 '발언하다; 발언' 으로 동사와 명사가 섞여 있었다. 참조
      comment 가 동사여서 동사로 세웠다. 원본은 네 갈래였다. */
-  { word:"remark", pron:"리마크", pos:"v", level:"B2", meanings:["발언하다","한마디 하다"],
+  { word:"remark", exams:["수능"], pron:"리마크", pos:"v", level:"B2", meanings:["발언하다","한마디 하다"],
     syn:["comment","say in passing","let fall a word"],
     ex:[{ s:"She did not {{}} on it.", f:"remark", ko:"그녀는 그것에 대해 발언하지 않았다." }] },
 
@@ -985,7 +985,7 @@ window.VOCAB_R = [
   /* 승격 83 — 사전은 '대표; 대표적인' 으로 명사와 형용사가 섞여 있었다. 참조
      agent·delegate 가 명사여서 원본대로 명사로 세웠다. '대리인' 은 delegate 의
      둘째 뜻과 글자가 같아 서로 오답에서 빠진다. */
-  { word:"representative", pron:"레프리젠터티브", pos:"n", level:"B2", meanings:["대표자","대리인"],
+  { word:"representative", exams:["수능"], pron:"레프리젠터티브", pos:"n", level:"B2", meanings:["대표자","대리인"],
     syn:["delegate","one sent to speak for others","stand-in for a body"],
     ex:[{ s:"Each class sends one {{}}.", f:"representative", ko:"학급마다 대표자 한 명을 보낸다." }] },
 
@@ -1300,7 +1300,7 @@ window.VOCAB_R = [
     syn:["keeping of something","holding power","act of not letting go"],
     ex:[{ s:"Water {{}} in soil matters.", f:"retention", ko:"흙의 물 보유가 중요하다." }] },
 
-  { word:"retire", exams:["공무원"], pron:"리타이어", pos:"v", level:"B1", meanings:["퇴직하다","은퇴하다"],
+  { word:"retire", exams:["공무원","수능"], pron:"리타이어", pos:"v", level:"B1", meanings:["퇴직하다","은퇴하다"],
     syn:["leave one's work for good","step back from a job","give up work in old age"],
     ex:[{ s:"He will {{}} next spring.", f:"retire", ko:"그는 다음 봄에 퇴직할 것이다." }] },
 

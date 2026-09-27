@@ -153,7 +153,7 @@ window.VOCAB_W = [
 
   /* ★ 첫 뜻을 '불모지' 로 갈랐다. 4차의 wilderness(황야, 황무지) 와 둘째 갈래
      '황무지' 를 맞춰 자동 배제시켰고, 첫 뜻은 '불모지' 와 '황야' 로 갈린다. */
-  { word:"wasteland", pron:"웨이스트랜드", pos:"n", level:"C1", meanings:["불모지","황무지"],
+  { word:"wasteland", exams:["수능"], pron:"웨이스트랜드", pos:"n", level:"C1", meanings:["불모지","황무지"],
     syn:["barren ground","land that grows nothing","waste country"],
     ex:[{ s:"The valley became a {{}}.", f:"wasteland", ko:"그 골짜기는 불모지가 되었다." }] },
 
@@ -189,7 +189,7 @@ window.VOCAB_W = [
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
   /* 위 weaken(동사) 과 품사로 갈랐다. */
-  { word:"weakness", exams:["공무원"], pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
+  { word:"weakness", exams:["공무원","수능"], pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
     syn:["weak point","want of strength","soft spot"],
     ex:[{ s:"Pride was his one {{}}.", f:"weakness", ko:"자만이 그의 유일한 약점이었다." }] },
 
@@ -293,7 +293,7 @@ window.VOCAB_W = [
     ex:[{ s:"They live in a {{}} district.", f:"well-to-do", ko:"그들은 유복한 동네에 산다." }] },
 
   /* 승격 ⑫ — 사전 단일값 유지(참조 marsh). */
-  { word:"wetland", pron:"웻랜드", pos:"n", level:"B2", meanings:["습지대"],
+  { word:"wetland", exams:["수능"], pron:"웻랜드", pos:"n", level:"B2", meanings:["습지대"],
     syn:["marsh","boggy land","ground that holds water"],
     ex:[{ s:"Birds nest in the {{}}.", f:"wetland", ko:"새들이 그 습지대에 둥지를 튼다." }] },
 
@@ -314,7 +314,7 @@ window.VOCAB_W = [
 
   /* on the other hand(반면에, 한편) 와 맞물려 배제된다. 접속사지만 스키마에
      conj 가 없어 구·표현(phr) 으로 두었다. */
-  { word:"whereas", exams:["공무원"], pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
+  { word:"whereas", exams:["공무원","수능"], pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
     syn:["on the other hand","while by contrast","though the other way"] },
 
   /* 승격 ⑬ — 사전 단일값 유지(참조 moan). 교재 명사 갈래 버림. 아래 whine 과
@@ -350,7 +350,7 @@ window.VOCAB_W = [
      erroneous(잘못된, 오류가 있는) 와 한 글자로만 갈린다. '사악한' 을 앞세우니
      V 세트 vicious(사악한, 잔인한) 와 맞물려 배제되고, 둘째로 남긴 '못된' 이
      nasty(고약한, 못된) 와도 맞물린다. 교재의 '위험한' 은 hazardous 자리다. */
-  { word:"wicked", pron:"위키드", pos:"adj", level:"B2", meanings:["사악한","못된"],
+  { word:"wicked", exams:["수능"], pron:"위키드", pos:"adj", level:"B2", meanings:["사악한","못된"],
     syn:["evil in nature","given to doing harm","bad at heart"],
     ex:[{ s:"The tale has a {{}} queen.", f:"wicked", ko:"그 이야기에는 사악한 여왕이 나온다." }] },
 
@@ -541,7 +541,7 @@ window.VOCAB_W = [
   /* 승격 ㉙ — ★사전값을 따랐다. 교재는 '운동하다; 잘 풀리다' 인데 참조 셋
      (deduce·estimate·figure out) 이 모두 '알아냄' 쪽이다. determine·discover·
      uncover 가 '알아내다' 를 써서 세 곳과 맞물려 배제된다. */
-  { word:"work out", exams:["공무원"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
+  { word:"work out", exams:["공무원","수능"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
     syn:["deduce","estimate","figure out"] },
 
   /* ★ feasible(실행 가능한, 그럴듯한) 과 V 세트 viable(실행 가능한) 이 교재

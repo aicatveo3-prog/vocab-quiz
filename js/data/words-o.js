@@ -96,7 +96,7 @@ window.VOCAB_O = [
   { word:"opt", exams:["공무원"], pron:"옵트", pos:"v", level:"C1", meanings:["선택하다"], syn:["choose","select","decide"], ex:[{ s:"They {{}} for reusable containers instead.", f:"opt", ko:"그들은 대신 재사용 용기를 선택한다." }], gov:{ prep:["for"], usage:"opt for ~ : ~을 선택하다 / opt out : 빠지다" } },
   { word:"overspend", exams:["공무원"], pron:"오버스펜드", pos:"v", level:"C1", meanings:["과소비하다","초과 지출하다"], syn:["splurge","overpay","squander"], ant:["save"], ex:[{ s:"The season can be a time you {{}} on gifts.", f:"overspend", ko:"그 시즌은 선물에 과소비하는 때가 될 수 있다." }] },
   { word:"observer", exams:["공무원"], pron:"업저버", pos:"n", level:"B2", meanings:["관찰자","참관인"], syn:["onlooker","spectator","witness"], ant:["participant"], ex:[{ s:"Humans are allowed, but only as {{}}.", f:"observers", ko:"인간은 허용되지만 오직 참관인으로만 가능하다." }] },
-  { word:"ordinary", exams:["공무원"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
+  { word:"ordinary", exams:["공무원","수능"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
   { word:"outwardly", exams:["공무원"], pron:"아웃워들리", pos:"adv", level:"C1", meanings:["겉으로는","외관상"], syn:["externally","apparently","seemingly"], ant:["inwardly"], ex:[{ s:"He remained {{}} calm during the crisis.", f:"outwardly", ko:"그는 위기 동안 겉으로는 침착함을 유지했다." }] },
   { word:"overconsumption", exams:["공무원"], pron:"오버컨섬션", pos:"n", level:"C1", meanings:["과소비","과잉 섭취"], syn:["overuse","excess","overindulgence"], ant:["moderation"], ex:[{ s:"Children's health is declining due to {{}} of fast food.", f:"overconsumption", ko:"패스트푸드의 과잉 섭취로 아이들의 건강이 나빠지고 있다." }] },
   { word:"overgrown", exams:["공무원"], pron:"오버그로운", pos:"adj", level:"C1", meanings:["웃자란","무성한"], syn:["unkempt","weedy","overrun"], ant:["trimmed"], ex:[{ s:"The program requires no {{}} yards.", f:"overgrown", ko:"그 프로그램은 웃자란 마당이 없을 것을 요구한다." }] },
@@ -539,7 +539,7 @@ window.VOCAB_O = [
   /* 승격 43 — 사전이 '반대의; 맞은편' 으로 형용사와 명사가 섞여 있었다.
      converse(C)·inverse(I) 둘 다 형용사여서 형용사로 세웠다. 원본 첫 뜻 '반대'(n)
      를 버리자 같은 챕터의 opposition·objection(챕터 1) 과의 겹침도 함께 풀렸다. */
-  { word:"opposite", exams:["공무원"], pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
+  { word:"opposite", exams:["공무원","수능"], pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
     syn:["converse","facing","on the other side"],
     ex:[{ s:"The bakery is on the {{}} corner.", f:"opposite", ko:"그 빵집은 맞은편 모서리에 있다." }] },
 
@@ -613,7 +613,7 @@ window.VOCAB_O = [
 
   /* 원본의 '(신체) 장기, 기관' 괄호를 걷었다. 같은 챕터 organization 을
      '조직, 단체' 로 갈라 '기관' 이 서로 물리지 않게 했다. */
-  { word:"organ", pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
+  { word:"organ", exams:["수능"], pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
     syn:["body part","internal structure","working unit of the body"],
     ex:[{ s:"The liver is the largest internal {{}}.", f:"organ", ko:"간은 가장 큰 내부 장기다." }] },
 
@@ -637,7 +637,7 @@ window.VOCAB_O = [
   /* 승격 49 — ★원본의 '구조적인' 은 structural 의 뜻이다. 사전은 '조직의' 한
      갈래였고, 거기에 원본의 '조직적인' 을 붙였다. 첫 뜻은 사전값을 지켰다
      (administrative, A). */
-  { word:"organizational", pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
+  { word:"organizational", exams:["수능"], pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
     syn:["administrative","to do with running a group","managerial"],
     ex:[{ s:"The delay was an {{}} failure, not a technical one.", f:"organizational", ko:"그 지연은 기술이 아니라 조직의 실패였다." }] },
 
@@ -773,7 +773,7 @@ window.VOCAB_O = [
 
   /* 승격 60 — 사전 표현 '구식의, 낡은' 을 글자까지 지켰다(발음이 없던 항목이다).
      원본의 '구식의, 시대에 뒤진, 진부한' 중 '시대에 뒤진' 은 out of date 에 넘겼다. */
-  { word:"outdated", pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
+  { word:"outdated", exams:["수능"], pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
     syn:["antiquated","no longer up to date","left behind"], ant:["up-to-date"],
     ex:[{ s:"The software is badly {{}}.", f:"outdated", ko:"그 소프트웨어는 몹시 구식이다." }] },
 
@@ -991,7 +991,7 @@ window.VOCAB_O = [
 
   /* 승격 77 — 사전은 '감독하다' 한 갈래였다. 원본의 '감시하다' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(administer, A). 원본은 순서가 거꾸로였다. */
-  { word:"oversee", pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
+  { word:"oversee", exams:["수능"], pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
     syn:["supervise","keep watch over","be in charge of"],
     ex:[{ s:"She was asked to {{}} the whole project.", f:"oversee", ko:"그녀는 사업 전체를 감독하도록 요청받았다." }] },
 

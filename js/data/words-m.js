@@ -57,7 +57,7 @@ window.VOCAB_M = [
   { word:"militia", exams:["공무원"], pron:"밀리샤", pos:"n", level:"C1", meanings:["민병대"], syn:["armed force","volunteers","paramilitary"], ex:[{ s:"A well-regulated {{}} is necessary to a free state.", f:"militia", ko:"잘 통제된 민병대는 자유로운 국가에 필요하다." }] },
   { word:"millennia", exams:["공무원"], pron:"밀레니아", pos:"n", level:"C1", meanings:["수천 년","천년의 복수형"], syn:["ages","eons","millenniums"], ex:[{ s:"The people have been based in the region for {{}}.", f:"millennia", ko:"그 사람들은 수천 년 동안 그 지역에 터를 잡아 왔다." }] },
   { word:"minefield", exams:["공무원"], pron:"마인필드", pos:"n", level:"C1", meanings:["지뢰밭","위험 요소가 많은 상황"], syn:["hazard","quagmire","danger zone"], ex:[{ s:"Immigration reform is a political {{}}.", f:"minefield", ko:"이민 개혁은 정치적 지뢰밭이다." }] },
-  { word:"misguided", exams:["공무원"], pron:"미스가이디드", pos:"adj", level:"C1", meanings:["잘못 이해한","그릇된"], syn:["mistaken","misled","ill-advised"], ant:["sensible"], ex:[{ s:"Many parents have been {{}} by the self-esteem movement.", f:"misguided", ko:"많은 부모가 자존감 운동에 잘못 이끌려 왔다." }] },
+  { word:"misguided", exams:["공무원","수능"], pron:"미스가이디드", pos:"adj", level:"C1", meanings:["잘못 이해한","그릇된"], syn:["mistaken","misled","ill-advised"], ant:["sensible"], ex:[{ s:"Many parents have been {{}} by the self-esteem movement.", f:"misguided", ko:"많은 부모가 자존감 운동에 잘못 이끌려 왔다." }] },
   { word:"monopolistic", exams:["공무원"], pron:"모노폴리스틱", pos:"adj", level:"C2", meanings:["독점적인"], syn:["exclusive","controlling","dominating"], ant:["competitive"], ex:[{ s:"Critics said it subjected the Third World to a {{}} capitalism.", f:"monopolistic", ko:"비평가들은 그것이 제3세계를 독점적 자본주의에 종속시켰다고 했다." }] },
   { word:"mortar", exams:["공무원"], pron:"모터", pos:"n", level:"C1", meanings:["회반죽","박격포"], syn:["cement","plaster","render"], ex:[{ s:"The lime {{}} between bricks held the house together.", f:"mortar", ko:"벽돌 사이의 석회 회반죽이 집을 지탱했다." }] },
   { word:"mudslide", exams:["공무원"], pron:"머드슬라이드", pos:"n", level:"C1", meanings:["진흙 사태","이류"], syn:["landslide","mudflow","avalanche"], ex:[{ s:"A {{}} destroyed part of the village.", f:"mudslide", ko:"진흙 사태가 마을의 일부를 파괴했다." }] },
@@ -501,7 +501,7 @@ window.VOCAB_M = [
      원본의 '측량' 대신 사전 쪽을 남겼다.
      measurable·measure 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
      안 온다. */
-  { word:"measurement", pron:"메저먼트", pos:"n", level:"B1", meanings:["측정","치수"],
+  { word:"measurement", exams:["수능"], pron:"메저먼트", pos:"n", level:"B1", meanings:["측정","치수"],
     syn:["dimension","reading","gauging"],
     ex:[{ s:"Take the {{}} twice before you cut.", f:"measurement", ko:"자르기 전에 치수를 두 번 재세요." }] },
 
@@ -926,7 +926,7 @@ window.VOCAB_M = [
      뜻이 너무 가까워진다. 원본의 '잘못 알고 있는' 을 앞에 두고 사전의 '틀린' 을
      둘째 자리에 남겼다 — 이쪽은 사람이 오해하고 있다는 쪽이다.
      mistake 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"mistaken", pron:"미스테이컨", pos:"adj", level:"B2", meanings:["잘못 알고 있는","틀린"],
+  { word:"mistaken", exams:["수능"], pron:"미스테이컨", pos:"adj", level:"B2", meanings:["잘못 알고 있는","틀린"],
     syn:["erroneous","misinformed","wide of the mark"], ant:["correct"],
     ex:[{ s:"You are {{}} about who sent the letter.", f:"mistaken", ko:"누가 그 편지를 보냈는지에 대해 당신은 잘못 알고 있다." }] },
 
@@ -953,7 +953,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '남용, 오용' 을 글자까지 지켰다. abuse(syn)·exploitation(syn) 두
      문제가 참조하므로 원본('오용, 남용')이 아니라 사전 순서를 남겼다.
      원본의 동사 갈래('오용하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"misuse", pron:"미스유스", pos:"n", level:"B2", meanings:["남용","오용"],
+  { word:"misuse", exams:["수능"], pron:"미스유스", pos:"n", level:"B2", meanings:["남용","오용"],
     syn:["abuse","exploitation","improper use"],
     ex:[{ s:"The report documents widespread {{}} of funds.", f:"misuse", ko:"그 보고서는 자금의 광범위한 남용을 기록한다." }] },
 

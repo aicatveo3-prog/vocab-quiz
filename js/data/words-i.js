@@ -51,13 +51,13 @@ window.VOCAB_I = [
   { word:"improve", exams:["공무원"], pron:"임프루브", pos:"v", level:"B1", meanings:["개선하다","나아지다"], syn:["enhance","better","upgrade"], ant:["worsen"], ex:[{ s:"Schools are seeking ways to {{}} effectiveness.", f:"improve", ko:"학교들은 효과성을 개선할 방법을 찾고 있다." }] },
   { word:"inspect", exams:["공무원"], pron:"인스펙트", pos:"v", level:"B2", meanings:["점검하다","검사하다"], syn:["examine","check","scrutinize"], ex:[{ s:"Our team will {{}} your property for signs of rats.", f:"inspect", ko:"우리 팀이 쥐의 흔적을 찾아 당신의 건물을 점검할 것이다." }] },
   { word:"insightful", exams:["공무원"], pron:"인사이트풀", pos:"adj", level:"C1", meanings:["통찰력 있는"], syn:["perceptive","astute","discerning"], ant:["superficial"], ex:[{ s:"Movies can be an {{}} source for learning about culture.", f:"insightful", ko:"영화는 문화를 배우는 통찰력 있는 자료가 될 수 있다." }] },
-  { word:"inspiration", exams:["공무원"], pron:"인스퍼레이션", pos:"n", level:"B2", meanings:["영감"], syn:["stimulus","motivation","muse"], ex:[{ s:"She drew {{}} from the world around her.", f:"inspiration", ko:"그녀는 주변 세계에서 영감을 얻었다." }] },
+  { word:"inspiration", exams:["공무원","수능"], pron:"인스퍼레이션", pos:"n", level:"B2", meanings:["영감"], syn:["stimulus","motivation","muse"], ex:[{ s:"She drew {{}} from the world around her.", f:"inspiration", ko:"그녀는 주변 세계에서 영감을 얻었다." }] },
   { word:"interact", exams:["공무원"], pron:"인터랙트", pos:"v", level:"B2", meanings:["상호작용하다","교류하다"], syn:["communicate","engage","connect"], ex:[{ s:"The AI agents can post and {{}} with each other.", f:"interact", ko:"그 인공지능 에이전트들은 서로 글을 올리고 교류할 수 있다." }] },
   { word:"ivory", exams:["공무원"], pron:"아이보리", pos:"n", level:"B2", meanings:["상아"], ex:[{ s:"The small plaque was carved from mammoth {{}}.", f:"ivory", ko:"그 작은 명판은 매머드 상아로 조각되었다." }] },
   { word:"in a row", exams:["공무원"], pron:"인 어 로", pos:"phr", level:"B2", meanings:["연속으로","잇따라"], syn:["consecutively","in succession","successively"] },
   { word:"independent", exams:["공무원","수능"], pron:"인디펜던트", pos:"adj", level:"B1", meanings:["독립적인","자주적인"], syn:["autonomous","self-reliant","self-sufficient"], ant:["dependent"], ex:[{ s:"AUVs are {{}} of their human operators.", f:"independent", ko:"AUV는 인간 조종자로부터 독립적이다." }], gov:{ prep:["of","from"], usage:"independent of ~ : ~에 의존하지 않는, ~와 관계없이" } },
   { word:"infancy", exams:["공무원"], pron:"인펀시", pos:"n", level:"C1", meanings:["유아기","초창기"], ex:[{ s:"Humans go through an unusually long {{}}.", f:"infancy", ko:"인간은 유난히 긴 유아기를 거친다." }] },
-  { word:"informal", exams:["공무원"], pron:"인포멀", pos:"adj", level:"B1", meanings:["비공식적인","격식 없는"], syn:["casual","relaxed","unofficial","easygoing"], ant:["formal"], ex:[{ s:"As a startup grows, it often loses its {{}}, friendly atmosphere.", f:"informal", ko:"스타트업은 성장하면서 격식 없고 친근한 분위기를 잃곤 한다." }] },
+  { word:"informal", exams:["공무원","수능"], pron:"인포멀", pos:"adj", level:"B1", meanings:["비공식적인","격식 없는"], syn:["casual","relaxed","unofficial","easygoing"], ant:["formal"], ex:[{ s:"As a startup grows, it often loses its {{}}, friendly atmosphere.", f:"informal", ko:"스타트업은 성장하면서 격식 없고 친근한 분위기를 잃곤 한다." }] },
   { word:"interrogate", exams:["공무원"], pron:"인테러게이트", pos:"v", level:"C1", meanings:["심문하다","따져 묻다"], syn:["question","cross-examine","grill"], ex:[{ s:"When AI makes a choice, people want to {{}} how the decision was made.", f:"interrogate", ko:"AI가 선택을 하면 사람들은 그 결정이 어떻게 내려졌는지 따져 묻고 싶어 한다." }] },
   { word:"involuntary", exams:["공무원","수능"], pron:"인발런테리", pos:"adj", level:"C1", meanings:["무의식적인","본의 아닌"], syn:["automatic","reflexive","unintentional"], ant:["voluntary"], ex:[{ s:"Blinking is usually {{}}.", f:"involuntary", ko:"눈 깜박임은 보통 무의식적으로 일어난다." }] },
   { word:"individual", exams:["공무원","수능"], pron:"인디비주얼", pos:"n", level:"B1", meanings:["개인","개인의"], ant:["collective"], ex:[{ s:"Each {{}} relies on the knowledge of others.", f:"individual", ko:"각 개인은 다른 사람들의 지식에 의존한다." }] },
@@ -77,7 +77,7 @@ window.VOCAB_I = [
   { word:"intuitive", exams:["공무원"], pron:"인투이티브", pos:"adj", level:"C1", meanings:["직관적인","이해하기 쉬운"], ex:[{ s:"The new app has a simple and {{}} design.", f:"intuitive", ko:"새 앱은 단순하고 직관적인 디자인을 갖췄다." }] },
   { word:"it is no use ~ing", exams:["공무원"], pron:"잇 이즈 노 유스", pos:"phr", level:"B2", meanings:["~해 봐야 소용없다"] },
   { word:"in addition", exams:["공무원","수능"], pron:"인 어디션", pos:"phr", level:"B1", meanings:["게다가","또한"], syn:["furthermore","moreover","additionally"] },
-  { word:"in contrast", exams:["공무원"], pron:"인 칸트래스트", pos:"phr", level:"B1", meanings:["대조적으로","그와 달리"], syn:["by contrast","conversely","on the other hand"] },
+  { word:"in contrast", exams:["공무원","수능"], pron:"인 칸트래스트", pos:"phr", level:"B1", meanings:["대조적으로","그와 달리"], syn:["by contrast","conversely","on the other hand"] },
   { word:"industrialization", exams:["공무원","수능"], pron:"인더스트리얼리제이션", pos:"n", level:"C1", meanings:["산업화"], ex:[{ s:"Before {{}}, most people lived and worked on farms.", f:"industrialization", ko:"산업화 이전에는 대부분의 사람이 농장에서 살며 일했다." }] },
   { word:"influential", exams:["공무원","수능"], pron:"인플루엔셜", pos:"adj", level:"B2", meanings:["영향력 있는","유력한"], syn:["powerful","prominent","leading"], ex:[{ s:"His ideas were so {{}} that they shaped national policy for decades.", f:"influential", ko:"그의 생각은 영향력이 매우 커서 수십 년 동안 국가 정책을 좌우했다." }] },
   { word:"imbalance", exams:["수능"], pron:"임밸런스", pos:"n", level:"C1", meanings:["불균형"], syn:["disparity","inequality","unevenness"], ex:[{ s:"A poor diet can cause a chemical {{}} in the body.", f:"imbalance", ko:"나쁜 식단은 몸속 화학적 불균형을 일으킬 수 있다." }] },
@@ -153,7 +153,7 @@ window.VOCAB_I = [
     syn:["indistinguishable","equivalent","matching"], ant:["different"],
     ex:[{ s:"The twins wore {{}} outfits to the ceremony.", f:"identical", ko:"그 쌍둥이는 식에 똑같은 옷을 입고 왔다." }] },
 
-  { word:"identifiable", pron:"아이덴터파이어블", pos:"adj", level:"C1", meanings:["인식 가능한","알아볼 수 있는"],
+  { word:"identifiable", exams:["수능"], pron:"아이덴터파이어블", pos:"adj", level:"C1", meanings:["인식 가능한","알아볼 수 있는"],
     syn:["recognizable","distinguishable","discernible"], ant:["indistinct"],
     ex:[{ s:"The suspect was clearly {{}} from the security footage.", f:"identifiable", ko:"용의자는 보안 영상에서 분명히 알아볼 수 있었다." }] },
 
@@ -677,7 +677,7 @@ window.VOCAB_I = [
     syn:["occurrence","frequency","prevalence"],
     ex:[{ s:"The {{}} of asthma has risen sharply in urban areas.", f:"incidence", ko:"도시 지역에서 천식 발생이 급격히 증가했다." }] },
 
-  { word:"incident", pron:"인서던트", pos:"n", level:"B1", meanings:["사건","불쾌한 일"],
+  { word:"incident", exams:["수능"], pron:"인서던트", pos:"n", level:"B1", meanings:["사건","불쾌한 일"],
     syn:["episode","affair","mishap"],
     ex:[{ s:"Police are still investigating the {{}} at the station.", f:"incident", ko:"경찰은 역에서 일어난 그 사건을 아직 조사하고 있다." }] },
 
@@ -826,7 +826,7 @@ window.VOCAB_I = [
     syn:["catalog","directory","list of entries"],
     ex:[{ s:"Look up the term in the {{}} at the back of the book.", f:"index", ko:"책 뒤에 있는 색인에서 그 용어를 찾아보세요." }] },
 
-  { word:"indicate", exams:["공무원"], pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],
+  { word:"indicate", exams:["공무원","수능"], pron:"인디케이트", pos:"v", level:"B1", meanings:["나타내다","보여 주다"],
     syn:["show","signal","denote"],
     ex:[{ s:"The survey results {{}} a clear shift in public opinion.", f:"indicate", ko:"조사 결과는 여론의 뚜렷한 변화를 나타낸다." }] },
 
@@ -1387,7 +1387,7 @@ window.VOCAB_I = [
      같은 보기에 함께 뜰 수 있다. 원본 둘째 갈래 '융합하다' 를 앞으로 올려 갈랐다.
      integral·integrity 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
      안 온다. */
-  { word:"integrate", exams:["공무원"], pron:"인터그레이트", pos:"v", level:"B2", meanings:["융합하다","통합시키다"],
+  { word:"integrate", exams:["공무원","수능"], pron:"인터그레이트", pos:"v", level:"B2", meanings:["융합하다","통합시키다"],
     syn:["combine","unify","blend"],
     ex:[{ s:"The city works to {{}} newcomers into local life.", f:"integrate", ko:"그 도시는 새로 온 사람들을 지역 생활에 융합시키려 노력한다." }] },
 
@@ -1776,7 +1776,7 @@ window.VOCAB_I = [
 
   /* ── 챕터 16 ────────────────────────────── */
 
-  { word:"irresistible", pron:"이리지스터블", pos:"adj", level:"B2", meanings:["거부할 수 없는","억누를 수 없는"],
+  { word:"irresistible", exams:["수능"], pron:"이리지스터블", pos:"adj", level:"B2", meanings:["거부할 수 없는","억누를 수 없는"],
     syn:["overpowering","compelling","tempting"],
     ex:[{ s:"The smell of fresh bread was simply {{}}.", f:"irresistible", ko:"갓 구운 빵 냄새는 그저 거부할 수 없었다." }] },
 

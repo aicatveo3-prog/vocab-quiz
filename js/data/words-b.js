@@ -451,7 +451,7 @@ window.VOCAB_B = [
     syn:["dual-language","two-language","polyglot"], ant:["monolingual"],
     ex:[{ s:"She grew up {{}} in Korean and English.", f:"bilingual", ko:"그녀는 한국어와 영어 2개 국어를 쓰며 자랐다." }] },
 
-  { word:"bill", pron:"빌", pos:"n", level:"B1", meanings:["법안","계산서"],
+  { word:"bill", exams:["수능"], pron:"빌", pos:"n", level:"B1", meanings:["법안","계산서"],
     syn:["legislation","invoice","statement"],
     ex:[{ s:"Congress passed the {{}} after a long debate.", f:"bill", ko:"의회는 오랜 논쟁 끝에 그 법안을 통과시켰다." }] },
 
@@ -524,7 +524,7 @@ window.VOCAB_B = [
     syn:["edge","cutter","knife"],
     ex:[{ s:"Be careful — the {{}} is extremely sharp.", f:"blade", ko:"조심해라 — 그 칼날은 대단히 날카롭다." }] },
 
-  { word:"blank", pron:"블랭크", pos:"adj", level:"B1", meanings:["텅 빈","멍한"],
+  { word:"blank", exams:["수능"], pron:"블랭크", pos:"adj", level:"B1", meanings:["텅 빈","멍한"],
     syn:["empty","vacant","unfilled"], ant:["filled"],
     ex:[{ s:"She stared at the {{}} page for a whole hour.", f:"blank", ko:"그녀는 텅 빈 페이지를 한 시간 내내 바라보았다." }] },
 
@@ -552,7 +552,7 @@ window.VOCAB_B = [
     syn:["mix","combine","merge"], ant:["separate"],
     ex:[{ s:"Slowly {{}} the flour into the melted butter.", f:"blend", ko:"밀가루를 녹인 버터에 천천히 섞어라." }] },
 
-  { word:"blessing", pron:"블레싱", pos:"n", level:"B2", meanings:["축복","승인"],
+  { word:"blessing", exams:["수능"], pron:"블레싱", pos:"n", level:"B2", meanings:["축복","승인"],
     syn:["benediction","approval","boon"], ant:["curse"],
     ex:[{ s:"They married with her parents' {{}}.", f:"blessing", ko:"그들은 그녀 부모의 축복을 받으며 결혼했다." }] },
 
@@ -628,7 +628,7 @@ window.VOCAB_B = [
     ex:[{ s:"Reporters {{}} the minister with questions.", f:"bombarded", ko:"기자들은 장관에게 질문을 퍼부었다." }],
     gov:{ prep:["with"], pat:"bombard him {{}} questions", usage:"bombard A with B : A에게 B를 퍼붓다" } },
 
-  { word:"bond", pron:"본드", pos:"n", level:"B2", meanings:["유대감","결합"],
+  { word:"bond", exams:["수능"], pron:"본드", pos:"n", level:"B2", meanings:["유대감","결합"],
     syn:["tie","link","attachment"],
     ex:[{ s:"A strong {{}} formed between the two teams.", f:"bond", ko:"두 팀 사이에 강한 유대감이 형성되었다." }] },
 
@@ -667,7 +667,7 @@ window.VOCAB_B = [
     syn:["plant science","phytology","plant biology"],
     ex:[{ s:"She studied {{}} before becoming a gardener.", f:"botany", ko:"그녀는 정원사가 되기 전에 식물학을 공부했다." }] },
 
-  { word:"bothersome", pron:"바더섬", pos:"adj", level:"B2", meanings:["짜증나는","성가신"],
+  { word:"bothersome", exams:["수능"], pron:"바더섬", pos:"adj", level:"B2", meanings:["짜증나는","성가신"],
     syn:["annoying","irritating","troublesome"], ant:["pleasant"],
     ex:[{ s:"The constant noise from the street was extremely {{}}.", f:"bothersome", ko:"거리에서 나는 끊임없는 소음은 대단히 성가셨다." }] },
 
@@ -781,7 +781,7 @@ window.VOCAB_B = [
     syn:["connect","link two sides","link"], ant:["divide"],
     ex:[{ s:"The program aims to {{}} the gap between rich and poor.", f:"bridge", ko:"그 프로그램은 부유층과 빈곤층의 격차를 이어주는 것을 목표로 한다." }] },
 
-  { word:"brief", pron:"브리프", pos:"adj", level:"B1", meanings:["잠시 동안의","간단한"],
+  { word:"brief", exams:["수능"], pron:"브리프", pos:"adj", level:"B1", meanings:["잠시 동안의","간단한"],
     syn:["short","concise","fleeting"], ant:["lengthy"],
     ex:[{ s:"He gave a {{}} summary of the report.", f:"brief", ko:"그는 그 보고서의 간단한 요약을 제시했다." }] },
 

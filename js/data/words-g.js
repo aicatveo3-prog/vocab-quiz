@@ -141,7 +141,7 @@ window.VOCAB_G = [
     ex:[{ s:"Climbers must check their {{}} before the final ascent.", f:"gear", ko:"등반가들은 마지막 등반 전에 장비를 점검해야 한다." }] },
 
   /* syn 을 비웠다 — sex 하나뿐이고 3개를 채우려면 억지 낱말을 넣어야 한다. */
-  { word:"gender", pron:"젠더", pos:"n", level:"B1", meanings:["성별","성"],
+  { word:"gender", exams:["수능"], pron:"젠더", pos:"n", level:"B1", meanings:["성별","성"],
     ex:[{ s:"The survey recorded age, {{}}, and occupation for each person.", f:"gender", ko:"그 조사는 각 사람의 나이, 성별, 직업을 기록했다." }] },
 
   /* 승격 ① — GLOSS '유전자' 와 글자까지 같다. chromosome 의 유의어로 쓰인다.
@@ -161,7 +161,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS 가 '만들어 내다, 발생시키다' 다. 원본은 순서만 반대이므로
      사전 순서를 그대로 지켜 bring in 문제의 화면이 한 글자도 안 바뀌게 했다. */
-  { word:"generate", exams:["공무원"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
+  { word:"generate", exams:["공무원","수능"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
     syn:["produce","create","yield"],
     ex:[{ s:"Solar panels {{}} enough power for the whole building.", f:"generate", ko:"태양 전지판이 건물 전체에 쓸 충분한 전력을 만들어 낸다." }] },
 
@@ -295,7 +295,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '~을 제거하다' 를 첫 자리에 지켰다.
      do away with·eliminate 두 문제가 이 단어를 유의어로 쓴다. */
-  { word:"get rid of", pron:"겟 리드 오브", pos:"phr", level:"B1", meanings:["~을 제거하다","없애다"],
+  { word:"get rid of", exams:["수능"], pron:"겟 리드 오브", pos:"phr", level:"B1", meanings:["~을 제거하다","없애다"],
     syn:["do away with","eliminate","discard"] },
 
   { word:"get through", pron:"겟 스루", pos:"phr", level:"B2", meanings:["극복하다","겪어 내다"],
@@ -363,7 +363,7 @@ window.VOCAB_G = [
     syn:["dreary","bleak","somber"], ant:["cheerful"],
     ex:[{ s:"The waiting room felt cold and {{}}.", f:"gloomy", ko:"대기실은 차갑고 우울한 느낌이었다." }] },
 
-  { word:"glorify", pron:"글로리파이", pos:"v", level:"C1", meanings:["찬미하다","칭송하다"],
+  { word:"glorify", exams:["수능"], pron:"글로리파이", pos:"v", level:"C1", meanings:["찬미하다","칭송하다"],
     syn:["exalt","extol","venerate"], ant:["belittle"],
     ex:[{ s:"The film was accused of trying to {{}} war.", f:"glorify", ko:"그 영화는 전쟁을 찬미하려 했다는 비난을 받았다." }] },
 
@@ -425,7 +425,7 @@ window.VOCAB_G = [
     syn:["epicure","connoisseur","food lover"],
     ex:[{ s:"Only a true {{}} could name every spice in the dish.", f:"gourmet", ko:"진정한 미식가만이 그 요리의 모든 향신료를 짚어낼 수 있었다." }] },
 
-  { word:"govern", pron:"거번", pos:"v", level:"B2", meanings:["다스리다","지배하다"],
+  { word:"govern", exams:["수능"], pron:"거번", pos:"v", level:"B2", meanings:["다스리다","지배하다"],
     syn:["rule","administer","preside over"],
     ex:[{ s:"A council of elders used to {{}} the village.", f:"govern", ko:"원로 회의가 그 마을을 다스리곤 했다." }] },
 

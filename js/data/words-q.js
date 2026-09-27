@@ -68,7 +68,7 @@ window.VOCAB_Q = [
 
   /* 승격 ④ — 사전 표현과 글자까지 같다(amount, A · mass, M). 원본의 '다량' 은
      '양' 과 같은 자리라 붙이지 않았다. */
-  { word:"quantity", pron:"콴터티", pos:"n", level:"B1", meanings:["양","분량"],
+  { word:"quantity", exams:["수능"], pron:"콴터티", pos:"n", level:"B1", meanings:["양","분량"],
     syn:["amount","how much there is","measured portion"],
     ex:[{ s:"A large {{}} of rice was stored.", f:"quantity", ko:"많은 양의 쌀이 저장되었다." }] },
 

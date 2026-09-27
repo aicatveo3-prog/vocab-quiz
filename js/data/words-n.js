@@ -60,7 +60,7 @@ window.VOCAB_N = [
   { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
   { word:"navigate", exams:["공무원","수능"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
-  { word:"no longer", exams:["공무원"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
+  { word:"no longer", exams:["공무원","수능"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
   { word:"no matter how", exams:["공무원","수능"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
   { word:"notification", exams:["공무원"], pron:"노터피케이션", pos:"n", level:"B2", meanings:["통지","알림"], ex:[{ s:"You will receive an email {{}} when the payment is due.", f:"notification", ko:"납부 기한이 되면 이메일 알림을 받게 됩니다." }] },
   { word:"neutrally", exams:["공무원"], pron:"뉴트럴리", pos:"adv", level:"C1", meanings:["중립적으로","공정하게"], syn:["impartially","objectively","even-handedly"], ex:[{ s:"A good judge must listen {{}} to both sides.", f:"neutrally", ko:"훌륭한 판사는 양측의 말을 중립적으로 들어야 한다." }] },
@@ -147,7 +147,7 @@ window.VOCAB_N = [
     syn:["disposition","temperament","inherent quality"],
     ex:[{ s:"It is not in his {{}} to hold a grudge.", f:"nature", ko:"원한을 품는 것은 그의 천성이 아니다." }] },
 
-  { word:"naughty", pron:"노티", pos:"adj", level:"B1", meanings:["버릇없는","개구쟁이인"],
+  { word:"naughty", exams:["수능"], pron:"노티", pos:"adj", level:"B1", meanings:["버릇없는","개구쟁이인"],
     syn:["mischievous","disobedient","badly behaved"], ant:["well-behaved"],
     ex:[{ s:"The {{}} puppy chewed through the cable.", f:"naughty", ko:"버릇없는 강아지가 전선을 물어 끊었다." }] },
 
@@ -159,7 +159,7 @@ window.VOCAB_N = [
     syn:["sailing","wayfinding","course-plotting"],
     ex:[{ s:"Early sailors used the stars for {{}}.", f:"navigation", ko:"초기 뱃사람들은 항해에 별을 썼다." }] },
 
-  { word:"necessarily", pron:"네서세럴리", pos:"adv", level:"B2", meanings:["필연적으로","반드시"],
+  { word:"necessarily", exams:["수능"], pron:"네서세럴리", pos:"adv", level:"B2", meanings:["필연적으로","반드시"],
     syn:["inevitably","of necessity","as a matter of course"],
     ex:[{ s:"A high price does not {{}} mean high quality.", f:"necessarily", ko:"높은 값이 반드시 높은 품질을 뜻하지는 않는다." }] },
 
@@ -222,7 +222,7 @@ window.VOCAB_N = [
     syn:["snuggle","settle cozily","tuck oneself in"],
     ex:[{ s:"The cabin seems to {{}} between two hills.", f:"nestle", ko:"그 오두막은 두 언덕 사이에 아늑하게 자리잡은 듯하다." }] },
 
-  { word:"neural", pron:"뉴럴", pos:"adj", level:"C1", meanings:["신경의","신경계의"],
+  { word:"neural", exams:["수능"], pron:"뉴럴", pos:"adj", level:"C1", meanings:["신경의","신경계의"],
     syn:["nerve-related","of the nervous system","brain-circuit"],
     ex:[{ s:"Learning strengthens {{}} connections.", f:"neural", ko:"배움은 신경의 연결을 튼튼하게 한다." }] },
 
@@ -246,7 +246,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑯ — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      같은 세트의 nonetheless 와 겹치므로 그쪽을 '그렇기는 하지만' 으로 갈랐다. */
-  { word:"nevertheless", exams:["공무원"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
+  { word:"nevertheless", exams:["공무원","수능"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
     syn:["even so","all the same","for all that"],
     ex:[{ s:"The plan was costly; {{}}, the city approved it.", f:"nevertheless", ko:"그 계획은 비쌌지만, 그럼에도 불구하고 시는 승인했다." }] },
 
@@ -300,7 +300,7 @@ window.VOCAB_N = [
   /* nonetheless 는 사전에 없던 낱머다. 챕터 2 의 nevertheless 가 사전 표현
      '그럼에도 불구하고' 를 쓰므로 이쪽을 '그렇기는 하지만' 으로 갈랐다.
      둘은 실제로 같은 뜻이어서 서로 유의어로 등록해 두었다. */
-  { word:"nonetheless", exams:["공무원"], pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
+  { word:"nonetheless", exams:["공무원","수능"], pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
     syn:["nevertheless","in spite of that","just the same"],
     ex:[{ s:"The road was icy; {{}}, the bus ran on time.", f:"nonetheless", ko:"길이 얼었지만, 그렇기는 하지만 버스는 정시에 다녔다." }] },
 
@@ -365,7 +365,7 @@ window.VOCAB_N = [
 
   /* 승격 24 — 사전 표현 '특히, 두드러지게' 를 글자까지 지켰다(in particular, I).
      원본의 '명백히' 는 버렸다 — 부사 셋을 한 표제어에 담을 필요가 없다. */
-  { word:"notably", exams:["공무원"], pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
+  { word:"notably", exams:["공무원","수능"], pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
     syn:["in particular","markedly","above all"],
     ex:[{ s:"Prices rose, {{}} for fresh fruit.", f:"notably", ko:"값이 올랐는데, 특히 신선한 과일이 그랬다." }] },
 

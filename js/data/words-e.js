@@ -790,7 +790,7 @@ window.VOCAB_E = [
   { word:"extroverted", exams:["공무원"], pron:"엑스트러버티드", pos:"adj", level:"C1", meanings:["외향적인"], syn:["outgoing","sociable","gregarious"], ant:["introverted"], ex:[{ s:"Active listening doesn't require an {{}} personality.", f:"extroverted", ko:"적극적 경청에 외향적 성격이 필요한 것은 아니다." }] },
   { word:"employee", exams:["공무원","수능"], pron:"임플로이", pos:"n", level:"B1", meanings:["직원","종업원"], syn:["worker","staff member","staffer"], ant:["employer"], ex:[{ s:"Each {{}} has different working patterns.", f:"employee", ko:"직원마다 서로 다른 업무 방식을 지닌다." }] },
   { word:"entrance", exams:["공무원","수능"], pron:"엔트런스", pos:"n", level:"B1", meanings:["입구"], syn:["entry","doorway","gateway"], ant:["exit"], ex:[{ s:"We are in front of the main {{}} of city hall.", f:"entrance", ko:"우리는 시청 정문 앞에 있다." }] },
-  { word:"exact", exams:["공무원"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
+  { word:"exact", exams:["공무원","수능"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
   { word:"explode", exams:["공무원"], pron:"익스플로드", pos:"v", level:"B1", meanings:["폭발하다"], syn:["blow up","burst","detonate"], ant:["implode"], ex:[{ s:"These products can catch fire or {{}}.", f:"explode", ko:"이 제품들은 불이 붙거나 폭발할 수 있다." }] },
   { word:"exterminator", exams:["공무원"], pron:"익스터미네이터", pos:"n", level:"C1", meanings:["방역업자","해충 구제업자"], ex:[{ s:"Please contact a licensed {{}}.", f:"exterminator", ko:"허가받은 방역업자에게 연락하세요." }] },
   { word:"eager", exams:["공무원","수능"], pron:"이거", pos:"adj", level:"B2", meanings:["열망하는","간절히 바라는"], syn:["keen","avid","enthusiastic","willing"], ant:["reluctant"], ex:[{ s:"Many graduates are {{}} to start their careers.", f:"eager", ko:"많은 졸업생이 어서 경력을 시작하고 싶어 한다." }], gov:{ prep:["to","for"], usage:"be eager to ~ : 몹시 ~하고 싶어 하다 · be eager for ~ : ~을 갈망하다" } },
@@ -865,7 +865,7 @@ window.VOCAB_E = [
     syn:["thrifty","frugal","cost-effective"], ant:["wasteful"],
     ex:[{ s:"A hybrid engine is far more {{}} on long drives.", f:"economical", ko:"하이브리드 엔진은 장거리 운전에서 훨씬 더 경제적이다." }] },
 
-  { word:"economics", pron:"에커나믹스", pos:"n", level:"B2", meanings:["경제학"],
+  { word:"economics", exams:["수능"], pron:"에커나믹스", pos:"n", level:"B2", meanings:["경제학"],
     ex:[{ s:"He dropped law and took up {{}} in his second year.", f:"economics", ko:"그는 2학년 때 법학을 그만두고 경제학을 시작했다." }] },
 
   { word:"ecosystem", exams:["수능"], pron:"이코시스템", pos:"n", level:"B2", meanings:["생태계"],
@@ -893,7 +893,7 @@ window.VOCAB_E = [
     syn:["erase","obliterate","blot out"], ant:["restore"],
     ex:[{ s:"Centuries of wind had begun to {{}} the inscription.", f:"efface", ko:"수백 년의 바람이 그 새긴 글귀를 지우기 시작했다." }] },
 
-  { word:"effectiveness", exams:["공무원"], pron:"이펙티브니스", pos:"n", level:"B2", meanings:["유효성","효과"],
+  { word:"effectiveness", exams:["공무원","수능"], pron:"이펙티브니스", pos:"n", level:"B2", meanings:["유효성","효과"],
     syn:["efficacy","potency","usefulness"], ant:["futility"],
     ex:[{ s:"The trial measured the {{}} of the new vaccine.", f:"effectiveness", ko:"그 임상시험은 새 백신의 유효성을 측정했다." }] },
 
@@ -967,7 +967,7 @@ window.VOCAB_E = [
 
   /* element 는 '요소·원소'다. compound(화합물)의 반의어로 이미 쓰이고 있어
      '원소' 갈래를 버리면 그 문제가 무너진다 — 원본의 '성분'을 '원소'로 둔다. */
-  { word:"element", exams:["공무원"], pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
+  { word:"element", exams:["공무원","수능"], pron:"엘러먼트", pos:"n", level:"B1", meanings:["요소","원소"],
     syn:["component","part","ingredient"], ant:["compound"],
     ex:[{ s:"Trust is the key {{}} in any lasting partnership.", f:"element", ko:"신뢰는 오래가는 모든 동업 관계의 핵심 요소다." }] },
 
@@ -1085,7 +1085,7 @@ window.VOCAB_E = [
     syn:["crisis","urgent situation","critical situation"],
     ex:[{ s:"Dial this number only in a genuine {{}}.", f:"emergency", ko:"진짜 비상사태일 때만 이 번호로 전화하세요." }] },
 
-  { word:"emerging", pron:"이머징", pos:"adj", level:"B2", meanings:["신흥의","최근 생겨난"],
+  { word:"emerging", exams:["수능"], pron:"이머징", pos:"adj", level:"B2", meanings:["신흥의","최근 생겨난"],
     syn:["rising","developing","up-and-coming"], ant:["established"],
     ex:[{ s:"The fund puts most of its money into {{}} markets.", f:"emerging", ko:"그 펀드는 자금 대부분을 신흥 시장에 넣는다." }] },
 
@@ -1163,7 +1163,7 @@ window.VOCAB_E = [
 
   /* 원본은 '(법을) 제정하다; 상연하다; ~을 행하다' 로 갈래가 셋이다 — 대표 2개로
      줄이고 괄호를 풀었다. */
-  { word:"enact", pron:"이낵트", pos:"v", level:"C1", meanings:["제정하다","상연하다"],
+  { word:"enact", exams:["수능"], pron:"이낵트", pos:"v", level:"C1", meanings:["제정하다","상연하다"],
     syn:["legislate","pass into law","put into effect"], ant:["repeal"],
     ex:[{ s:"Parliament moved quickly to {{}} the new safety code.", f:"enact", ko:"의회는 새 안전 규정을 제정하려 빠르게 움직였다." }] },
 
@@ -1359,7 +1359,7 @@ window.VOCAB_E = [
   /* 원본은 '제목을 붙이다, 권리를 부여하다' 순서인데 '권리를 부여하다'를 앞으로
      돌렸다. 시험에 나오는 쪽이고, 3차에서 넣은 GLOSS "entitled":"권리가 있는" 과
      방향이 맞는다. entitled 는 형용사 항목이라 이 동사와 오답 후보로 겹치지 않는다. */
-  { word:"entitle", pron:"인타이털", pos:"v", level:"C1", meanings:["권리를 부여하다","제목을 붙이다"],
+  { word:"entitle", exams:["수능"], pron:"인타이털", pos:"v", level:"C1", meanings:["권리를 부여하다","제목을 붙이다"],
     syn:["authorize","qualify","give the right to"],
     ex:[{ s:"A full ticket will {{}} you to two free refills.", f:"entitle", ko:"정가 티켓은 두 번의 무료 리필을 받을 권리를 부여한다." }] },
 
@@ -1430,7 +1430,7 @@ window.VOCAB_E = [
 
   /* syn 을 비웠다 — 수학 용어다. formula 의 GLOSS 는 "공식; 방법" 이라 '방법' 갈래가
      섞이고, 나머지 후보는 '등식'을 달리 말한 것뿐이다. */
-  { word:"equation", pron:"이퀘이전", pos:"n", level:"C1", meanings:["방정식","등식"],
+  { word:"equation", exams:["수능"], pron:"이퀘이전", pos:"n", level:"C1", meanings:["방정식","등식"],
     ex:[{ s:"He solved the {{}} in three lines.", f:"equation", ko:"그는 그 방정식을 세 줄로 풀었다." }] },
 
   /* equator·equatorial 은 syn 을 비웠다 — 지리 용어에는 바꿔 쓸 낱말이 없다
@@ -1745,7 +1745,7 @@ window.VOCAB_E = [
     ex:[{ s:"The club remains {{}} about who may join.", f:"exclusive", ko:"그 클럽은 누가 가입할 수 있는지에 배타적이다." }] },
 
   /* 원본은 '오로지, 오직 ~만, 배타적으로' 로 셋인데 앞 둘이 같은 말이라 둘로 줄였다. */
-  { word:"exclusively", exams:["공무원"], pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
+  { word:"exclusively", exams:["공무원","수능"], pron:"익스클루시블리", pos:"adv", level:"C1", meanings:["오로지","독점적으로"],
     syn:["only","solely","entirely"],
     ex:[{ s:"The shop sells {{}} secondhand books.", f:"exclusively", ko:"그 가게는 오로지 중고 책만 판다." }] },
 

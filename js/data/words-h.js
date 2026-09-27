@@ -483,7 +483,7 @@ window.VOCAB_H = [
 
   /* 원본은 '인류; 인간성' 이다. humankind 와 첫 뜻이 같다(둘 다 '인류').
      실측으로 앱이 같은 문제에 안 넣는 것을 확인했다(meaningsOverlap=true). */
-  { word:"humanity", pron:"휴매너티", pos:"n", level:"B2", meanings:["인류","인간성"],
+  { word:"humanity", exams:["수능"], pron:"휴매너티", pos:"n", level:"B2", meanings:["인류","인간성"],
     syn:["humankind","mankind","human race"],
     ex:[{ s:"The discovery could benefit all of {{}}.", f:"humanity", ko:"그 발견은 인류 전체에 이로울 수 있다." }] },
 

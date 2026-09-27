@@ -68,7 +68,7 @@ window.VOCAB_U = [
   { word:"unpredictably", exams:["공무원"], pron:"언프리딕터블리", pos:"adv", level:"C1", meanings:["예측할 수 없게","갑자기"] },
   { word:"unplug", exams:["공무원"], pron:"언플러그", pos:"v", level:"B2", meanings:["플러그를 뽑다","잠시 일에서 벗어나다"], ex:[{ s:"Remember to {{}} the heater before you leave.", f:"unplug", ko:"나가기 전에 히터 플러그를 뽑는 것을 잊지 마라." }] },
   { word:"uncertainty", exams:["공무원","수능"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
-  { word:"unrelated", exams:["공무원"], pron:"언릴레이티드", pos:"adj", level:"B2", meanings:["관련 없는","무관한"], syn:["irrelevant","extraneous","unconnected"], ant:["related"], ex:[{ s:"The police said the two fires were {{}}; one was an accident.", f:"unrelated", ko:"경찰은 두 화재가 서로 무관하다고 밝혔다. 하나는 사고였다." }] },
+  { word:"unrelated", exams:["공무원","수능"], pron:"언릴레이티드", pos:"adj", level:"B2", meanings:["관련 없는","무관한"], syn:["irrelevant","extraneous","unconnected"], ant:["related"], ex:[{ s:"The police said the two fires were {{}}; one was an accident.", f:"unrelated", ko:"경찰은 두 화재가 서로 무관하다고 밝혔다. 하나는 사고였다." }] },
   { word:"unfortunate", exams:["수능"], pron:"언포처닛", pos:"adj", level:"B2", meanings:["불운한","유감스러운"], syn:["unlucky","hapless","regrettable"], ant:["fortunate","lucky"], ex:[{ s:"The {{}} traveler lost his passport and missed his flight on the same day.", f:"unfortunate", ko:"그 불운한 여행자는 같은 날 여권을 잃어버리고 비행기도 놓쳤다." }] },
   { word:"unification", exams:["수능"], pron:"유니피케이션", pos:"n", level:"C1", meanings:["통일","통합"], ex:[{ s:"The {{}} of Germany took place in 1990.", f:"unification", ko:"독일 통일은 1990년에 이루어졌다." }] },
   { word:"unlikely", exams:["수능"], pron:"언라이클리", pos:"adj", level:"B1", meanings:["~할 것 같지 않은","있음 직하지 않은"], syn:["improbable","doubtful","implausible"], ant:["likely","probable"], ex:[{ s:"Rain is highly {{}} tomorrow, so you won't need an umbrella.", f:"unlikely", ko:"내일은 비가 올 가능성이 매우 낮으니 우산은 필요 없을 것이다." }] },
@@ -464,7 +464,7 @@ window.VOCAB_U = [
      ★ integrate(융합하다, 통합시키다) 를 유의어로 넣었다 — '통합시키다' 는
      '통합하다' 와 글자가 달라 자동 배제를 빠져나가기 때문이다.
      incorporate·consolidate 는 '통합하다' 가 같아 저절로 배제된다. */
-  { word:"unite", exams:["공무원"], pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
+  { word:"unite", exams:["공무원","수능"], pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
     syn:["combine","integrate","join into one"], ant:["alienate"],
     ex:[{ s:"The war helped to {{}} the clans.", f:"unite", ko:"그 전쟁은 씨족들을 통합하는 데 도움이 됐다." }] },
 
@@ -497,7 +497,7 @@ window.VOCAB_U = [
 
   /* reveal(드러내다, 밝히다)·display(전시하다, 드러내다) 와 '드러내다' 가
      맞물려 배제된다. */
-  { word:"unlock", pron:"언락", pos:"v", level:"B2", meanings:["열다","드러내다"],
+  { word:"unlock", exams:["수능"], pron:"언락", pos:"v", level:"B2", meanings:["열다","드러내다"],
     syn:["reveal","open with a key","let out what was shut in"],
     ex:[{ s:"One key can {{}} both doors.", f:"unlock", ko:"열쇠 하나가 두 문을 다 열 수 있다." }] },
 
@@ -537,7 +537,7 @@ window.VOCAB_U = [
 
   /* 교재의 '지속불가능한' 을 풀어 썼다. ★ 반의어에 sustainable 을 넣었다 —
      앱은 반의어를 오답에서 빼지 않고 일부러 한 개 넣어 뜻의 경계를 묻는다. */
-  { word:"unsustainable", pron:"언서스테이너블", pos:"adj", level:"B2", meanings:["지속할 수 없는"],
+  { word:"unsustainable", exams:["수능"], pron:"언서스테이너블", pos:"adj", level:"B2", meanings:["지속할 수 없는"],
     syn:["not able to keep going","bound to break down","impossible to maintain"], ant:["sustainable"],
     ex:[{ s:"That rate of use is {{}}.", f:"unsustainable", ko:"그 정도의 사용량은 지속할 수 없다." }] },
 

@@ -71,7 +71,7 @@ window.VOCAB_C = [
   { word:"competition", exams:["공무원","수능"], pron:"캄퍼티션", pos:"n", level:"B1", meanings:["경쟁","대회"], syn:["rivalry","contest","contention"], ant:["collaboration"], ex:[{ s:"{{}} among the stores keeps prices low.", f:"Competition", ko:"가게들 사이의 경쟁이 가격을 낮게 유지한다." }] },
   { word:"connectivity", exams:["공무원"], pron:"커넥티비티", pos:"n", level:"C1", meanings:["연결성","접속"], ex:[{ s:"Rural areas still lack fast internet {{}}.", f:"connectivity", ko:"시골 지역은 아직 빠른 인터넷 연결이 부족하다." }] },
   { word:"creatively", exams:["공무원"], pron:"크리에이티블리", pos:"adv", level:"B2", meanings:["창의적으로"], syn:["imaginatively","inventively","innovatively"], ex:[{ s:"The team solved the problem {{}} with very few tools.", f:"creatively", ko:"그 팀은 아주 적은 도구로 문제를 창의적으로 해결했다." }] },
-  { word:"critic", exams:["공무원"], pron:"크리틱", pos:"n", level:"B2", meanings:["평론가","비판자"], syn:["reviewer","commentator","detractor"], ant:["supporter"], ex:[{ s:"The art {{}} looked at the picture carefully.", f:"critic", ko:"그 미술 평론가는 그림을 주의 깊게 살펴보았다." }] },
+  { word:"critic", exams:["공무원","수능"], pron:"크리틱", pos:"n", level:"B2", meanings:["평론가","비판자"], syn:["reviewer","commentator","detractor"], ant:["supporter"], ex:[{ s:"The art {{}} looked at the picture carefully.", f:"critic", ko:"그 미술 평론가는 그림을 주의 깊게 살펴보았다." }] },
   { word:"considerably", exams:["공무원"], pron:"컨시더러블리", pos:"adv", level:"B2", meanings:["상당히","꽤"], syn:["significantly","substantially","markedly"], ant:["marginally"] },
   { word:"catch up on", exams:["공무원"], pron:"캐치 업 온", pos:"phr", level:"B2", meanings:["밀린 ~을 하다","소식 등을 따라잡다"] },
   { word:"caution", exams:["공무원"], pron:"코션", pos:"n", level:"B2", meanings:["조심","경고"], syn:["care","prudence","wariness"], ant:["recklessness"], ex:[{ s:"Drivers should use extra {{}} on icy roads.", f:"caution", ko:"운전자들은 빙판길에서 각별히 조심해야 한다." }] },
@@ -133,7 +133,7 @@ window.VOCAB_C = [
     syn:["compute","reckon","estimate"], ant:["guess"],
     ex:[{ s:"We need to {{}} the total cost before ordering.", f:"calculate", ko:"주문하기 전에 총비용을 계산해야 한다." }] },
 
-  { word:"calculation", pron:"캘큘레이션", pos:"n", level:"B2", meanings:["계산","추산"],
+  { word:"calculation", exams:["수능"], pron:"캘큘레이션", pos:"n", level:"B2", meanings:["계산","추산"],
     syn:["computation","reckoning","estimation"], ant:["guesswork"],
     ex:[{ s:"A single error ruined the whole {{}}.", f:"calculation", ko:"단 하나의 오류가 계산 전체를 망쳤다." }] },
 
@@ -173,12 +173,12 @@ window.VOCAB_C = [
     syn:["applicant","nominee","contender"],
     ex:[{ s:"Only one {{}} met every requirement for the post.", f:"candidate", ko:"그 자리의 모든 요건을 갖춘 지원자는 한 명뿐이었다." }] },
 
-  { word:"canned", pron:"캔드", pos:"adj", level:"B2", meanings:["통조림으로 된","통조림의"],
+  { word:"canned", exams:["수능"], pron:"캔드", pos:"adj", level:"B2", meanings:["통조림으로 된","통조림의"],
     syn:["tinned","preserved","bottled"], ant:["fresh"],
     ex:[{ s:"They lived on {{}} soup for a week.", f:"canned", ko:"그들은 일주일 동안 통조림 수프로 지냈다." }] },
 
   /* ── cap ───────────────────────────────────── */
-  { word:"capability", pron:"케이퍼빌리티", pos:"n", level:"B2", meanings:["능력","역량"],
+  { word:"capability", exams:["수능"], pron:"케이퍼빌리티", pos:"n", level:"B2", meanings:["능력","역량"],
     syn:["ability","competence","skill"], ant:["inability"],
     ex:[{ s:"The team lacks the {{}} to finish on time.", f:"capability", ko:"그 팀은 제때 끝낼 역량이 없다." }] },
 
@@ -240,7 +240,7 @@ window.VOCAB_C = [
     syn:["bearer","transmitter","courier"],
     ex:[{ s:"A healthy {{}} can spread the virus without knowing.", f:"carrier", ko:"건강한 보균자는 모르는 채로 바이러스를 퍼뜨릴 수 있다." }] },
 
-  { word:"carry out", exams:["공무원"], pron:"캐리 아웃", pos:"phr", level:"B1", meanings:["수행하다","실행하다"],
+  { word:"carry out", exams:["공무원","수능"], pron:"캐리 아웃", pos:"phr", level:"B1", meanings:["수행하다","실행하다"],
     syn:["perform","execute","conduct"], ant:["abandon"] },
 
   { word:"cartographic", pron:"카토그래픽", pos:"adj", level:"C2", meanings:["지도 제작의"],
@@ -410,7 +410,7 @@ window.VOCAB_C = [
     syn:["pottery","porcelain","earthenware"],
     ex:[{ s:"She sells hand-painted {{}} at the market.", f:"ceramics", ko:"그녀는 시장에서 손으로 그린 도자기를 판다." }] },
 
-  { word:"ceremony", pron:"세러모니", pos:"n", level:"B1", meanings:["예식","의례"],
+  { word:"ceremony", exams:["수능"], pron:"세러모니", pos:"n", level:"B1", meanings:["예식","의례"],
     syn:["ritual","rite","service"],
     ex:[{ s:"The graduation {{}} lasted barely an hour.", f:"ceremony", ko:"졸업식은 겨우 한 시간 만에 끝났다." }] },
 
@@ -878,7 +878,7 @@ window.VOCAB_C = [
     syn:["seize","appropriate","requisition"], ant:["return"],
     ex:[{ s:"Troops began to {{}} private trucks for the retreat.", f:"commandeer", ko:"군대는 후퇴를 위해 민간 트럭을 징발하기 시작했다." }] },
 
-  { word:"commander", pron:"커맨더", pos:"n", level:"B2", meanings:["사령관","지휘자"],
+  { word:"commander", exams:["수능"], pron:"커맨더", pos:"n", level:"B2", meanings:["사령관","지휘자"],
     /* ★ ant 의 "subordinate" 를 "person of lower rank" 로 바꿨다. 사전이
        '부하; 하급의' 로 명사와 형용사를 섞어 두었는데, 참조 셋 중 둘
        (dominant·inferior) 이 형용사여서 S 세트에서는 형용사 '종속된, 부수적인'
@@ -1046,7 +1046,7 @@ window.VOCAB_C = [
     syn:["rivalrous","aggressive","ambitious"], ant:["cooperative"],
     ex:[{ s:"The market here is fiercely {{}}.", f:"competitive", ko:"이곳 시장은 경쟁이 치열하다." }] },
 
-  { word:"competitiveness", pron:"컴페터티브니스", pos:"n", level:"C1", meanings:["경쟁력"],
+  { word:"competitiveness", exams:["수능"], pron:"컴페터티브니스", pos:"n", level:"C1", meanings:["경쟁력"],
     syn:["edge","strength","rivalry"],
     ex:[{ s:"Training raised the firm's {{}} within a year.", f:"competitiveness", ko:"교육은 1년 만에 그 회사의 경쟁력을 높였다." }] },
 
@@ -1484,7 +1484,7 @@ window.VOCAB_C = [
     syn:["buyer","shopper","user"], ant:["producer"],
     ex:[{ s:"The average {{}} never reads the label.", f:"consumer", ko:"보통 소비자는 라벨을 결코 읽지 않는다." }] },
 
-  { word:"consumption", exams:["공무원"], pron:"컨섬션", pos:"n", level:"B2", meanings:["소비","소비량"],
+  { word:"consumption", exams:["공무원","수능"], pron:"컨섬션", pos:"n", level:"B2", meanings:["소비","소비량"],
     syn:["use","intake","expenditure"], ant:["production"],
     ex:[{ s:"Meat {{}} has fallen steadily since 2010.", f:"consumption", ko:"육류 소비는 2010년 이후 꾸준히 줄었다." }] },
 
@@ -1649,7 +1649,7 @@ window.VOCAB_C = [
     syn:["metal","bronze","brass"],
     ex:[{ s:"The old pipes were made of {{}}.", f:"copper", ko:"낡은 배관은 구리로 만들어져 있었다." }] },
 
-  { word:"copyright", pron:"카피라이트", pos:"n", level:"B2", meanings:["저작권","판권"],
+  { word:"copyright", exams:["수능"], pron:"카피라이트", pos:"n", level:"B2", meanings:["저작권","판권"],
     syn:["patent","ownership","license"],
     ex:[{ s:"The song is still under {{}}.", f:"copyright", ko:"그 노래는 여전히 저작권 보호를 받는다." }] },
 
@@ -1684,7 +1684,7 @@ window.VOCAB_C = [
 
   /* 원문은 '인과관계'를 함께 적었지만, 상관관계와 인과관계를 구별하는 것이
      이 단어의 핵심이므로(causality의 예문이 바로 그 이야기다) 넣지 않는다 */
-  { word:"correlation", exams:["공무원"], pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
+  { word:"correlation", exams:["공무원","수능"], pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
     syn:["connection","link","relationship"],
     ex:[{ s:"There is only a weak {{}} between the two.", f:"correlation", ko:"그 둘 사이에는 약한 상관관계만 있다." }] },
 
@@ -1934,7 +1934,7 @@ window.VOCAB_C = [
     syn:["hybridize","interbreed","mix"],
     ex:[{ s:"Farmers began to {{}} the two varieties.", f:"crossbreed", ko:"농부들은 두 품종을 교배하기 시작했다." }] },
 
-  { word:"cross-cultural", pron:"크로스 컬처럴", pos:"adj", level:"C1", meanings:["문화간의"],
+  { word:"cross-cultural", exams:["수능"], pron:"크로스 컬처럴", pos:"adj", level:"C1", meanings:["문화간의"],
     syn:["intercultural","multicultural","comparative"],
     ex:[{ s:"The study is a {{}} comparison of diets.", f:"cross-cultural", ko:"그 연구는 식단에 대한 문화간 비교다." }] },
 
@@ -2031,7 +2031,7 @@ window.VOCAB_C = [
     syn:["restriction","ban","lockdown"],
     ex:[{ s:"A nightly {{}} was imposed for a month.", f:"curfew", ko:"한 달간 야간 통행금지령이 내려졌다." }] },
 
-  { word:"curious", pron:"큐리어스", pos:"adj", level:"B1", meanings:["호기심이 많은","궁금한"],
+  { word:"curious", exams:["수능"], pron:"큐리어스", pos:"adj", level:"B1", meanings:["호기심이 많은","궁금한"],
     syn:["inquisitive","interested","nosy"], ant:["indifferent"],
     ex:[{ s:"She was {{}} about the locked room upstairs.", f:"curious", ko:"그녀는 위층 잠긴 방에 대해 궁금해했다." }],
     gov:{ prep:["about"], pat:"curious {{}} the outcome", usage:"be curious about ~ : ~를 궁금해하다" } },

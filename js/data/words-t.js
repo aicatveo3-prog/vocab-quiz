@@ -278,7 +278,7 @@ window.VOCAB_T = [
     ex:[{ s:"The {{}} fell below zero.", f:"temperature", ko:"기온이 영도 아래로 떨어졌다." }] },
 
   /* 교재 '신전, 성당, 절' 세 갈래 → 둘. */
-  { word:"temple", pron:"템플", pos:"n", level:"B1", meanings:["신전","절"],
+  { word:"temple", exams:["수능"], pron:"템플", pos:"n", level:"B1", meanings:["신전","절"],
     syn:["house of worship","shrine building","place for prayer"],
     ex:[{ s:"They walked up to the old {{}}.", f:"temple", ko:"그들은 오래된 절까지 걸어 올라갔다." }] },
 
@@ -302,7 +302,7 @@ window.VOCAB_T = [
     ex:[{ s:"The band raised the {{}}.", f:"tempo", ko:"그 악단이 속도를 올렸다." }] },
 
   /* 교재가 앞세운 '속세의' 는 드문 쪽이라 순서를 바꿨다. */
-  { word:"temporal", pron:"템퍼럴", pos:"adj", level:"C1", meanings:["시간의","속세의"],
+  { word:"temporal", exams:["수능"], pron:"템퍼럴", pos:"adj", level:"C1", meanings:["시간의","속세의"],
     syn:["to do with time","bound by time","of this world"],
     ex:[{ s:"The study looks at {{}} change.", f:"temporal", ko:"그 연구는 시간의 변화를 살핀다." }] },
 
@@ -340,7 +340,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑱ — 사전 단일값 유지. 참조 inclination(I) 의 화면은 바뀌지 않는다.
      교재의 '경향' 은 inclination 자리다. */
-  { word:"tendency", exams:["공무원"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
+  { word:"tendency", exams:["공무원","수능"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
     syn:["inclination","predisposition","leaning one way"],
     ex:[{ s:"He has a {{}} to talk too fast.", f:"tendency", ko:"그는 너무 빨리 말하는 성향이 있다." }] },
 
@@ -684,7 +684,7 @@ window.VOCAB_T = [
     syn:["cut wood for building","wood as material","sawn wood"],
     ex:[{ s:"The roof is made of {{}}.", f:"timber", ko:"그 지붕은 목재로 만들어졌다." }] },
 
-  { word:"timely", pron:"타임리", pos:"adj", level:"B2", meanings:["시기적절한","때맞춘"],
+  { word:"timely", exams:["수능"], pron:"타임리", pos:"adj", level:"B2", meanings:["시기적절한","때맞춘"],
     syn:["coming at the right moment","well timed","not too late"],
     ex:[{ s:"It was a {{}} warning.", f:"timely", ko:"그것은 시기적절한 경고였다." }] },
 
@@ -1297,7 +1297,7 @@ window.VOCAB_T = [
 
   /* '수업' 은 lesson(교훈, 수업 · B1/n) 자리라 쓰지 않았다. 첫 뜻이 '수업료'
      와 '교훈' 이어서 화면에서 확실히 갈린다. */
-  { word:"tuition", pron:"투이션", pos:"n", level:"B2", meanings:["수업료"],
+  { word:"tuition", exams:["수능"], pron:"투이션", pos:"n", level:"B2", meanings:["수업료"],
     syn:["fee for teaching","charge for a course","money paid to study"],
     ex:[{ s:"The {{}} went up again.", f:"tuition", ko:"그 수업료가 또 올랐다." }] },
 
@@ -1330,7 +1330,7 @@ window.VOCAB_T = [
     syn:["hand back","give up what was lent","return to the owner"] },
 
   /* 승격 85 — 사전 단일값 유지(참조 end up). */
-  { word:"turn out", exams:["공무원"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
+  { word:"turn out", exams:["공무원","수능"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
     syn:["end up","prove to be so","come out in the end"] },
 
   /* 승격 86 — 사전 단일값 유지(참조 flip). */
@@ -1362,7 +1362,7 @@ window.VOCAB_T = [
 
   /* 승격 89 — ★ 교재의 '전형적인' 을 앞세우고 사전값 '으레 그런' 을 둘째
      갈래로 살렸다. 참조 odd(O) 의 반의어 화면이 한 줄 늘어난다. */
-  { word:"typical", exams:["공무원"], pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
+  { word:"typical", exams:["공무원","수능"], pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
     syn:["standing for the whole kind","just as one would expect","true to type"], ant:["odd"],
     ex:[{ s:"That is a {{}} winter here.", f:"typical", ko:"그것이 이곳의 전형적인 겨울이다." }] },
 
