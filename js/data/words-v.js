@@ -56,6 +56,7 @@ window.VOCAB_V = [
   { word:"visible", exams:["수능"], pron:"비저블", pos:"adj", level:"B1", meanings:["보이는","눈에 띄는"], ex:[{ s:"On sunny days, the mountain top is {{}} from our window.", f:"visible", ko:"맑은 날에는 우리 집 창문에서 산꼭대기가 보인다." }] },
   { word:"valuable", exams:["수능"], pron:"밸류어블", pos:"adj", level:"B1", meanings:["귀중한","값비싼"], ex:[{ s:"Don't leave {{}} items in your car.", f:"valuable", ko:"차 안에 귀중품을 두지 마세요." }] },
   { word:"veil", exams:["수능"], pron:"베일", pos:"v", level:"C1", meanings:["가리다","감추다"], syn:["conceal","mask","shroud"], ant:["reveal"], ex:[{ s:"Thick clouds often {{}} the top of the mountain.", f:"veil", ko:"짙은 구름이 산꼭대기를 자주 가린다." }] },
+  { word:"valued", exams:["수능"], pron:"밸류드", pos:"adj", level:"C1", meanings:["소중한","존중받는"], syn:["prized","cherished","esteemed"], ex:[{ s:"Every {{}} customer receives a birthday coupon.", f:"valued", ko:"소중한 고객 모두에게 생일 쿠폰을 드립니다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8

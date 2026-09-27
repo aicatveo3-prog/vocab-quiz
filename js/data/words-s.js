@@ -159,6 +159,12 @@ window.VOCAB_S = [
   { word:"sustainability", exams:["수능"], pron:"서스테이너빌리티", pos:"n", level:"C1", meanings:["지속 가능성"], ex:[{ s:"Farmers now think more about the {{}} of their land.", f:"sustainability", ko:"이제 농부들은 자기 땅의 지속 가능성을 더 많이 생각한다." }] },
   { word:"systematize", exams:["수능"], pron:"시스터머타이즈", pos:"v", level:"C1", meanings:["체계화하다"], syn:["organize","arrange","order"], ex:[{ s:"Scientists try to {{}} their knowledge into clear laws.", f:"systematize", ko:"과학자들은 지식을 명확한 법칙으로 체계화하려 한다." }] },
   { word:"secretly", exams:["수능"], pron:"시크리틀리", pos:"adv", level:"B2", meanings:["몰래","비밀리에"] },
+  { word:"shaky", exams:["수능"], pron:"셰이키", pos:"adj", level:"B2", meanings:["흔들리는","불안한"], syn:["unstable","unsteady","wobbly"], ex:[{ s:"The newborn deer stood up on {{}} legs.", f:"shaky", ko:"갓 태어난 사슴이 후들거리는 다리로 일어섰다." }] },
+  { word:"sidestep", exams:["수능"], pron:"사이드스텝", pos:"v", level:"C1", meanings:["회피하다","비켜 가다"], syn:["evade","dodge","circumvent"], ex:[{ s:"The politician tried to {{}} the difficult question.", f:"sidestep", ko:"그 정치인은 어려운 질문을 피해 가려 했다." }] },
+  { word:"sorrowful", exams:["수능"], pron:"사로풀", pos:"adj", level:"C1", meanings:["슬픈","비탄에 잠긴"], ex:[{ s:"The {{}} song made many listeners cry.", f:"sorrowful", ko:"그 슬픈 노래에 많은 청취자가 울었다." }] },
+  { word:"spark", exams:["수능"], pron:"스파크", pos:"v", level:"B2", meanings:["촉발하다","불러일으키다"], syn:["trigger","provoke","ignite"], ex:[{ s:"Good books can {{}} a child's curiosity.", f:"spark", ko:"좋은 책은 아이의 호기심을 불러일으킬 수 있다." }] },
+  { word:"strategist", exams:["수능"], pron:"스트래터지스트", pos:"n", level:"C1", meanings:["전략가"], ex:[{ s:"The military {{}} planned every move of the battle.", f:"strategist", ko:"그 군사 전략가는 전투의 모든 움직임을 계획했다." }] },
+  { word:"subconsciously", exams:["수능"], pron:"섭칸셔슬리", pos:"adv", level:"C1", meanings:["잠재의식적으로","무의식적으로"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -2912,6 +2918,7 @@ Object.assign(window.GLOSS, {
   "choice made": "내린 고름",
   "choosing with care": "조심해서 고르는",
   "church talk": "교회에서 하는 말씀",
+  "circumvent": "피해 가다, 우회하다",
   "claiming the role oneself": "그 자리를 제 것이라 하는",
   "class of plant or animal": "식물이나 동물의 부류",
   "claw at": "손톱으로 할퀴다",
@@ -3833,6 +3840,7 @@ Object.assign(window.GLOSS, {
   "underwater vessel": "물밑을 다니는 선박",
   "unease at being watched": "보여지는 데서 오는 불편함",
   "unopened flower": "아직 피지 않은 꽃",
+  "unsteady": "불안정한, 휘청거리는",
   "until this point": "이 시점까지",
   "unwanted result": "바라지 않은 결과",
   "unwilling to give": "내주기를 꺼리는",
@@ -3878,6 +3886,7 @@ Object.assign(window.GLOSS, {
   "without company": "함께할 이가 없는",
   "without shame": "부끄러움 없이",
   "witty attack in writing": "글로 재치 있게 찌름",
+  "wobbly": "흔들흔들하는",
   "words making a full thought": "한 생각을 다 담은 말",
   "work hard at": "~에 힘을 쏟다",
   "working for oneself": "제 일을 제가 하는",

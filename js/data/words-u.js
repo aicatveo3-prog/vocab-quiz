@@ -94,6 +94,11 @@ window.VOCAB_U = [
   { word:"unsuccessful", exams:["수능"], pron:"언석세스풀", pos:"adj", level:"B2", meanings:["성공하지 못한","실패한"], ex:[{ s:"The search was {{}}; the missing hiker was never found.", f:"unsuccessful", ko:"수색은 실패로 끝났고, 실종된 등산객은 끝내 발견되지 않았다." }] },
   { word:"untouched", exams:["수능"], pron:"언터치트", pos:"adj", level:"C1", meanings:["손대지 않은","그대로인"], syn:["intact","undamaged","unspoiled"], ex:[{ s:"He left his dinner {{}} because he wasn't hungry.", f:"untouched", ko:"그는 배가 고프지 않아서 저녁을 손도 대지 않았다." }] },
   { word:"unwilling", exams:["수능"], pron:"언윌링", pos:"adj", level:"B2", meanings:["꺼리는","내키지 않는"], ex:[{ s:"Many people are {{}} to change their daily habits.", f:"unwilling", ko:"많은 사람이 일상 습관을 바꾸기를 꺼린다." }] },
+  { word:"uncommon", exams:["수능"], pron:"언카먼", pos:"adj", level:"B2", meanings:["흔하지 않은","드문"], syn:["unusual","rare","scarce"], ant:["common"], ex:[{ s:"It is not {{}} to see deer in this park at dawn.", f:"uncommon", ko:"새벽에 이 공원에서 사슴을 보는 것은 드문 일이 아니다." }] },
+  { word:"underrepresented", exams:["수능"], pron:"언더레프리젠티드", pos:"adj", level:"C1", meanings:["과소 대표된","충분히 대표되지 않은"], ex:[{ s:"Women are still {{}} in science and engineering.", f:"underrepresented", ko:"여성은 여전히 과학과 공학 분야에서 수가 적다." }] },
+  { word:"unfit", exams:["수능"], pron:"언핏", pos:"adj", level:"B2", meanings:["부적합한","건강하지 않은"], syn:["unsuitable","inappropriate","unsuited"], ant:["fit"], ex:[{ s:"The old house was {{}} for a family with small children.", f:"unfit", ko:"그 낡은 집은 어린아이가 있는 가족에게 적합하지 않았다." }] },
+  { word:"unify", exams:["수능"], pron:"유너파이", pos:"v", level:"C1", meanings:["통합하다","통일하다"], syn:["unite","integrate","merge"], ex:[{ s:"The king worked hard to {{}} the divided country.", f:"unify", ko:"왕은 분열된 나라를 통일하려고 애썼다." }] },
+  { word:"unsuited", exams:["수능"], pron:"언수티드", pos:"adj", level:"C1", meanings:["적합하지 않은","어울리지 않는"], ex:[{ s:"He was {{}} to office work and soon quit.", f:"unsuited", ko:"그는 사무직이 맞지 않아 곧 그만두었다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -896,7 +901,6 @@ Object.assign(window.GLOSS, {
   "said straight out": "곧바로 내놓고 말한",
   "sell cheaper than": "~보다 싸게 팔다",
   "set about doing": "~하기에 나서다",
-  "shaky": "흔들리는, 불안한",
   "show for the first time": "처음으로 내보이다",
   "show the way in": "들어갈 길을 알려 주다",
   "simple to work with": "다루기 수월한",
@@ -934,7 +938,6 @@ Object.assign(window.GLOSS, {
   "turning up all over": "곳곳에서 나타나는",
   "turns of fortune": "운이 뒤바뀌는 일",
   "unable to relax": "도무지 풀어지지 않는",
-  "uncommon": "흔하지 않은",
   "unconnected": "연관 없는",
   "uncrewed": "승무원이 없는",
   "under the waves": "물결 아래의",

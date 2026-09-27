@@ -1641,7 +1641,6 @@ Object.assign(window.GLOSS, {
   "time limit":"제한 시간",
   "trade in":"~을 거래하다",
   "trickle": "졸졸 흐르다",
-  "troubled": "근심하는, 골치 아픈",
   "undiscriminating": "안목 없는, 가리지 않는",
   "unprotected": "보호받지 못하는",
   "unregulated": "규제되지 않은",

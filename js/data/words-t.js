@@ -74,6 +74,11 @@ window.VOCAB_T = [
   { word:"traditionally", exams:["수능"], pron:"트러디셔널리", pos:"adv", level:"B2", meanings:["전통적으로","관례상"] },
   { word:"time-consuming", exams:["수능"], pron:"타임 컨수밍", pos:"adj", level:"B2", meanings:["시간이 많이 걸리는"], syn:["lengthy","laborious","tedious","tiresome"], ex:[{ s:"Writing letters by hand is more {{}} than typing.", f:"time-consuming", ko:"손으로 편지를 쓰는 것은 타자를 치는 것보다 시간이 더 걸린다." }] },
   { word:"traditional", exams:["수능"], pron:"트러디셔널", pos:"adj", level:"B1", meanings:["전통적인","전통의"], ex:[{ s:"Hanbok is the {{}} dress of Korea.", f:"traditional", ko:"한복은 한국의 전통 의상이다." }] },
+  { word:"tale", exams:["수능"], pron:"테일", pos:"n", level:"B2", meanings:["이야기","설화"], ex:[{ s:"The children loved the {{}} of the brave little mouse.", f:"tale", ko:"아이들은 용감한 생쥐 이야기를 무척 좋아했다." }] },
+  { word:"temporarily", exams:["수능"], pron:"템퍼레럴리", pos:"adv", level:"B2", meanings:["일시적으로","임시로"] },
+  { word:"token", exams:["수능"], pron:"토컨", pos:"n", level:"B2", meanings:["표시","상징"], ex:[{ s:"This small gift is our {{}} of thanks for your help.", f:"token", ko:"이 작은 선물은 도와주신 데 대한 감사의 표시입니다." }] },
+  { word:"troubled", exams:["수능"], pron:"트러블드", pos:"adj", level:"B2", meanings:["근심하는","문제가 많은"], syn:["worried","anxious","distressed"], ex:[{ s:"He looked {{}} after hearing the bad news.", f:"troubled", ko:"그는 나쁜 소식을 듣고 근심스러워 보였다." }] },
+  { word:"twist", exams:["수능"], pron:"트위스트", pos:"v", level:"B2", meanings:["비틀다","삐다"], syn:["distort","bend","warp"], ex:[{ s:"Be careful not to {{}} your ankle on the rocks.", f:"twist", ko:"바위에서 발목을 삐지 않도록 조심해라." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

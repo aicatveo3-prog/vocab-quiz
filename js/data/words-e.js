@@ -2283,7 +2283,6 @@ Object.assign(window.GLOSS, {
   "threatened":"위협받는",
   "unending":"그침이 없는",
   "vouch for":"보증하다",
-  "wickedness": "사악함",
   "wind up":"결국 ~에 이르다",
 
   /* ── 6차: enormous ~ environment-friendly (39개) ───────────────── */

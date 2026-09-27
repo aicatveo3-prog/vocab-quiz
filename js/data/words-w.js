@@ -68,6 +68,7 @@ window.VOCAB_W = [
   { word:"wealth", exams:["수능"], pron:"웰스", pos:"n", level:"B1", meanings:["부","재산"], syn:["fortune","riches","affluence"], ant:["poverty"], ex:[{ s:"He gave most of his {{}} to charity.", f:"wealth", ko:"그는 재산 대부분을 자선 단체에 기부했다." }] },
   { word:"worth", exams:["수능"], pron:"워스", pos:"adj", level:"B1", meanings:["~할 가치가 있는","~의 값어치가 있는"], ex:[{ s:"The new museum is well {{}} a visit.", f:"worth", ko:"새 박물관은 충분히 가 볼 만하다." }] },
   { word:"worldview", exams:["수능"], pron:"월드뷰", pos:"n", level:"C1", meanings:["세계관"], syn:["outlook","perspective","ideology"], ex:[{ s:"Traveling abroad can change a person's {{}}.", f:"worldview", ko:"해외여행은 사람의 세계관을 바꿀 수 있다." }] },
+  { word:"wickedness", exams:["수능"], pron:"위키드니스", pos:"n", level:"C1", meanings:["사악함","악행"], ex:[{ s:"The villain's {{}} shocked the audience.", f:"wickedness", ko:"악당의 사악함에 관객은 충격을 받았다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11

@@ -3102,7 +3102,6 @@ Object.assign(window.GLOSS, {
   "useful in real life": "실생활에 쓸모 있는",
   "user identity": "쓰는 이의 신분",
   "user-to-user": "쓰는 이끼리의",
-  "valued": "귀중한, 존중받는",
   "very deep in meaning": "뜻이 매우 깊은",
   "wage packet": "급료 봉투",
   "waiting to develop": "펼쳐지기를 기다리는",
