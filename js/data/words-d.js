@@ -123,9 +123,9 @@ window.VOCAB_D = [
   { word:"disempower", exams:["공무원"], pron:"디스임파워", pos:"v", level:"C2", meanings:["무력하게 만들다","권한을 빼앗다"], ant:["empower"], ex:[{ s:"Not knowing how AI decides can {{}} users.", f:"disempower", ko:"AI가 어떻게 결정하는지 모르면 사용자는 무력해질 수 있다." }] },
   { word:"dealer", exams:["공무원"], pron:"딜러", pos:"n", level:"B1", meanings:["상인","판매업자"], syn:["merchant","trader","broker"], ex:[{ s:"One of my friends is a used car {{}}.", f:"dealer", ko:"내 친구 중 한 명이 중고차 판매상이다." }] },
   { word:"dedicated", exams:["공무원","수능"], pron:"데디케이티드", pos:"adj", level:"B2", meanings:["헌신적인","전념하는"], syn:["devoted","committed","loyal"], ex:[{ s:"The museum is {{}} to the study of the independence movement.", f:"dedicated", ko:"그 박물관은 독립운동 연구에 전념한다." }], gov:{ prep:["to"], usage:"be dedicated to ~ : ~에 전념하다, ~을 위한 것이다" } },
-  { word:"deepen", exams:["공무원"], pron:"디펀", pos:"v", level:"B2", meanings:["깊게 하다","심화시키다"], syn:["intensify","heighten","strengthen"], ex:[{ s:"Educational programs {{}} historical understanding among citizens.", f:"deepen", ko:"교육 프로그램은 시민들의 역사 이해를 깊게 한다." }] },
+  { word:"deepen", exams:["공무원","수능"], pron:"디펀", pos:"v", level:"B2", meanings:["깊게 하다","심화시키다"], syn:["intensify","heighten","strengthen"], ex:[{ s:"Educational programs {{}} historical understanding among citizens.", f:"deepen", ko:"교육 프로그램은 시민들의 역사 이해를 깊게 한다." }] },
   { word:"defense", exams:["공무원"], pron:"디펜스", pos:"n", level:"B1", meanings:["방어","수비"], syn:["protection","security","guard"], ant:["attack","offense"], ex:[{ s:"More daytime sunlight gives children a better {{}} against blue light.", f:"defense", ko:"낮에 햇빛을 더 쬐면 아이들은 블루라이트를 더 잘 막아 낸다." }], gov:{ prep:["against"], usage:"(a) defense against ~ : ~에 대한 방어" } },
-  { word:"driving force", exams:["공무원"], pron:"드라이빙 포스", pos:"phr", level:"B2", meanings:["원동력","추진력"] },
+  { word:"driving force", exams:["공무원","수능"], pron:"드라이빙 포스", pos:"phr", level:"B2", meanings:["원동력","추진력"] },
   { word:"dependence", exams:["공무원","수능"], pron:"디펜던스", pos:"n", level:"B2", meanings:["의존","의존성"], ant:["independence","autonomy"], ex:[{ s:"Latin America is reducing its {{}} on oil.", f:"dependence", ko:"라틴 아메리카는 석유 의존도를 줄이고 있다." }], gov:{ prep:["on","upon"], usage:"dependence on ~ : ~에 대한 의존" } },
   { word:"deception", exams:["공무원"], pron:"디셉션", pos:"n", level:"C1", meanings:["속임","사기"], syn:["deceit","fraud","trickery"], ant:["honesty"], ex:[{ s:"The scheme relied on {{}} to win over investors.", f:"deception", ko:"그 계획은 투자자를 끌어들이려고 속임수에 기댔다." }] },
   { word:"dedication", exams:["공무원"], pron:"데디케이션", pos:"n", level:"B2", meanings:["전념","헌신"], syn:["commitment","devotion","zeal"], ex:[{ s:"Only years of {{}} can turn talent into success.", f:"dedication", ko:"오랜 헌신만이 재능을 성공으로 바꿀 수 있다." }] },
@@ -278,7 +278,7 @@ window.VOCAB_D = [
     syn:["mislead","delude","trick"], ant:["enlighten"],
     ex:[{ s:"He {{}} the investors with figures he had invented himself.", f:"deceived", ko:"그는 자신이 만들어낸 수치로 투자자들을 속였다." }] },
 
-  { word:"decent", pron:"디선트", pos:"adj", level:"B2", meanings:["예의 바른","괜찮은"],
+  { word:"decent", exams:["수능"], pron:"디선트", pos:"adj", level:"B2", meanings:["예의 바른","괜찮은"],
     syn:["respectable","proper","satisfactory"], ant:["indecent"],
     ex:[{ s:"She earns a {{}} living translating technical manuals.", f:"decent", ko:"그녀는 기술 설명서를 번역하며 괜찮은 생활을 한다." }] },
 
@@ -591,7 +591,7 @@ window.VOCAB_D = [
     syn:["dispossess","divest","rob"], ant:["grant"],
     ex:[{ s:"The new law could {{}} thousands of people of their benefits.", f:"deprive", ko:"그 새 법은 수천 명에게서 수급 자격을 빼앗을 수 있다." }] },
 
-  { word:"depth", exams:["공무원"], pron:"뎁스", pos:"n", level:"B1", meanings:["깊이","심도"],
+  { word:"depth", exams:["공무원","수능"], pron:"뎁스", pos:"n", level:"B1", meanings:["깊이","심도"],
     syn:["deepness","profundity","thoroughness"],
     ex:[{ s:"Divers measured the {{}} of the lake at sixty meters.", f:"depth", ko:"잠수부들은 그 호수의 깊이를 60미터로 측정했다." }] },
 
@@ -1216,7 +1216,7 @@ window.VOCAB_D = [
     syn:["allocation","dispersal","circulation"],
     ex:[{ s:"The company handles {{}} across three countries.", f:"distribution", ko:"그 회사는 세 나라에 걸친 유통을 담당한다." }] },
 
-  { word:"disturb", pron:"디스터브", pos:"v", level:"B1", meanings:["방해하다","어지럽히다"],
+  { word:"disturb", exams:["수능"], pron:"디스터브", pos:"v", level:"B1", meanings:["방해하다","어지럽히다"],
     syn:["bother","interrupt","unsettle"],
     ex:[{ s:"Please do not {{}} the birds while they are nesting.", f:"disturb", ko:"새들이 둥지를 틀 동안 방해하지 마세요." }] },
 
@@ -1329,7 +1329,7 @@ window.VOCAB_D = [
     syn:["tamed","trained","house-trained"], ant:["wild"],
     ex:[{ s:"Cats were {{}} much later than dogs.", f:"domesticated", ko:"고양이는 개보다 훨씬 늦게 길들여졌다." }] },
 
-  { word:"dominant", pron:"다머넌트", pos:"adj", level:"B2", meanings:["지배적인","우세한"],
+  { word:"dominant", exams:["수능"], pron:"다머넌트", pos:"adj", level:"B2", meanings:["지배적인","우세한"],
     syn:["prevailing","leading","predominant"], ant:["subordinate"],
     ex:[{ s:"English remains the {{}} language of science.", f:"dominant", ko:"영어는 여전히 과학의 지배적인 언어다." }] },
 
@@ -1494,7 +1494,7 @@ window.VOCAB_D = [
     syn:["sleepy","lethargic","sluggish"], ant:["alert"],
     ex:[{ s:"The medicine may make you feel rather {{}}.", f:"drowsy", ko:"그 약은 다소 졸리게 할 수 있다." }] },
 
-  { word:"dual", pron:"듀얼", pos:"adj", level:"B2", meanings:["이중의","둘의"],
+  { word:"dual", exams:["수능"], pron:"듀얼", pos:"adj", level:"B2", meanings:["이중의","둘의"],
     syn:["twofold","double","binary"], ant:["single"],
     ex:[{ s:"She holds {{}} citizenship in two countries.", f:"dual", ko:"그녀는 두 나라의 이중 국적을 갖고 있다." }] },
 
@@ -1525,7 +1525,7 @@ window.VOCAB_D = [
     syn:["copy","replicate","reproduce"],
     ex:[{ s:"It is hard to {{}} those results in another lab.", f:"duplicate", ko:"다른 실험실에서 그 결과를 재현하기는 어렵다." }] },
 
-  { word:"duration", exams:["공무원"], pron:"두레이션", pos:"n", level:"C1", meanings:["지속 기간","기간"],
+  { word:"duration", exams:["공무원","수능"], pron:"두레이션", pos:"n", level:"C1", meanings:["지속 기간","기간"],
     syn:["length","period","span"],
     ex:[{ s:"The {{}} of the treatment is about six weeks.", f:"duration", ko:"그 치료의 지속 기간은 약 6주다." }] },
 

@@ -314,7 +314,7 @@ window.VOCAB_S = [
     syn:["mocking","using ridicule","ironic in tone"],
     ex:[{ s:"He writes {{}} essays for the paper.", f:"satirical", ko:"그는 신문에 풍자적인 글을 쓴다." }] },
 
-  { word:"satisfying", pron:"새티스파잉", pos:"adj", level:"B1", meanings:["만족스러운"],
+  { word:"satisfying", exams:["수능"], pron:"새티스파잉", pos:"adj", level:"B1", meanings:["만족스러운"],
     syn:["pleasing","fulfilling","giving contentment"], ant:["disappointing"],
     ex:[{ s:"The long walk was deeply {{}}.", f:"satisfying", ko:"그 긴 산책은 아주 만족스러웠다." }] },
 
@@ -605,7 +605,7 @@ window.VOCAB_S = [
     syn:["grab","capture","take by force"],
     ex:[{ s:"Police will {{}} the goods at the border.", f:"seize", ko:"경찰이 국경에서 그 물품을 압수할 것이다." }] },
 
-  { word:"seldom", exams:["공무원"], pron:"셀덤", pos:"adv", level:"B1", meanings:["거의 ~ 않는"],
+  { word:"seldom", exams:["공무원","수능"], pron:"셀덤", pos:"adv", level:"B1", meanings:["거의 ~ 않는"],
     syn:["rarely","hardly ever","not often"],
     ex:[{ s:"He {{}} speaks in meetings.", f:"seldom", ko:"그는 회의에서 거의 말하지 않는다." }] },
 
@@ -830,7 +830,7 @@ window.VOCAB_S = [
   /* 승격 51 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 acute(A)·harsh(H)·
      intense(I) 세 곳의 설명이 '심각한; 엄격한' 에서 '심각한, 엄격한' 이 된다.
      둘째 갈래는 strict(챕터 17)·stern(챕터 16) 과 글자를 맞춰 두었다. */
-  { word:"severe", pron:"서비어", pos:"adj", level:"B1", meanings:["심각한","엄격한"],
+  { word:"severe", exams:["수능"], pron:"서비어", pos:"adj", level:"B1", meanings:["심각한","엄격한"],
     syn:["acute","harsh","intense"],
     ex:[{ s:"The region faced a {{}} drought.", f:"severe", ko:"그 지역은 심각한 가뭄을 겪었다." }] },
 
@@ -913,7 +913,7 @@ window.VOCAB_S = [
   /* 승격 59 — 원본이 [n+v] 였고 사전도 섞여 있었다. 명사로 세우고, 동사 쪽을
      쓰던 harbor(H) 의 그 자리를 'take in and hide' 로 갈았다.
      refuge(피난처 · R) 와 글자가 같아 서로의 오답에서 자동으로 빠진다. */
-  { word:"shelter", exams:["공무원"], pron:"셸터", pos:"n", level:"B2", meanings:["피난처"],
+  { word:"shelter", exams:["공무원","수능"], pron:"셸터", pos:"n", level:"B2", meanings:["피난처"],
     syn:["place of safety","cover from danger","roof over one's head"],
     ex:[{ s:"They ran to a {{}} when the storm hit.", f:"shelter", ko:"폭풍이 닥치자 그들은 피난처로 달려갔다." }] },
 
@@ -1492,7 +1492,7 @@ window.VOCAB_S = [
 
   /* 승격 109 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 bitter(B) 한 곳의 설명이
      '신; 시큼한' 에서 '신, 시큼한' 이 된다. */
-  { word:"sour", pron:"사우어", pos:"adj", level:"B1", meanings:["신","시큼한"],
+  { word:"sour", exams:["수능"], pron:"사우어", pos:"adj", level:"B1", meanings:["신","시큼한"],
     syn:["bitter","sharp in taste","tart"],
     ex:[{ s:"The milk has turned {{}}.", f:"sour", ko:"그 우유가 시큼해졌다." }] },
 
@@ -2143,7 +2143,7 @@ window.VOCAB_S = [
   /* 승격 168 — ★ 원본 '눈에 잘 띄는' 은 conspicuous 의 뜻이었다. 사전값
      '단순명료한, 쉬운' 으로 바로잡았다 — 참조 complicated(C) 의 반의어로도
      이쪽이 맞는다. 그 한 곳의 화면은 바뀌지 않는다. */
-  { word:"straightforward", pron:"스트레이트포워드", pos:"adj", level:"B2", meanings:["단순명료한","쉬운"],
+  { word:"straightforward", exams:["수능"], pron:"스트레이트포워드", pos:"adj", level:"B2", meanings:["단순명료한","쉬운"],
     syn:["easy to follow","plain and clear","simple to grasp"], ant:["complicated"],
     ex:[{ s:"The rule is quite {{}}.", f:"straightforward", ko:"그 규칙은 꽤 단순명료하다." }] },
 

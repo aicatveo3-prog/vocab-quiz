@@ -346,7 +346,7 @@ window.VOCAB_R = [
      '개간하다' 쪽으로 비켜 세웠다. */
 
   /* 승격 ㉒ — 사전 글자 유지(invoice, I). */
-  { word:"receipt", pron:"리싯", pos:"n", level:"B1", meanings:["영수증"],
+  { word:"receipt", exams:["수능"], pron:"리싯", pos:"n", level:"B1", meanings:["영수증"],
     syn:["invoice","paper showing payment","slip for what one paid"],
     ex:[{ s:"Keep the {{}} in a safe place.", f:"receipt", ko:"영수증을 안전한 곳에 보관하라." }] },
 
@@ -1094,7 +1094,7 @@ window.VOCAB_R = [
     syn:["man-made lake","store of water","large hidden supply"],
     ex:[{ s:"The {{}} supplies the whole city.", f:"reservoir", ko:"그 저수지가 도시 전체에 물을 댄다." }] },
 
-  { word:"reside", pron:"리자이드", pos:"v", level:"B2", meanings:["거주하다","살다"],
+  { word:"reside", exams:["수능"], pron:"리자이드", pos:"v", level:"B2", meanings:["거주하다","살다"],
     syn:["make one's home","dwell in a place","have one's address at"],
     ex:[{ s:"They {{}} near the harbor.", f:"reside", ko:"그들은 항구 가까이 거주한다." }] },
 
@@ -1181,7 +1181,7 @@ window.VOCAB_R = [
 
   /* 승격 107 — 사전 글자 유지(decent, D). 바로 아래 respected 와 갈라야 하는
      자리다 — 원본은 둘 다 '훌륭한' 이었다. */
-  { word:"respectable", pron:"리스펙터블", pos:"adj", level:"B2", meanings:["존경할 만한","훌륭한"],
+  { word:"respectable", exams:["수능"], pron:"리스펙터블", pos:"adj", level:"B2", meanings:["존경할 만한","훌륭한"],
     syn:["worthy of regard","good enough to be proud of","of fair standing"],
     ex:[{ s:"He makes a {{}} living.", f:"respectable", ko:"그는 훌륭한 벌이를 한다." }] },
 
@@ -1343,7 +1343,7 @@ window.VOCAB_R = [
     syn:["fetch","get back and bring","recover an item"],
     ex:[{ s:"The dog can {{}} the ball.", f:"retrieve", ko:"그 개는 공을 되찾아 올 수 있다." }] },
 
-  { word:"reunion", pron:"리유니언", pos:"n", level:"B2", meanings:["동창회","재회"],
+  { word:"reunion", exams:["수능"], pron:"리유니언", pos:"n", level:"B2", meanings:["동창회","재회"],
     syn:["gathering of old friends","meeting again","coming back together"],
     ex:[{ s:"The class held a {{}}.", f:"reunion", ko:"그 학급은 동창회를 열었다." }] },
 

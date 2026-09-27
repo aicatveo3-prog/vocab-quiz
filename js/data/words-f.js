@@ -468,7 +468,7 @@ window.VOCAB_F = [
   { word:"fortunate", exams:["공무원"], pron:"포처닛", pos:"adj", level:"B2", meanings:["운이 좋은"], syn:["lucky","blessed","favored"], ant:["unfortunate"], ex:[{ s:"She was {{}} to get the job she wanted.", f:"fortunate", ko:"그녀는 원하던 일자리를 얻어 운이 좋았다." }] },
   { word:"foundation", exams:["공무원"], pron:"파운데이션", pos:"n", level:"B2", meanings:["토대","기초"], syn:["basis","groundwork","base"], ex:[{ s:"The {{}} of most old houses are shallow.", f:"foundations", ko:"대부분의 오래된 집의 토대는 얕다." }] },
   { word:"foundational", exams:["공무원"], pron:"파운데이셔널", pos:"adj", level:"C1", meanings:["근본적인","기초의"], syn:["fundamental","basic","underlying"], ex:[{ s:"We examine concepts we regard as {{}}.", f:"foundational", ko:"우리는 근본적이라 여기는 개념을 살핀다." }] },
-  { word:"fragmentation", exams:["공무원"], pron:"프래그멘테이션", pos:"n", level:"C1", meanings:["분열","파편화"], syn:["division","splitting","disintegration"], ant:["unification"], ex:[{ s:"The field seeks coherence rather than {{}}.", f:"fragmentation", ko:"그 분야는 분열보다 결속을 추구한다." }] },
+  { word:"fragmentation", exams:["공무원","수능"], pron:"프래그멘테이션", pos:"n", level:"C1", meanings:["분열","파편화"], syn:["division","splitting","disintegration"], ant:["unification"], ex:[{ s:"The field seeks coherence rather than {{}}.", f:"fragmentation", ko:"그 분야는 분열보다 결속을 추구한다." }] },
   { word:"framework", exams:["공무원","수능"], pron:"프레임워크", pos:"n", level:"B2", meanings:["틀","체계"], syn:["structure","system","scheme"], ex:[{ s:"Topics integrate under simplifying theoretical {{}}.", f:"frameworks", ko:"주제들은 단순화된 이론 틀 아래 통합된다." }] },
   { word:"fringe", exams:["공무원"], pron:"프린지", pos:"n", level:"C1", meanings:["주변부","가장자리"], syn:["margin","periphery","edge"], ant:["center"], ex:[{ s:"Urban agriculture was dismissed as a {{}} activity.", f:"fringe", ko:"도시 농업은 주변부 활동으로 무시되었다." }] },
   { word:"feedback", exams:["공무원","수능"], pron:"피드백", pos:"n", level:"B1", meanings:["의견","피드백"], syn:["response","comments","input"], ex:[{ s:"We welcome all {{}} about our services.", f:"feedback", ko:"우리는 서비스에 대한 모든 의견을 환영한다." }] },
@@ -560,7 +560,7 @@ window.VOCAB_F = [
   { word:"factor in", pron:"팩터 인", pos:"phr", level:"B2", meanings:["~을 고려하다"],
     syn:["take into account","allow for","bear in mind"] },
 
-  { word:"factual", pron:"팩추얼", pos:"adj", level:"C1", meanings:["사실에 근거한"],
+  { word:"factual", exams:["수능"], pron:"팩추얼", pos:"adj", level:"C1", meanings:["사실에 근거한"],
     syn:["accurate","truthful","verifiable"], ant:["fictional"],
     ex:[{ s:"The report must stay {{}} and leave out guesswork.", f:"factual", ko:"그 보고서는 사실에 근거해야 하고 추측은 빼야 한다." }] },
 
@@ -682,7 +682,7 @@ window.VOCAB_F = [
 
   /* 유의어에 flaw 를 넣지 않았다. flaw 의 뜻 '결함, 흠' 이 표제어 defect 의
      뜻과 글자까지 똑같아, 한 문제에서 두 선택지가 구별되지 않는다. */
-  { word:"fault", pron:"폴트", pos:"n", level:"B2", meanings:["결점","잘못"],
+  { word:"fault", exams:["수능"], pron:"폴트", pos:"n", level:"B2", meanings:["결점","잘못"],
     syn:["defect","shortcoming","blemish"],
     ex:[{ s:"The report blamed the delay on a design {{}}.", f:"fault", ko:"보고서는 그 지연을 설계 결점 탓으로 돌렸다." }] },
 
@@ -725,7 +725,7 @@ window.VOCAB_F = [
     syn:["banquet","celebration dinner","lavish meal"],
     ex:[{ s:"The village held a {{}} to mark the end of the harvest.", f:"feast", ko:"마을은 수확이 끝난 것을 기념해 잔치를 열었다." }] },
 
-  { word:"feather", pron:"페더", pos:"n", level:"B1", meanings:["깃털"],
+  { word:"feather", exams:["수능"], pron:"페더", pos:"n", level:"B1", meanings:["깃털"],
     syn:["plume","quill","soft plumage"],
     ex:[{ s:"A single white {{}} drifted down onto the water.", f:"feather", ko:"흰 깃털 하나가 물 위로 떠내려왔다." }] },
 
@@ -960,7 +960,7 @@ window.VOCAB_F = [
     syn:["blaze up","flame up","shoot up"],
     ex:[{ s:"The candle will {{}} when the door lets in a draft.", f:"flare", ko:"문으로 바람이 들면 촛불이 확 타오른다." }] },
 
-  { word:"flash", pron:"플래시", pos:"v", level:"B2", meanings:["비치다","번쩍이다"],
+  { word:"flash", exams:["수능"], pron:"플래시", pos:"v", level:"B2", meanings:["비치다","번쩍이다"],
     syn:["gleam","glint","light up briefly"],
     ex:[{ s:"Lightning began to {{}} above the far ridge.", f:"flash", ko:"먼 능선 위로 번개가 번쩍이기 시작했다." }] },
 
@@ -1069,7 +1069,7 @@ window.VOCAB_F = [
     syn:["stream","steady movement","running water"],
     ex:[{ s:"Engineers measured the {{}} of the river every week.", f:"flow", ko:"기술자들은 매주 그 강의 흐름을 측정했다." }] },
 
-  { word:"fluctuate", pron:"플럭추에이트", pos:"v", level:"C1", meanings:["변동하다","오르내리다"],
+  { word:"fluctuate", exams:["수능"], pron:"플럭추에이트", pos:"v", level:"C1", meanings:["변동하다","오르내리다"],
     syn:["vary","rise and fall","swing up and down"],
     ex:[{ s:"Prices {{}} sharply during the dry season.", f:"fluctuate", ko:"건기에는 물가가 크게 변동한다." }] },
 
@@ -1243,7 +1243,7 @@ window.VOCAB_F = [
     syn:["development","coming together","taking shape"],
     ex:[{ s:"Scientists study the {{}} of coral reefs.", f:"formation", ko:"과학자들은 산호초의 형성을 연구한다." }] },
 
-  { word:"former", pron:"포머", pos:"adj", level:"B1", meanings:["이전의","전자의"],
+  { word:"former", exams:["수능"], pron:"포머", pos:"adj", level:"B1", meanings:["이전의","전자의"],
     syn:["previous","earlier","one-time"], ant:["current"],
     ex:[{ s:"A {{}} student now runs the whole department.", f:"former", ko:"이전의 학생이 지금 그 학과 전체를 운영한다." }] },
 

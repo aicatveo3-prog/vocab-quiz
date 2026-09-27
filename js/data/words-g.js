@@ -148,7 +148,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '유전자' 와 글자까지 같다. chromosome 의 유의어로 쓰인다.
      syn 은 비웠다 — 유전자의 동의어라 할 만한 낱말이 없다. */
-  { word:"gene", exams:["공무원"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
+  { word:"gene", exams:["공무원","수능"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
     ex:[{ s:"Scientists located the {{}} responsible for the disorder.", f:"gene", ko:"과학자들은 그 질환을 일으키는 유전자를 찾아냈다." }] },
 
   { word:"genealogy", pron:"지니앨러지", pos:"n", level:"C1", meanings:["계보","족보"],
@@ -490,7 +490,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '잡다; 이해하다' 를 그대로 지켰다. comprehend 의 유의어로
      쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
      원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
-  { word:"grasp", exams:["공무원"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+  { word:"grasp", exams:["공무원","수능"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
     gov:{ prep:["at","for"], pat:"grasp {{}} any excuse", usage:"grasp at ~ : ~을 붙잡으려 하다" },
     syn:["comprehend","apprehend","fathom"],
     ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },

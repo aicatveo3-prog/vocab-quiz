@@ -295,7 +295,7 @@ window.VOCAB_V = [
   /* 승격 ⑯ — ★사전 첫 갈래를 세웠다. 사전이 '과감히 하다; 모험' 으로 동사와
      명사를 섞어 놓았는데 참조 dare 가 동사다. 명사 '모험' 은 adventure(모험)·
      quest(탐구, 모험) 자리다. ★ 참조 dare(D) 의 화면이 한 줄 바뀐다. */
-  { word:"venture", pron:"벤처", pos:"v", level:"B2", meanings:["과감히 하다","감행하다"],
+  { word:"venture", exams:["수능"], pron:"벤처", pos:"v", level:"B2", meanings:["과감히 하다","감행하다"],
     syn:["dare","risk doing","press on despite danger"],
     ex:[{ s:"Few would {{}} out in that storm.", f:"venture", ko:"그 폭풍 속에 과감히 나설 사람은 드물다." }] },
 
@@ -347,7 +347,7 @@ window.VOCAB_V = [
 
   /* 교재의 '대' 는 너무 짧아 풀어 썼다. 전치사지만 스키마에 prep 이 없어
      구·표현(phr) 으로 두었다. */
-  { word:"versus", exams:["공무원"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
+  { word:"versus", exams:["공무원","수능"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
     syn:["set against","compared with","over against"] },
 
   /* 승격 ㉒ — 사전과 교재가 같다(참조 horizontal 이 반의어). */
@@ -481,7 +481,7 @@ window.VOCAB_V = [
   /* ★ 첫 뜻을 '사실상' 으로 올렸다. 교재의 '거의' 만으로는 seldom(거의 ~ 않는 ·
      B1/adv) 과 눈으로 갈리지 않는데 둘은 뜻이 정반대다. '거의' 는 둘째로 남겨
      more or less(대략, 거의) 와 맞물리게 했다. */
-  { word:"virtually", pron:"버추얼리", pos:"adv", level:"B2", meanings:["사실상","거의"],
+  { word:"virtually", exams:["수능"], pron:"버추얼리", pos:"adv", level:"B2", meanings:["사실상","거의"],
     syn:["in effect","all but entirely","near enough to be true"],
     ex:[{ s:"The work is {{}} done.", f:"virtually", ko:"그 일은 사실상 끝났다." }] },
 

@@ -57,7 +57,7 @@ window.VOCAB_Q = [
     ex:[{ s:"She is {{}} to teach physics.", f:"qualified", ko:"그녀는 물리를 가르칠 자격이 있다." }] },
 
   /* 승격 ② — 사전 표현과 글자까지 같다(disqualify 반의어, D · entitle, E). */
-  { word:"qualify", pron:"콸러파이", pos:"v", level:"B2", meanings:["자격을 얻다","자격을 주다"],
+  { word:"qualify", exams:["수능"], pron:"콸러파이", pos:"v", level:"B2", meanings:["자격을 얻다","자격을 주다"],
     syn:["entitle","meet the standard","earn the right"], ant:["disqualify"],
     ex:[{ s:"Two wins {{}} the team for the final.", f:"qualify", ko:"두 번의 승리가 그 팀에 결승 진출 자격을 준다." }] },
 

@@ -568,7 +568,7 @@ window.VOCAB_W = [
 
   /* 승격 ㉚ — 사전 단일값 유지(참조 fruitful). 교재의 '가치 있는' 은 뜻이 너무
      넓어 버렸다. 아래 worthy 와 첫 뜻이 확실히 갈린다. */
-  { word:"worthwhile", pron:"워스와일", pos:"adj", level:"B2", meanings:["할 만한 값이 있는"],
+  { word:"worthwhile", exams:["수능"], pron:"워스와일", pos:"adj", level:"B2", meanings:["할 만한 값이 있는"],
     syn:["fruitful","worth the trouble","paying for the effort"],
     ex:[{ s:"The trip proved {{}}.", f:"worthwhile", ko:"그 여행은 할 만한 값이 있었다." }] },
 

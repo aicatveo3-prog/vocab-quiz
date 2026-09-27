@@ -28,7 +28,7 @@ window.VOCAB_B = [
   { word:"betray", exams:["공무원","수능"], pron:"비트레이", pos:"v", level:"B2", meanings:["배신하다","저버리다"], syn:["deceive","let down","double-cross"], ant:["support"], ex:[{ s:"People worry that AI tools may {{}} their trust.", f:"betray", ko:"사람들은 AI 도구가 자신의 신뢰를 저버릴까 걱정한다." }] },
   { word:"blessed", exams:["공무원"], pron:"블레시드", pos:"adj", level:"B2", meanings:["축복받은","신성한"], syn:["fortunate","holy","sacred"], ant:["cursed"], ex:[{ s:"Humans are {{}} with remarkable intelligence.", f:"blessed", ko:"인간은 놀라운 지능을 타고났다." }], gov:{ prep:["with"], usage:"be blessed with ~ : ~을 타고나다, ~의 복을 누리다" } },
   { word:"broad", exams:["공무원","수능"], pron:"브로드", pos:"adj", level:"B1", meanings:["넓은","광범위한"], syn:["wide","extensive","comprehensive"], ant:["narrow"], ex:[{ s:"The program has {{}} support from national organizations.", f:"broad", ko:"그 프로그램은 국가 기관들로부터 폭넓은 지지를 받는다." }] },
-  { word:"better safe than sorry", exams:["공무원"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
+  { word:"better safe than sorry", exams:["공무원","수능"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
   { word:"buildup", exams:["공무원"], pron:"빌드업", pos:"n", level:"C1", meanings:["축적","증강"], syn:["accumulation","growth","escalation"], ex:[{ s:"Daily sunshine creates a protective {{}} against blue light.", f:"buildup", ko:"매일 햇빛을 쬐면 블루라이트에 맞서는 보호막이 쌓인다." }] },
   { word:"booming", exams:["공무원"], pron:"부밍", pos:"adj", level:"B2", meanings:["호황을 누리는","급성장하는"], syn:["thriving","flourishing","prosperous"], ant:["declining"], ex:[{ s:"Tourism is {{}} in the region these days.", f:"booming", ko:"요즘 그 지역에서는 관광업이 호황을 누리고 있다." }] },
   { word:"boldness", exams:["공무원"], pron:"볼드니스", pos:"n", level:"C1", meanings:["대담함","용기"], syn:["bravery","daring","audacity"], ant:["timidity"], ex:[{ s:"Her {{}} in speaking up surprised everyone.", f:"boldness", ko:"당당히 의견을 말한 그녀의 대담함에 모두가 놀랐다." }] },
@@ -303,7 +303,7 @@ window.VOCAB_B = [
     syn:["endure","tolerate","withstand"], ant:["reject"],
     ex:[{ s:"She could not {{}} the pain any longer.", f:"bear", ko:"그녀는 더 이상 그 고통을 견딜 수 없었다." }] },
 
-  { word:"beast", pron:"비스트", pos:"n", level:"B2", meanings:["짐승","야수"],
+  { word:"beast", exams:["수능"], pron:"비스트", pos:"n", level:"B2", meanings:["짐승","야수"],
     syn:["brute","creature","animal"],
     ex:[{ s:"Old legends tell of a {{}} living deep in the forest.", f:"beast", ko:"옛 전설은 숲 깊은 곳에 사는 짐승을 이야기한다." }] },
 
@@ -471,7 +471,7 @@ window.VOCAB_B = [
     syn:["compostable","decomposable","degradable"], ant:["persistent"],
     ex:[{ s:"The packaging is fully {{}} and safe for soil.", f:"biodegradable", ko:"그 포장재는 완전히 자연 분해되며 흙에 무해하다." }] },
 
-  { word:"biodiversity", pron:"바이오다이버시티", pos:"n", level:"C1", meanings:["생물의 다양성"],
+  { word:"biodiversity", exams:["수능"], pron:"바이오다이버시티", pos:"n", level:"C1", meanings:["생물의 다양성"],
     syn:["species variety","ecological variety","biotic richness"], ant:["monoculture"],
     ex:[{ s:"Logging threatens the {{}} of the rainforest.", f:"biodiversity", ko:"벌목은 열대우림의 생물 다양성을 위협한다." }] },
 
@@ -606,7 +606,7 @@ window.VOCAB_B = [
     ex:[{ s:"She began to {{}} when he praised her work.", f:"blush", ko:"그가 그녀의 작업을 칭찬하자 그녀는 얼굴을 붉히기 시작했다." }] },
 
   /* ── bo ────────────────────────────────────── */
-  { word:"board", pron:"보드", pos:"v", level:"B2", meanings:["탑승하다"],
+  { word:"board", exams:["수능"], pron:"보드", pos:"v", level:"B2", meanings:["탑승하다"],
     syn:["embark","get on","enter"], ant:["disembark"],
     ex:[{ s:"Passengers may {{}} the plane at gate 12.", f:"board", ko:"승객들은 12번 게이트에서 비행기에 탑승할 수 있다." }] },
 
@@ -700,7 +700,7 @@ window.VOCAB_B = [
     syn:["limb","bough","division"],
     ex:[{ s:"A small bird landed on the lowest {{}}.", f:"branch", ko:"작은 새가 가장 낮은 나뭇가지에 내려앉았다." }] },
 
-  { word:"brand-new", pron:"브랜드 뉴", pos:"adj", level:"B1", meanings:["아주 새로운","신품의"],
+  { word:"brand-new", exams:["수능"], pron:"브랜드 뉴", pos:"adj", level:"B1", meanings:["아주 새로운","신품의"],
     syn:["unused","pristine","fresh"], ant:["secondhand"],
     ex:[{ s:"He showed up to the interview in a {{}} suit.", f:"brand-new", ko:"그는 새 정장을 입고 면접에 나타났다." }] },
 
@@ -761,7 +761,7 @@ window.VOCAB_B = [
     syn:["raise","rear","cultivate"],
     ex:[{ s:"They {{}} horses on a farm in the north.", f:"breed", ko:"그들은 북부의 한 농장에서 말을 사육한다." }] },
 
-  { word:"breeding", exams:["공무원"], pron:"브리딩", pos:"n", level:"C1", meanings:["품종개량","번식"],
+  { word:"breeding", exams:["공무원","수능"], pron:"브리딩", pos:"n", level:"C1", meanings:["품종개량","번식"],
     syn:["reproduction","rearing","cultivation"],
     ex:[{ s:"The zoo runs a {{}} program for rare birds.", f:"breeding", ko:"그 동물원은 희귀 조류 번식 프로그램을 운영한다." }] },
 
@@ -823,7 +823,7 @@ window.VOCAB_B = [
     syn:["agent","middleman","dealer"],
     ex:[{ s:"A {{}} arranged the sale of the property.", f:"broker", ko:"중개인이 그 부동산의 매매를 주선했다." }] },
 
-  { word:"bronze", exams:["공무원"], pron:"브론즈", pos:"n", level:"B2", meanings:["청동"],
+  { word:"bronze", exams:["공무원","수능"], pron:"브론즈", pos:"n", level:"B2", meanings:["청동"],
     syn:["casting metal","statuary metal","tin alloy"],
     ex:[{ s:"The statue in the square was cast in {{}}.", f:"bronze", ko:"광장의 그 조각상은 청동으로 주조되었다." }] },
 
@@ -836,7 +836,7 @@ window.VOCAB_B = [
     syn:["stream","creek","rivulet"],
     ex:[{ s:"A narrow {{}} ran just behind the cottage.", f:"brook", ko:"좁은 개천이 그 작은 집 바로 뒤로 흘렀다." }] },
 
-  { word:"broth", pron:"브로스", pos:"n", level:"B2", meanings:["수프","국물"],
+  { word:"broth", exams:["수능"], pron:"브로스", pos:"n", level:"B2", meanings:["수프","국물"],
     /* ★ syn 의 "stock" 을 "meat water" 로 바꿨다. 사전이 stock 을 '재고;
        저장하다' 로 적어 두어 이 자리(육수 뜻) 와 이미 어긋나 있었다. S 세트에서는
        '재고, 주식' 으로 서므로 더 멀어진다. */

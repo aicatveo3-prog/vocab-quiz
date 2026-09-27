@@ -246,7 +246,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑭ — 사전은 '장애물' 한 갈래였다. 원본의 '장애' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(barrier, B · challenge, C · deterrent, D). */
-  { word:"obstacle", pron:"압스터클", pos:"n", level:"B1", meanings:["장애물","장애"],
+  { word:"obstacle", exams:["수능"], pron:"압스터클", pos:"n", level:"B1", meanings:["장애물","장애"],
     syn:["barrier","hurdle","thing in the way"],
     ex:[{ s:"Cost is the main {{}} to the plan.", f:"obstacle", ko:"비용이 그 계획의 주된 장애물이다." }] },
 
@@ -969,7 +969,7 @@ window.VOCAB_O = [
   /* 승격 75 — 사전 표현 '간과하다; 내려다보다' 의 두 갈래를 그대로 살렸다.
      구분 기호만 쉼표로 바꿨다. 이 세트에서 참조가 가장 많은 낱말이다(5곳) —
      condone·disregard·ignore 가 유의어, anticipate·detect 가 반의어다. */
-  { word:"overlook", pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
+  { word:"overlook", exams:["수능"], pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
     syn:["disregard","fail to notice","pass over"],
     ex:[{ s:"It is easy to {{}} a small error in the total.", f:"overlook", ko:"합계의 작은 오류는 간과하기 쉽다." }] },
 
@@ -998,7 +998,7 @@ window.VOCAB_O = [
   /* 승격 78 — 사전 표현 '과장해 말하다' 를 글자까지 지켰다
      (dramatize, D · exaggerate, E). 원본의 '과장하다' 를 쓰면 exaggerate(과장하다,
      부풀리다) 의 첫 뜻과 같아진다. */
-  { word:"overstate", pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
+  { word:"overstate", exams:["수능"], pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
     syn:["exaggerate","make more of than is true","blow up in the telling"], ant:["understate"],
     ex:[{ s:"Reports may {{}} the size of the crowd.", f:"overstate", ko:"보도는 군중의 규모를 과장해 말할 수 있다." }] },
 

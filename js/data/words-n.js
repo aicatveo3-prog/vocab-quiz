@@ -171,7 +171,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑧ — 사전 표현 '필요로 하다' 를 글자까지 지켰다.
      call for(C)·involve(I) 두 곳의 화면이 바뀌지 않는다. */
-  { word:"necessitate", pron:"너세서테이트", pos:"v", level:"C1", meanings:["필요로 하다"],
+  { word:"necessitate", exams:["수능"], pron:"너세서테이트", pos:"v", level:"C1", meanings:["필요로 하다"],
     syn:["call for","require","make unavoidable"],
     ex:[{ s:"Heavy rain may {{}} a change of plan.", f:"necessitate", ko:"폭우는 계획 변경을 필요로 할 수 있다." }] },
 
@@ -330,7 +330,7 @@ window.VOCAB_N = [
     syn:["not returnable","paid for good","without money back"],
     ex:[{ s:"The deposit is {{}} once the room is booked.", f:"non-refundable", ko:"방을 예약하면 보증금은 환불이 안 된다." }] },
 
-  { word:"nonsense", pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
+  { word:"nonsense", exams:["수능"], pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
     syn:["rubbish","drivel","empty talk"],
     ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },
 

@@ -375,7 +375,7 @@ window.VOCAB_T = [
   /* 승격 ㉑ — ★ 사전이 명사('종착역, 터미널') 였다. 참조가 depot(n)·
      incurable(adj) 로 갈렸는데 사전을 따라 명사로 세우고, 형용사 쪽을 쓰던
      incurable(I) 한 곳을 'beyond cure' 로 갈았다. 외래어 '터미널' 은 '종점' 으로. */
-  { word:"terminal", pron:"터미널", pos:"n", level:"B2", meanings:["종착역","종점"],
+  { word:"terminal", exams:["수능"], pron:"터미널", pos:"n", level:"B2", meanings:["종착역","종점"],
     syn:["depot","end of the line","last stop"],
     ex:[{ s:"The bus waits at the {{}}.", f:"terminal", ko:"그 버스는 종착역에서 기다린다." }] },
 
@@ -550,7 +550,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉞ — 사전 단일값 유지(참조 considerate). considerate(사려 깊은, 인정이
      있는) 와 맞물려 배제된다. 교재의 '배려심 있는, 친절한' 은 같은 자리라 버렸다. */
-  { word:"thoughtful", pron:"소트풀", pos:"adj", level:"B1", meanings:["사려 깊은"],
+  { word:"thoughtful", exams:["수능"], pron:"소트풀", pos:"adj", level:"B1", meanings:["사려 깊은"],
     syn:["considerate","mindful of others","given to reflection"],
     ex:[{ s:"That was a {{}} gift.", f:"thoughtful", ko:"그것은 사려 깊은 선물이었다." }] },
 
@@ -892,7 +892,7 @@ window.VOCAB_T = [
     ex:[{ s:"The two firms {{}} in metals.", f:"transact", ko:"두 회사는 금속을 거래한다." }] },
 
   /* 위 trade(거래, 무역) 와 '거래' 가 맞물려 배제된다 — 일부러 글자를 맞췄다. */
-  { word:"transaction", pron:"트랜잭션", pos:"n", level:"B2", meanings:["거래","처리"],
+  { word:"transaction", exams:["수능"], pron:"트랜잭션", pos:"n", level:"B2", meanings:["거래","처리"],
     syn:["piece of business","deal carried out","exchange of money"],
     ex:[{ s:"Every {{}} is recorded in the ledger.", f:"transaction", ko:"모든 거래가 장부에 기록된다." }] },
 
@@ -1008,7 +1008,7 @@ window.VOCAB_T = [
     syn:["move from one state to another","passing over","change of stage"],
     ex:[{ s:"The {{}} to the new system took a year.", f:"transition", ko:"새 체계로의 이행은 일 년이 걸렸다." }] },
 
-  { word:"transmission", pron:"트랜스미션", pos:"n", level:"B2", meanings:["전송"],
+  { word:"transmission", exams:["수능"], pron:"트랜스미션", pos:"n", level:"B2", meanings:["전송"],
     syn:["sending out","relay of a signal","spread from one to another"],
     ex:[{ s:"The {{}} was cut off by the storm.", f:"transmission", ko:"그 전송은 폭풍으로 끊겼다." }] },
 

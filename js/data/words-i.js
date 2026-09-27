@@ -52,7 +52,7 @@ window.VOCAB_I = [
   { word:"inspect", exams:["공무원"], pron:"인스펙트", pos:"v", level:"B2", meanings:["점검하다","검사하다"], syn:["examine","check","scrutinize"], ex:[{ s:"Our team will {{}} your property for signs of rats.", f:"inspect", ko:"우리 팀이 쥐의 흔적을 찾아 당신의 건물을 점검할 것이다." }] },
   { word:"insightful", exams:["공무원"], pron:"인사이트풀", pos:"adj", level:"C1", meanings:["통찰력 있는"], syn:["perceptive","astute","discerning"], ant:["superficial"], ex:[{ s:"Movies can be an {{}} source for learning about culture.", f:"insightful", ko:"영화는 문화를 배우는 통찰력 있는 자료가 될 수 있다." }] },
   { word:"inspiration", exams:["공무원","수능"], pron:"인스퍼레이션", pos:"n", level:"B2", meanings:["영감"], syn:["stimulus","motivation","muse"], ex:[{ s:"She drew {{}} from the world around her.", f:"inspiration", ko:"그녀는 주변 세계에서 영감을 얻었다." }] },
-  { word:"interact", exams:["공무원"], pron:"인터랙트", pos:"v", level:"B2", meanings:["상호작용하다","교류하다"], syn:["communicate","engage","connect"], ex:[{ s:"The AI agents can post and {{}} with each other.", f:"interact", ko:"그 인공지능 에이전트들은 서로 글을 올리고 교류할 수 있다." }] },
+  { word:"interact", exams:["공무원","수능"], pron:"인터랙트", pos:"v", level:"B2", meanings:["상호작용하다","교류하다"], syn:["communicate","engage","connect"], ex:[{ s:"The AI agents can post and {{}} with each other.", f:"interact", ko:"그 인공지능 에이전트들은 서로 글을 올리고 교류할 수 있다." }] },
   { word:"ivory", exams:["공무원"], pron:"아이보리", pos:"n", level:"B2", meanings:["상아"], ex:[{ s:"The small plaque was carved from mammoth {{}}.", f:"ivory", ko:"그 작은 명판은 매머드 상아로 조각되었다." }] },
   { word:"in a row", exams:["공무원"], pron:"인 어 로", pos:"phr", level:"B2", meanings:["연속으로","잇따라"], syn:["consecutively","in succession","successively"] },
   { word:"independent", exams:["공무원","수능"], pron:"인디펜던트", pos:"adj", level:"B1", meanings:["독립적인","자주적인"], syn:["autonomous","self-reliant","self-sufficient"], ant:["dependent"], ex:[{ s:"AUVs are {{}} of their human operators.", f:"independent", ko:"AUV는 인간 조종자로부터 독립적이다." }], gov:{ prep:["of","from"], usage:"independent of ~ : ~에 의존하지 않는, ~와 관계없이" } },
@@ -156,7 +156,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '똑같은, 동일한' 과 글자까지 같다.
      converse(ant)·equal(syn)·even(syn)·homogeneous(syn) 네 문제가 이 뜻을 쓴다. */
-  { word:"identical", exams:["공무원"], pron:"아이덴티컬", pos:"adj", level:"B2", meanings:["똑같은","동일한"],
+  { word:"identical", exams:["공무원","수능"], pron:"아이덴티컬", pos:"adj", level:"B2", meanings:["똑같은","동일한"],
     syn:["indistinguishable","equivalent","matching"], ant:["different"],
     ex:[{ s:"The twins wore {{}} outfits to the ceremony.", f:"identical", ko:"그 쌍둥이는 식에 똑같은 옷을 입고 왔다." }] },
 
@@ -288,13 +288,13 @@ window.VOCAB_I = [
     syn:["emulate","mimic","copy"],
     ex:[{ s:"Young children naturally {{}} the speech of adults.", f:"imitate", ko:"어린 아이들은 자연스럽게 어른의 말을 모방한다." }] },
 
-  { word:"immature", pron:"이머추어", pos:"adj", level:"B2", meanings:["미숙한","미완성의"],
+  { word:"immature", exams:["수능"], pron:"이머추어", pos:"adj", level:"B2", meanings:["미숙한","미완성의"],
     syn:["childish","undeveloped","juvenile"], ant:["mature"],
     ex:[{ s:"His {{}} response to criticism cost him the promotion.", f:"immature", ko:"비판에 대한 그의 미숙한 반응이 승진을 놓치게 했다." }] },
 
   /* 원본 '헤아릴 수 없는' 하나뿐이다. 둘째 갈래로 '막대한' 을 붙이면 뒤에 올
      immense('막대한, 광대한')와 겹치므로 '측정할 수 없는' 을 택했다. */
-  { word:"immeasurable", pron:"이메저러블", pos:"adj", level:"C1", meanings:["헤아릴 수 없는","측정할 수 없는"],
+  { word:"immeasurable", exams:["수능"], pron:"이메저러블", pos:"adj", level:"C1", meanings:["헤아릴 수 없는","측정할 수 없는"],
     syn:["incalculable","boundless","limitless"], ant:["finite"],
     ex:[{ s:"Her contribution to modern medicine was {{}}.", f:"immeasurable", ko:"현대 의학에 대한 그녀의 기여는 헤아릴 수 없었다." }] },
 
@@ -500,7 +500,7 @@ window.VOCAB_I = [
     syn:["confinement","incarceration","detention"],
     ex:[{ s:"He faced ten years of {{}} for the offence.", f:"imprisonment", ko:"그는 그 범죄로 10년의 투옥에 처해졌다." }] },
 
-  { word:"improper", pron:"임프로퍼", pos:"adj", level:"B2", meanings:["부적절한","부도덕한"],
+  { word:"improper", exams:["수능"], pron:"임프로퍼", pos:"adj", level:"B2", meanings:["부적절한","부도덕한"],
     syn:["inappropriate","unsuitable","unseemly"], ant:["proper"],
     ex:[{ s:"Using company funds that way was clearly {{}}.", f:"improper", ko:"회사 자금을 그렇게 쓰는 것은 명백히 부적절했다." }] },
 
@@ -581,7 +581,7 @@ window.VOCAB_I = [
   { word:"in particular", exams:["공무원","수능"], pron:"인 퍼티큘러", pos:"phr", level:"B1", meanings:["특히"],
     syn:["especially","notably","specifically"] },
 
-  { word:"in person", pron:"인 퍼슨", pos:"phr", level:"B1", meanings:["직접","몸소"],
+  { word:"in person", exams:["수능"], pron:"인 퍼슨", pos:"phr", level:"B1", meanings:["직접","몸소"],
     syn:["face to face","personally","in the flesh"] },
 
   { word:"in progress", exams:["수능"], pron:"인 프라그레스", pos:"phr", level:"B1", meanings:["진행 중인"],
@@ -616,7 +616,7 @@ window.VOCAB_I = [
   { word:"in the end", exams:["수능"], pron:"인 더 엔드", pos:"phr", level:"B1", meanings:["결국","마침내"],
     syn:["eventually","ultimately","at last"] },
 
-  { word:"in the first place", pron:"인 더 퍼스트 플레이스", pos:"phr", level:"B2", meanings:["우선","첫째로"],
+  { word:"in the first place", exams:["수능"], pron:"인 더 퍼스트 플레이스", pos:"phr", level:"B2", meanings:["우선","첫째로"],
     syn:["firstly","to begin with","at the outset"] },
 
   { word:"in the light of", pron:"인 더 라이트 어브", pos:"phr", level:"C1", meanings:["~에 비추어","~을 고려하여"],
@@ -845,7 +845,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '지표, 표시기' 를 글자까지 지켰다. barometer(syn) 가 참조하므로
      원본의 순서('표시기, 지표') 대신 사전 쪽을 남겼다. */
-  { word:"indicator", pron:"인디케이터", pos:"n", level:"B2", meanings:["지표","표시기"],
+  { word:"indicator", exams:["수능"], pron:"인디케이터", pos:"n", level:"B2", meanings:["지표","표시기"],
     syn:["barometer","gauge","benchmark"],
     ex:[{ s:"Unemployment remains a key economic {{}}.", f:"indicator", ko:"실업률은 여전히 핵심 경제 지표다." }] },
 
@@ -1168,7 +1168,7 @@ window.VOCAB_I = [
   /* probe 를 search for facts 로 바꿨다. probe 가 P 세트 챕터 14 표제어
      (조사하다, 캐다 · v)로 올라가면 명사 표제어의 유의어 자리에 동사 뜻이 뜬다.
      사전의 probe 값도 '조사하다; 탐침' 으로 품사가 섞여 있었다. */
-  { word:"inquiry", pron:"인콰이어리", pos:"n", level:"B2", meanings:["연구","탐구"],
+  { word:"inquiry", exams:["수능"], pron:"인콰이어리", pos:"n", level:"B2", meanings:["연구","탐구"],
     syn:["investigation","search for facts","research"],
     ex:[{ s:"Scientific {{}} depends on careful observation.", f:"inquiry", ko:"과학적 탐구는 주의 깊은 관찰에 달려 있다." }] },
 
@@ -1256,7 +1256,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '임명하다; 설치하다' 다. depose(ant) 가 참조하는데 그쪽 뜻이
      '퇴위시키다' 라 이 낱말의 '취임시키다' 갈래와 짝이 된다. 원본 순서대로
      '설치하다' 를 앞에 두고 그 갈래를 '취임시키다' 로 둘째 자리에 지켰다. */
-  { word:"install", pron:"인스톨", pos:"v", level:"B1", meanings:["설치하다","취임시키다"],
+  { word:"install", exams:["수능"], pron:"인스톨", pos:"v", level:"B1", meanings:["설치하다","취임시키다"],
     syn:["set up","fit","put in place"], ant:["remove"],
     ex:[{ s:"Engineers will {{}} the new turbine next week.", f:"install", ko:"기술자들이 다음 주에 새 터빈을 설치할 것이다." }] },
 
@@ -1427,7 +1427,7 @@ window.VOCAB_I = [
     syn:["escalate","heighten","amplify"], ant:["dampen"],
     ex:[{ s:"The storm is expected to {{}} overnight.", f:"intensify", ko:"그 폭풍은 밤새 강화될 것으로 예상된다." }] },
 
-  { word:"intensity", exams:["공무원"], pron:"인텐서티", pos:"n", level:"B2", meanings:["강렬함","강도"],
+  { word:"intensity", exams:["공무원","수능"], pron:"인텐서티", pos:"n", level:"B2", meanings:["강렬함","강도"],
     syn:["strength","severity","ferocity"],
     ex:[{ s:"The {{}} of the light falls off with distance.", f:"intensity", ko:"빛의 강도는 거리가 멀어지면 떨어진다." }] },
 
@@ -1677,7 +1677,7 @@ window.VOCAB_I = [
 
   /* 원본은 '침입하다' 였는데 11차의 infiltrate 와 같았다. infiltrate 가 '침투하다' 를
      맡고 이쪽은 '침략하다' 로 돌렸다 — 군대가 쳐들어가는 쪽이다. */
-  { word:"invade", pron:"인베이드", pos:"v", level:"B2", meanings:["침략하다","쳐들어가다"],
+  { word:"invade", exams:["수능"], pron:"인베이드", pos:"v", level:"B2", meanings:["침략하다","쳐들어가다"],
     syn:["attack","overrun","storm"],
     ex:[{ s:"The army planned to {{}} from the north.", f:"invade", ko:"그 군대는 북쪽에서 침략할 계획이었다." }] },
 
@@ -1787,7 +1787,7 @@ window.VOCAB_I = [
     syn:["overpowering","compelling","tempting"],
     ex:[{ s:"The smell of fresh bread was simply {{}}.", f:"irresistible", ko:"갓 구운 빵 냄새는 그저 거부할 수 없었다." }] },
 
-  { word:"irresponsible", pron:"이리스판서블", pos:"adj", level:"B2", meanings:["무책임한"],
+  { word:"irresponsible", exams:["수능"], pron:"이리스판서블", pos:"adj", level:"B2", meanings:["무책임한"],
     syn:["reckless","careless","negligent"], ant:["responsible"],
     ex:[{ s:"It would be {{}} to ignore a warning like that.", f:"irresponsible", ko:"그런 경고를 무시하는 것은 무책임할 것이다." }] },
 

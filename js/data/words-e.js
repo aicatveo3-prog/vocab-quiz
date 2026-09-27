@@ -864,7 +864,7 @@ window.VOCAB_E = [
   { word:"ecological", exams:["수능"], pron:"에컬라지컬", pos:"adj", level:"B2", meanings:["생태계의","생태학적인"],
     ex:[{ s:"Draining the wetland caused lasting {{}} damage.", f:"ecological", ko:"습지의 물을 빼내면서 지속적인 생태계 피해가 생겼다." }] },
 
-  { word:"ecology", pron:"이칼러지", pos:"n", level:"B2", meanings:["생태학","생태계"],
+  { word:"ecology", exams:["수능"], pron:"이칼러지", pos:"n", level:"B2", meanings:["생태학","생태계"],
     ex:[{ s:"She spent ten years studying the {{}} of coral reefs.", f:"ecology", ko:"그녀는 산호초 생태학을 연구하며 10년을 보냈다." }] },
 
   { word:"economical", exams:["수능"], pron:"에커나미컬", pos:"adj", level:"B2", meanings:["경제적인","실속 있는"],
@@ -890,7 +890,7 @@ window.VOCAB_E = [
     syn:["eatable","fit to eat","safe to eat"], ant:["poisonous"],
     ex:[{ s:"Only a few of these wild mushrooms are actually {{}}.", f:"edible", ko:"이 야생 버섯들 중 실제로 식용인 것은 몇 개뿐이다." }] },
 
-  { word:"editorial", pron:"에더토리얼", pos:"n", level:"B2", meanings:["사설","논설"],
+  { word:"editorial", exams:["수능"], pron:"에더토리얼", pos:"n", level:"B2", meanings:["사설","논설"],
     syn:["opinion piece","leading article","commentary"],
     ex:[{ s:"The paper ran a fierce {{}} against the new tax.", f:"editorial", ko:"그 신문은 새 세금에 반대하는 격렬한 사설을 실었다." }] },
 
@@ -929,7 +929,7 @@ window.VOCAB_E = [
     syn:["expel","throw out","evict"], ant:["let in"],
     ex:[{ s:"Guards moved in to {{}} the noisy spectators.", f:"eject", ko:"경비원들이 시끄러운 관중을 몰아내려고 들어왔다." }] },
 
-  { word:"elaborate", exams:["공무원"], pron:"일래버릿", pos:"adj", level:"C1", meanings:["공들인","정교한"],
+  { word:"elaborate", exams:["공무원","수능"], pron:"일래버릿", pos:"adj", level:"C1", meanings:["공들인","정교한"],
     syn:["intricate","detailed","painstaking"], ant:["simple"],
     ex:[{ s:"The wedding featured an {{}} ten-course dinner.", f:"elaborate", ko:"그 결혼식에는 공들인 10코스 만찬이 있었다." }] },
 
@@ -1228,7 +1228,7 @@ window.VOCAB_E = [
     syn:["imperil","jeopardize","put at risk"], ant:["protect"],
     ex:[{ s:"Draining the marsh would {{}} dozens of rare species.", f:"endanger", ko:"그 습지를 말리면 희귀종 수십 종을 위험에 빠뜨릴 것이다." }] },
 
-  { word:"endangered", pron:"인데인저드", pos:"adj", level:"B2", meanings:["멸종 위기에 처한","위기에 놓인"],
+  { word:"endangered", exams:["수능"], pron:"인데인저드", pos:"adj", level:"B2", meanings:["멸종 위기에 처한","위기에 놓인"],
     syn:["at risk","threatened","vulnerable"],
     ex:[{ s:"The reserve shelters three {{}} bird species.", f:"endangered", ko:"그 보호 구역은 멸종 위기에 처한 조류 세 종을 보호한다." }] },
 
@@ -1461,7 +1461,7 @@ window.VOCAB_E = [
      명사 표제어 counterpart 도 이 낱말을 유의어로 쓰지만, 형용사 둘을 지키는 쪽이
      낫다(counterpart 의 어긋남은 7차 전에도 있었다. E 세트를 마친 뒤 counterpart 쪽
      syn 을 opposite number 로 바꿔 정리했다 — 아래 '품사가 어긋난 유의어 5곳' 참고). */
-  { word:"equivalent", exams:["공무원"], pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
+  { word:"equivalent", exams:["공무원","수능"], pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
     syn:["comparable","corresponding","tantamount"],
     ex:[{ s:"One cup of this flour is {{}} to two of the old kind.", f:"equivalent", ko:"이 밀가루 한 컵은 예전 것 두 컵과 동등하다." }] },
 
@@ -1593,7 +1593,7 @@ window.VOCAB_E = [
     syn:["moral principles","moral philosophy","code of conduct"],
     ex:[{ s:"She teaches medical {{}} to first-year students.", f:"ethics", ko:"그녀는 1학년생에게 의료 윤리학을 가르친다." }] },
 
-  { word:"ethnic", pron:"에스닉", pos:"adj", level:"B2", meanings:["민족의","인종의"],
+  { word:"ethnic", exams:["수능"], pron:"에스닉", pos:"adj", level:"B2", meanings:["민족의","인종의"],
     syn:["racial","cultural","tribal"],
     ex:[{ s:"The city celebrates its many {{}} traditions.", f:"ethnic", ko:"그 도시는 여러 민족의 전통을 기린다." }] },
 
@@ -1929,7 +1929,7 @@ window.VOCAB_E = [
   /* 기존 GLOSS "명시적인" 을 첫 뜻으로 그대로 뒀다 — 표제어 ambiguous·equivocal(7차)의
      반의어다. 원본의 '분명한' 을 앞에 쓰면 표제어 evident(9차, "분명한, 눈에 띄는")·
      apparent("명백한, 분명한")와 뜻이 뒤섞여 셋을 구별할 수 없게 된다. */
-  { word:"explicit", pron:"익스플리시트", pos:"adj", level:"B2", meanings:["명시적인","명쾌한"],
+  { word:"explicit", exams:["수능"], pron:"익스플리시트", pos:"adj", level:"B2", meanings:["명시적인","명쾌한"],
     syn:["clear-cut","unambiguous","stated plainly"], ant:["ambiguous"],
     ex:[{ s:"The contract is {{}} about who pays for repairs.", f:"explicit", ko:"그 계약서는 수리비를 누가 내는지 명시적이다." }] },
 

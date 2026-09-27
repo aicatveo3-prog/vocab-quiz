@@ -23,10 +23,10 @@ window.VOCAB_H = [
   { word:"hormone", exams:["공무원"], pron:"호르몬", pos:"n", level:"B2", meanings:["호르몬"], ex:[{ s:"Glands release chemical {{}} into the bloodstream.", f:"hormones", ko:"분비샘은 화학 호르몬을 혈류로 방출한다." }] },
   { word:"habitable", exams:["공무원"], pron:"해비터블", pos:"adj", level:"C1", meanings:["살기에 적합한","거주할 수 있는"], syn:["livable","inhabitable","hospitable"], ant:["uninhabitable"], ex:[{ s:"People will move to more {{}} areas as the climate changes.", f:"habitable", ko:"기후가 변하면서 사람들은 더 살기 좋은 지역으로 이동할 것이다." }] },
   { word:"handle", exams:["공무원"], pron:"핸들", pos:"v", level:"B1", meanings:["다루다","감당하다"], syn:["deal with","cope with","manage"], ex:[{ s:"Tell our assistant, and she will {{}} it.", f:"handle", ko:"우리 조수에게 말하면 그녀가 처리할 거예요." }] },
-  { word:"hands-on", exams:["공무원"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
+  { word:"hands-on", exams:["공무원","수능"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
   { word:"harmful", exams:["공무원","수능"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
   { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
-  { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
+  { word:"hunter-gatherer", exams:["공무원","수능"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   { word:"have no alternative but to", exams:["공무원"], pron:"해브 노 얼터너티브 벗 투", pos:"phr", level:"B2", meanings:["~할 수밖에 없다"], syn:["have no choice but to","cannot help but","be compelled to do"] },
   { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
@@ -561,7 +561,7 @@ window.VOCAB_H = [
     syn:["insincere","two-faced","deceitful"], ant:["sincere"],
     ex:[{ s:"It would be {{}} to preach honesty while lying.", f:"hypocritical", ko:"거짓말을 하면서 정직을 설교하는 것은 위선적일 것이다." }] },
 
-  { word:"hypothesis", pron:"하이파씨시스", pos:"n", level:"B2", meanings:["가설","가정"],
+  { word:"hypothesis", exams:["수능"], pron:"하이파씨시스", pos:"n", level:"B2", meanings:["가설","가정"],
     syn:["theory","conjecture","premise"],
     ex:[{ s:"The scientist tested her {{}} with a series of experiments.", f:"hypothesis", ko:"그 과학자는 일련의 실험으로 자신의 가설을 검증했다." }] },
 

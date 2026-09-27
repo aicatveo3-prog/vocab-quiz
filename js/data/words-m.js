@@ -463,7 +463,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '의미 없는' 과 같은 갈래다. 참조도 PRON 도 없어 원본 뜻을
      그대로 썼다. */
-  { word:"meaningless", pron:"미닝리스", pos:"adj", level:"B2", meanings:["무의미한","중요하지 않은"],
+  { word:"meaningless", exams:["수능"], pron:"미닝리스", pos:"adj", level:"B2", meanings:["무의미한","중요하지 않은"],
     syn:["pointless","futile","empty"], ant:["significant"],
     ex:[{ s:"Without context the number is {{}}.", f:"meaningless", ko:"맥락이 없으면 그 숫자는 무의미하다." }] },
 
@@ -759,7 +759,7 @@ window.VOCAB_M = [
      emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
      원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
      같아지는 것도 함께 피할 수 있다. */
-  { word:"mimic", exams:["공무원"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+  { word:"mimic", exams:["공무원","수능"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
@@ -1096,7 +1096,7 @@ window.VOCAB_M = [
     ex:[{ s:"The work was safe but utterly {{}}.", f:"monotonous", ko:"그 일은 안전했지만 아주 단조로웠다." }] },
 
   /* 승격 ① — GLOSS '기념비, 기념물' 이 원본과 글자까지 같다. 참조도 PRON 도 없다. */
-  { word:"monument", pron:"마뉴먼트", pos:"n", level:"B1", meanings:["기념비","기념물"],
+  { word:"monument", exams:["수능"], pron:"마뉴먼트", pos:"n", level:"B1", meanings:["기념비","기념물"],
     syn:["memorial stone","landmark","shrine"],
     ex:[{ s:"A stone {{}} marks the old battlefield.", f:"monument", ko:"돌 기념비가 옛 전장을 표시한다." }] },
 
@@ -1136,7 +1136,7 @@ window.VOCAB_M = [
     syn:["conscience","ethics","virtue"],
     ex:[{ s:"The debate soon turned on questions of {{}}.", f:"morality", ko:"그 토론은 곧 도덕의 문제로 옮겨 갔다." }] },
 
-  { word:"more often than not", pron:"모어 오픈 댄 낫", pos:"phr", level:"B2", meanings:["자주","대개"],
+  { word:"more often than not", exams:["수능"], pron:"모어 오픈 댄 낫", pos:"phr", level:"B2", meanings:["자주","대개"],
     syn:["usually","as a rule","most of the time"] },
 
   /* 원본 첫 뜻 '약' 은 한 글자여서 뜻으로 읽히지 않는다. '대략' 을 앞에 두었다. */
@@ -1305,7 +1305,7 @@ window.VOCAB_M = [
     syn:["legendary","fabled","imaginary"], ant:["actual"],
     ex:[{ s:"The unicorn is a {{}} creature.", f:"mythical", ko:"유니콘은 신화 속에 나오는 생물이다." }] },
 
-  { word:"mythology", exams:["공무원"], pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
+  { word:"mythology", exams:["공무원","수능"], pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
     syn:["legend","folklore","body of myths"],
     ex:[{ s:"Greek {{}} still shapes modern storytelling.", f:"mythology", ko:"그리스 신화는 여전히 현대 이야기 짓기를 만든다." }] }
 ];

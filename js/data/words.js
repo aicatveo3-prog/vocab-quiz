@@ -298,7 +298,7 @@ window.VOCAB = [
     syn:["record","ledger","user identity"],
     ex:[{ s:"He opened a savings {{}} at the local bank.", f:"account", ko:"그는 동네 은행에 저축 계좌를 열었다." }] },
 
-  { word:"account for", pron:"어카운트 포", pos:"phr", level:"B2", meanings:["설명하다","차지하다"],
+  { word:"account for", exams:["수능"], pron:"어카운트 포", pos:"phr", level:"B2", meanings:["설명하다","차지하다"],
     syn:["explain","justify","make up"] },
 
   { word:"accountant", pron:"어카운턴트", pos:"n", level:"B2", meanings:["회계사"],
@@ -309,7 +309,7 @@ window.VOCAB = [
     syn:["amass","gather","stockpile"], ant:["disperse"],
     ex:[{ s:"Dust began to {{}} on the unused shelves.", f:"accumulate", ko:"쓰지 않는 선반에 먼지가 쌓이기 시작했다." }] },
 
-  { word:"accumulation", pron:"어큐뮬레이션", pos:"n", level:"C1", meanings:["축적","누적"],
+  { word:"accumulation", exams:["수능"], pron:"어큐뮬레이션", pos:"n", level:"C1", meanings:["축적","누적"],
     syn:["buildup","collection","hoard"], ant:["dispersal"],
     ex:[{ s:"The {{}} of snow closed the mountain road.", f:"accumulation", ko:"눈이 쌓여 산길이 폐쇄되었다." }] },
 
@@ -1081,11 +1081,11 @@ window.VOCAB = [
     syn:["equipment","device","machinery"],
     ex:[{ s:"The lab installed new breathing {{}}.", f:"apparatus", ko:"실험실은 새 호흡 장치를 설치했다." }] },
 
-  { word:"apparent", pron:"어패런트", pos:"adj", level:"B2", meanings:["명백한","분명한"],
+  { word:"apparent", exams:["수능"], pron:"어패런트", pos:"adj", level:"B2", meanings:["명백한","분명한"],
     syn:["obvious","evident","clear"], ant:["obscure"],
     ex:[{ s:"It soon became {{}} that the plan had failed.", f:"apparent", ko:"그 계획이 실패했다는 것이 곧 분명해졌다." }] },
 
-  { word:"appeal", pron:"어필", pos:"v", level:"B2", meanings:["호소하다","관심을 끌다"],
+  { word:"appeal", exams:["수능"], pron:"어필", pos:"v", level:"B2", meanings:["호소하다","관심을 끌다"],
     syn:["plead","attract","entreat"],
     ex:[{ s:"The design should {{}} to younger buyers.", f:"appeal", ko:"그 디자인은 젊은 구매자의 관심을 끌어야 한다." }],
     gov:{ prep:["to","for","against"], pat:"appeal {{}} younger buyers", usage:"appeal to ~ : ~의 관심을 끌다" } },
@@ -1312,7 +1312,7 @@ window.VOCAB = [
     syn:["attribute","credit","assign"],
     gov:{ prep:["to"], pat:"ascribe the delay {{}} bad weather", usage:"ascribe A to B : A를 B의 탓으로 돌리다" } },
 
-  { word:"ashamed", pron:"어셰임드", pos:"adj", level:"B1", meanings:["부끄러운","창피한"],
+  { word:"ashamed", exams:["수능"], pron:"어셰임드", pos:"adj", level:"B1", meanings:["부끄러운","창피한"],
     syn:["embarrassed","guilty","mortified"], ant:["proud"],
     ex:[{ s:"He felt {{}} of his rude reply.", f:"ashamed", ko:"그는 무례한 대답이 부끄러웠다." }] },
 
@@ -1550,7 +1550,7 @@ window.VOCAB = [
     syn:["notice","focus","concentration"], ant:["inattention"],
     ex:[{ s:"The poster is designed to grab {{}}.", f:"attention", ko:"그 포스터는 주목을 끌도록 디자인되었다." }] },
 
-  { word:"attentive", pron:"어텐티브", pos:"adj", level:"C1", meanings:["주의를 기울이는","배려하는"],
+  { word:"attentive", exams:["수능"], pron:"어텐티브", pos:"adj", level:"C1", meanings:["주의를 기울이는","배려하는"],
     syn:["alert","observant","considerate"], ant:["inattentive"],
     ex:[{ s:"The staff were {{}} to every guest.", f:"attentive", ko:"직원들은 모든 손님에게 세심하게 신경 썼다." }] },
 

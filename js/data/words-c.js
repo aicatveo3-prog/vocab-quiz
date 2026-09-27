@@ -19,7 +19,7 @@
  * 진행 상황: 466단어 전량 완료 (calamity ~ cynicism) — 24챕터.
  */
 window.VOCAB_C = [
-  { word:"campaign", exams:["공무원"], pron:"캠페인", pos:"n", level:"B2", meanings:["캠페인","운동"], syn:["crusade","drive","movement"], ex:[{ s:"The industry launched a public-education {{}}.", f:"campaign", ko:"업계는 공공 교육 캠페인을 시작했다." }] },
+  { word:"campaign", exams:["공무원","수능"], pron:"캠페인", pos:"n", level:"B2", meanings:["캠페인","운동"], syn:["crusade","drive","movement"], ex:[{ s:"The industry launched a public-education {{}}.", f:"campaign", ko:"업계는 공공 교육 캠페인을 시작했다." }] },
   { word:"cardiovascular", exams:["공무원"], pron:"카디오바스큘러", pos:"adj", level:"C1", meanings:["심혈관의"], ex:[{ s:"Frequent stress is a risk factor for {{}} disease.", f:"cardiovascular", ko:"잦은 스트레스는 심혈관 질환의 위험 요인이다." }] },
   { word:"cherished", exams:["공무원"], pron:"체리쉬드", pos:"adj", level:"C1", meanings:["소중히 여기는"], syn:["treasured","prized","beloved"], ex:[{ s:"Bringing out a {{}} object creates delight.", f:"cherished", ko:"소중히 여기던 물건을 꺼내면 기쁨이 생긴다." }] },
   { word:"choline", exams:["공무원"], pron:"콜린", pos:"n", level:"C2", meanings:["콜린","비타민 B군 영양소"], ex:[{ s:"Most Americans aren't getting enough {{}}.", f:"choline", ko:"대부분의 미국인은 콜린을 충분히 섭취하지 못한다." }] },
@@ -76,7 +76,7 @@ window.VOCAB_C = [
   { word:"catch up on", exams:["공무원"], pron:"캐치 업 온", pos:"phr", level:"B2", meanings:["밀린 ~을 하다","소식 등을 따라잡다"] },
   { word:"caution", exams:["공무원"], pron:"코션", pos:"n", level:"B2", meanings:["조심","경고"], syn:["care","prudence","wariness"], ant:["recklessness"], ex:[{ s:"Drivers should use extra {{}} on icy roads.", f:"caution", ko:"운전자들은 빙판길에서 각별히 조심해야 한다." }] },
   { word:"calligraphy", exams:["공무원"], pron:"컬리그러피", pos:"n", level:"C1", meanings:["서예","붓글씨"], ex:[{ s:"She practices Chinese {{}} with a brush every morning.", f:"calligraphy", ko:"그녀는 매일 아침 붓으로 중국 서예를 연습한다." }] },
-  { word:"conceptualize", exams:["공무원"], pron:"컨셉추얼라이즈", pos:"v", level:"C1", meanings:["개념화하다"], syn:["conceive","envisage","formulate"], ex:[{ s:"This philosophy tries to {{}} goodness as a form of service.", f:"conceptualize", ko:"이 철학은 선함을 봉사의 한 형태로 개념화하려 한다." }] },
+  { word:"conceptualize", exams:["공무원","수능"], pron:"컨셉추얼라이즈", pos:"v", level:"C1", meanings:["개념화하다"], syn:["conceive","envisage","formulate"], ex:[{ s:"This philosophy tries to {{}} goodness as a form of service.", f:"conceptualize", ko:"이 철학은 선함을 봉사의 한 형태로 개념화하려 한다." }] },
   { word:"cooperative", exams:["공무원","수능"], pron:"코아퍼러티브", pos:"adj", level:"B2", meanings:["협력하는","협동조합의"], syn:["collaborative","helpful","supportive"], ant:["uncooperative"], ex:[{ s:"The staff were very {{}} during the inspection.", f:"cooperative", ko:"직원들은 점검 기간 동안 매우 협조적이었다." }] },
   { word:"coil", exams:["공무원"], pron:"코일", pos:"v", level:"C1", meanings:["감다","똬리를 틀다"], ex:[{ s:"The snake began to {{}} around the branch.", f:"coil", ko:"뱀이 나뭇가지를 휘감기 시작했다." }] },
   { word:"conceptual", exams:["공무원"], pron:"컨셉추얼", pos:"adj", level:"C1", meanings:["개념적인","추상적인"], syn:["abstract","theoretical","notional"], ant:["practical"], ex:[{ s:"The lecture focused on {{}} questions rather than practical ones.", f:"conceptual", ko:"그 강의는 실용적인 문제보다 개념적인 문제에 집중했다." }] },
@@ -488,7 +488,7 @@ window.VOCAB_C = [
     ex:[{ s:"The garage did not {{}} us for the inspection.", f:"charge", ko:"그 정비소는 점검 비용을 우리에게 청구하지 않았다." }],
     gov:{ prep:["for","with","to"], pat:"charge you {{}} the repair", usage:"charge A for B : A에게 B의 값을 청구하다" } },
 
-  { word:"charity", exams:["공무원"], pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
+  { word:"charity", exams:["공무원","수능"], pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
     syn:["philanthropy","generosity","aid"], ant:["greed"],
     ex:[{ s:"All ticket money goes to a local {{}}.", f:"charity", ko:"모든 입장료는 지역 자선 단체로 간다." }] },
 
@@ -958,7 +958,7 @@ window.VOCAB_C = [
     syn:["citizen","peasant","layperson"], ant:["noble"],
     ex:[{ s:"A {{}} could not enter the inner palace.", f:"commoner", ko:"평민은 궁궐 안쪽에 들어갈 수 없었다." }] },
 
-  { word:"commonsense", pron:"카먼센스", pos:"adj", level:"B2", meanings:["상식적인"],
+  { word:"commonsense", exams:["수능"], pron:"카먼센스", pos:"adj", level:"B2", meanings:["상식적인"],
     syn:["sensible","practical","reasonable"], ant:["absurd"],
     ex:[{ s:"This is a {{}} rule, not a legal one.", f:"commonsense", ko:"이것은 법이 아니라 상식적인 규칙이다." }] },
 
@@ -1049,7 +1049,7 @@ window.VOCAB_C = [
     syn:["proficiency","skill","mastery"], ant:["incompetence"],
     ex:[{ s:"The job demands technical {{}}, not charm.", f:"competence", ko:"그 일은 매력이 아니라 기술적 능숙함을 요구한다." }] },
 
-  { word:"competent", pron:"캄피턴트", pos:"adj", level:"B2", meanings:["유능한","능력이 있는"],
+  { word:"competent", exams:["수능"], pron:"캄피턴트", pos:"adj", level:"B2", meanings:["유능한","능력이 있는"],
     syn:["capable","qualified","proficient"], ant:["inept"],
     ex:[{ s:"She proved a quietly {{}} manager.", f:"competent", ko:"그녀는 조용히 유능한 관리자임을 증명했다." }] },
 
@@ -1217,7 +1217,7 @@ window.VOCAB_C = [
     syn:["allowance","compromise","step back on a point"], ant:["demand"],
     ex:[{ s:"The union won one small {{}} on hours.", f:"concession", ko:"노조는 근무 시간에서 작은 양보를 얻어냈다." }] },
 
-  { word:"conclusion", exams:["공무원"], pron:"컨클루전", pos:"n", level:"B1", meanings:["결론","결말"],
+  { word:"conclusion", exams:["공무원","수능"], pron:"컨클루전", pos:"n", level:"B1", meanings:["결론","결말"],
     syn:["ending","finding","verdict"], ant:["opening"],
     ex:[{ s:"He reached the same {{}} by a different route.", f:"conclusion", ko:"그는 다른 경로로 같은 결론에 이르렀다." }] },
 
@@ -1316,7 +1316,7 @@ window.VOCAB_C = [
     syn:["face","tackle","challenge"], ant:["evade"],
     ex:[{ s:"She decided to {{}} him about the missing files.", f:"confront", ko:"그녀는 사라진 파일에 대해 그와 맞서기로 했다." }] },
 
-  { word:"confuse", exams:["공무원"], pron:"컨퓨즈", pos:"v", level:"B1", meanings:["혼동하다","헷갈리게 하다"],
+  { word:"confuse", exams:["공무원","수능"], pron:"컨퓨즈", pos:"v", level:"B1", meanings:["혼동하다","헷갈리게 하다"],
     syn:["muddle","mix up","bewilder"], ant:["clarify"],
     ex:[{ s:"People often {{}} the two brothers.", f:"confuse", ko:"사람들은 종종 그 두 형제를 혼동한다." }] },
 
@@ -1556,7 +1556,7 @@ window.VOCAB_C = [
     syn:["agreement","deal","pact"],
     ex:[{ s:"They signed a three-year {{}} in May.", f:"contract", ko:"그들은 5월에 3년 계약을 맺었다." }] },
 
-  { word:"contradict", exams:["공무원"], pron:"칸트러딕트", pos:"v", level:"B2", meanings:["반박하다","부정하다"],
+  { word:"contradict", exams:["공무원","수능"], pron:"칸트러딕트", pos:"v", level:"B2", meanings:["반박하다","부정하다"],
     syn:["dispute","deny","oppose"], ant:["confirm"],
     ex:[{ s:"The new data {{}} the earlier study.", f:"contradicts", ko:"새 자료는 앞선 연구를 반박한다." }] },
 
@@ -1609,7 +1609,7 @@ window.VOCAB_C = [
     syn:["contrarily","oppositely","instead"],
     ex:[{ s:"{{}}, warm water holds less oxygen.", f:"Conversely", ko:"거꾸로, 따뜻한 물은 산소를 덜 담는다." }] },
 
-  { word:"convert", exams:["공무원"], pron:"컨버트", pos:"v", level:"B1", meanings:["전환하다","바꾸다"],
+  { word:"convert", exams:["공무원","수능"], pron:"컨버트", pos:"v", level:"B1", meanings:["전환하다","바꾸다"],
     syn:["change","transform","adapt"],
     ex:[{ s:"They plan to {{}} the barn into flats.", f:"convert", ko:"그들은 그 헛간을 아파트로 바꿀 계획이다." }],
     gov:{ prep:["into","to"], pat:"convert the attic {{}} a study", usage:"convert A into B : A를 B로 바꾸다" } },
