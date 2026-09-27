@@ -42,7 +42,7 @@ window.VOCAB_W = [
   { word:"wardrobe", exams:["공무원"], pron:"워드로브", pos:"n", level:"B2", meanings:["옷장","옷(전체)"], syn:["closet","clothes","garments"], ex:[{ s:"That is 66 percent of the average {{}} budget.", f:"wardrobe", ko:"그것은 평균 의복 예산의 66퍼센트다." }] },
   { word:"warfare", exams:["공무원"], pron:"워페어", pos:"n", level:"C1", meanings:["전쟁","전투"], syn:["combat","conflict","hostilities"], ant:["peace"], ex:[{ s:"The king lost his treasure on interminable {{}}.", f:"warfare", ko:"그 왕은 끝없는 전쟁으로 재물을 잃었다." }] },
   { word:"whale", exams:["공무원"], pron:"웨일", pos:"n", level:"B2", meanings:["고래"], ex:[{ s:"Members of the Makah tribe hunted {{}}.", f:"whales", ko:"마카 부족 사람들은 고래를 사냥했다." }] },
-  { word:"wireless", exams:["공무원"], pron:"와이어리스", pos:"adj", level:"B2", meanings:["무선의"], ex:[{ s:"The {{}} industry launched an education campaign.", f:"wireless", ko:"무선 통신 업계는 교육 캠페인을 시작했다." }] },
+  { word:"wireless", exams:["공무원","수능"], pron:"와이어리스", pos:"adj", level:"B2", meanings:["무선의"], ex:[{ s:"The {{}} industry launched an education campaign.", f:"wireless", ko:"무선 통신 업계는 교육 캠페인을 시작했다." }] },
   { word:"wrestle", exams:["공무원"], pron:"레슬", pos:"v", level:"C1", meanings:["씨름하다","맞붙어 싸우다"], syn:["grapple","struggle","tussle"], ex:[{ s:"Artists will {{}} with the possibilities of the post-human.", f:"wrestle", ko:"예술가들은 포스트휴먼의 가능성과 씨름할 것이다." }] },
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
@@ -54,6 +54,9 @@ window.VOCAB_W = [
   { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
   { word:"workaholic", exams:["공무원"], pron:"워커홀릭", pos:"n", level:"B2", meanings:["일중독자"], ex:[{ s:"My father is a true {{}} who works even on weekends.", f:"workaholic", ko:"우리 아버지는 주말에도 일하는 진정한 일중독자다." }] },
   { word:"weed out", exams:["공무원"], pron:"위드 아웃", pos:"phr", level:"B2", meanings:["솎아 내다","가려내다"] },
+  { word:"willingly", exams:["수능"], pron:"윌링리", pos:"adv", level:"B2", meanings:["기꺼이","자진해서"], syn:["readily","gladly","voluntarily"], ant:["reluctantly","unwillingly"] },
+  { word:"worthless", exams:["수능"], pron:"워스리스", pos:"adj", level:"B2", meanings:["가치 없는","쓸모없는"], syn:["useless","valueless","futile"], ant:["precious"], ex:[{ s:"Speed is {{}} if the bus comes only once an hour.", f:"worthless", ko:"버스가 한 시간에 한 번만 온다면 속도는 쓸모가 없다." }] },
+  { word:"wipe out", exams:["수능"], pron:"와이프 아웃", pos:"phr", level:"B2", meanings:["완전히 없애다","전멸시키다"] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -170,7 +173,7 @@ window.VOCAB_W = [
   /* 승격 ⑦ — 사전 단일값 유지. 참조 세 곳(dilute·impair 유의어, consolidate
      반의어) 의 화면은 바뀌지 않는다. dampen(약화시키다, 적시다)·undermine
      (약화시키다) 과 글자가 맞물려 배제된다. */
-  { word:"weaken", exams:["공무원"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
+  { word:"weaken", exams:["공무원","수능"], pron:"위컨", pos:"v", level:"B2", meanings:["약화시키다"],
     syn:["dilute","impair","make less strong"], ant:["consolidate"],
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
@@ -642,6 +645,7 @@ Object.assign(window.GLOSS, {
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
   "glad to lend a hand": "손을 보태는 것이 반가운",
+  "gladly": "기쁘게",
   "go about with no goal": "목적 없이 돌아다니다",
   "go round and round": "돌고 또 돌다",
   "good enough to go on with": "그럭저럭 밀고 갈 만한",
@@ -745,6 +749,7 @@ Object.assign(window.GLOSS, {
   "tussle": "몸싸움하다, 옥신각신하다",
   "untamed country": "길들지 않은 들판",
   "unwanted growth": "달갑지 않게 자란 것",
+  "voluntarily": "자발적으로",
   "walk here and there": "여기저기 걸어 다니다",
   "want of strength": "힘이 모자람",
   "waste country": "버려진 들판",

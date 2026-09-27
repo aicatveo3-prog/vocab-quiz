@@ -71,7 +71,7 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '판단하다, 심사하다' 를 글자까지 지켰다. evaluate(syn) 가
      참조하므로 원본의 '판정하다' 대신 사전 쪽 '심사하다' 를 남겼다.
      원본의 명사 갈래('판사, 심판')는 pos 가 v 라 담지 못했다. */
-  { word:"judge", pron:"저지", pos:"v", level:"B1", meanings:["판단하다","심사하다"],
+  { word:"judge", exams:["수능"], pron:"저지", pos:"v", level:"B1", meanings:["판단하다","심사하다"],
     syn:["evaluate","assess","appraise"],
     ex:[{ s:"You should not {{}} a book by its cover.", f:"judge", ko:"표지로 책을 판단해서는 안 된다." }] },
 
@@ -99,14 +99,14 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '정의' 를 첫 자리에 지켰다. I 세트 injustice 의 반의어로
      쓰이므로 이 갈래가 바뀌면 방금 넣은 문제 화면이 바뀐다.
      원본의 '정당성' 을 둘째 자리에 붙였다. */
-  { word:"justice", pron:"저스티스", pos:"n", level:"B1", meanings:["정의","정당성"],
+  { word:"justice", exams:["수능"], pron:"저스티스", pos:"n", level:"B1", meanings:["정의","정당성"],
     syn:["fairness","equity","righteousness"], ant:["injustice"],
     ex:[{ s:"The verdict was seen as a victory for {{}}.", f:"justice", ko:"그 판결은 정의의 승리로 여겨졌다." }] },
 
   /* 승격 ① — GLOSS '정당화하다, 설명하다' 를 글자까지 지켰다. account for(syn) 가
      참조하므로 원본의 '해명하다' 대신 사전 쪽 '설명하다' 를 남겼다.
      justice 와 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"justify", exams:["공무원"], pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
+  { word:"justify", exams:["공무원","수능"], pron:"저스터파이", pos:"v", level:"B2", meanings:["정당화하다","설명하다"],
     syn:["account for","defend","vindicate"],
     ex:[{ s:"Nothing can {{}} cruelty on that scale.", f:"justify", ko:"어떤 것도 그 정도 규모의 잔인함을 정당화할 수 없다." }] },
 

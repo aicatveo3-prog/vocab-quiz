@@ -34,12 +34,12 @@ window.VOCAB_L = [
   { word:"localized", exams:["공무원"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
   { word:"longhouse", exams:["공무원"], pron:"롱하우스", pos:"n", level:"C2", meanings:["롱하우스","전통 공동 주거"], ex:[{ s:"The mudslide covered several {{}}.", f:"longhouses", ko:"산사태가 여러 채의 롱하우스를 덮었다." }] },
   { word:"ludicrous", exams:["공무원"], pron:"루디크러스", pos:"adj", level:"C2", meanings:["터무니없는","우스꽝스러운"], syn:["absurd","ridiculous","preposterous"], ant:["sensible"], ex:[{ s:"The claim sounds {{}} to most people.", f:"ludicrous", ko:"그 주장은 대부분의 사람에게 터무니없게 들린다." }] },
-  { word:"landscape", exams:["공무원"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
+  { word:"landscape", exams:["공무원","수능"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
   { word:"liability", exams:["공무원"], pron:"라이어빌리티", pos:"n", level:"C1", meanings:["법적 책임","부채"], syn:["responsibility","obligation","accountability"], ant:["asset"], ex:[{ s:"You will sign a release of {{}} form.", f:"liability", ko:"당신은 책임 면제 동의서에 서명하게 된다." }] },
   { word:"loom", exams:["공무원"], pron:"룸", pos:"v", level:"B2", meanings:["어렴풋이 다가오다","불길하게 다가오다"], syn:["approach","emerge","threaten"], ex:[{ s:"A serious teacher shortage began to {{}}.", f:"loom", ko:"심각한 교사 부족이 어렴풋이 다가오기 시작했다." }] },
   { word:"loudly", exams:["공무원"], pron:"라우들리", pos:"adv", level:"B1", meanings:["큰 소리로"], syn:["noisily","boisterously","vociferously"], ant:["quietly"], ex:[{ s:"He spoke so {{}} that everyone turned around.", f:"loudly", ko:"그가 너무 큰 소리로 말해서 모두가 돌아보았다." }] },
   { word:"lab-grown", exams:["공무원"], pron:"랩 그로운", pos:"adj", level:"C1", meanings:["실험실에서 배양한","인공 배양된"], ex:[{ s:"Many experts say {{}} meat has not lived up to its promise.", f:"lab-grown", ko:"많은 전문가는 배양육이 기대에 부응하지 못했다고 말한다." }] },
-  { word:"lead to", exams:["공무원"], pron:"리드 투", pos:"phr", level:"B1", meanings:["~로 이어지다","~을 초래하다"], syn:["result in","bring about","give rise to"] },
+  { word:"lead to", exams:["공무원","수능"], pron:"리드 투", pos:"phr", level:"B1", meanings:["~로 이어지다","~을 초래하다"], syn:["result in","bring about","give rise to"] },
   { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
   { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
   { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
@@ -48,16 +48,24 @@ window.VOCAB_L = [
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
   { word:"liveliness", exams:["공무원"], pron:"라이블리니스", pos:"n", level:"B2", meanings:["활기","생기"], syn:["vitality","vivacity","energy"], ex:[{ s:"The {{}} of the night market attracts many tourists.", f:"liveliness", ko:"야시장의 활기가 많은 관광객을 끌어들인다." }] },
-  { word:"linguistic", exams:["공무원"], pron:"링귀스틱", pos:"adj", level:"C1", meanings:["언어의","언어학의"], ex:[{ s:"English and German share many {{}} features, such as similar words.", f:"linguistic", ko:"영어와 독일어는 비슷한 단어처럼 많은 언어적 특징을 공유한다." }] },
+  { word:"linguistic", exams:["공무원","수능"], pron:"링귀스틱", pos:"adj", level:"C1", meanings:["언어의","언어학의"], ex:[{ s:"English and German share many {{}} features, such as similar words.", f:"linguistic", ko:"영어와 독일어는 비슷한 단어처럼 많은 언어적 특징을 공유한다." }] },
   { word:"look after", exams:["공무원"], pron:"룩 애프터", pos:"phr", level:"B1", meanings:["돌보다","보살피다"], syn:["take care of","care for","tend"] },
   { word:"lose track of", exams:["공무원"], pron:"루즈 트랙 오브", pos:"phr", level:"B2", meanings:["~을 놓치다","~을 잊다"] },
   { word:"look ~ in the eye", exams:["공무원"], pron:"룩 인 디 아이", pos:"phr", level:"B2", meanings:["~의 눈을 똑바로 보다"] },
+  { word:"leverage", exams:["수능"], pron:"레버리지", pos:"v", level:"C1", meanings:["활용하다","지렛대로 이용하다"], syn:["exploit","utilize","harness"], ex:[{ s:"Rival firms sometimes cooperate to {{}} important resources.", f:"leverage", ko:"경쟁 기업들은 때로 중요한 자원을 활용하려고 협력한다." }] },
+  { word:"liberty", exams:["수능"], pron:"리버티", pos:"n", level:"B2", meanings:["자유","해방"], syn:["freedom","independence","autonomy"], ant:["captivity"], ex:[{ s:"Good laws do not unfairly limit human {{}}.", f:"liberty", ko:"좋은 법은 인간의 자유를 부당하게 제한하지 않는다." }] },
+  { word:"life-threatening", exams:["수능"], pron:"라이프 스레트닝", pos:"adj", level:"B2", meanings:["생명을 위협하는"], ex:[{ s:"Hospitals must always be ready for {{}} emergencies.", f:"life-threatening", ko:"병원은 생명을 위협하는 응급 상황에 늘 대비해야 한다." }] },
+  { word:"lifeless", exams:["수능"], pron:"라이프리스", pos:"adj", level:"B2", meanings:["생명이 없는","생기 없는"], syn:["inanimate","dull","listless"], ant:["lively"], ex:[{ s:"Without any movement, the dress on the display figure looked {{}}.", f:"lifeless", ko:"전혀 움직임이 없어 전시용 인체 모형에 입힌 옷은 생기 없어 보였다." }] },
+  { word:"limitation", exams:["수능"], pron:"리미테이션", pos:"n", level:"B2", meanings:["한계","제약"], syn:["constraint","restriction","drawback"], ex:[{ s:"Writers must recognize the {{}} of writing without feedback.", f:"limitation", ko:"작가는 피드백 없는 글쓰기의 한계를 인식해야 한다." }] },
+  { word:"lively", exams:["수능"], pron:"라이블리", pos:"adj", level:"B1", meanings:["활기찬","생동감 있는"], syn:["energetic","vibrant","spirited"], ant:["dull","lifeless"], ex:[{ s:"Their conversation grew {{}} as everyone joined in.", f:"lively", ko:"모두가 끼어들면서 그들의 대화는 활기를 띠었다." }] },
+  { word:"loop", exams:["수능"], pron:"루프", pos:"n", level:"B2", meanings:["고리","순환"], ex:[{ s:"Perception and action form a feedback {{}}.", f:"loop", ko:"지각과 행동은 피드백 고리를 이룬다." }] },
+  { word:"loyalty", exams:["수능"], pron:"로열티", pos:"n", level:"B2", meanings:["충성","충실"], syn:["allegiance","devotion","faithfulness"], ant:["betrayal"], ex:[{ s:"The firms were built on family ties, trust, and {{}}.", f:"loyalty", ko:"그 회사들은 가족 유대, 신뢰, 충성을 바탕으로 세워졌다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
      다만 뜻이 '노동' 과 '실험실' 로 완전히 달라 무리가 없다.
      원본의 동사 갈래('일하다, 노력하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"labor", exams:["공무원"], pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
+  { word:"labor", exams:["공무원","수능"], pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
     syn:["toil","exertion","drudgery"],
     ex:[{ s:"The factory still relies on cheap manual {{}}.", f:"labor", ko:"그 공장은 여전히 값싼 육체 노동에 의존한다." }] },
 
@@ -126,7 +134,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '대체로, 주로' 가 원본과 글자까지 같다. 참조는 없고 PRON 도
      없었다. 손댈 것이 없었다. */
-  { word:"largely", exams:["공무원"], pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
+  { word:"largely", exams:["공무원","수능"], pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
     syn:["mostly","predominantly","on the whole"],
     ex:[{ s:"The restoration was {{}} successful.", f:"largely", ko:"그 복원은 대체로 성공적이었다." }] },
 
@@ -276,7 +284,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '합법적인, 법의' 를 글자까지 지켰다. 참조가 둘인데 그중
      judicial 은 바로 앞 J 세트에서 넣은 표제어다(illegal 은 I 세트).
      뒤에 올 legitimate 은 '정당한' 으로 돌려 첫 뜻이 갈린다. */
-  { word:"legal", pron:"리걸", pos:"adj", level:"B1", meanings:["합법적인","법의"],
+  { word:"legal", exams:["수능"], pron:"리걸", pos:"adj", level:"B1", meanings:["합법적인","법의"],
     syn:["lawful","permissible","above board"], ant:["illegal"],
     ex:[{ s:"Gambling is {{}} in only a handful of states.", f:"legal", ko:"도박은 소수의 주에서만 합법적이다." }] },
 
@@ -419,7 +427,7 @@ window.VOCAB_L = [
     syn:["featherweight","portable","easy to carry"], ant:["heavy"],
     ex:[{ s:"The tent is made of {{}} nylon.", f:"lightweight", ko:"그 텐트는 가벼운 나일론으로 만들어졌다." }] },
 
-  { word:"likely", exams:["공무원"], pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
+  { word:"likely", exams:["공무원","수능"], pron:"라이클리", pos:"adj", level:"B1", meanings:["~할 것 같은","아마도"],
     syn:["probable","expected","apt"], ant:["unlikely"],
     ex:[{ s:"Rain is {{}} later this evening.", f:"likely", ko:"오늘 저녁 늦게 비가 올 것 같다." }] },
 
@@ -448,7 +456,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '한정된, 제한된' 을 글자까지 지켰다.
      boundless(ant)·finite(syn) 두 문제가 참조한다.
      바로 뒤 limitless 와 뜻이 정반대여서 함께 익히기 좋은 쌍이다. */
-  { word:"limited", exams:["공무원"], pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
+  { word:"limited", exams:["공무원","수능"], pron:"리미티드", pos:"adj", level:"B1", meanings:["한정된","제한된"],
     syn:["finite","restricted","narrow"], ant:["boundless"],
     ex:[{ s:"Seats are {{}} to thirty per session.", f:"limited", ko:"좌석은 회당 30석으로 한정된다." }] },
 
@@ -522,12 +530,12 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '문학의' 를 첫 자리에 지켰다. 참조는 없고 PRON 도 없었다.
      원본의 '문학적인' 을 둘째 자리에 붙였다. */
-  { word:"literary", exams:["공무원"], pron:"리터레리", pos:"adj", level:"B2", meanings:["문학의","문학적인"],
+  { word:"literary", exams:["공무원","수능"], pron:"리터레리", pos:"adj", level:"B2", meanings:["문학의","문학적인"],
     syn:["bookish","written","highbrow"],
     ex:[{ s:"The magazine publishes serious {{}} criticism.", f:"literary", ko:"그 잡지는 본격적인 문학 비평을 게재한다." }] },
 
   /* literary 와 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"literature", pron:"리터러처", pos:"n", level:"B1", meanings:["문학","문헌"],
+  { word:"literature", exams:["수능"], pron:"리터러처", pos:"n", level:"B1", meanings:["문학","문헌"],
     syn:["writing","letters","written works"],
     ex:[{ s:"She majored in English {{}} at university.", f:"literature", ko:"그녀는 대학에서 영문학을 전공했다." }] },
 
@@ -592,7 +600,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '논리적인' 과 글자까지 같다. coherent(syn)·illogical(ant) 두
      문제가 참조한다. 원본도 한 갈래다.
      logic 과 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"logical", exams:["공무원"], pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
+  { word:"logical", exams:["공무원","수능"], pron:"라지컬", pos:"adj", level:"B1", meanings:["논리적인"],
     syn:["coherent","rational","sound"], ant:["illogical"],
     ex:[{ s:"The next {{}} step is to test the theory.", f:"logical", ko:"다음 논리적인 단계는 그 이론을 검증하는 것이다." }] },
 
@@ -619,7 +627,7 @@ window.VOCAB_L = [
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 
-  { word:"look forward to", exams:["공무원"], pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
+  { word:"look forward to", exams:["공무원","수능"], pron:"룩 포워드 투", pos:"phr", level:"B1", meanings:["~을 고대하다"],
     syn:["anticipate","await eagerly","be eager for"] },
 
   { word:"looking glass", pron:"루킹 글래스", pos:"phr", level:"C2", meanings:["거울"],
@@ -717,7 +725,7 @@ window.VOCAB_L = [
     syn:["opulent","plush","deluxe"], ant:["plain"],
     ex:[{ s:"They stayed in a {{}} seaside hotel.", f:"luxurious", ko:"그들은 사치스러운 해변 호텔에 머물렀다." }] },
 
-  { word:"lyric", pron:"리릭", pos:"n", level:"C1", meanings:["서정시","가사"],
+  { word:"lyric", exams:["수능"], pron:"리릭", pos:"n", level:"C1", meanings:["서정시","가사"],
     syn:["verse","song words","poem"],
     ex:[{ s:"The {{}} of the song is printed inside the sleeve.", f:"lyric", ko:"그 노래의 가사가 케이스 안에 인쇄되어 있다." }] }
 ];
@@ -729,6 +737,7 @@ Object.assign(window.GLOSS, {
   "accountability": "책임성, 해명 의무",
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
+  "allegiance": "충성 서약, 충절",
   "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
   "answerable": "책임을 져야 하는",
@@ -742,6 +751,7 @@ Object.assign(window.GLOSS, {
   "be outpaced": "앞질리다",
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
+  "betrayal": "배신",
   "blistering": "맹렬히 빠른",
   "boisterously": "떠들썩하게",
   "booby trap": "위장 폭탄",
@@ -756,6 +766,7 @@ Object.assign(window.GLOSS, {
   "cabin": "오두막",
   "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
+  "captivity": "감금, 포로 생활",
   "care for": "보살피다, 좋아하다",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
@@ -778,6 +789,7 @@ Object.assign(window.GLOSS, {
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",
+  "faithfulness": "성실함, 신의",
   "farm animals": "농장 동물",
   "featherweight": "깃털처럼 가벼운",
   "flanking": "측면을 이루는",
@@ -829,6 +841,7 @@ Object.assign(window.GLOSS, {
   "lie in wait": "숨어서 기다리다",
   "lightheartedness": "마음 가벼움",
   "limping": "다리를 저는",
+  "listless": "무기력한",
   "litigation": "소송 절차",
   "long life": "오랜 수명",
   "make redundant": "정리 해고하다",
@@ -903,7 +916,6 @@ Object.assign(window.GLOSS, {
   "uneaten": "먹지 않은",
   "unflappable": "동요하지 않는",
   "unhurried": "서두르지 않는",
-  "unlikely": "있을 것 같지 않은",
   "unsophisticated": "세련되지 않은",
   "untie": "매듭을 풀다",
   "validly": "유효하게, 타당하게",

@@ -20,6 +20,7 @@
 window.VOCAB_K = [
   { word:"kinetic", exams:["공무원"], pron:"키네틱", pos:"adj", level:"C1", meanings:["운동의","운동에 의한"], ex:[{ s:"A moving roller coaster has plenty of {{}} energy.", f:"kinetic", ko:"움직이는 롤러코스터는 운동 에너지가 풍부하다." }] },
   { word:"keep in contact with", exams:["공무원"], pron:"킵 인 칸택트 위드", pos:"phr", level:"B2", meanings:["~와 연락을 유지하다"] },
+  { word:"keep", exams:["수능"], pron:"킵", pos:"v", level:"B1", meanings:["계속하다","유지하다"], syn:["continue","persist","retain"], ant:["discard","abandon"], ex:[{ s:"Don't give up now; just {{}} going!", f:"keep", ko:"지금 포기하지 말고 계속 가!" }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '열심인; 날카로운' 을 글자까지 지켰다.

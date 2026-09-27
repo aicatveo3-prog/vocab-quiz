@@ -58,16 +58,17 @@ window.VOCAB_N = [
   { word:"nosy", exams:["공무원"], pron:"노지", pos:"adj", level:"C1", meanings:["참견하기 좋아하는"], syn:["prying","inquisitive","intrusive"], ex:[{ s:"She is not {{}} about other people's business.", f:"nosy", ko:"그녀는 남의 일에 참견하지 않는다." }] },
   { word:"nucleus", exams:["공무원"], pron:"뉴클리어스", pos:"n", level:"C1", meanings:["핵","중심"], syn:["core","center","heart"], ex:[{ s:"Energy levels are like orbits around a {{}}.", f:"nucleus", ko:"에너지 준위는 핵 주위의 궤도와 같다." }] },
   { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
-  { word:"navigate", exams:["공무원"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
+  { word:"navigate", exams:["공무원","수능"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
   { word:"no longer", exams:["공무원"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
-  { word:"no matter how", exams:["공무원"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
+  { word:"no matter how", exams:["공무원","수능"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
   { word:"notification", exams:["공무원"], pron:"노터피케이션", pos:"n", level:"B2", meanings:["통지","알림"], ex:[{ s:"You will receive an email {{}} when the payment is due.", f:"notification", ko:"납부 기한이 되면 이메일 알림을 받게 됩니다." }] },
   { word:"neutrally", exams:["공무원"], pron:"뉴트럴리", pos:"adv", level:"C1", meanings:["중립적으로","공정하게"], syn:["impartially","objectively","even-handedly"], ex:[{ s:"A good judge must listen {{}} to both sides.", f:"neutrally", ko:"훌륭한 판사는 양측의 말을 중립적으로 들어야 한다." }] },
   { word:"no sooner A than B", exams:["공무원"], pron:"노 수너 댄", pos:"phr", level:"C1", meanings:["A하자마자 B하다"] },
   { word:"name A after B", exams:["공무원"], pron:"네임 애프터", pos:"phr", level:"B2", meanings:["B의 이름을 따서 A의 이름을 짓다"] },
-  { word:"needless to say", exams:["공무원"], pron:"니들리스 투 세이", pos:"phr", level:"B2", meanings:["말할 필요도 없이"] },
+  { word:"needless to say", exams:["공무원","수능"], pron:"니들리스 투 세이", pos:"phr", level:"B2", meanings:["말할 필요도 없이"] },
   { word:"net worth", exams:["공무원"], pron:"넷 워스", pos:"n", level:"C1", meanings:["순자산"] },
+  { word:"neuroscience", exams:["수능"], pron:"뉴로사이언스", pos:"n", level:"C1", meanings:["신경 과학"], ex:[{ s:"Advances in {{}} help us understand how memory works.", f:"neuroscience", ko:"신경 과학의 발전은 기억이 어떻게 작동하는지 이해하도록 돕는다." }] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },
@@ -95,7 +96,7 @@ window.VOCAB_N = [
     syn:["commentary","voice-over","recounting"],
     ex:[{ s:"The film's {{}} explains each step of the process.", f:"narration", ko:"그 영화의 서술은 과정의 각 단계를 설명한다." }] },
 
-  { word:"narrative", pron:"내러티브", pos:"n", level:"B2", meanings:["이야기","서사"],
+  { word:"narrative", exams:["수능"], pron:"내러티브", pos:"n", level:"B2", meanings:["이야기","서사"],
     /* tale 은 사전 뜻이 story 와 똑같은 '이야기' 라 검사가 잡았다 — chronicle 로 바꿨다 */
     syn:["story","chronicle","storyline"],
     ex:[{ s:"The {{}} follows three families over a century.", f:"narrative", ko:"그 이야기는 한 세기에 걸쳐 세 가족을 따라간다." }] },
@@ -166,21 +167,21 @@ window.VOCAB_N = [
     syn:["call for","require","make unavoidable"],
     ex:[{ s:"Heavy rain may {{}} a change of plan.", f:"necessitate", ko:"폭우는 계획 변경을 필요로 할 수 있다." }] },
 
-  { word:"necessity", pron:"너세서티", pos:"n", level:"B2", meanings:["필요성","필수품"],
+  { word:"necessity", exams:["수능"], pron:"너세서티", pos:"n", level:"B2", meanings:["필요성","필수품"],
     syn:["need","requirement","must-have"], ant:["luxury"],
     ex:[{ s:"Clean water is a basic {{}}, not a luxury.", f:"necessity", ko:"깨끗한 물은 사치가 아니라 기본 필수품이다." }] },
 
   /* ── 챕터 2 ─────────────────────────────────────── */
 
   /* 승격 ⑨ — 사전 표현과 글자까지 같다. affirmative(ant, A) 화면이 안 바뀐다. */
-  { word:"negative", pron:"네거티브", pos:"adj", level:"B1", meanings:["부정적인"],
+  { word:"negative", exams:["수능"], pron:"네거티브", pos:"adj", level:"B1", meanings:["부정적인"],
     syn:["unfavorable","pessimistic","downbeat"], ant:["affirmative"],
     ex:[{ s:"The trial produced a {{}} result.", f:"negative", ko:"그 시험은 부정적인 결과를 냈다." }] },
 
   /* 승격 ⑩ — 사전이 '방치하다; 소홀' 로 동사와 명사가 섞여 있었다. 참조 일곱 중
      여섯이 동사여서 동사로 세웠다. 명사 자리였던 attention(A) 쪽 반의어를
      'inattention' 으로 바꿨다(words.js). 이 세트에서 참조가 가장 많은 낱말이다. */
-  { word:"neglect", pron:"니글렉트", pos:"v", level:"B2", meanings:["방치하다","등한시하다"],
+  { word:"neglect", exams:["수능"], pron:"니글렉트", pos:"v", level:"B2", meanings:["방치하다","등한시하다"],
     syn:["ignore","let slide","fail to care for"], ant:["cherish"],
     ex:[{ s:"Do not {{}} the small cracks in the wall.", f:"neglect", ko:"벽의 작은 금들을 방치하지 마라." }] },
 
@@ -325,7 +326,7 @@ window.VOCAB_N = [
     syn:["rubbish","drivel","empty talk"],
     ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },
 
-  { word:"nonverbal", exams:["공무원"], pron:"난버벌", pos:"adj", level:"B2", meanings:["비언어적인","말을 쓰지 않는"],
+  { word:"nonverbal", exams:["공무원","수능"], pron:"난버벌", pos:"adj", level:"B2", meanings:["비언어적인","말을 쓰지 않는"],
     syn:["unspoken","gestural","without speech"], ant:["spoken"],
     ex:[{ s:"A frown is a strong {{}} signal.", f:"nonverbal", ko:"찡그림은 강한 비언어적인 신호다." }] },
 
@@ -333,7 +334,7 @@ window.VOCAB_N = [
     syn:["peaceable","without force","unarmed"], ant:["violent"],
     ex:[{ s:"They staged a {{}} sit-in outside the hall.", f:"nonviolent", ko:"그들은 회관 밖에서 비폭력의 연좌 농성을 벌였다." }] },
 
-  { word:"norm", exams:["공무원"], pron:"놈", pos:"n", level:"B2", meanings:["규범","표준"],
+  { word:"norm", exams:["공무원","수능"], pron:"놈", pos:"n", level:"B2", meanings:["규범","표준"],
     syn:["accepted rule","usual pattern","what is expected"],
     ex:[{ s:"Working from home became the {{}}.", f:"norm", ko:"집에서 일하는 것이 규범이 되었다." }] },
 
@@ -573,7 +574,6 @@ Object.assign(window.GLOSS, {
   "harmful to health": "건강에 나쁜",
   "health-giving": "건강을 주는",
   "high birth": "높은 가문 태생",
-  "high-minded": "뜻이 높은",
   "homegrown": "제 땅에서 난",
   "homesickness": "고향을 그리는 마음",
   "idea": "착상",
@@ -582,7 +582,6 @@ Object.assign(window.GLOSS, {
   "in other words": "달리 말하면",
   "in spite of that": "그것에도 아랑곳없이",
   "inattention": "주의를 기울이지 않음",
-  "inevitably": "어쩔 수 없이",
   "infamous": "나쁜 쪽으로 이름난",
   "inherent quality": "본디 지닌 성질",
   "injurious": "몸을 해치는",

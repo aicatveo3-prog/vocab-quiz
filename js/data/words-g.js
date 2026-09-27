@@ -46,17 +46,19 @@ window.VOCAB_G = [
   { word:"generative", exams:["공무원"], pron:"제너러티브", pos:"adj", level:"C1", meanings:["생성적인","생성형의"], syn:["productive","creative","fertile"], ex:[{ s:"{{}} AI is advancing rapidly.", f:"Generative", ko:"생성형 AI가 빠르게 발전하고 있다." }] },
   { word:"globally", exams:["공무원"], pron:"글로벌리", pos:"adv", level:"B2", meanings:["세계적으로","전 세계에서"], syn:["worldwide","internationally","universally"], ex:[{ s:"The agency must engage {{}} to fulfill its mission.", f:"globally", ko:"그 기관은 사명을 완수하려 전 세계적으로 관여해야 한다." }] },
   { word:"gratification", exams:["공무원"], pron:"그래티피케이션", pos:"n", level:"C1", meanings:["만족","충족"], syn:["satisfaction","pleasure","fulfillment"], ex:[{ s:"Short-term {{}} can eclipse long-term focus.", f:"gratification", ko:"단기적 만족이 장기적 집중을 가릴 수 있다." }] },
-  { word:"gap", exams:["공무원"], pron:"갭", pos:"n", level:"B1", meanings:["격차","틈"], syn:["difference","gulf","disparity"], ex:[{ s:"The {{}} had more to do with each school's resources.", f:"gap", ko:"그 격차는 각 학교의 자원과 더 관련이 있었다." }] },
+  { word:"gap", exams:["공무원","수능"], pron:"갭", pos:"n", level:"B1", meanings:["격차","틈"], syn:["difference","gulf","disparity"], ex:[{ s:"The {{}} had more to do with each school's resources.", f:"gap", ko:"그 격차는 각 학교의 자원과 더 관련이 있었다." }] },
   { word:"giraffe", exams:["공무원"], pron:"지래프", pos:"n", level:"B1", meanings:["기린"], ex:[{ s:"A baby {{}} has its own unique markings.", f:"giraffe", ko:"새끼 기린은 저마다 고유한 무늬를 지닌다." }] },
   { word:"greet", exams:["공무원"], pron:"그릿", pos:"v", level:"B1", meanings:["인사하다","맞이하다"], syn:["welcome","salute","receive"], ant:["ignore"], ex:[{ s:"Volunteers warmly {{}} and assist visitors.", f:"greet", ko:"자원봉사자들은 방문객을 따뜻하게 맞이하고 돕는다." }] },
-  { word:"gain", exams:["공무원"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
-  { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
+  { word:"gain", exams:["공무원","수능"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
+  { word:"growth", exams:["공무원","수능"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
   { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
   { word:"grateful", exams:["공무원"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
   { word:"gossip", exams:["공무원"], pron:"가십", pos:"v", level:"B2", meanings:["험담하다","잡담하다"], ex:[{ s:"They love to {{}} about their neighbors.", f:"gossip", ko:"그들은 이웃에 대해 험담하기를 좋아한다." }] },
   { word:"give rise to", exams:["공무원"], pron:"기브 라이즈 투", pos:"phr", level:"B2", meanings:["~을 일으키다","~의 원인이 되다"], syn:["cause","bring about","lead to"] },
   { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
+  { word:"goodwill", exams:["수능"], pron:"굿윌", pos:"n", level:"C1", meanings:["호의","선의"], syn:["kindness","favor","generosity"], ant:["hostility"], ex:[{ s:"We cannot simply count on people's {{}}.", f:"goodwill", ko:"우리는 사람들의 선의에만 기댈 수는 없다." }] },
+  { word:"guideline", exams:["수능"], pron:"가이드라인", pos:"n", level:"B2", meanings:["지침","가이드라인"], syn:["rule","principle","instruction"], ex:[{ s:"Each {{}} in the handbook is easy to follow.", f:"guideline", ko:"안내서의 지침 하나하나가 따르기 쉽다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -200,7 +202,7 @@ window.VOCAB_G = [
   { word:"genetics", pron:"저네틱스", pos:"n", level:"B2", meanings:["유전학"],
     ex:[{ s:"She studies {{}} at a government research institute.", f:"genetics", ko:"그녀는 정부 연구소에서 유전학을 연구한다." }] },
 
-  { word:"genre", exams:["공무원"], pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
+  { word:"genre", exams:["공무원","수능"], pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
     syn:["category","style","classification"],
     ex:[{ s:"Science fiction has long been his favourite {{}}.", f:"genre", ko:"공상과학은 오랫동안 그가 가장 좋아하는 장르였다." }] },
 
@@ -219,7 +221,7 @@ window.VOCAB_G = [
     syn:["geographical","regional","spatial"],
     ex:[{ s:"The survey covers a very wide {{}} area.", f:"geographic", ko:"그 조사는 매우 넓은 지리적 범위를 다룬다." }] },
 
-  { word:"geographical", pron:"지오그래피컬", pos:"adj", level:"B2", meanings:["지리학의","지리학적인"],
+  { word:"geographical", exams:["수능"], pron:"지오그래피컬", pos:"adj", level:"B2", meanings:["지리학의","지리학적인"],
     syn:["geographic","topographic","cartographic"],
     ex:[{ s:"He published a {{}} study of the northern region.", f:"geographical", ko:"그는 북부 지역에 대한 지리학 연구를 발표했다." }] },
 
@@ -258,7 +260,7 @@ window.VOCAB_G = [
   { word:"get along with", pron:"겟 얼롱 위드", pos:"phr", level:"B1", meanings:["~와 잘 지내다"],
     syn:["get on with","hit it off with","be friendly with"] },
 
-  { word:"get away with", pron:"겟 어웨이 위드", pos:"phr", level:"B2", meanings:["~을 모면하다"],
+  { word:"get away with", exams:["수능"], pron:"겟 어웨이 위드", pos:"phr", level:"B2", meanings:["~을 모면하다"],
     syn:["escape blame","evade","dodge"] },
 
   /* 첫 뜻을 '착수하다' 로 뒀다 — 원본의 '대처하다' 는 기존 표제어 cope with 와
@@ -449,11 +451,11 @@ window.VOCAB_G = [
     ex:[{ s:"Recovery was slow but {{}} over several months.", f:"gradual", ko:"회복은 느렸지만 여러 달에 걸쳐 점진적이었다." }] },
 
   /* gradual 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 오지 않는다. */
-  { word:"graduate", exams:["공무원"], pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
+  { word:"graduate", exams:["공무원","수능"], pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
     syn:["finish school","complete studies","earn a degree"],
     ex:[{ s:"She hopes to {{}} with honours next spring.", f:"graduate", ko:"그녀는 내년 봄에 우등으로 졸업하기를 바란다." }] },
 
-  { word:"grain", pron:"그레인", pos:"n", level:"B1", meanings:["곡물","곡류"],
+  { word:"grain", exams:["수능"], pron:"그레인", pos:"n", level:"B1", meanings:["곡물","곡류"],
     syn:["cereal","corn","kernel"],
     ex:[{ s:"The region exports more {{}} than any other province.", f:"grain", ko:"그 지역은 어느 주보다 많은 곡물을 수출한다." }] },
 
@@ -465,7 +467,7 @@ window.VOCAB_G = [
 
   /* 승격 ② — GLOSS '수여하다; 보조금' 이다. bestow·concede 두 문제가 동사 쪽을
      쓰므로 '수여하다' 를 첫 자리에 남기고 원본의 명사 뜻을 둘째로 담았다. */
-  { word:"grant", exams:["공무원"], pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
+  { word:"grant", exams:["공무원","수능"], pron:"그랜트", pos:"v", level:"B2", meanings:["수여하다","보조금"],
     gov:{ prep:["to"], pat:"grant the award {{}} her", usage:"grant A to B : A를 B에게 주다" },
     syn:["bestow","award","confer"], ant:["deny"],
     ex:[{ s:"The board agreed to {{}} her request for extra leave.", f:"grant", ko:"이사회는 추가 휴가 요청을 승인하기로 합의했다." }] },
@@ -649,7 +651,7 @@ window.VOCAB_G = [
   /* 승격 ② — GLOSS '보장하다; 보증' 을 글자까지 지켰다. assure·ensure 두 문제가
      이 단어를 유의어로 쓴다. 첫 뜻이 기존 표제어 cover 와 같지만, quizgen 의
      distractorPool 이 뜻이 겹치는 단어를 오답에서 빼므로 한 문제에서 만나지 않는다. */
-  { word:"guarantee", exams:["공무원"], pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
+  { word:"guarantee", exams:["공무원","수능"], pron:"개런티", pos:"v", level:"B2", meanings:["보장하다","보증"],
     gov:{ prep:["against","of","for"], pat:"guarantee {{}} manufacturing defects", usage:"guarantee against ~ : ~에 대해 보증하다" },
     syn:["assure","ensure","give one's word"],
     ex:[{ s:"We cannot {{}} delivery before the holiday.", f:"guarantee", ko:"우리는 연휴 전 배송을 보장할 수 없다." }] },
@@ -735,7 +737,6 @@ Object.assign(window.GLOSS, {
   "flurry":"돌발적인 바람",
   "food lover":"음식을 즐기는 사람",
   "forbidding":"위압적인, 험악한",
-  "fulfillment": "성취감, 충족",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",

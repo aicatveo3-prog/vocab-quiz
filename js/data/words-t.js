@@ -36,7 +36,7 @@ window.VOCAB_T = [
   { word:"tense", exams:["공무원"], pron:"텐스", pos:"v", level:"B2", meanings:["긴장시키다","긴장한"], syn:["tighten","stiffen","strain"], ant:["relax"], ex:[{ s:"Adrenaline {{}} the muscles for action.", f:"tenses", ko:"아드레날린은 행동을 위해 근육을 긴장시킨다." }] },
   { word:"tentatively", exams:["공무원"], pron:"텐터티블리", pos:"adv", level:"C1", meanings:["잠정적으로","머뭇거리며"], syn:["provisionally","hesitantly","cautiously"], ant:["definitely"], ex:[{ s:"He answered {{}}, unsure of the facts.", f:"tentatively", ko:"그는 사실을 확신하지 못한 채 머뭇거리며 답했다." }] },
   { word:"thoroughly", exams:["공무원"], pron:"써로울리", pos:"adv", level:"B2", meanings:["철저히","완전히"], syn:["completely","fully","exhaustively"], ex:[{ s:"He knows the city {{}}.", f:"thoroughly", ko:"그는 그 도시를 철저히 안다." }] },
-  { word:"thrilled", exams:["공무원"], pron:"쓰릴드", pos:"adj", level:"B2", meanings:["아주 신이 난","짜릿한"], syn:["excited","delighted","exhilarated"], ant:["bored"], ex:[{ s:"He felt {{}} and excited by the discovery.", f:"thrilled", ko:"그는 그 발견에 아주 신이 나고 들떴다." }] },
+  { word:"thrilled", exams:["공무원","수능"], pron:"쓰릴드", pos:"adj", level:"B2", meanings:["아주 신이 난","짜릿한"], syn:["excited","delighted","exhilarated"], ant:["bored"], ex:[{ s:"He felt {{}} and excited by the discovery.", f:"thrilled", ko:"그는 그 발견에 아주 신이 나고 들떴다." }] },
   { word:"tolerable", exams:["공무원"], pron:"탈러러블", pos:"adj", level:"C1", meanings:["견딜 만한"], syn:["bearable","endurable","acceptable"], ant:["intolerable"], ex:[{ s:"Sustained g-force is more {{}} when lying down.", f:"tolerable", ko:"누워 있으면 지속적인 중력이 더 견딜 만하다." }] },
   { word:"tragedy", exams:["공무원"], pron:"트래저디", pos:"n", level:"B2", meanings:["비극"], syn:["catastrophe","disaster","calamity"], ant:["comedy"], ex:[{ s:"Oedipus the King is a classical {{}}.", f:"tragedy", ko:"'오이디푸스 왕'은 고전 비극이다." }] },
   { word:"tribal", exams:["공무원"], pron:"트라이벌", pos:"adj", level:"C1", meanings:["부족의"], syn:["ethnic","clan","native"], ex:[{ s:"{{}} oral history suggests a mudslide occurred.", f:"Tribal", ko:"부족의 구전 역사는 진흙 사태가 있었음을 시사한다." }] },
@@ -53,7 +53,7 @@ window.VOCAB_T = [
   { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
   { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
   { word:"target", exams:["공무원"], pron:"타깃", pos:"v", level:"B1", meanings:["겨냥하다","목표로 삼다"], syn:["aim at","single out","focus on"], ex:[{ s:"The scam {{}} people who own cars.", f:"targets", ko:"그 사기는 차를 가진 사람들을 노린다." }] },
-  { word:"technique", exams:["공무원"], pron:"테크닉", pos:"n", level:"B1", meanings:["기법","기술"], syn:["method","procedure","skill"], ex:[{ s:"Cooling your hands is a simple {{}} for beating the heat.", f:"technique", ko:"손을 식히는 것은 더위를 이기는 간단한 기법이다." }] },
+  { word:"technique", exams:["공무원","수능"], pron:"테크닉", pos:"n", level:"B1", meanings:["기법","기술"], syn:["method","procedure","skill"], ex:[{ s:"Cooling your hands is a simple {{}} for beating the heat.", f:"technique", ko:"손을 식히는 것은 더위를 이기는 간단한 기법이다." }] },
   { word:"thus", exams:["공무원"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
   { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
   { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
@@ -63,6 +63,7 @@ window.VOCAB_T = [
   { word:"touch off", exams:["공무원"], pron:"터치 오프", pos:"phr", level:"C1", meanings:["촉발하다","일으키다"], syn:["trigger","spark","give rise to"] },
   { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
   { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
+  { word:"transferable", exams:["수능"], pron:"트랜스퍼러블", pos:"adj", level:"C1", meanings:["양도 가능한","옮길 수 있는"], ex:[{ s:"The concert pass is not {{}} to another person.", f:"transferable", ko:"그 공연 이용권은 다른 사람에게 양도할 수 없다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -111,7 +112,7 @@ window.VOCAB_T = [
 
   /* 승격 ① — 사전 글자 유지. 참조 avail oneself of(A)·benefit from(B)·exploit(E)
      세 곳의 화면은 바뀌지 않는다. 교재의 '이용하다' 는 harness 자리다. */
-  { word:"take advantage of", exams:["공무원"], pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
+  { word:"take advantage of", exams:["공무원","수능"], pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
     syn:["avail oneself of","benefit from","exploit"] },
 
   { word:"take apart", pron:"테이크 어파트", pos:"phr", level:"B2", meanings:["분해하다"],
@@ -135,7 +136,7 @@ window.VOCAB_T = [
     syn:["cheer up","gain courage","feel encouraged"] },
 
   /* 승격 ② — 사전 글자 유지(참조 factor in). 교재의 '계산에 넣다' 는 버렸다. */
-  { word:"take into account", exams:["공무원"], pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
+  { word:"take into account", exams:["공무원","수능"], pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
     syn:["factor in","allow for","weigh in the decision"] },
 
   /* 승격 ③ — 사전의 쌍반점만 쉼표로 갈랐다(참조 assume). shoulder(S 떠맡다) 와
@@ -157,7 +158,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑦ — 사전 단일값 유지(참조 occur). 교재의 '일어나다' 는 come about
      자리여서 버렸고, 그 come about 을 선택지로 썼다. */
-  { word:"take place", exams:["공무원"], pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
+  { word:"take place", exams:["공무원","수능"], pron:"테이크 플레이스", pos:"phr", level:"B1", meanings:["벌어지다"],
     syn:["occur","come about","happen as planned"] },
 
   /* ── 챕터 2 ────────────────────────────────────── */
@@ -204,7 +205,7 @@ window.VOCAB_T = [
     syn:["tax on imports","duty at the border","charge on goods brought in"],
     ex:[{ s:"The new {{}} raised prices.", f:"tariff", ko:"새 관세가 값을 올렸다." }] },
 
-  { word:"tax", pron:"택스", pos:"n", level:"B1", meanings:["세금"],
+  { word:"tax", exams:["수능"], pron:"택스", pos:"n", level:"B1", meanings:["세금"],
     syn:["money paid to the state","public levy","sum owed to government"],
     ex:[{ s:"Everyone must pay this {{}}.", f:"tax", ko:"모두가 이 세금을 내야 한다." }] },
 
@@ -323,7 +324,7 @@ window.VOCAB_T = [
     ex:[{ s:"The new {{}} moved in on Friday.", f:"tenant", ko:"새 세입자가 금요일에 들어왔다." }] },
 
   /* 괄호 걷음. attend to(처리하다, 돌보다) 와 '돌보다' 가 맞물려 배제된다. */
-  { word:"tend", exams:["공무원"], pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
+  { word:"tend", exams:["공무원","수능"], pron:"텐드", pos:"v", level:"B1", meanings:["경향이 있다","돌보다"],
     syn:["be inclined to","look after","attend to"],
     ex:[{ s:"Prices {{}} to rise in winter.", f:"tend", ko:"값은 겨울에 오르는 경향이 있다." }] },
 
@@ -352,7 +353,7 @@ window.VOCAB_T = [
     ex:[{ s:"Her {{}} lasted six years.", f:"tenure", ko:"그녀의 재임 기간은 육 년이었다." }] },
 
   /* jargon(용어)·duration·length·span(기간) 과 두 갈래 모두 맞물려 배제된다. */
-  { word:"term", exams:["공무원"], pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
+  { word:"term", exams:["공무원","수능"], pron:"텀", pos:"n", level:"B1", meanings:["용어","기간"],
     syn:["jargon","word for a thing","set period"],
     ex:[{ s:"Explain that {{}} in plain words.", f:"term", ko:"그 용어를 쉬운 말로 풀어 주세요." }] },
 
@@ -446,7 +447,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉙ — 사전 글자 유지(참조 fabric). fabric(직물, 천) 과 '직물' 이 맞물려
      자동 배제된다. */
-  { word:"textile", pron:"텍스타일", pos:"n", level:"B2", meanings:["직물","섬유 제품"],
+  { word:"textile", exams:["수능"], pron:"텍스타일", pos:"n", level:"B2", meanings:["직물","섬유 제품"],
     syn:["fabric","woven cloth","made-up cloth goods"],
     ex:[{ s:"The town lived on {{}} work.", f:"textile", ko:"그 고을은 직물 일로 살았다." }] },
 
@@ -469,7 +470,7 @@ window.VOCAB_T = [
 
   /* ★ 외래어 '테마' 를 걷었다. subject(주제, 대상 · S) 와 글자가 맞물려 자동
      배제된다. */
-  { word:"theme", pron:"씸", pos:"n", level:"B1", meanings:["주제"],
+  { word:"theme", exams:["수능"], pron:"씸", pos:"n", level:"B1", meanings:["주제"],
     syn:["subject","main idea","thread running through"],
     ex:[{ s:"Water is the {{}} of the show.", f:"theme", ko:"물이 그 전시의 주제다." }] },
 
@@ -479,12 +480,12 @@ window.VOCAB_T = [
 
   /* 승격 ㉚ — 사전 단일값 유지. 참조 abstract(A)·empirical(E) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"theoretical", pron:"시어레티컬", pos:"adj", level:"B2", meanings:["이론적인"],
+  { word:"theoretical", exams:["수능"], pron:"시어레티컬", pos:"adj", level:"B2", meanings:["이론적인"],
     syn:["abstract","based on theory","not yet tried out"], ant:["empirical"],
     ex:[{ s:"The gain is purely {{}} so far.", f:"theoretical", ko:"지금까지 그 이득은 순전히 이론적이다." }] },
 
   /* 승격 ㉛ — 사전 단일값 유지(참조 hypothesis). 교재의 '학설, 추측' 은 버렸다. */
-  { word:"theory", pron:"씨어리", pos:"n", level:"B1", meanings:["이론"],
+  { word:"theory", exams:["수능"], pron:"씨어리", pos:"n", level:"B1", meanings:["이론"],
     syn:["hypothesis","set of ideas to explain","reasoned account"],
     ex:[{ s:"The {{}} fits the data well.", f:"theory", ko:"그 이론은 자료에 잘 맞는다." }] },
 
@@ -624,7 +625,7 @@ window.VOCAB_T = [
   /* 승격 ㊸ — ★ 명사로 세웠다. 참조 셋 중 bond(유대감, 결합)·link(연결, 관련) 가
      명사여서다. 동사 쪽을 쓰던 bind(B) 한 곳을 'fasten with rope' 로 갈았고,
      동사 '묶다' 는 다음 챕터의 tie up 이 받는다. */
-  { word:"tie", pron:"타이", pos:"n", level:"B1", meanings:["유대","매듭"],
+  { word:"tie", exams:["수능"], pron:"타이", pos:"n", level:"B1", meanings:["유대","매듭"],
     syn:["bond","link","knot that fastens"],
     ex:[{ s:"Family {{}} kept them together.", f:"ties", ko:"가족의 유대가 그들을 붙들었다." }] },
 
@@ -812,7 +813,7 @@ window.VOCAB_T = [
 
   /* 승격 56 — ★ 사전의 '추적하다; 흔적' 에서 명사 쪽만 세웠다. 아래 track 이
      동사 '추적하다' 를 받는다. 참조 chase down(C) 한 곳을 갈았다. */
-  { word:"trace", pron:"트레이스", pos:"n", level:"B1", meanings:["흔적","극미량"],
+  { word:"trace", exams:["수능"], pron:"트레이스", pos:"n", level:"B1", meanings:["흔적","극미량"],
     syn:["mark left behind","tiny amount","faint sign"],
     ex:[{ s:"There was not a {{}} of dust on the shelf.", f:"trace", ko:"선반에는 먼지의 흔적조차 없었다." }] },
 
@@ -826,7 +827,7 @@ window.VOCAB_T = [
   /* 승격 58 — 사전 글자 유지. 참조 barter(B)·commerce(C)·craft(C)·industry(I)·
      occupation(O) 다섯 곳의 화면은 바뀌지 않는다. commerce(무역, 상거래) 와
      '무역' 이 맞물려 배제된다. */
-  { word:"trade", pron:"트레이드", pos:"n", level:"B1", meanings:["거래","무역"],
+  { word:"trade", exams:["수능"], pron:"트레이드", pos:"n", level:"B1", meanings:["거래","무역"],
     syn:["commerce","industry","buying and selling"],
     ex:[{ s:"The {{}} between the two ports grew fast.", f:"trade", ko:"두 항구 사이의 거래가 빠르게 늘었다." }] },
 
@@ -951,7 +952,7 @@ window.VOCAB_T = [
        trap       ← imprison(투옥하다, 가두다) 와 '가두다' 가 같다 · confine 은 레벨 차 2 */
 
   /* ★ duplicate(복제하다 · C1/v) 를 피해 '복사하다' 를 '옮겨 적다' 로 갈랐다. */
-  { word:"transcribe", pron:"트랜스크라이브", pos:"v", level:"C1", meanings:["베끼다","옮겨 적다"],
+  { word:"transcribe", exams:["수능"], pron:"트랜스크라이브", pos:"v", level:"C1", meanings:["베끼다","옮겨 적다"],
     syn:["copy out by hand","write out word for word","put speech into writing"],
     ex:[{ s:"She had to {{}} the whole interview.", f:"transcribe", ko:"그녀는 면담 전체를 옮겨 적어야 했다." }] },
 
@@ -984,7 +985,7 @@ window.VOCAB_T = [
 
   /* 교재 네 갈래 → 둘. 아래 transportation 을 '교통, 수송' 으로 맞춰 이 낱말의
      '수송' 과 자동 배제되게 했다. */
-  { word:"transit", pron:"트랜싯", pos:"n", level:"B2", meanings:["수송","환승"],
+  { word:"transit", exams:["수능"], pron:"트랜싯", pos:"n", level:"B2", meanings:["수송","환승"],
     syn:["carriage of goods","change of trains","passage from place to place"],
     ex:[{ s:"The goods were damaged in {{}}.", f:"transit", ko:"그 물품은 수송 중에 손상되었다." }] },
 
@@ -1027,7 +1028,7 @@ window.VOCAB_T = [
 
   /* ★ '운송' 을 '수송' 으로 고쳤다. 위 transit(수송, 환승) 과 글자를 맞춰
      자동 배제시킨 것이다 — 둘은 사실상 같은 말이어서 갈라 쓸 수 없었다. */
-  { word:"transportation", exams:["공무원"], pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
+  { word:"transportation", exams:["공무원","수능"], pron:"트랜스포테이션", pos:"n", level:"B1", meanings:["교통","수송"],
     syn:["means of getting about","carriage of people","public means of travel"],
     ex:[{ s:"Public {{}} is cheap here.", f:"transportation", ko:"이곳은 대중 교통이 싸다." }] },
 
@@ -1315,7 +1316,7 @@ window.VOCAB_T = [
   /* ★ 첫 뜻을 '반납하다' 로 올렸다. 같은 챕터 turn over(돌려 뒤집다) 와 둘 다
      '돌려' 로 시작하면 영→한 선택지에서 갈리지 않는다. 둘째 갈래 '돌려주다'
      는 그대로 살아 있어 restore(돌려주다, 복원하다 · B1/v) 와 맞물린다. */
-  { word:"turn in", pron:"턴 인", pos:"phr", level:"B1", meanings:["반납하다","돌려주다"],
+  { word:"turn in", exams:["수능"], pron:"턴 인", pos:"phr", level:"B1", meanings:["반납하다","돌려주다"],
     syn:["hand back","give up what was lent","return to the owner"] },
 
   /* 승격 85 — 사전 단일값 유지(참조 end up). */
@@ -1331,7 +1332,7 @@ window.VOCAB_T = [
     syn:["fall back on","go to for help","look to in need"] },
 
   /* 교재 네 갈래 → 둘. 위 turn over(구) 와 품사로 갈렸다. */
-  { word:"turnover", pron:"턴오버", pos:"n", level:"C1", meanings:["이직률","거래액"],
+  { word:"turnover", exams:["수능"], pron:"턴오버", pos:"n", level:"C1", meanings:["이직률","거래액"],
     syn:["rate of staff leaving","total of sales","amount of business done"],
     ex:[{ s:"Staff {{}} is high in that trade.", f:"turnover", ko:"그 업종은 이직률이 높다." }] },
 

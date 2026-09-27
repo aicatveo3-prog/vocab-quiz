@@ -49,6 +49,7 @@ window.VOCAB_V = [
   { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
   { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
+  { word:"violent", exams:["수능"], pron:"바이얼런트", pos:"adj", level:"B1", meanings:["폭력적인","격렬한"], syn:["brutal","aggressive","fierce"], ant:["nonviolent"], ex:[{ s:"The movie was too {{}} for young children.", f:"violent", ko:"그 영화는 어린아이들이 보기에 너무 폭력적이었다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -119,7 +120,7 @@ window.VOCAB_V = [
      3차 verify 의 첫 뜻과 똑같아져 둘이 구별되지 않는다. demonstrate·document
      가 '입증하다' 를, confirm·identify 가 '확인하다' 를 써서 맞물려 배제된다.
      ★ 참조 confirm(C) 의 화면이 한 줄 바뀐다. */
-  { word:"validate", pron:"밸리데이트", pos:"v", level:"B2", meanings:["입증하다","인증하다"],
+  { word:"validate", exams:["수능"], pron:"밸리데이트", pos:"v", level:"B2", meanings:["입증하다","인증하다"],
     syn:["confirm","show to be true","give official backing to"],
     ex:[{ s:"The test will {{}} the theory.", f:"validate", ko:"그 실험이 그 이론을 입증할 것이다." }] },
 
@@ -162,7 +163,7 @@ window.VOCAB_V = [
   /* 승격 ⑧ — 사전 글자 유지. 참조 세 곳(inconsistent 유의어, constant·
      invariable 반의어) 의 화면은 바뀌지 않는다. capricious(변덕스러운,
      변하기 쉬운) 와 맞물려 배제된다. */
-  { word:"variable", pron:"베리어블", pos:"adj", level:"B2", meanings:["변하기 쉬운","가변적인"],
+  { word:"variable", exams:["수능"], pron:"베리어블", pos:"adj", level:"B2", meanings:["변하기 쉬운","가변적인"],
     syn:["inconsistent","not staying the same","open to change"], ant:["constant","invariable"],
     ex:[{ s:"The weather here is {{}}.", f:"variable", ko:"이곳 날씨는 변하기 쉽다." }] },
 
@@ -179,14 +180,14 @@ window.VOCAB_V = [
     ex:[{ s:"She has a {{}} taste in books.", f:"varied", ko:"그녀는 책에 다양한 취향을 지녔다." }] },
 
   /* 승격 ⑩ — 사전 글자 유지(참조 diversity). 교재의 '변종, 품종' 은 버렸다. */
-  { word:"variety", exams:["공무원"], pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
+  { word:"variety", exams:["공무원","수능"], pron:"버라이어티", pos:"n", level:"B1", meanings:["다양성","여러 가지"],
     syn:["diversity","range of kinds","many sorts"],
     ex:[{ s:"The shop offers a wide {{}}.", f:"variety", ko:"그 가게는 폭넓은 다양성을 갖추고 있다." }] },
 
   /* ★ varied·diverse 와 글자를 맞춰 자동 배제시켰다. 셋이 다 '다양한' 이고
      갈라 쓸 수가 없다. 어설프게 다르게 적으면 앱이 셋을 다른 뜻으로 보고 같은
      문제에 나란히 내놓는다. diverse 와는 두 갈래가 통째로 같다. */
-  { word:"various", pron:"베리어스", pos:"adj", level:"B1", meanings:["다양한","여러 가지의"],
+  { word:"various", exams:["수능"], pron:"베리어스", pos:"adj", level:"B1", meanings:["다양한","여러 가지의"],
     syn:["of many kinds","differing one from another","more than a few"],
     ex:[{ s:"He gave {{}} reasons for leaving.", f:"various", ko:"그는 떠나는 다양한 이유를 댔다." }] },
 
@@ -405,7 +406,7 @@ window.VOCAB_V = [
     ex:[{ s:"The market was {{}} at dawn.", f:"vibrant", ko:"그 시장은 새벽에 활기찼다." }] },
 
   /* '떨다' 는 quiver(떨다) 와 W 세트 wobble(흔들리다, 떨다) 자리라 버렸다. */
-  { word:"vibrate", pron:"바이브레이트", pos:"v", level:"B2", meanings:["진동하다"],
+  { word:"vibrate", exams:["수능"], pron:"바이브레이트", pos:"v", level:"B2", meanings:["진동하다"],
     syn:["shake to and fro","quiver fast","move with quick tremors"],
     ex:[{ s:"The whole floor began to {{}}.", f:"vibrate", ko:"바닥 전체가 진동하기 시작했다." }] },
 
@@ -453,7 +454,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉖ — 사전과 교재가 같다(참조 breach). breach(위반, 파기) 와 맞물려
      배제된다. */
-  { word:"violation", pron:"바이얼레이션", pos:"n", level:"B2", meanings:["위반"],
+  { word:"violation", exams:["수능"], pron:"바이얼레이션", pos:"n", level:"B2", meanings:["위반"],
     syn:["breach","breaking of a rule","act against the law"],
     ex:[{ s:"That is a clear {{}} of the rules.", f:"violation", ko:"그것은 규칙의 분명한 위반이다." }] },
 
@@ -466,7 +467,7 @@ window.VOCAB_V = [
     ex:[{ s:"They reached {{}} forest at last.", f:"virgin", ko:"그들은 마침내 원래 그대로의 숲에 이르렀다." }] },
 
   /* imaginary(상상의, 가상의)·substantial(상당한, 실질적인) 과 맞물려 배제된다. */
-  { word:"virtual", exams:["공무원"], pron:"버추얼", pos:"adj", level:"B2", meanings:["가상의","실질적인"],
+  { word:"virtual", exams:["공무원","수능"], pron:"버추얼", pos:"adj", level:"B2", meanings:["가상의","실질적인"],
     syn:["imaginary","substantial","in effect if not in name"],
     ex:[{ s:"They met in a {{}} classroom.", f:"virtual", ko:"그들은 가상 교실에서 만났다." }] },
 
@@ -491,7 +492,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉘ — 사전과 교재가 같다. 참조 auditory(A)·aural(A) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"visual", pron:"비주얼", pos:"adj", level:"B2", meanings:["시각의"],
+  { word:"visual", exams:["수능"], pron:"비주얼", pos:"adj", level:"B2", meanings:["시각의"],
     syn:["of the sense of sight","seen with the eyes","to do with seeing"], ant:["auditory","aural"],
     ex:[{ s:"The film relies on {{}} tricks.", f:"visual", ko:"그 영화는 시각적 속임수에 기댄다." }] },
 
@@ -678,7 +679,6 @@ Object.assign(window.GLOSS, {
   "how much it swings": "흔들리는 폭",
   "in a hazy way": "아리송하게",
   "in a lively way": "생기 있게",
-  "in effect": "실제로는",
   "in effect if not in name": "이름만 아니라면 그런 셈인",
   "in poor taste": "품이 떨어지는",
   "in words": "말로 된",
