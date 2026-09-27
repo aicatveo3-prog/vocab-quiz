@@ -313,7 +313,7 @@ window.VOCAB_P = [
   /* 승격 ⑫ — 사전값이 '아주 작은 알' 이라 표제어 뜻으로는 어색했다. 원본의
      '입자' 를 첫 자리에 두고 '미립자' 를 붙였다(괄호는 걷었다).
      molecule(M) 의 화면 글자가 함께 바뀐다. */
-  { word:"particle", pron:"파티클", pos:"n", level:"B2", meanings:["입자","미립자"],
+  { word:"particle", exams:["수능"], pron:"파티클", pos:"n", level:"B2", meanings:["입자","미립자"],
     syn:["tiny bit","speck of matter","minute fragment"],
     ex:[{ s:"Dust {{}} floated in the sunbeam.", f:"particle", ko:"먼지 입자가 햇살 속에 떠 있었다." }] },
 
@@ -702,7 +702,7 @@ window.VOCAB_P = [
 
   /* 승격 50 — 사전 표현과 글자까지 같다. 이 챕터에서 참조가 가장 많다(3곳) —
      compelling(C)·convincing(C)·eloquent(E). */
-  { word:"persuasive", exams:["공무원"], pron:"퍼스웨이시브", pos:"adj", level:"B2", meanings:["설득력 있는"],
+  { word:"persuasive", exams:["공무원","수능"], pron:"퍼스웨이시브", pos:"adj", level:"B2", meanings:["설득력 있는"],
     syn:["compelling","carrying weight","good at winning people over"], ant:["unconvincing"],
     ex:[{ s:"He made a {{}} case for the plan.", f:"persuasive", ko:"그는 그 계획에 설득력 있는 주장을 펼쳤다." }] },
 
@@ -927,7 +927,7 @@ window.VOCAB_P = [
     syn:["convincing","believable","ringing true"], ant:["far-fetched"],
     ex:[{ s:"He gave a {{}} excuse.", f:"plausible", ko:"그는 그럴듯한 변명을 했다." }] },
 
-  { word:"play a role in", pron:"플레이 어 롤 인", pos:"phr", level:"B1", meanings:["~에서 역할을 하다"],
+  { word:"play a role in", exams:["수능"], pron:"플레이 어 롤 인", pos:"phr", level:"B1", meanings:["~에서 역할을 하다"],
     syn:["have a hand in","help shape","contribute to"] },
 
   { word:"playful", pron:"플레이풀", pos:"adj", level:"B1", meanings:["놀기 좋아하는","장난기 많은"],
@@ -978,7 +978,7 @@ window.VOCAB_P = [
      conspiracy(C)·lot(L) 은 명사, conspire(C)·contrive(C) 는 동사다.
      명사가 사전의 첫 갈래이고 수능에서도 흔하므로 명사로 세우고, 동사 자리 두 곳의
      유의어를 'hatch a scheme'·'work out a ruse' 로 바꿨다(words-c.js). */
-  { word:"plot", pron:"플롯", pos:"n", level:"B2", meanings:["음모","줄거리"],
+  { word:"plot", exams:["수능"], pron:"플롯", pos:"n", level:"B2", meanings:["음모","줄거리"],
     syn:["conspiracy","secret scheme","story line"],
     ex:[{ s:"The {{}} was uncovered before it began.", f:"plot", ko:"그 음모는 시작되기 전에 드러났다." }] },
 
@@ -1079,7 +1079,7 @@ window.VOCAB_P = [
     syn:["to do with government","of state affairs","party-related"],
     ex:[{ s:"The song carried a {{}} message.", f:"political", ko:"그 노래는 정치적인 메시지를 담았다." }] },
 
-  { word:"politics", pron:"팔러틱스", pos:"n", level:"B1", meanings:["정치","정치학"],
+  { word:"politics", exams:["수능"], pron:"팔러틱스", pos:"n", level:"B1", meanings:["정치","정치학"],
     syn:["running of a state","public affairs","science of government"],
     ex:[{ s:"She left {{}} after two terms.", f:"politics", ko:"그녀는 두 차례 임기 뒤 정치를 떠났다." }] },
 
@@ -1152,7 +1152,7 @@ window.VOCAB_P = [
     ex:[{ s:"The novel tries to {{}} village life.", f:"portray", ko:"그 소설은 마을 삶을 묘사하려 한다." }] },
 
   /* 원본의 '자세(포즈)를 취하다' 에서 외래어 괄호를 걷었다. */
-  { word:"pose", pron:"포즈", pos:"v", level:"B1", meanings:["자세를 취하다"],
+  { word:"pose", exams:["수능"], pron:"포즈", pos:"v", level:"B1", meanings:["자세를 취하다"],
     syn:["strike an attitude","hold a stance","sit for a picture"],
     ex:[{ s:"The team lined up to {{}} for the camera.", f:"pose", ko:"그 팀은 사진기를 향해 자세를 취하려고 줄을 섰다." }] },
 
@@ -1167,7 +1167,7 @@ window.VOCAB_P = [
   /* 승격 87 — 사전이 '확신하는; 긍정적인' 이었다. 구분 기호만 쉼표로 바꿔 두 갈래를
      그대로 살렸다 — certain(C) 이 '확신하는' 을, affirmative(A) 가 '긍정적인' 을
      쓰기 때문이다. 원본은 '긍정적인' 한 갈래였다. */
-  { word:"positive", pron:"파지티브", pos:"adj", level:"B1", meanings:["확신하는","긍정적인"],
+  { word:"positive", exams:["수능"], pron:"파지티브", pos:"adj", level:"B1", meanings:["확신하는","긍정적인"],
     syn:["certain","sure beyond doubt","hopeful in outlook"], ant:["negative"],
     ex:[{ s:"I am {{}} that I locked the door.", f:"positive", ko:"나는 문을 잠갔다고 확신한다." }] },
 
@@ -1513,7 +1513,7 @@ window.VOCAB_P = [
 
   /* 승격 112 — 사전은 '처방하다; 규정하다' 로 쌍반점을 쓰고 있었다. 뜻을 두
      갈래로 나눠 담으면서 쉼표로 바뀐다 — dictate(D) 한 곳의 구두점이 달라진다. */
-  { word:"prescribe", pron:"프리스크라이브", pos:"v", level:"B2", meanings:["처방하다","규정하다"],
+  { word:"prescribe", exams:["수능"], pron:"프리스크라이브", pos:"v", level:"B2", meanings:["처방하다","규정하다"],
     syn:["order as treatment","lay down as a rule","write out a remedy"],
     ex:[{ s:"The doctor will {{}} something for the pain.", f:"prescribe", ko:"의사가 통증에 쓸 것을 처방해 줄 것이다." }] },
 
@@ -1628,7 +1628,7 @@ window.VOCAB_P = [
 
   /* 레벨을 B1 으로 두었다 — 챕터 11 의 precaution(예방책 · C1) 과 두 칸 벌려야
      서로 오답 후보에서 빠진다. */
-  { word:"prevention", pron:"프리벤션", pos:"n", level:"B1", meanings:["예방","방지"],
+  { word:"prevention", exams:["수능"], pron:"프리벤션", pos:"n", level:"B1", meanings:["예방","방지"],
     syn:["keeping it from happening","act of heading off","stopping before it starts"],
     ex:[{ s:"Fire {{}} saves lives.", f:"prevention", ko:"화재 예방은 목숨을 구한다." }] },
 
@@ -1651,7 +1651,7 @@ window.VOCAB_P = [
 
   /* 승격 125 — 사전 표현과 글자까지 같다(invaluable, I). invaluable 의 둘째 뜻과
      글자가 같아 서로 오답에서 빠진다. */
-  { word:"priceless", pron:"프라이스리스", pos:"adj", level:"B2", meanings:["값을 헤아릴 수 없는"],
+  { word:"priceless", exams:["수능"], pron:"프라이스리스", pos:"adj", level:"B2", meanings:["값을 헤아릴 수 없는"],
     syn:["beyond price","worth more than money","too rare to price"],
     ex:[{ s:"The vase is {{}}.", f:"priceless", ko:"그 꽃병은 값을 헤아릴 수 없다." }] },
 
@@ -1965,7 +1965,7 @@ window.VOCAB_P = [
     syn:["share of the whole","relation in size","part measured against all"],
     ex:[{ s:"A large {{}} of the class passed.", f:"proportion", ko:"그 학급의 큰 비율이 통과했다." }] },
 
-  { word:"proposition", pron:"프라퍼지션", pos:"n", level:"C1", meanings:["제안","진술"],
+  { word:"proposition", exams:["수능"], pron:"프라퍼지션", pos:"n", level:"C1", meanings:["제안","진술"],
     syn:["offer put forward","statement to be judged","plan laid out"],
     ex:[{ s:"They turned down his {{}}.", f:"proposition", ko:"그들은 그의 제안을 거절했다." }] },
 
@@ -2095,13 +2095,13 @@ window.VOCAB_P = [
   { word:"public domain", pron:"퍼블릭 도메인", pos:"phr", level:"C1", meanings:["공공 영역","공유 재산"],
     syn:["free for all to use","open to everyone","no longer owned"] },
 
-  { word:"publication", pron:"퍼블리케이션", pos:"n", level:"B2", meanings:["출판","출판물"],
+  { word:"publication", exams:["수능"], pron:"퍼블리케이션", pos:"n", level:"B2", meanings:["출판","출판물"],
     syn:["act of putting out a book","printed work","issuing in print"],
     ex:[{ s:"The {{}} was delayed a year.", f:"publication", ko:"그 출판은 한 해 늦어졌다." }] },
 
   /* 승격 169 — 사전 표현과 글자까지 같다(advertising, A). 챕터 16 의
      propaganda(선전, 홍보) 와 두 갈래가 서로 맞물려 오답에서 빠진다. */
-  { word:"publicity", pron:"퍼블리서티", pos:"n", level:"B2", meanings:["홍보","선전"],
+  { word:"publicity", exams:["수능"], pron:"퍼블리서티", pos:"n", level:"B2", meanings:["홍보","선전"],
     syn:["advertising","public notice","making widely known"],
     ex:[{ s:"The film got free {{}}.", f:"publicity", ko:"그 영화는 공짜 홍보를 얻었다." }] },
 
@@ -2153,7 +2153,7 @@ window.VOCAB_P = [
     syn:["buying","thing bought","act of paying for goods"],
     ex:[{ s:"Keep the receipt for your {{}}.", f:"purchase", ko:"구매한 물건의 영수증을 보관하세요." }] },
 
-  { word:"purification", pron:"퓨리피케이션", pos:"n", level:"C1", meanings:["정화","정제"],
+  { word:"purification", exams:["수능"], pron:"퓨리피케이션", pos:"n", level:"C1", meanings:["정화","정제"],
     syn:["making clean","removing what is foul","refining"],
     ex:[{ s:"Water {{}} takes three steps.", f:"purification", ko:"물 정화는 세 단계를 거친다." }] },
 

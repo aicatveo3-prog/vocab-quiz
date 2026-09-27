@@ -601,7 +601,7 @@ window.VOCAB_F = [
 
   /* 유의어로 acquaintance 를 쓰려 했으나 표제어 뜻이 '아는 사람, 지인' 이다.
      '익숙함' 이 아니라 사람을 가리켜 문맥이 어긋난다. */
-  { word:"familiarity", pron:"퍼밀리애러티", pos:"n", level:"B2", meanings:["익숙함","친근함"],
+  { word:"familiarity", exams:["수능"], pron:"퍼밀리애러티", pos:"n", level:"B2", meanings:["익숙함","친근함"],
     syn:["intimacy","closeness","working knowledge"],
     ex:[{ s:"Years at the bench gave her a deep {{}} with the machine.", f:"familiarity", ko:"작업대에서 보낸 여러 해가 그 기계에 대한 깊은 익숙함을 그녀에게 주었다." }] },
 
@@ -673,7 +673,7 @@ window.VOCAB_F = [
     syn:["kindness","goodwill","good turn"],
     ex:[{ s:"She asked one small {{}} before she left.", f:"favor", ko:"그녀는 떠나기 전에 작은 호의 하나를 부탁했다." }] },
 
-  { word:"favorable", pron:"페이버러블", pos:"adj", level:"B2", meanings:["유리한","호의적인"],
+  { word:"favorable", exams:["수능"], pron:"페이버러블", pos:"adj", level:"B2", meanings:["유리한","호의적인"],
     syn:["advantageous","approving","beneficial"], ant:["adverse"],
     ex:[{ s:"The committee returned a {{}} report on the plan.", f:"favorable", ko:"위원회는 그 계획에 유리한 보고서를 냈다." }] },
 
@@ -711,7 +711,7 @@ window.VOCAB_F = [
     syn:["plume","quill","soft plumage"],
     ex:[{ s:"A single white {{}} drifted down onto the water.", f:"feather", ko:"흰 깃털 하나가 물 위로 떠내려왔다." }] },
 
-  { word:"feature", exams:["공무원"], pron:"피처", pos:"n", level:"B2", meanings:["특징","특색"],
+  { word:"feature", exams:["공무원","수능"], pron:"피처", pos:"n", level:"B2", meanings:["특징","특색"],
     syn:["trait","hallmark","distinguishing mark"],
     ex:[{ s:"The clearest {{}} of the new engine is its silence.", f:"feature", ko:"새 엔진의 가장 뚜렷한 특징은 조용함이다." }] },
 
@@ -924,7 +924,7 @@ window.VOCAB_F = [
     syn:["suitable","appropriate","in good shape"],
     ex:[{ s:"The old barn is no longer {{}} for storing grain.", f:"fit", ko:"그 낡은 헛간은 더 이상 곡물 보관에 알맞지 않다." }] },
 
-  { word:"fitness", pron:"피트니스", pos:"n", level:"B2", meanings:["신체 단련","적합함"],
+  { word:"fitness", exams:["수능"], pron:"피트니스", pos:"n", level:"B2", meanings:["신체 단련","적합함"],
     syn:["physical condition","good health","suitability"],
     ex:[{ s:"She tracks her {{}} with a simple notebook.", f:"fitness", ko:"그녀는 간단한 공책으로 자기 신체 단련을 기록한다." }] },
 
@@ -1002,7 +1002,7 @@ window.VOCAB_F = [
     syn:["suppleness","adaptability","pliancy"],
     ex:[{ s:"Daily stretching restored some {{}} to his back.", f:"flexibility", ko:"매일의 스트레칭이 그의 등에 어느 정도 유연성을 되돌려 주었다." }] },
 
-  { word:"flexible", exams:["공무원"], pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
+  { word:"flexible", exams:["공무원","수능"], pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
     syn:["pliable","bendable","adaptable"], ant:["rigid"],
     ex:[{ s:"Copper pipe is {{}} enough to shape by hand.", f:"flexible", ko:"구리 관은 손으로 모양을 낼 만큼 잘 휜다." }] },
 
@@ -1229,7 +1229,7 @@ window.VOCAB_F = [
     syn:["previous","earlier","one-time"], ant:["current"],
     ex:[{ s:"A {{}} student now runs the whole department.", f:"former", ko:"이전의 학생이 지금 그 학과 전체를 운영한다." }] },
 
-  { word:"formula", pron:"포뮬러", pos:"n", level:"B2", meanings:["공식","방법"],
+  { word:"formula", exams:["수능"], pron:"포뮬러", pos:"n", level:"B2", meanings:["공식","방법"],
     syn:["equation","recipe","set procedure"],
     ex:[{ s:"There is no simple {{}} for a good lesson.", f:"formula", ko:"좋은 수업을 위한 간단한 공식은 없다." }] },
 

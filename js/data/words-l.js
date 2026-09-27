@@ -165,7 +165,7 @@ window.VOCAB_L = [
      I 세트 표제어의 뜻이 '시작하다, 착수하다' 로 글자까지 같다. 사전 값을 그대로
      쓰면 두 표제어의 뜻이 완전히 같아져 4지선다에서 서로 오답 후보가 되지 못한다.
      참조가 쓰는 '착수하다' 를 첫 자리에 지키고, 원본의 '발사하다' 를 붙여 갈랐다. */
-  { word:"launch", exams:["공무원"], pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
+  { word:"launch", exams:["공무원","수능"], pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
     syn:["initiate","set in motion","kick off"],
     ex:[{ s:"The agency will {{}} the satellite next month.", f:"launch", ko:"그 기관은 다음 달에 위성을 발사할 것이다." }] },
 
@@ -194,7 +194,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
      원본의 동사 갈래('층을 이루다')는 pos 가 n 이라 담지 못했다. */
-  { word:"layer", exams:["공무원"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
+  { word:"layer", exams:["공무원","수능"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
     syn:["crust","stratum","coating"],
     ex:[{ s:"A thin {{}} of dust covered the top shelf.", f:"layer", ko:"얇은 먼지 층이 맨 위 선반을 덮고 있었다." }] },
 
@@ -234,14 +234,14 @@ window.VOCAB_L = [
 
   /* leak 의 둘째 갈래가 '누출' 이라 이쪽은 '유출' 을 앞에 두었다. 품사도 달라
      (v/n) 같은 보드에 오지 않는다. */
-  { word:"leakage", pron:"리키지", pos:"n", level:"C1", meanings:["유출","누출"],
+  { word:"leakage", exams:["수능"], pron:"리키지", pos:"n", level:"C1", meanings:["유출","누출"],
     syn:["escape","seepage","discharge"],
     ex:[{ s:"Engineers traced the gas {{}} to a cracked pipe.", f:"leakage", ko:"기술자들은 가스 유출을 갈라진 관에서 찾아냈다." }] },
 
   /* 승격 ① — GLOSS '기울다; 여윈' 을 글자까지 지켰다. I 세트 incline 이
      '기울다' 갈래를 유의어로 참조하므로 원본('기대다; 날씬한') 대신 사전 쪽을
      남겼다 — 같은 갈래다. */
-  { word:"lean", exams:["공무원"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
+  { word:"lean", exams:["공무원","수능"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
     syn:["incline","tilt","slant"],
     ex:[{ s:"The old tower began to {{}} to one side.", f:"lean", ko:"그 낡은 탑은 한쪽으로 기울기 시작했다." }] },
 

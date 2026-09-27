@@ -63,14 +63,14 @@ window.VOCAB_M = [
   { word:"mudslide", exams:["공무원"], pron:"머드슬라이드", pos:"n", level:"C1", meanings:["진흙 사태","이류"], syn:["landslide","mudflow","avalanche"], ex:[{ s:"A {{}} destroyed part of the village.", f:"mudslide", ko:"진흙 사태가 마을의 일부를 파괴했다." }] },
   { word:"multicellular", exams:["공무원"], pron:"멀티셀룰러", pos:"adj", level:"C2", meanings:["다세포의"], ex:[{ s:"Complex, {{}} forms evolved over this period.", f:"multicellular", ko:"이 기간에 복잡한 다세포 생물이 진화했다." }] },
   { word:"mentality", exams:["공무원"], pron:"멘탤리티", pos:"n", level:"C1", meanings:["사고방식","태도"], syn:["mindset","attitude","outlook"], ex:[{ s:"They have a 'can-do' {{}}.", f:"mentality", ko:"그들은 '할 수 있다'는 사고방식을 지녔다." }] },
-  { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
+  { word:"merit", exams:["공무원","수능"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
   { word:"maintain", exams:["공무원","수능"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
-  { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
+  { word:"management", exams:["공무원","수능"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
   { word:"mankind", exams:["공무원"], pron:"맨카인드", pos:"n", level:"B2", meanings:["인류","인간 전체"], syn:["humanity","humankind","the human race"], ex:[{ s:"Neither skill was of much use to early {{}}.", f:"mankind", ko:"어느 기술도 초기 인류에게는 별 쓸모가 없었다." }] },
-  { word:"moreover", exams:["공무원"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
+  { word:"moreover", exams:["공무원","수능"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
   { word:"make strides", exams:["공무원"], pron:"메이크 스트라이즈", pos:"phr", level:"C1", meanings:["큰 진전을 이루다","크게 발전하다"] },
   { word:"make the most of", exams:["공무원"], pron:"메이크 더 모스트 오브", pos:"phr", level:"B2", meanings:["~을 최대한 활용하다","~을 십분 이용하다"], syn:["get the most out of","take advantage of","capitalize on"] },
   { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
@@ -152,7 +152,7 @@ window.VOCAB_M = [
   { word:"make headway", pron:"메이크 헤드웨이", pos:"phr", level:"B2", meanings:["나아가다","진전을 보이다"],
     syn:["progress","gain ground","press forward"] },
 
-  { word:"make it", pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
+  { word:"make it", exams:["수능"], pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
     syn:["arrive in time","succeed","pull it off"] },
 
   { word:"make sense", exams:["수능"], pron:"메이크 센스", pos:"phr", level:"B1", meanings:["의미가 통하다","이해가 되다"],
@@ -245,7 +245,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '인공적인' 과 같은 갈래다. artificial(syn) 이 참조한다.
      첫 뜻이 artificial 과 같은데 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다.
      원본의 '인위적인' 은 같은 갈래라 한 갈래로 두었다. */
-  { word:"man-made", pron:"맨 메이드", pos:"adj", level:"B2", meanings:["인공적인"],
+  { word:"man-made", exams:["수능"], pron:"맨 메이드", pos:"adj", level:"B2", meanings:["인공적인"],
     syn:["artificial","synthetic","human-made"], ant:["natural"],
     ex:[{ s:"The lake is entirely {{}}.", f:"man-made", ko:"그 호수는 전적으로 인공적이다." }] },
 
@@ -412,7 +412,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '성숙한; 성숙하다' 를 글자까지 지켰다. I 세트 immature 와
      J 세트 juvenile 이 반의어로 참조하므로 이 갈래가 바뀌면 방금 넣은 문제 화면이
      바뀐다. 원본의 '다 자란' 은 '성숙한' 과 같은 갈래다. */
-  { word:"mature", pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
+  { word:"mature", exams:["수능"], pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
     syn:["grown-up","developed","ripe"], ant:["immature"],
     ex:[{ s:"He is remarkably {{}} for his age.", f:"mature", ko:"그는 나이에 비해 놀랄 만큼 성숙하다." }] },
 
@@ -425,7 +425,7 @@ window.VOCAB_M = [
     ex:[{ s:"He lived by the old {{}} that haste makes waste.", f:"maxim", ko:"그는 서두르면 일을 망친다는 옛 격언대로 살았다." }] },
 
   /* maxim 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"maximize", exams:["공무원"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
+  { word:"maximize", exams:["공무원","수능"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
     syn:["optimize","boost to the full","get the most out of"], ant:["minimize"],
     ex:[{ s:"The layout is designed to {{}} natural light.", f:"maximize", ko:"그 배치는 자연광을 극대화하도록 설계되었다." }] },
 
@@ -503,7 +503,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기제, 장치' 와 같은 갈래다. 참조도 PRON 도 없어 원본의
      '기계 장치' 를 첫 자리에 두고 '부품' 대신 사전의 '기제' 를 살렸다. */
-  { word:"mechanism", exams:["공무원"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
+  { word:"mechanism", exams:["공무원","수능"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
     syn:["device","workings","contrivance"],
     ex:[{ s:"The locking {{}} had jammed completely.", f:"mechanism", ko:"잠금 기계 장치가 완전히 걸려 버렸다." }] },
 
@@ -602,7 +602,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
      원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
-  { word:"mention", exams:["공무원"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+  { word:"mention", exams:["공무원","수능"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
     syn:["cite","refer to","bring up"],
     ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
 
@@ -865,7 +865,7 @@ window.VOCAB_M = [
 
   /* 원본은 '오해; 오역' 이었는데 '오해' 는 misconception·misunderstanding 과
      겹쳤다. 이 낱말은 해석을 잘못했다는 쪽이어서 '오역' 을 앞에 두었다. */
-  { word:"misinterpretation", pron:"미스인터프러테이션", pos:"n", level:"C1", meanings:["오역","잘못된 해석"],
+  { word:"misinterpretation", exams:["수능"], pron:"미스인터프러테이션", pos:"n", level:"C1", meanings:["오역","잘못된 해석"],
     syn:["mistranslation","misreading","wrong sense"],
     ex:[{ s:"The error came from a {{}} of the original text.", f:"misinterpretation", ko:"그 오류는 원문의 오역에서 비롯되었다." }] },
 

@@ -47,7 +47,7 @@ window.VOCAB_W = [
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
   { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
-  { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
+  { word:"waste", exams:["공무원","수능"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
   { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
   { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
@@ -252,7 +252,7 @@ window.VOCAB_W = [
 
   /* 승격 ⑩ — 사전의 쌍반점만 쉼표로(참조 compare). compare(비교하다) 와
      맞물려 배제된다. 교재의 '무게가 ~이다' 는 자동사 쪽이라 버렸다. */
-  { word:"weigh", exams:["공무원"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
+  { word:"weigh", exams:["공무원","수능"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
     syn:["compare","find the weight of","turn over in the mind"],
     ex:[{ s:"Please {{}} the parcel first.", f:"weigh", ko:"그 소포를 먼저 재 주세요." }] },
 

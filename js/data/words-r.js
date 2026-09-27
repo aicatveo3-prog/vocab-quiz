@@ -29,7 +29,7 @@ window.VOCAB_R = [
   { word:"retailer", exams:["공무원"], pron:"리테일러", pos:"n", level:"B2", meanings:["소매업체","소매상"], syn:["seller","merchant","vendor"], ex:[{ s:"The {{}} offers online grocery shopping.", f:"retailer", ko:"그 소매업체는 온라인 식료품 쇼핑을 제공한다." }] },
   { word:"reusable", exams:["공무원"], pron:"리유저블", pos:"adj", level:"B2", meanings:["재사용 가능한"], syn:["recyclable","washable","durable"], ant:["disposable"], ex:[{ s:"Opt for {{}} containers instead of plastic.", f:"reusable", ko:"플라스틱 대신 재사용 가능한 용기를 선택하라." }] },
   { word:"rearrange", exams:["공무원"], pron:"리어레인지", pos:"v", level:"B2", meanings:["재배치하다","재정리하다"], syn:["reorganize","reorder","shuffle"], ex:[{ s:"They began {{}} their environment to suit themselves.", f:"rearranging", ko:"그들은 환경을 자신에게 맞게 재배치하기 시작했다." }] },
-  { word:"responsibility", exams:["공무원"], pron:"리스판서빌리티", pos:"n", level:"B1", meanings:["책임","책무"], syn:["duty","obligation","accountability"], ex:[{ s:"Society allocates positions of {{}} by merit.", f:"responsibility", ko:"사회는 능력에 따라 책임 있는 자리를 배분한다." }] },
+  { word:"responsibility", exams:["공무원","수능"], pron:"리스판서빌리티", pos:"n", level:"B1", meanings:["책임","책무"], syn:["duty","obligation","accountability"], ex:[{ s:"Society allocates positions of {{}} by merit.", f:"responsibility", ko:"사회는 능력에 따라 책임 있는 자리를 배분한다." }] },
   { word:"relegate", exams:["공무원"], pron:"렐리게이트", pos:"v", level:"C2", meanings:["격하하다","밀쳐두다"], syn:["demote","downgrade","consign"], ant:["promote"], ex:[{ s:"Schedule time to {{}} distractions to set times.", f:"relegate", ko:"방해 요소를 정해진 시간으로 밀쳐두도록 시간을 짜라." }] },
   { word:"risky", exams:["공무원"], pron:"리스키", pos:"adj", level:"B2", meanings:["위험한"], syn:["dangerous","hazardous","precarious"], ant:["safe"], ex:[{ s:"Farming is quite {{}} and uncertain.", f:"risky", ko:"농업은 꽤 위험하고 불확실하다." }] },
   { word:"ration", exams:["공무원"], pron:"래션", pos:"n", level:"B2", meanings:["배급량","정량"], syn:["allowance","portion","quota"], ex:[{ s:"A student's daily {{}} of cereal made little difference.", f:"ration", ko:"학생의 하루 시리얼 배급량은 거의 차이를 만들지 않았다." }] },
@@ -53,10 +53,10 @@ window.VOCAB_R = [
   { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
   { word:"rescue", exams:["공무원"], pron:"레스큐", pos:"v", level:"B1", meanings:["구조하다","구조"], syn:["save","salvage","liberate"], ex:[{ s:"Firefighters managed to {{}} the family from the flames.", f:"rescue", ko:"소방관들은 불길 속에서 그 가족을 가까스로 구조했다." }] },
   { word:"resort to", exams:["공무원"], pron:"리조트 투", pos:"phr", level:"C1", meanings:["~에 의지하다","~의 수단에 호소하다"], syn:["fall back on","turn to","rely on"] },
-  { word:"recognizable", exams:["공무원"], pron:"레커그나이저블", pos:"adj", level:"B2", meanings:["알아볼 수 있는","쉽게 식별되는"], syn:["identifiable","distinguishable","familiar"], ant:["unrecognizable"], ex:[{ s:"After twenty years, the town was hardly {{}} to him.", f:"recognizable", ko:"20년이 지나자 그 마을은 그가 거의 알아볼 수 없을 정도였다." }] },
+  { word:"recognizable", exams:["공무원","수능"], pron:"레커그나이저블", pos:"adj", level:"B2", meanings:["알아볼 수 있는","쉽게 식별되는"], syn:["identifiable","distinguishable","familiar"], ant:["unrecognizable"], ex:[{ s:"After twenty years, the town was hardly {{}} to him.", f:"recognizable", ko:"20년이 지나자 그 마을은 그가 거의 알아볼 수 없을 정도였다." }] },
   { word:"resign", exams:["공무원"], pron:"리자인", pos:"v", level:"B2", meanings:["사임하다","체념하다"], syn:["step down","quit","stand down"], ex:[{ s:"Facing heavy criticism, the minister decided to {{}}.", f:"resign", ko:"거센 비판에 직면하자 장관은 사임하기로 했다." }] },
   { word:"roll up one's sleeves", exams:["공무원"], pron:"롤 업 원스 슬리브즈", pos:"phr", level:"C1", meanings:["소매를 걷어붙이다","본격적으로 일에 착수하다"] },
-  { word:"restriction", exams:["공무원"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
+  { word:"restriction", exams:["공무원","수능"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
   { word:"remotely", exams:["공무원"], pron:"리모틀리", pos:"adv", level:"B2", meanings:["원격으로","멀리서"], ex:[{ s:"Engineers can now control the machine {{}} from another city.", f:"remotely", ko:"이제 기술자들은 다른 도시에서 그 기계를 원격으로 조종할 수 있다." }] },
   { word:"reef", exams:["공무원"], pron:"리프", pos:"n", level:"B2", meanings:["암초","산호초"], ex:[{ s:"Divers came to explore the famous coral {{}}.", f:"reef", ko:"다이버들이 그 유명한 산호초를 탐험하러 왔다." }] },
   { word:"relaxation", exams:["수능"], pron:"릴랙세이션", pos:"n", level:"B2", meanings:["긴장 완화","휴식"], ex:[{ s:"Yoga is a good way to find {{}} after work.", f:"relaxation", ko:"요가는 퇴근 후 휴식을 얻는 좋은 방법이다." }] },
@@ -242,7 +242,7 @@ window.VOCAB_R = [
 
   /* 승격 ⑭ — 사전은 '현실적인' 한 갈래였고 참조가 없어 '사실적인' 을 붙였다.
      '현실적인' 은 pragmatic(P) 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"realistic", exams:["공무원"], pron:"리얼리스틱", pos:"adj", level:"B1", meanings:["현실적인","사실적인"],
+  { word:"realistic", exams:["공무원","수능"], pron:"리얼리스틱", pos:"adj", level:"B1", meanings:["현실적인","사실적인"],
     syn:["true to life","keeping to what is possible","showing things as they are"],
     ex:[{ s:"We need a {{}} plan.", f:"realistic", ko:"우리에게는 현실적인 계획이 필요하다." }] },
 
@@ -387,7 +387,7 @@ window.VOCAB_R = [
 
   /* 승격 ㉛ — 사전 글자 유지(awareness, A · identification, I). '인식' 은
      awareness·perception(P) 과 글자가 같아 서로 오답에서 빠진다. */
-  { word:"recognition", pron:"레커그니션", pos:"n", level:"B2", meanings:["인식","인정"],
+  { word:"recognition", exams:["수능"], pron:"레커그니션", pos:"n", level:"B2", meanings:["인식","인정"],
     syn:["awareness","act of knowing again","credit given"],
     ex:[{ s:"The work won wide {{}}.", f:"recognition", ko:"그 작품은 널리 인정을 받았다." }] },
 
@@ -473,7 +473,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊳ — 사전의 쌍반점만 쉼표로 갈랐다(civilize, C). 원본 '개선하다' 는
      바로 아래 refinement·improvement 자리라 사전값 쪽이 낫다. */
-  { word:"refine", exams:["공무원"], pron:"리파인", pos:"v", level:"B2", meanings:["정제하다","세련되게 하다"],
+  { word:"refine", exams:["공무원","수능"], pron:"리파인", pos:"v", level:"B2", meanings:["정제하다","세련되게 하다"],
     syn:["civilize","make pure","polish to a finer state"],
     ex:[{ s:"They {{}} sugar at the plant.", f:"refine", ko:"그들은 그 공장에서 설탕을 정제한다." }] },
 
@@ -484,7 +484,7 @@ window.VOCAB_R = [
 
   /* 승격 ㊴ — 사전의 쌍반점만 쉼표로 갈랐다(mirror, M). 원본의 '나타내다' 는
      represent(챕터 8) 자리다. */
-  { word:"reflect", exams:["공무원"], pron:"리플렉트", pos:"v", level:"B1", meanings:["반영하다","반사하다"],
+  { word:"reflect", exams:["공무원","수능"], pron:"리플렉트", pos:"v", level:"B1", meanings:["반영하다","반사하다"],
     syn:["mirror","throw back light","show as in a glass"],
     ex:[{ s:"Prices {{}} demand.", f:"reflect", ko:"가격은 수요를 반영한다." }] },
 
@@ -581,7 +581,7 @@ window.VOCAB_R = [
   /* 승격 ㊻ — ★ 사전·원본 모두 동사다. 명사 뜻('기록부, 명부') 을 노리던 참조
      세 곳(archive·directory·index) 을 손질하고 동사로 세웠다. 쌍반점만 쉼표로
      바뀌어 enroll·come to mind 두 곳은 구두점만 달라진다. */
-  { word:"register", exams:["공무원"], pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
+  { word:"register", exams:["공무원","수능"], pron:"레지스터", pos:"v", level:"B1", meanings:["등록하다","감지하다"],
     syn:["enroll","put on a list","take note of"],
     ex:[{ s:"You must {{}} before Friday.", f:"register", ko:"금요일 전에 등록해야 한다." }] },
 
@@ -999,7 +999,7 @@ window.VOCAB_R = [
 
   /* 승격 85 — 사전의 쌍반점만 쉼표로 갈랐다(duplicate, D). 원본 '재생산하다;
      복사하다; 반복하다' 세 갈래는 replicate·repeatedly 와 부딪혀 사전값을 썼다. */
-  { word:"reproduce", pron:"리프러두스", pos:"v", level:"B2", meanings:["재현하다","번식하다"],
+  { word:"reproduce", exams:["수능"], pron:"리프러두스", pos:"v", level:"B2", meanings:["재현하다","번식하다"],
     syn:["duplicate","bring forth young","make a copy of"],
     ex:[{ s:"Rabbits {{}} very fast.", f:"reproduce", ko:"토끼는 아주 빠르게 번식한다." }] },
 
@@ -1083,7 +1083,7 @@ window.VOCAB_R = [
 
   /* 승격 97 — 원본은 '거주자, 거주하는, 고유의, 내재의' 로 네 갈래에 품사가
      섞여 있었다. 참조 civilian·inhabitant 가 명사여서 사전 단일값을 지켰다. */
-  { word:"resident", exams:["공무원"], pron:"레지던트", pos:"n", level:"B2", meanings:["거주자"],
+  { word:"resident", exams:["공무원","수능"], pron:"레지던트", pos:"n", level:"B2", meanings:["거주자"],
     syn:["inhabitant","one who lives there","dweller"],
     ex:[{ s:"Every {{}} got a notice.", f:"resident", ko:"모든 거주자가 통지를 받았다." }] },
 
@@ -1109,7 +1109,7 @@ window.VOCAB_R = [
 
   /* 승격 99 — 사전 단일값 유지(acclimate·cave in 반의어, counteract·defy — 네 곳).
      원본의 '견디다' 는 bear(B) 의 첫 뜻이라 붙이지 않았다. */
-  { word:"resist", exams:["공무원"], pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
+  { word:"resist", exams:["공무원","수능"], pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
     syn:["defy","stand against","hold out against"],
     ex:[{ s:"They chose to {{}} the order.", f:"resist", ko:"그들은 그 명령에 저항하기로 했다." }] },
 
@@ -1202,7 +1202,7 @@ window.VOCAB_R = [
     ex:[{ s:"Nobody would {{}} to the notice.", f:"respond", ko:"아무도 그 공지에 응답하려 하지 않았다." }] },
 
   /* 승격 109 — 사전 단일값 유지(irresponsible 반의어, I). */
-  { word:"responsible", exams:["공무원"], pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
+  { word:"responsible", exams:["공무원","수능"], pron:"리스판서블", pos:"adj", level:"B1", meanings:["책임감 있는"],
     syn:["answerable for it","to be trusted with duty","carrying the blame or credit"],
     ant:["irresponsible"],
     ex:[{ s:"She is {{}} for the whole team.", f:"responsible", ko:"그녀는 팀 전체에 책임감 있게 임한다." }] },
@@ -1599,7 +1599,7 @@ window.VOCAB_R = [
   { word:"run out of", exams:["공무원"], pron:"런 아웃 오브", pos:"phr", level:"B1", meanings:["~을 다 써 버리다"],
     syn:["use up all of","be left with none","exhaust the supply"] },
 
-  { word:"run the risk of", pron:"런 더 리스크 오브", pos:"phr", level:"C1", meanings:["~의 위험을 무릅쓰다"],
+  { word:"run the risk of", exams:["수능"], pron:"런 더 리스크 오브", pos:"phr", level:"C1", meanings:["~의 위험을 무릅쓰다"],
     syn:["take a chance on harm","expose oneself to danger","chance a bad outcome"] },
 
   /* 승격 146 — 사전 글자 유지(drainage, D). 원본의 '결선 투표, 결승전' 은 버렸다. */

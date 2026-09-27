@@ -18,7 +18,7 @@ window.VOCAB_B = [
   { word:"birthright", exams:["공무원"], pron:"버쓰라이트", pos:"n", level:"C1", meanings:["타고난 권리","생득권"], syn:["heritage","inheritance","entitlement"], ex:[{ s:"Gun advocates consider ownership a {{}}.", f:"birthright", ko:"총기 옹호자들은 소유를 타고난 권리로 여긴다." }] },
   { word:"blazing", exams:["공무원"], pron:"블레이징", pos:"adj", level:"B2", meanings:["타는 듯한","이글거리는"], syn:["scorching","burning","fiery"], ex:[{ s:"In the {{}} midday sun, the rock stood out.", f:"blazing", ko:"이글거리는 한낮의 태양 아래 그 돌이 눈에 띄었다." }] },
   { word:"bloodstream", exams:["공무원"], pron:"블러드스트림", pos:"n", level:"B2", meanings:["혈류"], ex:[{ s:"The glands release hormones into the {{}}.", f:"bloodstream", ko:"그 분비샘은 혈류로 호르몬을 방출한다." }] },
-  { word:"bounded", exams:["공무원"], pron:"바운디드", pos:"adj", level:"C1", meanings:["경계 지어진","한정된"], syn:["limited","confined","restricted"], ant:["boundless"], ex:[{ s:"They view organ transplant as a {{}} event.", f:"bounded", ko:"그들은 장기 이식을 한정된 사건으로 본다." }] },
+  { word:"bounded", exams:["공무원","수능"], pron:"바운디드", pos:"adj", level:"C1", meanings:["경계 지어진","한정된"], syn:["limited","confined","restricted"], ant:["boundless"], ex:[{ s:"They view organ transplant as a {{}} event.", f:"bounded", ko:"그들은 장기 이식을 한정된 사건으로 본다." }] },
   { word:"brush up on", exams:["공무원"], pron:"브러시 업 온", pos:"phr", level:"C1", meanings:["다시 익히다","복습하다"], syn:["review","revise","refresh"], ex:[{ s:"She decided to {{}} her Spanish before the trip.", f:"brush up on", ko:"그녀는 여행 전에 스페인어를 다시 익히기로 했다." }] },
   { word:"burnout", exams:["공무원"], pron:"번아웃", pos:"n", level:"B2", meanings:["번아웃","극도의 피로"], syn:["exhaustion","fatigue","breakdown"], ex:[{ s:"Overwork has caused {{}} and unhappiness.", f:"burnout", ko:"과로가 번아웃과 불행을 초래했다." }] },
   { word:"biologist", exams:["공무원"], pron:"바이올로지스트", pos:"n", level:"B2", meanings:["생물학자"], ex:[{ s:"The {{}} examined baby giraffes in the wild.", f:"biologist", ko:"그 생물학자는 야생의 새끼 기린들을 조사했다." }] },
@@ -679,7 +679,7 @@ window.VOCAB_B = [
     syn:["border","limit","perimeter"], ant:["center"],
     ex:[{ s:"A low stone fence marks the {{}} of the property.", f:"boundary", ko:"낮은 돌담이 그 땅의 경계를 나타낸다." }] },
 
-  { word:"boundless", pron:"바운들리스", pos:"adj", level:"C1", meanings:["무한한","끝이 없는"],
+  { word:"boundless", exams:["수능"], pron:"바운들리스", pos:"adj", level:"C1", meanings:["무한한","끝이 없는"],
     syn:["limitless","infinite","endless"], ant:["limited"],
     ex:[{ s:"She seems to have {{}} energy for her work.", f:"boundless", ko:"그녀는 자기 일에 끝없는 에너지를 가진 듯하다." }] },
 
@@ -745,7 +745,7 @@ window.VOCAB_B = [
 
   /* 주신 목록의 "(공부를) 다시 하다, 더욱 연마하다"는 brush up의 뜻으로,
      원본 복사 오류로 보여 breathtaking의 실제 뜻으로 바로잡았다. */
-  { word:"breathtaking", pron:"브레스테이킹", pos:"adj", level:"B2", meanings:["숨이 멎을 듯한","놀라운"],
+  { word:"breathtaking", exams:["수능"], pron:"브레스테이킹", pos:"adj", level:"B2", meanings:["숨이 멎을 듯한","놀라운"],
     syn:["stunning","spectacular","awe-inspiring"], ant:["dull"],
     ex:[{ s:"The view from the summit was absolutely {{}}.", f:"breathtaking", ko:"정상에서의 전망은 정말로 숨이 멎을 듯했다." }] },
 

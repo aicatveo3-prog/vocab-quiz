@@ -40,10 +40,10 @@
 window.VOCAB_V = [
   { word:"vaporous", exams:["공무원"], pron:"베이퍼러스", pos:"adj", level:"C2", meanings:["증기의","수증기 같은"], syn:["misty","gaseous","foggy"], ex:[{ s:"The air near the geyser was thick and {{}}.", f:"vaporous", ko:"간헐천 근처의 공기는 짙고 수증기 같았다." }] },
   { word:"vexed", exams:["공무원"], pron:"벡스트", pos:"adj", level:"C1", meanings:["짜증난","골치 아픈"], syn:["annoyed","irritated","troubled"], ant:["pleased"], ex:[{ s:"The novel is about the {{}} parents of an unruly teenager.", f:"vexed", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
-  { word:"visually", exams:["공무원"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
+  { word:"visually", exams:["공무원","수능"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
   { word:"vocalization", exams:["공무원"], pron:"보컬라이제이션", pos:"n", level:"C2", meanings:["발성","발성음"], ex:[{ s:"Human language differs from the {{}} of monkeys.", f:"vocalizations", ko:"인간 언어는 원숭이의 발성음과 다르다." }] },
   { word:"volcanic", exams:["공무원"], pron:"볼캐닉", pos:"adj", level:"B2", meanings:["화산의"], ex:[{ s:"Yellowstone was known to be {{}} in nature.", f:"volcanic", ko:"옐로스톤은 본래 화산성으로 알려져 있었다." }] },
-  { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
+  { word:"vision", exams:["공무원","수능"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
   { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
   { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
@@ -299,7 +299,7 @@ window.VOCAB_V = [
     ex:[{ s:"They changed the {{}} at short notice.", f:"venue", ko:"그들은 급히 개최지를 바꿨다." }] },
 
   /* 교재 괄호('구두의') 를 걷었다. */
-  { word:"verbal", exams:["공무원"], pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
+  { word:"verbal", exams:["공무원","수능"], pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
     syn:["spoken rather than written","in words","put in speech"],
     ex:[{ s:"They had only a {{}} agreement.", f:"verbal", ko:"그들은 말로 된 합의만 했다." }] },
 

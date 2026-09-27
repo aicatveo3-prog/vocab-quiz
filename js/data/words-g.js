@@ -42,7 +42,7 @@ window.VOCAB_G = [
   { word:"gravitational", exams:["공무원"], pron:"그래비테이셔널", pos:"adj", level:"C1", meanings:["중력의"], ex:[{ s:"People can be exposed to {{}} force in different ways.", f:"gravitational", ko:"사람들은 여러 방식으로 중력에 노출될 수 있다." }] },
   { word:"guts", exams:["공무원"], pron:"것츠", pos:"n", level:"C1", meanings:["배짱","용기"], syn:["courage","nerve","boldness"], ant:["cowardice"], ex:[{ s:"She had the {{}} to go for what she wanted.", f:"guts", ko:"그녀는 원하는 것을 향해 나아갈 배짱이 있었다." }] },
   { word:"gullible", exams:["공무원"], pron:"걸러블", pos:"adj", level:"C1", meanings:["잘 속는","순진한"], syn:["naive","credulous","trusting"], ant:["skeptical"], ex:[{ s:"I think you are being {{}}.", f:"gullible", ko:"내 생각에 너는 잘 속고 있는 것 같다." }] },
-  { word:"generation", exams:["공무원"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
+  { word:"generation", exams:["공무원","수능"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
   { word:"generative", exams:["공무원"], pron:"제너러티브", pos:"adj", level:"C1", meanings:["생성적인","생성형의"], syn:["productive","creative","fertile"], ex:[{ s:"{{}} AI is advancing rapidly.", f:"Generative", ko:"생성형 AI가 빠르게 발전하고 있다." }] },
   { word:"globally", exams:["공무원"], pron:"글로벌리", pos:"adv", level:"B2", meanings:["세계적으로","전 세계에서"], syn:["worldwide","internationally","universally"], ex:[{ s:"The agency must engage {{}} to fulfill its mission.", f:"globally", ko:"그 기관은 사명을 완수하려 전 세계적으로 관여해야 한다." }] },
   { word:"gratification", exams:["공무원"], pron:"그래티피케이션", pos:"n", level:"C1", meanings:["만족","충족"], syn:["satisfaction","pleasure","fulfillment"], ex:[{ s:"Short-term {{}} can eclipse long-term focus.", f:"gratification", ko:"단기적 만족이 장기적 집중을 가릴 수 있다." }] },
@@ -66,7 +66,7 @@ window.VOCAB_G = [
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
-  { word:"galaxy", exams:["공무원"], pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
+  { word:"galaxy", exams:["공무원","수능"], pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
     syn:["star system","nebula","cosmos"],
     ex:[{ s:"Our solar system sits on the edge of a spiral {{}}.", f:"galaxy", ko:"우리 태양계는 나선 은하의 가장자리에 있다." }] },
 
@@ -319,7 +319,7 @@ window.VOCAB_G = [
 
   /* 원본 '~을 고려하면' 은 기존 표제어 considering 과 같다. 첫 뜻을
      '~임을 감안하면' 으로 바꿔 갈랐다. */
-  { word:"given that", pron:"기븐 댓", pos:"phr", level:"B2", meanings:["~임을 감안하면","~을 고려하면"],
+  { word:"given that", exams:["수능"], pron:"기븐 댓", pos:"phr", level:"B2", meanings:["~임을 감안하면","~을 고려하면"],
     syn:["considering","in view of","seeing that"] },
 
   { word:"giving behavior", pron:"기빙 비헤이비어", pos:"phr", level:"C1", meanings:["기부 행위"],

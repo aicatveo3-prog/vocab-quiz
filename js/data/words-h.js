@@ -46,7 +46,7 @@ window.VOCAB_H = [
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
-  { word:"habitat", pron:"해비탯", pos:"n", level:"B2", meanings:["서식지","거주지"],
+  { word:"habitat", exams:["수능"], pron:"해비탯", pos:"n", level:"B2", meanings:["서식지","거주지"],
     syn:["environment","dwelling","territory"],
     ex:[{ s:"The wetland provides a natural {{}} for migratory birds.", f:"habitat", ko:"그 습지는 철새에게 자연 서식지를 제공한다." }] },
 
@@ -130,7 +130,7 @@ window.VOCAB_H = [
     ex:[{ s:"Diamond is famous for its extreme {{}}.", f:"hardness", ko:"다이아몬드는 극도의 단단함으로 유명하다." }] },
 
   /* 승격 ① — GLOSS '고난, 역경' 과 같은 갈래다. adversity·deprivation 의 유의어로 쓰인다. */
-  { word:"hardship", pron:"하드십", pos:"n", level:"B2", meanings:["고난","역경"],
+  { word:"hardship", exams:["수능"], pron:"하드십", pos:"n", level:"B2", meanings:["고난","역경"],
     syn:["adversity","deprivation","privation"],
     ex:[{ s:"Many families faced severe {{}} during the drought.", f:"hardship", ko:"가뭄 동안 많은 가정이 극심한 고난을 겪었다." }] },
 
@@ -270,7 +270,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — heighten 은 PRON 만 있고 GLOSS 는 없다. enhance 의 유의어로 쓰인다.
      heighten 과 height 는 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"heighten", pron:"하이튼", pos:"v", level:"B2", meanings:["높이다","고조시키다"],
+  { word:"heighten", exams:["수능"], pron:"하이튼", pos:"v", level:"B2", meanings:["높이다","고조시키다"],
     syn:["intensify","amplify","elevate"],
     ex:[{ s:"The report only served to {{}} public concern.", f:"heighten", ko:"그 보고서는 대중의 우려를 고조시키기만 했다." }] },
 
@@ -291,7 +291,7 @@ window.VOCAB_H = [
     ex:[{ s:"Most of the world's population lives in the northern {{}}.", f:"hemisphere", ko:"세계 인구의 대부분은 북반구에 산다." }] },
 
   /* 승격 ① — GLOSS '그러므로, 따라서' 와 같은 갈래다. consequently 의 유의어. */
-  { word:"hence", pron:"헨스", pos:"adv", level:"B2", meanings:["그러므로","따라서"],
+  { word:"hence", exams:["수능"], pron:"헨스", pos:"adv", level:"B2", meanings:["그러므로","따라서"],
     syn:["therefore","consequently","thus"],
     ex:[{ s:"Sales fell sharply; {{}} the company cut costs.", f:"hence", ko:"매출이 급감했다. 그러므로 회사는 비용을 줄였다." }] },
 
@@ -472,7 +472,7 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '가정의, 가정용의' 이다. domestic 이 형용사를 쓴다.
      원본은 '가정' (명사)인데 domestic 문맥을 지키려면 형용사로 둬야 한다. */
-  { word:"household", exams:["공무원"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
+  { word:"household", exams:["공무원","수능"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
     syn:["domestic","family","residential"],
     ex:[{ s:"{{}} waste is collected twice a week.", f:"Household", ko:"가정 폐기물은 주 2회 수거된다." }] },
 

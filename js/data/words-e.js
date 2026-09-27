@@ -938,7 +938,7 @@ window.VOCAB_E = [
   { word:"electromagnetic field", pron:"일렉트로마그네틱 필드", pos:"n", level:"C1", meanings:["전자기장"],
     ex:[{ s:"Sensitive instruments detect any shift in the {{}}.", f:"electromagnetic field", ko:"민감한 기기는 전자기장의 어떤 변화도 감지한다." }] },
 
-  { word:"electronic", pron:"일렉트라닉", pos:"adj", level:"B1", meanings:["전자의"],
+  { word:"electronic", exams:["수능"], pron:"일렉트라닉", pos:"adj", level:"B1", meanings:["전자의"],
     syn:["digital","computerized","electrical"],
     ex:[{ s:"All {{}} devices must be switched off during takeoff.", f:"electronic", ko:"이륙 중에는 모든 전자 기기를 꺼야 한다." }] },
 
@@ -1041,7 +1041,7 @@ window.VOCAB_E = [
     syn:["personify","represent","exemplify"],
     ex:[{ s:"These old courtyards {{}} the spirit of the city.", f:"embody", ko:"이 오래된 안마당들은 그 도시의 정신을 구현한다." }] },
 
-  { word:"embrace", pron:"임브레이스", pos:"v", level:"B2", meanings:["받아들이다","포옹하다"],
+  { word:"embrace", exams:["수능"], pron:"임브레이스", pos:"v", level:"B2", meanings:["받아들이다","포옹하다"],
     syn:["accept","adopt","welcome"], ant:["reject"],
     ex:[{ s:"Older firms were slow to {{}} the new technology.", f:"embrace", ko:"오래된 기업들은 새 기술을 받아들이는 데 더뎠다." }] },
 
@@ -1468,7 +1468,7 @@ window.VOCAB_E = [
     syn:["wear away","eat away","corrode"],
     ex:[{ s:"Winter rain will {{}} the bare hillside.", f:"erode", ko:"겨울비가 헐벗은 산비탈을 침식할 것이다." }] },
 
-  { word:"erosion", exams:["공무원"], pron:"이로전", pos:"n", level:"B2", meanings:["침식","부식"],
+  { word:"erosion", exams:["공무원","수능"], pron:"이로전", pos:"n", level:"B2", meanings:["침식","부식"],
     syn:["corrosion","wearing away","gradual destruction"],
     ex:[{ s:"Tree roots slow the {{}} of the riverbank.", f:"erosion", ko:"나무 뿌리는 강둑의 침식을 늦춘다." }] },
 
@@ -1543,7 +1543,7 @@ window.VOCAB_E = [
 
   /* 원본은 '견적, 추정; 추정하다, 추산하다' 로 명사와 동사가 섞여 있다 — 동사로
      정했다. 표제어 calculate(동사)가 유의어로 쓴다. */
-  { word:"estimate", exams:["공무원"], pron:"에스터메이트", pos:"v", level:"B1", meanings:["추정하다","추산하다"],
+  { word:"estimate", exams:["공무원","수능"], pron:"에스터메이트", pos:"v", level:"B1", meanings:["추정하다","추산하다"],
     syn:["calculate","reckon","work out"],
     ex:[{ s:"Surveyors {{}} the repair at twice that figure.", f:"estimate", ko:"조사관들은 수리비를 그 금액의 두 배로 추정한다." }] },
 
@@ -1709,7 +1709,7 @@ window.VOCAB_E = [
     syn:["thrilled","elated","worked up"], ant:["calm"],
     ex:[{ s:"The children were too {{}} to sit still.", f:"excited", ko:"아이들은 너무 흥분해서 가만히 앉아 있지 못했다." }] },
 
-  { word:"exclaim", pron:"익스클레임", pos:"v", level:"B2", meanings:["소리치다","외치다"],
+  { word:"exclaim", exams:["수능"], pron:"익스클레임", pos:"v", level:"B2", meanings:["소리치다","외치다"],
     syn:["cry out","shout","call out"],
     ex:[{ s:"She began to {{}} before he finished speaking.", f:"exclaim", ko:"그녀는 그가 말을 끝내기도 전에 소리치기 시작했다." }] },
 
@@ -1827,7 +1827,7 @@ window.VOCAB_E = [
     syn:["being","reality","actual fact"],
     ex:[{ s:"Nobody doubted the {{}} of the old tunnel.", f:"existence", ko:"아무도 그 낡은 터널의 존재를 의심하지 않았다." }] },
 
-  { word:"exotic", pron:"이그자틱", pos:"adj", level:"B2", meanings:["이국적인","외국산의"],
+  { word:"exotic", exams:["수능"], pron:"이그자틱", pos:"adj", level:"B2", meanings:["이국적인","외국산의"],
     syn:["foreign","unusual","outlandish"],
     ex:[{ s:"The market sells {{}} fruit from three continents.", f:"exotic", ko:"그 시장은 세 대륙에서 온 이국적인 과일을 판다." }] },
 
@@ -1885,7 +1885,7 @@ window.VOCAB_E = [
 
   /* expert(B1)와 expertise(C1)도 두 칸 벌렸다 — 둘 다 '전문' 명사다.
      뜻은 '사람'(전문가)과 '지식'(전문 지식)으로 갈라진다. */
-  { word:"expert", exams:["공무원"], pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
+  { word:"expert", exams:["공무원","수능"], pron:"엑스퍼트", pos:"n", level:"B1", meanings:["전문가"],
     syn:["specialist","master","skilled person"],
     ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
 
@@ -1956,7 +1956,7 @@ window.VOCAB_E = [
     syn:["sell abroad","ship out","send overseas"], ant:["import"],
     ex:[{ s:"The island began to {{}} salt in the 1800s.", f:"export", ko:"그 섬은 1800년대에 소금을 수출하기 시작했다." }] },
 
-  { word:"expose", exams:["공무원"], pron:"익스포즈", pos:"v", level:"B2", meanings:["폭로하다","노출시키다"],
+  { word:"expose", exams:["공무원","수능"], pron:"익스포즈", pos:"v", level:"B2", meanings:["폭로하다","노출시키다"],
     syn:["reveal","uncover","bring to light"], ant:["conceal"],
     ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
 
@@ -1997,7 +1997,7 @@ window.VOCAB_E = [
   /* 레벨을 C1 로 뒀다 — 표제어 degree(B1 "정도, 학위")가 이 낱말을 유의어로 쓰고
      첫 뜻에 '정도' 가 겹치므로, 레벨을 두 칸 벌려 한 문제의 보기로 같이 뜨지
      않게 했다. 기존 GLOSS "범위, 정도" 는 breadth·degree·dimension 셋이 쓴다. */
-  { word:"extent", exams:["공무원"], pron:"익스텐트", pos:"n", level:"C1", meanings:["범위","정도"],
+  { word:"extent", exams:["공무원","수능"], pron:"익스텐트", pos:"n", level:"C1", meanings:["범위","정도"],
     syn:["scope","range","scale"],
     ex:[{ s:"Nobody knew the full {{}} of the leak.", f:"extent", ko:"아무도 그 누출의 전체 범위를 알지 못했다." }] },
 

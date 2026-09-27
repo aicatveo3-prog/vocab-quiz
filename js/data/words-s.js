@@ -79,7 +79,7 @@ window.VOCAB_S = [
   { word:"source", exams:["공무원","수능"], pron:"소스", pos:"n", level:"B1", meanings:["원천","출처"], syn:["origin","root","wellspring"], ex:[{ s:"We should use renewable {{}} to generate electricity.", f:"sources", ko:"우리는 전기를 생산하는 데 재생 가능한 에너지원을 써야 한다." }] },
   { word:"spacious", exams:["공무원"], pron:"스페이셔스", pos:"adj", level:"B2", meanings:["넓은","널찍한"], syn:["roomy","ample","capacious"], ant:["cramped"], ex:[{ s:"We expect more guests, so we need a more {{}} venue.", f:"spacious", ko:"손님이 더 올 것으로 예상되니 더 넓은 장소가 필요하다." }] },
   { word:"stand for", exams:["공무원"], pron:"스탠드 포", pos:"phr", level:"B1", meanings:["~을 나타내다","~을 상징하다"], syn:["represent","symbolize","signify"] },
-  { word:"suffer", exams:["공무원"], pron:"서퍼", pos:"v", level:"B1", meanings:["겪다","고통받다"], syn:["undergo","endure","experience"], ex:[{ s:"Many workers {{}} from stress and lack of sleep.", f:"suffer", ko:"많은 직장인이 스트레스와 수면 부족에 시달린다." }], gov:{ prep:["from"], usage:"suffer from ~ : ~로 고통받다, ~을 앓다" } },
+  { word:"suffer", exams:["공무원","수능"], pron:"서퍼", pos:"v", level:"B1", meanings:["겪다","고통받다"], syn:["undergo","endure","experience"], ex:[{ s:"Many workers {{}} from stress and lack of sleep.", f:"suffer", ko:"많은 직장인이 스트레스와 수면 부족에 시달린다." }], gov:{ prep:["from"], usage:"suffer from ~ : ~로 고통받다, ~을 앓다" } },
   { word:"scam", exams:["공무원"], pron:"스캠", pos:"n", level:"B2", meanings:["사기","신용 사기"], syn:["fraud","swindle","con"], ex:[{ s:"Police warned citizens about a new parking ticket {{}}.", f:"scam", ko:"경찰은 시민들에게 새로운 주차 과태료 사기를 경고했다." }] },
   { word:"scenic", exams:["공무원"], pron:"시닉", pos:"adj", level:"B2", meanings:["경치가 좋은","풍경의"], syn:["picturesque","panoramic","breathtaking"], ex:[{ s:"Visitors enjoy the {{}} views from the hill.", f:"scenic", ko:"방문객들은 언덕에서 보는 멋진 경치를 즐긴다." }] },
   { word:"showcase", exams:["공무원"], pron:"쇼케이스", pos:"v", level:"B2", meanings:["보여 주다","전시하다"], syn:["display","exhibit","demonstrate"], ex:[{ s:"Punctuality {{}} a person's commitment to meeting deadlines.", f:"showcases", ko:"시간 엄수는 마감을 지키려는 사람의 의지를 보여 준다." }] },
@@ -105,7 +105,7 @@ window.VOCAB_S = [
   { word:"surroundings", exams:["공무원","수능"], pron:"서라운딩즈", pos:"n", level:"B2", meanings:["주위 환경","주변"], syn:["environment","setting","milieu"], ex:[{ s:"The app streams live video of the user's {{}}.", f:"surroundings", ko:"그 앱은 사용자 주변의 실시간 영상을 전송한다." }] },
   { word:"sooner or later", exams:["공무원"], pron:"수너 오어 레이터", pos:"phr", level:"B1", meanings:["조만간","머지않아"], syn:["eventually","in the end","in time"] },
   { word:"satisfaction", exams:["공무원"], pron:"새티스팩션", pos:"n", level:"B1", meanings:["만족","흡족함"], syn:["gratification","contentment","fulfillment"], ant:["dissatisfaction"], ex:[{ s:"Customer {{}} is our top priority.", f:"satisfaction", ko:"고객 만족이 우리의 최우선 과제다." }] },
-  { word:"speed up", exams:["공무원"], pron:"스피드 업", pos:"phr", level:"B1", meanings:["속도를 높이다","가속하다"], syn:["accelerate","hasten","quicken"] },
+  { word:"speed up", exams:["공무원","수능"], pron:"스피드 업", pos:"phr", level:"B1", meanings:["속도를 높이다","가속하다"], syn:["accelerate","hasten","quicken"] },
   { word:"signify", exams:["공무원"], pron:"시그니파이", pos:"v", level:"C1", meanings:["나타내다","의미하다"], syn:["indicate","denote","symbolize","represent"], ex:[{ s:"In many cultures, white doves {{}} peace.", f:"signify", ko:"많은 문화에서 흰 비둘기는 평화를 나타낸다." }] },
   { word:"soberly", exams:["공무원"], pron:"소버리", pos:"adv", level:"C1", meanings:["냉정하게","침착하게"] },
   { word:"sponsor", exams:["공무원","수능"], pron:"스판서", pos:"v", level:"B2", meanings:["후원하다","후원자"], syn:["fund","finance","support"], ex:[{ s:"A local bank will {{}} the city marathon this year.", f:"sponsor", ko:"올해는 지역 은행이 시 마라톤을 후원할 것이다." }] },
@@ -354,7 +354,7 @@ window.VOCAB_S = [
   /* 승격 ⑰ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 네 곳(chase away·compile·
      diffuse·disperse) 의 설명이 '흩뿌리다; 분산하다' 에서 '흩뿌리다, 분산하다'
      가 된다. */
-  { word:"scatter", exams:["공무원"], pron:"스캐터", pos:"v", level:"B2", meanings:["흩뿌리다","분산하다"],
+  { word:"scatter", exams:["공무원","수능"], pron:"스캐터", pos:"v", level:"B2", meanings:["흩뿌리다","분산하다"],
     syn:["disperse","diffuse","chase away"], ant:["gather"],
     ex:[{ s:"The wind will {{}} the seeds.", f:"scatter", ko:"바람이 씨앗을 흩뿌릴 것이다." }] },
 
@@ -852,7 +852,7 @@ window.VOCAB_S = [
 
   /* 승격 55 — 사전 글자 유지. 참조 acute(A)·blunt(B)·blurry(B) 세 곳의 화면은
      바뀌지 않는다. */
-  { word:"sharp", pron:"샤프", pos:"adj", level:"B1", meanings:["날카로운","선명한"],
+  { word:"sharp", exams:["수능"], pron:"샤프", pos:"adj", level:"B1", meanings:["날카로운","선명한"],
     syn:["acute","keen-edged","clear in outline"], ant:["blunt","blurry"],
     ex:[{ s:"He drew a {{}} line across the page.", f:"sharp", ko:"그는 쪽 위로 선명한 선을 그었다." }] },
 
@@ -1047,7 +1047,7 @@ window.VOCAB_S = [
 
   /* 승격 72 — 사전은 '간소화하다' 였다. 참조가 없어 원본대로 '단순화하다' 로
      두었다 — 화면이 바뀌는 곳은 없다. */
-  { word:"simplify", exams:["공무원"], pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
+  { word:"simplify", exams:["공무원","수능"], pron:"심플리파이", pos:"v", level:"B2", meanings:["단순화하다"],
     syn:["make plain","cut out the hard parts","reduce to basics"],
     ex:[{ s:"We must {{}} the form.", f:"simplify", ko:"우리는 그 서식을 단순화해야 한다." }] },
 
@@ -1370,7 +1370,7 @@ window.VOCAB_S = [
      설명이 '단단한; 입방의' 에서 '단단한, 입방의' 가 된다. 명사인 liquid(L) 의
      반의어 자리는 'solid matter'(고체) 로 갈았다.
      firm(단단한, 회사) 과 첫 갈래가 글자까지 같아 자동 배제된다. */
-  { word:"solid", exams:["공무원"], pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
+  { word:"solid", exams:["공무원","수능"], pron:"살리드", pos:"adj", level:"B1", meanings:["단단한","입방의"],
     syn:["cubic","firm","hard right through"],
     ex:[{ s:"The table is made of {{}} oak.", f:"solid", ko:"그 탁자는 단단한 참나무로 만들어졌다." }] },
 
@@ -1391,7 +1391,7 @@ window.VOCAB_S = [
 
   /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
      '해결책; 용액' 에서 '해결책, 용액' 이 된다. */
-  { word:"solution", exams:["공무원"], pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
+  { word:"solution", exams:["공무원","수능"], pron:"설루션", pos:"n", level:"B1", meanings:["해결책","용액"],
     syn:["answer to a problem","way out of trouble","liquid mixture"],
     ex:[{ s:"They looked for a simple {{}}.", f:"solution", ko:"그들은 간단한 해결책을 찾았다." }] },
 
@@ -1403,7 +1403,7 @@ window.VOCAB_S = [
     ex:[{ s:"The firm is still {{}}.", f:"solvent", ko:"그 회사는 아직 지급 능력이 있다." }] },
 
   /* slightly(약간, 조금 · 챕터 9) 와 갈랐다 — 이쪽이 조금 더 큰 정도다. */
-  { word:"somewhat", pron:"섬왓", pos:"adv", level:"B2", meanings:["다소"],
+  { word:"somewhat", exams:["수능"], pron:"섬왓", pos:"adv", level:"B2", meanings:["다소"],
     syn:["to some extent","rather more than a little","in some degree"],
     ex:[{ s:"The result was {{}} surprising.", f:"somewhat", ko:"그 결과는 다소 놀라웠다." }] },
 
@@ -1521,7 +1521,7 @@ window.VOCAB_S = [
   /* 승격 114 — 사전 글자 유지. 참조가 여섯 곳(concrete·definite·detail·general·
      generic·particular) 인데 하나도 바뀌지 않는다 — 챕터 5 의 separate 와 함께
      이 세트에서 참조가 가장 많은 자리다. */
-  { word:"specific", exams:["공무원"], pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
+  { word:"specific", exams:["공무원","수능"], pron:"스퍼시픽", pos:"adj", level:"B1", meanings:["특정한","구체적인"],
     syn:["concrete","definite","particular"], ant:["general","generic"],
     ex:[{ s:"Give me a {{}} example.", f:"specific", ko:"구체적인 예를 하나 들어 보라." }] },
 
@@ -1591,7 +1591,7 @@ window.VOCAB_S = [
 
   /* 승격 119 — 사전 글자 유지. 참조 domain(D) 의 화면은 바뀌지 않는다.
      첫 갈래 '영역' 이 위 spectrum 과 글자가 같아 자동 배제된다. */
-  { word:"sphere", exams:["공무원"], pron:"스피어", pos:"n", level:"C1", meanings:["영역","범위"],
+  { word:"sphere", exams:["공무원","수능"], pron:"스피어", pos:"n", level:"C1", meanings:["영역","범위"],
     syn:["domain","field of action","area of concern"],
     ex:[{ s:"That lies outside my {{}}.", f:"sphere", ko:"그것은 내 영역 밖이다." }] },
 
@@ -1755,7 +1755,7 @@ window.VOCAB_S = [
 
   /* 승격 137 — 사전 첫 갈래만 남겼다. '마구간' 을 쓰고 있던 barn(B) 의 그
      자리를 'outbuilding' 으로 갈았다. */
-  { word:"stable", exams:["공무원"], pron:"스테이블", pos:"adj", level:"B1", meanings:["안정된"],
+  { word:"stable", exams:["공무원","수능"], pron:"스테이블", pos:"adj", level:"B1", meanings:["안정된"],
     syn:["not likely to change","firm in place","steady and sure"],
     ex:[{ s:"His condition is now {{}}.", f:"stable", ko:"그의 상태는 이제 안정되었다." }] },
 
@@ -2169,7 +2169,7 @@ window.VOCAB_S = [
 
   /* 승격 175 — 사전 단일값 유지. 참조 impressive(I)·notable(N) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"striking", pron:"스트라이킹", pos:"adj", level:"B2", meanings:["눈에 띄는"],
+  { word:"striking", exams:["수능"], pron:"스트라이킹", pos:"adj", level:"B2", meanings:["눈에 띄는"],
     syn:["impressive","notable","hard to miss"],
     ex:[{ s:"There is a {{}} likeness between them.", f:"striking", ko:"그들 사이에는 눈에 띄는 닮음이 있다." }] },
 
@@ -2255,7 +2255,7 @@ window.VOCAB_S = [
 
   /* 승격 185 — 사전 단일값 유지. 참조 arbitrary(A)·objective(O) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"subjective", pron:"섭젝티브", pos:"adj", level:"B2", meanings:["주관적인"],
+  { word:"subjective", exams:["수능"], pron:"섭젝티브", pos:"adj", level:"B2", meanings:["주관적인"],
     syn:["arbitrary","based on one's own view","coloured by feeling"], ant:["objective"],
     ex:[{ s:"Taste in art is {{}}.", f:"subjective", ko:"예술 취향은 주관적이다." }] },
 
@@ -2343,7 +2343,7 @@ window.VOCAB_S = [
 
   /* 승격 195 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 considerable(C) 한 곳의
      설명이 '상당한; 실질적인' 에서 '상당한, 실질적인' 이 된다. */
-  { word:"substantial", exams:["공무원"], pron:"섭스탠셜", pos:"adj", level:"B2", meanings:["상당한","실질적인"],
+  { word:"substantial", exams:["공무원","수능"], pron:"섭스탠셜", pos:"adj", level:"B2", meanings:["상당한","실질적인"],
     syn:["considerable","large in amount","real and solid"],
     ex:[{ s:"They made a {{}} gain this year.", f:"substantial", ko:"그들은 올해 상당한 이익을 냈다." }] },
 
@@ -2594,7 +2594,7 @@ window.VOCAB_S = [
     ex:[{ s:"They found a {{}} parent for the cub.", f:"surrogate", ko:"그들은 그 새끼에게 대리 어미를 찾아 주었다." }] },
 
   /* 승격 223 — 사전 글자 유지. 참조 enclose(E) 의 화면은 바뀌지 않는다. */
-  { word:"surround", exams:["공무원"], pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
+  { word:"surround", exams:["공무원","수능"], pron:"서라운드", pos:"v", level:"B1", meanings:["둘러싸다","에워싸다"],
     syn:["enclose","ring about","shut in on all sides"],
     ex:[{ s:"Tall trees {{}} the house.", f:"surround", ko:"키 큰 나무들이 그 집을 둘러싼다." }] },
 

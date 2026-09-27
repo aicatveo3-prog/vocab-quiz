@@ -161,7 +161,7 @@ window.VOCAB_O = [
   /* 승격 ⑤ — 사전은 '반대, 이의' 였다. '반대' 를 그대로 두면 dissent(반대, 이견, D)
      와 첫 뜻이 같고, 챕터 4 의 opposition·opposite 와도 줄줄이 물린다.
      순서를 뒤집어 '이의' 를 앞세우고 원본의 '반감' 을 붙였다. */
-  { word:"objection", pron:"어브젝션", pos:"n", level:"B2", meanings:["이의","반감"],
+  { word:"objection", exams:["수능"], pron:"어브젝션", pos:"n", level:"B2", meanings:["이의","반감"],
     syn:["dissent","counter-argument","voiced disagreement"], ant:["assent"],
     ex:[{ s:"She raised no {{}} to the new rule.", f:"objection", ko:"그녀는 새 규칙에 아무 이의도 내지 않았다." }] },
 
@@ -378,7 +378,7 @@ window.VOCAB_O = [
 
   /* 승격 30 — 사전 표현 '자식, 자손' 을 글자까지 지켰다(descendant, D).
      원본의 '(동물의) 새끼' 괄호는 걷었다. */
-  { word:"offspring", pron:"오프스프링", pos:"n", level:"B2", meanings:["자식","자손"],
+  { word:"offspring", exams:["수능"], pron:"오프스프링", pos:"n", level:"B2", meanings:["자식","자손"],
     syn:["descendant","progeny","young of a creature"],
     ex:[{ s:"Salmon return upstream to leave their {{}}.", f:"offspring", ko:"연어는 자손을 남기려고 강을 거슬러 돌아온다." }] },
 
@@ -576,7 +576,7 @@ window.VOCAB_O = [
 
   /* 승격 46 — 사전 표현 '선택, 대안' 을 글자까지 지켰다(alternative, A).
      원본의 '선택, 선택권' 대신 사전 쪽을 남겼다. */
-  { word:"option", pron:"압션", pos:"n", level:"B1", meanings:["선택","대안"],
+  { word:"option", exams:["수능"], pron:"압션", pos:"n", level:"B1", meanings:["선택","대안"],
     syn:["alternative","choice","way open to one"],
     ex:[{ s:"Walking was the only {{}} left.", f:"option", ko:"걷는 것이 남은 유일한 선택이었다." }] },
 
@@ -615,14 +615,14 @@ window.VOCAB_O = [
     syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
     ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
 
-  { word:"organism", exams:["공무원"], pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
+  { word:"organism", exams:["공무원","수능"], pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
     syn:["living thing","life form","biological entity"],
     ex:[{ s:"Every {{}} needs water to survive.", f:"organism", ko:"모든 유기체는 살아남으려면 물이 필요하다." }] },
 
   /* 승격 48 — 사전은 '조직, 기관' 이었다. '기관' 을 그대로 두면 같은 챕터의
      organ(장기, 기관) 과 물리므로 원본의 '단체' 로 갈랐다.
      association(A)·institution(I) 두 곳의 화면 글자가 함께 바뀐다. */
-  { word:"organization", exams:["공무원"], pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
+  { word:"organization", exams:["공무원","수능"], pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
     syn:["association","institution","body of members"],
     ex:[{ s:"She founded an {{}} for street children.", f:"organization", ko:"그녀는 거리 아이들을 위한 단체를 세웠다." }] },
 
@@ -641,7 +641,7 @@ window.VOCAB_O = [
 
   /* 승격 51 — 사전에 뜻만 있고 발음이 없던 항목이다. 사전값 '방향을 잡다' 를
      첫 자리에 두고 원본의 '~에 맞추다' 를 붙였다(원본의 '(특정 목적에)' 괄호는 걷었다). */
-  { word:"orient", pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
+  { word:"orient", exams:["수능"], pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
     syn:["find one's bearings","point in a direction","adapt to a purpose"],
     ex:[{ s:"Use the map to {{}} yourself before setting off.", f:"orient", ko:"떠나기 전에 지도로 방향을 잡으세요." }] },
 

@@ -199,7 +199,7 @@ window.VOCAB_N = [
     ex:[{ s:"The price difference was {{}}.", f:"negligible", ko:"값 차이는 무시해도 될 만했다." }] },
 
   /* 승격 ⑬ — 사전에는 뜻만 있고 발음이 없던 항목이다(참조도 없었다). */
-  { word:"negotiate", exams:["공무원"], pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
+  { word:"negotiate", exams:["공무원","수능"], pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
     syn:["bargain","work out terms","come to terms"],
     ex:[{ s:"The two sides met to {{}} a ceasefire.", f:"negotiate", ko:"양측은 휴전을 협상하려고 만났다." }] },
 
@@ -349,13 +349,13 @@ window.VOCAB_N = [
     syn:["longing for the past","homesickness","wistful memory"],
     ex:[{ s:"Old photographs filled her with {{}}.", f:"nostalgia", ko:"오래된 사진들이 그녀를 옛날을 그리워함으로 채웠다." }] },
 
-  { word:"not to mention", pron:"낫 투 멘션", pos:"phr", level:"B2", meanings:["~은 말할 것도 없고"],
+  { word:"not to mention", exams:["수능"], pron:"낫 투 멘션", pos:"phr", level:"B2", meanings:["~은 말할 것도 없고"],
     syn:["to say nothing of","let alone","over and above that"] },
 
   /* 승격 23 — 사전은 '주목할 만한, 유명한' 이었다. '유명한' 은 같은 챕터 4 의
      notorious(악명 높은, 소문난) 와 부딪히므로 원본의 '중요한' 을 썼다.
      참조가 없어 화면 변화는 없다. */
-  { word:"notable", pron:"노터블", pos:"adj", level:"B2", meanings:["주목할 만한","중요한"],
+  { word:"notable", exams:["수능"], pron:"노터블", pos:"adj", level:"B2", meanings:["주목할 만한","중요한"],
     syn:["striking","worth noting","of consequence"], ant:["unremarkable"],
     ex:[{ s:"The year brought one {{}} change to the rules.", f:"notable", ko:"그 해는 규칙에 주목할 만한 변화 하나를 가져왔다." }] },
 
@@ -373,7 +373,7 @@ window.VOCAB_N = [
      '논평하다' 갈래로 observe 를 유의어로 쓰고 있었는데, observe 를 '관찰하다,
      준수하다' 로 세우면 그 자리가 어긋난다. comment 쪽 유의어를 이 note 로
      바꿨다(words-c.js) — '언급하다' 가 딱 맞는다. */
-  { word:"note", pron:"노트", pos:"v", level:"B1", meanings:["주목하다","언급하다"],
+  { word:"note", exams:["수능"], pron:"노트", pos:"v", level:"B1", meanings:["주목하다","언급하다"],
     syn:["take note of","remark on","point out"],
     ex:[{ s:"Please {{}} the change of time on the form.", f:"note", ko:"양식에 적힌 시간 변경을 주목해 주세요." }] },
 

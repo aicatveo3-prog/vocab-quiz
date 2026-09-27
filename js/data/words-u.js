@@ -60,7 +60,7 @@ window.VOCAB_U = [
   { word:"utilize", exams:["공무원","수능"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
   { word:"unemotional", exams:["공무원"], pron:"언이모셔널", pos:"adj", level:"C1", meanings:["감정을 드러내지 않는","냉정한"], syn:["detached","impassive","stoic"], ant:["emotional"], ex:[{ s:"Critical thinking may seem cold and {{}}, but it can stir strong feelings.", f:"unemotional", ko:"비판적 사고는 차갑고 감정 없는 것처럼 보이지만 강한 감정을 불러일으킬 수 있다." }] },
   { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
-  { word:"upset", exams:["공무원"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
+  { word:"upset", exams:["공무원","수능"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
   { word:"unacceptable", exams:["공무원"], pron:"언액셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 없는","용납할 수 없는"], syn:["intolerable","inadmissible","objectionable"], ant:["acceptable"], ex:[{ s:"Such rude behavior is simply {{}} in this office.", f:"unacceptable", ko:"그런 무례한 행동은 이 사무실에서 도저히 용납할 수 없다." }] },
   { word:"unfold", exams:["공무원","수능"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
   { word:"utter", exams:["공무원"], pron:"어터", pos:"adj", level:"C1", meanings:["완전한","입 밖에 내다"], syn:["absolute","sheer","complete","total"], ex:[{ s:"The meeting was {{}} chaos from start to finish.", f:"utter", ko:"그 회의는 처음부터 끝까지 완전한 혼돈이었다." }] },
@@ -346,7 +346,7 @@ window.VOCAB_U = [
     ex:[{ s:"The path was rough and {{}}.", f:"uneven", ko:"그 길은 거칠고 울퉁불퉁했다." }] },
 
   /* 승격 ⑬ — 사전 글자 유지(참조 alien). */
-  { word:"unfamiliar", pron:"언퍼밀리어", pos:"adj", level:"B1", meanings:["낯선","익숙하지 않은"],
+  { word:"unfamiliar", exams:["수능"], pron:"언퍼밀리어", pos:"adj", level:"B1", meanings:["낯선","익숙하지 않은"],
     syn:["alien","new to one","not known before"],
     ex:[{ s:"The street felt {{}} at night.", f:"unfamiliar", ko:"그 거리는 밤에 낯설게 느껴졌다." }] },
 
