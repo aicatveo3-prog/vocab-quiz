@@ -22,6 +22,7 @@ window.VOCAB_K = [
   { word:"keep in contact with", exams:["공무원"], pron:"킵 인 칸택트 위드", pos:"phr", level:"B2", meanings:["~와 연락을 유지하다"] },
   { word:"keep", exams:["수능"], pron:"킵", pos:"v", level:"B1", meanings:["계속하다","유지하다"], syn:["continue","persist","retain"], ant:["discard","abandon"], ex:[{ s:"Don't give up now; just {{}} going!", f:"keep", ko:"지금 포기하지 말고 계속 가!" }] },
   { word:"know-how", exams:["수능"], pron:"노하우", pos:"n", level:"B2", meanings:["실무 지식","노하우"], syn:["expertise","knowledge","skill"], ex:[{ s:"Building a boat takes a lot of technical {{}}.", f:"know-how", ko:"배를 만들려면 많은 기술적 노하우가 필요하다." }] },
+  { word:"knowledgeable", exams:["수능"], pron:"날리저블", pos:"adj", level:"B2", meanings:["박식한","잘 아는"], ex:[{ s:"Our tour guide was very {{}} about local history.", f:"knowledgeable", ko:"우리 여행 가이드는 지역 역사에 대해 아주 잘 알았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '열심인; 날카로운' 을 글자까지 지켰다.

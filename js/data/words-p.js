@@ -2588,7 +2588,6 @@ Object.assign(window.GLOSS, {
   "inborn tendency": "타고난 경향",
   "inflamed lungs": "염증이 생긴 허파",
   "inner hand": "손의 안쪽",
-  "instructional": "교육용의",
   "insurance contract": "보험 계약서",
   "invention statute": "발명 관련 법령",
   "ironic": "반어적인, 아이러니한",

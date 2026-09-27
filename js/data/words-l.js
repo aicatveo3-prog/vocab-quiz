@@ -78,6 +78,7 @@ window.VOCAB_L = [
   { word:"legally", exams:["수능"], pron:"리걸리", pos:"adv", level:"C1", meanings:["법적으로","합법적으로"] },
   { word:"lifestyle", exams:["수능"], pron:"라이프스타일", pos:"n", level:"B2", meanings:["생활 방식"], ex:[{ s:"Many young people now choose a simple {{}} with few possessions.", f:"lifestyle", ko:"요즘 많은 젊은이가 소유물이 적은 단순한 생활 방식을 택한다." }] },
   { word:"literate", exams:["수능"], pron:"리터럿", pos:"adj", level:"C1", meanings:["글을 읽고 쓸 줄 아는","교양 있는"], ex:[{ s:"In ancient times, only a small part of the population was {{}}.", f:"literate", ko:"고대에는 인구의 극히 일부만 글을 읽고 쓸 줄 알았다." }] },
+  { word:"long-standing", exams:["수능"], pron:"롱 스탠딩", pos:"adj", level:"C1", meanings:["오래된","오래 지속된"], syn:["long-term","established","enduring"], ex:[{ s:"Their {{}} friendship began in elementary school.", f:"long-standing", ko:"그들의 오랜 우정은 초등학교 때 시작되었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -800,6 +801,7 @@ Object.assign(window.GLOSS, {
   "durability": "오래 견딤",
   "easy to carry": "들고 다니기 쉬운",
   "emancipate": "속박에서 풀다",
+  "enduring": "오래가는",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",

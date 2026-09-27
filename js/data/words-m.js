@@ -101,6 +101,10 @@ window.VOCAB_M = [
   { word:"match", exams:["수능"], pron:"매치", pos:"v", level:"B1", meanings:["일치하다","어울리다"], ex:[{ s:"Your shoes don't {{}} your dress at all.", f:"match", ko:"네 신발은 드레스와 전혀 어울리지 않는다." }] },
   { word:"membership", exams:["수능"], pron:"멤버십", pos:"n", level:"B2", meanings:["회원 자격","회원 수"], ex:[{ s:"{{}} in the book club costs twenty dollars a year.", f:"Membership", ko:"독서 모임의 회원 자격은 1년에 20달러다." }] },
   { word:"mutually", exams:["수능"], pron:"뮤추얼리", pos:"adv", level:"C1", meanings:["서로","상호 간에"] },
+  { word:"migrant", exams:["수능"], pron:"마이그런트", pos:"n", level:"B2", meanings:["이주자","철새"], ex:[{ s:"Each {{}} bird flies thousands of kilometers every year.", f:"migrant", ko:"철새는 해마다 수천 킬로미터를 날아간다." }] },
+  { word:"misfortune", exams:["수능"], pron:"미스포천", pos:"n", level:"B2", meanings:["불운","불행"], ex:[{ s:"Some people believe that breaking a mirror brings {{}}.", f:"misfortune", ko:"어떤 사람들은 거울을 깨면 불운이 온다고 믿는다." }] },
+  { word:"mislead", exams:["수능"], pron:"미스리드", pos:"v", level:"B2", meanings:["오해하게 하다","속이다"], ex:[{ s:"The advertisement tried to {{}} customers about the price.", f:"mislead", ko:"그 광고는 가격에 대해 고객을 오해하게 하려 했다." }] },
+  { word:"missing", exams:["수능"], pron:"미싱", pos:"adj", level:"B1", meanings:["없어진","빠진"], ex:[{ s:"The police are searching for the {{}} child.", f:"missing", ko:"경찰이 실종된 아이를 찾고 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
