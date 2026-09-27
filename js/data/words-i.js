@@ -2240,7 +2240,6 @@ Object.assign(window.GLOSS, {
   "tickly": "간지러운",
   "to some extent": "어느 정도는",
   "to sum up": "정리하자면",
-  "tone": "어조, 말투",
   "tool": "연장",
   "touchy": "신경이 곤두선",
   "trade places": "자리를 맞바꾸다",

@@ -2374,7 +2374,6 @@ Object.assign(window.GLOSS, {
   "special case":"특수한 경우",
   "tax dodging":"탈세",
   "too much":"너무 많은 것",
-  "ultimately":"궁극적으로",
   "vaporize":"기화시키다",
 
   /* ── 10차: excessive ~ exhibition (44개) ───────────────── */

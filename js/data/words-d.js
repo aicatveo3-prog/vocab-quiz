@@ -1632,7 +1632,6 @@ Object.assign(window.GLOSS, {
   "trickle": "졸졸 흐르다",
   "troubled": "근심하는, 골치 아픈",
   "undiscriminating": "안목 없는, 가리지 않는",
-  "unload": "짐을 부리다, 처분하다",
   "unregulated": "규제되지 않은",
   "unscramble": "풀다, 해독하다",
   "water shortage": "물 부족",

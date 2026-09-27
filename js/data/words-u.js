@@ -83,6 +83,11 @@ window.VOCAB_U = [
   { word:"unoccupied", exams:["수능"], pron:"언아큐파이드", pos:"adj", level:"C1", meanings:["비어 있는","사람이 없는"], syn:["vacant","empty","available"], ant:["occupied"], ex:[{ s:"The house has been {{}} since the family moved away.", f:"unoccupied", ko:"그 가족이 이사 간 뒤로 그 집은 비어 있다." }] },
   { word:"unusual", exams:["수능"], pron:"언유주얼", pos:"adj", level:"B1", meanings:["흔치 않은","특이한"], syn:["rare","uncommon","strange"], ant:["ordinary","typical"], ex:[{ s:"It is {{}} to see snow here in April.", f:"unusual", ko:"이곳에서 4월에 눈을 보는 것은 흔치 않다." }] },
   { word:"upcycle", exams:["수능"], pron:"업사이클", pos:"v", level:"C1", meanings:["업사이클하다","새 제품으로 재활용하다"], ex:[{ s:"Some designers {{}} old jeans into stylish bags.", f:"upcycle", ko:"어떤 디자이너들은 낡은 청바지를 멋진 가방으로 업사이클한다." }] },
+  { word:"ultimately", exams:["수능"], pron:"얼터밋리", pos:"adv", level:"B2", meanings:["궁극적으로","결국"] },
+  { word:"unaffected", exams:["수능"], pron:"언어펙티드", pos:"adj", level:"C1", meanings:["영향을 받지 않은","꾸밈없는"], ex:[{ s:"Luckily, our town was {{}} by the storm.", f:"unaffected", ko:"다행히 우리 마을은 폭풍의 영향을 받지 않았다." }] },
+  { word:"unconcerned", exams:["수능"], pron:"언컨선드", pos:"adj", level:"C1", meanings:["무관심한","개의치 않는"], ex:[{ s:"He seemed {{}} about the exam and went out to play.", f:"unconcerned", ko:"그는 시험에 개의치 않는 듯 놀러 나갔다." }] },
+  { word:"unload", exams:["수능"], pron:"언로드", pos:"v", level:"B2", meanings:["짐을 내리다","부리다"], ex:[{ s:"The workers {{}} the boxes from the truck every morning.", f:"unload", ko:"일꾼들은 매일 아침 트럭에서 상자를 내린다." }] },
+  { word:"usage", exams:["수능"], pron:"유시지", pos:"n", level:"B2", meanings:["사용","용법"], ex:[{ s:"Water {{}} rises sharply in the summer.", f:"usage", ko:"여름에는 물 사용량이 급격히 늘어난다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14

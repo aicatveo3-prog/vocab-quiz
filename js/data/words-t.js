@@ -69,6 +69,9 @@ window.VOCAB_T = [
   { word:"trustee", exams:["수능"], pron:"트러스티", pos:"n", level:"C1", meanings:["수탁자","관리 위원"], ex:[{ s:"Her uncle served as the {{}} of her inheritance.", f:"trustee", ko:"그녀의 삼촌이 그녀가 받은 유산의 수탁자 역할을 했다." }] },
   { word:"theorist", exams:["수능"], pron:"시어리스트", pos:"n", level:"C1", meanings:["이론가"], ex:[{ s:"The French painter and {{}} wrote about emotions in art.", f:"theorist", ko:"그 프랑스 화가이자 이론가는 미술 속 감정에 관해 썼다." }] },
   { word:"typically", exams:["수능"], pron:"티피컬리", pos:"adv", level:"B2", meanings:["보통","전형적으로"], syn:["usually","normally","generally"] },
+  { word:"three-dimensional", exams:["수능"], pron:"스리 디멘셔널", pos:"adj", level:"B2", meanings:["3차원의","입체의"], ex:[{ s:"The new game creates {{}} images that look real.", f:"three-dimensional", ko:"새 게임은 실제처럼 보이는 입체 영상을 만들어 낸다." }] },
+  { word:"tone", exams:["수능"], pron:"톤", pos:"n", level:"B1", meanings:["어조","색조"], ex:[{ s:"She spoke in a calm, quiet {{}} to comfort the child.", f:"tone", ko:"그녀는 아이를 달래려고 차분하고 조용한 어조로 말했다." }] },
+  { word:"traditionally", exams:["수능"], pron:"트러디셔널리", pos:"adv", level:"B2", meanings:["전통적으로","관례상"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

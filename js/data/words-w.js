@@ -65,6 +65,8 @@ window.VOCAB_W = [
   { word:"widely", exams:["수능"], pron:"와이들리", pos:"adv", level:"B2", meanings:["널리","폭넓게"] },
   { word:"widen", exams:["수능"], pron:"와이든", pos:"v", level:"B2", meanings:["넓히다","넓어지다"], syn:["broaden","expand","enlarge"], ex:[{ s:"The city plans to {{}} the road to reduce traffic.", f:"widen", ko:"시는 교통량을 줄이려고 도로를 넓힐 계획이다." }] },
   { word:"wildlife", exams:["수능"], pron:"와일드라이프", pos:"n", level:"B1", meanings:["야생 동물"], ex:[{ s:"The national park is home to rich {{}}.", f:"wildlife", ko:"그 국립공원에는 야생 동물이 풍부하게 산다." }] },
+  { word:"wealth", exams:["수능"], pron:"웰스", pos:"n", level:"B1", meanings:["부","재산"], syn:["fortune","riches","affluence"], ant:["poverty"], ex:[{ s:"He gave most of his {{}} to charity.", f:"wealth", ko:"그는 재산 대부분을 자선 단체에 기부했다." }] },
+  { word:"worth", exams:["수능"], pron:"워스", pos:"adj", level:"B1", meanings:["~할 가치가 있는","~의 값어치가 있는"], ex:[{ s:"The new museum is well {{}} a visit.", f:"worth", ko:"새 박물관은 충분히 가 볼 만하다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -611,6 +613,7 @@ Object.assign(window.GLOSS, {
   "able to be done": "해낼 만한",
   "act of bowing down": "엎드려 절하는 일",
   "acting from good intent": "착한 뜻에서 나온",
+  "affluence": "풍요, 부유",
   "amount of work to get through": "해내야 할 일의 양",
   "as for": "그것에 대해서라면",
   "as it touches": "그것에 닿는 한에서는",
@@ -710,12 +713,14 @@ Object.assign(window.GLOSS, {
   "place one is at": "머무는 자리",
   "plant nobody wants": "아무도 원치 않는 풀",
   "pledge on goods sold": "판 물건에 대한 다짐",
+  "poverty": "가난",
   "power to choose": "고를 수 있는 힘",
   "pull back from a place": "어떤 곳에서 물러나다",
   "readiness to act": "나설 준비가 됨",
   "ready to do it": "할 마음이 있는",
   "resting on good reason": "까닭이 튼튼한",
   "reverence paid to a god": "신에게 드리는 공경",
+  "riches": "부, 재물",
   "roam without aim": "정처 없이 떠돌다",
   "rock unsteadily": "불안하게 흔들리다",
   "rolling in money": "돈이 넘치는",

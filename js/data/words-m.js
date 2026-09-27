@@ -1656,7 +1656,6 @@ Object.assign(window.GLOSS, {
   "wordless": "말이 없는",
   "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
-  "worth": "가치, 값어치",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
   "wrongdoing": "비행, 부정",

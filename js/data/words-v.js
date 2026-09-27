@@ -53,6 +53,7 @@ window.VOCAB_V = [
   { word:"violate", exams:["수능"], pron:"바이얼레이트", pos:"v", level:"B2", meanings:["위반하다","침해하다"], syn:["infringe","break","disobey"], ant:["obey"], ex:[{ s:"Companies that {{}} safety rules must pay a fine.", f:"violate", ko:"안전 규칙을 위반한 회사는 벌금을 내야 한다." }] },
   { word:"victim", exams:["수능"], pron:"빅텀", pos:"n", level:"B1", meanings:["피해자","희생자"], ex:[{ s:"The {{}} of the robbery described the thief to the police.", f:"victim", ko:"강도 피해자는 경찰에게 도둑의 인상착의를 설명했다." }] },
   { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
+  { word:"visible", exams:["수능"], pron:"비저블", pos:"adj", level:"B1", meanings:["보이는","눈에 띄는"], ex:[{ s:"On sunny days, the mountain top is {{}} from our window.", f:"visible", ko:"맑은 날에는 우리 집 창문에서 산꼭대기가 보인다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8

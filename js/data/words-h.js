@@ -706,7 +706,6 @@ Object.assign(window.GLOSS, {
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
   "tradition":"전통",
-  "traditionally": "전통적으로",
   "truthfulness": "진실성",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
