@@ -2416,7 +2416,6 @@ Object.assign(window.GLOSS, {
   "expectation":"기대, 예상되는 것",
   "grow bigger":"더 커지다",
   "increase in size":"크기가 커짐",
-  "know-how":"실무 지식",
   "likelihood":"가능성",
   "live on":"계속 살아 있다",
   "outgoings":"지출액",

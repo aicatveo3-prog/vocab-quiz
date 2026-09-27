@@ -2540,7 +2540,6 @@ Object.assign(window.GLOSS, {
   "inactive treatment": "효과 없는 처치",
   "inborn nature": "타고난 바탕",
   "inborn tendency": "타고난 경향",
-  "incomplete": "온전하지 않은",
   "inflamed lungs": "염증이 생긴 허파",
   "inner hand": "손의 안쪽",
   "instructional": "교육용의",

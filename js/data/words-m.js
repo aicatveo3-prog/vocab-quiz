@@ -1433,7 +1433,6 @@ Object.assign(window.GLOSS, {
   "hold water": "말이 성립하다",
   "home loan": "주택 대출",
   "honoring": "기려 받드는",
-  "host": "아주 많은 수",
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",

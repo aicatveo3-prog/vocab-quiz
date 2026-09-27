@@ -1582,7 +1582,6 @@ Object.assign(window.GLOSS, {
   "freed": "해방된, 풀려난",
   "go back to":"~까지 거슬러 올라가다",
   "hang":"걸다, 매달다",
-  "honesty":"정직, 솔직함",
   "immorality":"부도덕, 패륜",
   "indecent":"무례한, 점잖지 못한",
   "industriously": "근면하게, 열심히",
