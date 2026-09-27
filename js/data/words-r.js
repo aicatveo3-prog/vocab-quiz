@@ -74,7 +74,7 @@ window.VOCAB_R = [
   { word:"resolution", exams:["수능"], pron:"레절루션", pos:"n", level:"B2", meanings:["해결","결심"], syn:["solution","settlement","determination"], ex:[{ s:"The two sides finally reached a peaceful {{}}.", f:"resolution", ko:"양측은 마침내 평화적인 해결에 이르렀다." }] },
   { word:"revolutionize", exams:["수능"], pron:"레벌루셔나이즈", pos:"v", level:"C1", meanings:["혁명을 일으키다","완전히 바꾸다"] },
   { word:"recovery", exams:["수능"], pron:"리커버리", pos:"n", level:"B2", meanings:["회복","복구"], ex:[{ s:"She made an amazing {{}} after the accident.", f:"recovery", ko:"그녀는 사고 후 놀라운 회복을 보였다." }] },
-  { word:"regularity", exams:["수능"], pron:"레귤래러티", pos:"n", level:"C1", meanings:["규칙성","정기적임"], ex:[{ s:"The clock's perfect {{}} made it useful for sailors.", f:"regularity", ko:"그 시계는 완벽하게 규칙적이어서 선원들에게 쓸모가 있었다." }] },
+  { word:"regularity", exams:["수능"], pron:"레귤래러티", pos:"n", level:"C1", meanings:["규칙성","정기적임"], ex:[{ s:"Farmers relied on the {{}} of the seasons year after year.", f:"regularity", ko:"농부들은 해마다 계절이 규칙적으로 돌아오는 것에 의지했다." }] },
   { word:"representation", exams:["수능"], pron:"레프리젠테이션", pos:"n", level:"B2", meanings:["표현","대표"], ex:[{ s:"The map is a simple {{}} of the city's streets.", f:"representation", ko:"그 지도는 도시의 거리를 단순하게 표현한 것이다." }] },
   { word:"reproductive", exams:["수능"], pron:"리프러덕티브", pos:"adj", level:"C1", meanings:["생식의","번식의"], ex:[{ s:"Some chemicals can harm the {{}} health of fish.", f:"reproductive", ko:"어떤 화학 물질은 물고기의 생식 건강을 해칠 수 있다." }] },
   { word:"respondent", exams:["수능"], pron:"리스판던트", pos:"n", level:"C1", meanings:["응답자"], ex:[{ s:"Each {{}} answered twenty questions about their diet.", f:"respondent", ko:"응답자들은 각자 식단에 관한 질문 스무 개에 답했다." }] },
