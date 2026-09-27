@@ -1552,7 +1552,6 @@ Object.assign(window.GLOSS, {
   "pronounced": "두드러진",
   "property loan": "부동산 대출",
   "proselytizer": "개종을 권하는 사람",
-  "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
   "pull it off": "끝내 해내다",
   "put in the wrong place": "엉뚱한 곳에 두다",

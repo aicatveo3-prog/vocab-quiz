@@ -141,6 +141,14 @@ window.VOCAB_S = [
   { word:"stimulus", exams:["수능"], pron:"스티뮬러스", pos:"n", level:"C1", meanings:["자극","격려"], ex:[{ s:"Babies react to every new {{}} around them.", f:"stimulus", ko:"아기는 주변의 모든 새로운 자극에 반응한다." }] },
   { word:"stressful", exams:["수능"], pron:"스트레스풀", pos:"adj", level:"B2", meanings:["스트레스가 많은","긴장되는"], ex:[{ s:"Waiting for exam results can be really {{}}.", f:"stressful", ko:"시험 결과를 기다리는 일은 정말 스트레스가 클 수 있다." }] },
   { word:"symbol", exams:["수능"], pron:"심벌", pos:"n", level:"B1", meanings:["상징","기호"], ex:[{ s:"The dove has long been the {{}} of peace.", f:"symbol", ko:"비둘기는 오랫동안 평화의 상징이었다." }] },
+  { word:"self-expression", exams:["수능"], pron:"셀프 익스프레션", pos:"n", level:"C1", meanings:["자기표현"], ex:[{ s:"Keeping a private diary is a simple form of {{}}.", f:"self-expression", ko:"혼자 보는 일기를 쓰는 것은 간단한 자기표현 방법이다." }] },
+  { word:"shortcut", exams:["수능"], pron:"숏컷", pos:"n", level:"B2", meanings:["지름길","손쉬운 방법"], ex:[{ s:"Taking this {{}} through the park saves ten minutes.", f:"shortcut", ko:"공원을 가로지르는 이 지름길로 가면 10분이 절약된다." }] },
+  { word:"sidewalk", exams:["수능"], pron:"사이드워크", pos:"n", level:"B1", meanings:["인도","보도"], syn:["pavement","footpath","walkway"], ex:[{ s:"Children should walk on the {{}}, not in the street.", f:"sidewalk", ko:"아이들은 차도가 아니라 인도로 걸어야 한다." }] },
+  { word:"sincerely", exams:["수능"], pron:"신시얼리", pos:"adv", level:"B2", meanings:["진심으로","진정으로"] },
+  { word:"slang", exams:["수능"], pron:"슬랭", pos:"n", level:"B2", meanings:["속어","은어"], ex:[{ s:"'Cool' became popular {{}} for 'excellent' in the 1960s.", f:"slang", ko:"'cool'은 1960년대에 '훌륭한'을 뜻하는 속어로 유행했다." }] },
+  { word:"slice", exams:["수능"], pron:"슬라이스", pos:"v", level:"B2", meanings:["얇게 썰다","나누다"], syn:["cut","chop","carve"], ex:[{ s:"Use a sharp knife to {{}} the tomatoes thinly.", f:"slice", ko:"잘 드는 칼로 토마토를 얇게 썰어라." }] },
+  { word:"socioeconomic", exams:["수능"], pron:"소시오이커나믹", pos:"adj", level:"C1", meanings:["사회 경제적인"], ex:[{ s:"Students at the school come from many different {{}} backgrounds.", f:"socioeconomic", ko:"그 학교 학생들은 다양한 사회 경제적 배경 출신이다." }] },
+  { word:"sociologist", exams:["수능"], pron:"소시알러지스트", pos:"n", level:"C1", meanings:["사회학자"], ex:[{ s:"The {{}} studied how cities change over time.", f:"sociologist", ko:"그 사회학자는 도시가 시간에 따라 어떻게 변하는지 연구했다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3058,6 +3066,7 @@ Object.assign(window.GLOSS, {
   "following in time": "시간상 뒤에 오는",
   "folly": "어리석은 짓",
   "foolishness": "어리석음, 바보짓",
+  "footpath": "오솔길, 보도",
   "forced separation": "강제로 갈라놓음",
   "formal permission": "정식 허가",
   "four-sided figure": "네 변으로 된 꼴",
@@ -3648,7 +3657,6 @@ Object.assign(window.GLOSS, {
   "sitting of a body": "기구가 모여 앉는 때",
   "size of a thing": "사물의 크기",
   "skin guard from the sun": "볕에서 살갗을 지키는 것",
-  "slice": "얇게 썬 쪽",
   "slim in build": "몸매가 호리호리한",
   "slip into": "슬그머니 들어가다",
   "slow to believe": "쉽게 믿지 않는",

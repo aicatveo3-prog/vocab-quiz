@@ -643,7 +643,6 @@ Object.assign(window.GLOSS, {
   "peaceable": "평온하게 하는",
   "pester": "귀찮게 하다",
   "posted sign": "붙여 놓은 알림",
-  "quantitative": "양으로 따지는",
   "quick-moving": "빠르게 움직이는",
   "rarity value": "드물어서 생기는 값",
   "raw recruit": "갓 들어온 사람",

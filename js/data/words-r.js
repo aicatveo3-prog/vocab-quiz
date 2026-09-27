@@ -78,6 +78,12 @@ window.VOCAB_R = [
   { word:"representation", exams:["수능"], pron:"레프리젠테이션", pos:"n", level:"B2", meanings:["표현","대표"], ex:[{ s:"The map is a simple {{}} of the city's streets.", f:"representation", ko:"그 지도는 도시의 거리를 단순하게 표현한 것이다." }] },
   { word:"reproductive", exams:["수능"], pron:"리프러덕티브", pos:"adj", level:"C1", meanings:["생식의","번식의"], ex:[{ s:"Some chemicals can harm the {{}} health of fish.", f:"reproductive", ko:"어떤 화학 물질은 물고기의 생식 건강을 해칠 수 있다." }] },
   { word:"respondent", exams:["수능"], pron:"리스판던트", pos:"n", level:"C1", meanings:["응답자"], ex:[{ s:"Each {{}} answered twenty questions about their diet.", f:"respondent", ko:"응답자들은 각자 식단에 관한 질문 스무 개에 답했다." }] },
+  { word:"recreate", exams:["수능"], pron:"리크리에이트", pos:"v", level:"B2", meanings:["되살리다","재현하다"], ex:[{ s:"The movie tries to {{}} daily life in ancient Rome.", f:"recreate", ko:"그 영화는 고대 로마의 일상을 재현하려 한다." }] },
+  { word:"regretful", exams:["수능"], pron:"리그렛풀", pos:"adj", level:"C1", meanings:["후회하는","유감스러워하는"], syn:["remorseful","apologetic","sorry"], ex:[{ s:"He felt {{}} about the harsh words he had said.", f:"regretful", ko:"그는 자신이 했던 모진 말을 후회했다." }] },
+  { word:"reluctance", exams:["수능"], pron:"릴럭턴스", pos:"n", level:"C1", meanings:["꺼림","내키지 않음"], syn:["hesitation","unwillingness","resistance"], ex:[{ s:"She agreed to help, though with some {{}}.", f:"reluctance", ko:"그녀는 다소 내키지 않았지만 돕기로 했다." }] },
+  { word:"remainder", exams:["수능"], pron:"리메인더", pos:"n", level:"C1", meanings:["나머지","잔여"], ex:[{ s:"She spent the {{}} of the day reading in bed.", f:"remainder", ko:"그녀는 그날 남은 시간을 침대에서 책을 읽으며 보냈다." }] },
+  { word:"remarkably", exams:["수능"], pron:"리마커블리", pos:"adv", level:"C1", meanings:["눈에 띄게","놀랍게도"] },
+  { word:"reuse", exams:["수능"], pron:"리유즈", pos:"v", level:"B2", meanings:["재사용하다","다시 쓰다"], syn:["recycle","repurpose","reutilize"], ex:[{ s:"Please {{}} your shopping bags instead of buying new ones.", f:"reuse", ko:"새 장바구니를 사지 말고 쓰던 것을 다시 써 주세요." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -2138,6 +2144,7 @@ Object.assign(window.GLOSS, {
   "return in time": "때가 되면 되돌아오다",
   "return to the old state": "옛 상태로 돌아감",
   "return what was paid": "낸 것을 돌려주다",
+  "reutilize": "다시 이용하다",
   "revive the breathing": "숨을 되살리다",
   "revolt of the people": "백성이 일으킨 난",
   "ringing sound": "울려 나는 소리",
@@ -2216,6 +2223,7 @@ Object.assign(window.GLOSS, {
   "sore about it": "그 일로 속이 쓰린",
   "sorrow for a wrong": "잘못을 두고 아파함",
   "sorrow that changes one": "사람을 바꾸는 슬픔",
+  "sorry": "미안한, 유감스러운",
   "sounding together": "함께 울림",
   "soundness": "탈 없음",
   "span from end to end": "끝에서 끝까지 걸침",
@@ -2335,6 +2343,7 @@ Object.assign(window.GLOSS, {
   "unrecognizable": "알아볼 수 없는",
   "unwilling to act": "나서려 하지 않는",
   "unwillingly": "내키지 않게",
+  "unwillingness": "내키지 않음",
   "upright in conduct": "행실이 곧은",
   "uproar in the streets": "거리의 소동",
   "use again": "다시 쓰다",

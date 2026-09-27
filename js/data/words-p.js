@@ -162,6 +162,9 @@ window.VOCAB_P = [
   { word:"pride", exams:["수능"], pron:"프라이드", pos:"n", level:"B1", meanings:["자부심","자존심"], ex:[{ s:"She felt great {{}} in her son's success.", f:"pride", ko:"그녀는 아들의 성공에 큰 자부심을 느꼈다." }] },
   { word:"prisoner", exams:["수능"], pron:"프리즈너", pos:"n", level:"B1", meanings:["죄수","포로"], ex:[{ s:"The {{}} was released after ten years in jail.", f:"prisoner", ko:"그 죄수는 10년간의 수감 끝에 풀려났다." }] },
   { word:"profoundly", exams:["수능"], pron:"프러파운들리", pos:"adv", level:"C1", meanings:["깊이","심오하게"] },
+  { word:"protective", exams:["수능"], pron:"프러텍티브", pos:"adj", level:"B2", meanings:["보호하는","보호하려는"], ex:[{ s:"Wear {{}} gloves when you handle chemicals.", f:"protective", ko:"화학 물질을 다룰 때는 보호 장갑을 껴라." }] },
+  { word:"provider", exams:["수능"], pron:"프러바이더", pos:"n", level:"B2", meanings:["제공자","공급자"], ex:[{ s:"Our internet {{}} raised its prices again.", f:"provider", ko:"우리 인터넷 공급 업체가 또 요금을 올렸다." }] },
+  { word:"puzzled", exams:["수능"], pron:"퍼즐드", pos:"adj", level:"B2", meanings:["어리둥절한","당혹스러운"], syn:["confused","perplexed","baffled"], ex:[{ s:"He looked {{}}, unsure what the strange object was.", f:"puzzled", ko:"그는 그 이상한 물건이 무엇인지 몰라 어리둥절해 보였다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2927,7 +2930,6 @@ Object.assign(window.GLOSS, {
   "showing of one's work": "자기 작업을 보임",
   "side in a dispute": "다툼의 한쪽",
   "side-by-side": "나란한",
-  "sidewalk": "인도",
   "siding with a faction": "한 파에 붙는",
   "sign of what follows": "뒤에 올 일의 낌새",
   "signed appeal": "이름을 적어 올리는 호소",

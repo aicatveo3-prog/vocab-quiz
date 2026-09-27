@@ -2181,7 +2181,6 @@ Object.assign(window.GLOSS, {
   "relational": "관계에 관한",
   "relative to": "~에 비하여",
   "relocation": "이전, 재배치",
-  "remarkably": "눈에 띄게",
   "rendering": "옮겨 냄",
   "repercussion": "파급 효과",
   "reserved person": "말을 아끼는 사람",
