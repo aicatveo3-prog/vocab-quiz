@@ -150,7 +150,7 @@ window.VOCAB_S = [
   { word:"socioeconomic", exams:["수능"], pron:"소시오이커나믹", pos:"adj", level:"C1", meanings:["사회 경제적인"], ex:[{ s:"Students at the school come from many different {{}} backgrounds.", f:"socioeconomic", ko:"그 학교 학생들은 다양한 사회 경제적 배경 출신이다." }] },
   { word:"sociologist", exams:["수능"], pron:"소시알러지스트", pos:"n", level:"C1", meanings:["사회학자"], ex:[{ s:"The {{}} studied how cities change over time.", f:"sociologist", ko:"그 사회학자는 도시가 시간에 따라 어떻게 변하는지 연구했다." }] },
   { word:"sparingly", exams:["수능"], pron:"스페어링리", pos:"adv", level:"C1", meanings:["아껴서","절제하여"] },
-  { word:"strengthen", exams:["수능"], pron:"스트렝슨", pos:"v", level:"B1", meanings:["강화하다","튼튼하게 하다"], syn:["reinforce","bolster","fortify"], ant:["weaken"], ex:[{ s:"Engineers worked to {{}} the old bridge after the storm.", f:"strengthen", ko:"기술자들은 폭풍 뒤 낡은 다리를 보강하는 작업을 했다." }] },
+  { word:"strengthen", exams:["수능"], pron:"스트렝슨", pos:"v", level:"B1", meanings:["강화하다","튼튼하게 하다"], syn:["reinforce","bolster","fortify"], ant:["weaken"], ex:[{ s:"Drinking milk can help {{}} your bones.", f:"strengthen", ko:"우유를 마시면 뼈를 튼튼하게 하는 데 도움이 될 수 있다." }] },
   { word:"subjectivity", exams:["수능"], pron:"섭젝티비티", pos:"n", level:"C1", meanings:["주관성"], ex:[{ s:"Judging art always involves some {{}}.", f:"subjectivity", ko:"미술을 평가하는 데에는 늘 어느 정도 주관성이 개입된다." }] },
   { word:"suggestive", exams:["수능"], pron:"서제스티브", pos:"adj", level:"C1", meanings:["연상시키는","암시하는"], ex:[{ s:"The song's cheerful melody is {{}} of summer at the beach.", f:"suggestive", ko:"그 노래의 경쾌한 선율은 해변의 여름을 떠올리게 한다." }] },
 
