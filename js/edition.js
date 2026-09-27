@@ -9,7 +9,7 @@
  *   공유한다 — 오답 노트, 연속 학습일, 단어별 학습 기록 (store.js가 관리)
  *
  * 여기 한 줄(EDITIONS)에 추가하면 선택 화면과 필터가 함께 반영된다.
- * 아직 태그된 단어가 없는 버전(수능·토익)은 count()가 0이라 선택 화면에서
+ * 아직 태그된 단어가 없는 버전은 count()가 0이라 선택 화면에서
  * '준비중'으로 잠긴다 — 데이터가 쌓이면 자동으로 열린다.
  */
 window.Edition = (function () {
@@ -18,8 +18,7 @@ window.Edition = (function () {
   var EDITIONS = [
     { id: 'all',    label: '종합',   emoji: '📚',    tag: null,    desc: '전체 단어' },
     { id: '공무원', label: '공무원', emoji: '👨‍⚖️', tag: '공무원', desc: '공무원 기출' },
-    { id: '수능',   label: '수능',   emoji: '🎓',    tag: '수능',   desc: '수능 기출' },
-    { id: '토익',   label: '토익',   emoji: '💼',    tag: '토익',   desc: 'TOEIC 기출' }
+    { id: '수능',   label: '수능',   emoji: '🎓',    tag: '수능',   desc: '수능 기출' }
   ];
 
   function byId(id) {
