@@ -28,6 +28,11 @@ window.VOCAB_H = [
   { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
   { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
+  { word:"have no alternative but to", exams:["공무원"], pron:"해브 노 얼터너티브 벗 투", pos:"phr", level:"B2", meanings:["~할 수밖에 없다"], syn:["have no choice but to","cannot help but","be compelled to do"] },
+  { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
+  { word:"heirloom", exams:["공무원"], pron:"에어룸", pos:"n", level:"C1", meanings:["가보","대대로 물려받은 물건"], ex:[{ s:"This ring is a family {{}} that my great-grandmother once wore.", f:"heirloom", ko:"이 반지는 증조할머니가 끼시던 집안의 가보다." }] },
+  { word:"hypnotic", exams:["공무원"], pron:"힙나틱", pos:"adj", level:"C1", meanings:["최면을 거는","넋을 빼놓는"], ex:[{ s:"The serpent's {{}} eyes seemed to follow every visitor.", f:"hypnotic", ko:"뱀의 최면을 거는 듯한 눈이 모든 방문객을 따라다니는 것 같았다." }] },
+  { word:"have an eye for", exams:["공무원"], pron:"해브 언 아이 포", pos:"phr", level:"B2", meanings:["~을 보는 안목이 있다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -153,7 +158,7 @@ window.VOCAB_H = [
     syn:["crop","what is gathered in","reaping"],
     ex:[{ s:"This year's wheat {{}} was the largest on record.", f:"harvest", ko:"올해 밀 수확은 기록상 최대였다." }] },
 
-  { word:"hatch", pron:"해치", pos:"v", level:"B2", meanings:["부화하다"],
+  { word:"hatch", exams:["공무원"], pron:"해치", pos:"v", level:"B2", meanings:["부화하다"],
     syn:["incubate","emerge","breed"],
     ex:[{ s:"The eggs will {{}} in about three weeks.", f:"hatch", ko:"알은 약 3주 뒤에 부화할 것이다." }] },
 
@@ -352,7 +357,7 @@ window.VOCAB_H = [
   /* 승격 ② — GLOSS '고용하다; 빌리다' 를 글자까지 지켰다.
      charter 는 '빌리다' 쪽, employ 는 '고용하다' 쪽, dismiss 는 반의어.
      양쪽을 다 지키려면 사전 순서를 그대로 쓰면 된다. */
-  { word:"hire", pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
+  { word:"hire", exams:["공무원"], pron:"하이어", pos:"v", level:"B1", meanings:["고용하다","빌리다"],
     syn:["employ","recruit","engage"], ant:["dismiss"],
     ex:[{ s:"The factory plans to {{}} fifty new workers next month.", f:"hire", ko:"그 공장은 다음 달에 새 근로자 50명을 고용할 계획이다." }],
     gov:{ prep:["as","for"], usage:"hire A as B : A를 B로 고용하다" } },
@@ -569,6 +574,7 @@ Object.assign(window.GLOSS, {
   "built-in":"내장된",
   "bustling":"북적이는",
   "cache": "은닉처, 숨겨 둔 것",
+  "cannot help but": "~하지 않을 수 없다",
   "caption":"캡션, 설명문",
   "central office":"중앙 사무소",
   "class system":"계급 제도",
@@ -592,6 +598,7 @@ Object.assign(window.GLOSS, {
   "experiential": "경험에 근거한",
   "fastener":"잠금장치",
   "fling":"세게 던지다",
+  "formerly": "이전에",
   "foyer":"현관 로비",
   "frenetic":"열광적인, 광란의",
   "future":"미래, 앞날",
@@ -611,6 +618,7 @@ Object.assign(window.GLOSS, {
   "hub":"중심지, 허브",
   "human race":"인류(전체)",
   "humbleness":"겸허",
+  "in the past": "과거에",
   "incompletely":"불완전하게",
   "indignity":"모욕",
   "inflexible":"융통성 없는",
@@ -684,6 +692,7 @@ Object.assign(window.GLOSS, {
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
   "tradition":"전통",
+  "traditionally": "전통적으로",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
   "unassuming":"겸손한",

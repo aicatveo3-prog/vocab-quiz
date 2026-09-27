@@ -73,13 +73,13 @@ window.VOCAB_Q = [
   /* 승격 ⑤ — 원본은 '언쟁, 싸움; 다투다, 싸우다' 로 명사와 동사가 섞여 있었다.
      참조 controversy(C)·dispute(D) 가 모두 명사여서 명사로 세우고 사전 표현을
      글자까지 지켰다. */
-  { word:"quarrel", pron:"코럴", pos:"n", level:"B2", meanings:["말다툼","논쟁"],
+  { word:"quarrel", exams:["공무원"], pron:"코럴", pos:"n", level:"B2", meanings:["말다툼","논쟁"],
     syn:["dispute","angry exchange","falling-out"],
     ex:[{ s:"The {{}} lasted all evening.", f:"quarrel", ko:"그 말다툼은 저녁 내내 이어졌다." }] },
 
   /* 승격 ⑥ — 사전은 '4분의 1; 숙소' 로 쌍반점을 쓰고 있었다. 둘 다 명사라
      갈래만 쉼표로 갈랐다. 원본의 '4분의 1의'(형용사) 는 버렸다. 참조는 없다. */
-  { word:"quarter", pron:"쿼터", pos:"n", level:"B1", meanings:["4분의 1","숙소"],
+  { word:"quarter", exams:["공무원"], pron:"쿼터", pos:"n", level:"B1", meanings:["4분의 1","숙소"],
     syn:["one of four parts","fourth part","lodging"],
     ex:[{ s:"Only a {{}} of the class passed.", f:"quarter", ko:"학급의 4분의 1만 통과했다." }] },
 
@@ -97,7 +97,7 @@ window.VOCAB_Q = [
     ex:[{ s:"His {{}} for truth took years.", f:"quest", ko:"진리를 향한 그의 탐구는 여러 해가 걸렸다." }] },
 
   /* 승격 ⑧ — 사전은 '설문지' 한 갈래였고 참조가 없어 '질문서' 를 붙였다. */
-  { word:"questionnaire", pron:"퀘스처네어", pos:"n", level:"B2", meanings:["설문지","질문서"],
+  { word:"questionnaire", exams:["공무원"], pron:"퀘스처네어", pos:"n", level:"B2", meanings:["설문지","질문서"],
     syn:["sheet of questions","survey form","list of queries"],
     ex:[{ s:"Please fill in the {{}}.", f:"questionnaire", ko:"설문지를 작성해 주세요." }] },
 

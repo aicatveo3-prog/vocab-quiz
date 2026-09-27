@@ -481,6 +481,16 @@ window.VOCAB_F = [
   { word:"follow up", exams:["공무원"], pron:"팔로 업", pos:"phr", level:"B2", meanings:["후속 조치를 하다","추가로 확인하다"] },
   { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
   { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
+  { word:"following", exams:["공무원"], pron:"팔로잉", pos:"adj", level:"B1", meanings:["다음의","이후의"], syn:["subsequent","next","ensuing"], ant:["preceding"], ex:[{ s:"The results will be announced the {{}} week.", f:"following", ko:"결과는 그다음 주에 발표될 것이다." }] },
+  { word:"furthermore", exams:["공무원"], pron:"퍼더모어", pos:"adv", level:"B2", meanings:["게다가","더욱이"], syn:["moreover","additionally","besides"], ex:[{ s:"The plan is too costly. {{}}, it would take years to finish.", f:"Furthermore", ko:"그 계획은 비용이 너무 든다. 게다가 끝내는 데 몇 년이 걸릴 것이다." }] },
+  { word:"figure of speech", exams:["공무원"], pron:"피겨 오브 스피치", pos:"phr", level:"C1", meanings:["비유적 표현","수사법"] },
+  { word:"fix", exams:["공무원"], pron:"픽스", pos:"n", level:"B2", meanings:["해결책","수리"], syn:["solution","remedy","cure"], ex:[{ s:"Taking short breaks is one simple {{}} for burnout.", f:"fix", ko:"짧게 쉬는 것은 번아웃에 대한 간단한 해결책 중 하나다." }] },
+  { word:"fall on", exams:["공무원"], pron:"폴 온", pos:"phr", level:"B2", meanings:["~에게 떨어지다","~에 해당하다"] },
+  { word:"frivolous", exams:["공무원"], pron:"프리벌러스", pos:"adj", level:"C1", meanings:["경박한","하찮은"], syn:["trivial","silly","petty"], ant:["serious"], ex:[{ s:"Their talk was far from {{}}; they discussed serious issues.", f:"frivolous", ko:"그들의 대화는 결코 하찮지 않았다. 그들은 심각한 문제를 논의했다." }] },
+  { word:"freelancer", exams:["공무원"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
+  { word:"free up", exams:["공무원"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
+  { word:"fashionable", exams:["공무원"], pron:"패셔너블", pos:"adj", level:"B1", meanings:["유행하는","최신 유행의"], syn:["stylish","trendy","in vogue"], ant:["old-fashioned"], ex:[{ s:"It became {{}} to own a pocket watch.", f:"fashionable", ko:"회중시계를 갖는 것이 유행하게 되었다." }] },
+  { word:"financially", exams:["공무원"], pron:"파이낸셜리", pos:"adv", level:"B2", meanings:["재정적으로","경제적으로"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -794,7 +804,7 @@ window.VOCAB_F = [
     syn:["fabrication","made-up story","invented tale"], ant:["fact"],
     ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
 
-  { word:"fierce", pron:"피어스", pos:"adj", level:"B2", meanings:["사나운","흉포한"],
+  { word:"fierce", exams:["공무원"], pron:"피어스", pos:"adj", level:"B2", meanings:["사나운","흉포한"],
     syn:["ferocious","savage","violent"], ant:["gentle"],
     ex:[{ s:"A {{}} wind tore the canvas from its frame.", f:"fierce", ko:"사나운 바람이 천을 틀에서 찢어 갔다." }] },
 
@@ -822,7 +832,7 @@ window.VOCAB_F = [
     syn:["packing material","padding","stuffing"],
     ex:[{ s:"The gap around the pipe was closed with a soft {{}}.", f:"filler", ko:"관 주위의 틈은 부드러운 충전재로 막았다." }] },
 
-  { word:"filter", pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
+  { word:"filter", exams:["공무원"], pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
     syn:["purify","sift","screen out"],
     ex:[{ s:"Reeds help {{}} the water before it reaches the pond.", f:"filter", ko:"갈대는 물이 못에 이르기 전에 여과하는 것을 돕는다." }] },
 
@@ -869,7 +879,7 @@ window.VOCAB_F = [
      단단한 쪽으로 각각 이 낱말을 유의어로 쓴다. 한 갈래만 남기면 다른 쪽
      문제의 선택지가 틀린 설명이 된다. pos 는 하나만 고를 수 있어 형용사로
      두고(원본도 형용사 뜻이 먼저다) 유의어도 형용사로 모았다. */
-  { word:"firm", pron:"펌", pos:"adj", level:"B2", meanings:["단단한","회사"],
+  { word:"firm", exams:["공무원"], pron:"펌", pos:"adj", level:"B2", meanings:["단단한","회사"],
     syn:["solid","sturdy","unyielding"],
     ex:[{ s:"Press the soil until it feels {{}} around the stem.", f:"firm", ko:"줄기 주위의 흙이 단단해질 때까지 눌러라." }] },
 
@@ -879,7 +889,7 @@ window.VOCAB_F = [
 
   /* financial(4차)은 B1 이다. 뜻이 겹치는 형용사라 레벨을 두 단계 벌려
      4지선다에서 서로의 오답으로 뜨지 않게 했다. */
-  { word:"fiscal", pron:"피스컬", pos:"adj", level:"C1", meanings:["재정의","회계의"],
+  { word:"fiscal", exams:["공무원"], pron:"피스컬", pos:"adj", level:"C1", meanings:["재정의","회계의"],
     syn:["budgetary","monetary","tax-related"],
     ex:[{ s:"The city closed the {{}} year with a small surplus.", f:"fiscal", ko:"그 시는 회계 연도를 약간의 흑자로 마감했다." }] },
 
@@ -983,7 +993,7 @@ window.VOCAB_F = [
     syn:["suppleness","adaptability","pliancy"],
     ex:[{ s:"Daily stretching restored some {{}} to his back.", f:"flexibility", ko:"매일의 스트레칭이 그의 등에 어느 정도 유연성을 되돌려 주었다." }] },
 
-  { word:"flexible", pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
+  { word:"flexible", exams:["공무원"], pron:"플렉서블", pos:"adj", level:"B2", meanings:["잘 휘는","유연한"],
     syn:["pliable","bendable","adaptable"], ant:["rigid"],
     ex:[{ s:"Copper pipe is {{}} enough to shape by hand.", f:"flexible", ko:"구리 관은 손으로 모양을 낼 만큼 잘 휜다." }] },
 
@@ -1046,7 +1056,7 @@ window.VOCAB_F = [
     syn:["downy","soft and light","fleecy"],
     ex:[{ s:"The chicks were still small and {{}}.", f:"fluffy", ko:"병아리들은 아직 작고 솜털이 보송했다." }] },
 
-  { word:"fluid", pron:"플루이드", pos:"n", level:"C1", meanings:["체액","유동체"],
+  { word:"fluid", exams:["공무원"], pron:"플루이드", pos:"n", level:"C1", meanings:["체액","유동체"],
     syn:["liquid","bodily liquid","flowing substance"],
     ex:[{ s:"The doctor drained the {{}} from his swollen knee.", f:"fluid", ko:"의사가 부어오른 그의 무릎에서 체액을 빼냈다." }] },
 
@@ -1084,7 +1094,7 @@ window.VOCAB_F = [
     syn:["leaves","greenery","leafage"],
     ex:[{ s:"Dense {{}} hid the path completely.", f:"foliage", ko:"빽빽한 잎이 길을 완전히 가렸다." }] },
 
-  { word:"folk", pron:"포크", pos:"n", level:"B1", meanings:["사람들","가족"],
+  { word:"folk", exams:["공무원"], pron:"포크", pos:"n", level:"B1", meanings:["사람들","가족"],
     syn:["people","ordinary people","kinfolk"],
     ex:[{ s:"Local {{}} still gather at the old mill.", f:"folk", ko:"그 지역 사람들은 아직 낡은 방앗간에 모인다." }] },
 
@@ -1136,7 +1146,7 @@ window.VOCAB_F = [
     syn:["sense of dread","premonition","misgiving"],
     ex:[{ s:"A strange {{}} kept her awake that night.", f:"foreboding", ko:"이상한 불길한 예감이 그날 밤 그녀를 깨어 있게 했다." }] },
 
-  { word:"forecast", pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
+  { word:"forecast", exams:["공무원"], pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
     syn:["prediction","outlook","projection"],
     ex:[{ s:"The weather {{}} promised a dry weekend.", f:"forecast", ko:"일기 예보는 건조한 주말을 예고했다." }] },
 
@@ -1305,7 +1315,7 @@ window.VOCAB_F = [
     syn:["impostor","swindler","deception"],
     ex:[{ s:"The investment turned out to be an outright {{}}.", f:"fraud", ko:"그 투자는 완전한 사기로 드러났다." }] },
 
-  { word:"free of charge", pron:"프리 오브 차지", pos:"phr", level:"B2", meanings:["무료로"],
+  { word:"free of charge", exams:["공무원"], pron:"프리 오브 차지", pos:"phr", level:"B2", meanings:["무료로"],
     syn:["at no cost","without payment","for nothing"] },
 
   { word:"free will", pron:"프리 윌", pos:"n", level:"C1", meanings:["자유 의지"],
@@ -1320,7 +1330,7 @@ window.VOCAB_F = [
     syn:["cargo","goods","shipment"],
     ex:[{ s:"The night train carries only {{}}, no passengers.", f:"freight", ko:"그 야간 열차는 승객 없이 화물만 실어 나른다." }] },
 
-  { word:"frequency", pron:"프리퀀시", pos:"n", level:"B2", meanings:["빈도","주파수"],
+  { word:"frequency", exams:["공무원"], pron:"프리퀀시", pos:"n", level:"B2", meanings:["빈도","주파수"],
     syn:["rate of occurrence","how often","recurrence"],
     ex:[{ s:"They measured the {{}} of storms over fifty years.", f:"frequency", ko:"그들은 50년에 걸친 폭풍의 빈도를 측정했다." }] },
 
@@ -1328,7 +1338,7 @@ window.VOCAB_F = [
     syn:["repeated","recurring","common"],
     ex:[{ s:"{{}} delays finally drove passengers away.", f:"Frequent", ko:"잦은 지연이 결국 승객들을 떠나게 했다." }] },
 
-  { word:"friction", pron:"프릭션", pos:"n", level:"B2", meanings:["마찰","갈등"],
+  { word:"friction", exams:["공무원"], pron:"프릭션", pos:"n", level:"B2", meanings:["마찰","갈등"],
     syn:["rubbing","resistance","abrasion"],
     ex:[{ s:"A drop of oil removes most of the {{}}.", f:"friction", ko:"기름 한 방울이 마찰의 대부분을 없앤다." }] },
 
@@ -1388,7 +1398,7 @@ window.VOCAB_F = [
      있다. 기존 사전 뜻도 '연료; 부추기다' 로 두 갈래였고 참조하는 표제어가 없어
      자유롭게 정할 수 있었다. 두 갈래 모두 수능에 나오므로 함께 담았다
      (2차 fare·5차 firm 과 같은 처리다). */
-  { word:"fuel", pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
+  { word:"fuel", exams:["공무원"], pron:"퓨얼", pos:"n", level:"B1", meanings:["연료","부채질하다"],
     syn:["gasoline","combustible material","power source"],
     ex:[{ s:"The tractor runs on the same {{}} as the truck.", f:"fuel", ko:"그 트랙터는 트럭과 같은 연료로 움직인다." }] },
 
@@ -1471,7 +1481,7 @@ window.VOCAB_F = [
      words.js 는 세트별 audit 이 없어(D·E 세트만 있다) 걸리지 않던 자리다.
      ["추가의","촉진하다"] 로 두 갈래를 담아 양쪽을 모두 살렸다.
      원본의 '더 나아가'(부사)는 두 참조 어디에도 쓰이지 않아 내려놓았다. */
-  { word:"further", pron:"퍼더", pos:"adj", level:"B1", meanings:["추가의","촉진하다"],
+  { word:"further", exams:["공무원"], pron:"퍼더", pos:"adj", level:"B1", meanings:["추가의","촉진하다"],
     syn:["extra","supplementary","more"],
     ex:[{ s:"The council asked for {{}} details before deciding.", f:"further", ko:"의회는 결정 전에 추가 세부 사항을 요청했다." }] },
 
@@ -1535,6 +1545,7 @@ Object.assign(window.GLOSS, {
   "groundwork": "기초 작업, 토대",
   "gun": "총",
   "impartiality": "공평함, 치우치지 않음",
+  "in vogue": "대유행 중인",
   "installation":"설비, 시설물",
   "inundation": "범람, 쇄도",
   "known": "알려진",
@@ -1544,14 +1555,16 @@ Object.assign(window.GLOSS, {
   "make easier":"더 쉽게 하다",
   "mental power":"정신적 능력",
   "nepotism": "족벌주의, 친족 등용",
+  "next": "다음의, 그다음",
+  "old-fashioned": "구식의",
   "outward appearance":"겉모습, 외관",
   "parable":"우화, 비유담",
   "partiality": "편파, 치우침",
   "pistol": "권총",
   "refreshed": "상쾌한, 기운을 되찾은",
-  "resort to":"~의 수단에 의지하다",
   "sham":"겉치레의, 거짓된",
   "side": "측면, 면",
+  "silly": "어리석은, 우스꽝스러운",
   "system": "체계, 제도",
   "thrift": "절약, 검약",
   "trump up":"날조하다",

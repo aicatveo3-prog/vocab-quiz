@@ -18,6 +18,8 @@
  * 챕터는 1개이고 8단어다. MIN_TAIL(4) 이상이라 독립 챕터로 남는다.
  */
 window.VOCAB_K = [
+  { word:"kinetic", exams:["공무원"], pron:"키네틱", pos:"adj", level:"C1", meanings:["운동의","운동에 의한"], ex:[{ s:"A moving roller coaster has plenty of {{}} energy.", f:"kinetic", ko:"움직이는 롤러코스터는 운동 에너지가 풍부하다." }] },
+  { word:"keep in contact with", exams:["공무원"], pron:"킵 인 칸택트 위드", pos:"phr", level:"B2", meanings:["~와 연락을 유지하다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '열심인; 날카로운' 을 글자까지 지켰다.
@@ -39,7 +41,7 @@ window.VOCAB_K = [
   { word:"keep pace with", pron:"킵 페이스 위드", pos:"phr", level:"B2", meanings:["~와 보조를 맞추다"],
     syn:["move in step with","stay level with","match the speed of"] },
 
-  { word:"keep up with", pron:"킵 업 위드", pos:"phr", level:"B1", meanings:["~에 뒤지지 않다","~에 정통하다"],
+  { word:"keep up with", exams:["공무원"], pron:"킵 업 위드", pos:"phr", level:"B1", meanings:["~에 뒤지지 않다","~에 정통하다"],
     syn:["stay abreast of","follow closely","not fall behind"] },
 
   { word:"kerosene", pron:"케러신", pos:"n", level:"C1", meanings:["등유"],

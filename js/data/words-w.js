@@ -50,6 +50,10 @@ window.VOCAB_W = [
   { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
   { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
+  { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
+  { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
+  { word:"workaholic", exams:["공무원"], pron:"워커홀릭", pos:"n", level:"B2", meanings:["일중독자"], ex:[{ s:"My father is a true {{}} who works even on weekends.", f:"workaholic", ko:"우리 아버지는 주말에도 일하는 진정한 일중독자다." }] },
+  { word:"weed out", exams:["공무원"], pron:"위드 아웃", pos:"phr", level:"B2", meanings:["솎아 내다","가려내다"] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -119,11 +123,11 @@ window.VOCAB_W = [
 
   /* 교재의 괄호('보증(서)') 를 풀어 '보증서' 로 했다. guarantee(보장하다,
      보증) 와 맞물려 배제된다. */
-  { word:"warranty", pron:"워런티", pos:"n", level:"C1", meanings:["보증서","담보"],
+  { word:"warranty", exams:["공무원"], pron:"워런티", pos:"n", level:"C1", meanings:["보증서","담보"],
     syn:["guarantee","written promise to repair","pledge on goods sold"],
     ex:[{ s:"The {{}} runs for two years.", f:"warranty", ko:"그 보증서는 이 년간 유효하다." }] },
 
-  { word:"warrior", pron:"워리어", pos:"n", level:"B2", meanings:["전사"],
+  { word:"warrior", exams:["공무원"], pron:"워리어", pos:"n", level:"B2", meanings:["전사"],
     syn:["fighting man","one trained for battle","soldier of old"],
     ex:[{ s:"The {{}} laid down his shield.", f:"warrior", ko:"그 전사는 방패를 내려놓았다." }] },
 
@@ -146,7 +150,7 @@ window.VOCAB_W = [
     syn:["monitor","body that keeps watch","one that guards against wrong"],
     ex:[{ s:"The group acts as a {{}}.", f:"watchdog", ko:"그 단체는 감시 역할을 한다." }] },
 
-  { word:"waterproof", pron:"워터프루프", pos:"adj", level:"B2", meanings:["방수의"],
+  { word:"waterproof", exams:["공무원"], pron:"워터프루프", pos:"adj", level:"B2", meanings:["방수의"],
     syn:["keeping water out","shedding rain","not letting water through"],
     ex:[{ s:"She wore a {{}} coat.", f:"waterproof", ko:"그녀는 방수 외투를 입었다." }] },
 
@@ -236,13 +240,13 @@ window.VOCAB_W = [
     ex:[{ s:"They still {{}} by hand here.", f:"weave", ko:"이곳에서는 아직 손으로 천을 짠다." }] },
 
   /* 교재의 '수초' 는 드문 쪽이라 버렸다. */
-  { word:"weed", pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
+  { word:"weed", exams:["공무원"], pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
     syn:["wild plant in a garden","plant nobody wants","unwanted growth"],
     ex:[{ s:"She pulled out every {{}}.", f:"weed", ko:"그녀는 잡초를 하나하나 뽑았다." }] },
 
   /* 승격 ⑩ — 사전의 쌍반점만 쉼표로(참조 compare). compare(비교하다) 와
      맞물려 배제된다. 교재의 '무게가 ~이다' 는 자동사 쪽이라 버렸다. */
-  { word:"weigh", pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
+  { word:"weigh", exams:["공무원"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
     syn:["compare","find the weight of","turn over in the mind"],
     ex:[{ s:"Please {{}} the parcel first.", f:"weigh", ko:"그 소포를 먼저 재 주세요." }] },
 
@@ -296,7 +300,7 @@ window.VOCAB_W = [
 
   /* on the other hand(반면에, 한편) 와 맞물려 배제된다. 접속사지만 스키마에
      conj 가 없어 구·표현(phr) 으로 두었다. */
-  { word:"whereas", pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
+  { word:"whereas", exams:["공무원"], pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
     syn:["on the other hand","while by contrast","though the other way"] },
 
   /* 승격 ⑬ — 사전 단일값 유지(참조 moan). 교재 명사 갈래 버림. 아래 whine 과
@@ -557,7 +561,7 @@ window.VOCAB_W = [
      뜻이면 qualified(자격 있는) 와 조사 하나만 다르다. '훌륭한' 을 앞세우니
      admirable·magnificent·respectable·splendid·superb 다섯과 맞물리고, 둘째로
      남긴 '자격이 있는' 이 eligible(자격이 있는, 적격의) 와도 맞물린다. */
-  { word:"worthy", pron:"워디", pos:"adj", level:"B2", meanings:["훌륭한","자격이 있는"],
+  { word:"worthy", exams:["공무원"], pron:"워디", pos:"adj", level:"B2", meanings:["훌륭한","자격이 있는"],
     syn:["of real merit","deserving of it","fit to receive"],
     ex:[{ s:"It was a {{}} cause.", f:"worthy", ko:"그것은 훌륭한 명분이었다." }] },
 

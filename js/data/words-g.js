@@ -53,6 +53,10 @@ window.VOCAB_G = [
   { word:"growth", exams:["공무원"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
   { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
+  { word:"grateful", exams:["공무원"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
+  { word:"gossip", exams:["공무원"], pron:"가십", pos:"v", level:"B2", meanings:["험담하다","잡담하다"], ex:[{ s:"They love to {{}} about their neighbors.", f:"gossip", ko:"그들은 이웃에 대해 험담하기를 좋아한다." }] },
+  { word:"give rise to", exams:["공무원"], pron:"기브 라이즈 투", pos:"phr", level:"B2", meanings:["~을 일으키다","~의 원인이 되다"], syn:["cause","bring about","lead to"] },
+  { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -196,13 +200,13 @@ window.VOCAB_G = [
   { word:"genetics", pron:"저네틱스", pos:"n", level:"B2", meanings:["유전학"],
     ex:[{ s:"She studies {{}} at a government research institute.", f:"genetics", ko:"그녀는 정부 연구소에서 유전학을 연구한다." }] },
 
-  { word:"genre", pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
+  { word:"genre", exams:["공무원"], pron:"장르", pos:"n", level:"B2", meanings:["장르","유형"],
     syn:["category","style","classification"],
     ex:[{ s:"Science fiction has long been his favourite {{}}.", f:"genre", ko:"공상과학은 오랫동안 그가 가장 좋아하는 장르였다." }] },
 
   /* 승격 ① — GLOSS '진짜의, 진품의' 를 글자까지 지켰다. authentic 의 유의어이고
      counterfeit·deceptive·fake 세 문제의 반의어로도 쓰인다. */
-  { word:"genuine", pron:"제뉴인", pos:"adj", level:"B2", meanings:["진짜의","진품의"],
+  { word:"genuine", exams:["공무원"], pron:"제뉴인", pos:"adj", level:"B2", meanings:["진짜의","진품의"],
     syn:["authentic","real","bona fide"], ant:["fake"],
     ex:[{ s:"Experts confirmed that the painting was {{}}.", f:"genuine", ko:"전문가들은 그 그림이 진품임을 확인했다." }] },
 
@@ -341,7 +345,7 @@ window.VOCAB_G = [
     syn:["sparkle","shimmer","twinkle"],
     ex:[{ s:"Frost made the whole field {{}} in the morning sun.", f:"glitter", ko:"서리가 아침 햇살에 들판 전체를 반짝이게 했다." }] },
 
-  { word:"globalization", pron:"글로벌라이제이션", pos:"n", level:"B2", meanings:["세계화"],
+  { word:"globalization", exams:["공무원"], pron:"글로벌라이제이션", pos:"n", level:"B2", meanings:["세계화"],
     ex:[{ s:"{{}} has reshaped how small firms find customers.", f:"Globalization", ko:"세계화는 작은 기업이 고객을 찾는 방식을 바꿔 놓았다." }] },
 
   /* 승격 ① — GLOSS '우울한, 침울한' 을 글자까지 지켰다. depressed·dismal·
@@ -445,7 +449,7 @@ window.VOCAB_G = [
     ex:[{ s:"Recovery was slow but {{}} over several months.", f:"gradual", ko:"회복은 느렸지만 여러 달에 걸쳐 점진적이었다." }] },
 
   /* gradual 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 오지 않는다. */
-  { word:"graduate", pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
+  { word:"graduate", exams:["공무원"], pron:"그래주에이트", pos:"v", level:"B1", meanings:["졸업하다"],
     syn:["finish school","complete studies","earn a degree"],
     ex:[{ s:"She hopes to {{}} with honours next spring.", f:"graduate", ko:"그녀는 내년 봄에 우등으로 졸업하기를 바란다." }] },
 
@@ -476,7 +480,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '잡다; 이해하다' 를 그대로 지켰다. comprehend 의 유의어로
      쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
      원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
-  { word:"grasp", pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+  { word:"grasp", exams:["공무원"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
     gov:{ prep:["at","for"], pat:"grasp {{}} any excuse", usage:"grasp at ~ : ~을 붙잡으려 하다" },
     syn:["comprehend","apprehend","fathom"],
     ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },
@@ -505,7 +509,7 @@ window.VOCAB_G = [
     syn:["gravity","attraction","pull"],
     ex:[{ s:"Newton explained how {{}} keeps the planets in orbit.", f:"gravitation", ko:"뉴턴은 인력이 어떻게 행성을 궤도에 붙잡아 두는지 설명했다." }] },
 
-  { word:"gravity", pron:"그래버티", pos:"n", level:"B2", meanings:["중력"],
+  { word:"gravity", exams:["공무원"], pron:"그래버티", pos:"n", level:"B2", meanings:["중력"],
     syn:["gravitation","weight force","downward pull"],
     ex:[{ s:"Objects fall at the same rate under {{}} in a vacuum.", f:"gravity", ko:"진공에서는 물체가 중력을 받아 같은 속도로 떨어진다." }] },
 
@@ -756,6 +760,7 @@ Object.assign(window.GLOSS, {
   "imposing":"위풍당당한",
   "in view of":"~에 비추어",
   "incremental":"조금씩 늘어나는",
+  "indebted": "신세를 진, 빚진",
   "indebtedness":"은혜를 입음",
   "ingratitude":"배은망덕",
   "inherited":"물려받은",

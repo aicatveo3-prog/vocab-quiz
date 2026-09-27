@@ -76,6 +76,13 @@ window.VOCAB_M = [
   { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
   { word:"markedly", exams:["공무원"], pron:"마키들리", pos:"adv", level:"C1", meanings:["현저히","눈에 띄게"], syn:["noticeably","considerably","significantly"], ant:["marginally","slightly"], ex:[{ s:"The two reports differ so {{}} that they seem to describe different events.", f:"markedly", ko:"두 보고서는 너무나 현저히 달라서 서로 다른 사건을 다룬 것처럼 보인다." }] },
   { word:"municipality", exams:["공무원"], pron:"뮤니서팰러티", pos:"n", level:"C1", meanings:["지방 자치 단체","시 당국"], ex:[{ s:"Each {{}} runs its own recycling program.", f:"municipality", ko:"지방 자치 단체마다 자체 재활용 프로그램을 운영한다." }] },
+  { word:"manageable", exams:["공무원"], pron:"매니저블", pos:"adj", level:"B2", meanings:["감당할 수 있는","다루기 쉬운"], syn:["controllable","feasible","tolerable"], ant:["unmanageable"], ex:[{ s:"Break the big task into {{}} steps.", f:"manageable", ko:"큰 일을 감당할 만한 단계로 나누어라." }] },
+  { word:"misperception", exams:["공무원"], pron:"미스퍼셉션", pos:"n", level:"C1", meanings:["오해","잘못된 인식"], syn:["misconception","misunderstanding","fallacy","misinterpretation"], ex:[{ s:"A common {{}} is that roller coasters lose energy.", f:"misperception", ko:"흔한 오해는 롤러코스터가 에너지를 잃는다는 것이다." }] },
+  { word:"mistakenly", exams:["공무원"], pron:"미스테이컨리", pos:"adv", level:"B2", meanings:["잘못하여","실수로"], syn:["wrongly","erroneously","incorrectly"], ant:["correctly"], ex:[{ s:"Many riders {{}} believe the cars run out of energy.", f:"mistakenly", ko:"많은 탑승객은 차량의 에너지가 바닥난다고 잘못 믿는다." }] },
+  { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
+  { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
+  { word:"make a case for", exams:["공무원"], pron:"메이크 어 케이스 포", pos:"phr", level:"C1", meanings:["~을 옹호하는 주장을 펴다","~을 강력히 주장하다"] },
+  { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -156,7 +163,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '보충하다, 만회하다' 를 글자까지 지켰다. 참조도 PRON 도 없다.
      원본 '보상하다' 를 쓰면 C 세트 compensate 와 첫 뜻이 같아지는데,
      사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"make up for", pron:"메이크 업 포", pos:"phr", level:"B2", meanings:["보충하다","만회하다"],
+  { word:"make up for", exams:["공무원"], pron:"메이크 업 포", pos:"phr", level:"B2", meanings:["보충하다","만회하다"],
     syn:["compensate for","offset","atone for"] },
 
   /* 승격 ① — GLOSS '~에 길을 내주다' 와 같은 갈래다. give way to(syn) 가 참조한다. */
@@ -248,7 +255,7 @@ window.VOCAB_M = [
      '태도' 쪽이라 둘째 자리에 지켰다. 첫 자리는 원본의 '방식' 으로 했다 —
      사전의 '방법' 을 그대로 쓰면 뒤 챕터의 method('방법, 수법')와 첫 뜻이 겹친다.
      manned 와 앞 네 글자가 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"manner", pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
+  { word:"manner", exams:["공무원"], pron:"매너", pos:"n", level:"B1", meanings:["방식","태도"],
     syn:["conduct","demeanor","way"],
     ex:[{ s:"She answered in a very polite {{}}.", f:"manner", ko:"그녀는 아주 공손한 방식으로 대답했다." }] },
 
@@ -486,7 +493,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기계적인, 자동의' 를 글자까지 지켰다. automatic(syn) 이
      참조하므로 원본의 '기계의' 대신 사전 쪽을 남겼다. */
-  { word:"mechanical", pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
+  { word:"mechanical", exams:["공무원"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
     syn:["automatic","machine-driven","robotic"], ant:["manual"],
     ex:[{ s:"The failure turned out to be purely {{}}.", f:"mechanical", ko:"그 고장은 순전히 기계적인 것으로 드러났다." }] },
 
@@ -738,7 +745,7 @@ window.VOCAB_M = [
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
-  { word:"mindful", pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
+  { word:"mindful", exams:["공무원"], pron:"마인드풀", pos:"adj", level:"C1", meanings:["의식하는","염두에 두는"],
     syn:["aware","heedful","attentive"], ant:["oblivious"],
     ex:[{ s:"Be {{}} of the time when you answer.", f:"mindful", ko:"대답할 때 시간을 의식하세요." }] },
 
@@ -767,7 +774,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '최소화하다, 축소하다' 를 글자까지 지켰다. downplay(syn) 가
      참조하므로 원본('최소화하다' 한 갈래) 대신 사전 쪽 두 갈래를 그대로 두었다.
      minimal 과 어근이 같지만 품사가 달라(adj/v) 같은 보드에 안 온다. */
-  { word:"minimize", pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
+  { word:"minimize", exams:["공무원"], pron:"미너마이즈", pos:"v", level:"B2", meanings:["최소화하다","축소하다"],
     syn:["downplay","reduce","play down"], ant:["maximize"],
     ex:[{ s:"New rules aim to {{}} food waste in canteens.", f:"minimize", ko:"새 규정은 급식소의 음식물 쓰레기를 최소화하는 것을 목표로 한다." }] },
 
@@ -780,7 +787,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '사소한, 작은' 을 글자까지 지켰다. 참조가 3곳
      (cardinal(ant)·crucial(ant)·incidental)이고 마지막은 I 세트 표제어다.
      원본의 '미성년'(명사)은 pos 가 adj 라 담지 못했다. */
-  { word:"minor", pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
+  { word:"minor", exams:["공무원"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
     syn:["incidental","slight","trivial"], ant:["crucial"],
     ex:[{ s:"It turned out to be only a {{}} setback.", f:"minor", ko:"그것은 사소한 차질에 불과한 것으로 드러났다." }] },
 
@@ -1021,7 +1028,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기세, 탄력' 을 글자까지 지켰다. I 세트 impetus 가 참조하므로
      원본의 '가속도' 대신 사전 쪽 '기세' 를 남겼다. */
-  { word:"momentum", pron:"모멘텀", pos:"n", level:"B2", meanings:["기세","탄력"],
+  { word:"momentum", exams:["공무원"], pron:"모멘텀", pos:"n", level:"B2", meanings:["기세","탄력"],
     syn:["impetus","drive","thrust"],
     ex:[{ s:"The campaign slowly gathered {{}}.", f:"momentum", ko:"그 운동은 천천히 기세를 모았다." }] },
 
@@ -1038,7 +1045,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '통화의, 금전상의' 를 글자까지 지켰다.
      financial(syn)·fiscal(syn) 두 문제가 참조하므로 원본의 '화폐의, 재정의' 대신
      사전 쪽을 남겼다 — 같은 갈래다. */
-  { word:"monetary", pron:"머너테리", pos:"adj", level:"B2", meanings:["통화의","금전상의"],
+  { word:"monetary", exams:["공무원"], pron:"머너테리", pos:"adj", level:"B2", meanings:["통화의","금전상의"],
     syn:["financial","fiscal","pecuniary"],
     ex:[{ s:"The bank tightened {{}} policy in March.", f:"monetary", ko:"그 은행은 3월에 통화 정책을 조였다." }] },
 
@@ -1138,13 +1145,13 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '동기를 부여하다' 를 첫 자리에 지켰다.
      encourage(syn)·inspire(syn) 두 문제가 참조하고 뒤는 I 세트 표제어다.
      원본의 '유도하다' 를 둘째 자리에 붙였다. */
-  { word:"motivate", pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
+  { word:"motivate", exams:["공무원"], pron:"모터베이트", pos:"v", level:"B2", meanings:["동기를 부여하다","유도하다"],
     syn:["encourage","inspire","spur on"],
     ex:[{ s:"Good teachers {{}} without applying pressure.", f:"motivate", ko:"좋은 교사는 압박을 주지 않고 동기를 부여한다." }] },
 
   /* 승격 ① — GLOSS '동기 부여' 를 첫 자리에 지켰다. I 세트 incentive 가 참조한다.
      원본의 '자극' 을 둘째 자리에 붙였다. */
-  { word:"motivation", pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
+  { word:"motivation", exams:["공무원"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
     syn:["incentive","drive","impetus"],
     ex:[{ s:"Her main {{}} was curiosity, not money.", f:"motivation", ko:"그녀의 주된 동기 부여는 돈이 아니라 호기심이었다." }] },
 
@@ -1207,7 +1214,7 @@ window.VOCAB_M = [
     syn:["interracial","mixed-race","ethnically diverse"],
     ex:[{ s:"The team is proudly {{}}.", f:"multiracial", ko:"그 팀은 자랑스럽게 여러 인종으로 이뤄져 있다." }] },
 
-  { word:"multitask", pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
+  { word:"multitask", exams:["공무원"], pron:"멀티태스크", pos:"v", level:"C1", meanings:["동시에 여러 일을 하다"],
     syn:["juggle tasks","work in parallel","do several things at once"],
     ex:[{ s:"Few people truly {{}} well under pressure.", f:"multitask", ko:"압박 속에서 동시에 여러 일을 정말 잘하는 사람은 드물다." }] },
 
@@ -1351,7 +1358,9 @@ Object.assign(window.GLOSS, {
   "conjurer": "요술쟁이",
   "contemplation": "깊이 헤아림",
   "contrivance": "고안된 장치",
+  "controllable": "통제할 수 있는",
   "controlling": "지배하는, 통제하는",
+  "correctly": "올바르게",
   "couple": "짝을 이루다",
   "crewed": "승무원이 탄",
   "cross-border": "국경을 넘는",
@@ -1375,6 +1384,7 @@ Object.assign(window.GLOSS, {
   "enigmatic": "속을 알기 어려운",
   "enrage": "분노하게 하다",
   "eons": "영겁, 무한히 긴 세월",
+  "erroneously": "틀리게",
   "error": "잘못된 것",
   "ethnically diverse": "민족 구성이 다양한",
   "evangelist": "복음 전도자",
@@ -1388,7 +1398,6 @@ Object.assign(window.GLOSS, {
   "female owner": "여자 소유주",
   "fighting art": "싸움 기술",
   "fighting spirit": "싸울 기백",
-  "figure of speech": "비유적 표현",
   "flesh": "살",
   "floor swab": "바닥 닦는 걸레",
   "fluidity": "흐르는 성질",
@@ -1438,6 +1447,7 @@ Object.assign(window.GLOSS, {
   "improper use": "옳지 않은 사용",
   "improvised": "즉석에서 만든",
   "in-law": "혼인으로 맺어진 친척",
+  "incorrectly": "부정확하게",
   "inexplicable": "설명이 안 되는",
   "infuriate": "격노하게 하다",
   "innermost part": "가장 깊은 속",
@@ -1453,7 +1463,6 @@ Object.assign(window.GLOSS, {
   "large gathering": "많이 모인 무리",
   "liquid metal": "액체 금속",
   "local-government": "지방 정부의",
-  "lose track of": "어디 있는지 놓치다",
   "machine-driven": "기계로 움직이는",
   "magnetized": "자기를 띤",
   "magnum opus": "대표 역작",
@@ -1560,7 +1569,6 @@ Object.assign(window.GLOSS, {
   "shape in a mold": "틀에 넣어 모양을 만들다",
   "shooting star": "별똥별",
   "sidelined": "뒷전으로 밀린",
-  "signify": "나타내다",
   "silent": "소리를 내지 않는",
   "sinew": "힘줄",
   "single marriage": "한 사람과의 혼인",
@@ -1590,7 +1598,6 @@ Object.assign(window.GLOSS, {
   "structural": "구조상의",
   "sulky": "뾰로통한",
   "sullen": "못마땅해 말이 없는",
-  "systematic": "체계적인",
   "take the edge off": "날카로움을 덜다",
   "take wrongly": "잘못 받아들이다",
   "taunting": "놀려 대는",
@@ -1643,5 +1650,6 @@ Object.assign(window.GLOSS, {
   "worth": "가치, 값어치",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
-  "wrongdoing": "비행, 부정"
+  "wrongdoing": "비행, 부정",
+  "wrongly": "그릇되게, 잘못"
 });

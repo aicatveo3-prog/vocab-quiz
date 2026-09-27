@@ -111,6 +111,11 @@ window.VOCAB_O = [
   { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
   { word:"obviously", exams:["공무원"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
   { word:"otherwise", exams:["공무원"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
+  { word:"overwork", exams:["공무원"], pron:"오버워크", pos:"v", level:"B2", meanings:["과로하다","혹사하다"], ex:[{ s:"Doctors warn that people who {{}} risk burnout.", f:"overwork", ko:"의사들은 과로하는 사람들이 번아웃 위험에 처한다고 경고한다." }] },
+  { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
+  { word:"on purpose", exams:["공무원"], pron:"온 퍼퍼스", pos:"phr", level:"B1", meanings:["일부러","고의로"], syn:["deliberately","intentionally","purposely"], ant:["by chance"] },
+  { word:"on the rise", exams:["공무원"], pron:"온 더 라이즈", pos:"phr", level:"B2", meanings:["증가하고 있는","상승 중인"], syn:["increasing","growing","mounting"] },
+  { word:"object to", exams:["공무원"], pron:"어브젝트 투", pos:"phr", level:"B2", meanings:["~에 반대하다","~에 이의를 제기하다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -258,7 +263,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑰ — 사전 표현 '분명한, 명백한' 을 글자까지 지켰다(참조 3곳).
      apparent 와 첫 뜻이 겹치지만 둘은 서로 유의어로 등록된 관계다. */
-  { word:"obvious", pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
+  { word:"obvious", exams:["공무원"], pron:"압비어스", pos:"adj", level:"B1", meanings:["분명한","명백한"],
     syn:["apparent","plain to see","unmistakable"],
     ex:[{ s:"The answer was {{}} once she explained it.", f:"obvious", ko:"그녀가 설명하자 답은 분명했다." }] },
 
@@ -422,7 +427,7 @@ window.VOCAB_O = [
      가리키지 않고 one's 를 쓴다 — be beyond one's control · clear one's throat ·
      for one's sake · lose one's temper 가 그렇다. 관례에 맞춰 바꿨다.
      25자로 기존 최장(23자) 을 넘지만 match-label-audit 이 통과했다. */
-  { word:"on the tip of one's tongue", pron:"온 더 팁 오브 원스 텅", pos:"phr", level:"C1",
+  { word:"on the tip of one's tongue", exams:["공무원"], pron:"온 더 팁 오브 원스 텅", pos:"phr", level:"C1",
     meanings:["생각이 날 듯 말 듯하다"],
     syn:["almost recalled","nearly remembered","just out of reach"] },
 
@@ -504,7 +509,7 @@ window.VOCAB_O = [
 
   /* 승격 41 — 사전 표현 '상대, 적수' 를 글자까지 지켰다(참조 4곳).
      원본의 '상대방, 적수' 대신 사전 쪽을 남겼다. */
-  { word:"opponent", pron:"어포넌트", pos:"n", level:"B2", meanings:["상대","적수"],
+  { word:"opponent", exams:["공무원"], pron:"어포넌트", pos:"n", level:"B2", meanings:["상대","적수"],
     syn:["adversary","enemy","one who fights against"], ant:["ally"],
     ex:[{ s:"He shook hands with his {{}} after the game.", f:"opponent", ko:"그는 경기 뒤 상대와 악수했다." }] },
 
@@ -548,7 +553,7 @@ window.VOCAB_O = [
     syn:["ideal","best suited","most favorable"],
     ex:[{ s:"Store the film at the {{}} temperature.", f:"optimal", ko:"그 필름을 최적의 온도에 보관하세요." }] },
 
-  { word:"optimism", pron:"압터미즘", pos:"n", level:"B2", meanings:["낙관론","낙천주의"],
+  { word:"optimism", exams:["공무원"], pron:"압터미즘", pos:"n", level:"B2", meanings:["낙관론","낙천주의"],
     syn:["hopeful outlook","bright view","positive thinking"], ant:["pessimism"],
     ex:[{ s:"His {{}} kept the team going.", f:"optimism", ko:"그의 낙관론이 팀을 버티게 했다." }] },
 
@@ -945,7 +950,7 @@ window.VOCAB_O = [
     syn:["coincide","cover part of each other","run into each other"],
     ex:[{ s:"The two shifts {{}} by one hour.", f:"overlap", ko:"두 근무조는 한 시간 겹친다." }] },
 
-  { word:"overload", pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
+  { word:"overload", exams:["공무원"], pron:"오버로드", pos:"v", level:"B2", meanings:["지나치게 많이 싣다"],
     syn:["load beyond capacity","pile on too much","burden past the limit"],
     ex:[{ s:"Do not {{}} the small trailer.", f:"overload", ko:"그 작은 트레일러에 지나치게 많이 싣지 마라." }] },
 
@@ -1023,7 +1028,7 @@ window.VOCAB_O = [
     syn:["daunting","too strong to resist","crushing in scale"],
     ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
 
-  { word:"owe", pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+  { word:"owe", exams:["공무원"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
     syn:["be in debt for","have to pay back","be indebted to"],
     ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];
@@ -1173,6 +1178,7 @@ Object.assign(window.GLOSS, {
   "grounded on": "~에 발판을 둔",
   "grove of fruit trees": "과일나무 숲",
   "grow too big for": "~에 비해 너무 커지다",
+  "growing": "커지는, 늘어나는",
   "happening": "일이 벌어짐",
   "happening now": "지금 벌어지는",
   "hard to make out": "알아보기 어려운",
@@ -1200,6 +1206,7 @@ Object.assign(window.GLOSS, {
   "in the world": "세상에",
   "in the wrong spot": "엉뚱한 자리에 있는",
   "in view of the crowd": "사람들 눈에 보이는",
+  "increasing": "증가하는",
   "indignation": "분개",
   "infrequent": "드문드문한",
   "initial briefing": "첫 설명 자리",
@@ -1249,6 +1256,7 @@ Object.assign(window.GLOSS, {
   "moderation": "절제, 적당함",
   "moment": "그 순간",
   "most favorable": "가장 유리한",
+  "mounting": "점점 쌓여 가는",
   "move into": "들어가 자리 잡다",
   "naturally grown": "자연스레 기른",
   "nearly remembered": "떠오를 듯한",
@@ -1264,7 +1272,6 @@ Object.assign(window.GLOSS, {
   "not where it belongs": "있어야 할 곳이 아닌",
   "not working": "돌아가지 않는",
   "now-and-then": "이따금 있는",
-  "object to": "~에 반대하다",
   "of all things": "하필이면",
   "of the east": "동방에 속한",
   "off the beat": "박자가 어긋난",

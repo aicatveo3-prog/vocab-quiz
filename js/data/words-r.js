@@ -51,6 +51,14 @@ window.VOCAB_R = [
   { word:"reduction", exams:["공무원"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
   { word:"repetition", exams:["공무원"], pron:"레퍼티션", pos:"n", level:"B2", meanings:["반복","되풀이"], syn:["recurrence","duplication","reiteration"], ex:[{ s:"Children learn new words through {{}}, hearing them again and again.", f:"repetition", ko:"아이들은 새 단어를 몇 번이고 들으며 반복을 통해 익힌다." }] },
   { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
+  { word:"rescue", exams:["공무원"], pron:"레스큐", pos:"v", level:"B1", meanings:["구조하다","구조"], syn:["save","salvage","liberate"], ex:[{ s:"Firefighters managed to {{}} the family from the flames.", f:"rescue", ko:"소방관들은 불길 속에서 그 가족을 가까스로 구조했다." }] },
+  { word:"resort to", exams:["공무원"], pron:"리조트 투", pos:"phr", level:"C1", meanings:["~에 의지하다","~의 수단에 호소하다"], syn:["fall back on","turn to","rely on"] },
+  { word:"recognizable", exams:["공무원"], pron:"레커그나이저블", pos:"adj", level:"B2", meanings:["알아볼 수 있는","쉽게 식별되는"], syn:["identifiable","distinguishable","familiar"], ant:["unrecognizable"], ex:[{ s:"After twenty years, the town was hardly {{}} to him.", f:"recognizable", ko:"20년이 지나자 그 마을은 그가 거의 알아볼 수 없을 정도였다." }] },
+  { word:"resign", exams:["공무원"], pron:"리자인", pos:"v", level:"B2", meanings:["사임하다","체념하다"], syn:["step down","quit","stand down"], ex:[{ s:"Facing heavy criticism, the minister decided to {{}}.", f:"resign", ko:"거센 비판에 직면하자 장관은 사임하기로 했다." }] },
+  { word:"roll up one's sleeves", exams:["공무원"], pron:"롤 업 원스 슬리브즈", pos:"phr", level:"C1", meanings:["소매를 걷어붙이다","본격적으로 일에 착수하다"] },
+  { word:"restriction", exams:["공무원"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
+  { word:"remotely", exams:["공무원"], pron:"리모틀리", pos:"adv", level:"B2", meanings:["원격으로","멀리서"], ex:[{ s:"Engineers can now control the machine {{}} from another city.", f:"remotely", ko:"이제 기술자들은 다른 도시에서 그 기계를 원격으로 조종할 수 있다." }] },
+  { word:"reef", exams:["공무원"], pron:"리프", pos:"n", level:"B2", meanings:["암초","산호초"], ex:[{ s:"Divers came to explore the famous coral {{}}.", f:"reef", ko:"다이버들이 그 유명한 산호초를 탐험하러 왔다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -108,7 +116,7 @@ window.VOCAB_R = [
      사전의 두 갈래를 쓰고 쌍반점만 쉼표로 갈랐다 — 참조가 다섯 곳(boost·breed·
      elevate·foster·lift) 이라 이 챕터에서 화면이 가장 많이 바뀌는 자리다.
      '기르다' 는 foster 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"raise", pron:"레이즈", pos:"v", level:"B1", meanings:["올리다","기르다"],
+  { word:"raise", exams:["공무원"], pron:"레이즈", pos:"v", level:"B1", meanings:["올리다","기르다"],
     syn:["lift","boost","bring up a child"],
     ex:[{ s:"They will {{}} the price next month.", f:"raise", ko:"그들은 다음 달에 가격을 올릴 것이다." }] },
 
@@ -425,7 +433,7 @@ window.VOCAB_R = [
   /* 승격 ㉟ — 사전 글자 유지. 참조가 일곱 곳(amplify·boost 반의어, condense·
      curtail·cut back on·lower·minimize) 이라 R 세트에서 가장 조심한 자리다.
      원본의 '낮추다' 는 lower 의 첫 뜻이라 붙이지 않았다. */
-  { word:"reduce", pron:"리두스", pos:"v", level:"B1", meanings:["줄이다","감소시키다"],
+  { word:"reduce", exams:["공무원"], pron:"리두스", pos:"v", level:"B1", meanings:["줄이다","감소시키다"],
     syn:["curtail","lower","bring down in size"],
     ex:[{ s:"They will {{}} the staff.", f:"reduce", ko:"그들은 직원을 줄일 것이다." }] },
 
@@ -504,7 +512,7 @@ window.VOCAB_R = [
     syn:["place of safety","shelter from danger","spot out of harm's way"],
     ex:[{ s:"They sought {{}} in the church.", f:"refuge", ko:"그들은 교회에서 피난처를 찾았다." }] },
 
-  { word:"refugee", pron:"레퓨지이", pos:"n", level:"B2", meanings:["피난민","망명자"],
+  { word:"refugee", exams:["공무원"], pron:"레퓨지이", pos:"n", level:"B2", meanings:["피난민","망명자"],
     syn:["one who flees danger","person seeking shelter","exile from home"],
     ex:[{ s:"The {{}} crossed the border at night.", f:"refugee", ko:"그 피난민은 밤에 국경을 넘었다." }] },
 
@@ -576,7 +584,7 @@ window.VOCAB_R = [
 
   /* 둘째 갈래를 '유감스러워하다' 로 다듬었다 — '유감으로 여기다' 로 두면 바로 위
      regard(여기다) 와 글자가 겹친다. */
-  { word:"regret", pron:"리그렛", pos:"v", level:"B1", meanings:["후회하다","유감스러워하다"],
+  { word:"regret", exams:["공무원"], pron:"리그렛", pos:"v", level:"B1", meanings:["후회하다","유감스러워하다"],
     syn:["be sorry for","wish one had not","rue a choice"],
     ex:[{ s:"You will {{}} that later.", f:"regret", ko:"너는 나중에 그것을 후회할 것이다." }] },
 
@@ -723,7 +731,7 @@ window.VOCAB_R = [
 
   /* 승격 63 — 사전의 쌍반점만 쉼표로 갈랐다(alleviate, A). 원본의 괄호
      "(불쾌함 등을)" 를 걷었다. */
-  { word:"relieve", pron:"릴리브", pos:"v", level:"B2", meanings:["완화하다","덜어 주다"],
+  { word:"relieve", exams:["공무원"], pron:"릴리브", pos:"v", level:"B2", meanings:["완화하다","덜어 주다"],
     syn:["alleviate","ease a pain","take a load off"],
     ex:[{ s:"This will {{}} the ache.", f:"relieve", ko:"이것이 그 통증을 완화할 것이다." }] },
 
@@ -789,7 +797,7 @@ window.VOCAB_R = [
     syn:["bring to mind","put in mind of","jog the memory"],
     ex:[{ s:"Please {{}} me later.", f:"remind", ko:"나중에 저에게 상기시켜 주세요." }] },
 
-  { word:"reminder", pron:"리마인더", pos:"n", level:"B2", meanings:["상기시키는 것","일깨움"],
+  { word:"reminder", exams:["공무원"], pron:"리마인더", pos:"n", level:"B2", meanings:["상기시키는 것","일깨움"],
     syn:["something that prompts memory","note to jog one","nudge to recall"],
     ex:[{ s:"The scar is a {{}} of the fall.", f:"reminder", ko:"그 흉은 넘어진 일을 상기시키는 것이다." }] },
 
@@ -838,12 +846,12 @@ window.VOCAB_R = [
     ex:[{ s:"They plan to {{}} the old school.", f:"renovate", ko:"그들은 그 낡은 학교를 보수할 계획이다." }] },
 
   /* reputation(평판, 명성 · 챕터 9) 과 '명성' 으로 맞물려 서로 오답에서 빠진다. */
-  { word:"renown", pron:"리나운", pos:"n", level:"C1", meanings:["명성"],
+  { word:"renown", exams:["공무원"], pron:"리나운", pos:"n", level:"C1", meanings:["명성"],
     syn:["wide fame","name known far","great repute"],
     ex:[{ s:"The city has {{}} for its bridges.", f:"renown", ko:"그 도시는 다리로 명성이 있다." }] },
 
   /* 승격 74 — 사전 글자 유지(celebrated·distinguished·legendary 세 곳). */
-  { word:"renowned", pron:"리나운드", pos:"adj", level:"B2", meanings:["유명한","명성 높은"],
+  { word:"renowned", exams:["공무원"], pron:"리나운드", pos:"adj", level:"B2", meanings:["유명한","명성 높은"],
     syn:["celebrated","distinguished","widely known"],
     ex:[{ s:"She is a {{}} pianist.", f:"renowned", ko:"그녀는 유명한 피아노 연주자다." }] },
 
@@ -870,7 +878,7 @@ window.VOCAB_R = [
     syn:["mend","put right again","set in working order"], ant:["break"],
     ex:[{ s:"He can {{}} the roof himself.", f:"repair", ko:"그는 그 지붕을 혼자 고칠 수 있다." }] },
 
-  { word:"repeatedly", pron:"리피티들리", pos:"adv", level:"B1", meanings:["여러 차례","되풀이하여"],
+  { word:"repeatedly", exams:["공무원"], pron:"리피티들리", pos:"adv", level:"B1", meanings:["여러 차례","되풀이하여"],
     syn:["again and again","time after time","over and over"],
     ex:[{ s:"She knocked {{}} on the door.", f:"repeatedly", ko:"그녀는 문을 여러 차례 두드렸다." }] },
 
@@ -1087,7 +1095,7 @@ window.VOCAB_R = [
 
   /* 승격 99 — 사전 단일값 유지(acclimate·cave in 반의어, counteract·defy — 네 곳).
      원본의 '견디다' 는 bear(B) 의 첫 뜻이라 붙이지 않았다. */
-  { word:"resist", pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
+  { word:"resist", exams:["공무원"], pron:"리지스트", pos:"v", level:"B1", meanings:["저항하다"],
     syn:["defy","stand against","hold out against"],
     ex:[{ s:"They chose to {{}} the order.", f:"resist", ko:"그들은 그 명령에 저항하기로 했다." }] },
 
@@ -1229,7 +1237,7 @@ window.VOCAB_R = [
     syn:["come out of","arise because of","follow from a cause"] },
 
   /* 승격 115 — 사전 단일값 유지. 원본의 '결국 ~로 끝나다' 는 같은 자리다. */
-  { word:"result in", pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
+  { word:"result in", exams:["공무원"], pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
     syn:["lead to","end up as","bring on as an outcome"] },
 
   { word:"resultant", pron:"리절턴트", pos:"adj", level:"C2", meanings:["그 결과로 생긴"],
@@ -1273,7 +1281,7 @@ window.VOCAB_R = [
     ex:[{ s:"He will {{}} next spring.", f:"retire", ko:"그는 다음 봄에 퇴직할 것이다." }] },
 
   /* 승격 117 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"retirement", pron:"리타이어먼트", pos:"n", level:"B1", meanings:["은퇴","퇴직"],
+  { word:"retirement", exams:["공무원"], pron:"리타이어먼트", pos:"n", level:"B1", meanings:["은퇴","퇴직"],
     syn:["leaving work for good","years after one stops working","end of working life"],
     ex:[{ s:"She looks forward to {{}}.", f:"retirement", ko:"그녀는 은퇴를 기다린다." }] },
 
@@ -1336,7 +1344,7 @@ window.VOCAB_R = [
   /* 승격 124 — 사전의 쌍반점만 쉼표로 갈랐다. 참조가 여섯 곳(audit·brush up·
      commentary·course assessment·critique·go over) 이라 이 챕터에서 화면이 가장
      많이 바뀌는 자리다. 사전값이 명사라 명사로 세웠다. */
-  { word:"review", pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
+  { word:"review", exams:["공무원"], pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
     syn:["critique","going over again","written judgment"],
     ex:[{ s:"The book got a good {{}}.", f:"review", ko:"그 책은 좋은 비평을 받았다." }] },
 
@@ -1581,7 +1589,7 @@ window.VOCAB_R = [
   { word:"run into", pron:"런 인투", pos:"phr", level:"B1", meanings:["우연히 만나다"],
     syn:["encounter","come across by chance","bump into"] },
 
-  { word:"run out of", pron:"런 아웃 오브", pos:"phr", level:"B1", meanings:["~을 다 써 버리다"],
+  { word:"run out of", exams:["공무원"], pron:"런 아웃 오브", pos:"phr", level:"B1", meanings:["~을 다 써 버리다"],
     syn:["use up all of","be left with none","exhaust the supply"] },
 
   { word:"run the risk of", pron:"런 더 리스크 오브", pos:"phr", level:"C1", meanings:["~의 위험을 무릅쓰다"],
@@ -1698,7 +1706,6 @@ Object.assign(window.GLOSS, {
   "broken remains of buildings": "부서져 남은 건물",
   "build again": "다시 세우다",
   "built-in reaction": "몸에 박힌 반응",
-  "by chance": "우연히",
   "call back an order": "명령을 거두어들이다",
   "call in a faulty product": "흠 있는 물건을 거둬들이다",
   "call to account": "따져 묻다",
@@ -1969,7 +1976,6 @@ Object.assign(window.GLOSS, {
   "meet with a reply": "답을 내놓다",
   "meeting again": "다시 만남",
   "memory told aloud": "소리 내어 들려주는 기억",
-  "mend": "기워 고치다",
   "mention of a source": "출처를 밝힘",
   "mindful of others": "남을 헤아리는",
   "money coming in": "들어오는 돈",
@@ -2212,6 +2218,7 @@ Object.assign(window.GLOSS, {
   "square corner": "네모지게 꺾인 모",
   "stalk by the water": "물가에 선 줄기",
   "stand against": "맞서 버티다",
+  "stand down": "사퇴하다",
   "stand for a group": "한 무리를 대신하다",
   "stand for election": "선거에 나서다",
   "stand-in for a body": "단체를 대신하는 이",
@@ -2222,6 +2229,7 @@ Object.assign(window.GLOSS, {
   "stay behind": "뒤에 남다",
   "steadiness one can count on": "믿고 맡길 만한 한결같음",
   "step back from a job": "일자리에서 물러나다",
+  "step down": "자리에서 물러나다",
   "stepping down": "자리에서 내려옴",
   "stiff and unbending": "딱딱하고 굽지 않는",
   "stillness of body": "몸의 잠잠함",
@@ -2303,7 +2311,6 @@ Object.assign(window.GLOSS, {
   "trial run of a play": "연극을 미리 해 보기",
   "true to life": "실제와 꼭 같은",
   "turn away in disgust": "역겨워 등을 돌리게 하다",
-  "turn into": "~으로 바꾸다",
   "turn of a quarter circle": "동그라미의 사분의 일 만큼 꺾임",
   "turn on an axis": "축을 두고 돌다",
   "turn ripe": "익어 가다",
@@ -2311,6 +2318,7 @@ Object.assign(window.GLOSS, {
   "turning from a wrong": "잘못에서 돌아섬",
   "turning things over": "이리저리 헤아리는",
   "unable to keep still": "가만히 있지 못하는",
+  "unrecognizable": "알아볼 수 없는",
   "unwilling to act": "나서려 하지 않는",
   "upright in conduct": "행실이 곧은",
   "uproar in the streets": "거리의 소동",

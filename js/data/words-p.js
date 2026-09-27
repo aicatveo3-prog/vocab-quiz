@@ -116,6 +116,15 @@ window.VOCAB_P = [
   { word:"practically", exams:["공무원"], pron:"프랙티컬리", pos:"adv", level:"B2", meanings:["거의","실질적으로"], syn:["virtually","nearly","all but"], ex:[{ s:"The stadium was {{}} empty, with only a few fans left.", f:"practically", ko:"경기장은 팬 몇 명만 남아 거의 텅 비어 있었다." }] },
   { word:"profit", exams:["공무원"], pron:"프라핏", pos:"n", level:"B1", meanings:["이익","수익"], syn:["earnings","revenue","gain"], ant:["loss"], ex:[{ s:"The company made a large {{}} last year.", f:"profit", ko:"그 회사는 작년에 큰 이익을 냈다." }] },
   { word:"provided that", exams:["공무원"], pron:"프러바이디드 댓", pos:"phr", level:"B2", meanings:["~라면","~라는 조건으로"] },
+  { word:"politeness", exams:["공무원"], pron:"펄라이트니스", pos:"n", level:"B2", meanings:["예의 바름","공손함"], syn:["courtesy","civility","manners"], ant:["rudeness"], ex:[{ s:"Saying thank you is a basic form of {{}}.", f:"politeness", ko:"고맙다고 말하는 것은 예의의 기본 형태다." }] },
+  { word:"paradoxically", exams:["공무원"], pron:"패러닥시컬리", pos:"adv", level:"C1", meanings:["역설적으로"], ex:[{ s:"{{}}, trying hard to fall asleep can keep you awake.", f:"Paradoxically", ko:"역설적으로, 잠들려고 애쓰면 오히려 잠이 달아날 수 있다." }] },
+  { word:"put up with", exams:["공무원"], pron:"풋 업 위드", pos:"phr", level:"B2", meanings:["참고 견디다","감수하다"], syn:["endure","tolerate","bear"] },
+  { word:"proprietary", exams:["공무원"], pron:"프러프라이어테리", pos:"adj", level:"C1", meanings:["독점의","소유주의"], syn:["exclusive","monopolistic","patented"], ex:[{ s:"Users need the company's own {{}} glasses to use the service.", f:"proprietary", ko:"이 서비스를 쓰려면 그 회사의 독점 안경이 필요하다." }] },
+  { word:"pick up", exams:["공무원"], pron:"픽 업", pos:"phr", level:"B1", meanings:["집어 들다","습득하다"] },
+  { word:"premeditation", exams:["공무원"], pron:"프리메디테이션", pos:"n", level:"C2", meanings:["사전 계획","미리 생각함"], ex:[{ s:"The judge found no evidence of {{}} in the attack.", f:"premeditation", ko:"판사는 그 공격이 미리 계획되었다는 증거를 찾지 못했다." }] },
+  { word:"prized", exams:["공무원"], pron:"프라이즈드", pos:"adj", level:"C1", meanings:["소중한","귀하게 여기는"], syn:["cherished","treasured","valued"], ex:[{ s:"Among her most {{}} possessions was an old silver watch.", f:"prized", ko:"그녀가 가장 아끼는 소지품 중에 낡은 은시계가 있었다." }] },
+  { word:"primarily", exams:["공무원"], pron:"프라이메럴리", pos:"adv", level:"B2", meanings:["주로","우선"], syn:["mainly","chiefly","mostly"] },
+  { word:"pass away", exams:["공무원"], pron:"패스 어웨이", pos:"phr", level:"B1", meanings:["세상을 떠나다","돌아가시다"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -291,7 +300,7 @@ window.VOCAB_P = [
 
   /* 승격 ⑬ — 사전이 '특정한; 까다로운' 이었다. 첫 뜻 '특정한' 을 지키고
      원본의 '특별한' 을 붙였다(detail, D). */
-  { word:"particular", pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
+  { word:"particular", exams:["공무원"], pron:"퍼티큘러", pos:"adj", level:"B1", meanings:["특정한","특별한"],
     syn:["specific","singled out","one certain"],
     ex:[{ s:"Is there a {{}} book you are looking for?", f:"particular", ko:"찾으시는 특정한 책이 있나요?" }] },
 
@@ -413,7 +422,7 @@ window.VOCAB_P = [
 
   /* paycheck 은 원본이 '월급, 급여' 였다. '급여' 가 같은 챕터 payment 와 물려서
      '봉급' 으로 갈랐다. */
-  { word:"paycheck", pron:"페이첵", pos:"n", level:"B2", meanings:["월급","봉급"],
+  { word:"paycheck", exams:["공무원"], pron:"페이첵", pos:"n", level:"B2", meanings:["월급","봉급"],
     syn:["monthly pay","wage packet","salary payment"],
     ex:[{ s:"His first {{}} arrived on Friday.", f:"paycheck", ko:"그의 첫 월급이 금요일에 들어왔다." }] },
 
@@ -558,7 +567,7 @@ window.VOCAB_P = [
     ex:[{ s:"Traffic is a {{}} problem in this city.", f:"perennial", ko:"교통은 이 도시의 끊임없는 문제다." }] },
 
   /* 원본은 '연주, 공연, 실행, 수행' 네 갈래였다. 두 갈래로 줄였다. */
-  { word:"performance", pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
+  { word:"performance", exams:["공무원"], pron:"퍼포먼스", pos:"n", level:"B1", meanings:["공연","수행"],
     syn:["show before an audience","carrying out of a task","staged act"],
     ex:[{ s:"The evening {{}} sold out.", f:"performance", ko:"저녁 공연은 매진되었다." }] },
 
@@ -692,7 +701,7 @@ window.VOCAB_P = [
   /* 승격 51 — 사전은 '비관주의' 한 갈래였다. 원본의 '비관론' 을 첫 자리로 올릴 수도
      있었지만 cynicism(C)·optimism(ant, O) 두 곳을 보존하려고 사전값을 앞에 두었다.
      O 세트 optimism(낙관론, 낙천주의) 과는 뜻이 반대여서 겹치지 않는다. */
-  { word:"pessimism", pron:"페시미즘", pos:"n", level:"B2", meanings:["비관주의","비관론"],
+  { word:"pessimism", exams:["공무원"], pron:"페시미즘", pos:"n", level:"B2", meanings:["비관주의","비관론"],
     syn:["cynicism","gloomy outlook","expecting the worst"], ant:["optimism"],
     ex:[{ s:"A mood of {{}} settled over the team.", f:"pessimism", ko:"비관주의 분위기가 팀에 내려앉았다." }] },
 
@@ -716,7 +725,7 @@ window.VOCAB_P = [
     ex:[{ s:"A single {{}} fell on the table.", f:"petal", ko:"꽃잎 하나가 탁자에 떨어졌다." }] },
 
   /* 승격 54 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"petition", pron:"퍼티션", pos:"n", level:"B2", meanings:["청원","탄원"],
+  { word:"petition", exams:["공무원"], pron:"퍼티션", pos:"n", level:"B2", meanings:["청원","탄원"],
     syn:["formal request to authority","signed appeal","plea in writing"],
     ex:[{ s:"They handed in a {{}} with ten thousand names.", f:"petition", ko:"그들은 만 명의 이름이 담긴 청원을 냈다." }] },
 
@@ -829,7 +838,7 @@ window.VOCAB_P = [
      갈렸다 — frontiersman(F) 은 명사, innovate(I)·break new ground(B) 는 동사 쪽이다.
      사전의 첫 갈래가 명사여서 명사로 세우고, 동사 자리 두 곳의 유의어를
      'lead the way'·'strike out anew' 로 바꿨다(words-i.js·words-b.js). */
-  { word:"pioneer", pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
+  { word:"pioneer", exams:["공무원"], pron:"파이어니어", pos:"n", level:"B2", meanings:["개척자","선구자"],
     syn:["frontiersman","trailblazer","first to go in"],
     ex:[{ s:"She was a {{}} of heart surgery.", f:"pioneer", ko:"그녀는 심장 수술의 개척자였다." }] },
 
@@ -877,7 +886,7 @@ window.VOCAB_P = [
      (comprehensible, C · luxurious 반의어, L · ornate 반의어, O — 세 곳).
      원본은 '분명한, 꾸밈없는; 검소한, 평범한; 평지, 벌판' 으로 형용사와 명사가
      섞인 다섯 갈래였다. */
-  { word:"plain", pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
+  { word:"plain", exams:["공무원"], pron:"플레인", pos:"adj", level:"B1", meanings:["평범한","명백한"],
     syn:["comprehensible","unadorned","easy to grasp"], ant:["ornate"],
     ex:[{ s:"She wore a {{}} grey coat.", f:"plain", ko:"그녀는 평범한 회색 외투를 입었다." }] },
 
@@ -1159,7 +1168,7 @@ window.VOCAB_P = [
 
   /* 승격 88 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      원본은 '소유' 한 갈래였다. */
-  { word:"possession", pron:"퍼제션", pos:"n", level:"B1", meanings:["소유","소유물"],
+  { word:"possession", exams:["공무원"], pron:"퍼제션", pos:"n", level:"B1", meanings:["소유","소유물"],
     syn:["ownership","thing owned","holding"],
     ex:[{ s:"The land came into his {{}} last year.", f:"possession", ko:"그 땅은 지난해 그의 소유가 되었다." }] },
 
@@ -1218,7 +1227,7 @@ window.VOCAB_P = [
   /* 원본은 '잠재적인; 가능성, 잠재력' 으로 형용사와 명사가 섞여 있었다.
      참조가 없어 형용사로 세웠고, 명사 갈래는 바로 다음의 potentiality 가 담는다 —
      그래야 둘이 '잠재력' 으로 물리지 않는다. */
-  { word:"potential", pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
+  { word:"potential", exams:["공무원"], pron:"퍼텐셜", pos:"adj", level:"B1", meanings:["잠재적인","될 성이 있는"],
     syn:["possible in future","latent","waiting to develop"],
     ex:[{ s:"We found three {{}} buyers.", f:"potential", ko:"우리는 잠재적인 구매자 셋을 찾았다." }] },
 
@@ -1353,13 +1362,13 @@ window.VOCAB_P = [
 
   /* 승격 101 — 사전 표현과 글자까지 같다(anticipate, A · expect, E · foresee, F
      — 세 곳). 원본도 한 갈래여서 그대로 지켰다. */
-  { word:"predict", pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
+  { word:"predict", exams:["공무원"], pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
     syn:["foretell","say what will come","call the outcome"],
     ex:[{ s:"No one can {{}} the market.", f:"predict", ko:"아무도 시장을 예측할 수 없다." }] },
 
   /* 승격 102 — 사전은 '예측' 한 갈래였다. 원본의 '예측, 예보' 를 그대로 쓰면
      forecast(예측, 예보 · F) 와 글자까지 통째로 같아진다. 사전값을 지켰다. */
-  { word:"prediction", pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
+  { word:"prediction", exams:["공무원"], pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
     syn:["forecast","what one expects to happen","guess about the future"],
     ex:[{ s:"His {{}} turned out to be right.", f:"prediction", ko:"그의 예측은 옳았던 것으로 드러났다." }] },
 
@@ -1683,7 +1692,7 @@ window.VOCAB_P = [
 
   /* 승격 129 — 사전 표현과 글자까지 같다(conscience, C). principal 과 발음이
      같은 낱말이다 — 그래서 둘을 나란히 세워 두었다. */
-  { word:"principle", pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
+  { word:"principle", exams:["공무원"], pron:"프린서펄", pos:"n", level:"B1", meanings:["원칙","원리"],
     syn:["rule one lives by","basic truth","standard of conduct"],
     ex:[{ s:"He refused on {{}}.", f:"principle", ko:"그는 원칙에 따라 거절했다." }] },
 
@@ -1775,7 +1784,7 @@ window.VOCAB_P = [
     ex:[{ s:"Steel {{}} fell last year.", f:"production", ko:"철강 생산이 지난해 줄었다." }] },
 
   /* 승격 141 — 사전 표현과 글자까지 같다(efficiency, E). */
-  { word:"productivity", pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
+  { word:"productivity", exams:["공무원"], pron:"프로덕티버티", pos:"n", level:"B2", meanings:["생산성"],
     syn:["rate of output","how much is produced","working efficiency"],
     ex:[{ s:"New tools raised {{}}.", f:"productivity", ko:"새 도구가 생산성을 높였다." }] },
 
@@ -1902,7 +1911,7 @@ window.VOCAB_P = [
 
   /* 승격 155 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      '선전' 은 advertisement(광고, 선전) 와 글자가 같아 둘이 서로 오답에서 빠진다. */
-  { word:"propaganda", pron:"프라퍼갠더", pos:"n", level:"C1", meanings:["선전","홍보"],
+  { word:"propaganda", exams:["공무원"], pron:"프라퍼갠더", pos:"n", level:"C1", meanings:["선전","홍보"],
     syn:["one-sided message","spread to sway people","words to win support"],
     ex:[{ s:"Wartime {{}} filled the papers.", f:"propaganda", ko:"전시의 선전이 신문을 채웠다." }] },
 
@@ -1974,7 +1983,7 @@ window.VOCAB_P = [
     ex:[{ s:"We met two {{}} buyers.", f:"prospective", ko:"우리는 예비 구매자 둘을 만났다." }] },
 
   /* 승격 162 — 사전 표현과 글자까지 같다(adversity 반의어, A). */
-  { word:"prosperity", pron:"프라스페러티", pos:"n", level:"B2", meanings:["번영","번창"],
+  { word:"prosperity", exams:["공무원"], pron:"프라스페러티", pos:"n", level:"B2", meanings:["번영","번창"],
     syn:["good fortune","thriving state","wealth and success"], ant:["adversity"],
     ex:[{ s:"The town enjoyed years of {{}}.", f:"prosperity", ko:"그 고을은 여러 해 번영을 누렸다." }] },
 
@@ -1996,7 +2005,7 @@ window.VOCAB_P = [
     syn:["destiny","hand of heaven","care from above"],
     ex:[{ s:"They called it {{}}.", f:"providence", ko:"그들은 그것을 섭리라 불렀다." }] },
 
-  { word:"province", pron:"프라빈스", pos:"n", level:"B2", meanings:["지방","주"],
+  { word:"province", exams:["공무원"], pron:"프라빈스", pos:"n", level:"B2", meanings:["지방","주"],
     syn:["large district","part of a country","region under one rule"],
     ex:[{ s:"She grew up in a northern {{}}.", f:"province", ko:"그녀는 북쪽 지방에서 자랐다." }] },
 
@@ -2103,7 +2112,7 @@ window.VOCAB_P = [
     ex:[{ s:"Check the {{}} in the last line.", f:"punctuation", ko:"마지막 줄의 구두점을 확인해라." }] },
 
   /* 승격 171 — 사전 표현과 글자까지 같다(condone 반의어, C). */
-  { word:"punish", pron:"퍼니시", pos:"v", level:"B1", meanings:["처벌하다"],
+  { word:"punish", exams:["공무원"], pron:"퍼니시", pos:"v", level:"B1", meanings:["처벌하다"],
     syn:["make pay for a wrong","give a penalty to","deal out discipline"], ant:["condone"],
     ex:[{ s:"The school may {{}} cheating.", f:"punish", ko:"학교는 부정행위를 처벌할 수 있다." }] },
 
@@ -2135,7 +2144,7 @@ window.VOCAB_P = [
     ex:[{ s:"What is the {{}} of this form?", f:"purpose", ko:"이 서식의 목적은 무엇인가요?" }] },
 
   /* 원본은 '지갑, 핸드백' 이었다. 외래어를 걷어 '손가방' 으로 적었다. */
-  { word:"purse", pron:"퍼스", pos:"n", level:"B1", meanings:["지갑","손가방"],
+  { word:"purse", exams:["공무원"], pron:"퍼스", pos:"n", level:"B1", meanings:["지갑","손가방"],
     syn:["small money bag","bag for coins","hand-held bag"],
     ex:[{ s:"She left her {{}} on the seat.", f:"purse", ko:"그녀는 지갑을 자리에 두고 갔다." }] },
 
@@ -2148,10 +2157,10 @@ window.VOCAB_P = [
   { word:"push into", pron:"푸시 인투", pos:"phr", level:"B2", meanings:["~에 밀고 들어오다"],
     syn:["force one's way in","shove inside","press into a place"] },
 
-  { word:"put an end to", pron:"풋 언 엔드 투", pos:"phr", level:"B2", meanings:["~을 끝내다","없애다"],
+  { word:"put an end to", exams:["공무원"], pron:"풋 언 엔드 투", pos:"phr", level:"B2", meanings:["~을 끝내다","없애다"],
     syn:["stop for good","bring to a close","do away with"] },
 
-  { word:"put aside", pron:"풋 어사이드", pos:"phr", level:"B2", meanings:["제쳐놓다","무시하다"],
+  { word:"put aside", exams:["공무원"], pron:"풋 어사이드", pos:"phr", level:"B2", meanings:["제쳐놓다","무시하다"],
     syn:["set to one side","leave out of account","lay away for later"] },
 
   /* 승격 177 — 사전 표현과 글자까지 같다(nominate, N). 챕터 12 에서 present 의
@@ -2281,12 +2290,14 @@ Object.assign(window.GLOSS, {
   "chest illness": "가슴에 생긴 병",
   "chicken and duck meat": "닭과 오리 고기",
   "chief backer of a cause": "어떤 일을 앞장서 미는 이",
+  "chiefly": "무엇보다도, 특히",
   "child health specialist": "아이 건강 전문가",
   "children's doctor": "아이를 보는 의사",
   "choice made by taste": "취향에 따른 고름",
   "chosen in advance": "미리 뽑힌",
   "church leader": "교회의 지도자",
   "circle graph": "동그란 그래프",
+  "civility": "예의 바른 태도",
   "clinging": "붙잡고 놓지 않는",
   "clip shown ahead": "앞서 내보이는 조각",
   "close likeness": "가까운 닮음",
@@ -2314,7 +2325,6 @@ Object.assign(window.GLOSS, {
   "course one must take first": "먼저 들어야 하는 과목",
   "cover with stone": "돌로 덮다",
   "covering only some": "일부만 아우르는",
-  "criticize": "비판하다, 비난하다",
   "crop spray": "작물에 뿌리는 약",
   "crude oil": "정제하지 않은 기름",
   "custom": "관습, 풍습",
@@ -2584,6 +2594,7 @@ Object.assign(window.GLOSS, {
   "main character": "중심이 되는 인물",
   "main idea": "중심 생각",
   "main in rank": "등급이 첫째인",
+  "mainly": "대체로, 주로",
   "mainstay": "버팀목",
   "make a hole in": "~에 구멍을 내다",
   "make impure": "깨끗하지 않게 하다",
@@ -2734,6 +2745,7 @@ Object.assign(window.GLOSS, {
   "part of a country": "나라의 한 부분",
   "party-related": "정당에 얽힌",
   "pass right through": "곧장 뚫고 지나가다",
+  "patented": "특허를 받은",
   "paved surface": "포장된 바닥",
   "paying well": "벌이가 좋은",
   "peep in": "들여다보다",
@@ -3039,6 +3051,7 @@ Object.assign(window.GLOSS, {
   "useful in real life": "실생활에 쓸모 있는",
   "user identity": "쓰는 이의 신분",
   "user-to-user": "쓰는 이끼리의",
+  "valued": "귀중한, 존중받는",
   "very deep in meaning": "뜻이 매우 깊은",
   "wage packet": "급료 봉투",
   "waiting to develop": "펼쳐지기를 기다리는",

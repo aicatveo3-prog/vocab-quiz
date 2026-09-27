@@ -31,6 +31,10 @@ window.VOCAB_B = [
   { word:"better safe than sorry", exams:["공무원"], pron:"베터 세이프 댄 소리", pos:"phr", level:"B2", meanings:["조심해서 나쁠 것 없다","유비무환"] },
   { word:"buildup", exams:["공무원"], pron:"빌드업", pos:"n", level:"C1", meanings:["축적","증강"], syn:["accumulation","growth","escalation"], ex:[{ s:"Daily sunshine creates a protective {{}} against blue light.", f:"buildup", ko:"매일 햇빛을 쬐면 블루라이트에 맞서는 보호막이 쌓인다." }] },
   { word:"booming", exams:["공무원"], pron:"부밍", pos:"adj", level:"B2", meanings:["호황을 누리는","급성장하는"], syn:["thriving","flourishing","prosperous"], ant:["declining"], ex:[{ s:"Tourism is {{}} in the region these days.", f:"booming", ko:"요즘 그 지역에서는 관광업이 호황을 누리고 있다." }] },
+  { word:"boldness", exams:["공무원"], pron:"볼드니스", pos:"n", level:"C1", meanings:["대담함","용기"], syn:["bravery","daring","audacity"], ant:["timidity"], ex:[{ s:"Her {{}} in speaking up surprised everyone.", f:"boldness", ko:"당당히 의견을 말한 그녀의 대담함에 모두가 놀랐다." }] },
+  { word:"be drawn to", exams:["공무원"], pron:"비 드론 투", pos:"phr", level:"B2", meanings:["~에 끌리다","~에 이끌리다"] },
+  { word:"by chance", exams:["공무원"], pron:"바이 챈스", pos:"phr", level:"B1", meanings:["우연히"], syn:["accidentally","by accident","coincidentally"], ant:["on purpose"] },
+  { word:"brainstorm", exams:["공무원"], pron:"브레인스톰", pos:"v", level:"B2", meanings:["아이디어를 짜내다","머리를 맞대다"], ex:[{ s:"The team met to {{}} names for the new product.", f:"brainstorm", ko:"팀은 새 제품의 이름을 짜내려고 모였다." }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],
@@ -60,7 +64,7 @@ window.VOCAB_B = [
     syn:["vote","poll","election"],
     ex:[{ s:"Voters marked their choice on the {{}}.", f:"ballot", ko:"유권자들은 투표용지에 선택을 표시했다." }] },
 
-  { word:"ban", pron:"밴", pos:"v", level:"B1", meanings:["금지하다","금지령"],
+  { word:"ban", exams:["공무원"], pron:"밴", pos:"v", level:"B1", meanings:["금지하다","금지령"],
     syn:["prohibit","forbid","outlaw"], ant:["allow"],
     ex:[{ s:"The city council voted to {{}} plastic bags.", f:"ban", ko:"시의회는 비닐봉지를 금지하기로 표결했다." }],
     gov:{ prep:["from","on"], pat:"ban him {{}} driving", usage:"ban A from B : A가 B하는 것을 금지하다" } },
@@ -295,7 +299,7 @@ window.VOCAB_B = [
     syn:["defeat","overcome","strike"], ant:["lose"],
     ex:[{ s:"Our team managed to {{}} the defending champions.", f:"beat", ko:"우리 팀은 디펜딩 챔피언을 이겨냈다." }] },
 
-  { word:"beat oneself up", pron:"비트 원셀프 업", pos:"phr", level:"C1", meanings:["자책하다"],
+  { word:"beat oneself up", exams:["공무원"], pron:"비트 원셀프 업", pos:"phr", level:"C1", meanings:["자책하다"],
     syn:["blame oneself","reproach oneself","feel guilty"], ant:["forgive oneself"] },
 
   { word:"become acquainted with", pron:"비컴 어퀘인티드 위드", pos:"phr", level:"B2", meanings:["~에 정통해지다","~와 알게 되다"],
@@ -377,7 +381,7 @@ window.VOCAB_B = [
   { word:"best of all", pron:"베스트 오브 올", pos:"phr", level:"B1", meanings:["무엇보다도"],
     syn:["above all","most importantly","first and foremost"], ant:["least of all"] },
 
-  { word:"bestow", pron:"비스토우", pos:"v", level:"C2", meanings:["수여하다","증여하다"],
+  { word:"bestow", exams:["공무원"], pron:"비스토우", pos:"v", level:"C2", meanings:["수여하다","증여하다"],
     syn:["grant","confer","award"], ant:["withhold"],
     ex:[{ s:"The king chose to {{}} land on his loyal knights.", f:"bestow", ko:"왕은 충성스러운 기사들에게 땅을 수여하기로 했다." }],
     gov:{ prep:["on","upon","to"], pat:"bestow an honor {{}} him", usage:"bestow A on B : B에게 A를 수여하다" } },
@@ -463,7 +467,7 @@ window.VOCAB_B = [
     syn:["life story","memoir","profile"], ant:["fiction"],
     ex:[{ s:"He wrote a {{}} of the former president.", f:"biography", ko:"그는 전임 대통령의 전기를 썼다." }] },
 
-  { word:"biological", pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
+  { word:"biological", exams:["공무원"], pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
     syn:["organic","physiological","natural"], ant:["artificial"],
     ex:[{ s:"The study examined {{}} differences between the species.", f:"biological", ko:"그 연구는 두 종 사이의 생물학적 차이를 조사했다." }] },
 
@@ -647,7 +651,7 @@ window.VOCAB_B = [
     syn:["botanical","plant-related","floral"],
     ex:[{ s:"We spent the whole afternoon in the {{}} gardens.", f:"botanic", ko:"우리는 오후 내내 식물원에서 보냈다." }] },
 
-  { word:"botanical", pron:"버태니컬", pos:"adj", level:"C1", meanings:["식물의","식물에서 얻은"],
+  { word:"botanical", exams:["공무원"], pron:"버태니컬", pos:"adj", level:"C1", meanings:["식물의","식물에서 얻은"],
     syn:["botanic","plant-based","herbal"],
     ex:[{ s:"The book contains detailed {{}} illustrations.", f:"botanical", ko:"그 책에는 상세한 식물 도해가 실려 있다." }] },
 
@@ -723,7 +727,7 @@ window.VOCAB_B = [
   { word:"break out", pron:"브레이크 아웃", pos:"phr", level:"B2", meanings:["(전쟁이) 발발하다","(화재가) 발생하다"],
     syn:["erupt","flare up","begin suddenly"], ant:["subside"] },
 
-  { word:"breakdown", pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
+  { word:"breakdown", exams:["공무원"], pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
     syn:["malfunction","collapse","failure"],
     ex:[{ s:"A {{}} on the highway delayed us for three hours.", f:"breakdown", ko:"고속도로에서의 고장으로 우리는 세 시간 지체되었다." }] },
 
@@ -780,7 +784,7 @@ window.VOCAB_B = [
   { word:"bring about", pron:"브링 어바웃", pos:"phr", level:"B2", meanings:["초래하다","일으키다"],
     syn:["cause","produce","give rise to"], ant:["prevent"] },
 
-  { word:"bring in", pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
+  { word:"bring in", exams:["공무원"], pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
     syn:["earn","generate","yield"], ant:["lose"] },
 
   { word:"brink", pron:"브링크", pos:"n", level:"C1", meanings:["가장자리","직전"],
@@ -892,7 +896,7 @@ window.VOCAB_B = [
     syn:["notice board","message board","pinboard"],
     ex:[{ s:"The new schedule was posted on the {{}}.", f:"bulletin board", ko:"새 일정표가 게시판에 붙었다." }] },
 
-  { word:"bully", pron:"불리", pos:"v", level:"B2", meanings:["괴롭히다"],
+  { word:"bully", exams:["공무원"], pron:"불리", pos:"v", level:"B2", meanings:["괴롭히다"],
     syn:["intimidate","harass","pick on"], ant:["protect"],
     ex:[{ s:"Teachers must not let older students {{}} the younger ones.", f:"bully", ko:"교사들은 상급생이 하급생을 괴롭히도록 놔두어서는 안 된다." }] },
 
@@ -912,7 +916,7 @@ window.VOCAB_B = [
     syn:["bunch","package","sheaf"],
     ex:[{ s:"She carried a {{}} of letters under her arm.", f:"bundle", ko:"그녀는 편지 뭉치를 팔 아래에 끼고 있었다." }] },
 
-  { word:"burden", pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
+  { word:"burden", exams:["공무원"], pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
     syn:["load","strain","encumbrance"], ant:["relief"],
     ex:[{ s:"Caring for both parents became a heavy {{}}.", f:"burden", ko:"양쪽 부모를 돌보는 일은 무거운 부담이 되었다." }],
     gov:{ prep:["on","of","to","for"], pat:"a burden {{}} society", usage:"a burden on ~ : ~에 대한 부담" } },
@@ -946,7 +950,7 @@ window.VOCAB_B = [
   { word:"by all means", pron:"바이 올 민즈", pos:"phr", level:"B2", meanings:["반드시","꼭"],
     syn:["certainly","without fail","absolutely"], ant:["by no means"] },
 
-  { word:"by contrast", pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
+  { word:"by contrast", exams:["공무원"], pron:"바이 컨트래스트", pos:"phr", level:"B2", meanings:["그에 반해서"],
     syn:["on the other hand","conversely","in comparison"], ant:["likewise"] },
 
   { word:"by extension", pron:"바이 익스텐션", pos:"phr", level:"C1", meanings:["더 나아가"],
@@ -979,6 +983,7 @@ window.VOCAB_B = [
    words.js 가 만든 객체에 덧붙인다. 재대입하면 A 세트 202개가 사라진다. */
 Object.assign(window.GLOSS, {
   "afterward":"나중에, 그 후에",
+  "audacity": "뻔뻔함, 대담함",
   "bankruptcy":"파산",
   "be against":"~에 반대하다",
   "be barred from":"~에서 배제되다, ~을 금지당하다",
@@ -1007,8 +1012,10 @@ Object.assign(window.GLOSS, {
   "be unlikely to":"~할 것 같지 않다",
   "be unmoved by":"~에 감동하지 않다",
   "begin":"시작하다",
+  "by accident": "우연히, 뜻하지 않게",
   "center":"중심, 중앙",
   "civilized":"문명화된, 교양 있는",
+  "coincidentally": "공교롭게도",
   "compliance":"준수, 따름",
   "confident":"자신 있는, 확신하는",
   "cowardice":"비겁함",
@@ -1017,7 +1024,6 @@ Object.assign(window.GLOSS, {
   "disembark":"하선하다, 내리다",
   "divide":"나누다, 갈라놓다",
   "double-cross": "배반하다, 뒤통수치다",
-  "dye":"염색하다",
   "entitlement": "자격, 권리",
   "escalation": "단계적 확대",
   "excitement":"흥분, 설렘",

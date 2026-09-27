@@ -48,6 +48,7 @@ window.VOCAB_V = [
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
   { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
+  { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -91,7 +92,7 @@ window.VOCAB_V = [
     ex:[{ s:"The seat beside her was {{}}.", f:"vacant", ko:"그녀 옆자리는 비어 있었다." }] },
 
   /* 교재의 동사 갈래('진공청소기로 청소하다') 는 버렸다. */
-  { word:"vacuum", pron:"배큠", pos:"n", level:"B2", meanings:["진공"],
+  { word:"vacuum", exams:["공무원"], pron:"배큠", pos:"n", level:"B2", meanings:["진공"],
     syn:["space with no air","emptied of all air","airless space"],
     ex:[{ s:"Sound cannot travel in a {{}}.", f:"vacuum", ko:"소리는 진공에서 이동할 수 없다." }] },
 
@@ -191,7 +192,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑪ — 사전 글자 유지. 참조 세 곳(differ·diversify·fluctuate) 의 화면은
      바뀌지 않는다. differ(다르다, 의견이 다르다) 와 맞물려 배제된다. */
-  { word:"vary", pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
+  { word:"vary", exams:["공무원"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
     syn:["differ","diversify","fluctuate"],
     ex:[{ s:"Prices {{}} from shop to shop.", f:"vary", ko:"값은 가게마다 다르다." }] },
 
@@ -338,7 +339,7 @@ window.VOCAB_V = [
 
   /* 교재의 '대' 는 너무 짧아 풀어 썼다. 전치사지만 스키마에 prep 이 없어
      구·표현(phr) 으로 두었다. */
-  { word:"versus", pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
+  { word:"versus", exams:["공무원"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
     syn:["set against","compared with","over against"] },
 
   /* 승격 ㉒ — 사전과 교재가 같다(참조 horizontal 이 반의어). */
@@ -423,7 +424,7 @@ window.VOCAB_V = [
 
   /* outlook(전망, 관점)·perspective(관점, 시각)·standpoint(관점, 입장)·
      point of view(관점, 견해) 넷과 맞물려 배제된다. */
-  { word:"viewpoint", pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"viewpoint", exams:["공무원"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["outlook","perspective","standpoint"],
     ex:[{ s:"From her {{}} the plan was sound.", f:"viewpoint", ko:"그녀의 관점에서 그 계획은 타당했다." }] },
 
@@ -723,6 +724,7 @@ Object.assign(window.GLOSS, {
   "person on a plant diet": "식물만 먹는 사람",
   "person who offers to help": "돕겠다고 나서는 사람",
   "physical attack": "몸으로 하는 공격",
+  "picture": "그려 보다, 상상하다",
   "place for an event": "행사를 치르는 곳",
   "plants of a place": "한 곳에 자란 풀과 나무",
   "poetry rather than prose": "산문이 아닌 시",

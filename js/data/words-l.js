@@ -46,12 +46,18 @@ window.VOCAB_L = [
   { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
   { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
+  { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
+  { word:"liveliness", exams:["공무원"], pron:"라이블리니스", pos:"n", level:"B2", meanings:["활기","생기"], syn:["vitality","vivacity","energy"], ex:[{ s:"The {{}} of the night market attracts many tourists.", f:"liveliness", ko:"야시장의 활기가 많은 관광객을 끌어들인다." }] },
+  { word:"linguistic", exams:["공무원"], pron:"링귀스틱", pos:"adj", level:"C1", meanings:["언어의","언어학의"], ex:[{ s:"English and German share many {{}} features, such as similar words.", f:"linguistic", ko:"영어와 독일어는 비슷한 단어처럼 많은 언어적 특징을 공유한다." }] },
+  { word:"look after", exams:["공무원"], pron:"룩 애프터", pos:"phr", level:"B1", meanings:["돌보다","보살피다"], syn:["take care of","care for","tend"] },
+  { word:"lose track of", exams:["공무원"], pron:"루즈 트랙 오브", pos:"phr", level:"B2", meanings:["~을 놓치다","~을 잊다"] },
+  { word:"look ~ in the eye", exams:["공무원"], pron:"룩 인 디 아이", pos:"phr", level:"B2", meanings:["~의 눈을 똑바로 보다"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
      다만 뜻이 '노동' 과 '실험실' 로 완전히 달라 무리가 없다.
      원본의 동사 갈래('일하다, 노력하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"labor", pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
+  { word:"labor", exams:["공무원"], pron:"레이버", pos:"n", level:"B2", meanings:["노동","수고"],
     syn:["toil","exertion","drudgery"],
     ex:[{ s:"The factory still relies on cheap manual {{}}.", f:"labor", ko:"그 공장은 여전히 값싼 육체 노동에 의존한다." }] },
 
@@ -120,7 +126,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '대체로, 주로' 가 원본과 글자까지 같다. 참조는 없고 PRON 도
      없었다. 손댈 것이 없었다. */
-  { word:"largely", pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
+  { word:"largely", exams:["공무원"], pron:"라지리", pos:"adv", level:"B2", meanings:["대체로","주로"],
     syn:["mostly","predominantly","on the whole"],
     ex:[{ s:"The restoration was {{}} successful.", f:"largely", ko:"그 복원은 대체로 성공적이었다." }] },
 
@@ -174,7 +180,7 @@ window.VOCAB_L = [
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
      원본의 동사 갈래('층을 이루다')는 pos 가 n 이라 담지 못했다. */
-  { word:"layer", pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
+  { word:"layer", exams:["공무원"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
     syn:["crust","stratum","coating"],
     ex:[{ s:"A thin {{}} of dust covered the top shelf.", f:"layer", ko:"얇은 먼지 층이 맨 위 선반을 덮고 있었다." }] },
 
@@ -221,7 +227,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '기울다; 여윈' 을 글자까지 지켰다. I 세트 incline 이
      '기울다' 갈래를 유의어로 참조하므로 원본('기대다; 날씬한') 대신 사전 쪽을
      남겼다 — 같은 갈래다. */
-  { word:"lean", pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
+  { word:"lean", exams:["공무원"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
     syn:["incline","tilt","slant"],
     ex:[{ s:"The old tower began to {{}} to one side.", f:"lean", ko:"그 낡은 탑은 한쪽으로 기울기 시작했다." }] },
 
@@ -568,7 +574,7 @@ window.VOCAB_L = [
   /* 승격 ② — GLOSS '숙소; 제기하다' 로 명사와 동사가 섞여 있었다.
      accommodate(syn) 가 참조하는 갈래는 '숙소' 라 첫 자리에 지키고, 둘째는 원본의
      '산장' 으로 바꿨다 — 한 표제어에 명사와 동사를 섞지 않는 쪽이 읽기 낫다. */
-  { word:"lodge", pron:"로지", pos:"n", level:"B2", meanings:["숙소","산장"],
+  { word:"lodge", exams:["공무원"], pron:"로지", pos:"n", level:"B2", meanings:["숙소","산장"],
     syn:["cabin","inn","guesthouse"],
     ex:[{ s:"We stayed in a mountain {{}} for two nights.", f:"lodge", ko:"우리는 이틀 밤 산장에 머물렀다." }] },
 
@@ -750,6 +756,7 @@ Object.assign(window.GLOSS, {
   "cabin": "오두막",
   "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
+  "care for": "보살피다, 좋아하다",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
   "clear-headed": "머리가 맑은",
@@ -905,6 +912,8 @@ Object.assign(window.GLOSS, {
   "verbatim": "한마디도 안 빼고",
   "verdant": "푸른 풀로 덮인",
   "view": "경치, 전망",
+  "vitality": "활력",
+  "vivacity": "명랑함, 쾌활함",
   "vociferously": "소리 높여, 격렬하게",
   "walk lamely": "다리를 끌며 걷다",
   "waste site": "폐기물 처리장",

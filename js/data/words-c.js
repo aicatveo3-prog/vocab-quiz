@@ -66,12 +66,27 @@ window.VOCAB_C = [
   { word:"collectible", exams:["공무원"], pron:"컬렉터블", pos:"n", level:"C1", meanings:["수집품","수집할 가치가 있는 물건"], ex:[{ s:"This rare airline poster is a valuable {{}}.", f:"collectible", ko:"이 희귀한 항공 포스터는 값진 수집품이다." }] },
   { word:"crafty", exams:["공무원"], pron:"크래프티", pos:"adj", level:"C1", meanings:["교활한","약삭빠른"], syn:["cunning","artful","scheming"], ant:["naive"], ex:[{ s:"What matters is how much more {{}} you are than other people.", f:"crafty", ko:"중요한 것은 당신이 다른 사람들보다 얼마나 더 약삭빠른가이다." }] },
   { word:"cash cow", exams:["공무원"], pron:"캐시 카우", pos:"phr", level:"C1", meanings:["돈줄","확실한 수익원"] },
+  { word:"control", exams:["공무원"], pron:"컨트롤", pos:"v", level:"B1", meanings:["통제하다","통제"], syn:["regulate","manage","govern"], ex:[{ s:"Traffic lights {{}} the flow of cars at busy crossings.", f:"control", ko:"신호등은 붐비는 교차로에서 차량의 흐름을 통제한다." }] },
+  { word:"criticize", exams:["공무원"], pron:"크리티사이즈", pos:"v", level:"B1", meanings:["비판하다","비난하다"], syn:["condemn","censure","find fault with"], ant:["praise"], ex:[{ s:"Many voters began to {{}} the mayor's plan.", f:"criticize", ko:"많은 유권자가 시장의 계획을 비판하기 시작했다." }] },
+  { word:"competition", exams:["공무원"], pron:"캄퍼티션", pos:"n", level:"B1", meanings:["경쟁","대회"], syn:["rivalry","contest","contention"], ant:["collaboration"], ex:[{ s:"{{}} among the stores keeps prices low.", f:"Competition", ko:"가게들 사이의 경쟁이 가격을 낮게 유지한다." }] },
+  { word:"connectivity", exams:["공무원"], pron:"커넥티비티", pos:"n", level:"C1", meanings:["연결성","접속"], ex:[{ s:"Rural areas still lack fast internet {{}}.", f:"connectivity", ko:"시골 지역은 아직 빠른 인터넷 연결이 부족하다." }] },
+  { word:"creatively", exams:["공무원"], pron:"크리에이티블리", pos:"adv", level:"B2", meanings:["창의적으로"], syn:["imaginatively","inventively","innovatively"], ex:[{ s:"The team solved the problem {{}} with very few tools.", f:"creatively", ko:"그 팀은 아주 적은 도구로 문제를 창의적으로 해결했다." }] },
+  { word:"critic", exams:["공무원"], pron:"크리틱", pos:"n", level:"B2", meanings:["평론가","비판자"], syn:["reviewer","commentator","detractor"], ant:["supporter"], ex:[{ s:"The art {{}} looked at the picture carefully.", f:"critic", ko:"그 미술 평론가는 그림을 주의 깊게 살펴보았다." }] },
+  { word:"considerably", exams:["공무원"], pron:"컨시더러블리", pos:"adv", level:"B2", meanings:["상당히","꽤"], syn:["significantly","substantially","markedly"], ant:["marginally"] },
+  { word:"catch up on", exams:["공무원"], pron:"캐치 업 온", pos:"phr", level:"B2", meanings:["밀린 ~을 하다","소식 등을 따라잡다"] },
+  { word:"caution", exams:["공무원"], pron:"코션", pos:"n", level:"B2", meanings:["조심","경고"], syn:["care","prudence","wariness"], ant:["recklessness"], ex:[{ s:"Drivers should use extra {{}} on icy roads.", f:"caution", ko:"운전자들은 빙판길에서 각별히 조심해야 한다." }] },
+  { word:"calligraphy", exams:["공무원"], pron:"컬리그러피", pos:"n", level:"C1", meanings:["서예","붓글씨"], ex:[{ s:"She practices Chinese {{}} with a brush every morning.", f:"calligraphy", ko:"그녀는 매일 아침 붓으로 중국 서예를 연습한다." }] },
+  { word:"conceptualize", exams:["공무원"], pron:"컨셉추얼라이즈", pos:"v", level:"C1", meanings:["개념화하다"], syn:["conceive","envisage","formulate"], ex:[{ s:"This philosophy tries to {{}} goodness as a form of service.", f:"conceptualize", ko:"이 철학은 선함을 봉사의 한 형태로 개념화하려 한다." }] },
+  { word:"cooperative", exams:["공무원"], pron:"코아퍼러티브", pos:"adj", level:"B2", meanings:["협력하는","협동조합의"], syn:["collaborative","helpful","supportive"], ant:["uncooperative"], ex:[{ s:"The staff were very {{}} during the inspection.", f:"cooperative", ko:"직원들은 점검 기간 동안 매우 협조적이었다." }] },
+  { word:"coil", exams:["공무원"], pron:"코일", pos:"v", level:"C1", meanings:["감다","똬리를 틀다"], ex:[{ s:"The snake began to {{}} around the branch.", f:"coil", ko:"뱀이 나뭇가지를 휘감기 시작했다." }] },
+  { word:"conceptual", exams:["공무원"], pron:"컨셉추얼", pos:"adj", level:"C1", meanings:["개념적인","추상적인"], syn:["abstract","theoretical","notional"], ant:["practical"], ex:[{ s:"The lecture focused on {{}} questions rather than practical ones.", f:"conceptual", ko:"그 강의는 실용적인 문제보다 개념적인 문제에 집중했다." }] },
+  { word:"casually", exams:["공무원"], pron:"캐주얼리", pos:"adv", level:"B2", meanings:["무심코","편하게"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
     ex:[{ s:"The flood was the worst {{}} in the region's history.", f:"calamity", ko:"그 홍수는 그 지역 역사상 최악의 재난이었다." }] },
 
-  { word:"calculate", pron:"캘큘레이트", pos:"v", level:"B1", meanings:["계산하다","산출하다"],
+  { word:"calculate", exams:["공무원"], pron:"캘큘레이트", pos:"v", level:"B1", meanings:["계산하다","산출하다"],
     syn:["compute","reckon","estimate"], ant:["guess"],
     ex:[{ s:"We need to {{}} the total cost before ordering.", f:"calculate", ko:"주문하기 전에 총비용을 계산해야 한다." }] },
 
@@ -99,7 +114,7 @@ window.VOCAB_C = [
     syn:["disguise","concealment","cover"], ant:["exposure"],
     ex:[{ s:"The insect's {{}} makes it look like a dead leaf.", f:"camouflage", ko:"그 곤충의 위장은 자신을 마른 잎처럼 보이게 한다." }] },
 
-  { word:"canal", pron:"커낼", pos:"n", level:"B2", meanings:["운하","수로"],
+  { word:"canal", exams:["공무원"], pron:"커낼", pos:"n", level:"B2", meanings:["운하","수로"],
     syn:["waterway","channel","duct"],
     ex:[{ s:"Goods once moved through the city by {{}}.", f:"canal", ko:"한때 물자는 운하를 통해 도시를 지나갔다." }] },
 
@@ -124,7 +139,7 @@ window.VOCAB_C = [
     syn:["ability","competence","skill"], ant:["inability"],
     ex:[{ s:"The team lacks the {{}} to finish on time.", f:"capability", ko:"그 팀은 제때 끝낼 역량이 없다." }] },
 
-  { word:"capable", pron:"케이퍼블", pos:"adj", level:"B1", meanings:["~을 할 수 있는","유능한"],
+  { word:"capable", exams:["공무원"], pron:"케이퍼블", pos:"adj", level:"B1", meanings:["~을 할 수 있는","유능한"],
     syn:["able","competent","skilled"], ant:["incapable"],
     ex:[{ s:"She is {{}} of solving much harder problems.", f:"capable", ko:"그녀는 훨씬 더 어려운 문제도 풀 수 있다." }],
     gov:{ prep:["of"], pat:"capable {{}} solving it alone", usage:"be capable of + -ing : ~할 수 있다" } },
@@ -159,7 +174,7 @@ window.VOCAB_C = [
     syn:["starch","sugar","carb"],
     ex:[{ s:"Rice is a major source of {{}} in many diets.", f:"carbohydrate", ko:"쌀은 많은 식단에서 탄수화물의 주요 공급원이다." }] },
 
-  { word:"carbon", pron:"카본", pos:"n", level:"B1", meanings:["탄소"],
+  { word:"carbon", exams:["공무원"], pron:"카본", pos:"n", level:"B1", meanings:["탄소"],
     ex:[{ s:"Burning coal releases {{}} into the air.", f:"carbon", ko:"석탄을 태우면 탄소가 공기 중으로 방출된다." }] },
 
   { word:"cardiac", pron:"카디액", pos:"adj", level:"C1", meanings:["심장의"],
@@ -335,7 +350,7 @@ window.VOCAB_C = [
     syn:["hundredth","anniversary","centenary"],
     ex:[{ s:"The city planned a {{}} parade for its founding.", f:"centennial", ko:"그 도시는 건립 100주년 행진을 계획했다." }] },
 
-  { word:"central", pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
+  { word:"central", exams:["공무원"], pron:"센트럴", pos:"adj", level:"B1", meanings:["중심의","중앙의"],
     syn:["main","chief","core"], ant:["peripheral"],
     ex:[{ s:"Trust is {{}} to any lasting friendship.", f:"central", ko:"신뢰는 오래가는 우정의 핵심이다." }],
     gov:{ prep:["to"], pat:"central {{}} the whole plan", usage:"be central to ~ : ~에 핵심적이다" } },
@@ -386,7 +401,7 @@ window.VOCAB_C = [
     syn:["room","hall","compartment"],
     ex:[{ s:"The king received guests in the inner {{}}.", f:"chamber", ko:"왕은 안쪽 방에서 손님을 맞았다." }] },
 
-  { word:"channel", pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
+  { word:"channel", exams:["공무원"], pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
     syn:["route","passage","strait"],
     ex:[{ s:"Swimmers cross the {{}} between the two coasts each July.", f:"channel", ko:"수영 선수들은 매년 7월 두 해안 사이의 해협을 건넌다." }] },
 
@@ -419,7 +434,7 @@ window.VOCAB_C = [
     ex:[{ s:"The garage did not {{}} us for the inspection.", f:"charge", ko:"그 정비소는 점검 비용을 우리에게 청구하지 않았다." }],
     gov:{ prep:["for","with","to"], pat:"charge you {{}} the repair", usage:"charge A for B : A에게 B의 값을 청구하다" } },
 
-  { word:"charity", pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
+  { word:"charity", exams:["공무원"], pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
     syn:["philanthropy","generosity","aid"], ant:["greed"],
     ex:[{ s:"All ticket money goes to a local {{}}.", f:"charity", ko:"모든 입장료는 지역 자선 단체로 간다." }] },
 
@@ -453,7 +468,7 @@ window.VOCAB_C = [
     syn:["cook","caterer","culinarian"],
     ex:[{ s:"The {{}} refused to change a single item on the menu.", f:"chef", ko:"주방장은 메뉴의 어떤 항목도 바꾸기를 거부했다." }] },
 
-  { word:"chemical", pron:"케미컬", pos:"n", level:"B1", meanings:["화학 물질","화학의"],
+  { word:"chemical", exams:["공무원"], pron:"케미컬", pos:"n", level:"B1", meanings:["화학 물질","화학의"],
     syn:["substance","compound","agent"],
     ex:[{ s:"The factory dumped a toxic {{}} into the river.", f:"chemical", ko:"그 공장은 유독 화학 물질을 강에 버렸다." }] },
 
@@ -586,7 +601,7 @@ window.VOCAB_C = [
     ex:[{ s:"The empire claimed a mission to {{}} distant lands.", f:"civilize", ko:"그 제국은 먼 땅을 교화한다는 사명을 내세웠다." }] },
 
   /* ── cla · cle · cli ───────────────────────── */
-  { word:"claim", pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
+  { word:"claim", exams:["공무원"], pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
     syn:["assert","maintain","demand"], ant:["deny"],
     ex:[{ s:"Two groups {{}} responsibility for the fire.", f:"claimed", ko:"두 단체가 그 화재에 대한 책임을 주장했다." }],
     gov:{ prep:["for","to","against"], pat:"claim responsibility {{}} the attack", usage:"claim responsibility for ~ : ~에 대한 책임을 주장하다" } },
@@ -840,7 +855,7 @@ window.VOCAB_C = [
     syn:["remark","note","state"],
     ex:[{ s:"He refused to {{}} on the rumour.", f:"comment", ko:"그는 그 소문에 대해 견해를 밝히기를 거부했다." }] },
 
-  { word:"commentary", pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
+  { word:"commentary", exams:["공무원"], pron:"카먼터리", pos:"n", level:"B2", meanings:["해설","논평"],
     syn:["analysis","narration","review"],
     ex:[{ s:"Her {{}} made a dull match worth watching.", f:"commentary", ko:"그녀의 해설은 지루한 경기를 볼 만하게 만들었다." }] },
 
@@ -1006,7 +1021,7 @@ window.VOCAB_C = [
     ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
     gov:{ prep:["about","of","to"], pat:"complain {{}} the noise", usage:"complain about ~ : ~에 대해 불평하다" } },
 
-  { word:"complement", pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
+  { word:"complement", exams:["공무원"], pron:"캄플러먼트", pos:"n", level:"C1", meanings:["보충","보완물"],
     syn:["addition","supplement","counterpart"],
     ex:[{ s:"The wine is a perfect {{}} to the fish.", f:"complement", ko:"그 와인은 생선과 완벽하게 어울리는 보완물이다." }] },
 
@@ -1026,7 +1041,7 @@ window.VOCAB_C = [
     syn:["complex","tangled","elaborate"], ant:["straightforward"],
     ex:[{ s:"The rules are needlessly {{}}.", f:"complicated", ko:"그 규칙들은 불필요하게 복잡하다." }] },
 
-  { word:"complication", pron:"캄플리케이션", pos:"n", level:"B2", meanings:["합병증","문제"],
+  { word:"complication", exams:["공무원"], pron:"캄플리케이션", pos:"n", level:"B2", meanings:["합병증","문제"],
     syn:["difficulty","snag","setback"],
     ex:[{ s:"A rare {{}} kept him in hospital for weeks.", f:"complication", ko:"드문 합병증 때문에 그는 몇 주간 병원에 있었다." }] },
 
@@ -1090,7 +1105,7 @@ window.VOCAB_C = [
     syn:["settlement","deal","concession"], ant:["stalemate"],
     ex:[{ s:"Both sides settled on an awkward {{}}.", f:"compromise", ko:"양측은 어색한 타협에 이르렀다." }] },
 
-  { word:"compulsive", pron:"컴펄시브", pos:"adj", level:"C1", meanings:["강박적인","억제하기 힘든"],
+  { word:"compulsive", exams:["공무원"], pron:"컴펄시브", pos:"adj", level:"C1", meanings:["강박적인","억제하기 힘든"],
     syn:["obsessive","uncontrollable","addictive"],
     ex:[{ s:"He is a {{}} checker of locks and windows.", f:"compulsive", ko:"그는 강박적으로 문과 창문을 확인한다." }] },
 
@@ -1123,7 +1138,7 @@ window.VOCAB_C = [
     syn:["imagine","devise","envision"],
     ex:[{ s:"She first {{}} the idea on a night train.", f:"conceived", ko:"그녀는 야간 열차에서 처음 그 착상을 떠올렸다." }] },
 
-  { word:"concentrate", pron:"칸선트레이트", pos:"v", level:"B1", meanings:["집중하다","모으다"],
+  { word:"concentrate", exams:["공무원"], pron:"칸선트레이트", pos:"v", level:"B1", meanings:["집중하다","모으다"],
     syn:["focus","fixate","gather"], ant:["wander"],
     ex:[{ s:"It is hard to {{}} with the radio on.", f:"concentrate", ko:"라디오를 켜 두고는 집중하기 어렵다." }],
     gov:{ prep:["on","in"], pat:"concentrate {{}} one task at a time", usage:"concentrate on ~ : ~에 집중하다" } },
@@ -1152,7 +1167,7 @@ window.VOCAB_C = [
     syn:["ending","finding","verdict"], ant:["opening"],
     ex:[{ s:"He reached the same {{}} by a different route.", f:"conclusion", ko:"그는 다른 경로로 같은 결론에 이르렀다." }] },
 
-  { word:"concrete", pron:"칸크리트", pos:"adj", level:"B2", meanings:["구체적인","실체가 있는"],
+  { word:"concrete", exams:["공무원"], pron:"칸크리트", pos:"adj", level:"B2", meanings:["구체적인","실체가 있는"],
     syn:["definite","tangible","specific"], ant:["abstract"],
     ex:[{ s:"We need {{}} proposals, not vague hopes.", f:"concrete", ko:"우리에게는 막연한 희망이 아니라 구체적인 제안이 필요하다." }] },
 
@@ -1204,7 +1219,7 @@ window.VOCAB_C = [
     syn:["booth","cubicle","chamber"],
     ex:[{ s:"A curtain hung across the old {{}}.", f:"confessional", ko:"낡은 고해실에 커튼이 드리워져 있었다." }] },
 
-  { word:"confidence", pron:"칸피던스", pos:"n", level:"B1", meanings:["신뢰","자신감"],
+  { word:"confidence", exams:["공무원"], pron:"칸피던스", pos:"n", level:"B1", meanings:["신뢰","자신감"],
     syn:["assurance","trust","belief"], ant:["doubt"],
     ex:[{ s:"Losing twice shook his {{}} badly.", f:"confidence", ko:"두 번의 패배는 그의 자신감을 크게 흔들었다." }] },
 
@@ -1322,7 +1337,7 @@ window.VOCAB_C = [
     ex:[{ s:"He missed the train and {{}} lost the job.", f:"consequently", ko:"그는 기차를 놓쳐서 그 결과 일자리를 잃었다." }] },
 
   /* ── conserv · consid · consist ────────────── */
-  { word:"conservation", pron:"칸서베이션", pos:"n", level:"B2", meanings:["보존","보호"],
+  { word:"conservation", exams:["공무원"], pron:"칸서베이션", pos:"n", level:"B2", meanings:["보존","보호"],
     syn:["preservation","protection","upkeep"], ant:["waste"],
     ex:[{ s:"The park funds wildlife {{}} in the valley.", f:"conservation", ko:"그 공원은 계곡의 야생동물 보호에 자금을 댄다." }] },
 
@@ -1418,7 +1433,7 @@ window.VOCAB_C = [
     syn:["refer","ask","confer"],
     ex:[{ s:"You should {{}} a lawyer before signing.", f:"consult", ko:"서명하기 전에 변호사와 상담해야 한다." }] },
 
-  { word:"consume", pron:"컨슘", pos:"v", level:"B1", meanings:["소비하다","먹다"],
+  { word:"consume", exams:["공무원"], pron:"컨슘", pos:"v", level:"B1", meanings:["소비하다","먹다"],
     syn:["use","expend","devour"], ant:["produce"],
     ex:[{ s:"These lamps {{}} very little power.", f:"consume", ko:"이 램프들은 전력을 거의 쓰지 않는다." }] },
 
@@ -1451,7 +1466,7 @@ window.VOCAB_C = [
     syn:["ponder","consider","muse"],
     ex:[{ s:"He sat by the window and began to {{}} his options.", f:"contemplate", ko:"그는 창가에 앉아 선택지를 심사숙고하기 시작했다." }] },
 
-  { word:"contemporary", pron:"컨템퍼러리", pos:"adj", level:"B2", meanings:["현대의","동시대의"],
+  { word:"contemporary", exams:["공무원"], pron:"컨템퍼러리", pos:"adj", level:"B2", meanings:["현대의","동시대의"],
     syn:["modern","current","present-day"], ant:["ancient"],
     ex:[{ s:"The gallery shows only {{}} art.", f:"contemporary", ko:"그 갤러리는 현대 미술만 전시한다." }] },
 
@@ -1470,7 +1485,7 @@ window.VOCAB_C = [
     syn:["satisfied","pleased","serene"], ant:["restless"],
     ex:[{ s:"A {{}} cat slept beside the stove.", f:"contented", ko:"만족한 고양이가 난로 옆에서 잠들어 있었다." }] },
 
-  { word:"context", pron:"칸텍스트", pos:"n", level:"B1", meanings:["문맥","맥락"],
+  { word:"context", exams:["공무원"], pron:"칸텍스트", pos:"n", level:"B1", meanings:["문맥","맥락"],
     syn:["setting","background","framework"],
     ex:[{ s:"The quote makes no sense out of {{}}.", f:"context", ko:"그 인용구는 문맥을 벗어나면 뜻이 통하지 않는다." }] },
 
@@ -1478,7 +1493,7 @@ window.VOCAB_C = [
     syn:["landmass","mainland","territory"],
     ex:[{ s:"No other {{}} is so dry.", f:"continent", ko:"그만큼 건조한 대륙은 없다." }] },
 
-  { word:"continuous", pron:"컨티뉴어스", pos:"adj", level:"B1", meanings:["계속되는","끊이지 않는"],
+  { word:"continuous", exams:["공무원"], pron:"컨티뉴어스", pos:"adj", level:"B1", meanings:["계속되는","끊이지 않는"],
     syn:["unbroken","ongoing","incessant"], ant:["sporadic"],
     ex:[{ s:"The machine gave off a {{}} hum.", f:"continuous", ko:"그 기계는 계속되는 웅웅 소리를 냈다." }] },
 
@@ -1506,7 +1521,7 @@ window.VOCAB_C = [
     syn:["breach","infringe","defy"], ant:["obey"],
     ex:[{ s:"The new fence may {{}} local rules.", f:"contravene", ko:"새 울타리는 지역 규정을 위반할 수 있다." }] },
 
-  { word:"contribute", pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
+  { word:"contribute", exams:["공무원"], pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
     syn:["donate","supply","add"], ant:["withhold"],
     ex:[{ s:"Everyone was asked to {{}} one story.", f:"contribute", ko:"모두가 이야기 하나를 내놓으라는 요청을 받았다." }],
     gov:{ prep:["to","towards"], pat:"contribute {{}} the relief fund", usage:"contribute to ~ : ~에 기여하다·기부하다" } },
@@ -1536,7 +1551,7 @@ window.VOCAB_C = [
     syn:["opposite","reverse","inverse"], ant:["identical"],
     ex:[{ s:"The {{}} is also true in cold weather.", f:"converse", ko:"추운 날씨에서는 그 반대도 성립한다." }] },
 
-  { word:"conversely", pron:"컨버슬리", pos:"adv", level:"C1", meanings:["거꾸로","반대로"],
+  { word:"conversely", exams:["공무원"], pron:"컨버슬리", pos:"adv", level:"C1", meanings:["거꾸로","반대로"],
     syn:["contrarily","oppositely","instead"],
     ex:[{ s:"{{}}, warm water holds less oxygen.", f:"Conversely", ko:"거꾸로, 따뜻한 물은 산소를 덜 담는다." }] },
 
@@ -1561,7 +1576,7 @@ window.VOCAB_C = [
     syn:["belief","certainty","faith"], ant:["hesitation"],
     ex:[{ s:"She spoke with quiet {{}} about the plan.", f:"conviction", ko:"그녀는 그 계획에 대해 조용한 신념으로 말했다." }] },
 
-  { word:"convince", pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
+  { word:"convince", exams:["공무원"], pron:"컨빈스", pos:"v", level:"B1", meanings:["납득시키다","설득하다"],
     syn:["persuade","assure","satisfy"], ant:["dissuade"],
     ex:[{ s:"Nothing will {{}} him to change his mind.", f:"convince", ko:"어떤 것도 그가 마음을 바꾸도록 납득시키지 못할 것이다." }],
     gov:{ prep:["of","about","to"], pat:"convince him {{}} the risk", usage:"convince A of B : A에게 B를 납득시키다" } },
@@ -1584,7 +1599,7 @@ window.VOCAB_C = [
     syn:["organize","harmonize","align"],
     ex:[{ s:"Someone must {{}} the three rescue teams.", f:"coordinate", ko:"누군가 세 구조대를 조정해야 한다." }] },
 
-  { word:"cope with", pron:"코프 위드", pos:"phr", level:"B1", meanings:["대처하다","극복하다"],
+  { word:"cope with", exams:["공무원"], pron:"코프 위드", pos:"phr", level:"B1", meanings:["대처하다","극복하다"],
     syn:["manage","handle","endure"], ant:["succumb"] },
 
   { word:"copper", pron:"카퍼", pos:"n", level:"B1", meanings:["구리"],
@@ -1626,7 +1641,7 @@ window.VOCAB_C = [
 
   /* 원문은 '인과관계'를 함께 적었지만, 상관관계와 인과관계를 구별하는 것이
      이 단어의 핵심이므로(causality의 예문이 바로 그 이야기다) 넣지 않는다 */
-  { word:"correlation", pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
+  { word:"correlation", exams:["공무원"], pron:"코럴레이션", pos:"n", level:"B2", meanings:["상관관계","연관성"],
     syn:["connection","link","relationship"],
     ex:[{ s:"There is only a weak {{}} between the two.", f:"correlation", ko:"그 둘 사이에는 약한 상관관계만 있다." }] },
 
@@ -1722,7 +1737,7 @@ window.VOCAB_C = [
     syn:["harmful","damaging","self-defeating"], ant:["effective"],
     ex:[{ s:"Shouting proved entirely {{}}.", f:"counterproductive", ko:"소리치는 것은 완전히 역효과였다." }] },
 
-  { word:"countless", pron:"카운틀리스", pos:"adj", level:"B1", meanings:["셀 수 없이 많은","무수한"],
+  { word:"countless", exams:["공무원"], pron:"카운틀리스", pos:"adj", level:"B1", meanings:["셀 수 없이 많은","무수한"],
     syn:["innumerable","myriad","endless"], ant:["few"],
     ex:[{ s:"He tried {{}} times before it worked.", f:"countless", ko:"그는 성공하기까지 수없이 시도했다." }] },
 
@@ -1741,7 +1756,7 @@ window.VOCAB_C = [
 
   /* 유의어 respect 를 regard for others 로 바꿨다 — respect 가 동사 표제어로
      올라가기 때문이다(contempt 도 같이 손질했다). */
-  { word:"courtesy", pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
+  { word:"courtesy", exams:["공무원"], pron:"커터시", pos:"n", level:"B2", meanings:["공손함","정중함"],
     syn:["politeness","manners","regard for others"], ant:["rudeness"],
     ex:[{ s:"He held the door open out of plain {{}}.", f:"courtesy", ko:"그는 순전히 예의로 문을 잡아 주었다." }] },
 
@@ -1796,7 +1811,7 @@ window.VOCAB_C = [
     syn:["hollow","pit","basin"],
     ex:[{ s:"Rain filled the {{}} with green water.", f:"crater", ko:"비가 분화구를 초록빛 물로 채웠다." }] },
 
-  { word:"crave", pron:"크레이브", pos:"v", level:"C1", meanings:["갈망하다","열망하다"],
+  { word:"crave", exams:["공무원"], pron:"크레이브", pos:"v", level:"C1", meanings:["갈망하다","열망하다"],
     syn:["yearn","desire","hunger"], ant:["dislike"],
     ex:[{ s:"Runners often {{}} salt after a long race.", f:"crave", ko:"주자들은 긴 경기 뒤에 소금을 갈망하곤 한다." }] },
 
@@ -1825,7 +1840,7 @@ window.VOCAB_C = [
     syn:["work","invention","product"],
     ex:[{ s:"The garden is entirely her own {{}}.", f:"creation", ko:"그 정원은 전적으로 그녀 자신의 창작물이다." }] },
 
-  { word:"creativity", pron:"크리에이티비티", pos:"n", level:"B1", meanings:["창조력","독창성"],
+  { word:"creativity", exams:["공무원"], pron:"크리에이티비티", pos:"n", level:"B1", meanings:["창조력","독창성"],
     syn:["imagination","originality","inventiveness"],
     ex:[{ s:"The job rewards {{}} over speed.", f:"creativity", ko:"그 일은 속도보다 창조력에 보답한다." }] },
 
@@ -1893,7 +1908,7 @@ window.VOCAB_C = [
     syn:["rough","raw","unrefined"], ant:["refined"],
     ex:[{ s:"He made a {{}} sketch on a napkin.", f:"crude", ko:"그는 냅킨에 대충 스케치를 했다." }] },
 
-  { word:"cruel", pron:"크루얼", pos:"adj", level:"B1", meanings:["잔인한","잔혹한"],
+  { word:"cruel", exams:["공무원"], pron:"크루얼", pos:"adj", level:"B1", meanings:["잔인한","잔혹한"],
     syn:["brutal","savage","heartless"], ant:["humane"],
     ex:[{ s:"It seems {{}} to keep birds in cages.", f:"cruel", ko:"새를 우리에 두는 것은 잔인해 보인다." }] },
 
@@ -1985,7 +2000,7 @@ window.VOCAB_C = [
     syn:["money","cash","legal tender"],
     ex:[{ s:"The country changed its {{}} in 2002.", f:"currency", ko:"그 나라는 2002년에 통화를 바꿨다." }] },
 
-  { word:"current", pron:"커런트", pos:"n", level:"B1", meanings:["흐름","현재의"],
+  { word:"current", exams:["공무원"], pron:"커런트", pos:"n", level:"B1", meanings:["흐름","현재의"],
     syn:["flow","stream","tide"],
     ex:[{ s:"A strong {{}} pulled the boat sideways.", f:"current", ko:"강한 물살이 배를 옆으로 끌었다." }] },
 
@@ -2052,13 +2067,14 @@ Object.assign(window.GLOSS, {
   "clear":"트이게 하다, 치우다",
   "clients": "고객들",
   "closing": "폐쇄, 마감",
-  "competition": "경쟁",
+  "collaborative": "공동의, 합작의",
+  "commentator": "해설자, 논평자",
   "concept": "개념",
   "conclude":"끝내다, 결론을 내리다",
   "conditions": "상황, 여건",
+  "contention": "논쟁, 다툼",
   "continue":"계속하다",
   "convex":"볼록한",
-  "cooperative":"협력하는",
   "cruelty":"잔혹함",
   "crusade": "개혁 운동, 성전",
   "customers": "손님들",
@@ -2075,10 +2091,12 @@ Object.assign(window.GLOSS, {
   "ease":"쉬움, 편안함",
 
   "emotional":"감정적인",
+  "envisage": "마음속에 그려 보다",
   "evasive":"회피하는, 둘러대는",
   "exorbitant": "터무니없이 비싼",
   "expensive": "값비싼",
   "few":"거의 없는, 소수의",
+  "find fault with": "트집을 잡다, 흠을 잡다",
   "fixed":"고정된",
   "floor":"바닥, 층",
   "forget":"잊다",
@@ -2103,6 +2121,7 @@ Object.assign(window.GLOSS, {
   "humane":"인도적인, 자비로운",
   "hush":"조용해지다, 잠잠해지다",
   "idealistic":"이상주의적인",
+  "imaginatively": "상상력 풍부하게",
   "implausible": "믿기 어려운, 그럴듯하지 않은",
   "incapable":"~할 수 없는",
   "incoherence": "앞뒤가 맞지 않음, 모순",
@@ -2110,17 +2129,19 @@ Object.assign(window.GLOSS, {
   "inconspicuous":"눈에 띄지 않는",
   "inconvenient": "불편한",
   "individually": "개별적으로",
+  "innovatively": "혁신적으로",
   "input": "의견, 투입",
   "inquisitiveness": "캐묻기 좋아함, 탐구심",
   "insulator":"절연체",
+  "inventively": "독창적으로",
   "jointly": "공동으로, 함께",
   "laity":"평신도",
   "limitation": "한계, 제약",
-  "loneliness":"외로움",
   "military":"군사의, 군대의",
   "misread":"잘못 읽다, 오해하다",
   "murky":"흐린, 탁한",
   "nosiness": "참견하기 좋아함",
+  "notional": "관념상의",
   "nurse": "간호사, 돌보는 사람",
   "oblivion":"망각, 무의식",
   // celebrated(잘 알려지지 않은)와 clarify(모호하게 하다) 양쪽의 반의어로 쓰인다
@@ -2134,7 +2155,6 @@ Object.assign(window.GLOSS, {
   "personal":"개인적인",
   "politely": "예의 바르게",
   "pricey": "값이 비싼",
-  "prized": "소중한, 귀한",
   "proceed":"진행하다, 계속하다",
   "producer":"생산자",
   "provincial":"지방의, 편협한",
@@ -2150,6 +2170,7 @@ Object.assign(window.GLOSS, {
   "respectfully": "존경하는 태도로",
   "result":"결과",
   "return":"돌려주다, 반환",
+  "reviewer": "논평가, 검토자",
   "rival":"경쟁자",
   "rivalry":"경쟁, 대립",
   "rude":"무례한",
@@ -2170,14 +2191,14 @@ Object.assign(window.GLOSS, {
   "succumb":"굴복하다, 쓰러지다",
   "thought": "생각, 사려",
   "together": "다 같이, 한꺼번에",
+  "uncooperative": "비협조적인",
   "undisputed":"논란의 여지가 없는",
-  "unrelated":"관련 없는",
   "unusual":"흔하지 않은",
   "unwittingly":"무심코, 자기도 모르게",
-  "upset":"속상하게 하다",
   "vagueness":"모호함",
   "victim":"피해자, 희생자",
   "violate":"위반하다",
+  "wariness": "경계심, 신중함",
   "warm":"따뜻한",
   "weak":"약한",
   "weather": "날씨, 기상",

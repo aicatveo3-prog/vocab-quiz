@@ -57,6 +57,12 @@ window.VOCAB_T = [
   { word:"thus", exams:["공무원"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
   { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
   { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
+  { word:"transparency", exams:["공무원"], pron:"트랜스패런시", pos:"n", level:"C1", meanings:["투명성","명료함"], syn:["openness","clarity","candor"], ant:["secrecy"], ex:[{ s:"Voters demand greater {{}} in how the budget is spent.", f:"transparency", ko:"유권자들은 예산 집행에 대해 더 큰 투명성을 요구한다." }] },
+  { word:"turn into", exams:["공무원"], pron:"턴 인투", pos:"phr", level:"B1", meanings:["~으로 바뀌다","~으로 바꾸다"] },
+  { word:"take a hit", exams:["공무원"], pron:"테이크 어 힛", pos:"phr", level:"C1", meanings:["타격을 입다","손해를 보다"] },
+  { word:"touch off", exams:["공무원"], pron:"터치 오프", pos:"phr", level:"C1", meanings:["촉발하다","일으키다"], syn:["trigger","spark","give rise to"] },
+  { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
+  { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -105,7 +111,7 @@ window.VOCAB_T = [
 
   /* 승격 ① — 사전 글자 유지. 참조 avail oneself of(A)·benefit from(B)·exploit(E)
      세 곳의 화면은 바뀌지 않는다. 교재의 '이용하다' 는 harness 자리다. */
-  { word:"take advantage of", pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
+  { word:"take advantage of", exams:["공무원"], pron:"테이크 어드밴티지 오브", pos:"phr", level:"B1", meanings:["~을 이용하다"],
     syn:["avail oneself of","benefit from","exploit"] },
 
   { word:"take apart", pron:"테이크 어파트", pos:"phr", level:"B2", meanings:["분해하다"],
@@ -129,7 +135,7 @@ window.VOCAB_T = [
     syn:["cheer up","gain courage","feel encouraged"] },
 
   /* 승격 ② — 사전 글자 유지(참조 factor in). 교재의 '계산에 넣다' 는 버렸다. */
-  { word:"take into account", pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
+  { word:"take into account", exams:["공무원"], pron:"테이크 인투 어카운트", pos:"phr", level:"B2", meanings:["고려하다","참작하다"],
     syn:["factor in","allow for","weigh in the decision"] },
 
   /* 승격 ③ — 사전의 쌍반점만 쉼표로 갈랐다(참조 assume). shoulder(S 떠맡다) 와
@@ -186,7 +192,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑩ — 사전 글자 유지. 참조 concrete(C)·nonmaterial(N) 두 곳의 화면은
      바뀌지 않는다. concrete(구체적인, 실체가 있는) 와 맞물려 배제된다. */
-  { word:"tangible", pron:"탠저블", pos:"adj", level:"B2", meanings:["실체가 있는","만질 수 있는"],
+  { word:"tangible", exams:["공무원"], pron:"탠저블", pos:"adj", level:"B2", meanings:["실체가 있는","만질 수 있는"],
     syn:["concrete","able to be touched","real to the hand"], ant:["nonmaterial"],
     ex:[{ s:"They wanted a {{}} result.", f:"tangible", ko:"그들은 실체가 있는 성과를 원했다." }] },
 
@@ -331,7 +337,7 @@ window.VOCAB_T = [
      참조 nerve(N) 의 설명이 '팽팽함' 에서 '긴장, 팽팽함' 으로 늘어난다.
      nerve(신경, 긴장)·strain(S 긴장, 압박) 과 '긴장' 이 맞물려 배제된다.
      교재의 '갈등' 은 conflict·friction 자리라 버렸다. */
-  { word:"tension", pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
+  { word:"tension", exams:["공무원"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
     syn:["nerve","strain","tightness in the air"],
     ex:[{ s:"You could feel the {{}} in the room.", f:"tension", ko:"방 안의 긴장이 느껴졌다." }] },
 
@@ -538,7 +544,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉟ — 사전 단일값 유지. 참조 jeopardize(J)·menace(M) 두 곳의 화면은
      바뀌지 않는다. endanger·intimidate 까지 넷과 '위협하다' 가 맞물려 배제된다. */
-  { word:"threaten", pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
+  { word:"threaten", exams:["공무원"], pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
     syn:["jeopardize","menace","put in danger"],
     ex:[{ s:"Rising seas {{}} the village.", f:"threaten", ko:"높아지는 바다가 그 마을을 위협한다." }] },
 
@@ -572,7 +578,7 @@ window.VOCAB_T = [
     syn:["beat steadily","pound with each beat","pulse in and out"],
     ex:[{ s:"My head began to {{}}.", f:"throb", ko:"머리가 고동치기 시작했다." }] },
 
-  { word:"throne", pron:"쓰론", pos:"n", level:"C1", meanings:["왕위","왕권"],
+  { word:"throne", exams:["공무원"], pron:"쓰론", pos:"n", level:"C1", meanings:["왕위","왕권"],
     syn:["royal seat","kingly power","right to rule as king"],
     ex:[{ s:"He came to the {{}} at nine.", f:"throne", ko:"그는 아홉 살에 왕위에 올랐다." }] },
 
@@ -583,7 +589,7 @@ window.VOCAB_T = [
     ex:[{ s:"A {{}} filled the square.", f:"throng", ko:"인파가 광장을 메웠다." }] },
 
   /* 구·표현이라 예문은 두지 않는다. */
-  { word:"throughout", pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
+  { word:"throughout", exams:["공무원"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
     syn:["all the way through","from start to finish","for the whole time"] },
 
   /* abandon·discard·forsake·scrap 과 '버리다' 가, do away with·eliminate·
@@ -643,7 +649,7 @@ window.VOCAB_T = [
      교재의 to an extent·to advantage·to the point of 는 이 덩어리가 이미 빽빽해서
      아예 뺐다. */
 
-  { word:"tie the knot", pron:"타이 더 낫", pos:"phr", level:"C1", meanings:["결혼하다"],
+  { word:"tie the knot", exams:["공무원"], pron:"타이 더 낫", pos:"phr", level:"C1", meanings:["결혼하다"],
     syn:["get married","wed at last","become husband and wife"] },
 
   /* 앞 챕터의 tie(유대, 매듭) 가 넘긴 동사 '묶다' 를 이 낱말이 받는다.
@@ -713,7 +719,7 @@ window.VOCAB_T = [
 
   /* 승격 50 — 사전 단일값 유지(참조 intolerance). 교재의 '내성, 저항력' 은
      버렸다. */
-  { word:"tolerance", pron:"탈러런스", pos:"n", level:"B2", meanings:["관용"],
+  { word:"tolerance", exams:["공무원"], pron:"탈러런스", pos:"n", level:"B2", meanings:["관용"],
     syn:["willingness to allow","open mind toward others","putting up with difference"],
     ex:[{ s:"The city is known for its {{}}.", f:"tolerance", ko:"그 도시는 관용으로 알려져 있다." }] },
 
@@ -860,7 +866,7 @@ window.VOCAB_T = [
     ex:[{ s:"The lake was {{}} at dawn.", f:"tranquil", ko:"그 호수는 새벽에 고요했다." }] },
 
   /* stillness(고요, 평온 · S) 와 앞뒤만 다르게 두어 자동 배제시켰다. */
-  { word:"tranquility", pron:"트랭퀼러티", pos:"n", level:"C1", meanings:["평온","고요"],
+  { word:"tranquility", exams:["공무원"], pron:"트랭퀼러티", pos:"n", level:"C1", meanings:["평온","고요"],
     syn:["state of calm","absence of noise","quiet of mind"],
     ex:[{ s:"She longed for the {{}} of her old home.", f:"tranquility", ko:"그녀는 옛집의 평온을 그리워했다." }] },
 
@@ -962,7 +968,7 @@ window.VOCAB_T = [
   /* 승격 61 — 사전 글자 유지(참조 convert). 교재의 '변형시키다' 는
      deform(변형시키다, 기형으로 만들다 · D) 자리라 버렸다. convert·alter·switch
      가 모두 '바꾸다' 를 써서 맞물려 배제된다. */
-  { word:"transform", pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
+  { word:"transform", exams:["공무원"], pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
     syn:["convert","make over into","change the form of"],
     ex:[{ s:"Rain can {{}} the whole valley.", f:"transform", ko:"비는 골짜기 전체를 바꿔 놓을 수 있다." }] },
 
@@ -1158,7 +1164,7 @@ window.VOCAB_T = [
   /* 승격 73 — 사전 단일값 유지(참조 clan). ★ 한국어로 적으면 shortage(부족,
      품귀 · B1/n) 와 글자가 같아진다. 동음이의가 오히려 도움이 되어
      meaningsOverlap 이 둘을 서로의 오답에서 자동으로 뺀다. */
-  { word:"tribe", pron:"트라이브", pos:"n", level:"B1", meanings:["부족"],
+  { word:"tribe", exams:["공무원"], pron:"트라이브", pos:"n", level:"B1", meanings:["부족"],
     syn:["clan","people of one stock","group under one chief"],
     ex:[{ s:"The {{}} moved with the rains.", f:"tribe", ko:"그 부족은 비를 따라 움직였다." }] },
 
@@ -1303,7 +1309,7 @@ window.VOCAB_T = [
   /* 승격 84 — 사전 단일값 유지(참조 reject). '거절하다' 는 reject(거절하다,
      배척하다) 자리다. drive off(쫓아버리다, 물리치다 · C1/phr) 와 '물리치다'
      가 맞물려 배제된다. */
-  { word:"turn down", pron:"턴 다운", pos:"phr", level:"B1", meanings:["물리치다"],
+  { word:"turn down", exams:["공무원"], pron:"턴 다운", pos:"phr", level:"B1", meanings:["물리치다"],
     syn:["reject","say no to","refuse outright"] },
 
   /* ★ 첫 뜻을 '반납하다' 로 올렸다. 같은 챕터 turn over(돌려 뒤집다) 와 둘 다
@@ -1313,7 +1319,7 @@ window.VOCAB_T = [
     syn:["hand back","give up what was lent","return to the owner"] },
 
   /* 승격 85 — 사전 단일값 유지(참조 end up). */
-  { word:"turn out", pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
+  { word:"turn out", exams:["공무원"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
     syn:["end up","prove to be so","come out in the end"] },
 
   /* 승격 86 — 사전 단일값 유지(참조 flip). */
@@ -1408,6 +1414,7 @@ Object.assign(window.GLOSS, {
   "buying and selling": "사고파는 일",
   "by a shrewd move": "약삭빠른 수로",
   "calm and quiet": "차분하고 조용한",
+  "candor": "솔직함",
   "carriage of goods": "물건을 실어 나름",
   "carriage of people": "사람을 실어 나름",
   "carry goods across": "물건을 실어 건네다",
@@ -1639,6 +1646,7 @@ Object.assign(window.GLOSS, {
   "one who rents": "빌려 쓰는 사람",
   "open mind toward others": "남을 향해 열린 마음",
   "open to change": "바뀔 여지가 있는",
+  "openness": "개방성, 숨김없음",
   "pace of movement": "움직임의 빠르기",
   "paper for a degree": "학위를 위한 글",
   "passage from place to place": "한 곳에서 다른 곳으로 지나감",
@@ -1809,6 +1817,7 @@ Object.assign(window.GLOSS, {
   "turncoat": "변절자",
   "twice as much": "두 배만큼의",
   "up with the times": "시류에 뒤지지 않는",
+  "uproar": "대소동, 격렬한 항의",
   "urge one should resist": "물리쳐야 할 충동",
   "use of tricks": "꾀를 부리는 짓",
   "very much indeed": "참으로 많이",

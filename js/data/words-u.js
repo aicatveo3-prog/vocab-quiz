@@ -60,6 +60,15 @@ window.VOCAB_U = [
   { word:"utilize", exams:["공무원"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
   { word:"unemotional", exams:["공무원"], pron:"언이모셔널", pos:"adj", level:"C1", meanings:["감정을 드러내지 않는","냉정한"], syn:["detached","impassive","stoic"], ant:["emotional"], ex:[{ s:"Critical thinking may seem cold and {{}}, but it can stir strong feelings.", f:"unemotional", ko:"비판적 사고는 차갑고 감정 없는 것처럼 보이지만 강한 감정을 불러일으킬 수 있다." }] },
   { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
+  { word:"upset", exams:["공무원"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
+  { word:"unacceptable", exams:["공무원"], pron:"언액셉터블", pos:"adj", level:"B2", meanings:["받아들일 수 없는","용납할 수 없는"], syn:["intolerable","inadmissible","objectionable"], ant:["acceptable"], ex:[{ s:"Such rude behavior is simply {{}} in this office.", f:"unacceptable", ko:"그런 무례한 행동은 이 사무실에서 도저히 용납할 수 없다." }] },
+  { word:"unfold", exams:["공무원"], pron:"언폴드", pos:"v", level:"B2", meanings:["전개되다","펼치다"], syn:["develop","evolve","emerge"], ex:[{ s:"She began to {{}} the large map across the table.", f:"unfold", ko:"그녀는 커다란 지도를 탁자 위에 펼치기 시작했다." }] },
+  { word:"utter", exams:["공무원"], pron:"어터", pos:"adj", level:"C1", meanings:["완전한","입 밖에 내다"], syn:["absolute","sheer","complete","total"], ex:[{ s:"The meeting was {{}} chaos from start to finish.", f:"utter", ko:"그 회의는 처음부터 끝까지 완전한 혼돈이었다." }] },
+  { word:"undo", exams:["공무원"], pron:"언두", pos:"v", level:"B2", meanings:["풀다","원래대로 되돌리다"], syn:["unfasten","reverse","cancel"], ex:[{ s:"He loosened his collar and began to {{}} his tie.", f:"undo", ko:"그는 옷깃을 느슨하게 하고 넥타이를 풀기 시작했다." }] },
+  { word:"unpredictably", exams:["공무원"], pron:"언프리딕터블리", pos:"adv", level:"C1", meanings:["예측할 수 없게","갑자기"] },
+  { word:"unplug", exams:["공무원"], pron:"언플러그", pos:"v", level:"B2", meanings:["플러그를 뽑다","잠시 일에서 벗어나다"], ex:[{ s:"Remember to {{}} the heater before you leave.", f:"unplug", ko:"나가기 전에 히터 플러그를 뽑는 것을 잊지 마라." }] },
+  { word:"uncertainty", exams:["공무원"], pron:"언서튼티", pos:"n", level:"B2", meanings:["불확실성","불안"], syn:["doubt","insecurity","unpredictability"], ant:["certainty"], ex:[{ s:"The {{}} of the weather makes planning the trip difficult.", f:"uncertainty", ko:"날씨가 불확실해서 여행 계획을 세우기 어렵다." }] },
+  { word:"unrelated", exams:["공무원"], pron:"언릴레이티드", pos:"adj", level:"B2", meanings:["관련 없는","무관한"], syn:["irrelevant","extraneous","unconnected"], ant:["related"], ex:[{ s:"The police said the two fires were {{}}; one was an accident.", f:"unrelated", ko:"경찰은 두 화재가 서로 무관하다고 밝혔다. 하나는 사고였다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -105,7 +114,7 @@ window.VOCAB_U = [
 
   /* fundamental(근본적인, 기초적인 · B2/adj) 와 '근본적인' 이 맞물려 배제된다.
      교재의 '최고의' 는 superb(훌륭한, 최고의)·top-notch(최고 수준의) 자리다. */
-  { word:"ultimate", pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
+  { word:"ultimate", exams:["공무원"], pron:"얼티메이트", pos:"adj", level:"B1", meanings:["궁극적인","근본적인"],
     syn:["final of all","at the very end","deepest of all"],
     ex:[{ s:"Peace was their {{}} aim.", f:"ultimate", ko:"평화가 그들의 궁극적인 목표였다." }] },
 
@@ -153,7 +162,7 @@ window.VOCAB_U = [
   /* ★ 교재의 '의식을 잃은' 을 '의식이 없는' 으로 바꿨다. numb(감각을 잃은,
      마비된 · B2/adj) 와 꼴이 똑같아 영→한 선택지에 나란히 놓이면 '의식' 과
      '감각' 한 낱말로만 갈리기 때문이다. 교재 두 갈래는 같은 말이었다. */
-  { word:"unconscious", pron:"언칸셔스", pos:"adj", level:"B2", meanings:["의식이 없는"],
+  { word:"unconscious", exams:["공무원"], pron:"언칸셔스", pos:"adj", level:"B2", meanings:["의식이 없는"],
     syn:["knocked out cold","not aware of anything","in a dead faint"],
     ex:[{ s:"They found him {{}} on the floor.", f:"unconscious", ko:"그들은 그가 바닥에서 의식이 없는 것을 발견했다." }] },
 
@@ -368,12 +377,12 @@ window.VOCAB_U = [
 
   /* continuous(계속되는, 끊이지 않는 · B1/adj) 와 '계속되는' 이 맞물려 배제된다.
      위 unhindered(막는 것이 없는) 와 갈랐다. */
-  { word:"uninterrupted", pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
+  { word:"uninterrupted", exams:["공무원"], pron:"언인터럽티드", pos:"adj", level:"B2", meanings:["계속되는","끊기지 않는"],
     syn:["continuous","going on without a stop","never broken into"],
     ex:[{ s:"She had six hours of {{}} sleep.", f:"uninterrupted", ko:"그녀는 여섯 시간을 계속되는 잠으로 보냈다." }] },
 
   /* 승격 ⑮ — 사전 글자 유지(참조 distinctive). */
-  { word:"unique", pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
+  { word:"unique", exams:["공무원"], pron:"유니크", pos:"adj", level:"B1", meanings:["독특한","유일한"],
     syn:["distinctive","the only one of its kind","like no other"],
     ex:[{ s:"Each print is {{}}.", f:"unique", ko:"각 판화는 독특하다." }] },
 
@@ -430,7 +439,7 @@ window.VOCAB_U = [
      ★ integrate(융합하다, 통합시키다) 를 유의어로 넣었다 — '통합시키다' 는
      '통합하다' 와 글자가 달라 자동 배제를 빠져나가기 때문이다.
      incorporate·consolidate 는 '통합하다' 가 같아 저절로 배제된다. */
-  { word:"unite", pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
+  { word:"unite", exams:["공무원"], pron:"유나이트", pos:"v", level:"B1", meanings:["통합하다"],
     syn:["combine","integrate","join into one"], ant:["alienate"],
     ex:[{ s:"The war helped to {{}} the clans.", f:"unite", ko:"그 전쟁은 씨족들을 통합하는 데 도움이 됐다." }] },
 
@@ -777,6 +786,7 @@ Object.assign(window.GLOSS, {
   "impossible to maintain": "버텨 낼 수 없는",
   "impossible to put out of mind": "떨쳐 낼 수 없는",
   "in a dead faint": "깊이 까무러친",
+  "inadmissible": "허용될 수 없는",
   "indisputable": "논란의 여지가 없는",
   "irrefutable": "반박할 수 없는",
   "join into one": "하나로 합치다",
@@ -850,6 +860,7 @@ Object.assign(window.GLOSS, {
   "rate too low": "값을 너무 낮게 매기다",
   "rearing of a child": "아이를 길러 냄",
   "regrettably": "애석하게도",
+  "related": "관련된",
   "rise after a fall": "떨어진 뒤의 오름",
   "rough and smooth alike": "험한 길과 순한 길 모두",
   "rowdy": "소란스러운, 난폭한",
@@ -895,11 +906,14 @@ Object.assign(window.GLOSS, {
   "turning up all over": "곳곳에서 나타나는",
   "turns of fortune": "운이 뒤바뀌는 일",
   "unable to relax": "도무지 풀어지지 않는",
+  "unconnected": "연관 없는",
   "uncrewed": "승무원이 없는",
   "under the waves": "물결 아래의",
+  "unfasten": "끄르다, 풀다",
   "unforeseen": "예견하지 못한",
   "unlike how one normally is": "보통의 모습과 딴판인",
   "unmanageable": "감당할 수 없는",
+  "unpredictability": "예측 불가능성",
   "unsettling": "마음을 뒤숭숭하게 하는",
   "unsure": "확신이 없는",
   "untangle": "엉킨 것을 풀다",

@@ -68,7 +68,7 @@ window.VOCAB_Y = [
      ★ output(O)  yield → amount turned out
      교재의 명사 갈래('생산, 산출') 는 production(생산, 생산량)·output(생산량,
      산출) 자리라 버렸다. */
-  { word:"yield", pron:"일드", pos:"v", level:"B2", meanings:["산출하다","양보하다"],
+  { word:"yield", exams:["공무원"], pron:"일드", pos:"v", level:"B2", meanings:["산출하다","양보하다"],
     syn:["generate","concede","bring forth a crop"],
     ex:[{ s:"The field will {{}} more this year.", f:"yield", ko:"그 밭은 올해 더 산출할 것이다." }] },
 

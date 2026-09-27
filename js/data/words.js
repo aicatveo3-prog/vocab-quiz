@@ -65,6 +65,20 @@ window.VOCAB = [
   { word:"attendee", exams:["공무원"], pron:"어텐디", pos:"n", level:"B2", meanings:["참석자","출석자"], ant:["absentee"], ex:[{ s:"We printed enough copies for every {{}} of the seminar.", f:"attendee", ko:"세미나 참석자 모두에게 돌아갈 만큼 사본을 인쇄했다." }] },
   { word:"adulthood", exams:["공무원"], pron:"어덜트후드", pos:"n", level:"B2", meanings:["성인기","성년"], ant:["adolescence"], ex:[{ s:"Some of them are still in early {{}}.", f:"adulthood", ko:"그들 중 일부는 아직 성인기 초반에 있다." }] },
   { word:"authorize", exams:["공무원"], pron:"오서라이즈", pos:"v", level:"B2", meanings:["허가하다","권한을 주다"], syn:["approve","permit","allow"], ant:["prohibit"], ex:[{ s:"Only the manager can {{}} this payment.", f:"authorize", ko:"관리자만 이 지불을 허가할 수 있다." }] },
+  { word:"apocalyptic", exams:["공무원"], pron:"어파컬립틱", pos:"adj", level:"C2", meanings:["종말론적인","대재앙의"], syn:["catastrophic","cataclysmic","doomsday"], ex:[{ s:"Early talks about AI often ended with {{}} warnings.", f:"apocalyptic", ko:"AI에 관한 초기 논의는 흔히 종말론적인 경고로 끝났다." }] },
+  { word:"avoidance", exams:["공무원"], pron:"어보이던스", pos:"n", level:"C1", meanings:["회피","기피"], syn:["evasion","dodging","escape"], ex:[{ s:"{{}} of the problem only makes anxiety worse.", f:"Avoidance", ko:"문제를 회피하면 불안이 더 심해질 뿐이다." }] },
+  { word:"advanced", exams:["공무원"], pron:"어드밴스트", pos:"adj", level:"B1", meanings:["고급의","선진의"], syn:["sophisticated","developed","cutting-edge"], ant:["elementary","rudimentary"], ex:[{ s:"Only students who pass the basic level may take {{}} classes.", f:"advanced", ko:"기초 단계를 통과한 학생만 고급 수업을 들을 수 있다." }] },
+  { word:"adaptable", exams:["공무원"], pron:"어댑터블", pos:"adj", level:"B2", meanings:["적응력 있는","융통성 있는"], syn:["flexible","versatile","adjustable","adaptive"], ant:["rigid"], ex:[{ s:"Good employees are {{}} and quickly adjust to new tasks.", f:"adaptable", ko:"좋은 직원은 적응력이 있어 새 업무에 빨리 적응한다." }] },
+  { word:"analogous", exams:["공무원"], pron:"어낼러거스", pos:"adj", level:"C1", meanings:["유사한","비슷한"], syn:["similar","comparable","parallel"], ant:["dissimilar"], ex:[{ s:"In some ways the heart is {{}} to a pump.", f:"analogous", ko:"몇 가지 면에서 심장은 펌프와 유사하다." }] },
+  { word:"acceleration", exams:["공무원"], pron:"액셀러레이션", pos:"n", level:"C1", meanings:["가속","촉진"], ex:[{ s:"The car's sudden {{}} pressed us back into our seats.", f:"acceleration", ko:"차가 갑자기 가속하자 우리는 좌석 뒤로 밀렸다." }] },
+  { word:"addiction", exams:["공무원"], pron:"어딕션", pos:"n", level:"B2", meanings:["중독","탐닉"], syn:["dependence","compulsion","obsession"], ex:[{ s:"His {{}} to video games worried his parents.", f:"addiction", ko:"그의 비디오 게임 중독은 부모를 걱정시켰다." }] },
+  { word:"advantageous", exams:["공무원"], pron:"애드밴테이저스", pos:"adj", level:"C1", meanings:["유리한","이로운"], syn:["beneficial","favorable","profitable"], ant:["disadvantageous"], ex:[{ s:"The new tax rules are {{}} to small businesses.", f:"advantageous", ko:"새 세법은 소기업에 유리하다." }] },
+  { word:"around the corner", exams:["공무원"], pron:"어라운드 더 코너", pos:"phr", level:"B2", meanings:["코앞에 다가온","아주 가까이에"], syn:["imminent","upcoming","approaching"] },
+  { word:"acidification", exams:["공무원"], pron:"어시디피케이션", pos:"n", level:"C2", meanings:["산성화"], ex:[{ s:"Ocean {{}} threatens coral reefs around the world.", f:"acidification", ko:"해양 산성화는 전 세계의 산호초를 위협한다." }] },
+  { word:"acidify", exams:["공무원"], pron:"어시디파이", pos:"v", level:"C2", meanings:["산성화하다","산성이 되다"], ex:[{ s:"As the oceans absorb carbon dioxide, they slowly {{}}.", f:"acidify", ko:"바다는 이산화탄소를 흡수하면서 서서히 산성화된다." }] },
+  { word:"acidity", exams:["공무원"], pron:"어시디티", pos:"n", level:"C1", meanings:["산성도","신맛"], ex:[{ s:"Farmers test the {{}} of the soil before planting.", f:"acidity", ko:"농부들은 씨를 뿌리기 전에 토양의 산성도를 검사한다." }] },
+  { word:"amass", exams:["공무원"], pron:"어매스", pos:"v", level:"C1", meanings:["모으다","쌓아 올리다"], syn:["accumulate","gather","hoard"], ex:[{ s:"Over the years she managed to {{}} a large fortune.", f:"amass", ko:"그녀는 수년에 걸쳐 막대한 재산을 모았다." }] },
+  { word:"assurance", exams:["공무원"], pron:"어슈어런스", pos:"n", level:"C1", meanings:["확신","보증"], syn:["confidence","certainty","conviction"], ant:["nervousness"], ex:[{ s:"She answered the difficult question with calm {{}}.", f:"assurance", ko:"그녀는 어려운 질문에 침착하고 자신 있게 답했다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
@@ -85,7 +99,7 @@ window.VOCAB = [
     syn:["unusual","atypical","irregular"], ant:["normal"],
     ex:[{ s:"The test revealed an {{}} level of iron in his blood.", f:"abnormal", ko:"검사에서 그의 혈액 내 철분이 비정상적인 수치로 나타났다." }] },
 
-  { word:"abolish", pron:"어발리쉬", pos:"v", level:"B2", meanings:["폐지하다","철폐하다"],
+  { word:"abolish", exams:["공무원"], pron:"어발리쉬", pos:"v", level:"B2", meanings:["폐지하다","철폐하다"],
     syn:["eliminate","repeal","annul"], ant:["establish"],
     ex:[{ s:"The country voted to {{}} the death penalty.", f:"abolish", ko:"그 나라는 사형제를 폐지하기로 표결했다." }] },
 
@@ -124,7 +138,7 @@ window.VOCAB = [
      표제어(제시하다, 주다 · v)로 올라가면서 이 자리의 뜻풀이가 '제시하다, 주다'
      로 바뀌어 버린다 — 결석한의 반의어로는 말이 안 된다. 사전에만 있던 동안에도
      '제시하다; 현재의' 로 떠서 이미 어긋나 있던 자리다. */
-  { word:"absent", pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
+  { word:"absent", exams:["공무원"], pron:"앱센트", pos:"adj", level:"B1", meanings:["결석한","부재한"],
     syn:["away","missing","gone"], ant:["in attendance"],
     ex:[{ s:"Three students were {{}} from class today.", f:"absent", ko:"오늘 세 명의 학생이 수업에 결석했다." }],
     gov:{ prep:["from"], pat:"absent {{}} class", usage:"absent from ~ : ~에 결석한" } },
@@ -174,7 +188,7 @@ window.VOCAB = [
     syn:["plentiful","ample","copious"], ant:["scarce"],
     ex:[{ s:"Rainfall is {{}} in this region all year.", f:"abundant", ko:"이 지역은 일 년 내내 강우가 풍부하다." }] },
 
-  { word:"abuse", pron:"어뷰스", pos:"n", level:"B2", meanings:["학대","남용"],
+  { word:"abuse", exams:["공무원"], pron:"어뷰스", pos:"n", level:"B2", meanings:["학대","남용"],
     syn:["mistreatment","misuse","maltreatment"], ant:["care"],
     ex:[{ s:"The report exposed the {{}} of public funds.", f:"abuse", ko:"그 보고서는 공적 자금의 남용을 폭로했다." }] },
 
@@ -252,7 +266,7 @@ window.VOCAB = [
     syn:["auditor","bookkeeper","comptroller"],
     ex:[{ s:"An {{}} reviewed the company's yearly records.", f:"accountant", ko:"회계사가 그 회사의 연간 기록을 검토했다." }] },
 
-  { word:"accumulate", pron:"어큐뮬레이트", pos:"v", level:"B2", meanings:["축적하다","모으다"],
+  { word:"accumulate", exams:["공무원"], pron:"어큐뮬레이트", pos:"v", level:"B2", meanings:["축적하다","모으다"],
     syn:["amass","gather","stockpile"], ant:["disperse"],
     ex:[{ s:"Dust began to {{}} on the unused shelves.", f:"accumulate", ko:"쓰지 않는 선반에 먼지가 쌓이기 시작했다." }] },
 
@@ -400,7 +414,7 @@ window.VOCAB = [
     syn:["modify","adapt","regulate"],
     ex:[{ s:"Please {{}} the seat before you start driving.", f:"adjust", ko:"운전을 시작하기 전에 좌석을 조절하세요." }] },
 
-  { word:"adjust to", pron:"어저스트 투", pos:"phr", level:"B2", meanings:["~에 적응하다"],
+  { word:"adjust to", exams:["공무원"], pron:"어저스트 투", pos:"phr", level:"B2", meanings:["~에 적응하다"],
     syn:["get used to","adapt to","acclimate to"] },
 
   { word:"adjustment", pron:"어저스트먼트", pos:"n", level:"B2", meanings:["조정","적응"],
@@ -443,7 +457,7 @@ window.VOCAB = [
     syn:["youth","teens","puberty"], ant:["adulthood"],
     ex:[{ s:"Sleep patterns change greatly during {{}}.", f:"adolescence", ko:"수면 양상은 청소년기에 크게 변한다." }] },
 
-  { word:"adopt", pron:"어답트", pos:"v", level:"B2", meanings:["채택하다","입양하다"],
+  { word:"adopt", exams:["공무원"], pron:"어답트", pos:"v", level:"B2", meanings:["채택하다","입양하다"],
     syn:["embrace","take up","assume"], ant:["reject"],
     ex:[{ s:"The city plans to {{}} a stricter recycling rule.", f:"adopt", ko:"그 도시는 더 엄격한 재활용 규칙을 채택할 계획이다." }] },
 
@@ -502,7 +516,7 @@ window.VOCAB = [
     syn:["marketing","publicity","promotion"],
     ex:[{ s:"She built a career in digital {{}}.", f:"advertising", ko:"그녀는 디지털 광고 분야에서 경력을 쌓았다." }] },
 
-  { word:"advise", pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
+  { word:"advise", exams:["공무원"], pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
     syn:["counsel","recommend","suggest"],
     ex:[{ s:"Doctors {{}} patients to walk every day.", f:"advise", ko:"의사들은 환자에게 매일 걷기를 권고한다." }] },
 
@@ -563,7 +577,7 @@ window.VOCAB = [
     syn:["wealthy","prosperous","well-off"], ant:["poor"],
     ex:[{ s:"The school serves a largely {{}} neighborhood.", f:"affluent", ko:"그 학교는 대체로 부유한 지역을 담당한다." }] },
 
-  { word:"afford", pron:"어포드", pos:"v", level:"B1", meanings:["~할 여유가 있다","감당하다"],
+  { word:"afford", exams:["공무원"], pron:"어포드", pos:"v", level:"B1", meanings:["~할 여유가 있다","감당하다"],
     syn:["manage","bear","sustain"],
     ex:[{ s:"We cannot {{}} to lose another week.", f:"afford", ko:"우리는 또 한 주를 잃을 여유가 없다." }] },
 
@@ -584,7 +598,7 @@ window.VOCAB = [
     syn:["schedule","program","plan"],
     ex:[{ s:"Climate policy topped the {{}} at the summit.", f:"agenda", ko:"정상회담에서 기후 정책이 의제의 첫 순위였다." }] },
 
-  { word:"agent", pron:"에이전트", pos:"n", level:"B1", meanings:["대리인","중개인"],
+  { word:"agent", exams:["공무원"], pron:"에이전트", pos:"n", level:"B1", meanings:["대리인","중개인"],
     syn:["representative","broker","intermediary"],
     ex:[{ s:"Her {{}} negotiated the contract for her.", f:"agent", ko:"그녀의 대리인이 그녀를 위해 계약을 협상했다." }] },
 
@@ -717,7 +731,7 @@ window.VOCAB = [
     syn:["supposed","claimed","reputed"], ant:["proven"],
     ex:[{ s:"The {{}} theft occurred late at night.", f:"alleged", ko:"주장된 그 절도는 밤늦게 일어났다." }] },
 
-  { word:"alleviate", pron:"얼리비에이트", pos:"v", level:"C1", meanings:["완화하다","덜다"],
+  { word:"alleviate", exams:["공무원"], pron:"얼리비에이트", pos:"v", level:"C1", meanings:["완화하다","덜다"],
     syn:["ease","relieve","mitigate"], ant:["aggravate"],
     ex:[{ s:"The grant aims to {{}} rural poverty.", f:"alleviate", ko:"그 보조금은 농촌 빈곤을 완화하는 것을 목표로 한다." }] },
 
@@ -856,7 +870,7 @@ window.VOCAB = [
     syn:["entertainment","enjoyment","diversion"], ant:["boredom"],
     ex:[{ s:"She watched the puppies with obvious {{}}.", f:"amusement", ko:"그녀는 강아지들을 뚜렷한 즐거움으로 바라보았다." }] },
 
-  { word:"analogy", pron:"어낼러지", pos:"n", level:"C1", meanings:["비유","유사점"],
+  { word:"analogy", exams:["공무원"], pron:"어낼러지", pos:"n", level:"C1", meanings:["비유","유사점"],
     syn:["comparison","close likeness","resemblance"], ant:["contrast"],
     ex:[{ s:"He drew an {{}} between the brain and a city.", f:"analogy", ko:"그는 뇌와 도시 사이의 비유를 이끌어 냈다." }] },
 
@@ -952,7 +966,7 @@ window.VOCAB = [
     syn:["front","forward","fore"], ant:["posterior"],
     ex:[{ s:"The muscle runs along the {{}} part of the thigh.", f:"anterior", ko:"그 근육은 허벅지 앞쪽을 따라 이어진다." }] },
 
-  { word:"anthropology", pron:"앤스로폴러지", pos:"n", level:"C1", meanings:["인류학"],
+  { word:"anthropology", exams:["공무원"], pron:"앤스로폴러지", pos:"n", level:"C1", meanings:["인류학"],
     syn:["ethnology","social science","humanities"],
     ex:[{ s:"She teaches cultural {{}} at the university.", f:"anthropology", ko:"그녀는 대학에서 문화 인류학을 가르친다." }] },
 
@@ -1004,7 +1018,7 @@ window.VOCAB = [
     syn:["worried","nervous","uneasy"], ant:["relaxed"],
     ex:[{ s:"She felt {{}} before the interview.", f:"anxious", ko:"그녀는 면접 전에 불안했다." }] },
 
-  { word:"apart from", pron:"어파트 프럼", pos:"phr", level:"B1", meanings:["~을 제외하고","~외에는"],
+  { word:"apart from", exams:["공무원"], pron:"어파트 프럼", pos:"phr", level:"B1", meanings:["~을 제외하고","~외에는"],
     syn:["except for","besides","aside from"] },
 
   { word:"apathy", pron:"애퍼시", pos:"n", level:"C1", meanings:["무관심","냉담"],
@@ -1024,7 +1038,7 @@ window.VOCAB = [
     ex:[{ s:"He refused to {{}} for the remark.", f:"apologize", ko:"그는 그 발언에 대해 사과하기를 거부했다." }],
     gov:{ prep:["for","to"], pat:"apologize {{}} the delay", usage:"apologize for ~ : ~에 대해 사과하다" } },
 
-  { word:"apparatus", pron:"애퍼래터스", pos:"n", level:"C1", meanings:["장치","기구"],
+  { word:"apparatus", exams:["공무원"], pron:"애퍼래터스", pos:"n", level:"C1", meanings:["장치","기구"],
     syn:["equipment","device","machinery"],
     ex:[{ s:"The lab installed new breathing {{}}.", f:"apparatus", ko:"실험실은 새 호흡 장치를 설치했다." }] },
 
@@ -1068,7 +1082,7 @@ window.VOCAB = [
   { word:"apply for", pron:"어플라이 포", pos:"phr", level:"B1", meanings:["~에 지원하다","~을 신청하다"],
     syn:["request","seek","put in for"] },
 
-  { word:"apply to", pron:"어플라이 투", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
+  { word:"apply to", exams:["공무원"], pron:"어플라이 투", pos:"phr", level:"B2", meanings:["~에 적용되다","~에 해당하다"],
     syn:["pertain to","relate to","concern"] },
 
   { word:"appointment", exams:["공무원"], pron:"어포인트먼트", pos:"n", level:"B1", meanings:["약속","임명"],
@@ -1087,7 +1101,7 @@ window.VOCAB = [
     syn:["grateful","thankful","admiring"], ant:["ungrateful"],
     ex:[{ s:"The crowd was warmly {{}} of the performance.", f:"appreciative", ko:"관중은 그 공연에 따뜻한 찬사를 보냈다." }] },
 
-  { word:"apprehend", pron:"애프리헨드", pos:"v", level:"C2", meanings:["체포하다","파악하다"],
+  { word:"apprehend", exams:["공무원"], pron:"애프리헨드", pos:"v", level:"C2", meanings:["체포하다","파악하다"],
     syn:["arrest","capture","seize"], ant:["release"],
     ex:[{ s:"Police managed to {{}} the suspect at dawn.", f:"apprehend", ko:"경찰은 새벽에 용의자를 체포하는 데 성공했다." }] },
 
@@ -1295,11 +1309,11 @@ window.VOCAB = [
     syn:["gathering","congress","meeting"],
     ex:[{ s:"The {{}} voted to delay the new law.", f:"assembly", ko:"의회는 새 법을 미루기로 표결했다." }] },
 
-  { word:"assert", pron:"어서트", pos:"v", level:"C1", meanings:["단언하다","주장하다"],
+  { word:"assert", exams:["공무원"], pron:"어서트", pos:"v", level:"C1", meanings:["단언하다","주장하다"],
     syn:["declare","affirm","maintain"], ant:["deny"],
     ex:[{ s:"She continued to {{}} her innocence.", f:"assert", ko:"그녀는 계속 자신의 결백을 주장했다." }] },
 
-  { word:"assertive", pron:"어서티브", pos:"adj", level:"C1", meanings:["확신에 찬","적극적인"],
+  { word:"assertive", exams:["공무원"], pron:"어서티브", pos:"adj", level:"C1", meanings:["확신에 찬","적극적인"],
     syn:["confident","forceful","self-assured"], ant:["timid"],
     ex:[{ s:"A good leader must be {{}} but fair.", f:"assertive", ko:"좋은 지도자는 적극적이되 공정해야 한다." }] },
 
@@ -1352,7 +1366,7 @@ window.VOCAB = [
     syn:["classify","sort","categorize"], ant:["mix"],
     ex:[{ s:"Workers {{}} the fruit by size and color.", f:"assort", ko:"인부들은 과일을 크기와 색으로 분류한다." }] },
 
-  { word:"assume", pron:"어슘", pos:"v", level:"B2", meanings:["추정하다","(책임을) 지다"],
+  { word:"assume", exams:["공무원"], pron:"어슘", pos:"v", level:"B2", meanings:["추정하다","(책임을) 지다"],
     /* ★ syn 의 "presume" 을 "take for granted" 로 바꿨다. presume(P) 은 표제어이고
        그 뜻이 '추정하다, 가정하다' 인데, 사전이 suppose 에도 똑같은 글자를 적어
        두어 이 목록에 설명이 완전히 같은 선택지가 둘 있었다. suppose 가 S 세트에서
@@ -1360,7 +1374,7 @@ window.VOCAB = [
     syn:["suppose","take for granted","take on"],
     ex:[{ s:"Do not {{}} that silence means agreement.", f:"assume", ko:"침묵이 동의를 뜻한다고 추정하지 마라." }] },
 
-  { word:"assumption", pron:"어섬션", pos:"n", level:"B2", meanings:["추정","가정"],
+  { word:"assumption", exams:["공무원"], pron:"어섬션", pos:"n", level:"B2", meanings:["추정","가정"],
     syn:["presumption","supposition","premise"],
     ex:[{ s:"The plan rests on one shaky {{}}.", f:"assumption", ko:"그 계획은 하나의 불안정한 가정에 기대고 있다." }] },
 
@@ -1466,7 +1480,7 @@ window.VOCAB = [
     syn:["nuclear","subatomic","molecular"],
     ex:[{ s:"The museum explains {{}} energy simply.", f:"atomic", ko:"그 박물관은 원자력 에너지를 쉽게 설명한다." }] },
 
-  { word:"attach", pron:"어태치", pos:"v", level:"B1", meanings:["첨부하다","붙이다"],
+  { word:"attach", exams:["공무원"], pron:"어태치", pos:"v", level:"B1", meanings:["첨부하다","붙이다"],
     syn:["fasten","affix","append"], ant:["detach"],
     ex:[{ s:"Please {{}} your resume to the email.", f:"attach", ko:"이메일에 이력서를 첨부해 주세요." }] },
 
@@ -1482,7 +1496,7 @@ window.VOCAB = [
     syn:["achievement","accomplishment","success"], ant:["failure"],
     ex:[{ s:"The award honors lifetime {{}} in science.", f:"attainment", ko:"그 상은 과학 분야의 평생 업적을 기린다." }] },
 
-  { word:"attempt", pron:"어템트", pos:"v", level:"B1", meanings:["시도하다","노력하다"],
+  { word:"attempt", exams:["공무원"], pron:"어템트", pos:"v", level:"B1", meanings:["시도하다","노력하다"],
     syn:["try","endeavor","strive"],
     ex:[{ s:"She will {{}} the exam again next month.", f:"attempt", ko:"그녀는 다음 달에 그 시험에 다시 도전할 것이다." }] },
 
@@ -1509,7 +1523,7 @@ window.VOCAB = [
     syn:["loft","garret","upper room"], ant:["basement"],
     ex:[{ s:"Old letters were stored in the {{}}.", f:"attic", ko:"오래된 편지들은 다락방에 보관되어 있었다." }] },
 
-  { word:"attire", pron:"어타이어", pos:"n", level:"C1", meanings:["의복","복장"],
+  { word:"attire", exams:["공무원"], pron:"어타이어", pos:"n", level:"C1", meanings:["의복","복장"],
     syn:["clothing","dress","garb"],
     ex:[{ s:"Formal {{}} is required at the ceremony.", f:"attire", ko:"그 행사에는 정장 복장이 요구된다." }] },
 
@@ -1521,7 +1535,7 @@ window.VOCAB = [
     syn:["lawyer","counsel","advocate"],
     ex:[{ s:"Her {{}} advised her to stay silent.", f:"attorney", ko:"그녀의 변호사는 침묵을 지키라고 조언했다." }] },
 
-  { word:"attract", pron:"어트랙트", pos:"v", level:"B1", meanings:["끌다","매혹하다"],
+  { word:"attract", exams:["공무원"], pron:"어트랙트", pos:"v", level:"B1", meanings:["끌다","매혹하다"],
     syn:["draw","lure","entice"], ant:["repel"],
     ex:[{ s:"Bright flowers {{}} bees and butterflies.", f:"attract", ko:"화려한 꽃은 벌과 나비를 끌어들인다." }] },
 
@@ -1536,7 +1550,7 @@ window.VOCAB = [
   { word:"attribute A to B", pron:"어트리뷰트 에이 투 비", pos:"phr", level:"C1", meanings:["A를 B의 탓으로 돌리다"],
     syn:["ascribe A to B","credit A to B","blame B for A"] },
 
-  { word:"auction", pron:"옥션", pos:"n", level:"B2", meanings:["경매"],
+  { word:"auction", exams:["공무원"], pron:"옥션", pos:"n", level:"B2", meanings:["경매"],
     syn:["sale","bidding","public sale"],
     ex:[{ s:"The painting sold at {{}} for a record price.", f:"auction", ko:"그 그림은 경매에서 기록적인 가격에 팔렸다." }] },
 
@@ -1544,7 +1558,7 @@ window.VOCAB = [
     syn:["perceptible","clear","discernible"], ant:["inaudible"],
     ex:[{ s:"Her voice was barely {{}} over the wind.", f:"audible", ko:"그녀의 목소리는 바람 소리에 거의 들리지 않았다." }] },
 
-  { word:"audience", pron:"오디언스", pos:"n", level:"B1", meanings:["관객","청중"],
+  { word:"audience", exams:["공무원"], pron:"오디언스", pos:"n", level:"B1", meanings:["관객","청중"],
     syn:["spectators","viewers","listeners"],
     ex:[{ s:"The {{}} clapped for a full minute.", f:"audience", ko:"관객은 꼬박 1분간 박수를 쳤다." }] },
 
@@ -1649,7 +1663,7 @@ window.VOCAB = [
     syn:["keen","enthusiastic","eager"], ant:["indifferent"],
     ex:[{ s:"She is an {{}} reader of detective novels.", f:"avid", ko:"그녀는 추리 소설을 열심히 읽는 독자이다." }] },
 
-  { word:"avoid", pron:"어보이드", pos:"v", level:"B1", meanings:["피하다"],
+  { word:"avoid", exams:["공무원"], pron:"어보이드", pos:"v", level:"B1", meanings:["피하다"],
     syn:["evade","shun","sidestep"], ant:["confront"],
     ex:[{ s:"Drivers should {{}} the flooded road.", f:"avoid", ko:"운전자들은 침수된 도로를 피해야 한다." }] },
 
@@ -1711,17 +1725,20 @@ window.GLOSS = {
   "calm":"차분한, 침착한",
   "care":"돌봄, 보살핌",
   "careless":"부주의한",
+  "cataclysmic": "대격변의",
   "clumsiness":"서투름",
   "cold":"차가운, 냉담한",
   "comfort":"편안함, 위안",
   "confident":"자신 있는",
   "criticism":"비판, 비평",
+  "cutting-edge": "최첨단의",
   "deactivate":"비활성화하다",
   "decelerate":"감속하다",
   "delight":"기쁨, 즐거움",
   "departure":"출발, 떠남",
   "dependent":"의존하는",
   "despise":"경멸하다",
+  "disadvantageous": "불리한",
   "disappearance":"실종, 사라짐",
   "disapproval":"불찬성",
   "disapproving":"못마땅해하는",
@@ -1732,6 +1749,7 @@ window.GLOSS = {
   "dissociate":"분리하다, 관계를 끊다",
   "distant":"먼, 거리가 있는",
   "distracted":"산만한",
+  "doomsday": "종말의, 최후의 날",
   "during": "~동안에",
   "engaging": "매력 있는, 호감을 주는",
   "establishment":"설립, 기관",
@@ -1745,7 +1763,6 @@ window.GLOSS = {
   "graceful":"우아한",
   "grounded":"지상에 있는, 이륙하지 못한",
   "health":"건강",
-  "inability":"무능력",
   "inappropriate":"부적절한",
   "inattentive":"부주의한",
   "inaudible":"들리지 않는",
@@ -1800,7 +1817,6 @@ window.GLOSS = {
   "tampering": "부정 조작, 변조",
   "terrestrial":"육지의, 지상의",
   "tiny":"아주 작은",
-  "unacceptable": "받아들일 수 없는",
   "unappealing": "매력 없는",
   "unavailable":"이용할 수 없는",
   "unfriendly":"불친절한",
