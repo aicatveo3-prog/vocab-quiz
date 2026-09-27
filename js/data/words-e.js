@@ -2113,7 +2113,6 @@ Object.assign(window.GLOSS, {
   "leading article":"주요 논설",
   "old": "늙은, 오래된",
   "opinion piece":"의견 기고문",
-  "poisonous":"유독한, 독이 있는",
   "potency":"효력, 위력",
   "recreation": "휴양, 레크리에이션",
   "reiterate": "거듭 말하다",

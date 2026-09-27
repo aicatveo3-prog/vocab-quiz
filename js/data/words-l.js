@@ -57,6 +57,9 @@ window.VOCAB_L = [
   { word:"life-threatening", exams:["수능"], pron:"라이프 스레트닝", pos:"adj", level:"B2", meanings:["생명을 위협하는"], ex:[{ s:"Hospitals must always be ready for {{}} emergencies.", f:"life-threatening", ko:"병원은 생명을 위협하는 응급 상황에 늘 대비해야 한다." }] },
   { word:"lifeless", exams:["수능"], pron:"라이프리스", pos:"adj", level:"B2", meanings:["생명이 없는","생기 없는"], syn:["inanimate","dull","listless"], ant:["lively"], ex:[{ s:"Without any movement, the dress on the display figure looked {{}}.", f:"lifeless", ko:"전혀 움직임이 없어 전시용 인체 모형에 입힌 옷은 생기 없어 보였다." }] },
   { word:"limitation", exams:["수능"], pron:"리미테이션", pos:"n", level:"B2", meanings:["한계","제약"], syn:["constraint","restriction","drawback"], ex:[{ s:"Writers must recognize the {{}} of writing without feedback.", f:"limitation", ko:"작가는 피드백 없는 글쓰기의 한계를 인식해야 한다." }] },
+  { word:"lively", exams:["수능"], pron:"라이블리", pos:"adj", level:"B1", meanings:["활기찬","생동감 있는"], syn:["energetic","vibrant","spirited"], ant:["dull","lifeless"], ex:[{ s:"Their conversation grew {{}} as everyone joined in.", f:"lively", ko:"모두가 끼어들면서 그들의 대화는 활기를 띠었다." }] },
+  { word:"loop", exams:["수능"], pron:"루프", pos:"n", level:"B2", meanings:["고리","순환"], ex:[{ s:"Perception and action form a feedback {{}}.", f:"loop", ko:"지각과 행동은 피드백 고리를 이룬다." }] },
+  { word:"loyalty", exams:["수능"], pron:"로열티", pos:"n", level:"B2", meanings:["충성","충실"], syn:["allegiance","devotion","faithfulness"], ant:["betrayal"], ex:[{ s:"The firms were built on family ties, trust, and {{}}.", f:"loyalty", ko:"그 회사들은 가족 유대, 신뢰, 충성을 바탕으로 세워졌다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -734,6 +737,7 @@ Object.assign(window.GLOSS, {
   "accountability": "책임성, 해명 의무",
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
+  "allegiance": "충성 서약, 충절",
   "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
   "answerable": "책임을 져야 하는",
@@ -747,6 +751,7 @@ Object.assign(window.GLOSS, {
   "be outpaced": "앞질리다",
   "be situated": "위치해 있다",
   "become void": "무효가 되다",
+  "betrayal": "배신",
   "blistering": "맹렬히 빠른",
   "boisterously": "떠들썩하게",
   "booby trap": "위장 폭탄",
@@ -784,6 +789,7 @@ Object.assign(window.GLOSS, {
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",
+  "faithfulness": "성실함, 신의",
   "farm animals": "농장 동물",
   "featherweight": "깃털처럼 가벼운",
   "flanking": "측면을 이루는",

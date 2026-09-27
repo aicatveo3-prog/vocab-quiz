@@ -83,6 +83,7 @@ window.VOCAB_M = [
   { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
   { word:"make a case for", exams:["공무원"], pron:"메이크 어 케이스 포", pos:"phr", level:"C1", meanings:["~을 옹호하는 주장을 펴다","~을 강력히 주장하다"] },
   { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
+  { word:"manipulation", exams:["수능"], pron:"머니퓰레이션", pos:"n", level:"C1", meanings:["조작","교묘한 처리"], ex:[{ s:"The lyricists used clever linguistic {{}} to tell stories.", f:"manipulation", ko:"작사가들은 영리한 언어 조작으로 이야기를 들려주었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

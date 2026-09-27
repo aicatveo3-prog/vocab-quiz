@@ -1797,7 +1797,6 @@ Object.assign(window.GLOSS, {
   "pliable":"잘 휘어지는",
   "pliancy":"휘기 쉬움",
   "pour into":"쏟아져 들어가다",
-  "prosper":"번창하다",
   "rise and fall":"오르내리다",
   "run away":"달아나 버리다",
   "running water":"흐르는 물",

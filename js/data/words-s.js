@@ -118,6 +118,9 @@ window.VOCAB_S = [
   { word:"subservient", exams:["공무원"], pron:"서브서비언트", pos:"adj", level:"C2", meanings:["굴종하는","종속된"], syn:["submissive","servile","obedient"], ant:["dominant"] },
   { word:"staggering", exams:["공무원"], pron:"스태거링", pos:"adj", level:"C1", meanings:["엄청난","충격적인"], syn:["astonishing","overwhelming","enormous"], ex:[{ s:"Many graduates leave college with {{}} amounts of debt.", f:"staggering", ko:"많은 졸업생이 엄청난 액수의 빚을 안고 대학을 나선다." }] },
   { word:"stand up for", exams:["공무원"], pron:"스탠드 업 포", pos:"phr", level:"B2", meanings:["~을 지키다","~의 편을 들다"] },
+  { word:"sculpture", exams:["수능"], pron:"스컬프처", pos:"n", level:"B1", meanings:["조각","조각품"], syn:["statue","carving","engraving"], ex:[{ s:"The museum displays ancient Greek {{}}.", f:"sculpture", ko:"그 박물관은 고대 그리스 조각품을 전시한다." }] },
+  { word:"secrecy", exams:["수능"], pron:"시크러시", pos:"n", level:"C1", meanings:["비밀 유지","비밀"], syn:["confidentiality","privacy","concealment"], ant:["transparency"], ex:[{ s:"The firms worked in relative {{}} to protect their information.", f:"secrecy", ko:"그 회사들은 정보를 지키려고 비교적 비밀리에 일했다." }] },
+  { word:"significance", exams:["수능"], pron:"시그니피컨스", pos:"n", level:"B2", meanings:["중요성","의미"], syn:["importance","meaning","weight"], ex:[{ s:"Few people understood the {{}} of the discovery at first.", f:"significance", ko:"처음에는 그 발견의 중요성을 이해한 사람이 거의 없었다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -2907,6 +2910,7 @@ Object.assign(window.GLOSS, {
   "complexity": "복잡성",
   "con": "속임수",
   "conditional": "조건부의",
+  "confidentiality": "기밀성",
   "contemptuous": "업신여기는",
   "contextual": "맥락상의, 문맥의",
   "cool dark spot": "시원하고 어두운 자리",
@@ -3457,6 +3461,7 @@ Object.assign(window.GLOSS, {
   "press hard together": "세게 맞눌러 붙이다",
   "pretend to have": "가진 척하다",
   "prick with a point": "뾰족한 것으로 찌르다",
+  "privacy": "사생활",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "proposal for thought": "생각해 보라고 내는 안",
   "protect one's honor": "명예를 지키다",

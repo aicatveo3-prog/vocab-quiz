@@ -125,6 +125,13 @@ window.VOCAB_P = [
   { word:"prized", exams:["공무원"], pron:"프라이즈드", pos:"adj", level:"C1", meanings:["소중한","귀하게 여기는"], syn:["cherished","treasured","valued"], ex:[{ s:"Among her most {{}} possessions was an old silver watch.", f:"prized", ko:"그녀가 가장 아끼는 소지품 중에 낡은 은시계가 있었다." }] },
   { word:"primarily", exams:["공무원","수능"], pron:"프라이메럴리", pos:"adv", level:"B2", meanings:["주로","우선"], syn:["mainly","chiefly","mostly"] },
   { word:"pass away", exams:["공무원"], pron:"패스 어웨이", pos:"phr", level:"B1", meanings:["세상을 떠나다","돌아가시다"] },
+  { word:"pace", exams:["수능"], pron:"페이스", pos:"n", level:"B1", meanings:["속도","걸음"], syn:["speed","tempo","rate"], ex:[{ s:"Water clocks drip at a steady {{}}.", f:"pace", ko:"물시계는 일정한 속도로 물방울을 떨어뜨린다." }] },
+  { word:"persuasion", exams:["수능"], pron:"퍼스웨이전", pos:"n", level:"B2", meanings:["설득"], syn:["convincing","coaxing","inducement"], ex:[{ s:"After some {{}}, she agreed to join the reading club.", f:"persuasion", ko:"약간의 설득 끝에 그녀는 독서 모임에 들어가기로 했다." }] },
+  { word:"philosopher", exams:["수능"], pron:"필라서퍼", pos:"n", level:"B1", meanings:["철학자"], ex:[{ s:"The Greek {{}} Aristotle wrote about ethics.", f:"philosopher", ko:"그리스 철학자 아리스토텔레스는 윤리에 관해 썼다." }] },
+  { word:"poisonous", exams:["수능"], pron:"포이즈너스", pos:"adj", level:"B1", meanings:["유독한","독이 있는"], syn:["toxic","noxious","venomous"], ant:["edible"], ex:[{ s:"Some wild mushrooms are so {{}} that one bite can kill you.", f:"poisonous", ko:"어떤 야생 버섯은 독성이 너무 강해 한 입만 먹어도 죽을 수 있다." }] },
+  { word:"profitability", exams:["수능"], pron:"프라피터빌리티", pos:"n", level:"C1", meanings:["수익성"], ex:[{ s:"Access to market information was key to the firms' {{}}.", f:"profitability", ko:"시장 정보를 얻는 것이 그 회사들의 수익성의 열쇠였다." }] },
+  { word:"prosper", exams:["수능"], pron:"프라스퍼", pos:"v", level:"B2", meanings:["번영하다","번창하다"], syn:["flourish","thrive","boom"], ant:["decline"], ex:[{ s:"Only under stable laws can a nation truly {{}}.", f:"prosper", ko:"안정된 법 아래에서만 나라가 진정으로 번영할 수 있다." }] },
+  { word:"pursuit", exams:["수능"], pron:"퍼수트", pos:"n", level:"B2", meanings:["추구","추적"], syn:["quest","search","chase"], ex:[{ s:"The {{}} of happiness is a basic human right.", f:"pursuit", ko:"행복 추구는 인간의 기본권이다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2302,6 +2309,7 @@ Object.assign(window.GLOSS, {
   "clip shown ahead": "앞서 내보이는 조각",
   "close likeness": "가까운 닮음",
   "coax": "구슬리다, 달래다",
+  "coaxing": "구슬림",
   "come before": "앞에 오다",
   "come earlier than": "~보다 이르게 오다",
   "coming ages": "앞으로 올 시대",
@@ -2921,6 +2929,7 @@ Object.assign(window.GLOSS, {
   "special power of office": "그 직책에 딸린 특별한 힘",
   "special right": "특별한 권리",
   "speck of matter": "물질의 티끌",
+  "speed": "속력",
   "sponger": "빌붙어 사는 이",
   "sponging off others": "남에게 빌붙는",
   "spoof": "우스꽝스러운 흉내",

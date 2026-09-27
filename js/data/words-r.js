@@ -59,6 +59,10 @@ window.VOCAB_R = [
   { word:"restriction", exams:["공무원"], pron:"리스트릭션", pos:"n", level:"B2", meanings:["제한","규제"], syn:["limitation","constraint","curb","restraint"], ex:[{ s:"The city finally lifted its {{}} on outdoor gatherings.", f:"restriction", ko:"시는 마침내 야외 모임에 대한 제한을 풀었다." }] },
   { word:"remotely", exams:["공무원"], pron:"리모틀리", pos:"adv", level:"B2", meanings:["원격으로","멀리서"], ex:[{ s:"Engineers can now control the machine {{}} from another city.", f:"remotely", ko:"이제 기술자들은 다른 도시에서 그 기계를 원격으로 조종할 수 있다." }] },
   { word:"reef", exams:["공무원"], pron:"리프", pos:"n", level:"B2", meanings:["암초","산호초"], ex:[{ s:"Divers came to explore the famous coral {{}}.", f:"reef", ko:"다이버들이 그 유명한 산호초를 탐험하러 왔다." }] },
+  { word:"relaxation", exams:["수능"], pron:"릴랙세이션", pos:"n", level:"B2", meanings:["긴장 완화","휴식"], ex:[{ s:"Yoga is a good way to find {{}} after work.", f:"relaxation", ko:"요가는 퇴근 후 휴식을 얻는 좋은 방법이다." }] },
+  { word:"relevance", exams:["수능"], pron:"렐러번스", pos:"n", level:"B2", meanings:["관련성","적절성"], ex:[{ s:"Readers expect clarity, {{}}, and proportion from writers.", f:"relevance", ko:"독자는 작가에게 명료성, 관련성, 균형을 기대한다." }] },
+  { word:"reluctantly", exams:["수능"], pron:"릴럭턴틀리", pos:"adv", level:"B2", meanings:["마지못해","꺼리며"], syn:["unwillingly","grudgingly","hesitantly"], ant:["willingly"] },
+  { word:"routinely", exams:["수능"], pron:"루티늘리", pos:"adv", level:"B2", meanings:["일상적으로","으레"], syn:["regularly","habitually","customarily"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -1735,6 +1739,7 @@ Object.assign(window.GLOSS, {
   "crowd running wild": "날뛰는 무리",
   "curb on action": "움직임을 막는 테두리",
   "custom done the same way": "늘 같게 치르는 관습",
+  "customarily": "관례적으로",
   "cut": "삭감, 인하",
   "cycle of change": "돌고 도는 바뀜",
   "defier of authority": "권위를 거스르는 이",
@@ -1849,6 +1854,7 @@ Object.assign(window.GLOSS, {
   "great repute": "큰 평판",
   "grow back": "다시 자라나다",
   "grow ready to eat": "먹을 만하게 되다",
+  "grudgingly": "억지로",
   "guided by reason": "이치를 따르는",
   "habit one keeps to": "지켜 오는 버릇",
   "hand on a message": "말을 건네 주다",
@@ -2098,6 +2104,7 @@ Object.assign(window.GLOSS, {
   "refurbishment": "새 단장",
   "refusal to take": "받기를 마다함",
   "regard for others": "남을 받드는 마음",
+  "regularly": "정기적으로",
   "reiteration": "반복해 말하기",
   "relation in number": "수로 본 관계",
   "remodeling": "리모델링, 개조",
@@ -2310,6 +2317,7 @@ Object.assign(window.GLOSS, {
   "unable to keep still": "가만히 있지 못하는",
   "unrecognizable": "알아볼 수 없는",
   "unwilling to act": "나서려 하지 않는",
+  "unwillingly": "내키지 않게",
   "upright in conduct": "행실이 곧은",
   "uproar in the streets": "거리의 소동",
   "use again": "다시 쓰다",
