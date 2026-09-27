@@ -156,7 +156,7 @@ window.VOCAB_V = [
     ex:[{ s:"Water {{}} rose from the pan.", f:"vapor", ko:"냄비에서 수증기가 올라왔다." }] },
 
   /* 승격 ⑦ — 사전 글자 유지(참조 consistency 가 반의어). 교재는 순서만 다르다. */
-  { word:"variability", pron:"베리어빌러티", pos:"n", level:"C1", meanings:["변동성","가변성"],
+  { word:"variability", exams:["수능"], pron:"베리어빌러티", pos:"n", level:"C1", meanings:["변동성","가변성"],
     syn:["how much it swings","liability to change","range of change"], ant:["consistency"],
     ex:[{ s:"The data show wide {{}}.", f:"variability", ko:"그 자료는 큰 변동성을 보인다." }] },
 
@@ -169,7 +169,7 @@ window.VOCAB_V = [
 
   /* '변화' 는 shift(변화, 교대)·mutation(돌연변이, 변화) 자리라 버렸다.
      '차이' 는 contrast·discrepancy·disparity·margin 넷과 맞물려 배제된다. */
-  { word:"variation", exams:["공무원"], pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
+  { word:"variation", exams:["공무원","수능"], pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
     syn:["contrast","discrepancy","a changed form"],
     ex:[{ s:"There is little {{}} between them.", f:"variation", ko:"그들 사이에는 차이가 거의 없다." }] },
 
@@ -193,7 +193,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑪ — 사전 글자 유지. 참조 세 곳(differ·diversify·fluctuate) 의 화면은
      바뀌지 않는다. differ(다르다, 의견이 다르다) 와 맞물려 배제된다. */
-  { word:"vary", exams:["공무원"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
+  { word:"vary", exams:["공무원","수능"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
     syn:["differ","diversify","fluctuate"],
     ex:[{ s:"Prices {{}} from shop to shop.", f:"vary", ko:"값은 가게마다 다르다." }] },
 

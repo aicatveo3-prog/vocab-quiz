@@ -49,7 +49,7 @@ window.VOCAB_U = [
   { word:"unequivocally", exams:["공무원"], pron:"언이퀴버컬리", pos:"adv", level:"C2", meanings:["명백하게","분명히"], syn:["clearly","definitely","categorically"], ant:["ambiguously"], ex:[{ s:"Life tells them {{}} how capable they really are.", f:"unequivocally", ko:"삶은 그들이 얼마나 유능한지 분명하게 알려 준다." }] },
   { word:"unravel", exams:["공무원"], pron:"언래블", pos:"v", level:"C1", meanings:["풀다","해결하다"], syn:["solve","untangle","decipher"], ant:["complicate"], ex:[{ s:"Detectives tried to {{}} the mystery of the disappearance.", f:"unravel", ko:"형사들은 실종의 미스터리를 풀려고 애썼다." }] },
   { word:"unruly", exams:["공무원"], pron:"언룰리", pos:"adj", level:"C1", meanings:["다루기 힘든","제멋대로인"], syn:["disorderly","rowdy","unmanageable"], ant:["obedient"], ex:[{ s:"The novel is about the vexed parents of an {{}} teenager.", f:"unruly", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
-  { word:"universally", exams:["공무원"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
+  { word:"universally", exams:["공무원","수능"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
   { word:"upgrade", exams:["공무원"], pron:"업그레이드", pos:"v", level:"B2", meanings:["향상시키다","개선하다"], syn:["improve","enhance","boost"], ant:["downgrade"], ex:[{ s:"We assess and {{}} our services.", f:"upgrade", ko:"우리는 서비스를 평가하고 개선한다." }] },
   { word:"uncertain", exams:["공무원","수능"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
   { word:"uniform", exams:["공무원"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
@@ -57,7 +57,7 @@ window.VOCAB_U = [
   { word:"unlike", exams:["공무원","수능"], pron:"언라이크", pos:"phr", level:"B1", meanings:["~와 달리","~와 다른"], syn:["contrary to","in contrast with","different from"] },
   { word:"unmanned", exams:["공무원"], pron:"언맨드", pos:"adj", level:"B2", meanings:["무인의","사람이 타지 않은"], syn:["uncrewed","pilotless","automated"], ant:["manned"], ex:[{ s:"AUVs are {{}} underwater robots.", f:"unmanned", ko:"AUV는 무인 수중 로봇이다." }] },
   { word:"unnerving", exams:["공무원"], pron:"언너빙", pos:"adj", level:"C1", meanings:["불안하게 만드는","초조하게 하는"], syn:["disturbing","unsettling","disconcerting"], ex:[{ s:"Not knowing how a decision is made is {{}}.", f:"unnerving", ko:"결정이 어떻게 내려지는지 모른다는 것은 사람을 불안하게 만든다." }] },
-  { word:"utilize", exams:["공무원"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
+  { word:"utilize", exams:["공무원","수능"], pron:"유털라이즈", pos:"v", level:"B2", meanings:["활용하다","이용하다"], syn:["use","employ","harness"], ex:[{ s:"We must {{}} renewable energy to generate electricity.", f:"utilize", ko:"우리는 전기를 생산하기 위해 재생 가능 에너지를 활용해야 한다." }] },
   { word:"unemotional", exams:["공무원"], pron:"언이모셔널", pos:"adj", level:"C1", meanings:["감정을 드러내지 않는","냉정한"], syn:["detached","impassive","stoic"], ant:["emotional"], ex:[{ s:"Critical thinking may seem cold and {{}}, but it can stir strong feelings.", f:"unemotional", ko:"비판적 사고는 차갑고 감정 없는 것처럼 보이지만 강한 감정을 불러일으킬 수 있다." }] },
   { word:"upcoming", exams:["공무원"], pron:"업커밍", pos:"adj", level:"B2", meanings:["다가오는","곧 있을"], syn:["forthcoming","impending","coming"], ex:[{ s:"We need more chairs for our {{}} event.", f:"upcoming", ko:"곧 있을 행사를 위해 의자가 더 필요하다." }] },
   { word:"upset", exams:["공무원"], pron:"업셋", pos:"v", level:"B1", meanings:["속상하게 하다","뒤엎다"], syn:["distress","disturb","trouble"], ant:["comfort"], ex:[{ s:"The long delay may {{}} many travelers.", f:"upset", ko:"긴 지연은 많은 여행객을 속상하게 할 수 있다." }] },
@@ -192,7 +192,7 @@ window.VOCAB_U = [
   /* 승격 ④ — 사전 글자 유지. 참조 be subjected to(B)·go through(G) 두 곳의
      화면은 바뀌지 않는다. receive(받다, 수령하다 · B1/v) 와 '받다' 가 맞물려
      배제된다. */
-  { word:"undergo", pron:"언더고", pos:"v", level:"B2", meanings:["겪다","받다"],
+  { word:"undergo", exams:["수능"], pron:"언더고", pos:"v", level:"B2", meanings:["겪다","받다"],
     syn:["be subjected to","go through","live through"],
     ex:[{ s:"She will {{}} surgery tomorrow.", f:"undergo", ko:"그녀는 내일 수술을 받을 것이다." }] },
 
@@ -672,7 +672,7 @@ window.VOCAB_U = [
      과 '시의' 가 겹치는데 두 글자라 자동 배제가 안 된다. 이쪽은 참조가 있어
      사전값을 지켜야 하므로 municipal 쪽을 '지방 자치의, 시의' 로 손질했다.
      metropolitan(대도시의, 수도의) 은 '도시의' 를 품어 저절로 배제된다. */
-  { word:"urban", exams:["공무원"], pron:"어번", pos:"adj", level:"B1", meanings:["도시의"],
+  { word:"urban", exams:["공무원","수능"], pron:"어번", pos:"adj", level:"B1", meanings:["도시의"],
     syn:["metropolitan","of the town","of built-up areas"],
     ex:[{ s:"{{}} life suits her well.", f:"urban", ko:"도시 생활이 그녀에게 잘 맞는다." }] },
 

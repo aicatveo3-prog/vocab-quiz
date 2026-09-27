@@ -346,7 +346,7 @@ window.VOCAB_B = [
     ex:[{ s:"These files {{}} to the finance team.", f:"belong", ko:"이 파일들은 재무팀 소속이다." }],
     gov:{ prep:["to","in","with"], pat:"belong {{}} a club", usage:"belong to ~ : ~에 속하다" } },
 
-  { word:"beloved", pron:"빌러브드", pos:"adj", level:"B2", meanings:["사랑 받는","인기 많은"],
+  { word:"beloved", exams:["수능"], pron:"빌러브드", pos:"adj", level:"B2", meanings:["사랑 받는","인기 많은"],
     syn:["cherished","adored","dear"], ant:["hated"],
     ex:[{ s:"The {{}} teacher retired after thirty years.", f:"beloved", ko:"모두가 사랑한 그 교사는 30년 만에 은퇴했다." }] },
 
@@ -466,7 +466,7 @@ window.VOCAB_B = [
     syn:["species variety","ecological variety","biotic richness"], ant:["monoculture"],
     ex:[{ s:"Logging threatens the {{}} of the rainforest.", f:"biodiversity", ko:"벌목은 열대우림의 생물 다양성을 위협한다." }] },
 
-  { word:"biography", pron:"바이오그래피", pos:"n", level:"B2", meanings:["전기","일대기"],
+  { word:"biography", exams:["수능"], pron:"바이오그래피", pos:"n", level:"B2", meanings:["전기","일대기"],
     syn:["life story","memoir","profile"], ant:["fiction"],
     ex:[{ s:"He wrote a {{}} of the former president.", f:"biography", ko:"그는 전임 대통령의 전기를 썼다." }] },
 
@@ -730,11 +730,11 @@ window.VOCAB_B = [
   { word:"break out", pron:"브레이크 아웃", pos:"phr", level:"B2", meanings:["(전쟁이) 발발하다","(화재가) 발생하다"],
     syn:["erupt","flare up","begin suddenly"], ant:["subside"] },
 
-  { word:"breakdown", exams:["공무원"], pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
+  { word:"breakdown", exams:["공무원","수능"], pron:"브레이크다운", pos:"n", level:"B2", meanings:["(기계의) 고장","붕괴"],
     syn:["malfunction","collapse","failure"],
     ex:[{ s:"A {{}} on the highway delayed us for three hours.", f:"breakdown", ko:"고속도로에서의 고장으로 우리는 세 시간 지체되었다." }] },
 
-  { word:"breakthrough", pron:"브레이크스루", pos:"n", level:"B2", meanings:["돌파구","획기적 발전"],
+  { word:"breakthrough", exams:["수능"], pron:"브레이크스루", pos:"n", level:"B2", meanings:["돌파구","획기적 발전"],
     syn:["advance","leap forward","discovery"], ant:["setback"],
     ex:[{ s:"The team announced a major {{}} in cancer research.", f:"breakthrough", ko:"그 팀은 암 연구에서 중대한 획기적 발전을 발표했다." }] },
 
@@ -784,7 +784,7 @@ window.VOCAB_B = [
     syn:["outstanding","superb","dazzling"], ant:["mediocre"],
     ex:[{ s:"She came up with a {{}} solution in minutes.", f:"brilliant", ko:"그녀는 몇 분 만에 훌륭한 해결책을 내놓았다." }] },
 
-  { word:"bring about", pron:"브링 어바웃", pos:"phr", level:"B2", meanings:["초래하다","일으키다"],
+  { word:"bring about", exams:["수능"], pron:"브링 어바웃", pos:"phr", level:"B2", meanings:["초래하다","일으키다"],
     syn:["cause","produce","give rise to"], ant:["prevent"] },
 
   { word:"bring in", exams:["공무원"], pron:"브링 인", pos:"phr", level:"B2", meanings:["(이익 등을) 가져오다"],
@@ -802,7 +802,7 @@ window.VOCAB_B = [
     syn:["fragile","crumbly","delicate"], ant:["flexible"],
     ex:[{ s:"Old paper becomes {{}} and tears very easily.", f:"brittle", ko:"오래된 종이는 부서지기 쉬워져 아주 쉽게 찢어진다." }] },
 
-  { word:"broadcast", pron:"브로드캐스트", pos:"v", level:"B1", meanings:["방송하다"],
+  { word:"broadcast", exams:["수능"], pron:"브로드캐스트", pos:"v", level:"B1", meanings:["방송하다"],
     syn:["air","transmit","televise"],
     ex:[{ s:"They plan to {{}} the match live at eight.", f:"broadcast", ko:"그들은 그 경기를 8시에 생중계할 계획이다." }] },
 
@@ -919,7 +919,7 @@ window.VOCAB_B = [
     syn:["bunch","package","sheaf"],
     ex:[{ s:"She carried a {{}} of letters under her arm.", f:"bundle", ko:"그녀는 편지 뭉치를 팔 아래에 끼고 있었다." }] },
 
-  { word:"burden", exams:["공무원"], pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
+  { word:"burden", exams:["공무원","수능"], pron:"버든", pos:"n", level:"B2", meanings:["짐","부담"],
     syn:["load","strain","encumbrance"], ant:["relief"],
     ex:[{ s:"Caring for both parents became a heavy {{}}.", f:"burden", ko:"양쪽 부모를 돌보는 일은 무거운 부담이 되었다." }],
     gov:{ prep:["on","of","to","for"], pat:"a burden {{}} society", usage:"a burden on ~ : ~에 대한 부담" } },

@@ -474,7 +474,7 @@ window.VOCAB_F = [
   { word:"feedback", exams:["공무원","수능"], pron:"피드백", pos:"n", level:"B1", meanings:["의견","피드백"], syn:["response","comments","input"], ex:[{ s:"We welcome all {{}} about our services.", f:"feedback", ko:"우리는 서비스에 대한 모든 의견을 환영한다." }] },
   { word:"flooding", exams:["공무원"], pron:"플러딩", pos:"n", level:"B2", meanings:["홍수","침수"], syn:["flood","deluge","inundation"], ex:[{ s:"{{}}, drought and storms can destroy crops.", f:"Flooding", ko:"홍수, 가뭄, 폭풍은 농작물을 망칠 수 있다." }] },
   { word:"favoritism", exams:["공무원"], pron:"페이버리티즘", pos:"n", level:"C1", meanings:["편애","편파"], syn:["bias","partiality","nepotism"], ant:["fairness"], ex:[{ s:"It hands out positions based on {{}}.", f:"favoritism", ko:"그것은 편애에 따라 자리를 나눠준다." }] },
-  { word:"fairness", exams:["공무원"], pron:"페어니스", pos:"n", level:"B2", meanings:["공정성"], syn:["justice","equity","impartiality"], ant:["unfairness"], ex:[{ s:"Rewarding merit has the virtue of {{}}.", f:"fairness", ko:"실력을 보상하는 것은 공정성의 미덕을 지닌다." }] },
+  { word:"fairness", exams:["공무원","수능"], pron:"페어니스", pos:"n", level:"B2", meanings:["공정성"], syn:["justice","equity","impartiality"], ant:["unfairness"], ex:[{ s:"Rewarding merit has the virtue of {{}}.", f:"fairness", ko:"실력을 보상하는 것은 공정성의 미덕을 지닌다." }] },
   { word:"facet", exams:["공무원"], pron:"패싯", pos:"n", level:"C1", meanings:["측면","양상"], syn:["aspect","side","dimension"], ex:[{ s:"The film explores every {{}} of city life.", f:"facet", ko:"그 영화는 도시 생활의 모든 측면을 탐구한다." }] },
   { word:"familiar", exams:["공무원","수능"], pron:"퍼밀리어", pos:"adj", level:"B1", meanings:["익숙한","친숙한"], syn:["recognizable","known","accustomed"], ant:["unfamiliar","alien"], ex:[{ s:"Traditional tools feel {{}} to most people.", f:"familiar", ko:"전통적인 도구는 대부분의 사람에게 익숙하게 느껴진다." }], gov:{ prep:["with","to"], usage:"be familiar with ~ : ~을 잘 알다 · be familiar to ~ : ~에게 익숙하다" } },
   { word:"for ages", exams:["공무원"], pron:"포 에이지스", pos:"phr", level:"B2", meanings:["오랫동안","아주 오래"] },
@@ -482,13 +482,13 @@ window.VOCAB_F = [
   { word:"frugality", exams:["공무원"], pron:"프루갤러티", pos:"n", level:"C1", meanings:["검소함","절약"], syn:["thrift","economy","prudence"], ant:["extravagance"], ex:[{ s:"Thanks to his {{}}, he saved enough money to buy a house.", f:"frugality", ko:"그는 검소하게 산 덕분에 집을 살 만큼 돈을 모았다." }] },
   { word:"finance", exams:["공무원"], pron:"파이낸스", pos:"v", level:"B2", meanings:["자금을 대다","재정"], syn:["fund","sponsor","bankroll"], ex:[{ s:"Most private investors prefer to {{}} short-term projects.", f:"finance", ko:"대부분의 민간 투자자는 단기 사업에 자금을 대는 쪽을 선호한다." }] },
   { word:"following", exams:["공무원","수능"], pron:"팔로잉", pos:"adj", level:"B1", meanings:["다음의","이후의"], syn:["subsequent","next","ensuing"], ant:["preceding"], ex:[{ s:"The results will be announced the {{}} week.", f:"following", ko:"결과는 그다음 주에 발표될 것이다." }] },
-  { word:"furthermore", exams:["공무원"], pron:"퍼더모어", pos:"adv", level:"B2", meanings:["게다가","더욱이"], syn:["moreover","additionally","besides"], ex:[{ s:"The plan is too costly. {{}}, it would take years to finish.", f:"Furthermore", ko:"그 계획은 비용이 너무 든다. 게다가 끝내는 데 몇 년이 걸릴 것이다." }] },
+  { word:"furthermore", exams:["공무원","수능"], pron:"퍼더모어", pos:"adv", level:"B2", meanings:["게다가","더욱이"], syn:["moreover","additionally","besides"], ex:[{ s:"The plan is too costly. {{}}, it would take years to finish.", f:"Furthermore", ko:"그 계획은 비용이 너무 든다. 게다가 끝내는 데 몇 년이 걸릴 것이다." }] },
   { word:"figure of speech", exams:["공무원"], pron:"피겨 오브 스피치", pos:"phr", level:"C1", meanings:["비유적 표현","수사법"] },
   { word:"fix", exams:["공무원"], pron:"픽스", pos:"n", level:"B2", meanings:["해결책","수리"], syn:["solution","remedy","cure"], ex:[{ s:"Taking short breaks is one simple {{}} for burnout.", f:"fix", ko:"짧게 쉬는 것은 번아웃에 대한 간단한 해결책 중 하나다." }] },
   { word:"fall on", exams:["공무원"], pron:"폴 온", pos:"phr", level:"B2", meanings:["~에게 떨어지다","~에 해당하다"] },
   { word:"frivolous", exams:["공무원"], pron:"프리벌러스", pos:"adj", level:"C1", meanings:["경박한","하찮은"], syn:["trivial","silly","petty"], ant:["serious"], ex:[{ s:"Their talk was far from {{}}; they discussed serious issues.", f:"frivolous", ko:"그들의 대화는 결코 하찮지 않았다. 그들은 심각한 문제를 논의했다." }] },
   { word:"freelancer", exams:["공무원"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
-  { word:"free up", exams:["공무원"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
+  { word:"free up", exams:["공무원","수능"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
   { word:"fashionable", exams:["공무원"], pron:"패셔너블", pos:"adj", level:"B1", meanings:["유행하는","최신 유행의"], syn:["stylish","trendy","in vogue"], ant:["old-fashioned"], ex:[{ s:"It became {{}} to own a pocket watch.", f:"fashionable", ko:"회중시계를 갖는 것이 유행하게 되었다." }] },
   { word:"financially", exams:["공무원"], pron:"파이낸셜리", pos:"adv", level:"B2", meanings:["재정적으로","경제적으로"] },
   { word:"fascination", exams:["수능"], pron:"패서네이션", pos:"n", level:"B2", meanings:["매혹","매료"], syn:["attraction","allure","appeal"], ex:[{ s:"Children have a natural {{}} with dinosaurs.", f:"fascination", ko:"아이들은 본래 공룡에 매료된다." }] },
@@ -523,11 +523,11 @@ window.VOCAB_F = [
     syn:["frontage","outward appearance","veneer"],
     ex:[{ s:"The bank kept its old stone {{}} when the inside was rebuilt.", f:"facade", ko:"그 은행은 내부를 다시 지으면서도 오래된 석조 정면을 남겼다." }] },
 
-  { word:"facilitate", exams:["공무원"], pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
+  { word:"facilitate", exams:["공무원","수능"], pron:"퍼실러테이트", pos:"v", level:"C1", meanings:["쉽게 하다","촉진하다"],
     syn:["assist","expedite","make easier"],
     ex:[{ s:"A shared language can {{}} trade between neighbors.", f:"facilitate", ko:"공통 언어는 이웃 나라 사이의 교역을 쉽게 할 수 있다." }] },
 
-  { word:"facility", exams:["공무원"], pron:"퍼실러티", pos:"n", level:"B2", meanings:["시설","설비"],
+  { word:"facility", exams:["공무원","수능"], pron:"퍼실러티", pos:"n", level:"B2", meanings:["시설","설비"],
     syn:["installation","amenity","establishment"],
     ex:[{ s:"The town opened a new sports {{}} beside the river.", f:"facility", ko:"그 도시는 강가에 새 체육 시설을 열었다." }] },
 
@@ -610,7 +610,7 @@ window.VOCAB_F = [
     syn:["zealot","extremist","devotee"],
     ex:[{ s:"Only a true {{}} would camp outside for three nights.", f:"fanatic", ko:"진짜 열광자만이 사흘 밤을 밖에서 야영할 것이다." }] },
 
-  { word:"fantasy", pron:"팬터시", pos:"n", level:"B2", meanings:["환상","공상"],
+  { word:"fantasy", exams:["수능"], pron:"팬터시", pos:"n", level:"B2", meanings:["환상","공상"],
     syn:["daydream","illusion","reverie"], ant:["reality"],
     ex:[{ s:"As a child he escaped into a {{}} of distant planets.", f:"fantasy", ko:"어릴 때 그는 먼 행성들의 환상 속으로 도피했다." }] },
 
@@ -618,7 +618,7 @@ window.VOCAB_F = [
      유의어로 쓰이던 자리라 한쪽을 버리면 기존 문제나 원본 중 하나가 어긋난다.
      두 갈래를 모두 담았다. 유의어는 요금 쪽으로만 모았다 — charge 를 쓰려
      했으나 표제어 뜻이 '청구하다'(동사)여서 명사 자리에 맞지 않는다. */
-  { word:"fare", pron:"페어", pos:"n", level:"B2", meanings:["요금","음식"],
+  { word:"fare", exams:["수능"], pron:"페어", pos:"n", level:"B2", meanings:["요금","음식"],
     syn:["ticket price","transport cost","passage money"],
     ex:[{ s:"The bus {{}} went up by twenty cents this month.", f:"fare", ko:"이번 달 버스 요금이 20센트 올랐다." }] },
 
@@ -806,7 +806,7 @@ window.VOCAB_F = [
     syn:["thread","strand","filament"],
     ex:[{ s:"The rope is woven from a tough plant {{}}.", f:"fiber", ko:"그 밧줄은 질긴 식물 섬유로 짜여 있다." }] },
 
-  { word:"fiction", exams:["공무원"], pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
+  { word:"fiction", exams:["공무원","수능"], pron:"픽션", pos:"n", level:"B2", meanings:["허구","소설"],
     syn:["fabrication","made-up story","invented tale"], ant:["fact"],
     ex:[{ s:"The novel blends real history with pure {{}}.", f:"fiction", ko:"그 소설은 실제 역사와 순전한 허구를 섞는다." }] },
 
@@ -1152,7 +1152,7 @@ window.VOCAB_F = [
     syn:["sense of dread","premonition","misgiving"],
     ex:[{ s:"A strange {{}} kept her awake that night.", f:"foreboding", ko:"이상한 불길한 예감이 그날 밤 그녀를 깨어 있게 했다." }] },
 
-  { word:"forecast", exams:["공무원"], pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
+  { word:"forecast", exams:["공무원","수능"], pron:"포캐스트", pos:"n", level:"B1", meanings:["예측","예보"],
     syn:["prediction","outlook","projection"],
     ex:[{ s:"The weather {{}} promised a dry weekend.", f:"forecast", ko:"일기 예보는 건조한 주말을 예고했다." }] },
 
@@ -1205,7 +1205,7 @@ window.VOCAB_F = [
     syn:["create","constitute","bring into being"],
     ex:[{ s:"Ice will {{}} on the pond after two cold nights.", f:"form", ko:"추운 밤이 이틀 지나면 못에 얼음이 형성된다." }] },
 
-  { word:"formal", pron:"포멀", pos:"adj", level:"B2", meanings:["격식을 갖춘","공식적인"],
+  { word:"formal", exams:["수능"], pron:"포멀", pos:"adj", level:"B2", meanings:["격식을 갖춘","공식적인"],
     syn:["official","ceremonial","proper"], ant:["casual"],
     ex:[{ s:"The invitation asked for {{}} dress.", f:"formal", ko:"그 초대장은 격식을 갖춘 복장을 요청했다." }] },
 
@@ -1218,7 +1218,7 @@ window.VOCAB_F = [
     syn:["layout","arrangement","design"],
     ex:[{ s:"The report follows the same {{}} every quarter.", f:"format", ko:"그 보고서는 분기마다 같은 형식을 따른다." }] },
 
-  { word:"formation", pron:"포메이션", pos:"n", level:"C1", meanings:["형성","구성"],
+  { word:"formation", exams:["수능"], pron:"포메이션", pos:"n", level:"C1", meanings:["형성","구성"],
     syn:["development","coming together","taking shape"],
     ex:[{ s:"Scientists study the {{}} of coral reefs.", f:"formation", ko:"과학자들은 산호초의 형성을 연구한다." }] },
 
@@ -1261,7 +1261,7 @@ window.VOCAB_F = [
   /* 원본은 '양육하는, 기르는; 양육하다, 기르다' 로 형용사와 동사가 섞여 있다.
      동사로 정했다. 유의어 nurture 의 뜻이 '양육하다, 기르다' 라서 첫 뜻이
      겹치지 않도록 둘째 뜻을 '육성하다' 로 골랐다. */
-  { word:"foster", exams:["공무원"], pron:"포스터", pos:"v", level:"B2", meanings:["기르다","육성하다"],
+  { word:"foster", exams:["공무원","수능"], pron:"포스터", pos:"v", level:"B2", meanings:["기르다","육성하다"],
     syn:["nurture","bring up","raise"],
     ex:[{ s:"Small grants can {{}} new research in the field.", f:"foster", ko:"작은 보조금이 그 분야의 새 연구를 육성할 수 있다." }] },
 
@@ -1430,7 +1430,7 @@ window.VOCAB_F = [
 
   /* function(n)·functional(adj) 은 앞 여섯 글자가 같은 가족이지만 품사가 달라
      갈라진다. 참조하는 표제어가 없어 뜻은 기존 사전 것을 그대로 옮겼다. */
-  { word:"function", exams:["공무원"], pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
+  { word:"function", exams:["공무원","수능"], pron:"펑션", pos:"n", level:"B1", meanings:["기능","역할"],
     syn:["purpose","role","use"],
     ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
 
@@ -1442,7 +1442,7 @@ window.VOCAB_F = [
     syn:["money collecting","charity drive","soliciting donations"],
     ex:[{ s:"The school relies on {{}} to keep the library open.", f:"fund-raising", ko:"그 학교는 도서관을 열어 두려고 자선 모금에 기댄다." }] },
 
-  { word:"fundamental", exams:["공무원"], pron:"펀더멘털", pos:"adj", level:"B2", meanings:["근본적인","기초적인"],
+  { word:"fundamental", exams:["공무원","수능"], pron:"펀더멘털", pos:"adj", level:"B2", meanings:["근본적인","기초적인"],
     syn:["basic","essential","underlying"],
     ex:[{ s:"There is a {{}} difference between the two methods.", f:"fundamental", ko:"두 방법 사이에는 근본적인 차이가 있다." }] },
 

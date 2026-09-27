@@ -86,7 +86,7 @@ window.VOCAB_S = [
   { word:"sincerity", exams:["공무원"], pron:"신세러티", pos:"n", level:"B2", meanings:["진심","성실"], syn:["honesty","genuineness","earnestness"], ant:["hypocrisy"], ex:[{ s:"I never doubted the {{}} of her apology.", f:"sincerity", ko:"나는 그녀 사과의 진심을 의심한 적이 없다." }] },
   { word:"societal", exams:["공무원"], pron:"서사이어털", pos:"adj", level:"C1", meanings:["사회의","사회적인"], ex:[{ s:"Health contributes to {{}} well-being and economic growth.", f:"societal", ko:"건강은 사회적 안녕과 경제 성장에 기여한다." }] },
   { word:"shareholder", exams:["공무원"], pron:"셰어홀더", pos:"n", level:"B2", meanings:["주주"], ex:[{ s:"Every {{}} receives part of the company's profits.", f:"shareholder", ko:"모든 주주는 회사 이익의 일부를 받는다." }] },
-  { word:"short-term", exams:["공무원"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
+  { word:"short-term", exams:["공무원","수능"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
   { word:"skillful", exams:["공무원"], pron:"스킬풀", pos:"adj", level:"B2", meanings:["능숙한","솜씨 좋은"], syn:["adept","proficient","competent"], ant:["clumsy"], ex:[{ s:"She is so {{}} with her hands that she can fix almost anything.", f:"skillful", ko:"그녀는 손재주가 아주 좋아서 거의 뭐든 고칠 수 있다." }] },
   { word:"supplementary", exams:["공무원"], pron:"서플러멘터리", pos:"adj", level:"C1", meanings:["보충의","추가의"], syn:["additional","extra","complementary"], ex:[{ s:"Students can find {{}} materials on the course website.", f:"supplementary", ko:"학생들은 강의 웹사이트에서 보충 자료를 찾을 수 있다." }] },
   { word:"symbiosis", exams:["공무원"], pron:"심바이오시스", pos:"n", level:"C2", meanings:["공생","공생 관계"], syn:["mutualism","interdependence","cooperation"], ex:[{ s:"Many creatures rely on {{}} rather than living alone.", f:"symbiosis", ko:"많은 생물은 홀로 살기보다 공생에 의존한다." }] },
@@ -95,7 +95,7 @@ window.VOCAB_S = [
   { word:"self-promotion", exams:["공무원"], pron:"셀프 프로모션", pos:"n", level:"C1", meanings:["자기 홍보","자기 선전"], ex:[{ s:"Constantly talking up your own success is a form of {{}}.", f:"self-promotion", ko:"자신의 성공을 계속 떠벌리는 것은 자기 홍보의 한 형태다." }] },
   { word:"self-assessment", exams:["공무원"], pron:"셀프 어세스먼트", pos:"n", level:"C1", meanings:["자기 평가"], syn:["self-evaluation","self-appraisal","self-examination"], ex:[{ s:"Every year staff complete a short {{}} of their work.", f:"self-assessment", ko:"매년 직원들은 자기 업무에 대한 간단한 자기 평가를 작성한다." }] },
   { word:"significantly", exams:["공무원","수능"], pron:"시그니피컨틀리", pos:"adv", level:"B2", meanings:["크게","상당히"], syn:["considerably","substantially","markedly"], ant:["slightly"], ex:[{ s:"Daily practice can {{}} improve your math skills.", f:"significantly", ko:"매일 연습하면 수학 실력이 크게 향상될 수 있다." }] },
-  { word:"specifically", exams:["공무원"], pron:"스퍼시퍼클리", pos:"adv", level:"B2", meanings:["구체적으로","특히"], syn:["particularly","especially","in particular"], ex:[{ s:"The program is designed {{}} for young parents.", f:"specifically", ko:"그 프로그램은 특히 젊은 부모를 위해 만들어졌다." }] },
+  { word:"specifically", exams:["공무원","수능"], pron:"스퍼시퍼클리", pos:"adv", level:"B2", meanings:["구체적으로","특히"], syn:["particularly","especially","in particular"], ex:[{ s:"The program is designed {{}} for young parents.", f:"specifically", ko:"그 프로그램은 특히 젊은 부모를 위해 만들어졌다." }] },
   { word:"supposedly", exams:["공무원"], pron:"서포즈들리", pos:"adv", level:"C1", meanings:["추정상","이른바"], syn:["allegedly","apparently","reportedly"], ex:[{ s:"The team was {{}} superior, yet it lost the game.", f:"supposedly", ko:"그 팀은 이른바 더 우세하다고 했지만 경기에서 졌다." }] },
   { word:"squad", exams:["공무원"], pron:"스쿼드", pos:"n", level:"B2", meanings:["분대","팀"], syn:["team","unit","crew"], ex:[{ s:"The rescue {{}} arrived within minutes.", f:"squad", ko:"구조대가 몇 분 만에 도착했다." }] },
   { word:"sap", exams:["공무원"], pron:"샙", pos:"n", level:"C1", meanings:["수액"], ex:[{ s:"Farmers collect the {{}} from maple trees each spring.", f:"sap", ko:"농부들은 매년 봄 단풍나무에서 수액을 모은다." }] },
@@ -108,12 +108,12 @@ window.VOCAB_S = [
   { word:"speed up", exams:["공무원"], pron:"스피드 업", pos:"phr", level:"B1", meanings:["속도를 높이다","가속하다"], syn:["accelerate","hasten","quicken"] },
   { word:"signify", exams:["공무원"], pron:"시그니파이", pos:"v", level:"C1", meanings:["나타내다","의미하다"], syn:["indicate","denote","symbolize","represent"], ex:[{ s:"In many cultures, white doves {{}} peace.", f:"signify", ko:"많은 문화에서 흰 비둘기는 평화를 나타낸다." }] },
   { word:"soberly", exams:["공무원"], pron:"소버리", pos:"adv", level:"C1", meanings:["냉정하게","침착하게"] },
-  { word:"sponsor", exams:["공무원"], pron:"스판서", pos:"v", level:"B2", meanings:["후원하다","후원자"], syn:["fund","finance","support"], ex:[{ s:"A local bank will {{}} the city marathon this year.", f:"sponsor", ko:"올해는 지역 은행이 시 마라톤을 후원할 것이다." }] },
+  { word:"sponsor", exams:["공무원","수능"], pron:"스판서", pos:"v", level:"B2", meanings:["후원하다","후원자"], syn:["fund","finance","support"], ex:[{ s:"A local bank will {{}} the city marathon this year.", f:"sponsor", ko:"올해는 지역 은행이 시 마라톤을 후원할 것이다." }] },
   { word:"systematic", exams:["공무원"], pron:"시스터매틱", pos:"adj", level:"B2", meanings:["체계적인","조직적인"], syn:["methodical","orderly","organized"], ant:["haphazard"], ex:[{ s:"Aristotle's works offered {{}} explanations of the natural world.", f:"systematic", ko:"아리스토텔레스의 저작은 자연 세계에 대한 체계적인 설명을 제공했다." }] },
   { word:"self-confidence", exams:["공무원"], pron:"셀프 칸피던스", pos:"n", level:"B2", meanings:["자신감"], syn:["self-assurance","confidence","self-esteem"], ex:[{ s:"Finishing a hard task can boost your {{}}.", f:"self-confidence", ko:"어려운 일을 해내면 자신감이 높아질 수 있다." }] },
   { word:"scenario", exams:["공무원"], pron:"시나리오", pos:"n", level:"B2", meanings:["상황","시나리오"], ex:[{ s:"Always prepare for the worst-case {{}}.", f:"scenario", ko:"항상 최악의 상황에 대비하라." }] },
   { word:"salaried", exams:["공무원"], pron:"샐러리드", pos:"adj", level:"C1", meanings:["봉급을 받는","월급제의"], ex:[{ s:"The new tax fell heavily on {{}} workers.", f:"salaried", ko:"새 세금은 봉급 생활자에게 무겁게 부과되었다." }] },
-  { word:"smoothly", exams:["공무원"], pron:"스무들리", pos:"adv", level:"B2", meanings:["순조롭게","매끄럽게"] },
+  { word:"smoothly", exams:["공무원","수능"], pron:"스무들리", pos:"adv", level:"B2", meanings:["순조롭게","매끄럽게"] },
   { word:"sarcasm", exams:["공무원"], pron:"사캐즘", pos:"n", level:"C1", meanings:["빈정거림","비꼬는 말"], syn:["irony","mockery","cynicism","satire"], ex:[{ s:"Her reply was full of {{}}, not real praise.", f:"sarcasm", ko:"그녀의 대답은 진짜 칭찬이 아니라 빈정거림으로 가득했다." }] },
   { word:"subservient", exams:["공무원"], pron:"서브서비언트", pos:"adj", level:"C2", meanings:["굴종하는","종속된"], syn:["submissive","servile","obedient"], ant:["dominant"] },
   { word:"staggering", exams:["공무원"], pron:"스태거링", pos:"adj", level:"C1", meanings:["엄청난","충격적인"], syn:["astonishing","overwhelming","enormous"], ex:[{ s:"Many graduates leave college with {{}} amounts of debt.", f:"staggering", ko:"많은 졸업생이 엄청난 액수의 빚을 안고 대학을 나선다." }] },
@@ -380,7 +380,7 @@ window.VOCAB_S = [
 
   /* 승격 ⑳ — 사전 단일값 유지. 참조 intellectual(I)·learned(L) 두 곳의 화면은
      바뀌지 않는다. */
-  { word:"scholarly", exams:["공무원"], pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
+  { word:"scholarly", exams:["공무원","수능"], pron:"스칼러리", pos:"adj", level:"B2", meanings:["학문적인"],
     syn:["academic","learned","intellectual"],
     ex:[{ s:"He wrote a {{}} article on the topic.", f:"scholarly", ko:"그는 그 주제로 학문적인 논문을 썼다." }] },
 
@@ -453,7 +453,7 @@ window.VOCAB_S = [
     ex:[{ s:"Busan is a busy {{}}.", f:"seaport", ko:"부산은 분주한 항구 도시다." }] },
 
   /* 구·표현이라 예문은 두지 않는다. */
-  { word:"search for", pron:"서치 포", pos:"phr", level:"B1", meanings:["~을 찾다"],
+  { word:"search for", exams:["수능"], pron:"서치 포", pos:"phr", level:"B1", meanings:["~을 찾다"],
     syn:["look for","hunt for","try to find"] },
 
   { word:"season", pron:"시즌", pos:"v", level:"B2", meanings:["양념하다"],
@@ -490,7 +490,7 @@ window.VOCAB_S = [
     syn:["privacy away from all","quiet spot far off","state of being shut away"],
     ex:[{ s:"They live in complete {{}} on the hill.", f:"seclusion", ko:"그들은 언덕에서 완전히 호젓하게 산다." }] },
 
-  { word:"second-hand", pron:"세컨드 핸드", pos:"adj", level:"B2", meanings:["중고의"],
+  { word:"second-hand", exams:["수능"], pron:"세컨드 핸드", pos:"adj", level:"B2", meanings:["중고의"],
     syn:["used","pre-owned","not new"], ant:["brand-new"],
     ex:[{ s:"He bought a {{}} bicycle.", f:"second-hand", ko:"그는 중고 자전거를 샀다." }] },
 
@@ -648,7 +648,7 @@ window.VOCAB_S = [
     ex:[{ s:"The team made a {{}} comeback.", f:"sensational", ko:"그 팀은 선풍적인 역전을 이뤄 냈다." }] },
 
   /* 원본의 '감정' 은 아래 sentiment 와 갈라 버렸다. */
-  { word:"sensibility", pron:"센서빌리티", pos:"n", level:"C1", meanings:["감수성"],
+  { word:"sensibility", exams:["수능"], pron:"센서빌리티", pos:"n", level:"C1", meanings:["감수성"],
     syn:["fineness of feeling","openness to beauty","delicacy of response"],
     ex:[{ s:"The poem shows a rare {{}}.", f:"sensibility", ko:"그 시는 드문 감수성을 보여 준다." }] },
 
@@ -886,7 +886,7 @@ window.VOCAB_S = [
     ex:[{ s:"A thick wall will {{}} the house from noise.", f:"shield", ko:"두꺼운 벽이 그 집을 소음에서 보호할 것이다." }] },
 
   /* 승격 61 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"shift", exams:["공무원"], pron:"시프트", pos:"n", level:"B2", meanings:["변화","교대"],
+  { word:"shift", exams:["공무원","수능"], pron:"시프트", pos:"n", level:"B2", meanings:["변화","교대"],
     syn:["change of position","turn of duty","move to another state"],
     ex:[{ s:"There was a clear {{}} in opinion.", f:"shift", ko:"여론에 뚜렷한 변화가 있었다." }] },
 
@@ -921,7 +921,7 @@ window.VOCAB_S = [
 
   /* 승격 64 — 사전 글자 유지. 참조 네 곳(capacity·deficiency·excess·lack) 의
      화면은 바뀌지 않는다. */
-  { word:"shortage", exams:["공무원"], pron:"쇼티지", pos:"n", level:"B1", meanings:["부족","품귀"],
+  { word:"shortage", exams:["공무원","수능"], pron:"쇼티지", pos:"n", level:"B1", meanings:["부족","품귀"],
     syn:["deficiency","lack","too little to go round"], ant:["excess"],
     ex:[{ s:"The city faced a water {{}}.", f:"shortage", ko:"그 도시는 물 부족을 겪었다." }] },
 
@@ -1003,15 +1003,15 @@ window.VOCAB_S = [
 
   /* 승격 69 — 사전 글자 유지. 참조 enroll(E) 의 화면은 바뀌지 않는다.
      '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다. */
-  { word:"sign up", pron:"사인 업", pos:"phr", level:"B1", meanings:["신청하다","가입하다"],
+  { word:"sign up", exams:["수능"], pron:"사인 업", pos:"phr", level:"B1", meanings:["신청하다","가입하다"],
     syn:["enroll","put one's name down","join by writing in"] },
 
   /* 위 sign up 과 겹치지 않게 '~을' 을 받는 쪽으로 다듬었다. */
-  { word:"sign up for", pron:"사인 업 포", pos:"phr", level:"B1", meanings:["~을 신청해 넣다"],
+  { word:"sign up for", exams:["수능"], pron:"사인 업 포", pos:"phr", level:"B1", meanings:["~을 신청해 넣다"],
     syn:["put one's name down for","take out a place in","commit oneself to"] },
 
   /* 원본의 외래어 '사인' 은 걷었다. */
-  { word:"signature", pron:"시그너처", pos:"n", level:"B2", meanings:["서명","특징"],
+  { word:"signature", exams:["수능"], pron:"시그너처", pos:"n", level:"B2", meanings:["서명","특징"],
     syn:["one's written name","mark of one's own","hand-written name"],
     ex:[{ s:"Put your {{}} at the bottom.", f:"signature", ko:"아래쪽에 서명을 하세요." }] },
 
@@ -1440,7 +1440,7 @@ window.VOCAB_S = [
 
   /* 승격 107 — 사전 단일값 유지. 참조 grief(G) 의 화면은 바뀌지 않는다.
      원본의 '애도' 는 버렸다 — mourning 자리다. */
-  { word:"sorrow", exams:["공무원"], pron:"소로우", pos:"n", level:"B2", meanings:["비애"],
+  { word:"sorrow", exams:["공무원","수능"], pron:"소로우", pos:"n", level:"B2", meanings:["비애"],
     syn:["grief","deep sadness","heavy heart"],
     ex:[{ s:"Her eyes were full of {{}}.", f:"sorrow", ko:"그녀의 눈은 비애로 가득했다." }] },
 
@@ -1493,7 +1493,7 @@ window.VOCAB_S = [
     syn:["geographic","to do with space","of area and place"],
     ex:[{ s:"The test checks {{}} skill.", f:"spatial", ko:"그 검사는 공간의 능력을 살핀다." }] },
 
-  { word:"spear", pron:"스피어", pos:"n", level:"B2", meanings:["창"],
+  { word:"spear", exams:["수능"], pron:"스피어", pos:"n", level:"B2", meanings:["창"],
     syn:["long pointed weapon","lance","throwing pole with a blade"],
     ex:[{ s:"He threw the {{}} at the target.", f:"spear", ko:"그는 표적에 창을 던졌다." }] },
 
@@ -1818,7 +1818,7 @@ window.VOCAB_S = [
   { word:"stand out", pron:"스탠드 아웃", pos:"phr", level:"B1", meanings:["돋보이다"],
     syn:["excel","catch the eye","be plain to see"] },
 
-  { word:"standardize", pron:"스탠더다이즈", pos:"v", level:"B2", meanings:["표준화하다"],
+  { word:"standardize", exams:["수능"], pron:"스탠더다이즈", pos:"v", level:"B2", meanings:["표준화하다"],
     syn:["make all the same","bring to one rule","set a common form"],
     ex:[{ s:"The board will {{}} the forms.", f:"standardize", ko:"이사회가 그 서식을 표준화할 것이다." }] },
 
@@ -1848,7 +1848,7 @@ window.VOCAB_S = [
     ex:[{ s:"They slept under a {{}} sky.", f:"starry", ko:"그들은 별이 많은 하늘 아래 잤다." }] },
 
   /* 승격 145 — 사전 단일값 유지. 참조 frighten(F) 의 화면은 바뀌지 않는다. */
-  { word:"startle", exams:["공무원"], pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
+  { word:"startle", exams:["공무원","수능"], pron:"스타틀", pos:"v", level:"B2", meanings:["흠칫 놀라게 하다"],
     syn:["frighten","give a sudden shock","make jump"],
     ex:[{ s:"The noise will {{}} the horses.", f:"startle", ko:"그 소음이 말들을 흠칫 놀라게 할 것이다." }] },
 
@@ -1922,7 +1922,7 @@ window.VOCAB_S = [
 
   /* 승격 149 — 사전 글자 유지. 참조 citizenship(C) 의 화면은 바뀌지 않는다.
      챕터 15 의 state 가 넘긴 '상태' 를 이 낱말이 받는다. */
-  { word:"status", exams:["공무원"], pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
+  { word:"status", exams:["공무원","수능"], pron:"스테이터스", pos:"n", level:"B1", meanings:["지위","상태"],
     syn:["citizenship","rank in society","place one holds"],
     ex:[{ s:"Her legal {{}} is still unclear.", f:"status", ko:"그녀의 법적 지위는 아직 분명하지 않다." }] },
 
@@ -1990,7 +1990,7 @@ window.VOCAB_S = [
     syn:["harsh","firm in manner","allowing no excuse"],
     ex:[{ s:"He gave a {{}} warning.", f:"stern", ko:"그는 단호한 경고를 했다." }] },
 
-  { word:"stick to", exams:["공무원"], pron:"스틱 투", pos:"phr", level:"B1", meanings:["~을 고수하다"],
+  { word:"stick to", exams:["공무원","수능"], pron:"스틱 투", pos:"phr", level:"B1", meanings:["~을 고수하다"],
     syn:["hold to firmly","keep on with","not give up on"] },
 
   /* 원본의 둘째 갈래는 뜻이 아니라 설명이라 버렸다. */
@@ -2090,13 +2090,13 @@ window.VOCAB_S = [
     ex:[{ s:"We had a one-day {{}} in Tokyo.", f:"stopover", ko:"우리는 도쿄에서 하루 단기 체류를 했다." }] },
 
   /* 승격 166 — 사전 글자 유지. 참조는 없다. */
-  { word:"storage", pron:"스토리지", pos:"n", level:"B2", meanings:["저장","보관"],
+  { word:"storage", exams:["수능"], pron:"스토리지", pos:"n", level:"B2", meanings:["저장","보관"],
     syn:["keeping of goods","space for keeping things","act of putting away"],
     ex:[{ s:"The boxes went into {{}}.", f:"storage", ko:"그 상자들은 보관에 들어갔다." }] },
 
   /* 승격 167 — 사전 첫 갈래만 남겼다. 참조 house(H) 가 동사라 그대로 맞는다.
      위 stock 이 넘긴 '저장하다' 를 이 낱말이 받는다. */
-  { word:"store", exams:["공무원"], pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
+  { word:"store", exams:["공무원","수능"], pron:"스토어", pos:"v", level:"B1", meanings:["저장하다"],
     syn:["house","put away for later","keep in a safe place"],
     ex:[{ s:"We {{}} the grain in a dry barn.", f:"store", ko:"우리는 마른 헛간에 곡식을 저장한다." }] },
 
@@ -2329,7 +2329,7 @@ window.VOCAB_S = [
   /* 승격 194 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 다섯 곳(chemical·content·
      gist·material·matter) 의 설명이 '물질; 본질' 에서 '물질, 본질' 이 된다.
      matter(문제, 물질) 와 '물질' 이 같아 자동 배제된다. */
-  { word:"substance", exams:["공무원"], pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
+  { word:"substance", exams:["공무원","수능"], pron:"섭스턴스", pos:"n", level:"B1", meanings:["물질","본질"],
     syn:["chemical","gist","matter"],
     ex:[{ s:"The jar held an odd {{}}.", f:"substance", ko:"그 병에는 이상한 물질이 들어 있었다." }] },
 
@@ -2422,7 +2422,7 @@ window.VOCAB_S = [
 
   /* 승격 204 — 사전 단일값 유지. 참조 네 곳(appropriate·apt·eligible·fit) 의
      화면은 바뀌지 않는다. */
-  { word:"suitable", exams:["공무원"], pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
+  { word:"suitable", exams:["공무원","수능"], pron:"수터블", pos:"adj", level:"B1", meanings:["적합한"],
     syn:["appropriate","apt","fit"],
     ex:[{ s:"This film is not {{}} for children.", f:"suitable", ko:"이 영화는 아이들에게 적합하지 않다." }] },
 
@@ -2462,7 +2462,7 @@ window.VOCAB_S = [
 
   /* 승격 209 — 사전 단일값 유지. 참조는 없다. shallow(얕은, 피상적인 · 챕터 6)
      와 글자를 맞춰 자동 배제시켰다. */
-  { word:"superficial", pron:"수퍼피셜", pos:"adj", level:"B2", meanings:["피상적인"],
+  { word:"superficial", exams:["수능"], pron:"수퍼피셜", pos:"adj", level:"B2", meanings:["피상적인"],
     syn:["only on the top","not going deep","seen at a glance"],
     ex:[{ s:"His reading was rather {{}}.", f:"superficial", ko:"그의 독서는 다소 피상적이었다." }] },
 
@@ -2596,7 +2596,7 @@ window.VOCAB_S = [
     ex:[{ s:"The {{}} covered two thousand homes.", f:"survey", ko:"그 조사는 이천 가구를 다뤘다." }] },
 
   /* 승격 225 — 사전 단일값 유지. 참조는 없다. */
-  { word:"survival", exams:["공무원"], pron:"서바이벌", pos:"n", level:"B1", meanings:["생존"],
+  { word:"survival", exams:["공무원","수능"], pron:"서바이벌", pos:"n", level:"B1", meanings:["생존"],
     syn:["staying alive","living on","escape from death"],
     ex:[{ s:"Water is the key to {{}}.", f:"survival", ko:"물이 생존의 열쇠다." }] },
 

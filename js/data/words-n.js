@@ -492,7 +492,7 @@ window.VOCAB_N = [
     syn:["diet-related","food-value","concerning nourishment"],
     ex:[{ s:"Check the {{}} label before buying.", f:"nutritional", ko:"사기 전에 영양의 표시를 확인하세요." }] },
 
-  { word:"nutritious", pron:"누트리셔스", pos:"adj", level:"B2", meanings:["영양이 풍부한"],
+  { word:"nutritious", exams:["수능"], pron:"누트리셔스", pos:"adj", level:"B2", meanings:["영양이 풍부한"],
     syn:["full of goodness","health-giving","rich in food value"], ant:["empty of value"],
     ex:[{ s:"Beans are cheap and {{}}.", f:"nutritious", ko:"콩은 값이 싸고 영양이 풍부하다." }] }
 ];

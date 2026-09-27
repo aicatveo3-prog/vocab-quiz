@@ -40,7 +40,7 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '질투하는' 을 첫 자리에 지켰다. envious(syn) 가 참조한다.
      원본 '질투심이 많은' 은 같은 갈래라 사전 쪽 표현을 쓰고, 원본의 '시샘하는' 을
      둘째 자리에 붙였다. */
-  { word:"jealous", pron:"젤러스", pos:"adj", level:"B1", meanings:["질투하는","시샘하는"],
+  { word:"jealous", exams:["수능"], pron:"젤러스", pos:"adj", level:"B1", meanings:["질투하는","시샘하는"],
     syn:["envious","resentful","covetous"],
     ex:[{ s:"He gradually grew {{}} of his brother's success.", f:"jealous", ko:"그는 점차 형의 성공을 질투하게 되었다." }] },
 

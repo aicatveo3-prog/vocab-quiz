@@ -473,7 +473,7 @@ window.VOCAB_L = [
     syn:["hobble","falter","walk lamely"],
     ex:[{ s:"He began to {{}} after twisting his ankle.", f:"limp", ko:"그는 발목을 삐고 나서 절뚝거리기 시작했다." }] },
 
-  { word:"linear", pron:"리니어", pos:"adj", level:"C1", meanings:["직선 모양의","선으로 된"],
+  { word:"linear", exams:["수능"], pron:"리니어", pos:"adj", level:"C1", meanings:["직선 모양의","선으로 된"],
     syn:["straight","rectilinear","sequential"],
     ex:[{ s:"The graph shows a clear {{}} relationship.", f:"linear", ko:"그 그래프는 명확한 직선 관계를 보여 준다." }] },
 
@@ -522,7 +522,7 @@ window.VOCAB_L = [
     ex:[{ s:"The {{}} meaning differs from the idiom.", f:"literal", ko:"글자 그대로의 뜻은 관용구와 다르다." }] },
 
   /* literal 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
-  { word:"literally", pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
+  { word:"literally", exams:["수능"], pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
     syn:["exactly","to the letter","word for word"],
     ex:[{ s:"He {{}} ran ten miles before breakfast.", f:"literally", ko:"그는 아침 전에 말 그대로 10마일을 뛰었다." }] },
 
@@ -572,7 +572,7 @@ window.VOCAB_L = [
     ex:[{ s:"Doctors managed to {{}} the infection quickly.", f:"localize", ko:"의사들은 감염을 빠르게 국한시키는 데 성공했다." }] },
 
   /* localize 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"location", exams:["공무원"], pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
+  { word:"location", exams:["공무원","수능"], pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
     /* ★ syn 의 "spot" 을 "particular place" 로 바꿨다. 사전이 '발견하다; 장소' 로
        동사와 명사를 섞어 두었는데, 참조 셋 중 둘(catch a glimpse of·detect) 이
        동사여서 S 세트에서는 동사 '발견하다' 로 선다. */
@@ -623,7 +623,7 @@ window.VOCAB_L = [
   { word:"longitude", pron:"란저튜드", pos:"n", level:"B2", meanings:["경도","경선"],
     ex:[{ s:"The ship's {{}} was recorded every hour.", f:"longitude", ko:"그 배의 경도가 매시간 기록되었다." }] },
 
-  { word:"long-term", exams:["공무원"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
+  { word:"long-term", exams:["공무원","수능"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 
@@ -683,7 +683,7 @@ window.VOCAB_L = [
     syn:["coherent","intelligible","clear-headed"], ant:["incoherent"],
     ex:[{ s:"She gave a {{}} account of the accident.", f:"lucid", ko:"그녀는 그 사고에 대해 명료한 설명을 했다." }] },
 
-  { word:"luggage", exams:["공무원"], pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
+  { word:"luggage", exams:["공무원","수능"], pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
     syn:["baggage","bags","suitcases"],
     ex:[{ s:"Please keep your {{}} with you at all times.", f:"luggage", ko:"항상 수화물을 소지해 주세요." }] },
 

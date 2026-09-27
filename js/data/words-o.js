@@ -109,7 +109,7 @@ window.VOCAB_O = [
   { word:"on a tight budget", exams:["공무원"], pron:"온 어 타이트 버짓", pos:"phr", level:"B2", meanings:["예산이 빠듯한","돈이 넉넉지 않은"] },
   { word:"outrun", exams:["공무원"], pron:"아웃런", pos:"v", level:"C1", meanings:["~보다 빨리 달리다","앞지르다"], syn:["outpace","outstrip","outdistance"], ex:[{ s:"The thief could not {{}} the police car on foot.", f:"outrun", ko:"도둑은 걸어서는 경찰차를 따돌릴 수 없었다." }] },
   { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
-  { word:"obviously", exams:["공무원"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
+  { word:"obviously", exams:["공무원","수능"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
   { word:"otherwise", exams:["공무원","수능"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
   { word:"overwork", exams:["공무원"], pron:"오버워크", pos:"v", level:"B2", meanings:["과로하다","혹사하다"], ex:[{ s:"Doctors warn that people who {{}} risk burnout.", f:"overwork", ko:"의사들은 과로하는 사람들이 번아웃 위험에 처한다고 경고한다." }] },
   { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
@@ -152,7 +152,7 @@ window.VOCAB_O = [
      갈렸다. 수능에서 명사가 압도적이고 '반대하다' 뜻은 같은 챕터의 objection 과
      챕터 4 의 oppose 가 담으므로 명사로 세웠다. 동사 자리 세 곳의 유의어는
      'object to' 로 바꿨다 — 동사 자리에 동사구가 온다. */
-  { word:"object", pron:"어브젝트", pos:"n", level:"B1", meanings:["물건","물체"],
+  { word:"object", exams:["수능"], pron:"어브젝트", pos:"n", level:"B1", meanings:["물건","물체"],
     syn:["item","physical body","solid thing"],
     ex:[{ s:"A small metal {{}} lay on the floor.", f:"object", ko:"작은 금속 물체가 바닥에 놓여 있었다." }] },
 
@@ -259,7 +259,7 @@ window.VOCAB_O = [
     ex:[{ s:"Fallen rocks {{}} the mountain road.", f:"obstruct", ko:"떨어진 바위가 산길을 막는다." }] },
 
   /* 승격 ⑯ — 사전 표현을 글자까지 지켰다(acquire, A · derive, D). */
-  { word:"obtain", pron:"업테인", pos:"v", level:"B2", meanings:["얻다","획득하다"],
+  { word:"obtain", exams:["수능"], pron:"업테인", pos:"v", level:"B2", meanings:["얻다","획득하다"],
     syn:["acquire","get hold of","come by"],
     ex:[{ s:"You must {{}} a permit before digging.", f:"obtain", ko:"파기 전에 허가를 얻어야 한다." }] },
 
@@ -294,7 +294,7 @@ window.VOCAB_O = [
   /* 승격 ⑳ — 사전은 '차지하다' 한 갈래였다. 원본의 셋 중 '점령하다' 를 붙였다
      (뜻은 두 개까지만 담는다 — '종사하다' 는 occupation 쪽에 있다).
      첫 뜻은 사전값을 지켰다(inhabit, I). */
-  { word:"occupy", pron:"아큐파이", pos:"v", level:"B2", meanings:["차지하다","점령하다"],
+  { word:"occupy", exams:["수능"], pron:"아큐파이", pos:"v", level:"B2", meanings:["차지하다","점령하다"],
     syn:["take up","hold by force","move into"],
     ex:[{ s:"Boxes {{}} most of the hallway.", f:"occupy", ko:"상자들이 복도의 대부분을 차지한다." }] },
 
@@ -422,7 +422,7 @@ window.VOCAB_O = [
 
   /* 승격 34 — 사전 표현 '반면에, 한편' 을 글자까지 지켰다(by contrast, B).
      원본의 '다른 관점에서' 대신 사전 쪽을 남겼다. */
-  { word:"on the other hand", exams:["공무원"], pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
+  { word:"on the other hand", exams:["공무원","수능"], pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
     syn:["by contrast","then again","from another view"] },
 
   /* 원본은 'on the tip of my tongue' 이었다. 저장소의 구 표제어는 사람을
@@ -830,7 +830,7 @@ window.VOCAB_O = [
   /* 승격 67 — 사전 표현 '생산량, 산출' 을 글자까지 지켰다(발음이 없던 항목이다).
      원본은 '산출, 생산, 결과; 산출하다, 출력하다' 로 명사와 동사가 섞여 있었다.
      참조가 없어 자유롭게 고를 수 있었고 명사로 정리했다. */
-  { word:"output", exams:["공무원"], pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
+  { word:"output", exams:["공무원","수능"], pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
     /* Y 세트에서 yield 를 동사로 세웠다. 명사 표제어의 유의어 칸에 동사가
        설 수 없으므로 풀어 쓴 말로 갈았다. harvest(H) 도 같이 손질했다.
        ⚠️ 처음에 'amount turned out' 을 넣었더니 바로 옆 'amount produced'
@@ -1030,7 +1030,7 @@ window.VOCAB_O = [
     syn:["daunting","too strong to resist","crushing in scale"],
     ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
 
-  { word:"owe", exams:["공무원"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+  { word:"owe", exams:["공무원","수능"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
     syn:["be in debt for","have to pay back","be indebted to"],
     ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];

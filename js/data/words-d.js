@@ -113,7 +113,7 @@ window.VOCAB_D = [
   { word:"director", exams:["공무원","수능"], pron:"디렉터", pos:"n", level:"B1", meanings:["책임자","감독"], syn:["manager","head","supervisor"], ex:[{ s:"She wrote to the {{}} of the library.", f:"director", ko:"그녀는 도서관 책임자에게 편지를 썼다." }] },
   { word:"discreetly", exams:["공무원"], pron:"디스크리틀리", pos:"adv", level:"C1", meanings:["신중하게","조심스럽게"], syn:["cautiously","carefully","tactfully"], ant:["openly"], ex:[{ s:"I suggest that you discuss this matter {{}}.", f:"discreetly", ko:"이 문제를 신중하게 논의하시길 권합니다." }] },
   { word:"dispose", exams:["공무원"], pron:"디스포즈", pos:"v", level:"B2", meanings:["처리하다","버리다"], syn:["discard","throw away","get rid of"], ant:["keep"], ex:[{ s:"You must {{}} of these products safely.", f:"dispose", ko:"이 제품들을 안전하게 처리해야 한다." }], gov:{ prep:["of"], usage:"dispose of ~ : ~을 처리하다/버리다" } },
-  { word:"disposal", exams:["공무원"], pron:"디스포절", pos:"n", level:"B2", meanings:["처리","폐기"], syn:["removal","discarding","dumping"], ex:[{ s:"The notice promotes the safe {{}} of hazardous waste.", f:"disposal", ko:"그 공지는 유해 폐기물의 안전한 처리를 권장한다." }] },
+  { word:"disposal", exams:["공무원","수능"], pron:"디스포절", pos:"n", level:"B2", meanings:["처리","폐기"], syn:["removal","discarding","dumping"], ex:[{ s:"The notice promotes the safe {{}} of hazardous waste.", f:"disposal", ko:"그 공지는 유해 폐기물의 안전한 처리를 권장한다." }] },
   { word:"distinct", exams:["공무원","수능"], pron:"디스팅트", pos:"adj", level:"B2", meanings:["뚜렷한","별개의"], syn:["separate","distinctive","clear"], ant:["indistinct"], ex:[{ s:"Green and blue are {{}} colors in English.", f:"distinct", ko:"영어에서 초록과 파랑은 별개의 색이다." }] },
   { word:"documentation", exams:["공무원"], pron:"다큐멘테이션", pos:"n", level:"C1", meanings:["서류","증빙 자료"], syn:["paperwork","records","evidence"], ex:[{ s:"I am happy to provide any {{}} required.", f:"documentation", ko:"요구되는 어떤 서류든 기꺼이 제출하겠습니다." }] },
   { word:"dump", exams:["공무원"], pron:"덤프", pos:"v", level:"B2", meanings:["버리다","내다 버리다"], syn:["discard","unload","offload"], ant:["collect"], ex:[{ s:"Never {{}} chemicals on the ground.", f:"dump", ko:"화학 물질을 땅에 함부로 버리지 마라." }] },
@@ -122,7 +122,7 @@ window.VOCAB_D = [
   { word:"default", exams:["공무원"], pron:"디폴트", pos:"n", level:"B2", meanings:["기본값","채무 불이행"], ex:[{ s:"The new {{}} requirement is four recycling containers.", f:"default", ko:"새로운 기본 요건은 재활용 용기 네 개다." }] },
   { word:"disempower", exams:["공무원"], pron:"디스임파워", pos:"v", level:"C2", meanings:["무력하게 만들다","권한을 빼앗다"], ant:["empower"], ex:[{ s:"Not knowing how AI decides can {{}} users.", f:"disempower", ko:"AI가 어떻게 결정하는지 모르면 사용자는 무력해질 수 있다." }] },
   { word:"dealer", exams:["공무원"], pron:"딜러", pos:"n", level:"B1", meanings:["상인","판매업자"], syn:["merchant","trader","broker"], ex:[{ s:"One of my friends is a used car {{}}.", f:"dealer", ko:"내 친구 중 한 명이 중고차 판매상이다." }] },
-  { word:"dedicated", exams:["공무원"], pron:"데디케이티드", pos:"adj", level:"B2", meanings:["헌신적인","전념하는"], syn:["devoted","committed","loyal"], ex:[{ s:"The museum is {{}} to the study of the independence movement.", f:"dedicated", ko:"그 박물관은 독립운동 연구에 전념한다." }], gov:{ prep:["to"], usage:"be dedicated to ~ : ~에 전념하다, ~을 위한 것이다" } },
+  { word:"dedicated", exams:["공무원","수능"], pron:"데디케이티드", pos:"adj", level:"B2", meanings:["헌신적인","전념하는"], syn:["devoted","committed","loyal"], ex:[{ s:"The museum is {{}} to the study of the independence movement.", f:"dedicated", ko:"그 박물관은 독립운동 연구에 전념한다." }], gov:{ prep:["to"], usage:"be dedicated to ~ : ~에 전념하다, ~을 위한 것이다" } },
   { word:"deepen", exams:["공무원"], pron:"디펀", pos:"v", level:"B2", meanings:["깊게 하다","심화시키다"], syn:["intensify","heighten","strengthen"], ex:[{ s:"Educational programs {{}} historical understanding among citizens.", f:"deepen", ko:"교육 프로그램은 시민들의 역사 이해를 깊게 한다." }] },
   { word:"defense", exams:["공무원"], pron:"디펜스", pos:"n", level:"B1", meanings:["방어","수비"], syn:["protection","security","guard"], ant:["attack","offense"], ex:[{ s:"More daytime sunlight gives children a better {{}} against blue light.", f:"defense", ko:"낮에 햇빛을 더 쬐면 아이들은 블루라이트를 더 잘 막아 낸다." }], gov:{ prep:["against"], usage:"(a) defense against ~ : ~에 대한 방어" } },
   { word:"driving force", exams:["공무원"], pron:"드라이빙 포스", pos:"phr", level:"B2", meanings:["원동력","추진력"] },
@@ -200,7 +200,7 @@ window.VOCAB_D = [
        명사 '재고, 주식' 으로 선다 — 동사 뜻을 늘어놓은 이 자리에 명사가 끼게 된다. */
     syn:["trade in","handle","keep goods for sale"] },
 
-  { word:"deal with", pron:"딜 위드", pos:"phr", level:"B1", meanings:["처리하다","다루다"],
+  { word:"deal with", exams:["수능"], pron:"딜 위드", pos:"phr", level:"B1", meanings:["처리하다","다루다"],
     syn:["handle","address","tackle"], ant:["ignore"] },
 
   /* 유의어 둘을 바꿨다. principal 이 P 세트 챕터 14 표제어(주요한, 으뜸의 · adj)로
@@ -226,7 +226,7 @@ window.VOCAB_D = [
 
   /* ── dec ───────────────────────────────────── */
   /* decade — 바꿔 쓸 수 있는 낱말이 사실상 없어 syn 을 비워 둔다 */
-  { word:"decade", exams:["공무원"], pron:"데케이드", pos:"n", level:"B1", meanings:["10년"],
+  { word:"decade", exams:["공무원","수능"], pron:"데케이드", pos:"n", level:"B1", meanings:["10년"],
     ex:[{ s:"The neighborhood has changed enormously over the past {{}}.", f:"decade", ko:"그 동네는 지난 10년간 엄청나게 변했다." }] },
 
   { word:"decadence", pron:"데커던스", pos:"n", level:"C2", meanings:["타락","퇴폐"],
@@ -267,7 +267,7 @@ window.VOCAB_D = [
     syn:["decode","interpret","unravel"], ant:["encode"],
     ex:[{ s:"Scholars worked for decades to {{}} the ancient script.", f:"decipher", ko:"학자들은 그 고대 문자를 해독하려고 수십 년간 애썼다." }] },
 
-  { word:"decisive", pron:"디사이시브", pos:"adj", level:"B2", meanings:["결정적인","단호한"],
+  { word:"decisive", exams:["수능"], pron:"디사이시브", pos:"adj", level:"B2", meanings:["결정적인","단호한"],
     syn:["conclusive","crucial","resolute"], ant:["indecisive"],
     ex:[{ s:"Her testimony turned out to be {{}} in the trial.", f:"decisive", ko:"그녀의 증언은 재판에서 결정적인 것으로 드러났다." }] },
 
@@ -387,7 +387,7 @@ window.VOCAB_D = [
     syn:["dry out","desiccate","parch"], ant:["hydrate"],
     ex:[{ s:"Long hikes in the heat can quickly {{}} the body.", f:"dehydrate", ko:"더위 속 긴 산행은 몸을 빠르게 탈수시킬 수 있다." }] },
 
-  { word:"delay", exams:["공무원"], pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
+  { word:"delay", exams:["공무원","수능"], pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
     syn:["postponement","holdup","lag"], ant:["acceleration"],
     ex:[{ s:"A two-hour {{}} left passengers stranded at the gate.", f:"delay", ko:"두 시간의 지연으로 승객들이 게이트에 발이 묶였다." }] },
 
@@ -467,7 +467,7 @@ window.VOCAB_D = [
     syn:["raze","tear down","dismantle"], ant:["construct"],
     ex:[{ s:"The city plans to {{}} the old stadium next spring.", f:"demolish", ko:"시는 내년 봄에 옛 경기장을 철거할 계획이다." }] },
 
-  { word:"demonstrate", exams:["공무원"], pron:"데먼스트레이트", pos:"v", level:"B1", meanings:["입증하다","보여 주다"],
+  { word:"demonstrate", exams:["공무원","수능"], pron:"데먼스트레이트", pos:"v", level:"B1", meanings:["입증하다","보여 주다"],
     syn:["prove","illustrate","exhibit"],
     ex:[{ s:"The study aims to {{}} a clear link between diet and sleep.", f:"demonstrate", ko:"그 연구는 식단과 수면 사이의 분명한 연관을 입증하려 한다." }] },
 
@@ -618,7 +618,7 @@ window.VOCAB_D = [
     syn:["appointment","title","classification"],
     ex:[{ s:"The site received official {{}} as a heritage landmark.", f:"designation", ko:"그 장소는 문화유산 명소로 공식 지정을 받았다." }] },
 
-  { word:"desirable", pron:"디자이어러블", pos:"adj", level:"B2", meanings:["바람직한","탐나는"],
+  { word:"desirable", exams:["수능"], pron:"디자이어러블", pos:"adj", level:"B2", meanings:["바람직한","탐나는"],
     syn:["advantageous","attractive","preferable"], ant:["undesirable"],
     ex:[{ s:"A quiet location is highly {{}} for a public library.", f:"desirable", ko:"조용한 위치는 공공 도서관에 매우 바람직하다." }] },
 
@@ -698,7 +698,7 @@ window.VOCAB_D = [
     syn:["resolve","persistence","willpower"],
     ex:[{ s:"Her {{}} to finish the race impressed everyone watching.", f:"determination", ko:"경기를 완주하려는 그녀의 투지가 보던 모두를 감동시켰다." }] },
 
-  { word:"determine", exams:["공무원"], pron:"디터민", pos:"v", level:"B1", meanings:["결정하다","알아내다"],
+  { word:"determine", exams:["공무원","수능"], pron:"디터민", pos:"v", level:"B1", meanings:["결정하다","알아내다"],
     syn:["decide","establish","ascertain"],
     ex:[{ s:"Tests will {{}} whether the water is safe to drink.", f:"determine", ko:"검사로 그 물이 마셔도 안전한지 알아낼 것이다." }] },
 
@@ -861,7 +861,7 @@ window.VOCAB_D = [
     syn:["aspect","measurement","extent"],
     ex:[{ s:"The problem clearly has an ethical {{}} as well.", f:"dimension", ko:"그 문제는 분명히 윤리적 차원도 있다." }] },
 
-  { word:"diminish", pron:"디미니시", pos:"v", level:"C1", meanings:["줄어들다","감소시키다"],
+  { word:"diminish", exams:["수능"], pron:"디미니시", pos:"v", level:"C1", meanings:["줄어들다","감소시키다"],
     syn:["dwindle","lessen","shrink"], ant:["augment"],
     ex:[{ s:"Interest in the sport began to {{}} after the scandal.", f:"diminish", ko:"그 스캔들 이후 그 종목에 대한 관심이 줄어들기 시작했다." }] },
 
@@ -922,7 +922,7 @@ window.VOCAB_D = [
     syn:["vanish","fade","evaporate"], ant:["appear"],
     ex:[{ s:"The footprints {{}} completely after the heavy rain.", f:"disappeared", ko:"발자국은 폭우가 온 뒤 완전히 사라졌다." }] },
 
-  { word:"disappointed", exams:["공무원"], pron:"디서포인티드", pos:"adj", level:"B1", meanings:["실망한","낙담한"],
+  { word:"disappointed", exams:["공무원","수능"], pron:"디서포인티드", pos:"adj", level:"B1", meanings:["실망한","낙담한"],
     syn:["let down","dismayed","disheartened"], ant:["pleased"],
     ex:[{ s:"Fans were deeply {{}} by the team's performance.", f:"disappointed", ko:"팬들은 그 팀의 경기력에 크게 실망했다." }] },
 
@@ -958,7 +958,7 @@ window.VOCAB_D = [
     syn:["order","training","self-control"],
     ex:[{ s:"The school has long been known for its strict {{}}.", f:"discipline", ko:"그 학교는 오래전부터 엄격한 규율로 알려져 있다." }] },
 
-  { word:"disclose", pron:"디스클로즈", pos:"v", level:"C1", meanings:["밝히다","공개하다"],
+  { word:"disclose", exams:["수능"], pron:"디스클로즈", pos:"v", level:"C1", meanings:["밝히다","공개하다"],
     syn:["reveal","divulge","make public"], ant:["conceal"],
     ex:[{ s:"The company refused to {{}} the terms of the deal.", f:"disclose", ko:"그 회사는 거래 조건을 공개하기를 거부했다." }] },
 
@@ -978,7 +978,7 @@ window.VOCAB_D = [
     syn:["reduction","markdown","rebate"],
     ex:[{ s:"Members receive a ten percent {{}} on all books.", f:"discount", ko:"회원은 모든 도서에 10퍼센트 할인을 받는다." }] },
 
-  { word:"discourse", pron:"디스코스", pos:"n", level:"C2", meanings:["담화","담론"],
+  { word:"discourse", exams:["수능"], pron:"디스코스", pos:"n", level:"C2", meanings:["담화","담론"],
     syn:["dialogue","discussion","dissertation"],
     ex:[{ s:"The book examines political {{}} in the digital age.", f:"discourse", ko:"그 책은 디지털 시대의 정치 담론을 살펴본다." }] },
 
@@ -1177,7 +1177,7 @@ window.VOCAB_D = [
     syn:["interruption","diversion","amusement"],
     ex:[{ s:"Phones are by far the biggest {{}} during lessons.", f:"distraction", ko:"수업 중 가장 큰 방해 요소는 단연 휴대폰이다." }] },
 
-  { word:"distress", pron:"디스트레스", pos:"n", level:"B2", meanings:["고통","괴로움"],
+  { word:"distress", exams:["수능"], pron:"디스트레스", pos:"n", level:"B2", meanings:["고통","괴로움"],
     syn:["anguish","suffering","torment"], ant:["comfort"],
     ex:[{ s:"The family was in obvious {{}} after hearing the news.", f:"distress", ko:"그 가족은 소식을 듣고 분명히 고통스러워했다." }] },
 
@@ -1280,7 +1280,7 @@ window.VOCAB_D = [
   { word:"do-it-yourself", pron:"두 잇 유어셀프", pos:"n", level:"B2", meanings:["직접 만들기","자가 수리"],
     ex:[{ s:"The shop specializes in {{}} furniture kits.", f:"do-it-yourself", ko:"그 가게는 직접 조립하는 가구 세트를 전문으로 한다." }] },
 
-  { word:"domain", exams:["공무원"], pron:"도메인", pos:"n", level:"C1", meanings:["영역","분야"],
+  { word:"domain", exams:["공무원","수능"], pron:"도메인", pos:"n", level:"C1", meanings:["영역","분야"],
     syn:["field","sphere","realm"],
     ex:[{ s:"That question lies well outside my {{}} of expertise.", f:"domain", ko:"그 질문은 내 전문 영역에서 한참 벗어난다." }] },
 
@@ -1318,7 +1318,7 @@ window.VOCAB_D = [
     syn:["give","contribute","bestow"],
     ex:[{ s:"Readers were asked to {{}} books to the school library.", f:"donate", ko:"독자들에게 학교 도서관에 책을 기부해 달라고 요청했다." }] },
 
-  { word:"donation", pron:"도네이션", pos:"n", level:"B2", meanings:["기부","기증품"],
+  { word:"donation", exams:["수능"], pron:"도네이션", pos:"n", level:"B2", meanings:["기부","기증품"],
     syn:["contribution","gift","offering"],
     ex:[{ s:"A generous {{}} funded the new reading room.", f:"donation", ko:"넉넉한 기부가 새 열람실 건립 자금이 됐다." }] },
 
@@ -1362,7 +1362,7 @@ window.VOCAB_D = [
     syn:["belittle","minimize","understate"], ant:["exaggerate"],
     ex:[{ s:"Officials tried to {{}} the scale of the leak.", f:"downplay", ko:"당국은 누출 규모를 축소하려 했다." }] },
 
-  { word:"downpour", pron:"다운포", pos:"n", level:"C1", meanings:["호우","폭우"],
+  { word:"downpour", exams:["수능"], pron:"다운포", pos:"n", level:"C1", meanings:["호우","폭우"],
     syn:["deluge","cloudburst","heavy rain"],
     ex:[{ s:"A sudden {{}} flooded the lower streets within minutes.", f:"downpour", ko:"갑작스러운 호우가 몇 분 만에 아래쪽 거리를 침수시켰다." }] },
 

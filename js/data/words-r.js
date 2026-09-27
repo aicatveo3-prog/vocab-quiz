@@ -48,7 +48,7 @@ window.VOCAB_R = [
   { word:"response", exams:["공무원","수능"], pron:"리스판스", pos:"n", level:"B1", meanings:["반응","대응"], syn:["reaction","reply","answer"], ex:[{ s:"Running away is a natural {{}} to danger.", f:"response", ko:"도망치는 것은 위험에 대한 자연스러운 반응이다." }], gov:{ prep:["to"], usage:"in response to ~ : ~에 대응하여 · a response to ~ : ~에 대한 반응" } },
   { word:"request", exams:["공무원","수능"], pron:"리퀘스트", pos:"v", level:"B1", meanings:["요청하다","요청"], syn:["ask for","seek","demand"], ex:[{ s:"You can {{}} a refund if the item is damaged.", f:"request", ko:"물건이 손상되었으면 환불을 요청할 수 있다." }] },
   { word:"recruit", exams:["공무원"], pron:"리크루트", pos:"v", level:"B2", meanings:["모집하다","채용하다"], syn:["hire","enlist","employ"], ant:["dismiss"], ex:[{ s:"Should we {{}} more volunteers for our program?", f:"recruit", ko:"우리 프로그램을 위해 자원봉사자를 더 모집해야 할까요?" }] },
-  { word:"reduction", exams:["공무원"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
+  { word:"reduction", exams:["공무원","수능"], pron:"리덕션", pos:"n", level:"B2", meanings:["감소","축소"], syn:["abatement","cut","decrease"], ant:["increase"], ex:[{ s:"The new energy-saving plan led to a sharp {{}} in costs.", f:"reduction", ko:"새 에너지 절약 계획으로 비용이 크게 줄었다." }] },
   { word:"repetition", exams:["공무원"], pron:"레퍼티션", pos:"n", level:"B2", meanings:["반복","되풀이"], syn:["recurrence","duplication","reiteration"], ex:[{ s:"Children learn new words through {{}}, hearing them again and again.", f:"repetition", ko:"아이들은 새 단어를 몇 번이고 들으며 반복을 통해 익힌다." }] },
   { word:"rouse", exams:["공무원"], pron:"라우즈", pos:"v", level:"C1", meanings:["불러일으키다","깨우다"], syn:["stir","provoke","arouse"], ex:[{ s:"The evidence may {{}} feelings of anger or anxiety.", f:"rouse", ko:"그 증거는 분노나 불안을 불러일으킬 수 있다." }] },
   { word:"rescue", exams:["공무원"], pron:"레스큐", pos:"v", level:"B1", meanings:["구조하다","구조"], syn:["save","salvage","liberate"], ex:[{ s:"Firefighters managed to {{}} the family from the flames.", f:"rescue", ko:"소방관들은 불길 속에서 그 가족을 가까스로 구조했다." }] },
@@ -213,7 +213,7 @@ window.VOCAB_R = [
     ex:[{ s:"How did they {{}} to the news?", f:"react", ko:"그들은 그 소식에 어떻게 반응했나요?" }] },
 
   /* 승격 ⑫ — 사전 글자 유지(chemistry, C). */
-  { word:"reaction", exams:["공무원"], pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
+  { word:"reaction", exams:["공무원","수능"], pron:"리액션", pos:"n", level:"B1", meanings:["반응"],
     syn:["response to something","what follows an act","answering move"],
     ex:[{ s:"His first {{}} was to laugh.", f:"reaction", ko:"그의 첫 반응은 웃는 것이었다." }] },
 
@@ -402,7 +402,7 @@ window.VOCAB_R = [
 
   /* 승격 ㉞ — 사전의 쌍반점만 쉼표로 갈랐다(collect on, C). '되찾다' 는
      retrieve·regain 과 글자가 같아 셋이 서로의 오답에서 빠진다. */
-  { word:"recover", exams:["공무원"], pron:"리커버", pos:"v", level:"B1", meanings:["회복하다","되찾다"],
+  { word:"recover", exams:["공무원","수능"], pron:"리커버", pos:"v", level:"B1", meanings:["회복하다","되찾다"],
     syn:["collect on","get well again","win back"],
     ex:[{ s:"It took a month to {{}}.", f:"recover", ko:"회복하는 데 한 달이 걸렸다." }] },
 
@@ -614,7 +614,7 @@ window.VOCAB_R = [
 
   /* ★ 원본은 '반복하다; 리허설을 하다' 였다. '반복하다' 는 reproduce(챕터 8) 자리라
      '예행연습하다' 를 앞세우고 외래어도 걷었다. */
-  { word:"rehearse", pron:"리허스", pos:"v", level:"B2", meanings:["예행연습하다","되짚어 보다"],
+  { word:"rehearse", exams:["수능"], pron:"리허스", pos:"v", level:"B2", meanings:["예행연습하다","되짚어 보다"],
     syn:["practice for a show","go through it beforehand","run over it again"],
     ex:[{ s:"They {{}} twice a week.", f:"rehearse", ko:"그들은 주에 두 번 예행연습한다." }] },
 
@@ -640,7 +640,7 @@ window.VOCAB_R = [
     ex:[{ s:"The tale says the gods {{}} the hero.", f:"reincarnate", ko:"그 이야기는 신들이 그 영웅을 환생시킨다고 한다." }] },
 
   /* 승격 52 — 사전 단일값 유지(bolster, B · counteract 반의어, C). */
-  { word:"reinforce", pron:"리인포스", pos:"v", level:"B2", meanings:["강화하다"],
+  { word:"reinforce", exams:["수능"], pron:"리인포스", pos:"v", level:"B2", meanings:["강화하다"],
     syn:["bolster","make stronger","back up with more"],
     ex:[{ s:"Steel bars {{}} the wall.", f:"reinforce", ko:"철근이 그 벽을 강화한다." }] },
 
@@ -686,7 +686,7 @@ window.VOCAB_R = [
 
   /* 승격 57 — 사전 글자 유지(anxious 반의어 · casual · easygoing · leisurely
      — 네 곳). 원본 '느긋한, 여유 있는, 편안한' 세 갈래를 사전값 둘로 줄였다. */
-  { word:"relaxed", pron:"릴랙스트", pos:"adj", level:"B1", meanings:["편안한","느긋한"],
+  { word:"relaxed", exams:["수능"], pron:"릴랙스트", pos:"adj", level:"B1", meanings:["편안한","느긋한"],
     syn:["casual","easygoing","at ease"], ant:["anxious"],
     ex:[{ s:"The mood was {{}}.", f:"relaxed", ko:"분위기가 편안했다." }] },
 
@@ -708,7 +708,7 @@ window.VOCAB_R = [
 
   /* 승격 59 — 사전 글자 유지(irrelevant 반의어, I). '적절한' 은 apt·proper(P) 와
      글자가 같아 서로 오답에서 빠진다. */
-  { word:"relevant", exams:["공무원"], pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
+  { word:"relevant", exams:["공무원","수능"], pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
     syn:["bearing on the matter","to the point","having a link"], ant:["irrelevant"],
     ex:[{ s:"Only {{}} facts were read out.", f:"relevant", ko:"관련 있는 사실만 읽혔다." }] },
 
@@ -776,7 +776,7 @@ window.VOCAB_R = [
     syn:["be dependent on","fall back on","put one's trust in"] },
 
   /* 승격 67 — 사전의 쌍반점만 쉼표로 갈랐다. 참조는 없다. */
-  { word:"remain", exams:["공무원"], pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
+  { word:"remain", exams:["공무원","수능"], pron:"리메인", pos:"v", level:"B1", meanings:["남다","여전히 ~이다"],
     syn:["stay behind","be left over","go on being"],
     ex:[{ s:"Few trees {{}} on the hill.", f:"remain", ko:"그 언덕에 남은 나무는 얼마 없다." }] },
 
@@ -816,7 +816,7 @@ window.VOCAB_R = [
     ex:[{ s:"He showed no {{}}.", f:"remorse", ko:"그는 회한을 보이지 않았다." }] },
 
   /* 승격 71 — 사전 글자 유지(inaccessible, I · isolated, I). */
-  { word:"remote", exams:["공무원"], pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
+  { word:"remote", exams:["공무원","수능"], pron:"리모트", pos:"adj", level:"B1", meanings:["먼","외딴"],
     syn:["inaccessible","isolated","far from anywhere"],
     ex:[{ s:"They live in a {{}} valley.", f:"remote", ko:"그들은 외딴 골짜기에 산다." }] },
 
@@ -951,7 +951,7 @@ window.VOCAB_R = [
     ex:[{ s:"The library is a {{}} of old maps.", f:"repository", ko:"그 도서관은 옛 지도의 보관소다." }] },
 
   /* 승격 82 — 사전의 쌍반점만 쉼표로 갈랐다(constitute·depict·embody 세 곳). */
-  { word:"represent", exams:["공무원"], pron:"레프리젠트", pos:"v", level:"B1", meanings:["대표하다","나타내다"],
+  { word:"represent", exams:["공무원","수능"], pron:"레프리젠트", pos:"v", level:"B1", meanings:["대표하다","나타내다"],
     syn:["constitute","stand for a group","act in place of"],
     ex:[{ s:"Two members {{}} our town.", f:"represent", ko:"두 위원이 우리 고을을 대표한다." }] },
 
@@ -1241,7 +1241,7 @@ window.VOCAB_R = [
     syn:["come out of","arise because of","follow from a cause"] },
 
   /* 승격 115 — 사전 단일값 유지. 원본의 '결국 ~로 끝나다' 는 같은 자리다. */
-  { word:"result in", exams:["공무원"], pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
+  { word:"result in", exams:["공무원","수능"], pron:"리절트 인", pos:"phr", level:"B1", meanings:["~을 초래하다"],
     syn:["lead to","end up as","bring on as an outcome"] },
 
   { word:"resultant", pron:"리절턴트", pos:"adj", level:"C2", meanings:["그 결과로 생긴"],
@@ -1334,7 +1334,7 @@ window.VOCAB_R = [
 
   /* 승격 123 — 사전은 '뒤바꾸다; 반대의' 로 동사와 형용사가 섞여 있었다. 참조
      converse 가 형용사여서 형용사로 세웠다. */
-  { word:"reverse", pron:"리버스", pos:"adj", level:"B2", meanings:["반대의","거꾸로의"],
+  { word:"reverse", exams:["수능"], pron:"리버스", pos:"adj", level:"B2", meanings:["반대의","거꾸로의"],
     syn:["converse","the other way round","turned back to front"],
     ex:[{ s:"The {{}} side is blank.", f:"reverse", ko:"반대의 면은 비어 있다." }] },
 
@@ -1371,13 +1371,13 @@ window.VOCAB_R = [
     syn:["overthrow of a rule","sweeping change","one full turn"],
     ex:[{ s:"The {{}} changed the country.", f:"revolution", ko:"그 혁명이 나라를 바꿨다." }] },
 
-  { word:"revolve", pron:"리발브", pos:"v", level:"B2", meanings:["회전하다","공전하다"],
+  { word:"revolve", exams:["수능"], pron:"리발브", pos:"v", level:"B2", meanings:["회전하다","공전하다"],
     syn:["turn on an axis","go round a center","spin in place"],
     ex:[{ s:"The earth {{}} around the sun.", f:"revolves", ko:"지구는 해 주위를 공전한다." }] },
 
   /* 승격 129 — 사전 단일값 유지(incentive, I). 원본은 '보상, 사례; 보상하다' 로
      명사와 동사가 섞여 있었다. */
-  { word:"reward", exams:["공무원"], pron:"리워드", pos:"n", level:"B1", meanings:["보상"],
+  { word:"reward", exams:["공무원","수능"], pron:"리워드", pos:"n", level:"B1", meanings:["보상"],
     syn:["incentive","prize for good work","return for effort"],
     ex:[{ s:"They offered a {{}} for the find.", f:"reward", ko:"그들은 그 발견에 보상을 내걸었다." }] },
 
@@ -1492,7 +1492,7 @@ window.VOCAB_R = [
     syn:["come off the line one after another","be turned out in numbers","stream out of a factory"] },
 
   /* 원본 '회전, 순환, 교대' 에서 '회전' 은 revolution(챕터 12) 에 넘겼다. */
-  { word:"rotation", exams:["공무원"], pron:"로테이션", pos:"n", level:"B2", meanings:["순환","교대"],
+  { word:"rotation", exams:["공무원","수능"], pron:"로테이션", pos:"n", level:"B2", meanings:["순환","교대"],
     syn:["taking turns in order","cycle of change","going round in sequence"],
     ex:[{ s:"Crops are grown in {{}}.", f:"rotation", ko:"작물은 순환으로 재배된다." }] },
 

@@ -47,7 +47,7 @@ window.VOCAB_T = [
   { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
   { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
   { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
-  { word:"task", exams:["공무원"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
+  { word:"task", exams:["공무원","수능"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
   { word:"telling", exams:["공무원"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
   { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
   { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
@@ -149,7 +149,7 @@ window.VOCAB_T = [
     syn:["extract","draw out","pull from inside"] },
 
   /* 승격 ⑤ — 사전 단일값 유지(참조 inherit). 교재 '인수하다, 인계하다' 버림. */
-  { word:"take over", pron:"테이크 오버", pos:"phr", level:"B2", meanings:["넘겨받다"],
+  { word:"take over", exams:["수능"], pron:"테이크 오버", pos:"phr", level:"B2", meanings:["넘겨받다"],
     syn:["inherit","step into the role of","assume from another"] },
 
   /* 승격 ⑥ — 사전 글자 유지(참조 be engaged in). */
@@ -298,7 +298,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑮ — 사전 단일값 유지. 참조 eternal(E)·makeshift(M)·permanent(P)
      세 곳의 화면은 바뀌지 않는다. transient(오래 가지 않는 · 챕터 8) 와 갈랐다. */
-  { word:"temporary", exams:["공무원"], pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
+  { word:"temporary", exams:["공무원","수능"], pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
     syn:["makeshift","lasting a short while","not meant to stay"], ant:["permanent","eternal"],
     ex:[{ s:"They found a {{}} home.", f:"temporary", ko:"그들은 일시적인 집을 구했다." }] },
 
@@ -338,7 +338,7 @@ window.VOCAB_T = [
      참조 nerve(N) 의 설명이 '팽팽함' 에서 '긴장, 팽팽함' 으로 늘어난다.
      nerve(신경, 긴장)·strain(S 긴장, 압박) 과 '긴장' 이 맞물려 배제된다.
      교재의 '갈등' 은 conflict·friction 자리라 버렸다. */
-  { word:"tension", exams:["공무원"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
+  { word:"tension", exams:["공무원","수능"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
     syn:["nerve","strain","tightness in the air"],
     ex:[{ s:"You could feel the {{}} in the room.", f:"tension", ko:"방 안의 긴장이 느껴졌다." }] },
 
@@ -539,7 +539,7 @@ window.VOCAB_T = [
     syn:["considerate","mindful of others","given to reflection"],
     ex:[{ s:"That was a {{}} gift.", f:"thoughtful", ko:"그것은 사려 깊은 선물이었다." }] },
 
-  { word:"threat", pron:"쓰렛", pos:"n", level:"B1", meanings:["위협","협박"],
+  { word:"threat", exams:["수능"], pron:"쓰렛", pos:"n", level:"B1", meanings:["위협","협박"],
     syn:["sign of harm to come","warning of danger","menacing word"],
     ex:[{ s:"The letter was a clear {{}}.", f:"threat", ko:"그 편지는 분명한 협박이었다." }] },
 
@@ -590,7 +590,7 @@ window.VOCAB_T = [
     ex:[{ s:"A {{}} filled the square.", f:"throng", ko:"인파가 광장을 메웠다." }] },
 
   /* 구·표현이라 예문은 두지 않는다. */
-  { word:"throughout", exams:["공무원"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
+  { word:"throughout", exams:["공무원","수능"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
     syn:["all the way through","from start to finish","for the whole time"] },
 
   /* abandon·discard·forsake·scrap 과 '버리다' 가, do away with·eliminate·
@@ -848,7 +848,7 @@ window.VOCAB_T = [
 
   /* 승격 60 — 사전 글자 유지. 참조 characteristic(C)·feature(F) 두 곳의 화면은
      바뀌지 않는다. characteristic(특성, 특유의) 과 '특성' 이 맞물려 배제된다. */
-  { word:"trait", pron:"트레이트", pos:"n", level:"B1", meanings:["특성","특질"],
+  { word:"trait", exams:["수능"], pron:"트레이트", pos:"n", level:"B1", meanings:["특성","특질"],
     syn:["characteristic","feature","mark of one's nature"],
     ex:[{ s:"Patience is her strongest {{}}.", f:"trait", ko:"인내는 그녀의 가장 두드러진 특성이다." }] },
 
@@ -1022,7 +1022,7 @@ window.VOCAB_T = [
 
   /* ★ '이동시키다' 를 '실어 옮기다' 로 고쳤다. 위 transfer 의 '옮기다' 를
      글자째 품어 자동 배제된다. 아래 transportation(명사) 과는 품사로 갈렸다. */
-  { word:"transport", pron:"트랜스포트", pos:"v", level:"B1", meanings:["수송하다","실어 옮기다"],
+  { word:"transport", exams:["수능"], pron:"트랜스포트", pos:"v", level:"B1", meanings:["수송하다","실어 옮기다"],
     syn:["carry goods across","haul from place to place","ship out"],
     ex:[{ s:"Lorries {{}} the grain to the port.", f:"transport", ko:"트럭들이 곡물을 항구로 수송한다." }] },
 
@@ -1035,7 +1035,7 @@ window.VOCAB_T = [
   /* 승격 65 — 사전 글자 유지. 참조 entangle(E) 한 곳의 화면은 바뀌지 않는다.
      imprison(투옥하다, 가두다) 과 '가두다' 가 맞물려 배제되고, confine 은
      레벨 차가 2여서 애초에 같은 문제에 오지 않는다. */
-  { word:"trap", pron:"트랩", pos:"v", level:"B1", meanings:["가두다","덫에 빠뜨리다"],
+  { word:"trap", exams:["수능"], pron:"트랩", pos:"v", level:"B1", meanings:["가두다","덫에 빠뜨리다"],
     syn:["entangle","catch in a snare","shut in with no way out"],
     ex:[{ s:"The flood may {{}} them in the cellar.", f:"trap", ko:"홍수가 그들을 지하실에 가둘 수 있다." }] },
 
@@ -1138,7 +1138,7 @@ window.VOCAB_T = [
 
   /* 승격 71 — 사전 글자 유지. 참조 craze(C)·fad(F) 두 곳의 화면은 바뀌지
      않는다. 교재의 '경향' 은 inclination(경향, 성향) 자리라 버렸다. */
-  { word:"trend", exams:["공무원"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
+  { word:"trend", exams:["공무원","수능"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
     syn:["craze","fad","general direction of change"],
     ex:[{ s:"There is a clear {{}} toward smaller homes.", f:"trend", ko:"더 작은 집을 향한 분명한 추세가 있다." }] },
 

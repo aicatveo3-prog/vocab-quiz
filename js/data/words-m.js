@@ -53,7 +53,7 @@
  */
 window.VOCAB_M = [
   { word:"marginalized", exams:["공무원"], pron:"마지널라이즈드", pos:"adj", level:"C1", meanings:["소외된","주변으로 밀려난"], syn:["excluded","sidelined","disadvantaged"], ant:["mainstream"], ex:[{ s:"They joined charities rather than the {{}} parties of the left.", f:"marginalized", ko:"그들은 소외된 좌파 정당보다 자선단체에 참여했다." }] },
-  { word:"meaningful", exams:["공무원"], pron:"미닝풀", pos:"adj", level:"B2", meanings:["의미 있는","뜻깊은"], syn:["significant","substantial","worthwhile"], ant:["meaningless"], ex:[{ s:"The foreigner has little chance for {{}} language exchanges.", f:"meaningful", ko:"그 외국인은 의미 있는 언어 교류의 기회가 거의 없다." }] },
+  { word:"meaningful", exams:["공무원","수능"], pron:"미닝풀", pos:"adj", level:"B2", meanings:["의미 있는","뜻깊은"], syn:["significant","substantial","worthwhile"], ant:["meaningless"], ex:[{ s:"The foreigner has little chance for {{}} language exchanges.", f:"meaningful", ko:"그 외국인은 의미 있는 언어 교류의 기회가 거의 없다." }] },
   { word:"militia", exams:["공무원"], pron:"밀리샤", pos:"n", level:"C1", meanings:["민병대"], syn:["armed force","volunteers","paramilitary"], ex:[{ s:"A well-regulated {{}} is necessary to a free state.", f:"militia", ko:"잘 통제된 민병대는 자유로운 국가에 필요하다." }] },
   { word:"millennia", exams:["공무원"], pron:"밀레니아", pos:"n", level:"C1", meanings:["수천 년","천년의 복수형"], syn:["ages","eons","millenniums"], ex:[{ s:"The people have been based in the region for {{}}.", f:"millennia", ko:"그 사람들은 수천 년 동안 그 지역에 터를 잡아 왔다." }] },
   { word:"minefield", exams:["공무원"], pron:"마인필드", pos:"n", level:"C1", meanings:["지뢰밭","위험 요소가 많은 상황"], syn:["hazard","quagmire","danger zone"], ex:[{ s:"Immigration reform is a political {{}}.", f:"minefield", ko:"이민 개혁은 정치적 지뢰밭이다." }] },
@@ -134,7 +134,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '대다수, 과반수' 를 글자까지 지켰다. bulk(syn) 이 참조하므로
      원본의 '대부분' 대신 사전 쪽을 남겼다.
      반의어 minority 는 7차에서 표제어가 되어 채워 넣었다. */
-  { word:"majority", pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
+  { word:"majority", exams:["수능"], pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
     syn:["bulk","most","greater part"], ant:["minority"],
     ex:[{ s:"A clear {{}} of voters backed the proposal.", f:"majority", ko:"유권자의 분명한 대다수가 그 제안을 지지했다." }] },
 
@@ -236,7 +236,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '조종하다, 조작하다' 가 원본과 글자까지 같다.
      brainwash(syn) 가 참조한다. */
-  { word:"manipulate", exams:["공무원"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
+  { word:"manipulate", exams:["공무원","수능"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
     syn:["brainwash","exploit","control"],
     ex:[{ s:"Advertisers try to {{}} what we want.", f:"manipulate", ko:"광고주는 우리가 원하는 것을 조종하려 한다." }] },
 
@@ -265,7 +265,7 @@ window.VOCAB_M = [
      automatic(ant) 이 참조하는 갈래는 형용사 '수공의' 라 첫 자리에 지키고,
      둘째를 원본의 '손으로 하는' 으로 바꿨다 — 한 표제어에 형용사와 명사를
      섞지 않는 쪽이 읽기 낫다. 원본의 '안내서' 는 그래서 뺐다. */
-  { word:"manual", pron:"매뉴얼", pos:"adj", level:"B2", meanings:["수공의","손으로 하는"],
+  { word:"manual", exams:["수능"], pron:"매뉴얼", pos:"adj", level:"B2", meanings:["수공의","손으로 하는"],
     syn:["hand-operated","non-automatic","hands-on"], ant:["automatic"],
     ex:[{ s:"Most of the work on this farm is still {{}}.", f:"manual", ko:"이 농장에서 대부분의 일은 아직 손으로 한다." }] },
 
@@ -495,7 +495,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '기계적인, 자동의' 를 글자까지 지켰다. automatic(syn) 이
      참조하므로 원본의 '기계의' 대신 사전 쪽을 남겼다. */
-  { word:"mechanical", exams:["공무원"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
+  { word:"mechanical", exams:["공무원","수능"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
     syn:["automatic","machine-driven","robotic"], ant:["manual"],
     ex:[{ s:"The failure turned out to be purely {{}}.", f:"mechanical", ko:"그 고장은 순전히 기계적인 것으로 드러났다." }] },
 
@@ -594,7 +594,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
      참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
-  { word:"mental", exams:["공무원"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+  { word:"mental", exams:["공무원","수능"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
     syn:["cognitive","psychological","intellectual"], ant:["physical"],
     ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
 
@@ -658,7 +658,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '은유, 비유' 를 글자까지 지켰다. I 세트 imagery 가 참조하므로
      원본의 '상징' 대신 사전 쪽 '비유' 를 남겼다. */
-  { word:"metaphor", pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
+  { word:"metaphor", exams:["수능"], pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
     syn:["imagery","figure of speech","symbol"],
     ex:[{ s:"The poem uses the sea as a {{}} for memory.", f:"metaphor", ko:"그 시는 바다를 기억의 은유로 쓴다." }] },
 
@@ -789,7 +789,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '사소한, 작은' 을 글자까지 지켰다. 참조가 3곳
      (cardinal(ant)·crucial(ant)·incidental)이고 마지막은 I 세트 표제어다.
      원본의 '미성년'(명사)은 pos 가 adj 라 담지 못했다. */
-  { word:"minor", exams:["공무원"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
+  { word:"minor", exams:["공무원","수능"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
     syn:["incidental","slight","trivial"], ant:["crucial"],
     ex:[{ s:"It turned out to be only a {{}} setback.", f:"minor", ko:"그것은 사소한 차질에 불과한 것으로 드러났다." }] },
 
@@ -964,7 +964,7 @@ window.VOCAB_M = [
     syn:["rabble","throng","horde"],
     ex:[{ s:"An angry {{}} gathered outside the courthouse.", f:"mob", ko:"분노한 폭도가 법원 밖에 모였다." }] },
 
-  { word:"mobile", pron:"모발", pos:"adj", level:"B1", meanings:["이동할 수 있는","휴대가 용이한"],
+  { word:"mobile", exams:["수능"], pron:"모발", pos:"adj", level:"B1", meanings:["이동할 수 있는","휴대가 용이한"],
     syn:["movable","portable","roving"], ant:["stationary"],
     ex:[{ s:"The clinic runs a {{}} unit for remote villages.", f:"mobile", ko:"그 진료소는 외딴 마을을 위해 이동할 수 있는 차량을 운영한다." }] },
 
@@ -1153,7 +1153,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '동기 부여' 를 첫 자리에 지켰다. I 세트 incentive 가 참조한다.
      원본의 '자극' 을 둘째 자리에 붙였다. */
-  { word:"motivation", exams:["공무원"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
+  { word:"motivation", exams:["공무원","수능"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
     syn:["incentive","drive","impetus"],
     ex:[{ s:"Her main {{}} was curiosity, not money.", f:"motivation", ko:"그녀의 주된 동기 부여는 돈이 아니라 호기심이었다." }] },
 
@@ -1244,7 +1244,7 @@ window.VOCAB_M = [
     syn:["civic","city-run","local-government"],
     ex:[{ s:"The {{}} library opens on Sundays now.", f:"municipal", ko:"그 시립 도서관은 이제 일요일에도 문을 연다." }] },
 
-  { word:"muscle", pron:"머슬", pos:"n", level:"B1", meanings:["근육"],
+  { word:"muscle", exams:["수능"], pron:"머슬", pos:"n", level:"B1", meanings:["근육"],
     syn:["sinew","flesh","tissue"],
     ex:[{ s:"Stretching keeps the {{}} from tightening.", f:"muscle", ko:"스트레칭은 근육이 굳는 것을 막아 준다." }] },
 

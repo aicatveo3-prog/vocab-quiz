@@ -24,7 +24,7 @@ window.VOCAB_H = [
   { word:"habitable", exams:["공무원"], pron:"해비터블", pos:"adj", level:"C1", meanings:["살기에 적합한","거주할 수 있는"], syn:["livable","inhabitable","hospitable"], ant:["uninhabitable"], ex:[{ s:"People will move to more {{}} areas as the climate changes.", f:"habitable", ko:"기후가 변하면서 사람들은 더 살기 좋은 지역으로 이동할 것이다." }] },
   { word:"handle", exams:["공무원"], pron:"핸들", pos:"v", level:"B1", meanings:["다루다","감당하다"], syn:["deal with","cope with","manage"], ex:[{ s:"Tell our assistant, and she will {{}} it.", f:"handle", ko:"우리 조수에게 말하면 그녀가 처리할 거예요." }] },
   { word:"hands-on", exams:["공무원"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
-  { word:"harmful", exams:["공무원"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
+  { word:"harmful", exams:["공무원","수능"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
   { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
   { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
@@ -343,7 +343,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — GLOSS '강조하다; 하이라이트' 와 같은 갈래다. accentuate·emphasize
      두 문제가 이 단어를 유의어로 쓴다. */
-  { word:"highlight", pron:"하이라이트", pos:"v", level:"B2", meanings:["강조하다"],
+  { word:"highlight", exams:["수능"], pron:"하이라이트", pos:"v", level:"B2", meanings:["강조하다"],
     syn:["emphasize","underline","spotlight"],
     ex:[{ s:"The report aims to {{}} the key findings.", f:"highlight", ko:"그 보고서는 핵심 발견을 강조하는 것을 목표로 한다." }] },
 
