@@ -1792,7 +1792,6 @@ Object.assign(window.GLOSS, {
   "wholly":"온전히, 남김없이",
   "wife-to-be":"약혼녀",
   "winded":"숨이 찬",
-  "wipe out":"전멸시키다",
   "withdrawn":"내성적인; 은둔한",
   "without fail":"반드시, 꼭",
   "work":"작품; 일하다",

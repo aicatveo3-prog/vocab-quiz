@@ -1578,8 +1578,6 @@ Object.assign(window.GLOSS, {
   "thrift": "절약, 검약",
   "trump up":"날조하다",
   "truthful":"진실한, 사실대로의",
-  "unfortunate": "불운한",
-  "unification": "통일, 통합",
   "veneer":"겉치장, 허울",
   "verifiable":"검증할 수 있는",
 
@@ -1716,7 +1714,6 @@ Object.assign(window.GLOSS, {
   "trickle out of":"~에서 방울져 흐르다",
   "unborn child":"아직 태어나지 않은 아이",
   "unclean":"깨끗하지 않은",
-  "violent":"폭력적인, 격렬한",
 
   /* ── 5차: finite ~ flawless (48개) ─────────────────
      limited·solid·sturdy·smooth·gleam·imperfection·crisp 은 이미 GLOSS 에
@@ -1756,7 +1753,6 @@ Object.assign(window.GLOSS, {
   "shoot up":"급히 치솟다",
   "smooth out":"매끄럽게 펴다",
   "splitting":"쪼개짐",
-  "suitability":"적합함",
   "tang":"톡 쏘는 맛",
   "taste":"맛, 미각",
   "tax-related":"세금에 관한",

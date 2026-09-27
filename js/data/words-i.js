@@ -91,6 +91,9 @@ window.VOCAB_I = [
   { word:"irregular", exams:["수능"], pron:"이레귤러", pos:"adj", level:"B2", meanings:["불규칙한","비정상적인"], syn:["erratic","uneven","sporadic"], ant:["regular"], ex:[{ s:"Visitors come to the hospital at {{}} times of the day.", f:"irregular", ko:"방문객들은 하루 중 불규칙한 시간에 병원을 찾는다." }] },
   { word:"iteration", exams:["수능"], pron:"이터레이션", pos:"n", level:"C1", meanings:["반복","되풀이"], syn:["repetition","recurrence","reiteration"], ex:[{ s:"With each {{}}, the design became a little better.", f:"iteration", ko:"반복할 때마다 설계는 조금씩 나아졌다." }] },
   { word:"iterative", exams:["수능"], pron:"이터레이티브", pos:"adj", level:"C1", meanings:["반복적인","되풀이하는"], syn:["repetitive","recursive","cyclical"], ex:[{ s:"Software is often built through {{}} cycles of testing.", f:"iterative", ko:"소프트웨어는 흔히 반복적인 시험 주기를 거쳐 만들어진다." }] },
+  { word:"industrialized", exams:["수능"], pron:"인더스트리얼라이즈드", pos:"adj", level:"B2", meanings:["산업화된","공업화된"], syn:["industrial","developed","advanced"], ex:[{ s:"In {{}} societies, most people work in factories and offices rather than on farms.", f:"industrialized", ko:"산업화된 사회에서는 대부분의 사람이 농장이 아니라 공장과 사무실에서 일한다." }] },
+  { word:"in the face of", exams:["수능"], pron:"인 더 페이스 오브", pos:"phr", level:"C1", meanings:["~에 직면하여","~에도 불구하고"] },
+  { word:"in effect", exams:["수능"], pron:"인 이펙트", pos:"phr", level:"C1", meanings:["사실상","실제로는"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],

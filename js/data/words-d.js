@@ -143,6 +143,7 @@ window.VOCAB_D = [
   { word:"distant", exams:["수능"], pron:"디스턴트", pos:"adj", level:"B1", meanings:["먼","거리가 있는"], syn:["remote","far-off","faraway"], ant:["adjacent","nearby"], ex:[{ s:"The stars look tiny because they are so {{}}.", f:"distant", ko:"별은 너무 멀리 있어서 아주 작아 보인다." }] },
   { word:"divide", exams:["수능"], pron:"디바이드", pos:"v", level:"B1", meanings:["나누다","갈라놓다"], syn:["split","separate","partition"], ant:["unite","multiply"], ex:[{ s:"The river {{}} the old city into two parts.", f:"divides", ko:"그 강은 옛 도시를 두 부분으로 나눈다." }] },
   { word:"doctoral", exams:["수능"], pron:"닥터럴", pos:"adj", level:"C1", meanings:["박사의","박사 학위의"], ex:[{ s:"He earned his {{}} degree in 1924.", f:"doctoral", ko:"그는 1924년에 박사 학위를 받았다." }] },
+  { word:"deep down", exams:["수능"], pron:"딥 다운", pos:"phr", level:"B2", meanings:["마음속으로는","내심"] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],

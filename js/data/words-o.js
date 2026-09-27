@@ -117,6 +117,7 @@ window.VOCAB_O = [
   { word:"on the rise", exams:["공무원"], pron:"온 더 라이즈", pos:"phr", level:"B2", meanings:["증가하고 있는","상승 중인"], syn:["increasing","growing","mounting"] },
   { word:"object to", exams:["공무원"], pron:"어브젝트 투", pos:"phr", level:"B2", meanings:["~에 반대하다","~에 이의를 제기하다"] },
   { word:"outsourcing", exams:["수능"], pron:"아웃소싱", pos:"n", level:"C1", meanings:["외주","외부 위탁"], ex:[{ s:"{{}} lets large companies move work to cheaper markets.", f:"Outsourcing", ko:"외주 덕분에 대기업은 일을 더 싼 시장으로 옮길 수 있다." }] },
+  { word:"on the spot", exams:["수능"], pron:"온 더 스팟", pos:"phr", level:"B2", meanings:["즉석에서","현장에서"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).

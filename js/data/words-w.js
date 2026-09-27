@@ -54,6 +54,9 @@ window.VOCAB_W = [
   { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
   { word:"workaholic", exams:["공무원"], pron:"워커홀릭", pos:"n", level:"B2", meanings:["일중독자"], ex:[{ s:"My father is a true {{}} who works even on weekends.", f:"workaholic", ko:"우리 아버지는 주말에도 일하는 진정한 일중독자다." }] },
   { word:"weed out", exams:["공무원"], pron:"위드 아웃", pos:"phr", level:"B2", meanings:["솎아 내다","가려내다"] },
+  { word:"willingly", exams:["수능"], pron:"윌링리", pos:"adv", level:"B2", meanings:["기꺼이","자진해서"], syn:["readily","gladly","voluntarily"], ant:["reluctantly","unwillingly"] },
+  { word:"worthless", exams:["수능"], pron:"워스리스", pos:"adj", level:"B2", meanings:["가치 없는","쓸모없는"], syn:["useless","valueless","futile"], ant:["precious"], ex:[{ s:"Speed is {{}} if the bus comes only once an hour.", f:"worthless", ko:"버스가 한 시간에 한 번만 온다면 속도는 쓸모가 없다." }] },
+  { word:"wipe out", exams:["수능"], pron:"와이프 아웃", pos:"phr", level:"B2", meanings:["완전히 없애다","전멸시키다"] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -642,6 +645,7 @@ Object.assign(window.GLOSS, {
   "given to doing harm": "해를 끼치려 드는",
   "given to war": "전쟁으로 기우는",
   "glad to lend a hand": "손을 보태는 것이 반가운",
+  "gladly": "기쁘게",
   "go about with no goal": "목적 없이 돌아다니다",
   "go round and round": "돌고 또 돌다",
   "good enough to go on with": "그럭저럭 밀고 갈 만한",
@@ -745,6 +749,7 @@ Object.assign(window.GLOSS, {
   "tussle": "몸싸움하다, 옥신각신하다",
   "untamed country": "길들지 않은 들판",
   "unwanted growth": "달갑지 않게 자란 것",
+  "voluntarily": "자발적으로",
   "walk here and there": "여기저기 걸어 다니다",
   "want of strength": "힘이 모자람",
   "waste country": "버려진 들판",

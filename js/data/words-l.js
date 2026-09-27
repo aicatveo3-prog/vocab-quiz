@@ -916,7 +916,6 @@ Object.assign(window.GLOSS, {
   "uneaten": "먹지 않은",
   "unflappable": "동요하지 않는",
   "unhurried": "서두르지 않는",
-  "unlikely": "있을 것 같지 않은",
   "unsophisticated": "세련되지 않은",
   "untie": "매듭을 풀다",
   "validly": "유효하게, 타당하게",

@@ -63,6 +63,7 @@ window.VOCAB_T = [
   { word:"touch off", exams:["공무원"], pron:"터치 오프", pos:"phr", level:"C1", meanings:["촉발하다","일으키다"], syn:["trigger","spark","give rise to"] },
   { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
   { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
+  { word:"transferable", exams:["수능"], pron:"트랜스퍼러블", pos:"adj", level:"C1", meanings:["양도 가능한","옮길 수 있는"], ex:[{ s:"The concert pass is not {{}} to another person.", f:"transferable", ko:"그 공연 이용권은 다른 사람에게 양도할 수 없다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

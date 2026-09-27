@@ -85,6 +85,7 @@ window.VOCAB = [
   { word:"agricultural", exams:["수능"], pron:"애그리컬처럴", pos:"adj", level:"B2", meanings:["농업의","농사의"], ex:[{ s:"The region's {{}} land produces rice and wheat.", f:"agricultural", ko:"그 지역의 농경지에서는 쌀과 밀이 난다." }] },
   { word:"appropriately", exams:["수능"], pron:"어프로프리엇리", pos:"adv", level:"B2", meanings:["적절하게","알맞게"], syn:["properly","suitably","fittingly"], ant:["inappropriately"] },
   { word:"attractive", exams:["수능"], pron:"어트랙티브", pos:"adj", level:"B1", meanings:["매력적인","마음을 끄는"], syn:["appealing","charming","alluring"], ant:["unattractive"], ex:[{ s:"The low price makes the offer very {{}} to buyers.", f:"attractive", ko:"낮은 가격 덕분에 그 제안은 구매자들에게 매우 매력적이다." }] },
+  { word:"atom", exams:["수능"], pron:"애텀", pos:"n", level:"B2", meanings:["원자"], ex:[{ s:"Every carbon {{}} has six protons in its center.", f:"atom", ko:"모든 탄소 원자는 중심에 양성자 여섯 개를 가진다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },

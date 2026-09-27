@@ -3118,7 +3118,6 @@ Object.assign(window.GLOSS, {
   "worth more than money": "돈보다 값진",
   "worth picking first": "먼저 고를 만한",
   "worth the effort": "힘들인 값이 있는",
-  "worthless": "값이 없는",
   "wrapped goods": "싸 놓은 물건",
   "wrapper": "포장지",
   "wrapping": "포장재, 감싸기",

@@ -121,6 +121,10 @@ window.VOCAB_S = [
   { word:"sculpture", exams:["수능"], pron:"스컬프처", pos:"n", level:"B1", meanings:["조각","조각품"], syn:["statue","carving","engraving"], ex:[{ s:"The museum displays ancient Greek {{}}.", f:"sculpture", ko:"그 박물관은 고대 그리스 조각품을 전시한다." }] },
   { word:"secrecy", exams:["수능"], pron:"시크러시", pos:"n", level:"C1", meanings:["비밀 유지","비밀"], syn:["confidentiality","privacy","concealment"], ant:["transparency"], ex:[{ s:"The firms worked in relative {{}} to protect their information.", f:"secrecy", ko:"그 회사들은 정보를 지키려고 비교적 비밀리에 일했다." }] },
   { word:"significance", exams:["수능"], pron:"시그니피컨스", pos:"n", level:"B2", meanings:["중요성","의미"], syn:["importance","meaning","weight"], ex:[{ s:"Few people understood the {{}} of the discovery at first.", f:"significance", ko:"처음에는 그 발견의 중요성을 이해한 사람이 거의 없었다." }] },
+  { word:"stakeholder", exams:["수능"], pron:"스테이크홀더", pos:"n", level:"C1", meanings:["이해관계자","이해 당사자"], ex:[{ s:"Planners must listen to every {{}} before changing the festival.", f:"stakeholder", ko:"기획자들은 축제를 바꾸기 전에 모든 이해관계자의 말을 들어야 한다." }] },
+  { word:"steady", exams:["수능"], pron:"스테디", pos:"adj", level:"B1", meanings:["꾸준한","안정된"], syn:["constant","consistent","stable"], ant:["erratic"], ex:[{ s:"Slow and {{}} wins the race.", f:"steady", ko:"느려도 꾸준하면 경주에서 이긴다." }] },
+  { word:"sticky", exams:["수능"], pron:"스티키", pos:"adj", level:"B2", meanings:["끈적끈적한","달라붙는"], ex:[{ s:"My fingers were {{}} with honey after breakfast.", f:"sticky", ko:"아침을 먹고 나니 손가락이 꿀로 끈적끈적했다." }] },
+  { word:"suitability", exams:["수능"], pron:"수터빌러티", pos:"n", level:"C1", meanings:["적합성","적합함"], ex:[{ s:"The bell sounds will be chosen based on creativity and {{}}.", f:"suitability", ko:"종소리는 창의성과 적합성을 바탕으로 선정된다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

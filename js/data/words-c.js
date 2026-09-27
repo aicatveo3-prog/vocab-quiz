@@ -95,6 +95,7 @@ window.VOCAB_C = [
   { word:"cumulative", exams:["수능"], pron:"큐뮬러티브", pos:"adj", level:"C1", meanings:["누적되는","점증적인"], syn:["accumulated","mounting","aggregate"], ex:[{ s:"Small daily habits have {{}} effects over many years.", f:"cumulative", ko:"작은 일상 습관은 오랜 세월에 걸쳐 누적 효과를 낸다." }] },
   { word:"curate", exams:["수능"], pron:"큐레이트", pos:"v", level:"C1", meanings:["전시를 기획하다","선별해 정리하다"], ex:[{ s:"She was hired to {{}} the museum's costume collection.", f:"curate", ko:"그녀는 박물관 의상 소장품의 전시를 기획하도록 고용되었다." }] },
   { word:"cycle", exams:["수능"], pron:"사이클", pos:"n", level:"B1", meanings:["순환","주기"], ex:[{ s:"The water {{}} moves water between the sea and the sky.", f:"cycle", ko:"물의 순환은 바다와 하늘 사이로 물을 옮긴다." }] },
+  { word:"cast aside", exams:["수능"], pron:"캐스트 어사이드", pos:"phr", level:"C1", meanings:["버리다","내던지다"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2201,7 +2202,6 @@ Object.assign(window.GLOSS, {
   "soldier":"군인",
   "stagnate":"고이다, 정체되다",
   "stalemate":"교착 상태",
-  "steady":"한결같은, 안정된",
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
   "succumb":"굴복하다, 쓰러지다",

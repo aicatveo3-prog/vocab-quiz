@@ -2342,7 +2342,6 @@ Object.assign(window.GLOSS, {
   "whisper like dry leaves": "마른 잎처럼 속삭이다",
   "wide fame": "널리 퍼진 이름",
   "widely known": "널리 알려진",
-  "willingly": "기꺼이",
   "win back": "되찾아 오다",
   "win back for use": "되찾아 쓰게 하다",
   "wish one had not": "하지 않았기를 바라다",
