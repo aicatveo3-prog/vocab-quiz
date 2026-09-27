@@ -1063,7 +1063,6 @@ Object.assign(window.GLOSS, {
   "motor":"모터; 자동차의",
   "motorcar":"모터 달린 차",
   "mount":"오르다; 설치하다",
-  "movement":"운동, 이동",
   "movement science":"운동 과학",
   "moving":"감동적인; 움직이는",
   "muddle":"혼동하다; 뒤죽박죽",

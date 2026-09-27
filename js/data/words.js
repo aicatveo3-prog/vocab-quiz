@@ -1775,7 +1775,6 @@ window.GLOSS = {
   "inaudible":"들리지 않는",
   "indict": "기소하다",
   "indulge in":"~에 탐닉하다",
-  "keep":"유지하다, 보관하다",
   "leaky":"새는, 구멍 난",
   "leave":"떠나다",
   "lose":"잃다",
