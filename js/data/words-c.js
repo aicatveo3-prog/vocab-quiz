@@ -132,6 +132,9 @@ window.VOCAB_C = [
   { word:"conceivably", exams:["수능"], pron:"컨시버블리", pos:"adv", level:"C1", meanings:["생각할 수 있는 바로는","어쩌면"] },
   { word:"conclude", exams:["수능"], pron:"컨클루드", pos:"v", level:"B2", meanings:["결론을 내리다","끝내다"], syn:["deduce","infer","finish"], ex:[{ s:"From the evidence, we can {{}} that he was at home.", f:"conclude", ko:"증거로 보아 우리는 그가 집에 있었다고 결론 내릴 수 있다." }] },
   { word:"confrontation", exams:["수능"], pron:"칸프런테이션", pos:"n", level:"C1", meanings:["대치","대립"], syn:["clash","conflict","standoff"], ex:[{ s:"The {{}} between the two armies lasted for weeks.", f:"confrontation", ko:"두 군대의 대치는 몇 주 동안 이어졌다." }] },
+  { word:"constitutional", exams:["수능"], pron:"칸스티투셔널", pos:"adj", level:"C1", meanings:["헌법의","헌법상의"], ex:[{ s:"Citizens have {{}} rights such as freedom of speech.", f:"constitutional", ko:"시민에게는 언론의 자유 같은 헌법상의 권리가 있다." }] },
+  { word:"continuation", exams:["수능"], pron:"컨티뉴에이션", pos:"n", level:"C1", meanings:["계속","연속"], ex:[{ s:"This film is the {{}} of last year's hit movie.", f:"continuation", ko:"이 영화는 작년 흥행작의 속편이다." }] },
+  { word:"convention", exams:["수능"], pron:"컨벤션", pos:"n", level:"B2", meanings:["관습","대회"], syn:["custom","tradition","norm"], ex:[{ s:"Shaking hands is a common social {{}} in many countries.", f:"convention", ko:"악수는 많은 나라에서 흔한 사회적 관습이다." }] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2136,7 +2139,6 @@ Object.assign(window.GLOSS, {
   "dilate":"확장되다, 넓히다",
   "dislike":"싫어하다",
   "dissuade":"말리다, 단념시키다",
-  "doubtful":"의심스러운, 불확실한",
   "ease":"쉬움, 편안함",
 
   "emotional":"감정적인",

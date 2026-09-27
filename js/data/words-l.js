@@ -795,7 +795,6 @@ Object.assign(window.GLOSS, {
   "durability": "오래 견딤",
   "easy to carry": "들고 다니기 쉬운",
   "emancipate": "속박에서 풀다",
-  "equally": "똑같이",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",

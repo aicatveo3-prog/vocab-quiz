@@ -514,6 +514,8 @@ window.VOCAB_F = [
   { word:"fictional", exams:["수능"], pron:"픽셔널", pos:"adj", level:"B2", meanings:["허구의","소설 속의"], syn:["imaginary","invented","made-up"], ant:["factual"], ex:[{ s:"Sherlock Holmes is the most famous {{}} detective.", f:"fictional", ko:"셜록 홈스는 가장 유명한 허구의 탐정이다." }] },
   { word:"filmmaker", exams:["수능"], pron:"필름메이커", pos:"n", level:"B2", meanings:["영화 제작자","영화감독"], syn:["director","moviemaker","film director"], ex:[{ s:"The young {{}} won an award for her first movie.", f:"filmmaker", ko:"그 젊은 영화감독은 첫 영화로 상을 받았다." }] },
   { word:"fossil", exams:["수능"], pron:"파슬", pos:"n", level:"B2", meanings:["화석"], ex:[{ s:"Scientists found a dinosaur {{}} in the desert.", f:"fossil", ko:"과학자들은 사막에서 공룡 화석을 발견했다." }] },
+  { word:"facilitator", exams:["수능"], pron:"퍼실러테이터", pos:"n", level:"C1", meanings:["진행자","촉진자"], ex:[{ s:"The workshop {{}} made sure everyone had a chance to speak.", f:"facilitator", ko:"워크숍 진행자는 모두가 말할 기회를 갖도록 했다." }] },
+  { word:"fingerprint", exams:["수능"], pron:"핑거프린트", pos:"n", level:"B2", meanings:["지문"], ex:[{ s:"The police found the thief's {{}} on the window.", f:"fingerprint", ko:"경찰은 창문에서 도둑의 지문을 찾아냈다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */

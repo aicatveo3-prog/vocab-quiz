@@ -600,7 +600,6 @@ Object.assign(window.GLOSS, {
   "dampness":"습기",
   "danger":"위험, 위험성",
   "dangerous":"위험한",
-  "defenseless":"무방비의",
   "degraded":"품위가 떨어진",
   "detainee":"억류자",
   "dip":"움푹 꺼진 곳",

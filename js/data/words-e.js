@@ -829,6 +829,12 @@ window.VOCAB_E = [
   { word:"entirely", exams:["수능"], pron:"인타이어리", pos:"adv", level:"B2", meanings:["완전히","전적으로"], syn:["completely","wholly","totally"], ant:["partly"] },
   { word:"essence", exams:["수능"], pron:"에센스", pos:"n", level:"C1", meanings:["본질","정수"], ex:[{ s:"Honesty is the {{}} of a true friendship.", f:"essence", ko:"정직은 진정한 우정의 본질이다." }] },
   { word:"experimental", exams:["수능"], pron:"익스페리멘털", pos:"adj", level:"B2", meanings:["실험적인","실험의"], ex:[{ s:"The new medicine is still in the {{}} stage.", f:"experimental", ko:"그 신약은 아직 실험 단계에 있다." }] },
+  { word:"economist", exams:["수능"], pron:"이카너미스트", pos:"n", level:"B2", meanings:["경제학자"], ex:[{ s:"The {{}} predicted that prices would rise next year.", f:"economist", ko:"그 경제학자는 내년에 물가가 오를 것이라고 예측했다." }] },
+  { word:"efficiently", exams:["수능"], pron:"이피션틀리", pos:"adv", level:"B2", meanings:["효율적으로","능률적으로"] },
+  { word:"endlessly", exams:["수능"], pron:"엔들리슬리", pos:"adv", level:"C1", meanings:["끝없이","한없이"] },
+  { word:"equally", exams:["수능"], pron:"이퀄리", pos:"adv", level:"B2", meanings:["똑같이","동등하게"] },
+  { word:"eventual", exams:["수능"], pron:"이벤추얼", pos:"adj", level:"C1", meanings:["최종적인","궁극적인"], ex:[{ s:"Nobody could predict the {{}} winner of the long race.", f:"eventual", ko:"그 긴 경주의 최종 우승자를 아무도 예측할 수 없었다." }] },
+  { word:"examination", exams:["수능"], pron:"이그재머네이션", pos:"n", level:"B2", meanings:["검사","조사"], ex:[{ s:"The doctor gave me a thorough {{}}.", f:"examination", ko:"의사가 나를 철저히 검진했다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
