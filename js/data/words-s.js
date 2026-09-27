@@ -2563,7 +2563,7 @@ window.VOCAB_S = [
 
   /* 승격 221 — 사전 글자 유지. 참조 넷 중 셋(abundance·deficit·excess) 이 명사라
      그대로 맞고, 형용사인 leftover(L) 한 자리만 'left unused' 로 갈았다. */
-  { word:"surplus", pron:"서플러스", pos:"n", level:"B2", meanings:["잉여","과잉"],
+  { word:"surplus", exams:["수능"], pron:"서플러스", pos:"n", level:"B2", meanings:["잉여","과잉"],
     syn:["abundance","excess","amount left over"], ant:["deficit"],
     ex:[{ s:"The farm had a grain {{}} that year.", f:"surplus", ko:"그 농장은 그해 곡물 잉여가 있었다." }] },
 

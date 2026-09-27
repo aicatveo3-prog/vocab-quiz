@@ -1525,7 +1525,6 @@ Object.assign(window.GLOSS, {
   "arrears":"연체금, 미납금",
   /* asset 은 이미 A~C 세트의 표제어다 — 사전에 넣으면 중복이다 */
   "assiduously": "끈기 있게, 꾸준히 힘써",
-  "brighten":"밝게 하다, 밝아지다",
   "carefully": "조심스럽게",
   "cautiously": "주의 깊게, 신중히",
   "centralization":"중앙 집권화",
@@ -1725,7 +1724,6 @@ Object.assign(window.GLOSS, {
   "aberrant":"정상에서 벗어난, 이상한",
   "appoint":"임명하다, 정하다",
   "ascertain":"확인하다, 알아내다",
-  "attractive":"매력적인, 마음을 끄는",
   "bypass":"우회로; 우회하다",
   "cleaning agent":"세정제",
   "cleanser":"세정제, 클렌저",

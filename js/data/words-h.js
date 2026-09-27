@@ -563,7 +563,6 @@ Object.assign(window.GLOSS, {
   "antagonistic":"적대적인",
   "artisanship":"장인 기술",
   "atrocious":"끔찍한",
-  "balanced":"균형 잡힌",
   "be contacted by":"~로부터 연락받다",
   "be relevant to":"~와 관련되다",
   "be unrelated to":"~와 전혀 관계없다",
