@@ -1900,7 +1900,6 @@ Object.assign(window.GLOSS, {
   "cheeky": "건방진, 까부는",
   "childish": "어린애 같은",
   "clever": "영리한",
-  "clue": "단서",
   "colonialism": "식민주의",
   "come into": "물려받게 되다",
   "commencement": "시작, 개회",

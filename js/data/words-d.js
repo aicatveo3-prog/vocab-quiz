@@ -1829,7 +1829,6 @@ Object.assign(window.GLOSS, {
   /* ── 6차 (directory ~ dismal) 몫 69개 ──────────── */
   "able-bodied":"신체가 건강한",
   "adherent":"지지자, 신봉자",
-  "bias":"편견, 편향",
   "break with":"~와 관계를 끊다",
   "calamitous":"재난을 초래하는, 비참한",
   "contentment":"만족, 자족",
@@ -1878,7 +1877,6 @@ Object.assign(window.GLOSS, {
 
   /* ── 7차 (dismay ~ disturbance) 몫 51개 ─────────── */
   "alarm":"불안, 경악",
-  "bother":"괴롭히다, 신경 쓰이게 하다",
   "brush aside":"무시하다, 제쳐 두다",
   "commotion":"소동, 소란",
   "consternation":"경악, 대경실색",

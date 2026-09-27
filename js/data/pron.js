@@ -445,7 +445,6 @@ Object.assign(window.PRON, {
   "attachment": "어태치먼트",
   "attacking": "어태킹",
   "attend": "어텐드",
-  "atypical": "에이티피컬",
   "audacious": "오데이셔스",
   "audio-visual": "오디오 비주얼",
   "auditor": "오디터",
@@ -1167,7 +1166,6 @@ Object.assign(window.PRON, {
   "close watching": "클로스 워칭",
   "closing account": "클로징 어카운트",
   "clothing": "클로딩",
-  "clue": "클루",
   "clump": "클럼프",
   "clumsiness": "클럼지니스",
   "clutter": "클러터",
@@ -1272,7 +1270,6 @@ Object.assign(window.PRON, {
   "concentrated": "칸선트레이팃",
   "concerning": "컨서닝",
   "concerning nourishment": "컨서닝 너리시먼트",
-  "conclude": "컨클루드",
   "conclusively": "컨클루시블리",
   "condensed": "컨덴스트",
   "condition": "컨디션",
@@ -1285,7 +1282,6 @@ Object.assign(window.PRON, {
   "confinement": "컨파인먼트",
   "conflicted": "컨플릭티드",
   "conforming": "컨포밍",
-  "confrontation": "칸프런테이션",
   "confusing": "컨퓨징",
   "congenital": "컨제너털",
   "congressional": "컨그레셔널",
@@ -7323,7 +7319,6 @@ Object.assign(window.PRON, {
   /* D 6차 (directory ~ dismal) 몫 73개 */
   "able-bodied": "에이블 바디드",
   "adherent": "애드히어런트",
-  "bias": "바이어스",
   "break with": "브레이크 위드",
   "calamitous": "컬래머터스",
   "contentment": "컨텐트먼트",
@@ -7377,7 +7372,6 @@ Object.assign(window.PRON, {
 Object.assign(window.PRON, {
   /* D 7차 (dismay ~ disturbance) 몫 54개 */
   "alarm": "얼람",
-  "bother": "바더",
   "brush aside": "브러시 어사이드",
   "commotion": "커모션",
   "consternation": "칸스터네이션",
@@ -7798,7 +7792,6 @@ Object.assign(window.PRON, {
   /* ── 10차: excessive ~ exhibition (45개) ─────────────────
      administrator 는 기존 administration("어드미니스트레이션")에, manager 는
      managerial("매너지리얼")에 맞췄다. */
-  "administrator": "어드미니스트레이터",
   "barring": "배링",
   "blow out": "블로 아웃",
   "breathe out": "브리드 아웃",
@@ -8786,7 +8779,6 @@ Object.assign(window.PRON, {
   "bearable": "베어러블",
   "better": "베터",
   "binding": "바인딩",
-  "blame": "블레임",
   "bloc": "블록",
   "bluff": "블러프",
   "boat": "보트",
@@ -8834,7 +8826,6 @@ Object.assign(window.PRON, {
   "commentator": "카먼테이터",
   "comments": "카멘츠",
   "committed": "커미티드",
-  "complexity": "컴플렉서티",
   "complicate": "캄플러케이트",
   "con": "칸",
   "conceivable": "컨시버블",
@@ -9299,6 +9290,7 @@ Object.assign(window.PRON, {
   "alike": "얼라이크",
   "allegiance": "얼리전스",
   "always": "올웨이즈",
+  "annoy": "어노이",
   "avidly": "애비들리",
   "basically": "베이시컬리",
   "betrayal": "비트레이얼",
@@ -9379,6 +9371,7 @@ Object.assign(window.PRON, {
   "sorry": "쏘리",
   "speed": "스피드",
   "sponsorship": "스판서십",
+  "standoff": "스탠드오프",
   "succinct": "석싱크트",
   "suitably": "수터블리",
   "surmount": "서마운트",

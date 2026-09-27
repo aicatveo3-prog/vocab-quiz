@@ -2381,7 +2381,6 @@ Object.assign(window.GLOSS, {
   "vaporize":"기화시키다",
 
   /* ── 10차: excessive ~ exhibition (44개) ───────────────── */
-  "administrator":"관리자, 행정관",
   "barring":"차단, 못 들어오게 함",
   "blow out":"불어 내보내다",
   "breathe out":"숨을 내쉬다",

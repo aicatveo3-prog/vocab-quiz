@@ -2944,7 +2944,6 @@ Object.assign(window.GLOSS, {
   "complete in itself": "그것만으로 온전한",
   "complete soaking": "속까지 다 젖음",
   "complete stop": "완전한 멈춤",
-  "complexity": "복잡성",
   "con": "속임수",
   "conditional": "조건부의",
   "confidentiality": "기밀성",
