@@ -105,6 +105,11 @@ window.VOCAB_I = [
   { word:"inordinate", exams:["수능"], pron:"인오디닛", pos:"adj", level:"C2", meanings:["과도한","엄청난"], ex:[{ s:"Spending {{}} amounts of money on clothes left him broke.", f:"inordinate", ko:"옷에 엄청난 돈을 쓴 탓에 그는 빈털터리가 되었다." }] },
   { word:"invention", exams:["수능"], pron:"인벤션", pos:"n", level:"B1", meanings:["발명","발명품"], ex:[{ s:"The printing press was the greatest {{}} of its time.", f:"invention", ko:"인쇄기는 당대 최고의 발명품이었다." }] },
   { word:"inventor", exams:["수능"], pron:"인벤터", pos:"n", level:"B1", meanings:["발명가"], ex:[{ s:"Edison was a famous {{}} who held over a thousand patents.", f:"inventor", ko:"에디슨은 천 개가 넘는 특허를 가진 유명한 발명가였다." }] },
+  { word:"independently", exams:["수능"], pron:"인디펜던틀리", pos:"adv", level:"B2", meanings:["독립적으로","따로"] },
+  { word:"instance", exams:["수능"], pron:"인스턴스", pos:"n", level:"B1", meanings:["사례","경우"], ex:[{ s:"In this {{}}, the usual rule does not apply.", f:"instance", ko:"이 경우에는 일반적인 규칙이 적용되지 않는다." }] },
+  { word:"instructor", exams:["수능"], pron:"인스트럭터", pos:"n", level:"B2", meanings:["강사","교관"], ex:[{ s:"The driving {{}} told me to slow down at the corner.", f:"instructor", ko:"운전 강사는 모퉁이에서 속도를 줄이라고 말했다." }] },
+  { word:"intensely", exams:["수능"], pron:"인텐슬리", pos:"adv", level:"C1", meanings:["강렬하게","몹시"] },
+  { word:"invariably", exams:["수능"], pron:"인베리어블리", pos:"adv", level:"C1", meanings:["변함없이","언제나"], syn:["always","consistently","constantly"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -1832,6 +1837,7 @@ Object.assign(window.GLOSS, {
   "affront": "모욕을 주다",
   "all-embracing": "모두를 아우르는",
   "alone": "혼자서",
+  "always": "항상",
   "animate": "살아 있는",
   "answering": "응답하는",
   "apathetic": "시들한, 심드렁한",
@@ -2079,7 +2085,6 @@ Object.assign(window.GLOSS, {
   "intonation": "억양, 음조",
   "introduce": "도입하다, 소개하다",
   "intrusion": "허락 없이 끼어듦",
-  "invariably": "변함없이, 언제나",
   "inward": "안쪽을 향한",
   "inward-looking": "안으로 파고드는",
   "irresolute": "결단을 못 내리는",

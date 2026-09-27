@@ -500,6 +500,13 @@ window.VOCAB_F = [
   { word:"fairly", exams:["수능"], pron:"페어리", pos:"adv", level:"B2", meanings:["상당히","공정하게"] },
   { word:"fearful", exams:["수능"], pron:"피어풀", pos:"adj", level:"B2", meanings:["두려워하는","무서워하는"], syn:["afraid","frightened","apprehensive"], ant:["fearless"], ex:[{ s:"The little boy was {{}} of the dark.", f:"fearful", ko:"그 어린 소년은 어둠을 무서워했다." }] },
   { word:"forceful", exams:["수능"], pron:"포스풀", pos:"adj", level:"B2", meanings:["힘찬","강력한"], syn:["powerful","vigorous","assertive"], ant:["feeble"], ex:[{ s:"She hit the door with {{}} blows until someone opened it.", f:"forceful", ko:"그녀는 누군가 문을 열 때까지 힘껏 문을 두드렸다." }] },
+  { word:"facial", exams:["수능"], pron:"페이셜", pos:"adj", level:"B2", meanings:["얼굴의","안면의"], ex:[{ s:"Babies copy the {{}} gestures of adults around them.", f:"facial", ko:"아기는 주변 어른들의 얼굴 표정을 따라 한다." }] },
+  { word:"failure", exams:["수능"], pron:"페일러", pos:"n", level:"B1", meanings:["실패","고장"], ex:[{ s:"His first business ended in {{}} after only a year.", f:"failure", ko:"그의 첫 사업은 불과 1년 만에 실패로 끝났다." }] },
+  { word:"fatally", exams:["수능"], pron:"페이털리", pos:"adv", level:"C1", meanings:["치명적으로"] },
+  { word:"fellow", exams:["수능"], pron:"펠로", pos:"adj", level:"B2", meanings:["동료의","같은 처지의"], ex:[{ s:"She was praised by her {{}} teachers for her hard work.", f:"fellow", ko:"그녀는 열심히 일해서 동료 교사들에게 칭찬받았다." }] },
+  { word:"firmly", exams:["수능"], pron:"펌리", pos:"adv", level:"B2", meanings:["단단히","확고히"] },
+  { word:"fixate", exams:["수능"], pron:"픽세이트", pos:"v", level:"C1", meanings:["집착하다","고정하다"], ex:[{ s:"Try not to {{}} on small mistakes you made in the past.", f:"fixate", ko:"과거에 저지른 사소한 실수에 집착하지 않도록 해라." }] },
+  { word:"futuristic", exams:["수능"], pron:"퓨처리스틱", pos:"adj", level:"C1", meanings:["미래적인","초현대적인"], ex:[{ s:"The movie shows {{}} cities full of flying cars.", f:"futuristic", ko:"그 영화는 날아다니는 차로 가득한 미래 도시를 보여 준다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */

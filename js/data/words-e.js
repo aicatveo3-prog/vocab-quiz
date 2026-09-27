@@ -813,6 +813,7 @@ window.VOCAB_E = [
   { word:"edition", exams:["수능"], pron:"이디션", pos:"n", level:"B2", meanings:["판","호"], ex:[{ s:"The first {{}} of the book sold out in a week.", f:"edition", ko:"그 책의 초판은 일주일 만에 다 팔렸다." }] },
   { word:"enjoy", exams:["수능"], pron:"인조이", pos:"v", level:"B1", meanings:["즐기다","누리다"], ex:[{ s:"Sit back, relax, and {{}} the show!", f:"enjoy", ko:"편히 앉아 긴장을 풀고 공연을 즐기세요!" }] },
   { word:"expression", exams:["수능"], pron:"익스프레션", pos:"n", level:"B1", meanings:["표현","표정"], ex:[{ s:"Her facial {{}} showed that she was angry.", f:"expression", ko:"그녀의 표정을 보니 화가 나 있었다." }] },
+  { word:"extractive", exams:["수능"], pron:"익스트랙티브", pos:"adj", level:"C1", meanings:["채취하는","추출의"], ex:[{ s:"Mining and logging are {{}} industries that take resources from nature.", f:"extractive", ko:"광업과 벌목업은 자연에서 자원을 뽑아 쓰는 채취 산업이다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2117,7 +2118,6 @@ Object.assign(window.GLOSS, {
   "inefficiency":"비능률, 비효율",
   "inscribe": "새기다, 적다",
   "insincere":"진심이 아닌, 겉치레의",
-  "instructor": "강사, 교사",
   "laid-back":"서두르지 않는, 태평한",
   "leading article":"주요 논설",
   "old": "늙은, 오래된",

@@ -756,7 +756,6 @@ Object.assign(window.GLOSS, {
   "heartache":"가슴앓이",
   "hit it off with":"~와 금방 친해지다",
   "hold fast":"단단히 붙들다",
-  "hopeful":"희망적인",
   "hothouse":"난방 온실",
   "ice field":"빙원",
   "ice sheet":"대륙 빙상",

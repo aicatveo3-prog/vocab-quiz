@@ -87,6 +87,8 @@ window.VOCAB_M = [
   { word:"movement", exams:["수능"], pron:"무브먼트", pos:"n", level:"B1", meanings:["움직임","운동"], ex:[{ s:"The dancer's every {{}} was smooth and graceful.", f:"movement", ko:"그 무용수의 움직임 하나하나가 부드럽고 우아했다." }] },
   { word:"maintenance", exams:["수능"], pron:"메인터넌스", pos:"n", level:"B2", meanings:["유지","보수 관리"], ex:[{ s:"Old cars need regular {{}} to run safely.", f:"maintenance", ko:"오래된 차는 안전하게 달리려면 정기적인 정비가 필요하다." }] },
   { word:"mood", exams:["수능"], pron:"무드", pos:"n", level:"B1", meanings:["기분","분위기"], ex:[{ s:"Sunny weather always puts me in a better {{}}.", f:"mood", ko:"화창한 날씨는 늘 내 기분을 더 좋게 해 준다." }] },
+  { word:"memorable", exams:["수능"], pron:"메머러블", pos:"adj", level:"B2", meanings:["기억할 만한","인상적인"], syn:["unforgettable","remarkable","notable"], ex:[{ s:"The concert was so {{}} that I still remember every song.", f:"memorable", ko:"그 공연은 너무 인상적이어서 나는 아직도 모든 노래를 기억한다." }] },
+  { word:"misquote", exams:["수능"], pron:"미스쿼트", pos:"v", level:"C1", meanings:["잘못 인용하다"], ex:[{ s:"The newspaper apologized for {{}} the minister's exact words.", f:"misquoting", ko:"그 신문은 장관의 정확한 발언을 잘못 인용한 것을 사과했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

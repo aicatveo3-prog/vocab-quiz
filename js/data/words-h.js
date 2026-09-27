@@ -43,6 +43,8 @@ window.VOCAB_H = [
   { word:"historical", exams:["수능"], pron:"히스토리컬", pos:"adj", level:"B1", meanings:["역사의","역사적인"], ex:[{ s:"The museum displays {{}} documents from the war.", f:"historical", ko:"그 박물관은 전쟁 당시의 역사 문서를 전시한다." }] },
   { word:"honesty", exams:["수능"], pron:"아니스티", pos:"n", level:"B1", meanings:["정직","솔직함"], syn:["integrity","sincerity","truthfulness"], ant:["dishonesty"], ex:[{ s:"Farmers earned good reputations for {{}} and fairness.", f:"honesty", ko:"농부들은 정직과 공정함으로 좋은 평판을 얻었다." }] },
   { word:"host", exams:["수능"], pron:"호스트", pos:"n", level:"B2", meanings:["주최자","다수"], ex:[{ s:"The {{}} welcomed each guest at the door.", f:"host", ko:"주최자는 문 앞에서 손님을 한 명씩 맞이했다." }] },
+  { word:"handful", exams:["수능"], pron:"핸드풀", pos:"n", level:"B2", meanings:["한 줌","소수"], ex:[{ s:"He grabbed a big {{}} of nuts from the bowl.", f:"handful", ko:"그는 그릇에서 견과류를 크게 한 줌 집었다." }] },
+  { word:"hopeful", exams:["수능"], pron:"호프풀", pos:"adj", level:"B2", meanings:["희망에 찬","기대하는"], syn:["optimistic","positive","promising"], ant:["hopeless"], ex:[{ s:"After the good news, everyone felt {{}} about the future.", f:"hopeful", ko:"좋은 소식을 듣고 모두가 미래에 희망을 품었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -652,7 +654,6 @@ Object.assign(window.GLOSS, {
   "longhand":"필기체",
   "love":"사랑",
   "low-pitched":"저음의",
-  "luxury":"호화스러운",
   "main office":"본사, 본부",
   "manslaughter":"과실치사",
   "meek":"순한, 온순한",
@@ -676,6 +677,7 @@ Object.assign(window.GLOSS, {
   "powerless":"무력한",
   "prejudice attack":"편견에 의한 공격",
   "profane":"세속적인",
+  "promising": "유망한",
   "ranking":"순위",
   "reaping":"수확",
   "receive news from":"~로부터 소식을 받다",

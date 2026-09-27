@@ -1771,7 +1771,6 @@ window.GLOSS = {
   "establishment":"설립, 기관",
   "exactly":"정확히",
   "fail":"실패하다",
-  "failure":"실패",
   "fakeness":"가짜임",
   "fiercely": "맹렬하게",
   "fittingly": "걸맞게",

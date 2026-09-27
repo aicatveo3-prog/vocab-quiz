@@ -66,6 +66,8 @@ window.VOCAB_L = [
   { word:"lifespan", exams:["수능"], pron:"라이프스팬", pos:"n", level:"B2", meanings:["수명","존속 기간"], ex:[{ s:"The average {{}} of a smartphone is only a few years.", f:"lifespan", ko:"스마트폰의 평균 수명은 몇 년에 불과하다." }] },
   { word:"lifetime", exams:["수능"], pron:"라이프타임", pos:"n", level:"B1", meanings:["평생","일생"], ex:[{ s:"My grandmother saw huge changes during her {{}}.", f:"lifetime", ko:"우리 할머니는 평생 동안 엄청난 변화를 목격하셨다." }] },
   { word:"locally", exams:["수능"], pron:"로컬리", pos:"adv", level:"B2", meanings:["지역에서","현지에서"] },
+  { word:"low", exams:["수능"], pron:"로", pos:"adj", level:"B1", meanings:["낮은","적은"], ex:[{ s:"The price is so {{}} that everyone can afford it.", f:"low", ko:"가격이 아주 낮아서 누구나 살 수 있다." }] },
+  { word:"luxury", exams:["수능"], pron:"럭셔리", pos:"n", level:"B2", meanings:["사치품","호화로움"], ex:[{ s:"They lived a life of {{}} in a huge mansion.", f:"luxury", ko:"그들은 거대한 저택에서 호화로운 삶을 살았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
