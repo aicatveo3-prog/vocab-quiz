@@ -803,7 +803,6 @@ Object.assign(window.GLOSS, {
   "pulverize":"가루로 만들다",
   "put across":"뜻을 전하다",
   "rapacity":"탐욕스러운 강탈",
-  "rationale":"논리적 근거",
   "reclusive":"은둔하는",
   "resplendent":"눈부시게 화려한",
   "rumble":"우르릉거리다",

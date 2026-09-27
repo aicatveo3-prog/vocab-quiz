@@ -97,6 +97,10 @@ window.VOCAB_M = [
   { word:"marine", exams:["수능"], pron:"머린", pos:"adj", level:"B2", meanings:["바다의","해양의"], ex:[{ s:"Plastic pollution harms {{}} animals such as sea turtles.", f:"marine", ko:"플라스틱 오염은 바다거북 같은 해양 동물에게 해를 끼친다." }] },
   { word:"merely", exams:["수능"], pron:"미얼리", pos:"adv", level:"B2", meanings:["단지","그저"] },
   { word:"morally", exams:["수능"], pron:"모럴리", pos:"adv", level:"C1", meanings:["도덕적으로"] },
+  { word:"macroeconomic", exams:["수능"], pron:"매크로이커나믹", pos:"adj", level:"C1", meanings:["거시 경제의"], ex:[{ s:"Inflation is a major {{}} problem for many countries.", f:"macroeconomic", ko:"인플레이션은 많은 나라에 주요한 거시 경제 문제다." }] },
+  { word:"match", exams:["수능"], pron:"매치", pos:"v", level:"B1", meanings:["일치하다","어울리다"], ex:[{ s:"Your shoes don't {{}} your dress at all.", f:"match", ko:"네 신발은 드레스와 전혀 어울리지 않는다." }] },
+  { word:"membership", exams:["수능"], pron:"멤버십", pos:"n", level:"B2", meanings:["회원 자격","회원 수"], ex:[{ s:"{{}} in the book club costs twenty dollars a year.", f:"Membership", ko:"독서 모임의 회원 자격은 1년에 20달러다." }] },
+  { word:"mutually", exams:["수능"], pron:"뮤추얼리", pos:"adv", level:"C1", meanings:["서로","상호 간에"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

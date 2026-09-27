@@ -158,6 +158,7 @@ window.VOCAB_S = [
   { word:"substantially", exams:["수능"], pron:"섭스탠셜리", pos:"adv", level:"C1", meanings:["상당히","대체로"], syn:["considerably","significantly","greatly"] },
   { word:"sustainability", exams:["수능"], pron:"서스테이너빌리티", pos:"n", level:"C1", meanings:["지속 가능성"], ex:[{ s:"Farmers now think more about the {{}} of their land.", f:"sustainability", ko:"이제 농부들은 자기 땅의 지속 가능성을 더 많이 생각한다." }] },
   { word:"systematize", exams:["수능"], pron:"시스터머타이즈", pos:"v", level:"C1", meanings:["체계화하다"], syn:["organize","arrange","order"], ex:[{ s:"Scientists try to {{}} their knowledge into clear laws.", f:"systematize", ko:"과학자들은 지식을 명확한 법칙으로 체계화하려 한다." }] },
+  { word:"secretly", exams:["수능"], pron:"시크리틀리", pos:"adv", level:"B2", meanings:["몰래","비밀리에"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.

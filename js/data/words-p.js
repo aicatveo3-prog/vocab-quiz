@@ -172,6 +172,12 @@ window.VOCAB_P = [
   { word:"potentially", exams:["수능"], pron:"퍼텐셜리", pos:"adv", level:"B2", meanings:["잠재적으로","어쩌면"] },
   { word:"preferably", exams:["수능"], pron:"프레퍼러블리", pos:"adv", level:"C1", meanings:["되도록이면","가급적"] },
   { word:"presuppose", exams:["수능"], pron:"프리서포즈", pos:"v", level:"C1", meanings:["전제하다","예상하다"], syn:["assume","imply","presume"], ex:[{ s:"These lessons {{}} some basic knowledge of math.", f:"presuppose", ko:"이 수업은 기초 수학 지식이 있다는 것을 전제로 한다." }] },
+  { word:"perishable", exams:["수능"], pron:"페리셔블", pos:"adj", level:"C1", meanings:["상하기 쉬운","썩기 쉬운"], ex:[{ s:"Fresh fish and milk are {{}} foods that need a fridge.", f:"perishable", ko:"생선과 우유는 냉장고가 필요한 상하기 쉬운 식품이다." }] },
+  { word:"poverty", exams:["수능"], pron:"파버티", pos:"n", level:"B1", meanings:["가난","빈곤"], ex:[{ s:"Millions of children around the world still live in {{}}.", f:"poverty", ko:"전 세계 수백만 명의 아이가 여전히 가난 속에 산다." }] },
+  { word:"presumably", exams:["수능"], pron:"프리주머블리", pos:"adv", level:"C1", meanings:["아마","추정컨대"], syn:["supposedly","probably","apparently"] },
+  { word:"problematic", exams:["수능"], pron:"프라블러매틱", pos:"adj", level:"C1", meanings:["문제가 많은","문제가 있는"], ex:[{ s:"Using the same password for every site is {{}}.", f:"problematic", ko:"모든 사이트에 같은 비밀번호를 쓰는 것은 문제가 있다." }] },
+  { word:"proverb", exams:["수능"], pron:"프라버브", pos:"n", level:"B2", meanings:["속담","격언"], syn:["saying","maxim","adage"], ex:[{ s:"An old {{}} says that time is money.", f:"proverb", ko:"시간은 돈이라는 옛 속담이 있다." }] },
+  { word:"purely", exams:["수능"], pron:"퓨얼리", pos:"adv", level:"C1", meanings:["순전히","오로지"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2823,6 +2829,7 @@ Object.assign(window.GLOSS, {
   "printed work": "찍어 낸 글",
   "privately": "사적으로, 은밀히",
   "privilege of rank": "지위에 따른 특별 대우",
+  "probably": "아마도",
   "prod with a finger": "손가락으로 쿡 찌르다",
   "prolific": "다작하는, 다산의",
   "proneness": "쉽게 그리 되는 성질",

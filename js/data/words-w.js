@@ -714,7 +714,6 @@ Object.assign(window.GLOSS, {
   "place one is at": "머무는 자리",
   "plant nobody wants": "아무도 원치 않는 풀",
   "pledge on goods sold": "판 물건에 대한 다짐",
-  "poverty": "가난",
   "power to choose": "고를 수 있는 힘",
   "pull back from a place": "어떤 곳에서 물러나다",
   "readiness to act": "나설 준비가 됨",

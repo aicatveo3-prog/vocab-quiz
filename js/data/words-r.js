@@ -90,6 +90,10 @@ window.VOCAB_R = [
   { word:"realism", exams:["수능"], pron:"리얼리즘", pos:"n", level:"C1", meanings:["사실주의","현실성"], ex:[{ s:"The film's {{}} made viewers feel they were really there.", f:"realism", ko:"그 영화의 사실감 덕분에 관객은 정말 그곳에 있는 듯 느꼈다." }] },
   { word:"renewal", exams:["수능"], pron:"리뉴얼", pos:"n", level:"C1", meanings:["갱신","재개발"], syn:["renovation","restoration","revival"], ex:[{ s:"It is time for the {{}} of your passport.", f:"renewal", ko:"여권을 갱신할 때가 되었다." }] },
   { word:"resulting", exams:["수능"], pron:"리절팅", pos:"adj", level:"C1", meanings:["그 결과로 생긴","결과적인"], syn:["consequent","resultant","subsequent"], ex:[{ s:"The storm and the {{}} floods destroyed many homes.", f:"resulting", ko:"폭풍과 그로 인한 홍수로 많은 집이 무너졌다." }] },
+  { word:"rationale", exams:["수능"], pron:"래셔낼", pos:"n", level:"C1", meanings:["근거","이유"], syn:["reasoning","justification","logic"], ex:[{ s:"The teacher explained the {{}} behind the new rule.", f:"rationale", ko:"선생님은 새 규칙의 근거를 설명해 주었다." }] },
+  { word:"recount", exams:["수능"], pron:"리카운트", pos:"v", level:"C1", meanings:["이야기하다","상세히 말하다"], syn:["narrate","relate","describe"], ex:[{ s:"Grandpa loves to {{}} stories from his childhood.", f:"recount", ko:"할아버지는 어린 시절 이야기를 들려주기를 좋아하신다." }] },
+  { word:"redistribution", exams:["수능"], pron:"리디스트리뷰션", pos:"n", level:"C1", meanings:["재분배"], ex:[{ s:"The {{}} of wealth is a major political issue.", f:"redistribution", ko:"부의 재분배는 주요한 정치 쟁점이다." }] },
+  { word:"relatively", exams:["수능"], pron:"렐러티블리", pos:"adv", level:"B2", meanings:["비교적","상대적으로"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
