@@ -234,7 +234,7 @@ window.VOCAB_T = [
     syn:["make fun of","poke fun at","needle in jest"],
     ex:[{ s:"Do not {{}} your little brother.", f:"tease", ko:"동생을 놀리지 마라." }] },
 
-  { word:"technical", exams:["공무원"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
+  { word:"technical", exams:["공무원","수능"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
     syn:["to do with technique","of applied science","needing special skill"],
     ex:[{ s:"The report is too {{}} for me.", f:"technical", ko:"그 보고서는 내게 너무 기술적이다." }] },
 
@@ -295,7 +295,7 @@ window.VOCAB_T = [
      글자가 맞물려 자동 배제된다. */
 
   /* rate(속도, 비율 · R) 와 글자를 맞춰 자동 배제시켰다. 괄호 걷음. */
-  { word:"tempo", pron:"템포", pos:"n", level:"B2", meanings:["속도"],
+  { word:"tempo", exams:["수능"], pron:"템포", pos:"n", level:"B2", meanings:["속도"],
     syn:["pace of movement","rate of action","speed of a piece"],
     ex:[{ s:"The band raised the {{}}.", f:"tempo", ko:"그 악단이 속도를 올렸다." }] },
 
@@ -537,7 +537,7 @@ window.VOCAB_T = [
 
   /* 승격 ㉝ — 사전 글자 유지. 참조 comprehensive(C)·intensive(I)·painstaking(P)
      세 곳의 화면은 바뀌지 않는다. rigorous(엄격한, 철저한) 와 맞물려 배제된다. */
-  { word:"thorough", pron:"서로", pos:"adj", level:"B2", meanings:["철저한","완전한"],
+  { word:"thorough", exams:["수능"], pron:"서로", pos:"adj", level:"B2", meanings:["철저한","완전한"],
     syn:["comprehensive","intensive","painstaking"],
     ex:[{ s:"They ran a {{}} check on the wiring.", f:"thorough", ko:"그들은 배선을 철저히 점검했다." }] },
 
@@ -1051,7 +1051,7 @@ window.VOCAB_T = [
      ★ rubbish(잡쓰레기 · B2/n) 는 뜻을 가를 수가 없어 유의어로 등록했다 —
      앱은 유의어 관계인 두 낱말을 서로의 오답으로 쓰지 않는다. '쓰레기' 는
      filth(오물, 쓰레기 · C1) 자리라 쓰지 않았다. */
-  { word:"trash", pron:"트래시", pos:"n", level:"B1", meanings:["폐기물"],
+  { word:"trash", exams:["수능"], pron:"트래시", pos:"n", level:"B1", meanings:["폐기물"],
     syn:["litter","rubbish","waste thrown away"],
     ex:[{ s:"The yard was full of {{}}.", f:"trash", ko:"그 마당은 폐기물로 가득했다." }] },
 

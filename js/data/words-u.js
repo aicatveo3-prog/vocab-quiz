@@ -52,7 +52,7 @@ window.VOCAB_U = [
   { word:"universally", exams:["공무원","수능"], pron:"유니버설리", pos:"adv", level:"C1", meanings:["보편적으로","널리"], syn:["widely","generally","commonly"], ex:[{ s:"A passport is a {{}} accepted document.", f:"universally", ko:"여권은 보편적으로 인정되는 문서다." }] },
   { word:"upgrade", exams:["공무원"], pron:"업그레이드", pos:"v", level:"B2", meanings:["향상시키다","개선하다"], syn:["improve","enhance","boost"], ant:["downgrade"], ex:[{ s:"We assess and {{}} our services.", f:"upgrade", ko:"우리는 서비스를 평가하고 개선한다." }] },
   { word:"uncertain", exams:["공무원","수능"], pron:"언서튼", pos:"adj", level:"B2", meanings:["불확실한"], syn:["unsure","doubtful","unpredictable"], ant:["certain"], ex:[{ s:"The work is risky and {{}}.", f:"uncertain", ko:"그 일은 위험하고 불확실하다." }] },
-  { word:"uniform", exams:["공무원"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
+  { word:"uniform", exams:["공무원","수능"], pron:"유니폼", pos:"n", level:"B1", meanings:["제복","유니폼"], syn:["outfit","attire","costume"], ex:[{ s:"We provide guiding resources and a {{}}.", f:"uniform", ko:"우리는 안내 자료와 제복을 제공한다." }] },
   { word:"unexpected", exams:["공무원","수능"], pron:"언익스펙티드", pos:"adj", level:"B1", meanings:["예상치 못한","뜻밖의"], syn:["unforeseen","surprising","sudden"], ant:["expected","predictable"], ex:[{ s:"Life is full of {{}} happy moments.", f:"unexpected", ko:"인생은 예상치 못한 행복한 순간들로 가득하다." }] },
   { word:"unlike", exams:["공무원","수능"], pron:"언라이크", pos:"phr", level:"B1", meanings:["~와 달리","~와 다른"], syn:["contrary to","in contrast with","different from"] },
   { word:"unmanned", exams:["공무원"], pron:"언맨드", pos:"adj", level:"B2", meanings:["무인의","사람이 타지 않은"], syn:["uncrewed","pilotless","automated"], ant:["manned"], ex:[{ s:"AUVs are {{}} underwater robots.", f:"unmanned", ko:"AUV는 무인 수중 로봇이다." }] },
@@ -194,7 +194,7 @@ window.VOCAB_U = [
   /* 승격 ③ — 사전 글자 유지. 참조 discover(D)·expose(E) 두 곳의 화면은 바뀌지
      않는다. discover·determine 이 '알아내다' 를, diagnose 가 '원인을 밝혀내다'
      로 '밝혀내다' 를 품어 넷이 모두 맞물려 배제된다. */
-  { word:"uncover", pron:"언커버", pos:"v", level:"B2", meanings:["밝혀내다","알아내다"],
+  { word:"uncover", exams:["수능"], pron:"언커버", pos:"v", level:"B2", meanings:["밝혀내다","알아내다"],
     syn:["discover","expose","bring to light"],
     ex:[{ s:"The audit will {{}} the loss.", f:"uncover", ko:"그 감사가 손실을 밝혀낼 것이다." }] },
 
@@ -297,7 +297,7 @@ window.VOCAB_U = [
     ex:[{ s:"Do not {{}} her work.", f:"undervalue", ko:"그녀의 일을 과소평가하지 마라." }] },
 
   /* 승격 ⑧ — 사전 단일값 유지(참조 aquatic). 부사 갈래는 버렸다. */
-  { word:"underwater", exams:["공무원"], pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
+  { word:"underwater", exams:["공무원","수능"], pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
     syn:["aquatic","below the surface","under the waves"],
     ex:[{ s:"They filmed an {{}} cave.", f:"underwater", ko:"그들은 수중 동굴을 찍었다." }] },
 
@@ -464,7 +464,7 @@ window.VOCAB_U = [
 
   /* 승격 ⑰ — 사전 글자 유지. 참조 cohesion(C)·division(D) 두 곳의 화면은
      바뀌지 않는다. 교재 세 갈래 중 하나를 버렸다. */
-  { word:"unity", pron:"유너티", pos:"n", level:"B2", meanings:["통합","단결"],
+  { word:"unity", exams:["수능"], pron:"유너티", pos:"n", level:"B2", meanings:["통합","단결"],
     syn:["cohesion","being at one","holding together"], ant:["division"],
     ex:[{ s:"The speech called for {{}}.", f:"unity", ko:"그 연설은 단결을 호소했다." }] },
 

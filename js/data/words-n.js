@@ -114,7 +114,7 @@ window.VOCAB_N = [
     syn:["slim","tight","cramped"], ant:["wide"],
     ex:[{ s:"The path grew too {{}} for the cart to pass.", f:"narrow", ko:"그 길은 수레가 지나가기에 너무 폭이 좁아졌다." }] },
 
-  { word:"narrow down", pron:"내로 다운", pos:"phr", level:"B2", meanings:["좁히다","줄이다"],
+  { word:"narrow down", exams:["수능"], pron:"내로 다운", pos:"phr", level:"B2", meanings:["좁히다","줄이다"],
     syn:["whittle down","cut down","focus in on"] },
 
   { word:"narrow-minded", pron:"내로 마인디드", pos:"adj", level:"B2", meanings:["속 좁은","옹졸한"],
@@ -131,7 +131,7 @@ window.VOCAB_N = [
   /* 승격 ⑥ — 사전이 '토착의; 원주민' 으로 형용사와 명사가 섞여 있었다.
      참조 세 곳(aboriginal·domestic·indigenous) 이 모두 형용사 갈래를 쓴다.
      원본대로 형용사로 세웠다. */
-  { word:"native", pron:"네이티브", pos:"adj", level:"B1", meanings:["태어난 곳의","원주민의"],
+  { word:"native", exams:["수능"], pron:"네이티브", pos:"adj", level:"B1", meanings:["태어난 곳의","원주민의"],
     syn:["indigenous","homegrown","local-born"], ant:["foreign-born"],
     ex:[{ s:"She returned to her {{}} village after ten years.", f:"native", ko:"그녀는 십 년 만에 태어난 곳의 마을로 돌아갔다." }] },
 
@@ -233,7 +233,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑮ — 사전 표현 '중립적인, 공정한' 을 글자까지 지켰다.
      disinterested(D)·impartial(I) 두 곳의 화면이 안 바뀐다. '중성의' 는 버렸다. */
-  { word:"neutral", pron:"뉴트럴", pos:"adj", level:"B2", meanings:["중립적인","공정한"],
+  { word:"neutral", exams:["수능"], pron:"뉴트럴", pos:"adj", level:"B2", meanings:["중립적인","공정한"],
     syn:["unaligned","even-handed","taking no side"], ant:["partisan"],
     ex:[{ s:"The country stayed {{}} during the war.", f:"neutral", ko:"그 나라는 전쟁 동안 중립적인 상태를 지켰다." }] },
 
@@ -426,7 +426,7 @@ window.VOCAB_N = [
   /* 승격 30 — 사전이 '소설; 새로운' 으로 명사와 형용사가 섞여 있었다.
      conventional(ant, C) 이 형용사 갈래를 쓰므로 형용사로 세우고 '소설' 은 버렸다.
      학생들이 '소설' 로만 알아서 틀리는 쪽이 이 형용사 갈래다. */
-  { word:"novel", pron:"나벌", pos:"adj", level:"B2", meanings:["참신한","신기한"],
+  { word:"novel", exams:["수능"], pron:"나벌", pos:"adj", level:"B2", meanings:["참신한","신기한"],
     syn:["fresh","original","never tried before"], ant:["conventional"],
     ex:[{ s:"She proposed a {{}} way to cut waste.", f:"novel", ko:"그녀는 쓰레기를 줄이는 참신한 방법을 제안했다." }] },
 
@@ -470,7 +470,7 @@ window.VOCAB_N = [
 
   /* 승격 35 — ★원본의 뜻이 '많은' 두 글자여서 선택지에서 뜻으로 읽기 빠듯했다.
      사전 표현 '수많은, 다수의' 를 글자까지 지켰다(a host of, A · multiple, M). */
-  { word:"numerous", pron:"누머러스", pos:"adj", level:"B2", meanings:["수많은","다수의"],
+  { word:"numerous", exams:["수능"], pron:"누머러스", pos:"adj", level:"B2", meanings:["수많은","다수의"],
     syn:["a great many","countless","plentiful"], ant:["scarce"],
     ex:[{ s:"The city has {{}} small bookshops.", f:"numerous", ko:"그 도시에는 수많은 작은 책방이 있다." }] },
 
@@ -484,7 +484,7 @@ window.VOCAB_N = [
   /* 승격 37 — 사전은 '영양분, 양분' 이었다. '영양분' 을 그대로 두면 이 챕터의
      nutrition·nutritious·nourish 와 줄줄이 물리므로 '영양소' 한 갈래로 좁혔다.
      antioxidant(A) 의 화면 글자가 함께 바뀐다. */
-  { word:"nutrient", exams:["공무원"], pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
+  { word:"nutrient", exams:["공무원","수능"], pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
     syn:["nourishing substance","food element","dietary component"],
     ex:[{ s:"Iron is an essential {{}} for blood.", f:"nutrient", ko:"철분은 피에 꼭 필요한 영양소다." }] },
 

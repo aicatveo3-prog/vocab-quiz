@@ -199,7 +199,7 @@ window.VOCAB_H = [
 
   /* 원본 첫 뜻 '~할 수밖에 없다' 는 기존 표제어 be obliged to 와 같다.
      '어쩔 수 없이 ~하다' 를 앞에 두어 갈랐다. */
-  { word:"have no choice but to", pron:"해브 노 초이스 벗 투", pos:"phr", level:"B2", meanings:["어쩔 수 없이 ~하다"],
+  { word:"have no choice but to", exams:["수능"], pron:"해브 노 초이스 벗 투", pos:"phr", level:"B2", meanings:["어쩔 수 없이 ~하다"],
     syn:["be forced to","be compelled to","have no option but to"] },
 
   { word:"have nothing to do with", pron:"해브 너싱 투 두 위드", pos:"phr", level:"B2", meanings:["~와 전혀 관계가 없다"],
@@ -211,7 +211,7 @@ window.VOCAB_H = [
   { word:"have to do with", pron:"해브 투 두 위드", pos:"phr", level:"B1", meanings:["~와 관계가 있다"],
     syn:["concern","relate to","involve"] },
 
-  { word:"hazard", exams:["공무원"], pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
+  { word:"hazard", exams:["공무원","수능"], pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
     syn:["danger","risk","peril"],
     ex:[{ s:"Slippery floors are a common {{}} in the workplace.", f:"hazard", ko:"미끄러운 바닥은 직장에서 흔한 위험 요소이다." }] },
 
@@ -239,7 +239,7 @@ window.VOCAB_H = [
 
   /* ── 챕터 3 ─────────────────────────────── */
 
-  { word:"hear from", exams:["공무원"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
+  { word:"hear from", exams:["공무원","수능"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
     syn:["get word from","receive news from","be contacted by"] },
 
   { word:"heartfelt", pron:"하트펠트", pos:"adj", level:"B2", meanings:["진심에서 우러난"],
@@ -485,7 +485,7 @@ window.VOCAB_H = [
     syn:["humankind","mankind","human race"],
     ex:[{ s:"The discovery could benefit all of {{}}.", f:"humanity", ko:"그 발견은 인류 전체에 이로울 수 있다." }] },
 
-  { word:"humankind", pron:"휴먼카인드", pos:"n", level:"B2", meanings:["인류","인간"],
+  { word:"humankind", exams:["수능"], pron:"휴먼카인드", pos:"n", level:"B2", meanings:["인류","인간"],
     syn:["humanity","mankind","human race"],
     ex:[{ s:"{{}} has always sought to understand the stars.", f:"Humankind", ko:"인류는 항상 별을 이해하려 했다." }] },
 

@@ -217,7 +217,7 @@ window.VOCAB_O = [
     syn:["unclear","hard to make out","little known"], ant:["apparent"],
     ex:[{ s:"The origin of the custom is {{}}.", f:"obscure", ko:"그 관습의 기원은 분명하지 않다." }] },
 
-  { word:"observation", exams:["공무원"], pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
+  { word:"observation", exams:["공무원","수능"], pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
     syn:["close watching","careful noting","spoken remark"],
     ex:[{ s:"Years of {{}} led to the discovery.", f:"observation", ko:"여러 해의 관찰이 그 발견으로 이어졌다." }] },
 
@@ -463,7 +463,7 @@ window.VOCAB_O = [
 
   /* 승격 36 — 사전 표현 '진행 중인, 계속되는' 을 글자까지 지켰다
      (continuous, C · in progress, I). in progress 와 첫 뜻이 같지만 서로 유의어다. */
-  { word:"ongoing", pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],
+  { word:"ongoing", exams:["수능"], pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],
     syn:["continuous","still under way","unfinished"], ant:["completed"],
     ex:[{ s:"Repairs to the bridge are {{}}.", f:"ongoing", ko:"그 다리 보수는 진행 중이다." }] },
 
@@ -615,7 +615,7 @@ window.VOCAB_O = [
 
   /* 승격 47 — 사전 표현 '유기적인, 유기농의' 를 글자까지 지켰다(biological, B).
      원본의 '화학 비료를 쓰지 않는' 은 서술이 길어서 버렸다. */
-  { word:"organic", pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
+  { word:"organic", exams:["수능"], pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
     syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
     ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
 
@@ -657,7 +657,7 @@ window.VOCAB_O = [
 
   /* 원본의 '오리엔테이션' 은 외래어를 그대로 옮긴 것이어서 뺐다 —
      M 세트 multimedia 의 '멀티미디어' 와 같은 처리다. */
-  { word:"orientation", pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
+  { word:"orientation", exams:["수능"], pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
     syn:["introductory training","sense of direction","initial briefing"],
     ex:[{ s:"New staff attend a two-day {{}}.", f:"orientation", ko:"새 직원은 이틀간의 예비 교육에 참석한다." }] },
 

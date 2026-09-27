@@ -851,7 +851,7 @@ window.VOCAB_F = [
     syn:["packing material","padding","stuffing"],
     ex:[{ s:"The gap around the pipe was closed with a soft {{}}.", f:"filler", ko:"관 주위의 틈은 부드러운 충전재로 막았다." }] },
 
-  { word:"filter", exams:["공무원"], pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
+  { word:"filter", exams:["공무원","수능"], pron:"필터", pos:"v", level:"B2", meanings:["여과하다","거르다"],
     syn:["purify","sift","screen out"],
     ex:[{ s:"Reeds help {{}} the water before it reaches the pond.", f:"filter", ko:"갈대는 물이 못에 이르기 전에 여과하는 것을 돕는다." }] },
 
@@ -1447,7 +1447,7 @@ window.VOCAB_F = [
     syn:["purpose","role","use"],
     ex:[{ s:"Each key on the panel has a single clear {{}}.", f:"function", ko:"패널의 각 키는 하나의 분명한 기능을 갖는다." }] },
 
-  { word:"functional", exams:["공무원"], pron:"펑셔널", pos:"adj", level:"B2", meanings:["기능적인","실용적인"],
+  { word:"functional", exams:["공무원","수능"], pron:"펑셔널", pos:"adj", level:"B2", meanings:["기능적인","실용적인"],
     syn:["practical","usable","serviceable"],
     ex:[{ s:"The furniture is plain but entirely {{}}.", f:"functional", ko:"그 가구는 소박하지만 완전히 기능적이다." }] },
 

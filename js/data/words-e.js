@@ -855,7 +855,7 @@ window.VOCAB_E = [
   { word:"ecology", pron:"이칼러지", pos:"n", level:"B2", meanings:["생태학","생태계"],
     ex:[{ s:"She spent ten years studying the {{}} of coral reefs.", f:"ecology", ko:"그녀는 산호초 생태학을 연구하며 10년을 보냈다." }] },
 
-  { word:"economical", pron:"에커나미컬", pos:"adj", level:"B2", meanings:["경제적인","실속 있는"],
+  { word:"economical", exams:["수능"], pron:"에커나미컬", pos:"adj", level:"B2", meanings:["경제적인","실속 있는"],
     syn:["thrifty","frugal","cost-effective"], ant:["wasteful"],
     ex:[{ s:"A hybrid engine is far more {{}} on long drives.", f:"economical", ko:"하이브리드 엔진은 장거리 운전에서 훨씬 더 경제적이다." }] },
 
@@ -1248,7 +1248,7 @@ window.VOCAB_E = [
     syn:["stamina","staying power","perseverance"],
     ex:[{ s:"Long-distance swimming demands {{}} more than speed.", f:"endurance", ko:"장거리 수영은 속도보다 지구력을 요구한다." }] },
 
-  { word:"endure", exams:["공무원"], pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
+  { word:"endure", exams:["공무원","수능"], pron:"인듀어", pos:"v", level:"B2", meanings:["견디다","참다"],
     syn:["bear","withstand","put up with"], ant:["succumb"],
     ex:[{ s:"The crew had to {{}} three weeks of storms.", f:"endure", ko:"승무원들은 3주간의 폭풍을 견뎌야 했다." }] },
 
@@ -1597,7 +1597,7 @@ window.VOCAB_E = [
     syn:["avoid","dodge","shirk"], ant:["confront"],
     ex:[{ s:"He tried to {{}} the question twice.", f:"evade", ko:"그는 그 질문을 두 번 회피하려 했다." }] },
 
-  { word:"evaluate", exams:["공무원"], pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
+  { word:"evaluate", exams:["공무원","수능"], pron:"이밸류에이트", pos:"v", level:"B1", meanings:["평가하다"],
     syn:["appraise","assess","judge"],
     ex:[{ s:"Teachers {{}} the projects on four criteria.", f:"evaluate", ko:"교사들은 네 가지 기준으로 그 과제를 평가한다." }] },
 
@@ -1622,7 +1622,7 @@ window.VOCAB_E = [
 
   /* 뜻을 '결국' 하나만 뒀다 — 유의어 finally 의 GLOSS 가 "마침내, 결국" 이라
      '마침내' 를 같이 쓰면 표제어와 선택지가 같은 말을 한다. */
-  { word:"eventually", exams:["공무원"], pron:"이벤추얼리", pos:"adv", level:"B1", meanings:["결국"],
+  { word:"eventually", exams:["공무원","수능"], pron:"이벤추얼리", pos:"adv", level:"B1", meanings:["결국"],
     syn:["in the end","finally","ultimately"],
     ex:[{ s:"The argument {{}} settled itself.", f:"eventually", ko:"그 논쟁은 결국 저절로 가라앉았다." }] },
 
@@ -1665,7 +1665,7 @@ window.VOCAB_E = [
     syn:["develop","unfold","grow gradually"],
     ex:[{ s:"Small workshops can {{}} into real factories.", f:"evolve", ko:"작은 공방도 진짜 공장으로 발달할 수 있다." }] },
 
-  { word:"exaggerate", exams:["공무원"], pron:"이그재저레이트", pos:"v", level:"B2", meanings:["과장하다","부풀리다"],
+  { word:"exaggerate", exams:["공무원","수능"], pron:"이그재저레이트", pos:"v", level:"B2", meanings:["과장하다","부풀리다"],
     syn:["overstate","blow out of proportion","magnify"], ant:["downplay"],
     ex:[{ s:"Do not {{}} how long the repair will take.", f:"exaggerate", ko:"수리가 얼마나 걸릴지 과장하지 마세요." }] },
 
@@ -1808,7 +1808,7 @@ window.VOCAB_E = [
   /* 발음은 기존 표제어 art exhibition("아트 엑시비션")에 맞춰 '엑시비션' 으로 적었다.
      원본의 '(감정, 기교 등의) 표현' 갈래는 버렸다(괄호 설명이 필요한 갈래다).
      art exhibition 은 pos 가 phr 이라 이 명사와 오답 후보로 겹치지 않는다. */
-  { word:"exhibition", exams:["공무원"], pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
+  { word:"exhibition", exams:["공무원","수능"], pron:"엑시비션", pos:"n", level:"B2", meanings:["전시회","전람"],
     syn:["showcase","public display","exposition"],
     ex:[{ s:"The museum opens a new {{}} each spring.", f:"exhibition", ko:"그 박물관은 매년 봄 새 전시회를 연다." }] },
 
@@ -1902,7 +1902,7 @@ window.VOCAB_E = [
     syn:["specialist","master","skilled person"],
     ex:[{ s:"They called in an {{}} to read the old script.", f:"expert", ko:"그들은 옛 문서를 읽으려고 전문가를 불렀다." }] },
 
-  { word:"expertise", exams:["공무원"], pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
+  { word:"expertise", exams:["공무원","수능"], pron:"엑스퍼티즈", pos:"n", level:"C1", meanings:["전문 지식","특수 기술"],
     syn:["know-how","special skill","technical knowledge"],
     ex:[{ s:"Restoring the clock needs real {{}}.", f:"expertise", ko:"그 시계를 복원하려면 진짜 전문 지식이 필요하다." }] },
 
@@ -2003,7 +2003,7 @@ window.VOCAB_E = [
     syn:["lengthening","addition","prolonging"],
     ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
 
-  { word:"extensive", exams:["공무원"], pron:"익스텐시브", pos:"adj", level:"B2", meanings:["광범위한","방대한"],
+  { word:"extensive", exams:["공무원","수능"], pron:"익스텐시브", pos:"adj", level:"B2", meanings:["광범위한","방대한"],
     syn:["wide-ranging","far-reaching","broad"],
     ex:[{ s:"The storm caused {{}} damage to the orchards.", f:"extensive", ko:"그 폭풍은 과수원에 광범위한 피해를 입혔다." }] },
 

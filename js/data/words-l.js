@@ -91,7 +91,7 @@ window.VOCAB_L = [
      abound(ant)·deficiency(syn) 두 문제가 참조한다. 첫 뜻이 D 세트 deficiency 와
      같은데, 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다.
      원본의 동사 갈래('부족하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"lack", pron:"랙", pos:"n", level:"B1", meanings:["결핍","없음"],
+  { word:"lack", exams:["수능"], pron:"랙", pos:"n", level:"B1", meanings:["결핍","없음"],
     syn:["deficiency","shortage","absence"], ant:["abundance"],
     ex:[{ s:"The whole plan failed for {{}} of funding.", f:"lack", ko:"계획 전체가 자금 결핍으로 실패했다." }] },
 
@@ -123,7 +123,7 @@ window.VOCAB_L = [
 
   /* landfill·landlord·landmine 은 앞 네 글자가 같지만 뜻이 서로 완전히 달라
      같은 보드에 와도 짝을 고르는 데 무리가 없다. */
-  { word:"landfill", exams:["공무원"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
+  { word:"landfill", exams:["공무원","수능"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
     syn:["dump","waste site","tip"],
     ex:[{ s:"Most of the plastic ends up in a {{}}.", f:"landfill", ko:"플라스틱 대부분은 쓰레기 매립지로 간다." }] },
 
@@ -193,7 +193,7 @@ window.VOCAB_L = [
   /* 첫 뜻이 D 세트 dismiss 와 같지만, 뜻이 같은 표제어는 meaningsOverlap 이
      같은 보기에 함께 뜨지 못하게 막으므로 그대로 두었다.
      바로 뒤 lay-off(명사)와 품사가 달라(phr/n) 같은 보드에 안 온다. */
-  { word:"lay off", exams:["공무원"], pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
+  { word:"lay off", exams:["공무원","수능"], pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
     syn:["dismiss","let go","make redundant"] },
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
@@ -444,7 +444,7 @@ window.VOCAB_L = [
   /* 원본 뜻 '활기찬, 열정적인' 은 틀렸다. like(비슷한) + minded(생각의) 로,
      생각이나 취향이 서로 맞는다는 뜻이다. '생각이 비슷한, 뜻이 맞는' 으로 고쳤다.
      (H 세트 작업 때도 hard-and-fast 의 유의어로 이 낱말이 잘못 들어가 고친 적이 있다.) */
-  { word:"like-minded", pron:"라이크 마인디드", pos:"adj", level:"C1", meanings:["생각이 비슷한","뜻이 맞는"],
+  { word:"like-minded", exams:["수능"], pron:"라이크 마인디드", pos:"adj", level:"C1", meanings:["생각이 비슷한","뜻이 맞는"],
     syn:["kindred","agreeing","of one mind"],
     ex:[{ s:"She found a group of {{}} researchers online.", f:"like-minded", ko:"그녀는 온라인에서 생각이 비슷한 연구자 모임을 찾았다." }] },
 
@@ -556,7 +556,7 @@ window.VOCAB_L = [
     syn:["rubbish","trash","refuse"],
     ex:[{ s:"Please do not drop {{}} in the park.", f:"litter", ko:"공원에 쓰레기를 버리지 마세요." }] },
 
-  { word:"livestock", exams:["공무원"], pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
+  { word:"livestock", exams:["공무원","수능"], pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
     syn:["farm animals","cattle","herd"],
     ex:[{ s:"Disease spread quickly through the {{}}.", f:"livestock", ko:"질병이 가축 사이로 빠르게 퍼졌다." }] },
 

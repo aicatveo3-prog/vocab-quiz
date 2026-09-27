@@ -29,7 +29,7 @@ window.VOCAB_C = [
   { word:"coherence", exams:["공무원"], pron:"코히런스", pos:"n", level:"C1", meanings:["일관성","결속"], syn:["consistency","unity","cohesion"], ant:["incoherence"], ex:[{ s:"The field seeks {{}} rather than fragmentation.", f:"coherence", ko:"그 분야는 분열보다 결속을 추구한다." }] },
   { word:"collectively", exams:["공무원"], pron:"컬렉티블리", pos:"adv", level:"B2", meanings:["집합적으로","통틀어"], syn:["jointly","together","as a whole"], ant:["individually"], ex:[{ s:"The three plays are known {{}} as the Theban plays.", f:"collectively", ko:"세 작품은 통틀어 테베 극이라 불린다." }] },
   { word:"colonial", exams:["공무원"], pron:"컬로니얼", pos:"adj", level:"B2", meanings:["식민지의"], ex:[{ s:"Slavery was an institution before the {{}} period.", f:"colonial", ko:"노예제는 식민지 시대 이전에도 하나의 제도였다." }] },
-  { word:"conception", exams:["공무원"], pron:"컨셉션", pos:"n", level:"C1", meanings:["개념","구상"], syn:["notion","idea","concept"], ex:[{ s:"The common {{}} of deserts is that they are hot.", f:"conception", ko:"사막에 대한 일반적 개념은 덥다는 것이다." }] },
+  { word:"conception", exams:["공무원","수능"], pron:"컨셉션", pos:"n", level:"C1", meanings:["개념","구상"], syn:["notion","idea","concept"], ex:[{ s:"The common {{}} of deserts is that they are hot.", f:"conception", ko:"사막에 대한 일반적 개념은 덥다는 것이다." }] },
   { word:"conjunction", exams:["공무원"], pron:"컨정션", pos:"n", level:"C1", meanings:["결합","연결"], syn:["combination","association","union"], ex:[{ s:"Privacy shapes behavior in {{}} with other practices.", f:"conjunction", ko:"사생활은 다른 관행과 결합하여 행동을 형성한다." }], gov:{ prep:["with"], usage:"in conjunction with ~ : ~와 함께/결합하여" } },
   { word:"contrary", exams:["공무원","수능"], pron:"컨트러리", pos:"adj", level:"B2", meanings:["반대의","정반대의"], syn:["opposite","contradictory","conflicting"], ex:[{ s:"{{}} to what many believe, it is found everywhere.", f:"Contrary", ko:"많은 이들의 생각과 달리, 그것은 어디에나 있다." }], gov:{ prep:["to"], usage:"contrary to ~ : ~와는 반대로" } },
   { word:"courteously", exams:["공무원"], pron:"커티어슬리", pos:"adv", level:"C1", meanings:["정중하게","공손하게"], syn:["politely","respectfully","graciously"], ant:["rudely"], ex:[{ s:"Treat them {{}} even if you disagree.", f:"courteously", ko:"의견이 달라도 그들을 정중하게 대하라." }] },
@@ -301,7 +301,7 @@ window.VOCAB_C = [
   { word:"catch up with", pron:"캐치 업 위드", pos:"phr", level:"B1", meanings:["따라잡다","뒤따라가다"],
     syn:["overtake","reach","gain"], ant:["lag"] },
 
-  { word:"categorization", pron:"캐터고라이제이션", pos:"n", level:"C1", meanings:["범주화","분류"],
+  { word:"categorization", exams:["수능"], pron:"캐터고라이제이션", pos:"n", level:"C1", meanings:["범주화","분류"],
     syn:["classification","grouping","sorting"],
     ex:[{ s:"The {{}} of the samples took three weeks.", f:"categorization", ko:"표본의 분류에 3주가 걸렸다." }] },
 
@@ -415,7 +415,7 @@ window.VOCAB_C = [
     ex:[{ s:"Nothing is {{}} until the contract is signed.", f:"certain", ko:"계약서에 서명하기 전까지는 아무것도 확실하지 않다." }],
     gov:{ prep:["of","about"], pat:"certain {{}} the outcome", usage:"be certain of ~ : ~을 확신하다" } },
 
-  { word:"certainty", pron:"서튼티", pos:"n", level:"B2", meanings:["확실성","확신"],
+  { word:"certainty", exams:["수능"], pron:"서튼티", pos:"n", level:"B2", meanings:["확실성","확신"],
     syn:["assurance","conviction","surety"], ant:["doubt"],
     ex:[{ s:"No one can predict the weather with {{}}.", f:"certainty", ko:"누구도 날씨를 확실하게 예측할 수는 없다." }] },
 
@@ -440,11 +440,11 @@ window.VOCAB_C = [
     syn:["room","hall","compartment"],
     ex:[{ s:"The king received guests in the inner {{}}.", f:"chamber", ko:"왕은 안쪽 방에서 손님을 맞았다." }] },
 
-  { word:"channel", exams:["공무원"], pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
+  { word:"channel", exams:["공무원","수능"], pron:"채널", pos:"n", level:"B1", meanings:["경로","해협"],
     syn:["route","passage","strait"],
     ex:[{ s:"Swimmers cross the {{}} between the two coasts each July.", f:"channel", ko:"수영 선수들은 매년 7월 두 해안 사이의 해협을 건넌다." }] },
 
-  { word:"chaos", pron:"케이아스", pos:"n", level:"B2", meanings:["혼돈","무질서"],
+  { word:"chaos", exams:["수능"], pron:"케이아스", pos:"n", level:"B2", meanings:["혼돈","무질서"],
     syn:["disorder","confusion","turmoil"], ant:["order"],
     ex:[{ s:"The blackout threw the airport into {{}}.", f:"chaos", ko:"정전은 공항을 혼돈에 빠뜨렸다." }] },
 
@@ -640,7 +640,7 @@ window.VOCAB_C = [
     ex:[{ s:"The empire claimed a mission to {{}} distant lands.", f:"civilize", ko:"그 제국은 먼 땅을 교화한다는 사명을 내세웠다." }] },
 
   /* ── cla · cle · cli ───────────────────────── */
-  { word:"claim", exams:["공무원"], pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
+  { word:"claim", exams:["공무원","수능"], pron:"클레임", pos:"v", level:"B1", meanings:["요구하다","주장하다"],
     syn:["assert","maintain","demand"], ant:["deny"],
     ex:[{ s:"Two groups {{}} responsibility for the fire.", f:"claimed", ko:"두 단체가 그 화재에 대한 책임을 주장했다." }],
     gov:{ prep:["for","to","against"], pat:"claim responsibility {{}} the attack", usage:"claim responsibility for ~ : ~에 대한 책임을 주장하다" } },
@@ -665,7 +665,7 @@ window.VOCAB_C = [
     syn:["secret","confidential","restricted"], ant:["public"],
     ex:[{ s:"The file stays {{}} for another fifty years.", f:"classified", ko:"그 파일은 앞으로 50년 더 기밀로 유지된다." }] },
 
-  { word:"classify", pron:"클래서파이", pos:"v", level:"B2", meanings:["구분하다","분류하다"],
+  { word:"classify", exams:["수능"], pron:"클래서파이", pos:"v", level:"B2", meanings:["구분하다","분류하다"],
     syn:["categorize","sort","group"],
     ex:[{ s:"Botanists {{}} these plants as ferns.", f:"classify", ko:"식물학자들은 이 식물을 양치류로 분류한다." }] },
 
@@ -762,7 +762,7 @@ window.VOCAB_C = [
     syn:["change","currency","token"],
     ex:[{ s:"He found an old {{}} under the floorboards.", f:"coin", ko:"그는 바닥 판자 아래에서 오래된 동전을 발견했다." }] },
 
-  { word:"coincide", pron:"코인사이드", pos:"v", level:"C1", meanings:["동시에 일어나다","일치하다"],
+  { word:"coincide", exams:["수능"], pron:"코인사이드", pos:"v", level:"C1", meanings:["동시에 일어나다","일치하다"],
     syn:["overlap","concur","match"], ant:["differ"],
     ex:[{ s:"Her visit will {{}} with the harvest festival.", f:"coincide", ko:"그녀의 방문은 추수 축제와 겹칠 것이다." }],
     gov:{ prep:["with"], pat:"coincide {{}} the holiday", usage:"coincide with ~ : ~와 겹치다·일치하다" } },
@@ -947,7 +947,7 @@ window.VOCAB_C = [
     syn:["sensible","practical","reasonable"], ant:["absurd"],
     ex:[{ s:"This is a {{}} rule, not a legal one.", f:"commonsense", ko:"이것은 법이 아니라 상식적인 규칙이다." }] },
 
-  { word:"communal", pron:"커뮤널", pos:"adj", level:"C1", meanings:["공동의","집단의"],
+  { word:"communal", exams:["수능"], pron:"커뮤널", pos:"adj", level:"C1", meanings:["공동의","집단의"],
     syn:["shared","collective","joint"], ant:["personal"],
     ex:[{ s:"The building has one {{}} kitchen per floor.", f:"communal", ko:"그 건물에는 층마다 공동 주방이 하나 있다." }] },
 
@@ -974,7 +974,7 @@ window.VOCAB_C = [
     syn:["friendship","fellowship","company"], ant:["loneliness"],
     ex:[{ s:"She missed the {{}} of her old workmates.", f:"companionship", ko:"그녀는 옛 동료들과의 교제를 그리워했다." }] },
 
-  { word:"comparable", pron:"캄퍼러블", pos:"adj", level:"B2", meanings:["비슷한","비교할 만한"],
+  { word:"comparable", exams:["수능"], pron:"캄퍼러블", pos:"adj", level:"B2", meanings:["비슷한","비교할 만한"],
     syn:["similar","equivalent","akin"], ant:["unlike"],
     ex:[{ s:"Their salaries are roughly {{}}.", f:"comparable", ko:"그들의 급여는 대체로 비슷하다." }] },
 
@@ -1727,7 +1727,7 @@ window.VOCAB_C = [
     ex:[{ s:"Ancient people mapped the {{}} by eye alone.", f:"cosmos", ko:"고대인들은 맨눈으로 우주를 지도에 담았다." }] },
 
   /* ── coun ─────────────────────────────────── */
-  { word:"council", pron:"카운슬", pos:"n", level:"B1", meanings:["협의회","심의회"],
+  { word:"council", exams:["수능"], pron:"카운슬", pos:"n", level:"B1", meanings:["협의회","심의회"],
     syn:["board","assembly","panel"],
     ex:[{ s:"The city {{}} rejected the plan twice.", f:"council", ko:"시 협의회는 그 계획을 두 번 거부했다." }] },
 
@@ -1883,7 +1883,7 @@ window.VOCAB_C = [
     syn:["imagination","originality","inventiveness"],
     ex:[{ s:"The job rewards {{}} over speed.", f:"creativity", ko:"그 일은 속도보다 창조력에 보답한다." }] },
 
-  { word:"creator", pron:"크리에이터", pos:"n", level:"B1", meanings:["창작자"],
+  { word:"creator", exams:["수능"], pron:"크리에이터", pos:"n", level:"B1", meanings:["창작자"],
     syn:["author","maker","designer"],
     ex:[{ s:"The {{}} of the series never explained the ending.", f:"creator", ko:"그 시리즈의 창작자는 결말을 끝내 설명하지 않았다." }] },
 
@@ -2069,7 +2069,7 @@ window.VOCAB_C = [
     syn:["usual","traditional","done as usual"], ant:["unusual"],
     ex:[{ s:"It is {{}} to bow slightly on arrival.", f:"customary", ko:"도착할 때 살짝 고개를 숙이는 것이 관례다." }] },
 
-  { word:"customize", pron:"커스터마이즈", pos:"v", level:"B2", meanings:["주문 제작하다","맞춤화하다"],
+  { word:"customize", exams:["수능"], pron:"커스터마이즈", pos:"v", level:"B2", meanings:["주문 제작하다","맞춤화하다"],
     syn:["tailor","adapt","personalize"],
     ex:[{ s:"You can {{}} the handle length.", f:"customize", ko:"손잡이 길이를 주문 제작할 수 있다." }] },
 

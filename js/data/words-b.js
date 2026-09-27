@@ -430,7 +430,7 @@ window.VOCAB_B = [
     syn:["twice-yearly","semiannual","half-yearly"], ant:["annual"],
     ex:[{ s:"The company holds a {{}} review each June and December.", f:"biannual", ko:"그 회사는 매년 6월과 12월에 연 2회 평가를 한다." }] },
 
-  { word:"biased", pron:"바이어스트", pos:"adj", level:"B2", meanings:["선입견이 있는","편향된"],
+  { word:"biased", exams:["수능"], pron:"바이어스트", pos:"adj", level:"B2", meanings:["선입견이 있는","편향된"],
     syn:["prejudiced","partial","one-sided"], ant:["impartial"],
     ex:[{ s:"The report was clearly {{}} toward one side.", f:"biased", ko:"그 보고서는 분명히 한쪽으로 편향되어 있었다." }] },
 
@@ -474,7 +474,7 @@ window.VOCAB_B = [
     syn:["life story","memoir","profile"], ant:["fiction"],
     ex:[{ s:"He wrote a {{}} of the former president.", f:"biography", ko:"그는 전임 대통령의 전기를 썼다." }] },
 
-  { word:"biological", exams:["공무원"], pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
+  { word:"biological", exams:["공무원","수능"], pron:"바이올로지컬", pos:"adj", level:"B2", meanings:["생물학의"],
     syn:["organic","physiological","natural"], ant:["artificial"],
     ex:[{ s:"The study examined {{}} differences between the species.", f:"biological", ko:"그 연구는 두 종 사이의 생물학적 차이를 조사했다." }] },
 
@@ -515,7 +515,7 @@ window.VOCAB_B = [
     syn:["power failure","outage","suppression"],
     ex:[{ s:"The storm caused a city-wide {{}} that lasted hours.", f:"blackout", ko:"그 폭풍은 몇 시간 동안 이어진 도시 전역의 정전을 일으켰다." }] },
 
-  { word:"blacksmith", pron:"블랙스미스", pos:"n", level:"B2", meanings:["대장장이"],
+  { word:"blacksmith", exams:["수능"], pron:"블랙스미스", pos:"n", level:"B2", meanings:["대장장이"],
     syn:["ironworker","farrier","smith"],
     ex:[{ s:"The village {{}} shaped horseshoes by hand.", f:"blacksmith", ko:"마을 대장장이는 손으로 말굽을 만들었다." }] },
 
@@ -873,7 +873,7 @@ window.VOCAB_B = [
     syn:["young growth","unopened flower","germ"],
     ex:[{ s:"Tiny {{}} appeared on the bare branches in March.", f:"buds", ko:"3월에 헐벗은 가지에 작은 싹들이 나타났다." }] },
 
-  { word:"budget", exams:["공무원"], pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
+  { word:"budget", exams:["공무원","수능"], pron:"버짓", pos:"n", level:"B1", meanings:["예산"],
     syn:["allowance","funds","allocation"],
     ex:[{ s:"The department cut its {{}} by ten percent.", f:"budget", ko:"그 부서는 예산을 10퍼센트 삭감했다." }] },
 

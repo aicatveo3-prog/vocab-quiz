@@ -85,7 +85,7 @@ window.VOCAB_P = [
   { word:"publicize", exams:["공무원","수능"], pron:"퍼블리사이즈", pos:"v", level:"B2", meanings:["알리다","공표하다"], syn:["advertise","announce","promote"], ant:["conceal"], ex:[{ s:"They wanted to {{}} the team's achievement widely.", f:"publicize", ko:"그들은 팀의 성취를 널리 알리고 싶어 했다." }] },
   { word:"purity", exams:["공무원"], pron:"퓨리티", pos:"n", level:"C1", meanings:["순도","순수함"], syn:["pureness","cleanliness","clarity"], ant:["impurity"], ex:[{ s:"They reissued the coins at lower {{}}.", f:"purity", ko:"그들은 주화를 더 낮은 순도로 재발행했다." }] },
   { word:"pyramidal", exams:["공무원"], pron:"피라미덜", pos:"adj", level:"C2", meanings:["피라미드 모양의"], ex:[{ s:"He fingered the flat, {{}} planes of the rock.", f:"pyramidal", ko:"그는 그 돌의 납작한 피라미드 모양 면들을 만졌다." }] },
-  { word:"packaging", exams:["공무원"], pron:"패키징", pos:"n", level:"B2", meanings:["포장","포장재"], syn:["wrapping","packing","wrapper"], ex:[{ s:"Avoid single-use plastic {{}}.", f:"packaging", ko:"일회용 플라스틱 포장을 피하라." }] },
+  { word:"packaging", exams:["공무원","수능"], pron:"패키징", pos:"n", level:"B2", meanings:["포장","포장재"], syn:["wrapping","packing","wrapper"], ex:[{ s:"Avoid single-use plastic {{}}.", f:"packaging", ko:"일회용 플라스틱 포장을 피하라." }] },
   { word:"poised", exams:["공무원"], pron:"포이즈드", pos:"adj", level:"C1", meanings:["준비된","태세를 갖춘"], syn:["ready","prepared","set"], ex:[{ s:"Employment is {{}} for significant change.", f:"poised", ko:"고용은 큰 변화를 앞두고 있다." }] },
   { word:"prioritize", exams:["공무원","수능"], pron:"프라이오리타이즈", pos:"v", level:"B2", meanings:["우선순위를 두다"], syn:["rank","emphasize","prefer"], ex:[{ s:"It is critical to {{}} training and education.", f:"prioritize", ko:"훈련과 교육에 우선순위를 두는 것이 중요하다." }] },
   { word:"productive", exams:["공무원","수능"], pron:"프러덕티브", pos:"adj", level:"B2", meanings:["생산적인"], syn:["efficient","fruitful","prolific"], ant:["unproductive"], ex:[{ s:"Rewarding effort makes a system more {{}}.", f:"productive", ko:"노력을 보상하면 체계가 더 생산적이 된다." }] },
@@ -328,7 +328,7 @@ window.VOCAB_P = [
 
   /* participate in 은 원본이 '~에 참여하다' 로 participate 와 그대로 물렸다.
      '~에 가담하다' 로 갈랐다. 구·표현이라 ex 는 넣지 않는다. */
-  { word:"participate in", pron:"파티서페이트 인", pos:"phr", level:"B1", meanings:["~에 가담하다"],
+  { word:"participate in", exams:["수능"], pron:"파티서페이트 인", pos:"phr", level:"B1", meanings:["~에 가담하다"],
     syn:["get involved in","be a party to","throw oneself into"] },
 
   /* 승격 ⑫ — 사전값이 '아주 작은 알' 이라 표제어 뜻으로는 어색했다. 원본의
@@ -575,7 +575,7 @@ window.VOCAB_P = [
 
   /* peoples 는 복수형이 따로 뜻을 갖는 낱말이다 — people(사람들) 과 달리
      '여러 민족' 을 가리킨다. 그래서 단수형과 별개 표제어로 두었다. */
-  { word:"peoples", pron:"피플즈", pos:"n", level:"B2", meanings:["민족들","여러 겨레"],
+  { word:"peoples", exams:["수능"], pron:"피플즈", pos:"n", level:"B2", meanings:["민족들","여러 겨레"],
     syn:["nations","ethnic groups","races of the world"],
     ex:[{ s:"The museum shows the art of many {{}}.", f:"peoples", ko:"그 박물관은 여러 민족의 예술을 보여 준다." }] },
 
@@ -792,7 +792,7 @@ window.VOCAB_P = [
     ex:[{ s:"The project entered its final {{}}.", f:"phase", ko:"그 사업은 마지막 단계에 들어섰다." }] },
 
   /* 승격 55 — 사전 표현과 글자까지 같다(marvel, M). */
-  { word:"phenomenon", exams:["공무원"], pron:"퍼나머넌", pos:"n", level:"B2", meanings:["현상"],
+  { word:"phenomenon", exams:["공무원","수능"], pron:"퍼나머넌", pos:"n", level:"B2", meanings:["현상"],
     syn:["marvel","observed event","thing that occurs"],
     ex:[{ s:"The northern lights are a striking {{}}.", f:"phenomenon", ko:"북극광은 눈에 띄는 현상이다." }] },
 
@@ -818,7 +818,7 @@ window.VOCAB_P = [
     ex:[{ s:"Please bring a {{}} of your passport.", f:"photocopy", ko:"여권 복사물을 가져오세요." }] },
 
   /* 원본은 '사진 촬영(기술)' 이었다. 괄호를 걷고 '사진술' 로 풀어 붙였다. */
-  { word:"photography", pron:"퍼타그러피", pos:"n", level:"B1", meanings:["사진 촬영","사진술"],
+  { word:"photography", exams:["수능"], pron:"퍼타그러피", pos:"n", level:"B1", meanings:["사진 촬영","사진술"],
     syn:["taking of pictures","camera work","art of the camera"],
     ex:[{ s:"She took up {{}} after retiring.", f:"photography", ko:"그녀는 은퇴 뒤 사진 촬영을 시작했다." }] },
 
@@ -1058,7 +1058,7 @@ window.VOCAB_P = [
   /* 승격 75 — 사전값 '집어서 말하다' 를 둘째 자리로 살리고 원본의 '지적하다' 를
      앞세웠다. 같은 챕터 point(요점, 점수) 와 갈라 두었다. note(N) 의 화면 글자가
      바뀐다. */
-  { word:"point out", pron:"포인트 아웃", pos:"phr", level:"B1", meanings:["지적하다","집어서 말하다"],
+  { word:"point out", exams:["수능"], pron:"포인트 아웃", pos:"phr", level:"B1", meanings:["지적하다","집어서 말하다"],
     syn:["draw attention to","single out for notice","call attention to"] },
 
   { word:"poke", pron:"포크", pos:"v", level:"B1", meanings:["구멍을 내다","찌르다"],
@@ -1125,7 +1125,7 @@ window.VOCAB_P = [
     ex:[{ s:"Soot is a common urban {{}}.", f:"pollutant", ko:"검댕은 흔한 도시 오염 물질이다." }] },
 
   /* 승격 80 — 사전 표현과 글자까지 같다(contaminate, C). */
-  { word:"pollute", exams:["공무원"], pron:"펄루트", pos:"v", level:"B1", meanings:["오염시키다"],
+  { word:"pollute", exams:["공무원","수능"], pron:"펄루트", pos:"v", level:"B1", meanings:["오염시키다"],
     syn:["contaminate","foul up","make impure"], ant:["purify"],
     ex:[{ s:"Factories used to {{}} the river freely.", f:"pollute", ko:"공장들은 예전에 강을 마음대로 오염시켰다." }] },
 
@@ -1237,7 +1237,7 @@ window.VOCAB_P = [
 
   /* 승격 90 — 사전 표현과 글자까지 같다(defer, D). 원본은 순서가 거꾸로였다 —
      '미루다' 를 앞세우면 챕터 14 의 procrastinate 와 부딪힌다. */
-  { word:"postpone", pron:"포스트폰", pos:"v", level:"B1", meanings:["연기하다","미루다"],
+  { word:"postpone", exams:["수능"], pron:"포스트폰", pos:"v", level:"B1", meanings:["연기하다","미루다"],
     syn:["defer","put off to later","hold over"],
     ex:[{ s:"They had to {{}} the match.", f:"postpone", ko:"그들은 경기를 연기해야 했다." }] },
 
@@ -1548,7 +1548,7 @@ window.VOCAB_P = [
 
   /* 승격 113 — 사전 표현과 글자까지 같다(attendance, A). 둘째 뜻 '존재' 는
      existence(존재 · E) 와 글자까지 같아 서로 오답에서 빠진다. */
-  { word:"presence", exams:["공무원"], pron:"프레즌스", pos:"n", level:"B2", meanings:["출석","존재"],
+  { word:"presence", exams:["공무원","수능"], pron:"프레즌스", pos:"n", level:"B2", meanings:["출석","존재"],
     syn:["attendance","being there","the fact of being on the spot"], ant:["absence"],
     ex:[{ s:"Her {{}} at the meeting was noted.", f:"presence", ko:"그녀의 회의 출석이 기록되었다." }] },
 
@@ -1659,7 +1659,7 @@ window.VOCAB_P = [
 
   /* 승격 123 — 사전 표현과 글자까지 같다(former, F). 첫 뜻 '앞의' 는 챕터 14 의
      prior(앞의, 사전의) 와 글자가 같아 서로 오답에서 빠진다. */
-  { word:"previous", pron:"프리비어스", pos:"adj", level:"B1", meanings:["앞의","먼저의"],
+  { word:"previous", exams:["수능"], pron:"프리비어스", pos:"adj", level:"B1", meanings:["앞의","먼저의"],
     syn:["former","coming before","earlier in order"],
     ex:[{ s:"See the {{}} page for details.", f:"previous", ko:"자세한 내용은 앞의 면을 보라." }] },
 
@@ -1685,7 +1685,7 @@ window.VOCAB_P = [
   /* 승격 126 — 사전은 '주요한; 초등의' 였다. 원본의 '주요한, 최초의' 를 썼다.
      '주요한' 은 foremost(F)·챕터 14 principal 과, '최초의' 는 initial(I) 과
      글자가 같아 넷이 서로의 오답에서 빠진다. 참조는 없다. */
-  { word:"primary", exams:["공무원"], pron:"프라이머리", pos:"adj", level:"B1", meanings:["주요한","최초의"],
+  { word:"primary", exams:["공무원","수능"], pron:"프라이머리", pos:"adj", level:"B1", meanings:["주요한","최초의"],
     syn:["first in rank","most important of all","coming at the start"],
     ex:[{ s:"Safety is our {{}} concern.", f:"primary", ko:"안전이 우리의 주요한 관심사다." }] },
 
@@ -1940,7 +1940,7 @@ window.VOCAB_P = [
      둘(cue, C · induce, I)이 동사를 쓰고 있었다. 원본이 형용사여서 형용사로
      세우고 cue·induce 쪽을 고쳤다. '즉각적인' 은 immediate 의 첫 뜻과 같지만
      둘은 서로 유의어라 오답에서 빠진다. */
-  { word:"prompt", pron:"프람프트", pos:"adj", level:"B2", meanings:["즉각적인"],
+  { word:"prompt", exams:["수능"], pron:"프람프트", pos:"adj", level:"B2", meanings:["즉각적인"],
     syn:["immediate","done at once","quick to act"], ant:["belated"],
     ex:[{ s:"Thank you for your {{}} reply.", f:"prompt", ko:"즉각적인 답신에 감사드립니다." }] },
 
@@ -2012,7 +2012,7 @@ window.VOCAB_P = [
 
   /* 승격 160 — 사전 표현과 글자까지 같다(발음이 없던 항목이다). '전망' 은
      outlook(전망, 관점 · O) 과 글자가 같아 둘이 서로 오답에서 빠진다. */
-  { word:"prospect", pron:"프라스펙트", pos:"n", level:"B2", meanings:["전망","가능성"],
+  { word:"prospect", exams:["수능"], pron:"프라스펙트", pos:"n", level:"B2", meanings:["전망","가능성"],
     syn:["outlook","what lies ahead","chance of success"],
     ex:[{ s:"The {{}} of rain worried us.", f:"prospect", ko:"비가 올 전망이 우리를 걱정시켰다." }] },
 

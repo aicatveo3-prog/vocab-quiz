@@ -186,7 +186,7 @@ window.VOCAB_R = [
     ex:[{ s:"The crowd listened in {{}}.", f:"rapture", ko:"군중은 황홀에 빠져 들었다." }] },
 
   /* 승격 ⑩ — 사전 표현을 글자까지 지켰다(원본은 순서가 거꾸로였다). 참조는 없다. */
-  { word:"rare", exams:["공무원"], pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
+  { word:"rare", exams:["공무원","수능"], pron:"레어", pos:"adj", level:"B1", meanings:["드문","희귀한"],
     syn:["seldom found","not often seen","thin on the ground"], ant:["common"],
     ex:[{ s:"This bird is {{}} in winter.", f:"rare", ko:"이 새는 겨울에 드물다." }] },
 
@@ -247,7 +247,7 @@ window.VOCAB_R = [
     syn:["find a meaning that is not there","put one's own sense into","take more from it than it says"] },
 
   /* 승격 ⑬ — 사전 단일값 유지(instant, I). 원본 '기성품의' 는 같은 자리다. */
-  { word:"ready-made", pron:"레디 메이드", pos:"adj", level:"B2", meanings:["미리 만들어진"],
+  { word:"ready-made", exams:["수능"], pron:"레디 메이드", pos:"adj", level:"B2", meanings:["미리 만들어진"],
     syn:["instant","made in advance","off the shelf"],
     ex:[{ s:"They sell {{}} curtains.", f:"ready-made", ko:"그들은 미리 만들어진 커튼을 판다." }] },
 
@@ -489,7 +489,7 @@ window.VOCAB_R = [
     ex:[{ s:"They {{}} sugar at the plant.", f:"refine", ko:"그들은 그 공장에서 설탕을 정제한다." }] },
 
   /* '개선' 은 improvement 의 첫 뜻과 같아 서로 오답에서 빠진다. */
-  { word:"refinement", pron:"리파인먼트", pos:"n", level:"B2", meanings:["개선","세련됨"],
+  { word:"refinement", exams:["수능"], pron:"리파인먼트", pos:"n", level:"B2", meanings:["개선","세련됨"],
     syn:["a making better","polish of manner","touch that improves"],
     ex:[{ s:"The design needs one more {{}}.", f:"refinement", ko:"그 설계는 개선이 한 번 더 필요하다." }] },
 
@@ -734,7 +734,7 @@ window.VOCAB_R = [
     ex:[{ s:"Only {{}} facts were read out.", f:"relevant", ko:"관련 있는 사실만 읽혔다." }] },
 
   /* 승격 60 — 사전 단일값 유지. 원본의 '확실성' 은 버렸다. 참조는 없다. */
-  { word:"reliability", pron:"릴라이어빌러티", pos:"n", level:"B2", meanings:["신뢰성"],
+  { word:"reliability", exams:["수능"], pron:"릴라이어빌러티", pos:"n", level:"B2", meanings:["신뢰성"],
     syn:["being able to be trusted","steadiness one can count on","soundness"],
     ex:[{ s:"The car is known for its {{}}.", f:"reliability", ko:"그 차는 신뢰성으로 알려져 있다." }] },
 
@@ -1237,7 +1237,7 @@ window.VOCAB_R = [
 
   /* 승격 111 — 사전 글자 유지(confiscate·cripple·deface·efface 반의어 — 네 곳).
      rehabilitate(재활 치료를 하다 · 챕터 5) 와 갈라 두었다. */
-  { word:"restore", pron:"리스토", pos:"v", level:"B1", meanings:["돌려주다","복원하다"],
+  { word:"restore", exams:["수능"], pron:"리스토", pos:"v", level:"B1", meanings:["돌려주다","복원하다"],
     syn:["give back","bring back to what it was","set up again"], ant:["deface"],
     ex:[{ s:"They will {{}} the old painting.", f:"restore", ko:"그들은 그 낡은 그림을 복원할 것이다." }] },
 
@@ -1362,7 +1362,7 @@ window.VOCAB_R = [
   /* 승격 124 — 사전의 쌍반점만 쉼표로 갈랐다. 참조가 여섯 곳(audit·brush up·
      commentary·course assessment·critique·go over) 이라 이 챕터에서 화면이 가장
      많이 바뀌는 자리다. 사전값이 명사라 명사로 세웠다. */
-  { word:"review", exams:["공무원"], pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
+  { word:"review", exams:["공무원","수능"], pron:"리뷰", pos:"n", level:"B1", meanings:["검토","비평"],
     syn:["critique","going over again","written judgment"],
     ex:[{ s:"The book got a good {{}}.", f:"review", ko:"그 책은 좋은 비평을 받았다." }] },
 

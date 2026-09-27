@@ -104,7 +104,7 @@ window.VOCAB_V = [
   /* 승격 ② — 사전과 교재가 같다. 참조 네 곳(ambiguous·equivocal 유의어,
      definite·precise 반의어) 의 화면은 바뀌지 않는다. obscure·ambiguous·
      equivocal·fuzzy 와 맞물려 배제된다. */
-  { word:"vague", pron:"베이그", pos:"adj", level:"B2", meanings:["모호한","애매한"],
+  { word:"vague", exams:["수능"], pron:"베이그", pos:"adj", level:"B2", meanings:["모호한","애매한"],
     syn:["ambiguous","equivocal","not clearly put"],
     ex:[{ s:"His answer was too {{}} to help.", f:"vague", ko:"그의 대답은 도움이 되기에 너무 모호했다." }] },
 
@@ -204,7 +204,7 @@ window.VOCAB_V = [
   /* 승격 ⑫ — 사전 글자 유지. 참조 enormous(E)·immense(I) 두 곳의 화면은
      바뀌지 않는다. enormous·immense·untold 가 '막대한' 을, extensive·
      limitless 가 교재의 '방대한' 을 써서 여러 곳과 맞물린다. */
-  { word:"vast", exams:["공무원"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
+  { word:"vast", exams:["공무원","수능"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
     syn:["enormous","immense","spread out very far"],
     ex:[{ s:"A {{}} plain lay before them.", f:"vast", ko:"광대한 평원이 그들 앞에 놓여 있었다." }] },
 
@@ -429,7 +429,7 @@ window.VOCAB_V = [
 
   /* outlook(전망, 관점)·perspective(관점, 시각)·standpoint(관점, 입장)·
      point of view(관점, 견해) 넷과 맞물려 배제된다. */
-  { word:"viewpoint", exams:["공무원"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"viewpoint", exams:["공무원","수능"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["outlook","perspective","standpoint"],
     ex:[{ s:"From her {{}} the plan was sound.", f:"viewpoint", ko:"그녀의 관점에서 그 계획은 타당했다." }] },
 

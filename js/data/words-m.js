@@ -80,7 +80,7 @@ window.VOCAB_M = [
   { word:"misperception", exams:["공무원"], pron:"미스퍼셉션", pos:"n", level:"C1", meanings:["오해","잘못된 인식"], syn:["misconception","misunderstanding","fallacy","misinterpretation"], ex:[{ s:"A common {{}} is that roller coasters lose energy.", f:"misperception", ko:"흔한 오해는 롤러코스터가 에너지를 잃는다는 것이다." }] },
   { word:"mistakenly", exams:["공무원"], pron:"미스테이컨리", pos:"adv", level:"B2", meanings:["잘못하여","실수로"], syn:["wrongly","erroneously","incorrectly"], ant:["correctly"], ex:[{ s:"Many riders {{}} believe the cars run out of energy.", f:"mistakenly", ko:"많은 탑승객은 차량의 에너지가 바닥난다고 잘못 믿는다." }] },
   { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
-  { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
+  { word:"mend", exams:["공무원","수능"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
   { word:"make a case for", exams:["공무원"], pron:"메이크 어 케이스 포", pos:"phr", level:"C1", meanings:["~을 옹호하는 주장을 펴다","~을 강력히 주장하다"] },
   { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
   { word:"manipulation", exams:["수능"], pron:"머니퓰레이션", pos:"n", level:"C1", meanings:["조작","교묘한 처리"], ex:[{ s:"The lyricists used clever linguistic {{}} to tell stories.", f:"manipulation", ko:"작사가들은 영리한 언어 조작으로 이야기를 들려주었다." }] },
@@ -279,7 +279,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '제조하다; 제조' 와 같은 갈래다. 참조도 PRON 도 없어
      동사 쪽으로 정리했다. 원본의 '제조업' 은 명사 갈래라 뺐다. */
-  { word:"manufacture", pron:"매뉴팩처", pos:"v", level:"B2", meanings:["제조하다","생산하다"],
+  { word:"manufacture", exams:["수능"], pron:"매뉴팩처", pos:"v", level:"B2", meanings:["제조하다","생산하다"],
     syn:["produce","fabricate","assemble"],
     ex:[{ s:"The plant will {{}} batteries for electric cars.", f:"manufacture", ko:"그 공장은 전기차용 배터리를 제조할 것이다." }] },
 
@@ -632,7 +632,7 @@ window.VOCAB_M = [
     syn:["quicksilver","liquid metal","heavy metal"],
     ex:[{ s:"Old thermometers were filled with {{}}.", f:"mercury", ko:"옛 온도계에는 수은이 채워져 있었다." }] },
 
-  { word:"mere", pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
+  { word:"mere", exams:["수능"], pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
     syn:["nothing more than","bare","scant"],
     ex:[{ s:"The whole repair took a {{}} ten minutes.", f:"mere", ko:"수리 전체가 겨우 10분밖에 걸리지 않았다." }] },
 
@@ -660,7 +660,7 @@ window.VOCAB_M = [
   /* ── 챕터 6 ─────────────────────────────── */
 
   /* metabolic 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"metabolism", exams:["공무원"], pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
+  { word:"metabolism", exams:["공무원","수능"], pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
     syn:["energy turnover","body chemistry","metabolic rate"],
     ex:[{ s:"Exercise speeds up the body's {{}}.", f:"metabolism", ko:"운동은 신체의 신진대사를 빠르게 한다." }] },
 
@@ -777,7 +777,7 @@ window.VOCAB_M = [
     syn:["intermix","blend together","mix freely"],
     ex:[{ s:"Guests began to {{}} after the speeches.", f:"mingle", ko:"손님들은 연설이 끝난 뒤 섞이기 시작했다." }] },
 
-  { word:"minimal", pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
+  { word:"minimal", exams:["수능"], pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
     syn:["slightest","nominal","negligible"], ant:["maximal"],
     ex:[{ s:"The repair caused {{}} disruption to traffic.", f:"minimal", ko:"그 수리는 교통에 최소의 지장만 일으켰다." }] },
 
@@ -989,7 +989,7 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '적당한; 완화하다' 로 형용사와 동사가 섞여 있었다.
      excessive(ant) 이 참조하는 갈래는 형용사 '적당한' 쪽이라 그것을 지키고,
      원본의 '절제하는' 을 둘째 자리에 두었다 — 한 표제어에 두 품사를 섞지 않는다. */
-  { word:"moderate", pron:"마더릿", pos:"adj", level:"B2", meanings:["적당한","절제하는"],
+  { word:"moderate", exams:["수능"], pron:"마더릿", pos:"adj", level:"B2", meanings:["적당한","절제하는"],
     syn:["reasonable","temperate","middling"], ant:["excessive"],
     ex:[{ s:"A {{}} amount of salt improves the flavour.", f:"moderate", ko:"적당한 양의 소금이 맛을 좋게 한다." }] },
 
@@ -1006,7 +1006,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수정하다, 변경하다' 를 글자까지 지켰다. 참조가 4곳
      (adapt·adjust·alter·amend)이라 원본의 '바꾸다' 대신 사전 쪽을 남겼다. */
-  { word:"modify", exams:["공무원"], pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
+  { word:"modify", exams:["공무원","수능"], pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
     syn:["adapt","adjust","amend"],
     ex:[{ s:"Engineers had to {{}} the design twice.", f:"modify", ko:"기술자들은 설계를 두 번 수정해야 했다." }] },
 
@@ -1172,7 +1172,7 @@ window.VOCAB_M = [
     ex:[{ s:"Fear is a poor long-term {{}}.", f:"motivator", ko:"두려움은 장기적으로 좋지 않은 동기 부여 요인이다." }] },
 
   /* 원본 셋째 갈래 '주제' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"motive", exams:["공무원"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
+  { word:"motive", exams:["공무원","수능"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
     syn:["reason","grounds","rationale"],
     ex:[{ s:"Police could find no clear {{}} for the theft.", f:"motive", ko:"경찰은 그 절도의 명확한 동기를 찾을 수 없었다." }] },
 

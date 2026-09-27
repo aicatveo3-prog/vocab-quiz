@@ -104,7 +104,7 @@ window.VOCAB_W = [
   /* 승격 ① — 사전 글자 유지. 참조 concentrate(C 반의어)·drift(D) 두 곳의
      화면은 바뀌지 않는다. 교재의 '거닐다, 돌아다니다' 는 roam(배회하다,
      떠돌아다니다) 자리다. 아래 wander around 가 '헤매다' 를 품어 배제된다. */
-  { word:"wander", pron:"완더", pos:"v", level:"B2", meanings:["헤매다","산만해지다"],
+  { word:"wander", exams:["수능"], pron:"완더", pos:"v", level:"B2", meanings:["헤매다","산만해지다"],
     syn:["drift","roam without aim","stray off the point"], ant:["concentrate"],
     ex:[{ s:"His mind began to {{}}.", f:"wander", ko:"그의 마음이 산만해지기 시작했다." }] },
 
@@ -195,7 +195,7 @@ window.VOCAB_W = [
   /* 승격 ⑧ — 사전과 교재가 같다. 참조 affluent(A)·broke(B 반의어) 두 곳의
      화면은 바뀌지 않는다. affluent(풍족한, 부유한) 와 맞물리고 4차의
      well-to-do(유복한, 부유한) 와도 '부유한' 으로 맞물린다. */
-  { word:"wealthy", pron:"웰시", pos:"adj", level:"B2", meanings:["부유한"],
+  { word:"wealthy", exams:["수능"], pron:"웰시", pos:"adj", level:"B2", meanings:["부유한"],
     syn:["affluent","rolling in money","of large means"], ant:["broke"],
     ex:[{ s:"They come from a {{}} family.", f:"wealthy", ko:"그들은 부유한 집안 출신이다." }] },
 
@@ -253,7 +253,7 @@ window.VOCAB_W = [
     ex:[{ s:"They still {{}} by hand here.", f:"weave", ko:"이곳에서는 아직 손으로 천을 짠다." }] },
 
   /* 교재의 '수초' 는 드문 쪽이라 버렸다. */
-  { word:"weed", exams:["공무원"], pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
+  { word:"weed", exams:["공무원","수능"], pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
     syn:["wild plant in a garden","plant nobody wants","unwanted growth"],
     ex:[{ s:"She pulled out every {{}}.", f:"weed", ko:"그녀는 잡초를 하나하나 뽑았다." }] },
 
@@ -393,7 +393,7 @@ window.VOCAB_W = [
 
   /* 승격 ⑱ — 사전 단일값 유지(참조 general). prevalent(널리 퍼진, 흔한) 와
      맞물려 배제된다. 교재의 '광범위한' 은 extensive 자리다. */
-  { word:"widespread", pron:"와이드스프레드", pos:"adj", level:"B2", meanings:["널리 퍼진"],
+  { word:"widespread", exams:["수능"], pron:"와이드스프레드", pos:"adj", level:"B2", meanings:["널리 퍼진"],
     syn:["general","found nearly everywhere","spread over a large area"],
     ex:[{ s:"The custom is {{}} in the south.", f:"widespread", ko:"그 풍습은 남부에 널리 퍼져 있다." }] },
 
@@ -419,7 +419,7 @@ window.VOCAB_W = [
     syn:["power to choose","paper leaving one's goods","the mind's resolve"],
     ex:[{ s:"She has a strong {{}}.", f:"will", ko:"그녀는 강한 의지를 지녔다." }] },
 
-  { word:"willing", pron:"윌링", pos:"adj", level:"B1", meanings:["기꺼이 ~하는"],
+  { word:"willing", exams:["수능"], pron:"윌링", pos:"adj", level:"B1", meanings:["기꺼이 ~하는"],
     syn:["ready to do it","not holding back","glad to lend a hand"],
     ex:[{ s:"He was {{}} to wait.", f:"willing", ko:"그는 기꺼이 기다리려 했다." }] },
 

@@ -186,7 +186,7 @@ window.VOCAB = [
     syn:["completely","totally","utterly"], ant:["partially"],
     ex:[{ s:"You are {{}} right about the deadline.", f:"absolutely", ko:"마감일에 대해 네가 전적으로 옳다." }] },
 
-  { word:"absorb", exams:["공무원"], pron:"업소브", pos:"v", level:"B1", meanings:["흡수하다","받아들이다"],
+  { word:"absorb", exams:["공무원","수능"], pron:"업소브", pos:"v", level:"B1", meanings:["흡수하다","받아들이다"],
     syn:["soak up","take in","assimilate"], ant:["emit"],
     ex:[{ s:"Plants {{}} carbon dioxide from the air.", f:"absorb", ko:"식물은 공기에서 이산화탄소를 흡수한다." }] },
 
@@ -270,7 +270,7 @@ window.VOCAB = [
     syn:["lodging","housing","quarters"],
     ex:[{ s:"The fee includes meals and {{}}.", f:"accommodation", ko:"그 요금에는 식사와 숙박이 포함된다." }] },
 
-  { word:"accompany", pron:"어컴퍼니", pos:"v", level:"B2", meanings:["동행하다","동반되다"],
+  { word:"accompany", exams:["수능"], pron:"어컴퍼니", pos:"v", level:"B2", meanings:["동행하다","동반되다"],
     syn:["escort","attend","go with"], ant:["leave"],
     ex:[{ s:"Heavy rain will {{}} the strong winds tonight.", f:"accompany", ko:"오늘 밤 강한 바람에 폭우가 동반될 것이다." }] },
 
@@ -313,7 +313,7 @@ window.VOCAB = [
      '용액' 으로 적어 두었지만 그것은 solution 의 뜻이다. solvent 의 실제 뜻은
      형용사 '지급 능력이 있는' 이어서 S 세트에서 그렇게 세웠다 — 참조 bankrupt·
      insolvent 도 그쪽이다. 여기만 화학 쪽 표현으로 갈았다. */
-  { word:"acid", pron:"애시드", pos:"n", level:"B2", meanings:["산","산성 물질"],
+  { word:"acid", exams:["수능"], pron:"애시드", pos:"n", level:"B2", meanings:["산","산성 물질"],
     syn:["corrosive","dissolving agent","etchant"], ant:["base"],
     ex:[{ s:"Rainwater mixed with pollution becomes a weak {{}}.", f:"acid", ko:"오염 물질과 섞인 빗물은 약한 산이 된다." }] },
 
@@ -488,7 +488,7 @@ window.VOCAB = [
     syn:["embrace","take up","assume"], ant:["reject"],
     ex:[{ s:"The city plans to {{}} a stricter recycling rule.", f:"adopt", ko:"그 도시는 더 엄격한 재활용 규칙을 채택할 계획이다." }] },
 
-  { word:"adoption", pron:"어답션", pos:"n", level:"B2", meanings:["채택","입양"],
+  { word:"adoption", exams:["수능"], pron:"어답션", pos:"n", level:"B2", meanings:["채택","입양"],
     syn:["acceptance","embrace","selection"], ant:["rejection"],
     ex:[{ s:"The {{}} of electric buses cut city emissions.", f:"adoption", ko:"전기 버스의 채택은 도시 배출량을 줄였다." }] },
 
@@ -713,7 +713,7 @@ window.VOCAB = [
     syn:["sealed","impermeable","hermetic"], ant:["leaky"],
     ex:[{ s:"Store the beans in an {{}} container.", f:"airtight", ko:"콩은 밀폐 용기에 보관하세요." }] },
 
-  { word:"aisle", pron:"아일", pos:"n", level:"B2", meanings:["통로","복도"],
+  { word:"aisle", exams:["수능"], pron:"아일", pos:"n", level:"B2", meanings:["통로","복도"],
     syn:["passage","corridor","walkway"],
     ex:[{ s:"She prefers an {{}} seat on long flights.", f:"aisle", ko:"그녀는 장거리 비행에서 통로 쪽 좌석을 선호한다." }] },
 
@@ -961,7 +961,7 @@ window.VOCAB = [
     syn:["irritation","nuisance","frustration"], ant:["delight"],
     ex:[{ s:"The constant beeping was a real {{}}.", f:"annoyance", ko:"끊임없는 삐 소리는 진짜 골칫거리였다." }] },
 
-  { word:"annoyed", pron:"어노이드", pos:"adj", level:"B1", meanings:["짜증난","불쾌한"],
+  { word:"annoyed", exams:["수능"], pron:"어노이드", pos:"adj", level:"B1", meanings:["짜증난","불쾌한"],
     syn:["irritated","displeased","vexed"], ant:["pleased"],
     ex:[{ s:"He looked {{}} when the meeting ran late.", f:"annoyed", ko:"회의가 늦어지자 그는 짜증난 표정을 지었다." }] },
 
@@ -1052,7 +1052,7 @@ window.VOCAB = [
     syn:["indifference","unconcern","detachment"], ant:["enthusiasm"],
     ex:[{ s:"Voter {{}} led to a record low turnout.", f:"apathy", ko:"유권자의 무관심이 사상 최저 투표율로 이어졌다." }] },
 
-  { word:"apologetic", pron:"어팔러제틱", pos:"adj", level:"B2", meanings:["사과하는","미안해하는"],
+  { word:"apologetic", exams:["수능"], pron:"어팔러제틱", pos:"adj", level:"B2", meanings:["사과하는","미안해하는"],
     syn:["remorseful","regretful","contrite"], ant:["unrepentant"],
     ex:[{ s:"He sent an {{}} note for missing the meeting.", f:"apologetic", ko:"그는 회의에 빠진 것에 대해 사과하는 쪽지를 보냈다." }] },
 
@@ -1328,7 +1328,7 @@ window.VOCAB = [
     syn:["attack","onslaught","aggression"], ant:["defense"],
     ex:[{ s:"The dawn {{}} took the fort by surprise.", f:"assault", ko:"새벽의 습격은 요새를 기습했다." }] },
 
-  { word:"assemble", exams:["공무원"], pron:"어셈블", pos:"v", level:"B2", meanings:["모으다","조립하다"],
+  { word:"assemble", exams:["공무원","수능"], pron:"어셈블", pos:"v", level:"B2", meanings:["모으다","조립하다"],
     syn:["gather","collect","build"], ant:["disperse"],
     ex:[{ s:"Crowds began to {{}} outside the hall.", f:"assemble", ko:"군중이 강당 밖에 모이기 시작했다." }] },
 

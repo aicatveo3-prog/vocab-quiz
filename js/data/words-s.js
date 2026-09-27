@@ -62,14 +62,14 @@ window.VOCAB_S = [
   { word:"situational", exams:["공무원","수능"], pron:"시추에이셔널", pos:"adj", level:"C1", meanings:["상황의","상황에 따른"], syn:["contextual","circumstantial","conditional"], ex:[{ s:"Maintain a level of {{}} awareness while driving.", f:"situational", ko:"운전 중에는 상황 인식을 유지하라." }] },
   { word:"safeguard", exams:["공무원"], pron:"세이프가드", pos:"v", level:"C1", meanings:["보호하다","지키다"], syn:["protect","defend","shield"], ant:["endanger"], ex:[{ s:"We must {{}} workers' rights.", f:"safeguard", ko:"우리는 근로자의 권리를 보호해야 한다." }] },
   { word:"skateboard", exams:["공무원"], pron:"스케이트보드", pos:"v", level:"B1", meanings:["스케이트보드를 타다"], ex:[{ s:"He broke his arm while {{}}.", f:"skateboarding", ko:"그는 스케이트보드를 타다가 팔이 부러졌다." }] },
-  { word:"specialist", exams:["공무원"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가","전문의"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
+  { word:"specialist", exams:["공무원","수능"], pron:"스페셜리스트", pos:"n", level:"B2", meanings:["전문가","전문의"], syn:["expert","authority","professional"], ant:["generalist"], ex:[{ s:"Will there be a {{}} available?", f:"specialist", ko:"이용 가능한 전문가가 있을까요?" }] },
   { word:"speculation", exams:["공무원"], pron:"스페큘레이션", pos:"n", level:"C1", meanings:["추측","짐작"], syn:["conjecture","guesswork","supposition"], ant:["fact"], ex:[{ s:"The report was based on {{}} rather than evidence.", f:"speculation", ko:"그 보고서는 증거보다 추측에 근거했다." }] },
   { word:"stomach", exams:["공무원"], pron:"스터먹", pos:"n", level:"B1", meanings:["위","배"], syn:["belly","abdomen","tummy"], ex:[{ s:"It is hard to focus on an empty {{}}.", f:"stomach", ko:"빈속으로는 집중하기 어렵다." }] },
   { word:"strength", exams:["공무원"], pron:"스트렝쓰", pos:"n", level:"B1", meanings:["힘","강점"], syn:["power","force","asset"], ant:["weakness"], ex:[{ s:"Each system has its own {{}} and weaknesses.", f:"strengths", ko:"각 체계에는 저마다의 강점과 약점이 있다." }] },
   { word:"succession", exams:["공무원"], pron:"석세션", pos:"n", level:"C1", meanings:["연속","계승"], syn:["sequence","series","progression"], ex:[{ s:"Effective {{}} planning captures departing knowledge.", f:"succession", ko:"효과적인 계승 계획은 떠나는 사람의 지식을 붙잡아 둔다." }] },
   { word:"suggest", exams:["공무원","수능"], pron:"서제스트", pos:"v", level:"B1", meanings:["제안하다","암시하다"], syn:["propose","recommend","imply"], ex:[{ s:"I {{}} that you discuss this matter discreetly.", f:"suggest", ko:"이 문제를 신중하게 논의하시길 제안합니다." }] },
   { word:"summarize", exams:["공무원"], pron:"서머라이즈", pos:"v", level:"B2", meanings:["요약하다"], syn:["sum up","recap","condense"], ex:[{ s:"The bot can read and {{}} emails.", f:"summarize", ko:"그 봇은 이메일을 읽고 요약할 수 있다." }] },
-  { word:"surrounding", exams:["공무원"], pron:"서라운딩", pos:"adj", level:"B2", meanings:["주위의","인근의"], syn:["nearby","adjacent","neighboring"], ex:[{ s:"There are no impacts to utilities in the {{}} area.", f:"surrounding", ko:"인근 지역의 공공 설비에는 영향이 없다." }] },
+  { word:"surrounding", exams:["공무원","수능"], pron:"서라운딩", pos:"adj", level:"B2", meanings:["주위의","인근의"], syn:["nearby","adjacent","neighboring"], ex:[{ s:"There are no impacts to utilities in the {{}} area.", f:"surrounding", ko:"인근 지역의 공공 설비에는 영향이 없다." }] },
   { word:"sensitivity", exams:["공무원"], pron:"센서티비티", pos:"n", level:"B2", meanings:["민감성","감수성"], syn:["responsiveness","awareness","perceptiveness"], ant:["insensitivity"], ex:[{ s:"Language can refine our visual {{}} to color.", f:"sensitivity", ko:"언어는 색에 대한 우리의 시각적 민감성을 정교하게 다듬을 수 있다." }] },
   { word:"sample", exams:["공무원"], pron:"샘플", pos:"v", level:"B2", meanings:["표본을 채취하다","맛보다"], syn:["test","taste","try"], ex:[{ s:"Scientists use robots to {{}} water from the deep sea.", f:"sample", ko:"과학자들은 로봇을 이용해 심해의 물을 채취한다." }] },
   { word:"seasonal", exams:["공무원"], pron:"시즈널", pos:"adj", level:"B2", meanings:["계절의","계절에 따른"], ex:[{ s:"The city will explain its {{}} water rate changes.", f:"seasonal", ko:"시는 계절에 따른 수도 요금 변경을 설명할 것이다." }] },
@@ -84,7 +84,7 @@ window.VOCAB_S = [
   { word:"scenic", exams:["공무원"], pron:"시닉", pos:"adj", level:"B2", meanings:["경치가 좋은","풍경의"], syn:["picturesque","panoramic","breathtaking"], ex:[{ s:"Visitors enjoy the {{}} views from the hill.", f:"scenic", ko:"방문객들은 언덕에서 보는 멋진 경치를 즐긴다." }] },
   { word:"showcase", exams:["공무원"], pron:"쇼케이스", pos:"v", level:"B2", meanings:["보여 주다","전시하다"], syn:["display","exhibit","demonstrate"], ex:[{ s:"Punctuality {{}} a person's commitment to meeting deadlines.", f:"showcases", ko:"시간 엄수는 마감을 지키려는 사람의 의지를 보여 준다." }] },
   { word:"sincerity", exams:["공무원"], pron:"신세러티", pos:"n", level:"B2", meanings:["진심","성실"], syn:["honesty","genuineness","earnestness"], ant:["hypocrisy"], ex:[{ s:"I never doubted the {{}} of her apology.", f:"sincerity", ko:"나는 그녀 사과의 진심을 의심한 적이 없다." }] },
-  { word:"societal", exams:["공무원"], pron:"서사이어털", pos:"adj", level:"C1", meanings:["사회의","사회적인"], ex:[{ s:"Health contributes to {{}} well-being and economic growth.", f:"societal", ko:"건강은 사회적 안녕과 경제 성장에 기여한다." }] },
+  { word:"societal", exams:["공무원","수능"], pron:"서사이어털", pos:"adj", level:"C1", meanings:["사회의","사회적인"], ex:[{ s:"Health contributes to {{}} well-being and economic growth.", f:"societal", ko:"건강은 사회적 안녕과 경제 성장에 기여한다." }] },
   { word:"shareholder", exams:["공무원"], pron:"셰어홀더", pos:"n", level:"B2", meanings:["주주"], ex:[{ s:"Every {{}} receives part of the company's profits.", f:"shareholder", ko:"모든 주주는 회사 이익의 일부를 받는다." }] },
   { word:"short-term", exams:["공무원","수능"], pron:"숏 텀", pos:"adj", level:"B1", meanings:["단기적인","단기간의"], ant:["long-term"], ex:[{ s:"Private investors want quick returns, so they prefer {{}} projects.", f:"short-term", ko:"민간 투자자는 빠른 수익을 원해서 단기 사업을 선호한다." }] },
   { word:"skillful", exams:["공무원"], pron:"스킬풀", pos:"adj", level:"B2", meanings:["능숙한","솜씨 좋은"], syn:["adept","proficient","competent"], ant:["clumsy"], ex:[{ s:"She is so {{}} with her hands that she can fix almost anything.", f:"skillful", ko:"그녀는 손재주가 아주 좋아서 거의 뭐든 고칠 수 있다." }] },
@@ -363,7 +363,7 @@ window.VOCAB_S = [
     syn:["in short supply","hard to come by","thin on the ground"], ant:["abundant","numerous"],
     ex:[{ s:"Clean water became {{}} that summer.", f:"scarce", ko:"그해 여름 깨끗한 물이 부족해졌다." }] },
 
-  { word:"scared", pron:"스케어드", pos:"adj", level:"B1", meanings:["무서워하는","겁먹은"],
+  { word:"scared", exams:["수능"], pron:"스케어드", pos:"adj", level:"B1", meanings:["무서워하는","겁먹은"],
     syn:["frightened","afraid","filled with fear"], ant:["fearless"],
     ex:[{ s:"The child was {{}} of the dark.", f:"scared", ko:"그 아이는 어둠을 무서워했다." }] },
 
@@ -566,7 +566,7 @@ window.VOCAB_S = [
     syn:["look for","go after","try to get"],
     ex:[{ s:"Many young people {{}} work in the city.", f:"seek", ko:"많은 젊은이가 도시에서 일자리를 찾는다." }] },
 
-  { word:"seemingly", pron:"시밍리", pos:"adv", level:"B2", meanings:["겉보기에는"],
+  { word:"seemingly", exams:["수능"], pron:"시밍리", pos:"adv", level:"B2", meanings:["겉보기에는"],
     syn:["apparently","on the face of it","to all appearances"],
     ex:[{ s:"The task was {{}} simple.", f:"seemingly", ko:"그 일은 겉보기에는 단순했다." }] },
 
@@ -683,7 +683,7 @@ window.VOCAB_S = [
   /* 승격 ㊳ — 사전 글자를 그대로 지켰다. 참조 absurd(A)·commonsense(C)·
      level-headed(L) 세 곳의 화면은 바뀌지 않는다. 첫 갈래 '분별 있는' 이
      챕터 1 의 sane 과 글자가 같아 서로의 오답에서 자동으로 빠진다. */
-  { word:"sensible", pron:"센서블", pos:"adj", level:"B1", meanings:["분별 있는","합리적인"],
+  { word:"sensible", exams:["수능"], pron:"센서블", pos:"adj", level:"B1", meanings:["분별 있는","합리적인"],
     syn:["commonsense","level-headed","showing good judgment"], ant:["absurd"],
     ex:[{ s:"That was a {{}} choice.", f:"sensible", ko:"그것은 분별 있는 선택이었다." }] },
 
@@ -1056,7 +1056,7 @@ window.VOCAB_S = [
 
   /* 승격 71 — 사전 글자 유지. 참조 affinity(A)·commonality(C)·contrast(C)
      세 곳의 화면은 바뀌지 않는다. */
-  { word:"similarity", exams:["공무원"], pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
+  { word:"similarity", exams:["공무원","수능"], pron:"시멀래러티", pos:"n", level:"B1", meanings:["유사함","닮은 점"],
     syn:["affinity","commonality","likeness between two"], ant:["contrast"],
     ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
 
@@ -1525,7 +1525,7 @@ window.VOCAB_S = [
     syn:["long pointed weapon","lance","throwing pole with a blade"],
     ex:[{ s:"He threw the {{}} at the target.", f:"spear", ko:"그는 표적에 창을 던졌다." }] },
 
-  { word:"specialized", pron:"스페셜라이즈드", pos:"adj", level:"B2", meanings:["전문화된"],
+  { word:"specialized", exams:["수능"], pron:"스페셜라이즈드", pos:"adj", level:"B2", meanings:["전문화된"],
     syn:["narrowed to one field","expert in one area","made for one purpose"],
     ex:[{ s:"The clinic offers {{}} care.", f:"specialized", ko:"그 진료소는 전문화된 치료를 제공한다." }] },
 
@@ -1620,7 +1620,7 @@ window.VOCAB_S = [
     syn:["seasoning powder","flavouring from plants","hot-tasting addition"],
     ex:[{ s:"Add one more {{}} to the stew.", f:"spice", ko:"스튜에 양념을 하나 더 넣어라." }] },
 
-  { word:"spill", pron:"스필", pos:"v", level:"B1", meanings:["쏟다","흘리다"],
+  { word:"spill", exams:["수능"], pron:"스필", pos:"v", level:"B1", meanings:["쏟다","흘리다"],
     syn:["let run over","tip out by accident","pour out unmeant"],
     ex:[{ s:"Try not to {{}} the milk.", f:"spill", ko:"우유를 쏟지 않도록 해라." }] },
 
@@ -2109,7 +2109,7 @@ window.VOCAB_S = [
 
   /* 승격 165 — 사전 단일값 유지. 참조 drop by(D) 의 화면은 바뀌지 않는다.
      구·표현이라 예문은 두지 않는다. */
-  { word:"stop by", pron:"스탑 바이", pos:"phr", level:"B1", meanings:["잠시 들르다"],
+  { word:"stop by", exams:["수능"], pron:"스탑 바이", pos:"phr", level:"B1", meanings:["잠시 들르다"],
     syn:["drop by","call in briefly","look in on the way"] },
 
   /* 원본의 '도중하차' 는 버렸다 — 뜻이 좁다. */

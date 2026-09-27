@@ -46,7 +46,7 @@ window.VOCAB_I = [
   { word:"issuer", exams:["공무원"], pron:"이슈어", pos:"n", level:"C1", meanings:["발행인","발행 기관"], ex:[{ s:"The {{}}, usually a king, was behind the move.", f:"issuer", ko:"발행자, 보통은 왕이 그 조치의 배후였다." }] },
   { word:"investment", exams:["공무원","수능"], pron:"인베스트먼트", pos:"n", level:"B2", meanings:["투자"], syn:["funding","backing","stake"], ex:[{ s:"Farming requires long-term {{}}.", f:"investments", ko:"농업은 장기 투자를 요한다." }] },
   { word:"interpretive", exams:["공무원"], pron:"인터프리티브", pos:"adj", level:"C1", meanings:["해석의","설명적인"], syn:["explanatory","interpretative","illustrative"], ex:[{ s:"Campers engage in {{}} art and science lessons.", f:"interpretive", ko:"참가자들은 해석적 미술·과학 수업에 참여한다." }] },
-  { word:"integration", exams:["공무원"], pron:"인테그레이션", pos:"n", level:"B2", meanings:["통합"], syn:["incorporation","unification","merging"], ant:["separation"], ex:[{ s:"AI {{}} raises questions about workers' rights.", f:"integration", ko:"AI 통합은 근로자 권리에 대한 물음을 낳는다." }] },
+  { word:"integration", exams:["공무원","수능"], pron:"인테그레이션", pos:"n", level:"B2", meanings:["통합"], syn:["incorporation","unification","merging"], ant:["separation"], ex:[{ s:"AI {{}} raises questions about workers' rights.", f:"integration", ko:"AI 통합은 근로자 권리에 대한 물음을 낳는다." }] },
   { word:"inflection", exams:["공무원"], pron:"인플렉션", pos:"n", level:"C1", meanings:["억양","어조 변화"], syn:["intonation","tone","modulation"], ex:[{ s:"Your brain processes tone and {{}}.", f:"inflection", ko:"뇌는 어조와 억양을 처리한다." }] },
   { word:"improve", exams:["공무원"], pron:"임프루브", pos:"v", level:"B1", meanings:["개선하다","나아지다"], syn:["enhance","better","upgrade"], ant:["worsen"], ex:[{ s:"Schools are seeking ways to {{}} effectiveness.", f:"improve", ko:"학교들은 효과성을 개선할 방법을 찾고 있다." }] },
   { word:"inspect", exams:["공무원"], pron:"인스펙트", pos:"v", level:"B2", meanings:["점검하다","검사하다"], syn:["examine","check","scrutinize"], ex:[{ s:"Our team will {{}} your property for signs of rats.", f:"inspect", ko:"우리 팀이 쥐의 흔적을 찾아 당신의 건물을 점검할 것이다." }] },
@@ -59,17 +59,17 @@ window.VOCAB_I = [
   { word:"infancy", exams:["공무원"], pron:"인펀시", pos:"n", level:"C1", meanings:["유아기","초창기"], ex:[{ s:"Humans go through an unusually long {{}}.", f:"infancy", ko:"인간은 유난히 긴 유아기를 거친다." }] },
   { word:"informal", exams:["공무원"], pron:"인포멀", pos:"adj", level:"B1", meanings:["비공식적인","격식 없는"], syn:["casual","relaxed","unofficial","easygoing"], ant:["formal"], ex:[{ s:"As a startup grows, it often loses its {{}}, friendly atmosphere.", f:"informal", ko:"스타트업은 성장하면서 격식 없고 친근한 분위기를 잃곤 한다." }] },
   { word:"interrogate", exams:["공무원"], pron:"인테러게이트", pos:"v", level:"C1", meanings:["심문하다","따져 묻다"], syn:["question","cross-examine","grill"], ex:[{ s:"When AI makes a choice, people want to {{}} how the decision was made.", f:"interrogate", ko:"AI가 선택을 하면 사람들은 그 결정이 어떻게 내려졌는지 따져 묻고 싶어 한다." }] },
-  { word:"involuntary", exams:["공무원"], pron:"인발런테리", pos:"adj", level:"C1", meanings:["무의식적인","본의 아닌"], syn:["automatic","reflexive","unintentional"], ant:["voluntary"], ex:[{ s:"Blinking is usually {{}}.", f:"involuntary", ko:"눈 깜박임은 보통 무의식적으로 일어난다." }] },
+  { word:"involuntary", exams:["공무원","수능"], pron:"인발런테리", pos:"adj", level:"C1", meanings:["무의식적인","본의 아닌"], syn:["automatic","reflexive","unintentional"], ant:["voluntary"], ex:[{ s:"Blinking is usually {{}}.", f:"involuntary", ko:"눈 깜박임은 보통 무의식적으로 일어난다." }] },
   { word:"individual", exams:["공무원","수능"], pron:"인디비주얼", pos:"n", level:"B1", meanings:["개인","개인의"], ant:["collective"], ex:[{ s:"Each {{}} relies on the knowledge of others.", f:"individual", ko:"각 개인은 다른 사람들의 지식에 의존한다." }] },
   { word:"inquire", exams:["공무원"], pron:"인콰이어", pos:"v", level:"B2", meanings:["문의하다","묻다"], syn:["ask","query","investigate"], ex:[{ s:"I am writing to {{}} about the status of my application.", f:"inquire", ko:"제 지원 현황에 대해 문의드리고자 연락드립니다." }], gov:{ prep:["about","into"], usage:"inquire about ~ : ~에 대해 문의하다 · inquire into ~ : ~을 조사하다" } },
   { word:"intellect", exams:["공무원"], pron:"인털렉트", pos:"n", level:"C1", meanings:["지성","지력"], syn:["intelligence","reason","mind"], ex:[{ s:"Humans use their {{}} to outwit each other.", f:"intellect", ko:"인간은 서로를 앞지르는 데 지성을 쓴다." }] },
-  { word:"impressed", exams:["공무원"], pron:"임프레스트", pos:"adj", level:"B1", meanings:["감명받은","깊은 인상을 받은"], ex:[{ s:"The king was {{}} with the soldiers' colorful scarves.", f:"impressed", ko:"왕은 병사들의 화려한 스카프에 감명받았다." }], gov:{ prep:["with","by"], usage:"be impressed with/by ~ : ~에 감명받다" } },
+  { word:"impressed", exams:["공무원","수능"], pron:"임프레스트", pos:"adj", level:"B1", meanings:["감명받은","깊은 인상을 받은"], ex:[{ s:"The king was {{}} with the soldiers' colorful scarves.", f:"impressed", ko:"왕은 병사들의 화려한 스카프에 감명받았다." }], gov:{ prep:["with","by"], usage:"be impressed with/by ~ : ~에 감명받다" } },
   { word:"in charge of", exams:["공무원","수능"], pron:"인 차지 오브", pos:"phr", level:"B1", meanings:["~을 맡은","~을 책임지는"] },
-  { word:"in spite of", exams:["공무원"], pron:"인 스파이트 오브", pos:"phr", level:"B1", meanings:["~에도 불구하고"], syn:["despite","notwithstanding","regardless of"] },
+  { word:"in spite of", exams:["공무원","수능"], pron:"인 스파이트 오브", pos:"phr", level:"B1", meanings:["~에도 불구하고"], syn:["despite","notwithstanding","regardless of"] },
   { word:"indiscernibly", exams:["공무원"], pron:"인디서너블리", pos:"adv", level:"C2", meanings:["분간할 수 없게","알아차릴 수 없을 만큼"], ant:["markedly"] },
   { word:"incoming", exams:["공무원"], pron:"인커밍", pos:"adj", level:"B2", meanings:["들어오는","새로 취임하는"], ex:[{ s:"Check your {{}} messages only twice a day.", f:"incoming", ko:"들어오는 메시지는 하루에 두 번만 확인하라." }] },
   { word:"in danger of", exams:["공무원"], pron:"인 데인저 오브", pos:"phr", level:"B1", meanings:["~할 위험이 있는","~의 위기에 처한"], syn:["at risk","in jeopardy","under threat"] },
-  { word:"idiom", exams:["공무원"], pron:"이디엄", pos:"n", level:"B2", meanings:["관용구","숙어"], syn:["expression","phrase","saying"], ex:[{ s:"'Break a leg' is an English {{}} that means 'good luck'.", f:"idiom", ko:"'Break a leg'는 '행운을 빈다'는 뜻의 영어 관용구다." }] },
+  { word:"idiom", exams:["공무원","수능"], pron:"이디엄", pos:"n", level:"B2", meanings:["관용구","숙어"], syn:["expression","phrase","saying"], ex:[{ s:"'Break a leg' is an English {{}} that means 'good luck'.", f:"idiom", ko:"'Break a leg'는 '행운을 빈다'는 뜻의 영어 관용구다." }] },
   { word:"in addition to", exams:["공무원","수능"], pron:"인 어디션 투", pos:"phr", level:"B1", meanings:["~에 더하여","~뿐만 아니라"], syn:["besides","as well as","along with"] },
   { word:"inability", exams:["공무원"], pron:"이너빌리티", pos:"n", level:"C1", meanings:["무능력","~할 수 없음"], ant:["capability"], ex:[{ s:"The government's {{}} to act angered many voters.", f:"inability", ko:"정부가 아무 조치도 하지 못하자 많은 유권자가 분노했다." }] },
   { word:"incumbent", exams:["공무원"], pron:"인컴번트", pos:"adj", level:"C2", meanings:["의무로 지워지는","재임 중인"], syn:["obligatory","mandatory","binding"], ex:[{ s:"It is {{}} on parents to keep their children safe.", f:"incumbent", ko:"아이들을 안전하게 지키는 것은 부모의 의무다." }] },
@@ -180,7 +180,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '무지' 와 같은 갈래다. awareness 의 반의어로 쓰인다.
      '무식' 은 원본에만 있던 갈래로 뒤에 붙였다. */
-  { word:"ignorance", pron:"이그너런스", pos:"n", level:"B2", meanings:["무지","무식"],
+  { word:"ignorance", exams:["수능"], pron:"이그너런스", pos:"n", level:"B2", meanings:["무지","무식"],
     syn:["unawareness","inexperience","naivety"], ant:["knowledge"],
     ex:[{ s:"His {{}} of basic geography surprised the interviewer.", f:"ignorance", ko:"기본 지리에 대한 그의 무지는 면접관을 놀라게 했다." }] },
 
@@ -237,7 +237,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '착각, 환상' 이다. delusion(syn)·fantasy(syn) 두 문제가 쓴다.
      두 갈래가 다 살아 있어 원본 순서('환상' 먼저)로 맞췄다.
      원본 '오해' 는 셋째 갈래라 meanings 2개 제한에 걸려 뺐다. */
-  { word:"illusion", exams:["공무원"], pron:"일루전", pos:"n", level:"B2", meanings:["환상","착각"],
+  { word:"illusion", exams:["공무원","수능"], pron:"일루전", pos:"n", level:"B2", meanings:["환상","착각"],
     syn:["delusion","hallucination","mirage"],
     ex:[{ s:"The mirror creates the {{}} of a much larger room.", f:"illusion", ko:"그 거울은 방이 훨씬 더 커 보이는 착각을 만든다." }] },
 
@@ -494,7 +494,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '개선, 향상' 을 글자까지 지켰다. degradation(ant) 이 참조한다.
      원본은 '개선, 호전, 향상' 으로 세 갈래인데 사전 쪽 두 갈래를 그대로 두었다. */
-  { word:"improvement", pron:"임프루브먼트", pos:"n", level:"B1", meanings:["개선","향상"],
+  { word:"improvement", exams:["수능"], pron:"임프루브먼트", pos:"n", level:"B1", meanings:["개선","향상"],
     syn:["enhancement","progress","betterment"], ant:["decline"],
     ex:[{ s:"There has been a marked {{}} in urban air quality.", f:"improvement", ko:"도시 대기 질에 뚜렷한 개선이 있었다." }] },
 
@@ -747,7 +747,7 @@ window.VOCAB_I = [
      첫 자리를 '통합하다' 로 바꿔 include('포함하다')와 갈랐고,
      사전의 '포함시키다' 는 둘째 자리에 지켰다.
      원본 셋째 갈래 '합병하다' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"incorporate", pron:"인코퍼레이트", pos:"v", level:"B2", meanings:["통합하다","포함시키다"],
+  { word:"incorporate", exams:["수능"], pron:"인코퍼레이트", pos:"v", level:"B2", meanings:["통합하다","포함시키다"],
     syn:["merge","absorb","embody"],
     ex:[{ s:"The new design will {{}} feedback from early users.", f:"incorporate", ko:"새 디자인은 초기 사용자의 피드백을 통합할 것이다." }] },
 
@@ -979,7 +979,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '무한한' 과 글자까지 같다. boundless(syn) 가 참조한다.
      원본도 한 갈래라 그대로 두었다. */
-  { word:"infinite", pron:"인퍼닛", pos:"adj", level:"B2", meanings:["무한한"],
+  { word:"infinite", exams:["수능"], pron:"인퍼닛", pos:"adj", level:"B2", meanings:["무한한"],
     syn:["boundless","limitless","endless"], ant:["finite"],
     ex:[{ s:"The universe may well be {{}} in extent.", f:"infinite", ko:"우주는 그 범위가 무한할 수도 있다." }] },
 
@@ -1044,7 +1044,7 @@ window.VOCAB_I = [
     ex:[{ s:"Try not to {{}} the fumes from the solvent.", f:"inhale", ko:"용제에서 나오는 연기를 들이쉬지 않도록 하세요." }] },
 
   /* 뒤에 올 innate 가 '타고난' 을 첫 자리로 쓰므로 이쪽은 '내재하는' 을 앞에 두었다. */
-  { word:"inherent", pron:"인히런트", pos:"adj", level:"C1", meanings:["내재하는","타고난"],
+  { word:"inherent", exams:["수능"], pron:"인히런트", pos:"adj", level:"C1", meanings:["내재하는","타고난"],
     syn:["built-in","inborn","ingrained"],
     ex:[{ s:"There is an {{}} risk in any surgical procedure.", f:"inherent", ko:"어떤 외과 수술에도 내재하는 위험이 있다." }] },
 
@@ -1138,7 +1138,7 @@ window.VOCAB_I = [
      원본의 '획기적인' 을 둘째 자리에 붙여 양쪽을 다 살렸다.
      innovate·innovation 과 어근이 같지만 품사가 셋 다 달라(v/n/adj) 같은 보드에
      안 온다. */
-  { word:"innovative", pron:"이노베이티브", pos:"adj", level:"B2", meanings:["혁신적인","획기적인"],
+  { word:"innovative", exams:["수능"], pron:"이노베이티브", pos:"adj", level:"B2", meanings:["혁신적인","획기적인"],
     syn:["groundbreaking","pioneering","inventive"],
     ex:[{ s:"Their {{}} approach to teaching won several awards.", f:"innovative", ko:"그들의 혁신적인 교육 접근법은 여러 상을 받았다." }] },
 
@@ -1529,7 +1529,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '해석하다, 통역하다' 를 글자까지 지켰다. decipher(syn) 가
      참조한다. 원본 둘째 갈래 '이해하다' 를 쓰면 C 세트 comprehend·F 세트
      figure out 의 뜻과 첫 뜻이 겹치는데, 사전 쪽을 쓰면 그 문제도 함께 풀린다. */
-  { word:"interpret", exams:["공무원"], pron:"인터프리트", pos:"v", level:"B2", meanings:["해석하다","통역하다"],
+  { word:"interpret", exams:["공무원","수능"], pron:"인터프리트", pos:"v", level:"B2", meanings:["해석하다","통역하다"],
     syn:["decipher","construe","make sense of"],
     ex:[{ s:"Experts disagree on how to {{}} the new data.", f:"interpret", ko:"전문가들은 그 새 데이터를 어떻게 해석할지에 대해 의견이 다르다." }] },
 

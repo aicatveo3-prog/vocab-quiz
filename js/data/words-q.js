@@ -51,7 +51,7 @@ window.VOCAB_Q = [
     ex:[{ s:"They stayed in a {{}} village inn.", f:"quaint", ko:"그들은 예스럽고 아담한 시골 여관에 묵었다." }] },
 
   /* 승격 ① — 사전 표현과 글자까지 같다(competent, C · eligible, E — 두 곳). */
-  { word:"qualified", pron:"콸리파이드", pos:"adj", level:"B2", meanings:["자격 있는"],
+  { word:"qualified", exams:["수능"], pron:"콸리파이드", pos:"adj", level:"B2", meanings:["자격 있는"],
     syn:["competent","eligible","having the right training"],
     ex:[{ s:"She is {{}} to teach physics.", f:"qualified", ko:"그녀는 물리를 가르칠 자격이 있다." }] },
 
