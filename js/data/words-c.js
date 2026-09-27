@@ -92,6 +92,9 @@ window.VOCAB_C = [
   { word:"costume", exams:["수능"], pron:"카스튬", pos:"n", level:"B1", meanings:["의상","복장"], ex:[{ s:"She wore a pirate {{}} to the party.", f:"costume", ko:"그녀는 파티에 해적 의상을 입고 갔다." }] },
   { word:"creature", exams:["수능"], pron:"크리처", pos:"n", level:"B1", meanings:["생물","짐승"], ex:[{ s:"Every living {{}} needs water to survive.", f:"creature", ko:"모든 생물은 살아남으려면 물이 필요하다." }] },
   { word:"cultural", exams:["수능"], pron:"컬처럴", pos:"adj", level:"B1", meanings:["문화의","문화적인"], ex:[{ s:"The festival celebrates the {{}} heritage of the region.", f:"cultural", ko:"그 축제는 그 지역의 문화유산을 기린다." }] },
+  { word:"cumulative", exams:["수능"], pron:"큐뮬러티브", pos:"adj", level:"C1", meanings:["누적되는","점증적인"], syn:["accumulated","mounting","aggregate"], ex:[{ s:"Small daily habits have {{}} effects over many years.", f:"cumulative", ko:"작은 일상 습관은 오랜 세월에 걸쳐 누적 효과를 낸다." }] },
+  { word:"curate", exams:["수능"], pron:"큐레이트", pos:"v", level:"C1", meanings:["전시를 기획하다","선별해 정리하다"], ex:[{ s:"She was hired to {{}} the museum's costume collection.", f:"curate", ko:"그녀는 박물관 의상 소장품의 전시를 기획하도록 고용되었다." }] },
+  { word:"cycle", exams:["수능"], pron:"사이클", pos:"n", level:"B1", meanings:["순환","주기"], ex:[{ s:"The water {{}} moves water between the sea and the sky.", f:"cycle", ko:"물의 순환은 바다와 하늘 사이로 물을 옮긴다." }] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2063,6 +2066,7 @@ window.VOCAB_C = [
    GLOSS에 없으면 뜻 없이 영어만 떠서 무엇인지 알 수 없다.
    ⚠️ 재대입(=)이 아니라 Object.assign으로 합쳐야 A·B 세트 것이 살아남는다. */
 Object.assign(window.GLOSS, {
+  "accumulated": "쌓인, 축적된",
   "adjourn":"산회하다, 휴회하다",
   "applaud":"칭찬하다, 박수를 보내다",
   "aversion":"혐오, 질색",

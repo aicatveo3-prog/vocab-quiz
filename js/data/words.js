@@ -1752,7 +1752,6 @@ window.GLOSS = {
   "dislike":"싫어함",
   "dispersal":"분산, 해산",
   "dissociate":"분리하다, 관계를 끊다",
-  "distant":"먼, 거리가 있는",
   "distracted":"산만한",
   "doomsday": "종말의, 최후의 날",
   "during": "~동안에",

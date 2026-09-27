@@ -800,6 +800,11 @@ window.VOCAB_E = [
   { word:"exhibit", exams:["공무원"], pron:"이그지빗", pos:"v", level:"B2", meanings:["드러내다","전시하다"], syn:["display","show","demonstrate"], ex:[{ s:"The museum will {{}} the paintings until May.", f:"exhibit", ko:"그 미술관은 5월까지 그 그림들을 전시할 것이다." }] },
   { word:"extraction", exams:["공무원"], pron:"익스트랙션", pos:"n", level:"C1", meanings:["추출","채굴"], ex:[{ s:"Activists campaign against the {{}} of fossil fuels.", f:"extraction", ko:"활동가들은 화석 연료 채굴에 반대하는 운동을 벌인다." }] },
   { word:"earn a living", exams:["공무원"], pron:"언 어 리빙", pos:"phr", level:"B1", meanings:["생계를 꾸리다"] },
+  { word:"economic", exams:["수능"], pron:"이커나믹", pos:"adj", level:"B1", meanings:["경제의","경제적인"], ex:[{ s:"The country entered a period of slow {{}} growth.", f:"economic", ko:"그 나라는 경제 성장이 더딘 시기에 접어들었다." }] },
+  { word:"embodiment", exams:["수능"], pron:"임바디먼트", pos:"n", level:"C1", meanings:["구현","화신"], ex:[{ s:"Ideally, the law is the {{}} of principles all rational people would choose.", f:"embodiment", ko:"이상적으로 법은 모든 이성적인 사람이 선택할 원칙의 구현이다." }] },
+  { word:"entertainment", exams:["수능"], pron:"엔터테인먼트", pos:"n", level:"B1", meanings:["오락","여흥"], syn:["amusement","recreation","leisure"], ex:[{ s:"Television is the main source of {{}} for many families.", f:"entertainment", ko:"텔레비전은 많은 가정에서 주된 오락거리다." }] },
+  { word:"evil", exams:["수능"], pron:"이블", pos:"n", level:"B2", meanings:["악","해악"], syn:["wickedness","wrongdoing","vice"], ant:["virtue"], ex:[{ s:"Money is often called the root of all {{}}.", f:"evil", ko:"돈은 흔히 모든 악의 근원이라 불린다." }] },
+  { word:"experiential", exams:["수능"], pron:"익스피리엔셜", pos:"adj", level:"C1", meanings:["경험에 근거한","체험의"], ex:[{ s:"Audiences prize the {{}} quality of a live performance.", f:"experiential", ko:"관객들은 라이브 공연의 체험적 특성을 높이 평가한다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2110,6 +2115,7 @@ Object.assign(window.GLOSS, {
   "opinion piece":"의견 기고문",
   "poisonous":"유독한, 독이 있는",
   "potency":"효력, 위력",
+  "recreation": "휴양, 레크리에이션",
   "reiterate": "거듭 말하다",
   "repeat": "반복하다, 되풀이하다",
   "resonate": "울려 퍼지다, 공명하다",
@@ -2124,6 +2130,7 @@ Object.assign(window.GLOSS, {
   "tolerant":"너그러운, 관대한",
   "unfair": "불공평한",
   "usefulness":"유용성",
+  "vice": "악덕",
   "wasteful":"낭비하는, 헤픈",
 
   /* ── 2차: effortless ~ elevated (37개) ───────────────── */
@@ -2248,6 +2255,7 @@ Object.assign(window.GLOSS, {
   "threatened":"위협받는",
   "unending":"그침이 없는",
   "vouch for":"보증하다",
+  "wickedness": "사악함",
   "wind up":"결국 ~에 이르다",
 
   /* ── 6차: enormous ~ environment-friendly (39개) ───────────────── */

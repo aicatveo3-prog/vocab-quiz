@@ -1959,7 +1959,6 @@ Object.assign(window.GLOSS, {
   "fumigant": "훈증제",
   "fund": "자금을 대다",
   "fundamentally": "근본적으로",
-  "funding": "자금, 재정 지원",
   "galactic": "은하의",
   "garbled": "뒤죽박죽인",
   "give-and-take": "주고받기",

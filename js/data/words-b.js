@@ -1025,7 +1025,6 @@ Object.assign(window.GLOSS, {
   "cursed": "저주받은",
   "declining": "쇠퇴하는, 감소하는",
   "disembark":"하선하다, 내리다",
-  "divide":"나누다, 갈라놓다",
   "double-cross": "배반하다, 뒤통수치다",
   "entitlement": "자격, 권리",
   "escalation": "단계적 확대",

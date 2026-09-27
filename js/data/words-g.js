@@ -57,6 +57,8 @@ window.VOCAB_G = [
   { word:"gossip", exams:["공무원"], pron:"가십", pos:"v", level:"B2", meanings:["험담하다","잡담하다"], ex:[{ s:"They love to {{}} about their neighbors.", f:"gossip", ko:"그들은 이웃에 대해 험담하기를 좋아한다." }] },
   { word:"give rise to", exams:["공무원"], pron:"기브 라이즈 투", pos:"phr", level:"B2", meanings:["~을 일으키다","~의 원인이 되다"], syn:["cause","bring about","lead to"] },
   { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
+  { word:"goodwill", exams:["수능"], pron:"굿윌", pos:"n", level:"C1", meanings:["호의","선의"], syn:["kindness","favor","generosity"], ant:["hostility"], ex:[{ s:"We cannot simply count on people's {{}}.", f:"goodwill", ko:"우리는 사람들의 선의에만 기댈 수는 없다." }] },
+  { word:"guideline", exams:["수능"], pron:"가이드라인", pos:"n", level:"B2", meanings:["지침","가이드라인"], syn:["rule","principle","instruction"], ex:[{ s:"Each {{}} in the handbook is easy to follow.", f:"guideline", ko:"안내서의 지침 하나하나가 따르기 쉽다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -735,7 +737,6 @@ Object.assign(window.GLOSS, {
   "flurry":"돌발적인 바람",
   "food lover":"음식을 즐기는 사람",
   "forbidding":"위압적인, 험악한",
-  "fulfillment": "성취감, 충족",
   "gape":"입을 벌리고 보다",
   "gawk":"멍하니 바라보다",
   "generational divide":"세대 간 격차",

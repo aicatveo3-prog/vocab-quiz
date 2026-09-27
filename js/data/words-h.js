@@ -594,7 +594,6 @@ Object.assign(window.GLOSS, {
   "dwelling":"거주지, 주거",
   "enmity":"원한",
   "epochal":"획기적인(시대를 가르는)",
-  "experiential": "경험에 근거한",
   "fastener":"잠금장치",
   "fling":"세게 던지다",
   "formerly": "이전에",
