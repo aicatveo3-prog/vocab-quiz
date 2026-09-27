@@ -52,12 +52,12 @@ window.VOCAB_V = [
   { word:"violent", exams:["수능"], pron:"바이얼런트", pos:"adj", level:"B1", meanings:["폭력적인","격렬한"], syn:["brutal","aggressive","fierce"], ant:["nonviolent"], ex:[{ s:"The movie was too {{}} for young children.", f:"violent", ko:"그 영화는 어린아이들이 보기에 너무 폭력적이었다." }] },
   { word:"violate", exams:["수능"], pron:"바이얼레이트", pos:"v", level:"B2", meanings:["위반하다","침해하다"], syn:["infringe","break","disobey"], ant:["obey"], ex:[{ s:"Companies that {{}} safety rules must pay a fine.", f:"violate", ko:"안전 규칙을 위반한 회사는 벌금을 내야 한다." }] },
   { word:"victim", exams:["수능"], pron:"빅텀", pos:"n", level:"B1", meanings:["피해자","희생자"], ex:[{ s:"The {{}} of the robbery described the thief to the police.", f:"victim", ko:"강도 피해자는 경찰에게 도둑의 인상착의를 설명했다." }] },
-  { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
+  { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ant:["performer"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
   { word:"visible", exams:["수능"], pron:"비저블", pos:"adj", level:"B1", meanings:["보이는","눈에 띄는"], ex:[{ s:"On sunny days, the mountain top is {{}} from our window.", f:"visible", ko:"맑은 날에는 우리 집 창문에서 산꼭대기가 보인다." }] },
   { word:"valuable", exams:["수능"], pron:"밸류어블", pos:"adj", level:"B1", meanings:["귀중한","값비싼"], ex:[{ s:"Don't leave {{}} items in your car.", f:"valuable", ko:"차 안에 귀중품을 두지 마세요." }] },
   { word:"veil", exams:["수능"], pron:"베일", pos:"v", level:"C1", meanings:["가리다","감추다"], syn:["conceal","mask","shroud"], ant:["reveal"], ex:[{ s:"Thick clouds often {{}} the top of the mountain.", f:"veil", ko:"짙은 구름이 산꼭대기를 자주 가린다." }] },
   { word:"valued", exams:["수능"], pron:"밸류드", pos:"adj", level:"C1", meanings:["소중한","존중받는"], syn:["prized","cherished","esteemed"], ex:[{ s:"Every {{}} customer receives a birthday coupon.", f:"valued", ko:"소중한 고객 모두에게 생일 쿠폰을 드립니다." }] },
-  { word:"vain", exams:["수능"], pron:"베인", pos:"adj", level:"B2", meanings:["헛된","허영심 있는"], syn:["futile","useless","fruitless"], ex:[{ s:"All their efforts proved {{}}, and the old barn burned down.", f:"vain", ko:"그들의 모든 노력은 헛되었고, 낡은 헛간은 다 타 버렸다." }] },
+  { word:"vain", exams:["수능"], pron:"베인", pos:"adj", level:"B2", meanings:["헛된","허영심 있는"], syn:["futile","useless","fruitless"], ant:["successful"], ex:[{ s:"All their efforts proved {{}}, and the old barn burned down.", f:"vain", ko:"그들의 모든 노력은 헛되었고, 낡은 헛간은 다 타 버렸다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -730,6 +730,7 @@ Object.assign(window.GLOSS, {
   "one who works for free": "보수 없이 일하는 사람",
   "open up to the air": "바깥 공기에 열다",
   "over against": "마주 놓고",
+  "performer": "공연자, 연기자",
   "person on a plant diet": "식물만 먹는 사람",
   "person who offers to help": "돕겠다고 나서는 사람",
   "physical attack": "몸으로 하는 공격",

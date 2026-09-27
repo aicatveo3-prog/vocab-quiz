@@ -59,7 +59,7 @@ window.VOCAB_G = [
   { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
   { word:"goodwill", exams:["수능"], pron:"굿윌", pos:"n", level:"C1", meanings:["호의","선의"], syn:["kindness","favor","generosity"], ant:["hostility"], ex:[{ s:"We cannot simply count on people's {{}}.", f:"goodwill", ko:"우리는 사람들의 선의에만 기댈 수는 없다." }] },
   { word:"guideline", exams:["수능"], pron:"가이드라인", pos:"n", level:"B2", meanings:["지침","가이드라인"], syn:["rule","principle","instruction"], ex:[{ s:"Each {{}} in the handbook is easy to follow.", f:"guideline", ko:"안내서의 지침 하나하나가 따르기 쉽다." }] },
-  { word:"generally", exams:["수능"], pron:"제너럴리", pos:"adv", level:"B2", meanings:["대체로","일반적으로"], syn:["usually","mostly","broadly"] },
+  { word:"generally", exams:["수능"], pron:"제너럴리", pos:"adv", level:"B2", meanings:["대체로","일반적으로"], syn:["usually","mostly","broadly"], ant:["specifically"] },
   { word:"global", exams:["수능"], pron:"글로벌", pos:"adj", level:"B1", meanings:["세계적인","전 세계의"], syn:["worldwide","international","universal"], ant:["local"], ex:[{ s:"Climate change is a {{}} problem that no country can solve alone.", f:"global", ko:"기후 변화는 어느 나라도 혼자 해결할 수 없는 세계적인 문제다." }] },
   { word:"guardian", exams:["수능"], pron:"가디언", pos:"n", level:"B2", meanings:["보호자","후견인"], ex:[{ s:"A child's legal {{}} must sign the form.", f:"guardian", ko:"아이의 법적 보호자가 서류에 서명해야 한다." }] },
   { word:"guilt", exams:["수능"], pron:"길트", pos:"n", level:"B2", meanings:["죄책감","유죄"], ex:[{ s:"She felt a deep sense of {{}} after lying to her friend.", f:"guilt", ko:"그녀는 친구에게 거짓말을 한 뒤 깊은 죄책감을 느꼈다." }] },

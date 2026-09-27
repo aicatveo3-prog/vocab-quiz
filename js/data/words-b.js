@@ -46,7 +46,7 @@ window.VOCAB_B = [
   { word:"bias", exams:["수능"], pron:"바이어스", pos:"n", level:"B2", meanings:["편견","편향"], ex:[{ s:"Judges must decide every case without {{}}.", f:"bias", ko:"판사는 모든 사건을 편견 없이 판결해야 한다." }] },
   { word:"biologically", exams:["수능"], pron:"바이얼라지컬리", pos:"adv", level:"C1", meanings:["생물학적으로"] },
   { word:"blame", exams:["수능"], pron:"블레임", pos:"v", level:"B1", meanings:["탓하다","비난하다"], ex:[{ s:"Don't {{}} others for your own mistakes.", f:"blame", ko:"자기 실수를 남 탓으로 돌리지 마라." }] },
-  { word:"bother", exams:["수능"], pron:"바더", pos:"v", level:"B1", meanings:["신경 쓰이게 하다","귀찮게 하다"], syn:["disturb","annoy","trouble"], ex:[{ s:"Does the loud music {{}} you while you study?", f:"bother", ko:"공부할 때 시끄러운 음악이 신경 쓰이니?" }] },
+  { word:"bother", exams:["수능"], pron:"바더", pos:"v", level:"B1", meanings:["신경 쓰이게 하다","귀찮게 하다"], syn:["disturb","annoy","trouble"], ant:["soothe"], ex:[{ s:"Does the loud music {{}} you while you study?", f:"bother", ko:"공부할 때 시끄러운 음악이 신경 쓰이니?" }] },
   /* ── ba ────────────────────────────────────── */
   { word:"babble", pron:"배블", pos:"n", level:"C1", meanings:["옹알이","와글와글 떠드는 소리"],
     syn:["chatter","prattle","murmur"], ant:["silence"],

@@ -809,7 +809,7 @@ window.VOCAB_E = [
   { word:"enforcement", exams:["수능"], pron:"인포스먼트", pos:"n", level:"C1", meanings:["집행","시행"], ex:[{ s:"Stricter {{}} of traffic laws reduced accidents.", f:"enforcement", ko:"교통법의 더 엄격한 집행으로 사고가 줄었다." }] },
   { word:"envy", exams:["수능"], pron:"엔비", pos:"v", level:"B2", meanings:["부러워하다","시기하다"], ex:[{ s:"Many classmates {{}} her talent for languages.", f:"envy", ko:"많은 반 친구가 그녀의 언어 재능을 부러워한다." }] },
   { word:"essentially", exams:["수능"], pron:"이센셜리", pos:"adv", level:"B2", meanings:["본질적으로","기본적으로"], syn:["basically","fundamentally","intrinsically"] },
-  { word:"evaluation", exams:["수능"], pron:"이밸류에이션", pos:"n", level:"B2", meanings:["평가","가치 판단"], syn:["assessment","appraisal","judgment"], ex:[{ s:"Careful {{}} of the test results takes several weeks.", f:"evaluation", ko:"시험 결과를 꼼꼼히 평가하는 데는 몇 주가 걸린다." }] },
+  { word:"evaluation", exams:["수능"], pron:"이밸류에이션", pos:"n", level:"B2", meanings:["평가","가치 판단"], syn:["assessment","appraisal","rating"], ex:[{ s:"Careful {{}} of the test results takes several weeks.", f:"evaluation", ko:"시험 결과를 꼼꼼히 평가하는 데는 몇 주가 걸린다." }] },
   { word:"edition", exams:["수능"], pron:"이디션", pos:"n", level:"B2", meanings:["판","호"], ex:[{ s:"The first {{}} of the book sold out in a week.", f:"edition", ko:"그 책의 초판은 일주일 만에 다 팔렸다." }] },
   { word:"enjoy", exams:["수능"], pron:"인조이", pos:"v", level:"B1", meanings:["즐기다","누리다"], ex:[{ s:"Sit back, relax, and {{}} the show!", f:"enjoy", ko:"편히 앉아 긴장을 풀고 공연을 즐기세요!" }] },
   { word:"expression", exams:["수능"], pron:"익스프레션", pos:"n", level:"B1", meanings:["표현","표정"], ex:[{ s:"Her facial {{}} showed that she was angry.", f:"expression", ko:"그녀의 표정을 보니 화가 나 있었다." }] },

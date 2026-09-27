@@ -73,7 +73,7 @@ window.VOCAB_N = [
   { word:"network", exams:["수능"], pron:"네트워크", pos:"n", level:"B1", meanings:["망","연결망"], ex:[{ s:"The city has a large {{}} of bike paths.", f:"network", ko:"그 도시에는 자전거 도로망이 넓게 깔려 있다." }] },
   { word:"narrowly", exams:["수능"], pron:"내로울리", pos:"adv", level:"B2", meanings:["간신히","좁게"] },
   { word:"negotiation", exams:["수능"], pron:"니고시에이션", pos:"n", level:"B2", meanings:["협상","교섭"], ex:[{ s:"After weeks of {{}}, the two companies signed a deal.", f:"negotiation", ko:"몇 주간의 협상 끝에 두 회사는 계약을 맺었다." }] },
-  { word:"never-ending", exams:["수능"], pron:"네버 엔딩", pos:"adj", level:"B2", meanings:["끝없는","끝날 줄 모르는"], syn:["endless","interminable","perpetual"], ex:[{ s:"Residents were tired of the {{}} arguments about parking.", f:"never-ending", ko:"주민들은 주차를 둘러싼 끝없는 논쟁에 지쳐 있었다." }] },
+  { word:"never-ending", exams:["수능"], pron:"네버 엔딩", pos:"adj", level:"B2", meanings:["끝없는","끝날 줄 모르는"], syn:["endless","interminable","perpetual"], ant:["brief"], ex:[{ s:"Residents were tired of the {{}} arguments about parking.", f:"never-ending", ko:"주민들은 주차를 둘러싼 끝없는 논쟁에 지쳐 있었다." }] },
   { word:"newcomer", exams:["수능"], pron:"뉴커머", pos:"n", level:"B2", meanings:["새로 온 사람","신참"], ex:[{ s:"The club welcomed every {{}} with a small gift.", f:"newcomer", ko:"그 동아리는 새로 온 사람마다 작은 선물로 환영했다." }] },
   { word:"neuron", exams:["수능"], pron:"뉴런", pos:"n", level:"C1", meanings:["뉴런","신경 세포"], syn:["nerve cell","brain cell","nerve"], ex:[{ s:"Each {{}} in the brain connects to thousands of others.", f:"neuron", ko:"뇌 속의 뉴런 하나하나가 수천 개의 다른 뉴런과 연결된다." }] },
   { word:"newly", exams:["수능"], pron:"뉴리", pos:"adv", level:"B2", meanings:["새로","최근에"] },

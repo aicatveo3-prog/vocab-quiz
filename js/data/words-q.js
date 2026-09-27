@@ -36,7 +36,7 @@
 window.VOCAB_Q = [
   { word:"quality", exams:["수능"], pron:"콸러티", pos:"n", level:"B1", meanings:["품질","특성"], ex:[{ s:"Customers expect high {{}} at a fair price.", f:"quality", ko:"고객은 적정한 가격에 높은 품질을 기대한다." }] },
   { word:"quantitative", exams:["수능"], pron:"콴터테이티브", pos:"adj", level:"C1", meanings:["양적인","정량적인"], ex:[{ s:"The survey collected {{}} data such as age and income.", f:"quantitative", ko:"그 조사는 나이와 소득 같은 정량 자료를 모았다." }] },
-  { word:"questionable", exams:["수능"], pron:"퀘스처너블", pos:"adj", level:"C1", meanings:["의심스러운","미심쩍은"], syn:["dubious","doubtful","debatable"], ex:[{ s:"The report is based on {{}} data from an unknown source.", f:"questionable", ko:"그 보고서는 출처를 알 수 없는 미심쩍은 자료에 근거한다." }] },
+  { word:"questionable", exams:["수능"], pron:"퀘스처너블", pos:"adj", level:"C1", meanings:["의심스러운","미심쩍은"], syn:["dubious","doubtful","debatable"], ant:["reliable"], ex:[{ s:"The report is based on {{}} data from an unknown source.", f:"questionable", ko:"그 보고서는 출처를 알 수 없는 미심쩍은 자료에 근거한다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
 

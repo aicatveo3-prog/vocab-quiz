@@ -120,16 +120,16 @@ window.VOCAB_O = [
   { word:"on the spot", exams:["수능"], pron:"온 더 스팟", pos:"phr", level:"B2", meanings:["즉석에서","현장에서"] },
   { word:"originally", exams:["수능"], pron:"어리저널리", pos:"adv", level:"B2", meanings:["원래","처음에는"] },
   { word:"overuse", exams:["수능"], pron:"오버유즈", pos:"v", level:"B2", meanings:["남용하다","지나치게 쓰다"], ex:[{ s:"Teenagers who {{}} their phones at night often sleep badly.", f:"overuse", ko:"밤에 휴대폰을 지나치게 쓰는 십대는 잠을 잘 못 자는 경우가 많다." }] },
-  { word:"overcome", exams:["수능"], pron:"오버컴", pos:"v", level:"B1", meanings:["극복하다","이겨내다"], syn:["conquer","surmount","defeat"], ex:[{ s:"She trained hard to {{}} her fear of water.", f:"overcome", ko:"그녀는 물에 대한 두려움을 극복하려고 열심히 훈련했다." }] },
+  { word:"overcome", exams:["수능"], pron:"오버컴", pos:"v", level:"B1", meanings:["극복하다","이겨내다"], syn:["conquer","surmount","defeat"], ant:["surrender"], ex:[{ s:"She trained hard to {{}} her fear of water.", f:"overcome", ko:"그녀는 물에 대한 두려움을 극복하려고 열심히 훈련했다." }] },
   { word:"overtourism", exams:["수능"], pron:"오버투어리즘", pos:"n", level:"C1", meanings:["과잉 관광"], ex:[{ s:"Venice suffers from {{}} every summer.", f:"overtourism", ko:"베네치아는 매년 여름 과잉 관광에 시달린다." }] },
   { word:"outsider", exams:["수능"], pron:"아웃사이더", pos:"n", level:"B2", meanings:["외부인","아웃사이더"], ex:[{ s:"The small village was not friendly to any {{}}.", f:"outsider", ko:"그 작은 마을은 어떤 외부인에게도 우호적이지 않았다." }] },
-  { word:"overjoyed", exams:["수능"], pron:"오버조이드", pos:"adj", level:"C1", meanings:["매우 기뻐하는","크게 기뻐하는"], syn:["delighted","thrilled","elated"], ex:[{ s:"The girls were {{}} to see their father again.", f:"overjoyed", ko:"딸들은 아버지를 다시 보게 되어 무척 기뻐했다." }] },
-  { word:"observable", exams:["수능"], pron:"업저버블", pos:"adj", level:"C1", meanings:["관찰할 수 있는","눈에 보이는"], syn:["visible","noticeable","apparent"], ex:[{ s:"Scientists study {{}} changes in animal behavior.", f:"observable", ko:"과학자들은 관찰할 수 있는 동물 행동의 변화를 연구한다." }] },
+  { word:"overjoyed", exams:["수능"], pron:"오버조이드", pos:"adj", level:"C1", meanings:["매우 기뻐하는","크게 기뻐하는"], syn:["delighted","thrilled","elated"], ant:["heartbroken"], ex:[{ s:"The girls were {{}} to see their father again.", f:"overjoyed", ko:"딸들은 아버지를 다시 보게 되어 무척 기뻐했다." }] },
+  { word:"observable", exams:["수능"], pron:"업저버블", pos:"adj", level:"C1", meanings:["관찰할 수 있는","눈에 보이는"], syn:["visible","noticeable","apparent"], ant:["invisible"], ex:[{ s:"Scientists study {{}} changes in animal behavior.", f:"observable", ko:"과학자들은 관찰할 수 있는 동물 행동의 변화를 연구한다." }] },
   { word:"outline", exams:["수능"], pron:"아웃라인", pos:"n", level:"B2", meanings:["개요","윤곽"], ex:[{ s:"Write a brief {{}} of your essay before you start.", f:"outline", ko:"에세이를 쓰기 전에 간단한 개요를 작성해라." }] },
   { word:"overflow", exams:["수능"], pron:"오버플로", pos:"v", level:"B2", meanings:["넘치다","범람하다"], ex:[{ s:"The river may {{}} after days of heavy rain.", f:"overflow", ko:"며칠 동안 폭우가 내리면 강이 범람할 수 있다." }] },
   { word:"ownership", exams:["수능"], pron:"오너십", pos:"n", level:"B2", meanings:["소유권","소유"], ex:[{ s:"Home {{}} is a dream for many young couples.", f:"ownership", ko:"내 집 마련은 많은 젊은 부부의 꿈이다." }] },
   { word:"outpace", exams:["수능"], pron:"아웃페이스", pos:"v", level:"C1", meanings:["앞지르다","능가하다"], syn:["outstrip","surpass","overtake"], ex:[{ s:"Demand for clean water may soon {{}} supply.", f:"outpace", ko:"깨끗한 물의 수요가 곧 공급을 앞지를 수도 있다." }] },
-  { word:"oversimplified", exams:["수능"], pron:"오버심플러파이드", pos:"adj", level:"C1", meanings:["지나치게 단순화된"], syn:["simplistic","naive","superficial"], ex:[{ s:"Their explanation of the problem was badly {{}}.", f:"oversimplified", ko:"그 문제에 대한 그들의 설명은 지나치게 단순화되어 있었다." }] },
+  { word:"oversimplified", exams:["수능"], pron:"오버심플러파이드", pos:"adj", level:"C1", meanings:["지나치게 단순화된"], syn:["simplistic","naive","superficial"], ant:["elaborate"], ex:[{ s:"Their explanation of the problem was badly {{}}.", f:"oversimplified", ko:"그 문제에 대한 그들의 설명은 지나치게 단순화되어 있었다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -1229,6 +1229,7 @@ Object.assign(window.GLOSS, {
   "insulting": "모욕하는",
   "internal structure": "몸속 구조물",
   "introductory training": "처음 받는 교육",
+  "invisible": "눈에 보이지 않는",
   "inwardly": "마음속으로, 내심",
   "jaunt": "짧은 유람",
   "jumpy": "움찔거리는",

@@ -839,7 +839,6 @@ Object.assign(window.GLOSS, {
   "junction":"교차점, 합류점",
   "junkie":"중독자",
   "jurisdiction":"관할권, 권한",
-  "justification":"정당화, 근거",
   "keg":"작은 통",
   "key":"핵심적인; 열쇠",
   "kickback":"리베이트, 뇌물",

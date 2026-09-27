@@ -79,7 +79,7 @@ window.VOCAB_U = [
   { word:"upward", exams:["수능"], pron:"업워드", pos:"adj", level:"B2", meanings:["위쪽으로의","상승하는"], ex:[{ s:"House prices have shown a steady {{}} trend.", f:"upward", ko:"집값은 꾸준한 상승 추세를 보여 왔다." }] },
   { word:"utilization", exams:["수능"], pron:"유털리제이션", pos:"n", level:"C1", meanings:["활용","이용"], ex:[{ s:"Better {{}} of resources can cut costs.", f:"utilization", ko:"자원을 더 잘 활용하면 비용을 줄일 수 있다." }] },
   { word:"unanswered", exams:["수능"], pron:"언앤서드", pos:"adj", level:"C1", meanings:["답이 없는","응답받지 못한"], ex:[{ s:"Many of my emails went {{}} for weeks.", f:"unanswered", ko:"내 이메일 중 상당수는 몇 주 동안 답이 없었다." }] },
-  { word:"unimaginable", exams:["수능"], pron:"언이매지너블", pos:"adj", level:"B2", meanings:["상상도 못 할","상상할 수 없는"], syn:["inconceivable","unthinkable","incredible"], ex:[{ s:"Life without the Internet is now {{}} for most teenagers.", f:"unimaginable", ko:"이제 대부분의 십대에게 인터넷 없는 삶은 상상도 할 수 없다." }] },
+  { word:"unimaginable", exams:["수능"], pron:"언이매지너블", pos:"adj", level:"B2", meanings:["상상도 못 할","상상할 수 없는"], syn:["inconceivable","unthinkable","incredible"], ant:["predictable"], ex:[{ s:"Life without the Internet is now {{}} for most teenagers.", f:"unimaginable", ko:"이제 대부분의 십대에게 인터넷 없는 삶은 상상도 할 수 없다." }] },
   { word:"unoccupied", exams:["수능"], pron:"언아큐파이드", pos:"adj", level:"C1", meanings:["비어 있는","사람이 없는"], syn:["vacant","empty","available"], ant:["occupied"], ex:[{ s:"The house has been {{}} since the family moved away.", f:"unoccupied", ko:"그 가족이 이사 간 뒤로 그 집은 비어 있다." }] },
   { word:"unusual", exams:["수능"], pron:"언유주얼", pos:"adj", level:"B1", meanings:["흔치 않은","특이한"], syn:["rare","uncommon","strange"], ant:["ordinary","typical"], ex:[{ s:"It is {{}} to see snow here in April.", f:"unusual", ko:"이곳에서 4월에 눈을 보는 것은 흔치 않다." }] },
   { word:"upcycle", exams:["수능"], pron:"업사이클", pos:"v", level:"C1", meanings:["업사이클하다","새 제품으로 재활용하다"], ex:[{ s:"Some designers {{}} old jeans into stylish bags.", f:"upcycle", ko:"어떤 디자이너들은 낡은 청바지를 멋진 가방으로 업사이클한다." }] },
@@ -99,10 +99,10 @@ window.VOCAB_U = [
   { word:"unfit", exams:["수능"], pron:"언핏", pos:"adj", level:"B2", meanings:["부적합한","건강하지 않은"], syn:["unsuitable","inappropriate","unsuited"], ant:["fit"], ex:[{ s:"The old house was {{}} for a family with small children.", f:"unfit", ko:"그 낡은 집은 어린아이가 있는 가족에게 적합하지 않았다." }] },
   { word:"unify", exams:["수능"], pron:"유너파이", pos:"v", level:"C1", meanings:["통합하다","통일하다"], syn:["unite","integrate","merge"], ex:[{ s:"The king worked hard to {{}} the divided country.", f:"unify", ko:"왕은 분열된 나라를 통일하려고 애썼다." }] },
   { word:"unsuited", exams:["수능"], pron:"언수티드", pos:"adj", level:"C1", meanings:["적합하지 않은","어울리지 않는"], ex:[{ s:"He was {{}} to office work and soon quit.", f:"unsuited", ko:"그는 사무직이 맞지 않아 곧 그만두었다." }] },
-  { word:"unending", exams:["수능"], pron:"언엔딩", pos:"adj", level:"C1", meanings:["끝없는","그치지 않는"], syn:["endless","never-ending","ceaseless"], ex:[{ s:"The {{}} noise from the construction site gave me a headache.", f:"unending", ko:"공사장에서 끝없이 나는 소음 때문에 머리가 아팠다." }] },
+  { word:"unending", exams:["수능"], pron:"언엔딩", pos:"adj", level:"C1", meanings:["끝없는","그치지 않는"], syn:["endless","never-ending","ceaseless"], ant:["brief"], ex:[{ s:"The {{}} noise from the construction site gave me a headache.", f:"unending", ko:"공사장에서 끝없이 나는 소음 때문에 머리가 아팠다." }] },
   { word:"unsatisfactory", exams:["수능"], pron:"언새티스팩터리", pos:"adj", level:"C1", meanings:["만족스럽지 못한","불충분한"], syn:["disappointing","inadequate","unacceptable"], ant:["satisfactory"], ex:[{ s:"The hotel service was {{}}, so we complained to the manager.", f:"unsatisfactory", ko:"호텔 서비스가 만족스럽지 못해서 우리는 매니저에게 항의했다." }] },
   { word:"upstream", exams:["수능"], pron:"업스트림", pos:"adv", level:"B2", meanings:["상류로","상류에서"], ex:[{ s:"Salmon swim {{}}, against the current, to lay their eggs.", f:"upstream", ko:"연어는 알을 낳으려고 물살을 거슬러 상류로 헤엄친다." }] },
-  { word:"utopian", exams:["수능"], pron:"유토피언", pos:"adj", level:"C1", meanings:["유토피아적인","이상향의"], syn:["idealistic","ideal","visionary"], ex:[{ s:"Many novels describe {{}} worlds where everyone is happy.", f:"utopian", ko:"많은 소설이 모두가 행복한 이상향의 세계를 그린다." }] },
+  { word:"utopian", exams:["수능"], pron:"유토피언", pos:"adj", level:"C1", meanings:["유토피아적인","이상향의"], syn:["idealistic","ideal","visionary"], ant:["dystopian"], ex:[{ s:"Many novels describe {{}} worlds where everyone is happy.", f:"utopian", ko:"많은 소설이 모두가 행복한 이상향의 세계를 그린다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -796,6 +796,7 @@ Object.assign(window.GLOSS, {
   "draw a line under": "~ 아래에 선을 긋다",
   "drawing no one": "아무도 끌지 못하는",
   "drop an old habit of mind": "묵은 생각 버릇을 버리다",
+  "dystopian": "디스토피아적인",
   "earning below one's worth": "값어치보다 덜 버는",
   "eat away at": "조금씩 깎아 먹다",
   "final of all": "맨 끝에 오는",
