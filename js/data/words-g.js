@@ -59,6 +59,8 @@ window.VOCAB_G = [
   { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
   { word:"goodwill", exams:["수능"], pron:"굿윌", pos:"n", level:"C1", meanings:["호의","선의"], syn:["kindness","favor","generosity"], ant:["hostility"], ex:[{ s:"We cannot simply count on people's {{}}.", f:"goodwill", ko:"우리는 사람들의 선의에만 기댈 수는 없다." }] },
   { word:"guideline", exams:["수능"], pron:"가이드라인", pos:"n", level:"B2", meanings:["지침","가이드라인"], syn:["rule","principle","instruction"], ex:[{ s:"Each {{}} in the handbook is easy to follow.", f:"guideline", ko:"안내서의 지침 하나하나가 따르기 쉽다." }] },
+  { word:"generally", exams:["수능"], pron:"제너럴리", pos:"adv", level:"B2", meanings:["대체로","일반적으로"], syn:["usually","mostly","broadly"] },
+  { word:"global", exams:["수능"], pron:"글로벌", pos:"adj", level:"B1", meanings:["세계적인","전 세계의"], syn:["worldwide","international","universal"], ant:["local"], ex:[{ s:"Climate change is a {{}} problem that no country can solve alone.", f:"global", ko:"기후 변화는 어느 나라도 혼자 해결할 수 없는 세계적인 문제다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
@@ -697,6 +699,7 @@ Object.assign(window.GLOSS, {
   "blanket":"일괄적인, 포괄적인",
   "bolt":"튀어 달아나다",
   "bring forth":"낳다, 생산하다",
+  "broadly": "대체로, 폭넓게",
   "calisthenics":"맨손 체조",
   "car park":"주차장",
   "carp":"트집을 잡다",

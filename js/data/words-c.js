@@ -107,6 +107,9 @@ window.VOCAB_C = [
   { word:"constantly", exams:["수능"], pron:"칸스턴틀리", pos:"adv", level:"B2", meanings:["끊임없이","계속"], syn:["continually","persistently","perpetually"] },
   { word:"contagion", exams:["수능"], pron:"컨테이전", pos:"n", level:"C1", meanings:["전염","감염"], ex:[{ s:"Emotional {{}} lets one person's mood spread to a whole group.", f:"contagion", ko:"감정 전염은 한 사람의 기분이 집단 전체로 퍼지게 한다." }] },
   { word:"contractor", exams:["수능"], pron:"칸트랙터", pos:"n", level:"B2", meanings:["계약자","도급업자"], ex:[{ s:"The {{}} promised to finish the new kitchen by Friday.", f:"contractor", ko:"도급업자는 금요일까지 새 부엌을 완성하겠다고 약속했다." }] },
+  { word:"coordination", exams:["수능"], pron:"코오디네이션", pos:"n", level:"B2", meanings:["조정","협응"], syn:["cooperation","collaboration","synchronization"], ex:[{ s:"Playing tennis well requires good hand-eye {{}}.", f:"coordination", ko:"테니스를 잘 치려면 손과 눈의 협응이 좋아야 한다." }] },
+  { word:"creative", exams:["수능"], pron:"크리에이티브", pos:"adj", level:"B1", meanings:["창의적인","창조적인"], syn:["imaginative","inventive","innovative"], ant:["unimaginative"], ex:[{ s:"Children need plenty of time for {{}} play.", f:"creative", ko:"아이들에게는 창의적인 놀이를 할 시간이 충분히 필요하다." }] },
+  { word:"critically", exams:["수능"], pron:"크리티컬리", pos:"adv", level:"C1", meanings:["비판적으로","결정적으로"] },
   /* ── cal ───────────────────────────────────── */
   { word:"calamity", pron:"컬래머티", pos:"n", level:"C1", meanings:["재난","재해"],
     syn:["disaster","catastrophe","misfortune"], ant:["blessing"],
@@ -2218,6 +2221,7 @@ Object.assign(window.GLOSS, {
   "straight":"곧은, 똑바른",
   "stretch":"뻗다, 늘이다",
   "succumb":"굴복하다, 쓰러지다",
+  "synchronization": "동시 발생, 동기화",
   "thought": "생각, 사려",
   "together": "다 같이, 한꺼번에",
   "typically": "전형적으로, 보통",

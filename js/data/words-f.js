@@ -497,6 +497,9 @@ window.VOCAB_F = [
   { word:"frustration", exams:["수능"], pron:"프러스트레이션", pos:"n", level:"B2", meanings:["좌절","짜증"], syn:["annoyance","exasperation","irritation"], ex:[{ s:"He shouted in {{}} when the computer crashed again.", f:"frustration", ko:"컴퓨터가 또 멈추자 그는 짜증이 나서 소리쳤다." }] },
   { word:"fulfillment", exams:["수능"], pron:"풀필먼트", pos:"n", level:"C1", meanings:["충족","만족감"], syn:["satisfaction","gratification","contentment"], ex:[{ s:"Helping others gives her a deep sense of {{}}.", f:"fulfillment", ko:"남을 돕는 일은 그녀에게 깊은 만족감을 준다." }] },
   { word:"funding", exams:["수능"], pron:"펀딩", pos:"n", level:"B2", meanings:["자금","재정 지원"], syn:["financing","sponsorship","investment"], ex:[{ s:"The project was canceled because of a lack of {{}}.", f:"funding", ko:"그 사업은 자금 부족으로 취소되었다." }] },
+  { word:"fairly", exams:["수능"], pron:"페어리", pos:"adv", level:"B2", meanings:["상당히","공정하게"] },
+  { word:"fearful", exams:["수능"], pron:"피어풀", pos:"adj", level:"B2", meanings:["두려워하는","무서워하는"], syn:["afraid","frightened","apprehensive"], ant:["fearless"], ex:[{ s:"The little boy was {{}} of the dark.", f:"fearful", ko:"그 어린 소년은 어둠을 무서워했다." }] },
+  { word:"forceful", exams:["수능"], pron:"포스풀", pos:"adj", level:"B2", meanings:["힘찬","강력한"], syn:["powerful","vigorous","assertive"], ant:["feeble"], ex:[{ s:"With one {{}} kick, the player sent the ball into the net.", f:"forceful", ko:"그 선수는 힘찬 발차기 한 번으로 공을 골망에 꽂았다." }] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
@@ -1538,7 +1541,6 @@ Object.assign(window.GLOSS, {
   "disintegration": "붕괴, 해체",
   "disloyal":"불충한, 배신하는",
   "drop back":"뒤로 처지다",
-  "economy": "절약; 경제",
   "even-handed":"공평한",
   "exasperation": "격분",
   "expedite":"신속히 처리하다",
@@ -1961,7 +1963,6 @@ Object.assign(window.GLOSS, {
   "coming to pass":"실제로 이루어짐",
   "combustible material":"태울 수 있는 물질",
   "complete in scale":"크기를 그대로 맞춘",
-  "discouraged":"기가 꺾인",
   "dispirited":"풀이 죽은",
   "escapee":"탈출한 사람",
   "exhaust gas":"배기 가스",

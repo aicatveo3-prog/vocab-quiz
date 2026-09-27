@@ -805,6 +805,11 @@ window.VOCAB_E = [
   { word:"entertainment", exams:["수능"], pron:"엔터테인먼트", pos:"n", level:"B1", meanings:["오락","여흥"], syn:["amusement","recreation","leisure"], ex:[{ s:"Television is the main source of {{}} for many families.", f:"entertainment", ko:"텔레비전은 많은 가정에서 주된 오락거리다." }] },
   { word:"evil", exams:["수능"], pron:"이블", pos:"n", level:"B2", meanings:["악","해악"], syn:["wickedness","wrongdoing","vice"], ant:["virtue"], ex:[{ s:"Money is often called the root of all {{}}.", f:"evil", ko:"돈은 흔히 모든 악의 근원이라 불린다." }] },
   { word:"experiential", exams:["수능"], pron:"익스피리엔셜", pos:"adj", level:"C1", meanings:["경험에 근거한","체험의"], ex:[{ s:"Audiences prize the {{}} quality of a live performance.", f:"experiential", ko:"관객들은 라이브 공연의 체험적 특성을 높이 평가한다." }] },
+  { word:"economy", exams:["수능"], pron:"이카너미", pos:"n", level:"B1", meanings:["경제","절약"], ex:[{ s:"The country's {{}} grew by three percent last year.", f:"economy", ko:"그 나라의 경제는 작년에 3퍼센트 성장했다." }] },
+  { word:"enforcement", exams:["수능"], pron:"인포스먼트", pos:"n", level:"C1", meanings:["집행","시행"], ex:[{ s:"Stricter {{}} of traffic laws reduced accidents.", f:"enforcement", ko:"교통법의 더 엄격한 집행으로 사고가 줄었다." }] },
+  { word:"envy", exams:["수능"], pron:"엔비", pos:"v", level:"B2", meanings:["부러워하다","시기하다"], ex:[{ s:"Many classmates {{}} her talent for languages.", f:"envy", ko:"많은 반 친구가 그녀의 언어 재능을 부러워한다." }] },
+  { word:"essentially", exams:["수능"], pron:"이센셜리", pos:"adv", level:"B2", meanings:["본질적으로","기본적으로"], syn:["basically","fundamentally","intrinsically"] },
+  { word:"evaluation", exams:["수능"], pron:"이밸류에이션", pos:"n", level:"B2", meanings:["평가","가치 판단"], syn:["assessment","appraisal","judgment"], ex:[{ s:"Careful {{}} of the test results takes several weeks.", f:"evaluation", ko:"시험 결과를 꼼꼼히 평가하는 데는 몇 주가 걸린다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2089,6 +2094,7 @@ Object.assign(window.GLOSS, {
   /* ── 1차: earnest ~ efficient (28개) ───────────────── */
   "aged": "나이 든, 노령의",
   "arm": "무장시키다, 갖추게 하다",
+  "basically": "기본적으로",
   "blot out":"지워 없애다, 가리다",
   "boss": "상사, 사장",
   "classless": "계급 없는",

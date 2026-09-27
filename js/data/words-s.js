@@ -2953,7 +2953,6 @@ Object.assign(window.GLOSS, {
   "dig out and raise": "파서 들어 올리다",
   "dirty mark": "더러워진 자리",
   "dirty water from homes": "집에서 나온 더러운 물",
-  "disappointing": "실망스러운",
   "discharge from a gland": "샘에서 나온 것",
   "disdainful": "깔보는",
   "display worth seeing": "볼 만한 펼침",
