@@ -64,6 +64,7 @@ window.VOCAB_G = [
   { word:"guardian", exams:["수능"], pron:"가디언", pos:"n", level:"B2", meanings:["보호자","후견인"], ex:[{ s:"A child's legal {{}} must sign the form.", f:"guardian", ko:"아이의 법적 보호자가 서류에 서명해야 한다." }] },
   { word:"guilt", exams:["수능"], pron:"길트", pos:"n", level:"B2", meanings:["죄책감","유죄"], ex:[{ s:"She felt a deep sense of {{}} after lying to her friend.", f:"guilt", ko:"그녀는 친구에게 거짓말을 한 뒤 깊은 죄책감을 느꼈다." }] },
   { word:"goods", exams:["수능"], pron:"굿즈", pos:"n", level:"B1", meanings:["상품","물품"], ex:[{ s:"The store sells {{}} from all over the world.", f:"goods", ko:"그 가게는 세계 각지의 상품을 판다." }] },
+  { word:"generalization", exams:["수능"], pron:"제너럴러제이션", pos:"n", level:"C1", meanings:["일반화","개괄"], ex:[{ s:"Saying all teenagers are lazy is an unfair {{}}.", f:"generalization", ko:"십대는 모두 게으르다는 말은 부당한 일반화다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */

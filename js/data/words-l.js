@@ -70,6 +70,8 @@ window.VOCAB_L = [
   { word:"luxury", exams:["수능"], pron:"럭셔리", pos:"n", level:"B2", meanings:["사치품","호화로움"], ex:[{ s:"They lived a life of {{}} in a huge mansion.", f:"luxury", ko:"그들은 거대한 저택에서 호화로운 삶을 살았다." }] },
   { word:"leisure", exams:["수능"], pron:"레저", pos:"n", level:"B1", meanings:["여가","레저"], ex:[{ s:"Most people spend their {{}} time with family.", f:"leisure", ko:"대부분의 사람은 여가 시간을 가족과 함께 보낸다." }] },
   { word:"linguist", exams:["수능"], pron:"링귀스트", pos:"n", level:"C1", meanings:["언어학자","외국어에 능통한 사람"], ex:[{ s:"The {{}} spent years studying ancient languages.", f:"linguist", ko:"그 언어학자는 수년간 고대 언어를 연구했다." }] },
+  { word:"learn", exams:["수능"], pron:"런", pos:"v", level:"B1", meanings:["배우다","알게 되다"], ex:[{ s:"Children {{}} new languages faster than adults do.", f:"learn", ko:"아이들은 어른보다 새 언어를 더 빨리 배운다." }] },
+  { word:"likeness", exams:["수능"], pron:"라이크니스", pos:"n", level:"C1", meanings:["닮음","유사성"], syn:["resemblance","similarity","sameness"], ex:[{ s:"There is a strong family {{}} between the two brothers.", f:"likeness", ko:"두 형제는 집안 내력으로 많이 닮았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.

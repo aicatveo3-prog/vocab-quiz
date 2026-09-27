@@ -27,6 +27,8 @@ window.VOCAB_J = [
   { word:"journalist", exams:["공무원","수능"], pron:"저널리스트", pos:"n", level:"B2", meanings:["기자","언론인"], syn:["reporter","correspondent","columnist"], ex:[{ s:"Foreign {{}} hope to cover as much news as possible.", f:"journalists", ko:"외국 기자들은 가능한 한 많은 뉴스를 취재하기를 바란다." }] },
   { word:"judgmental", exams:["공무원"], pron:"저지멘털", pos:"adj", level:"C1", meanings:["비판적인","쉽게 단정하는"], syn:["critical","disapproving","censorious"], ex:[{ s:"Try not to be {{}} when others share their problems.", f:"judgmental", ko:"다른 사람이 고민을 털어놓을 때 함부로 판단하지 않도록 하라." }] },
   { word:"just in case", exams:["공무원","수능"], pron:"저스트 인 케이스", pos:"phr", level:"B1", meanings:["만일을 대비해","혹시 모르니"] },
+  { word:"jointly", exams:["수능"], pron:"조인틀리", pos:"adv", level:"B2", meanings:["공동으로","함께"] },
+  { word:"judgment", exams:["수능"], pron:"저지먼트", pos:"n", level:"B1", meanings:["판단","판결"], ex:[{ s:"Use your own {{}} to decide what is right.", f:"judgment", ko:"무엇이 옳은지는 스스로 판단해서 정해라." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"janitor", pron:"재너터", pos:"n", level:"B2", meanings:["경비","관리인"],

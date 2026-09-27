@@ -115,6 +115,11 @@ window.VOCAB_I = [
   { word:"inconvenience", exams:["수능"], pron:"인컨비니언스", pos:"n", level:"B2", meanings:["불편","애로"], ex:[{ s:"We apologize for any {{}} caused by the delay.", f:"inconvenience", ko:"지연으로 불편을 드린 점 사과드립니다." }] },
   { word:"inert", exams:["수능"], pron:"이너트", pos:"adj", level:"C1", meanings:["비활성의","움직이지 않는"], syn:["inactive","static","dormant"], ant:["active"], ex:[{ s:"Helium is a very {{}} gas that rarely reacts with other elements.", f:"inert", ko:"헬륨은 다른 원소와 거의 반응하지 않는 비활성 기체다." }] },
   { word:"informant", exams:["수능"], pron:"인포먼트", pos:"n", level:"C1", meanings:["정보 제공자","제보자"], ex:[{ s:"The researcher interviewed each {{}} about local customs.", f:"informant", ko:"연구자는 정보 제공자 한 명 한 명에게 지역 관습에 관해 물었다." }] },
+  { word:"impression", exams:["수능"], pron:"임프레션", pos:"n", level:"B1", meanings:["인상","감상"], ex:[{ s:"She made a good {{}} at the job interview.", f:"impression", ko:"그녀는 취업 면접에서 좋은 인상을 남겼다." }] },
+  { word:"inorganic", exams:["수능"], pron:"인오개닉", pos:"adj", level:"C1", meanings:["무기의","무기물의"], ex:[{ s:"Rocks and metals are {{}} materials.", f:"inorganic", ko:"암석과 금속은 무기 물질이다." }] },
+  { word:"input", exams:["수능"], pron:"인풋", pos:"n", level:"B2", meanings:["투입","의견"], ex:[{ s:"We need more {{}} from students before we decide.", f:"input", ko:"결정하기 전에 학생들의 의견을 더 들어야 한다." }] },
+  { word:"institutional", exams:["수능"], pron:"인스티튜셔널", pos:"adj", level:"C1", meanings:["제도적인","기관의"], ex:[{ s:"The problem requires {{}} reform, not just individual effort.", f:"institutional", ko:"그 문제는 개인의 노력만이 아니라 제도 개혁이 필요하다." }] },
+  { word:"internalize", exams:["수능"], pron:"인터널라이즈", pos:"v", level:"C1", meanings:["내면화하다","습득하다"], syn:["absorb","adopt","embrace"], ex:[{ s:"Over time, students {{}} the rules until they follow them without thinking.", f:"internalize", ko:"시간이 지나면 학생들은 규칙을 내면화해서 생각하지 않고도 따르게 된다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],
@@ -2068,7 +2073,6 @@ Object.assign(window.GLOSS, {
   "infusion": "주입액",
   "inherently": "본디부터",
   "innermost": "가장 깊은 곳의",
-  "inorganic": "무기의",
   "inside": "안쪽의",
   "insinuate": "빗대어 말하다",
   "insinuation": "빗댄 말",

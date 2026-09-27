@@ -828,6 +828,7 @@ window.VOCAB_E = [
   { word:"enterprise", exams:["수능"], pron:"엔터프라이즈", pos:"n", level:"B2", meanings:["기업","사업"], ex:[{ s:"The government encourages free {{}} and fair competition.", f:"enterprise", ko:"정부는 자유 기업 활동과 공정한 경쟁을 장려한다." }] },
   { word:"entirely", exams:["수능"], pron:"인타이어리", pos:"adv", level:"B2", meanings:["완전히","전적으로"], syn:["completely","wholly","totally"], ant:["partly"] },
   { word:"essence", exams:["수능"], pron:"에센스", pos:"n", level:"C1", meanings:["본질","정수"], ex:[{ s:"Honesty is the {{}} of a true friendship.", f:"essence", ko:"정직은 진정한 우정의 본질이다." }] },
+  { word:"experimental", exams:["수능"], pron:"익스페리멘털", pos:"adj", level:"B2", meanings:["실험적인","실험의"], ex:[{ s:"The new medicine is still in the {{}} stage.", f:"experimental", ko:"그 신약은 아직 실험 단계에 있다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
@@ -2233,7 +2234,6 @@ Object.assign(window.GLOSS, {
   "encircle":"원형으로 둘러싸다",
   "encrypt":"암호화하다",
   "evidence-based":"증거에 기반한",
-  "experimental":"실험에 의한",
   "fellow feeling":"동류 의식, 공감",
   "fence in":"울타리로 둘러막다",
   "follow the example of":"~의 본을 따르다",
