@@ -94,6 +94,9 @@ window.VOCAB_M = [
   { word:"medical", exams:["수능"], pron:"메디컬", pos:"adj", level:"B1", meanings:["의학의","의료의"], ex:[{ s:"She wants to go to {{}} school to become a doctor.", f:"medical", ko:"그녀는 의사가 되려고 의대에 가고 싶어 한다." }] },
   { word:"metallic", exams:["수능"], pron:"머탤릭", pos:"adj", level:"C1", meanings:["금속의","금속성의"], ex:[{ s:"The old spoon left a strange {{}} taste in my mouth.", f:"metallic", ko:"낡은 숟가락 때문에 입안에 이상한 쇠 맛이 남았다." }] },
   { word:"machinery", exams:["수능"], pron:"머시너리", pos:"n", level:"B2", meanings:["기계류","기계 장치"], syn:["equipment","apparatus","mechanism"], ex:[{ s:"Farm {{}} has replaced much of the hand labor.", f:"machinery", ko:"농기계가 손으로 하던 일 상당 부분을 대신했다." }] },
+  { word:"marine", exams:["수능"], pron:"머린", pos:"adj", level:"B2", meanings:["바다의","해양의"], ex:[{ s:"Plastic pollution harms {{}} animals such as sea turtles.", f:"marine", ko:"플라스틱 오염은 바다거북 같은 해양 동물에게 해를 끼친다." }] },
+  { word:"merely", exams:["수능"], pron:"미얼리", pos:"adv", level:"B2", meanings:["단지","그저"] },
+  { word:"morally", exams:["수능"], pron:"모럴리", pos:"adv", level:"C1", meanings:["도덕적으로"] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],

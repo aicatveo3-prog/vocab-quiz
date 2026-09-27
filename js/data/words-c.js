@@ -2200,7 +2200,6 @@ Object.assign(window.GLOSS, {
   "public":"공개된, 공공의",
   "purify":"정화하다",
   "rambling":"산만한, 종횡무진인",
-  "random":"무작위의",
   "receptacle": "담는 그릇",
   "reckless":"무모한, 부주의한",
   "refined":"정제된, 세련된",

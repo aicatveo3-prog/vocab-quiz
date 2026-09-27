@@ -84,6 +84,9 @@ window.VOCAB_R = [
   { word:"remainder", exams:["수능"], pron:"리메인더", pos:"n", level:"C1", meanings:["나머지","잔여"], ex:[{ s:"She spent the {{}} of the day reading in bed.", f:"remainder", ko:"그녀는 그날 남은 시간을 침대에서 책을 읽으며 보냈다." }] },
   { word:"remarkably", exams:["수능"], pron:"리마커블리", pos:"adv", level:"C1", meanings:["눈에 띄게","놀랍게도"] },
   { word:"reuse", exams:["수능"], pron:"리유즈", pos:"v", level:"B2", meanings:["재사용하다","다시 쓰다"], syn:["recycle","repurpose","reutilize"], ex:[{ s:"Please {{}} your shopping bags instead of buying new ones.", f:"reuse", ko:"새 장바구니를 사지 말고 쓰던 것을 다시 써 주세요." }] },
+  { word:"random", exams:["수능"], pron:"랜덤", pos:"adj", level:"B1", meanings:["무작위의","임의의"], ex:[{ s:"The winners were chosen in {{}} order.", f:"random", ko:"당첨자는 무작위 순서로 뽑혔다." }] },
+  { word:"rapid", exams:["수능"], pron:"래피드", pos:"adj", level:"B1", meanings:["빠른","급속한"], syn:["swift","quick","speedy"], ant:["slow"], ex:[{ s:"The {{}} spread of the virus surprised doctors.", f:"rapid", ko:"바이러스가 빠르게 퍼지자 의사들은 놀랐다." }] },
+  { word:"rationalization", exams:["수능"], pron:"래셔널러제이션", pos:"n", level:"C1", meanings:["합리화","정당화"], ex:[{ s:"Blaming others is a common form of {{}}.", f:"rationalization", ko:"남 탓을 하는 것은 흔한 합리화 방식이다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -2215,6 +2218,7 @@ Object.assign(window.GLOSS, {
   "skill with language": "말을 다루는 솜씨",
   "slip back": "뒤로 미끄러지다",
   "slip for what one paid": "낸 값을 적은 쪽지",
+  "slow": "느린",
   "slow to open up": "좀처럼 마음을 열지 않는",
   "slump in trade": "거래가 주저앉음",
   "snacks served": "내놓는 간식",

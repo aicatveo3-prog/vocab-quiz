@@ -1817,7 +1817,6 @@ window.GLOSS = {
   "parched": "바싹 마른",
   "partially":"부분적으로",
   "partly":"부분적으로",
-  "passively":"수동적으로",
   "passivity":"수동성",
   "peace":"평화",
   "placate": "달래다, 회유하다",

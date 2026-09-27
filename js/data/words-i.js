@@ -2160,7 +2160,6 @@ Object.assign(window.GLOSS, {
   "poorly": "형편없이",
   "powerlessness": "무력함",
   "precariousness": "불안한 상태",
-  "preferably": "되도록",
   "prevalence": "널리 퍼져 있음",
   "prickly": "따끔거리는",
   "primeval": "원시의, 태고의",

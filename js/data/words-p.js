@@ -165,6 +165,13 @@ window.VOCAB_P = [
   { word:"protective", exams:["수능"], pron:"프러텍티브", pos:"adj", level:"B2", meanings:["보호하는","보호하려는"], ex:[{ s:"Wear {{}} gloves when you handle chemicals.", f:"protective", ko:"화학 물질을 다룰 때는 보호 장갑을 껴라." }] },
   { word:"provider", exams:["수능"], pron:"프러바이더", pos:"n", level:"B2", meanings:["제공자","공급자"], ex:[{ s:"Our internet {{}} raised its prices again.", f:"provider", ko:"우리 인터넷 공급 업체가 또 요금을 올렸다." }] },
   { word:"puzzled", exams:["수능"], pron:"퍼즐드", pos:"adj", level:"B2", meanings:["어리둥절한","당혹스러운"], syn:["confused","perplexed","baffled"], ex:[{ s:"He looked {{}}, unsure what the strange object was.", f:"puzzled", ko:"그는 그 이상한 물건이 무엇인지 몰라 어리둥절해 보였다." }] },
+  { word:"passively", exams:["수능"], pron:"패시블리", pos:"adv", level:"C1", meanings:["수동적으로","소극적으로"] },
+  { word:"philosophical", exams:["수능"], pron:"필러사피컬", pos:"adj", level:"B2", meanings:["철학의","철학적인"], ex:[{ s:"They had a long {{}} discussion about the meaning of life.", f:"philosophical", ko:"그들은 삶의 의미에 관해 긴 철학적 토론을 했다." }] },
+  { word:"poetic", exams:["수능"], pron:"포에틱", pos:"adj", level:"B2", meanings:["시적인","시의"], ex:[{ s:"Her {{}} language made the simple story beautiful.", f:"poetic", ko:"그녀의 시적인 언어가 단순한 이야기를 아름답게 만들었다." }] },
+  { word:"popularize", exams:["수능"], pron:"파퓰러라이즈", pos:"v", level:"C1", meanings:["대중화하다","보급하다"], ex:[{ s:"Cheap cameras helped {{}} photography among ordinary people.", f:"popularize", ko:"값싼 카메라 덕분에 사진이 일반인 사이에 대중화되었다." }] },
+  { word:"potentially", exams:["수능"], pron:"퍼텐셜리", pos:"adv", level:"B2", meanings:["잠재적으로","어쩌면"] },
+  { word:"preferably", exams:["수능"], pron:"프레퍼러블리", pos:"adv", level:"C1", meanings:["되도록이면","가급적"] },
+  { word:"presuppose", exams:["수능"], pron:"프리서포즈", pos:"v", level:"C1", meanings:["전제하다","예상하다"], syn:["assume","imply","presume"], ex:[{ s:"These lessons {{}} some basic knowledge of math.", f:"presuppose", ko:"이 수업은 기초 수학 지식이 있다는 것을 전제로 한다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
