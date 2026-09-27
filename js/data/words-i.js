@@ -114,6 +114,7 @@ window.VOCAB_I = [
   { word:"illustrative", exams:["수능"], pron:"일러스트레이티브", pos:"adj", level:"C1", meanings:["실례가 되는","설명에 도움이 되는"], ex:[{ s:"The textbook includes many {{}} examples.", f:"illustrative", ko:"그 교과서에는 설명에 도움이 되는 예가 많이 실려 있다." }] },
   { word:"inconvenience", exams:["수능"], pron:"인컨비니언스", pos:"n", level:"B2", meanings:["불편","애로"], ex:[{ s:"We apologize for any {{}} caused by the delay.", f:"inconvenience", ko:"지연으로 불편을 드린 점 사과드립니다." }] },
   { word:"inert", exams:["수능"], pron:"이너트", pos:"adj", level:"C1", meanings:["비활성의","움직이지 않는"], syn:["inactive","static","dormant"], ant:["active"], ex:[{ s:"Helium is a very {{}} gas that rarely reacts with other elements.", f:"inert", ko:"헬륨은 다른 원소와 거의 반응하지 않는 비활성 기체다." }] },
+  { word:"informant", exams:["수능"], pron:"인포먼트", pos:"n", level:"C1", meanings:["정보 제공자","제보자"], ex:[{ s:"The researcher interviewed each {{}} about local customs.", f:"informant", ko:"연구자는 정보 제공자 한 명 한 명에게 지역 관습에 관해 물었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"icon", pron:"아이칸", pos:"n", level:"B2", meanings:["우상","아이콘"],

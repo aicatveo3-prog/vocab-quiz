@@ -2172,7 +2172,6 @@ Object.assign(window.GLOSS, {
   "lowly":"낮은, 미천한",
   "narcissistic":"자기도취적인",
   "painless":"고통 없는, 수고롭지 않은",
-  "pride":"자랑, 자부심",
   "raised":"올려진, 돋운",
   "rough weather":"거친 날씨",
   "self":"자기 자신",

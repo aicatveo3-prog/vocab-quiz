@@ -89,6 +89,10 @@ window.VOCAB_M = [
   { word:"mood", exams:["수능"], pron:"무드", pos:"n", level:"B1", meanings:["기분","분위기"], ex:[{ s:"Sunny weather always puts me in a better {{}}.", f:"mood", ko:"화창한 날씨는 늘 내 기분을 더 좋게 해 준다." }] },
   { word:"memorable", exams:["수능"], pron:"메머러블", pos:"adj", level:"B2", meanings:["기억할 만한","인상적인"], syn:["unforgettable","remarkable","notable"], ex:[{ s:"The concert was so {{}} that I still remember every song.", f:"memorable", ko:"그 공연은 너무 인상적이어서 나는 아직도 모든 노래를 기억한다." }] },
   { word:"misquote", exams:["수능"], pron:"미스쿼트", pos:"v", level:"C1", meanings:["잘못 인용하다"], ex:[{ s:"The newspaper apologized for {{}} the minister's exact words.", f:"misquoting", ko:"그 신문은 장관의 정확한 발언을 잘못 인용한 것을 사과했다." }] },
+  { word:"manufacturer", exams:["수능"], pron:"매뉴팩처러", pos:"n", level:"B2", meanings:["제조업자","제조사"], syn:["producer","maker","fabricator"], ex:[{ s:"The {{}} recalled thousands of faulty phones.", f:"manufacturer", ko:"제조사는 결함 있는 휴대폰 수천 대를 회수했다." }] },
+  { word:"mathematical", exams:["수능"], pron:"매서매티컬", pos:"adj", level:"B2", meanings:["수학의","수학적인"], ex:[{ s:"Algebra and geometry are both {{}} subjects.", f:"mathematical", ko:"대수학과 기하학은 둘 다 수학 과목이다." }] },
+  { word:"medical", exams:["수능"], pron:"메디컬", pos:"adj", level:"B1", meanings:["의학의","의료의"], ex:[{ s:"She wants to go to {{}} school to become a doctor.", f:"medical", ko:"그녀는 의사가 되려고 의대에 가고 싶어 한다." }] },
+  { word:"metallic", exams:["수능"], pron:"머탤릭", pos:"adj", level:"C1", meanings:["금속의","금속성의"], ex:[{ s:"The old spoon left a strange {{}} taste in my mouth.", f:"metallic", ko:"낡은 숟가락 때문에 입안에 이상한 쇠 맛이 남았다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -1398,6 +1402,7 @@ Object.assign(window.GLOSS, {
   "exasperate": "속을 뒤집어 놓다",
   "excluded": "배제된",
   "exclusive rights": "배타적 권리",
+  "fabricator": "제조자",
   "failure to grasp": "알아듣지 못함",
   "falling star": "떨어지는 별",
   "false belief": "틀린 믿음",

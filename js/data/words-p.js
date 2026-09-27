@@ -153,6 +153,15 @@ window.VOCAB_P = [
   { word:"prescriptive", exams:["수능"], pron:"프리스크립티브", pos:"adj", level:"C1", meanings:["규범적인","지시하는"], ex:[{ s:"The teacher's {{}} rules left no room for creativity.", f:"prescriptive", ko:"그 교사의 지시적인 규칙에는 창의성이 끼어들 여지가 없었다." }] },
   { word:"proceed", exams:["수능"], pron:"프러시드", pos:"v", level:"B2", meanings:["진행하다","나아가다"], syn:["continue","advance","progress"], ex:[{ s:"After the break, the meeting will {{}} as planned.", f:"proceed", ko:"휴식 후 회의는 예정대로 진행될 것이다." }] },
   { word:"possibility", exams:["수능"], pron:"파서빌러티", pos:"n", level:"B1", meanings:["가능성","일어날 수 있는 일"], syn:["probability","likelihood","odds"], ex:[{ s:"Scientists are studying the {{}} of life on Mars.", f:"possibility", ko:"과학자들은 화성에 생명체가 있을 가능성을 연구하고 있다." }] },
+  { word:"parenting", exams:["수능"], pron:"페어런팅", pos:"n", level:"B2", meanings:["양육","육아"], ex:[{ s:"Good {{}} takes patience and love.", f:"parenting", ko:"좋은 양육에는 인내와 사랑이 필요하다." }] },
+  { word:"partition", exams:["수능"], pron:"파티션", pos:"v", level:"C1", meanings:["분할하다","칸막이로 나누다"], syn:["divide","separate","split"], ex:[{ s:"We used bookshelves to {{}} the room into two areas.", f:"partition", ko:"우리는 책장으로 방을 두 공간으로 나누었다." }] },
+  { word:"pathway", exams:["수능"], pron:"패스웨이", pos:"n", level:"B2", meanings:["길","경로"], ex:[{ s:"A narrow {{}} led through the forest to the lake.", f:"pathway", ko:"좁은 길이 숲을 지나 호수로 이어졌다." }] },
+  { word:"planner", exams:["수능"], pron:"플래너", pos:"n", level:"B2", meanings:["기획자","계획자"], ex:[{ s:"The wedding {{}} arranged everything from flowers to music.", f:"planner", ko:"웨딩 플래너가 꽃부터 음악까지 모든 것을 준비했다." }] },
+  { word:"plasticity", exams:["수능"], pron:"플래스티서티", pos:"n", level:"C1", meanings:["가소성","적응성"], ex:[{ s:"The brain's {{}} allows it to change throughout life.", f:"plasticity", ko:"뇌의 가소성 덕분에 뇌는 평생에 걸쳐 변할 수 있다." }] },
+  { word:"pricing", exams:["수능"], pron:"프라이싱", pos:"n", level:"C1", meanings:["가격 책정"], ex:[{ s:"Smart {{}} can attract more customers to a new store.", f:"pricing", ko:"영리한 가격 책정은 새 가게에 손님을 더 끌어들일 수 있다." }] },
+  { word:"pride", exams:["수능"], pron:"프라이드", pos:"n", level:"B1", meanings:["자부심","자존심"], ex:[{ s:"She felt great {{}} in her son's success.", f:"pride", ko:"그녀는 아들의 성공에 큰 자부심을 느꼈다." }] },
+  { word:"prisoner", exams:["수능"], pron:"프리즈너", pos:"n", level:"B1", meanings:["죄수","포로"], ex:[{ s:"The {{}} was released after ten years in jail.", f:"prisoner", ko:"그 죄수는 10년간의 수감 끝에 풀려났다." }] },
+  { word:"profoundly", exams:["수능"], pron:"프러파운들리", pos:"adv", level:"C1", meanings:["깊이","심오하게"] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */
@@ -2767,7 +2776,6 @@ Object.assign(window.GLOSS, {
   "paper for medicine": "약을 받는 종이",
   "paper shared before publication": "정식으로 내기 전에 돌리는 글",
   "pare": "깎아 내다",
-  "parenting": "양육, 육아",
   "part measured against all": "전체에 대어 잰 부분",
   "part of a country": "나라의 한 부분",
   "party-related": "정당에 얽힌",

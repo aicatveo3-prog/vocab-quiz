@@ -68,6 +68,8 @@ window.VOCAB_L = [
   { word:"locally", exams:["수능"], pron:"로컬리", pos:"adv", level:"B2", meanings:["지역에서","현지에서"] },
   { word:"low", exams:["수능"], pron:"로", pos:"adj", level:"B1", meanings:["낮은","적은"], ex:[{ s:"The price is so {{}} that everyone can afford it.", f:"low", ko:"가격이 아주 낮아서 누구나 살 수 있다." }] },
   { word:"luxury", exams:["수능"], pron:"럭셔리", pos:"n", level:"B2", meanings:["사치품","호화로움"], ex:[{ s:"They lived a life of {{}} in a huge mansion.", f:"luxury", ko:"그들은 거대한 저택에서 호화로운 삶을 살았다." }] },
+  { word:"leisure", exams:["수능"], pron:"레저", pos:"n", level:"B1", meanings:["여가","레저"], ex:[{ s:"Most people spend their {{}} time with family.", f:"leisure", ko:"대부분의 사람은 여가 시간을 가족과 함께 보낸다." }] },
+  { word:"linguist", exams:["수능"], pron:"링귀스트", pos:"n", level:"C1", meanings:["언어학자","외국어에 능통한 사람"], ex:[{ s:"The {{}} spent years studying ancient languages.", f:"linguist", ko:"그 언어학자는 수년간 고대 언어를 연구했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
