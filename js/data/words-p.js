@@ -82,7 +82,7 @@ window.VOCAB_P = [
   { word:"preposterous", exams:["공무원"], pron:"프리파스터러스", pos:"adj", level:"C2", meanings:["터무니없는","말도 안 되는"], syn:["absurd","ludicrous","ridiculous"], ant:["reasonable"], ex:[{ s:"The idea seemed utterly {{}} to the experts.", f:"preposterous", ko:"그 생각은 전문가들에게 완전히 터무니없어 보였다." }] },
   { word:"proactive", exams:["공무원"], pron:"프로액티브", pos:"adj", level:"C1", meanings:["선제적인","적극적인"], syn:["preemptive","forward-looking","enterprising"], ant:["reactive"], ex:[{ s:"The city has been {{}} in trying to curb tourism.", f:"proactive", ko:"그 도시는 관광을 억제하려 선제적으로 노력해 왔다." }] },
   { word:"proponent", exams:["공무원"], pron:"프러포넌트", pos:"n", level:"C1", meanings:["지지자","옹호자"], syn:["advocate","supporter","champion"], ant:["opponent"], ex:[{ s:"Gun-rights {{}} dispute the statistics.", f:"proponents", ko:"총기 소유권 옹호자들은 그 통계에 이의를 제기한다." }] },
-  { word:"publicize", exams:["공무원"], pron:"퍼블리사이즈", pos:"v", level:"B2", meanings:["알리다","공표하다"], syn:["advertise","announce","promote"], ant:["conceal"], ex:[{ s:"They wanted to {{}} the team's achievement widely.", f:"publicize", ko:"그들은 팀의 성취를 널리 알리고 싶어 했다." }] },
+  { word:"publicize", exams:["공무원","수능"], pron:"퍼블리사이즈", pos:"v", level:"B2", meanings:["알리다","공표하다"], syn:["advertise","announce","promote"], ant:["conceal"], ex:[{ s:"They wanted to {{}} the team's achievement widely.", f:"publicize", ko:"그들은 팀의 성취를 널리 알리고 싶어 했다." }] },
   { word:"purity", exams:["공무원"], pron:"퓨리티", pos:"n", level:"C1", meanings:["순도","순수함"], syn:["pureness","cleanliness","clarity"], ant:["impurity"], ex:[{ s:"They reissued the coins at lower {{}}.", f:"purity", ko:"그들은 주화를 더 낮은 순도로 재발행했다." }] },
   { word:"pyramidal", exams:["공무원"], pron:"피라미덜", pos:"adj", level:"C2", meanings:["피라미드 모양의"], ex:[{ s:"He fingered the flat, {{}} planes of the rock.", f:"pyramidal", ko:"그는 그 돌의 납작한 피라미드 모양 면들을 만졌다." }] },
   { word:"packaging", exams:["공무원"], pron:"패키징", pos:"n", level:"B2", meanings:["포장","포장재"], syn:["wrapping","packing","wrapper"], ex:[{ s:"Avoid single-use plastic {{}}.", f:"packaging", ko:"일회용 플라스틱 포장을 피하라." }] },
@@ -112,7 +112,7 @@ window.VOCAB_P = [
   { word:"proliferate", exams:["공무원"], pron:"프럴리퍼레이트", pos:"v", level:"C1", meanings:["급증하다","확산되다"], syn:["multiply","spread","increase"], ex:[{ s:"Fake news can {{}} quickly on social media.", f:"proliferate", ko:"가짜 뉴스는 소셜 미디어에서 빠르게 확산될 수 있다." }] },
   { word:"prosperous", exams:["공무원"], pron:"프라스퍼러스", pos:"adj", level:"B2", meanings:["번영하는","부유한"], syn:["affluent","thriving","flourishing"], ant:["poor"], ex:[{ s:"The port city grew rich and {{}} through trade.", f:"prosperous", ko:"그 항구 도시는 무역으로 부유하고 번영하게 되었다." }] },
   { word:"punctuality", exams:["공무원"], pron:"펑추앨러티", pos:"n", level:"C1", meanings:["시간 엄수","시간을 잘 지킴"], ex:[{ s:"In business, {{}} shows respect for others' time.", f:"punctuality", ko:"비즈니스에서 시간 엄수는 남의 시간을 존중한다는 표시다." }] },
-  { word:"paradoxical", exams:["공무원"], pron:"패러닥시컬", pos:"adj", level:"C1", meanings:["역설적인","모순된"], syn:["contradictory","ironic","self-contradictory"], ex:[{ s:"It is {{}} that nobody wants to invest in such a profitable plant.", f:"paradoxical", ko:"그렇게 수익성 좋은 발전소에 아무도 투자하려 하지 않는다는 것은 역설적이다." }] },
+  { word:"paradoxical", exams:["공무원","수능"], pron:"패러닥시컬", pos:"adj", level:"C1", meanings:["역설적인","모순된"], syn:["contradictory","ironic","self-contradictory"], ex:[{ s:"It is {{}} that nobody wants to invest in such a profitable plant.", f:"paradoxical", ko:"그렇게 수익성 좋은 발전소에 아무도 투자하려 하지 않는다는 것은 역설적이다." }] },
   { word:"practically", exams:["공무원"], pron:"프랙티컬리", pos:"adv", level:"B2", meanings:["거의","실질적으로"], syn:["virtually","nearly","all but"], ex:[{ s:"The stadium was {{}} empty, with only a few fans left.", f:"practically", ko:"경기장은 팬 몇 명만 남아 거의 텅 비어 있었다." }] },
   { word:"profit", exams:["공무원","수능"], pron:"프라핏", pos:"n", level:"B1", meanings:["이익","수익"], syn:["earnings","revenue","gain"], ant:["loss"], ex:[{ s:"The company made a large {{}} last year.", f:"profit", ko:"그 회사는 작년에 큰 이익을 냈다." }] },
   { word:"provided that", exams:["공무원"], pron:"프러바이디드 댓", pos:"phr", level:"B2", meanings:["~라면","~라는 조건으로"] },
@@ -260,7 +260,7 @@ window.VOCAB_P = [
     syn:["living on a host","sponging off others","feeding on another"],
     ex:[{ s:"The plant has a {{}} habit.", f:"parasitic", ko:"그 식물은 기생하는 습성을 갖는다." }] },
 
-  { word:"parcel", pron:"파슬", pos:"n", level:"B1", meanings:["꾸러미","소포"],
+  { word:"parcel", exams:["수능"], pron:"파슬", pos:"n", level:"B1", meanings:["꾸러미","소포"],
     syn:["package","bundle","wrapped goods"],
     ex:[{ s:"A {{}} arrived for you this morning.", f:"parcel", ko:"오늘 아침 당신에게 소포가 왔다." }] },
 
@@ -355,7 +355,7 @@ window.VOCAB_P = [
   /* 승격 ⑯ — 사전은 '열정적인' 한 갈래였다. 원본의 '열렬한' 을 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(ardent, A). 원본 첫 뜻 '열렬한' 을 그대로 쓰면
      ardent 와 첫 글자가 같아진다. */
-  { word:"passionate", exams:["공무원"], pron:"패셔닛", pos:"adj", level:"B2", meanings:["열정적인","열렬한"],
+  { word:"passionate", exams:["공무원","수능"], pron:"패셔닛", pos:"adj", level:"B2", meanings:["열정적인","열렬한"],
     syn:["ardent","fervent","full of feeling"], ant:["indifferent"],
     ex:[{ s:"He is {{}} about old films.", f:"passionate", ko:"그는 옛 영화에 열정적이다." }] },
 
@@ -455,7 +455,7 @@ window.VOCAB_P = [
 
   /* 승격 24 — 사전 표현 '지불, 납부' 를 글자까지 지켰다(expense, E · fee, F).
      원본의 '지급, 지불; 보답; 급여' 네 갈래 중 사전 쪽을 남겼다. */
-  { word:"payment", exams:["공무원"], pron:"페이먼트", pos:"n", level:"B1", meanings:["지불","납부"],
+  { word:"payment", exams:["공무원","수능"], pron:"페이먼트", pos:"n", level:"B1", meanings:["지불","납부"],
     syn:["settling of a bill","handing over of money","remittance"],
     ex:[{ s:"We accept {{}} by card only.", f:"payment", ko:"우리는 카드 지불만 받는다." }] },
 
@@ -667,7 +667,7 @@ window.VOCAB_P = [
 
   /* 승격 45 — 사전이 '지속하다; 고집하다' 였다. 구분 기호만 쉼표로 바꿨다
      (linger, L). 원본의 '집요하게 계속하다' 대신 사전 쪽을 남겼다. */
-  { word:"persist", exams:["공무원"], pron:"퍼시스트", pos:"v", level:"B2", meanings:["지속하다","고집하다"],
+  { word:"persist", exams:["공무원","수능"], pron:"퍼시스트", pos:"v", level:"B2", meanings:["지속하다","고집하다"],
     syn:["linger","keep on regardless","refuse to give up"],
     ex:[{ s:"The fog will {{}} until noon.", f:"persist", ko:"안개는 정오까지 지속될 것이다." }] },
 
@@ -1039,7 +1039,7 @@ window.VOCAB_P = [
   /* 승격 74 — 사전값 '바라보는 자리' 는 O 세트 outlook 을 위해 내가 만든 표현이다.
      원본의 '관점, 견해' 가 훨씬 또렷해서 그쪽을 썼다 — outlook(O) 의 화면 글자가
      바뀐다. "(=viewpoint)" 표기는 걷었다. */
-  { word:"point of view", exams:["공무원"], pron:"포인트 오브 뷰", pos:"phr", level:"B1", meanings:["관점","견해"],
+  { word:"point of view", exams:["공무원","수능"], pron:"포인트 오브 뷰", pos:"phr", level:"B1", meanings:["관점","견해"],
     syn:["standpoint","angle one sees from","personal take"] },
 
   /* 승격 75 — 사전값 '집어서 말하다' 를 둘째 자리로 살리고 원본의 '지적하다' 를
@@ -1247,7 +1247,7 @@ window.VOCAB_P = [
   /* 승격 92 — 사전은 '강력한' 한 갈래였다. 그대로 두면 compelling(C)·mighty(M) 의
      첫 뜻과 같아지지만 mighty 는 참조 관계라 문제가 없다. 원본의 '효과적인' 을
      '효력이 센' 으로 다듬어 붙였다 — '힘센' 은 mighty 쪽 뜻이다. */
-  { word:"potent", pron:"포턴트", pos:"adj", level:"C1", meanings:["강력한","효력이 센"],
+  { word:"potent", exams:["수능"], pron:"포턴트", pos:"adj", level:"C1", meanings:["강력한","효력이 센"],
     syn:["mighty","working powerfully","of great effect"], ant:["feeble"],
     ex:[{ s:"The drug is {{}} even in small doses.", f:"potent", ko:"그 약은 적은 양에도 강력하다." }] },
 
@@ -1335,7 +1335,7 @@ window.VOCAB_P = [
     ex:[{ s:"A short speech will {{}} the meal.", f:"precede", ko:"짧은 연설이 식사보다 앞설 것이다." }] },
 
   /* 승격 96 — 사전 표현과 글자까지 같다(invaluable, I). */
-  { word:"precious", exams:["공무원"], pron:"프레셔스", pos:"adj", level:"B1", meanings:["소중한","귀중한"],
+  { word:"precious", exams:["공무원","수능"], pron:"프레셔스", pos:"adj", level:"B1", meanings:["소중한","귀중한"],
     syn:["of great worth","dear to one","treasured"], ant:["worthless"],
     ex:[{ s:"Water is {{}} in the desert.", f:"precious", ko:"사막에서 물은 소중하다." }] },
 
@@ -1367,7 +1367,7 @@ window.VOCAB_P = [
     ex:[{ s:"These walls {{}} the church itself.", f:"pre-date", ko:"이 벽들은 교회 자체보다 먼저 생겼다." }] },
 
   /* 원본은 '포식 동물, 약탈자,' 로 끝에 쉼표가 달려 있었다 — 고쳤다. */
-  { word:"predator", exams:["공무원"], pron:"프레더터", pos:"n", level:"B2", meanings:["포식 동물","약탈자"],
+  { word:"predator", exams:["공무원","수능"], pron:"프레더터", pos:"n", level:"B2", meanings:["포식 동물","약탈자"],
     syn:["hunting animal","beast of prey","one that preys"], ant:["prey"],
     ex:[{ s:"The wolf is the main {{}} here.", f:"predator", ko:"이곳의 주된 포식 동물은 늑대다." }] },
 
@@ -1389,13 +1389,13 @@ window.VOCAB_P = [
 
   /* 승격 101 — 사전 표현과 글자까지 같다(anticipate, A · expect, E · foresee, F
      — 세 곳). 원본도 한 갈래여서 그대로 지켰다. */
-  { word:"predict", exams:["공무원"], pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
+  { word:"predict", exams:["공무원","수능"], pron:"프리딕트", pos:"v", level:"B1", meanings:["예측하다"],
     syn:["foretell","say what will come","call the outcome"],
     ex:[{ s:"No one can {{}} the market.", f:"predict", ko:"아무도 시장을 예측할 수 없다." }] },
 
   /* 승격 102 — 사전은 '예측' 한 갈래였다. 원본의 '예측, 예보' 를 그대로 쓰면
      forecast(예측, 예보 · F) 와 글자까지 통째로 같아진다. 사전값을 지켰다. */
-  { word:"prediction", exams:["공무원"], pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
+  { word:"prediction", exams:["공무원","수능"], pron:"프리딕션", pos:"n", level:"B2", meanings:["예측"],
     syn:["forecast","what one expects to happen","guess about the future"],
     ex:[{ s:"His {{}} turned out to be right.", f:"prediction", ko:"그의 예측은 옳았던 것으로 드러났다." }] },
 
@@ -1736,7 +1736,7 @@ window.VOCAB_P = [
   /* 승격 131 — 사전은 '사적인; 민간의' 로 쌍반점을 쓰고 있었다. 둘 다 형용사라
      갈래만 쉼표로 갈랐다 (civic 반의어, C · confidential 유의어, C — 두 곳의
      구두점이 달라진다). */
-  { word:"private", exams:["공무원"], pron:"프라이빗", pos:"adj", level:"B1", meanings:["사적인","민간의"],
+  { word:"private", exams:["공무원","수능"], pron:"프라이빗", pos:"adj", level:"B1", meanings:["사적인","민간의"],
     syn:["confidential","not open to all","one's own"], ant:["public"],
     ex:[{ s:"This is a {{}} matter.", f:"private", ko:"이것은 사적인 일이다." }] },
 
@@ -1747,7 +1747,7 @@ window.VOCAB_P = [
     syn:["special right","favor granted to few","honor given"], ant:["duty"],
     ex:[{ s:"Free parking is a {{}} here.", f:"privilege", ko:"이곳에서 무료 주차는 특권이다." }] },
 
-  { word:"probability", pron:"프라버빌러티", pos:"n", level:"B2", meanings:["확률","개연성"],
+  { word:"probability", exams:["수능"], pron:"프라버빌러티", pos:"n", level:"B2", meanings:["확률","개연성"],
     syn:["odds","chance of happening","how likely it is"],
     ex:[{ s:"The {{}} of rain is low.", f:"probability", ko:"비가 올 확률은 낮다." }] },
 
@@ -1951,7 +1951,7 @@ window.VOCAB_P = [
   /* 승격 157 — 사전은 '적절한; 올바른' 으로 쌍반점을 쓰고 있었다. 참조가 다섯 곳
      (appropriate·correct·decent·formal 유의어, improper 반의어) 이라 이 차수에서
      화면이 가장 많이 바뀌는 자리다 — 구두점만 달라진다. */
-  { word:"proper", pron:"프라퍼", pos:"adj", level:"B1", meanings:["적절한","올바른"],
+  { word:"proper", exams:["수능"], pron:"프라퍼", pos:"adj", level:"B1", meanings:["적절한","올바른"],
     syn:["appropriate","right for the case","as it should be"], ant:["improper"],
     ex:[{ s:"Wear {{}} shoes for the hike.", f:"proper", ko:"산행에는 적절한 신을 신어라." }] },
 
@@ -2038,7 +2038,7 @@ window.VOCAB_P = [
 
   /* 둘째 뜻 '대비' 는 contrast(대비, 차이) 와 글자가 같다 — 한자가 다른
      동음이의어다(對備/對比). 글자가 같으니 서로의 오답에서 빠진다. */
-  { word:"provision", pron:"프러비전", pos:"n", level:"B2", meanings:["공급","대비"],
+  { word:"provision", exams:["수능"], pron:"프러비전", pos:"n", level:"B2", meanings:["공급","대비"],
     syn:["supplying of goods","what is set aside","making ready for need"],
     ex:[{ s:"The law makes {{}} for appeals.", f:"provision", ko:"그 법은 상소에 대한 대비를 두고 있다." }] },
 
@@ -2202,7 +2202,7 @@ window.VOCAB_P = [
     syn:["leave for later","hold back for now","stop the clock on"] },
 
   /* 승격 178 — 사전 표현과 글자까지 같다(extinguish, E). P 세트의 마지막 자리다. */
-  { word:"put out", pron:"풋 아웃", pos:"phr", level:"B2", meanings:["불을 끄다"],
+  { word:"put out", exams:["수능"], pron:"풋 아웃", pos:"phr", level:"B2", meanings:["불을 끄다"],
     syn:["extinguish","quench a flame","smother a fire"] }
 ];
 

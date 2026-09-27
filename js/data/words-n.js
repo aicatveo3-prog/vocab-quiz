@@ -383,7 +383,7 @@ window.VOCAB_N = [
   /* 승격 25 — 사전이 '알아차리다; 통지' 로 동사와 명사가 섞여 있었다.
      참조 네 곳(advert·advertisement·attention·bulletin) 이 모두 명사다.
      원본대로 명사로 세우고 '분간하다, 인지하다' 갈래는 버렸다. */
-  { word:"notice", pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
+  { word:"notice", exams:["수능"], pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
     syn:["posted sign","official word","notification"],
     ex:[{ s:"A {{}} on the door said the shop had moved.", f:"notice", ko:"문에 붙은 통지는 가게가 이사했다고 알렸다." }] },
 
@@ -409,7 +409,7 @@ window.VOCAB_N = [
     ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
 
   /* 승격 28 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"notion", exams:["공무원"], pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
+  { word:"notion", exams:["공무원","수능"], pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
     syn:["idea","conception","mental picture"],
     ex:[{ s:"He had no {{}} of how long it would take.", f:"notion", ko:"그는 얼마나 걸릴지에 대한 개념이 없었다." }] },
 

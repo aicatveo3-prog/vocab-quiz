@@ -88,7 +88,7 @@
  */
 
 window.VOCAB_O = [
-  { word:"obsession", exams:["공무원"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
+  { word:"obsession", exams:["공무원","수능"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
   { word:"occasionally", exams:["공무원","수능"], pron:"어케이저널리", pos:"adv", level:"B2", meanings:["가끔","때때로"], syn:["sometimes","now and then","periodically"], ant:["frequently"], ex:[{ s:"They speak only {{}} while playing on their own.", f:"occasionally", ko:"그들은 혼자 놀면서 가끔씩만 말한다." }] },
   { word:"oddity", exams:["공무원"], pron:"아디티", pos:"n", level:"C1", meanings:["특이한 것","기이함"], syn:["peculiarity","curiosity","anomaly"], ex:[{ s:"Most files are ordinary, but one {{}} stands out: a peddler license from 1890.", f:"oddity", ko:"대부분의 문서는 평범하지만 특이한 것 하나가 눈에 띈다. 1890년의 행상 면허다." }] },
   { word:"opulent", exams:["공무원"], pron:"아퓰런트", pos:"adj", level:"C2", meanings:["호화로운","부유한"], syn:["luxurious","lavish","sumptuous"], ant:["modest"], ex:[{ s:"Their house seemed unnecessarily {{}}.", f:"opulent", ko:"그들의 집은 불필요하게 호화로워 보였다." }] },
@@ -170,7 +170,7 @@ window.VOCAB_O = [
   /* 승격 ⑥ — 사전이 '객관적인, 목표' 로 형용사와 명사가 섞여 있었다.
      impartial(I) 이 형용사 갈래를 쓰므로 형용사로 세우고 '목적, 목표' 는 버렸다.
      아까운 자리지만 참조를 보존하는 규칙을 따랐다. */
-  { word:"objective", exams:["공무원"], pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
+  { word:"objective", exams:["공무원","수능"], pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
     syn:["unbiased","fact-based","free of opinion"], ant:["subjective"],
     ex:[{ s:"The report gives an {{}} account of the fire.", f:"objective", ko:"그 보고서는 화재를 객관적인 서술로 담았다." }] },
 
@@ -509,7 +509,7 @@ window.VOCAB_O = [
     syn:["run a business","work a machine","keep in action"],
     ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
 
-  { word:"operation", exams:["공무원"], pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
+  { word:"operation", exams:["공무원","수능"], pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
     syn:["surgery","running of a machine","working order"],
     ex:[{ s:"She needs an {{}} on her knee.", f:"operation", ko:"그녀는 무릎 수술이 필요하다." }] },
 
@@ -526,7 +526,7 @@ window.VOCAB_O = [
   /* 승격 42 — 사전은 '반대하다' 한 갈래였다. 원본은 '~에 반대하다' 였지만
      참조 셋(advocate·endorse 반의어, contradict 유의어) 을 보존하려고 사전값을
      첫 자리에 남기고 '맞서다' 를 붙였다. */
-  { word:"oppose", pron:"어포즈", pos:"v", level:"B2", meanings:["반대하다","맞서다"],
+  { word:"oppose", exams:["수능"], pron:"어포즈", pos:"v", level:"B2", meanings:["반대하다","맞서다"],
     syn:["contradict","speak against","stand up to"], ant:["endorse"],
     ex:[{ s:"Residents will {{}} the new landfill.", f:"oppose", ko:"주민들은 새 매립지에 반대할 것이다." }] },
 
@@ -667,7 +667,7 @@ window.VOCAB_O = [
 
   /* 승격 53 — 사전 표현 '유래하다, 시작되다' 를 글자까지 지켰다
      (come into existence, C). 원본의 '고안하다' 갈래는 버렸다. */
-  { word:"originate", pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
+  { word:"originate", exams:["수능"], pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
     syn:["come into existence","arise from","have its source in"],
     ex:[{ s:"The custom may {{}} in a harvest festival.", f:"originate", ko:"그 관습은 추수 축제에서 유래할지도 모른다." }] },
 
@@ -827,7 +827,7 @@ window.VOCAB_O = [
 
   /* 승격 66 — 사전 표현 '더 나은 성과를 내다' 를 글자까지 지켰다(excel, E).
      원본의 '능가하다' 를 쓰면 같은 챕터의 outstrip 과 부딪힌다. */
-  { word:"outperform", pron:"아웃퍼폼", pos:"v", level:"C1", meanings:["더 나은 성과를 내다"],
+  { word:"outperform", exams:["수능"], pron:"아웃퍼폼", pos:"v", level:"C1", meanings:["더 나은 성과를 내다"],
     syn:["excel","do better than","surpass in results"],
     ex:[{ s:"Small firms often {{}} large ones in service.", f:"outperform", ko:"작은 회사가 서비스에서 큰 회사보다 더 나은 성과를 내는 일이 많다." }] },
 

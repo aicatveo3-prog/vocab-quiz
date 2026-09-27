@@ -46,9 +46,9 @@ window.VOCAB_W = [
   { word:"wrestle", exams:["공무원"], pron:"레슬", pos:"v", level:"C1", meanings:["씨름하다","맞붙어 싸우다"], syn:["grapple","struggle","tussle"], ex:[{ s:"Artists will {{}} with the possibilities of the post-human.", f:"wrestle", ko:"예술가들은 포스트휴먼의 가능성과 씨름할 것이다." }] },
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
-  { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
+  { word:"workforce", exams:["공무원","수능"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
   { word:"waste", exams:["공무원","수능"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
-  { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
+  { word:"workplace", exams:["공무원","수능"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
   { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
   { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
@@ -305,7 +305,7 @@ window.VOCAB_W = [
     syn:["speaking of","as for","turning to the matter of"] },
 
   /* 교재의 부사 갈래('어디쯤에') 는 버렸다. */
-  { word:"whereabouts", pron:"웨어러바우츠", pos:"n", level:"C1", meanings:["행방","소재"],
+  { word:"whereabouts", exams:["수능"], pron:"웨어러바우츠", pos:"n", level:"C1", meanings:["행방","소재"],
     syn:["where a person is","place one is at","the spot one has gone to"],
     ex:[{ s:"His {{}} are still unknown.", f:"whereabouts", ko:"그의 행방은 아직 알려지지 않았다." }] },
 
@@ -548,7 +548,7 @@ window.VOCAB_W = [
     syn:["able to be done","fit to use","good enough to go on with"],
     ex:[{ s:"That is a {{}} answer.", f:"workable", ko:"그것은 해낼 수 있는 답이다." }] },
 
-  { word:"workload", pron:"워크로드", pos:"n", level:"B2", meanings:["업무량","작업량"],
+  { word:"workload", exams:["수능"], pron:"워크로드", pos:"n", level:"B2", meanings:["업무량","작업량"],
     syn:["amount of work to get through","load of tasks","how much there is to do"],
     ex:[{ s:"Her {{}} doubled that month.", f:"workload", ko:"그달 그녀의 업무량이 두 배가 됐다." }] },
 

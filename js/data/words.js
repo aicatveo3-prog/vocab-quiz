@@ -52,7 +52,7 @@ window.VOCAB = [
   { word:"achievement", exams:["공무원"], pron:"어치브먼트", pos:"n", level:"B2", meanings:["성취","업적"], syn:["accomplishment","feat","success"], ant:["failure"], ex:[{ s:"We celebrate the artistic {{}} of each participant.", f:"achievements", ko:"우리는 각 참가자의 예술적 성취를 축하한다." }] },
   { word:"advancement", exams:["공무원"], pron:"어드밴스먼트", pos:"n", level:"B2", meanings:["발전","승진"], syn:["progress","development","growth"], ex:[{ s:"Rapid {{}} in AI are reshaping work.", f:"advancements", ko:"AI의 급속한 발전이 일을 재편하고 있다." }] },
   { word:"availability", exams:["공무원"], pron:"어베일러빌리티", pos:"n", level:"B2", meanings:["이용 가능성","가용성"], syn:["accessibility","obtainability","readiness"], ex:[{ s:"There is increased {{}} of AI-skilled workers.", f:"availability", ko:"AI 숙련 인력의 가용성이 높아졌다." }] },
-  { word:"appealing", exams:["공무원"], pron:"어필링", pos:"adj", level:"B2", meanings:["매력적인","호소력 있는"], syn:["attractive","tempting","engaging"], ant:["unappealing"], ex:[{ s:"The idea is {{}} for several reasons.", f:"appealing", ko:"그 생각은 여러 이유로 매력적이다." }] },
+  { word:"appealing", exams:["공무원","수능"], pron:"어필링", pos:"adj", level:"B2", meanings:["매력적인","호소력 있는"], syn:["attractive","tempting","engaging"], ant:["unappealing"], ex:[{ s:"The idea is {{}} for several reasons.", f:"appealing", ko:"그 생각은 여러 이유로 매력적이다." }] },
   { word:"ambulance", exams:["공무원"], pron:"앰뷸런스", pos:"n", level:"B1", meanings:["구급차"], ex:[{ s:"The {{}} arrived within a few minutes.", f:"ambulance", ko:"구급차가 몇 분 안에 도착했다." }] },
   { word:"agency", exams:["공무원"], pron:"에이전시", pos:"n", level:"B1", meanings:["기관","대행사"], syn:["bureau","organization","office"], ex:[{ s:"Check with your local waste management {{}}.", f:"agency", ko:"지역 폐기물 관리 기관에 확인하세요." }] },
   { word:"authorization", exams:["공무원"], pron:"오써라이제이션", pos:"n", level:"C1", meanings:["허가","승인"], syn:["permission","approval","consent"], ant:["prohibition"], ex:[{ s:"Using the facilities requires proper {{}}.", f:"authorization", ko:"시설을 이용하려면 적절한 허가가 필요하다." }] },
@@ -102,7 +102,7 @@ window.VOCAB = [
   { word:"appreciation", exams:["수능"], pron:"어프리시에이션", pos:"n", level:"B2", meanings:["감사","감상"], syn:["gratitude","thankfulness","recognition"], ex:[{ s:"She wrote a letter to show her {{}} for their help.", f:"appreciation", ko:"그녀는 그들의 도움에 감사를 표하려고 편지를 썼다." }] },
   { word:"auditorium", exams:["수능"], pron:"오디토리엄", pos:"n", level:"B2", meanings:["강당","객석"], ex:[{ s:"The graduation ceremony was held in the school {{}}.", f:"auditorium", ko:"졸업식은 학교 강당에서 열렸다." }] },
   /* ── a ─────────────────────────────────────── */
-  { word:"a host of", pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
+  { word:"a host of", exams:["수능"], pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },
 
   { word:"abandon", exams:["공무원","수능"], pron:"어밴던", pos:"v", level:"B1", meanings:["버리다","포기하다"],
@@ -218,7 +218,7 @@ window.VOCAB = [
     syn:["consent","assent","agree"], ant:["refuse"],
     gov:{ prep:["to"], pat:"accede {{}} their demands", usage:"accede to ~ : ~에 응하다" } },
 
-  { word:"accelerate", exams:["공무원"], pron:"악셀러레이트", pos:"v", level:"B2", meanings:["가속화하다","빨라지다"],
+  { word:"accelerate", exams:["공무원","수능"], pron:"악셀러레이트", pos:"v", level:"B2", meanings:["가속화하다","빨라지다"],
     syn:["speed up","hasten","quicken"], ant:["decelerate"],
     ex:[{ s:"Warm water can {{}} the melting of the ice.", f:"accelerate", ko:"따뜻한 물은 얼음이 녹는 것을 가속화할 수 있다." }] },
 
@@ -239,7 +239,7 @@ window.VOCAB = [
     ex:[{ s:"Students have free {{}} to the online library.", f:"access", ko:"학생들은 온라인 도서관을 무료로 이용할 수 있다." }],
     gov:{ prep:["to","for"], pat:"access {{}} clean water", usage:"access to ~ : ~에 대한 접근" } },
 
-  { word:"accessible", exams:["공무원"], pron:"억세서블", pos:"adj", level:"B2", meanings:["접근할 수 있는","이용 가능한"],
+  { word:"accessible", exams:["공무원","수능"], pron:"억세서블", pos:"adj", level:"B2", meanings:["접근할 수 있는","이용 가능한"],
     syn:["reachable","available","obtainable"], ant:["inaccessible"],
     ex:[{ s:"The trail is easily {{}} by bus.", f:"accessible", ko:"그 산길은 버스로 쉽게 접근할 수 있다." }] },
 
@@ -379,7 +379,7 @@ window.VOCAB = [
     syn:["flexibility","versatility","resilience"], ant:["rigidity"],
     ex:[{ s:"Employers value {{}} more than experience alone.", f:"adaptability", ko:"고용주들은 경력만보다 적응력을 더 중시한다." }] },
 
-  { word:"adaptation", exams:["공무원"], pron:"애댑테이션", pos:"n", level:"B2", meanings:["각색","적응"],
+  { word:"adaptation", exams:["공무원","수능"], pron:"애댑테이션", pos:"n", level:"B2", meanings:["각색","적응"],
     syn:["adjustment","modification","version"],
     ex:[{ s:"The film is a loose {{}} of a classic novel.", f:"adaptation", ko:"그 영화는 고전 소설을 자유롭게 각색한 것이다." }] },
 
@@ -463,7 +463,7 @@ window.VOCAB = [
     syn:["commander","flag officer","naval chief"],
     ex:[{ s:"The {{}} ordered the fleet to withdraw.", f:"admiral", ko:"제독은 함대에 철수를 명령했다." }] },
 
-  { word:"admire", exams:["공무원"], pron:"애드마이어", pos:"v", level:"B1", meanings:["존경하다","감탄하다"],
+  { word:"admire", exams:["공무원","수능"], pron:"애드마이어", pos:"v", level:"B1", meanings:["존경하다","감탄하다"],
     syn:["respect","esteem","look up to"], ant:["despise"],
     ex:[{ s:"I {{}} her patience with difficult customers.", f:"admire", ko:"나는 까다로운 손님을 대하는 그녀의 인내심에 감탄한다." }] },
 
@@ -479,7 +479,7 @@ window.VOCAB = [
     syn:["youth","teens","puberty"], ant:["adulthood"],
     ex:[{ s:"Sleep patterns change greatly during {{}}.", f:"adolescence", ko:"수면 양상은 청소년기에 크게 변한다." }] },
 
-  { word:"adopt", exams:["공무원"], pron:"어답트", pos:"v", level:"B2", meanings:["채택하다","입양하다"],
+  { word:"adopt", exams:["공무원","수능"], pron:"어답트", pos:"v", level:"B2", meanings:["채택하다","입양하다"],
     syn:["embrace","take up","assume"], ant:["reject"],
     ex:[{ s:"The city plans to {{}} a stricter recycling rule.", f:"adopt", ko:"그 도시는 더 엄격한 재활용 규칙을 채택할 계획이다." }] },
 
@@ -538,7 +538,7 @@ window.VOCAB = [
     syn:["marketing","publicity","promotion"],
     ex:[{ s:"She built a career in digital {{}}.", f:"advertising", ko:"그녀는 디지털 광고 분야에서 경력을 쌓았다." }] },
 
-  { word:"advise", exams:["공무원"], pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
+  { word:"advise", exams:["공무원","수능"], pron:"어드바이즈", pos:"v", level:"B1", meanings:["조언하다","권고하다"],
     syn:["counsel","recommend","suggest"],
     ex:[{ s:"Doctors {{}} patients to walk every day.", f:"advise", ko:"의사들은 환자에게 매일 걷기를 권고한다." }] },
 
@@ -640,7 +640,7 @@ window.VOCAB = [
     syn:["hostility","belligerence","assault"], ant:["peace"],
     ex:[{ s:"The film links crowded housing to rising {{}}.", f:"aggression", ko:"그 영화는 밀집 주거를 공격성 증가와 연결한다." }] },
 
-  { word:"aggressive", exams:["공무원"], pron:"어그레시브", pos:"adj", level:"B2", meanings:["공격적인","적극적인"],
+  { word:"aggressive", exams:["공무원","수능"], pron:"어그레시브", pos:"adj", level:"B2", meanings:["공격적인","적극적인"],
     syn:["hostile","combative","forceful"], ant:["passive"],
     ex:[{ s:"The company took an {{}} approach to expansion.", f:"aggressive", ko:"그 회사는 확장에 공격적인 방식을 취했다." }] },
 
@@ -833,7 +833,7 @@ window.VOCAB = [
     syn:["envoy","diplomat","emissary"],
     ex:[{ s:"The {{}} met the president on Monday.", f:"ambassador", ko:"그 대사는 월요일에 대통령을 만났다." }] },
 
-  { word:"ambiguity", pron:"앰비규어티", pos:"n", level:"C1", meanings:["애매모호함","중의성"],
+  { word:"ambiguity", exams:["수능"], pron:"앰비규어티", pos:"n", level:"C1", meanings:["애매모호함","중의성"],
     syn:["vagueness","obscurity","uncertainty"], ant:["clarity"],
     ex:[{ s:"The {{}} of the clause led to a lawsuit.", f:"ambiguity", ko:"그 조항의 모호함이 소송으로 이어졌다." }] },
 
@@ -841,7 +841,7 @@ window.VOCAB = [
     syn:["unclear","equivocal","vague"], ant:["explicit"],
     ex:[{ s:"His answer was deliberately {{}}.", f:"ambiguous", ko:"그의 대답은 의도적으로 애매했다." }] },
 
-  { word:"ambitious", pron:"앰비셔스", pos:"adj", level:"B2", meanings:["야심적인","의욕적인"],
+  { word:"ambitious", exams:["수능"], pron:"앰비셔스", pos:"adj", level:"B2", meanings:["야심적인","의욕적인"],
     syn:["aspiring","driven","enterprising"], ant:["unmotivated"],
     ex:[{ s:"They set an {{}} target for next year.", f:"ambitious", ko:"그들은 내년에 대해 야심적인 목표를 세웠다." }] },
 
@@ -900,7 +900,7 @@ window.VOCAB = [
     syn:["examination","study","breakdown"], ant:["synthesis"],
     ex:[{ s:"A careful {{}} revealed two separate causes.", f:"analysis", ko:"신중한 분석이 두 개의 별개 원인을 드러냈다." }] },
 
-  { word:"analyze", exams:["공무원"], pron:"애널라이즈", pos:"v", level:"B1", meanings:["분석하다","해석하다"],
+  { word:"analyze", exams:["공무원","수능"], pron:"애널라이즈", pos:"v", level:"B1", meanings:["분석하다","해석하다"],
     syn:["examine","study","dissect"],
     ex:[{ s:"Researchers will {{}} the samples next week.", f:"analyze", ko:"연구자들은 다음 주에 시료를 분석할 것이다." }] },
 
@@ -912,7 +912,7 @@ window.VOCAB = [
     syn:["structure","physiology","framework"],
     ex:[{ s:"Art students study human {{}} in detail.", f:"anatomy", ko:"미술 전공 학생들은 인체 구조를 상세히 공부한다." }] },
 
-  { word:"ancestor", pron:"앤세스터", pos:"n", level:"B2", meanings:["조상","선조"],
+  { word:"ancestor", exams:["수능"], pron:"앤세스터", pos:"n", level:"B2", meanings:["조상","선조"],
     syn:["forefather","forebear","predecessor"], ant:["descendant"],
     ex:[{ s:"His {{}} arrived on the island in 1820.", f:"ancestor", ko:"그의 조상은 1820년에 그 섬에 도착했다." }] },
 
@@ -921,7 +921,7 @@ window.VOCAB = [
     ex:[{ s:"They dropped the {{}} in the shallow bay.", f:"anchor", ko:"그들은 얕은 만에 닻을 내렸다." }] },
 
   /* 원본의 "현대의"는 반대되는 뜻이라 삭제했습니다 */
-  { word:"ancient", exams:["공무원"], pron:"에인션트", pos:"adj", level:"B1", meanings:["고대의","옛날의"],
+  { word:"ancient", exams:["공무원","수능"], pron:"에인션트", pos:"adj", level:"B1", meanings:["고대의","옛날의"],
     syn:["antique","archaic","age-old"], ant:["modern"],
     ex:[{ s:"The valley hides an {{}} burial ground.", f:"ancient", ko:"그 계곡은 고대의 매장지를 숨기고 있다." }] },
 
@@ -1085,7 +1085,7 @@ window.VOCAB = [
     syn:["hunger","craving","desire"], ant:["aversion"],
     ex:[{ s:"The long walk gave us a huge {{}}.", f:"appetite", ko:"긴 산책은 우리에게 엄청난 식욕을 주었다." }] },
 
-  { word:"appliance", exams:["공무원"], pron:"어플라이언스", pos:"n", level:"B2", meanings:["가정용 기구","전자제품"],
+  { word:"appliance", exams:["공무원","수능"], pron:"어플라이언스", pos:"n", level:"B2", meanings:["가정용 기구","전자제품"],
     syn:["device","gadget","machine"],
     ex:[{ s:"Every kitchen {{}} here saves energy.", f:"appliance", ko:"이곳의 모든 주방 기구는 에너지를 절약한다." }] },
 
@@ -1284,7 +1284,7 @@ window.VOCAB = [
   { word:"as a whole", pron:"애즈 어 홀", pos:"phr", level:"B2", meanings:["전체적으로","대체로"],
     syn:["overall","in general","on the whole"] },
 
-  { word:"as opposed to", pron:"애즈 어포즈드 투", pos:"phr", level:"B2", meanings:["~와는 대조적으로","~이 아니라"],
+  { word:"as opposed to", exams:["수능"], pron:"애즈 어포즈드 투", pos:"phr", level:"B2", meanings:["~와는 대조적으로","~이 아니라"],
     syn:["rather than","in contrast to","instead of"] },
 
   { word:"ascend", pron:"어센드", pos:"v", level:"C1", meanings:["오르다","상승하다"],
@@ -1303,7 +1303,7 @@ window.VOCAB = [
     syn:["facet","feature","angle"],
     ex:[{ s:"Cost is only one {{}} of the decision.", f:"aspect", ko:"비용은 그 결정의 한 측면일 뿐이다." }] },
 
-  { word:"aspire", pron:"어스파이어", pos:"v", level:"C1", meanings:["열망하다","포부를 갖다"],
+  { word:"aspire", exams:["수능"], pron:"어스파이어", pos:"v", level:"C1", meanings:["열망하다","포부를 갖다"],
     syn:["yearn","strive","seek"],
     gov:{ prep:["to"], pat:"aspire {{}} a leadership role", usage:"aspire to ~ : ~을 열망하다" } },
 
@@ -1368,7 +1368,7 @@ window.VOCAB = [
     syn:["integration","absorption","incorporation"], ant:["segregation"],
     ex:[{ s:"The film studies the {{}} of immigrants.", f:"assimilation", ko:"그 영화는 이민자들의 동화를 다룬다." }] },
 
-  { word:"assist", exams:["공무원"], pron:"어시스트", pos:"v", level:"B1", meanings:["돕다","보조하다"],
+  { word:"assist", exams:["공무원","수능"], pron:"어시스트", pos:"v", level:"B1", meanings:["돕다","보조하다"],
     syn:["help","aid","support"], ant:["hinder"],
     ex:[{ s:"Volunteers {{}} the staff during festivals.", f:"assist", ko:"자원봉사자들은 축제 동안 직원을 돕는다." }] },
 
@@ -1612,7 +1612,7 @@ window.VOCAB = [
     syn:["writer","novelist","creator"],
     ex:[{ s:"The {{}} signed copies after the talk.", f:"author", ko:"저자는 강연 후 책에 사인을 해 주었다." }] },
 
-  { word:"authoritative", pron:"어소리테이티브", pos:"adj", level:"C1", meanings:["권위 있는","권위적인"],
+  { word:"authoritative", exams:["수능"], pron:"어소리테이티브", pos:"adj", level:"C1", meanings:["권위 있는","권위적인"],
     syn:["definitive","official","commanding"], ant:["unreliable"],
     ex:[{ s:"Her book is the most {{}} on the subject.", f:"authoritative", ko:"그녀의 책은 그 주제에 관해 가장 권위 있다." }] },
 

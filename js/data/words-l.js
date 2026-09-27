@@ -31,7 +31,7 @@ window.VOCAB_L = [
   { word:"legitimately", exams:["공무원"], pron:"리지티밋리", pos:"adv", level:"C1", meanings:["정당하게","합법적으로"], syn:["legally","rightfully","validly"], ant:["illegitimately"], ex:[{ s:"If you're {{}} concerned about the offer, say so.", f:"legitimately", ko:"제안이 정당하게 우려된다면 그렇게 말하라." }] },
   { word:"literati", exams:["공무원"], pron:"리터라티", pos:"n", level:"C2", meanings:["지식인들","문인들"], syn:["intellectuals","scholars","intelligentsia"], ex:[{ s:"Coffeehouses served merchants, traders, and {{}}.", f:"literati", ko:"커피하우스는 상인, 무역상, 문인들을 상대했다." }] },
   { word:"lobbyist", exams:["공무원"], pron:"로비스트", pos:"n", level:"C1", meanings:["로비스트"], syn:["advocate","campaigner","pressure agent"], ex:[{ s:"Businesses hire a {{}} to take concerns to Congress.", f:"lobbyist", ko:"기업들은 의회에 사안을 전하려고 로비스트를 고용한다." }] },
-  { word:"localized", exams:["공무원"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
+  { word:"localized", exams:["공무원","수능"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
   { word:"longhouse", exams:["공무원"], pron:"롱하우스", pos:"n", level:"C2", meanings:["롱하우스","전통 공동 주거"], ex:[{ s:"The mudslide covered several {{}}.", f:"longhouses", ko:"산사태가 여러 채의 롱하우스를 덮었다." }] },
   { word:"ludicrous", exams:["공무원"], pron:"루디크러스", pos:"adj", level:"C2", meanings:["터무니없는","우스꽝스러운"], syn:["absurd","ridiculous","preposterous"], ant:["sensible"], ex:[{ s:"The claim sounds {{}} to most people.", f:"ludicrous", ko:"그 주장은 대부분의 사람에게 터무니없게 들린다." }] },
   { word:"landscape", exams:["공무원","수능"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
@@ -43,7 +43,7 @@ window.VOCAB_L = [
   { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
   { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
   { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
-  { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
+  { word:"latter", exams:["공무원","수능"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
   { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
@@ -264,7 +264,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '임대하다; 임대' 를 글자까지 지켰다. charter(syn) 가
      동사 갈래를 참조하므로 pos 를 v 로 유지했다.
      원본 '임대 계약' 은 같은 개념의 명사 읽기라 둘째 갈래 '임대' 가 덮는다. */
-  { word:"lease", pron:"리스", pos:"v", level:"B2", meanings:["임대하다","임대"],
+  { word:"lease", exams:["수능"], pron:"리스", pos:"v", level:"B2", meanings:["임대하다","임대"],
     syn:["charter","rent out","let"],
     ex:[{ s:"They decided to {{}} the building for ten years.", f:"lease", ko:"그들은 그 건물을 10년간 임대하기로 결정했다." }] },
 

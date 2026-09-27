@@ -487,7 +487,7 @@ window.VOCAB_F = [
   { word:"fix", exams:["공무원"], pron:"픽스", pos:"n", level:"B2", meanings:["해결책","수리"], syn:["solution","remedy","cure"], ex:[{ s:"Taking short breaks is one simple {{}} for burnout.", f:"fix", ko:"짧게 쉬는 것은 번아웃에 대한 간단한 해결책 중 하나다." }] },
   { word:"fall on", exams:["공무원"], pron:"폴 온", pos:"phr", level:"B2", meanings:["~에게 떨어지다","~에 해당하다"] },
   { word:"frivolous", exams:["공무원"], pron:"프리벌러스", pos:"adj", level:"C1", meanings:["경박한","하찮은"], syn:["trivial","silly","petty"], ant:["serious"], ex:[{ s:"Their talk was far from {{}}; they discussed serious issues.", f:"frivolous", ko:"그들의 대화는 결코 하찮지 않았다. 그들은 심각한 문제를 논의했다." }] },
-  { word:"freelancer", exams:["공무원"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
+  { word:"freelancer", exams:["공무원","수능"], pron:"프리랜서", pos:"n", level:"B2", meanings:["프리랜서","자유 계약자"], ex:[{ s:"The magazine hired a young {{}} to write the article.", f:"freelancer", ko:"잡지사는 그 기사를 쓰려고 젊은 프리랜서를 고용했다." }] },
   { word:"free up", exams:["공무원","수능"], pron:"프리 업", pos:"phr", level:"B2", meanings:["여유를 만들다","비우다"] },
   { word:"fashionable", exams:["공무원"], pron:"패셔너블", pos:"adj", level:"B1", meanings:["유행하는","최신 유행의"], syn:["stylish","trendy","in vogue"], ant:["old-fashioned"], ex:[{ s:"It became {{}} to own a pocket watch.", f:"fashionable", ko:"회중시계를 갖는 것이 유행하게 되었다." }] },
   { word:"financially", exams:["공무원"], pron:"파이낸셜리", pos:"adv", level:"B2", meanings:["재정적으로","경제적으로"] },
@@ -636,7 +636,7 @@ window.VOCAB_F = [
     syn:["captivate","intrigue","enthrall"], ant:["bore"],
     ex:[{ s:"Deep-sea creatures {{}} children more than dinosaurs do.", f:"fascinate", ko:"심해 생물은 공룡보다 더 아이들을 매혹한다." }] },
 
-  { word:"fascinating", pron:"패서네이팅", pos:"adj", level:"B2", meanings:["매력적인","대단히 흥미로운"],
+  { word:"fascinating", exams:["수능"], pron:"패서네이팅", pos:"adj", level:"B2", meanings:["매력적인","대단히 흥미로운"],
     syn:["captivating","gripping","absorbing"], ant:["dull"],
     ex:[{ s:"She gave a {{}} talk on the earliest maps of the coast.", f:"fascinating", ko:"그녀는 그 해안의 최초 지도들에 관해 대단히 흥미로운 강연을 했다." }] },
 
@@ -676,7 +676,7 @@ window.VOCAB_F = [
     ex:[{ s:"The report blamed the delay on a design {{}}.", f:"fault", ko:"보고서는 그 지연을 설계 결점 탓으로 돌렸다." }] },
 
   /* 원본은 '호의; 지지, 선호하다' 로 명사와 동사가 섞여 있다. 명사로 정했다. */
-  { word:"favor", pron:"페이버", pos:"n", level:"B2", meanings:["호의","은혜"],
+  { word:"favor", exams:["수능"], pron:"페이버", pos:"n", level:"B2", meanings:["호의","은혜"],
     syn:["kindness","goodwill","good turn"],
     ex:[{ s:"She asked one small {{}} before she left.", f:"favor", ko:"그녀는 떠나기 전에 작은 호의 하나를 부탁했다." }] },
 
@@ -730,7 +730,7 @@ window.VOCAB_F = [
 
   /* 뜻 순서를 원본('요금; 수수료')과 바꿨다. 2차의 fare 가 이미
      ["요금","음식"] 이라 첫 뜻이 겹치면 짝 맞추기 카드에 같은 글자가 뜬다. */
-  { word:"fee", pron:"피", pos:"n", level:"B1", meanings:["수수료","요금"],
+  { word:"fee", exams:["수능"], pron:"피", pos:"n", level:"B1", meanings:["수수료","요금"],
     syn:["payment","service charge","dues"],
     ex:[{ s:"The museum dropped its entrance {{}} for students.", f:"fee", ko:"그 박물관은 학생 입장료를 없앴다." }] },
 
@@ -1406,7 +1406,7 @@ window.VOCAB_F = [
   /* 원본 목록에는 '좌절시키는' 으로 적혀 있었다. 능동과 수동이 뒤집힌 것이라
      (그것은 frustrating 의 뜻이다) 0차에서 '좌절한, 낙담한' 으로 바로잡았다.
      같은 챕터의 frustrate(동사)와는 품사로 갈라진다. */
-  { word:"frustrated", exams:["공무원"], pron:"프러스트레이티드", pos:"adj", level:"B2", meanings:["좌절한","낙담한"],
+  { word:"frustrated", exams:["공무원","수능"], pron:"프러스트레이티드", pos:"adj", level:"B2", meanings:["좌절한","낙담한"],
     syn:["discouraged","disheartened","dispirited"],
     ex:[{ s:"Players looked {{}} after the third missed chance.", f:"frustrated", ko:"선수들은 세 번째 기회를 놓친 뒤 좌절한 표정이었다." }] },
 
@@ -1501,7 +1501,7 @@ window.VOCAB_F = [
     syn:["extra","supplementary","more"],
     ex:[{ s:"The council asked for {{}} details before deciding.", f:"further", ko:"의회는 결정 전에 추가 세부 사항을 요청했다." }] },
 
-  { word:"fusion", pron:"퓨전", pos:"n", level:"C1", meanings:["융합","용해"],
+  { word:"fusion", exams:["수능"], pron:"퓨전", pos:"n", level:"C1", meanings:["융합","용해"],
     syn:["merging","blending","coming together"],
     ex:[{ s:"The dish is a {{}} of two regional styles.", f:"fusion", ko:"그 요리는 두 지역 양식의 융합이다." }] },
 

@@ -48,7 +48,7 @@ window.VOCAB_T = [
   { word:"treat", exams:["공무원","수능"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
   { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
   { word:"task", exams:["공무원","수능"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
-  { word:"telling", exams:["공무원"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
+  { word:"telling", exams:["공무원","수능"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
   { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
   { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
   { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
@@ -92,7 +92,7 @@ window.VOCAB_T = [
 
   /* 교재가 앞세운 '꾀' 는 드문 쪽이라 순서를 바꿨다. strategy(전략 · S) 와는
      '전술' 로 갈린다. */
-  { word:"tactic", pron:"택틱", pos:"n", level:"B2", meanings:["전술","꾀"],
+  { word:"tactic", exams:["수능"], pron:"택틱", pos:"n", level:"B2", meanings:["전술","꾀"],
     syn:["scheme","plan of attack","move to win"],
     ex:[{ s:"They changed their {{}} at halftime.", f:"tactic", ko:"그들은 전반이 끝나고 전술을 바꿨다." }] },
 
@@ -465,7 +465,7 @@ window.VOCAB_T = [
   { word:"the other way around", pron:"디 아더 웨이 어라운드", pos:"phr", level:"B2", meanings:["거꾸로","반대로"],
     syn:["conversely","in reverse","the opposite way"] },
 
-  { word:"theatrical", pron:"시애트리컬", pos:"adj", level:"C1", meanings:["연극의","극장의"],
+  { word:"theatrical", exams:["수능"], pron:"시애트리컬", pos:"adj", level:"C1", meanings:["연극의","극장의"],
     syn:["of the stage","to do with plays","done for show"],
     ex:[{ s:"She has a {{}} background.", f:"theatrical", ko:"그녀는 연극 쪽 배경을 지녔다." }] },
 

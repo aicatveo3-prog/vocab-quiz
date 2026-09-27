@@ -64,7 +64,7 @@ window.VOCAB_I = [
   { word:"inquire", exams:["공무원"], pron:"인콰이어", pos:"v", level:"B2", meanings:["문의하다","묻다"], syn:["ask","query","investigate"], ex:[{ s:"I am writing to {{}} about the status of my application.", f:"inquire", ko:"제 지원 현황에 대해 문의드리고자 연락드립니다." }], gov:{ prep:["about","into"], usage:"inquire about ~ : ~에 대해 문의하다 · inquire into ~ : ~을 조사하다" } },
   { word:"intellect", exams:["공무원"], pron:"인털렉트", pos:"n", level:"C1", meanings:["지성","지력"], syn:["intelligence","reason","mind"], ex:[{ s:"Humans use their {{}} to outwit each other.", f:"intellect", ko:"인간은 서로를 앞지르는 데 지성을 쓴다." }] },
   { word:"impressed", exams:["공무원"], pron:"임프레스트", pos:"adj", level:"B1", meanings:["감명받은","깊은 인상을 받은"], ex:[{ s:"The king was {{}} with the soldiers' colorful scarves.", f:"impressed", ko:"왕은 병사들의 화려한 스카프에 감명받았다." }], gov:{ prep:["with","by"], usage:"be impressed with/by ~ : ~에 감명받다" } },
-  { word:"in charge of", exams:["공무원"], pron:"인 차지 오브", pos:"phr", level:"B1", meanings:["~을 맡은","~을 책임지는"] },
+  { word:"in charge of", exams:["공무원","수능"], pron:"인 차지 오브", pos:"phr", level:"B1", meanings:["~을 맡은","~을 책임지는"] },
   { word:"in spite of", exams:["공무원"], pron:"인 스파이트 오브", pos:"phr", level:"B1", meanings:["~에도 불구하고"], syn:["despite","notwithstanding","regardless of"] },
   { word:"indiscernibly", exams:["공무원"], pron:"인디서너블리", pos:"adv", level:"C2", meanings:["분간할 수 없게","알아차릴 수 없을 만큼"], ant:["markedly"] },
   { word:"incoming", exams:["공무원"], pron:"인커밍", pos:"adj", level:"B2", meanings:["들어오는","새로 취임하는"], ex:[{ s:"Check your {{}} messages only twice a day.", f:"incoming", ko:"들어오는 메시지는 하루에 두 번만 확인하라." }] },
@@ -411,7 +411,7 @@ window.VOCAB_I = [
   /* 승격 ② — GLOSS '실행하다; 도구' 다. act on(syn)·apply(syn) 는 둘 다 동사로
      '실행하다' 갈래를 쓴다. 사전에 있던 명사 '도구' 는 pos 가 v 인 이 표제어에
      담을 수 없고 참조하는 문제도 없어 뺐다. */
-  { word:"implement", pron:"임플러먼트", pos:"v", level:"B2", meanings:["실행하다","수행하다"],
+  { word:"implement", exams:["수능"], pron:"임플러먼트", pos:"v", level:"B2", meanings:["실행하다","수행하다"],
     syn:["execute","carry out","enforce"],
     ex:[{ s:"The city plans to {{}} the new recycling scheme in June.", f:"implement", ko:"그 시는 6월에 새 재활용 제도를 실행할 계획이다." }] },
 
@@ -503,7 +503,7 @@ window.VOCAB_I = [
     syn:["brazen","shameless","cheeky"], ant:["modest"],
     ex:[{ s:"His {{}} reply left the committee speechless.", f:"impudent", ko:"그의 뻔뻔스러운 대답에 위원회는 할 말을 잃었다." }] },
 
-  { word:"impulse", exams:["공무원"], pron:"임펄스", pos:"n", level:"B2", meanings:["충동","자극"],
+  { word:"impulse", exams:["공무원","수능"], pron:"임펄스", pos:"n", level:"B2", meanings:["충동","자극"],
     syn:["urge","whim","compulsion"],
     ex:[{ s:"She resisted the {{}} to check her phone again.", f:"impulse", ko:"그녀는 휴대전화를 다시 확인하려는 충동을 참았다." }] },
 
@@ -576,7 +576,7 @@ window.VOCAB_I = [
   { word:"in relation to", pron:"인 릴레이션 투", pos:"phr", level:"B2", meanings:["~와 관련하여"],
     syn:["with regard to","concerning","as regards"] },
 
-  { word:"in response to", pron:"인 리스판스 투", pos:"phr", level:"B1", meanings:["~에 대응하여"],
+  { word:"in response to", exams:["수능"], pron:"인 리스판스 투", pos:"phr", level:"B1", meanings:["~에 대응하여"],
     syn:["in reply to","in reaction to","answering"] },
 
   { word:"in return for", pron:"인 리턴 포", pos:"phr", level:"B2", meanings:["~의 대가로"],
@@ -763,7 +763,7 @@ window.VOCAB_I = [
     ex:[{ s:"The team made an {{}} comeback in the final minutes.", f:"incredible", ko:"그 팀은 마지막 몇 분에 믿기 어려운 역전을 이뤘다." }] },
 
   /* incredible 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
-  { word:"incredibly", exams:["공무원"], pron:"인크레더블리", pos:"adv", level:"B2", meanings:["믿기 힘들게도","놀랍게도"],
+  { word:"incredibly", exams:["공무원","수능"], pron:"인크레더블리", pos:"adv", level:"B2", meanings:["믿기 힘들게도","놀랍게도"],
     syn:["unbelievably","astonishingly","remarkably"],
     ex:[{ s:"The old bridge survived {{}} intact after the quake.", f:"incredibly", ko:"그 낡은 다리는 지진 후 놀랍게도 온전히 남았다." }] },
 
@@ -958,7 +958,7 @@ window.VOCAB_I = [
   /* 승격 ① — GLOSS '감염, 전염' 을 글자까지 지켰다. contamination(syn) 이 참조한다.
      원본 첫 뜻은 '전염병' 이었으나 참조하는 쪽이 '오염·감염' 결이라 사전을 따랐다.
      infect 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"infection", pron:"인펙션", pos:"n", level:"B2", meanings:["감염","전염"],
+  { word:"infection", exams:["수능"], pron:"인펙션", pos:"n", level:"B2", meanings:["감염","전염"],
     syn:["contamination","contagion","sepsis"],
     ex:[{ s:"The wound became inflamed and showed signs of {{}}.", f:"infection", ko:"그 상처는 염증이 생기고 감염 징후를 보였다." }] },
 
@@ -1387,7 +1387,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '지적인' 을 첫 자리에 지켰다. cognitive(syn) 가 참조한다.
      원본의 '지능의' 를 둘째 자리에 붙였다. */
-  { word:"intellectual", pron:"인털렉추얼", pos:"adj", level:"B2", meanings:["지적인","지능의"],
+  { word:"intellectual", exams:["수능"], pron:"인털렉추얼", pos:"adj", level:"B2", meanings:["지적인","지능의"],
     syn:["cognitive","cerebral","scholarly"],
     ex:[{ s:"The debate was a purely {{}} exercise.", f:"intellectual", ko:"그 토론은 순전히 지적인 훈련이었다." }] },
 
@@ -1416,7 +1416,7 @@ window.VOCAB_I = [
 
   /* intense 와 어근·품사가 다 같아 같은 보드에 올 수 있다. 다만 뜻이 '강렬한' 과
      '집중적인' 으로 갈려 짝을 고르는 데 무리가 없다. */
-  { word:"intensive", pron:"인텐시브", pos:"adj", level:"B2", meanings:["집중적인","철두철미한"],
+  { word:"intensive", exams:["수능"], pron:"인텐시브", pos:"adj", level:"B2", meanings:["집중적인","철두철미한"],
     syn:["concentrated","thorough","exhaustive"],
     ex:[{ s:"She took an {{}} summer course in Spanish.", f:"intensive", ko:"그녀는 집중적인 여름 스페인어 과정을 수강했다." }] },
 
@@ -1545,7 +1545,7 @@ window.VOCAB_I = [
 
   /* 승격 ① — GLOSS '방해하다, 중단시키다' 가 원본과 글자까지 같다.
      disrupt(syn)·disturb(syn) 두 문제가 참조한다. 손댈 것이 없었다. */
-  { word:"interrupt", exams:["공무원"], pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
+  { word:"interrupt", exams:["공무원","수능"], pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
     syn:["disrupt","disturb","cut in on"],
     ex:[{ s:"Please do not {{}} while I am speaking.", f:"interrupt", ko:"제가 말하는 동안 방해하지 마세요." }] },
 
@@ -1654,7 +1654,7 @@ window.VOCAB_I = [
   /* ── 챕터 15 ────────────────────────────── */
 
   /* 15차의 instinct 는 '본능, 천성' 으로 돌려 두었다 — 이쪽이 '직감' 을 쓴다. */
-  { word:"intuition", exams:["공무원"], pron:"인투이션", pos:"n", level:"B2", meanings:["직감","직관력"],
+  { word:"intuition", exams:["공무원","수능"], pron:"인투이션", pos:"n", level:"B2", meanings:["직감","직관력"],
     syn:["gut feeling","hunch","sixth sense"],
     ex:[{ s:"She trusted her {{}} and declined the offer.", f:"intuition", ko:"그녀는 직감을 믿고 그 제안을 거절했다." }] },
 
@@ -1760,7 +1760,7 @@ window.VOCAB_I = [
     syn:["implacable","unappeasable","at odds"],
     ex:[{ s:"Their differences soon proved {{}}.", f:"irreconcilable", ko:"그들의 차이는 곧 화해할 수 없는 것으로 드러났다." }] },
 
-  { word:"irrelevant", exams:["공무원"], pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
+  { word:"irrelevant", exams:["공무원","수능"], pron:"이렐러번트", pos:"adj", level:"B2", meanings:["상관없는","무관한"],
     syn:["beside the point","immaterial","unrelated"], ant:["relevant"],
     ex:[{ s:"That detail is {{}} to the main argument.", f:"irrelevant", ko:"그 세부 사항은 주요 논지와 상관없다." }] },
 

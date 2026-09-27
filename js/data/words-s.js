@@ -111,7 +111,7 @@ window.VOCAB_S = [
   { word:"sponsor", exams:["공무원","수능"], pron:"스판서", pos:"v", level:"B2", meanings:["후원하다","후원자"], syn:["fund","finance","support"], ex:[{ s:"A local bank will {{}} the city marathon this year.", f:"sponsor", ko:"올해는 지역 은행이 시 마라톤을 후원할 것이다." }] },
   { word:"systematic", exams:["공무원"], pron:"시스터매틱", pos:"adj", level:"B2", meanings:["체계적인","조직적인"], syn:["methodical","orderly","organized"], ant:["haphazard"], ex:[{ s:"Aristotle's works offered {{}} explanations of the natural world.", f:"systematic", ko:"아리스토텔레스의 저작은 자연 세계에 대한 체계적인 설명을 제공했다." }] },
   { word:"self-confidence", exams:["공무원"], pron:"셀프 칸피던스", pos:"n", level:"B2", meanings:["자신감"], syn:["self-assurance","confidence","self-esteem"], ex:[{ s:"Finishing a hard task can boost your {{}}.", f:"self-confidence", ko:"어려운 일을 해내면 자신감이 높아질 수 있다." }] },
-  { word:"scenario", exams:["공무원"], pron:"시나리오", pos:"n", level:"B2", meanings:["상황","시나리오"], ex:[{ s:"Always prepare for the worst-case {{}}.", f:"scenario", ko:"항상 최악의 상황에 대비하라." }] },
+  { word:"scenario", exams:["공무원","수능"], pron:"시나리오", pos:"n", level:"B2", meanings:["상황","시나리오"], ex:[{ s:"Always prepare for the worst-case {{}}.", f:"scenario", ko:"항상 최악의 상황에 대비하라." }] },
   { word:"salaried", exams:["공무원"], pron:"샐러리드", pos:"adj", level:"C1", meanings:["봉급을 받는","월급제의"], ex:[{ s:"The new tax fell heavily on {{}} workers.", f:"salaried", ko:"새 세금은 봉급 생활자에게 무겁게 부과되었다." }] },
   { word:"smoothly", exams:["공무원","수능"], pron:"스무들리", pos:"adv", level:"B2", meanings:["순조롭게","매끄럽게"] },
   { word:"sarcasm", exams:["공무원"], pron:"사캐즘", pos:"n", level:"C1", meanings:["빈정거림","비꼬는 말"], syn:["irony","mockery","cynicism","satire"], ex:[{ s:"Her reply was full of {{}}, not real praise.", f:"sarcasm", ko:"그녀의 대답은 진짜 칭찬이 아니라 빈정거림으로 가득했다." }] },
@@ -677,7 +677,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊴ — 사전 단일값 유지. 참조 numb(N) 의 화면은 바뀌지 않는다.
      원본의 '민감한' 은 같은 말이라 사전 표현을 남겼다. */
-  { word:"sensitive", exams:["공무원"], pron:"센서티브", pos:"adj", level:"B1", meanings:["느낌이 예민한"],
+  { word:"sensitive", exams:["공무원","수능"], pron:"센서티브", pos:"adj", level:"B1", meanings:["느낌이 예민한"],
     syn:["quick to feel","easily affected","responsive to touch"], ant:["numb"],
     ex:[{ s:"His skin is very {{}} to the sun.", f:"sensitive", ko:"그의 피부는 햇볕에 아주 예민하다." }] },
 
@@ -711,7 +711,7 @@ window.VOCAB_S = [
   /* 승격 ㊷ — 사전 글자 유지. 참조 combination(C)·division(D) 두 곳의 화면은
      바뀌지 않는다. 챕터 4 의 segregation(분리, 격리) 과 첫 갈래가 같아 자동
      배제된다. */
-  { word:"separation", pron:"세퍼레이션", pos:"n", level:"B2", meanings:["분리","분할"],
+  { word:"separation", exams:["수능"], pron:"세퍼레이션", pos:"n", level:"B2", meanings:["분리","분할"],
     syn:["division","act of parting","split into parts"], ant:["combination"],
     ex:[{ s:"The {{}} of the two wings took a week.", f:"separation", ko:"두 날개의 분리에 일주일이 걸렸다." }] },
 
@@ -795,7 +795,7 @@ window.VOCAB_S = [
 
   /* 승격 ㊿ — 사전의 쌍반점만 쉼표로 갈랐다. 참조 colony(C)·compromise(C)·
      immigration(I) 세 곳의 설명이 '정착지; 합의' 에서 '정착지, 합의' 가 된다. */
-  { word:"settlement", exams:["공무원"], pron:"세틀먼트", pos:"n", level:"B2", meanings:["정착지","합의"],
+  { word:"settlement", exams:["공무원","수능"], pron:"세틀먼트", pos:"n", level:"B2", meanings:["정착지","합의"],
     syn:["colony","compromise","place newly lived in"],
     ex:[{ s:"A small {{}} grew by the port.", f:"settlement", ko:"항구 옆에 작은 정착지가 자랐다." }] },
 
@@ -1033,7 +1033,7 @@ window.VOCAB_S = [
 
   /* 승격 70 — 사전 글자 유지. 참조 considerable(C)·meaningless(M) 두 곳의
      화면은 바뀌지 않는다. 챕터 1 의 salient 가 '중요한' 을 이 낱말에 넘겼다. */
-  { word:"significant", exams:["공무원"], pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
+  { word:"significant", exams:["공무원","수능"], pron:"시그니피컨트", pos:"adj", level:"B1", meanings:["중요한","상당한"],
     syn:["considerable","weighty in effect","far from small"], ant:["meaningless"],
     ex:[{ s:"The study found a {{}} change.", f:"significant", ko:"그 연구는 중요한 변화를 찾아냈다." }] },
 
@@ -1049,7 +1049,7 @@ window.VOCAB_S = [
     ex:[{ s:"There is a clear {{}} between them.", f:"similarity", ko:"그들 사이에는 뚜렷한 닮은 점이 있다." }] },
 
   /* 원본은 '단순함; 소박함; 평이함' 세 갈래였다. 둘로 줄였다. */
-  { word:"simplicity", pron:"심플리시티", pos:"n", level:"B2", meanings:["단순함","소박함"],
+  { word:"simplicity", exams:["수능"], pron:"심플리시티", pos:"n", level:"B2", meanings:["단순함","소박함"],
     syn:["plainness","freedom from fuss","lack of frills"],
     ex:[{ s:"The design wins for its {{}}.", f:"simplicity", ko:"그 설계는 단순함으로 좋은 평을 받는다." }] },
 
@@ -1189,7 +1189,7 @@ window.VOCAB_S = [
     syn:["slip into","glide into","ease into without notice"] },
 
   /* 승격 86 — 사전 글자 유지. 참조 by far(B) 의 화면은 바뀌지 않는다. */
-  { word:"slightly", pron:"슬라이틀리", pos:"adv", level:"B1", meanings:["약간","조금"],
+  { word:"slightly", exams:["수능"], pron:"슬라이틀리", pos:"adv", level:"B1", meanings:["약간","조금"],
     syn:["a little","to a small degree","just a bit"], ant:["by far"],
     ex:[{ s:"The room was {{}} warmer today.", f:"slightly", ko:"그 방은 오늘 약간 더 따뜻했다." }] },
 
@@ -1341,7 +1341,7 @@ window.VOCAB_S = [
     syn:["of society and culture","to do with people and custom","social and cultural at once"],
     ex:[{ s:"The study takes a {{}} view.", f:"sociocultural", ko:"그 연구는 사회문화적인 관점을 취한다." }] },
 
-  { word:"sociology", pron:"소시알러지", pos:"n", level:"B2", meanings:["사회학"],
+  { word:"sociology", exams:["수능"], pron:"소시알러지", pos:"n", level:"B2", meanings:["사회학"],
     syn:["study of society","science of social life","study of human groups"],
     ex:[{ s:"She teaches {{}} at the college.", f:"sociology", ko:"그녀는 그 대학에서 사회학을 가르친다." }] },
 
@@ -1854,7 +1854,7 @@ window.VOCAB_S = [
 
   /* 승격 144 — 사전 글자 유지. 참조 catch a glimpse of(C)·gaze(G) 두 곳의
      화면은 바뀌지 않는다. */
-  { word:"stare", pron:"스테어", pos:"v", level:"B1", meanings:["응시하다","빤히 보다"],
+  { word:"stare", exams:["수능"], pron:"스테어", pos:"v", level:"B1", meanings:["응시하다","빤히 보다"],
     syn:["gaze","look fixedly","fix one's eyes on"],
     ex:[{ s:"It is rude to {{}} at people.", f:"stare", ko:"사람을 빤히 보는 것은 무례하다." }] },
 
@@ -2135,7 +2135,7 @@ window.VOCAB_S = [
     ex:[{ s:"One {{}} of hair lay on the desk.", f:"strand", ko:"머리카락 한 가닥이 책상에 놓여 있었다." }] },
 
   /* 승격 171 — 사전 단일값 유지. 참조는 없다. */
-  { word:"strategy", exams:["공무원"], pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
+  { word:"strategy", exams:["공무원","수능"], pron:"스트래터지", pos:"n", level:"B1", meanings:["전략"],
     syn:["plan of action","long-term plan","way worked out in advance"],
     ex:[{ s:"They changed their {{}} at halftime.", f:"strategy", ko:"그들은 전반이 끝나고 전략을 바꿨다." }] },
 
@@ -2372,7 +2372,7 @@ window.VOCAB_S = [
     syn:["deduct","take away from","reduce by"],
     ex:[{ s:"{{}} five from twelve.", f:"Subtract", ko:"열둘에서 다섯을 빼라." }] },
 
-  { word:"suburb", pron:"서버브", pos:"n", level:"B1", meanings:["교외","근교"],
+  { word:"suburb", exams:["수능"], pron:"서버브", pos:"n", level:"B1", meanings:["교외","근교"],
     syn:["outer part of a city","district outside town","town on the edge of a city"],
     ex:[{ s:"They live in a quiet {{}}.", f:"suburb", ko:"그들은 조용한 교외에 산다." }] },
 

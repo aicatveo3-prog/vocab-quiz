@@ -789,7 +789,7 @@ window.VOCAB_E = [
   { word:"effective", exams:["공무원","수능"], pron:"이펙티브", pos:"adj", level:"B2", meanings:["효과적인"], syn:["efficient","successful","productive"], ant:["ineffective"], ex:[{ s:"Understand what is involved in {{}} communication.", f:"effective", ko:"효과적인 의사소통에 무엇이 관여하는지 이해하라." }] },
   { word:"extroverted", exams:["공무원"], pron:"엑스트러버티드", pos:"adj", level:"C1", meanings:["외향적인"], syn:["outgoing","sociable","gregarious"], ant:["introverted"], ex:[{ s:"Active listening doesn't require an {{}} personality.", f:"extroverted", ko:"적극적 경청에 외향적 성격이 필요한 것은 아니다." }] },
   { word:"employee", exams:["공무원","수능"], pron:"임플로이", pos:"n", level:"B1", meanings:["직원","종업원"], syn:["worker","staff member","staffer"], ant:["employer"], ex:[{ s:"Each {{}} has different working patterns.", f:"employee", ko:"직원마다 서로 다른 업무 방식을 지닌다." }] },
-  { word:"entrance", exams:["공무원"], pron:"엔트런스", pos:"n", level:"B1", meanings:["입구"], syn:["entry","doorway","gateway"], ant:["exit"], ex:[{ s:"We are in front of the main {{}} of city hall.", f:"entrance", ko:"우리는 시청 정문 앞에 있다." }] },
+  { word:"entrance", exams:["공무원","수능"], pron:"엔트런스", pos:"n", level:"B1", meanings:["입구"], syn:["entry","doorway","gateway"], ant:["exit"], ex:[{ s:"We are in front of the main {{}} of city hall.", f:"entrance", ko:"우리는 시청 정문 앞에 있다." }] },
   { word:"exact", exams:["공무원"], pron:"이그잭트", pos:"adj", level:"B1", meanings:["정확한"], syn:["precise","accurate","specific"], ant:["approximate"], ex:[{ s:"Please tell me your {{}} location.", f:"exact", ko:"정확한 위치를 말씀해 주세요." }] },
   { word:"explode", exams:["공무원"], pron:"익스플로드", pos:"v", level:"B1", meanings:["폭발하다"], syn:["blow up","burst","detonate"], ant:["implode"], ex:[{ s:"These products can catch fire or {{}}.", f:"explode", ko:"이 제품들은 불이 붙거나 폭발할 수 있다." }] },
   { word:"exterminator", exams:["공무원"], pron:"익스터미네이터", pos:"n", level:"C1", meanings:["방역업자","해충 구제업자"], ex:[{ s:"Please contact a licensed {{}}.", f:"exterminator", ko:"허가받은 방역업자에게 연락하세요." }] },
@@ -895,7 +895,7 @@ window.VOCAB_E = [
     ex:[{ s:"She made the difficult passage sound completely {{}}.", f:"effortless", ko:"그녀는 그 어려운 악절을 완전히 수월하게 들리도록 연주했다." }] },
 
   /* ── eg ────────────────────────────────────── */
-  { word:"ego", pron:"이고", pos:"n", level:"B2", meanings:["자아","자존심"],
+  { word:"ego", exams:["수능"], pron:"이고", pos:"n", level:"B2", meanings:["자아","자존심"],
     syn:["self","self-esteem","pride"], ant:["humility"],
     ex:[{ s:"Losing so badly bruised his {{}} for weeks.", f:"ego", ko:"그렇게 크게 진 것이 몇 주 동안 그의 자존심을 상하게 했다." }] },
 
@@ -991,7 +991,7 @@ window.VOCAB_E = [
   /* eliminate 의 뜻은 기존 GLOSS "제거하다, 없애다" 를 그대로 옮겼다.
      abolish·assassinate 가 이 낱말을 유의어로 쓰고 있어, '탈락시키다' 같은
      경기 갈래를 넣으면 그 두 문제의 피드백이 엉뚱해진다. */
-  { word:"eliminate", exams:["공무원"], pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
+  { word:"eliminate", exams:["공무원","수능"], pron:"일리머네이트", pos:"v", level:"B2", meanings:["제거하다","없애다"],
     syn:["remove","get rid of","eradicate"], ant:["retain"],
     ex:[{ s:"The new filter helps {{}} harmful bacteria from the water.", f:"eliminate", ko:"새 필터는 물에서 해로운 세균을 제거하는 데 도움이 된다." }] },
 
@@ -1283,7 +1283,7 @@ window.VOCAB_E = [
   /* 원본은 '계몽하다, 깨우치다, 가르치다' 로 셋이다 — 둘로 줄였다. 기존 GLOSS 는
      "교화하다, 깨우치다" 였는데 civilize(유의어)·deceive·delude(반의어) 모두
      '계몽하다'로도 뜻이 통한다. */
-  { word:"enlighten", exams:["공무원"], pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
+  { word:"enlighten", exams:["공무원","수능"], pron:"인라이튼", pos:"v", level:"C1", meanings:["계몽하다","깨우치다"],
     syn:["educate","inform","open one's eyes"], ant:["mislead"],
     ex:[{ s:"A single good teacher can {{}} a whole village.", f:"enlighten", ko:"좋은 교사 한 명이 마을 전체를 계몽할 수 있다." }] },
 
@@ -1517,7 +1517,7 @@ window.VOCAB_E = [
     syn:["accompany","go with","conduct safely"],
     ex:[{ s:"Two officers will {{}} the visitors to the gate.", f:"escort", ko:"경관 두 명이 방문객을 문까지 호위할 것이다." }] },
 
-  { word:"essential", exams:["공무원"], pron:"이센셜", pos:"adj", level:"B1", meanings:["필수적인","극히 중요한"],
+  { word:"essential", exams:["공무원","수능"], pron:"이센셜", pos:"adj", level:"B1", meanings:["필수적인","극히 중요한"],
     syn:["indispensable","vital","crucial"], ant:["optional"],
     ex:[{ s:"Clean water is {{}} to public health.", f:"essential", ko:"깨끗한 물은 공중 보건에 필수적이다." }] },
 
@@ -1766,7 +1766,7 @@ window.VOCAB_E = [
 
   /* 3차에서 embody 의 유의어로 words-e.js 에 넣은 GLOSS 항목이 표제어로 올라온다 —
      그 항목을 지웠다. embody 쪽 피드백이 바뀌지 않도록 '전형' 갈래를 앞에 뒀다. */
-  { word:"exemplify", exams:["공무원"], pron:"이그젬플리파이", pos:"v", level:"C1", meanings:["전형적인 사례가 되다","예증하다"],
+  { word:"exemplify", exams:["공무원","수능"], pron:"이그젬플리파이", pos:"v", level:"C1", meanings:["전형적인 사례가 되다","예증하다"],
     syn:["illustrate","typify","embody"],
     ex:[{ s:"These letters {{}} the style of the period.", f:"exemplify", ko:"이 편지들은 그 시대의 문체를 전형적으로 보여 준다." }] },
 
@@ -1964,7 +1964,7 @@ window.VOCAB_E = [
     syn:["reveal","uncover","bring to light"], ant:["conceal"],
     ex:[{ s:"The letters {{}} how the fund was really spent.", f:"expose", ko:"그 편지들은 기금이 실제로 어떻게 쓰였는지 폭로한다." }] },
 
-  { word:"exposure", exams:["공무원"], pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
+  { word:"exposure", exams:["공무원","수능"], pron:"익스포저", pos:"n", level:"B2", meanings:["노출","폭로"],
     syn:["being exposed","revelation","uncovering"],
     ex:[{ s:"Long {{}} to the sun cracked the paint.", f:"exposure", ko:"오랜 햇빛 노출이 그 페인트를 갈라지게 했다." }] },
 
@@ -1990,7 +1990,7 @@ window.VOCAB_E = [
   /* 뜻을 '연장, 확장' 으로 잡았다 — 표제어 expansion(B2 "팽창, 확대")과 '확대' 가
      겹치지 않게 하려는 것이다. 기존 표제어 by extension 은 pos 가 phr 이라
      이 명사와 오답 후보로 겹치지 않는다. */
-  { word:"extension", exams:["공무원"], pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
+  { word:"extension", exams:["공무원","수능"], pron:"익스텐션", pos:"n", level:"B2", meanings:["연장","확장"],
     syn:["lengthening","addition","prolonging"],
     ex:[{ s:"The library got a two-year {{}} on its lease.", f:"extension", ko:"그 도서관은 임대 계약을 2년 연장받았다." }] },
 

@@ -379,7 +379,7 @@ window.VOCAB_U = [
      배제가 안 되기 때문이다. accidental 자신의 화면은 바뀌지 않는다.
      intentional(의도적인, 고의의) 과는 뜻이 정반대여서 한 문제에 같이 뜰 수
      있다 — 반의어를 일부러 넣는 설계다. */
-  { word:"unintended", pron:"언인텐디드", pos:"adj", level:"B2", meanings:["의도하지 않은"],
+  { word:"unintended", exams:["수능"], pron:"언인텐디드", pos:"adj", level:"B2", meanings:["의도하지 않은"],
     syn:["accidental","not meant to happen","without any such aim"],
     ex:[{ s:"The change had {{}} results.", f:"unintended", ko:"그 변화는 의도하지 않은 결과를 낳았다." }] },
 
@@ -695,7 +695,7 @@ window.VOCAB_U = [
   /* 승격 ㉗ — 사전 글자 유지. 참조 desperate(D)·imperative(I) 두 곳의 화면은
      바뀌지 않는다. pressing(긴급한, 절박한) 과 두 갈래가 통째로 같고
      desperate(필사적인, 절박한) 와 '절박한' 이 같아 맞물려 배제된다. */
-  { word:"urgent", pron:"어전트", pos:"adj", level:"B1", meanings:["긴급한","절박한"],
+  { word:"urgent", exams:["수능"], pron:"어전트", pos:"adj", level:"B1", meanings:["긴급한","절박한"],
     syn:["pressing","calling for haste","not able to wait"],
     ex:[{ s:"There is an {{}} need for water.", f:"urgent", ko:"물이 긴급히 필요하다." }] },
 

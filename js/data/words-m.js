@@ -475,14 +475,14 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '헤아릴 수 있는' 이다. finite(syn) 가 참조한다. 원본의
      '측정할 수 있는' 은 같은 갈래라 사전 쪽을 첫 자리에 지키고, 원본의
      '주목할 만한' 을 둘째 자리에 붙였다. */
-  { word:"measurable", pron:"메저러블", pos:"adj", level:"B2", meanings:["헤아릴 수 있는","주목할 만한"],
+  { word:"measurable", exams:["수능"], pron:"메저러블", pos:"adj", level:"B2", meanings:["헤아릴 수 있는","주목할 만한"],
     syn:["finite","quantifiable","appreciable"],
     ex:[{ s:"The change produced a {{}} drop in emissions.", f:"measurable", ko:"그 변화는 배출량에 헤아릴 수 있는 감소를 낳았다." }] },
 
   /* 승격 ① — GLOSS '측정하다; 조치' 를 글자까지 지켰다. 참조가 3곳
      (criterion·dose·gauge)이라 그대로 두었다. 원본의 '척도' 는 '조치' 와 다른
      갈래지만 참조가 쓰는 쪽이 사전이라 사전을 따랐다. */
-  { word:"measure", exams:["공무원"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
+  { word:"measure", exams:["공무원","수능"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
     syn:["gauge","quantify","assess"],
     ex:[{ s:"Scientists {{}} the ice thickness every spring.", f:"measure", ko:"과학자들은 매년 봄 얼음 두께를 측정한다." }] },
 
@@ -553,7 +553,7 @@ window.VOCAB_M = [
     ex:[{ s:"Olive trees grow all around the {{}}.", f:"Mediterranean", ko:"올리브 나무가 지중해 전역에 자란다." }] },
 
   /* 원본 셋째 갈래 '중간의'(형용사)는 pos 가 n 이라 담지 못했다. */
-  { word:"medium", exams:["공무원"], pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
+  { word:"medium", exams:["공무원","수능"], pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
     syn:["middle ground","channel","vehicle"],
     ex:[{ s:"Radio was once the main {{}} for news.", f:"medium", ko:"라디오는 한때 뉴스의 주된 매개물이었다." }] },
 
@@ -873,7 +873,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '오해를 일으키는' 을 첫 자리에 지켰다. deceptive(syn) 가 참조한다.
      원본의 '오해의 소지가 있는' 을 둘째 자리에 붙였다. */
-  { word:"misleading", pron:"미스리딩", pos:"adj", level:"B2", meanings:["오해를 일으키는","오해의 소지가 있는"],
+  { word:"misleading", exams:["수능"], pron:"미스리딩", pos:"adj", level:"B2", meanings:["오해를 일으키는","오해의 소지가 있는"],
     syn:["deceptive","confusing","ambiguous"],
     ex:[{ s:"The advert was eventually found to be {{}}.", f:"misleading", ko:"그 광고는 결국 오해를 일으키는 것으로 판정되었다." }] },
 
@@ -893,7 +893,7 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '사절단; 임무' 다. delegation(syn) 이 쓰는 갈래는 '사절단' 이라
      첫 자리에 지켰다. 둘째는 원본의 '임무' 로 했다 — 원본 첫 뜻 '임무' 를 앞에 두면
      C 세트 commission 과 첫 뜻이 같아진다. 원본 셋째 갈래 '선교' 는 뺐다. */
-  { word:"mission", exams:["공무원"], pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
+  { word:"mission", exams:["공무원","수능"], pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
     syn:["delegation","assignment","errand"],
     ex:[{ s:"A trade {{}} flew out to Seoul last week.", f:"mission", ko:"통상 사절단이 지난주 서울로 떠났다." }] },
 
@@ -974,7 +974,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '이동성, 유동성' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
      mobile 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"mobility", pron:"모빌러티", pos:"n", level:"B2", meanings:["이동성","유동성"],
+  { word:"mobility", exams:["수능"], pron:"모빌러티", pos:"n", level:"B2", meanings:["이동성","유동성"],
     syn:["movability","freedom of movement","fluidity"],
     ex:[{ s:"The injury limited his {{}} for months.", f:"mobility", ko:"그 부상은 몇 달간 그의 이동성을 제한했다." }] },
 
@@ -1193,7 +1193,7 @@ window.VOCAB_M = [
     ex:[{ s:"The school serves a highly {{}} neighbourhood.", f:"multicultural", ko:"그 학교는 매우 다문화적인 동네를 담당한다." }] },
 
   /* 원본 둘째 갈래 '멀티미디어' 는 외래어 그대로여서 뺐다. */
-  { word:"multimedia", pron:"멀티미디어", pos:"n", level:"B2", meanings:["다중매체"],
+  { word:"multimedia", exams:["수능"], pron:"멀티미디어", pos:"n", level:"B2", meanings:["다중매체"],
     syn:["mixed media","audio-visual","cross-format"],
     ex:[{ s:"The museum runs a {{}} exhibition this autumn.", f:"multimedia", ko:"그 박물관은 이번 가을 다중매체 전시를 운영한다." }] },
 

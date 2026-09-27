@@ -178,7 +178,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑨ — 사전 글자 유지. 참조 diverse(D)·monotonous(M) 두 곳의 화면은
      바뀌지 않는다. 아래 various 와 '다양한' 을 맞춰 자동 배제시켰다. */
-  { word:"varied", pron:"베리드", pos:"adj", level:"B2", meanings:["다양한","변화가 많은"],
+  { word:"varied", exams:["수능"], pron:"베리드", pos:"adj", level:"B2", meanings:["다양한","변화가 많은"],
     syn:["diverse","full of change","of many sorts"], ant:["monotonous"],
     ex:[{ s:"She has a {{}} taste in books.", f:"varied", ko:"그녀는 책에 다양한 취향을 지녔다." }] },
 
@@ -257,7 +257,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑭ — 사전의 쌍반점만 쉼표로. 참조 automobile(A)·medium(M) 두 곳의
      화면은 바뀌지 않는다. means(수단, 방법) 와 '수단' 이 맞물려 배제된다. */
-  { word:"vehicle", exams:["공무원"], pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
+  { word:"vehicle", exams:["공무원","수능"], pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
     syn:["automobile","medium","thing that carries"],
     ex:[{ s:"No {{}} may enter the lane.", f:"vehicle", ko:"어떤 차량도 그 길에 들어갈 수 없다." }] },
 
@@ -545,7 +545,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉚ — 사전 단일값 유지(참조 graphic). 교재의 '화려한' 은 gorgeous(화려한,
      호화스러운)·ornate 자리라 버렸다. sharp(날카로운, 선명한) 와 맞물려 배제된다. */
-  { word:"vivid", pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],
+  { word:"vivid", exams:["수능"], pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],
     syn:["graphic","sharply clear","standing out plainly"],
     ex:[{ s:"She has a {{}} memory of that day.", f:"vivid", ko:"그녀는 그날을 선명하게 기억한다." }] },
 

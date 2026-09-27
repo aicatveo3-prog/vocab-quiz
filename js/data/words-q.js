@@ -147,7 +147,7 @@ window.VOCAB_Q = [
   /* 승격 ⑬ — 사전은 '인용하다; 견적' 으로 동사와 명사가 섞여 있었다. 원본대로
      동사 한 갈래로 세웠다(cite, C 한 곳의 표기가 달라진다). '인용하다' 는 cite 의
      첫 뜻과 같지만 둘은 서로 유의어라 오답에서 빠진다. */
-  { word:"quote", pron:"쿼트", pos:"v", level:"B1", meanings:["인용하다"],
+  { word:"quote", exams:["수능"], pron:"쿼트", pos:"v", level:"B1", meanings:["인용하다"],
     syn:["cite","repeat someone's words","give as a source"],
     ex:[{ s:"He likes to {{}} old proverbs.", f:"quote", ko:"그는 옛 속담을 인용하기를 좋아한다." }] },
 
