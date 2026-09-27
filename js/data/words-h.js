@@ -45,6 +45,7 @@ window.VOCAB_H = [
   { word:"host", exams:["수능"], pron:"호스트", pos:"n", level:"B2", meanings:["주최자","다수"], ex:[{ s:"The {{}} welcomed each guest at the door.", f:"host", ko:"주최자는 문 앞에서 손님을 한 명씩 맞이했다." }] },
   { word:"handful", exams:["수능"], pron:"핸드풀", pos:"n", level:"B2", meanings:["한 줌","소수"], ex:[{ s:"He grabbed a big {{}} of nuts from the bowl.", f:"handful", ko:"그는 그릇에서 견과류를 크게 한 줌 집었다." }] },
   { word:"hopeful", exams:["수능"], pron:"호프풀", pos:"adj", level:"B2", meanings:["희망에 찬","기대하는"], syn:["optimistic","positive","promising"], ant:["hopeless"], ex:[{ s:"After the good news, everyone felt {{}} about the future.", f:"hopeful", ko:"좋은 소식을 듣고 모두가 미래에 희망을 품었다." }] },
+  { word:"horizon", exams:["수능"], pron:"허라이즌", pos:"n", level:"B2", meanings:["지평선","시야"], ex:[{ s:"The sun slowly disappeared below the {{}}.", f:"horizon", ko:"해가 천천히 지평선 아래로 사라졌다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */

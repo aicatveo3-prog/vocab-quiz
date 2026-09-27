@@ -63,6 +63,7 @@ window.VOCAB_G = [
   { word:"global", exams:["수능"], pron:"글로벌", pos:"adj", level:"B1", meanings:["세계적인","전 세계의"], syn:["worldwide","international","universal"], ant:["local"], ex:[{ s:"Climate change is a {{}} problem that no country can solve alone.", f:"global", ko:"기후 변화는 어느 나라도 혼자 해결할 수 없는 세계적인 문제다." }] },
   { word:"guardian", exams:["수능"], pron:"가디언", pos:"n", level:"B2", meanings:["보호자","후견인"], ex:[{ s:"A child's legal {{}} must sign the form.", f:"guardian", ko:"아이의 법적 보호자가 서류에 서명해야 한다." }] },
   { word:"guilt", exams:["수능"], pron:"길트", pos:"n", level:"B2", meanings:["죄책감","유죄"], ex:[{ s:"She felt a deep sense of {{}} after lying to her friend.", f:"guilt", ko:"그녀는 친구에게 거짓말을 한 뒤 깊은 죄책감을 느꼈다." }] },
+  { word:"goods", exams:["수능"], pron:"굿즈", pos:"n", level:"B1", meanings:["상품","물품"], ex:[{ s:"The store sells {{}} from all over the world.", f:"goods", ko:"그 가게는 세계 각지의 상품을 판다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */

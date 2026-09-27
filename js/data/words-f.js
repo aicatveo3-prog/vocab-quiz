@@ -507,6 +507,9 @@ window.VOCAB_F = [
   { word:"firmly", exams:["수능"], pron:"펌리", pos:"adv", level:"B2", meanings:["단단히","확고히"] },
   { word:"fixate", exams:["수능"], pron:"픽세이트", pos:"v", level:"C1", meanings:["집착하다","고정하다"], ex:[{ s:"Try not to {{}} on small mistakes you made in the past.", f:"fixate", ko:"과거에 저지른 사소한 실수에 집착하지 않도록 해라." }] },
   { word:"futuristic", exams:["수능"], pron:"퓨처리스틱", pos:"adj", level:"C1", meanings:["미래적인","초현대적인"], ex:[{ s:"The movie shows {{}} cities full of flying cars.", f:"futuristic", ko:"그 영화는 날아다니는 차로 가득한 미래 도시를 보여 준다." }] },
+  { word:"far-reaching", exams:["수능"], pron:"파 리칭", pos:"adj", level:"C1", meanings:["광범위한","파급 효과가 큰"], syn:["extensive","sweeping","wide-ranging"], ex:[{ s:"The new law will have {{}} effects on small businesses.", f:"far-reaching", ko:"새 법은 소상공인에게 광범위한 영향을 미칠 것이다." }] },
+  { word:"formulation", exams:["수능"], pron:"포뮬레이션", pos:"n", level:"C1", meanings:["공식화","입안"], ex:[{ s:"The {{}} of the new policy took two years.", f:"formulation", ko:"새 정책을 입안하는 데 2년이 걸렸다." }] },
+  { word:"fundamentally", exams:["수능"], pron:"펀더멘털리", pos:"adv", level:"C1", meanings:["근본적으로","본질적으로"] },
   /* ── 1차: fable ~ fall off (20개) ─────────────── */
 
   /* ── fab ───────────────────────────────────── */
