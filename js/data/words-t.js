@@ -72,6 +72,8 @@ window.VOCAB_T = [
   { word:"three-dimensional", exams:["수능"], pron:"스리 디멘셔널", pos:"adj", level:"B2", meanings:["3차원의","입체의"], ex:[{ s:"The new game creates {{}} images that look real.", f:"three-dimensional", ko:"새 게임은 실제처럼 보이는 입체 영상을 만들어 낸다." }] },
   { word:"tone", exams:["수능"], pron:"톤", pos:"n", level:"B1", meanings:["어조","색조"], ex:[{ s:"She spoke in a calm, quiet {{}} to comfort the child.", f:"tone", ko:"그녀는 아이를 달래려고 차분하고 조용한 어조로 말했다." }] },
   { word:"traditionally", exams:["수능"], pron:"트러디셔널리", pos:"adv", level:"B2", meanings:["전통적으로","관례상"] },
+  { word:"time-consuming", exams:["수능"], pron:"타임 컨수밍", pos:"adj", level:"B2", meanings:["시간이 많이 걸리는"], syn:["lengthy","laborious","tedious","tiresome"], ex:[{ s:"Writing letters by hand is more {{}} than typing.", f:"time-consuming", ko:"손으로 편지를 쓰는 것은 타자를 치는 것보다 시간이 더 걸린다." }] },
+  { word:"traditional", exams:["수능"], pron:"트러디셔널", pos:"adj", level:"B1", meanings:["전통적인","전통의"], ex:[{ s:"Hanbok is the {{}} dress of Korea.", f:"traditional", ko:"한복은 한국의 전통 의상이다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지

@@ -87,6 +87,9 @@ window.VOCAB_R = [
   { word:"random", exams:["수능"], pron:"랜덤", pos:"adj", level:"B1", meanings:["무작위의","임의의"], ex:[{ s:"The winners were chosen in {{}} order.", f:"random", ko:"당첨자는 무작위 순서로 뽑혔다." }] },
   { word:"rapid", exams:["수능"], pron:"래피드", pos:"adj", level:"B1", meanings:["빠른","급속한"], syn:["swift","quick","speedy"], ant:["slow"], ex:[{ s:"The {{}} spread of the virus surprised doctors.", f:"rapid", ko:"바이러스가 빠르게 퍼지자 의사들은 놀랐다." }] },
   { word:"rationalization", exams:["수능"], pron:"래셔널러제이션", pos:"n", level:"C1", meanings:["합리화","정당화"], ex:[{ s:"Blaming others is a common form of {{}}.", f:"rationalization", ko:"남 탓을 하는 것은 흔한 합리화 방식이다." }] },
+  { word:"realism", exams:["수능"], pron:"리얼리즘", pos:"n", level:"C1", meanings:["사실주의","현실성"], ex:[{ s:"The film's {{}} made viewers feel they were really there.", f:"realism", ko:"그 영화의 사실감 덕분에 관객은 정말 그곳에 있는 듯 느꼈다." }] },
+  { word:"renewal", exams:["수능"], pron:"리뉴얼", pos:"n", level:"C1", meanings:["갱신","재개발"], syn:["renovation","restoration","revival"], ex:[{ s:"It is time for the {{}} of your passport.", f:"renewal", ko:"여권을 갱신할 때가 되었다." }] },
+  { word:"resulting", exams:["수능"], pron:"리절팅", pos:"adj", level:"C1", meanings:["그 결과로 생긴","결과적인"], syn:["consequent","resultant","subsequent"], ex:[{ s:"The storm and the {{}} floods destroyed many homes.", f:"resulting", ko:"폭풍과 그로 인한 홍수로 많은 집이 무너졌다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 원본에서 가장 심하게 물린 챕터다 — 네 번이다.
@@ -2148,6 +2151,7 @@ Object.assign(window.GLOSS, {
   "return to the old state": "옛 상태로 돌아감",
   "return what was paid": "낸 것을 돌려주다",
   "reutilize": "다시 이용하다",
+  "revival": "부활, 회복",
   "revive the breathing": "숨을 되살리다",
   "revolt of the people": "백성이 일으킨 난",
   "ringing sound": "울려 나는 소리",

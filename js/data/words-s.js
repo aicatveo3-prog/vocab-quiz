@@ -153,6 +153,11 @@ window.VOCAB_S = [
   { word:"strengthen", exams:["수능"], pron:"스트렝슨", pos:"v", level:"B1", meanings:["강화하다","튼튼하게 하다"], syn:["reinforce","bolster","fortify"], ant:["weaken"], ex:[{ s:"Drinking milk can help {{}} your bones.", f:"strengthen", ko:"우유를 마시면 뼈를 튼튼하게 하는 데 도움이 될 수 있다." }] },
   { word:"subjectivity", exams:["수능"], pron:"섭젝티비티", pos:"n", level:"C1", meanings:["주관성"], ex:[{ s:"Judging art always involves some {{}}.", f:"subjectivity", ko:"미술을 평가하는 데에는 늘 어느 정도 주관성이 개입된다." }] },
   { word:"suggestive", exams:["수능"], pron:"서제스티브", pos:"adj", level:"C1", meanings:["연상시키는","암시하는"], ex:[{ s:"The song's cheerful melody is {{}} of summer at the beach.", f:"suggestive", ko:"그 노래의 경쾌한 선율은 해변의 여름을 떠올리게 한다." }] },
+  { word:"structural", exams:["수능"], pron:"스트럭처럴", pos:"adj", level:"B2", meanings:["구조의","구조적인"], ex:[{ s:"Hidden {{}} weaknesses caused the old bridge to collapse.", f:"structural", ko:"숨어 있던 구조적 약점 때문에 낡은 다리가 무너졌다." }] },
+  { word:"subdivision", exams:["수능"], pron:"섭디비전", pos:"n", level:"C1", meanings:["세분","분할"], ex:[{ s:"The {{}} of labor made each worker's job simpler.", f:"subdivision", ko:"노동을 잘게 나누자 노동자 각자의 일이 단순해졌다." }] },
+  { word:"substantially", exams:["수능"], pron:"섭스탠셜리", pos:"adv", level:"C1", meanings:["상당히","대체로"], syn:["considerably","significantly","greatly"] },
+  { word:"sustainability", exams:["수능"], pron:"서스테이너빌리티", pos:"n", level:"C1", meanings:["지속 가능성"], ex:[{ s:"Farmers now think more about the {{}} of their land.", f:"sustainability", ko:"이제 농부들은 자기 땅의 지속 가능성을 더 많이 생각한다." }] },
+  { word:"systematize", exams:["수능"], pron:"시스터머타이즈", pos:"v", level:"C1", meanings:["체계화하다"], syn:["organize","arrange","order"], ex:[{ s:"Scientists try to {{}} their knowledge into clear laws.", f:"systematize", ko:"과학자들은 지식을 명확한 법칙으로 체계화하려 한다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3732,7 +3737,6 @@ Object.assign(window.GLOSS, {
   "subject to another": "남에게 딸린",
   "submissive": "순종적인",
   "subsidiary": "부수적인, 자회사의",
-  "substantially": "상당히, 대폭",
   "sudden and surprising": "갑작스럽고 뜻밖인",
   "sudden swell in number": "수가 갑자기 부풀어 오름",
   "suffer hunger": "배고픔을 겪다",

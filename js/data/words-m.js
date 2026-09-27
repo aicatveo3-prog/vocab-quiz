@@ -1608,7 +1608,6 @@ Object.assign(window.GLOSS, {
   "stationary": "고정된",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
-  "structural": "구조상의",
   "sulky": "뾰로통한",
   "sullen": "못마땅해 말이 없는",
   "take the edge off": "날카로움을 덜다",

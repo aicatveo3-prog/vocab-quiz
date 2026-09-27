@@ -88,6 +88,12 @@ window.VOCAB_U = [
   { word:"unconcerned", exams:["수능"], pron:"언컨선드", pos:"adj", level:"C1", meanings:["무관심한","개의치 않는"], ex:[{ s:"He seemed {{}} about the exam and went out to play.", f:"unconcerned", ko:"그는 시험에 개의치 않는 듯 놀러 나갔다." }] },
   { word:"unload", exams:["수능"], pron:"언로드", pos:"v", level:"B2", meanings:["짐을 내리다","부리다"], ex:[{ s:"The workers {{}} the boxes from the truck every morning.", f:"unload", ko:"일꾼들은 매일 아침 트럭에서 상자를 내린다." }] },
   { word:"usage", exams:["수능"], pron:"유시지", pos:"n", level:"B2", meanings:["사용","용법"], ex:[{ s:"Water {{}} rises sharply in the summer.", f:"usage", ko:"여름에는 물 사용량이 급격히 늘어난다." }] },
+  { word:"unexpectedly", exams:["수능"], pron:"언익스펙티들리", pos:"adv", level:"B2", meanings:["뜻밖에","갑자기"] },
+  { word:"unnecessary", exams:["수능"], pron:"언네서세리", pos:"adj", level:"B1", meanings:["불필요한","쓸데없는"], ex:[{ s:"Please avoid {{}} trips during the storm.", f:"unnecessary", ko:"폭풍이 부는 동안에는 불필요한 외출을 삼가 주세요." }] },
+  { word:"unorganized", exams:["수능"], pron:"언오거나이즈드", pos:"adj", level:"C1", meanings:["정리되지 않은","체계가 없는"], syn:["disorganized","chaotic","messy"], ant:["organized"], ex:[{ s:"The shelves were so {{}} that I couldn't find anything.", f:"unorganized", ko:"선반이 너무 정리가 안 되어 있어서 아무것도 찾을 수 없었다." }] },
+  { word:"unsuccessful", exams:["수능"], pron:"언석세스풀", pos:"adj", level:"B2", meanings:["성공하지 못한","실패한"], ex:[{ s:"The search was {{}}; the missing hiker was never found.", f:"unsuccessful", ko:"수색은 실패로 끝났고, 실종된 등산객은 끝내 발견되지 않았다." }] },
+  { word:"untouched", exams:["수능"], pron:"언터치트", pos:"adj", level:"C1", meanings:["손대지 않은","그대로인"], syn:["intact","undamaged","unspoiled"], ex:[{ s:"He left his dinner {{}} because he wasn't hungry.", f:"untouched", ko:"그는 배가 고프지 않아서 저녁을 손도 대지 않았다." }] },
+  { word:"unwilling", exams:["수능"], pron:"언윌링", pos:"adj", level:"B2", meanings:["꺼리는","내키지 않는"], ex:[{ s:"Many people are {{}} to change their daily habits.", f:"unwilling", ko:"많은 사람이 일상 습관을 바꾸기를 꺼린다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14
@@ -776,6 +782,7 @@ Object.assign(window.GLOSS, {
   "different from": "~와 다른",
   "dig out of the ground": "땅에서 캐내다",
   "disconcerting": "당황하게 하는",
+  "disorganized": "체계적이지 못한",
   "disturbing": "불안하게 하는",
   "draw a line under": "~ 아래에 선을 긋다",
   "drawing no one": "아무도 끌지 못하는",
@@ -938,6 +945,7 @@ Object.assign(window.GLOSS, {
   "unmanageable": "감당할 수 없는",
   "unpredictability": "예측 불가능성",
   "unsettling": "마음을 뒤숭숭하게 하는",
+  "unspoiled": "훼손되지 않은, 자연 그대로의",
   "untangle": "엉킨 것을 풀다",
   "usefulness in practice": "실제로 쓸모가 있음",
   "valuing what works": "되는 것을 값지게 보는",

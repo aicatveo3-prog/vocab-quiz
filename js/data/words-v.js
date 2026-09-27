@@ -54,6 +54,8 @@ window.VOCAB_V = [
   { word:"victim", exams:["수능"], pron:"빅텀", pos:"n", level:"B1", meanings:["피해자","희생자"], ex:[{ s:"The {{}} of the robbery described the thief to the police.", f:"victim", ko:"강도 피해자는 경찰에게 도둑의 인상착의를 설명했다." }] },
   { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
   { word:"visible", exams:["수능"], pron:"비저블", pos:"adj", level:"B1", meanings:["보이는","눈에 띄는"], ex:[{ s:"On sunny days, the mountain top is {{}} from our window.", f:"visible", ko:"맑은 날에는 우리 집 창문에서 산꼭대기가 보인다." }] },
+  { word:"valuable", exams:["수능"], pron:"밸류어블", pos:"adj", level:"B1", meanings:["귀중한","값비싼"], ex:[{ s:"Don't leave {{}} items in your car.", f:"valuable", ko:"차 안에 귀중품을 두지 마세요." }] },
+  { word:"veil", exams:["수능"], pron:"베일", pos:"v", level:"C1", meanings:["가리다","감추다"], syn:["conceal","mask","shroud"], ant:["reveal"], ex:[{ s:"Thick clouds often {{}} the top of the mountain.", f:"veil", ko:"짙은 구름이 산꼭대기를 자주 가린다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -754,6 +756,7 @@ Object.assign(window.GLOSS, {
   "sharply clear": "또렷하게 밝은",
   "ship": "배, 선박",
   "show to be true": "참임을 보여 주다",
+  "shroud": "가리다, 감싸다",
   "snake poison": "뱀의 독",
   "space with no air": "공기가 없는 공간",
   "speed of travel": "나아가는 빠르기",
