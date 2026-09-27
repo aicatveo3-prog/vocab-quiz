@@ -125,6 +125,9 @@ window.VOCAB_S = [
   { word:"steady", exams:["수능"], pron:"스테디", pos:"adj", level:"B1", meanings:["꾸준한","안정된"], syn:["constant","consistent","stable"], ant:["erratic"], ex:[{ s:"Slow and {{}} wins the race.", f:"steady", ko:"느려도 꾸준하면 경주에서 이긴다." }] },
   { word:"sticky", exams:["수능"], pron:"스티키", pos:"adj", level:"B2", meanings:["끈적끈적한","달라붙는"], ex:[{ s:"My fingers were {{}} with honey after breakfast.", f:"sticky", ko:"아침을 먹고 나니 손가락이 꿀로 끈적끈적했다." }] },
   { word:"suitability", exams:["수능"], pron:"수터빌러티", pos:"n", level:"C1", meanings:["적합성","적합함"], ex:[{ s:"The bell sounds will be chosen based on creativity and {{}}.", f:"suitability", ko:"종소리는 창의성과 적합성을 바탕으로 선정된다." }] },
+  { word:"secretive", exams:["수능"], pron:"시크리티브", pos:"adj", level:"C1", meanings:["비밀스러운","숨기는"], ex:[{ s:"He was very {{}} about his plans for the weekend.", f:"secretive", ko:"그는 주말 계획에 대해 무척 숨기려 했다." }] },
+  { word:"selfie", exams:["수능"], pron:"셀피", pos:"n", level:"B1", meanings:["셀카","자기 촬영 사진"], ex:[{ s:"She held up her phone to take a {{}} with her friends.", f:"selfie", ko:"그녀는 친구들과 셀카를 찍으려고 휴대폰을 들어 올렸다." }] },
+  { word:"self-portrait", exams:["수능"], pron:"셀프 포트릿", pos:"n", level:"B2", meanings:["자화상"], ex:[{ s:"Rembrandt painted his last {{}} in 1669.", f:"self-portrait", ko:"렘브란트는 1669년에 마지막 자화상을 그렸다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3464,7 +3467,6 @@ Object.assign(window.GLOSS, {
   "press hard together": "세게 맞눌러 붙이다",
   "pretend to have": "가진 척하다",
   "prick with a point": "뾰족한 것으로 찌르다",
-  "privacy": "사생활",
   "privacy away from all": "모두에게서 떨어진 사사로움",
   "proposal for thought": "생각해 보라고 내는 안",
   "protect one's honor": "명예를 지키다",
@@ -3499,7 +3501,6 @@ Object.assign(window.GLOSS, {
   "raise the shoulders": "어깨를 올리다",
   "raising doubt": "의문을 일으키는",
   "rank in society": "사회에서의 자리",
-  "rarely": "좀처럼 ~ 않는",
   "rather more than a little": "조금보다는 더",
   "raw stuff for making": "만드는 데 쓰는 바탕",
   "reach further than meant": "뜻한 데보다 멀리 미치다",

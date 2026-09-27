@@ -140,6 +140,10 @@ window.VOCAB_P = [
   { word:"predictability", exams:["수능"], pron:"프리딕터빌리티", pos:"n", level:"C1", meanings:["예측 가능성"], ex:[{ s:"Investors value the {{}} of steady profits.", f:"predictability", ko:"투자자들은 꾸준한 이익의 예측 가능성을 중시한다." }] },
   { word:"predominantly", exams:["수능"], pron:"프리다머넌틀리", pos:"adv", level:"C1", meanings:["주로","대부분"], syn:["mainly","primarily","chiefly"] },
   { word:"previously", exams:["수능"], pron:"프리비어슬리", pos:"adv", level:"B2", meanings:["이전에","앞서"] },
+  { word:"privacy", exams:["수능"], pron:"프라이버시", pos:"n", level:"B2", meanings:["사생활","개인 정보 보호"], ex:[{ s:"Posting photos online can put your {{}} at risk.", f:"privacy", ko:"사진을 온라인에 올리면 사생활이 위험해질 수 있다." }] },
+  { word:"producer", exams:["수능"], pron:"프러두서", pos:"n", level:"B2", meanings:["생산자","제작자"], ex:[{ s:"Brazil is the world's largest {{}} of coffee.", f:"producer", ko:"브라질은 세계 최대의 커피 생산국이다." }] },
+  { word:"progression", exams:["수능"], pron:"프러그레션", pos:"n", level:"C1", meanings:["진행","발전"], ex:[{ s:"The disease follows a slow {{}} over many years.", f:"progression", ko:"그 병은 여러 해에 걸쳐 천천히 진행된다." }] },
+  { word:"protection", exams:["수능"], pron:"프러텍션", pos:"n", level:"B1", meanings:["보호","방어"], ex:[{ s:"Sunscreen offers {{}} against harmful rays.", f:"protection", ko:"자외선 차단제는 해로운 광선으로부터 피부를 보호해 준다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

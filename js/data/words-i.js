@@ -2180,7 +2180,6 @@ Object.assign(window.GLOSS, {
   "remarkably": "눈에 띄게",
   "rendering": "옮겨 냄",
   "repercussion": "파급 효과",
-  "research": "연구 조사",
   "reserved person": "말을 아끼는 사람",
   "restlessness": "잠 못 이룸",
   "retiring": "나서기를 꺼리는",

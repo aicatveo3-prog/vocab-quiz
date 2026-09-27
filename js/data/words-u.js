@@ -319,7 +319,7 @@ window.VOCAB_U = [
      ★ 교재의 '불안, 우려' 는 쓸 수 없었다 — anxiety 의 유의어 목록 안에
      apprehension(불안, 우려) 이 함께 서 있어 설명 두 줄이 똑같아진다.
      ★ 참조 넷(anxiety·concern·discomfort·nervousness) 의 화면이 한 줄씩 늘어난다. */
-  { word:"unease", pron:"언이즈", pos:"n", level:"B2", meanings:["불안","불안정한 마음"],
+  { word:"unease", exams:["수능"], pron:"언이즈", pos:"n", level:"B2", meanings:["불안","불안정한 마음"],
     syn:["anxiety","a troubled feeling","want of calm"],
     ex:[{ s:"A sense of {{}} filled the room.", f:"unease", ko:"불안한 느낌이 그 방을 채웠다." }] },
 

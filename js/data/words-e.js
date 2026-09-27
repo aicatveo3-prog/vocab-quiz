@@ -2357,7 +2357,6 @@ Object.assign(window.GLOSS, {
   "other than":"~이 아닌, ~말고는",
   "outdo":"앞지르다",
   "overabundance":"지나치게 많음",
-  "progression":"진행, 연속",
   "shine":"두각을 나타내다",
   "special case":"특수한 경우",
   "tax dodging":"탈세",

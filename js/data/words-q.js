@@ -34,6 +34,7 @@
  *              사물(소리)에 붙였다.
  */
 window.VOCAB_Q = [
+  { word:"quality", exams:["수능"], pron:"콸러티", pos:"n", level:"B1", meanings:["품질","특성"], ex:[{ s:"Customers expect high {{}} at a fair price.", f:"quality", ko:"고객은 적정한 가격에 높은 품질을 기대한다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
 
