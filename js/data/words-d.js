@@ -160,7 +160,7 @@ window.VOCAB_D = [
   { word:"disappointment", exams:["수능"], pron:"디서포인트먼트", pos:"n", level:"B2", meanings:["실망","낙담"], syn:["dissatisfaction","frustration","letdown"], ex:[{ s:"To her {{}}, she failed to beat her best time again.", f:"disappointment", ko:"실망스럽게도 그녀는 이번에도 자기 최고 기록을 깨지 못했다." }] },
   { word:"disclosure", exams:["수능"], pron:"디스클로저", pos:"n", level:"C1", meanings:["공개","폭로"], ex:[{ s:"The law requires full {{}} of product safety information.", f:"disclosure", ko:"그 법은 제품 안전 정보를 완전히 공개하도록 요구한다." }] },
   { word:"dismissal", exams:["수능"], pron:"디스미설", pos:"n", level:"C1", meanings:["해고","묵살"], ex:[{ s:"His sudden {{}} from the company surprised everyone.", f:"dismissal", ko:"그가 갑자기 회사에서 해고되자 모두가 놀랐다." }] },
-  { word:"district", exams:["수능"], pron:"디스트릭트", pos:"n", level:"B2", meanings:["지역","구역"], ex:[{ s:"They live in a quiet residential {{}} near the park.", f:"district", ko:"그들은 공원 근처의 조용한 주택 지구에 산다." }] },
+  { word:"district", exams:["수능"], pron:"디스트릭트", pos:"n", level:"B2", meanings:["지역","행정 구역"], ex:[{ s:"They live in a quiet residential {{}} near the park.", f:"district", ko:"그들은 공원 근처의 조용한 주택 지구에 산다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
