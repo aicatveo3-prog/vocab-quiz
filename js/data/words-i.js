@@ -1905,7 +1905,6 @@ Object.assign(window.GLOSS, {
   "call upon": "끌어다 쓰다",
   "cerebral": "머리를 쓰는",
   "cheeky": "건방진, 까부는",
-  "childish": "어린애 같은",
   "clever": "영리한",
   "colonialism": "식민주의",
   "come into": "물려받게 되다",

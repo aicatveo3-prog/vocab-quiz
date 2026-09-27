@@ -171,6 +171,9 @@ window.VOCAB_D = [
   { word:"dominance", exams:["수능"], pron:"다머넌스", pos:"n", level:"C1", meanings:["우세","지배"], ex:[{ s:"The company's {{}} of the market worried its rivals.", f:"dominance", ko:"그 회사가 시장을 장악하자 경쟁사들이 우려했다." }] },
   { word:"domination", exams:["수능"], pron:"다머네이션", pos:"n", level:"C1", meanings:["지배","통치"], ex:[{ s:"The empire's {{}} over the region lasted for centuries.", f:"domination", ko:"그 제국의 지역 지배는 수 세기 동안 이어졌다." }] },
   { word:"doubtful", exams:["수능"], pron:"다우트풀", pos:"adj", level:"B2", meanings:["의심스러운","확신하지 못하는"], syn:["dubious","uncertain","questionable"], ex:[{ s:"It is {{}} that the game will start on time in this rain.", f:"doubtful", ko:"이 빗속에서 경기가 제시간에 시작될지는 의심스럽다." }] },
+  { word:"dairy", exams:["수능"], pron:"데어리", pos:"n", level:"B2", meanings:["유제품","낙농"], ex:[{ s:"Many adults cannot digest {{}} easily.", f:"dairy", ko:"많은 성인이 유제품을 쉽게 소화하지 못한다." }] },
+  { word:"directive", exams:["수능"], pron:"디렉티브", pos:"n", level:"C1", meanings:["지령","공식 지시"], syn:["instruction","order","guideline"], ex:[{ s:"All staff must follow the new safety {{}}.", f:"directive", ko:"모든 직원은 새 안전 지시를 따라야 한다." }] },
+  { word:"discrete", exams:["수능"], pron:"디스크리트", pos:"adj", level:"C1", meanings:["별개의","분리된"], ex:[{ s:"Digital signals carry information in {{}} units, not in a smooth flow.", f:"discrete", ko:"디지털 신호는 매끄러운 흐름이 아니라 분리된 단위로 정보를 전달한다." }] },
   /* ── dam ───────────────────────────────────── */
   { word:"damp", pron:"댐프", pos:"adj", level:"B2", meanings:["축축한","습한"],
     syn:["moist","humid","clammy"], ant:["dry"],
@@ -1664,7 +1667,6 @@ Object.assign(window.GLOSS, {
   "disobey":"불복종하다, 거역하다",
   "dry out":"말리다, 건조되다",
   "edict":"포고령, 칙령",
-  "enjoyable":"즐거운, 재미있는",
   "erase":"지우다, 삭제하다",
   "feat":"공적, 위업",
   "final":"최종적인, 마지막의",

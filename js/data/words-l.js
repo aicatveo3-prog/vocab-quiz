@@ -785,7 +785,6 @@ Object.assign(window.GLOSS, {
   "cap": "마개",
   "captivity": "감금, 포로 생활",
   "care for": "보살피다, 좋아하다",
-  "cattle": "소 떼",
   "cheaply made": "싸게 만든",
   "clear-headed": "머리가 맑은",
   "clod": "흙덩이",

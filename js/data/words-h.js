@@ -49,6 +49,8 @@ window.VOCAB_H = [
   { word:"hardly", exams:["수능"], pron:"하들리", pos:"adv", level:"B1", meanings:["거의 ~ 않다","간신히"], syn:["barely","scarcely","rarely"] },
   { word:"harmonize", exams:["수능"], pron:"하머나이즈", pos:"v", level:"C1", meanings:["조화시키다","조화를 이루다"], syn:["reconcile","coordinate","blend"], ex:[{ s:"The two singers' voices {{}} beautifully.", f:"harmonize", ko:"두 가수의 목소리가 아름답게 어우러진다." }] },
   { word:"humorous", exams:["수능"], pron:"휴머러스", pos:"adj", level:"B2", meanings:["재미있는","유머러스한"], syn:["amusing","witty","comic"], ex:[{ s:"His {{}} speech made everyone at the wedding laugh.", f:"humorous", ko:"그의 재미있는 연설에 결혼식 하객 모두가 웃었다." }] },
+  { word:"heartbroken", exams:["수능"], pron:"하트브로컨", pos:"adj", level:"B2", meanings:["비통해하는","상심한"], ex:[{ s:"She was {{}} after losing her championship belt.", f:"heartbroken", ko:"그녀는 챔피언 벨트를 잃고 상심했다." }] },
+  { word:"horrified", exams:["수능"], pron:"호러파이드", pos:"adj", level:"B2", meanings:["겁에 질린","충격받은"], ex:[{ s:"The parents were {{}} to see their child near the cliff.", f:"horrified", ko:"부모는 아이가 절벽 가까이 있는 것을 보고 겁에 질렸다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */

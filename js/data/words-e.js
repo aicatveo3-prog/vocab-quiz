@@ -835,6 +835,7 @@ window.VOCAB_E = [
   { word:"equally", exams:["수능"], pron:"이퀄리", pos:"adv", level:"B2", meanings:["똑같이","동등하게"] },
   { word:"eventual", exams:["수능"], pron:"이벤추얼", pos:"adj", level:"C1", meanings:["최종적인","궁극적인"], ex:[{ s:"Nobody could predict the {{}} winner of the long race.", f:"eventual", ko:"그 긴 경주의 최종 우승자를 아무도 예측할 수 없었다." }] },
   { word:"examination", exams:["수능"], pron:"이그재머네이션", pos:"n", level:"B2", meanings:["검사","조사"], ex:[{ s:"The doctor gave me a thorough {{}}.", f:"examination", ko:"의사가 나를 철저히 검진했다." }] },
+  { word:"enjoyable", exams:["수능"], pron:"인조이어블", pos:"adj", level:"B1", meanings:["즐거운","재미있는"], ex:[{ s:"We had a very {{}} evening at the beach.", f:"enjoyable", ko:"우리는 해변에서 무척 즐거운 저녁을 보냈다." }] },
   /* ── e-co ──────────────────────────────────── */
   { word:"e-commerce", pron:"이커머스", pos:"n", level:"B2", meanings:["전자 상거래"],
     ex:[{ s:"Small family shops moved into {{}} to survive the downturn.", f:"e-commerce", ko:"작은 가족 상점들은 불황을 견디려고 전자 상거래로 옮겨 갔다." }] },
