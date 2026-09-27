@@ -1761,7 +1761,6 @@ Object.assign(window.GLOSS, {
   "demote": "강등시키다",
   "dependence on a frame": "기준에 딸림",
   "disreputable": "평판이 나쁜",
-  "district": "지구, 구역",
   "do over with the same result": "같은 결과로 다시 해내다",
   "do up anew": "새로 손보다",
   "do without doing": "하지 않고 넘기다",

@@ -788,7 +788,6 @@ Object.assign(window.GLOSS, {
   "decipherable": "판독할 수 있는",
   "deluxe": "특급의",
   "disappoint": "기대를 깨다",
-  "dismissal": "해임",
   "drudgery": "고된 일",
   "durability": "오래 견딤",
   "easy to carry": "들고 다니기 쉬운",

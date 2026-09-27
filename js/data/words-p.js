@@ -152,6 +152,7 @@ window.VOCAB_P = [
   { word:"predominate", exams:["수능"], pron:"프리다머네이트", pos:"v", level:"C1", meanings:["우세하다","두드러지다"], syn:["prevail","dominate","outnumber"], ex:[{ s:"In this forest, pine trees {{}} over other species.", f:"predominate", ko:"이 숲에서는 소나무가 다른 종보다 우세하다." }] },
   { word:"prescriptive", exams:["수능"], pron:"프리스크립티브", pos:"adj", level:"C1", meanings:["규범적인","지시하는"], ex:[{ s:"The teacher's {{}} rules left no room for creativity.", f:"prescriptive", ko:"그 교사의 지시적인 규칙에는 창의성이 끼어들 여지가 없었다." }] },
   { word:"proceed", exams:["수능"], pron:"프러시드", pos:"v", level:"B2", meanings:["진행하다","나아가다"], syn:["continue","advance","progress"], ex:[{ s:"After the break, the meeting will {{}} as planned.", f:"proceed", ko:"휴식 후 회의는 예정대로 진행될 것이다." }] },
+  { word:"possibility", exams:["수능"], pron:"파서빌러티", pos:"n", level:"B1", meanings:["가능성","일어날 수 있는 일"], syn:["probability","likelihood","odds"], ex:[{ s:"Scientists are studying the {{}} of life on Mars.", f:"possibility", ko:"과학자들은 화성에 생명체가 있을 가능성을 연구하고 있다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
   /* 'para-' 어근이 일곱 개 붙는다(paradigm·paradox·paragraph·parallel·paralyze·
      paramount·parasite·parasitic). 뜻이 서로 멀어 같은 보드에서 헷갈리지 않는다. */

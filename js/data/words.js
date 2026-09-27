@@ -101,6 +101,11 @@ window.VOCAB = [
   { word:"apparently", exams:["수능"], pron:"어패런틀리", pos:"adv", level:"B2", meanings:["보아하니","겉보기에는"], syn:["seemingly","evidently","ostensibly"] },
   { word:"appreciation", exams:["수능"], pron:"어프리시에이션", pos:"n", level:"B2", meanings:["감사","감상"], syn:["gratitude","thankfulness","recognition"], ex:[{ s:"She wrote a letter to show her {{}} for their help.", f:"appreciation", ko:"그녀는 그들의 도움에 감사를 표하려고 편지를 썼다." }] },
   { word:"auditorium", exams:["수능"], pron:"오디토리엄", pos:"n", level:"B2", meanings:["강당","객석"], ex:[{ s:"The graduation ceremony was held in the school {{}}.", f:"auditorium", ko:"졸업식은 학교 강당에서 열렸다." }] },
+  { word:"absorption", exams:["수능"], pron:"업소프션", pos:"n", level:"C1", meanings:["흡수","몰두"], ex:[{ s:"Dry soil slows the {{}} of rainwater.", f:"absorption", ko:"메마른 흙은 빗물의 흡수를 늦춘다." }] },
+  { word:"algorithm", exams:["수능"], pron:"앨거리듬", pos:"n", level:"B2", meanings:["알고리즘","연산 절차"], ex:[{ s:"The app uses an {{}} to recommend songs you might like.", f:"algorithm", ko:"그 앱은 알고리즘을 이용해 좋아할 만한 노래를 추천한다." }] },
+  { word:"amazement", exams:["수능"], pron:"어메이즈먼트", pos:"n", level:"B2", meanings:["놀라움","경탄"], syn:["astonishment","wonder","awe"], ex:[{ s:"The children watched the magic show in {{}}.", f:"amazement", ko:"아이들은 놀라워하며 마술 쇼를 보았다." }] },
+  { word:"annually", exams:["수능"], pron:"애뉴얼리", pos:"adv", level:"B2", meanings:["매년","해마다"] },
+  { word:"aspiration", exams:["수능"], pron:"애스퍼레이션", pos:"n", level:"C1", meanings:["열망","포부"], ex:[{ s:"Her {{}} is to become a doctor in her hometown.", f:"aspiration", ko:"그녀의 포부는 고향에서 의사가 되는 것이다." }] },
   /* ── a ─────────────────────────────────────── */
   { word:"a host of", exams:["수능"], pron:"어 호스트 오브", pos:"phr", level:"B2", meanings:["다수의","많은"],
     syn:["many","numerous","plenty of"], ant:["a few"] },

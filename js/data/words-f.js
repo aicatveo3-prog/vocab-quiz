@@ -1921,7 +1921,6 @@ Object.assign(window.GLOSS, {
   "break apart":"쪼개어 부수다",
   "breakable":"깨질 수 있는",
   "broken piece":"깨진 조각",
-  "cargo":"배나 비행기의 짐",
   "chill solid":"단단하게 얼리다",
   "chip":"떨어져 나온 부스러기",
   "common":"흔한",
