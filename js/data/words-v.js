@@ -50,6 +50,7 @@ window.VOCAB_V = [
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
   { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
   { word:"violent", exams:["수능"], pron:"바이얼런트", pos:"adj", level:"B1", meanings:["폭력적인","격렬한"], syn:["brutal","aggressive","fierce"], ant:["nonviolent"], ex:[{ s:"The movie was too {{}} for young children.", f:"violent", ko:"그 영화는 어린아이들이 보기에 너무 폭력적이었다." }] },
+  { word:"violate", exams:["수능"], pron:"바이얼레이트", pos:"v", level:"B2", meanings:["위반하다","침해하다"], syn:["infringe","break","disobey"], ant:["obey"], ex:[{ s:"Companies that {{}} safety rules must pay a fine.", f:"violate", ko:"안전 규칙을 위반한 회사는 벌금을 내야 한다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8

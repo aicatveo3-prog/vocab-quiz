@@ -57,6 +57,9 @@ window.VOCAB_W = [
   { word:"willingly", exams:["수능"], pron:"윌링리", pos:"adv", level:"B2", meanings:["기꺼이","자진해서"], syn:["readily","gladly","voluntarily"], ant:["reluctantly","unwillingly"] },
   { word:"worthless", exams:["수능"], pron:"워스리스", pos:"adj", level:"B2", meanings:["가치 없는","쓸모없는"], syn:["useless","valueless","futile"], ant:["precious"], ex:[{ s:"Speed is {{}} if the bus comes only once an hour.", f:"worthless", ko:"버스가 한 시간에 한 번만 온다면 속도는 쓸모가 없다." }] },
   { word:"wipe out", exams:["수능"], pron:"와이프 아웃", pos:"phr", level:"B2", meanings:["완전히 없애다","전멸시키다"] },
+  { word:"wage", exams:["수능"], pron:"웨이지", pos:"n", level:"B1", meanings:["임금","품삯"], syn:["salary","pay","earnings"], ex:[{ s:"The factory raised the minimum {{}} for its workers.", f:"wage", ko:"공장은 노동자들의 최저 임금을 올렸다." }] },
+  { word:"well-defined", exams:["수능"], pron:"웰 디파인드", pos:"adj", level:"C1", meanings:["명확한","뚜렷한"], syn:["clear-cut","definite","distinct"], ant:["vague"], ex:[{ s:"Good projects have {{}} goals from the start.", f:"well-defined", ko:"좋은 프로젝트는 처음부터 목표가 명확하다." }] },
+  { word:"wisdom", exams:["수능"], pron:"위즈덤", pos:"n", level:"B1", meanings:["지혜","통념"], ex:[{ s:"Old proverbs are full of practical {{}}.", f:"wisdom", ko:"옛 속담에는 실용적인 지혜가 가득하다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11

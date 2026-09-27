@@ -74,6 +74,10 @@ window.VOCAB_U = [
   { word:"unlikely", exams:["수능"], pron:"언라이클리", pos:"adj", level:"B1", meanings:["~할 것 같지 않은","있음 직하지 않은"], syn:["improbable","doubtful","implausible"], ant:["likely","probable"], ex:[{ s:"Rain is highly {{}} tomorrow, so you won't need an umbrella.", f:"unlikely", ko:"내일은 비가 올 가능성이 매우 낮으니 우산은 필요 없을 것이다." }] },
   { word:"unstable", exams:["수능"], pron:"언스테이블", pos:"adj", level:"B2", meanings:["불안정한","변하기 쉬운"], syn:["volatile","precarious","shaky"], ant:["stable"], ex:[{ s:"The old ladder was so {{}} that it shook with every step.", f:"unstable", ko:"낡은 사다리가 너무 불안정해서 한 걸음 디딜 때마다 흔들렸다." }] },
   { word:"unsure", exams:["수능"], pron:"언슈어", pos:"adj", level:"B1", meanings:["확신이 없는","자신 없는"], syn:["uncertain","doubtful","hesitant"], ant:["certain","sure"], ex:[{ s:"She stood at the corner, {{}} about which way to go.", f:"unsure", ko:"그녀는 어느 길로 가야 할지 확신이 서지 않은 채 모퉁이에 서 있었다." }] },
+  { word:"uncomfortable", exams:["수능"], pron:"언컴퍼터블", pos:"adj", level:"B1", meanings:["불편한","거북한"], ex:[{ s:"These new shoes are so {{}} that my feet hurt.", f:"uncomfortable", ko:"이 새 신발은 너무 불편해서 발이 아프다." }] },
+  { word:"underpinning", exams:["수능"], pron:"언더피닝", pos:"n", level:"C2", meanings:["토대","기반"], ex:[{ s:"The theory has a strong mathematical {{}}.", f:"underpinning", ko:"그 이론에는 튼튼한 수학적 토대가 있다." }] },
+  { word:"upward", exams:["수능"], pron:"업워드", pos:"adj", level:"B2", meanings:["위쪽으로의","상승하는"], ex:[{ s:"House prices have shown a steady {{}} trend.", f:"upward", ko:"집값은 꾸준한 상승 추세를 보여 왔다." }] },
+  { word:"utilization", exams:["수능"], pron:"유털리제이션", pos:"n", level:"C1", meanings:["활용","이용"], ex:[{ s:"Better {{}} of resources can cut costs.", f:"utilization", ko:"자원을 더 잘 활용하면 비용을 줄일 수 있다." }] },
 
   /* ══ 11차 · ubiquitous ~ understandably (20단어) ═══════════════════════════
      승격 6(unambiguous·unconventional·uncover·undergo·underlying·undermine) · 신규 14

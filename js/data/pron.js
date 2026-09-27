@@ -5653,7 +5653,6 @@ Object.assign(window.PRON, {
   "skill": "스킬",
   "skill from practice": "스킬 프롬 프랙티스",
   "skill with language": "스킬 위드 랭귀지",
-  "skilled": "스킬드",
   "skilled worker": "스킬드 워커",
   "skin guard from the sun": "스킨 가드 프롬 더 선",
   "skip over": "스킵 오버",
@@ -5929,7 +5928,6 @@ Object.assign(window.PRON, {
   "state of no movement": "스테이트 오브 노 무브먼트",
   "state of rising above": "스테이트 오브 라이징 어버브",
   "state under oath": "스테이트 언더 오스",
-  "statement": "스테이트먼트",
   "statement to be judged": "스테이트먼트 투 비 저지드",
   "stationary": "스테이셔네리",
   "statuary metal": "스태추에리 메털",
@@ -6602,7 +6600,6 @@ Object.assign(window.PRON, {
 
 Object.assign(window.PRON, {
   /* ── 8차: uncomfortable ~ zodiac study (178개) — 전량 완료 ────── */
-  "uncomfortable": "언컴퍼터블",
   "unconcern": "언컨선",
   "unconcerned": "언컨선드",
   "unconquerable": "언캉커러블",
@@ -6788,7 +6785,6 @@ Object.assign(window.PRON, {
   "viewers": "뷰어스",
   "vindicate": "빈더케이트",
   "vindictive": "빈딕티브",
-  "violate": "바이얼레이트",
   "violent anger": "바이얼런트 앵거",
   "violent disorder": "바이얼런트 디스오더",
   "viral illness": "바이럴 일니스",
@@ -9389,7 +9385,6 @@ Object.assign(window.PRON, {
   "vivacity": "비배서티",
   "vociferously": "보시퍼러슬리",
   "volunteers": "발런티어스",
-  "wage": "웨이지",
   "wariness": "웨어리니스",
   "washable": "워셔블",
   "watch": "와치",
@@ -9430,6 +9425,7 @@ Object.assign(window.PRON, {
   "encouraged": "인커리지드",
   "ever more": "에버 모어",
   "exasperation": "이그재스퍼레이션",
+  "exhausting": "이그조스팅",
   "faithfulness": "페이스풀니스",
   "far-off": "파 오프",
   "faraway": "파러웨이",
@@ -9478,5 +9474,6 @@ Object.assign(window.PRON, {
   "vice": "바이스",
   "voluntarily": "발런테럴리",
   "wait for": "웨이트 포",
+  "wearisome": "위어리섬",
   "wickedness": "위키드니스"
 });

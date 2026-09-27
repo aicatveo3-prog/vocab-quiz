@@ -64,6 +64,9 @@ window.VOCAB_T = [
   { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
   { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
   { word:"transferable", exams:["수능"], pron:"트랜스퍼러블", pos:"adj", level:"C1", meanings:["양도 가능한","옮길 수 있는"], ex:[{ s:"The concert pass is not {{}} to another person.", f:"transferable", ko:"그 공연 이용권은 다른 사람에게 양도할 수 없다." }] },
+  { word:"tiresome", exams:["수능"], pron:"타이어섬", pos:"adj", level:"C1", meanings:["지루한","귀찮은"], syn:["tedious","wearisome","exhausting"], ex:[{ s:"Filling out the same form again and again is {{}}.", f:"tiresome", ko:"같은 서류를 몇 번이고 작성하는 일은 지루하다." }] },
+  { word:"toxicity", exams:["수능"], pron:"탁시서티", pos:"n", level:"C1", meanings:["독성","유독성"], ex:[{ s:"Scientists tested the {{}} of the new chemical on plants.", f:"toxicity", ko:"과학자들은 새 화학 물질이 식물에 미치는 독성을 시험했다." }] },
+  { word:"trustee", exams:["수능"], pron:"트러스티", pos:"n", level:"C1", meanings:["수탁자","관리 위원"], ex:[{ s:"Her uncle served as the {{}} of her inheritance.", f:"trustee", ko:"그녀의 삼촌이 그녀가 받은 유산의 수탁자 역할을 했다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -1480,6 +1483,7 @@ Object.assign(window.GLOSS, {
   "exactly as written": "적힌 대로 고스란히",
   "exchange of money": "돈이 오가는 일",
   "excite greatly": "크게 들뜨게 하다",
+  "exhausting": "진을 빼는",
   "exhaustively": "철저하게, 남김없이",
   "exhilarated": "들뜬, 아주 신나는",
   "extra lessons given": "따로 더 해 주는 가르침",
@@ -1824,6 +1828,7 @@ Object.assign(window.GLOSS, {
   "victory at last": "끝내 얻은 이김",
   "warning of danger": "위험을 알리는 말",
   "waste thrown away": "내버린 찌꺼기",
+  "wearisome": "지루한, 지치게 하는",
   "wed at last": "드디어 짝을 이루다",
   "weigh in the decision": "결정에 견주어 넣다",
   "weigh on the mind of": "~의 마음을 무겁게 하다",

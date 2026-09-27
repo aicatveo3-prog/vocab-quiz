@@ -128,6 +128,11 @@ window.VOCAB_S = [
   { word:"secretive", exams:["수능"], pron:"시크리티브", pos:"adj", level:"C1", meanings:["비밀스러운","숨기는"], ex:[{ s:"He was very {{}} about his plans for the weekend.", f:"secretive", ko:"그는 주말 계획에 대해 무척 숨기려 했다." }] },
   { word:"selfie", exams:["수능"], pron:"셀피", pos:"n", level:"B1", meanings:["셀카","자기 촬영 사진"], ex:[{ s:"She held up her phone to take a {{}} with her friends.", f:"selfie", ko:"그녀는 친구들과 셀카를 찍으려고 휴대폰을 들어 올렸다." }] },
   { word:"self-portrait", exams:["수능"], pron:"셀프 포트릿", pos:"n", level:"B2", meanings:["자화상"], ex:[{ s:"Rembrandt painted his last {{}} in 1669.", f:"self-portrait", ko:"렘브란트는 1669년에 마지막 자화상을 그렸다." }] },
+  { word:"simplistic", exams:["수능"], pron:"심플리스틱", pos:"adj", level:"C1", meanings:["지나치게 단순화한"], ex:[{ s:"His {{}} answer ignored the real causes of the problem.", f:"simplistic", ko:"그의 지나치게 단순한 답은 문제의 진짜 원인을 무시했다." }] },
+  { word:"skilled", exams:["수능"], pron:"스킬드", pos:"adj", level:"B2", meanings:["숙련된","능숙한"], syn:["proficient","competent","adept"], ant:["unskilled"], ex:[{ s:"Only {{}} workers are allowed to operate this machine.", f:"skilled", ko:"숙련된 작업자만 이 기계를 다룰 수 있다." }] },
+  { word:"statement", exams:["수능"], pron:"스테이트먼트", pos:"n", level:"B1", meanings:["성명","진술"], ex:[{ s:"The minister's official {{}} was read on the evening news.", f:"statement", ko:"장관의 공식 성명이 저녁 뉴스에서 낭독되었다." }] },
+  { word:"strong", exams:["수능"], pron:"스트롱", pos:"adj", level:"B1", meanings:["강한","튼튼한"], syn:["powerful","sturdy","robust"], ant:["weak","feeble"], ex:[{ s:"The wind was so {{}} that it knocked down several trees.", f:"strong", ko:"바람이 너무 강해서 나무 몇 그루가 쓰러졌다." }] },
+  { word:"symbolically", exams:["수능"], pron:"심발리컬리", pos:"adv", level:"C1", meanings:["상징적으로"] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 이 챕터에서 갈라야 했던 자리는 셋이다.
@@ -3820,7 +3825,6 @@ Object.assign(window.GLOSS, {
   "vie with others": "남들과 겨루다",
   "view coloured by feeling": "느낌이 물든 생각",
   "view of the land": "땅이 보이는 모습",
-  "wage": "임금, 품삯",
   "walk out of": "~에서 걸어 나오다",
   "walk unsteadily": "흔들리며 걷다",
   "walk with long steps": "긴 걸음으로 걷다",

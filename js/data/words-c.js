@@ -2227,7 +2227,6 @@ Object.assign(window.GLOSS, {
   "unwittingly":"무심코, 자기도 모르게",
   "vagueness":"모호함",
   "victim":"피해자, 희생자",
-  "violate":"위반하다",
   "wariness": "경계심, 신중함",
   "warm":"따뜻한",
   "weak":"약한",
