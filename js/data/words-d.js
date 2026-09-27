@@ -1877,7 +1877,6 @@ Object.assign(window.GLOSS, {
   "expendable":"없애도 되는, 소모성의",
   "fire":"해고하다",
   "illustrious":"걸출한, 이름난",
-  "imbalance":"불균형",
   "inborn":"타고난, 선천적인",
   "interval":"간격, 사이",
   "liquefy":"액화하다, 녹이다",

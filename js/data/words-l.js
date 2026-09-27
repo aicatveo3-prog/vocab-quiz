@@ -52,6 +52,11 @@ window.VOCAB_L = [
   { word:"look after", exams:["공무원"], pron:"룩 애프터", pos:"phr", level:"B1", meanings:["돌보다","보살피다"], syn:["take care of","care for","tend"] },
   { word:"lose track of", exams:["공무원"], pron:"루즈 트랙 오브", pos:"phr", level:"B2", meanings:["~을 놓치다","~을 잊다"] },
   { word:"look ~ in the eye", exams:["공무원"], pron:"룩 인 디 아이", pos:"phr", level:"B2", meanings:["~의 눈을 똑바로 보다"] },
+  { word:"leverage", exams:["수능"], pron:"레버리지", pos:"v", level:"C1", meanings:["활용하다","지렛대로 이용하다"], syn:["exploit","utilize","harness"], ex:[{ s:"Rival firms sometimes cooperate to {{}} important resources.", f:"leverage", ko:"경쟁 기업들은 때로 중요한 자원을 활용하려고 협력한다." }] },
+  { word:"liberty", exams:["수능"], pron:"리버티", pos:"n", level:"B2", meanings:["자유","해방"], syn:["freedom","independence","autonomy"], ant:["captivity"], ex:[{ s:"Good laws do not unfairly limit human {{}}.", f:"liberty", ko:"좋은 법은 인간의 자유를 부당하게 제한하지 않는다." }] },
+  { word:"life-threatening", exams:["수능"], pron:"라이프 스레트닝", pos:"adj", level:"B2", meanings:["생명을 위협하는"], ex:[{ s:"Hospitals must always be ready for {{}} emergencies.", f:"life-threatening", ko:"병원은 생명을 위협하는 응급 상황에 늘 대비해야 한다." }] },
+  { word:"lifeless", exams:["수능"], pron:"라이프리스", pos:"adj", level:"B2", meanings:["생명이 없는","생기 없는"], syn:["inanimate","dull","listless"], ant:["lively"], ex:[{ s:"Without any movement, the dress on the display figure looked {{}}.", f:"lifeless", ko:"전혀 움직임이 없어 전시용 인체 모형에 입힌 옷은 생기 없어 보였다." }] },
+  { word:"limitation", exams:["수능"], pron:"리미테이션", pos:"n", level:"B2", meanings:["한계","제약"], syn:["constraint","restriction","drawback"], ex:[{ s:"Writers must recognize the {{}} of writing without feedback.", f:"limitation", ko:"작가는 피드백 없는 글쓰기의 한계를 인식해야 한다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -756,6 +761,7 @@ Object.assign(window.GLOSS, {
   "cabin": "오두막",
   "campaigner": "운동가, 캠페인 참여자",
   "cap": "마개",
+  "captivity": "감금, 포로 생활",
   "care for": "보살피다, 좋아하다",
   "cattle": "소 떼",
   "cheaply made": "싸게 만든",
@@ -829,6 +835,7 @@ Object.assign(window.GLOSS, {
   "lie in wait": "숨어서 기다리다",
   "lightheartedness": "마음 가벼움",
   "limping": "다리를 저는",
+  "listless": "무기력한",
   "litigation": "소송 절차",
   "long life": "오랜 수명",
   "make redundant": "정리 해고하다",

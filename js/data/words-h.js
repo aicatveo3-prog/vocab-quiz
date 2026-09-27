@@ -33,6 +33,10 @@ window.VOCAB_H = [
   { word:"heirloom", exams:["공무원"], pron:"에어룸", pos:"n", level:"C1", meanings:["가보","대대로 물려받은 물건"], ex:[{ s:"This ring is a family {{}} that my great-grandmother once wore.", f:"heirloom", ko:"이 반지는 증조할머니가 끼시던 집안의 가보다." }] },
   { word:"hypnotic", exams:["공무원"], pron:"힙나틱", pos:"adj", level:"C1", meanings:["최면을 거는","넋을 빼놓는"], ex:[{ s:"The serpent's {{}} eyes seemed to follow every visitor.", f:"hypnotic", ko:"뱀의 최면을 거는 듯한 눈이 모든 방문객을 따라다니는 것 같았다." }] },
   { word:"have an eye for", exams:["공무원"], pron:"해브 언 아이 포", pos:"phr", level:"B2", meanings:["~을 보는 안목이 있다"] },
+  { word:"harmony", exams:["수능"], pron:"하머니", pos:"n", level:"B1", meanings:["조화","화합"], syn:["accord","concord","unity"], ant:["discord"], ex:[{ s:"Under fair laws, people can live together in {{}}.", f:"harmony", ko:"공정한 법 아래에서 사람들은 조화롭게 함께 살 수 있다." }] },
+  { word:"high-minded", exams:["수능"], pron:"하이 마인디드", pos:"adj", level:"C2", meanings:["고결한","뜻이 높은"], syn:["noble","principled","idealistic","lofty"], ex:[{ s:"Her {{}} ideals inspired many young people.", f:"high-minded", ko:"그녀의 고결한 이상은 많은 젊은이에게 영감을 주었다." }] },
+  { word:"high-profile", exams:["수능"], pron:"하이 프로파일", pos:"adj", level:"C1", meanings:["세간의 이목을 끄는","유명한"], ex:[{ s:"The small festival grew into one of the country's most {{}} events.", f:"high-profile", ko:"그 작은 축제는 나라에서 가장 이목을 끄는 행사 중 하나로 성장했다." }] },
+  { word:"honor", exams:["수능"], pron:"아너", pos:"n", level:"B1", meanings:["명예","경의"], syn:["dignity","respect","esteem"], ant:["disgrace"], ex:[{ s:"The new building was named after him in his {{}}.", f:"honor", ko:"그를 기리기 위해 새 건물에 그의 이름이 붙었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
@@ -578,6 +582,7 @@ Object.assign(window.GLOSS, {
   "central office":"중앙 사무소",
   "class system":"계급 제도",
   "cleanliness":"청결",
+  "concord": "화합, 일치",
   "concordant":"조화하는",
   "conjecture":"추측",
   "core region":"핵심 지역",

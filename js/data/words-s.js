@@ -3168,7 +3168,6 @@ Object.assign(window.GLOSS, {
   "hygienic": "위생적인",
   "idea put forward": "내놓은 생각",
   "idiocy": "우둔함, 멍청함",
-  "imitation": "모방, 모조",
   "in sequence": "순서대로, 차례차례",
   "in short supply": "공급이 모자란",
   "in some degree": "얼마간은",
