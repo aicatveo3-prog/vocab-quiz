@@ -23,10 +23,10 @@ window.VOCAB_H = [
   { word:"hormone", exams:["공무원"], pron:"호르몬", pos:"n", level:"B2", meanings:["호르몬"], ex:[{ s:"Glands release chemical {{}} into the bloodstream.", f:"hormones", ko:"분비샘은 화학 호르몬을 혈류로 방출한다." }] },
   { word:"habitable", exams:["공무원"], pron:"해비터블", pos:"adj", level:"C1", meanings:["살기에 적합한","거주할 수 있는"], syn:["livable","inhabitable","hospitable"], ant:["uninhabitable"], ex:[{ s:"People will move to more {{}} areas as the climate changes.", f:"habitable", ko:"기후가 변하면서 사람들은 더 살기 좋은 지역으로 이동할 것이다." }] },
   { word:"handle", exams:["공무원"], pron:"핸들", pos:"v", level:"B1", meanings:["다루다","감당하다"], syn:["deal with","cope with","manage"], ex:[{ s:"Tell our assistant, and she will {{}} it.", f:"handle", ko:"우리 조수에게 말하면 그녀가 처리할 거예요." }] },
-  { word:"hands-on", exams:["공무원"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
-  { word:"harmful", exams:["공무원"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
+  { word:"hands-on", exams:["공무원","수능"], pron:"핸즈 온", pos:"adj", level:"B2", meanings:["직접 해 보는","실제 참여하는"], syn:["practical","manual","experiential"], ex:[{ s:"We often learn best from {{}} experience.", f:"hands-on", ko:"우리는 흔히 직접 해 보는 경험에서 가장 잘 배운다." }] },
+  { word:"harmful", exams:["공무원","수능"], pron:"함풀", pos:"adj", level:"B1", meanings:["해로운","유해한"], syn:["damaging","detrimental","destructive"], ant:["harmless","beneficial"], ex:[{ s:"Blue light from screens can be {{}} in the evening.", f:"harmful", ko:"화면에서 나오는 블루라이트는 저녁에 해로울 수 있다." }] },
   { word:"hopeless", exams:["공무원"], pron:"호플리스", pos:"adj", level:"B1", meanings:["절망적인","형편없는"], syn:["desperate","despairing","futile"], ant:["hopeful"], ex:[{ s:"Einstein would have been {{}} at catching a rhinoceros.", f:"hopeless", ko:"아인슈타인도 코뿔소를 잡는 데는 형편없었을 것이다." }], gov:{ prep:["at"], usage:"be hopeless at ~ : ~에 아주 서툴다" } },
-  { word:"hunter-gatherer", exams:["공무원"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
+  { word:"hunter-gatherer", exams:["공무원","수능"], pron:"헌터 개더러", pos:"n", level:"C1", meanings:["수렵 채집인"], ex:[{ s:"A Stone Age {{}} knew how to make a fire.", f:"hunter-gatherer", ko:"석기 시대의 수렵 채집인은 불을 피우는 법을 알았다." }] },
   { word:"hydropower", exams:["공무원"], pron:"하이드로파워", pos:"n", level:"C1", meanings:["수력 발전","수력"], ex:[{ s:"Existing {{}} plants can always earn a profit.", f:"hydropower", ko:"기존 수력 발전소는 언제나 이익을 낼 수 있다." }] },
   { word:"have no alternative but to", exams:["공무원"], pron:"해브 노 얼터너티브 벗 투", pos:"phr", level:"B2", meanings:["~할 수밖에 없다"], syn:["have no choice but to","cannot help but","be compelled to do"] },
   { word:"historically", exams:["공무원"], pron:"히스토리컬리", pos:"adv", level:"B2", meanings:["역사적으로","예로부터"], syn:["traditionally","in the past","formerly"], ex:[{ s:"The region has {{}} relied on farming.", f:"historically", ko:"그 지역은 예로부터 농업에 의존해 왔다." }] },
@@ -37,10 +37,24 @@ window.VOCAB_H = [
   { word:"high-minded", exams:["수능"], pron:"하이 마인디드", pos:"adj", level:"C2", meanings:["고결한","뜻이 높은"], syn:["noble","principled","idealistic","lofty"], ex:[{ s:"Her {{}} ideals inspired many young people.", f:"high-minded", ko:"그녀의 고결한 이상은 많은 젊은이에게 영감을 주었다." }] },
   { word:"high-profile", exams:["수능"], pron:"하이 프로파일", pos:"adj", level:"C1", meanings:["세간의 이목을 끄는","유명한"], ex:[{ s:"The small festival grew into one of the country's most {{}} events.", f:"high-profile", ko:"그 작은 축제는 나라에서 가장 이목을 끄는 행사 중 하나로 성장했다." }] },
   { word:"honor", exams:["수능"], pron:"아너", pos:"n", level:"B1", meanings:["명예","경의"], syn:["dignity","respect","esteem"], ant:["disgrace"], ex:[{ s:"The new building was named after him in his {{}}.", f:"honor", ko:"그를 기리기 위해 새 건물에 그의 이름이 붙었다." }] },
+  { word:"harm", exams:["수능"], pron:"함", pos:"v", level:"B1", meanings:["해치다","손상시키다"], syn:["damage","hurt","injure"], ex:[{ s:"Too much sunlight can {{}} your skin.", f:"harm", ko:"햇빛을 너무 많이 쬐면 피부가 상할 수 있다." }] },
+  { word:"hesitation", exams:["수능"], pron:"헤지테이션", pos:"n", level:"B2", meanings:["망설임","주저"], ex:[{ s:"After a moment's {{}}, he agreed to go hiking.", f:"hesitation", ko:"잠시 망설인 끝에 그는 하이킹을 가기로 했다." }] },
+  { word:"heuristic", exams:["수능"], pron:"휴리스틱", pos:"adj", level:"C1", meanings:["경험에 의존한","어림짐작의"], ex:[{ s:"People often make quick, {{}} judgments without careful thought.", f:"heuristic", ko:"사람들은 흔히 깊이 생각하지 않고 빠른 어림짐작으로 판단한다." }] },
+  { word:"historical", exams:["수능"], pron:"히스토리컬", pos:"adj", level:"B1", meanings:["역사의","역사적인"], ex:[{ s:"The museum displays {{}} documents from the war.", f:"historical", ko:"그 박물관은 전쟁 당시의 역사 문서를 전시한다." }] },
+  { word:"honesty", exams:["수능"], pron:"아니스티", pos:"n", level:"B1", meanings:["정직","솔직함"], syn:["integrity","sincerity","truthfulness"], ant:["dishonesty"], ex:[{ s:"Farmers earned good reputations for {{}} and fairness.", f:"honesty", ko:"농부들은 정직과 공정함으로 좋은 평판을 얻었다." }] },
+  { word:"host", exams:["수능"], pron:"호스트", pos:"n", level:"B2", meanings:["주최자","다수"], ex:[{ s:"The {{}} welcomed each guest at the door.", f:"host", ko:"주최자는 문 앞에서 손님을 한 명씩 맞이했다." }] },
+  { word:"handful", exams:["수능"], pron:"핸드풀", pos:"n", level:"B2", meanings:["한 줌","소수"], ex:[{ s:"He grabbed a big {{}} of nuts from the bowl.", f:"handful", ko:"그는 그릇에서 견과류를 크게 한 줌 집었다." }] },
+  { word:"hopeful", exams:["수능"], pron:"호프풀", pos:"adj", level:"B2", meanings:["희망에 찬","기대하는"], syn:["optimistic","positive","promising"], ant:["hopeless"], ex:[{ s:"After the good news, everyone felt {{}} about the future.", f:"hopeful", ko:"좋은 소식을 듣고 모두가 미래에 희망을 품었다." }] },
+  { word:"horizon", exams:["수능"], pron:"허라이즌", pos:"n", level:"B2", meanings:["지평선","시야"], ex:[{ s:"The sun slowly disappeared below the {{}}.", f:"horizon", ko:"해가 천천히 지평선 아래로 사라졌다." }] },
+  { word:"hardly", exams:["수능"], pron:"하들리", pos:"adv", level:"B1", meanings:["거의 ~ 않다","간신히"], syn:["barely","scarcely","rarely"] },
+  { word:"harmonize", exams:["수능"], pron:"하머나이즈", pos:"v", level:"C1", meanings:["조화시키다","조화를 이루다"], syn:["reconcile","coordinate","blend"], ant:["clash"], ex:[{ s:"The two singers' voices {{}} beautifully.", f:"harmonize", ko:"두 가수의 목소리가 아름답게 어우러진다." }] },
+  { word:"humorous", exams:["수능"], pron:"휴머러스", pos:"adj", level:"B2", meanings:["재미있는","유머러스한"], syn:["amusing","witty","comic"], ant:["serious"], ex:[{ s:"His {{}} speech made everyone at the wedding laugh.", f:"humorous", ko:"그의 재미있는 연설에 결혼식 하객 모두가 웃었다." }] },
+  { word:"heartbroken", exams:["수능"], pron:"하트브로컨", pos:"adj", level:"B2", meanings:["비통해하는","상심한"], ex:[{ s:"She was {{}} after losing her championship belt.", f:"heartbroken", ko:"그녀는 챔피언 벨트를 잃고 상심했다." }] },
+  { word:"horrified", exams:["수능"], pron:"호러파이드", pos:"adj", level:"B2", meanings:["겁에 질린","충격받은"], ex:[{ s:"The parents were {{}} to see their child near the cliff.", f:"horrified", ko:"부모는 아이가 절벽 가까이 있는 것을 보고 겁에 질렸다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '서식지' 와 같은 갈래다. environment 의 유의어로 쓰인다. */
-  { word:"habitat", pron:"해비탯", pos:"n", level:"B2", meanings:["서식지","거주지"],
+  { word:"habitat", exams:["수능"], pron:"해비탯", pos:"n", level:"B2", meanings:["서식지","거주지"],
     syn:["environment","dwelling","territory"],
     ex:[{ s:"The wetland provides a natural {{}} for migratory birds.", f:"habitat", ko:"그 습지는 철새에게 자연 서식지를 제공한다." }] },
 
@@ -124,7 +138,7 @@ window.VOCAB_H = [
     ex:[{ s:"Diamond is famous for its extreme {{}}.", f:"hardness", ko:"다이아몬드는 극도의 단단함으로 유명하다." }] },
 
   /* 승격 ① — GLOSS '고난, 역경' 과 같은 갈래다. adversity·deprivation 의 유의어로 쓰인다. */
-  { word:"hardship", pron:"하드십", pos:"n", level:"B2", meanings:["고난","역경"],
+  { word:"hardship", exams:["수능"], pron:"하드십", pos:"n", level:"B2", meanings:["고난","역경"],
     syn:["adversity","deprivation","privation"],
     ex:[{ s:"Many families faced severe {{}} during the drought.", f:"hardship", ko:"가뭄 동안 많은 가정이 극심한 고난을 겪었다." }] },
 
@@ -190,7 +204,7 @@ window.VOCAB_H = [
 
   /* 원본 첫 뜻 '~할 수밖에 없다' 는 기존 표제어 be obliged to 와 같다.
      '어쩔 수 없이 ~하다' 를 앞에 두어 갈랐다. */
-  { word:"have no choice but to", pron:"해브 노 초이스 벗 투", pos:"phr", level:"B2", meanings:["어쩔 수 없이 ~하다"],
+  { word:"have no choice but to", exams:["수능"], pron:"해브 노 초이스 벗 투", pos:"phr", level:"B2", meanings:["어쩔 수 없이 ~하다"],
     syn:["be forced to","be compelled to","have no option but to"] },
 
   { word:"have nothing to do with", pron:"해브 너싱 투 두 위드", pos:"phr", level:"B2", meanings:["~와 전혀 관계가 없다"],
@@ -202,7 +216,7 @@ window.VOCAB_H = [
   { word:"have to do with", pron:"해브 투 두 위드", pos:"phr", level:"B1", meanings:["~와 관계가 있다"],
     syn:["concern","relate to","involve"] },
 
-  { word:"hazard", exams:["공무원"], pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
+  { word:"hazard", exams:["공무원","수능"], pron:"해저드", pos:"n", level:"B2", meanings:["위험","위험 요소"],
     syn:["danger","risk","peril"],
     ex:[{ s:"Slippery floors are a common {{}} in the workplace.", f:"hazard", ko:"미끄러운 바닥은 직장에서 흔한 위험 요소이다." }] },
 
@@ -230,7 +244,7 @@ window.VOCAB_H = [
 
   /* ── 챕터 3 ─────────────────────────────── */
 
-  { word:"hear from", exams:["공무원"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
+  { word:"hear from", exams:["공무원","수능"], pron:"히어 프롬", pos:"phr", level:"B1", meanings:["~로부터 연락을 받다"],
     syn:["get word from","receive news from","be contacted by"] },
 
   { word:"heartfelt", pron:"하트펠트", pos:"adj", level:"B2", meanings:["진심에서 우러난"],
@@ -264,7 +278,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — heighten 은 PRON 만 있고 GLOSS 는 없다. enhance 의 유의어로 쓰인다.
      heighten 과 height 는 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"heighten", pron:"하이튼", pos:"v", level:"B2", meanings:["높이다","고조시키다"],
+  { word:"heighten", exams:["수능"], pron:"하이튼", pos:"v", level:"B2", meanings:["높이다","고조시키다"],
     syn:["intensify","amplify","elevate"],
     ex:[{ s:"The report only served to {{}} public concern.", f:"heighten", ko:"그 보고서는 대중의 우려를 고조시키기만 했다." }] },
 
@@ -285,7 +299,7 @@ window.VOCAB_H = [
     ex:[{ s:"Most of the world's population lives in the northern {{}}.", f:"hemisphere", ko:"세계 인구의 대부분은 북반구에 산다." }] },
 
   /* 승격 ① — GLOSS '그러므로, 따라서' 와 같은 갈래다. consequently 의 유의어. */
-  { word:"hence", pron:"헨스", pos:"adv", level:"B2", meanings:["그러므로","따라서"],
+  { word:"hence", exams:["수능"], pron:"헨스", pos:"adv", level:"B2", meanings:["그러므로","따라서"],
     syn:["therefore","consequently","thus"],
     ex:[{ s:"Sales fell sharply; {{}} the company cut costs.", f:"hence", ko:"매출이 급감했다. 그러므로 회사는 비용을 줄였다." }] },
 
@@ -343,7 +357,7 @@ window.VOCAB_H = [
 
   /* 승격 ① — GLOSS '강조하다; 하이라이트' 와 같은 갈래다. accentuate·emphasize
      두 문제가 이 단어를 유의어로 쓴다. */
-  { word:"highlight", pron:"하이라이트", pos:"v", level:"B2", meanings:["강조하다"],
+  { word:"highlight", exams:["수능"], pron:"하이라이트", pos:"v", level:"B2", meanings:["강조하다"],
     syn:["emphasize","underline","spotlight"],
     ex:[{ s:"The report aims to {{}} the key findings.", f:"highlight", ko:"그 보고서는 핵심 발견을 강조하는 것을 목표로 한다." }] },
 
@@ -466,17 +480,17 @@ window.VOCAB_H = [
 
   /* 승격 ② — GLOSS '가정의, 가정용의' 이다. domestic 이 형용사를 쓴다.
      원본은 '가정' (명사)인데 domestic 문맥을 지키려면 형용사로 둬야 한다. */
-  { word:"household", exams:["공무원"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
+  { word:"household", exams:["공무원","수능"], pron:"하우스홀드", pos:"adj", level:"B1", meanings:["가정의","가정용의"],
     syn:["domestic","family","residential"],
     ex:[{ s:"{{}} waste is collected twice a week.", f:"Household", ko:"가정 폐기물은 주 2회 수거된다." }] },
 
   /* 원본은 '인류; 인간성' 이다. humankind 와 첫 뜻이 같다(둘 다 '인류').
      실측으로 앱이 같은 문제에 안 넣는 것을 확인했다(meaningsOverlap=true). */
-  { word:"humanity", pron:"휴매너티", pos:"n", level:"B2", meanings:["인류","인간성"],
+  { word:"humanity", exams:["수능"], pron:"휴매너티", pos:"n", level:"B2", meanings:["인류","인간성"],
     syn:["humankind","mankind","human race"],
     ex:[{ s:"The discovery could benefit all of {{}}.", f:"humanity", ko:"그 발견은 인류 전체에 이로울 수 있다." }] },
 
-  { word:"humankind", pron:"휴먼카인드", pos:"n", level:"B2", meanings:["인류","인간"],
+  { word:"humankind", exams:["수능"], pron:"휴먼카인드", pos:"n", level:"B2", meanings:["인류","인간"],
     syn:["humanity","mankind","human race"],
     ex:[{ s:"{{}} has always sought to understand the stars.", f:"Humankind", ko:"인류는 항상 별을 이해하려 했다." }] },
 
@@ -549,7 +563,7 @@ window.VOCAB_H = [
     syn:["insincere","two-faced","deceitful"], ant:["sincere"],
     ex:[{ s:"It would be {{}} to preach honesty while lying.", f:"hypocritical", ko:"거짓말을 하면서 정직을 설교하는 것은 위선적일 것이다." }] },
 
-  { word:"hypothesis", pron:"하이파씨시스", pos:"n", level:"B2", meanings:["가설","가정"],
+  { word:"hypothesis", exams:["수능"], pron:"하이파씨시스", pos:"n", level:"B2", meanings:["가설","가정"],
     syn:["theory","conjecture","premise"],
     ex:[{ s:"The scientist tested her {{}} with a series of experiments.", f:"hypothesis", ko:"그 과학자는 일련의 실험으로 자신의 가설을 검증했다." }] },
 
@@ -562,6 +576,7 @@ window.VOCAB_H = [
 /* 유의어 뜻 사전 병합 */
 Object.assign(window.GLOSS, {
   "abhorrent":"혐오스러운",
+  "amusing": "재미있는, 즐거운",
   "animosity":"적의, 앙심",
   "antagonism":"적대, 대립",
   "antagonistic":"적대적인",
@@ -582,6 +597,7 @@ Object.assign(window.GLOSS, {
   "central office":"중앙 사무소",
   "class system":"계급 제도",
   "cleanliness":"청결",
+  "comic": "웃기는, 희극의",
   "concord": "화합, 일치",
   "concordant":"조화하는",
   "conjecture":"추측",
@@ -589,10 +605,10 @@ Object.assign(window.GLOSS, {
   "dampness":"습기",
   "danger":"위험, 위험성",
   "dangerous":"위험한",
-  "defenseless":"무방비의",
   "degraded":"품위가 떨어진",
   "detainee":"억류자",
   "dip":"움푹 꺼진 곳",
+  "dishonesty": "부정직",
   "dissenter":"반대자",
   "dither":"망설이다",
   "duplicity":"이중성",
@@ -621,6 +637,7 @@ Object.assign(window.GLOSS, {
   "hub":"중심지, 허브",
   "human race":"인류(전체)",
   "humbleness":"겸허",
+  "hurt": "다치게 하다",
   "in the past": "과거에",
   "incompletely":"불완전하게",
   "indignity":"모욕",
@@ -629,6 +646,7 @@ Object.assign(window.GLOSS, {
   "inhabitable": "사람이 살 수 있는",
   "inheritor":"상속인, 계승자",
   "inhospitable":"불친절한",
+  "injure": "부상을 입히다",
   "innocuous":"해롭지 않은",
   "inoffensive":"불쾌하지 않은",
   "insincerity":"불성실",
@@ -643,7 +661,6 @@ Object.assign(window.GLOSS, {
   "longhand":"필기체",
   "love":"사랑",
   "low-pitched":"저음의",
-  "luxury":"호화스러운",
   "main office":"본사, 본부",
   "manslaughter":"과실치사",
   "meek":"순한, 온순한",
@@ -667,6 +684,7 @@ Object.assign(window.GLOSS, {
   "powerless":"무력한",
   "prejudice attack":"편견에 의한 공격",
   "profane":"세속적인",
+  "promising": "유망한",
   "ranking":"순위",
   "reaping":"수확",
   "receive news from":"~로부터 소식을 받다",
@@ -684,7 +702,6 @@ Object.assign(window.GLOSS, {
   "soften":"부드럽게 하다",
   "softness":"부드러움",
   "spend time with":"~와 시간을 보내다",
-  "spotlight":"주목하다",
   "squeaky":"삐걱거리는",
   "stash": "몰래 모아 둔 것",
   "stature":"키, 신장",
@@ -695,7 +712,7 @@ Object.assign(window.GLOSS, {
   "toughen":"질기게 하다",
   "toughness":"강인함, 질김",
   "tradition":"전통",
-  "traditionally": "전통적으로",
+  "truthfulness": "진실성",
   "two-faced":"이중적인",
   "unalterable":"바꿀 수 없는",
   "unassuming":"겸손한",
@@ -704,5 +721,6 @@ Object.assign(window.GLOSS, {
   "upscale":"상류층 대상의",
   "wait":"기다리다",
   "welcoming":"환영하는",
+  "witty": "재치 있는",
   "zone":"지역, 구역"
 });

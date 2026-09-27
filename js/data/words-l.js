@@ -31,7 +31,7 @@ window.VOCAB_L = [
   { word:"legitimately", exams:["공무원"], pron:"리지티밋리", pos:"adv", level:"C1", meanings:["정당하게","합법적으로"], syn:["legally","rightfully","validly"], ant:["illegitimately"], ex:[{ s:"If you're {{}} concerned about the offer, say so.", f:"legitimately", ko:"제안이 정당하게 우려된다면 그렇게 말하라." }] },
   { word:"literati", exams:["공무원"], pron:"리터라티", pos:"n", level:"C2", meanings:["지식인들","문인들"], syn:["intellectuals","scholars","intelligentsia"], ex:[{ s:"Coffeehouses served merchants, traders, and {{}}.", f:"literati", ko:"커피하우스는 상인, 무역상, 문인들을 상대했다." }] },
   { word:"lobbyist", exams:["공무원"], pron:"로비스트", pos:"n", level:"C1", meanings:["로비스트"], syn:["advocate","campaigner","pressure agent"], ex:[{ s:"Businesses hire a {{}} to take concerns to Congress.", f:"lobbyist", ko:"기업들은 의회에 사안을 전하려고 로비스트를 고용한다." }] },
-  { word:"localized", exams:["공무원"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
+  { word:"localized", exams:["공무원","수능"], pron:"로컬라이즈드", pos:"adj", level:"C1", meanings:["국지적인","국부적인"], syn:["local","regional","confined"], ant:["widespread"], ex:[{ s:"G-force can be {{}}, affecting only part of the body.", f:"localized", ko:"중력은 국부적일 수 있어 몸의 일부에만 작용한다." }] },
   { word:"longhouse", exams:["공무원"], pron:"롱하우스", pos:"n", level:"C2", meanings:["롱하우스","전통 공동 주거"], ex:[{ s:"The mudslide covered several {{}}.", f:"longhouses", ko:"산사태가 여러 채의 롱하우스를 덮었다." }] },
   { word:"ludicrous", exams:["공무원"], pron:"루디크러스", pos:"adj", level:"C2", meanings:["터무니없는","우스꽝스러운"], syn:["absurd","ridiculous","preposterous"], ant:["sensible"], ex:[{ s:"The claim sounds {{}} to most people.", f:"ludicrous", ko:"그 주장은 대부분의 사람에게 터무니없게 들린다." }] },
   { word:"landscape", exams:["공무원","수능"], pron:"랜드스케이프", pos:"n", level:"B2", meanings:["풍경","지형"], syn:["scenery","terrain","view"], ex:[{ s:"They opened {{}} to encourage food animals.", f:"landscapes", ko:"그들은 먹이 동물을 늘리려고 지형을 개방했다." }] },
@@ -43,7 +43,7 @@ window.VOCAB_L = [
   { word:"live up to", exams:["공무원"], pron:"리브 업 투", pos:"phr", level:"B2", meanings:["~에 부응하다","~에 걸맞게 하다"], syn:["fulfill","measure up to","meet"], ant:["fall short of"] },
   { word:"live within one's means", exams:["공무원"], pron:"리브 위딘 원스 민즈", pos:"phr", level:"C1", meanings:["분수에 맞게 살다","수입 안에서 생활하다"] },
   { word:"loaded", exams:["공무원"], pron:"로디드", pos:"adj", level:"C1", meanings:["함축적 의미가 담긴","가득 실은"], ex:[{ s:"Words like freedom are {{}} with many meanings.", f:"loaded", ko:"자유 같은 단어에는 많은 의미가 담겨 있다." }], gov:{ prep:["with"], usage:"be loaded with ~ : ~로 가득하다, ~이 잔뜩 담겨 있다" } },
-  { word:"latter", exams:["공무원"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
+  { word:"latter", exams:["공무원","수능"], pron:"래터", pos:"adj", level:"B2", meanings:["후자의","후반의"], ant:["former"], ex:[{ s:"Sales rose sharply in the {{}} half of the year.", f:"latter", ko:"그해 하반기에 판매가 크게 늘었다." }] },
   { word:"let on", exams:["공무원"], pron:"렛 온", pos:"phr", level:"C1", meanings:["비밀을 털어놓다","누설하다"], syn:["reveal","disclose","divulge"] },
   { word:"liberalize", exams:["공무원"], pron:"리버럴라이즈", pos:"v", level:"C1", meanings:["자유화하다","규제를 풀다"], ant:["regulate"], ex:[{ s:"The government decided to {{}} the energy market.", f:"liberalize", ko:"정부는 에너지 시장을 자유화하기로 결정했다." }] },
   { word:"loneliness", exams:["공무원"], pron:"론리니스", pos:"n", level:"B1", meanings:["외로움","고독"], syn:["isolation","solitude","seclusion"], ant:["companionship"], ex:[{ s:"{{}} is now described as a public health epidemic.", f:"Loneliness", ko:"외로움은 이제 공중 보건상의 유행병으로 묘사된다." }] },
@@ -60,6 +60,25 @@ window.VOCAB_L = [
   { word:"lively", exams:["수능"], pron:"라이블리", pos:"adj", level:"B1", meanings:["활기찬","생동감 있는"], syn:["energetic","vibrant","spirited"], ant:["dull","lifeless"], ex:[{ s:"Their conversation grew {{}} as everyone joined in.", f:"lively", ko:"모두가 끼어들면서 그들의 대화는 활기를 띠었다." }] },
   { word:"loop", exams:["수능"], pron:"루프", pos:"n", level:"B2", meanings:["고리","순환"], ex:[{ s:"Perception and action form a feedback {{}}.", f:"loop", ko:"지각과 행동은 피드백 고리를 이룬다." }] },
   { word:"loyalty", exams:["수능"], pron:"로열티", pos:"n", level:"B2", meanings:["충성","충실"], syn:["allegiance","devotion","faithfulness"], ant:["betrayal"], ex:[{ s:"The firms were built on family ties, trust, and {{}}.", f:"loyalty", ko:"그 회사들은 가족 유대, 신뢰, 충성을 바탕으로 세워졌다." }] },
+  { word:"laborer", exams:["수능"], pron:"레이버러", pos:"n", level:"B2", meanings:["노동자","인부"], ex:[{ s:"The {{}} carried heavy bricks all day in the heat.", f:"laborer", ko:"그 인부는 더위 속에서 하루 종일 무거운 벽돌을 날랐다." }] },
+  { word:"landowner", exams:["수능"], pron:"랜드오너", pos:"n", level:"C1", meanings:["지주","토지 소유자"], ex:[{ s:"The {{}} rented his fields to local farmers.", f:"landowner", ko:"그 지주는 자기 밭을 지역 농부들에게 빌려주었다." }] },
+  { word:"liberation", exams:["수능"], pron:"리버레이션", pos:"n", level:"C1", meanings:["해방","자유롭게 함"], ex:[{ s:"The {{}} of the city ended years of foreign rule.", f:"liberation", ko:"그 도시의 해방으로 수년간의 외세 지배가 끝났다." }] },
+  { word:"lifespan", exams:["수능"], pron:"라이프스팬", pos:"n", level:"B2", meanings:["수명","존속 기간"], ex:[{ s:"The average {{}} of a smartphone is only a few years.", f:"lifespan", ko:"스마트폰의 평균 수명은 몇 년에 불과하다." }] },
+  { word:"lifetime", exams:["수능"], pron:"라이프타임", pos:"n", level:"B1", meanings:["평생","일생"], ex:[{ s:"My grandmother saw huge changes during her {{}}.", f:"lifetime", ko:"우리 할머니는 평생 동안 엄청난 변화를 목격하셨다." }] },
+  { word:"locally", exams:["수능"], pron:"로컬리", pos:"adv", level:"B2", meanings:["지역에서","현지에서"] },
+  { word:"low", exams:["수능"], pron:"로", pos:"adj", level:"B1", meanings:["낮은","적은"], ex:[{ s:"The price is so {{}} that everyone can afford it.", f:"low", ko:"가격이 아주 낮아서 누구나 살 수 있다." }] },
+  { word:"luxury", exams:["수능"], pron:"럭셔리", pos:"n", level:"B2", meanings:["사치품","호화로움"], ex:[{ s:"They lived a life of {{}} in a huge mansion.", f:"luxury", ko:"그들은 거대한 저택에서 호화로운 삶을 살았다." }] },
+  { word:"leisure", exams:["수능"], pron:"레저", pos:"n", level:"B1", meanings:["여가","레저"], ex:[{ s:"Most people spend their {{}} time with family.", f:"leisure", ko:"대부분의 사람은 여가 시간을 가족과 함께 보낸다." }] },
+  { word:"linguist", exams:["수능"], pron:"링귀스트", pos:"n", level:"C1", meanings:["언어학자","외국어에 능통한 사람"], ex:[{ s:"The {{}} spent years studying ancient languages.", f:"linguist", ko:"그 언어학자는 수년간 고대 언어를 연구했다." }] },
+  { word:"learn", exams:["수능"], pron:"런", pos:"v", level:"B1", meanings:["배우다","알게 되다"], ex:[{ s:"Children {{}} new languages faster than adults do.", f:"learn", ko:"아이들은 어른보다 새 언어를 더 빨리 배운다." }] },
+  { word:"likeness", exams:["수능"], pron:"라이크니스", pos:"n", level:"C1", meanings:["닮음","유사성"], syn:["resemblance","similarity","sameness"], ex:[{ s:"There is a strong family {{}} between the two brothers.", f:"likeness", ko:"두 형제는 집안 내력으로 많이 닮았다." }] },
+  { word:"laughter", exams:["수능"], pron:"래프터", pos:"n", level:"B1", meanings:["웃음","웃음소리"], ex:[{ s:"The room was filled with {{}} during the comedy show.", f:"laughter", ko:"코미디 공연 내내 방은 웃음소리로 가득했다." }] },
+  { word:"lawmaker", exams:["수능"], pron:"로메이커", pos:"n", level:"B2", meanings:["입법자","국회의원"], ex:[{ s:"Every {{}} voted against the new tax.", f:"lawmaker", ko:"모든 국회의원이 새 세금에 반대표를 던졌다." }] },
+  { word:"leadership", exams:["수능"], pron:"리더십", pos:"n", level:"B2", meanings:["지도력","지도부"], ex:[{ s:"She showed strong {{}} during the crisis.", f:"leadership", ko:"그녀는 위기 동안 강한 지도력을 보여 주었다." }] },
+  { word:"legally", exams:["수능"], pron:"리걸리", pos:"adv", level:"C1", meanings:["법적으로","합법적으로"] },
+  { word:"lifestyle", exams:["수능"], pron:"라이프스타일", pos:"n", level:"B2", meanings:["생활 방식"], ex:[{ s:"Many young people now choose a simple {{}} with few possessions.", f:"lifestyle", ko:"요즘 많은 젊은이가 소유물이 적은 단순한 생활 방식을 택한다." }] },
+  { word:"literate", exams:["수능"], pron:"리터럿", pos:"adj", level:"C1", meanings:["글을 읽고 쓸 줄 아는","교양 있는"], ex:[{ s:"In ancient times, only a small part of the population was {{}}.", f:"literate", ko:"고대에는 인구의 극히 일부만 글을 읽고 쓸 줄 알았다." }] },
+  { word:"long-standing", exams:["수능"], pron:"롱 스탠딩", pos:"adj", level:"C1", meanings:["오래된","오래 지속된"], syn:["long-term","established","enduring"], ex:[{ s:"Their {{}} friendship began in elementary school.", f:"long-standing", ko:"그들의 오랜 우정은 초등학교 때 시작되었다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* labor·laboratory 는 어근이 같고 품사도 둘 다 n 이라 같은 보드에 올 수 있다.
@@ -81,7 +100,7 @@ window.VOCAB_L = [
      abound(ant)·deficiency(syn) 두 문제가 참조한다. 첫 뜻이 D 세트 deficiency 와
      같은데, 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다.
      원본의 동사 갈래('부족하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"lack", pron:"랙", pos:"n", level:"B1", meanings:["결핍","없음"],
+  { word:"lack", exams:["수능"], pron:"랙", pos:"n", level:"B1", meanings:["결핍","없음"],
     syn:["deficiency","shortage","absence"], ant:["abundance"],
     ex:[{ s:"The whole plan failed for {{}} of funding.", f:"lack", ko:"계획 전체가 자금 결핍으로 실패했다." }] },
 
@@ -113,7 +132,7 @@ window.VOCAB_L = [
 
   /* landfill·landlord·landmine 은 앞 네 글자가 같지만 뜻이 서로 완전히 달라
      같은 보드에 와도 짝을 고르는 데 무리가 없다. */
-  { word:"landfill", exams:["공무원"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
+  { word:"landfill", exams:["공무원","수능"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],
     syn:["dump","waste site","tip"],
     ex:[{ s:"Most of the plastic ends up in a {{}}.", f:"landfill", ko:"플라스틱 대부분은 쓰레기 매립지로 간다." }] },
 
@@ -159,7 +178,7 @@ window.VOCAB_L = [
      I 세트 표제어의 뜻이 '시작하다, 착수하다' 로 글자까지 같다. 사전 값을 그대로
      쓰면 두 표제어의 뜻이 완전히 같아져 4지선다에서 서로 오답 후보가 되지 못한다.
      참조가 쓰는 '착수하다' 를 첫 자리에 지키고, 원본의 '발사하다' 를 붙여 갈랐다. */
-  { word:"launch", exams:["공무원"], pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
+  { word:"launch", exams:["공무원","수능"], pron:"론치", pos:"v", level:"B2", meanings:["착수하다","발사하다"],
     syn:["initiate","set in motion","kick off"],
     ex:[{ s:"The agency will {{}} the satellite next month.", f:"launch", ko:"그 기관은 다음 달에 위성을 발사할 것이다." }] },
 
@@ -183,12 +202,12 @@ window.VOCAB_L = [
   /* 첫 뜻이 D 세트 dismiss 와 같지만, 뜻이 같은 표제어는 meaningsOverlap 이
      같은 보기에 함께 뜨지 못하게 막으므로 그대로 두었다.
      바로 뒤 lay-off(명사)와 품사가 달라(phr/n) 같은 보드에 안 온다. */
-  { word:"lay off", exams:["공무원"], pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
+  { word:"lay off", exams:["공무원","수능"], pron:"레이 오프", pos:"phr", level:"B2", meanings:["해고하다","일시 해고하다"],
     syn:["dismiss","let go","make redundant"] },
 
   /* 승격 ① — GLOSS '층, 겹' 을 글자까지 지켰다. crust(syn) 가 참조한다.
      원본의 동사 갈래('층을 이루다')는 pos 가 n 이라 담지 못했다. */
-  { word:"layer", exams:["공무원"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
+  { word:"layer", exams:["공무원","수능"], pron:"레이어", pos:"n", level:"B1", meanings:["층","겹"],
     syn:["crust","stratum","coating"],
     ex:[{ s:"A thin {{}} of dust covered the top shelf.", f:"layer", ko:"얇은 먼지 층이 맨 위 선반을 덮고 있었다." }] },
 
@@ -228,14 +247,14 @@ window.VOCAB_L = [
 
   /* leak 의 둘째 갈래가 '누출' 이라 이쪽은 '유출' 을 앞에 두었다. 품사도 달라
      (v/n) 같은 보드에 오지 않는다. */
-  { word:"leakage", pron:"리키지", pos:"n", level:"C1", meanings:["유출","누출"],
+  { word:"leakage", exams:["수능"], pron:"리키지", pos:"n", level:"C1", meanings:["유출","누출"],
     syn:["escape","seepage","discharge"],
     ex:[{ s:"Engineers traced the gas {{}} to a cracked pipe.", f:"leakage", ko:"기술자들은 가스 유출을 갈라진 관에서 찾아냈다." }] },
 
   /* 승격 ① — GLOSS '기울다; 여윈' 을 글자까지 지켰다. I 세트 incline 이
      '기울다' 갈래를 유의어로 참조하므로 원본('기대다; 날씬한') 대신 사전 쪽을
      남겼다 — 같은 갈래다. */
-  { word:"lean", exams:["공무원"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
+  { word:"lean", exams:["공무원","수능"], pron:"린", pos:"v", level:"B2", meanings:["기울다","여윈"],
     syn:["incline","tilt","slant"],
     ex:[{ s:"The old tower began to {{}} to one side.", f:"lean", ko:"그 낡은 탑은 한쪽으로 기울기 시작했다." }] },
 
@@ -256,7 +275,7 @@ window.VOCAB_L = [
   /* 승격 ① — GLOSS '임대하다; 임대' 를 글자까지 지켰다. charter(syn) 가
      동사 갈래를 참조하므로 pos 를 v 로 유지했다.
      원본 '임대 계약' 은 같은 개념의 명사 읽기라 둘째 갈래 '임대' 가 덮는다. */
-  { word:"lease", pron:"리스", pos:"v", level:"B2", meanings:["임대하다","임대"],
+  { word:"lease", exams:["수능"], pron:"리스", pos:"v", level:"B2", meanings:["임대하다","임대"],
     syn:["charter","rent out","let"],
     ex:[{ s:"They decided to {{}} the building for ten years.", f:"lease", ko:"그들은 그 건물을 10년간 임대하기로 결정했다." }] },
 
@@ -434,7 +453,7 @@ window.VOCAB_L = [
   /* 원본 뜻 '활기찬, 열정적인' 은 틀렸다. like(비슷한) + minded(생각의) 로,
      생각이나 취향이 서로 맞는다는 뜻이다. '생각이 비슷한, 뜻이 맞는' 으로 고쳤다.
      (H 세트 작업 때도 hard-and-fast 의 유의어로 이 낱말이 잘못 들어가 고친 적이 있다.) */
-  { word:"like-minded", pron:"라이크 마인디드", pos:"adj", level:"C1", meanings:["생각이 비슷한","뜻이 맞는"],
+  { word:"like-minded", exams:["수능"], pron:"라이크 마인디드", pos:"adj", level:"C1", meanings:["생각이 비슷한","뜻이 맞는"],
     syn:["kindred","agreeing","of one mind"],
     ex:[{ s:"She found a group of {{}} researchers online.", f:"like-minded", ko:"그녀는 온라인에서 생각이 비슷한 연구자 모임을 찾았다." }] },
 
@@ -473,7 +492,7 @@ window.VOCAB_L = [
     syn:["hobble","falter","walk lamely"],
     ex:[{ s:"He began to {{}} after twisting his ankle.", f:"limp", ko:"그는 발목을 삐고 나서 절뚝거리기 시작했다." }] },
 
-  { word:"linear", pron:"리니어", pos:"adj", level:"C1", meanings:["직선 모양의","선으로 된"],
+  { word:"linear", exams:["수능"], pron:"리니어", pos:"adj", level:"C1", meanings:["직선 모양의","선으로 된"],
     syn:["straight","rectilinear","sequential"],
     ex:[{ s:"The graph shows a clear {{}} relationship.", f:"linear", ko:"그 그래프는 명확한 직선 관계를 보여 준다." }] },
 
@@ -512,7 +531,7 @@ window.VOCAB_L = [
   /* syn 을 비워 두었다. I 세트 illiteracy 와 같은 사정이다 — '글을 읽고 쓰는 능력' 을
      바꿔 쓸 낱말이 수능 수준 영어에 셋이 없다. 억지로 채우면 사전에 없는 말을
      정답으로 가르치게 된다. */
-  { word:"literacy", pron:"리터러시", pos:"n", level:"C1", meanings:["글을 읽고 쓰는 능력"],
+  { word:"literacy", exams:["수능"], pron:"리터러시", pos:"n", level:"C1", meanings:["글을 읽고 쓰는 능력"],
     ex:[{ s:"Adult {{}} programmes have expanded rapidly.", f:"literacy", ko:"성인 문해 프로그램이 빠르게 확대되었다." }] },
 
   /* 승격 ① — GLOSS '글자 그대로의' 를 첫 자리에 지켰다. figurative(ant) 가 참조한다.
@@ -522,7 +541,7 @@ window.VOCAB_L = [
     ex:[{ s:"The {{}} meaning differs from the idiom.", f:"literal", ko:"글자 그대로의 뜻은 관용구와 다르다." }] },
 
   /* literal 과 어근이 같지만 품사가 달라(adj/adv) 같은 보드에 안 온다. */
-  { word:"literally", pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
+  { word:"literally", exams:["수능"], pron:"리터럴리", pos:"adv", level:"B2", meanings:["문자 그대로","말 그대로"],
     syn:["exactly","to the letter","word for word"],
     ex:[{ s:"He {{}} ran ten miles before breakfast.", f:"literally", ko:"그는 아침 전에 말 그대로 10마일을 뛰었다." }] },
 
@@ -546,7 +565,7 @@ window.VOCAB_L = [
     syn:["rubbish","trash","refuse"],
     ex:[{ s:"Please do not drop {{}} in the park.", f:"litter", ko:"공원에 쓰레기를 버리지 마세요." }] },
 
-  { word:"livestock", exams:["공무원"], pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
+  { word:"livestock", exams:["공무원","수능"], pron:"라이브스탁", pos:"n", level:"B2", meanings:["가축"],
     syn:["farm animals","cattle","herd"],
     ex:[{ s:"Disease spread quickly through the {{}}.", f:"livestock", ko:"질병이 가축 사이로 빠르게 퍼졌다." }] },
 
@@ -572,7 +591,7 @@ window.VOCAB_L = [
     ex:[{ s:"Doctors managed to {{}} the infection quickly.", f:"localize", ko:"의사들은 감염을 빠르게 국한시키는 데 성공했다." }] },
 
   /* localize 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
-  { word:"location", exams:["공무원"], pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
+  { word:"location", exams:["공무원","수능"], pron:"로케이션", pos:"n", level:"B1", meanings:["장소","위치"],
     /* ★ syn 의 "spot" 을 "particular place" 로 바꿨다. 사전이 '발견하다; 장소' 로
        동사와 명사를 섞어 두었는데, 참조 셋 중 둘(catch a glimpse of·detect) 이
        동사여서 S 세트에서는 동사 '발견하다' 로 선다. */
@@ -623,7 +642,7 @@ window.VOCAB_L = [
   { word:"longitude", pron:"란저튜드", pos:"n", level:"B2", meanings:["경도","경선"],
     ex:[{ s:"The ship's {{}} was recorded every hour.", f:"longitude", ko:"그 배의 경도가 매시간 기록되었다." }] },
 
-  { word:"long-term", exams:["공무원"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
+  { word:"long-term", exams:["공무원","수능"], pron:"롱 텀", pos:"adj", level:"B1", meanings:["장기간의","오랜"],
     syn:["extended","lasting","prolonged"], ant:["short-term"],
     ex:[{ s:"The drug has no known {{}} side effects.", f:"long-term", ko:"그 약은 알려진 장기간의 부작용이 없다." }] },
 
@@ -683,7 +702,7 @@ window.VOCAB_L = [
     syn:["coherent","intelligible","clear-headed"], ant:["incoherent"],
     ex:[{ s:"She gave a {{}} account of the accident.", f:"lucid", ko:"그녀는 그 사고에 대해 명료한 설명을 했다." }] },
 
-  { word:"luggage", exams:["공무원"], pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
+  { word:"luggage", exams:["공무원","수능"], pron:"러기지", pos:"n", level:"B1", meanings:["수화물","여행용 짐"],
     syn:["baggage","bags","suitcases"],
     ex:[{ s:"Please keep your {{}} with you at all times.", f:"luggage", ko:"항상 수화물을 소지해 주세요." }] },
 
@@ -738,7 +757,6 @@ Object.assign(window.GLOSS, {
   "actual-size": "실제 크기의",
   "agreeing": "뜻을 같이하는",
   "allegiance": "충성 서약, 충절",
-  "amateur": "비전문가, 아마추어",
   "animal skin": "동물 가죽",
   "answerable": "책임을 져야 하는",
   "appendage": "몸에 붙은 부분",
@@ -768,7 +786,6 @@ Object.assign(window.GLOSS, {
   "cap": "마개",
   "captivity": "감금, 포로 생활",
   "care for": "보살피다, 좋아하다",
-  "cattle": "소 떼",
   "cheaply made": "싸게 만든",
   "clear-headed": "머리가 맑은",
   "clod": "흙덩이",
@@ -780,12 +797,11 @@ Object.assign(window.GLOSS, {
   "decipherable": "판독할 수 있는",
   "deluxe": "특급의",
   "disappoint": "기대를 깨다",
-  "dismissal": "해임",
   "drudgery": "고된 일",
   "durability": "오래 견딤",
   "easy to carry": "들고 다니기 쉬운",
   "emancipate": "속박에서 풀다",
-  "equally": "똑같이",
+  "enduring": "오래가는",
   "erudite": "학문이 깊은",
   "exertion": "힘을 들임",
   "fabled": "이야기로 유명한",
@@ -833,7 +849,6 @@ Object.assign(window.GLOSS, {
   "language study": "언어 연구",
   "lasting": "오래가는",
   "legal action": "법적 조치",
-  "legally": "법적으로, 합법적으로",
   "lending": "대여, 빌려 줌",
   "less advanced": "덜 발전한",
   "lessor": "임대인",
@@ -861,7 +876,6 @@ Object.assign(window.GLOSS, {
   "pine": "애타게 그리다",
   "plush": "푹신하고 고급스러운",
   "poem": "시",
-  "predominantly": "주로, 대부분은",
   "pressure agent": "압력 단체 요원",
   "profuse": "넘칠 만큼 많은",
   "property owner": "부동산 소유자",

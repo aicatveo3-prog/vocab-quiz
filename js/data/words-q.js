@@ -34,6 +34,9 @@
  *              사물(소리)에 붙였다.
  */
 window.VOCAB_Q = [
+  { word:"quality", exams:["수능"], pron:"콸러티", pos:"n", level:"B1", meanings:["품질","특성"], ex:[{ s:"Customers expect high {{}} at a fair price.", f:"quality", ko:"고객은 적정한 가격에 높은 품질을 기대한다." }] },
+  { word:"quantitative", exams:["수능"], pron:"콴터테이티브", pos:"adj", level:"C1", meanings:["양적인","정량적인"], ex:[{ s:"The survey collected {{}} data such as age and income.", f:"quantitative", ko:"그 조사는 나이와 소득 같은 정량 자료를 모았다." }] },
+  { word:"questionable", exams:["수능"], pron:"퀘스처너블", pos:"adj", level:"C1", meanings:["의심스러운","미심쩍은"], syn:["dubious","doubtful","debatable"], ant:["reliable"], ex:[{ s:"The report is based on {{}} data from an unknown source.", f:"questionable", ko:"그 보고서는 출처를 알 수 없는 미심쩍은 자료에 근거한다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
 
@@ -49,12 +52,12 @@ window.VOCAB_Q = [
     ex:[{ s:"They stayed in a {{}} village inn.", f:"quaint", ko:"그들은 예스럽고 아담한 시골 여관에 묵었다." }] },
 
   /* 승격 ① — 사전 표현과 글자까지 같다(competent, C · eligible, E — 두 곳). */
-  { word:"qualified", pron:"콸리파이드", pos:"adj", level:"B2", meanings:["자격 있는"],
+  { word:"qualified", exams:["수능"], pron:"콸리파이드", pos:"adj", level:"B2", meanings:["자격 있는"],
     syn:["competent","eligible","having the right training"],
     ex:[{ s:"She is {{}} to teach physics.", f:"qualified", ko:"그녀는 물리를 가르칠 자격이 있다." }] },
 
   /* 승격 ② — 사전 표현과 글자까지 같다(disqualify 반의어, D · entitle, E). */
-  { word:"qualify", pron:"콸러파이", pos:"v", level:"B2", meanings:["자격을 얻다","자격을 주다"],
+  { word:"qualify", exams:["수능"], pron:"콸러파이", pos:"v", level:"B2", meanings:["자격을 얻다","자격을 주다"],
     syn:["entitle","meet the standard","earn the right"], ant:["disqualify"],
     ex:[{ s:"Two wins {{}} the team for the final.", f:"qualify", ko:"두 번의 승리가 그 팀에 결승 진출 자격을 준다." }] },
 
@@ -66,7 +69,7 @@ window.VOCAB_Q = [
 
   /* 승격 ④ — 사전 표현과 글자까지 같다(amount, A · mass, M). 원본의 '다량' 은
      '양' 과 같은 자리라 붙이지 않았다. */
-  { word:"quantity", pron:"콴터티", pos:"n", level:"B1", meanings:["양","분량"],
+  { word:"quantity", exams:["수능"], pron:"콴터티", pos:"n", level:"B1", meanings:["양","분량"],
     syn:["amount","how much there is","measured portion"],
     ex:[{ s:"A large {{}} of rice was stored.", f:"quantity", ko:"많은 양의 쌀이 저장되었다." }] },
 
@@ -146,7 +149,7 @@ window.VOCAB_Q = [
   /* 승격 ⑬ — 사전은 '인용하다; 견적' 으로 동사와 명사가 섞여 있었다. 원본대로
      동사 한 갈래로 세웠다(cite, C 한 곳의 표기가 달라진다). '인용하다' 는 cite 의
      첫 뜻과 같지만 둘은 서로 유의어라 오답에서 빠진다. */
-  { word:"quote", pron:"쿼트", pos:"v", level:"B1", meanings:["인용하다"],
+  { word:"quote", exams:["수능"], pron:"쿼트", pos:"v", level:"B1", meanings:["인용하다"],
     syn:["cite","repeat someone's words","give as a source"],
     ex:[{ s:"He likes to {{}} old proverbs.", f:"quote", ko:"그는 옛 속담을 인용하기를 좋아한다." }] },
 

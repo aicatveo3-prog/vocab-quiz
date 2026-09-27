@@ -60,7 +60,7 @@ window.VOCAB_N = [
   { word:"nuzzle", exams:["공무원"], pron:"너즐", pos:"v", level:"C2", meanings:["코를 비비다","부드럽게 밀다"], syn:["nudge","cuddle","snuggle"], ex:[{ s:"Animals often {{}} each other as stress relief.", f:"nuzzle", ko:"동물들은 스트레스 해소로 서로 코를 비비곤 한다." }] },
   { word:"navigate", exams:["공무원","수능"], pron:"내비게이트", pos:"v", level:"B2", meanings:["헤쳐나가다","항해하다"], syn:["steer","maneuver","traverse"], ex:[{ s:"To {{}} this shift, training is critical.", f:"navigate", ko:"이 변화를 헤쳐나가려면 훈련이 중요하다." }] },
   { word:"neighborhood", exams:["공무원"], pron:"네이버후드", pos:"n", level:"B1", meanings:["동네","인근"], syn:["district","vicinity","locality"], ex:[{ s:"Construction will not affect utilities in the nearby {{}}.", f:"neighborhoods", ko:"공사는 인근 동네의 공공 설비에 영향을 주지 않을 것이다." }] },
-  { word:"no longer", exams:["공무원"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
+  { word:"no longer", exams:["공무원","수능"], pron:"노 롱거", pos:"phr", level:"B1", meanings:["더 이상 ~않다","이제는 ~아니다"] },
   { word:"no matter how", exams:["공무원","수능"], pron:"노 매터 하우", pos:"phr", level:"B2", meanings:["아무리 ~해도","어떻게 ~하더라도"] },
   { word:"notification", exams:["공무원"], pron:"노터피케이션", pos:"n", level:"B2", meanings:["통지","알림"], ex:[{ s:"You will receive an email {{}} when the payment is due.", f:"notification", ko:"납부 기한이 되면 이메일 알림을 받게 됩니다." }] },
   { word:"neutrally", exams:["공무원"], pron:"뉴트럴리", pos:"adv", level:"C1", meanings:["중립적으로","공정하게"], syn:["impartially","objectively","even-handedly"], ex:[{ s:"A good judge must listen {{}} to both sides.", f:"neutrally", ko:"훌륭한 판사는 양측의 말을 중립적으로 들어야 한다." }] },
@@ -69,6 +69,16 @@ window.VOCAB_N = [
   { word:"needless to say", exams:["공무원","수능"], pron:"니들리스 투 세이", pos:"phr", level:"B2", meanings:["말할 필요도 없이"] },
   { word:"net worth", exams:["공무원"], pron:"넷 워스", pos:"n", level:"C1", meanings:["순자산"] },
   { word:"neuroscience", exams:["수능"], pron:"뉴로사이언스", pos:"n", level:"C1", meanings:["신경 과학"], ex:[{ s:"Advances in {{}} help us understand how memory works.", f:"neuroscience", ko:"신경 과학의 발전은 기억이 어떻게 작동하는지 이해하도록 돕는다." }] },
+  { word:"negotiable", exams:["수능"], pron:"니고시어블", pos:"adj", level:"C1", meanings:["협상 가능한","양도 가능한"], ex:[{ s:"The price is not {{}}, so please don't ask for a discount.", f:"negotiable", ko:"가격은 협상할 수 없으니 할인을 요청하지 마세요." }] },
+  { word:"network", exams:["수능"], pron:"네트워크", pos:"n", level:"B1", meanings:["망","연결망"], ex:[{ s:"The city has a large {{}} of bike paths.", f:"network", ko:"그 도시에는 자전거 도로망이 넓게 깔려 있다." }] },
+  { word:"narrowly", exams:["수능"], pron:"내로울리", pos:"adv", level:"B2", meanings:["간신히","좁게"] },
+  { word:"negotiation", exams:["수능"], pron:"니고시에이션", pos:"n", level:"B2", meanings:["협상","교섭"], ex:[{ s:"After weeks of {{}}, the two companies signed a deal.", f:"negotiation", ko:"몇 주간의 협상 끝에 두 회사는 계약을 맺었다." }] },
+  { word:"never-ending", exams:["수능"], pron:"네버 엔딩", pos:"adj", level:"B2", meanings:["끝없는","끝날 줄 모르는"], syn:["endless","interminable","perpetual"], ant:["brief"], ex:[{ s:"Residents were tired of the {{}} arguments about parking.", f:"never-ending", ko:"주민들은 주차를 둘러싼 끝없는 논쟁에 지쳐 있었다." }] },
+  { word:"newcomer", exams:["수능"], pron:"뉴커머", pos:"n", level:"B2", meanings:["새로 온 사람","신참"], ex:[{ s:"The club welcomed every {{}} with a small gift.", f:"newcomer", ko:"그 동아리는 새로 온 사람마다 작은 선물로 환영했다." }] },
+  { word:"neuron", exams:["수능"], pron:"뉴런", pos:"n", level:"C1", meanings:["뉴런","신경 세포"], syn:["nerve cell","brain cell","nerve"], ex:[{ s:"Each {{}} in the brain connects to thousands of others.", f:"neuron", ko:"뇌 속의 뉴런 하나하나가 수천 개의 다른 뉴런과 연결된다." }] },
+  { word:"newly", exams:["수능"], pron:"뉴리", pos:"adv", level:"B2", meanings:["새로","최근에"] },
+  { word:"nonsensical", exams:["수능"], pron:"난센시컬", pos:"adj", level:"C1", meanings:["터무니없는","무의미한"], syn:["absurd","ridiculous","senseless"], ant:["sensible"], ex:[{ s:"His excuse was so {{}} that nobody believed it.", f:"nonsensical", ko:"그의 변명은 너무 터무니없어서 아무도 믿지 않았다." }] },
+  { word:"nostalgically", exams:["수능"], pron:"너스탤지컬리", pos:"adv", level:"C1", meanings:["향수에 젖어","그리운 듯"] },
   { word:"nag", pron:"내그", pos:"v", level:"B2", meanings:["잔소리하다","성가시게 하다"],
     syn:["pester","keep on at","harp on"],
     ex:[{ s:"She began to {{}} him about the unpaid bills.", f:"nag", ko:"그녀는 밀린 청구서를 두고 그에게 잔소리하기 시작했다." }] },
@@ -109,7 +119,7 @@ window.VOCAB_N = [
     syn:["slim","tight","cramped"], ant:["wide"],
     ex:[{ s:"The path grew too {{}} for the cart to pass.", f:"narrow", ko:"그 길은 수레가 지나가기에 너무 폭이 좁아졌다." }] },
 
-  { word:"narrow down", pron:"내로 다운", pos:"phr", level:"B2", meanings:["좁히다","줄이다"],
+  { word:"narrow down", exams:["수능"], pron:"내로 다운", pos:"phr", level:"B2", meanings:["좁히다","줄이다"],
     syn:["whittle down","cut down","focus in on"] },
 
   { word:"narrow-minded", pron:"내로 마인디드", pos:"adj", level:"B2", meanings:["속 좁은","옹졸한"],
@@ -126,7 +136,7 @@ window.VOCAB_N = [
   /* 승격 ⑥ — 사전이 '토착의; 원주민' 으로 형용사와 명사가 섞여 있었다.
      참조 세 곳(aboriginal·domestic·indigenous) 이 모두 형용사 갈래를 쓴다.
      원본대로 형용사로 세웠다. */
-  { word:"native", pron:"네이티브", pos:"adj", level:"B1", meanings:["태어난 곳의","원주민의"],
+  { word:"native", exams:["수능"], pron:"네이티브", pos:"adj", level:"B1", meanings:["태어난 곳의","원주민의"],
     syn:["indigenous","homegrown","local-born"], ant:["foreign-born"],
     ex:[{ s:"She returned to her {{}} village after ten years.", f:"native", ko:"그녀는 십 년 만에 태어난 곳의 마을로 돌아갔다." }] },
 
@@ -141,7 +151,7 @@ window.VOCAB_N = [
     syn:["disposition","temperament","inherent quality"],
     ex:[{ s:"It is not in his {{}} to hold a grudge.", f:"nature", ko:"원한을 품는 것은 그의 천성이 아니다." }] },
 
-  { word:"naughty", pron:"노티", pos:"adj", level:"B1", meanings:["버릇없는","개구쟁이인"],
+  { word:"naughty", exams:["수능"], pron:"노티", pos:"adj", level:"B1", meanings:["버릇없는","개구쟁이인"],
     syn:["mischievous","disobedient","badly behaved"], ant:["well-behaved"],
     ex:[{ s:"The {{}} puppy chewed through the cable.", f:"naughty", ko:"버릇없는 강아지가 전선을 물어 끊었다." }] },
 
@@ -153,7 +163,7 @@ window.VOCAB_N = [
     syn:["sailing","wayfinding","course-plotting"],
     ex:[{ s:"Early sailors used the stars for {{}}.", f:"navigation", ko:"초기 뱃사람들은 항해에 별을 썼다." }] },
 
-  { word:"necessarily", pron:"네서세럴리", pos:"adv", level:"B2", meanings:["필연적으로","반드시"],
+  { word:"necessarily", exams:["수능"], pron:"네서세럴리", pos:"adv", level:"B2", meanings:["필연적으로","반드시"],
     syn:["inevitably","of necessity","as a matter of course"],
     ex:[{ s:"A high price does not {{}} mean high quality.", f:"necessarily", ko:"높은 값이 반드시 높은 품질을 뜻하지는 않는다." }] },
 
@@ -163,7 +173,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑧ — 사전 표현 '필요로 하다' 를 글자까지 지켰다.
      call for(C)·involve(I) 두 곳의 화면이 바뀌지 않는다. */
-  { word:"necessitate", pron:"너세서테이트", pos:"v", level:"C1", meanings:["필요로 하다"],
+  { word:"necessitate", exams:["수능"], pron:"너세서테이트", pos:"v", level:"C1", meanings:["필요로 하다"],
     syn:["call for","require","make unavoidable"],
     ex:[{ s:"Heavy rain may {{}} a change of plan.", f:"necessitate", ko:"폭우는 계획 변경을 필요로 할 수 있다." }] },
 
@@ -197,7 +207,7 @@ window.VOCAB_N = [
     ex:[{ s:"The price difference was {{}}.", f:"negligible", ko:"값 차이는 무시해도 될 만했다." }] },
 
   /* 승격 ⑬ — 사전에는 뜻만 있고 발음이 없던 항목이다(참조도 없었다). */
-  { word:"negotiate", exams:["공무원"], pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
+  { word:"negotiate", exams:["공무원","수능"], pron:"니고시에이트", pos:"v", level:"B2", meanings:["협상하다","교섭하다"],
     syn:["bargain","work out terms","come to terms"],
     ex:[{ s:"The two sides met to {{}} a ceasefire.", f:"negotiate", ko:"양측은 휴전을 협상하려고 만났다." }] },
 
@@ -216,7 +226,7 @@ window.VOCAB_N = [
     syn:["snuggle","settle cozily","tuck oneself in"],
     ex:[{ s:"The cabin seems to {{}} between two hills.", f:"nestle", ko:"그 오두막은 두 언덕 사이에 아늑하게 자리잡은 듯하다." }] },
 
-  { word:"neural", pron:"뉴럴", pos:"adj", level:"C1", meanings:["신경의","신경계의"],
+  { word:"neural", exams:["수능"], pron:"뉴럴", pos:"adj", level:"C1", meanings:["신경의","신경계의"],
     syn:["nerve-related","of the nervous system","brain-circuit"],
     ex:[{ s:"Learning strengthens {{}} connections.", f:"neural", ko:"배움은 신경의 연결을 튼튼하게 한다." }] },
 
@@ -228,7 +238,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑮ — 사전 표현 '중립적인, 공정한' 을 글자까지 지켰다.
      disinterested(D)·impartial(I) 두 곳의 화면이 안 바뀐다. '중성의' 는 버렸다. */
-  { word:"neutral", pron:"뉴트럴", pos:"adj", level:"B2", meanings:["중립적인","공정한"],
+  { word:"neutral", exams:["수능"], pron:"뉴트럴", pos:"adj", level:"B2", meanings:["중립적인","공정한"],
     syn:["unaligned","even-handed","taking no side"], ant:["partisan"],
     ex:[{ s:"The country stayed {{}} during the war.", f:"neutral", ko:"그 나라는 전쟁 동안 중립적인 상태를 지켰다." }] },
 
@@ -240,7 +250,7 @@ window.VOCAB_N = [
 
   /* 승격 ⑯ — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      같은 세트의 nonetheless 와 겹치므로 그쪽을 '그렇기는 하지만' 으로 갈랐다. */
-  { word:"nevertheless", exams:["공무원"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
+  { word:"nevertheless", exams:["공무원","수능"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],
     syn:["even so","all the same","for all that"],
     ex:[{ s:"The plan was costly; {{}}, the city approved it.", f:"nevertheless", ko:"그 계획은 비쌌지만, 그럼에도 불구하고 시는 승인했다." }] },
 
@@ -294,7 +304,7 @@ window.VOCAB_N = [
   /* nonetheless 는 사전에 없던 낱머다. 챕터 2 의 nevertheless 가 사전 표현
      '그럼에도 불구하고' 를 쓰므로 이쪽을 '그렇기는 하지만' 으로 갈랐다.
      둘은 실제로 같은 뜻이어서 서로 유의어로 등록해 두었다. */
-  { word:"nonetheless", exams:["공무원"], pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
+  { word:"nonetheless", exams:["공무원","수능"], pron:"넌더리스", pos:"adv", level:"B2", meanings:["그렇기는 하지만"],
     syn:["nevertheless","in spite of that","just the same"],
     ex:[{ s:"The road was icy; {{}}, the bus ran on time.", f:"nonetheless", ko:"길이 얼었지만, 그렇기는 하지만 버스는 정시에 다녔다." }] },
 
@@ -322,7 +332,7 @@ window.VOCAB_N = [
     syn:["not returnable","paid for good","without money back"],
     ex:[{ s:"The deposit is {{}} once the room is booked.", f:"non-refundable", ko:"방을 예약하면 보증금은 환불이 안 된다." }] },
 
-  { word:"nonsense", pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
+  { word:"nonsense", exams:["수능"], pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
     syn:["rubbish","drivel","empty talk"],
     ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },
 
@@ -347,19 +357,19 @@ window.VOCAB_N = [
     syn:["longing for the past","homesickness","wistful memory"],
     ex:[{ s:"Old photographs filled her with {{}}.", f:"nostalgia", ko:"오래된 사진들이 그녀를 옛날을 그리워함으로 채웠다." }] },
 
-  { word:"not to mention", pron:"낫 투 멘션", pos:"phr", level:"B2", meanings:["~은 말할 것도 없고"],
+  { word:"not to mention", exams:["수능"], pron:"낫 투 멘션", pos:"phr", level:"B2", meanings:["~은 말할 것도 없고"],
     syn:["to say nothing of","let alone","over and above that"] },
 
   /* 승격 23 — 사전은 '주목할 만한, 유명한' 이었다. '유명한' 은 같은 챕터 4 의
      notorious(악명 높은, 소문난) 와 부딪히므로 원본의 '중요한' 을 썼다.
      참조가 없어 화면 변화는 없다. */
-  { word:"notable", pron:"노터블", pos:"adj", level:"B2", meanings:["주목할 만한","중요한"],
+  { word:"notable", exams:["수능"], pron:"노터블", pos:"adj", level:"B2", meanings:["주목할 만한","중요한"],
     syn:["striking","worth noting","of consequence"], ant:["unremarkable"],
     ex:[{ s:"The year brought one {{}} change to the rules.", f:"notable", ko:"그 해는 규칙에 주목할 만한 변화 하나를 가져왔다." }] },
 
   /* 승격 24 — 사전 표현 '특히, 두드러지게' 를 글자까지 지켰다(in particular, I).
      원본의 '명백히' 는 버렸다 — 부사 셋을 한 표제어에 담을 필요가 없다. */
-  { word:"notably", exams:["공무원"], pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
+  { word:"notably", exams:["공무원","수능"], pron:"노터블리", pos:"adv", level:"B2", meanings:["특히","두드러지게"],
     syn:["in particular","markedly","above all"],
     ex:[{ s:"Prices rose, {{}} for fresh fruit.", f:"notably", ko:"값이 올랐는데, 특히 신선한 과일이 그랬다." }] },
 
@@ -371,14 +381,14 @@ window.VOCAB_N = [
      '논평하다' 갈래로 observe 를 유의어로 쓰고 있었는데, observe 를 '관찰하다,
      준수하다' 로 세우면 그 자리가 어긋난다. comment 쪽 유의어를 이 note 로
      바꿨다(words-c.js) — '언급하다' 가 딱 맞는다. */
-  { word:"note", pron:"노트", pos:"v", level:"B1", meanings:["주목하다","언급하다"],
+  { word:"note", exams:["수능"], pron:"노트", pos:"v", level:"B1", meanings:["주목하다","언급하다"],
     syn:["take note of","remark on","point out"],
     ex:[{ s:"Please {{}} the change of time on the form.", f:"note", ko:"양식에 적힌 시간 변경을 주목해 주세요." }] },
 
   /* 승격 25 — 사전이 '알아차리다; 통지' 로 동사와 명사가 섞여 있었다.
      참조 네 곳(advert·advertisement·attention·bulletin) 이 모두 명사다.
      원본대로 명사로 세우고 '분간하다, 인지하다' 갈래는 버렸다. */
-  { word:"notice", pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
+  { word:"notice", exams:["수능"], pron:"노티스", pos:"n", level:"B2", meanings:["통지","안내문"],
     syn:["posted sign","official word","notification"],
     ex:[{ s:"A {{}} on the door said the shop had moved.", f:"notice", ko:"문에 붙은 통지는 가게가 이사했다고 알렸다." }] },
 
@@ -404,7 +414,7 @@ window.VOCAB_N = [
     ex:[{ s:"The school will {{}} parents by text.", f:"notify", ko:"학교는 문자로 학부모에게 통보할 것이다." }] },
 
   /* 승격 28 — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다. */
-  { word:"notion", exams:["공무원"], pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
+  { word:"notion", exams:["공무원","수능"], pron:"노션", pos:"n", level:"B2", meanings:["개념","생각"],
     syn:["idea","conception","mental picture"],
     ex:[{ s:"He had no {{}} of how long it would take.", f:"notion", ko:"그는 얼마나 걸릴지에 대한 개념이 없었다." }] },
 
@@ -421,7 +431,7 @@ window.VOCAB_N = [
   /* 승격 30 — 사전이 '소설; 새로운' 으로 명사와 형용사가 섞여 있었다.
      conventional(ant, C) 이 형용사 갈래를 쓰므로 형용사로 세우고 '소설' 은 버렸다.
      학생들이 '소설' 로만 알아서 틀리는 쪽이 이 형용사 갈래다. */
-  { word:"novel", pron:"나벌", pos:"adj", level:"B2", meanings:["참신한","신기한"],
+  { word:"novel", exams:["수능"], pron:"나벌", pos:"adj", level:"B2", meanings:["참신한","신기한"],
     syn:["fresh","original","never tried before"], ant:["conventional"],
     ex:[{ s:"She proposed a {{}} way to cut waste.", f:"novel", ko:"그녀는 쓰레기를 줄이는 참신한 방법을 제안했다." }] },
 
@@ -465,7 +475,7 @@ window.VOCAB_N = [
 
   /* 승격 35 — ★원본의 뜻이 '많은' 두 글자여서 선택지에서 뜻으로 읽기 빠듯했다.
      사전 표현 '수많은, 다수의' 를 글자까지 지켰다(a host of, A · multiple, M). */
-  { word:"numerous", pron:"누머러스", pos:"adj", level:"B2", meanings:["수많은","다수의"],
+  { word:"numerous", exams:["수능"], pron:"누머러스", pos:"adj", level:"B2", meanings:["수많은","다수의"],
     syn:["a great many","countless","plentiful"], ant:["scarce"],
     ex:[{ s:"The city has {{}} small bookshops.", f:"numerous", ko:"그 도시에는 수많은 작은 책방이 있다." }] },
 
@@ -479,7 +489,7 @@ window.VOCAB_N = [
   /* 승격 37 — 사전은 '영양분, 양분' 이었다. '영양분' 을 그대로 두면 이 챕터의
      nutrition·nutritious·nourish 와 줄줄이 물리므로 '영양소' 한 갈래로 좁혔다.
      antioxidant(A) 의 화면 글자가 함께 바뀐다. */
-  { word:"nutrient", exams:["공무원"], pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
+  { word:"nutrient", exams:["공무원","수능"], pron:"누트리언트", pos:"n", level:"B2", meanings:["영양소"],
     syn:["nourishing substance","food element","dietary component"],
     ex:[{ s:"Iron is an essential {{}} for blood.", f:"nutrient", ko:"철분은 피에 꼭 필요한 영양소다." }] },
 
@@ -492,7 +502,7 @@ window.VOCAB_N = [
     syn:["diet-related","food-value","concerning nourishment"],
     ex:[{ s:"Check the {{}} label before buying.", f:"nutritional", ko:"사기 전에 영양의 표시를 확인하세요." }] },
 
-  { word:"nutritious", pron:"누트리셔스", pos:"adj", level:"B2", meanings:["영양이 풍부한"],
+  { word:"nutritious", exams:["수능"], pron:"누트리셔스", pos:"adj", level:"B2", meanings:["영양이 풍부한"],
     syn:["full of goodness","health-giving","rich in food value"], ant:["empty of value"],
     ex:[{ s:"Beans are cheap and {{}}.", f:"nutritious", ko:"콩은 값이 싸고 영양이 풍부하다." }] }
 ];
@@ -513,6 +523,7 @@ Object.assign(window.GLOSS, {
   "baseline sample": "기준이 되는 표본",
   "beginner": "처음 배우는 사람",
   "bigoted": "편견에 찬",
+  "brain cell": "뇌세포",
   "brain-circuit": "뇌 회로의",
   "brain-medicine": "뇌 의학의",
   "brief rest": "잠깐의 휴식",
@@ -610,12 +621,12 @@ Object.assign(window.GLOSS, {
   "name as candidate": "후보로 이름을 올리다",
   "naming": "이름을 지어 부름",
   "need": "필요, 요구",
+  "nerve cell": "신경 세포",
   "nerve fiber": "신경 섬유",
   "nerve-disease-related": "신경 질환에 관한",
   "nerve-related": "신경에 관한",
   "neurology-based": "신경학에 바탕한",
   "never tried before": "여태 해 본 적 없는",
-  "newcomer": "새로 들어온 사람",
   "night-active": "밤에 움직이는",
   "not physical": "물질이 아닌",
   "not returnable": "되돌려 받을 수 없는",
@@ -638,7 +649,6 @@ Object.assign(window.GLOSS, {
   "peaceable": "평온하게 하는",
   "pester": "귀찮게 하다",
   "posted sign": "붙여 놓은 알림",
-  "quantitative": "양으로 따지는",
   "quick-moving": "빠르게 움직이는",
   "rarity value": "드물어서 생기는 값",
   "raw recruit": "갓 들어온 사람",
@@ -653,6 +663,7 @@ Object.assign(window.GLOSS, {
   "sailing": "배를 몰기",
   "seagoing": "바다를 다니는",
   "send word to": "~에게 말을 전하다",
+  "senseless": "무분별한, 의미 없는",
   "set of written signs": "적어 쓰는 기호 묶음",
   "settle cozily": "편안히 자리 잡다",
   "settled": "정착한",

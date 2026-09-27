@@ -40,16 +40,24 @@
 window.VOCAB_V = [
   { word:"vaporous", exams:["공무원"], pron:"베이퍼러스", pos:"adj", level:"C2", meanings:["증기의","수증기 같은"], syn:["misty","gaseous","foggy"], ex:[{ s:"The air near the geyser was thick and {{}}.", f:"vaporous", ko:"간헐천 근처의 공기는 짙고 수증기 같았다." }] },
   { word:"vexed", exams:["공무원"], pron:"벡스트", pos:"adj", level:"C1", meanings:["짜증난","골치 아픈"], syn:["annoyed","irritated","troubled"], ant:["pleased"], ex:[{ s:"The novel is about the {{}} parents of an unruly teenager.", f:"vexed", ko:"그 소설은 제멋대로인 십대의 골치 아픈 부모에 관한 것이다." }] },
-  { word:"visually", exams:["공무원"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
+  { word:"visually", exams:["공무원","수능"], pron:"비주얼리", pos:"adv", level:"B2", meanings:["시각적으로"], ex:[{ s:"Listening and {{}} representing are interrelated.", f:"visually", ko:"듣기와 시각적으로 표현하기는 서로 연관되어 있다." }] },
   { word:"vocalization", exams:["공무원"], pron:"보컬라이제이션", pos:"n", level:"C2", meanings:["발성","발성음"], ex:[{ s:"Human language differs from the {{}} of monkeys.", f:"vocalizations", ko:"인간 언어는 원숭이의 발성음과 다르다." }] },
   { word:"volcanic", exams:["공무원"], pron:"볼캐닉", pos:"adj", level:"B2", meanings:["화산의"], ex:[{ s:"Yellowstone was known to be {{}} in nature.", f:"volcanic", ko:"옐로스톤은 본래 화산성으로 알려져 있었다." }] },
-  { word:"vision", exams:["공무원"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
+  { word:"vision", exams:["공무원","수능"], pron:"비전", pos:"n", level:"B2", meanings:["구상","시야"], syn:["foresight","insight","dream"], ex:[{ s:"The plan sets out its {{}} of a nation in which everyone is healthy.", f:"vision", ko:"그 계획은 모두가 건강한 나라에 대한 구상을 제시한다." }] },
   { word:"vigilant", exams:["공무원"], pron:"비질런트", pos:"adj", level:"C1", meanings:["경계하는","방심하지 않는"], syn:["watchful","alert","attentive"], ant:["careless"], ex:[{ s:"Train yourself to remain {{}}.", f:"vigilant", ko:"방심하지 않도록 스스로를 훈련하라." }] },
   { word:"vector", exams:["공무원"], pron:"벡터", pos:"n", level:"C1", meanings:["질병 매개체","벡터"], syn:["carrier","transmitter","agent"], ex:[{ s:"The program treats disease {{}} from rats.", f:"vectors", ko:"그 프로그램은 쥐에서 오는 질병 매개체를 처리한다." }] },
-  { word:"via", exams:["공무원"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
+  { word:"via", exams:["공무원","수능"], pron:"바이어", pos:"phr", level:"B2", meanings:["~을 통해","~을 경유하여"], syn:["through","by way of","by means of"] },
   { word:"vessel", exams:["공무원"], pron:"베슬", pos:"n", level:"B2", meanings:["선박","혈관"], syn:["ship","boat","watercraft"], ex:[{ s:"The robot is tethered to a service {{}}.", f:"vessel", ko:"그 로봇은 지원 선박에 줄로 연결되어 있다." }] },
-  { word:"visualize", exams:["공무원"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
+  { word:"visualize", exams:["공무원","수능"], pron:"비주얼라이즈", pos:"v", level:"B2", meanings:["시각화하다","마음속에 그리다"], syn:["envision","imagine","picture"], ex:[{ s:"Athletes often {{}} the race in their minds before it starts.", f:"visualize", ko:"운동선수들은 경기가 시작되기 전에 흔히 경주를 머릿속에 그려 본다." }] },
   { word:"violent", exams:["수능"], pron:"바이얼런트", pos:"adj", level:"B1", meanings:["폭력적인","격렬한"], syn:["brutal","aggressive","fierce"], ant:["nonviolent"], ex:[{ s:"The movie was too {{}} for young children.", f:"violent", ko:"그 영화는 어린아이들이 보기에 너무 폭력적이었다." }] },
+  { word:"violate", exams:["수능"], pron:"바이얼레이트", pos:"v", level:"B2", meanings:["위반하다","침해하다"], syn:["infringe","break","disobey"], ant:["obey"], ex:[{ s:"Companies that {{}} safety rules must pay a fine.", f:"violate", ko:"안전 규칙을 위반한 회사는 벌금을 내야 한다." }] },
+  { word:"victim", exams:["수능"], pron:"빅텀", pos:"n", level:"B1", meanings:["피해자","희생자"], ex:[{ s:"The {{}} of the robbery described the thief to the police.", f:"victim", ko:"강도 피해자는 경찰에게 도둑의 인상착의를 설명했다." }] },
+  { word:"viewer", exams:["수능"], pron:"뷰어", pos:"n", level:"B2", meanings:["시청자","보는 사람"], syn:["spectator","audience","onlooker"], ant:["performer"], ex:[{ s:"Each {{}} can vote for the best singer by phone.", f:"viewer", ko:"시청자는 누구나 전화로 최고의 가수에게 투표할 수 있다." }] },
+  { word:"visible", exams:["수능"], pron:"비저블", pos:"adj", level:"B1", meanings:["보이는","눈에 띄는"], ex:[{ s:"On sunny days, the mountain top is {{}} from our window.", f:"visible", ko:"맑은 날에는 우리 집 창문에서 산꼭대기가 보인다." }] },
+  { word:"valuable", exams:["수능"], pron:"밸류어블", pos:"adj", level:"B1", meanings:["귀중한","값비싼"], ex:[{ s:"Don't leave {{}} items in your car.", f:"valuable", ko:"차 안에 귀중품을 두지 마세요." }] },
+  { word:"veil", exams:["수능"], pron:"베일", pos:"v", level:"C1", meanings:["가리다","감추다"], syn:["conceal","mask","shroud"], ant:["reveal"], ex:[{ s:"Thick clouds often {{}} the top of the mountain.", f:"veil", ko:"짙은 구름이 산꼭대기를 자주 가린다." }] },
+  { word:"valued", exams:["수능"], pron:"밸류드", pos:"adj", level:"C1", meanings:["소중한","존중받는"], syn:["prized","cherished","esteemed"], ex:[{ s:"Every {{}} customer receives a birthday coupon.", f:"valued", ko:"소중한 고객 모두에게 생일 쿠폰을 드립니다." }] },
+  { word:"vain", exams:["수능"], pron:"베인", pos:"adj", level:"B2", meanings:["헛된","허영심 있는"], syn:["futile","useless","fruitless"], ant:["successful"], ex:[{ s:"All their efforts proved {{}}, and the old barn burned down.", f:"vain", ko:"그들의 모든 노력은 헛되었고, 낡은 헛간은 다 타 버렸다." }] },
 
   /* ══ 1차 · vacant ~ vast (20단어) ═══════════════════════════════════════
      승격 12 · 신규 8
@@ -100,7 +108,7 @@ window.VOCAB_V = [
   /* 승격 ② — 사전과 교재가 같다. 참조 네 곳(ambiguous·equivocal 유의어,
      definite·precise 반의어) 의 화면은 바뀌지 않는다. obscure·ambiguous·
      equivocal·fuzzy 와 맞물려 배제된다. */
-  { word:"vague", pron:"베이그", pos:"adj", level:"B2", meanings:["모호한","애매한"],
+  { word:"vague", exams:["수능"], pron:"베이그", pos:"adj", level:"B2", meanings:["모호한","애매한"],
     syn:["ambiguous","equivocal","not clearly put"],
     ex:[{ s:"His answer was too {{}} to help.", f:"vague", ko:"그의 대답은 도움이 되기에 너무 모호했다." }] },
 
@@ -156,7 +164,7 @@ window.VOCAB_V = [
     ex:[{ s:"Water {{}} rose from the pan.", f:"vapor", ko:"냄비에서 수증기가 올라왔다." }] },
 
   /* 승격 ⑦ — 사전 글자 유지(참조 consistency 가 반의어). 교재는 순서만 다르다. */
-  { word:"variability", pron:"베리어빌러티", pos:"n", level:"C1", meanings:["변동성","가변성"],
+  { word:"variability", exams:["수능"], pron:"베리어빌러티", pos:"n", level:"C1", meanings:["변동성","가변성"],
     syn:["how much it swings","liability to change","range of change"], ant:["consistency"],
     ex:[{ s:"The data show wide {{}}.", f:"variability", ko:"그 자료는 큰 변동성을 보인다." }] },
 
@@ -169,13 +177,13 @@ window.VOCAB_V = [
 
   /* '변화' 는 shift(변화, 교대)·mutation(돌연변이, 변화) 자리라 버렸다.
      '차이' 는 contrast·discrepancy·disparity·margin 넷과 맞물려 배제된다. */
-  { word:"variation", exams:["공무원"], pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
+  { word:"variation", exams:["공무원","수능"], pron:"베리에이션", pos:"n", level:"B2", meanings:["차이","변형"],
     syn:["contrast","discrepancy","a changed form"],
     ex:[{ s:"There is little {{}} between them.", f:"variation", ko:"그들 사이에는 차이가 거의 없다." }] },
 
   /* 승격 ⑨ — 사전 글자 유지. 참조 diverse(D)·monotonous(M) 두 곳의 화면은
      바뀌지 않는다. 아래 various 와 '다양한' 을 맞춰 자동 배제시켰다. */
-  { word:"varied", pron:"베리드", pos:"adj", level:"B2", meanings:["다양한","변화가 많은"],
+  { word:"varied", exams:["수능"], pron:"베리드", pos:"adj", level:"B2", meanings:["다양한","변화가 많은"],
     syn:["diverse","full of change","of many sorts"], ant:["monotonous"],
     ex:[{ s:"She has a {{}} taste in books.", f:"varied", ko:"그녀는 책에 다양한 취향을 지녔다." }] },
 
@@ -193,14 +201,14 @@ window.VOCAB_V = [
 
   /* 승격 ⑪ — 사전 글자 유지. 참조 세 곳(differ·diversify·fluctuate) 의 화면은
      바뀌지 않는다. differ(다르다, 의견이 다르다) 와 맞물려 배제된다. */
-  { word:"vary", exams:["공무원"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
+  { word:"vary", exams:["공무원","수능"], pron:"베리", pos:"v", level:"B1", meanings:["다르다","달라지다"],
     syn:["differ","diversify","fluctuate"],
     ex:[{ s:"Prices {{}} from shop to shop.", f:"vary", ko:"값은 가게마다 다르다." }] },
 
   /* 승격 ⑫ — 사전 글자 유지. 참조 enormous(E)·immense(I) 두 곳의 화면은
      바뀌지 않는다. enormous·immense·untold 가 '막대한' 을, extensive·
      limitless 가 교재의 '방대한' 을 써서 여러 곳과 맞물린다. */
-  { word:"vast", exams:["공무원"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
+  { word:"vast", exams:["공무원","수능"], pron:"배스트", pos:"adj", level:"B1", meanings:["광대한","막대한"],
     syn:["enormous","immense","spread out very far"],
     ex:[{ s:"A {{}} plain lay before them.", f:"vast", ko:"광대한 평원이 그들 앞에 놓여 있었다." }] },
 
@@ -254,7 +262,7 @@ window.VOCAB_V = [
 
   /* 승격 ⑭ — 사전의 쌍반점만 쉼표로. 참조 automobile(A)·medium(M) 두 곳의
      화면은 바뀌지 않는다. means(수단, 방법) 와 '수단' 이 맞물려 배제된다. */
-  { word:"vehicle", exams:["공무원"], pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
+  { word:"vehicle", exams:["공무원","수능"], pron:"비이클", pos:"n", level:"B1", meanings:["차량","수단"],
     syn:["automobile","medium","thing that carries"],
     ex:[{ s:"No {{}} may enter the lane.", f:"vehicle", ko:"어떤 차량도 그 길에 들어갈 수 없다." }] },
 
@@ -288,7 +296,7 @@ window.VOCAB_V = [
   /* 승격 ⑯ — ★사전 첫 갈래를 세웠다. 사전이 '과감히 하다; 모험' 으로 동사와
      명사를 섞어 놓았는데 참조 dare 가 동사다. 명사 '모험' 은 adventure(모험)·
      quest(탐구, 모험) 자리다. ★ 참조 dare(D) 의 화면이 한 줄 바뀐다. */
-  { word:"venture", pron:"벤처", pos:"v", level:"B2", meanings:["과감히 하다","감행하다"],
+  { word:"venture", exams:["수능"], pron:"벤처", pos:"v", level:"B2", meanings:["과감히 하다","감행하다"],
     syn:["dare","risk doing","press on despite danger"],
     ex:[{ s:"Few would {{}} out in that storm.", f:"venture", ko:"그 폭풍 속에 과감히 나설 사람은 드물다." }] },
 
@@ -298,7 +306,7 @@ window.VOCAB_V = [
     ex:[{ s:"They changed the {{}} at short notice.", f:"venue", ko:"그들은 급히 개최지를 바꿨다." }] },
 
   /* 교재 괄호('구두의') 를 걷었다. */
-  { word:"verbal", exams:["공무원"], pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
+  { word:"verbal", exams:["공무원","수능"], pron:"버벌", pos:"adj", level:"B2", meanings:["언어의","말로 된"],
     syn:["spoken rather than written","in words","put in speech"],
     ex:[{ s:"They had only a {{}} agreement.", f:"verbal", ko:"그들은 말로 된 합의만 했다." }] },
 
@@ -340,7 +348,7 @@ window.VOCAB_V = [
 
   /* 교재의 '대' 는 너무 짧아 풀어 썼다. 전치사지만 스키마에 prep 이 없어
      구·표현(phr) 으로 두었다. */
-  { word:"versus", exams:["공무원"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
+  { word:"versus", exams:["공무원","수능"], pron:"버서스", pos:"phr", level:"B2", meanings:["~에 맞서","~와 대비하여"],
     syn:["set against","compared with","over against"] },
 
   /* 승격 ㉒ — 사전과 교재가 같다(참조 horizontal 이 반의어). */
@@ -425,7 +433,7 @@ window.VOCAB_V = [
 
   /* outlook(전망, 관점)·perspective(관점, 시각)·standpoint(관점, 입장)·
      point of view(관점, 견해) 넷과 맞물려 배제된다. */
-  { word:"viewpoint", exams:["공무원"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
+  { word:"viewpoint", exams:["공무원","수능"], pron:"뷰포인트", pos:"n", level:"B2", meanings:["관점","시각"],
     syn:["outlook","perspective","standpoint"],
     ex:[{ s:"From her {{}} the plan was sound.", f:"viewpoint", ko:"그녀의 관점에서 그 계획은 타당했다." }] },
 
@@ -474,7 +482,7 @@ window.VOCAB_V = [
   /* ★ 첫 뜻을 '사실상' 으로 올렸다. 교재의 '거의' 만으로는 seldom(거의 ~ 않는 ·
      B1/adv) 과 눈으로 갈리지 않는데 둘은 뜻이 정반대다. '거의' 는 둘째로 남겨
      more or less(대략, 거의) 와 맞물리게 했다. */
-  { word:"virtually", pron:"버추얼리", pos:"adv", level:"B2", meanings:["사실상","거의"],
+  { word:"virtually", exams:["수능"], pron:"버추얼리", pos:"adv", level:"B2", meanings:["사실상","거의"],
     syn:["in effect","all but entirely","near enough to be true"],
     ex:[{ s:"The work is {{}} done.", f:"virtually", ko:"그 일은 사실상 끝났다." }] },
 
@@ -542,7 +550,7 @@ window.VOCAB_V = [
 
   /* 승격 ㉚ — 사전 단일값 유지(참조 graphic). 교재의 '화려한' 은 gorgeous(화려한,
      호화스러운)·ornate 자리라 버렸다. sharp(날카로운, 선명한) 와 맞물려 배제된다. */
-  { word:"vivid", pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],
+  { word:"vivid", exams:["수능"], pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],
     syn:["graphic","sharply clear","standing out plainly"],
     ex:[{ s:"She has a {{}} memory of that day.", f:"vivid", ko:"그녀는 그날을 선명하게 기억한다." }] },
 
@@ -664,6 +672,7 @@ Object.assign(window.GLOSS, {
   "foggy": "안개 낀, 흐릿한",
   "for a job": "일자리를 위한",
   "fresh air let in": "들인 맑은 공기",
+  "fruitless": "성과 없는",
   "full of change": "변화가 가득한",
   "full of cheer": "흥이 넘치는",
   "full of life and colour": "생기와 빛깔이 넘치는",
@@ -721,6 +730,7 @@ Object.assign(window.GLOSS, {
   "one who works for free": "보수 없이 일하는 사람",
   "open up to the air": "바깥 공기에 열다",
   "over against": "마주 놓고",
+  "performer": "공연자, 연기자",
   "person on a plant diet": "식물만 먹는 사람",
   "person who offers to help": "돕겠다고 나서는 사람",
   "physical attack": "몸으로 하는 공격",
@@ -750,6 +760,7 @@ Object.assign(window.GLOSS, {
   "sharply clear": "또렷하게 밝은",
   "ship": "배, 선박",
   "show to be true": "참임을 보여 주다",
+  "shroud": "가리다, 감싸다",
   "snake poison": "뱀의 독",
   "space with no air": "공기가 없는 공간",
   "speed of travel": "나아가는 빠르기",

@@ -88,7 +88,7 @@
  */
 
 window.VOCAB_O = [
-  { word:"obsession", exams:["공무원"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
+  { word:"obsession", exams:["공무원","수능"], pron:"옵세션", pos:"n", level:"B2", meanings:["집착","강박"], syn:["fixation","preoccupation","compulsion"], ex:[{ s:"For many people, work has become an {{}}.", f:"obsession", ko:"많은 사람에게 일은 집착이 되었다." }] },
   { word:"occasionally", exams:["공무원","수능"], pron:"어케이저널리", pos:"adv", level:"B2", meanings:["가끔","때때로"], syn:["sometimes","now and then","periodically"], ant:["frequently"], ex:[{ s:"They speak only {{}} while playing on their own.", f:"occasionally", ko:"그들은 혼자 놀면서 가끔씩만 말한다." }] },
   { word:"oddity", exams:["공무원"], pron:"아디티", pos:"n", level:"C1", meanings:["특이한 것","기이함"], syn:["peculiarity","curiosity","anomaly"], ex:[{ s:"Most files are ordinary, but one {{}} stands out: a peddler license from 1890.", f:"oddity", ko:"대부분의 문서는 평범하지만 특이한 것 하나가 눈에 띈다. 1890년의 행상 면허다." }] },
   { word:"opulent", exams:["공무원"], pron:"아퓰런트", pos:"adj", level:"C2", meanings:["호화로운","부유한"], syn:["luxurious","lavish","sumptuous"], ant:["modest"], ex:[{ s:"Their house seemed unnecessarily {{}}.", f:"opulent", ko:"그들의 집은 불필요하게 호화로워 보였다." }] },
@@ -96,7 +96,7 @@ window.VOCAB_O = [
   { word:"opt", exams:["공무원"], pron:"옵트", pos:"v", level:"C1", meanings:["선택하다"], syn:["choose","select","decide"], ex:[{ s:"They {{}} for reusable containers instead.", f:"opt", ko:"그들은 대신 재사용 용기를 선택한다." }], gov:{ prep:["for"], usage:"opt for ~ : ~을 선택하다 / opt out : 빠지다" } },
   { word:"overspend", exams:["공무원"], pron:"오버스펜드", pos:"v", level:"C1", meanings:["과소비하다","초과 지출하다"], syn:["splurge","overpay","squander"], ant:["save"], ex:[{ s:"The season can be a time you {{}} on gifts.", f:"overspend", ko:"그 시즌은 선물에 과소비하는 때가 될 수 있다." }] },
   { word:"observer", exams:["공무원"], pron:"업저버", pos:"n", level:"B2", meanings:["관찰자","참관인"], syn:["onlooker","spectator","witness"], ant:["participant"], ex:[{ s:"Humans are allowed, but only as {{}}.", f:"observers", ko:"인간은 허용되지만 오직 참관인으로만 가능하다." }] },
-  { word:"ordinary", exams:["공무원"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
+  { word:"ordinary", exams:["공무원","수능"], pron:"오디너리", pos:"adj", level:"B1", meanings:["평범한","보통의"], syn:["common","usual","normal"], ant:["extraordinary"], ex:[{ s:"Do not throw it out with {{}} trash.", f:"ordinary", ko:"그것을 일반 쓰레기와 함께 버리지 마라." }] },
   { word:"outwardly", exams:["공무원"], pron:"아웃워들리", pos:"adv", level:"C1", meanings:["겉으로는","외관상"], syn:["externally","apparently","seemingly"], ant:["inwardly"], ex:[{ s:"He remained {{}} calm during the crisis.", f:"outwardly", ko:"그는 위기 동안 겉으로는 침착함을 유지했다." }] },
   { word:"overconsumption", exams:["공무원"], pron:"오버컨섬션", pos:"n", level:"C1", meanings:["과소비","과잉 섭취"], syn:["overuse","excess","overindulgence"], ant:["moderation"], ex:[{ s:"Children's health is declining due to {{}} of fast food.", f:"overconsumption", ko:"패스트푸드의 과잉 섭취로 아이들의 건강이 나빠지고 있다." }] },
   { word:"overgrown", exams:["공무원"], pron:"오버그로운", pos:"adj", level:"C1", meanings:["웃자란","무성한"], syn:["unkempt","weedy","overrun"], ant:["trimmed"], ex:[{ s:"The program requires no {{}} yards.", f:"overgrown", ko:"그 프로그램은 웃자란 마당이 없을 것을 요구한다." }] },
@@ -109,7 +109,7 @@ window.VOCAB_O = [
   { word:"on a tight budget", exams:["공무원"], pron:"온 어 타이트 버짓", pos:"phr", level:"B2", meanings:["예산이 빠듯한","돈이 넉넉지 않은"] },
   { word:"outrun", exams:["공무원"], pron:"아웃런", pos:"v", level:"C1", meanings:["~보다 빨리 달리다","앞지르다"], syn:["outpace","outstrip","outdistance"], ex:[{ s:"The thief could not {{}} the police car on foot.", f:"outrun", ko:"도둑은 걸어서는 경찰차를 따돌릴 수 없었다." }] },
   { word:"outwit", exams:["공무원"], pron:"아웃위트", pos:"v", level:"C1", meanings:["~보다 한 수 앞서다","꾀로 이기다"], syn:["outsmart","outmaneuver","trick"], ex:[{ s:"We use our intelligence to {{}} each other.", f:"outwit", ko:"우리는 서로보다 한 수 앞서기 위해 지능을 쓴다." }] },
-  { word:"obviously", exams:["공무원"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
+  { word:"obviously", exams:["공무원","수능"], pron:"아비어슬리", pos:"adv", level:"B1", meanings:["분명히","명백하게"], syn:["clearly","evidently","apparently"], ex:[{ s:"{{}}, you cannot learn a language in one week.", f:"Obviously", ko:"분명히 말하지만, 일주일 만에 언어를 배울 수는 없다." }] },
   { word:"otherwise", exams:["공무원","수능"], pron:"어더와이즈", pos:"adv", level:"B2", meanings:["그렇지 않으면","달리"], syn:["alternatively","differently","or else"], ex:[{ s:"Leave now; {{}}, you will miss the train.", f:"otherwise", ko:"지금 떠나라. 그렇지 않으면 기차를 놓칠 것이다." }] },
   { word:"overwork", exams:["공무원"], pron:"오버워크", pos:"v", level:"B2", meanings:["과로하다","혹사하다"], ex:[{ s:"Doctors warn that people who {{}} risk burnout.", f:"overwork", ko:"의사들은 과로하는 사람들이 번아웃 위험에 처한다고 경고한다." }] },
   { word:"opinionated", exams:["공무원"], pron:"어피니어네이티드", pos:"adj", level:"C1", meanings:["자기 주장이 강한","독선적인"], syn:["dogmatic","stubborn","biased"], ex:[{ s:"I like this newspaper because it is not {{}}.", f:"opinionated", ko:"나는 이 신문이 독선적이지 않아서 좋다." }] },
@@ -118,6 +118,18 @@ window.VOCAB_O = [
   { word:"object to", exams:["공무원"], pron:"어브젝트 투", pos:"phr", level:"B2", meanings:["~에 반대하다","~에 이의를 제기하다"] },
   { word:"outsourcing", exams:["수능"], pron:"아웃소싱", pos:"n", level:"C1", meanings:["외주","외부 위탁"], ex:[{ s:"{{}} lets large companies move work to cheaper markets.", f:"Outsourcing", ko:"외주 덕분에 대기업은 일을 더 싼 시장으로 옮길 수 있다." }] },
   { word:"on the spot", exams:["수능"], pron:"온 더 스팟", pos:"phr", level:"B2", meanings:["즉석에서","현장에서"] },
+  { word:"originally", exams:["수능"], pron:"어리저널리", pos:"adv", level:"B2", meanings:["원래","처음에는"] },
+  { word:"overuse", exams:["수능"], pron:"오버유즈", pos:"v", level:"B2", meanings:["남용하다","지나치게 쓰다"], ex:[{ s:"Teenagers who {{}} their phones at night often sleep badly.", f:"overuse", ko:"밤에 휴대폰을 지나치게 쓰는 십대는 잠을 잘 못 자는 경우가 많다." }] },
+  { word:"overcome", exams:["수능"], pron:"오버컴", pos:"v", level:"B1", meanings:["극복하다","이겨내다"], syn:["conquer","surmount","defeat"], ant:["surrender"], ex:[{ s:"She trained hard to {{}} her fear of water.", f:"overcome", ko:"그녀는 물에 대한 두려움을 극복하려고 열심히 훈련했다." }] },
+  { word:"overtourism", exams:["수능"], pron:"오버투어리즘", pos:"n", level:"C1", meanings:["과잉 관광"], ex:[{ s:"Venice suffers from {{}} every summer.", f:"overtourism", ko:"베네치아는 매년 여름 과잉 관광에 시달린다." }] },
+  { word:"outsider", exams:["수능"], pron:"아웃사이더", pos:"n", level:"B2", meanings:["외부인","아웃사이더"], ex:[{ s:"The small village was not friendly to any {{}}.", f:"outsider", ko:"그 작은 마을은 어떤 외부인에게도 우호적이지 않았다." }] },
+  { word:"overjoyed", exams:["수능"], pron:"오버조이드", pos:"adj", level:"C1", meanings:["매우 기뻐하는","크게 기뻐하는"], syn:["delighted","thrilled","elated"], ant:["heartbroken"], ex:[{ s:"The girls were {{}} to see their father again.", f:"overjoyed", ko:"딸들은 아버지를 다시 보게 되어 무척 기뻐했다." }] },
+  { word:"observable", exams:["수능"], pron:"업저버블", pos:"adj", level:"C1", meanings:["관찰할 수 있는","눈에 보이는"], syn:["visible","noticeable","apparent"], ant:["invisible"], ex:[{ s:"Scientists study {{}} changes in animal behavior.", f:"observable", ko:"과학자들은 관찰할 수 있는 동물 행동의 변화를 연구한다." }] },
+  { word:"outline", exams:["수능"], pron:"아웃라인", pos:"n", level:"B2", meanings:["개요","윤곽"], ex:[{ s:"Write a brief {{}} of your essay before you start.", f:"outline", ko:"에세이를 쓰기 전에 간단한 개요를 작성해라." }] },
+  { word:"overflow", exams:["수능"], pron:"오버플로", pos:"v", level:"B2", meanings:["넘치다","범람하다"], ex:[{ s:"The river may {{}} after days of heavy rain.", f:"overflow", ko:"며칠 동안 폭우가 내리면 강이 범람할 수 있다." }] },
+  { word:"ownership", exams:["수능"], pron:"오너십", pos:"n", level:"B2", meanings:["소유권","소유"], ex:[{ s:"Home {{}} is a dream for many young couples.", f:"ownership", ko:"내 집 마련은 많은 젊은 부부의 꿈이다." }] },
+  { word:"outpace", exams:["수능"], pron:"아웃페이스", pos:"v", level:"C1", meanings:["앞지르다","능가하다"], syn:["outstrip","surpass","overtake"], ex:[{ s:"Demand for clean water may soon {{}} supply.", f:"outpace", ko:"깨끗한 물의 수요가 곧 공급을 앞지를 수도 있다." }] },
+  { word:"oversimplified", exams:["수능"], pron:"오버심플러파이드", pos:"adj", level:"C1", meanings:["지나치게 단순화된"], syn:["simplistic","naive","superficial"], ant:["elaborate"], ex:[{ s:"Their explanation of the problem was badly {{}}.", f:"oversimplified", ko:"그 문제에 대한 그들의 설명은 지나치게 단순화되어 있었다." }] },
   /* ── 챕터 1 ─────────────────────────────────────── */
 
   /* 승격 ① — 사전 표현 '맹세, 서약' 을 글자까지 지켰다(curse, C).
@@ -152,21 +164,21 @@ window.VOCAB_O = [
      갈렸다. 수능에서 명사가 압도적이고 '반대하다' 뜻은 같은 챕터의 objection 과
      챕터 4 의 oppose 가 담으므로 명사로 세웠다. 동사 자리 세 곳의 유의어는
      'object to' 로 바꿨다 — 동사 자리에 동사구가 온다. */
-  { word:"object", pron:"어브젝트", pos:"n", level:"B1", meanings:["물건","물체"],
+  { word:"object", exams:["수능"], pron:"어브젝트", pos:"n", level:"B1", meanings:["물건","물체"],
     syn:["item","physical body","solid thing"],
     ex:[{ s:"A small metal {{}} lay on the floor.", f:"object", ko:"작은 금속 물체가 바닥에 놓여 있었다." }] },
 
   /* 승격 ⑤ — 사전은 '반대, 이의' 였다. '반대' 를 그대로 두면 dissent(반대, 이견, D)
      와 첫 뜻이 같고, 챕터 4 의 opposition·opposite 와도 줄줄이 물린다.
      순서를 뒤집어 '이의' 를 앞세우고 원본의 '반감' 을 붙였다. */
-  { word:"objection", pron:"어브젝션", pos:"n", level:"B2", meanings:["이의","반감"],
+  { word:"objection", exams:["수능"], pron:"어브젝션", pos:"n", level:"B2", meanings:["이의","반감"],
     syn:["dissent","counter-argument","voiced disagreement"], ant:["assent"],
     ex:[{ s:"She raised no {{}} to the new rule.", f:"objection", ko:"그녀는 새 규칙에 아무 이의도 내지 않았다." }] },
 
   /* 승격 ⑥ — 사전이 '객관적인, 목표' 로 형용사와 명사가 섞여 있었다.
      impartial(I) 이 형용사 갈래를 쓰므로 형용사로 세우고 '목적, 목표' 는 버렸다.
      아까운 자리지만 참조를 보존하는 규칙을 따랐다. */
-  { word:"objective", exams:["공무원"], pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
+  { word:"objective", exams:["공무원","수능"], pron:"업젝티브", pos:"adj", level:"B2", meanings:["객관적인","사실에 근거한"],
     syn:["unbiased","fact-based","free of opinion"], ant:["subjective"],
     ex:[{ s:"The report gives an {{}} account of the fire.", f:"objective", ko:"그 보고서는 화재를 객관적인 서술로 담았다." }] },
 
@@ -211,7 +223,7 @@ window.VOCAB_O = [
     syn:["unclear","hard to make out","little known"], ant:["apparent"],
     ex:[{ s:"The origin of the custom is {{}}.", f:"obscure", ko:"그 관습의 기원은 분명하지 않다." }] },
 
-  { word:"observation", exams:["공무원"], pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
+  { word:"observation", exams:["공무원","수능"], pron:"압저베이션", pos:"n", level:"B2", meanings:["관찰","논평"],
     syn:["close watching","careful noting","spoken remark"],
     ex:[{ s:"Years of {{}} led to the discovery.", f:"observation", ko:"여러 해의 관찰이 그 발견으로 이어졌다." }] },
 
@@ -236,7 +248,7 @@ window.VOCAB_O = [
 
   /* 승격 ⑭ — 사전은 '장애물' 한 갈래였다. 원본의 '장애' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(barrier, B · challenge, C · deterrent, D). */
-  { word:"obstacle", pron:"압스터클", pos:"n", level:"B1", meanings:["장애물","장애"],
+  { word:"obstacle", exams:["수능"], pron:"압스터클", pos:"n", level:"B1", meanings:["장애물","장애"],
     syn:["barrier","hurdle","thing in the way"],
     ex:[{ s:"Cost is the main {{}} to the plan.", f:"obstacle", ko:"비용이 그 계획의 주된 장애물이다." }] },
 
@@ -259,7 +271,7 @@ window.VOCAB_O = [
     ex:[{ s:"Fallen rocks {{}} the mountain road.", f:"obstruct", ko:"떨어진 바위가 산길을 막는다." }] },
 
   /* 승격 ⑯ — 사전 표현을 글자까지 지켰다(acquire, A · derive, D). */
-  { word:"obtain", pron:"업테인", pos:"v", level:"B2", meanings:["얻다","획득하다"],
+  { word:"obtain", exams:["수능"], pron:"업테인", pos:"v", level:"B2", meanings:["얻다","획득하다"],
     syn:["acquire","get hold of","come by"],
     ex:[{ s:"You must {{}} a permit before digging.", f:"obtain", ko:"파기 전에 허가를 얻어야 한다." }] },
 
@@ -294,7 +306,7 @@ window.VOCAB_O = [
   /* 승격 ⑳ — 사전은 '차지하다' 한 갈래였다. 원본의 셋 중 '점령하다' 를 붙였다
      (뜻은 두 개까지만 담는다 — '종사하다' 는 occupation 쪽에 있다).
      첫 뜻은 사전값을 지켰다(inhabit, I). */
-  { word:"occupy", pron:"아큐파이", pos:"v", level:"B2", meanings:["차지하다","점령하다"],
+  { word:"occupy", exams:["수능"], pron:"아큐파이", pos:"v", level:"B2", meanings:["차지하다","점령하다"],
     syn:["take up","hold by force","move into"],
     ex:[{ s:"Boxes {{}} most of the hallway.", f:"occupy", ko:"상자들이 복도의 대부분을 차지한다." }] },
 
@@ -376,7 +388,7 @@ window.VOCAB_O = [
 
   /* 승격 30 — 사전 표현 '자식, 자손' 을 글자까지 지켰다(descendant, D).
      원본의 '(동물의) 새끼' 괄호는 걷었다. */
-  { word:"offspring", pron:"오프스프링", pos:"n", level:"B2", meanings:["자식","자손"],
+  { word:"offspring", exams:["수능"], pron:"오프스프링", pos:"n", level:"B2", meanings:["자식","자손"],
     syn:["descendant","progeny","young of a creature"],
     ex:[{ s:"Salmon return upstream to leave their {{}}.", f:"offspring", ko:"연어는 자손을 남기려고 강을 거슬러 돌아온다." }] },
 
@@ -422,7 +434,7 @@ window.VOCAB_O = [
 
   /* 승격 34 — 사전 표현 '반면에, 한편' 을 글자까지 지켰다(by contrast, B).
      원본의 '다른 관점에서' 대신 사전 쪽을 남겼다. */
-  { word:"on the other hand", exams:["공무원"], pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
+  { word:"on the other hand", exams:["공무원","수능"], pron:"온 디 어더 핸드", pos:"phr", level:"B1", meanings:["반면에","한편"],
     syn:["by contrast","then again","from another view"] },
 
   /* 원본은 'on the tip of my tongue' 이었다. 저장소의 구 표제어는 사람을
@@ -457,7 +469,7 @@ window.VOCAB_O = [
 
   /* 승격 36 — 사전 표현 '진행 중인, 계속되는' 을 글자까지 지켰다
      (continuous, C · in progress, I). in progress 와 첫 뜻이 같지만 서로 유의어다. */
-  { word:"ongoing", pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],
+  { word:"ongoing", exams:["수능"], pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],
     syn:["continuous","still under way","unfinished"], ant:["completed"],
     ex:[{ s:"Repairs to the bridge are {{}}.", f:"ongoing", ko:"그 다리 보수는 진행 중이다." }] },
 
@@ -505,7 +517,7 @@ window.VOCAB_O = [
     syn:["run a business","work a machine","keep in action"],
     ex:[{ s:"They {{}} three bakeries in the city.", f:"operate", ko:"그들은 그 도시에서 빵집 셋을 경영한다." }] },
 
-  { word:"operation", exams:["공무원"], pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
+  { word:"operation", exams:["공무원","수능"], pron:"아퍼레이션", pos:"n", level:"B1", meanings:["수술","가동"],
     syn:["surgery","running of a machine","working order"],
     ex:[{ s:"She needs an {{}} on her knee.", f:"operation", ko:"그녀는 무릎 수술이 필요하다." }] },
 
@@ -522,14 +534,14 @@ window.VOCAB_O = [
   /* 승격 42 — 사전은 '반대하다' 한 갈래였다. 원본은 '~에 반대하다' 였지만
      참조 셋(advocate·endorse 반의어, contradict 유의어) 을 보존하려고 사전값을
      첫 자리에 남기고 '맞서다' 를 붙였다. */
-  { word:"oppose", pron:"어포즈", pos:"v", level:"B2", meanings:["반대하다","맞서다"],
+  { word:"oppose", exams:["수능"], pron:"어포즈", pos:"v", level:"B2", meanings:["반대하다","맞서다"],
     syn:["contradict","speak against","stand up to"], ant:["endorse"],
     ex:[{ s:"Residents will {{}} the new landfill.", f:"oppose", ko:"주민들은 새 매립지에 반대할 것이다." }] },
 
   /* 승격 43 — 사전이 '반대의; 맞은편' 으로 형용사와 명사가 섞여 있었다.
      converse(C)·inverse(I) 둘 다 형용사여서 형용사로 세웠다. 원본 첫 뜻 '반대'(n)
      를 버리자 같은 챕터의 opposition·objection(챕터 1) 과의 겹침도 함께 풀렸다. */
-  { word:"opposite", exams:["공무원"], pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
+  { word:"opposite", exams:["공무원","수능"], pron:"아퍼짓", pos:"adj", level:"C1", meanings:["반대편의","맞은편의"],
     syn:["converse","facing","on the other side"],
     ex:[{ s:"The bakery is on the {{}} corner.", f:"opposite", ko:"그 빵집은 맞은편 모서리에 있다." }] },
 
@@ -574,7 +586,7 @@ window.VOCAB_O = [
 
   /* 승격 46 — 사전 표현 '선택, 대안' 을 글자까지 지켰다(alternative, A).
      원본의 '선택, 선택권' 대신 사전 쪽을 남겼다. */
-  { word:"option", pron:"압션", pos:"n", level:"B1", meanings:["선택","대안"],
+  { word:"option", exams:["수능"], pron:"압션", pos:"n", level:"B1", meanings:["선택","대안"],
     syn:["alternative","choice","way open to one"],
     ex:[{ s:"Walking was the only {{}} left.", f:"option", ko:"걷는 것이 남은 유일한 선택이었다." }] },
 
@@ -603,31 +615,31 @@ window.VOCAB_O = [
 
   /* 원본의 '(신체) 장기, 기관' 괄호를 걷었다. 같은 챕터 organization 을
      '조직, 단체' 로 갈라 '기관' 이 서로 물리지 않게 했다. */
-  { word:"organ", pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
+  { word:"organ", exams:["수능"], pron:"오건", pos:"n", level:"B2", meanings:["장기","기관"],
     syn:["body part","internal structure","working unit of the body"],
     ex:[{ s:"The liver is the largest internal {{}}.", f:"organ", ko:"간은 가장 큰 내부 장기다." }] },
 
   /* 승격 47 — 사전 표현 '유기적인, 유기농의' 를 글자까지 지켰다(biological, B).
      원본의 '화학 비료를 쓰지 않는' 은 서술이 길어서 버렸다. */
-  { word:"organic", pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
+  { word:"organic", exams:["수능"], pron:"오개닉", pos:"adj", level:"B2", meanings:["유기적인","유기농의"],
     syn:["biological","chemical-free","naturally grown"], ant:["synthetic"],
     ex:[{ s:"The farm sells only {{}} vegetables.", f:"organic", ko:"그 농장은 유기농의 채소만 판다." }] },
 
-  { word:"organism", exams:["공무원"], pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
+  { word:"organism", exams:["공무원","수능"], pron:"오거니즘", pos:"n", level:"B2", meanings:["유기체"],
     syn:["living thing","life form","biological entity"],
     ex:[{ s:"Every {{}} needs water to survive.", f:"organism", ko:"모든 유기체는 살아남으려면 물이 필요하다." }] },
 
   /* 승격 48 — 사전은 '조직, 기관' 이었다. '기관' 을 그대로 두면 같은 챕터의
      organ(장기, 기관) 과 물리므로 원본의 '단체' 로 갈랐다.
      association(A)·institution(I) 두 곳의 화면 글자가 함께 바뀐다. */
-  { word:"organization", exams:["공무원"], pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
+  { word:"organization", exams:["공무원","수능"], pron:"오거니제이션", pos:"n", level:"B1", meanings:["조직","단체"],
     syn:["association","institution","body of members"],
     ex:[{ s:"She founded an {{}} for street children.", f:"organization", ko:"그녀는 거리 아이들을 위한 단체를 세웠다." }] },
 
   /* 승격 49 — ★원본의 '구조적인' 은 structural 의 뜻이다. 사전은 '조직의' 한
      갈래였고, 거기에 원본의 '조직적인' 을 붙였다. 첫 뜻은 사전값을 지켰다
      (administrative, A). */
-  { word:"organizational", pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
+  { word:"organizational", exams:["수능"], pron:"오거니제이셔널", pos:"adj", level:"C1", meanings:["조직의","조직적인"],
     syn:["administrative","to do with running a group","managerial"],
     ex:[{ s:"The delay was an {{}} failure, not a technical one.", f:"organizational", ko:"그 지연은 기술이 아니라 조직의 실패였다." }] },
 
@@ -639,7 +651,7 @@ window.VOCAB_O = [
 
   /* 승격 51 — 사전에 뜻만 있고 발음이 없던 항목이다. 사전값 '방향을 잡다' 를
      첫 자리에 두고 원본의 '~에 맞추다' 를 붙였다(원본의 '(특정 목적에)' 괄호는 걷었다). */
-  { word:"orient", pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
+  { word:"orient", exams:["수능"], pron:"오리엔트", pos:"v", level:"C1", meanings:["방향을 잡다","~에 맞추다"],
     syn:["find one's bearings","point in a direction","adapt to a purpose"],
     ex:[{ s:"Use the map to {{}} yourself before setting off.", f:"orient", ko:"떠나기 전에 지도로 방향을 잡으세요." }] },
 
@@ -651,7 +663,7 @@ window.VOCAB_O = [
 
   /* 원본의 '오리엔테이션' 은 외래어를 그대로 옮긴 것이어서 뺐다 —
      M 세트 multimedia 의 '멀티미디어' 와 같은 처리다. */
-  { word:"orientation", pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
+  { word:"orientation", exams:["수능"], pron:"오리엔테이션", pos:"n", level:"B2", meanings:["예비 교육","방향"],
     syn:["introductory training","sense of direction","initial briefing"],
     ex:[{ s:"New staff attend a two-day {{}}.", f:"orientation", ko:"새 직원은 이틀간의 예비 교육에 참석한다." }] },
 
@@ -663,7 +675,7 @@ window.VOCAB_O = [
 
   /* 승격 53 — 사전 표현 '유래하다, 시작되다' 를 글자까지 지켰다
      (come into existence, C). 원본의 '고안하다' 갈래는 버렸다. */
-  { word:"originate", pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
+  { word:"originate", exams:["수능"], pron:"어리저네이트", pos:"v", level:"B2", meanings:["유래하다","시작되다"],
     syn:["come into existence","arise from","have its source in"],
     ex:[{ s:"The custom may {{}} in a harvest festival.", f:"originate", ko:"그 관습은 추수 축제에서 유래할지도 모른다." }] },
 
@@ -763,7 +775,7 @@ window.VOCAB_O = [
 
   /* 승격 60 — 사전 표현 '구식의, 낡은' 을 글자까지 지켰다(발음이 없던 항목이다).
      원본의 '구식의, 시대에 뒤진, 진부한' 중 '시대에 뒤진' 은 out of date 에 넘겼다. */
-  { word:"outdated", pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
+  { word:"outdated", exams:["수능"], pron:"아웃데이팃", pos:"adj", level:"B2", meanings:["구식의","낡은"],
     syn:["antiquated","no longer up to date","left behind"], ant:["up-to-date"],
     ex:[{ s:"The software is badly {{}}.", f:"outdated", ko:"그 소프트웨어는 몹시 구식이다." }] },
 
@@ -823,14 +835,14 @@ window.VOCAB_O = [
 
   /* 승격 66 — 사전 표현 '더 나은 성과를 내다' 를 글자까지 지켰다(excel, E).
      원본의 '능가하다' 를 쓰면 같은 챕터의 outstrip 과 부딪힌다. */
-  { word:"outperform", pron:"아웃퍼폼", pos:"v", level:"C1", meanings:["더 나은 성과를 내다"],
+  { word:"outperform", exams:["수능"], pron:"아웃퍼폼", pos:"v", level:"C1", meanings:["더 나은 성과를 내다"],
     syn:["excel","do better than","surpass in results"],
     ex:[{ s:"Small firms often {{}} large ones in service.", f:"outperform", ko:"작은 회사가 서비스에서 큰 회사보다 더 나은 성과를 내는 일이 많다." }] },
 
   /* 승격 67 — 사전 표현 '생산량, 산출' 을 글자까지 지켰다(발음이 없던 항목이다).
      원본은 '산출, 생산, 결과; 산출하다, 출력하다' 로 명사와 동사가 섞여 있었다.
      참조가 없어 자유롭게 고를 수 있었고 명사로 정리했다. */
-  { word:"output", exams:["공무원"], pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
+  { word:"output", exams:["공무원","수능"], pron:"아웃풋", pos:"n", level:"B2", meanings:["생산량","산출"],
     /* Y 세트에서 yield 를 동사로 세웠다. 명사 표제어의 유의어 칸에 동사가
        설 수 없으므로 풀어 쓴 말로 갈았다. harvest(H) 도 같이 손질했다.
        ⚠️ 처음에 'amount turned out' 을 넣었더니 바로 옆 'amount produced'
@@ -959,7 +971,7 @@ window.VOCAB_O = [
   /* 승격 75 — 사전 표현 '간과하다; 내려다보다' 의 두 갈래를 그대로 살렸다.
      구분 기호만 쉼표로 바꿨다. 이 세트에서 참조가 가장 많은 낱말이다(5곳) —
      condone·disregard·ignore 가 유의어, anticipate·detect 가 반의어다. */
-  { word:"overlook", pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
+  { word:"overlook", exams:["수능"], pron:"오버룩", pos:"v", level:"B2", meanings:["간과하다","내려다보다"],
     syn:["disregard","fail to notice","pass over"],
     ex:[{ s:"It is easy to {{}} a small error in the total.", f:"overlook", ko:"합계의 작은 오류는 간과하기 쉽다." }] },
 
@@ -981,14 +993,14 @@ window.VOCAB_O = [
 
   /* 승격 77 — 사전은 '감독하다' 한 갈래였다. 원본의 '감시하다' 를 뒤에 붙였다.
      첫 뜻은 사전값을 지켰다(administer, A). 원본은 순서가 거꾸로였다. */
-  { word:"oversee", pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
+  { word:"oversee", exams:["수능"], pron:"오버시", pos:"v", level:"B2", meanings:["감독하다","감시하다"],
     syn:["supervise","keep watch over","be in charge of"],
     ex:[{ s:"She was asked to {{}} the whole project.", f:"oversee", ko:"그녀는 사업 전체를 감독하도록 요청받았다." }] },
 
   /* 승격 78 — 사전 표현 '과장해 말하다' 를 글자까지 지켰다
      (dramatize, D · exaggerate, E). 원본의 '과장하다' 를 쓰면 exaggerate(과장하다,
      부풀리다) 의 첫 뜻과 같아진다. */
-  { word:"overstate", pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
+  { word:"overstate", exams:["수능"], pron:"오버스테이트", pos:"v", level:"C1", meanings:["과장해 말하다"],
     syn:["exaggerate","make more of than is true","blow up in the telling"], ant:["understate"],
     ex:[{ s:"Reports may {{}} the size of the crowd.", f:"overstate", ko:"보도는 군중의 규모를 과장해 말할 수 있다." }] },
 
@@ -1030,7 +1042,7 @@ window.VOCAB_O = [
     syn:["daunting","too strong to resist","crushing in scale"],
     ex:[{ s:"The response was {{}}.", f:"overwhelming", ko:"반응은 압도적이었다." }] },
 
-  { word:"owe", exams:["공무원"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
+  { word:"owe", exams:["공무원","수능"], pron:"오우", pos:"v", level:"B1", meanings:["빚지다","~ 덕분이다"],
     syn:["be in debt for","have to pay back","be indebted to"],
     ex:[{ s:"I still {{}} her for the tickets.", f:"owe", ko:"나는 아직 그녀에게 표값을 빚지고 있다." }] }
 ];
@@ -1217,6 +1229,7 @@ Object.assign(window.GLOSS, {
   "insulting": "모욕하는",
   "internal structure": "몸속 구조물",
   "introductory training": "처음 받는 교육",
+  "invisible": "눈에 보이지 않는",
   "inwardly": "마음속으로, 내심",
   "jaunt": "짧은 유람",
   "jumpy": "움찔거리는",
@@ -1297,7 +1310,6 @@ Object.assign(window.GLOSS, {
   "outdistance": "크게 앞지르다",
   "outlast": "~보다 오래 버티다",
   "outmaneuver": "책략으로 이기다",
-  "outpace": "~보다 빨리 나아가다",
   "outsmart": "꾀로 이기다",
   "over-organize": "지나치게 짜 맞추다",
   "overcome by strength": "힘으로 이겨 내다",
@@ -1306,7 +1318,6 @@ Object.assign(window.GLOSS, {
   "overpay": "너무 많이 지불하다",
   "overspent on an account": "계좌에서 넘겨 쓴",
   "overtake in progress": "나아가며 앞질러 가다",
-  "overuse": "남용, 과다 사용",
   "parentless child": "어버이 없는 아이",
   "pariah": "천대받는 사람",
   "particular time": "특정한 시점",
@@ -1325,7 +1336,6 @@ Object.assign(window.GLOSS, {
   "plantation of fruit": "과일 농장",
   "point in a direction": "어느 쪽으로 향하게 하다",
   "positive thinking": "긍정으로 생각하기",
-  "preoccupation": "몰두, 사로잡힘",
   "present for acceptance": "받아 달라고 내놓다",
   "presently arising": "지금 생겨나는",
   "press down hard": "세게 내리누르다",
@@ -1391,6 +1401,7 @@ Object.assign(window.GLOSS, {
   "sudden rush": "갑작스레 몰려나옴",
   "sudden spread": "갑작스레 퍼짐",
   "superseded": "다른 것에 밀려난",
+  "surmount": "넘다, 이겨내다",
   "surpass in results": "성과에서 앞서다",
   "surreal": "비현실적인, 꿈같은",
   "survive longer than": "~보다 오래 살아남다",

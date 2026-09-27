@@ -24,9 +24,12 @@
  */
 window.VOCAB_J = [
   { word:"jewelry", exams:["공무원"], pron:"주얼리", pos:"n", level:"B2", meanings:["보석류","장신구"], syn:["jewels","ornaments","trinkets"], ex:[{ s:"Evans found a trove of {{}} and pottery.", f:"jewelry", ko:"에번스는 보석류와 도기가 담긴 보물 더미를 발견했다." }] },
-  { word:"journalist", exams:["공무원"], pron:"저널리스트", pos:"n", level:"B2", meanings:["기자","언론인"], syn:["reporter","correspondent","columnist"], ex:[{ s:"Foreign {{}} hope to cover as much news as possible.", f:"journalists", ko:"외국 기자들은 가능한 한 많은 뉴스를 취재하기를 바란다." }] },
+  { word:"journalist", exams:["공무원","수능"], pron:"저널리스트", pos:"n", level:"B2", meanings:["기자","언론인"], syn:["reporter","correspondent","columnist"], ex:[{ s:"Foreign {{}} hope to cover as much news as possible.", f:"journalists", ko:"외국 기자들은 가능한 한 많은 뉴스를 취재하기를 바란다." }] },
   { word:"judgmental", exams:["공무원"], pron:"저지멘털", pos:"adj", level:"C1", meanings:["비판적인","쉽게 단정하는"], syn:["critical","disapproving","censorious"], ex:[{ s:"Try not to be {{}} when others share their problems.", f:"judgmental", ko:"다른 사람이 고민을 털어놓을 때 함부로 판단하지 않도록 하라." }] },
-  { word:"just in case", exams:["공무원"], pron:"저스트 인 케이스", pos:"phr", level:"B1", meanings:["만일을 대비해","혹시 모르니"] },
+  { word:"just in case", exams:["공무원","수능"], pron:"저스트 인 케이스", pos:"phr", level:"B1", meanings:["만일을 대비해","혹시 모르니"] },
+  { word:"jointly", exams:["수능"], pron:"조인틀리", pos:"adv", level:"B2", meanings:["공동으로","함께"] },
+  { word:"judgment", exams:["수능"], pron:"저지먼트", pos:"n", level:"B1", meanings:["판단","판결"], ex:[{ s:"Use your own {{}} to decide what is right.", f:"judgment", ko:"무엇이 옳은지는 스스로 판단해서 정해라." }] },
+  { word:"joyous", exams:["수능"], pron:"조이어스", pos:"adj", level:"C1", meanings:["기쁜","즐거운"], syn:["joyful","cheerful","gleeful"], ant:["sorrowful"], ex:[{ s:"The airport was full of {{}} reunions after the holidays.", f:"joyous", ko:"휴가가 끝난 뒤 공항은 기쁜 재회로 가득했다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"janitor", pron:"재너터", pos:"n", level:"B2", meanings:["경비","관리인"],
@@ -40,7 +43,7 @@ window.VOCAB_J = [
   /* 승격 ① — GLOSS '질투하는' 을 첫 자리에 지켰다. envious(syn) 가 참조한다.
      원본 '질투심이 많은' 은 같은 갈래라 사전 쪽 표현을 쓰고, 원본의 '시샘하는' 을
      둘째 자리에 붙였다. */
-  { word:"jealous", pron:"젤러스", pos:"adj", level:"B1", meanings:["질투하는","시샘하는"],
+  { word:"jealous", exams:["수능"], pron:"젤러스", pos:"adj", level:"B1", meanings:["질투하는","시샘하는"],
     syn:["envious","resentful","covetous"],
     ex:[{ s:"He gradually grew {{}} of his brother's success.", f:"jealous", ko:"그는 점차 형의 성공을 질투하게 되었다." }] },
 
@@ -64,7 +67,7 @@ window.VOCAB_J = [
     syn:["communal","collective","shared"], ant:["individual"],
     ex:[{ s:"The two firms issued a {{}} statement on Friday.", f:"joint", ko:"두 회사는 금요일에 공동 성명을 발표했다." }] },
 
-  { word:"journalism", pron:"저널리즘", pos:"n", level:"B2", meanings:["언론","저널리즘"],
+  { word:"journalism", exams:["수능"], pron:"저널리즘", pos:"n", level:"B2", meanings:["언론","저널리즘"],
     syn:["reporting","the press","news media"],
     ex:[{ s:"She won a national award for investigative {{}}.", f:"journalism", ko:"그녀는 탐사 언론 활동으로 전국 단위 상을 받았다." }] },
 
@@ -131,7 +134,9 @@ Object.assign(window.GLOSS, {
   "custodian": "관리 책임자",
   "doorkeeper": "문지기",
   "equity": "형평, 공평",
+  "gleeful": "신이 난",
   "jewels": "보석들",
+  "joyful": "기쁨에 넘친",
   "juridical": "법률상의",
   "lingo": "특수 용어",
   "news media": "보도 매체",

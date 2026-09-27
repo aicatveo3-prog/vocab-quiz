@@ -46,9 +46,9 @@ window.VOCAB_W = [
   { word:"wrestle", exams:["공무원"], pron:"레슬", pos:"v", level:"C1", meanings:["씨름하다","맞붙어 싸우다"], syn:["grapple","struggle","tussle"], ex:[{ s:"Artists will {{}} with the possibilities of the post-human.", f:"wrestle", ko:"예술가들은 포스트휴먼의 가능성과 씨름할 것이다." }] },
   { word:"worsen", exams:["공무원"], pron:"워슨", pos:"v", level:"B2", meanings:["악화되다","악화시키다"], syn:["deteriorate","decline","aggravate"], ant:["improve"], ex:[{ s:"The potholes {{}} after heavy rain.", f:"worsened", ko:"폭우 후 도로의 구멍이 악화되었다." }] },
   { word:"well-being", exams:["공무원"], pron:"웰빙", pos:"n", level:"B2", meanings:["안녕","행복"], syn:["welfare","wellness","health"], ex:[{ s:"I urge action for the {{}} of our community.", f:"well-being", ko:"나는 우리 지역의 안녕을 위해 조치를 촉구한다." }] },
-  { word:"workforce", exams:["공무원"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
-  { word:"waste", exams:["공무원"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
-  { word:"workplace", exams:["공무원"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
+  { word:"workforce", exams:["공무원","수능"], pron:"워크포스", pos:"n", level:"B2", meanings:["노동력","인력"], syn:["labor force","staff","personnel"], ex:[{ s:"Because of the ageing {{}}, planning is critical.", f:"workforce", ko:"고령화되는 인력 때문에 계획 수립이 매우 중요하다." }] },
+  { word:"waste", exams:["공무원","수능"], pron:"웨이스트", pos:"n", level:"B1", meanings:["폐기물","낭비"], syn:["garbage","trash","rubbish"], ant:["conservation"], ex:[{ s:"Food {{}} should go in a separate container.", f:"waste", ko:"음식물 쓰레기는 별도의 용기에 넣어야 한다." }] },
+  { word:"workplace", exams:["공무원","수능"], pron:"워크플레이스", pos:"n", level:"B1", meanings:["직장","일터"], ex:[{ s:"Workers want a safe and healthy {{}}.", f:"workplace", ko:"직장인들은 안전하고 건강한 일터를 원한다." }] },
   { word:"workings", exams:["공무원"], pron:"워킹스", pos:"n", level:"C1", meanings:["작동 방식","내부 구조"], ex:[{ s:"Few people really understand the {{}} of a zipper.", f:"workings", ko:"지퍼의 작동 방식을 제대로 아는 사람은 거의 없다." }] },
   { word:"with respect to", exams:["공무원"], pron:"위드 리스펙트 투", pos:"phr", level:"B2", meanings:["~와 관련해서는","~에 관하여"], syn:["regarding","in terms of","with regard to"] },
   { word:"weigh on", exams:["공무원"], pron:"웨이 온", pos:"phr", level:"C1", meanings:["~을 짓누르다","~에 부담을 주다"] },
@@ -57,6 +57,18 @@ window.VOCAB_W = [
   { word:"willingly", exams:["수능"], pron:"윌링리", pos:"adv", level:"B2", meanings:["기꺼이","자진해서"], syn:["readily","gladly","voluntarily"], ant:["reluctantly","unwillingly"] },
   { word:"worthless", exams:["수능"], pron:"워스리스", pos:"adj", level:"B2", meanings:["가치 없는","쓸모없는"], syn:["useless","valueless","futile"], ant:["precious"], ex:[{ s:"Speed is {{}} if the bus comes only once an hour.", f:"worthless", ko:"버스가 한 시간에 한 번만 온다면 속도는 쓸모가 없다." }] },
   { word:"wipe out", exams:["수능"], pron:"와이프 아웃", pos:"phr", level:"B2", meanings:["완전히 없애다","전멸시키다"] },
+  { word:"wage", exams:["수능"], pron:"웨이지", pos:"n", level:"B1", meanings:["임금","품삯"], syn:["salary","pay","paycheck"], ex:[{ s:"The factory raised the minimum {{}} for its workers.", f:"wage", ko:"공장은 노동자들의 최저 임금을 올렸다." }] },
+  { word:"well-defined", exams:["수능"], pron:"웰 디파인드", pos:"adj", level:"C1", meanings:["명확한","뚜렷한"], syn:["clear-cut","definite","distinct"], ant:["vague"], ex:[{ s:"Good projects have {{}} goals from the start.", f:"well-defined", ko:"좋은 프로젝트는 처음부터 목표가 명확하다." }] },
+  { word:"wisdom", exams:["수능"], pron:"위즈덤", pos:"n", level:"B1", meanings:["지혜","통념"], ex:[{ s:"Old proverbs are full of practical {{}}.", f:"wisdom", ko:"옛 속담에는 실용적인 지혜가 가득하다." }] },
+  { word:"well-intentioned", exams:["수능"], pron:"웰 인텐션드", pos:"adj", level:"C1", meanings:["선의의","좋은 뜻의"], ex:[{ s:"Even {{}} advice can sometimes hurt people.", f:"well-intentioned", ko:"선의의 조언도 때로는 사람에게 상처를 줄 수 있다." }] },
+  { word:"well-spoken", exams:["수능"], pron:"웰 스포컨", pos:"adj", level:"C1", meanings:["말솜씨가 좋은","말씨가 고상한"], syn:["eloquent","fluent","persuasive"], ant:["inarticulate"], ex:[{ s:"She is so {{}} that she can give a speech without any notes.", f:"well-spoken", ko:"그녀는 말솜씨가 아주 좋아서 메모 없이도 연설을 할 수 있다." }] },
+  { word:"widely", exams:["수능"], pron:"와이들리", pos:"adv", level:"B2", meanings:["널리","폭넓게"] },
+  { word:"widen", exams:["수능"], pron:"와이든", pos:"v", level:"B2", meanings:["넓히다","넓어지다"], syn:["broaden","expand","enlarge"], ant:["narrow"], ex:[{ s:"The city plans to {{}} the road to reduce traffic.", f:"widen", ko:"시는 교통량을 줄이려고 도로를 넓힐 계획이다." }] },
+  { word:"wildlife", exams:["수능"], pron:"와일드라이프", pos:"n", level:"B1", meanings:["야생 동물"], ex:[{ s:"The national park is home to rich {{}}.", f:"wildlife", ko:"그 국립공원에는 야생 동물이 풍부하게 산다." }] },
+  { word:"wealth", exams:["수능"], pron:"웰스", pos:"n", level:"B1", meanings:["부","재산"], syn:["fortune","riches","affluence"], ant:["poverty"], ex:[{ s:"He gave most of his {{}} to charity.", f:"wealth", ko:"그는 재산 대부분을 자선 단체에 기부했다." }] },
+  { word:"worth", exams:["수능"], pron:"워스", pos:"adj", level:"B1", meanings:["~할 가치가 있는","~의 값어치가 있는"], ex:[{ s:"The new museum is well {{}} a visit.", f:"worth", ko:"새 박물관은 충분히 가 볼 만하다." }] },
+  { word:"worldview", exams:["수능"], pron:"월드뷰", pos:"n", level:"C1", meanings:["세계관"], ex:[{ s:"Traveling abroad can change a person's {{}}.", f:"worldview", ko:"해외여행은 사람의 세계관을 바꿀 수 있다." }] },
+  { word:"wickedness", exams:["수능"], pron:"위키드니스", pos:"n", level:"C1", meanings:["사악함","악행"], ex:[{ s:"The villain's {{}} shocked the audience.", f:"wickedness", ko:"악당의 사악함에 관객은 충격을 받았다." }] },
 
   /* ══ 1차 · wander ~ weary (20단어) ═══════════════════════════════════════
      승격 9 · 신규 11
@@ -94,7 +106,7 @@ window.VOCAB_W = [
   /* 승격 ① — 사전 글자 유지. 참조 concentrate(C 반의어)·drift(D) 두 곳의
      화면은 바뀌지 않는다. 교재의 '거닐다, 돌아다니다' 는 roam(배회하다,
      떠돌아다니다) 자리다. 아래 wander around 가 '헤매다' 를 품어 배제된다. */
-  { word:"wander", pron:"완더", pos:"v", level:"B2", meanings:["헤매다","산만해지다"],
+  { word:"wander", exams:["수능"], pron:"완더", pos:"v", level:"B2", meanings:["헤매다","산만해지다"],
     syn:["drift","roam without aim","stray off the point"], ant:["concentrate"],
     ex:[{ s:"His mind began to {{}}.", f:"wander", ko:"그의 마음이 산만해지기 시작했다." }] },
 
@@ -142,7 +154,7 @@ window.VOCAB_W = [
 
   /* ★ 첫 뜻을 '불모지' 로 갈랐다. 4차의 wilderness(황야, 황무지) 와 둘째 갈래
      '황무지' 를 맞춰 자동 배제시켰고, 첫 뜻은 '불모지' 와 '황야' 로 갈린다. */
-  { word:"wasteland", pron:"웨이스트랜드", pos:"n", level:"C1", meanings:["불모지","황무지"],
+  { word:"wasteland", exams:["수능"], pron:"웨이스트랜드", pos:"n", level:"C1", meanings:["불모지","황무지"],
     syn:["barren ground","land that grows nothing","waste country"],
     ex:[{ s:"The valley became a {{}}.", f:"wasteland", ko:"그 골짜기는 불모지가 되었다." }] },
 
@@ -178,14 +190,14 @@ window.VOCAB_W = [
     ex:[{ s:"Rust will {{}} the beam.", f:"weaken", ko:"녹이 그 보를 약화시킬 것이다." }] },
 
   /* 위 weaken(동사) 과 품사로 갈랐다. */
-  { word:"weakness", exams:["공무원"], pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
+  { word:"weakness", exams:["공무원","수능"], pron:"위크니스", pos:"n", level:"B1", meanings:["약점","약함"],
     syn:["weak point","want of strength","soft spot"],
     ex:[{ s:"Pride was his one {{}}.", f:"weakness", ko:"자만이 그의 유일한 약점이었다." }] },
 
   /* 승격 ⑧ — 사전과 교재가 같다. 참조 affluent(A)·broke(B 반의어) 두 곳의
      화면은 바뀌지 않는다. affluent(풍족한, 부유한) 와 맞물리고 4차의
      well-to-do(유복한, 부유한) 와도 '부유한' 으로 맞물린다. */
-  { word:"wealthy", pron:"웰시", pos:"adj", level:"B2", meanings:["부유한"],
+  { word:"wealthy", exams:["수능"], pron:"웰시", pos:"adj", level:"B2", meanings:["부유한"],
     syn:["affluent","rolling in money","of large means"], ant:["broke"],
     ex:[{ s:"They come from a {{}} family.", f:"wealthy", ko:"그들은 부유한 집안 출신이다." }] },
 
@@ -243,13 +255,13 @@ window.VOCAB_W = [
     ex:[{ s:"They still {{}} by hand here.", f:"weave", ko:"이곳에서는 아직 손으로 천을 짠다." }] },
 
   /* 교재의 '수초' 는 드문 쪽이라 버렸다. */
-  { word:"weed", exams:["공무원"], pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
+  { word:"weed", exams:["공무원","수능"], pron:"위드", pos:"n", level:"B2", meanings:["잡초"],
     syn:["wild plant in a garden","plant nobody wants","unwanted growth"],
     ex:[{ s:"She pulled out every {{}}.", f:"weed", ko:"그녀는 잡초를 하나하나 뽑았다." }] },
 
   /* 승격 ⑩ — 사전의 쌍반점만 쉼표로(참조 compare). compare(비교하다) 와
      맞물려 배제된다. 교재의 '무게가 ~이다' 는 자동사 쪽이라 버렸다. */
-  { word:"weigh", exams:["공무원"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
+  { word:"weigh", exams:["공무원","수능"], pron:"웨이", pos:"v", level:"B1", meanings:["재다","비교하다"],
     syn:["compare","find the weight of","turn over in the mind"],
     ex:[{ s:"Please {{}} the parcel first.", f:"weigh", ko:"그 소포를 먼저 재 주세요." }] },
 
@@ -282,7 +294,7 @@ window.VOCAB_W = [
     ex:[{ s:"They live in a {{}} district.", f:"well-to-do", ko:"그들은 유복한 동네에 산다." }] },
 
   /* 승격 ⑫ — 사전 단일값 유지(참조 marsh). */
-  { word:"wetland", pron:"웻랜드", pos:"n", level:"B2", meanings:["습지대"],
+  { word:"wetland", exams:["수능"], pron:"웻랜드", pos:"n", level:"B2", meanings:["습지대"],
     syn:["marsh","boggy land","ground that holds water"],
     ex:[{ s:"Birds nest in the {{}}.", f:"wetland", ko:"새들이 그 습지대에 둥지를 튼다." }] },
 
@@ -297,13 +309,13 @@ window.VOCAB_W = [
     syn:["speaking of","as for","turning to the matter of"] },
 
   /* 교재의 부사 갈래('어디쯤에') 는 버렸다. */
-  { word:"whereabouts", pron:"웨어러바우츠", pos:"n", level:"C1", meanings:["행방","소재"],
+  { word:"whereabouts", exams:["수능"], pron:"웨어러바우츠", pos:"n", level:"C1", meanings:["행방","소재"],
     syn:["where a person is","place one is at","the spot one has gone to"],
     ex:[{ s:"His {{}} are still unknown.", f:"whereabouts", ko:"그의 행방은 아직 알려지지 않았다." }] },
 
   /* on the other hand(반면에, 한편) 와 맞물려 배제된다. 접속사지만 스키마에
      conj 가 없어 구·표현(phr) 으로 두었다. */
-  { word:"whereas", exams:["공무원"], pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
+  { word:"whereas", exams:["공무원","수능"], pron:"웨어래즈", pos:"phr", level:"B2", meanings:["반면에"],
     syn:["on the other hand","while by contrast","though the other way"] },
 
   /* 승격 ⑬ — 사전 단일값 유지(참조 moan). 교재 명사 갈래 버림. 아래 whine 과
@@ -339,7 +351,7 @@ window.VOCAB_W = [
      erroneous(잘못된, 오류가 있는) 와 한 글자로만 갈린다. '사악한' 을 앞세우니
      V 세트 vicious(사악한, 잔인한) 와 맞물려 배제되고, 둘째로 남긴 '못된' 이
      nasty(고약한, 못된) 와도 맞물린다. 교재의 '위험한' 은 hazardous 자리다. */
-  { word:"wicked", pron:"위키드", pos:"adj", level:"B2", meanings:["사악한","못된"],
+  { word:"wicked", exams:["수능"], pron:"위키드", pos:"adj", level:"B2", meanings:["사악한","못된"],
     syn:["evil in nature","given to doing harm","bad at heart"],
     ex:[{ s:"The tale has a {{}} queen.", f:"wicked", ko:"그 이야기에는 사악한 여왕이 나온다." }] },
 
@@ -383,7 +395,7 @@ window.VOCAB_W = [
 
   /* 승격 ⑱ — 사전 단일값 유지(참조 general). prevalent(널리 퍼진, 흔한) 와
      맞물려 배제된다. 교재의 '광범위한' 은 extensive 자리다. */
-  { word:"widespread", pron:"와이드스프레드", pos:"adj", level:"B2", meanings:["널리 퍼진"],
+  { word:"widespread", exams:["수능"], pron:"와이드스프레드", pos:"adj", level:"B2", meanings:["널리 퍼진"],
     syn:["general","found nearly everywhere","spread over a large area"],
     ex:[{ s:"The custom is {{}} in the south.", f:"widespread", ko:"그 풍습은 남부에 널리 퍼져 있다." }] },
 
@@ -409,7 +421,7 @@ window.VOCAB_W = [
     syn:["power to choose","paper leaving one's goods","the mind's resolve"],
     ex:[{ s:"She has a strong {{}}.", f:"will", ko:"그녀는 강한 의지를 지녔다." }] },
 
-  { word:"willing", pron:"윌링", pos:"adj", level:"B1", meanings:["기꺼이 ~하는"],
+  { word:"willing", exams:["수능"], pron:"윌링", pos:"adj", level:"B1", meanings:["기꺼이 ~하는"],
     syn:["ready to do it","not holding back","glad to lend a hand"],
     ex:[{ s:"He was {{}} to wait.", f:"willing", ko:"그는 기꺼이 기다리려 했다." }] },
 
@@ -530,7 +542,7 @@ window.VOCAB_W = [
   /* 승격 ㉙ — ★사전값을 따랐다. 교재는 '운동하다; 잘 풀리다' 인데 참조 셋
      (deduce·estimate·figure out) 이 모두 '알아냄' 쪽이다. determine·discover·
      uncover 가 '알아내다' 를 써서 세 곳과 맞물려 배제된다. */
-  { word:"work out", exams:["공무원"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
+  { word:"work out", exams:["공무원","수능"], pron:"워크 아웃", pos:"phr", level:"B2", meanings:["알아내다","계산해 내다"],
     syn:["deduce","estimate","figure out"] },
 
   /* ★ feasible(실행 가능한, 그럴듯한) 과 V 세트 viable(실행 가능한) 이 교재
@@ -540,7 +552,7 @@ window.VOCAB_W = [
     syn:["able to be done","fit to use","good enough to go on with"],
     ex:[{ s:"That is a {{}} answer.", f:"workable", ko:"그것은 해낼 수 있는 답이다." }] },
 
-  { word:"workload", pron:"워크로드", pos:"n", level:"B2", meanings:["업무량","작업량"],
+  { word:"workload", exams:["수능"], pron:"워크로드", pos:"n", level:"B2", meanings:["업무량","작업량"],
     syn:["amount of work to get through","load of tasks","how much there is to do"],
     ex:[{ s:"Her {{}} doubled that month.", f:"workload", ko:"그달 그녀의 업무량이 두 배가 됐다." }] },
 
@@ -556,7 +568,7 @@ window.VOCAB_W = [
 
   /* 승격 ㉚ — 사전 단일값 유지(참조 fruitful). 교재의 '가치 있는' 은 뜻이 너무
      넓어 버렸다. 아래 worthy 와 첫 뜻이 확실히 갈린다. */
-  { word:"worthwhile", pron:"워스와일", pos:"adj", level:"B2", meanings:["할 만한 값이 있는"],
+  { word:"worthwhile", exams:["수능"], pron:"워스와일", pos:"adj", level:"B2", meanings:["할 만한 값이 있는"],
     syn:["fruitful","worth the trouble","paying for the effort"],
     ex:[{ s:"The trip proved {{}}.", f:"worthwhile", ko:"그 여행은 할 만한 값이 있었다." }] },
 
@@ -603,6 +615,7 @@ Object.assign(window.GLOSS, {
   "able to be done": "해낼 만한",
   "act of bowing down": "엎드려 절하는 일",
   "acting from good intent": "착한 뜻에서 나온",
+  "affluence": "풍요, 부유",
   "amount of work to get through": "해내야 할 일의 양",
   "as for": "그것에 대해서라면",
   "as it touches": "그것에 닿는 한에서는",
@@ -708,6 +721,7 @@ Object.assign(window.GLOSS, {
   "ready to do it": "할 마음이 있는",
   "resting on good reason": "까닭이 튼튼한",
   "reverence paid to a god": "신에게 드리는 공경",
+  "riches": "부, 재물",
   "roam without aim": "정처 없이 떠돌다",
   "rock unsteadily": "불안하게 흔들리다",
   "rolling in money": "돈이 넘치는",

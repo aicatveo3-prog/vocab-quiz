@@ -42,7 +42,7 @@ window.VOCAB_G = [
   { word:"gravitational", exams:["공무원"], pron:"그래비테이셔널", pos:"adj", level:"C1", meanings:["중력의"], ex:[{ s:"People can be exposed to {{}} force in different ways.", f:"gravitational", ko:"사람들은 여러 방식으로 중력에 노출될 수 있다." }] },
   { word:"guts", exams:["공무원"], pron:"것츠", pos:"n", level:"C1", meanings:["배짱","용기"], syn:["courage","nerve","boldness"], ant:["cowardice"], ex:[{ s:"She had the {{}} to go for what she wanted.", f:"guts", ko:"그녀는 원하는 것을 향해 나아갈 배짱이 있었다." }] },
   { word:"gullible", exams:["공무원"], pron:"걸러블", pos:"adj", level:"C1", meanings:["잘 속는","순진한"], syn:["naive","credulous","trusting"], ant:["skeptical"], ex:[{ s:"I think you are being {{}}.", f:"gullible", ko:"내 생각에 너는 잘 속고 있는 것 같다." }] },
-  { word:"generation", exams:["공무원"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
+  { word:"generation", exams:["공무원","수능"], pron:"제너레이션", pos:"n", level:"B1", meanings:["세대"], syn:["age group","era","cohort"], ex:[{ s:"They ensure food for future {{}}.", f:"generations", ko:"그들은 미래 세대를 위한 식량을 보장한다." }] },
   { word:"generative", exams:["공무원"], pron:"제너러티브", pos:"adj", level:"C1", meanings:["생성적인","생성형의"], syn:["productive","creative","fertile"], ex:[{ s:"{{}} AI is advancing rapidly.", f:"Generative", ko:"생성형 AI가 빠르게 발전하고 있다." }] },
   { word:"globally", exams:["공무원"], pron:"글로벌리", pos:"adv", level:"B2", meanings:["세계적으로","전 세계에서"], syn:["worldwide","internationally","universally"], ex:[{ s:"The agency must engage {{}} to fulfill its mission.", f:"globally", ko:"그 기관은 사명을 완수하려 전 세계적으로 관여해야 한다." }] },
   { word:"gratification", exams:["공무원"], pron:"그래티피케이션", pos:"n", level:"C1", meanings:["만족","충족"], syn:["satisfaction","pleasure","fulfillment"], ex:[{ s:"Short-term {{}} can eclipse long-term focus.", f:"gratification", ko:"단기적 만족이 장기적 집중을 가릴 수 있다." }] },
@@ -52,17 +52,25 @@ window.VOCAB_G = [
   { word:"gain", exams:["공무원","수능"], pron:"게인", pos:"v", level:"B1", meanings:["얻다","이득"], syn:["acquire","obtain","earn"], ant:["lose"], ex:[{ s:"You can {{}} valuable experience through volunteering.", f:"gain", ko:"자원봉사를 통해 귀중한 경험을 얻을 수 있다." }] },
   { word:"growth", exams:["공무원","수능"], pron:"그로스", pos:"n", level:"B1", meanings:["성장","증가"], syn:["expansion","development","advancement"], ant:["decline"], ex:[{ s:"The new rules aim to stimulate economic {{}}.", f:"growth", ko:"새 규칙은 경제 성장을 촉진하는 것을 목표로 한다." }] },
   { word:"get in shape", exams:["공무원"], pron:"겟 인 셰이프", pos:"phr", level:"B2", meanings:["몸을 만들다","건강을 되찾다"] },
-  { word:"gradually", exams:["공무원"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
-  { word:"grateful", exams:["공무원"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
+  { word:"gradually", exams:["공무원","수능"], pron:"그래주얼리", pos:"adv", level:"B1", meanings:["서서히","점차"], syn:["steadily","progressively","little by little"], ant:["abruptly"], ex:[{ s:"The country is {{}} reducing its use of oil, step by step.", f:"gradually", ko:"그 나라는 한 단계씩 서서히 석유 사용을 줄이고 있다." }] },
+  { word:"grateful", exams:["공무원","수능"], pron:"그레이트풀", pos:"adj", level:"B1", meanings:["고마워하는","감사하는"], syn:["thankful","appreciative","indebted"], ant:["ungrateful"], ex:[{ s:"I am truly {{}} for all your help.", f:"grateful", ko:"당신의 모든 도움에 진심으로 감사드립니다." }] },
   { word:"gossip", exams:["공무원"], pron:"가십", pos:"v", level:"B2", meanings:["험담하다","잡담하다"], ex:[{ s:"They love to {{}} about their neighbors.", f:"gossip", ko:"그들은 이웃에 대해 험담하기를 좋아한다." }] },
   { word:"give rise to", exams:["공무원"], pron:"기브 라이즈 투", pos:"phr", level:"B2", meanings:["~을 일으키다","~의 원인이 되다"], syn:["cause","bring about","lead to"] },
   { word:"give ~ a hand", exams:["공무원"], pron:"기브 어 핸드", pos:"phr", level:"B1", meanings:["~을 도와주다"] },
   { word:"goodwill", exams:["수능"], pron:"굿윌", pos:"n", level:"C1", meanings:["호의","선의"], syn:["kindness","favor","generosity"], ant:["hostility"], ex:[{ s:"We cannot simply count on people's {{}}.", f:"goodwill", ko:"우리는 사람들의 선의에만 기댈 수는 없다." }] },
   { word:"guideline", exams:["수능"], pron:"가이드라인", pos:"n", level:"B2", meanings:["지침","가이드라인"], syn:["rule","principle","instruction"], ex:[{ s:"Each {{}} in the handbook is easy to follow.", f:"guideline", ko:"안내서의 지침 하나하나가 따르기 쉽다." }] },
+  { word:"generally", exams:["수능"], pron:"제너럴리", pos:"adv", level:"B2", meanings:["대체로","일반적으로"], syn:["usually","mostly","broadly"], ant:["specifically"] },
+  { word:"global", exams:["수능"], pron:"글로벌", pos:"adj", level:"B1", meanings:["세계적인","전 세계의"], syn:["worldwide","international","universal"], ant:["local"], ex:[{ s:"Climate change is a {{}} problem that no country can solve alone.", f:"global", ko:"기후 변화는 어느 나라도 혼자 해결할 수 없는 세계적인 문제다." }] },
+  { word:"guardian", exams:["수능"], pron:"가디언", pos:"n", level:"B2", meanings:["보호자","후견인"], ex:[{ s:"A child's legal {{}} must sign the form.", f:"guardian", ko:"아이의 법적 보호자가 서류에 서명해야 한다." }] },
+  { word:"guilt", exams:["수능"], pron:"길트", pos:"n", level:"B2", meanings:["죄책감","유죄"], ex:[{ s:"She felt a deep sense of {{}} after lying to her friend.", f:"guilt", ko:"그녀는 친구에게 거짓말을 한 뒤 깊은 죄책감을 느꼈다." }] },
+  { word:"goods", exams:["수능"], pron:"굿즈", pos:"n", level:"B1", meanings:["상품","물품"], ex:[{ s:"The store sells {{}} from all over the world.", f:"goods", ko:"그 가게는 세계 각지의 상품을 판다." }] },
+  { word:"generalization", exams:["수능"], pron:"제너럴러제이션", pos:"n", level:"C1", meanings:["일반화","개괄"], ex:[{ s:"Saying all teenagers are lazy is an unfair {{}}.", f:"generalization", ko:"십대는 모두 게으르다는 말은 부당한 일반화다." }] },
+  { word:"genetically", exams:["수능"], pron:"저네티컬리", pos:"adv", level:"C1", meanings:["유전적으로"] },
+  { word:"governance", exams:["수능"], pron:"거버넌스", pos:"n", level:"C1", meanings:["통치","관리 체제"], ex:[{ s:"Good {{}} requires honest and open leaders.", f:"governance", ko:"좋은 통치에는 정직하고 열린 지도자가 필요하다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   /* 승격 ① — GLOSS '은하' 와 같은 갈래다. constellation 의 유의어로 쓰인다. */
-  { word:"galaxy", exams:["공무원"], pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
+  { word:"galaxy", exams:["공무원","수능"], pron:"갤럭시", pos:"n", level:"B2", meanings:["은하","은하계"],
     syn:["star system","nebula","cosmos"],
     ex:[{ s:"Our solar system sits on the edge of a spiral {{}}.", f:"galaxy", ko:"우리 태양계는 나선 은하의 가장자리에 있다." }] },
 
@@ -135,12 +143,12 @@ window.VOCAB_G = [
     ex:[{ s:"Climbers must check their {{}} before the final ascent.", f:"gear", ko:"등반가들은 마지막 등반 전에 장비를 점검해야 한다." }] },
 
   /* syn 을 비웠다 — sex 하나뿐이고 3개를 채우려면 억지 낱말을 넣어야 한다. */
-  { word:"gender", pron:"젠더", pos:"n", level:"B1", meanings:["성별","성"],
+  { word:"gender", exams:["수능"], pron:"젠더", pos:"n", level:"B1", meanings:["성별","성"],
     ex:[{ s:"The survey recorded age, {{}}, and occupation for each person.", f:"gender", ko:"그 조사는 각 사람의 나이, 성별, 직업을 기록했다." }] },
 
   /* 승격 ① — GLOSS '유전자' 와 글자까지 같다. chromosome 의 유의어로 쓰인다.
      syn 은 비웠다 — 유전자의 동의어라 할 만한 낱말이 없다. */
-  { word:"gene", exams:["공무원"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
+  { word:"gene", exams:["공무원","수능"], pron:"진", pos:"n", level:"B2", meanings:["유전자"],
     ex:[{ s:"Scientists located the {{}} responsible for the disorder.", f:"gene", ko:"과학자들은 그 질환을 일으키는 유전자를 찾아냈다." }] },
 
   { word:"genealogy", pron:"지니앨러지", pos:"n", level:"C1", meanings:["계보","족보"],
@@ -155,7 +163,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS 가 '만들어 내다, 발생시키다' 다. 원본은 순서만 반대이므로
      사전 순서를 그대로 지켜 bring in 문제의 화면이 한 글자도 안 바뀌게 했다. */
-  { word:"generate", exams:["공무원"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
+  { word:"generate", exams:["공무원","수능"], pron:"제너레이트", pos:"v", level:"B2", meanings:["만들어 내다","발생시키다"],
     syn:["produce","create","yield"],
     ex:[{ s:"Solar panels {{}} enough power for the whole building.", f:"generate", ko:"태양 전지판이 건물 전체에 쓸 충분한 전력을 만들어 낸다." }] },
 
@@ -289,7 +297,7 @@ window.VOCAB_G = [
 
   /* 승격 ① — GLOSS '~을 제거하다' 를 첫 자리에 지켰다.
      do away with·eliminate 두 문제가 이 단어를 유의어로 쓴다. */
-  { word:"get rid of", pron:"겟 리드 오브", pos:"phr", level:"B1", meanings:["~을 제거하다","없애다"],
+  { word:"get rid of", exams:["수능"], pron:"겟 리드 오브", pos:"phr", level:"B1", meanings:["~을 제거하다","없애다"],
     syn:["do away with","eliminate","discard"] },
 
   { word:"get through", pron:"겟 스루", pos:"phr", level:"B2", meanings:["극복하다","겪어 내다"],
@@ -315,7 +323,7 @@ window.VOCAB_G = [
 
   /* 원본 '~을 고려하면' 은 기존 표제어 considering 과 같다. 첫 뜻을
      '~임을 감안하면' 으로 바꿔 갈랐다. */
-  { word:"given that", pron:"기븐 댓", pos:"phr", level:"B2", meanings:["~임을 감안하면","~을 고려하면"],
+  { word:"given that", exams:["수능"], pron:"기븐 댓", pos:"phr", level:"B2", meanings:["~임을 감안하면","~을 고려하면"],
     syn:["considering","in view of","seeing that"] },
 
   { word:"giving behavior", pron:"기빙 비헤이비어", pos:"phr", level:"C1", meanings:["기부 행위"],
@@ -328,7 +336,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '흘끗 보다' 를 첫 자리에 지켰다.
      glimpse 와 함께 catch a glimpse of 의 유의어로 쓰이므로, 둘의 설명이
      같아지지 않게 glance 는 동사(보다), glimpse 는 명사(봄) 로 갈랐다. */
-  { word:"glance", pron:"글랜스", pos:"v", level:"B1", meanings:["흘끗 보다","대충 보다"],
+  { word:"glance", exams:["수능"], pron:"글랜스", pos:"v", level:"B1", meanings:["흘끗 보다","대충 보다"],
     gov:{ prep:["at","over","through"], pat:"glance {{}} the morning headlines", usage:"glance at ~ : ~을 흘끗 보다" },
     /* ★ "skim" 을 "run one's eye over" 로 바꿨다 — browse(B) 와 같은 이유다.
        scan·skim 이 S 세트에서 둘 다 '훑어보다' 가 된다. */
@@ -357,7 +365,7 @@ window.VOCAB_G = [
     syn:["dreary","bleak","somber"], ant:["cheerful"],
     ex:[{ s:"The waiting room felt cold and {{}}.", f:"gloomy", ko:"대기실은 차갑고 우울한 느낌이었다." }] },
 
-  { word:"glorify", pron:"글로리파이", pos:"v", level:"C1", meanings:["찬미하다","칭송하다"],
+  { word:"glorify", exams:["수능"], pron:"글로리파이", pos:"v", level:"C1", meanings:["찬미하다","칭송하다"],
     syn:["exalt","extol","venerate"], ant:["belittle"],
     ex:[{ s:"The film was accused of trying to {{}} war.", f:"glorify", ko:"그 영화는 전쟁을 찬미하려 했다는 비난을 받았다." }] },
 
@@ -419,14 +427,14 @@ window.VOCAB_G = [
     syn:["epicure","connoisseur","food lover"],
     ex:[{ s:"Only a true {{}} could name every spice in the dish.", f:"gourmet", ko:"진정한 미식가만이 그 요리의 모든 향신료를 짚어낼 수 있었다." }] },
 
-  { word:"govern", pron:"거번", pos:"v", level:"B2", meanings:["다스리다","지배하다"],
+  { word:"govern", exams:["수능"], pron:"거번", pos:"v", level:"B2", meanings:["다스리다","지배하다"],
     syn:["rule","administer","preside over"],
     ex:[{ s:"A council of elders used to {{}} the village.", f:"govern", ko:"원로 회의가 그 마을을 다스리곤 했다." }] },
 
   /* grab·grip·grasp 세 단어가 원본에서 '움켜잡다' 계열로 뭉친다.
      grab 은 낚아채는 순간성, grip 은 꽉 쥐고 놓지 않는 힘, grasp 는 이해로
      갈랐다. grab 은 순간성 쪽이다. */
-  { word:"grab", pron:"그랩", pos:"v", level:"B1", meanings:["잡아채다","움켜쥐다"],
+  { word:"grab", exams:["수능"], pron:"그랩", pos:"v", level:"B1", meanings:["잡아채다","움켜쥐다"],
     gov:{ prep:["at","for","onto"], pat:"grab {{}} the passing rope", usage:"grab at ~ : ~을 잡으려 하다" },
     syn:["snatch","seize","clutch"],
     ex:[{ s:"She had to {{}} the railing to keep from falling.", f:"grab", ko:"그녀는 넘어지지 않으려고 난간을 붙잡아야 했다." }] },
@@ -482,7 +490,7 @@ window.VOCAB_G = [
   /* 승격 ① — GLOSS '잡다; 이해하다' 를 그대로 지켰다. comprehend 의 유의어로
      쓰이는 쪽이 '이해하다' 다. grab(잡아채다)·grip(꽉 붙잡다)과 함께
      원본에서 '움켜잡다' 계열로 뭉치던 셋 중 이해 쪽을 맡는다. */
-  { word:"grasp", exams:["공무원"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
+  { word:"grasp", exams:["공무원","수능"], pron:"그래스프", pos:"v", level:"B2", meanings:["잡다","이해하다"],
     gov:{ prep:["at","for"], pat:"grasp {{}} any excuse", usage:"grasp at ~ : ~을 붙잡으려 하다" },
     syn:["comprehend","apprehend","fathom"],
     ex:[{ s:"It took her a while to {{}} what the diagram meant.", f:"grasp", ko:"그녀는 그 도표가 무슨 뜻인지 이해하는 데 시간이 좀 걸렸다." }] },
@@ -587,7 +595,7 @@ window.VOCAB_G = [
   /* ── 챕터 6 (마지막 15단어) ─────────────────── */
 
   /* grab·grasp 와 갈라 '놓지 않는 힘' 쪽을 맡는다. 원본의 '통제' 는 장악으로 썼다. */
-  { word:"grip", pron:"그립", pos:"v", level:"B2", meanings:["꽉 붙잡다","장악"],
+  { word:"grip", exams:["수능"], pron:"그립", pos:"v", level:"B2", meanings:["꽉 붙잡다","장악"],
     syn:["clasp","clutch","hold fast"],
     ex:[{ s:"He had to {{}} the rope with both hands.", f:"grip", ko:"그는 두 손으로 그 줄을 꽉 붙잡아야 했다." }] },
 
@@ -685,7 +693,6 @@ Object.assign(window.GLOSS, {
   "almsgiving":"자선을 베풂",
   "ancestry":"조상, 가계",
   "apparel":"의복, 의류",
-  "appreciation":"감사, 고마움",
   "avarice":"금전욕",
   "avaricious":"돈을 탐하는",
   "bacterium":"박테리아",
@@ -697,6 +704,7 @@ Object.assign(window.GLOSS, {
   "blanket":"일괄적인, 포괄적인",
   "bolt":"튀어 달아나다",
   "bring forth":"낳다, 생산하다",
+  "broadly": "대체로, 폭넓게",
   "calisthenics":"맨손 체조",
   "car park":"주차장",
   "carp":"트집을 잡다",
@@ -728,7 +736,6 @@ Object.assign(window.GLOSS, {
   "engineered":"인위적으로 조작된",
   "epicure":"식도락가",
   "escape blame":"책임을 면하다",
-  "essence":"본질, 요체",
   "exalt":"칭송하다, 높이다",
   "extol":"극찬하다",
   "exude":"뿜어내다",
@@ -752,7 +759,6 @@ Object.assign(window.GLOSS, {
   "heartache":"가슴앓이",
   "hit it off with":"~와 금방 친해지다",
   "hold fast":"단단히 붙들다",
-  "hopeful":"희망적인",
   "hothouse":"난방 온실",
   "ice field":"빙원",
   "ice sheet":"대륙 빙상",
@@ -777,7 +783,6 @@ Object.assign(window.GLOSS, {
   "mill":"제분하다",
   "motion":"몸짓으로 신호하다",
   "nebula":"성운",
-  "network":"망, 연결망",
   "nonspecific":"특정하지 않은",
   "opt for":"~을 택하다",
   "parking space":"주차 공간",
@@ -798,7 +803,6 @@ Object.assign(window.GLOSS, {
   "pulverize":"가루로 만들다",
   "put across":"뜻을 전하다",
   "rapacity":"탐욕스러운 강탈",
-  "rationale":"논리적 근거",
   "reclusive":"은둔하는",
   "resplendent":"눈부시게 화려한",
   "rumble":"우르릉거리다",
@@ -831,7 +835,6 @@ Object.assign(window.GLOSS, {
   "trudge":"터벅터벅 걷다",
   "trusting": "남을 잘 믿는",
   "tumbling":"공중 곡예",
-  "turbine":"터빈",
   "twinkle":"깜박이며 빛나다",
   "unfounded":"사실 근거가 없는",
   "unwarranted":"부당한",

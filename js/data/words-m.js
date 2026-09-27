@@ -53,24 +53,24 @@
  */
 window.VOCAB_M = [
   { word:"marginalized", exams:["공무원"], pron:"마지널라이즈드", pos:"adj", level:"C1", meanings:["소외된","주변으로 밀려난"], syn:["excluded","sidelined","disadvantaged"], ant:["mainstream"], ex:[{ s:"They joined charities rather than the {{}} parties of the left.", f:"marginalized", ko:"그들은 소외된 좌파 정당보다 자선단체에 참여했다." }] },
-  { word:"meaningful", exams:["공무원"], pron:"미닝풀", pos:"adj", level:"B2", meanings:["의미 있는","뜻깊은"], syn:["significant","substantial","worthwhile"], ant:["meaningless"], ex:[{ s:"The foreigner has little chance for {{}} language exchanges.", f:"meaningful", ko:"그 외국인은 의미 있는 언어 교류의 기회가 거의 없다." }] },
+  { word:"meaningful", exams:["공무원","수능"], pron:"미닝풀", pos:"adj", level:"B2", meanings:["의미 있는","뜻깊은"], syn:["significant","substantial","worthwhile"], ant:["meaningless"], ex:[{ s:"The foreigner has little chance for {{}} language exchanges.", f:"meaningful", ko:"그 외국인은 의미 있는 언어 교류의 기회가 거의 없다." }] },
   { word:"militia", exams:["공무원"], pron:"밀리샤", pos:"n", level:"C1", meanings:["민병대"], syn:["armed force","volunteers","paramilitary"], ex:[{ s:"A well-regulated {{}} is necessary to a free state.", f:"militia", ko:"잘 통제된 민병대는 자유로운 국가에 필요하다." }] },
   { word:"millennia", exams:["공무원"], pron:"밀레니아", pos:"n", level:"C1", meanings:["수천 년","천년의 복수형"], syn:["ages","eons","millenniums"], ex:[{ s:"The people have been based in the region for {{}}.", f:"millennia", ko:"그 사람들은 수천 년 동안 그 지역에 터를 잡아 왔다." }] },
   { word:"minefield", exams:["공무원"], pron:"마인필드", pos:"n", level:"C1", meanings:["지뢰밭","위험 요소가 많은 상황"], syn:["hazard","quagmire","danger zone"], ex:[{ s:"Immigration reform is a political {{}}.", f:"minefield", ko:"이민 개혁은 정치적 지뢰밭이다." }] },
-  { word:"misguided", exams:["공무원"], pron:"미스가이디드", pos:"adj", level:"C1", meanings:["잘못 이해한","그릇된"], syn:["mistaken","misled","ill-advised"], ant:["sensible"], ex:[{ s:"Many parents have been {{}} by the self-esteem movement.", f:"misguided", ko:"많은 부모가 자존감 운동에 잘못 이끌려 왔다." }] },
+  { word:"misguided", exams:["공무원","수능"], pron:"미스가이디드", pos:"adj", level:"C1", meanings:["잘못 이해한","그릇된"], syn:["mistaken","misled","ill-advised"], ant:["sensible"], ex:[{ s:"Many parents have been {{}} by the self-esteem movement.", f:"misguided", ko:"많은 부모가 자존감 운동에 잘못 이끌려 왔다." }] },
   { word:"monopolistic", exams:["공무원"], pron:"모노폴리스틱", pos:"adj", level:"C2", meanings:["독점적인"], syn:["exclusive","controlling","dominating"], ant:["competitive"], ex:[{ s:"Critics said it subjected the Third World to a {{}} capitalism.", f:"monopolistic", ko:"비평가들은 그것이 제3세계를 독점적 자본주의에 종속시켰다고 했다." }] },
   { word:"mortar", exams:["공무원"], pron:"모터", pos:"n", level:"C1", meanings:["회반죽","박격포"], syn:["cement","plaster","render"], ex:[{ s:"The lime {{}} between bricks held the house together.", f:"mortar", ko:"벽돌 사이의 석회 회반죽이 집을 지탱했다." }] },
   { word:"mudslide", exams:["공무원"], pron:"머드슬라이드", pos:"n", level:"C1", meanings:["진흙 사태","이류"], syn:["landslide","mudflow","avalanche"], ex:[{ s:"A {{}} destroyed part of the village.", f:"mudslide", ko:"진흙 사태가 마을의 일부를 파괴했다." }] },
   { word:"multicellular", exams:["공무원"], pron:"멀티셀룰러", pos:"adj", level:"C2", meanings:["다세포의"], ex:[{ s:"Complex, {{}} forms evolved over this period.", f:"multicellular", ko:"이 기간에 복잡한 다세포 생물이 진화했다." }] },
   { word:"mentality", exams:["공무원"], pron:"멘탤리티", pos:"n", level:"C1", meanings:["사고방식","태도"], syn:["mindset","attitude","outlook"], ex:[{ s:"They have a 'can-do' {{}}.", f:"mentality", ko:"그들은 '할 수 있다'는 사고방식을 지녔다." }] },
-  { word:"merit", exams:["공무원"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
+  { word:"merit", exams:["공무원","수능"], pron:"메릿", pos:"n", level:"C1", meanings:["장점","공로"], syn:["worth","virtue","value"], ant:["demerit"], ex:[{ s:"Rewards should be allocated according to {{}}.", f:"merit", ko:"보상은 공로에 따라 배분되어야 한다." }] },
   { word:"maintain", exams:["공무원","수능"], pron:"메인테인", pos:"v", level:"B1", meanings:["유지하다","주장하다"], syn:["keep","preserve","sustain"], ant:["neglect"], ex:[{ s:"Convey the information in a way that {{}} teaching quality.", f:"maintains", ko:"수업의 질을 유지하는 방식으로 정보를 전달하라." }] },
   { word:"mammoth", exams:["공무원"], pron:"매머드", pos:"n", level:"C1", meanings:["매머드"], ex:[{ s:"The tusk came from a woolly {{}}.", f:"mammoth", ko:"그 엄니는 털매머드에서 나온 것이다." }] },
   { word:"marketplace", exams:["공무원"], pron:"마켓플레이스", pos:"n", level:"B2", meanings:["시장","장터"], syn:["market","bazaar","trading place"], ex:[{ s:"They scale up new technologies for the {{}}.", f:"marketplace", ko:"그들은 시장을 위해 새로운 기술을 확장한다." }] },
   { word:"mundane", exams:["공무원"], pron:"먼데인", pos:"adj", level:"C1", meanings:["평범한","일상적인"], syn:["ordinary","routine","humdrum"], ant:["extraordinary"], ex:[{ s:"The bot handles {{}} tasks such as reading emails.", f:"mundane", ko:"그 봇은 이메일 읽기 같은 일상적인 일을 처리한다." }] },
-  { word:"management", exams:["공무원"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
+  { word:"management", exams:["공무원","수능"], pron:"매니지먼트", pos:"n", level:"B1", meanings:["관리","경영"], syn:["administration","supervision","control"], ex:[{ s:"Many young workers avoid roles in {{}} because they do not want to supervise others.", f:"management", ko:"많은 젊은 직장인이 다른 사람을 감독하고 싶지 않아 관리직을 피한다." }] },
   { word:"mankind", exams:["공무원"], pron:"맨카인드", pos:"n", level:"B2", meanings:["인류","인간 전체"], syn:["humanity","humankind","the human race"], ex:[{ s:"Neither skill was of much use to early {{}}.", f:"mankind", ko:"어느 기술도 초기 인류에게는 별 쓸모가 없었다." }] },
-  { word:"moreover", exams:["공무원"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
+  { word:"moreover", exams:["공무원","수능"], pron:"모오버", pos:"adv", level:"B2", meanings:["게다가","더구나"], syn:["additionally","furthermore","besides"], ex:[{ s:"The plan is cheap; {{}}, it is easy to carry out.", f:"moreover", ko:"그 계획은 비용이 적게 든다. 게다가 실행하기도 쉽다." }] },
   { word:"make strides", exams:["공무원"], pron:"메이크 스트라이즈", pos:"phr", level:"C1", meanings:["큰 진전을 이루다","크게 발전하다"] },
   { word:"make the most of", exams:["공무원"], pron:"메이크 더 모스트 오브", pos:"phr", level:"B2", meanings:["~을 최대한 활용하다","~을 십분 이용하다"], syn:["get the most out of","take advantage of","capitalize on"] },
   { word:"marginally", exams:["공무원"], pron:"마지널리", pos:"adv", level:"C1", meanings:["약간","미미하게"], syn:["slightly","somewhat","a little"], ant:["markedly","considerably"], ex:[{ s:"Prices rose only {{}} last month.", f:"marginally", ko:"지난달 물가는 조금 오르는 데 그쳤다." }] },
@@ -80,11 +80,31 @@ window.VOCAB_M = [
   { word:"misperception", exams:["공무원"], pron:"미스퍼셉션", pos:"n", level:"C1", meanings:["오해","잘못된 인식"], syn:["misconception","misunderstanding","fallacy","misinterpretation"], ex:[{ s:"A common {{}} is that roller coasters lose energy.", f:"misperception", ko:"흔한 오해는 롤러코스터가 에너지를 잃는다는 것이다." }] },
   { word:"mistakenly", exams:["공무원"], pron:"미스테이컨리", pos:"adv", level:"B2", meanings:["잘못하여","실수로"], syn:["wrongly","erroneously","incorrectly"], ant:["correctly"], ex:[{ s:"Many riders {{}} believe the cars run out of energy.", f:"mistakenly", ko:"많은 탑승객은 차량의 에너지가 바닥난다고 잘못 믿는다." }] },
   { word:"mortality", exams:["공무원"], pron:"모탤리티", pos:"n", level:"C1", meanings:["사망률","죽음을 피할 수 없음"], ant:["immortality"], ex:[{ s:"Infant {{}} is still high in some regions.", f:"mortality", ko:"일부 지역에서는 영아 사망률이 여전히 높다." }] },
-  { word:"mend", exams:["공무원"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
+  { word:"mend", exams:["공무원","수능"], pron:"멘드", pos:"v", level:"B2", meanings:["고치다","수선하다"], syn:["repair","patch","restore"], ex:[{ s:"She sat by the window to {{}} the torn shirt.", f:"mend", ko:"그녀는 창가에 앉아 찢어진 셔츠를 수선했다." }] },
   { word:"make a case for", exams:["공무원"], pron:"메이크 어 케이스 포", pos:"phr", level:"C1", meanings:["~을 옹호하는 주장을 펴다","~을 강력히 주장하다"] },
   { word:"millennial", exams:["공무원"], pron:"밀레니얼", pos:"n", level:"B2", meanings:["밀레니얼 세대"], ex:[{ s:"Every {{}} I know grew up with a smartphone.", f:"millennial", ko:"내가 아는 밀레니얼 세대는 모두 스마트폰과 함께 자랐다." }] },
   { word:"manipulation", exams:["수능"], pron:"머니퓰레이션", pos:"n", level:"C1", meanings:["조작","교묘한 처리"], ex:[{ s:"The lyricists used clever linguistic {{}} to tell stories.", f:"manipulation", ko:"작사가들은 영리한 언어 조작으로 이야기를 들려주었다." }] },
   { word:"movement", exams:["수능"], pron:"무브먼트", pos:"n", level:"B1", meanings:["움직임","운동"], ex:[{ s:"The dancer's every {{}} was smooth and graceful.", f:"movement", ko:"그 무용수의 움직임 하나하나가 부드럽고 우아했다." }] },
+  { word:"maintenance", exams:["수능"], pron:"메인터넌스", pos:"n", level:"B2", meanings:["유지","보수 관리"], ex:[{ s:"Old cars need regular {{}} to run safely.", f:"maintenance", ko:"오래된 차는 안전하게 달리려면 정기적인 정비가 필요하다." }] },
+  { word:"mood", exams:["수능"], pron:"무드", pos:"n", level:"B1", meanings:["기분","분위기"], ex:[{ s:"Sunny weather always puts me in a better {{}}.", f:"mood", ko:"화창한 날씨는 늘 내 기분을 더 좋게 해 준다." }] },
+  { word:"memorable", exams:["수능"], pron:"메머러블", pos:"adj", level:"B2", meanings:["기억할 만한","인상적인"], syn:["unforgettable","remarkable","notable"], ant:["forgettable"], ex:[{ s:"The concert was so {{}} that I still remember every song.", f:"memorable", ko:"그 공연은 너무 인상적이어서 나는 아직도 모든 노래를 기억한다." }] },
+  { word:"misquote", exams:["수능"], pron:"미스쿼트", pos:"v", level:"C1", meanings:["잘못 인용하다"], ex:[{ s:"The newspaper apologized for {{}} the minister's exact words.", f:"misquoting", ko:"그 신문은 장관의 정확한 발언을 잘못 인용한 것을 사과했다." }] },
+  { word:"manufacturer", exams:["수능"], pron:"매뉴팩처러", pos:"n", level:"B2", meanings:["제조업자","제조사"], syn:["producer","maker","fabricator"], ant:["consumer"], ex:[{ s:"The {{}} recalled thousands of faulty phones.", f:"manufacturer", ko:"제조사는 결함 있는 휴대폰 수천 대를 회수했다." }] },
+  { word:"mathematical", exams:["수능"], pron:"매서매티컬", pos:"adj", level:"B2", meanings:["수학의","수학적인"], ex:[{ s:"Algebra and geometry are both {{}} subjects.", f:"mathematical", ko:"대수학과 기하학은 둘 다 수학 과목이다." }] },
+  { word:"medical", exams:["수능"], pron:"메디컬", pos:"adj", level:"B1", meanings:["의학의","의료의"], ex:[{ s:"She wants to go to {{}} school to become a doctor.", f:"medical", ko:"그녀는 의사가 되려고 의대에 가고 싶어 한다." }] },
+  { word:"metallic", exams:["수능"], pron:"머탤릭", pos:"adj", level:"C1", meanings:["금속의","금속성의"], ex:[{ s:"The old spoon left a strange {{}} taste in my mouth.", f:"metallic", ko:"낡은 숟가락 때문에 입안에 이상한 쇠 맛이 남았다." }] },
+  { word:"machinery", exams:["수능"], pron:"머시너리", pos:"n", level:"B2", meanings:["기계류","기계 장치"], ex:[{ s:"Farm {{}} has replaced much of the hand labor.", f:"machinery", ko:"농기계가 손으로 하던 일 상당 부분을 대신했다." }] },
+  { word:"marine", exams:["수능"], pron:"머린", pos:"adj", level:"B2", meanings:["바다의","해양의"], ex:[{ s:"Plastic pollution harms {{}} animals such as sea turtles.", f:"marine", ko:"플라스틱 오염은 바다거북 같은 해양 동물에게 해를 끼친다." }] },
+  { word:"merely", exams:["수능"], pron:"미얼리", pos:"adv", level:"B2", meanings:["단지","그저"] },
+  { word:"morally", exams:["수능"], pron:"모럴리", pos:"adv", level:"C1", meanings:["도덕적으로"] },
+  { word:"macroeconomic", exams:["수능"], pron:"매크로이커나믹", pos:"adj", level:"C1", meanings:["거시 경제의"], ex:[{ s:"Inflation is a major {{}} problem for many countries.", f:"macroeconomic", ko:"인플레이션은 많은 나라에 주요한 거시 경제 문제다." }] },
+  { word:"match", exams:["수능"], pron:"매치", pos:"v", level:"B1", meanings:["일치하다","어울리다"], ex:[{ s:"Your shoes don't {{}} your dress at all.", f:"match", ko:"네 신발은 드레스와 전혀 어울리지 않는다." }] },
+  { word:"membership", exams:["수능"], pron:"멤버십", pos:"n", level:"B2", meanings:["회원 자격","회원 수"], ex:[{ s:"{{}} in the book club costs twenty dollars a year.", f:"Membership", ko:"독서 모임의 회원 자격은 1년에 20달러다." }] },
+  { word:"mutually", exams:["수능"], pron:"뮤추얼리", pos:"adv", level:"C1", meanings:["서로","상호 간에"] },
+  { word:"migrant", exams:["수능"], pron:"마이그런트", pos:"n", level:"B2", meanings:["이주자","철새"], ex:[{ s:"Each {{}} bird flies thousands of kilometers every year.", f:"migrant", ko:"철새는 해마다 수천 킬로미터를 날아간다." }] },
+  { word:"misfortune", exams:["수능"], pron:"미스포천", pos:"n", level:"B2", meanings:["불운","불행"], ex:[{ s:"Some people believe that breaking a mirror brings {{}}.", f:"misfortune", ko:"어떤 사람들은 거울을 깨면 불운이 온다고 믿는다." }] },
+  { word:"mislead", exams:["수능"], pron:"미스리드", pos:"v", level:"B2", meanings:["오해하게 하다","속이다"], ex:[{ s:"The advertisement tried to {{}} customers about the price.", f:"mislead", ko:"그 광고는 가격에 대해 고객을 오해하게 하려 했다." }] },
+  { word:"missing", exams:["수능"], pron:"미싱", pos:"adj", level:"B1", meanings:["없어진","빠진"], ex:[{ s:"The police are searching for the {{}} child.", f:"missing", ko:"경찰이 실종된 아이를 찾고 있다." }] },
   /* ── 챕터 1 ─────────────────────────────── */
 
   { word:"madden", pron:"매든", pos:"v", level:"C1", meanings:["몹시 화나게 만들다","격분시키다"],
@@ -134,7 +154,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '대다수, 과반수' 를 글자까지 지켰다. bulk(syn) 이 참조하므로
      원본의 '대부분' 대신 사전 쪽을 남겼다.
      반의어 minority 는 7차에서 표제어가 되어 채워 넣었다. */
-  { word:"majority", pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
+  { word:"majority", exams:["수능"], pron:"머조러티", pos:"n", level:"B1", meanings:["대다수","과반수"],
     syn:["bulk","most","greater part"], ant:["minority"],
     ex:[{ s:"A clear {{}} of voters backed the proposal.", f:"majority", ko:"유권자의 분명한 대다수가 그 제안을 지지했다." }] },
 
@@ -150,7 +170,7 @@ window.VOCAB_M = [
   { word:"make headway", pron:"메이크 헤드웨이", pos:"phr", level:"B2", meanings:["나아가다","진전을 보이다"],
     syn:["progress","gain ground","press forward"] },
 
-  { word:"make it", pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
+  { word:"make it", exams:["수능"], pron:"메이크 잇", pos:"phr", level:"B2", meanings:["시간 약속을 지키다","이루다"],
     syn:["arrive in time","succeed","pull it off"] },
 
   { word:"make sense", exams:["수능"], pron:"메이크 센스", pos:"phr", level:"B1", meanings:["의미가 통하다","이해가 되다"],
@@ -236,14 +256,14 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '조종하다, 조작하다' 가 원본과 글자까지 같다.
      brainwash(syn) 가 참조한다. */
-  { word:"manipulate", exams:["공무원"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
+  { word:"manipulate", exams:["공무원","수능"], pron:"머니퓰레이트", pos:"v", level:"B2", meanings:["조종하다","조작하다"],
     syn:["brainwash","exploit","control"],
     ex:[{ s:"Advertisers try to {{}} what we want.", f:"manipulate", ko:"광고주는 우리가 원하는 것을 조종하려 한다." }] },
 
   /* 승격 ① — GLOSS '인공적인' 과 같은 갈래다. artificial(syn) 이 참조한다.
      첫 뜻이 artificial 과 같은데 그쪽이 이 낱말을 유의어로 쓰므로 같은 갈래가 맞다.
      원본의 '인위적인' 은 같은 갈래라 한 갈래로 두었다. */
-  { word:"man-made", pron:"맨 메이드", pos:"adj", level:"B2", meanings:["인공적인"],
+  { word:"man-made", exams:["수능"], pron:"맨 메이드", pos:"adj", level:"B2", meanings:["인공적인"],
     syn:["artificial","synthetic","human-made"], ant:["natural"],
     ex:[{ s:"The lake is entirely {{}}.", f:"man-made", ko:"그 호수는 전적으로 인공적이다." }] },
 
@@ -265,13 +285,13 @@ window.VOCAB_M = [
      automatic(ant) 이 참조하는 갈래는 형용사 '수공의' 라 첫 자리에 지키고,
      둘째를 원본의 '손으로 하는' 으로 바꿨다 — 한 표제어에 형용사와 명사를
      섞지 않는 쪽이 읽기 낫다. 원본의 '안내서' 는 그래서 뺐다. */
-  { word:"manual", pron:"매뉴얼", pos:"adj", level:"B2", meanings:["수공의","손으로 하는"],
+  { word:"manual", exams:["수능"], pron:"매뉴얼", pos:"adj", level:"B2", meanings:["수공의","손으로 하는"],
     syn:["hand-operated","non-automatic","hands-on"], ant:["automatic"],
     ex:[{ s:"Most of the work on this farm is still {{}}.", f:"manual", ko:"이 농장에서 대부분의 일은 아직 손으로 한다." }] },
 
   /* 승격 ① — GLOSS '제조하다; 제조' 와 같은 갈래다. 참조도 PRON 도 없어
      동사 쪽으로 정리했다. 원본의 '제조업' 은 명사 갈래라 뺐다. */
-  { word:"manufacture", pron:"매뉴팩처", pos:"v", level:"B2", meanings:["제조하다","생산하다"],
+  { word:"manufacture", exams:["수능"], pron:"매뉴팩처", pos:"v", level:"B2", meanings:["제조하다","생산하다"],
     syn:["produce","fabricate","assemble"],
     ex:[{ s:"The plant will {{}} batteries for electric cars.", f:"manufacture", ko:"그 공장은 전기차용 배터리를 제조할 것이다." }] },
 
@@ -410,7 +430,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '성숙한; 성숙하다' 를 글자까지 지켰다. I 세트 immature 와
      J 세트 juvenile 이 반의어로 참조하므로 이 갈래가 바뀌면 방금 넣은 문제 화면이
      바뀐다. 원본의 '다 자란' 은 '성숙한' 과 같은 갈래다. */
-  { word:"mature", pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
+  { word:"mature", exams:["수능"], pron:"머추어", pos:"adj", level:"B2", meanings:["성숙한","성숙하다"],
     syn:["grown-up","developed","ripe"], ant:["immature"],
     ex:[{ s:"He is remarkably {{}} for his age.", f:"mature", ko:"그는 나이에 비해 놀랄 만큼 성숙하다." }] },
 
@@ -423,7 +443,7 @@ window.VOCAB_M = [
     ex:[{ s:"He lived by the old {{}} that haste makes waste.", f:"maxim", ko:"그는 서두르면 일을 망친다는 옛 격언대로 살았다." }] },
 
   /* maxim 과 어근이 같지만 품사가 달라(n/v) 같은 보드에 안 온다. */
-  { word:"maximize", exams:["공무원"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
+  { word:"maximize", exams:["공무원","수능"], pron:"맥서마이즈", pos:"v", level:"B2", meanings:["극대화하다","최대화하다"],
     syn:["optimize","boost to the full","get the most out of"], ant:["minimize"],
     ex:[{ s:"The layout is designed to {{}} natural light.", f:"maximize", ko:"그 배치는 자연광을 극대화하도록 설계되었다." }] },
 
@@ -447,7 +467,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '의미 없는' 과 같은 갈래다. 참조도 PRON 도 없어 원본 뜻을
      그대로 썼다. */
-  { word:"meaningless", pron:"미닝리스", pos:"adj", level:"B2", meanings:["무의미한","중요하지 않은"],
+  { word:"meaningless", exams:["수능"], pron:"미닝리스", pos:"adj", level:"B2", meanings:["무의미한","중요하지 않은"],
     syn:["pointless","futile","empty"], ant:["significant"],
     ex:[{ s:"Without context the number is {{}}.", f:"meaningless", ko:"맥락이 없으면 그 숫자는 무의미하다." }] },
 
@@ -471,14 +491,14 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '헤아릴 수 있는' 이다. finite(syn) 가 참조한다. 원본의
      '측정할 수 있는' 은 같은 갈래라 사전 쪽을 첫 자리에 지키고, 원본의
      '주목할 만한' 을 둘째 자리에 붙였다. */
-  { word:"measurable", pron:"메저러블", pos:"adj", level:"B2", meanings:["헤아릴 수 있는","주목할 만한"],
+  { word:"measurable", exams:["수능"], pron:"메저러블", pos:"adj", level:"B2", meanings:["헤아릴 수 있는","주목할 만한"],
     syn:["finite","quantifiable","appreciable"],
     ex:[{ s:"The change produced a {{}} drop in emissions.", f:"measurable", ko:"그 변화는 배출량에 헤아릴 수 있는 감소를 낳았다." }] },
 
   /* 승격 ① — GLOSS '측정하다; 조치' 를 글자까지 지켰다. 참조가 3곳
      (criterion·dose·gauge)이라 그대로 두었다. 원본의 '척도' 는 '조치' 와 다른
      갈래지만 참조가 쓰는 쪽이 사전이라 사전을 따랐다. */
-  { word:"measure", exams:["공무원"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
+  { word:"measure", exams:["공무원","수능"], pron:"메저", pos:"v", level:"B1", meanings:["측정하다","조치"],
     syn:["gauge","quantify","assess"],
     ex:[{ s:"Scientists {{}} the ice thickness every spring.", f:"measure", ko:"과학자들은 매년 봄 얼음 두께를 측정한다." }] },
 
@@ -489,19 +509,19 @@ window.VOCAB_M = [
      원본의 '측량' 대신 사전 쪽을 남겼다.
      measurable·measure 와 어근이 같지만 품사가 셋 다 달라(adj/v/n) 같은 보드에
      안 온다. */
-  { word:"measurement", pron:"메저먼트", pos:"n", level:"B1", meanings:["측정","치수"],
+  { word:"measurement", exams:["수능"], pron:"메저먼트", pos:"n", level:"B1", meanings:["측정","치수"],
     syn:["dimension","reading","gauging"],
     ex:[{ s:"Take the {{}} twice before you cut.", f:"measurement", ko:"자르기 전에 치수를 두 번 재세요." }] },
 
   /* 승격 ① — GLOSS '기계적인, 자동의' 를 글자까지 지켰다. automatic(syn) 이
      참조하므로 원본의 '기계의' 대신 사전 쪽을 남겼다. */
-  { word:"mechanical", exams:["공무원"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
+  { word:"mechanical", exams:["공무원","수능"], pron:"머캐니컬", pos:"adj", level:"B2", meanings:["기계적인","자동의"],
     syn:["automatic","machine-driven","robotic"], ant:["manual"],
     ex:[{ s:"The failure turned out to be purely {{}}.", f:"mechanical", ko:"그 고장은 순전히 기계적인 것으로 드러났다." }] },
 
   /* 승격 ① — GLOSS '기제, 장치' 와 같은 갈래다. 참조도 PRON 도 없어 원본의
      '기계 장치' 를 첫 자리에 두고 '부품' 대신 사전의 '기제' 를 살렸다. */
-  { word:"mechanism", exams:["공무원"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
+  { word:"mechanism", exams:["공무원","수능"], pron:"메커니즘", pos:"n", level:"B2", meanings:["기계 장치","기제"],
     syn:["device","workings","contrivance"],
     ex:[{ s:"The locking {{}} had jammed completely.", f:"mechanism", ko:"잠금 기계 장치가 완전히 걸려 버렸다." }] },
 
@@ -549,7 +569,7 @@ window.VOCAB_M = [
     ex:[{ s:"Olive trees grow all around the {{}}.", f:"Mediterranean", ko:"올리브 나무가 지중해 전역에 자란다." }] },
 
   /* 원본 셋째 갈래 '중간의'(형용사)는 pos 가 n 이라 담지 못했다. */
-  { word:"medium", exams:["공무원"], pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
+  { word:"medium", exams:["공무원","수능"], pron:"미디엄", pos:"n", level:"B1", meanings:["중간","매개물"],
     syn:["middle ground","channel","vehicle"],
     ex:[{ s:"Radio was once the main {{}} for news.", f:"medium", ko:"라디오는 한때 뉴스의 주된 매개물이었다." }] },
 
@@ -594,13 +614,13 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '정신의, 인지의' 를 글자까지 지켰다. cognitive(syn) 가
      참조하므로 원본의 '마음의, 정신적인' 대신 사전 쪽을 남겼다. */
-  { word:"mental", exams:["공무원"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
+  { word:"mental", exams:["공무원","수능"], pron:"멘털", pos:"adj", level:"B1", meanings:["정신의","인지의"],
     syn:["cognitive","psychological","intellectual"], ant:["physical"],
     ex:[{ s:"The job places a heavy {{}} strain on staff.", f:"mental", ko:"그 일은 직원에게 큰 정신적 부담을 준다." }] },
 
   /* 승격 ① — GLOSS '언급하다' 를 첫 자리에 지켰다. cite(syn) 가 참조한다.
      원본의 명사 갈래('언급, 거론')는 pos 가 v 라 담지 못해 '거론하다' 로 적었다. */
-  { word:"mention", exams:["공무원"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
+  { word:"mention", exams:["공무원","수능"], pron:"멘션", pos:"v", level:"B1", meanings:["언급하다","거론하다"],
     syn:["cite","refer to","bring up"],
     ex:[{ s:"She did not {{}} the incident again.", f:"mention", ko:"그녀는 그 사건을 다시 언급하지 않았다." }] },
 
@@ -624,7 +644,7 @@ window.VOCAB_M = [
     syn:["quicksilver","liquid metal","heavy metal"],
     ex:[{ s:"Old thermometers were filled with {{}}.", f:"mercury", ko:"옛 온도계에는 수은이 채워져 있었다." }] },
 
-  { word:"mere", pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
+  { word:"mere", exams:["수능"], pron:"미어", pos:"adj", level:"B2", meanings:["겨우 ~에 불과한","단지"],
     syn:["nothing more than","bare","scant"],
     ex:[{ s:"The whole repair took a {{}} ten minutes.", f:"mere", ko:"수리 전체가 겨우 10분밖에 걸리지 않았다." }] },
 
@@ -652,13 +672,13 @@ window.VOCAB_M = [
   /* ── 챕터 6 ─────────────────────────────── */
 
   /* metabolic 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"metabolism", exams:["공무원"], pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
+  { word:"metabolism", exams:["공무원","수능"], pron:"머태벌리즘", pos:"n", level:"C1", meanings:["신진대사"],
     syn:["energy turnover","body chemistry","metabolic rate"],
     ex:[{ s:"Exercise speeds up the body's {{}}.", f:"metabolism", ko:"운동은 신체의 신진대사를 빠르게 한다." }] },
 
   /* 승격 ① — GLOSS '은유, 비유' 를 글자까지 지켰다. I 세트 imagery 가 참조하므로
      원본의 '상징' 대신 사전 쪽 '비유' 를 남겼다. */
-  { word:"metaphor", pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
+  { word:"metaphor", exams:["수능"], pron:"메터포", pos:"n", level:"B2", meanings:["은유","비유"],
     syn:["imagery","figure of speech","symbol"],
     ex:[{ s:"The poem uses the sea as a {{}} for memory.", f:"metaphor", ko:"그 시는 바다를 기억의 은유로 쓴다." }] },
 
@@ -743,7 +763,7 @@ window.VOCAB_M = [
      emulate(syn)·imitate(syn) 두 문제가 참조하는데 뒤는 I 세트 표제어다.
      원본은 순서가 반대인데, 사전 쪽을 쓰면 그 두 낱말('모방하다')과 첫 뜻이
      같아지는 것도 함께 피할 수 있다. */
-  { word:"mimic", exams:["공무원"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
+  { word:"mimic", exams:["공무원","수능"], pron:"미믹", pos:"v", level:"B2", meanings:["흉내 내다","모방하다"],
     syn:["emulate","imitate","impersonate"],
     ex:[{ s:"Some birds can {{}} human speech.", f:"mimic", ko:"어떤 새들은 사람의 말을 흉내 낼 수 있다." }] },
 
@@ -769,7 +789,7 @@ window.VOCAB_M = [
     syn:["intermix","blend together","mix freely"],
     ex:[{ s:"Guests began to {{}} after the speeches.", f:"mingle", ko:"손님들은 연설이 끝난 뒤 섞이기 시작했다." }] },
 
-  { word:"minimal", pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
+  { word:"minimal", exams:["수능"], pron:"미너멀", pos:"adj", level:"B2", meanings:["최소의","아주 작은"],
     syn:["slightest","nominal","negligible"], ant:["maximal"],
     ex:[{ s:"The repair caused {{}} disruption to traffic.", f:"minimal", ko:"그 수리는 교통에 최소의 지장만 일으켰다." }] },
 
@@ -789,7 +809,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '사소한, 작은' 을 글자까지 지켰다. 참조가 3곳
      (cardinal(ant)·crucial(ant)·incidental)이고 마지막은 I 세트 표제어다.
      원본의 '미성년'(명사)은 pos 가 adj 라 담지 못했다. */
-  { word:"minor", exams:["공무원"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
+  { word:"minor", exams:["공무원","수능"], pron:"마이너", pos:"adj", level:"B1", meanings:["사소한","작은"],
     syn:["incidental","slight","trivial"], ant:["crucial"],
     ex:[{ s:"It turned out to be only a {{}} setback.", f:"minor", ko:"그것은 사소한 차질에 불과한 것으로 드러났다." }] },
 
@@ -863,13 +883,13 @@ window.VOCAB_M = [
 
   /* 원본은 '오해; 오역' 이었는데 '오해' 는 misconception·misunderstanding 과
      겹쳤다. 이 낱말은 해석을 잘못했다는 쪽이어서 '오역' 을 앞에 두었다. */
-  { word:"misinterpretation", pron:"미스인터프러테이션", pos:"n", level:"C1", meanings:["오역","잘못된 해석"],
+  { word:"misinterpretation", exams:["수능"], pron:"미스인터프러테이션", pos:"n", level:"C1", meanings:["오역","잘못된 해석"],
     syn:["mistranslation","misreading","wrong sense"],
     ex:[{ s:"The error came from a {{}} of the original text.", f:"misinterpretation", ko:"그 오류는 원문의 오역에서 비롯되었다." }] },
 
   /* 승격 ① — GLOSS '오해를 일으키는' 을 첫 자리에 지켰다. deceptive(syn) 가 참조한다.
      원본의 '오해의 소지가 있는' 을 둘째 자리에 붙였다. */
-  { word:"misleading", pron:"미스리딩", pos:"adj", level:"B2", meanings:["오해를 일으키는","오해의 소지가 있는"],
+  { word:"misleading", exams:["수능"], pron:"미스리딩", pos:"adj", level:"B2", meanings:["오해를 일으키는","오해의 소지가 있는"],
     syn:["deceptive","confusing","ambiguous"],
     ex:[{ s:"The advert was eventually found to be {{}}.", f:"misleading", ko:"그 광고는 결국 오해를 일으키는 것으로 판정되었다." }] },
 
@@ -889,7 +909,7 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '사절단; 임무' 다. delegation(syn) 이 쓰는 갈래는 '사절단' 이라
      첫 자리에 지켰다. 둘째는 원본의 '임무' 로 했다 — 원본 첫 뜻 '임무' 를 앞에 두면
      C 세트 commission 과 첫 뜻이 같아진다. 원본 셋째 갈래 '선교' 는 뺐다. */
-  { word:"mission", exams:["공무원"], pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
+  { word:"mission", exams:["공무원","수능"], pron:"미션", pos:"n", level:"B1", meanings:["사절단","임무"],
     syn:["delegation","assignment","errand"],
     ex:[{ s:"A trade {{}} flew out to Seoul last week.", f:"mission", ko:"통상 사절단이 지난주 서울로 떠났다." }] },
 
@@ -914,7 +934,7 @@ window.VOCAB_M = [
      뜻이 너무 가까워진다. 원본의 '잘못 알고 있는' 을 앞에 두고 사전의 '틀린' 을
      둘째 자리에 남겼다 — 이쪽은 사람이 오해하고 있다는 쪽이다.
      mistake 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"mistaken", pron:"미스테이컨", pos:"adj", level:"B2", meanings:["잘못 알고 있는","틀린"],
+  { word:"mistaken", exams:["수능"], pron:"미스테이컨", pos:"adj", level:"B2", meanings:["잘못 알고 있는","틀린"],
     syn:["erroneous","misinformed","wide of the mark"], ant:["correct"],
     ex:[{ s:"You are {{}} about who sent the letter.", f:"mistaken", ko:"누가 그 편지를 보냈는지에 대해 당신은 잘못 알고 있다." }] },
 
@@ -941,7 +961,7 @@ window.VOCAB_M = [
   /* 승격 ① — GLOSS '남용, 오용' 을 글자까지 지켰다. abuse(syn)·exploitation(syn) 두
      문제가 참조하므로 원본('오용, 남용')이 아니라 사전 순서를 남겼다.
      원본의 동사 갈래('오용하다')는 pos 가 n 이라 담지 못했다. */
-  { word:"misuse", pron:"미스유스", pos:"n", level:"B2", meanings:["남용","오용"],
+  { word:"misuse", exams:["수능"], pron:"미스유스", pos:"n", level:"B2", meanings:["남용","오용"],
     syn:["abuse","exploitation","improper use"],
     ex:[{ s:"The report documents widespread {{}} of funds.", f:"misuse", ko:"그 보고서는 자금의 광범위한 남용을 기록한다." }] },
 
@@ -964,13 +984,13 @@ window.VOCAB_M = [
     syn:["rabble","throng","horde"],
     ex:[{ s:"An angry {{}} gathered outside the courthouse.", f:"mob", ko:"분노한 폭도가 법원 밖에 모였다." }] },
 
-  { word:"mobile", pron:"모발", pos:"adj", level:"B1", meanings:["이동할 수 있는","휴대가 용이한"],
+  { word:"mobile", exams:["수능"], pron:"모발", pos:"adj", level:"B1", meanings:["이동할 수 있는","휴대가 용이한"],
     syn:["movable","portable","roving"], ant:["stationary"],
     ex:[{ s:"The clinic runs a {{}} unit for remote villages.", f:"mobile", ko:"그 진료소는 외딴 마을을 위해 이동할 수 있는 차량을 운영한다." }] },
 
   /* 승격 ① — GLOSS '이동성, 유동성' 이 원본과 글자까지 같다. 참조도 PRON 도 없다.
      mobile 과 어근이 같지만 품사가 달라(adj/n) 같은 보드에 안 온다. */
-  { word:"mobility", pron:"모빌러티", pos:"n", level:"B2", meanings:["이동성","유동성"],
+  { word:"mobility", exams:["수능"], pron:"모빌러티", pos:"n", level:"B2", meanings:["이동성","유동성"],
     syn:["movability","freedom of movement","fluidity"],
     ex:[{ s:"The injury limited his {{}} for months.", f:"mobility", ko:"그 부상은 몇 달간 그의 이동성을 제한했다." }] },
 
@@ -981,7 +1001,7 @@ window.VOCAB_M = [
   /* 승격 ② — GLOSS '적당한; 완화하다' 로 형용사와 동사가 섞여 있었다.
      excessive(ant) 이 참조하는 갈래는 형용사 '적당한' 쪽이라 그것을 지키고,
      원본의 '절제하는' 을 둘째 자리에 두었다 — 한 표제어에 두 품사를 섞지 않는다. */
-  { word:"moderate", pron:"마더릿", pos:"adj", level:"B2", meanings:["적당한","절제하는"],
+  { word:"moderate", exams:["수능"], pron:"마더릿", pos:"adj", level:"B2", meanings:["적당한","절제하는"],
     syn:["reasonable","temperate","middling"], ant:["excessive"],
     ex:[{ s:"A {{}} amount of salt improves the flavour.", f:"moderate", ko:"적당한 양의 소금이 맛을 좋게 한다." }] },
 
@@ -998,7 +1018,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '수정하다, 변경하다' 를 글자까지 지켰다. 참조가 4곳
      (adapt·adjust·alter·amend)이라 원본의 '바꾸다' 대신 사전 쪽을 남겼다. */
-  { word:"modify", exams:["공무원"], pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
+  { word:"modify", exams:["공무원","수능"], pron:"마디파이", pos:"v", level:"B2", meanings:["수정하다","변경하다"],
     syn:["adapt","adjust","amend"],
     ex:[{ s:"Engineers had to {{}} the design twice.", f:"modify", ko:"기술자들은 설계를 두 번 수정해야 했다." }] },
 
@@ -1080,7 +1100,7 @@ window.VOCAB_M = [
     ex:[{ s:"The work was safe but utterly {{}}.", f:"monotonous", ko:"그 일은 안전했지만 아주 단조로웠다." }] },
 
   /* 승격 ① — GLOSS '기념비, 기념물' 이 원본과 글자까지 같다. 참조도 PRON 도 없다. */
-  { word:"monument", pron:"마뉴먼트", pos:"n", level:"B1", meanings:["기념비","기념물"],
+  { word:"monument", exams:["수능"], pron:"마뉴먼트", pos:"n", level:"B1", meanings:["기념비","기념물"],
     syn:["memorial stone","landmark","shrine"],
     ex:[{ s:"A stone {{}} marks the old battlefield.", f:"monument", ko:"돌 기념비가 옛 전장을 표시한다." }] },
 
@@ -1120,7 +1140,7 @@ window.VOCAB_M = [
     syn:["conscience","ethics","virtue"],
     ex:[{ s:"The debate soon turned on questions of {{}}.", f:"morality", ko:"그 토론은 곧 도덕의 문제로 옮겨 갔다." }] },
 
-  { word:"more often than not", pron:"모어 오픈 댄 낫", pos:"phr", level:"B2", meanings:["자주","대개"],
+  { word:"more often than not", exams:["수능"], pron:"모어 오픈 댄 낫", pos:"phr", level:"B2", meanings:["자주","대개"],
     syn:["usually","as a rule","most of the time"] },
 
   /* 원본 첫 뜻 '약' 은 한 글자여서 뜻으로 읽히지 않는다. '대략' 을 앞에 두었다. */
@@ -1153,7 +1173,7 @@ window.VOCAB_M = [
 
   /* 승격 ① — GLOSS '동기 부여' 를 첫 자리에 지켰다. I 세트 incentive 가 참조한다.
      원본의 '자극' 을 둘째 자리에 붙였다. */
-  { word:"motivation", exams:["공무원"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
+  { word:"motivation", exams:["공무원","수능"], pron:"모터베이션", pos:"n", level:"B2", meanings:["동기 부여","자극"],
     syn:["incentive","drive","impetus"],
     ex:[{ s:"Her main {{}} was curiosity, not money.", f:"motivation", ko:"그녀의 주된 동기 부여는 돈이 아니라 호기심이었다." }] },
 
@@ -1164,7 +1184,7 @@ window.VOCAB_M = [
     ex:[{ s:"Fear is a poor long-term {{}}.", f:"motivator", ko:"두려움은 장기적으로 좋지 않은 동기 부여 요인이다." }] },
 
   /* 원본 셋째 갈래 '주제' 는 meanings 2개 제한에 걸려 뺐다. */
-  { word:"motive", exams:["공무원"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
+  { word:"motive", exams:["공무원","수능"], pron:"모티브", pos:"n", level:"B2", meanings:["동기","이유"],
     syn:["reason","grounds","rationale"],
     ex:[{ s:"Police could find no clear {{}} for the theft.", f:"motive", ko:"경찰은 그 절도의 명확한 동기를 찾을 수 없었다." }] },
 
@@ -1189,7 +1209,7 @@ window.VOCAB_M = [
     ex:[{ s:"The school serves a highly {{}} neighbourhood.", f:"multicultural", ko:"그 학교는 매우 다문화적인 동네를 담당한다." }] },
 
   /* 원본 둘째 갈래 '멀티미디어' 는 외래어 그대로여서 뺐다. */
-  { word:"multimedia", pron:"멀티미디어", pos:"n", level:"B2", meanings:["다중매체"],
+  { word:"multimedia", exams:["수능"], pron:"멀티미디어", pos:"n", level:"B2", meanings:["다중매체"],
     syn:["mixed media","audio-visual","cross-format"],
     ex:[{ s:"The museum runs a {{}} exhibition this autumn.", f:"multimedia", ko:"그 박물관은 이번 가을 다중매체 전시를 운영한다." }] },
 
@@ -1244,7 +1264,7 @@ window.VOCAB_M = [
     syn:["civic","city-run","local-government"],
     ex:[{ s:"The {{}} library opens on Sundays now.", f:"municipal", ko:"그 시립 도서관은 이제 일요일에도 문을 연다." }] },
 
-  { word:"muscle", pron:"머슬", pos:"n", level:"B1", meanings:["근육"],
+  { word:"muscle", exams:["수능"], pron:"머슬", pos:"n", level:"B1", meanings:["근육"],
     syn:["sinew","flesh","tissue"],
     ex:[{ s:"Stretching keeps the {{}} from tightening.", f:"muscle", ko:"스트레칭은 근육이 굳는 것을 막아 준다." }] },
 
@@ -1289,7 +1309,7 @@ window.VOCAB_M = [
     syn:["legendary","fabled","imaginary"], ant:["actual"],
     ex:[{ s:"The unicorn is a {{}} creature.", f:"mythical", ko:"유니콘은 신화 속에 나오는 생물이다." }] },
 
-  { word:"mythology", exams:["공무원"], pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
+  { word:"mythology", exams:["공무원","수능"], pron:"미쌀러지", pos:"n", level:"B2", meanings:["신화","근거 없는 믿음"],
     syn:["legend","folklore","body of myths"],
     ex:[{ s:"Greek {{}} still shapes modern storytelling.", f:"mythology", ko:"그리스 신화는 여전히 현대 이야기 짓기를 만든다." }] }
 ];
@@ -1394,6 +1414,7 @@ Object.assign(window.GLOSS, {
   "exasperate": "속을 뒤집어 놓다",
   "excluded": "배제된",
   "exclusive rights": "배타적 권리",
+  "fabricator": "제조자",
   "failure to grasp": "알아듣지 못함",
   "falling star": "떨어지는 별",
   "false belief": "틀린 믿음",
@@ -1404,6 +1425,7 @@ Object.assign(window.GLOSS, {
   "floor swab": "바닥 닦는 걸레",
   "fluidity": "흐르는 성질",
   "forecaster": "예보하는 사람",
+  "forgettable": "잊혀지기 쉬운",
   "forgiving": "너그럽게 용서하는",
   "foul-smelling": "역한 냄새의",
   "frame of mind": "마음가짐",
@@ -1433,7 +1455,6 @@ Object.assign(window.GLOSS, {
   "hold water": "말이 성립하다",
   "home loan": "주택 대출",
   "honoring": "기려 받드는",
-  "host": "아주 많은 수",
   "hulking": "덩치가 큰",
   "human-made": "사람이 만든",
   "human-operated": "사람이 조작하는",
@@ -1544,7 +1565,6 @@ Object.assign(window.GLOSS, {
   "pronounced": "두드러진",
   "property loan": "부동산 대출",
   "proselytizer": "개종을 권하는 사람",
-  "protective": "감싸려 하는",
   "pry": "엿보며 캐다",
   "pull it off": "끝내 해내다",
   "put in the wrong place": "엉뚱한 곳에 두다",
@@ -1597,7 +1617,6 @@ Object.assign(window.GLOSS, {
   "stationary": "고정된",
   "step aside for": "~에게 자리를 비켜 주다",
   "stopgap": "임시로 메우는",
-  "structural": "구조상의",
   "sulky": "뾰로통한",
   "sullen": "못마땅해 말이 없는",
   "take the edge off": "날카로움을 덜다",
@@ -1649,7 +1668,6 @@ Object.assign(window.GLOSS, {
   "wordless": "말이 없는",
   "work in parallel": "나란히 해내다",
   "work one's way": "힘써 나아가다",
-  "worth": "가치, 값어치",
   "write incorrectly": "틀리게 적다",
   "wrong sense": "틀린 뜻",
   "wrongdoing": "비행, 부정",

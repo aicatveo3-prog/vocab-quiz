@@ -38,23 +38,23 @@ window.VOCAB_T = [
   { word:"thoroughly", exams:["공무원"], pron:"써로울리", pos:"adv", level:"B2", meanings:["철저히","완전히"], syn:["completely","fully","exhaustively"], ex:[{ s:"He knows the city {{}}.", f:"thoroughly", ko:"그는 그 도시를 철저히 안다." }] },
   { word:"thrilled", exams:["공무원","수능"], pron:"쓰릴드", pos:"adj", level:"B2", meanings:["아주 신이 난","짜릿한"], syn:["excited","delighted","exhilarated"], ant:["bored"], ex:[{ s:"He felt {{}} and excited by the discovery.", f:"thrilled", ko:"그는 그 발견에 아주 신이 나고 들떴다." }] },
   { word:"tolerable", exams:["공무원"], pron:"탈러러블", pos:"adj", level:"C1", meanings:["견딜 만한"], syn:["bearable","endurable","acceptable"], ant:["intolerable"], ex:[{ s:"Sustained g-force is more {{}} when lying down.", f:"tolerable", ko:"누워 있으면 지속적인 중력이 더 견딜 만하다." }] },
-  { word:"tragedy", exams:["공무원"], pron:"트래저디", pos:"n", level:"B2", meanings:["비극"], syn:["catastrophe","disaster","calamity"], ant:["comedy"], ex:[{ s:"Oedipus the King is a classical {{}}.", f:"tragedy", ko:"'오이디푸스 왕'은 고전 비극이다." }] },
+  { word:"tragedy", exams:["공무원","수능"], pron:"트래저디", pos:"n", level:"B2", meanings:["비극"], syn:["catastrophe","disaster","calamity"], ant:["comedy"], ex:[{ s:"Oedipus the King is a classical {{}}.", f:"tragedy", ko:"'오이디푸스 왕'은 고전 비극이다." }] },
   { word:"tribal", exams:["공무원"], pron:"트라이벌", pos:"adj", level:"C1", meanings:["부족의"], syn:["ethnic","clan","native"], ex:[{ s:"{{}} oral history suggests a mudslide occurred.", f:"Tribal", ko:"부족의 구전 역사는 진흙 사태가 있었음을 시사한다." }] },
   { word:"tribute", exams:["공무원"], pron:"트리뷰트", pos:"n", level:"C1", meanings:["헌사","경의"], syn:["homage","respect","honor"], ex:[{ s:"They made attempts to pay {{}} to the team.", f:"tribute", ko:"그들은 팀에 경의를 표하려 애썼다." }] },
   { word:"trove", exams:["공무원"], pron:"트로브", pos:"n", level:"C2", meanings:["귀중한 발견물","수집물"], syn:["hoard","cache","collection"], ex:[{ s:"Evans found a {{}} of artifacts from the Minoan age.", f:"trove", ko:"에번스는 미노아 시대 유물의 보고를 발견했다." }] },
-  { word:"thereby", exams:["공무원"], pron:"데어바이", pos:"adv", level:"C1", meanings:["그렇게 함으로써","그것에 의해"], syn:["thus","thereupon","consequently"], ex:[{ s:"We pollute the oceans, {{}} harming ourselves.", f:"thereby", ko:"우리는 바다를 오염시켜, 그렇게 함으로써 우리 자신을 해친다." }] },
+  { word:"thereby", exams:["공무원","수능"], pron:"데어바이", pos:"adv", level:"C1", meanings:["그렇게 함으로써","그것에 의해"], syn:["thus","thereupon","consequently"], ex:[{ s:"We pollute the oceans, {{}} harming ourselves.", f:"thereby", ko:"우리는 바다를 오염시켜, 그렇게 함으로써 우리 자신을 해친다." }] },
   { word:"takeaway", exams:["공무원"], pron:"테이크어웨이", pos:"n", level:"B2", meanings:["포장 음식","테이크아웃"], syn:["takeout","carryout","fast food"], ex:[{ s:"Target the {{}} items that end up in the ocean.", f:"takeaway", ko:"바다로 흘러드는 포장 음식 용기를 겨냥하라." }] },
-  { word:"talent", exams:["공무원"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
-  { word:"treat", exams:["공무원"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
+  { word:"talent", exams:["공무원","수능"], pron:"탤런트", pos:"n", level:"B1", meanings:["재능","인재"], syn:["ability","gift","skill"], ex:[{ s:"A system that rewards {{}} is more productive.", f:"talent", ko:"재능을 보상하는 체계가 더 생산적이다." }] },
+  { word:"treat", exams:["공무원","수능"], pron:"트릿", pos:"v", level:"B1", meanings:["치료하다","다루다"], syn:["handle","cure","deal with"], ex:[{ s:"The program will inspect and {{}} disease vectors.", f:"treat", ko:"그 프로그램은 질병 매개체를 점검하고 처리할 것이다." }] },
   { word:"treatment", exams:["공무원"], pron:"트릿먼트", pos:"n", level:"B1", meanings:["치료","처리"], syn:["therapy","care","handling"], ex:[{ s:"You will receive one recommended {{}} each month.", f:"treatment", ko:"당신은 매달 권장 처리 한 번을 받게 된다." }] },
-  { word:"task", exams:["공무원"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
-  { word:"telling", exams:["공무원"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
+  { word:"task", exams:["공무원","수능"], pron:"태스크", pos:"n", level:"B1", meanings:["과제","업무"], syn:["assignment","duty","chore"], ex:[{ s:"When you focus on a single {{}}, many brain regions work together.", f:"task", ko:"한 가지 과제에 집중하면 뇌의 여러 영역이 함께 일한다." }] },
+  { word:"telling", exams:["공무원","수능"], pron:"텔링", pos:"adj", level:"C1", meanings:["의미심장한","효과적인"], syn:["revealing","significant","striking"], ex:[{ s:"The most {{}} trend is the practice of avoiding management roles.", f:"telling", ko:"가장 의미심장한 추세는 관리직을 피하는 관행이다." }] },
   { word:"testament", exams:["공무원"], pron:"테스터먼트", pos:"n", level:"C1", meanings:["증거","유언"], syn:["proof","evidence","testimony"], ex:[{ s:"Its high price tag is {{}} to how costly it is to produce.", f:"testament", ko:"비싼 가격표는 그것을 생산하는 데 비용이 얼마나 드는지 보여 주는 증거다." }], gov:{ prep:["to"], usage:"(a) testament to ~ : ~의 증거" } },
   { word:"tether", exams:["공무원"], pron:"테더", pos:"v", level:"C2", meanings:["밧줄로 묶다","얽매다"], syn:["fasten","bind","chain"], ex:[{ s:"Workers {{}} the robot to the ship with a cable.", f:"tether", ko:"작업자들은 케이블로 로봇을 배에 묶어 둔다." }], gov:{ prep:["to"], usage:"tether A to B : A를 B에 묶어 두다" } },
   { word:"to date", exams:["공무원"], pron:"투 데이트", pos:"phr", level:"B2", meanings:["지금까지","현재까지"], syn:["so far","up to now","thus far"] },
   { word:"target", exams:["공무원"], pron:"타깃", pos:"v", level:"B1", meanings:["겨냥하다","목표로 삼다"], syn:["aim at","single out","focus on"], ex:[{ s:"The scam {{}} people who own cars.", f:"targets", ko:"그 사기는 차를 가진 사람들을 노린다." }] },
   { word:"technique", exams:["공무원","수능"], pron:"테크닉", pos:"n", level:"B1", meanings:["기법","기술"], syn:["method","procedure","skill"], ex:[{ s:"Cooling your hands is a simple {{}} for beating the heat.", f:"technique", ko:"손을 식히는 것은 더위를 이기는 간단한 기법이다." }] },
-  { word:"thus", exams:["공무원"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
+  { word:"thus", exams:["공무원","수능"], pron:"더스", pos:"adv", level:"B2", meanings:["따라서","그러므로"], syn:["therefore","hence","consequently"], ex:[{ s:"Sunlight blocks the harm of blue light; {{}}, children should play outside.", f:"thus", ko:"햇빛은 블루라이트의 해를 막아 준다. 따라서 아이들은 밖에서 놀아야 한다." }] },
   { word:"timeline", exams:["공무원"], pron:"타임라인", pos:"n", level:"B2", meanings:["일정","연표"], syn:["schedule","chronology","timetable"], ex:[{ s:"Could you share your decision {{}} with me?", f:"timeline", ko:"결정 일정을 알려 주실 수 있을까요?" }] },
   { word:"toddler", exams:["공무원"], pron:"타들러", pos:"n", level:"B2", meanings:["걸음마 하는 아기","유아"], ex:[{ s:"My two-year-old {{}} is learning to walk.", f:"toddler", ko:"우리 두 살배기 아기는 걸음마를 배우고 있다." }] },
   { word:"transparency", exams:["공무원"], pron:"트랜스패런시", pos:"n", level:"C1", meanings:["투명성","명료함"], syn:["openness","clarity","candor"], ant:["secrecy"], ex:[{ s:"Voters demand greater {{}} in how the budget is spent.", f:"transparency", ko:"유권자들은 예산 집행에 대해 더 큰 투명성을 요구한다." }] },
@@ -64,6 +64,23 @@ window.VOCAB_T = [
   { word:"tumult", exams:["공무원"], pron:"튜멀트", pos:"n", level:"C1", meanings:["소란","격동"], syn:["commotion","turmoil","uproar"], ex:[{ s:"Grandparents bring calm to the {{}} of busy family life.", f:"tumult", ko:"조부모는 바쁜 가족생활의 소란에 평온을 가져다준다." }] },
   { word:"to boot", exams:["공무원"], pron:"투 부트", pos:"phr", level:"C1", meanings:["게다가","그것도"] },
   { word:"transferable", exams:["수능"], pron:"트랜스퍼러블", pos:"adj", level:"C1", meanings:["양도 가능한","옮길 수 있는"], ex:[{ s:"The concert pass is not {{}} to another person.", f:"transferable", ko:"그 공연 이용권은 다른 사람에게 양도할 수 없다." }] },
+  { word:"tiresome", exams:["수능"], pron:"타이어섬", pos:"adj", level:"C1", meanings:["지루한","귀찮은"], syn:["tedious","wearisome","exhausting"], ant:["exciting"], ex:[{ s:"Filling out the same form again and again is {{}}.", f:"tiresome", ko:"같은 서류를 몇 번이고 작성하는 일은 지루하다." }] },
+  { word:"toxicity", exams:["수능"], pron:"탁시서티", pos:"n", level:"C1", meanings:["독성","유독성"], ex:[{ s:"Scientists tested the {{}} of the new chemical on plants.", f:"toxicity", ko:"과학자들은 새 화학 물질이 식물에 미치는 독성을 시험했다." }] },
+  { word:"trustee", exams:["수능"], pron:"트러스티", pos:"n", level:"C1", meanings:["수탁자","관리 위원"], ex:[{ s:"Her uncle served as the {{}} of her inheritance.", f:"trustee", ko:"그녀의 삼촌이 그녀가 받은 유산의 수탁자 역할을 했다." }] },
+  { word:"theorist", exams:["수능"], pron:"시어리스트", pos:"n", level:"C1", meanings:["이론가"], ex:[{ s:"The French painter and {{}} wrote about emotions in art.", f:"theorist", ko:"그 프랑스 화가이자 이론가는 미술 속 감정에 관해 썼다." }] },
+  { word:"typically", exams:["수능"], pron:"티피컬리", pos:"adv", level:"B2", meanings:["보통","전형적으로"], syn:["usually","normally","generally"], ant:["unusually"] },
+  { word:"three-dimensional", exams:["수능"], pron:"스리 디멘셔널", pos:"adj", level:"B2", meanings:["3차원의","입체의"], ex:[{ s:"The new game creates {{}} images that look real.", f:"three-dimensional", ko:"새 게임은 실제처럼 보이는 입체 영상을 만들어 낸다." }] },
+  { word:"tone", exams:["수능"], pron:"톤", pos:"n", level:"B1", meanings:["어조","색조"], ex:[{ s:"She spoke in a calm, quiet {{}} to comfort the child.", f:"tone", ko:"그녀는 아이를 달래려고 차분하고 조용한 어조로 말했다." }] },
+  { word:"traditionally", exams:["수능"], pron:"트러디셔널리", pos:"adv", level:"B2", meanings:["전통적으로","관례상"] },
+  { word:"time-consuming", exams:["수능"], pron:"타임 컨수밍", pos:"adj", level:"B2", meanings:["시간이 많이 걸리는"], syn:["lengthy","laborious","tedious","tiresome"], ant:["quick"], ex:[{ s:"Writing letters by hand is more {{}} than typing.", f:"time-consuming", ko:"손으로 편지를 쓰는 것은 타자를 치는 것보다 시간이 더 걸린다." }] },
+  { word:"traditional", exams:["수능"], pron:"트러디셔널", pos:"adj", level:"B1", meanings:["전통적인","전통의"], ex:[{ s:"Hanbok is the {{}} dress of Korea.", f:"traditional", ko:"한복은 한국의 전통 의상이다." }] },
+  { word:"tale", exams:["수능"], pron:"테일", pos:"n", level:"B2", meanings:["이야기","설화"], ex:[{ s:"The children loved the {{}} of the brave little mouse.", f:"tale", ko:"아이들은 용감한 생쥐 이야기를 무척 좋아했다." }] },
+  { word:"temporarily", exams:["수능"], pron:"템퍼레럴리", pos:"adv", level:"B2", meanings:["일시적으로","임시로"] },
+  { word:"token", exams:["수능"], pron:"토컨", pos:"n", level:"B2", meanings:["표시","상징"], ex:[{ s:"This small gift is our {{}} of thanks for your help.", f:"token", ko:"이 작은 선물은 도와주신 데 대한 감사의 표시입니다." }] },
+  { word:"troubled", exams:["수능"], pron:"트러블드", pos:"adj", level:"B2", meanings:["근심하는","문제가 많은"], syn:["worried","anxious","distressed"], ant:["carefree"], ex:[{ s:"He looked {{}} after hearing the bad news.", f:"troubled", ko:"그는 나쁜 소식을 듣고 근심스러워 보였다." }] },
+  { word:"twist", exams:["수능"], pron:"트위스트", pos:"v", level:"B2", meanings:["비틀다","삐다"], syn:["distort","bend","warp"], ant:["straighten"], ex:[{ s:"Be careful not to {{}} your ankle on the rocks.", f:"twist", ko:"바위에서 발목을 삐지 않도록 조심해라." }] },
+  { word:"totality", exams:["수능"], pron:"토탤러티", pos:"n", level:"C1", meanings:["전체","총체"], ex:[{ s:"We must look at the problem in its {{}}.", f:"totality", ko:"우리는 그 문제를 전체적으로 보아야 한다." }] },
+  { word:"turbine", exams:["수능"], pron:"터빈", pos:"n", level:"B2", meanings:["터빈"], ex:[{ s:"Each wind {{}} makes enough power for 500 homes.", f:"turbine", ko:"풍력 터빈 하나가 500가구에 쓸 전기를 만든다." }] },
 
   /* ── 챕터 1 ────────────────────────────────────── */
   /* 스물 중 열여덟이 'take ~' 로 시작하는 구·표현이다. 구·표현에는 예문을 두지
@@ -87,7 +104,7 @@ window.VOCAB_T = [
 
   /* 교재가 앞세운 '꾀' 는 드문 쪽이라 순서를 바꿨다. strategy(전략 · S) 와는
      '전술' 로 갈린다. */
-  { word:"tactic", pron:"택틱", pos:"n", level:"B2", meanings:["전술","꾀"],
+  { word:"tactic", exams:["수능"], pron:"택틱", pos:"n", level:"B2", meanings:["전술","꾀"],
     syn:["scheme","plan of attack","move to win"],
     ex:[{ s:"They changed their {{}} at halftime.", f:"tactic", ko:"그들은 전반이 끝나고 전술을 바꿨다." }] },
 
@@ -149,7 +166,7 @@ window.VOCAB_T = [
     syn:["extract","draw out","pull from inside"] },
 
   /* 승격 ⑤ — 사전 단일값 유지(참조 inherit). 교재 '인수하다, 인계하다' 버림. */
-  { word:"take over", pron:"테이크 오버", pos:"phr", level:"B2", meanings:["넘겨받다"],
+  { word:"take over", exams:["수능"], pron:"테이크 오버", pos:"phr", level:"B2", meanings:["넘겨받다"],
     syn:["inherit","step into the role of","assume from another"] },
 
   /* 승격 ⑥ — 사전 글자 유지(참조 be engaged in). */
@@ -226,7 +243,7 @@ window.VOCAB_T = [
     syn:["make fun of","poke fun at","needle in jest"],
     ex:[{ s:"Do not {{}} your little brother.", f:"tease", ko:"동생을 놀리지 마라." }] },
 
-  { word:"technical", exams:["공무원"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
+  { word:"technical", exams:["공무원","수능"], pron:"테크니컬", pos:"adj", level:"B1", meanings:["기술적인","전문의"],
     syn:["to do with technique","of applied science","needing special skill"],
     ex:[{ s:"The report is too {{}} for me.", f:"technical", ko:"그 보고서는 내게 너무 기술적이다." }] },
 
@@ -268,7 +285,7 @@ window.VOCAB_T = [
     ex:[{ s:"The {{}} fell below zero.", f:"temperature", ko:"기온이 영도 아래로 떨어졌다." }] },
 
   /* 교재 '신전, 성당, 절' 세 갈래 → 둘. */
-  { word:"temple", pron:"템플", pos:"n", level:"B1", meanings:["신전","절"],
+  { word:"temple", exams:["수능"], pron:"템플", pos:"n", level:"B1", meanings:["신전","절"],
     syn:["house of worship","shrine building","place for prayer"],
     ex:[{ s:"They walked up to the old {{}}.", f:"temple", ko:"그들은 오래된 절까지 걸어 올라갔다." }] },
 
@@ -287,18 +304,18 @@ window.VOCAB_T = [
      글자가 맞물려 자동 배제된다. */
 
   /* rate(속도, 비율 · R) 와 글자를 맞춰 자동 배제시켰다. 괄호 걷음. */
-  { word:"tempo", pron:"템포", pos:"n", level:"B2", meanings:["속도"],
+  { word:"tempo", exams:["수능"], pron:"템포", pos:"n", level:"B2", meanings:["속도"],
     syn:["pace of movement","rate of action","speed of a piece"],
     ex:[{ s:"The band raised the {{}}.", f:"tempo", ko:"그 악단이 속도를 올렸다." }] },
 
   /* 교재가 앞세운 '속세의' 는 드문 쪽이라 순서를 바꿨다. */
-  { word:"temporal", pron:"템퍼럴", pos:"adj", level:"C1", meanings:["시간의","속세의"],
+  { word:"temporal", exams:["수능"], pron:"템퍼럴", pos:"adj", level:"C1", meanings:["시간의","속세의"],
     syn:["to do with time","bound by time","of this world"],
     ex:[{ s:"The study looks at {{}} change.", f:"temporal", ko:"그 연구는 시간의 변화를 살핀다." }] },
 
   /* 승격 ⑮ — 사전 단일값 유지. 참조 eternal(E)·makeshift(M)·permanent(P)
      세 곳의 화면은 바뀌지 않는다. transient(오래 가지 않는 · 챕터 8) 와 갈랐다. */
-  { word:"temporary", exams:["공무원"], pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
+  { word:"temporary", exams:["공무원","수능"], pron:"템퍼러리", pos:"adj", level:"B1", meanings:["일시적인"],
     syn:["makeshift","lasting a short while","not meant to stay"], ant:["permanent","eternal"],
     ex:[{ s:"They found a {{}} home.", f:"temporary", ko:"그들은 일시적인 집을 구했다." }] },
 
@@ -330,7 +347,7 @@ window.VOCAB_T = [
 
   /* 승격 ⑱ — 사전 단일값 유지. 참조 inclination(I) 의 화면은 바뀌지 않는다.
      교재의 '경향' 은 inclination 자리다. */
-  { word:"tendency", exams:["공무원"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
+  { word:"tendency", exams:["공무원","수능"], pron:"텐던시", pos:"n", level:"B2", meanings:["성향"],
     syn:["inclination","predisposition","leaning one way"],
     ex:[{ s:"He has a {{}} to talk too fast.", f:"tendency", ko:"그는 너무 빨리 말하는 성향이 있다." }] },
 
@@ -338,7 +355,7 @@ window.VOCAB_T = [
      참조 nerve(N) 의 설명이 '팽팽함' 에서 '긴장, 팽팽함' 으로 늘어난다.
      nerve(신경, 긴장)·strain(S 긴장, 압박) 과 '긴장' 이 맞물려 배제된다.
      교재의 '갈등' 은 conflict·friction 자리라 버렸다. */
-  { word:"tension", exams:["공무원"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
+  { word:"tension", exams:["공무원","수능"], pron:"텐션", pos:"n", level:"B1", meanings:["긴장","팽팽함"],
     syn:["nerve","strain","tightness in the air"],
     ex:[{ s:"You could feel the {{}} in the room.", f:"tension", ko:"방 안의 긴장이 느껴졌다." }] },
 
@@ -360,7 +377,7 @@ window.VOCAB_T = [
   /* 승격 ㉑ — ★ 사전이 명사('종착역, 터미널') 였다. 참조가 depot(n)·
      incurable(adj) 로 갈렸는데 사전을 따라 명사로 세우고, 형용사 쪽을 쓰던
      incurable(I) 한 곳을 'beyond cure' 로 갈았다. 외래어 '터미널' 은 '종점' 으로. */
-  { word:"terminal", pron:"터미널", pos:"n", level:"B2", meanings:["종착역","종점"],
+  { word:"terminal", exams:["수능"], pron:"터미널", pos:"n", level:"B2", meanings:["종착역","종점"],
     syn:["depot","end of the line","last stop"],
     ex:[{ s:"The bus waits at the {{}}.", f:"terminal", ko:"그 버스는 종착역에서 기다린다." }] },
 
@@ -385,7 +402,7 @@ window.VOCAB_T = [
     ex:[{ s:"I am {{}} sorry about that.", f:"terribly", ko:"그 일은 대단히 미안합니다." }] },
 
   /* 승격 ㉕ — 사전 글자 유지(참조 fabulous). 교재의 '아주 좋은' 은 버렸다. */
-  { word:"terrific", pron:"터리픽", pos:"adj", level:"B2", meanings:["멋진","대단한"],
+  { word:"terrific", exams:["수능"], pron:"터리픽", pos:"adj", level:"B2", meanings:["멋진","대단한"],
     syn:["fabulous","really good","splendid to see"],
     ex:[{ s:"That was a {{}} idea.", f:"terrific", ko:"그것은 멋진 생각이었다." }] },
 
@@ -460,7 +477,7 @@ window.VOCAB_T = [
   { word:"the other way around", pron:"디 아더 웨이 어라운드", pos:"phr", level:"B2", meanings:["거꾸로","반대로"],
     syn:["conversely","in reverse","the opposite way"] },
 
-  { word:"theatrical", pron:"시애트리컬", pos:"adj", level:"C1", meanings:["연극의","극장의"],
+  { word:"theatrical", exams:["수능"], pron:"시애트리컬", pos:"adj", level:"C1", meanings:["연극의","극장의"],
     syn:["of the stage","to do with plays","done for show"],
     ex:[{ s:"She has a {{}} background.", f:"theatrical", ko:"그녀는 연극 쪽 배경을 지녔다." }] },
 
@@ -529,23 +546,23 @@ window.VOCAB_T = [
 
   /* 승격 ㉝ — 사전 글자 유지. 참조 comprehensive(C)·intensive(I)·painstaking(P)
      세 곳의 화면은 바뀌지 않는다. rigorous(엄격한, 철저한) 와 맞물려 배제된다. */
-  { word:"thorough", pron:"서로", pos:"adj", level:"B2", meanings:["철저한","완전한"],
+  { word:"thorough", exams:["수능"], pron:"서로", pos:"adj", level:"B2", meanings:["철저한","완전한"],
     syn:["comprehensive","intensive","painstaking"],
     ex:[{ s:"They ran a {{}} check on the wiring.", f:"thorough", ko:"그들은 배선을 철저히 점검했다." }] },
 
   /* 승격 ㉞ — 사전 단일값 유지(참조 considerate). considerate(사려 깊은, 인정이
      있는) 와 맞물려 배제된다. 교재의 '배려심 있는, 친절한' 은 같은 자리라 버렸다. */
-  { word:"thoughtful", pron:"소트풀", pos:"adj", level:"B1", meanings:["사려 깊은"],
+  { word:"thoughtful", exams:["수능"], pron:"소트풀", pos:"adj", level:"B1", meanings:["사려 깊은"],
     syn:["considerate","mindful of others","given to reflection"],
     ex:[{ s:"That was a {{}} gift.", f:"thoughtful", ko:"그것은 사려 깊은 선물이었다." }] },
 
-  { word:"threat", pron:"쓰렛", pos:"n", level:"B1", meanings:["위협","협박"],
+  { word:"threat", exams:["수능"], pron:"쓰렛", pos:"n", level:"B1", meanings:["위협","협박"],
     syn:["sign of harm to come","warning of danger","menacing word"],
     ex:[{ s:"The letter was a clear {{}}.", f:"threat", ko:"그 편지는 분명한 협박이었다." }] },
 
   /* 승격 ㉟ — 사전 단일값 유지. 참조 jeopardize(J)·menace(M) 두 곳의 화면은
      바뀌지 않는다. endanger·intimidate 까지 넷과 '위협하다' 가 맞물려 배제된다. */
-  { word:"threaten", exams:["공무원"], pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
+  { word:"threaten", exams:["공무원","수능"], pron:"쓰레튼", pos:"v", level:"B1", meanings:["위협하다"],
     syn:["jeopardize","menace","put in danger"],
     ex:[{ s:"Rising seas {{}} the village.", f:"threaten", ko:"높아지는 바다가 그 마을을 위협한다." }] },
 
@@ -590,7 +607,7 @@ window.VOCAB_T = [
     ex:[{ s:"A {{}} filled the square.", f:"throng", ko:"인파가 광장을 메웠다." }] },
 
   /* 구·표현이라 예문은 두지 않는다. */
-  { word:"throughout", exams:["공무원"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
+  { word:"throughout", exams:["공무원","수능"], pron:"쓰루아웃", pos:"phr", level:"B1", meanings:["~동안 내내","처음부터 끝까지"],
     syn:["all the way through","from start to finish","for the whole time"] },
 
   /* abandon·discard·forsake·scrap 과 '버리다' 가, do away with·eliminate·
@@ -674,7 +691,7 @@ window.VOCAB_T = [
     syn:["cut wood for building","wood as material","sawn wood"],
     ex:[{ s:"The roof is made of {{}}.", f:"timber", ko:"그 지붕은 목재로 만들어졌다." }] },
 
-  { word:"timely", pron:"타임리", pos:"adj", level:"B2", meanings:["시기적절한","때맞춘"],
+  { word:"timely", exams:["수능"], pron:"타임리", pos:"adj", level:"B2", meanings:["시기적절한","때맞춘"],
     syn:["coming at the right moment","well timed","not too late"],
     ex:[{ s:"It was a {{}} warning.", f:"timely", ko:"그것은 시기적절한 경고였다." }] },
 
@@ -702,7 +719,7 @@ window.VOCAB_T = [
 
   /* pretty(꽤, 상당히) 와 '상당히' 가 맞물려 배제된다. 교재 세 갈래 → 둘.
      구·표현이라 예문은 두지 않는다. */
-  { word:"to a large extent", pron:"투 어 라지 익스텐트", pos:"phr", level:"B2", meanings:["상당히","크게"],
+  { word:"to a large extent", exams:["수능"], pron:"투 어 라지 익스텐트", pos:"phr", level:"B2", meanings:["상당히","크게"],
     syn:["in good part","for the most part","to a high degree"] },
 
   /* 승격 ㊽ — 사전 단일값 유지(참조 in the first place). */
@@ -820,7 +837,7 @@ window.VOCAB_T = [
   /* 승격 57 — 사전 첫 갈래를 세웠다(참조 chase down 유지). '경로' 는 위 trace 의
      '흔적' 과 가까워 버렸다. pursue(추구하다, 뒤쫓다) 와 '뒤쫓다' 가 맞물려
      배제된다. */
-  { word:"track", pron:"트랙", pos:"v", level:"B1", meanings:["추적하다","뒤쫓다"],
+  { word:"track", exams:["수능"], pron:"트랙", pos:"v", level:"B1", meanings:["추적하다","뒤쫓다"],
     syn:["chase down","pursue","follow the trail of"],
     ex:[{ s:"The dogs can {{}} a deer for miles.", f:"track", ko:"그 개들은 사슴을 몇 마일이나 추적할 수 있다." }] },
 
@@ -848,7 +865,7 @@ window.VOCAB_T = [
 
   /* 승격 60 — 사전 글자 유지. 참조 characteristic(C)·feature(F) 두 곳의 화면은
      바뀌지 않는다. characteristic(특성, 특유의) 과 '특성' 이 맞물려 배제된다. */
-  { word:"trait", pron:"트레이트", pos:"n", level:"B1", meanings:["특성","특질"],
+  { word:"trait", exams:["수능"], pron:"트레이트", pos:"n", level:"B1", meanings:["특성","특질"],
     syn:["characteristic","feature","mark of one's nature"],
     ex:[{ s:"Patience is her strongest {{}}.", f:"trait", ko:"인내는 그녀의 가장 두드러진 특성이다." }] },
 
@@ -877,7 +894,7 @@ window.VOCAB_T = [
     ex:[{ s:"The two firms {{}} in metals.", f:"transact", ko:"두 회사는 금속을 거래한다." }] },
 
   /* 위 trade(거래, 무역) 와 '거래' 가 맞물려 배제된다 — 일부러 글자를 맞췄다. */
-  { word:"transaction", pron:"트랜잭션", pos:"n", level:"B2", meanings:["거래","처리"],
+  { word:"transaction", exams:["수능"], pron:"트랜잭션", pos:"n", level:"B2", meanings:["거래","처리"],
     syn:["piece of business","deal carried out","exchange of money"],
     ex:[{ s:"Every {{}} is recorded in the ledger.", f:"transaction", ko:"모든 거래가 장부에 기록된다." }] },
 
@@ -969,7 +986,7 @@ window.VOCAB_T = [
   /* 승격 61 — 사전 글자 유지(참조 convert). 교재의 '변형시키다' 는
      deform(변형시키다, 기형으로 만들다 · D) 자리라 버렸다. convert·alter·switch
      가 모두 '바꾸다' 를 써서 맞물려 배제된다. */
-  { word:"transform", exams:["공무원"], pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
+  { word:"transform", exams:["공무원","수능"], pron:"트랜스폼", pos:"v", level:"B1", meanings:["변환하다","바꾸다"],
     syn:["convert","make over into","change the form of"],
     ex:[{ s:"Rain can {{}} the whole valley.", f:"transform", ko:"비는 골짜기 전체를 바꿔 놓을 수 있다." }] },
 
@@ -993,14 +1010,14 @@ window.VOCAB_T = [
     syn:["move from one state to another","passing over","change of stage"],
     ex:[{ s:"The {{}} to the new system took a year.", f:"transition", ko:"새 체계로의 이행은 일 년이 걸렸다." }] },
 
-  { word:"transmission", pron:"트랜스미션", pos:"n", level:"B2", meanings:["전송"],
+  { word:"transmission", exams:["수능"], pron:"트랜스미션", pos:"n", level:"B2", meanings:["전송"],
     syn:["sending out","relay of a signal","spread from one to another"],
     ex:[{ s:"The {{}} was cut off by the storm.", f:"transmission", ko:"그 전송은 폭풍으로 끊겼다." }] },
 
   /* 승격 63 — 사전 글자 유지. 참조 broadcast(B)·dispatch(D) 두 곳의 화면은
      바뀌지 않는다. convey·deliver·relay·impart 가 모두 '전달하다' 를 써서
      맞물려 배제된다. */
-  { word:"transmit", exams:["공무원"], pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
+  { word:"transmit", exams:["공무원","수능"], pron:"트랜스미트", pos:"v", level:"B2", meanings:["전달하다","전송하다"],
     syn:["broadcast","dispatch","send out over a distance"],
     ex:[{ s:"The station will {{}} the match live.", f:"transmit", ko:"그 방송국은 경기를 생중계로 전달할 것이다." }] },
 
@@ -1022,7 +1039,7 @@ window.VOCAB_T = [
 
   /* ★ '이동시키다' 를 '실어 옮기다' 로 고쳤다. 위 transfer 의 '옮기다' 를
      글자째 품어 자동 배제된다. 아래 transportation(명사) 과는 품사로 갈렸다. */
-  { word:"transport", pron:"트랜스포트", pos:"v", level:"B1", meanings:["수송하다","실어 옮기다"],
+  { word:"transport", exams:["수능"], pron:"트랜스포트", pos:"v", level:"B1", meanings:["수송하다","실어 옮기다"],
     syn:["carry goods across","haul from place to place","ship out"],
     ex:[{ s:"Lorries {{}} the grain to the port.", f:"transport", ko:"트럭들이 곡물을 항구로 수송한다." }] },
 
@@ -1035,7 +1052,7 @@ window.VOCAB_T = [
   /* 승격 65 — 사전 글자 유지. 참조 entangle(E) 한 곳의 화면은 바뀌지 않는다.
      imprison(투옥하다, 가두다) 과 '가두다' 가 맞물려 배제되고, confine 은
      레벨 차가 2여서 애초에 같은 문제에 오지 않는다. */
-  { word:"trap", pron:"트랩", pos:"v", level:"B1", meanings:["가두다","덫에 빠뜨리다"],
+  { word:"trap", exams:["수능"], pron:"트랩", pos:"v", level:"B1", meanings:["가두다","덫에 빠뜨리다"],
     syn:["entangle","catch in a snare","shut in with no way out"],
     ex:[{ s:"The flood may {{}} them in the cellar.", f:"trap", ko:"홍수가 그들을 지하실에 가둘 수 있다." }] },
 
@@ -1043,7 +1060,7 @@ window.VOCAB_T = [
      ★ rubbish(잡쓰레기 · B2/n) 는 뜻을 가를 수가 없어 유의어로 등록했다 —
      앱은 유의어 관계인 두 낱말을 서로의 오답으로 쓰지 않는다. '쓰레기' 는
      filth(오물, 쓰레기 · C1) 자리라 쓰지 않았다. */
-  { word:"trash", pron:"트래시", pos:"n", level:"B1", meanings:["폐기물"],
+  { word:"trash", exams:["수능"], pron:"트래시", pos:"n", level:"B1", meanings:["폐기물"],
     syn:["litter","rubbish","waste thrown away"],
     ex:[{ s:"The yard was full of {{}}.", f:"trash", ko:"그 마당은 폐기물로 가득했다." }] },
 
@@ -1138,7 +1155,7 @@ window.VOCAB_T = [
 
   /* 승격 71 — 사전 글자 유지. 참조 craze(C)·fad(F) 두 곳의 화면은 바뀌지
      않는다. 교재의 '경향' 은 inclination(경향, 성향) 자리라 버렸다. */
-  { word:"trend", exams:["공무원"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
+  { word:"trend", exams:["공무원","수능"], pron:"트렌드", pos:"n", level:"B1", meanings:["추세","유행"],
     syn:["craze","fad","general direction of change"],
     ex:[{ s:"There is a clear {{}} toward smaller homes.", f:"trend", ko:"더 작은 집을 향한 분명한 추세가 있다." }] },
 
@@ -1264,7 +1281,7 @@ window.VOCAB_T = [
     syn:["minor","of little weight","not worth troubling over"], ant:["considerable","momentous"],
     ex:[{ s:"Do not fuss over a {{}} slip.", f:"trivial", ko:"사소한 실수로 법석 떨지 마라." }] },
 
-  { word:"tropical", pron:"트라피컬", pos:"adj", level:"B1", meanings:["열대의","열대성의"],
+  { word:"tropical", exams:["수능"], pron:"트라피컬", pos:"adj", level:"B1", meanings:["열대의","열대성의"],
     syn:["of the hot zone","found near the equator","of steamy climates"],
     ex:[{ s:"The island has a {{}} climate.", f:"tropical", ko:"그 섬은 열대 기후를 지녔다." }] },
 
@@ -1287,7 +1304,7 @@ window.VOCAB_T = [
 
   /* '수업' 은 lesson(교훈, 수업 · B1/n) 자리라 쓰지 않았다. 첫 뜻이 '수업료'
      와 '교훈' 이어서 화면에서 확실히 갈린다. */
-  { word:"tuition", pron:"투이션", pos:"n", level:"B2", meanings:["수업료"],
+  { word:"tuition", exams:["수능"], pron:"투이션", pos:"n", level:"B2", meanings:["수업료"],
     syn:["fee for teaching","charge for a course","money paid to study"],
     ex:[{ s:"The {{}} went up again.", f:"tuition", ko:"그 수업료가 또 올랐다." }] },
 
@@ -1320,7 +1337,7 @@ window.VOCAB_T = [
     syn:["hand back","give up what was lent","return to the owner"] },
 
   /* 승격 85 — 사전 단일값 유지(참조 end up). */
-  { word:"turn out", exams:["공무원"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
+  { word:"turn out", exams:["공무원","수능"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
     syn:["end up","prove to be so","come out in the end"] },
 
   /* 승격 86 — 사전 단일값 유지(참조 flip). */
@@ -1352,7 +1369,7 @@ window.VOCAB_T = [
 
   /* 승격 89 — ★ 교재의 '전형적인' 을 앞세우고 사전값 '으레 그런' 을 둘째
      갈래로 살렸다. 참조 odd(O) 의 반의어 화면이 한 줄 늘어난다. */
-  { word:"typical", exams:["공무원"], pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
+  { word:"typical", exams:["공무원","수능"], pron:"티피컬", pos:"adj", level:"B1", meanings:["전형적인","으레 그런"],
     syn:["standing for the whole kind","just as one would expect","true to type"], ant:["odd"],
     ex:[{ s:"That is a {{}} winter here.", f:"typical", ko:"그것이 이곳의 전형적인 겨울이다." }] },
 
@@ -1416,6 +1433,7 @@ Object.assign(window.GLOSS, {
   "by a shrewd move": "약삭빠른 수로",
   "calm and quiet": "차분하고 조용한",
   "candor": "솔직함",
+  "carefree": "근심 걱정 없는",
   "carriage of goods": "물건을 실어 나름",
   "carriage of people": "사람을 실어 나름",
   "carry goods across": "물건을 실어 건네다",
@@ -1480,6 +1498,8 @@ Object.assign(window.GLOSS, {
   "exactly as written": "적힌 대로 고스란히",
   "exchange of money": "돈이 오가는 일",
   "excite greatly": "크게 들뜨게 하다",
+  "exciting": "흥미진진한, 신나는",
+  "exhausting": "진을 빼는",
   "exhaustively": "철저하게, 남김없이",
   "exhilarated": "들뜬, 아주 신나는",
   "extra lessons given": "따로 더 해 주는 가르침",
@@ -1653,7 +1673,6 @@ Object.assign(window.GLOSS, {
   "passage from place to place": "한 곳에서 다른 곳으로 지나감",
   "passing all bounds": "모든 한계를 지나침",
   "passing over": "건너 넘어감",
-  "pattern": "본보기, 패턴",
   "people of one stock": "한 핏줄의 사람들",
   "period of office": "직무를 보는 기간",
   "picked out as a mark": "표적으로 골라진",
@@ -1817,6 +1836,7 @@ Object.assign(window.GLOSS, {
   "turn the other side up": "반대쪽을 위로 두다",
   "turncoat": "변절자",
   "twice as much": "두 배만큼의",
+  "unusually": "유별나게, 평소와 달리",
   "up with the times": "시류에 뒤지지 않는",
   "uproar": "대소동, 격렬한 항의",
   "urge one should resist": "물리쳐야 할 충동",
@@ -1825,6 +1845,7 @@ Object.assign(window.GLOSS, {
   "victory at last": "끝내 얻은 이김",
   "warning of danger": "위험을 알리는 말",
   "waste thrown away": "내버린 찌꺼기",
+  "wearisome": "지루한, 지치게 하는",
   "wed at last": "드디어 짝을 이루다",
   "weigh in the decision": "결정에 견주어 넣다",
   "weigh on the mind of": "~의 마음을 무겁게 하다",
