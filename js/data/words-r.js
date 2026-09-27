@@ -1196,8 +1196,8 @@ window.VOCAB_R = [
   /* ── 챕터 11 ────────────────────────────────────── */
   /* rest-·retr- 어근이 몰렸다. 억제 세 갈래가 여기서 끝난다 —
      refrain 삼가다(챕터 4) / repress 억압하다(챕터 8) / restrain 억제하다, 제지하다.
-     ★ retarded 는 영어에서 사람을 낮춰 부르는 말로 굳어진 낱말이다. 사전에 있던
-     중립적인 값 '지연된' 을 그대로 쓰고 예문도 시간이 늦어지는 뜻으로 세웠다.
+     ★ retarded 는 사람을 낮춰 부르는 말로 굳어진 낱말이라 뺐다. 뜻을 '지연된' 으로
+     두어도 다른 문제의 오답 보기로 그대로 노출되기 때문이다.
      résumé 는 악센트가 든 표제어다 — 조회는 소문자로 맞춰지므로 문제없다. */
 
   /* 승격 110 — 사전 단일값 유지(contented 반의어, C). */
@@ -1264,13 +1264,6 @@ window.VOCAB_R = [
   { word:"retain", exams:["공무원"], pron:"리테인", pos:"v", level:"B2", meanings:["그대로 유지하다"],
     syn:["keep as it is","keep in one's hands","not let go of"], ant:["eliminate"],
     ex:[{ s:"The soil can {{}} water.", f:"retain", ko:"그 흙은 물을 그대로 유지할 수 있다." }] },
-
-  /* ★ 사전에 있던 중립적인 값 '지연된' 을 그대로 썼다. 원본의 '지능이 낮은' 은
-     사람을 낮춰 부르는 말로 굳어진 쪽이어서 쓰지 않고, 예문도 시간이 늦어지는
-     뜻으로 세웠다. */
-  { word:"retarded", pron:"리타디드", pos:"adj", level:"C1", meanings:["지연된"],
-    syn:["slowed down","held back in time","late in coming on"],
-    ex:[{ s:"Growth was {{}} by the cold.", f:"retarded", ko:"자람이 추위로 지연되었다." }] },
 
   { word:"retention", pron:"리텐션", pos:"n", level:"C1", meanings:["보유","유지"],
     syn:["keeping of something","holding power","act of not letting go"],
@@ -1868,7 +1861,6 @@ Object.assign(window.GLOSS, {
   "have command of": "~을 거느리다",
   "have one's address at": "~에 주소를 두다",
   "having a link": "이어진 데가 있는",
-  "held back in time": "때가 늦춰진",
   "held in esteem": "높이 받들어지는 처지인",
   "help stand on one's own": "제 발로 서게 돕다",
   "high regard": "높이 받듦",
@@ -1917,7 +1909,6 @@ Object.assign(window.GLOSS, {
   "know again on sight": "보고 다시 알아보다",
   "large hidden supply": "크게 감춰 둔 양",
   "large stock farm": "큰 가축 농장",
-  "late in coming on": "더디게 나타나는",
   "laugh at cruelly": "모질게 비웃다",
   "leaning on another": "남에게 기댐",
   "learning by heart only": "외우기만 하는 배움",
@@ -2194,7 +2185,6 @@ Object.assign(window.GLOSS, {
   "slip back": "뒤로 미끄러지다",
   "slip for what one paid": "낸 값을 적은 쪽지",
   "slow to open up": "좀처럼 마음을 열지 않는",
-  "slowed down": "더디게 된",
   "slump in trade": "거래가 주저앉음",
   "snacks served": "내놓는 간식",
   "soften one's stand": "태도를 누그러뜨리다",
