@@ -1082,10 +1082,6 @@ window.VOCAB_M = [
     syn:["friar","cleric","hermit"],
     ex:[{ s:"A young {{}} showed us round the temple.", f:"monk", ko:"젊은 수도승이 우리에게 절을 둘러보게 해 주었다." }] },
 
-  { word:"monogamy", pron:"머나거미", pos:"n", level:"C2", meanings:["일부일처"],
-    syn:["single marriage","one-partner union","pair bonding"],
-    ex:[{ s:"Some bird species practise strict {{}}.", f:"monogamy", ko:"어떤 새 종은 엄격한 일부일처를 지킨다." }] },
-
   /* 원본 '1인 극' 은 띄어쓰기를 붙여 '1인극' 으로 했다. */
   { word:"monologue", pron:"마널로그", pos:"n", level:"C1", meanings:["독백","1인극"],
     syn:["soliloquy","solo speech","one-man act"], ant:["dialogue"],

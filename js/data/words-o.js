@@ -710,11 +710,6 @@ window.VOCAB_O = [
     syn:["conventional","accepted as standard","going by the book"], ant:["unorthodox"],
     ex:[{ s:"He prefers {{}} treatment to new remedies.", f:"orthodox", ko:"그는 새 치료법보다 정통의 치료를 좋아한다." }] },
 
-  /* osteoporosis 는 전문어이고 22자다. 유의어 셋을 세울 수 있어 비우지 않았다. */
-  { word:"osteoporosis", pron:"아스티오퍼로시스", pos:"n", level:"C2", meanings:["골다공증"],
-    syn:["bone-thinning disease","brittle-bone condition","loss of bone density"],
-    ex:[{ s:"Calcium helps guard against {{}}.", f:"osteoporosis", ko:"칼슘은 골다공증을 막는 데 도움이 된다." }] },
-
   /* ── 챕터 6 ─────────────────────────────────────── */
   /* 'out of ~' 구가 일곱 개 붙는다. 그중 out of date·out of fashion 은 원본이
      둘 다 '시대에 뒤진, 구식인' 으로 똑같았고, 같은 챕터의 outdated 까지 합쳐

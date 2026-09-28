@@ -153,12 +153,6 @@ window.VOCAB_Q = [
     syn:["cite","repeat someone's words","give as a source"],
     ex:[{ s:"He likes to {{}} old proverbs.", f:"quote", ko:"그는 옛 속담을 인용하기를 좋아한다." }] },
 
-  /* ★ 원본은 '지수, 몫' 으로 순서가 거꾸로였다 — 본뜻은 나눗셈의 '몫' 이고
-     '지수' 는 intelligence quotient 같은 합성어 쓰임이다. 순서를 바로잡았다.
-     '몫' 은 portion(P) 의 둘째 뜻과 글자가 같아 서로 오답에서 빠진다. */
-  { word:"quotient", pron:"쿼션트", pos:"n", level:"C2", meanings:["몫","지수"],
-    syn:["answer in division","number after dividing","measured index"],
-    ex:[{ s:"Divide and write the {{}}.", f:"quotient", ko:"나누어서 몫을 적어라." }] }
 ];
 
 /* 유의어 뜻 사전 병합 — 발음은 js/data/pron.js 에 넣는다 */

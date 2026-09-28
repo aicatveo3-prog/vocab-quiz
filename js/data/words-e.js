@@ -2091,23 +2091,6 @@ window.VOCAB_E = [
     syn:["lavish","wasteful","over the top"], ant:["thrifty"],
     ex:[{ s:"The wedding was more {{}} than anyone expected.", f:"extravagant", ko:"그 결혼식은 누가 예상한 것보다 사치스러웠다." }] },
 
-  /* 뜻을 '외적인, 외부에서 오는' 으로 잡았다 — 표제어 external(12차, B2 "외부의,
-     외면의")과 '외부의' 가 글자까지 겹치지 않게 하려는 것이다. 레벨도 C2 로 둬서
-     B2 와 두 칸 벌렸다. external 을 유의어로 쓰는 것은 그대로 괜찮다. */
-  { word:"extrinsic", pron:"익스트린식", pos:"adj", level:"C2", meanings:["외적인","외부에서 오는"],
-    syn:["external","coming from outside","non-inherent"], ant:["intrinsic"],
-    ex:[{ s:"Pay is an {{}} reward; curiosity is not.", f:"extrinsic", ko:"보수는 외적인 보상이고 호기심은 그렇지 않다." }] },
-
-  /* 원본의 '외향적인'(형용사)은 extroverted 와 혼동한 것이다 — 헤더에 적어 둔 대로
-     명사 '외향적인 사람' 으로 바로잡았다. */
-  { word:"extrovert", pron:"엑스트러버트", pos:"n", level:"C1", meanings:["외향적인 사람"],
-    syn:["outgoing person","sociable type","people person"], ant:["introvert"],
-    ex:[{ s:"Every team needs one {{}} to break the silence.", f:"extrovert", ko:"모든 팀에는 침묵을 깨 줄 외향적인 사람 하나가 필요하다." }] },
-
-  /* E 세트의 마지막 낱말. 발음은 기존 표제어 black eye("블랙 아이")에 맞췄다. */
-  { word:"eyesore", pron:"아이소어", pos:"n", level:"C1", meanings:["눈에 거슬리는 것"],
-    syn:["ugly sight","blot on the landscape","monstrosity"],
-    ex:[{ s:"The half-built tower is an {{}} on the skyline.", f:"eyesore", ko:"그 반쯤 지은 탑은 스카이라인에서 눈에 거슬리는 것이다." }] }
 ];
 
 /* ── E 세트가 쓰는 유의어·반의어의 뜻 ─────────────

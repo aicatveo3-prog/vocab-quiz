@@ -600,12 +600,6 @@ window.VOCAB_V = [
     syn:["throw up","bring up from the stomach","be sick"],
     ex:[{ s:"The child began to {{}}.", f:"vomit", ko:"그 아이가 구토하기 시작했다." }] },
 
-  /* 승격 ㊱ — 사전 단일값 유지(참조 insatiable). 교재의 '만족할 줄 모르는' 은
-     insatiable(만족을 모르는) 과 거의 같은 말이라 사전값 쪽을 세웠다. */
-  { word:"voracious", pron:"버레이셔스", pos:"adj", level:"C2", meanings:["식욕이 왕성한"],
-    syn:["insatiable","eating a great deal","never filled up"],
-    ex:[{ s:"He is a {{}} reader as well.", f:"voracious", ko:"그는 책에도 왕성한 식욕을 보인다." }] },
-
   /* 교재의 동사 갈래는 버렸다. oath(맹세, 서약) 와 맞물려 배제된다. */
   { word:"vow", pron:"바우", pos:"n", level:"B2", meanings:["맹세"],
     syn:["oath","solemn promise","word given in earnest"],

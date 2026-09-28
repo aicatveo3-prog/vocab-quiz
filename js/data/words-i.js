@@ -1656,13 +1656,6 @@ window.VOCAB_I = [
     syn:["reflective","inward-looking","contemplative"],
     ex:[{ s:"His later poems grew steadily more {{}}.", f:"introspective", ko:"그의 후기 시들은 점점 더 자아 성찰적으로 변했다." }] },
 
-  /* 승격 ① — GLOSS '내향적인 사람' 을 글자까지 지켰다. extrovert(ant) 가 참조하므로
-     원본의 '내성적인 사람' 대신 사전 쪽 표현을 남겼다.
-     바로 뒤 introverted 가 '내성적인' 을 쓰므로 뜻도 자연스럽게 갈린다. */
-  { word:"introvert", pron:"인트러버트", pos:"n", level:"B2", meanings:["내향적인 사람"],
-    syn:["loner","reserved person","homebody"], ant:["extrovert"],
-    ex:[{ s:"As an {{}}, she found large parties draining.", f:"introvert", ko:"내향적인 사람으로서 그녀는 큰 파티가 기운을 빼앗는다고 느꼈다." }] },
-
   /* introvert 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
   { word:"introverted", pron:"인트러버팃", pos:"adj", level:"B2", meanings:["내성적인","내향적인"],
     syn:["shy","withdrawn","retiring"], ant:["outgoing"],

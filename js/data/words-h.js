@@ -92,11 +92,6 @@ window.VOCAB_H = [
     syn:["disabled","impaired","incapacitated"],
     ex:[{ s:"The new ramp makes the building accessible to {{}} visitors.", f:"handicapped", ko:"새 경사로 덕에 장애가 있는 방문객도 건물에 접근할 수 있다." }] },
 
-  /* 승격 ① — GLOSS '수공예품' 과 같은 갈래다. 참조하는 기존 문제는 없다. */
-  { word:"handicraft", pron:"핸디크래프트", pos:"n", level:"B2", meanings:["수공예품","손재주"],
-    syn:["craft","handiwork","artisanship"],
-    ex:[{ s:"Local artisans sell traditional {{}} at the weekend market.", f:"handicraft", ko:"지역 장인들이 주말 시장에서 전통 수공예품을 판다." }] },
-
   { word:"handwritten", pron:"핸드리튼", pos:"adj", level:"B2", meanings:["손으로 쓴","친필의"],
     syn:["manuscript","hand-penned","longhand"],
     ex:[{ s:"She treasured the {{}} letter from her grandmother.", f:"handwritten", ko:"그녀는 할머니가 쓴 친필 편지를 소중히 간직했다." }] },
@@ -302,10 +297,6 @@ window.VOCAB_H = [
   { word:"hence", exams:["수능"], pron:"헨스", pos:"adv", level:"B2", meanings:["그러므로","따라서"],
     syn:["therefore","consequently","thus"],
     ex:[{ s:"Sales fell sharply; {{}} the company cut costs.", f:"hence", ko:"매출이 급감했다. 그러므로 회사는 비용을 줄였다." }] },
-
-  { word:"herbivore", pron:"허비보어", pos:"n", level:"B2", meanings:["초식동물"],
-    syn:["plant-eater","grazer","ruminant"],
-    ex:[{ s:"A {{}} needs vast amounts of vegetation each day.", f:"herbivore", ko:"초식동물은 매일 막대한 양의 식물을 필요로 한다." }] },
 
   /* 승격 ② — GLOSS '내세, 이후' 이다. afterlife·eternity 가 쓰는 뜻은 '내세' 이다.
      원본의 '이후내용에서' 는 한국어 표현이 아니어서 삭제했다(0차 기록).

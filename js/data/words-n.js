@@ -449,10 +449,6 @@ window.VOCAB_N = [
   { word:"now and then", exams:["공무원"], pron:"나우 앤드 덴", pos:"phr", level:"B1", meanings:["가끔","이따금"],
     syn:["once in a while","from time to time","at intervals"] },
 
-  { word:"noxious", pron:"낙셔스", pos:"adj", level:"C1", meanings:["유독한","유해한"],
-    syn:["poisonous","harmful to health","injurious"], ant:["wholesome"],
-    ex:[{ s:"The factory released {{}} fumes.", f:"noxious", ko:"그 공장은 유독한 연기를 내보냈다." }] },
-
   /* 승격 33 — 사전 표현 '핵의, 원자력의' 를 글자까지 지켰다(atomic, A).
      원본의 '원자핵의' 대신 사전 쪽을 남겼다. */
   { word:"nuclear", pron:"누클리어", pos:"adj", level:"B2", meanings:["핵의","원자력의"],

@@ -734,15 +734,6 @@ window.VOCAB_U = [
     syn:["show the way in","lead to a seat","conduct in politely"],
     ex:[{ s:"A boy will {{}} the guests in.", f:"usher", ko:"한 소년이 손님들을 안내할 것이다." }] },
 
-  /* 승격 ㉙ — ★ 두 갈래의 앞뒤를 바꿨다. '기구' 를 앞에 두면 appliance
-     ((가정용) 기구 · B2/n) 와 눈으로 갈리지 않는데, 두 글자라 자동 배제도 안
-     된다. '기구' 는 둘째 갈래로 남아 device(장치, 기구)·apparatus(장치, 기구)
-     와는 계속 맞물린다. '도구' 는 instrument(악기, 도구) 자리다.
-     ★ 참조 instrument(I) 의 화면에서 두 갈래의 앞뒤가 바뀐다. */
-  { word:"utensil", pron:"유텐설", pos:"n", level:"B2", meanings:["용구","기구"],
-    syn:["instrument","tool for the kitchen","thing used in work"],
-    ex:[{ s:"Each {{}} hangs on its own hook.", f:"utensil", ko:"각 용구가 제 걸이에 걸려 있다." }] },
-
   /* pragmatic(현실적인, 실리를 따지는 · C1/adj) 와 '실리를 따지는' 이 맞물려
      배제된다. practical·functional 은 레벨 차가 3·2다. */
   { word:"utilitarian", pron:"유틸리테리언", pos:"adj", level:"C2", meanings:["실용적인","실리를 따지는"],

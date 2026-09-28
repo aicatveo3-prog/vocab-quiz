@@ -675,10 +675,6 @@ window.VOCAB_B = [
     syn:["annoying","irritating","troublesome"], ant:["pleasant"],
     ex:[{ s:"The constant noise from the street was extremely {{}}.", f:"bothersome", ko:"거리에서 나는 끊임없는 소음은 대단히 성가셨다." }] },
 
-  { word:"bough", pron:"바우", pos:"n", level:"C1", meanings:["큰 가지"],
-    syn:["limb","branch","offshoot"],
-    ex:[{ s:"A heavy {{}} snapped under the weight of the snow.", f:"bough", ko:"굵은 가지 하나가 눈의 무게에 부러졌다." }] },
-
   { word:"bounce", pron:"바운스", pos:"v", level:"B1", meanings:["튀다","깡충깡충 뛰다"],
     syn:["rebound","spring","hop"],
     ex:[{ s:"The ball began to {{}} down the stone stairs.", f:"bounce", ko:"공이 돌계단을 튀며 내려가기 시작했다." }] },

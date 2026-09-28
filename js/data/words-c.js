@@ -260,9 +260,6 @@ window.VOCAB_C = [
   { word:"carry out", exams:["공무원","수능"], pron:"캐리 아웃", pos:"phr", level:"B1", meanings:["수행하다","실행하다"],
     syn:["perform","execute","conduct"], ant:["abandon"] },
 
-  { word:"cartographic", pron:"카토그래픽", pos:"adj", level:"C2", meanings:["지도 제작의"],
-    ex:[{ s:"The library holds a rare {{}} collection.", f:"cartographic", ko:"그 도서관은 희귀한 지도 제작 자료를 소장하고 있다." }] },
-
   { word:"cartooning", pron:"카투닝", pos:"n", level:"C1", meanings:["만화 제작"],
     syn:["illustration","sketching","drawing"],
     ex:[{ s:"He taught {{}} at a small art school.", f:"cartooning", ko:"그는 작은 미술 학교에서 만화 제작을 가르쳤다." }] },
@@ -497,10 +494,6 @@ window.VOCAB_C = [
   { word:"charity", exams:["공무원","수능"], pron:"채러티", pos:"n", level:"B1", meanings:["자선","자선 단체"],
     syn:["philanthropy","generosity","aid"], ant:["greed"],
     ex:[{ s:"All ticket money goes to a local {{}}.", f:"charity", ko:"모든 입장료는 지역 자선 단체로 간다." }] },
-
-  { word:"charlatan", pron:"샬러턴", pos:"n", level:"C2", meanings:["사기꾼","돌팔이"],
-    syn:["fraud","impostor","quack"], ant:["expert"],
-    ex:[{ s:"The so-called doctor turned out to be a {{}}.", f:"charlatan", ko:"이른바 그 의사는 돌팔이로 드러났다." }] },
 
   { word:"charm", pron:"참", pos:"n", level:"B1", meanings:["매력"],
     syn:["appeal","allure","attraction"], ant:["repulsion"],
@@ -749,10 +742,6 @@ window.VOCAB_C = [
   { word:"cod", pron:"카드", pos:"n", level:"B2", meanings:["대구"],
     syn:["fish","haddock","pollock"],
     ex:[{ s:"Fishermen once landed {{}} here by the ton.", f:"cod", ko:"어부들은 한때 여기서 대구를 톤 단위로 잡아 올렸다." }] },
-
-  { word:"coed", pron:"코에드", pos:"adj", level:"C1", meanings:["남녀공학의","남녀공용의"],
-    syn:["mixed","joint","integrated"], ant:["single-sex"],
-    ex:[{ s:"It became a {{}} school in the seventies.", f:"coed", ko:"그곳은 70년대에 남녀공학 학교가 되었다." }] },
 
   { word:"coeducation", pron:"코에듀케이션", pos:"n", level:"C1", meanings:["남녀 공학"],
     syn:["integration","mixing","inclusion"],

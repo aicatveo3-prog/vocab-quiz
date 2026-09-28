@@ -884,10 +884,6 @@ window.VOCAB = [
     syn:["friendly","genial","affable"], ant:["unfriendly"],
     ex:[{ s:"Our new neighbor is remarkably {{}}.", f:"amiable", ko:"새 이웃은 놀랄 만큼 상냥하다." }] },
 
-  { word:"amicable", pron:"애미커블", pos:"adj", level:"C1", meanings:["우호적인","원만한"],
-    syn:["friendly","cordial","amiable"], ant:["hostile"],
-    ex:[{ s:"The dispute ended in an {{}} settlement.", f:"amicable", ko:"그 분쟁은 원만한 합의로 끝났다." }] },
-
   { word:"amnesia", pron:"앰니지아", pos:"n", level:"C1", meanings:["기억 상실증","건망증"],
     syn:["memory loss","forgetfulness","blackout"],
     ex:[{ s:"The patient suffered temporary {{}} after the fall.", f:"amnesia", ko:"그 환자는 넘어진 후 일시적인 기억 상실을 겪었다." }] },
@@ -1618,10 +1614,6 @@ window.VOCAB = [
   { word:"aura", pron:"오라", pos:"n", level:"C1", meanings:["기운","분위기"],
     syn:["atmosphere","air","ambience"],
     ex:[{ s:"The ruins have an {{}} of mystery.", f:"aura", ko:"그 유적에는 신비로운 기운이 감돈다." }] },
-
-  { word:"aural", pron:"오럴", pos:"adj", level:"C2", meanings:["청각의","귀의"],
-    syn:["auditory","hearing","acoustic"], ant:["visual"],
-    ex:[{ s:"The exam includes an {{}} comprehension task.", f:"aural", ko:"그 시험에는 청취 이해 과제가 포함된다." }] },
 
   { word:"authentic", exams:["공무원"], pron:"어센틱", pos:"adj", level:"B2", meanings:["진짜의","믿을 만한"],
     syn:["genuine","real","bona fide"], ant:["fake"],

@@ -1018,10 +1018,6 @@ window.VOCAB_R = [
      사전값은 '비축; 보호구역' 이었는데 참조 셋 가운데 둘(book·make a reservation)
      이 '예약하다' 를 쓰고 원본도 동사여서다. */
 
-  { word:"reproachful", pron:"리프로치풀", pos:"adj", level:"C2", meanings:["꾸짖는","나무라는"],
-    syn:["full of blame","showing displeasure","casting fault on one"],
-    ex:[{ s:"She gave him a {{}} look.", f:"reproachful", ko:"그녀는 그에게 꾸짖는 눈길을 보냈다." }] },
-
   /* 승격 85 — 사전의 쌍반점만 쉼표로 갈랐다(duplicate, D). 원본 '재생산하다;
      복사하다; 반복하다' 세 갈래는 replicate·repeatedly 와 부딪혀 사전값을 썼다. */
   { word:"reproduce", exams:["수능"], pron:"리프러두스", pos:"v", level:"B2", meanings:["재현하다","번식하다"],

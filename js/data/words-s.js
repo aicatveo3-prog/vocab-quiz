@@ -2292,11 +2292,6 @@ window.VOCAB_S = [
     syn:["arbitrary","based on one's own view","coloured by feeling"], ant:["objective"],
     ex:[{ s:"Taste in art is {{}}.", f:"subjective", ko:"예술 취향은 주관적이다." }] },
 
-  /* 위 subconscious(명사) 와 품사로 갈린다. */
-  { word:"subliminal", pron:"섭리미널", pos:"adj", level:"C2", meanings:["잠재의식의"],
-    syn:["below the level of thought","working on the unaware mind","under the surface of the mind"],
-    ex:[{ s:"The ad used a {{}} message.", f:"subliminal", ko:"그 광고는 잠재의식의 메시지를 썼다." }] },
-
   /* 원본이 [adj+n] 이었다. 명사로 세웠다. */
   { word:"submarine", pron:"섭머린", pos:"n", level:"B2", meanings:["잠수함"],
     syn:["ship that goes under water","underwater vessel","boat that dives"],
