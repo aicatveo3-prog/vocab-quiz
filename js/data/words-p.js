@@ -948,11 +948,6 @@ window.VOCAB_P = [
     syn:["comprehensible","unadorned","easy to grasp"], ant:["ornate"],
     ex:[{ s:"She wore a {{}} grey coat.", f:"plain", ko:"그녀는 평범한 회색 외투를 입었다." }] },
 
-  /* 원본은 '지구적 규모의, 지구 전체에 미치는(= worldwide)' 였다.
-     "=" 표기를 걷고 한 갈래로 정리했다. */
-  { word:"planetwide", pron:"플래닛와이드", pos:"adj", level:"C2", meanings:["지구적 규모의"],
-    syn:["across the whole planet","global in reach","earth-wide"],
-    ex:[{ s:"The study found a {{}} pattern.", f:"planetwide", ko:"그 연구는 지구적 규모의 양상을 찾아냈다." }] },
 
   /* 승격 64 — 사전이 '식물; 심다' 로 명사와 동사가 섞여 있었다(발음이 없었다).
      참조가 없어 사전의 첫 갈래 '식물' 을 지키고 원본의 '공장' 을 붙였다. */

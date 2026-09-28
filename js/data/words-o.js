@@ -1004,11 +1004,6 @@ window.VOCAB_O = [
     syn:["exaggerate","make more of than is true","blow up in the telling"], ant:["understate"],
     ex:[{ s:"Reports may {{}} the size of the crowd.", f:"overstate", ko:"보도는 군중의 규모를 과장해 말할 수 있다." }] },
 
-  /* overstructure 는 사전에도 거의 없는 드문 낱말이다. 유의어 셋을 세울 수 있어
-     비우지 않았다. */
-  { word:"overstructure", pron:"오버스트럭처", pos:"v", level:"C2", meanings:["지나치게 구조화하다"],
-    syn:["impose too much structure on","over-organize","hem in with rules"],
-    ex:[{ s:"Teachers should not {{}} every lesson.", f:"overstructure", ko:"교사가 수업마다 지나치게 구조화해서는 안 된다." }] },
 
   /* 승격 79 — 사전 표현 '추월하다, 따라잡다' 를 글자까지 지켰다
      (befall, B · catch up with, C). 원본의 '~을 따라잡다, (다른 차를) 추월하다'
