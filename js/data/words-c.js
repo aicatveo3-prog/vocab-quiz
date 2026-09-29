@@ -724,10 +724,6 @@ window.VOCAB_C = [
     syn:["fish","haddock","pollock"],
     ex:[{ s:"Fishermen once landed {{}} here by the ton.", f:"cod", ko:"어부들은 한때 여기서 대구를 톤 단위로 잡아 올렸다." }] },
 
-  { word:"coeducation", pron:"코에듀케이션", pos:"n", level:"C1", meanings:["남녀 공학"],
-    syn:["integration","mixing","inclusion"],
-    ex:[{ s:"The college debated {{}} for a decade.", f:"coeducation", ko:"그 대학은 10년간 남녀 공학을 두고 논쟁했다." }] },
-
   { word:"coexist", pron:"코이그지스트", pos:"v", level:"C1", meanings:["공존하다"],
     syn:["cohabit","accompany","survive"], ant:["clash"],
     ex:[{ s:"The two species {{}} in the same shallow lake.", f:"coexist", ko:"그 두 종은 같은 얕은 호수에서 공존한다." }] },
@@ -1412,10 +1408,6 @@ window.VOCAB_C = [
     syn:["restrict","hamper","inhibit"], ant:["liberate"],
     ex:[{ s:"A tight budget will {{}} the whole design.", f:"constrain", ko:"빡빡한 예산이 설계 전체를 제약할 것이다." }] },
 
-  { word:"constrict", pron:"컨스트릭트", pos:"v", level:"C2", meanings:["수축시키다","조이다"],
-    syn:["tighten","narrow down","squeeze"], ant:["dilate"],
-    ex:[{ s:"Cold air can {{}} the airways.", f:"constrict", ko:"찬 공기는 기도를 수축시킬 수 있다." }] },
-
   { word:"construct", exams:["공무원","수능"], pron:"컨스트럭트", pos:"v", level:"B1", meanings:["건설하다","만들다"],
     syn:["build","erect","assemble"], ant:["demolish"],
     ex:[{ s:"Engineers plan to {{}} a second bridge.", f:"construct", ko:"공학자들은 두 번째 다리를 건설할 계획이다." }] },
@@ -1509,18 +1501,10 @@ window.VOCAB_C = [
     syn:["difference","distinction","disparity"], ant:["similarity"],
     ex:[{ s:"The {{}} between the twins is striking.", f:"contrast", ko:"그 쌍둥이 사이의 차이는 놀랍다." }] },
 
-  { word:"contravene", pron:"칸트러빈", pos:"v", level:"C2", meanings:["위반하다","거스르다"],
-    syn:["breach","infringe","defy"], ant:["obey"],
-    ex:[{ s:"The new fence may {{}} local rules.", f:"contravene", ko:"새 울타리는 지역 규정을 위반할 수 있다." }] },
-
   { word:"contribute", exams:["공무원","수능"], pron:"컨트리뷰트", pos:"v", level:"B1", meanings:["기여하다","기부하다"],
     syn:["donate","supply","add"], ant:["withhold"],
     ex:[{ s:"Everyone was asked to {{}} one story.", f:"contribute", ko:"모두가 이야기 하나를 내놓으라는 요청을 받았다." }],
     gov:{ prep:["to","towards"], pat:"contribute {{}} the relief fund", usage:"contribute to ~ : ~에 기여하다·기부하다" } },
-
-  { word:"contrive", pron:"컨트라이브", pos:"v", level:"C2", meanings:["꾀하다","고안하다"],
-    syn:["devise","engineer","work out a ruse"],
-    ex:[{ s:"They managed to {{}} an escape by night.", f:"contrive", ko:"그들은 밤에 탈출을 꾀하는 데 성공했다." }] },
 
   { word:"controversial", pron:"칸트러버셜", pos:"adj", level:"B2", meanings:["논쟁의 여지가 있는","말이 많은"],
     syn:["disputed","debatable","divisive"], ant:["undisputed"],
@@ -1703,10 +1687,6 @@ window.VOCAB_C = [
     syn:["offset","compensate","equalize"],
     ex:[{ s:"Fuel savings {{}} the higher purchase price.", f:"counterbalance", ko:"연료 절감이 더 높은 구매 가격을 상쇄한다." }] },
 
-  { word:"counterexample", pron:"카운터이그잼플", pos:"n", level:"C2", meanings:["반증","반례"],
-    syn:["exception","refutation","contradiction"],
-    ex:[{ s:"A single {{}} is enough to break the rule.", f:"counterexample", ko:"반례 하나면 그 규칙을 깨기에 충분하다." }] },
-
   { word:"counterfeit", pron:"카운터핏", pos:"adj", level:"C1", meanings:["가짜의","위조의"],
     syn:["fake","forged","bogus"], ant:["genuine"],
     ex:[{ s:"The notes turned out to be {{}}.", f:"counterfeit", ko:"그 지폐들은 위조된 것으로 드러났다." }] },
@@ -1865,10 +1845,6 @@ window.VOCAB_C = [
   { word:"crooked", pron:"크루키드", pos:"adj", level:"B2", meanings:["구불구불한","곧지 않은"],
     syn:["bent","winding","twisted"], ant:["straight"],
     ex:[{ s:"A {{}} path wound up the hillside.", f:"crooked", ko:"구불구불한 길이 언덕을 따라 올라갔다." }] },
-
-  { word:"crossbreed", pron:"크로스브리드", pos:"v", level:"C2", meanings:["교배하다","잡종을 만들다"],
-    syn:["hybridize","interbreed","mix"],
-    ex:[{ s:"Farmers began to {{}} the two varieties.", f:"crossbreed", ko:"농부들은 두 품종을 교배하기 시작했다." }] },
 
   { word:"cross-cultural", exams:["수능"], pron:"크로스 컬처럴", pos:"adj", level:"C1", meanings:["문화간의"],
     syn:["intercultural","multicultural","comparative"],

@@ -469,12 +469,6 @@ window.VOCAB_O = [
     syn:["continuous","still under way","unfinished"], ant:["completed"],
     ex:[{ s:"Repairs to the bridge are {{}}.", f:"ongoing", ko:"그 다리 보수는 진행 중이다." }] },
 
-  /* 승격 37 — 사전 표현 '구경꾼, 방관자' 를 글자까지 지켰다(bystander, B).
-     원본은 순서가 '방관자, 구경꾼' 이었지만 사전 쪽을 남겼다. */
-  { word:"onlooker", pron:"온루커", pos:"n", level:"B2", meanings:["구경꾼","방관자"],
-    syn:["bystander","watcher","person looking on"],
-    ex:[{ s:"An {{}} called the fire brigade.", f:"onlooker", ko:"한 구경꾼이 소방대를 불렀다." }] },
-
   /* ── 챕터 4 ─────────────────────────────────────── */
   /* 'op-' 로 시작하는 낱말이 열세 개나 이어 붙는다. opponent·opportunity·oppose·
      opposite·opposition 다섯이 한 덩어리이고, optics·optimal·optimism·optimistic·
@@ -860,12 +854,6 @@ window.VOCAB_O = [
     syn:["brilliant","exceptional","head and shoulders above"], ant:["mediocre"],
     ex:[{ s:"Her essay was {{}} among fifty entries.", f:"outstanding", ko:"그녀의 글은 오십 편 가운데 뛰어났다." }] },
 
-  /* 원본은 '초과하다, 능가하다, 벗어나다' 세 갈래였다. '능가하다' 는 같은 챕터의
-     outperform 과 부딪히므로 '앞지르다, 웃돌다' 로 갈랐다. */
-  { word:"outstrip", pron:"아웃스트립", pos:"v", level:"C1", meanings:["앞지르다","웃돌다"],
-    syn:["overtake in progress","go beyond","leave behind in a race"],
-    ex:[{ s:"Demand began to {{}} supply.", f:"outstrip", ko:"수요가 공급을 웃돌기 시작했다." }] },
-
   { word:"outward", pron:"아웃워드", pos:"adj", level:"B2", meanings:["겉보기의","표면상의"],
     syn:["on the surface","visible from outside","apparent to the eye"], ant:["inward"],
     ex:[{ s:"His calm was only {{}}.", f:"outward", ko:"그의 침착함은 겉보기의 것일 뿐이었다." }] },
@@ -893,12 +881,6 @@ window.VOCAB_O = [
     syn:["worrying too much","overly fretful","needlessly alarmed"],
     ex:[{ s:"Do not be {{}} about the exam.", f:"overanxious", ko:"시험에 지나치게 걱정하지 마라." }] },
 
-  /* overbear 는 매우 드문 낱말이다. 같은 세트의 overwhelm(압도하다, 당황하게 하다)·
-     overpower(제압하다, 힘으로 누르다) 와 물리지 않게 '억누르다, 짓누르다' 로 갈랐다. */
-  { word:"overbear", pron:"오버베어", pos:"v", level:"C2", meanings:["억누르다","짓누르다"],
-    syn:["bear down on","weigh heavily upon","press down hard"],
-    ex:[{ s:"He tried to {{}} every objection in the room.", f:"overbear", ko:"그는 방 안의 모든 이의를 억누르려 했다." }] },
-
   /* 원본은 '과다 복용; 과다 복용하다' 로 명사와 동사가 섞여 있었다.
      참조가 없어 명사 한 갈래로 정리했다. */
   { word:"overdose", pron:"오버도스", pos:"n", level:"B2", meanings:["과다 복용"],
@@ -915,10 +897,6 @@ window.VOCAB_O = [
     syn:["belated","past the due date","long-awaited"],
     ex:[{ s:"The library book is two weeks {{}}.", f:"overdue", ko:"그 도서관 책은 두 주 기한이 지났다." }] },
 
-  { word:"overeat", pron:"오버이트", pos:"v", level:"B2", meanings:["과식하다"],
-    syn:["eat too much","stuff oneself","take more food than needed"],
-    ex:[{ s:"It is easy to {{}} at a buffet.", f:"overeat", ko:"뷔페에서는 과식하기 쉽다." }] },
-
   /* ── 챕터 8 (마지막) ──────────────────────────────── */
   /* 18단어. MIN_TAIL(4) 이상이라 독립 챕터로 둔다.
      'over-' 어근이 열일곱, 그리고 마지막이 owe 다.
@@ -933,10 +911,6 @@ window.VOCAB_O = [
   { word:"overhear", pron:"오버히어", pos:"v", level:"B2", meanings:["엿듣다"],
     syn:["catch by chance","hear without meaning to","listen in on"],
     ex:[{ s:"I happened to {{}} their quarrel.", f:"overhear", ko:"나는 우연히 그들의 말다툼을 엿들었다." }] },
-
-  { word:"overindulge", pron:"오버인덜지", pos:"v", level:"C1", meanings:["탐닉하다","지나치게 빠지다"],
-    syn:["give in to excess","enjoy far too much","let oneself go too far"],
-    ex:[{ s:"It is easy to {{}} during the holidays.", f:"overindulge", ko:"연휴에는 탐닉하기 쉽다." }] },
 
   /* 승격 74 — 사전이 '겹치다; 중복' 으로 동사와 명사가 섞여 있었다.
      coincide(C)·commonality(C) 중 coincide 가 동사 갈래를 쓴다. 원본대로 동사로

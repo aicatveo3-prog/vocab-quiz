@@ -1378,10 +1378,6 @@ window.VOCAB_F = [
 
   /* ── 10차: frontiersman ~ fur (20개) ──────────── */
 
-  { word:"frontiersman", pron:"프런티어즈먼", pos:"n", level:"C2", meanings:["개척자"],
-    syn:["pioneer","settler","trailblazer"],
-    ex:[{ s:"The diary of one {{}} survives from that winter.", f:"frontiersman", ko:"그 겨울에서 개척자 한 사람의 일기가 남아 있다." }] },
-
   { word:"frost", pron:"프로스트", pos:"n", level:"B1", meanings:["서리"],
     syn:["frozen dew","hoarfrost","ice crystals"],
     ex:[{ s:"A light {{}} covered the field before sunrise.", f:"frost", ko:"해가 뜨기 전 밭에 옅은 서리가 덮였다." }] },

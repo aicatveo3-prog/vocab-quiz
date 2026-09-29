@@ -299,13 +299,6 @@ window.VOCAB_U = [
     syn:["embark","take on a task","set about doing"],
     ex:[{ s:"They will {{}} the repairs next week.", f:"undertake", ko:"그들은 다음 주에 보수에 착수할 것이다." }] },
 
-  /* 승격 ⑦ — 사전 단일값 유지(참조 belittle). '경시하다' 는 downplay(경시하다,
-     축소하다) 자리다. overestimate(과대평가하다) 와는 뜻이 정반대여서 한 문제에
-     같이 뜰 수 있다 — 반의어를 일부러 넣는 설계다. */
-  { word:"undervalue", pron:"언더밸류", pos:"v", level:"C1", meanings:["과소평가하다"],
-    syn:["belittle","rate too low","think too little of"],
-    ex:[{ s:"Do not {{}} her work.", f:"undervalue", ko:"그녀의 일을 과소평가하지 마라." }] },
-
   /* 승격 ⑧ — 사전 단일값 유지(참조 aquatic). 부사 갈래는 버렸다. */
   { word:"underwater", exams:["공무원","수능"], pron:"언더워터", pos:"adj", level:"B2", meanings:["수중의"],
     syn:["aquatic","below the surface","under the waves"],
@@ -487,11 +480,6 @@ window.VOCAB_U = [
     syn:["illegal","against the law","not allowed by law"],
     ex:[{ s:"The search was ruled {{}}.", f:"unlawful", ko:"그 수색은 위법으로 판정됐다." }] },
 
-  /* 교재는 열일곱 자짜리 설명이었다. 뜻만 남겼다. */
-  { word:"unlearn", pron:"언런", pos:"v", level:"C2", meanings:["배운 것을 잊다"],
-    syn:["put aside what one was taught","drop an old habit of mind","let go of learning"],
-    ex:[{ s:"Players must {{}} bad form first.", f:"unlearn", ko:"선수들은 먼저 나쁜 자세를 잊어야 한다." }] },
-
   /* reveal(드러내다, 밝히다)·display(전시하다, 드러내다) 와 '드러내다' 가
      맞물려 배제된다. */
   { word:"unlock", exams:["수능"], pron:"언락", pos:"v", level:"B2", meanings:["열다","드러내다"],
@@ -653,11 +641,6 @@ window.VOCAB_U = [
   { word:"uptight", pron:"업타이트", pos:"adj", level:"C1", meanings:["긴장한","신경이 날카로운"],
     syn:["strung up tight","on edge","unable to relax"], ant:["easygoing"],
     ex:[{ s:"He gets {{}} before a test.", f:"uptight", ko:"그는 시험 전에 긴장한다." }] },
-
-  /* 승격 ㉔ — 사전 글자 유지(참조 downturn 이 반의어). */
-  { word:"upturn", pron:"업턴", pos:"n", level:"B2", meanings:["상승","호전"],
-    syn:["turn for the better","rise after a fall","change to the good"], ant:["downturn"],
-    ex:[{ s:"Trade showed a slow {{}}.", f:"upturn", ko:"거래는 더딘 상승을 보였다." }] },
 
   /* 승격 ㉕ — 사전 단일값 유지(참조 metropolitan). ★ municipal(시의 · B2/adj)
      과 '시의' 가 겹치는데 두 글자라 자동 배제가 안 된다. 이쪽은 참조가 있어

@@ -891,11 +891,6 @@ window.VOCAB_E = [
     syn:["opinion piece","leading article","commentary"],
     ex:[{ s:"The paper ran a fierce {{}} against the new tax.", f:"editorial", ko:"그 신문은 새 세금에 반대하는 격렬한 사설을 실었다." }] },
 
-  /* ── ef ────────────────────────────────────── */
-  { word:"efface", pron:"이페이스", pos:"v", level:"C2", meanings:["지우다","말살하다"],
-    syn:["erase","obliterate","blot out"], ant:["restore"],
-    ex:[{ s:"Centuries of wind had begun to {{}} the inscription.", f:"efface", ko:"수백 년의 바람이 그 새긴 글귀를 지우기 시작했다." }] },
-
   { word:"effectiveness", exams:["공무원","수능"], pron:"이펙티브니스", pos:"n", level:"B2", meanings:["유효성","효과"],
     syn:["efficacy","potency","usefulness"], ant:["futility"],
     ex:[{ s:"The trial measured the {{}} of the new vaccine.", f:"effectiveness", ko:"그 임상시험은 새 백신의 유효성을 측정했다." }] },
@@ -1804,12 +1799,6 @@ window.VOCAB_E = [
   { word:"exhilarating", pron:"이그질러레이팅", pos:"adj", level:"C1", meanings:["아주 신나는","즐거운"],
     syn:["thrilling","stirring","invigorating"],
     ex:[{ s:"The ride down the valley was {{}}.", f:"exhilarating", ko:"골짜기를 내려가는 그 주행은 아주 신났다." }] },
-
-  /* 유의어로 urge 를 쓰지 않았다 — GLOSS 가 "충동; 재촉하다" 로 명사 갈래가 앞이다
-     (5차 encourage 에서도 같은 이유로 걸러냈다). */
-  { word:"exhort", pron:"이그조트", pos:"v", level:"C2", meanings:["훈계하다","간곡히 권하다"],
-    syn:["urge strongly","admonish","preach to"],
-    ex:[{ s:"The captain would {{}} the crew before every match.", f:"exhort", ko:"주장은 경기마다 선수들을 간곡히 격려하곤 했다." }] },
 
   /* 원본은 '국외 추방, 망명자, 추방하다' 로 명사 둘과 동사가 섞여 있다 — 동사로
      정했다. 표제어 banish·deport(둘 다 동사)가 이 낱말을 유의어로 쓴다.

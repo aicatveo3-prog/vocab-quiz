@@ -136,10 +136,6 @@ window.VOCAB_V = [
     syn:["things worth money","goods of value","precious belongings"],
     ex:[{ s:"Leave your {{}} at the desk.", f:"valuables", ko:"귀중품은 안내대에 두세요." }] },
 
-  { word:"valueless", pron:"밸류리스", pos:"adj", level:"C1", meanings:["무가치한"],
-    syn:["worth nothing","of no value at all","not worth a penny"],
-    ex:[{ s:"The old note is now {{}}.", f:"valueless", ko:"그 낡은 지폐는 이제 무가치하다." }] },
-
   /* ★ 교재의 '반달리즘' 은 낱말을 한글로 되풀이한 것이라 걷었다. */
   { word:"vandalism", pron:"밴덜리즘", pos:"n", level:"C1", meanings:["공공 기물 파손"],
     syn:["wrecking public property","damage done for its own sake","breaking things on purpose"],

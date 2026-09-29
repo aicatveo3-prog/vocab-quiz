@@ -198,10 +198,6 @@ window.VOCAB_S = [
     syn:["offering","giving up of something","loss for a cause"],
     ex:[{ s:"Her success came at great {{}}.", f:"sacrifice", ko:"그녀의 성공은 큰 희생을 치르고 얻은 것이다." }] },
 
-  { word:"sadden", pron:"새든", pos:"v", level:"B2", meanings:["슬프게 하다"],
-    syn:["upset","grieve","make sorrowful"], ant:["cheer"],
-    ex:[{ s:"The news will {{}} everyone here.", f:"sadden", ko:"그 소식은 이곳의 모두를 슬프게 할 것이다." }] },
-
   /* 승격 ③ — 사전 단일값 유지. 참조 hazardous(H) 의 화면은 그대로다. */
   { word:"safe", pron:"세이프", pos:"adj", level:"B1", meanings:["안전한"],
     syn:["protected","free from harm","out of danger"], ant:["hazardous"],
@@ -299,10 +295,6 @@ window.VOCAB_S = [
      scared(무서워하는) 와 scary(무서운) 는 일부러 나란히 두었다 — 겪는 쪽과
      만드는 쪽의 차이를 가리는 자리다. */
 
-  { word:"satiate", pron:"세이시에이트", pos:"v", level:"C2", meanings:["충분히 만족시키다"],
-    syn:["satisfy","glut","fill fully"],
-    ex:[{ s:"A small meal will not {{}} him.", f:"satiate", ko:"적은 식사로는 그를 충분히 만족시키지 못한다." }] },
-
   { word:"satire", pron:"새타이어", pos:"n", level:"C1", meanings:["풍자","비꼼"],
     syn:["mockery","irony","witty attack in writing"],
     ex:[{ s:"The play is a sharp {{}} on politics.", f:"satire", ko:"그 연극은 정치에 대한 날카로운 풍자다." }] },
@@ -354,12 +346,6 @@ window.VOCAB_S = [
   { word:"scan", exams:["수능"], pron:"스캔", pos:"v", level:"B2", meanings:["훑어보다"],
     syn:["browse","glance","look over quickly"],
     ex:[{ s:"She began to {{}} the headlines.", f:"scan", ko:"그녀는 표제들을 훑어보기 시작했다." }] },
-
-  /* 승격 ⑭ — 사전 단일값 유지(insufficient, I). scarce(부족한, 드문) 와
-     '빈약한' 한 갈래로 갈랐다. */
-  { word:"scanty", pron:"스캔티", pos:"adj", level:"C1", meanings:["빈약한"],
-    syn:["insufficient","barely enough","thin in amount"],
-    ex:[{ s:"The report gave only {{}} detail.", f:"scanty", ko:"그 보고서는 빈약한 세부 내용만 담았다." }] },
 
   /* 승격 ⑮ — 사전은 '흉터' 한 갈래였다. 참조가 없어 원본대로 두 갈래로 넓혔다. */
   { word:"scar", pron:"스카", pos:"n", level:"B2", meanings:["흉터","상처"],
@@ -435,11 +421,6 @@ window.VOCAB_S = [
   { word:"scope", pron:"스코프", pos:"n", level:"B2", meanings:["범위"],
     syn:["coverage","extent","area covered"],
     ex:[{ s:"The {{}} of the study was too narrow.", f:"scope", ko:"그 연구의 범위는 너무 좁았다." }] },
-
-  /* 승격 ㉒ — 사전 단일값 유지. 참조 mocking(M) 의 화면은 바뀌지 않는다. */
-  { word:"scornful", pron:"스콘풀", pos:"adj", level:"C1", meanings:["멸시하는"],
-    syn:["contemptuous","disdainful","looking down on"],
-    ex:[{ s:"She gave him a {{}} look.", f:"scornful", ko:"그녀는 그를 멸시하는 눈으로 보았다." }] },
 
   /* 승격 ㉓ — 사전은 '서두르다; 다투다' 였다. 참조가 없어 원본의 두 갈래를
      그대로 살렸다 — 화면이 바뀌는 곳은 없다. */
@@ -646,10 +627,6 @@ window.VOCAB_S = [
   { word:"semester", exams:["공무원","수능"], pron:"시메스터", pos:"n", level:"B1", meanings:["학기"],
     syn:["half of a school year","term of study","one of two school terms"],
     ex:[{ s:"The new {{}} starts in March.", f:"semester", ko:"새 학기는 삼월에 시작한다." }] },
-
-  { word:"semicircle", pron:"세미서클", pos:"n", level:"B2", meanings:["반원"],
-    syn:["half circle","half of a round shape","arc of half a turn"],
-    ex:[{ s:"The children sat in a {{}}.", f:"semicircle", ko:"아이들이 반원으로 앉았다." }] },
 
   { word:"senator", pron:"세너터", pos:"n", level:"B2", meanings:["상원 의원"],
     syn:["member of the senate","upper-house lawmaker","elected upper chamber member"],
@@ -1330,10 +1307,6 @@ window.VOCAB_S = [
   { word:"socialize", exams:["공무원"], pron:"소셜라이즈", pos:"v", level:"B2", meanings:["사귀다","사회화하다"],
     syn:["mix with others","spend time together","take on social ways"],
     ex:[{ s:"She has little time to {{}}.", f:"socialize", ko:"그녀는 사귈 시간이 거의 없다." }] },
-
-  { word:"sociocultural", pron:"소시오컬처럴", pos:"adj", level:"C1", meanings:["사회문화적인"],
-    syn:["of society and culture","to do with people and custom","social and cultural at once"],
-    ex:[{ s:"The study takes a {{}} view.", f:"sociocultural", ko:"그 연구는 사회문화적인 관점을 취한다." }] },
 
   { word:"sociology", exams:["수능"], pron:"소시알러지", pos:"n", level:"B2", meanings:["사회학"],
     syn:["study of society","science of social life","study of human groups"],

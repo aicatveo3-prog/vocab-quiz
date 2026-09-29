@@ -1501,10 +1501,6 @@ window.VOCAB_P = [
     syn:["lost in thought","taken up with one thing","absorbed"],
     ex:[{ s:"He was too {{}} to notice us.", f:"preoccupied", ko:"그는 너무 몰두해서 우리를 알아보지 못했다." }] },
 
-  { word:"preprint", pron:"프리프린트", pos:"n", level:"C2", meanings:["견본 인쇄","사전 배포본"],
-    syn:["copy printed early","paper shared before publication","advance copy"],
-    ex:[{ s:"The study circulated as a {{}}.", f:"preprint", ko:"그 연구는 사전 배포본으로 돌았다." }] },
-
   /* 승격 111 — 사전 표현과 글자까지 같다(발음이 없던 항목이다).
      챕터 11 의 precondition 은 '선행 조건' 으로 갈라 두었다. */
   { word:"prerequisite", exams:["공무원"], pron:"프리레커지트", pos:"n", level:"C1", meanings:["전제 조건"],
@@ -1527,10 +1523,6 @@ window.VOCAB_P = [
   { word:"prescription", exams:["수능"], pron:"프리스크립션", pos:"n", level:"B2", meanings:["처방전","처방약"],
     syn:["doctor's written order","paper for medicine","medicine so ordered"],
     ex:[{ s:"Take this {{}} to the pharmacy.", f:"prescription", ko:"이 처방전을 약국에 가져가세요." }] },
-
-  { word:"preselected", pron:"프리셀렉티드", pos:"adj", level:"C1", meanings:["미리 골라 둔"],
-    syn:["chosen in advance","picked beforehand","settled on earlier"],
-    ex:[{ s:"The winners were {{}} by the panel.", f:"preselected", ko:"수상자들은 심사단이 미리 골라 두었다." }] },
 
   /* 승격 113 — 사전 표현과 글자까지 같다(attendance, A). 둘째 뜻 '존재' 는
      existence(존재 · E) 와 글자까지 같아 서로 오답에서 빠진다. */

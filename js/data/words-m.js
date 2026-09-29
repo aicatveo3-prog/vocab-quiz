@@ -223,12 +223,6 @@ window.VOCAB_M = [
     syn:["negligence","misconduct","wrongdoing"],
     ex:[{ s:"The surgeon was sued for {{}}.", f:"malpractice", ko:"그 외과의는 의료 사고로 고소당했다." }] },
 
-  /* 뒤 챕터의 mistreat('학대하다')와 첫 뜻이 갈리도록 둘째 갈래를
-     '험하게 다루다' 로 했다 — 원본의 '학대하다' 는 mistreat 쪽에 남긴다. */
-  { word:"maltreat", pron:"맬트리트", pos:"v", level:"C1", meanings:["거칠게 다루다","험하게 다루다"],
-    syn:["abuse","ill-treat","mishandle"],
-    ex:[{ s:"Staff who {{}} animals face prosecution.", f:"maltreat", ko:"동물을 거칠게 다루는 직원은 기소된다." }] },
-
   /* 승격 ① — GLOSS '의무적인, 필수의' 를 글자까지 지켰다. compulsory(syn) 가
      참조하므로 원본의 '강제적인' 대신 사전 쪽을 남겼다. */
   { word:"mandatory", pron:"맨더토리", pos:"adj", level:"B2", meanings:["의무적인","필수의"],
@@ -838,12 +832,6 @@ window.VOCAB_M = [
     syn:["wretched","dismal","unhappy"], ant:["cheerful"],
     ex:[{ s:"They spent a {{}} night out in the rain.", f:"miserable", ko:"그들은 빗속에서 비참한 밤을 보냈다." }] },
 
-  /* 승격 ① — GLOSS '의심, 불안' 을 글자까지 지켰다. doubt(syn)·foreboding(syn) 두
-     문제가 참조하므로 원본의 '의혹, 불안감' 대신 사전 쪽을 남겼다 — 같은 갈래다. */
-  { word:"misgiving", pron:"미스기빙", pos:"n", level:"C1", meanings:["의심","불안"],
-    syn:["doubt","foreboding","qualm"],
-    ex:[{ s:"She had serious {{}} about the whole deal.", f:"misgivings", ko:"그녀는 그 거래 전체에 심각한 의심을 품었다." }] },
-
   /* 승격 ① — GLOSS '작은 사고' 와 같은 갈래다. I 세트 incident 가 참조한다.
      원본 '불상사, 불운' 도 같은 갈래라 사전 쪽 한 갈래로 두었다. */
   { word:"mishap", pron:"미스햅", pos:"n", level:"B2", meanings:["작은 사고"],
@@ -889,10 +877,6 @@ window.VOCAB_M = [
   { word:"missionary", pron:"미셔네리", pos:"n", level:"B2", meanings:["선교사","전도사"],
     syn:["evangelist","preacher","proselytizer"],
     ex:[{ s:"The {{}} spent thirty years in the region.", f:"missionary", ko:"그 선교사는 그 지역에서 30년을 보냈다." }] },
-
-  { word:"misspell", pron:"미스스펠", pos:"v", level:"B2", meanings:["철자가 틀리다","철자를 잘못 쓰다"],
-    syn:["spell wrongly","write incorrectly","garble the spelling"],
-    ex:[{ s:"People often {{}} her surname.", f:"misspell", ko:"사람들은 그녀의 성을 자주 철자를 틀린다." }] },
 
   { word:"mistake", pron:"미스테이크", pos:"n", level:"B1", meanings:["실수","잘못"],
     syn:["error","blunder","slip"],

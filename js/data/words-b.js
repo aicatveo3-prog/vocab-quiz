@@ -412,10 +412,6 @@ window.VOCAB_B = [
     ex:[{ s:"Travelers should {{}} of pickpockets in this area.", f:"beware", ko:"여행자들은 이 지역에서 소매치기를 경계해야 한다." }],
     gov:{ prep:["of"], pat:"beware {{}} pickpockets", usage:"beware of ~ : ~을 경계하다" } },
 
-  { word:"bewilder", pron:"비윌더", pos:"v", level:"C1", meanings:["혼란스럽게 만들다","당황시키다"],
-    syn:["confuse","perplex","baffle"], ant:["clarify"],
-    ex:[{ s:"The complex rules {{}} most new players.", f:"bewilder", ko:"그 복잡한 규칙은 대부분의 신규 참가자를 혼란스럽게 만든다." }] },
-
   { word:"bewildered", pron:"비윌더드", pos:"adj", level:"C1", meanings:["당황한","갈피를 못 잡은"],
     syn:["puzzled","disoriented","baffled"], ant:["confident"],
     ex:[{ s:"She gave me a {{}} look and said nothing.", f:"bewildered", ko:"그녀는 당황한 표정으로 나를 보며 아무 말도 하지 않았다." }] },

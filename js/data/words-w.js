@@ -341,12 +341,6 @@ window.VOCAB_W = [
     syn:["speak under one's breath","talk very softly","murmur low"], ant:["blare","call out"],
     ex:[{ s:"She had to {{}} in the hall.", f:"whisper", ko:"그녀는 복도에서 속삭여야 했다." }] },
 
-  /* 승격 ⑯ — 사전 글자 유지(참조 earnest·heartfelt). 교재의 '전적인, 완전한'
-     은 absolute·outright·sheer·thorough 넷 자리라 버렸다. */
-  { word:"wholehearted", pron:"홀하티드", pos:"adj", level:"C1", meanings:["전심전력의","진심을 다한"],
-    syn:["earnest","heartfelt","with all one's heart"],
-    ex:[{ s:"He gave it his {{}} support.", f:"wholehearted", ko:"그는 그것에 전심전력의 지지를 보냈다." }] },
-
   /* ★ 교재의 '못된, 사악한' 에서 앞뒤를 바꿨다. '못된' 이 첫 뜻이면
      erroneous(잘못된, 오류가 있는) 와 한 글자로만 갈린다. '사악한' 을 앞세우니
      V 세트 vicious(사악한, 잔인한) 와 맞물려 배제되고, 둘째로 남긴 '못된' 이

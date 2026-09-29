@@ -388,10 +388,6 @@ window.VOCAB_I = [
     syn:["unbiased","neutral","objective"], ant:["biased"],
     ex:[{ s:"The dispute was settled by an {{}} mediator.", f:"impartial", ko:"그 분쟁은 공정한 중재자에 의해 해결되었다." }] },
 
-  { word:"impel", pron:"임펠", pos:"v", level:"C1", meanings:["추진하다","재촉하다"],
-    syn:["propel","compel","spur"], ant:["deter"],
-    ex:[{ s:"Financial pressure {{}} many students to take part-time jobs.", f:"impels", ko:"재정적 압박은 많은 학생이 아르바이트를 하도록 재촉한다." }] },
-
   /* 원본 첫 뜻은 '임박한' 으로 imminent 과 같았다. imminent 이 '임박한' 을
      가져가고 이쪽은 '곧 닥칠' 로 돌렸다. */
   { word:"impending", pron:"임펜딩", pos:"adj", level:"C1", meanings:["곧 닥칠","다가오는"],
@@ -466,12 +462,6 @@ window.VOCAB_I = [
     ex:[{ s:"The government will {{}} a tax on sugary drinks.", f:"impose", ko:"정부는 설탕이 든 음료에 세금을 부과할 것이다." }] },
 
   /* ── 챕터 4 ─────────────────────────────── */
-
-  /* 승격 ① — GLOSS '빈곤하게 하다' 와 같은 갈래다. 참조하는 기존 문제가 없어
-     원본 뜻을 그대로 썼다. PRON 에는 없었다. */
-  { word:"impoverish", pron:"임파버리시", pos:"v", level:"C1", meanings:["가난하게 하다","저하시키다"],
-    syn:["ruin","deplete","drain"], ant:["enrich"],
-    ex:[{ s:"Decades of conflict {{}} the entire region.", f:"impoverished", ko:"수십 년의 분쟁이 그 지역 전체를 가난하게 만들었다." }] },
 
   { word:"impractical", pron:"임프랙티컬", pos:"adj", level:"B2", meanings:["비현실적인","실용성 없는"],
     syn:["unrealistic","unworkable","unfeasible"], ant:["practical"],
@@ -778,14 +768,6 @@ window.VOCAB_I = [
     syn:["unbelievably","astonishingly","remarkably"],
     ex:[{ s:"The old bridge survived {{}} intact after the quake.", f:"incredibly", ko:"그 낡은 다리는 지진 후 놀랍게도 온전히 남았다." }] },
 
-  /* 승격 ① — GLOSS '알을 품다' 를 글자까지 지켰다. hatch(syn) 가 참조한다.
-     원본 둘째 갈래 '배양하다' 를 뒤에 붙였다.
-     H 세트 harbor 의 뜻이 '품다' 라, 원본처럼 '품다' 로 쓰면 첫 뜻이 겹친다 —
-     사전 쪽 '알을 품다' 가 그 문제도 함께 막아 준다. */
-  { word:"incubate", pron:"인큐베이트", pos:"v", level:"C1", meanings:["알을 품다","배양하다"],
-    syn:["hatch","brood","nurture"],
-    ex:[{ s:"The hen will {{}} the eggs for about three weeks.", f:"incubate", ko:"그 암탉은 약 3주 동안 알을 품을 것이다." }] },
-
   /* incubate 와 어근이 같지만 품사가 달라(v/n) 같은 보드에 안 온다. */
   { word:"incubation", pron:"인큐베이션", pos:"n", level:"C1", meanings:["알을 품음","잠복기"],
     syn:["brooding","hatching","latency"],
@@ -880,17 +862,6 @@ window.VOCAB_I = [
   { word:"indispensable", exams:["공무원"], pron:"인디스펜서블", pos:"adj", level:"B2", meanings:["없어서는 안 될","불가결한"],
     syn:["essential","vital","crucial"], ant:["dispensable"],
     ex:[{ s:"A good dictionary is {{}} for serious study.", f:"indispensable", ko:"좋은 사전은 본격적인 공부에 없어서는 안 된다." }] },
-
-  /* 승격 ① — GLOSS '세뇌시키다' 를 첫 자리에 지켰다. brainwash(syn) 가 참조한다.
-     원본 첫 뜻은 '주입하다' 였는데 뒤에 올 instill('스며들게 하다, 주입시키다')과
-     겹쳐, 사전 쪽을 앞에 두고 '사상을 주입하다' 로 풀어 썼다. */
-  { word:"indoctrinate", pron:"인닥트러네이트", pos:"v", level:"C1", meanings:["세뇌시키다","사상을 주입하다"],
-    syn:["brainwash","condition","propagandize"],
-    ex:[{ s:"The regime sought to {{}} children through school textbooks.", f:"indoctrinate", ko:"그 정권은 학교 교과서를 통해 아이들을 세뇌시키려 했다." }] },
-
-  { word:"indubitable", pron:"인두버터블", pos:"adj", level:"C2", meanings:["의심의 여지가 없는","명백한"],
-    syn:["unquestionable","undeniable","certain"], ant:["doubtful"],
-    ex:[{ s:"The evidence of warming is now {{}}.", f:"indubitable", ko:"온난화의 증거는 이제 의심의 여지가 없다." }] },
 
   /* prompt 를 spur into action 으로 바꿨다. prompt 가 P 세트 챕터 15 표제어
      (즉각적인 · adj)로 올라가면 동사 표제어의 유의어 자리에 형용사 뜻이 뜬다. */
@@ -1296,10 +1267,6 @@ window.VOCAB_I = [
     syn:["organization","establishment","body"],
     ex:[{ s:"The bank is one of the oldest financial {{}} in Europe.", f:"institutions", ko:"그 은행은 유럽에서 가장 오래된 금융 기관 중 하나다." }] },
 
-  { word:"institutionalize", pron:"인스터투셔널라이즈", pos:"v", level:"C2", meanings:["시설에 수용하다","제도화하다"],
-    syn:["hospitalize","formalize","entrench"],
-    ex:[{ s:"The reforms aim to {{}} transparency in government.", f:"institutionalize", ko:"그 개혁은 정부의 투명성을 제도화하는 것을 목표로 한다." }] },
-
   { word:"instruct", pron:"인스트럭트", pos:"v", level:"B1", meanings:["지시하다","가르치다"],
     syn:["direct","order","teach"],
     ex:[{ s:"The judge will {{}} the jury on the relevant law.", f:"instruct", ko:"판사는 배심원단에게 관련 법에 대해 지시할 것이다." }] },
@@ -1533,10 +1500,6 @@ window.VOCAB_I = [
 
   /* ── 챕터 14 ────────────────────────────── */
 
-  { word:"interrelate", pron:"인터릴레이트", pos:"v", level:"C2", meanings:["밀접한 연관을 갖다"],
-    syn:["correlate","interconnect","be bound up"],
-    ex:[{ s:"Climate and agriculture {{}} in complex ways.", f:"interrelate", ko:"기후와 농업은 복잡한 방식으로 밀접한 연관을 갖는다." }] },
-
   /* 승격 ① — GLOSS '방해하다, 중단시키다' 가 원본과 글자까지 같다.
      disrupt(syn)·disturb(syn) 두 문제가 참조한다. 손댈 것이 없었다. */
   { word:"interrupt", exams:["공무원","수능"], pron:"인터럽트", pos:"v", level:"B1", meanings:["방해하다","중단시키다"],
@@ -1579,10 +1542,6 @@ window.VOCAB_I = [
   { word:"intolerance", pron:"인탈러런스", pos:"n", level:"C1", meanings:["편협","참을 수 없음"],
     syn:["bigotry","narrow-mindedness","prejudice"], ant:["tolerance"],
     ex:[{ s:"The campaign fights religious {{}} in schools.", f:"intolerance", ko:"그 운동은 학교의 종교적 편협과 싸운다." }] },
-
-  { word:"intoxicate", pron:"인탁서케이트", pos:"v", level:"C2", meanings:["취하게 하다","도취시키다"],
-    syn:["inebriate","befuddle","stupefy"],
-    ex:[{ s:"Strong wine can quickly {{}} the unwary.", f:"intoxicate", ko:"독한 포도주는 방심한 사람을 빠르게 취하게 할 수 있다." }] },
 
   /* 승격 ① — GLOSS '복잡한, 정교한' 을 글자까지 지켰다.
      complex(syn)·elaborate(syn) 두 문제가 참조하므로 원본의 '뒤얽힌' 대신
@@ -1656,10 +1615,6 @@ window.VOCAB_I = [
   { word:"invaluable", exams:["공무원","수능"], pron:"인밸류어블", pos:"adj", level:"B2", meanings:["매우 귀중한","값을 헤아릴 수 없는"],
     syn:["priceless","precious","beyond price"],
     ex:[{ s:"Her advice proved {{}} during the crisis.", f:"invaluable", ko:"그녀의 조언은 위기 동안 매우 귀중한 것으로 드러났다." }] },
-
-  { word:"invariable", pron:"인베리어블", pos:"adj", level:"C1", meanings:["불변의","변함없는"],
-    syn:["unchanging","constant","fixed"], ant:["variable"],
-    ex:[{ s:"His morning routine was almost {{}}.", f:"invariable", ko:"그의 아침 일과는 거의 불변이었다." }] },
 
   /* 승격 ① — GLOSS '역의, 반대의' 를 글자까지 지켰다. converse(syn) 가 참조한다.
      원본 셋째 갈래 '반비례의' 는 meanings 2개 제한에 걸려 뺐다. */

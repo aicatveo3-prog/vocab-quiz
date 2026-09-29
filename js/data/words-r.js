@@ -320,10 +320,6 @@ window.VOCAB_R = [
     syn:["rising against rule","open defiance","revolt of the people"],
     ex:[{ s:"The {{}} spread to three towns.", f:"rebellion", ko:"그 반란은 세 고을로 퍼졌다." }] },
 
-  { word:"rebroadcast", pron:"리브로드캐스트", pos:"v", level:"B2", meanings:["재방송하다"],
-    syn:["air again","send out once more","show a second time"],
-    ex:[{ s:"They will {{}} the match tonight.", f:"rebroadcast", ko:"그들은 오늘 밤 그 경기를 재방송할 것이다." }] },
-
   /* 승격 ⑳ — 사전 글자 유지(censure, C). reprimand(문책하다 · 챕터 8) 와 갈랐다. */
   { word:"rebuke", pron:"리뷰크", pos:"v", level:"C2", meanings:["질책하다","꾸짖다"],
     syn:["censure","tell off sharply","scold openly"],
@@ -1186,10 +1182,6 @@ window.VOCAB_R = [
   { word:"respiratory", pron:"레스퍼러토리", pos:"adj", level:"C1", meanings:["호흡의","호흡 기관의"],
     syn:["to do with breathing","of the lungs and airways","used in taking air"],
     ex:[{ s:"Smoke causes {{}} illness.", f:"respiratory", ko:"연기는 호흡 기관의 병을 일으킨다." }] },
-
-  { word:"respire", pron:"리스파이어", pos:"v", level:"C1", meanings:["호흡하다"],
-    syn:["draw breath","take air in and out","breathe"],
-    ex:[{ s:"Leaves {{}} through tiny pores.", f:"respire", ko:"잎은 아주 작은 구멍으로 호흡한다." }] },
 
   /* 승격 108 — 사전은 '응답하다, 반응하다' 였다. '반응하다' 는 react(챕터 2) 에
      넘기고 '호응하다' 를 붙였다. 참조는 없다. */

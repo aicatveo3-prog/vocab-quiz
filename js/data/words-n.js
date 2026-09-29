@@ -312,10 +312,6 @@ window.VOCAB_N = [
     syn:["factual writing","true account","real-life writing"], ant:["fiction"],
     ex:[{ s:"He reads only {{}} these days.", f:"nonfiction", ko:"그는 요즘 실화만 읽는다." }] },
 
-  { word:"nonmaterial", pron:"난머티리얼", pos:"adj", level:"C1", meanings:["비물질적인","영적인"],
-    syn:["immaterial","not physical","of the spirit"], ant:["tangible"],
-    ex:[{ s:"Songs and stories are {{}} heritage.", f:"nonmaterial", ko:"노래와 이야기는 비물질적인 유산이다." }] },
-
   /* 승격 22 — 사전 표현 '비영리의' 를 글자까지 지켰다(commercial 의 반의어 자리).
      원본의 '비영리적인' 보다 사전 쪽을 남겼다. */
   { word:"nonprofit", pron:"난프라핏", pos:"adj", level:"B2", meanings:["비영리의"],

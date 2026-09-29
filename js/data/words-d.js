@@ -221,10 +221,6 @@ window.VOCAB_D = [
   { word:"deaf", pron:"데프", pos:"adj", level:"B1", meanings:["청각 장애가 있는","귀가 들리지 않는"],
     ex:[{ s:"The school has special programs for {{}} students.", f:"deaf", ko:"그 학교에는 청각 장애 학생을 위한 특별 과정이 있다." }] },
 
-  { word:"deafen", pron:"데펀", pos:"v", level:"C1", meanings:["귀를 먹먹하게 하다","들리지 않게 하다"],
-    syn:["drown out","muffle","stun"],
-    ex:[{ s:"The roar of the engines seemed to {{}} everyone on the platform.", f:"deafen", ko:"엔진의 굉음이 플랫폼에 있던 모두의 귀를 먹먹하게 하는 듯했다." }] },
-
   { word:"deal in", pron:"딜 인", pos:"phr", level:"B2", meanings:["거래하다","취급하다"],
     /* ★ syn 의 "stock" 을 "keep goods for sale" 로 바꿨다. stock 이 S 세트에서
        명사 '재고, 주식' 으로 선다 — 동사 뜻을 늘어놓은 이 자리에 명사가 끼게 된다. */
@@ -337,10 +333,6 @@ window.VOCAB_D = [
   { word:"deed", pron:"디드", pos:"n", level:"B2", meanings:["행위","행동"],
     syn:["act","action","feat"],
     ex:[{ s:"She was honored for a single brave {{}} that saved two lives.", f:"deed", ko:"그녀는 두 생명을 구한 한 번의 용감한 행동으로 표창받았다." }] },
-
-  { word:"deface", pron:"디페이스", pos:"v", level:"C2", meanings:["훼손하다","외관을 망치다"],
-    syn:["vandalize","mar","disfigure"], ant:["restore"],
-    ex:[{ s:"Someone tried to {{}} the monument with spray paint.", f:"deface", ko:"누군가 스프레이 페인트로 그 기념비를 훼손하려 했다." }] },
 
   { word:"defect", pron:"디펙트", pos:"n", level:"B2", meanings:["결함","흠"],
     syn:["flaw","fault","imperfection"], ant:["perfection"],
@@ -493,10 +485,6 @@ window.VOCAB_D = [
     syn:["prove","illustrate","exhibit"],
     ex:[{ s:"The study aims to {{}} a clear link between diet and sleep.", f:"demonstrate", ko:"그 연구는 식단과 수면 사이의 분명한 연관을 입증하려 한다." }] },
 
-  { word:"demoralize", pron:"디모럴라이즈", pos:"v", level:"C2", meanings:["사기를 꺾다","의기소침하게 만들다"],
-    syn:["dishearten","discourage","dispirit"], ant:["encourage"],
-    ex:[{ s:"Repeated defeats began to {{}} the entire team.", f:"demoralize", ko:"반복된 패배가 팀 전체의 사기를 꺾기 시작했다." }] },
-
   { word:"denounce", pron:"디나운스", pos:"v", level:"C1", meanings:["비난하다","고발하다"],
     syn:["condemn","censure","decry"], ant:["praise"],
     ex:[{ s:"Several leaders publicly {{}} the new restrictions.", f:"denounced", ko:"여러 지도자가 새 규제를 공개적으로 비난했다." }] },
@@ -607,9 +595,6 @@ window.VOCAB_D = [
   { word:"describe", pron:"디스크라이브", pos:"v", level:"B1", meanings:["묘사하다","설명하다"],
     syn:["depict","portray","recount"],
     ex:[{ s:"Witnesses could not clearly {{}} what they had seen.", f:"describe", ko:"목격자들은 자신들이 본 것을 분명히 묘사할 수 없었다." }] },
-
-  { word:"desertification", pron:"디저티피케이션", pos:"n", level:"C2", meanings:["사막화"],
-    ex:[{ s:"Overgrazing has accelerated {{}} across the region.", f:"desertification", ko:"과도한 방목이 그 지역 전역의 사막화를 가속시켰다." }] },
 
   { word:"deserve", exams:["수능"], pron:"디저브", pos:"v", level:"B2", meanings:["~할 자격이 있다","받을 만하다"],
     syn:["merit","earn","warrant"],
@@ -1047,10 +1032,6 @@ window.VOCAB_D = [
   { word:"disposable", exams:["공무원","수능"], pron:"디스포저블", pos:"adj", level:"B2", meanings:["일회용의","쓰고 버리는"],
     syn:["throwaway","single-use","expendable"], ant:["reusable"],
     ex:[{ s:"The café stopped using {{}} cups last year.", f:"disposable", ko:"그 카페는 지난해 일회용 컵 사용을 중단했다." }] },
-
-  { word:"dispositional", pron:"디스퍼지셔널", pos:"adj", level:"C2", meanings:["기질적인","성향의"],
-    syn:["temperamental","innate","inborn"],
-    ex:[{ s:"The study separates {{}} factors from situational ones.", f:"dispositional", ko:"그 연구는 기질적 요인을 상황적 요인과 구분한다." }] },
 
   { word:"disprove", pron:"디스프루브", pos:"v", level:"C1", meanings:["반증하다","틀렸음을 입증하다"],
     syn:["refute","rebut","invalidate"], ant:["prove"],

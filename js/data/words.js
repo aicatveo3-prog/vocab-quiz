@@ -664,10 +664,6 @@ window.VOCAB = [
     syn:["disturb","upset","stir"], ant:["calm"],
     ex:[{ s:"The rumor began to {{}} the whole village.", f:"agitate", ko:"그 소문이 마을 전체를 동요시키기 시작했다." }] },
 
-  { word:"agonize", pron:"애거나이즈", pos:"v", level:"C1", meanings:["고민하다","고뇌하다"],
-    syn:["fret","brood","struggle"],
-    ex:[{ s:"She continued to {{}} over the decision for weeks.", f:"agonize", ko:"그녀는 몇 주 동안 그 결정을 두고 계속 고민했다." }] },
-
   { word:"agonizing", pron:"애거나이징", pos:"adj", level:"C1", meanings:["고통스러운","괴로운"],
     syn:["excruciating","painful","harrowing"], ant:["pleasant"],
     ex:[{ s:"They faced an {{}} wait for the results.", f:"agonizing", ko:"그들은 결과를 기다리는 괴로운 시간을 보냈다." }] },
@@ -1258,10 +1254,6 @@ window.VOCAB = [
   { word:"aspiring", exams:["수능"], pron:"어스파이어링", pos:"adj", level:"C1", meanings:["장차 ~가 되려는","포부 있는"],
     syn:["would-be","ambitious","budding"],
     ex:[{ s:"The course is aimed at {{}} writers.", f:"aspiring", ko:"그 강좌는 장차 작가가 되려는 사람들을 위한 것이다." }] },
-
-  { word:"assail", pron:"어세일", pos:"v", level:"C2", meanings:["공격하다","괴롭히다"],
-    syn:["attack","assault","beset"], ant:["defend"],
-    ex:[{ s:"Doubts began to {{}} her at midnight.", f:"assail", ko:"자정이 되자 의심이 그녀를 괴롭히기 시작했다." }] },
 
   { word:"assassinate", pron:"어새시네이트", pos:"v", level:"C1", meanings:["암살하다"],
     syn:["murder","kill","eliminate"],
