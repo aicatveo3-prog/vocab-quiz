@@ -52,10 +52,6 @@ window.VOCAB_B = [
     syn:["chatter","prattle","murmur"], ant:["silence"],
     ex:[{ s:"The {{}} of the crowd filled the great hall.", f:"babble", ko:"군중의 왁자지껄한 소리가 큰 홀을 가득 채웠다." }] },
 
-  { word:"back-and-forth", pron:"백 앤 포스", pos:"adj", level:"B2", meanings:["오가는","주고받는"],
-    syn:["alternating","reciprocal","two-way"], ant:["one-way"],
-    ex:[{ s:"After a long {{}} debate, the two sides reached a deal.", f:"back-and-forth", ko:"오랜 공방 끝에 양측은 합의에 이르렀다." }] },
-
   { word:"backfire", pron:"백파이어", pos:"v", level:"B2", meanings:["역효과를 낳다","계획과 반대로 되다"],
     syn:["boomerang","misfire","rebound"], ant:["succeed"],
     ex:[{ s:"The marketing stunt {{}} and hurt sales instead.", f:"backfired", ko:"그 마케팅 이벤트는 역효과를 낳아 오히려 매출을 떨어뜨렸다." }] },
@@ -686,11 +682,6 @@ window.VOCAB_B = [
   { word:"boundless", exams:["수능"], pron:"바운들리스", pos:"adj", level:"C1", meanings:["무한한","끝이 없는"],
     syn:["limitless","infinite","endless"], ant:["limited"],
     ex:[{ s:"She seems to have {{}} energy for her work.", f:"boundless", ko:"그녀는 자기 일에 끝없는 에너지를 가진 듯하다." }] },
-
-  /* ── br ────────────────────────────────────── */
-  { word:"brainwash", pron:"브레인워시", pos:"v", level:"C1", meanings:["세뇌시키다"],
-    syn:["indoctrinate","condition","manipulate"],
-    ex:[{ s:"The regime tried to {{}} its citizens through the media.", f:"brainwash", ko:"그 정권은 언론을 통해 국민을 세뇌시키려 했다." }] },
 
   { word:"branch", exams:["수능"], pron:"브랜치", pos:"n", level:"B1", meanings:["나뭇가지","지점"],
     syn:["limb","bough","division"],

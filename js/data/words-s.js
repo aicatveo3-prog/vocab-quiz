@@ -637,10 +637,6 @@ window.VOCAB_S = [
     syn:["guarding oneself","protection of one's own body","act of fending off attack"],
     ex:[{ s:"She acted purely in {{}}.", f:"self-defense", ko:"그녀는 순전히 자기 방어로 행동했다." }] },
 
-  { word:"self-employed", pron:"셀프 임플로이드", pos:"adj", level:"B2", meanings:["자영업의"],
-    syn:["working for oneself","running one's own trade","not on a payroll"],
-    ex:[{ s:"He has been {{}} for ten years.", f:"self-employed", ko:"그는 십 년째 자영업을 해 왔다." }] },
-
   /* 승격 ㊱ — 사전 단일값 유지. 참조 altruistic(A)·greedy(G) 두 곳의 화면은
      바뀌지 않는다. */
   { word:"selfless", pron:"셀플리스", pos:"adj", level:"C1", meanings:["이타적인"],
@@ -956,10 +952,6 @@ window.VOCAB_S = [
   { word:"shortcoming", pron:"숏커밍", pos:"n", level:"B2", meanings:["단점","결점"],
     syn:["fault","weak point","failing in something"],
     ex:[{ s:"Every plan has one {{}}.", f:"shortcoming", ko:"어떤 계획에나 단점 하나는 있다." }] },
-
-  { word:"short-sighted", pron:"숏 사이티드", pos:"adj", level:"C1", meanings:["근시안적인"],
-    syn:["lacking foresight","seeing only the near","thinking no further ahead"],
-    ex:[{ s:"Cutting research is a {{}} move.", f:"short-sighted", ko:"연구를 줄이는 것은 근시안적인 조치다." }] },
 
   { word:"shoulder", pron:"숄더", pos:"v", level:"C1", meanings:["떠맡다"],
     syn:["take on a burden","bear the weight of","accept as one's own load"],
@@ -2430,10 +2422,6 @@ window.VOCAB_S = [
   { word:"summon", exams:["공무원"], pron:"서먼", pos:"v", level:"C1", meanings:["소환하다","불러 모으다"],
     syn:["call out","convene","conjure up"],
     ex:[{ s:"The court will {{}} both sides.", f:"summon", ko:"법원이 양쪽을 소환할 것이다." }] },
-
-  { word:"sun-baked", pron:"선 베이크트", pos:"adj", level:"C2", meanings:["햇볕에 말린"],
-    syn:["dried by the sun","hardened in sunlight","parched by heat"],
-    ex:[{ s:"They walked on {{}} clay.", f:"sun-baked", ko:"그들은 햇볕에 말린 진흙 위를 걸었다." }] },
 
   /* 승격 207 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 concave(C) 한 곳의 설명이
      '가라앉은; 움푹한' 에서 '가라앉은, 움푹한' 이 된다. */

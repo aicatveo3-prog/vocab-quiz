@@ -1921,14 +1921,6 @@ window.VOCAB_C = [
     syn:["shell","layer","rind"],
     ex:[{ s:"The Earth's {{}} is thinnest under the sea.", f:"crust", ko:"지구의 지각은 바다 아래가 가장 얇다." }] },
 
-  { word:"crutch", pron:"크러치", pos:"n", level:"B2", meanings:["목발"],
-    syn:["support","prop","cane"],
-    ex:[{ s:"He walked in with a single {{}}.", f:"crutch", ko:"그는 목발 하나를 짚고 들어왔다." }] },
-
-  { word:"crystal-clear", pron:"크리스털 클리어", pos:"adj", level:"B2", meanings:["아주 투명한","수정같이 맑은"],
-    syn:["transparent","limpid","obvious"], ant:["murky"],
-    ex:[{ s:"The water in the pool is {{}}.", f:"crystal-clear", ko:"그 못의 물은 아주 투명하다." }] },
-
   { word:"crystallize", pron:"크리스털라이즈", pos:"v", level:"C2", meanings:["확고해지다","구체화되다"],
     syn:["solidify","harden","form"], ant:["dissolve"],
     ex:[{ s:"Her vague doubts slowly began to {{}}.", f:"crystallize", ko:"그녀의 막연한 의심이 서서히 구체화되기 시작했다." }] },
@@ -1970,10 +1962,6 @@ window.VOCAB_C = [
   { word:"cunning", pron:"커닝", pos:"adj", level:"B2", meanings:["교활한","간사한"],
     syn:["sly","crafty","devious"], ant:["naive"],
     ex:[{ s:"A {{}} fox learned to lift the latch.", f:"cunning", ko:"교활한 여우가 걸쇠를 들어 올리는 법을 익혔다." }] },
-
-  { word:"cure-all", pron:"큐어올", pos:"n", level:"C1", meanings:["만병통치약"],
-    syn:["panacea","remedy","fix"],
-    ex:[{ s:"There is no {{}} for rural poverty.", f:"cure-all", ko:"농촌 빈곤에 만병통치약은 없다." }] },
 
   { word:"curfew", pron:"커퓨", pos:"n", level:"C1", meanings:["통행금지령"],
     syn:["restriction","ban","lockdown"],

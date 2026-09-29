@@ -571,11 +571,6 @@ window.VOCAB_W = [
     syn:["cut in the flesh","hurt in the body","open sore from a blow"],
     ex:[{ s:"The {{}} healed slowly.", f:"wound", ko:"그 상처는 천천히 나았다." }] },
 
-  /* résumé(이력서, 요약)·conclusion(결론, 결말) 과 맞물려 배제된다. */
-  { word:"wrap-up", pron:"랩 업", pos:"n", level:"C1", meanings:["요약","결말"],
-    syn:["summing up at the end","closing account","final round-up"],
-    ex:[{ s:"He gave a short {{}}.", f:"wrap-up", ko:"그는 짧은 요약을 했다." }] },
-
   /* outrage(격분, 분노)·resentment(분노, 원한) 와 맞물려 배제된다. */
   { word:"wrath", pron:"래스", pos:"n", level:"C2", meanings:["분노","노여움"],
     syn:["outrage","resentment","burning anger"],

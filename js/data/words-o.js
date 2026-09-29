@@ -463,10 +463,6 @@ window.VOCAB_O = [
     syn:["biased","slanted","unfair to one side"], ant:["even-handed"],
     ex:[{ s:"The match was {{}} from the first minute.", f:"one-sided", ko:"그 경기는 첫 분부터 일방적이었다." }] },
 
-  { word:"one-size-fits-all", pron:"원 사이즈 핏츠 올", pos:"adj", level:"C1", meanings:["두루 적용되는"],
-    syn:["uniform for everyone","standard for all cases","applied without exception"],
-    ex:[{ s:"A {{}} rule rarely suits every school.", f:"one-size-fits-all", ko:"두루 적용되는 규칙이 모든 학교에 맞는 일은 드물다." }] },
-
   /* 승격 36 — 사전 표현 '진행 중인, 계속되는' 을 글자까지 지켰다
      (continuous, C · in progress, I). in progress 와 첫 뜻이 같지만 서로 유의어다. */
   { word:"ongoing", exams:["수능"], pron:"온고잉", pos:"adj", level:"B2", meanings:["진행 중인","계속되는"],

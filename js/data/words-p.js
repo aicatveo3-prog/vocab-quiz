@@ -265,11 +265,6 @@ window.VOCAB_P = [
     syn:["corresponding","side-by-side","alike in form"],
     ex:[{ s:"The two roads run {{}} for a mile.", f:"parallel", ko:"두 길은 1마일 동안 평행하게 뻗는다." }] },
 
-  /* 승격 ⑦ — 사전 표현과 글자까지 같다(cripple, C). */
-  { word:"paralyze", pron:"패럴라이즈", pos:"v", level:"B2", meanings:["마비시키다"],
-    syn:["cripple","make powerless","rob of movement"],
-    ex:[{ s:"The strike could {{}} the whole port.", f:"paralyze", ko:"그 파업은 항구 전체를 마비시킬 수 있었다." }] },
-
   /* paramount 의 원본 뜻 '가장 중요한' 은 cardinal(C)·foremost(F) 의 첫 뜻과
      같아서 '무엇보다 중요한' 으로 갈랐다. */
   { word:"paramount", exams:["공무원"], pron:"패러마운트", pos:"adj", level:"C1", meanings:["무엇보다 중요한","으뜸의"],
@@ -554,11 +549,6 @@ window.VOCAB_P = [
   { word:"peer", pron:"피어", pos:"n", level:"B2", meanings:["또래","동료"],
     syn:["colleague","one of the same age","equal in standing"],
     ex:[{ s:"Teenagers care what their {{}} think.", f:"peer", ko:"십대는 또래가 어떻게 생각하는지를 신경 쓴다." }] },
-
-  /* 원본은 '사용자간 직접 접속(P2P)' 였다. 약어 괄호를 걷고 띄어쓰기를 바로잡았다. */
-  { word:"peer-to-peer", pron:"피어 투 피어", pos:"adj", level:"C1", meanings:["사용자 간 직접 접속의"],
-    syn:["user-to-user","without a middle server","direct between users"],
-    ex:[{ s:"The app uses a {{}} network.", f:"peer-to-peer", ko:"그 앱은 사용자 간 직접 접속 망을 쓴다." }] },
 
   /* 승격 32 — 사전값 '벌, 처벌' 의 첫 뜻이 한 글자여서 선택지에서 뜻으로 읽기
      빠듯했다. 원본의 '벌금' 을 첫 자리에 두고, 챕터 17 의 punishment(처벌, 형벌)
@@ -2142,10 +2132,6 @@ window.VOCAB_P = [
        표제어의 목록에 동사가 끼게 된다. */
     syn:["beat of the heart","beating in the veins","regular beat"],
     ex:[{ s:"The nurse checked my {{}}.", f:"pulse", ko:"간호사가 내 맥박을 확인했다." }] },
-
-  { word:"punctual", pron:"펑추얼", pos:"adj", level:"B2", meanings:["시간을 엄수하는"],
-    syn:["on time","never late","keeping to the hour"],
-    ex:[{ s:"He is always {{}}.", f:"punctual", ko:"그는 언제나 시간을 엄수한다." }] },
 
   { word:"punctuation", pron:"펑추에이션", pos:"n", level:"B2", meanings:["구두점","구두법"],
     syn:["marks in writing","commas and periods","stops in a sentence"],

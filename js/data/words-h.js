@@ -112,10 +112,6 @@ window.VOCAB_H = [
     syn:["conceal","nurture","take in and hide"],
     ex:[{ s:"He continued to {{}} doubts about the plan.", f:"harbor", ko:"그는 그 계획에 대한 의심을 계속 품었다." }] },
 
-  { word:"hard-wired", pron:"하드 와이어드", pos:"adj", level:"C1", meanings:["타고난","고정된"],
-    syn:["innate","built-in","ingrained"],
-    ex:[{ s:"Some researchers believe the fear of snakes is {{}}.", f:"hard-wired", ko:"일부 연구자는 뱀에 대한 두려움이 타고난 것이라고 믿는다." }] },
-
   /* 원본 오류 — '비슷한 의견을 가진' 은 like-minded 의 뜻이다. 명백한 오류.
      a hard-and-fast rule = 엄격한·변경 불가한 규칙이다. */
   { word:"hard-and-fast", pron:"하드 앤드 패스트", pos:"adj", level:"C1", meanings:["엄격한","변경할 수 없는"],

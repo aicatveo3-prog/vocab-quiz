@@ -1254,12 +1254,6 @@ window.VOCAB_R = [
     syn:["coming from it","following as an outcome","produced by the cause"],
     ex:[{ s:"The {{}} delay cost money.", f:"resultant", ko:"그 결과로 생긴 지연이 돈을 잡아먹었다." }] },
 
-  /* 원본은 '요약, 개요; 이력서' 였다. 수능에서 쓰이는 쪽은 '이력서' 라 앞세웠다.
-     악센트가 든 표제어다. */
-  { word:"résumé", pron:"레주메", pos:"n", level:"B2", meanings:["이력서","요약"],
-    syn:["record of one's career","short account of oneself","summary sheet"],
-    ex:[{ s:"Send your {{}} by Friday.", f:"résumé", ko:"금요일까지 이력서를 보내세요." }] },
-
   /* revitalize(활력을 불어넣다 · 챕터 12) 와 갈랐다 — 원본은 둘 다 '소생시키다' 였다. */
   { word:"resuscitate", pron:"리서시테이트", pos:"v", level:"C2", meanings:["소생시키다"],
     syn:["bring back to life","revive the breathing","save from death"],
@@ -1501,9 +1495,6 @@ window.VOCAB_R = [
   { word:"rotation", exams:["공무원","수능"], pron:"로테이션", pos:"n", level:"B2", meanings:["순환","교대"],
     syn:["taking turns in order","cycle of change","going round in sequence"],
     ex:[{ s:"Crops are grown in {{}}.", f:"rotation", ko:"작물은 순환으로 재배된다." }] },
-
-  { word:"rote instruction", pron:"로트 인스트럭션", pos:"phr", level:"C2", meanings:["암기식 교육"],
-    syn:["teaching by memorizing","drilling without understanding","learning by heart only"] },
 
   /* 승격 137 — 사전의 쌍반점만 쉼표로 갈랐다(approximate·bumpy·coarse·crude
      — 네 곳). 원본의 '고르지 않은' 은 bumpy 자리라 사전값 '대략의' 를 살렸다. */

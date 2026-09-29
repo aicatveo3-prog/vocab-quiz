@@ -140,10 +140,6 @@ window.VOCAB_L = [
     syn:["property owner","lessor","proprietor"], ant:["tenant"],
     ex:[{ s:"The {{}} raised the rent without any warning.", f:"landlord", ko:"집주인이 아무 예고 없이 임대료를 올렸다." }] },
 
-  { word:"landmine", pron:"랜드마인", pos:"n", level:"C1", meanings:["지뢰"],
-    syn:["buried explosive","mine","booby trap"],
-    ex:[{ s:"Clearing every {{}} took well over a decade.", f:"landmine", ko:"모든 지뢰를 제거하는 데 10년이 훨씬 넘게 걸렸다." }] },
-
   /* 승격 ① — GLOSS '효력을 잃다' 를 첫 자리에 지켰다. expire(syn) 가 참조한다.
      원본의 '소멸되다' 는 같은 갈래라 둘째 자리에 붙였다.
      원본 첫 갈래 '깜빡함'(명사)은 pos 가 v 라 담지 못했다. */
@@ -431,12 +427,6 @@ window.VOCAB_L = [
   { word:"light", pron:"라이트", pos:"v", level:"B1", meanings:["빛을 비추다","불을 붙이다"],
     syn:["illuminate","ignite","kindle"],
     ex:[{ s:"She struck a match to {{}} the candle.", f:"light", ko:"그녀는 촛불을 붙이려고 성냥을 켰다." }] },
-
-  /* lightning-fast·lightweight 는 앞 네 글자가 같고 품사도 둘 다 adj 라 같은
-     보드에 올 수 있다. 다만 뜻이 '매우 빠른' 과 '가벼운' 으로 달라 무리가 없다. */
-  { word:"lightning-fast", pron:"라이트닝 패스트", pos:"adj", level:"C1", meanings:["매우 빠른","전광석화의"],
-    syn:["blistering","split-second","rapid-fire"],
-    ex:[{ s:"His {{}} reflexes saved the goal.", f:"lightning-fast", ko:"그의 매우 빠른 반사 신경이 골을 막았다." }] },
 
   { word:"lightweight", pron:"라이트웨이트", pos:"adj", level:"B2", meanings:["가벼운","경량의"],
     syn:["featherweight","portable","easy to carry"], ant:["heavy"],

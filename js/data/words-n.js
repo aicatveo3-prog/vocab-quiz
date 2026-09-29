@@ -322,10 +322,6 @@ window.VOCAB_N = [
     syn:["not-for-profit","charitable","run for public good"], ant:["commercial"],
     ex:[{ s:"She works for a {{}} group that plants trees.", f:"nonprofit", ko:"그녀는 나무를 심는 비영리의 단체에서 일한다." }] },
 
-  { word:"non-refundable", pron:"난 리펀더블", pos:"adj", level:"B2", meanings:["환불이 안 되는"],
-    syn:["not returnable","paid for good","without money back"],
-    ex:[{ s:"The deposit is {{}} once the room is booked.", f:"non-refundable", ko:"방을 예약하면 보증금은 환불이 안 된다." }] },
-
   { word:"nonsense", exams:["수능"], pron:"난센스", pos:"n", level:"B1", meanings:["말도 안 되는 말","허튼소리"],
     syn:["rubbish","drivel","empty talk"],
     ex:[{ s:"He dismissed the rumor as {{}}.", f:"nonsense", ko:"그는 그 소문을 말도 안 되는 말이라고 일축했다." }] },

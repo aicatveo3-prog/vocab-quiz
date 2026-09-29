@@ -184,10 +184,6 @@ window.VOCAB = [
     syn:["truant","no-show","nonattendee"], ant:["attendee"],
     ex:[{ s:"The teacher recorded the name of each {{}}.", f:"absentee", ko:"교사는 결석자 각각의 이름을 기록했다." }] },
 
-  { word:"absent-minded", pron:"앱센트 마인디드", pos:"adj", level:"C1", meanings:["건망증이 심한","넋이 나간"],
-    syn:["forgetful","inattentive","distracted"], ant:["attentive"],
-    ex:[{ s:"My {{}} uncle left his keys in the fridge.", f:"absent-minded", ko:"건망증이 심한 삼촌은 열쇠를 냉장고에 두었다." }] },
-
   { word:"absolute", exams:["수능"], pron:"앱설루트", pos:"adj", level:"B2", meanings:["완전한","절대적인"],
     syn:["complete","total","utter"], ant:["relative"],
     ex:[{ s:"The king once held {{}} power over his subjects.", f:"absolute", ko:"그 왕은 한때 백성에 대해 절대적인 권력을 쥐고 있었다." }] },
@@ -1429,9 +1425,6 @@ window.VOCAB = [
 
   { word:"at the moment", pron:"앳 더 모먼트", pos:"phr", level:"B1", meanings:["바로 지금","현재"],
     syn:["right now","currently","presently"] },
-
-  { word:"at wit's end", pron:"앳 위츠 엔드", pos:"phr", level:"C1", meanings:["어찌할 바를 모르는","속수무책인"],
-    syn:["desperate","stumped","at a loss"] },
 
   { word:"atheist", pron:"에이시이스트", pos:"n", level:"C1", meanings:["무신론자"],
     syn:["nonbeliever","freethinker","skeptic"], ant:["believer"],

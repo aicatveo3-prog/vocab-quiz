@@ -627,15 +627,6 @@ window.VOCAB_U = [
     syn:["advocate","hold up from under","stand behind"],
     ex:[{ s:"The court will {{}} the ruling.", f:"uphold", ko:"법원은 그 판결을 지지할 것이다." }] },
 
-  /* ★ 첫 뜻을 '맨 위의' 로 갈랐다. '가장 높은' 을 앞에 두면 elevated·lofty·
-     notorious·high-pitched·renowned 의 '높은' 과도, cardinal·foremost·salient·
-     marginal 의 '가장' 과도 눈으로 갈리지 않는다. 둘째 갈래로 남긴 '가장 높은'
-     이 elevated 의 '높은' 을 품어 그쪽은 자동 배제까지 된다. 교재의 '최고의'
-     는 superb·top-notch 자리다. */
-  { word:"uppermost", pron:"어퍼모스트", pos:"adj", level:"C1", meanings:["맨 위의","가장 높은"],
-    syn:["at the very top","highest of all","on top of everything"],
-    ex:[{ s:"The {{}} shelf is empty.", f:"uppermost", ko:"맨 위 선반은 비어 있다." }] },
-
   /* 승격 ㉒ — 사전 글자 유지. 참조 ethical(E)·moral(M) 두 곳의 화면은 바뀌지
      않는다. dishonest(부정직한, 속이는) 가 '정직한' 을 품어 맞물려 배제된다.
      교재의 '똑바른, 꼿꼿한' 은 버렸다. */
