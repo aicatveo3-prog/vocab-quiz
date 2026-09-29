@@ -265,10 +265,6 @@ window.VOCAB_D = [
     syn:["corruption","degeneracy","immorality"], ant:["virtue"],
     ex:[{ s:"The novel portrays the {{}} of a fading empire.", f:"decadence", ko:"그 소설은 쇠락하는 제국의 타락을 그린다." }] },
 
-  /* decaffeinate — 대체할 낱말이 없어 syn 을 비워 둔다 */
-  { word:"decaffeinate", pron:"디캐퍼네이트", pos:"v", level:"C2", meanings:["카페인을 제거하다"],
-    ex:[{ s:"Producers {{}} the beans before roasting them.", f:"decaffeinate", ko:"생산자들은 볶기 전에 원두에서 카페인을 제거한다." }] },
-
   { word:"decay", exams:["공무원","수능"], pron:"디케이", pos:"v", level:"B2", meanings:["썩다","쇠퇴하다"],
     syn:["rot","decompose","deteriorate"], ant:["flourish"],
     ex:[{ s:"Sugar left on the teeth makes them {{}} far more quickly.", f:"decay", ko:"치아에 남은 설탕은 치아를 훨씬 빨리 썩게 한다." }] },
@@ -783,10 +779,6 @@ window.VOCAB_D = [
   { word:"dew point", pron:"듀 포인트", pos:"n", level:"C2", meanings:["이슬점"],
     ex:[{ s:"Fog forms when the air cools below the {{}}.", f:"dew point", ko:"공기가 이슬점 아래로 식으면 안개가 생긴다." }] },
 
-  { word:"dexterity", pron:"덱스테러티", pos:"n", level:"C2", meanings:["손재주","민첩함"],
-    syn:["nimbleness","skill","adroitness"], ant:["clumsiness"],
-    ex:[{ s:"Microsurgery demands extraordinary manual {{}}.", f:"dexterity", ko:"미세 수술은 대단한 손재주를 요구한다." }] },
-
   { word:"diabetes", pron:"다이어비티스", pos:"n", level:"B2", meanings:["당뇨병"],
     ex:[{ s:"Regular exercise lowers the risk of {{}}.", f:"diabetes", ko:"규칙적인 운동은 당뇨병 위험을 낮춘다." }] },
 
@@ -882,9 +874,6 @@ window.VOCAB_D = [
     syn:["dwindle","lessen","shrink"], ant:["augment"],
     ex:[{ s:"Interest in the sport began to {{}} after the scandal.", f:"diminish", ko:"그 스캔들 이후 그 종목에 대한 관심이 줄어들기 시작했다." }] },
 
-  { word:"dimple", pron:"딤플", pos:"n", level:"C2", meanings:["보조개","오목한 곳"],
-    ex:[{ s:"A small {{}} appeared whenever she smiled.", f:"dimple", ko:"그녀가 웃을 때마다 작은 보조개가 생겼다." }] },
-
   { word:"dip into", pron:"딥 인투", pos:"phr", level:"C1", meanings:["살짝 담그다","조금씩 쓰다"],
     syn:["dunk","delve into","draw on"] },
 
@@ -966,10 +955,6 @@ window.VOCAB_D = [
   { word:"discharge", pron:"디스차지", pos:"v", level:"C1", meanings:["방출하다","내보내다"],
     syn:["release","emit","dismiss"],
     ex:[{ s:"The factory may not {{}} untreated waste into the river.", f:"discharge", ko:"그 공장은 처리되지 않은 폐기물을 강에 방출해서는 안 된다." }] },
-
-  { word:"disciple", pron:"디사이플", pos:"n", level:"C2", meanings:["제자","문하생"],
-    syn:["follower","pupil","adherent"],
-    ex:[{ s:"He was the most devoted {{}} of the old master.", f:"disciple", ko:"그는 그 노스승의 가장 헌신적인 제자였다." }] },
 
   { word:"discipline", exams:["공무원","수능"], pron:"디서플린", pos:"n", level:"B2", meanings:["규율","훈육"],
     syn:["order","training","self-control"],

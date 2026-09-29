@@ -52,12 +52,6 @@ window.VOCAB_Z = [
     syn:["enthusiasm","fervor","burning keenness"],
     ex:[{ s:"She worked with great {{}}.", f:"zeal", ko:"그녀는 큰 열의로 일했다." }] },
 
-  /* 승격 ② — 사전 글자 유지. 참조 ardent(A)·enthusiastic(E) 두 곳의 화면은
-     바뀌지 않는다. 위 zeal(명사) 과 품사로 갈랐다. */
-  { word:"zealous", pron:"젤러스", pos:"adj", level:"C2", meanings:["열의에 찬","열성적인"],
-    syn:["ardent","enthusiastic","full of keen spirit"],
-    ex:[{ s:"He is a {{}} supporter.", f:"zealous", ko:"그는 열의에 찬 지지자다." }] },
-
   /* '확대하다' 를 품어 amplify·enlarge·magnify 셋과 맞물려 배제된다. */
   { word:"zoom in on", pron:"줌 인 온", pos:"phr", level:"C1", meanings:["서서히 확대하다"],
     syn:["draw slowly closer on","make larger bit by bit","bring into close view"] }

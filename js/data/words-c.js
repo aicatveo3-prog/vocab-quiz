@@ -395,10 +395,6 @@ window.VOCAB_C = [
     syn:["suppression","restriction","control"], ant:["freedom"],
     ex:[{ s:"Writers fled the country to escape {{}}.", f:"censorship", ko:"작가들은 검열을 피해 그 나라를 떠났다." }] },
 
-  { word:"censure", pron:"센셔", pos:"v", level:"C2", meanings:["비난하다","책망"],
-    syn:["condemn","rebuke","reproach"], ant:["praise"],
-    ex:[{ s:"The committee voted to {{}} its own chairman.", f:"censure", ko:"위원회는 자기 위원장을 비난하기로 표결했다." }] },
-
   { word:"centennial", pron:"센테니얼", pos:"adj", level:"C2", meanings:["100주년의","100년마다의"],
     syn:["hundredth","anniversary","centenary"],
     ex:[{ s:"The city planned a {{}} parade for its founding.", f:"centennial", ko:"그 도시는 건립 100주년 행진을 계획했다." }] },
@@ -611,10 +607,6 @@ window.VOCAB_C = [
   { word:"circumstance", exams:["공무원","수능"], pron:"서컴스턴스", pos:"n", level:"B2", meanings:["상황","환경"],
     syn:["situation","condition","context"],
     ex:[{ s:"Under no {{}} should you open that door.", f:"circumstance", ko:"어떤 상황에서도 그 문을 열어서는 안 된다." }] },
-
-  { word:"circumstantial", pron:"서컴스탠셜", pos:"adj", level:"C2", meanings:["정황적인","부수적인"],
-    syn:["indirect","inferred","incidental"], ant:["direct"],
-    ex:[{ s:"The case rested on {{}} evidence alone.", f:"circumstantial", ko:"그 사건은 정황 증거만에 의지하고 있었다." }] },
 
   { word:"cite", pron:"사이트", pos:"v", level:"B2", meanings:["인용하다","언급하다"],
     syn:["quote","mention","reference"],
@@ -1251,10 +1243,6 @@ window.VOCAB_C = [
     syn:["admit","disclose","own up"], ant:["deny"],
     ex:[{ s:"He finally {{}} to taking the money.", f:"confessed", ko:"그는 결국 돈을 가져갔다고 자백했다." }] },
 
-  { word:"confessional", pron:"컨페셔널", pos:"n", level:"C2", meanings:["고해실"],
-    syn:["booth","cubicle","chamber"],
-    ex:[{ s:"A curtain hung across the old {{}}.", f:"confessional", ko:"낡은 고해실에 커튼이 드리워져 있었다." }] },
-
   { word:"confidence", exams:["공무원","수능"], pron:"칸피던스", pos:"n", level:"B1", meanings:["신뢰","자신감"],
     syn:["assurance","trust","belief"], ant:["doubt"],
     ex:[{ s:"Losing twice shook his {{}} badly.", f:"confidence", ko:"두 번의 패배는 그의 자신감을 크게 흔들었다." }] },
@@ -1270,10 +1258,6 @@ window.VOCAB_C = [
   { word:"confirm", exams:["공무원"], pron:"컨펌", pos:"v", level:"B1", meanings:["확인하다","확실히 하다"],
     syn:["verify","validate","certify"], ant:["refute"],
     ex:[{ s:"Two witnesses {{}} his version of events.", f:"confirmed", ko:"두 증인이 그의 진술을 확인해 주었다." }] },
-
-  { word:"confiscate", pron:"칸피스케이트", pos:"v", level:"C2", meanings:["몰수하다","압수하다"],
-    syn:["seize","impound","appropriate"], ant:["restore"],
-    ex:[{ s:"Guards will {{}} any glass bottle at the gate.", f:"confiscate", ko:"경비원은 정문에서 유리병을 모두 압수한다." }] },
 
   { word:"conflict", exams:["공무원","수능"], pron:"칸플릭트", pos:"n", level:"B1", meanings:["갈등","분쟁"],
     /* ★ syn 의 "struggle" 을 "open quarrel" 로 바꿨다. struggle 은 S 세트에서
@@ -1694,10 +1678,6 @@ window.VOCAB_C = [
   { word:"corresponding", pron:"코러스판딩", pos:"adj", level:"B2", meanings:["상응하는","해당하는"],
     syn:["equivalent","matching","parallel"], ant:["unrelated"],
     ex:[{ s:"Sales rose in the {{}} month last year.", f:"corresponding", ko:"작년 같은 달에도 매출이 올랐다." }] },
-
-  { word:"correspondingly", pron:"코러스판딩리", pos:"adv", level:"C1", meanings:["상응하여","그에 맞춰"],
-    syn:["accordingly","proportionally","likewise"],
-    ex:[{ s:"Costs fell and prices dropped {{}}.", f:"correspondingly", ko:"비용이 내려가자 가격도 그에 맞춰 떨어졌다." }] },
 
   { word:"corridor", pron:"코리더", pos:"n", level:"B2", meanings:["복도"],
     syn:["hallway","passage","aisle"],

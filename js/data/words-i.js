@@ -388,12 +388,6 @@ window.VOCAB_I = [
     syn:["unbiased","neutral","objective"], ant:["biased"],
     ex:[{ s:"The dispute was settled by an {{}} mediator.", f:"impartial", ko:"그 분쟁은 공정한 중재자에 의해 해결되었다." }] },
 
-  /* impart·impartial 과 어근이 같지만 품사가 셋 다 달라(v/adj/adv)
-     같은 보드에 안 온다. */
-  { word:"impartially", pron:"임파셜리", pos:"adv", level:"C1", meanings:["공정하게","편견 없이"],
-    syn:["fairly","objectively","evenhandedly"],
-    ex:[{ s:"Judges must treat all parties {{}}.", f:"impartially", ko:"판사는 모든 당사자를 공정하게 대해야 한다." }] },
-
   { word:"impel", pron:"임펠", pos:"v", level:"C1", meanings:["추진하다","재촉하다"],
     syn:["propel","compel","spur"], ant:["deter"],
     ex:[{ s:"Financial pressure {{}} many students to take part-time jobs.", f:"impels", ko:"재정적 압박은 많은 학생이 아르바이트를 하도록 재촉한다." }] },
@@ -1580,13 +1574,6 @@ window.VOCAB_I = [
   { word:"intersection", exams:["수능"], pron:"인터섹션", pos:"n", level:"B2", meanings:["교차로","교차점"],
     syn:["crossroads","crossing","intersecting point"],
     ex:[{ s:"Turn left at the next {{}}.", f:"intersection", ko:"다음 교차로에서 좌회전하세요." }] },
-
-  /* 원본 첫 뜻 '행성 간의' 는 틀렸다 — 행성(planet)이 아니라 항성(star) 사이를
-     뜻한다. 원본 둘째 갈래 '별과 별 사이의' 가 그것을 확인해 준다.
-     '항성 간의' 로 고쳤다. */
-  { word:"interstellar", pron:"인터스텔라", pos:"adj", level:"C2", meanings:["항성 간의","별과 별 사이의"],
-    syn:["between stars","deep-space","galactic"],
-    ex:[{ s:"The probe entered {{}} space in 2012.", f:"interstellar", ko:"그 탐사선은 2012년에 항성 간 공간에 진입했다." }] },
 
   /* 17차의 interfere 는 '간섭하다' 를 첫 자리로 쓴다 — 이쪽은 '개입하다' 다. */
   { word:"intervene", pron:"인터빈", pos:"v", level:"B2", meanings:["개입하다","간섭하다"],

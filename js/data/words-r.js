@@ -637,11 +637,6 @@ window.VOCAB_R = [
     syn:["adjust","keep in order by rule","set to a standard"],
     ex:[{ s:"The law will {{}} online ads.", f:"regulate", ko:"그 법은 온라인 광고를 규제할 것이다." }] },
 
-  /* restore(돌려주다, 복원하다) 와 갈랐다 — 원본의 '회복시키다' 는 쓰지 않았다. */
-  { word:"rehabilitate", pron:"리허빌리테이트", pos:"v", level:"C2", meanings:["재활 치료를 하다","제구실을 하게 돕다"],
-    syn:["nurse back to health","help stand on one's own","bring back into use"],
-    ex:[{ s:"The center will {{}} injured birds.", f:"rehabilitate", ko:"그 센터는 다친 새들에게 재활 치료를 할 것이다." }] },
-
   /* 외래어 '리허설' 을 걷었다. */
   { word:"rehearsal", exams:["공무원"], pron:"리허설", pos:"n", level:"B2", meanings:["예행연습"],
     syn:["practice before the show","trial run of a play","run-through"],

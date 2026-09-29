@@ -171,10 +171,6 @@ window.VOCAB = [
     syn:["sudden","unexpected","hasty"], ant:["gradual"],
     ex:[{ s:"The meeting came to an {{}} end.", f:"abrupt", ko:"회의는 갑작스럽게 끝났다." }] },
 
-  { word:"abruptly", pron:"어브럽틀리", pos:"adv", level:"B2", meanings:["갑자기","불쑥"],
-    syn:["suddenly","unexpectedly","sharply"], ant:["gradually"],
-    ex:[{ s:"The music stopped {{}} in the middle of the song.", f:"abruptly", ko:"음악이 노래 중간에 갑자기 멈췄다." }] },
-
   /* 반의어를 present 에서 in attendance 로 바꿨다. present 가 P 세트 챕터 12
      표제어(제시하다, 주다 · v)로 올라가면서 이 자리의 뜻풀이가 '제시하다, 주다'
      로 바뀌어 버린다 — 결석한의 반의어로는 말이 안 된다. 사전에만 있던 동안에도
@@ -1289,10 +1285,6 @@ window.VOCAB = [
     syn:["climb","rise","mount"], ant:["descend"],
     ex:[{ s:"The path {{}} steeply toward the peak.", f:"ascends", ko:"그 길은 정상을 향해 가파르게 오른다." }] },
 
-  { word:"ascribe", pron:"어스크라이브", pos:"v", level:"C2", meanings:["~의 탓으로 돌리다","~에 귀속시키다"],
-    syn:["attribute","credit","assign"],
-    gov:{ prep:["to"], pat:"ascribe the delay {{}} bad weather", usage:"ascribe A to B : A를 B의 탓으로 돌리다" } },
-
   { word:"ashamed", exams:["수능"], pron:"어셰임드", pos:"adj", level:"B1", meanings:["부끄러운","창피한"],
     syn:["embarrassed","guilty","mortified"], ant:["proud"],
     ex:[{ s:"He felt {{}} of his rude reply.", f:"ashamed", ko:"그는 무례한 대답이 부끄러웠다." }] },
@@ -1337,10 +1329,6 @@ window.VOCAB = [
     syn:["confident","forceful","self-assured"], ant:["timid"],
     ex:[{ s:"A good leader must be {{}} but fair.", f:"assertive", ko:"좋은 지도자는 적극적이되 공정해야 한다." }] },
 
-  { word:"assertiveness", pron:"어서티브니스", pos:"n", level:"C2", meanings:["자기주장","적극성"],
-    syn:["confidence","forcefulness","firmness"], ant:["passivity"],
-    ex:[{ s:"The workshop teaches {{}} without aggression.", f:"assertiveness", ko:"그 워크숍은 공격성 없는 자기주장을 가르친다." }] },
-
   { word:"assess", exams:["공무원","수능"], pron:"어세스", pos:"v", level:"B2", meanings:["평가하다","가늠하다"],
     syn:["evaluate","gauge","appraise"],
     ex:[{ s:"Judges will {{}} each entry on originality.", f:"assess", ko:"심사위원들은 각 출품작을 독창성으로 평가할 것이다." }] },
@@ -1361,10 +1349,6 @@ window.VOCAB = [
   { word:"assignment", pron:"어사인먼트", pos:"n", level:"B1", meanings:["과제","임무"],
     syn:["task","duty","project"],
     ex:[{ s:"The history {{}} is due on Friday.", f:"assignment", ko:"역사 과제는 금요일까지이다." }] },
-
-  { word:"assimilation", pron:"어시밀레이션", pos:"n", level:"C2", meanings:["동화","흡수"],
-    syn:["integration","absorption","incorporation"], ant:["segregation"],
-    ex:[{ s:"The film studies the {{}} of immigrants.", f:"assimilation", ko:"그 영화는 이민자들의 동화를 다룬다." }] },
 
   { word:"assist", exams:["공무원","수능"], pron:"어시스트", pos:"v", level:"B1", meanings:["돕다","보조하다"],
     syn:["help","aid","support"], ant:["hinder"],

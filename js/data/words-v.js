@@ -443,12 +443,6 @@ window.VOCAB_V = [
     syn:["done with great force","fierce in action","full of spirit"],
     ex:[{ s:"He took {{}} exercise daily.", f:"vigorous", ko:"그는 날마다 격렬한 운동을 했다." }] },
 
-  /* 승격 ㉕ — 사전 글자 유지(참조 actively). 위 vigorous(형용사) 와 품사로
-     갈렸고 공통 접두사가 여덟 글자여서 보드에서도 갈린다. */
-  { word:"vigorously", pron:"비거러슬리", pos:"adv", level:"B2", meanings:["힘차게","활발히"],
-    syn:["actively","with great force","in a lively way"],
-    ex:[{ s:"She shook her head {{}}.", f:"vigorously", ko:"그녀는 힘차게 고개를 저었다." }] },
-
   /* 교재의 '비도덕적인' 은 아래 virtuous(도덕적인, 고결한) 의 반대 자리라
      버렸다. */
   { word:"vile", pron:"바일", pos:"adj", level:"C1", meanings:["비열한","야비한"],
@@ -543,10 +537,6 @@ window.VOCAB_V = [
   { word:"vitalize", pron:"바이털라이즈", pos:"v", level:"C2", meanings:["활력을 북돋우다"],
     syn:["put life into","stir into action","give fresh energy to"],
     ex:[{ s:"Fresh air seemed to {{}} her.", f:"vitalize", ko:"맑은 공기가 그녀의 활력을 북돋우는 듯했다." }] },
-
-  { word:"vivacious", pron:"비베이셔스", pos:"adj", level:"C2", meanings:["명랑한","쾌활한"],
-    syn:["merry and bright","lively in spirit","full of cheer"],
-    ex:[{ s:"She was as {{}} as ever.", f:"vivacious", ko:"그녀는 여느 때처럼 명랑했다." }] },
 
   /* 승격 ㉚ — 사전 단일값 유지(참조 graphic). 교재의 '화려한' 은 gorgeous(화려한,
      호화스러운)·ornate 자리라 버렸다. sharp(날카로운, 선명한) 와 맞물려 배제된다. */

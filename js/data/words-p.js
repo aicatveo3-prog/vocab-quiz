@@ -651,10 +651,6 @@ window.VOCAB_P = [
      personalize·personnel·perspective·perspiration·perspire·persuasive).
      품사와 뜻이 서로 달라 같은 보드에서 헷갈리지 않는다.                      */
 
-  { word:"periodically", pron:"피리아디컬리", pos:"adv", level:"B2", meanings:["정기적으로","주기적으로"],
-    syn:["at regular intervals","from time to time in a cycle","every so often"],
-    ex:[{ s:"The alarm is tested {{}}.", f:"periodically", ko:"그 경보기는 정기적으로 점검된다." }] },
-
   /* 승격 39 — 사전 표현 '주변의, 부차적인' 을 글자까지 지켰다
      (central 반의어, C · marginal, M). 원본은 '주변적인, 지엽적인; 주변 장치' 로
      형용사와 명사가 섞여 있었는데 참조 둘이 모두 형용사여서 형용사로 세웠다. */
@@ -1243,10 +1239,6 @@ window.VOCAB_P = [
   { word:"posterity", pron:"파스테러티", pos:"n", level:"C1", meanings:["후세","후손"],
     syn:["future generations","those who come after","coming ages"], ant:["forebears"],
     ex:[{ s:"The letters were kept for {{}}.", f:"posterity", ko:"그 편지들은 후세를 위해 보관되었다." }] },
-
-  { word:"posthumous", pron:"파스추머스", pos:"adj", level:"C2", meanings:["죽은 뒤의","사후의"],
-    syn:["after one's death","granted once dead","published after dying"],
-    ex:[{ s:"He received a {{}} award.", f:"posthumous", ko:"그는 죽은 뒤의 상을 받았다." }] },
 
   /* 승격 90 — 사전 표현과 글자까지 같다(defer, D). 원본은 순서가 거꾸로였다 —
      '미루다' 를 앞세우면 챕터 14 의 procrastinate 와 부딪힌다. */

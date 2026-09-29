@@ -219,10 +219,6 @@ window.VOCAB_M = [
     syn:["undernourishment","starvation","poor diet"],
     ex:[{ s:"Child {{}} fell sharply after the programme began.", f:"malnutrition", ko:"그 사업이 시작된 뒤 아동 영양실조가 급격히 줄었다." }] },
 
-  { word:"malodorous", pron:"맬로더러스", pos:"adj", level:"C2", meanings:["고약한 냄새가 나는"],
-    syn:["smelly","foul-smelling","reeking"], ant:["fragrant"],
-    ex:[{ s:"A {{}} cloud drifted from the factory.", f:"malodorous", ko:"고약한 냄새가 나는 연무가 공장에서 흘러나왔다." }] },
-
   { word:"malpractice", pron:"맬프랙티스", pos:"n", level:"C1", meanings:["의료 사고","위법 행위"],
     syn:["negligence","misconduct","wrongdoing"],
     ex:[{ s:"The surgeon was sued for {{}}.", f:"malpractice", ko:"그 외과의는 의료 사고로 고소당했다." }] },
@@ -708,11 +704,6 @@ window.VOCAB_M = [
     syn:["approach","technique","procedure"],
     ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
 
-  /* method 와 어근이 같지만 품사가 달라(n/adj) 같은 보드에 안 온다. */
-  { word:"methodological", pron:"메써덜라지컬", pos:"adj", level:"C2", meanings:["방법론의","방법론적인"],
-    syn:["procedural","systematic","structural"],
-    ex:[{ s:"The paper has a serious {{}} flaw.", f:"methodological", ko:"그 논문에는 심각한 방법론적 결함이 있다." }] },
-
   { word:"meticulously", pron:"머티큘러슬리", pos:"adv", level:"C1", meanings:["꼼꼼하게","좀스럽게"],
     syn:["painstakingly","scrupulously","with great care"],
     ex:[{ s:"Every joint was {{}} sanded by hand.", f:"meticulously", ko:"모든 이음새가 손으로 꼼꼼하게 사포질되었다." }] },
@@ -730,10 +721,6 @@ window.VOCAB_M = [
   { word:"microbe", pron:"마이크로브", pos:"n", level:"B2", meanings:["미생물","세균"],
     syn:["germ","bacterium","micro-organism"],
     ex:[{ s:"A single {{}} can multiply within hours.", f:"microbe", ko:"한 마리 미생물이 몇 시간 안에 증식할 수 있다." }] },
-
-  { word:"micronutrient", pron:"마이크로뉴트리언트", pos:"n", level:"C2", meanings:["미량 영양소"],
-    syn:["trace nutrient","vitamin or mineral","trace element"],
-    ex:[{ s:"Leafy greens supply several key {{}}.", f:"micronutrients", ko:"잎채소는 몇 가지 핵심 미량 영양소를 공급한다." }] },
 
   { word:"midwife", pron:"미드와이프", pos:"n", level:"B2", meanings:["산파","조산사"],
     syn:["birth attendant","obstetric nurse","delivery nurse"],

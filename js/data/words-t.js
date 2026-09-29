@@ -437,11 +437,6 @@ window.VOCAB_T = [
     syn:["colony","continent","habitat"],
     ex:[{ s:"The tribe defended its {{}}.", f:"territory", ko:"그 부족은 자기 영토를 지켰다." }] },
 
-  /* '간단한' 은 brief(잠시 동안의, 간단한) 자리라 버렸다. */
-  { word:"terse", pron:"터스", pos:"adj", level:"C2", meanings:["간결한","군더더기 없는"],
-    syn:["short and to the point","said in few words","clipped in style"],
-    ex:[{ s:"He gave a {{}} reply.", f:"terse", ko:"그는 간결한 답을 했다." }] },
-
   /* 구·표현이라 예문은 두지 않는다. */
   { word:"test tube", pron:"테스트 튜브", pos:"phr", level:"B2", meanings:["시험관"],
     syn:["glass tube for tests","lab tube","thin vessel for samples"] },

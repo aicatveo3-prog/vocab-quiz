@@ -1335,10 +1335,6 @@ window.VOCAB_E = [
     syn:["involve","require","bring with it"],
     ex:[{ s:"Moving abroad will {{}} more paperwork than you expect.", f:"entail", ko:"외국으로 이주하는 일은 예상보다 많은 서류 작업을 수반한다." }] },
 
-  { word:"entangle", pron:"인탱글", pos:"v", level:"C2", meanings:["얽어매다","꼼짝 못하게 하다"],
-    syn:["ensnare","tangle up","trap"], ant:["disentangle"],
-    ex:[{ s:"Loose nets can {{}} seals and turtles.", f:"entangle", ko:"풀린 그물은 물개와 거북을 얽어맬 수 있다." }] },
-
   /* 원본 '(취임식 등에서) 왕좌에 앉히다' 의 괄호를 풀었다.
      발음은 기존 dethrone("디스론")에 맞춰 '인스론' 으로 적었다 — '로운'이 아니다. */
   { word:"enthrone", pron:"인스론", pos:"v", level:"C2", meanings:["왕좌에 앉히다","즉위시키다"],
@@ -1465,12 +1461,6 @@ window.VOCAB_E = [
   { word:"equivalent", exams:["공무원","수능"], pron:"이퀴벌런트", pos:"adj", level:"C1", meanings:["동등한","상당하는"],
     syn:["comparable","corresponding","tantamount"],
     ex:[{ s:"One cup of this flour is {{}} to two of the old kind.", f:"equivalent", ko:"이 밀가루 한 컵은 예전 것 두 컵과 동등하다." }] },
-
-  /* 기존 GLOSS "애매한, 이중적인" 을 그대로 뒀다 — 표제어 ambiguous 가 유의어로 쓰는데
-     원본의 '확실치 않은' 을 쓰면 ambiguous 자신의 뜻과 글자까지 같아진다. */
-  { word:"equivocal", pron:"이퀴버컬", pos:"adj", level:"C2", meanings:["애매한","이중적인"],
-    syn:["ambiguous","vague","open to doubt"], ant:["explicit"],
-    ex:[{ s:"His {{}} reply satisfied neither side.", f:"equivocal", ko:"그의 애매한 답변은 어느 쪽도 만족시키지 못했다." }] },
 
   { word:"era", exams:["공무원","수능"], pron:"이러", pos:"n", level:"B2", meanings:["시대","연대"],
     syn:["age","period","epoch"],

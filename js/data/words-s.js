@@ -1030,10 +1030,6 @@ window.VOCAB_S = [
   { word:"side effect", pron:"사이드 이펙트", pos:"phr", level:"B1", meanings:["부작용"],
     syn:["by-product","unwanted result","effect not aimed at"] },
 
-  { word:"siege", pron:"시지", pos:"n", level:"C2", meanings:["포위 공격"],
-    syn:["surrounding of a town","blockade of a fort","long attack from outside"],
-    ex:[{ s:"The city survived a long {{}}.", f:"siege", ko:"그 도시는 긴 포위 공격을 견뎌 냈다." }] },
-
   /* 승격 69 — 사전 글자 유지. 참조 enroll(E) 의 화면은 바뀌지 않는다.
      '등록하다' 는 register(R)·enroll(E) 자리라 쓰지 않았다. */
   { word:"sign up", exams:["수능"], pron:"사인 업", pos:"phr", level:"B1", meanings:["신청하다","가입하다"],

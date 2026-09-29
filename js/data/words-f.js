@@ -1271,10 +1271,6 @@ window.VOCAB_F = [
     syn:["luck","windfall","stroke of luck"],
     ex:[{ s:"A little {{}} turned the whole season around.", f:"fortune", ko:"작은 운이 그 시즌 전체를 뒤바꿨다." }] },
 
-  { word:"fossilize", pron:"파설라이즈", pos:"v", level:"C2", meanings:["화석이 되다"],
-    syn:["turn to stone","petrify","harden into rock"],
-    ex:[{ s:"Shells {{}} slowly in fine river mud.", f:"fossilize", ko:"조개껍데기는 고운 강 진흙 속에서 천천히 화석이 된다." }] },
-
   /* 원본은 '양육하는, 기르는; 양육하다, 기르다' 로 형용사와 동사가 섞여 있다.
      동사로 정했다. 유의어 nurture 의 뜻이 '양육하다, 기르다' 라서 첫 뜻이
      겹치지 않도록 둘째 뜻을 '육성하다' 로 골랐다. */

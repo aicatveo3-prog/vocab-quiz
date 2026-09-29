@@ -356,13 +356,6 @@ window.VOCAB_U = [
     syn:["being out of work","lack of jobs","state of having no post"],
     ex:[{ s:"{{}} fell again this year.", f:"unemployment", ko:"실업이 올해 또 줄었다." }] },
 
-  /* indubitable(의심의 여지가 없는, 명백한 · C2/adj) 와 '명백한' 이 맞물려
-     배제된다. apparent·obvious·plain 은 레벨 차가 2~3이다. 교재의 '분명한' 은
-     apparent(명백한, 분명한) 자리라 버렸다. */
-  { word:"unequivocal", pron:"언이퀴버컬", pos:"adj", level:"C2", meanings:["명백한","에두르지 않는"],
-    syn:["leaving no room for doubt","said straight out","without hedging"],
-    ex:[{ s:"His answer was {{}}.", f:"unequivocal", ko:"그의 대답은 명백했다." }] },
-
   /* 승격 ⑫ — 사전 글자 유지. 참조 bumpy(B)·inconsistent(I) 두 곳의 화면은
      바뀌지 않는다. bumpy(울퉁불퉁한) 와 글자가 맞물려 배제된다. 교재의
      '불공평한' 은 버렸다. */
