@@ -143,6 +143,12 @@ b,strong{font-weight:600}
 .btn-quiet:hover{color:var(--ng)}
 .stack{display:grid;gap:8px}
 
+/* 단어 학습 페이지 넘김 */
+.pager{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px}
+.pager .pg-btn{flex:0 0 auto;min-width:88px;padding:10px 14px;font-size:14px}
+.pager .pg-btn:disabled{opacity:.35}
+.pager .pg-info{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+
 .foot-nav{display:flex;gap:8px;margin-top:28px;
   border-top:1px solid var(--line);padding-top:16px}
 .link-btn{flex:1;background:none;border:none;padding:10px;

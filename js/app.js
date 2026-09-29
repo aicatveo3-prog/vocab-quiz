@@ -24,7 +24,9 @@
     wrongTier: 1,          // 오답 노트 화면에서 보고 있는 차수
     wordFilter: { status: 'all', level: 'all' },
     studySetId: null,      // 단어 학습 중인 세트 (아니면 null)
-    modeSetsId: null       // 단어 학습에서 돌아올 개별 연습 형식
+    modeSetsId: null,      // 단어 학습에서 돌아올 개별 연습 형식
+    studyWords: [],        // 단어 학습 대상 (정렬된 목록)
+    studyPage: 0           // 단어 학습 현재 페이지
   };
 
   /* 오답 노트·피드백·복습 세션은 세트를 가리지 않으므로 전 세트 합집합으로 만든다.
@@ -1198,7 +1200,10 @@
 
   /* ══════════ 단어 학습 (문제 풀기 전 훑어보기) ══════════
      개별 연습 세트 목록의 '단어학습' 버튼에서 들어온다.
-     정복 모드 미리보기와 같은 서식(단어 · pos·level · 뜻)으로 세트 전체를 보여준다. */
+     정복 모드 미리보기와 같은 서식(단어 · pos·level · 뜻)으로 보여준다.
+     세트 전체를 한 번에 쏟으면 스크롤이 끝없이 길어지므로 30개씩 페이지로 나눈다. */
+  var STUDY_PAGE_SIZE = 30;
+
   function renderStudy(setId) {
     var set = window.Conquer.getSet(setId);
     if (!set) return;
@@ -1207,13 +1212,30 @@
     });
 
     state.studySetId = setId;
+    state.studyWords = words;
+    state.studyPage = 0;
 
     $('study-title').textContent = set.label + ' 세트 · 단어 학습';
     $('study-n').textContent = words.length + '단어';
 
+    renderStudyPage();
+    go('study');
+  }
+
+  /** 현재 페이지의 단어 목록 + 페이지 넘김 버튼을 그린다 */
+  function renderStudyPage() {
+    var words = state.studyWords || [];
+    var pages = Math.max(1, Math.ceil(words.length / STUDY_PAGE_SIZE));
+    var page = Math.min(Math.max(0, state.studyPage || 0), pages - 1);
+    state.studyPage = page;
+
+    $('study-n').textContent = words.length + '단어 · '
+      + (page + 1) + ' / ' + pages;
+
     var box = $('study-list');
     box.innerHTML = '';
-    words.forEach(function (w) {
+    var slice = words.slice(page * STUDY_PAGE_SIZE, (page + 1) * STUDY_PAGE_SIZE);
+    slice.forEach(function (w) {
       var row = el('div', 'pv-item');
       var left = el('div');
       left.appendChild(el('b', null, w.word));
@@ -1223,7 +1245,34 @@
       box.appendChild(row);
     });
 
-    go('study');
+    var pager = $('study-pager');
+    pager.innerHTML = '';
+    if (pages <= 1) { pager.style.display = 'none'; return; }
+    pager.style.display = '';
+
+    var prev = el('button', 'btn btn-ghost pg-btn', '‹ 이전');
+    prev.type = 'button';
+    prev.disabled = page === 0;
+    prev.addEventListener('click', function () { goStudyPage(page - 1); });
+    pager.appendChild(prev);
+
+    pager.appendChild(el('span', 'pg-info', (page + 1) + ' / ' + pages));
+
+    var next = el('button', 'btn btn-ghost pg-btn', '다음 ›');
+    next.type = 'button';
+    next.disabled = page === pages - 1;
+    next.addEventListener('click', function () { goStudyPage(page + 1); });
+    pager.appendChild(next);
+  }
+
+  /** 페이지를 옮기고 새 페이지를 그린 뒤 맨 위로 스크롤한다 */
+  function goStudyPage(page) {
+    var words = state.studyWords || [];
+    var pages = Math.max(1, Math.ceil(words.length / STUDY_PAGE_SIZE));
+    if (page < 0 || page >= pages) return;
+    state.studyPage = page;
+    renderStudyPage();
+    window.scrollTo(0, 0);
   }
 
   // 되돌아가기 — 들어온 경로에 상관없이 개별 연습 세트 목록으로 (형식이 남아 있음)
