@@ -230,10 +230,6 @@ window.VOCAB_T = [
   { word:"tax collector", pron:"택스 컬렉터", pos:"phr", level:"B2", meanings:["세금 징수원"],
     syn:["one who gathers taxes","revenue officer","official who takes tax"] },
 
-  { word:"tax-deductible", pron:"택스 디덕터블", pos:"adj", level:"C1", meanings:["세금 공제가 되는"],
-    syn:["able to be taken off tax","allowed against tax","cutting one's taxable sum"],
-    ex:[{ s:"The gift is fully {{}}.", f:"tax-deductible", ko:"그 기부는 전액 세금 공제가 된다." }] },
-
   /* 승격 ⑪ — 사전 글자 유지(참조 demolish). 교재 '파괴하다, 해체하다' 버림. */
   { word:"tear down", pron:"테어 다운", pos:"phr", level:"B2", meanings:["허물다","뜯어내다"],
     syn:["demolish","pull down","level to the ground"] },
@@ -896,11 +892,6 @@ window.VOCAB_T = [
   { word:"transcend", pron:"트랜센드", pos:"v", level:"C1", meanings:["초월하다"],
     syn:["rise above","go past the limit of","surpass all bounds"],
     ex:[{ s:"Great music can {{}} language.", f:"transcend", ko:"위대한 음악은 언어를 초월할 수 있다." }] },
-
-  /* ★ 교재의 '탁월' 은 transcend 에 없는 뜻이라 버리고 '뛰어넘음' 으로 바로잡았다. */
-  { word:"transcendence", pron:"트랜센던스", pos:"n", level:"C2", meanings:["초월","뛰어넘음"],
-    syn:["going beyond limits","state of rising above","passing all bounds"],
-    ex:[{ s:"The poem speaks of {{}}.", f:"transcendence", ko:"그 시는 초월을 말한다." }] },
 
   /* ══ 8차 · transcribe ~ treacherous (20단어) ═════════════════════════════
      승격 7(transform·transient·transmit·transparent·trap·trash·treacherous) · 신규 13

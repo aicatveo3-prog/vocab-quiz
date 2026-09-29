@@ -726,11 +726,6 @@ window.VOCAB_R = [
     syn:["liberate","let go free","set at liberty"], ant:["imprison"],
     ex:[{ s:"They will {{}} him tomorrow.", f:"release", ko:"그들은 내일 그를 석방할 것이다." }] },
 
-  /* 원본 '동의하다' 는 accede(A) 의 첫 뜻이라 누그러지는 쪽 갈래를 썼다. */
-  { word:"relent", pron:"릴렌트", pos:"v", level:"C2", meanings:["누그러지다","마음을 굽히다"],
-    syn:["soften one's stand","give way at last","let up"],
-    ex:[{ s:"The father finally began to {{}}.", f:"relent", ko:"그 아버지는 마침내 누그러지기 시작했다." }] },
-
   /* 승격 59 — 사전 글자 유지(irrelevant 반의어, I). '적절한' 은 apt·proper(P) 와
      글자가 같아 서로 오답에서 빠진다. */
   { word:"relevant", exams:["공무원","수능"], pron:"렐러번트", pos:"adj", level:"B2", meanings:["관련 있는","적절한"],
@@ -922,11 +917,6 @@ window.VOCAB_R = [
   { word:"repellent", pron:"리펠런트", pos:"adj", level:"C1", meanings:["역겨운","혐오감을 주는"],
     syn:["driving one away","hard to stomach","stirring disgust"],
     ex:[{ s:"The smell was {{}}.", f:"repellent", ko:"그 냄새는 역겨웠다." }] },
-
-  /* remorse(회한, 깊은 후회 · 챕터 7) 와 갈랐다 — 원본은 둘 다 '후회' 였다. */
-  { word:"repentance", pron:"리펜턴스", pos:"n", level:"C2", meanings:["참회","뉘우침"],
-    syn:["turning from a wrong","sorrow that changes one","confession of fault"],
-    ex:[{ s:"His {{}} seemed real.", f:"repentance", ko:"그의 참회는 진짜인 듯했다." }] },
 
   /* ★ 외래어 '레퍼토리' 를 걷고 catalog(목록) 의 첫 뜻을 피해 좁혔다. */
   { word:"repertoire", pron:"레퍼트와", pos:"n", level:"C1", meanings:["연주 목록","익혀 둔 목록"],

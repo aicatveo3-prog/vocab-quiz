@@ -438,11 +438,6 @@ window.VOCAB_W = [
     syn:["determination","strength of mind","grip on oneself"],
     ex:[{ s:"It took great {{}} to stop.", f:"willpower", ko:"멈추는 데 큰 정신력이 들었다." }] },
 
-  /* 승격 ㉑ — 사전 단일값 유지(참조 fortune). */
-  { word:"windfall", pron:"윈드폴", pos:"n", level:"C2", meanings:["뜻밖의 횡재"],
-    syn:["fortune","money that falls in one's lap","gain nobody looked for"],
-    ex:[{ s:"The sale was a {{}} for them.", f:"windfall", ko:"그 매각은 그들에게 뜻밖의 횡재였다." }] },
-
   /* 승격 ㉒ — 사전 단일값 유지(참조 crooked). crooked(구불구불한, 곧지 않은)
      와 맞물려 배제된다. 교재의 '나선형의' 는 버렸다. */
   { word:"winding", pron:"와인딩", pos:"adj", level:"B2", meanings:["구불구불한"],
@@ -495,12 +490,6 @@ window.VOCAB_W = [
   { word:"wobble", pron:"와블", pos:"v", level:"C1", meanings:["흔들리다","떨다"],
     syn:["quiver","rock unsteadily","shake from side to side"],
     ex:[{ s:"The table began to {{}}.", f:"wobble", ko:"그 탁자가 흔들리기 시작했다." }] },
-
-  /* grievous(통탄할, 비통한)·lamentable(통탄스러운, 한심한) 과 맞물려 배제된다.
-     교재의 '몹시 슬픈, 비통한' 은 grievous 쪽이라 버렸다. */
-  { word:"woeful", pron:"워풀", pos:"adj", level:"C2", meanings:["통탄할","한심한"],
-    syn:["grievous","lamentable","sad beyond telling"],
-    ex:[{ s:"It was a {{}} waste of money.", f:"woeful", ko:"그것은 통탄할 돈 낭비였다." }] },
 
   /* 승격 ㉘ — ★사전의 쌍반점만 쉼표로. 교재는 동사('궁금해하다') 를 앞세웠는데
      참조 둘(astonishment·marvel) 이 모두 명사여서 명사로 세웠다.

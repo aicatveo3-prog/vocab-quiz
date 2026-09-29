@@ -677,10 +677,6 @@ window.VOCAB_L = [
     syn:["terrible","awful","dreadful"],
     ex:[{ s:"The weather stayed {{}} all week.", f:"lousy", ko:"날씨가 일주일 내내 형편없었다." }] },
 
-  { word:"lowbrow", pron:"로브라우", pos:"adj", level:"C2", meanings:["이해가 쉬운","저급한"],
-    syn:["unsophisticated","mass-market","undemanding"], ant:["highbrow"],
-    ex:[{ s:"Critics dismissed the show as {{}} entertainment.", f:"lowbrow", ko:"비평가들은 그 쇼를 저급한 오락으로 일축했다." }] },
-
   { word:"low-budget", pron:"로 버짓", pos:"adj", level:"B2", meanings:["저예산의"],
     syn:["cheaply made","shoestring","inexpensive"],
     ex:[{ s:"The film was a {{}} independent production.", f:"low-budget", ko:"그 영화는 저예산 독립 제작물이었다." }] },

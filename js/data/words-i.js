@@ -447,10 +447,6 @@ window.VOCAB_I = [
     syn:["implied","tacit","unspoken"], ant:["explicit"],
     ex:[{ s:"There was an {{}} agreement that no one would raise the issue.", f:"implicit", ko:"아무도 그 문제를 꺼내지 않겠다는 암시된 합의가 있었다." }] },
 
-  { word:"implore", pron:"임플로", pos:"v", level:"C2", meanings:["애원하다","탄원하다"],
-    syn:["beg","plead","entreat"],
-    ex:[{ s:"She began to {{}} the judge for leniency.", f:"implore", ko:"그녀는 판사에게 관용을 애원하기 시작했다." }] },
-
   { word:"imply", exams:["수능"], pron:"임플라이", pos:"v", level:"B2", meanings:["암시하다","의미하다"],
     syn:["suggest","hint","insinuate"],
     ex:[{ s:"Are you trying to {{}} that the record was careless?", f:"imply", ko:"그 기록이 부주의했다고 암시하려는 겁니까?" }] },
@@ -899,10 +895,6 @@ window.VOCAB_I = [
   { word:"indoctrinate", pron:"인닥트러네이트", pos:"v", level:"C1", meanings:["세뇌시키다","사상을 주입하다"],
     syn:["brainwash","condition","propagandize"],
     ex:[{ s:"The regime sought to {{}} children through school textbooks.", f:"indoctrinate", ko:"그 정권은 학교 교과서를 통해 아이들을 세뇌시키려 했다." }] },
-
-  { word:"indolent", pron:"인덜런트", pos:"adj", level:"C2", meanings:["게으른","나태한"],
-    syn:["lazy","idle","sluggish"], ant:["diligent"],
-    ex:[{ s:"The long humid summer made everyone {{}}.", f:"indolent", ko:"길고 습한 여름은 모두를 게으르게 만들었다." }] },
 
   { word:"indubitable", pron:"인두버터블", pos:"adj", level:"C2", meanings:["의심의 여지가 없는","명백한"],
     syn:["unquestionable","undeniable","certain"], ant:["doubtful"],
@@ -1511,11 +1503,6 @@ window.VOCAB_I = [
   { word:"intermission", pron:"인터미션", pos:"n", level:"B2", meanings:["휴식 시간","중단"],
     syn:["interval","break","pause"],
     ex:[{ s:"We bought drinks during the {{}}.", f:"intermission", ko:"우리는 휴식 시간에 음료를 샀다." }] },
-
-  /* intermission 과 어근이 같지만 품사가 달라(n/adv) 같은 보드에 안 온다. */
-  { word:"intermittently", pron:"인터미턴틀리", pos:"adv", level:"C1", meanings:["간헐적으로"],
-    syn:["sporadically","on and off","fitfully"],
-    ex:[{ s:"The engine coughed {{}} before it stopped.", f:"intermittently", ko:"그 엔진은 멈추기 전에 간헐적으로 털털거렸다." }] },
 
   /* 승격 ① — GLOSS '내부의, 국내의' 를 글자까지 지켰다. 참조 둘 중 domestic(syn)
      이 '국내의' 갈래를 쓰므로 원본의 '체내의' 대신 사전 쪽을 남겼다.

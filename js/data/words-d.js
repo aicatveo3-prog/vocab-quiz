@@ -465,10 +465,6 @@ window.VOCAB_D = [
     syn:["illusion","fallacy","misconception"], ant:["reality"],
     ex:[{ s:"He clung to the {{}} that the company was still profitable.", f:"delusion", ko:"그는 회사가 여전히 수익을 낸다는 착각에 매달렸다." }] },
 
-  { word:"deluge", pron:"델류지", pos:"n", level:"C2", meanings:["대홍수","쇄도"],
-    syn:["flood","torrent","onslaught"], ant:["drought"],
-    ex:[{ s:"The office received a {{}} of complaints after the outage.", f:"deluge", ko:"정전 이후 사무실에 불만이 쇄도했다." }] },
-
   { word:"demand", exams:["공무원","수능"], pron:"디맨드", pos:"v", level:"B1", meanings:["요구하다","따져 묻다"],
     syn:["require","insist on","call for"], ant:["offer"],
     ex:[{ s:"The workers {{}} safer conditions and shorter hours.", f:"demand", ko:"노동자들은 더 안전한 환경과 더 짧은 노동 시간을 요구한다." }] },
@@ -561,14 +557,6 @@ window.VOCAB_D = [
     syn:["warehouse","storehouse","terminal"],
     ex:[{ s:"Buses are serviced overnight at the central {{}}.", f:"depot", ko:"버스는 중앙 차고에서 밤새 정비된다." }] },
 
-  { word:"depreciate", pron:"디프리시에이트", pos:"v", level:"C2", meanings:["가치가 떨어지다","가치를 떨어뜨리다"],
-    syn:["devalue","lose value","mark down"], ant:["appreciate"],
-    ex:[{ s:"New cars {{}} fastest during their first two years.", f:"depreciate", ko:"새 차는 처음 2년 동안 가치가 가장 빠르게 떨어진다." }] },
-
-  { word:"depreciation", pron:"디프리시에이션", pos:"n", level:"C2", meanings:["가치 하락","감가상각"],
-    syn:["devaluation","markdown","loss in value"],
-    ex:[{ s:"The report includes {{}} of equipment over five years.", f:"depreciation", ko:"그 보고서는 5년간의 장비 감가상각을 포함한다." }] },
-
   { word:"depressed", exams:["수능"], pron:"디프레스트", pos:"adj", level:"B2", meanings:["우울한","침체된"],
     syn:["gloomy","despondent","dejected"], ant:["cheerful"],
     ex:[{ s:"He felt {{}} for weeks after losing the job.", f:"depressed", ko:"그는 일자리를 잃고 몇 주간 우울했다." }] },
@@ -651,10 +639,6 @@ window.VOCAB_D = [
     syn:["hopelessness","despondency","gloom"], ant:["hope"],
     ex:[{ s:"A note of {{}} crept into her voice as she spoke.", f:"despair", ko:"말하는 동안 그녀의 목소리에 절망의 기색이 스몄다." }] },
 
-  { word:"despairing", pron:"디스페어링", pos:"adj", level:"C2", meanings:["절망적인","자포자기의"],
-    syn:["hopeless","disconsolate","forlorn"],
-    ex:[{ s:"He gave a {{}} look at the empty scoreboard.", f:"despairing", ko:"그는 텅 빈 점수판을 절망적인 눈빛으로 바라봤다." }] },
-
   { word:"desperate", pron:"데스퍼릿", pos:"adj", level:"B2", meanings:["필사적인","절박한"],
     syn:["frantic","urgent","reckless"], ant:["calm"],
     ex:[{ s:"They made a {{}} attempt to reach the shore before dark.", f:"desperate", ko:"그들은 어두워지기 전에 해안에 닿으려고 필사적인 시도를 했다." }] },
@@ -731,9 +715,6 @@ window.VOCAB_D = [
   { word:"detour", pron:"디투어", pos:"n", level:"B2", meanings:["우회","우회로"],
     syn:["diversion","bypass","roundabout route"],
     ex:[{ s:"Roadwork forced a long {{}} through the hills.", f:"detour", ko:"도로 공사로 언덕을 지나는 긴 우회를 해야 했다." }] },
-
-  { word:"detoxification", pron:"디탁시피케이션", pos:"n", level:"C2", meanings:["해독","해독 작용"],
-    ex:[{ s:"The liver plays a central role in {{}}.", f:"detoxification", ko:"간은 해독에서 핵심 역할을 한다." }] },
 
   { word:"detract", pron:"디트랙트", pos:"v", level:"C2", meanings:["떨어뜨리다","손상시키다"],
     syn:["diminish","lessen","devalue"], ant:["enhance"],
@@ -936,10 +917,6 @@ window.VOCAB_D = [
     syn:["object to","frown on","condemn"], ant:["approve"],
     ex:[{ s:"Her parents strongly {{}} of the whole plan.", f:"disapprove", ko:"그녀의 부모는 그 계획 전체를 강하게 못마땅해한다." }] },
 
-  { word:"disassociate", pron:"디서소시에이트", pos:"v", level:"C2", meanings:["관계를 끊다","떼어 놓다"],
-    syn:["dissociate","sever","break with"],
-    ex:[{ s:"He tried to {{}} himself from the growing scandal.", f:"disassociate", ko:"그는 커지는 스캔들에서 자신을 떼어 놓으려 했다." }] },
-
   { word:"disastrous", exams:["공무원"], pron:"디재스트러스", pos:"adj", level:"B2", meanings:["파멸적인","비참한"],
     syn:["catastrophic","calamitous","ruinous"], ant:["successful"],
     ex:[{ s:"The decision proved {{}} for the company's finances.", f:"disastrous", ko:"그 결정은 회사 재정에 파멸적인 것으로 드러났다." }] },
@@ -972,10 +949,6 @@ window.VOCAB_D = [
     syn:["dissatisfaction","resentment","unrest"], ant:["contentment"],
     ex:[{ s:"Growing {{}} among the workers led to a strike.", f:"discontent", ko:"노동자들 사이의 커지는 불만이 파업으로 이어졌다." }] },
 
-  { word:"discord", pron:"디스코드", pos:"n", level:"C2", meanings:["불화","불일치"],
-    syn:["conflict","friction","strife"], ant:["harmony"],
-    ex:[{ s:"Years of {{}} eventually split the organization in two.", f:"discord", ko:"여러 해의 불화가 결국 그 조직을 둘로 갈라놓았다." }] },
-
   { word:"discount", pron:"디스카운트", pos:"n", level:"B1", meanings:["할인","할인액"],
     syn:["reduction","markdown","rebate"],
     ex:[{ s:"Members receive a ten percent {{}} on all books.", f:"discount", ko:"회원은 모든 도서에 10퍼센트 할인을 받는다." }] },
@@ -991,10 +964,6 @@ window.VOCAB_D = [
   { word:"discreet", exams:["공무원"], pron:"디스크리트", pos:"adj", level:"C2", meanings:["신중한","눈에 띄지 않는"],
     syn:["tactful","prudent","cautious"], ant:["indiscreet"],
     ex:[{ s:"She was always {{}} about her clients' private affairs.", f:"discreet", ko:"그녀는 고객의 사적인 일에 대해 늘 신중했다." }] },
-
-  { word:"discrepancy", pron:"디스크레펀시", pos:"n", level:"C2", meanings:["불일치","차이"],
-    syn:["inconsistency","disparity","mismatch"],
-    ex:[{ s:"There is a clear {{}} between the two reports.", f:"discrepancy", ko:"두 보고서 사이에 분명한 불일치가 있다." }] },
 
   { word:"discriminate", exams:["공무원"], pron:"디스크리머네이트", pos:"v", level:"C1", meanings:["차별하다","구분하다"],
     syn:["distinguish","differentiate","single out"],
@@ -1202,10 +1171,6 @@ window.VOCAB_D = [
   { word:"ditch", pron:"디치", pos:"n", level:"B2", meanings:["배수로","도랑"],
     syn:["trench","channel","gutter"],
     ex:[{ s:"Water drained slowly along the roadside {{}}.", f:"ditch", ko:"물이 길가 배수로를 따라 천천히 빠졌다." }] },
-
-  { word:"diverge", pron:"다이버지", pos:"v", level:"C2", meanings:["갈라지다","벗어나다"],
-    syn:["separate","branch off","deviate"], ant:["converge"],
-    ex:[{ s:"The two paths {{}} just beyond the old bridge.", f:"diverge", ko:"두 길은 옛 다리를 지나 바로 갈라진다." }] },
 
   { word:"diverse", exams:["공무원","수능"], pron:"다이버스", pos:"adj", level:"B2", meanings:["다양한","여러 가지의"],
     syn:["varied","assorted","manifold"], ant:["uniform"],

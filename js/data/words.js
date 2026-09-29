@@ -603,13 +603,6 @@ window.VOCAB = [
     syn:["attach","fasten","append"], ant:["detach"],
     ex:[{ s:"Please {{}} a stamp to the top right corner.", f:"affix", ko:"우표를 오른쪽 위 모서리에 붙여 주세요." }] },
 
-  { word:"afflict", pron:"어플릭트", pos:"v", level:"C1", meanings:["괴롭히다","시달리게 하다"],
-    /* ★ syn 의 "torment" 을 "cause suffering to" 로 바꿨다. torment 은 T 세트에서
-       명사 '고통, 고뇌' 로 선다 — 참조 다섯 중 agony·anguish·distress 셋이 명사여서
-       명사를 골랐고, 동사 쪽을 쓰던 이 자리를 갈았다. */
-    syn:["trouble","cause suffering to","plague"], ant:["comfort"],
-    ex:[{ s:"Drought continues to {{}} farmers in the south.", f:"afflict", ko:"가뭄이 남부 농민들을 계속 괴롭히고 있다." }] },
-
   { word:"affluent", pron:"애플루언트", pos:"adj", level:"C1", meanings:["풍족한","부유한"],
     syn:["wealthy","prosperous","well-off"], ant:["poor"],
     ex:[{ s:"The school serves a largely {{}} neighborhood.", f:"affluent", ko:"그 학교는 대체로 부유한 지역을 담당한다." }] },
@@ -722,9 +715,6 @@ window.VOCAB = [
     syn:["passage","corridor","walkway"],
     ex:[{ s:"She prefers an {{}} seat on long flights.", f:"aisle", ko:"그녀는 장거리 비행에서 통로 쪽 좌석을 선호한다." }] },
 
-  { word:"alchemy", pron:"앨커미", pos:"n", level:"C2", meanings:["연금술"],
-    ex:[{ s:"Medieval {{}} slowly gave way to chemistry.", f:"alchemy", ko:"중세의 연금술은 서서히 화학으로 대체되었다." }] },
-
   { word:"alert", exams:["수능"], pron:"얼러트", pos:"adj", level:"B2", meanings:["경계하는","기민한"],
     syn:["watchful","vigilant","attentive"], ant:["careless"],
     ex:[{ s:"Guards must stay {{}} throughout the night.", f:"alert", ko:"경비원들은 밤새 경계를 유지해야 한다." }] },
@@ -739,10 +729,6 @@ window.VOCAB = [
   { word:"alienate", pron:"에일리에네이트", pos:"v", level:"C1", meanings:["멀어지게 하다","소외시키다"],
     syn:["estrange","isolate","distance"], ant:["unite"],
     ex:[{ s:"His harsh tone began to {{}} his own supporters.", f:"alienate", ko:"그의 거친 어조는 자기 지지자들마저 멀어지게 만들기 시작했다." }] },
-
-  { word:"alienation", pron:"에일리에네이션", pos:"n", level:"C2", meanings:["소외","멀어짐"],
-    syn:["estrangement","isolation","detachment"], ant:["belonging"],
-    ex:[{ s:"The novel explores the {{}} of city workers.", f:"alienation", ko:"그 소설은 도시 노동자의 소외를 탐구한다." }] },
 
   { word:"align", pron:"얼라인", pos:"v", level:"C1", meanings:["일치시키다","가지런히 하다"],
     syn:["line up","coordinate","match"], ant:["misalign"],
@@ -825,14 +811,6 @@ window.VOCAB = [
   { word:"altogether", exams:["공무원","수능"], pron:"올투게더", pos:"adv", level:"B2", meanings:["완전히","전적으로"],
     syn:["completely","entirely","wholly"], ant:["partly"],
     ex:[{ s:"The plan was {{}} too expensive to approve.", f:"altogether", ko:"그 계획은 승인하기에 전적으로 너무 비쌌다." }] },
-
-  { word:"altruistic", pron:"앨트루이스틱", pos:"adj", level:"C1", meanings:["이타적인"],
-    /* ★ syn 의 "unselfish" 를 "giving without reward" 로 바꿨다. 사전이
-       unselfish 와 selfless 에 똑같이 '이타적인' 을 적어 두어 설명이 완전히 같은
-       선택지가 둘 있었다. selfless 가 S 세트에서 표제어가 되면서(챕터 5) 그 글자가
-       확정되므로 이 자리를 갈았다. */
-    syn:["selfless","giving without reward","charitable"], ant:["selfish"],
-    ex:[{ s:"Her motives were genuinely {{}}, not commercial.", f:"altruistic", ko:"그녀의 동기는 상업적이 아니라 진정으로 이타적이었다." }] },
 
 
   { word:"amazing", pron:"어메이징", pos:"adj", level:"B1", meanings:["놀라운","굉장한"],
@@ -977,10 +955,6 @@ window.VOCAB = [
   { word:"Antarctic", pron:"앤탁틱", pos:"adj", level:"B2", meanings:["남극의"],
     ex:[{ s:"The {{}} ice sheet is thinning each decade.", f:"Antarctic", ko:"남극의 빙상은 10년마다 얇아지고 있다." }] },
 
-  { word:"antecedent", pron:"앤티시던트", pos:"n", level:"C2", meanings:["선례","전례"],
-    syn:["precedent","forerunner","predecessor"],
-    ex:[{ s:"The ruling had no clear {{}} in law.", f:"antecedent", ko:"그 판결은 법에 명확한 선례가 없었다." }] },
-
 
   { word:"anterior", pron:"앤티리어", pos:"adj", level:"C2", meanings:["앞쪽의","전방의"],
     syn:["front","forward","fore"], ant:["posterior"],
@@ -1044,10 +1018,6 @@ window.VOCAB = [
   { word:"apologetic", exams:["수능"], pron:"어팔러제틱", pos:"adj", level:"B2", meanings:["사과하는","미안해하는"],
     syn:["remorseful","regretful","contrite"], ant:["unrepentant"],
     ex:[{ s:"He sent an {{}} note for missing the meeting.", f:"apologetic", ko:"그는 회의에 빠진 것에 대해 사과하는 쪽지를 보냈다." }] },
-
-  { word:"apologetically", pron:"어팔러제티컬리", pos:"adv", level:"C1", meanings:["사과하듯이","미안해하며"],
-    syn:["regretfully","remorsefully","ruefully"],
-    ex:[{ s:"She smiled {{}} and explained the delay.", f:"apologetically", ko:"그녀는 미안해하며 웃고는 지연을 설명했다." }] },
 
   { word:"apologize", pron:"어팔러자이즈", pos:"v", level:"B1", meanings:["사과하다"],
     syn:["say sorry","express regret","atone"],

@@ -533,11 +533,6 @@ window.VOCAB_V = [
     syn:["critical","crucial","needed for life"],
     ex:[{ s:"Water is {{}} to all life.", f:"vital", ko:"물은 모든 생명에 필수적이다." }] },
 
-  /* bolster(북돋우다, 강화하다) 의 '북돋우다' 를 품어 맞물려 배제된다. */
-  { word:"vitalize", pron:"바이털라이즈", pos:"v", level:"C2", meanings:["활력을 북돋우다"],
-    syn:["put life into","stir into action","give fresh energy to"],
-    ex:[{ s:"Fresh air seemed to {{}} her.", f:"vitalize", ko:"맑은 공기가 그녀의 활력을 북돋우는 듯했다." }] },
-
   /* 승격 ㉚ — 사전 단일값 유지(참조 graphic). 교재의 '화려한' 은 gorgeous(화려한,
      호화스러운)·ornate 자리라 버렸다. sharp(날카로운, 선명한) 와 맞물려 배제된다. */
   { word:"vivid", exams:["수능"], pron:"비비드", pos:"adj", level:"B2", meanings:["선명한"],

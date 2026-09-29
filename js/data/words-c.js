@@ -166,9 +166,6 @@ window.VOCAB_C = [
   { word:"call out", exams:["수능"], pron:"콜 아웃", pos:"phr", level:"B2", meanings:["호명하다","큰 소리로 부르다"],
     syn:["summon","shout","announce"], ant:["whisper"] },
 
-  { word:"caloric value", pron:"컬로릭 밸류", pos:"n", level:"C1", meanings:["열량","칼로리 값"],
-    ex:[{ s:"Nuts have a high {{}} for their size.", f:"caloric value", ko:"견과류는 크기에 비해 열량이 높다." }] },
-
   /* ── cam · can ─────────────────────────────── */
   { word:"camouflage", pron:"캐머플라지", pos:"n", level:"C1", meanings:["위장","눈속임"],
     syn:["disguise","concealment","cover"], ant:["exposure"],
@@ -1045,10 +1042,6 @@ window.VOCAB_C = [
     syn:["gather","assemble","collate"], ant:["scatter"],
     ex:[{ s:"He spent thirty years to {{}} the dictionary.", f:"compile", ko:"그는 그 사전을 편찬하는 데 30년을 썼다." }] },
 
-  { word:"complacent", pron:"컴플레이선트", pos:"adj", level:"C2", meanings:["현실에 안주하는","자기만족적인"],
-    syn:["smug","contented","unconcerned"], ant:["anxious"],
-    ex:[{ s:"One easy win made the team {{}}.", f:"complacent", ko:"한 번의 쉬운 승리가 그 팀을 안주하게 만들었다." }] },
-
   { word:"complain", pron:"컴플레인", pos:"v", level:"B1", meanings:["불평하다","항의하다"],
     syn:["protest","grumble","object to"], ant:["praise"],
     ex:[{ s:"Guests began to {{}} about the noise upstairs.", f:"complain", ko:"손님들은 위층 소음에 대해 불평하기 시작했다." }],
@@ -1065,10 +1058,6 @@ window.VOCAB_C = [
   { word:"complex", exams:["공무원","수능"], pron:"컴플렉스", pos:"adj", level:"B1", meanings:["복합적인","복잡한"],
     syn:["intricate","involved","multiple"], ant:["simple"],
     ex:[{ s:"The problem is far more {{}} than it looks.", f:"complex", ko:"그 문제는 보이는 것보다 훨씬 복합적이다." }] },
-
-  { word:"compliant", pron:"컴플라이언트", pos:"adj", level:"C2", meanings:["순응하는","준수하는"],
-    syn:["obedient","yielding","conforming"], ant:["defiant"],
-    ex:[{ s:"The building is now fully {{}} with fire rules.", f:"compliant", ko:"그 건물은 이제 소방 규정을 완전히 준수한다." }] },
 
   { word:"complicated", exams:["수능"], pron:"캄플리케이티드", pos:"adj", level:"B1", meanings:["복잡한","뒤얽힌"],
     syn:["complex","tangled","elaborate"], ant:["straightforward"],
@@ -1216,11 +1205,6 @@ window.VOCAB_C = [
   { word:"condone", pron:"컨돈", pos:"v", level:"C2", meanings:["용납하다","묵인하다"],
     syn:["excuse","overlook","pardon"], ant:["punish"],
     ex:[{ s:"The school will not {{}} cheating of any kind.", f:"condone", ko:"학교는 어떤 형태의 부정행위도 용납하지 않는다." }] },
-
-  { word:"conducive", pron:"컨두시브", pos:"adj", level:"C2", meanings:["~에 좋은","도움이 되는"],
-    syn:["helpful","favorable","beneficial"], ant:["harmful"],
-    ex:[{ s:"A cool dark room is {{}} to deep sleep.", f:"conducive", ko:"시원하고 어두운 방은 깊은 잠에 좋다." }],
-    gov:{ prep:["to"], pat:"conducive {{}} good sleep", usage:"be conducive to ~ : ~에 도움이 되다" } },
 
   { word:"conduct", exams:["수능"], pron:"칸덕트", pos:"n", level:"B2", meanings:["행동","수행"],
     syn:["behavior","manner","action"],
@@ -1859,11 +1843,6 @@ window.VOCAB_C = [
   { word:"creator", exams:["수능"], pron:"크리에이터", pos:"n", level:"B1", meanings:["창작자"],
     syn:["author","maker","designer"],
     ex:[{ s:"The {{}} of the series never explained the ending.", f:"creator", ko:"그 시리즈의 창작자는 결말을 끝내 설명하지 않았다." }] },
-
-  /* 첫 뜻을 '신념'으로 두면 conviction(6차)과 카드 문구가 똑같아진다 */
-  { word:"creed", pron:"크리드", pos:"n", level:"C2", meanings:["신조","교리"],
-    syn:["doctrine","belief","dogma"],
-    ex:[{ s:"The group has never had a written {{}}.", f:"creed", ko:"그 단체는 한 번도 문서로 된 신조를 가진 적이 없다." }] },
 
   { word:"creek", pron:"크리크", pos:"n", level:"B2", meanings:["개울","시내"],
     syn:["stream","brook","rivulet"],

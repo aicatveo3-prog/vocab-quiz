@@ -476,11 +476,6 @@ window.VOCAB_S = [
     syn:["inspect","examine closely","look at in fine detail"],
     ex:[{ s:"The board will {{}} every figure.", f:"scrutinize", ko:"이사회는 모든 수치를 세심히 살필 것이다." }] },
 
-  /* scrutinize(v) 와 품사로 갈린다. */
-  { word:"scrutiny", pron:"스크루터니", pos:"n", level:"C2", meanings:["자세한 조사"],
-    syn:["close look","careful check","close examination"],
-    ex:[{ s:"The report came under close {{}}.", f:"scrutiny", ko:"그 보고서는 자세한 조사를 받았다." }] },
-
   { word:"seal", pron:"실", pos:"v", level:"B2", meanings:["봉인하다"],
     syn:["close tight","fasten shut","shut with wax"],
     ex:[{ s:"Please {{}} the envelope before posting.", f:"seal", ko:"보내기 전에 봉투를 봉인해 주세요." }] },
@@ -501,12 +496,6 @@ window.VOCAB_S = [
   { word:"seasoned", pron:"시즌드", pos:"adj", level:"C1", meanings:["경험이 많은","노련한"],
     syn:["experienced","veteran","long in practice"],
     ex:[{ s:"She is a {{}} teacher of twenty years.", f:"seasoned", ko:"그녀는 이십 년 경력의 경험이 많은 교사다." }] },
-
-  /* isolate(고립시키다, 격리하다 · I) 와 앞뒤만 다르게 두어 자동 배제시켰다.
-     원본의 '분리하다' 는 segregate·separate 자리라 버렸다. */
-  { word:"seclude", pron:"시클루드", pos:"v", level:"C2", meanings:["격리하다","고립시키다"],
-    syn:["isolate","shut away","keep apart from others"],
-    ex:[{ s:"The monks {{}} themselves from the world.", f:"seclude", ko:"그 수도자들은 세상에서 스스로를 격리한다." }] },
 
   /* ── 챕터 4 ────────────────────────────────────── */
   /* '부분' 자리가 셋이나 몰린 챕터다. 이렇게 갈랐다.
@@ -1358,10 +1347,6 @@ window.VOCAB_S = [
     syn:["study of society","science of social life","study of human groups"],
     ex:[{ s:"She teaches {{}} at the college.", f:"sociology", ko:"그녀는 그 대학에서 사회학을 가르친다." }] },
 
-  { word:"solace", pron:"살러스", pos:"n", level:"C2", meanings:["위안","위로"],
-    syn:["comfort in sorrow","easing of grief","relief from pain"],
-    ex:[{ s:"She found {{}} in music.", f:"solace", ko:"그녀는 음악에서 위안을 찾았다." }] },
-
   { word:"sold-out", pron:"솔드 아웃", pos:"adj", level:"B2", meanings:["매진된"],
     syn:["all tickets gone","none left to buy","fully taken up"],
     ex:[{ s:"They played to a {{}} hall.", f:"sold-out", ko:"그들은 매진된 공연장에서 연주했다." }] },
@@ -1376,11 +1361,6 @@ window.VOCAB_S = [
   { word:"solely", exams:["수능"], pron:"소울리", pos:"adv", level:"B2", meanings:["단독으로"],
     syn:["exclusively","on one's own","by oneself alone"],
     ex:[{ s:"The decision rests {{}} with her.", f:"solely", ko:"그 결정은 단독으로 그녀에게 달려 있다." }] },
-
-  /* 원본은 네 갈래였다. 둘로 줄였다. */
-  { word:"solemnity", pron:"설렘니티", pos:"n", level:"C2", meanings:["근엄함","엄숙함"],
-    syn:["grave manner","deep seriousness","weight of a rite"],
-    ex:[{ s:"The service kept its {{}}.", f:"solemnity", ko:"그 예식은 엄숙함을 지켰다." }] },
 
   /* 원본의 셋째 갈래('호객하다') 는 버렸다. */
   { word:"solicit", exams:["공무원"], pron:"설리싯", pos:"v", level:"C2", meanings:["간청하다","요청하다"],
@@ -1484,10 +1464,6 @@ window.VOCAB_S = [
   { word:"souvenir", pron:"수버니어", pos:"n", level:"B1", meanings:["기념품"],
     syn:["keepsake","memento","gift to remember by"],
     ex:[{ s:"He bought a small {{}} at the museum.", f:"souvenir", ko:"그는 박물관에서 작은 기념품을 샀다." }] },
-
-  { word:"sovereignty", pron:"사브런티", pos:"n", level:"C2", meanings:["통치권","자주권"],
-    syn:["supreme power","right to rule oneself","full authority of a state"],
-    ex:[{ s:"The island claimed full {{}}.", f:"sovereignty", ko:"그 섬은 완전한 자주권을 주장했다." }] },
 
   /* 발음을 '소우' 로 적어 챕터 2 의 saw(소) 와 갈랐다. */
   { word:"sow", pron:"소우", pos:"v", level:"B2", meanings:["씨를 뿌리다"],
@@ -2316,10 +2292,6 @@ window.VOCAB_S = [
     syn:["take a paper regularly","pay to receive","agree with a view"],
     ex:[{ s:"I {{}} to two weekly papers.", f:"subscribe", ko:"나는 주간지 두 종을 구독한다." }] },
 
-  { word:"subsequence", pron:"섭시퀀스", pos:"n", level:"C2", meanings:["이어서 일어나는 것"],
-    syn:["what follows after","thing that comes next","later happening"],
-    ex:[{ s:"The report traced each {{}}.", f:"subsequence", ko:"그 보고서는 이어서 일어나는 것을 하나씩 짚었다." }] },
-
   /* 승격 189 — 사전 글자 유지. 참조 consequent(C) 의 화면은 바뀌지 않는다. */
   { word:"subsequent", exams:["공무원"], pron:"섭시퀀트", pos:"adj", level:"B2", meanings:["뒤이은","차후의"],
     syn:["consequent","coming next in order","following in time"],
@@ -2747,11 +2719,6 @@ window.VOCAB_S = [
   { word:"syndrome", pron:"신드롬", pos:"n", level:"B2", meanings:["증후군"],
     syn:["set of symptoms","group of signs together","pattern of illness"],
     ex:[{ s:"Doctors named the new {{}}.", f:"syndrome", ko:"의사들이 그 새 증후군에 이름을 붙였다." }] },
-
-  /* 승격 238 — 사전 글자 유지. 참조는 없다. */
-  { word:"synopsis", pron:"시납시스", pos:"n", level:"C2", meanings:["줄거리","개요"],
-    syn:["short account","brief outline","summary of a story"],
-    ex:[{ s:"Send a one-page {{}} first.", f:"synopsis", ko:"먼저 한 쪽짜리 줄거리를 보내라." }] },
 
   /* 승격 239 — 사전 글자 유지. 참조 analysis(A) 의 화면은 바뀌지 않는다. */
   { word:"synthesis", pron:"신서시스", pos:"n", level:"C1", meanings:["합성","종합"],

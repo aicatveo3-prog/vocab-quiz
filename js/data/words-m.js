@@ -684,14 +684,6 @@ window.VOCAB_M = [
     syn:["comet","shooting star","falling star"],
     ex:[{ s:"A bright {{}} streaked across the night sky.", f:"meteor", ko:"밝은 유성이 밤하늘을 가로질러 갔다." }] },
 
-  { word:"meteorological", pron:"미티어럴라지컬", pos:"adj", level:"C1", meanings:["기상의","기상학의"],
-    syn:["weather-related","atmospheric","climatic"],
-    ex:[{ s:"The flight was delayed by {{}} conditions.", f:"meteorological", ko:"그 항공편은 기상 조건 때문에 지연되었다." }] },
-
-  { word:"meteorologist", pron:"미티어랄러지스트", pos:"n", level:"C1", meanings:["기상학자"],
-    syn:["weather scientist","forecaster","climatologist"],
-    ex:[{ s:"The {{}} warned of heavy snow by evening.", f:"meteorologist", ko:"그 기상학자는 저녁까지 폭설을 경고했다." }] },
-
   { word:"meteorology", pron:"미티어랄러지", pos:"n", level:"C1", meanings:["기상학"],
     syn:["weather science","atmospheric science","climate study"],
     ex:[{ s:"She switched from physics to {{}}.", f:"meteorology", ko:"그녀는 물리학에서 기상학으로 전공을 바꿨다." }] },
@@ -703,10 +695,6 @@ window.VOCAB_M = [
   { word:"method", exams:["공무원","수능"], pron:"메써드", pos:"n", level:"B1", meanings:["방법","수법"],
     syn:["approach","technique","procedure"],
     ex:[{ s:"They developed a faster {{}} of testing.", f:"method", ko:"그들은 더 빠른 검사 방법을 개발했다." }] },
-
-  { word:"meticulously", pron:"머티큘러슬리", pos:"adv", level:"C1", meanings:["꼼꼼하게","좀스럽게"],
-    syn:["painstakingly","scrupulously","with great care"],
-    ex:[{ s:"Every joint was {{}} sanded by hand.", f:"meticulously", ko:"모든 이음새가 손으로 꼼꼼하게 사포질되었다." }] },
 
   { word:"metric", exams:["공무원"], pron:"메트릭", pos:"adj", level:"B2", meanings:["미터법의"],
     syn:["decimal","metre-based","standardized"],
@@ -831,12 +819,6 @@ window.VOCAB_M = [
   { word:"mischief", pron:"미스치프", pos:"n", level:"B2", meanings:["장난","말썽"],
     syn:["naughtiness","prank","trouble"],
     ex:[{ s:"The kittens got into all sorts of {{}}.", f:"mischief", ko:"그 새끼 고양이들은 온갖 장난을 쳤다." }] },
-
-  /* 원본은 '오해하다' 였는데 뒤에 올 misunderstand 와 같았다. 이쪽은 생각 자체가
-     빗나갔다는 쪽이어서 '잘못 생각하다' 로 갈랐다. */
-  { word:"misconceive", pron:"미스컨시브", pos:"v", level:"C2", meanings:["잘못 생각하다","잘못 알다"],
-    syn:["misjudge","get wrong","misread"],
-    ex:[{ s:"Critics {{}} the whole purpose of the reform.", f:"misconceive", ko:"비평가들은 그 개혁의 목적 전체를 잘못 생각한다." }] },
 
   /* 승격 ② — GLOSS '오해, 잘못된 생각' 이다. 그대로 쓰면 뒤에 올
      misunderstanding('오해, 착오')와 첫 뜻이 겹치므로 순서를 뒤집었다.

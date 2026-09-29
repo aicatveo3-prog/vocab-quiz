@@ -1288,12 +1288,6 @@ window.VOCAB_E = [
     syn:["give rise to","bring about","provoke"],
     ex:[{ s:"Secrecy tends to {{}} suspicion among neighbors.", f:"engender", ko:"비밀주의는 이웃들 사이에 의심을 생기게 하는 경향이 있다." }] },
 
-  /* 유의어로 immerse 를 쓰지 않았다 — GLOSS 가 "담그다; 몰입하다" 라서 물에 담그는
-     뜻이 앞에 뜬다. */
-  { word:"engross", pron:"인그로스", pos:"v", level:"C2", meanings:["몰두하게 만들다","빠져들게 하다"],
-    syn:["preoccupy","rivet","fully absorb"],
-    ex:[{ s:"The puzzle can {{}} a child for hours.", f:"engross", ko:"그 퍼즐은 아이를 몇 시간이고 몰두하게 만들 수 있다." }] },
-
   { word:"enhance", exams:["공무원","수능"], pron:"인핸스", pos:"v", level:"B2", meanings:["향상시키다","높이다"],
     syn:["improve","boost","heighten"], ant:["degrade"],
     ex:[{ s:"A little salt will {{}} the flavor of the soup.", f:"enhance", ko:"소금을 조금 넣으면 국의 맛이 향상된다." }] },
@@ -1334,12 +1328,6 @@ window.VOCAB_E = [
   { word:"entail", pron:"인테일", pos:"v", level:"C1", meanings:["수반하다","필요로 하다"],
     syn:["involve","require","bring with it"],
     ex:[{ s:"Moving abroad will {{}} more paperwork than you expect.", f:"entail", ko:"외국으로 이주하는 일은 예상보다 많은 서류 작업을 수반한다." }] },
-
-  /* 원본 '(취임식 등에서) 왕좌에 앉히다' 의 괄호를 풀었다.
-     발음은 기존 dethrone("디스론")에 맞춰 '인스론' 으로 적었다 — '로운'이 아니다. */
-  { word:"enthrone", pron:"인스론", pos:"v", level:"C2", meanings:["왕좌에 앉히다","즉위시키다"],
-    syn:["install as king","put on the throne","crown as monarch"],
-    ex:[{ s:"The abbey has been used to {{}} monarchs for centuries.", f:"enthrone", ko:"그 수도원은 수 세기 동안 군주를 왕좌에 앉히는 데 쓰였다." }] },
 
   /* 기존 GLOSS "열정, 열의" 를 그대로 옮겼다 — 표제어 apathy 의 반의어다. */
   { word:"enthusiasm", pron:"인수지애즘", pos:"n", level:"B2", meanings:["열정","열의"],
@@ -1980,12 +1968,6 @@ window.VOCAB_E = [
     syn:["being exposed","revelation","uncovering"],
     ex:[{ s:"Long {{}} to the sun cracked the paint.", f:"exposure", ko:"오랜 햇빛 노출이 그 페인트를 갈라지게 했다." }] },
 
-  /* 원본은 '정교한; 매우 아름다운, 고귀한' 인데 '매우 아름다운' 을 앞에 뒀다 —
-     표제어 elaborate(C1 "공들인, 정교한")와 첫 뜻이 겹치지 않게 하려는 것이다. */
-  { word:"exquisite", pron:"엑스퀴짓", pos:"adj", level:"C2", meanings:["매우 아름다운","정교한"],
-    syn:["beautifully made","delicate","superb"],
-    ex:[{ s:"The box held an {{}} silver locket.", f:"exquisite", ko:"그 상자에는 매우 아름다운 은 로켓이 들어 있었다." }] },
-
   /* ★ 원본은 '확대하다, 확장하다; (시간, 기간 등을) 연장하다' 인데 기존 GLOSS
      "늘리다, 연장하다" 를 그대로 썼다. 원본대로 '확대하다, 확장하다' 로 적으면
      표제어 enlarge(6차, B2 "확대하다, 확장하다")와 뜻이 글자까지 같아진다.
@@ -2069,13 +2051,6 @@ window.VOCAB_E = [
   { word:"extraordinary", pron:"익스트로디너리", pos:"adj", level:"C1", meanings:["비범한","대단한"],
     syn:["exceptional","remarkable","phenomenal"],
     ex:[{ s:"She has an {{}} memory for names.", f:"extraordinary", ko:"그녀는 이름을 기억하는 데 비범한 능력이 있다." }] },
-
-  /* 원본은 '외계인, 우주인; 지구 밖 생물체의, 외계의' 로 명사와 형용사가 섞여 있다 —
-     명사로 정했다. syn 을 비웠다: 후보가 모두 '우주에서 온 존재' 를 달리 말한 것이고,
-     alien 은 표제어인데 품사가 형용사("이질적인, 생소한")라 쓸 수 없다.
-     발음은 기존 PRON 의 terrestrial("터레스트리얼")에 맞췄다. */
-  { word:"extraterrestrial", pron:"엑스트러터레스트리얼", pos:"n", level:"C2", meanings:["외계인","지구 밖 생물체"],
-    ex:[{ s:"The film treats its {{}} as an ordinary neighbor.", f:"extraterrestrial", ko:"그 영화는 외계인을 평범한 이웃처럼 다룬다." }] },
 
   { word:"extravagant", pron:"익스트래버건트", pos:"adj", level:"C1", meanings:["사치스러운","낭비하는"],
     syn:["lavish","wasteful","over the top"], ant:["thrifty"],

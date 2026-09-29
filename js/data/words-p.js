@@ -220,11 +220,6 @@ window.VOCAB_P = [
     syn:["inner hand","flat of the hand","hollow of the hand"],
     ex:[{ s:"He held the coin in his {{}}.", f:"palm", ko:"그는 동전을 손바닥에 쥐었다." }] },
 
-  /* 승격 ② — 사전 표현과 글자까지 같다(cure-all, C). */
-  { word:"panacea", pron:"패너시어", pos:"n", level:"C2", meanings:["만병통치약"],
-    syn:["cure-all","universal remedy","single fix for everything"],
-    ex:[{ s:"Technology is no {{}} for poverty.", f:"panacea", ko:"기술은 가난의 만병통치약이 아니다." }] },
-
   { word:"pandemic", exams:["공무원"], pron:"팬데믹", pos:"n", level:"B2", meanings:["전염병","대유행병"],
     syn:["worldwide epidemic","global outbreak","sweeping disease"],
     ex:[{ s:"The {{}} closed borders for months.", f:"pandemic", ko:"그 전염병은 여러 달 국경을 닫게 했다." }] },
