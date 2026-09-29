@@ -495,12 +495,6 @@ window.VOCAB_O = [
     syn:["before the audience","on the boards","in view of the crowd"], ant:["backstage"],
     ex:[{ s:"Her {{}} presence filled the hall.", f:"onstage", ko:"그녀의 무대 위의 존재감이 회관을 채웠다." }] },
 
-  /* 승격 39 — 사전 표현을 글자까지 지켰다(instant, I). 원본의 '현장의, 즉석의'
-     대신 사전 쪽을 남겼다. */
-  { word:"on-the-spot", pron:"온 더 스팟", pos:"adj", level:"B2", meanings:["현장에서 바로 하는"],
-    syn:["done then and there","immediate at the scene","without delay"],
-    ex:[{ s:"Police made an {{}} check of the vehicle.", f:"on-the-spot", ko:"경찰이 그 차량을 현장에서 바로 확인했다." }] },
-
   /* 승격 40 — ★원본의 뜻이 틀렸다. '공식, 개방' 의 '공식' 은 '공석' 의 오타로 보인다.
      그대로 두면 formula(공식, 방법, F) 와 첫 뜻이 겹친다. 참조 conclusion(ant, C)·
      initial(syn, I) 이 모두 시작 뜻을 쓰므로 사전 표현 '시작, 개막' 을 글자까지

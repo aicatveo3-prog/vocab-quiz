@@ -215,10 +215,6 @@ window.VOCAB_L = [
     syn:["nonspecialist","amateur","ordinary person"], ant:["expert"],
     ex:[{ s:"The book explains quantum physics for the {{}}.", f:"layman", ko:"그 책은 비전문가를 위해 양자물리학을 설명한다." }] },
 
-  { word:"lay-off", pron:"레이오프", pos:"n", level:"B2", meanings:["해고","강제 휴업"],
-    syn:["dismissal","redundancy","job cut"],
-    ex:[{ s:"The factory announced a mass {{}} in October.", f:"lay-off", ko:"그 공장은 10월에 대규모 해고를 발표했다." }] },
-
   /* 승격 ① — GLOSS '배치, 설계' 를 글자까지 지켰다. format(syn) 이 참조하므로
      원본의 '레이아웃'(외래어) 대신 사전 쪽 '설계' 를 남겼다. */
   { word:"layout", pron:"레이아웃", pos:"n", level:"B2", meanings:["배치","설계"],

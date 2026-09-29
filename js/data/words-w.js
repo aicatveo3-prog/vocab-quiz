@@ -556,10 +556,6 @@ window.VOCAB_W = [
     syn:["amount of work to get through","load of tasks","how much there is to do"],
     ex:[{ s:"Her {{}} doubled that month.", f:"workload", ko:"그달 그녀의 업무량이 두 배가 됐다." }] },
 
-  { word:"world view", pron:"월드 뷰", pos:"n", level:"C1", meanings:["세계관"],
-    syn:["way of seeing the world","one's whole outlook on life","frame of belief"],
-    ex:[{ s:"Travel changed his {{}}.", f:"world view", ko:"여행이 그의 세계관을 바꿨다." }] },
-
   /* 교재 동사 갈래('숭배하다') 는 버렸다. chapel(예배실, 부속 예배당) 과는
      '-실' 이 장소를 뜻해 갈린다. */
   { word:"worship", pron:"워십", pos:"n", level:"B2", meanings:["예배","숭배"],

@@ -1340,10 +1340,6 @@ window.VOCAB_T = [
   { word:"turn out", exams:["공무원","수능"], pron:"턴 아웃", pos:"phr", level:"B1", meanings:["결과적으로 ~이 되다"],
     syn:["end up","prove to be so","come out in the end"] },
 
-  /* 승격 86 — 사전 단일값 유지(참조 flip). */
-  { word:"turn over", pron:"턴 오버", pos:"phr", level:"B1", meanings:["돌려 뒤집다"],
-    syn:["flip","turn the other side up","roll onto the back"] },
-
   /* 승격 87 — 사전 단일값 유지. '~에 의지하다' 는 fall back on 자리다. */
   { word:"turn to", pron:"턴 투", pos:"phr", level:"B1", meanings:["~에 도움을 청하다"],
     syn:["fall back on","go to for help","look to in need"] },
