@@ -509,6 +509,9 @@ b,strong{font-weight:600}
 /* '처음부터'는 오답 복습(빨강)과 성격이 다르다 — 조용하게, 글자가 들어갈 만큼만 */
 .row-side.is-restart{flex-basis:68px;color:var(--dim);font-size:12px}
 .row-side.is-restart:hover,.row-side.is-restart:active{background:var(--surface-2);color:var(--txt)}
+/* '단어학습' — 문제 풀기 전 암기용. 강조색으로 눈에 띄되 과하지 않게 */
+.row-side.is-study{flex-basis:74px;color:var(--accent);font-size:12px}
+.row-side.is-study:hover,.row-side.is-study:active{background:var(--surface-2)}
 
 /* 챕터 행의 오답 개수 */
 .row-wrong{color:var(--ng)}

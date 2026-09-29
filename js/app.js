@@ -22,7 +22,9 @@
        boolean으로 두면 "몇 차 복습인가"를 알 수 없어 승급이 불가능하다. */
     reviewTier: null,
     wrongTier: 1,          // 오답 노트 화면에서 보고 있는 차수
-    wordFilter: { status: 'all', level: 'all' }
+    wordFilter: { status: 'all', level: 'all' },
+    studySetId: null,      // 단어 학습 중인 세트 (아니면 null)
+    modeSetsId: null       // 단어 학습에서 돌아올 개별 연습 형식
   };
 
   /* 오답 노트·피드백·복습 세션은 세트를 가리지 않으므로 전 세트 합집합으로 만든다.
@@ -213,6 +215,8 @@
   function renderModeSets(modeId) {
     var mode = modeById(modeId);
     if (!mode) return;
+    state.studySetId = null;    // 세트 목록을 열면 학습 중이 아니다
+    state.modeSetsId = modeId;  // 단어학습에서 돌아올 때 이 형식을 다시 연다
     $('mode-sets-title').textContent = mode.label;
     $('mode-sets-n').textContent = mode.sub;
     // 조사가 형식 이름마다 달라지므로(4지선다로 / 문장 빈칸으로) 이름을 문장에 넣지 않는다
@@ -253,10 +257,12 @@
         btn.disabled = true;
       }
 
-      // 손댄 세트에만 '처음부터'를 붙인다. 아직 안 푼 세트에는 되돌릴 것이 없다.
+      // 손댄 세트에만 '처음부터' 버튼을 붙인다.
+      // 어느 세트든 '단어학습'은 항상 오른쪽에 두어 문제 풀기 전에 훑어볼 수 있게 한다.
+      var pair = el('div', 'row-pair');
+      pair.appendChild(btn);
+
       if (prog && prog.done) {
-        var pair = el('div', 'row-pair');
-        pair.appendChild(btn);
         var side = el('button', 'row-side is-restart', '처음부터');
         side.type = 'button';
         side.title = set.label + ' 세트를 처음부터 다시 풀기';
@@ -271,10 +277,16 @@
           startSession(modeId, null, set.id);
         });
         pair.appendChild(side);
-        list.appendChild(pair);
-      } else {
-        list.appendChild(btn);
       }
+
+      var studyBtn = el('button', 'row-side is-study', '단어학습');
+      studyBtn.type = 'button';
+      studyBtn.title = set.label + ' 세트 단어 학습';
+      studyBtn.setAttribute('aria-label', studyBtn.title);
+      studyBtn.addEventListener('click', function () { renderStudy(set.id); });
+      pair.appendChild(studyBtn);
+
+      list.appendChild(pair);
     });
     go('mode-sets');
   }
@@ -1023,7 +1035,7 @@
 
   function go(name) {
     ['home', 'quiz', 'result', 'wrong', 'words', 'block',
-      'sets', 'chapters', 'mode-sets', 'settings', 'edition'].forEach(function (n) {
+      'sets', 'chapters', 'mode-sets', 'study', 'settings', 'edition'].forEach(function (n) {
       $('screen-' + n).classList.toggle('is-active', n === name);
     });
     if (name !== 'quiz') $('conquer-grid').innerHTML = '';
@@ -1183,6 +1195,42 @@
     go('quiz');
     renderConquerPreview(sess);
   }
+
+  /* ══════════ 단어 학습 (문제 풀기 전 훑어보기) ══════════
+     개별 연습 세트 목록의 '단어학습' 버튼에서 들어온다.
+     정복 모드 미리보기와 같은 서식(단어 · pos·level · 뜻)으로 세트 전체를 보여준다. */
+  function renderStudy(setId) {
+    var set = window.Conquer.getSet(setId);
+    if (!set) return;
+    var words = edFilter(set.words).slice().sort(function (a, b) {
+      return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+    });
+
+    state.studySetId = setId;
+
+    $('study-title').textContent = set.label + ' 세트 · 단어 학습';
+    $('study-n').textContent = words.length + '단어';
+
+    var box = $('study-list');
+    box.innerHTML = '';
+    words.forEach(function (w) {
+      var row = el('div', 'pv-item');
+      var left = el('div');
+      left.appendChild(el('b', null, w.word));
+      left.appendChild(el('span', 'pv-tag', w.pos + ' · ' + w.level));
+      row.appendChild(left);
+      row.appendChild(el('div', 'pv-mean', w.meanings.join(', ')));
+      box.appendChild(row);
+    });
+
+    go('study');
+  }
+
+  // 되돌아가기 — 들어온 경로에 상관없이 개별 연습 세트 목록으로 (형식이 남아 있음)
+  $('btn-back-study').addEventListener('click', function () {
+    if (state.studySetId) renderModeSets(state.modeSetsId || 'mcq');
+    else go('home');
+  });
 
   // 미리보기
   function renderConquerPreview(sess) {
