@@ -210,10 +210,6 @@ window.VOCAB_C = [
     syn:["funds","assets","wealth"],
     ex:[{ s:"The startup raised enough {{}} to hire ten engineers.", f:"capital", ko:"그 스타트업은 엔지니어 열 명을 뽑을 만큼의 자본을 모았다." }] },
 
-  { word:"capsize", pron:"캡사이즈", pos:"v", level:"C1", meanings:["뒤집히다","전복되다"],
-    syn:["overturn","upset","topple"], ant:["steady"],
-    ex:[{ s:"A sudden wave made the small boat {{}}.", f:"capsize", ko:"갑작스러운 파도가 작은 배를 뒤집히게 했다." }] },
-
   { word:"captive", pron:"캡티브", pos:"adj", level:"C1", meanings:["사로잡힌","억류된"],
     syn:["imprisoned","confined","caged"], ant:["free"],
     ex:[{ s:"The birds were kept {{}} in a small cage.", f:"captive", ko:"그 새들은 작은 우리에 갇혀 있었다." }] },
@@ -1954,10 +1950,6 @@ window.VOCAB_C = [
   { word:"curse", pron:"커스", pos:"n", level:"B2", meanings:["저주","욕설"],
     syn:["hex","oath","damnation"], ant:["blessing"],
     ex:[{ s:"He muttered a {{}} under his breath.", f:"curse", ko:"그는 숨죽여 욕설을 중얼거렸다." }] },
-
-  { word:"curtail", pron:"커테일", pos:"v", level:"C2", meanings:["줄이다","제한하다"],
-    syn:["shorten","reduce","trim"], ant:["extend"],
-    ex:[{ s:"Heavy rain forced them to {{}} the trip.", f:"curtail", ko:"폭우 때문에 그들은 여행을 줄여야 했다." }] },
 
   { word:"curtained", pron:"커튼드", pos:"adj", level:"C1", meanings:["커튼이 쳐진"],
     syn:["screened","veiled","draped"], ant:["bare"],

@@ -887,10 +887,6 @@ window.VOCAB_O = [
     syn:["too large a dose","excessive amount taken","dangerous quantity"],
     ex:[{ s:"An {{}} of the drug can stop the heart.", f:"overdose", ko:"그 약의 과다 복용은 심장을 멈출 수 있다." }] },
 
-  { word:"overdrawn", pron:"오버드론", pos:"adj", level:"C1", meanings:["초과 인출된"],
-    syn:["in the red","drawn beyond the balance","overspent on an account"],
-    ex:[{ s:"His account has been {{}} since May.", f:"overdrawn", ko:"그의 계좌는 오월부터 초과 인출된 상태다." }] },
-
   /* 승격 73 — 사전 표현 '기한이 지난, 뒤늦은' 을 글자까지 지켰다(belated, B).
      원본의 '기한이 지난, 밀린' 대신 사전 쪽을 남겼다. */
   { word:"overdue", exams:["공무원"], pron:"오버두", pos:"adj", level:"B2", meanings:["기한이 지난","뒤늦은"],

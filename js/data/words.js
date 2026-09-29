@@ -264,10 +264,6 @@ window.VOCAB = [
     ex:[{ s:"Her first novel won critical {{}}.", f:"acclaim", ko:"그녀의 첫 소설은 비평계의 찬사를 받았다." }],
     gov:{ usage:"win acclaim : 찬사를 받다" } },
 
-  { word:"acclimate", pron:"애클러메이트", pos:"v", level:"C1", meanings:["적응하다","순응시키다"],
-    syn:["adapt","adjust","acclimatize"], ant:["resist"],
-    ex:[{ s:"Climbers need a week to {{}} to the thin air.", f:"acclimate", ko:"등반가들은 희박한 공기에 적응하는 데 일주일이 필요하다." }] },
-
   { word:"accommodate", exams:["수능"], pron:"어카머데이트", pos:"v", level:"B2", meanings:["수용하다","숙박시키다"],
     syn:["house","lodge","hold"], ant:["exclude"],
     ex:[{ s:"The new hall can {{}} up to 500 guests.", f:"accommodate", ko:"새 강당은 최대 500명의 손님을 수용할 수 있다." }] },
@@ -935,10 +931,6 @@ window.VOCAB = [
   { word:"annual", exams:["수능"], pron:"애뉴얼", pos:"adj", level:"B1", meanings:["매년의","연간의"],
     syn:["yearly","once-a-year","perennial"],
     ex:[{ s:"The club holds an {{}} dinner in May.", f:"annual", ko:"그 동아리는 5월에 연례 만찬을 연다." }] },
-
-  { word:"annul", pron:"어널", pos:"v", level:"C2", meanings:["무효화하다","취소하다"],
-    syn:["invalidate","cancel","void"], ant:["ratify"],
-    ex:[{ s:"The court moved to {{}} the contract.", f:"annul", ko:"법원은 그 계약을 무효화하는 쪽으로 움직였다." }] },
 
   { word:"anonymous", pron:"어나니머스", pos:"adj", level:"B2", meanings:["익명의","신원 불명의"],
     syn:["unnamed","unidentified","nameless"], ant:["named"],

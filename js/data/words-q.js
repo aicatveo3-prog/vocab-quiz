@@ -86,13 +86,6 @@ window.VOCAB_Q = [
     syn:["one of four parts","fourth part","lodging"],
     ex:[{ s:"Only a {{}} of the class passed.", f:"quarter", ko:"학급의 4분의 1만 통과했다." }] },
 
-  /* '이상한' 은 bizarre(B)·odd(O) 의 첫 뜻과 글자가 같아 셋이 서로의 오답에서
-     빠진다. 예문은 사람이 아니라 소리에 붙였다 — 이 낱말은 사람을 가리키는
-     다른 뜻으로 더 자주 쓰인다. */
-  { word:"queer", pron:"퀴어", pos:"adj", level:"C1", meanings:["이상한","기묘한"],
-    syn:["out of the ordinary","hard to explain","oddly unfamiliar"],
-    ex:[{ s:"A {{}} sound came from the attic.", f:"queer", ko:"다락에서 이상한 소리가 났다." }] },
-
   /* 승격 ⑦ — 사전 표현과 글자까지 같다(adventure, A · expedition, E).
      '탐사' 는 exploration(E) 의 첫 뜻이라 사전의 '탐구' 를 그대로 두었다. */
   { word:"quest", pron:"퀘스트", pos:"n", level:"B2", meanings:["탐구","모험"],

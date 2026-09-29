@@ -176,12 +176,6 @@ window.VOCAB_U = [
     syn:["plain to look at","drawing no one","without charm"],
     ex:[{ s:"The room was bare and {{}}.", f:"unattractive", ko:"그 방은 헐벗고 매력이 없었다." }] },
 
-  /* ceaseless(끊임없는, 부단한)·incessant(끊임없는)·perennial(다년생의,
-     끊임없는) 셋과 글자가 같아 자동 배제된다. constant 는 레벨 차가 2다. */
-  { word:"unceasing", pron:"언시싱", pos:"adj", level:"C1", meanings:["끊임없는"],
-    syn:["going on and on","never coming to a stop","without a break"],
-    ex:[{ s:"The {{}} noise wore them down.", f:"unceasing", ko:"끊임없는 소음이 그들을 지치게 했다." }] },
-
   /* invariable(불변의, 변함없는 · C1/adj) 와 '불변의' 가 맞물려 배제된다.
      교재 둘째 갈래('바꿀 수 없는') 는 같은 말이어서 하나로 줄였다. */
   { word:"unchangeable", pron:"언체인저블", pos:"adj", level:"B2", meanings:["불변의"],

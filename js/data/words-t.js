@@ -976,10 +976,6 @@ window.VOCAB_T = [
     syn:["convert","make over into","change the form of"],
     ex:[{ s:"Rain can {{}} the whole valley.", f:"transform", ko:"비는 골짜기 전체를 바꿔 놓을 수 있다." }] },
 
-  { word:"transfuse", pron:"트랜스퓨즈", pos:"v", level:"C2", meanings:["수혈하다","주입하다"],
-    syn:["put blood into","pour in from outside","feed in slowly"],
-    ex:[{ s:"The doctors had to {{}} blood at once.", f:"transfuse", ko:"의사들은 즉시 수혈해야 했다." }] },
-
   /* 승격 62 — 사전 단일값 유지. 참조 momentary(M) 한 곳의 화면은 바뀌지 않는다.
      '일시적인' 은 temporary(일시적인 · T… 아닌 B1 표제어) 자리라 쓰지 않았다. */
   { word:"transient", pron:"트랜지언트", pos:"adj", level:"C1", meanings:["오래 가지 않는"],

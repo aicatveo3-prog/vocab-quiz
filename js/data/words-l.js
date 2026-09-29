@@ -123,13 +123,6 @@ window.VOCAB_L = [
     syn:["crippled","limping","hobbling"],
     ex:[{ s:"The horse went {{}} shortly after the race.", f:"lame", ko:"그 말은 경주 직후 절게 되었다." }] },
 
-  /* 승격 ① — GLOSS '통탄스러운, 한심한' 을 글자까지 지켰다.
-     deplorable(syn)·grievous(syn) 두 문제가 참조하므로 원본('통탄할, 개탄스러운')
-     대신 사전 쪽 표현을 남겼다 — 같은 갈래다. */
-  { word:"lamentable", pron:"래먼터블", pos:"adj", level:"C2", meanings:["통탄스러운","한심한"],
-    syn:["deplorable","grievous","regrettable"],
-    ex:[{ s:"The condition of the old building was {{}}.", f:"lamentable", ko:"그 낡은 건물의 상태는 통탄스러웠다." }] },
-
   /* landfill·landlord·landmine 은 앞 네 글자가 같지만 뜻이 서로 완전히 달라
      같은 보드에 와도 짝을 고르는 데 무리가 없다. */
   { word:"landfill", exams:["공무원","수능"], pron:"랜드필", pos:"n", level:"B2", meanings:["쓰레기 매립지"],

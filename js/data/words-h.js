@@ -386,10 +386,6 @@ window.VOCAB_H = [
 
   /* ── 챕터 5 (4차에서 빠진 7단어 + 나머지 22단어 = 29단어) ──── */
 
-  { word:"holdout", pron:"홀다웃", pos:"n", level:"C1", meanings:["동의하지 않는 사람"],
-    syn:["dissenter","objector","resister"],
-    ex:[{ s:"He was the last {{}} on the committee.", f:"holdout", ko:"그는 위원회에서 마지막까지 동의하지 않은 사람이었다." }] },
-
   /* 승격 ② — 4곳(basin·cavity·concave·crater)이 이 단어를 유의어로 쓴다.
      쓰는 쪽이 전부 '움푹한 곳' 이라 GLOSS 는 없지만 기존 뜻이 '속이 빈; 움푹한 곳'
      이었다. 명사 쪽(움푹한 곳)을 첫 자리에 두어 네 문제를 지킨다. */

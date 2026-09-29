@@ -1062,11 +1062,6 @@ window.VOCAB_E = [
     syn:["accept","adopt","welcome"], ant:["reject"],
     ex:[{ s:"Older firms were slow to {{}} the new technology.", f:"embrace", ko:"오래된 기업들은 새 기술을 받아들이는 데 더뎠다." }] },
 
-  /* syn 을 비웠다 — '수놓다'는 바꿔 쓸 낱말이 마땅치 않은 공예 동사다.
-     stitch·sew 는 뜻이 더 넓어 유의어로 가르치면 틀린 것을 가르치게 된다. */
-  { word:"embroider", pron:"임브로이더", pos:"v", level:"C2", meanings:["수놓다","자수하다"],
-    ex:[{ s:"She learned to {{}} flowers on plain linen.", f:"embroider", ko:"그녀는 무늬 없는 린넨에 꽃을 수놓는 법을 배웠다." }] },
-
   { word:"emerge", exams:["공무원","수능"], pron:"이머지", pos:"v", level:"B2", meanings:["드러나다","나타나다"],
     syn:["appear","come out","come to light"], ant:["disappear"],
     ex:[{ s:"New evidence began to {{}} halfway through the trial.", f:"emerge", ko:"재판 중반에 새로운 증거가 드러나기 시작했다." }] },

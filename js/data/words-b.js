@@ -325,12 +325,6 @@ window.VOCAB_B = [
     syn:["previously","in advance","ahead of time"], ant:["afterward"],
     ex:[{ s:"You should book the tickets well {{}}.", f:"beforehand", ko:"표는 미리 예약해 두는 것이 좋다." }] },
 
-  { word:"beguile", pron:"비가일", pos:"v", level:"C2", meanings:["현혹시키다","속이다"],
-    /* charm 은 쓰지 않는다 — 표제어가 명사("매력")라서 동사 표제어 beguile 의
-       유의어 자리에 명사 뜻이 뜬다. */
-    syn:["captivate","enchant","deceive"], ant:["repel"],
-    ex:[{ s:"The salesman tried to {{}} her with empty promises.", f:"beguile", ko:"그 판매원은 빈 약속으로 그녀를 현혹시키려 했다." }] },
-
   { word:"behind bars", pron:"비하인드 바스", pos:"phr", level:"B2", meanings:["투옥된","철창신세인"],
     syn:["in prison","imprisoned","in custody"], ant:["at large"] },
 
@@ -421,12 +415,6 @@ window.VOCAB_B = [
     syn:["on the far side of","farther than","outside"], ant:["within"],
     ex:[{ s:"The village lies just {{}} those low hills.", f:"beyond", ko:"그 마을은 저 낮은 언덕 바로 너머에 있다." }] },
 
-  /* biannual(연 2회)과 biennial(격년)은 일부러 유의어로 묶지 않았다.
-     서로의 오답으로 등장해야 둘을 구별하는 훈련이 된다. */
-  { word:"biannual", pron:"바이애뉴얼", pos:"adj", level:"C1", meanings:["연 2회의"],
-    syn:["twice-yearly","semiannual","half-yearly"], ant:["annual"],
-    ex:[{ s:"The company holds a {{}} review each June and December.", f:"biannual", ko:"그 회사는 매년 6월과 12월에 연 2회 평가를 한다." }] },
-
   { word:"biased", exams:["수능"], pron:"바이어스트", pos:"adj", level:"B2", meanings:["선입견이 있는","편향된"],
     syn:["prejudiced","partial","one-sided"], ant:["impartial"],
     ex:[{ s:"The report was clearly {{}} toward one side.", f:"biased", ko:"그 보고서는 분명히 한쪽으로 편향되어 있었다." }] },
@@ -503,10 +491,6 @@ window.VOCAB_B = [
   { word:"black eye", pron:"블랙 아이", pos:"n", level:"B2", meanings:["멍든 눈"],
     syn:["bruised eye","shiner","contusion"],
     ex:[{ s:"He came home with a {{}} after the fight.", f:"black eye", ko:"그는 싸움 뒤에 멍든 눈으로 집에 왔다." }] },
-
-  { word:"blacken", pron:"블래큰", pos:"v", level:"C1", meanings:["검게 만들다","(명성을) 더럽히다"],
-    syn:["darken","tarnish","smear"], ant:["whiten"],
-    ex:[{ s:"Smoke had {{}} the walls of the kitchen.", f:"blackened", ko:"연기가 부엌 벽을 검게 만들어 놓았다." }] },
 
   { word:"blackout", pron:"블랙아웃", pos:"n", level:"C1", meanings:["정전","보도 정지"],
     syn:["power failure","outage","suppression"],

@@ -252,10 +252,6 @@ window.VOCAB_G = [
     syn:["bacterium","microbe","pathogen"],
     ex:[{ s:"A single {{}} can multiply into millions within hours.", f:"germ", ko:"단 하나의 세균이 몇 시간 안에 수백만 개로 늘어날 수 있다." }] },
 
-  { word:"gesticulate", pron:"제스티큘레이트", pos:"v", level:"C2", meanings:["몸짓으로 이야기하다"],
-    syn:["gesture","signal","motion"],
-    ex:[{ s:"He began to {{}} wildly to make his point clear.", f:"gesticulate", ko:"그는 요점을 분명히 하려고 격렬하게 몸짓을 했다." }] },
-
   /* 원본은 '몸짓을 하다; (몸짓으로) 가리키다; 몸짓, 제스처' 다. 동사 쪽으로
      모았다 — gesticulate 의 유의어로 쓰이므로 품사가 맞아야 설명이 자연스럽다. */
   { word:"gesture", pron:"제스처", pos:"v", level:"B1", meanings:["몸짓을 하다","몸짓으로 가리키다"],

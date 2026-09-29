@@ -656,10 +656,6 @@ window.VOCAB_R = [
     syn:["strap for guiding a horse","check on freedom","hold over another"],
     ex:[{ s:"He pulled the {{}} to stop the horse.", f:"rein", ko:"그는 말을 세우려 고삐를 당겼다." }] },
 
-  { word:"reincarnate", pron:"리인카네이트", pos:"v", level:"C2", meanings:["환생시키다","다시 태어나게 하다"],
-    syn:["give a new body to","bring back in another form","send back to life"],
-    ex:[{ s:"The tale says the gods {{}} the hero.", f:"reincarnate", ko:"그 이야기는 신들이 그 영웅을 환생시킨다고 한다." }] },
-
   /* 승격 52 — 사전 단일값 유지(bolster, B · counteract 반의어, C). */
   { word:"reinforce", exams:["수능"], pron:"리인포스", pos:"v", level:"B2", meanings:["강화하다"],
     syn:["bolster","make stronger","back up with more"],
@@ -927,10 +923,6 @@ window.VOCAB_R = [
   { word:"replace", exams:["공무원","수능"], pron:"리플레이스", pos:"v", level:"B1", meanings:["대체하다","대신하다"],
     syn:["take the place of","put another in place","swap in for"],
     ex:[{ s:"Machines will {{}} the old line.", f:"replace", ko:"기계가 그 낡은 설비를 대체할 것이다." }] },
-
-  { word:"replanting", pron:"리플랜팅", pos:"n", level:"B2", meanings:["다시 심기"],
-    syn:["putting plants back","setting out new stock","planting over again"],
-    ex:[{ s:"{{}} began after the fire.", f:"Replanting", ko:"불이 난 뒤 다시 심기가 시작되었다." }] },
 
   /* 승격 79 — 사전 단일값 유지(duplicate, D). 원본 '모방하다' 는 emulate·imitate·
      mimic 이 이미 쓰는 자리다. */

@@ -401,10 +401,6 @@ window.VOCAB_D = [
     syn:["extent","level","grade"],
     ex:[{ s:"The two cases differ in {{}} rather than in kind.", f:"degree", ko:"그 두 사례는 종류보다는 정도에서 다르다." }] },
 
-  { word:"dehydrate", pron:"디하이드레이트", pos:"v", level:"C1", meanings:["탈수시키다","건조시키다"],
-    syn:["dry out","desiccate","parch"], ant:["hydrate"],
-    ex:[{ s:"Long hikes in the heat can quickly {{}} the body.", f:"dehydrate", ko:"더위 속 긴 산행은 몸을 빠르게 탈수시킬 수 있다." }] },
-
   { word:"delay", exams:["공무원","수능"], pron:"딜레이", pos:"n", level:"B1", meanings:["지연","연기"],
     syn:["postponement","holdup","lag"], ant:["acceleration"],
     ex:[{ s:"A two-hour {{}} left passengers stranded at the gate.", f:"delay", ko:"두 시간의 지연으로 승객들이 게이트에 발이 묶였다." }] },
@@ -448,10 +444,6 @@ window.VOCAB_D = [
   { word:"deliver", exams:["공무원","수능"], pron:"딜리버", pos:"v", level:"B1", meanings:["배달하다","전달하다"],
     syn:["hand over","convey","distribute"], ant:["withhold"],
     ex:[{ s:"The courier promised to {{}} the package before noon.", f:"deliver", ko:"택배 기사가 정오 전에 소포를 배달하겠다고 했다." }] },
-
-  { word:"delude", pron:"딜루드", pos:"v", level:"C1", meanings:["착각하게 하다","속이다"],
-    syn:["mislead","deceive","fool"], ant:["enlighten"],
-    ex:[{ s:"Do not {{}} yourself into thinking the problem has gone away.", f:"delude", ko:"문제가 사라졌다고 스스로를 속이지 마라." }] },
 
   { word:"delusion", pron:"딜루전", pos:"n", level:"C1", meanings:["망상","착각"],
     syn:["illusion","fallacy","misconception"], ant:["reality"],
@@ -885,10 +877,6 @@ window.VOCAB_D = [
   { word:"disagree", pron:"디서그리", pos:"v", level:"B1", meanings:["동의하지 않다","일치하지 않다"],
     syn:["differ","dissent","object to"], ant:["agree"],
     ex:[{ s:"Experts still {{}} about the cause of the collapse.", f:"disagree", ko:"전문가들은 붕괴 원인에 대해 여전히 의견이 다르다." }] },
-
-  { word:"disagreeable", pron:"디서그리어블", pos:"adj", level:"C1", meanings:["불쾌한","비위에 거슬리는"],
-    syn:["unpleasant","offensive","obnoxious"], ant:["agreeable"],
-    ex:[{ s:"There was a {{}} smell coming from the drain.", f:"disagreeable", ko:"배수구에서 불쾌한 냄새가 났다." }] },
 
   { word:"disappear", pron:"디서피어", pos:"v", level:"B1", meanings:["사라지다","없어지다"],
     syn:["vanish","fade","evaporate"], ant:["appear"],
