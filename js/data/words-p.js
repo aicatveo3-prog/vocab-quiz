@@ -778,10 +778,6 @@ window.VOCAB_P = [
     syn:["of little account","trivial in scale","small-scale"], ant:["weighty"],
     ex:[{ s:"They argued over {{}} details.", f:"petty", ko:"그들은 하찮은 세부 사항을 두고 다퉜다." }] },
 
-  { word:"pharmaceutical", pron:"파머슈티컬", pos:"adj", level:"C1", meanings:["제약의","약학의"],
-    syn:["drug-making","to do with medicines","medicine-related"],
-    ex:[{ s:"She works for a {{}} company.", f:"pharmaceutical", ko:"그녀는 제약 회사에서 일한다." }] },
-
   { word:"pharmacy", pron:"파머시", pos:"n", level:"B1", meanings:["약국","약학"],
     syn:["chemist's shop","drugstore","study of medicines"],
     ex:[{ s:"The {{}} closes at nine.", f:"pharmacy", ko:"그 약국은 아홉 시에 닫는다." }] },

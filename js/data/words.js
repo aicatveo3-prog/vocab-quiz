@@ -972,10 +972,6 @@ window.VOCAB = [
     syn:["expect","foresee","predict"], ant:["overlook"],
     ex:[{ s:"We {{}} heavy traffic during the holiday.", f:"anticipate", ko:"우리는 연휴 동안 극심한 교통 정체를 예상한다." }] },
 
-  { word:"antidepressant", pron:"앤티디프레선트", pos:"n", level:"C1", meanings:["항우울제"],
-    syn:["mood stabilizer","medication","drug"],
-    ex:[{ s:"The doctor prescribed a mild {{}}.", f:"antidepressant", ko:"의사는 약한 항우울제를 처방했다." }] },
-
   { word:"antidote", pron:"앤티도트", pos:"n", level:"C1", meanings:["해독제","해결책"],
     syn:["remedy","cure","countermeasure"], ant:["poison"],
     ex:[{ s:"Laughter can be an {{}} to daily stress.", f:"antidote", ko:"웃음은 일상적 스트레스의 해독제가 될 수 있다." }] },
@@ -1096,10 +1092,6 @@ window.VOCAB = [
   { word:"apprentice", pron:"어프렌티스", pos:"n", level:"C1", meanings:["수습생","도제"],
     syn:["trainee","learner","novice"], ant:["master"],
     ex:[{ s:"He started as an {{}} in a print shop.", f:"apprentice", ko:"그는 인쇄소에서 수습생으로 시작했다." }] },
-
-  { word:"apprenticeship", pron:"어프렌티스쉽", pos:"n", level:"C1", meanings:["수습 기간","도제살이"],
-    syn:["traineeship","internship","training"],
-    ex:[{ s:"She completed a four-year {{}} as an electrician.", f:"apprenticeship", ko:"그녀는 전기공으로 4년의 수습 과정을 마쳤다." }] },
 
   { word:"approach", exams:["공무원","수능"], pron:"어프로치", pos:"v", level:"B1", meanings:["접근하다","다가가다"],
     syn:["near","advance","come toward"], ant:["retreat"],

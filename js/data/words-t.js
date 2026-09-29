@@ -1278,11 +1278,6 @@ window.VOCAB_T = [
     syn:["chest","main body of a thing","big travelling case"],
     ex:[{ s:"The {{}} of the statue is broken.", f:"trunk", ko:"그 조상의 몸통이 깨졌다." }] },
 
-  /* reliability(신뢰성 · B2/n) 와 글자가 맞물려 배제된다. */
-  { word:"trustworthiness", pron:"트러스트워디니스", pos:"n", level:"C1", meanings:["신뢰성","신용"],
-    syn:["reliability","being worthy of trust","soundness of character"],
-    ex:[{ s:"The bank checked his {{}} first.", f:"trustworthiness", ko:"그 은행은 그의 신용을 먼저 살폈다." }] },
-
   /* 승격 82 — 사전 단일값 유지(참조 reliable). */
   { word:"trustworthy", pron:"트러스트워디", pos:"adj", level:"B2", meanings:["믿음이 가는"],
     syn:["reliable","safe to trust","true to one's word"],

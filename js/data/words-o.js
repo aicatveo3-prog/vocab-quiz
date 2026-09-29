@@ -919,10 +919,6 @@ window.VOCAB_O = [
     syn:["eat too much","stuff oneself","take more food than needed"],
     ex:[{ s:"It is easy to {{}} at a buffet.", f:"overeat", ko:"뷔페에서는 과식하기 쉽다." }] },
 
-  { word:"overenthusiastic", pron:"오버인쑤지애스틱", pos:"adj", level:"C1", meanings:["과도하게 열중한"],
-    syn:["too keen","carried away by zeal","excessively eager"],
-    ex:[{ s:"The guide was a little {{}} about the ruins.", f:"overenthusiastic", ko:"그 안내인은 그 폐허에 조금 과도하게 열중했다." }] },
-
   /* ── 챕터 8 (마지막) ──────────────────────────────── */
   /* 18단어. MIN_TAIL(4) 이상이라 독립 챕터로 둔다.
      'over-' 어근이 열일곱, 그리고 마지막이 owe 다.

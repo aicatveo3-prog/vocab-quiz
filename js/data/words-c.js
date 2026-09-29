@@ -1107,10 +1107,6 @@ window.VOCAB_C = [
     syn:["grasp","understand","fathom"], ant:["misread"],
     ex:[{ s:"No one could fully {{}} the scale of the loss.", f:"comprehend", ko:"누구도 그 손실의 규모를 온전히 이해할 수 없었다." }] },
 
-  { word:"comprehensible", pron:"캄프리헨서블", pos:"adj", level:"C1", meanings:["이해되는","알기 쉬운"],
-    syn:["clear","intelligible","plain"], ant:["baffling"],
-    ex:[{ s:"He rewrote the manual to make it {{}}.", f:"comprehensible", ko:"그는 설명서를 알기 쉽게 다시 썼다." }] },
-
   { word:"comprehensive", exams:["공무원","수능"], pron:"캄프리헨시브", pos:"adj", level:"B2", meanings:["포괄적인","종합적인"],
     syn:["thorough","complete","extensive"], ant:["partial"],
     ex:[{ s:"The report gives a {{}} view of the industry.", f:"comprehensive", ko:"그 보고서는 업계를 종합적으로 조망한다." }] },
@@ -1506,10 +1502,6 @@ window.VOCAB_C = [
     syn:["dispute","deny","oppose"], ant:["confirm"],
     ex:[{ s:"The new data {{}} the earlier study.", f:"contradicts", ko:"새 자료는 앞선 연구를 반박한다." }] },
 
-  { word:"contradiction", pron:"칸트러딕션", pos:"n", level:"B2", meanings:["모순","상반되는 것"],
-    syn:["inconsistency","conflict","paradox"], ant:["agreement"],
-    ex:[{ s:"His two claims are a flat {{}}.", f:"contradiction", ko:"그의 두 주장은 완전한 모순이다." }] },
-
   { word:"contrary to", pron:"칸트레리 투", pos:"phr", level:"B2", meanings:["~에 반해"],
     syn:["against","despite","unlike"] },
 
@@ -1710,10 +1702,6 @@ window.VOCAB_C = [
   { word:"counterbalance", pron:"카운터밸런스", pos:"v", level:"C2", meanings:["균형을 잡아 주다","상쇄하다"],
     syn:["offset","compensate","equalize"],
     ex:[{ s:"Fuel savings {{}} the higher purchase price.", f:"counterbalance", ko:"연료 절감이 더 높은 구매 가격을 상쇄한다." }] },
-
-  { word:"counterclockwise", pron:"카운터클락와이즈", pos:"adv", level:"B2", meanings:["시계 반대 방향으로"],
-    syn:["leftward","anticlockwise","backward"], ant:["clockwise"],
-    ex:[{ s:"Loosen the cap by turning it {{}}.", f:"counterclockwise", ko:"뚜껑을 시계 반대 방향으로 돌려 풀어라." }] },
 
   { word:"counterexample", pron:"카운터이그잼플", pos:"n", level:"C2", meanings:["반증","반례"],
     syn:["exception","refutation","contradiction"],

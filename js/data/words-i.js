@@ -735,10 +735,6 @@ window.VOCAB_I = [
     syn:["conflicting","clashing","mismatched"], ant:["compatible"],
     ex:[{ s:"The two schedules proved completely {{}}.", f:"incompatible", ko:"두 일정은 완전히 양립할 수 없음이 드러났다." }] },
 
-  { word:"incomprehensible", pron:"인캄프리헨서블", pos:"adj", level:"C1", meanings:["이해할 수 없는","알아들을 수 없는"],
-    syn:["unintelligible","baffling","impenetrable"], ant:["clear"],
-    ex:[{ s:"The instructions were almost {{}} to a beginner.", f:"incomprehensible", ko:"그 설명서는 초보자에게 거의 이해할 수 없었다." }] },
-
   /* 승격 ① — GLOSS '모순, 불일치' 를 글자까지 지켰다.
      contradiction(syn)·discrepancy(syn) 두 문제가 참조한다.
      원본은 순서가 '불일치, 모순' 이었으나 사전 쪽을 남겼다. */
@@ -876,10 +872,6 @@ window.VOCAB_I = [
   { word:"indignant", pron:"인디그넌트", pos:"adj", level:"C1", meanings:["화난","분개한"],
     syn:["outraged","resentful","incensed"],
     ex:[{ s:"She was {{}} at being left off the invitation list.", f:"indignant", ko:"그녀는 초청 명단에서 빠진 것에 분개했다." }] },
-
-  { word:"indiscriminate", pron:"인디스크리머넛", pos:"adj", level:"C1", meanings:["무분별한","지각없는"],
-    syn:["random","unselective","sweeping"], ant:["selective"],
-    ex:[{ s:"The report condemned the {{}} use of pesticides.", f:"indiscriminate", ko:"그 보고서는 살충제의 무분별한 사용을 규탄했다." }] },
 
   /* ── 챕터 8 ─────────────────────────────── */
 

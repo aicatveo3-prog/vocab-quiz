@@ -188,11 +188,6 @@ window.VOCAB_U = [
     syn:["that cannot be altered","fixed for good","staying just as it is"],
     ex:[{ s:"The rule is {{}}.", f:"unchangeable", ko:"그 규칙은 불변이다." }] },
 
-  /* 교재의 '~답지 않은' 에서 물결표를 걷었다. */
-  { word:"uncharacteristic", pron:"언캐릭터리스틱", pos:"adj", level:"C1", meanings:["평소답지 않은"],
-    syn:["not like one's usual self","out of keeping with one's ways","unlike how one normally is"],
-    ex:[{ s:"His silence was {{}}.", f:"uncharacteristic", ko:"그의 침묵은 평소답지 않았다." }] },
-
   /* ★ 교재의 '의식을 잃은' 을 '의식이 없는' 으로 바꿨다. numb(감각을 잃은,
      마비된 · B2/adj) 와 꼴이 똑같아 영→한 선택지에 나란히 놓이면 '의식' 과
      '감각' 한 낱말로만 갈리기 때문이다. 교재 두 갈래는 같은 말이었다. */
