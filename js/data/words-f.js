@@ -924,10 +924,6 @@ window.VOCAB_F = [
     syn:["fishing ground","fishing industry","fish farm"],
     ex:[{ s:"The northern {{}} was closed for two seasons.", f:"fishery", ko:"북부 어장은 두 계절 동안 폐쇄되었다." }] },
 
-  { word:"fission", pron:"피션", pos:"n", level:"C2", meanings:["분열"],
-    syn:["splitting","division","breaking apart"],
-    ex:[{ s:"Nuclear {{}} releases energy by breaking heavy atoms.", f:"fission", ko:"핵분열은 무거운 원자를 쪼개어 에너지를 낸다." }] },
-
   { word:"fist", pron:"피스트", pos:"n", level:"B1", meanings:["주먹"],
     syn:["clenched hand","knuckles","balled hand"],
     ex:[{ s:"He banged his {{}} on the table once and stopped.", f:"fist", ko:"그는 주먹으로 탁자를 한 번 치고 멈췄다." }] },

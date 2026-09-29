@@ -1376,10 +1376,6 @@ window.VOCAB_I = [
     syn:["cover","underwrite","indemnify"],
     ex:[{ s:"It costs far more to {{}} a sports car.", f:"insure", ko:"스포츠카는 보험에 드는 데 훨씬 더 많은 비용이 든다." }] },
 
-  { word:"insurmountable", pron:"인서마운터블", pos:"adj", level:"C2", meanings:["극복할 수 없는","넘을 수 없는"],
-    syn:["unconquerable","overwhelming","impossible"],
-    ex:[{ s:"The language barrier proved {{}} at first.", f:"insurmountable", ko:"언어 장벽은 처음에 극복할 수 없는 것으로 드러났다." }] },
-
   { word:"intact", exams:["공무원"], pron:"인택트", pos:"adj", level:"B2", meanings:["온전한","손상되지 않은"],
     syn:["unbroken","undamaged","whole"], ant:["damaged"],
     ex:[{ s:"The seal on the jar was still {{}}.", f:"intact", ko:"그 병의 봉인은 여전히 온전했다." }] },

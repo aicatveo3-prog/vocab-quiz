@@ -545,10 +545,6 @@ window.VOCAB_D = [
     syn:["appalling","disgraceful","lamentable"], ant:["admirable"],
     ex:[{ s:"The prison was kept in a {{}} state for years.", f:"deplorable", ko:"그 교도소는 여러 해 동안 개탄스러운 상태로 방치됐다." }] },
 
-  { word:"deplore", pron:"디플로", pos:"v", level:"C2", meanings:["개탄하다","한탄하다"],
-    syn:["lament","condemn","bemoan"], ant:["applaud"],
-    ex:[{ s:"Many scholars {{}} the loss of the ancient archive.", f:"deplore", ko:"많은 학자가 그 고대 기록물의 소실을 개탄한다." }] },
-
   { word:"deploy", pron:"디플로이", pos:"v", level:"C1", meanings:["배치하다","전개하다"],
     syn:["station","put in place","mobilize"], ant:["withdraw"],
     ex:[{ s:"The agency will {{}} extra staff during the festival.", f:"deploy", ko:"그 기관은 축제 기간에 추가 인력을 배치할 것이다." }] },
@@ -615,11 +611,6 @@ window.VOCAB_D = [
 
   { word:"derived from", exams:["수능"], pron:"디라이브드 프럼", pos:"phr", level:"B2", meanings:["~에서 비롯된","~에서 유래된"],
     syn:["stemming from","originating in","based on"] },
-
-  /* desalinate·desertification·detoxification — 낱말로 대체할 유의어가 없는
-     기술 용어라 syn 을 비워 둔다 */
-  { word:"desalinate", pron:"디샐러네이트", pos:"v", level:"C2", meanings:["담수화하다","염분을 제거하다"],
-    ex:[{ s:"Several coastal plants now {{}} seawater for drinking.", f:"desalinate", ko:"여러 해안 시설이 이제 식수용으로 바닷물을 담수화한다." }] },
 
   { word:"descend", pron:"디센드", pos:"v", level:"B2", meanings:["내려가다","하강하다"],
     syn:["go down","drop","sink"], ant:["ascend"],
@@ -759,10 +750,6 @@ window.VOCAB_D = [
   { word:"develop", pron:"디벨럽", pos:"v", level:"B1", meanings:["개발하다","발전시키다"],
     syn:["evolve","expand","cultivate"],
     ex:[{ s:"The team took two years to {{}} the new engine.", f:"develop", ko:"팀은 새 엔진을 개발하는 데 2년이 걸렸다." }] },
-
-  { word:"deviant", pron:"디비언트", pos:"adj", level:"C2", meanings:["일탈적인","정상에서 벗어난"],
-    syn:["abnormal","aberrant","irregular"], ant:["conventional"],
-    ex:[{ s:"The study focuses on {{}} behavior in large groups.", f:"deviant", ko:"그 연구는 큰 집단에서의 일탈적 행동에 주목한다." }] },
 
   { word:"deviate", pron:"디비에이트", pos:"v", level:"C1", meanings:["벗어나다","빗나가다"],
     syn:["diverge","stray","depart"], ant:["conform"],
@@ -1300,10 +1287,6 @@ window.VOCAB_D = [
   { word:"dodge", pron:"다지", pos:"v", level:"B2", meanings:["피하다","회피하다"],
     syn:["evade","sidestep","duck"],
     ex:[{ s:"The minister tried to {{}} the awkward question.", f:"dodge", ko:"장관은 난처한 질문을 피하려 했다." }] },
-
-  { word:"dogma", pron:"도그마", pos:"n", level:"C2", meanings:["교의","독단"],
-    syn:["doctrine","creed","tenet"],
-    ex:[{ s:"Science advances by questioning accepted {{}}.", f:"dogma", ko:"과학은 받아들여진 교의를 의심하며 발전한다." }] },
 
   /* 원본 표제어에 '(DIY)' 괄호 약어가 붙어 있었다 — 퀴즈 선택지에 그대로
      찍히므로 제거했다. 합성어라 대체할 유의어가 없어 syn 을 비워 둔다. */

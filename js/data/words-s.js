@@ -216,10 +216,6 @@ window.VOCAB_S = [
     syn:["prominent","noticeable","standing out most"], ant:["inconspicuous"],
     ex:[{ s:"She made the most {{}} point in the debate.", f:"salient", ko:"그녀는 토론에서 가장 두드러진 지적을 했다." }] },
 
-  { word:"saline", pron:"세일라인", pos:"adj", level:"C2", meanings:["염분이 든"],
-    syn:["salty","salt-laden","full of salt"],
-    ex:[{ s:"The lake water is too {{}} to drink.", f:"saline", ko:"그 호수 물은 염분이 들어 마시기 어렵다." }] },
-
   { word:"saliva", pron:"설라이버", pos:"n", level:"B2", meanings:["침"],
     syn:["spit","spittle","fluid in the mouth"],
     ex:[{ s:"Dogs produce {{}} when they smell food.", f:"saliva", ko:"개는 음식 냄새를 맡으면 침을 낸다." }] },
@@ -972,10 +968,6 @@ window.VOCAB_S = [
     syn:["fault","weak point","failing in something"],
     ex:[{ s:"Every plan has one {{}}.", f:"shortcoming", ko:"어떤 계획에나 단점 하나는 있다." }] },
 
-  { word:"shorthand", pron:"숏핸드", pos:"n", level:"C2", meanings:["속기"],
-    syn:["quick writing system","note-taking in signs","stenography"],
-    ex:[{ s:"She took the notes in {{}}.", f:"shorthand", ko:"그녀는 속기로 기록을 받아 적었다." }] },
-
   { word:"short-sighted", pron:"숏 사이티드", pos:"adj", level:"C1", meanings:["근시안적인"],
     syn:["lacking foresight","seeing only the near","thinking no further ahead"],
     ex:[{ s:"Cutting research is a {{}} move.", f:"short-sighted", ko:"연구를 줄이는 것은 근시안적인 조치다." }] },
@@ -1417,10 +1409,6 @@ window.VOCAB_S = [
   { word:"solitude", pron:"살러튜드", pos:"n", level:"C1", meanings:["고독","혼자 지냄"],
     syn:["state of being alone","life apart from others","quiet of one's own"],
     ex:[{ s:"He writes best in {{}}.", f:"solitude", ko:"그는 혼자 있을 때 가장 잘 쓴다." }] },
-
-  { word:"soluble", pron:"살류블", pos:"adj", level:"C2", meanings:["액체에 녹는"],
-    syn:["able to dissolve","melting in water","breaking up in liquid"],
-    ex:[{ s:"The powder is fully {{}}.", f:"soluble", ko:"그 가루는 완전히 액체에 녹는다." }] },
 
   /* 승격 102 — 사전의 쌍반점만 쉼표로 갈랐다. 참조 liquid(L) 한 곳의 설명이
      '해결책; 용액' 에서 '해결책, 용액' 이 된다. */

@@ -510,10 +510,6 @@ window.VOCAB_U = [
     syn:["reveal","open with a key","let out what was shut in"],
     ex:[{ s:"One key can {{}} both doors.", f:"unlock", ko:"열쇠 하나가 두 문을 다 열 수 있다." }] },
 
-  { word:"unnoticeably", pron:"언노티서블리", pos:"adv", level:"C2", meanings:["눈에 띄지 않게"],
-    syn:["without being seen","so as to draw no eye","too slightly to be marked"],
-    ex:[{ s:"Prices crept up {{}}.", f:"unnoticeably", ko:"값이 눈에 띄지 않게 슬금슬금 올랐다." }] },
-
   /* 아래 unrivaled(경쟁자가 없는) 와 갈랐다 — 이쪽은 '견줄 상대' 에 무게를
      두었다. */
   { word:"unparalleled", pron:"언패럴렐드", pos:"adj", level:"C1", meanings:["비할 데 없는"],
@@ -549,14 +545,6 @@ window.VOCAB_U = [
   { word:"unsustainable", exams:["수능"], pron:"언서스테이너블", pos:"adj", level:"B2", meanings:["지속할 수 없는"],
     syn:["not able to keep going","bound to break down","impossible to maintain"], ant:["sustainable"],
     ex:[{ s:"That rate of use is {{}}.", f:"unsustainable", ko:"그 정도의 사용량은 지속할 수 없다." }] },
-
-  /* ★ 교재의 '완고한' 은 stubborn(고집 센 · S) 의 뜻이어서 버렸다.
-     steadfast(확고한, 변함없는)·invariable(불변의, 변함없는) 과 '변함없는' 이
-     맞물려 배제된다. ★ 같은 챕터 unwavering 은 뜻이 사실상 같은데 글자가
-     달라 빠져나가므로 유의어로 묶었다. */
-  { word:"unswerving", pron:"언스워빙", pos:"adj", level:"C2", meanings:["변함없는","약해지지 않는"],
-    syn:["unwavering","never turning aside","holding the same course"],
-    ex:[{ s:"He showed {{}} loyalty.", f:"unswerving", ko:"그는 변함없는 충성을 보였다." }] },
 
   /* 승격 ㉑ — ★ 첫 뜻을 '막대한' 으로 올렸다. 사전값 '헤아릴 수 없는' 혼자로는
      measurable(헤아릴 수 있는 · B2/adj) 과 '없는/있는' 한 글자로만 갈린다.
@@ -639,11 +627,6 @@ window.VOCAB_U = [
   { word:"upbringing", pron:"업브링잉", pos:"n", level:"C1", meanings:["양육","가정 교육"],
     syn:["the way one is reared","training given at home","rearing of a child"],
     ex:[{ s:"She had a strict {{}}.", f:"upbringing", ko:"그녀는 엄격한 양육을 받았다." }] },
-
-  /* 교재의 '혼란시키다' 는 turmoil(혼란, 소동)·disrupt 자리라 버렸다. */
-  { word:"upheave", pron:"업히브", pos:"v", level:"C2", meanings:["들어 올리다"],
-    syn:["heave up from below","push up in a mass","raise with force"],
-    ex:[{ s:"Ice can {{}} the whole road.", f:"upheave", ko:"얼음이 길 전체를 들어 올릴 수 있다." }] },
 
   /* advocate(지지하다, 옹호하다)·subscribe·endorse 가 '지지하다' 를 써서 셋 다
      맞물려 배제된다. */

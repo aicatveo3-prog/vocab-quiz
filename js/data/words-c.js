@@ -213,10 +213,6 @@ window.VOCAB_C = [
     syn:["funds","assets","wealth"],
     ex:[{ s:"The startup raised enough {{}} to hire ten engineers.", f:"capital", ko:"그 스타트업은 엔지니어 열 명을 뽑을 만큼의 자본을 모았다." }] },
 
-  { word:"capricious", pron:"커프리셔스", pos:"adj", level:"C2", meanings:["변덕스러운","변하기 쉬운"],
-    syn:["fickle","whimsical","erratic"], ant:["steady"],
-    ex:[{ s:"Mountain weather is famously {{}} in spring.", f:"capricious", ko:"산의 봄 날씨는 변덕스럽기로 유명하다." }] },
-
   { word:"capsize", pron:"캡사이즈", pos:"v", level:"C1", meanings:["뒤집히다","전복되다"],
     syn:["overturn","upset","topple"], ant:["steady"],
     ex:[{ s:"A sudden wave made the small boat {{}}.", f:"capsize", ko:"갑작스러운 파도가 작은 배를 뒤집히게 했다." }] },
@@ -584,10 +580,6 @@ window.VOCAB_C = [
   { word:"chronological", exams:["공무원"], pron:"크라널라지컬", pos:"adj", level:"C1", meanings:["연대순의","시간 순서대로 된"],
     syn:["sequential","consecutive","ordered"], ant:["random"],
     ex:[{ s:"Arrange the photographs in {{}} order.", f:"chronological", ko:"사진을 시간 순서대로 배열하라." }] },
-
-  { word:"chronology", pron:"크러날러지", pos:"n", level:"C2", meanings:["연대학","연대기"],
-    syn:["sequence","timeline","order"],
-    ex:[{ s:"Scholars still argue over the {{}} of these events.", f:"chronology", ko:"학자들은 이 사건들의 연대 순서를 두고 여전히 다툰다." }] },
 
   /* 유의어 round 를 plump and curved 로 바꿨다 — round 를 '한 차례'(명사) 로
      세우기 때문이다. 이 자리는 '둥근' 뜻을 노린 것이었다. */
@@ -1166,11 +1158,6 @@ window.VOCAB_C = [
     syn:["companion","ally","fellow"], ant:["foe"],
     ex:[{ s:"He carried a wounded {{}} for two miles.", f:"comrade", ko:"그는 다친 전우를 2마일이나 업고 갔다." }] },
 
-  /* ── conc ──────────────────────────────────── */
-  { word:"concave", pron:"칸케이브", pos:"adj", level:"C2", meanings:["오목한","움푹한"],
-    syn:["hollow","sunken","curved"], ant:["convex"],
-    ex:[{ s:"The mirror's {{}} surface gathers the light.", f:"concave", ko:"그 거울의 오목한 면이 빛을 모은다." }] },
-
   { word:"conceal", exams:["공무원"], pron:"컨실", pos:"v", level:"B2", meanings:["숨기다","비밀로 하다"],
     syn:["hide","mask","cover"], ant:["reveal"],
     ex:[{ s:"He could not {{}} his disappointment.", f:"conceal", ko:"그는 실망을 숨길 수 없었다." }] },
@@ -1334,10 +1321,6 @@ window.VOCAB_C = [
 
   { word:"conjure up", pron:"칸저 업", pos:"phr", level:"C1", meanings:["~을 상기시키다","떠올리게 하다"],
     syn:["evoke","summon","recall"] },
-
-  { word:"connotation", pron:"카너테이션", pos:"n", level:"C2", meanings:["함축","내포된 의미"],
-    syn:["implication","overtone","nuance"], ant:["denotation"],
-    ex:[{ s:"The word carries a faintly hostile {{}}.", f:"connotation", ko:"그 단어는 희미하게 적대적인 함축을 지닌다." }] },
 
   /* ── conq · cons ───────────────────────────── */
   { word:"conquer", pron:"캉커", pos:"v", level:"B2", meanings:["정복하다","이기다"],

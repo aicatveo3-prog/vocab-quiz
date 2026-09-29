@@ -242,12 +242,6 @@ window.VOCAB_N = [
     syn:["unaligned","even-handed","taking no side"], ant:["partisan"],
     ex:[{ s:"The country stayed {{}} during the war.", f:"neutral", ko:"그 나라는 전쟁 동안 중립적인 상태를 지켰다." }] },
 
-  /* neutron 은 전문어다. 바꿔 쓸 낱말이 마땅치 않아 유의어를 비웠다 —
-     '아닌 것 고르기' 에서만 빠지고 나머지 세 모드는 출제된다.
-     M 세트 Mars·Mediterranean 과 같은 처리다. */
-  { word:"neutron", pron:"뉴트란", pos:"n", level:"C2", meanings:["중성자"],
-    ex:[{ s:"A {{}} carries no electric charge.", f:"neutron", ko:"중성자는 전기를 띠지 않는다." }] },
-
   /* 승격 ⑯ — 사전에 뜻만 있고 발음이 없던 항목이다. 표현을 글자까지 지켰다.
      같은 세트의 nonetheless 와 겹치므로 그쪽을 '그렇기는 하지만' 으로 갈랐다. */
   { word:"nevertheless", exams:["공무원","수능"], pron:"네버더리스", pos:"adv", level:"B2", meanings:["그럼에도 불구하고"],

@@ -659,11 +659,6 @@ window.VOCAB_R = [
     syn:["sit on the throne","hold sovereign power","rule as a monarch"],
     ex:[{ s:"She went on to {{}} for forty years.", f:"reign", ko:"그녀는 이어서 40년을 군림했다." }] },
 
-  /* 승격 51 — 사전 글자 유지(compensate, C). */
-  { word:"reimburse", pron:"리임버스", pos:"v", level:"C2", meanings:["상환하다","배상하다"],
-    syn:["compensate","pay one back for costs","make good the outlay"],
-    ex:[{ s:"The firm will {{}} your travel costs.", f:"reimburse", ko:"회사가 당신의 여행 비용을 상환할 것이다." }] },
-
   /* ★ 원본은 '구속; 고삐' 로 순서가 거꾸로였다 — 고삐가 본뜻이고 '구속' 은
      비유다. '구속' 은 restraint(절제, 구속 · 챕터 11) 와 글자가 같아 배제된다. */
   { word:"rein", pron:"레인", pos:"n", level:"C1", meanings:["고삐","구속"],
@@ -1143,11 +1138,6 @@ window.VOCAB_R = [
   { word:"resistant", pron:"리지스턴트", pos:"adj", level:"B2", meanings:["저항력이 있는"],
     syn:["immune","able to withstand","not giving in to"],
     ex:[{ s:"The crop is {{}} to drought.", f:"resistant", ko:"그 작물은 가뭄에 저항력이 있다." }] },
-
-  /* 승격 102 — 사전 글자 유지(decisive, D). */
-  { word:"resolute", pron:"레절루트", pos:"adj", level:"C2", meanings:["단호한","확고한"],
-    syn:["decisive","firm in purpose","not to be swayed"],
-    ex:[{ s:"She was {{}} in her refusal.", f:"resolute", ko:"그녀는 거절에 단호했다." }] },
 
   /* 승격 103 — 사전의 쌍반점만 쉼표로 갈랐다(determination, D). 원본은 괄호
      "(문제를) 해결하다, 다짐하다" 였는데 사전 순서를 지켜 참조 쪽 뜻('결심') 을

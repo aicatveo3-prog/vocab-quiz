@@ -152,10 +152,6 @@ window.VOCAB = [
     syn:["elimination","repeal","cancellation"], ant:["establishment"],
     ex:[{ s:"She devoted her life to the {{}} of slavery.", f:"abolition", ko:"그녀는 노예제 폐지에 일생을 바쳤다." }] },
 
-  { word:"abominate", pron:"어바미네이트", pos:"v", level:"C2", meanings:["몹시 싫어하다","혐오하다"],
-    syn:["detest","loathe","abhor"], ant:["adore"],
-    ex:[{ s:"He came to {{}} every form of cruelty.", f:"abominate", ko:"그는 모든 형태의 잔혹함을 몹시 싫어하게 되었다." }] },
-
   { word:"aboriginal", pron:"애버리지널", pos:"adj", level:"C1", meanings:["원주민의","토착의"],
     syn:["indigenous","native","original"], ant:["foreign"],
     ex:[{ s:"The museum preserves {{}} art from the region.", f:"aboriginal", ko:"그 박물관은 그 지역의 토착 미술을 보존한다." }] },
@@ -667,11 +663,6 @@ window.VOCAB = [
     syn:["hostile","combative","forceful"], ant:["passive"],
     ex:[{ s:"The company took an {{}} approach to expansion.", f:"aggressive", ko:"그 회사는 확장에 공격적인 방식을 취했다." }] },
 
-  /* 원본의 "화난"은 뜻이 부족해 보완했습니다 */
-  { word:"aggrieved", pron:"어그리브드", pos:"adj", level:"C2", meanings:["억울한","권리를 침해당한"],
-    syn:["wronged","resentful","offended"], ant:["satisfied"],
-    ex:[{ s:"The {{}} tenants filed a joint complaint.", f:"aggrieved", ko:"억울한 세입자들이 공동으로 진정을 제출했다." }] },
-
   { word:"agile", pron:"애자일", pos:"adj", level:"C1", meanings:["민첩한","재빠른"],
     syn:["nimble","quick","spry"], ant:["clumsy"],
     ex:[{ s:"Goats are surprisingly {{}} on steep rock.", f:"agile", ko:"산양은 급경사 바위에서 놀랄 만큼 민첩하다." }] },
@@ -868,10 +859,6 @@ window.VOCAB = [
     syn:["aspiring","driven","enterprising"], ant:["unmotivated"],
     ex:[{ s:"They set an {{}} target for next year.", f:"ambitious", ko:"그들은 내년에 대해 야심적인 목표를 세웠다." }] },
 
-  { word:"ambivalent", pron:"앰비벌런트", pos:"adj", level:"C2", meanings:["엇갈린 감정의","반신반의하는"],
-    syn:["conflicted","undecided","torn"], ant:["certain"],
-    ex:[{ s:"Voters remain {{}} about the merger.", f:"ambivalent", ko:"유권자들은 그 합병에 대해 엇갈린 감정을 지니고 있다." }] },
-
   { word:"amend", pron:"어멘드", pos:"v", level:"C1", meanings:["개정하다","수정하다"],
     syn:["revise","modify","rectify"],
     ex:[{ s:"Parliament voted to {{}} the tax law.", f:"amend", ko:"의회는 세법을 개정하기로 표결했다." }] },
@@ -991,10 +978,6 @@ window.VOCAB = [
     syn:["unnamed","unidentified","nameless"], ant:["named"],
     ex:[{ s:"An {{}} donor paid the hospital bill.", f:"anonymous", ko:"익명의 기부자가 병원비를 지불했다." }] },
 
-  { word:"antagonize", pron:"앤태거나이즈", pos:"v", level:"C2", meanings:["적대감을 일으키다","반감을 사다"],
-    syn:["provoke","offend","alienate"], ant:["appease"],
-    ex:[{ s:"Blunt criticism may {{}} the very people you need.", f:"antagonize", ko:"직설적인 비판은 정작 필요한 사람들의 반감을 살 수 있다." }] },
-
   { word:"Antarctic", pron:"앤탁틱", pos:"adj", level:"B2", meanings:["남극의"],
     ex:[{ s:"The {{}} ice sheet is thinning each decade.", f:"Antarctic", ko:"남극의 빙상은 10년마다 얇아지고 있다." }] },
 
@@ -1034,10 +1017,6 @@ window.VOCAB = [
   { word:"antioxidant", pron:"앤티악서던트", pos:"n", level:"C1", meanings:["항산화제"],
     syn:["free-radical scavenger","preservative","nutrient"],
     ex:[{ s:"Berries are rich in every kind of {{}}.", f:"antioxidant", ko:"베리류는 온갖 항산화제가 풍부하다." }] },
-
-  { word:"antipathy", pron:"앤티퍼시", pos:"n", level:"C2", meanings:["반감","혐오"],
-    syn:["hostility","aversion","dislike"], ant:["affinity"],
-    ex:[{ s:"There was clear {{}} between the two rivals.", f:"antipathy", ko:"두 경쟁자 사이에는 뚜렷한 반감이 있었다." }] },
 
   { word:"antique", pron:"앤틱", pos:"n", level:"B2", meanings:["골동품"],
     syn:["relic","collectible","heirloom"],
