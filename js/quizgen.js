@@ -647,16 +647,35 @@ window.Quiz = (function () {
       while (n < x.length && n < y.length && x[n] === y[n]) n++;
       return n >= 6;
     }
-    function sameConcept(a, b) {
+    /* 뜻이 겹치거나 유의어인 사이 — 어느 쪽에 연결해도 뜻으로는 맞는 진짜 모호함.
+       어근만 같은 사이(sameStem)와 구별한다: 그쪽은 형태 혼동일 뿐 정답은 하나다. */
+    function hardClash(a, b) {
       if (a === b) return false;
       if (normalizeMeaning(a.meanings[0]) === normalizeMeaning(b.meanings[0])) return true;
-      return meaningsOverlap(a, b) || areSynonyms(a, b) || sameStem(a, b);
+      return meaningsOverlap(a, b) || areSynonyms(a, b);
+    }
+    function sameConcept(a, b) {
+      if (a === b) return false;
+      return hardClash(a, b) || sameStem(a, b);
     }
     function hasClash(list, w) {
       for (var i = 0; i < list.length; i++) {
         if (sameConcept(list[i], w)) return true;
       }
       return false;
+    }
+    function hasHardClash(list, w) {
+      for (var i = 0; i < list.length; i++) {
+        if (hardClash(list[i], w)) return true;
+      }
+      return false;
+    }
+    function stemCount(list, w) {
+      var n = 0;
+      for (var i = 0; i < list.length; i++) {
+        if (list[i] !== w && sameStem(list[i], w)) n++;
+      }
+      return n;
     }
 
     for (var g = 0; g < groups.length; g++) {
@@ -683,6 +702,42 @@ window.Quiz = (function () {
               break;
             }
           }
+        }
+      }
+    }
+
+    /* 2차 — 위에서 못 가른 '뜻 겹침'만 다시 푼다.
+       domination·dominance(둘 다 "지배")는 domina- 로 시작하는 단어가 한 챕터에
+       5개인데 보드는 4개라 어근 충돌을 다 피하는 교환이 존재하지 않는다. 그러면
+       1차는 전부 포기해 뜻이 겹치는 쌍까지 한 보드에 남는다. 어근이 같은 단어가
+       한 보드에 함께 있는 것은 정답이 하나로 정해지므로 감수하고, 뜻이 겹치는
+       쌍만 갈라놓는다. 1차에서 해결된 보드는 여기서 건드리지 않는다. */
+    for (var g2 = 0; g2 < groups.length; g2++) {
+      for (var i2 = 0; i2 < groups[g2].length; i2++) {
+        var w2 = groups[g2][i2];
+        var rest2 = groups[g2].filter(function (x) { return x !== w2; });
+        if (!hasHardClash(rest2, w2)) continue;
+
+        var best = null;
+        for (var off2 = 1; off2 < groups.length; off2++) {
+          var targets2 = [g2 + off2, g2 - off2];
+          for (var t2 = 0; t2 < targets2.length; t2++) {
+            var h2 = targets2[t2];
+            if (h2 < 0 || h2 >= groups.length) continue;
+            for (var j2 = 0; j2 < groups[h2].length; j2++) {
+              var v2 = groups[h2][j2];
+              var hRest2 = groups[h2].filter(function (x) { return x !== v2; });
+              // 교환 후 양쪽 보드 모두 뜻 겹침이 없어야 한다
+              if (hasHardClash(hRest2, w2) || hasHardClash(rest2, v2)) continue;
+              // 어근 충돌이 가장 적게 생기는 상대를 고른다 (동점이면 가까운 보드)
+              var cost = stemCount(hRest2, w2) + stemCount(rest2, v2);
+              if (!best || cost < best.cost) best = { h: h2, j: j2, v: v2, cost: cost };
+            }
+          }
+        }
+        if (best) {
+          groups[g2][i2] = best.v;
+          groups[best.h][best.j] = w2;
         }
       }
     }
