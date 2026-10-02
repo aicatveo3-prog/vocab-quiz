@@ -799,10 +799,16 @@
        일부러 골라야 보였고, D·E·F 세트에는 그 모드 자체가 출제 불가였다. */
     if (q.usage) box.appendChild(el('div', 'fb-usage', q.usage));
 
-    // 한글 발음 표시
+    // 한글 발음 표시 + 발음 듣기 버튼
     var wordObj = WORD_INDEX[q.word];
-    if (wordObj && wordObj.pron) {
-      box.appendChild(el('div', 'fb-pron', '🔊 ' + wordObj.pron));
+    var pronText = wordObj && wordObj.pron ? '🔊 ' + wordObj.pron : '';
+    if (window.Audio_ && q.word) {
+      var pronRow = el('div', 'fb-pron-row');
+      if (pronText) pronRow.appendChild(el('span', 'fb-pron', pronText));
+      pronRow.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(q.word));
+      box.appendChild(pronRow);
+    } else if (pronText) {
+      box.appendChild(el('div', 'fb-pron', pronText));
     }
 
     if (q.ko) box.appendChild(el('div', 'fb-ko', q.ko));
@@ -892,6 +898,7 @@
 
         var head = el('div', 'bwd-head');
         head.appendChild(el('b', 'bwd-word', w.word));
+        if (window.Audio_) head.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(w.word));
         if (w.pron) head.appendChild(el('span', 'bwd-pron', '🔊 ' + w.pron));
         var badge = tierBadge(w.word);
         head.appendChild(badge);
@@ -1239,6 +1246,7 @@
       var row = el('div', 'pv-item');
       var left = el('div');
       left.appendChild(el('b', null, w.word));
+      if (window.Audio_) left.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(w.word));
       left.appendChild(el('span', 'pv-tag', w.pos + ' · ' + w.level));
       row.appendChild(left);
       row.appendChild(el('div', 'pv-mean', w.meanings.join(', ')));
@@ -1303,6 +1311,7 @@
       var row = el('div', 'pv-item');
       var left = el('div');
       left.appendChild(el('b', null, w.word));
+      if (window.Audio_) left.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(w.word));
       left.appendChild(el('span', 'pv-tag', w.pos + ' · ' + w.level));
       row.appendChild(left);
       row.appendChild(el('div', 'pv-mean', w.meanings.join(', ')));
@@ -1633,6 +1642,7 @@
 
     var top = el('div', 'li-top');
     top.appendChild(el('b', null, w.word));
+    if (window.Audio_) top.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(w.word));
     top.appendChild(el('span', 'li-tag', w.pos + ' · ' + w.level));
     // 숙련도 점 5개를 없애고, 대신 오답 노트 차수를 보여준다
     var badge = tierBadge(w.word);

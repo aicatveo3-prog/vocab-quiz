@@ -225,8 +225,21 @@ b,strong{font-weight:600}
 /* 프롬프트 */
 .q-prompt{text-align:center;padding:14px 8px 20px}
 .q-word{font-size:32px;font-weight:650;letter-spacing:-.02em;word-break:break-word}
+.q-word-row{display:flex;align-items:center;justify-content:center;gap:10px}
+.q-word-row .q-word{min-width:0}
 .q-ko{font-size:25px;font-weight:650;letter-spacing:-.01em}
 .q-sub{margin-top:8px;font-size:12px;color:var(--dimmer)}
+
+/* 발음 듣기 버튼 — 단어 옆에 붙는 작은 스피커. 클릭 시에만 재생한다. */
+.spk{display:inline-flex;align-items:center;justify-content:center;
+  background:none;border:none;padding:2px 4px;margin-left:4px;cursor:pointer;
+  font-size:15px;line-height:1;color:var(--dim);border-radius:8px;
+  transition:color .12s,background .12s;vertical-align:middle}
+.spk:hover{color:var(--accent);background:var(--accent-soft)}
+.spk:active{transform:scale(.92)}
+.spk-lg{font-size:22px;margin-left:2px}
+.fb-pron-row{display:flex;align-items:center;gap:8px;margin:6px 0 4px}
+.fb-pron-row .fb-pron{margin:0}
 .q-sentence{font-size:19px;line-height:1.75;padding:26px 4px 24px;text-align:center}
 .q-sentence .blank,.q-pattern .blank{display:inline-block;min-width:88px;
   border-bottom:2px solid var(--line-2);vertical-align:baseline;height:1.1em}

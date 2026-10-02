@@ -78,7 +78,15 @@ window.Modes = (function () {
     // mcq(양방향) · not — 프롬프트가 영단어인지 한국어 뜻인지만 다르다
     var isKoPrompt = q.mode === 'mcq' && q.dir === 'ko-en';
     var p = el('div', 'q-prompt');
-    p.appendChild(el('div', isKoPrompt ? 'q-ko' : 'q-word', q.prompt));
+    if (!isKoPrompt && q.word && window.Audio_) {
+      // 영어 단어가 크게 뜬 문제 — 발음 버튼을 단어 옆에 둔다
+      var head = el('div', 'q-word-row');
+      head.appendChild(el('div', 'q-word', q.prompt));
+      head.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(q.word, 'spk-lg'));
+      p.appendChild(head);
+    } else {
+      p.appendChild(el('div', isKoPrompt ? 'q-ko' : 'q-word', q.prompt));
+    }
     p.appendChild(el('div', 'q-sub', q.promptSub));
     wrap.appendChild(p);
     return wrap;
@@ -194,6 +202,7 @@ window.Modes = (function () {
           var detail = el('div', 'opt-detail');
           detail.appendChild(document.createTextNode(obj.meanings.join(', ')));
           if (obj.pron) detail.appendChild(el('span', 'opt-pron', ' 🔊 ' + obj.pron));
+          if (window.Audio_) detail.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(obj.word));
           b.classList.add('has-detail');
           b.appendChild(detail);
         });
@@ -242,6 +251,7 @@ window.Modes = (function () {
               detail.appendChild(document.createTextNode(' · '));
               detail.appendChild(el('span', 'opt-pron', pron));
             }
+            if (window.Audio_) detail.insertAdjacentHTML('beforeend', window.Audio_.buttonHTML(b._value));
             b.classList.add('has-detail');
             b.appendChild(detail);
           });
